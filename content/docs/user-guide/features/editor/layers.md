@@ -4,9 +4,9 @@ title: Working with Layers
 ---
 # Working with Layers {#component-entity-outliner-layers}
 
-Use the Lumberyard layer system to organize level data into discrete files\. The layer system segments level content so that members of a development team can work on different aspects of a level asynchronously\.
+Use the O3DE layer system to organize level data into discrete files\. The layer system segments level content so that members of a development team can work on different aspects of a level asynchronously\.
 
-Layers are standard Lumberyard entities with a special editor\-only layer component\. In your game, this component appears as an empty entity in your hierarchy\. When you export your game, the behavior you designed is unchanged and all entities in your level are added to the exported data\.
+Layers are standard O3DE entities with a special editor\-only layer component\. In your game, this component appears as an empty entity in your hierarchy\. When you export your game, the behavior you designed is unchanged and all entities in your level are added to the exported data\.
 
 **Topics**
 + [Creating a Layer](#creating-layers)
@@ -22,7 +22,7 @@ When you create a layer, you can add entities to that layer\. This helps you org
 
 **To create a layer**
 
-1. In Lumberyard Editor, choose **Tools**, **Entity Outliner**\.
+1. In O3DE Editor, choose **Tools**, **Entity Outliner**\.
 
 1. In the **Entity Outliner**, right\-click and choose **Create layer**\.
 ![\[Right-click in the Entity Outliner and choose Create layer.\]](/images/user-guide/component/entity_system/creating-layers.png)
@@ -75,7 +75,7 @@ Layers can contain freestanding \(non\-slice\) entities and slices\.
 
 The component entity system saves references to layers and their hierarchies in the level data\. When you add or remove a layer from your level, you must save your level before making more changes\. If you don't save your level, layers and their contents will not load correctly the next time you open the level\.
 
-Lumberyard layers are saved as `.layer` files in the `level_name/layers` directory\. The layer's filename is saved as `layer_name.layer`\. If a layer is nested within another layer, then the parent layer name is prepended to the layer filename\.
+O3DE layers are saved as `.layer` files in the `level_name/layers` directory\. The layer's filename is saved as `layer_name.layer`\. If a layer is nested within another layer, then the parent layer name is prepended to the layer filename\.
 
 When a layer contains unsaved changes, an asterisk \(\*\) appears next to the layer name\. After you save the level or the layer, the asterisk is removed\.
 
@@ -86,7 +86,7 @@ Layer names at the same hierarchy level must be unique\. Layers at the same hier
 ![\[Layer at the same hierarchy level must have unique names.\]](/images/user-guide/component/entity_system/saving-layers-duplicate.png)
 
 **To save your level and all layers**
-+ In Lumberyard Editor, choose **File**, **Save** or press **Ctrl\+S**\.
++ In O3DE Editor, choose **File**, **Save** or press **Ctrl\+S**\.
 
 **To save specific layers only**
 
@@ -96,27 +96,27 @@ Layer names at the same hierarchy level must be unique\. Layers at the same hier
 
 ## Recovering a Layer {#recovering-layers}
 
-If you delete a layer from a level in Lumberyard Editor, you can reimport it\.
+If you delete a layer from a level in O3DE Editor, you can reimport it\.
 
 **To reimport a deleted layer**
 
 1. Using a file browser, copy onto your desktop the layer file for the layer that you want to recover, such as `level_name\layer\layer_name.layer`\.
 
-1. In Lumberyard Editor, create a new layer in your level and enter the same name as the deleted layer\.
+1. In O3DE Editor, create a new layer in your level and enter the same name as the deleted layer\.
 
-1. Save the level and close Lumberyard Editor\.
+1. Save the level and close O3DE Editor\.
 
-1. Copy the layer file from your desktop into Lumberyard's layer directory, such as `level_name/layers`\.
+1. Copy the layer file from your desktop into O3DE's layer directory, such as `level_name/layers`\.
 
-1. Rename the copied layer file to match and replace the layer that you created in Lumberyard Editor\.
+1. Rename the copied layer file to match and replace the layer that you created in O3DE Editor\.
 
 1. Reopen the level\. The newly created layer now references the recovered layer information\.
 
 ## Layer\-Specific Components {#layer-specific-components}
 
-A layer is simply an entity with special rules\. As such, you can add layer\-specific components to layers\. By default, Lumberyard doesn't contain any layer\-specific components, but you can create your own, such as special layer components for streaming or tags\.
+A layer is simply an entity with special rules\. As such, you can add layer\-specific components to layers\. By default, O3DE doesn't contain any layer\-specific components, but you can create your own, such as special layer components for streaming or tags\.
 
-Any given component can appear in only one context menu\. By default, Lumberyard has the **Game**, **System**, and **Layer** contexts for components\.
+Any given component can appear in only one context menu\. By default, O3DE has the **Game**, **System**, and **Layer** contexts for components\.
 
 You can test creating a layer\-specific component by editing the **Comment** component\.
 
@@ -128,4 +128,4 @@ You can test creating a layer\-specific component by editing the **Comment** com
 
 1. Save the file\.
 
-1. In Lumberyard Editor, add the **Comment** component to a layer\.
+1. In O3DE Editor, add the **Comment** component to a layer\.

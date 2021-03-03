@@ -1,9 +1,9 @@
 ---
 description: ' Build, deploy, and run an Open 3D Engine multiplayer project''s dedicated
   server to a host running Linux. '
-title: Deploy a Lumberyard multiplayer project's server on Linux
+title: Deploy a O3DE multiplayer project's server on Linux
 ---
-# Deploy a Lumberyard multiplayer project's server on Linux {#linux-build-lumberyard-executable}
+# Deploy a O3DE multiplayer project's server on Linux {#linux-build-lumberyard-executable}
 
 
 ****
@@ -12,15 +12,15 @@ title: Deploy a Lumberyard multiplayer project's server on Linux
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
- To distribute your Lumberyard project's server onto Linux, you need to have access to a Windows 10 computer to perform your first build, which generates the client executable and assets that the server uses\. After your build is complete, bundle up the assets and code for distribution, building, and hosting on your Linux server\. This topic walks you through the steps to perform the Windows 10 client build, get the files onto your Linux host, and then build the Linux server application\.
+ To distribute your O3DE project's server onto Linux, you need to have access to a Windows 10 computer to perform your first build, which generates the client executable and assets that the server uses\. After your build is complete, bundle up the assets and code for distribution, building, and hosting on your Linux server\. This topic walks you through the steps to perform the Windows 10 client build, get the files onto your Linux host, and then build the Linux server application\.
 
  Currently, the only officially supported Linux distribution is Ubuntu 18\.04 LTS\. To verify that you're running the correct distribution on your Linux host, run the **lsb\_release \-a** command\. If you're on the correct distribution, you should see `Ubuntu 18.04` in the output\.
 
- These instructions are for building the **MultiplayerSample** project that's included in the Lumberyard distribution\. When you build and distribute your project, edit the scripts referenced in this topic where needed to reference your project's name and contents instead\.
+ These instructions are for building the **MultiplayerSample** project that's included in the O3DE distribution\. When you build and distribute your project, edit the scripts referenced in this topic where needed to reference your project's name and contents instead\.
 
 ## Bundle the assets and source on Windows {#linux-build-lumberyard-executable-package}
 
-To create a Linux server for your project, you first have to build the assets on Windows and bundle them for distribution to the server\. This distribution also includes all of the source code and tools that you need to generate a server build, so you don't need to install Lumberyard on your Linux host\.
+To create a Linux server for your project, you first have to build the assets on Windows and bundle them for distribution to the server\. This distribution also includes all of the source code and tools that you need to generate a server build, so you don't need to install O3DE on your Linux host\.
 
 **To package the assets and source on Windows**
 
@@ -38,7 +38,7 @@ To create a Linux server for your project, you first have to build the assets on
    BuildMultiplayerSample_Paks_PC_dedicated.bat
    ```
 
-1.  Bundle the packaged assets together into a tape archive \(`.tar`\) file for distribution to a Linux host\. This requires Python, which is distributed with Lumberyard:
+1.  Bundle the packaged assets together into a tape archive \(`.tar`\) file for distribution to a Linux host\. This requires Python, which is distributed with O3DE:
 
    ```
    Tools\Python\version\windows\python.exe Tools\LmbrSetup\Linux\archiver.py
@@ -80,7 +80,7 @@ Compressed with **gzip**: **tar \-xzvf *YYYY\-MM\-DD\_HH\-mm\-ss*\.tar\.gz**
 
     While setting up your environment, this script might prompt you for input to confirm adding a package repository \(PPA\) or install a package\. If you need to automate server setup, edit this script to make sure there are no user prompts\.
 
-1. Configure the Lumberyard build environment that's bundled as part of the distribution:
+1. Configure the O3DE build environment that's bundled as part of the distribution:
 
    ```
    ./lmbr_waf.sh configure --3rdpartypath absolute_path_to_unarchive_location/MultiplayerSample/3rdParty \

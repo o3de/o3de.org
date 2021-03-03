@@ -14,9 +14,9 @@ The asset cache should not be added to your source control\.
 
 ![\[Understand the Asset Pipeline and how it processes files for your game project in Open 3D Engine.\]](/images/user-guide/assets/pipeline/asset-pipeline-diagram.png)
 
-The Asset Processor detects changes in the directories that contain input assets, with the game directory being the highest priority\. Therefore, if you put assets in the game directory, those assets override assets with the same path in Lumberyard or other directories with lower priority\.
+The Asset Processor detects changes in the directories that contain input assets, with the game directory being the highest priority\. Therefore, if you put assets in the game directory, those assets override assets with the same path in O3DE or other directories with lower priority\.
 
-Each output directory in the asset cache represents a full image of all files \(except for executables and related files\) needed to run the game\. The Asset Processor curates the directory to keep it up to date, ensuring that new files are ready to use in the game and Lumberyard Editor as soon as possible\. Game runtimes load assets only from the asset cache and never directly from your input source folders\.
+Each output directory in the asset cache represents a full image of all files \(except for executables and related files\) needed to run the game\. The Asset Processor curates the directory to keep it up to date, ensuring that new files are ready to use in the game and O3DE Editor as soon as possible\. Game runtimes load assets only from the asset cache and never directly from your input source folders\.
 
 **Topics**
 + [Using Asset Processor](/docs/user-guide/features/assets/pipeline/processor.md)
@@ -28,4 +28,4 @@ Each output directory in the asset cache represents a full image of all files \(
 + [Shader Cache and Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md)
 + [Game Startup Sequence](/docs/user-guide/features/assets/pipeline/game-sequence.md)
 + [Asset Browser](/docs/user-guide/features/editor/asset-browser.md)
-+ [Programming the Lumberyard AZCore Runtime Asset System](/docs/user-guide/features/assets/pipeline/asset-system-programming.md)
++ [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/features/assets/pipeline/asset-system-programming.md)

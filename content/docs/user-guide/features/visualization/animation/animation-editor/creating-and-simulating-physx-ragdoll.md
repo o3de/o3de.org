@@ -14,7 +14,7 @@ title: Creating and Simulating a PhysX Ragdoll
 
 A ragdoll is a physical representation of a character in the animation system that you can use to simulate behavior, such as hit reactions and character death\. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints\. The animation system and the PhysX system work together to simulate the realistic behaviors\. While the ragdoll setup occurs in the animation system, the PhysX system is responsible for how a character moves based on environmental interactions and external forces\. For example, you can set up your ragdoll so that the character will rotate as it collapses when you apply force to the character's outer shoulder area\.
 
-To use the **[PhysX Ragdoll](/docs/user-guide/features/components/physx-ragdoll.md)**, add it to an entity in Lumberyard Editor\. You can then follow the procedures below to create and control the physical representation of the ragdoll\.
+To use the **[PhysX Ragdoll](/docs/user-guide/features/components/physx-ragdoll.md)**, add it to an entity in O3DE Editor\. You can then follow the procedures below to create and control the physical representation of the ragdoll\.
 
 **Important**
 You can enable the ragdoll to interact physically with the terrain\. To do so, add a **[PhysX Terrain](/docs/user-guide/features/components/physx-terrain.md)** component to an entity in the level\.
@@ -23,7 +23,7 @@ The **PhysX Character Controller** component currently doesn't support the **Phy
 This topic will teach you how to do the following:
 + [Set up a ragdoll\.](#animation-editor-setting-up-a-ragdoll)
 + [Add the ragdoll to an animation graph\.](#setting-up-a-ragdoll-creating-an-animation-graph)
-+ [Simulate a ragdoll in Lumberyard Editor\.](#setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode)
++ [Simulate a ragdoll in O3DE Editor\.](#setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode)
 
 ## Setting Up a Ragdoll {#animation-editor-setting-up-a-ragdoll}
 
@@ -40,7 +40,7 @@ Do the following to select the joints for your ragdoll\.
 
 **To select joints for the ragdoll**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, on the right side of the menu bar, choose **Physics** from the drop\-down list\. This changes the layout\.
 
@@ -116,7 +116,7 @@ When you create an animation graph to control the ragdoll simulation of your cha
 + Adjust the animation graph to enable the ragdoll\.
 + Preview
 
-The animation graph controls the ragdoll simulation of your character\. When your character transitions into a blend tree that has a ragdoll node, the ragdoll automatically activates and simulates in game mode in Lumberyard Editor\. When your character transitions out of that state, the ragdoll deactivates\. The ragdoll node outputs a bind pose in the Animation Editor\.
+The animation graph controls the ragdoll simulation of your character\. When your character transitions into a blend tree that has a ragdoll node, the ragdoll automatically activates and simulates in game mode in O3DE Editor\. When your character transitions out of that state, the ragdoll deactivates\. The ragdoll node outputs a bind pose in the Animation Editor\.
 
 **To create an animation graph to transition from running state to ragdoll state**
 
@@ -164,11 +164,11 @@ The animation graph controls the ragdoll simulation of your character\. When you
 
 ## Simulating Your Ragdoll {#setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode}
 
-Once you've created your ragdoll and animation graph, you can simulate the ragdoll in game mode in Lumberyard Editor\.
+Once you've created your ragdoll and animation graph, you can simulate the ragdoll in game mode in O3DE Editor\.
 
 **To simulate your ragdoll**
 
-1. In Lumberyard Editor, right\-click the viewport and choose **Create entity**\.
+1. In O3DE Editor, right\-click the viewport and choose **Create entity**\.
 
 1. In the **Entity Inspector**, for **Name**, enter **Ragdoll**\.
 

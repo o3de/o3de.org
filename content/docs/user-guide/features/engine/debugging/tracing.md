@@ -24,7 +24,7 @@ The following table describes the `AZ_Tracing` macros and their uses\.
 
 ## Suppressing AZ Trace Messages in Unit Tests {#cpp-best-practices-lumberyard-tracing-unit-tests}
 
-You can use macros to suppress AZ trace messages\. Starting in Lumberyard version 1\.21, the following macros for suppressing AZ Trace messages in the AZ Unit Test framework have equivalent macros with new names\. The old macros will be removed in a future release\.
+You can use macros to suppress AZ trace messages\. Starting in O3DE version 1\.21, the following macros for suppressing AZ Trace messages in the AZ Unit Test framework have equivalent macros with new names\. The old macros will be removed in a future release\.
 
 
 | Old Macro Name | New Macro Name |

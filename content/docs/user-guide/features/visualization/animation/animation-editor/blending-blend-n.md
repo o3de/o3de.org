@@ -11,7 +11,7 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 
 **To use the **Blend N** node**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. Create a [blend tree](/docs/user-guide/features/visualization/animation/animation-editor/creating-blend-trees.md)\.
 

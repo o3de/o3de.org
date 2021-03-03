@@ -10,7 +10,7 @@ Open 3D Engine provides a set of tools for intelligently bundling assets and man
 
 | Topic | Description |
 | --- | --- |
-| [What is the Open 3D Engine Asset Bundler?](/docs/user-guide/features/packaging/asset-bundler/overview.md) | Learn how the Lumberyard Asset Bundler tools work and how you can use them in your game project\. |
+| [What is the Open 3D Engine Asset Bundler?](/docs/user-guide/features/packaging/asset-bundler/overview.md) | Learn how the O3DE Asset Bundler tools work and how you can use them in your game project\. |
 | [Bundle assets for release](/docs/user-guide/tutorials/packaging/tutorial-release.md) | Learn how to create release builds and use the Asset Bundler to package assets\. |
 | [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md) | Learn how to create multiple asset bundles for a game project\. |
 | [Creating Content Patch Bundles](/docs/user-guide/tutorials/packaging/tutorial-content-patches.md) | Learn how to create delta content patches for your shipped games\. |

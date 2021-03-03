@@ -4,7 +4,7 @@ title: Debugger Configuration
 ---
 # Debugger Configuration {#physx-configuration-debugger}
 
-In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger \(PVD\)\. The PVD is a third\-party application that records your PhysX data from Lumberyard Editor\. You can then review this data to see how your physics effects appear\.
+In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger \(PVD\)\. The PVD is a third\-party application that records your PhysX data from O3DE Editor\. You can then review this data to see how your physics effects appear\.
 
 For more information, see the NVIDIA [PhysX Visual Debugger \(PVD\)](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/VisualDebugger.html#physxvisualdebugger) documentation\.
 
@@ -16,11 +16,11 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 
 1. Follow the installation steps\.
 
-1. After you install the application, open the PVD\. This application must be running if you want to record data from Lumberyard Editor\.
+1. After you install the application, open the PVD\. This application must be running if you want to record data from O3DE Editor\.
 
-1. In Lumberyard Editor, open a level or create one that has entities with PhysX components\. For example, you can create a dynamic entity that falls\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics#example-creating-dynamic-game-entity)\.
+1. In O3DE Editor, open a level or create one that has entities with PhysX components\. For example, you can create a dynamic entity that falls\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics#example-creating-dynamic-game-entity)\.
 
-1. In Lumberyard Editor, choose **Tools**, **PhysX Configuration**\.
+1. In O3DE Editor, choose **Tools**, **PhysX Configuration**\.
 
 1. Click the **Debugger** tab\.
 
@@ -29,7 +29,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 ****
 [\[See the AWS documentation website for more details\]](/docs/userguide/nvidia/physx/configuration-debugger)
 
-1. To verify that the PVD is connected to Lumberyard, for **PVD Auto Connect**, choose **Game** or **Editor** and then enter gameplay or editor mode\. Depending on what you choose, the following message appears in the console\.
+1. To verify that the PVD is connected to O3DE, for **PVD Auto Connect**, choose **Game** or **Editor** and then enter gameplay or editor mode\. Depending on what you choose, the following message appears in the console\.
 
    ```
    (PhysX) - Successfully connected to the PhysX Visual Debugger (PVD).
@@ -37,7 +37,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 
 1. Open the PhysX Visual Debugger to view the recorded information\.
 **Example**
-![\[Review the recorded data from Lumberyard Editor in the PhysX Visual Debugger.\]](/images/user-guide/physx/physx-configuration-debugger-2.png)
+![\[Review the recorded data from O3DE Editor in the PhysX Visual Debugger.\]](/images/user-guide/physx/physx-configuration-debugger-2.png)
 
 1. You can also manually connect or disconnect from the PVD using the following console variable commands\.
 

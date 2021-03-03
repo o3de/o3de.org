@@ -11,18 +11,18 @@ title: Lua Editor
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Lumberyard Lua Editor \(Lua IDE\) offers an intuitive integrated development environment \(IDE\) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game\. Lua Editor is a standalone application, but can be opened directly from Lumberyard Editor using the Tools menu\.
+O3DE Lua Editor \(Lua IDE\) offers an intuitive integrated development environment \(IDE\) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game\. Lua Editor is a standalone application, but can be opened directly from O3DE Editor using the Tools menu\.
 
-## Tutorial: Using Lua Editor for Debugging with Lumberyard Editor {#lua-editor-debugger-tutorial}
+## Tutorial: Using Lua Editor for Debugging with O3DE Editor {#lua-editor-debugger-tutorial}
 
-This tutorial shows you how to use Lumberyard Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component\. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script\.
+This tutorial shows you how to use O3DE Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component\. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script\.
 
 **Debugging Lua scripts using Lua Editor**
 
 1. Set the **SamplesProject** as the default project using Project Configurator\.
 
-1. In Lumberyard Editor, create a new level by performing *one* of the following steps:
-   + In the **Welcome to Lumberyard Editor** window, click **New level**
+1. In O3DE Editor, create a new level by performing *one* of the following steps:
+   + In the **Welcome to O3DE Editor** window, click **New level**
    + Click **File**, **New**
    + Press **Ctrl\+N**
 
@@ -42,13 +42,13 @@ This tutorial shows you how to use Lumberyard Editor to create a sample level in
 1. Click **ConstantRotation\.lua**, and then click **OK**\.
 
 1. In the **Lua Script** component, click the **Open in Lua Editor** button to launch Lua Editor\.
-![\[Launch Lua Editor from Lua Script component in Lumberyard Editor\]](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
+![\[Launch Lua Editor from Lua Script component in O3DE Editor\]](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
 
-   Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug\. In this tutorial, you connect to Lumberyard Editor\.
+   Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug\. In this tutorial, you connect to O3DE Editor\.
 **Note**
-Connection is facilitated by [GridHub](/docs/userguide/gridhub-intro.md), which is Lumberyard's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\.
+Connection is facilitated by [GridHub](/docs/userguide/gridhub-intro.md), which is O3DE's central connection hub for debugging\. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to\.
 
-1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor\(*ID*\)** to connect to Lumberyard Editor\.
+1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor\(*ID*\)** to connect to O3DE Editor\.
 ![\[Target selector\]](/images/user-guide/lua-editor-debugger-target-editor.png)
 **Note**
 You may need to expand the Lua Editor window to see the buttons on the Lua Editor toolbar for the next few steps\.
@@ -56,8 +56,8 @@ You may need to expand the Lua Editor window to see the buttons on the Lua Edito
 1. In the Lua Editor toolbar, leave **Context** setting at **Default** for the debugging context\. The default setting is good for debugging component entity scripts such as the one in this tutorial\. The **Cry** context option is for debugging legacy scripts such as those associated with Cry entities or the Game SDK\.
 ![\[Context selector\]](/images/user-guide/lua-editor-debugger-context-choose.png)
 
-1. The **Debugging** icon turns green to show that Lua Editor and Lumberyard Editor are connected:
-![\[Lua Editor connected to Lumberyard Editor\]](/images/user-guide/lua-editor-debugger-connected-icon.png)
+1. The **Debugging** icon turns green to show that Lua Editor and O3DE Editor are connected:
+![\[Lua Editor connected to O3DE Editor\]](/images/user-guide/lua-editor-debugger-connected-icon.png)
 
    Click **Classes** in the **Class Reference** to show the available Lua libraries\. You can do the same for **EBuses** and **Globals**\.
 ![\[Classes Reference\]](/images/user-guide/lua-editor-debugger-class-reference-pane.png)
@@ -71,7 +71,7 @@ The class reference feature is active only for the default context and component
 
 1. In Lua Editor, click one or more line numbers in the `constantrotation.lua` script to set one or more breakpoints\. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window\.
 
-1. In Lumberyard Editor, press **Ctrl\+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts\. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters\.
+1. In O3DE Editor, press **Ctrl\+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts\. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters\.
 ![\[Debugger stopped on breakpoint\]](/images/user-guide/lua-editor-debugger-stopped-on-breakpoint.png)
 
    When execution is halted at a breakpoint, more information becomes available in the **Lua Locals**, **Stack**, and **Watched Variables** panes\.
@@ -89,7 +89,7 @@ For greater convenience, you can float or dock these windows\.
 1. To detach from debugging, click **Debugging**\.
 ![\[Click to detach from debugging\]](/images/user-guide/lua-editor-debugger-detach-icon.png)
 
-1. In Lumberyard Editor, Press **Esc** to stop the game\.
+1. In O3DE Editor, Press **Esc** to stop the game\.
 
 ### Options Available While Debugging {#lua-editor-debugger-debugging-options}
 
@@ -100,7 +100,7 @@ The following table summarizes common options available while debugging\.
 
 | **Icon** | **Action** | **Keyboard Shortcut** | **Description** |
 | --- | --- | --- | --- |
-| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt\+F5 | Run in Lumberyard Editor\. |
+| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt\+F5 | Run in O3DE Editor\. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl\+F5 | Send script to the connected target and run it\. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-continue.png) | Run/Continue | F5 | Run or continue running the current script\. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-step-into.png) | Step Into | F11 | Step into the function called on the current line\. |

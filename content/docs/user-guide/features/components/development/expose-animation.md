@@ -5,7 +5,7 @@ title: Exposing Custom Components to Track View for Animation
 ---
 # Exposing Custom Components to Track View for Animation {#component-entity-system-track-view}
 
-To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to Lumberyard's Track View and **Entity Inspector**\. To expose a custom component and its properties, you must perform three steps:
+To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to O3DE's Track View and **Entity Inspector**\. To expose a custom component and its properties, you must perform three steps:
 
 1. Create getter and setter methods for the animated property on one of the component's request event buses\.
 
@@ -140,7 +140,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    **Track View** then uses a color track for the property, as the following image shows\.
 ![\[Color picker in Track View\]](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
 
-   Other units can be found in the file `dev\Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`\. As of Lumberyard release 1\.8, these units are the following\.
+   Other units can be found in the file `dev\Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`\. As of O3DE release 1\.8, these units are the following\.
 
    ```
    const static AZ::Crc32 PropertyUnitsRadian = AZ_CRC("Radians");

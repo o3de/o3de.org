@@ -1,22 +1,22 @@
 ---
 description: ' Identify and fix common issues seen during Android development with
   Open 3D Engine. '
-title: Troubleshooting Lumberyard issues on Android
+title: Troubleshooting O3DE issues on Android
 ---
-# Troubleshooting Lumberyard issues on Android {#troubleshoot-android}
+# Troubleshooting O3DE issues on Android {#troubleshoot-android}
 
  Things go wrong during development, and knowing which issues are the most commonly encountered and how to resolve them can be a big help\. This topic is a knowledge base of many of the issues that users experience when they're working with Open 3D Engine to develop a project for Android\. This section focuses on helping you quickly identify your issue and get it resolved, so that you can get back to work\.
 
-For information on how to design assets and configure renderer settings to improve performance, see [Lumberyard Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/features/platforms/mobile-performance.md)\.
+For information on how to design assets and configure renderer settings to improve performance, see [O3DE Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/features/platforms/mobile-performance.md)\.
 
- All of the advice in this section is specific to issues you'll encounter when building with the Lumberyard tools, or when you're running a project on a device and see obvious errors caused by the engine itself\. For general advice and instructions on debugging your Lumberyard project for Android, see the [Android Studio Debugger documentation](https://developer.android.com/studio/debug)\.
+ All of the advice in this section is specific to issues you'll encounter when building with the O3DE tools, or when you're running a project on a device and see obvious errors caused by the engine itself\. For general advice and instructions on debugging your O3DE project for Android, see the [Android Studio Debugger documentation](https://developer.android.com/studio/debug)\.
 
- If you have a question that isn't answered here, try checking in with the Lumberyard community using one of these resources:
-+ [The Lumberyard forums](https://forums.awsgametech.com/)
-+ [The unofficial Lumberyard Discord server](https://discord.gg/tWrJ68)
+ If you have a question that isn't answered here, try checking in with the O3DE community using one of these resources:
++ [The O3DE forums](https://forums.awsgametech.com/)
++ [The unofficial O3DE Discord server](https://discord.gg/tWrJ68)
 
 **Topics**
-- [Troubleshooting Lumberyard issues on Android {#troubleshoot-android}](#troubleshooting-lumberyard-issues-on-android-troubleshoot-android)
+- [Troubleshooting O3DE issues on Android {#troubleshoot-android}](#troubleshooting-lumberyard-issues-on-android-troubleshoot-android)
   - [Black screen when launching on a device {#troubleshoot-android-black-screen}](#black-screen-when-launching-on-a-device-troubleshoot-android-black-screen)
   - [Maven repository warnings {#troubleshoot-maven-warnings}](#maven-repository-warnings-troubleshoot-maven-warnings)
   - [Debug release APKs {#troubleshoot-android-debug-release}](#debug-release-apks-troubleshoot-android-debug-release)
@@ -24,7 +24,7 @@ For information on how to design assets and configure renderer settings to impro
 ## Black screen when launching on a device {#troubleshoot-android-black-screen}
 
  Oftentimes, launching a build and seeing a black screen means that either a map failed to load, or shaders are missing\. You can diagnose and resolve the problem by trying the following actions:
-+  Inspect logs from `adb`\. Log messages from the Lumberyard engine include the string `LMBR`, and you can filter the output from `adb logcat` to display only these messages\. Use the following command in a Windows command prompt to get the current device logs:
++  Inspect logs from `adb`\. Log messages from the O3DE engine include the string `LMBR`, and you can filter the output from `adb logcat` to display only these messages\. Use the following command in a Windows command prompt to get the current device logs:
 
   ```
   adb logcat -s LMBR
@@ -58,7 +58,7 @@ For information on how to design assets and configure renderer settings to impro
 
 ## Maven repository warnings {#troubleshoot-maven-warnings}
 
- As part of a Lumberyard build or configure, you might see some warnings similar to the following\.
+ As part of a O3DE build or configure, you might see some warnings similar to the following\.
 
 ```
 [WARN] Failed to connect to https://maven.google.com/androidx/compose/ui/group-index.xml.  Access to Google's main Maven repository may be incomplete.
@@ -69,7 +69,7 @@ For information on how to design assets and configure renderer settings to impro
 
 **To remove Maven repository errors**
 
-1.  Import the project located at `lumberyard_install_dir/dev/Solutions/LumberyardAndroidSDK` into Android Studio\. See [Import a Gradle project to Android Studio](https://developer.android.com/studio/intro/migrate#import_a_gradle-based_intellij_project)\.
+1.  Import the project located at `lumberyard_install_dir/dev/Solutions/O3DEAndroidSDK` into Android Studio\. See [Import a Gradle project to Android Studio](https://developer.android.com/studio/intro/migrate#import_a_gradle-based_intellij_project)\.
 
 1.  Wait for the project to load and for the initial Gradle configure to complete\.
 

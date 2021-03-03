@@ -1,5 +1,5 @@
 ---
-description: ' Drag and drop assets from the Lumberyard Editor''s Asset Browser into the
+description: ' Drag and drop assets from the O3DE Editor''s Asset Browser into the
   UI Editor as a convenient way to create new entities and assets in the UI Editor
   . '
 title: Asset Drag and Drop

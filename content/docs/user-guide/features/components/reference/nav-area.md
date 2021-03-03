@@ -32,16 +32,16 @@ You can use a **[Navigation Seed](/docs/user-guide/features/components/nav-seed.
 1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism#component-polygon-prism-height-adjustment) if necessary\.
 
    If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.
-![\[Enable Show Navigation Areas and View Agent Type in Lumberyard Editor.\]](/images/user-guide/component/component-nav-area-1.1.png)
+![\[Enable Show Navigation Areas and View Agent Type in O3DE Editor.\]](/images/user-guide/component/component-nav-area-1.1.png)
 
 **To view the generated Navigation Area mesh** {#render-navigation-mesh}
 
-1. In Lumberyard Editor, choose **Game**, **AI**, **Show Navigation Areas**\.
+1. In O3DE Editor, choose **Game**, **AI**, **Show Navigation Areas**\.
 
-1. In Lumberyard Editor, choose **Game**, **AI**, **View Agent Type**, and then enable the agent type that you want to display\.
+1. In O3DE Editor, choose **Game**, **AI**, **View Agent Type**, and then enable the agent type that you want to display\.
 
-1. In Lumberyard Editor, choose **Game**, **AI**, **Continuous Update** to show changes in the navigation mesh as you modify the terrain or area\.
-![\[Enable Show Navigation Areas, View Agent Type, and Continuous Update in Lumberyard Editor.\]](/images/user-guide/component/component-nav-area-gameai-menu-items.png)
+1. In O3DE Editor, choose **Game**, **AI**, **Continuous Update** to show changes in the navigation mesh as you modify the terrain or area\.
+![\[Enable Show Navigation Areas, View Agent Type, and Continuous Update in O3DE Editor.\]](/images/user-guide/component/component-nav-area-gameai-menu-items.png)
 
    A navigation mesh shows traversable areas in blue\.
 
@@ -66,7 +66,7 @@ When selected, creates a subtractive navigation area\. This creates a cutout wit
 
 ## Navigating Around Static Objects {#component-nav-area-static-entities}
 
-When Lumberyard creates the navigation mesh, it can automatically exclude areas that should not be traversable, such as a large boulder or tree trunk\. To ensure that these areas are correctly detected by the navigation system, you must specify its **Transform** component as static\.
+When O3DE creates the navigation mesh, it can automatically exclude areas that should not be traversable, such as a large boulder or tree trunk\. To ensure that these areas are correctly detected by the navigation system, you must specify its **Transform** component as static\.
 
 **To mark an entity as static**
 

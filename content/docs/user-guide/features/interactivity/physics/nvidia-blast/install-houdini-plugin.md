@@ -15,7 +15,7 @@ title: Install SideFX Houdini plug-ins for NVIDIA Blast
  To create NVIDIA Blast assets, you must install a set of plug\-ins and Houdini Digital Assets for SideFX Houdini\.
 
 **Note**
-NVIDIA Blast for Lumberyard requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
+NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
 **Contents**

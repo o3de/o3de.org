@@ -21,7 +21,7 @@ Use the following best practices when you export your skinned meshes using the *
   +
 
 **If you enabled the CryLegacyAnimation gem:**
-Asset Processor processes your `.fbx` file to create an `.actor` file\. Occasionally, the number of vertices does not match the original vertex count of the `.fbx` file\. Lumberyard allows a maximum of 65,536 vertices for skinned geometry after asset processing\. However, the original vertex count from your DCC tool cannot be up to 65,536 vertices\. As a best practice when modeling your geometry, divide 65,536 by 3 for a value of 21,845 vertices\. This allows you to import `.fbx` files that have 21,845 or fewer vertices\. After you export the `.fbx` file, verify that Asset Processor successfully processes the skinned mesh\. If Asset Processor does not successfully process the skinned mesh, reduce the number of vertices in the model until the file is successfully processed\.
+Asset Processor processes your `.fbx` file to create an `.actor` file\. Occasionally, the number of vertices does not match the original vertex count of the `.fbx` file\. O3DE allows a maximum of 65,536 vertices for skinned geometry after asset processing\. However, the original vertex count from your DCC tool cannot be up to 65,536 vertices\. As a best practice when modeling your geometry, divide 65,536 by 3 for a value of 21,845 vertices\. This allows you to import `.fbx` files that have 21,845 or fewer vertices\. After you export the `.fbx` file, verify that Asset Processor successfully processes the skinned mesh\. If Asset Processor does not successfully process the skinned mesh, reduce the number of vertices in the model until the file is successfully processed\.
   +
 
 **If you enabled the [EMotion FX Animation](/docs/user-guide/features/gems/emotionfx-animation.md) gem:**
@@ -30,7 +30,7 @@ The theoretical maximum number of vertices for skinned meshes after processing i
 
 ## Using the Maya Game Exporter {#char-fbx-importer-export-skinned-meshes-using-maya-game-exporter}
 
-The following are typical settings for the Maya Game Exporter when you export your skinned mesh character into Lumberyard\.
+The following are typical settings for the Maya Game Exporter when you export your skinned mesh character into O3DE\.
 
 **Export settings for \.actor files**
 + Use the **Model** tab to export your `.fbx` files\.

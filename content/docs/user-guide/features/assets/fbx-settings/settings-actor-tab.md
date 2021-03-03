@@ -161,7 +161,7 @@ Vertex color streams contain four channels: red, green, blue, and alpha\. Settin
 
 ![\[The FBX Settings Actors tab Scale actor modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-scale-actor-1.25.png)
 
-The **Scale factor** modifier sets a uniform scale for the **Actor group**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than Lumberyard\.
+The **Scale factor** modifier sets a uniform scale for the **Actor group**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than O3DE\.
 
 ## Skeleton optimization modifier {#w31aac15b9c11c13c25}
 
@@ -194,12 +194,12 @@ The minimum bone weight per vertex\. Weight values beneath this threshold are ig
 
 ![\[The FBX Settings Actors tab Tangents modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-tangents-1.25.png)
 
-The **Tangents** modifier generates or exports tangents and bitangents from your `.fbx` file\. You should use the same tangent space you use to generate normal maps to achieve the desired appearance in Lumberyard\.
+The **Tangents** modifier generates or exports tangents and bitangents from your `.fbx` file\. You should use the same tangent space you use to generate normal maps to achieve the desired appearance in O3DE\.
 
 Normal maps can make a surface appear as though it has more geometric surface detail than exists in the mesh\. The normals in the map are in tangent space which points in the positive Z direction\. Tangent space is local to the surface and is used to transform the normals in the normal map into world space so the material can be lit and rendered correctly on a deforming surface such as a character mesh\. You can create tangents and bitangents in your third\-party content application and save them as vertex attributes, then export the tangents with the **Tangents** modifier, or use the **Tangents** modifier to generate tangents when the mesh for this **Actor group** is processed\.
 
 **Tangent space**
-Defines the tangent space that Lumberyard uses for an actor\. Choose from the following options:
+Defines the tangent space that O3DE uses for an actor\. Choose from the following options:
 + **MikkT** - Uses MikkT to generate the tangents\. MikkT is a widely used solution for generating tangent space that strives for consistency regardless of changes and optimizations to the source mesh\. This is the default setting\.
 + **From FBX** - Export the tangents from the FBX file\.
 + **EMotion FX** - Use EMotion FX to calculate the tangents\.

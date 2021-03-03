@@ -1,11 +1,11 @@
 ---
 description: ' Follow these guidelines to generate art assets and tune Open 3D Engine performance
   for mobile devices. '
-title: 'Lumberyard Performance Tuning Guidelines for Mobile Devices'
+title: 'O3DE Performance Tuning Guidelines for Mobile Devices'
 ---
-# Lumberyard Performance Tuning Guidelines for Mobile Devices {#ios-android-performance-guidelines}
+# O3DE Performance Tuning Guidelines for Mobile Devices {#ios-android-performance-guidelines}
 
-See the following guidelines for generating art assets for mobile games with Lumberyard and how to tune Lumberyard performance for mobile devices\.
+See the following guidelines for generating art assets for mobile games with O3DE and how to tune O3DE performance for mobile devices\.
 
 **Topics**
 + [Art Guidelines](#ios-android-performance-art-guidelines)
@@ -22,7 +22,7 @@ This section provides guidelines for geometry, lighting, cascade shadow maps, an
 
 Follow these guidelines when creating geometry for your mobile game:
 + Use fewer individual objects to significantly reduce the draw calls\. We recommend 750 or less draw calls on mobile devices\.
-+ Use instances where appropriate\. To do so, create a slice in Lumberyard Editor and then instantiate multiple instances of that slice in the level\.
++ Use instances where appropriate\. To do so, create a slice in O3DE Editor and then instantiate multiple instances of that slice in the level\.
 + Add support for geometry level of detail \([LOD](/docs/userguide/ly-glos-chap#lod)\)\. Each LOD should be a 50% reduction of geometry\.
   + Group the high resolution LOD model under `_lod0_objectname`\.
   + Group the next LOD model under `_lod1_objectname_group`\.
@@ -35,7 +35,7 @@ Follow these guidelines when creating geometry for your mobile game:
 ![\[Example level of detail (LOD) setup in Maya.\]](/images/user-guide/mobile/geometry-level-of-detail-setup-example-maya.png)
   + Do the following to tune the LOD:
 
-    1. In Lumberyard Editor, select an entity in your level that has a **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
+    1. In O3DE Editor, select an entity in your level that has a **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 
     1. In the **Entity Inspector**, in the **Mesh** component, under **Options**, adjust the slider for **LOD distance ratio**\. The slider adjusts the distance at which the LOD pops in\.
 
@@ -44,8 +44,8 @@ Follow these guidelines when creating geometry for your mobile game:
   + For low\-end devices, use 300k or below\.
   + For higher\-end devices, use 700k or below if the CPU is the bottleneck\.
 **Note**
-To determine the poly count, set **r\_DisplayInfo** to **1** in the Lumberyard Editor console\. The debug data on the top right of the screen will display the poly number for each frame of the scene\.
-+ In the **Console** pane in Lumberyard Editor, set the console variable `r_stats` to **1** to print the number of draw calls and polygons that the current camera renders\.
+To determine the poly count, set **r\_DisplayInfo** to **1** in the O3DE Editor console\. The debug data on the top right of the screen will display the poly number for each frame of the scene\.
++ In the **Console** pane in O3DE Editor, set the console variable `r_stats` to **1** to print the number of draw calls and polygons that the current camera renders\.
 
 ### Lighting Guidelines {#ios-android-performance-art-guidelines-lighting}
 
@@ -53,7 +53,7 @@ Follow these guidelines when adding lighting to your mobile game:
 + Carefully consider the amount of lights in your scene that cast shadows\.
 + Do the following to tune the lights:
 
-  1. In Lumberyard Editor, select an entity in your level that has a **Mesh** component\.
+  1. In O3DE Editor, select an entity in your level that has a **Mesh** component\.
 
   1. In the **Entity Inspector**, in the **Mesh** component, under **Options**, adjust the value for **View distance multiplier**\. Specify a lower value to fade out the light and stop drawing sooner\. This setting is important for performance\.
 + Add area and projector lights only if needed\. Lighting pass is expensive\.
@@ -69,7 +69,7 @@ Follow these guidelines when adding lighting to your mobile game:
 
 ### Cascade Shadow Map Guidelines {#ios-android-performance-art-guidelines-cascade-shadow-maps}
 
-Lumberyard uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
+O3DE uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
 + `e_ShadowsCascadesDebug` - Enables the debug view for the cascade shadow maps\. Each cascade in the world renders with a different color to provide visual feedback of the area that is covered by a cascade shadow map\.
 
 **Example**
@@ -82,7 +82,7 @@ Use the following console variables to specify the size and how to generate shad
 + `e_GsmRange` - Specifies the size of the first shadow cascade in square world units\. The default value is `3`, which covers three square units in the world\. In the previous example, the first shadow cascade is drawn in red\.
 + `e_GsmRangeStep` - Specifies the multiplier to use to calculate the size of the next shadow cascade\. The default value is `3`\.
 
-  For example, if you set `e_GsmRange` to **3**, the first shadow cascade covers three square units in the world\. To calculate the next shadow cascade size, Lumberyard multiplies the first shadow cascade and the value for `e_GsmRangeStep`\. If the value for `e_GsmRangeStep` is the default value of `3`, the next shadow cascade would cover nine square units in the world\. The next shadow cascade would cover 27 square units in the world, and so on\.
+  For example, if you set `e_GsmRange` to **3**, the first shadow cascade covers three square units in the world\. To calculate the next shadow cascade size, O3DE multiplies the first shadow cascade and the value for `e_GsmRangeStep`\. If the value for `e_GsmRangeStep` is the default value of `3`, the next shadow cascade would cover nine square units in the world\. The next shadow cascade would cover 27 square units in the world, and so on\.
 
 When you set console variables, try to balance reducing the size and number of cascade shadow maps and maintaining the visual quality of your game\. You can set `e_shadows` to **0** to turn off shadows, which may be necessary for low\-end devices\.
 
@@ -95,8 +95,8 @@ The following images demonstrate how the global shadow map \(GSM\) console varia
 |
 | **Example images for GSM impact on shadow cascade size and coverage distance** |
 | --- |
-| Set the e\_GsmRange console variable to 1 to reduce the size of the shadow cascade\. | Set the e\_GsmRangeStep console variable to 1\.5 to reduce the area that each consecutive cascade covers\. | Set the e\_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses\. |
-|  ![\[Set the e_GsmRange console variable to 1 to reduce the size of the shadow cascade.\]](/images/user-guide/mobile/global-shadow-map-e_GsmRange.png)  |  ![\[Set the e_GsmRangeStep console variable to 1.5 to reduce the area that each consecutive cascade covers.\]](/images/user-guide/mobile/global-shadow-map-e_GsmRangeStep.png)  |  ![\[Set the e_GsmNodLods console variable to 3 to reduce the number of shadow cascades that Lumberyard uses.\]](/images/user-guide/mobile/global-shadow-map-e_GsmNodLods.png)  |
+| Set the e\_GsmRange console variable to 1 to reduce the size of the shadow cascade\. | Set the e\_GsmRangeStep console variable to 1\.5 to reduce the area that each consecutive cascade covers\. | Set the e\_GsmNodLods console variable to 3 to reduce the number of shadow cascades that O3DE uses\. |
+|  ![\[Set the e_GsmRange console variable to 1 to reduce the size of the shadow cascade.\]](/images/user-guide/mobile/global-shadow-map-e_GsmRange.png)  |  ![\[Set the e_GsmRangeStep console variable to 1.5 to reduce the area that each consecutive cascade covers.\]](/images/user-guide/mobile/global-shadow-map-e_GsmRangeStep.png)  |  ![\[Set the e_GsmNodLods console variable to 3 to reduce the number of shadow cascades that O3DE uses.\]](/images/user-guide/mobile/global-shadow-map-e_GsmNodLods.png)  |
 
 ### Material Guidelines {#ios-android-performance-art-guidelines-materials}
 
@@ -107,7 +107,7 @@ Follow these guidelines when creating materials for your mobile game:
 
 ## Engineering Guidelines {#ios-android-performance-engineering-guidelines}
 
-Lumberyard provides four levels of configuration files to support enabling and disabling features and functionality based on performance characteristics of the mobile devices\. You can find the following files in the `lumberyard_version/dev/Engine/Config/spec` directory:
+O3DE provides four levels of configuration files to support enabling and disabling features and functionality based on performance characteristics of the mobile devices\. You can find the following files in the `lumberyard_version/dev/Engine/Config/spec` directory:
 + `ios_low.cfg`
 + `ios_medium.cfg`
 + `ios_high.cfg`
@@ -119,11 +119,11 @@ Lumberyard provides four levels of configuration files to support enabling and d
 
 Each file includes a set of console variables in which you can enable or disable engine features\.
 
-You can also edit the configuration files in the **Graphics Settings** window in Lumberyard Editor\.
+You can also edit the configuration files in the **Graphics Settings** window in O3DE Editor\.
 
-**To edit configuration files in Lumberyard Editor**
+**To edit configuration files in O3DE Editor**
 
-1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Graphics Settings**\.
+1. In O3DE Editor, choose **Edit**, **Editor Settings**, **Graphics Settings**\.
 
 1. In the **Graphics Settings** window, do the following:
 
@@ -132,14 +132,14 @@ You can also edit the configuration files in the **Graphics Settings** window in
    1. For the preferred configuration file, adjust the values for the various console variables\. For example, if you select **iOS**, console variables and values for each configuration file appear \(`ios_low.cfg`, `ios_medium.cfg`, `ios_high.cfg`, and `ios_veryhigh.cfg`\)\.
 
    When you edit the console variables for the configuration file, the renderer displays onscreen how the level may look on a mobile device\.
-![\[Example of the Graphics Settings window in Lumberyard Editor.\]](/images/user-guide/mobile/graphics-settings-window-ios-example.png)
+![\[Example of the Graphics Settings window in O3DE Editor.\]](/images/user-guide/mobile/graphics-settings-window-ios-example.png)
 
 ### Using android\_models\.xml and ios\_models\.xml Files {#ios-android-performance-engineering-guidelines-models-xml-files}
 
-Lumberyard uses two `.xml` files to determine which mobile devices use the low, medium, high, or very high configuration settings files\. You can find the `android_models.xml` and `ios_models.xml` files in the `/lumberyard_version/dev/Engine/Config/gpu` directory\.
+O3DE uses two `.xml` files to determine which mobile devices use the low, medium, high, or very high configuration settings files\. You can find the `android_models.xml` and `ios_models.xml` files in the `/lumberyard_version/dev/Engine/Config/gpu` directory\.
 
 **Example android\_models\.xml file**
-The Samsung Galaxy S5 line shows that Lumberyard supports the use of regular expressions when you specify the device model number\. If a device model is listed more than once, the last instance is read and used with the corresponding configuration file\.
+The Samsung Galaxy S5 line shows that O3DE supports the use of regular expressions when you specify the device model number\. If a device model is listed more than once, the last instance is read and used with the corresponding configuration file\.
 
 ```
 <DeviceList>
@@ -174,7 +174,7 @@ The renderer uses two OpenGL extensions to determine which GMEM mode is supporte
 + Framebuffer fetch \(256 bit mode\)
 + Pixel Local Storage \(128 bit mode\)
 
-For the iOS devices that Lumberyard supports, both GMEM 256 bit mode and 128 bit mode are supported\.
+For the iOS devices that O3DE supports, both GMEM 256 bit mode and 128 bit mode are supported\.
 
 ### Setting the GMEM Mode {#gpu-memory-setting-gmem-mode}
 

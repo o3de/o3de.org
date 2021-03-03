@@ -21,14 +21,14 @@ You can register an application in GridHub and use Profiler to capture, inspect,
 
 To enable Profiler to capture information from your application, you must first register the application in GridHub\. To do so, add `AzFramework::TargetManagementComponent` to the application's `SystemComponent`\.
 
-**Note**: Lumberyard's built\-in applications already have this component added by default\.
+**Note**: O3DE's built\-in applications already have this component added by default\.
 
 ## Launching Profiler {#profiler-launching}
 
-Unlike many Lumberyard utilities, you launch Profiler from its own executable file\.
+Unlike many O3DE utilities, you launch Profiler from its own executable file\.
 
 **To launch profiler**
-+ From the Lumberyard `dev\Bin64\` directory, run `Profiler.exe`\.
++ From the O3DE `dev\Bin64\` directory, run `Profiler.exe`\.
 ![\[Profiler initial window\]](/images/user-guide/profiler-launched.png)
 
 ## Capturing Data {#profiler-capturing-data}

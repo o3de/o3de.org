@@ -1,5 +1,5 @@
 ---
-description: ' Use Lumberyard to build game assets for your macOS games. '
+description: ' Use O3DE to build game assets for your macOS games. '
 title: Building Game Assets for macOS Games
 ---
 # Building Game Assets for macOS Games {#osx-assets-building}
@@ -11,10 +11,10 @@ title: Building Game Assets for macOS Games
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-When you build a macOS game using Lumberyard, you must first build the assets that are included with the application\. All built assets are located in the `cache` folder of your Lumberyard installation\. For example, when you build the Samples Project, the assets are saved to the `lumberyard_version\dev\cache\SamplesProject\osx_gl` directory\. The initial build of the Samples Project assets may take up to an hour to process, but incremental changes should process almost instantly\.
+When you build a macOS game using O3DE, you must first build the assets that are included with the application\. All built assets are located in the `cache` folder of your O3DE installation\. For example, when you build the Samples Project, the assets are saved to the `lumberyard_version\dev\cache\SamplesProject\osx_gl` directory\. The initial build of the Samples Project assets may take up to an hour to process, but incremental changes should process almost instantly\.
 
 **Note**
-If you make changes to your game in Lumberyard Editor on your PC, you must copy the updated assets to your Mac using your preferred method\. For example, you can use source control\. For information, see [Using the Perforce Plugin with Lumberyard](/docs/user-guide/welcome/setup/perforce-plugin.md)\.
+If you make changes to your game in O3DE Editor on your PC, you must copy the updated assets to your Mac using your preferred method\. For example, you can use source control\. For information, see [Using the Perforce Plugin with O3DE](/docs/user-guide/welcome/setup/perforce-plugin.md)\.
 
 **To build macOS game assets on your Mac**
 

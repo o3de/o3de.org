@@ -5,7 +5,7 @@ title: Creating a Release App
 ---
 # Creating a Release App {#ios-creating-release-app}
 
-Once you have finished your Lumberyard iOS game, you can prepare it for the App Store by creating a release app and including the assets and shaders in `.pak` files\. You must do the following:
+Once you have finished your O3DE iOS game, you can prepare it for the App Store by creating a release app and including the assets and shaders in `.pak` files\. You must do the following:
 
 1. [Prepare your code](#ios-preparing-your-code)\.
 
@@ -42,7 +42,7 @@ Modify the code in the `IConsole.h` file to enable the creation of mobile releas
 
 ## Modifying Your Settings {#ios-modifying-your-settings}
 
-Modify the settings in your system configuration file to disable communication between the iOS device and the remote shader compiler\. For release builds, Lumberyard packages the shaders directly to the iOS device instead of compiling shaders on demand\.
+Modify the settings in your system configuration file to disable communication between the iOS device and the remote shader compiler\. For release builds, O3DE packages the shaders directly to the iOS device instead of compiling shaders on demand\.
 
 **To modify the system configuration file**
 
@@ -59,7 +59,7 @@ Modify the settings in your system configuration file to disable communication b
 
 ## Creating \.Pak Files {#ios-creating-pak-files}
 
-Lumberyard apps use `.pak` files to include assets and shaders for your app build\. The `.pak` files are required for release apps and must be created manually\.
+O3DE apps use `.pak` files to include assets and shaders for your app build\. The `.pak` files are required for release apps and must be created manually\.
 
 **Topics**
 + [Building Shader \.Pak Files](#ios-shaders-build-pak-files)
@@ -67,7 +67,7 @@ Lumberyard apps use `.pak` files to include assets and shaders for your app buil
 
 ### Building Shader \.Pak Files {#ios-shaders-build-pak-files}
 
-Use the Remote Shader Compiler to generate the shaders that are packed into your app build\. You must run your app in profile or debug and view every surface in your game level to capture all shader permutations\. Lumberyard supports both GMEM 128 and GMEM 256 and generates shaders on the highest version that a device supports\. As a result, you must run your game on two devices, one that supports GMEM 128 and one that supports GMEM 256\.
+Use the Remote Shader Compiler to generate the shaders that are packed into your app build\. You must run your app in profile or debug and view every surface in your game level to capture all shader permutations\. O3DE supports both GMEM 128 and GMEM 256 and generates shaders on the highest version that a device supports\. As a result, you must run your game on two devices, one that supports GMEM 128 and one that supports GMEM 256\.
 
 **To generate shaders for your iOS app**
 
@@ -130,14 +130,14 @@ Add the shader \.pak files to your Xcode project\.
 
 ## Configuring the App Store Settings {#ios-configuring-app-store-settings}
 
-Every Lumberyard project includes an `Info.plist` file that contains the default values for the following settings:
+Every O3DE project includes an `Info.plist` file that contains the default values for the following settings:
 + Display name
 + App icon
 + Splash screen
 + Screen orientation
 + Other related settings
 
-You can access the `Info.plist` file in the `lumberyard_version\dev\Code\game_project_name\Resources\IOSLauncher\` directory\. The default app icons and splash screens are in the `Images.xcassets` directory\. For information about using the default app icons and splash screens, see the [Lumberyard Logos and Branding Guidelines](https://aws.amazon.com/lumberyard/support/)\.
+You can access the `Info.plist` file in the `lumberyard_version\dev\Code\game_project_name\Resources\IOSLauncher\` directory\. The default app icons and splash screens are in the `Images.xcassets` directory\. For information about using the default app icons and splash screens, see the [O3DE Logos and Branding Guidelines](https://aws.amazon.com/lumberyard/support/)\.
 
 Verify the `Info.plist` file is writeable and then use Xcode to modify the values for these settings\. For information about modifying these settings in Xcode, see [Configuring Your Xcode Project for Distribution](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html)\.
 

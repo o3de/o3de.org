@@ -5,7 +5,7 @@ title: Websockets Gem
 ---
 # Websockets Gem {#gem-websockets}
 
-The Websockets Gem provides an easy way to create WebSocket clients for your Lumberyard games and projects\. With this gem, you can connect to WebSocket servers and take advantage of the full\-duplex communication that they provide\.
+The Websockets Gem provides an easy way to create WebSocket clients for your O3DE games and projects\. With this gem, you can connect to WebSocket servers and take advantage of the full\-duplex communication that they provide\.
 
 This gem is designed to work with any platform\-specific library that's needed\. Each platform is divided out and separated, allowing libraries and features to be added quickly and easily, or to exchange existing or outdated tools with new ones\. On Windows and Linux, the gem uses a well\-known WebSocket library, **WebSocket\+\+**, which is included in the gem\.
 
@@ -32,7 +32,7 @@ For an example of the usage of these functions, see the source for the Twitch Ch
 The IWebsocketClient class is an interface that sits at the base of the entire Websockets Gem\. It provides a direct interface to the individual connections to WebSockets for users who wish to avoid the bus system in cases where speed is paramount\. It provides all of the same functionality as the bus system once the connection has been created, with none of the overhead\.
 
 **SecureWebsocketClient vs WebsocketClient**
-The Websockets Gem provides a method to create both secure and normal WebSocket clients, with the default being secure WebSockets connections\. Secure WebSocket connections provide OpenSSL \(Transport Layer Security\) for protecting client\-server connections using the standard included in Lumberyard\.
+The Websockets Gem provides a method to create both secure and normal WebSocket clients, with the default being secure WebSockets connections\. Secure WebSocket connections provide OpenSSL \(Transport Layer Security\) for protecting client\-server connections using the standard included in O3DE\.
 
 **OnMessage Function**
 Every WebSocket connection needs a message handler function to receive incoming messages from the server\. The `OnMessage` function interface provides a simple method for you to provide this handler function\. By providing a function pointer or lambda with the signature `void (AZ::string_view)`, you can have your own custom functions handle responses, as shown in the following example:

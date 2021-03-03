@@ -29,7 +29,7 @@ When you select an entity, you can specify whether to move that entity in relati
 
 This feature has the following limitations:
 + The Viewport Interaction Model supports component entities only and doesn't support legacy entities, such as terrain and vegetation\.
-+ When you enable the Viewport Interaction Model, this feature removes some toolbar options in the [Lumberyard Editor Interface](/docs/userguide/editor/interface.md), such as vertex snapping\.
++ When you enable the Viewport Interaction Model, this feature removes some toolbar options in the [O3DE Editor Interface](/docs/userguide/editor/interface.md), such as vertex snapping\.
 + You can't change or customize shortcuts for the Viewport Interaction Model\.
 
 **Topics**

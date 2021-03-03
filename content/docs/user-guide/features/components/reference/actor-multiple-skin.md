@@ -25,7 +25,7 @@ Whether you use a single FBX file or multiple FBX files, you create an actor for
 
 For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
 
-To download the assets used in the following sections, see [Open 3D Engine Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the Lumberyard characters file\.
+To download the assets used in the following sections, see [Open 3D Engine Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the O3DE characters file\.
 
 ## Using a Single FBX File {#component-actor-single-fbx}
 
@@ -33,7 +33,7 @@ When you use a single FBX file embedded with multiple meshes, you must create an
 
 **To add multiple actors from a single FBX file in the FBX Settings tool**
 
-1. In Lumberyard Editor's **Asset Browser**, right\-click the `.fbx` file that contains your meshes and choose **Edit Settings**\.
+1. In O3DE Editor's **Asset Browser**, right\-click the `.fbx` file that contains your meshes and choose **Edit Settings**\.
 
 1. On the **Actors** tab, click **Add another actor**\.
 

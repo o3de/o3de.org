@@ -1,30 +1,30 @@
 ---
 description: ' Open 3D Engine is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
-title: What is Lumberyard?
+title: What is O3DE?
 ---
-# What is Lumberyard? {#lumberyard-intro}
+# What is O3DE? {#lumberyard-intro}
 
-Open 3D Engine is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With Lumberyard, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
+Open 3D Engine is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With O3DE, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
 
-Lumberyard offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\.
+O3DE offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\.
 
 Interested? Want to get started?
-+ [Download the latest version of the Lumberyard beta](https://aws.amazon.com/lumberyard/downloads/)
++ [Download the latest version of the O3DE beta](https://aws.amazon.com/lumberyard/downloads/)
 + [ Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
 + [Sign up for and participate in the Open 3D Engine forums](https://forums.awsgametech.com/)
 
-![\[Learn more about Lumberyard's systems and features in the Open 3D Engine User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
+![\[Learn more about O3DE's systems and features in the Open 3D Engine User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
 
-Image from Starter Game\. For more sample projects and levels, see [Using Lumberyard sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
+Image from Starter Game\. For more sample projects and levels, see [Using O3DE sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
 
 ## Professional\-Grade AAA Engine {#lumberyard-aaa-engine}
 
-Lumberyard helps you build rich, engaging, world\-class games through its comprehensive and proven toolset and highly optimized runtime performance\.
+O3DE helps you build rich, engaging, world\-class games through its comprehensive and proven toolset and highly optimized runtime performance\.
 
 ### Beautiful Worlds {#lumberyard-aaa-engine-worlds}
 
-The visuals technology of Lumberyard can bring to life any virtual environment\. Your artists get a powerful toolbox to create high quality visual elements, such as physically based shaders, dynamic global illumination, particle effects, lifelike vegetation, real\-time dynamic water caustics, and volumetric fog\. They can also produce cinematic features like color grading, motion blur, depth of field, and integrated HDR lens flares\.
+The visuals technology of O3DE can bring to life any virtual environment\. Your artists get a powerful toolbox to create high quality visual elements, such as physically based shaders, dynamic global illumination, particle effects, lifelike vegetation, real\-time dynamic water caustics, and volumetric fog\. They can also produce cinematic features like color grading, motion blur, depth of field, and integrated HDR lens flares\.
 
 For more information, see the following topics:
 + [Creating levels and adding environment effects](/docs/userguide/level-intro.md)
@@ -33,7 +33,7 @@ For more information, see the following topics:
 
 ### Asset Changes {#lumberyard-aaa-engine-asset-changes}
 
-With the Lumberyard's Asset Processor, you can quickly get assets into the engine\. Save a file \(for example, from Maya or Photoshop\) into a directory, and the Asset Processor automatically processes that file from source art into game\-ready assets\. If you edit an asset, Lumberyard detects the change and automatically updates it in the background\.
+With the O3DE's Asset Processor, you can quickly get assets into the engine\. Save a file \(for example, from Maya or Photoshop\) into a directory, and the Asset Processor automatically processes that file from source art into game\-ready assets\. If you edit an asset, O3DE detects the change and automatically updates it in the background\.
 
 For more information, see [Using Asset Processor](/docs/user-guide/features/assets/processor.md)\.
 
@@ -47,35 +47,35 @@ For more information, see the following topics:
 
 ### Compelling Characters {#lumberyard-aaa-engine-characters}
 
-Artists can use Lumberyard to create believable characters and high\-fidelity performances\. Lumberyard's character tool, Animation Editor, combines animation, attachments, and physics simulations with blend shape, blend space, and animation layering\.
+Artists can use O3DE to create believable characters and high\-fidelity performances\. O3DE's character tool, Animation Editor, combines animation, attachments, and physics simulations with blend shape, blend space, and animation layering\.
 
 For more information, see [Create and animate characters](/docs/user-guide/features/visualization/animation/char-intro.md)\.
 
 ### Robust Networking {#lumberyard-aaa-engine-networking}
 
-Lumberyard introduces GridMate, a robust and flexible networking solution designed for efficient bandwidth usage and low\-latency communications\. You can synchronize objects over the network with GridMate's replica framework\. GridMate's session management can be integrated with other multiplayer services and helps you handle peer\-to\-peer and client-server topologies with host migration\.
+O3DE introduces GridMate, a robust and flexible networking solution designed for efficient bandwidth usage and low\-latency communications\. You can synchronize objects over the network with GridMate's replica framework\. GridMate's session management can be integrated with other multiplayer services and helps you handle peer\-to\-peer and client-server topologies with host migration\.
 
-For more information, see [Using Lumberyard Networking](/docs/userguide/networking/intro.md)\.
+For more information, see [Using O3DE Networking](/docs/userguide/networking/intro.md)\.
 
 ### Real\-Time Gameplay Editing {#lumberyard-aaa-engine-gameplay}
 
-Real\-time gameplay editing helps you iterate on gameplay and immediately see your results without waiting for builds or leaving the editor\. Lumberyard's Asset Processor automatically converts and optimizes your game assets in real time so that you can import game objects, fine\-tune behavior, and play the game that you created\.
+Real\-time gameplay editing helps you iterate on gameplay and immediately see your results without waiting for builds or leaving the editor\. O3DE's Asset Processor automatically converts and optimizes your game assets in real time so that you can import game objects, fine\-tune behavior, and play the game that you created\.
 
 ### Modular Gems {#lumberyard-aaa-engine-gems}
 
-Lumberyard's Modular Gems system gives you a library of prebuilt features with which you can start new projects or prototype ideas quickly\. Modular Gems offer increased control over which technologies to include in your game project\. Create your own modular Gems or use the Gems included with Lumberyard, such as physics, multiplayer, "white box" rapid prototyping tools, and more\.
+O3DE's Modular Gems system gives you a library of prebuilt features with which you can start new projects or prototype ideas quickly\. Modular Gems offer increased control over which technologies to include in your game project\. Create your own modular Gems or use the Gems included with O3DE, such as physics, multiplayer, "white box" rapid prototyping tools, and more\.
 
 For more information, see [Add modular features and assets with Gems](/docs/user-guide/features/gems)\.
 
 ### Wwise LTX {#lumberyard-aaa-engine-wwise-ltx}
 
-Lumberyard includes a version of Audiokinetic's advanced, feature\-rich sound engine\. Sound designers and composers can author rich soundscapes for your games\.
+O3DE includes a version of Audiokinetic's advanced, feature\-rich sound engine\. Sound designers and composers can author rich soundscapes for your games\.
 
 For more information, see [Adding Audio and Sound Effects](/docs/user-guide/features/interactivity/audio/intro.md)\.
 
 ## Integrated with AWS {#lumberyard-aws-integration}
 
-Lumberyard is deeply integrated with AWS so you can build live and multiplayer games with dramatically less cost, time, and technical risk\. AWS integrations include:
+O3DE is deeply integrated with AWS so you can build live and multiplayer games with dramatically less cost, time, and technical risk\. AWS integrations include:
 
 ### Amazon GameLift {#lumberyard-aws-gamelift}
 
@@ -85,9 +85,9 @@ For more information, see the [Amazon GameLift Developer Guide](https://docs.aws
 
 ### Cloud Canvas {#lumberyard-aws-cloud-canvas}
 
-Cloud Canvas is Lumberyard's technology for connecting your game to Amazon Web Services\. With Cloud Canvas, you can use AWS to implement cloud\-hosted features and create asynchronous multiplayer games\. Using AWS means you no longer have to acquire, configure, or operate host servers to implement connected gameplay\.
+Cloud Canvas is O3DE's technology for connecting your game to Amazon Web Services\. With Cloud Canvas, you can use AWS to implement cloud\-hosted features and create asynchronous multiplayer games\. Using AWS means you no longer have to acquire, configure, or operate host servers to implement connected gameplay\.
 
-You can build live, online game features, such as a community news feed, daily gifts, or in\-game notifications, in minutes with Lumberyard's Cloud Canvas tool\. Using cloud gems, you can build gameplay that connects to AWS services, such as Amazon DynamoDB, AWS Lambda, and Amazon S3\.
+You can build live, online game features, such as a community news feed, daily gifts, or in\-game notifications, in minutes with O3DE's Cloud Canvas tool\. Using cloud gems, you can build gameplay that connects to AWS services, such as Amazon DynamoDB, AWS Lambda, and Amazon S3\.
 
 For more information, see [Implementing Connected Features with Cloud Canvas](/docs/userguide/gems/cloud-canvas/intro.md)\.
 
@@ -99,16 +99,16 @@ For more information, see the [AWS SDK for C\+\+](https://aws.amazon.com/sdk-for
 
 ## Integrated with Twitch {#lumberyard-aws-twitch}
 
-Lumberyard is integrated with Twitch so that you can build games that engage with more than 1\.7 million monthly broadcasters and more than 100 million monthly viewers on Twitch\.
+O3DE is integrated with Twitch so that you can build games that engage with more than 1\.7 million monthly broadcasters and more than 100 million monthly viewers on Twitch\.
 
 ### Twitch ChatPlay {#lumberyard-aws-chatplay}
 
-The Twitch ChatPlay feature within Lumberyard helps you build gameplay that interacts in real time with Twitch viewers\. For example, you can build a game where viewers can vote on game outcomes, gift power\-ups to their favorite players, or change the level based on the number of viewers watching the player\.
+The Twitch ChatPlay feature within O3DE helps you build gameplay that interacts in real time with Twitch viewers\. For example, you can build a game where viewers can vote on game outcomes, gift power\-ups to their favorite players, or change the level based on the number of viewers watching the player\.
 
 For more information, see [Twitch ChatPlay System](/docs/user-guide/features/gems/chatplay/intro.md)\.
 
 ## Free with Source {#lumberyard-aws-source}
 
-Lumberyard is free, including source code\. You can customize Lumberyard for your team and vision for your project today, and for future projects\. There are no seat fees, subscription fees, or requirements to share revenue\. Only pay for the AWS services that you choose to use\.
+O3DE is free, including source code\. You can customize O3DE for your team and vision for your project today, and for future projects\. There are no seat fees, subscription fees, or requirements to share revenue\. Only pay for the AWS services that you choose to use\.
 
-For more information, see the [Lumberyard Licensing FAQ](https://aws.amazon.com/lumberyard/faq/#licensing)\.
+For more information, see the [O3DE Licensing FAQ](https://aws.amazon.com/lumberyard/faq/#licensing)\.

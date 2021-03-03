@@ -1,5 +1,5 @@
 ---
-description: ' Use Lumberyard''s UI Animation Editor to animate elements in your game''s
+description: ' Use O3DE''s UI Animation Editor to animate elements in your game''s
   UI. '
 title: UI Animation Editor
 ---

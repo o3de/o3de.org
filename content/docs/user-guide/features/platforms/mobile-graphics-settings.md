@@ -5,19 +5,19 @@ title: Updating Graphics Settings for Android and iOS
 ---
 # Updating Graphics Settings for Android and iOS {#ios-android-updating-graphics-settings}
 
-Lumberyard supports low, medium, high, and very high graphics performance for mobile devices\. You can change the graphics settings in Lumberyard Editor to simulate the graphics on Android and iOS devices\. This feature helps you visually check your mobile games in Lumberyard Editor during the development process\.
+O3DE supports low, medium, high, and very high graphics performance for mobile devices\. You can change the graphics settings in O3DE Editor to simulate the graphics on Android and iOS devices\. This feature helps you visually check your mobile games in O3DE Editor during the development process\.
 
-## Updating Graphics Performance in Lumberyard Editor {#ios-android-updating-graphics-settings-in-lumberyard-editor}
+## Updating Graphics Performance in O3DE Editor {#ios-android-updating-graphics-settings-in-lumberyard-editor}
 
-Use the **Graphics Performance** menu in Lumberyard Editor to choose a graphics setting for Android or iOS\.
+Use the **Graphics Performance** menu in O3DE Editor to choose a graphics setting for Android or iOS\.
 
-**To update graphic settings in Lumberyard Editor**
+**To update graphic settings in O3DE Editor**
 
-1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Graphics Performance**\.
+1. In O3DE Editor, choose **Edit**, **Editor Settings**, **Graphics Performance**\.
 
 1. Choose **Android** or **iOS** and then choose a setting\. For more information, see [Editor Settings](/docs/userguide/editor/menus#lumberyard-editor-menus-config-spec)\.
 
-![\[Lumberyard Editor Graphics Performance menu for Android\]](/images/user-guide/mobile/graphics-performance-mobile-settings.png)
+![\[O3DE Editor Graphics Performance menu for Android\]](/images/user-guide/mobile/graphics-performance-mobile-settings.png)
 
 When you choose a graphics performance setting, the `r_GraphicsQuality` console variable automatically updates with a corresponding value:
 + Very High: `4`
@@ -41,11 +41,11 @@ The following is an example of the `ios_models.xml` file\.
 
 ## Modifying Graphics Configuration Files {#ios-android-modifying-graphics-configuration-files}
 
-Use the **Graphics Settings** window in Lumberyard Editor to modify the graphics settings for each OS configuration file\. You can also modify the configuration files for the following graphics settings: low, medium, high, and very high\.
+Use the **Graphics Settings** window in O3DE Editor to modify the graphics settings for each OS configuration file\. You can also modify the configuration files for the following graphics settings: low, medium, high, and very high\.
 
 **To modify a graphics configuration file**
 
-1. In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Graphics Settings**\.
+1. In O3DE Editor, choose **Edit**, **Editor Settings**, **Graphics Settings**\.
 
 1. In the **Graphics Settings** window, for **Platform**, choose **Android** or **iOS** for the configuration file that you want to modify\.
 ![\[Platform drop-down list in the Graphics Settings window.\]](/images/user-guide/mobile/graphics-settings-platform-drop-down-menu.png)

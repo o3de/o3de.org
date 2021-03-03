@@ -50,7 +50,7 @@ The **Node Palette** contains a searchable list of nodes\. By default, the palet
 
 **To display the Node Palette**
 
-1. From Lumberyard Editor, choose **Tools**, **Script Canvas**\.
+1. From O3DE Editor, choose **Tools**, **Script Canvas**\.
 
 1. In the **Script Canvas** window, do one of the following:
    + Choose **Tools**, **Node Palette**\.

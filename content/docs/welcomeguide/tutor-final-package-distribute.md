@@ -1,25 +1,25 @@
 ---
-description: ' Learn the process for building and packaging a release of your Lumberyard
+description: ' Learn the process for building and packaging a release of your O3DE
   project. '
 title: 'Final step: Package and release a build'
 ---
 # Final step: Package and release a build<a name="tutor-final-package-distribute"></a>
 
-In this tutorial, you will learn the final steps to take now that you've got a finished game and are ready to release it\! You will create a release build, process and package your final assets, and create an indepdendent distribution outside of the **Lumberyard Editor** for everyone to play and enjoy\.
+In this tutorial, you will learn the final steps to take now that you've got a finished game and are ready to release it\! You will create a release build, process and package your final assets, and create an indepdendent distribution outside of the **O3DE Editor** for everyone to play and enjoy\.
 
-Most of what you'll be doing in this tutorial takes place outside of the Lumberyard Editor, using command line tools\. The commands used here assume that you're using Visual Studio 2019\. If you use Visual Studio 2017 instead, make the following changes in each command\-line snippet\.
+Most of what you'll be doing in this tutorial takes place outside of the O3DE Editor, using command line tools\. The commands used here assume that you're using Visual Studio 2019\. If you use Visual Studio 2017 instead, make the following changes in each command\-line snippet\.
 + Change `vc142` to `vc141`\.
 + Change `vs2019` to `vs2017`\.
 
-For those parts that do take place in the editor, this tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout you're using\. To set this layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
+For those parts that do take place in the editor, this tutorial is written for the default **O3DE Editor** layout, so make sure this is the layout you're using\. To set this layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
 
-![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
+![\[O3DE select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 All set up? Let's get started\!
 
 ## Create a release build<a name="_create_a_release_build"></a>
 
-1.  Open up a Windows Command Prompt and navigate to the directory of your Lumberyard install\. By default this is `C:\Amazon\Lumberyard\<version>`
+1.  Open up a Windows Command Prompt and navigate to the directory of your O3DE install\. By default this is `C:\Amazon\O3DE\<version>`
 
 1.  Navigate to the `dev` directory\.
 
@@ -39,18 +39,18 @@ All set up? Let's get started\!
 
 ## Export level and build shaders<a name="_export_level_and_build_shaders"></a>
 
-1.  Start the **Lumberyard Editor** if it's not already open, and load the level that you want to play in your packaged release\. If you're working with our pre\-packaged levels, use **ch08\_barnyard\_final**\.
+1.  Start the **O3DE Editor** if it's not already open, and load the level that you want to play in your packaged release\. If you're working with our pre\-packaged levels, use **ch08\_barnyard\_final**\.
 
 1.  Run your game in the editor with **Game** > **Play Game** or press **Ctrl\-E**\.
 
 1.  When your game is running, move the chicken around the world and look at stuff\! As the game renders, the engine picks up which shaders are used in the level and marks them for the shader compiler to process later\. When you've seen all of the level geometry, exit game mode by pressing **Esc**\.
 
 1.  Export the level as a bundled resource package, which is called a *pak file* \(`.pak`\)\. This exports level geometry and information about the entities in the level \- but doesn't bundle any resources *used* in the level\. You'll take that step later\. Access the menu bar and select **Game** > **Export to Engine** or press **Ctrl\-E**\.
-![\[Lumberyard level export\]](/images/welcomeguide/ui-export-level.png)
+![\[O3DE level export\]](/images/welcomeguide/ui-export-level.png)
 
-1.  \(Optional\) Close the Lumberyard Editor\. You're done with it for now \- the rest of this tutorial is done on the command line\.
+1.  \(Optional\) Close the O3DE Editor\. You're done with it for now \- the rest of this tutorial is done on the command line\.
 
-1.  Open a **new** Windows Command Prompt, and navigate to the directory of your Lumberyard install\.
+1.  Open a **new** Windows Command Prompt, and navigate to the directory of your O3DE install\.
 
 1.  Navigate to the `dev\Tools\CrySCompileServer\x64\profile` directory\.
 
@@ -82,7 +82,7 @@ Throughout this section we use the **Asset Bundler**, the tool which takes compi
 
 For all of these steps, you'll go back to the Windows Command Prompt that you opened at the start of this tutorial\.
 
-1.  Gather the auxiliary data that's used by Lumberyard to launch your game\.
+1.  Gather the auxiliary data that's used by O3DE to launch your game\.
 
    ```
    Tools\Python\python3 BuildReleaseAuxiliaryContent.py --platforms pc --buildFolder Bin64vc142
@@ -90,7 +90,7 @@ For all of these steps, you'll go back to the Windows Command Prompt that you op
 
    This creates the directory `welcomeguidetutorials_pc_paks`\. If you explore this directory, you'll see a number of configuration files and pre\-built asset paks contained here\. In particular, all of the levels of the tutorial \- not just your final level \- are packaged here\. If you want, you can delete any levels that you don't want to release with your game\.
 
-1.  Create an *asset list* that contains information about assets that are needed to load the Lumberyard engine and start your game\.
+1.  Create an *asset list* that contains information about assets that are needed to load the O3DE engine and start your game\.
 
    ```
    Bin64vc142\AssetBundlerBatch.exe assetLists ^
@@ -147,7 +147,7 @@ Now that you have your release built and ready to go, it's time to put it all to
 1.  Copy the **contents** of the `welcomeguidetutorials_pc_paks` directory to your release folder\.
 ![\[Release folder containing the engine bootstrapping and base assets dir\]](/images/welcomeguide/release-folder-2.png)
 
-1.  Copy the following files from your Lumberyard `dev` directory into the `welcomeguidetutorials` folder in your release\.
+1.  Copy the following files from your O3DE `dev` directory into the `welcomeguidetutorials` folder in your release\.
    +  `game_pc.pak`
    +  `engine_pc.pak`
 
@@ -173,6 +173,6 @@ Congratulations\! You've built an independent, releasable package for your game\
 
 ## Next steps<a name="_next_steps"></a>
 
-Now that you've completed this tutorial series, you should have a basic familiarity with the Lumberyard editor and how to use the Lumberyard build and packaging tools\. It's time to move on to making your own game using what you know\! To help you along the way, the [User Guide](https://docs.aws.amazon.com/lumberyard/latest/userguide/) has feature information, reference materials, and more task\-oriented tutorials\.
+Now that you've completed this tutorial series, you should have a basic familiarity with the O3DE editor and how to use the O3DE build and packaging tools\. It's time to move on to making your own game using what you know\! To help you along the way, the [User Guide](https://docs.aws.amazon.com/lumberyard/latest/userguide/) has feature information, reference materials, and more task\-oriented tutorials\.
 
-Depending on your role in game development, there are a few places that you might want to check out in the User Guide now to familiarze yourself with other parts of Lumberyard\. To help you find where to start, we've put together [How Open 3D Engine works](wg-how-lumberyard-works.md) and [Create with Open 3D Engine](wg-create-intro.md)\.
+Depending on your role in game development, there are a few places that you might want to check out in the User Guide now to familiarze yourself with other parts of O3DE\. To help you find where to start, we've put together [How Open 3D Engine works](wg-how-lumberyard-works.md) and [Create with Open 3D Engine](wg-create-intro.md)\.

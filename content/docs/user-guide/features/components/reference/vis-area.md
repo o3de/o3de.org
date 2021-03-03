@@ -28,7 +28,7 @@ You can't modify the **[OccluderArea](/docs/user-guide/features/components/occlu
 
 ## VisArea Component Properties {#component-vis-area-properties}
 
-![\[The VisArea component properties in Lumberyard Editor.\]](/images/user-guide/component/vis-area-component-properties.png)
+![\[The VisArea component properties in O3DE Editor.\]](/images/user-guide/component/vis-area-component-properties.png)
 
 The **VisArea** component has the following properties\.
 
@@ -38,7 +38,7 @@ The **VisArea** component has the following properties\.
 | Name | Description |
 | --- | --- |
 |  **Height**  |  The height of the visible area\.  |
-|  **DisplayFilled**  |  Displays the visible area as a filled volume in the Lumberyard Editor viewport\.   |
+|  **DisplayFilled**  |  Displays the visible area as a filled volume in the O3DE Editor viewport\.   |
 |  **AffectedBySun**  |  Objects in the visible area are affected by the sun\.  |
 |  **ViewDistRatio**  |  A multiplier on the view distance of the visible area during editing\.  |
 |  **OceanIsVisible**  |  Renders the ocean outside the visible area\.   |
@@ -78,4 +78,4 @@ The second example is correct because the visible area is the volume on the xy\-
 
 The position on the z\-axis is the position of the lowest point\. The height is the specified height plus the difference in height between the highest and lowest point\. This remains true even after transformations\. If you rotate a visible area on the x\- or y\-axis, you might see volumes that don't make sense\. All points after a transformation are projected onto the xy\-plane\.
 
-When legacy visible areas are converted, Lumberyard corrects this behavior for you\. All points are made planar, and any difference in height between points applies to the visible area's height\.
+When legacy visible areas are converted, O3DE corrects this behavior for you\. All points are made planar, and any difference in height between points applies to the visible area's height\.

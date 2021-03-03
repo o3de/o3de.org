@@ -50,11 +50,11 @@ You can view logs for internal operations of Asset Processor\. If Asset Processo
 
 ## Restarting Asset Processor {#restart-asset-processor}
 
-You can restart Lumberyard Editor and Asset Processor\. Verify that only one instance of Asset Processor runs at the same time\.
+You can restart O3DE Editor and Asset Processor\. Verify that only one instance of Asset Processor runs at the same time\.
 
 **To restart Asset Processor**
 
-1. Close Lumberyard Editor\.
+1. Close O3DE Editor\.
 
 1. In the Windows taskbar, right\-click Asset Processor, and choose **Quit** or press **Ctrl\+Q**\.
 

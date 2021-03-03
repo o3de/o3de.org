@@ -8,7 +8,7 @@ To determine what camera you want your sequence to use, you must add a [Director
 
 **To add a Director node in the Track View**
 
-1. In Lumberyard Editor, choose **Tools**, **Track View**\.
+1. In O3DE Editor, choose **Tools**, **Track View**\.
 
 1. In the Track View, select or create a sequence\.
 

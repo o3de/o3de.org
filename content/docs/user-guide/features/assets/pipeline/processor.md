@@ -18,7 +18,7 @@ Asset Processor enables games to run on other platforms without deploying assets
 
 By proxying requests through itself, Asset Processor communicates with an iOS or Android shader compiler server through a USB cable on iOS and Android\.
 
-In Windows, Asset Processor starts automatically if you run Lumberyard Editor with automatically maintained connections\. Asset Processor also restarts automatically if you modify any of the data files that it needs to operate or if you retrieve a new version\.
+In Windows, Asset Processor starts automatically if you run O3DE Editor with automatically maintained connections\. Asset Processor also restarts automatically if you modify any of the data files that it needs to operate or if you retrieve a new version\.
 
 In macOS, you must manually start Asset Processor from a command line window\. Asset Processor is located in the `lumberyard_version/dev/BinMac64` directory\.
 
@@ -32,9 +32,9 @@ Use a unique cache directory\. Do not share the cache directory with a Windows s
 
 ![\[Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.\]](/images/user-guide/assets/pipeline/asset-pipeline-processor-options.png)
 
-You don't need to close Asset Processor when you get the latest updates from source control\. You can start Lumberyard Editor while Asset Processor is still processing your assets\.
+You don't need to close Asset Processor when you get the latest updates from source control\. You can start O3DE Editor while Asset Processor is still processing your assets\.
 
-However, if you aren't using the game or Lumberyard Editor, you can exit Asset Processor by right\-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar\.
+However, if you aren't using the game or O3DE Editor, you can exit Asset Processor by right\-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar\.
 
 Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](/docs/user-guide/features/assets/live-reloading.md)\.
 

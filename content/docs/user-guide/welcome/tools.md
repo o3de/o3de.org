@@ -1,17 +1,17 @@
 ---
-description: ' This section describes the Lumberyard''s editors and tools. '
-title: 'Lumberyard Editors and Tools'
+description: ' This section describes the O3DE''s editors and tools. '
+title: 'O3DE Editors and Tools'
 ---
-# Lumberyard Editors and Tools {#lumberyard-tools}
+# O3DE Editors and Tools {#lumberyard-tools}
 
 
 ****
 
 |  |
 | --- |
-| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in O3DE Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [O3DE Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
-Lumberyard provides the following suite of applications, editors, and tools for game development\.
+O3DE provides the following suite of applications, editors, and tools for game development\.
 
 [Animation Editor](/docs/user-guide/features/visualization/animation/char-intro.md)
 Manages character animations, attachments, and physics simulations along with blendspace and animation layering\.
@@ -20,7 +20,7 @@ Manages character animations, attachments, and physics simulations along with bl
 Displays all game assets available for use\.
 
 [Asset Processor](/docs/user-guide/features/assets/processor.md)
-Runs in the background when you launch Lumberyard Editor, monitoring input directories for changes in source files and automatically generating platform\-specific game assets as they change\.
+Runs in the background when you launch O3DE Editor, monitoring input directories for changes in source files and automatically generating platform\-specific game assets as they change\.
 
 [Audio Controls Editor](/docs/user-guide/features/interactivity/audio/atl-editor.md)
 Manages audio translation layer \(ATL\) controls and events for the audio system\.
@@ -55,11 +55,11 @@ Creates and manages dynamic sky lighting effects\.
 LOD Generator
 Generates geometry and material level of detail \(LOD\)\.
 
-[Lumberyard Editor](/docs/userguide/editor/intro.md)
+[O3DE Editor](/docs/userguide/editor/intro.md)
 Acts as the main workspace editor and game viewport; loads the **Rollup Bar** and console by default\.
 
-[Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-intro.md)
-Ensures that you have the necessary runtime software and SDKs installed to successfully run Lumberyard\.
+[O3DE Setup Assistant](/docs/userguide/lumberyard-launcher-intro.md)
+Ensures that you have the necessary runtime software and SDKs installed to successfully run O3DE\.
 
 [Material Editor](/docs/userguide/materials/intro.md)
 Applies final material setup, texture mapping, and shader parameters\.
@@ -83,7 +83,7 @@ Standalone application used to tell the Waf build system which Gems to include i
 Compresses and processes source game asset files and creates package files\.
 
 [Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md)
-Create game logic and behaviors with Lumberyard's new visual scripting environment\.
+Create game logic and behaviors with O3DE's new visual scripting environment\.
 
 Script Terminal
 Runs various scripts in a terminal window\.
@@ -110,4 +110,4 @@ Creates and manages cinematic scenes and sequences; consists of the Track View a
 Creates, manages, and simulates user interface elements for your game, such as menus and heads\-up displays \(HUD\)\.
 
 [Universal Remote Console](/docs/user-guide/features/engine/remote-console.md)
-Used to connect to a remote instance of Lumberyard running on mobile devices\.
+Used to connect to a remote instance of O3DE running on mobile devices\.

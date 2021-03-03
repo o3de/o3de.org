@@ -10,7 +10,7 @@ If your character's skinning appears visually broken in the **Animation Editor**
 
 **To change the coordinate system modifier**
 
-1. In Lumberyard Editor, in the **Asset Browser**, navigate to your `.fbx` file\.
+1. In O3DE Editor, in the **Asset Browser**, navigate to your `.fbx` file\.
 
 1. Right\-click the `.fbx` file and choose **Edit Settings**\.
 

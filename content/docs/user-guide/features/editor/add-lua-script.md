@@ -5,9 +5,9 @@ title: Adding Lua Scripts to Component Entities
 ---
 # Adding Lua Scripts to Component Entities {#lua-scripting-intro-add-script-to-component}
 
-Lumberyard makes it easy for you to add script functionality to your game entities by using the **Lua Script** component\. The following steps show you how to do this in Lumberyard Editor\.
+O3DE makes it easy for you to add script functionality to your game entities by using the **Lua Script** component\. The following steps show you how to do this in O3DE Editor\.
 
-**To add a Lua script to a component entity in Lumberyard Editor**
+**To add a Lua script to a component entity in O3DE Editor**
 
 1. With the **Entity Inspector** view pane visible, select the entity in the viewport\.
 

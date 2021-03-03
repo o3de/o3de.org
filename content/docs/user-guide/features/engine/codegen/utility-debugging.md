@@ -49,7 +49,7 @@ To debug AZ Code Generator using Visual Studio in Windows, you must generate a V
 
 1.  Run `./lmbr_waf.sh configure` to regenerate the Xcode project\.
 
-1.  Open the `dev/Solutions/LumberyardSDK.xcodeproj` file\.
+1.  Open the `dev/Solutions/O3DESDK.xcodeproj` file\.
 
 ## Debugging the AZ Code Generator Utility from the Waf build {#az-code-gen-utility-debugging-from-waf-build}
 

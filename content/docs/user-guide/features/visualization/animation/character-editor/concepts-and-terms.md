@@ -140,7 +140,7 @@ When you create your animation graph, you can use parameters to control how your
 
 Each transition can have a set of conditions applied to it\. These conditions define the logical rules for the transition and how animations blend together\.
 
-Each transition condition is controlled by a set of parameters\. Your Lumberyard game setup sends parameter values to the animation graph\. The actor reacts to the incoming parameters\. The game sends the parameter values to the animation graph, which then responds to the changes automatically\. For example, you can specify parameter values such as speed, direction, weapon type, and so on\.
+Each transition condition is controlled by a set of parameters\. Your O3DE game setup sends parameter values to the animation graph\. The actor reacts to the incoming parameters\. The game sends the parameter values to the animation graph, which then responds to the changes automatically\. For example, you can specify parameter values such as speed, direction, weapon type, and so on\.
 
 You can set this up in a game level by adding an **Actor** and an **Animation** component to an entity with the **Entity Inspector**\.
 
@@ -152,7 +152,7 @@ You can add parameters to an animation graph in the **Parameters** pane\.
 
 **To add a parameter to an animation graph**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Parameters** pane, click the green **\+** icon\.
 

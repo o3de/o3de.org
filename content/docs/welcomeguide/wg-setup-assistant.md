@@ -1,42 +1,42 @@
 ---
-description: ' Learn how to configure a Lumberyard environment and install third-party
+description: ' Learn how to configure a O3DE environment and install third-party
   software with Open 3D Engine Setup Assistant. '
 title: Configuring your Open 3D Engine environment with Setup Assistant
 ---
 # Configuring your Open 3D Engine environment with Setup Assistant<a name="wg-setup-assistant"></a>
 
-Lumberyard Setup Assistant configures and maintains your Lumberyard environment based on your development needs\. If you're continuing from [Installing Open 3D Engine](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
+O3DE Setup Assistant configures and maintains your O3DE environment based on your development needs\. If you're continuing from [Installing Open 3D Engine](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
 
-Lumberyard Setup Assistant performs several important functions:
+O3DE Setup Assistant performs several important functions:
 + Ensures that you have the required runtime software\.
 + Ensures that you have the required SDKs\.
 + Provides plugins for detected content applications such as Photoshop and Maya\.
 + Validates registry settings, paths, and libraries\.
 
-![\[Lumberyard Setup Assistant.\]](/images/welcomeguide/ui-sa-install-options-1.23.png)
+![\[O3DE Setup Assistant.\]](/images/welcomeguide/ui-sa-install-options-1.23.png)
 
-On first run, Lumberyard Setup Assistant presents two options, **Express Install** and **Custom Install**\. If you're a content creator, such as a designer or artist, and won't be compiling code, or if you want to jump right in and use the Lumberyard Editor and tools, select **Express Install**\. You can always revisit Setup Assistant to add development features\. If you'd like to set up Lumberyard for code development, select **Custom Install**\.
+On first run, O3DE Setup Assistant presents two options, **Express Install** and **Custom Install**\. If you're a content creator, such as a designer or artist, and won't be compiling code, or if you want to jump right in and use the O3DE Editor and tools, select **Express Install**\. You can always revisit Setup Assistant to add development features\. If you'd like to set up O3DE for code development, select **Custom Install**\.
 
 You should run Setup Assistant periodically, especially after you make changes to your environment, to validate and repair settings and paths\. You can also customize Setup Assistant with a configuration file to easily integrate your specific directory structure\.
 
 **Note**
 Some Setup Assistant options require the installation of third\-party software and licenses, so make sure that you consult the terms of service before installing third\-party software\.
 
-## Lumberyard Setup Assistant custom installation<a name="custom-installation"></a>
+## O3DE Setup Assistant custom installation<a name="custom-installation"></a>
 
-With **Custom Install**, you specify how you would like to use Lumberyard\. Setup Assistant downloads third\-party software and validates that the environment is properly configured based on your choices\.
+With **Custom Install**, you specify how you would like to use O3DE\. Setup Assistant downloads third\-party software and validates that the environment is properly configured based on your choices\.
 
-1.  Custom installation begins with specifying how you intend to use Lumberyard\.
-![\[Lumberyard Setup Assistant Get Started selection.\]](/images/welcomeguide/ui-sa-get-started-1.24.png)
+1.  Custom installation begins with specifying how you intend to use O3DE\.
+![\[O3DE Setup Assistant Get Started selection.\]](/images/welcomeguide/ui-sa-get-started-1.24.png)
 
-1.  Verify the **Path** is correct for your Lumberyard installation\.
+1.  Verify the **Path** is correct for your O3DE installation\.
 
 1.  Select options based on your development needs:
    +  **Run your game project**
-   +  **Run the Lumberyard Editor and tools**
-   +  **Compile the game code**\* \- Select this option if you intend to create new projects with Lumberyard\.
+   +  **Run the O3DE Editor and tools**
+   +  **Compile the game code**\* \- Select this option if you intend to create new projects with O3DE\.
    +  **Compile the engine and asset pipeline**\* \- Select this option if you intend to make changes to the engine or asset pipeline\.
-   +  **Compile the Lumberyard Editor and tools**\* \- Select this option if you intend to make changes to Lumberyard Editor or other tools\.
+   +  **Compile the O3DE Editor and tools**\* \- Select this option if you intend to make changes to O3DE Editor or other tools\.
    +  **Compile for Android devices**\*
    +  **Setup for Linux Dedicated Server**\*
 **Note**
@@ -51,10 +51,10 @@ The version\(s\) of Visual Studio selected here will be enabled as build platfor
 1.  Once you are satisfied with your selections, choose **Next** to install required software and SDKs\.
 
 1.  The **Install software** and **Install required SDKs** pages display a red icon if a requirement cannot be found and a green checkmark for installed requirements\. Missing optional software and SDKs display a yellow icon\. Follow the instructions on each page to install the required software and SDKS\.
-![\[Lumberyard Setup Assistant install required sdks.\]](/images/welcomeguide/ui-sa-install-sdks-1.23.png)
+![\[O3DE Setup Assistant install required sdks.\]](/images/welcomeguide/ui-sa-install-sdks-1.23.png)
 **Note**
-Ensure the **Third\-party path** on the **Install required SDKs** page is correct for your Lumberyard installation\.
+Ensure the **Third\-party path** on the **Install required SDKs** page is correct for your O3DE installation\.
 
 1.  Install desired *optional* software and SDKs on the **Install software**, **Install optional SDKs**, and **Install plugins** pages by following the instructions on each page\.
 
-1.  When you have completed installing software and SDKs, the **Summary** page displays information about your Lumberyard environment\. From the **Summary** page, you can launch the Lumberyard Editor by choosing **Launch Editor**\. If you'd like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\.
+1.  When you have completed installing software and SDKs, the **Summary** page displays information about your O3DE environment\. From the **Summary** page, you can launch the O3DE Editor by choosing **Launch Editor**\. If you'd like to choose an existing project or create a new project, choose **Configure project** to launch Project Configurator\.

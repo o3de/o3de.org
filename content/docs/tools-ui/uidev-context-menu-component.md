@@ -1,9 +1,9 @@
 ---
-description: ' Use the Lumberyard UI 2.0 context menu component to display a popup
+description: ' Use the O3DE UI 2.0 context menu component to display a popup
   menu with a list of context-appropriate actions. '
-title: Lumberyard UI menu component
+title: O3DE UI menu component
 ---
-# Lumberyard UI menu component<a name="uidev-context-menu-component"></a>
+# O3DE UI menu component<a name="uidev-context-menu-component"></a>
 
 A context menu \(also called contextual or pop\-up menu\) appears upon user interaction, such as a right\-click mouse operation\. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs\. Typically, the available choices are actions related to the selected object\.
 
@@ -71,7 +71,7 @@ disabledAction->setEnabled(false);
 
 ## C\+\+ API reference<a name="context-menu-api-ref"></a>
 
-For details on the **menu** API used for styling of context menus, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **menu** API used for styling of context menus, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::Menu](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_menu.html)
 
 Relevant Qt documentation includes the following topics:
