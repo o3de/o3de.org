@@ -1,5 +1,5 @@
 ---
-description: ' Debug HPHA allocator memory issues in Amazon Lumberyard. '
+description: ' Debug HPHA allocator memory issues in Open 3D Engine. '
 title: HPHA Memory Debugging
 ---
 # HPHA Memory Debugging {#memory-management-debugging-hpha}

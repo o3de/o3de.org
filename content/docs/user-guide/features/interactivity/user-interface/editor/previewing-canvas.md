@@ -1,5 +1,5 @@
 ---
-description: ' Preview your game UI canvas in Amazon Lumberyard to visualize how it might
+description: ' Preview your game UI canvas in Open 3D Engine to visualize how it might
   look at different screen resolutions and to see how the interactive elements change
   state. '
 title: Previewing Canvases

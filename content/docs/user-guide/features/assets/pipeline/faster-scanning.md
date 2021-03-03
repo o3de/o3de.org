@@ -1,6 +1,6 @@
 ---
 description: ' Use Asset Processor''s Faster Scanning Mode to improve startup time
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Enabling Asset Processor's Faster Scanning Mode
 ---
 # Enabling Asset Processor's Faster Scanning Mode {#asset-processor-faster-scanning}

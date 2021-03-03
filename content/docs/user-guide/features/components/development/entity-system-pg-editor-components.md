@@ -1,5 +1,5 @@
 ---
-description: ' Learn about editor components in Amazon Lumberyard. '
+description: ' Learn about editor components in Open 3D Engine. '
 title: Editor Components
 ---
 # Editor Components {#component-entity-system-pg-editor-components}

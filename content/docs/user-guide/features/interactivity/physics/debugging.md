@@ -1,5 +1,5 @@
 ---
-description: ' Debug PhysX issues for your game in Amazon Lumberyard. '
+description: ' Debug PhysX issues for your game in Open 3D Engine. '
 title: Debugging PhysX
 ---
 # Debugging PhysX {#debugging-physx}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Script Canvas tutorials to learn about Amazon Lumberyard''s visual
+description: ' Use the Script Canvas tutorials to learn about Open 3D Engine''s visual
   scripting system. '
 title: 'Script Canvas Tutorials'
 ---

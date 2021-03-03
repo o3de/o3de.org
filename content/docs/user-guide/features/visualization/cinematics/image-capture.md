@@ -1,5 +1,5 @@
 ---
-description: ' Capture image frames in Amazon Lumberyard with render output, a capture track,
+description: ' Capture image frames in Open 3D Engine with render output, a capture track,
   or console variables. '
 title: Capturing Image Frames
 ---

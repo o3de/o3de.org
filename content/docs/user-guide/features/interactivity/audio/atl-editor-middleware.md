@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Controls Editor ''s Wwise Controls pane to filter
-  and select a middleware-specific control to assign to an ATL control in Amazon Lumberyard. '
+  and select a middleware-specific control to assign to an ATL control in Open 3D Engine. '
 title: Wwise Controls Pane
 ---
 # Wwise Controls Pane {#audio-atl-editor-middleware}

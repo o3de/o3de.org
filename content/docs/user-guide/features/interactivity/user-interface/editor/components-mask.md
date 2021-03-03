@@ -1,6 +1,6 @@
 ---
 description: ' Add the Mask component to an element to reveal parts of the child element
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Mask
 ---
 # Mask {#ui-editor-components-mask}

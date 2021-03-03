@@ -1,5 +1,5 @@
 ---
-description: ' Use the Virtual Gamepad gem in Amazon Lumberyard to provide your game''s UI
+description: ' Use the Virtual Gamepad gem in Open 3D Engine to provide your game''s UI
   with touch screen controls on mobile devices. '
 title: Virtual Gamepad Gem
 ---
@@ -35,7 +35,7 @@ You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
 ![\[Input Channel selection for the VirtualGamepadButton\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
 
-For more information about input in Lumberyard, see [Input in Amazon Lumberyard](/docs/user-guide/features/interactivity/input/input-intro.md)\.
+For more information about input in Lumberyard, see [Input in Open 3D Engine](/docs/user-guide/features/interactivity/input/input-intro.md)\.
 
 To modify the list of available virtual gamepad input channels, use the Project Configurator to edit the virtual gamepad's system component \. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 

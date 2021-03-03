@@ -1,5 +1,5 @@
 ---
-description: ' Debug your Script Canvas graphs in Amazon Lumberyard''s visual scripting
+description: ' Debug your Script Canvas graphs in Open 3D Engine''s visual scripting
   tool. '
 title: 'Script Canvas Debugging'
 ---

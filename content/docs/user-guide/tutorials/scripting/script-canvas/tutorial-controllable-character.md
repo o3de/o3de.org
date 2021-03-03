@@ -1,5 +1,5 @@
 ---
-description: ' Create a controllable character with Script Canvas, Amazon Lumberyard''s
+description: ' Create a controllable character with Script Canvas, Open 3D Engine''s
   visual scripting system. '
 title: 'Script Canvas Tutorial: Creating a Controllable Entity'
 ---

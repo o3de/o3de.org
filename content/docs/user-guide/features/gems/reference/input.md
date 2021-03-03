@@ -1,6 +1,6 @@
 ---
 description: ' Use the Input Management Framework gem to convert game input into gameplay
-  actions in Amazon Lumberyard. '
+  actions in Open 3D Engine. '
 title: Input Management Framework Gem
 ---
 # Input Management Framework Gem {#gems-system-gem-input}
@@ -20,4 +20,4 @@ The gem works with the [Starting Point Input](/docs/userguide/gems/starting-poin
 
 For an example, see [Working with the Input Component](/docs/user-guide/features/interactivity/input/working-with-the-input-component.md)\.
 
-For more information, see [Input in Amazon Lumberyard](/docs/user-guide/features/interactivity/input/input-intro.md)\.
+For more information, see [Input in Open 3D Engine](/docs/user-guide/features/interactivity/input/input-intro.md)\.

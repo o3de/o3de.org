@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard to build games for iOS devices. '
+description: ' Use Open 3D Engine to build games for iOS devices. '
 title: iOS Support
 ---
 # iOS Support {#ios-intro}

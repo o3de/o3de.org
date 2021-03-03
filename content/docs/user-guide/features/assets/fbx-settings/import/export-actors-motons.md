@@ -1,6 +1,6 @@
 ---
 description: ' See the best practices for exporting skinned meshes for actors for
-  the Animation Editor in Amazon Lumberyard. '
+  the Animation Editor in Open 3D Engine. '
 title: Exporting Actors and Motions
 ---
 # Exporting Actors and Motions {#char-fbx-importer-export-actors-motons}

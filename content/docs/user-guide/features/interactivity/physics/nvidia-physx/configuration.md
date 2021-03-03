@@ -1,5 +1,5 @@
 ---
-description: ' Configure settings for the PhysX system in Amazon Lumberyard. '
+description: ' Configure settings for the PhysX system in Open 3D Engine. '
 title: Configuring the PhysX System
 ---
 # Configuring the PhysX System {#physx-configuration}

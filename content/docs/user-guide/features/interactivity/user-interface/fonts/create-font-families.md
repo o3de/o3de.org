@@ -1,6 +1,6 @@
 ---
 description: Combine multiple font assets to create a font family group to use in
-  your game UI in Amazon Lumberyard.
+  your game UI in Open 3D Engine.
 title: Creating Font Families
 ---
 # Creating Font Families {#ui-fonts-create-font-families}

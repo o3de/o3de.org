@@ -1,5 +1,5 @@
 ---
-description: ' Create additive animations in Amazon Lumberyard. '
+description: ' Create additive animations in Open 3D Engine. '
 title: Creating Additive Animations
 ---
 # Creating Additive Animations {#char-fbx-importer-motion-additive}

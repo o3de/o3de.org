@@ -1,10 +1,10 @@
 ---
-description: ' Develop Amazon Lumberyard projects for use on Android devices. '
+description: ' Develop Open 3D Engine projects for use on Android devices. '
 title: 'Lumberyard Android support'
 ---
 # Lumberyard Android support {#android-intro}
 
- In this section, you'll learn about the system requirements for Android\. You will also learn how to set up your Amazon Lumberyard installation for Android builds, configure your project for Android support, and build and deploy to devices\. When you finish your development cycle and are ready to release, that's covered here too\. Along the way, you'll want to use the troubleshooting guide and reference materials to help resolve any issues you might find\.
+ In this section, you'll learn about the system requirements for Android\. You will also learn how to set up your Open 3D Engine installation for Android builds, configure your project for Android support, and build and deploy to devices\. When you finish your development cycle and are ready to release, that's covered here too\. Along the way, you'll want to use the troubleshooting guide and reference materials to help resolve any issues you might find\.
 
 **Topics**
 + [Minimum device requirements](#android-minimum-requirements)

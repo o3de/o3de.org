@@ -1,5 +1,5 @@
 ---
-description: ' Use the Viewport Interaction Model to interact with entities in the Amazon Lumberyard viewport.
+description: ' Use the Viewport Interaction Model to interact with entities in the Open 3D Engine viewport.
   Learn about the differences between the new Viewport Interaction Model and the old interaction model. '
 title: Working with the Viewport Interaction Model
 ---

@@ -1,5 +1,5 @@
 ---
-description: ' Learn best practices for memory management in Amazon Lumberyard. '
+description: ' Learn best practices for memory management in Open 3D Engine. '
 title: Memory Management
 ---
 # Memory Management {#cpp-best-practices-lumberyard-memory-management}

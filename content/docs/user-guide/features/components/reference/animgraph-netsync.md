@@ -1,6 +1,6 @@
 ---
 description: ' Use the Anim Graph Net Sync component to synchronize animation graph
-  parameters in Amazon Lumberyard. '
+  parameters in Open 3D Engine. '
 title: Anim Graph Net Sync
 ---
 # Anim Graph Net Sync {#component-animgraph-netsync}

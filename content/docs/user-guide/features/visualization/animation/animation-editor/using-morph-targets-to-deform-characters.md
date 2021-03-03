@@ -1,5 +1,5 @@
 ---
-description: ' Use morph targets to deform characters in the Amazon Lumberyard Animation Editor
+description: ' Use morph targets to deform characters in the Open 3D Engine Animation Editor
   . '
 title: Using Morph Targets to Deform Characters
 ---

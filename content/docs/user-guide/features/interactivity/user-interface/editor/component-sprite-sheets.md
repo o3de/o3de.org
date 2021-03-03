@@ -1,6 +1,6 @@
 ---
 description: ' Use sprite sheets to save collections of separate images for your game
-  UI in Amazon Lumberyard''s UI Editor . '
+  UI in Open 3D Engine''s UI Editor . '
 title: Sprite Sheets
 ---
 # Sprite Sheets {#ui-editor-component-sprite-sheets}

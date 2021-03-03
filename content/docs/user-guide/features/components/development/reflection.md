@@ -140,7 +140,7 @@ The preceding example reflects two primitive types-a float, and a string-as well
 **Note**
 The example omits the reflection code for `SomeClassThatSomeoneHasReflected`\. However, you need only reflect the class\. After that, you can freely reflect members or containers of that class in other classes\.
 
-For C\+\+ API reference documentation on the serialize context, see the [SerializeContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_serialize_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the serialize context, see the [SerializeContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_serialize_context.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 ## Editing {#component-entity-system-reflect-component-editing}
 
@@ -181,7 +181,7 @@ The `AZ::Edit::UIHandlers::Slider` UI handler expects `AZ::Edit::Attributes::Min
 **Note**
 The property system supports external UI handlers, so you can implement your own UI handlers in your own modules\. You can customize the behavior of the field, the `Qt` control that it uses, and the attributes that it observes\.
 
-For C\+\+ API reference documentation on the edit context, see the [EditContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_edit_context.html) in the [Amazon Lumberyard C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
+For C\+\+ API reference documentation on the edit context, see the [EditContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_edit_context.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 
 ## Attributes {#component-entity-system-reflect-component-attributes}
 

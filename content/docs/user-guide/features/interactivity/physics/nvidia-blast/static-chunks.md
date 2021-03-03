@@ -1,5 +1,5 @@
 ---
-description: ' Create realistic partial destruction simulations in Amazon Lumberyard with
+description: ' Create realistic partial destruction simulations in Open 3D Engine with
   NVIDIA Blast. '
 title: Partial destruction with NVIDIA Blast
 ---

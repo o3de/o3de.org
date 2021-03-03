@@ -1,5 +1,5 @@
 ---
-description: ' Add component entities in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
+description: ' Add component entities in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Adding Component Entities
 ---
 # Adding Component Entities {#cinematics-adding-component-entities}

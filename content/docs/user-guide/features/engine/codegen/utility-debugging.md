@@ -1,5 +1,5 @@
 ---
-description: ' Debug Amazon Lumberyard''s AZ Code Generator utility. '
+description: ' Debug Open 3D Engine''s AZ Code Generator utility. '
 title: Debugging the AZ Code Generator Utility
 ---
 # Debugging the AZ Code Generator Utility {#az-code-gen-utility-debugging}

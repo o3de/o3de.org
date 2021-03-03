@@ -1,5 +1,5 @@
 ---
-description: ' Reset the transform properties for entities in Amazon Lumberyard. '
+description: ' Reset the transform properties for entities in Open 3D Engine. '
 title: Resetting the Transform
 ---
 # Resetting the Transform {#reset-transform}

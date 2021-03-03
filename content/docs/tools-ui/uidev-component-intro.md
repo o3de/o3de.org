@@ -1,5 +1,5 @@
 ---
-description: ' An introduction to the Amazon Lumberyard UI 2.0 component library. '
+description: ' An introduction to the Open 3D Engine UI 2.0 component library. '
 title: Lumberyard UI component library
 ---
 # Lumberyard UI component library<a name="uidev-component-intro"></a>

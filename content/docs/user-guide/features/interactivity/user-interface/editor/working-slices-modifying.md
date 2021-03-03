@@ -1,5 +1,5 @@
 ---
-description: ' Modify a UI slice and push the changes in Amazon Lumberyard''s UI Editor
+description: ' Modify a UI slice and push the changes in Open 3D Engine''s UI Editor
   . '
 title: Modifying a UI Slice and Pushing Changes
 ---

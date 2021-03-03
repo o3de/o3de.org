@@ -1,11 +1,11 @@
 ---
 description: ' Learn how to configure a Lumberyard environment and install third-party
-  software with Amazon Lumberyard Setup Assistant. '
-title: Configuring your Amazon Lumberyard environment with Setup Assistant
+  software with Open 3D Engine Setup Assistant. '
+title: Configuring your Open 3D Engine environment with Setup Assistant
 ---
-# Configuring your Amazon Lumberyard environment with Setup Assistant<a name="wg-setup-assistant"></a>
+# Configuring your Open 3D Engine environment with Setup Assistant<a name="wg-setup-assistant"></a>
 
-Lumberyard Setup Assistant configures and maintains your Lumberyard environment based on your development needs\. If you're continuing from [Installing Amazon Lumberyard](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
+Lumberyard Setup Assistant configures and maintains your Lumberyard environment based on your development needs\. If you're continuing from [Installing Open 3D Engine](wg-install.md), Setup Assistant should be running on your desktop\. Setup Assistant can also be launched from the Start Menu or desktop shortcuts\.
 
 Lumberyard Setup Assistant performs several important functions:
 + Ensures that you have the required runtime software\.

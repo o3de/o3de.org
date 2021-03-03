@@ -1,5 +1,5 @@
 ---
-description: ' Use pivot mode to set a center point of reference for entities in Amazon Lumberyard. '
+description: ' Use pivot mode to set a center point of reference for entities in Open 3D Engine. '
 title: Using Pivot Mode
 ---
 # Using Pivot Mode {#pivot-mode}

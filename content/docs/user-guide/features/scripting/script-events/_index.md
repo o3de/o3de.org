@@ -1,6 +1,6 @@
 ---
 description: ' Use script events to enable entities to communicate with each other
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Script Events
 ---
 # Using Script Events {#script-events}

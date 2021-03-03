@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Character Controller component to implement basic character
-  interactions in Amazon Lumberyard. '
+  interactions in Open 3D Engine. '
 title: PhysX Character Controller
 ---
 # PhysX Character Controller {#component-physx-character-controller}

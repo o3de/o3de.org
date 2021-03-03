@@ -1,9 +1,9 @@
 ---
 description: ' Learn about the comparison operations used in bundling assets with
-  Amazon Lumberyard. '
-title: 'Amazon Lumberyard Asset List Comparison Operations'
+  Open 3D Engine. '
+title: 'Open 3D Engine Asset List Comparison Operations'
 ---
-# Amazon Lumberyard Asset List Comparison Operations {#asset-bundler-list-operations}
+# Open 3D Engine Asset List Comparison Operations {#asset-bundler-list-operations}
 
 Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list\. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files\. The following operations are available to use from the Asset Bundler tool:
 + [Delta Comparison Operation](#asset-bundler-list-operations-delta)
@@ -141,7 +141,7 @@ The following diagram shows the comparison process and the outputs for this exam
 ### Prerequisites {#how-to-perform-list-comparisons-prereqs}
 
 To complete the procedures in this tutorial, make sure that you have the following set up:
-+ An installed and configured installation of Amazon Lumberyard v1\.22 or later\. [Download the latest version of Amazon Lumberyard](https://aws.amazon.com/lumberyard/downloads/)\.
++ An installed and configured installation of Open 3D Engine v1\.22 or later\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
 + A Lumberyard game project ready to build and compile\. You can use the Starter Game sample if you don't have a game project\. [Learn more about the Starter Game sample project\.](/docs/userguide/samples/levels/starter-game.md)\.
 
 ### Setup {#how-to-perform-list-comparisons-setup}

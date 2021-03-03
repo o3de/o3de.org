@@ -1,5 +1,5 @@
 ---
-description: ' Set the camera focus for cinematic sequences in Amazon Lumberyard. '
+description: ' Set the camera focus for cinematic sequences in Open 3D Engine. '
 title: Animating Depth of Field
 ---
 # Animating Depth of Field {#cinematics-cameras-focus}

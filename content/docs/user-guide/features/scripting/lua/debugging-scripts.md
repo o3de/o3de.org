@@ -1,5 +1,5 @@
 ---
-description: ' Learn about debugging Lua scripts in Amazon Lumberyard. '
+description: ' Learn about debugging Lua scripts in Open 3D Engine. '
 title: ' Debugging Lua Scripts'
 ---
 # Debugging Lua Scripts {#lua-scripting-ces-debugging-scripts}

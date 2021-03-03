@@ -1,5 +1,5 @@
 ---
-description: ' Simulate cloth on a GPU in Amazon Lumberyard with NVIDIA Cloth and NVIDIA CUDA. '
+description: ' Simulate cloth on a GPU in Open 3D Engine with NVIDIA Cloth and NVIDIA CUDA. '
 title: GPU cloth simulation with NVIDIA CUDA
 ---
 # GPU cloth simulation with NVIDIA CUDA {#nvidia-cloth-gpu}
@@ -36,7 +36,7 @@ NVIDIA CUDA Toolkit can be installed through Setup Assistant\. The install link 
 1. Choose **Install Software** and scroll down to the **Optional software** group\.
 
 1. Choose **Get it** to the right of **NVIDIA CUDA Toolkit**\.
-![\[CUDA Toolkit installation in Amazon Lumberyard.\]](/images/user-guide/physx/cloth/ui-cloth-cuda-toolkit-1.25.png)
+![\[CUDA Toolkit installation in Open 3D Engine.\]](/images/user-guide/physx/cloth/ui-cloth-cuda-toolkit-1.25.png)
 
 1. A browser opens on the NVIDIA CUDA Toolkit Download page\. Use the prompts on the page to download the correct version of the toolkit for your system\.
 

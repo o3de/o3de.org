@@ -1,6 +1,6 @@
 ---
 description: ' Learn how different Scripted Entity Tweener easing types affect the
-  appearance of animations in Amazon Lumberyard. '
+  appearance of animations in Open 3D Engine. '
 title: Supported Tweener Easing Types
 ---
 # Supported Tweener Easing Types {#ui-animating-tweener-understanding-types}

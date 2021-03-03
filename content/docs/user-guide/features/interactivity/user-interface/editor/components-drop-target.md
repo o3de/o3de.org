@@ -1,6 +1,6 @@
 ---
 description: ' Use the DropTarget component with the Draggable component to implement
-  drag-and-drop behavior in the Amazon Lumberyard UI Editor. '
+  drag-and-drop behavior in the Open 3D Engine UI Editor. '
 title: DropTarget
 ---
 # DropTarget {#ui-editor-components-drop-target}

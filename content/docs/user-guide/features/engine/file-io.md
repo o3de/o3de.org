@@ -1,5 +1,5 @@
 ---
-description: ' Directly access files for special use cases like streaming in Amazon Lumberyard. '
+description: ' Directly access files for special use cases like streaming in Open 3D Engine. '
 title: Raw File Access in Lumberyard
 ---
 # Raw File Access in Lumberyard {#file-access-direct}

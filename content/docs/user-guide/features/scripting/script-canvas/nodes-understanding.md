@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the nodes in Script Canvas, Amazon Lumberyard''s visual scripting
+description: ' Learn about the nodes in Script Canvas, Open 3D Engine''s visual scripting
   system. '
 title: Understanding Script Canvas Nodes
 ---

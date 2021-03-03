@@ -6,7 +6,7 @@ title: Lumberyard Qt control gallery tool
 ---
 # Lumberyard Qt control gallery tool<a name="uidev-control-gallery"></a>
 
-Use the **Amazon Qt Control Gallery** tool to see the Amazon Lumberyard custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
+Use the **Amazon Qt Control Gallery** tool to see the Open 3D Engine custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
 
 ![\[image\]](/images/tools-ui/amazon-qt-control-gallery.jpg)
 

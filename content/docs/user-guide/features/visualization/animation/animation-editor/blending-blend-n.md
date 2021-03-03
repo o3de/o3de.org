@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the Blend N node in Amazon Lumberyard Animation Editor to
+description: ' Learn how to use the Blend N node in Open 3D Engine Animation Editor to
   customize input weights when blending a number of input nodes. '
 title: Blend N Node
 ---

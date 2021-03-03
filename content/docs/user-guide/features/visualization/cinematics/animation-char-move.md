@@ -1,5 +1,5 @@
 ---
-description: ' Move an entity in a scene Amazon Lumberyard. '
+description: ' Move an entity in a scene Open 3D Engine. '
 title: Moving an Entity in a Scene
 ---
 # Moving an Entity in a Scene {#cinematics-animation-char-move}

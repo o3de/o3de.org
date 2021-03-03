@@ -1,6 +1,6 @@
 ---
 description: ' Use the OccluderArea component to create a custom shaped occlusion
-  plane with four vertices in Amazon Lumberyard. '
+  plane with four vertices in Open 3D Engine. '
 title: OccluderArea
 ---
 # OccluderArea {#component-occluder-area}

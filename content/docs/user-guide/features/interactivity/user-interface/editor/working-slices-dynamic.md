@@ -1,5 +1,5 @@
 ---
-description: ' Flag dynamic slices in Amazon Lumberyard''s UI Editor . '
+description: ' Flag dynamic slices in Open 3D Engine''s UI Editor . '
 title: Flagging Dynamic Slices
 ---
 # Flagging Dynamic Slices {#ui-editor-working-slices-dynamic}

@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard to build games for Mac (macOS) computers. '
+description: ' Use Open 3D Engine to build games for Mac (macOS) computers. '
 title: Create macOS projects in Lumberyard
 ---
 # Create macOS projects in Lumberyard {#osx-intro}

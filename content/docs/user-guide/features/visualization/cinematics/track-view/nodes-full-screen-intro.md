@@ -1,6 +1,6 @@
 ---
 description: ' See the following full screen effect nodes in the <guilabel>Track View</guilabel> editor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Full Screen Effect Nodes
 ---
 # Full Screen Effect Nodes {#cinematics-track-view-nodes-full-screen-intro}

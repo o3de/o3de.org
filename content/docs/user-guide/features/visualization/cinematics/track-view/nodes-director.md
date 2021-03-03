@@ -1,5 +1,5 @@
 ---
-description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
+description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Director (Scene) Node
 ---
 # Director \(Scene\) Node {#cinematics-track-view-nodes-director}

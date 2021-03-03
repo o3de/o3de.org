@@ -13,7 +13,7 @@ For a 20\-minute crash course on navigating the **Perspective** viewport, custom
 [![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/E1NgI8urJ7o?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/E1NgI8urJ7o?rel=0)
 
 **Note**
-Amazon Lumberyard version 1\.25 introduced an updated interface\. You will notice differences in the visual interface and user experience viewing this video while using Lumberyard 1\.25 or later; however, the information in the video tutorial is still applicable to the fundamentals of using Lumberyard Editor\.
+Open 3D Engine version 1\.25 introduced an updated interface\. You will notice differences in the visual interface and user experience viewing this video while using Lumberyard 1\.25 or later; however, the information in the video tutorial is still applicable to the fundamentals of using Lumberyard Editor\.
 
 ## The Lumberyard Editor default layout<a name="editor-default-layout"></a>
 

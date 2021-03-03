@@ -1,6 +1,6 @@
 ---
 description: ' Use the White Box component to quickly sketch geometry for entities
-  and levels in Amazon Lumberyard. '
+  and levels in Open 3D Engine. '
 title: 'White Box component'
 ---
 # White Box component {#component-white-box}

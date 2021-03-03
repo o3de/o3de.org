@@ -1,6 +1,6 @@
 ---
 description: ' Use the UI Editor to create and customize various user interface
-  elements in Amazon Lumberyard. '
+  elements in Open 3D Engine. '
 title: Creating and Customizing Project User Interfaces
 ---
 # Creating and Customizing Project User Interfaces {#ui-editor-intro}

@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to use AGS Local to test your AGS integration in your
-  Amazon Lumberyard game projects. '
+  Open 3D Engine game projects. '
 title: Testing your Amazon Games Services Integration
 ---
 # Testing your Amazon GameLift Integration {#network-gamelift-testing-integration}

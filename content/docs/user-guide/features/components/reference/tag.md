@@ -1,5 +1,5 @@
 ---
-description: ' Use the Tag component to apply labels to entities in Amazon Lumberyard. '
+description: ' Use the Tag component to apply labels to entities in Open 3D Engine. '
 title: Tag
 ---
 # Tag {#component-tag}

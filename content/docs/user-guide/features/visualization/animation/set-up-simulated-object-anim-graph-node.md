@@ -1,5 +1,5 @@
 ---
-description: ' Set up an anim graph for the simulated object in Amazon Lumberyard. '
+description: ' Set up an anim graph for the simulated object in Open 3D Engine. '
 title: Setting Up the Simulated Object Anim Graph Node
 ---
 # Setting Up the Simulated Object Anim Graph Node {#set-up-simulated-object-anim-graph-node}

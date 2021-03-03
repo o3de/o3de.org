@@ -1,5 +1,5 @@
 ---
-description: ' Debug Asset Processor issues in Amazon Lumberyard '
+description: ' Debug Asset Processor issues in Open 3D Engine '
 title: Debugging Asset Processor
 ---
 # Debugging Asset Processor {#asset-processor-debugging}

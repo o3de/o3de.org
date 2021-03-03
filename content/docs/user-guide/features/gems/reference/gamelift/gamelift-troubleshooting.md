@@ -1,5 +1,5 @@
 ---
-description: ' Find solutions to common AGS integration errors in your Amazon Lumberyard
+description: ' Find solutions to common AGS integration errors in your Open 3D Engine
   game projects. '
 title: Troubleshooting Amazon Games Services integration
 ---

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Navigation Seed component to generate a color-coded markup
-  that indicates where your AI can travel in Amazon Lumberyard. '
+  that indicates where your AI can travel in Open 3D Engine. '
 title: Navigation Seed
 ---
 # Navigation Seed {#component-nav-seed}

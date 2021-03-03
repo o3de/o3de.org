@@ -1,5 +1,5 @@
 ---
-description: ' Search for UI elements or their components in Amazon Lumberyard''s UI Editor
+description: ' Search for UI elements or their components in Open 3D Engine''s UI Editor
   . '
 title: Searching for UI Elements
 ---

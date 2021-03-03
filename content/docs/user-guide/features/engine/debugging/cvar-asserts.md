@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use asserts in Amazon Lumberyard to debug your game code. '
+description: ' Learn how to use asserts in Open 3D Engine to debug your game code. '
 title: Using the sys_asserts Console Variable (CVAR)
 ---
 # Using the `sys_asserts` Console Variable \(CVAR\) {#debugging-using-asserts}

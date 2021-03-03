@@ -1,6 +1,6 @@
 ---
 description: ' Pin an entity''s inspector to have multiple entities available to edit
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Pinning an Entity's Inspector
 ---
 # Pinning an Entity's Inspector {#component-entity-inspector-pin}

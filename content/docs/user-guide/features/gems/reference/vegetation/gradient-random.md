@@ -1,6 +1,6 @@
 ---
 description: ' Link gradient entities to vegetation entities to create random distribution
-  in Amazon Lumberyard dynamic vegetation. '
+  in Open 3D Engine dynamic vegetation. '
 title: Using Gradients to Create Random Distribution
 ---
 # Using Gradients to Create Random Distribution {#dynamic-vegetation-procedures-gradient-random-selection}

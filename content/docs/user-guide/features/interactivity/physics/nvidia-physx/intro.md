@@ -1,5 +1,5 @@
 ---
-description: ' Use Amazon Lumberyard''s PhysX system to create realistic physical effects
+description: ' Use Open 3D Engine''s PhysX system to create realistic physical effects
   such as collision detection and rigid body dynamics simulation. '
 title: Simulating physics behavior with the PhysX system
 ---

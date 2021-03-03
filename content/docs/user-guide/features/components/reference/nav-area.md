@@ -1,6 +1,6 @@
 ---
 description: ' Use the Navigation Area component with the Polygon Prism Shape component
-  to create navigation meshes in Amazon Lumberyard. '
+  to create navigation meshes in Open 3D Engine. '
 title: Navigation Area
 ---
 # Navigation Area {#component-nav-area}

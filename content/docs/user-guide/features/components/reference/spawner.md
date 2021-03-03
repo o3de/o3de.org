@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Spawner component to spawn a design-time or runtime
+description: ' Use the Open 3D Engine Spawner component to spawn a design-time or runtime
   dynamic slice at an entity''s location. '
 title: Spawner
 ---

@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Characters gem to provide physics for your characters
-  in your Amazon Lumberyard level. '
+  in your Open 3D Engine level. '
 title: PhysX Characters
 ---
 # PhysX Characters {#gems-system-gem-physx-characters}

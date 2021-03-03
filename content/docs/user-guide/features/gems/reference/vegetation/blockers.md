@@ -1,5 +1,5 @@
 ---
-description: ' Create areas where you don''t want vegetation to appear in Amazon Lumberyard. '
+description: ' Create areas where you don''t want vegetation to appear in Open 3D Engine. '
 title: Blocking Vegetation in Select Areas
 ---
 # Blocking Vegetation in Select Areas {#dynamic-vegetation-procedures-vegetation-blockers}

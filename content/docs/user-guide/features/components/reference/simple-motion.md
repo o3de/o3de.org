@@ -1,6 +1,6 @@
 ---
 description: ' Use the Simple Motion component to add motion effects to your actor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Simple Motion
 ---
 # Simple Motion {#component-simple-motion}

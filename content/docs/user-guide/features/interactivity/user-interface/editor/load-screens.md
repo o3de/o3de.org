@@ -1,5 +1,5 @@
 ---
-description: ' Create game and level loading screens with Amazon Lumberyard''s UI Editor,
+description: ' Create game and level loading screens with Open 3D Engine''s UI Editor,
   and then add the canvas file paths to settings in the game.cfg and level.cfg files. '
 title: Defining Game and Level Load Screens
 ---

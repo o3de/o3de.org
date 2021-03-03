@@ -1,5 +1,5 @@
 ---
-description: ' Use arrays and key-value pair maps in Script Canvas, Amazon Lumberyard''s
+description: ' Use arrays and key-value pair maps in Script Canvas, Open 3D Engine''s
   visual scripting tool for gameplay creation. '
 title: Using Container Types (Arrays and Maps)
 ---
