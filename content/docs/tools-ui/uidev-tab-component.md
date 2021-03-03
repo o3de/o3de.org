@@ -1,9 +1,9 @@
 ---
-description: ' Learn how to use the Lumberyard UI 2.0 tab widget component to create
-  tabs and tab action bars in Lumberyard tools and gems. '
-title: Lumberyard UI tab component
+description: ' Learn how to use the O3DE UI 2.0 tab widget component to create
+  tabs and tab action bars in O3DE tools and gems. '
+title: O3DE UI tab component
 ---
-# Lumberyard UI tab component<a name="uidev-tab-component"></a>
+# O3DE UI tab component<a name="uidev-tab-component"></a>
 
 Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application\.
 
@@ -68,7 +68,7 @@ tabWidget->addAction(action1);
 
 ## C\+\+ API reference<a name="tab-api-ref"></a>
 
-For details on the **tab** API's, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **tab** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::TabWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget.html)
 +  [AzQtComponents::TabWidgetActionToolBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget_action_tool_bar.html)
 

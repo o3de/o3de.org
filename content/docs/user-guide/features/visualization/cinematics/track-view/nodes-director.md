@@ -8,7 +8,7 @@ The **Director \(Scene\)** node includes a camera track that specifies the activ
 
 **To add a Director node in the Track View**
 
-1. In Lumberyard Editor, choose **Tools**, **Track View**\.
+1. In O3DE Editor, choose **Tools**, **Track View**\.
 
 1. In the Track View, click the **Add Sequence** ![\[Image NOT FOUND\]](/images/user-guide/cinematics/cinematics_add_sequence_icon.png) icon\.
 

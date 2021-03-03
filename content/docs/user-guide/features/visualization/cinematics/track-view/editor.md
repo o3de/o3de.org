@@ -12,7 +12,7 @@ If you want to generate cutscenes for games or create a script to trigger an ani
 **To create a sequence in the Track View**
 
 1. Do one of the following:
-   + In Lumberyard Editor, choose **Tools**, **Track View**\.
+   + In O3DE Editor, choose **Tools**, **Track View**\.
    + Press **T**\.
 
 1. To create a sequence, do one of the following:

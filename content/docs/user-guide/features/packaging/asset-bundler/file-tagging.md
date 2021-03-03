@@ -6,7 +6,7 @@ title: Using the File Tagging System to Include or Exclude Assets
 ---
 # Using the File Tagging System to Include or Exclude Assets {#asset-bundler-file-tagging}
 
-Lumberyard v1\.22 and later use a file tagging system to include or exclude files at various stages of processing\. This system employs file tag rules to select files that match specified patterns\. File tags are associated with each rule to use as keys in file tag queries\. This is done by using the Lumberyard FileTag API\. You can create your own custom file tag rules using the Lumberyard Asset Editor\. This is useful whenever you need additional control over which files should be included or excluded during a processing step\. For example, as part of asset bundling, it is useful to eliminate "false positives" found after using the **Missing Dependency Scanner**\.
+O3DE v1\.22 and later use a file tagging system to include or exclude files at various stages of processing\. This system employs file tag rules to select files that match specified patterns\. File tags are associated with each rule to use as keys in file tag queries\. This is done by using the O3DE FileTag API\. You can create your own custom file tag rules using the O3DE Asset Editor\. This is useful whenever you need additional control over which files should be included or excluded during a processing step\. For example, as part of asset bundling, it is useful to eliminate "false positives" found after using the **Missing Dependency Scanner**\.
 
 **Topics**
 + [Creating File Tag Rules](#creating-file-tag-rules)
@@ -14,21 +14,21 @@ Lumberyard v1\.22 and later use a file tagging system to include or exclude file
 
 ## Creating File Tag Rules {#creating-file-tag-rules}
 
-Use the Lumberyard Asset Editor to add custom file tag rules to either `exclude.filetag` or `include.filetag`, depending on whether you are excluding or including asset files\. Both of these `.filetag` files are located in the `dev\Engine` directory\. File tag rules consist of two required parts:
+Use the O3DE Asset Editor to add custom file tag rules to either `exclude.filetag` or `include.filetag`, depending on whether you are excluding or including asset files\. Both of these `.filetag` files are located in the `dev\Engine` directory\. File tag rules consist of two required parts:
 + A **File Pattern** that defines the files to match this rule\. Supported patterns include:
   + **Exact** \(for example, `readme.txt`\)
   + **Wildcard** \(for example, `*.cfxb`\)
   + **Regex** \(for example, `.*/gems?/?.*/gem.json`\)
-+ One or more **File Tags** that are used by either Lumberyard or your own code as keys to refer to the file pattern matching defined by this rule\.
++ One or more **File Tags** that are used by either O3DE or your own code as keys to refer to the file pattern matching defined by this rule\.
 
 You can use the **Comment** field to add more information about a file tag rule, for example to document its usage\.
 
 **Note**
-Some file tags have designated uses within Lumberyard\. Various tools may require that you use specific tags, such as `editoronly` and `shader`\. You can find the full list of commonly used tags in the `FileTagsIndex` enum in `dev\Code\Framework\AzFramework\AzFramework\FileTag\FileTag.h`\.
+Some file tags have designated uses within O3DE\. Various tools may require that you use specific tags, such as `editoronly` and `shader`\. You can find the full list of commonly used tags in the `FileTagsIndex` enum in `dev\Code\Framework\AzFramework\AzFramework\FileTag\FileTag.h`\.
 
 **How to Create a File Tag Rule**
 
-1. In Lumberyard Editor, choose **Tools**, **Asset Editor**\.
+1. In O3DE Editor, choose **Tools**, **Asset Editor**\.
 
 1. Choose **File**, **Open**, and select either `exclude.filetag` or `include.filetag` from the `Engine` directory\.
 

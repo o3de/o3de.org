@@ -1,13 +1,13 @@
 ---
-description: ' List of the C++ classes available for working with the Lumberyard UI
-  2.0 system to extend the Lumberyard editor and tools. '
-title: Lumberyard UI Extensions C++ API Reference index
+description: ' List of the C++ classes available for working with the O3DE UI
+  2.0 system to extend the O3DE editor and tools. '
+title: O3DE UI Extensions C++ API Reference index
 ---
-# Lumberyard UI Extensions C\+\+ API Reference index<a name="ui20-reference-index"></a>
+# O3DE UI Extensions C\+\+ API Reference index<a name="ui20-reference-index"></a>
 
-This table lists the available C\+\+ classes for working with the Lumberyard UI 2\.0 system to extend the editor and tools\. The C\+\+ API reference is hosted outside of the user guide, so use this index to quickly find what you need to look up on the external site\. Each class is also accompanied by a brief description\.
+This table lists the available C\+\+ classes for working with the O3DE UI 2\.0 system to extend the editor and tools\. The C\+\+ API reference is hosted outside of the user guide, so use this index to quickly find what you need to look up on the external site\. Each class is also accompanied by a brief description\.
 
-A complete guide to the UI API can be found in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html)\. The custom Qt widget library includes the following components:
+A complete guide to the UI API can be found in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html)\. The custom Qt widget library includes the following components:
 
 
 | Class | Description |

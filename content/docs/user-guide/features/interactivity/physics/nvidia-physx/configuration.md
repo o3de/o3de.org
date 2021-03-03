@@ -9,7 +9,7 @@ The [PhysX](/docs/user-guide/features/gems/physx.md) gem can be configured for e
 To configure PhysX settings, use the **PhysX Configuration** tool\.
 
 **To open the PhysX Configuration tool**
-+ In Lumberyard Editor, choose **Tools**, **PhysX Configuration**\.
++ In O3DE Editor, choose **Tools**, **PhysX Configuration**\.
 
 **Topics**
 + [Global Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-global.md)

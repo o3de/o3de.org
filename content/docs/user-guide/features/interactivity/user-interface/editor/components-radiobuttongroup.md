@@ -1,5 +1,5 @@
 ---
-description: ' Use a RadioButtonGroup component to manage radio button groups in Lumberyard''s
+description: ' Use a RadioButtonGroup component to manage radio button groups in O3DE''s
   UI Editor. '
 title: RadioButtonGroup
 ---

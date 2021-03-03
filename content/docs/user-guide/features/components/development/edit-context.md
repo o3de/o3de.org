@@ -1,11 +1,11 @@
 ---
 description: ' Use the edit context to expose parameters for editing in Open 3D Engine''s
-  Lumberyard Editor. '
+  O3DE Editor. '
 title: Edit Context
 ---
 # Edit Context {#component-entity-system-reflection-edit-context}
 
-The Lumberyard edit context is a utility context that relies on the [Serialization Context](/docs/user-guide/features/engine/serialization/entity-system-reflection-serialization-context.md)\. You can use the edit context to expose parameters of serialized data for editing in Lumberyard Editor\. However, the edit context is an abstract container for edit data\. As such, it is not directly tied to any specific editor\. Any editor can query the data in the edit context and implement its own visualization and editing controls\.
+The O3DE edit context is a utility context that relies on the [Serialization Context](/docs/user-guide/features/engine/serialization/entity-system-reflection-serialization-context.md)\. You can use the edit context to expose parameters of serialized data for editing in O3DE Editor\. However, the edit context is an abstract container for edit data\. As such, it is not directly tied to any specific editor\. Any editor can query the data in the edit context and implement its own visualization and editing controls\.
 
 The following code shows an `EditContext` definition:
 
@@ -42,4 +42,4 @@ editContext->Class<EditorLightComponent>(
     	->Attribute(AZ::Edit::Attributes::AutoExpand, true)
 ```
 
-For convenience, Lumberyard stores a library of frequently used and implemented attributes in the file `dev\Code\Framework\AzCore\AzCore\Serialization\EditContextConstants.inl`\.
+For convenience, O3DE stores a library of frequently used and implemented attributes in the file `dev\Code\Framework\AzCore\AzCore\Serialization\EditContextConstants.inl`\.

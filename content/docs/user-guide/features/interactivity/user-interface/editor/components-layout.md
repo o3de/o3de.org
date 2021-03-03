@@ -1,5 +1,5 @@
 ---
-description: ' Use layout components in Lumberyard''s UI Editor to organize child
+description: ' Use layout components in O3DE''s UI Editor to organize child
   elements into columns, rows, or a grid. '
 title: Layout Components
 ---

@@ -11,9 +11,9 @@ title: Get started with Open 3D Engine
 
 Often times, the best way to learn is *to do*\. Open 3D Engine was designed and created to help you make games, not read docs, so let's make your first game\!
 
-We've designed a very simple game that can be built in a few hours with Open 3D Engine\. As you work through the tutorials in order, you'll learn about the different features and workflows in Lumberyard, and build comfort with the Lumberyard Editor interface\.
+We've designed a very simple game that can be built in a few hours with Open 3D Engine\. As you work through the tutorials in order, you'll learn about the different features and workflows in O3DE, and build comfort with the O3DE Editor interface\.
 
-At the end, you'll have a simple packaged version of a game you can share\. It won't win any awards, but you'll understand the myriad features of Lumberyard, from slices and components to physics to scripting to input and audio support\.
+At the end, you'll have a simple packaged version of a game you can share\. It won't win any awards, but you'll understand the myriad features of O3DE, from slices and components to physics to scripting to input and audio support\.
 
 **Note**
 If you don't want to read at all, check out [the video playlist for this tutorial series](https://www.youtube.com/playlist?list=PLjd5NhkT3LshLaEZY6R6HFBr6xSaI2tHF)\. We're not judging\. Words are inefficient\!
@@ -29,9 +29,9 @@ To get started "getting started", you will need the following on your local comp
 + A basic understanding of the concepts used in developing 3D games
 
 **Important**
-We've provided a Lumberyard project containing the assets required to complete this tutorial series\. You can download the project here: [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip)
+We've provided a O3DE project containing the assets required to complete this tutorial series\. You can download the project here: [WelcomeGuideTutorials\-v1\.1\.zip](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip)
 
-Need some help setting up Lumberyard for the first time? [Start here\!](wg-install.md)
+Need some help setting up O3DE for the first time? [Start here\!](wg-install.md)
 
 Or, you can watch a video on setup made specifically for this tutorial series:
 
@@ -58,7 +58,7 @@ Open the ZIP file and place the folder and its contents under the \\dev director
 
 ![\[coop logo\]](/images/welcomeguide/coop_logo.png)
 
-In this series of tutorials, you'll develop a game we called "Flyin' the Coop"\. \(You can name it whatever you like\! Tech writers only *think* they're clever\.\) This is a simple game where you control a nameless, lonely chicken as they attempt to escape the coop that imprisons them\. Across each chapter, you'll develop a little experience with the different features of Lumberyard as they related to specific game development tasks, in an order that builds upon prior learning\. Each chapter is relatively short and is designed to help you get over that first hurdle when working with a new tool: getting comfortable with the different features, tools, terms, and workflows\.
+In this series of tutorials, you'll develop a game we called "Flyin' the Coop"\. \(You can name it whatever you like\! Tech writers only *think* they're clever\.\) This is a simple game where you control a nameless, lonely chicken as they attempt to escape the coop that imprisons them\. Across each chapter, you'll develop a little experience with the different features of O3DE as they related to specific game development tasks, in an order that builds upon prior learning\. Each chapter is relatively short and is designed to help you get over that first hurdle when working with a new tool: getting comfortable with the different features, tools, terms, and workflows\.
 
 ## Chapters<a name="chapters"></a>
 
@@ -67,7 +67,7 @@ In this series of tutorials, you'll develop a game we called "Flyin' the Coop"\.
 
 | Chapter | Description |
 | --- | --- |
-|   [Tutorial One: Create a level](tutor-ch01-create-a-level.md)   |  Start here if you're brand new to Lumberyard\. Here, you'll learn how to go from launching Lumberyard to creating a basic level\.  |
+|   [Tutorial One: Create a level](tutor-ch01-create-a-level.md)   |  Start here if you're brand new to O3DE\. Here, you'll learn how to go from launching O3DE to creating a basic level\.  |
 |   [Tutorial Two: Create an entity with White Box](tutor-ch02-create-an-entity.md)   |  Learn how to create an entity, work with components, and sketch meshes with **White Box**\.  |
 |   [Tutorial Three: Build a player character](tutor-ch03-build-a-player-character.md)   |  Learn how to import assets from `.fbx` files, and build a player character *slice*\.  |
 |   [Tutorial Four: Create PhysX colliders](tutor-ch04-create-physx-colliders.md)   |  Learn how to add PhysX colliders to **White Box** entities\. You'll also learn to use the **PhysX Player Controller** to add a simple collider to a player entity, and use the **Input** and **Script Canvas** components to support player input\.  |

@@ -4,7 +4,7 @@ title: Memory Management
 ---
 # Memory Management {#cpp-best-practices-lumberyard-memory-management}
 
-When managing memory in Lumberyard, use AZ memory management calls and avoid static variables whose constructors allocate memory or connect to EBuses\.
+When managing memory in O3DE, use AZ memory management calls and avoid static variables whose constructors allocate memory or connect to EBuses\.
 
 ## Memory Allocations {#cpp-best-practices-lumberyard-memory-allocations}
 
@@ -13,9 +13,9 @@ When allocating memory, use the following recommended practices:
 + Specify the allocator in each class\.
 + Use child allocators\. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator\. For an example of creating a child allocator, see [Creating an Allocator](/docs/userguide/programming/memory/allocators#memory-allocators-creating-an-allocator)\.
 
-**Reason**: Lumberyard's core AZ systems provide a memory managed environment, not a raw system allocator like the managed memory in C\# or Java\. In Lumberyard, the core AZ systems provide speed, safety, and facilities for tracking memory usage\.
+**Reason**: O3DE's core AZ systems provide a memory managed environment, not a raw system allocator like the managed memory in C\# or Java\. In O3DE, the core AZ systems provide speed, safety, and facilities for tracking memory usage\.
 
-For information about Lumberyard's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/userguide/programming/memory/allocators#memory-allocators-manually-allocating-memory)\.
+For information about O3DE's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/userguide/programming/memory/allocators#memory-allocators-manually-allocating-memory)\.
 
 ## Memory Issues Caused by Static Variables {#cpp-best-practices-lumberyard-memory-issues-caused-by-static-variables}
 
@@ -27,7 +27,7 @@ In constructors and destructors for static variables, avoid the following:
 
 These rules apply to global static variables, function local static variables, and containers\.
 
-**Reason:** Lumberyard manages the memory of its classes and container types using the AZ memory allocator system\. However, class static variables and containers can attempt to use the AZ memory allocator system before it is created or after it no longer exists\. Keep in mind the following:
+**Reason:** O3DE manages the memory of its classes and container types using the AZ memory allocator system\. However, class static variables and containers can attempt to use the AZ memory allocator system before it is created or after it no longer exists\. Keep in mind the following:
 + On application startup or when a gem is loaded, if a static variable attempts to use the AZ system allocator before the AZ system allocator has been created, a crash can occur\.
 + On shutdown, if a static variable attempts to deallocate from the AZ system heap when the AZ system allocator no longer exists, a crash can occur\.
 
@@ -35,7 +35,7 @@ Remember that the lifetime of a static variable lasts until the module in which 
 
 ### Static Local Variable Example {#cpp-best-practices-lumberyard-static-local-variable-example}
 
-The following example code from the Lumberyard version 1\.17 AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
+The following example code from the O3DE version 1\.17 AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
 
 **Example**
 

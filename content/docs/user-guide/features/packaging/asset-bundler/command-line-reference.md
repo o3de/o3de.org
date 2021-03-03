@@ -2,9 +2,9 @@
 description: ' Command reference for the Open 3D Engine Asset Bundler command-line tool
   AssetBundlerBatch . This reference covers the available commands, their options,
   and basic use cases. '
-title: 'Lumberyard Asset Bundler Command-Line Tool Reference'
+title: 'O3DE Asset Bundler Command-Line Tool Reference'
 ---
-# Lumberyard Asset Bundler Command\-Line Tool Reference {#asset-bundler-command-line-reference}
+# O3DE Asset Bundler Command\-Line Tool Reference {#asset-bundler-command-line-reference}
 
 **Contents**
 + [General Use](#asset-bundler-command-line-reference-general)
@@ -192,7 +192,7 @@ The asset list files generated are named based on the value of this argument and
 *Required:* No
 
 **\-\-addDefaultSeedListFiles**
- Automatically include the default seed lists for the Lumberyard Engine, default project, and all enabled Gems\. As paths relative to `lumberyard_dev`, the files that define default assets are:
+ Automatically include the default seed lists for the O3DE Engine, default project, and all enabled Gems\. As paths relative to `lumberyard_dev`, the files that define default assets are:
 +  **Engine** - `Engine\Engine_Dependencies.xml`
 +  **Gems** - `Gems\gem_name\Assets\gem_name_Dependencies.xml`
 +  **Project** - `project_name\project_name_Dependencies.xml`
@@ -243,7 +243,7 @@ Generate a file that contains additional information about asset inclusion for d
  In the following examples, assume that the seed list `testFile.seed` exists and that the `pc`, `ios`, and `es3` platforms are enabled\.
 
 **Example Display default assets**
- Display which asset lists would be generated from the seed lists for the Lumberyard Engine and enabled Gems for a project's default platforms:
+ Display which asset lists would be generated from the seed lists for the O3DE Engine and enabled Gems for a project's default platforms:
 
 ```
 Bin64vc141\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --print

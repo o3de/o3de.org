@@ -1,6 +1,6 @@
 ---
 description: ' Use a button component to make an element behave like a button in the
-  Lumberyard UI Editor. '
+  O3DE UI Editor. '
 title: Button
 ---
 # Button {#ui-editor-components-button}

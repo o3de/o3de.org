@@ -38,11 +38,11 @@ By default, the navigation seed visualization system is not enabled\. You must u
 
 **To enable Navigation Seed visualization**
 + Enable the following console variables\. To do this, set the value to `1`\.
-  + `ai_MNMDebugAccessibility` \(In Lumberyard Editor, you can also choose **Game**, **AI**, **Visualize Navigation Accessibility**\./\)
+  + `ai_MNMDebugAccessibility` \(In O3DE Editor, you can also choose **Game**, **AI**, **Visualize Navigation Accessibility**\./\)
   + `ai_DebugDraw`
   + `ai_DebugDrawNavigation`
 
   For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
 
 **Note**
-The **Navigation Seed **component exists only in Lumberyard Editor\.
+The **Navigation Seed **component exists only in O3DE Editor\.

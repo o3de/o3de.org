@@ -1,5 +1,5 @@
 ---
-description: ' Use Lumberyard''s UI Animation editor''s Node Pane to add or remove UI elements
+description: ' Use O3DE''s UI Animation editor''s Node Pane to add or remove UI elements
   in an animation sequence. '
 title: Using the Node Pane
 ---

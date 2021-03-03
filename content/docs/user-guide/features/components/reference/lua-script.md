@@ -1,5 +1,5 @@
 ---
-description: ' Use the Lua Script component to add logic to an entity in Lumberyard. '
+description: ' Use the Lua Script component to add logic to an entity in O3DE. '
 title: Lua Script
 ---
 # Lua Script {#component-lua-script}

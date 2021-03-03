@@ -5,14 +5,14 @@ title: 'Script Canvas Debugging'
 ---
 # Script Canvas Debugging {#script-canvas-debugging}
 
-Script Canvas supports live debugging of a Script Canvas graph running in\-game\. You can use Lumberyard Editor or non\-editor tools like game launchers as debug targets\.
+Script Canvas supports live debugging of a Script Canvas graph running in\-game\. You can use O3DE Editor or non\-editor tools like game launchers as debug targets\.
 
 **To open the Script Canvas debugger and choose a target**
 
 1. From the Script Canvas editor, choose **Tools**, **Debugging**\. The debugger panel opens at the bottom of the Script Canvas editor\.
 ![\[Choose Tools, Debugging.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-1.png)
 
-1. On the **Live** tab of the debugging panel, use the dropdown menu to choose the debug target\. The default target is Lumberyard Editor, but you can use Script Canvas to debug the game running in standalone mode\. For more information, see [In\-Game Debugging](#script-canvas-debugging-in-game)\.
+1. On the **Live** tab of the debugging panel, use the dropdown menu to choose the debug target\. The default target is O3DE Editor, but you can use Script Canvas to debug the game running in standalone mode\. For more information, see [In\-Game Debugging](#script-canvas-debugging-in-game)\.
 ![\[Choosing the debug target.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-2.png)
 
 ## Choosing Entities and Graphs to Debug {#script-canvas-debugging-choosing-entities-and-graphs-to-debug}
@@ -43,7 +43,7 @@ Use the following options to configure debugger behavior\.
 
 ![\[The Auto Capture option enabled.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-7.png)
 
-Enable this option if you want the output from a specified target to be captured as soon as the debugger connects to it\. For external tools, capture starts immediately when you enable this option\. For Lumberyard Editor, capture starts when the editor enters game mode\.
+Enable this option if you want the output from a specified target to be captured as soon as the debugger connects to it\. For external tools, capture starts immediately when you enable this option\. For O3DE Editor, capture starts when the editor enters game mode\.
 
 **Live Updates**
 
@@ -60,7 +60,7 @@ After you have chosen the entities or graphs to debug, you are ready to run the 
 
 **To run the Script Canvas debugger**
 
-1. Click **Capture**\. The **Capture** button puts Lumberyard into gameplay mode automatically\.
+1. Click **Capture**\. The **Capture** button puts O3DE into gameplay mode automatically\.
 ![\[The Script Canvas debugger Capture button.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-9.png)
 **Note**
 If **Editor** is selected as the capture target, the game must be running for the debugger to return results\.
@@ -116,7 +116,7 @@ For in\-game debugging, you use the Script Canvas debugger to connect to a runni
 
 **To debug a running game**
 
-1. Run `GridHub.exe` from the `Bin64vcxxx` directory that corresponds to the version of Visual Studio that you are using \(for example, `lumberyard_version\dev\Bin64vc141\GridHub.exe`\)\. GridHub is the network environment that provides connectivity between Lumberyard and its tools\. For more information, see [Using GridHub](/docs/userguide/gridhub-intro.md)\.
+1. Run `GridHub.exe` from the `Bin64vcxxx` directory that corresponds to the version of Visual Studio that you are using \(for example, `lumberyard_version\dev\Bin64vc141\GridHub.exe`\)\. GridHub is the network environment that provides connectivity between O3DE and its tools\. For more information, see [Using GridHub](/docs/userguide/gridhub-intro.md)\.
 **Note**
 GridHub must be active for non\-editor targets to appear in the **Live** tab\.
 

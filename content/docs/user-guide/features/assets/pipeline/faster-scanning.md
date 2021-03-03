@@ -5,7 +5,7 @@ title: Enabling Asset Processor's Faster Scanning Mode
 ---
 # Enabling Asset Processor's Faster Scanning Mode {#asset-processor-faster-scanning}
 
-Asset Processor's **Faster Scanning Mode** speeds up Lumberyard's startup scan by disabling checking for cache changes that occurred while Asset Processor was not running\. This can save you time when processing many assets in your project\.
+Asset Processor's **Faster Scanning Mode** speeds up O3DE's startup scan by disabling checking for cache changes that occurred while Asset Processor was not running\. This can save you time when processing many assets in your project\.
 
 By default, **Faster Scanning Mode** is enabled\. You can enable or disable this mode any time without restarting the Asset Processor, including during the scan\. Asset Processor saves your preference between sessions\.
 

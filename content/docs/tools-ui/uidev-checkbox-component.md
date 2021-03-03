@@ -1,9 +1,9 @@
 ---
-description: ' Learn how to use Lumberyard UI 2.0 checkboxes in Lumberyard gems and
+description: ' Learn how to use O3DE UI 2.0 checkboxes in O3DE gems and
   tools. '
-title: Lumberyard UI checkbox component
+title: O3DE UI checkbox component
 ---
-# Lumberyard UI checkbox component<a name="uidev-checkbox-component"></a>
+# O3DE UI checkbox component<a name="uidev-checkbox-component"></a>
 
 Use checkboxes to enable users to select from a list of choices, when users can select any number of choices \(including zero, one, or several\)\. Each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others\.
 
@@ -60,7 +60,7 @@ checkBox->setEnabled(false);
 
 ## C\+\+ API reference<a name="checkbox-api-ref"></a>
 
-For details on the **checkbox** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **checkbox** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::CheckBox](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_check_box.html)
 
 Relevant Qt documentation includes the following topics:

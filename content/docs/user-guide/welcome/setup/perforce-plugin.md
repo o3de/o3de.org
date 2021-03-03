@@ -1,13 +1,13 @@
 ---
 description: ' How to configure the Perforce Plugin to use Perforce as the source
-  control solution to use with Lumberyard. '
-title: Using the Perforce Plugin with Lumberyard
+  control solution to use with O3DE. '
+title: Using the Perforce Plugin with O3DE
 ---
-# Using the Perforce Plugin with Lumberyard {#setting-up-lumberyard-perforce-plugin}
+# Using the Perforce Plugin with O3DE {#setting-up-lumberyard-perforce-plugin}
 
-Lumberyard integrates with Perforce as a source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.
+O3DE integrates with Perforce as a source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.
 
-You can use the **Perforce Settings** dialog box to configure how Lumberyard connects to Perforce\. The following settings are cached and populated when the dialog box opens:
+You can use the **Perforce Settings** dialog box to configure how O3DE connects to Perforce\. The following settings are cached and populated when the dialog box opens:
 + **Server** \(`P4PORT`\)
 + **User** \(`P4USER`\)
 + **Workspace** \(`P4CLIENT`\)
@@ -21,7 +21,7 @@ Certain values may not be modifiable if your Perforce connection settings are co
 
 **To use the Perforce plugin menu**
 
-1. In Lumberyard Editor, click the P4 icon in the bottom toolbar\.
+1. In O3DE Editor, click the P4 icon in the bottom toolbar\.
 **Note**
 Hover over the icon to display the connection status\.
 

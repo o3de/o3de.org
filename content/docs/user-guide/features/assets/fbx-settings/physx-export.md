@@ -19,7 +19,7 @@ The **PhysX** tab in **FBX Settings** has many options to generate PhysX collide
 
 1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\. The `.fbx` file can contain a mesh or an actor\.
 
-   Alternatively, choose **Import** from the **File** menu in Lumberyard Editor to copy or move the `.fbx` file into your project\.
+   Alternatively, choose **Import** from the **File** menu in O3DE Editor to copy or move the `.fbx` file into your project\.
 
 1. Locate the `.fbx` in **Asset Browser**\.
 

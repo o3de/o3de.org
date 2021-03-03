@@ -10,7 +10,7 @@ Two colliders interact if their collision layers are in each other's collision g
 
 **To create a collision group**
 
-1. In Lumberyard Editor, choose **Tools**, **PhysX Configuration**\.
+1. In O3DE Editor, choose **Tools**, **PhysX Configuration**\.
 
 1. Click the **Collision Groups** tab\. The layers that are configured on the **Layers** tab appear here as columns\.
 
@@ -23,7 +23,7 @@ Two colliders interact if their collision layers are in each other's collision g
 
 **To assign a collision group to a collider**
 
-1. In the Lumberyard Editor viewport, select the entity that has the collider\.
+1. In the O3DE Editor viewport, select the entity that has the collider\.
 
 1. In the **Entity Inspector**, in the **PhysX Collider** component, for **Collides With**, choose one of the collision groups that you created from the drop\-down list\.
 ![\[Choosing a collision group for the PhysX Collider component in the Entity Inspector.\]](/images/user-guide/physx/physx-configuration-5.png)

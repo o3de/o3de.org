@@ -4,7 +4,7 @@ title: HPHA Memory Debugging
 ---
 # HPHA Memory Debugging {#memory-management-debugging-hpha}
 
-In Lumberyard 1\.16 and later versions, the HPHA memory allocator provides memory debugging features to detect and trace common memory issues\.
+In O3DE 1\.16 and later versions, the HPHA memory allocator provides memory debugging features to detect and trace common memory issues\.
 
 ## Enabling HPHA Memory Debugging {#memory-management-debugging-hpha-enabling-hpha-memory-debugging}
 
@@ -20,7 +20,7 @@ To avoid performance issues, debugging features are disabled by default\.
 
 1. Save the file\.
 
-1. Perform a build in debug mode\. For more information, see [Building Lumberyard projects](/docs/userguide/game-build-intro.md)\.
+1. Perform a build in debug mode\. For more information, see [Building O3DE projects](/docs/userguide/game-build-intro.md)\.
 
 ## Characteristics and Limitations {#memory-management-debugging-hpha-observations-and-limitations}
 
@@ -29,8 +29,8 @@ Because of certain limitations, the HPHA debugger can help find memory issues bu
 + Most of the HPHA memory debugging features assert when they detect a memory issue\. When possible, the debugger prints a stack trace that indicates where the allocation happened\. The stack trace is printed into the debugger output \(not to the log\) so that Visual Studio can recognize it\. This makes it possible to double\-click a trace and navigate directly to the corresponding file and line number\.
 + The HPHA memory debugger does not currently cover the following memory issues:
   + Buffer underflows\.
-  + "Far" buffer overflows\. When detecting buffer overflows, Lumberyard detects changes up to 16 bytes after the memory block\. If a buffer overflow writes on byte 17, Lumberyard does not detect it\.
-+ Lumberyard shuts down by terminating the application rather than by destroying objects\. Because Lumberyard relies on the operating system to recover memory, it cannot detect issues related to shutdowns or the destruction of objects\. To reproduce, isolate, and debug such memory issues, we recommend that you use unit tests\.
+  + "Far" buffer overflows\. When detecting buffer overflows, O3DE detects changes up to 16 bytes after the memory block\. If a buffer overflow writes on byte 17, O3DE does not detect it\.
++ O3DE shuts down by terminating the application rather than by destroying objects\. Because O3DE relies on the operating system to recover memory, it cannot detect issues related to shutdowns or the destruction of objects\. To reproduce, isolate, and debug such memory issues, we recommend that you use unit tests\.
 
 ## How Memory Debugging Works {#memory-management-debugging-hpha-how-memory-debugging-works}
 

@@ -5,7 +5,7 @@ title: Physics materials
 ---
 # Physics materials {#physx-materials}
 
-Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution \(bounce\)\. In Lumberyard, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**\. One library can store all the physics materials for a project or separate libraries can be made for different physics material types\.
+Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution \(bounce\)\. In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**\. One library can store all the physics materials for a project or separate libraries can be made for different physics material types\.
 
 **Tip**
 Having one library makes it easier to see all the physics materials and their properties in a project\.
@@ -114,7 +114,7 @@ Static entities that have PhysX collider triangle mesh assets can have physics m
 For more information on creating PhysX collider mesh assets, see [FBX Settings PhysX export](/docs/user-guide/features/assets/fbx-settings/physx-export.md)\.
 
 **Note**
-You can use the names of the placeholder materials to automate material assignment in Lumberyard by using an `_` in the placeholder material name\. The FBX exporter parses placeholder material names found on PhysX collider mesh assets as `PropertyName_PhysicsMaterialName`\.
+You can use the names of the placeholder materials to automate material assignment in O3DE by using an `_` in the placeholder material name\. The FBX exporter parses placeholder material names found on PhysX collider mesh assets as `PropertyName_PhysicsMaterialName`\.
 A placeholder material named `Road` creates a physics material property named **Road** on the collider component under **Mesh Surfaces**\.
 A placeholder material named `Road_Dirt` creates a physics material property named **Road** and attempts to assign the physics material named **Dirt** to the **Road** property, assuming that the assigned physics material library contains a physics material named **Dirt**\.
 

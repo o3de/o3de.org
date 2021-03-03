@@ -1,9 +1,9 @@
 ---
 description: ' Configure your Open 3D Engine project to compile assets for Android and
   correctly declare which device resources it uses. '
-title: Configure Lumberyard projects for Android
+title: Configure O3DE projects for Android
 ---
-# Configure Lumberyard projects for Android {#android-configure-project}
+# Configure O3DE projects for Android {#android-configure-project}
 
  In addition to the [system\-wide configuration requirements](/docs/user-guide/features/platforms/android/setting-up-environment.md) to build for Android, Open 3D Engine requires some project\-specific settings as well\. These settings not only include things like supplying values to the [Android Manifest](https://developer.android.com/guide/topics/manifest/manifest-intro), they also control the application's ability to connect to the shader compiler and how assets are loaded onto the device\. With the Virtual File System \(VFS\) offered by the Asset Processor, you can even live\-reload assets on the device as they change\.
 
@@ -19,7 +19,7 @@ title: Configure Lumberyard projects for Android
 
 ## Handling assets on Android {#android-configure-asset-loading}
 
- Working with Android in Lumberyard can be complicated because of the restrictions of the Android platform, which affects how Android application packages \(APKs\) are built and deployed\. Different asset deployment configurations can greatly affect performance during your development process, so make sure that you select the one that's right for your use case\. This section helps break down what options are available, when they're most appropriate, and how you configure your Lumberyard project in order to support each\.
+ Working with Android in O3DE can be complicated because of the restrictions of the Android platform, which affects how Android application packages \(APKs\) are built and deployed\. Different asset deployment configurations can greatly affect performance during your development process, so make sure that you select the one that's right for your use case\. This section helps break down what options are available, when they're most appropriate, and how you configure your O3DE project in order to support each\.
 
  These are the asset modes that are available modes for asset deployment to devices:
 + `configuration_default` - assets are packed according to the build configuration:
@@ -38,7 +38,7 @@ android_asset_mode = [ configuration_default | loose_files | loose_paks | apk_fi
 
 ### Loose modes {#android-configure-asset-loading-loose}
 
- In *loose files* mode \(`loose_files` or `loose_paks`\), none of your assets are included into the APK\. Instead, assets are copied directly to the storage media on the Android device and loaded by the Lumberyard engine at runtime\. When using `loose_paks`, assets are first placed into a `.pak` file and then pushed to the device\.
+ In *loose files* mode \(`loose_files` or `loose_paks`\), none of your assets are included into the APK\. Instead, assets are copied directly to the storage media on the Android device and loaded by the O3DE engine at runtime\. When using `loose_paks`, assets are first placed into a `.pak` file and then pushed to the device\.
 
  A loose files mode is probably what you want to be using for day\-to\-day development and to rapidly iterate on assets and deploy updates to the device\.
 
@@ -51,7 +51,7 @@ android_asset_mode = loose_files
 
 ### Packed modes {#android-configure-asset-loading-packed}
 
- Unlike many Lumberyard scenarios in which packed assets refer to `.pak` files, the *packed assets* \(`apk_files` and `apk_paks`\) modes bundle your assets as part of the deployed APK, with the option of putting them into a `.pak` first\. This APK is sometimes referred to as a *packed APK*, which refers to the fact that assets are packed into the APK and not distributed separately\.
+ Unlike many O3DE scenarios in which packed assets refer to `.pak` files, the *packed assets* \(`apk_files` and `apk_paks`\) modes bundle your assets as part of the deployed APK, with the option of putting them into a `.pak` first\. This APK is sometimes referred to as a *packed APK*, which refers to the fact that assets are packed into the APK and not distributed separately\.
 
 Bundling your assets in an APK allows for deployment of a single artifact, making these modes ideal for building APKs to distribute for testing or previews\.
 
@@ -67,7 +67,7 @@ android_asset_mode = apk_paks
 
 ## Serving assets over the Virtual File System \(VFS\) {#android-vfs}
 
- During the early stages of development with Lumberyard, and for users rapidly iterating on assets in a way that requires live reloading, you can use the Virtual File System \(VFS\) to stream assets to a device from your development machine\. The VFS uses the Asset Processor as a proxy that your Android device connects to in order to receive updated assets\. Whenever the Asset Processor rebuilds a product asset, that asset is copied to the device and reloaded\. The VFS doesn't do initial asset deployments - your build configuration's asset mode is respected - only reloads\.
+ During the early stages of development with O3DE, and for users rapidly iterating on assets in a way that requires live reloading, you can use the Virtual File System \(VFS\) to stream assets to a device from your development machine\. The VFS uses the Asset Processor as a proxy that your Android device connects to in order to receive updated assets\. Whenever the Asset Processor rebuilds a product asset, that asset is copied to the device and reloaded\. The VFS doesn't do initial asset deployments - your build configuration's asset mode is respected - only reloads\.
 
 **To turn on VFS**
 
@@ -87,7 +87,7 @@ android_asset_mode = apk_paks
    white_list=127.0.0.1
    ```
 
-1. Configure the Lumberyard engine to connect to the VFS and boot without some assets preloaded\.
+1. Configure the O3DE engine to connect to the VFS and boot without some assets preloaded\.
 
    ```
    connect_to_remote=1
@@ -112,13 +112,13 @@ android_asset_mode = apk_paks
    adb reverse tcp:45643 tcp:45643
    ```
 
-1. Rebuild your Lumberyard project for Android and deploy it to the device\.
+1. Rebuild your O3DE project for Android and deploy it to the device\.
 
- Now when you launch your Lumberyard project, it will connect to the Asset Processor host to do live asset reloads over the VFS\.
+ Now when you launch your O3DE project, it will connect to the Asset Processor host to do live asset reloads over the VFS\.
 
 ## Custom Android manifests {#custom-manifest-files}
 
- As part of each Android application, Google requires a list of activities that will be performed by the application, and which device capabilities are required\. For example, if your project uses live location data on an Android device, you'll need to ensure that your project has the appropriate permissions to collect data at the right intervals and with the appropriate location precision\. Because Lumberyard projects are made up of many components, during the build process, the build tools pick up multiple manifests and merge them together\.
+ As part of each Android application, Google requires a list of activities that will be performed by the application, and which device capabilities are required\. For example, if your project uses live location data on an Android device, you'll need to ensure that your project has the appropriate permissions to collect data at the right intervals and with the appropriate location precision\. Because O3DE projects are made up of many components, during the build process, the build tools pick up multiple manifests and merge them together\.
 
  If you're using a gem or other component that requires special device access, or that runs its own Android [Activity](https://developer.android.com/reference/android/app/Activity) or [Intent](https://developer.android.com/reference/android/content/Intent), the gem requires an Android manifest file\. This file needs to meet the following criteria to be picked up by the build system:
 + The file must be named `AndroidManifest.xml` and conform to the [Android manifest format](https://developer.android.com/guide/topics/manifest/manifest-intro#filec)\.

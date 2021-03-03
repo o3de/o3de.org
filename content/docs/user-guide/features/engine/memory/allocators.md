@@ -1,18 +1,18 @@
 ---
 description: ' Allocate and track memory in Open 3D Engine. '
-title: Using Memory Allocators in Lumberyard
+title: Using Memory Allocators in O3DE
 ---
-# Using Memory Allocators in Lumberyard {#memory-allocators}
+# Using Memory Allocators in O3DE {#memory-allocators}
 
-Lumberyard's memory management system determines how memory is allocated\. In Lumberyard version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile platforms, where memory resources are usually more constrained than in PC environments\.
+O3DE's memory management system determines how memory is allocated\. In O3DE version 1\.16, the memory management system has been refactored\. All memory allocations go through one pipeline, and memory allocation can be tracked\. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance\. This improvement is especially important for mobile platforms, where memory resources are usually more constrained than in PC environments\.
 
-Lumberyard supports all the best known memory allocation schemes\. You can use Lumberyard's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
+O3DE supports all the best known memory allocation schemes\. You can use O3DE's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 
 **Note**
-For best C\+\+ practices for managing memory in Lumberyard, see [Memory Management](/docs/user-guide/features/engine/memory-management.md)\.
+For best C\+\+ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/features/engine/memory-management.md)\.
 
 **Topics**
-- [Using Memory Allocators in Lumberyard {#memory-allocators}](#using-memory-allocators-in-lumberyard-memory-allocators)
+- [Using Memory Allocators in O3DE {#memory-allocators}](#using-memory-allocators-in-lumberyard-memory-allocators)
   - [Manually Allocating Memory {#memory-allocators-manually-allocating-memory}](#manually-allocating-memory-memory-allocators-manually-allocating-memory)
   - [AZ Memory Allocators {#memory-allocators-az-memory-allocators}](#az-memory-allocators-memory-allocators-az-memory-allocators)
   - [Applying Allocators to Your Classes {#memory-allocators-applying-allocators-to-your-classes}](#applying-allocators-to-your-classes-memory-allocators-applying-allocators-to-your-classes)
@@ -25,7 +25,7 @@ For best C\+\+ practices for managing memory in Lumberyard, see [Memory Manageme
 
 ## Manually Allocating Memory {#memory-allocators-manually-allocating-memory}
 
-Lumberyard uses the following memory allocation functions\. You can find the source code in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\` directory\.
+O3DE uses the following memory allocation functions\. You can find the source code in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\` directory\.
 
 
 ****
@@ -45,7 +45,7 @@ The following diagram illustrates the hierarchy of AZ memory allocators\.
 + **`PoolAllocator`** - Performs extremely fast small object memory allocations\. `PoolAllocator` can allocate sizes in a range specified by `m_minAllocationSize` to `m_maxPoolSize`\.
 **Note**
 `PoolAllocator` is not thread safe\. If you need a thread\-safe version, use `ThreadPoolAllocator,` or inherit from `ThreadPoolBase` and then write custom code to handle the synchronization\.
-+ **`ThreadPoolAllocator`** - Thread safe pool allocator\. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as Lumberyard requires a unique static variable for the allocator type\.
++ **`ThreadPoolAllocator`** - Thread safe pool allocator\. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as O3DE requires a unique static variable for the allocator type\.
 
 ## Applying Allocators to Your Classes {#memory-allocators-applying-allocators-to-your-classes}
 
@@ -66,18 +66,18 @@ Each allocator commonly implements the `IAllocator` interface and uses a schema 
 | --- | --- |
 | AZ::HphaSchema |  This is the preferred schema\. It combines a small block allocator for small allocations and a [red\-black tree](https://en.wikipedia.org/wiki/Red-black_tree) for large allocations\. This provides good general purpose performance\. Use this schema if you're not sure which one to use\.  `HphaSchema` is based on Dimitar Lazarov's "High Performance Heap Allocator" \(Game Programming Gems 7, Charles River Media, 2008, pp\. 15-23\)\.   |
 | AZ::HeapSchema |  Uses `nedmalloc` internally\. Because `nedmalloc` uses thread caches to accelerate the re\-use of memory, `HeapSchema` can be useful for intensive allocation processing across multiple threads\.  |
-| AZ::BestFitExternalSchema |  A best\-fit allocation scheme that uses an external map to store bookkeeping outside the memory being managed\. Because the tracking node is stored outside the main chunk, Lumberyard can use this allocator with uncached memory\. This is most useful for GPU resource management \(for example, for textures, constant buffers, and compute buffers\)\.  |
+| AZ::BestFitExternalSchema |  A best\-fit allocation scheme that uses an external map to store bookkeeping outside the memory being managed\. Because the tracking node is stored outside the main chunk, O3DE can use this allocator with uncached memory\. This is most useful for GPU resource management \(for example, for textures, constant buffers, and compute buffers\)\.  |
 | AZ::ChildAllocatorSchema |  Acts as a pass\-through schema to another allocator\. Use this schema to create a new allocator based on an existing allocator like `SystemAllocator`\. To properly tag the memory that each gem or logical subsystem allocates, each gem or subsystem can create its own child allocator\. For more information, see [Creating an Allocator](#memory-allocators-creating-an-allocator)\.  |
 | AZ::PoolSchema |  A specialized schema that implements a small block allocator for managing small, high\-throughput allocations\. Objects are typically pooled at the cost of using more memory\.  `PoolSchema` is not thread safe\. If you need a thread\-safe version, use `ThreadPoolSchema` or write custom code to handle the synchronization\.   |
 | AZ::ThreadPoolSchema |  A thread\-safe pool schema that uses thread local storage to implement a small block allocator for each thread\.  Because the thread pool allocator creates separate pools for each thread, it uses somewhat more memory, especially for fixed pool sizes\.   |
 
 ## Creating an Allocator {#memory-allocators-creating-an-allocator}
 
-We recommend that each Lumberyard gem or logical subsystem create a `ChildAllocator` to properly tag the memory that it allocates\. This practice makes it easier to budget resource usage and get a holistic view of it\.
+We recommend that each O3DE gem or logical subsystem create a `ChildAllocator` to properly tag the memory that it allocates\. This practice makes it easier to budget resource usage and get a holistic view of it\.
 
 If you choose to write your own schema, be aware that caching significant chunks of memory can be problematic\. Such caching can hamper the ability of other systems to evolve to fit the content in your game\. Unless you have specific requirements, we recommend that you create a `ChildAllocator` that eventually uses the `SystemAllocator`\. Using a `ChildAllocator` ensures that your memory is as recoverable and reusable as possible\.
 
-Prior to Lumberyard version 1\.16, the most common mechanism for creating a new allocator was to inherit from `SystemAllocator`\. This practice, which creates a completely separate free list of memory usage, results in the problem of memory being spread among disparate caches\. In most cases, it is better to use the inheritance `ChildAllocator<SystemAllocator>`, which also makes it trivial to swap the base class of your custom allocator\.
+Prior to O3DE version 1\.16, the most common mechanism for creating a new allocator was to inherit from `SystemAllocator`\. This practice, which creates a completely separate free list of memory usage, results in the problem of memory being spread among disparate caches\. In most cases, it is better to use the inheritance `ChildAllocator<SystemAllocator>`, which also makes it trivial to swap the base class of your custom allocator\.
 
 **To create an allocator**
 
@@ -230,12 +230,12 @@ In a monolithic build, at static initialization time \(before the allocators are
 
 ## Legacy Memory Management {#memory-allocators-legacy-memory-management}
 
-Starting in Lumberyard version 1\.16, all `Cry*` allocation routines route to `AZ::LegacyAllocator`, which you can find in the `lumberyard_version\dev\Code\CryEngine\CryCommon\LegacyAllocator.h` file\. `LegacyAllocator` has the same lifetime as `OSAllocator` and obtains its memory from `OSAllocator`\.
+Starting in O3DE version 1\.16, all `Cry*` allocation routines route to `AZ::LegacyAllocator`, which you can find in the `lumberyard_version\dev\Code\CryEngine\CryCommon\LegacyAllocator.h` file\. `LegacyAllocator` has the same lifetime as `OSAllocator` and obtains its memory from `OSAllocator`\.
 
 `Cry` dynamic\-link libraries override the `new` and `delete` functions instead of tagging their classes with allocators\. This behavior is controlled with the `USE_CRY_NEW_AND_DELETE` macro \(`lumberyard_version\dev\Code\CryEngine\CryCommon\CryMemoryManager_impl.h`\)\. This practice should not be used outside `Cry` DLLs\. When compiled monolithically, the `LegacyAllocator` catches any uses of global `new` or `delete`\. This allows all allocations to be tracked and managed\.
 
 **Note**
-As of Lumberyard version 1\.16, `operator new` and `operator delete` overrides are restricted to Cry DLLs\.
+As of O3DE version 1\.16, `operator new` and `operator delete` overrides are restricted to Cry DLLs\.
 
 All `Cry` static functions that allocate memory have been removed or wrapped in `StaticInstance<T>`, which creates the functions only when the functions are first accessed\. `StaticInstance<T>` can be used in any DLL which depends on `CryCommon` and includes the `lumberyard_version\dev\Code\CryEngine\CryCommon\platform_impl.h` file\.
 

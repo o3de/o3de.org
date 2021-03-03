@@ -22,7 +22,7 @@ You can use **FBX Settings** to import multiple UV sets\. With multiple UV sets,
 
 ## Processing multiple UV sets {#fbx-export-multiple-uv-sets}
 
-Lumberyard supports two UV sets per mesh\. **Asset Processor** follows these rules when processing UV sets:
+O3DE supports two UV sets per mesh\. **Asset Processor** follows these rules when processing UV sets:
 + If the `.fbx` file contains one or two UV sets, the UV sets are automatically exported\.
 + If the `.fbx` file contains three or more UV sets, the first two sets are automatically exported, and the remaining sets are ignored\.
 
@@ -32,7 +32,7 @@ By default, **FBX Settings** creates materials for your exported mesh\. You must
 
 Follow these steps to apply the second UV set:
 
-1. In Lumberyard Editor, choose **Tools** and then **Material Editor**\.
+1. In O3DE Editor, choose **Tools** and then **Material Editor**\.
 
 1. In the left pane, navigate to and select the material to use\.
 
@@ -49,7 +49,7 @@ You can also set independent values for tiling, rotation, and oscillation for th
 
 Follow these steps to set independent values for the texture inputs:
 
-1. In Lumberyard Editor, choose **Tools**, **Material Editor**\.
+1. In O3DE Editor, choose **Tools**, **Material Editor**\.
 
 1. In the left pane, navigate to and select the material to use\.
 

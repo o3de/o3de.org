@@ -1,18 +1,18 @@
 ---
 description: ' Understand the workflow of Open 3D Engine''s runtime asset system and learn
   how to load prebuilt assets into a running instance of the engine. '
-title: Programming the Lumberyard AZCore Runtime Asset System
+title: Programming the O3DE AZCore Runtime Asset System
 ---
-# Programming the Lumberyard AZCore Runtime Asset System {#asset-pipeline-asset-system-programming}
+# Programming the O3DE AZCore Runtime Asset System {#asset-pipeline-asset-system-programming}
 
-The Lumberyard Editor and Lumberyard runtime code use the AZCore runtime asset system to asynchronously stream and activate assets\. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine\.
+The O3DE Editor and O3DE runtime code use the AZCore runtime asset system to asynchronously stream and activate assets\. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine\.
 
 **Note**
 For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)\.
 
 ## Asset System Classes {#asset-pipeline-asset-system-programming-asset-system-classes}
 
-The Lumberyard asset system includes the following classes and class families:
+The O3DE asset system includes the following classes and class families:
 + [AZ::Data::AssetData Derived Classes](#asset-pipeline-asset-system-programming-azdataassetdata-derived-classes)
 + [AZ::Data::AssetManager](#asset-pipeline-asset-system-programming-azdataassetmanager)
 + [AzFramework::AssetCatalog](#asset-pipeline-asset-system-programming-azframeworkassetcatalog)
@@ -24,7 +24,7 @@ The following sections describe these classes in detail\. For the source code, s
 
 An `AssetData` class represents the data of an asset that is loaded in memory\. To describe a particular kind of asset, derive from the `AssetData` base class\. The base class provides an `AssetID` and a reference count member variable for the asset\.
 
-The following Lumberyard classes derive from `AssetData`:
+The following O3DE classes derive from `AssetData`:
 
 
 ****
@@ -37,11 +37,11 @@ The following Lumberyard classes derive from `AssetData`:
 | ParticleAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset\.h |
 
 **Note**
-Adding your own asset type to Lumberyard includes the following high\-level steps:
+Adding your own asset type to O3DE includes the following high\-level steps:
 Derive your type from `AssetData`\.
 Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID\.
 Add the member fields or structs that store your data in memory at run time\.
-For more information, see [Adding an Asset Type to Lumberyard](/docs/user-guide/features/assets/asset-type-adding.md)\.
+For more information, see [Adding an Asset Type to O3DE](/docs/user-guide/features/assets/asset-type-adding.md)\.
 
 ### AZ::Data::Asset<T> Templated Class {#asset-pipeline-asset-system-programming-azdataassett-templated-class}
 
@@ -65,11 +65,11 @@ A loaded asset remains loaded as long as an active `Asset<T>` points to it\. The
 
 #### Integration with UI Property Grids {#asset-pipeline-asset-system-programming-integration-with-ui-property-grids}
 
-The `Asset<T>` member fields of your component can appear in UI property grids like those in the Entity Inspector\. To make a component's field available in Lumberyard Editor, make the `Asset<T>` field a member variable and reflect it into the editor\. When you do so, game developers can drag an asset from the **Asset Browser** onto the property field to assign the asset to the component\.
+The `Asset<T>` member fields of your component can appear in UI property grids like those in the Entity Inspector\. To make a component's field available in O3DE Editor, make the `Asset<T>` field a member variable and reflect it into the editor\. When you do so, game developers can drag an asset from the **Asset Browser** onto the property field to assign the asset to the component\.
 
 Note the following points:
 + Reflect the `Asset<T>` member variable just as you reflect other member variables of your component\.
-+ Lumberyard handles asset IDs for you automatically\. You do not have to handle them explicitly\.
++ O3DE handles asset IDs for you automatically\. You do not have to handle them explicitly\.
 + `Asset<T>` fields serialize the `AssetId` and other information such as the last known name of that `AssetId`\.
 + After an `AssetId` is assigned to a component, the `AssetId` is saved when the component is saved\. The next time the component loads, the asset is automatically loaded if you specified the appropriate flag in the `Asset<T>` constructor\.
 
@@ -144,7 +144,7 @@ Note the following points:
 
 ### AzFramework::AssetCatalog {#asset-pipeline-asset-system-programming-azframeworkassetcatalog}
 
-The asset catalog is a set of lookup tables that notifies the Lumberyard asset system when assets on the file system change\. The asset manager monitors the `AssetCatalogEventBus`\. When the bus delivers the `OnCatalogAssetChanged` event, the asset manager starts upgrading assets\. This is how live reloading is implemented\.
+The asset catalog is a set of lookup tables that notifies the O3DE asset system when assets on the file system change\. The asset manager monitors the `AssetCatalogEventBus`\. When the bus delivers the `OnCatalogAssetChanged` event, the asset manager starts upgrading assets\. This is how live reloading is implemented\.
 
 To receive notifications about assets that change on disk, connect to the `AssetCatalogEventBus`\. Then use the `AssetCatalogRequestBus` to make requests to the `AssetCatalog` to resolve assets by ID\. For details, see the `AssetManagerBus.h` file\.
 
@@ -163,7 +163,7 @@ To create a handler for a specific asset type, derive from the `AssetHandler` cl
 
 ## Asset System Workflow {#asset-pipeline-asset-system-programming-asset-system-workflow}
 
-Lumberyard loads assets in the following two ways:
+O3DE loads assets in the following two ways:
 + **Implicit** - When classes and structs contain `Asset<T>` members\. When a structure deserializes, the serialization system checks whether the structure contains a member of type `Asset<T>`\. If so, the serialization system calls `GetAsset()` to retrieve the asset from `AssetManager`\.
 + **Explicit** - When `AssetManager`::`GetAsset()` or `Asset<T>::QueueLoad` is called explicitly\.
 

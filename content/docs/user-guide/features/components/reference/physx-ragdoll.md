@@ -17,7 +17,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 **To use the PhysX Ragdoll component**
 
-1. In Lumberyard Editor, add the **PhysX Ragdoll** component to an entity that represents a character\. For more information, see [Adding Components to an Entity](/docs/userguide/components/working-adding.md)\.
+1. In O3DE Editor, add the **PhysX Ragdoll** component to an entity that represents a character\. For more information, see [Adding Components to an Entity](/docs/userguide/components/working-adding.md)\.
 
 1. Choose **Tools**, **Animation Editor**\.
 

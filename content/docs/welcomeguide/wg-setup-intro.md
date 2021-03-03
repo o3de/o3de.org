@@ -6,11 +6,11 @@ title: Setting up Open 3D Engine
 
 Open 3D Engine has a two\-part installation process:
 
-1.  The installer application downloads, extracts, and installs Lumberyard\.
+1.  The installer application downloads, extracts, and installs O3DE\.
 
-1.  **Setup Assistant** configures and installs additional software based on your development needs\. Jump right in to the Lumberyard Editor with an **Express Install** or customize Lumberyard's features for your development needs with a **Custom Install**\.
+1.  **Setup Assistant** configures and installs additional software based on your development needs\. Jump right in to the O3DE Editor with an **Express Install** or customize O3DE's features for your development needs with a **Custom Install**\.
 
-After Lumberyard is installed, use **Project Configurator** to select a project or create a new project\. The following sections detail the minimum requirements for Lumberyard and guide you through the installation process\.
+After O3DE is installed, use **Project Configurator** to select a project or create a new project\. The following sections detail the minimum requirements for O3DE and guide you through the installation process\.
 
 ![\[Flow chart of the Open 3D Engine installation process.\]](/images/welcomeguide/wg-lumberyard-install-flow-chart.png)
 

@@ -1,14 +1,14 @@
 ---
 description: ' Add iOS Framework libraries to your Open 3D Engine Gems. '
-title: Add iOS Frameworks to a Lumberyard project
+title: Add iOS Frameworks to a O3DE project
 ---
-# Add iOS Frameworks to a Lumberyard project {#ios-custom-frameworks}
+# Add iOS Frameworks to a O3DE project {#ios-custom-frameworks}
 
  As part of making changes to your core application on iOS, you may need to include bundled libraries for Darwin platforms called [Frameworks](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html)\. Frameworks are versioned bundles of libraries and their headers packaged as a single redistributable, and more common to ship for Darwin\-based platforms rather than independent `.dyld` libraries and header files\. When building for iOS, these frameworks need to be included in your final application bundle and code\-signed like the rest of your binary\. Because headers ship as part of a Framework, you don't need to explicitly export them so that the build system or your code will see the headers\.
 
 ## Include frameworks in the launcher's `wscript` {#ios-custom-frameworks-wscript}
 
- This section of the guide walks you through configuring your project launcher's `wscript` to support linking and including Frameworks, as well as \. Before reading the rest of this topic, make sure that you're familiar with the general principles behind Waf build scripts in Lumberyard\. For more information, see [Waf Module Files \(wscript\)](/docs/userguide/waf/files-module-files-wscript.md)\.
+ This section of the guide walks you through configuring your project launcher's `wscript` to support linking and including Frameworks, as well as \. Before reading the rest of this topic, make sure that you're familiar with the general principles behind Waf build scripts in O3DE\. For more information, see [Waf Module Files \(wscript\)](/docs/userguide/waf/files-module-files-wscript.md)\.
 
 1. Open the file `lumberyard_install_dir/dev/Code/LauncherUnified/wscript` in a text editor\.
 

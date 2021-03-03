@@ -8,7 +8,7 @@ title: Modifying Project Settings for Mobile Device Games
 Use the **Project Settings Tool** \(PST\) to make streamlined changes to project settings across all mobile platforms\. The **Project Settings Tool** shows properties from all of the project settings files so that you can edit and save changes at once\.
 
 **Note**
-Before you can use the **Project Settings Tool**, you must have Lumberyard Editor installed, and an active project created and set as the default project\.
+Before you can use the **Project Settings Tool**, you must have O3DE Editor installed, and an active project created and set as the default project\.
 Currently, only Android and iOS are supported for platform\-specific configuration\.
 
 **Topics**
@@ -32,7 +32,7 @@ You can use the **Project Settings Tool** to set settings related to the current
 
 **To open the PST**
 
-1. In Lumberyard Editor, choose **File**, **Project Settings**, **Project Settings Tool**\.
+1. In O3DE Editor, choose **File**, **Project Settings**, **Project Settings Tool**\.
 
 1. In the **Project Settings Tool**, you can review and change your settings\. For more information, pause on a property and review the tooltip\. You can also see [Properties](#mobile-project-settings-tool-properties)\.
    + The **Base Settings** apply to all platforms\.
@@ -88,7 +88,7 @@ After you make changes and save, the **Project Settings Tool** prompts you to re
 If you choose to run the `configure` command, the output appears at the bottom of the window\. Once the results display "Reconfiguration Finished," you can use the **Deployment Tool** to deploy to your device with the new changes\.
 
 **Note**
-If you want to deploy your changes immediately, choose **Yes**\. Lumberyard Editor doesn't automatically run the `configure` command and will not prompt you to do so later\.
+If you want to deploy your changes immediately, choose **Yes**\. O3DE Editor doesn't automatically run the `configure` command and will not prompt you to do so later\.
 
 ![\[The Project Settings Tool displays a successful configure and shows "Reconfiguration Finished."\]](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure-result.png)
 
@@ -105,7 +105,7 @@ The **Base Settings** properties apply to both Android and iOS\.
 
 | Property | Description |
 | --- | --- |
-| Project Name |  Name that Lumberyard uses to identify the selected project\. This value should not be changed\.   |
+| Project Name |  Name that O3DE uses to identify the selected project\. This value should not be changed\.   |
 | Product Name |  Name to be displayed in titles for the executables or apps\.  |
 | Executable Name |  File name of the application that runs the project\. This value should not be changed\.  |
 | Game Folder |  Directory name that stores all of the project's code and resources\. This value should not be changed\.  |

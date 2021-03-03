@@ -142,7 +142,7 @@ The following diagram shows the comparison process and the outputs for this exam
 
 To complete the procedures in this tutorial, make sure that you have the following set up:
 + An installed and configured installation of Open 3D Engine v1\.22 or later\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
-+ A Lumberyard game project ready to build and compile\. You can use the Starter Game sample if you don't have a game project\. [Learn more about the Starter Game sample project\.](/docs/userguide/samples/levels/starter-game.md)\.
++ A O3DE game project ready to build and compile\. You can use the Starter Game sample if you don't have a game project\. [Learn more about the Starter Game sample project\.](/docs/userguide/samples/levels/starter-game.md)\.
 
 ### Setup {#how-to-perform-list-comparisons-setup}
 

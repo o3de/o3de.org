@@ -9,7 +9,7 @@ Use the NullVR gem to run your level through the head\-mounted displays \(HMD\) 
 
 The NullVR Gem has a lower priority than other VR gems and their devices\. That means that if any other VR gem is enabled and its appropriate VR device is connected, then the HMD framework uses that VR gem\. The NullVR Gem is enabled only if no other VR gem is enabled or no VR device is connected\.
 
-When Lumberyard is using the NullVR Gem, the following appears in the console:
+When O3DE is using the NullVR Gem, the following appears in the console:
 
 ```
 [HMD][Null] - Null Device

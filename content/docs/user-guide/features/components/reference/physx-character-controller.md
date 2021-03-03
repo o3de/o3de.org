@@ -9,7 +9,7 @@ You can use the **PhysX Character Controller** component to implement basic char
 
 The following diagram shows some of the features of the **PhysX Character Controller** component\. Because it is usually more convenient to work with a character's foot position, the entity position coincides with the base of the controller\. For details about the contact offset, see [Contact Offset](#component-physx-character-controller-contact-offset)\.
 
-![\[Contact offset of a PhysX Character Controller component in the Lumberyard Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-1.png)
+![\[Contact offset of a PhysX Character Controller component in the O3DE Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-1.png)
 
 The **PhysX Character Controller** component requires the [PhysX Characters](/docs/user-guide/features/gems/physx-characters.md) gem, which you can [enable](/docs/userguide/gems/using-project-configurator.md) in the Project Configurator\.
 
@@ -76,7 +76,7 @@ The contact offset is included in the calculation for the foot position\.
 **Example**
 In the editor debug draw for the **PhysX Character Controller** component, the effect of the contact offset is represented by the wireframe that surrounds the solid shape of the collider, as in the following image\.
 
-![\[Wireframe showing the contact offset for a PhysX Character Controller in the Lumberyard Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-7.png)
+![\[Wireframe showing the contact offset for a PhysX Character Controller in the O3DE Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-7.png)
 
 ### Shape {#component-physx-character-controller-shape}
 
@@ -92,6 +92,6 @@ Character controllers are usually **kinematic** or **dynamic**\. Dynamic charact
 
 For more information, see [Character Controllers](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/3.3.4/Manual/CharacterControllers.html) in the NVIDIA documentation\.
 
-In Lumberyard, the **PhysX Character Controller** component is kinematic\. The legacy [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html) component is dynamic\.
+In O3DE, the **PhysX Character Controller** component is kinematic\. The legacy [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html) component is dynamic\.
 
 Because the **PhysX Character Controller** component is kinematic and not affected by outside forces, it is not affected by gravity out of the box\. This separation allows you to use Script Canvas or C\+\+ to implement custom behavior for gravity\. Kinematic controllers behave as if they have infinite mass when dynamic objects collide with them\. Your custom gameplay logic determines how the controller responds to collisions such as the recoil from heavy impacts\.

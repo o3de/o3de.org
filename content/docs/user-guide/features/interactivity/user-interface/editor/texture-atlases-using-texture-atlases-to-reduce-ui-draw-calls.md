@@ -12,11 +12,11 @@ Deciding which textures to add to a texture atlas is a two\-part process:
 
 1. Determine which textures to place in specific texture atlases\.
 
-To gather data to make these determinations, you can use the Lumberyard Editor console\.
+To gather data to make these determinations, you can use the O3DE Editor console\.
 
 **To determine the textures to add to a texture atlas**
 
-1. In the Lumberyard Editor console, set the `ui_DisplayDrawCallData` console variable to **1** to display the draw call information for each loaded canvas, as in the following example\.
+1. In the O3DE Editor console, set the `ui_DisplayDrawCallData` console variable to **1** to display the draw call information for each loaded canvas, as in the following example\.
 
    ```
    ui_DisplayDrawCallData 1
@@ -25,7 +25,7 @@ To gather data to make these determinations, you can use the Lumberyard Editor c
 1. In the last column in the display of draw call information, note the values under **XTex**\. The **XTex** column shows the number of draw calls when the shader supported maximum of 16 textures is reached\. To reduce the number of draw calls, use a texture atlas\.
 ![\[Location of the XTex column in the draw call information output.\]](/images/user-guide/game_ui_editor/ui-editor-texture-atlases-8.png)
 
-1. In the Lumberyard Editor console, enter the `ui_ReportDrawCalls` console command\. This command outputs a report of the draw calls for all active canvases into a text file\.
+1. In the O3DE Editor console, enter the `ui_ReportDrawCalls` console command\. This command outputs a report of the draw calls for all active canvases into a text file\.
 
 1. Open the `lumberyard_version\dev\Cache\your_project_name\pc\user\log\LyShine\drawcallreport.txt` log file\.
 

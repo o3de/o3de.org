@@ -17,7 +17,7 @@ For more information, see the [NVIDIA Cloth Gem documentation](/docs/user-guide/
 
 ## Add Cloth Colliders to an actor {#component-cloth-collider-character}
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, on the right side of the menu bar, choose **Physics** from the drop\-down list\. This changes the layout\.
 

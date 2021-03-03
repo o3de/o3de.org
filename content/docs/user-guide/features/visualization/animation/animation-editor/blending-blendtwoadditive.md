@@ -14,7 +14,7 @@ This node functions similarly to the **Blend Two \(Legacy\)** node with **Additi
 
 **To use the **Blend Two Additive** node**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. Create a [blend tree](/docs/user-guide/features/visualization/animation/animation-editor/creating-blend-trees.md)\.
 
