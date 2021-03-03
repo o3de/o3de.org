@@ -1,5 +1,5 @@
 # Functions
-Functions in AZSL work similarly to HLSL (see the [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-functions) documentation on Functions.) However, there are a few oddities to note about functions in AZSL. 
+Functions in AZSL work similarly to HLSL (see the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-functions) on functions.) However, there are a few differences to note about functions in AZSL. 
 
 ## Function Declarations
 AZSL supports forward declarations of functions, meaning a function can be declared before it is defined. If a function is declared multiple times, AZSLc will ignore the repeated declarations. Note that redefined functions are not permitted and lead to a compile error. This is in accordance to the one definition rule in AZSL.
@@ -115,7 +115,7 @@ In the following case, overload resolution occurs even with unsupported expressi
     If your functions have different numbers of parameters, unsupported expressions are not a problem because resolution becomes trivial for the compiler.
 
 ## Intrinsic Functions
-HLSL contains a list of intrinsic functions that can also be used in AZSL (see [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions) documentation on intrinsic functions). Although intrinsic functions are supported, using them leads to compiler warnings. This is because HLSL intrinsic functions, or submembers of intrinsic types are not registered within AZSLc. AZSLc has no knowledge of any of these symbols, so it can't track them nor migrate or translate anything on them. This warning can be safely ignored because the intrinsic functions get passed on into HLSL, which will then be compiled. 
+HLSL contains a list of intrinsic functions that can also be used in AZSL (see [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-intrinsic-functions) on intrinsic functions). Although intrinsic functions are supported, using them leads to compiler warnings. This is because HLSL intrinsic functions, or submembers of intrinsic types are not registered within AZSLc. AZSLc has no knowledge of any of these symbols, so it can't track them nor migrate or translate anything on them. This warning can be safely ignored because the intrinsic functions get passed on into HLSL, which will then be compiled. 
 
 The following AZSL code sample demonstrates the use of the intrinsic function `sincos` and the resulting warning. 
 ```cpp

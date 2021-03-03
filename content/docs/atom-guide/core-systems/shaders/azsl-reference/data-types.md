@@ -1,5 +1,5 @@
 # Types
-This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For more information on HLSL see the [HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl) documentation. 
+This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For more information on HLSL, see the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl). 
 
 ## Arrays
 Arrays are commonly used in shaders to hold buffers or textures. Arrays inside Shader Resource Groups (SRGs) must have an array dimension of an expression that can be resolved at build time. It must be a direct integer literal, or an identifier with a literal initializer, or an identifier that is initialized as a copy to another identifier with a literal initializer. This limitation only applies to fields within SRGs. In other cases, AZSLc will preserve array specifiers verbatim when outputting HLSL. As long as DXC supports a particular array specifier expression, it will work in AZSL too. 
@@ -25,14 +25,12 @@ AZSLc can compile dynamic expressions in arrays that are not reflected. For exam
 
 <!-- [WRITER NOTE: Need help understanding this -- asked in wiki] -->
 
-## Matrix Type
-Matrix types in AZSL are used in the same way as in HLSL, with an exception to matrix ordering. 
-### Matrix Ordering
+## Matrix Ordering
 Similar to HLSL, AZSL assumes the column-major as a default matrix packing order, meaning each column of the matrix is packed into a single constant register. However, Atom explicitly set the default matrix packing order to be the row major, meaning each row of the matrix is packed into a single constant register. If you want to be explicit, use either `row_major` or `column_major` keyword in front of uniform matrices. 
 
-AZSL does not support the [`pack_matrix pragma` directive](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-pre-pragma-pack-matrix). All preprocessing is handled by clang. 
+AZSL does not support the [Microsoft DirectX HLSL's `pack_matrix pragma` directive](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-pre-pragma-pack-matrix). All preprocessing is handled by clang. 
 
-## Typeof
+## `typeof`
 AZSL contains the keyword `typeof` which is similar to the keyword `decltype` in C++. Currently, there is limited support. 
 It works within a `__azslc_print_symbol` debug intrinsic or at a declaration scope. However, it does not get resolved when used within a function's body in imperative code. Another limitation occurs when the expression within the parenthesis is too complex for AZSLc to decipher. In that case, the AZSLc provides a warning indicating a type-collapse failure and `<fail>` is emitted in the HLSL product. 
 
@@ -54,10 +52,10 @@ void Func()
 }
 ```
 
-## Typedef AND Typealias
+## `typedef` and `typealias`
 The keyword `typedef` was introduced in HLSL6 and is supported in AZSL. It follows the same syntax rules as in C. AZSL also contains the keyword `typealias`, which behaves similarly to `using` in C++11. 
 
-To demonstrate `typedef` and `typealias`, Consider the following AZSL code sample.
+To demonstrate `typedef` and `typealias`, consider the following AZSL code sample.
 ```cpp
 typealias UVType = float2;
  
@@ -67,7 +65,7 @@ float4 MainPS(UVType uv) : SV_Target0
 }
 ```
 
-In the context above, the reference to the typealias’s name `UVType`, appears in declarative code (the signature of MainPS definition). AZLSc translates it fully for the HLSL side. 
+In the context above, the reference to the `typealias`’s name `UVType`, appears in declarative code (the signature of MainPS definition). AZLSc translates it fully for the HLSL side. 
 
 This results in the following HLSL code.
 
