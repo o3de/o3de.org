@@ -9,7 +9,7 @@ A **reflected property editor** automatically lays out controls for user\-editab
 
 ![\[component reflected property editor in card\]](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
-For more information about reflecting and the edit context, see the **Lumberyard User Guide** topic on [Reflecting a Component for Serialization and Editing](https://docs.aws.amazon.com/lumberyard/latest/userguide/component-entity-system-reflect-component.html)\.
+For more information about reflecting and the edit context, see the **Lumberyard User Guide** topic on [Reflecting a Component for Serialization and Editing](/docs/userguide/components/entity-system-reflect-component)\.
 
 ## Reflected property editor in a card<a name="reflected-property-editor-basic"></a>
 
@@ -17,7 +17,7 @@ The following code shows how to add a simple **reflected property editor** to a 
 
 For a complete working example, which demonstrates the concepts of edit context and reflection, see the **Reflected Property Editor** page in the [Lumberyard Qt control gallery tool](uidev-control-gallery.md), and browse the source code for that page\. This can be found in your Lumberyard dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\ReflectedPropertyEditorPage.cpp`\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzToolsFramework/UI/PropertyEditor/ReflectedPropertyEditor.hxx>

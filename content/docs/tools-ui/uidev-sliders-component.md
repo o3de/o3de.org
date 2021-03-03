@@ -7,7 +7,7 @@ title: Lumberyard UI sliders
 
 Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically\. The visual feedback shows users where the current value is within the range of valid values\.
 
- **Slider** 
+ **Slider**
 
 The basic slider is a styled version of the `QSlider` widget from the Qt library\.
 
@@ -15,7 +15,7 @@ The basic slider is a styled version of the `QSlider` widget from the Qt library
 
 Use the `SliderInt` class for signed integer values, and the `SliderDouble` class for double values\.
 
- **Slider combo** 
+ **Slider combo**
 
 A slider combo is a combination of the slider and spinbox widgets\. In practice, sliders can be difficult for the user to manipulate with precision\. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine\-tuning capability of the spinbox\.
 
@@ -27,13 +27,13 @@ Use the `SliderCombo` class for signed integer values, and the `SliderDoubleComb
 
 Follow these guidelines as you design your UI with sliders:
 
-1.  Sliders work best when the specific value does not matter to the user, and an approximate value is good enough\. Example: selecting a volume or defining the color gradient\. 
+1.  Sliders work best when the specific value does not matter to the user, and an approximate value is good enough\. Example: selecting a volume or defining the color gradient\.
 
-1.  When placing a slider control on the UI, it’s best to show the outcome side by side with the control, so a user can review and confirm if the value they select matches their expectation\. 
+1.  When placing a slider control on the UI, it's best to show the outcome side by side with the control, so a user can review and confirm if the value they select matches their expectation\.
 
 Avoid these design choices when using sliders:
-+ Don’t use the slider when picking an exact value is important to the goal of the interface\.
-+ Don’t use the slider if you don’t have the start and end value for your use case\. Use the number edit input box instead\.
++ Don't use the slider when picking an exact value is important to the goal of the interface\.
++ Don't use the slider if you don't have the start and end value for your use case\. Use the number edit input box instead\.
 
 ## Basic slider with midpoint<a name="slider-basic"></a>
 
@@ -41,7 +41,7 @@ Avoid these design choices when using sliders:
 
 The following example demonstrates the creation of a simple, integer slider using the optional midpoint style\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/Slider.h>
@@ -66,7 +66,7 @@ sliderInt->setEnabled(false);
 
 Add a tooltip to provide context for the value in the slider\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/Slider.h>
@@ -80,7 +80,7 @@ sliderInt->setToolTipFormatting("Opacity", "%");
 
 The following example demonstrates the creation of a double slider combo\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/SliderCombo.h>
@@ -102,16 +102,16 @@ sliderDoubleCombo->setRange(-1.0, 100.0);
 
 ## C\+\+ API reference<a name="sliders-api-ref"></a>
 
-For details on the **slider** API’s, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **slider** API's, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 
- **Slider:** 
-+  [AzQtComponents::Slider](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider.html) 
-+  [AzQtComponents::SliderInt](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_int.html) 
-+  [AzQtComponents::SliderDouble](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_double.html) 
+ **Slider:**
++  [AzQtComponents::Slider](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider.html)
++  [AzQtComponents::SliderInt](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_int.html)
++  [AzQtComponents::SliderDouble](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_double.html)
 
- **Slider combo:** 
-+  [AzQtComponents::SliderCombo](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_combo.html) 
-+  [AzQtComponents::SliderDoubleCombo](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_double_combo.html) 
+ **Slider combo:**
++  [AzQtComponents::SliderCombo](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_combo.html)
++  [AzQtComponents::SliderDoubleCombo](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_double_combo.html)
 
 Relevant Qt documentation includes the following topics:
-+  [QSlider Class](https://doc.qt.io/qt-5/qslider.html) 
++  [QSlider Class](https://doc.qt.io/qt-5/qslider.html)

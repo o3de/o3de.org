@@ -19,7 +19,7 @@ Example from Lumberyard **Asset Browser**:
 
 Follow these guidelines as you design your UI with tree views:
 
-1.  When the tree hierarchy is anticipated to be deep, such as a tree view used in file directories, it is suggested to add a file path to help users know where they are in the path\. 
+1.  When the tree hierarchy is anticipated to be deep, such as a tree view used in file directories, it is suggested to add a file path to help users know where they are in the path\.
 
 ## Basic tree view<a name="tree-view-basic"></a>
 
@@ -29,7 +29,7 @@ Create a simple tree view, with support for showing branch lines\.
 
 For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [Lumberyard Qt control gallery tool](uidev-control-gallery.md), then examine the source code for that page found in your Lumberyard dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/TreeView.h>
@@ -51,8 +51,8 @@ AzQtComponents::TreeView::setBranchLinesEnabled(treeView, true);
 ## C\+\+ API reference<a name="tree-view-api-ref"></a>
 
 For details on the **tree view** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::TreeView](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tree_view.html) 
++  [AzQtComponents::TreeView](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tree_view.html)
 
 Relevant Qt documentation includes the following topics:
-+  [QTreeView Class](https://doc.qt.io/qt-5/qtreeview.html) 
-+  [QAbstractListModel Class](https://doc.qt.io/qt-5/qabstractlistmodel.html) 
++  [QTreeView Class](https://doc.qt.io/qt-5/qtreeview.html)
++  [QAbstractListModel Class](https://doc.qt.io/qt-5/qabstractlistmodel.html)

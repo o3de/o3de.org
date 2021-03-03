@@ -19,9 +19,9 @@ A tab can also display an action toolbar, where action buttons can be added and 
 
 Follow these guidelines as you design your UI with tabs:
 
-1.  Present tabs as a single row above their associated content\. 
+1.  Present tabs as a single row above their associated content\.
 
-1.  Tab labels should succinctly describe the content within\. 
+1.  Tab labels should succinctly describe the content within\.
 
 ## Basic tab<a name="tab-basic"></a>
 
@@ -29,9 +29,9 @@ Follow these guidelines as you design your UI with tabs:
 
 Create a simple tab widget with movable, closeable tabs and an action in the action toolbar\.
 
-Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class\. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`\. You can add your customized toolbar using the tab widget’s `setActionToolBar()` function\.
+Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class\. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`\. You can add your customized toolbar using the tab widget's `setActionToolBar()` function\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/Widgets/TabWidget.h>
@@ -68,10 +68,10 @@ tabWidget->addAction(action1);
 
 ## C\+\+ API reference<a name="tab-api-ref"></a>
 
-For details on the **tab** API’s, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::TabWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget.html) 
-+  [AzQtComponents::TabWidgetActionToolBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget_action_tool_bar.html) 
+For details on the **tab** API's, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
++  [AzQtComponents::TabWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget.html)
++  [AzQtComponents::TabWidgetActionToolBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget_action_tool_bar.html)
 
 Relevant Qt documentation includes the following topics:
-+  [QTabBar Class](https://doc.qt.io/qt-5/qtabbar.html) 
-+  [QTabWidget Class](https://doc.qt.io/qt-5/qtabwidget.html) 
++  [QTabBar Class](https://doc.qt.io/qt-5/qtabbar.html)
++  [QTabWidget Class](https://doc.qt.io/qt-5/qtabwidget.html)

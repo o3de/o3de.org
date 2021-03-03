@@ -61,7 +61,7 @@ Markdown doesn't have strict rules about how to process lists. When we moved
 from Jekyll to Hugo, we broke some lists. To fix them, keep the following in
 mind:
 
-- Make sure you indent sub-list items **2 spaces**. 
+- Make sure you indent sub-list items **2 spaces**.
 
 - To end a list and start another, you need a HTML comment block on a new line
   between the lists, flush with the left-hand border. The first list won't end

@@ -5,41 +5,41 @@ title: Lumberyard UI filtered search widget
 ---
 # Lumberyard UI filtered search widget<a name="uidev-filtered-search-component"></a>
 
-Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they’re looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
+Use the **filtered search** widget to give users advanced search options in your Lumberyard UI tools\. You can see this interface in action in Lumberyard tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they're looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
 
 ## Anatomy of the filtered search widget<a name="filtered-search-anatomy"></a>
 
-Entity Outliner in the Lumberyard Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we’re looking for all entities with Script Canvas components\.
+Entity Outliner in the Lumberyard Editor uses multiple filter categories in a filtered search widget to help users find an entity with specific components or settings\. In the following example, we're looking for all entities with Script Canvas components\.
 
 ![\[component filtered search anatomy\]](/images/tools-ui/component-filtered-search-anatomy.png)
 
-1.  **Search field** 
+1.  **Search field**
 
    Users enter search terms here\. In the **Entity Outliner**, they can enter entity names\. For example, in the previous image they might enter the term `Light` to start looking for all entities that have the word "light" in their name\.
 
-1.  **Filter menu button** 
+1.  **Filter menu button**
 
    \(Optional\) Add one or more type filters to your filtered search widget to show the filter menu button\. When users select this button, the filter menu opens\.
 
-1.  **Filter type search field** 
+1.  **Filter type search field**
 
    Users can enter text in this field to narrow the list of filter types shown in the filter menu\.
 
-1.  **Filter type category** 
+1.  **Filter type category**
 
    When adding filter types using the `AddTypeFilter` function, you can specify a category for grouping filter types\.
 
-1.  **Filter type** 
+1.  **Filter type**
 
    Users can select one or more filter types to narrow the search results to show only the results that match the types selected from the filter menu\. You can add filter types, along with a filter type category, using the `AddTypeFilter` function\.
 
-1.  **Applied filters** 
+1.  **Applied filters**
 
    By default, any filters that users select from the filter menu will appear under the search field\. You can turn this off by calling `setEnabledFiltersVisible(false)` on your filtered search widget\.
 
    You can also add an icon in front of the name of the applied filter\. See how to do this in the [filtered type icon](#filtered-search-filter-type-icons) example\.
 
-1.  **Search results** 
+1.  **Search results**
 
    Show the search results below the search field\.
 
@@ -49,7 +49,7 @@ Entity Outliner in the Lumberyard Editor uses multiple filter categories in a fi
 
 The following example demonstrates how to create a simple filtered search widget\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/FilteredSearchWidget.h>
@@ -83,7 +83,7 @@ connect(filteredSearchWidget, &AzQtComponents::FilteredSearchWidget::TypeFilterC
 
 Add optional icons to your filter types using the `extraIconFilename` property of the `AzQtComponents::SearchTypeFilter`\.
 
- **Example** 
+ **Example**
 
 ```
 #include <AzQtComponents/Components/FilteredSearchWidget.h>
@@ -108,7 +108,7 @@ for (const auto& filterType : filterTypes)
 
 Use `setTextFilterFillsWidth(false)` to limit the width of the search field and prevent it from expanding to the full width of the widget\.
 
- **Example** 
+ **Example**
 
 ```
 filteredSearchWidget->setTextFilterFillsWidth(false);
@@ -117,4 +117,4 @@ filteredSearchWidget->setTextFilterFillsWidth(false);
 ## C\+\+ API reference<a name="filtered-search-api-ref"></a>
 
 For details on the **filtered search** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::FilteredSearchWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_filtered_search_widget.html) 
++  [AzQtComponents::FilteredSearchWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_filtered_search_widget.html)

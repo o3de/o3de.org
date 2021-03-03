@@ -14,7 +14,7 @@ These tools are available in the **Tools** menu of the **Lumberyard Editor**\.
 
 With **Animation Editor**, build animated *behaviors* for your *actors*\.
 
-Use the Animation Editor to build animation loops and set up smooth transitions between them\. To create behaviors, begin by loading an actor, which is a skinned mesh, and its corresponding animations\. The animations are added to *motion sets*\. You create *motion graphs* using motion sets that can blend animation based on states and events\. The motion graphs that you create define your actor’s behaviors\.
+Use the Animation Editor to build animation loops and set up smooth transitions between them\. To create behaviors, begin by loading an actor, which is a skinned mesh, and its corresponding animations\. The animations are added to *motion sets*\. You create *motion graphs* using motion sets that can blend animation based on states and events\. The motion graphs that you create define your actor's behaviors\.
 
 ## FBX Settings<a name="tool-fbx-settings-editor"></a>
 
@@ -35,14 +35,14 @@ To customize `.fbx` settings, find the asset in **Asset Browser**\. Right\-click
 When you export or copy image files to a directory in your current game project, Asset Processor detects the files\. Using these files as input, Lumberyard calculates default settings\. These settings specify how Asset Processor converts the files into the appropriate textures\.
 
 To customize the texture settings, find the image asset in **Asset Browser**\. Right\-click the asset and select **Edit Image Settings** to open **Texture Settings Editor**\. In **Texture Settings Editor**, you can choose from presets based on the texture type and specify settings for various platforms\. **Texture Settings Editor** displays a preview image of the texture so you can view the settings results\.
-+  `.bmp` 
-+  `.gif` 
-+  `.jpg` 
-+  `.jpeg` 
-+  `.png` 
-+  `.tga` 
-+  `.tif` 
-+  `.tiff` 
++  `.bmp`
++  `.gif`
++  `.jpg`
++  `.jpeg`
++  `.png`
++  `.tga`
++  `.tif`
++  `.tiff`
 
 ## Asset Editor<a name="tool-asset-editor"></a>
 
@@ -90,7 +90,7 @@ Lumberyard integrates NVIDIA PhysX for real\-time physics simulation\. With **Ph
 
 Program logic and behaviors visually with **Script Canvas**\.
 
- **Script Canvas** is one of Lumberyard’s most powerful tools\. With **Script Canvas**, you can create behaviors, functions, and logic in a visual programming environment\. **Script Canvas** is designed to use Lumberyard’s serialization, reflection, modularization, and EBus messaging systems\. It’s tightly integrated with Lumberyard’s component entity system and built on the `AzCore` library\. This means that you can create event\-driven logic and behaviors without programming experience\.
+ **Script Canvas** is one of Lumberyard's most powerful tools\. With **Script Canvas**, you can create behaviors, functions, and logic in a visual programming environment\. **Script Canvas** is designed to use Lumberyard's serialization, reflection, modularization, and EBus messaging systems\. It's tightly integrated with Lumberyard's component entity system and built on the `AzCore` library\. This means that you can create event\-driven logic and behaviors without programming experience\.
 
 ## Terrain Editor<a name="tool-terrain-editor"></a>
 
