@@ -186,7 +186,9 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
     *Note: Replace `<atom-build>` with your path to the Atom build folder.*
 
+
 7. Open the generated Xcode solution located in the folder */dev/mac_xcode* and use it to build and deploy to your device.
+
    
 8. Test out the various RHI, RPI, and Feature samples.  
 
