@@ -1,6 +1,6 @@
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-copyright = "Linux Foundation"
+copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
 
 enableGitInfo = true
 
@@ -19,9 +19,23 @@ navbar = "o3de-color.png"
 
 [[params.social]]
 name = "Twitter"
-color = "#00aced"
-url = "https://twitter.com/o3de"
+url = "#"
 icon = "fab fa-twitter"
+
+[[params.social]]
+name = "GitHub"
+url = "https://github.com/o3de"
+icon = "fab fa-github"
+
+[[params.social]]
+name = "Discord"
+url = "#"
+icon = "fas fa-envelope"
+
+[[params.social]]
+name = "Slack"
+url = "#"
+icon = "fab fa-slack"
 
 [[params.fonts]]
 name = "Open Sans"
