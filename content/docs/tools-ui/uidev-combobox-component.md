@@ -1,9 +1,9 @@
 ---
-description: ' Learn how to use the Lumberyard UI 2.0 combobox component in Amazon
-  Lumberyard gems and tools. '
-title: Lumberyard UI combobox component
+description: ' Learn how to use the O3DE UI 2.0 combobox component in Amazon
+  O3DE gems and tools. '
+title: O3DE UI combobox component
 ---
-# Lumberyard UI combobox component<a name="uidev-combobox-component"></a>
+# O3DE UI combobox component<a name="uidev-combobox-component"></a>
 
 Use comboboxes to offer users a list of options from a dropdown menu\. You define whether or not the input box is editable\. An editable input box allows the user to type in a value *or* select a value from the dropdown menu\.
 
@@ -89,7 +89,7 @@ AzQtComponents::ComboBox::setValidator(comboBox, validator);
 
 ## C\+\+ API reference<a name="combobox-api-ref"></a>
 
-For details on the **combobox** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **combobox** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::ComboBox](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_combo_box.html)
 
 Relevant Qt documentation includes the following topics:

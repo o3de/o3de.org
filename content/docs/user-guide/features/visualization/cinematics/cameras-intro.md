@@ -1,5 +1,5 @@
 ---
-description: ' See the following topics for working with cinematic cameras in Amazon Lumberyard. '
+description: ' See the following topics for working with cinematic cameras in Open 3D Engine. '
 title: Adding a Camera
 ---
 # Adding a Camera {#cinematics-cameras-intro}

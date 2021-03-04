@@ -1,6 +1,6 @@
 ---
 description: ' Use a check box component to make an element behave like a check box
-  in Lumberyard''s UI Editor. '
+  in O3DE''s UI Editor. '
 title: Checkbox
 ---
 # Checkbox {#ui-editor-checkbox-components}

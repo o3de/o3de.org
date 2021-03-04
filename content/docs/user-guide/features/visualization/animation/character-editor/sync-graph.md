@@ -1,6 +1,6 @@
 ---
 description: ' Use synchronized animation graphs to synchronize animation between
-  actors in Amazon Lumberyard. '
+  actors in Open 3D Engine. '
 title: 'Synchronizing Animation Graphs: Example'
 ---
 # Synchronizing Animation Graphs: Example {#char-animation-editor-sync-graph}
@@ -19,7 +19,7 @@ This topic describes the following main steps for synchronizing two animation gr
 
 1. Add a servant parameter action to the primary graph to send change events to the secondary graph\.
 
-1. Synchronize the graphs by using Lumberyard's [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md) system and Lua script\.
+1. Synchronize the graphs by using O3DE's [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md) system and Lua script\.
 
 **Note**
 For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md)\.
@@ -225,7 +225,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 1. Placing a Lua script component and Lua script on the primary entity\.
 
-The Lua scripts synchonize the two graphs by handling animation graph events in Lumberyard's [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md) system\.
+The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md) system\.
 
 ### Getting Input from the Player {#char-animation-editor-sync-graph-get-input-from-the-player}
 
@@ -245,7 +245,7 @@ To gather these inputs, the example adds [Input](/docs/user-guide/features/compo
 
 To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/features/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
 
-Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in Lumberyard Editor to create an input bindings file\. For more information, see [Working with the Input Component](/docs/user-guide/features/interactivity/input/working-with-the-input-component.md)\.
+Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in O3DE Editor to create an input bindings file\. For more information, see [Working with the Input Component](/docs/user-guide/features/interactivity/input/working-with-the-input-component.md)\.
 
 **Getting Keyboard Input to Control Graph Synchronization**
 In the example, the gun entity has an Input component\. The Input component uses a `synctest.inputbindings` asset to bind keyboard inputs **1** and **2** to the `SyncControl` event\. The `SyncControl` event controls the sync mode, which determines whether or not the gun fires when the robot fires\.

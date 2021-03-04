@@ -1,5 +1,5 @@
 ---
-description: ' Learn about the Amazon Lumberyard audio translation layer. '
+description: ' Learn about the Open 3D Engine audio translation layer. '
 title: Audio Translation Layer
 ---
 # Audio Translation Layer {#audio-translation-layer}
@@ -8,7 +8,7 @@ The Audio Translation Layer \(ATL\) manages the state of the audio system and re
 
 ## Audio Controls Editor {#audio-architecture-ace}
 
-The **Audio Controls Editor** \(ACE\) is a Lumberyard Editor plugin that manages the mappings between game\-side ATL controls and their audio middleware equivalents\.
+The **Audio Controls Editor** \(ACE\) is a O3DE Editor plugin that manages the mappings between game\-side ATL controls and their audio middleware equivalents\.
 
 The ATL controls support a flexible workflow for a project, such as the following cases:
 + You are ready to integrate sounds into your game, but audio middleware content is not yet created\. You can first create the ATL controls and integrate them into the game\. When audio content is complete, you can then connect the existing ATL controls to the new middleware controls\.

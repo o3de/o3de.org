@@ -1,5 +1,5 @@
 ---
-description: ' Use the Script Canvas component to add a script to an entity in Amazon Lumberyard. '
+description: ' Use the Script Canvas component to add a script to an entity in Open 3D Engine. '
 title: Script Canvas
 ---
 # Script Canvas {#component-script-canvas}

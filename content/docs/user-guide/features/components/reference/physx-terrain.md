@@ -1,5 +1,5 @@
 ---
-description: ' Use the PhysX Terrain component to create a physics collider in Amazon Lumberyard. '
+description: ' Use the PhysX Terrain component to create a physics collider in Open 3D Engine. '
 title: PhysX Terrain
 ---
 # PhysX Terrain {#component-physx-terrain}
@@ -27,7 +27,7 @@ For more information about using PhysX components, see [Simulating physics behav
 | Collision Layer |  Specifies on which **Collision Layer** the terrain exists\. You can configure **Collision Layer** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration.md)\.  |
 | Collision Group |  Specifies the group of layers in which the terrain collides\. You can configure **Collision Group** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration.md)\.  |
 | HeightField Asset |  A read\-only parameter that specifies the height field asset that contains the terrain\. This property can't be changed\.  |
-| Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in Lumberyard Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.  |
+| Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in O3DE Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.  |
 
 ## Creating a PhysX Terrain Collider {#creating-physx-terrain-collider}
 
@@ -35,7 +35,7 @@ As a best practice, create a top\-level entity in your level and add the **PhysX
 
 **To create a PhysX Terrain Collider**
 
-1. In Lumberyard Editor, create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
+1. In O3DE Editor, create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. Enter a name for the entity, such as *terrain*\.
 

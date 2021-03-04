@@ -1,6 +1,6 @@
 ---
 description: ' Use the Simple Motion component to add motion effects to your actor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Simple Motion
 ---
 # Simple Motion {#component-simple-motion}
@@ -25,7 +25,7 @@ For creating cinematics with the **Simple Motion** component, see [Creating Char
 
 | Property | Description |
 | --- | --- |
-|  **Preview in Editor**  | Plays the motion in Lumberyard Editor\.  |
+|  **Preview in Editor**  | Plays the motion in O3DE Editor\.  |
 | Motion |  Specifies the motion that you want the actor to play\.  |
 | Loop motion |  Runs the animation continuously\.  |
 | Retarget motion |  Allows motion that was created with an actor that was configured with specific bone lengths to be played on another actor with different bone lengths\. When applied, the motion does not affect bone lengths\. The skeleton must follow the same hierarchy and the bone names must be identical to work properly\.   |

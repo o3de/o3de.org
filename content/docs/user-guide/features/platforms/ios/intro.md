@@ -1,14 +1,14 @@
 ---
-description: ' Use Amazon Lumberyard to build games for iOS devices. '
+description: ' Use Open 3D Engine to build games for iOS devices. '
 title: iOS Support
 ---
 # iOS Support {#ios-intro}
 
-You can use Lumberyard to create applications for [iOS devices](/docs/user-guide/features/platforms/mobile-support.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
+You can use O3DE to create applications for [iOS devices](/docs/user-guide/features/platforms/mobile-support.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
 
-Lumberyard includes four iOS\-supported sample projects that you can use to learn how to build assets for iOS games using Asset Processor, build shaders using the remote shader compiler, and build and deploy iOS apps using the Lumberyard build tools\. For more information, see [Using Lumberyard sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
+O3DE includes four iOS\-supported sample projects that you can use to learn how to build assets for iOS games using Asset Processor, build shaders using the remote shader compiler, and build and deploy iOS apps using the O3DE build tools\. For more information, see [Using O3DE sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
 
-Lumberyard has the following minimum requirements for iOS:
+O3DE has the following minimum requirements for iOS:
 
 
 ****
@@ -25,24 +25,24 @@ Lumberyard has the following minimum requirements for iOS:
 To build apps for iOS devices, you must have the following:
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
 + iOS 13 SDK or later
-+ [Lumberyard Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
-+ Lumberyard installed on a Windows computer
-+ Lumberyard installed on a macOS computer
-+ Familiarity with Lumberyard Editor, the Shader Compiler, and Asset Processor
++ [O3DE Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
++ O3DE installed on a Windows computer
++ O3DE installed on a macOS computer
++ Familiarity with O3DE Editor, the Shader Compiler, and Asset Processor
 + Ability to build from a command line tool
 + Previously built the macOS code and optionally the PC code
 
-To set up your environment, use the Lumberyard Setup Assistant \(located in the `lumberyard_version\dev\Tools\LmbrSetup\Mac` directory\) to select the following:
+To set up your environment, use the O3DE Setup Assistant \(located in the `lumberyard_version\dev\Tools\LmbrSetup\Mac` directory\) to select the following:
 + **Compile the game code**
 + **Compile the engine and asset pipeline**
-+ **Compile the Lumberyard Editor and tools**
++ **Compile the O3DE Editor and tools**
 + **Compile for iOS devices**
 
 The Setup Assistant will install the required third\-party software and SDKs\.
 
-## Lumberyard Binaries {#ios-support-lumberyard-binaries}
+## O3DE Binaries {#ios-support-lumberyard-binaries}
 
-During installation, Lumberyard creates the following directories for its binaries:
+During installation, O3DE creates the following directories for its binaries:
 
 **Mac**
 + `BinMac64`
@@ -50,21 +50,21 @@ During installation, Lumberyard creates the following directories for its binari
 **PC**
 + `Bin64vc141` \(for binaries generated with Visual Studio 2017\)
 
-## Anatomy of a Lumberyard iOS App {#ios-support-lumberyard-ios-app-anatomy}
+## Anatomy of a O3DE iOS App {#ios-support-lumberyard-ios-app-anatomy}
 
-The Lumberyard build system can generate the following types of applications:
+The O3DE build system can generate the following types of applications:
 + Development app
 + VFS app
 + Release app
 
 **Note**
-Lumberyard Editor is currently supported on Windows only\. You must export each level of your game project prior to using Asset Processor for your assets\.
+O3DE Editor is currently supported on Windows only\. You must export each level of your game project prior to using Asset Processor for your assets\.
 
 ### Development App {#lumberyard-ios-app-anatomy-development-app}
 
 You will use a Development app throughout most of your development cycle\. Your app must connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor\. Asset Processor generates the Development app executable and its assets, which can be loose files or PAK files\.
 
-![\[The Development app contains the Lumberyard executable and assets.\]](/images/user-guide/mobile/ios/ios_development_app.png)
+![\[The Development app contains the O3DE executable and assets.\]](/images/user-guide/mobile/ios/ios_development_app.png)
 
 ![\[The Development app connects to the remote shader compiler.\]](/images/user-guide/mobile/ios/ios_development_scenario_01.png)
 
@@ -74,7 +74,7 @@ You can use the VFS app with the Virtual Filing System \(VFS\)\. While similar t
 
 Your app must also connect to the Remote Shader Compiler in order to compile the shaders into a format that the iOS device can read\. Your app connects to the shader compiler over WiFi or through Asset Processor on startup\. You can optionally choose to direct traffic to and from the Remote Compiler through Asset Processor\.
 
-![\[The Virtual Filing System (VFS) app contains the Lumberyard executable, bootstrap.cfg file, and the game.xml file.\]](/images/user-guide/mobile/ios/ios_vfs_app.png)
+![\[The Virtual Filing System (VFS) app contains the O3DE executable, bootstrap.cfg file, and the game.xml file.\]](/images/user-guide/mobile/ios/ios_vfs_app.png)
 
 ![\[The VFS app connects to the Asset Processor on startup.\]](/images/user-guide/mobile/ios/ios_development_scenario_02.png)
 
@@ -82,17 +82,17 @@ Your app must also connect to the Remote Shader Compiler in order to compile the
 
 The Release app contains the executable and all binaries and assets that are required for your app to run\. The assets and shaders must be PAK files because the app will not connect to the Remote Shader Compiler or Asset Processor\.
 
-![\[The Release app contains the Lumberyard binaries, asset .pak files, and shader .pak files.\]](/images/user-guide/mobile/ios/ios_release_app.png)
+![\[The Release app contains the O3DE binaries, asset .pak files, and shader .pak files.\]](/images/user-guide/mobile/ios/ios_release_app.png)
 
 **Topics**
 + [Prerequisites](#ios-prerequisites)
-+ [Lumberyard Binaries](#ios-support-lumberyard-binaries)
-+ [Anatomy of a Lumberyard iOS App](#ios-support-lumberyard-ios-app-anatomy)
++ [O3DE Binaries](#ios-support-lumberyard-binaries)
++ [Anatomy of a O3DE iOS App](#ios-support-lumberyard-ios-app-anatomy)
 + [Quick Start: Running the Samples Project on iOS Devices](/docs/user-guide/features/platforms/ios/quick-start.md)
 + [Building Your iOS App](/docs/user-guide/features/platforms/ios/game-building.md)
 + [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)
 + [Using Virtual File System with iOS](/docs/user-guide/features/platforms/ios/virtual-file-system.md)
 + [Universal Remote Console](/docs/user-guide/features/engine/remote-console.md)
 + [Sharing Assets Between Windows and macOS](/docs/user-guide/features/platforms/ios/sharing-assets-between-mac-pc.md)
-+ [Add iOS Frameworks to a Lumberyard project](/docs/user-guide/features/platforms/ios/custom-frameworks.md)
++ [Add iOS Frameworks to a O3DE project](/docs/user-guide/features/platforms/ios/custom-frameworks.md)
 + [iOS Debugging and Troubleshooting](/docs/user-guide/features/platforms/ios/debugging-troubleshooting.md)

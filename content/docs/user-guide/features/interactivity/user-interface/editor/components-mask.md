@@ -1,6 +1,6 @@
 ---
 description: ' Add the Mask component to an element to reveal parts of the child element
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Mask
 ---
 # Mask {#ui-editor-components-mask}
@@ -11,7 +11,7 @@ You can add a **Mask** component to an element to reveal only those parts of the
 
 1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.
 
-1. When Lumberyard Editor opens, expand the `UI` directory and open the level **UiFeatures**\.
+1. When O3DE Editor opens, expand the `UI` directory and open the level **UiFeatures**\.
 
 1. Press **Ctrl\+G** to play the game\.
 

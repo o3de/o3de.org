@@ -1,16 +1,16 @@
 ---
-description: ' Specify how fonts render in Amazon Lumberyard''s UI system. '
+description: ' Specify how fonts render in Open 3D Engine''s UI system. '
 title: Configuring Font Rendering Quality
 ---
 # Configuring Font Rendering Quality {#ui-fonts-rendering}
 
-Lumberyard's built\-in UI system, `LyShine`, renders text using font textures\. The quality of the on\-screen text is affected by the font texture size, the number of character slots in the font texture, and the size of the text itself when rendered on the screen\.
+O3DE's built\-in UI system, `LyShine`, renders text using font textures\. The quality of the on\-screen text is affected by the font texture size, the number of character slots in the font texture, and the size of the text itself when rendered on the screen\.
 
 Use the procedures in this section to configure font size and texture to achieve quality text rendering\.
 
 ## Font Texture Width and Height Attributes {#ui-fonts-texture-attributes}
 
-Fonts are defined in XML by `*.font` files\. The XML in a `.font` file defines various parameters, such as the path to the source TTF/OTF asset and important rendering properties\. The font file `Engine/Fonts/default-ui.font` included in the Lumberyard project has the following content\.
+Fonts are defined in XML by `*.font` files\. The XML in a `.font` file defines various parameters, such as the path to the source TTF/OTF asset and important rendering properties\. The font file `Engine/Fonts/default-ui.font` included in the O3DE project has the following content\.
 
 ```
 <fontshader>
@@ -40,9 +40,9 @@ In this example, the font texture has a resolution of 512x256\. This resolution 
 
 ## Character Slots {#ui-fonts-character-slots}
 
-In Lumberyard, a font texture is logically divided into equally sized slots\. In each slot, there is a uniform amount of space for each character \(glyph\)\. By default \(without additional configuration\), there are 128 unique characters \(16 rows \* 8 columns\)\.
+In O3DE, a font texture is logically divided into equally sized slots\. In each slot, there is a uniform amount of space for each character \(glyph\)\. By default \(without additional configuration\), there are 128 unique characters \(16 rows \* 8 columns\)\.
 
-If you support a language with many unique characters, such as Chinese, Japanese, or Korean, the default number of slots \(128\) might not be adequate for your needs, requiring further configuration\. Otherwise, 128 unique characters might be adequate for most languages\. The following information about character slots describes in further detail the font rendering pipeline in Lumberyard\.
+If you support a language with many unique characters, such as Chinese, Japanese, or Korean, the default number of slots \(128\) might not be adequate for your needs, requiring further configuration\. Otherwise, 128 unique characters might be adequate for most languages\. The following information about character slots describes in further detail the font rendering pipeline in O3DE\.
 
 When rendering a string of characters, the number of *unique* characters in a string is different from the number of characters in a string \(its length\)\. The number of character slots in a font texture imposes a limitation only on the number of unique characters that can be rendered in a single frame\.
 

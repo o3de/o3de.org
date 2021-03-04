@@ -1,18 +1,18 @@
 ---
-description: ' See the layout of the Script Canvas editor in Lumberyard Editor. '
+description: ' See the layout of the Script Canvas editor in O3DE Editor. '
 title: 'Script Canvas Editor Interface'
 ---
 # Script Canvas Editor Interface {#script-canvas-editor-interface}
 
-You can open the **Script Canvas** editor from Lumberyard Editor\.
+You can open the **Script Canvas** editor from O3DE Editor\.
 
 **To open the Script Canvas editor**
 
-1. In Lumberyard Editor, choose **Tools**, **Script Canvas**\.
+1. In O3DE Editor, choose **Tools**, **Script Canvas**\.
 
 1. Choose **File**, **New Script** or drag a node from the **Node Palette** and drop it on the canvas\.
 
-![\[Use the Script Canvas editor in Lumberyard to create connections for nodes.\]](/images/user-guide/scripting/script-canvas/script-canvas-user-interface.png)
+![\[Use the Script Canvas editor in O3DE to create connections for nodes.\]](/images/user-guide/scripting/script-canvas/script-canvas-user-interface.png)
 
 In the **Script Canvas** editor, you can do the following:
 

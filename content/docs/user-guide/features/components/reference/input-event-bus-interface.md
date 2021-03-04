@@ -1,5 +1,5 @@
 ---
-description: ' Work with the Input component EBus (event bus) in Amazon Lumberyard. '
+description: ' Work with the Input component EBus (event bus) in Open 3D Engine. '
 title: Input Component EBus Interface
 ---
 # Input Component EBus Interface {#component-input-event-bus-interface}

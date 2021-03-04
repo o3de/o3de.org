@@ -1,5 +1,5 @@
 ---
-description: ' The Amazon Lumberyard PhysX Ball Joint component. '
+description: ' The Open 3D Engine PhysX Ball Joint component. '
 title: PhysX Ball Joint component
 ---
 # PhysX Ball Joint component {#component-physx-ball-joint}

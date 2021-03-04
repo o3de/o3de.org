@@ -1,5 +1,5 @@
 ---
-description: ' Amazon Lumberyard FBX Settings Meshes tab export properties and modifiers. '
+description: ' Open 3D Engine FBX Settings Meshes tab export properties and modifiers. '
 title: FBX Settings Meshes tab
 ---
 # FBX Settings Meshes tab {#fbx-settings-meshes-tab}
@@ -196,7 +196,7 @@ Set a thickness value for all branches to define the amount of bending\. Thickne
 ![\[The FBX Settings Meshes tab CryPhysics Proxy modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cryphysics-proxy-1.25.png)
 
 **Important**
-The legacy physics system will be deprecated in a future Lumberyard release\. Use the PhysX system instead\.
+The legacy physics system will be deprecated in a future O3DE release\. Use the PhysX system instead\.
 
 Select meshes to use as proxy physics meshes for the legacy physics system\.
 

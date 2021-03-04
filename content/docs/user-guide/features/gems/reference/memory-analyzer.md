@@ -1,12 +1,12 @@
 ---
-description: ' Learn to profile memory usage in Amazon Lumberyard projects with the <guilabel>Asset Memory Analyzer</guilabel>. '
+description: ' Learn to profile memory usage in Open 3D Engine projects with the <guilabel>Asset Memory Analyzer</guilabel>. '
 title: Asset Memory Analyzer Gem
 ---
 # Asset Memory Analyzer Gem {#asset-memory-analyzer-gem}
 
 Resource management is crtitcal, particularly on platforms where memory is limited. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project\. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs\. It is an indispensable tool to balance memory usage and get the best performance for your project\.
 
-The **Asset Memory Analyzer** is an Amazon Lumberyard Gem that displays a table of heap and VRAM memory allocations per asset through the **ImGUI** \(Immediate Mode Graphical User Interface\) overlay\. In addition to live display of memory allocations for assets loaded in the project, the **Asset Memory Analyzer** can export allocation data to `JSON` and `CSV` files\.
+The **Asset Memory Analyzer** is an Open 3D Engine Gem that displays a table of heap and VRAM memory allocations per asset through the **ImGUI** \(Immediate Mode Graphical User Interface\) overlay\. In addition to live display of memory allocations for assets loaded in the project, the **Asset Memory Analyzer** can export allocation data to `JSON` and `CSV` files\.
 - [Asset Memory Analyzer Gem {#asset-memory-analyzer-gem}](#asset-memory-analyzer-gem-asset-memory-analyzer-gem)
   - [Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}](#enable-the-asset-memory-analyzer-enable-asset-memory-analyzer)
   - [View Live Asset Memory Analysis with **ImGUI** {#view-live-asset-memory-analysis}](#view-live-asset-memory-analysis-with-imgui-view-live-asset-memory-analysis)
@@ -44,7 +44,7 @@ To use the **Asset Memory Analyzer**, enable asset scope tracking, configure and
 
 To view live asset memory allocation, enable the **ImGUI** overlay during gameplay and choose **Asset Memory Analyzer** in the **ImGUI** window\.
 
-1. In the Lumberyard Editor, press Ctrl\+G or press the **Play** button to run your project\.
+1. In the O3DE Editor, press Ctrl\+G or press the **Play** button to run your project\.
 
 1. Press the Home key to open the ImGUI overlay window\.
 
@@ -80,7 +80,7 @@ Due to the limitations of the `CSV` format, only a top\-level overview of assets
 
 ## View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}
 
-`JSON` snapshots can be viewed in a browser with a web viewer provided with Lumberyard\. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`\. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it\. This displays the contents of the file in an expandable table\.
+`JSON` snapshots can be viewed in a browser with a web viewer provided with O3DE\. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`\. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it\. This displays the contents of the file in an expandable table\.
 
 ![\[The Asset Memory Viewer displaying a JSON snapshot in a browser.\]](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-D-1.22.png)
 
@@ -196,7 +196,7 @@ class MyEvents : public AZ::EBusTraits
 };
 ```
 
-Some Lumberyard EBuses use this feature, such as the **TickBus**\. If you find others that should use it, please add them\! You should not default to using this `EventProcessingPolicy` if it is not applicable\.
+Some O3DE EBuses use this feature, such as the **TickBus**\. If you find others that should use it, please add them\! You should not default to using this `EventProcessingPolicy` if it is not applicable\.
 
 Instrumentation does create some overhead which can negatively affect your project's performance\.
 

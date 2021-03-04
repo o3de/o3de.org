@@ -1,5 +1,5 @@
 ---
-description: Add new font assets to your Amazon Lumberyard game UI.
+description: Add new font assets to your Open 3D Engine game UI.
 title: Adding New Fonts
 ---
 # Adding New Fonts {#ui-fonts-adding-fonts}
@@ -12,7 +12,7 @@ For each new font to add, you need the following files:
 
 1. Save the font asset \(`.ttf` or `.otf` file\) to your game project directory, such as `dev\SamplesProject\Font`\.
 
-1. Copy an existing font `.font` file into your game project `Font` directory\. The following directories \(included in the Lumberyard project\) contain font `.font` files for reference:
+1. Copy an existing font `.font` file into your game project `Font` directory\. The following directories \(included in the O3DE project\) contain font `.font` files for reference:
    + `dev\Engine\Fonts\`
    + `dev\SamplesProject\Fonts\`
 

@@ -103,4 +103,4 @@ Specify the end keyframe of the animation to export\.
 
 ![\[The FBX Settings Motions tab Scale motion modifier.\]](/images/user-guide/fbx/ui-fbx-settings-motion-modifier-scale-motion-1.25.png)
 
-The **Scale factor** modifier sets a uniform scale for the **Motion**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than Lumberyard\.
+The **Scale factor** modifier sets a uniform scale for the **Motion**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than O3DE\.

@@ -1,6 +1,6 @@
 ---
 description: Configure font properties such as asset path and effects for your game
-  UI in Amazon Lumberyard.
+  UI in Open 3D Engine.
 title: Configuring Font Properties
 ---
 # Configuring Font Properties {#ui-fonts-properties}

@@ -21,7 +21,7 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 
 **To add the Simple Motion component in the Track View editor**
 
-1. In Lumberyard Editor, right\-click in the viewport and choose **Create entity**\.
+1. In O3DE Editor, right\-click in the viewport and choose **Create entity**\.
 
 1. Enter a name for the entity\.
 
@@ -35,7 +35,7 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
    Your entity should look like the following\.
 ![\[Components for the entity to add to the track view sequence.\]](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-1.png)
 
-1. In Lumberyard Editor, choose **Tools**, **Track View**\.
+1. In O3DE Editor, choose **Tools**, **Track View**\.
 
 1. Click the **Add Sequence **icon ![\[Add track view sequence icon\]](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-2.png), enter a sequence name, and then click **OK**\.
 

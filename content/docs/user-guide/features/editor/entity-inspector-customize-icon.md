@@ -1,5 +1,5 @@
 ---
-description: ' Customize the component icon for an entity in Amazon Lumberyard. '
+description: ' Customize the component icon for an entity in Open 3D Engine. '
 title: Customizing the Entity Icon
 ---
 # Customizing the Entity Icon {#component-entity-inspector-customize-icon}

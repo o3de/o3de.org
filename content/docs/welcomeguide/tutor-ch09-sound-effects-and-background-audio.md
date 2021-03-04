@@ -1,10 +1,10 @@
 ---
-description: ' Learn how to add sound effects and background audio in Amazon Lumberyard. '
+description: ' Learn how to add sound effects and background audio in Open 3D Engine. '
 title: 'Tutorial Nine: Add sound effects and background audio'
 ---
 # Tutorial Nine: Add sound effects and background audio<a name="tutor-ch09-sound-effects-and-background-audio"></a>
 
-In this tutorial, you will add a squawking chicken sound effect to the player jump action, and ambient farm noises that will loop in the background\. You will learn how to use **Wwise** to import sound from wav files, create sound events, and generate a soundbank with these events for use in Lumberyard\. Then you will use the **Audio Controls Editor** in Lumberyard to map controls to your sound events\. Finally, you will create audio triggers in **Lumberyard Editor** to play the sounds in response to game events\.
+In this tutorial, you will add a squawking chicken sound effect to the player jump action, and ambient farm noises that will loop in the background\. You will learn how to use **Wwise** to import sound from wav files, create sound events, and generate a soundbank with these events for use in O3DE\. Then you will use the **Audio Controls Editor** in O3DE to map controls to your sound events\. Finally, you will create audio triggers in **O3DE Editor** to play the sounds in response to game events\.
 
 ## Prerequisites<a name="tutor-ch09-prerequisites"></a>
 
@@ -12,20 +12,20 @@ Make sure you have completed the following prerequisites before continuing this 
 
 1.  **Install Wwise\.**
 
-   You can use either Wwise LTX \(free version\) or Wwise \(full version\) to complete this tutorial\. Follow the instructions in [Setting up Wwise LTX](/docs/userguide/audio/wwise-using) to install the free version of Wwise\. Or, if you have a license for the full version of Wwise, use the instructions in [Upgrading Wwise LTX to the full version](/docs/userguide/audio/wwise-upgrade) to upgrade the SDK, tutorial project, and tutorial soundbank to use that version of Wwise with Lumberyard\.
+   You can use either Wwise LTX \(free version\) or Wwise \(full version\) to complete this tutorial\. Follow the instructions in [Setting up Wwise LTX](/docs/userguide/audio/wwise-using) to install the free version of Wwise\. Or, if you have a license for the full version of Wwise, use the instructions in [Upgrading Wwise LTX to the full version](/docs/userguide/audio/wwise-upgrade) to upgrade the SDK, tutorial project, and tutorial soundbank to use that version of Wwise with O3DE\.
 
 1.  **Download and build WelcomeGuideTutorials\-v1\.1 or later\.**
 
-   This tutorial requires project assets and gem configurations available only in [WelcomeGuideTutorials\-v1\.1](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) or later\. If you began this tutorial series using an earlier version, you must replace it with the new version\. Be sure to download, unzip, configure, and build the new version before you begin this tutorial\. See [Manage Lumberyard projects with Project Configurator](wg-project-configurator.md) for details on using **Project Configurator** to set up and build your default project\.
+   This tutorial requires project assets and gem configurations available only in [WelcomeGuideTutorials\-v1\.1](https://d3bqhfbip4ze4a.cloudfront.net/tutorials/WelcomeGuideTutorials-v1.1.zip) or later\. If you began this tutorial series using an earlier version, you must replace it with the new version\. Be sure to download, unzip, configure, and build the new version before you begin this tutorial\. See [Manage O3DE projects with Project Configurator](wg-project-configurator.md) for details on using **Project Configurator** to set up and build your default project\.
 
 ## Update your soundbank with Wwise<a name="tutor-ch09-update-soundbank"></a>
 
 In the first part of this audio tutorial, you will use the Wwise project that we have already started for you\. Wwise projects are used to:
 + Import, group, and manage your sound assets
 + Set up sound events that can be called from your game
-+ Generate a soundbank that can be read by Lumberyard's **Audio Controls Editor**
++ Generate a soundbank that can be read by O3DE's **Audio Controls Editor**
 
-We're going to begin with a brief introduction to Wwise, where we'll import a new sound asset and create a new sound event for the game\. Then we'll update the soundbank before we head over to the Lumberyard Editor\. If you are already familiar with all of these features in Wwise and want to skip ahead to the next section on adding sound effects to your game, complete the following tasks first:
+We're going to begin with a brief introduction to Wwise, where we'll import a new sound asset and create a new sound event for the game\. Then we'll update the soundbank before we head over to the O3DE Editor\. If you are already familiar with all of these features in Wwise and want to skip ahead to the next section on adding sound effects to your game, complete the following tasks first:
 + Import `Chicken2.wav` from `WelcomeGuideTutorials\SoundAssets` into the `Chicken_Squawk` container\.
 + Create the `Play_Chicken_Squawk` and `Stop_Chicken_Squawk` events\.
 + Generate the soundbank\.
@@ -36,7 +36,7 @@ For detailed instructions on how to perform those tasks, continue with the follo
 
 1.  In the **Project Launcher** dialog box, choose **Open Other…​**\.
 
-1.  Navigate to the `WelcomeGuideTutorials\Sounds\wwise_project` directory in your Lumberyard installation and select the Wwise project file named `WelcomeGuideTutorials.wproj`\.
+1.  Navigate to the `WelcomeGuideTutorials\Sounds\wwise_project` directory in your O3DE installation and select the Wwise project file named `WelcomeGuideTutorials.wproj`\.
 
    You should now have the WelcomeGuideTutorials Wwise project open in the Wwise project editor\.
 
@@ -71,7 +71,7 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
 
 1.  In the **Audio File Importer** dialog box, choose **Import** to add a second sound effect to the **Chicken\_Squawk** container\. You should now have two sound effects in the container: **Chicken1** and **Chicken2**\. Feel free to adjust the weights of each sound in the container using the controls in the **Contents Editor**\.
 
-1.  For Lumberyard to play these sounds, we need to create Wwise sound events\. Typically, you will create two events for each sound effect: *play* and *stop*\.
+1.  For O3DE to play these sounds, we need to create Wwise sound events\. Typically, you will create two events for each sound effect: *play* and *stop*\.
 
    1.  Right\-click the **Chicken\_Squawk** container, highlight **New event**, and choose **Play**\.
 
@@ -82,7 +82,7 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
       For organizational purposes, feel free to drag and drop these two events to the **SFX** folder if you would like\.
 ![\[Wwise tutorial sound events\]](/images/welcomeguide/wwise-ui-tutorial-events.png)
 
-   We've imported a new sound and created new sound events for the container\. Now we need to save the project and then regenerate the sound bank so that our Lumberyard game can find them\.
+   We've imported a new sound and created new sound events for the container\. Now we need to save the project and then regenerate the sound bank so that our O3DE game can find them\.
 
 1.  Open the **Project** menu and choose **Save**\.
 
@@ -98,14 +98,14 @@ Another way to choose sound asset files for import is to drag the \.wav files fr
 
 ## Add sound effects to your game<a name="tutor-ch09-add-sound-effects-to-game"></a>
 
-Begin the Lumberyard part of this tutorial either with the level you created in [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md), or by opening `ch08_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in Lumberyard, choose **Open Level…​** from the **File** menu in the main menu bar\.
+Begin the O3DE part of this tutorial either with the level you created in [Tutorial Eight: Create environment props with White Box and slices](tutor-ch08-create-props-with-slices.md), or by opening `ch08_barnyard_final` from the `Levels` directory of the **WelcomeGuideTutorials** project\. To open a level in O3DE, choose **Open Level…​** from the **File** menu in the main menu bar\.
 
-1.  This tutorial is written for the default **Lumberyard Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
-![\[Lumberyard select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
+1.  This tutorial is written for the default **O3DE Editor** layout, so make sure this is the layout that you're using\. To set the layout, access the menu bar and select **View**, **Layouts**, and choose **Default Layout**\.
+![\[O3DE select default layout\]](/images/welcomeguide/ui-default-layout-1.25.png)
 
 1.  Open the **Tools** menu, highlight **Other**, and choose the **Audio Controls Editor**\.
 
-   The Audio Controls Editor \(ACE\) maps Audio Translation Layer \(ATL\) controls to sound event controls in your audio engine\. The ACE editor and the ATL specification are modules that are part of the **Audio System** gem, and are designed to be flexible with your choice of audio engine\. To use an audio engine with the ACE, you must have a gem that integrates support for it using the ATL specification\. Support for the Wwise audio engine is included with Lumberyard using the **Wwise Audio Integration** gem\. In this tutorial we have added both the **Audio System** gem and the **Wwise Audio Integration** gem to the project configuration to enable support for Wwise\.
+   The Audio Controls Editor \(ACE\) maps Audio Translation Layer \(ATL\) controls to sound event controls in your audio engine\. The ACE editor and the ATL specification are modules that are part of the **Audio System** gem, and are designed to be flexible with your choice of audio engine\. To use an audio engine with the ACE, you must have a gem that integrates support for it using the ATL specification\. Support for the Wwise audio engine is included with O3DE using the **Wwise Audio Integration** gem\. In this tutorial we have added both the **Audio System** gem and the **Wwise Audio Integration** gem to the project configuration to enable support for Wwise\.
 
    We have already added control mappings for the background sound, the default events, and the preload of the soundbank that you updated earlier in this tutorial\. Open the folders under **ATL Controls** to see these mappings\.
 ![\[Audio Controls Editor current mappings\]](/images/welcomeguide/ui-audio-incomplete-atl-mapping-1.27.png)
@@ -115,9 +115,9 @@ Begin the Lumberyard part of this tutorial either with the level you created in 
 1.  To play the chicken squawking sound, you need to add new mappings to the corresponding *play* and *stop* sound events that were defined in Wwise\. To map ATL controls to these events, drag both the **Play\_Chicken\_Squawk** event and the **Stop\_Chicken\_Squawk** event from the **Wwise Controls** column to the **SFX** folder in the **ATL Controls** column\.
 ![\[Audio Controls Editor completed mappings\]](/images/welcomeguide/ui-audio-completed-atl-mapping-1.27.png)
 
-1.  Open the **File** menu and choose **Save All** to save your updated ATL mappings\. You can also close the Audio Controls Editor, since the remainder of this tutorial will be using the Lumberyard Editor\.
+1.  Open the **File** menu and choose **Save All** to save your updated ATL mappings\. You can also close the Audio Controls Editor, since the remainder of this tutorial will be using the O3DE Editor\.
 
-1.  After you first add audio support to your project, or when you update your soundbank in Wwise while the Lumberyard Editor is running, you should referesh the Lumberyard audio system\. Open the **Game** menu in the Lumberyard Editor and choose **Audio**, then **Refresh Audio**\.
+1.  After you first add audio support to your project, or when you update your soundbank in Wwise while the O3DE Editor is running, you should referesh the O3DE audio system\. Open the **Game** menu in the O3DE Editor and choose **Audio**, then **Refresh Audio**\.
 
 1.  Now we are ready to add an audio trigger to the chicken\. We are going to make the chicken squawk when the *jump* key is pressed\. Open **Script Canvas** and open the chicken movement graph that you created in an earlier chapter\. One way to open this graph efficiently is to select the chicken entity, find its **Script Canvas** component in **Entity Inspector**, and then click on the **Open in Script Canvas Editor** button\.
 
@@ -133,7 +133,7 @@ Begin the Lumberyard part of this tutorial either with the level you created in 
 1.  In the **Audio Trigger** component, click the folder icon by the **Default 'play' Trigger** field to open the **Choose Trigger…​** dialog box\.
 
 1.  Open the **SFX** folder and choose the **Play\_Chicken\_Squawk** control\. Click **OK**\.
-![\[Lumberyard audio trigger\]](/images/welcomeguide/ui-audio-trigger-chicken-1.27.png)
+![\[O3DE audio trigger\]](/images/welcomeguide/ui-audio-trigger-chicken-1.27.png)
 
 1.  Run the game using **Control \+ G** to try it out\! Jump a few times and listen for the two squawk variations\. Press **Esc** to return control to the Editor when you're ready to proceed\.
 

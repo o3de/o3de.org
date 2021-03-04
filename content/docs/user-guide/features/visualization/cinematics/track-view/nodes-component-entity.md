@@ -1,5 +1,5 @@
 ---
-description: ' Create a component entity node to add to a track in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor. '
+description: ' Create a component entity node to add to a track in Open 3D Engine''s <guilabel>Track View</guilabel> editor. '
 title: Component Entities and Component Nodes
 ---
 # Component Entities and Component Nodes {#cinematics-track-view-nodes-component-entity}
@@ -34,7 +34,7 @@ For more information about adding node support to the Track View, see [Exposing 
 
 ## Naming and Identifying Component Entities {#cinematics-track-view-component-entity-name-components}
 
-Lumberyard uses entity IDs to identify component entities, which means that you can name your component entities as you want\. This includes reusing the same name for multiple entities\. In the Track View, if component entity nodes share the same name, a number is appended to the name\. This doesn't change the name of the component entity in the level, but it might be difficult to determine which entity to animate\.
+O3DE uses entity IDs to identify component entities, which means that you can name your component entities as you want\. This includes reusing the same name for multiple entities\. In the Track View, if component entity nodes share the same name, a number is appended to the name\. This doesn't change the name of the component entity in the level, but it might be difficult to determine which entity to animate\.
 
 **Example**
 
@@ -44,7 +44,7 @@ If you have component entities with the same name \(for example, if they're mult
 
 ## Adding or Removing Components from a Component Entity {#cinematics-track-view-component-entity-add-remove-components}
 
-When you add a component to a component entity in Lumberyard Editor, the component is automatically added to any component entity nodes in the Track View\. When you remove a component, the component and any animation data are also removed from the Track View\.
+When you add a component to a component entity in O3DE Editor, the component is automatically added to any component entity nodes in the Track View\. When you remove a component, the component and any animation data are also removed from the Track View\.
 
 **Important**
 Be careful when removing components from component entities because it might affect your existing sequence\. For example, if you remove a **Simple Motion** component from an entity that is part of a sequence, the animation no longer references the specified animation\.

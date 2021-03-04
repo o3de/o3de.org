@@ -1,6 +1,6 @@
 ---
 description: ' Use a RadioButton component to make an element behave like a radio
-  button in Lumberyard''s UI Editor. '
+  button in O3DE''s UI Editor. '
 title: RadioButton
 ---
 # RadioButton {#ui-editor-components-radiobutton}

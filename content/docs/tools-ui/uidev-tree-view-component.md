@@ -1,17 +1,17 @@
 ---
-description: ' Learn how to use the Lumberyard UI 2.0 tree view component to give
-  users a file or list navigation interface in Lumberyard tools and gems. '
-title: Lumberyard UI tree view component
+description: ' Learn how to use the O3DE UI 2.0 tree view component to give
+  users a file or list navigation interface in O3DE tools and gems. '
+title: O3DE UI tree view component
 ---
-# Lumberyard UI tree view component<a name="uidev-tree-view-component"></a>
+# O3DE UI tree view component<a name="uidev-tree-view-component"></a>
 
-With the **tree view** component, users can navigate file system directories or a list of hierarchical data in Lumberyard\. Each item, such as a node or a branch, can have sub\-items\. Items can be expanded to reveal sub\-items\.
+With the **tree view** component, users can navigate file system directories or a list of hierarchical data in O3DE\. Each item, such as a node or a branch, can have sub\-items\. Items can be expanded to reveal sub\-items\.
 
 The **tree view** component is often used in the following scenarios:
 + Show system or predefined contents, such as the settings in Inspector or system settings page\.
 + Show user created contents, such as in File Directory or Outliner\.
 
-Example from Lumberyard **Asset Browser**:
+Example from O3DE **Asset Browser**:
 
 ![\[component tree view example\]](/images/tools-ui/component-tree-view-example.png)
 
@@ -27,7 +27,7 @@ Follow these guidelines as you design your UI with tree views:
 
 Create a simple tree view, with support for showing branch lines\.
 
-For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [Lumberyard Qt control gallery tool](uidev-control-gallery.md), then examine the source code for that page found in your Lumberyard dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`\.
+For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [O3DE Qt control gallery tool](uidev-control-gallery.md), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`\.
 
  **Example**
 
@@ -50,7 +50,7 @@ AzQtComponents::TreeView::setBranchLinesEnabled(treeView, true);
 
 ## C\+\+ API reference<a name="tree-view-api-ref"></a>
 
-For details on the **tree view** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **tree view** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::TreeView](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tree_view.html)
 
 Relevant Qt documentation includes the following topics:

@@ -1,5 +1,5 @@
 ---
-description: ' Configure global settings for the PhysX system in Amazon Lumberyard. '
+description: ' Configure global settings for the PhysX system in Open 3D Engine. '
 title: Global Configuration
 ---
 # Global Configuration {#physx-configuration-global}
@@ -18,7 +18,7 @@ The following table describes the settings for **World Configuration**\.
 | Property | Description |
 | --- | --- |
 |  **Max Time Step** `m_maxTimeStep`  |  Specifies the largest time step that the simulation can process\. This setting prevents instability in the simulation if `m_fixedTimeStep` is not set\. It also prevents the simulation from taking too long\. If the time between frames is greater than `m_maxTimeStep`, the time is limited to this value\. Specify small increments\.  The default is `0.05` \(1/20th of a second\)\.  |
-|  **Fixed Time Step** `m_fixedTimeStep`  |  Controls the frequency of the interval at which Lumberyard does the simulation\. The default is `0.017` \(1/60th of a second\)\.    A lower value results in a more accurate simulation, but at a higher runtime cost\.   Higher values can cause results that are less stable\.   If this value is set to `0`, the simulation does not use the fixed time and uses the time between frames, which can vary\.   If the frame time is greater than this value, Lumberyard splits the time to the number of steps yielded by the following calculation: <pre>frame_time/m_fixedTimeStep</pre>     |
+|  **Fixed Time Step** `m_fixedTimeStep`  |  Controls the frequency of the interval at which O3DE does the simulation\. The default is `0.017` \(1/60th of a second\)\.    A lower value results in a more accurate simulation, but at a higher runtime cost\.   Higher values can cause results that are less stable\.   If this value is set to `0`, the simulation does not use the fixed time and uses the time between frames, which can vary\.   If the frame time is greater than this value, O3DE splits the time to the number of steps yielded by the following calculation: <pre>frame_time/m_fixedTimeStep</pre>     |
 | Gravity |  Gravity vector in the world\.  The default **X**, **Y**, and **Z** values are `0.0`, `0.0`, and `-9.81`\.  |
 | Raycast Buffer Size |  Maximum number of hits that can be returned from a raycast query\.  The default is `32`\.  |
 | Shapecast Buffer Size |  Maximum number of hits that can be returned from a shapecast query\.  The default is `32`\.  |

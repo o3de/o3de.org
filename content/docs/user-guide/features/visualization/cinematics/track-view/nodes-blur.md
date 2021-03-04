@@ -1,6 +1,6 @@
 ---
 description: ' Add a Radial Blur node to blur the animation outward in a radial pattern
-  in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor. '
+  in Open 3D Engine''s <guilabel>Track View</guilabel> editor. '
 title: Radial Blur Node
 ---
 # Radial Blur Node {#cinematics-track-view-nodes-blur}

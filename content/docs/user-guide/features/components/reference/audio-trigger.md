@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Trigger component to set up play and stop triggers in
-  your game in Lumberyard. '
+  your game in O3DE. '
 title: Audio Trigger
 ---
 # Audio Trigger {#component-audio-trigger}

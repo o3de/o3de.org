@@ -1,5 +1,5 @@
 ---
-description: ' Create dynamic joint constraints between entities in Amazon Lumberyard with
+description: ' Create dynamic joint constraints between entities in Open 3D Engine with
   PhysX joints. '
 title: Dynamic joints with PhysX
 ---

@@ -1,6 +1,6 @@
 ---
 description: ' Use annotations in Profiler to flag per-frame log information from
-  the data you captured from your Amazon Lumberyard application. '
+  the data you captured from your Open 3D Engine application. '
 title: Creating and Using Annotations
 ---
 # Creating and Using Annotations {#profiler-annotations-creating-and-using}
@@ -17,11 +17,11 @@ In Profiler, annotations are a convenient way of highlighting per\-frame log inf
 
 ## Using Annotations {#profiler-annotations-using}
 
-Annotations in the Lumberyard Profiler tool flag frames in your captured data that have associated log information\. By default, annotations are turned off\.
+Annotations in the O3DE Profiler tool flag frames in your captured data that have associated log information\. By default, annotations are turned off\.
 
 **To use annotations**
 
-1. To turn on annotations in the Lumberyard Profiler tool, click **Configure Annotations**:
+1. To turn on annotations in the O3DE Profiler tool, click **Configure Annotations**:
 ![\[Configure Annotations\]](/images/user-guide/profiler-annotations-using-configure.png)
 ![\[Configure Annotations dialog box\]](/images/user-guide/profiler-annotations-using-configure-dialog.png)
 
@@ -35,7 +35,7 @@ Annotations in the Lumberyard Profiler tool flag frames in your captured data th
 
 ## Creating Annotations {#profiler-annotations-creating}
 
-To create an annotation, you add one or more lines of C\+\+ logging code to your application\. The added code instructs Lumberyard's logging system to include the logging information that you specify as a part of your capture\. Lumberyard transforms the logged messages into annotations for you\. Then, in Profiler, when you click **Configure Annotations**, you actually choose which system's annotations are displayed \(for example, **GridMate** or **MultiplayerProject**\)\.
+To create an annotation, you add one or more lines of C\+\+ logging code to your application\. The added code instructs O3DE's logging system to include the logging information that you specify as a part of your capture\. O3DE transforms the logged messages into annotations for you\. Then, in Profiler, when you click **Configure Annotations**, you actually choose which system's annotations are displayed \(for example, **GridMate** or **MultiplayerProject**\)\.
 
 To create an annotation, place a line of C\+\+ code like the following in your application:
 

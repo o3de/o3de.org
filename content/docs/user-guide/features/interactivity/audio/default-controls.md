@@ -1,6 +1,6 @@
 ---
 description: ' Create sound effects for your game project with the Audio Controls Editor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: ATL Controls
 ---
 # ATL Controls {#audio-default-controls}
@@ -21,10 +21,10 @@ The **Audio Controls Editor** automatically creates the following ATL controls b
 | Name | Description |
 | --- | --- |
 | do\_nothing |  Trigger that is used as a blank event where `play`/`stop` trigger pairs can be assigned\. If you set `do_nothing` on the `stop` trigger, the `play` trigger does not stop automatically\.  |
-| get\_focus |  Trigger that is called when the application window in Lumberyard Editor gains focus\.   |
-| lose\_focus |  Trigger that is called when the application window in Lumberyard Editor loses focus\.  To disable the `get_focus` and `lose_focus` triggers, use the console command `s_IgnoreWindowFocus` = `1`\. This is useful when remote connecting Wwise Profiler so that audio continues to play while the Wwise Authoring Tool application has focus\.   |
-| mute\_all |  Trigger that is called when you click **Mute Audio**, which is located on the lower menu bar of Lumberyard Editor\.  |
-| unmute\_all |  Trigger that is called when you click **Mute Audio**, which is located on the lower menu bar of Lumberyard Editor\.  |
+| get\_focus |  Trigger that is called when the application window in O3DE Editor gains focus\.   |
+| lose\_focus |  Trigger that is called when the application window in O3DE Editor loses focus\.  To disable the `get_focus` and `lose_focus` triggers, use the console command `s_IgnoreWindowFocus` = `1`\. This is useful when remote connecting Wwise Profiler so that audio continues to play while the Wwise Authoring Tool application has focus\.   |
+| mute\_all |  Trigger that is called when you click **Mute Audio**, which is located on the lower menu bar of O3DE Editor\.  |
+| unmute\_all |  Trigger that is called when you click **Mute Audio**, which is located on the lower menu bar of O3DE Editor\.  |
 | object\_speed |  RTPC control that is updated according to the speed of the associated entity in the level\. You can enable the calculation of speed on a per entity basis with the `object_velocity_tracking` control\.   |
-| object\_velocity\_tracking |  Switch that is used to enable or disable the calculation of the `object_speed` value on a per entity basis\. You do not need to connect this switch to the audio middleware because it communicates Lumberyard\-specific data\.   |
-| ObstructionOcclusionCalculationType |  Switch that is used to set the obstruction and occlusion calculation method of an entity\. The switch state values are `Ignore`, `SingleRay`, and `MultiRay`\. You do not need to connect this switch to the audio middleware because it communicates Lumberyard\-specific data\.   |
+| object\_velocity\_tracking |  Switch that is used to enable or disable the calculation of the `object_speed` value on a per entity basis\. You do not need to connect this switch to the audio middleware because it communicates O3DE\-specific data\.   |
+| ObstructionOcclusionCalculationType |  Switch that is used to set the obstruction and occlusion calculation method of an entity\. The switch state values are `Ignore`, `SingleRay`, and `MultiRay`\. You do not need to connect this switch to the audio middleware because it communicates O3DE\-specific data\.   |

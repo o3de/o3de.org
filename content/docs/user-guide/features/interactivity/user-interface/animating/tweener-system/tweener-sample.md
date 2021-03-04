@@ -1,5 +1,5 @@
 ---
-description: ' Open the Scripted Entity Tweener sample level in Amazon Lumberyard to see tweeners
+description: ' Open the Scripted Entity Tweener sample level in Open 3D Engine to see tweeners
   in action. '
 title: Tweener Sample Level
 ---
@@ -9,7 +9,7 @@ You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) t
 
 **To see example Scripted Entity Tweeners in action**
 
-1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.
+1. In O3DE Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the level `Samples\ScriptedEntityTweenerSample\SampleFullscreenAnimation`\.
 ![\[Example level that uses Scripted Entity Tweener.\]](/images/user-guide/ui-animating-tweener-level.png)
 
 1. To switch to gameplay mode, press **Ctrl\+G**\. The header, list items, earth, stars, and spaceship use tweeners for their animation\.

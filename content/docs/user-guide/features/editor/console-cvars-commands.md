@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard console to customize and create your own console
+description: ' Use the Open 3D Engine console to customize and create your own console
   variable commands. '
 title: Console in Depth
 ---

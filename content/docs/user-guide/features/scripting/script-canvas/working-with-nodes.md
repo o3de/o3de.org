@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to work efficiently with Script Canvas nodes in Amazon Lumberyard. '
+description: ' Learn how to work efficiently with Script Canvas nodes in Open 3D Engine. '
 title: Working with Nodes
 ---
 # Working with Nodes {#script-canvas-working-with-nodes}

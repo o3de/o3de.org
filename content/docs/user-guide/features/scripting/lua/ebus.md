@@ -1,11 +1,11 @@
 ---
 description: ' Write Lua scripts that use the EBus to communicate between components
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using EBuses in Lua
 ---
 # Using EBuses in Lua {#lua-scripting-ces-using-ebuses}
 
-Components provide interfaces that allow scripts to send them information and receive notifications when certain actions take place\. Communication is established by creating two different objects in Lua: senders and handlers\. A sender or a handler is an interface to an [EBus](/docs/user-guide/features/engine/ebus), a communication system used extensively in the Lumberyard Engine\. When a sender is created, it can call functions, which in turn send information to a component\. When a handler is created, the component calls certain functions that the Lua script defines\. These senders and handlers are created with an entity ID\. You can use the entity ID to communicate with components that are attached to entities other than the one the script itself is running on\. The main script table always provides a field called `entityId` that contains the ID of the entity to which the script is attached\. Other entity IDs can be passed to the script through the `Properties` interface\.
+Components provide interfaces that allow scripts to send them information and receive notifications when certain actions take place\. Communication is established by creating two different objects in Lua: senders and handlers\. A sender or a handler is an interface to an [EBus](/docs/user-guide/features/engine/ebus), a communication system used extensively in the O3DE Engine\. When a sender is created, it can call functions, which in turn send information to a component\. When a handler is created, the component calls certain functions that the Lua script defines\. These senders and handlers are created with an entity ID\. You can use the entity ID to communicate with components that are attached to entities other than the one the script itself is running on\. The main script table always provides a field called `entityId` that contains the ID of the entity to which the script is attached\. Other entity IDs can be passed to the script through the `Properties` interface\.
 
 ## Order of Component Activation {#scriptbind_entity-lua-scripting-ces-communicating-with-components-order-of-component-activation}
 

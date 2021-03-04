@@ -1,5 +1,5 @@
 ---
-description: ' Add colliders to actors in Amazon Lumberyard for NVIDIA Cloth simulations. '
+description: ' Add colliders to actors in Open 3D Engine for NVIDIA Cloth simulations. '
 title: Add Cloth Colliders to actors
 ---
 # Add Cloth Colliders to actors {#char_animation_add_cloth_colliders}
@@ -17,7 +17,7 @@ For more information, see the [NVIDIA Cloth Gem documentation](/docs/user-guide/
 
 ## Add Cloth Colliders to an actor {#component-cloth-collider-character}
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, on the right side of the menu bar, choose **Physics** from the drop\-down list\. This changes the layout\.
 

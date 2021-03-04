@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard Asset Browser to quickly view and access your game
+description: ' Use the Open 3D Engine Asset Browser to quickly view and access your game
   project assets. '
 title: 'Asset Browser'
 ---
@@ -11,10 +11,10 @@ The **Asset Browser** shows all files inside your watch folders that are specifi
 
 **To open the Asset Browser**
 
-1. From Lumberyard Editor, choose **Tools**, **Asset Browser**\.
+1. From O3DE Editor, choose **Tools**, **Asset Browser**\.
 ![\[Search and view assets in your game project with the Asset Browser.\]](/images/user-guide/asset_browser_preview.png)
 
-1. Dock the **Asset Browser** window in Lumberyard Editor as needed\.
+1. Dock the **Asset Browser** window in O3DE Editor as needed\.
 
 The **Asset Browser** displays source assets along with their products\. For example, an `.fbx` file appears with its meshes and animations\. However, if the source and product asset have the same name and extension, then the products are hidden to save space\.
 
@@ -23,7 +23,7 @@ The `WombearActor.fbx` file has two products, an actor and mesh\.
 
 ![\[A WombearActor.fbx source file with two products.\]](/images/user-guide/asset-browser-intro-1.png)
 
-Files that are unprocessed or not usable in Lumberyard Editor appear gray\.
+Files that are unprocessed or not usable in O3DE Editor appear gray\.
 
 ![\[Ignored or unprocessed files are grayed out in the Asset Browser.\]](/images/user-guide/asset-browser-grayed-out-files.png)
 
@@ -39,7 +39,7 @@ With the **Asset Browser**, you can do the following:
 
 You can drag assets from the **Asset Browser** into the viewport or the **Entity Inspector**\.
 
-When you drag an asset from the **Asset Browser** into the viewport, Lumberyard Editor does the following:
+When you drag an asset from the **Asset Browser** into the viewport, O3DE Editor does the following:
 + Creates a new entity at the cursor's location\.
 + Adds the associated component, which is indicated by the icon next to the asset in the **Asset Browser**\.
 + Assigns the asset for that component's property\.
@@ -71,7 +71,7 @@ In the **Asset Browser**, right\-click an asset to display a context menu\. The 
 + **Edit Texture Settings** - Opens the asset in the Texture Settings Editor\. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md)\.
 
 **Note**
-You can also open some files in their respective Lumberyard tool, such as the **Lua Editor** for `.lua` files\.
+You can also open some files in their respective O3DE tool, such as the **Lua Editor** for `.lua` files\.
 
 ![\[Right-click context menu for assets in the Asset Browser\]](/images/user-guide/asset-browser-intro-right-click-context.png)
 

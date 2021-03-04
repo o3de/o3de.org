@@ -1,5 +1,5 @@
 ---
-description: ' Configure and build an iOS game application using the Lumberyard build tools. '
+description: ' Configure and build an iOS game application using the O3DE build tools. '
 title: Building Your iOS App
 ---
 # Building Your iOS App {#ios-game-building}
@@ -38,7 +38,7 @@ You have two options for configuring a game project:
 
    1. In the Project Configurator, select your game project name and then click **Set as default**\.
 
-   1. In Lumberyard Editor, open your level and then press **Ctrl\+E**\. This will export the levels you have created\.
+   1. In O3DE Editor, open your level and then press **Ctrl\+E**\. This will export the levels you have created\.
 
 1. \(Optional\) Configure system components and memory settings for your game project\. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 
@@ -106,7 +106,7 @@ Update your configuration file to help increase the compilation speed and deploy
 
 ## Step 5: Run the Remote Shader Compiler {#ios-run-the-remote-shader-compiler}
 
-Lumberyard uses a versatile shader system to achieve high quality, realistic graphics\. When you run a game on an iOS device during development, you must connect to a remote shader compiler on your Windows or macOS computer\. This compiles the subset of shaders required by your game, on demand\.
+O3DE uses a versatile shader system to achieve high quality, realistic graphics\. When you run a game on an iOS device during development, you must connect to a remote shader compiler on your Windows or macOS computer\. This compiles the subset of shaders required by your game, on demand\.
 
 When a new shader is compiled, the game waits for the remote shader compiler to compile the binary shader permutation and then send it back to your device\. Once this occurs, the shader is cached on your device until you delete the app\. When you are ready to release your game, you must pack up and include all cached binary shaders\.
 
@@ -159,7 +159,7 @@ Configure and build various targets of your app, depending on your mode of devel
 + Profile - Allows you to debug your code, though some code may be optimized and difficult to trace\. This build runs faster on your iOS device\.
 + Release - Includes all required asset and shader `.pak` files for a release version of your iOS game\. This build runs the fastest; however, special steps are required to generate the build\. For more information, see [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)\.
 
-When you build code from a command line, you must take an additional step to run your app on an iOS device\. You use Xcode to open the `LumberyardiOSSDK.xcodeproj` project that is generated in the `lumberyard_version/dev/Solutions/` directory\. Then you select your device, follow the standard procedure to build and run on the device, set breakpoints, and inspect variables\.
+When you build code from a command line, you must take an additional step to run your app on an iOS device\. You use Xcode to open the `O3DEiOSSDK.xcodeproj` project that is generated in the `lumberyard_version/dev/Solutions/` directory\. Then you select your device, follow the standard procedure to build and run on the device, set breakpoints, and inspect variables\.
 
 **To build code from a command line**
 

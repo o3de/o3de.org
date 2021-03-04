@@ -1,9 +1,9 @@
 ---
-description: ' Learn about the Lumberyard UI 2.0 style of spinboxes, including the
+description: ' Learn about the O3DE UI 2.0 style of spinboxes, including the
   spinbox and double spinbox components. '
-title: Lumberyard UI spinbox component
+title: O3DE UI spinbox component
 ---
-# Lumberyard UI spinbox component<a name="uidev-spinbox-component"></a>
+# O3DE UI spinbox component<a name="uidev-spinbox-component"></a>
 
 Use a spinbox as a number edit component to enable users to use a variety of controls to "spin" up or down a numeric value in an input box\. The value is changed by the amount specified in the step value\.
 
@@ -58,7 +58,7 @@ doubleSpinBox->setSingleStep(0.1);
 
 ## C\+\+ API reference<a name="spinbox-api-ref"></a>
 
-For details on the **spinbox** API's, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **spinbox** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::SpinBox](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_spin_box.html)
 +  [AzQtComponents::DoubleSpinBox](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_double_spin_box.html)
 

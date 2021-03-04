@@ -1,5 +1,5 @@
 ---
-description: ' Use the PhysX Debug gem to debug physics visualization in your Amazon Lumberyard
+description: ' Use the PhysX Debug gem to debug physics visualization in your Open 3D Engine
   level. '
 title: PhysX Debug
 ---
@@ -11,7 +11,7 @@ When you enter console variables or the use the **ImGui** tool, you can view the
 
 In editor mode, this gem displays PhysX shapes within a given distance of the viewport camera\. In game mode, this gem uses the currently active camera to visualize a culled view of the the PhysX scene\.
 
-![\[PhysX Debug gem in Lumberyard.\]](/images/user-guide/gems/physx/gems-system-physx-debug.png)
+![\[PhysX Debug gem in O3DE.\]](/images/user-guide/gems/physx/gems-system-physx-debug.png)
 
 This gem includes the following features:
 + Visualize debug rendering of physics geometry, such as collision primitives, terrain, shapes, and forces\.

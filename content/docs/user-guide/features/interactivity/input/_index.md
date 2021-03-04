@@ -1,15 +1,15 @@
 ---
-description: ' Learn how to use the game input system in Amazon Lumberyard. '
+description: ' Learn how to use the game input system in Open 3D Engine. '
 title: Input
 ---
-# Input in Amazon Lumberyard {#input-intro}
+# Input in Open 3D Engine {#input-intro}
 
-Use the information in this section to learn about game input in Amazon Lumberyard\.
+Use the information in this section to learn about game input in Open 3D Engine\.
 
 **Note**
 For information on the **Input** component that replaces legacy action maps, see [Input](/docs/user-guide/features/components/input.md)\.
 
-Input is what differentiates interactive experiences from all other entertainment media\. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device\. There are many different types of input devices, each of which can produce a wide range of input data\. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems\. As a cross\-operating system and device game engine, Lumberyard's goal is to provide independent access to input data from any supported device\. The goal is to provide a common interface with these qualities:
+Input is what differentiates interactive experiences from all other entertainment media\. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device\. There are many different types of input devices, each of which can produce a wide range of input data\. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems\. As a cross\-operating system and device game engine, O3DE's goal is to provide independent access to input data from any supported device\. The goal is to provide a common interface with these qualities:
 + OS and device agnostic
 + Extensible
 + Efficient
@@ -19,11 +19,11 @@ In addition, input data should have these attributes:
 + Must be obtainable on demand by polling the state or value of an input device
 + Can be a custom payload, but adds no overhead when not used
 
-Lumberyard's input system satisfies all of these requirements and replaces the [deprecated input system](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/input-legacy.html)\.
+O3DE's input system satisfies all of these requirements and replaces the [deprecated input system](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/input-legacy.html)\.
 
 ## AZ Framework Input {#input-intro-azframework}
 
-The Lumberyard input interface is called AZ framework input\. AZ framework already provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management, so the AZ framework code location is a natural fit\.
+The O3DE input interface is called AZ framework input\. AZ framework already provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management, so the AZ framework code location is a natural fit\.
 
 The AZ framework input interface uses the `AZCore` EBus system and defines the following classes and EBuses:
 + `InputDevice` - A base class that represents a physical input device\.
@@ -60,9 +60,9 @@ The following AZ framework input auxiliary interfaces are only implemented by ce
 
 All input device classes inherit from `AzFramework::InputDevice`\. While multiple instances of the same class can exist, every input device is identified by a unique `InputDeviceId`\.
 
-#### Input Devices Included in Lumberyard {#input-intro-devices-included-in-lumberyard}
+#### Input Devices Included in O3DE {#input-intro-devices-included-in-lumberyard}
 
-The base class is designed so that you can inherit from it to implement new types of input devices\. However, Lumberyard already includes implementations for the following devices:
+The base class is designed so that you can inherit from it to implement new types of input devices\. However, O3DE already includes implementations for the following devices:
 
 
 ****
@@ -81,7 +81,7 @@ This core set of input devices are managed by the `AzFramework::InputSystemCompo
 
 #### Creating Input Devices {#input-intro-creating-input-devices}
 
-You can create and implement new types of input devices by inheriting from `AzFramework::InputDevice` and creating or destroying instances of the new class as required\. For examples, see the [Configuring your Project for Virtual Reality](/docs/userguide/vr/configuring.md), which define and create new types of input devices that inherit from `AzFramework::InputDevice`\. Their code is located at the Lumberyard directory locations `\dev\Gems\Oculus` and `\dev\Gems\OpenVR`, respectively\.
+You can create and implement new types of input devices by inheriting from `AzFramework::InputDevice` and creating or destroying instances of the new class as required\. For examples, see the [Configuring your Project for Virtual Reality](/docs/userguide/vr/configuring.md), which define and create new types of input devices that inherit from `AzFramework::InputDevice`\. Their code is located at the O3DE directory locations `\dev\Gems\Oculus` and `\dev\Gems\OpenVR`, respectively\.
 
 The implementation details of each input device differ depending on the device type and operating system\. However, almost all devices follow a similar pattern\. They use an OS\-specific API to obtain raw input data for each frame and then update all the device's associated input channels accordingly\.
 
@@ -102,9 +102,9 @@ Input channels use `AzFramework::InputChannelNotificationBus::OnInputChannelEven
 
 Like the `AzFramework::InputDevice` base class, you can inherit from `AzFramework::InputChannel` to implement new types of input data sources\.
 
-#### Input Channels Included in Lumberyard {#input-intro-channels-included-in-lumberyard}
+#### Input Channels Included in O3DE {#input-intro-channels-included-in-lumberyard}
 
-Lumberyard provides the following input channel implementations that are used by the devices listed in the [Input Devices](#input-intro-devices) section\. You can also use these implementations for new input devices\.
+O3DE provides the following input channel implementations that are used by the devices listed in the [Input Devices](#input-intro-devices) section\. You can also use these implementations for new input devices\.
 
 
 ****

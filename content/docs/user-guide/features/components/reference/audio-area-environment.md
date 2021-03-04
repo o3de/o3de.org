@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio Area Environment component in Lumberyard to apply an environment
+description: ' Use the Audio Area Environment component in O3DE to apply an environment
   effect to sounds that an entity triggers. '
 title: Audio Area Environment
 ---
@@ -29,7 +29,7 @@ Setting up the **Audio Area Environment** component requires two entities\. The 
 
 **To set up the Audio Area Environment component**
 
-1. In Lumberyard Editor, right\-click the viewport in your level, and click **Create new component entity**\.
+1. In O3DE Editor, right\-click the viewport in your level, and click **Create new component entity**\.
 
 1. Click **Tools**, **Entity Inspector**\. Be sure that your new component entity is selected in the viewport\.
 

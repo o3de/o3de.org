@@ -1,5 +1,5 @@
 ---
-description: Use visual components in Amazon Lumberyard's UI Editor to add color
+description: Use visual components in Open 3D Engine's UI Editor to add color
   tints or textures to UI elements.
 title: Image
 ---
@@ -9,7 +9,7 @@ You can use an **Image** component to add a color tint or texture to an element\
 
 **To see in\-game examples of completed canvases with **Image** components**
 
-1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
+1. In O3DE Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
 
 1. Press **Ctrl\+G** to play the game and then choose f**Components**, and then **Visual Components**, and then **Image**\.
 

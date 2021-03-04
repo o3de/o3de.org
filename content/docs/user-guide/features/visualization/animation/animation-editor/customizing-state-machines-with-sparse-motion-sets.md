@@ -1,6 +1,6 @@
 ---
 description: ' Use custom state machines to control motions in the Animation Editor
-  for Amazon Lumberyard. '
+  for Open 3D Engine. '
 title: Customizing State Machine Routing with Sparse Motion Sets
 ---
 # Customizing State Machine Routing with Sparse Motion Sets {#animation-editor-customizing-state-machines-with-sparse-motion-sets}

@@ -1,5 +1,5 @@
 ---
-description: ' Learn how Amazon Lumberyard gems are structured and the files that you can
+description: ' Learn how Open 3D Engine gems are structured and the files that you can
   modify to customize gems for your game. '
 title: Gem Structure
 ---
@@ -11,8 +11,8 @@ Each gem package can contain the following:
 + An icon file
 + Code
 
-**To locate Lumberyard Gems**
-+ Navigate to the `lumberyard_version\dev\Gems` directory\. For more information, see [Gems Available in Lumberyard](/docs/userguide/gems/ref.md)\.
+**To locate O3DE Gems**
++ Navigate to the `lumberyard_version\dev\Gems` directory\. For more information, see [Gems Available in O3DE](/docs/userguide/gems/ref.md)\.
 
 **Topics**
 + [Gem Assets](#gem-assets-directory)
@@ -25,7 +25,7 @@ Each gem package can contain the following:
 
 ## Gem Assets {#gem-assets-directory}
 
-Each gem has an `Assets` directory that contains models, textures, scripts, and animations\. Asset files are accessed the same way as they are in a game project\. Lumberyard uses this root directory to find the asset file path\. For example, when Lumberyard looks for the `textures\rain\rainfall_ddn.tif` file, it looks in the `<GemName>\Assets\textures\rain\rainfall_ddn.tif` directory\.
+Each gem has an `Assets` directory that contains models, textures, scripts, and animations\. Asset files are accessed the same way as they are in a game project\. O3DE uses this root directory to find the asset file path\. For example, when O3DE looks for the `textures\rain\rainfall_ddn.tif` file, it looks in the `<GemName>\Assets\textures\rain\rainfall_ddn.tif` directory\.
 
 ## Gem Icon File {#gem-icon-file}
 
@@ -51,7 +51,7 @@ This example file contains metadata for the gem and the following properties\.
         "Sky"
     ],
     "EditorTargets": ["RainEditorPlugin"],                // Optional, defaults to [ ]
-    "LumberyardVersion": ["==1.11.0.0"],                  // Optional
+    "O3DEVersion": ["==1.11.0.0"],                  // Optional
     "Version": "1.0.0",                                   // Required
     "IconPath": "path\preview.png",                       // Optional, defaults to ""
     "Modules": [                                          // Optional
@@ -73,10 +73,10 @@ This example file contains metadata for the gem and the following properties\.
 ```
 
 **GemFormatVersion**
-Version number that identifies how a gem is built \(folder structure and semantics\) and determines compatibility with specific versions of Lumberyard\. The version number is set automatically when you create a gem in the Project Configurator\.
-+ Lumberyard 1\.11 and later - Gems have a default value of `4` for the `GemFormatVersion` field\.
-+ Lumberyard 1\.5 to 1\.10 - Gems have a default value of `3` for the `GemFormatVersion` field\. The gems that are included with Lumberyard are AZ modules\.
-+ Lumberyard 1\.4 and earlier - Gems have a default value of `2` for the `GemFormatVersion` field\.
+Version number that identifies how a gem is built \(folder structure and semantics\) and determines compatibility with specific versions of O3DE\. The version number is set automatically when you create a gem in the Project Configurator\.
++ O3DE 1\.11 and later - Gems have a default value of `4` for the `GemFormatVersion` field\.
++ O3DE 1\.5 to 1\.10 - Gems have a default value of `3` for the `GemFormatVersion` field\. The gems that are included with O3DE are AZ modules\.
++ O3DE 1\.4 and earlier - Gems have a default value of `2` for the `GemFormatVersion` field\.
 
 **Uuid**
 Unique ID that identifies the gem\.
@@ -96,8 +96,8 @@ List of tags that describe the gem\.
 **EditorTargets**
 List of additional Waf targets to build\. This is useful for targets defined in the `wscript`such as adding editor plugins that accompany gems\.
 
-**LumberyardVersion**
-Version of Lumberyard to specify\. The value can be one of the following:
+**O3DEVersion**
+Version of O3DE to specify\. The value can be one of the following:
 + An array of strings \(for example, `["~>1.2.345.6789", "~>1.1.1", ">= 1.0"]`\)\.
 + A single string that describes the constraint \(for example, `"==1.2.3"`\)\.
 
@@ -138,7 +138,7 @@ UUIDs and versions of other gems to which the gem depends\. Acceptable version s
 The following fields apply to `GemFormatVersion` 3 and earlier:
 
 **EditorModule**
-Defines whether the gem produces a module that is loaded by Lumberyard Editor\.
+Defines whether the gem produces a module that is loaded by O3DE Editor\.
 
 **LinkType**
 Defines how other gems and game projects should link to this gem:
@@ -151,11 +151,11 @@ Defines how other gems and game projects should link to this gem:
 Following are module types and how to define them\. For examples of gems with module types defined, see [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md)\.
 
 **GameModule**
-The most basic type of module\. If you used gems before, your gems produce this type of module by default\. These modules are loaded by Lumberyard Setup Assistant and Lumberyard Editor\.
+The most basic type of module\. If you used gems before, your gems produce this type of module by default\. These modules are loaded by O3DE Setup Assistant and O3DE Editor\.
 If a gem has more than one `GameModule` type, you can omit the `Name` field for one `GameModule` type\. This allows a gem's product `.dll` file to keep the same name when you upgrade to `GemFormatVersion` 4\.
 
 **EditorModule**
-Loaded by Lumberyard Editor\. If an `EditorModule` extends a `GameModule`, the `EditorModule` is loaded instead of the `GameModule` in Lumberyard Editor\. This is useful when an `EditorModule` contains the same components as a `GameModule`, along with their editor components\.
+Loaded by O3DE Editor\. If an `EditorModule` extends a `GameModule`, the `EditorModule` is loaded instead of the `GameModule` in O3DE Editor\. This is useful when an `EditorModule` contains the same components as a `GameModule`, along with their editor components\.
 
 **StaticLib**
 Module type that is useful when your gem requires helper code that is linked to all dependents of your gem, or when your gem provides only statically usable code\. All modules in all gems that require this gem have this `StaticLib` linked against it\.

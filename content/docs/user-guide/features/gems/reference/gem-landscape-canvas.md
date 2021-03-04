@@ -1,5 +1,5 @@
 ---
-description: ' Use Landscape Canvas Gem to author dynamic vegetation Amazon Lumberyard
+description: ' Use Landscape Canvas Gem to author dynamic vegetation Open 3D Engine
   project. '
 title: 'Landscape Canvas Gem'
 ---
@@ -23,7 +23,7 @@ Landscape Canvas has five node groups available that map to the components you p
 
 ## Enable the Landscape Canvas Gem {#enable-gem-landscape-canvas}
 
-To make the **Landscape Canvas** Editor available in Lumberyard, you must build and configure your project with the Landscape Canvas Gem enabled\.
+To make the **Landscape Canvas** Editor available in O3DE, you must build and configure your project with the Landscape Canvas Gem enabled\.
 
 1. Use Project Configurator to add the **Landscape Canvas Gem** to your project\.
 **Note**

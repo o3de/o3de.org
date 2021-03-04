@@ -1,6 +1,6 @@
 ---
 description: ' Use source code annotations to pass additional data to the template
-  drivers that generate code when using Amazon Lumberyard''s AZ Code Generator. '
+  drivers that generate code when using Open 3D Engine''s AZ Code Generator. '
 title: Custom Code Generator Annotations
 ---
 # Custom Code Generator Annotations {#az-code-gen-custom-annotations}
@@ -151,7 +151,7 @@ This produces the following intermediate JSON object\. Some data has been remove
 ]
 ```
 
-Notice that the above JSON does not look exactly like the JSON in the intermediate files provided as part of AZ framework\. This is because Lumberyard uses namespaces on its tags to also provide a hierarchy for the tags on its drivers and templates\. We recommend that you import the `clang_cpp.py` file and run the `format_cpp_annotations(json_object)` function on the intermediate JSON\. When you do, you can use all of the convenient patterns and functions in our drivers and scripts\.
+Notice that the above JSON does not look exactly like the JSON in the intermediate files provided as part of AZ framework\. This is because O3DE uses namespaces on its tags to also provide a hierarchy for the tags on its drivers and templates\. We recommend that you import the `clang_cpp.py` file and run the `format_cpp_annotations(json_object)` function on the intermediate JSON\. When you do, you can use all of the convenient patterns and functions in our drivers and scripts\.
 
 The following example shows the same intermediate JSON object after processing by `format_cpp_annotations()`\.
 

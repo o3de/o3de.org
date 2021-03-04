@@ -1,5 +1,5 @@
 ---
-description: ' Use the Variable Manager in the Amazon Lumberyard Script Canvas editor to
+description: ' Use the Variable Manager in the Open 3D Engine Script Canvas editor to
   add or manage variables and create get, set, or value-changed event nodes in your
   Script Canvas graph. '
 title: Managing Script Canvas Variables

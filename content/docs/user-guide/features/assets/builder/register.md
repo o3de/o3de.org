@@ -1,5 +1,5 @@
 ---
-description: ' Register your Python Asset Builder for your Amazon Lumberyard project. '
+description: ' Register your Python Asset Builder for your Open 3D Engine project. '
 title: Register a Python Asset Builder
 ---
 # Register a Python Asset Builder {#python-asset-builder-register}

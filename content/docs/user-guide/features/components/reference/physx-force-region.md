@@ -60,7 +60,7 @@ Applies a force in local space, relative to the force region's orientation\. For
 
 | Property | Description |
 | --- | --- |
-| Direction |  The direction of the force in the local space of the force region\.   You can specify a value from `-1000000` to `1000000`, but Lumberyard Editor normalizes the value to a range of \-`1` and `1`\.   |
+| Direction |  The direction of the force in the local space of the force region\.   You can specify a value from `-1000000` to `1000000`, but O3DE Editor normalizes the value to a range of \-`1` and `1`\.   |
 |  **Magnitude**  |  The amount of force to apply\.  Specify a negative value to apply the force in the opposite direction\.  |
 
 #### Point {#point-force}
@@ -121,7 +121,7 @@ You can create a force region so that force applies to another entity that enter
 
 **To create a PhysX Force Region component**
 
-1. In Lumberyard Editor, create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
+1. In O3DE Editor, create an entity\. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md)\.
 
 1. Enter a name for the entity, such as *ForceRegion*\.
 

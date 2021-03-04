@@ -1,5 +1,5 @@
 ---
-description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
+description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Adding a Director (Scene) Node
 ---
 # Adding a Director \(Scene\) Node {#cinematics-adding-a-director-scene-node}
@@ -8,7 +8,7 @@ To determine what camera you want your sequence to use, you must add a [Director
 
 **To add a Director node in the Track View**
 
-1. In Lumberyard Editor, choose **Tools**, **Track View**\.
+1. In O3DE Editor, choose **Tools**, **Track View**\.
 
 1. In the Track View, select or create a sequence\.
 

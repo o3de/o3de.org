@@ -1,5 +1,5 @@
 ---
-description: ' Create NVIDIA Blast assets in Houdini for Amazon Lumberyard. '
+description: ' Create NVIDIA Blast assets in Houdini for Open 3D Engine. '
 title: Create assets for NVIDIA Blast
 ---
 # Create assets for NVIDIA Blast {#nvidia-blast-create-blast-asset}
@@ -11,7 +11,7 @@ title: Create assets for NVIDIA Blast
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-Assets for NVIDIA Blast are created in Houdini with the provided tools and plug\-ins\. Follow the steps below to create and export blast assets for Lumberyard\.
+Assets for NVIDIA Blast are created in Houdini with the provided tools and plug\-ins\. Follow the steps below to create and export blast assets for O3DE\.
 
 **Note**
 These steps can be applied to any mesh\. For best results, the mesh should be fully enclosed\. Custom normals, UV sets, and vertex color streams can be applied to the root mesh and the resulting chunks\.
@@ -79,7 +79,7 @@ With Houdini's geometry select mode set to primitive, you can press the **S** ke
 
 ## Export an asset for NVIDIA Blast {#nvidia-blast-export}
 
-With the mesh fractured, you must export `.fbx` and `.blast` assets to be processed by **Asset Processor** for use in Amazon Lumberyard\.
+With the mesh fractured, you must export `.fbx` and `.blast` assets to be processed by **Asset Processor** for use in Open 3D Engine\.
 
 **To export an asset**
 

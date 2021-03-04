@@ -1,18 +1,18 @@
 ---
 description: ' Learn about the Amazon Qt Control Gallery tool that demonstrates the
-  Lumberyard UI 2.0 custom Qt widget library in action, and see sample code related
+  O3DE UI 2.0 custom Qt widget library in action, and see sample code related
   to each example. '
-title: Lumberyard Qt control gallery tool
+title: O3DE Qt control gallery tool
 ---
-# Lumberyard Qt control gallery tool<a name="uidev-control-gallery"></a>
+# O3DE Qt control gallery tool<a name="uidev-control-gallery"></a>
 
-Use the **Amazon Qt Control Gallery** tool to see the Amazon Lumberyard custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
+Use the **Amazon Qt Control Gallery** tool to see the Open 3D Engine custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
 
 ![\[image\]](/images/tools-ui/amazon-qt-control-gallery.jpg)
 
 ## How to use the Amazon Qt control gallery<a name="gallery-usage"></a>
 
-Before you begin, make sure that you have Lumberyard 1\.25 or later installed on your machine\.
+Before you begin, make sure that you have O3DE 1\.25 or later installed on your machine\.
 
 1.  Open File Explorer and go to your build directory\. \(For example, `C:\{your-lumberyard-installation-path}\{version}\dev\Bin64vc142\` or `Bin64vc141\`\.\)
 

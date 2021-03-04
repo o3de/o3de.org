@@ -1,5 +1,5 @@
 ---
-description: ' Use pivot mode to set a center point of reference for entities in Amazon Lumberyard. '
+description: ' Use pivot mode to set a center point of reference for entities in Open 3D Engine. '
 title: Using Pivot Mode
 ---
 # Using Pivot Mode {#pivot-mode}
@@ -17,4 +17,4 @@ Currently, this is a global toggle and doesn't support mixed use cases, such as 
 **Example**
 
    In the following example, the selected entities pivot around the manipulator\.
-![\[Modify entities using pivot mode in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-16.gif)
+![\[Modify entities using pivot mode in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-16.gif)

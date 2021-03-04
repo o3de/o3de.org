@@ -1,11 +1,11 @@
 ---
 description: ' Create an asset builder to process your custom asset type source files
-  into game-ready files in Amazon Lumberyard. '
+  into game-ready files in Open 3D Engine. '
 title: Creating a Custom Asset Builder
 ---
 # Creating a Custom Asset Builder {#asset-builder-custom}
 
-The Asset Builder SDK lets you develop an asset builder that processes your custom asset type source files into game\-ready files\. This topic shows you how to create your own asset builder by using the example asset builder that is included with Lumberyard\.
+The Asset Builder SDK lets you develop an asset builder that processes your custom asset type source files into game\-ready files\. This topic shows you how to create your own asset builder by using the example asset builder that is included with O3DE\.
 
 To create a builder for a custom asset type:
 
@@ -21,8 +21,8 @@ This topic describes how to create builder classes, register your builder, tag y
 
 ## Builder Resources {#asset-builder-custom-builder-resources}
 
-This topic draws on the following resources, which are included with Lumberyard:
-+ Lumberyard Asset Builder SDK - The Asset Builder SDK enables you to build custom asset processing tools\. The source code is located in the following directory:
+This topic draws on the following resources, which are included with O3DE:
++ O3DE Asset Builder SDK - The Asset Builder SDK enables you to build custom asset processing tools\. The source code is located in the following directory:
 
   `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK`
 + CustomAssetExample gem - Provides sample custom asset builder code\. The builder\-related source files for the gem are located in the following directory:
@@ -31,7 +31,7 @@ This topic draws on the following resources, which are included with Lumberyard:
 
 ## Prerequisites {#asset-builder-custom-prerequisites}
 
-This topic assumes that you have a working knowledge of Lumberyard [Gems](/docs/userguide/gems/structure.md), [AZ::Modules](/docs/userguide/modules/parts.md), and [AZ::Components](/docs/user-guide/features/engine/components/create-component.md)\. The next section includes a brief overview of asset builders inside gems\.
+This topic assumes that you have a working knowledge of O3DE [Gems](/docs/userguide/gems/structure.md), [AZ::Modules](/docs/userguide/modules/parts.md), and [AZ::Components](/docs/user-guide/features/engine/components/create-component.md)\. The next section includes a brief overview of asset builders inside gems\.
 
 ## Asset Builders Inside Gems {#asset-builder-custom-asset-builders-inside-gems}
 
@@ -39,7 +39,7 @@ Gems contain two kinds of modules:
 + A runtime module: `gem_name.dll`
 + A tools module: `gem_name.Editor.dll`
 
-These modules contain [system components](/docs/userguide/modules/system-components.md) and tool components\. When Lumberyard starts, an [AZ::ComponentApplication](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
+These modules contain [system components](/docs/userguide/modules/system-components.md) and tool components\. When O3DE starts, an [AZ::ComponentApplication](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
 
 ## 1\. Create Builder Classes {#asset-builder-custom-create-builder-class}
 
@@ -72,7 +72,7 @@ Example builder class code is located in the `lumberyard_version\dev\Gems\Custom
 In most cases, you should build a `JobDescriptor` for each processing job for each enabled platform\. Then, add the `JobDescriptor` to the `CreateJobsResponse` list in the callback for `CreateJobsFunction`\.
 
 Keep in mind the following:
-+ To ensure that critical files are included, Lumberyard Editor blocks on startup until all callbacks for `CreateJobFunction` have completed\. Due to this startup constraint, we recommend that your code perform minimal work during the `CreateJobsFunction` callback\. For heavy processing work, use the callback for the `ProcessJobFunction`\.
++ To ensure that critical files are included, O3DE Editor blocks on startup until all callbacks for `CreateJobFunction` have completed\. Due to this startup constraint, we recommend that your code perform minimal work during the `CreateJobsFunction` callback\. For heavy processing work, use the callback for the `ProcessJobFunction`\.
 + For extra configurability, you can place arbitrary key-value pairs into the `JobDescriptor.m_jobParameters` field\. The key-value pairs are retained and sent to the callback for `ProcessJobsFunction`\. You can store information gathered during the `CreateJobsFunction` callback in these key-value pairs and then pass the information as parameters to the callback for `ProcessJobsFunction`\.
 + To delete stale products, Asset Processor compares the `JobDescriptor` that you create with the `JobDescriptors` that were created in the last iteration\. Asset Processor compares `JobDescriptors` that have the same input source files, `PlatformInfo` value, and job key\.
 + You don't need to check whether a `JobDescriptor` that you create needs to be processed later\. Instead, create all possible jobs at every iteration for a particular input asset on each enabled platform\.
@@ -145,7 +145,7 @@ For more information about declaring, enabling, or disabling platforms, see [Con
 
 The following functions are available in the Asset Builder SDK\. For source code, see `lumberyard_version\dev\Code\Tools\AssetProcessor\AssetBuilderSDK\AssetBuilderSDK\AssetBuilderSDK.*`
 + `HasPlatform(const char* platformIdentifier)` - For the specified platform identifier, returns whether that platform is enabled for this `CreateJobsRequest`\. The platform identifier is data driven and user specified\. It is usually a string representation of the platform name \(for example, "pc" or "osx"\)\.
-+ `HasPlatformWithTag(const char* platformTag)` - For the specified platform tag, returns whether Lumberyard has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(i.e. "mobile"\)\.
++ `HasPlatformWithTag(const char* platformTag)` - For the specified platform tag, returns whether O3DE has any enabled platforms in the `CreateJobRequest` that contain that tag\. Tags are data driven and user specified\. They usually identify features that are not specific to a single platform \(i.e. "mobile"\)\.
 
 ### E\. Implement the Callback for ProcessJobFunction {#asset-builder-custom-create-builder-class-processjob-callback}
 
@@ -241,7 +241,7 @@ For the source code, see the `lumberyard_version\dev\Gems\CustomAssetExample\Cod
 
 ### More About Tagging {#asset-builder-custom-tag-components-more-about-tagging}
 
-Many system components contain logic and startup systems that can be detrimental to asset builds\. For example, systems that simulate physics, render GUIs, or attempt to acquire device or network contexts can negatively impact asset builder performance\. For this reason, Lumberyard's Asset Processor loads the same set of gems that Lumberyard Editor loads from the `lumberyard_version\dev\project_name\Config\Editor.xml` file, but activates only the components that are tagged as mandatory in builder mode\. This selective activation of tagged components also makes it possible for an arbitrary number of builder and non\-builder components to reside together inside a gem\.
+Many system components contain logic and startup systems that can be detrimental to asset builds\. For example, systems that simulate physics, render GUIs, or attempt to acquire device or network contexts can negatively impact asset builder performance\. For this reason, O3DE's Asset Processor loads the same set of gems that O3DE Editor loads from the `lumberyard_version\dev\project_name\Config\Editor.xml` file, but activates only the components that are tagged as mandatory in builder mode\. This selective activation of tagged components also makes it possible for an arbitrary number of builder and non\-builder components to reside together inside a gem\.
 
 ## 4\. \(Optional\) Implement Message Logging {#asset-builder-custom-optional-implement-message-logging}
 

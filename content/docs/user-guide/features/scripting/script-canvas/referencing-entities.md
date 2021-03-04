@@ -13,7 +13,7 @@ Nodes can contain an entity property\. These properties tell the node which enti
 1. In the node, position your pointer over the entity property and then click the target icon\.
 ![\[Select and deselect entities for nodes in the Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-node-select-entity.png)
 
-1. In the Lumberyard Editor viewport or the **Entity Outliner**, select the entity that you want to reference\.
+1. In the O3DE Editor viewport or the **Entity Outliner**, select the entity that you want to reference\.
 
 1. To clear the entity, position your pointer over the entity property and then click the **x** icon\.
 

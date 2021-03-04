@@ -1,5 +1,5 @@
 ---
-description: ' Customize EMotionFX objects in the Lumberyard Animation Editor. '
+description: ' Customize EMotionFX objects in the O3DE Animation Editor. '
 title: Customizing EMotionFX Objects
 ---
 # Customizing EMotion FX Objects {#animation-editor-customizing-emotionfx-objects}
@@ -11,7 +11,7 @@ title: Customizing EMotionFX Objects
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-The EMotion FX API supports registering custom object types, including state machine nodes, blend tree nodes, transitions, and conditions\. You can define custom object types in your game code or a custom gem\. This allows you to have granular control of the Lumberyard animation system\.
+The EMotion FX API supports registering custom object types, including state machine nodes, blend tree nodes, transitions, and conditions\. You can define custom object types in your game code or a custom gem\. This allows you to have granular control of the O3DE animation system\.
 
 ## Registering Custom Objects {#animation-editor-registering-custom-objects}
 
@@ -40,7 +40,7 @@ Before registering custom objects, activate the EMotion FX `SystemComponent` to 
 
 ## Implementing AnimGraphObject Subclasses {#animation-editor-implementing-animgraphobject-subclasses}
 
-`AnimGraphObject` is the base class for all objects in the animation graph\. The constructor on the base class is protected; instead, objects are instantiated with the `Create()` method\. The Lumberyard animation system \(EMotion FX\) uses an instance of `AnimGraphObject` to create other instances by calling the `Clone()` method\.
+`AnimGraphObject` is the base class for all objects in the animation graph\. The constructor on the base class is protected; instead, objects are instantiated with the `Create()` method\. The O3DE animation system \(EMotion FX\) uses an instance of `AnimGraphObject` to create other instances by calling the `Clone()` method\.
 
 Each `AnimGraphObject` subclass has a unique type ID that is used to serialize an object to and unserialize an object from an `.animgraph` file\. You use a public anonymous enum with a `TYPE_ID` member to declare the type ID for an object\.
 

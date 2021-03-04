@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio RTPC component to set values at runtime that produce
-  real-time tweaking of sounds in Amazon Lumberyard. '
+  real-time tweaking of sounds in Open 3D Engine. '
 title: Audio Rtpc
 ---
 # Audio Rtpc {#component-audio-rtpc}
