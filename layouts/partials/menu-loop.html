@@ -1,0 +1,50 @@
+{{ $home   := site.BaseURL }}
+{{ $here   := .RelPermalink }}
+{{ $main   := site.Menus.main }}
+
+<ul class="mr-auto navbar-nav">
+{{ with $main }}
+  {{ range . }}
+    {{ $isHere := eq .URL $here }}
+    <li class="
+      navbar-start 
+      navbar-item
+      {{ if $isHere }} is-active{{ end }}
+      {{ if .HasChildren }} dropdown {{ end }}">
+      <a href="{{ .URL }}" {{ if eq .Post "external" }} target="_blank"  {{ end }}
+      class="
+        text-light
+        nav-link 
+        navbar-item
+        {{ if $isHere }} is-active{{ end }} 
+        {{ if .HasChildren }} dropdown-toggle {{ end }}" 
+        {{if .HasChildren }}
+          id="navbarDropdown" 
+          role="button" 
+          data-toggle="dropdown" 
+          aria-haspopup="true" 
+          aria-expanded="false"
+        {{ end }}>
+        {{ .Name }}
+      </a>
+
+      {{ if .HasChildren }}
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          {{ range .Children }}
+            <a class="dropdown-item" 
+            href="{{ .URL }}" 
+            {{ if eq .Post "external" }} target="_blank" {{ end }}>
+              {{ .Name }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </li>
+  {{ end }}
+  <li class="parent-menu-item sm:self-start">
+    <a href="https://twitter.com/OCI_ORG" class="p-2" target="_blank" title="follow us on Twitter"><ion-icon name="logo-twitter" class="pt-1"></ion-icon></a>
+  </li>
+{{ end }}
+  
+
+</ul>
