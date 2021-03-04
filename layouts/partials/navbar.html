@@ -3,6 +3,7 @@
 {{ $title  := site.Title }}
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.main }}
+{{ $social := site.Params.social }}
 
 <div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
   <div class="container">
@@ -22,19 +23,11 @@
       </button>
 
       <div class="collapse navbar-collapse" id="main-nav">
-        <ul class="navbar-nav mr-auto">
-          {{ with $menu }}
-          {{ range . }}
-          {{ $isHere := eq .URL $here }}
-          <li class="navbar-start navbar-item{{ if $isHere }} is-active{{ end }}">
-            {{ $isExternal := hasPrefix .URL "http" }}
-            <a class="nav-link" href="{{ .URL }}"{{ if $isExternal }} target="_blank"{{ end }}>
-              {{ .Name }}
-            </a>
-            {{ end }}
-          </li>
-          {{ end }}
-        </ul>
-      </div>
+        {{ partial "menu-loop.html" . }}
+        
+        {{ with $social }}
+          {{ partial "social-buttons.html" . }}
+        {{ end }}
+      </div>  
   </div> 
 </div>
