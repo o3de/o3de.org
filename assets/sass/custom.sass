@@ -71,6 +71,7 @@ $font-family-headers: "Open Sans"
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-blue: #1E71EB
+$o3de-darkblue: #011C46
 $o3de-lightblue: #D2EDFF
 $o3de-green: #58BD61
 
@@ -178,3 +179,18 @@ $width: '59vw';
 
 .home-logo 
   max-width: 100%
+
+// layouts/footer.html 
+
+.footer 
+  background-image: url(/img/home/footer-bg.png)
+  background-size: cover
+  background-color: $o3de-darkblue
+  @include media-breakpoint-up(lg)
+    height: 300px
+
+// layouts/social-buttons.html 
+
+.social 
+  font-size: 2rem
+  padding: 0.5rem
