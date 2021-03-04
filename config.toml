@@ -1,6 +1,6 @@
-title = "Hugo Netlify Starter"
+title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-copyright = "Cloud Native Computing Foundation"
+copyright = "Linux Foundation"
 
 enableGitInfo = true
 
@@ -9,9 +9,9 @@ style = "paraiso-dark"
 
 [params]
 font_awesome_version = "5.12.0"
-description = "Boilerplate for building beautiful websites"
+description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, bringing together over 30 fully matured and integrated 3D authoring tools, enabling users to build AAA games, cinema quality 3D worlds for video production, and high-fidelity simulations for non-gaming use cases with zero lisencing fees, commercial terms, or disclosure obligations."
 favicon = "favicon.png"
-repositoryUrl = "https://github.com/cncf/hugo-netlify-starter"
+repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
 
 [params.logos]
@@ -20,7 +20,7 @@ navbar = "o3de-color.png"
 [[params.social]]
 name = "Twitter"
 color = "#00aced"
-url = "https://twitter.com/CloudNativeFdn"
+url = "https://twitter.com/o3de"
 icon = "fab fa-twitter"
 
 [[params.fonts]]
@@ -39,16 +39,35 @@ sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
 [[menu.main]]
-name = "Home"
-url = "/"
+name = "Download"
+url = "/download"
 weight = 1
 
 [[menu.main]]
-name = "Documentation"
-url ="/docs/"
+name = "News"
+url ="/news"
 weight = 2
 
 [[menu.main]]
-name = "Theme Documentation"
+name = "Community"
 url = "#"
 weight = 3
+identifier = "community"
+
+[[menu.main]]
+name = "Community subitem placeholder"
+url = "/placeholder"
+weight = 1 
+parent = "community"
+
+[[menu.main]]
+name = "Learn"
+url = "#"
+weight = 4
+identifier = "learn"
+
+[[menu.main]]
+name = "Documentation"
+url = "/docs"
+weight = 1 
+parent = "learn"
