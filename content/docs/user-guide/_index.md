@@ -1,7 +1,12 @@
 ---
 description: ' Open 3D Engine is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
+<<<<<<< HEAD
 title: What is O3DE?
+=======
+title: What is Lumberyard?
+toc: true
+>>>>>>> b6a8276e (Initial commit for docs layouts)
 ---
 # What is O3DE? {#lumberyard-intro}
 

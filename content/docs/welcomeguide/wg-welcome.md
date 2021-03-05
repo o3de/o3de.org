@@ -2,7 +2,12 @@
 description: ' Open 3D Engine is a free, cross-platform, cloud-connected real-time
   3D creation engine that you can use to build games, experiences, visualizations,
   and applications. '
+<<<<<<< HEAD
 title: Welcome to Open 3D Engine
+=======
+title: Welcome to Amazon Lumberyard 
+toc: true
+>>>>>>> b6a8276e (Initial commit for docs layouts)
 ---
 # Welcome to Open 3D Engine<a name="wg-welcome"></a>
 

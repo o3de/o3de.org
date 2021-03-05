@@ -1,9 +1,6 @@
-<div class="container mt-4 mb-4 pb-2 border-bottom">
-  <section class="row">
+<div class="border-bottom single-header">
       {{ if ne .Kind "section" }}
           {{ partial "breadcrumb.html" . }}
           {{ partial "github-edit.html" . }}
       {{ end }}
-  </section>
-</section>
 </div>
