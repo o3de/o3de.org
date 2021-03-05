@@ -59,6 +59,6 @@ For more information on setting up and installing Atom, see [Setup and Installat
 You can learn more about Atom in the following sections of this guide. 
 
 <!-- * **[Get Started](../get-started/_index.md)**: Explore materials and shaders in Atom, or set up a 3D environment with Atom's rendering features in O3DE. -->
-* **[BaseViewer Samples](baseviewer/_index.md)**: Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering. 
+* **[Atom Sample Viewer](atom-sample-viewer/_index.md)**: Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering. 
 <!-- * **[Tutorials](../tutorials/_index.md)**: Interact with a collection of tutorials on rendering with Atom. -->
 * **[Atom Core Systems](core-systems/_index.md)**: Dive into Atom’s rendering pipeline and learn about its core systems and how they work together. 
