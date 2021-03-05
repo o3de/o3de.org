@@ -13,31 +13,39 @@ Shape components generate helper geometries that can be used to define shapes fo
 * [Cylinder Shape](/docs/user-guide/features/components/reference/shape/cylinder-shape.md) - Generates cylinder geometry for volumes and triggers.
 * [Disk Shape](/docs/user-guide/features/components/reference/shape/disk-shape.md) - Generates disk geometry for areas and triggers.
 * [Polygon Prism Shape](/docs/user-guide/features/components/reference/shape/polygon-prism-shape.md) - Generates n-sided prism geometry for volumes and triggers.
-* [Quad Shape](/docs/user-guide/features/components/reference/shape/quad-shape.md) - Generates quad plane geometry for areas and triggers.
+* [Quad Shape](/docs/user-guide/features/components/reference/shape/quad-shape.md) - Generates quad-plane geometry for areas and triggers.
+
 * [Sphere Shape](/docs/user-guide/features/components/reference/shape/sphere-shape.md) - Generates sphere geometry for volumes and triggers.
 * [Spline](/docs/user-guide/features/components/reference/shape/spline.md) - Generates lines and curves for paths.
 * [Tube Shape](/docs/user-guide/features/components/reference/shape/tube-shape.md) - Generates tube geometry for volumes and triggers.
 
 ## Using shape components ##
 
-An entity can only have one shape component.
+An entity can have only one Shape component.
 
-  > **Important:** Always use the Shape's component properties to scale the shape such as the **Dimensions**, **Height**, and **Radius** properties. Do not used the entity's Transform component to scale a shape component.
+
+  > **Important:** Always use the Shape's component properties to scale the shape, such as the **Dimensions**, **Height**, and **Radius** properties. Do not use the entity's Transform component to scale a Shape component.
+
   >
   >An entity containing a shape component should have a uniform and normalized scale; that is, the **Scale** property of the Transform component should be **X:** `1.0`, **Y:** `1.0`, **Z:** `1.0`. If a shape component is scaled non-uniformly, rendering and intersection tests use the largest vector of the Transform component's **Scale** property, yielding undesirable results.
   >
 
-By default, shapes are always visible in the O3DE editor. You can hide shapes on non-selected entities by disabling the **Visible** property in the shape component.
+By default, shapes are always visible in the Open 3D Engine (O3DE) editor. You can hide shapes on non-selected entities by disabling the **Visible** property in the shape component.
 
-To display a shape component for debugging purposes while in game mode, enable the **Game View** property.
 
-Each shape component provides a generic `ShapeService` that exposes functionality common to all shapes. Each shape also provides a more specific service, such as `BoxShapeService` or `SphereShapeService`.
+To display a Shape component for debugging purposes while in game mode, enable the **Game View** property.
+
+
+Each Shape component provides a generic `ShapeService` that exposes functionality common to all shapes. Each shape also provides a more specific service, such as `BoxShapeService` or `SphereShapeService`.
+
 
 ## Shape component EBus interface ##
 
-All shape components provide access to two separate request buses. The first bus is the `ShapeComponentRequestsBus` that returns general information about the shape component. The second bus is the `ShapeNameComponentRequestsBus` that returns property configurations for the specific shape. Information on the `ShapeNameComponentRequestsBus` can be found on the reference pages for each shape component.
+All Shape components provide access to two separate request buses. The first bus is the `ShapeComponentRequestsBus` that returns general information about the shape component. The second bus is the `ShapeNameComponentRequestsBus` that returns property configurations for the specific shape. Information on the `ShapeNameComponentRequestsBus` can be found on the reference pages for each shape component.
 
-All Shapes share a single notification bus named `ShapeComponentNotificationBus`.
+
+All shapes share a single notification bus named `ShapeComponentNotificationBus`.
+
 
 You can use the following functions with the event bus interface to communicate with other components in your game.
 
@@ -55,4 +63,4 @@ You can use the following functions with the event bus interface to communicate 
 
 | Notification Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `OnShapeChanged` | Notifies listeners that the shape component has been updated. | `ShapeChangeReasons` – Indicates whether the shape was updated by a transform change or a shape property change. | Void | Yes |
+| `OnShapeChanged` | Notifies listeners that the Shape component has been updated. | `ShapeChangeReasons` – Indicates whether the shape was updated by a transform change or a shape property change. | Void | Yes |
