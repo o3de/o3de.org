@@ -3,6 +3,7 @@ title: "Setting Up Atom"
 description: "Setting up Atom Rendering Engine"
 date: 2021-03-4
 toc: true
+weight: 200
 ---
 
 Atom is integrated into the built-in **Atom Sample Viewer** (formerly *BaseViewer*) application and the **Open 3D Engine (O3DE)**. Atom's source code is also available to build from source. You can build Atom from source and explore Atom Sample Viewer on all supported platforms: PC, Android, Mac, and iOS. The O3DE game engine is only supported on PC. 
@@ -35,9 +36,9 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
    
 1. Open the file */dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
    
-2. Launch Atom Sample Viewer by running *BaseViewerStandalone.exe* from the folder */dev/windows_vs2019/bin/profile/*.  
+2. Launch Atom Sample Viewer by running *AtomSampleViewerStandalone.exe* from the folder */dev/windows_vs2019/bin/profile/*.  
 
-    If this is your first time launching *BaseViewerStandalone.exe*, the Asset Processor application will open and begin processing assets for Atom Sample Viewer. Verify that the Asset Processor is building the required assets by checking that its status reads "Status: Working".
+    If this is your first time launching *AtomSampleViewerStandalone.exe*, the Asset Processor application will open and begin processing assets for Atom Sample Viewer. Verify that the Asset Processor is building the required assets by checking that its status reads "Status: Working".
     
     If not, all assets have already been processed and Atom Sample Viewer will open as usual. 
 
@@ -51,7 +52,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
 4. Verify that the Asset Processor is done building by checking that its status reads “Status: Idle”. 
    
-5. If Atom Sample Viewer isn’t open, run *BaseViewerStandalone.exe* again to open the Atom Sample Viewer window. 
+5. If Atom Sample Viewer isn’t open, run *AtomSampleViewerStandalone.exe* again to open the Atom Sample Viewer window. 
    
 
 #### Running Open 3D Engine (O3DE)
@@ -87,7 +88,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
    
 5. In the O3DE solution, you can build the *Atom Sample Viewer* or the *Editor* application. 
    
-    1. To build *Atom Sample Viewer*, right-click on the BaseViewerStandalone project and select "Build". Set this project as your startup project and run it. 
+    1. To build *Atom Sample Viewer*, right-click on the AtomSampleViewerStandalone project and select "Build". Set this project as your startup project and run it. 
     
         Note: Make sure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`. This variable can be found in the file */dev/bootstrap.cfg*.
 
@@ -99,7 +100,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 #### Building and Running Atom Sample Viewer
 1. First, follow the steps outlined in the [**Running Atom Sample Viewer**](#running-atom-sample-viewer) section under **PC**.
    
-2. Open the file *BaseViewer/project.json* and rename "executable_name" from "BaseViewerLauncher" to "BaseViewer.GameLauncher".
+2. Open the file */BaseViewer/project.json* and rename "executable_name" from "BaseViewerLauncher" to "BaseViewer.GameLauncher".
    
 3. Open the file *AssetProcessorPlatformConfig.ini* in a text editor and set the ios variable: `es3 = enabled`
    
@@ -147,7 +148,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 5. Set Atom’s build folder using CMake by running the following command: 
     `cmake . -B <atom-build>/dev/mac_xcode -G "Xcode" -DLY_3RDPARTY_PATH=<atom-build>/3rdParty/ -DLY_PROJECTS="BaseViewer" -DLY_UNITY_BUILD=ON`
 
-6. Build Atom using CMake by running the following command: `cmake --build <atom-build>/dev/mac_xcode --target BaseViewerStandalone --config profile`
+6. Build Atom using CMake by running the following command: `cmake --build <atom-build>/dev/mac_xcode --target AtomSampleViewerStandalone --config profile`
 
 7. Launch the Asset Processor to build required assets by running *AssetProcessor* from the folder */dev/mac_xcode/bin/profile/*.
     
@@ -159,7 +160,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
     *Note: Avoid running a sample in Atom Sample Viewer while the Asset Processor is still building. The application might crash.*
 
-9.  Run *BaseViewerStandalone* from the folder */dev/mac_xcode/bin/profile/*. 
+9.  Run *AtomSampleViewerStandalone* from the folder */dev/mac_xcode/bin/profile/*. 
     
 10. Test out the various RHI, RPI, and Feature samples.  
     
