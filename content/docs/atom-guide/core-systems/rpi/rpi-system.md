@@ -1,4 +1,11 @@
-# RPI system
+---
+title: "RPI System"
+description: "RPI System in the Atom Rendering Engine"
+date: 2021-03-04
+toc: false
+weight: 200
+---
+
 The RPI System is the central system of the render pipeline interface (RPI) that drives the rendering. The [RPI Architecture Diagram](./rpi.md#rpi-architecture) shows the RPI System's role in the entire RPI. This section explains how the RPI System renders and what components it contains that drive the rendering. 
 
 ## Components

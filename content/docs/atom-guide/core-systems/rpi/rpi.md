@@ -1,4 +1,10 @@
-# Render Pipeline Interface (RPI)
+---
+title: "Render Pipeline Interface"
+description: "Render Pipeline Interface in the Atom Rendering Engine"
+date: 2021-03-04
+toc: false
+weight: 100
+---
 
 The Render Pipeline Interface (RPI) is the central hub in Atom's rendering pipeline. Developers can use the RPI's C++ or JSON interface to customize the pipeline and create new features. The RPI is universal and platform-independent; it is built on top of the RHI, which communicates with all supported low level graphics APIs. Through the RPI, developers can accomplish the following:
 

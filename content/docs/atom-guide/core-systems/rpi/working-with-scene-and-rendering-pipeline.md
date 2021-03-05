@@ -1,4 +1,11 @@
-# Working with the Scene and Render Pipeline
+---
+title: "Working with the Scene and Render Pipeline"
+description: "Working with the Scene and Render Pipeline in the Atom Rendering Engine"
+date: 2021-03-04
+toc: false
+weight: 300
+---
+
 The Atom RPI can handle complex rendering use cases (for example, applications with many viewports) by using scenes and render pipelines. A **scene** in RPI contains feature processors, which handle the data to be rendered. A **render pipeline** defines how the scene is rendered. As a starting point, you need at least one scene and one render pipeline to begin rendering data. Additional scenes and render pipelines can be added for more complex rendering. 
 
 Each scene is independent of other scenes. A scene can have one or many render pipelines. When a render pipeline is added to a scene, it defines one way to render the scene. Additional render pipelines can be added to define more ways to render the scene. 
