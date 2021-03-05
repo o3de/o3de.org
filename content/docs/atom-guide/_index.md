@@ -6,7 +6,7 @@ toc: true
 weight: 100
 ---
 
-+ [What is Atom?](what-is-atom.md)
++ [What is Atom?](what-is-atom/_index.md)
 + [Setup and installation](setup/_index.md)
 + [Getting Started with Atom](get-started/_index.md)
 + [Atom Sample Viewer](atom-sample-viewer/_index.md)
