@@ -1,6 +1,7 @@
 ---
 description: ' Open 3D Engine provides tools for bundling assets and managing product and
   source dependencies so you never need to ship assets you don''t use. '
+linktitle: Asset bundler
 title: Bundle game assets in Open 3D Engine
 ---
 # Bundle game assets in Open 3D Engine {#asset-bundler-intro}

@@ -1,8 +1,8 @@
 ---
-description: ' Use script events to enable entities to communicate with each other
-  in Open 3D Engine. '
-title: Using Script Events
+description: ' Use script events to enable entities to communicate with each other in Open 3D Engine. '
+title: Script events
 ---
+
 # Using Script Events {#script-events}
 
 Scripting in O3DE is designed around event driven paradigms\. Rather than directly accessing information from a given entity or one of its components, you use events to send and receive information and take action in a decoupled environment\.
