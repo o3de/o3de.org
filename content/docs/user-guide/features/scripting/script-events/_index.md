@@ -1,7 +1,7 @@
 ---
 description: ' Use script events to enable entities to communicate with each other
   in Amazon Lumberyard. '
-title: Using Script Events
+title: Script events
 ---
 # Using Script Events {#script-events}
 

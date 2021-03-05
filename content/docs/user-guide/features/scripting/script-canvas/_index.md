@@ -1,6 +1,7 @@
 ---
 description: ' Get started with Amazon Lumberyard''s Script Canvas, a visual scripting environment
   to implement game logic without needing to write code. '
+linktitle: Script Canvas
 title: Creating Gameplay with Script Canvas
 ---
 # Creating Gameplay with Script Canvas {#script-canvas-intro}

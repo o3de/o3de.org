@@ -1,5 +1,6 @@
 ---
 description: ' Use Lua scripting in Amazon Lumberyard to automate your game project. '
+linktitle: Lua
 title: Writing Lua Scripts
 ---
 # Writing Lua Scripts {#lua-scripting-intro}
