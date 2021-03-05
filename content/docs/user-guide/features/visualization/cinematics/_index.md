@@ -1,5 +1,6 @@
 ---
 description: ' Learn how Open 3D Engine supports cinematics and scripted event sequences. '
+linktitle: Cinematics
 title: Create cinematic sequences
 ---
 # Create cinematic sequences {#cinematics-intro}
