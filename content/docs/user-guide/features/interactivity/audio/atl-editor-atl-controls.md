@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Controls Editor ''s ATL Control pane to add new audio
-  controls and to select and edit audio controls in Amazon Lumberyard. '
+  controls and to select and edit audio controls in Open 3D Engine. '
 title: ATL Controls Pane
 ---
 # ATL Controls Pane {#audio-atl-editor-atl-controls}

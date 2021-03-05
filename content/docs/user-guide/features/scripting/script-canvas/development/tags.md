@@ -1,5 +1,5 @@
 ---
-description: ' Add tags for Script Canvas nodes in Amazon Lumberyard. '
+description: ' Add tags for Script Canvas nodes in Open 3D Engine. '
 title: 'Script Canvas Tags for AZ Code Generator'
 ---
 # Script Canvas Tags for AZ Code Generator {#script-canvas-custom-nodes-az-code-generator-tags}

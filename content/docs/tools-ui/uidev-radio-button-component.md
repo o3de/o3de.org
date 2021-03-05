@@ -1,9 +1,9 @@
 ---
-description: ' Learn how to apply the Lumberyard UI 2.0 style for radio buttons in
-  Lumberyard gems and tools. '
-title: Lumberyard UI radio button style
+description: ' Learn how to apply the O3DE UI 2.0 style for radio buttons in
+  O3DE gems and tools. '
+title: O3DE UI radio button style
 ---
-# Lumberyard UI radio button style<a name="uidev-radio-button-component"></a>
+# O3DE UI radio button style<a name="uidev-radio-button-component"></a>
 
 Use radio buttons to enable users to select from two or more options, when users must select exactly one choice\. Choosing a radio button deselects the previously selected button\.
 
@@ -56,7 +56,7 @@ radioButton1->setEnabled(false);
 
 ## C\+\+ API reference<a name="radio-button-api-ref"></a>
 
-For details on the **radio button** API, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **radio button** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::RadioButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_radio_button.html)
 
 Relevant Qt documentation includes the following topics:

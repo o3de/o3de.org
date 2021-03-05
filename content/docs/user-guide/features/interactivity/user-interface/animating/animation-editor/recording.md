@@ -1,5 +1,5 @@
 ---
-description: ' Use Lumberyard''s Animation Editor to record a new animation after you have
+description: ' Use O3DE''s Animation Editor to record a new animation after you have
   created a new sequence. '
 title: Recording Animation Data
 ---

@@ -1,17 +1,17 @@
 ---
-description: ' Learn how to use Amazon Lumberyard''s Project Configurator to configure the
+description: ' Learn how to use Open 3D Engine''s Project Configurator to configure the
   system entity. '
 title: Configuring System Entities
 ---
 # Configuring System Entities {#az-module-system-entities-configuring}
 
-A single *system entity* lives at the heart of every Lumberyard application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within Lumberyard\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)**\.
+A single *system entity* lives at the heart of every O3DE application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within O3DE\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)**\.
 
 **To configure system entities**
 
 1. Compile a profile build of your project so that the Project Configurator can load your project's compiled code\.
 
-1. Open the Lumberyard Project Configurator, located at `lumberyard-version\dev\Bin64BuildPlatform\ProjectConfigurator.exe`\. For example, when using Visual Studio 2017 as your build platform, the Project Configurator is located at `lumberyard-version\dev\Bin64vc141\ProjectConfigurator.exe`\.
+1. Open the O3DE Project Configurator, located at `lumberyard-version\dev\Bin64BuildPlatform\ProjectConfigurator.exe`\. For example, when using Visual Studio 2017 as your build platform, the Project Configurator is located at `lumberyard-version\dev\Bin64vc141\ProjectConfigurator.exe`\.
 
 1. In the Project Configurator, select your project\.
 
@@ -29,7 +29,7 @@ A single *system entity* lives at the heart of every Lumberyard application\. Th
    1. Displays the list in the **Added required components** dialog box\. The following image shows an example\.
 ![\[Added required components in the System Entity Editor.\]](/images/user-guide/modules/az-module-system-entities-added-required-components.png)
 **Note**
-Some system components are optional, and some are required\. Both the Lumberyard engine and the gems that your project uses can require certain components\.
+Some system components are optional, and some are required\. Both the O3DE engine and the gems that your project uses can require certain components\.
 
 1. In the **Added required components** dialog box, click **OK**\.
 

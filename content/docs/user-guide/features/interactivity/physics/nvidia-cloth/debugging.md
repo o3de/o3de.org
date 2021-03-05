@@ -1,5 +1,5 @@
 ---
-description: ' Use visual debugging in Amazon Lumberyard for NVIDIA Cloth. '
+description: ' Use visual debugging in Open 3D Engine for NVIDIA Cloth. '
 title: Cloth visual debugger
 ---
 # Cloth visual debugger {#nvidia-cloth-debugging}

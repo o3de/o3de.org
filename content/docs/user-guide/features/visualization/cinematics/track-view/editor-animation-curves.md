@@ -1,6 +1,6 @@
 ---
 description: ' Use the Curve Editor in <guilabel>Track View</guilabel> editor to manage animations in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Using Animation Curves
 ---
 # Using Animation Curves {#cinematics-track-view-editor-animation-curves}

@@ -1,5 +1,5 @@
 ---
-description: ' Work with the Input component in Amazon Lumberyard. '
+description: ' Work with the Input component in Open 3D Engine. '
 title: Working with the Input Component
 ---
 # Working with the Input Component {#working-with-the-input-component}

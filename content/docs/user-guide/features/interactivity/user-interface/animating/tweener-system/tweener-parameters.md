@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to modify Lua script parameters in the Scripted Entity Tweener
-  system for Amazon Lumberyard. '
+  system for Open 3D Engine. '
 title: Tweener Parameters
 ---
 # Tweener Parameters {#ui-animating-tweener-parameters}

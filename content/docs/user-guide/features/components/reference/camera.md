@@ -1,6 +1,6 @@
 ---
 description: ' Use the Camera component to allow an entity to be used as a camera
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Camera
 ---
 # Camera {#component-camera}

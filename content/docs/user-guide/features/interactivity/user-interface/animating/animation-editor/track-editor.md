@@ -1,6 +1,6 @@
 ---
 description: ' Use the Animation Editor''s Track Editor to preview an animation, change
-  the timeline, and work with keys in Amazon Lumberyard. '
+  the timeline, and work with keys in Open 3D Engine. '
 title: Using the Track Editor
 ---
 # Using the Track Editor {#ui-animation-track-editor}

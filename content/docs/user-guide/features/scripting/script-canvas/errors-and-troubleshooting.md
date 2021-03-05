@@ -1,5 +1,5 @@
 ---
-description: ' Use C++ macros for error management and troubleshooting in Amazon Lumberyard. '
+description: ' Use C++ macros for error management and troubleshooting in Open 3D Engine. '
 title: 'Script Canvas Errors and Troubleshooting'
 ---
 # Script Canvas Errors and Troubleshooting {#script-canvas-errors-and-troubleshooting}

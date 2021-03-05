@@ -1,6 +1,6 @@
 ---
 description: ' Use cinematic lighting for track view sequences in the <guilabel>Track View</guilabel> editor
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Adding Lighting
 ---
 # Adding Lighting {#cinematics-adding-lighting-to-scenes}

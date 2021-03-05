@@ -1,9 +1,9 @@
 ---
-description: ' Use the Lumberyard UI 2.0 card component as a container to organize
+description: ' Use the O3DE UI 2.0 card component as a container to organize
   component property settings and actions together. '
-title: Lumberyard UI card component
+title: O3DE UI card component
 ---
-# Lumberyard UI card component<a name="uidev-card-component"></a>
+# O3DE UI card component<a name="uidev-card-component"></a>
 
 Use cards to display information in highly interactive, flexible containers\. Users can easily stack, reorder, and collapse these containers\. All content within a card should relate to only one idea\. Cards should be easy to scan for relevant and actionable information, and are predominantly used to display editable details for a component or a class\.
 
@@ -27,7 +27,7 @@ Cards allow for a certain amount of customization\. The basic layout of a card i
 
 1.  **Card icon**
 
-   \(Optional\) Cards can have their own unique icon related to their purpose\. For the full list of icons, see [Lumberyard component icons](uidev-component-icons.md)\.
+   \(Optional\) Cards can have their own unique icon related to their purpose\. For the full list of icons, see [O3DE component icons](uidev-component-icons.md)\.
 **Note**
 Two icons are required for new components:
 A 16 x 16 SVG with a background box for the perspective window\.
@@ -234,7 +234,7 @@ connect(button, &QPushButton::clicked, ui->functionalCard, &AzQtComponents::Card
 
 ## C\+\+ API reference<a name="card-api-ref"></a>
 
-For details on the **card** API, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **card** API, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::Card](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card.html)
 +  [AzQtComponents::CardHeader](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card_header.html)
 +  [AzQtComponents::CardNotification](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_card_notification.html)

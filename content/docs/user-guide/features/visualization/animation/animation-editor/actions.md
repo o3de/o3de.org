@@ -1,5 +1,5 @@
 ---
-description: ' You can add an action to a state or transition in an Amazon Lumberyard Animation Editor
+description: ' You can add an action to a state or transition in an Open 3D Engine Animation Editor
   animation graph to trigger a parameter value change. '
 title: Actions
 ---

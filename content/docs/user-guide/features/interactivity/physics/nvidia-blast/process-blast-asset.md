@@ -11,7 +11,7 @@ title: Processing assets for NVIDIA Blast
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-Blast assets that are exported from Houdini must be processed by **Asset Processor** to generate run\-time assets\. There are two methods for processing Blast assets for use in Lumberyard: an automated method using Python Asset Builder, and a manual method where you select the meshes to be processed\.
+Blast assets that are exported from Houdini must be processed by **Asset Processor** to generate run\-time assets\. There are two methods for processing Blast assets for use in O3DE: an automated method using Python Asset Builder, and a manual method where you select the meshes to be processed\.
 
 **Important**
 Processing meshes automatically is less time consuming than manually setting up blast meshes to process\. It is important to understand both processes, however\. You might use the automatic process for the initial export and then manually edit the mesh assets to add modifiers for custom normals or vertex color streams\.
@@ -32,7 +32,7 @@ Automatically processing assets for NVIDIA Blast requires that your project has 
 
 1. Copy the `.blast` and `.fbx` files for your Blast asset into an asset directory in your project\.
 
-1. Start Lumberyard Editor\. **Asset Processor** detects the `.blast` and `.fbx` files and generates the runtime mesh assets, a blast asset, and a blast slice asset\.
+1. Start O3DE Editor\. **Asset Processor** detects the `.blast` and `.fbx` files and generates the runtime mesh assets, a blast asset, and a blast slice asset\.
 
 1. You can verify that the assets have processed successfully in the **Jobs** tab of **Asset Processor**\. If you need to reprocess the assets, do the following:
 
@@ -51,7 +51,7 @@ Manually processing blast assets requires you to add a mesh group for each chunk
 
 1. Copy the `.blast` and `.fbx` files for your Blast asset into an asset directory in your project\.
 
-1. Start Lumberyard Editor\.
+1. Start O3DE Editor\.
 
 1. Locate the `.fbx` asset in **Asset Browser** and double\-click on the asset to open **FBX Settings**\.
 

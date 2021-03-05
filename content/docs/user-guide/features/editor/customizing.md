@@ -1,9 +1,9 @@
 ---
-description: ' Customize Lumberyard Editor by docking windows and toolbars, customizing
-  toolbars and menus, and updating editor settings and global preferences for Amazon Lumberyard. '
-title: Customizing Lumberyard Editor
+description: ' Customize O3DE Editor by docking windows and toolbars, customizing
+  toolbars and menus, and updating editor settings and global preferences for Open 3D Engine. '
+title: Customizing O3DE Editor
 ---
-# Customizing Lumberyard Editor {#lumberyard-editor-customizing}
+# Customizing O3DE Editor {#lumberyard-editor-customizing}
 
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings\.
 
@@ -63,13 +63,13 @@ You can also give toolbars and menus your own personal touch\.
 
 You can change the default settings to customize the look and functionality of the editor\.
 
-**To customize the look and features of Lumberyard Editor**
-+ In Lumberyard Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
+**To customize the look and features of O3DE Editor**
++ In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
 ![\[General Settings tab in the Preferences window\]](/images/user-guide/editor-preferences.png)
 
 ### General Settings {#lumberyard-editor-customizing-preferences-general}
 
-You can change the general Lumberyard Editor settings and file settings\.
+You can change the general O3DE Editor settings and file settings\.
 
 
 **General Settings**
@@ -87,10 +87,10 @@ You can change the general Lumberyard Editor settings and file settings\.
 | Show Time in Console |  Displays the time in the console window\.  |
 | Toolbar Icon Size |  Adjusts the toolbar icon size\.  Default: `16` \(32 pixels\)\.  |
 | Stylus Mode |  Enables stylus mode for tablets and other pointing devices\.  |
-|  **Enable UI 2\.0 \(EXPERIMENTAL\)**  |  Enables the updated user interface \(UI\) in Lumberyard Editor\.  |
+|  **Enable UI 2\.0 \(EXPERIMENTAL\)**  |  Enables the updated user interface \(UI\) in O3DE Editor\.  |
 |  **Enable Scene Inspector \(EXPERIMENTAL\)**  | Enables the option to inspect scenes in files such as \.fbx files\. |
 |  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode\.  |
-|  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in Lumberyard Editor\.  |
+|  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in O3DE Editor\.  |
 |  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport\. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/features/editor/viewport/working-with-viewport-interaction-model.md)\.  |
 
 
@@ -98,7 +98,7 @@ You can change the general Lumberyard Editor settings and file settings\.
 
 | Parameter | Description |
 | --- | --- |
-| Show Welcome to Lumberyard at startup |  Displays the **Welcome to Lumberyard** dialog box at startup\.  |
+| Show Welcome to O3DE at startup |  Displays the **Welcome to O3DE** dialog box at startup\.  |
 |  **Show Error: Circular dependency**  |  Shows an error message when adding a slice instance to a target would create cyclic asset dependency\. All other overrides to slices will be saved\.  |
 
 

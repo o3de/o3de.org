@@ -1,6 +1,6 @@
 ---
 description: ' Use virtual file system on non-PC platforms in order to live reload
-  assets in Amazon Lumberyard.s '
+  assets in Open 3D Engine.s '
 title: Live Reloading and VFS
 ---
 # Live Reloading and VFS {#asset-pipeline-live-reloading}

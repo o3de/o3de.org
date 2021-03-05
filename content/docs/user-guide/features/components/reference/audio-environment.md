@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Environment component to set up a default environment
-  for an entity in Amazon Lumberyard. '
+  for an entity in Open 3D Engine. '
 title: Audio Environment
 ---
 # Audio Environment {#component-audio-environment}

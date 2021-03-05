@@ -1,5 +1,5 @@
 ---
-description: ' Animate characters in scenes for Amazon Lumberyard with the <guilabel>Track View</guilabel> editor. '
+description: ' Animate characters in scenes for Open 3D Engine with the <guilabel>Track View</guilabel> editor. '
 title: Animating Characters in Scenes
 ---
 # Animating Characters in Scenes {#cinematics-animation-intro}

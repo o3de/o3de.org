@@ -1,6 +1,6 @@
 ---
 description: ' Use a text input component to make an element offer player input in
-  Lumberyard''s UI Editor. '
+  O3DE''s UI Editor. '
 title: TextInput
 ---
 # TextInput {#ui-editor-components-textinput}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the Actions properties in Lumberyard UI Editor to trigger an
+description: ' Use the Actions properties in O3DE UI Editor to trigger an
   event when one of the listed actions occur. '
 title: Actions
 ---

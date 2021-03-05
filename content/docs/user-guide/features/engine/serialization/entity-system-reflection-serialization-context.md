@@ -1,11 +1,11 @@
 ---
 description: ' Use the serialization context to provide persistence for C++ objects
-  or Lumberyard types in Amazon Lumberyard. '
+  or O3DE types in Open 3D Engine. '
 title: Serialization Context
 ---
 # Serialization Context {#component-entity-system-reflection-serialization-context}
 
-You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C\+\+ objects or any Lumberyard type\. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:
+You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C\+\+ objects or any O3DE type\. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:
 
 ```
 class SerializedObject
@@ -44,7 +44,7 @@ serializedContext->Class<SerializedObject>()
 
 ## Serializers {#component-entity-system-reflection-serialization-context-serializers}
 
-Serializers are a useful way to provide custom data formats\. If you want to do custom processing on an object before writing or reading it, you can override Lumberyard's default serializer\.
+Serializers are a useful way to provide custom data formats\. If you want to do custom processing on an object before writing or reading it, you can override O3DE's default serializer\.
 
 To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface\. Use the interface to override how data is handled as it is streamed into its persistent format\. You can also use the interface to determine the actions that occur when the reflected object is serialized \(read or written\)\.
 
@@ -133,7 +133,7 @@ AZStd::unique_ptr<T>
 You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`\. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object\.
 
 **Stable Elements**
-Elements are considered stable if their pointers do not change when other elements are added to or removed from a container\. Lumberyard's implementation of stable elements corresponds to the [C\+\+17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard\. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence\. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous\. Stable elements can be removed from a container without affecting other elements in the container\. You can use the `IsStableElements` function to determine the status of a container's elements\. If a container's elements are not stable, you must enumerate them in order for them to be serialized\.
+Elements are considered stable if their pointers do not change when other elements are added to or removed from a container\. O3DE's implementation of stable elements corresponds to the [C\+\+17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard\. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence\. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous\. Stable elements can be removed from a container without affecting other elements in the container\. You can use the `IsStableElements` function to determine the status of a container's elements\. If a container's elements are not stable, you must enumerate them in order for them to be serialized\.
 
 The following code example shows how to set up serialization for a container that stores a dynamic sequence of homogenous elements\.
 
@@ -201,7 +201,7 @@ void EnumElements(void* instance, const ElementCB& cb) override
 }
 ```
 
-To make a template editable in Lumberyard Editor and the reflected property editor, override the constraint functions in the following code:
+To make a template editable in O3DE Editor and the reflected property editor, override the constraint functions in the following code:
 
 ```
 // The following code defines the characteristics of the container that is serialized.

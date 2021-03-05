@@ -1,6 +1,6 @@
 ---
 description: ' The Input Enabled setting determines whether the component can be interacted
-  with in Lumberyard. '
+  with in O3DE. '
 title: Input Enabled
 ---
 # Input Enabled {#ui-editor-components-interactive-properties-input}

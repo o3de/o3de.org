@@ -1,5 +1,5 @@
 ---
-description: ' Use shape components in Amazon Lumberyard to provide shape facilities for trigger
+description: ' Use shape components in Open 3D Engine to provide shape facilities for trigger
   volumes, collision volumes, audio area ambiances, and audio areas. '
 title: 'Shapes: Cylinder, Capsule, Disk, Box, Sphere, Compound'
 ---
@@ -53,7 +53,7 @@ If an entity has been scaled nonuniformly, rendering and intersection tests use 
 
 ## Box Shape Component Properties {#box-shape-component-properties}
 
-![\[The box shape component properties in Lumberyard Editor.\]](/images/user-guide/component/box-shape-component-properties.png)
+![\[The box shape component properties in O3DE Editor.\]](/images/user-guide/component/box-shape-component-properties.png)
 
 The **Box Shape** component has the following properties\.
 
@@ -63,7 +63,7 @@ The **Box Shape** component has the following properties\.
 | Name | Description |
 | --- | --- |
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
-| Game View |  Renders the box shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl\+G**\.  |
+| Game View |  Renders the box shape in game mode in O3DE Editor\. To enter game mode, press **Ctrl\+G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
 | Dimensions |  Defines dimensions of the shape along all three axes in local space\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 |  **Edit**  | Choose Edit, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\. |
@@ -74,7 +74,7 @@ The **Box Shape** component also has its own Component Mode with several linear 
 
 ## Capsule Shape Component Properties {#capsule-shape-component-properties}
 
-![\[The Capsule Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/capsule-shape-component-properties.png)
+![\[The Capsule Shape component properties in O3DE Editor.\]](/images/user-guide/component/capsule-shape-component-properties.png)
 
 The **Capsule Shape**component has the following properties\.
 
@@ -91,7 +91,7 @@ The **Capsule Shape**component has the following properties\.
 
 ## Compound Shape Component Properties {#compound-shape-component-properties}
 
-![\[The Compound Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/compound-shape-component-properties.png)
+![\[The Compound Shape component properties in O3DE Editor.\]](/images/user-guide/component/compound-shape-component-properties.png)
 
 With the **Compound Shape** component, you can combine shapes to create a complex object to generate a physics collider, trigger shape, or any other application of shapes\. The individual shapes might or might not be children of the entity with the **Compound Shape** component\.
 
@@ -111,7 +111,7 @@ See the following **Compound Shape** properties\.
 
 ## Cylinder Shape Component Properties {#cylinder-shape-component-properties}
 
-![\[The Cylinder Shape component properties in Lumberyard Editor.\]](/images/user-guide/component/cylinder-shape-component-properties.png)
+![\[The Cylinder Shape component properties in O3DE Editor.\]](/images/user-guide/component/cylinder-shape-component-properties.png)
 
 The **Cylinder Shape** component has the following properties\.
 
@@ -121,14 +121,14 @@ The **Cylinder Shape** component has the following properties\.
 | Name | Description |
 | --- | --- |
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
-| Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
+| Game View |  Renders the shape in game mode in O3DE Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
 | Height |  The height of the cylinder\. If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 | Radius |  The radius of the cylinder\. If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 
 ## Disk Shape Component Properties {#disk-shape-component-properties}
 
-![\[See the disk shape component properties in Lumberyard Editor.\]](/images/user-guide/component/disk-shape-component-properties.png)
+![\[See the disk shape component properties in O3DE Editor.\]](/images/user-guide/component/disk-shape-component-properties.png)
 
 See the following **Disk Shape** properties\.
 
@@ -138,13 +138,13 @@ See the following **Disk Shape** properties\.
 | Name | Description |
 | --- | --- |
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
-| Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
+| Game View |  Renders the shape in game mode in O3DE Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
 | Radius |  The radius of the disk\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 
 ## Sphere Shape Component Properties {#sphere-shape-component-properties}
 
-![\[See the sphere shape component properties in Lumberyard Editor.\]](/images/user-guide/component/sphere-shape-component-properties.png)
+![\[See the sphere shape component properties in O3DE Editor.\]](/images/user-guide/component/sphere-shape-component-properties.png)
 
 See the following **Sphere Shape** properties\.
 
@@ -154,7 +154,7 @@ See the following **Sphere Shape** properties\.
 | Name | Description |
 | --- | --- |
 | Visible |  The component always appears in the viewport, even if the entity isn't selected\.   |
-| Game View |  Renders the shape in game mode in Lumberyard Editor\. To enter game mode, press **Ctrl \+ G**\.  |
+| Game View |  Renders the shape in game mode in O3DE Editor\. To enter game mode, press **Ctrl \+ G**\.  |
 |  **Shape Color**  |  Specifies the color to render the shape\.  |
 | Radius |  The radius of the sphere\.  If the **[Transform](/docs/user-guide/features/components/transform.md)** component applies a scale, these dimensions are multiplied by the same value\.  |
 

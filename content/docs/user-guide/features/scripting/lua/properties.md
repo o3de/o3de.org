@@ -1,6 +1,6 @@
 ---
-description: ' Specify the properties of a Lua script component that appear in Lumberyard Editor
-  in Amazon Lumberyard. '
+description: ' Specify the properties of a Lua script component that appear in O3DE Editor
+  in Open 3D Engine. '
 title: Properties Table
 ---
 # Properties Table {#lua-scripting-ces-properties}
@@ -29,9 +29,9 @@ local ChickenMannequinControllerSM =
 ...
 ```
 
-The result is the following **Properties** user interface in Lumberyard Editor:
+The result is the following **Properties** user interface in O3DE Editor:
 
-![\[Properties in Lumberyard Editor defined by the Properties table\]](/images/user-guide/scripting/lua/lua-scripting-ces-4.png)
+![\[Properties in O3DE Editor defined by the Properties table\]](/images/user-guide/scripting/lua/lua-scripting-ces-4.png)
 
 The type that you provide as the default value determines how the property is appears in the editor user interface\. You can further customize the representation of the property in the editor by specifying additional attributes in a table format\. All property types support a description field that appears when you pause your mouse on the property name in the editor\.
 
@@ -48,7 +48,7 @@ DebugMovement = false,
 AllowMovement = { default = true, description = "Allow or restrict movement of the object." },
 ```
 
-In Lumberyard Editor, Boolean values are represented by a check box\.
+In O3DE Editor, Boolean values are represented by a check box\.
 
 ### Numeric Values \(Integer or Floating Point Numbers\) {#lua-scripting-ces-properties-types-numeric}
 
@@ -60,7 +60,7 @@ Velocity = { default = 1.0, suffix = "m/s", description = "Initial Velocity Of T
 Distance = { default = 5.0, min = 2.0, max = 10.0, step = 2.0, suffix = "m", description = "The Distance An Object Can Travel In Meters" },
 ```
 
-In Lumberyard Editor, numeric values are represented by an edit field with increase/decrease arrows\. Numeric values can do the following:
+In O3DE Editor, numeric values are represented by an edit field with increase/decrease arrows\. Numeric values can do the following:
 + Provide a custom suffix to indicate units\.
 + Set minimum and maximum values\.
 + Provide a step value \(how much the value increases or decreases when the user clicks the arrows on the right side of the edit field\)\.
@@ -75,7 +75,7 @@ Name = { default = "Default Name", description = "The name of the entity" },
 StartingState = { "Idle", description = "Specify the starting state. Valid starting states are Idle and Fidget" },
 ```
 
-In Lumberyard Editor, string values are represented by a text edit box\.
+In O3DE Editor, string values are represented by a text edit box\.
 
 ### Reflected Classes {#lua-scripting-ces-properties-types-reflected-classes}
 

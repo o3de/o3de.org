@@ -1,11 +1,11 @@
 ---
-description: ' Learn how to apply the Lumberyard UI 2.0 styles for push buttons and
-  tool buttons in Lumberyard gems and tools. '
-title: Lumberyard UI button styles
+description: ' Learn how to apply the O3DE UI 2.0 styles for push buttons and
+  tool buttons in O3DE gems and tools. '
+title: O3DE UI button styles
 ---
-# Lumberyard UI button styles<a name="uidev-button-component"></a>
+# O3DE UI button styles<a name="uidev-button-component"></a>
 
-Use buttons to enable users to make selections that cause the UI to take action\. There are four types of button styles in Lumberyard:
+Use buttons to enable users to make selections that cause the UI to take action\. There are four types of button styles in O3DE:
 + Primary button
 + Secondary button
 + Dropdown button
@@ -87,7 +87,7 @@ toolButton->setMenu(menu);
 
 ## C\+\+ API reference<a name="button-api-ref"></a>
 
-For details on the button styles, see the following topic in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the button styles, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::PushButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_push_button.html)
 
 Relevant Qt documentation includes the following topics:

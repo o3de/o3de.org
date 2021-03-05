@@ -1,6 +1,6 @@
 ---
 description: ' Use EventData types to create custom parameters for motion events in
-  Amazon Lumberyard. '
+  Open 3D Engine. '
 title: Creating EventData Types
 ---
 # Creating EventData Types {#char-animation-editor-custom-events-parameters-creating-eventdata-types}

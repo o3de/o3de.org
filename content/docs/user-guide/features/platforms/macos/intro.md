@@ -1,8 +1,8 @@
 ---
-description: ' Use Amazon Lumberyard to build games for Mac (macOS) computers. '
-title: Create macOS projects in Lumberyard
+description: ' Use Open 3D Engine to build games for Mac (macOS) computers. '
+title: Create macOS projects in O3DE
 ---
-# Create macOS projects in Lumberyard {#osx-intro}
+# Create macOS projects in O3DE {#osx-intro}
 
 
 ****
@@ -11,7 +11,7 @@ title: Create macOS projects in Lumberyard
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-You can use Lumberyard to build macOS applications\. Lumberyard includes four macOS\-supported sample projects that you can use to learn how to build assets for macOS games using the Asset Processor, build shaders using the remote shader compiler, and build and deploy macOS applications using the Lumberyard build tools\.
+You can use O3DE to build macOS applications\. O3DE includes four macOS\-supported sample projects that you can use to learn how to build assets for macOS games using the Asset Processor, build shaders using the remote shader compiler, and build and deploy macOS applications using the O3DE build tools\.
 
 **Topics**
 + [Prerequisites](#osx-prerequisites)
@@ -25,21 +25,21 @@ You can use Lumberyard to build macOS applications\. Lumberyard includes four ma
 
 ## Prerequisites {#osx-prerequisites}
 
-To build games for macOS or iOS, Lumberyard requires the following on your Mac:
-+ [Lumberyard Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
+To build games for macOS or iOS, O3DE requires the following on your Mac:
++ [O3DE Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
 + macOS Mojave or later
 
 **Note**
-Lumberyard Editor requires Windows 10 to edit levels\. You must have access to a PC with Lumberyard installed and be able to navigate and run commands from Terminal on your Mac\.
+O3DE Editor requires Windows 10 to edit levels\. You must have access to a PC with O3DE installed and be able to navigate and run commands from Terminal on your Mac\.
 
 ## Setting Up Your Mac {#osx-setting-up}
 
-After you download and extract Lumberyard on your Mac, you must run Lumberyard Setup Assistant to install the third\-party software that is required to run the game and compile the game code, engine, and asset pipeline\.
+After you download and extract O3DE on your Mac, you must run O3DE Setup Assistant to install the third\-party software that is required to run the game and compile the game code, engine, and asset pipeline\.
 
-**To run Lumberyard Setup Assistant**
+**To run O3DE Setup Assistant**
 
-1. Open the directory where you extracted Lumberyard and navigate to the `/dev/Tools/LmbrSetup/Mac` directory\. Run the `SetupAssistant`\.
+1. Open the directory where you extracted O3DE and navigate to the `/dev/Tools/LmbrSetup/Mac` directory\. Run the `SetupAssistant`\.
 
 1. Verify that the engine root path is correct\.
 
@@ -47,17 +47,17 @@ After you download and extract Lumberyard on your Mac, you must run Lumberyard S
    + **Run your game project**
    + **Compile the game code**
    + **Compile the engine and asset pipeline**
-   + **Compile the Lumberyard Editor and tools**
+   + **Compile the O3DE Editor and tools**
 **Note**
-Lumberyard Editor is not supported on macOS\. Selecting this option enables the ability to build the asset processor and resource compiler only\.
+O3DE Editor is not supported on macOS\. Selecting this option enables the ability to build the asset processor and resource compiler only\.
    + **Compile for iOS devices**
    + \(Optional\) **Compile for Android devices**
 **Note**
 Select this option if you are developing for Android devices\. You must have the Android SDK installed on your Mac\.
 
-1. Follow the instructions onscreen to complete the installations for any third\-party software or SDKs that you need\. For more information about using Lumberyard Setup Assistant, see [Using Lumberyard Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
+1. Follow the instructions onscreen to complete the installations for any third\-party software or SDKs that you need\. For more information about using O3DE Setup Assistant, see [Using O3DE Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
 
-1. Open a command line window and navigate to your Lumberyard `dev` directory\.
+1. Open a command line window and navigate to your O3DE `dev` directory\.
 
 1. To initialize the build system, run the following command: `sh lmbr_waf.sh configure`
 

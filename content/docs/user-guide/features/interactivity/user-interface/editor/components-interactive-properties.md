@@ -1,6 +1,6 @@
 ---
 description: ' Work with the input enabled, states, navigation, and action properties
-  of the UI Editor in Lumberyard. '
+  of the UI Editor in O3DE. '
 title: Properties for Interactive Components
 ---
 # Properties for Interactive Components {#ui-editor-components-interactive-properties}

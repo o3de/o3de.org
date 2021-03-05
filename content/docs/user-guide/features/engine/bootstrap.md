@@ -14,9 +14,9 @@ An AZ framework application initializes modules based on the dynamic libraries l
 
 1.  The application bootstraps itself just enough to read the application descriptor file\.
 
-1.  The application descriptor file is read to get memory allocator settings and the list of dynamic libraries to load\. Lumberyard is not yet able to read the system entity from the file\.
+1.  The application descriptor file is read to get memory allocator settings and the list of dynamic libraries to load\. O3DE is not yet able to read the system entity from the file\.
 
-1.  Lumberyard shuts down the bootstrapped systems, configures them according to the settings it just loaded, and starts these systems back up\.
+1.  O3DE shuts down the bootstrapped systems, configures them according to the settings it just loaded, and starts these systems back up\.
 
 1.  Each dynamic library is loaded\.
 

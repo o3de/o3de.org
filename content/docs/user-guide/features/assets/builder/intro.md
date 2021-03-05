@@ -1,5 +1,5 @@
 ---
-description: ' Process custom assets in Amazon Lumberyard with Python Asset Builder. '
+description: ' Process custom assets in Open 3D Engine with Python Asset Builder. '
 title: Process custom assets with Python Asset Builder
 ---
 # Process custom assets with Python Asset Builder {#python-asset-builder-intro}
@@ -16,7 +16,7 @@ The input and output files for a Python Asset Builder are both assets of some ty
 An input asset file, such as an asset produced by a content creation tool, that will be processed by **Asset Processor** to generate a *product asset file*, source dependencies, and build dependencies\.
 
 **Product asset file**
-An output asset file produced by Python Asset Builder that can be consumed by a game launcher or Lumberyard Editor\.
+An output asset file produced by Python Asset Builder that can be consumed by a game launcher or O3DE Editor\.
 
 ## Writing a Python Asset Builder {#python-asset-builder-overview}
 

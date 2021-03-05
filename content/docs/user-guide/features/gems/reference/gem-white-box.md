@@ -1,6 +1,6 @@
 ---
 description: ' Use the White Box gem to add White Box rapid design components to
-  your Amazon Lumberyard project. '
+  your Open 3D Engine project. '
 title: 'White Box Gem'
 ---
 # White Box Gem {#gem-white-box}
@@ -18,13 +18,13 @@ The White Box Gem provides two tools implemented as components; the **White Box*
 
 *White boxing* is a rapid, iterative design process\. Simple modeling tools are used to create proxy geometry that defines the shape and dimension of 3D objects and environments\. The proxy geometry created in this process has a very low polygon count, but reasonably approximates the size and shape of the final assets\. White box entities have a basic material, and simple collision and physics materials if required\. The entities created in the white box process can be handed off to artists to be developed into polished production entities\.
 
-In Lumberyard, you create entities with the White Box component, using its edit functionality to rapidly sketch 3D assets to serve as building blocks for a level\. Because you create white box meshes in Lumberyard Editor with the component entity system, the entities can also contain functionality from other components such as scripts\. You can use a rapid build and test iteration cycle to create refined and functional entities before committing to developing production\-ready art assets\. The resulting white box geometry and entities are used as templates for production assets\. This development process is fast, highly iterative, and cost\-effective\.
+In O3DE, you create entities with the White Box component, using its edit functionality to rapidly sketch 3D assets to serve as building blocks for a level\. Because you create white box meshes in O3DE Editor with the component entity system, the entities can also contain functionality from other components such as scripts\. You can use a rapid build and test iteration cycle to create refined and functional entities before committing to developing production\-ready art assets\. The resulting white box geometry and entities are used as templates for production assets\. This development process is fast, highly iterative, and cost\-effective\.
 
 
 
 ## Enable the White Box Gem {#enable-gem-white-box}
 
-To make the **White Box** and **White Box Collision** components available in Lumberyard, you must build and configure your project with the White Box Gem enabled\.
+To make the **White Box** and **White Box Collision** components available in O3DE, you must build and configure your project with the White Box Gem enabled\.
 
 **To enable the White Box Gem**
 

@@ -1,11 +1,11 @@
 ---
 description: ' Use the Animation Editor ''s math nodes to perform math operations
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Math Nodes
 ---
 # Using Math Nodes {#animation-editor-math-nodes}
 
-Lumberyard's **Animation Editor** features a set of math nodes that perform math operations on various types of input\. The math nodes pass on the result\(s\) of the operation as output\.
+O3DE's **Animation Editor** features a set of math nodes that perform math operations on various types of input\. The math nodes pass on the result\(s\) of the operation as output\.
 
 **Topics**
 + [Rotation Math 2 Node](#rotation-math)

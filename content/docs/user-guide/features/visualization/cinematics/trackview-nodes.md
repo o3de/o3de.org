@@ -1,5 +1,5 @@
 ---
-description: ' See the following <guilabel>Track View</guilabel> editor nodes in Amazon Lumberyard. '
+description: ' See the following <guilabel>Track View</guilabel> editor nodes in Open 3D Engine. '
 title: Track View Editor Nodes
 ---
 # Track View Editor Nodes {#cinematics-trackview-nodes}

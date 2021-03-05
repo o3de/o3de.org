@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to navigate Script Canvas graphs in Amazon Lumberyard to visit
+description: ' Learn how to navigate Script Canvas graphs in Open 3D Engine to visit
   all nodes. '
 title: Navigating Graphs
 ---

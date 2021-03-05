@@ -1,11 +1,11 @@
 ---
-description: ' Verify that the assets in your Lumberyard project are properly bundled and
+description: ' Verify that the assets in your O3DE project are properly bundled and
   referenced. '
 title: Verifying that Bundles Contain Required Assets
 ---
 # Verifying that Bundles Contain Required Assets {#asset-bundler-assets-verifying}
 
-When your team generates a release build that has bundled game assets, you want to verify that the bundles contain everything required to ship your game\. Use the tools of the Lumberyard asset bundling system throughout the game development process to verify that your asset bundles contain the required assets\.
+When your team generates a release build that has bundled game assets, you want to verify that the bundles contain everything required to ship your game\. Use the tools of the O3DE asset bundling system throughout the game development process to verify that your asset bundles contain the required assets\.
 
 As a best practice, verify that your bundles contain their required assets during all game development phases:
 

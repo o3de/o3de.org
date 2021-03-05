@@ -1,5 +1,5 @@
 ---
-description: ' Use the Pose Subtract node in Amazon Lumberyard Animation Editor to subtract
+description: ' Use the Pose Subtract node in Open 3D Engine Animation Editor to subtract
   one pose from another. '
 title: Pose Subtract Node
 ---
@@ -12,7 +12,7 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
 
 **To use the **Pose Subtract** node**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. Create a [blend tree](/docs/user-guide/features/visualization/animation/animation-editor/creating-blend-trees.md)\.
 

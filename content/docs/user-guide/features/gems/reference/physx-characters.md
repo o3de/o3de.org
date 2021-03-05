@@ -1,13 +1,13 @@
 ---
 description: ' Use the PhysX Characters gem to provide physics for your characters
-  in your Amazon Lumberyard level. '
+  in your Open 3D Engine level. '
 title: PhysX Characters
 ---
 # PhysX Characters {#gems-system-gem-physx-characters}
 
 The PhysX Characters gem provides physics for your characters in your game\. The gem integrates with the EMotion FX **Animation Editor** system\.
 
-![\[PhysX Characters gem in Lumberyard.\]](/images/user-guide/gems/physx/gems-system-physx-characters.png)
+![\[PhysX Characters gem in O3DE.\]](/images/user-guide/gems/physx/gems-system-physx-characters.png)
 
 **Note**
 To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/user-guide/features/gems/physx.md) gem\.

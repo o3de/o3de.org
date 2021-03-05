@@ -1,5 +1,5 @@
 ---
-description: ' Create simulated objects that move with your character (actor) in Amazon Lumberyard. '
+description: ' Create simulated objects that move with your character (actor) in Open 3D Engine. '
 title: Creating Simulated Objects
 ---
 # Creating Simulated Objects {#animation-editor-creating-simulated-objects}

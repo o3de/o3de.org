@@ -1,22 +1,22 @@
 ---
-description: ' Compile assets and build your Android project with Amazon Lumberyard. '
+description: ' Compile assets and build your Android project with Open 3D Engine. '
 title: Build and deploy your project for Android
 ---
 # Build and deploy your project for Android {#android-build-deploy}
 
- Once you've [set up your environment]() and [configured your project](), it's time to build your Amazon Lumberyard project for Android and get it running on a device\. In this section, you'll set up an attached device to use the [Shader Compiler](), build your project with `lmbr_waf` or Android Studio, and deploy to a device\. You'll also learn how to configure the Lumberyard build system to activate or deactivate automatically deploying to a device whenever you build\.
+ Once you've [set up your environment]() and [configured your project](), it's time to build your Open 3D Engine project for Android and get it running on a device\. In this section, you'll set up an attached device to use the [Shader Compiler](), build your project with `lmbr_waf` or Android Studio, and deploy to a device\. You'll also learn how to configure the O3DE build system to activate or deactivate automatically deploying to a device whenever you build\.
 
 **Topics**
 + [Connect to the Shader Compiler](#running-the-shader-compiler-for-android)
 + [Build your project](#android-build-project)
 + [Deployment prerequisites](#android-deploy-prerequisites)
-+ [Deploy with Lumberyard Editor](#run-the-deployment-tool)
++ [Deploy with O3DE Editor](#run-the-deployment-tool)
 + [Deploy from command line](#deploying-your-app-and-assets)
 + [Next steps](#android-build-next-steps)
 
 ## Connect to the Shader Compiler {#running-the-shader-compiler-for-android}
 
- During development, your Lumberyard project connects to the Shader Compiler to generate the shaders for your device\. To do this, by set up a reverse proxy between the Android device and the host machine, in order to connect to the Asset Processor\. Note that through the VFS you can connect to a remote Asset Processor, which will handle shader compilation\. Follow the steps in [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project#android-vfs) to configure VFS\.
+ During development, your O3DE project connects to the Shader Compiler to generate the shaders for your device\. To do this, by set up a reverse proxy between the Android device and the host machine, in order to connect to the Asset Processor\. Note that through the VFS you can connect to a remote Asset Processor, which will handle shader compilation\. Follow the steps in [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project#android-vfs) to configure VFS\.
 
 **Important**
  The Shader Compiler only runs on Windows PCs\. If you're using another environment to develop your Android game, you'll need access to a server with the Shader Compiler running and accessible through a firewall\. One option is to run a [Windows GPU\-based EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html#gpu-instances)\. For more information on running a dedicated Shader Compiler service, see [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)\.
@@ -53,41 +53,41 @@ title: Build and deploy your project for Android
    adb reverse tcp:shader-port tcp:shader-port
    ```
 **Important**
- This step relies on the `adb` command being in the `PATH` environment variable\. Follow the instructions in [Set up your environment to develop for Android with Lumberyard](/docs/user-guide/features/platforms/android/setting-up-environment.md) to add Android tools to your `PATH`\.
+ This step relies on the `adb` command being in the `PATH` environment variable\. Follow the instructions in [Set up your environment to develop for Android with O3DE](/docs/user-guide/features/platforms/android/setting-up-environment.md) to add Android tools to your `PATH`\.
 
  Whether or not you need to manually start the Shader Compiler is dependent upon whether you use the deployment tool\. If you're using the Deployment Tool, the Asset Processor automatically starts a Shader Compiler in the background for you\. Otherwise, you need to start the Shader Compiler manually for a deployment\. See [Running the Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler#mat-shaders-custom-dev-remote-compiler-launch) to learn more\.
 
 ## Build your project {#android-build-project}
 
- With asset loading and the shader compiler configured, you're ready to build your Lumberyard project for Android\! You can build from the command line, or load the projects created by `lmbr_waf configure` into Android Studio\. This section covers how to build your project from the command line, including information on the available Android targets and build system configuration options that are explicitly for use with Android\.
+ With asset loading and the shader compiler configured, you're ready to build your O3DE project for Android\! You can build from the command line, or load the projects created by `lmbr_waf configure` into Android Studio\. This section covers how to build your project from the command line, including information on the available Android targets and build system configuration options that are explicitly for use with Android\.
 
 **Important**
- If you've [enabled Incredibuild](/docs/userguide/waf/extensions#waf-extensions-incredibuild), turn the feature off to be able to compile for Android\. Lumberyard doesn't take advantage of the Incredibuild hooks for Android\.
+ If you've [enabled Incredibuild](/docs/userguide/waf/extensions#waf-extensions-incredibuild), turn the feature off to be able to compile for Android\. O3DE doesn't take advantage of the Incredibuild hooks for Android\.
 
 ### Build with `lmbr_waf` {#android-build-project-waf}
 
  When using `lmbr_waf`, Android builds use the `android_armv8_clang` platform\. When building for Android, all of the usual tasks, options, build configurations, and specs are available with `lmbr_waf`\. For example, to build the game and engine for Android in profiling mode, use the command `lmbr_waf build_android_armv8_clang_profile -p game_and_engine`\.
 
- For more information about the Lumberyard build system, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\. For information on the Android\-specific build settings and `lmbr_waf` command\-line options, see the [Reference for Android](/docs/user-guide/features/platforms/android/reference.md)\.
+ For more information about the O3DE build system, see [Using the Waf Build System](/docs/userguide/waf/intro.md)\. For information on the Android\-specific build settings and `lmbr_waf` command\-line options, see the [Reference for Android](/docs/user-guide/features/platforms/android/reference.md)\.
 
 ### Build with Android Studio {#android-build-project-studio}
 
- The Gradle project created by `lmbr_waf configure` can be directly imported into Android Studio without any changes\. Follow the instructions from [Android Studio \- Import Gradle project](https://developer.android.com/studio/intro/migrate#import_a_gradle-based_intellij_project) to import this project, located at `lumberyard_install_dir\dev\Solutions\LumberyardAndroidSDK`\. For further instructions, including how to select targets and configure for debugging, read the [Android Studio documentation](https://developer.android.com/studio/intro)\.
+ The Gradle project created by `lmbr_waf configure` can be directly imported into Android Studio without any changes\. Follow the instructions from [Android Studio \- Import Gradle project](https://developer.android.com/studio/intro/migrate#import_a_gradle-based_intellij_project) to import this project, located at `lumberyard_install_dir\dev\Solutions\O3DEAndroidSDK`\. For further instructions, including how to select targets and configure for debugging, read the [Android Studio documentation](https://developer.android.com/studio/intro)\.
 
- Targets in Android Studio are called *Build Variants* and are named `project-nameLauncher`\. Each build variant produces the bootstrap executable that loads the assets and code for the named project, and the Lumberyard engine\.
+ Targets in Android Studio are called *Build Variants* and are named `project-nameLauncher`\. Each build variant produces the bootstrap executable that loads the assets and code for the named project, and the O3DE engine\.
 
- If you're comfortable using the Android build tools from the command line, you can also build any Lumberyard targets using the Android build tools or Gradle\. Keep in mind that this only builds your executable and doesn't recompile the assets\.
+ If you're comfortable using the Android build tools from the command line, you can also build any O3DE targets using the Android build tools or Gradle\. Keep in mind that this only builds your executable and doesn't recompile the assets\.
 
 ## Deployment prerequisites {#android-deploy-prerequisites}
 
  In order to deploy to an Android device, you need the following:
-+  An Android device that meets the [minimum requirements](/docs/userguide/mobile/android/intro#android-minimum-requirements) for Lumberyard\. Lumberyard projects won't deploy to an Android emulator\.
++  An Android device that meets the [minimum requirements](/docs/userguide/mobile/android/intro#android-minimum-requirements) for O3DE\. O3DE projects won't deploy to an Android emulator\.
 +  The device has developer mode and USB debugging enabled\. See [Configure developer options](https://developer.android.com/studio/debug/dev-options) in the official Android documentation for instructions on how to enable these features\.
 +  The device is accessible from an Android debug bridge \(*adb*\) server on the host running the deployment tools\.
 
-## Deploy with Lumberyard Editor {#run-the-deployment-tool}
+## Deploy with O3DE Editor {#run-the-deployment-tool}
 
- The Lumberyard Editor offers a way to deploy to a mobile device: the **Lumberyard Deployment Tool**\. If you're a content creator who rapidly iterates on their work, this is an ideal way to get on\-device testing and validation\. Using the Deployment Tool requires that you have the Lumberyard Editor and Asset Processor, and an Android device connected to the machine that's running both\.
+ The O3DE Editor offers a way to deploy to a mobile device: the **O3DE Deployment Tool**\. If you're a content creator who rapidly iterates on their work, this is an ideal way to get on\-device testing and validation\. Using the Deployment Tool requires that you have the O3DE Editor and Asset Processor, and an Android device connected to the machine that's running both\.
 
 **To use the Deployment Tool**
 
@@ -111,14 +111,14 @@ title: Build and deploy your project for Android
 
 ## Deploy from command line {#deploying-your-app-and-assets}
 
- If you need to deploy less frequently, or can't meet the requirements of the Deployment Tool, deploy\-on\-build is another option\. Deployments during build can be performed automatically, or controlled through a command\-line option passed to `lmbr_waf`\. You can also deploy directly from Android Studio if you're using it as your build environment\. For more information on using Android Studio for Lumberyard builds, see [Build with Android Studio](#android-build-project-studio) and the [Android Studio documentation](https://developer.android.com/studio/run)\.
+ If you need to deploy less frequently, or can't meet the requirements of the Deployment Tool, deploy\-on\-build is another option\. Deployments during build can be performed automatically, or controlled through a command\-line option passed to `lmbr_waf`\. You can also deploy directly from Android Studio if you're using it as your build environment\. For more information on using Android Studio for O3DE builds, see [Build with Android Studio](#android-build-project-studio) and the [Android Studio documentation](https://developer.android.com/studio/run)\.
 
 **Important**
  As part of using deploy\-on\-build, you'll want to make sure that your assets are properly updated first\. This will always involve running the Asset Processor and the shader compiler before a build\.
 
 ### Automatic deploy during build {#deploying-your-app-and-assets-config}
 
- At the start of development, and for anyone working on the Lumberyard engine or gems that contain code, deploy to a device every time you rebuild\. This keeps the APK on the device up to date and ready to test, at a minimal cost of deployment time to the device\. As your project grows in size and assets are added, you might choose to turn this feature off - copying assets to the device is what takes the longest amount of time in a deployment\.
+ At the start of development, and for anyone working on the O3DE engine or gems that contain code, deploy to a device every time you rebuild\. This keeps the APK on the device up to date and ready to test, at a minimal cost of deployment time to the device\. As your project grows in size and assets are added, you might choose to turn this feature off - copying assets to the device is what takes the longest amount of time in a deployment\.
 
 **To modify the build configuration to automatically deploy**
 
@@ -179,8 +179,8 @@ lmbr_waf deploy_android_armv8_clang_profile -p all ^
 
 ## Next steps {#android-build-next-steps}
 
-Now that you have your Lumberyard project building and running on an Android device, learn more about mobile\-specific design considerations and releasing to the Google Play Store\.
-+ [Design Considerations for Creating Mobile Games Using Lumberyard](/docs/userguide/mobile/design-considerations.md)
-+ [Lumberyard Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/features/platforms/mobile-performance.md)
+Now that you have your O3DE project building and running on an Android device, learn more about mobile\-specific design considerations and releasing to the Google Play Store\.
++ [Design Considerations for Creating Mobile Games Using O3DE](/docs/userguide/mobile/design-considerations.md)
++ [O3DE Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/features/platforms/mobile-performance.md)
 + [Updating Graphics Settings for Android and iOS](/docs/user-guide/features/platforms/mobile-graphics-settings.md)
-+ [Releasing Lumberyard projects for Android](/docs/user-guide/features/platforms/android/deploy-release.md)
++ [Releasing O3DE projects for Android](/docs/user-guide/features/platforms/android/deploy-release.md)

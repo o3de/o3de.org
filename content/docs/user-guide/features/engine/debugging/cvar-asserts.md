@@ -1,10 +1,10 @@
 ---
-description: ' Learn how to use asserts in Amazon Lumberyard to debug your game code. '
+description: ' Learn how to use asserts in Open 3D Engine to debug your game code. '
 title: Using the sys_asserts Console Variable (CVAR)
 ---
 # Using the `sys_asserts` Console Variable \(CVAR\) {#debugging-using-asserts}
 
-Manage assert notifications in Lumberyard with the `sys_asserts` console variable\. The following table shows the possible values and their meanings\.
+Manage assert notifications in O3DE with the `sys_asserts` console variable\. The following table shows the possible values and their meanings\.
 
 
 | Value | Description |
@@ -14,7 +14,7 @@ Manage assert notifications in Lumberyard with the `sys_asserts` console variabl
 | 2 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This value displays a dialog box with options to ignore the current assert, ignore all asserts, or break on the assert\. |
 
 **Note**
-Prior to Lumberyard version 1\.21, when a debugger was attached and an assert was triggered, the debugger triggered a breakpoint on the assert\. In the new implementation, asserts print to the log at setting `sys_asserts=1` and display a dialog box at setting `sys_asserts=2`\. This gives you the option to break on the assert rather breaking automatically\.
+Prior to O3DE version 1\.21, when a debugger was attached and an assert was triggered, the debugger triggered a breakpoint on the assert\. In the new implementation, asserts print to the log at setting `sys_asserts=1` and display a dialog box at setting `sys_asserts=2`\. This gives you the option to break on the assert rather breaking automatically\.
 
 ## Example Outputs {#debugging-using-asserts-example-outputs}
 

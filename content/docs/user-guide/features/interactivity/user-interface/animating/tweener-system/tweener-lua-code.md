@@ -1,6 +1,6 @@
 ---
 description: ' Learn how to use Lua scripting to animate your entities with the Scripted
-  Entity Tweener system in Amazon Lumberyard. '
+  Entity Tweener system in Open 3D Engine. '
 title: Tweener Lua Script
 ---
 # Tweener Lua Script {#ui-animating-tweener-lua-code}

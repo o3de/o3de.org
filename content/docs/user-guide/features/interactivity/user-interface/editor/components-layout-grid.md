@@ -1,5 +1,5 @@
 ---
-description: ' Use a layout grid component in the Amazon Lumberyard UI Editor to
+description: ' Use a layout grid component in the Open 3D Engine UI Editor to
   organize child elements into a uniform grid. '
 title: LayoutGrid
 ---
