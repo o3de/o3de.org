@@ -3,7 +3,8 @@ description: ' Open 3D Engine (O3DE) Spline component reference. '
 title: Spline component
 ---
 
-The **Spline** component creates a line that is 4 meters long, with 4 points. The point positions are defined in the local space of the entity. The spline's length, segments and shape can be defined using the component's **Spline Type** property and **Edit** functionality. Splines are curves that connect two or more points and can be used as paths for animated entities or as a backbone for components such as the [Tube Shape](/docs/user-guide/features/components/reference/shape/tube-shape.md) component.
+The **Spline** component creates a line that is 4 meters long, with 4 points. The point positions are defined in the local space of the entity. The spline's length, segments, and shape can be defined using the component's **Spline Type** property and **Edit** functionality. Splines are curves that connect two or more points and can be used as paths for animated entities or as a backbone for components such as the [Tube Shape](/docs/user-guide/features/components/reference/shape/tube-shape.md) component.
+
 
 **Provided by:** [LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
 
@@ -16,7 +17,8 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 | **Visible** | Enable to display the spline in the editor Perspective view. | Boolean | Enabled |
 | **Configuration - Spline Type** | The interpolation type that defines the spline's segments. Linear splines have straight segments. Bezier splines interpolate a curve with uniform steps through the spline's segments. Catmull-Rom splines are defined by control points. A Catmull-Rom spline needs four control points to define each segment, so the default spline with four points will only generate one segment.  | Linear, Bezier, Catmull-Rom | Linear |
 | **Spline** | The Spline property group options depend on the selected Spline Type. See the property group sections below for more information. | [Linear,](#linear-spline-type-properties) [Bezier,](#bezier-spline-type-properties) [Catmull-Rom](#catmull-rom-spline-type-properties) |  |
-| **Edit** | Click to enter Edit mode. In Edit mode, you can modify the length, segments and shape of the spline in the Perspective view using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edt mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
+| **Edit** | Click to enter Edit mode. In Edit mode, you can modify the length, segments and shape of the spline in the Perspective view using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
+
 
 ## Linear spline type properties ##
 

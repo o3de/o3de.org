@@ -3,7 +3,8 @@ description: ' Open 3D Engine (O3DE) Polygon Prism Shape component reference. '
 title: Polygon Prism Shape component
 ---
 
-The **Polygon Prism Shape** component creates a cuboid volume that is 4 meters wide, 4 meters long, and 1 meter high. The prism shape is defined by points that lie on the local XY plane. The point positions create identical parallel planes that are separated by a height value, and are connected by edges at right angles. The Polygon Prism Shape can be defined using the component's **Height** property and **Edit** functionality. Polygon Prism Shapes may have three or more sides that do not self-intersect. The Polygon Prism Shape component is not a mesh but rather a helper geometry that can be used to define volumes for area lights, AI, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/intro.md).
+The **Polygon Prism Shape** component creates a cuboid volume that is 4 meters wide, 4 meters long, and 1 meter high. The prism shape is defined by points that lie on the local XY plane. The point positions create identical parallel planes that are separated by a height value, and are connected by edges at right angles. The Polygon Prism Shape can be defined using the component's **Height** property and **Edit** functionality. Polygon Prism Shapes can have three or more sides that do not self-intersect. The Polygon Prism Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for area lights, AI, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/intro.md).
+
 
 **Provided by:** [LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
 
@@ -13,11 +14,15 @@ The **Polygon Prism Shape** component creates a cuboid volume that is 4 meters w
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Visible** | Enable to always display the shape component in the Perspective view, even when the entity is not selected. Disable to hide the shape component when the entity is not selected. | Boolean | Enabled |
-| **Game View** | Enable to display the shape component while in game mode in the editor. | Boolean | Disabled |
-| **Shape Color** | The color of the shape component. | Eight bits per channel color: 0-255 | R:255, G:255, B:199 |
+| **Visible** | Enable to always display the Shape component in the Perspective view, even when the entity is not selected. Disable to hide the Shape component when the entity is not selected. | Boolean | Enabled |
+
+| **Game View** | Enable to display the Shape component while in game mode in the editor. | Boolean | Disabled |
+
+| **Shape Color** | The color of the Shape component. | Eight bits per channel color: 0-255 | R:255, G:255, B:199 |
+
 | **Height** | The height of the Polygon Prism Shape in meters. | 0 - Infinity | 1.0 |
-| **Edit** | Click to enter Edit mode. In Edit mode, you can modify the dimensions of the Polygon Prism Shape in the Perspective view using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edt mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
+| **Edit** | Click to enter Edit mode. In Edit mode, you can modify the dimensions of the Polygon Prism Shape in the Perspective view using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
+
 
 ## Edit mode actions ##
 
@@ -29,7 +34,8 @@ The **Polygon Prism Shape** component creates a cuboid volume that is 4 meters w
 * **Add a vertex** - While holding **Control**, click on an edge between existing vertices.
 * **Delete a vertex** - While holding **Alt**, click on a vertex.
 * **Delete multiple vertices** - Press **Delete** to delete all selected vertices.
-* **Modify Height** - Click and drag the blue transform manipulator a the top-center of the Polygon Prism Shape.
+* **Modify Height** - Click and drag the blue transform manipulator at the top-center of the Polygon Prism Shape.
+
 * **Snap vertices to position** - While holding **Control + Shift**, click in the Perspective view to snap the selected vertices to the position.
 * **Snap vertices to grid** - If the **Snap to grid** tool is enabled in Edit mode, vertices will snap to positions on the construction plane.
 
