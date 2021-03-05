@@ -7,7 +7,7 @@
 
 {{ $isHere := eq .p1 .p2 }}
 <li {{ if $isHere }} class="is-active"{{ end }}>
-  / <a href="{{ .p1.RelPermalink }}">
+   <a href="{{ .p1.RelPermalink }}">
     {{ .p1.Title | markdownify }}
   </a> /
 </li>

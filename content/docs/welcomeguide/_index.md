@@ -1,12 +1,9 @@
-# Open 3D Engine Welcome Guide
-
------
-*****Copyright &copy;  *****
-
------
+---
+title: O3DE Welcome Guide
+toc: true
+---
 
 
------
 ## Contents
 + [Welcome to Open 3D Engine](wg-welcome.md)
 + [O3DE features](wg-features-intro.md)
