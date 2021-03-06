@@ -12,3 +12,4 @@ identifying subpages.
 - [Welcome guide snapshot](welcomeguide)
 - [Tools UI guide snapshot](tools-ui)
 - [Atom guide](atom-guide)
+- [API reference](api)
