@@ -6,12 +6,12 @@
           <hr />
           {{ partial "docs/docs-nav.html" . }}
         </section>
-        <section class="col col-xl-8 docs-content p-5">
-          <h1 class="title">{{ .Page.Title | markdownify }}</h1>
+        <section class="col col-xl-8 docs-content pl-5">
           <div>
             {{ partial "single-header.html" . }}
           </div>
           {{ partial "docs/content.html" . }}
+          {{ partial "footer.html" . }}
         </section>
 
       </section>

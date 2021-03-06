@@ -1,6 +1,6 @@
-<div class="row single-header">
-  {{ if ne .Kind "section" }}
-      {{ partial "breadcrumb.html" . }}
-      {{ partial "github-edit.html" . }}
-  {{ end }}
+<div class="row pt-5 single-header">
+      {{ if ne .Kind "section" }}
+          {{ partial "breadcrumb.html" . }}
+          {{ partial "github-edit.html" . }}
+      {{ end }}
 </div>
