@@ -1,8 +1,8 @@
 ---
 description: ' Learn about the asset data file types that Open 3D Engine supports. '
+linktitle: Asset file types
 title: 'O3DE Asset File Types'
 ---
-# O3DE Asset File Types {#lumberyard-file-types}
 
 See the following tables for supported asset data file types in O3DE\.
 

@@ -1,4 +1,6 @@
-# Open 3D Engine UI Extensions Guide
+---
+title: Open 3D Engine UI Extensions Guide
+---
 
 -----
 *****Copyright &copy;  *****

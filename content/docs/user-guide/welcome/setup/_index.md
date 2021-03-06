@@ -1,8 +1,8 @@
 ---
 description: ' Learn how to install and set up Open 3D Engine for the first time. '
 title: Setting up Open 3D Engine
+weight: 200
 ---
-# Setting up Open 3D Engine {#setting-up-intro}
 
 Open 3D Engine has a two\-part installation process:
 
