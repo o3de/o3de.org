@@ -70,6 +70,7 @@
 $font-family-headers: "Open Sans" 
 $o3de-black: #000
 $o3de-white: #fff
+$o3de-lightgray: #ddd
 $o3de-blue: #1E71EB
 $o3de-darkblue: #011C46
 $o3de-lightblue: #D2EDFF
@@ -194,3 +195,21 @@ $width: '59vw';
 .social 
   font-size: 2rem
   padding: 0.5rem
+
+
+// Docs pages 
+
+// layouts/docs/single.html, layouts/docs/section.html 
+
+.docs-sidebar 
+  position: sticky
+  top: 4rem
+  z-index: 1000
+  height: calc(100vh - 4rem)
+  border-right: 1px solid $o3de-lightgray
+  flex: 0 1 320px
+  order: 0
+  box-sizing: border-box
+  display: block
+  flex-wrap: wrap
+
