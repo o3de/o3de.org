@@ -1,5 +1,5 @@
 ---
-description: ' Modify the transform for entities using the Viewport Interaction Model in Amazon Lumberyard. '
+description: ' Modify the transform for entities using the Viewport Interaction Model in Open 3D Engine. '
 title: Modifying the Transform
 ---
 # Modifying the Transform {#viewport-interaction-model-transform}
@@ -18,7 +18,7 @@ When you move the manipulator to another location in the viewport, you can modif
 **Example**
 
    In the following example, the manipulator is moved away from the car, switches to rotate mode, and rotates the car\.
-![\[Move and rotate an entity using a manipulator in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-3.gif)
+![\[Move and rotate an entity using a manipulator in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-3.gif)
 
     The following are shortcuts to switch between the different manipulator modes\.
 ****

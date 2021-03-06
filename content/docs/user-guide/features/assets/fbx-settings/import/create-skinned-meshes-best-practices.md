@@ -1,11 +1,11 @@
 ---
 description: ' See the best practices for working with skinned meshes actors for the
-  Animation Editor in Amazon Lumberyard. '
+  Animation Editor in Open 3D Engine. '
 title: Creating Skinned Meshes for Actors
 ---
 # Creating Skinned Meshes for Actors {#char-fbx-importer-create-skinned-meshes-best-practices}
 
-Use the following best practices when you create your character for the **Animation Editor**\. In Lumberyard, a character is a skinned mesh\.
+Use the following best practices when you create your character for the **Animation Editor**\. In O3DE, a character is a skinned mesh\.
 
 ## Setting up the World Coordinate System and Root Joint {#char-fbx-importer-skinned-meshes-best-practices-setting-up-root-joint}
 
@@ -15,7 +15,7 @@ If you use the y\-up or z\-up world coordinate system in your DCC, use the follo
 + Set the root joint position at the origin: 0,0,0\.
 + Set the root joint rotation and orientation to 0,0,0\.
 + Orient your character so that the front orthographic camera view shows the front of your character\.
-+ When using the Lumberyard **Animation Editor**, ensure that your imported character faces the positive y direction\. The Asset Processor automatically adds a **Coordinate system change** modifier in the `.fbx` settings\. The default value for **Facing Direction** is **Rotate 180 degrees around the up axis**\. This enables the game entity's forward direction and character to point in the same direction\.
++ When using the O3DE **Animation Editor**, ensure that your imported character faces the positive y direction\. The Asset Processor automatically adds a **Coordinate system change** modifier in the `.fbx` settings\. The default value for **Facing Direction** is **Rotate 180 degrees around the up axis**\. This enables the game entity's forward direction and character to point in the same direction\.
 + If your character faces the negative y direction after you import the character into the **Animation Editor**, in the **Asset Browser** right\-click your `.fbx` file and choose **Edit Settings**\. For the **Coordinate system change** modifier, set **Facing Direction** to **Do Nothing**\.
 + Use the same **Coordinate system change** modifier for the actor and each of the actor's motions\. This is required to ensure that animations work properly in the **Animation Editor**\.
 
@@ -23,11 +23,11 @@ If you use the y\-up or z\-up world coordinate system in your DCC, use the follo
 
 Observe the following best practices when you set up skin binding:
 + Delete the geometry history on your mesh before skinning the geometry to joints\.
-+ When skinning your mesh, limit your maximum influences per vertex to four\. Lumberyard currently supports only four weight influences per vertex using the `.fbx` pipeline\.
++ When skinning your mesh, limit your maximum influences per vertex to four\. O3DE currently supports only four weight influences per vertex using the `.fbx` pipeline\.
 + Skin bind your mesh at the origin and in the same forward direction as the root joint\.
-+ Check the bind pose before exporting your skinned mesh\. For example, if the mesh moves after unbinding, you must reskin the mesh in order to prevent any errors in Lumberyard\.
++ Check the bind pose before exporting your skinned mesh\. For example, if the mesh moves after unbinding, you must reskin the mesh in order to prevent any errors in O3DE\.
 + Ensure that your skinned mesh has one bind pose in your DCC before you export to an `.fbx` file\.
-+ Do not include any static meshes with your skinned meshes\. Lumberyard cannot render unskinned meshes that are parented to bones\.
++ Do not include any static meshes with your skinned meshes\. O3DE cannot render unskinned meshes that are parented to bones\.
 
 Do the following to reskin your mesh:
 

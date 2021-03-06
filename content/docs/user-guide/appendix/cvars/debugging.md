@@ -1,5 +1,5 @@
 ---
-description: ' Debug and fix performance issues for Amazon Lumberyard. '
+description: ' Debug and fix performance issues for Open 3D Engine. '
 title: Debugging Issues
 ---
 # Debugging Issues {#debugging-intro}
@@ -9,9 +9,9 @@ title: Debugging Issues
 
 |  |
 | --- |
-| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in Lumberyard Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [Lumberyard Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
+| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in O3DE Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [O3DE Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
-Lumberyard provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
+O3DE provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
 + [Character skeleton debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-model-debugging.html) - Use the `p_draw_helpers` console variable to debug character skeleton issues\.
 + [Cinematics debugging](/docs/user-guide/features/visualization/cinematics/debugging.md) - Debug cinematics issues\.
 + [Mannequin debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/mannequin-debugging-intro.html) - Debug Mannequin system issues\.
@@ -25,7 +25,7 @@ Lumberyard provides the following built\-in debugging and profiling tools that y
 
 ## Crash logging {#debugging-crash-logging}
 
- Logging and reporting for crashes that occur in the Lumberyard Editor or your Lumberyard game can be turned on by modifying the `sys_dump_type` console variable\. The type of crash log information generated depends on the value:
+ Logging and reporting for crashes that occur in the O3DE Editor or your O3DE game can be turned on by modifying the `sys_dump_type` console variable\. The type of crash log information generated depends on the value:
 + `0` - Disable crash reporting\.
 + `1` - Generate a stack trace on crash
 + `2` - Generate a stack trace and limited variable information\.

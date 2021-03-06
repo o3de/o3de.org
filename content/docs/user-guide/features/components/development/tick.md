@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use the tick bus in Amazon Lumberyard. '
+description: ' Learn how to use the tick bus in Open 3D Engine. '
 title: Tick Bus and Components
 ---
 # Tick Bus and Components {#component-entity-system-pg-tick-bus}
@@ -76,7 +76,7 @@ int MyCppUIComponent::GetTickOrder()
 ```
 
 **Note**
-As of Lumberyard version 1\.11, use of the `TickEvents::m_tickOrder` variable is deprecated\. If you change the value of `m_tickOrder` instead of overriding `GetTickOrder()`, you will receive a warning\. However, your component will still tick in the appropriate order\.
+As of O3DE version 1\.11, use of the `TickEvents::m_tickOrder` variable is deprecated\. If you change the value of `m_tickOrder` instead of overriding `GetTickOrder()`, you will receive a warning\. However, your component will still tick in the appropriate order\.
 
 ## Event\-Based Programming and Event\-Based Polling: Best Practices {#component-entity-system-pg-tick-bus-event-based-programming-polling-best-practices}
 
@@ -88,7 +88,7 @@ It is often convenient to tick a component every frame and monitor the state of 
 
 ### Event\-Based Programming {#component-entity-system-pg-tick-bus-event-based-programming}
 
-In Lumberyard, a more event\-driven approach is to use the `TransformBus` to monitor the target entity for transform changes in a purely event\-driven fashion\. If the target entity doesn't move, no work is done and no polling is required\. When the target entity moves, the `LookAt` component adjusts its own entity's transform accordingly\.
+In O3DE, a more event\-driven approach is to use the `TransformBus` to monitor the target entity for transform changes in a purely event\-driven fashion\. If the target entity doesn't move, no work is done and no polling is required\. When the target entity moves, the `LookAt` component adjusts its own entity's transform accordingly\.
 
 ### Use Notifications to Make Your Components Easy to Use {#component-entity-system-pg-tick-bus-use-notifications}
 

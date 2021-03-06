@@ -1,5 +1,5 @@
 ---
-description: ' Use job dependencies using the Asset Builder SDK in Amazon Lumberyard. '
+description: ' Use job dependencies using the Asset Builder SDK in Open 3D Engine. '
 title: Job Dependency for Asset Pipeline
 ---
 # Job Dependency for Asset Pipeline {#asset-pipeline-job-dependency-reference}

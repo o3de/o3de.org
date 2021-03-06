@@ -1,12 +1,12 @@
 ---
-description: ' Add a custom asset type to Amazon Lumberyard. '
-title: Adding an Asset Type to Lumberyard
+description: ' Add a custom asset type to Open 3D Engine. '
+title: Adding an Asset Type to O3DE
 ---
-# Adding an Asset Type to Lumberyard {#asset-pipeline-asset-type-adding}
+# Adding an Asset Type to O3DE {#asset-pipeline-asset-type-adding}
 
-When you develop a game, you might need to add a new kind of asset to Lumberyard\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to Lumberyard\.
+When you develop a game, you might need to add a new kind of asset to O3DE\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to O3DE\.
 
-For an overview of the Lumberyard asset system, see [Programming the Lumberyard AZCore Runtime Asset System](/docs/user-guide/features/assets/asset-system-programming.md)\.
+For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/features/assets/asset-system-programming.md)\.
 
 **Topics**
 + [Overview](#asset-pipeline-asset-type-adding-overview-of-steps)
@@ -16,15 +16,15 @@ For an overview of the Lumberyard asset system, see [Programming the Lumberyard 
 
 ## Overview {#asset-pipeline-asset-type-adding-overview-of-steps}
 
-At a high level, adding an asset type to Lumberyard involves three steps:
+At a high level, adding an asset type to O3DE involves three steps:
 
 1. Registering the asset with the asset pipeline\.
 
-1. Enabling the Lumberyard engine to load and stream the asset\.
+1. Enabling the O3DE engine to load and stream the asset\.
 
-1. Optionally customizing your asset's interaction with the Lumberyard Editor UI and the **Asset Browser**\.
+1. Optionally customizing your asset's interaction with the O3DE Editor UI and the **Asset Browser**\.
 
-After this overview, each step is covered in more detail\. Not all of the steps are required\. The steps are arranged in order of increasing integration with the Lumberyard asset pipeline and editor\.
+After this overview, each step is covered in more detail\. Not all of the steps are required\. The steps are arranged in order of increasing integration with the O3DE asset pipeline and editor\.
 
 ### A\. Register the Asset with the Asset Pipeline {#asset-pipeline-asset-type-adding-register-the-asset-with-the-asset-pipeline}
 
@@ -54,7 +54,7 @@ In these cases, consider writing a [BuilderSDK builder](/docs/user-guide/tutoria
 
 ### B\. Enable the Engine to Load and Stream the Asset {#asset-pipeline-asset-type-adding-enable-the-engine-to-load-and-stream-the-asset}
 
-After you register your asset with the asset pipeline, you must enable the Lumberyard engine to load your asset type at run time and stream it asynchronously\.
+After you register your asset with the asset pipeline, you must enable the O3DE engine to load your asset type at run time and stream it asynchronously\.
 
 Enabling your asset for loading and streaming involves the following steps:
 
@@ -131,7 +131,7 @@ The Scene API provides boilerplate code so that you only have to write a few cod
 
 After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/user-guide/features/engine/file-io.md) to load the asset\.
 
-While simple registration of an asset can be useful in some circumstances, full integration with the Lumberyard asset system offers many advantages, including the following:
+While simple registration of an asset can be useful in some circumstances, full integration with the O3DE asset system offers many advantages, including the following:
 + Automatic live reloading
 + Automatic asynchronous streaming
 + Automatic drag\-and\-drop support in the **Asset Browser**
@@ -139,7 +139,7 @@ While simple registration of an asset can be useful in some circumstances, full 
 
 ## B\. Enabling the Engine to Load and Stream the Asset {#asset-pipeline-asset-type-adding-enabling-the-engine-to-load-and-stream-the-asset}
 
-The following sections describe the steps required for integration with Lumberyard's asset system\.
+The following sections describe the steps required for integration with O3DE's asset system\.
 
 ### 1\. Create an AssetData Type {#asset-pipeline-asset-type-adding-create-an-assetdata-type}
 
@@ -147,7 +147,7 @@ To represent an image that is usable in\-memory for your asset, derive a class f
 + You can place `AssetData`\-derived classes in gems\.
 + Your asset class must have an AZ\_RTTI declaration, including a UUID for the class's type\. The UUID that you use for this type is actually the asset type that it represents\. The UUID matches the type that you use in your asset builder or your copy rule\.
 + While an `AssetData`\-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement\. If you have special requirements \(like third\-party considerations\), your class can simply provide a handle to a foreign system that contains the asset data\.
-+ For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the Lumberyard code at `lumberyard_version\dev\Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`\.
++ For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the O3DE code at `lumberyard_version\dev\Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`\.
 
 #### Asset Instances and Asset Data {#asset-pipeline-asset-type-adding-asset-instances-and-asset-data}
 
@@ -162,7 +162,7 @@ An `AssetData`\-derived class contains the asset data that is shared among insta
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type\. Only one such handler generally exists for each type of asset\. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`\-derived class\. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads\.
 
 **Note**
-You can place asset handlers in gems\. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a Lumberyard Game](/docs/userguide/components/entity-system-pg-gems-code.md)\.
+You can place asset handlers in gems\. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code.md)\.
 
 #### Using the Generic Asset Handler for Structured Data {#asset-pipeline-asset-type-adding-using-the-generic-asset-handler-for-structured-data}
 
@@ -234,7 +234,7 @@ AZ_Assert(AZ::Data::AssetManager::IsReady(), "AssetManager isn't ready!");
 AZ::Data::AssetManager::Instance().RegisterHandler(this, AZ::AzTypeInfo<AssetType>::Uuid());
 ```
 
-After you describe your asset type to the Lumberyard engine in this way, your custom asset becomes available in the **Asset Browser** for dragging and dropping\. The asset displays its information and automatically updates\.
+After you describe your asset type to the O3DE engine in this way, your custom asset becomes available in the **Asset Browser** for dragging and dropping\. The asset displays its information and automatically updates\.
 
 ### 4\. Use Your Custom Asset in the Editor and Engine {#asset-pipeline-asset-type-adding-use-your-custom-asset-in-the-editor-and-engine}
 
@@ -260,7 +260,7 @@ After you perform these steps, your component appears in the component editor\. 
 
 ### 1\. Describing Your Asset Type to the UI {#asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui}
 
-In addition to deriving your asset handler from `Az::Data::AssetHandler`, you can derive it from `AZ::AssetTypeInfoBus::Handler` for user interface purposes\. `AssetTypeInfoBus` tells Lumberyard the friendly name of your asset type, enables it to appear in the **Asset Browser**, gives it icons, and provides other UI-related features\.
+In addition to deriving your asset handler from `Az::Data::AssetHandler`, you can derive it from `AZ::AssetTypeInfoBus::Handler` for user interface purposes\. `AssetTypeInfoBus` tells O3DE the friendly name of your asset type, enables it to appear in the **Asset Browser**, gives it icons, and provides other UI-related features\.
 
 ```
 // AZ::AssetTypeInfoBus::Handler
@@ -366,7 +366,7 @@ if ((!event) || (!event->mimeData()) || (event->isAccepted()) || (!viewportDragC
  }
 ```
 
-The Lumberyard drag\-and\-drop system uses the same semantics as the Qt drag and drop system\. For more information, see [Drag and Drop](http://doc.qt.io/qt-5/dnd.html) in the Qt documentation\.
+The O3DE drag\-and\-drop system uses the same semantics as the Qt drag and drop system\. For more information, see [Drag and Drop](http://doc.qt.io/qt-5/dnd.html) in the Qt documentation\.
 
 ### 3\. Customizing the Context Menu {#asset-pipeline-asset-type-adding-customizing-the-context-menu}
 
@@ -406,7 +406,7 @@ void AssetBrowserContextProvider::AddSourceFileOpeners(const char* fullSourceFil
         }
         // Create as many openers as you want. For each opener, specify a unique
         // identifier, an icon, and a Lambda function to call.
-        openers.push_back({ "Lumberyard_FBX_Settings_Edit", "Edit Settings...", QIcon(), [this](const char* fullSourceFileNameInCallback, const AZ::Uuid& /*sourceUUID*/)
+        openers.push_back({ "O3DE_FBX_Settings_Edit", "Edit Settings...", QIcon(), [this](const char* fullSourceFileNameInCallback, const AZ::Uuid& /*sourceUUID*/)
         {
             // sourceName must be an AZStd::string.
             AZStd::string sourceName(fullSourceFileNameInCallback);

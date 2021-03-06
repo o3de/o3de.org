@@ -1,5 +1,5 @@
 ---
-description: ' Create a cascaded UI slice in Amazon Lumberyard''s UI Editor . '
+description: ' Create a cascaded UI slice in Open 3D Engine''s UI Editor . '
 title: Creating a Cascaded UI Slice
 ---
 # Creating a Cascaded UI Slice {#ui-editor-working-slices-cascaded}

@@ -1,5 +1,5 @@
 ---
-description: ' Create raycast and shape cast queries in Amazon Lumberyard. '
+description: ' Create raycast and shape cast queries in Open 3D Engine. '
 title: PhysX Scene Queries
 ---
 # PhysX Scene Queries {#physx-scene-queries}

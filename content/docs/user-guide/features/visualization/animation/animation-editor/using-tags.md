@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to use tags with animation graphs (AnimGraphs) in the Lumberyard
+description: ' Learn how to use tags with animation graphs (AnimGraphs) in the O3DE
   Animation Editor. '
 title: Using Tags with Animation Graphs
 ---
@@ -20,7 +20,7 @@ Tags are represented by animation graph parameters\. When you define a parameter
 
 **To create a tag**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, in the **Parameters** pane, click the **\+** button\.
 ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/anim-graph-parameters-pane.png)

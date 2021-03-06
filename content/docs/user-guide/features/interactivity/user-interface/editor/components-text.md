@@ -1,5 +1,5 @@
 ---
-description: Use a Text component in Amazon Lumberyard's UI Editor to add a text
+description: Use a Text component in Open 3D Engine's UI Editor to add a text
   string to a UI element.
 title: Text
 ---
@@ -9,7 +9,7 @@ You can use a **Text** component to add a text string to an element\.
 
 **To see in\-game examples of completed canvases with text components**
 
-1. In Lumberyard Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
+1. In O3DE Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
 
 1. Press **Ctrl\+G** to play the game and then choose in order **Components**, **Visual Components**, and **Text**\. The level has examples of text alignment, color and alpha, styling markup, overflow and wrapping, and character and line spacing\.
 

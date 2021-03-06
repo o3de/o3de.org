@@ -1,5 +1,5 @@
 ---
-description: ' Use the Amazon Lumberyard console variables (CVARs) to debug your cinematic
+description: ' Use the Open 3D Engine console variables (CVARs) to debug your cinematic
   scenes. '
 title: Debugging Cinematic Scenes with Console Variables
 ---

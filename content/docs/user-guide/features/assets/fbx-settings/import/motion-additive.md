@@ -1,5 +1,5 @@
 ---
-description: ' Create additive animations in Amazon Lumberyard. '
+description: ' Create additive animations in Open 3D Engine. '
 title: Creating Additive Animations
 ---
 # Creating Additive Animations {#char-fbx-importer-motion-additive}
@@ -14,7 +14,7 @@ You can create additive animations in two ways:
 
 **To convert a motion into an additive animation**
 
-1. From Lumberyard Editor, choose **Tools**, **Asset Browser**\.
+1. From O3DE Editor, choose **Tools**, **Asset Browser**\.
 
 1. In the **Asset Browser**, locate the FBX animation file that you want to convert into an additive animation\.
 

@@ -1,14 +1,14 @@
 ---
-description: ' Browse a library of icon assets used in the Lumberyard UI 2.0 Entity
+description: ' Browse a library of icon assets used in the O3DE UI 2.0 Entity
   Outliner tool. '
-title: Lumberyard entity outliner icons
+title: O3DE entity outliner icons
 ---
-# Lumberyard entity outliner icons<a name="uidev-entity-outliner-icons"></a>
+# O3DE entity outliner icons<a name="uidev-entity-outliner-icons"></a>
 
-This page contains an organized collection of icons currently used in the Lumberyard **Entity Outliner**\. Use the following charts to help you find an icon\.
+This page contains an organized collection of icons currently used in the O3DE **Entity Outliner**\. Use the following charts to help you find an icon\.
 
-![\[Lumberyard Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner.png)
+![\[O3DE Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner.png)
 
-![\[Lumberyard Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner-2.png)
+![\[O3DE Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner-2.png)
 
-![\[Lumberyard Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner-3.png)
+![\[O3DE Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner-3.png)

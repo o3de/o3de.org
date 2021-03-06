@@ -1,5 +1,5 @@
 ---
-description: ' Place a UI canvas on an object in the 3d world in Amazon Lumberyard. '
+description: ' Place a UI canvas on an object in the 3d world in Open 3D Engine. '
 title: Placing UI Canvases in the 3D World
 ---
 # Placing UI Canvases in the 3D World {#ui-editor-placing-canvases-3d}

@@ -1,12 +1,12 @@
 ---
-description: ' How JSON types convert to internal Lumberyard data types. '
+description: ' How JSON types convert to internal O3DE data types. '
 title: Data types in serialized JSON
 ---
 # Data types in serialized JSON {#serialization-json-data-types}
 
- In addition to primitive C\+\+ types that map directly to JSON types, Lumberyard supports serializing many `AZStd` library objects\. JSON output and deserialized objects are entirely deterministic based on the appropriate C\+\+ type\. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](/docs/userguide/programming/serialization/json-serialize-deserialize#serialization-json-serialize)\.
+ In addition to primitive C\+\+ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects\. JSON output and deserialized objects are entirely deterministic based on the appropriate C\+\+ type\. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](/docs/userguide/programming/serialization/json-serialize-deserialize#serialization-json-serialize)\.
 
- This topic is a reference of the types supported by Lumberyard serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C\+\+ types\.
+ This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C\+\+ types\.
 
 ## Primitives {#serialization-json-data-types-primitives}
 
@@ -26,7 +26,7 @@ Deserialization can be conducted from any primitive JSON type to these C\+\+ typ
 
 ## Pointers {#serialization-json-data-types-pointers}
 
- Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type\. For pointers to C\+\+ objects, this means that the pointed\-to object must be registered with the serialization context being used\. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name\. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the Lumberyard runtime can be used\.
+ Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type\. For pointers to C\+\+ objects, this means that the pointed\-to object must be registered with the serialization context being used\. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name\. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the O3DE runtime can be used\.
 
  When deserializing, the `$type` value is used as a hint to determine which object to reconstruct if necessary\. Otherwise, only the C\+\+ type of the member is inspected\. Deserialization proceeds memberwise, using the field mapping that was registered with the serialization context to map JSON object keys to C\+\+ members\.
 

@@ -1,5 +1,5 @@
 ---
-description: ' Use visual debugging on destruction simulations in Amazon Lumberyard with NVIDIA
+description: ' Use visual debugging on destruction simulations in Open 3D Engine with NVIDIA
   Blast. '
 title: NVIDIA Blast visual debugger
 ---

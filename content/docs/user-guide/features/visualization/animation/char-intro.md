@@ -1,5 +1,5 @@
 ---
-description: ' Learn to animate characters in Amazon Lumberyard with EMotionFX Animation Editor
+description: ' Learn to animate characters in Open 3D Engine with EMotionFX Animation Editor
   . '
 title: Create and animate characters
 ---
@@ -7,16 +7,16 @@ title: Create and animate characters
 
 Most game projects require an animated character to move around in the environment\. This may be a character that the player controls, or an AI\-driven entity that interacts with the level\.
 
-Use the **EMotion FX Animation Editor** to animate characters in Amazon Lumberyard\. To build a character, you associate one or more skinned models with an animation skeleton \(built in a digital content creation tool like Maya\)\. You then import the character into the **Animation Editor** and specify the animations that you want your character to have\.
+Use the **EMotion FX Animation Editor** to animate characters in Open 3D Engine\. To build a character, you associate one or more skinned models with an animation skeleton \(built in a digital content creation tool like Maya\)\. You then import the character into the **Animation Editor** and specify the animations that you want your character to have\.
 
 You can then blend animations, so that your character transitions from one animation to another, and specify the conditions when an animation occurs for a character\. For example, you can specify that your character starts in an idle position\. After several seconds, the character starts to walk, run, and then slow down again until the character returns to an idle position\.
 
 In the **Animation Editor**, you can preview the animations and blends between the animations for your characters\.
 
-Lumberyard has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into Lumberyard assets\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
+O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
 
 **Note**
-If you are using Lumberyard 1\.10 or earlier, you can use the legacy animation system \(Geppetto and Mannequin\) to accomplish these tasks\. For more information, see [Animation System](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-legacy-intro.html) in the *Amazon Lumberyard Legacy Reference*\.
+If you are using O3DE 1\.10 or earlier, you can use the legacy animation system \(Geppetto and Mannequin\) to accomplish these tasks\. For more information, see [Animation System](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-legacy-intro.html) in the *Open 3D Engine Legacy Reference*\.
 
 **Topics**
 + [Animation Editor Concepts and Terms](/docs/user-guide/features/visualization/animation/character-editor/concepts-and-terms.md)

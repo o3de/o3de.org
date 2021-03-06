@@ -1,13 +1,13 @@
 ---
-description: ' Use the Asset Validation gem''s seed mode in Lumberyard to ensure that your
+description: ' Use the Asset Validation gem''s seed mode in O3DE to ensure that your
   game assets are properly bundled. '
 title: Using the Asset Validation Gem to Verify Seeds
 ---
 # Using the Asset Validation Gem to Verify Seeds {#asset-bundler-asset-validation-gem}
 
-After you've built a seed list but before you bundle, you can use the Asset Validation gem to verify that asset loads map back to seeds\. The Asset Validation gem adds a set of seed\-related commands to the Lumberyard console command window\. You can use these commands to ensure that you have seeds for all assets that you want to bundle\.
+After you've built a seed list but before you bundle, you can use the Asset Validation gem to verify that asset loads map back to seeds\. The Asset Validation gem adds a set of seed\-related commands to the O3DE console command window\. You can use these commands to ensure that you have seeds for all assets that you want to bundle\.
 
-One of these commands, *seedmode*, makes a seed mode active\. When seed mode is active and an asset file loads, Lumberyard traverses the dependency graph from the newly loaded asset until it finds a seed for the asset\. If it doesn't find a seed for the asset, an error message displays\. It warns you that the loaded file won't be bundled if you try to bundle using the seeds that you provided for the current validation session\.
+One of these commands, *seedmode*, makes a seed mode active\. When seed mode is active and an asset file loads, O3DE traverses the dependency graph from the newly loaded asset until it finds a seed for the asset\. If it doesn't find a seed for the asset, an error message displays\. It warns you that the loaded file won't be bundled if you try to bundle using the seeds that you provided for the current validation session\.
 
 During development, use seed mode to ensure that as assets get added they're properly bundled and included in the shipping version of the game\.
 
@@ -20,7 +20,7 @@ If you already have bundles to test, you can use *bundle mode* instead of seed m
 
 ## Seed Mode Commands {#asset-bundler-asset-validation-gem-seed-mode-commands}
 
-When you use Lumberyard Editor or the launcher to run your game, the following console commands are available:
+When you use O3DE Editor or the launcher to run your game, the following console commands are available:
 + **seedmode** - Enables or disables the reporting system\.
 + **addseedpath** *<Relative cache path to an asset>* - Adds the specified asset and all of its dependencies as a seed to your dependency graph, so they no longer are reported as missing\. The `addseedpath` command lets you test which assets should be added to your seed list for packaging\.
 
@@ -47,7 +47,7 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
 
 **To test seed mode**
 
-1. In the Lumberyard console, enter the command `seedmode`\. Asset validation begins\.
+1. In the O3DE console, enter the command `seedmode`\. Asset validation begins\.
 
    ```
    seedmode
@@ -56,14 +56,14 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
    ```
 
 1. Enter game mode\. In the console, seed mode reports multiple Asset not found in seed graph errors\.
-![\[Asset not found in seed graph errors in the Lumberyard console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-1.png)
+![\[Asset not found in seed graph errors in the O3DE console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-1.png)
 
 1. Exit game mode\.
 
 1. Enter the `addseedpath` command to add the missing asset file\. This example uses the command `addseedpath levels\milestone2\level.pak`\.
 
 1. Enter game mode\. The Asset not found errors no longer appear\.
-![\[Using the addseedpath command in the Lumberyard console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-2.png)
+![\[Using the addseedpath command in the O3DE console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-2.png)
 
 ### Handling Missing Asset Errors {#asset-bundler-asset-validation-gem-using-seed-mode-handling-missing}
 

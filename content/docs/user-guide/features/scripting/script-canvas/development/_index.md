@@ -1,5 +1,5 @@
 ---
-description: ' Create a custom node that you can use in Lumberyard''s Script Canvas. '
+description: ' Create a custom node that you can use in O3DE''s Script Canvas. '
 title: Creating Custom Nodes in Script Canvas
 ---
 # Creating Custom Nodes in Script Canvas {#script-canvas-custom-nodes}

@@ -1,10 +1,10 @@
 ---
-description: ' Create custom image processing presets in Amazon Lumberyard. '
+description: ' Create custom image processing presets in Open 3D Engine. '
 title: Creating Image Processing Presets
 ---
 # Creating Image Processing Presets {#asset-pipeline-creating-image-processing-presets}
 
-Lumberyard contains an existing set of image processing presets\. You apply these presets on your source image file names before you add them in your Lumberyard directory for processing\. Based on the appended suffix for the file name, Asset Processor converts them into `.dds` files with specific settings and adds them to the `lumberyard_version\dev\Cache` directory\.
+O3DE contains an existing set of image processing presets\. You apply these presets on your source image file names before you add them in your O3DE directory for processing\. Based on the appended suffix for the file name, Asset Processor converts them into `.dds` files with specific settings and adds them to the `lumberyard_version\dev\Cache` directory\.
 
 You can define presets in two ways:
 

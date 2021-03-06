@@ -1,8 +1,7 @@
 ---
 description: null
-title: null
+title: Glossary
 ---
-#  {#ly-glos-chap}
 
 # Glossary {#ly-glos-chap}
 
@@ -65,7 +64,7 @@ See [blend space](#blend_space).
 A grayscale image that allows more realistic rendering of an object by introducing small displacements of its surface without changing its geometry\. This is done by perturbing the surface normals of a rendered object during lighting\. The amount of perturbation is specified by the values in the bump map\.
 
 **Cloud Canvas** {#cloud_canvas}
-A tool for building connected gameplay by using Lumberyard and AWS services, such as Amazon Cognito, Amazon DynamoDB, AWS Lambda, Amazon S3, Amazon SNS, and Amazon SQS\.
+A tool for building connected gameplay by using O3DE and AWS services, such as Amazon Cognito, Amazon DynamoDB, AWS Lambda, Amazon S3, Amazon SNS, and Amazon SQS\.
 
 **collision proxy** {#collision_proxy}
 A simplified geometric shape for approximating a more complex piece of geometry for purposes of a fast first\-pass collision detection\.
@@ -113,7 +112,7 @@ A game object with one or more components that provide some behavior or function
 A technique that uses cube maps to provide a game level or location with realistic ambient lighting\.
 
 **experimental** {#experimental}
-A designation for a Lumberyard tool that we recommend that you not use in production yet, as it is still in the early stages of development and we have no current plans to support it\. However, it also means that feature is stable enough and functional for specific use cases\. You may find the experimental feature helpful as a guideline for implementing your own game\-specific features\. API operations are subject to change\.
+A designation for a O3DE tool that we recommend that you not use in production yet, as it is still in the early stages of development and we have no current plans to support it\. However, it also means that feature is stable enough and functional for specific use cases\. You may find the experimental feature helpful as a guideline for implementing your own game\-specific features\. API operations are subject to change\.
 
 **gem** {#gem}
 A package that contains code and assets to provide a single feature or multiple tightly scoped functions\.
@@ -122,13 +121,13 @@ A package that contains code and assets to provide a single feature or multiple 
 An image that represents the microscale roughness of a surface\. The gloss map is located in the alpha channel of the normal map\.
 
 **heightmap** {#height_map}
-A grayscale image used to modify vertex positions of a surface\. Lumberyard uses heightmaps to store terrain surface height data\. White areas represent the high areas while black areas represent the low areas of the terrain\.
+A grayscale image used to modify vertex positions of a surface\. O3DE uses heightmaps to store terrain surface height data\. White areas represent the high areas while black areas represent the low areas of the terrain\.
 
 **HDR tone mapping** {#hdr_tone_mapping}
 The process of converting the tonal values of an image from a high dynamic range \(HDR\) to a lower range\.
 
 **helper** {#helper}
-Visual icons attached to objects in Lumberyard Editor that provide object\-specific functionality\.
+Visual icons attached to objects in O3DE Editor that provide object\-specific functionality\.
 
 **IK** {#ik}
 Inverse kinematics\. The use of kinematics equations to calculate the positions and orientations of joints of a character's skeleton so that a specific part of the skeleton \(the end effector\) reaches a defined target point\.
@@ -146,7 +145,7 @@ Method for partitioning a set of data points into k separate groups\. Each group
 An animation frame that specifies exact positions and orientations of geometry affected by the animation\. Animation frames that exist between keyframes are interpolated based on animation curves\.
 
 **legacy** {#legacy}
-A designation for Lumberyard tools that are no longer being advanced and will eventually be removed\.
+A designation for O3DE tools that are no longer being advanced and will eventually be removed\.
 
 **level** {#level}
 A world or map that represents the space or area available to the player during the course of completing a discrete game objective\. Most games consist of multiple levels\.
@@ -191,7 +190,7 @@ The character bone associated with a null or root object\.
 A technique that is used to create detail in a texture adding the illusion of depth\. This depth perception changes based on perspective\.
 
 **PBR** {#pbr}
-Physically based rendering\. PBR uses real\-world physical rules and properties to define how light interacts with the surface of objects\. Used by the Lumberyard rendering system\.
+Physically based rendering\. PBR uses real\-world physical rules and properties to define how light interacts with the surface of objects\. Used by the O3DE rendering system\.
 
 **per\-vertex animation**
 See [blend shape](#blend_shape).
@@ -206,7 +205,7 @@ See [baked](#baked).
 A game object template that stores an asset or a group of assets and all associated properties\.
 
 **Preview** {#preview}
-A designation for Lumberyard tools that may be missing key features but are still stable and usable\. The user experience is high quality, functional, and consistent where it exists but may be unfinished\. APIs are subject to change\.
+A designation for O3DE tools that may be missing key features but are still stable and usable\. The user experience is high quality, functional, and consistent where it exists but may be unfinished\. APIs are subject to change\.
 
 **procedural vegetation** {#procedural_vegetation}
 A technique used to automatically cover a large area of terrain with vegetation objects using texture layers\.

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Python Asset Builder gem to create custom asset builders for
-  your Amazon Lumberyard project. '
+  your Open 3D Engine project. '
 title: Python Asset Builder gem
 ---
 # Python Asset Builder gem {#python-asset-builder}

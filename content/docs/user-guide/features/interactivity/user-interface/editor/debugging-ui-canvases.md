@@ -1,5 +1,5 @@
 ---
-description: ' Use console variables and commands to debug UI canvases in Amazon Lumberyard. '
+description: ' Use console variables and commands to debug UI canvases in Open 3D Engine. '
 title: Debugging UI Canvases
 ---
 # Debugging UI Canvases {#ui-editor-debugging-ui-canvases}

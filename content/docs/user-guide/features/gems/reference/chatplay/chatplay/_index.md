@@ -1,5 +1,5 @@
 ---
-description: ' Use the Twitch Chat Gem to add Twitch ChatPlay support to your Amazon Lumberyard
+description: ' Use the Twitch Chat Gem to add Twitch ChatPlay support to your Open 3D Engine
   game and trigger events based on Twitch chat activity. '
 title: Twitch Chat Gem
 ---

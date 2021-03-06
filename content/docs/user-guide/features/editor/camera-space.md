@@ -1,5 +1,5 @@
 ---
-description: ' Manage the camera space for viewing your entities in Amazon Lumberyard. '
+description: ' Manage the camera space for viewing your entities in Open 3D Engine. '
 title: Using the Camera Space
 ---
 # Using the Camera Space {#camera-space}
@@ -18,4 +18,4 @@ A camera space manipulator is built into the rotation manipulator\. You can rota
 **Example**
 
    In the following example, you can adjust the camera space so that your selected entity remains the center of focus in the viewport\.
-![\[Rotate the camera view around a selected entity in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-5.gif)
+![\[Rotate the camera view around a selected entity in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-5.gif)

@@ -1,5 +1,5 @@
 ---
-description: ' Learn how to create blend trees in the Lumberyard Animation Editor. '
+description: ' Learn how to create blend trees in the O3DE Animation Editor. '
 title: Creating Blend Trees
 ---
 # Creating Blend Trees {#animation-editor-creating-blend-trees}
@@ -17,7 +17,7 @@ A blend tree is a collection of nodes with input and output ports that are color
 
 **To create a blend tree**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In the **Animation Editor**, on the **Anim Graph** tab, click the **\+** icon to create an animation graph\.
 

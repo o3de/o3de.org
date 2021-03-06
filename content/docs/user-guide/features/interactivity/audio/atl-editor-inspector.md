@@ -1,6 +1,6 @@
 ---
 description: ' Use the Audio Controls Editor ''s Inspector pane to edit the properties
-  of the currently selected control in Amazon Lumberyard. '
+  of the currently selected control in Open 3D Engine. '
 title: Inspector Pane
 ---
 # Inspector Pane {#audio-atl-editor-inspector}

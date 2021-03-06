@@ -1,6 +1,6 @@
 ---
 description: ' Use the Dropdown component to make an element behave like a drop-down
-  menu in the Amazon Lumberyard UI Editor. '
+  menu in the Open 3D Engine UI Editor. '
 title: Dropdown
 ---
 # Dropdown {#ui-editor-components-dropdown}

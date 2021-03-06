@@ -1,5 +1,5 @@
 ---
-description: ' Use the draggable component in the Amazon Lumberyard UI Editor to
+description: ' Use the draggable component in the Open 3D Engine UI Editor to
   make UI elements movable. '
 title: Draggable
 ---

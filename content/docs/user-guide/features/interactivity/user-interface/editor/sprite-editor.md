@@ -1,5 +1,5 @@
 ---
-description: ' Use the Sprite Editor to configure your images and textures in Amazon Lumberyard''s
+description: ' Use the Sprite Editor to configure your images and textures in Open 3D Engine''s
   UI Editor . '
 title: Sprite Editor
 ---

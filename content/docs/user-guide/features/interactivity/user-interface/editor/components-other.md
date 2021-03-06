@@ -1,5 +1,5 @@
 ---
-description: ' Use the fader and mask components in Amazon Lumberyard''s UI Editor
+description: ' Use the fader and mask components in Open 3D Engine''s UI Editor
   to adjust transparency and to mask, or show a portion of content in child elements. '
 title: Other Components
 ---
@@ -20,7 +20,7 @@ You can use a **Fader** component to simultaneously adjust the transparency of a
 
 1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.
 
-1. When Lumberyard Editor has started, choose **File**, **Open** and open the UiFeatures level\.
+1. When O3DE Editor has started, choose **File**, **Open** and open the UiFeatures level\.
 
 1. Press **Ctrl\+G** to play the game\.
 

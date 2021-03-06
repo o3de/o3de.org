@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio components in Amazon Lumberyard to add sounds to your level. '
+description: ' Use the Audio components in Open 3D Engine to add sounds to your level. '
 title: Audio Components
 ---
 # Audio Components {#audio-components}

@@ -1,6 +1,6 @@
 ---
 description: ' Use the Resource Compiler image tool to manually select an image
-  processing preset in Amazon Lumberyard and then save the settings to source control. '
+  processing preset in Open 3D Engine and then save the settings to source control. '
 title: Using the Resource Compiler Image Tool
 ---
 # Using the Resource Compiler Image Tool {#asset-pipeline-images-using-resourcecompiler-image-tool}
@@ -12,10 +12,10 @@ You can also use the Texture Settings Editor to manage your texture settings for
 
 **To install RC Shell Commands**
 
-1. Open [Lumberyard Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
+1. Open [O3DE Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 1. On the **Install plugins** page, click **Install**\.
-![\[Click Install to install RC Shell Commands in Lumberyard Setup Assistant\]](/images/user-guide/assets/pipeline/asset-pipeline-images-resourcecompiler-1.png)
+![\[Click Install to install RC Shell Commands in O3DE Setup Assistant\]](/images/user-guide/assets/pipeline/asset-pipeline-images-resourcecompiler-1.png)
 
 Once you install the RC Shell Commands, you can use the Resource Compiler image tool\.
 

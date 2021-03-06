@@ -1,6 +1,6 @@
 ---
 description: ' Set up parameters to customize the animation of the simulated object
-  in Amazon Lumberyard. '
+  in Open 3D Engine. '
 title: Using Parameters to Adjust the Animation During Runtime
 ---
 # Using Parameters to Adjust the Animation During Runtime {#use-parameters-to-adjust-animation-during-runtime}

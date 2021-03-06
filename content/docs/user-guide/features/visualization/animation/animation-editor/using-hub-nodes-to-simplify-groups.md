@@ -1,5 +1,5 @@
 ---
-description: ' Use Hub nodes in Amazon Lumberyard''s Animation Editor to simplify transitions
+description: ' Use Hub nodes in Open 3D Engine''s Animation Editor to simplify transitions
   between groups of nodes in an animation graph. '
 title: Simplify Node Groups with Hub Nodes
 ---

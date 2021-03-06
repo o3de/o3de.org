@@ -1,5 +1,5 @@
 ---
-description: ' Use the Input component to bind raw input to events in Amazon Lumberyard. '
+description: ' Use the Input component to bind raw input to events in Open 3D Engine. '
 title: Input
 ---
 # Input {#component-input}

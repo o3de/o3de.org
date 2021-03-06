@@ -1,5 +1,5 @@
 ---
-description: ' Create a detached UI slice in Amazon Lumberyard''s UI Editor . '
+description: ' Create a detached UI slice in Open 3D Engine''s UI Editor . '
 title: Creating a Detached UI Slice
 ---
 # Creating a Detached UI Slice {#ui-editor-working-slices-detached}

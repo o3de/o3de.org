@@ -1,5 +1,5 @@
 ---
-description: ' Use the Audio Proxy component in Lumberyard to provide a method of communication
+description: ' Use the Audio Proxy component in O3DE to provide a method of communication
   between multiple audio components. '
 title: Audio Proxy
 ---

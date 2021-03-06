@@ -1,6 +1,6 @@
 ---
 description: ' Use the PhysX Shape Collider component to define where collision
-  detection and response occur in Amazon Lumberyard. '
+  detection and response occur in Open 3D Engine. '
 title: 'PhysX Shape Collider'
 ---
 # PhysX Shape Collider {#component-physx-shape-collider}

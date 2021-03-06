@@ -1,5 +1,5 @@
 ---
-description: ' Run a macOS game using the Lumberyard build tools. '
+description: ' Run a macOS game using the O3DE build tools. '
 title: Running macOS Games
 ---
 # Running macOS Games {#osx-game-deploying}
@@ -15,7 +15,7 @@ Before you can run your game on a macOS computer, you must ensure the shader com
 
 **To run your game on a macOS computer**
 
-1. Open the Xcode solution that you generated \(located in the `Solutions` folder in the directory where you installed Lumberyard\)\.
+1. Open the Xcode solution that you generated \(located in the `Solutions` folder in the directory where you installed O3DE\)\.
 
 1. Build, run, and debug your application as you would any Xcode project\. For information, see [Launching Your Mac App](https://developer.apple.com/library/mac/documentation/IDEs/Conceptual/AppDistributionGuide/LaunchingYourApponDevices/LaunchingYourApponDevices.html)\.
 

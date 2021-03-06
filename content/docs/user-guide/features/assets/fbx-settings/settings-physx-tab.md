@@ -136,7 +136,7 @@ When enabled, the V\-HACD algorithm is applied to split each node into approxima
 
 ## Decomposition properties {#fbx-importer-physx-tab-decomposition-properties}
 
-Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes\. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a dynamic entity\. For these scenarios, Lumberyard supports approximate convex decomposition\. Arbitrary meshes are broken down into approximately convex parts before processing each part through the asset pipeline individually\.
+Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes\. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a dynamic entity\. For these scenarios, O3DE supports approximate convex decomposition\. Arbitrary meshes are broken down into approximately convex parts before processing each part through the asset pipeline individually\.
 
 Decomposing meshes has the advantage that each individual, nearly convex part, can be more accurately exported as a convex or primitive\. Since the resulting asset doesn't contain any triangle meshes, it can be used on dynamic entities\.
 

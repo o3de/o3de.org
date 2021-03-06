@@ -1,5 +1,5 @@
 ---
-description: ' Use the Animation Editor quick start to animate a character in Amazon Lumberyard. '
+description: ' Use the Animation Editor quick start to animate a character in Open 3D Engine. '
 title: Getting Started with the Animation Editor
 ---
 # Getting Started with the Animation Editor {#animation-editor-quick-start}
@@ -35,7 +35,7 @@ In the following procedure, you import your character, Jack the robot, select th
 
 **To create a motion set**
 
-1. In Lumberyard Editor, choose **Tools**, **Animation Editor**\.
+1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
 1. In Animation Editor, choose **Layouts**, **AnimGraph**\.
 

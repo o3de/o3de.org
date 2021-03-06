@@ -1,11 +1,11 @@
 ---
-description: ' Use console commands to modify and configure the Amazon Lumberyard runtime
+description: ' Use console commands to modify and configure the Open 3D Engine runtime
   application. '
 title: 'Universal Remote Console'
 ---
 # Universal Remote Console {#lumberyard-remote-console}
 
-You can use **Console** commands to modify and configure the Lumberyard runtime application\. On a PC, the **Console** is available from Lumberyard Editor or the game\. But for mobile platforms you must use a separate Windows\-based application called the Universal Remote Console\. With the Universal Remote Console you can use the IP address of the machine running the Lumberyard game to connect to a remote instance of Lumberyard\.
+You can use **Console** commands to modify and configure the O3DE runtime application\. On a PC, the **Console** is available from O3DE Editor or the game\. But for mobile platforms you must use a separate Windows\-based application called the Universal Remote Console\. With the Universal Remote Console you can use the IP address of the machine running the O3DE game to connect to a remote instance of O3DE\.
 
 Universal Remote Console requires the use of a PC and works with both Android and iOS\. Your mobile device and the PC will need to be on the same network and your firewall should be configured to allow traffic through port 4600\.
 
@@ -14,9 +14,9 @@ Universal Remote Console requires the use of a PC and works with both Android an
 1. Run `lumberyard_version\dev\Tools\RemoteConsole\RemoteConsole.exe`
 ![\[Image NOT FOUND\]](/images/user-guide/remote-console.png)
 
-1. To see output from the Lumberyard logging system, click the **Full Log** tab\.
+1. To see output from the O3DE logging system, click the **Full Log** tab\.
 
-**To connect to a Lumberyard game on a mobile device**
+**To connect to a O3DE game on a mobile device**
 
 1. In the `system_platform_asset.cfg` file, enter the console variable `log_RemoteConsoleAllowedAddresses=[IP address]`, where IP address is the address of the computer that the remote console is running on\.
 
@@ -28,7 +28,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 
 1. After you update the `.cfg` file, deploy the game to mobile devices\.
 
-   For more information, see [Deploy with Lumberyard Editor](/docs/userguide/mobile/android/build-deploy#run-the-deployment-tool) and [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)\.
+   For more information, see [Deploy with O3DE Editor](/docs/userguide/mobile/android/build-deploy#run-the-deployment-tool) and [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)\.
 
 1. If the game is already running, restart it\.
 

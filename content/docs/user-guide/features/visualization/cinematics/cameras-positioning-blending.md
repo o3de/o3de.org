@@ -1,5 +1,5 @@
 ---
-description: ' Move a camera in the <guilabel>Track View</guilabel> editor in Amazon Lumberyard. '
+description: ' Move a camera in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Positioning a Camera
 ---
 # Positioning a Camera {#cinematics-cameras-positioning-blending}

@@ -1,5 +1,5 @@
 ---
-description: ' Use the EMotionFX Animation gem in your Lumberyard project to enable the
+description: ' Use the EMotionFX Animation gem in your O3DE project to enable the
   node-based character animation system. '
 title: 'EMotionFX Animation Gem'
 ---
@@ -19,6 +19,6 @@ The **Animation Editor** is compatible with `.fbx` files and converts these file
 
 For more information, see [Create and animate characters](/docs/user-guide/features/visualization/animation/char-intro.md)\.
 
-Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in Lumberyard](/docs/userguide/configurator/projects#creating-a-game-project)\.
+Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in O3DE](/docs/userguide/configurator/projects#creating-a-game-project)\.
 
 ![\[Image NOT FOUND\]](/images/user-guide/gems/animation-editor-render-window.png)

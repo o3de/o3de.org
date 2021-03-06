@@ -1,11 +1,11 @@
 ---
-description: ' Use the Script Canvas tutorials to learn about Amazon Lumberyard''s visual
+description: ' Use the Script Canvas tutorials to learn about Open 3D Engine''s visual
   scripting system. '
 title: 'Script Canvas Tutorials'
 ---
 # Script Canvas Tutorials {#script-canvas-tutorials}
 
-Use the following **Script Canvas** tutorials to learn about the Lumberyard visual scripting system\.
+Use the following **Script Canvas** tutorials to learn about the O3DE visual scripting system\.
 
 ## Prerequisites {#prerequisites-for-script-canvas-tutorial}
 + Set the [Samples Project](/docs/userguide/samples/projects/samples.md) as the default project\. For more information, see [Choosing a Game Project to Open](/docs/userguide/configurator/projects#project-configurator-launch-projects)\.

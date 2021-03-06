@@ -1,5 +1,5 @@
 ---
-description: ' Reset the transform properties for entities in Amazon Lumberyard. '
+description: ' Reset the transform properties for entities in Open 3D Engine. '
 title: Resetting the Transform
 ---
 # Resetting the Transform {#reset-transform}
@@ -17,4 +17,4 @@ You can reset the transform for an entity, so that you return the entity to its 
 **Example**
 
   In the following example, you can reset the transform as the entity transforms are changing and return them to their original transform\.
-![\[Modify entities and reset their transform in Lumberyard.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-reset-transform-1.gif)
+![\[Modify entities and reset their transform in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-reset-transform-1.gif)

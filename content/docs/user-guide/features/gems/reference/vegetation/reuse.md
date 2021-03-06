@@ -1,5 +1,5 @@
 ---
-description: ' Reference dynamic vegetation to another area in Amazon Lumberyard. '
+description: ' Reference dynamic vegetation to another area in Open 3D Engine. '
 title: Reusing Vegetation in Multiple Areas
 ---
 # Reusing Vegetation in Multiple Areas {#dynamic-vegetation-reusing-in-multiple-areas}

@@ -1,11 +1,11 @@
 ---
-description: ' Learn about the Lumberyard UI 2.0 progress indicators, including the
+description: ' Learn about the O3DE UI 2.0 progress indicators, including the
   spinner and progress bar components. '
-title: Lumberyard UI progress indicators
+title: O3DE UI progress indicators
 ---
-# Lumberyard UI progress indicators<a name="uidev-progress-indicators-component"></a>
+# O3DE UI progress indicators<a name="uidev-progress-indicators-component"></a>
 
-Use progress and status indicators to communicate to users that the Lumberyard application is working on a process, and what the result of that process is when it's finished\. Indicators should be employed when there's a chance the user could be left wondering whether or not a process is working or hung\.
+Use progress and status indicators to communicate to users that the O3DE application is working on a process, and what the result of that process is when it's finished\. Indicators should be employed when there's a chance the user could be left wondering whether or not a process is working or hung\.
 
 ![\[component progress indicators style\]](/images/tools-ui/component-progress-indicators-style.png)
 
@@ -89,7 +89,7 @@ spinner->SetIsBusy(true);
 
 ## C\+\+ API reference<a name="progress-indicators-api-ref"></a>
 
-For details on the **progress indicator** API's, see the following topics in the [Lumberyard UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **progress indicator** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
 +  [AzQtComponents::ProgressBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_progress_bar.html)
 +  [AzQtComponents::StyledBusyLabel](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_styled_busy_label.html) \(spinner\)
 

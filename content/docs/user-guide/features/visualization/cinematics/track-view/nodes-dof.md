@@ -1,5 +1,5 @@
 ---
-description: ' Use the Depth of Field node in Amazon Lumberyard''s <guilabel>Track View</guilabel> editor to add
+description: ' Use the Depth of Field node in Open 3D Engine''s <guilabel>Track View</guilabel> editor to add
   realism to scenes by limiting the area that is in focus. '
 title: Adding a Depth of Field Node
 ---
