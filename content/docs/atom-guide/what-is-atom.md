@@ -1,3 +1,11 @@
+---
+title: "What is Atom?"
+description: "What is Atom Rendering Engine?"
+date: 2021-03-04
+toc: false
+weight: 200
+---
+
 # What is Atom?
 
 Atom is a modular, data-driven, and multi-threaded rendering engine. With Atom, you can create content using the latest rendering technology. Atom supports modern rendering pipelines such as Forward+ and Deferred rendering. Its rendering pipeline is fully data driven, enabling developers to modify or replace key components with minimal code change. Atom’s multi-threading support allows rendering features to run parallel on both the CPU and GPU, taking advantage of all computing resources. Atom is built on multiple industry-standard 3D graphics APIs and features a modular design that makes it easy to expand support for additional platforms. 
@@ -51,6 +59,6 @@ For more information on setting up and installing Atom, see [Setup and Installat
 You can learn more about Atom in the following sections of this guide. 
 
 <!-- * **[Get Started](../get-started/_index.md)**: Explore materials and shaders in Atom, or set up a 3D environment with Atom's rendering features in O3DE. -->
-* **[BaseViewer Samples](baseviewer/_index.md)**: Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering. 
+* **[Atom Sample Viewer](atom-sample-viewer/_index.md)**: Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering. 
 <!-- * **[Tutorials](../tutorials/_index.md)**: Interact with a collection of tutorials on rendering with Atom. -->
 * **[Atom Core Systems](core-systems/_index.md)**: Dive into Atom’s rendering pipeline and learn about its core systems and how they work together. 
