@@ -1,15 +1,14 @@
 ---
-description: ' Open 3D Engine component reference index. '
+description: ' Open 3D Engine (O3DE) component reference index. '
 title: Component reference
+date: 2021-03-05
 ---
 
-Components add functionality to entities. An entity can contain any number or combination of components. Some components only allow one instance per entity. Some components depend on other components to function.
-
+Components add functionality to entities. An entity cam contain any number or combination of components. Some components only allow one instance per entity. Some components depend on other components to function.
 
 Components are provided by Gems. To make a component available in the O3DE editor, you must add the Gem that provides it, and configure and build your project. Though components might belong to the same type, they might not be provided by the same Gem. Each component lists the Gem that provides it on its reference page.
 
-The components below are grouped by type as they appear in the Open 3D Engine (O3DE) editor. 
-
+The components below are grouped by type as they appear in the O3DE editor.
 
 ## Component type groups ##
 
@@ -32,7 +31,6 @@ For information on using Shape components, see [Shape components](/docs/user-gui
 * [Disk Shape](/docs/user-guide/features/components/reference/shape/disk-shape.md) - Generates disk geometry for areas and triggers.
 * [Polygon Prism Shape](/docs/user-guide/features/components/reference/shape/polygon-prism-shape.md) - Generates n-sided prism geometry for volumes and triggers.
 * [Quad Shape](/docs/user-guide/features/components/reference/shape/quad-shape.md) - Generates quad-plane geometry for areas and triggers.
-
 * [Sphere Shape](/docs/user-guide/features/components/reference/shape/sphere-shape.md) - Generates sphere geometry for volumes and triggers.
 * [Spline](/docs/user-guide/features/components/reference/shape/spline.md) - Generates lines and curves for paths.
 * [Tube Shape](/docs/user-guide/features/components/reference/shape/tube-shape.md) - Generates tube geometry for volumes and triggers.
