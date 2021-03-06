@@ -1,3 +1,4 @@
+baseURL = "https://o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
@@ -52,27 +53,27 @@ name = "Open Sans"
 sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
-[[menu.main]]
-name = "Download"
-url = "/download"
-weight = 1
+# [[menu.main]]
+# name = "Download"
+# url = "#"
+# weight = 1
 
-[[menu.main]]
-name = "News"
-url ="/news"
-weight = 2
+# [[menu.main]]
+# name = "News"
+# url ="#"
+# weight = 2
 
-[[menu.main]]
-name = "Community"
-url = "#"
-weight = 3
-identifier = "community"
+# [[menu.main]]
+# name = "Community"
+# url = "#"
+# weight = 3
+# identifier = "community"
 
-[[menu.main]]
-name = "Community subitem placeholder"
-url = "/placeholder"
-weight = 1 
-parent = "community"
+# [[menu.main]]
+# name = "Community subitem placeholder"
+# url = "#"
+# weight = 1 
+# parent = "community"
 
 [[menu.main]]
 name = "Learn"

@@ -70,8 +70,10 @@
 $font-family-headers: "Open Sans" 
 $o3de-black: #000
 $o3de-white: #fff
+$o3de-lightgray: #ddd
 $o3de-blue: #1E71EB
 $o3de-darkblue: #011C46
+$o3de-mediumblue: #054CBA
 $o3de-lightblue: #D2EDFF
 $o3de-green: #58BD61
 
@@ -85,7 +87,10 @@ $o3de-green: #58BD61
     padding-left: 0
 
 .hashlink 
-  font-size: smaller !important
+  font-size: 50% !important
+  opacity: 20%
+  &:hover 
+    opacity: 100%
 
 .highlight pre 
   padding: 0.5rem
@@ -94,6 +99,7 @@ $o3de-green: #58BD61
 .content 
   table 
     @extend .table
+    @extend .border
  
   img 
     @extend .img-fluid
@@ -103,12 +109,25 @@ h1, h2, h3, h4, h5, h6
   scroll-margin-top: 5rem
   margin-top: 1.8rem
 
-nav 
-  ul 
-    list-style-type: none
-    padding-left: 0
-    ul
-      padding-left: 1.5rem
+a 
+  color: $o3de-mediumblue
+  &:hover, &:active 
+    color: $o3de-blue
+    text-decoration: none
+
+  // give code some base styling 
+pre
+  padding: 0.5rem
+  border-radius: 5px
+  background-color: #2f1e2e
+  color: #e7e9db
+  code //account for the fact that sometimes you see <pre><code>...
+    background-color: #2f1e2e
+
+code 
+  padding: 0.1rem
+  border-radius: 5px
+  background-color: #ebebeb
 
 // layouts/partials/navbar.html 
 
@@ -194,3 +213,41 @@ $width: '59vw';
 .social 
   font-size: 2rem
   padding: 0.5rem
+
+
+// Docs pages 
+
+// layouts/docs/single.html, layouts/docs/section.html 
+
+.docs-sidebar 
+  position: sticky
+  top: 4rem
+  z-index: 1000
+  height: calc(100vh - 4rem)
+  border-right: 1px solid $o3de-lightgray
+  flex: 0 1 320px
+  order: 0
+  box-sizing: border-box
+  display: block
+  flex-wrap: wrap
+  overflow: auto
+
+// layouts/section-nav.html 
+
+nav 
+  ul 
+    list-style-type: none
+    padding-left: 0
+    padding-bottom: 0.2rem
+    li
+      padding-left: 1rem
+      ul
+        padding-bottom: 0rem
+
+#section-nav
+  font-size: 0.9rem
+  h1
+    font-size: 1.4rem
+
+.currentPage
+  font-weight: bold

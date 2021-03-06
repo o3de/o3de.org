@@ -14,3 +14,17 @@ $(() => {
 
   navbarBurger();
 });
+
+
+//active links on docs 
+
+$(function() {
+  const url = window.location.href;
+  $("#accordionExample .card a").each(function(){
+       if($(this).attr("href") == url || $(this).attr("href") == '' ) {
+        $(this).addClass("currentPage");
+        
+        $(this).closest(".card-body").parent().addClass("show");
+       }
+  })
+});

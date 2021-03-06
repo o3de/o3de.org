@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <div class="container-fluid">
+      <section class="row flex-xl-nowrap">
+        <section class="col col-xl-5 docs-sidebar p-0">
+          {{ partial "section-nav.html" . }}
+        </section>
+        <section class="col docs-content pt-3 px-5 pb-3">
+          <div class="row">
+            <div class="col col-xl-12">
+            {{ partial "single-header.html" . }}
+            </div>
+            <div class="col">
+              <h1 class="title">{{ .Page.Title | markdownify }}</h1>
+              {{ partial "docs/content.html" . }}     
+            </div>
+            <div class="col col-xl-2 pt-5">
+              {{ partial "docs/docs-nav.html" . }}
+            </div>
+        </section>
+      </section>
+    </div>
+{{ end }}
