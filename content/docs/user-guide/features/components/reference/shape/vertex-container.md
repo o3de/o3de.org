@@ -1,9 +1,10 @@
 ---
-description: ' Use vertex containers in Open 3D Engine to access, update, and remove vertices. '
+description: ' Use vertex containers in Open 3D Engine (O3DE) to access, update, and remove vertices. '
 title: Vertex Containers
+date: 2021-03-05
 ---
 
-`VertexContainer` is a concrete type and an interface that is used by several Lumberyard component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/features/components/reference/shape/polygon-prism-shape.md) component and the [Spline](/docs/user-guide/features/components/reference/shape/spline.md) component, and used indirectly by the [Navigation Area](/docs/user-guide/features/components/reference/nav-area.md) component.
+`VertexContainer` is a concrete type and an interface that is used by several O3DE component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/features/components/reference/shape/polygon-prism-shape.md) component and the [Spline](/docs/user-guide/features/components/reference/shape/spline.md) component, and used indirectly by the [Navigation Area](/docs/user-guide/features/components/reference/nav-area.md) component.
 
 ## Vertex Container Interface ##
 
@@ -25,34 +26,10 @@ To implement the `VariableVertices` interface, you can use either an `AZStd::vec
 
 The `VertexContainerInterface` provides an interface to all functionality provided by the previous two interfaces and the `VertexContainer` type. For convenience, the `VertexContainerInterface` also provides `SetVertices` and `ClearVertices` functions that can update all vertices or remove all vertices in one operation. The `SetVertices` function takes a `vertices` parameter that contains a list of all vertices to be stored.
 
-> **Note:** A `VertexContainer` owns the vertices to which it has access; they are not stored elsewhere \(a `VertexContainer` is not a view\).
-
-The `VertexContainerInterface` is implemented by the Spline component and Polygon Prism Shape component EBuses. The Navigation Area component also uses the interface through its dependence on the Polygon Prism Shape component. Each of these components uses the `VertexContainer` type internally to manage its vertices.
+> **Note:** A `VertexContainer` owns the vertices to which it has access; they are not stored elsewhere (a `VertexContainer` is not a view).
 
 For more information about the interfaces in the `VertexContainerInterface`, see the code and code comments in the `o3de\Code\Framework\AzCore\AzCore\Math\VertexContainerInterface.h` file.
 
 For more information about the `VertexContainer` type, see the code and code comments in the `o3de\Code\Framework\AzCore\AzCore\Math\VertexContainer.h` file.
 
-> **Note:** The `VertexContainer` can store `Vector2` or `Vector3` types. The vector type is determined at compile time when the type is created. This is useful for certain components that do not allow points to be modified on the Z \(vertical\) axis and treat points just in two dimensions. The Polygon Prism Shape component uses the `Vector2` type.
-
-## EBus Request Bus Interface Example ##
-
-The following is an example of a Lua script that uses the `RequestBus` interface.
-
-```lua
-local firstVertex = <type_with_vertex_container>.vertexContainer[1];
-local lastVertex = <type_with_vertex_container>.vertexContainer[spline.vertexContainer:size()];
-
-...RequestBus.Event.AddVertex(self.entityId, lastVertex + Vector3(1, 2, 3));
-...RequestBus.Event.UpdateVertex(self.entityId, 0, firstVertex + Vector3(1, 2, 3));
-...RequestBus.Event.InsertVertex(self.entityId, spline.vertexContainer:size() - 1, lastVertex + Vector3(1, 2, 3));
-...RequestBus.Event.ClearVertices(self.entityId);
-...RequestBus.Event.RemoveVertex(self.entityId, spline.vertexContainer:size() - 1);
-
--- Note: In Lua, use the member functions of VertexContainer, which start indexing from 1
-.vertexContainer:AddVertex(lastVertex + Vector3(1, 2, 3));
-.vertexContainer:UpdateVertex(1, firstVertex + Vector3(1, 2, 3));
-.vertexContainer:InsertVertex(spline.vertexContainer:size(), lastVertex + Vector3(1, 2, 3));
-.vertexContainer:ClearVertices();
-.vertexContainer:RemoveVertex(spline.vertexContainer:size());
-```
+> **Note:** The `VertexContainer` can store `Vector2` or `Vector3` types. The vector type is determined at compile time when the type is created. This is useful for certain components that do not allow points to be modified on the Z (vertical) axis and treat points just in two dimensions. The Polygon Prism Shape component requires the `Vector2` type.
