@@ -1,5 +1,6 @@
 ---
 title: Deadlink
+main_menu: false
 ---
 
 Hello, you've reched a dead link in the documentation. Sorry for the inconvenience! We've retired an old page from Lumberyard 1.x 

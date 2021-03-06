@@ -1,3 +1,6 @@
-<blockquote class="caution callout">
-  <div><strong>Caution: </strong> {{ trim .Inner " \n" | markdownify }}</div>
+<blockquote class="warning callout card border-danger">
+  <div class="row no-gutters">
+    <div class="col-md-2 bg-danger text-white p-2"><strong>Caution: </strong></div> 
+    <div class="col p-2">  {{ trim .Inner " \n" | markdownify }}</div>
+    </div>
 </blockquote>

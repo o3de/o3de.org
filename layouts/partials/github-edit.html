@@ -1,8 +1,6 @@
-<div class="col col-4">
-    {{ $repoUrl := .Site.Params.repositoryUrl }}
-    {{ $filePath := .File.Path }}
-    {{ $editUrl := print $repoUrl "/content/" $filePath }}
-    <a href="{{ $editUrl }}" class="btn btn-primary" target="_blank">
-      <span class="fas fa-pen"></span> &nbsp; Edit on GitHub
-    </a>
-</div>
+{{ $repoUrl := .Site.Params.repositoryUrl }}
+{{ $filePath := .File.Path }}
+{{ $editUrl := print $repoUrl "/content/" $filePath }}
+<a href="{{ $editUrl }}" class="btn btn-light border" target="_blank">
+  <span class="fas fa-pen"></span> &nbsp; Edit on GitHub
+</a>

@@ -2,6 +2,7 @@
 linktitle: Welcome guide
 title: Open 3D Engine Welcome Guide
 weight: 100
+menu_uuid: welcome
 ---
 
 {{< preview-migrated >}}
