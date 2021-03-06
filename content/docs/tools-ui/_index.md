@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 # Open 3D Engine UI Extensions Guide
+=======
+---
+title: Tools UI Guide 
+---
+# Amazon Lumberyard UI Extensions Guide
+>>>>>>> 2acdc187 (create docs sidenav)
 
 -----
 *****Copyright &copy;  *****
