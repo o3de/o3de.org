@@ -1,10 +1,27 @@
-{{ with site.Copyright }}
+{{ $social := site.Params.social }}
 {{ $year := now.Year }}
-<footer class="footer">
-  <div class="container">
-    <p>
-      &copy; {{ $year }} {{ . }}
-    </p>
+
+{{ with site.Copyright }}
+
+<footer class="footer text-white">
+  <div class="container mt-5 pt-5 pb-5">
+    <div class="row">
+      <div class="col col-12 col-xl-8">
+        <p>
+          &copy; {{ $year }} {{ . }}
+        </p>
+        <p>&copy; {{ $year }} The Linux Foundation. All rights reserved. 
+          The Linux Foundation has registered trademarks and uses trademarks. 
+          For a list of trademarks of The Linux Foundation, please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank">Trademark Usage</a> page.</p>
+      </div>
+      <div class="col col-12 col-xl-4">
+        <div class="float-right">
+          {{ with $social }}
+            {{ partial "social-buttons.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 {{ end }}
