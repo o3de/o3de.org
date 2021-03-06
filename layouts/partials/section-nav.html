@@ -1,33 +1,72 @@
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
 {{ $docsSections := where $allSections "Section" "docs-snapshot" }} <!-- "getting-started" and "deployment" -->
 {{ $thisUrl      := .RelPermalink }} <!-- the URL of the current page -->
+{{ $thisSection := .CurrentSection.RelPermalink }}
 
 {{ range $docsSections }}
-{{ $isThisPage := eq .RelPermalink $thisUrl }}
-<nav class="section-nav">
-      <p class="menu-label">Documentation:</p>
-      <ul class="menu-list">
-        <li><a {{ if $isThisPage }} class="active" {{ end }} href="{{ .RelPermalink }}">{{ .CurrentSection.Title | markdownify }}</a>
-        {{ range .RegularPages }}
-          <ul>
-            <li>
-            <a {{ if $isThisPage }} class="active" {{ end }} href="{{ .RelPermalink }}">
-              {{ .Title | markdownify }}
-            </a>
-            </li>
-          </ul>
-        {{ end }}
-        </li>
+  <nav class="section-nav">
+    <ul class="menu-list">
+      <li>
+        <a   
+        href="{{ .RelPermalink }}">Root:  {{ .CurrentSection.Title | markdownify }}</a>
+      </li>
     {{ range .Sections }}
-        <li><a {{ if $isThisPage }} class="active" {{ end }} href="{{ .RelPermalink }}">{{ .CurrentSection.Title | markdownify }}</a>
-          <ul>
-            {{ range .CurrentSection.RegularPages }}
-            <li>
-                <a {{ if $isThisPage }} class="active" {{ end }} href="{{ .RelPermalink }}">{{ .Page.Title | markdownify }}</a>
-            </li>
-            {{ end }}
-          </ul>
-        </li>
-    {{ end }}
+      <li>
+        <a class=""
+        href="{{ .RelPermalink }}">Guide: {{ .CurrentSection.Title | markdownify }}</a>
+        <ul>
+          {{ range .Sections }}
+          <li>
+            <a 
+            href="{{ .RelPermalink }}">2. {{ .CurrentSection.Title | markdownify }}</a>
+          </li>
+            <ul>
+              {{ range .Sections }}
+              <li>
+                <a 
+                href="{{ .RelPermalink }}">3.  {{ .CurrentSection.Title | markdownify }}</a>
+                <ul>
+                  {{ range .Sections }}
+                  <li>
+                    <a 
+                    href="{{ .RelPermalink }}">4.  {{ .CurrentSection.Title | markdownify }}</a>
+                    <ul>
+                      {{ range .Sections }}
+                      <li>
+                        <a 
+                        href="{{ .RelPermalink }}">5. {{ .CurrentSection.Title | markdownify }}</a>
+                        <ul>
+                          {{ range .Sections }}
+                          <li>
+                            <a 
+                            class="menu-item {{ if eq .RelPermalink $thisUrl }}currentPage{{ end }} {{ if eq .CurrentSection.RelPermalink $thisSection }}active{{ end }}"  
+                            href="{{ .RelPermalink }}">6.  {{ .CurrentSection.Title | markdownify }}</a>
+
+                          </li>
+                          {{ end }}
+                        </ul>
+                      </li>
+                      {{ end }}
+                    </ul>
+                  </li>
+                  {{ end }}
+                </ul>
+              </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </ul>
+        <!-- <ul>
+          {{ range .CurrentSection.RegularPages }}
+          <li>
+            <a class="menu-item {{ if eq .RelPermalink $thisUrl }}currentPage{{ end }} {{ if eq .CurrentSection.RelPermalink $thisSection }}active{{ end }}" 
+            href="{{ .RelPermalink }}">{{ .Page.Title | markdownify }}</a>
+          </li>
+          {{ end }}
+        </ul> -->
+      </li>
+      {{ end }}
+    </ul>
 {{ end }}
 </nav>
+
