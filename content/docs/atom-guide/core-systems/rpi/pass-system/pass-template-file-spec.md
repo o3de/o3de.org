@@ -1,9 +1,8 @@
 ---
 title: "PassTemplate File Specification"
-description: "PassTemplate File Specification in the Atom Rendering Engine"
-date: 2021-03-04
+description: "Pass Template File Specification in Atom"
+date: 2021-03-09
 toc: false
-weight: 200
 ---
 
 This section goes over the elements of a PassTemplate (`*.pass`) file. Note that each element has an equivalent in C++ (refer to the API reference). 
@@ -458,18 +457,18 @@ The following snippet shows the general structure of PassData in JSON.
  
                 "Make Fullscreen Pass": true,                               //< When this setting is set to true, the number of X and Y dispatch groups will be automatically calculated so that the compute pass covers the entire output image
                                                                             //  with one thread per pixel (if the image size doesn't divide evenly we'll round up the number of X and Y dispatch count). The calculated values for X and Y depend
-                                                                            //  on the size of the output image (not the on screen resolution), so here it woudl target the size of the downsampled output image
+                                                                            //  on the size of the output image (not the on screen resolution), so here it would target the size of the downsampled output image.
                                                                             //  Example: Say our input image is 1024x1024, and the compute shader runs with [numthreads(8,8,1)]. The target output image will be 512x512, and so the dispatch
                                                                             //  group count will be X = 512/8 = 64 and Y = 512/8 = 64.
  
-                "PipelineViewTag": "MainCamera",                            //< Specifies a PipelineViewTag that is used to associate this pass with a view. In this case we want to associate it with views tagged "MainCamera"
+                "PipelineViewTag": "MainCamera",                            //< Specifies a PipelineViewTag that is used to associate this pass with a view. In this case we want to associate it with views tagged "MainCamera".
  
-                "ShaderDataMappings": {                                     //< A struct that allows users to map variables directly from JSON to the Pass Shader Resource Group (SRG_PerPass). This bypasses the need for binding these variables in C++
-                                                                            //  The various mapping types are: ColorMappings, UintMappings, FloatMappings, Float2Mappings, Float3Mappings, Float4Mappings, Matrix3x3Mappings and Matrix4x4Mappings
+                "ShaderDataMappings": {                                     //< A struct that allows users to map variables directly from JSON to the Pass Shader Resource Group (SRG_PerPass). This bypasses the need for binding these variables in C++.
+                                                                            //  The various mapping types are: ColorMappings, UintMappings, FloatMappings, Float2Mappings, Float3Mappings, Float4Mappings, Matrix3x3Mappings and Matrix4x4Mappings.
  
-                    "FloatMappings": [                                      //< All mappings of a same type are declared as an array. Each entry in the array being a name-value pair.
+                    "FloatMappings": [                                      //< All mappings of the same type are declared as an array. Each entry in the array is a name-value pair.
                         {
-                            "Name": "m_sunIntensityMultiplier",             //< The name of the shader resource group variable that we want to map the value to
+                            "Name": "m_sunIntensityMultiplier",             //< The name of the shader resource group variable that we want to map the value to.
                             "Value": 1.0                                    //< The value we want to map. Note that the type of value is given by the mapping type, in this case float because we are specifying "FloatMappings"
                         }
                     ]

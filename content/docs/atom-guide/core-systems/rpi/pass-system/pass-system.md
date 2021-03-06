@@ -1,11 +1,11 @@
 ---
 title: "Pass System"
-description: "Pass System in the Atom Rendering Engine"
-date: 2021-03-04
+description: "Pass System in Atom"
+date: 2021-03-09
 toc: false
-weight: 100
 ---
 
+*This section is under construction.*
 <!-- [WRITER NOTE: I want to improve the intro by talking about the Pass System in a general sense
 @antonmic
 - What is the responsibility of the pass system?
