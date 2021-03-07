@@ -3,10 +3,6 @@ description: ' Learn how to use tags with animation graphs (AnimGraphs) in the O
   Animation Editor. '
 title: Using Tags with Animation Graphs
 ---
-# Using Tags with Animation Graphs {#animation-editor-using-tags}
-
-
-****
 
 |  |
 | --- |

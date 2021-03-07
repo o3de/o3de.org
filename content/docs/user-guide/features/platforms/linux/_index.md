@@ -2,7 +2,7 @@
 description: ' Use Open 3D Engine to compile a dedicated Linux server for a multiplayer
   game, prepare your server for game hosting, and integrate with AGS. '
 linktitle: Linux dedicated server
-title: Creating O3DE Executables for Linux
+title: Creating O3DE executables for Linux
 weight: 300
 ---
 

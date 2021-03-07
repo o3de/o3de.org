@@ -1,6 +1,7 @@
 ---
 description: ' Use Open 3D Engine to build games for iOS devices. '
-title: iOS Support
+linktitle: iOS
+title: O3DE iOS support
 weight: 200
 ---
 

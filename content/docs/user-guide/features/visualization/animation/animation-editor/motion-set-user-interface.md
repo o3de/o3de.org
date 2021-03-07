@@ -3,7 +3,6 @@ description: ' Learn more about the user interface for motion sets in the Animat
   . '
 title: Motion Sets Interface
 ---
-# Motion Sets Interface {#animation-editor-motion-set-user-interface}
 
 Use the **Motion Set** pane to create motion set files and add motion files to it\.
 
