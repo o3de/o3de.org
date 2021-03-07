@@ -11,17 +11,16 @@ Open 3D Engine (03DE) is a free, cross\-platform, 3D game engine that allows you
 O3DE offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\.
 
 Interested? Want to get started?
+
 + [Download the latest version of the O3DE beta](https://aws.amazon.com/lumberyard/downloads/)
 + [Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
 + [Sign up for and participate in the Open 3D Engine forums](https://forums.awsgametech.com/)
 
 ![\[Learn more about O3DE's systems and features in the Open 3D Engine User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
 
-<!-- TAKE TALKING POINTS FROM ROYAL'S DECK -->
 ## Open 3D Engine Features
 
 HIGH LEVEL MARKETING TYPE DESCRIPTION HERE
-
 
 ### Fully Open Source
 
@@ -85,7 +84,7 @@ For more information, see the following topics:
 + Compiles to Python / LUA and with future native code support
 + Reusable rapid prototyping without need for rewrite due to optimized output.
 
-### Robust Networking 
+### Robust Networking
 
 + Highly flexible, TCP/UDP low latency transport layer abstracted behind simple API
 + Encryption and compression support with built in simulator for latency, jitter, reorder & loss
