@@ -3,10 +3,6 @@ description: ' Use Landscape Canvas Gem to author dynamic vegetation Open 3D Eng
   project. '
 title: 'Landscape Canvas Gem'
 ---
-# Landscape Canvas Gem {#gem-landscape-canvas}
-
-
-****
 
 |  |
 | --- |

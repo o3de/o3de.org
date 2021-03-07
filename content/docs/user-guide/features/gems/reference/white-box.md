@@ -3,10 +3,6 @@ description: ' Use the White Box gem to add White Box rapid design components to
   your Open 3D Engine project. '
 title: 'White Box Gem'
 ---
-# White Box Gem {#gem-white-box}
-
-
-****
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ description: ' Add scale, rotation, and position modifiers to change the look of
   dynamic vegetation in Open 3D Engine. '
 title: Adding Scale, Rotation, and Position Modifiers
 ---
-# Adding Scale, Rotation, and Position Modifiers {#dynamic-vegetation-procedures-adding-modifiers}
 
 Before you can complete this procedure, you must first [create a vegetation layer](/docs/user-guide/features/gems/vegetation/layer.md)\.
 

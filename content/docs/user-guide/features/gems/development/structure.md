@@ -1,9 +1,9 @@
 ---
 description: ' Learn how Open 3D Engine gems are structured and the files that you can
   modify to customize gems for your game. '
-title: Gem Structure
+title: Gem structure
+weight: 50
 ---
-# Gem Structure {#gems-system-structure}
 
 Each gem package can contain the following:
 + Assets

@@ -2,7 +2,6 @@
 description: ' Learn to profile memory usage in Open 3D Engine projects with the <guilabel>Asset Memory Analyzer</guilabel>. '
 title: Asset Memory Analyzer Gem
 ---
-# Asset Memory Analyzer Gem {#asset-memory-analyzer-gem}
 
 Resource management is crtitcal, particularly on platforms where memory is limited. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project\. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs\. It is an indispensable tool to balance memory usage and get the best performance for your project\.
 

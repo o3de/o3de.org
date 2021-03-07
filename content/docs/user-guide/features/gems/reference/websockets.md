@@ -3,7 +3,6 @@ description: ' Use the Websockets Gem to add support for the WebSocket protocol 
   your Open 3D Engine project. '
 title: Websockets Gem
 ---
-# Websockets Gem {#gem-websockets}
 
 The Websockets Gem provides an easy way to create WebSocket clients for your O3DE games and projects\. With this gem, you can connect to WebSocket servers and take advantage of the full\-duplex communication that they provide\.
 

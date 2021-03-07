@@ -2,7 +2,6 @@
 description: ' Reference dynamic vegetation to another area in Open 3D Engine. '
 title: Reusing Vegetation in Multiple Areas
 ---
-# Reusing Vegetation in Multiple Areas {#dynamic-vegetation-reusing-in-multiple-areas}
 
 After you create your vegetation entity, you can designate your customized vegetation to appear in another area\. You do this by referencing another shape\. For example, if you created a forest patch that includes the vegetation assets and arrangement for your level, you can create another entity with a different shape and reference this new shape for your vegetation\. With this feature, you can reuse your vegetation in different areas of your level without creating a separate vegetation entity each time\.
 

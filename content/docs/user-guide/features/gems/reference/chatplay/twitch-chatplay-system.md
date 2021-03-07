@@ -2,8 +2,8 @@
 description: ' Get an overview of the Twitch ChatPlay system for interacting with Twitch
   viewers. '
 title: 'Twitch ChatPlay System'
+weight: 100
 ---
-# Twitch ChatPlay System {#chatplay-intro}
 
 Twitch ChatPlay provides a flexible framework to create customized game interactions between broadcasters and spectators on Twitch, the world's leading social video platform and community for gamers\.
 
@@ -18,8 +18,8 @@ Twitch ChatPlay includes the following components and services:
 
 The following diagram illustrates Twitch ChatPlay's server\-side components\.
 
-![\[Twitch ChatPlay server-side components\]](/images/userguide/chatplay/chatplay-server.png)
+![\[Twitch ChatPlay server-side components\]](/images/user-guide/chatplay/chatplay-server.png)
 
 The following diagram illustrates Twitch ChatPlay's client\-side components\.
 
-![\[Twitch ChatPlay client-side components\]](/images/userguide/chatplay/chatplay-client.png)
+![\[Twitch ChatPlay client-side components\]](/images/user-guide/chatplay/chatplay-client.png)

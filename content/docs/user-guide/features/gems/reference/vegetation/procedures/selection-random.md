@@ -3,7 +3,6 @@ description: ' Create random distribution by using weight-based random selection
   Open 3D Engine dynamic vegetation. '
 title: Creating Weight-Based Random Selection
 ---
-# Creating Weight\-Based Random Selection {#vegetation-random-distribution-selection}
 
 When you create distribution using random selection, the vegetation asset that is selected for a particular point on the grid varies\. The assigned weight of each asset determines its chance of selection\. In this procedure, you specify weights and link to the gradient using the **Vegetation Asset Weight Selector** component\.
 
