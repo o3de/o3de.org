@@ -7,7 +7,10 @@ toc: true
 
 **This documentation is in a very preliminary state for private preview. It has been migrated from Lumberyard 1.X sources and we are in the process of updating it. If you have suggestions, please [file an issue here](https://github.com/o3de/o3de.org/issues/new/choose) and we'll review it. If you'd like to contribute to these docs, join the O3DE SIG and read our initial [Documentation Contribution Guide](contributing/to-docs).**
 
-![O3DE logo](/static/images/shared/o3de-final-logo.jpg)
+![O3DE logo](images/shared/o3de-logo-1.svg)
+
+
+OVERALL ALL CONTENT LANDING PAGE
 
 Open 3D Engine (O3DE) is a fully open-source, high-performance engine for game, simulation, and multimedia creators.
 
