@@ -1,5 +1,6 @@
 ---
 title: Open 3D Engine UI Extensions Guide
+weight: 500
 ---
 
 -----
