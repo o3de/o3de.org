@@ -2,7 +2,6 @@
 description: ' Learn more about the user interface for the animation graph. '
 title: Anim Graph Interface
 ---
-# Anim Graph Interface {#animation-editor-animation-graph-user-interface}
 
 Use the animation graph to create nodes and specify parameter and values for each node\.
 

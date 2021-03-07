@@ -3,7 +3,6 @@ description: ' Create scenes in a track view sequence in the <guilabel>Track Vie
   Open 3D Engine. '
 title: Populating a Scene
 ---
-# Populating a Scene {#cinematics-populating-a-scene}
 
 Cinematic scenes, also known as sequences, consist of multiple nodes, tracks, and track events\. When you create a sequence, the sequence name is always the top \(parent\) node in the node browser\.
 

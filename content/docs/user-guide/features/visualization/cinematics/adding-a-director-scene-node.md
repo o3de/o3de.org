@@ -2,7 +2,6 @@
 description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Adding a Director (Scene) Node
 ---
-# Adding a Director \(Scene\) Node {#cinematics-adding-a-director-scene-node}
 
 To determine what camera you want your sequence to use, you must add a [Director \(Scene\) Node](/docs/user-guide/features/visualization/cinematics/track-view/nodes-director.md)\.
 

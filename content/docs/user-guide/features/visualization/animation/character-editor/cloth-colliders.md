@@ -2,10 +2,6 @@
 description: ' Add colliders to actors in Open 3D Engine for NVIDIA Cloth simulations. '
 title: Add Cloth Colliders to actors
 ---
-# Add Cloth Colliders to actors {#char_animation_add_cloth_colliders}
-
-
-****
 
 |  |
 | --- |

@@ -2,10 +2,6 @@
 description: ' Learn how to create blend trees in the O3DE Animation Editor. '
 title: Creating Blend Trees
 ---
-# Creating Blend Trees {#animation-editor-creating-blend-trees}
-
-
-****
 
 |  |
 | --- |

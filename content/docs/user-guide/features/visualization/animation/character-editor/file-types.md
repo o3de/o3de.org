@@ -2,7 +2,6 @@
 description: ' Learn more about the file types for Animation Editor . '
 title: 'Animation Editor File Types'
 ---
-# Animation Editor File Types {#char-animation-editor-file-types}
 
 When you import `.fbx` files from your DCC to O3DE Editor, Asset Processor creates files that you use in the **Animation Editor**\. The following example shows how the file types are created and modified\. For more information about processing files for character and animations, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
 

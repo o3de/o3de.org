@@ -3,7 +3,6 @@ description: ' Use the Curve Editor in <guilabel>Track View</guilabel> editor to
   Open 3D Engine. '
 title: Using Animation Curves
 ---
-# Using Animation Curves {#cinematics-track-view-editor-animation-curves}
 
 The **Curve Editor** displays animations as function curves\. Each track's curves represent an animation of a property value, such as anchor, offset, color, or any property of a UI element\.
 

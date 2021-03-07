@@ -3,7 +3,6 @@ description: ' Use the Open 3D Engine console variables (CVARs) to debug your ci
   scenes. '
 title: Debugging Cinematic Scenes with Console Variables
 ---
-# Debugging Cinematic Scenes with Console Variables {#cinematics-debugging}
 
 You can specify the following console variables when profiling a scene\. For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
 
