@@ -121,13 +121,13 @@ for fallback compatibility
 + DLLs and enabled components defined in self-described Gem JSON
 + Simple Python scripts for automation and creation of Gems and projects
 
-### Core APIs
+### Core APIscan you kick me the filename
 
-+ [AZ::Interface](/docs/user-guide/az-interface) replacement for global single-handler EBuses used for rendering, physics, and audio
++ [AZ::Interface](/docs/features/engine/az-interfac.mde) replacement for global single-handler EBuses used for rendering, physics, and audio
 + 500% faster then EBus with direct function calls against interface, plus autocomplete support
-+ [AZ::Event](/docs/user-guide/az-event) 200% faster than EBus using C# event design patterns, and which replaces notification buses
++ [AZ::Event](/docs/features/engine/az-event.md) 200% faster than EBus using C# event design patterns, and which replaces notification buses
 + AZ::ScheduledEvent using timeslicing and priority queue with simple scheduling for no starvation
-+ [AZ::Console](/docs/user-guide/az-console) supports the thread-safe network sync of console variables (cvars)
++ [AZ::Console](user-guide/features/engine/console.md) supports the thread-safe network sync of console variables (cvars)
 
 ### Flexible Automation
 
