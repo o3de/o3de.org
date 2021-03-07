@@ -1,9 +1,10 @@
 ---
 description: ' Create a controllable character with Script Canvas, Open 3D Engine''s
   visual scripting system. '
+linktitle: Creating a Controllable Entity
 title: 'Script Canvas Tutorial: Creating a Controllable Entity'
+weight: 100
 ---
-# Script Canvas Tutorial: Creating a Controllable Entity {#script-canvas-tutorial-controllable-character}
 
 This tutorial walks you through the steps to create a simple sphere that you can control with keyboard input\.
 

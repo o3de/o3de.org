@@ -2,7 +2,6 @@
 description: ' Learn how to use Open 3D Engine''s EBus from examples. '
 title: Usage and Examples
 ---
-# Usage and Examples {#ebus-usage-and-examples}
 
 This section provides examples in C\+\+ of how to declare and configure an EBus, implement a handler, send messages, and receive return values\. For information about using EBuses in Lua, see [Using EBuses in Lua](/docs/user-guide/features/interactivity/scripting/lua/ebus.md)\.
 

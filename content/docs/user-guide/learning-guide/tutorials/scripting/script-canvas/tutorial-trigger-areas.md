@@ -1,10 +1,10 @@
 ---
 description: ' Learn how to create trigger areas to open and close doors using Script Canvas,
   Open 3D Engine''s visual scripting system. '
-title: 'Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and
-  Variables'
+linktitle: Opening and Closing a Door with Trigger Areas and Variables
+title: 'Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables'
+weight: 200
 ---
-# Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas and Variables {#script-canvas-tutorial-trigger-areas}
 
 In the following tutorial, you create a door that opens and closes when your controllable sphere enters and exits a trigger area\.
 

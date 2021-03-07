@@ -2,10 +2,6 @@
 description: ' Use Component Mode to edit programmatically components in Open 3D Engine. '
 title: Programmer's Guide to Component Mode
 ---
-# Programmer's Guide to Component Mode {#working-with-component-mode-programmatically}
-
-
-****
 
 |  |
 | --- |

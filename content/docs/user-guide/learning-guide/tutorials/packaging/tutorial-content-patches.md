@@ -3,10 +3,6 @@ description: ' Create asset bundles that can be distributed to patch and update 
   live O3DE game, while also making a new distribution for later downloads. '
 title: Create content patches with O3DE
 ---
-# Create content patches with O3DE {#asset-bundler-tutorial-content-patches}
-
-
-****
 
 |  |
 | --- |

@@ -3,10 +3,6 @@ description: ' Learn how to create separate asset bundles for a release build wi
   multiple game levels in O3DE. '
 title: Creating Multiple Asset Bundles
 ---
-# Creating Multiple Asset Bundles {#asset-bundler-tutorial-multiple-bundles}
-
-
-****
 
 |  |
 | --- |

@@ -2,7 +2,6 @@
 description: ' Bundle assets and release your Open 3D Engine project. '
 title: Build and bundle assets for release in O3DE
 ---
-# Build and bundle assets for release in O3DE {#asset-bundler-tutorial-release}
 
  This tutorial guides you through the process of building the code and assets to release a O3DE project, using the [Starter Game sample project](/docs/userguide/samples/levels/starter-game.md)\. You'll learn how to:
 + Create a release build of your game's executable\.

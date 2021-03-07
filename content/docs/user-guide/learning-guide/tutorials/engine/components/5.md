@@ -3,7 +3,6 @@ description: ' Update your component so that it knows how to handle selection in
   Open 3D Engine viewport. '
 title: 'Step 5: Handle Selection in the Viewport'
 ---
-# Step 5: Handle Selection in the Viewport {#handling-selection-viewport}
 
 In the following procedure, make changes to your code so that you can enter Component Mode by double\-clicking the component in the viewport\.
 

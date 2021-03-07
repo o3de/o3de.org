@@ -1,10 +1,10 @@
 ---
 description: ' Create a sphere that shoots projectiles at a target with Script Canvas,
   Open 3D Engine''s visual scripting system. '
-title: 'Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting
-  Collisions'
+linktitle: Shooting a Target by Spawning Entities and Detecting Collisions
+title: 'Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions'
+weight: 300
 ---
-# Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detecting Collisions {#script-canvas-tutorial-collisions-targets}
 
 This tutorial builds on what you learned in the previous two tutorials\. In the following tutorial, you create a controllable sphere that shoots projectiles at a target\.
 

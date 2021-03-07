@@ -3,7 +3,6 @@ description: ' Create an asset builder to process your custom asset type source 
   into game-ready files in Open 3D Engine. '
 title: Creating a Custom Asset Builder
 ---
-# Creating a Custom Asset Builder {#asset-builder-custom}
 
 The Asset Builder SDK lets you develop an asset builder that processes your custom asset type source files into game\-ready files\. This topic shows you how to create your own asset builder by using the example asset builder that is included with O3DE\.
 
