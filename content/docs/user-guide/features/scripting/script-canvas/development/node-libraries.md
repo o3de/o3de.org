@@ -2,7 +2,6 @@
 description: ' Create your custom Script Canvas node libraries in Open 3D Engine. '
 title: Node Libraries
 ---
-# Node Libraries {#script-canvas-custom-nodes-node-libraries}
 
 Nodes in a gem are typically stored in node libraries\. These libraries aid in the registration of the nodes with the Script Canvas Gem\. They also help organize the nodes within the Script Canvas editor's **Node Palette**\.
 

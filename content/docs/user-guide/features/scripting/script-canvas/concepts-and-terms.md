@@ -2,7 +2,6 @@
 description: null
 title: 'Script Canvas Concepts and Terms'
 ---
-# Script Canvas Concepts and Terms {#script-canvas-concepts-and-terms}
 
 The following concepts and terms are used in **Script Canvas**:
 
