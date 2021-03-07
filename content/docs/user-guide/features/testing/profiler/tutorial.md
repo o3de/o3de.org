@@ -2,7 +2,6 @@
 description: ' Learn the basics of the Open 3D Engine Profiler diagnostics tool. '
 title: Profiler Tutorial
 ---
-# Profiler Tutorial {#profiler-using}
 
 ****
 Profiler is in preview release and is subject to change\.
