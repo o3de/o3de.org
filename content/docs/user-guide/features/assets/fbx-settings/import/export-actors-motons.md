@@ -3,7 +3,6 @@ description: ' See the best practices for exporting skinned meshes for actors fo
   the Animation Editor in Open 3D Engine. '
 title: Exporting Actors and Motions
 ---
-# Exporting Actors and Motions {#char-fbx-importer-export-actors-motons}
 
 Use the following best practices when you export your skinned meshes using the **FBX Settings** tool\.
 + If you use the z\-up world coordinate system, use the following guidelines:

@@ -1,8 +1,9 @@
 ---
 description: ' Process custom assets in Open 3D Engine with Python Asset Builder. '
+linktitle: Python Asset Builder
 title: Process custom assets with Python Asset Builder
+weight: 100
 ---
-# Process custom assets with Python Asset Builder {#python-asset-builder-intro}
 
  With Python Asset Builder, you can create Python scripts that process custom assets produced from content creation tools such as Maya and Houdini, or any content tool with a known file format\.
 

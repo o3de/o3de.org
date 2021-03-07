@@ -3,7 +3,6 @@ description: ' How to add IP addresses for external devices (Android and iOS) to
   to the Asset Processor or allow remote console access to a running game instance. '
 title: Adding IP Addresses to Allow Access to the Asset Processor and Remote Console
 ---
-# Adding IP Addresses to Allow Access to the Asset Processor and Remote Console {#ios-android-adding-ip-addresses}
 
 The Asset Processor is a networked application that O3DE uses to build source assets into game engine ready assets\. To ensure your external device can connect to the Asset Processor, you must add the IP address of the external device \(Android or iOS\) to the **white\_list** in the `bootstrap.cfg` file \(located in the `lumberyard_version\dev` directory\)\.
 

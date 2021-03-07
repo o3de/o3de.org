@@ -2,8 +2,8 @@
 description: ' Use the Python Asset Builder gem to create custom asset builders for
   your Open 3D Engine project. '
 title: Python Asset Builder gem
+weight: 300
 ---
-# Python Asset Builder gem {#python-asset-builder}
 
 With **Python Asset Builder**, you can create Python scripts that process custom assets that are produced from content creation tools such as Maya and Houdini, or any content tool with a known file format\.
 

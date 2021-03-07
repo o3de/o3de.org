@@ -2,7 +2,6 @@
 description: ' Add a custom asset type to Open 3D Engine. '
 title: Adding an Asset Type to O3DE
 ---
-# Adding an Asset Type to O3DE {#asset-pipeline-asset-type-adding}
 
 When you develop a game, you might need to add a new kind of asset to O3DE\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to O3DE\.
 

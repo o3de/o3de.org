@@ -2,10 +2,6 @@
 description: ' Export meshes from .fbx files with FBX Settings to Open 3D Engine. '
 title: FBX Settings mesh export
 ---
-# FBX Settings mesh export {#fbx-mesh-export}
-
-
-****
 
 |  |
 | --- |
