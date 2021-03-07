@@ -1,11 +1,8 @@
 ---
 description: ' Learn the parameters for Open 3D Engine''s AZ Code Generator. '
 title: AZ Code Generator Parameters
+weight: 100
 ---
-# AZ Code Generator Parameters {#az-code-gen-parameters}
-
-
-****
 
 |  |
 | --- |

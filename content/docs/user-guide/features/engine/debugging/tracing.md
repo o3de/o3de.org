@@ -2,7 +2,6 @@
 description: ' Learn best practices for debug tracing in Open 3D Engine. '
 title: Tracing
 ---
-# Tracing {#cpp-best-practices-lumberyard-tracing}
 
 **Recommended**: For code tracing needs, use `AZ_*` tracing macros\.
 

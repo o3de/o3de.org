@@ -1,9 +1,10 @@
 ---
 description: ' Use event buses to dispatch messages safely and efficiently in your
   gaming application for Open 3D Engine. '
+linktitle: EBus
 title: Working with the Event Bus (EBus) system
+weight: 300
 ---
-# Working with the Event Bus \(EBus\) system {#ebus-intro}
 
 Event buses \(EBuses\) are a general\-purpose communication system that O3DE uses to dispatch notifications and receive requests\. EBuses are configurable and support many different use cases\.
 

@@ -3,9 +3,8 @@ description: ' Serialize objects from the O3DE engine to JSON for processing by 
   tools or to load between runtime sessions. '
 title: Object serialization to JSON format
 ---
-# Object serialization to JSON format {#serialization-json-intro}
 
- Starting with O3DE version 1\.25, objects can be serialized out to the [JSON format](http://json.org)\. JSON is a machine\-readable format that's also designed to be easy for humans to read and edit, so that contributors can make small changes to data without requiring specialized tools or a detailed XML schema\. Many programming languages also offer robust and easy to use support for JSON data, making the development of build and design tools for supporting your project outside of the O3DE editor easy\.
+ Objects can be serialized out to the [JSON format](http://json.org)\. JSON is a machine\-readable format that's also designed to be easy for humans to read and edit, so that contributors can make small changes to data without requiring specialized tools or a detailed XML schema\. Many programming languages also offer robust and easy to use support for JSON data, making the development of build and design tools for supporting your project outside of the O3DE editor easy\.
 
  In O3DE, using the JSON serialization format also offers the following benefits:
 +  **Minimal serialization** - Only data relevant to the object is serialized\. Default values and information that can be retrieved at runtime aren't stored\. This reduces object size and makes manual editing easier\.

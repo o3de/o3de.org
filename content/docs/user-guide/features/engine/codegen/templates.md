@@ -2,11 +2,8 @@
 description: ' Learn about the Jinja2 templates that AZ Code Generator uses to generate
   code in Open 3D Engine. '
 title: Code Generation Templates
+weight: 200
 ---
-# Code Generation Templates {#az-code-gen-templates}
-
-
-****
 
 |  |
 | --- |
