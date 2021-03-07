@@ -31,7 +31,7 @@ We use the following files as our input textures:
 ### Apply a filemask to the texture files
 To make sure that these texture files work correctly, you must indicate which texture preset should be used by the Asset Processor to process these files. The easiest way to do this is rename the files to use a texture file mask. A **texture file mask** is the suffix at the end of a file's name that indicates which texture preset to use. This allows the Asset Processor to correctly convert this image type into its runtime format. <!-- [Future work] For more information on texture presets, see -->
 
-There are different variations of texture file masks that can work for a single texture. For example, "_ao" or "_ambientocclusion" are both valid and the Asset Processor knows to process the texture as an ambient occlusion texture. These texture file masks are defined in the preset (`*.preset`) files that configure Atom's Image Processor. The preset files can be found in the folder */dev/Gems/Atom/Asset/ImageProcessingAtom/Config/*. 
+There are different variations of texture file masks that can work for a single texture. For example, "_ao" or "_ambientocclusion" are both valid and the Asset Processor knows to process the texture as an ambient occlusion texture. These texture file masks are defined in the preset (`*.preset`) files that configure Atom's Image Processor. The preset files can be found in the folder  `/Gems/Atom/Asset/ImageProcessingAtom/Config/`. 
 
 We rename the following files to properly apply a filemask. (For the sake of clarity, we use the descriptive texture file mask names.)
 - castle_brick_02_red_**ao**\_1k &rarr; castle_brick_02_red\_**ambientocclusion**
@@ -43,13 +43,15 @@ We rename the following files to properly apply a filemask. (For the sake of cla
 
 ## Create material with Material Editor
 To create a material using the Material Editor:
-1. Open the Material Editor. If you are in the Open 3D Engine Editor, go to *Tools > Material Editor*, or press *M*. Otherwise, you can open the Material Editor as a standalone application by running *MaterialEditor.exe* from the folder *dev/\<build_folder\>/bin/profile/*.
+1. Open the Material Editor. If you are in the Open 3D Engine Editor, go to *Tools > Material Editor*, or press *M*. Otherwise, you can open the Material Editor as a standalone application from `\<build_folder\>/bin/profile/MaterialEditor.exe`.
    
 2. Create a new StandardPBR material by choosing **File** > **New** > **Standard PBR**. This opens the file browser and prompts you to save the new file. In the **Inspector** tab, you can verify that the material type is `StandardPBR` by checking the `Material Type` property in the `Details` property group. 
 
-    *Note: The file browser looks for materials in the project folder, any Gem's *Assets* folders, or any other folder included in the AssetProcessorPlatformConfig.ini.*
+    {{< note >}} 
+The file browser looks for materials in the project folder, any Gem's *Assets* folders, or any other folder included in the AssetProcessorPlatformConfig.ini.*
+    {{< /note >}}
 
-3. Browse and load each texture file into the `Texture Map` property under the texture's associated property group. Depending on the property group, additional properties might appear so you can further configure the property group. 
+1. Browse and load each texture file into the `Texture Map` property under the texture's associated property group. Depending on the property group, additional properties might appear so you can further configure the property group. 
 
     The textures are loaded into their associated property group in the following way. 
     

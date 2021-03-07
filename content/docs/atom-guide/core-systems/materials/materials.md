@@ -71,22 +71,22 @@ The following material types are included in Atom:
     A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It is meant to provide as much functionality as possible with a limited number of render targets. 
     <!-- For more information on StandardPBR material type, see _[TODO]__.    -->  
     
-    This file is located in *Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype*.
+    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype`.
 
 - **EnhancedPBR**  
     An enhanced version of StandardPBR that includes additional features, but comes at a higher performance cost. It supports more advanced features that require additional render targets (g-buffers). 
 
-    This file is located in *Gems/Atom/Feature/Common/Assets/Materials/Types/EnhancedPBR.materialtype*. 
+    This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/EnhancedPBR.materialtype`. 
 
 - **MinimalPBR**  
     A simple PBR material type with three common properties: base color, metallic factor, and roughness factor. This material type is considered the "hello world" of PBR materials and is provided as an example. It is a good place to start for creating custom material types. 
 
-    This file is located in *Gems/Atom/TestData/TestData/Materials/Types/MinimalPBR.materialtype*. 
+    This file is located in `Gems/Atom/TestData/TestData/Materials/Types/MinimalPBR.materialtype`. 
 
 - **AutoBrick**  
     A procedural brick material type that includes settings for color, ambient occlusion, brick (width, height, offset), and grout line (width, depth). This material type is an example of a completely custom material type, expanding from the MinimalPBR material type.  
 
-    This file is located in *Gems/Atom/TestData/TestData/Materials/Types/AutoBrick.materialtype*.     
+    This file is located in `Gems/Atom/TestData/TestData/Materials/Types/AutoBrick.materialtype`.     
 
 ## Material and Material Type Assets
 Material and material type files produce **Material Assets** and **Material Type Assets** in the cache, respectively.
