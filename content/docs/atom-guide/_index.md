@@ -7,7 +7,7 @@ weight: 400
 ---
 
 + [What is Atom?](what-is-atom.md)
-+ [Setup and installation](setup/_index.md)
++ [Setup and installation](setup/installing-atom.md)
 + [Getting Started with Atom](get-started/_index.md)
 + [Atom Sample Viewer](atom-sample-viewer/_index.md)
 + [Tutorials](tutorials/_index.md)
