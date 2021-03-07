@@ -3,7 +3,6 @@ description: ' Use the O3DE UI 2.0 reflected property editor to automatically
   lay out user-editable properties in O3DE tools and gems. '
 title: O3DE UI reflected property editor
 ---
-# O3DE UI reflected property editor<a name="uidev-reflected-property-editor-component"></a>
 
 A **reflected property editor** automatically lays out controls for user\-editable properties that are reflected using the edit context\. It is frequently used as a content widget to populate [card](uidev-card-component.md) components\.
 

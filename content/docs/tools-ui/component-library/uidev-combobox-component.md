@@ -3,7 +3,6 @@ description: ' Learn how to use the O3DE UI 2.0 combobox component in Amazon
   O3DE gems and tools. '
 title: O3DE UI combobox component
 ---
-# O3DE UI combobox component<a name="uidev-combobox-component"></a>
 
 Use comboboxes to offer users a list of options from a dropdown menu\. You define whether or not the input box is editable\. An editable input box allows the user to type in a value *or* select a value from the dropdown menu\.
 

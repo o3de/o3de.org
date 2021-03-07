@@ -3,7 +3,6 @@ description: ' Learn about the O3DE UI 2.0 style of sliders, including the slide
   and slider combo components. '
 title: O3DE UI sliders
 ---
-# O3DE UI sliders<a name="uidev-sliders-component"></a>
 
 Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically\. The visual feedback shows users where the current value is within the range of valid values\.
 

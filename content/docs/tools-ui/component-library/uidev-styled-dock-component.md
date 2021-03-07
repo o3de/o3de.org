@@ -3,7 +3,6 @@ description: ' Learn how to use the O3DE UI 2.0 styled dock widget with the
   dock main window component, to enable fancy docking in O3DE tools and gems. '
 title: O3DE UI styled dock widget
 ---
-# O3DE UI styled dock widget<a name="uidev-styled-dock-component"></a>
 
 Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in O3DE called "fancy docking", which provides users with a variety of options for arranging their window layout\.
 

@@ -1,8 +1,9 @@
 ---
 description: ' An introduction to the Open 3D Engine UI 2.0 component library. '
+linktitle: UI component library
 title: O3DE UI component library
+weight: 300
 ---
-# O3DE UI component library<a name="uidev-component-intro"></a>
 
 In the O3DE UI component library, you will find an explanation of each UI component \(i\.e\. widget\), along with guidelines for their usage\. Typically, each page contains the following information:
 + Use cases

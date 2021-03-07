@@ -3,7 +3,6 @@ description: ' Learn how to use the O3DE UI 2.0 tree view component to give
   users a file or list navigation interface in O3DE tools and gems. '
 title: O3DE UI tree view component
 ---
-# O3DE UI tree view component<a name="uidev-tree-view-component"></a>
 
 With the **tree view** component, users can navigate file system directories or a list of hierarchical data in O3DE\. Each item, such as a node or a branch, can have sub\-items\. Items can be expanded to reveal sub\-items\.
 

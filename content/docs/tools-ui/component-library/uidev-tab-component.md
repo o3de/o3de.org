@@ -3,7 +3,6 @@ description: ' Learn how to use the O3DE UI 2.0 tab widget component to create
   tabs and tab action bars in O3DE tools and gems. '
 title: O3DE UI tab component
 ---
-# O3DE UI tab component<a name="uidev-tab-component"></a>
 
 Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application\.
 

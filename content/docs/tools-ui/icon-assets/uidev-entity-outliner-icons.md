@@ -1,9 +1,10 @@
 ---
 description: ' Browse a library of icon assets used in the O3DE UI 2.0 Entity
   Outliner tool. '
+linktitle: Entity outliner icons
 title: O3DE entity outliner icons
+weight: 200
 ---
-# O3DE entity outliner icons<a name="uidev-entity-outliner-icons"></a>
 
 This page contains an organized collection of icons currently used in the O3DE **Entity Outliner**\. Use the following charts to help you find an icon\.
 

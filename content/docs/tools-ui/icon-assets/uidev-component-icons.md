@@ -1,9 +1,10 @@
 ---
 description: ' Browse a library of icon assets used by O3DE UI 2.0 component
   cards. '
+linktitle: Component icons
 title: O3DE component icons
+weight: 100
 ---
-# O3DE component icons<a name="uidev-component-icons"></a>
 
 This page contains an organized collection of icons currently used by O3DE component cards\. Use the following chart to help you find an icon\.
 

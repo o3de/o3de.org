@@ -4,12 +4,6 @@ weight: 500
 ---
 
 -----
-*****Copyright &copy;  *****
-
------
-
-
------
 ## Contents
 + [Introduction to O3DE UI development](ui-dev-intro.md)
 + [O3DE Qt control gallery tool](uidev-control-gallery.md)

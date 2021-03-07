@@ -4,7 +4,6 @@ description: ' Use the O3DE UI 2.0 breadcrumbs component as a navigational tool
   users to jump to a different point in the path. '
 title: O3DE UI breadcrumb navigation component
 ---
-# O3DE UI breadcrumb navigation component<a name="uidev-breadcrumbs-component"></a>
 
 Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user's current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.
 

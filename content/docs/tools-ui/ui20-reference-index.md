@@ -2,8 +2,8 @@
 description: ' List of the C++ classes available for working with the O3DE UI
   2.0 system to extend the O3DE editor and tools. '
 title: O3DE UI Extensions C++ API Reference index
+weight: 1000
 ---
-# O3DE UI Extensions C\+\+ API Reference index<a name="ui20-reference-index"></a>
 
 This table lists the available C\+\+ classes for working with the O3DE UI 2\.0 system to extend the editor and tools\. The C\+\+ API reference is hosted outside of the user guide, so use this index to quickly find what you need to look up on the external site\. Each class is also accompanied by a brief description\.
 

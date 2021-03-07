@@ -3,7 +3,6 @@ description: ' Learn how to use the O3DE UI 2.0 table view component to present
   columns of structured data in O3DE tools and gems. '
 title: O3DE UI table view component
 ---
-# O3DE UI table view component<a name="uidev-table-view-component"></a>
 
 Use the **table view** component to present multiple columns of structured data in a table format\. By default, this component employs sortable columns and "zebra striping" \- where the background color of rows alternate \- to help you create an easily readable, scannable, and sortable presentation of data\.
 

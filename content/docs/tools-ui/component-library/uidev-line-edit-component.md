@@ -3,7 +3,6 @@ description: ' Use the O3DE UI 2.0 line edit component to capture free-form
   text from the user. '
 title: O3DE UI line edit component
 ---
-# O3DE UI line edit component<a name="uidev-line-edit-component"></a>
 
 The **line edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries\. Use the line edit component to enable users to enter free\-form text\. Be mindful of the length of text intended for a field, and always pair with a useful, clear label\.
 

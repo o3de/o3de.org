@@ -3,7 +3,6 @@ description: ' Learn about the O3DE UI 2.0 progress indicators, including the
   spinner and progress bar components. '
 title: O3DE UI progress indicators
 ---
-# O3DE UI progress indicators<a name="uidev-progress-indicators-component"></a>
 
 Use progress and status indicators to communicate to users that the O3DE application is working on a process, and what the result of that process is when it's finished\. Indicators should be employed when there's a chance the user could be left wondering whether or not a process is working or hung\.
 

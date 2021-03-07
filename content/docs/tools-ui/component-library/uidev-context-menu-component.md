@@ -3,7 +3,6 @@ description: ' Use the O3DE UI 2.0 context menu component to display a popup
   menu with a list of context-appropriate actions. '
 title: O3DE UI menu component
 ---
-# O3DE UI menu component<a name="uidev-context-menu-component"></a>
 
 A context menu \(also called contextual or pop\-up menu\) appears upon user interaction, such as a right\-click mouse operation\. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs\. Typically, the available choices are actions related to the selected object\.
 

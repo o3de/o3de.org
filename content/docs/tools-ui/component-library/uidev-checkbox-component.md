@@ -3,7 +3,6 @@ description: ' Learn how to use O3DE UI 2.0 checkboxes in O3DE gems and
   tools. '
 title: O3DE UI checkbox component
 ---
-# O3DE UI checkbox component<a name="uidev-checkbox-component"></a>
 
 Use checkboxes to enable users to select from a list of choices, when users can select any number of choices \(including zero, one, or several\)\. Each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others\.
 

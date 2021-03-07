@@ -3,7 +3,6 @@ description: ' Learn about the O3DE UI 2.0 customizations to the scrollbar style
   in O3DE tools and gems. '
 title: O3DE UI scrollbar styles
 ---
-# O3DE UI scrollbar styles<a name="uidev-scrollbar-component"></a>
 
 O3DE provides several style choices for your scrollbars\. With the default style, the scrollbar is always visible\. However, you have the option to set the scrollbar display mode so that it only appears when users hover over the scroll area\.
 
