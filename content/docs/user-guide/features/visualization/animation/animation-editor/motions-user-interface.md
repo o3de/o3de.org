@@ -3,7 +3,6 @@ description: ' Learn more about the user interface for the Motions pane in the A
   . '
 title: Motions Interface
 ---
-# Motions Interface {#animation-editor-motions-user-interface}
 
 Use the motions pane to add and manage motion files in a motion set\.
 

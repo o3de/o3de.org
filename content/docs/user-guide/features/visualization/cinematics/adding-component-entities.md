@@ -2,7 +2,6 @@
 description: ' Add component entities in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Adding Component Entities
 ---
-# Adding Component Entities {#cinematics-adding-component-entities}
 
 In the Track View, sequences determine what to animate based on what you add to the sequence\. For example, if you want to animate an entity with an **Actor** or **Light** component, you can add that component entity to a sequence and then modify its properties\.
 

@@ -2,7 +2,6 @@
 description: ' Use console variables and commands to debug UI canvases in Open 3D Engine. '
 title: Debugging UI Canvases
 ---
-# Debugging UI Canvases {#ui-editor-debugging-ui-canvases}
 
 You can use the following console commands and console variables to display debug information for the UI when your game is running\.
 

@@ -2,11 +2,8 @@
 description: ' Create realistic partial destruction simulations in Open 3D Engine with
   NVIDIA Blast. '
 title: Partial destruction with NVIDIA Blast
+weight: 500
 ---
-# Partial destruction with NVIDIA Blast {#nvidia-blast-static-chunks}
-
-
-****
 
 |  |
 | --- |

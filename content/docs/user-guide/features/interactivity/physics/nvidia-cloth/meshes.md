@@ -2,11 +2,8 @@
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Mesh components
   in Open 3D Engine. '
 title: Cloth for Mesh components
+weight: 100
 ---
-# Cloth for Mesh components {#nvidia-cloth-meshes}
-
-
-****
 
 |  |
 | --- |

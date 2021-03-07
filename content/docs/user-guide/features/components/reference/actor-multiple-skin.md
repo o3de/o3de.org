@@ -3,7 +3,6 @@ description: ' Use multiple skin attachments for an Actor component in Open 3D E
   create interchangeable parts of your character, such as a hat and belt. '
 title: Using Multiple Skin Attachments for an Actor
 ---
-# Using Multiple Skin Attachments for an Actor {#component-actor-multiple-skin}
 
 You can use multiple skin attachments on an actor or character to add interchangeable parts such as a hat or belt\. The meshes for these additional attachments can be a part of a single FBX file or separated into multiple FBX files\. When deciding whether to use a single FBX file or multiple FBX files, consider the following:
 

@@ -1,11 +1,8 @@
 ---
 description: ' Debug Open 3D Engine''s AZ Code Generator utility. '
 title: Debugging the AZ Code Generator Utility
+weight: 600
 ---
-# Debugging the AZ Code Generator Utility {#az-code-gen-utility-debugging}
-
-
-****
 
 |  |
 | --- |

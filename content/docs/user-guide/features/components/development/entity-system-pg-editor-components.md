@@ -1,8 +1,8 @@
 ---
 description: ' Learn about editor components in Open 3D Engine. '
 title: Editor Components
+weight: 500
 ---
-# Editor Components {#component-entity-system-pg-editor-components}
 
 Some components in O3DE have separate `editor` and `runtime` versions\. The editor version is active in the editor\. The runtime version is used for running the level in game or in the editor by pressing **Ctrl\+G** or clicking **AI/Physics** below the viewport\. O3DE uses editor components to maintain a clean separation between tools\-specific code and data on one hand, and leaner runtime component data on the other\. In general, runtime game components do not require editor counterparts\. Components rarely need to be fully active at edit time\. The light and mesh components are exceptions because they must behave the same at edit time as at run time\.
 

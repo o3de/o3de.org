@@ -3,7 +3,6 @@ description: ' Use Open 3D Engine''s Scripted Tweener Entity system to create an
   in your game''s UI. '
 title: Scripted Tweener Entity System
 ---
-# Scripted Tweener Entity System {#ui-animating-tweener}
 
 O3DE's Scripted Tweener Entity system is a script\-driven animation system that creates powerful and flexible animations\. To use this system, [enable](/docs/userguide/gems/using-project-configurator.md) the [Scripted Tweener Entity](/docs/userguide/gems/builtin/scripted-tweener.md) gem\. In the [Samples Project](/docs/userguide/samples/projects/samples.md), this gem is enabled by default\.
 

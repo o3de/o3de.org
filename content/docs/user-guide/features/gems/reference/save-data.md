@@ -3,7 +3,6 @@ description: ' Use the SaveData gem to save data in Open 3D Engine for your game
   players. '
 title: SaveData Gem
 ---
-# SaveData Gem {#gems-system-save-data}
 
 The SaveData gem encapsulates all the functionality in O3DE for saving game and individual user data under a single platform\-agnostic set of API operations\.
 

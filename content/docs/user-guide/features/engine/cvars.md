@@ -3,7 +3,6 @@ description: ' Use the console variable (CVAR) tutorial to modify and create con
   variables in Open 3D Engine. '
 title: Console Variable Tutorial
 ---
-# Console Variable Tutorial {#system-cvar-tutorial}
 
 This tutorial shows you how to modify existing and create console variables \(CVARs\)\. CVARs can be used to control many configurable behaviors in O3DE\. You can also use them in your game\.
 

@@ -2,10 +2,6 @@
 description: ' Export multiple UV sets from .fbx files with FBX Settings to Open 3D Engine. '
 title: Multiple UV sets for meshes and actors
 ---
-# Multiple UV sets for meshes and actors {#fbx-multiple-uv-sets}
-
-
-****
 
 |  |
 | --- |

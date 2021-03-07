@@ -3,10 +3,6 @@ description: ' Modify the export properties of your .fbx files with FBX Settings
   Open 3D Engine. '
 title: FBX Settings export properties
 ---
-# FBX Settings export properties {#fbx-properties}
-
-
-****
 
 |  |
 | --- |

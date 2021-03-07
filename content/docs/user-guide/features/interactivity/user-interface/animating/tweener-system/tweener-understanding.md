@@ -3,7 +3,6 @@ description: ' Understand how tweeners in Open 3D Engine Scripted Entity Tweener
   interprets movements between two frames based on the tweener type. '
 title: Understanding Tweeners
 ---
-# Understanding Tweeners {#ui-animating-tweener-understanding}
 
 A *tweener* generates the transition between two images, giving the appearance of a smooth evolution between two frames\. At its simplest, a tweener creates a linear transition\. For example, a circle that starts at the top of the screen and ends at the bottom of the screen travels at a steady, unchanging pace between the two points\. This is similar to an object moving on a conveyer belt\. To simulate gravity, you can use a quadratic tweener, which accelerates slowly at first and then steeply increases towards the end\. This simulates dropping an object that does not bounce\.
 

@@ -2,7 +2,6 @@
 description: null
 title: Using Texture Atlases to Reduce UI Draw Calls
 ---
-# Using Texture Atlases to Reduce UI Draw Calls {#ui-editor-texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls}
 
 The UI shader can combine draw calls that use up to a maximum of 16 textures\. If this limit is exceeded, you can use texture atlases to reduce the number of draw calls\.
 

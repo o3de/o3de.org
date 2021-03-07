@@ -3,7 +3,6 @@ description: ' Some useful examples for the Python Editor Bindings gem, used to 
   actions in the O3DE Editor. '
 title: Python Editor Bindings gem examples
 ---
-# Python Editor Bindings gem examples {#editor-automation-examples}
 
  The Python Editor Bindings are driven by an API that connects through to the Editor's C\+\+ implementation, using the O3DE event bus \(Ebus\) to send messages between scripts and the editor\. This reference covers the use of the editor bindings API to perform tasks like interacting with components, entities, and and properties\.
 

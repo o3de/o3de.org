@@ -3,7 +3,6 @@ description: ' Use the event node to trigger and send values to Script Canvas in
   Open 3D Engine. '
 title: Event Node
 ---
-# Event Node {#cinematics-track-view-nodes-event}
 
 You can add an **Event** node to your sequence to trigger and send values to Script Canvas\. You create **Track Events** using the **Track View Events** window\. You then assign the **Track Event** to an animation key that is added to the track for the **Event** node\. When the key is played during the sequence, the event is triggered\. Script Canvas then uses the **Track Event** to trigger additional script logic\.
 

@@ -1,9 +1,9 @@
 ---
 description: ' Learn about the comparison operations used in bundling assets with
   Open 3D Engine. '
-title: 'Open 3D Engine Asset List Comparison Operations'
+title: 'Asset List Comparison Operations'
+weight: 500
 ---
-# Open 3D Engine Asset List Comparison Operations {#asset-bundler-list-operations}
 
 Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list\. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files\. The following operations are available to use from the Asset Bundler tool:
 + [Delta Comparison Operation](#asset-bundler-list-operations-delta)

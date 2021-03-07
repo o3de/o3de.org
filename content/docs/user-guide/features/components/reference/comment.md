@@ -3,7 +3,6 @@ description: ' Use the Comment component in Open 3D Engine to add text comments 
   entities. '
 title: Comment
 ---
-# Comment {#component-comment}
 
 The **Comment** component allows you to add long\-form text comments for component entities\. When enabled, the **Comment** component displays a dialog box that expands based on the size of the comment that you enter\. The following examples demonstrate how you can use the comment text box:
 + Explain how the scripts or components on an entity interact with other scripts or components

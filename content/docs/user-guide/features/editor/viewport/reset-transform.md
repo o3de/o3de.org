@@ -1,8 +1,8 @@
 ---
 description: ' Reset the transform properties for entities in Open 3D Engine. '
 title: Resetting the Transform
+weight: 300
 ---
-# Resetting the Transform {#reset-transform}
 
 You can reset the transform for an entity, so that you return the entity to its previous location\.
 

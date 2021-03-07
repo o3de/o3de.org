@@ -2,10 +2,6 @@
 description: ' Debug and fix performance issues for Open 3D Engine. '
 title: Debugging Issues
 ---
-# Debugging Issues {#debugging-intro}
-
-
-****
 
 |  |
 | --- |

@@ -2,10 +2,6 @@
 description: ' Use the VisArea component to manage visibility and culling in Open 3D Engine. '
 title: VisArea
 ---
-# VisArea {#component-vis-area}
-
-
-****
 
 |  |
 | --- |

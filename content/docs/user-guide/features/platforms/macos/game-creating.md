@@ -1,11 +1,8 @@
 ---
 description: ' Create a project for your macOS applications using O3DE tools. '
 title: Creating a Project for Your macOS Games
+weight: 600
 ---
-# Creating a Project for Your macOS Games {#osx-game-creating}
-
-
-****
 
 |  |
 | --- |

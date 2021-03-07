@@ -3,12 +3,10 @@ description: ' Get started with the O3DE UI 2.0 design guidelines and component
   libraries for building extensions that blend well with the standardized O3DE
   user experience. '
 title: Introduction to O3DE UI development
+weight: 10
 ---
 
-
-# Introduction to O3DE UI development<a name="ui-dev-intro"></a>
-
-Introduced with Open 3D Engine version 1\.25 and the release of UI 2\.0, O3DE's **custom Qt widget library** provides developers with access to the same UI components used throughout O3DE\. Using this library, UI developers can build their own tools and extensions for O3DE, while maintaining a coherent and standardized UI experience\. This custom library provides new and extended widgets, and includes a set of styles and user interaction patterns that are applied on top of the Qt framework \- the C\+\+ library that O3DE relies on for its UI\. The library can be extended to support your own customizations and modifications\.
+O3DE's **custom Qt widget library** provides developers with access to the same UI components used throughout O3DE\. Using this library, UI developers can build their own tools and extensions for O3DE, while maintaining a coherent and standardized UI experience\. This custom library provides new and extended widgets, and includes a set of styles and user interaction patterns that are applied on top of the Qt framework \- the C\+\+ library that O3DE relies on for its UI\. The library can be extended to support your own customizations and modifications\.
 
 ![\[uidev intro\]](/images/tools-ui/uidev-intro.png)
 

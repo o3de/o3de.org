@@ -1,11 +1,8 @@
 ---
 description: ' Process assets for NVIDIA Blast. '
 title: Processing assets for NVIDIA Blast
+weight: 300
 ---
-# Processing assets for NVIDIA Blast {#nvidia-blast-process-blast-asset}
-
-
-****
 
 |  |
 | --- |

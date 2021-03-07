@@ -2,10 +2,6 @@
 description: ' Use Animation Editor components to animate your entities in Open 3D Engine. '
 title: 'Animation Editor Components'
 ---
-# Animation Editor Components {#char-animation-editor-components}
-
-
-****
 
 |  |
 | --- |

@@ -2,11 +2,8 @@
 description: ' Add per vertex properties to fine tune your NVIDIA Cloth simulations
   in Open 3D Engine. '
 title: Per vertex properties for cloth
+weight: 300
 ---
-# Per vertex properties for cloth {#nvidia-cloth-vertex-data}
-
-
-****
 
 |  |
 | --- |

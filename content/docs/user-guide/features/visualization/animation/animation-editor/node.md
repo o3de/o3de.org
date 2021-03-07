@@ -3,7 +3,6 @@ description: ' See the following Animation Editor nodes when creating your anima
   graph in Open 3D Engine. '
 title: 'Animation Editor Nodes'
 ---
-# Animation Editor Nodes {#animation-editor-node}
 
 See the following nodes available in the Animation Editor\.
 

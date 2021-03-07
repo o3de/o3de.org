@@ -2,7 +2,6 @@
 description: ' Move an entity in a scene Open 3D Engine. '
 title: Moving an Entity in a Scene
 ---
-# Moving an Entity in a Scene {#cinematics-animation-char-move}
 
 You can use the Track View to move or rotate any entity in a scene\.
 

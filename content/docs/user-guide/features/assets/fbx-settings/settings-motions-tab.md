@@ -2,10 +2,6 @@
 description: null
 title: FBX Settings Motions tab
 ---
-# FBX Settings Motions tab {#fbx-settings-motions-tab}
-
-
-****
 
 |  |
 | --- |

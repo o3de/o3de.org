@@ -1,11 +1,8 @@
 ---
 description: ' Create realistic destruction simulations in Open 3D Engine with NVIDIA Blast. '
 title: Script Canvas nodes for NVIDIA Blast
+weight: 800
 ---
-# Script Canvas nodes for NVIDIA Blast {#nvidia-blast-script-canvas}
-
-
-****
 
 |  |
 | --- |

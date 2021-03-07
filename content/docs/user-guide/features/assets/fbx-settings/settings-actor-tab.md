@@ -2,10 +2,6 @@
 description: null
 title: FBX Settings Actors tab
 ---
-# FBX Settings Actors tab {#fbx-settings-actor-tab}
-
-
-****
 
 |  |
 | --- |

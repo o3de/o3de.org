@@ -1,8 +1,8 @@
 ---
 description: ' Learn about dynamic vegetation concepts and ideas in Open 3D Engine. '
-title: Dynamic Vegetation Concepts
+title: Dynamic vegetation concepts
+weight: 100
 ---
-# Dynamic Vegetation Concepts {#dynamic-vegetation-concepts}
 
 The dynamic vegetation system operates around the following ideas:
 + **What** - To specify the type of vegetation that appears, you must have prebuilt vegetation assets, such as `.cgf` or `.fbx` files\. If you don't have your own, you can use O3DE's vegetation assets, which are in the Starter Game project\.

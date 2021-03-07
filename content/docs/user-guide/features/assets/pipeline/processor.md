@@ -3,7 +3,6 @@ description: ' Use Asset Processor in Open 3D Engine to detect and process new o
   asset files. '
 title: Using Asset Processor
 ---
-# Using Asset Processor {#asset-pipeline-processor}
 
 Asset Processor is a utility that runs in the background to detect changes to your asset files\. When Asset Processor detects new or updated asset files, it launches the Resource Compiler \(`Rc.exe` for FBX and ABC files, `AssetBuilder.exe` for all other types\), processes the assets, and then places them in the cache\. Asset Processor then notifies all running game or tool instances that the assets are updated\. The game can then reload the updated assets\.
 

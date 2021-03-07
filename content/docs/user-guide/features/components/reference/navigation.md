@@ -3,7 +3,6 @@ description: ' Use the Navigation component to enable an entity to find and foll
   paths in Open 3D Engine. '
 title: Navigation
 ---
-# Navigation {#component-navigation}
 
 The **Navigation** component provides path\-finding and path\-following functionality for AI movement, typically on a navigation mesh\.
 

@@ -1,9 +1,10 @@
 ---
 description: ' Learn how to use AGS Local to test your AGS integration in your
   Open 3D Engine game projects. '
-title: Testing your Amazon Games Services Integration
+linktitle: Testing integration
+title: Testing your Amazon GameLift Integration
+weight: 200
 ---
-# Testing your Amazon GameLift Integration {#network-gamelift-testing-integration}
 
 Before you make your first Amazon GameLift fleet, verify your integration using **GameLift Local**\. GameLift Local is included as part of the GameLift Server SDK download\. It is run as a Java process\.
 

@@ -2,10 +2,6 @@
 description: ' Use the Animation Editor quick start to animate a character in Open 3D Engine. '
 title: Getting Started with the Animation Editor
 ---
-# Getting Started with the Animation Editor {#animation-editor-quick-start}
-
-
-****
 
 |  |
 | --- |

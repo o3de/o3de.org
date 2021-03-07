@@ -1,9 +1,10 @@
 ---
 description: ' Learn how to create and reflect components in C++ using the O3DE Component
   Entity System. '
-title: Component development
+linktitle: Component development
+title: Programmer's Guide to Entities and Components
+weight: 200
 ---
-# Programmer's Guide to Entities and Components {#component-entity-system-pg-intro}
 
 This guide provides engine and game programmers with examples and best practices for creating and reflecting custom O3DE components in C\+\+\.
 

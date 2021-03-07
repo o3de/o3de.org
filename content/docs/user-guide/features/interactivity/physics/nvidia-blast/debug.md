@@ -2,11 +2,8 @@
 description: ' Use visual debugging on destruction simulations in Open 3D Engine with NVIDIA
   Blast. '
 title: NVIDIA Blast visual debugger
+weight: 700
 ---
-# NVIDIA Blast visual debugger {#nvidia-blast-debug}
-
-
-****
 
 |  |
 | --- |

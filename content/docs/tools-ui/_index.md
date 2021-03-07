@@ -1,10 +1,8 @@
-# Open 3D Engine UI Extensions Guide
-
------
-*****Copyright &copy;  *****
-
------
-
+---
+linktitle: UI extensions guide
+title: Open 3D Engine UI Extensions Guide
+weight: 500
+---
 
 -----
 ## Contents

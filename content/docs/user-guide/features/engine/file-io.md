@@ -2,7 +2,6 @@
 description: ' Directly access files for special use cases like streaming in Open 3D Engine. '
 title: Raw File Access in O3DE
 ---
-# Raw File Access in O3DE {#file-access-direct}
 
 This topic describes how to directly access files in O3DE for special use cases\. However, it's recommended that you use the O3DE Asset system to work with asset files\. In most cases, raw file access is not required\. For more information see [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)\.
 

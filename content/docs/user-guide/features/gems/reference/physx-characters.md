@@ -3,7 +3,6 @@ description: ' Use the PhysX Characters gem to provide physics for your characte
   in your Open 3D Engine level. '
 title: PhysX Characters
 ---
-# PhysX Characters {#gems-system-gem-physx-characters}
 
 The PhysX Characters gem provides physics for your characters in your game\. The gem integrates with the EMotion FX **Animation Editor** system\.
 

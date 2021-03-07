@@ -3,7 +3,6 @@ description: ' Customize O3DE Editor by docking windows and toolbars, customizin
   toolbars and menus, and updating editor settings and global preferences for Open 3D Engine. '
 title: Customizing O3DE Editor
 ---
-# Customizing O3DE Editor {#lumberyard-editor-customizing}
 
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings\.
 

@@ -1,8 +1,8 @@
 ---
 description: ' Resolve missing assets in your O3DE game project. '
 title: Resolving Missing Assets
+weight: 200
 ---
-# Resolving Missing Assets {#asset-bundler-assets-resolving}
 
 After you build and package your O3DE game, you want to frequently verify that your packages contain every asset they require\. For information about verifying your asset bundles, see [Verifying that Bundles Contain Required Assets](/docs/user-guide/features/packaging/asset-bundler/assets-verifying.md)\.
 

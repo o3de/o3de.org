@@ -3,7 +3,6 @@ description: Combine multiple font assets to create a font family group to use i
   your game UI in Open 3D Engine.
 title: Creating Font Families
 ---
-# Creating Font Families {#ui-fonts-create-font-families}
 
 You can combine multiple font assets into a single font family group\.
 

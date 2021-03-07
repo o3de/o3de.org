@@ -2,8 +2,9 @@
 description: ' You can use gems to add features and assets to your Open 3D Engine game
   project. '
 title: Gems
+weight: 400
 ---
-# Add modular features and assets with Gems {#gems-system-gems}
+## Add modular features and assets with Gems {#gems-system-gems}
 
 Gems are packages that contain code and assets to augment your game projects\. With the [Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in O3DE, see [Gems Available in O3DE](/docs/user-guide/features/gems/list.md)\.
 

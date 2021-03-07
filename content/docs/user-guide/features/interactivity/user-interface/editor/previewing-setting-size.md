@@ -4,7 +4,6 @@ description: ' Set your game UI canvas size in Open 3D Engine UI Editor Preview
   how the interactive elements change state. '
 title: Setting Canvas Size in Preview
 ---
-# Setting Canvas Size in Preview {#ui-editor-previewing-setting-size}
 
 Change your game UI canvas size in **UI Editor** **Preview** to visualize how your canvas might look at different screen resolutions and to see how the interactive elements change state\. Changing your canvas size in **Preview** does not affect the canvas size at which you are authoring the UI canvas-that is controlled in the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/changing-size.md)\.
 

@@ -2,7 +2,6 @@
 description: ' Customize the component icon for an entity in Open 3D Engine. '
 title: Customizing the Entity Icon
 ---
-# Customizing the Entity Icon {#component-entity-inspector-customize-icon}
 
 The default icon for an entity without any added components is the **Transform** \( ![\[Image NOT FOUND\]](/images/user-guide/component/entity_system/entity-inspector-transform-icon.png)\) component's icon\. When you add another component, the icon changes to the first component that you add to that entity\.
 

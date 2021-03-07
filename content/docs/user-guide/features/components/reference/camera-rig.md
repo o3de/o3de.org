@@ -3,7 +3,6 @@ description: ' Use the Camera Rig component to add and remove behaviors to drive
   camera entity in Open 3D Engine. '
 title: Camera Rig
 ---
-# Camera Rig {#component-camera-rig}
 
 Use the **Camera Rig** component to add and remove behaviors to drive your camera entity\. To use the camera component, you must first add the [Camera Framework Gem](/docs/user-guide/features/gems/camera.md) to your project\.
 

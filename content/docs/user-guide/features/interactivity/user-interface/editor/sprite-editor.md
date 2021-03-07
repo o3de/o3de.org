@@ -3,7 +3,6 @@ description: ' Use the Sprite Editor to configure your images and textures in Op
   UI Editor . '
 title: Sprite Editor
 ---
-# Sprite Editor {#ui-editor-sprite-editor}
 
 The **Sprite Editor** configures the following sprite configurations:
 + Border values for [sliced image types](/docs/user-guide/features/interactivity/user-interface/editor/component-9-sliced.md)

@@ -3,7 +3,6 @@ description: Learn how to add and delete components, reference UI elements as co
   properties, and manage components in Open 3D Engine's UI Editor .
 title: Working with UI Components
 ---
-# Working with UI Components {#ui-editor-working}
 
 You can use the **UI Editor** to add and delete components, create references to UI elements for component properties, and manage components\.
 

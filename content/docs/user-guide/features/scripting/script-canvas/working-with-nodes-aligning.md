@@ -2,7 +2,6 @@
 description: ' Learn how to align Script Canvas nodes in Open 3D Engine. '
 title: Aligning Nodes
 ---
-# Aligning Nodes {#script-canvas-working-with-nodes-aligning}
 
 To align selected nodes in a Script Canvas graph, you can use the context menu, hot keys, or the following alignment icons above the graph\.
 

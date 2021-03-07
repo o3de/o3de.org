@@ -3,7 +3,6 @@ description: ' Modify a UI slice and push the changes in Open 3D Engine''s UI Ed
   . '
 title: Modifying a UI Slice and Pushing Changes
 ---
-# Modifying a UI Slice and Pushing Changes {#ui-editor-working-slices-modifying}
 
 In the **UI Editor**, you modify UI slices and push changes similarly to the way that you do in the main O3DE Editor For more information on pushing changes in O3DE's component entity system, see [Working with Slices](/docs/userguide/components/slices.md)\.
 

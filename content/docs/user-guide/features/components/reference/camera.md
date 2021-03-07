@@ -3,7 +3,6 @@ description: ' Use the Camera component to allow an entity to be used as a camer
   in Open 3D Engine. '
 title: Camera
 ---
-# Camera {#component-camera}
 
 The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/features/gems/camera.md)\.
 

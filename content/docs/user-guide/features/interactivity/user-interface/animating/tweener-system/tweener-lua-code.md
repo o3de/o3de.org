@@ -3,7 +3,6 @@ description: ' Learn how to use Lua scripting to animate your entities with the 
   Entity Tweener system in Open 3D Engine. '
 title: Tweener Lua Script
 ---
-# Tweener Lua Script {#ui-animating-tweener-lua-code}
 
 You must have a minimum set of code to play an animation in the Scripted Entity Tweener system\. As described in [Tweener Sample Level](/docs/user-guide/features/user-interface/animating/tweener-sample.md), you add this code to a Lua script\. You can copy and paste the code into a text file, and then change the file name extension to `.lua`\. You use this script as part of a **Lua script** component\. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/user-guide/editor/add-lua-script.md)\.
 

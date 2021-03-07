@@ -1,8 +1,8 @@
 ---
 description: ' Learn how to reflect O3DE components in C++. '
 title: Reflecting a Component for Serialization and Editing
+weight: 300
 ---
-# Reflecting a Component for Serialization and Editing {#component-entity-system-reflect-component}
 
 Components use AZ reflection to describe the data they serialize and how content creators interact with them\.
 

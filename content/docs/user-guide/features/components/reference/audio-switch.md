@@ -3,7 +3,6 @@ description: ' Use the Audio Switch component to set up a default switch and swi
   states for an entity in O3DE. '
 title: Audio Switch
 ---
-# Audio Switch {#component-audio-switch}
 
 The **Audio Switch** component provides basic [Audio Translation Layer \(ATL\)](/docs/user-guide/features/interactivity/audio/default-controls.md) switch functionality\. With switches \(and switch states\), you can specify the state of an entity\. The audio middleware interprets states, modifies the behavior of sounds, and plays the appropriate sounds\.
 

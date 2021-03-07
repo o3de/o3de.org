@@ -1,8 +1,8 @@
 ---
 description: ' Register your Python Asset Builder for your Open 3D Engine project. '
 title: Register a Python Asset Builder
+weight: 300
 ---
-# Register a Python Asset Builder {#python-asset-builder-register}
 
  A Python Asset Builder script must register a file pattern and unique builder ID for the asset builder\. To describe the asset builder, use `azlmbr.asset.builder.AssetBuilderDesc`\. To bind the script to the asset building process, use `azlmbr.asset.builder.PythonAssetBuilderRequestBus`\. You can register the asset builder by a file extension pattern such as `*.myasset` or by a folder and file regular expression pattern such as `^[a-zA-Z]:\\MyAssets[\\\S|*\S]?.*$)`\.
 

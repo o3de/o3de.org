@@ -1,61 +1,57 @@
 ---
-description: ' Use the NVIDIA Blast gem to simulate destruction in your Open 3D Engine
-  project. '
-title: NVIDIA Blast gem
+description: ' Create realistic destruction simulations in Open 3D Engine with NVIDIA Blast. '
+linktitle: NVIDIA Blast
+title: Simulated destruction with NVIDIA Blast
+weight: 200
 ---
-# NVIDIA Blast gem {#nvidia-blast}
-
-
-****
 
 |  |
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
 
-The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fidelity destruction simulation in Open 3D Engine\.
+ With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
+
+To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/features/interactivity/physics/nvidia-blast/_index.md)\.
 
 **Note**
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
-For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/intro.md)\.
+## NVIDIA Blast features {#nvidia-blast-features}
 
-**Contents**
-+ [Functionality provided by the NVIDIA Blast gem](#nvidia-blast-functionality)
-+ [Enable the NVIDIA Blast gem](#enable-gem-nvidia-blast)
+These are the features that NVIDIA Blast provides:
++ Fracture geometry and author blast assets in SideFX Houdini with the provided Houdini plug\-ins and Houdini Digital Assets \(HDAs\)\.
++ Create multiple levels of destruction for simulation\.
++ Automatically process and quickly set up assets with the provided Python Asset Builder for NVIDIA Blast\.
++ Create blast materials to define the forces required to trigger destruction simulation on blast assets\.
++ Add NVIDIA Blast assets to entities with the **Blast Family** and **Blast Family Mesh Data** components\.
++ Script destruction with the provided **Script Canvas** nodes for NVIDIA Blast\.
++ Debug NVIDIA Blast simulations with real\-time debug visualizations\.
 
-## Functionality provided by the NVIDIA Blast gem {#nvidia-blast-functionality}
+## Using NVIDIA Blast {#nvidia-blast-topics}
 
-The NVIDIA Blast gem provides the following:
-+ **Blast Family Mesh Data** component that adds NVIDIA Blast meshes to an entity\.
-+ **Blast Family** component that enables NVIDIA Blast simulation for an entity\.
-+ **Blast Configuration** editor available in the **Tools** menu in O3DE Editor\.
-+ **Blast Materials** to set physical properties for NVIDIA Blast assets available in **Asset Editor**\.
-+ **Blast Script Canvas** nodes to script destruction simulation\.
-+ Plug\-ins and Houdini Digital Assets for SideFX Houdini to fracture geometry and export NVIDIA Blast assets\.
-+ A Python Asset Builder to process NVIDIA Blast assets and generate blast slices\.
-+ A public C\+\+ API that allows other systems and gems to access NVIDIA Blast simulation functionality\.
+See the following topics for detailed information about NVIDIA Blast\.
 
-## Enable the NVIDIA Blast gem {#enable-gem-nvidia-blast}
+[Blast Family component](/docs/user-guide/features/components/blast-family.md) \- Blast Family component reference\.
 
-To enable the NVIDIA Blast gem, do the following:
+[Blast Family Mesh Data component](/docs/user-guide/features/components/blast-family-mesh-data.md) \- Blast Family Mesh Data component reference\.
 
-1. Use [Project Configurator](/docs/userguide/configurator/projects.md) to add the **NVIDIA Blast** gem to your project\. The **NVIDIA Blast** gem requires the following gems as dependencies:
-   + **LmbrCentral**
-   + **PhysX**
-**Important**
-Though not required, we highly recommend that you enable the [Python Asset Builder gem](/docs/user-guide/features/assets/builder/_index.md) with the **NVIDIA Blast** gem\. The **NVIDIA Blast** gem includes a Python asset builder script that automatically processes mesh assets for NVIDIA Blast and creates a blast slice asset\.
+[Install NVIDIA Blast plug\-ins](/docs/userguide/nvidia/blast/install-houdini-plugin#nvidia-blast-plugin-install) \- Install the NVIDIA Blast plug\-ins and Houdini Digital Assets\.
 
-1. Configure your project\. Use the following command\.
+[Create assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/create-blast-asset.md) \- Fracture meshes in Houdini and export assets for NVIDIA Blast\.
 
-   ```
-   lmbr_waf configure
-   ```
+[Processing assets for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/process-blast-asset.md) \- Process NVIDIA Blast assets for O3DE\.
 
-1. Build your project\. Use the following command\.
+[Simulate destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/simulate.md) \- Create entities with NVIDIA Blast assets and simulate destruction\.
 
-   ```
-   lmbr_waf build_win_x64_vs2019_profile -p all --progress
-   ```
+[Partial destruction with NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/static-chunks.md) \- Use attributes to create partial destruction\.
 
-For more information on gems, see the ADD LINK TO GEMS ROOT PAGE Gems documentation\.
+[Specify destruction properties with Blast materials](/docs/user-guide/features/interactivity/physics/nvidia-blast/materials.md) \- Use a blast material to define the force required to trigger destruction\.
+
+[NVIDIA Blast visual debugger](/docs/user-guide/features/interactivity/physics/nvidia-blast/debug.md) \- Use the visual debugger for NVIDIA Blast\.
+
+[Script Canvas nodes for NVIDIA Blast](/docs/user-guide/features/interactivity/physics/nvidia-blast/script-canvas.md) \- Script destruction simulation in Script Canvas\.
+
+## NVIDIA Blast references {#nvidia-blast-references}
+
+ [NVIDIA Blast documentation](https://developer.nvidia.com/blast) at the NVIDIA GAMEWORKS developer portal\.

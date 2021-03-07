@@ -1,12 +1,10 @@
 ---
 description: ' Build, deploy, and run an Open 3D Engine multiplayer project''s dedicated
   server to a host running Linux. '
+linktitle: Server deployment
 title: Deploy a O3DE multiplayer project's server on Linux
+weight: 100
 ---
-# Deploy a O3DE multiplayer project's server on Linux {#linux-build-lumberyard-executable}
-
-
-****
 
 |  |
 | --- |

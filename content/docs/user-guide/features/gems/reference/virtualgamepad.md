@@ -3,7 +3,6 @@ description: ' Use the Virtual Gamepad gem in Open 3D Engine to provide your gam
   with touch screen controls on mobile devices. '
 title: Virtual Gamepad Gem
 ---
-# Virtual Gamepad Gem {#gems-system-gem-virtualgamepad}
 
 Use the Virtual Gamepad gem to provide your game's UI with touch screen capabilities on mobile devices\. After you enable the Virtual Gamepad gem, you can add the virtual gamepad components to your game's UI in the **UI Editor**\.
 

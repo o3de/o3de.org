@@ -2,7 +2,6 @@
 description: ' See the following <guilabel>Track View</guilabel> editor nodes in Open 3D Engine. '
 title: Track View Editor Nodes
 ---
-# Track View Editor Nodes {#cinematics-trackview-nodes}
 
 The Track View offers a variety of nodes for specific purposes\. Anything part of the sequence is considered a *node*\. Nodes can be a reference to existing component entities or added to a sequence\. The top\-level node in the tree view is the sequence and all other nodes are listed below the sequence\.
 

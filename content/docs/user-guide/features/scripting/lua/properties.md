@@ -3,7 +3,6 @@ description: ' Specify the properties of a Lua script component that appear in O
   in Open 3D Engine. '
 title: Properties Table
 ---
-# Properties Table {#lua-scripting-ces-properties}
 
 The `Properties` table configures the editor interface for customizing the behavior of a script\. With the properties table, you can modify numeric values, select states, and turn flags on and off\. The table can even provide a reference to entities that your script can interact with\.
 

@@ -3,7 +3,6 @@ description: ' Use arrays and key-value pair maps in Script Canvas, Open 3D Engi
   visual scripting tool for gameplay creation. '
 title: Using Container Types (Arrays and Maps)
 ---
-# Using Container Types \(Arrays and Maps\) {#script-canvas-containers}
 
 Script Canvas has support for arrays and maps\.
 

@@ -1,8 +1,8 @@
 ---
 description: ' Modify the transform for entities using the Viewport Interaction Model in Open 3D Engine. '
 title: Modifying the Transform
+weight: 100
 ---
-# Modifying the Transform {#viewport-interaction-model-transform}
 
 When you move the manipulator to another location in the viewport, you can modify the scale, rotation, or translation of the entity\. This feature makes it easier for you to manage your entities\.
 

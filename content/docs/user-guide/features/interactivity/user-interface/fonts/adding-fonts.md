@@ -2,7 +2,6 @@
 description: Add new font assets to your Open 3D Engine game UI.
 title: Adding New Fonts
 ---
-# Adding New Fonts {#ui-fonts-adding-fonts}
 
 For each new font to add, you need the following files:
 + A font asset - True Type Font \(`.ttf`\) or Open Type Font \(`.otf`\) file
