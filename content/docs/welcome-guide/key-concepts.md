@@ -1,9 +1,10 @@
 ---
 description: " Dive into how Open 3D Engine\u2019s tools and systems work together\
   \ to help you create games and immersive experiences. "
-title: How Open 3D Engine works
+linktitle: Key concepts
+title: 'Key concepts: How Open 3D Engine works'
+weight: 200
 ---
-# How Open 3D Engine works<a name="wg-how-lumberyard-works"></a>
 
 Open 3D Engine provides a complete, end\-to\-end environment for developing and delivering games and simulations, and supports a wide variety of platforms. Since it's such a large development environment with so many different features and tools, it can be intimidating to new users, especially for those who don't have a traditional developer background\. This topic covers the various parts of O3DE at a high level and the common ways you can work with it depending on your role or task as a new or experienced game developer or designer\.
 

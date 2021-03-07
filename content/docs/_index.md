@@ -8,8 +8,8 @@ toc: true
 Landing page for guide snapshots. Subsections linked here due to the lack of metadata preventing Hugo from correctly
 identifying subpages.
 
+- [Welcome guide](welcome-guide)
 - [User guide](user-guide)
-- [Welcome guide snapshot](welcomeguide)
-- [Tools UI guide snapshot](tools-ui)
 - [Atom guide](atom-guide)
+- [Tools UI extensions guide](tools-ui)
 - [API reference](api)

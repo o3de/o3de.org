@@ -1,8 +1,9 @@
 ---
 description: ' Learn to use the O3DE Editor. '
+linktitle: Editor tour
 title: Introduction to the O3DE Editor
+weight: 100
 ---
-# Introduction to the O3DE Editor<a name="wg-editor"></a>
 
 O3DE Editor is your primary workspace\. From here, you access all of the tools to design, create, test, play, and deploy your project\. If you have used other professional engines or 3D animation packages, you'll find the user experience familiar and adapt to O3DE Editor quickly\.
 

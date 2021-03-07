@@ -2,10 +2,10 @@
 description: ' Understand the different ways you can participate in AAA-game development
   with Open 3D Engine as a technical artist, game designer, or game programmer. '
 title: Create with Open 3D Engine
+weight: 50
 ---
-# Create with Open 3D Engine<a name="wg-create-intro"></a>
 
-Previously in this guide, we covered [How Open 3D Engine works](wg-how-lumberyard-works.md) and [Setting up Open 3D Engine](wg-setup-intro.md)\.
+Previously in this guide, we covered [Key concepts](../../key-concepts.md) and [Setting up Open 3D Engine](../../setup)\.
 
 Now, let's get started creating your game\! In this topic, we provide an overview of creating a game with O3DE, and help you identify where to focus your learning, based on your role in game development\. If you're proficient in all roles, read everything\!
 

@@ -1,8 +1,8 @@
 ---
 description: ' Features overview for Open 3D Engine. '
 title: O3DE features
+weight: 100
 ---
-# O3DE features<a name="wg-features-intro"></a>
 
 O3DE is packed with features that enable you to create beautiful worlds, engaging characters, and dynamic simulations\. With O3DE's deep integration to Amazon Web Services and Twitch, you can add cloud\-connected features and connect players and customers around the world\.
 

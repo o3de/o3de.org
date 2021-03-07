@@ -1,7 +1,9 @@
 ---
 description: ' Open 3D Engine is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
-title: What is O3DE?
+linktitle: Open 3D Engine User guide
+title: What is Open 3D Engine (O3DE)?
+weight: 300
 ---
 
 Open 3D Engine is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With O3DE, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
