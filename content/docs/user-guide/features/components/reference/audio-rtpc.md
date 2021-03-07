@@ -3,7 +3,6 @@ description: ' Use the Audio RTPC component to set values at runtime that produc
   real-time tweaking of sounds in Open 3D Engine. '
 title: Audio Rtpc
 ---
-# Audio Rtpc {#component-audio-rtpc}
 
 The **Audio RTPC** component provides basic [Real\-Time Parameter Control \(RTPC\)](/docs/user-guide/features/interactivity/audio/default-controls.md) functionality\. An RTPC is a named variable that the audio system can interpret in many different ways\. It allows game developers to set the value from the game at run time to produce real\-time tweaking of sounds\.
 

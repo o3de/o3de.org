@@ -3,7 +3,6 @@ description: ' Use the Navigation Area component with the Polygon Prism Shape co
   to create navigation meshes in Open 3D Engine. '
 title: Navigation Area
 ---
-# Navigation Area {#component-nav-area}
 
 The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System\. You use this component with the **[Polygon Prism Shape](/docs/user-guide/features/components/polygon-prism.md)** component, which defines the volume of the navigation area\.
 

@@ -2,10 +2,6 @@
 description: ' Learn about the Open 3D Engine Blast Family Mesh Data component. '
 title: Blast Family Mesh Data component
 ---
-# Blast Family Mesh Data component {#component-blast-family-mesh-data}
-
-
-****
 
 |  |
 | --- |

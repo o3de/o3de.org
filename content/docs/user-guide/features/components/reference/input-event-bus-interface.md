@@ -2,7 +2,6 @@
 description: ' Work with the Input component EBus (event bus) in Open 3D Engine. '
 title: Input Component EBus Interface
 ---
-# Input Component EBus Interface {#component-input-event-bus-interface}
 
 Input subcomponents are objects that have the same lifetime as components and must override `Activate` and `Deactivate`\.
 
