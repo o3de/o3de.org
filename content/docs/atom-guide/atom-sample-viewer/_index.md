@@ -6,15 +6,22 @@ toc: true
 weight: 400
 ---  
 
-The **Atom Sample Viewer** showcases samples of some features and rendering techniques capable in Atom. To start the Atom Sample Viewer, run AtomSampleViewerStandalone.exe located in the folder *\<build-folder\>/bin/profile*. 
+The **Atom Sample Viewer** showcases samples of some features and rendering techniques that Atom supports. Developers can use these samples as a base for further development. 
+
+To start the Atom Sample Viewer, run AtomSampleViewerStandalone.exe located in the folder `<build>/bin/profile`. 
 
 ## [Debug Menu Samples](debug-menu-samples.md)
+Atom supports tools for profiling and debugging systems across the render engine. 
+<!-- [WRITER NOTE] Elaborate intro-->
 - [CPU Profiler](debug-menu-samples.md#cpu-profiler)
 - [Culling Debug Window](debug-menu-samples.md#culling-debug-window)
 - [GPU Profiler](debug-menu-samples.md#gpu-profiler)
-- [PassTree](debug-menu-samples.md#pass-tree)
+- [Pass Tree](debug-menu-samples.md#pass-tree)
 - [Transient Attachment Profiler](debug-menu-samples.md#transient-attachment-profiler)
-## [Graphic Feature Samples](graphics-feature-samples.md)
+
+
+## [Graphics Feature Samples](graphics-feature-samples.md)
+Atom supports many graphics features and rendering techniques that can enhance your scene's render. Most of these are supported in Atom by default, such as shadow, SSAO, and global illumination. Some of these features are components in the Open 3D Engine and can be added into your project, such as area lights and the bloom effect. You can also switch Atom's render pipeline entirely, such as to a checkerboard render pipeline. 
 - [Area Lights](graphics-feature-samples.md#area-lights)
 - [Bloom](graphics-feature-samples.md#bloom)
 - [Checkerboard Render Pipeline](graphics-feature-samples.md#checkerboard-render-pipeline)
@@ -30,7 +37,11 @@ The **Atom Sample Viewer** showcases samples of some features and rendering tech
 - [SSR](graphics-feature-samples.md#ssr)
 - [Tonemapping](graphics-feature-samples.md#tonemapping)
 - [Transparency](graphics-feature-samples.md#transparency)
+
+
 ## [RHI Samples](rhi-samples.md)
+The following samples demonstrate the rendering capabilities in the RHI. 
+<!-- [WRITER NOTE] Elaborate intro-->
 - [Alpha to Coverage](rhi-samples.md#alpha-to-coverage)
 - [Async Compute](rhi-samples.md#async-compute)
 - [Bindless Prototype](rhi-samples.md#bindless-prototype)
@@ -56,7 +67,11 @@ The **Atom Sample Viewer** showcases samples of some features and rendering tech
 - [Texture Map](rhi-samples.md#texture-map)
 - [Triangle](rhi-samples.md#triangle)
 - [Triangle Constant Buffer](rhi-samples.md#triangle-constant-buffer)
+
+
 ## [RPI Samples](rpi-samples.md)
+The following samples demonstrate the rendering capabilities in the RPI. 
+<!-- [WRITER NOTE] Elaborate intro-->
 - [Asset Load](rpi-samples.md#asset-load)
 - [Aux Geom](rpi-samples.md#aux-geom)
 - [Bistro Benchmark](rpi-samples.md#bistro-benchmark)
