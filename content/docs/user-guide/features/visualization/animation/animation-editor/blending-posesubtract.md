@@ -3,7 +3,6 @@ description: ' Use the Pose Subtract node in Open 3D Engine Animation Editor to 
   one pose from another. '
 title: Pose Subtract Node
 ---
-# Pose Subtract Node {#animation-editor-blending-posesubtract}
 
 The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**\. The output of a **Pose Subtract** node is the delta between them \(**Pose 1** - **Pose 2**\)\.
 

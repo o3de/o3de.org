@@ -2,10 +2,6 @@
 description: ' Export motions from .fbx files with FBX Settings to Open 3D Engine. '
 title: FBX Settings motion export
 ---
-# FBX Settings motion export {#fbx-motion-export}
-
-
-****
 
 |  |
 | --- |

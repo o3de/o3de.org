@@ -3,7 +3,6 @@ description: ' Use the Lua Script component to add script functionality to your 
   entities in Open 3D Engine. '
 title: Adding Lua Scripts to Component Entities
 ---
-# Adding Lua Scripts to Component Entities {#lua-scripting-intro-add-script-to-component}
 
 O3DE makes it easy for you to add script functionality to your game entities by using the **Lua Script** component\. The following steps show you how to do this in O3DE Editor\.
 

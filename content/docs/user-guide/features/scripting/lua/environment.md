@@ -3,7 +3,6 @@ description: ' Learn about adding ScriptContext instances and using common code 
   the Open 3D Engine Lua environment. '
 title: The Lua Environment (Advanced)
 ---
-# The Lua Environment \(Advanced\) {#lua-scripting-ces-the-lua-environment}
 
 By default, the O3DE component entity Lua environment is a single Lua environment \(or `lua_State`\)\. This environment is bound to the `BehaviorContext` that is owned by the `ComponentApplication`\. Because of this, it has access to all API operations that are reflected on startup\.
 

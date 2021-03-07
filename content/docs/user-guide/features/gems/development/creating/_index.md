@@ -1,8 +1,8 @@
 ---
 description: ' Create a gem for Open 3D Engine. '
 title: Creating a Gem
+weight: 100
 ---
-# Creating a Gem {#gems-system-gems-creating}
 
 You can create your own gems by packaging your assets into the O3DE gem format\. This makes your package distributable, shareable between projects, and easy for game developers to enable or disable as needed\.
 

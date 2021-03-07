@@ -3,7 +3,6 @@ description: ' Learn about the relationship between Script Canvas and the behavi
   context in Open 3D Engine. '
 title: 'Script Canvas and the Behavior Context'
 ---
-# Script Canvas and the Behavior Context {#script-canvas-behavior-context}
 
 **Topics**
 + [The Light Component and Script Canvas](#script-canvas-behavior-context-light-component)

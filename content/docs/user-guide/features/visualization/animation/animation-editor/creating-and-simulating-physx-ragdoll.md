@@ -3,10 +3,6 @@ description: ' Create an animation graph and simulate your PhysX ragdoll in the 
   Animation Editor . '
 title: Creating and Simulating a PhysX Ragdoll
 ---
-# Creating and Simulating a PhysX Ragdoll {#animation-editor-creating-and-simulating-physx-ragdoll}
-
-
-****
 
 |  |
 | --- |

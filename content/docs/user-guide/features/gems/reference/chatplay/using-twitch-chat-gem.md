@@ -2,8 +2,8 @@
 description: ' Learn how to use the Twitch Chat Gem to add Twitch ChatPlay support to your
   Open 3D Engine game and trigger events based on Twitch chat activity. '
 title: Using the Twitch Chat Gem
+weight: 200
 ---
-# Using the Twitch Chat Gem {#chatplay-using-twitch-chat-gem}
 
 Adding the Twitch Chat Gem to your project enables you to connect to the Twitch IRC and interact with players using Twitch ChatPlay\.
 

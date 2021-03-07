@@ -3,10 +3,6 @@ description: ' Use the ChatPlay Gem to trigger events based on Twitch chat activ
   in Open 3D Engine. '
 title: ChatPlay Gem
 ---
-# ChatPlay Gem {#gems-system-gem-chatplay}
-
-
-****
 
 |  |
 | --- |

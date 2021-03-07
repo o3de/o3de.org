@@ -3,7 +3,6 @@ description: ' Use the Animation Editor''s Track Editor to preview an animation,
   the timeline, and work with keys in Open 3D Engine. '
 title: Using the Track Editor
 ---
-# Using the Track Editor {#ui-animation-track-editor}
 
 The **Track Editor** displays all the tracks in your current animation sequence\. The **Track Editor** enables you to do the following:
 + Move, delete, copy, and paste keys

@@ -1,9 +1,7 @@
 ---
-description: ' Learn to animate characters in Open 3D Engine with EMotionFX Animation Editor
-  . '
+description: ' Learn to animate characters in Open 3D Engine with EMotionFX Animation Editor. '
 title: Create and animate characters
 ---
-# Create and animate characters {#char-intro}
 
 Most game projects require an animated character to move around in the environment\. This may be a character that the player controls, or an AI\-driven entity that interacts with the level\.
 

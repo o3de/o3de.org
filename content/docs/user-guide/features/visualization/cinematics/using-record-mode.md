@@ -2,7 +2,6 @@
 description: ' Use Record mode for a sequence in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Using Record Mode
 ---
-# Using Record Mode {#cinematics-using-record-mode}
 
 The Track View's **Play** toolbar has the **Start Animation Recording** icon to enter record mode\. In record mode, you can manipulate component entities for a sequence directly in the viewport\. Animation keys are automatically placed on the appropriate node tracks in the timeline based on the current location of the timeline playhead\.
 

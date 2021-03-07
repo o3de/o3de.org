@@ -3,7 +3,6 @@ description: ' Build UIs that display on multiple screen resolutions using the S
   to Device property in the Open 3D Engine UI Editor. '
 title: Scaling to Device Resolutions
 ---
-# Scaling to Device Resolutions {#ui-editor-scaling-device-resolution}
 
 You can use the **Scale to Device** property on the **Transform2D** component with the anchoring system to build UIs that display on multiple screen resolutions\. The **Scale to Device** property applies an element scale that's based on the ratio of the authored canvas size to the target canvas size\.
 

@@ -3,10 +3,6 @@ description: ' Retarget motions and animations from one actor to another actor i
   the Open 3D Engine Animation Editor . '
 title: Retargeting Motions
 ---
-# Retargeting Motions {#animation-editor-retargeting-animations}
-
-
-****
 
 |  |
 | --- |

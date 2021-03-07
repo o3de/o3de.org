@@ -2,11 +2,8 @@
 description: ' Use Blast materials to set destruction properties in Open 3D Engine with
   NVIDIA Blast. '
 title: Specify destruction properties with Blast materials
+weight: 600
 ---
-# Specify destruction properties with Blast materials {#nvidia-blast-materials}
-
-
-****
 
 |  |
 | --- |

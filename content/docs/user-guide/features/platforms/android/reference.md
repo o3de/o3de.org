@@ -1,8 +1,8 @@
 ---
 description: ' Learn Open 3D Engine build commands and settings for the Android platform. '
 title: Reference for Android
+weight: 600
 ---
-# Reference for Android {#android-reference}
 
  This section is a reference for commands and build settings used by O3DE when working with the Android platform\. For general information and system\-wide build settings or commands, see the following topics\.
 + [Waf Commands and Options](/docs/userguide/waf/commands.md)

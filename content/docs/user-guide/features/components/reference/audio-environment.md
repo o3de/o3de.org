@@ -3,7 +3,6 @@ description: ' Use the Audio Environment component to set up a default environme
   for an entity in Open 3D Engine. '
 title: Audio Environment
 ---
-# Audio Environment {#component-audio-environment}
 
 The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](/docs/user-guide/features/interactivity/audio/default-controls.md) environments\. Environments are used to apply environmental effects such as reverb or echo\.
 

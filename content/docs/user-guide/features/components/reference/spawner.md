@@ -3,7 +3,6 @@ description: ' Use the Open 3D Engine Spawner component to spawn a design-time o
   dynamic slice at an entity''s location. '
 title: Spawner
 ---
-# Spawner {#component-spawner}
 
 Use the **Spawner** component to spawn a design\-time or runtime dynamic slice \(`*.dynamicslice`\) at an entity's location with an optional offset\.
 

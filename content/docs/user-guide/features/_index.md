@@ -1,8 +1,8 @@
 ---
 description: ' This section describes the major O3DE systems. '
 title: 'O3DE Systems'
+weight: 300
 ---
-# O3DE Systems {#lumberyard-systems}
 
 O3DE consists of the following major systems that help you develop levels within the editor:
 + [Employing artificial intelligence](/docs/userguide/ai/intro.md)

@@ -3,7 +3,6 @@ description: ' Use the PhysX Debug gem to debug physics visualization in your Op
   level. '
 title: PhysX Debug
 ---
-# PhysX Debug {#gems-system-gem-physx-debug}
 
 The PhysX Debug gem provides features to debug visualizations for your PhysX scene geometry, such as the **[PhysX Collider](/docs/user-guide/features/components/physx-collider.md)** , **[PhysX Rigid Body](/docs/user-guide/features/components/physx-rigid-body-physics.md)** component, and so on\.
 

@@ -2,7 +2,6 @@
 description: ' Use the PhysX Terrain component to create a physics collider in Open 3D Engine. '
 title: PhysX Terrain
 ---
-# PhysX Terrain {#component-physx-terrain}
 
 **Important**
 The PhysX Terrain component and associated documentation are legacy features retained for compatibility\. For new projects, use the **Legacy Terrain** level component, and the **PhysX Terrain** level component\. For more information, see [Legacy Terrain level component](/docs/userguide/components/legacy-terrain.md)

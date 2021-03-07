@@ -3,7 +3,6 @@ description: ' Reference external anim graphs to streamline node-based animation
   Open 3D Engine. '
 title: Referencing External Anim Graphs
 ---
-# Referencing External Anim Graphs {#referencing-character-animation-editor-anim-graph}
 
 A node\-based animation system that has thousands of nodes can be difficult to manage\. O3DE's **EMotion FX Animation Editor** uses hierarchical nodes that help alleviate this problem, but universal\-level changes to game logic can still be challenging\.
 

@@ -3,10 +3,6 @@ description: ' Use the White Box Collider component to add PhysX collision to wh
   box meshes in Open 3D Engine. '
 title: 'White Box Collider component'
 ---
-# White Box Collider component {#component-white-box-collider}
-
-
-****
 
 |  |
 | --- |

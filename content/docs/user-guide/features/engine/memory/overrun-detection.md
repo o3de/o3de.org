@@ -2,9 +2,8 @@
 description: ' Use overrun detection to detect illegal memory writes in Open 3D Engine. '
 title: Overrun Detection
 ---
-# Overrun Detection {#memory-management-overrun-detection}
 
-Overrun detection is an experimental feature available starting in O3DE version 1\.21\. It helps you detect corrupted memory at the time that the corruption occurs\. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem\.
+Overrun detection is an experimental feature. It helps you detect corrupted memory at the time that the corruption occurs\. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem\.
 
 **Note**
 Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [GFlags with full page heap verification](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/gflags-and-pageheap)\. However, it can be used with the O3DE memory allocators and does not require recompiling\.

@@ -2,7 +2,6 @@
 description: ' Manage the camera space for viewing your entities in Open 3D Engine. '
 title: Using the Camera Space
 ---
-# Using the Camera Space {#camera-space}
 
 A camera space manipulator is built into the rotation manipulator\. You can rotate entities based on the editor's camera view\.
 

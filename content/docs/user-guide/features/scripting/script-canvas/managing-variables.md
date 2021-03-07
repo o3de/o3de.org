@@ -4,7 +4,6 @@ description: ' Use the Variable Manager in the Open 3D Engine Script Canvas edit
   Script Canvas graph. '
 title: Managing Script Canvas Variables
 ---
-# Managing Script Canvas Variables {#script-canvas-managing-variables}
 
 The **Variable Manager** shows the variables that are used in your Script Canvas graph\. These variables represent the custom data required to build game logic\. For example, you can use variables to make counters, store entity references, specify a direction, or define a color\.
 

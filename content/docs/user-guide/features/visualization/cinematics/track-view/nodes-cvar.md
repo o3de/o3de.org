@@ -3,7 +3,6 @@ description: ' Use the console variable node to use and animate console variable
   in a track view sequence of a O3DE game. '
 title: Console Variable Node
 ---
-# Console Variable Node {#cinematics-track-view-nodes-cvar}
 
 Use the **Console Variable** node to use and animate console variables in a track view sequence\.
 

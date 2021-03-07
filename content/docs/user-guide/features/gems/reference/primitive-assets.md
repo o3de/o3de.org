@@ -3,7 +3,6 @@ description: ' Use the Primitive Assets Gem in your O3DE project to add primitiv
   objects with physics enabled. '
 title: Primitive Assets Gem
 ---
-# Primitive Assets Gem {#gems-system-gem-primitive-assets}
 
 The Primitive Assets Gem provides primitive objects that are physics enabled and unit size \(1x1x1\), with a gray checkerboard texture\. The checkerboard texture is RGB middle gray \(127,127,127\) and sRGB middle gray \(187,187,187\)\. Diffuse, normal, and specular maps are included\. The primitive object models have import settings, a material, and a slice\. Each slice contains the object mesh and the appropriate **Shape** and **Rigid Body Physics** components\. You can use these to add the cube, sphere, and cylinder objects to your level and manipulate the objects, create a placeholder, or test O3DE Editor features\.
 

@@ -3,7 +3,6 @@ description: ' Change your game UI canvas size to visualize how your canvas migh
   look on other displays and devices of varying resolutions in Open 3D Engine. '
 title: Changing the Canvas Size
 ---
-# Changing the Canvas Size {#ui-editor-changing-size}
 
 Change your game UI canvas size to visualize how your canvas might look on other displays and devices of varying resolutions\. The size at which you save your canvas is the reference size that is used when you perform the **Scale to Device** action\.
 

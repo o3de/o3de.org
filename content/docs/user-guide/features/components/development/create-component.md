@@ -1,8 +1,8 @@
 ---
 description: ' Learn how to create O3DE components in C++. '
 title: Creating a Component
+weight: 100
 ---
-# Creating a Component {#component-entity-system-create-component}
 
 A component in O3DE is a simple class that inherits from O3DE's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create O3DE components programmatically\. For information about adding and customizing the components available in O3DE Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
 

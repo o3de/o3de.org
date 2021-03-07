@@ -3,7 +3,6 @@ description: ' Use the Scale to Device setting in the UI Editor to scale
   game UIs to different resolutions in Open 3D Engine. '
 title: Scale to Device
 ---
-# Scale to Device {#ui-editor-transform-scale}
 
 The **Scale to Device** property helps build game UIs that can display on multiple screen resolutions\. You can preview your canvas at different resolutions in the UI Editor in **Preview Mode**\.
 

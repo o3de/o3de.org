@@ -2,7 +2,6 @@
 description: ' Control the playhead in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
 title: Controlling the Playhead
 ---
-# Controlling the Playhead {#cinematics-controlling-the-playhead}
 
 The Track View's **Play** toolbar contains the main controls for controlling the playhead for the sequence timeline\.
 

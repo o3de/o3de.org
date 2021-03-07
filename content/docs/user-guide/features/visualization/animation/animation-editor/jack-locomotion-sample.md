@@ -4,10 +4,6 @@ description: ' Use the Simple Jack Locomotion sample level to learn how the O3DE
   behavior. '
 title: Simple_JackLocomotion Sample
 ---
-# Simple\_JackLocomotion Sample {#animation-editor-jack-locomotion-sample}
-
-
-****
 
 |  |
 | --- |

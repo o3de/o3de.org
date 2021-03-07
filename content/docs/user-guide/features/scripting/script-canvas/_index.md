@@ -4,7 +4,6 @@ description: ' Get started with Open 3D Engine''s Script Canvas, a visual script
 linktitle: Script Canvas
 title: Creating Gameplay with Script Canvas
 ---
-# Creating Gameplay with Script Canvas {#script-canvas-intro}
 
 Script Canvas is a visual scripting environment for Open 3D Engine that you can use to create game logic and behaviors\. Integrated with O3DE's component entity system, Script Canvas offers an approachable and easy\-to\-read environment to author behaviors using the same framework as Lua and C\+\+\. With its visual scripting options, you can use Script Canvas to create [scripts](/docs/userguide/ly-glos-chap#scripts) for game logic without needing to know how to code\. Event\-driven scripts let you produce small scripts that don't require complex logic to maintain states\.
 

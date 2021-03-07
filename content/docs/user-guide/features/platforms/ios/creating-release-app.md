@@ -2,8 +2,8 @@
 description: ' Prepare your Open 3D Engine iOS games for store deployment (distribution)
   by packing the assets and cached binary shaders. '
 title: Creating a Release App
+weight: 300
 ---
-# Creating a Release App {#ios-creating-release-app}
 
 Once you have finished your O3DE iOS game, you can prepare it for the App Store by creating a release app and including the assets and shaders in `.pak` files\. You must do the following:
 

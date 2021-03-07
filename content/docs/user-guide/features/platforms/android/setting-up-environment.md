@@ -1,8 +1,9 @@
 ---
 description: ' Set up your Open 3D Engine environment to build your project for Android. '
+linktitle: Environment setup
 title: Set up your environment to develop for Android with O3DE
+weight: 100
 ---
-# Set up your environment to develop for Android with O3DE {#android-setting-up-environment}
 
  This section walks you through the steps needed to get your development environment and Open 3D Engine projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure O3DE projects for Android](/docs/user-guide/features/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)\.
 

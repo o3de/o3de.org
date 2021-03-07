@@ -3,10 +3,6 @@ description: ' Use the Input Management Framework gem to convert game input into
   actions in Open 3D Engine. '
 title: Input Management Framework Gem
 ---
-# Input Management Framework Gem {#gems-system-gem-input}
-
-
-****
 
 |  |
 | --- |

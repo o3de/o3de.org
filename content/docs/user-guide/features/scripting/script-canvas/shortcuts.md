@@ -3,7 +3,6 @@ description: ' Learn keyboard and mouse shortcuts for the Script Canvas editor i
   Open 3D Engine. '
 title: 'Script Canvas Editor Shortcuts'
 ---
-# Script Canvas Editor Shortcuts {#script-canvas-shortcuts}
 
 The following table shows the keyboard shortcuts that you can use in the Script Canvas editor\.
 

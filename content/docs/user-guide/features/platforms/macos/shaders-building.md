@@ -2,11 +2,8 @@
 description: ' Use Open 3D Engine''s remote shader compiler to build shaders for your macOS
   games. '
 title: Building Shaders for macOS Games
+weight: 300
 ---
-# Building Shaders for macOS Games {#osx-shaders-building}
-
-
-****
 
 |  |
 | --- |

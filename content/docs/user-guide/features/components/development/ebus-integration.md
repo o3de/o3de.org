@@ -1,8 +1,8 @@
 ---
 description: ' Learn about the relationship between components and EBuses in Open 3D Engine. '
 title: Components and EBuses
+weight: 700
 ---
-# Components and EBuses {#component-entity-system-pg-components-and-ebuses}
 
 EBuses are not required for components, nor are they directly bound to components in any way\. But because they form the backbone of communication among all O3DE components, EBuses offer many benefits\. We highly recommend that you learn how to use them in your game, systems, and components\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 

@@ -3,7 +3,6 @@ description: ' Use the Script Canvas gem to enable the use of Open 3D Engine''s 
   editor. '
 title: 'Script Canvas Gem'
 ---
-# Script Canvas Gem {#gems-system-gem-script-canvas}
 
 The Script Canvas gem enables O3DE's visual scripting environment\. With the gem enabled, you can use the **Script Canvas** editor to create game logic without needing to write your own code\.
 

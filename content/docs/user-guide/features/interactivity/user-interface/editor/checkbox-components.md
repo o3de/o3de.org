@@ -3,7 +3,6 @@ description: ' Use a check box component to make an element behave like a check 
   in O3DE''s UI Editor. '
 title: Checkbox
 ---
-# Checkbox {#ui-editor-checkbox-components}
 
 You can use the **Checkbox** component to make an element behave like a check box\. This component is typically applied to an element with two visual child elements: One element appears when the check box is selected and another appears when the check box is cleared\.
 

@@ -3,7 +3,6 @@ description: ' See the best practices for working with skinned meshes actors for
   Animation Editor in Open 3D Engine. '
 title: Creating Skinned Meshes for Actors
 ---
-# Creating Skinned Meshes for Actors {#char-fbx-importer-create-skinned-meshes-best-practices}
 
 Use the following best practices when you create your character for the **Animation Editor**\. In O3DE, a character is a skinned mesh\.
 

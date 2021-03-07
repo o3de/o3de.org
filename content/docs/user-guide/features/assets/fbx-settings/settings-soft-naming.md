@@ -4,7 +4,6 @@ description: ' View and update the soft naming conventions for assets such as Lo
   3ds Max or Maya. '
 title: FBX soft naming conventions
 ---
-# FBX soft naming conventions {#fbx-settings-soft-naming}
 
 You can use soft naming conventions when authoring assets in your content creation tools, such as Autodesk 3ds Max or Maya\. Soft naming conventions are prefixes or suffixes that you add to either nodes in your scene or the `.fbx` file name\. In O3DE, **Asset Processor** recognizes these soft naming conventions and then applies an action based on the specified soft naming convention\.
 

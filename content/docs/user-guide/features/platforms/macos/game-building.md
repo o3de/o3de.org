@@ -1,11 +1,8 @@
 ---
 description: ' Build a macOS game using the O3DE build tools. '
 title: Building macOS Games
+weight: 100
 ---
-# Building macOS Games {#osx-game-building}
-
-
-****
 
 |  |
 | --- |

@@ -3,8 +3,8 @@ description: ' Learn about the Amazon Qt Control Gallery tool that demonstrates 
   O3DE UI 2.0 custom Qt widget library in action, and see sample code related
   to each example. '
 title: O3DE Qt control gallery tool
+weight: 100
 ---
-# O3DE Qt control gallery tool<a name="uidev-control-gallery"></a>
 
 Use the **Amazon Qt Control Gallery** tool to see the Open 3D Engine custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
 

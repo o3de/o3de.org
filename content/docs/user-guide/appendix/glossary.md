@@ -1,9 +1,7 @@
 ---
-description: null
 title: Glossary
+weight: 1000
 ---
-
-# Glossary {#ly-glos-chap}
 
 **actor** {#actor}
 A specialized [entity](#entity) that is the basis for characters in a game\.

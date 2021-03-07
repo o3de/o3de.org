@@ -3,7 +3,6 @@ description: ' Use a slider component to make an element behave like a slider in
   UI Editor. '
 title: Slider
 ---
-# Slider {#ui-editor-slider-components}
 
 You can use the **Slider** component to make an element behave like a slider\. This component is typically applied to an element with three visual child elements: one immediate child, called **Track**, and two child elements of the track, called **Fill** and **Handle**\.
 

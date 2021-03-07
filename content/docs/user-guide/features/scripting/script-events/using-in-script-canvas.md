@@ -1,8 +1,8 @@
 ---
 description: null
 title: Using Script Events in Script Canvas
+weight: 200
 ---
-# Using Script Events in Script Canvas {#script-events-using-in-script-canvas}
 
 Script Canvas scans for and detects script event assets, so after you define a script event, you can use it in Script Canvas\.
 

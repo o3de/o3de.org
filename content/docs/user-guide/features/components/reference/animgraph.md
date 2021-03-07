@@ -3,10 +3,6 @@ description: ' Use the AnimGraph component to adds an animation graph and motion
   to your character. '
 title: AnimGraph
 ---
-# AnimGraph {#component-animgraph}
-
-
-****
 
 |  |
 | --- |

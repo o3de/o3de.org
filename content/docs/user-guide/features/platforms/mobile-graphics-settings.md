@@ -2,8 +2,8 @@
 description: ' Use the Open 3D Engine Graphics Settings window and configuration files
   to update graphics performance settings for Android and iOS games. '
 title: Updating Graphics Settings for Android and iOS
+weight: 1000
 ---
-# Updating Graphics Settings for Android and iOS {#ios-android-updating-graphics-settings}
 
 O3DE supports low, medium, high, and very high graphics performance for mobile devices\. You can change the graphics settings in O3DE Editor to simulate the graphics on Android and iOS devices\. This feature helps you visually check your mobile games in O3DE Editor during the development process\.
 

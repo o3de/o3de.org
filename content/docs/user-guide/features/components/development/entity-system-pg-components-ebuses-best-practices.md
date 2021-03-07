@@ -1,8 +1,8 @@
 ---
 description: ' Learn about best practices for components and EBuses in Open 3D Engine. '
 title: 'Components and EBuses: Best Practices'
+weight: 1000
 ---
-# Components and EBuses: Best Practices {#component-entity-system-pg-components-ebuses-best-practices}
 
 Follow these best practices for creating and using components and EBuses\.
 

@@ -3,7 +3,6 @@ description: ' Use mip maps to optimize images to be viewed at various distances
   reducing the time and processing power it takes to render them in Open 3D Engine. '
 title: Generating Mip Maps
 ---
-# Generating Mip Maps {#asset-pipeline-generating-mipmaps}
 
 [Mip maps](/docs/userguide/ly-glos-chap#mip_map) are a sequence of optimized images made from one image\. Each image is lower in resolution than the previous image by a power of two\. Mip maps reduce the time and processing power it takes to render an image in a game\. Lower resolution mip maps are used when the viewing distance is great enough that the loss of detail is not noticeable\. Higher resolution mip maps are used when an object is close to the camera and needs to be displayed in detail\.
 

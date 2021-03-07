@@ -2,10 +2,6 @@
 description: ' Customize EMotionFX objects in the O3DE Animation Editor. '
 title: Customizing EMotionFX Objects
 ---
-# Customizing EMotion FX Objects {#animation-editor-customizing-emotionfx-objects}
-
-
-****
 
 |  |
 | --- |

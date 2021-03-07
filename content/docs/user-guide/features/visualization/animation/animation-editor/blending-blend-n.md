@@ -3,7 +3,6 @@ description: ' Learn how to use the Blend N node in Open 3D Engine Animation Edi
   customize input weights when blending a number of input nodes. '
 title: Blend N Node
 ---
-# Blend N Node {#animation-editor-blending-blend-n}
 
 The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter to determine which inputs to use and their weights\. You can specify any type of parameter into the **Weight** input of a **Blend N** node\.
 

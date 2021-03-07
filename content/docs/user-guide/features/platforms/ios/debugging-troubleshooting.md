@@ -2,8 +2,8 @@
 description: ' Debug your iOS application using Xcode and O3DE source code. Troubleshoot
   the various steps to build assets, shaders, and your iOS application. '
 title: iOS Debugging and Troubleshooting
+weight: 700
 ---
-# iOS Debugging and Troubleshooting {#ios-debugging-troubleshooting}
 
 O3DE provides full access to the source code, which allows you to debug your iOS application using Xcode without additional O3DE\-specific steps to follow\. For information about debugging and profiling your iOS application, see [Debugging](https://developer.apple.com/support/debugging/) in the official Apple developer documentation\.
 

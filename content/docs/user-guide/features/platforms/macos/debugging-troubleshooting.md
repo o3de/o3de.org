@@ -2,11 +2,8 @@
 description: ' Debug your macOS application using Xcode and O3DE source code. Troubleshoot
   the various steps to build assets, shaders, and your macOS application. '
 title: macOS Debugging and Troubleshooting
+weight: 500
 ---
-# macOS Debugging and Troubleshooting {#osx-debugging-troubleshooting}
-
-
-****
 
 |  |
 | --- |

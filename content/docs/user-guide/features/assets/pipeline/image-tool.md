@@ -3,7 +3,6 @@ description: ' Use the Resource Compiler image tool to manually select an image
   processing preset in Open 3D Engine and then save the settings to source control. '
 title: Using the Resource Compiler Image Tool
 ---
-# Using the Resource Compiler Image Tool {#asset-pipeline-images-using-resourcecompiler-image-tool}
 
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands\.
 

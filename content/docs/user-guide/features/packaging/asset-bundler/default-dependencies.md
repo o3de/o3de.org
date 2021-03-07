@@ -2,8 +2,8 @@
 description: ' Edit and update default dependency files to ensure that game-wide assets
   are always packaged as part of a bundle. '
 title: Default dependencies for O3DE projects
+weight: 600
 ---
-# Default dependencies for O3DE projects {#asset-bundler-default-dependencies}
 
  Throughout your O3DE project you'll use assets across multiple levels, or find those that need to be included whether or not they're a strict dependency\. To handle these use cases, O3DE supports *default dependency files* which define assets that are always required when bundling your project\. Default dependencies are also used by Gems to make sure their own critical assets are always included\.
 

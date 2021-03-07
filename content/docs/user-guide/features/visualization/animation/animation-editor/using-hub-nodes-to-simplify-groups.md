@@ -3,10 +3,6 @@ description: ' Use Hub nodes in Open 3D Engine''s Animation Editor to simplify t
   between groups of nodes in an animation graph. '
 title: Simplify Node Groups with Hub Nodes
 ---
-# Simplify Node Groups with Hub Nodes {#animation-editor-using-hub-nodes-to-simplify-groups}
-
-
-****
 
 |  |
 | --- |

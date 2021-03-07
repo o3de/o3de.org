@@ -1,11 +1,8 @@
 ---
 description: ' Use O3DE to build game assets for your macOS games. '
 title: Building Game Assets for macOS Games
+weight: 200
 ---
-# Building Game Assets for macOS Games {#osx-assets-building}
-
-
-****
 
 |  |
 | --- |

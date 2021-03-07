@@ -3,7 +3,6 @@ description: ' Use the NullVR Gem in Open 3D Engine to run your level through th
   without having a VR device connected. This gem is useful for VR graphics debugging. '
 title: NullVR Gem
 ---
-# NullVR Gem {#gems-system-gem-nullvr}
 
 Use the NullVR gem to run your level through the head\-mounted displays \(HMD\) framework without a connected VR device\. This gem is useful for VR graphics debugging\.
 

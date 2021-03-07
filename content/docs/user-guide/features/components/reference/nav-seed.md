@@ -3,7 +3,6 @@ description: ' Use the Navigation Seed component to generate a color-coded marku
   that indicates where your AI can travel in Open 3D Engine. '
 title: Navigation Seed
 ---
-# Navigation Seed {#component-nav-seed}
 
 The **Navigation Seed** component marks chunks of the [**Navigation Area**](/docs/user-guide/features/components/nav-area.md) that are accessible to AI agents\. Game developers can use this component as a visual aid to determine where AI agents can go\.
 

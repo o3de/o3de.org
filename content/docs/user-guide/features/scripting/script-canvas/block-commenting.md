@@ -2,7 +2,6 @@
 description: ' Use the Open 3D Engine Script Canvas editor to add comments to your script. '
 title: Commenting Nodes
 ---
-# Commenting Nodes {#script-canvas-block-commenting}
 
 You can add comments to your script to describe how it works\.
 

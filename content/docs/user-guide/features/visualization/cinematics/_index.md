@@ -3,7 +3,6 @@ description: ' Learn how Open 3D Engine supports cinematics and scripted event s
 linktitle: Cinematics
 title: Create cinematic sequences
 ---
-# Create cinematic sequences {#cinematics-intro}
 
 Cinematics, also known as sequences or cutscenes, are interactive movie animations with time\-dependent control over objects and events\. You can use O3DE to add cutscenes to your game\.
 

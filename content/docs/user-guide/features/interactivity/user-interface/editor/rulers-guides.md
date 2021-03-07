@@ -3,7 +3,6 @@ description: ' Use Rulers and Guides in Open 3D Engine''s UI Editor to visually
   guide the placement of game UI elements on your UI canvas. '
 title: Rulers and Guides
 ---
-# Rulers and Guides {#ui-editor-rulers-guides}
 
 Use **Rulers** and **Guides** to visually guide the placement of your UI elements on your UI canvas\.
 

@@ -1,51 +1,49 @@
 ---
-description: ' Use the NVIDIA Cloth gem to add cloth simulation to your Open 3D Engine
-  project. '
-title: NVIDIA Cloth gem
+description: ' Create realistic simulated cloth and fabric in Open 3D Engine with NVIDIA
+  Cloth. '
+linktitle: NVIDIA Cloth
+title: Simulate cloth with NVIDIA Cloth
+weight: 300
 ---
-# NVIDIA Cloth gem {#nvidia-cloth}
-
-
-****
 
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Physical cloth simulations can create more immersive environments and characters\. The **NVIDIA Cloth** gem uses the NVIDIA Cloth library to provide fast, robust cloth simulation in Open 3D Engine\.
+ With **NVIDIA Cloth** in Open 3D Engine you can create realistic cloth simulations for entities that contain **Actor** or **Mesh** components\. The **NVIDIA Cloth** gem provides a component you can use to simulate cloth on any mesh that has been processed with a **Cloth** modifier applied in **FBX Settings**\.
 
-For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/intro.md)\.
+To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/features/interactivity/physics/nvidia-cloth/_index.md)\.
 
-## Functionality provided by the NVIDIA Cloth gem {#nvidia-cloth-functionality}
+## NVIDIA Cloth features {#nvidia-cloth-features}
 
-The NVIDIA Cloth gem provides the following:
-+ **Cloth** modifier for Mesh and Actor import in **FBX Settings**\.
-+ **Cloth** component for entities that contain a **Mesh** or **Actor** component\.
-+ Cloth colliders that can be added to actors in **Animation Editor**\.
-+ Mesh and Actor example assets and slices located in: *lumberyard\_version*\\dev\\Gems\\NvCloth\\Assets\\
-+ A public C\+\+ API that allows other systems and gems to access cloth simulation functionality\.
+****
++ Apply cloth data to meshes imported from `.fbx` files\.
++ Add cloth simulation to entities containing **Mesh** and **Actor** components\.
++ Cloth mesh simplification and static triangle removal allow you to use complex cloth meshes and yield faster cloth simulation\.
++ Define **Inverse mass**, **Motion constraints**, and **Backstop** per cloth particle with vertex color streams you create\.
++ Blend between cloth simulation and actor keyframe animation with motion constraints\.
++ Add cloth colliders to actors with **Animation Editor**\.
++ Add local wind forces to your cloth simulations or use force regions to simulate wind\.
++ Simulate cloth in parallel across available CPU cores, or simulate cloth on a discrete GPU that supports NVIDIA CUDA \(Windows 10 only\)\.
++ **NVIDIA Cloth** gem's public API allows other systems and gems to access cloth simulation functionality\.
++ Debug cloth simulations and constraints with real\-time cloth debug visualizations\.
 
-## Enable the NVIDIA Cloth gem {#enable-gem-nvidia-cloth}
+## Using NVIDIA Cloth {#nvidia-cloth-topics}
 
-To enable the NVIDIA Cloth gem, do the following:
+[Cloth component](/docs/user-guide/features/components/cloth.md) \- Cloth component reference\.
 
-**Note**
-By default, NVIDIA Cloth simulation is performed on the CPU\. To enable GPU accelerated simulation for NVIDIA Cloth, follow the installation instructions here: [GPU cloth simulation with NVIDIA CUDA](/docs/user-guide/features/interactivity/physics/nvidia-cloth/gpu.md)
+[Cloth for Mesh components](/docs/user-guide/features/interactivity/physics/nvidia-cloth/meshes.md) \- Create cloth for entities containing **Mesh** components\.
 
-1. Use [Project Configurator](/docs/userguide/configurator/projects.md) to add the **NVIDIA Cloth** gem to your project\. The **NVIDIA Cloth** gem requires the following gems as dependencies:
-   + **LmbrCentral**
-   + **Emotion FX Animation**
+[Cloth for Actor components](/docs/user-guide/features/interactivity/physics/nvidia-cloth/actors.md) \- Create cloth for entities containing **Actor** components\.
 
-1. Configure your project\. Use the following command\.
+[Per vertex properties for cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/vertex-data.md) \- Use per vertex properties to define the **Inverse mass**, **Motion constraints**, and **Backstop** to create higher quality and more predictable cloth simulations\.
 
-   ```
-   lmbr_waf configure
-   ```
+[Cloth simulation constraints](/docs/user-guide/features/interactivity/physics/nvidia-cloth/constraints.md) \- An overview of how **Motion constraints** and **Backstop** work to improve the results of cloth simulations\.
 
-1. Build your project\. Use the following command\.
+[Cloth visual debugger](/docs/user-guide/features/interactivity/physics/nvidia-cloth/debugging.md) \- Enable the visual debugger for cloth simulations\.
 
-   ```
-   lmbr_waf build_win_x64_vs2019_profile -p all --progress
-   ```
+[GPU cloth simulation with NVIDIA CUDA](/docs/user-guide/features/interactivity/physics/nvidia-cloth/gpu.md) \- Install NVIDIA CUDA to enable GPU acceleration for NVIDIA Cloth\.
 
-For more information on gems, see the [Gems system documentation](/docs/user-guide/features/gems/_index.md)\.
+## NVIDIA Cloth references {#component-cloth-references}
+
+ [NVIDIA Cloth documentation](https://gameworksdocs.nvidia.com/NvCloth/1.1/index.html) at the NVIDIA GAMEWORKS developer portal\.

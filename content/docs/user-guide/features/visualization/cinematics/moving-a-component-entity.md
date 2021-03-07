@@ -3,7 +3,6 @@ description: ' Move a component entity for a sequence in the <guilabel>Track Vie
   Open 3D Engine. '
 title: Moving a Component Entity in a Sequence
 ---
-# Moving a Component Entity in a Sequence {#cinematics-moving-a-component-entity}
 
 Each component entity has a **Transform** component\. By default, when you add a component entity to a sequence, the **Position** and **Rotation** tracks appear automatically\. You can manipulate the **Position** and **Rotation** properties for the component entity in a sequence\. You can also add the **Scale** track if you want to manipulate the overall size of the component entity\.
 

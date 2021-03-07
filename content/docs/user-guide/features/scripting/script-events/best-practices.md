@@ -1,8 +1,9 @@
 ---
 description: ' Learn best practices for using script events in Open 3D Engine. '
-title: Script Events Best Practices
+linktitle: Best practices
+title: Script events best practices
+weight: 400
 ---
-# Script Events Best Practices {#script-events-best-practices}
 
 The following are some best practices for using script events\.
 

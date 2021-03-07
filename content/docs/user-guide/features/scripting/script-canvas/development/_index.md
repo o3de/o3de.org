@@ -2,7 +2,6 @@
 description: ' Create a custom node that you can use in O3DE''s Script Canvas. '
 title: Creating Custom Nodes in Script Canvas
 ---
-# Creating Custom Nodes in Script Canvas {#script-canvas-custom-nodes}
 
 Script Canvas uses the [behavior context](/docs/userguide/components/entity-system-reflection-behavior-context.md)\. The preferred way to expose functionality in Script Canvas is through behavior context bindings\. Behavior context bindings make functionality available to any scripting solution \(such as Lua\) that also uses the behavior context\. However, if you want to create Script Canvas-specific functionality or customized visual scripting experiences, you can use the Script Canvas custom node API\.
 

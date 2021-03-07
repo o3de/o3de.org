@@ -3,7 +3,6 @@ description: ' Use the Open 3D Engine Asset Browser to quickly view and access y
   project assets. '
 title: 'Asset Browser'
 ---
-# Asset Browser {#asset-browser-intro}
 
 The **Asset Browser** displays all project assets in a source folder and file view to enable quick access and interaction\. You can use the **Asset Browser** with other editor components to improve your development workflow, such as the viewport and the **Entity Inspector**\.
 
