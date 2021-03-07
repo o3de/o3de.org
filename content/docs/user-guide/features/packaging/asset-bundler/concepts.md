@@ -2,9 +2,9 @@
 description: ' Learn about O3DE Asset Bundler terms and concepts. The Asset Bundler
   helps make the process of bundling the necessary assets for a game release more
   efficient. '
-title: 'Asset Bundler Concepts and Terms'
+title: Concepts and Terms
+weight: 700
 ---
-# Asset Bundler Concepts and Terms {#asset-bundler-concepts}
 
 The following terms and concepts relate to the O3DE Asset Bundler:
 

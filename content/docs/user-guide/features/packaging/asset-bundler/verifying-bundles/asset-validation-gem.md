@@ -2,8 +2,8 @@
 description: ' Use the Asset Validation gem''s seed mode in O3DE to ensure that your
   game assets are properly bundled. '
 title: Using the Asset Validation Gem to Verify Seeds
+weight: 200
 ---
-# Using the Asset Validation Gem to Verify Seeds {#asset-bundler-asset-validation-gem}
 
 After you've built a seed list but before you bundle, you can use the Asset Validation gem to verify that asset loads map back to seeds\. The Asset Validation gem adds a set of seed\-related commands to the O3DE console command window\. You can use these commands to ensure that you have seeds for all assets that you want to bundle\.
 

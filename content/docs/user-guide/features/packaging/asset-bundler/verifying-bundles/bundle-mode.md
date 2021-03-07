@@ -2,8 +2,8 @@
 description: ' Use bundle mode to ensure that your asset bundles have the required
   assets for your O3DE game. '
 title: Using Bundle Mode to Test Bundles
+weight: 300
 ---
-# Using Bundle Mode to Test Bundles {#asset-bundler-bundle-mode}
 
 Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets\. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules\. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build\.
 
