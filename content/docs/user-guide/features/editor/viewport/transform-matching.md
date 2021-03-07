@@ -1,8 +1,8 @@
 ---
 description: ' Match the transform properties for entities in Open 3D Engine. '
 title: Matching the Transform
+weight: 400
 ---
-# Matching the Transform {#transform-matching}
 
 Instead of manually copying values from one entity's position to another, you can use the ditto feature to share an entity's transform data from one entity to another\. This feature enables you to duplicate the same transform data for your entities\. For example, to make your child entities face the same direction, you can select the entities and use the ditto feature to apply the change to the entities at once\.
 

@@ -3,7 +3,6 @@ description: ' Use the console window in O3DE Editor to update the value for con
   variables or type commands. '
 title: Using the Console Window
 ---
-# Using the Console Window {#console-intro}
 
 In O3DE Editor, the console window shows a running list of all editor commands, processes, and output\. For example, when you delete an entity, the console shows the action and the output\. You can use the console to enter or modify console variables \(CVARs\)\. Console variables are a type of variable that you can manipulate in O3DE Editor\.
 
