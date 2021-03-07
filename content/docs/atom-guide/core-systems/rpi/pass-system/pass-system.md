@@ -40,6 +40,7 @@ Passes are created from a parent pass, which is the root of this pass hierarchy.
 
 ### Pass
 A **pass** (`Pass`) is at the center of Atom's Pass System. All pass logic (data-driven or hard-coded) contains some elements that inherit from this class.  
+
 #### Attachments
 Passes use RHI attachments like textures, buffers and render targets. These attachments are organized into three categories: Input, Output and InputOutput.
   * **Input**:  If a pass reads an attachment and does not write to it, then the attachment slot should be an Input. For example, for SSAO, the depth buffer is as an Input because the contents only need to be read. 

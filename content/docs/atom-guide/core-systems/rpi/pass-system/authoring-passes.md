@@ -18,7 +18,7 @@ Before you begin authoring passes, it's important to understand the Pass System 
 ### Root Pass
 At the basis of the pass system is a **root pass**, which begins the tree of nested child passes. Each pass is registered within its parent pass to establish the overall context of the passes. A pass can be either a render pass or a sub-root with nested child passes. 
 
-By default, the root pass in Atom's main renderer is *MainPipeline.pass*. This can be changed in the pipeline asset file *MainRenderPipeline.azasset*. (The pipeline asset file can also be changed in the file *dev/bootstrap.cfg* via the parameter `m_defaultPipelineAssetPath`)
+By default, the root pass in Atom's main renderer is *MainPipeline.pass*. You can change the root pass in Atom's default pipeline asset file *MainRenderPipeline.azasset*. Furthermore, if you want to change Atom's default pipeline asset, edit the `m_defaultPipelineAssetPath` parameter in the file `bootstrap.cfg`.
 
 ### Pass Registry
 The **pass registry** contains the registry of all possible passes. In order to use a pass in a pipeline, they must be included in the pass registry. Note that the pass registry can contain passes that are never used. You can add a pass into the pass registry file *PassTemplates.azasset* by including the name of the pass template and a path to the *.pass* file through the `Name` and `Path` properties. 
@@ -58,7 +58,7 @@ In Atom's main render pipeline, the root pass contains most of the children pass
 
 
 ## Authoring a PassTemplate
-A **PassTemplate** (*PassTemplate.h*) is used to instantiate a **Pass** (see *Pass.h*). It specifies inputs and outputs for a Pass as well as any **PassAttachments** (see *PassAttachment.h*) owned by that Pass. It can be authored in code as C++ or in data as a JSON file (with a *.pass* extension).
+A **PassTemplate** (see *PassTemplate.h*) is used to instantiate a **Pass** (see *Pass.h*). It specifies inputs and outputs for a Pass as well as any **PassAttachments** (see *PassAttachment.h*) owned by that Pass. It can be authored in code as C++ or in data as a JSON file (with a *.pass* extension).
 
 When PassTemplates are authored as data (`.pass`), they are serialized as a PassAsset. A **PassAsset** (see *PassAsset.h*) is a thin wrapper around a PassTemplate that the asset system uses for serialization.
 
