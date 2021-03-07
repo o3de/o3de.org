@@ -27,16 +27,14 @@ Download the required software for your platform before setting up Atom.
 * You have installed the latest version of **Xcode**.
 * You have installed **CMake** and synced to all required 3rd party libraries.
 
-<!-- For installing VS 2019, see [Visual Studio 2019 for Atom](/setup/installing-vs2019.md).
-For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
- -->
+To install Visual Studio 2019, [get it from Microsoft](https://visualstudio.microsoft.com/downloads/). For CMake, [download and install](https://cmake.org/download/) and then check out the [O3DE build documentation](/docs/user-guide/features/build).
 
 ### PC
 #### Running Atom Sample Viewer
    
 1. Open the file */dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
    
-2. Launch Atom Sample Viewer by running *AtomSampleViewerStandalone.exe* from the folder */dev/windows_vs2019/bin/profile/*.  
+2. Launch Atom Sample Viewer by running *AtomSampleViewerStandalone.exe* from the folder `dev/windows_vs2019/bin/profile/`.  
 
     If this is your first time launching *AtomSampleViewerStandalone.exe*, the Asset Processor application will open and begin processing assets for Atom Sample Viewer. Verify that the Asset Processor is building the required assets by checking that its status reads "Status: Working".
     
@@ -59,7 +57,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
 1. Open the file */dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=AtomTest`
 
-2. Launch the O3DE Editor application by running *Editor.exe* from the folder */dev/windows_vs2019/bin/profile/*. 
+2. Launch the O3DE Editor application by running *Editor.exe* from the folder `dev/windows_vs2019/bin/profile/`. 
    
    If this is your first time in the Editor, the Asset Processor application will open and begin processing assets for the Editor. (You can verify that the Asset Processor is building the required assets by checking that its status reads "Status: Working".) 
    
@@ -75,14 +73,14 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
 #### Building From Source (VS 2019)
 
-1. Open a command prompt and navigate to the folder */dev/*.
+1. Open a command prompt and navigate to the folder `dev/`.
    
-2. Create a folder named “windows_vs2019” in the folder */dev/* if it does not already exist.
+2. Create a folder named “windows_vs2019” in the folder `dev/` if it does not already exist.
    
-3. Prepare Atom’s build system using CMake. Navigate to the folder */dev/windows_vs2019* and run the following command:  
-    `cmake .. -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLY_3RDPARTY_PATH=<atom-build>\3rdParty\ -DLY_PROJECTS="AtomTest;BaseViewer"`
+3. Prepare Atom’s build system using CMake. Navigate to the folder `dev/windows_vs2019` and run the following command:  
+    `cmake .. -G "Visual Studio 16 2019" -A x64 -T host=x64 -DLY_3RDPARTY_PATH=<3rdparty-libs-dir> -DLY_PROJECTS="AtomTest;BaseViewer"`
 
-    *Note: Replace `<atom-build>` with your path to the Atom build folder.*
+    *Note: Replace `<3rdparty-libs-dir>` with your path to the 3rd party library folder.
 
 4. When CMake finishes building, open the Open 3D Engine (O3DE) solution. If it’s your first time to open the O3DE solution, it will default to the Debug configuration. It is highly recommended you use the Profile configuration instead.
    
@@ -137,11 +135,11 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
    
 1. Open the file */dev/bootstrap.cfg* in a text editor and ensure that the `sys_game_folder` variable is set exactly as follows: `sys_game_folder=BaseViewer`
 
-2. Open Terminal and navigate to the folder */dev/*.
+2. Open Terminal and navigate to the folder `dev/`.
    
 3. Make sure that you have proper permissions by running the following command in the Terminal: `chmod +x Tools/Python/python3.sh`
    
-4. Create a folder named “mac_xcode” in the folder */dev/* if it does not already exist.
+4. Create a folder named “mac_xcode” in the folder `dev/` if it does not already exist.
    
 *Note: For the commands in the steps below, replace `<atom-build>` with your path to the Atom build folder.*
 
@@ -150,7 +148,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
 6. Build Atom using CMake by running the following command: `cmake --build <atom-build>/dev/mac_xcode --target AtomSampleViewerStandalone --config profile`
 
-7. Launch the Asset Processor to build required assets by running *AssetProcessor* from the folder */dev/mac_xcode/bin/profile/*.
+7. Launch the Asset Processor to build required assets by running *AssetProcessor* from the folder `dev/mac_xcode/bin/profile/`.
     
     *Note: You are prompted to allow multiple files without a known publisher through the Mac OS "Security and Privacy" control panel. This is due to code signing issues on Mac that will be addressed in future Atom versions.*
 
@@ -160,7 +158,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
 
     *Note: Avoid running a sample in Atom Sample Viewer while the Asset Processor is still building. The application might crash.*
 
-9.  Run *AtomSampleViewerStandalone* from the folder */dev/mac_xcode/bin/profile/*. 
+9.  Run *AtomSampleViewerStandalone* from the folder `dev/mac_xcode/bin/profile/`. 
     
 10. Test out the various RHI, RPI, and Feature samples.  
     
@@ -176,11 +174,11 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
    
 2. Open the file *AssetProcessorPlatformConfig.ini* in a text editor and set the ios variable: `ios = enabled`
    
-3. Navigate to the folder */dev/mac_xcode/bin/profile/* and run *AssetProcessor*. This opens the Asset Processor application and builds the required iOS assets.
+3. Navigate to the folder `dev/mac_xcode/bin/profile/` and run *AssetProcessor*. This opens the Asset Processor application and builds the required iOS assets.
    
-4. Create a new folder named "gems" in the folder */dev/Cache/BaseViewer/ios/*. 
+4. Create a new folder named "gems" in the folder `dev/Cache/BaseViewer/ios/`. 
    
-5. Create a new folder named “ios_xcode” in the folder */dev/* if it does not already exist.
+5. Create a new folder named “ios_xcode” in the folder `dev/` if it does not already exist.
    
 6. Set Atom’s build folder using CMake by running the following command:
      `cmake -B <atom-build>/dev/ios_xcode -G "Xcode" -DCMAKE_TOOLCHAIN_FILE=cmake/Platform/iOS/Toolchain_ios.cmake -DLY_MONOLITHIC_GAME=1 -DLY_3RDPARTY_PATH=<atom-build>/3rdParty/ -DLY_PROJECTS="BaseViewer" -DLY_UNITY_BUILD=ON`
@@ -188,7 +186,7 @@ For installing CMake, see [CMake for Atom](/setup/installing-cmake.md).
     *Note: Replace `<atom-build>` with your path to the Atom build folder.*
 
 
-7. Open the generated Xcode solution located in the folder */dev/mac_xcode* and use it to build and deploy to your device.
+7. Open the generated Xcode solution located in the folder `dev/mac_xcode` and use it to build and deploy to your device.
 
    
 8. Test out the various RHI, RPI, and Feature samples.  
