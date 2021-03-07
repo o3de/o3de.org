@@ -18,55 +18,46 @@ Interested? Want to get started?
 
 ![\[Learn more about O3DE's systems and features in the Open 3D Engine User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
 
-## Open 3D Engine Features
+<!-- DougEric Note: Replace this page with a proper Nav page and move this content to a features.md page or the what-is page later. -->
 
-HIGH LEVEL MARKETING TYPE DESCRIPTION HERE
+## Open 3D Engine Features
 
 ### Fully Open Source
 
+Open 3D Engine is fully open sourced under the Linux Foundation. Use the currently provided binaries and tools, or fork the code and extend it! 
+
 ### Modern Physically Based Renderer
 
-The new Atom graphics engine is a highly flexible, data-driven, and modern physically based renderer that can be extended for a wide variety of visual and performance needs.
+The new [Atom graphics engine](atom-guide) is a highly flexible, data-driven, and modern physically based renderer that can be extended for a wide variety of visual and performance needs.
 
 Some of the features include:
 
-+ Vulkan, Metal, DX 12 Raytracing support to unified language with HLSL compatibility
-extended to AZSL for flexibility to allowing exporting per rendering backend.
-+ Render pipeline Interface allows creation of forward+, deferred or hybrid
-renderer through pass system
-+ No limitations, customizable render passes to match mobile, PC and Cloud
-hardware restrictions.
-+ Global Illumination allows forward or deferred on per mesh / per material basis
-with MSAA/SSAO/SSR support
-+ No restrictions on resolution sizes for reflection cubemaps
-+ Support for parallax correction, mixed reflections per render pass,
-runtime editing / vis for light artists
 + Fully multi-threaded and modular renderer with future distributed rendering support
++ Vulkan, Metal, and DirectX 12 raytracing support
++ Unified, flexible AZSL language with HLSL compatibility
++ Render Pipeline Interface (RPI) allows for forward+, deferred, or hybrid
+renderer models
++ No limitations! Create customizable render passes to match mobile, PC, console, and cloud hardware profiles
++ Global illumination model allows forward or deferred rendering (per-mesh and per-material) with MSAA/SSAO/SSR support
++ No restrictions on resolution sizes for reflection cubemaps
++ Support for parallax correction, mixed reflections per render pass, and runtime editing for lighting artists
 
 New features are being added by the community regularly. Read the [Atom Documentation](/docs/atom-guide) to find out more!
 
 ### Modular Engine and Components
 
-+ No need to adopt entire engine, completely separable with standard interfaces
-+ All objects are now Gems / libraries including core
-+ Adopt the objects you want to use with your current stack or reduce tech debt
-+ Precompiled binary, library, and header support for engine modules and gems.
-+ Adding or removing precompiled gems do not require recompile on
-project changes
-+ Upgrading to new engine versions only require resolving any compile
-issues in project code.
-+ Easily customize engine components and replace prebuilt components
-with specific custom modules
++ Take only the bits your project needs! No need to adopt the entire engine, as all objects are now Gems (libraries with standard interfaces), including Core O3DE modules and components
++ Precompiled binary, library, and header support for engine modules and Gems. Adding or removing precompiled Gems do not require project recompilation. Upgrading to new engine versions only require resolving any compile issues in project code.
++ Easily customize engine components and replace prebuilt Gems with your own custom modules!
 
-For more information, see [Using Asset Processor](/docs/user-guide/features/assets/processor.md)\.
+For more information, see [the O3DE Gems documentation](/docs/user-guide/gems)\.
 
 ### Build with Familiar Tools
 
-+ New standard CMAKE build system, includes support for: CTest, Gems, and automated code generation
-+ Projects generated are native IDE projects (VS, Xcode , make / etc
-+ Enables Edit and Continue and profiling with tool support
-+ Saves time w/proper dependency tree to build target of choice
-and only actual dependencies
++ New standard CMAKE build system, which includes support for: CTest, O3DE Gems, and automated code generation
++ Projects generated are native IDE projects (Visual Studio 2017/2019, XCode, make, and others)
++ Enables **Edit and Continue** and profiling support (depending on your IDE or tools)
++ Proper dependency tree model to build only your targets of choice, with the correct dependencies
 
 For more information, see the following topics:
 
@@ -74,94 +65,78 @@ For more information, see the following topics:
 
 ### Industry Standard Hardware Accelerated Physics
 
-+ Nvidia PhysX as default, no cry physics
-+ Data driven design for frontend/backend with independent simulation
++ NVIDIA PhysX is the default physics library
++ Data-driven design for frontend and backend computations, with independent simulation
 + Physics API system separable for replacement or customization
 
 ### Script Canvas 2.0&mdash;Visual Scripting for Everyone
 
-+ 350% faster than 1.0 with JIT optimizations
-+ Compiles to Python / LUA and with future native code support
-+ Reusable rapid prototyping without need for rewrite due to optimized output.
++ JIT optimizations for a 350% peroformance improvement over Amazon Lumberyard 1.X
++ Scripts compiles to both Python and LUA; C++ support planned
++ Perform reusable rapid prototyping without rewriting the scripts due to optimized output
 
 ### Robust Networking
 
-+ Highly flexible, TCP/UDP low latency transport layer abstracted behind simple API
-+ Encryption and compression support with built in simulator for latency, jitter, reorder & loss
++ Highly flexible, TCP/UDP low-latency transport layer abstracted behind a simple API
++ Encryption and compression support with a built-in simulator for packet latency, jitter, reordering, and loss
 + Entity replication using unordered unreliable data replication for lowest possible latency
-+ Supports player hosted and dedicated server models
-+ Local prediction latency compensation, backward reconciliation for server authority
-+ Detachable player behaviors supporting automated desync detection and correction
-+ RPC and future elastic fault tolerant multiserver support with same
-prediction and reconciliation
++ Supports player-hosted and dedicated server models
++ Local prediction latency compensation, as well as backward reconciliation for server authority
++ Supports detachable player behaviors with automated desync detection and correction
 
-For more information, see [Using O3DE Networking](/docs/userguide/networking/intro.md)\.
+For more information, read [O3DE Networking](/docs/userguide/networking/intro.md)\.
 
 ### Improved Asset Workflows and Handling
 
-+ JSON based material creation and control
++ JSON-based material creation and management
 + Asset Processor startup time reduced to seconds
-+ EMFX uses new shared file format for mesh and characters
++ EMFX uses new shared file format for meshes and characters
 + Optimized for modern GPU and streaming
 + Full support for asynchronous loading of any asset type with blocking load support
-+ Reduction of CPU load, memory usage and overall load times.
++ Reduction of CPU load, memory usage, and overall load times.
 
 ### Native Prefab Support
 
-+ Reusable assets with complete properties, components and hierarchies
++ Reusable assets with complete properties, components, and hierarchies
 + Mergeable and diffable human readable text format
-
-For more information, see [Add modular features and assets with Gems](/docs/user-guide/features/gems)\.
++ Dynamic placement and management of spawnables
 
 ### Python-based UI and Media Tools
 
-+ Python extensions with access to Qt for Python enabling custom editor components
-+ Asset builder manipulation with pre/post process step python bindings
-to modify in flight processing
-+ Custom behavior for FBX & material processing to split, assign, & rehome assets
-
-For more information, see [Adding Audio and Sound Effects](/docs/user-guide/features/interactivity/audio/intro.md)\.
++ Python extensions with access to Qt for Python, enabling custom editor components
++ Asset builder manipulation with pre- and post-process step bindings, so you can modify processing at runtime
++ Custom behavior for FBX and material processing to split, assign, and rehome assets
 
 ## High-performance Math Libraries
 
-+ `AZ::Simd` API produces optimal SIMD code for x64 SSE, ARM or pure scalar code
++ All-new high-peformance math libraries with full SIMD support
++ `AZ::Simd` API produces optimal SIMD code for x64 SSE, ARM Neon, or pure scalar code
 for fallback compatibility
-+ `AZ::Transform` has separate position, quaternion orientation, and scale fields to
-remove conversions needs
++ `AZ::Transform` has separate position, quaternion orientation, and scale fields
 
 ### Simplified Project Management
 
-+ Project and gem management greatly simplified with Cmake and JSON
++ Project and Gem management greatly simplified with CMake and JSON
 + Gems enabled in one line update to project JSON
-+ DLLs and enabled components defined in self described gem JSON
-+ Simple Python scripts for automation and creation of gems and projects
++ DLLs and enabled components defined in self-described Gem JSON
++ Simple Python scripts for automation and creation of Gems and projects
 
 ### Core APIs
 
-+ AZ::Interface replacement for global single handler EBuses used for rendering,
-physics and audio
-+ 500% faster then EBus w/ direct function calls against interface & autocomplete support
-+ AZ::Event 200% faster than Ebus using C# event design patterns,
-replaces notification buses
-+ AZ:: ScheduledEvent using timeslicing and priority queue with simple scheduling
-for no starvation
-+ AZ::Console support network sync cvars w/ thread safe mock of mutated
-raw var types by other threads
++ [AZ::Interface](/docs/user-guide/az-interface) replacement for global single-handler EBuses used for rendering, physics, and audio
++ 500% faster then EBus with direct function calls against interface, plus autocomplete support
++ [AZ::Event](/docs/user-guide/az-event) 200% faster than EBus using C# event design patterns, and which replaces notification buses
++ AZ::ScheduledEvent using timeslicing and priority queue with simple scheduling for no starvation
++ [AZ::Console](/docs/user-guide/az-console) supports the thread-safe network sync of console variables (cvars)
 
 ### Flexible Automation
 
-+ Replaces AzCodeGenerator improved expansion times by 10,000% with no custom
-binary requirements
-+ Integrated into cmake to allow data files and templates with expansion rules in cmake.txt
++ Replaces AzCodeGenerator improved expansion times by 10,000% with no custom binary requirements
++ Integrated into CMake to allow data files and templates with expansion rules in cmake.txt
 + Regex/wildcard match and replacement rules to support individual or bulk file processing
-+ Data driven, can be fed xml or json documents, uses jinja2 as a templating language
++ Data-driven using XML or JSON documents, and uses **jinja2** as a templating language
 
 ### White Box Tool
 
 + Fast creation and manipulation of geometric volumes for rapid prototyping
 
-### AWS SDK for C\+\+ {#lumberyard-aws-sdk}
-
-The AWS SDK for C\+\+ provides C\+\+ API operations for numerous AWS services including Amazon S3, Amazon EC2, Amazon DynamoDB, and more, with support for all major native platforms\. You can use the SDK to integrate AWS components into your game\.
-
-For more information, see the [AWS SDK for C\+\+](https://aws.amazon.com/sdk-for-cpp/)\.
