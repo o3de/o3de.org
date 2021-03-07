@@ -2,11 +2,8 @@
 description: ' Use the NVIDIA Cloth component to add cloth simulation to Actor components
   in Open 3D Engine. '
 title: Cloth for Actor components
+weight: 200
 ---
-# Cloth for Actor components {#nvidia-cloth-actors}
-
-
-****
 
 |  |
 | --- |

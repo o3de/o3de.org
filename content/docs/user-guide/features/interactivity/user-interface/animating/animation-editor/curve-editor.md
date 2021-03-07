@@ -3,7 +3,6 @@ description: ' Use the Curve Editor in Open 3D Engine''s UI Animation editor to 
   the way floating point values vary over time. '
 title: Using the Curve Editor in the UI Animation Editor.
 ---
-# Using the **Curve Editor** in the UI Animation Editor\. {#ui-animation-curve-editor}
 
 The ****Curve Editor**** displays animations as function curves\. Each track's curves represent an animation of a property value \(such as anchor, offset, color, or any property of a UI element\)\.
 

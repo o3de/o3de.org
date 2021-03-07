@@ -3,7 +3,6 @@ description: ' Learn how to modify Lua script parameters in the Scripted Entity 
   system for Open 3D Engine. '
 title: Tweener Parameters
 ---
-# Tweener Parameters {#ui-animating-tweener-parameters}
 
 Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations\. Use the parameters with a [timeline](/docs/user-guide/features/user-interface/animating/tweener-timeline.md) for a variety of possibilities\.
 

@@ -2,7 +2,6 @@
 description: ' Learn how to use the game input system in Open 3D Engine. '
 title: Input
 ---
-# Input in Open 3D Engine {#input-intro}
 
 Use the information in this section to learn about game input in Open 3D Engine\.
 

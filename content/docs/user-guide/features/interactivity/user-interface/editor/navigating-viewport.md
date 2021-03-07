@@ -3,7 +3,6 @@ description: ' Use keyboard, mouse, or menu to navigate the UI Editor viewport
   in Open 3D Engine. '
 title: Navigating the Viewport
 ---
-# Navigating the Viewport {#ui-editor-navigating-viewport}
 
 The **UI Editor** features a rectangle with a checkerboard pattern on a dark gray background\.
 

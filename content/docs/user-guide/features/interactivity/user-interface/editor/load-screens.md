@@ -3,7 +3,6 @@ description: ' Create game and level loading screens with Open 3D Engine''s UI E
   and then add the canvas file paths to settings in the game.cfg and level.cfg files. '
 title: Defining Game and Level Load Screens
 ---
-# Defining Game and Level Load Screens {#ui-editor-load-screens}
 
 You can create a game or level loading screen with the **UI Editor**\. The game loading screen is displayed while the game loads\. The level loading screen is displayed while a level loads\. You can create and define a loading screen for each level\.
 

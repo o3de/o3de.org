@@ -2,7 +2,6 @@
 description: ' Set canvas properties for UI canvases in UI Editor in Open 3D Engine. '
 title: Configuring Canvas Properties
 ---
-# Configuring Canvas Properties {#ui-editor-canvas-properties}
 
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected\.
 

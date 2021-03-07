@@ -2,8 +2,8 @@
 description: ' Use Physics materials to customize how an object reacts when it hits
   a surface in your Open 3D Engine project. '
 title: Physics materials
+weight: 200
 ---
-# Physics materials {#physx-materials}
 
 Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution \(bounce\)\. In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**\. One library can store all the physics materials for a project or separate libraries can be made for different physics material types\.
 
