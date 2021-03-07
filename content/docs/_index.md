@@ -9,7 +9,6 @@ toc: true
 
 ![O3DE logo](images/shared/o3de-logo-1.svg)
 
-
 OVERALL ALL CONTENT LANDING PAGE
 
 Open 3D Engine (O3DE) is a fully open-source, high-performance engine for game, simulation, and multimedia creators.
@@ -26,3 +25,4 @@ identifying subpages.
 
 - [O3DE Code Contributor Guide](contributing/to-code)
 - [O3DE Documentation Contributor Guide](contributing/to-docs)
+- [API reference](api)
