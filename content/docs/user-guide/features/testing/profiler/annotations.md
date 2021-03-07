@@ -3,7 +3,6 @@ description: ' Use annotations in Profiler to flag per-frame log information fro
   the data you captured from your Open 3D Engine application. '
 title: Creating and Using Annotations
 ---
-# Creating and Using Annotations {#profiler-annotations-creating-and-using}
 
 ****
 Profiler is in preview release and is subject to change\.

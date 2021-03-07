@@ -1,9 +1,7 @@
 ---
-description: ' Use the O3DE Profiler to capture, save, and analyze network, CPU,
-  and VRAM usage statistics. '
+description: ' Use the O3DE Profiler to capture, save, and analyze network, CPU, and VRAM usage statistics. '
 title: Profiler
 ---
-# Profiler {#profiler-intro}
 
 ****
 Profiler is in preview release and is subject to change\.

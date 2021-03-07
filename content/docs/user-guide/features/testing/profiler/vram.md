@@ -3,7 +3,6 @@ description: ' Use the VRAM profiler in Open 3D Engine to determine which resour
   contributing most to runtime video memory usage in your game. '
 title: Using Profiler for VRAM
 ---
-# Using Profiler for VRAM {#profiler-vram}
 
 ****
 Profiler is in preview release and is subject to change\.
