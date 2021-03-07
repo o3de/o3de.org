@@ -1,8 +1,8 @@
 ---
 description: ' Configure and build an iOS game application using the O3DE build tools. '
 title: Building Your iOS App
+weight: 200
 ---
-# Building Your iOS App {#ios-game-building}
 
 Set up your build environment and build an app that can run on an iOS device\.
 

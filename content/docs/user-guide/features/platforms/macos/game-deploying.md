@@ -1,11 +1,8 @@
 ---
 description: ' Run a macOS game using the O3DE build tools. '
 title: Running macOS Games
+weight: 400
 ---
-# Running macOS Games {#osx-game-deploying}
-
-
-****
 
 |  |
 | --- |

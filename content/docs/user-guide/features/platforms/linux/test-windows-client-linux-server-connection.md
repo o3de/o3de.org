@@ -1,12 +1,10 @@
 ---
 description: ' Test the connection between the Windows client and the Linux server
   for Open 3D Engine. '
+linktitle: Client connection testing
 title: Testing the Windows Client to Linux Server Connection
+weight: 200
 ---
-# Testing the Windows Client to Linux Server Connection {#linux-test-windows-client-linux-server-connection}
-
-
-****
 
 |  |
 | --- |
