@@ -39,7 +39,7 @@ Atom supports many graphics features and rendering techniques that can enhance y
 - [Transparency](graphics-feature-samples.md#transparency)
 
 
-## [RHI Samples](rhi-samples.md)
+## [Rendering Hardware Interface (RHI) Samples ](rhi-samples.md)
 The following samples demonstrate the rendering capabilities in the RHI. 
 <!-- [WRITER NOTE] Elaborate intro-->
 - [Alpha to Coverage](rhi-samples.md#alpha-to-coverage)
@@ -69,7 +69,7 @@ The following samples demonstrate the rendering capabilities in the RHI.
 - [Triangle Constant Buffer](rhi-samples.md#triangle-constant-buffer)
 
 
-## [RPI Samples](rpi-samples.md)
+## [Rendering Pipeline Interface (RPI) Samples](rpi-samples.md)
 The following samples demonstrate the rendering capabilities in the RPI. 
 <!-- [WRITER NOTE] Elaborate intro-->
 - [Asset Load](rpi-samples.md#asset-load)
