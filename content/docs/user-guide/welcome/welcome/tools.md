@@ -1,9 +1,8 @@
 ---
 description: ' This section describes the O3DE''s editors and tools. '
 title: 'O3DE Editors and Tools'
+weight: 350
 ---
-# O3DE Editors and Tools {#lumberyard-tools}
-
 
 ****
 

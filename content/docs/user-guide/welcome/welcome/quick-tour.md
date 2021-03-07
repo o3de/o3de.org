@@ -1,6 +1,7 @@
 ---
-title: "Quick Tour"
+title: Quick tour
 date: 2021-03-01T20:01:17-05:00
-draft: true
+weight: 300
 ---
 
+Coming soon.

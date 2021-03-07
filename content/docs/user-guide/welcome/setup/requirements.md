@@ -2,8 +2,8 @@
 description: ' Learn more about the hardware, operating system, and software requirements
   for installing Open 3D Engine. '
 title: System requirements
+weight: 100
 ---
-# System requirements {#setting-up-system-requirements}
 
 O3DE has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\. If you have already installed O3DE, you can use O3DE Setup Assistant to see the requirements for the tools and features that you want for your O3DE development environment\. O3DE Setup Assistant provides information about installing third\-party software and SDKs on your computer\. For more information, see [Using O3DE Setup Assistant to Set Up Your Development Environment](/docs/userguide/lumberyard-launcher-intro.md)\.
 

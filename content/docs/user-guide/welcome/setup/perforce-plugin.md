@@ -2,8 +2,8 @@
 description: ' How to configure the Perforce Plugin to use Perforce as the source
   control solution to use with O3DE. '
 title: Using the Perforce Plugin with O3DE
+weight: 700
 ---
-# Using the Perforce Plugin with O3DE {#setting-up-lumberyard-perforce-plugin}
 
 O3DE integrates with Perforce as a source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.
 
