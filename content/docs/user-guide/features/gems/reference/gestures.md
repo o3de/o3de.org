@@ -3,7 +3,6 @@ description: ' Enable the Gestures gem for your game project to detect common ge
   input actions in Open 3D Engine. '
 title: Gestures Gem
 ---
-# Gestures Gem {#gems-system-gem-gestures}
 
 You can use the Gestures gem to recognize common gesture\-based input, which includes the following:
 + Tap or click - Single\-touch, discrete gesture

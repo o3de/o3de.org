@@ -2,7 +2,6 @@
 description: ' Create motion events for your game project in Open 3D Engine. '
 title: Creating Motion Events
 ---
-# Creating Motion Events {#char-animation-editor-custom-events-parameters-creating-motion-events}
 
 The `EMotionFX::MotionEvent` class inherits `EMotionFX::Event` and describes an event that happens at a specified time or range of time during a motion\.
 

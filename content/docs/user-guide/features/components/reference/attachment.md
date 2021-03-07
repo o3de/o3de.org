@@ -3,7 +3,6 @@ description: ' Use the Attachment component to attach an entity''s bone to a bon
   on the skeleton of another entity in Open 3D Engine. '
 title: Attachment
 ---
-# Attachment {#component-attachment}
 
 The **Attachment** component lets an entity attach to a bone on the skeleton of another entity\.
 

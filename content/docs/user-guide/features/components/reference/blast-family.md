@@ -2,10 +2,6 @@
 description: ' Learn about the Open 3D Engine Blast Family component. '
 title: Blast Family component
 ---
-# Blast Family component {#component-blast-family}
-
-
-****
 
 |  |
 | --- |

@@ -3,7 +3,6 @@ description: ' Use the Audio Area Environment component in Open 3D Engine to app
   effect to sounds that an entity triggers. '
 title: Audio Preload
 ---
-# Audio Preload {#component-audio-preload}
 
 Using the **Audio Preload** component, you can load and unload ATL preloads, which contain references to soundbanks\. You can specify the loading type as automatic or manual\. The automatic loading type means that preloads load when the component activates and unloads when it deactivates\. The manual loading type means the component does not take any action until the user makes a request\.
 

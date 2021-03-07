@@ -1,9 +1,10 @@
 ---
 description: ' Find solutions to common AGS integration errors in your Open 3D Engine
   game projects. '
-title: Troubleshooting Amazon Games Services integration
+linktitle: Troubleshooting
+title: Troubleshooting Amazon GameLift integration
+weight: 300
 ---
-# Troubleshooting Amazon GameLift integration {#network-gamelift-troubleshooting}
 
 Use the following information to help you diagnose and fix common problems that you might encounter while working with Amazon GameLift\.
 

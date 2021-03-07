@@ -3,7 +3,6 @@ description: ' Learn which entity parameters that Open 3D Engine supports in the
   Entity Tweener system. '
 title: Tweener Supported Components
 ---
-# Tweener Supported Components {#ui-animating-tweener-components}
 
 You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system\.
 

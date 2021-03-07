@@ -2,10 +2,6 @@
 description: null
 title: FBX Settings PhysX tab
 ---
-# FBX Settings PhysX tab {#fbx-settings-physx-tab}
-
-
-****
 
 |  |
 | --- |

@@ -2,7 +2,6 @@
 description: ' Create additive animations in Open 3D Engine. '
 title: Creating Additive Animations
 ---
-# Creating Additive Animations {#char-fbx-importer-motion-additive}
 
 Additive animations are animations that you can add as layers on top of a base animation\. They are commonly used to add a partial\-body animation to a full\-body animation\. Because additive animations do not interfere with base animation functionality, you can reuse the same base to create many variations in motion\. Reusing the base also has the advantage of greatly reducing the overall asset count\.
 

@@ -2,7 +2,6 @@
 description: ' Create a cascaded UI slice in Open 3D Engine''s UI Editor . '
 title: Creating a Cascaded UI Slice
 ---
-# Creating a Cascaded UI Slice {#ui-editor-working-slices-cascaded}
 
 A cascaded slice is a slice that contains instances of other slices\. Cascaded slices can store their own overrides for component and entity properties and can also contain their own entities\.
 

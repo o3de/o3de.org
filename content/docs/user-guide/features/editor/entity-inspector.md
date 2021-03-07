@@ -3,7 +3,6 @@ description: ' Use the Entity Inspector to add components to entities and modify
   their properties in Open 3D Engine. '
 title: Entity Inspector
 ---
-# Entity Inspector {#component-entity-inspector}
 
 The **Entity Inspector** manages all the components for each entity\. Select an entity in the **Entity Outliner** or the viewport to see the attached components in the **Entity Inspector**\.
 

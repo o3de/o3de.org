@@ -4,7 +4,6 @@ description: ' Preview your game UI canvas in Open 3D Engine to visualize how it
   state. '
 title: Previewing Canvases
 ---
-# Previewing Canvases {#ui-editor-previewing-canvas}
 
 You can preview your game UI canvas to visualize how it might look at different screen resolutions and to see how the interactive elements change states\.
 

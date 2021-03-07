@@ -2,9 +2,10 @@
 description: ' Command reference for the Open 3D Engine Asset Bundler command-line tool
   AssetBundlerBatch . This reference covers the available commands, their options,
   and basic use cases. '
-title: 'O3DE Asset Bundler Command-Line Tool Reference'
+linktitle: CLI Reference
+title: Asset Bundler Command-Line Tool Reference
+weight: 800
 ---
-# O3DE Asset Bundler Command\-Line Tool Reference {#asset-bundler-command-line-reference}
 
 **Contents**
 + [General Use](#asset-bundler-command-line-reference-general)

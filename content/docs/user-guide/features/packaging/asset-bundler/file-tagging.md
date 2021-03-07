@@ -3,8 +3,8 @@ description: ' Use the Open 3D Engine Asset Editor to create file tag rules for 
   and excluding files in your asset bundles for processing by the Asset Bundler.
   Rules are composed of pattern matching logic and file tag strings. '
 title: Using the File Tagging System to Include or Exclude Assets
+weight: 400
 ---
-# Using the File Tagging System to Include or Exclude Assets {#asset-bundler-file-tagging}
 
 O3DE v1\.22 and later use a file tagging system to include or exclude files at various stages of processing\. This system employs file tag rules to select files that match specified patterns\. File tags are associated with each rule to use as keys in file tag queries\. This is done by using the O3DE FileTag API\. You can create your own custom file tag rules using the O3DE Asset Editor\. This is useful whenever you need additional control over which files should be included or excluded during a processing step\. For example, as part of asset bundling, it is useful to eliminate "false positives" found after using the **Missing Dependency Scanner**\.
 

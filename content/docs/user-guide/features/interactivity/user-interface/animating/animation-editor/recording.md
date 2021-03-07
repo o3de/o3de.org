@@ -3,7 +3,6 @@ description: ' Use O3DE''s Animation Editor to record a new animation after you 
   created a new sequence. '
 title: Recording Animation Data
 ---
-# Recording Animation Data {#ui-animation-recording}
 
 Recording animation typically involves three steps:
 

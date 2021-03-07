@@ -2,7 +2,6 @@
 description: null
 title: 'Animation Editor Concepts and Terms'
 ---
-# Animation Editor Concepts and Terms {#char-animation-editor-concepts-and-terms}
 
 The following concepts and terms are used in the **Animation Editor**:
 

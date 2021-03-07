@@ -2,7 +2,6 @@
 description: ' Set up a simulated object such as a tassel for your actor in Open 3D Engine. '
 title: Setting Up a Simulated Object
 ---
-# Setting Up a Simulated Object {#set-up-a-simulated-object}
 
 In the following procedure, add motion to a tassel attached to the character\.
 

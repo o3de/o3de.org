@@ -3,10 +3,6 @@ description: ' Use the Open 3D Engine Random Timed Spawner component to spawn a 
   dynamic slice at a given interval. '
 title: Random Timed Spawner
 ---
-# Random Timed Spawner {#component-random-timed-spawner}
-
-
-****
 
 |  |
 | --- |
@@ -16,7 +12,7 @@ You can use the **Random Timed Spawner** component to spawn a specified dynamic 
 
 The **Random Timed Spawner** component requires that the following components are also attached to the entity:
 + **[Spawner](/docs/user-guide/features/components/spawner.md)** component - Manages the spawning of the slice\.
-+ **[Box Shape](/docs/user-guide/features/components/shapes.md)** or **[Cylinder Shape](/docs/user-guide/features/components/shapes.md)** component - Defines the volume of possible positions where the entities can spawn\.
++ **[Box Shape](/docs/user-guide/features/components/reference/box-shape.md)** or **[Cylinder Shape](/docs/user-guide/features/components/reference/cylinder-shape.md)** component - Defines the volume of possible positions where the entities can spawn\.
 
 With these components, you can control the random distribution that determines the random points inside the volume\.
 
@@ -30,20 +26,21 @@ The **Random Timed Spawner** component is part of the LmbrCentral gem\. For more
 The following **Random Timed Spawner** component has the distribution type, Uniform Real\.
 
 **Contents**
-+ [Random Timed Spawner Properties](#component-random-timed-spawner-properties)
-  + [Timing](#component-random-timed-spawner-timing)
-+ [EBus Request Bus Interface](#component-random-timed-spawner-ebus-request)
-  + [Enable](#random-timed-spawner-ebus-enabled)
-  + [Disable](#random-timed-spawner-ebus-disable)
-  + [Toggle](#random-spawner-component-ebus-toggle)
-  + [IsEnabled](#random-timed-spawner-ebus-is-enabled)
-  + [SetRandomDistribution](#random-timed-spawner-ebus-set-random-distribution)
-  + [GetRandomDistribution](#random-timed-spawner-ebus-get-random-distribution)
-  + [SetSpawnDelay](#random-timed-spawner-ebus-set-spawn-delay)
-  + [GetSpawnDelay](#random-timed-spawner-ebus-get-spawn-delay)
-  + [SetSpawnDelayVariation](#random-timed-spawner-ebus-set-spawn-delay-variation)
-  + [GetSpawnDelayVariation](#random-timed-spawner-ebus-get-spawn-delay-variation)
-  + [Notification Bus Example Script](#random-timed-spawner-notification-bus-example-script)
+- [Random Timed Spawner {#component-random-timed-spawner}](#random-timed-spawner-component-random-timed-spawner)
+  - [Random Timed Spawner Properties {#component-random-timed-spawner-properties}](#random-timed-spawner-properties-component-random-timed-spawner-properties)
+    - [Timing {#component-random-timed-spawner-timing}](#timing-component-random-timed-spawner-timing)
+  - [EBus Request Bus Interface {#component-random-timed-spawner-ebus-request}](#ebus-request-bus-interface-component-random-timed-spawner-ebus-request)
+    - [Enable {#random-timed-spawner-ebus-enabled}](#enable-random-timed-spawner-ebus-enabled)
+    - [Disable {#random-timed-spawner-ebus-disable}](#disable-random-timed-spawner-ebus-disable)
+    - [Toggle {#random-spawner-component-ebus-toggle}](#toggle-random-spawner-component-ebus-toggle)
+    - [IsEnabled {#random-timed-spawner-ebus-is-enabled}](#isenabled-random-timed-spawner-ebus-is-enabled)
+    - [SetRandomDistribution {#random-timed-spawner-ebus-set-random-distribution}](#setrandomdistribution-random-timed-spawner-ebus-set-random-distribution)
+    - [GetRandomDistribution {#random-timed-spawner-ebus-get-random-distribution}](#getrandomdistribution-random-timed-spawner-ebus-get-random-distribution)
+    - [SetSpawnDelay {#random-timed-spawner-ebus-set-spawn-delay}](#setspawndelay-random-timed-spawner-ebus-set-spawn-delay)
+    - [GetSpawnDelay {#random-timed-spawner-ebus-get-spawn-delay}](#getspawndelay-random-timed-spawner-ebus-get-spawn-delay)
+    - [SetSpawnDelayVariation {#random-timed-spawner-ebus-set-spawn-delay-variation}](#setspawndelayvariation-random-timed-spawner-ebus-set-spawn-delay-variation)
+    - [GetSpawnDelayVariation {#random-timed-spawner-ebus-get-spawn-delay-variation}](#getspawndelayvariation-random-timed-spawner-ebus-get-spawn-delay-variation)
+    - [Notification Bus Example Script {#random-timed-spawner-notification-bus-example-script}](#notification-bus-example-script-random-timed-spawner-notification-bus-example-script)
 
 ## Random Timed Spawner Properties {#component-random-timed-spawner-properties}
 

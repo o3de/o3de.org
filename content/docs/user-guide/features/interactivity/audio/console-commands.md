@@ -1,8 +1,8 @@
 ---
 description: ' Use console variables to control the O3DE audio system. '
 title: Audio Console Variables
+weight: 500
 ---
-# Audio Console Variables {#audio-console-commands}
 
 The following console variables can be used with the O3DE Audio system\.
 

@@ -2,8 +2,8 @@
 description: ' Learn how to run the Open 3D Engine Samples Project on your iOS device from
   a macOS computer. '
 title: 'Quick Start: Running the Samples Project on iOS Devices'
+weight: 100
 ---
-# Quick Start: Running the Samples Project on iOS Devices {#ios-quick-start}
 
 You can use this quick start to learn how to run the [Samples Project](/docs/userguide/samples/projects/samples.md) on your iOS device from a macOS computer\.
 

@@ -2,8 +2,8 @@
 description: ' The following topics will guide you through programming with and for
   O3DE. '
 title: Engine programmer's reference
+weight: 600
 ---
-# Programming in O3DE {#programming-intro}
 
 ## Programming with O3DE {#ly-programming-intro}
 

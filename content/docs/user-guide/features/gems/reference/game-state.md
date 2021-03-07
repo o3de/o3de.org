@@ -2,7 +2,6 @@
 description: ' Use the GameState gem to manage the states in your Open 3D Engine game. '
 title: GameState Gem
 ---
-# GameState Gem {#gems-system-gem-game-state}
 
 The GameState gem helps you manage and determine, at a high level, the state that the game is in\. Because the GameState gem uses a stack to manage game states, returning to a previous state is straightforward\.
 

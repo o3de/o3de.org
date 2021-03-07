@@ -3,7 +3,6 @@ description: ' Capture image frames in Open 3D Engine with render output, a capt
   or console variables. '
 title: Capturing Image Frames
 ---
-# Capturing Image Frames {#cinematics-image-capture}
 
 You can capture image frames using render output, a capture track, or console variables\.
 

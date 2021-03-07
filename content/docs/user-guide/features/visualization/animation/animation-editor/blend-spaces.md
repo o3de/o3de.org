@@ -2,10 +2,6 @@
 description: ' Learn how to use blend spaces in the Animation Editor. '
 title: Creating and Visualizing Blend Spaces
 ---
-# Creating and Visualizing Blend Spaces {#animation-editor-blend-spaces}
-
-
-****
 
 |  |
 | --- |

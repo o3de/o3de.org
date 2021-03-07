@@ -2,7 +2,6 @@
 description: ' The Open 3D Engine PhysX Ball Joint component. '
 title: PhysX Ball Joint component
 ---
-# PhysX Ball Joint component {#component-physx-ball-joint}
 
 With the **PhysX Ball Joint** component, you can create a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y\- and z\-axes of the joint\.
 

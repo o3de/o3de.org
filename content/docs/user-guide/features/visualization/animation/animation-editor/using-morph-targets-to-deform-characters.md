@@ -3,10 +3,6 @@ description: ' Use morph targets to deform characters in the Open 3D Engine Anim
   . '
 title: Using Morph Targets to Deform Characters
 ---
-# Using Morph Targets to Deform Characters {#animation-editor-using-morph-targets-to-deform-characters}
-
-
-****
 
 |  |
 | --- |

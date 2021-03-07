@@ -2,8 +2,8 @@
 description: ' Follow these guidelines to generate art assets and tune Open 3D Engine performance
   for mobile devices. '
 title: 'O3DE Performance Tuning Guidelines for Mobile Devices'
+weight: 1100
 ---
-# O3DE Performance Tuning Guidelines for Mobile Devices {#ios-android-performance-guidelines}
 
 See the following guidelines for generating art assets for mobile games with O3DE and how to tune O3DE performance for mobile devices\.
 

@@ -3,7 +3,6 @@ description: ' Learn the functions of each area of the Asset Processor interface
   in Open 3D Engine. '
 title: 'Asset Processor Interface'
 ---
-# Asset Processor Interface {#asset-pipeline-processor-ui}
 
 The Asset Processor interface provides areas containing detailed information about the assets that it processes\. These areas are shown in the following example\.
 

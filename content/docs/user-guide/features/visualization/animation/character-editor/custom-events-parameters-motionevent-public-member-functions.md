@@ -2,7 +2,6 @@
 description: null
 title: MotionEvent Public Member Functions
 ---
-# MotionEvent Public Member Functions {#char-animation-editor-custom-events-parameters-motionevent-public-member-functions}
 
 The `MotionEvent` class includes the following public member functions\.
 

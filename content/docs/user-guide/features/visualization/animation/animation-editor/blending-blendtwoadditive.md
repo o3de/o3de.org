@@ -3,7 +3,6 @@ description: ' Learn how to use the Blend Two Additive node in Open 3D Engine An
   to additively blend two input poses. '
 title: Blend Two Additive Node
 ---
-# Blend Two Additive Node {#animation-editor-blending-blendtwoadditive}
 
 The **Blend Two Additive** node blends a pose 2 input additively on top of a pose 1 input\.
 

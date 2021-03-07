@@ -2,10 +2,6 @@
 description: ' Use the Actor component to add an actor file to your entity in Open 3D Engine. '
 title: Actor
 ---
-# Actor {#component-actor}
-
-
-****
 
 |  |
 | --- |

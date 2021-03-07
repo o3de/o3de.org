@@ -3,7 +3,6 @@ description: ' Use the Anim Graph Net Sync component to synchronize animation gr
   parameters in Open 3D Engine. '
 title: Anim Graph Net Sync
 ---
-# Anim Graph Net Sync {#component-animgraph-netsync}
 
 The [AnimGraph](/docs/user-guide/features/components/animgraph.md) component, which adds an animation graph and motion set to a character, does not automatically synchronize its parameters across the network\. O3DE's [GridMate networking system](/docs/userguide/networking/intro.md) provides a server an authoritative way of replicating these parameters\. This replication enables the movements of a character on a server to be mirrored on all of the clients that are connected to the server\.
 

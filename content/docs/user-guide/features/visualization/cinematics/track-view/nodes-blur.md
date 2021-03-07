@@ -3,7 +3,6 @@ description: ' Add a Radial Blur node to blur the animation outward in a radial 
   in Open 3D Engine''s <guilabel>Track View</guilabel> editor. '
 title: Radial Blur Node
 ---
-# Radial Blur Node {#cinematics-track-view-nodes-blur}
 
 You can use the **Radial Blur** node to blur the animation radially outward from a center point\.
 

@@ -1,11 +1,8 @@
 ---
 description: ' Motion constraints for NVIDIA Cloth in Open 3D Engine. '
 title: Cloth simulation constraints
+weight: 400
 ---
-# Cloth simulation constraints {#nvidia-cloth-constraints}
-
-
-****
 
 |  |
 | --- |

@@ -1,8 +1,8 @@
 ---
 description: ' Use Lua scripting in Open 3D Engine to automate your game project. '
+linktitle: Lua
 title: Writing Lua Scripts
 ---
-# Writing Lua Scripts {#lua-scripting-intro}
 
 **Topics**
 + [Learning Lua](#lua-scripting-resources-general)

@@ -1,11 +1,8 @@
 ---
 description: ' Simulate cloth on a GPU in Open 3D Engine with NVIDIA Cloth and NVIDIA CUDA. '
 title: GPU cloth simulation with NVIDIA CUDA
+weight: 600
 ---
-# GPU cloth simulation with NVIDIA CUDA {#nvidia-cloth-gpu}
-
-
-****
 
 |  |
 | --- |

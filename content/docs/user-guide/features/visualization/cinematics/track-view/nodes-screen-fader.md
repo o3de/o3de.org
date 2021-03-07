@@ -3,7 +3,6 @@ description: ' Use the Screen Fader node to fade the screen in and out in a Open
   track view sequence. '
 title: Screen Fader Node
 ---
-# Screen Fader Node {#cinematics-track-view-nodes-screen-fader}
 
 Use the **Screen Fader** node to fade the screen in and out in a scene\.
 

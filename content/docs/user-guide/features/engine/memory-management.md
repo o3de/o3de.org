@@ -2,7 +2,6 @@
 description: ' Learn best practices for memory management in Open 3D Engine. '
 title: Memory Management
 ---
-# Memory Management {#cpp-best-practices-lumberyard-memory-management}
 
 When managing memory in O3DE, use AZ memory management calls and avoid static variables whose constructors allocate memory or connect to EBuses\.
 

@@ -3,7 +3,6 @@ description: ' Use Open 3D Engine UI Editor Preview to visualize how the animati
   and elements in your game UI canvas will perform at different resolutions. '
 title: Previewing Canvas Behavior
 ---
-# Previewing Canvas Behavior {#ui-editor-previewing-behavior}
 
 In **UI Editor** **Preview**, the UI elements in your canvas perform as they would when the game is running\.
 

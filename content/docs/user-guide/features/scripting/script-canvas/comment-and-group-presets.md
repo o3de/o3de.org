@@ -3,7 +3,6 @@ description: ' Save customized node comments and groups as presets for quick reu
   in Open 3D Engine''s Script Canvas visual scripting editor. '
 title: Creating Comment and Group Presets
 ---
-# Creating Comment and Group Presets {#script-canvas-comment-and-group-presets}
 
 You can save custom node comment and node group settings as presets that you can conveniently reuse\. In a team setting, these presets can help you create your own coloring and naming conventions to improve clarity and consistency among Script Canvas graphs\.
 

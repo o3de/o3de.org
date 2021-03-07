@@ -2,8 +2,8 @@
 description: ' Share the assets for your Open 3D Engine iOS game between your macOS and
   Windows computers. '
 title: Sharing Assets Between Windows and macOS
+weight: 500
 ---
-# Sharing Assets Between Windows and macOS {#ios-sharing-assets-between-mac-pc}
 
 You can build your assets on a Windows computer and then use them in an iOS build\. To do so, you must set up sharing between your Windows and macOS computers\.
 

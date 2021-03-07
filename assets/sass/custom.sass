@@ -42,14 +42,14 @@
 //@import "bootstrap/scss/custom-forms" 
 @import "bootstrap/scss/nav" 
 @import "bootstrap/scss/navbar" 
-//@import "bootstrap/scss/card" 
+@import "bootstrap/scss/card" 
 //@import "bootstrap/scss/breadcrumb" 
 //@import "bootstrap/scss/pagination" 
 //@import "bootstrap/scss/badge" 
 @import "bootstrap/scss/jumbotron" 
 //@import "bootstrap/scss/alert" 
 //@import "bootstrap/scss/progress" 
-//@import "bootstrap/scss/media" 
+@import "bootstrap/scss/media" 
 //@import "bootstrap/scss/list-group" 
 //@import "bootstrap/scss/close" 
 //@import "bootstrap/scss/toasts" 
@@ -64,7 +64,18 @@
 
 // Custom
 
-$font-family-headers: "Fira Sans" 
+
+// Variables 
+
+$font-family-headers: "Open Sans" 
+$o3de-black: #000
+$o3de-white: #fff
+$o3de-blue: #1E71EB
+$o3de-darkblue: #011C46
+$o3de-lightblue: #D2EDFF
+$o3de-green: #58BD61
+
+// General 
 
 .breadcrumb 
   li
@@ -98,3 +109,88 @@ nav
     padding-left: 0
     ul
       padding-left: 1.5rem
+
+// layouts/partials/navbar.html 
+
+.main-navbar 
+  background-color: $o3de-black
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+
+.navbar-dark .navbar-nav .nav-link
+    color: $o3de-white
+    &:hover 
+      color: $o3de-lightblue
+
+.navbar-logo
+  max-height: 36px
+
+// layouts/partials/hero.html
+
+//scales the header proportionally
+$width: '59vw';
+
+.scalable 
+    width: 100%
+    height: calc((#{$width} / 3) * 2); // note the variable is declared inside #${}
+    background: black
+    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.9))
+    background-image: url('/img/home/hero.jpg')
+    background-size: cover
+    @include media-breakpoint-down(lg) 
+      height: auto 
+      background-position: right
+    
+    
+.hero 
+  margin-bottom: 0rem
+  background-color: transparent
+  color: $o3de-white
+  .desc
+    text-shadow: 8px 8px 8px #000
+
+
+.learnmore-cta 
+  background-color: $o3de-green
+  &:hover
+    background-color: darken(#58BD61, 10%)
+
+.download-cta 
+  background-color: $o3de-blue
+  &:hover 
+    background-color: darken(#1E71EB, 10%)
+
+
+// layouts/partials/home/features.html 
+
+.home-features 
+  background-color: $o3de-black 
+  background-image: url('/img/home/feature-bg-2.png')
+  background-position: center
+  background-repeat: no-repeat
+  color: $o3de-white
+
+.feature
+  margin-top: 2rem
+  margin-bottom: 6rem
+  img
+    width: 100%
+
+// layouts/partials/home/partners.html 
+
+.home-logo 
+  max-width: 100%
+
+// layouts/footer.html 
+
+.footer 
+  background-image: url(/img/home/footer-bg.png)
+  background-size: cover
+  background-color: $o3de-darkblue
+  @include media-breakpoint-up(lg)
+    height: 300px
+
+// layouts/social-buttons.html 
+
+.social 
+  font-size: 2rem
+  padding: 0.5rem

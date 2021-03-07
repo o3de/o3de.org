@@ -1,11 +1,8 @@
 ---
 description: ' Create NVIDIA Blast assets in Houdini for Open 3D Engine. '
 title: Create assets for NVIDIA Blast
+weight: 200
 ---
-# Create assets for NVIDIA Blast {#nvidia-blast-create-blast-asset}
-
-
-****
 
 |  |
 | --- |

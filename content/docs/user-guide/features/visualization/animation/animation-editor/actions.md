@@ -3,7 +3,6 @@ description: ' You can add an action to a state or transition in an Open 3D Engi
   animation graph to trigger a parameter value change. '
 title: Actions
 ---
-# Actions {#animation-editor-actions}
 
 You can use actions to trigger parameter value changes when an animation graph state or transition reaches a specified state\.
 

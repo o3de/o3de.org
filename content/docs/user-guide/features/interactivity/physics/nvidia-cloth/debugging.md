@@ -1,11 +1,8 @@
 ---
 description: ' Use visual debugging in Open 3D Engine for NVIDIA Cloth. '
 title: Cloth visual debugger
+weight: 500
 ---
-# Cloth visual debugger {#nvidia-cloth-debugging}
-
-
-****
 
 |  |
 | --- |

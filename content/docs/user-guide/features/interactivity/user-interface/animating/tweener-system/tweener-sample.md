@@ -3,7 +3,6 @@ description: ' Open the Scripted Entity Tweener sample level in Open 3D Engine t
   in action. '
 title: Tweener Sample Level
 ---
-# Tweener Sample Level {#ui-animating-tweener-sample}
 
 You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) to see an example level that uses tweeners\.
 

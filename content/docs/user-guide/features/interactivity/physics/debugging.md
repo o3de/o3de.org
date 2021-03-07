@@ -1,8 +1,8 @@
 ---
 description: ' Debug PhysX issues for your game in Open 3D Engine. '
 title: Debugging PhysX
+weight: 1000
 ---
-# Debugging PhysX {#debugging-physx}
 
 The PhysX system has the following features that you can use to debug issues\.
 

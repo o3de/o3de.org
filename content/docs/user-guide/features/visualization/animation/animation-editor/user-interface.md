@@ -2,10 +2,6 @@
 description: ' View the Animation Editor interface in Open 3D Engine. '
 title: 'Animation Editor User Interface'
 ---
-# Animation Editor User Interface {#animation-editor-user-interface}
-
-
-****
 
 |  |
 | --- |

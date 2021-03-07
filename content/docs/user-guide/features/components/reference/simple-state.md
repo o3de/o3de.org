@@ -3,7 +3,6 @@ description: ' Use the Simple State component in Open 3D Engine to provide a sim
   machine. '
 title: Simple State
 ---
-# Simple State {#component-simple-state}
 
 The **Simple State** component provides a simple state machine\. Each state is represented by a name and zero or more entities\. The entities are activated upon entering the state and deactivated upon exiting it\. A simple state component may be in NullState, which means no state is active\.
 

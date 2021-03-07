@@ -3,7 +3,6 @@ description: ' Learn the asset identifiers and file paths that game engineers ne
   for porting older game code to Open 3D Engine or developing new code or tools. '
 title: Asset IDs and File Paths
 ---
-# Asset IDs and File Paths {#asset-pipeline-developers}
 
 Consult this section if you are a game engineer who needs to port older game code or develop new code or tools\.
 

@@ -2,8 +2,8 @@
 description: ' Create dynamic joint constraints between entities in Open 3D Engine with
   PhysX joints. '
 title: Dynamic joints with PhysX
+weight: 400
 ---
-# Dynamic joints with PhysX {#physx-joint-intro}
 
 PhysX joint components constrain the position and orientation of one PhysX rigid body called the *follower*, relative to another PhysX rigid body, called the *leader*\. The leader rigid body will have rotational freedom in zero, one, or two axes around the joint, depending on the type of PhysX joint\.
 

@@ -1,8 +1,8 @@
 ---
 description: ' Learn to create or modify a bootstrap file for a Python Asset Builder. '
 title: Create or modify a bootstrap script
+weight: 200
 ---
-# Create or modify a bootstrap script {#python-asset-builder-bootstrap}
 
 To make your Python Asset Builder script available to the asset processing system, you must add a `bootstrap.py` file to the path or modify an existing `bootstrap.py` file\. We recommend you use a location that is relative to where your Python Asset Builder scripts will be stored, such as one of the following:
 + `lumberyard_version\dev\MyProject\Editor\Scripts\bootstrap.py`

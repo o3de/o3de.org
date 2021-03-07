@@ -3,7 +3,6 @@ description: ' Learn how different Scripted Entity Tweener easing types affect t
   appearance of animations in Open 3D Engine. '
 title: Supported Tweener Easing Types
 ---
-# Supported Tweener Easing Types {#ui-animating-tweener-understanding-types}
 
 The easiest way to visualize the concept of Scripted Entity Tweener easing types is to see it on a graph that depicts a change in position over time\. The resulting line can be thought of as speed, though it isn't necessarily so\.
 

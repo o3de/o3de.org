@@ -3,7 +3,6 @@ description: ' Use the EMotionFX Animation gem in your O3DE project to enable th
   node-based character animation system. '
 title: 'EMotionFX Animation Gem'
 ---
-# EMotion FX Animation Gem {#gems-system-gem-emotionfx-animation}
 
 With the EMotion FX Animation gem, you can use the **EMotion FX Animation Editor** character animation system\. The node\-based system provides an intuitive approach to controlling character behavior from animation graphs\. You can visually build hierarchal state machines and blend trees and use parameter controls for interactive testing\. Character motion is controlled through motion extraction\.
 
