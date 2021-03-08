@@ -1,6 +1,7 @@
 ---
 title: Shader system
 description: Learn about the shader system used by O3DE Atom, and how to write AZSL programs.
+weight: 100
 ---
 
 Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled with specialized configuration files that add various metadata. This consists of a main AZSL source file (`*.azsl`) and a shader asset file (`*.shader`). It might also include a shader variant list (`*.shadervariantlist`) and multiple AZSL include files (`*.azsli`, `*.srgi`).
