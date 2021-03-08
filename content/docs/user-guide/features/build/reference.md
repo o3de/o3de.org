@@ -1,6 +1,7 @@
 ---
-title: CMake Build Settings Reference
-description: The complete reference guide to Open 3D Engine-specific CMake settings.
+title: Settings Reference
+description: The reference guide to Open 3D Engine-specific CMake settings.
+weight: 500
 ---
 
 Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/features/gems/reference). For general CMake options, see the [cmake.variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
@@ -32,7 +33,7 @@ These options are the user-supplied settings required to configure O3DE builds. 
 
   *Type*: `BOOL`  
   *Default*: `OFF`
-* **`LY_MONOLITHIC_GAME`** - Controls project library linking. When this value is set to `ON`, it provides a compiler hint to use static libraries where possible. Some libraries, such as PhysX, are only available as shared libraries and can't be statically linked.
+* **`LY_MONOLITHIC_GAME`** - Controls project library linking. When this value is set to `ON`, it provides a compiler hint to use static libraries where possible. Some libraries, such as PhysX, are only available as shared libraries and can't be statically linked. Some platforms may disable static linking entirely.
 
   *Type*: `BOOL`  
   *Default*: `OFF`
@@ -104,3 +105,7 @@ These settings control how the third party package download system functions.
 
   *Type*: `BOOL`  
   *Default*: `OFF`
+
+<!-- 
+  TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)
+-->

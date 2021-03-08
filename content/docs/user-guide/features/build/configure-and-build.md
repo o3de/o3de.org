@@ -1,148 +1,131 @@
 ---
-title: Build and Configure Open 3D Engine and projects
+title: Configure and Build
 description: Learn how to configure your Open 3D Engine builds with CMake, and then build O3DE projects with a native toolchain.
+weight: 100
 ---
 
 Building your O3DE project with CMake is done in two steps: Creating platform- and toolchain-specific configuration files, and then running the build on them. For many projects you can combine these into a single command, but it's useful to know how to run through each step of the process individually, in case you want to make project changes without immediately rebuilding everything. CMake lets you configure and build from the command line, and offers a GUI tool for ease of use.
 
 As part of keeping builds fast, where possible, CMake uses its cache to hold information about project generation as well as builds. After you configure for the first time, you won't need to pass some options to CMake. This means that after setting up your first configure and build, you should be able to go through your normal development process without needing to change your build configuration except in some rare circumstances.
 
-These instructions are for Windows x86\_64 platforms, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](cmake-options-reference.md) or the build page for your platform.
-
-+ **Add per-platform build links here**
+These instructions are for Windows x86\_64 platforms, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference.md) or the build page for your platform.
 
 ## Supported compiler toolchains
 
 O3DE has build support for the following platforms and toolchains:
 
+<!-- TODO: Add download links -->
 | Platform | Supported toolchains |
 | --- | --- |
-| Windows 64-bit |  |
-| macOS, iOS | |
-| Android | |
-| Linux | |
+| Windows 64-bit | Visual Studio 2019, Visual Studio 2017 |
+| macOS, iOS | XCode 11 or later |
+| Android | Android Studio |
+| Linux | Automake, Ninja (clang-6.0 required as compiler) |
 
-## Build configurations
-
-O3DE supports a number of build configurations to support your development workflows of debugging, profiling, and generating releases of your projects. Each configuration has a set of properties that makes it suitable for performing certain tasks, and affect things like debug symbol tables, optimization levels, and which O3DE development tools can be used to inspect and send assets to a running game.
-
-For the full set of flags used by the compiler for each build configuraton, see the `lumberyard_root\dev\cmake\Platform\Common\compiler\Configurations_compiler.cmake` file.
-
-{{% note %}}
-On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information on building on Linux, see [Deploy a O3DE multiplayer project's server on Linux](linux-build-lumberyard-executable.md).
-{{% /note %}}
-
-**`debug` - Debugging support for programmers**
-
-+ Disables compiler optimizations, including function inlining.
-+ Debug symbol tables.
-+ Additional support for memory consistency checks, stack unwinding, and crash inspection.
-+ **MSVC only** - "Edit and continue" support.
-
-**`profile` - For day to day development and performance improvements**
-
-+ Optimized builds \(`-O2`\).
-+ Support for shader compilation at runtime.
-+ Connects to the Asset Processor for dynamic asset compilation and loading.
-+ Crash logging and other troubleshooting functionality.
-+ Debug symbol tables.
-+ Support for loading assets and information from the Virtual File System \(VFS\).
-
-**`release` - For release builds**
-
-+ Optimized builds \(`-O2`\).
-+ Disables debugging symbol tables and other development tools.
-+ Assets can only be loaded from `.pak` files distributed with the game binary.
-+ Limited crash log and memory information for postmortem debugging.
-+ Removes support for in-game developer console.
-
-## Prerequisites
+## Requirements to build O3DE
 
 In order to follow these build instructions, you'll need the following.
 
-+ An installation of O3DE 2.0 or later, configured to build your project and the engine.
-+ Microsoft Visual Studio 2019 or Visual Studio 2017. [Get Visual Studio](https://visualstudio.microsoft.com/downloads/)
-+ CMake 3.17 or later. CMake is included as part of the O3DE 3rd party tools set.
+* CMake {{< versions/cmake >}} or later. [Download from the CMake project](https://cmake.org/download/).
+* A toolchain for your _host_ platform, to build the editor and tools.
+* A toolchain for your _target_ platform, to build your project. In most cases this will be the same as your host platform.
 
-## Configure with the CMake CLI
+{{< caution >}}
+While O3DE is in private preview, the CMake build tools require additional information to get 3rd party packages required for build and configure.
+Please contact us directly for the details.
+{{< /caution >}}
 
- When building using the CMake CLI, you'll need to have a build output directory created, know where your 3rd party libraries are, and which O3DE projects you want to be able to build and run. Walking through the following steps will get you started with your first O3DE build out of the box, let you know which values to change on subsequent builds, and help you learn how the build process works with CMake.
+## Generating build files
 
-1. Open a command prompt and navigate to your O3DE dev directory at `lumberyard_install_path\dev`.
+{{< caution >}}
+Even though this example only builds the editor and tools, make sure that you've correctly configured any projects _before_ running your build configure.
+See [Project Configuration](/docs/user-guide/features/project-config) for details.
+{{< /caution >}}
 
-1. Edit the `bootstrap.cfg` file to set the project to `StarterGame`. Do this by changing the value of the `sys_game_folder` variable to `StarterGame`. Setting the project as part of the bootstrapping allows CMake to detect the correct Gem dependencies to build.
+### Configure with the CMake CLI
 
-1. Create the directory for your build.
+When building using the CMake CLI, you'll need to have a build output directory created, know where your 3rd party libraries are, and which O3DE projects you want to be able to build and run. Walking through the following steps will get you started with your first O3DE build out of the box, let you know which values to change on subsequent builds, and help you learn how the build process works with CMake.
 
-   ```
-   mkdir build_win64
-   ```
+<!-- TODO: Tabs, when they work for non-code content in Markdown -->
 
-**Important**  
- You can create your build output directory anywhere, but in order to run your O3DE project, the build output *must* be a child directory of `lumberyard_install_path\dev`. This setup is necessary for your build to load resources from the `dev\project_name` directory.
+1. Open a command line prompt and navigate to your O3DE installation.
+2. Create a directory for your build: `mkdir windows_vs2019`
+3. Run the CMake generator:  
+  
+  ```cmd
+cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
+   -DLY_3RDPARTY_PATH=<3rdPaty_fullpath> ^
+   -DLY_UNITY_BUILD=ON -DLY_PROJECTS=<Project name(s)>
+  ```  
+  
+   * `-B` : Location of build directory, where to put the generated files.
+   * `-S` : Source directory, where the root CMake file is.
+   * `-G` : The type of generator to use. If you're using Visual Studio 2017, your generator is `Visual Studio 15 2017`.  
+  
+   The other arguments are custom definitions for the build script, used by O3DE:  
+  
+   * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
+   * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+   * `DLY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
 
-1. Generate your configuration files. With Visual Studio 2019, use the following command.
+{{< warning >}}
+You can create your build output directory anywhere, but in order to run your O3DE project, the build output *must* be a subdirectory of your O3DE install. This is so that
+the engine can load assets located in relative paths.
+{{< /warning >}}
 
-   ```
-   cmake -B build_win64 -S . -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=lumberyard_install_path\3rdparty -DLY_PROJECTS=StarterGame
-   ```
+### Configure with the CMake GUI
 
-   Visual Studio 2017 requires a different generator and some additional arguments to build for x86\_64 architectures.
+CMake also offers an intuitive, GUI-based tool that you can use instead of the command line. In order to use the `cmake-gui` application with O3DE, set the following after launching it:
 
-   ```
-   cmake -B build_win64 -S . -G "Visual Studio 15 2017" -A x64 -T host=x64  -DLY_3RDPARTY_PATH=lumberyard_install_path\3rdparty -DLY_PROJECTS=StarterGame
-   ```
+* Set the *Where is the source code:* value to your O3DE directory.
+* Set the *Where to build your binaries:* value to a subdirectory of your O3DE directory where you want your build files and products to be generated.
+* Use `Visual Studio 16 2019` or `Visual Studio 15 2017` during configure.
+* Your configure may fail at various points due to unset values. Make sure that you set the following parameters:
+  * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
+  * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+  * `DLY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
 
-## Configure with the CMake GUI
+## Build O3DE targets with CMake
 
-1. Open a command prompt and navigate to your O3DE dev directory at `lumberyard_install_path\dev`.
+CMake also provides tooling for invoking the native toolchain behind the scenes, after the toolchain files are configured and generated. Although CMake generates project files for the IDEs of toolchains which support them, you don't need to perform **any** builds in CMake if you don't want to. However, the CMake CLI offers quick support for ad-hoc builds without having to open a project file or use the native toolchain commands, so we recommend taking a moment to learn how to use it.
 
-1. Edit the `bootstrap.cfg` file to set the project to `StarterGame`. Do this by changing the value of the `sys_game_folder` variable to `StarterGame`. Setting the project as part of the bootstrapping allows CMake to detect the correct Gem dependencies to build.
+### Generated build configurations
 
-1. Launch the GUI.
+O3DE supports a number of build configurations to support your development workflows of debugging, profiling, and generating releases of your projects. Each configuration has a set of properties that makes it suitable for performing certain tasks, and affect things like debug symbol tables, optimization levels, and which O3DE development tools can be used to inspect and send assets to a running project.
 
-   ```
-   cmake-gui .
-   ```
+For the full set of flags used by the compiler for each build configuration, see the following CMake files in source:
 
-1. Change the build directory by adding `/build_win64` to the end of it.  
-![\[The CMake GUI showing the "Source code" and "Browse build" commands. The path to the build directory is on the bottom, and ends in "dev/build_win64".\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-build-dir.png)
+* `cmake/Configurations.cmake`
+* `cmake/Common/Configurations_common.cmake`
+* `cmake/Common/<compiler>/Configurations_<compiler>.cmake`
+* `cmake/Platform/<platform ID>/Configurations_<platform ID>.cmake`
 
-1. Add the location of your 3rd party libraries. Select the **Add Entry** button.  
-![\[The top third of the CMake GUI window. Fields are source code location, build location, and search. Two unchecked check boxes are next to the search field. To the right of the check boxes is the "Add Entry" button."Add Entry" is surrounded by a red box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-add-entry.png)
+{{< note >}}
+On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information on building on Linux, see [Deploy a O3DE multiplayer project's server on Linux](linux-build-lumberyard-executable.md).
+{{< /note >}}
 
-    A popup window will appear. Enter `LY_3RDPARTY_PATH` for **Name** and select `PATH` for **Type**. Enter the location of your 3rd party libraries for **Value**, or use the **...** button to select the directory in Windows Explorer. After setting the variable value, select **Ok**.
-![\[The CMake GUI "Add Cache Entry" window. The "Name" field has the value "LY_3RDPARTY_PATH". The dropdown beneath that is "Type" with a value of "PATH". Beneath that is a "Value" field containing an obfuscated path. The "Description" field below is empty. The window has "Ok" and "Cancel" buttons at the bottom.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-3rdparty.png)
+The following table is a high-level overview of what each build configuration does.
 
-1. Set the O3DE project that you'll be building. Select the **Add Entry** button, and when the popup appears, enter `LY_PROJECTS` for **Name** and select `STRING` for **Type**. Set the value of the **Value** field to `StarterGame`, and then select the **Ok** button.
-![\[The CMake GUI "Add Cache Entry" window. The "Name" field has the balue "LY_PROJECTS". The dropdown beneath that is "Type" with a value of "STRING". Beneath that is a "Value" field set to "StarterGame". The "Description" field below is empty. The window has "Ok" and "Cancel" buttons at the bottom.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-project.png)
+| Configuration | Effects |
+| --- | --- |
+| **Debug** | Maximum level of debugging support. Optimizations including function inlining will be avoided, making it easier to trace code. Some compilers may disable stack overflow or other memory protection runtime checks, making this the best build configuration for inspecting certain types of bugs affecting the stack. In supported IDEs, this also enables "Edit and continue" support. |
+| **Profile** | Debugging symbol support, but optimizations are enabled (equivalent to clang `-O2`, non-aggressive optimizations.) This is the recommended profile for daily workflows, as it's the most representative of a release build but with symbols enabled. |
+| **Release** | For your final release build. Non-aggressive optimizations and no debugging information. | 
 
-1. Select the **Configure** button near the bottom of the window.  
-![\[The bottom third of the CMake GUI window. Shows the buttons "Configure", "Generate", "Open Project" from left to right. "Configure" is surrounded by a red box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-configure.png)
+### Build your project
 
-   A popup window will appear asking if you want to create the build directory. Select **Yes**.  
-![\[A popover window asking for confirmation to create the build directory. Options are "Yes" and "No". The "Yes" option is surrounded by a red box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-create-dir.png)
+This section assumes you've already generated your project files into the O3DE subdirectory `windows_vs2019`. But once you've done that, it's just one line:
 
-   A popup window will appear, allowing you to select the project generator. For Visual Studio 2019, use the default values and select **Finish**.  
-![\[CMake GUI generation window. Shows that Visual Studio 2019 will be used as the generator in a dropdown menu, the radio button next to "Use default native compilers" is selected. Buttons at the bottom are labeled "Finish" and "Cancel". The "Finish" option is surrounded by a red box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-generate-vs2019.png)
-**Note**  
- For Visual Studio 2017, you're required to select the appropriate generator of **Visual Studio 15 2017**, as well as edit the platform and toolset values. The platform value must be `x64` and the toolset must be `host=x64`.
+```cmd
+cmake --build windows_vs2019  --config profile --target <Project Name> -- /m
+```
 
-![\[CMake GUI generation window. Shows that Visual Studio 2017 will be used in the dropdown menu. The field labeled "Optional platform for generator" has the value "x64". The field "Optional toolset to use" has the value "host=x64". The dropdown and fields are surrounded by a red box. The radio button next to "Use default native compilers" is selected. Buttons at the bottom are labeled "Finish" and "Cancel". The "Finish" option is surrounded by a red box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-generate-vs2017.png)
+### Build the O3DE editor, engine, and tools
 
-1. Select the **Generate** button near the bottom of the window.  
-![\[The bottom third of the CMake GUI window. Shows the buttons "Configure", "Generate", "Open Project" from left to right. "Generate" is surrounded by a red box.\]](http://docs.aws.amazon.com/lumberyard/latest/userguide/images/cmake/cmake-gui-generate.png)
+This section assumes you've already generated your project files into the O3DE subdirectory `windows_vs2019`. But once you've done that, it's just one line:
 
-## Build the O3DE editor and StarterGame project
+```cmd
+cmake --build windows_vs2019  --config profile --target Editor -- /m
+```
 
- After configuring and running the generator, you'll have a Visual Studio solution file located at `lumberyard_install_dir\dev\build_win64\O3DE.sln`. You can open and build any available target by opening this file in your version of Visual Studio, but using CMake's capabilities to invoke the MSVC compiler directly from the command line is faster. In the next steps, you'll perform a build from the command line without needing to open Visual Studio.
-
-1. Open a command prompt and navigate to your O3DE dev directory at `lumberyard_install_path\dev`.
-
-1. Build the editor and the StarterGame project in the "profile" configuration. Building the editor here makes sure that it's using the correct gems enabled for StarterGame, and any time you make changes to the gems used by a project you should also rebuild the editor.
-
-   ```
-   cmake --build build_win64 --target Editor StarterGameLauncher --config profile
-   ```
-
-   Running your first build can take a while, as the O3DE editor, asset management and build tools, enabled gems, engine, and your project code are all built. Once the build finishes, the binaries are located in `lumberyard_install_dir\dev\build_win64\bin\profile`. From within this directory you can now launch StarterGame and the editor.
+Yep! The editor has the engine and the required tools as dependencies - if there are any changes to them between editor rebuilds, they'll be rebuilt as well.
