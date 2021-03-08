@@ -1,22 +1,12 @@
 ---
 description: ' Open 3D Engine is a free, cross-platform, cloud-connected game engine that
   you can use to build games. '
-linktitle: Open 3D Engine User guide
-title: What is Open 3D Engine (O3DE)?
+linktitle: O3DE User Guide
+title: Open 3D Engine User Guide
 weight: 300
 ---
 
-Open 3D Engine (03DE) is a free, cross\-platform, 3D game engine that allows you to create high\-quality games, connect your games to the compute and storage of the AWS Cloud, and engage fans on Twitch\. With O3DE, you can spend more time creating great gameplay and building communities of fans, and less time on the heavy lifting of building a game engine and managing servers\.
-
-O3DE offers everything a professional game developer can expect, such as a full\-featured editor, native code performance, and stunning visuals\. It also includes hundreds of other ready\-to\-use features like networking, cinematics, the **Script Canvas** editor, the **Animation Editor**, audio tools, and more\.
-
-Interested? Want to get started?
-
-+ [Download the latest version of the O3DE beta](https://aws.amazon.com/lumberyard/downloads/)
-+ [Kickstart your learning by watching tutorial videos](https://aws.amazon.com/lumberyard/videos/)
-+ [Sign up for and participate in the Open 3D Engine forums](https://forums.awsgametech.com/)
-
-![\[Learn more about O3DE's systems and features in the Open 3D Engine User Guide.\]](/images/user-guide/starter-game-introduction-1.25.png)
+Open 3D Engine (O3DE) is a fully open-source, cross\-platform, 3D engine and tools you can use to create high\-quality interactive experience, including games and simulations.
 
 <!-- DougEric Note: Replace this page with a proper Nav page and move this content to a features.md page or the what-is page later. -->
 
@@ -24,23 +14,25 @@ Interested? Want to get started?
 
 ### Fully Open Source
 
-Open 3D Engine is fully open sourced under the Linux Foundation. Use the currently provided binaries and tools, or fork the code and extend it! 
+Open 3D Engine is fully open sourced under the Linux Foundation. Use the currently provided binaries and tools, or fork the code and extend it!
 
 ### Modern Physically Based Renderer
 
-The new [Atom graphics engine](atom-guide) is a highly flexible, data-driven, and modern physically based renderer that can be extended for a wide variety of visual and performance needs.
+Open 3D Engine comes with the [Atom physically based renderer](atom-guide): A highly flexible, data-driven, and modern pipeline-based system that can be extended for a wide variety of visual and performance needs.
 
-Some of the features include:
+Some of Atom's features include:
 
 + Fully multi-threaded and modular renderer with future distributed rendering support
 + Vulkan, Metal, and DirectX 12 raytracing support
-+ Unified, flexible AZSL language with HLSL compatibility
-+ Render Pipeline Interface (RPI) allows for forward+, deferred, or hybrid
-renderer models
-+ No limitations! Create customizable render passes to match mobile, PC, console, and cloud hardware profiles
-+ Global illumination model allows forward or deferred rendering (per-mesh and per-material) with MSAA/SSAO/SSR support
-+ No restrictions on resolution sizes for reflection cubemaps
-+ Support for parallax correction, mixed reflections per render pass, and runtime editing for lighting artists
++ The AZSL shader language, an extension to HLSL designed for flexibility per rendering backend.
++ An abstracted pipeline interface allowing for platform-independent creation of forward+, deferred or hybrid
+renderers via a pass system.
++ No limitations on customizable render passes to match hardware restrictions.
++ A Global Illumination system that allows forward or deferred rendering on a per-mesh and per-material basis
+with MSAA/SSAO/SSR support.
++ No restrictions on resolution sizes for reflection cubemaps.
++ Support for parallax correction, mixed reflections per render pass, and runtime editing and visualization for light artists.
++ Fully multi-threaded and modular renderer with future distributed rendering support.
 
 New features are being added by the community regularly. Read the [Atom Documentation](/docs/atom-guide) to find out more!
 
@@ -54,10 +46,12 @@ For more information, see [the O3DE Gems documentation](/docs/user-guide/gems)\.
 
 ### Build with Familiar Tools
 
-+ New standard CMAKE build system, which includes support for: CTest, O3DE Gems, and automated code generation
-+ Projects generated are native IDE projects (Visual Studio 2017/2019, XCode, make, and others)
-+ Enables **Edit and Continue** and profiling support (depending on your IDE or tools)
-+ Proper dependency tree model to build only your targets of choice, with the correct dependencies
+Open 3D Engine uses the [CMake build tools](https://cmake.org/) for creating toolchain-specific build files, dependency management, testing, and automated code generation. Some of the advantages you get with O3DE's build system are:
+
++ Easy support for creating and running automated tests.
++ Your project has files created for, and are built with, your native IDE and toolchains.
++ Enables **Edit and Continue** and profiling when compiler tools offer support.
++ Creates and maintains a proper dependency tree for build targets, keeping them clean.
 
 For more information, see the following topics:
 
@@ -65,35 +59,39 @@ For more information, see the following topics:
 
 ### Industry Standard Hardware Accelerated Physics
 
-+ NVIDIA PhysX is the default physics library
-+ Data-driven design for frontend and backend computations, with independent simulation
-+ Physics API system separable for replacement or customization
+Open 3D Engine comes with support for the NVIDIA PhysX system, offering a frontend Gem for working with it. Like any other Gem, you can replace it with your own physics system. The advantages of using the O3DE PhysX support include:
 
-### Script Canvas 2.0&mdash;Visual Scripting for Everyone
++ Data-driven design for frontend and backend with independent simulation.
++ The core engine physics API can be used with any full replacement supporting it.
 
-+ JIT optimizations for a 350% peroformance improvement over Amazon Lumberyard 1.X
-+ Scripts compiles to both Python and LUA; C++ support planned
-+ Perform reusable rapid prototyping without rewriting the scripts due to optimized output
+### Script Canvas&mdash;Visual Scripting for Everyone
+
+Open 3D Engine uses the Script Canvas visual scripting language for authoring gameplay and interactivity. O3DE also offers support for the Lua scripting language and scripting through C++ directly, but Script Canvas offers the following advantages:
+
++ Compiles to Python or Lua
++ Future native code support (C++) planned.
++ Reusable rapid prototyping without need for rewrite due to optimized output.
 
 ### Robust Networking
 
-+ Highly flexible, TCP/UDP low-latency transport layer abstracted behind a simple API
-+ Encryption and compression support with a built-in simulator for packet latency, jitter, reordering, and loss
-+ Entity replication using unordered unreliable data replication for lowest possible latency
-+ Supports player-hosted and dedicated server models
-+ Local prediction latency compensation, as well as backward reconciliation for server authority
-+ Supports detachable player behaviors with automated desync detection and correction
+Open 3D Engine comes with a high-performance networking Gem that gives you the features you need for robust, performant communications and servers. Networking features include:
+
++ Highly flexible, TCP/UDP low latency transport layer abstracted behind a simplified API.
++ Encryption and compression support with built in simulator for latency, jitter, reorder and loss.
++ Entity replication using unordered unreliable data replication for lowest possible latency.
++ Support for both player hosted and dedicated server models.
++ Local prediction latency compensation with backward reconciliation for server authority.
++ Detachable player behaviors supporting automated desync detection and correction.
++ RPC and future elastic fault tolerant multiserver support with prediction and reconciliation.
 
 For more information, read [O3DE Networking](/docs/userguide/networking/intro.md)\.
 
-### Improved Asset Workflows and Handling
+### Data-driven Asset Workflows and Handling
 
-+ JSON-based material creation and management
-+ Asset Processor startup time reduced to seconds
-+ EMFX uses new shared file format for meshes and characters
-+ Optimized for modern GPU and streaming
-+ Full support for asynchronous loading of any asset type with blocking load support
-+ Reduction of CPU load, memory usage, and overall load times.
++ Text editor and external tools support is easy through JSON-based material creation and control.
++ The EMFX animation system uses a shared file format for mesh and characters.
++ Optimized for modern GPU and asset streaming.
++ Support for non-blocking, asynchronous loading of any asset type.
 
 ### Native Prefab Support
 
@@ -103,40 +101,35 @@ For more information, read [O3DE Networking](/docs/userguide/networking/intro.md
 
 ### Python-based UI and Media Tools
 
-+ Python extensions with access to Qt for Python, enabling custom editor components
-+ Asset builder manipulation with pre- and post-process step bindings, so you can modify processing at runtime
-+ Custom behavior for FBX and material processing to split, assign, and rehome assets
+The O3DE Editor and tools offer scriptable extension support through [Python 3](https://www.python.org/). Create custom editor components, automate processes, and extend your development environment. With O3DE's Python scripting support, you get:
+
++ Extensions with access to the Qt UX library used by the O3DE editor and tools.
++ Asset builder manipulations, including pre- and post-processing steps
++ Custom behaviors in FBX and materials processing, letting you split, assign, and rehome assets.
 
 ## High-performance Math Libraries
 
-+ All-new high-peformance math libraries with full SIMD support
-+ `AZ::Simd` API produces optimal SIMD code for x64 SSE, ARM Neon, or pure scalar code
-for fallback compatibility
-+ `AZ::Transform` has separate position, quaternion orientation, and scale fields
+All of Open 3D Engine is backed with a high-perfomance math library, designed to take advantage of modern CPU capabilities for fast and precise math.
+
++ Libraries use optimal SIMD code for x64 SSE and ARM platforms, and fallback scalar code where optimizations aren't available.
++ Transforms hold separate position, quaternion, and scale fields to reduce the number of necessary conversions.
 
 ### Simplified Project Management
 
-+ Project and Gem management greatly simplified with CMake and JSON
-+ Gems enabled in one line update to project JSON
-+ DLLs and enabled components defined in self-described Gem JSON
-+ Simple Python scripts for automation and creation of Gems and projects
+O3DE projects are managed through JSON configuration files and the CMake build system, making it simple for you to build custom management tools, or design and distribute your own customizations as Gems. O3DE's project design gives you:
 
-### Core APIscan you kick me the filename
++ Extending your project with an existing Gem is as easy as adding one line of JSON.
++ Each Gem comes with a JSON descriptor of its contents, enabled components, and libraries.
++ Python scripts with support for basic project management from the command line.
 
-+ [AZ::Interface](/docs/features/engine/az-interfac.mde) replacement for global single-handler EBuses used for rendering, physics, and audio
-+ 500% faster then EBus with direct function calls against interface, plus autocomplete support
-+ [AZ::Event](/docs/features/engine/az-event.md) 200% faster than EBus using C# event design patterns, and which replaces notification buses
-+ AZ::ScheduledEvent using timeslicing and priority queue with simple scheduling for no starvation
-+ [AZ::Console](user-guide/features/engine/console.md) supports the thread-safe network sync of console variables (cvars)
+### Flexible Code and Data Templates
 
-### Flexible Automation
+O3DE offers a code generator powered by [Jinja2 templates](https://jinja.palletsprojects.com/en/2.11.x/), giving you the capabilities to rapidly generate boilerplate code or large amounts of similar data. Some of the features of the code generator include:
 
-+ Replaces AzCodeGenerator improved expansion times by 10,000% with no custom binary requirements
-+ Integrated into CMake to allow data files and templates with expansion rules in cmake.txt
-+ Regex/wildcard match and replacement rules to support individual or bulk file processing
-+ Data-driven using XML or JSON documents, and uses **jinja2** as a templating language
++ Data-driven model powered by XML or JSON inputs.
++ Fully integrated into the CMake build system.
++ Regular expression and wildcard matching and replacement rules, letting you set up support for bulk file processing.
 
 ### White Box Tool
 
-+ Fast creation and manipulation of geometric volumes for rapid prototyping
-
++ Build levels quickly with O3DE's White Box Gem, letting you sculpt and manipulate geometric volumes quickly to get your world sketched out in-engine.
