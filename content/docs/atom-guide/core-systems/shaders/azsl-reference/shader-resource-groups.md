@@ -1,19 +1,23 @@
-## Shader Resource Group
-In AZSL, uniform constants and shader resources are declared through **Shader Resource Groups (SRGs)**. Data views and sampler states are declared and bundled in an SRG. It's common practice to define SRGs based on the frequency of the binding data. Common cases include per Entity, per Geometry, per Scene, per View, and per Material. For example, the view projection matrix associated with the camera should be declared as part of the PerView SRG because it only changes when the camera/view is updated; a position vector should be in the PerEntity group because everytime the entity's position changes in the scene, the PerEntity group gets updated.
+---
+title: Shader Resource Groups (SRG)
+description: Learn about how shader resource groups (SRGs) are used in the Atom renderer.
+---
 
-### SRG Binding Model
-Logically, SRGs follow this ideal binding model: 
-
-![SRG Binding Model](/static/images/atom-guide/core-systems/shaders/srg-binding-model.png)
-
-*[NOTE TO DEVS: Is this still an accurate model? Can we explain what's happening in the binding model?]*
-
+In AZSL, uniform constants and shader resources are declared through **Shader Resource Groups (SRGs)**. Data views and sampler states are declared and bundled in an SRG. It's common practice to define SRGs based on the frequency of the binding data. Common cases include per-object, per-scene, per-view, and per-material. For example, the view projection matrix associated with the camera should be declared as part of a per-view SRG because it only changes when the camera/view is updated; a position vector should be in the per-entity group because every time the entity's position changes in the scene, the per-entity group gets updated.
 
 ### SRG Definition Requirements
-When defining an SRG, you must declare its uniform constants and shader resources. You must also define and/or specify the semantic the SRG is built off of. The SRG semantic provides meta-data to the SRG that is used by the Atom Asset Builder. 
+Each SRG definition will include a name, an SRG semantic, and a list of constants and shader resources. 
+
+{{< note >}}
+SRGs may also be defined as multiple "partial" SRGs that get combined during compilation (see link to partial SRGs page).
+{{< /note >}}
 
 #### Defining an SRG Semantic
-A **Shader Resource Group (SRG) semantic** is a struct declared using the keyword `ShaderResourceGroupSemantic`. The semantic defines `FrequencyId`, which corresponds to the frequency which the SRG changes. It also defines `ShaderVariantFallback`, which is a fallback value for the support of shader variants. `ShaderVariantFallback` must be defined in a single SRG and is only necessary when the shader contains options. 
+Each Shader Resource Group (SRG) must indicate which SRG semantic it uses. The **Shader Resource Group (SRG) semantic** defines a _category_ of SRG, which primarily indicates the SRG's update frequency, but may include other metadata as well. It is declared using the keyword `ShaderResourceGroupSemantic`. The semantic defines `FrequencyId`, which corresponds to the frequency that the SRG changes. It may also define a `ShaderVariantFallback`, which is a fallback value for the support of shader variants. (`ShaderVariantFallback` may be defined in a single SRG and is only necessary when the shader contains shader options).
+
+For more information on SRG Semantic, see the [SRG Semantic](#srg-semantics-shaderresourcegroupsemantic) section below.
+
+While shaders can declare their own SRG semantics, Atom includes a collection of common semantics in `SrgSemantics.azsli` (see [SRGs and SRG Semantics in Atom](#srgs-and-srg-semantics-in-atom) section below).
 
 An SRG semantic is declared with the following syntax:
 ```glsl
@@ -28,7 +32,7 @@ ShaderResourceGroupSemantic <Name>
 - `<Fallback>` is the number of bits for the fallback value.
 
 #### Defining an SRG
-An SRG is a struct defined using the keyword, `ShaderResourceGroup`, which must inherit from a `ShaderResourceGroupSemantic`.  
+An SRG is a struct defined using the keyword, `ShaderResourceGroup` and must indicate a `ShaderResourceGroupSemantic`.  
 
 An SRG is declared with the following syntax:
 ```glsl
@@ -42,14 +46,15 @@ ShaderResourceGroup <Name> : <Semantic>
 - `<Data>` is one or more declaration for the binding data contained in the SRG.
 
 #### SRG Minimal Code Sample
-The following sample shows the minimal required syntax to declare an SRG. First, we declare the SRG semantic, `SRG_PerExample`. Then, we declare the SRG, `ExampleSRG`, which inherits from the semantic, `SRG_PerExample`. `ExampleSRG` contains a list of uniform constants and shader resources. 
+The following sample shows the minimal required syntax to declare an SRG. First, we declare the SRG semantic `SRG_PerDraw`. Then, we declare the SRG `ExampleSRG` which indicates the semantic `SRG_PerDraw`. `ExampleSRG` contains a list of uniform constants and shader resources. 
+
 ```glsl
-ShaderResourceGroupSemantic SRG_PerExample
+ShaderResourceGroupSemantic SRG_PerDraw
 {
     FrequencyId = 0;
 };
  
-ShaderResourceGroup ExampleSRG : SRG_PerExample
+ShaderResourceGroup ExampleSRG : SRG_PerDraw
 {
     // Resource declarations go here
     float4          m_uniformColor;
@@ -76,53 +81,58 @@ float4 MainPS() : SV_TARGET
 ```
 
 ### SRGs and SRG Semantics in Atom
-When defining an SRG, you must inherit a semantic. In Atom, SRG semantics are defined in the file **SrgSemantics.azsli**. To get the definitions of all available SRG semantics in your shader source file, add the following include directive at the top of your file. 
-```
-#include <Atom/Features/SrgSemantics.azsli
-```
-** *SrgSemantics.azsli is located in the folder, `dev\Gems\Atom\Feature\Common\Assets\ShaderLib\Atom\Features`.*
+When defining an SRG, it must indicate a semantic. In Atom, common SRG semantics are defined in the file **SrgSemantics.azsli**. To access the definitions of all available SRG semantics in your shader source file, add the following include directive at the top of your file. 
 
-The SRG semantics are `SRG_PerMaterial`, `SRG_PerObject`, `SRG_PerPass`, `SRG_PerSubPass`, `SRG_PerDraw`, `SRG_PerScene`, `SRG_PerView`, and `SRG_Single`, and their corresponding `FrequencyId`'s. Shader resources should be grouped into a SRG based on how frequently it changes. To get a clearer understanding of how to group shader resources into SRGs, consider the following examples: 
-- The global delta time belongs in the PerScene SRG because it is likely to change only with the scene.
-- The project matrix belongs to the PerView SRG because it depends on the camera/view.
-- The uniform data for the object (geometry) being drawn belongs in the PerObject SRG, regardless of materials or passes. 
-- The uniform data for the material used belongs in the PerMaterial SRG. Uniform data for objects or active passes does not belong here. 
+```cpp
+#include <Atom/Features/SrgSemantics.azsli>
+```
+{{< note >}}
+The file `SrgSemantics.azsli` is located in the folder, `Gems/Atom/Feature/Common/Assets/ShaderLib/Atom/Features`.
+{{< /note >}}
 
-Atom is built in with the following SRG semantics.  
-- **PerMaterial** (inherits from SRG_PerMaterial) 
-  - This SRG contains surface data specific for the material, but which can be shared between different geometries. 
-  - It should not contain any data which affects the object or its geometry.
-  - This is SRG is shared by all draw items generated from a single draw packet. 
+The common SRG semantics are `SRG_PerDraw`, `SRG_PerObject`, `SRG_PerMaterial`,  `SRG_PerSubPass`,  `SRG_PerPass`, `SRG_PerPass_WithFallback`, `SRG_PerView`, and `SRG_PerScene`. The file also includes a series of semantics for raytracing support. Shader resources should be grouped into an SRG based on how frequently it changes. To get a clearer understanding of how to group shader resources into SRGs, consider the following examples: 
+- The global delta time belongs in the per-scene SRG because it is likely to change only with the scene.
+- The project matrix belongs to the per-view SRG because it depends on the camera/view.
+- The uniform data for the object (geometry) being drawn belongs in the per-object SRG, regardless of materials or passes. 
+- The uniform data for the material used belongs in the per-material SRG. Uniform data for objects or active passes does not belong here. 
+
+Atom has the following SRG semantics built in.    
+- **SRG_PerDraw**
+  - This SRG contains data which is likely to change with every draw call, regardless of other SRGs. 
+  - This contains the fallback key for Shader Variants. 
+  - This SRG is unique for every draw item and not shared by any. 
   
-- **PerObject** (inherits from SRG_PerObject)
+- **SRG_PerObject**
   - This SRG contains data specific for the object or geometry being rendered. 
   - It should work with multiple materials and should not contain any data specific for materials. 
   - This SRG is shared by all draw items generated from a single draw packet. 
+    
+- **SRG_PerMaterial**  
+  - This SRG contains surface data specific for the material, but which can be shared between different geometries. 
+  - It should not contain any data which affects the object or its geometry.
+  - This SRG is shared by all draw items generated from a single draw packet. 
+  - SRGs of this type are normally managed by the material system. 
+  <!-- [todo] [Add a link to a page where we talk about the MaterialSRG, we might not have this yet] -->
+
+- **SRG_PerSubPass**
+<!-- [NOTE TO DEVS: Elaborate] -->
+
+- **SRG_PerPass**  
+  <!-- [NOTE TO DEVS: Elaborate] -->
   
-- **PerPass** (inherits from SRG_PerPass)  
+- **SRG_PerPass_WithFallback**  
   <!-- [NOTE TO DEVS: Elaborate] -->
 
-- **PerSubPass** (inherits from SRG_PerSubPass)
-<!-- [NOTE TO DEVS: Elaborate] -->
-
-- **PerDraw** (inherits from SRG_PerDraw)
-  - This SRG contains data which is likely to change with every draw call, regardless of other SRGs. 
-  - This is the default fallback for Shader Variants. 
-  - This SRG is unique for every draw item and not shared by any. 
-  
-- **SRG_PerScene** (inherits from SRG_PerScene)
-  - This SRG is compiled by the Asset Processor. In each game project, reads the file *\<Dev>/\<GameProject>/ShaderLib/scenes.srgi* and stitches together the SRG definitions from multiple files. 
-  - It should contain data shared for the whole scene, such as global time or the sky constants. These data belon to the PerScene SRG because they are likely to change only with the scene. 
-  - Any **.azsl* or **.azsli* file that needs the symbols defined in scenesrg.srgi must have the include directive: `#include <scenesrg.srgi>`
-  
-- **SRG_PerView** (inherits from SRG_perView)  
-  - This SRG is compiled by the Asset Processor. In each game project, reads the file *\<Dev>/\<GameProject>/ShaderLib/viewsrg.srgi* and stitches together the SRG definitions from multiple files. 
+- **SRG_PerView**
+  - This SRG is compiled by the Asset Processor. In each game project, reads the file `<Gproject>/ShaderLib/viewsrg.srgi` and stitches together the SRG definitions from multiple files. 
   - It should contain information related to the view (camera) changes, such as view, projection, inverse viewProjection matrices, and culling frustum.
   - It should contain data which is culled per view, such as lists of active lights and occlusion bodies. 
-  - Any **.azsl* or **.azsli* file that needs the symbols defined in scenesrg.srgi must have the include directive: `#include <viewsrg.srgi>`
+  - Any `*.azsl` or `*.azsli` file that needs the symbols defined in `scenesrg.srgi` must have the include directive: `#include <viewsrg.srgi>`
 
-- **SRG_Single** 
-<!-- [NOTE TO DEVS: Elaborate] -->
+- **SRG_PerScene**
+  - This SRG is compiled by the Asset Processor. In each game project, Asset Processor reads the file `<project>/ShaderLib/scenes.srgi` and stitches together the SRG definitions from multiple files. 
+  - It should contain data shared for the whole scene, such as global time or the sky constants. These data belong to the PerScene SRG because they are likely to change only with the scene. 
+  - Any `*.azsl` or *`.azsli`* file that needs the symbols defined in `scenesrg.srgi` must have the include directive: `#include <scenesrg.srgi>`
 
 
 ### SRG Semantics (ShaderResourceGroupSemantic)
@@ -185,7 +195,8 @@ VertexOutput MainVS(VertexInput input)
 }
 ```
 
-AZSL also supports deported function definitions. The following sample shows a valid SRG declaration. 
+AZSL also supports out-of-class method definitions. The following sample shows a valid SRG declaration.
+
 ```glsl
 ShaderResourceGroup PerObject : SRG_PerObject
 {
