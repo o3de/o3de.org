@@ -15,10 +15,12 @@ This tutorial covers the following concepts:
 - How to create a render pipeline
 - How to use them for common use cases
 
-The required source code can be found in the RPI Public module: *../dev/Gems/Atom/RPI/Code/Source/RPI.Public/*
+The required source code can be found in the RPI Public module: `Gems/Atom/RPI/Code/Source/RPI.Public/`
 
 ## Create an RPI Scene
-Scenes are created by instantiating an instance of `RPI::Scene`. Before creating a scene, you must decide what kind of graphics features you want to enable within this scene. To enable the features processors, you can add them in the `RPI::SceneDescriptor` when you create the scene. It's recommended to enable or disable feature processors in a scene before adding any render pipelines to it. However, you can also enable or disable feature processers after the scene is created. Another way to enable feature processors is to call `EnableAllFeatureProcessors` immediately after the scene is created. This enables all available feature processors for the scene. 
+Scenes are created by instantiating an instance of `RPI::Scene`. You must also decide what graphics features you want in this scene. Feature processors are set at the time of object construction, but can be enabled or disabled afterwards. Another way to enable feature processors is to call `RPI::Scene::EnableAllFeatureProcessors()` immediately after the scene is created. This enables all available feature processors for the scene. 
+
+<!-- @VickyAtAZ Are any features enabled by default? Or must we always specify whether we want to enable a feature? -->
 
 After a scene is created and feature processors are enabled, you must activate and register to the RPISystem by calling `Activate` and `RegisterScene`. This is necessary to update and render the scene properly. 
 
@@ -41,17 +43,22 @@ m_scene2->Activate();
 RPI::RPISystemInterface::Get()->RegisterScene(m_scene2);
 ```
 
-*Note: Atom's built-in feature processors are included in the Atom Gem. Their spource files (.cpp) can be found in the folder ../dev/Gems/Atom/Feature/Common/Code/Source/\<feature-processor>/.*
+{{< note >}}
+ Atom's built-in feature processors are included in the Atom Gem. Their spource files (.cpp) can be found in the folder Gems/Atom/Feature/Common/Code/Source/\<feature-processor>/.
+{{< /note >}}
 
-*Note: The name of the feature processor is the name associated with the AZ_RTTI declared in the feature processor's class. The AZ_RTTI can be found in the feature processor's header file which is located in ../dev/Gems/Atom/Feature/Common/Code/Include/Atom/Feature/\<feature-processor>/.* 
+{{< note >}}
+ The name of the feature processor is the name associated with the AZ_RTTI declared in the feature processor's class. The AZ_RTTI can be found in the feature processor's header file which is located in Gems/Atom/Feature/Common/Code/Include/Atom/Feature/\<feature-processor>/.
 
-*For example, the name of the DynamicDrawFeatureProcessor is "AZ::Render::DynamicDrawFeatureProcessor" and its class's AZ_RTTI is defined as such:  
-`AZ_RTTI(DynamicDrawFeatureProcessor, "{51075139-CB74-4BED-8B6A-8440B53A9EAA}", AZ::RPI::FeatureProcessor)`.*
+For example, the name of the DynamicDrawFeatureProcessor is "AZ::Render::DynamicDrawFeatureProcessor" and its class's AZ_RTTI is defined as such:  
+`AZ_RTTI(DynamicDrawFeatureProcessor, "{51075139-CB74-4BED-8B6A-8440B53A9EAA}", AZ::RPI::FeatureProcessor)`.
+{{< /note >}} 
 
-## Set up the scene's SRG
+## Set up the scene's shader resource group (SRG)
 If any shaders in your project use shader constants from SceneSrg, then you must set up the constant values for your scene's shader resource group (SRG). This is done by adding a callback function to the scene. You only need to update constants in the SceneSrg if they are used by any shaders. 
 
-In the following example, your SceneSrg contains a constant, `m_time`, which needs be updated every frame. 
+In the following example, your SceneSrg contains a constant, `m_time`, which needs to be updated every frame. 
+
 ```cpp
 // Define the call back function 
 RPI::ShaderResourceGroupCallback callback = [this](RPI::ShaderResourceGroup* srg)
