@@ -12,7 +12,7 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 The console found inside `AzCore` is a console and cvar system intended to replace the legacy CryEngine console and cvar system\. This system is free of any CryEngine code, and depends only on `AzCore`\.
 
 `AZ::Console` features:
-+ ***Stubbed*** support for multiplayer \(as of v1\.24\)\. O3DE will eventually enable cvar replication across multiplayer instances using GridMate\.
+
 + Basic access protections and anti\-cheat mechanisms for locking down cvars and cfuncs in release builds\.
 + Default support for several C\+\+ types, including bool \(Boolean\), stdint \(all types\), floats, doubles, vectors and quaternions, and enums \(enumerations\)\.
 + Flexible and expandable type support\. You can add support for new cvar types without altering the console code directly\.
