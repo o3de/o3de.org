@@ -38,7 +38,7 @@ New features are being added by the community regularly. Read the [Atom Document
 
 ### Modular Engine and Components
 
-+ Take only the bits your project needs! No need to adopt the entire engine, as all objects are now Gems (libraries with standard interfaces), including Core O3DE modules and components
++ Take only the bits your project needs! No need to adopt the entire engine, as all objects are now Gems (libraries with standard interfaces), including Core O3DE modules and components.
 + Precompiled binary, library, and header support for engine modules and Gems. Adding or removing precompiled Gems do not require project recompilation. Upgrading to new engine versions only require resolving any compile issues in project code.
 + Easily customize engine components and replace prebuilt Gems with your own custom modules!
 
@@ -68,7 +68,7 @@ Open 3D Engine comes with support for the NVIDIA PhysX system, offering a fronte
 
 Open 3D Engine uses the Script Canvas visual scripting language for authoring gameplay and interactivity. O3DE also offers support for the Lua scripting language and scripting through C++ directly, but Script Canvas offers the following advantages:
 
-+ Compiles to Python or Lua
++ Compiles to Python or Lua.
 + Future native code support (C++) planned.
 + Reusable rapid prototyping without need for rewrite due to optimized output.
 
@@ -95,16 +95,16 @@ For more information, read [O3DE Networking](/docs/userguide/networking/intro.md
 
 ### Native Prefab Support
 
-+ Reusable assets with complete properties, components, and hierarchies
-+ Mergeable and diffable human readable text format
-+ Dynamic placement and management of spawnables
++ Reusable assets with complete properties, components, and hierarchies.
++ Mergeable and diffable human readable text format.
++ Dynamic placement and management of spawnables.
 
 ### Python-based UI and Media Tools
 
 The O3DE Editor and tools offer scriptable extension support through [Python 3](https://www.python.org/). Create custom editor components, automate processes, and extend your development environment. With O3DE's Python scripting support, you get:
 
 + Extensions with access to the Qt UX library used by the O3DE editor and tools.
-+ Asset builder manipulations, including pre- and post-processing steps
++ Asset builder manipulations, including pre- and post-processing steps.
 + Custom behaviors in FBX and materials processing, letting you split, assign, and rehome assets.
 
 ## High-performance Math Libraries
