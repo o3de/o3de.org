@@ -1,12 +1,16 @@
-# Types
-This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For more information on HLSL, see the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl). 
+---
+title: AZSL Types
+description: The full reference for built-in types unique to the AZSL shader language.
+---
+
+This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For HLSL type reference, see the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-data-types). 
 
 ## Arrays
-Arrays are commonly used in shaders to hold buffers or textures. Arrays inside Shader Resource Groups (SRGs) must have an array dimension of an expression that can be resolved at build time. It must be a direct integer literal, or an identifier with a literal initializer, or an identifier that is initialized as a copy to another identifier with a literal initializer. This limitation only applies to fields within SRGs. In other cases, AZSLc will preserve array specifiers verbatim when outputting HLSL. As long as DXC supports a particular array specifier expression, it will work in AZSL too. 
+Arrays are commonly used in shaders to hold buffers or textures. Arrays inside Shader Resource Groups (SRGs) must have an array dimension of an expression that can be resolved at build time. Array bounds must be an integer literal, an identifier with a literal initializer, or an identifier that is initialized as a copy to another identifier with a literal initializer. This limitation only applies to fields within SRGs. In other cases, AZSLc will preserve array specifiers verbatim when outputting HLSL. As long as DXC supports a particular array specifier expression, it will work in AZSL too. 
 
-Currently, AZSLc does not support constant folding, or the process of interpreting math expressions in array specifiers. 
+Currently, AZSLc doesn't have support for interpreting expressions in array specifiers.
 
-The following code sample demonstrates the ways to initialize an array dimension.
+The following code sample demonstrates how to initialize an array dimension:
 ```cpp
 static const int two = 2;
 static const int three = 3;
@@ -17,15 +21,13 @@ ShaderResourceGroup MaterialSrg : SRG_PerMaterial
 {
     float a[two];       // ok
     float b[copyOfTwo]; // ok
-    float c[six];       // Semantic error #14: array dimensions must be an easy-to-fold build time constant ( [?] ) in external resource declaration
+    float c[six];       // Error: Value is the result of an expression
 }
 ```
 
-AZSLc can compile dynamic expressions in arrays that are not reflected. For example, an array defined within a function can contain a complex dimension. As long as DXC validates it, it will pass through AZSLc. However, for external bound resources, AZSLc needs to reflect the layout. 
-
-<!-- [WRITER NOTE: Need help understanding this -- asked in wiki] -->
-
 ## Matrix Ordering
+It's important to note that the default matrix ordering for the AZSL language, and the matrix ordering for Atom are opposite. Read the following details carefully.
+
 Similar to HLSL, AZSL assumes the column-major as a default matrix packing order, meaning each column of the matrix is packed into a single constant register. However, Atom explicitly set the default matrix packing order to be the row major, meaning each row of the matrix is packed into a single constant register. If you want to be explicit, use either `row_major` or `column_major` keyword in front of uniform matrices. 
 
 AZSL does not support the [Microsoft DirectX HLSL's `pack_matrix pragma` directive](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-appendix-pre-pragma-pack-matrix). All preprocessing is handled by clang. 
@@ -53,7 +55,7 @@ void Func()
 ```
 
 ## `typedef` and `typealias`
-The keyword `typedef` was introduced in HLSL6 and is supported in AZSL. It follows the same syntax rules as in C. AZSL also contains the keyword `typealias`, which behaves similarly to `using` in C++11. 
+AZSL supports the keyword `typedef` and it follows the same syntax rules as in C. AZSL also contains the keyword `typealias`, which behaves similarly to `using` in C++11. 
 
 To demonstrate `typedef` and `typealias`, consider the following AZSL code sample.
 ```cpp
@@ -65,7 +67,7 @@ float4 MainPS(UVType uv) : SV_Target0
 }
 ```
 
-In the context above, the reference to the `typealias`’s name `UVType`, appears in declarative code (the signature of MainPS definition). AZLSc translates it fully for the HLSL side. 
+In the context above, the reference to the name `UVType` for the `typealias`, appears in declarative code (the signature of MainPS definition). AZLSc translates it fully for the HLSL side. 
 
 This results in the following HLSL code.
 
@@ -100,8 +102,7 @@ typedef ::S2 NewS2;
 
 ## User-Defined Type Definition and Immediate Usage
 
-User-defined types can be declared and immediately used 
-In AZSL, it is valid to declare variables and define the variable's type as shown in the code sample below. However, this is not possible to within function argument. 
+User-defined types can be declared and immediately used. In AZSL, it is valid to declare variables and define the variable's type as shown in the code sample below. However, this is not possible within the function argument. 
 ```cpp
 // Ok - Declaring a variable (var) while defining its type (struct S)
 struct S { int i; } var;   

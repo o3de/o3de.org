@@ -1,6 +1,10 @@
-# Classes
-SImilar to HLSL, classes in AZSL can be defined using the `class` keyword, and they can inherit from a single class or from multiple interfaces. However, there are a couple of points to consider when working with classes in AZSL. 
-- Late symbols are not tolerated in the class method scope; this can be worked around by using deported method definition. 
+---
+title: AZSL Classes
+description: Examples, limitations, and restrictions on `class` objects in the Atom AZSL shader language.
+---
+
+Similar to HLSL, classes in AZSL can be defined using the `class` keyword, and they can inherit from a single class or from multiple interfaces. However, there are a couple of points to consider when working with classes in AZSL:  
+- Late symbols are not tolerated in the class method scope. You can work around this by using out-of-class method definitions. 
 - Repeatedly qualifying in-class method definitions is tolerated.
 - Variables defined in class cannot be initialized immediately because there are no constructors in AZSL. 
 
@@ -9,7 +13,7 @@ These points are described in further detail below.
 ## Late Symbols
 In the class method scope, you should not reference symbols that are declared later in the class because the symbols will not be linked properly. 
 
-Consider the following AZLS code sample, where method `M` references the symbol `v` before it is declared. 
+Consider the following AZSL code sample, where method `M` references the symbol `v` before it is declared. 
 ```cpp
 class C
 {
@@ -17,13 +21,13 @@ class C
     int v; 
 };
 ```
-This is not good practice, however it will not cause an error in the compiler. AZSLc is permissive, meaning if it can't verify a construct, it will let the construct pass as is. The converted HLSL code will have the same behavior because HLSL6 handles classes and methods.
+This is not good practice, however it will not cause an error in the compiler. AZSLc is permissive, meaning if it can't verify a construct, it will let the construct pass as-is. The converted HLSL code will have the same behavior because HLSL6 handles classes and methods.
 
 However, a problem might occur if the symbol `v` needs a translation. In such case, AZSLc cannot perform the translation within M()'s body. Translations are commonly needed in nested user-defined types, which are declared within SRGs or functions. 
 
-We can verify that a symbol isn't properly handled by AZSLc by using the `--dumpsym` option on that program as shown below. Notice that symbol `'/C/v'` has no references. Also, the symbol is not shown in line 3 within method `M`'s body.
+We can verify that a symbol isn't properly handled by AZSLc by using the `--dumpsym` option on that program as shown below. Notice that symbol `'/C/v'` has no references. Also, the symbol is not shown in line 3 within the body of method `M`.
 
-```cpp
+```yaml
 Symbol '/C':
   kind: Class
   references:
@@ -62,7 +66,7 @@ Symbol '/C/v':
   storage:
 ```
 
-Alternatively, we can declare the symbol `v` before calling it in method `M`, as shown in the following code. The symbol `'C/v'` now has a reference in line 4. This refers to the symbol's appearance within `M`'s body.
+Alternatively, we can declare the symbol `v` before calling it in method `M`, as shown in the following code. The symbol `'C/v'` now has a reference in line 4. This refers to the symbol's appearance within the body of `M`.
 
 ```cpp
 class C
@@ -71,7 +75,9 @@ class C
     void M(){ v = 2; }
 };
 ```
-Now, if we run the `--dumpsym` option on the code, we get the result below. 
+
+Now, if we run the `--dumpsym` option on the code, we get the following result: 
+
 ```cpp
 Symbol '/C':
   kind: Class
@@ -112,7 +118,7 @@ Symbol '/C/M':
     - '/C/M()'
 ```
 
-To summarize, if you refer to symbols that are declared at a later point, it is not guaranteed that the emission will be correct. Unlike C++, AZSL doesn't support multi-pass compilation and is not able to see symbols declared later. In some cases, the problem might not occur if the symbols do not undergo any migration or rename. Still, it is not recommended. The warning appears as an "undeclared reference to identifier" from DXC.
+If you refer to symbols that are declared at a later point, it's not guaranteed that the emission will be correct. Unlike C++, AZSL doesn't support multi-pass compilation and is not able to see symbols declared later. In some cases, the problem might not occur if the symbols aren't moved or renamed. This warning appears as an "undeclared reference to identifier" from DXC.
 
 This might also cause a greater risk in lookups, such as in the AZSL code below. Picking an unrelated identifier with a mutated name might result in a silent, false-positive build.
 
@@ -163,8 +169,8 @@ register(b0);
 In this instance, DXC complains with `8:19: error: no member named 'SRG_SRGConstantBuffer' in the global namespace`. To resolve this, add `static` in front of `int v;`. This results in a silent success built in both AZSLc and DXC. 
 
 
-## Deported Method Definition
-It is recommended to work around the late symbols problem by using deported definitions, or out-of-class definitions.
+## Out-of-Class Method Definition
+It is recommended to work around the late symbols problem by using out-of-class method definitions.
 
 The following code shows examples of deported method definitions. The functions `GetTransform` and `Apply` are first declared in the class and are later defined outside of the class. 
 ```cpp
@@ -252,14 +258,3 @@ class A
 ```
 
 When introducing a new symbol, an unqualified identifier is required. However, when referencing an existing symbol, a qualified identifier is permitted. 
-
-## Member Initializers
-<!-- [WRITER NOTE: Reword] -->
-In C++11, members can be initialized immediately in the class declaration. This behavior is not permitted in AZSL (nor in HLSL) because there are no constructors. 
-
-```cpp
-class C
-{
-    int member = 3;  // #EC 43 default member init not supported
-};
-```

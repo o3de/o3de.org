@@ -1,4 +1,8 @@
-# Root Signatures
+---
+title: Root Signatures
+description: Learn how to create root signatures to pass data to your shaders in O3DE Atom renderer.
+---
+
 Root Signatures are a means of passing data to shaders. Root signatures can be defined in AZSL in a similar way to HLSL. (See the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3d12/specifying-root-signatures-in-hlsl) on specifying root signatures in HLSL). 
 
 ## `rootconstant`
@@ -22,4 +26,6 @@ float4 MainPS(float2 uv) : SV_Target0
 }
 ```
 
-*Note: Using the `const`* qualifier on a `rootconstant` will produce a warning because the data is already considered `const`. 
+{{< note >}}
+Using the `const`* qualifier on a `rootconstant` will produce a warning because the data is already considered `const`.
+{{< /note >}}

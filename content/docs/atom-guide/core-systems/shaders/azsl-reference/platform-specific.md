@@ -1,15 +1,44 @@
-# Platform Specific Shader Code
+---
+title: Platform-specific Shader Code
+description: Learn how to create AZSL shaders which offer platform-specific features or support.
+---
+
 AZSLc is a cross-platform compatible compiler, but there are several ways to introduce platform specific code in AZSL. 
-[NOTE FOR DEVS: What are some common use cases for using compiler]
+<!-- [NOTE FOR DEVS: What are some common use cases for using compiler. 
+The following needs to be reviewed by the author.
+----
+In order to explain this properly it may be better to explain how Azslc fits in the shader pipeline as a whole. I don't know if there is a page of this but we need something that describes at a high level how all the compilers work across different backends. For example
+
+DX12 pipeline looks like this Azslc->dxc->bytecode
+Vulkan pipeline looks like this Azslc->dxc->bytecode
+Metal pipeline looks like this Azslc->dxc->spirv-cross->bytecode
+
+We can write platform specific code using attributes. There are two types of attributes - global and regular
+1 - Regular attribute- We can write platform specific namespace like vk:: before a keyword which is well understood by dxc. Azslc passes these keywords on to dxc which ignores it for dx12 backend but takes proper action when generating spirv code for vulkan backend. We use this in cases like
+
+Dual source blending
+[[vk::location(0), vk::index(0)]]
+float4 m_color0 : SV_Target0;
+Declaring pointsize
+[[vk::builtin("PointSize")]]
+float m_pointSize : PSIZE;
+
+Global attributes - We don't currently use this in our shaders at the moment but they can be used. For example we can use them to include backend specific headers like so.
+-[[global::dx::verbatim("#include "simple-surface-dx.azsli"")]]
+] -->
 
 ## AZSL Headers
 There is a header file for each graphics API per platform. When the shader code for the respective platform is compiled, the header files are added to each AZSL shader file (*.azsl*). By specifying static constants, functions, and interfaces, you can customize the behavior of the shader code per platform. The constants should not alter the behavior of SRG Layouts, input assembly, output merger, and other commonly shared data. 
 
-*Note: Header files for each platform can be found in their respective folders in ../dev/Gems/Atom/Asset/Shader/Code/AZSL/Platform/.*
+{{< note >}}
+Header files for each platform can be found in their respective folders in `/Gems/Atom/Asset/Shader/Code/AZSL/Platform/`.
+{{< /note >}}
 
-Another header, AzslcHeader.azsli, is provided when compiling SRG Layouts and other commonly shared data. It acts as an interface, where everything should be declared. However, since it's only used for reflection, function definitions and similar implementations can be left empty. 
+Another header, `AzslcHeader.azsli`, is provided when compiling SRG Layouts and other commonly shared data. It acts as an interface, where everything should be declared. However, since it's only used for reflection, function definitions and similar implementations can be left empty. 
 
-*Note: AzslcHeader.azsli can be found in the folder ../dev/Gems/Atom/Asset/Shader/Code/AZSL/Platform/Common/.*
+{{< note >}}
+The file `AzslcHeader.azsli` can be found in the folder `/Gems/Atom/Asset/Shader/Code/AZSL/Platform/Common/`.
+{{< /note >}}
 
 <!-- 
 What do these examples show? Why are they helpful in this section?
@@ -34,21 +63,19 @@ The attributes live in the shader code directly and allow customizeable behavior
 
 There are two types of attributes: 
 - **global** attributes are detached from their declaration context and re-emitted as top level declarations in their order of appearance. 
-- **regular** attributes (non-global, or attached) are attached to the next declaration. 
+- **regular** attributes are attached to the next declaration. 
 
-### Global Attributes
 ```cpp
 // Old example from FullscreenVertexUtility.azsli
 // This example only exists to describe the use of the verbatim attribute - the same result can be achieved by using static const in an AzslHeader file
 [[global::dx::verbatim("#define TOPLEFT true")]]
 [[global::vk::verbatim("#define TOPLEFT false")]]
 [[global::mt::verbatim("#define TOPLEFT true")]]
-[[global::pv::verbatim("#define TOPLEFT true")]]
  
 // The global scope in the attribute name is required to identify it as a global attribute - this is the only exception of how attributes are declared in other languages, for example in C++
 // The namespace (in this case after the global:: scope) acts as a filter - this shader should be compiled with the --namespace=XYZ command line argument to activate it
 // Multiple namespaces can be enabled at the same time, for example --namespace=dx,pc,win10
-// AZSLc is executed from the platform-specific ShaderPlatformInterface which is unique for DirectX12 (dx), Vulkan (vk), Metal (mt) and Provo (pv)
+// AZSLc is executed from the platform-specific ShaderPlatformInterface which is unique for DirectX12 (dx), Vulkan (vk), and Metal (mt)
 // The namespaces in this example are already fixed to work with the 4 graphics API so you can use them
  
  
@@ -76,7 +103,7 @@ float4 GetVertexPositionAndTexCoords(uint vertexID)
  
  
 [[global::dx::verbatim("#include \"simple-surface-dx.azsli\"")]]
-[[global::pv::verbatim("#include \"simple-surface-ps.azsli\"")]]
+[[global::vk::verbatim("#include \"simple-surface-ps.azsli\"")]]
  
 // ...
  
@@ -93,7 +120,7 @@ float4 VerbatimColor(float4 inColor)
 }
 ```
 
-### Attributes
+### Regular Attributes
 ```cpp
 // Attributes and attribute specifier sequences which don't have the global namespace are considered regular and are attached to the next declaration, just like normal attributes
 // AZSLc doesn't make sense of most of them, but re-emits them anyway!

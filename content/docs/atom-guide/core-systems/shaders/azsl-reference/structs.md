@@ -1,23 +1,37 @@
-# Structs
-Structs are a user-defined type and are used in a similar way as classes. They are defined by the keyword `struct`. Unlike classes, structs must be POD ([plain old data); they do not contain a constructor, destructor, or virtual member functions. Due to these limitations, structs offer better performance. One common use case for structs in AZSL is to group shader inputs and outputs. 
+---
+title: Structs
+description: Learn about Structs in AZSL shading language.
+---
+
+Structs in AZSL are very similar to structs in HLSL (see [Microsoft DirectX HLSL - Struct](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-struct) documentation). They can be used to generally group and organize data in a shader, and are commonly used to define the vertex input and output layout for shader entry points.
 
 <!-- [NOTE TO DEVS: Do you have another concrete example for when structs are useful?] -->
 
 ## Nested Structures
 In AZSL, it is possible to define a nested struct (or class). However, nested structs are not supported as vertex shader entry point input. Also, in Metal, nested structs are not supported in ConstantBuffers. 
 
-<!-- [NOTE TO DEVS: I want to provide a useful example of nested structs. Can you suggest improvements to the sample below?] -->
 Below is an example of a nested struct. 
 ```glsl
-struct VSInput
+struct PbrSurface
 {
-    struct myColor {
-        float r;
-        float g;
-        float b;
-    } MyColor;
-
-    MyColor color1;
-    MyColor color1;
+    float3 position;
+    float3 normal;
+    float3 albedo;                   
+    float3 specularF0;
+    float roughness;
+    
+    struct Anisotropy
+    {
+        float3 tangent; 
+        float3 bitangent;   
+        float2 factors;
+    } anisotropy;
+    
+    struct ClearCoat
+    {
+        float factor;           
+        float roughness;        
+        float3 normal; 
+    } clearCoat;
 };
 ```
