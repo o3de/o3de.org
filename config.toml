@@ -1,4 +1,4 @@
-baseURL = "https://o3de.org"
+baseURL = "https://o3deorg.netlify.app"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
