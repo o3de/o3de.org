@@ -1,6 +1,7 @@
 ---
 title: "Contributing to Open 3D Engine (O3DE)"
 toc: true
+menu_uuid: contributing
 ---
 
 {{< preview-new >}}
