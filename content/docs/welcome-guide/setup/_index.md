@@ -5,6 +5,8 @@ title: Setting up Open 3D Engine
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 **Topics**
 
 + [System requirements](requirements.md)

@@ -5,6 +5,8 @@ title: Using the Perforce Plugin with O3DE
 weight: 700
 ---
 
+{{< preview-migrated >}}
+
 O3DE integrates with Perforce as a source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.
 
 You can use the **Perforce Settings** dialog box to configure how O3DE connects to Perforce\. The following settings are cached and populated when the dialog box opens:
