@@ -1,6 +1,6 @@
 ---
 title: "Atom User Guide"
-description: "Atom User Guide?"
+description: Atom User Guide
 date: 2021-03-04
 toc: true
 weight: 400

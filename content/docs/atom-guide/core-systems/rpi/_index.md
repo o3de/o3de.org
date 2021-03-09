@@ -8,6 +8,7 @@ weight: 400
 
 - [RPI Overview](rpi.md)
 - [RPI System](rpi-system.md)
+- Pass System
   - [Pass System Overview](pass-system/pass-system.md)
   - [Pass Template File Specification](pass-system/pass-template-file-spec.md)
   - [Authoring Passes](pass-system/authoring-passes.md)
