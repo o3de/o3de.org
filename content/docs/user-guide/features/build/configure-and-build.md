@@ -62,11 +62,11 @@ When building using the CMake CLI, you'll need to have a build output directory 
     * `-S` : Source directory, where the root CMake file is.
     * `-G` : The type of generator to use. If you're using Visual Studio 2017, your generator is `Visual Studio 15 2017`.  
   
-    The other arguments are custom definitions for the build script, used by O3DE:  
-    
+    The other arguments are custom definitions (`-D`) for the build script, used by O3DE:  
+
     * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
     * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
-    * `DLY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
+    * `LY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
 
 {{< warning >}}
 You can create your build output directory anywhere, but in order to run your O3DE project, the build output *must* be a subdirectory of your O3DE install. This is so that
@@ -83,7 +83,7 @@ CMake also offers an intuitive, GUI-based tool that you can use instead of the c
 * Your configure may fail at various points due to unset values. Make sure that you set the following parameters:
   * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
   * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
-  * `DLY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
+  * `LY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
 
 ## Build O3DE targets with CMake
 
@@ -110,7 +110,7 @@ The following table is a high-level overview of what each build configuration do
 | --- | --- |
 | **Debug** | Maximum level of debugging support. Optimizations including function inlining will be avoided, making it easier to trace code. Some compilers may disable stack overflow or other memory protection runtime checks, making this the best build configuration for inspecting certain types of bugs affecting the stack. In supported IDEs, this also enables "Edit and continue" support. |
 | **Profile** | Debugging symbol support, but optimizations are enabled (equivalent to clang `-O2`, non-aggressive optimizations.) This is the recommended profile for daily workflows, as it's the most representative of a release build but with symbols enabled. |
-| **Release** | For your final release build. Non-aggressive optimizations and no debugging information. | 
+| **Release** | For your final release build. Non-aggressive optimizations and no debugging information. |
 
 ### Build your project
 
