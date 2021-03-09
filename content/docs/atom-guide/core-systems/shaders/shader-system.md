@@ -16,7 +16,7 @@ The Asset Processer has several builders that work together to process .shader, 
 **AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most constructs that works in HLSL will work in AZSL as well. A key difference between AZSL and HLSL is the use of **Shader Resource Groups (SRGs)**, which make it easier to write shaders for multiple platforms and populate the shader inputs at runtime. Also, **shader options** simplify the process of generating multiple shader variants for optimizing shader bytecode. 
 <!-- [WRITER NOTE] How can i improve this paragraph by eliminating "easy" and "simple" -->
 
-The **AZSL compiler (AZSLc)** is a “transpiler” that translates AZSL into HLSL. It is then passed to common shader compilers like DXC.exe to compile bytecode for the target platforms. 
+The **AZSL compiler (AZSLc)** is a "transpiler" that translates AZSL into HLSL. It is then passed to common shader compilers like DXC.exe to compile bytecode for the target platforms. 
 
 <!-- [todo] Further details on shader compilers can be found in the AZSL Reference. -->
 
@@ -45,7 +45,7 @@ The shader asset file includes the following elements:
   
   For the full list of settings, see `ShaderCompilerArguments::Reflect` in `Gems\Atom\RHI\Code\Source\RHI.Edit\ShaderCompilerArguments.cpp`. 
   {{< note >}}
-AZSLc is just the first compiler in the chain, that generates HLSL code. There are various other compilers, like dxc and spirv-cross, that perform additional translation and compilation
+AZSLc is just the first compiler in the chain, that generates HLSL code. There are various other compilers, like dxc and spirv-cross, that perform additional translation and compilation. 
   {{< /note >}}
   
 
