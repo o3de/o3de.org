@@ -1,6 +1,8 @@
 <!-- [WRITER NOTE: Don't review. Section is incomplete.] -->
 # AZSLc Validation
 
+{{< preview-new >}}
+
 <!-- [Future Work] 
 This information should be extended into a whole section about AZSLc and how it handles validation.  -->
 

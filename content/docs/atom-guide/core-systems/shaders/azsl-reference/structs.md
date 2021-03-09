@@ -3,6 +3,8 @@ title: Structs
 description: Learn about Structs in AZSL shading language.
 ---
 
+{{< preview-new >}}
+
 Structs in AZSL are very similar to structs in HLSL (see [Microsoft DirectX HLSL - Struct](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-struct) documentation). They can be used to generally group and organize data in a shader, and are commonly used to define the vertex input and output layout for shader entry points.
 
 <!-- [NOTE TO DEVS: Do you have another concrete example for when structs are useful?] -->

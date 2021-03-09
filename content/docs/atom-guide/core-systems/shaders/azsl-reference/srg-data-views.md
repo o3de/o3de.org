@@ -4,6 +4,8 @@ description: Learn about shader resource group (SRG) data views and how they fit
 ---
 <!-- [WRITER NOTE: This page needs more information and more work.] -->
 
+{{< preview-new >}}
+
 Data views include *constant buffer view*, *shader resource view* (textures and buffers), and *unordered access view* (textures and buffers). Every SRG binds to a user-supplied data view. They can be declared inside function bodies and as part of function signature because they don't implicitly bind to shader uniforms or shader variables. 
 
 Here are a couple of points regarding how data views are processed:

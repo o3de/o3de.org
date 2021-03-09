@@ -5,6 +5,8 @@ date: 2021-03-09
 toc: false
 ---
 
+{{< preview-new >}}
+
 This section goes over the elements of a PassTemplate (`*.pass`) file. Note that each element has an equivalent in C++ (refer to the API reference). 
 
 <!-- [TODO] Link to API reference -->

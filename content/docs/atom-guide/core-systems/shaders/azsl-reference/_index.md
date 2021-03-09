@@ -4,6 +4,8 @@ description: A reference for the AZSL shader language used by the O3DE Atom rend
 weight: 200
 ---
 
+{{< preview-new >}}
+
 This section covers notable features in the AZSL language. It does not cover the AZSL language to its full extent because AZSL is an extension of HLSL. (For the full HLSL language, read the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl).) Generally, the rules that apply to HLSL are the same for AZSL. The main exception to this is AZSL's Shader Resource Group (SRG), which encapsulates shader resource data. Other differences between the AZSL and HLSL language, including details about SRGs, are listed in the following pages. 
 
 <!-- 

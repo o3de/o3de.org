@@ -4,6 +4,8 @@ description: Learn about creating AZSL shader variants in code with the 'option'
 ---
 A **shader variant** is an alternate version of a shader that can have some or all of its shader options statically compiled into the bytecode. This is an optimization that can help reduce *dynamic branching*. 
 
+{{< preview-new >}}
+
 For example, the original shader code might have branching logic, like `if(shadowsEnabled)`, to perform additional calculations for shadows. If the value of `shadowsEnabled` is declared to be a shader option, then you can make two shader variants: one where `shadowsEnabled` is true and one where it is false. At runtime, one of these shader variants is automatically selected depending on whether shadows should be enabled, rather than forcing the GPU to check the condition dynamically.
 
 <!-- [todo] For more information on Shader Variants, see __ -->

@@ -3,6 +3,8 @@ title: AZSL Classes
 description: Examples, limitations, and restrictions on `class` objects in the Atom AZSL shader language.
 ---
 
+{{< preview-new >}}
+
 Similar to HLSL, classes in AZSL can be defined using the `class` keyword, and they can inherit from a single class or from multiple interfaces. However, there are a couple of points to consider when working with classes in AZSL:  
 - Late symbols are not tolerated in the class method scope. You can work around this by using out-of-class method definitions. 
 - Repeatedly qualifying in-class method definitions is tolerated.

@@ -3,6 +3,8 @@ title: Shader Resource Groups (SRG)
 description: Learn about how shader resource groups (SRGs) are used in the Atom renderer.
 ---
 
+{{< preview-new >}}
+
 In AZSL, uniform constants and shader resources are declared through **Shader Resource Groups (SRGs)**. Data views and sampler states are declared and bundled in an SRG. It's common practice to define SRGs based on the frequency of the binding data. Common cases include per-object, per-scene, per-view, and per-material. For example, the view projection matrix associated with the camera should be declared as part of a per-view SRG because it only changes when the camera/view is updated; a position vector should be in the per-entity group because every time the entity's position changes in the scene, the per-entity group gets updated.
 
 ### SRG Definition Requirements

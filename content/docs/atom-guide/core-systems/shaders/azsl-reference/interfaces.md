@@ -3,6 +3,8 @@ title: AZSL Interfaces
 description: Learn about inheritance and interfaces in the AZSL shader language.
 ---
 
+{{< preview-new >}}
+
 Similar to HLSL, AZSL supports interfaces, which function similarly to abstract base classes in C++. They are defined using the `interface` keyword and must contain only method declarations. Classes that inherit from an interface must define all inherited members. Just like in C++, a class can inherit multiple interfaces by using separating commas. 
 
 The following code sample demonstrates how to define and use interfaces. 
