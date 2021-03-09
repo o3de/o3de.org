@@ -50,23 +50,23 @@ When building using the CMake CLI, you'll need to have a build output directory 
 
 1. Open a command line prompt and navigate to your O3DE installation.
 2. Create a directory for your build: `mkdir windows_vs2019`
-3. Run the CMake generator:  
+3. Run the CMake generator:
   
-  ```cmd
-cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
-   -DLY_3RDPARTY_PATH=<3rdPaty_fullpath> ^
-   -DLY_UNITY_BUILD=ON -DLY_PROJECTS=<Project name(s)>
-  ```  
+    ```cmd
+    cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
+        -DLY_3RDPARTY_PATH=<3rdPaty_fullpath> ^
+        -DLY_UNITY_BUILD=ON -DLY_PROJECTS=<Project name(s)>
+    ```
+
+    * `-B` : Location of build directory, where to put the generated files.
+    * `-S` : Source directory, where the root CMake file is.
+    * `-G` : The type of generator to use. If you're using Visual Studio 2017, your generator is `Visual Studio 15 2017`.  
   
-   * `-B` : Location of build directory, where to put the generated files.
-   * `-S` : Source directory, where the root CMake file is.
-   * `-G` : The type of generator to use. If you're using Visual Studio 2017, your generator is `Visual Studio 15 2017`.  
-  
-   The other arguments are custom definitions for the build script, used by O3DE:  
-  
-   * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
-   * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
-   * `DLY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
+    The other arguments are custom definitions for the build script, used by O3DE:  
+    
+    * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
+    * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+    * `DLY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
 
 {{< warning >}}
 You can create your build output directory anywhere, but in order to run your O3DE project, the build output *must* be a subdirectory of your O3DE install. This is so that
@@ -120,6 +120,8 @@ This section assumes you've already generated your project files into the O3DE s
 cmake --build windows_vs2019  --config profile --target <Project Name> -- /m
 ```
 
+Build products are placed at `windows_vs2019\bin\profile\`.
+
 ### Build the O3DE editor, engine, and tools
 
 This section assumes you've already generated your project files into the O3DE subdirectory `windows_vs2019`. But once you've done that, it's just one line:
@@ -128,4 +130,6 @@ This section assumes you've already generated your project files into the O3DE s
 cmake --build windows_vs2019  --config profile --target Editor -- /m
 ```
 
-Yep! The editor has the engine and the required tools as dependencies - if there are any changes to them between editor rebuilds, they'll be rebuilt as well.
+The editor has the engine and the required tools as dependencies - if there are any changes to them between editor rebuilds, they'll be rebuilt as well.
+
+Build products are placed at `windows_vs2019\bin\profile\`.
