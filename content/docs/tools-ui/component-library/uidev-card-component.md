@@ -4,6 +4,8 @@ description: ' Use the O3DE UI 2.0 card component as a container to organize
 title: O3DE UI card component
 ---
 
+{{< preview-migrated >}}
+
 Use cards to display information in highly interactive, flexible containers\. Users can easily stack, reorder, and collapse these containers\. All content within a card should relate to only one idea\. Cards should be easy to scan for relevant and actionable information, and are predominantly used to display editable details for a component or a class\.
 
 For example, a card might include common properties, action buttons, advanced settings, and a context menu for additional actions:

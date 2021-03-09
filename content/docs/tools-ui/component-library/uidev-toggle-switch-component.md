@@ -4,6 +4,8 @@ description: ' Learn how to apply the O3DE UI 2.0 toggle switch style to a check
 title: O3DE UI toggle switch component
 ---
 
+{{< preview-migrated >}}
+
 Use a toggle switch to enable users to quickly switch between two states with a minimum of effort\. The state will be clearly reflected back to them and persisted across sessions\.
 
 ![\[component toggle switch style\]](/images/tools-ui/component-toggle-switch-style.png)

@@ -5,6 +5,8 @@ title: O3DE UI Extensions C++ API Reference index
 weight: 1000
 ---
 
+{{< preview-migrated >}}
+
 This table lists the available C\+\+ classes for working with the O3DE UI 2\.0 system to extend the editor and tools\. The C\+\+ API reference is hosted outside of the user guide, so use this index to quickly find what you need to look up on the external site\. Each class is also accompanied by a brief description\.
 
 A complete guide to the UI API can be found in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html)\. The custom Qt widget library includes the following components:

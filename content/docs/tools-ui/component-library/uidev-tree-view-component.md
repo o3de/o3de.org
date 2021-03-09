@@ -4,6 +4,8 @@ description: ' Learn how to use the O3DE UI 2.0 tree view component to give
 title: O3DE UI tree view component
 ---
 
+{{< preview-migrated >}}
+
 With the **tree view** component, users can navigate file system directories or a list of hierarchical data in O3DE\. Each item, such as a node or a branch, can have sub\-items\. Items can be expanded to reveal sub\-items\.
 
 The **tree view** component is often used in the following scenarios:

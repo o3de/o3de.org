@@ -4,6 +4,8 @@ title: Open 3D Engine UI Extensions Guide
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 -----
 ## Contents
 + [Introduction to O3DE UI development](ui-dev-intro.md)

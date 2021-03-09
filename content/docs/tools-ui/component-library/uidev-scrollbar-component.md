@@ -4,6 +4,8 @@ description: ' Learn about the O3DE UI 2.0 customizations to the scrollbar style
 title: O3DE UI scrollbar styles
 ---
 
+{{< preview-migrated >}}
+
 O3DE provides several style choices for your scrollbars\. With the default style, the scrollbar is always visible\. However, you have the option to set the scrollbar display mode so that it only appears when users hover over the scroll area\.
 
 Additionally, in 1\.26, you can apply a dark style to the scrollbar to make it more visible on light backgrounds\.
