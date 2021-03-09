@@ -10,14 +10,6 @@ For example, the original shader code might have branching logic, like `if(shado
 
 <!-- [todo] For more information on Shader Variants, see __ -->
 
-<!-- @csantora Using "Atom Asset Builder" based on your previous comment in Materials PR. I want to make sure it is applicable here too. Yes/no/maybe? -->
-
-<!-- [
-    NOTE FOR DEVS:
-- What does it mean for options to be "dynamic"?
-- How are shader variants optimized?
-] --> 
-
 ## Options Type Qualifier
 Shader variants can be created based on the set of shader options in the shader. These options are declared as variables in the global scope using the `option` type qualifier. Note that global variables can be declared as `static`, `static const`, or `option`. The `uniform` keyword is not supported.
 
