@@ -5,7 +5,7 @@ date: 2021-03-09
 toc: false
 ---
 
-**Passes** determine how a scene will appear after each render frame. You can customize how your scene gets rendered by integrating different passes in the pipeline, such as lighting passes or post process passes. Passes are instantiated from **PassTemplates**, which can be authored in JSON or in C++. If you want to customize the functionality of a pass template, you can define custom `Pass` classes in C++. 
+**Passes** determine how a frame is rendered. You can customize your rendering pipeline by integrating different passes, such as lighting or post process passes. Passes are instantiated from **PassTemplates**, which can be authored in JSON or in C++. If you want to customize the functionality of a pass template, you can define custom `Pass` classes in C++.
 
 For authoring PassTemplates, read the [Authoring PassTemplates](#authoring-a-pass-class) section below. 
 <!-- For authoring custom Pass Classes, read the Authoring Pass Classes section below.  -->
@@ -13,15 +13,15 @@ For authoring PassTemplates, read the [Authoring PassTemplates](#authoring-a-pas
 ## Root Pass and Pass Registry
 Before you begin authoring passes, it's important to understand the Pass System (read the [Pass System](pass-system.md) section). The following key points are also important to understand when authoring passes: 
 - Passes are structured in a tree of nested passes, starting at the **root pass**. 
-- Passes must be registered in the **Pass Registry** in order to use them. 
+- PassTemplates must be registered in the **Pass Registry** in order to use them. 
 
 ### Root Pass
 At the basis of the pass system is a **root pass**, which begins the tree of nested child passes. Each pass is registered within its parent pass to establish the overall context of the passes. A pass can be either a render pass or a sub-root with nested child passes. 
 
-By default, the root pass in Atom's main renderer is *MainPipeline.pass*. You can change the root pass in Atom's default pipeline asset file *MainRenderPipeline.azasset*. Furthermore, if you want to change Atom's default pipeline asset, edit the `m_defaultPipelineAssetPath` parameter in the file `bootstrap.cfg`.
+One of the key passes is `MainPipeline.pass`, which is the parent pass that defines the rendering logic for the pipeline. You can change Atom's default pipeline pass in the asset file `MainRenderPipeline.azasset`. Furthermore, if you want to change Atom's default pipeline asset, edit the `m_defaultPipelineAssetPath` parameter in the file `bootstrap.cfg`.
 
 ### Pass Registry
-The **pass registry** contains the registry of all possible passes. In order to use a pass in a pipeline, they must be included in the pass registry. Note that the pass registry can contain passes that are never used. You can add a pass into the pass registry file *PassTemplates.azasset* by including the name of the pass template and a path to the *.pass* file through the `Name` and `Path` properties. 
+The **pass registry** contains the registry of all possible pass templates. In order to use a pass template, it must be included in the pass registry. Note that the pass registry can contain pass templates that are never used. You can add a pass templates into the pass registry file `PassTemplates.azasset` by including the name of the pass template and a path to the `.pass` file through the `Name` and `Path` properties.
 
 The following sample shows a snippet of the pass registry. You can add a new pass by adding another element in `AssetPaths`. 
 ```json
@@ -53,14 +53,10 @@ The following sample shows a snippet of the pass registry. You can add a new pas
 ### Constructing the Pass Tree
 Each parent pass contains a list of their direct children passes in contextual order. Starting at the root pass, the first level of children passes are listed. The same rules apply for each sub-root pass, ultimately constructing the pass tree. 
 
-In Atom's main render pipeline, the root pass contains most of the children passes. They are listed in the `PassRequest` array, which is how they get instantiated. Each listing has a reference to the pass file (via `Name`) that contains most of the pass information regarding exposed resources and attachments. 
-<!-- [@antonmic This is the case for the root pass in data, what about if the root pass is defined in C++?] -->
-
-
 ## Authoring a PassTemplate
-A **PassTemplate** (see *PassTemplate.h*) is used to instantiate a **Pass** (see *Pass.h*). It specifies inputs and outputs for a Pass as well as any **PassAttachments** (see *PassAttachment.h*) owned by that Pass. It can be authored in code as C++ or in data as a JSON file (with a *.pass* extension).
+A **PassTemplate** (see `PassTemplate.h`) is used to instantiate a **Pass** (see `Pass.h`). It specifies inputs and outputs for a Pass as well as any **PassAttachments** (see `PassAttachment.h`) owned by that Pass. It can be authored in code as C++ or in data as a JSON file (with a *.pass* extension).
 
-When PassTemplates are authored as data (`.pass`), they are serialized as a PassAsset. A **PassAsset** (see *PassAsset.h*) is a thin wrapper around a PassTemplate that the asset system uses for serialization.
+When PassTemplates are authored as data (`.pass`), they are serialized as a PassAsset. A **PassAsset** (see `PassAsset.h`) is a thin wrapper around a PassTemplate that the asset system uses for serialization.
 
 #### Components of a PassTemplate
 <!-- [WRITER NOTE: Needs more work] -->
@@ -77,10 +73,12 @@ A complete breakdown of the PassTemplate JSON file (`*.pass`) can be found in [P
 
 ### Registering a Pass Template
 Before a PassTemplate can be instantiated, it must be registered with the PassSystem. This makes the PassTemplate discoverable so other passes can find and refer to it by name. The way you register your passTemplate depends on whether you authored it in data (`.pass` file) or in C++ code. 
-- **Data**: If authored in a `.pass` file, you must add the path to that file to the list of PassTemplates in the pass registry (*PassTemplates.azasset*).
-- **Code**: If authored in C++, you must add your PassTemplate to the PassSystem in code. To do this, create a PassTemplate during initialization, and then call `PassSystemInterface.Get()->AddPassTemplate(...)`. This can be found in the files *PassSystem.h* and *PassLibrary.h* in the Atom API reference. 
+- **Data**: If authored in a `.pass` file, you must add the path to that file to the list of PassTemplates in the pass registry (`PassTemplates.azasset`).
+- **Code**: If authored in C++, you must add your PassTemplate to the PassSystem in code. To do this:
+    1. Create a PassTemplate during initialization.
+    2. Call `PassSystemInterface.Get()->AddPassTemplate(...)`. This can be found in the files `PassSystem.h` and `PassLibrary.h` in the Atom API reference. 
 
-*Note: 
+
 <!-- @antonmic Maybe we can break down the "Code" one into more steps. E.g. Where do we call this function? Are there other things we need to do before and after? -->
 
 ## Instantiating a Pass
