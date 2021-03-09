@@ -6,6 +6,8 @@ weight: 400
 ---
 ## Add modular features and assets with Gems {#gems-system-gems}
 
+{{< preview-migrated >}}
+
 Gems are packages that contain code and assets to augment your game projects\. With the [Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in O3DE, see [Gems Available in O3DE](/docs/user-guide/features/gems/list.md)\.
 
 O3DE features two types of Gems:

@@ -4,6 +4,8 @@ title: Decal component
 date: 2021-03-05
 ---
 
+{{< preview-migrated >}}
+
 The **Decal** component enables an entity to project a material onto a mesh. The decal is projected along the positive Z axis of the entity in local space (denoted by a red X). The decal can be projected onto any mesh from any entity that penetrates the bounding box of the entity that contains the Decal component. The decal can be resized by adjusting the Scale property of the Transform of the entity that contains the Decal component.
 
 ## Provider ##

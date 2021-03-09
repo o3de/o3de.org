@@ -6,6 +6,8 @@ title: Troubleshooting Amazon GameLift integration
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 Use the following information to help you diagnose and fix common problems that you might encounter while working with Amazon GameLift\.
 
 **Topics**

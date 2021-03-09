@@ -3,6 +3,8 @@ description: ' Learn best practices for containers in Open 3D Engine. '
 title: Use AzCore Standard Containers
 ---
 
+{{< preview-migrated >}}
+
 **Recommended**: Instead of writing your own containers, use the full range of AzCore standard containers in O3DE\. Because these containers provide AZ memory allocators by default, they work with AZ memory manager out of the box\. These containers include the following:
 
 ```

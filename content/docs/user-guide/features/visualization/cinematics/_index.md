@@ -4,6 +4,8 @@ linktitle: Cinematics
 title: Create cinematic sequences
 ---
 
+{{< preview-migrated >}}
+
 Cinematics, also known as sequences or cutscenes, are interactive movie animations with time\-dependent control over objects and events\. You can use O3DE to add cutscenes to your game\.
 
 You can also add scripted events so that a sequence of objects, animations, and sounds are triggered in the game\. The player can view these sequences from their own \(first person\) or another's \(third person\) perspective\.

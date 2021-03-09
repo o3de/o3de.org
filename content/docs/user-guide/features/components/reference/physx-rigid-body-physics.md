@@ -3,6 +3,8 @@ description: ' Learn more about the PhysX Rigid Body component in Open 3D Engine
 title: PhysX Rigid Body
 ---
 
+{{< preview-migrated >}}
+
 The **PhysX Rigid Body** component defines the entity as a rigid object that is solid and can move and collide with other PhysX entities\. For example, you can add the **PhysX Rigid Body** component to the entity to create a projectile\.
 
 You can specify two main modes for a **PhysX Rigid Body** component\.

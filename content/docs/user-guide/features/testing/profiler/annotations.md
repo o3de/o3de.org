@@ -4,6 +4,8 @@ description: ' Use annotations in Profiler to flag per-frame log information fro
 title: Creating and Using Annotations
 ---
 
+{{< preview-migrated >}}
+
 ****
 Profiler is in preview release and is subject to change\.
 

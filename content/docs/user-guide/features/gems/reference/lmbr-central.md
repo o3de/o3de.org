@@ -4,6 +4,8 @@ title: LmbrCentral Gem
 date: 2021-03-05
 ---
 
+{{< preview-migrated >}}
+
 The LmbrCentral Gem contains required code and assets for running Open 3D Engine Editor. Lmbr Central provides basic functionality and many components for O3DE including the following:
 
 * Shape components

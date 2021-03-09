@@ -3,6 +3,8 @@ description: ' Use the Lua Editor to author, debug, and edit Lua scripts in Open
 title: Debugging tutorial with Lua Editor
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

@@ -4,6 +4,8 @@ description: ' Learn how to create separate asset bundles for a release build wi
 title: Creating Multiple Asset Bundles
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This tutorial is out of date for the new Starter Game project that shipped as part of O3DE 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |

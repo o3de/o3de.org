@@ -5,6 +5,8 @@ description: ' Use the Simple Jack Locomotion sample level to learn how the O3DE
 title: Simple_JackLocomotion Sample
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

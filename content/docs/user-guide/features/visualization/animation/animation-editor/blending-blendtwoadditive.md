@@ -4,6 +4,8 @@ description: ' Learn how to use the Blend Two Additive node in Open 3D Engine An
 title: Blend Two Additive Node
 ---
 
+{{< preview-migrated >}}
+
 The **Blend Two Additive** node blends a pose 2 input additively on top of a pose 1 input\.
 
 ![\[Blend Two Additive node.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-blendtwoadditive.png)

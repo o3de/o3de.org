@@ -4,6 +4,8 @@ title: Collision Groups
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 Use collision groups to define the layers that a collider interacts with\. A collision group is similar to a mask with specific bits set in which each bit corresponds to a collision layer\.
 
 Two colliders interact if their collision layers are in each other's collision group\. If one collision layer is not present in the other layer's collision group, the colliders don't interact\.

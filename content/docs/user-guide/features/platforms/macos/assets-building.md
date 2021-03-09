@@ -4,6 +4,8 @@ title: Building Game Assets for macOS Games
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

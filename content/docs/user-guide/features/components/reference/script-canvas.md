@@ -3,6 +3,8 @@ description: ' Use the Script Canvas component to add a script to an entity in O
 title: Script Canvas
 ---
 
+{{< preview-migrated >}}
+
 Use the **Script Canvas** component to add a script to an entity\.
 
 ## Script Canvas Component Properties {#component-script-canvas-properties}

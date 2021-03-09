@@ -4,6 +4,8 @@ title: Reflecting a Component for Serialization and Editing
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 Components use AZ reflection to describe the data they serialize and how content creators interact with them\.
 
 The following example reflects a component for serialization and editing:

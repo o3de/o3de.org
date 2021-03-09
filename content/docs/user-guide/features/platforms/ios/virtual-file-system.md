@@ -4,6 +4,8 @@ title: Using Virtual File System with iOS
 weight: 400
 ---
 
+{{< preview-migrated >}}
+
 If you frequently change assets, you can configure Asset Processor on your macOS computer to use the virtual file system \(VFS\) to serve asset files to your iOS app\. When you modify an asset, it is automatically reloaded without restarting the app\. This method may result in slower load times because assets are sourced directly from your computer instead of the mobile device\.
 
 ## Prerequisites {#ios-virtual-file-system-prerequisites}

@@ -4,6 +4,8 @@ description: ' Use the Navigation Seed component to generate a color-coded marku
 title: Navigation Seed
 ---
 
+{{< preview-migrated >}}
+
 The **Navigation Seed** component marks chunks of the [**Navigation Area**](/docs/user-guide/features/components/nav-area.md) that are accessible to AI agents\. Game developers can use this component as a visual aid to determine where AI agents can go\.
 
 The **[Navigation Area](/docs/user-guide/features/components/nav-area.md)** component can generate a complex\-looking mesh with disconnected islands\. If this happens, it can be difficult to determine the precise places that your AI can reach\. In this case, use the **Navigation Seed** component**** to render a color\-coded map\. The blue chunks are accessible to AI and the red chunks are inaccessible\.

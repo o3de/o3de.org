@@ -3,6 +3,8 @@ description: ' Use C++ macros for error management and troubleshooting in Open 3
 title: 'Script Canvas Errors and Troubleshooting'
 ---
 
+{{< preview-migrated >}}
+
 Script Canvas provides a mechanism to detect and report errors\. Errors in Script Canvas are generally caused by invalid conditions\.
 
 In C\+\+ Script Canvas provides the following macros for error management:

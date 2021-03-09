@@ -4,6 +4,8 @@ description: ' Use the Vegetation Layer Spawner component to define areas and ru
 title: Vegetation Layer Spawner
 ---
 
+{{< preview-migrated >}}
+
 Use the **Vegetation Layer Spawner** component to define areas and rules for procedurally placing dynamic vegetation or other static meshes in your O3DE level\.
 
 To use the **Vegetation Layer Spawner** component, you must enable the **Vegetation** gem\.

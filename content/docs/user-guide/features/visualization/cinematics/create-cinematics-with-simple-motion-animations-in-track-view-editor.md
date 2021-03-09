@@ -3,6 +3,8 @@ description: null
 title: Creating Character Animations with the Simple Motion Component
 ---
 
+{{< preview-migrated >}}
+
 To create character animations with the Track View, you can add the **Simple Motion** component and the **Actor** component to an entity\. You then add the entity to a track view sequence and specify the motions that you want your character to animate\. When you add a motion track to a track view sequence, the Track View drives animation on the **Simple Motion** component and its properties:
 + **Motion**
 + **Play speed**

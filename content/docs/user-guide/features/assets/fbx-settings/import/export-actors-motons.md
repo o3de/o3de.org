@@ -4,6 +4,8 @@ description: ' See the best practices for exporting skinned meshes for actors fo
 title: Exporting Actors and Motions
 ---
 
+{{< preview-migrated >}}
+
 Use the following best practices when you export your skinned meshes using the **FBX Settings** tool\.
 + If you use the z\-up world coordinate system, use the following guidelines:
   + Ensure that your DCC scene is set to z for the up\-axis world coordinate system\.

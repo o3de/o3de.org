@@ -4,7 +4,9 @@ title: Box Shape component
 date: 2021-03-05
 ---
 
-The **Box Shape** component creates transparent box. The dimensions of the box can be edited with the **Dimensions** property or by entering **Edit** mode. The Box Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for fog, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/intro.md).
+{{< preview-migrated >}}
+
+The **Box Shape** component creates transparent box. The dimensions of the box can be edited with the **Dimensions** property or by entering **Edit** mode. The Box Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for fog, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
 
 ## Provider ##
 

@@ -4,6 +4,8 @@ description: ' Use texture atlases on UI canvases for quicker rendering of textu
 title: Using Texture Atlases
 ---
 
+{{< preview-migrated >}}
+
 To reduce draw calls, you can add individual textures to a texture atlas and then add one or more texture atlases to a UI canvas\.
 
 ## Characteristics {#ui-editor-texture-atlases-characteristics}

@@ -4,6 +4,8 @@ description: ' Learn how to use Open 3D Engine''s Project Configurator to config
 title: Configuring System Entities
 ---
 
+{{< preview-migrated >}}
+
 A single *system entity* lives at the heart of every O3DE application\. The system entity's components, known as [system components](/docs/userguide/modules/system-components.md), power major systems within O3DE\. You can use the Project Configurator's System Entity Editor to choose and configure the system components for your project\. Editing the system entity for your project is like editing an entity in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)**\.
 
 **To configure system entities**

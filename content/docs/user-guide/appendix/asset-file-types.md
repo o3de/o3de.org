@@ -4,6 +4,8 @@ linktitle: Asset file types
 title: 'O3DE Asset File Types'
 ---
 
+{{< preview-migrated >}}
+
 See the following tables for supported asset data file types in O3DE\.
 
 O3DE supports the `.xml` file format and the following image file formats:

@@ -3,6 +3,8 @@ description: ' Add and remove animation keys on tracks in Open 3D Engine''s <gui
 title: Adding and Removing Animation Keys on Tracks
 ---
 
+{{< preview-migrated >}}
+
 You can add a keyframe to a track in the timeline with one of the following:
 
 **Double\-click the track**

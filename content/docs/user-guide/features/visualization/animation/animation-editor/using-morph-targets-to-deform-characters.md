@@ -4,6 +4,8 @@ description: ' Use morph targets to deform characters in the Open 3D Engine Anim
 title: Using Morph Targets to Deform Characters
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

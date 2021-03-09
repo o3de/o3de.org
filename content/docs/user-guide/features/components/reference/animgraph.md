@@ -4,6 +4,8 @@ description: ' Use the AnimGraph component to adds an animation graph and motion
 title: AnimGraph
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

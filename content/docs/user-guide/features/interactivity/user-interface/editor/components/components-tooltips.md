@@ -4,6 +4,8 @@ description: ' Use tooltip components to give an element a tool tip when hoverin
 title: Tooltip Components
 ---
 
+{{< preview-migrated >}}
+
 You can add either a **Tooltip** component or a **TooltipDisplay** component to an element\. With these components, you can display a tooltip when hovering over an interactive element\.
 
 To see in\-game examples of completed canvases with **Tooltip** components, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Other Components**, **Tooltips**\. You can view examples of tooltip text options and display styles\. Press **Esc** to exit the game\.

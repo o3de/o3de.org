@@ -4,6 +4,8 @@ title: Creating a Gem
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 You can create your own gems by packaging your assets into the O3DE gem format\. This makes your package distributable, shareable between projects, and easy for game developers to enable or disable as needed\.
 
 Creating your gem involves placing code, assets, and several other special files into the correct directory structure\. This chapter describes the creating a gem procedure in detail\.

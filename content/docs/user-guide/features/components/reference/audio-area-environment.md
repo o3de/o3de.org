@@ -4,6 +4,8 @@ description: ' Use the Audio Area Environment component in O3DE to apply an envi
 title: Audio Area Environment
 ---
 
+{{< preview-migrated >}}
+
 Using the **Audio Area Environment** component, you can apply environment effects to sounds that an entity triggers\. You must also add a shape component to use the audio area environment component\.
 
 ## Audio Area Environment Properties {#component-audio-area-environment-properties}

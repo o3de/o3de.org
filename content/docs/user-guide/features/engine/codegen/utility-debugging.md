@@ -4,6 +4,8 @@ title: Debugging the AZ Code Generator Utility
 weight: 600
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. |

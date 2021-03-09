@@ -3,6 +3,8 @@ description: ' Use a scroll bar component to add a scroll bar in the Open 3D Eng
 title: ScrollBar
 ---
 
+{{< preview-migrated >}}
+
 You can use a **ScrollBar** component to add a scrollable bar, or handle, for manipulating settings or scrolling within a scroll box\.
 
 To see in\-game examples of completed canvases with the **ScrollBar** component, open the level UiFeatures in the project SamplesProject\. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBar**\. You can view examples of different types of scroll bar positioning and handles, scroll bars paired with scroll boxes, and visibility options\. Press **Esc** to exit the game\.

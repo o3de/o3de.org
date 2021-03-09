@@ -4,6 +4,8 @@ description: ' Use the Dropdown component to make an element behave like a drop-
 title: Dropdown
 ---
 
+{{< preview-migrated >}}
+
 You can use the **Dropdown** component to make an element behave like a drop\-down menu\. Use this component with child elements that contain content\. The child elements provide the contents of the drop\-down menu\.
 
 You can use the **Dropdown** component with the **DropdownOption** component\. With the **DropdownOption** component, you can configure options to change the menu text and its icon after it is selected\.

@@ -4,6 +4,8 @@ title: Resetting the Transform
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 You can reset the transform for an entity, so that you return the entity to its previous location\.
 
 **To reset the transform**

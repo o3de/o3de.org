@@ -3,6 +3,8 @@ description: ' Debug Asset Processor issues in Open 3D Engine '
 title: Debugging Asset Processor
 ---
 
+{{< preview-migrated >}}
+
 Use the following options to help debug Asset Processor issues\.
 
 **Topics**

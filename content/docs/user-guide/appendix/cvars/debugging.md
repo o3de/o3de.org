@@ -3,6 +3,8 @@ description: ' Debug and fix performance issues for Open 3D Engine. '
 title: Debugging Issues
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in O3DE Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [O3DE Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |

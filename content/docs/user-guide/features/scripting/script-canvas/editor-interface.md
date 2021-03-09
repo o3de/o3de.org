@@ -3,6 +3,8 @@ description: ' See the layout of the Script Canvas editor in O3DE Editor. '
 title: 'Script Canvas Editor Interface'
 ---
 
+{{< preview-migrated >}}
+
 You can open the **Script Canvas** editor from O3DE Editor\.
 
 **To open the Script Canvas editor**

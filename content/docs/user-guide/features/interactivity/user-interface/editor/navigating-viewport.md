@@ -4,6 +4,8 @@ description: ' Use keyboard, mouse, or menu to navigate the UI Editor viewport
 title: Navigating the Viewport
 ---
 
+{{< preview-migrated >}}
+
 The **UI Editor** features a rectangle with a checkerboard pattern on a dark gray background\.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-checkerboard.png)

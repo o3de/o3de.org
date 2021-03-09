@@ -4,6 +4,8 @@ description: ' Use the Input Management Framework gem to convert game input into
 title: Input Management Framework Gem
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 |  The Input Management Framework Gem is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

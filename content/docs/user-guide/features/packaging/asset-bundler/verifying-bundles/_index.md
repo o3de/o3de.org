@@ -6,6 +6,8 @@ title: Verifying that Bundles Contain Required Assets
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 When your team generates a release build that has bundled game assets, you want to verify that the bundles contain everything required to ship your game\. Use the tools of the O3DE asset bundling system throughout the game development process to verify that your asset bundles contain the required assets\.
 
 As a best practice, verify that your bundles contain their required assets during all game development phases:

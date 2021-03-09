@@ -5,6 +5,8 @@ title: Releasing O3DE projects for Android
 weight: 400
 ---
 
+{{< preview-migrated >}}
+
  Setting up to release for Android can be a complicated process because of the number of steps involved, and the restrictions that are required for publishing on the Google Play Store\. For the full and up to date list of requirements, see the [Play Store publishing documentation](https://developer.android.com/studio/publish#publishing-prepare)\. In this topic you'll walk through additional steps needed for distribution, configure to submit an application larger than 100Mb to the Google Play Store, and build your release binaries\.
 
 **Topics**

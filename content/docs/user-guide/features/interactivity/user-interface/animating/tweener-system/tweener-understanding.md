@@ -4,6 +4,8 @@ description: ' Understand how tweeners in Open 3D Engine Scripted Entity Tweener
 title: Understanding Tweeners
 ---
 
+{{< preview-migrated >}}
+
 A *tweener* generates the transition between two images, giving the appearance of a smooth evolution between two frames\. At its simplest, a tweener creates a linear transition\. For example, a circle that starts at the top of the screen and ends at the bottom of the screen travels at a steady, unchanging pace between the two points\. This is similar to an object moving on a conveyer belt\. To simulate gravity, you can use a quadratic tweener, which accelerates slowly at first and then steeply increases towards the end\. This simulates dropping an object that does not bounce\.
 
 Bounce and elastic tweeners offer flexibility when you want to simulate bounce or elasticity\. The following animation shows a bouncing tweener\. The ball starts offscreen and ends at the bottom of the screen\. Between the start and end frames, the ball appears to bounce\.

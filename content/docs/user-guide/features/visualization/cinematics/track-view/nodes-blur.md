@@ -4,6 +4,8 @@ description: ' Add a Radial Blur node to blur the animation outward in a radial 
 title: Radial Blur Node
 ---
 
+{{< preview-migrated >}}
+
 You can use the **Radial Blur** node to blur the animation radially outward from a center point\.
 
 **To add a Radial Blur node in the Track View**

@@ -3,6 +3,8 @@ description: ' Export PhysX colliders from .fbx files with FBX Settings to Open 
 title: FBX Settings PhysX export
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

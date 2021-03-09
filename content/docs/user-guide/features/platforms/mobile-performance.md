@@ -5,6 +5,8 @@ title: 'O3DE Performance Tuning Guidelines for Mobile Devices'
 weight: 1100
 ---
 
+{{< preview-migrated >}}
+
 See the following guidelines for generating art assets for mobile games with O3DE and how to tune O3DE performance for mobile devices\.
 
 **Topics**

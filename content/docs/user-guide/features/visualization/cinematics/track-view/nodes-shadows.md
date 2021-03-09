@@ -4,6 +4,8 @@ description: ' Use the Shadows Setup node in Open 3D Engine''s <guilabel>Track V
 title: Shadows Setup Node
 ---
 
+{{< preview-migrated >}}
+
 You can use the **Shadows Setup** node to add or remove sun shadow maps over several frames in a sequence\.
 
 **To add a Shadows Setup node in the Track View**

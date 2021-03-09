@@ -5,6 +5,8 @@ title: Updating Graphics Settings for Android and iOS
 weight: 1000
 ---
 
+{{< preview-migrated >}}
+
 O3DE supports low, medium, high, and very high graphics performance for mobile devices\. You can change the graphics settings in O3DE Editor to simulate the graphics on Android and iOS devices\. This feature helps you visually check your mobile games in O3DE Editor during the development process\.
 
 ## Updating Graphics Performance in O3DE Editor {#ios-android-updating-graphics-settings-in-lumberyard-editor}

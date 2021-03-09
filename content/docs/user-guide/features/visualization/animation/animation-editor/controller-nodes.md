@@ -3,6 +3,8 @@ description: ' See the following controller nodes in Open 3D Engine. '
 title: Controller Nodes
 ---
 
+{{< preview-migrated >}}
+
 See the following controller nodes in the **Animation Editor**\.
 
 **Topics**

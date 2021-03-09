@@ -4,6 +4,8 @@ title: GPU cloth simulation with NVIDIA CUDA
 weight: 600
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

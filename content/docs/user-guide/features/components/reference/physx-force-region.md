@@ -4,6 +4,8 @@ description: ' Use the PhysX Force Region component to specify a region that app
 title: PhysX Force Region
 ---
 
+{{< preview-migrated >}}
+
 You can use the **PhysX Force Region** component to specify a region that applies physical force to entities\. For each physics simulation frame, the component applies force to entities that are in the region's bounds\. You can use this component to simulate effects such as simulating gravity, slowing down, or deflecting an entity to another direction\.
 
 To create a force region, you must do the following:

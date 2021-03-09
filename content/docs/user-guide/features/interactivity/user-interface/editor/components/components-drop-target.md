@@ -4,6 +4,8 @@ description: ' Use the DropTarget component with the Draggable component to impl
 title: DropTarget
 ---
 
+{{< preview-migrated >}}
+
 You can use the **DropTarget** component to implement drag\-and\-drop behavior with the **Draggable** component\.
 
 Because drag\-and\-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C\+\+ to define actions that result from the drag and the drop\.

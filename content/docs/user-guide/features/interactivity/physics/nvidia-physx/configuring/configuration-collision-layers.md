@@ -4,6 +4,8 @@ title: Collision Layers
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 Use collision layers to group objects of the same type\. Use collision groups to define what the collision layers collide with\. You can have a maximum of 64 layers per game\.
 
 Common types of layers are objects like the following:

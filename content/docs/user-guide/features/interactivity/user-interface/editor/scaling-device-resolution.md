@@ -4,6 +4,8 @@ description: ' Build UIs that display on multiple screen resolutions using the S
 title: Scaling to Device Resolutions
 ---
 
+{{< preview-migrated >}}
+
 You can use the **Scale to Device** property on the **Transform2D** component with the anchoring system to build UIs that display on multiple screen resolutions\. The **Scale to Device** property applies an element scale that's based on the ratio of the authored canvas size to the target canvas size\.
 
 To view the effects of this computation, open the **Preview** canvas in the UI Editor\.

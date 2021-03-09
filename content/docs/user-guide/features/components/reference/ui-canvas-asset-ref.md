@@ -4,6 +4,8 @@ description: ' Use the UI Canvas Asset Ref component in Open 3D Engine to associ
 title: UI Canvas Asset Ref
 ---
 
+{{< preview-migrated >}}
+
 With the **UI Canvas Asset Ref** component, you can associate a UI canvas with a component entity in a level\.
 
 When you set up a UI canvas asset ref component, you can:

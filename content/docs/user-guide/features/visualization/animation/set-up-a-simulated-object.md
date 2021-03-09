@@ -3,6 +3,8 @@ description: ' Set up a simulated object such as a tassel for your actor in Open
 title: Setting Up a Simulated Object
 ---
 
+{{< preview-migrated >}}
+
 In the following procedure, add motion to a tassel attached to the character\.
 
 **To set up a simulated object**

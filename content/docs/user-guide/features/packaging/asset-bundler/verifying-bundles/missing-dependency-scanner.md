@@ -5,6 +5,8 @@ title: Using the Missing Dependency Scanner
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 Use the `AssetProcessorBatch.exe` tool to scan your files for patterns that look like missing dependencies\. To perform a scan, run the `AssetProcessorBatch.exe` command using the `dependencyScanPattern` \(or `dsp`\) flag\. Because the command performs a SQL query, use search strings compatible with SQL syntax; for example, the wildcard character is `%`, not `*`\.
 
 The following command scans all files with the extension `.txt`\.

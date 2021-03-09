@@ -4,6 +4,8 @@ description: ' Use the White Box gem to add White Box rapid design components to
 title: 'White Box Gem'
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |

@@ -4,6 +4,8 @@ description: ' Use the Rin Locomotion sample level to learn how the O3DE Animati
 title: Advanced_RinLocomotion Sample
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

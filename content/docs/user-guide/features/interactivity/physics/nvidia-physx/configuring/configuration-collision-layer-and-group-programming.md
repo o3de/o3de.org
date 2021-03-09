@@ -4,6 +4,8 @@ title: Creating Collision Layers and Groups Programmatically
 weight: 350
 ---
 
+{{< preview-migrated >}}
+
 The API for collision layers and groups is defined in the `Collision.h` and `CollisionBus.h` headers\. The following code shows example include statements\.
 
 ```

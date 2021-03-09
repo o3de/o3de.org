@@ -5,6 +5,8 @@ title: Animating the UI
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 You can animate your game's UI using one of the following tools:
 
 [**Scripted Entity Tweener System**](/docs/user-guide/features/user-interface/animating/tweener.md)

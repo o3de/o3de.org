@@ -4,6 +4,8 @@ description: ' Use the Resource Compiler image tool to manually select an image
 title: Using the Resource Compiler Image Tool
 ---
 
+{{< preview-migrated >}}
+
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands\.
 
 **Note**

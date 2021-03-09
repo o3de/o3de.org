@@ -4,6 +4,8 @@ description: ' Use the PhysX Character Controller component to implement basic c
 title: PhysX Character Controller
 ---
 
+{{< preview-migrated >}}
+
 You can use the **PhysX Character Controller** component to implement basic character interactions with the physical world\. For example, you can prevent characters from walking through walls or passing through terrain\. You can also control interactions with slopes and steps and manage interactions with other characters\.
 
 The following diagram shows some of the features of the **PhysX Character Controller** component\. Because it is usually more convenient to work with a character's foot position, the entity position coincides with the base of the controller\. For details about the contact offset, see [Contact Offset](#component-physx-character-controller-contact-offset)\.

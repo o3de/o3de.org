@@ -5,6 +5,8 @@ title: Using the Audio Controls Editor
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 Your game communicates all actions, events, and parameters to the audio system with Audio Translation Layer \(ATL\) controls\. These ATL controls are mapped to one or more controls inside your selected middleware \(Wwise or Wwise LTX\)\. With the **Audio Controls Editor**, you can create controls and make connections between the ATL controls and the middleware controls\.
 
 **To open the Audio Controls Editor**

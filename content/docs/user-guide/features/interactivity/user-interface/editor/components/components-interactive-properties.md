@@ -4,6 +4,8 @@ description: ' Work with the input enabled, states, navigation, and action prope
 title: Properties for Interactive Components
 ---
 
+{{< preview-migrated >}}
+
 All of the interactive components share a common set of properties\. These properties are grouped into the following categories:
 + [**Input Enabled**](/docs/user-guide/features/interactivity/user-interface/editor/components-interactive-properties-input.md) - Check box or flag that determines whether the element can be interacted with\.
 + [**Multi\-Touch Input Enabled**](/docs/user-guide/features/interactivity/user-interface/editor/components-interactive-properties-multitouch-input.md) - Check box or flag that determines whether the element will handle multi\-touch events\. Requires multi\-touch to be enabled on the parent UI canvas \(enabled by default\)\.
