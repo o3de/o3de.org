@@ -236,18 +236,32 @@ $width: '59vw';
 
 nav 
   ul 
-    list-style-type: none
+    list-style: none
     padding-left: 0
-    padding-bottom: 0.2rem
-    li
-      padding-left: 1rem
+    margin-bottom: 0rem
+    font-size: 1rem
+    li 
+      border-bottom: 1px solid $o3de-lightgray
+      padding-bottom: 0.2rem
+      margin-bottom: 0.3rem
+      font-weight: bold
       ul
         padding-bottom: 0rem
+        list-style: circle
+        margin-left: 1rem
+        font-size: 0.9rem
+        li 
+          border-bottom: none
+          margin-bottom: 0rem
+          font-weight: normal
 
 #section-nav
-  font-size: 0.9rem
+  
   h1
     font-size: 1.4rem
 
 .currentPage
   font-weight: bold
+  background-color: $o3de-lightblue
+  padding: 0.1rem
+  border-radius: 5px
