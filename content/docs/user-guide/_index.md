@@ -44,7 +44,7 @@ New features are being added by the community regularly. Read the [Atom Document
 + Precompiled binary, library, and header support for engine modules and Gems. Adding or removing precompiled Gems do not require project recompilation. Upgrading to new engine versions only require resolving any compile issues in project code.
 + Easily customize engine components and replace prebuilt Gems with your own custom modules!
 
-For more information, see [the O3DE Gems documentation](/docs/user-guide/features/gems)\.
+For more information, see [the O3DE Gems documentation](/docs/user-guide/gems)\.
 
 ### Build with Familiar Tools
 
@@ -57,7 +57,7 @@ Open 3D Engine uses the [CMake build tools](https://cmake.org/) for creating too
 
 For more information, read the following topics:
 
-+ [Get started with O3DE builds](/docs/user-guide/features/build/)
++ [Get started with O3DE builds](/docs/user-guide/build/)
 
 ### Industry Standard Hardware Accelerated Physics
 
@@ -86,7 +86,7 @@ Open 3D Engine comes with a high-performance networking Gem that gives you the f
 + Detachable player behaviors supporting automated desync detection and correction.
 + RPC and future elastic fault tolerant multiserver support with prediction and reconciliation.
 
-For more information, read [O3DE Networking](/docs/user-guide/features/networking)\.
+For more information, read [O3DE Networking](/docs/user-guide/networking)\.
 
 ### Data-driven Asset Workflows and Handling
 

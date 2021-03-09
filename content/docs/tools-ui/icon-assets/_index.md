@@ -1,7 +1,7 @@
 ---
 description: ' Browse the library of icon assets used in the O3DE UI 2.0 development
   environment. '
-title: UI icon assets
+linktitle: UI icon assets
 title: O3DE UI icon assets
 weight: 400
 ---

@@ -15,7 +15,8 @@ Open 3D Engine (O3DE) is a fully open-source, high-performance engine for game, 
 
 | Documentation | Details |
 |--------------------------------------|---------|
-| [O3DE Welcome Guide](welcome-guide)| New to O3DE? Get started with an overview of it, along with tutorials designed to help you get up and running. |
+| [O3DE Welcome Guide](welcome-guide) | New to O3DE? Get started with an overview of it, along with tutorials designed to help you get up and running. |
+| [O3DE Learning Guide](learning-guide) | Learn O3DE with the help of guided tutorials, samples, and recipes. |
 | [O3DE User Guide](user-guide) | Dive into the documentation for O3DE engine: Explore its features, understand how they work, and learn how to use them in your project. |
 | [Atom User Guide](atom-guide) | Learn about the Atom graphics rendering engine, its features, and how to use and extend them. |
 | [O3DE API Reference](api) | Browse the O3DE APIs and find the ones you need for your own code. |
