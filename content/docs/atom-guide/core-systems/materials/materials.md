@@ -47,7 +47,9 @@ In the following example, the material uses the **StandardPBR** material type an
 }
 ```
 
-*Note: The textures in the sample above can be found in the folder Gems/Atom/Feature/Common/Assets/Textures/Default/.*
+{{< note >}}
+The textures in the sample above can be found in the folder Gems/Atom/Feature/Common/Assets/Textures/Default/.
+{{< /note >}}
 
 ## Material Types
 A **material type** is a data item that includes everything that's needed to describe how to render a mesh:  
