@@ -12,11 +12,12 @@ Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled w
 The Asset Processer has several builders that work together to process .shader, .azsl, .azsli, and .shadervariantlist files and produce all the assets needed by the runtime. These shader assets and shader variant assets are most often used by the pass system or by the material system. During the build process, the Shader Asset Builder converts the `.shader` file into `.azshader` file. The `.azsl` file is translated from AZSL to HLSL (Shader Model 6.3) using the **Amazon Shading Language Compiler (AZSLc)**. The translated code is then compiled by the platform compilers:
 - **D3D12**: dxc.exe with DXT emission.
 - **Vulkan**: dxc.exe with SpirV emission.
-- **Metal**: dxc.exe and spriv-cross to generate `.msl` files. 
+- **Metal**: dxc.exe and spriv-cross to generate metalSL emission. 
+
+<!-- [todo] Link to new doc 'Shader build pipeline' -->
 
 ## AZSL Source Files (`*.azsl`, `*.azsli`, `*.srgi`)
 **AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most constructs that works in HLSL will work in AZSL as well. A key difference between AZSL and HLSL is the use of **Shader Resource Groups (SRGs)**, which make it easier to write shaders for multiple platforms and populate the shader inputs at runtime. Also, **shader options** simplify the process of generating multiple shader variants for optimizing shader bytecode. 
-<!-- [WRITER NOTE] How can i improve this paragraph by eliminating "easy" and "simple" -->
 
 The **AZSL compiler (AZSLc)** is a "transpiler" that translates AZSL into HLSL. It is then passed to common shader compilers like DXC.exe to compile bytecode for the target platforms. 
 

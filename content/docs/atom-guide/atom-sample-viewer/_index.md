@@ -12,7 +12,7 @@ The **Atom Sample Viewer** showcases samples of some features and rendering tech
 
 To start the Atom Sample Viewer, run AtomSampleViewerStandalone.exe located in the folder `<build>/bin/profile`. 
 
-## [Debug Menu Samples](debug-menu-samples.md)
+## [Debug Menu Samples](debug-menu-samples)
 Atom supports tools for profiling and debugging systems across the render engine. 
 <!-- [WRITER NOTE] Elaborate intro-->
 - [CPU Profiler](debug-menu-samples.md#cpu-profiler)
@@ -22,7 +22,7 @@ Atom supports tools for profiling and debugging systems across the render engine
 - [Transient Attachment Profiler](debug-menu-samples.md#transient-attachment-profiler)
 
 
-## [Graphics Feature Samples](graphics-feature-samples.md)
+## [Graphics Feature Samples](graphics-feature-samples)
 Atom supports many graphics features and rendering techniques that can enhance your scene's render. Most of these are supported in Atom by default, such as shadow, SSAO, and global illumination. Some of these features are components in the Open 3D Engine and can be added into your project, such as area lights and the bloom effect. You can also switch Atom's render pipeline entirely, such as to a checkerboard render pipeline. 
 - [Area Lights](graphics-feature-samples.md#area-lights)
 - [Bloom](graphics-feature-samples.md#bloom)
@@ -41,7 +41,7 @@ Atom supports many graphics features and rendering techniques that can enhance y
 - [Transparency](graphics-feature-samples.md#transparency)
 
 
-## [Rendering Hardware Interface (RHI) Samples ](rhi-samples.md)
+## [Rendering Hardware Interface (RHI) Samples ](rhi-samples)
 The following samples demonstrate the rendering capabilities in the RHI. 
 <!-- [WRITER NOTE] Elaborate intro-->
 - [Alpha to Coverage](rhi-samples.md#alpha-to-coverage)
@@ -71,7 +71,7 @@ The following samples demonstrate the rendering capabilities in the RHI.
 - [Triangle Constant Buffer](rhi-samples.md#triangle-constant-buffer)
 
 
-## [Rendering Pipeline Interface (RPI) Samples](rpi-samples.md)
+## [Rendering Pipeline Interface (RPI) Samples](rpi-samples)
 The following samples demonstrate the rendering capabilities in the RPI. 
 <!-- [WRITER NOTE] Elaborate intro-->
 - [Asset Load](rpi-samples.md#asset-load)
