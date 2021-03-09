@@ -9,7 +9,7 @@ Script Canvas uses the [behavior context](/docs/userguide/components/entity-syst
 
 If your gem provides custom Script Canvas nodes, you must specify a dependency on the Script Canvas Gem and configure Waf appropriately to compile the nodes\. Functionality that you reflect through the behavior context requires no dependency on the Script Canvas Gem\.
 
-Custom nodes in Script Canvas take advantage of [Automating boilerplate with AZ Code Generator](/docs/user-guide/features/engine/codegen/intro.md) and boilerplate code\. This reduces complexity and lets you focus on implementing the behavior of the node\.
+Custom nodes in Script Canvas take advantage of [Automating boilerplate with AZ Code Generator](/docs/user-guide/engine/codegen/intro.md) and boilerplate code\. This reduces complexity and lets you focus on implementing the behavior of the node\.
 
 The following diagram shows the AZ Code Generator process for Script Canvas\.
 
@@ -28,10 +28,10 @@ You must include `MyNode.generated.cpp` the in `MyNode.cpp` file\. This ensures 
 In **Step 3**, AZ Code Generator is finished and the build process continues as normal\. `MyNode.cpp` is compiled and succeeds provided all the generated files are correct\.
 
 **Topics**
-+ [Script Canvas Tags for AZ Code Generator](/docs/user-guide/features/engine/scripting/script-canvas/tags.md)
-+ [Dynamic Data Slots](/docs/user-guide/features/scripting/script-canvas/custom-nodes-dynamic-data.md)
-+ [Extendable Nodes](/docs/user-guide/features/engine/scripting/script-canvas/extensions.md)
++ [Script Canvas Tags for AZ Code Generator](/docs/user-guide/engine/scripting/script-canvas/tags.md)
++ [Dynamic Data Slots](/docs/user-guide/scripting/script-canvas/custom-nodes-dynamic-data.md)
++ [Extendable Nodes](/docs/user-guide/engine/scripting/script-canvas/extensions.md)
 + [Implementing Node Behavior](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior.md)
 + [Creating Custom Script Canvas Nodes in a Gem](/docs/userguide/scripting/scriptcanvas/custom-nodes-gem.md)
-+ [Node Libraries](/docs/user-guide/features/engine/scripting/script-canvas/node-libraries.md)
++ [Node Libraries](/docs/user-guide/engine/scripting/script-canvas/node-libraries.md)
 + [Node Contracts](/docs/userguide/scripting/scriptcanvas/custom-nodes-node-contracts.md)

@@ -11,12 +11,12 @@ title: Writing Lua Scripts
 + [Learning Lua in O3DE](#lua-scripting-resources-ly)
 + [Adding Lua Scripts to Component Entities](/docs/user-guide/editor/add-lua-script.md)
 + [Basic Structure of a Component Entity Lua Script](/docs/userguide/scripting/lua/ces-basic-structure-of-a-component-entity-lua-script.md)
-+ [Properties Table](/docs/user-guide/features/interactivity/scripting/lua/properties.md)
++ [Properties Table](/docs/user-guide/interactivity/scripting/lua/properties.md)
 + [Network Binding Properties](/docs/userguide/scripting/lua/script-networking-binding.md)
-+ [Using EBuses in Lua](/docs/user-guide/features/interactivity/scripting/lua/ebus.md)
-+ [Lua Editor](/docs/user-guide/features/interactivity/scripting/lua/debugging.md)
-+ [Debugging Lua Scripts](/docs/user-guide/features/interactivity/scripting/lua/debugging-scripts.md)
-+ [The Lua Environment \(Advanced\)](/docs/user-guide/features/interactivity/scripting/lua/environment.md)
++ [Using EBuses in Lua](/docs/user-guide/interactivity/scripting/lua/ebus.md)
++ [Lua Editor](/docs/user-guide/interactivity/scripting/lua/debugging.md)
++ [Debugging Lua Scripts](/docs/user-guide/interactivity/scripting/lua/debugging-scripts.md)
++ [The Lua Environment \(Advanced\)](/docs/user-guide/interactivity/scripting/lua/environment.md)
 + [Component Entity Lua API Reference](/docs/userguide/scripting/lua/api.md)
 
 You can use Lua in O3DE to facilitate quick iteration of your game project\. Lua is a powerful, fast, lightweight, embeddable scripting language\. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code\.
@@ -31,7 +31,7 @@ For learning the Lua language itself, the [lua\.org](http://www.lua.org) website
 ## Learning Lua in O3DE {#lua-scripting-resources-ly}
 
 After you read through this tutorial on writing Lua scripts for the component entity system, learn more about using Lua in O3DE by consulting the following resources\.
-+ For information on O3DE's built\-in Lua editor, see [Lua Editor](/docs/user-guide/features/interactivity/scripting/lua/debugging.md)\.
++ For information on O3DE's built\-in Lua editor, see [Lua Editor](/docs/user-guide/interactivity/scripting/lua/debugging.md)\.
 + For sample Lua [scripts](/docs/userguide/ly-glos-chap#scripts), see the O3DE `\dev\SamplesProject\Scripts` directory and its subdirectories\.
 + For information about Lua API operations in O3DE, see the [Component Entity Lua API Reference](/docs/userguide/scripting/lua/api.md)\.
-+ For information about the O3DE EBus, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus)\.
++ For information about the O3DE EBus, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus)\.

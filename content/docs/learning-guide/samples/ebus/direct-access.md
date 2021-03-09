@@ -5,7 +5,7 @@ title: Usage and Examples
 
 {{< preview-migrated >}}
 
-This section provides examples in C\+\+ of how to declare and configure an EBus, implement a handler, send messages, and receive return values\. For information about using EBuses in Lua, see [Using EBuses in Lua](/docs/user-guide/features/interactivity/scripting/lua/ebus.md)\.
+This section provides examples in C\+\+ of how to declare and configure an EBus, implement a handler, send messages, and receive return values\. For information about using EBuses in Lua, see [Using EBuses in Lua](/docs/user-guide/interactivity/scripting/lua/ebus.md)\.
 
 **Topics**
 + [Declaring an EBus](#ebus-usage-and-examples-declaring)

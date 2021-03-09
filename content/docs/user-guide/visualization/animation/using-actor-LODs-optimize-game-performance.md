@@ -55,9 +55,9 @@ Currently, O3DE supports skeletons created with LOD groups only\.
 ****
 [\[See the AWS documentation website for more details\]](/docs/userguide/using-actor-LODs-optimize-game-performance)
 
-   For more information, see [FBX soft naming conventions](/docs/user-guide/features/assets/fbx-settings/settings-soft-naming.md)\.
+   For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming.md)\.
 
-1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md) to export the meshes to FBX format so that you can use them in O3DE\.
+1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md) to export the meshes to FBX format so that you can use them in O3DE\.
 
 **To use LOD groups to create actor LODs**
 + To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes\. The following example shows a skeleton created with an LOD group and imported into O3DE\.
@@ -85,7 +85,7 @@ After you import your LODs into O3DE Editor, you can add an actor LOD to a level
 
 1. In O3DE Editor, choose **Tools**, **Asset Browser**\.
 
-1. Select and drag the exported `.fbx` file to the viewport\. In the **[Actor](/docs/user-guide/features/components/actor.md)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset\.
+1. Select and drag the exported `.fbx` file to the viewport\. In the **[Actor](/docs/user-guide/components/actor.md)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset\.
 
 1. To preview the LODs, change the number for **LOD Level** in the **Actor** component\.
 

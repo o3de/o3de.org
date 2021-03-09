@@ -10,7 +10,7 @@ weight: 400
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-Before you can run your game on a macOS computer, you must ensure the shader compiler \(located in the `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile` directory\) is running on your PC\. For more information, see [Building Shaders for macOS Games](/docs/user-guide/features/platforms/macos/shaders-building.md)\.
+Before you can run your game on a macOS computer, you must ensure the shader compiler \(located in the `lumberyard_version\dev\Tools\CrySCompileServer\x64\profile` directory\) is running on your PC\. For more information, see [Building Shaders for macOS Games](/docs/user-guide/platforms/macos/shaders-building.md)\.
 
 **To run your game on a macOS computer**
 

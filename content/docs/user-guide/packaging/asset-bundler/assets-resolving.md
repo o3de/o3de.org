@@ -6,12 +6,12 @@ weight: 200
 
 {{< preview-migrated >}}
 
-After you build and package your O3DE game, you want to frequently verify that your packages contain every asset they require\. For information about verifying your asset bundles, see [Verifying that Bundles Contain Required Assets](/docs/user-guide/features/packaging/asset-bundler/assets-verifying.md)\.
+After you build and package your O3DE game, you want to frequently verify that your packages contain every asset they require\. For information about verifying your asset bundles, see [Verifying that Bundles Contain Required Assets](/docs/user-guide/packaging/asset-bundler/assets-verifying.md)\.
 
 When you identify a potential missing asset, you want to include it so that the asset is no longer missing in your next bundled game package\.
 
 An asset that is missing from a bundle might be one of the following:
-+ **A missing product dependency** - An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/user-guide/features/packaging/asset-bundler/list-operations.md)\.
++ **A missing product dependency** - An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
 + **A hardcoded file load** - Assets loaded by path or by asset ID in C\+\+\.
 + **A false positive** - The asset appeared to be missing from a bundle, but is not actually used\. For example, you might have an editor\-only asset that appears to be missing that is never loaded or used in your game's launcher\.
 
@@ -24,7 +24,7 @@ A missing asset might have been loaded as a reference from O3DE or from your gam
 ### Finding the Asset Reference {#asset-bundler-assets-resolving-finding-the-asset-reference}
 
 To find the source of the asset reference, try the following approaches:
-+ Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/features/packaging/asset-bundler/missing-dependency-scanner.md)\.
++ Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/packaging/asset-bundler/missing-dependency-scanner.md)\.
 + Debug the file load using the following methods:
   + Set breakpoints, if possible
   + Add extra `print` commands
@@ -72,7 +72,7 @@ For more information, see [Finding the Asset Reference](#asset-bundler-assets-re
 
 To resolve the missing asset from a hardcoded file load, try the following options:
 + **Remove the hardcoded load** - By emitting assets as product dependencies from relevant builders, you can use seed lists with fewer files that are easier to maintain\.
-+ **Add as seed** - If you can't or don't want to replace the hard\-coded asset load, you can add the referenced file as a seed to your game's seed list\. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes\. For information about adding the referenced file as a seed to your game's seed list, see the [O3DE Asset Bundler Command\-Line Tool Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
++ **Add as seed** - If you can't or don't want to replace the hard\-coded asset load, you can add the referenced file as a seed to your game's seed list\. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes\. For information about adding the referenced file as a seed to your game's seed list, see the [O3DE Asset Bundler Command\-Line Tool Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference.md)\.
 + **Use the Wildcard Dependency System** - If your project uses relative path loads or wildcard path loads, you can declare the dependencies in a dependencies file\. This technique is explained in the following section\.
 
 #### Using the Wildcard Dependency System to Resolve Path Loads {#asset-bundler-assets-resolving-path-loads}
@@ -97,4 +97,4 @@ Some assets and asset references are used only in the editor or in launchers dur
 
 ### Removing False Positives From Missing Asset Scanning Results {#asset-bundler-assets-resolving-removing-false-positives}
 
-After you've verified that an asset is not used in your release builds, you can use the file tagging system to tag it so that it doesn't appear in future scans\. For more information, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/features/packaging/asset-bundler/file-tagging.md)\.
+After you've verified that an asset is not used in your release builds, you can use the file tagging system to tag it so that it doesn't appear in future scans\. For more information, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/packaging/asset-bundler/file-tagging.md)\.

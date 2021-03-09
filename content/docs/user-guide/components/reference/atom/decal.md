@@ -10,11 +10,11 @@ The **Decal** component enables an entity to project a material onto a mesh. The
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/features/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/atom)
 
 ## Base properties ##
 
-![Decal component base properties](/images/user-guide/features/components/reference/atom/decal-component-ui-01.png)
+![Decal component base properties](/images/user-guide/components/reference/atom/decal-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|

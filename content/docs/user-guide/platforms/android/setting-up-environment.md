@@ -7,7 +7,7 @@ weight: 100
 
 {{< preview-migrated >}}
 
- This section walks you through the steps needed to get your development environment and Open 3D Engine projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure O3DE projects for Android](/docs/user-guide/features/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)\.
+ This section walks you through the steps needed to get your development environment and Open 3D Engine projects ready for build and deployment to Android\. To get started, make sure that you have the [Prerequisites](/docs/userguide/mobile/android/intro#android-prerequisites)\. To learn about the platform\-specific steps involved in project configuration and building, see [Configure O3DE projects for Android](/docs/user-guide/platforms/android/configure-project.md) and [Build and deploy your project for Android](/docs/user-guide/platforms/android/build-deploy.md)\.
 
 **Topics**
 - [Set up your environment to develop for Android with O3DE {#android-setting-up-environment}](#set-up-your-environment-to-develop-for-android-with-lumberyard)
@@ -139,5 +139,5 @@ Note the path displayed as the **Android SDK Location**\. Use this as the base p
 ## Next steps {#android-setting-up-next-steps}
 
 Now that you have your O3DE environment configured for Android, configure, build, and deploy your project to a device to test\.
-+ [Configure O3DE projects for Android](/docs/user-guide/features/platforms/android/configure-project.md)
-+ [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)
++ [Configure O3DE projects for Android](/docs/user-guide/platforms/android/configure-project.md)
++ [Build and deploy your project for Android](/docs/user-guide/platforms/android/build-deploy.md)

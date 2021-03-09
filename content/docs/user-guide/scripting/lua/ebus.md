@@ -6,7 +6,7 @@ title: Using EBuses in Lua
 
 {{< preview-migrated >}}
 
-Components provide interfaces that allow scripts to send them information and receive notifications when certain actions take place\. Communication is established by creating two different objects in Lua: senders and handlers\. A sender or a handler is an interface to an [EBus](/docs/user-guide/features/engine/ebus), a communication system used extensively in the O3DE Engine\. When a sender is created, it can call functions, which in turn send information to a component\. When a handler is created, the component calls certain functions that the Lua script defines\. These senders and handlers are created with an entity ID\. You can use the entity ID to communicate with components that are attached to entities other than the one the script itself is running on\. The main script table always provides a field called `entityId` that contains the ID of the entity to which the script is attached\. Other entity IDs can be passed to the script through the `Properties` interface\.
+Components provide interfaces that allow scripts to send them information and receive notifications when certain actions take place\. Communication is established by creating two different objects in Lua: senders and handlers\. A sender or a handler is an interface to an [EBus](/docs/user-guide/engine/ebus), a communication system used extensively in the O3DE Engine\. When a sender is created, it can call functions, which in turn send information to a component\. When a handler is created, the component calls certain functions that the Lua script defines\. These senders and handlers are created with an entity ID\. You can use the entity ID to communicate with components that are attached to entities other than the one the script itself is running on\. The main script table always provides a field called `entityId` that contains the ID of the entity to which the script is attached\. Other entity IDs can be passed to the script through the `Properties` interface\.
 
 ## Order of Component Activation {#scriptbind_entity-lua-scripting-ces-communicating-with-components-order-of-component-activation}
 
@@ -16,7 +16,7 @@ Keep in mind the following points regarding the order of activation of Lua compo
 
 ## Communicating with Components {#lua-scripting-ces-communicating-with-components}
 
-When a Lua script creates a handler object, it notifies a component attached to an entity that it should call the script handler functions when certain events occur\. For example, in the first sample below, the script creates a [Spawner](/docs/user-guide/features/components/spawner.md) notification bus handler when `OnActivate()` is called\. This tells the spawner component attached to the entity that has the script to call the `OnSpawnBegin()`, `OnSpawnEnd()`, and `OnEntitySpawned()` functions when the spawner instantiates a new [dynamic slice](/docs/userguide/dynamic-slices-what-is.md)\. Subsequently, the handler is explicitly disconnected and set back to nil in the `OnDeactivate` function\. This ensures that processing time is not wasted when the entity attached to the script isn't active\. As long as the entity is active, these functions are called by the spawner component at the appropriate time\.
+When a Lua script creates a handler object, it notifies a component attached to an entity that it should call the script handler functions when certain events occur\. For example, in the first sample below, the script creates a [Spawner](/docs/user-guide/components/spawner.md) notification bus handler when `OnActivate()` is called\. This tells the spawner component attached to the entity that has the script to call the `OnSpawnBegin()`, `OnSpawnEnd()`, and `OnEntitySpawned()` functions when the spawner instantiates a new [dynamic slice](/docs/userguide/dynamic-slices-what-is.md)\. Subsequently, the handler is explicitly disconnected and set back to nil in the `OnDeactivate` function\. This ensures that processing time is not wasted when the entity attached to the script isn't active\. As long as the entity is active, these functions are called by the spawner component at the appropriate time\.
 
 The following code example shows a spawner component handler\.
 
@@ -61,7 +61,7 @@ return SpawnerScriptSample
 
 ## Noncomponent Notifications {#lua-scripting-ces-non-component-notifications}
 
-Some event buses that are available to Lua are not associated with components\. For example, the system's [tick bus](/docs/user-guide/features/engine/ebus/tick.md) is not a component bus and does not require an entity ID\. It provides both the amount of time that has passed since the last engine tick and the current time point\. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler\. The handler receives notifications from the system whenever the engine ticks\.
+Some event buses that are available to Lua are not associated with components\. For example, the system's [tick bus](/docs/user-guide/engine/ebus/tick.md) is not a component bus and does not require an entity ID\. It provides both the amount of time that has passed since the last engine tick and the current time point\. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler\. The handler receives notifications from the system whenever the engine ticks\.
 
 The following example shows how to register with the tick bus\.
 
@@ -95,7 +95,7 @@ handler = TickBus.Connect(handlerTable[, connectionId])
 
 ## Sending Events to a Component {#lua-scripting-ces-sending-events-to-a-component}
 
-In addition to receiving notifications from components, a script must sometimes exercise control over components\. Control is accomplished by sending events to components using the `Event` table and calling the functions implemented on it\. In the example script that follows, the **[Spawner](/docs/user-guide/features/components/spawner.md)** component is sent an event that tells the component to spawn a dynamic slice by calling the `Spawn()` function\. The first argument to an `Event` function is always the ID of the listener that you send the event to; the remaining arguments follow\.
+In addition to receiving notifications from components, a script must sometimes exercise control over components\. Control is accomplished by sending events to components using the `Event` table and calling the functions implemented on it\. In the example script that follows, the **[Spawner](/docs/user-guide/components/spawner.md)** component is sent an event that tells the component to spawn a dynamic slice by calling the `Spawn()` function\. The first argument to an `Event` function is always the ID of the listener that you send the event to; the remaining arguments follow\.
 
 The following example shows how to send EBus events\.
 

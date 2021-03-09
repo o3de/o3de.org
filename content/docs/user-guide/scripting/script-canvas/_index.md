@@ -11,11 +11,11 @@ Script Canvas is a visual scripting environment for Open 3D Engine that you can 
 
 Script Canvas is also an extensible system\. You can build your own reusable Script Canvas functions and, since Script Canvas is based on AzCore, you can create custom Script Canvas nodes that use the serialization, reflection, modularization, and EBus messaging systems\.
 
-To enable Script Canvas for O3DE, you must enable the [Script Canvas](/docs/user-guide/features/gems/script-canvas.md) gem and its dependencies\.
+To enable Script Canvas for O3DE, you must enable the [Script Canvas](/docs/user-guide/gems/script-canvas.md) gem and its dependencies\.
 
 **Topics**
-+ [Learning Guide](/docs/user-guide/features/scripting/script-canvas/learning-guide.md)
-+ [Common Tasks](/docs/user-guide/features/scripting/script-canvas/common-tasks.md)
-+ [Editor Reference](/docs/user-guide/features/scripting/script-canvas/editor-reference.md)
-+ [Programmer Guide](/docs/user-guide/features/scripting/script-canvas/advanced-topics.md)
++ [Learning Guide](/docs/user-guide/scripting/script-canvas/learning-guide.md)
++ [Common Tasks](/docs/user-guide/scripting/script-canvas/common-tasks.md)
++ [Editor Reference](/docs/user-guide/scripting/script-canvas/editor-reference.md)
++ [Programmer Guide](/docs/user-guide/scripting/script-canvas/advanced-topics.md)
 + [Script Canvas Node Reference](/docs/userguide/scripting/scriptcanvas/node-reference.md)

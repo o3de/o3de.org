@@ -9,7 +9,7 @@ weight: 500
 
  Things go wrong during development, and knowing which issues are the most commonly encountered and how to resolve them can be a big help\. This topic is a knowledge base of many of the issues that users experience when they're working with Open 3D Engine to develop a project for Android\. This section focuses on helping you quickly identify your issue and get it resolved, so that you can get back to work\.
 
-For information on how to design assets and configure renderer settings to improve performance, see [O3DE Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/features/platforms/mobile-performance.md)\.
+For information on how to design assets and configure renderer settings to improve performance, see [O3DE Performance Tuning Guidelines for Mobile Devices](/docs/user-guide/platforms/mobile-performance.md)\.
 
  All of the advice in this section is specific to issues you'll encounter when building with the O3DE tools, or when you're running a project on a device and see obvious errors caused by the engine itself\. For general advice and instructions on debugging your O3DE project for Android, see the [Android Studio Debugger documentation](https://developer.android.com/studio/debug)\.
 

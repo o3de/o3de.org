@@ -10,7 +10,7 @@ O3DE's memory management system determines how memory is allocated\. All memory 
 O3DE supports all the best known memory allocation schemes\. You can use O3DE's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation\.
 
 **Note**
-For best C\+\+ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/features/engine/memory-management.md)\.
+For best C\+\+ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/engine/memory-management.md)\.
 
 **Topics**
 - [Using Memory Allocators in O3DE {#memory-allocators}](#using-memory-allocators-in-lumberyard-memory-allocators)
@@ -98,7 +98,7 @@ AZStd::vector<MyClass, AZ::AZStdAlloc<CustomAllocator>>
 
 ### Child Allocator Example {#memory-allocators-creating-a-child-allocator-example}
 
- The following code example adds a custom allocator for the [Script Canvas gem](/docs/user-guide/features/gems/script-canvas.md)\.
+ The following code example adds a custom allocator for the [Script Canvas gem](/docs/user-guide/gems/script-canvas.md)\.
 
 **Example**
 

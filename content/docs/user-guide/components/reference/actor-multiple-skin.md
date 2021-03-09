@@ -24,7 +24,7 @@ You can use multiple skin attachments on an actor or character to add interchang
 
 Whether you use a single FBX file or multiple FBX files, you create an actor for each skinned mesh attachment\. The single FBX file method requires some additional configuration in the **FBX Settings** tool\.
 
-For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
+For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md)\.
 
 To download the assets used in the following sections, see [Open 3D Engine Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the O3DE characters file\.
 

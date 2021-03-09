@@ -11,7 +11,7 @@ weight: 300
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
- O3DE has support for bundling and distributing your dedicated Linux servers over [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. To integrate your O3DE game with GameLift, enable the [GameLift Gem](/docs/user-guide/features/gems/gamelift.md) and use the GameLift C\+\+ SDK API to configure your game server and client to manage server sessions and connections from a client application\.
+ O3DE has support for bundling and distributing your dedicated Linux servers over [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide)\. To integrate your O3DE game with GameLift, enable the [GameLift Gem](/docs/user-guide/gems/gamelift.md) and use the GameLift C\+\+ SDK API to configure your game server and client to manage server sessions and connections from a client application\.
 
  In the rest of this topic, you learn how to set up for creating your GameLift package and make a basic deployment\.
 
@@ -20,8 +20,8 @@ weight: 300
 Before packaging and pushing your GameLift server, make sure that you complete the following\.
 + Set up your AWS account to use the GameLift service\. Follow the [GameLift \- Setting Up](https://docs.aws.amazon.com/gamelift/latest/developerguide/setting-up-intro) instructions\.
 + Install the AWS CLI on your Linux server\. Follow the [AWS CLI install instructions for Linux](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux)\.
-+ [Build and do a test deploy of your game server on a standalone Linux machine](/docs/user-guide/features/platforms/linux/build-lumberyard-executable.md)\.
-+ \(Optional\) [Test client/server connectivity](/docs/user-guide/features/platforms/linux/test-windows-client-linux-server-connection.md)\.
++ [Build and do a test deploy of your game server on a standalone Linux machine](/docs/user-guide/platforms/linux/build-lumberyard-executable.md)\.
++ \(Optional\) [Test client/server connectivity](/docs/user-guide/platforms/linux/test-windows-client-linux-server-connection.md)\.
 
 ## Prepare the GameLift package {#linux-prepare-gamelift-package-bundle}
 

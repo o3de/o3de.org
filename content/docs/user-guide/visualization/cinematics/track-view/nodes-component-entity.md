@@ -31,7 +31,7 @@ Not all components can be animated in the Track View\. For example, you can add 
 
 ![\[Add tracks from component entity nodes\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
 
-For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/features/engine/components/expose-animation.md)\.
+For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md)\.
 
 ## Naming and Identifying Component Entities {#cinematics-track-view-component-entity-name-components}
 
@@ -62,8 +62,8 @@ Component nodes that can be animated are nested as children under the associated
 
 **Note**
 Some components support only a limited number of tracks that can be animated in a sequence\. For more information for component\-specific properties, see the [Component Reference](/docs/userguide/components/components.md)\.
-Not all components can be animated in the Track View\. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/features/engine/components/expose-animation.md)\.
+Not all components can be animated in the Track View\. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md)\.
 
 After you add the component entity nodes to the sequence and specify the tracks to animate, you can then add keyframes to the timeline\. In keyframes, you specify where in the timeline you want to animate the property and edit its properties\.
 
-For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/features/visualization/cinematics/adding-removing-animation-keys-on-tracks.md)\.
+For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks.md)\.

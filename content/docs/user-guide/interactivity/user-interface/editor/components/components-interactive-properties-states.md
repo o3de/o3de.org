@@ -26,7 +26,7 @@ When you first add an interactive component to an element, no **state actions** 
 
 **To add a state action to a state**
 
-In the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), in the **Properties** pane, under the interactive component's name \(for example, **Button**\), do the following:
+In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), in the **Properties** pane, under the interactive component's name \(for example, **Button**\), do the following:
 
 1. Under **Interactable**, **States**, click **Add new element** \(green **\+**\)\.
 

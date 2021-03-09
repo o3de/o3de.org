@@ -18,7 +18,7 @@ See the following main sections of the Track View:
 
 1. ****Curve Editor**** - Pane for controlling keys and their interpolation for all sequence nodes\. The ****Curve Editor**** provides more control over easing in or out of curves, setting some curves to be linear, and so on, depending on your animation requirements\.
 
-   For more information, see [Using Animation Curves](/docs/user-guide/features/visualization/cinematics/track-view/editor-animation-curves.md)\.
+   For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md)\.
 
 **Note**
 You can pause over buttons in the Track View to view their descriptions\.

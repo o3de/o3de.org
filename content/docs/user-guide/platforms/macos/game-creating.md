@@ -10,10 +10,10 @@ weight: 600
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-The topics in [Create macOS projects in O3DE](/docs/user-guide/features/platforms/macos/intro.md) demonstrate how to use the Samples Project that is included with O3DE to build game assets, shaders, and macOS applications\. You can follow the same instructions to create a project for your own macOS game\.
+The topics in [Create macOS projects in O3DE](/docs/user-guide/platforms/macos/intro.md) demonstrate how to use the Samples Project that is included with O3DE to build game assets, shaders, and macOS applications\. You can follow the same instructions to create a project for your own macOS game\.
 
 **Note**
-Ensure you have the prerequisites \(see [Create macOS projects in O3DE](/docs/user-guide/features/platforms/macos/intro.md)\) and your Mac is properly set up to compile for macOS computers\.
+Ensure you have the prerequisites \(see [Create macOS projects in O3DE](/docs/user-guide/platforms/macos/intro.md)\) and your Mac is properly set up to compile for macOS computers\.
 
 **To create a project for your macOS game**
 
@@ -35,6 +35,6 @@ Ensure you have the prerequisites \(see [Create macOS projects in O3DE](/docs/us
    enabled_game_projects = SamplesProject,MyProject,OtherProject
    ```
 
-1. In a command line window, configure and build your project using the instructions on the [Building macOS Games](/docs/user-guide/features/platforms/macos/game-building.md) and [Running macOS Games](/docs/user-guide/features/platforms/macos/game-deploying.md) pages\.
+1. In a command line window, configure and build your project using the instructions on the [Building macOS Games](/docs/user-guide/platforms/macos/game-building.md) and [Running macOS Games](/docs/user-guide/platforms/macos/game-deploying.md) pages\.
 **Note**
 If you enabled multiple projects, you can switch between multiple targets in your Xcode project\.

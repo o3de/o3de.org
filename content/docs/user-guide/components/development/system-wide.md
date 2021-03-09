@@ -8,11 +8,11 @@ weight: 600
 
 System components are similar to other components in O3DE's component entity framework\. However, instead of creating game entity behavior, they control the behavior of the engine itself\. System components are first\-class elements of the game engine and are included at a deep level early in the initialization process\. For more information, see [System Components](/docs/userguide/modules/system-components.md) in the [AZ Modules](/docs/userguide/modules/s-intro.md) section\.
 
-Like any O3DE [component](/docs/user-guide/features/engine/components/create-component.md), a system component can provide services and can depend on or require other system component services\. O3DE provides precise control over the order of engine initialization and system dependencies\.
+Like any O3DE [component](/docs/user-guide/engine/components/create-component.md), a system component can provide services and can depend on or require other system component services\. O3DE provides precise control over the order of engine initialization and system dependencies\.
 
 When you author system components, follow the best practices for component authoring\. For example, your system components should use the following:
-+ [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md) to expose their interfaces\.
-+ [Reflection](/docs/user-guide/features/engine/components/reflection.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](/docs/user-guide/editor/add-system-entity.md)\.
++ [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md) to expose their interfaces\.
++ [Reflection](/docs/user-guide/engine/components/reflection.md) to serialize and edit settings in the [Advanced Settings dialog of the Project Configurator](/docs/user-guide/editor/add-system-entity.md)\.
 + The same [AZ::Component Functions](/docs/userguide/components/entity-system-create-component#component-entity-system-create-component-az-functions) for activation and deactivation\.
 
 **Important**
@@ -24,7 +24,7 @@ Just like game components, system components often provide request and notificat
 
 ## Creating a System Component in a Gem {#component-entity-system-pg-creating-system-components-gem}
 
-O3DE enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/user-guide/features/engine/gems/structure.md)\. Most O3DE games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\.
+O3DE enables the creation of custom system components through gems and AZ modules\. Gems are a specialization of AZ modules\. For more information, see [Gems and AZ Modules](/docs/user-guide/engine/gems/structure.md)\. Most O3DE games organize their game code in one or more gems\. These gems can contain system components that integrate with the game engine as well as components for use on game entities\.
 
 When you create a system component as part of a gem, note the following requirements:
 + Your gem's `GetRequiredSystemComponents()` function must return the system component\.

@@ -32,7 +32,7 @@ O3DE audio Gems feature the following modules:
 
 ## Components {#audio-architecture-components}
 
-Core audio components available in O3DE Editor enable you to trigger sound effects, play ambient music, change sound variables using RTPC, apply environmental effects, place listeners to act as virtual microphones, and more\. For a complete list, see [Audio Components](/docs/user-guide/features/interactivity/audio/components.md)\.
+Core audio components available in O3DE Editor enable you to trigger sound effects, play ambient music, change sound variables using RTPC, apply environmental effects, place listeners to act as virtual microphones, and more\. For a complete list, see [Audio Components](/docs/user-guide/interactivity/audio/components.md)\.
 
 ## Content {#audio-architecture-content}
 

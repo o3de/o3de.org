@@ -18,7 +18,7 @@ The character animation system includes tools for building the following:
 
 The **Animation Editor** is compatible with `.fbx` files and converts these files to the `.actor` and `.motion` formats\.
 
-For more information, see [Create and animate characters](/docs/user-guide/features/visualization/animation/char-intro.md)\.
+For more information, see [Create and animate characters](/docs/user-guide/visualization/animation/char-intro.md)\.
 
 Enable this gem for your project in the Project Configurator\. For more information, see [Creating a Game Project in O3DE](/docs/userguide/configurator/projects#creating-a-game-project)\.
 

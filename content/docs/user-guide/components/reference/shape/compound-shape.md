@@ -6,11 +6,11 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Compound Shape** component is a container for complex shapes. An entity can contain only one Shape component. To build complex shapes, the Compound Shape component can reference any number of entities, each with their own Shape component. The Compound Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
+The **Compound Shape** component is a container for complex shapes. An entity can contain only one Shape component. To build complex shapes, the Compound Shape component can reference any number of entities, each with their own Shape component. The Compound Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Dependencies ##
 
@@ -18,7 +18,7 @@ One or more entities containing Shape components.
 
 ## Properties ##
 
-![Compound Shape component properties](/images/user-guide/features/components/reference/shape/compound-shape-component-ui-01.png)
+![Compound Shape component properties](/images/user-guide/components/reference/shape/compound-shape-component-ui-01.png)
 
 The Compound Shape component contains a **Child Shape Entities** list of referenced entities containing Shape components.
 

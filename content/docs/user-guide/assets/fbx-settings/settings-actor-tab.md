@@ -63,13 +63,13 @@ Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 **Note**
 Each mesh in the **Actor group** to simulate as cloth requires its own **Cloth** modifier\.
 
-For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/intro.md)\.
+For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
 
 ****Select Cloth Mesh****
 Select the mesh to have cloth data applied and simulate as a cloth object\.
 
 **Note**
-For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/vertex-data.md)\.
+For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data.md)\.
 
 ****Inverse Masses****
 Select a vertex color stream to apply per vertex inverse mass data for cloth simulation\. If no vertex color stream is selected, an inverse mass value of **1\.0** is assigned to all vertices in the cloth mesh\.
@@ -123,7 +123,7 @@ When you author the actor in your 3D application, you must add `_lod0`, `_lod1`,
 **Important**
 The meshes for the highest level of detail, \[`0`\], and the corresponding skeleton are assigned in the **Select base meshes** and **Select root bone** properties of the **Actor group** automatically\. Meshes labeled `_lod1` through `_lod5` and their skeleton hierarchies are assigned to corresponding LoDs in the **Level of Detail** modifier\.
 
-For more information, see [Using Actor LODs to Optimize Game Performance](/docs/user-guide/features/visualization/animation/using-actor-LODs-optimize-game-performance.md)\.
+For more information, see [Using Actor LODs to Optimize Game Performance](/docs/user-guide/visualization/animation/using-actor-LODs-optimize-game-performance.md)\.
 
 ## Material modifier {#w31aac15b9c11c13c19}
 

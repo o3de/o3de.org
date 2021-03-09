@@ -12,13 +12,13 @@ title: Actor
 You can use the **Actor** component to create characters for your game\. After you import your character files from your DCC tool into O3DE, you can create an entity and add the **Actor** component to it\. For example, you must use an **Actor** component to create a controllable character for your game\.
 
 For the **Actor** component to work properly, you must also add one of the following:
-+ **[Simple Motion](/docs/user-guide/features/components/simple-motion.md)** component - Uses a single motion for your actor\.
-+ **[AnimGraph](/docs/user-guide/features/components/animgraph.md)** component - Uses an animation graph to control your actor's behavior\.
++ **[Simple Motion](/docs/user-guide/components/simple-motion.md)** component - Uses a single motion for your actor\.
++ **[AnimGraph](/docs/user-guide/components/animgraph.md)** component - Uses an animation graph to control your actor's behavior\.
 
 **Topics**
 + [Actor Component Properties](#component-actor-properties)
-+ [Using Multiple Skin Attachments for an Actor](/docs/user-guide/features/components/actor-multiple-skin.md)
-+ [Setting Up Actor Entities](/docs/user-guide/features/components/actor-component-entity-setup.md)
++ [Using Multiple Skin Attachments for an Actor](/docs/user-guide/components/actor-multiple-skin.md)
++ [Setting Up Actor Entities](/docs/user-guide/components/actor-component-entity-setup.md)
 
 ## Actor Component Properties {#component-actor-properties}
 

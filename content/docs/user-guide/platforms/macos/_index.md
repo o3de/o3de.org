@@ -16,12 +16,12 @@ You can use O3DE to build macOS applications\. O3DE includes four macOS\-support
 **Topics**
 + [Prerequisites](#osx-prerequisites)
 + [Setting Up Your Mac](#osx-setting-up)
-+ [Building macOS Games](/docs/user-guide/features/platforms/macos/game-building.md)
-+ [Building Game Assets for macOS Games](/docs/user-guide/features/platforms/macos/assets-building.md)
-+ [Building Shaders for macOS Games](/docs/user-guide/features/platforms/macos/shaders-building.md)
-+ [Running macOS Games](/docs/user-guide/features/platforms/macos/game-deploying.md)
-+ [macOS Debugging and Troubleshooting](/docs/user-guide/features/platforms/macos/debugging-troubleshooting.md)
-+ [Creating a Project for Your macOS Games](/docs/user-guide/features/platforms/macos/game-creating.md)
++ [Building macOS Games](/docs/user-guide/platforms/macos/game-building.md)
++ [Building Game Assets for macOS Games](/docs/user-guide/platforms/macos/assets-building.md)
++ [Building Shaders for macOS Games](/docs/user-guide/platforms/macos/shaders-building.md)
++ [Running macOS Games](/docs/user-guide/platforms/macos/game-deploying.md)
++ [macOS Debugging and Troubleshooting](/docs/user-guide/platforms/macos/debugging-troubleshooting.md)
++ [Creating a Project for Your macOS Games](/docs/user-guide/platforms/macos/game-creating.md)
 
 ## Prerequisites {#osx-prerequisites}
 

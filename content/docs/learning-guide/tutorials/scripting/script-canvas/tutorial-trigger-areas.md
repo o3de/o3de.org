@@ -54,7 +54,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. Click **Add Component** and then choose the **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)** component\. This component defines the collision shape for the **Door Mesh** entity\.
 
-   1. In the **[Transform](/docs/user-guide/features/components/transform.md)** component, for **Scale**, set **X** to **2\.5**, **Y** to **0\.5**, and **Z** to **4\.0**\.
+   1. In the **[Transform](/docs/user-guide/components/transform.md)** component, for **Scale**, set **X** to **2\.5**, **Y** to **0\.5**, and **Z** to **4\.0**\.
 
    1. Verify that your **Door Mesh** entity looks like the following\.
 **Example**
@@ -74,7 +74,7 @@ To create a door and trigger area, create an entity with child entities and then
 
    1. For the **Box Shape** component, for **Dimensions**, set **X** to **3\.0**, **Y** to **9\.0**, and **Z** to **6\.0**\.
 
-   1. Click **Add Component** and then choose the **[Script Canvas](/docs/user-guide/features/components/script-canvas.md)** component\.
+   1. Click **Add Component** and then choose the **[Script Canvas](/docs/user-guide/components/script-canvas.md)** component\.
 
    1. In O3DE Editor, choose **Tools**, **Script Canvas**\.
 
@@ -100,14 +100,14 @@ Now that you've set up your door and trigger area, you can create a script that 
 
 1. In the **Node Palette**, enter **trigger** in the search box and under **Gameplay**, **Trigger Area**, drag **On Area Entered** to the canvas\.
 **Note**
-With this event node you can easily use the O3DE EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+With this event node you can easily use the O3DE EBus messaging system\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 1. In the **Trigger Area** node, click **Add/Remove Events** and then select the **On Area Exited** check box\. This exposes the entered and exited events from the **Trigger Area** EBus\.
 ![\[Add the Trigger Area node in Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/trigger-area-node-add-remove-events.png)
 
 1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\.
 **Note**
-You can store and modify persistent values in your graph with variable nodes\. For more information, see [Managing Script Canvas Variables](/docs/user-guide/features/scripting/script-canvas/managing-variables.md)\.
+You can store and modify persistent values in your graph with variable nodes\. For more information, see [Managing Script Canvas Variables](/docs/user-guide/scripting/script-canvas/managing-variables.md)\.
 
 1. Select **Vector3**, double\-click **Variable 1** and then rename the variable to **opened\_position**\.
 

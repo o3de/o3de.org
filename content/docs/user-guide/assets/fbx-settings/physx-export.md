@@ -41,7 +41,7 @@ Convex generates a convex hull that encompasses the selected meshes\. A convex c
 **Decompose Meshes**
 When generating **Primitive** or **Convex** colliders, you have the option to decompose meshes\. When enabled, **Decompose Meshes** breaks the selected meshes down into approximately convex parts\. Primitives or convex hulls are generated and fit to each decomposed mesh part\. Many small colliders that more accurately resemble the shape of the visible render mesh are generated\. This option is useful for automatically generating colliders for characters and other complex meshes without authoring colliders in a content creation application or fitting primitive colliders manually\.
 
-   For further information on **PhysX mesh group** properties and modifiers, see [FBX Settings PhysX tab](/docs/user-guide/features/assets/fbx-settings/settings-physx-tab.md)\.
+   For further information on **PhysX mesh group** properties and modifiers, see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab.md)\.
 
 1. Choose the **Update** button at the bottom right of the **FBX Settings** window\. A **File progress** window opens to display information about issues encountered during asset processing\. Choose **OK** to close the **File progress** window\. This step creates or updates the `.assetinfo` file\. **Asset Processor** automatically processes the `.fbx` file and generates the runtime `.cgf` files for meshes, `.pxmesh` files for PhysX, and `.mtl` files for materials\.
 

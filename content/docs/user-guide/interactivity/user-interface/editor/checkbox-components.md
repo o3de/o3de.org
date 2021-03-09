@@ -20,12 +20,12 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 You can add a prebuilt **Checkbox** element from the slice library\. When you do this, a basic check box with the text string "Checkbox" and a check image for the box is automatically created in your **Hierarchy** pane\.
 
 **To add a Checkbox element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Checkbox**\.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Checkbox**\.
 
 **To edit a check box component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), expand **Checkbox** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Checkbox** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/features/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings\.
 **Elements**, **On**
 Select an element from the list to specify the entity that appears when the check box state is `on` \(selected\)\.
 **Elements**, **Off**

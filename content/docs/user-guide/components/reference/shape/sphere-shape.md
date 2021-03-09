@@ -6,15 +6,15 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Sphere Shape** component creates a transparent sphere. The dimensions of the sphere can be edited with the **Radius** property. The Sphere Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for area lights, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
+The **Sphere Shape** component creates a transparent sphere. The dimensions of the sphere can be edited with the **Radius** property. The Sphere Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for area lights, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Properties ##
 
-![Sphere Shape component properties](/images/user-guide/features/components/reference/shape/sphere-shape-component-ui-01.png)
+![Sphere Shape component properties](/images/user-guide/components/reference/shape/sphere-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|

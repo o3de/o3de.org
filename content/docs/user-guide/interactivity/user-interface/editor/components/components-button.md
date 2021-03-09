@@ -26,11 +26,11 @@ Note the following:
 You can add a prebuilt **Button** element from the slice library\. When you do this, a basic button with the text string "Button" is automatically created in your **Hierarchy** pane\.
 
 **To add a Button element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Button**\.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Button**\.
 
 **To edit a button component**
-In the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md) **Properties** pane, expand **Button** and do the following, as appropriate:
+In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md) **Properties** pane, expand **Button** and do the following, as appropriate:
 ****Interactable****
-See [Properties](/docs/user-guide/features/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings\.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings\.
 ****Actions**, **Click****
 Enter a text string\. This string is sent as an action on the UI canvas when the button is clicked\.

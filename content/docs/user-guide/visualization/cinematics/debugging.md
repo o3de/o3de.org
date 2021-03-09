@@ -6,7 +6,7 @@ title: Debugging Cinematic Scenes with Console Variables
 
 {{< preview-migrated >}}
 
-You can specify the following console variables when profiling a scene\. For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
+You can specify the following console variables when profiling a scene\. For more information, see [Using the Console Window](/docs/user-guide/editor/console.md)\.
 
 
 **Cinematic Scene Console Variables**

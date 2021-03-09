@@ -30,9 +30,9 @@ The example image below is a simple demonstration of the three joint types\. In 
 ## PhysX joint types {#physx-joint-types}
 
 See the linked component reference below for information on the three PhysX joint types:
-+ [ PhysX Ball Joint component reference ](/docs/user-guide/features/components/physx-ball-joint.md) \- The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes\.
-+ [ PhysX Fixed Joint component reference ](/docs/user-guide/features/components/physx-fixed-joint.md) \- The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis\.
-+ [ PhysX Hinge Joint component reference ](/docs/user-guide/features/components/physx-hinge-joint.md) \- The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis\.
++ [ PhysX Ball Joint component reference ](/docs/user-guide/components/physx-ball-joint.md) \- The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes\.
++ [ PhysX Fixed Joint component reference ](/docs/user-guide/components/physx-fixed-joint.md) \- The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis\.
++ [ PhysX Hinge Joint component reference ](/docs/user-guide/components/physx-hinge-joint.md) \- The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis\.
 
 ## PhysX joint setup {#physx-joint-setup}
 

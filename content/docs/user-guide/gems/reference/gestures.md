@@ -18,7 +18,7 @@ Single\-touch gestures \(such as tap, drag, hold, and swipe\) can be detected wi
 
 ![\[Enable the Gestures gem to detect common gesture input actions.\]](/images/user-guide/gems/gestures-gem.png)
 
-To enable the Gestures gem for your project, see [Add modular features and assets with Gems](/docs/user-guide/features/gems)\.
+To enable the Gestures gem for your project, see [Add modular features and assets with Gems](/docs/user-guide/gems)\.
 
 **Topics**
 + [Configuring Gesture Recognizers](#configuring-gesture-recognizers)
@@ -45,9 +45,9 @@ Pause on the gesture recognizer to see a description and the valid values\.
 
 Each gesture recognizer that the **Gestures** system component exposes corresponds to a gesture input channel that belongs to a gesture input device\.
 
-You can use gesture input channels in the same way as other input channels with C\+\+, Lua, or Script Canvas\. You can map the gesture input channels to gameplay actions with an **Input** component\. This component is part of the [Input Management Framework](/docs/user-guide/features/gems/input.md) and [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gems\.
+You can use gesture input channels in the same way as other input channels with C\+\+, Lua, or Script Canvas\. You can map the gesture input channels to gameplay actions with an **Input** component\. This component is part of the [Input Management Framework](/docs/user-guide/gems/input.md) and [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gems\.
 
-To add input to an entity, see the **[Input](/docs/user-guide/features/components/input.md)** component\.
+To add input to an entity, see the **[Input](/docs/user-guide/components/input.md)** component\.
 
 **Example Lua Script**
 The following script listens for and responds to the default double press gesture\.
@@ -70,4 +70,4 @@ function GestureExample:OnDeactivate()
 end
 ```
 
-For more information, see [Input in Open 3D Engine](/docs/user-guide/features/interactivity/input/input-intro.md)\.
+For more information, see [Input in Open 3D Engine](/docs/user-guide/interactivity/input/input-intro.md)\.

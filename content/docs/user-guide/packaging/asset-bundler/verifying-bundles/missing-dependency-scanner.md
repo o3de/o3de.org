@@ -20,7 +20,7 @@ The command scans the **ProductName** column in the **Products** table in the as
 ## Taking Action {#asset-bundler-missing-dependency-scanner-taking-action}
 
 If a scan of assets in your project returns results, verify that they are true dependencies\.
-+ If the results are false positives, use the asset tagging system to mark the files that can be safely ignored in future scans\. Files tagged with the `editoronly` or `shader` flags in the file `exclude.filetag` are skipped by the scanner\. For more information about file tagging, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/features/packaging/asset-bundler/file-tagging.md)\.
++ If the results are false positives, use the asset tagging system to mark the files that can be safely ignored in future scans\. Files tagged with the `editoronly` or `shader` flags in the file `exclude.filetag` are skipped by the scanner\. For more information about file tagging, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/packaging/asset-bundler/file-tagging.md)\.
 + If the dependencies reported are truly missing, update the builder for your asset to emit a dependency\. For more information, see the [Declare Product Dependencies](/docs/userguide/asset-builder-custom#asset-builder-custom-create-builder-class-optional-declare-product-dependencies) section of the [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md) page\.
 
 ### Example {#asset-bundler-missing-dependency-scanner-example-usage}

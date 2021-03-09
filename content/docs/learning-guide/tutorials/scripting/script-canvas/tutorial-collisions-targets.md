@@ -36,7 +36,7 @@ This involves several tasks:
 
 ## Step 1: Set Up a Projectile Entity {#script-canvas-tutorial-collisions-targets-step-one}
 
-To create a projectile entity, create an entity and then add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](/docs/userguide/components/rigid-body)** component, **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)**, and **[Script Canvas](/docs/user-guide/features/components/script-canvas.md)** components\.
+To create a projectile entity, create an entity and then add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](/docs/userguide/components/rigid-body)** component, **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)**, and **[Script Canvas](/docs/user-guide/components/script-canvas.md)** components\.
 
 **To create a projectile entity**
 
@@ -162,7 +162,7 @@ Now that you've created a slice, you can set up your **Player** entity to spawn 
 
 1. In the **Transform** component, for the **Translate Y** property, enter **1\.0**\. This sets the spawn point 1 meter in front of the parent entity\.
 
-1. Select the child entity and in the **Entity Inspector**, click **Add Component**, and then choose the **[Spawner](/docs/user-guide/features/components/spawner.md)** component\.
+1. Select the child entity and in the **Entity Inspector**, click **Add Component**, and then choose the **[Spawner](/docs/user-guide/components/spawner.md)** component\.
 
 1. In the **Spawner** component, for **Dynamic slice**, click the browse \(**\.\.\.**\) icon, select the `projectile.slice` file, and then click **OK**\.
 ![\[Select the projectile.slice for the Spawner component.\]](/images/user-guide/scripting/script-canvas/script-canvas-pick-dynamic-slice-window.png)
@@ -315,7 +315,7 @@ Now that you've set up the **Target** entity, you can add logic to the projectil
 
    1. In the bottom\-right pane, in the **Variable Manager**, click **Create Variable**\. You can use variables to store and modify persistent values in your graph\.
 
-      For more information, see [Managing Script Canvas Variables](/docs/user-guide/features/scripting/script-canvas/managing-variables.md)\.
+      For more information, see [Managing Script Canvas Variables](/docs/user-guide/scripting/script-canvas/managing-variables.md)\.
 
    1. Select **Collision**, double\-click **Variable 1** and then rename the variable to **hit**\.
 

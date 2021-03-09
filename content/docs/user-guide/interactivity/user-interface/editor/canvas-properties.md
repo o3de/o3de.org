@@ -39,17 +39,17 @@ The following properties define how a canvas handles inputs:
   1. Continue holding for an amount of time equal to the *navigation repeat delay* to navigate a second time\.
 
   1. Continue holding for an amount of time equal to the *navigation repeat period* to navigate a third time\. Thereafter, as you continue holding the button, you will navigate again, every time an amount of time equal to the navigation period elapses\.
-+ **First focus element** - Displayed when **Handle navigation** is selected\. **First focus element** specifies which element gains focus when a canvas is first loaded and a mouse is not detected\. For more information about element navigation, see [First Focus Element](/docs/user-guide/features/interactivity/user-interface/editor/components-firstfocus.md)\.
++ **First focus element** - Displayed when **Handle navigation** is selected\. **First focus element** specifies which element gains focus when a canvas is first loaded and a mouse is not detected\. For more information about element navigation, see [First Focus Element](/docs/user-guide/interactivity/user-interface/editor/components-firstfocus.md)\.
 
 ## Tooltips Properties {#editor-properties-tooltips}
 
 The following property defines how a canvas displays tooltips:
-+ **Tooltip display element** - Controls which element the game displays when your users hover over an interactive element\. Select an element from the drop\-down list\. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component\. For more information about the **Tooltips** components, see [Tooltip Components](/docs/user-guide/features/interactivity/user-interface/editor/components-tooltips.md)\.
++ **Tooltip display element** - Controls which element the game displays when your users hover over an interactive element\. Select an element from the drop\-down list\. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component\. For more information about the **Tooltips** components, see [Tooltip Components](/docs/user-guide/interactivity/user-interface/editor/components-tooltips.md)\.
 
 ## Editor Settings Properties {#editor-properties-group}
 
 The following properties define UI Editor behavior:
 + **Snap distance** - The distance between positions on the grid when **Snap to grid** is selected in the toolbar\.
 + **Snap rotation** - The number of degrees between each step of rotation when you use the rotation gizmo to rotate an element in the viewport when **Snap to grid** is selected in the toolbar\.
-+ **Guide color** - The color of the guide lines on this canvas\. For more information about using guides in **UI Editor**, see [Rulers and Guides](/docs/user-guide/features/interactivity/user-interface/editor/rulers-guides.md)\.
-+ **Texture atlases** - The texture atlas that this canvas loads\. Using a texture atlas can reduce the number of draw calls in certain situations, resulting in better performance for your UI\. For more information about *texture atlases*, see [Using Texture Atlases](/docs/user-guide/features/interactivity/user-interface/editor/texture-atlases.md)\.
++ **Guide color** - The color of the guide lines on this canvas\. For more information about using guides in **UI Editor**, see [Rulers and Guides](/docs/user-guide/interactivity/user-interface/editor/rulers-guides.md)\.
++ **Texture atlases** - The texture atlas that this canvas loads\. Using a texture atlas can reduce the number of draw calls in certain situations, resulting in better performance for your UI\. For more information about *texture atlases*, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/editor/texture-atlases.md)\.

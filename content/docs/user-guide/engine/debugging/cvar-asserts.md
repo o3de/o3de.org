@@ -66,7 +66,7 @@ You can set the `sys_asserts` console variable at runtime in the console window\
 
 ## Setting the Assert Level for Mobile Devices {#debugging-using-asserts-mobile-devices}
 
-When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](/docs/user-guide/features/engine/remote-console.md) to set the assert level in the command\-line window of the application\.
+When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](/docs/user-guide/engine/remote-console.md) to set the assert level in the command\-line window of the application\.
 
 ![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/user-guide/debugging-using-asserts-3.png)
 
@@ -78,4 +78,4 @@ To add an assert in source code, use the `AZ_Assert` macro\.
 AZ_Assert(m_useCount >= 0, "AssetData has been deleted")
 ```
 
-For more information, see [Tracing](/docs/user-guide/features/engine/debugging/tracing.md)\.
+For more information, see [Tracing](/docs/user-guide/engine/debugging/tracing.md)\.

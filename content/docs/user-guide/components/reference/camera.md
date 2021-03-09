@@ -6,7 +6,7 @@ title: Camera
 
 {{< preview-migrated >}}
 
-The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/features/gems/camera.md)\.
+The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/gems/camera.md)\.
 
 ## Camera Component Properties {#component-camera-properties}
 
@@ -30,7 +30,7 @@ The **Camera** component has the following properties:
 
 Use the following request functions with the event bus \(EBus\) interface, `CameraRequestBus`, to communicate with other components of your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 
 ****

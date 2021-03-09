@@ -20,7 +20,7 @@ This topic describes the following main steps for synchronizing two animation gr
 
 1. Add a servant parameter action to the primary graph to send change events to the secondary graph\.
 
-1. Synchronize the graphs by using O3DE's [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md) system and Lua script\.
+1. Synchronize the graphs by using O3DE's [Event Bus \(EBus\)](/docs/user-guide/engine/ebus/_index.md) system and Lua script\.
 
 **Note**
 For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md)\.
@@ -69,10 +69,10 @@ After you set up your entities and components, create a motion set and two anima
 
 **To create a motion set and two animation graphs**
 
-1. Create a motion set\. For information about creating a motion set, see [Getting Started with the Animation Editor](/docs/user-guide/features/visualization/animation/animation-editor/quick-start.md)\. This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`\.
+1. Create a motion set\. For information about creating a motion set, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md)\. This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`\.
 ![\[Example motion set.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-2.png)
 
-1. Create a secondary animation graph\. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](/docs/user-guide/features/visualization/animation/animation-editor/quick-start.md)\. The secondary graph controls one or more entities whose actions are determined by the primary graph\.
+1. Create a secondary animation graph\. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md)\. The secondary graph controls one or more entities whose actions are determined by the primary graph\.
 
    This example's `syncFeature_Gun` secondary graph has a **BindPose0** node and a **Motion0** node\. The **Motion0** node contains the `gunshootanimation` motion\.
 ![\[Motion node with associated animation.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-3.png)
@@ -226,7 +226,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 1. Placing a Lua script component and Lua script on the primary entity\.
 
-The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus \(EBus\)](/docs/user-guide/features/engine/ebus/_index.md) system\.
+The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus \(EBus\)](/docs/user-guide/engine/ebus/_index.md) system\.
 
 ### Getting Input from the Player {#char-animation-editor-sync-graph-get-input-from-the-player}
 
@@ -242,11 +242,11 @@ In the example, the synchronization state of the primary and secondary graphs an
 | S | Fires the gun\. | 1 |
 | D | Stops the gun from firing\. | \-1 |
 
-To gather these inputs, the example adds [Input](/docs/user-guide/features/components/input.md) components to the robot entity and to the gun entity\.
+To gather these inputs, the example adds [Input](/docs/user-guide/components/input.md) components to the robot entity and to the gun entity\.
 
-To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/features/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
+To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
 
-Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in O3DE Editor to create an input bindings file\. For more information, see [Working with the Input Component](/docs/user-guide/features/interactivity/input/working-with-the-input-component.md)\.
+Each Input component references an `.inputbindings` file\. An `.inputbindings` file binds a set of inputs to an event\. These inputs can come from sources like a mouse, keyboard, or game controller\. You can use the **Input Bindings Editor** in O3DE Editor to create an input bindings file\. For more information, see [Working with the Input Component](/docs/user-guide/interactivity/input/working-with-the-input-component.md)\.
 
 **Getting Keyboard Input to Control Graph Synchronization**
 In the example, the gun entity has an Input component\. The Input component uses a `synctest.inputbindings` asset to bind keyboard inputs **1** and **2** to the `SyncControl` event\. The `SyncControl` event controls the sync mode, which determines whether or not the gun fires when the robot fires\.

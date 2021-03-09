@@ -22,7 +22,7 @@ Before you can add blend space nodes to the animation graph, you must have compl
 + Selected a motion set
 + Created an animation graph
 
-For more information, see [Getting Started with the Animation Editor](/docs/user-guide/features/visualization/animation/animation-editor/quick-start.md)\.
+For more information, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md)\.
 
 ## Creating Blend Spaces {#animation-editor-create-blend-spaces}
 

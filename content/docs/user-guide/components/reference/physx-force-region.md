@@ -9,8 +9,8 @@ title: PhysX Force Region
 You can use the **PhysX Force Region** component to specify a region that applies physical force to entities\. For each physics simulation frame, the component applies force to entities that are in the region's bounds\. You can use this component to simulate effects such as simulating gravity, slowing down, or deflecting an entity to another direction\.
 
 To create a force region, you must do the following:
-+ Enable the [PhysX](/docs/user-guide/features/gems/physx.md) gem for your game project
-+ Add a **[PhysX Collider](/docs/user-guide/features/components/physx-collider.md)** component to the same entity
++ Enable the [PhysX](/docs/user-guide/gems/physx.md) gem for your game project
++ Add a **[PhysX Collider](/docs/user-guide/components/physx-collider.md)** component to the same entity
 + For the **PhysX Collider** component, you must select the **Trigger** property for the force region to work
 
 The **PhysX Collider** component's shape, size, and orientation represent the region that applies force to incoming entities\.
@@ -162,5 +162,5 @@ You can create a force region so that force applies to another entity that enter
 
 1. To leave gameplay mode, press **Esc**\.
 **Note**
-To display PhysX debug visualizations, see [Debugging PhysX](/docs/user-guide/features/interactivity/physics/debugging.md)\.
-For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/features/interactivity/physics/nvidia-physx/intro.md)\.
+To display PhysX debug visualizations, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md)\.
+For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/intro.md)\.

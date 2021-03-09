@@ -159,7 +159,7 @@ Create the files that you will use in this tutorial\.
    + `FileF.cfg`
    + `do-not-add-me.txt`
 
-1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/features/assets/processor.md)\.
+1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/assets/processor.md)\.
 
 ### Create asset list files for the comparison operation {#how-to-perform-list-comparisons-0}
 

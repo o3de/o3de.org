@@ -210,7 +210,7 @@ E - Incoming product dependencies
  The list of product assets which this product depends on\. In order for your project to function and be distributed properly, all of these assets need to be in the final bundle\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\.
 
 F - Missing dependency scanner
- Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/user-guide/features/packaging/asset-bundler/missing-dependency-scanner.md) for more information\.
+ Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/user-guide/packaging/asset-bundler/missing-dependency-scanner.md) for more information\.
 
 ## Logs {#logs-tab}
 
@@ -240,6 +240,6 @@ You can edit or remove a user\-created connection, or add a connection\.
 
 ## Tools {#tools-tab}
 
-On the **Tools** tab, you control how your assets are scanned\. Use **Faster Scanning Mode** when you don't need to perform a full asset scan\. For more information, see [Enabling Asset Processor's Faster Scanning Mode](/docs/user-guide/features/assets/faster-scanning.md)\.
+On the **Tools** tab, you control how your assets are scanned\. Use **Faster Scanning Mode** when you don't need to perform a full asset scan\. For more information, see [Enabling Asset Processor's Faster Scanning Mode](/docs/user-guide/assets/faster-scanning.md)\.
 
 ![\[Tools tab in Asset Processor.\]](/images/user-guide/asset_processor/faster-scanning.png)

@@ -29,13 +29,13 @@ The templates provide the format for the code that is generated\. Templates make
 + [Template Drivers and Template Rendering](#az-code-gen-intro-template-drivers-rendering)
 + [Generated Files](#az-code-gen-intro-generated-files)
 + [AZ Code Generator Integration with Waf](/docs/userguide/codegen/waf-integration.md)
-+ [AZ Code Generator Parameters](/docs/user-guide/features/engine/codegen/parameters.md)
-+ [Code Generation Templates](/docs/user-guide/features/engine/codegen/templates.md)
-+ [Template Drivers](/docs/user-guide/features/engine/codegen/template-drivers.md)
-+ [Custom Code Generator Annotations](/docs/user-guide/features/engine/codegen/custom-annotations.md)
++ [AZ Code Generator Parameters](/docs/user-guide/engine/codegen/parameters.md)
++ [Code Generation Templates](/docs/user-guide/engine/codegen/templates.md)
++ [Template Drivers](/docs/user-guide/engine/codegen/template-drivers.md)
++ [Custom Code Generator Annotations](/docs/user-guide/engine/codegen/custom-annotations.md)
 + [Waf Debugging with AZ Code Generator](/docs/userguide/codegen/waf-debugging.md)
-+ [Template Driver Debugging](/docs/user-guide/features/engine/codegen/template-debugging.md)
-+ [Debugging the AZ Code Generator Utility](/docs/user-guide/features/engine/codegen/utility-debugging.md)
++ [Template Driver Debugging](/docs/user-guide/engine/codegen/template-debugging.md)
++ [Debugging the AZ Code Generator Utility](/docs/user-guide/engine/codegen/utility-debugging.md)
 + [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)
 
 ## Workflow Summary {#az-code-gen-intro-workflow-summary}
@@ -141,7 +141,7 @@ To debug Python C API calls when using AZ Code Generator, you must download [CPy
 
 You can use template drivers written in Python to alter the intermediate data structure before passing it to the template engine\. After preprocessing, the template driver might direct the Jinja2 template engine to render one or many templates, depending on the generated code that you want\.
 
-AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, which is downloaded by the Python [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall) script in the `\dev\Tools\Python\3.7.5\windows\Scripts` directory\. The engine is then copied into the O3DE `3rdParty\jinja2` directory\. O3DE also provides a `jinja_extensions` module, which contains helper methods that you can use inside templates\. These extensions are stored in the `dev/Code/Tools/AzCodeGenerator/Scripts/jinja_extensions/` directory\. For examples and more information about Jinja templates, see [Code Generation Templates](/docs/user-guide/features/engine/codegen/templates.md)\.
+AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, which is downloaded by the Python [easy\_install](http://peak.telecommunity.com/DevCenter/EasyInstall) script in the `\dev\Tools\Python\3.7.5\windows\Scripts` directory\. The engine is then copied into the O3DE `3rdParty\jinja2` directory\. O3DE also provides a `jinja_extensions` module, which contains helper methods that you can use inside templates\. These extensions are stored in the `dev/Code/Tools/AzCodeGenerator/Scripts/jinja_extensions/` directory\. For examples and more information about Jinja templates, see [Code Generation Templates](/docs/user-guide/engine/codegen/templates.md)\.
 
 ## Generated Files {#az-code-gen-intro-generated-files}
 

@@ -13,4 +13,4 @@ The Maestro gem enables O3DE's cinematic sequence system\. With the cinematic se
 **Note**
 The Maestro gem is required and enabled by default in new O3DE projects\.
 
-For more information, see [Create cinematic sequences](/docs/user-guide/features/visualization/cinematics/intro.md)\.
+For more information, see [Create cinematic sequences](/docs/user-guide/visualization/cinematics/intro.md)\.

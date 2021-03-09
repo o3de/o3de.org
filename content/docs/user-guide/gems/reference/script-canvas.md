@@ -12,4 +12,4 @@ The Script Canvas gem enables O3DE's visual scripting environment\. With the gem
 
 To enable gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
-For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md)\.
+For more information about working with Script Canvas graphs, see [Creating Gameplay with Script Canvas](/docs/user-guide/scripting/script-canvas/intro.md)\.

@@ -40,7 +40,7 @@ A "leaf" asset is a product asset that has no dependencies on other product asse
 A product asset is game content that is loaded and used in the runtime game\. A product asset is generated from a source asset during asset processing using a builder\. The product asset is often a modified version of the source asset, such as image content that is compressed and otherwise optimized for runtime\. Product assets reference their product dependencies\. See also **Source Asset**\.
 When running a game using the O3DE asset system, only product assets are available\. The source assets are not available\. This includes running the game in the O3DE Editor or in a platform\-specific launcher\. When packaging a game using the Asset Bundler, only product assets are bundled\. Product assets are available only from the asset cache or from asset bundles\.
 When working with slices, keep in mind that only dynamic slices can be used at run\-time\. Non\-dynamic slices, even if they are product assets, should not be included in bundles\.
-For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/user-guide/features/assets/intro.md)\.
+For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/intro.md)\.
 
 **Product Dependency**
 A product dependency occurs when one product asset references another product asset\. When bundling assets, both the referencing asset and the referenced asset should be included in the bundle\. Dependencies are created by referencing the Asset ID of the product asset\. See also **Source Dependency**\.
@@ -82,4 +82,4 @@ Source assets are associated with a gem, and source GUIDs are unique within a ge
 Some of the O3DE tool operations take relative paths as inputs\. There are two types of relative paths:
 + Cache\-relative paths - Tells various systems where to find pre\-processed assets in your asset cache\. Each O3DE tool that uses cache\-relative paths will be relative to a different subdirectory of the asset cache\. For example, a cache\-relative path from the absolute path `C:\O3DE\dev\Cache\SamplesProject\pc\samplesproject\levels\samples\advanced_rinlocomotion\level.pak` that does not include the platform and project would be `levels\samples\advanced_rinlocomotion\level.pak`\.
 + Engine\-root\-relative paths - Specifies files located in directories under `C:\O3DE\dev\`\. For example, an engine\-root\-relative path lets you represent the location `C:\O3DE\dev\SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif` as `SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif`\.
-For more information, see [Asset IDs and File Paths](/docs/user-guide/features/assets/developers.md)\.
+For more information, see [Asset IDs and File Paths](/docs/user-guide/assets/developers.md)\.

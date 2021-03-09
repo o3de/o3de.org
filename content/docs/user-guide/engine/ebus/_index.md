@@ -14,7 +14,7 @@ To interact with the engine or other components in O3DE, include the component o
 
 For examples of EBus usage, see [Usage and Examples](/docs/user-guide/samples/ebus/examples.md)\.
 
-For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/features/engine/ebus/design.md)\.
+For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/engine/ebus/design.md)\.
 
 For C\+\+ API reference documentation on the core EBus code, see the [EBus API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/EBus.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
 

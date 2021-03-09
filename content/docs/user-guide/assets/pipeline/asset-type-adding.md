@@ -7,7 +7,7 @@ title: Adding an Asset Type to O3DE
 
 When you develop a game, you might need to add a new kind of asset to O3DE\. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor\. This topic guides you through the process of adding a custom asset type to O3DE\.
 
-For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/features/assets/asset-system-programming.md)\.
+For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/asset-system-programming.md)\.
 
 **Topics**
 + [Overview](#asset-pipeline-asset-type-adding-overview-of-steps)
@@ -102,7 +102,7 @@ productAssetType={511562BE-65A5-4538-A5F1-AC685366243E}
 version=1
 ```
 
-For more information, see [Configuring the Asset Pipeline](/docs/user-guide/features/assets/configuring.md)\.
+For more information, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md)\.
 
 ### Custom\-Built Assets {#asset-pipeline-asset-type-adding-custom-built-assets}
 
@@ -130,7 +130,7 @@ The Scene API provides boilerplate code so that you only have to write a few cod
 
 ### Registration Versus Integration {#asset-pipeline-asset-type-adding-registration-versus-integration}
 
-After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/user-guide/features/engine/file-io.md) to load the asset\.
+After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes\. The result of the lookup gives you the asset's path, size, and other information\. You can use [standard file handling](/docs/user-guide/engine/file-io.md) to load the asset\.
 
 While simple registration of an asset can be useful in some circumstances, full integration with the O3DE asset system offers many advantages, including the following:
 + Automatic live reloading
@@ -249,7 +249,7 @@ At this point, you can use your custom assets in your structures and components\
    Az::Data::Asset<MyAsset> m_myAsset;
    ```
 
-1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/features/engine/components/reflection.md)\.
+1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection.md)\.
 
 1. \(Optional\) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior\. For more information, see `m_script` in the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file\.
 
@@ -257,7 +257,7 @@ After you perform these steps, your component appears in the component editor\. 
 
 ## C\. Customizing UI Interaction {#asset-pipeline-asset-type-adding-customizing-ui-interaction}
 
-\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/features/engine/ebus/_index.md) to customize your asset's interaction with the **Asset Browser**\.
+\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/engine/ebus/_index.md) to customize your asset's interaction with the **Asset Browser**\.
 
 ### 1\. Describing Your Asset Type to the UI {#asset-pipeline-asset-type-adding-describing-your-asset-type-to-the-ui}
 

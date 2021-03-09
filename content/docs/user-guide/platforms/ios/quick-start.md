@@ -16,7 +16,7 @@ This topic assumes that you have:
 + O3DE installed on a Windows computer
 + Remote Shader Compiler running on your Windows or macOS computer
 
-For more information about creating iOS apps, see [iOS Support](/docs/user-guide/features/platforms/ios/intro.md)\.
+For more information about creating iOS apps, see [iOS Support](/docs/user-guide/platforms/ios/intro.md)\.
 
 **To run the Samples Project on an iOS device**
 

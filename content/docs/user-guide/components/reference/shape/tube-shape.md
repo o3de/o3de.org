@@ -6,19 +6,19 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Tube Shape** component creates a transparent, enclosed cylindrical volume that's fit to a [Spline component](/docs/user-guide/features/components/reference/shape/spline.md). The dimensions of the tube can be edited with the **Radius** and **Variable Radius** properties, and by editing the [Spline component](/docs/user-guide/features/components/reference/shape/spline.md). The Tube Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
+The **Tube Shape** component creates a transparent, enclosed cylindrical volume that's fit to a [Spline component](/docs/user-guide/components/reference/shape/spline.md). The dimensions of the tube can be edited with the **Radius** and **Variable Radius** properties, and by editing the [Spline component](/docs/user-guide/components/reference/shape/spline.md). The Tube Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Dependencies ##
 
-[Spline component](/docs/user-guide/features/components/reference/shape/spline.md)
+[Spline component](/docs/user-guide/components/reference/shape/spline.md)
 
 ## Properties ##
 
-![Tube Shape component properties](/images/user-guide/features/components/reference/shape/tube-shape-component-ui-01.png)
+![Tube Shape component properties](/images/user-guide/components/reference/shape/tube-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|

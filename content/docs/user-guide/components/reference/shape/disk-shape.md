@@ -6,15 +6,15 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Disk Shape** component creates a transparent circular surface that's oriented on the local Z axis. The dimensions of the disk can be edited with the **Radius** property. The Disk Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
+The **Disk Shape** component creates a transparent circular surface that's oriented on the local Z axis. The dimensions of the disk can be edited with the **Radius** property. The Disk Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Properties ##
 
-![Disk Shape component properties](/images/user-guide/features/components/reference/shape/cylinder-shape-component-ui-01.png)
+![Disk Shape component properties](/images/user-guide/components/reference/shape/cylinder-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|

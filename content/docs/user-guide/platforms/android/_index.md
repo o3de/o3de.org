@@ -13,12 +13,12 @@ weight: 100
 + [Minimum device requirements](#android-minimum-requirements)
 + [Prerequisites](#android-prerequisites)
 + [Video tutorial](#android-setting-up-environment-video)
-+ [Set up your environment to develop for Android with O3DE](/docs/user-guide/features/platforms/android/setting-up-environment.md)
-+ [Configure O3DE projects for Android](/docs/user-guide/features/platforms/android/configure-project.md)
-+ [Build and deploy your project for Android](/docs/user-guide/features/platforms/android/build-deploy.md)
-+ [Releasing O3DE projects for Android](/docs/user-guide/features/platforms/android/deploy-release.md)
-+ [Troubleshooting O3DE issues on Android](/docs/user-guide/features/platforms/android/troubleshooting.md)
-+ [Reference for Android](/docs/user-guide/features/platforms/android/reference.md)
++ [Set up your environment to develop for Android with O3DE](/docs/user-guide/platforms/android/setting-up-environment.md)
++ [Configure O3DE projects for Android](/docs/user-guide/platforms/android/configure-project.md)
++ [Build and deploy your project for Android](/docs/user-guide/platforms/android/build-deploy.md)
++ [Releasing O3DE projects for Android](/docs/user-guide/platforms/android/deploy-release.md)
++ [Troubleshooting O3DE issues on Android](/docs/user-guide/platforms/android/troubleshooting.md)
++ [Reference for Android](/docs/user-guide/platforms/android/reference.md)
 
 ## Minimum device requirements {#android-minimum-requirements}
 
@@ -37,7 +37,7 @@ weight: 100
 
 ## Prerequisites {#android-prerequisites}
 
- To get started with your O3DE project on Android, you need the following software installed, in addition to O3DE\. If you need to, [download O3DE now](/docs/userguide/setup/downloading-lumberyard.md)\. O3DE can be configured for Android development either when you install it, or after you set up your Android tools\. See [Set up your environment to develop for Android with O3DE](/docs/user-guide/features/platforms/android/setting-up-environment.md) for more information\.
+ To get started with your O3DE project on Android, you need the following software installed, in addition to O3DE\. If you need to, [download O3DE now](/docs/userguide/setup/downloading-lumberyard.md)\. O3DE can be configured for Android development either when you install it, or after you set up your Android tools\. See [Set up your environment to develop for Android with O3DE](/docs/user-guide/platforms/android/setting-up-environment.md) for more information\.
 +  An Android development environment\. This can be either Android Studio or the standalone command line tools\. For developers not already familiar with working with Android, we recommend Android Studio, which includes the command\-line tools\. [Download Android developer tools](https://developer.android.com/studio/#downloads)\.
 +
 
@@ -53,7 +53,7 @@ weight: 100
 **Important**
  Google requires that new apps submitted to the Google Play Store are built against an SDK version that is no more than one year old\. To make sure that you meet this requirement, build against the latest available Android SDK and check for updated versions before any submission to the Google Play Store\.
 
-   For instructions on installing the Android SDK and NDK, see the [Android Studio SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager) or [Command\-line `sdkmanager`](https://developer.android.com/studio/command-line/sdkmanager) documentation on the Android developer site\. For information on the packages required as part of the Android SDK install, see [Set up your environment to develop for Android with O3DE](/docs/user-guide/features/platforms/android/setting-up-environment.md)\.
+   For instructions on installing the Android SDK and NDK, see the [Android Studio SDK Manager](https://developer.android.com/studio/intro/update#sdk-manager) or [Command\-line `sdkmanager`](https://developer.android.com/studio/command-line/sdkmanager) documentation on the Android developer site\. For information on the packages required as part of the Android SDK install, see [Set up your environment to develop for Android with O3DE](/docs/user-guide/platforms/android/setting-up-environment.md)\.
 
 ## Video tutorial {#android-setting-up-environment-video}
 

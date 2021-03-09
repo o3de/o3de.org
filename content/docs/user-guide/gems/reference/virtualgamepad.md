@@ -13,16 +13,16 @@ Use the Virtual Gamepad gem to provide your game's UI with touch screen capabili
 + [Virtual Gamepad Component Properties](#gems-system-gem-virtualgamepad-properties)
 + [Displaying the Virtual Gamepad at Runtime](#gems-system-gem-virtualgamepad-displaying)
 
-The Virtual Gamepad gem includes a sample UI canvas that you can either customize for your game or use as an example for a new UI canvas\. To view this canvas in the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), open `Gems\VirtualGamepad\Assets\UI\Canvases\VirtualGamepad\VirtualGamepad.uicanvas`\.
+The Virtual Gamepad gem includes a sample UI canvas that you can either customize for your game or use as an example for a new UI canvas\. To view this canvas in the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), open `Gems\VirtualGamepad\Assets\UI\Canvases\VirtualGamepad\VirtualGamepad.uicanvas`\.
 
 There is no limit for the number of active UI canvases that can contain virtual gamepad components\. This means you can create many virtual gamepad canvases to display for the appropriate scenarios, or even at the same time\. For example, you can show a different UI canvas on each half of your virtual gamepad\.
 
 **Example**
-To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sample](/docs/user-guide/features/visualization/animation/animation-editor/rin-locomotion-sample.md) level from the [Samples Project](/docs/userguide/samples/projects/samples.md) on a device with touch screen support\.
+To experiment with the Virtual Gamepad gem, run the [Advanced\_RinLocomotion Sample](/docs/user-guide/visualization/animation/animation-editor/rin-locomotion-sample.md) level from the [Samples Project](/docs/userguide/samples/projects/samples.md) on a device with touch screen support\.
 
 ![\[Provide your game with touch screen capabilities when played on a mobile device.\]](/images/shared/shared-gems-system-gem-virtualgamepad-1.png)
 
-You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](/docs/user-guide/features/interactivity/user-interface/editor/creating-canvases.md)\.
+You can customize the virtual gamepad's appearance and layout by creating or modifying an existing UI canvas\. For more information on working with UI Canvases, see [Working with UI Canvases](/docs/user-guide/interactivity/user-interface/editor/creating-canvases.md)\.
 
 ## Configuring Virtual Gamepad Behavior {#gems-system-gem-virtualgamepad-behavior}
 
@@ -30,13 +30,13 @@ You can configure the virtual gamepad's behavior in the **UI Editor**\.
 
 **To configure virtual gamepad behavior**
 
-1. In the **UI Editor**, add the [UI components](/docs/user-guide/features/interactivity/user-interface/editor/components.md) **VirtualGamepadButton** and **VirtualGamepadThumbStick** to the UI canvas\.
+1. In the **UI Editor**, add the [UI components](/docs/user-guide/interactivity/user-interface/editor/components.md) **VirtualGamepadButton** and **VirtualGamepadThumbStick** to the UI canvas\.
 
 1. For each component, select an **Input Channel**\.
 
 ![\[Input Channel selection for the VirtualGamepadButton\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
 
-For more information about input in O3DE, see [Input in Open 3D Engine](/docs/user-guide/features/interactivity/input/input-intro.md)\.
+For more information about input in O3DE, see [Input in Open 3D Engine](/docs/user-guide/interactivity/input/input-intro.md)\.
 
 To modify the list of available virtual gamepad input channels, use the Project Configurator to edit the virtual gamepad's system component \. For more information, see [Configuring Advanced Settings](/docs/userguide/configurator/advanced.md)\.
 

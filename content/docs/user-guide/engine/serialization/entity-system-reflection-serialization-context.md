@@ -472,7 +472,7 @@ if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(
 
 You can use the serialization context to provide data from an external source during serialization\. These external sources of data are called *data overlays*\.
 
-To create a data overlay, you implement an [EBus](/docs/user-guide/features/engine/ebus/_index.md) through which the data is serialized\. The following example is the code that implements unit testing for the data overlay feature \(`\dev\Code\Framework\AzCore\Tests\Serialization.cpp`\):
+To create a data overlay, you implement an [EBus](/docs/user-guide/engine/ebus/_index.md) through which the data is serialized\. The following example is the code that implements unit testing for the data overlay feature \(`\dev\Code\Framework\AzCore\Tests\Serialization.cpp`\):
 
 ```
 struct DataOverlayTestStruct

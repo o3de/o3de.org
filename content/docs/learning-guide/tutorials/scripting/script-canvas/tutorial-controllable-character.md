@@ -49,7 +49,7 @@ Before you create a sphere that you can control with keyboard input, you need to
 
 ## Step 2: Create an Entity and Add Components to Create a Controllable Entity {#script-canvas-tutorial-controllable-character-step-two}
 
-To create a sphere that you can control with keyboard input, you create an entity and add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](/docs/userguide/components/rigid-body)** component, **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)**, and **[Input](/docs/user-guide/features/components/input.md)** components\. You also create an input mapping that converts WASD keyboard input into movement in the x and y directions\.
+To create a sphere that you can control with keyboard input, you create an entity and add the **[Mesh](/docs/userguide/components/static-mesh.md)**, **[Rigid Body](/docs/userguide/components/rigid-body)** component, **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)**, and **[Input](/docs/user-guide/components/input.md)** components\. You also create an input mapping that converts WASD keyboard input into movement in the x and y directions\.
 
 **To create a controllable entity**
 

@@ -8,7 +8,7 @@ title: Input
 Use the information in this section to learn about game input in Open 3D Engine\.
 
 **Note**
-For information on the **Input** component that replaces legacy action maps, see [Input](/docs/user-guide/features/components/input.md)\.
+For information on the **Input** component that replaces legacy action maps, see [Input](/docs/user-guide/components/input.md)\.
 
 Input is what differentiates interactive experiences from all other entertainment media\. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device\. There are many different types of input devices, each of which can produce a wide range of input data\. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems\. As a cross\-operating system and device game engine, O3DE's goal is to provide independent access to input data from any supported device\. The goal is to provide a common interface with these qualities:
 + OS and device agnostic

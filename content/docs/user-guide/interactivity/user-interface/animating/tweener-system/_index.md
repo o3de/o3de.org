@@ -12,14 +12,14 @@ The Scripted Tweener Entity system primarily animates entities in the **UI Edito
 + [Particle](/docs/userguide/components/particle.md)
 + Lights - [Point Light](/docs/userguide/components/point-light.md), [Area Light](/docs/userguide/components/area-light.md), and [Projector Light](/docs/userguide/components/projector-light.md)\.
 + [Mesh](/docs/userguide/components/static-mesh.md)
-+ [Transform](/docs/user-guide/features/components/transform.md)
++ [Transform](/docs/user-guide/components/transform.md)
 
-For a complete list, see [Tweener Supported Components](/docs/user-guide/features/user-interface/animating/tweener-components.md)\.
+For a complete list, see [Tweener Supported Components](/docs/user-guide/user-interface/animating/tweener-components.md)\.
 
 **Topics**
-+ [Understanding Tweeners](/docs/user-guide/features/user-interface/animating/tweener-understanding.md)
-+ [Tweener Sample Level](/docs/user-guide/features/user-interface/animating/tweener-sample.md)
-+ [Tweener Supported Components](/docs/user-guide/features/user-interface/animating/tweener-components.md)
-+ [Tweener Lua Script](/docs/user-guide/features/user-interface/animating/tweener-lua-code.md)
-+ [Tweener Parameters](/docs/user-guide/features/user-interface/animating/tweener-parameters.md)
-+ [Tweener Timeline](/docs/user-guide/features/user-interface/animating/tweener-timeline.md)
++ [Understanding Tweeners](/docs/user-guide/user-interface/animating/tweener-understanding.md)
++ [Tweener Sample Level](/docs/user-guide/user-interface/animating/tweener-sample.md)
++ [Tweener Supported Components](/docs/user-guide/user-interface/animating/tweener-components.md)
++ [Tweener Lua Script](/docs/user-guide/user-interface/animating/tweener-lua-code.md)
++ [Tweener Parameters](/docs/user-guide/user-interface/animating/tweener-parameters.md)
++ [Tweener Timeline](/docs/user-guide/user-interface/animating/tweener-timeline.md)

@@ -6,15 +6,15 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Spline** component creates a line that is 4 meters long, with 4 points. The point positions are defined in the local space of the entity. The spline's length, segments, and shape can be defined using the component's **Spline Type** property and **Edit** functionality. Splines are curves that connect two or more points and can be used as paths for animated entities or as a backbone for components such as the [Tube Shape](/docs/user-guide/features/components/reference/shape/tube-shape.md) component.
+The **Spline** component creates a line that is 4 meters long, with 4 points. The point positions are defined in the local space of the entity. The spline's length, segments, and shape can be defined using the component's **Spline Type** property and **Edit** functionality. Splines are curves that connect two or more points and can be used as paths for animated entities or as a backbone for components such as the [Tube Shape](/docs/user-guide/components/reference/shape/tube-shape.md) component.
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Base properties ##
 
-![Spline component properties](/images/user-guide/features/components/reference/shape/spline-component-ui-01.png)
+![Spline component properties](/images/user-guide/components/reference/shape/spline-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -25,7 +25,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## Linear spline type properties ##
 
-![Linear spline component properties](/images/user-guide/features/components/reference/shape/spline-component-ui-02.png)
+![Linear spline component properties](/images/user-guide/components/reference/shape/spline-component-ui-02.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -33,7 +33,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## Bezier spline type properties ##
 
-![Bezier spline component properties](/images/user-guide/features/components/reference/shape/spline-component-ui-03.png)
+![Bezier spline component properties](/images/user-guide/components/reference/shape/spline-component-ui-03.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -42,7 +42,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## Catmull-Rom spline type properties ##
 
-![Catmull-Rom spline component properties](/images/user-guide/features/components/reference/shape/spline-component-ui-04.png)
+![Catmull-Rom spline component properties](/images/user-guide/components/reference/shape/spline-component-ui-04.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -65,7 +65,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## SplineComponentRequestBus ##
 
-Use the following request functions with the `BoxShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Spline component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/features/components/reference/shape/vertex-container.md) for more information.
+Use the following request functions with the `BoxShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Spline component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/components/reference/shape/vertex-container.md) for more information.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|

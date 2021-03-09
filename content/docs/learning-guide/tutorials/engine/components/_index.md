@@ -26,4 +26,4 @@ For more information, see [Editing Components in the Viewport](/docs/userguide/e
 + [Tips for Working with Component Mode](/docs/userguide/additional-tips-for-component-mode.md)
 
 **Note**
-Before you start, you should be familiar with the component entity framework and have written a component\. For more information, see the [Programmer's Guide to Entities and Components](/docs/user-guide/features/engine/components)\.
+Before you start, you should be familiar with the component entity framework and have written a component\. For more information, see the [Programmer's Guide to Entities and Components](/docs/user-guide/engine/components)\.

@@ -10,10 +10,10 @@ O3DE supports hosting dedicated servers on the cloud by using Amazon GameLift\. 
 
 To use GameLift in your project, there are two options:
 
-+ Enable the [GameLift Gem](/docs/user-guide/features/gems/gamelift.md) in your project\. O3DE has integrated Amazon GameLift, which makes it easier for you to use GameLift\.
++ Enable the [GameLift Gem](/docs/user-guide/gems/gamelift.md) in your project\. O3DE has integrated Amazon GameLift, which makes it easier for you to use GameLift\.
 + Enable the O3DE [Multiplayer Gem](/docs/userguide/gems/builtin/multiplayer.md) in your project \(which requires the GameLift Gem\)\.
 
-For information about configuring GameLift for the multiplayer sample, see [Configuring the Multiplayer Sample for Amazon GameLift](/docs/userguide/networking/multiplayer-gs-gamelift.md)\. For information, see [Add modular features and assets with Gems](/docs/user-guide/features/gems)\. For more information about GameLift, see [Amazon GameLift](https://aws.amazon.com/gamelift/)\.
+For information about configuring GameLift for the multiplayer sample, see [Configuring the Multiplayer Sample for Amazon GameLift](/docs/userguide/networking/multiplayer-gs-gamelift.md)\. For information, see [Add modular features and assets with Gems](/docs/user-guide/gems)\. For more information about GameLift, see [Amazon GameLift](https://aws.amazon.com/gamelift/)\.
 
 ## Additional Links {#network-gamelift-using-additional-links}
 

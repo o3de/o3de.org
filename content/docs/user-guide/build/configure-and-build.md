@@ -41,7 +41,7 @@ Please contact us directly for the details.
 
 {{< caution >}}
 Even though this example only builds the editor and tools, make sure that you've correctly configured any projects _before_ running your build configure.
-See [Project Configuration](/docs/user-guide/features/project-config) for details.
+See [Project Configuration](/docs/user-guide/project-config) for details.
 {{< /caution >}}
 
 ### Configure with the CMake CLI

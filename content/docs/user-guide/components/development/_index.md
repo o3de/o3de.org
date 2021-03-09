@@ -32,14 +32,14 @@ Components are always activated in order of their dependency\. For this reason, 
 Entities are never allowed to be in a state in which one of their component dependencies is missing, even during authoring\. In O3DE's editing tools, this means that components whose dependencies are missing are actually removed from the entity and stored in a temporary list\. When all of the component's dependencies become available, the component is restored to the entity\.
 
 **Topics**
-+ [Creating a Component](/docs/user-guide/features/engine/components/create-component.md)
++ [Creating a Component](/docs/user-guide/engine/components/create-component.md)
 + [Registering Your Component](/docs/userguide/components/entity-system-pg-registering-your-component.md)
-+ [Reflecting a Component for Serialization and Editing](/docs/user-guide/features/engine/components/reflection.md)
-+ [Defining and Using Component Services](/docs/user-guide/features/engine/components/services.md)
-+ [Editor Components](/docs/user-guide/features/engine/components/entity-system-pg-editor-components.md)
-+ [Creating System Components](/docs/user-guide/features/engine/components/system-wide.md)
++ [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection.md)
++ [Defining and Using Component Services](/docs/user-guide/engine/components/services.md)
++ [Editor Components](/docs/user-guide/engine/components/entity-system-pg-editor-components.md)
++ [Creating System Components](/docs/user-guide/engine/components/system-wide.md)
 + [Programmer's Guide to Component Mode](/docs/user-guide/tutorials/engine/components/_index.md)
-+ [Components and EBuses](/docs/user-guide/features/engine/components/ebus-integration.md)
-+ [Tick Bus and Components](/docs/user-guide/features/engine/ebus/tick.md)
-+ [Exposing Custom Components to Track View for Animation](/docs/user-guide/features/engine/components/expose-animation.md)
-+ [Components and EBuses: Best Practices](/docs/user-guide/features/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)
++ [Components and EBuses](/docs/user-guide/engine/components/ebus-integration.md)
++ [Tick Bus and Components](/docs/user-guide/engine/ebus/tick.md)
++ [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md)
++ [Components and EBuses: Best Practices](/docs/user-guide/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)

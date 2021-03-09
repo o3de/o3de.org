@@ -6,7 +6,7 @@ weight: 500
 
 {{< preview-migrated >}}
 
-Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/features/gems/reference). For general CMake options, see the [cmake.variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
+Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/gems/reference). For general CMake options, see the [cmake.variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
 
 Keep in mind that every time you change a configuration value, you need to regenerate the project files so that the changes are picked up and apply to your next build.
 
@@ -44,13 +44,13 @@ These options are the user-supplied settings required to configure O3DE builds. 
 
 These options control the types of assets built, and where projects load assets from at runtime.
 
-* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by the [asset processor](/docs/user-guide/features/assets/pipeline/intro). Valid platforms are:
+* **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by the [asset processor](/docs/user-guide/assets/pipeline/intro). Valid platforms are:
   * `pc` - Windows PC
   * `osx_gl` - MacOS
   * `ios` - iOS and iPad OS
   * `es3` - Android
   
-  You can change the types of assets built by the Asset Processor, or build for multiple platforms, by [configuring the asset pipeline](/docs/user-guide/features/assets/pipeline/configuring).
+  You can change the types of assets built by the Asset Processor, or build for multiple platforms, by [configuring the asset pipeline](/docs/user-guide/assets/pipeline/configuring).
   
   *Type*: `STRING`  
   *Default*: The asset type for the current host platform.
@@ -58,7 +58,7 @@ These options control the types of assets built, and where projects load assets 
 * **`LY_ASSET_DEPLOY_MODE`** - Controls how projects load assets at runtime. Allowed values are:  
   * `LOOSE` - Load assets on demand from the asset cache, after sources are processed by the Asset Processor. This setting is appropriate for development.
   * `PAK` - Only load assets from `.pak` asset bundles created by the Asset Bundler. Which directories to load asset bundles from is controlled with the `LY_OVERRIDE_PAK_FOLDER_ROOT` setting.
-  * `VFS` - Load data from the virtual filesystem (VFS). See the documentation on using the VFS with [iOS](/docs/user-guide/features/platforms/ios/virtual-file-system) for more details.
+  * `VFS` - Load data from the virtual filesystem (VFS). See the documentation on using the VFS with [iOS](/docs/user-guide/platforms/ios/virtual-file-system) for more details.
   
   *Type*: `STRING`  
   *Default*: `LOOSE`

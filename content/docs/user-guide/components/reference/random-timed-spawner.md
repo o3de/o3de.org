@@ -13,8 +13,8 @@ title: Random Timed Spawner
 You can use the **Random Timed Spawner** component to spawn a specified dynamic slice\. The component spawns the slice at a specified interval \(and random interval variation\) to a random position inside of a specified volume\.
 
 The **Random Timed Spawner** component requires that the following components are also attached to the entity:
-+ **[Spawner](/docs/user-guide/features/components/spawner.md)** component - Manages the spawning of the slice\.
-+ **[Box Shape](/docs/user-guide/features/components/reference/box-shape.md)** or **[Cylinder Shape](/docs/user-guide/features/components/reference/cylinder-shape.md)** component - Defines the volume of possible positions where the entities can spawn\.
++ **[Spawner](/docs/user-guide/components/spawner.md)** component - Manages the spawning of the slice\.
++ **[Box Shape](/docs/user-guide/components/reference/box-shape.md)** or **[Cylinder Shape](/docs/user-guide/components/reference/cylinder-shape.md)** component - Defines the volume of possible positions where the entities can spawn\.
 
 With these components, you can control the random distribution that determines the random points inside the volume\.
 
@@ -22,7 +22,7 @@ Currently, you can specify how entities spawn in random positions with the follo
 + Normal distribution
 + Uniform Real distribution
 
-The **Random Timed Spawner** component is part of the LmbrCentral gem\. For more information, see [Add modular features and assets with Gems](/docs/user-guide/features/gems/_index.md)\.
+The **Random Timed Spawner** component is part of the LmbrCentral gem\. For more information, see [Add modular features and assets with Gems](/docs/user-guide/gems/_index.md)\.
 
 **Example**
 The following **Random Timed Spawner** component has the distribution type, Uniform Real\.
@@ -73,7 +73,7 @@ Valid values: \-∞ to ∞
 
 You can use this EBus to communicate to an entity with a **Random Timed Spawner** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 ### Enable {#random-timed-spawner-ebus-enabled}
 

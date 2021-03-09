@@ -71,7 +71,7 @@ Follow these guidelines when adding lighting to your mobile game:
 
 ### Cascade Shadow Map Guidelines {#ios-android-performance-art-guidelines-cascade-shadow-maps}
 
-O3DE uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
+O3DE uses console variables to specify how to generate cascade shadow maps and to improve performance for the shadow pass\. You can also set these variables to impact the engine globally or per level\. Edit the `level.cfg` file to set the variables for a specific level\. For more information, see [Using the Console Window](/docs/user-guide/editor/console.md)\.
 + `e_ShadowsCascadesDebug` - Enables the debug view for the cascade shadow maps\. Each cascade in the world renders with a different color to provide visual feedback of the area that is covered by a cascade shadow map\.
 
 **Example**

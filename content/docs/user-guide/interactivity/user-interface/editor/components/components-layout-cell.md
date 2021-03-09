@@ -14,7 +14,7 @@ A layout cell's properties consist of a minimum size, a target size, and an extr
   + Image or text - The image's default size is the layout cell's target size\. The length and size of a string in a text component is the layout cell's target size\.
   + Layout row or layout column \(added or nested as children\) - The default values of a layout row or layout column, added as a child, determines the layout cell's minimum and target size\. The default value is calculated by the sum of its own children plus padding and spacing\.
 **Note**
-The **LayoutColumn** and **LayoutRow** components contain a property called **Ignore Default Cells**\. Selecting this property causes the above calculations to be ignored and simply allocate equal space to all children regardless of content\. Clear this property to calculate layout cell values by components\. For more information, see [LayoutColumn](/docs/user-guide/features/interactivity/user-interface/editor/components-layout-column.md)\.
+The **LayoutColumn** and **LayoutRow** components contain a property called **Ignore Default Cells**\. Selecting this property causes the above calculations to be ignored and simply allocate equal space to all children regardless of content\. Clear this property to calculate layout cell values by components\. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md)\.
 + Fixed default layout cell values - If the child doesn't have any components that calculate their own layout cell values, then the layout cell is assigned a minimum and target size of 0 and an extra size ratio of 1\. This typically means equal spacing for the children that do not have a component affecting the layout cell's size\. Each layout cell grows at the same rate to fill the available space \(hence the extra size ratio of 1\)\.
 + **LayoutCell** component - Add the **LayoutCell** component to specify values for the minimum and target sizes, and the extra size ratio\. Any values you specify here override the values calculated by all other methods\.
 
@@ -47,7 +47,7 @@ However, when you add a **LayoutCell** component to the grid, and then specify a
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-4.png)
 
 **To edit a LayoutCell component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), expand **LayoutCell** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **LayoutCell** and do the following, as appropriate:
 ****Min Width****
 Select to define the layout cell's minimum width\. Type a value in the box that appears\.
 ****Min Height****

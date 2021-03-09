@@ -6,15 +6,15 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Quad Shape** component creates a transparent square plane that's oriented on the local Z axis. The dimensions of the quad can be edited with the **Width** and **Height** properties. The Quad Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
+The **Quad Shape** component creates a transparent square plane that's oriented on the local Z axis. The dimensions of the quad can be edited with the **Width** and **Height** properties. The Quad Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Properties ##
 
-![Quad Shape component properties](/images/user-guide/features/components/reference/shape/quad-shape-component-ui-01.png)
+![Quad Shape component properties](/images/user-guide/components/reference/shape/quad-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|

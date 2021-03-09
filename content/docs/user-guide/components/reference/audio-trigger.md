@@ -6,7 +6,7 @@ title: Audio Trigger
 
 {{< preview-migrated >}}
 
-The **Audio Trigger** component provides basic play and stop features so that you can set up [Audio Translation Layer \(ATL\)](/docs/user-guide/features/interactivity/audio/default-controls.md) play and stop triggers that can be executed on demand\. With an audio trigger, you can also enable the player to run or stop audio triggers by name on entities\.
+The **Audio Trigger** component provides basic play and stop features so that you can set up [Audio Translation Layer \(ATL\)](/docs/user-guide/interactivity/audio/default-controls.md) play and stop triggers that can be executed on demand\. With an audio trigger, you can also enable the player to run or stop audio triggers by name on entities\.
 
 ## Audio Trigger Properties {#component-audio-trigger-properties}
 
@@ -31,7 +31,7 @@ Select this option to run upon component activation the audio **'play'** trigger
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 ### Play {#audio-ebus-play}
 
@@ -115,7 +115,7 @@ Yes
 
 Use the following response functions with the EBus interface to communicate with other components of your game\.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 ### OnTriggerFinished {#audio-ebus-ontrigger}
 

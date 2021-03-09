@@ -15,10 +15,10 @@ You can also add a **[Portal](/docs/userguide/components/portal.md)** component 
 
 Visible areas are only dynamic during editing\. If you modify the **VisArea** component or move the entity that the **VisArea** component is attached to at runtime, the area that the **VisArea** component defines isn't affected\. Also, the **VisArea** component doesn't work if it's spawned as part of a dynamic slice\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 **Note**
-You can't modify the **[OccluderArea](/docs/user-guide/features/components/occluder-area.md)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](#component-vis-area)** components at runtime\.
+You can't modify the **[OccluderArea](/docs/user-guide/components/occluder-area.md)**, **[Portal](/docs/userguide/components/portal.md)**, and **[VisArea](#component-vis-area)** components at runtime\.
 
 **Topics**
 + [VisArea Component Properties](#component-vis-area-properties)

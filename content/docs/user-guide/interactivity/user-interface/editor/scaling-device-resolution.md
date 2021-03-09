@@ -10,4 +10,4 @@ You can use the **Scale to Device** property on the **Transform2D** component wi
 
 To view the effects of this computation, open the **Preview** canvas in the UI Editor\.
 
-For more information about the **Transform2D** component's **Scale to Device** property, see [Scale to Device](/docs/user-guide/features/interactivity/user-interface/editor/transform-scale.md)\.
+For more information about the **Transform2D** component's **Scale to Device** property, see [Scale to Device](/docs/user-guide/interactivity/user-interface/editor/transform-scale.md)\.

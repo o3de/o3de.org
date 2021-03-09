@@ -145,7 +145,7 @@ Each transition condition is controlled by a set of parameters\. Your O3DE game 
 
 You can set this up in a game level by adding an **Actor** and an **Animation** component to an entity with the **Entity Inspector**\.
 
-For more information, see [Animation Editor Components](/docs/user-guide/features/visualization/animation/character-editor/components.md)\.
+For more information, see [Animation Editor Components](/docs/user-guide/visualization/animation/character-editor/components.md)\.
 
 ### Adding Parameters to an Animation Graph {#adding-parameters-to-an-animation-graph}
 

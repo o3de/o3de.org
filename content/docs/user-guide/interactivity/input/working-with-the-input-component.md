@@ -73,13 +73,13 @@ After you create an `.inputbindings` file and specify your input events, you can
 
 ### Using a Script Canvas Graph for Input {#component-script-canvas-input}
 
-You can create a Script Canvas graph that maps to your input events\. For more information, see [Creating Gameplay with Script Canvas](/docs/user-guide/features/scripting/script-canvas/intro.md)\.
+You can create a Script Canvas graph that maps to your input events\. For more information, see [Creating Gameplay with Script Canvas](/docs/user-guide/scripting/script-canvas/intro.md)\.
 
 **To use a Script Canvas graph for input**
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/user-guide/features/components/script-canvas.md)** component\.
+1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/user-guide/components/script-canvas.md)** component\.
 
 1. In the **Script Canvas** component, for **Script Canvas Asset**, specify a Script Canvas graph like the following\.
 **Example Script Canvas Graph**
@@ -89,13 +89,13 @@ You can create a Script Canvas graph that maps to your input events\. For more i
 
 ### Using a Lua Script for Input {#component-input-lua-script}
 
-You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/user-guide/features/scripting/lua/_index.md)\.
+You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/user-guide/scripting/lua/_index.md)\.
 
 **To add a Lua script for input**
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/user-guide/features/components/lua-script.md)** component\.
+1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/user-guide/components/lua-script.md)** component\.
 
 1. In the **Lua Script** component, specify a Lua script file like the following\.
 **Example Lua Script**

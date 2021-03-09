@@ -10,7 +10,7 @@ weight: 600
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. |
 
-When using Waf and the AZ Code Generator utility, you might need to [debug Waf Python scripts](/docs/userguide/codegen/waf-debugging.md) and your [template drivers](/docs/user-guide/features/engine/codegen/template-debugging.md)\. You can also debug the AZ Code Generator utility itself, although it is less likely to be necessary\. You can debug the AZ Code Generator utility by using Visual Studio in Windows or Xcode in macOS\.
+When using Waf and the AZ Code Generator utility, you might need to [debug Waf Python scripts](/docs/userguide/codegen/waf-debugging.md) and your [template drivers](/docs/user-guide/engine/codegen/template-debugging.md)\. You can also debug the AZ Code Generator utility itself, although it is less likely to be necessary\. You can debug the AZ Code Generator utility by using Visual Studio in Windows or Xcode in macOS\.
 
 **Topics**
 + [Prerequisites](#az-code-gen-utility-debugging-prerequisites)

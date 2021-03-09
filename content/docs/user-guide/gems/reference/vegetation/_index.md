@@ -51,5 +51,5 @@ Enables surfaces such as terrain or meshes to emit signals, or tags, that commun
 Provides an expressive **FastNoise Gradient** component that generates many procedural noise variations\. In the O3DE **Entity Inspector**, the **FastNoise Gradient** component appears in the **Gradient** category\. You use it like any other gradient component\.
 
 **Topics**
-+ [Dynamic Vegetation Concepts](/docs/user-guide/features/gems/vegetation/concepts.md)
-+ [Dynamic Vegetation Procedures](/docs/user-guide/features/gems/vegetation/procedures.md)
++ [Dynamic Vegetation Concepts](/docs/user-guide/gems/vegetation/concepts.md)
++ [Dynamic Vegetation Procedures](/docs/user-guide/gems/vegetation/procedures.md)

@@ -13,28 +13,28 @@ You can then blend animations, so that your character transitions from one anima
 
 In the **Animation Editor**, you can preview the animations and blends between the animations for your characters\.
 
-O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/features/assets/fbx-settings/intro.md)\.
+O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md)\.
 
 **Note**
 If you are using O3DE 1\.10 or earlier, you can use the legacy animation system \(Geppetto and Mannequin\) to accomplish these tasks\. For more information, see [Animation System](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-legacy-intro.html) in the *Open 3D Engine Legacy Reference*\.
 
 **Topics**
-+ [Animation Editor Concepts and Terms](/docs/user-guide/features/visualization/animation/character-editor/concepts-and-terms.md)
-+ [Animation Editor User Interface](/docs/user-guide/features/visualization/animation/animation-editor/user-interface.md)
-+ [Animation Editor File Types](/docs/user-guide/features/visualization/animation/character-editor/file-types.md)
-+ [Getting Started with the Animation Editor](/docs/user-guide/features/visualization/animation/animation-editor/quick-start.md)
-+ [Referencing External Anim Graphs](/docs/user-guide/features/visualization/animation/referencing-character-animation-editor-anim-graph.md)
-+ [Synchronizing Animation Graphs: Example](/docs/user-guide/features/visualization/animation/character-editor/sync-graph.md)
-+ [Animation Editor Components](/docs/user-guide/features/visualization/animation/character-editor/components.md)
-+ [Using Morph Targets to Deform Characters](/docs/user-guide/features/visualization/animation/animation-editor/using-morph-targets-to-deform-characters.md)
-+ [Customizing State Machine Routing with Sparse Motion Sets](/docs/user-guide/features/visualization/animation/animation-editor/customizing-state-machines-with-sparse-motion-sets.md)
-+ [Animation Editor Nodes](/docs/user-guide/features/visualization/animation/animation-editor/node.md)
-+ [Using Tags with Animation Graphs](/docs/user-guide/features/visualization/animation/animation-editor/using-tags.md)
-+ [Customizing EMotion FX Objects](/docs/user-guide/features/visualization/animation/animation-editor/customizing-emotionfx-objects.md)
-+ [Creating Custom Motion Events and Parameters Using C\+\+](/docs/user-guide/features/visualization/animation/character-editor/custom-events-parameters.md)
-+ [Creating and Simulating a PhysX Ragdoll](/docs/user-guide/features/visualization/animation/animation-editor/creating-and-simulating-physx-ragdoll.md)
-+ [Creating Additive Animations](/docs/user-guide/features/assets/fbx-settings/import/motion-additive.md)
-+ [Retargeting Motions](/docs/user-guide/features/visualization/animation/animation-editor/retargeting-animations.md)
-+ [Creating Simulated Objects](/docs/user-guide/features/visualization/animation/animation-editor/creating-simulated-objects.md)
-+ [Add Cloth Colliders to actors](/docs/user-guide/features/visualization/animation/character-editor/cloth-colliders.md)
++ [Animation Editor Concepts and Terms](/docs/user-guide/visualization/animation/character-editor/concepts-and-terms.md)
++ [Animation Editor User Interface](/docs/user-guide/visualization/animation/animation-editor/user-interface.md)
++ [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types.md)
++ [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md)
++ [Referencing External Anim Graphs](/docs/user-guide/visualization/animation/referencing-character-animation-editor-anim-graph.md)
++ [Synchronizing Animation Graphs: Example](/docs/user-guide/visualization/animation/character-editor/sync-graph.md)
++ [Animation Editor Components](/docs/user-guide/visualization/animation/character-editor/components.md)
++ [Using Morph Targets to Deform Characters](/docs/user-guide/visualization/animation/animation-editor/using-morph-targets-to-deform-characters.md)
++ [Customizing State Machine Routing with Sparse Motion Sets](/docs/user-guide/visualization/animation/animation-editor/customizing-state-machines-with-sparse-motion-sets.md)
++ [Animation Editor Nodes](/docs/user-guide/visualization/animation/animation-editor/node.md)
++ [Using Tags with Animation Graphs](/docs/user-guide/visualization/animation/animation-editor/using-tags.md)
++ [Customizing EMotion FX Objects](/docs/user-guide/visualization/animation/animation-editor/customizing-emotionfx-objects.md)
++ [Creating Custom Motion Events and Parameters Using C\+\+](/docs/user-guide/visualization/animation/character-editor/custom-events-parameters.md)
++ [Creating and Simulating a PhysX Ragdoll](/docs/user-guide/visualization/animation/animation-editor/creating-and-simulating-physx-ragdoll.md)
++ [Creating Additive Animations](/docs/user-guide/assets/fbx-settings/import/motion-additive.md)
++ [Retargeting Motions](/docs/user-guide/visualization/animation/animation-editor/retargeting-animations.md)
++ [Creating Simulated Objects](/docs/user-guide/visualization/animation/animation-editor/creating-simulated-objects.md)
++ [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders.md)
 + [Best Practices for Working with Skinned Meshes for Animation](/docs/userguide/best-practices-for-working-with-meshes-for-animations.md)

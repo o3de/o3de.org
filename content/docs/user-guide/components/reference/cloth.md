@@ -11,9 +11,9 @@ title: Cloth component
 
 The **Cloth** component treats the vertices of any mesh that it references as cloth particles and applies physical properties, forces, and constraints to simulate the behavior of cloth\. You can add this component to any entity that has **Mesh** or **Actor** components\. You can add multiple cloth components to an entity\.
 
-The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/features/interactivity/physics/nvidia-cloth/_index.md)\.
+The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md)\.
 
-For information on using the **Cloth** component see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/features/interactivity/physics/nvidia-cloth/intro.md)\.
+For information on using the **Cloth** component see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
 
 **Contents**
 + [Base properties](#component-cloth-base-properties)
@@ -143,7 +143,7 @@ Portion of angular velocity applied to turning cloth particles\.
 ## Wind properties {#component-cloth-wind-properties}
 
 **Note**
-The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](/docs/user-guide/features/interactivity/physics/nvidia-physx/wind-provider.md)\.
+The component wind properties create wind that effects only the cloth referenced by the component\. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider.md)\.
 
 ![\[Wind properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-F-1.27.png)
 

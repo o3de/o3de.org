@@ -20,7 +20,7 @@ You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) t
 
 **To view the sample UI canvas**
 
-1. Open the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md)\.
+1. Open the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md)\.
 
 1. Choose **File**, **Open Canvas**\.
 
@@ -33,7 +33,7 @@ You can use the [Samples Project](/docs/userguide/samples/projects/samples.md) t
 1. In the **Properties** pane, under the **Lua Script** component, for **Script**, click the **\{ \}** icon\. This opens the `samplescreenanimation` script in the **Lua Editor**\.
 ![\[Select the Lua script for the sample tweener code.\]](/images/user-guide/ui-animating-tweener-sample-1.png)
 
-1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](/docs/user-guide/features/user-interface/animating/tweener-parameters.md)\.
+1. See how the script uses the listed parameters\. For a complete list of parameters, see [Tweener Parameters](/docs/user-guide/user-interface/animating/tweener-parameters.md)\.
 
    Try the following:
    + Modify the value of the [`easeMethod`](/docs/userguide/ui/animating/tweener-parameters#ui-animating-tweener-easemethod) parameter, especially on the blocks that include `id = self.Properties.CharacterImage`, which represent the spaceship\.

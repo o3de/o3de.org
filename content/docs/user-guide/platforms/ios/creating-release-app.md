@@ -73,7 +73,7 @@ Use the Remote Shader Compiler to generate the shaders that are packed into your
 
 **To generate shaders for your iOS app**
 
-1. Build, deploy, and run your game in profile or debug mode\. For information, see [Building Your iOS App](/docs/user-guide/features/platforms/ios/game-building.md)\.
+1. Build, deploy, and run your game in profile or debug mode\. For information, see [Building Your iOS App](/docs/user-guide/platforms/ios/game-building.md)\.
 
 1. In your game, explore every area in every level to ensure that all shader permutations required for the game are generated\. Exit the game when you are finished\.
 

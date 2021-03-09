@@ -9,7 +9,7 @@ weight: 1000
 The PhysX system has the following features that you can use to debug issues\.
 
 **Note**
-You must first enable the [PhysX Debug](/docs/user-guide/features/gems/physx-debug.md) gem\.
+You must first enable the [PhysX Debug](/docs/user-guide/gems/physx-debug.md) gem\.
 
 **Topics**
 + [PhysX Debug Console Variables](#debugging-physx-console-variables)
@@ -48,19 +48,19 @@ Adjusts the culling box size to **100**\. Enter **0** to disable culling\.
 physx_CullingBoxSize 100
 ```
 
-Connects to the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
+Connects to the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
 
 ```
 physx_PvdConnect
 ```
 
-Disconnects from the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
+Disconnects from the PhysX Visual Debugger\. You must have the PhysX Visual Debugger open to run this command\. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
 
 ```
 physx_PvdDisconnect
 ```
 
-For more information, see [Using the Console Window](/docs/user-guide/features/editor/console.md)\.
+For more information, see [Using the Console Window](/docs/user-guide/editor/console.md)\.
 
 ## Debugging with the ImGui Tool {#imgui-debugging-tool}
 
@@ -85,4 +85,4 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 
 ## Debug Options in the PhysX Configuration {#physx-debugging-configuration}
 
-You can also specify debug settings in the **PhysX Configuration** tool\. See [Debugger Configuration](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
+You can also specify debug settings in the **PhysX Configuration** tool\. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.

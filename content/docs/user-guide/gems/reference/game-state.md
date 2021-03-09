@@ -12,13 +12,13 @@ The GameState gem helps you manage and determine, at a high level, the state tha
 For information about sample game states and enabling the GameState Samples gem, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 
 **Note**
-For a sample implementation of game states, see the [GameState Samples Gem](/docs/user-guide/features/gems/game-state-samples.md)\. The GameState Samples Gem depends on the GameState gem\. You can customize the game states in the GameState Samples gem to meet the requirements of your game and communicate with your game code\.
+For a sample implementation of game states, see the [GameState Samples Gem](/docs/user-guide/gems/game-state-samples.md)\. The GameState Samples Gem depends on the GameState gem\. You can customize the game states in the GameState Samples gem to meet the requirements of your game and communicate with your game code\.
 
 ## Examining the Code {#gems-system-gem-game-state-examining-the-code}
 
 The GameState gem manages a stack \(or [pushdown automaton](https://en.wikipedia.org/wiki/Pushdown_automaton)\) of abstract game states\. The GameState gem includes the following code members:
 + `IGameState` - Abstract interface that all concrete game state classes must be derived from\.
-+ `GameStateRequests` - [EBus](/docs/user-guide/features/engine/ebus/_index.md) interface that other systems use to submit requests related to the game state\.
++ `GameStateRequests` - [EBus](/docs/user-guide/engine/ebus/_index.md) interface that other systems use to submit requests related to the game state\.
 + `GameStateNotifications` - EBus interface that other systems use to listen for events related to the game state\.
 + `GameStateSystemComponent` - Implements the `GameStateRequestBus` interface and sends events over the `GameStateNotificationBus`\.
 

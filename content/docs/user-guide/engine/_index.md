@@ -19,11 +19,11 @@ These topics are for game developers who have experience with C\+\+ programming 
 | Topic Area | Description |
 | --- | --- |
 | [Systems APIs](/docs/userguide/systems-intro.md) | Learn about the AZ C\+\+ APIs used for console variables, event notifications, and simple pub/sub messaging within your game project\. Note: These systems APIs were introduced with O3DE 1\.24 and focus on a simplified model for in\-game messaging and events\. |
-| [Event Bus](/docs/user-guide/features/engine/ebus/_index.md) \(EBus\) | Learn about EBus, the messaging infrastructure for notifications and messaging\.  |
-| [AZ Code Generator](/docs/user-guide/features/engine/codegen/intro.md) | Learn about AZ Code Generator, a utility for generating source code \(or any data or text\) from specially tagged source code\. |
-| [Input](/docs/user-guide/features/interactivity/input/input-intro.md) | Documentation on incorporating different control devices and configurations for your O3DE game\. |
+| [Event Bus](/docs/user-guide/engine/ebus/_index.md) \(EBus\) | Learn about EBus, the messaging infrastructure for notifications and messaging\.  |
+| [AZ Code Generator](/docs/user-guide/engine/codegen/intro.md) | Learn about AZ Code Generator, a utility for generating source code \(or any data or text\) from specially tagged source code\. |
+| [Input](/docs/user-guide/interactivity/input/input-intro.md) | Documentation on incorporating different control devices and configurations for your O3DE game\. |
 | [AI](/docs/userguide/ai/intro.md) | Learn how to add AI systems to your game that provide different actor and character behaviors\. |
-| [Memory management](/docs/user-guide/features/engine/memory/allocators.md) | Learn how O3DE allocates and manages memory resources for games, as well as memory debugging and overrun detection\. |
+| [Memory management](/docs/user-guide/engine/memory/allocators.md) | Learn how O3DE allocates and manages memory resources for games, as well as memory debugging and overrun detection\. |
 | [Profiling, testing, and debugging](/docs/userguide/programming/testing/debugging-intro.md) | Learn about O3DE tools that are used for testing builds, profiling performance, and debugging various issues that may be encountered\. |
 |  [UI 2\.0](/docs/userguide/ui20.md) | Learn about extending the O3DE editor and tools user interface with UI 2\.0 and Qt\. Note: This documentation was introduced with O3DE 1\.25, and will be updated with the full set of guidance for the next release\. |
 | [Networking](/docs/userguide/networking/intro.md) | Learn about GridMate, O3DE's game networking infrastructure\. Learn about how to synchronize game state across clients, manage bandwidth usage, provide data encryption over the wire, and integrate with Amazon GameLift \(for multiplayer lobbies and matchmaking\)\. |

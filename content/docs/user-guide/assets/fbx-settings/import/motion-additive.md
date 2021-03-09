@@ -10,7 +10,7 @@ Additive animations are animations that you can add as layers on top of a base a
 Because additive animations preserve the underlying animation's style, they are useful for adding poses and animations to a character's upper body\. For example, you can use additive animations to make a character breathe, look around, flinch, or change posture\. This adds variety to the animations and avoids what might otherwise be a monotonous look\.
 
 You can create additive animations in two ways:
-+ At runtime, use the **Blend Two Additive** and **Pose Subtract** nodes\. For more information, see [Blend Two Additive Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-blendtwoadditive.md) and [Pose Subtract Node](/docs/user-guide/features/visualization/animation/animation-editor/blending-posesubtract.md)\.
++ At runtime, use the **Blend Two Additive** and **Pose Subtract** nodes\. For more information, see [Blend Two Additive Node](/docs/user-guide/visualization/animation/animation-editor/blending-blendtwoadditive.md) and [Pose Subtract Node](/docs/user-guide/visualization/animation/animation-editor/blending-posesubtract.md)\.
 + At asset processing time, use the **Asset Browser** and FBX settings motion additive modifier to convert an existing animation into an additive animation\. This approach removes the generation of additive animations from runtime processing and improves runtime performance\. See the following procedure\.
 
 **To convert a motion into an additive animation**

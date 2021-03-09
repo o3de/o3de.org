@@ -5,7 +5,7 @@ title: Usage and Examples
 
 {{< preview-migrated >}}
 
-This section provides examples in C\+\+ of how to declare and configure an EBus, implement a handler, send messages, and receive return values\. For information about using EBuses in Lua, see [Using EBuses in Lua](/docs/user-guide/features/interactivity/scripting/lua/ebus.md)\.
+This section provides examples in C\+\+ of how to declare and configure an EBus, implement a handler, send messages, and receive return values\. For information about using EBuses in Lua, see [Using EBuses in Lua](/docs/user-guide/interactivity/scripting/lua/ebus.md)\.
 
 **Topics**
 + [Declaring an EBus](#ebus-usage-and-examples-declaring)
@@ -55,7 +55,7 @@ using ExampleInterfaceBus = AZ::EBus<ExampleInterface>;
 ```
 
 **Tip**
-Use descriptive names in EBuses, and avoid overloaded functions\. Explicit and descriptive function names prevent future API name collisions when classes inherit your EBus interfaces\. Avoiding overloaded functions improves the experience of using your EBuses\. This is especially true from scripting environments such as Lua, in which descriptive names improve readability and clarity\. For more information, see [Components and EBuses: Best Practices](/docs/user-guide/features/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)\.
+Use descriptive names in EBuses, and avoid overloaded functions\. Explicit and descriptive function names prevent future API name collisions when classes inherit your EBus interfaces\. Avoiding overloaded functions improves the experience of using your EBuses\. This is especially true from scripting environments such as Lua, in which descriptive names improve readability and clarity\. For more information, see [Components and EBuses: Best Practices](/docs/user-guide/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)\.
 
 ## EBus Configuration Options {#ebus-usage-and-examples-config-options}
 

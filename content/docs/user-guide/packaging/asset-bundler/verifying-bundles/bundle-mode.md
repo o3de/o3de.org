@@ -47,7 +47,7 @@ Editor: `lumberyard_version\dev\editor.cfg`
 
 Runtime: `lumberyard_version\dev\project_name\autoexec.cfg`
 
-You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](/docs/user-guide/features/engine/remote-console.md)\.
+You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](/docs/user-guide/engine/remote-console.md)\.
 
 ## Bundle Mode Commands {#asset-bundler-bundle-mode-bundle-mode-commands}
 
@@ -77,7 +77,7 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 1. Enter the command `loadbundles` to load bundles for the level\.
 ![\[Using the loadbundles command.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
 
-   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/user-guide/features/packaging/asset-bundler/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
+   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/user-guide/packaging/asset-bundler/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
 
 1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle\.
 
@@ -95,7 +95,7 @@ The following procedure shows how bundle mode works\. In the example, game mode 
 
 1. Add the missing assets to the seed list for the level\.
 
-1. Run the [bundling commands](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md) for the level\.
+1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference.md) for the level\.
 
 1. Drop the bundles into the `Bundles` directory\.
 

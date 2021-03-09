@@ -9,6 +9,6 @@ title: Visual Components
 You can add one visual component to an element: **Image**, **Particle Emitter**, or **Text**\.
 
 **Topics**
-+ [Image](/docs/user-guide/features/interactivity/user-interface/editor/components-image.md)
-+ [Particle Emitter](/docs/user-guide/features/interactivity/user-interface/editor/components-visual-particle-emitter.md)
-+ [Text](/docs/user-guide/features/interactivity/user-interface/editor/components-text.md)
++ [Image](/docs/user-guide/interactivity/user-interface/editor/components-image.md)
++ [Particle Emitter](/docs/user-guide/interactivity/user-interface/editor/components-visual-particle-emitter.md)
++ [Text](/docs/user-guide/interactivity/user-interface/editor/components-text.md)

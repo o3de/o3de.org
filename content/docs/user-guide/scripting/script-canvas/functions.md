@@ -87,7 +87,7 @@ The final function graph should look like this:
 
 1. Place the **Subtract**, **Multiply**, and **Add** nodes onto your graph and connect them as shown in the previous image\.
 
-1. Using [variable references](/docs/user-guide/features/scripting/script-canvas/adding-variable-references.md), do the following:
+1. Using [variable references](/docs/user-guide/scripting/script-canvas/adding-variable-references.md), do the following:
 
    1. In the **Subtract** node, reference the *End* and *Start* variables, so that *Start* is subtracted from *End*\.
 

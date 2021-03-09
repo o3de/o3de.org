@@ -18,7 +18,7 @@ title: Build and bundle assets for release in O3DE
 To complete the procedures in this tutorial, you need the following:
 + Open 3D Engine\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2017 or Visual Studio 2019 installed and configured to develop with C\+\+\. This tutorial uses commands for building with Visual Studio 2019\. If you use Visual Studio 2017, change any reference to `vc142` to `vc141` and any references to `vs2019` to `vs2017`\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
-+ \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/features/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
++ \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
 ## Configure O3DE to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
 
@@ -180,7 +180,7 @@ If your content bundles are correct, the starter game will load and be playable\
 
 If objects are displayed but textures are missing, it probably means you forgot to export the level before packaging assets or didn't add the `level.pak` file as a seed\. You could also be missing some shaders \- run through the level and build the shader package again\.
 
-If the test isn't successful, common issues may occur\. For example, error messages may display, the launcher may shut down, or a black screen displays\. For more information about troubleshooting common issues, see [Resolving Missing Assets](/docs/user-guide/features/packaging/asset-bundler/assets-resolving.md) and [Compiling Shaders for Release Builds](/docs/userguide/assets/shader-compilation.md)\.
+If the test isn't successful, common issues may occur\. For example, error messages may display, the launcher may shut down, or a black screen displays\. For more information about troubleshooting common issues, see [Resolving Missing Assets](/docs/user-guide/packaging/asset-bundler/assets-resolving.md) and [Compiling Shaders for Release Builds](/docs/userguide/assets/shader-compilation.md)\.
 
 **Note**
 When you run the release build, it creates a `User` subdirectory under your release build directory\. Be sure to delete this directory before shipping the release build\.
@@ -189,6 +189,6 @@ When you run the release build, it creates a `User` subdirectory under your rele
 
 Now that you've learned the basics of bundling assets for release, go on to further reading:
 + Learn about how bundles are mounted, so that you can load content dynamically\. See [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)\.
-+ Explore the asset bundler functionality\. See [O3DE Asset Bundler Command\-Line Tool Reference](/docs/user-guide/features/packaging/asset-bundler/command-line-reference.md)\.
-+ Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/user-guide/features/packaging/asset-bundler/missing-dependency-scanner.md)
++ Explore the asset bundler functionality\. See [O3DE Asset Bundler Command\-Line Tool Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference.md)\.
++ Learn how to scan for missing dependencies in your bundles\. See [Using the Missing Dependency Scanner](/docs/user-guide/packaging/asset-bundler/missing-dependency-scanner.md)
 + To ask questions about the Asset Bundler and get support, see [the Open 3D Engine forums](https://forums.awsgametech.com/)\.

@@ -6,15 +6,15 @@ date: 2021-03-05
 
 {{< preview-migrated >}}
 
-The **Polygon Prism Shape** component creates a transparent cuboid volume. The prism shape is defined by points that lie on the local XY plane. The point positions create identical parallel planes that are separated by a height value, and are connected by edges at right angles. The Polygon Prism Shape can be defined using the component's **Height** property and **Edit** functionality. Polygon Prism Shapes can have three or more sides that do not self-intersect. The Polygon Prism Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for area lights, AI, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
+The **Polygon Prism Shape** component creates a transparent cuboid volume. The prism shape is defined by points that lie on the local XY plane. The point positions create identical parallel planes that are separated by a height value, and are connected by edges at right angles. The Polygon Prism Shape can be defined using the component's **Height** property and **Edit** functionality. Polygon Prism Shapes can have three or more sides that do not self-intersect. The Polygon Prism Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for area lights, AI, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/features/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
 
 ## Properties ##
 
-![Polygon Prism Shape component properties](/images/user-guide/features/components/reference/shape/polygon-prism-shape-component-ui-01.png)
+![Polygon Prism Shape component properties](/images/user-guide/components/reference/shape/polygon-prism-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -40,7 +40,7 @@ The **Polygon Prism Shape** component creates a transparent cuboid volume. The p
 
 ## PolygonPrismShapeComponentRequestBus ##
 
-Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Polygon Prism Shape component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/features/components/reference/shape/vertex-container.md) for more information.
+Use the following request functions with the `PolygonPrismShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Polygon Prism Shape component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/components/reference/shape/vertex-container.md) for more information.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|

@@ -7,9 +7,9 @@ title: UI Canvas on Mesh
 
 {{< preview-migrated >}}
 
-With the **UI Canvas on Mesh** component, you can place a UI canvas on a component entity in the 3D world that a player can interact with via ray casts\. Use this component in conjunction with the [**UI Canvas Asset Ref**](/docs/user-guide/features/components/ui-canvas-asset-ref.md) component\.
+With the **UI Canvas on Mesh** component, you can place a UI canvas on a component entity in the 3D world that a player can interact with via ray casts\. Use this component in conjunction with the [**UI Canvas Asset Ref**](/docs/user-guide/components/ui-canvas-asset-ref.md) component\.
 
-For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/user-guide/features/interactivity/user-interface/editor/placing-canvases-3d.md)\.
+For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/editor/placing-canvases-3d.md)\.
 
 ## UI Canvas on Mesh Component Properties {#component-ui-canvas-on-mesh-properties}
 

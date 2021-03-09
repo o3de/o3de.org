@@ -9,7 +9,7 @@ Best practices for Script Canvas include using an event\-driven approach and usi
 
 ## Use an Event\-Driven Approach {#script-canvas-best-practices-event-driven-approach}
 
-Script Canvas nodes are by default stateless\. However, by connecting to the [TickBus](/docs/user-guide/features/engine/ebus/tick.md), they can be configured to have a state\. Engineers must manage the lifetime and performance of nodes that have a state\.
+Script Canvas nodes are by default stateless\. However, by connecting to the [TickBus](/docs/user-guide/engine/ebus/tick.md), they can be configured to have a state\. Engineers must manage the lifetime and performance of nodes that have a state\.
 
 In the core Script Canvas libraries, state is used primarily to drive the execution of the graph \(as with the **Delay** node\)\. However, an event\-driven paradigm is recommended because it helps reduce the complexity of authoring and executing graphs\.
 
@@ -17,7 +17,7 @@ We recommend that you reflect functionality to Script Canvas through the behavio
 
 ## Use Custom Nodes to Simplify Your Graphs {#script-canvas-best-practices-use-custom-nodes}
 
-Identify frequently used but complicated user patterns and simplify them through custom nodes and/or improved behavior context methods\. Using custom nodes with EBuses can reduce the overall complexity of graphs and make graph authoring more intuitive\. For information on creating custom nodes, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/features/engine/scripting/script-canvas/_index.md)\.
+Identify frequently used but complicated user patterns and simplify them through custom nodes and/or improved behavior context methods\. Using custom nodes with EBuses can reduce the overall complexity of graphs and make graph authoring more intuitive\. For information on creating custom nodes, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/engine/scripting/script-canvas/_index.md)\.
 
 ## Be Careful with Entity Activation Order {#script-canvas-best-practices-activation-order}
 

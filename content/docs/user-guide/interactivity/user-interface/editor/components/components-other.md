@@ -10,8 +10,8 @@ You can add either or both of the fader and mask components to an element\.
 
 **Topics**
 + [Fader](#ui-editor-components-fader)
-+ [Mask](/docs/user-guide/features/interactivity/user-interface/editor/components-mask.md)
-+ [Flipbook Animation](/docs/user-guide/features/interactivity/user-interface/editor/components-other-flipbook.md)
++ [Mask](/docs/user-guide/interactivity/user-interface/editor/components-mask.md)
++ [Flipbook Animation](/docs/user-guide/interactivity/user-interface/editor/components-other-flipbook.md)
 
 ## Fader {#ui-editor-components-fader}
 
@@ -38,6 +38,6 @@ You can open the following canvases:
 
 **To edit a fader component**
 
-1. In the **Properties** pane of the [**UI Editor**](/docs/user-guide/features/interactivity/user-interface/editor/using.md), expand **Fader**\.
+1. In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Fader**\.
 
 1. For the **Fade** multiplier, use the slider to select a number between `0` \(invisible\) and `1` \(opaque\) and press **Enter**\.

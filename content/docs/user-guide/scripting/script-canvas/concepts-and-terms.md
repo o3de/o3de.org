@@ -17,11 +17,11 @@ See the following node types:
 
 *Event nodes*
 Event nodes subscribe to event bus \(EBus\) handlers to listen for events to occur\. Examples include entering a trigger area, colliding with an object, turning off a light, and when the game ticks\.
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 *Action nodes*
 Action nodes are used to get or send data across an EBus\. Examples of action nodes include getting the mass of an entity, turning on a light, setting the text of a UI element, and playing an animation\.
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
+For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
 *Variable and data nodes*
 Variable and data nodes represents the custom data that can be required to build game logic\. You can use these nodes to make counters, store entity references, specify a direction, define a color, and so on\. Variable nodes are added to a script to declare and initialize them\. Use get and set nodes to retrieve or set the variable's value\.
@@ -44,7 +44,7 @@ Math nodes enable math operations, such as arithmetic, geometry, algebra, calcul
 Debugging nodes verify whether a script is functioning as expected\. You can use debugging nodes to print data to the console or viewport and check for errors\. These nodes pass logic flow, but do not execute in release builds\.
 
 *User defined*
-You can build your own nodes for your project's specific needs\. For more information, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/features/engine/scripting/script-canvas/_index.md)\.
+You can build your own nodes for your project's specific needs\. For more information, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/engine/scripting/script-canvas/_index.md)\.
 
 **Node Palette**   {#script-canvas-introduction-node-palette-display}
 The **Node Palette** contains a searchable list of nodes\. By default, the palette is docked to the left of the **Script Canvas** editor\.
@@ -64,7 +64,7 @@ The **Node Inspector** shows the properties of the node\. You can edit each prop
 
 **To display the Node Inspector**
 
-1. Open [**Script Canvas**](/docs/user-guide/features/scripting/script-canvas/editor-interface.md)\.
+1. Open [**Script Canvas**](/docs/user-guide/scripting/script-canvas/editor-interface.md)\.
 
 1. Do one of the following:
    + Click **Tools**, **Node Inspector**\.

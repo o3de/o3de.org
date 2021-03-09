@@ -7,7 +7,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-You can use O3DE to create applications for [iOS devices](/docs/user-guide/features/platforms/mobile-support.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
+You can use O3DE to create applications for [iOS devices](/docs/user-guide/platforms/mobile-support.md)\. The topics in this section will teach you how to generate assets that your app can load, and how to build and debug code\. You will also learn about the different types of apps that you can generate for development purposes or to release publicly\.
 
 O3DE includes four iOS\-supported sample projects that you can use to learn how to build assets for iOS games using Asset Processor, build shaders using the remote shader compiler, and build and deploy iOS apps using the O3DE build tools\. For more information, see [Using O3DE sample projects and levels](/docs/userguide/samples/projects/s-levels-intro.md)\.
 
@@ -91,11 +91,11 @@ The Release app contains the executable and all binaries and assets that are req
 + [Prerequisites](#ios-prerequisites)
 + [O3DE Binaries](#ios-support-lumberyard-binaries)
 + [Anatomy of a O3DE iOS App](#ios-support-lumberyard-ios-app-anatomy)
-+ [Quick Start: Running the Samples Project on iOS Devices](/docs/user-guide/features/platforms/ios/quick-start.md)
-+ [Building Your iOS App](/docs/user-guide/features/platforms/ios/game-building.md)
-+ [Creating a Release App](/docs/user-guide/features/platforms/ios/creating-release-app.md)
-+ [Using Virtual File System with iOS](/docs/user-guide/features/platforms/ios/virtual-file-system.md)
-+ [Universal Remote Console](/docs/user-guide/features/engine/remote-console.md)
-+ [Sharing Assets Between Windows and macOS](/docs/user-guide/features/platforms/ios/sharing-assets-between-mac-pc.md)
-+ [Add iOS Frameworks to a O3DE project](/docs/user-guide/features/platforms/ios/custom-frameworks.md)
-+ [iOS Debugging and Troubleshooting](/docs/user-guide/features/platforms/ios/debugging-troubleshooting.md)
++ [Quick Start: Running the Samples Project on iOS Devices](/docs/user-guide/platforms/ios/quick-start.md)
++ [Building Your iOS App](/docs/user-guide/platforms/ios/game-building.md)
++ [Creating a Release App](/docs/user-guide/platforms/ios/creating-release-app.md)
++ [Using Virtual File System with iOS](/docs/user-guide/platforms/ios/virtual-file-system.md)
++ [Universal Remote Console](/docs/user-guide/engine/remote-console.md)
++ [Sharing Assets Between Windows and macOS](/docs/user-guide/platforms/ios/sharing-assets-between-mac-pc.md)
++ [Add iOS Frameworks to a O3DE project](/docs/user-guide/platforms/ios/custom-frameworks.md)
++ [iOS Debugging and Troubleshooting](/docs/user-guide/platforms/ios/debugging-troubleshooting.md)

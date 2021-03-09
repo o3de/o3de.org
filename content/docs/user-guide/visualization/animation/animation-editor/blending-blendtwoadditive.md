@@ -17,7 +17,7 @@ This node functions similarly to the **Blend Two \(Legacy\)** node with **Additi
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 
-1. Create a [blend tree](/docs/user-guide/features/visualization/animation/animation-editor/creating-blend-trees.md)\.
+1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md)\.
 
 1. Double\-click the blend tree node that you created\.
 

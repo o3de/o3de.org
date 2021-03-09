@@ -12,7 +12,7 @@ You can [edit the configuration files](/docs/userguide/assets/creating-image-pro
 
 After Asset Processor successfully converts the image, the resulting `.dds` asset is placed in the appropriate `lumberyard_version\dev\Cache` directory\. The image source file remains in its original form and location\.
 
-Asset Processor calls the Resource Compiler, `rc.exe` \(located in `lumberyard_version\dev\Bin64vc141\rc`\), to convert the image files\. Resource Compiler also has an [image tool](/docs/user-guide/features/assets/image-tool.md), which you can use to manually select image presets, mip maps, and so on\. The Resource Compiler image tool can also output an `imagefilename.exportsettings`, which you must check in if your project uses source control such as Perforce\. Checking in the `.exportsettings` file ensures that the texture renders similarly for each person working on the project\.
+Asset Processor calls the Resource Compiler, `rc.exe` \(located in `lumberyard_version\dev\Bin64vc141\rc`\), to convert the image files\. Resource Compiler also has an [image tool](/docs/user-guide/assets/image-tool.md), which you can use to manually select image presets, mip maps, and so on\. The Resource Compiler image tool can also output an `imagefilename.exportsettings`, which you must check in if your project uses source control such as Perforce\. Checking in the `.exportsettings` file ensures that the texture renders similarly for each person working on the project\.
 
 O3DE supports the following image file types:
 + TIFF - No grayscale
@@ -27,7 +27,7 @@ The following diagram represents the general workflow for converting images\.
 ![\[General workflow for converting images in O3DE\]](/images/user-guide/assets/pipeline/asset-pipeline-images.png)
 
 **Topics**
-+ [Creating Image Processing Presets](/docs/user-guide/features/assets/creating-image-processing-presets.md)
-+ [Using Image Naming Conventions](/docs/user-guide/features/assets/using-image-naming-conventions.md)
-+ [Using the Resource Compiler Image Tool](/docs/user-guide/features/assets/image-tool.md)
++ [Creating Image Processing Presets](/docs/user-guide/assets/creating-image-processing-presets.md)
++ [Using Image Naming Conventions](/docs/user-guide/assets/using-image-naming-conventions.md)
++ [Using the Resource Compiler Image Tool](/docs/user-guide/assets/image-tool.md)
 + [Generating Mip Maps](/docs/userguide/assets/generating-mipmaps.md)

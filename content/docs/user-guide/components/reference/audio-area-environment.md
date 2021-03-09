@@ -17,7 +17,7 @@ Link this property to an entity that includes a trigger area and shape\. This tr
 Default: None
 
 **Environment name**
-The name of the [Audio Translation Layer \(ATL\)](/docs/user-guide/features/interactivity/audio/default-controls.md) environment to apply to entities in the area\.
+The name of the [Audio Translation Layer \(ATL\)](/docs/user-guide/interactivity/audio/default-controls.md) environment to apply to entities in the area\.
 Default: None
 
 **Environment fade distance**
