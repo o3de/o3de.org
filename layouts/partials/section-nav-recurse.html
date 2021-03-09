@@ -3,7 +3,7 @@
 {{ range .CurrentSection.Pages }}
 <ul>
   <li><a class="section-nav-link" href="{{ .Permalink }}"> 
-      {{ if isset .Params .LinkTitle }} {{ .Page.LinkTitle | markdownify }} {{ else }} {{ .Page.Title | markdownify }} {{ end }}
+      {{ .Page.LinkTitle | markdownify }}
     </a>
     {{ if .IsSection }}
         {{ partial "section-nav-recurse.html" . }}
