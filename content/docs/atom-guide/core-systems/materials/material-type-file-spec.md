@@ -15,7 +15,9 @@ Material type files (`*.materialtype`) are in written JSON format and contain th
   * **displayName**: The given name of this group that will appear in the Material Editor. 
   * **description**: The given description of this group that will appear as tooltips in the Material Editor.
 
-  *Note: The `general` group is built-in and always available, even if there is no `general` group defined in the `groups` section. This group is typically used to contain any basic properties of this material type.*
+{{< note >}}
+  The `general` group is built-in and always available, even if there is no `general` group defined in the `groups` section. This group is typically used to contain any basic properties of this material type.
+{{< note >}}
 
 * **properties**: Defines the groups of properties that can be configured in a material file. Each group is defined as a key/value pair, where *key* is the `group id`, and *value* is an array of property definitions. 
 
