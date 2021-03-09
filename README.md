@@ -1,8 +1,10 @@
 # Open 3D Engine Website & Documentation
 
-This repository contains the website and documentation for Open 3D Engine. During preview, we're serving our documentation out of this git repository only - sorry! If you want to build a local version of the site to browse the documentation there, we can't guarantee it'll be a great experience.
+This repository contains the website and documentation for Open 3D Engine. During preview, the site and documentation are under heavy development - so don't be surprised if information is missing or sometimes breaks. If you would like to visit our official website in preview, please contact us directly for the information.
 
-API documentation is stored in this repository at `content/docs/api`, generated using the default Doxygen HTML templates. You can browse the API references without needing to install Hugo, NodeJS, or build the website.
+If you would like to build a local version of the site, all it takes is cloning this repo, following the local instructions, and under a minute for a build.
+
+Otherwise, documentation is browsable in this repository at `content/docs`. API documentation is stored in this repository at `content/docs/api`, generated using the default Doxygen HTML templates. You can browse the API references without needing to install Hugo, NodeJS, or build the website.
 
 ## Running locally
 
