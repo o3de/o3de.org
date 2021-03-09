@@ -5,14 +5,7 @@ date: 2021-03-09
 toc: false
 ---
 
-*This section is under construction.*
-<!-- [WRITER NOTE: I want to improve the intro by talking about the Pass System in a general sense
-@antonmic
-- What is the responsibility of the pass system?
-- Where is it located? (RPI)] -->
-
-<!-- [WRITER NOTE: I'm not in love with the structure of this page] -->
-
+<!-- [WRITER NOTE: Improve introduction] -->
 This document provides a technical overview of the pass system in Atom. Passes are logical groupings of render work with a defined input and output. 
 
 To understand how a pass works, consider the following use cases for passes: 
@@ -29,12 +22,13 @@ Atom's pass system supports three paradigms for authoring passes: data-driven (J
     Although the data-driven paradigm improves workflow, it limits intricate logic that certain passes might require. Furthermore, if a pass's custom logic needs to run on a per-frame basis, the data-driven paradigm might lead to performance issues. Authoring passes through programming gives engineers more control over the rendering pipeline. This is also the more common way to author passes in other renderers. 
     
 * **Combination of both**  
-    In some cases, it makes sense for most of the rendering logic to be handled in C++ classes, while keeping some aspects data-driven. This enables the ability to customize and prototype some aspects of the pass without any programming. The combined method adds some complexity to the pass architecture, but the complexity remains transparent to the user. 
+    In some cases, it makes sense for most of the rendering logic to be handled in C++ classes, while keeping some aspects data-driven, or vice versa. This enables the ability to customize and prototype some aspects of the pass without any programming. The combined method adds some complexity to the pass architecture, but the complexity remains transparent to the user. 
 
 ## Pass System Architecture
-The architecture of a pass can be thought of as having two sides: the code side and the data side. Passes are first authored as **pass templates**. Depending on the paradigm, they can be authored in the code side (C++), the data side (JSON), or a combination of both. Then, in the code side, the pass templates are processed into passes, which are consumed by the rest of the pipeline.  
+<!-- [WRITER NOTE: This section doesn't make a clear distinction between 'code' side and 'data' side. Refer to the internal wiki for reference. But the whole page should be reworked to make it clear to customers who are new to the pass system.] -->
+The architecture of a pass can be thought of as having two sides: the code side and the data side. 
 
-Passes are created from a parent pass, which is the root of this pass hierarchy. They inherit from a render pass, which is where all the pass work in a GPU is executed. Passes also define their own pass behaviors, or how they should behave during a render frame. 
+Passes can either be a **Parent Pass**, which contains other passes, or a **Render Pass**, which executes GPU work. Passes also define their own pass behaviors, or how they should behave during a render frame. 
 
 ![pass-architectrure](/images/atom-guide/core-systems/rpi/pass-architecture.svg)
 
@@ -60,7 +54,7 @@ The following functions are used for defining pass behavior.
   
 * **`Validate()`**: This functions allows passes to validate any internal state. For example, to check if attachments are valid, if internal data has been properly configured, or if the pass hierarchy is valid. This is a virtual function, but does not follow the -Internal naming pattern. Instead, derived classes should override the virtual `Validate()` method and if successful, call their base class `Validate()` method. 
 
-* **`FramePrepare()`**, **`FramePrepareInternal()`**: This can be thought of as the pass's "render" function. It is called every frame and allows the pass to set up its rendering logic with the RHI's FrameGraph. 
+* **`FrameBegin()`**, **`FrameBeginInternal()`**: This can be thought of as the pass's "render" function. It is called every frame and allows the pass to set up its rendering logic with the RHI's FrameGraph. 
 
     For leaf passes this will often involve leveraging `RHI::ScopeProducer` and calling `ImportScopeProducer` on the FrameGraph. This will register the pass scope producer with the FrameGraph so it can receive the necessary callbacks.
 
