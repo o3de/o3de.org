@@ -1,3 +1,7 @@
-<blockquote class="warning callout">
-  <div><strong>Warning: </strong> {{ trim .Inner " \n" | markdownify }}</div>
-</blockquote>
+<!-- This shortcode creates a warning callout. Any provided text will be enclosed in the box. -->
+
+<div class="o3de warning" style="border:2px solid #be1414; border-radius: 6px; margin: 8px 0px; background-color: #faf2f2;">
+    <p style="margin:8px 8px 8px 8px"><img src = "/img/icons/warning-icon.svg" alt="icon warning" style="display:inline; width:18pt; height:18pt; float:left; margin:0 8px 0 0"/>
+        <strong>Warning:</strong> {{ trim .Inner " \n" | markdownify }}
+    </p>
+</div>

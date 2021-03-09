@@ -1,0 +1,7 @@
+<!-- This shortcode creates an important callout. Any provided text will be enclosed in the box. -->
+
+<div class="o3de important" style="border:2px solid #be1414; border-radius: 6px; margin: 8px 0px; background-color: #faf2f2;">
+    <p style="margin:8px 8px 8px 8px"><img src = "/img/icons/important-icon.svg" alt="icon important" style="display:inline; width:18pt; height:18pt; float:left; margin:0 8px 0 0"/>
+        <strong>Important:</strong> {{ trim .Inner " \n" | markdownify | }}
+    </p>
+</div>

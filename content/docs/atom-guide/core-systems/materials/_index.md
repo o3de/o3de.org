@@ -9,4 +9,4 @@ weight: 200
 ### Contents
 - [Material System](materials.md)
 - [Material File Specification](material-file-spec.md)
-- [Material File Type Specification](material-type-file-spec.md)
+- [Material Type File Specification](material-type-file-spec.md)
