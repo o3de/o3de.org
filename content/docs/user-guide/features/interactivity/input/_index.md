@@ -3,6 +3,8 @@ description: ' Learn how to use the game input system in Open 3D Engine. '
 title: Input
 ---
 
+{{< preview-migrated >}}
+
 Use the information in this section to learn about game input in Open 3D Engine\.
 
 **Note**

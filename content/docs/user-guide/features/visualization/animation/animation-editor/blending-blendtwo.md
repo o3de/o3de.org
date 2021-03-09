@@ -4,6 +4,8 @@ description: ' Use the Blend Two node in Open 3D Engine Animation Editor to blen
 title: Blend Two Node
 ---
 
+{{< preview-migrated >}}
+
 With the **Blend Two** node, you can blend between two input poses based on a weight value\. For example, the **Blend Two** node can blend smoothly between a walk and a run based on the character's speed\.
 
 The **Blend Two** is similar to the **Blend Two Additive** node, except that it doesn't support **Additive Blend** mode\.

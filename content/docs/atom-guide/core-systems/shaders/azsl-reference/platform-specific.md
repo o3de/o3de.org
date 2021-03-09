@@ -3,6 +3,8 @@ title: Platform-specific Shader Code
 description: Learn how to create AZSL shaders which offer platform-specific features or support.
 ---
 
+{{< preview-new >}}
+
 AZSLc is a cross-platform compatible compiler, but there are several ways to introduce platform specific code in AZSL. 
 <!-- [NOTE FOR DEVS: What are some common use cases for using compiler. 
 The following needs to be reviewed by the author.

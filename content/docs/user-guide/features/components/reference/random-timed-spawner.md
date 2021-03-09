@@ -4,6 +4,8 @@ description: ' Use the Open 3D Engine Random Timed Spawner component to spawn a 
 title: Random Timed Spawner
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

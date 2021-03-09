@@ -4,6 +4,8 @@ description: ' Add scale, rotation, and position modifiers to change the look of
 title: Adding Scale, Rotation, and Position Modifiers
 ---
 
+{{< preview-migrated >}}
+
 Before you can complete this procedure, you must first [create a vegetation layer](/docs/user-guide/features/gems/vegetation/layer.md)\.
 
 If you have [added a gradient for random selection](/docs/user-guide/features/gems/vegetation/gradient-random.md), the vegetable selection appears random, but still produces a grid\-like pattern\. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid\.

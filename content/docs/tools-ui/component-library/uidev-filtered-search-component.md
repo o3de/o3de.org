@@ -4,6 +4,8 @@ description: ' Learn how to use the O3DE UI 2.0 filtered search widget to give
 title: O3DE UI filtered search widget
 ---
 
+{{< preview-migrated >}}
+
 Use the **filtered search** widget to give users advanced search options in your O3DE UI tools\. You can see this interface in action in O3DE tools such as the **Entity Outliner** and **Asset Browser**\. To quickly narrow their search to the results that they're looking for, users can select one or more "type filters" to apply to the search terms that they type in the search field\.
 
 ## Anatomy of the filtered search widget<a name="filtered-search-anatomy"></a>

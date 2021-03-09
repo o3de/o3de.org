@@ -4,6 +4,8 @@ description: Tips and tricks for debugging AZSL shaders in O3DE's Atom renderer.
 weight: 300
 ---
 
+{{< preview-new >}}
+
 You might encounter shader compilation errors. This section goes over the tools and practices for debugging shaders in Atom. 
 
 <!-- NOTE: The below content is copied from the Shader System > Debugging wiki. Update is needed for this section.  -->

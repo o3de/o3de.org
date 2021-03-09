@@ -5,6 +5,8 @@ title: Gem structure
 weight: 50
 ---
 
+{{< preview-migrated >}}
+
 Each gem package can contain the following:
 + Assets
 + A `gem.json` file

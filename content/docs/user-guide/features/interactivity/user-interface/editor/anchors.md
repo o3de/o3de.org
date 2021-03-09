@@ -4,6 +4,8 @@ description: ' Use the Transform2D''s anchors and offset settings to set a UI el
 title: Managing UI Anchors and Offsets
 ---
 
+{{< preview-migrated >}}
+
 You can use anchors and offset settings in the **Transform2D** component to set a UI element's position and size relative to its parent's edges\. The **Transform2D** component is a required component in every element\.
 
 Anchor values are always `0.00%` to `100.00%` as defined by the parent's edges\. Offsets are expressed in pixels and are relative to the anchors\.

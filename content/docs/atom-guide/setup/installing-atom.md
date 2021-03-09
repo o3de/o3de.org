@@ -6,6 +6,8 @@ toc: true
 weight: 200
 ---
 
+{{< preview-new >}}
+
 Atom is integrated into the built-in **Atom Sample Viewer** (formerly *BaseViewer*) application and the **Open 3D Engine (O3DE)**. Atom's source code is also available to build from source. You can build Atom from source and explore Atom Sample Viewer on all supported platforms: PC, Android, Mac, and iOS. The O3DE game engine is only supported on PC. 
 
 Atom Sample Viewer showcases a collection of interactive rendering samples. 

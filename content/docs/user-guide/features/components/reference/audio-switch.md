@@ -4,6 +4,8 @@ description: ' Use the Audio Switch component to set up a default switch and swi
 title: Audio Switch
 ---
 
+{{< preview-migrated >}}
+
 The **Audio Switch** component provides basic [Audio Translation Layer \(ATL\)](/docs/user-guide/features/interactivity/audio/default-controls.md) switch functionality\. With switches \(and switch states\), you can specify the state of an entity\. The audio middleware interprets states, modifies the behavior of sounds, and plays the appropriate sounds\.
 
 ## Audio Switch Properties {#component-audio-switch-properties}

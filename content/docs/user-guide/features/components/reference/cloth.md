@@ -3,6 +3,8 @@ description: ' The Open 3D Engine Cloth component. '
 title: Cloth component
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

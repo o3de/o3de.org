@@ -6,6 +6,8 @@ toc: false
 weight: 100
 ---
 
+{{< preview-new >}}
+
 ## What is RHI?
 The **Render Hardware Interface (RHI)** is an abstraction layer over several platform-specific graphics APIs. It is designed from the ground up to take advantage of DirectX 12, Vulkan, and Metal 2.0. 
 

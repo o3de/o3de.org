@@ -3,6 +3,8 @@ title: Shader Resource Group (SRG) Constants
 description: Learn about how constants are declared and used in AZSL shader resource groups.
 ---
 
+{{< preview-new >}}
+
 In addition to textures, buffers, and samplers, Shader Resource Groups (SRGs) may include a list of constants. In AZSL, these fields are easily accessed, like `MaterialSrg::m_baseColor`. In C++, they are easily accessed through the `ShaderResourceGroup` class API. Behind the scenes, the system packs all this data into a single implicit constant buffer, manages the layout of that buffer, and protects client code from invalid access. However, this complexity is all conveniently hidden. The programmer using this API only needs to know the name and data type for the constants.
 
 Generally, every constant declaration that is valid in HLSL is also valid in an AZSL Shader Resource Group (SRG).

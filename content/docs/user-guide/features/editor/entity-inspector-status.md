@@ -3,6 +3,8 @@ description: ' Set the status for an entity while working in the editor for Open
 title: Setting an Entity Status
 ---
 
+{{< preview-migrated >}}
+
 By default, an entity starts as active in a level\. When you create a game, you can specify that an entity remain inactive until activated through some mechanism such as a script or player action\. You can also set an entity as editor only if you want to disable an entity during gameplay mode or you want to create test entities or visual comments for users working in your game\.
 
 **To set an entity's status**

@@ -4,6 +4,8 @@ description: ' Use a button component to make an element behave like a button in
 title: Button
 ---
 
+{{< preview-migrated >}}
+
 You can use a **Button** component to make an element behave like a button\.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button.png)

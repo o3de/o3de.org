@@ -5,6 +5,8 @@ title: Middleware Pane
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 The controls in the **Wwise Controls** pane are middleware\-specific\.
 
 **To filter displayed controls**

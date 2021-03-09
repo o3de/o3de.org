@@ -4,6 +4,8 @@ description: ' Use the Script Canvas tutorials to learn about Open 3D Engine''s 
 title: 'Script Canvas tutorials'
 ---
 
+{{< preview-migrated >}}
+
 Use the following **Script Canvas** tutorials to learn about the O3DE visual scripting system\.
 
 ## Prerequisites {#prerequisites-for-script-canvas-tutorial}

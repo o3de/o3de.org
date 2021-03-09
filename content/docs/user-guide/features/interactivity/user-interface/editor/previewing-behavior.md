@@ -4,6 +4,8 @@ description: ' Use Open 3D Engine UI Editor Preview to visualize how the animati
 title: Previewing Canvas Behavior
 ---
 
+{{< preview-migrated >}}
+
 In **UI Editor** **Preview**, the UI elements in your canvas perform as they would when the game is running\.
 
 Try these examples:

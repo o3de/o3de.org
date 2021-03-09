@@ -5,6 +5,8 @@ title: Inspector Pane
 weight: 400
 ---
 
+{{< preview-migrated >}}
+
 In the **Inspector** pane, you can edit the properties of the control that you selected in the **ATL Controls** pane\. You can modify the control's **Name**, select a **Scope**, and modify the **Connected Controls**\.
 
 ![\[Modify controls in the Inspector pane of the Audio Controls Editor.\]](/images/user-guide/audio/audio-atl-editor-inspector.png)

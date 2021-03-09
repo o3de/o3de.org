@@ -4,6 +4,8 @@ description: ' Use dynamic data slots to enable a single node to process a varie
 title: Dynamic Data Slots
 ---
 
+{{< preview-migrated >}}
+
 There are cases where a single node can function on multiple different input types \(for example, the **Lerp Between** node can function on numbers and vector objects\)\. To reduce the number of unique nodes, you can use dynamic data slots\. Dynamic data slots enable a single node to handle a variety of data types\. At the same time, they allow restrictions on the data types that can be connected\.
 
 You can use the `ScriptCanvas_DynamicDataSlot` tag to add a `DynamicDataSlot` to any node, as shown in the following example\.

@@ -3,6 +3,8 @@ description: ' Set up actor entities with multiple or a single FBX file in Open 
 title: Setting Up Actor Entities
 ---
 
+{{< preview-migrated >}}
+
 After you set up your skinned meshes as actors, you can create your actor entities\. You then parent the attachments to the main entity and line the attachments up to the primary actor\.
 
 **To create actor entities**

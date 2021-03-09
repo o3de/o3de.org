@@ -4,6 +4,8 @@ description: ' Set up parameters to customize the animation of the simulated obj
 title: Using Parameters to Adjust the Animation During Runtime
 ---
 
+{{< preview-migrated >}}
+
 You can adjust the **SimulatedObject** node to change its animation during runtime\. To do so, create a **Parameter** node and attach them to the node in the anim graph\. If you don't, the **SimulatedObject** node uses the properties that you entered in the **Attributes** panel\.
 
 **To adjust the animation during runtime**

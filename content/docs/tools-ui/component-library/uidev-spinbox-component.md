@@ -4,6 +4,8 @@ description: ' Learn about the O3DE UI 2.0 style of spinboxes, including the
 title: O3DE UI spinbox component
 ---
 
+{{< preview-migrated >}}
+
 Use a spinbox as a number edit component to enable users to use a variety of controls to "spin" up or down a numeric value in an input box\. The value is changed by the amount specified in the step value\.
 
 Use the `SpinBox` class for signed integer values, and the `DoubleSpinBox` class to hold double values\.

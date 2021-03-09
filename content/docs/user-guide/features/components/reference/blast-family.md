@@ -3,6 +3,8 @@ description: ' Learn about the Open 3D Engine Blast Family component. '
 title: Blast Family component
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |

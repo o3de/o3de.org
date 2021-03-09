@@ -4,6 +4,8 @@ description: Use the Particle Emitter component in Open 3D Engine to emit two-di
 title: Particle Emitter
 ---
 
+{{< preview-migrated >}}
+
 You can use a **Particle Emitter** component to emit two\-dimensional particles from an element\.
 
 **To see in\-game examples of completed canvases with a **Particle Emitter** component**

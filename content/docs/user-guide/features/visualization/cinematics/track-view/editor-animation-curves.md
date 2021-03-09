@@ -4,6 +4,8 @@ description: ' Use the Curve Editor in <guilabel>Track View</guilabel> editor to
 title: Using Animation Curves
 ---
 
+{{< preview-migrated >}}
+
 The **Curve Editor** displays animations as function curves\. Each track's curves represent an animation of a property value, such as anchor, offset, color, or any property of a UI element\.
 
 **To open the **Curve Editor****

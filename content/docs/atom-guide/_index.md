@@ -6,6 +6,8 @@ toc: true
 weight: 400
 ---
 
+{{< preview-new >}}
+
 + [What is Atom?](what-is-atom.md)
 + [Setup and installation](setup/installing-atom.md)
 + [Getting Started with Atom](get-started/_index.md)

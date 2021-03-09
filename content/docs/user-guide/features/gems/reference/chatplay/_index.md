@@ -4,6 +4,8 @@ description: ' Use the ChatPlay Gem to trigger events based on Twitch chat activ
 title: ChatPlay Gem
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 |  The ChatPlay Gem is deprecated and will be removed in a future version of O3DE\. It has been replaced by the [Twitch Chat API Gem](/docs/userguide/gem-twitch-chatplay)\.  |

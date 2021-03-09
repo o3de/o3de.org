@@ -4,6 +4,8 @@ description: ' Learn how to navigate Script Canvas graphs in Open 3D Engine to v
 title: Navigating Graphs
 ---
 
+{{< preview-migrated >}}
+
 If you want to visit all nodes of the same type on a graph - for example, to check their configuration - use the following procedure\.
 
 **To cycle through instances of the same node**

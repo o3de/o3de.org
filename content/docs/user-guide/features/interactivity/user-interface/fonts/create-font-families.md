@@ -4,6 +4,8 @@ description: Combine multiple font assets to create a font family group to use i
 title: Creating Font Families
 ---
 
+{{< preview-migrated >}}
+
 You can combine multiple font assets into a single font family group\.
 
 The following is an example of a `.fontfamily` file\.

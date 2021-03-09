@@ -4,6 +4,8 @@ title: Open 3D Engine Welcome Guide
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 -----
 ## Contents
 + [Welcome to Open 3D Engine](welcome.md)

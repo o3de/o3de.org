@@ -4,6 +4,8 @@ description: ' Use the Scale to Device setting in the UI Editor to scale
 title: Scale to Device
 ---
 
+{{< preview-migrated >}}
+
 The **Scale to Device** property helps build game UIs that can display on multiple screen resolutions\. You can preview your canvas at different resolutions in the UI Editor in **Preview Mode**\.
 
 A device scale is computed by using the ratio of the authored canvas size to the runtime canvas size\. The device scale is then adjusted based on the selected **Scale to Device** setting\. When you select any **Scale to Device** setting other than **None**, the device scale is multiplied with the **Transform2D** component's **Scale** property to get the final local scale for the element\.

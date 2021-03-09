@@ -4,6 +4,8 @@ description: ' Use the VRAM profiler in Open 3D Engine to determine which resour
 title: Using Profiler for VRAM
 ---
 
+{{< preview-migrated >}}
+
 ****
 Profiler is in preview release and is subject to change\.
 

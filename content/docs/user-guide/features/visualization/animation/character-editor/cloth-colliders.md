@@ -3,6 +3,8 @@ description: ' Add colliders to actors in Open 3D Engine for NVIDIA Cloth simula
 title: Add Cloth Colliders to actors
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |

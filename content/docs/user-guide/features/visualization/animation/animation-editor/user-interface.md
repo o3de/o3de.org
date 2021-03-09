@@ -3,6 +3,8 @@ description: ' View the Animation Editor interface in Open 3D Engine. '
 title: 'Animation Editor User Interface'
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

@@ -3,6 +3,8 @@ description: ' Manage your entities with the Entity Outliner in Open 3D Engine. 
 title: Working with Layers
 ---
 
+{{< preview-migrated >}}
+
 Use the O3DE layer system to organize level data into discrete files\. The layer system segments level content so that members of a development team can work on different aspects of a level asynchronously\.
 
 Layers are standard O3DE entities with a special editor\-only layer component\. In your game, this component appears as an empty entity in your hierarchy\. When you export your game, the behavior you designed is unchanged and all entities in your level are added to the exported data\.

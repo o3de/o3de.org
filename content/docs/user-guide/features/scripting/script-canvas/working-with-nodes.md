@@ -3,6 +3,8 @@ description: ' Learn how to work efficiently with Script Canvas nodes in Open 3D
 title: Working with Nodes
 ---
 
+{{< preview-migrated >}}
+
 Games are often built with complex logic, and complex logic can produce a large number of nodes and connections\. Script Canvas provides some specialized tools to help you manage this complexity\.
 
 **Topics**

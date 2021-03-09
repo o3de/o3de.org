@@ -4,6 +4,8 @@ description: ' Use the Audio Environment component to set up a default environme
 title: Audio Environment
 ---
 
+{{< preview-migrated >}}
+
 The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](/docs/user-guide/features/interactivity/audio/default-controls.md) environments\. Environments are used to apply environmental effects such as reverb or echo\.
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/audio/component-audio-environment1.png)

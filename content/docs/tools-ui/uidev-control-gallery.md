@@ -6,6 +6,8 @@ title: O3DE Qt control gallery tool
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 Use the **Amazon Qt Control Gallery** tool to see the Open 3D Engine custom Qt widget library in action\. There, you will find sample code and working examples of selected components\.
 
 ![\[image\]](/images/tools-ui/amazon-qt-control-gallery.jpg)

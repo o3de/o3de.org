@@ -6,6 +6,8 @@ weight: 1500
 ---
 ## Supported platforms {#lumberyard-supported-platforms}
 
+{{< preview-migrated >}}
+
 You can use O3DE to develop games for the following platforms:
 + Microsoft Windows PC
 + Android

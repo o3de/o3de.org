@@ -4,6 +4,8 @@ description: Configure font properties such as asset path and effects for your g
 title: Configuring Font Properties
 ---
 
+{{< preview-migrated >}}
+
 You can define the appearance of your UI font by configuring various properties that affect the font's appearance and usage\.
 
 You define your font's properties in the `.font` file, which is an XML file\. The following example shows the default UI font XML file, located in `Engine/Fonts/default-ui.font`\.

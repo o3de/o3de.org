@@ -4,6 +4,8 @@ description: ' Use the AZ::Event template class to subscribe to and publish mess
 title: AZ::Event<...>
 ---
 
+{{< preview-migrated >}}
+
 The `AZ::Event` template class is used to subscribe to and publish single value messages across the different components of your game\. It's designed to replace value\-based event pub/sub patterns that are currently implemented using EBus, only with significantly simpler syntax\. There are a number of benefits to this new system, including simpler code, fewer files, removal of aggregate interfaces where a handler only cares about a subset of events, and improved runtime performance when dispatching value changes to registered handlers\.
 
 `AZ::Event` is defined as a C\+\+ template \(`template <typename... Params>`\) in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Ebus\Event.h`

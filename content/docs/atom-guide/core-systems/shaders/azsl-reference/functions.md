@@ -3,6 +3,8 @@ title: AZSL Functions
 description: Learn about functions in the AZSL shader language.
 ---
 
+{{< preview-new >}}
+
 Functions in AZSL work similarly to HLSL (see the [Microsoft DirectX HLSL - Functions documentation](https://docs.microsoft.com/windows/win32/direct3dhlsl/dx-graphics-hlsl-functions)). However, there are a few differences to note about functions in AZSL. 
 
 ## Function Declarations

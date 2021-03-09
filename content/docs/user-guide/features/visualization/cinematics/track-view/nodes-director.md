@@ -3,6 +3,8 @@ description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel
 title: Director (Scene) Node
 ---
 
+{{< preview-migrated >}}
+
 The **Director \(Scene\)** node includes a camera track that specifies the active camera for a track view sequence\. You can add sequence\-specific nodes \(for example, **Depth of Field** or **Comment**\) under the **Director** node to override the same nodes that were set at the sequence level\.
 
 **To add a Director node in the Track View**

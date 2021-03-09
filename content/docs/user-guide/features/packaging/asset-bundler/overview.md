@@ -6,6 +6,8 @@ title: What is the Open 3D Engine Asset Bundler?
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 The Asset Bundler is a command\-line tool, `AssetBundlerBatch.exe`, and a set of specific file formats generated and used by the tool\.
 
 ## Prerequisites to use the Asset Bundler {#first-time-user}

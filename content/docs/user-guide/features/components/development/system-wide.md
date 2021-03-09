@@ -4,6 +4,8 @@ title: Creating System Components
 weight: 600
 ---
 
+{{< preview-migrated >}}
+
 System components are similar to other components in O3DE's component entity framework\. However, instead of creating game entity behavior, they control the behavior of the engine itself\. System components are first\-class elements of the game engine and are included at a deep level early in the initialization process\. For more information, see [System Components](/docs/userguide/modules/system-components.md) in the [AZ Modules](/docs/userguide/modules/s-intro.md) section\.
 
 Like any O3DE [component](/docs/user-guide/features/engine/components/create-component.md), a system component can provide services and can depend on or require other system component services\. O3DE provides precise control over the order of engine initialization and system dependencies\.

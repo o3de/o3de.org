@@ -4,6 +4,8 @@ description: ' Customize O3DE Editor by docking windows and toolbars, customizin
 title: Customizing O3DE Editor
 ---
 
+{{< preview-migrated >}}
+
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings\.
 
 **Note**

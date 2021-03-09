@@ -4,6 +4,8 @@ title: Area Light component
 date: 2021-03-05
 ---
 
+{{< preview-migrated >}}
+
 The **Area Light** component simulates a soft studio light by emitting light from a geometric shape that's provided by a Shape component. Light is emitted from the area of the surface of the shape in the direction of the shape's surface. Because the area of the shape is factored into the light calculation, the selected **Intensity Mode** can drastically affect the light's output. See the Intensity Mode property description in [Base properties](#base-properties) for more information.
 
 ## Provider ##

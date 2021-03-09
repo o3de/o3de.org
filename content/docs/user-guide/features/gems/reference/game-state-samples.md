@@ -4,6 +4,8 @@ description: ' Use the game states in the GameState Samples gem to control the f
 title: GameState Samples Gem
 ---
 
+{{< preview-migrated >}}
+
 The GameState Samples gem uses the [GameState Gem](/docs/user-guide/features/gems/game-state.md) to provide a set of sample game states that control the high\-level flow of a game\.
 
 ![\[The GameState Samples gem in Project Configurator.\]](/images/user-guide/gems/gems-system-gem-game-state-samples-1.png)

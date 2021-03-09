@@ -5,6 +5,8 @@ title: O3DE UI component development guidelines
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 For many of the basic components \(such as check boxes, push buttons, and line edits\), you will use the base Qt widgets \(such as `QCheckBox`, `QPushButton`, `QLineEdit`\) and the custom styling and behavior is applied automatically\. Components that require extended functionality, or are unique to O3DE, are custom classes that can be subclassed and can include a combination of Qt widgets\. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
 
 ## Style sheets and StyleManager<a name="uidev-style-sheets"></a>

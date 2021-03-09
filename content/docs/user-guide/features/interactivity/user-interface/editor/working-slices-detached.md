@@ -3,6 +3,8 @@ description: ' Create a detached UI slice in Open 3D Engine''s UI Editor . '
 title: Creating a Detached UI Slice
 ---
 
+{{< preview-migrated >}}
+
 You can create a detached UI slice from an existing UI slice instance\. When you create a detached UI slice, the UI system removes, or flattens, all references to child slices\. Using the button example from the previous section, let's say you saved the image slice instance and its child text slice instance as a detached slice and called it `Button2`\. The detached `Button2` would not reference any other slices; it is a slice that contains two entities\. If you pushed a change to the text slice, it would not affect the text within any instances of the `Button2` slice\.
 
 **To create a detached UI slice**

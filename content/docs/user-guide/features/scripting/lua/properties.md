@@ -4,6 +4,8 @@ description: ' Specify the properties of a Lua script component that appear in O
 title: Properties Table
 ---
 
+{{< preview-migrated >}}
+
 The `Properties` table configures the editor interface for customizing the behavior of a script\. With the properties table, you can modify numeric values, select states, and turn flags on and off\. The table can even provide a reference to entities that your script can interact with\.
 
 The properties inside the `Properties` table are exposed to the editor\. Properties outside the `Properties` table are private and not displayed in the editor\.

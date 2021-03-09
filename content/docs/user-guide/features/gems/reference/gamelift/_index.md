@@ -5,6 +5,8 @@ linktitle: 'GameLift Gem'
 title: 'Amazon GameLift Gem'
 ---
 
+{{< preview-migrated >}}
+
 Amazon GameLift is an AWS service for deploying, operating, and scaling session\-based multiplayer games\. With Amazon GameLift, you can quickly scale high\-performance game servers up and down to meet player demand without any additional engineering effort or upfront costs\.
 
 The GameLift Gem provides a framework to extend O3DE networking \(GridMate\) to work with GameLift resources via GameLift server and client API's\.

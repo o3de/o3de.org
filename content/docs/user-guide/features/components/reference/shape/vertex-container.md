@@ -4,6 +4,8 @@ title: Vertex Containers
 date: 2021-03-05
 ---
 
+{{< preview-migrated >}}
+
 `VertexContainer` is a concrete type and an interface that is used by several O3DE component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/features/components/reference/shape/polygon-prism-shape.md) component and the [Spline](/docs/user-guide/features/components/reference/shape/spline.md) component, and used indirectly by the [Navigation Area](/docs/user-guide/features/components/reference/nav-area.md) component.
 
 ## Vertex Container Interface ##

@@ -5,6 +5,8 @@ title: Cloth for Actor components
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

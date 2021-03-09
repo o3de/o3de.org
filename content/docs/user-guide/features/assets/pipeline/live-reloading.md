@@ -4,6 +4,8 @@ description: ' Use virtual file system on non-PC platforms in order to live relo
 title: Live Reloading and VFS
 ---
 
+{{< preview-migrated >}}
+
 On the PC platform, live reloading does not require virtual file system \(VFS\), since the PC that is running the game is presumably also running the Asset Processor\.
 
 On non\-PC platforms, VFS is required for live reloading to work, because otherwise assets would need to be deployed onto the game device as part of live reloading, incurring platform\-specific costs and different asset pipelines\. VFS enables the same behavior across all platforms using the same workflow\. For debugging purposes, you can also enable VFS on a PC and point it at a remote Asset Processor to serve assets\.

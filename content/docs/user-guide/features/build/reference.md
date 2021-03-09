@@ -4,6 +4,8 @@ description: The reference guide to Open 3D Engine-specific CMake settings.
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/features/gems/reference). For general CMake options, see the [cmake.variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
 
 Keep in mind that every time you change a configuration value, you need to regenerate the project files so that the changes are picked up and apply to your next build.

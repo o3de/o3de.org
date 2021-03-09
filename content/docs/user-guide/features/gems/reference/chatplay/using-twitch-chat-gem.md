@@ -5,6 +5,8 @@ title: Using the Twitch Chat Gem
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 Adding the Twitch Chat Gem to your project enables you to connect to the Twitch IRC and interact with players using Twitch ChatPlay\.
 
 Twitch ChatPlay includes support for chat commands, polls, and surveys that can be triggered by Twitch viewers through the Twitch chat channel\.

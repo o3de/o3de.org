@@ -6,6 +6,8 @@ title: Testing your Amazon GameLift Integration
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 Before you make your first Amazon GameLift fleet, verify your integration using **GameLift Local**\. GameLift Local is included as part of the GameLift Server SDK download\. It is run as a Java process\.
 
 With GameLift Local, you can test most aspects of your GameLift integration, with the exception of matchmaking\. For details and other limitations, see the complete documentation for [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html) in the Amazon GameLift Developer Guide\.

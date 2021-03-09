@@ -1,5 +1,7 @@
 # Atom Core Systems
 
+{{< preview-new >}}
+
 ## Contents
 - [Atom architecture](atom-architecture/_index.md)
 - [Materials](materials/_index.md)

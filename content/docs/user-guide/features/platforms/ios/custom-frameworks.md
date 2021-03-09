@@ -4,6 +4,8 @@ title: Add iOS Frameworks to a O3DE project
 weight: 600
 ---
 
+{{< preview-migrated >}}
+
  As part of making changes to your core application on iOS, you may need to include bundled libraries for Darwin platforms called [Frameworks](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Frameworks.html)\. Frameworks are versioned bundles of libraries and their headers packaged as a single redistributable, and more common to ship for Darwin\-based platforms rather than independent `.dyld` libraries and header files\. When building for iOS, these frameworks need to be included in your final application bundle and code\-signed like the rest of your binary\. Because headers ship as part of a Framework, you don't need to explicitly export them so that the build system or your code will see the headers\.
 
 ## Include frameworks in the launcher's `wscript` {#ios-custom-frameworks-wscript}

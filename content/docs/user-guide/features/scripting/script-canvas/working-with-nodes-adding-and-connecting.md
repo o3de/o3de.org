@@ -3,6 +3,8 @@ description: ' Learn how to add and connect Script Canvas nodes in Open 3D Engin
 title: Adding and Connecting Nodes
 ---
 
+{{< preview-migrated >}}
+
 You can add nodes to a canvas by dragging and dropping them from the **Node Palette** onto the canvas\. You can also quickly add and connect nodes without using the **Node Palette**, as described in the following sections\.
 
 ## Creating a Chain of Linked Nodes {#script-canvas-working-with-nodes-creating-a-chain-of-linked-nodes}

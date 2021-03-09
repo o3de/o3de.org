@@ -4,6 +4,8 @@ description: ' Use the Transform component to move, rotate, and scale an entity 
 title: Transform
 ---
 
+{{< preview-migrated >}}
+
 The **Transform** component controls the translation, rotation, and scale information of an entity in the 3D world\. When you create an entity in O3DE Editor, the **Transform** component is automatically added\. The translation is the coordinate location \(x, y, and z axes\) of the entity\. The rotation is the degree in which the entity is rotated around its center\. The scale is the dimension of the entity in comparison to its original size\.
 
 *World space* refers to the entity's absolute translation, rotation, and scale in the level\. If a child is attached to a parent entity, *local space* refers to the entity's translation, rotation, and scale relative to its parent entity\.

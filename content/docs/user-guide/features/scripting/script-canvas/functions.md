@@ -4,6 +4,8 @@ description: ' Create reusable functions in Script Canvas that can be inserted i
 title: 'Script Canvas Functions'
 ---
 
+{{< preview-migrated >}}
+
 The Script Canvas editor enables you to create reusable graphs, called functions\. A function is available for use as a node in your Script Canvas graphs\. Similar to functions in traditional programming languages, functions in the Script Canvas editor promote code reuse and abstraction\. They help simplify your graphs by replacing a group of nodes that perform a specific task with one function node\. For example, you could move a series of nodes that perform linear interpolation into a function called Interpolate, and move nodes that perform acceleration clamping into a function called ClampAcceleration\. Additionally, if you're using this functionality in multiple graphs, functions make updates easier because you need to make changes only in one place\.
 
 Your function appears alongside all the other Script Canvas nodes in the **Node Palette**, categorized under **Global Functions**\.

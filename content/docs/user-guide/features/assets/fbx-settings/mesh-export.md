@@ -3,6 +3,8 @@ description: ' Export meshes from .fbx files with FBX Settings to Open 3D Engine
 title: FBX Settings mesh export
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

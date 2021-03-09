@@ -3,6 +3,8 @@ description: ' Edit a UI slice in a new tab in Open 3D Engine''s UI Editor . '
 title: Editing Slices in a New Tab
 ---
 
+{{< preview-migrated >}}
+
 When you edit an instance of a UI slice in a UI canvas, you can use the context menu to **Push to Slice**\. This pushes the local changes that you select\. For simplicity, you can instead make changes to the slice in its own context\. To do this, you can create a blank UI canvas and instantiate the slice there to edit\. The **UI Editor** automates this process with the **Edit slice in new tab** feature\.
 
 **To edit a slice in a new tab**

@@ -4,6 +4,8 @@ description: ' Create an asset builder to process your custom asset type source 
 title: Creating a Custom Asset Builder
 ---
 
+{{< preview-migrated >}}
+
 The Asset Builder SDK lets you develop an asset builder that processes your custom asset type source files into game\-ready files\. This topic shows you how to create your own asset builder by using the example asset builder that is included with O3DE\.
 
 To create a builder for a custom asset type:

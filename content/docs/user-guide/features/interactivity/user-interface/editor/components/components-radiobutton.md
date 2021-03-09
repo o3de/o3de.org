@@ -4,6 +4,8 @@ description: ' Use a RadioButton component to make an element behave like a radi
 title: RadioButton
 ---
 
+{{< preview-migrated >}}
+
 You can use the **RadioButton** component to make an element behave like a radio button\. This component is typically used on an element with two visual child elements-one to display when the radio button is selected and another to display when the radio button is cleared\.
 
 Use this component in conjunction with the **RadioButtonGroup** component\. The **RadioButtonGroup** component handles selecting and clearing the radio buttons in the group and makes sure that only one radio button is ever selected\.

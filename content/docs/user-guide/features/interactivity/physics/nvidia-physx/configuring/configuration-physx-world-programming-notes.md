@@ -4,6 +4,8 @@ title: PhysX World Programming Notes
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 For physics objects to be simulated, they must exist inside a world\. Multiple worlds can have uses like the following:
 + To simulate the result of an action in the first world\. For example, the second world might show what a tower of blocks might look like five seconds from now if it were knocked over in the first world\.
 + To simulate a subset of objects that you don't want to interact with the rest of the world\. For example, you could simulate the movement of objects attached to a player's belt\.

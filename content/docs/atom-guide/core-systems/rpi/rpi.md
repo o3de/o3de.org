@@ -6,6 +6,8 @@ toc: false
 weight: 100
 ---
 
+{{< preview-new >}}
+
 The Render Pipeline Interface (RPI) is the central hub in Atom's rendering pipeline. Developers can use the RPI's C++ API or JSON files to customize the pipeline and create new features. The RPI is universal and platform-independent; It's built on top of the RHI, which is responsible for communication with all supported low level graphics APIs. With the RPI, developers can:
 
 * Implement split views. For example, the Open 3D Engine Editor features multiple viewports, allowing users to view the level with different cameras at the same time. 

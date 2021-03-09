@@ -4,6 +4,8 @@ title: AZ Code Generator Parameters
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. |

@@ -4,6 +4,8 @@ description: ' Configure the Asset Pipeline to customize the processing of asset
 title: Configuring the Asset Pipeline
 ---
 
+{{< preview-migrated >}}
+
 **Important**
 The Asset Builder SDK is now preferred over the legacy `rc.exe` program for adding asset types to the pipeline\. Instead of using the `rc.exe` program, make a builder module that you derive from the `BuilderSDK`\. These modules are self configuring\. For instructions and examples on how to write builders that process your own asset types, see the [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md)\. We recommend that you do not rely on the old `rc.exe` pipeline, although it's still available if you have legacy code\.
 

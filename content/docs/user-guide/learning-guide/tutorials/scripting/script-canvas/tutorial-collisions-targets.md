@@ -6,6 +6,8 @@ title: 'Script Canvas Tutorial: Shooting a Target by Spawning Entities and Detec
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 This tutorial builds on what you learned in the previous two tutorials\. In the following tutorial, you create a controllable sphere that shoots projectiles at a target\.
 
 **Example**

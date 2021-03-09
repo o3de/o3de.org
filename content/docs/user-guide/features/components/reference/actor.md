@@ -3,6 +3,8 @@ description: ' Use the Actor component to add an actor file to your entity in Op
 title: Actor
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

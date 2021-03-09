@@ -3,6 +3,8 @@ title: AZSL Types
 description: The full reference for built-in types unique to the AZSL shader language.
 ---
 
+{{< preview-new >}}
+
 This document covers the differences between AZSL and HLSL regarding types. Any content not covered assumes the same rules as in HLSL. For HLSL type reference, see the [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-data-types). 
 
 ## Arrays

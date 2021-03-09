@@ -4,6 +4,8 @@ title: PhysX Best Practices
 weight: 600
 ---
 
+{{< preview-migrated >}}
+
 See the following best practices when working with PhysX\.
 + Colliders intersecting with terrain can result in unexpected behavior\. For example, the object might rocket into space, jitter, or slow down performance\. Avoid intersecting colliders with terrain\. If you need to intersect a collider with terrain, use a small value for the collider size\. These scenarios can be mitigated by clearing the **Persistent Contact Manifold** check box in the **Global Configuration** tab in the **PhysX Configuration** tool\.
 + The **PhysX Character Controller component** must be on the same entity as the **Actor** component in order to work with the **Animation Editor**\.

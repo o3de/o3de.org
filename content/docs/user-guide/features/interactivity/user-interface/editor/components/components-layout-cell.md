@@ -5,6 +5,8 @@ description: ' Add a layout cell component to a child of the layout row or colum
 title: LayoutCell
 ---
 
+{{< preview-migrated >}}
+
 When working with cell contents, it's important to understand the difference between a layout cell and the **LayoutCell** component\. A layout cell represents a set of values that determine the space or area allocated to a child in a layout row or column\. The **LayoutCell** component, on the other hand, manipulates the way a layout cell is sized\. A layout cell exists on a child of a layout row or layout column whether or not it has a **LayoutCell** component\. The **LayoutCell** component simply provides a way to manipulate and override the default calculations of a layout cell\.
 
 A layout cell's properties consist of a minimum size, a target size, and an extra size ratio\. These properties are not directly modifiable in the UI Editor, but are determined in several ways:

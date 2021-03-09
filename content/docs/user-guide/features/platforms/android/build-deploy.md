@@ -4,6 +4,8 @@ title: Build and deploy your project for Android
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
  Once you've [set up your environment]() and [configured your project](), it's time to build your Open 3D Engine project for Android and get it running on a device\. In this section, you'll set up an attached device to use the [Shader Compiler](), build your project with `lmbr_waf` or Android Studio, and deploy to a device\. You'll also learn how to configure the O3DE build system to activate or deactivate automatically deploying to a device whenever you build\.
 
 **Topics**

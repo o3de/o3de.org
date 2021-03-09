@@ -4,6 +4,8 @@ description: ' Use the CPU profiler in Open 3D Engine to examine CPU usage in yo
 title: Using the Profiler for CPU Usage
 ---
 
+{{< preview-migrated >}}
+
 ****
 Profiler is in preview release and is subject to change\.
 

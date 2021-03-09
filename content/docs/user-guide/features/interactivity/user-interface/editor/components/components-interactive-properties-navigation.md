@@ -4,6 +4,8 @@ description: ' Use the Navigation group of properties to specify how the arrow k
 title: Navigation
 ---
 
+{{< preview-migrated >}}
+
 You can use the **Navigation** group of properties to specify how the arrow keys or gamepad navigates between interactive elements\.
 
 For each interactive element, you can set navigation to one of the following:
