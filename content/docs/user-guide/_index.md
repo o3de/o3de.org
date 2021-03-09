@@ -84,7 +84,7 @@ Open 3D Engine comes with a high-performance networking Gem that gives you the f
 + Detachable player behaviors supporting automated desync detection and correction.
 + RPC and future elastic fault tolerant multiserver support with prediction and reconciliation.
 
-For more information, read [O3DE Networking](/docs/userguide/networking/intro.md)\.
+For more information, read [O3DE Networking](/docs/user-guide/features/networking)\.
 
 ### Data-driven Asset Workflows and Handling
 
