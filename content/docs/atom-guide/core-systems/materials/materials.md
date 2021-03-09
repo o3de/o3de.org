@@ -26,7 +26,7 @@ Material files (`*.material`) are in JSON format. They can be edited using the M
 For more information, see [Material File Specification](material-file-spec.md).  
 
 ### Material File Example
-In the following example, the material inherits from the **StandardPBR** material type and contains the properties `baseColor`, `roughness`, and `normal`. 
+In the following example, the material uses the **StandardPBR** material type and contains the properties `baseColor`, `roughness`, and `normal`. 
 ```json
 {
     "materialType": "StandardPBR.materialtype",

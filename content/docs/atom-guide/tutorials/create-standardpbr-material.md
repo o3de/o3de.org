@@ -19,7 +19,7 @@ A material can have multiple textures, such as base color, normal map, and rough
 ### Download texture files
 Download the [castle brick material](https://texturehaven.com/tex/?t=castle_brick_02_red) in any resolution from Texture Haven. When downloading, make sure to choose **All Maps** to download all textures that make up this material.
 
-After downloading, move and extract the zip file to the folder *\<project-folder\>/Assets/Materials/TextureHaven/*.
+After downloading, move and extract the zip file to the folder `<project-folder>/Materials/TextureHaven/`.
 
 We use the following files as our input textures:
 -  castle_brick_02_red_ao_1k (ambient occlusion)
@@ -43,7 +43,7 @@ We rename the following files to properly apply a filemask. (For the sake of cla
 
 ## Create material with Material Editor
 To create a material using the Material Editor:
-1. Open the Material Editor. If you are in the Open 3D Engine Editor, go to *Tools > Material Editor*, or press *M*. Otherwise, you can open the Material Editor as a standalone application from `\<build_folder\>/bin/profile/MaterialEditor.exe`.
+1. Open the Material Editor. If you are in the Open 3D Engine Editor, go to *Tools > Material Editor*, or press *M*. Otherwise, you can open the Material Editor as a standalone application from `<build_folder>/bin/profile/MaterialEditor.exe`.
    
 2. Create a new StandardPBR material by choosing **File** > **New** > **Standard PBR**. This opens the file browser and prompts you to save the new file. In the **Inspector** tab, you can verify that the material type is `StandardPBR` by checking the `Material Type` property in the `Details` property group. 
 
@@ -60,8 +60,11 @@ The file browser looks for materials in the project folder, any Gem's *Assets* f
    - **Normal**: castle_brick_02_red_normal
    - **Ambient Occlusion**: castle_brick_02_red_ambientocclusion
    - **Parallax Mapping**: castle_brick_02_red_displacement  
+    
+    {{< note >}} 
+The downloaded normal map is flipped. To flip it back, enable the `Flip Y Channel` property.*
+    {{< /note >}}
 
-    *Note: The downloaded normal map is flipped. To flip it back, enable the `Flip Y Channel` property.*
 <!--     [Future work] Add a link here to a page that includes:  more detail about all the settings. Provide tips on determining whether they need to flip X/Y channels of a normal map. For one thing, it's easier to tell if you use a light preset with a strong directional light like the "Goegap" presets -->
 
 You've successfully created a new StandardPBR material! The following figure shows the property settings and the expected material.
