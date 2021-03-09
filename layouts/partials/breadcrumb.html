@@ -8,8 +8,8 @@
 {{ $isHere := eq .p1 .p2 }}
 <li>
    <a href="{{ .p1.RelPermalink }}">
-    {{ .p1.Title | markdownify }}
-  </a> / &nbsp;
+    {{ .p1.LinkTitle | markdownify }}
+  </a> / 
 </li>
 {{ end }}
 
