@@ -1,6 +1,7 @@
 ---
 title: Learning guide
 weight: 200
+menu_uuid: learningguide
 ---
 
 {{< preview-migrated >}}
