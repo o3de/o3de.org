@@ -10,9 +10,7 @@
       <div class="accordion" id="accordionExample">
         <div class="card border-left-0 border-right-0 rounded-0"> <!-- root -->
           <div class="card-header">
-             <a class="" href="{{ .Permalink }}">
-              <h1>{{ .LinkTitle | markdownify }}
-              </h1></a>
+             <a id="docs-nav-title" href="{{ .Permalink }}"><h1>{{ .LinkTitle | markdownify }}</h1></a>
           </div>
         </div>
         {{ range .Sections }}
