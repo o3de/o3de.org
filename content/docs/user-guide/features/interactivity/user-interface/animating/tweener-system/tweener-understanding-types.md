@@ -4,6 +4,8 @@ description: ' Learn how different Scripted Entity Tweener easing types affect t
 title: Supported Tweener Easing Types
 ---
 
+{{< preview-migrated >}}
+
 The easiest way to visualize the concept of Scripted Entity Tweener easing types is to see it on a graph that depicts a change in position over time\. The resulting line can be thought of as speed, though it isn't necessarily so\.
 
 The movement of objects in the natural world is rarely uniform\. A rocket ship blasting off from the ground accelerates slowly as it first gains momentum, and then rapidly accelerates as it shoots toward the sky\. If you viewed this motion on a position and time graph, it might look like a quartic or quintic easing in function\. A bouncy ball dropped from a height accelerates toward the ground and hits it at a certain velocity\. The ball bounces back up at that velocity and decelerates as it nears the top of its arc, and gravity pulls it back down for another bounce\. Viewed on a position and time graph, looks like the bounce easing out function\.

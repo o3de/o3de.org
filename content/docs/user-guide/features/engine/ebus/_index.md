@@ -6,6 +6,8 @@ title: Working with the Event Bus (EBus) system
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 Event buses \(EBuses\) are a general\-purpose communication system that O3DE uses to dispatch notifications and receive requests\. EBuses are configurable and support many different use cases\.
 
 To interact with the engine or other components in O3DE, include the component or system's EBus or API header in your code\. Then make calls to the exposed EBuses\. With this approach you can replace engine-level system APIs with implementations that you define in a gem\. For example, you could replace O3DE's audio system with your own EBus handler\. This would give you complete control over audio without having to recompile the engine\.

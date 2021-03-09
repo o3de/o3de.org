@@ -4,6 +4,8 @@ description: ' Use the toolbar in Open 3D Engine''s UI Editor to manipulate your
 title: Toolbar
 ---
 
+{{< preview-migrated >}}
+
 ## Interaction Modes {#ui-editor-toolbar-interaction-modes}
 
 The **UI Editor** toolbar features interaction modes\. The selected interaction mode determines how you can interact with the UI elements in your canvas\.Interaction modes

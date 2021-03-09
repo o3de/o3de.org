@@ -3,6 +3,8 @@ description: ' Use Component Mode to edit programmatically components in Open 3D
 title: Programmer's Guide to Component Mode
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

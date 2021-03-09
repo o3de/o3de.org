@@ -6,6 +6,8 @@ title: 'Script Canvas Tutorial: Creating a Controllable Entity'
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 This tutorial walks you through the steps to create a simple sphere that you can control with keyboard input\.
 
 **Example**

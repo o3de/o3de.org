@@ -5,6 +5,8 @@ linktitle: User interface
 title: Creating and Customizing Project User Interfaces
 ---
 
+{{< preview-migrated >}}
+
 You can use the **UI Editor** to create and customize various parts of the game user interface, such as images, text, buttons, menus, scroll boxes, and heads\-up displays \(HUDs\)\. For a tutorial about UI creation for games, see [O3DE Tutorials](https://gamedev.amazon.com/forums/tutorials)\.
 
 **Topics**

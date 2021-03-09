@@ -3,6 +3,8 @@ description: ' Set canvas properties for UI canvases in UI Editor in Open 3D Eng
 title: Configuring Canvas Properties
 ---
 
+{{< preview-migrated >}}
+
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected\.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-canvas-properties.png)

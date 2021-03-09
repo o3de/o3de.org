@@ -5,6 +5,8 @@ title: Controls Pane
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 The **ATL Control** pane has the following control types\. The associated icon designates the type of control\. You can customize the name of the control\.
 
 

@@ -4,6 +4,8 @@ description: ' Use the console variable node to use and animate console variable
 title: Console Variable Node
 ---
 
+{{< preview-migrated >}}
+
 Use the **Console Variable** node to use and animate console variables in a track view sequence\.
 
 **To add a console variable node in Track View**

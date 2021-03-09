@@ -3,6 +3,8 @@ description: ' Learn how to use blend spaces in the Animation Editor. '
 title: Creating and Visualizing Blend Spaces
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

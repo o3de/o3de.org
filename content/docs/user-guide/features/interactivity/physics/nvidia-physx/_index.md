@@ -6,6 +6,8 @@ title: Simulating physics behavior with the PhysX system
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 O3DE's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation\. To use the PhysX system, install the [PhysX SDK](https://developer.nvidia.com/gameworks-physx-overview) using the [O3DE Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
 
 **Note**

@@ -3,6 +3,8 @@ description: ' Use Animation Editor components to animate your entities in Open 
 title: 'Animation Editor Components'
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

@@ -5,6 +5,8 @@ title: Dynamic joints with PhysX
 weight: 400
 ---
 
+{{< preview-migrated >}}
+
 PhysX joint components constrain the position and orientation of one PhysX rigid body called the *follower*, relative to another PhysX rigid body, called the *leader*\. The leader rigid body will have rotational freedom in zero, one, or two axes around the joint, depending on the type of PhysX joint\.
 
 The example image below is a simple demonstration of the three joint types\. In each example, the blue sphere is the follower rigid body\. The joints are centered on their respective follower rigid bodies\. The red sphere is the leader rigid body\. For clarity, the ball joint and hinge joint follower rigid bodies are set to fixed positions, but they can be dynamic rigid bodies like the fixed joint example\. Also note that the joints can be offset from the follower rigid body using the **Local Position** and **Local Rotation** properties of the joint component\.

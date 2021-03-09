@@ -4,6 +4,8 @@ description: ' See the following Animation Editor nodes when creating your anima
 title: 'Animation Editor Nodes'
 ---
 
+{{< preview-migrated >}}
+
 See the following nodes available in the Animation Editor\.
 
 **Topics**

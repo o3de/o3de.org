@@ -4,6 +4,8 @@ title: PhysX Scene Queries
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 You can use physics raycast and shape cast queries to determine whether a specific line segment intersects physics geometry\. For example, you might want to determine what object is in front of another object, or test a line of sight\. For a shape cast, the line segment is in the form of a desired shape \(for example, a sphere\)\. All scene queries are performed on a `Physics::World` object\. For more information, see [PhysX World Programming Notes](/docs/user-guide/features/interactivity/physics/nvidia-physx/configuration-physx-world-programming-notes.md)\.
 
 You can use scene queries to find nearby objects using the following methods\.

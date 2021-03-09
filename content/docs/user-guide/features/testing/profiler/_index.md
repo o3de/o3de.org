@@ -3,6 +3,8 @@ description: ' Use the O3DE Profiler to capture, save, and analyze network, CPU,
 title: Profiler
 ---
 
+{{< preview-migrated >}}
+
 ****
 Profiler is in preview release and is subject to change\.
 

@@ -4,6 +4,8 @@ description: ' Use custom state machines to control motions in the Animation Edi
 title: Customizing State Machine Routing with Sparse Motion Sets
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

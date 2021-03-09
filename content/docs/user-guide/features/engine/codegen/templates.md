@@ -5,6 +5,8 @@ title: Code Generation Templates
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. |

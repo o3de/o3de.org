@@ -5,6 +5,8 @@ title: Create with Open 3D Engine
 weight: 50
 ---
 
+{{< preview-migrated >}}
+
 Previously in this guide, we covered [Key concepts](../../key-concepts.md) and [Setting up Open 3D Engine](../../setup)\.
 
 Now, let's get started creating your game\! In this topic, we provide an overview of creating a game with O3DE, and help you identify where to focus your learning, based on your role in game development\. If you're proficient in all roles, read everything\!

@@ -19,7 +19,7 @@ preview-build:
 		--minify
 
 open:
-	open https://cncf-hugo-starter.netlify.com
+	open https://o3de.netlify.com
 
 clean:
 	rm -rf resources

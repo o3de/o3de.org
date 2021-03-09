@@ -3,6 +3,8 @@ description: ' Use the Animation Editor quick start to animate a character in Op
 title: Getting Started with the Animation Editor
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

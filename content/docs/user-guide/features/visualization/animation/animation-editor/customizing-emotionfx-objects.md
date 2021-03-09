@@ -3,6 +3,8 @@ description: ' Customize EMotionFX objects in the O3DE Animation Editor. '
 title: Customizing EMotionFX Objects
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

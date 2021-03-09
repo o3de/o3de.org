@@ -3,6 +3,8 @@ description: ' Place a UI canvas on an object in the 3d world in Open 3D Engine.
 title: Placing UI Canvases in the 3D World
 ---
 
+{{< preview-migrated >}}
+
 You can place a UI canvas directly on an object in the 3D world, as opposed to showing it in screen space\. To do this, you render a UI canvas to a texture, and then use that texture in a material on a 3D mesh\.
 
 You can use any material on any type of entity to display a texture rendered by a UI canvas\. However, if players are to interact with the UI canvas in the 3D world-by clicking with the mouse, for example-you must use a component entity\.

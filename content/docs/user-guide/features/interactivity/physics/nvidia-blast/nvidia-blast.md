@@ -4,6 +4,8 @@ description: ' Use the NVIDIA Blast gem to simulate destruction in your Open 3D 
 title: NVIDIA Blast Gem
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |

@@ -4,6 +4,8 @@ title: Building Your iOS App
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 Set up your build environment and build an app that can run on an iOS device\.
 
 You must do the following:

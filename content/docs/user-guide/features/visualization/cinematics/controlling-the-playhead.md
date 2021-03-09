@@ -3,6 +3,8 @@ description: ' Control the playhead in the <guilabel>Track View</guilabel> edito
 title: Controlling the Playhead
 ---
 
+{{< preview-migrated >}}
+
 The Track View's **Play** toolbar contains the main controls for controlling the playhead for the sequence timeline\.
 
 ![\[Control the playhead in the Track View.\]](/images/user-guide/cinematics/cinematics-track-view-editor-play-toolbar.png)

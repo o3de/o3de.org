@@ -3,6 +3,8 @@ description: null
 title: 'Script Canvas Concepts and Terms'
 ---
 
+{{< preview-migrated >}}
+
 The following concepts and terms are used in **Script Canvas**:
 
 **Script**

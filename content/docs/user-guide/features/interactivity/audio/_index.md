@@ -5,6 +5,8 @@ linktitle: Audio
 title: Adding Audio and Sound Effects
 ---
 
+{{< preview-migrated >}}
+
 O3DE uses an audio translation layer \(ATL\) to interface between O3DE and third\-party audio middleware, so you can develop and change your audio implementation without affecting the game logic\. The game logic interacts with ATL controls, which map to their audio middleware equivalents through the Audio Controls Editor\. For example, to play a sound, the game executes an ATL trigger, which is mapped to a 'Play' event in the audio middleware\.
 
 O3DE supports Audiokinetic Wave Works Interactive Sound Engine \(Wwise\), an audio pipeline solution with which you can create compelling soundscapes for your game\. O3DE comes pre\-configured with Wwise LTX, a free, compact version of Wwise\.

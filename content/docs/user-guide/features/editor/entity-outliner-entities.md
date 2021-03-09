@@ -3,6 +3,8 @@ description: ' Manage your entities with the Entity Outliner in Open 3D Engine. 
 title: Working with Entities
 ---
 
+{{< preview-migrated >}}
+
 **Topics**
 + [Creating an Entity](/docs/userguide/creating-entity.md)
 + [Reordering Entities](#component-entity-outliner-reordering)

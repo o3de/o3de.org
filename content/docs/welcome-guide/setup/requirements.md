@@ -4,6 +4,8 @@ title: Open 3D Engine system requirements
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 O3DE has a minimum set of system requirements for development, as outlined in the following sections\. Disk space and RAM requirements are dependent on the options that you choose during installation\.
 
 ## System requirements<a name="system-requirements"></a>

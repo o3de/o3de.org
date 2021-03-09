@@ -4,6 +4,8 @@ description: ' Learn how to modify Lua script parameters in the Scripted Entity 
 title: Tweener Parameters
 ---
 
+{{< preview-migrated >}}
+
 Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations\. Use the parameters with a [timeline](/docs/user-guide/features/user-interface/animating/tweener-timeline.md) for a variety of possibilities\.
 
 Use the following tweener parameters to customize your animation\.

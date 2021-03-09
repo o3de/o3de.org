@@ -4,6 +4,8 @@ description: ' Use the PhysX Ragdoll component to create a physical representati
 title: PhysX Ragdoll
 ---
 
+{{< preview-migrated >}}
+
 You can use the **PhysX Ragdoll** component to create a physical representation of a character in the animation system and to simulate certain behaviors, such as hit reactions and character death\. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints\. You can adjust the ragdoll settings as needed for physical plausibility and performance\.
 
 The **PhysX Ragdoll** component requires the [PhysX Characters](/docs/user-guide/features/gems/physx-characters.md) gem\.

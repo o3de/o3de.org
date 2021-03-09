@@ -4,6 +4,8 @@ description: ' Create random distribution by using weight-based random selection
 title: Creating Weight-Based Random Selection
 ---
 
+{{< preview-migrated >}}
+
 When you create distribution using random selection, the vegetation asset that is selected for a particular point on the grid varies\. The assigned weight of each asset determines its chance of selection\. In this procedure, you specify weights and link to the gradient using the **Vegetation Asset Weight Selector** component\.
 
 ## Preparing the Vegetation Entity {#prepare-vegetation-entity}

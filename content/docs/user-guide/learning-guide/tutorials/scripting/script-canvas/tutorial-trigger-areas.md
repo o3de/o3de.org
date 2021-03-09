@@ -6,6 +6,8 @@ title: 'Script Canvas Tutorial: Opening and Closing a Door with Trigger Areas an
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 In the following tutorial, you create a door that opens and closes when your controllable sphere enters and exits a trigger area\.
 
 **Example**

@@ -5,6 +5,8 @@ title: Partial destruction with NVIDIA Blast
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |

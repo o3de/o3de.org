@@ -4,6 +4,8 @@ description: ' Use Landscape Canvas Gem to author dynamic vegetation Open 3D Eng
 title: 'Landscape Canvas Gem'
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

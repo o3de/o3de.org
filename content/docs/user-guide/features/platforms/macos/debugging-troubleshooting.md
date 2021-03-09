@@ -5,6 +5,8 @@ title: macOS Debugging and Troubleshooting
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

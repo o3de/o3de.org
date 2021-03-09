@@ -4,6 +4,8 @@ description: ' Learn how to apply the O3DE UI 2.0 styles for push buttons and
 title: O3DE UI button styles
 ---
 
+{{< preview-migrated >}}
+
 Use buttons to enable users to make selections that cause the UI to take action\. There are four types of button styles in O3DE:
 + Primary button
 + Secondary button

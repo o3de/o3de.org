@@ -4,6 +4,8 @@ title: Audio Components
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 Use the following audio components to add and configure sounds in your level:
 + [**Audio Area Environment**](/docs/user-guide/features/components/audio-area-environment.md) - Enables entities that are moving around and throughout a shape to have environment effects applied to any sounds that they trigger\. You must also add a shape component to use the audio area environment component\.
 + [**Audio Environment**](/docs/user-guide/features/components/audio-environment.md) - Provides access to features of the Audio Translation Layer \(ATL\) environments\. Environments are used to apply environmental effects such as reverb or echo\.

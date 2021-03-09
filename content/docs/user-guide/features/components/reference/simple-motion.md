@@ -4,6 +4,8 @@ description: ' Use the Simple Motion component to add motion effects to your act
 title: Simple Motion
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

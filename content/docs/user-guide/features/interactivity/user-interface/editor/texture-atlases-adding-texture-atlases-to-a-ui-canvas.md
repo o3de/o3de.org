@@ -3,6 +3,8 @@ description: null
 title: Adding Texture Atlases to a UI Canvas
 ---
 
+{{< preview-migrated >}}
+
 You can use the **UI Editor** to add texture atlases to a UI canvas\.
 
 **To add texture atlas references to a UI canvas**

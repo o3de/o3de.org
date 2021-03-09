@@ -4,6 +4,8 @@ title: Editor Components
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 Some components in O3DE have separate `editor` and `runtime` versions\. The editor version is active in the editor\. The runtime version is used for running the level in game or in the editor by pressing **Ctrl\+G** or clicking **AI/Physics** below the viewport\. O3DE uses editor components to maintain a clean separation between tools\-specific code and data on one hand, and leaner runtime component data on the other\. In general, runtime game components do not require editor counterparts\. Components rarely need to be fully active at edit time\. The light and mesh components are exceptions because they must behave the same at edit time as at run time\.
 
 `EditContext` reflection is fully supported in runtime components\. Edit time is the only time when editor components are active\. At run time, when O3DE processes a level or dynamic slice, it uses the runtime equivalents of editor components\. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience\.

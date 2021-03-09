@@ -4,6 +4,8 @@ description: ' Learn about the O3DE UI 2.0 style of sliders, including the slide
 title: O3DE UI sliders
 ---
 
+{{< preview-migrated >}}
+
 Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically\. The visual feedback shows users where the current value is within the range of valid values\.
 
  **Slider**

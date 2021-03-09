@@ -6,6 +6,8 @@ toc: true
 weight: 400
 ---  
 
+{{< preview-new >}}
+
 The **Atom Sample Viewer** showcases samples of some features and rendering techniques that Atom supports. Developers can use these samples as a base for further development. 
 
 To start the Atom Sample Viewer, run AtomSampleViewerStandalone.exe located in the folder `<build>/bin/profile`. 

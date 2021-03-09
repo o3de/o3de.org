@@ -4,6 +4,8 @@ description: ' Modify the export properties of your .fbx files with FBX Settings
 title: FBX Settings export properties
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

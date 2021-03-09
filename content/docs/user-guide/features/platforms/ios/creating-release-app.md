@@ -5,6 +5,8 @@ title: Creating a Release App
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 Once you have finished your O3DE iOS game, you can prepare it for the App Store by creating a release app and including the assets and shaders in `.pak` files\. You must do the following:
 
 1. [Prepare your code](#ios-preparing-your-code)\.

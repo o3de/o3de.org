@@ -4,6 +4,8 @@ title: Components and EBuses
 weight: 700
 ---
 
+{{< preview-migrated >}}
+
 EBuses are not required for components, nor are they directly bound to components in any way\. But because they form the backbone of communication among all O3DE components, EBuses offer many benefits\. We highly recommend that you learn how to use them in your game, systems, and components\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/features/engine/ebus/_index.md)\.
 
 Most components provide two EBuses to facilitate communication: a request bus and a notification bus\. Both these EBuses use the `EBusAddressPolicy::ById` address policy and the ID of the entity for identification\.

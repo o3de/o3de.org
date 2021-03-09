@@ -4,6 +4,8 @@ description: ' Use the PhysX Collider component to define where collision detect
 title: PhysX Collider
 ---
 
+{{< preview-migrated >}}
+
 Performance demands in games and real\-time applications require physics simulations to be solved in fractions of a second\. The PhysX Collider component allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities, ensuring fast physics simulation\. A simple entity such as a crate might have a single PhysX Collider component, while more complex entities, such as vehicles, might require multiple PhysX Collider components\.
 
 **Note**

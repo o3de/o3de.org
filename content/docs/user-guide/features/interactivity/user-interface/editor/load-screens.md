@@ -4,6 +4,8 @@ description: ' Create game and level loading screens with Open 3D Engine''s UI E
 title: Defining Game and Level Load Screens
 ---
 
+{{< preview-migrated >}}
+
 You can create a game or level loading screen with the **UI Editor**\. The game loading screen is displayed while the game loads\. The level loading screen is displayed while a level loads\. You can create and define a loading screen for each level\.
 
 Load screens were refactored in O3DE v1\.24 to support more than just UI canvases when using RAD Game Tools' Bink video files\. You can specify a path to either a UI canvas or a Bink video file\. Additionally, multi\-threaded load screens are supported for Bink videos, enabling a load screen to render hitch\-free while levels load\.

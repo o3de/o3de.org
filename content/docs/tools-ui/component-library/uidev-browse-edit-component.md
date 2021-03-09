@@ -4,6 +4,8 @@ description: ' Use the O3DE UI 2.0 browse edit component to enable users to
 title: O3DE UI browse edit component
 ---
 
+{{< preview-migrated >}}
+
 The **browse edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries\. Use the browse edit component to enable users to choose one or more values from a selection window\. Typical uses include selecting a file from a directory, or one or more items from a list \- for example: choosing motions from a collection of animation assets\. The selection window is opened using either a button along the right edge, or a double\-click in the input box\. Chosen values can be cleared using the clear button, if this button has been enabled\.
 
 **Note**

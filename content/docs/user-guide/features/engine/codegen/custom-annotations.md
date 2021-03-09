@@ -5,6 +5,8 @@ title: Custom Code Generator Annotations
 weight: 400
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. |

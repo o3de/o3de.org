@@ -4,6 +4,8 @@ description: ' Use the OccluderArea component to create a custom shaped occlusio
 title: OccluderArea
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

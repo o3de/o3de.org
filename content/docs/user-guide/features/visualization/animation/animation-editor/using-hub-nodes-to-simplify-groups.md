@@ -4,6 +4,8 @@ description: ' Use Hub nodes in Open 3D Engine''s Animation Editor to simplify t
 title: Simplify Node Groups with Hub Nodes
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

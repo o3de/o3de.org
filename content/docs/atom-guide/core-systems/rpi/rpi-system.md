@@ -6,6 +6,8 @@ toc: false
 weight: 200
 ---
 
+{{< preview-new >}}
+
 The Render Pipeline Interface (RPI) is the core system in Atom that drives rendering. The [RPI Architecture Diagram](./rpi.md#rpi-architecture) shows the RPI's role in the entire rendering system. This article explains how the RPI and its components perform rendering. 
 
 ## Components

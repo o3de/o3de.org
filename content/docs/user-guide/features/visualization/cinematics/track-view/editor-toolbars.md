@@ -4,6 +4,8 @@ description: ' Create sequences for animations using the <guilabel>Track View</g
 title: Track View Editor Toolbars
 ---
 
+{{< preview-migrated >}}
+
 See the following main sections of the Track View:
 
 1. **Main toolbar** - Tools to create and modify sequences and the tracks in a sequence\. The main toolbar includes the **Sequence/Node**, **View**, **Play**, **Keys**, and **Tracks** toolbars\. To add or remove toolbars, right\-click the main toolbar and select your preferred options\.

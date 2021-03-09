@@ -5,6 +5,8 @@ description: ' Take a tour of Script Canvas and begin learning the basics of how
 title: Learning Guide
 ---
 
+{{< preview-migrated >}}
+
 In this Learning Guide, we provide you with a tour of the Script Canvas interface, several tutorials to get you started using the visual scripting environment, and a guide to additional resources for learning Script Canvas\. Additionally, there's a glossary of terms you can continue referring back to as you learn your way around\.
 
 **Topics**

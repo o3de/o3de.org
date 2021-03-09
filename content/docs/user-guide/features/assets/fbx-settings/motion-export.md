@@ -3,6 +3,8 @@ description: ' Export motions from .fbx files with FBX Settings to Open 3D Engin
 title: FBX Settings motion export
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

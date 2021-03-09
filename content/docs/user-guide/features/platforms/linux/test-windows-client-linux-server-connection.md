@@ -6,6 +6,8 @@ title: Testing the Windows Client to Linux Server Connection
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |

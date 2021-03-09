@@ -4,6 +4,8 @@ description: ' Use the PhysX Characters gem to provide physics for your characte
 title: PhysX Characters
 ---
 
+{{< preview-migrated >}}
+
 The PhysX Characters gem provides physics for your characters in your game\. The gem integrates with the EMotion FX **Animation Editor** system\.
 
 ![\[PhysX Characters gem in O3DE.\]](/images/user-guide/gems/physx/gems-system-physx-characters.png)

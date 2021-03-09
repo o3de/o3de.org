@@ -5,6 +5,8 @@ title: O3DE UI component library
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 In the O3DE UI component library, you will find an explanation of each UI component \(i\.e\. widget\), along with guidelines for their usage\. Typically, each page contains the following information:
 + Use cases
 + Screenshots and explanations of component features

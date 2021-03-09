@@ -6,6 +6,8 @@ title: 'Key concepts: How Open 3D Engine works'
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 Open 3D Engine provides a complete, end\-to\-end environment for developing and delivering games and simulations, and supports a wide variety of platforms. Since it's such a large development environment with so many different features and tools, it can be intimidating to new users, especially for those who don't have a traditional developer background\. This topic covers the various parts of O3DE at a high level and the common ways you can work with it depending on your role or task as a new or experienced game developer or designer\.
 
 O3DE has several tools, editors, and systems that work together to help you assemble a game\. Central to this is the "O3DE game engine", which provides the following:

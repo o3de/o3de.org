@@ -5,6 +5,8 @@ date: 2021-03-05
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 Components add functionality to entities. An entity cam contain any number or combination of components. Some components only allow one instance per entity. Some components depend on other components to function.
 
 Components are provided by Gems. To make a component available in the O3DE editor, you must add the Gem that provides it, and configure and build your project. Though components might belong to the same type, they might not be provided by the same Gem. Each component lists the Gem that provides it on its reference page.
@@ -23,7 +25,7 @@ The components below are grouped by type as they appear in the O3DE editor.
 
 ## Shape ##
 
-For information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/intro.md).
+For information on using Shape components, see [Shape components](/docs/user-guide/features/components/reference/shape/_index.md).
 
 * [Box Shape](/docs/user-guide/features/components/reference/shape/box-shape.md) - Generates box geometry for volumes and triggers.
 * [Capsule Shape](/docs/user-guide/features/components/reference/shape/capsule-shape.md) - Generates capsule geometry for volumes and triggers.

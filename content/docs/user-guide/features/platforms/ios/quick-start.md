@@ -5,6 +5,8 @@ title: 'Quick Start: Running the Samples Project on iOS Devices'
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 You can use this quick start to learn how to run the [Samples Project](/docs/userguide/samples/projects/samples.md) on your iOS device from a macOS computer\.
 
 This topic assumes that you have:

@@ -4,6 +4,8 @@ description: ' Use the Open 3D Engine Asset Browser to quickly view and access y
 title: 'Asset Browser'
 ---
 
+{{< preview-migrated >}}
+
 The **Asset Browser** displays all project assets in a source folder and file view to enable quick access and interaction\. You can use the **Asset Browser** with other editor components to improve your development workflow, such as the viewport and the **Entity Inspector**\.
 
 The **Asset Browser** shows all files inside your watch folders that are specified in the `lumberyard_version\dev\AssetProcessorPlatformConfig.ini` file\. In the **Asset Browser**, usable files appear white\. Non\-usable files such as `.exe` or `.zip` appear gray\.

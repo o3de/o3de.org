@@ -5,6 +5,8 @@ title: Quick tour of tools available in Open 3D Engine
 weight: 300
 ---
 
+{{< preview-migrated >}}
+
 The default **O3DE Editor** layout contains tools common to most development workflows, but there are a lot of additional tools available\. Depending on your development role, these may not always be the tools you need \- or even the right tools for your job\. The **O3DE Editor** supports custom layout options so that you can add all of the tools you need to use most frequently right where you need them\. Some tools that have multiple panes, such as the **Animation Editor**, can have their own custom and preset layouts\.
 
 These tools are available in the **Tools** menu of the **O3DE Editor**\.

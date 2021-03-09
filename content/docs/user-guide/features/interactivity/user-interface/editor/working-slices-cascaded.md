@@ -3,6 +3,8 @@ description: ' Create a cascaded UI slice in Open 3D Engine''s UI Editor . '
 title: Creating a Cascaded UI Slice
 ---
 
+{{< preview-migrated >}}
+
 A cascaded slice is a slice that contains instances of other slices\. Cascaded slices can store their own overrides for component and entity properties and can also contain their own entities\.
 
 When you create a cascaded slice, the UI system maintains references to the slices that are child entities\. This means, for example, that you can instantiate an image slice as a parent and a text slice as a child\. You can then select them both and make a cascaded slice called `Button`\. If you then create instances of the `Button` slice, they all contain a reference to the image slice and the text slice\. If you then push a font change to the text slice, this affects all instances of the `Button` slice as well as any other instances of the text slice\.

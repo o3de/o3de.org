@@ -6,6 +6,8 @@ toc: true
 weight: 200
 ---
 
+{{< preview-new >}}
+
 The frame rendering process describes the step-by-step process that the Atom renderer takes to compute each frame. For visual aid, please refer to the RPI Overview Diagram below. 
 
 ![RPI Overview Diagram](/images/atom-guide/core-systems/rpi/atom-rpi-overview.svg)

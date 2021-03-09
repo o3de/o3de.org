@@ -3,6 +3,8 @@ description: null
 title: MotionEvent Public Member Functions
 ---
 
+{{< preview-migrated >}}
+
 The `MotionEvent` class includes the following public member functions\.
 
 **Topics**

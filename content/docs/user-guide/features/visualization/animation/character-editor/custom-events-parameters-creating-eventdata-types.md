@@ -4,6 +4,8 @@ description: ' Use EventData types to create custom parameters for motion events
 title: Creating EventData Types
 ---
 
+{{< preview-migrated >}}
+
 You can create `EventData` types in a separate gem or directly in a game project's code\. Each parameterized motion event can contain more than one `EventData` object\. This makes it possible for users to attach an arbitrary number of `EventData` objects to a single event\.
 
 The `EMotionFX::EventData` class describes a set of parameters and values that is sent when an event is dispatched\. The `EventData` class is the base class for all event data types\. For full source code, see the `lumberyard_version\dev\Gems\EMotionFX\Code\EMotionFX\Source\EventData.*` files\.

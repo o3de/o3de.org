@@ -5,6 +5,8 @@ title: Sharing Assets Between Windows and macOS
 weight: 500
 ---
 
+{{< preview-migrated >}}
+
 You can build your assets on a Windows computer and then use them in an iOS build\. To do so, you must set up sharing between your Windows and macOS computers\.
 
 **To set up your Windows computer for sharing assets**

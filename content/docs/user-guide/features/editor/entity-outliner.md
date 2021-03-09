@@ -3,6 +3,8 @@ description: ' Manage your entities with the Entity Outliner in Open 3D Engine. 
 title: 'Entity Outliner'
 ---
 
+{{< preview-migrated >}}
+
 The **Entity Outliner** shows all the entities and slices in the level\. You can view the parenting hierarchies, lock selections, show and hide entities in the viewport, and create search filters\.
 
 **To open the Entity Outliner**

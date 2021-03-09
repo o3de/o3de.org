@@ -4,6 +4,8 @@ description: ' Enable the Gestures gem for your game project to detect common ge
 title: Gestures Gem
 ---
 
+{{< preview-migrated >}}
+
 You can use the Gestures gem to recognize common gesture\-based input, which includes the following:
 + Tap or click - Single\-touch, discrete gesture
 + Drag or pan - Single\-touch, continuous gesture

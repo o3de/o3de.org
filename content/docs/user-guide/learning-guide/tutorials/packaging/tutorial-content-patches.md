@@ -4,6 +4,8 @@ description: ' Create asset bundles that can be distributed to patch and update 
 title: Create content patches with O3DE
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | This tutorial is out of date for the new Starter Game project that shipped as part of O3DE 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |

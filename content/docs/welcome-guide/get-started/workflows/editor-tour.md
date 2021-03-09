@@ -5,6 +5,8 @@ title: Introduction to the O3DE Editor
 weight: 100
 ---
 
+{{< preview-migrated >}}
+
 O3DE Editor is your primary workspace\. From here, you access all of the tools to design, create, test, play, and deploy your project\. If you have used other professional engines or 3D animation packages, you'll find the user experience familiar and adapt to O3DE Editor quickly\.
 
 O3DE Editor can be launched from the start menu or the O3DE Editor desktop icon\. When O3DE Editor launches, you're given the option to create a new level or load an existing level\. If you're using one of the example O3DE projects, you will find example levels in the **Levels** directory of the project\. If you're working with a new project, you must create a new level\.

@@ -5,6 +5,8 @@ date: 2021-03-04
 toc: true
 ---
 
+{{< preview-new >}}
+
 Material type files (`*.materialtype`) are in written JSON format and contain the following elements.
 
 ### **propertyLayout**  

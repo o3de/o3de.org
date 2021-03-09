@@ -4,6 +4,8 @@ description: ' You can add an action to a state or transition in an Open 3D Engi
 title: Actions
 ---
 
+{{< preview-migrated >}}
+
 You can use actions to trigger parameter value changes when an animation graph state or transition reaches a specified state\.
 
 You can set the **Parameter Action** on the following:

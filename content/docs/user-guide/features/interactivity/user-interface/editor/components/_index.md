@@ -4,6 +4,8 @@ description: ' Give a UI element additional properties by adding components in O
 title: UI Components
 ---
 
+{{< preview-migrated >}}
+
 UI components define the properties of a UI element\. For example, every element has a **Transform2D** component that defines its position, rotation, size, and scale\. You can give an element additional properties by adding components, such as adding the image component to give an element color or texture\. Each UI element can have one visual component \(image or text\), one interactive component \(button, check box, scroll box, slider, or text input\), and one layout component \(layout column, layout row, or layout grid\)\. You can attach any or all of the remaining components: dynamic components, tooltips, tooltips display, mask, and fader\.
 
 **Topics**

@@ -6,6 +6,8 @@ title: Automating boilerplate with AZ Code Generator
 weight: 200
 ---
 
+{{< preview-migrated >}}
+
 |  |
 | --- |
 | AZ Code Generator is in preview release and is subject to change\. |

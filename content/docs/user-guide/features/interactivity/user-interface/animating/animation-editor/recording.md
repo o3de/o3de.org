@@ -4,6 +4,8 @@ description: ' Use O3DE''s Animation Editor to record a new animation after you 
 title: Recording Animation Data
 ---
 
+{{< preview-migrated >}}
+
 Recording animation typically involves three steps:
 
 1. Create a new animation sequence\.

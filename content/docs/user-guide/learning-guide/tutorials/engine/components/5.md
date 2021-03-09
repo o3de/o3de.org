@@ -4,6 +4,8 @@ description: ' Update your component so that it knows how to handle selection in
 title: 'Step 5: Handle Selection in the Viewport'
 ---
 
+{{< preview-migrated >}}
+
 In the following procedure, make changes to your code so that you can enter Component Mode by double\-clicking the component in the viewport\.
 
  In Component Mode, you can modify the dimensions of the **Point Light** component directly in the viewport\.

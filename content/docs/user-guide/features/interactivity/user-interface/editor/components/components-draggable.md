@@ -4,6 +4,8 @@ description: ' Use the draggable component in the Open 3D Engine UI Editor to
 title: Draggable
 ---
 
+{{< preview-migrated >}}
+
 You can use the **Draggable** component to make a UI element movable from one location to another on screen\. Use the **Draggable** component in combination with the **DropTarget** component so that dragging can start on the draggable element and end on the drop target element\. Drag\-and\-drop is a common operation in UI screens, such as an inventory system\.
 
 Because drag\-and\-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C\+\+ to define actions that result from the drag and the drop\.

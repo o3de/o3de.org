@@ -4,6 +4,8 @@ description: ' Use sprite sheets to save collections of separate images for your
 title: Sprite Sheets
 ---
 
+{{< preview-migrated >}}
+
 You can configure an image as a sprite sheet\.
 
 A sprite sheet is a collection of separate images-such as icons, buttons, and other UI assets-that are stored in a single image\. Although you can keep all of your images in separate files, using a sprite sheet has several advantages:
