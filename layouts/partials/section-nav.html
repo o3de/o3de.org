@@ -29,8 +29,14 @@
           class="menu-body collapse" 
             aria-labelledby="{{ .CurrentSection.Params.menu_uuid }}" data-parent="#accordionExample">
             <div class="card-body">
+                <ul>
+                  <li>
+                  <a class="section-nav-link" href="{{ .Permalink }}"> 
+                    {{ if isset .Params .LinkTitle }} {{ .Page.LinkTitle | markdownify }} {{ else }} {{ .Page.Title | markdownify }} {{ end }}
+                  </a>
+                  </li>
+                </ul>
                 {{ partial "section-nav-recurse.html" . }}
-              </ul>
             </div>
           </div>
         </div>
