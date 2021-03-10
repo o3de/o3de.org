@@ -1,9 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Compound Shape component reference. '
 title: Compound Shape component
 linktitle: Compound
+description: ' Open 3D Engine (O3DE) Compound Shape component reference. '
 weight: 100
-date: 2021-03-10
 ---
 
 {{< preview-migrated >}}

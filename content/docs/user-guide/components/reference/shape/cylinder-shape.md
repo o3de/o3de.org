@@ -1,9 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Cylinder Shape component reference. '
 title: Cylinder Shape component
 linktitle: Cylinder
+description: ' Open 3D Engine (O3DE) Cylinder Shape component reference. '
 weight: 100
-date: 2021-03-10
 ---
 
 {{< preview-migrated >}}
