@@ -1,7 +1,9 @@
 ---
 description: ' Open 3D Engine (O3DE) Spline component reference. '
 title: Spline component
-date: 2021-03-05
+linktitle: Spline
+weight: 100
+date: 2021-03-10
 ---
 
 {{< preview-migrated >}}

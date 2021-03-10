@@ -1,7 +1,9 @@
 ---
 description: ' Open 3D Engine (O3DE) Sphere Shape component reference. '
 title: Sphere Shape component
-date: 2021-03-05
+linktitle: Sphere
+weight: 100
+date: 2021-03-10
 ---
 
 {{< preview-migrated >}}

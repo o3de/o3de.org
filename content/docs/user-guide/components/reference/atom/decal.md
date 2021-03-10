@@ -1,6 +1,8 @@
 ---
 description: ' Open 3D Engine (O3DE) Decal component reference. '
 title: Decal component
+linktitle: Decal
+weight: 100
 date: 2021-03-05
 ---
 
