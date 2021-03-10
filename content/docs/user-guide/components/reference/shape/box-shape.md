@@ -1,9 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Box Shape component reference. '
 title: Box Shape component
 linktitle: Box
+description: ' Open 3D Engine (O3DE) Box Shape component reference. '
 weight: 100
-date: 2021-03-10
 ---
 
 {{< preview-migrated >}}

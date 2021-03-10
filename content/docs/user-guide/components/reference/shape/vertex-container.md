@@ -1,9 +1,8 @@
 ---
-description: ' Use vertex containers in Open 3D Engine (O3DE) to access, update, and remove vertices. '
-title: Vertex Containers
+title: Vertex Container type
 linktitle: Vertex Container
+description: ' Use vertex containers in Open 3D Engine (O3DE) to access, update, and remove vertices. '
 weight: 500
-date: 2021-03-10
 ---
 
 {{< preview-migrated >}}

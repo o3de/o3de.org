@@ -1,9 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Tube Shape component reference. '
 title: Tube Shape component
 linktitle: Tube
+description: ' Open 3D Engine (O3DE) Tube Shape component reference. '
 weight: 100
-date: 2021-03-10
 ---
 
 {{< preview-migrated >}}

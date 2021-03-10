@@ -1,7 +1,7 @@
 ---
-description: ' Open 3D Engine (O3DE) component reference index. '
 title: Component reference
-date: 2021-03-05
+linktitle: Component reference
+description: ' Open 3D Engine (O3DE) component reference index. '
 weight: 100
 ---
 

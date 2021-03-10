@@ -1,9 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Capsule Shape component reference. '
 title: Capsule Shape component
 linktitle: Capsule
+description: ' Open 3D Engine (O3DE) Capsule Shape component reference. '
 weight: 100
-date: 2021-03-10
 ---
 
 {{< preview-migrated >}}
