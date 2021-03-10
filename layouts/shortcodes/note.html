@@ -1,0 +1,16 @@
+<<<<<<< HEAD
+<!-- This shortcode creates a note callout. Any provided text will be enclosed in the box. -->
+
+<div class="o3de note" style="border:2px solid #0071bc; border-radius: 6px; margin: 8px 0px; background-color: #f4f4fa;">
+    <p style="margin:8px 8px 8px 8px"><img src = "/img/icons/info-icon.svg" alt="icon note" style="display:inline; width:18pt; height:18pt; float:left; margin:0 8px 0 0"/>
+        <strong>Note:</strong> {{ trim .Inner " \n" | markdownify }}
+    </p>
+</div>
+=======
+<blockquote class="warning callout card border-info">
+  <div class="row no-gutters">
+    <div class="col-md-2 bg-info text-white p-2"><strong>Note: </strong></div> 
+    <div class="col p-2">  {{ trim .Inner " \n" | markdownify }}</div>
+    </div>
+</blockquote>
+>>>>>>> 8aeb4dcf (Add basic body styling)

@@ -1,0 +1,26 @@
+{{ $title := site.Title }}
+{{ $desc  := site.Params.description | markdownify }}
+<div class="scalable d-flex align-items-center">
+  <div class="jumbotron hero">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12 col-xl-7">
+          <h1 class="title">
+            {{ $title }}
+          </h1>
+
+          {{ with $desc }}
+          <p class="desc">
+            {{ . }}
+          </p>
+          {{ end }}
+
+          <p class="buttons">
+            <!-- <a href="#" class="my-3 mr-3 btn btn-lg text-white download-cta">Download</a> -->
+            <a href="/docs" class="my-3 mr-3 btn btn-lg text-white learnmore-cta">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

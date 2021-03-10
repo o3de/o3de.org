@@ -1,0 +1,46 @@
+{{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
+{{ $docsSections := where $allSections "Section" "docs" }} <!-- "getting-started" and "deployment" -->
+{{ $thisUrl      := .RelPermalink }}
+{{ $thisSection := .CurrentSection.RelPermalink }}
+<!-- thisUrl = {{- $thisUrl -}} -->
+
+{{ range $docsSections }}
+  <nav class="section-nav" id="section-nav">
+    {{ range .Site.Sections }}
+      <div class="accordion" id="accordionExample">
+        <div class="card border-left-0 border-right-0 rounded-0"> <!-- root -->
+          <div class="card-header">
+             <a id="docs-nav-title" href="{{ .Permalink }}"><h1>{{ .LinkTitle | markdownify }}</h1></a>
+          </div>
+        </div>
+        {{ range .Sections }}
+        <div class="card border-left-0 border-right-0 rounded-0">
+          <div class="card-header" id="{{ .CurrentSection.Params.menu_uuid }}">
+              <button class="btn btn-link btn-block text-left collapsed" 
+              type="button" data-toggle="collapse" 
+              data-target="#{{ .CurrentSection.Params.menu_uuid }}collapse" 
+              aria-expanded="true" aria-controls="{{ .CurrentSection.Params.menu_uuid }}collapse">
+                  {{ .LinkTitle | markdownify }}
+              </button>
+          </div>
+          <div id="{{ .CurrentSection.Params.menu_uuid }}collapse" 
+          class="menu-body collapse" 
+            aria-labelledby="{{ .CurrentSection.Params.menu_uuid }}" data-parent="#accordionExample">
+            <div class="card-body">
+                <ul>
+                  <li>
+                  <a class="section-nav-link" href="{{ .Permalink }}"> 
+                    {{ .Page.LinkTitle | markdownify }}
+                  </a>
+                  </li>
+                </ul>
+                {{ partial "section-nav-recurse.html" . }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </nav>
+{{ end }}
+</nav>

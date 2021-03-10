@@ -1,0 +1,29 @@
+{{ $home   := site.BaseURL }}
+{{ $here   := .RelPermalink }}
+{{ $title  := site.Title }}
+{{ $logo   := site.Params.logos.navbar }}
+{{ $menu   := site.Menus.main }}
+
+<div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ $home }}">
+        {{ if $logo }}
+        {{ $url := printf "img/logos/%s" $logo | relURL }}
+          <img src="{{ $url }}" class="navbar-logo">
+        {{ else }}
+        {{ $title }}
+        {{ end }}
+      </a>
+    </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="main-nav">
+        {{ partial "menu-loop.html" . }}
+
+      </div>  
+  </div> 
+</div>
