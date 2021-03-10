@@ -1,6 +1,6 @@
 ---
-linktitle: UI extensions guide
-title: Open 3D Engine UI Extensions Guide
+linktitle: O3DE Tools UI development guide
+title: Tools UI development guide for Open 3D Engine
 weight: 500
 menu_uuid: tools
 ---

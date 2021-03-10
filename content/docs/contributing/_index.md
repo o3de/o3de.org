@@ -1,12 +1,11 @@
 ---
-title: "Contributing to Open 3D Engine (O3DE)"
-toc: true
+linktitle: "O3DE Contributor's guide"
+title: Contributing to Open 3D Engine
+weight: 700
 menu_uuid: contributing
 ---
 
 {{< preview-new >}}
-
-## Contributing to Open 3D Engine (O3DE)
 
 Have you ever wanted to contribute to an open-source 3D development engine?
 

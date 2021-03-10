@@ -15,14 +15,14 @@ Open 3D Engine (O3DE) is a fully open-source, high-performance engine for game, 
 
 | Documentation | Details |
 |--------------------------------------|---------|
-| [O3DE Welcome Guide](welcome-guide) | New to O3DE? Get started with an overview of it, along with tutorials designed to help you get up and running. |
-| [O3DE Learning Guide](learning-guide) | Learn O3DE with the help of guided tutorials, samples, and recipes. |
-| [O3DE User Guide](user-guide) | Dive into the documentation for O3DE engine: Explore its features, understand how they work, and learn how to use them in your project. |
-| [Atom User Guide](atom-guide) | Learn about the Atom graphics rendering engine, its features, and how to use and extend them. |
-| [O3DE API Reference](api) | Browse the O3DE APIs and find the ones you need for your own code. |
-| [O3DE UI Development Guide](tools-ui) | Looking to build your own O3DE component? Read up on the UI style and implementation. |
-| [O3DE Documentation Contributor Guide](contributing/to-docs) | Want to contribute to the O3DE docs? Check this short guide out first. |
-| [O3DE Release Notes](release-notes) | Find out what's in a given version of O3DE. |
+| [O3DE Welcome guide](welcome-guide) | New to O3DE? Get started with an overview of it, along with tutorials designed to help you get up and running. |
+| [O3DE Learning guide](learning-guide) | Learn O3DE with the help of guided tutorials, samples, and recipes. |
+| [O3DE User guide](user-guide) | Dive into the documentation for O3DE engine: Explore its features, understand how they work, and learn how to use them in your project. |
+| [Atom user guide](atom-guide) | Learn about the Atom graphics rendering engine, its features, and how to use and extend them. |
+| [O3DE API references](api) | Browse the O3DE APIs and find the ones you need for your own code. |
+| [O3DE Tools UI development guide](tools-ui) | Looking to build your own O3DE component? Read up on the UI style and implementation. |
+| [O3DE Documentation contributor guide](contributing/to-docs) | Want to contribute to the O3DE docs? Check this short guide out first. |
+| [O3DE Release notes](release-notes) | Find out what's in a given version of O3DE. |
 
 Open 3D Engine is an open source project developed by a community of volunteers. If you don't understand something, or cannot find what you are looking for in the docs, help us make the documentation better by letting us know!
 

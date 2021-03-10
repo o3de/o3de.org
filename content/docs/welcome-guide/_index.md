@@ -1,13 +1,10 @@
 ---
-linktitle: Welcome guide
-title: Open 3D Engine Welcome Guide
+linktitle: O3DE Welcome guide
+title: Welcome guide for Open 3D Engine
 weight: 100
 menu_uuid: welcome
 ---
 
-{{< preview-migrated >}}
-
------
 ## Contents
 + [Welcome to Open 3D Engine](welcome.md)
 + [O3DE features](features-intro.md)
