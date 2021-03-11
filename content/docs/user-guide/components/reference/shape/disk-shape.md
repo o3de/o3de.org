@@ -1,7 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Disk Shape component reference. '
 title: Disk Shape component
-date: 2021-03-05
+linktitle: Disk
+description: ' Open 3D Engine (O3DE) Disk Shape component reference. '
+weight: 100
 ---
 
 {{< preview-migrated >}}

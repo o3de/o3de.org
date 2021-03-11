@@ -1,7 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Quad Shape component reference. '
 title: Quad Shape component
-date: 2021-03-05
+linktitle: Quad
+description: ' Open 3D Engine (O3DE) Quad Shape component reference. '
+weight: 100
 ---
 
 {{< preview-migrated >}}

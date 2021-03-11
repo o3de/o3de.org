@@ -1,7 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Area Light component reference. '
 title: Area Light component
-date: 2021-03-05
+linktitle: Area Light
+description: ' Open 3D Engine (O3DE) Area Light component reference. '
+weight: 100
 ---
 
 {{< preview-migrated >}}

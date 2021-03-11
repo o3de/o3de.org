@@ -1,7 +1,8 @@
 ---
-description: ' Open 3D Engine (O3DE) Polygon Prism Shape component reference. '
 title: Polygon Prism Shape component
-date: 2021-03-05
+linktitle: Polygon Prism
+description: ' Open 3D Engine (O3DE) Polygon Prism Shape component reference. '
+weight: 100
 ---
 
 {{< preview-migrated >}}

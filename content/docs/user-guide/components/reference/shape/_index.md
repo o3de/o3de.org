@@ -1,7 +1,7 @@
 ---
-description: ' Using shape components in Open 3D Engine (O3DE). '
 title: Shape components
-date: 2021-03-05
+linktitle: Shape
+description: ' Using shape components in Open 3D Engine (O3DE). '
 ---
 
 {{< preview-migrated >}}
