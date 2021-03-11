@@ -1,6 +1,6 @@
 ---
-linktitle: "O3DE Contributor's guide"
-title: Contributing to Open 3D Engine
+linktitle: O3DE Contributor guide
+title: Contributor guide for Open 3D Engine
 weight: 700
 menu_uuid: contributing
 ---
