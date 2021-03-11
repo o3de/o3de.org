@@ -1,8 +1,8 @@
 ---
-title: "Atom User Guide"
+linktitle: Atom user guide
+title: Atom user guide for Open 3D Engine
 description: Atom User Guide
 date: 2021-03-04
-toc: true
 weight: 400
 menu_uuid: atom
 ---
