@@ -16,7 +16,7 @@ repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
 
 [params.logos]
-navbar = "o3de-color.png"
+navbar = "O3DE-Logo-REV-Mono.svg"
 
 [[params.social]]
 name = "Twitter"
