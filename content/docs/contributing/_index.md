@@ -10,7 +10,7 @@ menu_uuid: contributing
 
 {{< preview-new >}}
 
-Everything about Open 3D Engine, from its tools and features, to its tutorials and documentation, is driven by contributors like you! O3DE welcomes feedback, suggestions, and improvements from all, no matter their level of experience.
+Everything about Open 3D Engine - its tools, features, and documentation - is driven by contributors like you! O3DE welcomes feedback, suggestions, and improvements from all, no matter their level of experience.
 
 The two main avenues for contributors are submissions to the engine source code, and submissions to the documentation. This guide serves to familiarize you with the O3DE project, and provide the core information you need to get started as a contributor, whether you want to share a tutorial, extend the engine, suggest a feature or improvement, or join an O3DE SIG (Special Interest Group). Your participation is critical; Large or small, your contributions chart the course of O3DE.
 
