@@ -1,7 +1,9 @@
 ---
 linktitle: O3DE contributor guide
 title: Welcome, O3DE Contributor!
-description: " Learn how to contribute source code, documentation, and make requests for improvements from other Open 3D Engine contributors. "
+description: >-
+  Learn how to contribute source code, documentation, and make requests for improvements from
+  other Open 3D Engine contributors.
 weight: 700
 menu_uuid: contributing
 ---
