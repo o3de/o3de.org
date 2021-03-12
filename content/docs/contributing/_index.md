@@ -43,4 +43,4 @@ The two main avenues for contributors are submissions to the engine source code,
 
 [**Community values**](./community-values.md) - Learn what the O3DE community values in its members and contributors. <!-- Uncertain what this topic will contain -->
 
-[**Communication**](./communication.md) - They are many communication channels for 03DE community members. Here you'll find information about the forums, blogs, mail lists, and Discord servers O3DE community members use to share ideas with one another.
+[**Communication**](./communication.md) - They are many communication channels for O3DE community members. Here you'll find information about the forums, blogs, mail lists, and Discord servers O3DE community members use to share ideas with one another.
