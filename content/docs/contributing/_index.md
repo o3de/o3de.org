@@ -14,7 +14,7 @@ Everything about Open 3D Engine - its tools, features, and documentation - is dr
 
 The two main avenues for contributors are submissions to the engine source code, and submissions to the documentation. This guide serves to familiarize you with the O3DE project, and provide the core information you need to get started as a contributor, whether you want to share a tutorial, extend the engine, suggest a feature or improvement, or join an O3DE SIG (Special Interest Group). Your participation is critical; Large or small, your contributions chart the course of O3DE.
 
-### Contribution topics ###
+### How you can contribute ###
 
 [**Contributing to O3DE source code**](./to-code/_index.md) - O3DE's primary language is **C++**. However, aspects of O3DE support **Python**, **JSON**, and **Lua**. O3DE also provides tools for many third-party applications. There are opportunities for you to contribute to O3DE source code, even if you aren't an experienced C++ game developer. Topics in this section include: <!-- The topics below are place-holders. The final list should map to engine source contribution topics provided by engineers. -->
 
