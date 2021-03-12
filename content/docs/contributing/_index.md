@@ -33,7 +33,7 @@ The two main avenues for contributors are submissions to the engine source code,
 * [Understanding the O3DE documentation repository.](./_index.md)
 * [Documentation style and standards.](./_index.md)
 * [Creating a fork/branch.](./_index.md)
-* [Documentation submissions.](./_index.md)
+* [How to submit documentation pull requests](./_index.md)
 * [Documentation reviews.](./_index.md)
 * [Documentation & Community SIG.](./_index.md)
 
