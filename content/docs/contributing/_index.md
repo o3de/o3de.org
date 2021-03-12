@@ -35,7 +35,7 @@ The two main avenues for contributors are submissions to the engine source code,
 * [Creating a fork/branch.](./_index.md)
 * [How to submit documentation pull requests](./_index.md)
 * [Documentation reviews.](./_index.md)
-* [Documentation & Community SIG.](./_index.md)
+* [Learn about or join the O3DE Documentation & Community SIG.](./_index.md)
 
 [**Code of conduct**](./code-of-conduct.md) - O3DE is an open and inclusive project with community members, contributors, and maintainers around the world. To preserve a welcoming environment for all, we have provided, and pledge to abide by, this code of conduct.
 
