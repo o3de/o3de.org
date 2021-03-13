@@ -2,7 +2,6 @@
 linktitle: Atom Renderer
 title: "Atom Renderer"
 description: "Learn about the Atom graphics rendering engine, its features, and how to use and extend them."
-date: 2021-03-04
 weight: 400
 menu_uuid: atom
 guide_img: "/images/atom-guide/guide_img.png"
@@ -10,12 +9,15 @@ guide_img: "/images/atom-guide/guide_img.png"
 
 {{< preview-new >}}
 
-+ [What is Atom?](what-is-atom.md)
-+ [Setup and Installation](setup/installing-atom.md)
-+ [Getting Started](get-started/_index.md)
-+ [Atom Sample Viewer](atom-sample-viewer/_index.md)
-+ [Tutorials and Samples](tutorials/_index.md)
-+ [Materials]()
-+ [Textures]()
-+ [Features]()
-+ [Developer Guide](core-systems/_index.md)
+Welcome to the Atom Documentation! The Atom renderer is the graphics engine powering the Open 3D Engine (O3DE). 
+
+Here is an overview of the Atom Documentation:
++ **[What is Atom?](what-is-atom.md)**: An introduction and high-level overview of Atom. 
++ **[Setup and Installation](setup/installing-atom.md)**: Atom is already built into O3DE, but you can read about how to set up Atom as a standalone or across other platforms. <!-- Not sure if this section is even needed since it seems like Atom is in the same bundle as O3DE and follows the O3DE setup. -->
++ **[Getting Started with Atom](get-started/_index.md)**: Explore how to create simple materials and shaders in Atom, or set up a 3D environment with Atom's rendering features in O3DE.
++ **[Atom Sample Viewer](atom-sample-viewer/_index.md)**: Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering. 
++ **[Tutorials and samples](tutorials/_index.md)**: Interact with a collection of tutorials and samples about rendering with Atom.
++ **[Materials]()**: Learn about materials and material types that Atom provides.
++ **[Textures]()**: Learn about textures and streaming image assets in Atom. <!-- Not certain what specific topics this will contain - it will need to be updated with a better description. -->
++ **[Features]()**: Learn about features that Atom provides. 
++ **[Developer Guide](core-systems/_index.md)**: Dive into Atom’s rendering pipeline and learn about its core systems and how they work together.
