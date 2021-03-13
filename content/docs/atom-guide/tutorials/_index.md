@@ -1,5 +1,5 @@
 ---
-title: "Tutorials"
+title: "Tutorials and Examples"
 description: "This section contains tutorials such as creating materials and shaders, or developing features in Atom."
 date: 2021-03-04
 toc: true

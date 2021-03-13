@@ -1,9 +1,9 @@
 ---
-title: "Frame Rendering Process"
+title: "Frame Rendering"
 description: "The frame rendering process describes the step-by-step process that the Atom renderer takes to compute each frame."
 date: 2020-01-07
 toc: true
-weight: 200
+weight: 100
 ---
 
 {{< preview-new >}}

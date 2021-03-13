@@ -1,8 +1,14 @@
-# Atom Core Systems
+---
+title: "Programmer Guide"
+description: "Learn about the inner workings of the Atom render engine"
+toc: true
+weight: 1000
+---  
 
 {{< preview-new >}}
 
 ## Contents
+- [Frame Rendering](frame-rendering.md)
 - [Atom architecture](atom-architecture/_index.md)
 - [Materials](materials/_index.md)
 - [Shaders](shaders/_index.md)
