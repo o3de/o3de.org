@@ -8,6 +8,8 @@ weight: 500
 
 {{< preview-new >}}
 
+This is a collection of tutorials on working with Atom. 
+
 ## Materials
 The following tutorials cover topics for working with materials. 
 - [**Create a StandardPBR material**](create-standardpbr-material.md): This tutorial walks you through creating your first StandardPBR material using the Material Editor.
