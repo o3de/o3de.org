@@ -1,6 +1,6 @@
 ---
 title: "Frame Rendering"
-description: "The frame rendering process describes the step-by-step process that the Atom renderer takes to compute each frame."
+description: The frame rendering process describes how a scene is processed from Render Components, through Render Passes in the RPI, and to the RHI.
 date: 2020-01-07
 toc: true
 weight: 100
@@ -8,9 +8,9 @@ weight: 100
 
 {{< preview-new >}}
 
-The frame rendering process describes the step-by-step process that the Atom renderer takes to compute each frame. For visual aid, please refer to the RPI Overview Diagram below. 
+The frame rendering process describes how a scene is processed from Render Components, through Render Passes in the [Render Pipeline Interface (RPI)](rpi/_index.md), and to the [Render Hardware Interface (RHI)](rhi/_index.md). For visual aid, please refer to the RPI Overview Diagram below. 
 
-![RPI Overview Diagram](/images/atom-guide/core-systems/rpi/atom-rpi-overview.svg)
+![RPI Overview Diagram](/images/atom-guide/core-systems/rpi/rpi-frame-rendering.svg)
 
 ## Render Component &rarr; Feature Processor
 

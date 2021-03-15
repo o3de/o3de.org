@@ -1,6 +1,6 @@
 ---
 title: "Programmer Guide"
-description: "Learn about the inner workings of the Atom render engine"
+description: "Learn about the systems and interfaces behind the Atom renderer"
 toc: true
 weight: 1000
 ---  
@@ -9,7 +9,6 @@ weight: 1000
 
 ## Contents
 - [Frame Rendering](frame-rendering.md)
-- [Atom architecture](atom-architecture/_index.md)
 - [Materials](materials/_index.md)
 - [Shaders](shaders/_index.md)
 - [Render Pipeline Interface (RPI)](rpi/_index.md)
