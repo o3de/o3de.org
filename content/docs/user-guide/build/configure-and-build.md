@@ -32,10 +32,10 @@ In order to follow these build instructions, you'll need the following.
 * A toolchain for your _host_ platform, to build the editor and tools.
 * A toolchain for your _target_ platform, to build your project. In most cases this will be the same as your host platform.
 
-{{< caution >}}
+{{< important >}}
 While O3DE is in private preview, the CMake build tools require additional information to get 3rd party packages required for build and configure.
 Please contact us directly for the details.
-{{< /caution >}}
+{{< /important >}}
 
 ## Generating build files
 
@@ -70,10 +70,10 @@ When building using the CMake CLI, you'll need to have a build output directory 
     * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
     * `LY_PROJECTS` : A `;`-separated list of projects to enable as build targets in the generated configuration files. This also creates a dependency tree for these projects.
 
-{{< warning >}}
+{{< important >}}
 You can create your build output directory anywhere, but in order to run your O3DE project, the build output *must* be a subdirectory of your O3DE install. This is so that
 the engine can load assets located in relative paths.
-{{< /warning >}}
+{{< /important >}}
 
 ### Configure with the CMake GUI
 
