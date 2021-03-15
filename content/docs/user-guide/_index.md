@@ -1,11 +1,11 @@
 ---
 linktitle: O3DE User guide
 title: User guide for Open 3D Engine
-description: ' Open 3D Engine is a free, cross-platform, cloud-connected game engine that
-  you can use to build games. '
+description: ' Dive into the documentation for O3DE engine: Explore its features, understand how they work, and learn how to use them in your project. '
 weight: 300
 toc: true
 menu_uuid: user
+guide_img: "/images/user-guide/guide_img.png"
 ---
 
 {{< preview-migrated >}}
