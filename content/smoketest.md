@@ -153,9 +153,9 @@ echo 'Tab lists may contain code blocks!'
 
 Nested header tags may also be included.
 
-{{< warning >}}
+{{< caution >}}
 Headers within tab lists will not appear in the Table of Contents.
-{{< /warning >}}
+{{< /caution >}}
 
 {{% /tab %}}
 {{< /tabs >}}
@@ -321,12 +321,13 @@ You can have multiple paragraphs and block-level elements inside an admonition.
 The reader should proceed with caution.
 {{< /caution >}}
 
+{{< important >}}
+Important information the reader must heed.
+{{< /important >}}
 
-{{< warning >}}
-Warnings point out something that could cause harm if ignored.
-{{< /warning >}}
+{{< preview-new >}}
 
-
+{{< preview-migrated >}}
 
 ## Includes
 

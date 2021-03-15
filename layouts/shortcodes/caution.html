@@ -1,7 +1,8 @@
-<!-- This shortcode creates a caution callout. Any provided text will be enclosed in the box. -->
+<!-- This shortcode creates a warning callout. Any provided text will be enclosed in the box. -->
 
-<div class="o3de caution" style="border:2px solid #dc642d; border-radius: 6px; margin: 8px 0px; background-color: #faf2ef;">
-  <p style="margin:8px 8px 8px 8px"><img src = "/img/icons/caution-icon.svg" alt="icon warning" style="display:inline; width:18pt; height:18pt; float:left; margin:0 8px 0 0"/>
-      <strong>Caution:</strong> {{ trim .Inner " \n" | markdownify }}
-  </p>
-</div>
+<blockquote class="warning callout card border-warning">
+  <div class="row no-gutters">
+    <div class="col-md-2 bg-warning text-white p-2"><strong>Caution: </strong></div> 
+    <div class="col p-2">  {{ trim .Inner " \n" | markdownify }}</div>
+    </div>
+</blockquote>
