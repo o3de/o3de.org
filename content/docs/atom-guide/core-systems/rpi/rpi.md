@@ -1,6 +1,6 @@
 ---
 title: "Render Pipeline Interface"
-description: "Render Pipeline Interface in the Atom Rendering Engine"
+description: "Render Pipeline Interface in the Atom Renderer"
 date: 2021-03-04
 toc: false
 weight: 100

@@ -1,6 +1,6 @@
 ---
 title: "Working with the Scene and Render Pipeline"
-description: "Working with the Scene and Render Pipeline in the Atom Rendering Engine"
+description: "Working with the Scene and Render Pipeline in the Atom Renderer"
 date: 2021-03-04
 toc: false
 weight: 300
