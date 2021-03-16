@@ -2,7 +2,8 @@
 title: "PassTemplate File Specification"
 description: "Pass Template File Specification in Atom"
 date: 2021-03-09
-toc: false
+toc: true
+weight: 1100
 ---
 
 {{< preview-new >}}
