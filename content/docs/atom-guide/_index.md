@@ -1,5 +1,6 @@
 ---
-title: "Atom Documentation"
+linktitle: Atom Renderer
+title: "Atom Renderer"
 description: Documentation for Atom Renderer
 date: 2021-03-04
 weight: 400
