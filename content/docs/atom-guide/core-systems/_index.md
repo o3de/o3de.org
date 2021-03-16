@@ -1,9 +1,14 @@
-# Atom Core Systems
+---
+title: "Programmer Guide"
+description: "Learn about the systems and interfaces behind the Atom renderer"
+toc: true
+weight: 1000
+---  
 
 {{< preview-new >}}
 
 ## Contents
-- [Atom architecture](atom-architecture/_index.md)
+- [Frame Rendering](frame-rendering.md)
 - [Materials](materials/_index.md)
 - [Shaders](shaders/_index.md)
 - [Render Pipeline Interface (RPI)](rpi/_index.md)

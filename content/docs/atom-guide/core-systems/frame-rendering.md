@@ -1,20 +1,20 @@
 ---
-title: "Frame Rendering Process"
-description: "The frame rendering process describes the step-by-step process that the Atom renderer takes to compute each frame."
+title: "Frame Rendering"
+description: The frame rendering process describes how a scene is processed from Render Components, through Render Passes in the RPI, and to the RHI.
 date: 2020-01-07
 toc: true
-weight: 200
+weight: 100
 ---
 
 {{< preview-new >}}
 
-The frame rendering process describes the step-by-step process that the Atom renderer takes to compute each frame. For visual aid, please refer to the RPI Overview Diagram below. 
+The frame rendering process describes how a scene is processed from Render Components, through Render Passes in the [Render Pipeline Interface (RPI)](rpi/_index.md), and to the [Render Hardware Interface (RHI)](rhi/_index.md). For visual aid, please refer to the RPI Overview Diagram below. 
 
-![RPI Overview Diagram](/images/atom-guide/core-systems/rpi/atom-rpi-overview.svg)
+![RPI Overview Diagram](/images/atom-guide/core-systems/rpi/rpi-frame-rendering.svg)
 
 ## Render Component &rarr; Feature Processor
 
-As a renderer, Atom receives and processes data from its associated simulation and determines how to render the data. A simulation refers to the engine that Atom is rendering items for (such as Atom Sample Viewer and Open 3D Engine). At the start of each render, the simulation sends data to Atom. **Render Components** and **Feature Processors** handle this data flow. Render Components live in the simulation and are responsible for sending data to their corresponding Feature Processor. Feature Processors live in the renderer and are responsible for storing any data that's needed by the renderer to draw the Render Component. Feature Processors can store data in any way they see fit (such as arrays of structures, structure of arrays, one-to-one, one-to-many, and so on) *For example, the mesh Feature Processor stores the transform matrix of the mesh entity.*
+The Atom Renderer receives and processes data from its associated simulation and determines how to render the data. A simulation refers to the engine that Atom is rendering items for (such as Atom Sample Viewer and Open 3D Engine). At the start of each render, the simulation sends data to Atom. **Render Components** and **Feature Processors** handle this data flow. Render Components live in the simulation and are responsible for sending data to their corresponding Feature Processor. Feature Processors live in the renderer and are responsible for storing any data that's needed by the renderer to draw the Render Component. Feature Processors can store data in any way they see fit (such as arrays of structures, structure of arrays, one-to-one, one-to-many, and so on) *For example, the mesh Feature Processor stores the transform matrix of the mesh entity.*
 
 When a Render Component is first created, it registers its Feature Processor and receives a unique, identifying index (usually represented by an array). This index allows the Feature Processor to recognize the Render Component in subsequent renders. At every render, the Render Component sends its updated data to the Feature Processor.  
 

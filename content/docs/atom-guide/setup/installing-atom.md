@@ -1,6 +1,6 @@
 ---
 title: "Setting Up Atom"
-description: "Setting up Atom Rendering Engine"
+description: "Setting up Atom Renderer"
 date: 2021-03-4
 toc: true
 weight: 200

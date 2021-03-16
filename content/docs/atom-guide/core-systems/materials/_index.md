@@ -1,6 +1,6 @@
 ---
 title: "Material System"
-description: "Material System in the Atom Rendering Engine"
+description: "Material System in the Atom Renderer"
 date: 2021-03-04
 toc: true
 weight: 200

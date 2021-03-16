@@ -1,0 +1,5 @@
+---
+title: Material Editor
+---
+
+{{< placeholder >}}

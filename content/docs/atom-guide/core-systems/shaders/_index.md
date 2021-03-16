@@ -1,6 +1,6 @@
 ---
 title: "Shaders"
-description: "Shaders in the Atom Rendering Engine"
+description: "Shaders in the Atom Renderer"
 date: 2021-03-04
 toc: true
 weight: 300
