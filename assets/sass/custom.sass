@@ -220,17 +220,19 @@ $width: '59vw';
 // layouts/docs/single.html, layouts/docs/section.html 
 
 .docs-sidebar 
-  position: sticky
-  top: 4rem
-  z-index: 1000
-  height: calc(100vh - 4rem)
-  border-right: 1px solid $o3de-lightgray
-  flex: 0 1 320px
-  order: 0
-  box-sizing: border-box
-  display: block
-  flex-wrap: wrap
+  height: 30vh 
   overflow: auto
+  @include media-breakpoint-up(xl)
+    position: sticky
+    top: 4rem
+    z-index: 1000
+    height: calc(100vh - 4rem)
+    border-right: 1px solid $o3de-lightgray
+    flex: 0 1 320px
+    order: 0
+    box-sizing: border-box
+    flex-wrap: wrap
+    overflow: auto
 
 // layouts/section-nav.html 
 
