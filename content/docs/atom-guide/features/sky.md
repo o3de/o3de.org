@@ -1,7 +1,7 @@
 ---
 title: "Sky"
 ---
-*This page is placeholder for possible topics in the Features section.*
+{{< placeholder >}}
 
 Everything related to sky rendering can fall under a single sky feature processor.
 
