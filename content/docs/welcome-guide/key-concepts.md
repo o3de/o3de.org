@@ -53,10 +53,6 @@ The default O3DE installation is to `{drive-letter}:\Amazon\O3DE{lumberyard-vers
   +  `\Tools\Redistributables`: Contains common packages and files that you can ship with your game, including DirectX and Visual Studio DLLs\.
   +  `\Tools\RemoteConsole`: Contains the O3DE remote console application\.
 
-O3DE also provides two command\-line tools, `Lmbr.exe` and `Lmbr_waf.exe`, which you use to manage your game project overall and configure the details of your game project during development\.
-+  `Lmbr.exe`\-\-Provides a set of commands for managing and tracking Gems, capabilities, and 3rd party tools and packages\.
-+  `Lmbe_waf.exe`\-\-Provides a set of commands for automating the building and packaging of game projects with [the Waf build automation framework](https://waf.io/book/)\.
-
 All of these parts-​plus some not listed here-​define O3DE, and can be used to construct your game\. As you incorporate O3DE systems and develop your own, you will want to communicate across them\. For that, we have EBus\.
 
 ## Working with Gems<a name="how-ly-works-extending"></a>

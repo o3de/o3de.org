@@ -18,32 +18,6 @@ The White Box Gem provides two tools implemented as components; the **White Box*
 
 In O3DE, you create entities with the White Box component, using its edit functionality to rapidly sketch 3D assets to serve as building blocks for a level\. Because you create white box meshes in O3DE Editor with the component entity system, the entities can also contain functionality from other components such as scripts\. You can use a rapid build and test iteration cycle to create refined and functional entities before committing to developing production\-ready art assets\. The resulting white box geometry and entities are used as templates for production assets\. This development process is fast, highly iterative, and cost\-effective\.
 
-
-
-## Enable the White Box Gem {#enable-gem-white-box}
-
-To make the **White Box** and **White Box Collision** components available in O3DE, you must build and configure your project with the White Box Gem enabled\.
-
-**To enable the White Box Gem**
-
-1. Use Project Configurator to add the **White Box Gem** to your project\.
-**Note**
-The White Box Gem has no dependencies\. However, if you intend to use the **White Box Collision** component, you should also enable the PhysX Gem\.
-
-1. Configure your project\. Use the following command\.
-
-   ```
-   lmbr_waf configure
-   ```
-
-1. Build your project\. Use the following command\.
-
-   ```
-   lmbr_waf build_win_x64_vs2019_profile -p all --progress
-   ```
-
-For more information on Gems, see the [Gems documentation](/docs/user-guide/gems/_index.md)\.
-
 ## White Box component information {#white-box-component-topics}
 
 For information on the **White Box** component, see [White Box component](/docs/user-guide/components/white-box.md)\.

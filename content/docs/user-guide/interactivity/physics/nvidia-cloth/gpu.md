@@ -15,10 +15,10 @@ weight: 600
 For more information about NVIDIA CUDA, visit the [ NVIDIA CUDA](https://developer.nvidia.com/cuda-zone) portal\.
 
 **Contents**
-+ [GPU cloth simulation requirements](#lumberyard-cuda-requirements)
-+ [Installing NVIDIA CUDA Toolkit with Setup Assistant](#lumberyard-cuda-setup)
-+ [Enable NVIDIA CUDA for cloth simulation](#lumberyard-cuda-enable)
-+ [Releasing your project with NVIDIA CUDA](#lumberyard-cuda-release)
+- [GPU cloth simulation requirements](#gpu-cloth-simulation-requirements-lumberyard-cuda-requirements)
+- [Installing NVIDIA CUDA Toolkit with Setup Assistant](#installing-nvidia-cuda-toolkit-with-setup-assistant-lumberyard-cuda-setup)
+- [Enable NVIDIA CUDA for cloth simulation](#enable-nvidia-cuda-for-cloth-simulation-lumberyard-cuda-enable)
+- [Releasing your project with NVIDIA CUDA](#releasing-your-project-with-nvidia-cuda-lumberyard-cuda-release)
 
 ## GPU cloth simulation requirements {#lumberyard-cuda-requirements}
 + Microsoft Windows 10
@@ -54,22 +54,20 @@ To use NVIDIA CUDA for cloth simulation on the GPU, you must configure and rebui
 
 1. Use Project Configurator to add the **NVIDIA Cloth Gem** to your project\.
 
-1. Configure your project\. Use the following command\.
-**Note**
-Open a new command prompt and navigate to `lumberyard_version\dev\` to run the commands below\. Do not use an existing command prompt\.
+1. Configure your project:
 
    ```
-   lmbr_waf configure
+   cmake -B <CMake build dir> -S . -G "Visual Studio 16 2019" 
    ```
 
 1. Check in the output that it has detected NVIDIA CUDA\.
 
     ` [INFO] Detected NVIDIA CUDA SDK at: C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1 `
 
-1. Build your project\. Use the following command\.
+1. Build your project:
 
    ```
-   lmbr_waf build_win_x64_vs2019_profile -p all --progress
+   cmake --build <CMake build dir> --config profile --target <Project name> -- /m
    ```
 
 1. Add the following line to the `system_windows_pc.cfg` file located in `lumberyard_version\dev\`\.
