@@ -19,8 +19,8 @@ The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require
 For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/intro.md)\.
 
 **Contents**
-+ [Functionality provided by the NVIDIA Blast gem](#nvidia-blast-functionality)
-+ [Enable the NVIDIA Blast gem](#enable-gem-nvidia-blast)
+- [Functionality provided by the NVIDIA Blast gem {#nvidia-blast-functionality}](#functionality-provided-by-the-nvidia-blast-gem-nvidia-blast-functionality)
+- [Enable the NVIDIA Blast gem {#enable-gem-nvidia-blast}](#enable-the-nvidia-blast-gem-enable-gem-nvidia-blast)
 
 ## Functionality provided by the NVIDIA Blast gem {#nvidia-blast-functionality}
 
@@ -44,16 +44,18 @@ To enable the NVIDIA Blast gem, do the following:
 **Important**
 Though not required, we highly recommend that you enable the [Python Asset Builder gem](/docs/user-guide/assets/builder/_index.md) with the **NVIDIA Blast** gem\. The **NVIDIA Blast** gem includes a Python asset builder script that automatically processes mesh assets for NVIDIA Blast and creates a blast slice asset\.
 
-1. Configure your project\. Use the following command\.
+1. Configure the build:
 
    ```
-   lmbr_waf configure
+   cmake -B <CMake build dir> -S . -G "Visual Studio 16 2019" 
+   ```
+   
    ```
 
-1. Build your project\. Use the following command\.
+1. Build your project:
 
    ```
-   lmbr_waf build_win_x64_vs2019_profile -p all --progress
+   cmake --build <CMake build dir> --config profile --target <Project name> -- /m
    ```
 
 For more information on gems, see the ADD LINK TO GEMS ROOT PAGE Gems documentation\.

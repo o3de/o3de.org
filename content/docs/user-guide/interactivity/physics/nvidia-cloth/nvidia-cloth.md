@@ -34,16 +34,18 @@ By default, NVIDIA Cloth simulation is performed on the CPU\. To enable GPU acce
    + **LmbrCentral**
    + **Emotion FX Animation**
 
-1. Configure your project\. Use the following command\.
+1. Configure the build:
 
    ```
-   lmbr_waf configure
+   cmake -B <CMake build dir> -S . -G "Visual Studio 16 2019" 
+   ```
+   
    ```
 
-1. Build your project\. Use the following command\.
+1. Build your project:
 
    ```
-   lmbr_waf build_win_x64_vs2019_profile -p all --progress
+   cmake --build <CMake build dir> --config profile --target <Project name> -- /m
    ```
 
 For more information on gems, see the [Gems system documentation](/docs/user-guide/gems/_index.md)\.
