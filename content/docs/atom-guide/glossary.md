@@ -2,34 +2,34 @@
 title: "Glossary"
 description: "A collection of terms used in the Atom renderer, their definition, and what system they belong to."
 toc: true
-weight: 120
+weight: 1000
 ---
 
 This is a collection of terms used in the Atom renderer, their definition, and the system they belong to. 
 
 
 Attachment  
-: An attachment is a buffer or image instance associated with a unique name ID. It can be attached to a Scope with a specific state. These states include color, depth stencil, shader read/write, copy read/write, Resolve, Predication, IndirectDraw, SubpassInput, and InputAssembly. The state of an attachment is fixed for the duration of the Scope, but an attachment can contain multiple usages. There are two types of attachments: persistent and transient.
+: An attachment is a buffer or image instance associated with a unique ID. Attachments are used by the Rendering Hardware Interface (RHI) and Frame Scheduler for state management inside of a Scope.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
 AZSL (Amazon Shading Language)  
-: The Atom renderer uses a custom shading language called AZSL, that is very similar to HLSL with some specialized features. The most significant special features are Shader Resource Groups (SRG) and shader options.
+: The Atom renderer uses a custom shading language called AZSL. It is an extension of HLSL (Shader model 6)  with some specialized features. The most significant special features are Shader Resource Groups (SRG) and shader options.
 
-*Related to: [Shader System](core-systems/shaders/_index.md), [AZSL Reference](core-systems/shaders/azsl-reference/_index.md)*
+*Related to: [Shader System](core-systems/shaders/_index.md), [Shader Compiler](core-systems/shaders/shader-compiler.md), [AZSL Reference](core-systems/shaders/azsl-reference/_index.md)*
 
 AZSLc (AZSL Compiler)  
-: The AZSLc is the compiler application for AZSL shaders. The application itself translates AZSL shader files into HLSL code; then other standard compilers (like DXC and SPRIV-Cross) compile the HLSL code into native shader bytecode for the target platforms.
+: The AZSLc is the compiler application for AZSL shaders. The compiler translates AZSL shader files into HLSL code, then other standard compilers (like DXC and SPRIV-Cross) compile the HLSL code into native shader bytecode for the target platforms.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Compilers](core-systems/shaders/shader-compiler.md)*
 
 CommandList     
-: A CommandList in the RHI provides an interface to bind Shader Resource Groups, scissor or viewport states, build top or bottom level acceleration structures, begin or end predications and submit draw, dispatch, or copy items. Each backend implements this interface according to its driver API. 
+: A CommandList in the RHI provides an interface to bind Shader Resource Groups, scissor or viewport states, build top or bottom level acceleration structures, begin or end predications and submit draw, dispatch, or copy items.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
 DrawItem     
-: A DrawItem corresponds to a draw call for a given object in a given pass. An object that needs to be drawn in several passes will result in several DrawItems. The collection of DrawItems pertaining to the same objects constitutes a DrawPacket. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+; this results in a DrawPacket containing three DrawItems. 
+: A DrawItem corresponds to a draw call for a given object in a given pass. One DrawItem is created for each pass on the object, and a collection of DrawItems is a DrawPacket. For example, an opaque object needs to be rendered in shadows, pre-depth, and forward+ passes; This results in a DrawPacket containing three DrawItems. 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
@@ -39,9 +39,9 @@ DrawList
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
 DrawListContext     
-: A thread safe container that accepts DrawItems into DrawLists from multiple threads. It accumulates DrawItems into thread local DrawLists, which it then combines into a merged DrawList for rendering.
+: A thread-safe container that accepts DrawItems into DrawLists from multiple threads. The container accumulates DrawItems into thread-local DrawLists,, which it then combines into a merged DrawList for rendering.
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Atom API](/docs/api/gems/Atom), [Work Submission](core-systems/rhi/work-submission.md)*
 
 DrawListMask     
 : A DrawListMask is a bit mask used for rapid culling by indicating which DrawLists are relevant to the class that holds the mask. For a View, this indicates which DrawLists are in the View. For a DrawPacket, this indicates which DrawLists that the DrawPacket's DrawItems will render to.
