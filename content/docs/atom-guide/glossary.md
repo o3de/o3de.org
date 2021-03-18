@@ -59,9 +59,9 @@ Dynamic Branching
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md)*
 
 Frame Graph     
-: The frame graph is a graph of Scopes where edges are derived from the attachment usage.
+: A Frame Graph visualizes how the frame scheduler is managing GPU work submissions.
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md), [`FrameGraph` Class Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_frame_graph.html)*
 
 Feature Processor  
 : Feature Processors are responsible for receiving data from the simulation, such as O3DE, and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature Processors own render proxies and convert them into Draw Packets that is consumed by the low-level layers of the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature Processors are owned by Scenes and there can be at most one Feature Processor of a given type per Scene.
