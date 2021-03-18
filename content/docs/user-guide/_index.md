@@ -5,7 +5,6 @@ description: ' Open 3D Engine is a free, cross-platform, cloud-connected game en
   you can use to build games and simulations. '
 weight: 300
 toc: true
-menu_uuid: user
 ---
 
 {{< preview-migrated >}}
@@ -23,14 +22,14 @@ Welcome to the O3DE User Guide! This documentation contains information and guid
 | [Assets](assets/) | Learn about O3DE's asset management tools and pipeline. |
 | [Build](build/) | Learn how to build an O3DE project with CMake. |
 | [Cloud](cloud/) |  Learn about cloud service integrations for O3DE. |
-| [Components](components/) | Learn about the different components in O3DE. |
+| [Components](components/) | Learn about the components that add functionality to your entities in O3DE, and how to create new components. |
 | [Editor](editor/) |  Learn how to use the O3DE Editor. |
-| [Engine](engine/) |  Learn about how O3DE works with Atom and how to use Atom's rendering features. |
-| [Gems](gems/) | Learn how to create and configure Gems for customizing and extending O3DE. |
-| [Interactivity](interactivity/) | Learn how to implement controls and other user interaction methods. |
+| [Engine](engine/) |  Learn about core engine programming concepts in O3DE. |
+| [Gems](gems/) | Learn about the Gems that extend O3DE, and how to create new Gems.|
+| [Interactivity](interactivity/) | Learn how to implement player navigation controls and other user interaction methods. |
 | [Localization](localization/) | Learn about localization support and tools for O3DE. |
 | [Networking](networking/) | Learn about the high-performance networking features in O3DE. |
-| [Packaging](packaging/) | Learn how to package your product for delivery. |
+| [Packaging](packaging/) | Learn how to package your O3DE-based product for release. |
 | [Project Configuration](project-config/) | Learn how to configure and customize your O3DE project. |
 | [Scripting](scripting/) | Learn about Script Canvas, O3DE's visual scripting solution, as well as other scripting models. |
 | [Testing](testing/) | Learn how to test your O3DE components and project. |
