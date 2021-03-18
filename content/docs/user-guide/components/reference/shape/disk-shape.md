@@ -15,7 +15,7 @@ The **Disk Shape** component creates a transparent circular surface that's orien
 
 ## Properties ##
 
-![Disk Shape component properties](/images/user-guide/components/reference/shape/cylinder-shape-component-ui-01.png)
+![Disk Shape component properties](/images/user-guide/components/reference/shape/disk-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
