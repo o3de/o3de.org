@@ -9,12 +9,12 @@ This is a collection of terms used in the Atom renderer, their definition, and t
 
 
 Attachment  
-: An attachment is a buffer or image instance associated with a unique ID. Attachments are used by the Render Hardware Interface (RHI) and Frame Scheduler for state management inside of a Scope.
+: An attachment is a buffer or image instance associated with a unique name. Attachments are used by the Render Hardware Interface (RHI) and Frame Scheduler for state management inside of a Scope.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
 AZSL (Amazon Shading Language)  
-: The Atom renderer uses a custom shading language called AZSL. It is an extension of HLSL (Shader model 6)  with some specialized features. The most significant special features are Shader Resource Groups (SRG) and shader options.
+: The Atom renderer uses a custom shading language called Amazon Shading Language (AZSL). AZSL is an extension of HLSL Shader Model 6, with some specialized features. The most significant special features are Shader Resource Groups (SRG) and shader options.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Compiler](core-systems/shaders/shader-compiler.md), [AZSL Reference](core-systems/shaders/azsl-reference/_index.md)*
 
@@ -23,106 +23,103 @@ AZSLc (AZSL Compiler)
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Compilers](core-systems/shaders/shader-compiler.md)*
 
-Command List     
-: A Command List in the RHI provides an interface that allows users to record a sequence of GPU commands on the CPU, that is later executed on the GPU. A command list accepts draw commands on the graphics queue and dispatch commands on either graphics or compute queue. 
+Command list     
+: A command list in the RHI provides an interface that allows users to submit GPU commands to a scope. This includes binding Shader Resource Groups; scissoring or viewing port states; building top or bottom level acceleration structures; beginning or ending predications; and submitting draw, dispatch, or copy items. 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-Draw Item     
-: A Draw Item corresponds to a draw call for a given object in a given pass. An object that needs to be drawn in several passes will result in several Draw Items. The collection of Draw Items pertaining to the same objects constitutes a Draw Packet. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+; this results in a Draw Packet containing three Draw Items. 
+Draw item     
+: A draw call for a given object in a given pass. An object that needs to be drawn in several passes will result in several draw items. The collection of draw items pertaining to the same object constitutes a draw packet. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+ passes; this results in a draw packet containing three draw items. 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-Draw List Context     
-: A thread safe container that accepts Draw Items into Draw Lists from multiple threads.
+Draw list context     
+: A thread safe container that accepts draw packets from multiple threads, sorts the draw packets into draw lists, and finally merges the draw lists. The resulting context is immutable and the lists are accessible in the RHI.
+
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-Draw List Mask     
-: A Draw List Mask is a bit mask used for rapid culling by indicating which Draw Lists are relevant to the class that holds the mask. For a View, this indicates which Draw Lists are in the View. For a Draw Packet, this indicates which Draw Lists that the Draw Packet's Draw Items will render to.
+Draw list mask     
+: A bit mask used for rapid culling by indicating which draw lists are relevant to the class that holds the mask. In a view, a draw list mask indicates which draw lists are in the view. In a draw packet, a draw list mask indicates which draw lists that the draw packet's draw items will render to.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Atom API](/docs/api/gems/Atom), [Work Submission](core-systems/rhi/work-submission.md)*
 
-Draw List Tag     
-: Draw List Tags are unique identifiers for a list of Draw Items.
+Draw list tag
+: Draw list tags are unique identifiers for a list of draw items that belong to the same draw packet.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-Draw Packet     
-: A Draw Packet is a collection of Draw Items, or draw calls, needed to render an object in multiple passes. For example, consider an object that is drawn in the shadow pass, the depth pre-pass, and the forward+ pass. Each of these draw calls corresponds to one Draw Item.
+Draw packet     
+: A draw packet is a collection of draw items for a specific object. It ensures that the draw items are properly dispatched across the different passes.
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*, [Frame Rendering](core-systems/frame-rendering.md)
 
-Dynamic Branching  
+Dynamic branching  
 : Dynamic branching is when conditional statements must be evaluated at runtime. This can cause negative performance impacts; For example, the code statement `if(sampledColor.a > 0.5)` is a dynamic branch and a common source of shader performance issues.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md)*
 
 Frame Graph     
-: A Frame Graph visualizes how the frame scheduler is managing GPU work submissions.
+: The Frame Graph is a graph-based tasking model that describes how the Frame Scheduler manages GPU work submissions in the RHI.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md), [`FrameGraph` Class Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_frame_graph.html)*
 
 Feature Processor  
-: Feature Processors are responsible for receiving data from the simulation, such as O3DE, and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature Processors own render proxies and convert them into Draw Packets that is consumed by the low-level layers of the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature Processors are owned by Scenes and there can be at most one Feature Processor of a given type per Scene.
+: Feature processors are responsible for receiving data from the simulation and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature processors own render proxies and convert them into draw packets that are consumed by the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature processors are owned by scenes and there can be at most one feature processor of a given type per scene.
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a New Feature](core-systems/rpi/creating-a-feature-processor.md)*
 
 Material  
-: A Material is a data item that can be applied to a single mesh to describe how it should be rendered. It references a Material Type that defines the material's behavior and properties. A material provides a set of values for the available material properties. Materials can also inherit property values from other materials. 
+: A material is a data item that can be applied to a single mesh, describing how it should be rendered. Each material references a material type that defines the material's behavior and properties. In the Atom documentation, the term "material data" is used to disambiguate from the general concept of a "material". 
+
+Materials are stored in files with the `.material` extension. 
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md), [Material Build Pipeline](core-systems/materials/material-build-pipeline.md)*
 
-It is represented by a `.material` file.
-
-Material Asset  
-: A material asset is the baked material data that is stored in the engine's cache for use at runtime. It is stored in a `.azmaterial` file, which is produced by the Asset Processor from a `.material` file.
+Material asset  
+: A material asset is generated from material data into a form that is consumable by the simulation. Material assets are stored in files with the `.azmaterial` extension and are stored in the engine's cache for use at runtime.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md), [Material Build Pipeline](core-systems/materials/material-build-pipeline.md)*
 
-Material Functor  
-: Material Types might include custom processing logic which are facilitated by Material Functors. Material Functors are small function objects that process material properties, perform logic and calculation, and produce an output from the material instance. This data is then used to configure the material's shaders and/or metadata, for the Material Editor.
+Material functor  
+: Material functors are function objects that apply custom logic and calculations to material data, configuring the material's shaders, render states, or Material Editor metadata. Material functors can be programmed in C++ or Lua. 
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
 
-Material Instance  
-: A Material Instance is an active material, meaning it is bound to one or more meshes at runtime for actual rendering. It is created from a material asset.
+Material instance  
+: A material instance is an active material, bound to one or more meshes at runtime for actual rendering. Instances are created from material assets in the cache.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
 
-Material Property  
-: Material Properties are the data that's used to configure a material to achieve a particular appearance. The material type defines a list of material properties, and the material provides a list of material property values.
+Material property  
+: Material properties are data that configures a material to achieve a particular appearance. Material properties are defined in the material type, and are then assigned property values in the material.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md)*
 
-Material Shader  
-: In general, a "shader" is any program executed on the GPU. A Material Shader is a specific category of shaders that is referenced by a material type and used to render a mesh at runtime. We often refer to is as simply a "shader", but the term "material shader" is used to disambiguate when necessary.
+Material shader  
+: A shader referenced by a material type and used to render a mesh at runtime. In the Atom documentation, "shader" normally refers to a material shader, but the term "material shader" is used to disambiguate when necessary.
 
 *Related to: [Material System](core-systems/materials/_index.md)*
 
-Material Type  
-: *Related to: [Material System](core-systems/materials/_index.md), [Material System](core-systems/materials/materials.md)*
-A material type defines how a material behaves and what properties the material has. Every material must have a material type. The main material types provided with Atom are StandardPBR and EnhancedPBR. Other examples may include hair, skin, car paint, etc.
+Material type  
+: A material type defines how a material behaves and what properties the material has. Every material must have a material type. Some general examples of a material type are hair, skin, stone, and car paint. Atom provides physically-based rendered material types, such as StandardPBR and EnhancedPBR. In the Atom documentation, the term "material type data" is used to disambiguate from the general concept of a "material type". 
 
-It is represented by a `.materialtype` file.
+Material types are stored in files with the `.materialtype` extension.
+
+*Related to: [Material System](core-systems/materials/_index.md), [Material System](core-systems/materials/materials.md)*
 
 Material Type Asset  
-: A material type asset is the baked material type data that is stored in the engine's cache for use at runtime. It is stored in a `.azmaterialtype` file, which is produced by the Asset Processor from a `.materialtype` file.
+: A material type asset is generated from material type data into a form that is consumable by the simulation. Material type assets are stored in files with the `.azmaterialtype` extension and are stored in the engine's cache for use at runtime.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System](core-systems/materials/materials.md), [Material Build Pipeline](core-systems/materials/material-build-pipeline.md)*
 
 Pass  
-: A pass is a logical grouping of render work with a defined input and output. A pass can contain other passes to form a tree hierarchy of passes. Passes are similar to Scopes, but live in the RPI. 
+: A pass is a logical grouping of render work with a defined input and output. Passes are organized into a tree hierarchy, where each pass belongs to a parent pass. They live in the RPI and are similar to scopes in the RHI.
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [Pass System](core-systems/rpi/pass-system/pass-system.md), [Authoring Passes](core-systems/rpi/pass-system/authoring-passes.md)*
 
-Render Pipeline  
-: A render pipeline contains a logical arrangement of Passes and Views that are used to render a certain output, such as the main view of a game or particle depth maps for collision).
-
-*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md)*
-
 Render Component  
-: A render component is a feature that pushes data to the Atom renderer via its corresponding feature processor. It's defined in a C++ class on the simulation side, such as O3DE. For example, at every frame, an Animated Mesh Component will send bone matrix updates to its Feature Processor.
+: A render component is a feature that pushes data to the Atom renderer via its corresponding feature processor. For example, at every frame, an Animated Mesh Component will send bone matrix updates to its Feature Processor.
 
 *Related to: [Open 3D Engine - Components](/content/docs/user-guide/components/_index.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a Feature Processor](core-systems/rpi/creating-a-feature-processor.md)*
 
@@ -131,85 +128,93 @@ Render Hardware Interface (RHI)
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md)*
 
-Root Constant  
-: A root constant is a special shader variable that provides a very fast small amount of uniform data. A root constant is more optimal than a constant buffer, but is limited in size (generally limited to around 128 or 256 bytes for all root constants).  
-
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Root Constants](core-systems/rhi/root-constants.md)*
-
-Root Shader Variant  
-: The root shader variant has the main shader bytecode that is always generated by default for each shader. Since shader options are passed to the shader at runtime (not during shader compile time), the root shader variant can be used to render any combination of shader options. It is called the "root" variant because it appears at the root of the shader variant tree.
-
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
-
-Render Pipeline Interface  
-: The RPI layer sits above the RHI and is responsible for interfacing with game logic and pushing draw items through the render pipeline and down to the RHI. The Feature Processor, Pipeline, Pass, Scene, and View live in the RPI.
+Render Pipeline  
+: A render pipeline describes how to render a scene and contains passes and views for rendering. More than one render pipeline can exist in a scene. 
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md)*
 
+Render Pipeline Interface (RPI)
+: The Render Pipeline Interface (RPI) layer sits above the RHI and is responsible for interfacing with simulation logic, and pushing draw items through the render pipeline and down to the RHI. The RPI contains feature processors, pipelines, passes, scenes, and views.
+
+*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md)*
+
+Root constant  
+: A special shader variable that provides a very fast and small amount of uniform data. A root constant is more optimal than a constant buffer, but is limited in size (generally limited to around 128 or 256 bytes for all root constants).  
+
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Root Constants](core-systems/rhi/root-constants.md)*
+
+Root shader variant  
+: The root shader variant has the main shader bytecode that is always generated by default for each shader. Since shader options are passed to the shader at runtime (rather than during shader compile time), the root shader variant can be used to render any combination of shader options. It is called the "root" variant because it appears at the root of the shader variant tree.
+
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
+
 Scene  
-: A scene is a conceptual representation of a 'world' to be rendered. It contains feature processors and render pipelines.
+: A scene is a conceptual representation of a 'world' to be rendered in the simulation. It contains feature processors and render pipelines.
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md)*
 
 Scope     
-: A scope is a logical grouping of uninterruptible render work with a defined input and output. It is similar to a  Pass in the RPI, but lives in the RHI.
+: A scope is a logical grouping of uninterruptible render work with a defined input and output. Scopes live in the RHI and are similar to passes in the RPI.  
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
 Shader  
 : A shader is any program that's run on the GPU. The "shader" definition varies depending on the context. Here are some common ways "shader" is used in Atom:
 - A `.azsl` file contains shader code.
-- A `.shader` file references the .azsl file and attaches metadata to configure the AZSLc, the shader compiler. 
+- A `.shader` file references the .azsl file and attaches metadata to configure the AZSLc. 
 - The `Shader` class in C++.
+- Material shaders are often referred to as "shaders".
   
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader System Overview](core-systems/shaders/shader-system.md)*
 
-Shader Asset  
-: A shader asset is the shader data that is stored in the engine's cache for use at runtime. It is stored in a `.azshader` file, that is produced by the Asset Processor from a `.shader` file. The shader asset does not contain any shader bytecode. Instead, it contains metadata about the shader and links to one or more shader variant assets, which contain the bytecode.
+Shader asset  
+: A shader asset is generated from shader data into a form that is consumable by the simulation. Shader assets are stored in files with the `.azshader` extention and are stored in the engine's cache for use at runtime. The shader asset does not contain any shader bytecode. Instead, it contains metadata about the shader and links to one or more shader variant assets, which contain the bytecode.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
 Shader Resource Group (SRG)  
-: A Shader Resource Group (SRG) is a collection of shader resources that are automatically packed into an implicit constant buffer. These resources include textures, buffers, samplers, and loose constants. SRGs support automatic packing of shader resources into a table that's suitable for binding to the hardware pipeline at specific frequencies, in a platform-agnostic way.
+: A Shader Resource Group (SRG) is a collection of shader resources: Textures, buffers, samplers, and loose constants which are automatically packed into an implicit constant buffer. SRGs are bound at specific frequencies (e.g. per scene, per view, per pass, per material).
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [Shader Resource Groups and Constant Data](core-systems/rhi/srgs-and-constant-data.md), [AZSL Reference](core-systems\shaders\azsl-reference\shader-resource-groups.md)*
 
-Shader Bytecode  
-: A shader bytecode is a compiled shader program that is ready to be passed into the GPU for rendering.
+Shader bytecode  
+: A compiled shader program ready to be passed to a GPU for execution.
 
 *Related to: [Shader System](core-systems/shaders/_index.md)*
 
-Shader Constant  
+Shader constant  
 : A shader constant refers to the data fields in a Shader Resource Group (SRG) that use primitive data types. These data types are automatically packed into an implicit constant buffer within the SRG. They can be easily accessed at runtime by name or index using the `RPI::ShaderResourceGroup` class.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [Shader Resource Groups and Constant Data](core-systems/rhi/srgs-and-constant-data.md)*
 
-Shader Option  
+Shader option  
 : A shader option is a special kind of variable in a shader that makes it easy to define and configure shader variants. The value for a shader option can be supplied either at build time or at runtime. If the shader option is supplied at build time through a shader variant, the value is baked into the shader bytecode for better performance. Otherwise, the value is passed to the shader at runtime, giving the same visual result.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md)*
 
-Shader Variant  
-: A shader variant is similar to shader permutations that are common in other renderers. The shader variant is an alternate version of shader bytecode, and is optimized for a specific set of input values. For example, the original shader code might have branching logic (`if` statements) to perform different calculations depending on some shader input flag. Rather than evaluate these branches dynamically (which has performance penalties), the system can pre-compile multiple shader variants. Each shader variant is hardcoded to use the alternate calculations. At runtime, the system selects an appropriate variant based on the input flag, rather than passing the input flag to the shader.
+Shader variant  
+: A shader variant is similar to shader permutations, which are common in other renderers. The shader variant is an alternate version of shader bytecode, and is optimized for a specific set of input values. For example, the original shader code might have branching logic (`if` statements) to perform different calculations depending on some shader input flag. Rather than evaluate these branches dynamically (which has performance penalties), the system can pre-compile multiple shader variants. Each shader variant is hardcoded to use the alternate calculations. At runtime, the system selects an appropriate variant based on the input flag, rather than passing the input flag to the shader.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
 
-Shader Variant Asset  
-: The shader variant asset contains the actual bytecode for a compiled shader that is stored in the engine's cache for use at runtime. It is stored in a `.azshadervariant` file, that is produced by the Asset Processor. There must be one shader variant asset for each `.shader` file to hold the root shader variant. There might be numerous shader variant assets generated from a `.shadervariantlist` file.
+Shader variant asset  
+: The shader variant asset contains the actual bytecode for a compiled shader that is stored in the engine's cache for use at runtime. It is stored in a file with the `.azshadervariant` extension. There must be one shader variant asset for each `.shader` file to hold the root shader variant. Numerous shader variant assets can be generated from a `.shadervariantlist` file.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Variant](core-systems/shaders/shader-variant.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
-Shader Variant Tree  
+Shader variant tree  
 : The shader variant tree is a data structure that organizes a shader's collection of shader variants. It allows fast lookup of shader variants at runtime, as well as automatic fallback to more generalized variants if a specific variant is not found.
 
+A shader variant tree is stored in a file with the `.shadervariantlist` extension.
+
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Variant](core-systems/shaders/shader-variant.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
-Shader Variant Tree Asset  
-: This asset contains the shader variant tree that is stored in the engine's cache for use at runtime. It is stored in a `.azshadervarianttree` file, that is produced by the Asset Processor from a `.shadervariantlist` file. The shader variant tree asset contains links to all of the shader variant assets for a particular shader.
+Shader variant tree asset  
+: A shader variant tree asset is generated from shader variant tree data into a form that is consumable by the simulation. Shader variant tree assets are stored in files with the `.azshadervarianttree` extension and are stored in the engine's cache for use at runtime. The shader variant tree asset contains links to all of the shader variant assets for a particular shader.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
 
-System Shader Option  
+System shader option  
 : A system shader option is any shader option in a material shader that is not owned by the material type. When a material type connects to a shader option in one of its shaders, that option is owned by the material type; only the material is allowed to set the value for that option. All other options are called system shader options, and these are set directly in code by calling the method `Material::SetSystemShaderOption()`.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
