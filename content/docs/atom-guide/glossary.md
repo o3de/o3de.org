@@ -9,7 +9,7 @@ This is a collection of terms used in the Atom renderer, their definition, and t
 
 
 Attachment  
-: An attachment is a buffer or image instance associated with a unique ID. Attachments are used by the Rendering Hardware Interface (RHI) and Frame Scheduler for state management inside of a Scope.
+: An attachment is a buffer or image instance associated with a unique ID. Attachments are used by the Render Hardware Interface (RHI) and Frame Scheduler for state management inside of a Scope.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
@@ -23,43 +23,38 @@ AZSLc (AZSL Compiler)
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Compilers](core-systems/shaders/shader-compiler.md)*
 
-CommandList     
-: A CommandList in the RHI provides an interface to bind Shader Resource Groups, scissor or viewport states, build top or bottom level acceleration structures, begin or end predications and submit draw, dispatch, or copy items.
+Command List     
+: A Command List in the RHI provides an interface that allows users to record a sequence of GPU commands on the CPU, that is later executed on the GPU. A command list accepts draw commands on the graphics queue and dispatch commands on either graphics or compute queue. 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-DrawItem     
-: A DrawItem corresponds to a draw call for a given object in a given pass. One DrawItem is created for each pass on the object, and a collection of DrawItems is a DrawPacket. For example, an opaque object needs to be rendered in shadows, pre-depth, and forward+ passes; This results in a DrawPacket containing three DrawItems. 
+Draw Item     
+: A Draw Item corresponds to a draw call for a given object in a given pass. An object that needs to be drawn in several passes will result in several Draw Items. The collection of Draw Items pertaining to the same objects constitutes a Draw Packet. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+; this results in a Draw Packet containing three Draw Items. 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-DrawList     
-: A list of pointers to DrawItems.
+Draw List Context     
+: A thread safe container that accepts Draw Items into Draw Lists from multiple threads.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-DrawListContext     
-: A thread-safe container that accepts DrawItems into DrawLists from multiple threads. The container accumulates DrawItems into thread-local DrawLists,, which it then combines into a merged DrawList for rendering.
+Draw List Mask     
+: A Draw List Mask is a bit mask used for rapid culling by indicating which Draw Lists are relevant to the class that holds the mask. For a View, this indicates which Draw Lists are in the View. For a Draw Packet, this indicates which Draw Lists that the Draw Packet's Draw Items will render to.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Atom API](/docs/api/gems/Atom), [Work Submission](core-systems/rhi/work-submission.md)*
 
-DrawListMask     
-: A DrawListMask is a bit mask used for rapid culling by indicating which DrawLists are relevant to the class that holds the mask. For a View, this indicates which DrawLists are in the View. For a DrawPacket, this indicates which DrawLists that the DrawPacket's DrawItems will render to.
+Draw List Tag     
+: Draw List Tags are unique identifiers for a list of Draw Items.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
 
-DrawListTag     
-: DrawListTags are unique identifiers for a list of DrawItems. The DrawPacket contains multiple DrawItems, where each DrawItem is associated with a DrawListTag.
-
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
-
-DrawPacket     
-: A DrawPacket is a collection of DrawItems, or draw calls, needed to render an object in multiple passes. For example, consider an object that is drawn in the shadow pass, the depth pre-pass, and the forward+ pass. Each of these draw calls corresponds to one DrawItem.
+Draw Packet     
+: A Draw Packet is a collection of Draw Items, or draw calls, needed to render an object in multiple passes. For example, consider an object that is drawn in the shadow pass, the depth pre-pass, and the forward+ pass. Each of these draw calls corresponds to one Draw Item.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
 
 Dynamic Branching  
-: Dynamic branching refers to conditional statements where the result of the condition must be evaluated at runtime. For example, the code statement `if(sampledColor.a > 0.5)` is a common source of shader performance issues.
+: Dynamic branching is when conditional statements must be evaluated at runtime. This can cause negative performance impacts; For example, the code statement `if(sampledColor.a > 0.5)` is a dynamic branch and a common source of shader performance issues.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md)*
 
@@ -69,7 +64,7 @@ Frame Graph
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
 Feature Processor  
-: Feature Processors are responsible for receiving data from the simulation, such as O3DE, and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature Processors own render proxies and convert them into DrawPackets that is consumed by the low-level layers of the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature Processors are owned by Scenes and there can be at most one Feature Processor of a given type per Scene.
+: Feature Processors are responsible for receiving data from the simulation, such as O3DE, and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature Processors own render proxies and convert them into Draw Packets that is consumed by the low-level layers of the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature Processors are owned by Scenes and there can be at most one Feature Processor of a given type per Scene.
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a New Feature](core-systems/rpi/creating-a-feature-processor.md)*
 
@@ -96,7 +91,7 @@ Material Instance
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
 
 Material Property  
-: Material Properties are the data used to configure a material to achieve a particular appearance. The material type defines a list of material properties, and the material provides a list of material property values.
+: Material Properties are the data that's used to configure a material to achieve a particular appearance. The material type defines a list of material properties, and the material provides a list of material property values.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md)*
 
@@ -122,7 +117,7 @@ Pass
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [Pass System](core-systems/rpi/pass-system/pass-system.md), [Authoring Passes](core-systems/rpi/pass-system/authoring-passes.md)*
 
 Render Pipeline  
-: A render pipeline is logical grouping of Passes and Views that are used to render a certain output, such as the main view of a game or particle depth maps for collision).
+: A render pipeline contains a logical arrangement of Passes and Views that are used to render a certain output, such as the main view of a game or particle depth maps for collision).
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md)*
 
@@ -131,13 +126,13 @@ Render Component
 
 *Related to: [Open 3D Engine - Components](/content/docs/user-guide/components/_index.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a Feature Processor](core-systems/rpi/creating-a-feature-processor.md)*
 
-Rendering Hardware Interface (RHI)  
-: The RHI is a hardware abstraction layer and is the lowest layer of the Atom renderer. It manages GPU resources, handles GPU fences, schedules work on the GPU queues, and handles synchronization between the GPU work.
+Render Hardware Interface (RHI)  
+: The Render Hardware Interface (RHI) is a hardware abstraction layer, and is the lowest layer of the Atom renderer. The RHI manages GPU resources, handles GPU fences, schedules work on the GPU queues, and handles synchronization between the GPU work.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md)*
 
 Root Constant  
-: A root constant is a special shader variable that provides a very fast small amount of uniform data. It is more optimal than a constant buffer, but very limited in size (generally limited to around 128 or 256 bytes for all root constants). 
+: A root constant is a special shader variable that provides a very fast small amount of uniform data. A root constant is more optimal than a constant buffer, but is limited in size (generally limited to around 128 or 256 bytes for all root constants).  
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Root Constants](core-systems/rhi/root-constants.md)*
 
@@ -162,7 +157,7 @@ Scope
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
 Shader  
-: A shader is any program executed on the GPU. "Shader" is an overloaded term and its definition can vary depending on the context. Here are some common ways "shaders" is used in Atom:
+: A shader is any program that's run on the GPU. The "shader" definition varies depending on the context. Here are some common ways "shader" is used in Atom:
 - A `.azsl` file contains shader code.
 - A `.shader` file references the .azsl file and attaches metadata to configure the AZSLc, the shader compiler. 
 - The `Shader` class in C++.
@@ -170,12 +165,12 @@ Shader
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader System Overview](core-systems/shaders/shader-system.md)*
 
 Shader Asset  
-: A shader asset is the shader data that is stored in the engine's cache for use at runtime. It is stored in a `.azshader` file, that is produced by the Asset Processor from a `.shader` file. This does not contain any shader bytecode, rather it contains metadata about the shader and links to one or more shader variant assets which contain the bytecode.
+: A shader asset is the shader data that is stored in the engine's cache for use at runtime. It is stored in a `.azshader` file, that is produced by the Asset Processor from a `.shader` file. The shader asset does not contain any shader bytecode. Instead, it contains metadata about the shader and links to one or more shader variant assets, which contain the bytecode.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
 Shader Resource Group (SRG)  
-: A shader resource group is a collection of shader resources: textures, buffers, samplers, and loose constants which are automatically packed into an implicit constant buffer. Shader resource groups are bound at specific frequencies (e.g. per scene, per view, per pass, per material, etc.). It supports automatic packing of shader resources into a table suitable for binding to the hardware pipeline, in a platform-agnostic way.
+: A Shader Resource Group (SRG) is a collection of shader resources that are automatically packed into an implicit constant buffer. These resources include textures, buffers, samplers, and loose constants. SRGs support automatic packing of shader resources into a table that's suitable for binding to the hardware pipeline at specific frequencies, in a platform-agnostic way.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [Shader Resource Groups and Constant Data](core-systems/rhi/srgs-and-constant-data.md), [AZSL Reference](core-systems\shaders\azsl-reference\shader-resource-groups.md)*
 
@@ -190,12 +185,12 @@ Shader Constant
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [Shader Resource Groups and Constant Data](core-systems/rhi/srgs-and-constant-data.md)*
 
 Shader Option  
-: A shader option is a special kind of variable in a shader that makes it easy to define and configure shader variants. The value for a shader option can be supplied either at build time or at runtime. If supplied at build time through a shader variant, the value is baked into the shader bytecode for better performance. Otherwise, the value is passed to the shader at runtime, giving the same visual result.
+: A shader option is a special kind of variable in a shader that makes it easy to define and configure shader variants. The value for a shader option can be supplied either at build time or at runtime. If the shader option is supplied at build time through a shader variant, the value is baked into the shader bytecode for better performance. Otherwise, the value is passed to the shader at runtime, giving the same visual result.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md)*
 
 Shader Variant  
-: A shader variant is similar to the concept of shader permutations common in other renderers. It is an alternate version of shader bytecode that is optimized for a specific set of input values. For example, the original shader code might have branching logic (`if` statements) to perform different calculations depending on some shader input flag. Rather than evaluate these branches dynamically (which has performance penalties), the system can pre-compile multiple shader variants. Each shader variant is hard-coded to use the alternate calculations. At runtime, the system selects an appropriate variant based on the input flag, rather than passing the input flag to the shader.
+: A shader variant is similar to shader permutations that are common in other renderers. The shader variant is an alternate version of shader bytecode, and is optimized for a specific set of input values. For example, the original shader code might have branching logic (`if` statements) to perform different calculations depending on some shader input flag. Rather than evaluate these branches dynamically (which has performance penalties), the system can pre-compile multiple shader variants. Each shader variant is hardcoded to use the alternate calculations. At runtime, the system selects an appropriate variant based on the input flag, rather than passing the input flag to the shader.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
 
@@ -210,7 +205,7 @@ Shader Variant Tree
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Variant](core-systems/shaders/shader-variant.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
 Shader Variant Tree Asset  
-: This asset contains the shader varient tree that is stored in the engine's cache for use at runtime. It is stored in a `.azshadervarianttree` file, that is produced by the Asset Processor from a `.shadervariantlist` file. It contains links to all of the shader variant assets for a particular shader.
+: This asset contains the shader variant tree that is stored in the engine's cache for use at runtime. It is stored in a `.azshadervarianttree` file, that is produced by the Asset Processor from a `.shadervariantlist` file. The shader variant tree asset contains links to all of the shader variant assets for a particular shader.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
 
