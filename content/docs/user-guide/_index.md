@@ -7,7 +7,7 @@ weight: 300
 toc: true
 ---
 
-{{< preview-migrated >}}
+{{< preview-new >}}
 
 Welcome to the O3DE User Guide! This documentation contains information and guidance for users working on an O3DE project.
 
