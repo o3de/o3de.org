@@ -103,5 +103,6 @@ If you do not make the changes to pass the AR, or ignore the code review feedbac
 
 ### Frequently Asked Questions
 
-**Q:** __QUESTION HERE.__
+**Q:** _QUESTION HERE._
+
 **A:** ANSWER HERE.
