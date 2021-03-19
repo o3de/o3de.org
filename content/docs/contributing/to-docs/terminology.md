@@ -16,7 +16,7 @@ The following terms are specific to O3DE and are defined in the table below. Ple
 | Term       | Variations | Explanation                                    |
 |------------|------------|------------------------------------------------|
 | Open 3D Engine | Abbreviated: O3DE | Always capitalize the "O", the "D", and the "E". Use "Open 3D Engine (O3DE)" for the first reference in a topic, and then use the abbreviated version as you see fit.|
-| Animation Editor | _\<none\>_ | Do not use "EMotionFX" or "EMFX". |
+| Animation Editor | _\<none\>_ | Always capitalize both "Animation" and "Editor", as this is a proper noun. |
 | AnimGraph | _\<none\>_ | An interactive graph of animation flows for actors in the Animation Editor, as implemented in the Open 3D Engine Editor. This is a portmanteau of "animation" and "graph". It is a proper noun as it is an implementation specific to O3DE, and the "A" and the "G" must be capitalized. |
 | Canvas | | Definition: O3DE's visual scripting environment where Nodes are placed and connected to define scripted logic. Always capitalize this term when using it in this specific context. |
 | Gem | _\<none\>_ |  Encapsulated O3DE-specific functionality or assets, that is built and integrated into Open 3D Engine. "Gem" is a proper noun and must be capitalized. |
