@@ -16,41 +16,35 @@ title: Build and bundle assets for release in O3DE
 ## Prerequisites {#asset-bundler-tutorial-release-prerequisites}
 
 To complete the procedures in this tutorial, you need the following:
-+ Open 3D Engine. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/).
-+ Visual Studio 2019 installed and configured to develop with C++. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/).
-+ \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/packaging/asset-bundler/concepts.md). This tutorial uses seed lists and asset lists to generate bundles.
 
-## Configure O3DE to build the Starter Game project {#asset-bundler-tutorial-release-create-project}
++ Open 3D Engine\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
++ Visual Studio 2019 installed and configured to develop with C\+\+\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
++ \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 
-1. Open the Open 3D Engine Project Configurator.
+## Configure and Generate Build Files {#asset-bundler-tutorial-release-create-project}
 
-1. Select **Starter Game** and then select **Set as default** in the upper-right corner of the Project Configurator screen.
-![\[Setting the Starter Game as the default project from the Project Configurator.\]](/images/user-guide/assetbundler/asset-bundler-project-configurator-1.25.png)
-
-1. Open a command prompt and navigate to the O3DE root directory at `lumberyard_dir\dev`.
-
-1. Configure the build system for Starter Game and generate configuration files:
-
+1. If this is your first time building O3DE, create a directory for your generated IDE projects and build.
+   ```cmd
+   mkdir windows_vs2019
    ```
-   lmbr_waf configure
+
+1. Configure CMake with the Starter Game enabled as a project, and generate the build files for your host toolchain.
+   ```cmd
+   cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
+     -DLY_PROJECTS=StarterGame
    ```
+
+   {{< important >}}
+   If this is your first time building O3DE, you'll also need to pass the location of your third party libraries directory. Add
+   the `-DLY_3RDPARTY_PATH` argument with this directory as a value. See the [build documentation](/docs/user-guide/build) for more
+   tips on your first build.
+   {{< /important >}}
 
 ## Create a release build {#asset-bundler-tutorial-release-create-release}
 
-1. Open a command prompt and navigate to the O3DE install root directory.
-
-1. Create a profile build using the **all** build spec. Depending on your hardware, this can take a while.
-
-   ```
-   lmbr_waf build_win_x64_vs2019_profile -p all
-   ```
-
-   This step ensures that your editor, asset processor, asset builders, and other edit-time content is up to date. It's also required for shader generation.
-
-1. Make a release build with the **game\_and\_engine** build spec. Depending on your hardware, this can take a while, but should be faster than a full profile build.
-
-   ```
-   lmbr_waf build_win_x64_vs2019_release -p game_and_engine
+1. Build StarterGame in release mode.
+   ```cmd
+   cmake --build windows_vs2019 --config release --target StarterGame -- /m
    ```
 
 ## Create a directory structure for the game release {#asset-bundler-tutorial-release-build-directory}
@@ -74,7 +68,7 @@ To complete the procedures in this tutorial, you need the following:
 1. Copy the contents of the release build into the `StarterGameRelease\release` directory:
 
    ```
-   xcopy /s Bin64vc142.Release %USERPROFILE%\StarterGameRelease\release
+   xcopy /s build_vs2019\bin\release %USERPROFILE%\StarterGameRelease
    ```
 **Note**
  Release builds include some metadata like debug symbols in a `.pdb` file. When releasing your game, make sure to delete any compiler metadata that's copied over that isn't needed for launching or running your game.
