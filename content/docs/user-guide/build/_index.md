@@ -35,4 +35,4 @@ cmake --build windows_vs2019 --config profile --target Editor -- /m
 | [CMake settings reference](./reference.md) | Reference for user-configurable CMake settings specific to O3DE. |
 <!-- | [CMake files for Gems](./gems.md) | How to write a CMake build file to use with a custom gem. | -->
 <!-- | [Third-party library distribution](./thirdparty.md) | How to integrate with the third party packaging download system for Gems which depend on other products. | -->
-<!-- | [Troubleshooting](./troubleshooting.md) | How to debug and troubleshoot CMake and build problems. | -->
+| [Troubleshooting](./troubleshooting.md) | How to debug and troubleshoot CMake and build problems. |
