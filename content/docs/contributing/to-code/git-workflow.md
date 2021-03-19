@@ -1,6 +1,6 @@
 ---
-linktitle: Code Contributions
-title: O3DE Code Contribution GitHub Workflow
+linktitle: "Git Workflow"
+title: "O3DE Code Contribution GitHub Workflow"
 description: ' Overview and instructions for contributing code to Open 3D Engine (O3DE) through GitHub. '
 date: 2021-03-02T00:23:51-05:00
 toc: true
