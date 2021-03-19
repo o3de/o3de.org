@@ -1,7 +1,6 @@
 ---
 linktitle: "Contributing Code"
 title: "Contributing to O3DE Code Sources: Home"
-date: 2020-01-07
 date: 2021-03-02T00:23:51-05:00
 toc: true
 weight: 100
