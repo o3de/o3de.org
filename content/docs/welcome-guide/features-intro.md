@@ -72,9 +72,9 @@ Open 3D Engine comes with support for the NVIDIA PhysX system, offering a fronte
 
 Open 3D Engine uses the Script Canvas visual scripting language for authoring gameplay and interactivity. O3DE also offers support for the Lua scripting language and scripting through C++ directly, but Script Canvas offers the following advantages:
 
++ Create game logic and behaviors without writing code.
 + Compiles to Python or Lua.
-+ Future native code support (C++) planned.
-+ Reusable rapid prototyping without need for rewrite due to optimized output.
++ Rapid prototyping without the need for rewrite.
 
 ### Robust Networking
 
@@ -97,13 +97,13 @@ For more information, read [O3DE Networking](/docs/user-guide/networking)\.
 + Optimized for modern GPU and asset streaming.
 + Support for non-blocking, asynchronous loading of any asset type.
 
-### Native Prefab Support
+### Prefab Support
 
 + Reusable assets with complete properties, components, and hierarchies.
 + Mergeable and diffable human readable text format.
 + Dynamic placement and management of spawnables.
 
-### Python-based UI and Media Tools
+### Scriptable Tools
 
 The O3DE Editor and tools offer scriptable extension support through [Python 3](https://www.python.org/). Create custom editor components, automate processes, and extend your development environment. With O3DE's Python scripting support, you get:
 
@@ -111,7 +111,7 @@ The O3DE Editor and tools offer scriptable extension support through [Python 3](
 + Asset builder manipulations, including pre- and post-processing steps.
 + Custom behaviors in FBX and materials processing, letting you split, assign, and rehome assets.
 
-## High-performance Math Libraries
+## High-performance Math 
 
 All of Open 3D Engine is backed with a high-perfomance math library, designed to take advantage of modern CPU capabilities for fast and precise math.
 

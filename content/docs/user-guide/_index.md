@@ -26,9 +26,8 @@ Welcome to the O3DE User Guide! This documentation contains information and guid
 | [Editor](editor/) |  Learn how to use the O3DE Editor. |
 | [Engine](engine/) |  Learn about core engine programming concepts in O3DE. |
 | [Gems](gems/) | Learn about the Gems that extend O3DE, and how to create new Gems.|
-| [Interactivity](interactivity/) | Learn how to implement player navigation controls and other user interaction methods. |
-| [Localization](localization/) | Learn about localization support and tools for O3DE. |
-| [Networking](networking/) | Learn about the high-performance networking features in O3DE. |
+| [Interactivity](interactivity/) | Learn how to implement player navigation controls and other world interaction methods. |
+| [Networking](networking/) | Learn about the networking features in O3DE, offering both peer-to-peer connections and dedicated servers.  |
 | [Packaging](packaging/) | Learn how to package your O3DE-based product for release. |
 | [Project Configuration](project-config/) | Learn how to configure and customize your O3DE project. |
 | [Scripting](scripting/) | Learn about Script Canvas, O3DE's visual scripting solution, as well as other scripting models. |
@@ -40,7 +39,7 @@ Welcome to the O3DE User Guide! This documentation contains information and guid
 | Documentation                        | Details |
 |--------------------------------------|---------|
 | [Asset file types](appendix/asset-file-types.md) | Reference for the asset file types supported in O3DE by default. |
-| [Command-line tools](appendix/command-line-tools.md) | Reference for the O3DE CLI. |
+| [Command-line tools](appendix/command-line-tools.md) | Reference for the O3DE tools available from the command line. |
 | [Console variable reference](appendix/cvars/) | Reference for the O3DE console variables. |
 | [EBus handler examples](appendix/available-ebus.md) | Collection of examples for EBus handlers. |
 | [File format support](appendix/file-formats.md) | Reference for file formats supported in O3DE by default. |
