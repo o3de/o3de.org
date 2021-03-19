@@ -82,8 +82,9 @@ As a best practice, set `origin` to your forked repo, and `upstream` to `https:/
 
 4. The SIG owner (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
 
-    {{< /note >}}
+    {{< note >}}
     The SIG owner will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
+    {{< /note >}}
 
 5. Once all review comments have been addressed, a SIG member will approve the pull request.
 
