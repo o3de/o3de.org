@@ -2,7 +2,7 @@
 title: "Glossary"
 description: "A collection of terms used in the Atom renderer, their definition, and what system they belong to."
 toc: true
-weight: 1000
+weight: 1500
 ---
 
 This is a collection of terms used in the Atom renderer, their definition, and the system they belong to. 
@@ -26,18 +26,18 @@ AZSLc (AZSL Compiler)
 Command list     
 : A command list in the RHI provides an interface that allows users to submit GPU commands to a scope. This includes binding Shader Resource Groups; scissoring or viewing port states; building top or bottom level acceleration structures; beginning or ending predications; and submitting draw, dispatch, or copy items. 
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`CommandList` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_command_list.html)*
 
 Draw item     
 : A draw call for a given object in a given pass. An object that needs to be drawn in several passes will result in several draw items. The collection of draw items pertaining to the same object constitutes a draw packet. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+ passes; this results in a draw packet containing three draw items. 
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`DrawItem` API Reference](/docs/api/gems/atom/struct_a_z_1_1_r_h_i_1_1_draw_item.html)*
 
 Draw list context     
 : A thread safe container that accepts draw packets from multiple threads, sorts the draw packets into draw lists, and finally merges the draw lists. The resulting context is immutable and the lists are accessible in the RHI.
 
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`DrawListContext` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_draw_list_context.html)*
 
 Draw list mask     
 : A bit mask used for rapid culling by indicating which draw lists are relevant to the class that holds the mask. In a view, a draw list mask indicates which draw lists are in the view. In a draw packet, a draw list mask indicates which draw lists that the draw packet's draw items will render to.
@@ -52,7 +52,7 @@ Draw list tag
 Draw packet     
 : A draw packet is a collection of draw items for a specific object. It ensures that the draw items are properly dispatched across the different passes.
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*, [Frame Rendering](core-systems/frame-rendering.md)
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md), [Frame Rendering](core-systems/frame-rendering.md), [`DrawPacket` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_draw_packet.html)*
 
 Dynamic branching  
 : Dynamic branching is when conditional statements must be evaluated at runtime. This can cause negative performance impacts; For example, the code statement `if(sampledColor.a > 0.5)` is a dynamic branch and a common source of shader performance issues.
@@ -62,12 +62,12 @@ Dynamic branching
 Frame Graph     
 : The Frame Graph is a graph-based tasking model that describes how the Frame Scheduler manages GPU work submissions in the RHI.
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md), [`FrameGraph` Class Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_frame_graph.html)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md), [`FrameGraph` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_frame_graph.html)*
 
 Feature Processor  
 : Feature processors are responsible for receiving data from the simulation and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature processors own render proxies and convert them into draw packets that are consumed by the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature processors are owned by scenes and there can be at most one feature processor of a given type per scene.
 
-*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a New Feature](core-systems/rpi/creating-a-feature-processor.md)*
+*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Features](features/_index.md), [Creating a New Feature](core-systems/rpi/creating-a-feature-processor.md)*
 
 Material  
 : A material is a data item that can be applied to a single mesh, describing how it should be rendered. Each material references a material type that defines the material's behavior and properties. In the Atom documentation, the term "material data" is used to disambiguate from the general concept of a "material". 
@@ -108,7 +108,7 @@ Material types are stored in files with the `.materialtype` extension.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System](core-systems/materials/materials.md)*
 
-Material Type Asset  
+Material type asset  
 : A material type asset is generated from material type data into a form that is consumable by the simulation. Material type assets are stored in files with the `.azmaterialtype` extension and are stored in the engine's cache for use at runtime.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System](core-systems/materials/materials.md), [Material Build Pipeline](core-systems/materials/material-build-pipeline.md)*
@@ -118,7 +118,7 @@ Pass
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [Pass System](core-systems/rpi/pass-system/pass-system.md), [Authoring Passes](core-systems/rpi/pass-system/authoring-passes.md)*
 
-Render Component  
+Render component  
 : A render component is a feature that pushes data to the Atom renderer via its corresponding feature processor. For example, at every frame, an Animated Mesh Component will send bone matrix updates to its Feature Processor.
 
 *Related to: [Open 3D Engine - Components](/content/docs/user-guide/components/_index.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a Feature Processor](core-systems/rpi/creating-a-feature-processor.md)*
@@ -128,10 +128,10 @@ Render Hardware Interface (RHI)
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md)*
 
-Render Pipeline  
+Render pipeline  
 : A render pipeline describes how to render a scene and contains passes and views for rendering. More than one render pipeline can exist in a scene. 
 
-*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md)*
+*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [`RenderPipeline` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_render_pipeline.html)*
 
 Render Pipeline Interface (RPI)
 : The Render Pipeline Interface (RPI) layer sits above the RHI and is responsible for interfacing with simulation logic, and pushing draw items through the render pipeline and down to the RHI. The RPI contains feature processors, pipelines, passes, scenes, and views.
@@ -151,12 +151,12 @@ Root shader variant
 Scene  
 : A scene is a conceptual representation of a 'world' to be rendered in the simulation. It contains feature processors and render pipelines.
 
-*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md)*
+*Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [RPI System](core-systems/rpi/rpi-system.md), [`Scene` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_scene.html)*
 
 Scope     
 : A scope is a logical grouping of uninterruptible render work with a defined input and output. Scopes live in the RHI and are similar to passes in the RPI.  
 
-*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
+*Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md), [`Scope` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_scope.html)*
 
 Shader  
 : A shader is any program that's run on the GPU. The "shader" definition varies depending on the context. Here are some common ways "shader" is used in Atom:
@@ -175,7 +175,7 @@ Shader asset
 Shader Resource Group (SRG)  
 : A Shader Resource Group (SRG) is a collection of shader resources: Textures, buffers, samplers, and loose constants which are automatically packed into an implicit constant buffer. SRGs are bound at specific frequencies (e.g. per scene, per view, per pass, per material).
 
-*Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [Shader Resource Groups and Constant Data](core-systems/rhi/srgs-and-constant-data.md), [AZSL Reference](core-systems\shaders\azsl-reference\shader-resource-groups.md)*
+*Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [AZSL Reference](core-systems\shaders\azsl-reference\shader-resource-groups.md), [`Scene` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_shader-resource-group.html)*
 
 Shader bytecode  
 : A compiled shader program ready to be passed to a GPU for execution.
