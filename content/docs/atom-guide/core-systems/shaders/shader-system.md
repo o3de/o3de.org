@@ -1,5 +1,6 @@
 ---
-title: Shader system
+linktitle: Overview
+title: Shader system Overview
 description: Learn about the shader system in the Atom renderer, and how to write AZSL programs.
 weight: 100
 ---

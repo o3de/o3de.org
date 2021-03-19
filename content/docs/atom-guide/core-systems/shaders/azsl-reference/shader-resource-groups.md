@@ -1,4 +1,5 @@
 ---
+linktitle: Shader Resource Groups
 title: Shader Resource Groups (SRG)
 description: Learn about how shader resource groups (SRGs) are used in the Atom renderer.
 ---
