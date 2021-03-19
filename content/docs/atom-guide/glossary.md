@@ -34,7 +34,7 @@ Draw item
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`DrawItem` API Reference](/docs/api/gems/atom/struct_a_z_1_1_r_h_i_1_1_draw_item.html)*
 
 Draw list context     
-: A thread safe container that accepts draw packets from multiple threads, sorts the draw packets into draw lists, and finally merges the draw lists. The resulting context is immutable and the lists are accessible in the RHI.
+: A thread-safe container that accepts draw packets from multiple threads, sorts the draw packets into draw lists, and merges the draw lists. The resulting context is immutable and the lists are accessible in the RHI.
 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`DrawListContext` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_draw_list_context.html)*
@@ -55,7 +55,7 @@ Draw packet
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md), [Frame Rendering](core-systems/frame-rendering.md), [`DrawPacket` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_draw_packet.html)*
 
 Dynamic branching  
-: Dynamic branching is when conditional statements must be evaluated at runtime. This can cause negative performance impacts; For example, the code statement `if(sampledColor.a > 0.5)` is a dynamic branch and a common source of shader performance issues.
+: Dynamic branching is when conditional statements must be evaluated at runtime. This can cause negative performance impacts. For example, the code statement `if(sampledColor.a > 0.5)` is a dynamic branch and a common source of shader performance issues.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md)*
 
@@ -92,7 +92,7 @@ Material instance
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md), [Material System Data Flow](core-systems/materials/material-system-data-flow.md)*
 
 Material property  
-: Material properties are data that configures a material to achieve a particular appearance. Material properties are defined in the material type, and are then assigned property values in the material.
+: Material properties are data that configure a material to achieve a particular appearance. Material properties are defined in the material type, and are then assigned property values in the material.
 
 *Related to: [Material System](core-systems/materials/_index.md), [Material System Overview](core-systems/materials/materials.md)*
 
@@ -102,7 +102,7 @@ Material shader
 *Related to: [Material System](core-systems/materials/_index.md)*
 
 Material type  
-: A material type defines how a material behaves and what properties the material has. Every material must have a material type. Some general examples of a material type are hair, skin, stone, and car paint. Atom provides physically-based rendered material types, such as StandardPBR and EnhancedPBR. In the Atom documentation, the term "material type data" is used to disambiguate from the general concept of a "material type". 
+: A material type defines how a material behaves and what properties the material has. Every material must have a material type. Some general examples of a material type are hair, skin, stone, and car paint. Atom provides physically based rendered (PBR) material types, such as StandardPBR and EnhancedPBR. In the Atom documentation, the term "material type data" is used to disambiguate from the general concept of a "material type". 
 
 Material types are stored in files with the `.materialtype` extension.
 
@@ -114,7 +114,7 @@ Material type asset
 *Related to: [Material System](core-systems/materials/_index.md), [Material System](core-systems/materials/materials.md), [Material Build Pipeline](core-systems/materials/material-build-pipeline.md)*
 
 Pass  
-: A pass is a logical grouping of render work with a defined input and output. Passes are organized into a tree hierarchy, where each pass belongs to a parent pass. They live in the RPI and are similar to scopes in the RHI.
+: A pass is a logical grouping of render work with a defined input and output. Passes are organized into a tree hierarchy, where each pass belongs to a parent pass. Passes live in the RPI and are similar to scopes in the RHI.
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [Pass System](core-systems/rpi/pass-system/pass-system.md), [Authoring Passes](core-systems/rpi/pass-system/authoring-passes.md)*
 
@@ -134,7 +134,7 @@ Render pipeline
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [`RenderPipeline` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_render_pipeline.html)*
 
 Render Pipeline Interface (RPI)
-: The Render Pipeline Interface (RPI) layer sits above the RHI and is responsible for interfacing with simulation logic, and pushing draw items through the render pipeline and down to the RHI. The RPI contains feature processors, pipelines, passes, scenes, and views.
+: The Render Pipeline Interface (RPI) layer sits above the RHI. The RPI is responsible for interfacing with simulation logic and pushing draw items through the render pipeline and down to the RHI. The RPI contains feature processors, pipelines, passes, scenes, and views.
 
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md)*
 
@@ -144,7 +144,7 @@ Root constant
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Root Constants](core-systems/rhi/root-constants.md)*
 
 Root shader variant  
-: The root shader variant has the main shader bytecode that is always generated by default for each shader. Since shader options are passed to the shader at runtime (rather than during shader compile time), the root shader variant can be used to render any combination of shader options. It is called the "root" variant because it appears at the root of the shader variant tree.
+: The root shader variant has the main shader bytecode that is always generated by default for each shader. Since shader options are passed to the shader at runtime (rather than during shader compile time), the root shader variant can be used to render any combination of shader options. It is called the "root" variant because it appears at the top-level of the shader variant tree.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
 
@@ -168,12 +168,12 @@ Shader
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader System Overview](core-systems/shaders/shader-system.md)*
 
 Shader asset  
-: A shader asset is generated from shader data into a form that is consumable by the simulation. Shader assets are stored in files with the `.azshader` extention and are stored in the engine's cache for use at runtime. The shader asset does not contain any shader bytecode. Instead, it contains metadata about the shader and links to one or more shader variant assets, which contain the bytecode.
+: A shader asset is generated from shader data into a form that is consumable by the simulation. Shader assets are stored in files with the `.azshader` extension and are stored in the engine's cache for use at runtime. The shader asset does not contain any shader bytecode. Instead, it contains metadata about the shader and links to one or more shader variant assets, which contain the bytecode.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
 Shader Resource Group (SRG)  
-: A Shader Resource Group (SRG) is a collection of shader resources: Textures, buffers, samplers, and loose constants which are automatically packed into an implicit constant buffer. SRGs are bound at specific frequencies (e.g. per scene, per view, per pass, per material).
+: A Shader Resource Group (SRG) is a collection of shader resources (textures, buffers, samplers, and loose constants) that are automatically packed into an implicit constant buffer. SRGs are bound at specific frequencies (such as per scene, per view, per pass, per material).
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Resource Groups](core-systems/rhi/shader-resource-groups.md), [AZSL Reference](core-systems\shaders\azsl-reference\shader-resource-groups.md), [`Scene` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_shader-resource-group.html)*
 
@@ -198,7 +198,7 @@ Shader variant
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Options](core-systems/shaders/azsl-reference/shader-options.md), [Shader Variant](core-systems/shaders/shader-variant.md)*
 
 Shader variant asset  
-: The shader variant asset contains the actual bytecode for a compiled shader that is stored in the engine's cache for use at runtime. It is stored in a file with the `.azshadervariant` extension. There must be one shader variant asset for each `.shader` file to hold the root shader variant. Numerous shader variant assets can be generated from a `.shadervariantlist` file.
+: The shader variant asset contains the actual bytecode for a compiled shader that is stored in the engine's cache for use at runtime. The shader variant asset is stored in a file with the `.azshadervariant` extension. There must be one shader variant asset for each `.shader` file to hold the root shader variant. Numerous shader variant assets can be generated from a `.shadervariantlist` file.
 
 *Related to: [Shader System](core-systems/shaders/_index.md), [Shader Variant](core-systems/shaders/shader-variant.md), [Shader Build Pipeline](core-systems/shaders/shader-build-pipeline.md)*
 
