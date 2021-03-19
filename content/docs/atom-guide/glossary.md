@@ -9,7 +9,7 @@ This is a collection of terms used in the Atom renderer, their definition, and t
 
 
 Attachment  
-: An attachment is a buffer or image instance associated with a unique name. Attachments are used by the Render Hardware Interface (RHI) and Frame Scheduler for state management inside of a Scope.
+: An attachment is a buffer or image instance associated with a unique name. Attachments are used by the Render Hardware Interface (RHI) and Frame Scheduler for state management inside of a scope.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Frame Scheduler](core-systems/rhi/frame-scheduler.md)*
 
@@ -29,7 +29,7 @@ Command list
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`CommandList` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_command_list.html)*
 
 Draw item     
-: A draw call for a given object in a given pass. An object that needs to be drawn in several passes will result in several draw items. The collection of draw items pertaining to the same object constitutes a draw packet. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+ passes; this results in a draw packet containing three draw items. 
+: A draw call for a given object in a given pass. An object that needs to be drawn in several passes results in several draw items. The collection of draw items pertaining to the same object constitutes a draw packet. For example, opaque objects need to be rendered in shadows, pre-depth, and forward+ passes; this results in a draw packet containing three draw items. 
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`DrawItem` API Reference](/docs/api/gems/atom/struct_a_z_1_1_r_h_i_1_1_draw_item.html)*
 
@@ -40,7 +40,7 @@ Draw list context
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Work Submission](core-systems/rhi/work-submission.md), [`DrawListContext` API Reference](/docs/api/gems/atom/class_a_z_1_1_r_h_i_1_1_draw_list_context.html)*
 
 Draw list mask     
-: A bit mask used for rapid culling by indicating which draw lists are relevant to the class that holds the mask. In a view, a draw list mask indicates which draw lists are in the view. In a draw packet, a draw list mask indicates which draw lists that the draw packet's draw items will render to.
+: A bit mask used for rapid culling by indicating which draw lists are relevant to the class that holds the mask. In a view, a draw list mask indicates which draw lists are in the view. In a draw packet, a draw list mask indicates which draw lists that the draw packet's draw items renders to.
 
 *Related to: [Render Hardware Interface (RHI)](core-systems/rhi/_index.md), [Atom API](/docs/api/gems/Atom), [Work Submission](core-systems/rhi/work-submission.md)*
 
@@ -119,7 +119,7 @@ Pass
 *Related to: [Render Pipeline Interface (RPI)](core-systems/rpi/_index.md), [Pass System](core-systems/rpi/pass-system/pass-system.md), [Authoring Passes](core-systems/rpi/pass-system/authoring-passes.md)*
 
 Render component  
-: A render component is a feature that pushes data to the Atom renderer via its corresponding feature processor. For example, at every frame, an Animated Mesh Component will send bone matrix updates to its Feature Processor.
+: A render component is a feature that pushes data to the Atom renderer via its corresponding feature processor. For example, at every frame, an Animated Mesh Component sends bone matrix updates to its Feature Processor.
 
 *Related to: [Open 3D Engine - Components](/content/docs/user-guide/components/_index.md), [Frame Rendering](Core-systems/atom-architecture/frame-rendering-process.md), [Creating a Feature Processor](core-systems/rpi/creating-a-feature-processor.md)*
 
