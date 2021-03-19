@@ -1,4 +1,5 @@
 ---
+linktitle: Shader Resource Group Constants
 title: Shader Resource Group (SRG) Constants
 description: Learn about how constants are declared and used in AZSL shader resource groups.
 ---

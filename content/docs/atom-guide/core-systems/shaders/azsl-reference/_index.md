@@ -1,4 +1,5 @@
 ---
+linktitle: Atom Shader Language Reference
 title: Atom Shader Language (AZSL) Reference
 description: A reference for the AZSL shader language used by the O3DE Atom renderer.
 weight: 200
@@ -12,19 +13,17 @@ This section covers notable features in the AZSL language. It does not cover the
 - Show how to do it in HLSL (very basic, don't teach hlsl, juts do this for spotting the difference)
 - Then show how to do it in AZSL
    -->
-
-- [Shader Resource Groups (SRG)](shader-resource-groups.md)
-  - [SRG Constant Declarations](srg-constants-declaration.md)
-  - [SRG Data Views](srg-data-views.md)
-- [Shader Options](shader-options.md)
-- [Root Constants](./root-constant.md)
-  <!-- [todo] Root Constants should link to RHI root constants page. --> 
-- [Types](./data-types.md)
-- [Functions](./functions.md)
-- [Structs](./structs.md)
-- [Classes](./classes.md)
-- [Interfaces](./interfaces.md)
-- [Platform-Specific Shader Code](platform-specific.md)
-- [Symbol Encoding](symbol-encoding.md)
-  <!-- - [Partial SRGs](./partial-srgs.md)
-  - Scopes of partial SRG -->
+| AZSL features                        |  |
+|--------------------------------------|---------|
+| [Shader Resource Groups (SRG)](shader-resource-groups.md) |  |
+| [SRG Constant Declarations](srg-constants-declaration.md) |  |
+| [SRG Data Views](srg-data-views.md) |  |
+| [Shader Options](shader-options.md) |  |
+| [Root Constants](./root-constant.md) |  |  <!-- [todo] Root Constants should link to RHI root constants page. -->  
+| [Types](./data-types.md) |  |
+| [Functions](./functions.md) |  |
+| [Structs](./structs.md) |  |
+| [Classes](./classes.md) |  |
+| [Interfaces](./interfaces.md) |  |
+| [Platform-Specific Shader Code](platform-specific.md) |  |
+| [Symbol Encoding](symbol-encoding.md) |  | <!-- - [Partial SRGs](./partial-srgs.md) Scopes of partial SRG -->
