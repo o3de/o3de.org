@@ -8,7 +8,10 @@ weight: 200
 
 {{< preview-new >}}
 
-### Contents
-- [Material System](materials.md)
-- [Material File Specification](material-file-spec.md)
-- [Material Type File Specification](material-type-file-spec.md)
+This section contains technical details about the material system in the Atom renderer.
+
+| Documentation                        | Details |
+|--------------------------------------|---------|
+| [Material System](materials.md) | An overview of Atom's material system. |
+| [Material File Specification](material-file-spec.md) | JSON eference for material data. |
+| [Material Type File Specification](material-type-file-spec.md) | JSON reference for material type data. |
