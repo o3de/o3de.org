@@ -3,6 +3,8 @@ linktitle: O3DE Contributor guide
 title: Contributor guide for Open 3D Engine
 weight: 700
 menu_uuid: contributing
+description: "Want to contribute to the O3DE docs? Check this short guide out first."
+guide_img: "/images/contributor-guide/guide_img.png"
 ---
 
 {{< preview-new >}}

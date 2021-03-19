@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+{{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
+{{ $docsSections := where $allSections "Section" "docs" }} <!-- "getting-started" and "deployment" -->
+
+<div class="container pt-3 px-5 pb-3">
+  <div class="row flex">
+    <div class="col-12 docs-content">
+      <h1 class="title">{{ .Page.Title | markdownify }}</h1>
+      {{ partial "docs/content.html" . }}  
+      </div>
+    </div>
+    <div class="row">
+        {{ range $docsSections }}
+          {{ range .Sections }}
+          <div class="col col-12 col-xl-6 pb-3">
+              <div class="card">
+                  <img src="{{ .Param "guide_img" }}" class="card-img-top" alt="{{ .Page.Title }}">
+                  <div class="card-body">
+                  <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+                  <p class="card-text">{{ .Page.Description }}</p>
+                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read more</a>
+                  </div>
+              </div>
+          </div>
+        {{ end }}
+    {{ end }}
+    </div>
+  </div>
+{{ end }}

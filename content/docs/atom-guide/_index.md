@@ -1,10 +1,11 @@
 ---
 linktitle: Atom Renderer
 title: "Atom Renderer"
-description: Documentation for Atom Renderer
+description: "Learn about the Atom graphics rendering engine, its features, and how to use and extend them."
 date: 2021-03-04
 weight: 400
 menu_uuid: atom
+guide_img: "/images/atom-guide/guide_img.png"
 ---
 
 {{< preview-new >}}
