@@ -1,6 +1,6 @@
 ---
 title: Shader system
-description: Learn about the shader system used by O3DE Atom, and how to write AZSL programs.
+description: Learn about the shader system in the Atom renderer, and how to write AZSL programs.
 weight: 100
 ---
 
