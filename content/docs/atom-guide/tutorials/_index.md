@@ -8,13 +8,10 @@ weight: 500
 
 {{< preview-new >}}
 
-This is a collection of tutorials on working with Atom. 
+A collection of tutorials on working with Atom. 
 
-## Materials
-The following tutorials cover topics for working with materials. 
-- [**Create a StandardPBR material**](create-standardpbr-material.md): This tutorial walks you through creating your first StandardPBR material using the Material Editor.
 
-## Render Pipeline Interface (RPI)
-The following tutorials cover topics regarding the RPI. 
-- [**Working with the Scene and Render Pipeline**](rpi/working-with-scene-and-rendering-pipeline.md): This tutorial goes over how to create scenes and render pipelines using the RPI.
-This section contains tutorials such as creating materials and shaders, or developing features in Atom. 
+| Tutorials                        | Details |
+|--------------------------------------|---------|
+| [Create a StandardPBR material](create-standardpbr-material.md) | This tutorial walks you through creating your first StandardPBR material using the Material Editor. | 
+| [Working with the Scene and Render Pipeline](rpi/working-with-scene-and-rendering-pipeline.md) | This tutorial goes over how to create scenes and render pipelines using the RPI. |
