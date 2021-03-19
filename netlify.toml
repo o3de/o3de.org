@@ -4,7 +4,7 @@ command = "make production-build"
 
 [build.environment]
 HUGO_VERSION = "0.75.1"
-NODE_VERSION = "12.19.0"
+NETLIFY_USE_YARN = true 
 
 [context.deploy-preview]
 command = "make preview-build"
