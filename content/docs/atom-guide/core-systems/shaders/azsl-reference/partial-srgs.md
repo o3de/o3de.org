@@ -1,7 +1,9 @@
-<!-- [WRITER NOTE: Don't review. Section is incomplete. More information is necessary.] -->
+---
+title: Partial SRGs
+description: "Learn about partial SRGs"
+---
 
-# Partial SRGs
-[TODO] What are partial SRGs? When do you use them?
+{{< preview-new >}}
 
 ## Scopes of partial SRG
 <!-- [WRITER NOTE: Reword] -->
