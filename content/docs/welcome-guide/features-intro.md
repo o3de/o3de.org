@@ -4,8 +4,6 @@ title: Open 3D Engine Features
 description: ' Read about the high-level features provided with Open 3D Engine (O3DE). '
 weight: 100
 toc: true
-menu_uuid: user
-
 ---
 
 {{< preview-new >}}
