@@ -287,9 +287,6 @@ Technology that replicates the gaming environment and simulates a user's presenc
 **voxel** {#voxel}
 A volumetric point in a 3D space, similar to a pixel in a 2D space\.
 
-**Waf** {#waf}
-Game build system that allows you to automatically compile a game that targets all supported platforms\.
-
 **white point** {#white_point}
 The reference value used to indicate true white in an image or level\.
 
