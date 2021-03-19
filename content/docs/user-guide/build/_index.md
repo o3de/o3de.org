@@ -17,8 +17,8 @@ Here's an example showing how to build the editor while also adding support for 
 <!-- TODO: Add other host platforms/toolchains here, max 1/platform -->
 
 {{< tabs >}}
-{{< tab name="Windows (VS2019)" codelang="cmd">}}cd <O3DE dir>
-mkdir build_win64
+{{< tab name="Windows" codelang="cmd">}}cd <O3DE dir>
+mkdir windows_vs2019
 cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
     -DLY_3RDPARTY_PATH=<3rdPaty_fullpath> ^
     -DLY_UNITY_BUILD=ON ^

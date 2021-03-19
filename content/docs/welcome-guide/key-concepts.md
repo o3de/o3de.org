@@ -45,8 +45,7 @@ The default O3DE installation is to `{drive-letter}:\Amazon\O3DE{lumberyard-vers
 +  `\Tools` contains a number of tools and SDKs you'll use throughout the development of your game, including:
   +  `\Tools\AWSNativeSDK`: Contains scripts for obtaining various platform\-specific SDKs for working with Amazon's cloud services in their native languages\.
   +  `\Tools\AWSPythonSDK`: Contains Python SDKs for working with Amazon's cloud services\.
-  +  `\Tools\AzCodeGenerator`: Contains the binaries and configuration files for AZ Code Generator, which is a command\-line utility that generates source code \(or any data or text\) from specially tagged source code\. For more details, see [Automating Boilerplate with Az Code Generator](/docs/user-guide/codegen/intro)\.
-  +  `\Tools\build`: Contains scripts and tools for building your game project with Waf including the `lmbr_waf` command\-line build utility\.
+  +  `\Tools\AzCodeGenerator`: Contains the binaries and configuration files for AZ Code Generator, which is a command\-line utility that generates source code \(or any data or text\) from specially tagged source code\. For more details, see [Automating Boilerplate with Az Code Generator](/docs/userguide/codegen/intro)\.
   +  `\Tools\CrySCompileServer`: Contains the executable and libraries for the CryEngine shader compiler service\.
   +  `\Tools\LuaRemoteDebugger`: Contains the executable and libraries for the Lua script remote debugging tool\.
   +  `\Tools\Python`: Contains all basic Python libraries and the interpreter\. O3DE supports a minimum version of 3\.7\.5\.
