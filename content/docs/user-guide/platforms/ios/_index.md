@@ -43,16 +43,6 @@ To set up your environment, use the O3DE Setup Assistant \(located in the `lumbe
 
 The Setup Assistant will install the required third\-party software and SDKs\.
 
-## O3DE Binaries {#ios-support-lumberyard-binaries}
-
-During installation, O3DE creates the following directories for its binaries:
-
-**Mac**
-+ `BinMac64`
-
-**PC**
-+ `Bin64vc141` \(for binaries generated with Visual Studio 2017\)
-
 ## Anatomy of a O3DE iOS App {#ios-support-lumberyard-ios-app-anatomy}
 
 The O3DE build system can generate the following types of applications:
