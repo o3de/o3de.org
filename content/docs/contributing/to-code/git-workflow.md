@@ -17,7 +17,7 @@ Looking to submit new or changed code to O3DE? Exciting! Follow the guidance bel
 
 The O3DE base repository is on GitHub at [https://github.com/o3de/o3de](https://github.com/o3de/o3de).
 
-![GitHub code contribution workflow diagram](/images/contributing/code-git-workflow.png)
+![GitHub code contribution workflow diagram](/images/contributor-guide/code-git-workflow.png)
 
 At a high level, the workflow is:
 
@@ -71,12 +71,12 @@ As a best practice, set `origin` to your forked repo, and `upstream` to `https:/
     * On the **Compare** page, verify the base repo and branch point is set to `O3DE/main`. (This should be set by default.)
     * In the `head` drop down menu, select your fork repo and branch, and then select **Create Pull Request**.
 
-    ![Creating a pull request from your fork to o3de/main.](/images/contributing/code-pr-from-fork.png)
+    ![Creating a pull request from your fork to o3de/main.](/images/contributor-guide/code-pr-from-fork.png)
 
     * Add a title and description for your pull request. Provide a clear scope of your changes in as few words as you can.
     * Add reviewers (Note: Required reviewers and other PR requirements will be finalized in a `CONTRIBUTING.md` file).
 
-    ![Adding reviewers to an O3DE pull request.](/images/contributing/code-add-reviewers.png)
+    ![Adding reviewers to an O3DE pull request.](/images/contributor-guide/code-add-reviewers.png)
 
     * Now, select **Create pull request**!
 
@@ -90,7 +90,7 @@ As a best practice, set `origin` to your forked repo, and `upstream` to `https:/
 
     The pull request receives the required approvals from SIG and the AR passes.
 
-    ![An O3DE contribution pull request in a green approved state.](/images/contributing/code-pr-accepted.png)
+    ![An O3DE contribution pull request in a green approved state.](/images/contributor-guide/code-pr-accepted.png)
 
     The SIG owner (or a delegate) can then merge your pull request into `o3de/main`, and you're done! Nice!
 
@@ -98,7 +98,7 @@ As a best practice, set `origin` to your forked repo, and `upstream` to `https:/
 
 The SIG owner can request changes by providing feedback. You should engage with the comments and make any valid corrections or updates to your code contribution on the same branch. If the automated review (AR) fails, review the errors, make any necessary fixes, and update the pull request on the same branch.
 
-![An example of a failed AR check in a pull request.](/images/contributing/code-ar-failed.png)
+![An example of a failed AR check in a pull request.](/images/contributor-guide/code-ar-failed.png)
 
 If you do not make the changes to pass the AR, or ignore the code review feedback, the SIG owner may reject the changes in the pull request by marking it closed.
 
