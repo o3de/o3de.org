@@ -9,7 +9,7 @@ weight: 1000
 
 This section provides a deeper technical read into the systems and interfaces underlying the Atom renderer. 
 
-| Documentation                        | Details |
+| Contents                        | Details |
 |--------------------------------------|---------|
 | [Frame Rendering](frame-rendering.md) | The frame rendering process describes how a scene is processed from Render Components, through Render Passes in the RPI, and to the RHI. |
 | [Material System](materials/_index.md) | The material system processes materials and material types and builds them into assets to use in the simulation. |
