@@ -13,7 +13,7 @@ This section covers notable features in the AZSL language. It does not cover the
 - Show how to do it in HLSL (very basic, don't teach hlsl, juts do this for spotting the difference)
 - Then show how to do it in AZSL
    -->
-| AZSL features                        |  |
+| Contents                        |  |
 |--------------------------------------|---------|
 | [Shader Resource Groups (SRG)](shader-resource-groups.md) |  |
 | [SRG Constant Declarations](srg-constants-declaration.md) |  |

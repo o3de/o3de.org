@@ -12,7 +12,7 @@ guide_img: "/images/atom-guide/guide_img.png"
 Welcome to the Atom Documentation! The Atom renderer is the graphics engine powering the Open 3D Engine (O3DE). 
 
 
-| Documentation                        | Details |
+| Contents                        | Details |
 |--------------------------------------|---------|
 | [What is Atom?](what-is-atom.md) |  An introduction and high-level overview of Atom.  |
 | [Setup and Installation](setup/installing-atom.md) |  Atom is already built into O3DE, but you can read about how to set up Atom as a standalone or across other platforms. <!-- Not sure if this section is even needed since it seems like Atom is in the same bundle as O3DE and follows the O3DE setup. --> |

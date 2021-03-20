@@ -11,7 +11,7 @@ weight: 500
 A collection of tutorials on working with Atom. 
 
 
-| Tutorials                        | Details |
+| Contents                        | Details |
 |--------------------------------------|---------|
 | [Create a StandardPBR material](create-standardpbr-material.md) | This tutorial walks you through creating your first StandardPBR material using the Material Editor. | 
-| [Working with the Scene and Render Pipeline](rpi/working-with-scene-and-rendering-pipeline.md) | This tutorial goes over how to create scenes and render pipelines using the RPI. |
+| [Working with the Scene and Render Pipeline](working-with-scene-and-rendering-pipeline.md) | This tutorial goes over how to create scenes and render pipelines using the RPI. |
