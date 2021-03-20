@@ -10,7 +10,7 @@ weight: 300
 
 This section contains technical details about the shader system in the Atom renderer.
 
-| Documentation                        | Details |
+| Contents                        | Details |
 |--------------------------------------|---------|
 | [Shader System](shader-system.md) | An overview of Atom's shader system. |
 | [AZSL Reference](azsl-reference/_index.md) | Learn about the AZSL language. |

@@ -11,7 +11,7 @@ For more technical details regarding Atom's material system, read the Developer 
 
 
 
-| Documentation                        | Details |
+| Contents                        | Details |
 |--------------------------------------|---------|
 | Material Editor | An overview of the Material Editor. The Material Editor is used to create and edit materials. |
 | StandardPBR material type | A reference for the StandardPBR material type. |
