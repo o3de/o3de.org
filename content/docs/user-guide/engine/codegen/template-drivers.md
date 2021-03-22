@@ -8,9 +8,9 @@ weight: 300
 
 {{< preview-migrated >}}
 
-Template drivers are Python scripts that process the intermediate JSON data and route it into [Jinja2](https://jinja.palletsprojects.com) output templates. The scripts preprocess the data from the Clang front end, execute the template rendering, and control where the generated output is written to disk.
+Template drivers are Python scripts that process the intermediate JSON data and route it into [Jinja2](http://jinja.pocoo.org/) output templates. The scripts preprocess the data from the Clang front end, execute the template rendering, and control where the generated output is written to disk.
 
-These scripts are usually called by one or more code generation passes during build. Each Python script can reference multiple templates. This offers great flexibility in implementation, especially when multiple templates rely on the same preprocessed data. 
+These scripts are usually called by one or more code generation passes during build. Each Python script can reference multiple templates. This offers great flexibility in implementation, especially when multiple templates rely on the same preprocessed data.
 
 **Topics**
 + [Creating a Template Driver in Python](#az-code-gen-template-drivers-python)
@@ -147,9 +147,10 @@ At this point, the example generates a minimal `.cpp` file. The example above do
 
 To inject the generated file automatically, add the `should_add_to_build` parameter to the `render_template_to_file` method and pass the parameter the value of `true`. The `should_add_to_build` parameter informs CMake that the generated file needs to be built and linked into the current target.
 
-**Note**
+{{<note>}}
 
 Using the `should_add_to_build` parameter is not recommended for header files or other generated files that are not C\+\+ code that must be compiled and linked.
+{{</note>}
 
 The following example shows some build injected output.
 
