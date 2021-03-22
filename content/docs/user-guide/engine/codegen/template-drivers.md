@@ -55,19 +55,6 @@ apply_transformations(self, obj)
 
 For an example of this method, see [Preprocessing Intermediate Data](#az-code-gen-template-drivers-pre-processing-intermediate-data).
 
-#### get\_expected\_tags {#az-code-gen-template-drivers-templatedriver-class-methods-get-expected-tags}
-
-Override the `get_expected_tags` method to return a list of tags that must be found in any input file. If the required tags are not present, this driver is skipped.
-
-**Important**
-This method is deprecated as of O3DE v1.6. After O3DE v1.6, all scripts will be processed regardless of expected tags, and `get_expected_tags` will not be invoked.
-
-**Syntax**
-
-```
-get_expected_tags(self)
-```
-
 ### render\_template\_to\_file {#az-code-gen-template-drivers-templatedriver-class-methods-render-template-to-file}
 
 Renders a template to disk. This method also adds the value of `output_file` as a dependency of `az_code_gen`.
