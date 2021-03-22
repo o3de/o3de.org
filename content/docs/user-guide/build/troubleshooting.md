@@ -1,7 +1,6 @@
 ---
 title: Troubleshooting
 description: Tips, tricks, and advice for fixing failing O3DE builds.
-draft: true
 weight: 400
 ---
 
@@ -14,10 +13,17 @@ If you believe your build problem is due to a bug in O3DE, [file an issue](TBD).
 
 ## `C2027` Errors on Generated Files
 
-**Issue:** If you run out of disk space during a build, there may be empty files generated during the build, most often seen
-for Qt. These files may be left behind even after a clean, affecting future builds.
+**Issue:** If the MSVC compiler attempts to build files referencing a missing type, you'll see the [C2027 compiler error](https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/compiler-error-c2027). This issue is normally caused by empty files created by the code generation tool, most often during the build of the
+`AzQtFramework` library.
 
-**Remedy:** Delete all folders containing `_autogen` in your build directory.
+**Remedy:**
+
+* Ensure that you have enough disk space to build O3DE. The code generator will produce empty files if there isn't the disk space to write them.
+* Delete all folders containing `_autogen` in their name from your build directory
+  
+  **OR**
+
+  Delete the build directory used during CMake configure and generation, and regenerate and reconfigure O3DE.
 
 ## CMake Searching for Wrong MSVC During Configure
 
@@ -60,4 +66,7 @@ Call Stack (most recent call first):
   CMakeLists.txt:43 (include)-- Configuring incomplete, errors occurred!
 ```
 
-**Remedy:** This issue is caused when the `LY_3RDPARTY_PATH` value passed to CMake ends in a `\` character. Remove it.
+**Remedy:** This issue is caused when the `LY_3RDPARTY_PATH` value passed to CMake ends in a `\` character. You can either:
+
+* Change the value to remove the trailing `\`.
+* Change the format of your `LY_3RDPARTY_PATH` to use the platform-agnostic `/` path separator.
