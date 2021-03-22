@@ -1,9 +1,9 @@
 {{ $thisUrl      := .RelPermalink }} <!-- the URL of the current page -->
 
 {{ range .CurrentSection.Pages }}
-<ul>
+<ul class="section-nav-subsection collapse">
   <li><a class="section-nav-link" href="{{ .Permalink }}"> 
-      {{ .Page.LinkTitle | markdownify }}
+    {{ .Page.LinkTitle | markdownify }}
     </a>
     {{ if .IsSection }}
         {{ partial "section-nav-recurse.html" . }}

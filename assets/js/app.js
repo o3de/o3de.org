@@ -23,10 +23,12 @@ $(function() {
   $("#accordionExample .card a").each(function(){
        if($(this).attr("href") == url || $(this).attr("href") == '' ) {
         $(this).addClass("currentPage");
+        $(this).parents().addClass("currentLi");
         $(this).closest(".card-body").parent().addClass("show");
+        // $(this).parents(".section-nav-subsection").addClass("show");
        }
   })
-  console.log ($('.currentPage').first().offset().top);
+  $('.currentLi').children().addClass("show");
 
   $('.docs-sidebar').animate({
     scrollTop: ($('.currentPage').first().offset().top - 75)
