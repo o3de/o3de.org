@@ -1,5 +1,5 @@
 ---
-description: Use Open 3D Engine's AZ Code Generator to generate source code from Jina2 templates. 
+description: Use Open 3D Engine's AZ Code Generator to generate source code from Jinja2 templates. 
 linktitle: AZ Code Generator
 title: Automating boilerplate with AZ Code Generator
 weight: 200
