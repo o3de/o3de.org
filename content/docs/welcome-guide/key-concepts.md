@@ -45,7 +45,7 @@ The default O3DE installation is to `{drive-letter}:\Amazon\O3DE{lumberyard-vers
 +  `\Tools` contains a number of tools and SDKs you'll use throughout the development of your game, including:
   +  `\Tools\AWSNativeSDK`: Contains scripts for obtaining various platform\-specific SDKs for working with Amazon's cloud services in their native languages\.
   +  `\Tools\AWSPythonSDK`: Contains Python SDKs for working with Amazon's cloud services\.
-  +  `\Tools\AzCodeGenerator`: Contains the binaries and configuration files for AZ Code Generator, which is a command\-line utility that generates source code \(or any data or text\) from specially tagged source code\. For more details, see [Automating Boilerplate with Az Code Generator](/docs/userguide/codegen/intro)\.
+  +  `\Tools\AzCodeGenerator`: Contains the binaries and configuration files for AZ Code Generator, which is a command\-line utility that generates source code \(or any data or text\) from specially tagged source code\. For more details, see [Automating Boilerplate with Az Code Generator](/docs/user-guide/codegen/intro)\.
   +  `\Tools\build`: Contains scripts and tools for building your game project with Waf including the `lmbr_waf` command\-line build utility\.
   +  `\Tools\CrySCompileServer`: Contains the executable and libraries for the CryEngine shader compiler service\.
   +  `\Tools\LuaRemoteDebugger`: Contains the executable and libraries for the Lua script remote debugging tool\.
@@ -75,7 +75,7 @@ Likewise, to expose functionality from your own gems and provide data to another
 
 Inside of your Gem code, you also manage the connection and disconnection of your implemented handler for the EBus\. EBus is just a list of handlers that calls all the functors \(function pointers\) registered with it\.\.
 
-For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/userguide/az-interface) and [AZ:Event](/docs/userguide/az-event) directly, without EBus\.
+For singleton handlers where you only need one interface to communicate across DLLs, consider using [AZ::Interface](/docs/user-guide/az-interface) and [AZ:Event](/docs/user-guide/az-event) directly, without EBus\.
 
 There are two types of EBus:
 + Request bus: This EBus type registers a handler for a method that can be called by other systems\.
@@ -99,8 +99,8 @@ EBuses are configurable and support many different use cases:
 + Automatic marshaling of a function call into a network message or other command buffer\.
 
 For details on using EBus, read:
-+  [Working with the Event Bus \(EBus\) System](/docs/userguide/programming/ebus/intro)
-+  [Event Buses in Depth](/docs/userguide/programming/ebus/in-depth)
++  [Working with the Event Bus \(EBus\) System](/docs/user-guide/programming/ebus/intro)
++  [Event Buses in Depth](/docs/user-guide/programming/ebus/in-depth)
 
 ## The Component Entity system<a name="how-ly-works-component-entity"></a>
 
@@ -172,12 +172,12 @@ As you've probably suspected, there's a lot more to O3DE than this, but we hope 
 For some great videos on getting started with O3DE, check out our [Getting Started video tutorial series](https://aws.amazon.com/lumberyard/gettingstarted/)\.
 
 For some docs to get you started, check out the following topics:
-+  [O3DE Editor](/docs/userguide/editor/intro)
-+  [Programming Concepts](/docs/userguide/lumberyard-programming-concepts)
-+  [Gems](/docs/userguide/gems/builtin/s)
-+  [Component Entity System](/docs/userguide/components/intro)
-+  [Component Reference](/docs/userguide/components/components)
-+  [Programmer's Guide to Entities and Components](/docs/userguide/components/entity-system-pg-intro)
-+  [Emotion FX Animation Editor](/docs/userguide/char-intro)
-+  [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro)
-+  [Lua Editor](/docs/userguide/scripting/lua/intro)
++  [O3DE Editor](/docs/user-guide/editor/intro)
++  [Programming Concepts](/docs/user-guide/lumberyard-programming-concepts)
++  [Gems](/docs/user-guide/gems/builtin/s)
++  [Component Entity System](/docs/user-guide/components/intro)
++  [Component Reference](/docs/user-guide/components/components)
++  [Programmer's Guide to Entities and Components](/docs/user-guide/components/entity-system-pg-intro)
++  [Emotion FX Animation Editor](/docs/user-guide/char-intro)
++  [Script Canvas](/docs/user-guide/scripting/scriptcanvas/intro)
++  [Lua Editor](/docs/user-guide/scripting/lua/intro)
