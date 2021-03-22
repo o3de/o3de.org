@@ -1,6 +1,5 @@
 ---
-description: ' Use Open 3D Engine''s AZ Code Generator to generate source code (such as
-  boilerplate code) from specially tagged source code. '
+description: Use Open 3D Engine's AZ Code Generator to generate source code from Jina2 templates. 
 linktitle: AZ Code Generator
 title: Automating boilerplate with AZ Code Generator
 weight: 200
@@ -8,40 +7,34 @@ weight: 200
 
 {{< preview-migrated >}}
 
-AZ Code Generator is a command line utility that generates source code \(or any data or text\) from specially tagged source code. You can use it when the structure of the intended code is known in advance so that templates can be made for it. For example, you could generate boilerplate code for serialization or reflection.
+AZ Code Generator is a command line utility that generates source code (or any data or text) from specially tagged source code. You can use it when the structure of the intended code is known in advance so that templates can be made for it. For example, you could generate boilerplate code for serialization or reflection.
 
- AZ Code Generator parses a list of existing C\+\+ source files and/or header files and generates intermediate data in JSON format. It passes the intermediate data to a series of templates.
+ AZ Code Generator parses a list of existing C++ source files and/or header files and generates intermediate data in JSON format. It passes the intermediate data to a series of templates.
 
-The templates provide the format for the code that is generated. Templates make increased coding efficiency possible because they enable automatic updates of boilerplate code. When a template is updated, all related generated code is regenerated in the next build. This removes the need to update the glue code manually or to use error\-prone find\-and\-replace operations.
+The templates provide the format for the code that is generated. Templates make increased coding efficiency possible because they enable automatic updates of boilerplate code. When a template is updated, all related generated code is regenerated in the next build. This removes the need to update the glue code manually or to use error-prone find-and-replace operations.
 
 ![\[Image NOT FOUND\]](/images/shared/az-code-gen-workflow.png)
 
-**Topics**
-+ [Workflow Summary](#az-code-gen-intro-workflow-summary)
-+ [Clang](#az-code-gen-intro-clang)
-+ [Intermediate JSON Data](#az-code-gen-intro-intermediate-json-data)
-+ [AZ Code Generator and Python](#az-code-gen-intro-python)
-+ [Template Drivers and Template Rendering](#az-code-gen-intro-template-drivers-rendering)
-+ [Generated Files](#az-code-gen-intro-generated-files)
-+ [AZ Code Generator Parameters](/docs/user-guide/engine/codegen/parameters.md)
-+ [Code Generation Templates](/docs/user-guide/engine/codegen/templates.md)
-+ [Template Drivers](/docs/user-guide/engine/codegen/template-drivers.md)
-+ [Custom Code Generator Annotations](/docs/user-guide/engine/codegen/custom-annotations.md)
-+ [Template Driver Debugging](/docs/user-guide/engine/codegen/template-debugging.md)
-+ [Debugging the AZ Code Generator Utility](/docs/user-guide/engine/codegen/utility-debugging.md)
-+ [Intermediate JSON Data Format](/docs/userguide/codegen/intermediate-json-data-format.md)
+### Topics
+
+- [Workflow Summary](#workflow-summary-az-code-gen-intro-workflow-summary)
+- [Clang](#clang-az-code-gen-intro-clang)
+- [Intermediate JSON Data](#intermediate-json-data-az-code-gen-intro-intermediate-json-data)
+- [AZ Code Generator and Python](#az-code-generator-and-python-az-code-gen-intro-python)
+- [Template Drivers and Template Rendering](#template-drivers-and-template-rendering-az-code-gen-intro-template-drivers-rendering)
+- [Generated Files](#generated-files-az-code-gen-intro-generated-files)
 
 ## Workflow Summary {#az-code-gen-intro-workflow-summary}
 
 The following steps describe how AZ Code Generator works.
 
-1. The O3DE build system invokes AZ Code Generator for the `.h` and `.cpp` source files that are specified in the `wscript` file.
+1. The O3DE build system invokes AZ Code Generator tasks from CMake files.
 
-1.  AZ Code Generator runs one or more passes with the specified files.
+1. AZ Code Generator runs one or more passes with the specified files.
 
 1. Each pass includes the following:
 
-   1. AZ Code Generator uses the Clang front\-end compiler to produce an abstract syntax tree \(AST\) for each provided source file. The Clang parser attempts to compile the input. For increased speed, Clang can be instructed to not follow `#include` statements and to suppress all errors.
+   1. AZ Code Generator uses the Clang front-end compiler to produce an abstract syntax tree (AST) for each provided source file. The Clang parser attempts to compile the input. For increased speed, Clang can be instructed to not follow `#include` statements and to suppress all errors.
 
    1. The AST is translated into an intermediate JSON format.
 
@@ -61,13 +54,13 @@ The following sections provide more detail about this process.
 
 ## Clang {#az-code-gen-intro-clang}
 
-The default front end of the AZ Code Generator is a [Clang](http://clang.llvm.org/index.html) parser/compiler for C\+\+ source code. AZ Code Generator uses Clang to parse source code \(which might include custom tags\) and generate the intermediate JSON data object. AZ Code Generator fully controls Clang's parser and compilation phase so that it can selectively suppress or enable features such as diagnostics. This gives AZ Code Generator the flexibility to ignore source code that might fail to compile and still attempt to generate a complete intermediate object.
+The default front end of the AZ Code Generator is a [Clang](http://clang.llvm.org/index.html) parser/compiler for C++ source code. AZ Code Generator uses Clang to parse source code (which might include custom tags) and generate the intermediate JSON data object. AZ Code Generator fully controls Clang's parser and compilation phase so that it can selectively suppress or enable features such as diagnostics. This gives AZ Code Generator the flexibility to ignore source code that might fail to compile and still attempt to generate a complete intermediate object.
 
 ## Intermediate JSON Data {#az-code-gen-intro-intermediate-json-data}
 
  The Clang front end compiler outputs an intermediate JSON data structure that the generator passes to templates for further processing. An example intermediate JSON data object follows.
 
-```
+```json
 [
     {
         'name' : 'Component',
@@ -119,10 +112,7 @@ For complete syntax of the intermediate JSON data object, see [Intermediate JSON
 
 ## AZ Code Generator and Python {#az-code-gen-intro-python}
 
-AZ Code Generator depends on Python 3.7 or later to run template drivers and render [Jinja](http://jinja.pocoo.org/) templates. The Python C API is used to extend Python with methods in the `azcg_extension` module that permit template drivers to report dependencies, errors, and useful informational output. In Windows, Python 3.7 is included in the O3DE `dev/Tools/Python` directory. On macOS, AZ Code Generator uses the version of Python that is included with the operating system.
-
-**Note**
-To debug Python C API calls when using AZ Code Generator, you must download [CPython](https://www.python.org/downloads/). Then make a build for your intended debug OS.
+AZ Code Generator depends on Python 3.7 or later to run template drivers and render [Jinja](http://jinja.pocoo.org/) templates. The Python C API is used to extend Python with methods in the `azcg_extension` module that permit template drivers to report dependencies, errors, and useful informational output. In Windows, Python 3.7 is included in the O3DE `dev/Tools/Python` directory. On macOS, AZ Code Generator uses the version of Python included with the operating system.
 
 ## Template Drivers and Template Rendering {#az-code-gen-intro-template-drivers-rendering}
 
@@ -134,7 +124,7 @@ AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine, wh
 
 The following sample output was generated from a serialization template. The reference JSON object has been formatted for readability.
 
-```
+```cpp
 /////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 // THIS CODE IS AUTOGENERATED, DO NOT MODIFY

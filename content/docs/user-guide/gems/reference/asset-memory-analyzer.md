@@ -8,12 +8,11 @@ title: Asset Memory Analyzer Gem
 Resource management is crtitcal, particularly on platforms where memory is limited. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs. It is an indispensable tool to balance memory usage and get the best performance for your project.
 
 The **Asset Memory Analyzer** is an Open 3D Engine Gem that displays a table of heap and VRAM memory allocations per asset through the **ImGUI** \(Immediate Mode Graphical User Interface\) overlay. In addition to live display of memory allocations for assets loaded in the project, the **Asset Memory Analyzer** can export allocation data to `JSON` and `CSV` files.
-- [Asset Memory Analyzer Gem {#asset-memory-analyzer-gem}](#asset-memory-analyzer-gem-asset-memory-analyzer-gem)
-  - [Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}](#enable-the-asset-memory-analyzer-enable-asset-memory-analyzer)
-  - [View Live Asset Memory Analysis with **ImGUI** {#view-live-asset-memory-analysis}](#view-live-asset-memory-analysis-with-imgui-view-live-asset-memory-analysis)
-  - [Export an Asset Memory Analysis Snapshot to a File {#export-asset-memory-analysis-to-file}](#export-an-asset-memory-analysis-snapshot-to-a-file-export-asset-memory-analysis-to-file)
-  - [View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}](#view-a-json-asset-memory-analysis-snapshot-in-a-browser-view-json-snapshot-in-browser)
-  - [Instrumenting Code for Asset Memory Analysis {#instrumenting-code}](#instrumenting-code-for-asset-memory-analysis-instrumenting-code)
+- [Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}](#enable-the-asset-memory-analyzer-enable-asset-memory-analyzer)
+- [View Live Asset Memory Analysis with **ImGUI** {#view-live-asset-memory-analysis}](#view-live-asset-memory-analysis-with-imgui-view-live-asset-memory-analysis)
+- [Export an Asset Memory Analysis Snapshot to a File {#export-asset-memory-analysis-to-file}](#export-an-asset-memory-analysis-snapshot-to-a-file-export-asset-memory-analysis-to-file)
+- [View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}](#view-a-json-asset-memory-analysis-snapshot-in-a-browser-view-json-snapshot-in-browser)
+- [Instrumenting Code for Asset Memory Analysis {#instrumenting-code}](#instrumenting-code-for-asset-memory-analysis-instrumenting-code)
 
 ## Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}
 
@@ -44,8 +43,9 @@ To view live asset memory allocation, enable the **ImGUI** overlay during gamepl
 
 Each recorded asset is displayed along with the number of allocations and total size in kilobytes for both heap and VRAM. Use the selections at the top of the **ImGUI** overlay window to sort the table by heap size, heap count, VRAM size, VRAM count or by asset label alphabetically.
 
-**Note**
+{{< note >}}
 The asset label is the full path for each asset from the root of the project folder.
+{{< /note >}}
 
 Click the **arrow** to the left of an asset to expand it and view individual allocations and references belonging to the asset.
 
@@ -56,7 +56,7 @@ Click the **arrow** to the left of an asset to expand it and view individual all
 Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files through three methods:
 + Click **Asset Memory Analyzer** in the **ImGUI** overlay window and choose **Export JSON** or **Export CSV**.
 ![\[Snapshot output options for the Asset Memory Analyzer.\]](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-C-1.22.png)
-+ Use the console commands **assetmem\_export\_json** or **assetmem\_export\_csv** in the Editor Console to generate the file.
++ Use the console commands **assetmem_export_json** or **assetmem_export_csv** in the Editor Console to generate the file.
 + Call `ExportJSONFile` or `ExportCSVFile` on the `AssetMemoryAnalyzerRequestBus` in C\+\+, with `nullptr` as the parameter, to generate the file in the default location.
 
   ```
@@ -65,24 +65,25 @@ Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files th
 
 The snapshot file is created in the project log directory located at `dev/Cache/ProjectName/pc/user/log` and named `assetmem-2020-01-30-11-45-25.json` or `.csv`.
 
-**Note**
-Due to the limitations of the `CSV` format, only a top\-level overview of assets will be written to `CSV`, *without* the hierarchical drill\-down available in the `JSON` file or the **ImGUI** overlay window.
-
+{{< note >}}
+Due to the limitations of the `CSV` format, only a top-level overview of assets will be written to `CSV`, *without* the hierarchical drill-down available in the `JSON` file or the **ImGUI** overlay window.
+{{ /note }}
 ## View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}
 
-`JSON` snapshots can be viewed in a browser with a web viewer provided with O3DE. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`. Open the `index.html` file and drag\-and\-drop the `JSON` file onto the page, or click on the target area to browse to it. This displays the contents of the file in an expandable table.
+`JSON` snapshots can be viewed in a browser with a web viewer provided with O3DE. The web viewer is located at `\dev\Gems\``AssetMemoryAnalyzer/www/AssetMemoryViewer/index.html`. Open the `index.html` file and drag-and-drop the `JSON` file onto the page, or click on the target area to browse to it. This displays the contents of the file in an expandable table.
 
 ![\[The Asset Memory Viewer displaying a JSON snapshot in a browser.\]](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-D-1.22.png)
 
-**Note**
+{{< note >}}
 Chromium based browsers are most reliable.
+{{< /note >}}
 
 The table can be sorted by any column. The columns give a breakdown by multiple categories:
 + **Heap** allocations and **VRAM** allocations
-+ **Local** summary not including any sub\-assets and **Total** summary including all sub\-assets
++ **Local** summary not including any sub-assets and **Total** summary including all sub-assets
 + **Number** of allocations and **Kilobytes** allocated
 
-Expanding assets will display individual allocations belonging to the asset and sub\-assets that were loaded through references.
+Expanding assets will display individual allocations belonging to the asset and sub-assets that were loaded through references.
 
 The fields at the top of the table can be used to filter the assets by their label on a number of conditions, including regular expressions.
 
@@ -195,18 +196,19 @@ Creating a new named scope requires:
 + an environment lookup
 + locking a mutex
 + two hashtable lookups
-+ thread\-local modificationss
++ thread-local modificationss
 
 Attaching to an existing scope requires:
 + function calls
 + an environment lookup
 + locking a mutex
-+ a lookup in a large red\-black tree
-+ thread\-local modificationss
++ a lookup in a large red-black tree
++ thread-local modificationss
 
 Most often this is a relatively small cost, but it is significant enough that you should not use the `AZ_ASSET_ATTACH_TO_SCOPE` macro or use the `AssetTrackingEventProcessingPolicy` on your EBus gratuitously, especially if it is unlikely to attach to anything.
 
 When asset tracking is disabled, i.e. if the `AZ_ANALYZE_ASSET_MEMORY` macro remains undefined, there is zero cost to instrumentation of scopes. This is default in **performance** builds.
 
-**Note**
-EBuses that use the `AssetTrackingEventProcessingPolicy` will still have the indirection of a function call for each handler on the bus in **debug** builds only. Non\-debug builds inline this function call away.
+{{< note >}}
+EBuses that use the `AssetTrackingEventProcessingPolicy` will still have the indirection of a function call for each handler on the bus in **debug** builds only. Non-debug builds inline this function call away.
+{{< /note >}}
