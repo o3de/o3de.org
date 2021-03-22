@@ -38,9 +38,6 @@ weight: 800
 +  Enable each platform assets should be bundled for\. Enabled platforms are managed by editing the `dev\AssetProcessorPlatformConfig.ini` file in your project\.
 + Run the Asset Processor to ensure that assets and their metadata are up to date\.
 
-**Note**
- All example commands in this reference are executed from the `dev\` folder of a project and assume a build produced with Visual Studio 2017 on Windows\. The executable path and path separators will be different on other platforms\.
-
 See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts.md) or [Glossary](/docs/user-guide/appendix/glossary.md) for definitions of terms used in this reference\.
 
 ## General Use {#asset-bundler-command-line-reference-general}
@@ -51,7 +48,7 @@ See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bund
 AssetBundlerBatch command --parameterWithArgs arg1,arg2 --flagParameter ...
 ```
 
- The `AssetBundlerBatch` executable is contained in the `dev\Bin64HostPlatform` folder of your project\. For example, when building on PC with Visual Studio 2017, the asset processor is located at `dev\Bin64vc141`\.
+ The `AssetBundlerBatch` executable is contained in the `dev\Bin64HostPlatform` folder of your project\.
 
 The elements in this example invocation break down to:
 +  `command` \- The command for the asset bundler to run\. Examples include `seeds` and `assetLists`\.

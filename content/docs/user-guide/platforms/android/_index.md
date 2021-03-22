@@ -42,7 +42,7 @@ weight: 100
 +
 
   The required minimum development SDKs:
-  +  Microsoft Visual Studio 2019 or 2017\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
+  +  Microsoft Visual Studio 2019. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
   + Android NDK r21
   + Android SDK API level 28 \(Android 9\.0 - Pie\)\. The following libraries and tools are required as part of the SDK installation\.
     + Google Play APK Expansion Library
