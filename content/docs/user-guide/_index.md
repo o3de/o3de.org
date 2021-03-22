@@ -16,7 +16,7 @@ Welcome to the O3DE User Guide! This documentation contains information and guid
 
 Welcome to the O3DE User Guide! This documentation contains information and guidance for users working on an O3DE project.
 
-+ Read about [the features provided by Open 3D Engine](features.md).
++ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/features-intro.md).
 
 | Documentation                        | Details |
 |--------------------------------------|---------|
