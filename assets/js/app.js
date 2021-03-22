@@ -10,7 +10,7 @@ const navbarBurger = () => {
 }
 
 $(() => {
-  console.log("Welcome to the CNCF's Hugo + Netlify starter");
+  // console.log("Welcome to the CNCF's Hugo + Netlify starter");
 
   navbarBurger();
 });
@@ -23,8 +23,12 @@ $(function() {
   $("#accordionExample .card a").each(function(){
        if($(this).attr("href") == url || $(this).attr("href") == '' ) {
         $(this).addClass("currentPage");
-        
         $(this).closest(".card-body").parent().addClass("show");
        }
   })
+  console.log ($('.currentPage').first().offset().top);
+
+  $('.docs-sidebar').animate({
+    scrollTop: ($('.currentPage').first().offset().top - 75)
+  },500);
 });
