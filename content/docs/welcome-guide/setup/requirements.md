@@ -1,6 +1,7 @@
 ---
-description: ' View the system requirements for Open 3D Engine. '
-title: Open 3D Engine system requirements
+linktitle: System Requirements
+title: Open 3D Engine (O3DE) System Requirements
+description: View the system requirements for Open 3D Engine (O3DE).
 weight: 100
 ---
 
