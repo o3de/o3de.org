@@ -25,10 +25,11 @@ $(function() {
         $(this).addClass("currentPage");
         $(this).parents().addClass("currentLi");
         $(this).closest(".card-body").parent().addClass("show");
-        // $(this).parents(".section-nav-subsection").addClass("show");
        }
   })
   $('.currentLi').children().addClass("show");
+  $('.currentLi').children('i').removeClass("fa-chevron-right");
+  $('.currentLi').children('i').addClass("fa-chevron-down");
 
   $('.docs-sidebar').animate({
     scrollTop: ($('.currentPage').first().offset().top - 75)
