@@ -150,7 +150,7 @@ To inject the generated file automatically, add the `should_add_to_build` parame
 {{<note>}}
 
 Using the `should_add_to_build` parameter is not recommended for header files or other generated files that are not C\+\+ code that must be compiled and linked.
-{{</note>}
+{{</note>}}
 
 The following example shows some build injected output.
 
