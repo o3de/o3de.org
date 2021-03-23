@@ -6,11 +6,11 @@ description: >-
 weight: 200
 ---
 
-{{< preview-migrated >}}
+{{< preview-new >}}
 
 In order to support multiple native build toolchains, Open 3D Engine uses the [CMake build system](https://cmake.org/). While most configurable build systems make
-it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific ones. This is an alternative to other
-build systems where compiler toolchains are explicitly called.
+it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project and build files.
+This is an alternative to other build systems where compiler toolchains are explicitly called.
 
 Here's an example showing how to build the editor while also adding support for the `AtomSampleViewer` project, packaged as a Gem:
 
@@ -27,14 +27,14 @@ cmake --build windows_vs2019 --config profile --target Editor -- /m
 {{< /tab >}}
 {{< /tabs >}}
 
+O3DE requires CMake v3.19 or higher.
+
 ## Section topics
 
 | Topic | Description |
 | --- | --- |
 | [Configure and Build](./configure-and-build.md) | The full details on how to configure and build O3DE core, Gems, and projects. |
+| [CMake files for Gems](./gems.md) | How to write a CMake build file to use with a custom gem. |
+| [Packages](./packages.md) | Learn about O3DE's third-party package system, used to ship binaries along with your Gem or project. |
 | [CMake settings reference](./reference.md) | Reference for user-configurable CMake settings specific to O3DE. |
 | [Troubleshooting](./troubleshooting.md) | How to debug and troubleshoot CMake and build problems. |
-
-<!-- TODO -->
-<!-- | [CMake files for Gems](./gems.md) | How to write a CMake build file to use with a custom gem. | -->
-<!-- | [Third-party library distribution](./thirdparty.md) | How to integrate with the third party packaging download system for Gems which depend on other products. | -->

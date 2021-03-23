@@ -1,10 +1,10 @@
 ---
 title: Configure and Build
-description: Learn how to configure your Open 3D Engine builds with CMake, and then build O3DE projects with a native toolchain.
+description: Learn how to use the CMake build tools with Open 3D Engine.
 weight: 100
 ---
 
-{{< preview-migrated >}}
+{{< preview-new >}}
 
 Building your O3DE project with CMake is done in two steps: Creating platform- and toolchain-specific configuration files, and then running the build on them. For many projects you can combine these into a single command, but it's useful to know how to run through each step of the process individually, in case you want to make project changes without immediately rebuilding everything. CMake lets you configure and build from the command line, and offers a GUI tool for ease of use.
 
