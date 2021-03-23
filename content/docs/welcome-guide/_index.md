@@ -1,5 +1,5 @@
 ---
-linktitle: O3DE Welcome guide
+linktitle: O3DE Welcome Guide
 title: Welcome guide for Open 3D Engine
 weight: 100
 menu_uuid: welcome
@@ -9,11 +9,18 @@ description: "New to O3DE? Get started with an overview of it, along with tutori
 
 {{< preview-new >}}
 
-**Welcome to Open 3D Engine (O3DE)!** This guide is a short collection of topics and tutorials designed to help you understand O3DE and get up-and-running in short order.
-## Contents
-+ [Welcome to Open 3D Engine](welcome.md)
-+ [O3DE features](features-intro.md)
-+ [Key concepts](key-concepts.md)
-+ [Setting up Open 3D Engine](setup)
-+ [Open 3D Engine system requirements](setup/requirements.md)
-+ [Get started with Open 3D Engine](get-started)
+**Welcome to Open 3D Engine (O3DE)!** Are you a new user or contributor? This guide is a short collection of topics and tutorials designed to help you understand O3DE and get up-and-running in short order.
+
+![Introductory graphic for O3DE Welcome Guide.](/images/shared/welcomeguide/wg-welcome-page-color.png)
+
+## Welcome Guide Contents
+
+| Documentation    | Description                                                 |
+|------------------|-------------------------------------------------------------|
+| [O3DE features](features-intro.md) | Review the features you get with O3DE. |
+| [Key concepts](key-concepts.md)    | How does O3DE work? Understand O3DE at a high level. |
+| [Setting up Open 3D Engine](setup) | Get O3DE and set up your first development project. |
+| [Open 3D Engine system requirements](setup/requirements.md) | The hardware and software you need to use O3DE. |
+| [Get started with Open 3D Engine](get-started) | Walk through the development of a simple project with O3DE. |
+
+For more detailed docs, check out the [Open 3D Engine User Guide](/docs/user-guide/).
