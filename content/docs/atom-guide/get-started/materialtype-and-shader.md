@@ -17,20 +17,17 @@ When creating custom materials and shaders, there are a couple of different file
 - `.azsl`: This file contains AZSL shader code. The AZSL shader code includes shader programs, shader inputs and outputs, and Shader Resource Groups. 
 - `.shader`: This file contains data that describes the shader and is structured in JSON format. It references the AZSL source file (_*.azsl_) and configures the AZSL shader compiler (AZSLc).
 - `.materialtype`: This file contains material type data and is structured in JSON format. A material type defines how a material behaves and what properties the material has. Material types also link to the shaders (_*.shader_) that are used to describe the material. 
-- `.material`: This file contains material data and is structured in JSON format. Materials must be created from a material type. Materials inherit the material type's properties and shaders, and assigns values to them that describe the look of the material. Materials can be created using the Material Editor. 
+- `.material`: This file contains material data and is structured in JSON format. Materials must be created from a material type. Materials inherit the material type's properties and shaders. These properties' values are set in the `.material` file, describing the look of the material. Materials can be created using the Material Editor. 
 
 The Asset Processor is responsible for compiling and building assets from these files. To ensure that the Asset Processor recognizes these files, the files must be stored in the following ways:
 - **Gem**: You can share art assets between different projects using Gems.
 - **Project folder**: If you are working from a specific project, you can store art assets directly in your project folder. The Asset Processor must be configured to build this project folder. 
 - **Any directory**: You can configure the Asset Processor to recognize any directory by including that directory in the `AssetProcessorPlatformConfig.ini`.
 
-For the sake of this tutorial, a Gem is already set up for you in the directory `Gems\AtomTechSamples\ExampleShaders\Assets\Materials\Types`.   
-Create the following empty files:
+For the sake of this tutorial, we are going to author these files in an existing Gem. Note that the `.material` file will be created using the Material Editor later in the tutorial. Create the following empty files in the directory `Gems\AtomTechSamples\ExampleShaders\Assets\Materials\Types`:   
 - `MyUnlitColor.azsl`
 - `MyUnlitColor.shader`
 - `MyUnlitColor.materialtype`
-
-Note that the `.material` file will be created using the Material Editor later in the tutorial.
 
 ## 2. Author material type data (.materialtype)
 The `MyUnlitColor.materialtype` file contains the material type data in JSON format. Material types are responsible for:
