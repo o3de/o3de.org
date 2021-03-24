@@ -11,9 +11,9 @@ Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled w
 
 ## Shaders in the Asset Pipeline
 The Asset Processer has several builders that work together to process .shader, .azsl, .azsli, and .shadervariantlist files and produce all the assets needed by the runtime. These shader assets and shader variant assets are most often used by the pass system or by the material system. During the build process, the Shader Asset Builder converts the `.shader` file into `.azshader` file. The `.azsl` file is translated from AZSL to HLSL (Shader Model 6.3) using the **Amazon Shading Language Compiler (AZSLc)**. The translated code is then compiled by the platform compilers:
-- **D3D12**: DirectX HLSL Compiler with DXT emission.
-- **Vulkan**: DirectX HLSL Compiler with SpirV emission.
-- **Metal**: DirectX HLSL Compiler and [SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross) to generate metalSL emission. 
+- **D3D12**: DirectX shader compiler with DXT emission.
+- **Vulkan**: DirectX shader compiler with SpirV emission.
+- **Metal**: DirectX shader compiler and [SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross) to generate metalSL emission. 
 
 <!-- [todo] Link to new doc 'Shader build pipeline' -->
 

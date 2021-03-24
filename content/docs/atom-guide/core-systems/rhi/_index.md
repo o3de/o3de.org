@@ -12,8 +12,8 @@ weight: 600
 This section contains technical details about the Render Hardware Interface (RHI) in Atom. The RHI is a low-level layer in the rendering pipeline that communicates with the backend graphics API. The RHI Gems are part of Atom and you need at least one compatible backend for your platform to render something on screen. 
 
 The RHI layer supports three backends:
-- **DX12 backend**: Supported on PC hardware
-- **Vulkan backend**: Supported on PC and Android hardware
+- **DX12 backend**: Supported on Windows 10.
+- **Vulkan backend**: Supported on Windows 10 and Android hardware.
 - **Metal backend**: Supported on Apple Macintosh, iPad, and iPhone
 
 
