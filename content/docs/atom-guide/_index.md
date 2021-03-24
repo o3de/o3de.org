@@ -20,7 +20,7 @@ Welcome to the Atom Documentation! The Atom renderer is the graphics engine powe
 | [Atom Sample Viewer](atom-sample-viewer/_index.md) |  Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering.  |
 | [Tutorials and Examples](tutorials/_index.md) |  Interact with a collection of tutorials and examples about rendering with Atom. |
 | [Materials]() |  Learn about materials and material types that Atom provides. |
-| [Textures]() |  Learn about textures and streaming image assets in Atom. <!-- Not certain what specific topics this will contain - it will need to be updated with a better description. --> |
-| [Features]() |  Learn about features that Atom provides.  |
+| [Textures]() |  Learn about textures and other image assets in Atom. <!-- Not certain what specific topics this will contain - it will need to be updated with a better description and title. --> |
+| [Features]() |  Learn about graphics features and rendering techniques that Atom provides.  |
 | [Developer Guide](core-systems/_index.md) |  Dive into Atom’s rendering pipeline and learn about its core systems and how they work together. |
 | [Glossary](glossary.md) | A collection of terminology used in the Atom Documentation. |
