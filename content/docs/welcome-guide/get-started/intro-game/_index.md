@@ -2,7 +2,7 @@
 linktitle: Get Started
 title: Get Started With Your First O3DE Project
 weight: 300
-guide_img: "/images/welcomeguide/guide_img.png"
+guide_img: "/images/welcome-guide/guide_img.png"
 description: "Jump start your O3DE experience by walking through the creation and development of a simple game project."
 ---
 
@@ -10,7 +10,7 @@ description: "Jump start your O3DE experience by walking through the creation an
 
 ## Get Started With Your First Open 3D Engine (O3DE) Project
 
-**Coming soon.**
+{{< placeholder >}}
 
 | Topic                  | Description                                              |
 |------------------------|----------------------------------------------------------|
