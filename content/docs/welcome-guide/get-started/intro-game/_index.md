@@ -1,5 +1,5 @@
 ---
-linktitle: Get Started
+linktitle: Your First Project
 title: Get Started With Your First O3DE Project
 weight: 300
 guide_img: "/images/welcome-guide/guide_img.png"
