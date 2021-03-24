@@ -1,6 +1,6 @@
 ---
 linktitle: Material Types and Shaders
-title: "Get started with Material Types and Shaders"
+title: "Get Started with Material Types and Shaders"
 description: "Create your first material type and shader in the Atom renderer."
 toc: true
 ---
@@ -13,15 +13,15 @@ In this tutorial, you will create your first custom material type with a simple,
 - Creating a material from the new material type.
 
 ## 1. Set up the files
-When creating custom materials and shaders, there are a couple of different files involved: shader source code (_*.azsl_), shader asset (_*.shader_), material type(_*.materialtype_), and a material (_*.material_). This set of files depend on each other, each playing a key role in the material-shader workflow. 
+When creating custom materials and shaders, there are a couple of different files involved: shader source code (_*.azsl_), shader asset (_*.shader_), material type (_*.materialtype_), and a material (_*.material_). These files depend on each other, with each playing a key role in the material-shader workflow. 
 - `.azsl`: This file contains AZSL shader code. The AZSL shader code includes shader programs, shader inputs and outputs, and Shader Resource Groups. 
 - `.shader`: This file contains data that describes the shader and is structured in JSON format. It references the AZSL source file (_*.azsl_) and configures the AZSL shader compiler (AZSLc).
 - `.materialtype`: This file contains material type data and is structured in JSON format. A material type defines how a material behaves and what properties the material has. Material types also link to the shaders (_*.shader_) that are used to describe the material. 
 - `.material`: This file contains material data and is structured in JSON format. Materials must be created from a material type. Materials inherit the material type's properties and shaders, and assigns values to them that describe the look of the material. Materials can be created using the Material Editor. 
 
-The Asset Processor is responsible for compiling and building assets from these files. In order for these files to be recognized by the Asset Processor, the files must be stored in the following ways:
+The Asset Processor is responsible for compiling and building assets from these files. To ensure that the Asset Processor recognizes these files, the files must be stored in the following ways:
 - **Gem**: You can share art assets between different projects using Gems.
-- **Project folder**: If are working from a specific project, you can store art assets directly in your project folder. The Asset Processor must be configured to build this project folder. <link to docs about setting up projects in Lumberyard>
+- **Project folder**: If you are working from a specific project, you can store art assets directly in your project folder. The Asset Processor must be configured to build this project folder. 
 - **Any directory**: You can configure the Asset Processor to recognize any directory by including that directory in the `AssetProcessorPlatformConfig.ini`.
 
 For the sake of this tutorial, a Gem is already set up for you in the directory `Gems\AtomTechSamples\ExampleShaders\Assets\Materials\Types`.   
@@ -75,7 +75,7 @@ This results in the following example:
                     "type": "Color",					// Data type
                     "defaultValue": [ 0.5, 0.0, 0.5 ],	// Default value (depends on data type)
                     "connection": {						// Establish a connection between the property and a variable in the shader.
-                        "type": "ShaderInput",			// - Any changes made to this 'color' property serializes to the 'm_unlitColor' 
+                        "type": "ShaderInput",			// - Any changes made to this 'color' property serialize to the 'm_unlitColor' 
                         "id": "m_unlitColor"            // - variable in the UnlitSingleColor shader.
                     }
                 }
@@ -94,7 +94,7 @@ The above example accomplishes a couple of things:
 Linking to shaders exposes the shader variables to the material type. In this tutorial, the `color` property is connected to the variable `m_unlitColor`, which is defined inside `MyUnlitColor.azsl` and referenced by the `MyUnlitColor.shader` file. 
 
 For this tutorial, the MyUnlitColor material type links to a couple of shaders: 
-- `MyUnlitColor.shader`: This is the the shader we are creating in this tutorial. The color property is connected to the variable `m_unlitColor`, which is defined inside `MyUnlitColor.azsl` and referenced by the `MyUnlitColor.shader` file. 
+- `MyUnlitColor.shader`: This is the shader that we are creating in this tutorial. The color property is connected to the variable `m_unlitColor`, which is defined inside `MyUnlitColor.azsl` and referenced by the `MyUnlitColor.shader` file. 
 - `DepthPass.shader`: This shader is needed to write to the depth buffer.
 - `Shadowmap.shader`: This shader enables the object to cast a shadow.
 
@@ -158,7 +158,7 @@ Here is the complete `MyUnlitColor.materialtype` file:
 ```
 
 ## 3. Author shader asset source data (.shader)
-The shader asset source file (`.shader`) references the AZSL source file and defines metadata for configuring the shader compiler and indicates how the render pipeline should use this shader. 
+The shader asset source file (`.shader`) references the AZSL source file. This shader asset source file defines metadata for configuring the shader compiler, and indicates how the render pipeline should use this shader. 
 
 The `.shader` file is responsible for the following:
 - Referencing the AZSL source file (_*.azsl_).
@@ -212,7 +212,7 @@ Here is the complete MyUnlitColor.shader file:
 Breaking it down, MyUnlitColor.shader contains the following components:
 
 Source
-: This shader refers to the shader code defined in the AZSL source file, UnlitSingleColor.azsl.
+: This shader refers to the shader code that's defined in the AZSL source file, UnlitSingleColor.azsl.
 
 DepthStencilState
 : The `CompareFunc` property sets the comparison operator to `GreaterEqual`, in order to discard pixels that have depth values that are lower than the current value in the depth buffer and because Atom uses a separate depth pre-pass that runs before the lighting pass. This is necessary because the Atom renderer implements reverse depth buffers. 
@@ -224,7 +224,7 @@ CompilerHints
 : Set compiler hints for AZSLc. 
 
 Entry Points
-: By default, any functions start or end with `VS` or `PS` (corresponding to vertex and fragment shaders) are recognized by the asset builder as shader entry points. However, you can also specify the shader's entry points explicitly by specifying the function's name and the type of shader program.
+: By default, any functions that start or end with `VS` or `PS` (corresponding to vertex and fragment shaders) are recognized by the asset builder as shader entry points. To explicitly identify the shader's entry points, specify the function's name and the type of shader program.
 
 - The vertex shader's entry point is at the MainVS function. 
 - The fragment shader's entry point is at the MainPS function. 
@@ -233,7 +233,7 @@ DrawList
 : The name of the draw list where draw items using this shader should be queued for rendering.
 
 ## 4. Author AZSL shader code (.azsl)
-The vertex and frament shader programs are defined in the same file, UnlitSimpleColor.azsl. 
+The vertex and fragment shader programs are defined in the same file, UnlitSimpleColor.azsl. 
 
 The AZSL shader contains the following components:
 - #include directives
@@ -242,10 +242,10 @@ The AZSL shader contains the following components:
 - Vertex and fragment shader programs
 
 #### Includes
-At the very top of the file are a set of `#include` directives. A shader program can use shared Shader Resource Groups and reusable AZSL code, which are contained in .srgi and .azsli files. 
+At the very top of the file are a set of `#include` directives. A shader program can use shared Shader Resource Groups (SRGs) and reusable AZSL code, which are contained in .srgi and .azsli files. 
 
 #### Shader Resource Groups
-Shader Resourec Groups (SRGs) contain shader resources and uniforms. They are bound to a specific frequency (such as per frame view, per object, per material, and more). SRGs are designed to be shared across multiple shaders, so a material type can only have one SRG for each frequency.
+Shader Resource Groups (SRGs) contain shader resources and uniforms. SRGs are bound to a specific frequency (such as per frame view, per object, per material, and more). They are designed to be shared across multiple shaders, so a material type can only have one SRG for each frequency.
 
 In this tutorial, UnlitSimpleColor.azsl uses the following SRGs:  
 
@@ -263,7 +263,8 @@ MaterialSrg
 
 We define a material SRG based off of the `SRG_PerMaterial` semantic. `SRG_PerMaterial` contains data specific to the material. In this tutorial, we want to configure a single color of the material. 
 
-As shown in the following code, we define the SRG `UnlitColorSrg` and inherit from `SRG_PerMaterial`. Then, we define a `float3` variable `m_unlitColor` which holds a color value. Note that the variable `m_unlitColor` is the variable connected to the `color` property in the `MyUnlitColor.materialtype` file. 
+As shown in the following code, we define the SRG `UnlitColorSrg` and inherit from `SRG_PerMaterial`. Then, we define a `float3` variable `m_unlitColor`, which holds a color value. Note that the variable `m_unlitColor` is the variable connected to the `color` property in the `MyUnlitColor.materialtype` file. 
+
 ```hlsl
 ShaderResourceGroup UnlitColorSrg : SRG_PerMaterial
 {
@@ -274,10 +275,10 @@ ShaderResourceGroup UnlitColorSrg : SRG_PerMaterial
 #### Vertex and Fragment Shaders
 Shaders are only one part of the render pipeline – they must have inputs and outputs to keep the flow going. We define shader inputs and indicate their intended use by attaching HLSL semantics. Writing shader programs in AZSL follows similar practices as in HLSL.
 
-Shader inputs and outputs can be defined via either input/output variables or via a structure containing them. In AZSL, 
+Shader inputs and outputs can be defined via either input/output variables or via a structure containing them. 
 
 Vertex Shader
-: The vertex shader program entry points is defined in the function `MainVS`. This example is a simple vertex shader that transforms the object's position from model space to clip space by applying a series of matrix transformations. 
+: The vertex shader program entry point is defined in the function `MainVS`. This example is a simple vertex shader that transforms the object's position from model space to clip space by applying a series of matrix transformations. 
 
 The vertex shader inputs and outputs are defined inside the structs `VertexInput` and `VertexShaderOutput`. The type of input and output is indicated by HLSL semantics (see [Microsoft DirectX HLSL - Semantics](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics) documentation).
 
@@ -305,7 +306,7 @@ VertexShaderOutput MainVS(VertexInput IN)
 ```
 
 Fragment Shader
-: The fragment shader program entry points is defined in the function `MainPS` and takes as input `VertexInput`. The resulting fragment shader outputs are stored in the struct ForwardPassOutput. Since this is an unlit single shader color, we only need to set the values for diffuse color, albedo, and normal. 
+: The fragment shader program entry point is defined in the function `MainPS` and takes as input `VertexInput`. The resulting fragment shader outputs are stored in the struct ForwardPassOutput. Since this is an unlit single shader color, we only need to set the values for diffuse color, albedo, and normal. 
 
 Here is the fragment shader:
 ```hlsl
