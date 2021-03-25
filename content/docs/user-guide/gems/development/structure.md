@@ -13,7 +13,7 @@ Each gem package can contain the following:
 + An icon file
 + Code
 
-Gems which ship with O3DE are located in the `Gems` directory. For more information, see [Gems Available in O3DE](/docs/userguide/gems/ref.md).
+Gems that ship with O3DE are located in the `Gems` directory. For more information, see [Gems Available in O3DE](/docs/userguide/gems/ref.md).
 
 ### Topics
 
@@ -74,25 +74,25 @@ This example file contains metadata for the gem and the following properties.
 ```
 
 **GemFormatVersion**
-Version number that identifies how a gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
+The version number that identifies how a gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
 
 **Uuid**
-Unique ID that identifies the gem.
+The unique ID that identifies the gem.
 
 **Name**
-Name of the gem.
+The name of the gem.
 
 **DisplayName**
-Friendly name of the gem that appears in the Project Configurator.
+The user-facing name appears in the Project Configurator for the gem.
 
 **Summary**
-Short description of the gem.
+A short description of the gem. 
 
 **Tags**
-List of tags that describe the gem.
+A list of tags that describe the gem.
 
 **O3DEVersion**
-Version of O3DE to specify. The value can be one of the following:
+The version of O3DE to specify. The value can be one of the following:
 
 + An array of strings (for example, `["~>1.2.345.6789", "~>1.1.1", ">= 1.0"]`).
 + A single string that describes the constraint (for example, `"==1.2.3"`).
@@ -100,50 +100,24 @@ Version of O3DE to specify. The value can be one of the following:
 For more examples of acceptable version specifiers, see the list under [Dependencies](#dependencies).
 
 **Version**
-API version of the gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
+The API version of the gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
 
 **IconPath**
-Path from the gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
+The path from the gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
 
 **Modules**
-Code product that the gem produces. Each module entry can have the following fields:
+The code product that the gem produces. Each module entry can have the following fields:
 
-+ **Type** - Type of module that is defined. See [Module Types](#gem-module-types).
-+ **Name** - Name of the module. You use this name when you refer to the module, and in the module's output file name.
-+ **Extends** - Module to use as a base. The value can be only `"GameModule"` and you can use this field only for the following module types:
++ **Type** - The type of module that is defined. See [Module Types](#gem-module-types).
++ **Name** - The name of the module. You use this name when you refer to the module, and in the module's output file name.
++ **Extends** - The module to use as a base. The value can be only `"GameModule"` and you can use this field only for the following module types:
   + `EditorModule`
   + `Builder`
 
   If the module does not have a name, specify `"GameModule"`.
 
-  By default, this module takes the following fields from the extended module's build settings. If you specify any of the following values, they override the parent module.
-
-  + `file_list`
-  + `platforms`
-  + `configurations`
-  + `defines`
-  + `includes`
-  + `features`
-  + `lib`
-  + `libpath`
-  + `use`
-  + `uselib`
-
 **Dependencies**   {#dependencies}
-UUIDs and versions of other gems to which the gem depends. Acceptable version specifiers have an operator and a version number. Consider these examples:
-[\[See the AWS documentation website for more details\]](/docs/userguide/gems/structure)
-
-The following fields apply to `GemFormatVersion` 3 and earlier:
-
-**EditorModule**
-Defines whether the gem produces a module that is loaded by O3DE Editor.
-
-**LinkType**
-Defines how other gems and game projects should link to this gem:
-
-+ `Static` - Does not produce a `.dll` file and does not link.
-+ `Dynamic` - Produces a `.dll` file and links all dependent projects against the `.dll` file using an import library.
-+ `NoCode` - Does not produce a `.dll` or `.lib` file. The gem contains assets but not code. You can add a gem with the `NoCode` value to a game project without rebuilding.
+The UUIDs and versions of other gems that this gem depends on. Acceptable version specifiers have an operator and a version number.
 
 ### Module Types {#gem-module-types}
 
@@ -183,9 +157,6 @@ Directory that contains the following generated files:
 {{< note >}}
 This class can be made to extend `CryHooksModule` (in `IGem.h`) instead to have `gEnv` attached automatically.
 {{< /note >}}
-
-**Tests**
-`GemNameTest.cpp` - Contains an example for writing gtests for your gem, which are unit test files for your gem.
 
 ## Gem List File - gems.json {#gems-system-gem-list-file}
 

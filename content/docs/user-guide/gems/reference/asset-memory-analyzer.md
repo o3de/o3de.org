@@ -1,18 +1,18 @@
 ---
-description: Learn to profile memory usage in Open 3D Engine projects with the <guilabel>Asset Memory Analyzer.
+description: Learn to profile memory usage in Open 3D Engine projects with the Asset Memory Analyzer.
 title: Asset Memory Analyzer Gem
 ---
 
 {{< preview-migrated >}}
 
-Resource management is crtitcal, particularly on platforms where memory is limited. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs. It is an indispensable tool to balance memory usage and get the best performance for your project.
+Resource management is critical, particularly on platforms where memory is limited. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs. It is an indispensable tool to balance memory usage and get the best performance for your project.
 
-The **Asset Memory Analyzer** is an Open 3D Engine Gem that displays a table of heap and VRAM memory allocations per asset through the **ImGUI** \(Immediate Mode Graphical User Interface\) overlay. In addition to live display of memory allocations for assets loaded in the project, the **Asset Memory Analyzer** can export allocation data to `JSON` and `CSV` files.
-- [Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}](#enable-the-asset-memory-analyzer-enable-asset-memory-analyzer)
-- [View Live Asset Memory Analysis with **ImGUI** {#view-live-asset-memory-analysis}](#view-live-asset-memory-analysis-with-imgui-view-live-asset-memory-analysis)
-- [Export an Asset Memory Analysis Snapshot to a File {#export-asset-memory-analysis-to-file}](#export-an-asset-memory-analysis-snapshot-to-a-file-export-asset-memory-analysis-to-file)
-- [View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}](#view-a-json-asset-memory-analysis-snapshot-in-a-browser-view-json-snapshot-in-browser)
-- [Instrumenting Code for Asset Memory Analysis {#instrumenting-code}](#instrumenting-code-for-asset-memory-analysis-instrumenting-code)
+The **Asset Memory Analyzer** is an Open 3D Engine Gem that displays a table of heap and VRAM memory allocations per asset through the **ImGUI** (Immediate Mode Graphical User Interface) overlay. In addition to live display of memory allocations for assets loaded in the project, the **Asset Memory Analyzer** can export allocation data to `JSON` and `CSV` files.
+- [Enable the **Asset Memory Analyzer**](#enable-the-asset-memory-analyzer-enable-asset-memory-analyzer)
+- [View Live Asset Memory Analysis with **ImGUI**](#view-live-asset-memory-analysis-with-imgui-view-live-asset-memory-analysis)
+- [Export an Asset Memory Analysis Snapshot to a File](#export-an-asset-memory-analysis-snapshot-to-a-file-export-asset-memory-analysis-to-file)
+- [View a JSON Asset Memory Analysis Snapshot in a Browser](#view-a-json-asset-memory-analysis-snapshot-in-a-browser-view-json-snapshot-in-browser)
+- [Instrumenting Code for Asset Memory Analysis](#instrumenting-code-for-asset-memory-analysis-instrumenting-code)
 
 ## Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}
 
@@ -27,13 +27,13 @@ To use the **Asset Memory Analyzer**, enable asset scope tracking, configure and
     cmake --build <Build dir> --config profile --target <Your project> -- /m
     ```
 
-1. Set the CVAR `assetmem_enabled=1` via the Editor Console to enable asset memory analysis. To make the setting persistent, add `assetmem_enabled=1` to an appropriate config file such as `/dev/system_windows_pc.cfg`.
+1. Set the CVAR `assetmem_enabled=1` via the Editor Console to enable asset memory analysis. To make the setting persistent, add `assetmem_enabled=1` to an appropriate config file, such as `/dev/system_windows_pc.cfg`.
 
 ## View Live Asset Memory Analysis with **ImGUI** {#view-live-asset-memory-analysis}
 
 To view live asset memory allocation, enable the **ImGUI** overlay during gameplay and choose **Asset Memory Analyzer** in the **ImGUI** window.
 
-1. In the O3DE Editor, press Ctrl\+G or press the **Play** button to run your project.
+1. In the O3DE Editor, press Ctrl+G or press the **Play** button to run your project.
 
 1. Press the Home key to open the ImGUI overlay window.
 
@@ -41,7 +41,7 @@ To view live asset memory allocation, enable the **ImGUI** overlay during gamepl
 
 ![\[The ImGUI overlay dispalying the Asset Memory Analyzer.\]](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-A-1.22.png)
 
-Each recorded asset is displayed along with the number of allocations and total size in kilobytes for both heap and VRAM. Use the selections at the top of the **ImGUI** overlay window to sort the table by heap size, heap count, VRAM size, VRAM count or by asset label alphabetically.
+Each recorded asset is displayed along with the number of allocations and total size in kilobytes for both heap and VRAM. Use the selections at the top of the **ImGUI** overlay window to sort the table by heap size, heap count, VRAM size, VRAM count, or alphabetically by asset label.
 
 {{< note >}}
 The asset label is the full path for each asset from the root of the project folder.
@@ -57,7 +57,7 @@ Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files th
 + Click **Asset Memory Analyzer** in the **ImGUI** overlay window and choose **Export JSON** or **Export CSV**.
 ![\[Snapshot output options for the Asset Memory Analyzer.\]](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-C-1.22.png)
 + Use the console commands **assetmem_export_json** or **assetmem_export_csv** in the Editor Console to generate the file.
-+ Call `ExportJSONFile` or `ExportCSVFile` on the `AssetMemoryAnalyzerRequestBus` in C\+\+, with `nullptr` as the parameter, to generate the file in the default location.
++ Call `ExportJSONFile` or `ExportCSVFile` on the `AssetMemoryAnalyzerRequestBus` in C++, with `nullptr` as the parameter, to generate the file in the default location.
 
   ```
   EBUS_EVENT(AssetMemoryAnalyzerRequestBus, ExportJSONFile, nullptr);
@@ -66,7 +66,7 @@ Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files th
 The snapshot file is created in the project log directory located at `dev/Cache/ProjectName/pc/user/log` and named `assetmem-2020-01-30-11-45-25.json` or `.csv`.
 
 {{< note >}}
-Due to the limitations of the `CSV` format, only a top-level overview of assets will be written to `CSV`, *without* the hierarchical drill-down available in the `JSON` file or the **ImGUI** overlay window.
+Due to the limitations of the `CSV` format, only a top-level overview of assets will be written to `CSV`, *without* the hierarchical drill-down available for `JSON` files or the **ImGUI** overlay window.
 {{ /note }}
 ## View a JSON Asset Memory Analysis Snapshot in a Browser {#view-json-snapshot-in-browser}
 
@@ -80,7 +80,7 @@ Chromium based browsers are most reliable.
 
 The table can be sorted by any column. The columns give a breakdown by multiple categories:
 + **Heap** allocations and **VRAM** allocations
-+ **Local** summary not including any sub-assets and **Total** summary including all sub-assets
++ **Local** summary (not including any sub-assets), and **Total** summary (including all sub-assets)
 + **Number** of allocations and **Kilobytes** allocated
 
 Expanding assets will display individual allocations belonging to the asset and sub-assets that were loaded through references.
@@ -92,7 +92,7 @@ The fields at the top of the table can be used to filter the assets by their lab
 ## Instrumenting Code for Asset Memory Analysis {#instrumenting-code}
 
 **Initial Loading of an Asset**
-The **Asset Memory Analyzer** traps allocations \(heap and VRAM\) that occur during a slice of code execution or scope when an asset is active for recording. When a system begins loading a new asset, it should use the `AZ_ASSET_NAMED_SCOPE` macro to demarcate the C\+\+ scope in which that asset may be actively making allocations. For example:
+The **Asset Memory Analyzer** traps allocations (heap and VRAM) that occur during a slice of code execution or scope when an asset is active for recording. When a system begins loading a new asset, it should use the `AZ_ASSET_NAMED_SCOPE` macro to demarcate the C++ scope where that asset might be making allocations. For example:
 
 ```
 #include <AzCore/Debug/AssetMemoryDriller.h>
@@ -189,26 +189,28 @@ class MyEvents : public AZ::EBusTraits
 
 Some O3DE EBuses use this feature, such as the **TickBus**. If you find others that should use it, please add them\! You should not default to using this `EventProcessingPolicy` if it is not applicable.
 
-Instrumentation does create some overhead which can negatively affect your project's performance.
+Instrumentation does create some overhead, which can negatively affect your project's performance.
 
 Creating a new named scope requires:
-+ function calls
-+ an environment lookup
-+ locking a mutex
-+ two hashtable lookups
-+ thread-local modificationss
+
++ Function calls
++ An environment lookup
++ Locking a mutex
++ Two hashtable lookups
++ Thread-local modificationss
 
 Attaching to an existing scope requires:
-+ function calls
-+ an environment lookup
-+ locking a mutex
-+ a lookup in a large red-black tree
-+ thread-local modificationss
 
-Most often this is a relatively small cost, but it is significant enough that you should not use the `AZ_ASSET_ATTACH_TO_SCOPE` macro or use the `AssetTrackingEventProcessingPolicy` on your EBus gratuitously, especially if it is unlikely to attach to anything.
++ Function calls
++ An environment lookup
++ Locking a mutex
++ A lookup in a large red-black tree
++ Thread-local modifications
 
-When asset tracking is disabled, i.e. if the `AZ_ANALYZE_ASSET_MEMORY` macro remains undefined, there is zero cost to instrumentation of scopes. This is default in **performance** builds.
+Creating a scope is generally a small cost, but significant enough that you should not use the `AZ_ASSET_ATTACH_TO_SCOPE` macro or use the `AssetTrackingEventProcessingPolicy` on an EBus when not tracking assets.
+
+When asset tracking is disabled (`AZ_ANALYZE_ASSET_MEMORY` is undefined or `0`), there's no cost to instrumentation of scopes. This is default in **performance** builds.
 
 {{< note >}}
-EBuses that use the `AssetTrackingEventProcessingPolicy` will still have the indirection of a function call for each handler on the bus in **debug** builds only. Non-debug builds inline this function call away.
+Because `Debug` builds disable optimization, EBuses that use the `AssetTrackingEventProcessingPolicy` will still have the indirection of a function call for each instrumented EBus handler.
 {{< /note >}}

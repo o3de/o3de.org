@@ -1,19 +1,18 @@
 ---
-description: ' Get a high level overview of the concepts pertaining to O3DE
-  UI 2.0 component development using the custom Qt widget library. '
+description: Get a high-level overview of the concepts behind O3DE UI component development using the custom Qt widget library. 
 title: O3DE UI component development guidelines
 weight: 200
 ---
 
 {{< preview-migrated >}}
 
-For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) and the custom styling and behavior is applied automatically. Components that require extended functionality, or are unique to O3DE, are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
+For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to O3DE, are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
 
 ## Style sheets and StyleManager
 
 The O3DE UI is built upon [Qt Style Sheets](https://doc.qt.io/qt-5/stylesheet.html), which is a powerful mechanism for customizing the appearance of widgets. The concepts and syntax are similar to Cascading Style Sheets (CSS).
 
-In Qt Style Sheets, the `AzQtComponents` module has a `StyleManager` class, which installs a custom [QProxyStyle class](https://doc.qt.io/qt-5/qproxystyle.html) at the application level. The `QProxyStyle` class overrides the styling of all widgets with custom styling. This is how you can use a basic Qt widget(such as `QPushButton` or `QCheckBox`) and give it the custom styling.
+In Qt Style Sheets, the `AzQtComponents` module has a `StyleManager` class, which installs a custom [QProxyStyle class](https://doc.qt.io/qt-5/qproxystyle.html) at the application level. The `QProxyStyle` class overrides the styling of all widgets with custom styling. This is how you can use a basic Qt widget (such as `QPushButton` or `QCheckBox`) and give it custom styling.
 
 The StyleManager class is pre-loaded with a series of base style sheets, starting with `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/BaseStyleSheet.qss`.
 
@@ -23,7 +22,7 @@ This style sheet applies custom styling for each individual widget, each of whic
 
 Depending on your tools and existing code, accessing the new library of components might require some initial setup.
 
-If your tool is part of the core O3DE Editor or is part of a gem, and uses the O3DE Editor's Qt Application, you're already set up and ready to go. Just include the header for the component that you need to use from the `Code/Framework/AzQtComponents/AzQtComponents/Components` folder.
+If your tool is part of the core O3DE Editor or is part of a Gem which uses the Editor's Qt Application, you're already set up and ready to go. Just include the header for the component that you need to use from the `Code/Framework/AzQtComponents/AzQtComponents/Components` folder.
 
 For standalone tools with their own Qt Application, you must take some extra steps to make sure that the new styling is applied correctly.
 
@@ -54,7 +53,7 @@ For standalone tools with their own Qt Application, you must take some extra ste
 
 ## UI development best practices
 
-Writing code to extend the core O3DE Editor? Here are some high level suggestions to comply with the UI guidelines:
+Writing code to extend the core O3DE Editor? Here are some high-level suggestions to comply with the UI guidelines:
 
 + The UI styling uses an AWS standard color palette, which includes grays and blues. Creating a custom style and color override will have your tool looking inconsistent with the rest of the O3DE Editor. We suggest avoiding custom style overrides whenever possible so that O3DE appears as one cohesive application.
 + The Editor now supports vector file formats for icons, which prevents them from appearing blurry or pixelated on high DPI displays. Make sure to use SVG files for your icons, and replace old PNGs and JPGs with vector graphics images in existing tools if possible.
@@ -70,7 +69,7 @@ Yes. Please note that not all settings will be covered by this tool. Use this ex
 
 ### What about visual and color modifications to the controls?
 
-We do not endorse custom modifications to the layout and visual design as we want to support an experience that feels unified across all of our tooling. Nonetheless, sometimes minor spacing and style adjustments may be needed. See the Stylesheet page of the [Control Gallery tool](uidev-control-gallery.md) for more information on how to load a custom QSS style sheet.
+We do not endorse custom modifications to the layout and visual design, because we want to support an experience that feels unified across all of our tooling. Still, sometimes minor spacing and style adjustments might be needed. See the Stylesheet page of the [Control Gallery tool](uidev-control-gallery.md) for more information on how to load a custom QSS style sheet.
 
 ### Why should I use the existing widget styling instead of creating my own?
 
