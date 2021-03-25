@@ -76,6 +76,7 @@ This example file contains metadata for the Gem and the following properties.
 **GemFormatVersion**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 The version number that identifies how a Gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a Gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
 
 **Uuid**
@@ -117,6 +118,24 @@ A list of tags that describe the gem.
 =======
 A list of tags that describe the Gem.
 >>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
+=======
+The version number that identifies how a gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
+
+**Uuid**
+The unique ID that identifies the gem.
+
+**Name**
+The name of the gem.
+
+**DisplayName**
+The user-facing name appears in the Project Configurator for the gem.
+
+**Summary**
+A short description of the gem. 
+
+**Tags**
+A list of tags that describe the gem.
+>>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
 
 **O3DEVersion**
 The version of O3DE to specify. The value can be one of the following:
@@ -127,6 +146,7 @@ The version of O3DE to specify. The value can be one of the following:
 For more examples of acceptable version specifiers, see the list under [Dependencies](#dependencies).
 
 **Version**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 The API version of the Gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
@@ -153,6 +173,16 @@ The code product that the gem produces. Each module entry can have the following
 The code product that the Gem produces. Each module entry can have the following fields:
 >>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
 
+=======
+The API version of the gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
+
+**IconPath**
+The path from the gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
+
+**Modules**
+The code product that the gem produces. Each module entry can have the following fields:
+
+>>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
 + **Type** - The type of module that is defined. See [Module Types](#gem-module-types).
 + **Name** - The name of the module. You use this name when you refer to the module, and in the module's output file name.
 + **Extends** - The module to use as a base. The value can be only `"GameModule"` and you can use this field only for the following module types:
@@ -164,6 +194,7 @@ The code product that the Gem produces. Each module entry can have the following
 **Dependencies**   {#dependencies}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 The UUIDs and versions of other Gems that this Gem depends on. Acceptable version specifiers have an operator and a version number.
 =======
 The UUIDs and versions of other gems that this gem depends on. Acceptable version specifiers have an operator and a version number.
@@ -171,6 +202,9 @@ The UUIDs and versions of other gems that this gem depends on. Acceptable versio
 =======
 The UUIDs and versions of other Gems that this Gem depends on. Acceptable version specifiers have an operator and a version number.
 >>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
+=======
+The UUIDs and versions of other gems that this gem depends on. Acceptable version specifiers have an operator and a version number.
+>>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
 
 ### Module Types {#gem-module-types}
 
