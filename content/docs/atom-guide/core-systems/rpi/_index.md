@@ -13,7 +13,7 @@ This section contains technical details about the Render Pipeline Interface (RPI
 | Contents                        | Details |
 |--------------------------------------|---------|
 | [RPI Overview](rpi.md) | An overview of the RPI in Atom. |
-| [RPI System](rpi-system.md) | The RPI System is the core component of the RPI. |
+| [RPI System](rpi-system.md) | Learn about the core components of the RPI. |
 |  |  |
 | [Pass System Overview](pass-system/pass-system.md) | An overview of the pass system in Atom. |
 | [Pass Template File Specification](pass-system/pass-template-file-spec.md) | JSON reference for pass template data. |
