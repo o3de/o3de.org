@@ -17,7 +17,7 @@ description: "New to O3DE? Get started with an overview of it, along with tutori
 
 | Documentation    | Description                                                 |
 |------------------|-------------------------------------------------------------|
-| [Quick Tour](quick-tour.md)   | Take a quick tour of Open #D Engine's editor and tools! |
+| [Quick Tour](quick-tour.md)   | Take a quick tour of Open 3D Engine's editor and tools! |
 | [O3DE features](features-intro.md) | Review the features you get with O3DE. |
 | [Key concepts](key-concepts.md)    | How does O3DE work? Understand O3DE at a high level. |
 | [Setting up Open 3D Engine](setup) | Get O3DE and set up your first development project. |
