@@ -14,7 +14,7 @@ This section contains technical details about the Render Hardware Interface (RHI
 The RHI layer supports three backends:
 - **DX12 backend**: Supported on Windows 10.
 - **Vulkan backend**: Supported on Windows 10 and Android hardware.
-- **Metal backend**: Supported on Apple Macintosh, iPad, and iPhone.
+- **Metal backend**: Supported on Apple Macintosh (Intel x86_64), iPad, and iPhone.
 
 
 | Contents                        | Details |
