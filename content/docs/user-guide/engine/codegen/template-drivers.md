@@ -35,7 +35,7 @@ To implement your template driver, override the following methods in the `Templa
 
 #### add\_dependency {#az-code-gen-template-drivers-templatedriver-class-methods-add-dependency}
 
-Call the `add_dependency` method to manually add a dependency for `az_code_gen`. The file path given should be absolute so that the render template can specify additional dependencies which CMake can't automatically detect. These dependencies might be external data files used to render the templates, or files that were used to generate the input data.
+Call the `add_dependency` method to manually add a dependency for `az_code_gen`. The file path given should be absolute so that the render template can specify additional dependencies that CMake can't detect. These dependencies might be external data files that are used to render the templates, or files that were used to generate the input data.
 
 **Syntax**
 
@@ -72,10 +72,10 @@ render_template_to_file(self, template_file, template_kwargs, output_file, shoul
 
 | Parameter | Description |
 | --- | --- |
-| template\_file | Specifies the path to a template relative to the directory that contains the template driver .py file. |
-| template\_kwargs | Specifies a dictionary of key-value pairs to be passed to Jinja. Generally this should be treated as a passthrough variable for the jinja\_args given to render\_templates, but you can add additional key-value pairs. |
+| template\_file | Specifies the path to a template, relative to the directory that contains the template driver .py file. |
+| template\_kwargs | Specifies a dictionary of key-value pairs to be passed to Jinja. This value should be treated as a passthrough variable for the `jinja_args` given to `render_templates`, but you can add additional key-value pairs. |
 | output\_file | Specifies the target file for the rendered Jinja output. The path is relative to the target output folder. |
-| should\_add\_to\_build | A Boolean value that specifies whether to add as a build dependency. The default is false. |
+| should\_add\_to\_build | A Boolean value that specifies whether to add the output file as a dependency. The default is false. |
 
 ### render\_templates {#az-code-gen-template-drivers-templatedriver-class-methods-render-templates}
 
@@ -139,7 +139,7 @@ The `render_templates` method takes the relative `input_file` path and any argum
 
 Template drivers can extend this information by implementing the `apply_transformations` method. For more information, see [Preprocessing Intermediate Data](#az-code-gen-template-drivers-pre-processing-intermediate-data).
 
-The `render_template_to_file` method takes a template file and argument key-value pairs to pass into the template engine directly and an output path to write the template engine render output to disk.
+The `render_template_to_file` method takes a template file and argument key-value pairs to pass into the template engine directly, and an output path to write the template engine render output to disk.
 
 ## Configuring Automatic Build Injection {#az-code-gen-template-drivers-configuring-automatic-build-injection}
 
