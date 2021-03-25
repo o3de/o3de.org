@@ -49,11 +49,9 @@ At the very top of the file are a set of `#include` directives. A shader program
 For this tutorial, you need the following #include directives:
 
 * `viewsrg.srgi`: Defines a shared view SRG.
-* `DefaultDrawSrg.azsli`: Contains reusable AZSL code that defines a draw SRG.
 * `DefaultObjectSrg.azsli`: Defines an object SRG.
 * `ForwardPassOutput.azsli`: Defines a ForwardPassOutput struct. 
 * `SrgSemantics.azsl`: Defines SRG semantics. Anytime you want to define an SRG, the SRG must inherit from an SRG semantic. 
-* `TransformColor.azsli`: This AZSL code defines __[todo]_. 
 
 To use #include directives, add the following code in the `MyUnlitColor.azsl`:
 
