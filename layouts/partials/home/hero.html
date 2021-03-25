@@ -1,10 +1,9 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
 <div class="scalable home-hero d-flex align-items-center">
-  <div class="jumbotron hero-inner">
-    <div class="container">
-      <div class="row">
-        <div class="col col-12 col-xl-7">
+  <div class="container-fluid hero-inner">
+    <div class="row">
+      <div class="col col-12 col-xl-5 pl-5">
           <h1 class="title">
             {{ $title }}
           </h1>
@@ -22,5 +21,4 @@
         </div>
       </div>
     </div>
-  </div>
 </div>

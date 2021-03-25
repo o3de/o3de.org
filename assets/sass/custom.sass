@@ -160,10 +160,6 @@ $width: '59vw';
 .home-hero 
   background-image: url('/img/home/hero.jpg')
   background-size: cover
-
-.download-hero 
-  background-image: url('/img/download/hero.jpg')
-  background-size: cover
     
 .hero-inner 
   margin-bottom: 0rem
@@ -171,7 +167,6 @@ $width: '59vw';
   color: $o3de-white
   .desc
     text-shadow: 8px 8px 8px #000
-
 
 .learnmore-cta 
   background-color: $o3de-green
@@ -183,6 +178,17 @@ $width: '59vw';
   &:hover 
     background-color: darken(#1E71EB, 10%)
 
+
+// layouts/partial/download/hero.html
+
+.download-hero 
+  background-image: url('/img/download/hero.jpg')
+  background-size: cover
+
+.active-os-cta
+  background-color: $o3de-blue
+  &:hover 
+    background-color: darken(#1E71EB, 10%)
 
 // layouts/partials/home/features.html 
 
