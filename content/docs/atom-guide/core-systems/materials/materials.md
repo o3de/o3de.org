@@ -49,7 +49,7 @@ In the following example, the material uses the **StandardPBR** material type an
 ```
 
 {{< note >}}
-The textures in the sample above can be found in the folder Gems/Atom/Feature/Common/Assets/Textures/Default/.
+The textures in the sample above can be found in `Gems/Atom/Feature/Common/Assets/Textures/Default`.
 {{< /note >}}
 
 ## Material Types
