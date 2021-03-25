@@ -1,6 +1,6 @@
 ---
-linktitle: O3DE User guide
-title: User guide for Open 3D Engine
+linktitle: User Guide
+title: Open 3D Engine User Guide (O3DE)
 description: ' Dive into the documentation for O3DE engine: Explore its features, understand how they work, and learn how to use them in your project. '
 weight: 300
 toc: true
@@ -9,10 +9,6 @@ guide_img: "/images/user-guide/guide_img.png"
 ---
 
 {{< preview-new >}}
-
-Welcome to the O3DE User Guide! This documentation contains information and guidance for users working on an O3DE project.
-
-## Open 3D Engine User Guide (O3DE)
 
 Welcome to the O3DE User Guide! This documentation contains information and guidance for users working on an O3DE project.
 
@@ -35,7 +31,7 @@ Welcome to the O3DE User Guide! This documentation contains information and guid
 | [Testing](testing/) | Learn how to test your O3DE components and project. |
 | [Visualization](visualization/) | Learn about Atom-based visualization components in O3DE. |
 
-### Reference Documentation
+## Reference Documentation
 
 | Documentation                        | Details |
 |--------------------------------------|---------|

@@ -1,7 +1,7 @@
 ---
-description: ' Learn about the tools used to create content in Open 3D Engine. '
-linktitle: Quick tour
+linktitle: Quick Tour
 title: Quick tour of tools available in Open 3D Engine
+description: Learn about the tools used to create content in Open 3D Engine.
 weight: 300
 ---
 

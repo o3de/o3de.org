@@ -1,8 +1,7 @@
 ---
-description: " Dive into how Open 3D Engine\u2019s tools and systems work together\
-  \ to help you create games and immersive experiences. "
-linktitle: Key concepts
-title: 'Key concepts: How Open 3D Engine works'
+linktitle: Key Concepts
+title: 'Key Concepts: How Open 3D Engine Works'
+description: Dive into how Open 3D Engine's tools and systems work together to help you create games and immersive experiences.
 weight: 200
 ---
 
