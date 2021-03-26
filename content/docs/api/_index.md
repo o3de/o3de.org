@@ -1,6 +1,6 @@
 ---
-linktitle: O3DE API references
-title: API references for Open 3D Engine
+linktitle: API Reference
+title: API Reference for Open 3D Engine, Atom, and pre-packed Gems.
 description: The public API reference for Open 3D Engine builtin Gems and libraries.
 weight: 600
 menu_uuid: api

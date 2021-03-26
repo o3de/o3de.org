@@ -1,7 +1,7 @@
 ---
-description: ' Open 3D Engine resources and links. '
-title: Community support
-weight: 400
+title: Community Support
+description: Open 3D Engine (O3DE) resources and links.
+weight: 600
 ---
 
 {{< preview-migrated >}}

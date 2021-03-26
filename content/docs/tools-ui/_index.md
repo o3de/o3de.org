@@ -1,6 +1,6 @@
 ---
-linktitle: O3DE Tools UI development guide
-title: Tools UI development guide for Open 3D Engine
+linktitle: Tools UI Developer's Guide
+title: Tools UI Developer's Guide for Open 3D Engine
 weight: 500
 menu_uuid: tools
 description: "Looking to build your own O3DE component? Read up on the UI style and implementation."

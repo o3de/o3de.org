@@ -1,5 +1,5 @@
 ---
-linktitle: O3DE Welcome Guide
+linktitle: Welcome
 title: Welcome to Open 3D Engine!
 weight: 100
 menu_uuid: welcome
