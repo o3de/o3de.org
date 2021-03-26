@@ -21,10 +21,13 @@ The O3DE base repository is on GitHub at [https://github.com/o3de/o3de](https://
 
 At a high level, the workflow is:
 
-    1. Create a branch from the local clone of your fork, do your work, push it to your fork (origin), and submit a pull request from your fork to the O3DE GitHub repo (upstream).
-    2. Your pull request is checked for merge conflicts. If one is found, the pull request is rejected.
-    3. If there are no merge conflicts, automated review (AR) is triggered and the pull request is flagged for code review.
-    4. If the pull requests passes code review, the SIG owner (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
+1. Create a branch from the local clone of your fork, do your work, push it to your fork (origin), and submit a pull request from your fork to the O3DE GitHub repo (upstream).
+
+2. Your pull request is checked for merge conflicts. If one is found, the pull request is rejected.
+
+3. If there are no merge conflicts, automated review (AR) is triggered and the pull request is flagged for code review.
+
+4. If the pull requests passes code review, the SIG owner (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
 
 ### Initial Git contribution workflow steps
 
