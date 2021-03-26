@@ -1,12 +1,12 @@
 ---
-description: Learn how Open 3D Engine gems are structured and the files that you can modify to customize gems for your game. 
+description: Learn how Open 3D Engine Gems are structured and the files that you can modify to customize Gems for your game. 
 title: Gem structure
 weight: 50
 ---
 
 {{< preview-migrated >}}
 
-Each gem package can contain the following:
+Each Gem package can contain the following:
 
 + Assets
 + A `gem.json` file
@@ -27,17 +27,17 @@ Gems that ship with O3DE are located in the `Gems` directory. For more informati
 
 ## Gem Assets {#gem-assets-directory}
 
-Each gem has an `Assets` directory that contains models, textures, scripts, and animations. Asset files are accessed the same way as they are in a game project. O3DE uses this root directory to find the asset file path. For example, when O3DE looks for the `textures\rain\rainfall_ddn.tif` file, it looks in the `<GemName>\Assets\textures\rain\rainfall_ddn.tif` directory.
+Each Gem has an `Assets` directory that contains models, textures, scripts, and animations. Asset files are accessed the same way as they are in a game project. O3DE uses this root directory to find the asset file path. For example, when O3DE looks for the `textures\rain\rainfall_ddn.tif` file, it looks in the `<GemName>\Assets\textures\rain\rainfall_ddn.tif` directory.
 
 ## Gem Icon File {#gem-icon-file}
 
-The gem icon is a `.jpg`, `.png`, or `.gif` file. The following example is the icon for the [Lightning Arc Gem](/docs/userguide/gems/builtin/lightning-arc.md).
+The Gem icon is a `.jpg`, `.png`, or `.gif` file. The following example is the icon for the [Lightning Arc Gem](/docs/userguide/gems/builtin/lightning-arc.md).
 
-![\[Icon file for the Lightning Arc gem.\]](/images/userguide/gem-icon-example.png)
+![\[Icon file for the Lightning Arc Gem.\]](/images/userguide/gem-icon-example.png)
 
 ## Example Gem JSON File {#gem-json-file}
 
-This example file contains metadata for the gem and the following properties.
+This example file contains metadata for the Gem and the following properties.
 
 ```json
 {
@@ -74,22 +74,22 @@ This example file contains metadata for the gem and the following properties.
 ```
 
 **GemFormatVersion**
-The version number that identifies how a gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
+The version number that identifies how a Gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a Gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
 
 **Uuid**
-The unique ID that identifies the gem.
+The unique ID that identifies the Gem.
 
 **Name**
-The name of the gem.
+The name of the Gem.
 
 **DisplayName**
-The user-facing name appears in the Project Configurator for the gem.
+The user-facing name appears in the Project Configurator for the Gem.
 
 **Summary**
-A short description of the gem. 
+A short description of the Gem. 
 
 **Tags**
-A list of tags that describe the gem.
+A list of tags that describe the Gem.
 
 **O3DEVersion**
 The version of O3DE to specify. The value can be one of the following:
@@ -100,13 +100,13 @@ The version of O3DE to specify. The value can be one of the following:
 For more examples of acceptable version specifiers, see the list under [Dependencies](#dependencies).
 
 **Version**
-The API version of the gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
+The API version of the Gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
 
 **IconPath**
-The path from the gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
+The path from the Gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
 
 **Modules**
-The code product that the gem produces. Each module entry can have the following fields:
+The code product that the Gem produces. Each module entry can have the following fields:
 
 + **Type** - The type of module that is defined. See [Module Types](#gem-module-types).
 + **Name** - The name of the module. You use this name when you refer to the module, and in the module's output file name.
@@ -117,32 +117,32 @@ The code product that the gem produces. Each module entry can have the following
   If the module does not have a name, specify `"GameModule"`.
 
 **Dependencies**   {#dependencies}
-The UUIDs and versions of other gems that this gem depends on. Acceptable version specifiers have an operator and a version number.
+The UUIDs and versions of other Gems that this Gem depends on. Acceptable version specifiers have an operator and a version number.
 
 ### Module Types {#gem-module-types}
 
-Following are module types and how to define them. For examples of gems with module types defined, see [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md).
+Following are module types and how to define them. For examples of Gems with module types defined, see [Gem Configuration Examples](/docs/userguide/gem-configuration-examples.md).
 
 **GameModule**
-The most basic type of module. If you used gems before, your gems produce this type of module by default. These modules are loaded by O3DE Setup Assistant and O3DE Editor.
-If a gem has more than one `GameModule` type, you can omit the `Name` field for one `GameModule` type. This allows a gem's product `.dll` file to keep the same name when you upgrade to `GemFormatVersion` 4.
+The most basic type of module. If you used Gems before, your Gems produce this type of module by default. These modules are loaded by O3DE Setup Assistant and O3DE Editor.
+If a Gem has more than one `GameModule` type, you can omit the `Name` field for one `GameModule` type. This allows a Gem's product `.dll` file to keep the same name when you upgrade to `GemFormatVersion` 4.
 
 **EditorModule**
 Loaded by O3DE Editor. If an `EditorModule` extends a `GameModule`, the `EditorModule` is loaded instead of the `GameModule` in O3DE Editor. This is useful when an `EditorModule` contains the same components as a `GameModule`, along with their editor components.
 
 **StaticLib**
-Module type that is useful when your gem requires helper code that is linked to all dependents of your gem, or when your gem provides only statically usable code. All modules in all gems that require this gem have this `StaticLib` linked against it.
+Module type that is useful when your Gem requires helper code that is linked to all dependents of your Gem, or when your Gem provides only statically usable code. All modules in all Gems that require this Gem have this `StaticLib` linked against it.
 
 **Builder**
 Used by Asset Processor for building assets. For more information, see [Creating a Custom Asset Builder](/docs/userguide/asset-builder-custom.md).
 
 ## Gem Code {#gem-code-directory}
 
-You can find a gem's code in the `<GemName>\Code` directory. The directory contains the following:
+You can find a Gem's code in the `<GemName>\Code` directory. The directory contains the following:
 
 **Include/GemName**
-Directory contains headers that define the gem's public API.
-Other gems can include this directory. It should not contain implementations nor anything other than virtual function definitions. The gem template provides a default `GemNameBus.h` that contains a `GemNameRequestBus` interface, which defines public functionality.
+Directory contains headers that define the Gem's public API.
+Other Gems can include this directory. It should not contain implementations nor anything other than virtual function definitions. The Gem template provides a default `GemNameBus.h` that contains a `GemNameRequestBus` interface, which defines public functionality.
 For more information, see [Working with the Event Bus (EBus) system](/docs/userguide/programming/ebus/intro.md).
 
 **Source**
@@ -180,7 +180,7 @@ You can find the `gems.json` list file at the root of each project directory.
 
 ## Accessing Gems in Code {#accessing-gems-in-code}
 
-You can access gems through code, as in the following example:
+You can access Gems through code, as in the following example:
 
 ```cpp
 >#include <GemName/GemNameBus.h>
