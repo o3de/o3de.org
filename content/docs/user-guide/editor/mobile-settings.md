@@ -86,7 +86,7 @@ After you make changes and save, the **Project Settings Tool** prompts you to re
 
 ![\["For new settings to be applied the project must be reconfigured. Would you like to run configure now?"\]](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure.png)
 
-If you choose to run the `configure` command, the output appears at the bottom of the window. Once the results display "Reconfiguration Finished," you can use the **Deployment Tool** to deploy to your device with the new changes.
+If you choose to run the `configure` command, the output appears at the bottom of the window. When the results display "Reconfiguration Finished," you can use the **Deployment Tool** to deploy to your device with the new changes.
 
 **Note**
 If you want to deploy your changes immediately, choose **Yes**. O3DE Editor doesn't automatically run the `configure` command and will not prompt you to do so later.
@@ -112,7 +112,6 @@ The **Base Settings** properties apply to both Android and iOS.
 | Game Folder |  Directory name that stores all of the project's code and resources. This value should not be changed.  |
 | Game Dll Name |  File name of the DLL used to load the game. This value should not be changed.  |
 | Output Folder |  Directory to which the packaged project is exported after being built.  |
-| Code Folder |  A legacy setting that specifies the directory that contains code for the project.  |
 
 ### Android Settings {#mobile-project-settings-tool-properties-android}
 

@@ -66,9 +66,9 @@ Usage: `AzCodeGenerator.exe [options]`
 | -include-path=<string> | Code parsing | The header includes the path. |
 | -inclusion-filter=<string> | Code filtering | Specifies a wildcard filter so that files other than those specified by input-files are parsed by Clang into intermediate data. |
 | -info-output-file=<filename> | General | File to which to append -stats output. |
-| -input-file=<string> | Code parsing | (Required) The path to input file, relative to `input-path`. |
+| -input-file=<string> | Code parsing | (Required) The path to the input file, relative to `input-path`. |
 | -input-path=<string> | Code parsing | (Required) The absolute path to the input folder. All input-file paths must be relative to this folder. |
-| -intermediate-file=<string> | Code parsing | Path to a file that stores the JSON AST from Clang parsing. |
+| -intermediate-file=<string> | Code parsing | The path to a file that stores the JSON AST from Clang parsing. |
 | -JSON | General | Uses raw JSON input for the front end. |
 | -noscripts | General | Disables the running of code generation scripts. |
 | -OnlyRunDiagnosticsOnMainFile | Clang compilation | Runs diagnostics (error and warning checking) only on the main file that is compiled. Ignores errors and warnings from all other files. |
