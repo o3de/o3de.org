@@ -86,7 +86,6 @@ Start the game client and connect to the multiplayer session\.
    ```
 
 1. Launch the client\.
-   + For Visual Studio 2017: `lumberyard_install_dir\dev\Bin64vc141\`
    + For Visual Studio 2019: `lumberyard_install_dir\dev\Bin64vc142\`
 
 1. In the client, press the ``` \(grave\) key to open the console and enter the command `mpjoin server_ip_address.`

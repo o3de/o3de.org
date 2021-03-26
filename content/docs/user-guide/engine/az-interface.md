@@ -21,7 +21,7 @@ Likewise, you can use this syntax to invoke behaviors across systems for console
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
 + Improved performance\. Calls to the singleton are a virtual function call that can often even be de\-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call\.
 + Improved debuggability\. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within the Lumberyard engine\.
-+ Compatibility with code autocomplete in Visual Studio 2017 and 2019\.
++ Compatibility with code autocomplete in Visual Studio.
 
 `AZ::Interface` is defined as a C\+\+ template \(`template <T>`\) in the following header: `%INSTALL-ROOT%dev\Code\Framework\AzCore\AzCore\Interface\Interface.h`
 

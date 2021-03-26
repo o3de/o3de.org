@@ -12,7 +12,7 @@ A single *system entity* lives at the heart of every O3DE application\. The syst
 
 1. Compile a profile build of your project so that the Project Configurator can load your project's compiled code\.
 
-1. Open the O3DE Project Configurator, located at `lumberyard-version\dev\Bin64BuildPlatform\ProjectConfigurator.exe`\. For example, when using Visual Studio 2017 as your build platform, the Project Configurator is located at `lumberyard-version\dev\Bin64vc141\ProjectConfigurator.exe`\.
+1. Open the O3DE Project Configurator, located at `lumberyard-version\dev\Bin64BuildPlatform\ProjectConfigurator.exe`\. 
 
 1. In the Project Configurator, select your project\.
 

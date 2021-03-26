@@ -34,7 +34,18 @@
                   </a>
                   </li>
                 </ul>
-                {{ partial "section-nav-recurse.html" . }}
+                {{ range .CurrentSection.Pages }}
+                <ul class="section-nav-subsection">
+                  <li>
+                    {{ if .IsSection }}<i id="docs-chevron" class="fas fa-chevron-right"></i> {{ end }}<a class="section-nav-link" href="{{ .Permalink }}"> 
+                    {{ .Page.LinkTitle | markdownify }}
+                    </a>
+                      {{ if .IsSection }}
+                          {{ partial "section-nav-recurse.html" . }}
+                      {{ end }}
+                    </li>
+                  </ul>
+                {{ end }}
             </div>
           </div>
         </div>

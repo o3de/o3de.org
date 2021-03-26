@@ -14,16 +14,8 @@ O3DE features two types of Gems:
 + **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets\.
 + **Assets Only** - Contains only assets and no code\.
 
-All O3DE gems are located in the following directory:
-
-`lumberyard_version\dev\Gems`
-
-The gems that you enable are automatically detected and built through the integrated [Using the Waf Build System](/docs/userguide/waf/intro.md)\.
-
-**Note**
-To enable **Code & Assets** Gems, you must select the **Compile the game code** option in O3DE Setup Assistant\. This option is not required for **Assets Only** gems\. For more information, see [Running O3DE Setup Assistant](/docs/userguide/lumberyard-launcher-using.md)\.
-
-You can enable Gems with the [Project Configurator](/docs/userguide/configurator/projects.md) or the command line \([`Lmbr.exe`](/docs/userguide/lmbr-exe.md)\)\.
+All gems that come bundled with O3DE are located in the `Gems` directory. Enabled Gems are detected and set as dependencies for your project by
+the O3DE [build system](/docs/user-guide/build).
 
 **Topics**
 + [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)

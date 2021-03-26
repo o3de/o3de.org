@@ -1,7 +1,8 @@
 ---
-description: ' The Open 3D Engine Asset Bundler is a tool that you use to package and
+description: >-
+  The Open 3D Engine Asset Bundler is a tool that you use to package and
   deploy the actual assets that are used in your game. This tool also provides timelier
-  and more efficient content updates and patches. '
+  and more efficient content updates and patches.
 title: What is the Open 3D Engine Asset Bundler?
 weight: 100
 ---
@@ -13,10 +14,8 @@ The Asset Bundler is a command\-line tool, `AssetBundlerBatch.exe`, and a set of
 ## Prerequisites to use the Asset Bundler {#first-time-user}
 
 To use the Asset Bundler, your game project must meet the following criteria:
-+ You have O3DE version 1\.22 or later installed\.
-+ You have game project in O3DE version 1\.22 or later\. This is the project that you want to generate asset bundles for\.
 + The assets that you are bundling have been processed by the [Asset Processor](/docs/user-guide/assets/processor.md)\.
-+ You have Visual Studio 2017 or Visual Studio 2019 \(any edition\) installed and configured for C\+\+ development\.
++ You have Visual Studio 2019 \(any edition\) installed and configured for C\+\+ development\.
 
 ## Why use the Asset Bundler? {#related-services}
 

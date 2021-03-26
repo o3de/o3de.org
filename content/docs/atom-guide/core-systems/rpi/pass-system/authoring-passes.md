@@ -2,7 +2,8 @@
 title: "Authoring Passes"
 description: "Authoring Passes in Atom"
 date: 2021-03-09
-toc: false
+toc: true
+weight: 1200
 ---
 
 {{< preview-new >}}

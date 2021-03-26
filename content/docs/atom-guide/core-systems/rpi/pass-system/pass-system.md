@@ -2,7 +2,8 @@
 title: "Pass System"
 description: "Pass System in Atom"
 date: 2021-03-09
-toc: false
+toc: true
+weight: 1000
 ---
 
 {{< preview-new >}}

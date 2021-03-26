@@ -1,5 +1,6 @@
 ---
-title: "Render Pipeline Interface"
+linktitle: Overview
+title: "Render Pipeline Interface Overview"
 description: "Render Pipeline Interface in the Atom Renderer"
 date: 2021-03-04
 toc: false

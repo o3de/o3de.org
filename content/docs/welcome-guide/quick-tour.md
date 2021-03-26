@@ -13,7 +13,7 @@ These tools are available in the **Tools** menu of the **O3DE Editor**\.
 
 ## Animation Editor<a name="tool-animation-editor"></a>
 
-![\[O3DE Animation Editor.\]](/images/welcomeguide/ui-animation-editor-1.25.png)
+![\[O3DE Animation Editor.\]](/images/welcome-guide/ui-animation-editor-1.25.png)
 
 With **Animation Editor**, build animated *behaviors* for your *actors*\.
 
@@ -21,7 +21,7 @@ Use the Animation Editor to build animation loops and set up smooth transitions 
 
 ## FBX Settings<a name="tool-fbx-settings-editor"></a>
 
-![\[O3DE FBX Settings.\]](/images/welcomeguide/ui-fbx-settings-editor-1.25.png)
+![\[O3DE FBX Settings.\]](/images/welcome-guide/ui-fbx-settings-editor-1.25.png)
 
 The **FBX Settings** tool converts static `.fbx` meshes, actors, PhysX meshes, and motions into O3DE assets\.
 
@@ -31,7 +31,7 @@ To customize `.fbx` settings, find the asset in **Asset Browser**\. Right\-click
 
 ## Texture Settings Editor<a name="tool-texture-settings-editor"></a>
 
-![\[O3DE Texture Settings Editor.\]](/images/welcomeguide/ui-texture-settings-editor-1.25.png)
+![\[O3DE Texture Settings Editor.\]](/images/welcome-guide/ui-texture-settings-editor-1.25.png)
 
  **Texture Settings Editor** converts image files into O3DE assets\.
 
@@ -49,7 +49,7 @@ To customize the texture settings, find the image asset in **Asset Browser**\. R
 
 ## Asset Editor<a name="tool-asset-editor"></a>
 
-![\[O3DE Asset Editor.\]](/images/welcomeguide/ui-asset-editor-1.25.png)
+![\[O3DE Asset Editor.\]](/images/welcome-guide/ui-asset-editor-1.25.png)
 
 Create and edit O3DE\-specific assets in **Asset Editor**\.
 
@@ -57,7 +57,7 @@ O3DE has a small number of specialized assets such as *script events* that allow
 
 ## Level Inspector<a name="tool-level-inspector"></a>
 
-![\[O3DE Level Inspector.\]](/images/welcomeguide/ui-level-inspector-1.25.png)
+![\[O3DE Level Inspector.\]](/images/welcome-guide/ui-level-inspector-1.25.png)
 
 Add and modify level components in **Level Inspector**\.
 
@@ -65,7 +65,7 @@ Add and modify level components in **Level Inspector**\.
 
 ## Material Editor<a name="tool-material-editor"></a>
 
-![\[O3DE Material Editor.\]](/images/welcomeguide/ui-material-editor-1.25.png)
+![\[O3DE Material Editor.\]](/images/welcome-guide/ui-material-editor-1.25.png)
 
 Create and edit the appearance of the entities in your project with **Material Editor**\.
 
@@ -73,7 +73,7 @@ A material has a set of properties that determines how its surface reacts to phy
 
 ## Particle Editor<a name="tool-particle-editor"></a>
 
-![\[O3DE Particle Editor.\]](/images/welcomeguide/ui-particle-editor-1.25.png)
+![\[O3DE Particle Editor.\]](/images/welcome-guide/ui-particle-editor-1.25.png)
 
 Build layered, dynamic visual effects with **Particle Editor**\.
 
@@ -81,7 +81,7 @@ O3DE includes an advanced particle effects system that you can use to simulate e
 
 ## PhysX Configuration<a name="tool-physx-configuration"></a>
 
-![\[O3DE PhysX Configuration.\]](/images/welcomeguide/ui-physx-configuration-1.25.png)
+![\[O3DE PhysX Configuration.\]](/images/welcome-guide/ui-physx-configuration-1.25.png)
 
 Set the global PhysX properties for your project with **PhysX Configuration**\.
 
@@ -89,7 +89,7 @@ O3DE integrates NVIDIA PhysX for real\-time physics simulation\. With **PhysX Co
 
 ## Script Canvas<a name="tool-script-canvas"></a>
 
-![\[O3DE Script Canvas.\]](/images/welcomeguide/ui-script-canvas-1.25.png)
+![\[O3DE Script Canvas.\]](/images/welcome-guide/ui-script-canvas-1.25.png)
 
 Program logic and behaviors visually with **Script Canvas**\.
 
@@ -97,7 +97,7 @@ Program logic and behaviors visually with **Script Canvas**\.
 
 ## Terrain Editor<a name="tool-terrain-editor"></a>
 
-![\[O3DE Terrain Editor.\]](/images/welcomeguide/ui-terrain-editor-1.25.png)
+![\[O3DE Terrain Editor.\]](/images/welcome-guide/ui-terrain-editor-1.25.png)
 
 Create terrain with **Terrain Editor**\.
 
@@ -105,7 +105,7 @@ With **Terrain Editor**, you can paint heightmaps to create peaks and valleys in
 
 ## Terrain Tool<a name="tool-terrain-tool"></a>
 
-![\[O3DE Terrain Tool.\]](/images/welcomeguide/ui-terrain-tool-1.25.png)
+![\[O3DE Terrain Tool.\]](/images/welcome-guide/ui-terrain-tool-1.25.png)
 
 Add fine detail to terrain with **Terrain Tool**\.
 
@@ -113,7 +113,7 @@ With **Terrain Tool**, you can sculpt accurate details on your terrain and paint
 
 ## Track View<a name="tool-track-view"></a>
 
-![\[O3DE Track View.\]](/images/welcomeguide/ui-track-view-1.25.png)
+![\[O3DE Track View.\]](/images/welcome-guide/ui-track-view-1.25.png)
 
 Create cinematic sequences with **Track View**\.
 
@@ -121,7 +121,7 @@ Create cinematic sequences with **Track View**\.
 
 ## UI Editor<a name="tool-ui-editor"></a>
 
-![\[O3DE UI Editor.\]](/images/welcomeguide/ui-ui-editor-1.25.png)
+![\[O3DE UI Editor.\]](/images/welcome-guide/ui-ui-editor-1.25.png)
 
 Design dynamic user interfaces with **UI Editor**\.
 
@@ -129,7 +129,7 @@ You can use **UI Editor** to create, customize, and animate various game user in
 
 ## Audio Controls Editor<a name="tool-audio-controls-editor"></a>
 
-![\[O3DE Audio Controls Editor.\]](/images/welcomeguide/ui-audio-controls-editor-1.25.png)
+![\[O3DE Audio Controls Editor.\]](/images/welcome-guide/ui-audio-controls-editor-1.25.png)
 
 Map audio controls in **Audio Controls Editor**\.
 
@@ -137,7 +137,7 @@ Your project communicates all actions, events, and parameters to the audio syste
 
 ## Console Variables Editor<a name="tool-console-variables"></a>
 
-![\[O3DE Console Variables Editor.\]](/images/welcomeguide/ui-console-variables-1.25.png)
+![\[O3DE Console Variables Editor.\]](/images/welcome-guide/ui-console-variables-1.25.png)
 
 Find and set console variables in **Console Variables Editor**\.
 
@@ -145,13 +145,13 @@ O3DE has many console variables,or *CVARs*, that control all aspects of the edit
 
 ## Lens Flare Editor<a name="tool-lens-flare-editor"></a>
 
-![\[O3DE Lens Flare Editor.\]](/images/welcomeguide/ui-lens-flare-editor-1.25.png)
+![\[O3DE Lens Flare Editor.\]](/images/welcome-guide/ui-lens-flare-editor-1.25.png)
 
 Design unique lens flare effects for specific lights in **Lens Flare Editor**\.
 
 ## Sun Trajectory Tool<a name="tool-sun-trajectory-tool"></a>
 
-![\[O3DE Sun Trajectory Tool.\]](/images/welcomeguide/ui-sun-trajectory-tool-1.25.png)
+![\[O3DE Sun Trajectory Tool.\]](/images/welcome-guide/ui-sun-trajectory-tool-1.25.png)
 
 Create dynamic time\-of\-day lighting with the **Sun Trajectory Tool**\.
 
@@ -159,7 +159,7 @@ With **Sun Trajectory Tool**, you define the current time, sunrise and sunset, a
 
 ## Terrain Texture Layers<a name="tool-terrain-texture-layers"></a>
 
-![\[O3DE Terrain Texture Layers.\]](/images/welcomeguide/ui-terrain-texture-layers-1.25.png)
+![\[O3DE Terrain Texture Layers.\]](/images/welcome-guide/ui-terrain-texture-layers-1.25.png)
 
 Build realistic natural terrain with **Terrain Texture Layers**\.
 
@@ -167,7 +167,7 @@ Texture layers are used to create natural\-looking terrain that transitions betw
 
 ## Time of Day Editor<a name="tool-time-of-day"></a>
 
-![\[O3DE Time of Day Editor.\]](/images/welcomeguide/ui-time-of-day-editor-1.25.png)
+![\[O3DE Time of Day Editor.\]](/images/welcome-guide/ui-time-of-day-editor-1.25.png)
 
 Create natural lighting and atmosphere transitions over time with **Time of Day Editor**\.
 

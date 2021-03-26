@@ -19,7 +19,7 @@ O3DE has build support for the following platforms and toolchains:
 <!-- TODO: Add download links -->
 | Platform | Supported toolchains |
 | --- | --- |
-| Windows 64-bit | Visual Studio 2019, Visual Studio 2017 |
+| Windows 64-bit | Visual Studio 2019 |
 | macOS, iOS | XCode 11 or later |
 | Android | Android Studio |
 | Linux | Automake, Ninja (clang-6.0 required as compiler) |
@@ -62,7 +62,7 @@ When building using the CMake CLI, you'll need to have a build output directory 
 
     * `-B` : Location of build directory, where to put the generated files.
     * `-S` : Source directory, where the root CMake file is.
-    * `-G` : The type of generator to use. If you're using Visual Studio 2017, your generator is `Visual Studio 15 2017`.  
+    * `-G` : The type of generator to use.
   
     The other arguments are custom definitions (`-D`) for the build script, used by O3DE:  
 
@@ -81,7 +81,7 @@ CMake also offers an intuitive, GUI-based tool that you can use instead of the c
 
 * Set the *Where is the source code:* value to your O3DE directory.
 * Set the *Where to build your binaries:* value to a subdirectory of your O3DE directory where you want your build files and products to be generated.
-* Use `Visual Studio 16 2019` or `Visual Studio 15 2017` during configure.
+* Use `Visual Studio 16 2019` as your generator.
 * Your configure may fail at various points due to unset values. Make sure that you set the following parameters:
   * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
   * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.

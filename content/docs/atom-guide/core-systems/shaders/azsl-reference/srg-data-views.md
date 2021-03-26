@@ -1,4 +1,5 @@
 ---
+linktitle: Shader Resource Group Data Views
 title: Shader Resource Group (SRG) Data Views
 description: Learn about shader resource group (SRG) data views and how they fit into the O3DE Atom rendering system.
 ---
