@@ -11,7 +11,7 @@ description: "New to O3DE? Get started with an overview of it, along with tutori
 
 **Welcome to Open 3D Engine (O3DE)!** Are you a new user or contributor? This guide is a short collection of topics and tutorials designed to help you understand O3DE and get up-and-running in short order.
 
-![Introductory graphic for O3DE Welcome Guide.](/images/shared/welcome-guide/wg-welcome-page-color.png)
+![Introductory graphic for O3DE Welcome Guide.](/images/welcome-guide/wg-welcome-page-color.png)
 
 ## Welcome Guide Contents
 
