@@ -1,7 +1,7 @@
 ---
 linktitle: User Guide
-title: Open 3D Engine User Guide (O3DE)
-description: ' Dive into the documentation for O3DE engine: Explore its features, understand how they work, and learn how to use them in your project. '
+title: Open 3D Engine (O3DE) User Guide
+description: ' Dive into the documentation for Open 3D Engine (O3DE): Explore its features, understand how they work, and learn how to use them in your project. '
 weight: 300
 toc: true
 menu_uuid: user
