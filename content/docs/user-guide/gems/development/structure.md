@@ -75,6 +75,7 @@ This example file contains metadata for the Gem and the following properties.
 
 **GemFormatVersion**
 <<<<<<< HEAD
+<<<<<<< HEAD
 The version number that identifies how a Gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a Gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
 
 **Uuid**
@@ -93,22 +94,29 @@ A short description of the Gem.
 A list of tags that describe the Gem.
 =======
 The version number that identifies how a gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
+=======
+The version number that identifies how a Gem is built (folder structure and semantics) and determines compatibility with specific versions of O3DE. The version number is set automatically when you create a Gem in the Project Configurator. Gems have a default value of `4` for the `GemFormatVersion` field.
+>>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
 
 **Uuid**
-The unique ID that identifies the gem.
+The unique ID that identifies the Gem.
 
 **Name**
-The name of the gem.
+The name of the Gem.
 
 **DisplayName**
-The user-facing name appears in the Project Configurator for the gem.
+The user-facing name appears in the Project Configurator for the Gem.
 
 **Summary**
-A short description of the gem. 
+A short description of the Gem. 
 
 **Tags**
+<<<<<<< HEAD
 A list of tags that describe the gem.
 >>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
+=======
+A list of tags that describe the Gem.
+>>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
 
 **O3DEVersion**
 The version of O3DE to specify. The value can be one of the following:
@@ -120,6 +128,7 @@ For more examples of acceptable version specifiers, see the list under [Dependen
 
 **Version**
 <<<<<<< HEAD
+<<<<<<< HEAD
 The API version of the Gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
 
 **IconPath**
@@ -129,13 +138,20 @@ The path from the Gem directory to the display icon. The icon can be a `.jpg`, `
 The code product that the Gem produces. Each module entry can have the following fields:
 =======
 The API version of the gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
+=======
+The API version of the Gem. The version should follow the [Semantic Versioning](http://semver.org/) specification.
+>>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
 
 **IconPath**
-The path from the gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
+The path from the Gem directory to the display icon. The icon can be a `.jpg`, `.png`, or `.gif` file. The recommended icon size is 160 x 90 px.
 
 **Modules**
+<<<<<<< HEAD
 The code product that the gem produces. Each module entry can have the following fields:
 >>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
+=======
+The code product that the Gem produces. Each module entry can have the following fields:
+>>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
 
 + **Type** - The type of module that is defined. See [Module Types](#gem-module-types).
 + **Name** - The name of the module. You use this name when you refer to the module, and in the module's output file name.
@@ -147,10 +163,14 @@ The code product that the gem produces. Each module entry can have the following
 
 **Dependencies**   {#dependencies}
 <<<<<<< HEAD
+<<<<<<< HEAD
 The UUIDs and versions of other Gems that this Gem depends on. Acceptable version specifiers have an operator and a version number.
 =======
 The UUIDs and versions of other gems that this gem depends on. Acceptable version specifiers have an operator and a version number.
 >>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
+=======
+The UUIDs and versions of other Gems that this Gem depends on. Acceptable version specifiers have an operator and a version number.
+>>>>>>> 2ab0cdc5 (Fix casing of Gem where files were touched)
 
 ### Module Types {#gem-module-types}
 
