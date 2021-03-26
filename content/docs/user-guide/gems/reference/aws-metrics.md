@@ -1,9 +1,7 @@
 ---
-description: ' Open 3D Engine (O3DE) AWS Metrics Gem reference. '
+linktitle: AWS Metrics
 title: AWS Metrics Gem
-date: 2021-03-05
+description: Open 3D Engine (O3DE) AWS Metrics Gem reference.
 ---
 
-{{< preview-new >}}
-
-Coming soon.
+{{< placeholder >}}

@@ -1,9 +1,7 @@
 ---
-description: ' Open 3D Engine (O3DE) AWS Core Gem reference. '
+linktitle: AWS Core
 title: AWS Core Gem
-date: 2021-03-05
+description: Open 3D Engine (O3DE) AWS Core Gem reference.
 ---
 
-{{< preview-new >}}
-
-Coming soon.
+{{< placeholder >}}
