@@ -67,6 +67,7 @@ Usage: `AzCodeGenerator.exe [options]`
 | -inclusion-filter=<string> | Code filtering | Specifies a wildcard filter so that files other than those specified by input-files are parsed by Clang into intermediate data. |
 | -info-output-file=<filename> | General | File to which to append -stats output. |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | -input-file=<string> | Code parsing | (Required) The path to the input file, relative to `input-path`. |
 | -input-path=<string> | Code parsing | (Required) The absolute path to the input folder. All input-file paths must be relative to this folder. |
 | -intermediate-file=<string> | Code parsing | The path to a file that stores the JSON AST from Clang parsing. |
@@ -75,6 +76,11 @@ Usage: `AzCodeGenerator.exe [options]`
 | -input-path=<string> | Code parsing | (Required) The absolute path to the input folder. All input-file paths must be relative to this folder. |
 | -intermediate-file=<string> | Code parsing | Path to a file that stores the JSON AST from Clang parsing. |
 >>>>>>> 2e2f9f62 (Various editorial fixes (via #364))
+=======
+| -input-file=<string> | Code parsing | (Required) The path to the input file, relative to `input-path`. |
+| -input-path=<string> | Code parsing | (Required) The absolute path to the input folder. All input-file paths must be relative to this folder. |
+| -intermediate-file=<string> | Code parsing | The path to a file that stores the JSON AST from Clang parsing. |
+>>>>>>> 7506c167 (Apply suggestions from code review)
 | -JSON | General | Uses raw JSON input for the front end. |
 | -noscripts | General | Disables the running of code generation scripts. |
 | -OnlyRunDiagnosticsOnMainFile | Clang compilation | Runs diagnostics (error and warning checking) only on the main file that is compiled. Ignores errors and warnings from all other files. |
