@@ -34,24 +34,24 @@ At a high level, the workflow is:
 
 3. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo. Run the following Git commands from **your locally cloned fork's path**:
 
-        ```git
-        git remote add upstream https://github.com/o3de/o3de.git
-        ```
+    ```bash
+    git remote add upstream https://github.com/o3de/o3de.git
+    ```
 
     Confirm that `upstream` points to the O3DE public repo and that `origin` points to your fork:
 
-        ```git
-        git remote -v
-        ```
+    ```bash
+    git remote -v
+    ```
 
     Minimally, you should see output that looks like this:
 
-        ```output
-        origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (fetch)
-        origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (push)
-        upstream        https://github.com/o3de/o3de.git (fetch)
-        upstream        https://github.com/o3de/o3de.git (push)
-        ```
+    ```bash
+    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (fetch)
+    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (push)
+    upstream        https://github.com/o3de/o3de.git (fetch)
+    upstream        https://github.com/o3de/o3de.git (push)
+    ```
 
     You can also configure upstream to target specific branches, as well.
 
@@ -59,32 +59,33 @@ At a high level, the workflow is:
 
 5. Rebase the commit history to the last commit from the upstream `main` branch:
 
-        ```git
-        git rebase upstream/main
-        ```
+    ```bash
+    git rebase upstream/main
+    ```
 
 6. Check out the branch you will be working on and **take your own branch from it** to perform your work.
 
-        ```git
-        git checkout <name-of-fetched-branch>
-        ```
+    ```bash
+    git checkout <name-of-fetched-branch>
+    ```
+
     Confirm you have switched branches successfully with `git branch`. If you are on the branch you want, create your own branch from it:
 
-        ```git
-        git checkout -b <name-of-your-working-branch>
-        ```
+    ```bash
+    git checkout -b <name-of-your-working-branch>
+    ```
 
 ### Ongoing Git workflow steps
 
 Now, you're ready to do some work! After you've made some changes and saved your work, it's time to submit it as a pull request (PR) for review.
 
-1. First, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin) with the following commands. (**Check which branch you are on with `git branch`` first!**):
+1. First, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin) with the following commands. (**Check which branch you are on with `git branch` first!**):
 
-        ```git
-        git add .
-        git commit -s -m "<commmit_message>"
-        git push -u origin <your-branch-name>
-        ```
+    ```bash
+    git add .
+    git commit -s -m "<commmit_message>"
+    git push -u origin <your-branch-name>
+    ```
 
     This will push the update to your fork, and NOT the O3DE code repo.
 
