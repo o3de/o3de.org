@@ -1,6 +1,6 @@
 ---
 title: Community Support
-description: Open 3D Engine resources and links.
+description: Open 3D Engine (O3DE) resources and links.
 weight: 600
 ---
 
