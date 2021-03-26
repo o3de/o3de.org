@@ -16,7 +16,7 @@ In this tutorial, you will create a new material type with a simple, unlit color
 The process of developing a combination of shaders and materials that create an appearance for a surface is called *look development*. For Atom renderer, this process requires several interdependent files including the following: 
 - `.azsl`: This file contains AZSL shader code. The AZSL shader code includes  Shader Resource Groups, shader inputs and outputs, and shader programs.
 - `.shader`: This file contains data that describes the shader asset and is structured in JSON format. It references the `.azsl` file and configures the **AZSLc** shader compiler.
-- `.materialtype`: This file contains material type dat1. a and is structured in JSON format. A material type references one or more `.shader` files to create an appearance, defines properties for the material type, and links the material type properties to variables in the referenced shaders.
+- `.materialtype`: This file contains material type data, and is structured in JSON format. A material type references one or more `.shader` files to create an appearance, defines properties for the material type, and links the material type properties to variables in the referenced shaders.
 - `.material`: This file contains material data and is structured in JSON format. Materials must be created from a material type. Materials inherit the material type's properties and shaders. These properties' values are set in the `.material` file, describing the look of the material. Materials can be created using the Material Editor. 
 
 **Asset Processor** compiles run-time assets from these files. When a new asset file is saved to disk, or an existing asset file is modified, **Asset Processor** automatically detects the change and processes the files. For **Asset Processor** to detect new or updated files, the files must exist in a subdirectory of your project, or in a directory **Asset Processor** is monitoring. For this tutorial, use a project subdirectory named `Materials`.
@@ -37,7 +37,7 @@ The `.material` file is created using **Material Editor** later in the tutorial.
 {{< /note >}}
 
 ## 2. Author AZSL Shader Code (.azsl)
-First, you are going to write AZSL shader code in the `MyUnlitColor.azsl`. The AZSL shader contains the following components:
+First, you are going to write AZSL shader code in the `MyUnlitColor.azsl` file. The AZSL shader contains the following components:
 - #include directives
 - Shader Resource Groups (SRGs)
 - Vertex and fragment shader inputs and outputs
@@ -53,7 +53,7 @@ For this tutorial, you need the following #include directives:
 * `ForwardPassOutput.azsli`: Defines a ForwardPassOutput struct. 
 * `SrgSemantics.azsl`: Defines SRG semantics. Anytime you want to define an SRG, the SRG must inherit from an SRG semantic. 
 
-To use #include directives, add the following code in the `MyUnlitColor.azsl`:
+To use #include directives, add the following code in the `MyUnlitColor.azsl` file:
 
 ```glsl
 #include <viewsrg.srgi>
@@ -74,7 +74,7 @@ In this tutorial, MyUnlitColor.azsl uses the following SRGs:
 * MaterialSrg:  This is defined in this _.azsl_ file and contains data that is specific to the material type.
 
 #### Defining a Material SRG
-Next, you need to define a material SRG to store data that needs to be updated at a per material frequency. A material SRG must inherit an `SRG_PerMaterial` semantic. `SRG_PerMaterial` contains data specific to the material. In this tutorial, you want to configure a single color of the material, so the material SRG must contain a variable to hold the color value. 
+Next, you need to define a material SRG to store data that needs to be updated at a per-material frequency. A material SRG must inherit an `SRG_PerMaterial` semantic. `SRG_PerMaterial` contains data specific to the material. In this tutorial, you want to configure a single color of the material, so the material SRG must contain a variable to hold the color value. 
 
 As shown in the following code, define an SRG, `UnlitColorSrg` that inherits from `SRG_PerMaterial`. Then, define variable `m_unlitColor` that will hold a color value. 
 
@@ -90,7 +90,8 @@ The `MyUnlitColor.materialtype` file must establish a connection between `m_unli
 
 Next, you're going to write the vertex and fragment shaders that use these SRGs. 
 
-#### Vertex and Fragment Shaders
+#### Defining Vertex and Fragment Shaders
+In this step 
 Shaders are only one part of the render pipeline – they must have inputs and outputs to pass constant data and communicate with the rest of the pipeline. Writing shader programs in AZSL follows similar practices as in HLSL (see [Microsoft DirectX HLSL documentation](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl)). 
 
 Shader inputs and outputs can be defined via input/output variables or via a structure containing them. 
@@ -277,7 +278,7 @@ The `MyUnlitColor.materialtype` file contains the material type data in JSON for
 - Defining property groups
 - Defining material properties for property groups.
 
-#### Linking to shaders
+#### Linking to Shaders
 Linking to shaders in a `.materialtype` defines which shader(s) the material type will use to compute the appearance of the surface. It also exposes the variables of the shader(s) to the material type, so they can be linked to material properties. In this tutorial, the `color` property is connected to the variable `m_unlitColor`, which is defined inside `MyUnlitColor.azsl` and referenced by the `MyUnlitColor.shader` file. 
 
 For this tutorial, the MyUnlitColor material type links to a few shaders: 
@@ -305,7 +306,7 @@ This results in the following example:
 ```
 
 
-#### Defining material properties
+#### Defining Material Properties
 In a `.materialtype` file, material properties are defined in groups of properties within the `propertyLayout` container. The groups container arranges the properties into collapsible groups displayed in the **Inspector** of **Material Editor**. Each property has several attributes including an id, name, type, default value, and a link to a variable in one of the shaders referenced by the `.materialtype` file. 
 
 For this tutorial, we only have one material property: color. To define the color property in the propertyLayout container: 
@@ -396,7 +397,7 @@ At this point, we've finished writing the files `MyUnlitColor.materialtype`, `My
 
 **Asset Processor** monitors your project's subdirectories and automatically compiles and debugs assets when it detects new or updated files.
 
-If **Asset Processor** encounters an error, it will display a message above the system tray. To view the results of recently processed jobs, open **Asset Processor** by choosing its icon in the system tray. You can see the results for the most recent jobs by sorting the **Asset Status** list by **Completed** descending.
+If **Asset Processor** encounters an error, it displays a message above the system tray. To view the results of recently processed jobs, open **Asset Processor** by choosing its icon in the system tray. You can see the results for the most recent jobs by sorting the **Asset Status** list by **Completed** descending.
 
 If a job displays an error or warning, select the job in the **Asset Status** list and view the log in the **Event Log Details** list below. The event log will contain verbose information you can use to solve any errors or warnings emitted when specific assets are processed.
 
