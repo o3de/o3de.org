@@ -19,9 +19,13 @@ O3DE has a minimum set of hardware and software requirements for development, as
 
 Minimum hardware requirements include the following:
 
++ 3 GHz quad-core processor
++ 12 GB RAM
++ 2 GB VRAM DirectX 12 or later compatible video card
+  + NVIDIA GeForce GTX 750 or better
+  + AMD Radeon HD 8770 or better
 + 60 GB of free disk space
 + 1366 x 768 px screen resolution
-+ _Other specs for processor, memory, and video cards - coming soon._
 
 Required free disk space and RAM requirements are dependent on the options that you select when configuring your project in O3DE.
 
@@ -31,7 +35,7 @@ To create new projects or use advanced development features in O3DE, you need a 
 
 + [Microsoft Visual Studio 2019*](https://visualstudio.microsoft.com/downloads/) version **16.2.4** through version **16.9.x**
 + [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
-+ [CMake 3.19.1](https://cmake.org/files/LatestRelease/cmake-3.19.1-win64-x64.msi) or later
++ [CMake {{< versions/cmake >}} or later](https://cmake.org/download/)
 
 *Microsoft offers Visual Studio Community edition free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
 
