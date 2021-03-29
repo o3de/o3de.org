@@ -38,11 +38,12 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_script_canvas_1_1_validation_results-members.html">List of all members</a>  </div>
@@ -51,8 +52,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a667fc1a66a87f73fb2a4ba3e865d6191"><td class="memItemLeft" align="right" valign="top"><a id="a667fc1a66a87f73fb2a4ba3e865d6191"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ValidationEventList</b> = AZStd::vector&lt; ValidationConstPtr &gt;</td></tr>
+<tr class="separator:a667fc1a66a87f73fb2a4ba3e865d6191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac61cc079ab2b401fe46c41dad82691d4"><td class="memItemLeft" align="right" valign="top"><a id="ac61cc079ab2b401fe46c41dad82691d4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasResults</b> () const</td></tr>
+<tr class="separator:ac61cc079ab2b401fe46c41dad82691d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4e5edb90641cd21f09cfaa5e5180ec"><td class="memItemLeft" align="right" valign="top"><a id="a3c4e5edb90641cd21f09cfaa5e5180ec"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasErrors</b> () const</td></tr>
 <tr class="separator:a3c4e5edb90641cd21f09cfaa5e5180ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -68,9 +78,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>WarningCount</b> () co
 <tr class="memitem:a7eb3215bab2429bde4d202ec2e81c8e9"><td class="memItemLeft" align="right" valign="top"><a id="a7eb3215bab2429bde4d202ec2e81c8e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearResults</b> ()</td></tr>
 <tr class="separator:a7eb3215bab2429bde4d202ec2e81c8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03eb9225ed76233c748e8f7e51d26669"><td class="memItemLeft" align="right" valign="top"><a id="a03eb9225ed76233c748e8f7e51d26669"></a>
-const AZStd::vector&lt; <a class="el" href="class_script_canvas_1_1_validation_event.html">ValidationEvent</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEvents</b> () const</td></tr>
-<tr class="separator:a03eb9225ed76233c748e8f7e51d26669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0203e382992bf16900ea1176dfcfee91"><td class="memItemLeft" align="right" valign="top"><a id="a0203e382992bf16900ea1176dfcfee91"></a>
+const ValidationEventList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEvents</b> () const</td></tr>
+<tr class="separator:a0203e382992bf16900ea1176dfcfee91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a032de46d837a47e8edc3c90c6ead8"><td class="memItemLeft" align="right" valign="top"><a id="af2a032de46d837a47e8edc3c90c6ead8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddValidationEvent</b> (const <a class="el" href="class_script_canvas_1_1_validation_event.html">ValidationEvent</a> *validationEvent)</td></tr>
+<tr class="separator:af2a032de46d837a47e8edc3c90c6ead8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac822922154711f09c6eaf948f251e11f"><td class="memItemLeft" align="right" valign="top"><a id="ac822922154711f09c6eaf948f251e11f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddValidationEvent</b> (<a class="el" href="class_script_canvas_1_1_validation_event.html">ValidationEvent</a> *validationEvent)</td></tr>
 <tr class="separator:ac822922154711f09c6eaf948f251e11f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,7 +97,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Graph</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:24 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:40 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_node_requests.html">NodeRequests</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_node_requests.html">NodeRequests</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -96,10 +96,10 @@ const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> *&#160;<
 <tr class="memitem:aa1ae07186af1191118881e2538fbd2c9"><td class="memItemLeft" align="right" valign="top"><a id="aa1ae07186af1191118881e2538fbd2c9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FindModifiableDatumView</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId, <a class="el" href="class_script_canvas_1_1_modifiable_datum_view.html">ModifiableDatumView</a> &amp;datumView)=0</td></tr>
 <tr class="separator:aa1ae07186af1191118881e2538fbd2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be3cc7f69202d901a969848fe1a3cba"><td class="memItemLeft" align="right" valign="top"><a id="a9be3cc7f69202d901a969848fe1a3cba"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_node_requests.html#a9be3cc7f69202d901a969848fe1a3cba">SlotAcceptsType</a> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;, const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;) const =0</td></tr>
-<tr class="memdesc:a9be3cc7f69202d901a969848fe1a3cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the slot on this node with the specified slot id can accept values of the specified type. <br /></td></tr>
-<tr class="separator:a9be3cc7f69202d901a969848fe1a3cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64327180df5a3481b16093efd923ec2f"><td class="memItemLeft" align="right" valign="top"><a id="a64327180df5a3481b16093efd923ec2f"></a>
+virtual AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_node_requests.html#a64327180df5a3481b16093efd923ec2f">SlotAcceptsType</a> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;, const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;) const =0</td></tr>
+<tr class="memdesc:a64327180df5a3481b16093efd923ec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the slot on this node with the specified slot id can accept values of the specified type. <br /></td></tr>
+<tr class="separator:a64327180df5a3481b16093efd923ec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a714bda9e3f8297fb6310e25bb764577a"><td class="memItemLeft" align="right" valign="top"><a id="a714bda9e3f8297fb6310e25bb764577a"></a>
 virtual <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_node_requests.html#a714bda9e3f8297fb6310e25bb764577a">GetSlotDataType</a> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId) const =0</td></tr>
 <tr class="memdesc:a714bda9e3f8297fb6310e25bb764577a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the input for the given <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>. <br /></td></tr>
@@ -119,6 +119,9 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>FindSlotIndex<
 <tr class="memitem:acd2d3fbd3a286c41f1034e646b745680"><td class="memItemLeft" align="right" valign="top"><a id="acd2d3fbd3a286c41f1034e646b745680"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOnPureDataThread</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId) const =0</td></tr>
 <tr class="separator:acd2d3fbd3a286c41f1034e646b745680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aece123347f31c71db199fbb98080c588"><td class="memItemLeft" align="right" valign="top"><a id="aece123347f31c71db199fbb98080c588"></a>
+virtual AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidTypeForSlot</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId, const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType) const =0</td></tr>
+<tr class="separator:aece123347f31c71db199fbb98080c588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8dc42a0d0135f965f8808916fae9e0d"><td class="memItemLeft" align="right" valign="top"><a id="ae8dc42a0d0135f965f8808916fae9e0d"></a>
 virtual AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IsValidTypeForGroup</b> (const AZ::Crc32 &amp;dynamicGroup, const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType) const =0</td></tr>
 <tr class="separator:ae8dc42a0d0135f965f8808916fae9e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,12 +131,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalBatched
 <tr class="memitem:ad7d3c8df17bb945cb4dc3b6668e0854d"><td class="memItemLeft" align="right" valign="top"><a id="ad7d3c8df17bb945cb4dc3b6668e0854d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalBatchedConnectionManipulationEnd</b> ()=0</td></tr>
 <tr class="separator:ad7d3c8df17bb945cb4dc3b6668e0854d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ccc2e8bf03273e0e3b74ee1abeb93b9"><td class="memItemLeft" align="right" valign="top"><a id="a4ccc2e8bf03273e0e3b74ee1abeb93b9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNodeEnabled</b> (bool enabled)=0</td></tr>
-<tr class="separator:a4ccc2e8bf03273e0e3b74ee1abeb93b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cb4506add34e7dd8035994a15246194"><td class="memItemLeft" align="right" valign="top"><a id="a8cb4506add34e7dd8035994a15246194"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddNodeDisabledFlag</b> (NodeDisabledFlag disabledFlag)=0</td></tr>
+<tr class="separator:a8cb4506add34e7dd8035994a15246194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b9a4113e2e8206d8ec7caa6f47b068"><td class="memItemLeft" align="right" valign="top"><a id="a39b9a4113e2e8206d8ec7caa6f47b068"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveNodeDisabledFlag</b> (NodeDisabledFlag disabledFlag)=0</td></tr>
+<tr class="separator:a39b9a4113e2e8206d8ec7caa6f47b068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad187837c922ab64c60a71817a0de7551"><td class="memItemLeft" align="right" valign="top"><a id="ad187837c922ab64c60a71817a0de7551"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNodeEnabled</b> () const =0</td></tr>
 <tr class="separator:ad187837c922ab64c60a71817a0de7551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a01336dbd658cd4e3ea5a105ed9f04b"><td class="memItemLeft" align="right" valign="top"><a id="a2a01336dbd658cd4e3ea5a105ed9f04b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasNodeDisabledFlag</b> (NodeDisabledFlag disabledFlag) const =0</td></tr>
+<tr class="separator:a2a01336dbd658cd4e3ea5a105ed9f04b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a857c62cd4bb4202325348b413c217818"><td class="memItemLeft" align="right" valign="top"><a id="a857c62cd4bb4202325348b413c217818"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveVariableReferences</b> (const AZStd::unordered_set&lt; <a class="el" href="struct_script_canvas_1_1_variable_id.html">ScriptCanvas::VariableId</a> &gt; &amp;variableIds)=0</td></tr>
 <tr class="separator:a857c62cd4bb4202325348b413c217818"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,7 +210,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:24 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

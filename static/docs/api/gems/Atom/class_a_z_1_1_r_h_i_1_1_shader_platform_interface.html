@@ -46,7 +46,6 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::RHI::ShaderPlatformInterface Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -103,42 +102,32 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShaderStage
 <tr class="memitem:af148bc77d2bb8abb0edb9af42d81f65c"><td class="memItemLeft" align="right" valign="top"><a id="af148bc77d2bb8abb0edb9af42d81f65c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShaderStageForRayTracing</b> (ShaderHardwareStage shaderStageType) const =0</td></tr>
 <tr class="separator:af148bc77d2bb8abb0edb9af42d81f65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab466f6bb1cf71a38c0b5e03d5b792a61"><td class="memItemLeft" align="right" valign="top"><a id="ab466f6bb1cf71a38c0b5e03d5b792a61"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#ab466f6bb1cf71a38c0b5e03d5b792a61">GetAzslCompilerParameters</a> () const =0</td></tr>
-<tr class="memdesc:ab466f6bb1cf71a38c0b5e03d5b792a61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parameters (except warning related) from that platform interface, and the configuration files. <br /></td></tr>
-<tr class="separator:ab466f6bb1cf71a38c0b5e03d5b792a61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a821a5c589c3fac072b9a6a9f12503a34"><td class="memItemLeft" align="right" valign="top"><a id="a821a5c589c3fac072b9a6a9f12503a34"></a>
-virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a821a5c589c3fac072b9a6a9f12503a34">GetAzslCompilerWarningParameters</a> () const =0</td></tr>
-<tr class="memdesc:a821a5c589c3fac072b9a6a9f12503a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get only the warning-related parameters from that platform interface. <br /></td></tr>
-<tr class="separator:a821a5c589c3fac072b9a6a9f12503a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051fb51ad0f1634271e313f0539b710d"><td class="memItemLeft" align="right" valign="top"><a id="a051fb51ad0f1634271e313f0539b710d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a051fb51ad0f1634271e313f0539b710d">BuildHasDebugInfo</a> () const =0</td></tr>
-<tr class="memdesc:a051fb51ad0f1634271e313f0539b710d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_h_i_1_1_query.html">Query</a> whether the shaders are set to build with debug information. <br /></td></tr>
-<tr class="separator:a051fb51ad0f1634271e313f0539b710d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bfebfabccb188c5773c32f7ad4d893"><td class="memItemLeft" align="right" valign="top"><a id="af1bfebfabccb188c5773c32f7ad4d893"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#af1bfebfabccb188c5773c32f7ad4d893">GetAzslCompilerParameters</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">RHI::ShaderCompilerArguments</a> &amp;shaderCompilerArguments) const =0</td></tr>
+<tr class="memdesc:af1bfebfabccb188c5773c32f7ad4d893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the parameters (except warning related) from that platform interface, and the configuration files. <br /></td></tr>
+<tr class="separator:af1bfebfabccb188c5773c32f7ad4d893"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43a9c589d4b9540f525feaa4b0cb393"><td class="memItemLeft" align="right" valign="top"><a id="af43a9c589d4b9540f525feaa4b0cb393"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#af43a9c589d4b9540f525feaa4b0cb393">GetAzslCompilerWarningParameters</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">RHI::ShaderCompilerArguments</a> &amp;shaderCompilerArguments) const =0</td></tr>
+<tr class="memdesc:af43a9c589d4b9540f525feaa4b0cb393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get only the warning-related parameters from that platform interface. <br /></td></tr>
+<tr class="separator:af43a9c589d4b9540f525feaa4b0cb393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a317aeae683a6c14c9961d4d5cecc39f4"><td class="memItemLeft" align="right" valign="top"><a id="a317aeae683a6c14c9961d4d5cecc39f4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a317aeae683a6c14c9961d4d5cecc39f4">BuildHasDebugInfo</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">RHI::ShaderCompilerArguments</a> &amp;shaderCompilerArguments) const =0</td></tr>
+<tr class="memdesc:a317aeae683a6c14c9961d4d5cecc39f4"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_h_i_1_1_query.html">Query</a> whether the shaders are set to build with debug information. <br /></td></tr>
+<tr class="separator:a317aeae683a6c14c9961d4d5cecc39f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1628fd206ca86ecf66bbe0ca38f51f"><td class="memItemLeft" align="right" valign="top"><a id="a8f1628fd206ca86ecf66bbe0ca38f51f"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a8f1628fd206ca86ecf66bbe0ca38f51f">GetAzslHeader</a> (const AssetBuilderSDK::PlatformInfo &amp;platform) const =0</td></tr>
 <tr class="memdesc:a8f1628fd206ca86ecf66bbe0ca38f51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the filename of include file to prefix shader programs with. <br /></td></tr>
 <tr class="separator:a8f1628fd206ca86ecf66bbe0ca38f51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae330680c1d57995452026fd566fa9804"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#ae330680c1d57995452026fd566fa9804">BuildPipelineLayoutDescriptor</a> (RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; pipelineLayoutDescriptor, const ShaderResourceGroupInfoList &amp;srgInfoList, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html">RootConstantsInfo</a> &amp;rootConstantsInfo)=0</td></tr>
-<tr class="separator:ae330680c1d57995452026fd566fa9804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b45b846ed42284e6e4d56fbe43da68a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a6b45b846ed42284e6e4d56fbe43da68a">BuildPipelineLayoutDescriptor</a> (RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; pipelineLayoutDescriptor, const ShaderResourceGroupInfoList &amp;srgInfoList, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html">RootConstantsInfo</a> &amp;rootConstantsInfo, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;shaderCompilerArguments)=0</td></tr>
+<tr class="separator:a6b45b846ed42284e6e4d56fbe43da68a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3978e7a4f57601df600af2e5fb9b07d3"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a3978e7a4f57601df600af2e5fb9b07d3">GetAPIUniqueIndex</a> () const</td></tr>
 <tr class="separator:a3978e7a4f57601df600af2e5fb9b07d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a367f4c9d9229505278d9c6181d090574"><td class="memItemLeft" align="right" valign="top"><a id="a367f4c9d9229505278d9c6181d090574"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html#a367f4c9d9229505278d9c6181d090574">SetExternalArguments</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;arguments)</td></tr>
-<tr class="memdesc:a367f4c9d9229505278d9c6181d090574"><td class="mdescLeft">&#160;</td><td class="mdescRight">To set when you can read from a config file: additional arguments or compiler settings. <br /></td></tr>
-<tr class="separator:a367f4c9d9229505278d9c6181d090574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a252702760cf7a1c506bf5c275f1245ce"><td class="memItemLeft" align="right" valign="top"><a id="a252702760cf7a1c506bf5c275f1245ce"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_settings</b></td></tr>
-<tr class="separator:a252702760cf7a1c506bf5c275f1245ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class provides a platform agnostic interface for the creation and manipulation of platform shader objects. </p>
+<div class="textblock"><p>This class provides a platform agnostic interface for the creation and manipulation of platform shader objects. WARNING: The <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html">ShaderPlatformInterface</a> objects are singletons and will be used to process multiple shader compilation jobs. Do not store per-job configuration data in any <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_platform_interface.html">ShaderPlatformInterface</a> classes, as it may get stomped. Instead, pass any per-job configuration on the call stack. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae330680c1d57995452026fd566fa9804"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae330680c1d57995452026fd566fa9804">&#9670;&nbsp;</a></span>BuildPipelineLayoutDescriptor()</h2>
+<a id="a6b45b846ed42284e6e4d56fbe43da68a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b45b846ed42284e6e4d56fbe43da68a">&#9670;&nbsp;</a></span>BuildPipelineLayoutDescriptor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +151,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html">RootConstantsInfo</a> &amp;&#160;</td>
-          <td class="paramname"><em>rootConstantsInfo</em>&#160;</td>
+          <td class="paramname"><em>rootConstantsInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;&#160;</td>
+          <td class="paramname"><em>shaderCompilerArguments</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -209,7 +204,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:46 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:02 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

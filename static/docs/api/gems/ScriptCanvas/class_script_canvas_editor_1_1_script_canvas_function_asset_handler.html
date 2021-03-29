@@ -76,12 +76,12 @@ AZ::Data::AssetHandler::LoadResult&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:a84c7dad1c1c868bf43ca5e6b998c504c"><td class="memItemLeft" align="right" valign="top"><a id="a84c7dad1c1c868bf43ca5e6b998c504c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAssetData</b> (const AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &amp;asset, AZ::IO::GenericStream *stream) override</td></tr>
 <tr class="separator:a84c7dad1c1c868bf43ca5e6b998c504c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea653d6ca30589273142a18f6059eaed"><td class="memItemLeft" align="right" valign="top"><a id="aea653d6ca30589273142a18f6059eaed"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAssetData</b> (const <a class="el" href="class_script_canvas_1_1_script_canvas_function_asset.html">ScriptCanvas::ScriptCanvasFunctionAsset</a> *assetData, AZ::IO::GenericStream *stream)</td></tr>
-<tr class="separator:aea653d6ca30589273142a18f6059eaed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b758c84a70a68177c7f0378b59e60dd"><td class="memItemLeft" align="right" valign="top"><a id="a6b758c84a70a68177c7f0378b59e60dd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAssetData</b> (const <a class="el" href="class_script_canvas_1_1_script_canvas_function_asset.html">ScriptCanvas::ScriptCanvasFunctionAsset</a> *assetData, AZ::IO::GenericStream *stream, AZ::DataStream::StreamType streamType)</td></tr>
-<tr class="separator:a6b758c84a70a68177c7f0378b59e60dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd2f3dc5b9be32d6e742d271317f023a"><td class="memItemLeft" align="right" valign="top"><a id="afd2f3dc5b9be32d6e742d271317f023a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAssetData</b> (const <a class="el" href="class_script_canvas_editor_1_1_script_canvas_function_asset.html">ScriptCanvasEditor::ScriptCanvasFunctionAsset</a> *assetData, AZ::IO::GenericStream *stream)</td></tr>
+<tr class="separator:afd2f3dc5b9be32d6e742d271317f023a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42cc29d2edbc85fdbdfecc6ebd23d9b"><td class="memItemLeft" align="right" valign="top"><a id="af42cc29d2edbc85fdbdfecc6ebd23d9b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveAssetData</b> (const <a class="el" href="class_script_canvas_editor_1_1_script_canvas_function_asset.html">ScriptCanvasEditor::ScriptCanvasFunctionAsset</a> *assetData, AZ::IO::GenericStream *stream, AZ::DataStream::StreamType streamType)</td></tr>
+<tr class="separator:af42cc29d2edbc85fdbdfecc6ebd23d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7620b69ac05005221f9723aacb96261"><td class="memItemLeft" align="right" valign="top"><a id="aa7620b69ac05005221f9723aacb96261"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetTypeExtensions</b> (AZStd::vector&lt; AZStd::string &gt; &amp;extensions) override</td></tr>
 <tr class="separator:aa7620b69ac05005221f9723aacb96261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +155,12 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>Get
 <tr class="memitem:ad855d02a41d4c1147dd890bd825d98a7 inherit pub_methods_class_script_canvas_editor_1_1_script_canvas_asset_handler"><td class="memItemLeft" align="right" valign="top"><a id="ad855d02a41d4c1147dd890bd825d98a7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSerializeContext</b> (AZ::SerializeContext *context)</td></tr>
 <tr class="separator:ad855d02a41d4c1147dd890bd825d98a7 inherit pub_methods_class_script_canvas_editor_1_1_script_canvas_asset_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f6f0f173c6dea6b1b7d2be8949c3dbd inherit pub_methods_class_script_canvas_editor_1_1_script_canvas_asset_handler"><td class="memItemLeft" align="right" valign="top"><a id="a6f6f0f173c6dea6b1b7d2be8949c3dbd"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGroup</b> () const override</td></tr>
+<tr class="separator:a6f6f0f173c6dea6b1b7d2be8949c3dbd inherit pub_methods_class_script_canvas_editor_1_1_script_canvas_asset_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2724936d64685c6de52a08efe81b24a inherit pub_methods_class_script_canvas_editor_1_1_script_canvas_asset_handler"><td class="memItemLeft" align="right" valign="top"><a id="ac2724936d64685c6de52a08efe81b24a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBrowserIcon</b> () const override</td></tr>
+<tr class="separator:ac2724936d64685c6de52a08efe81b24a inherit pub_methods_class_script_canvas_editor_1_1_script_canvas_asset_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -168,9 +174,9 @@ static AZ::Data::AssetType&#160;</td><td class="memItemRight" valign="bottom"><b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6d5e0f4e605eec09c21f03c3f1a35a48"><td class="memItemLeft" align="right" valign="top"><a id="a6d5e0f4e605eec09c21f03c3f1a35a48"></a>
-<a class="el" href="class_script_canvas_1_1_script_canvas_function_asset.html">ScriptCanvas::ScriptCanvasFunctionAsset</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_scriptCanvasAsset</b></td></tr>
-<tr class="separator:a6d5e0f4e605eec09c21f03c3f1a35a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb6741e1d61de28085dbdfbd95d490b9"><td class="memItemLeft" align="right" valign="top"><a id="acb6741e1d61de28085dbdfbd95d490b9"></a>
+<a class="el" href="class_script_canvas_editor_1_1_script_canvas_function_asset.html">ScriptCanvasEditor::ScriptCanvasFunctionAsset</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_scriptCanvasAsset</b></td></tr>
+<tr class="separator:acb6741e1d61de28085dbdfbd95d490b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -184,7 +190,7 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_s
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:27 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:44 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

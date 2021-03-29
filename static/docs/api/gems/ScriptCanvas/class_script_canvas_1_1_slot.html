@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_slot.html">Slot</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_slot.html">Slot</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -88,6 +88,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a952f2ada12c3f6a8a51da177069c96b2"><td class="memItemLeft" align="right" valign="top"><a id="a952f2ada12c3f6a8a51da177069c96b2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddContract</b> (const <a class="el" href="struct_script_canvas_1_1_contract_descriptor.html">ContractDescriptor</a> &amp;contractDesc)</td></tr>
 <tr class="separator:a952f2ada12c3f6a8a51da177069c96b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a82d8fe6f8310d025ab2ea32d7e4cf"><td class="memTemplParams" colspan="2"><a id="a71a82d8fe6f8310d025ab2ea32d7e4cf"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a71a82d8fe6f8310d025ab2ea32d7e4cf"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>FindContract</b> ()</td></tr>
+<tr class="separator:a71a82d8fe6f8310d025ab2ea32d7e4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a260f3c25f73cf3c4c469cb502c6f8fc2"><td class="memTemplParams" colspan="2"><a id="a260f3c25f73cf3c4c469cb502c6f8fc2"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a260f3c25f73cf3c4c469cb502c6f8fc2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>RemoveContract</b> ()</td></tr>
@@ -101,6 +105,9 @@ const AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_script_c
 <tr class="memitem:a5972b9c8b7c256ad2ac7f86af081345d"><td class="memItemLeft" align="right" valign="top"><a id="a5972b9c8b7c256ad2ac7f86af081345d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertToLatentExecutionOut</b> ()</td></tr>
 <tr class="separator:a5972b9c8b7c256ad2ac7f86af081345d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209e954bfdc052cdedece0c7bad1fe2a"><td class="memItemLeft" align="right" valign="top"><a id="a209e954bfdc052cdedece0c7bad1fe2a"></a>
+CombinedSlotType&#160;</td><td class="memItemRight" valign="bottom"><b>GetType</b> () const</td></tr>
+<tr class="separator:a209e954bfdc052cdedece0c7bad1fe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fce581f94065dbce1022e8cb816ef36"><td class="memItemLeft" align="right" valign="top"><a id="a7fce581f94065dbce1022e8cb816ef36"></a>
 const <a class="el" href="struct_script_canvas_1_1_slot_descriptor.html">SlotDescriptor</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescriptor</b> () const</td></tr>
 <tr class="separator:a7fce581f94065dbce1022e8cb816ef36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +186,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearVariableReferenc
 <tr class="memitem:abbd5d41e415800b307a261159c1a12f6"><td class="memItemLeft" align="right" valign="top"><a id="abbd5d41e415800b307a261159c1a12f6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsExecution</b> () const</td></tr>
 <tr class="separator:abbd5d41e415800b307a261159c1a12f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1149bb43872202d96d98b43f34e05670"><td class="memItemLeft" align="right" valign="top"><a id="a1149bb43872202d96d98b43f34e05670"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisible</b> () const</td></tr>
+<tr class="separator:a1149bb43872202d96d98b43f34e05670"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33488a58386457bc2cfc55f07316c067"><td class="memItemLeft" align="right" valign="top"><a id="a33488a58386457bc2cfc55f07316c067"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInput</b> () const</td></tr>
 <tr class="separator:a33488a58386457bc2cfc55f07316c067"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +225,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearDisplayType</b> 
 <tr class="memitem:a3d0dbe489af68dfbd63769e73d927bf8"><td class="memItemLeft" align="right" valign="top"><a id="a3d0dbe489af68dfbd63769e73d927bf8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasDisplayType</b> () const</td></tr>
 <tr class="separator:a3d0dbe489af68dfbd63769e73d927bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55aaf6eea0d4c28a6de1a59cb7efb5a5"><td class="memItemLeft" align="right" valign="top"><a id="a55aaf6eea0d4c28a6de1a59cb7efb5a5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSanityCheckRequired</b> () const</td></tr>
+<tr class="separator:a55aaf6eea0d4c28a6de1a59cb7efb5a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee19cf9894c46b1605b8a06b75476d0b"><td class="memItemLeft" align="right" valign="top"><a id="aee19cf9894c46b1605b8a06b75476d0b"></a>
 AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayGroup</b> () const</td></tr>
 <tr class="separator:aee19cf9894c46b1605b8a06b75476d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +243,9 @@ AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" vali
 <tr class="memitem:a0431d0f6e1147627947d08c1a719dd3e"><td class="memItemLeft" align="right" valign="top"><a id="a0431d0f6e1147627947d08c1a719dd3e"></a>
 AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>IsTypeMatchFor</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;dataType) const</td></tr>
 <tr class="separator:a0431d0f6e1147627947d08c1a719dd3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc5506c94a4b67ac5d6932985c6e22bd"><td class="memItemLeft" align="right" valign="top"><a id="adc5506c94a4b67ac5d6932985c6e22bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetToolTip</b> (const AZStd::string &amp;toolTip)</td></tr>
+<tr class="separator:adc5506c94a4b67ac5d6932985c6e22bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f1d10eb3a75154d67dbad70f3794f91"><td class="memItemLeft" align="right" valign="top"><a id="a5f1d10eb3a75154d67dbad70f3794f91"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Rename</b> (AZStd::string_view slotName)</td></tr>
 <tr class="separator:a5f1d10eb3a75154d67dbad70f3794f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +276,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDynamicGroup</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a14f19d4feacf3ac6b8715bd24626bdec"><td class="memItemLeft" align="right" valign="top"><a id="a14f19d4feacf3ac6b8715bd24626bdec"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isOverload</b> = false</td></tr>
+<tr class="separator:a14f19d4feacf3ac6b8715bd24626bdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3d6dd315c1b404cafb9054b9075e5a"><td class="memItemLeft" align="right" valign="top"><a id="a9e3d6dd315c1b404cafb9054b9075e5a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isVisible</b> = true</td></tr>
+<tr class="separator:a9e3d6dd315c1b404cafb9054b9075e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96f1ff1073d1d7f3cb33c5a6690f7086"><td class="memItemLeft" align="right" valign="top"><a id="a96f1ff1073d1d7f3cb33c5a6690f7086"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
 <tr class="separator:a96f1ff1073d1d7f3cb33c5a6690f7086"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,7 +337,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Node</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:24 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
