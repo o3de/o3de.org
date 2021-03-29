@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_graph.html">Graph</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_graph.html">Graph</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -56,9 +56,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_script_canvas_1_1_graph.html" title="Graph is the execution model of a ScriptCanvas graph.">Graph</a> is the execution model of a <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph.  
+ <a href="class_script_canvas_1_1_graph.html#details">More...</a></p>
+
 <p><code>#include &lt;Graph.h&gt;</code></p>
 
-<p>Inherits Component, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits Component, Handler, Handler, Handler, Handler, and Handler.</p>
 
 <p>Inherited by <a class="el" href="class_script_canvas_editor_1_1_graph.html">ScriptCanvasEditor::Graph</a>.</p>
 <table class="memberdecls">
@@ -91,6 +94,15 @@ const AZStd::unordered_set&lt; AZ::Entity * &gt; &amp;&#160;</td><td class="memI
 <tr class="memitem:a79e2663f3aca84c4eba7ef8d7d4c6486"><td class="memItemLeft" align="right" valign="top"><a id="a79e2663f3aca84c4eba7ef8d7d4c6486"></a>
 const ScriptCanvas::ScriptCanvasId &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptCanvasId</b> () const</td></tr>
 <tr class="separator:a79e2663f3aca84c4eba7ef8d7d4c6486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a64a595fc37b855111f1125c58392f"><td class="memItemLeft" align="right" valign="top"><a id="a52a64a595fc37b855111f1125c58392f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkVersion</b> ()</td></tr>
+<tr class="separator:a52a64a595fc37b855111f1125c58392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0be236ff32114e62e640ef4403505b6"><td class="memItemLeft" align="right" valign="top"><a id="aa0be236ff32114e62e640ef4403505b6"></a>
+const <a class="el" href="struct_script_canvas_1_1_version_data.html">VersionData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVersion</b> () const</td></tr>
+<tr class="separator:aa0be236ff32114e62e640ef4403505b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663f9f70609d1fde1d0755f352ea3f84"><td class="memItemLeft" align="right" valign="top"><a id="a663f9f70609d1fde1d0755f352ea3f84"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (<a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &amp;validationResults)</td></tr>
+<tr class="separator:a663f9f70609d1fde1d0755f352ea3f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91029fff7c459413e5dd2a28a538e4dd"><td class="memItemLeft" align="right" valign="top"><a id="a91029fff7c459413e5dd2a28a538e4dd"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddNode</b> (const AZ::EntityId &amp;) override</td></tr>
 <tr class="separator:a91029fff7c459413e5dd2a28a538e4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,6 +171,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDependentAsset<
 <tr class="memitem:aa32eae3ec0690a42cfc59582e8095ba8"><td class="memItemLeft" align="right" valign="top"><a id="aa32eae3ec0690a42cfc59582e8095ba8"></a>
 <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraph</b> ()</td></tr>
 <tr class="separator:aa32eae3ec0690a42cfc59582e8095ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19aba32ce99867c4ae47140c79e7c9c"><td class="memItemLeft" align="right" valign="top"><a id="ae19aba32ce99867c4ae47140c79e7c9c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFunctionGraph</b> () const</td></tr>
+<tr class="separator:ae19aba32ce99867c4ae47140c79e7c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199c70007442a46cf00170642f5480bd"><td class="memItemLeft" align="right" valign="top"><a id="a199c70007442a46cf00170642f5480bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkFunctionGraph</b> ()</td></tr>
+<tr class="separator:a199c70007442a46cf00170642f5480bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a271e39577b19034d1d055f44970431dd"><td class="memItemLeft" align="right" valign="top"><a id="a271e39577b19034d1d055f44970431dd"></a>
 <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphData</b> () override</td></tr>
 <tr class="separator:a271e39577b19034d1d055f44970431dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,18 +219,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveItem</b> (AZ::E
 <tr class="memitem:a3f2ff665aae8fb71e5ed7bf64e51d023"><td class="memItemLeft" align="right" valign="top"><a id="a3f2ff665aae8fb71e5ed7bf64e51d023"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateGraph</b> (<a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &amp;validationEvents)</td></tr>
 <tr class="separator:a3f2ff665aae8fb71e5ed7bf64e51d023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd61fb3639a709f8ad6f4580a7e35aa0"><td class="memItemLeft" align="right" valign="top"><a id="abd61fb3639a709f8ad6f4580a7e35aa0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportValidationResults</b> (<a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &amp;) override</td></tr>
+<tr class="separator:abd61fb3639a709f8ad6f4580a7e35aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a301f310f56961972e591c9b98e5ea94e"><td class="memItemLeft" align="right" valign="top"><a id="a301f310f56961972e591c9b98e5ea94e"></a>
+AZStd::pair&lt; ScriptCanvas::ScriptCanvasId, <a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetValidationResults</b> () override</td></tr>
+<tr class="separator:a301f310f56961972e591c9b98e5ea94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47dd8e31356b0e78b74cbfc058ad49e4"><td class="memItemLeft" align="right" valign="top"><a id="a47dd8e31356b0e78b74cbfc058ad49e4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportError</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node, const AZStd::string &amp;errorSource, const AZStd::string &amp;errorMessage)</td></tr>
 <tr class="separator:a47dd8e31356b0e78b74cbfc058ad49e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a60c65650560266191c8dadbeccd2cd"><td class="memItemLeft" align="right" valign="top"><a id="a0a60c65650560266191c8dadbeccd2cd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInErrorState</b> () const</td></tr>
-<tr class="separator:a0a60c65650560266191c8dadbeccd2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68b581709b5eb947e86afe78deedc9ff"><td class="memItemLeft" align="right" valign="top"><a id="a68b581709b5eb947e86afe78deedc9ff"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInIrrecoverableErrorState</b> () const</td></tr>
-<tr class="separator:a68b581709b5eb947e86afe78deedc9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a947b589bf5b243dcc0f36a1322d95ebe"><td class="memItemLeft" align="right" valign="top"><a id="a947b589bf5b243dcc0f36a1322d95ebe"></a>
-AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastErrorDescription</b> () const</td></tr>
-<tr class="separator:a947b589bf5b243dcc0f36a1322d95ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -246,12 +261,6 @@ AZ::Outcome&lt; void, AZStd::vector&lt; ValidationStruct &gt; &gt;&#160;</td><td
 <tr class="memitem:aa99975291bc0b9896ae06a64ac024a65"><td class="memItemLeft" align="right" valign="top"><a id="aa99975291bc0b9896ae06a64ac024a65"></a>
 AZ::Outcome&lt; void, ValidationStruct &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateConnection</b> (AZ::Entity *connection) const</td></tr>
 <tr class="separator:aa99975291bc0b9896ae06a64ac024a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36deba43342e4be937cdb27d3ea42cce"><td class="memItemLeft" align="right" valign="top"><a id="a36deba43342e4be937cdb27d3ea42cce"></a>
-AZ::Outcome&lt; void, ValidationStruct &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateExecutionConnection</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;sourceNode, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;sourceSlot, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;targetNode, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;targetSlot) const</td></tr>
-<tr class="separator:a36deba43342e4be937cdb27d3ea42cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe7ff13ed6d5fc90edc86b23d0435036"><td class="memItemLeft" align="right" valign="top"><a id="afe7ff13ed6d5fc90edc86b23d0435036"></a>
-AZ::Outcome&lt; void, ValidationStruct &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateDataConnection</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;sourceNode, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;sourceSlot, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;targetNode, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;targetSlot) const</td></tr>
-<tr class="separator:afe7ff13ed6d5fc90edc86b23d0435036"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47433f3a0a47e4d91c15db33f1ee490f"><td class="memItemLeft" align="right" valign="top"><a id="a47433f3a0a47e4d91c15db33f1ee490f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInDataFlowPath</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *sourceNode, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *targetNode) const</td></tr>
 <tr class="separator:a47433f3a0a47e4d91c15db33f1ee490f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -338,7 +347,7 @@ AZ::Data::AssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_asse
 <tr class="separator:a17b179f75a35e66ac934df9bddb67745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TODO: Remove the execution logic from this class and change all ScriptCanvas UnitTest to use the Runtime Component <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> is the execution model of a ScriptCanvas graph. </p>
+<div class="textblock"><p><a class="el" href="class_script_canvas_1_1_graph.html" title="Graph is the execution model of a ScriptCanvas graph.">Graph</a> is the execution model of a <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a132dbcd9fbb592cc3ca71326846aa3ee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a132dbcd9fbb592cc3ca71326846aa3ee">&#9670;&nbsp;</a></span>GetGraphEntity()</h2>
@@ -362,14 +371,14 @@ AZ::Data::AssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_asse
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieves the Entity this <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> component is currently located on NOTE: There can be multiple <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> components on the same entity so calling FindComponent may not not return this GraphComponent </p>
+<p>Retrieves the Entity this <a class="el" href="class_script_canvas_1_1_graph.html" title="Graph is the execution model of a ScriptCanvas graph.">Graph</a> component is currently located on NOTE: There can be multiple <a class="el" href="class_script_canvas_1_1_graph.html" title="Graph is the execution model of a ScriptCanvas graph.">Graph</a> components on the same entity so calling FindComponent may not not return this GraphComponent </p>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:23 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

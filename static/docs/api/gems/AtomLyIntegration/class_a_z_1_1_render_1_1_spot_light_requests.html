@@ -135,6 +135,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:aae76ccc914ea285fa34a2049d6ff8f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc29d4f045d4745db82cbea28ba67090"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_spot_light_requests.html#afc29d4f045d4745db82cbea28ba67090">SetFilteringSampleCount</a> (uint32_t count)=0</td></tr>
 <tr class="separator:afc29d4f045d4745db82cbea28ba67090"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cf600434f96b104fa7ddb2ff66d6842"><td class="memItemLeft" align="right" valign="top"><a id="a9cf600434f96b104fa7ddb2ff66d6842"></a>
+virtual PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_spot_light_requests.html#a9cf600434f96b104fa7ddb2ff66d6842">GetPcfMethod</a> () const =0</td></tr>
+<tr class="memdesc:a9cf600434f96b104fa7ddb2ff66d6842"><td class="mdescLeft">&#160;</td><td class="mdescRight">This gets the type of Pcf (percentage-closer filtering) to use. <br /></td></tr>
+<tr class="separator:a9cf600434f96b104fa7ddb2ff66d6842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae24704f781d87c2832c5fb155cefa787"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_spot_light_requests.html#ae24704f781d87c2832c5fb155cefa787">SetPcfMethod</a> (PcfMethod method)=0</td></tr>
+<tr class="separator:ae24704f781d87c2832c5fb155cefa787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -606,6 +612,38 @@ static const EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom
 
 </div>
 </div>
+<a id="ae24704f781d87c2832c5fb155cefa787"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae24704f781d87c2832c5fb155cefa787">&#9670;&nbsp;</a></span>SetPcfMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::Render::SpotLightRequests::SetPcfMethod </td>
+          <td>(</td>
+          <td class="paramtype">PcfMethod&#160;</td>
+          <td class="paramname"><em>method</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This sets the type of Pcf (percentage-closer filtering) to use. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">method</td><td>The Pcf method to use. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab7cead8e207a4d1d8ff058a35643b8a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7cead8e207a4d1d8ff058a35643b8a0">&#9670;&nbsp;</a></span>SetPredictionSampleCount()</h2>
 
@@ -705,7 +743,7 @@ static const EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:51 for AtomLyIntegration API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:07 for AtomLyIntegration API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

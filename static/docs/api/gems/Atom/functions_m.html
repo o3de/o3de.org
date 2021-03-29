@@ -52,6 +52,9 @@ $(function() {
 <li>m_addressBase
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_allocator_1_1_descriptor.html#abf9b67aa88a06d7bc386ff69fa4341ee">AZ::RHI::Allocator::Descriptor</a>
 </li>
+<li>m_addSuffixToFileName
+: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_prepend_arguments.html#a18b95a7cf4fbcb426bb9f4f5aeb92296">AZ::RHI::PrependArguments</a>
+</li>
 <li>m_alignment
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_buffer_descriptor.html#a0a296589eb63e4d1f70850ed5430c601">AZ::RHI::BufferDescriptor</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_allocation.html#aa156c78954526f1fe0811f4cebc14421">AZ::RHI::MemoryAllocation&lt; MemoryType &gt;</a>
@@ -377,6 +380,9 @@ $(function() {
 <li>m_direction
 : <a class="el" href="struct_a_z_1_1_render_1_1_capsule_light_data.html#a9fc018765969d13cdb8e3d36e9065107">AZ::Render::CapsuleLightData</a>
 </li>
+<li>m_disabledRhiBackends
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#a7e435c93fba04965114b65f9e83eb20e">AZ::RPI::ShaderSourceData</a>
+</li>
 <li>m_drawListMask
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_cull_data.html#a81e7e61db8b90c72c747fd8a27a39c2c">AZ::RPI::Cullable::CullData</a>
 , <a class="el" href="struct_a_z_1_1_r_p_i_1_1_feature_processor_1_1_render_packet.html#ac4ba523115fbd1fca05edbba4cc65b31">AZ::RPI::FeatureProcessor::RenderPacket</a>
@@ -425,6 +431,9 @@ $(function() {
 </li>
 <li>m_enumValues
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_material_type_source_data_1_1_property_definition.html#af318afcd2daf0bfbe444c12a8f0c614f">AZ::RPI::MaterialTypeSourceData::PropertyDefinition</a>
+</li>
+<li>m_errorMessage
+: <a class="el" href="struct_a_z_1_1_render_1_1_frame_capture_output_result.html#a3d85d9e4f040246d9eb7547930d3fcf7">AZ::Render::FrameCaptureOutputResult</a>
 </li>
 <li>m_executeAfterPasses
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_request.html#ad728c2ee64f13c84dabb4fb7b8ab3024">AZ::RPI::PassRequest</a>
@@ -771,11 +780,17 @@ $(function() {
 <li>m_memoryUsagePerLevel
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_pool_memory_usage.html#a89ca1199459d3a90f999fb0996532109">AZ::RHI::PoolMemoryUsage</a>
 </li>
+<li>m_meshNodeName
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a4987a9a58ff10d10e73c75244ea74ff8">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
+</li>
 <li>m_minConstantBufferViewOffset
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_limits.html#a665dd84fbe52b01334837c677a2d5adf">AZ::RHI::DeviceLimits</a>
 </li>
 <li>m_minHeapSizeInBytes
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_heap_memory_hint_parameters.html#ac3db91e86048f3f7c2cd29a2a80b5c9b">AZ::RHI::HeapMemoryHintParameters</a>
+</li>
+<li>m_minPositionDelta
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#adbe95c6e7ae91fc46c4c6d6a79813839">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
 </li>
 <li>m_mipLevels
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_descriptor.html#add510025ec97093f856142951fa679f2">AZ::RHI::ImageDescriptor</a>
@@ -799,6 +814,9 @@ $(function() {
 </li>
 <li>m_morphTargetInstanceMetaData
 : <a class="el" href="class_a_z_1_1_render_1_1_skinned_mesh_instance.html#acb27c0e4268014b876db7f3322733947">AZ::Render::SkinnedMeshInstance</a>
+</li>
+<li>m_morphTargetName
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a3230c201f3039fc6da27d38531151f24">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
 </li>
 <li>m_multipliers
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_attachment_size_source.html#aef4506bc0a42d0dc75ff27c912cfd07c">AZ::RPI::PassAttachmentSizeSource</a>
@@ -838,6 +856,9 @@ $(function() {
 </li>
 <li>m_nextPage
 : <a class="el" href="struct_a_z_1_1_stable_dynamic_array_1_1_page.html#a7de7c862dccdca7de5b500c8e914cdde">AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;::Page</a>
+</li>
+<li>m_numVertices
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#aea44c7b60098485c6206696a6fcbf59f">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
 </li>
 <li>m_occlusionQueryPrecise
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_device_features.html#a896476f6493f7537b5a876a2feac21d6">AZ::RHI::DeviceFeatures</a>
@@ -1055,6 +1076,9 @@ $(function() {
 <li>m_resourceTypeFlags
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_statistics_1_1_heap.html#a97a41d71dfffffec54edfc7025cf9780">AZ::RHI::TransientAttachmentStatistics::Heap</a>
 </li>
+<li>m_result
+: <a class="el" href="struct_a_z_1_1_render_1_1_frame_capture_output_result.html#aeb615852f60a1be3b4d2610eb8d11aec">AZ::Render::FrameCaptureOutputResult</a>
+</li>
 <li>m_rgbIntensity
 : <a class="el" href="struct_a_z_1_1_render_1_1_capsule_light_data.html#aadb985a6c42406a87c8d18ce26f15b41">AZ::Render::CapsuleLightData</a>
 </li>
@@ -1224,6 +1248,9 @@ $(function() {
 <li>m_spaceId
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_platform_interface_1_1_root_constants_info.html#a0327ce42f947efc3c7ac77c1ea8db478">AZ::RHI::ShaderPlatformInterface::RootConstantsInfo</a>
 , <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_resource_group_binding_info.html#a2bed9b165ecbec71ba2c19da8da346ea">AZ::RHI::ShaderResourceGroupBindingInfo</a>
+</li>
+<li>m_startIndex
+: <a class="el" href="struct_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_1_1_morph_target.html#a0fc0a55ecf0758f7edb5eda8d5bf0240">AZ::RPI::MorphTargetMetaAsset::MorphTarget</a>
 </li>
 <li>m_statisticsFlags
 : <a class="el" href="struct_a_z_1_1_r_h_i_1_1_frame_graph_compile_request.html#a7d1e6191cdd3415f13a50275d97b7ace">AZ::RHI::FrameGraphCompileRequest</a>
@@ -1409,7 +1436,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:49 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:05 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
