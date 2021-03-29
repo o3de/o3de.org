@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_system_component.html">SystemComponent</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_system_component.html">SystemComponent</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -80,6 +80,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveOwnedObjectRefe
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af29ffa988106b56c9e89b43078baa91b"><td class="memItemLeft" align="right" valign="top"><a id="af29ffa988106b56c9e89b43078baa91b"></a>
+static <a class="el" href="class_script_canvas_1_1_execution_1_1_performance_tracker.html">Execution::PerformanceTracker</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ModPerformanceTracker</b> ()</td></tr>
+<tr class="separator:af29ffa988106b56c9e89b43078baa91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13d1f58929fa82989c925c77bc105cf"><td class="memItemLeft" align="right" valign="top"><a id="ac13d1f58929fa82989c925c77bc105cf"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:ac13d1f58929fa82989c925c77bc105cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,6 +101,18 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependentSe
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:af0acaca7a2b1a522048ebcdfa2efe335"><td class="memItemLeft" align="right" valign="top"><a id="af0acaca7a2b1a522048ebcdfa2efe335"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAnyScriptInterpreted</b> () const</td></tr>
+<tr class="separator:af0acaca7a2b1a522048ebcdfa2efe335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a658309989b20abfca64683eb02d64cc5"><td class="memItemLeft" align="right" valign="top"><a id="a658309989b20abfca64683eb02d64cc5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScriptUnitTestingInProgress</b> () override</td></tr>
+<tr class="separator:a658309989b20abfca64683eb02d64cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113de081f7c8dd17abfa15c205803485"><td class="memItemLeft" align="right" valign="top"><a id="a113de081f7c8dd17abfa15c205803485"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkScriptUnitTestBegin</b> () override</td></tr>
+<tr class="separator:a113de081f7c8dd17abfa15c205803485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd8f941239c4f4b1220dedd7e7c2f525"><td class="memItemLeft" align="right" valign="top"><a id="afd8f941239c4f4b1220dedd7e7c2f525"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkScriptUnitTestEnd</b> () override</td></tr>
+<tr class="separator:afd8f941239c4f4b1220dedd7e7c2f525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9378508b4e7d6292aa1763756dd92597"><td class="memItemLeft" align="right" valign="top"><a id="a9378508b4e7d6292aa1763756dd92597"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEngineComponentsOnEntity</b> (AZ::Entity *entity) override</td></tr>
 <tr class="separator:a9378508b4e7d6292aa1763756dd92597"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +134,9 @@ ScriptCanvasId&#160;</td><td class="memItemRight" valign="bottom"><b>FindScriptC
 <tr class="memitem:ac6e6e0e043a63e19fcb50d9340456250"><td class="memItemLeft" align="right" valign="top"><a id="ac6e6e0e043a63e19fcb50d9340456250"></a>
 <a class="el" href="struct_script_canvas_1_1_system_component_configuration.html">SystemComponentConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSystemComponentConfiguration</b> ()</td></tr>
 <tr class="separator:ac6e6e0e043a63e19fcb50d9340456250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cb4de2f090cd421798f727f6b15ded0"><td class="memItemLeft" align="right" valign="top"><a id="a5cb4de2f090cd421798f727f6b15ded0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterpretedBuildConfiguration</b> (BuildConfiguration config) override</td></tr>
+<tr class="separator:a5cb4de2f090cd421798f727f6b15ded0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47725721a2f761a525813ec1b6881f4e"><td class="memItemLeft" align="right" valign="top"><a id="a47725721a2f761a525813ec1b6881f4e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAddClass</b> (const char *className, AZ::BehaviorClass *behaviorClass) override</td></tr>
 <tr class="separator:a47725721a2f761a525813ec1b6881f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,7 +147,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRemoveClass</b> (co
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:24 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
