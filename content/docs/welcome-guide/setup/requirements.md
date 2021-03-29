@@ -5,8 +5,12 @@ title: Open 3D Engine system requirements
 =======
 linktitle: System Requirements
 title: Open 3D Engine (O3DE) System Requirements
+<<<<<<< HEAD
 description: View the system requirements for Open 3D Engine (O3DE).
 >>>>>>> 08172c74 (instructions for installing from GitHub)
+=======
+description: View the system requirements for development with Open 3D Engine (O3DE).
+>>>>>>> c7b7d43c (more system requirements edits)
 weight: 100
 toc: true
 ---
@@ -17,22 +21,23 @@ O3DE has a minimum set of hardware and software requirements for development, as
 
 ## System requirements
 
-Minimum hardware requirements include the following:
+Minimum hardware requirements for development include the following:
 
 + 3 GHz quad-core processor
-+ 12 GB RAM
-+ 2 GB VRAM DirectX 12 or later compatible video card
++ 12 GB RAM*
++ 2 GB VRAM DirectX 12 or Vulkan-compatible video card
   + NVIDIA GeForce GTX 750 or better
   + AMD Radeon HD 8770 or better
-+ 60 GB of free disk space
++ 60 GB of free disk space*
 + 1366 x 768 px screen resolution
 
-Required free disk space and RAM requirements are dependent on the options that you select when configuring your project in O3DE.
+*Required free disk space and RAM requirements are dependent on the options that you select when configuring your project in O3DE.
 
 ## Software prerequisites
 
 To create new projects or use advanced development features in O3DE, you need a developer environment that includes the following software:
 
++ Windows 10
 + [Microsoft Visual Studio 2019*](https://visualstudio.microsoft.com/downloads/) version **16.2.4** through version **16.9.x**
 + [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
 + [CMake {{< versions/cmake >}} or later](https://cmake.org/download/)
