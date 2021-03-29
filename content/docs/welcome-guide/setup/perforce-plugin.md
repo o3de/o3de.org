@@ -1,13 +1,14 @@
 ---
-description: ' How to configure the Perforce Plugin to use Perforce as the source
-  control solution to use with O3DE. '
-title: Using the Perforce Plugin with O3DE
+linktitle: Setup Perforce Plugin
+title: Setup the Perforce Plugin in Open 3D Engine
+description: Learn how to configure the Perforce Plugin to use Perforce as the source
+  control solution for your Open 3D Engine projects.
 weight: 700
 ---
 
 {{< preview-migrated >}}
 
-O3DE integrates with Perforce as a source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.
+O3DE integrates with Perforce as a project source control solution\. The engine uses the `p4 set` command to configure settings, and the Perforce visual client \(P4V\) to selectively sync and submit changed assets\.
 
 You can use the **Perforce Settings** dialog box to configure how O3DE connects to Perforce\. The following settings are cached and populated when the dialog box opens:
 + **Server** \(`P4PORT`\)
