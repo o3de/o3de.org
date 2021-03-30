@@ -54,7 +54,7 @@ $(function() {
 
 <p><code>#include &lt;EditorScriptCanvasComponent.h&gt;</code></p>
 
-<p>Inherits EditorComponentBase, Handler, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits EditorComponentBase, Handler, Handler, Handler, Handler, Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -124,6 +124,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetSaved</b> (con
 <tr class="memitem:a9be0852240593a90b5fe14f640da9564"><td class="memItemLeft" align="right" valign="top"><a id="a9be0852240593a90b5fe14f640da9564"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAssetReloaded</b> (const ScriptCanvasMemoryAsset::pointer asset) override</td></tr>
 <tr class="separator:a9be0852240593a90b5fe14f640da9564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b29fdd382d980179b5e2d6746f170ac"><td class="memItemLeft" align="right" valign="top"><a id="a1b29fdd382d980179b5e2d6746f170ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStartPlayInEditor</b> () override</td></tr>
+<tr class="separator:a1b29fdd382d980179b5e2d6746f170ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513ad4ae21446e9f2987762db75847cf"><td class="memItemLeft" align="right" valign="top"><a id="a513ad4ae21446e9f2987762db75847cf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnStopPlayInEditor</b> () override</td></tr>
+<tr class="separator:a513ad4ae21446e9f2987762db75847cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -183,12 +189,12 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="separator:af03322e5633b119d78efc0e6cc6e61db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> The user facing Editor Component for interfacing with ScriptCanvas It connects to the AssetCatalogEventBus in order to remove the ScriptCanvasAssetHolder asset reference when the asset is removed from the file system. The reason the ScriptCanvasAssetHolder holder does not remove the asset reference itself is because the ScriptCanvasEditor MainWindow has a ScriptCanvasAssetHolder which it uses to maintain the asset data in memory. Therefore removing an open <a class="el" href="class_script_canvas_editor_1_1_script_canvas_asset.html">ScriptCanvasAsset</a> from the file system will remove the reference from the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a>, but not the reference from the MainWindow allowing the ScriptCanvas graph to still be modified while open</p>
-<p>Finally per graph instance variables values are stored on the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> and injected into the runtime ScriptCanvas component in BuildGameEntity </p>
+<div class="textblock"><p><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> The user facing Editor Component for interfacing with <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> It connects to the AssetCatalogEventBus in order to remove the ScriptCanvasAssetHolder asset reference when the asset is removed from the file system. The reason the ScriptCanvasAssetHolder holder does not remove the asset reference itself is because the ScriptCanvasEditor MainWindow has a ScriptCanvasAssetHolder which it uses to maintain the asset data in memory. Therefore removing an open <a class="el" href="class_script_canvas_editor_1_1_script_canvas_asset.html">ScriptCanvasAsset</a> from the file system will remove the reference from the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a>, but not the reference from the MainWindow allowing the <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph to still be modified while open</p>
+<p>Finally per graph instance variables values are stored on the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> and injected into the runtime <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> component in BuildGameEntity </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:27 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:43 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

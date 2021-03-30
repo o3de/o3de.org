@@ -62,9 +62,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_program_settings.html">ProgramSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_variant.html">Variant</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that describes shader variant data that is used to populate a <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html">ShaderSourceData</a> at asset build time.  <a href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_variant.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -74,6 +71,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed64d26a781d0e604258b862cb504609"><td class="memItemLeft" align="right" valign="top"><a id="aed64d26a781d0e604258b862cb504609"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html">ShaderSourceData</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:aed64d26a781d0e604258b862cb504609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef06099690619748ca1f9db15602fad3"><td class="memItemLeft" align="right" valign="top"><a id="aef06099690619748ca1f9db15602fad3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#aef06099690619748ca1f9db15602fad3">IsRhiBackendDisabled</a> (const AZ::Name &amp;rhiName)</td></tr>
+<tr class="memdesc:aef06099690619748ca1f9db15602fad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function. Returns true if @rhiName is present in m_disabledRhiBackends. <br /></td></tr>
+<tr class="separator:aef06099690619748ca1f9db15602fad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -107,6 +108,10 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawListNa
 <tr class="memitem:a5a438240eaeb78e1f2133842d4f541ba"><td class="memItemLeft" align="right" valign="top"><a id="a5a438240eaeb78e1f2133842d4f541ba"></a>
 <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_option_group_hints.html">RPI::ShaderOptionGroupHints</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderOptionGroupHints</b></td></tr>
 <tr class="separator:a5a438240eaeb78e1f2133842d4f541ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e435c93fba04965114b65f9e83eb20e"><td class="memItemLeft" align="right" valign="top"><a id="a7e435c93fba04965114b65f9e83eb20e"></a>
+AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#a7e435c93fba04965114b65f9e83eb20e">m_disabledRhiBackends</a></td></tr>
+<tr class="memdesc:a7e435c93fba04965114b65f9e83eb20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of RHI Backends (aka ShaderPlatformInterface) for which this shader should not be compiled. <br /></td></tr>
+<tr class="separator:a7e435c93fba04965114b65f9e83eb20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -119,7 +124,7 @@ static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Extens
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:47 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:04 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

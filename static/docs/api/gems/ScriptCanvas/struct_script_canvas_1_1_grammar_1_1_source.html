@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><b>Grammar</b></li><li class="navelem"><a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><b>Grammar</b></li><li class="navelem"><a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -46,6 +46,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_script_canvas_1_1_grammar_1_1_source-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::Grammar::Source Struct Reference</div>  </div>
@@ -54,38 +55,65 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a97b8e0e27ff11e9b5773d64883c15a6b"><td class="memItemLeft" align="right" valign="top"><a id="a97b8e0e27ff11e9b5773d64883c15a6b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Source</b> (const <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> &amp;graph, const <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> &amp;graphData, const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;variableData, const AZStd::string &amp;name, const AZStd::string &amp;path)</td></tr>
-<tr class="separator:a97b8e0e27ff11e9b5773d64883c15a6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501efab50aa05a5e2e33d98e03e2dafc"><td class="memItemLeft" align="right" valign="top"><a id="a501efab50aa05a5e2e33d98e03e2dafc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a>, &quot;{116D1E9E-11F5-4610-95AD-42BF2C32E530}&quot;)</td></tr>
+<tr class="separator:a501efab50aa05a5e2e33d98e03e2dafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5511257780960fd7ef06da6ea59dae"><td class="memItemLeft" align="right" valign="top"><a id="a3b5511257780960fd7ef06da6ea59dae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a>, AZ::SystemAllocator, 0)</td></tr>
+<tr class="separator:a3b5511257780960fd7ef06da6ea59dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd742fa84a4938adae9e908dbd40cda0"><td class="memItemLeft" align="right" valign="top"><a id="afd742fa84a4938adae9e908dbd40cda0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Source</b> (const <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> &amp;graph, const AZ::Data::AssetId &amp;id, const <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> &amp;graphData, const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;variableData, AZStd::string_view name, AZStd::string_view path, NamespacePath &amp;&amp;namespacePath, bool addDebugInformation=true, bool printModelToConsole=false)</td></tr>
+<tr class="separator:afd742fa84a4938adae9e908dbd40cda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a180df04707dc7a4c244c4c487f8478c8"><td class="memItemLeft" align="right" valign="top"><a id="a180df04707dc7a4c244c4c487f8478c8"></a>
-static AZ::Outcome&lt; <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a>, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Construct</b> (const <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> &amp;graph, const AZStd::string &amp;name, const AZStd::string &amp;path)</td></tr>
-<tr class="separator:a180df04707dc7a4c244c4c487f8478c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e900c0c2c01a0d04bd2b20e284256c7"><td class="memItemLeft" align="right" valign="top"><a id="a1e900c0c2c01a0d04bd2b20e284256c7"></a>
+static AZ::Outcome&lt; <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a>, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>Construct</b> (const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_request.html">Request</a> &amp;reqeust)</td></tr>
+<tr class="separator:a1e900c0c2c01a0d04bd2b20e284256c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad4b68a3aa8be5ea09dbb55a3aa69c6e9"><td class="memItemLeft" align="right" valign="top"><a id="ad4b68a3aa8be5ea09dbb55a3aa69c6e9"></a>
-const <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_graph</b></td></tr>
-<tr class="separator:ad4b68a3aa8be5ea09dbb55a3aa69c6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a920c5b2438c6de722f2983cf1ffe042b"><td class="memItemLeft" align="right" valign="top"><a id="a920c5b2438c6de722f2983cf1ffe042b"></a>
-const <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_graphData</b></td></tr>
-<tr class="separator:a920c5b2438c6de722f2983cf1ffe042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b1e6a7c83a3b405da2348b7e7ad529a"><td class="memItemLeft" align="right" valign="top"><a id="a7b1e6a7c83a3b405da2348b7e7ad529a"></a>
-const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>m_variableData</b></td></tr>
-<tr class="separator:a7b1e6a7c83a3b405da2348b7e7ad529a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbeb516bb89be8d7abe435ca2d922298"><td class="memItemLeft" align="right" valign="top"><a id="abbeb516bb89be8d7abe435ca2d922298"></a>
+const <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_graph</b> = nullptr</td></tr>
+<tr class="separator:abbeb516bb89be8d7abe435ca2d922298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af061aca56ad5e95c7113de812e7e89f1"><td class="memItemLeft" align="right" valign="top"><a id="af061aca56ad5e95c7113de812e7e89f1"></a>
+const AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetId</b></td></tr>
+<tr class="separator:af061aca56ad5e95c7113de812e7e89f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e133f34648efafba9d18c9e7355f9fe"><td class="memItemLeft" align="right" valign="top"><a id="a3e133f34648efafba9d18c9e7355f9fe"></a>
+const <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_graphData</b> = nullptr</td></tr>
+<tr class="separator:a3e133f34648efafba9d18c9e7355f9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75718d2f438fa9e7c7881523ed663f39"><td class="memItemLeft" align="right" valign="top"><a id="a75718d2f438fa9e7c7881523ed663f39"></a>
+const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_variableData</b> = nullptr</td></tr>
+<tr class="separator:a75718d2f438fa9e7c7881523ed663f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ecab75cb78fd6f5398ce206e3e24ac6"><td class="memItemLeft" align="right" valign="top"><a id="a2ecab75cb78fd6f5398ce206e3e24ac6"></a>
 const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
 <tr class="separator:a2ecab75cb78fd6f5398ce206e3e24ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a928681732075d57b5608778fbab32cdb"><td class="memItemLeft" align="right" valign="top"><a id="a928681732075d57b5608778fbab32cdb"></a>
 const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_path</b></td></tr>
 <tr class="separator:a928681732075d57b5608778fbab32cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93671e218973e9bdf12d9d17cb3ad1e1"><td class="memItemLeft" align="right" valign="top"><a id="a93671e218973e9bdf12d9d17cb3ad1e1"></a>
+const NamespacePath&#160;</td><td class="memItemRight" valign="bottom"><b>m_namespacePath</b></td></tr>
+<tr class="separator:a93671e218973e9bdf12d9d17cb3ad1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90ebfbce5324c73445f5b02dc8f2fc01"><td class="memItemLeft" align="right" valign="top"><a id="a90ebfbce5324c73445f5b02dc8f2fc01"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_addDebugInfo</b> = true</td></tr>
+<tr class="separator:a90ebfbce5324c73445f5b02dc8f2fc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b8e8d0d5662f20a1c46dce91f7f9a42"><td class="memItemLeft" align="right" valign="top"><a id="a4b8e8d0d5662f20a1c46dce91f7f9a42"></a>
+const bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_printModelToConsole</b> = false</td></tr>
+<tr class="separator:a4b8e8d0d5662f20a1c46dce91f7f9a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf090b9a1458aa07dd57e10de0522911"><td class="memItemLeft" align="right" valign="top"><a id="aaf090b9a1458aa07dd57e10de0522911"></a>
+const AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_assetIdString</b></td></tr>
+<tr class="separator:aaf090b9a1458aa07dd57e10de0522911"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:aa1a5e187060cb2ab671414bbdc9d3b0a"><td class="memItemLeft" align="right" valign="top"><a id="aa1a5e187060cb2ab671414bbdc9d3b0a"></a>
+static const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a>&#160;</td><td class="memItemRight" valign="bottom"><b>k_emptyVardata</b></td></tr>
+<tr class="separator:aa1a5e187060cb2ab671414bbdc9d3b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:25 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:41 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

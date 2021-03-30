@@ -57,8 +57,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a08549bdef9a57a138ea00bdd755d63c6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a08549bdef9a57a138ea00bdd755d63c6">Update</a> (const float updateIntervalMS)=0</td></tr>
-<tr class="separator:a08549bdef9a57a138ea00bdd755d63c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c16ead52d1f551d8152a1b0896f1a4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ae6c16ead52d1f551d8152a1b0896f1a4">Update</a> (float updateIntervalMS)=0</td></tr>
+<tr class="separator:ae6c16ead52d1f551d8152a1b0896f1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3f4e9259cc55ca26358dee53ae12c0b"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ae3f4e9259cc55ca26358dee53ae12c0b">Initialize</a> ()=0</td></tr>
 <tr class="separator:ae3f4e9259cc55ca26358dee53ae12c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac1ee50580524540725cd4fb07541f1"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#afac1ee50580524540725cd4fb07541f1">ShutDown</a> ()=0</td></tr>
@@ -67,90 +67,90 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aab7a3ae4b1ad95f1c849dfb548cef363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6219b4e94476c4312159245c7e7a5cc9"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a6219b4e94476c4312159245c7e7a5cc9">StopAllSounds</a> ()=0</td></tr>
 <tr class="separator:a6219b4e94476c4312159245c7e7a5cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4be5899c83163b3b1248aac110869bb"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#af4be5899c83163b3b1248aac110869bb">RegisterAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const char *const objectName=nullptr)=0</td></tr>
-<tr class="separator:af4be5899c83163b3b1248aac110869bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e952a096133647dacdf88ac0df351e2"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a7e952a096133647dacdf88ac0df351e2">UnregisterAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData)=0</td></tr>
-<tr class="separator:a7e952a096133647dacdf88ac0df351e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff1b20b6b637da125a99cd6f06f67197"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aff1b20b6b637da125a99cd6f06f67197">ResetAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData)=0</td></tr>
-<tr class="separator:aff1b20b6b637da125a99cd6f06f67197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3080df856b03ef0fa3e1011eedc3984c"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a3080df856b03ef0fa3e1011eedc3984c">UpdateAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData)=0</td></tr>
-<tr class="separator:a3080df856b03ef0fa3e1011eedc3984c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec7b9f4a2cb60c930f92d55ec7e0071b"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aec7b9f4a2cb60c930f92d55ec7e0071b">PrepareTriggerSync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const audioObjectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const triggerData)=0</td></tr>
-<tr class="separator:aec7b9f4a2cb60c930f92d55ec7e0071b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07dd9a75a2be9e42d99651bf69a907c6"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a07dd9a75a2be9e42d99651bf69a907c6">UnprepareTriggerSync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const triggerData)=0</td></tr>
-<tr class="separator:a07dd9a75a2be9e42d99651bf69a907c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a386a988200c1610aaa59886f922644ab"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a386a988200c1610aaa59886f922644ab">PrepareTriggerAsync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const triggerData, <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const eventData)=0</td></tr>
-<tr class="separator:a386a988200c1610aaa59886f922644ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff42d72bce49d68175be42624c1c154"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a5ff42d72bce49d68175be42624c1c154">UnprepareTriggerAsync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const pAudioObjectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const pTriggerData, <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const pEventData)=0</td></tr>
-<tr class="separator:a5ff42d72bce49d68175be42624c1c154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23be1c191e441a2f8c96ba00fa60bd2b"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a23be1c191e441a2f8c96ba00fa60bd2b">ActivateTrigger</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const triggerData, <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const tventData, const <a class="el" href="struct_audio_1_1_s_a_t_l_source_data.html">SATLSourceData</a> *const sourceData)=0</td></tr>
-<tr class="separator:a23be1c191e441a2f8c96ba00fa60bd2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d8f1ce0304bc6423c9f40ce1302e9e"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a55d8f1ce0304bc6423c9f40ce1302e9e">StopEvent</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const eventData)=0</td></tr>
-<tr class="separator:a55d8f1ce0304bc6423c9f40ce1302e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc0156d4a4ef5fc8a88167ed7bcf9bb2"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#afc0156d4a4ef5fc8a88167ed7bcf9bb2">StopAllEvents</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData)=0</td></tr>
-<tr class="separator:afc0156d4a4ef5fc8a88167ed7bcf9bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e0321cf78ccd6d05158589c8bf9403f"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a4e0321cf78ccd6d05158589c8bf9403f">SetPosition</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const SATLWorldPosition &amp;worldPosition)=0</td></tr>
-<tr class="separator:a4e0321cf78ccd6d05158589c8bf9403f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad57bbbe34b4959abfb0f0a29645d8301"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ad57bbbe34b4959abfb0f0a29645d8301">SetMultiplePositions</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const MultiPositionParams &amp;multiPositions)=0</td></tr>
-<tr class="separator:ad57bbbe34b4959abfb0f0a29645d8301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a091b1c09adc98ac42c22f030fccbff46"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a091b1c09adc98ac42c22f030fccbff46">SetRtpc</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *const rtpcData, const float value)=0</td></tr>
-<tr class="separator:a091b1c09adc98ac42c22f030fccbff46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa84b725968283c18e8cb497033730a40"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aa84b725968283c18e8cb497033730a40">SetSwitchState</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *const switchStateData)=0</td></tr>
-<tr class="separator:aa84b725968283c18e8cb497033730a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9122d322aec3ca66f3b2293654e61a9"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ae9122d322aec3ca66f3b2293654e61a9">SetObstructionOcclusion</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const float obstruction, const float occlusion)=0</td></tr>
-<tr class="separator:ae9122d322aec3ca66f3b2293654e61a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a278e6032ed4bdda5f95eb65babcf340f"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a278e6032ed4bdda5f95eb65babcf340f">SetEnvironment</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *const environmentData, const float amount)=0</td></tr>
-<tr class="separator:a278e6032ed4bdda5f95eb65babcf340f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e13f0caa7f727b74dade5b1265ad0ff"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a5e13f0caa7f727b74dade5b1265ad0ff">SetListenerPosition</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *const listenerData, const SATLWorldPosition &amp;newPosition)=0</td></tr>
-<tr class="separator:a5e13f0caa7f727b74dade5b1265ad0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9139cd1031b9dc81964af002f52e9aad"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a9139cd1031b9dc81964af002f52e9aad">ResetRtpc</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *const rtpcData)=0</td></tr>
-<tr class="separator:a9139cd1031b9dc81964af002f52e9aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af783171388f9f4a1e750b2ca7df3e52f"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#af783171388f9f4a1e750b2ca7df3e52f">RegisterInMemoryFile</a> (<a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const audioFileEntry)=0</td></tr>
-<tr class="separator:af783171388f9f4a1e750b2ca7df3e52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cba64bd38b947b62ed447dae47137c2"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a2cba64bd38b947b62ed447dae47137c2">UnregisterInMemoryFile</a> (<a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const audioFileEntry)=0</td></tr>
-<tr class="separator:a2cba64bd38b947b62ed447dae47137c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6435ed3e3c94d95267ac9753b58bf96"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ac6435ed3e3c94d95267ac9753b58bf96">ParseAudioFileEntry</a> (const AZ::rapidxml::xml_node&lt; char &gt; *audioFileEntryNode, <a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const fileEntryInfo)=0</td></tr>
-<tr class="separator:ac6435ed3e3c94d95267ac9753b58bf96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16e565f204feacb3599dd57000a3b97c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a16e565f204feacb3599dd57000a3b97c">DeleteAudioFileEntryData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_file_entry_data.html">IATLAudioFileEntryData</a> *const oldAudioFileEntryData)=0</td></tr>
-<tr class="separator:a16e565f204feacb3599dd57000a3b97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61f69af36d05f5605a4be6674b8009ac"><td class="memItemLeft" align="right" valign="top">virtual const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a61f69af36d05f5605a4be6674b8009ac">GetAudioFileLocation</a> (<a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const fileEntryInfo)=0</td></tr>
-<tr class="separator:a61f69af36d05f5605a4be6674b8009ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61de313d1ffa951f04791ee82f430756"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a61de313d1ffa951f04791ee82f430756">RegisterAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const char *objectName=nullptr)=0</td></tr>
+<tr class="separator:a61de313d1ffa951f04791ee82f430756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a0d5e443243b297e78d449a27eea1e"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a52a0d5e443243b297e78d449a27eea1e">UnregisterAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData)=0</td></tr>
+<tr class="separator:a52a0d5e443243b297e78d449a27eea1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c9274374fd00be9ede23c169d144a7"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a11c9274374fd00be9ede23c169d144a7">ResetAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData)=0</td></tr>
+<tr class="separator:a11c9274374fd00be9ede23c169d144a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acacec761497a85cb89fde8acde451b36"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#acacec761497a85cb89fde8acde451b36">UpdateAudioObject</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData)=0</td></tr>
+<tr class="separator:acacec761497a85cb89fde8acde451b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a258ff45db679a56045b0f7d96c3f92fa"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a258ff45db679a56045b0f7d96c3f92fa">PrepareTriggerSync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *audioObjectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *triggerData)=0</td></tr>
+<tr class="separator:a258ff45db679a56045b0f7d96c3f92fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05278b7d77f44a240001494253ab49d4"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a05278b7d77f44a240001494253ab49d4">UnprepareTriggerSync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *triggerData)=0</td></tr>
+<tr class="separator:a05278b7d77f44a240001494253ab49d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada47a1f229389c2d426c0fdb891c037e"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ada47a1f229389c2d426c0fdb891c037e">PrepareTriggerAsync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *triggerData, <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *eventData)=0</td></tr>
+<tr class="separator:ada47a1f229389c2d426c0fdb891c037e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39fb328ec453573b72013b81da33362e"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a39fb328ec453573b72013b81da33362e">UnprepareTriggerAsync</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *pAudioObjectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *pTriggerData, <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *pEventData)=0</td></tr>
+<tr class="separator:a39fb328ec453573b72013b81da33362e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa890335057e37e67de89eddfdb16266f"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aa890335057e37e67de89eddfdb16266f">ActivateTrigger</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *triggerData, <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *tventData, const <a class="el" href="struct_audio_1_1_s_a_t_l_source_data.html">SATLSourceData</a> *sourceData)=0</td></tr>
+<tr class="separator:aa890335057e37e67de89eddfdb16266f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8368081ece57db120718b78952bb120"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ab8368081ece57db120718b78952bb120">StopEvent</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *eventData)=0</td></tr>
+<tr class="separator:ab8368081ece57db120718b78952bb120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc0f4ca091e91827a86e6f1d694a5f0"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a9cc0f4ca091e91827a86e6f1d694a5f0">StopAllEvents</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData)=0</td></tr>
+<tr class="separator:a9cc0f4ca091e91827a86e6f1d694a5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886578f225c9081eaa9138f427759c83"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a886578f225c9081eaa9138f427759c83">SetPosition</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const SATLWorldPosition &amp;worldPosition)=0</td></tr>
+<tr class="separator:a886578f225c9081eaa9138f427759c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a76481a432450d33fcaa30c8e7db0e8"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a1a76481a432450d33fcaa30c8e7db0e8">SetMultiplePositions</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const MultiPositionParams &amp;multiPositions)=0</td></tr>
+<tr class="separator:a1a76481a432450d33fcaa30c8e7db0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01f93abf01fedbca16a63de310f24e3a"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a01f93abf01fedbca16a63de310f24e3a">SetRtpc</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *rtpcData, float value)=0</td></tr>
+<tr class="separator:a01f93abf01fedbca16a63de310f24e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd35e011eb6962df2fb882b228f5dca"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#acfd35e011eb6962df2fb882b228f5dca">SetSwitchState</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *switchStateData)=0</td></tr>
+<tr class="separator:acfd35e011eb6962df2fb882b228f5dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4002292325c8f4705ac33af4b6347477"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a4002292325c8f4705ac33af4b6347477">SetObstructionOcclusion</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, float obstruction, float occlusion)=0</td></tr>
+<tr class="separator:a4002292325c8f4705ac33af4b6347477"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fcc5dc8fc2ef23b50e136c89d5e4034"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a9fcc5dc8fc2ef23b50e136c89d5e4034">SetEnvironment</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *environmentData, float amount)=0</td></tr>
+<tr class="separator:a9fcc5dc8fc2ef23b50e136c89d5e4034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9c15d12c361249a7d538c6251b4344"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aae9c15d12c361249a7d538c6251b4344">SetListenerPosition</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *listenerData, const SATLWorldPosition &amp;newPosition)=0</td></tr>
+<tr class="separator:aae9c15d12c361249a7d538c6251b4344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ba3d1b55f58e04c3d463b91450b5377"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a6ba3d1b55f58e04c3d463b91450b5377">ResetRtpc</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *objectData, const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *rtpcData)=0</td></tr>
+<tr class="separator:a6ba3d1b55f58e04c3d463b91450b5377"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a15b5f8e69ba7a591565fa475ef260e"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a9a15b5f8e69ba7a591565fa475ef260e">RegisterInMemoryFile</a> (<a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *audioFileEntry)=0</td></tr>
+<tr class="separator:a9a15b5f8e69ba7a591565fa475ef260e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0736135def737302726b02f91f88a1ee"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a0736135def737302726b02f91f88a1ee">UnregisterInMemoryFile</a> (<a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *audioFileEntry)=0</td></tr>
+<tr class="separator:a0736135def737302726b02f91f88a1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02383f5b416140792eaea8565f121ae7"><td class="memItemLeft" align="right" valign="top">virtual EAudioRequestStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a02383f5b416140792eaea8565f121ae7">ParseAudioFileEntry</a> (const AZ::rapidxml::xml_node&lt; char &gt; *audioFileEntryNode, <a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *fileEntryInfo)=0</td></tr>
+<tr class="separator:a02383f5b416140792eaea8565f121ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaedb2f091225e80accfc5cd832b8b3fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aaedb2f091225e80accfc5cd832b8b3fa">DeleteAudioFileEntryData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_file_entry_data.html">IATLAudioFileEntryData</a> *oldAudioFileEntryData)=0</td></tr>
+<tr class="separator:aaedb2f091225e80accfc5cd832b8b3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f5c23349555c819afb27d5a93291b5d"><td class="memItemLeft" align="right" valign="top">virtual const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a2f5c23349555c819afb27d5a93291b5d">GetAudioFileLocation</a> (<a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *fileEntryInfo)=0</td></tr>
+<tr class="separator:a2f5c23349555c819afb27d5a93291b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf40af5234686dd94256d0a4cd4924d8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#adf40af5234686dd94256d0a4cd4924d8">NewAudioTriggerImplData</a> (const AZ::rapidxml::xml_node&lt; char &gt; *audioTriggerNode)=0</td></tr>
 <tr class="separator:adf40af5234686dd94256d0a4cd4924d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653bc3ffaac494614cc4bcd78032cf32"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a653bc3ffaac494614cc4bcd78032cf32">DeleteAudioTriggerImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const oldTriggerData)=0</td></tr>
-<tr class="separator:a653bc3ffaac494614cc4bcd78032cf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c1f9df40f1e4ff3d6fa32e7a28b6f2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a82c1f9df40f1e4ff3d6fa32e7a28b6f2">DeleteAudioTriggerImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *oldTriggerData)=0</td></tr>
+<tr class="separator:a82c1f9df40f1e4ff3d6fa32e7a28b6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b0b5f5498e238993c6910d6bbe54eb3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a5b0b5f5498e238993c6910d6bbe54eb3">NewAudioRtpcImplData</a> (const AZ::rapidxml::xml_node&lt; char &gt; *audioRtpcNode)=0</td></tr>
 <tr class="separator:a5b0b5f5498e238993c6910d6bbe54eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace648b18d6c46156cd244becb21e08f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aace648b18d6c46156cd244becb21e08f">DeleteAudioRtpcImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *const oldRtpcData)=0</td></tr>
-<tr class="separator:aace648b18d6c46156cd244becb21e08f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e1b4001e41865cadb9dbd47bdbd47d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a24e1b4001e41865cadb9dbd47bdbd47d">DeleteAudioRtpcImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *oldRtpcData)=0</td></tr>
+<tr class="separator:a24e1b4001e41865cadb9dbd47bdbd47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a425dd78fb342106c8527bc1ac5b05275"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a425dd78fb342106c8527bc1ac5b05275">NewAudioSwitchStateImplData</a> (const AZ::rapidxml::xml_node&lt; char &gt; *audioSwitchStateNode)=0</td></tr>
 <tr class="separator:a425dd78fb342106c8527bc1ac5b05275"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ef99fdacf5fbc1d40a886f86d818137"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a6ef99fdacf5fbc1d40a886f86d818137">DeleteAudioSwitchStateImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *const oldAudioSwitchStateData)=0</td></tr>
-<tr class="separator:a6ef99fdacf5fbc1d40a886f86d818137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b11f7bec14078885870d7bf735caf8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a01b11f7bec14078885870d7bf735caf8">DeleteAudioSwitchStateImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *oldAudioSwitchStateData)=0</td></tr>
+<tr class="separator:a01b11f7bec14078885870d7bf735caf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a771ec2a4bbb0fcdd3455267efea2d429"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a771ec2a4bbb0fcdd3455267efea2d429">NewAudioEnvironmentImplData</a> (const AZ::rapidxml::xml_node&lt; char &gt; *audioEnvironmentNode)=0</td></tr>
 <tr class="separator:a771ec2a4bbb0fcdd3455267efea2d429"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6653228ca09617fef8f18b93232a6799"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a6653228ca09617fef8f18b93232a6799">DeleteAudioEnvironmentImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *const oldEnvironmentData)=0</td></tr>
-<tr class="separator:a6653228ca09617fef8f18b93232a6799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae918966b5e828fe6387864feba2ecd0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aae918966b5e828fe6387864feba2ecd0">NewGlobalAudioObjectData</a> (const TAudioObjectID objectId)=0</td></tr>
-<tr class="separator:aae918966b5e828fe6387864feba2ecd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45bcbc5ef3ac89c069373661d62e8224"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a45bcbc5ef3ac89c069373661d62e8224">NewAudioObjectData</a> (const TAudioObjectID objectId)=0</td></tr>
-<tr class="separator:a45bcbc5ef3ac89c069373661d62e8224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad08b55fc66f3a6445f74fa26875ccaff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#ad08b55fc66f3a6445f74fa26875ccaff">DeleteAudioObjectData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const oldObjectData)=0</td></tr>
-<tr class="separator:ad08b55fc66f3a6445f74fa26875ccaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5cb96bc9b51211d4b4864bc51fa199"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aac5cb96bc9b51211d4b4864bc51fa199">NewDefaultAudioListenerObjectData</a> (const TATLIDType objectId)=0</td></tr>
-<tr class="separator:aac5cb96bc9b51211d4b4864bc51fa199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f3dd8c88765b6736466eb06e6da76de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a4f3dd8c88765b6736466eb06e6da76de">NewAudioListenerObjectData</a> (const TATLIDType objectId)=0</td></tr>
-<tr class="separator:a4f3dd8c88765b6736466eb06e6da76de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de5cfcc58a1573d98bc335e806160e4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a5de5cfcc58a1573d98bc335e806160e4">DeleteAudioListenerObjectData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *const oldListenerData)=0</td></tr>
-<tr class="separator:a5de5cfcc58a1573d98bc335e806160e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbc22cd16f27bc8de80ca3a85e11f81d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#acbc22cd16f27bc8de80ca3a85e11f81d">NewAudioEventData</a> (const TAudioEventID eventID)=0</td></tr>
-<tr class="separator:acbc22cd16f27bc8de80ca3a85e11f81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a871c453d449c3b03af39508efeb5fbc1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a871c453d449c3b03af39508efeb5fbc1">DeleteAudioEventData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const oldEventData)=0</td></tr>
-<tr class="separator:a871c453d449c3b03af39508efeb5fbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f1a539717bdb2ae5981692ac0d5d0af"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a4f1a539717bdb2ae5981692ac0d5d0af">ResetAudioEventData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const eventData)=0</td></tr>
-<tr class="separator:a4f1a539717bdb2ae5981692ac0d5d0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49fb1961f05eb85a38e71265d3c17716"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a49fb1961f05eb85a38e71265d3c17716">SetLanguage</a> (const char *const language)=0</td></tr>
-<tr class="separator:a49fb1961f05eb85a38e71265d3c17716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba77e586b0751203507c09a4de1c14a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a5ba77e586b0751203507c09a4de1c14a">DeleteAudioEnvironmentImplData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *oldEnvironmentData)=0</td></tr>
+<tr class="separator:a5ba77e586b0751203507c09a4de1c14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f75808e44e7529e5efd4245bb34589f"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a7f75808e44e7529e5efd4245bb34589f">NewGlobalAudioObjectData</a> (TAudioObjectID objectId)=0</td></tr>
+<tr class="separator:a7f75808e44e7529e5efd4245bb34589f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9eceeac05c5cd9a2193e7d8a3fa1c90"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#aa9eceeac05c5cd9a2193e7d8a3fa1c90">NewAudioObjectData</a> (TAudioObjectID objectId)=0</td></tr>
+<tr class="separator:aa9eceeac05c5cd9a2193e7d8a3fa1c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bb55a5e870046dd8d5feb169a8e226b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a5bb55a5e870046dd8d5feb169a8e226b">DeleteAudioObjectData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *oldObjectData)=0</td></tr>
+<tr class="separator:a5bb55a5e870046dd8d5feb169a8e226b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a880ba94b556a82ca3b030a915e5051e5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a880ba94b556a82ca3b030a915e5051e5">NewDefaultAudioListenerObjectData</a> (TATLIDType objectId)=0</td></tr>
+<tr class="separator:a880ba94b556a82ca3b030a915e5051e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75efe8ab4cf09deeb825de02f04f4d22"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a75efe8ab4cf09deeb825de02f04f4d22">NewAudioListenerObjectData</a> (TATLIDType objectId)=0</td></tr>
+<tr class="separator:a75efe8ab4cf09deeb825de02f04f4d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a063b41cbeed6124bd6e708b88c836d5f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a063b41cbeed6124bd6e708b88c836d5f">DeleteAudioListenerObjectData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *oldListenerData)=0</td></tr>
+<tr class="separator:a063b41cbeed6124bd6e708b88c836d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560716e90976d79874e67dd547be74c4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a560716e90976d79874e67dd547be74c4">NewAudioEventData</a> (TAudioEventID eventID)=0</td></tr>
+<tr class="separator:a560716e90976d79874e67dd547be74c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a372082081f4b66dc1ed800b440eaa818"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a372082081f4b66dc1ed800b440eaa818">DeleteAudioEventData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *oldEventData)=0</td></tr>
+<tr class="separator:a372082081f4b66dc1ed800b440eaa818"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05af182007c44441297e176e5689bf99"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a05af182007c44441297e176e5689bf99">ResetAudioEventData</a> (<a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *eventData)=0</td></tr>
+<tr class="separator:a05af182007c44441297e176e5689bf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65375a00e3c9195b38089fb97717ca1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#af65375a00e3c9195b38089fb97717ca1">SetLanguage</a> (const char *language)=0</td></tr>
+<tr class="separator:af65375a00e3c9195b38089fb97717ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e2829afa7acd2a0555eadeacca6661"><td class="memItemLeft" align="right" valign="top">virtual const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a33e2829afa7acd2a0555eadeacca6661">GetImplSubPath</a> () const =0</td></tr>
 <tr class="separator:a33e2829afa7acd2a0555eadeacca6661"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec46949c684a6c37dc64ea36e463fb5"><td class="memItemLeft" align="right" valign="top">virtual const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_audio_1_1_audio_system_implementation_requests.html#a3ec46949c684a6c37dc64ea36e463fb5">GetImplementationNameString</a> () const =0</td></tr>
@@ -178,8 +178,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Requests interface for audio middleware implementations. This is the main interface for interacting with an audio middleware implementation, creating and destroying objects, event handling, parameter setting, etc. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a23be1c191e441a2f8c96ba00fa60bd2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23be1c191e441a2f8c96ba00fa60bd2b">&#9670;&nbsp;</a></span>ActivateTrigger()</h2>
+<a id="aa890335057e37e67de89eddfdb16266f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa890335057e37e67de89eddfdb16266f">&#9670;&nbsp;</a></span>ActivateTrigger()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -190,25 +190,25 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::ActivateTrigger </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td>
           <td class="paramname"><em>triggerData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td>
           <td class="paramname"><em>tventData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_s_a_t_l_source_data.html">SATLSourceData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_s_a_t_l_source_data.html">SATLSourceData</a> *&#160;</td>
           <td class="paramname"><em>sourceData</em>&#160;</td>
         </tr>
         <tr>
@@ -267,8 +267,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a6653228ca09617fef8f18b93232a6799"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6653228ca09617fef8f18b93232a6799">&#9670;&nbsp;</a></span>DeleteAudioEnvironmentImplData()</h2>
+<a id="a5ba77e586b0751203507c09a4de1c14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba77e586b0751203507c09a4de1c14a">&#9670;&nbsp;</a></span>DeleteAudioEnvironmentImplData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -279,7 +279,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioEnvironmentImplData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *&#160;</td>
           <td class="paramname"><em>oldEnvironmentData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -299,8 +299,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a871c453d449c3b03af39508efeb5fbc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a871c453d449c3b03af39508efeb5fbc1">&#9670;&nbsp;</a></span>DeleteAudioEventData()</h2>
+<a id="a372082081f4b66dc1ed800b440eaa818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a372082081f4b66dc1ed800b440eaa818">&#9670;&nbsp;</a></span>DeleteAudioEventData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +311,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioEventData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td>
           <td class="paramname"><em>oldEventData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -331,8 +331,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a16e565f204feacb3599dd57000a3b97c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16e565f204feacb3599dd57000a3b97c">&#9670;&nbsp;</a></span>DeleteAudioFileEntryData()</h2>
+<a id="aaedb2f091225e80accfc5cd832b8b3fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaedb2f091225e80accfc5cd832b8b3fa">&#9670;&nbsp;</a></span>DeleteAudioFileEntryData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +343,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioFileEntryData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_file_entry_data.html">IATLAudioFileEntryData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_file_entry_data.html">IATLAudioFileEntryData</a> *&#160;</td>
           <td class="paramname"><em>oldAudioFileEntryData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -363,8 +363,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a5de5cfcc58a1573d98bc335e806160e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5de5cfcc58a1573d98bc335e806160e4">&#9670;&nbsp;</a></span>DeleteAudioListenerObjectData()</h2>
+<a id="a063b41cbeed6124bd6e708b88c836d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a063b41cbeed6124bd6e708b88c836d5f">&#9670;&nbsp;</a></span>DeleteAudioListenerObjectData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +375,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioListenerObjectData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *&#160;</td>
           <td class="paramname"><em>oldListenerData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -395,8 +395,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ad08b55fc66f3a6445f74fa26875ccaff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad08b55fc66f3a6445f74fa26875ccaff">&#9670;&nbsp;</a></span>DeleteAudioObjectData()</h2>
+<a id="a5bb55a5e870046dd8d5feb169a8e226b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bb55a5e870046dd8d5feb169a8e226b">&#9670;&nbsp;</a></span>DeleteAudioObjectData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +407,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioObjectData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>oldObjectData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -427,8 +427,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aace648b18d6c46156cd244becb21e08f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aace648b18d6c46156cd244becb21e08f">&#9670;&nbsp;</a></span>DeleteAudioRtpcImplData()</h2>
+<a id="a24e1b4001e41865cadb9dbd47bdbd47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e1b4001e41865cadb9dbd47bdbd47d">&#9670;&nbsp;</a></span>DeleteAudioRtpcImplData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +439,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioRtpcImplData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *&#160;</td>
           <td class="paramname"><em>oldRtpcData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -459,8 +459,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a6ef99fdacf5fbc1d40a886f86d818137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ef99fdacf5fbc1d40a886f86d818137">&#9670;&nbsp;</a></span>DeleteAudioSwitchStateImplData()</h2>
+<a id="a01b11f7bec14078885870d7bf735caf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b11f7bec14078885870d7bf735caf8">&#9670;&nbsp;</a></span>DeleteAudioSwitchStateImplData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -471,7 +471,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioSwitchStateImplData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *&#160;</td>
           <td class="paramname"><em>oldAudioSwitchStateData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -491,8 +491,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a653bc3ffaac494614cc4bcd78032cf32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a653bc3ffaac494614cc4bcd78032cf32">&#9670;&nbsp;</a></span>DeleteAudioTriggerImplData()</h2>
+<a id="a82c1f9df40f1e4ff3d6fa32e7a28b6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c1f9df40f1e4ff3d6fa32e7a28b6f2">&#9670;&nbsp;</a></span>DeleteAudioTriggerImplData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +503,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::DeleteAudioTriggerImplData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td>
           <td class="paramname"><em>oldTriggerData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -555,8 +555,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a61f69af36d05f5605a4be6674b8009ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61f69af36d05f5605a4be6674b8009ac">&#9670;&nbsp;</a></span>GetAudioFileLocation()</h2>
+<a id="a2f5c23349555c819afb27d5a93291b5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f5c23349555c819afb27d5a93291b5d">&#9670;&nbsp;</a></span>GetAudioFileLocation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -567,7 +567,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual const char* const Audio::AudioSystemImplementationRequests::GetAudioFileLocation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *&#160;</td>
           <td class="paramname"><em>fileEntryInfo</em></td><td>)</td>
           <td></td>
         </tr>
@@ -752,8 +752,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="acbc22cd16f27bc8de80ca3a85e11f81d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbc22cd16f27bc8de80ca3a85e11f81d">&#9670;&nbsp;</a></span>NewAudioEventData()</h2>
+<a id="a560716e90976d79874e67dd547be74c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560716e90976d79874e67dd547be74c4">&#9670;&nbsp;</a></span>NewAudioEventData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -764,7 +764,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a>* Audio::AudioSystemImplementationRequests::NewAudioEventData </td>
           <td>(</td>
-          <td class="paramtype">const TAudioEventID&#160;</td>
+          <td class="paramtype">TAudioEventID&#160;</td>
           <td class="paramname"><em>eventID</em></td><td>)</td>
           <td></td>
         </tr>
@@ -785,8 +785,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a4f3dd8c88765b6736466eb06e6da76de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f3dd8c88765b6736466eb06e6da76de">&#9670;&nbsp;</a></span>NewAudioListenerObjectData()</h2>
+<a id="a75efe8ab4cf09deeb825de02f04f4d22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75efe8ab4cf09deeb825de02f04f4d22">&#9670;&nbsp;</a></span>NewAudioListenerObjectData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -797,7 +797,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a>* Audio::AudioSystemImplementationRequests::NewAudioListenerObjectData </td>
           <td>(</td>
-          <td class="paramtype">const TATLIDType&#160;</td>
+          <td class="paramtype">TATLIDType&#160;</td>
           <td class="paramname"><em>objectId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -818,8 +818,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a45bcbc5ef3ac89c069373661d62e8224"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45bcbc5ef3ac89c069373661d62e8224">&#9670;&nbsp;</a></span>NewAudioObjectData()</h2>
+<a id="aa9eceeac05c5cd9a2193e7d8a3fa1c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9eceeac05c5cd9a2193e7d8a3fa1c90">&#9670;&nbsp;</a></span>NewAudioObjectData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -830,7 +830,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a>* Audio::AudioSystemImplementationRequests::NewAudioObjectData </td>
           <td>(</td>
-          <td class="paramtype">const TAudioObjectID&#160;</td>
+          <td class="paramtype">TAudioObjectID&#160;</td>
           <td class="paramname"><em>objectId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -950,8 +950,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aac5cb96bc9b51211d4b4864bc51fa199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5cb96bc9b51211d4b4864bc51fa199">&#9670;&nbsp;</a></span>NewDefaultAudioListenerObjectData()</h2>
+<a id="a880ba94b556a82ca3b030a915e5051e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a880ba94b556a82ca3b030a915e5051e5">&#9670;&nbsp;</a></span>NewDefaultAudioListenerObjectData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -962,7 +962,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a>* Audio::AudioSystemImplementationRequests::NewDefaultAudioListenerObjectData </td>
           <td>(</td>
-          <td class="paramtype">const TATLIDType&#160;</td>
+          <td class="paramtype">TATLIDType&#160;</td>
           <td class="paramname"><em>objectId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -983,8 +983,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aae918966b5e828fe6387864feba2ecd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae918966b5e828fe6387864feba2ecd0">&#9670;&nbsp;</a></span>NewGlobalAudioObjectData()</h2>
+<a id="a7f75808e44e7529e5efd4245bb34589f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f75808e44e7529e5efd4245bb34589f">&#9670;&nbsp;</a></span>NewGlobalAudioObjectData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -995,7 +995,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual <a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a>* Audio::AudioSystemImplementationRequests::NewGlobalAudioObjectData </td>
           <td>(</td>
-          <td class="paramtype">const TAudioObjectID&#160;</td>
+          <td class="paramtype">TAudioObjectID&#160;</td>
           <td class="paramname"><em>objectId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1016,8 +1016,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ac6435ed3e3c94d95267ac9753b58bf96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6435ed3e3c94d95267ac9753b58bf96">&#9670;&nbsp;</a></span>ParseAudioFileEntry()</h2>
+<a id="a02383f5b416140792eaea8565f121ae7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02383f5b416140792eaea8565f121ae7">&#9670;&nbsp;</a></span>ParseAudioFileEntry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1034,7 +1034,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *&#160;</td>
           <td class="paramname"><em>fileEntryInfo</em>&#160;</td>
         </tr>
         <tr>
@@ -1060,8 +1060,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a386a988200c1610aaa59886f922644ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a386a988200c1610aaa59886f922644ab">&#9670;&nbsp;</a></span>PrepareTriggerAsync()</h2>
+<a id="ada47a1f229389c2d426c0fdb891c037e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada47a1f229389c2d426c0fdb891c037e">&#9670;&nbsp;</a></span>PrepareTriggerAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1072,19 +1072,19 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::PrepareTriggerAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td>
           <td class="paramname"><em>triggerData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td>
           <td class="paramname"><em>eventData</em>&#160;</td>
         </tr>
         <tr>
@@ -1111,8 +1111,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aec7b9f4a2cb60c930f92d55ec7e0071b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec7b9f4a2cb60c930f92d55ec7e0071b">&#9670;&nbsp;</a></span>PrepareTriggerSync()</h2>
+<a id="a258ff45db679a56045b0f7d96c3f92fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a258ff45db679a56045b0f7d96c3f92fa">&#9670;&nbsp;</a></span>PrepareTriggerSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1123,13 +1123,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::PrepareTriggerSync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>audioObjectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td>
           <td class="paramname"><em>triggerData</em>&#160;</td>
         </tr>
         <tr>
@@ -1155,8 +1155,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="af4be5899c83163b3b1248aac110869bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4be5899c83163b3b1248aac110869bb">&#9670;&nbsp;</a></span>RegisterAudioObject()</h2>
+<a id="a61de313d1ffa951f04791ee82f430756"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61de313d1ffa951f04791ee82f430756">&#9670;&nbsp;</a></span>RegisterAudioObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1167,13 +1167,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::RegisterAudioObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>objectName</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -1198,8 +1198,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="af783171388f9f4a1e750b2ca7df3e52f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af783171388f9f4a1e750b2ca7df3e52f">&#9670;&nbsp;</a></span>RegisterInMemoryFile()</h2>
+<a id="a9a15b5f8e69ba7a591565fa475ef260e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a15b5f8e69ba7a591565fa475ef260e">&#9670;&nbsp;</a></span>RegisterInMemoryFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1210,7 +1210,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::RegisterInMemoryFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *&#160;</td>
           <td class="paramname"><em>audioFileEntry</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1257,8 +1257,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a4f1a539717bdb2ae5981692ac0d5d0af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f1a539717bdb2ae5981692ac0d5d0af">&#9670;&nbsp;</a></span>ResetAudioEventData()</h2>
+<a id="a05af182007c44441297e176e5689bf99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05af182007c44441297e176e5689bf99">&#9670;&nbsp;</a></span>ResetAudioEventData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1269,7 +1269,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::ResetAudioEventData </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td>
           <td class="paramname"><em>eventData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1289,8 +1289,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aff1b20b6b637da125a99cd6f06f67197"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff1b20b6b637da125a99cd6f06f67197">&#9670;&nbsp;</a></span>ResetAudioObject()</h2>
+<a id="a11c9274374fd00be9ede23c169d144a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11c9274374fd00be9ede23c169d144a7">&#9670;&nbsp;</a></span>ResetAudioObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1301,7 +1301,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::ResetAudioObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1322,8 +1322,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a9139cd1031b9dc81964af002f52e9aad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9139cd1031b9dc81964af002f52e9aad">&#9670;&nbsp;</a></span>ResetRtpc()</h2>
+<a id="a6ba3d1b55f58e04c3d463b91450b5377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ba3d1b55f58e04c3d463b91450b5377">&#9670;&nbsp;</a></span>ResetRtpc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1334,13 +1334,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::ResetRtpc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *&#160;</td>
           <td class="paramname"><em>rtpcData</em>&#160;</td>
         </tr>
         <tr>
@@ -1366,8 +1366,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a278e6032ed4bdda5f95eb65babcf340f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a278e6032ed4bdda5f95eb65babcf340f">&#9670;&nbsp;</a></span>SetEnvironment()</h2>
+<a id="a9fcc5dc8fc2ef23b50e136c89d5e4034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fcc5dc8fc2ef23b50e136c89d5e4034">&#9670;&nbsp;</a></span>SetEnvironment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1378,19 +1378,19 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetEnvironment </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_environment_impl_data.html">IATLEnvironmentImplData</a> *&#160;</td>
           <td class="paramname"><em>environmentData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>amount</em>&#160;</td>
         </tr>
         <tr>
@@ -1417,8 +1417,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a49fb1961f05eb85a38e71265d3c17716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49fb1961f05eb85a38e71265d3c17716">&#9670;&nbsp;</a></span>SetLanguage()</h2>
+<a id="af65375a00e3c9195b38089fb97717ca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65375a00e3c9195b38089fb97717ca1">&#9670;&nbsp;</a></span>SetLanguage()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1429,7 +1429,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::SetLanguage </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>language</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1449,8 +1449,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a5e13f0caa7f727b74dade5b1265ad0ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e13f0caa7f727b74dade5b1265ad0ff">&#9670;&nbsp;</a></span>SetListenerPosition()</h2>
+<a id="aae9c15d12c361249a7d538c6251b4344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9c15d12c361249a7d538c6251b4344">&#9670;&nbsp;</a></span>SetListenerPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1461,7 +1461,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetListenerPosition </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_listener_data.html">IATLListenerData</a> *&#160;</td>
           <td class="paramname"><em>listenerData</em>, </td>
         </tr>
         <tr>
@@ -1493,8 +1493,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ad57bbbe34b4959abfb0f0a29645d8301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad57bbbe34b4959abfb0f0a29645d8301">&#9670;&nbsp;</a></span>SetMultiplePositions()</h2>
+<a id="a1a76481a432450d33fcaa30c8e7db0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a76481a432450d33fcaa30c8e7db0e8">&#9670;&nbsp;</a></span>SetMultiplePositions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1505,7 +1505,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetMultiplePositions </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
@@ -1537,8 +1537,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ae9122d322aec3ca66f3b2293654e61a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9122d322aec3ca66f3b2293654e61a9">&#9670;&nbsp;</a></span>SetObstructionOcclusion()</h2>
+<a id="a4002292325c8f4705ac33af4b6347477"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4002292325c8f4705ac33af4b6347477">&#9670;&nbsp;</a></span>SetObstructionOcclusion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1549,19 +1549,19 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetObstructionOcclusion </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>obstruction</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>occlusion</em>&#160;</td>
         </tr>
         <tr>
@@ -1620,8 +1620,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a4e0321cf78ccd6d05158589c8bf9403f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e0321cf78ccd6d05158589c8bf9403f">&#9670;&nbsp;</a></span>SetPosition()</h2>
+<a id="a886578f225c9081eaa9138f427759c83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a886578f225c9081eaa9138f427759c83">&#9670;&nbsp;</a></span>SetPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1632,7 +1632,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetPosition </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
@@ -1664,8 +1664,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a091b1c09adc98ac42c22f030fccbff46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a091b1c09adc98ac42c22f030fccbff46">&#9670;&nbsp;</a></span>SetRtpc()</h2>
+<a id="a01f93abf01fedbca16a63de310f24e3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01f93abf01fedbca16a63de310f24e3a">&#9670;&nbsp;</a></span>SetRtpc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1676,19 +1676,19 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetRtpc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_rtpc_impl_data.html">IATLRtpcImplData</a> *&#160;</td>
           <td class="paramname"><em>rtpcData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const float&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -1715,8 +1715,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="aa84b725968283c18e8cb497033730a40"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa84b725968283c18e8cb497033730a40">&#9670;&nbsp;</a></span>SetSwitchState()</h2>
+<a id="acfd35e011eb6962df2fb882b228f5dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd35e011eb6962df2fb882b228f5dca">&#9670;&nbsp;</a></span>SetSwitchState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1727,13 +1727,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::SetSwitchState </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_switch_state_impl_data.html">IATLSwitchStateImplData</a> *&#160;</td>
           <td class="paramname"><em>switchStateData</em>&#160;</td>
         </tr>
         <tr>
@@ -1785,8 +1785,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="afc0156d4a4ef5fc8a88167ed7bcf9bb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc0156d4a4ef5fc8a88167ed7bcf9bb2">&#9670;&nbsp;</a></span>StopAllEvents()</h2>
+<a id="a9cc0f4ca091e91827a86e6f1d694a5f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc0f4ca091e91827a86e6f1d694a5f0">&#9670;&nbsp;</a></span>StopAllEvents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1797,7 +1797,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::StopAllEvents </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1844,8 +1844,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a55d8f1ce0304bc6423c9f40ce1302e9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d8f1ce0304bc6423c9f40ce1302e9e">&#9670;&nbsp;</a></span>StopEvent()</h2>
+<a id="ab8368081ece57db120718b78952bb120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8368081ece57db120718b78952bb120">&#9670;&nbsp;</a></span>StopEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1856,13 +1856,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::StopEvent </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td>
           <td class="paramname"><em>eventData</em>&#160;</td>
         </tr>
         <tr>
@@ -1888,8 +1888,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a5ff42d72bce49d68175be42624c1c154"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ff42d72bce49d68175be42624c1c154">&#9670;&nbsp;</a></span>UnprepareTriggerAsync()</h2>
+<a id="a39fb328ec453573b72013b81da33362e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39fb328ec453573b72013b81da33362e">&#9670;&nbsp;</a></span>UnprepareTriggerAsync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1900,19 +1900,19 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::UnprepareTriggerAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>pAudioObjectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td>
           <td class="paramname"><em>pTriggerData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_event_data.html">IATLEventData</a> *&#160;</td>
           <td class="paramname"><em>pEventData</em>&#160;</td>
         </tr>
         <tr>
@@ -1939,8 +1939,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a07dd9a75a2be9e42d99651bf69a907c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07dd9a75a2be9e42d99651bf69a907c6">&#9670;&nbsp;</a></span>UnprepareTriggerSync()</h2>
+<a id="a05278b7d77f44a240001494253ab49d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05278b7d77f44a240001494253ab49d4">&#9670;&nbsp;</a></span>UnprepareTriggerSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1951,13 +1951,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::UnprepareTriggerSync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *const&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_audio_1_1_i_a_t_l_trigger_impl_data.html">IATLTriggerImplData</a> *&#160;</td>
           <td class="paramname"><em>triggerData</em>&#160;</td>
         </tr>
         <tr>
@@ -1983,8 +1983,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a7e952a096133647dacdf88ac0df351e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e952a096133647dacdf88ac0df351e2">&#9670;&nbsp;</a></span>UnregisterAudioObject()</h2>
+<a id="a52a0d5e443243b297e78d449a27eea1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a0d5e443243b297e78d449a27eea1e">&#9670;&nbsp;</a></span>UnregisterAudioObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1995,7 +1995,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::UnregisterAudioObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2010,8 +2010,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a2cba64bd38b947b62ed447dae47137c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cba64bd38b947b62ed447dae47137c2">&#9670;&nbsp;</a></span>UnregisterInMemoryFile()</h2>
+<a id="a0736135def737302726b02f91f88a1ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0736135def737302726b02f91f88a1ee">&#9670;&nbsp;</a></span>UnregisterInMemoryFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2022,7 +2022,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::UnregisterInMemoryFile </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_s_a_t_l_audio_file_entry_info.html">SATLAudioFileEntryInfo</a> *&#160;</td>
           <td class="paramname"><em>audioFileEntry</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2043,8 +2043,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a08549bdef9a57a138ea00bdd755d63c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08549bdef9a57a138ea00bdd755d63c6">&#9670;&nbsp;</a></span>Update()</h2>
+<a id="ae6c16ead52d1f551d8152a1b0896f1a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c16ead52d1f551d8152a1b0896f1a4">&#9670;&nbsp;</a></span>Update()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2055,7 +2055,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual void Audio::AudioSystemImplementationRequests::Update </td>
           <td>(</td>
-          <td class="paramtype">const float&#160;</td>
+          <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>updateIntervalMS</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2075,8 +2075,8 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="a3080df856b03ef0fa3e1011eedc3984c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3080df856b03ef0fa3e1011eedc3984c">&#9670;&nbsp;</a></span>UpdateAudioObject()</h2>
+<a id="acacec761497a85cb89fde8acde451b36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acacec761497a85cb89fde8acde451b36">&#9670;&nbsp;</a></span>UpdateAudioObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2087,7 +2087,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
         <tr>
           <td class="memname">virtual EAudioRequestStatus Audio::AudioSystemImplementationRequests::UpdateAudioObject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_audio_1_1_i_a_t_l_audio_object_data.html">IATLAudioObjectData</a> *&#160;</td>
           <td class="paramname"><em>objectData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2111,7 +2111,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:52 for AudioSystem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:09 for AudioSystem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

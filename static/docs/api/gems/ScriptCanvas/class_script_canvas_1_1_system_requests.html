@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_system_requests.html">SystemRequests</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_system_requests.html">SystemRequests</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -62,6 +62,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZSt
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a2e67c3c810b5d5eb3c3f03bb5e0e3cca"><td class="memItemLeft" align="right" valign="top"><a id="a2e67c3c810b5d5eb3c3f03bb5e0e3cca"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScriptUnitTestingInProgress</b> ()=0</td></tr>
+<tr class="separator:a2e67c3c810b5d5eb3c3f03bb5e0e3cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab253496e8863ce5f5e058d49c3ec9cf"><td class="memItemLeft" align="right" valign="top"><a id="aab253496e8863ce5f5e058d49c3ec9cf"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkScriptUnitTestBegin</b> ()=0</td></tr>
+<tr class="separator:aab253496e8863ce5f5e058d49c3ec9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab167973e6b9f9cca7188dc2e10642b5f"><td class="memItemLeft" align="right" valign="top"><a id="ab167973e6b9f9cca7188dc2e10642b5f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkScriptUnitTestEnd</b> ()=0</td></tr>
+<tr class="separator:ab167973e6b9f9cca7188dc2e10642b5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9f04d66a4bc4adcb8f5a7a7ae96222"><td class="memItemLeft" align="right" valign="top"><a id="a3f9f04d66a4bc4adcb8f5a7a7ae96222"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_system_requests.html#a3f9f04d66a4bc4adcb8f5a7a7ae96222">CreateEngineComponentsOnEntity</a> (AZ::Entity *entity)=0</td></tr>
 <tr class="memdesc:a3f9f04d66a4bc4adcb8f5a7a7ae96222"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create all the components that entity requires to execute the Script Canvas engine. <br /></td></tr>
@@ -98,6 +107,9 @@ virtual <a class="el" href="class_script_canvas_1_1_behavior_context_object.html
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_system_requests.html#ad2d243b2102f6086d94204f5061ec37f">RemoveOwnedObjectReference</a> (const void *object)=0</td></tr>
 <tr class="memdesc:ad2d243b2102f6086d94204f5061ec37f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a mapping of the raw address of an object created by the behavior context to a <a class="el" href="class_script_canvas_1_1_behavior_context_object.html">BehaviorContextObject</a> node. <br /></td></tr>
 <tr class="separator:ad2d243b2102f6086d94204f5061ec37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224162ad5949ed9a0caa7a657640a4d6"><td class="memItemLeft" align="right" valign="top"><a id="a224162ad5949ed9a0caa7a657640a4d6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInterpretedBuildConfiguration</b> (BuildConfiguration config)=0</td></tr>
+<tr class="separator:a224162ad5949ed9a0caa7a657640a4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2a9580132f85b6b47847c555dfdce3f"><td class="memItemLeft" align="right" valign="top"><a id="ac2a9580132f85b6b47847c555dfdce3f"></a>
 virtual <a class="el" href="struct_script_canvas_1_1_system_component_configuration.html">SystemComponentConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetSystemComponentConfiguration</b> ()=0</td></tr>
 <tr class="separator:ac2a9580132f85b6b47847c555dfdce3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +153,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:24 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
