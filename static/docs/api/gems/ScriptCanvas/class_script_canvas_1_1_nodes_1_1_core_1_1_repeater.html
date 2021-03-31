@@ -38,13 +38,12 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><b>Nodes</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html">Repeater</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><b>Nodes</b></li><li class="navelem"><b>Core</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html">Repeater</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater-members.html">List of all members</a>  </div>
@@ -53,28 +52,25 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A node that repeats an execution signal over the specified time.  
+ <a href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#details">More...</a></p>
+
+<p><code>#include &lt;Repeater.h&gt;</code></p>
+
 <p>Inherits ScriptCanvas::Nodes::Internal::BaseTimerNode.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa49090bce5e722918788fb0041faa125"><td class="memItemLeft" align="right" valign="top"><a id="aa49090bce5e722918788fb0041faa125"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_In</b> (<a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_In::Name</a>(&quot;In&quot;, &quot;Input signal&quot;))</td></tr>
-<tr class="separator:aa49090bce5e722918788fb0041faa125"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5381d3b0fb9679113d05630bb761af30"><td class="memItemLeft" align="right" valign="top"><a id="a5381d3b0fb9679113d05630bb761af30"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_PropertyWithDefaults</b> (double, 0.0, <a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_Property::Name</a>(&quot;Repetitions&quot;, &quot;How many times to trigger the action pin.&quot;) ScriptCanvas_Property::Input ScriptCanvas_Property::Default)</td></tr>
-<tr class="separator:a5381d3b0fb9679113d05630bb761af30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a153c30be65fbbb22fa67a1c300c8dd83"><td class="memItemLeft" align="right" valign="top"><a id="a153c30be65fbbb22fa67a1c300c8dd83"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_OutLatent</b> (<a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_OutLatent::Name</a>(&quot;Complete&quot;, &quot;Signaled upon node exit&quot;))</td></tr>
-<tr class="separator:a153c30be65fbbb22fa67a1c300c8dd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d359888b51b1798b0724842ea308292"><td class="memItemLeft" align="right" valign="top"><a id="a0d359888b51b1798b0724842ea308292"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_OutLatent</b> (<a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_OutLatent::Name</a>(&quot;Action&quot;, &quot;The signal that will be repeated&quot;))</td></tr>
-<tr class="separator:a0d359888b51b1798b0724842ea308292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91090ae0c89b5be98518609956989850"><td class="memItemLeft" align="right" valign="top"><a id="a91090ae0c89b5be98518609956989850"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomizeReplacementNode</b> (<a class="el" href="class_script_canvas_1_1_node.html">Node</a> *replacementNode, AZStd::unordered_map&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>, AZStd::vector&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &gt;&gt; &amp;outSlotIdMap) const override</td></tr>
+<tr class="separator:a91090ae0c89b5be98518609956989850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0cf09802bd8e6ed167513fccbfbb30"><td class="memItemLeft" align="right" valign="top"><a id="a3f0cf09802bd8e6ed167513fccbfbb30"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#a3f0cf09802bd8e6ed167513fccbfbb30">OnInit</a> () override</td></tr>
 <tr class="memdesc:a3f0cf09802bd8e6ed167513fccbfbb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity level initialization, perform any resource allocation here that should be available throughout the node's existence. <br /></td></tr>
 <tr class="separator:a3f0cf09802bd8e6ed167513fccbfbb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed8419232f9cbd753ba030c5fd11726e"><td class="memItemLeft" align="right" valign="top"><a id="aed8419232f9cbd753ba030c5fd11726e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInputSignal</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#aed8419232f9cbd753ba030c5fd11726e">OnInputSignal</a> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId) override</td></tr>
+<tr class="memdesc:aed8419232f9cbd753ba030c5fd11726e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any node that is not pure data will perform its operation assuming that all input has been pushed and is reasonably valid. <br /></td></tr>
 <tr class="separator:aed8419232f9cbd753ba030c5fd11726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb321c798f6cb146ce717ec31e3b65f8"><td class="memItemLeft" align="right" valign="top"><a id="abb321c798f6cb146ce717ec31e3b65f8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimeElapsed</b> ()</td></tr>
@@ -82,12 +78,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimeElapsed</b> ()<
 <tr class="memitem:a35c71ed7e8656dfb36ab9357f43b2141"><td class="memItemLeft" align="right" valign="top"><a id="a35c71ed7e8656dfb36ab9357f43b2141"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeSlotFormat</b> () const override</td></tr>
 <tr class="separator:a35c71ed7e8656dfb36ab9357f43b2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a976c42feaf69f20b98c875e0b41e5fe7"><td class="memItemLeft" align="right" valign="top"><a id="a976c42feaf69f20b98c875e0b41e5fe7"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><b>VersionConverter</b> (AZ::SerializeContext &amp;context, AZ::SerializeContext::DataElementNode &amp;classElement)</td></tr>
-<tr class="separator:a976c42feaf69f20b98c875e0b41e5fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14631c59a42ca8c3b4143b6fb6306b49"><td class="memItemLeft" align="right" valign="top"><a id="a14631c59a42ca8c3b4143b6fb6306b49"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseTimeSlotName</b> () const override</td></tr>
+<tr class="separator:a14631c59a42ca8c3b4143b6fb6306b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5394e99d175942bbb073c440ad346f4"><td class="memItemLeft" align="right" valign="top"><a id="ac5394e99d175942bbb073c440ad346f4"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseTimeSlotToolTip</b> () const override</td></tr>
+<tr class="separator:ac5394e99d175942bbb073c440ad346f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -101,10 +97,12 @@ Protected Attributes</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_repetionCount</b></td></tr>
 <tr class="separator:a73eb942ffd7216a7afeada50247c6daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A node that repeats an execution signal over the specified time. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:25 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:41 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

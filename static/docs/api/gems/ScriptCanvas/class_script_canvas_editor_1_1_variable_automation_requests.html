@@ -70,6 +70,27 @@ virtual AZStd::vector&lt; <a class="el" href="class_script_canvas_1_1_data_1_1_t
 <tr class="memitem:a33d2cce3e3880b044ad5884eb31e9604"><td class="memItemLeft" align="right" valign="top"><a id="a33d2cce3e3880b044ad5884eb31e9604"></a>
 AZStd::vector&lt; <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">ScriptCanvas::Data::Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableTypes</b> () const</td></tr>
 <tr class="separator:a33d2cce3e3880b044ad5884eb31e9604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9565dfe76204c4773c6d7bbd17812c3e"><td class="memItemLeft" align="right" valign="top"><a id="a9565dfe76204c4773c6d7bbd17812c3e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShowingVariablePalette</b> () const =0</td></tr>
+<tr class="separator:a9565dfe76204c4773c6d7bbd17812c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32153b809d45c7c4fb60966411b3344"><td class="memItemLeft" align="right" valign="top"><a id="aa32153b809d45c7c4fb60966411b3344"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShowingGraphVariables</b> () const =0</td></tr>
+<tr class="separator:aa32153b809d45c7c4fb60966411b3344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef3977a13b3537ec4a911c0e8df946d"><td class="memItemLeft" align="right" valign="top"><a id="a9ef3977a13b3537ec4a911c0e8df946d"></a>
+virtual QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCreateVariableButton</b> () const =0</td></tr>
+<tr class="separator:a9ef3977a13b3537ec4a911c0e8df946d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1939a0da850e97fe941037f08eaf995"><td class="memItemLeft" align="right" valign="top"><a id="af1939a0da850e97fe941037f08eaf995"></a>
+virtual QTableView *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphPaletteTableView</b> () const =0</td></tr>
+<tr class="separator:af1939a0da850e97fe941037f08eaf995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169a94eea6a9d5277980e9b0c498d078"><td class="memItemLeft" align="right" valign="top"><a id="a169a94eea6a9d5277980e9b0c498d078"></a>
+virtual QTableView *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariablePaletteTableView</b> () const =0</td></tr>
+<tr class="separator:a169a94eea6a9d5277980e9b0c498d078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089ce0d798d3bbc1584381bd9061e96e"><td class="memItemLeft" align="right" valign="top"><a id="a089ce0d798d3bbc1584381bd9061e96e"></a>
+virtual QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariablePaletteFilter</b> () const =0</td></tr>
+<tr class="separator:a089ce0d798d3bbc1584381bd9061e96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf54edf8b0c69c9e2dd5be368208a00e"><td class="memItemLeft" align="right" valign="top"><a id="acf54edf8b0c69c9e2dd5be368208a00e"></a>
+virtual QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphVariablesFilter</b> () const =0</td></tr>
+<tr class="separator:acf54edf8b0c69c9e2dd5be368208a00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -80,7 +101,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:27 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:44 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

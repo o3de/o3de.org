@@ -64,6 +64,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SizeChangedEvent</b>
 <tr class="memitem:a3d5e76e8c155e88a49cb7bf406097238"><td class="memItemLeft" align="right" valign="top"><a id="a3d5e76e8c155e88a49cb7bf406097238"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixChangedEvent</b> = AZ::Event&lt; const AZ::Matrix4x4 &amp; &gt;</td></tr>
 <tr class="separator:a3d5e76e8c155e88a49cb7bf406097238"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbea875b6c50c6bb6320892ff4adf1d5"><td class="memItemLeft" align="right" valign="top"><a id="adbea875b6c50c6bb6320892ff4adf1d5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SceneChangedEvent</b> = AZ::Event&lt; ScenePtr &gt;</td></tr>
+<tr class="separator:adbea875b6c50c6bb6320892ff4adf1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,6 +132,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a2ff242813a27a536533c0cdc05cc942a">ConnectProjectionMatrixChangedHandler</a> (MatrixChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="memdesc:a2ff242813a27a536533c0cdc05cc942a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the projection matrix has changed. <br /></td></tr>
 <tr class="separator:a2ff242813a27a536533c0cdc05cc942a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1b19c699ef3052d30f47b07f3b969a"><td class="memItemLeft" align="right" valign="top"><a id="acc1b19c699ef3052d30f47b07f3b969a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#acc1b19c699ef3052d30f47b07f3b969a">ConnectSceneChangedHandler</a> (SceneChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:acc1b19c699ef3052d30f47b07f3b969a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the render scene has changed. <br /></td></tr>
+<tr class="separator:acc1b19c699ef3052d30f47b07f3b969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40eeeae789269ce96440f2341ca71014"><td class="memItemLeft" align="right" valign="top"><a id="a40eeeae789269ce96440f2341ca71014"></a>
 const AZ::Matrix4x4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a40eeeae789269ce96440f2341ca71014">GetCameraViewMatrix</a> () const override</td></tr>
 <tr class="memdesc:a40eeeae789269ce96440f2341ca71014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current camera's view matrix. <br /></td></tr>
@@ -312,7 +319,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:48 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:04 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

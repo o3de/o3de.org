@@ -35,7 +35,7 @@ To complete the procedures in this tutorial, you need the following:
    ```
 
    {{< important >}}
-   If this is your first time building O3DE, you'll also need to pass the location of your third party libraries directory. Add
+   If this is your first time building O3DE, you'll also need to pass the location of your third-party libraries directory. Add
    the `-DLY_3RDPARTY_PATH` argument with this directory as a value. See the [build documentation](/docs/user-guide/build) for more
    tips on your first build.
    {{< /important >}}

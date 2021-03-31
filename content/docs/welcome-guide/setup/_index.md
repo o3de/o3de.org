@@ -1,8 +1,8 @@
 ---
-description: ' Learn how to install and set up Open 3D Engine for the first time. '
 linktitle: Setup
 title: Setting up Open 3D Engine
-weight: 600
+description: Learn how to install and set up Open 3D Engine (O3DE) for the first time.
+weight: 400
 ---
 
 {{< preview-migrated >}}

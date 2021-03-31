@@ -1,8 +1,6 @@
 ---
 title: Contributing
-weight: 500
+weight: 700
 ---
 
-{{< preview-migrated >}}
-
-Coming soon.
+{{< placeholder >}}

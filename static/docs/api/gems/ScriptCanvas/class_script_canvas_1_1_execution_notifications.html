@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_execution_notifications.html">ExecutionNotifications</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_execution_notifications.html">ExecutionNotifications</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -54,15 +54,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aff2dadabb4530c27cfa060181c9a5b57"><td class="memItemLeft" align="right" valign="top"><a id="aff2dadabb4530c27cfa060181c9a5b57"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AnnotateNode</b> (const <a class="el" href="struct_script_canvas_1_1_annotate_node_signal.html">AnnotateNodeSignal</a> &amp;)=0</td></tr>
+<tr class="separator:aff2dadabb4530c27cfa060181c9a5b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea4fd432ef10fc77624f83d608eb7e6c"><td class="memItemLeft" align="right" valign="top"><a id="aea4fd432ef10fc77624f83d608eb7e6c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GraphActivated</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">GraphActivation</a> &amp;)=0</td></tr>
 <tr class="separator:aea4fd432ef10fc77624f83d608eb7e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1a21e6f2153420a0fa301e1b0469a34"><td class="memItemLeft" align="right" valign="top"><a id="af1a21e6f2153420a0fa301e1b0469a34"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GraphDeactivated</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">GraphActivation</a> &amp;)=0</td></tr>
 <tr class="separator:af1a21e6f2153420a0fa301e1b0469a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a754cc040b646a3ea6d0828660b0cc1c7"><td class="memItemLeft" align="right" valign="top"><a id="a754cc040b646a3ea6d0828660b0cc1c7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNodeObserved</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;)=0</td></tr>
-<tr class="separator:a754cc040b646a3ea6d0828660b0cc1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fc97318dea5eb6869eba8e904f15f6e"><td class="memItemLeft" align="right" valign="top"><a id="a2fc97318dea5eb6869eba8e904f15f6e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeError</b> (const AZ::EntityId &amp;entityId, const <a class="el" href="struct_script_canvas_1_1_graph_identifier.html">GraphIdentifier</a> &amp;identifier, const AZStd::string_view &amp;description)=0</td></tr>
+<tr class="separator:a2fc97318dea5eb6869eba8e904f15f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8d12ac1edf160f6df33afa0ca9ec9e"><td class="memItemLeft" align="right" valign="top"><a id="abd8d12ac1edf160f6df33afa0ca9ec9e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGraphObserved</b> (const AZ::EntityId &amp;entityId, const <a class="el" href="struct_script_canvas_1_1_graph_identifier.html">GraphIdentifier</a> &amp;identifier)=0</td></tr>
+<tr class="separator:abd8d12ac1edf160f6df33afa0ca9ec9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac05c0aefc0f4775a90cbbd45138c403"><td class="memItemLeft" align="right" valign="top"><a id="aac05c0aefc0f4775a90cbbd45138c403"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVariableObserved</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;)=0</td></tr>
 <tr class="separator:aac05c0aefc0f4775a90cbbd45138c403"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -72,23 +78,17 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeSignaledO
 <tr class="memitem:afa0ba42c455fd86f7d8a49677477eb21"><td class="memItemLeft" align="right" valign="top"><a id="afa0ba42c455fd86f7d8a49677477eb21"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeSignaledInput</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_parent.html">InputSignal</a> &amp;)=0</td></tr>
 <tr class="separator:afa0ba42c455fd86f7d8a49677477eb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2d6b0e3a0428a40dc19d8cd98d3c3a9"><td class="memItemLeft" align="right" valign="top"><a id="ab2d6b0e3a0428a40dc19d8cd98d3c3a9"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeSignaledDataOuput</b> (const <a class="el" href="class_script_canvas_1_1_output_data_signal.html">OutputDataSignal</a> &amp;)=0</td></tr>
-<tr class="separator:ab2d6b0e3a0428a40dc19d8cd98d3c3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63444fc1a4fdd2d06b9408bfcdea4cc0"><td class="memItemLeft" align="right" valign="top"><a id="a63444fc1a4fdd2d06b9408bfcdea4cc0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>NodeStateUpdated</b> (const <a class="el" href="struct_script_canvas_1_1_node_state_change.html">NodeStateChange</a> &amp;)=0</td></tr>
 <tr class="separator:a63444fc1a4fdd2d06b9408bfcdea4cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a987bea585dfb7ab88cb20fd82dd6a08c"><td class="memItemLeft" align="right" valign="top"><a id="a987bea585dfb7ab88cb20fd82dd6a08c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>VariableChanged</b> (const <a class="el" href="struct_script_canvas_1_1_tagged_data_value.html">VariableChange</a> &amp;)=0</td></tr>
 <tr class="separator:a987bea585dfb7ab88cb20fd82dd6a08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff2dadabb4530c27cfa060181c9a5b57"><td class="memItemLeft" align="right" valign="top"><a id="aff2dadabb4530c27cfa060181c9a5b57"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AnnotateNode</b> (const <a class="el" href="struct_script_canvas_1_1_annotate_node_signal.html">AnnotateNodeSignal</a> &amp;)=0</td></tr>
-<tr class="separator:aff2dadabb4530c27cfa060181c9a5b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:23 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

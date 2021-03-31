@@ -21,34 +21,74 @@ The O3DE base repository is on GitHub at [https://github.com/o3de/o3de](https://
 
 At a high level, the workflow is:
 
-    1. Create a branch from the local clone of your fork, do your work, push it to your fork (origin), and submit a pull request from your fork to the O3DE GitHub repo (upstream).
-    2. Your pull request is checked for merge conflicts. If one is found, the pull request is rejected.
-    3. If there are no merge conflicts, automated review (AR) is triggered and the pull request is flagged for code review.
-    4. If the pull requests passes code review, the SIG owner (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
+1. Create a branch from the local clone of your fork, do your work, push it to your fork (origin), and submit a pull request from your fork to the O3DE GitHub repo (upstream).
 
-### Prerequisites
+2. Your pull request is checked for merge conflicts. If one is found, the pull request is rejected.
 
-To create your first pull request, you must have completed the following:
+3. If there are no merge conflicts, automated review (AR) is triggered and the pull request is flagged for code review.
 
-* Created a fork of `https://github.com/o3de/o3de.git` into your own GitHub account
-* Cloned your fork to your local development environment
-* Created a branch from the `main` branch (or other development branch) scoped to your code additions or changes
-* Made some code changes!
+4. If the pull requests passes code review, the SIG owner (or a delegate) will merge it into the `main` branch of the O3DE GitHub repo.
 
-{{< note >}}
-As a best practice, set `origin` to your forked repo, and `upstream` to `https://github.com/o3de/o3de.git`. We will assume this configuration in the following steps.
-{{< /note >}}
+### Initial Git contribution workflow steps
 
-### Workflow Steps
+1. Create a fork of `https://github.com/o3de/o3de.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [https://github.com/o3de/o3de](https://github.com/o3de/o3de.git) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
 
-1. First, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin):
+2. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
 
-        ```git
-        git checkout -b <your_branch_name>
-        git add .
-        git commit -s -m "<commmit_message>"
-        git push -u origin <your_branch_name>
-        ```
+3. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo. Run the following Git commands from **your locally cloned fork's path**:
+
+    ```bash
+    git remote add upstream https://github.com/o3de/o3de.git
+    ```
+
+    Confirm that `upstream` points to the O3DE public repo and that `origin` points to your fork:
+
+    ```bash
+    git remote -v
+    ```
+
+    Minimally, you should see output that looks like this:
+
+    ```bash
+    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (fetch)
+    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (push)
+    upstream        https://github.com/o3de/o3de.git (fetch)
+    upstream        https://github.com/o3de/o3de.git (push)
+    ```
+
+    You can also configure upstream to target specific branches, as well.
+
+4. Now, update your local repo by `git fetch`ing the branches currently active on the O3DE repo. You can get all working branches with `git fetch upstream --all`, or fetch a specific branch with `git fetch upstream <name-of-branch>`.
+
+5. Rebase the commit history to the last commit from the upstream `main` branch:
+
+    ```bash
+    git rebase upstream/main
+    ```
+
+6. Check out the branch you will be working on and **take your own branch from it** to perform your work.
+
+    ```bash
+    git checkout <name-of-fetched-branch>
+    ```
+
+    Confirm you have switched branches successfully with `git branch`. If you are on the branch you want, create your own branch from it:
+
+    ```bash
+    git checkout -b <name-of-your-working-branch>
+    ```
+
+### Ongoing Git workflow steps
+
+Now, you're ready to do some work! After you've made some changes and saved your work, it's time to submit it as a pull request (PR) for review.
+
+1. First, stage (add) the new or modified code files, commit your changes, and submit a pull request to your fork (origin) with the following commands. (**Check which branch you are on with `git branch` first!**):
+
+    ```bash
+    git add .
+    git commit -s -m "<commmit_message>"
+    git push -u origin <your-branch-name>
+    ```
 
     This will push the update to your fork, and NOT the O3DE code repo.
 
@@ -94,7 +134,7 @@ As a best practice, set `origin` to your forked repo, and `upstream` to `https:/
 
     The SIG owner (or a delegate) can then merge your pull request into `o3de/main`, and you're done! Nice!
 
-### Reviews and Feedback on Pull Requests
+### Reviews and feedback on pull requests
 
 The SIG owner can request changes by providing feedback. You should engage with the comments and make any valid corrections or updates to your code contribution on the same branch. If the automated review (AR) fails, review the errors, make any necessary fixes, and update the pull request on the same branch.
 

@@ -1,5 +1,5 @@
 ---
-description: Use Open 3D Engine's AZ Code Generator to generate source code from Jinja2 templates. 
+description: Use the Open 3D Engine Code Generator to generate source code from Jinja2 templates. 
 linktitle: AZ Code Generator
 title: Automating boilerplate with AZ Code Generator
 weight: 200
@@ -7,7 +7,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-AZ Code Generator is a command line utility that generates source code (or any data or text) from specially tagged source code. You can use it when the structure of the intended code is known in advance so that templates can be made for it. For example, you could generate boilerplate code for serialization or reflection.
+AZ Code Generator is a command-line utility that generates source code (or any data or text) from specially tagged source code. You can use it when the structure of the intended code is known in advance so that templates can be made for it. For example, you could generate boilerplate code for serialization or reflection.
 
  AZ Code Generator parses a list of existing C++ source files and/or header files and generates intermediate data in JSON format. It passes the intermediate data to a series of templates.
 

@@ -61,24 +61,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:afcbe5f2360ff29a47dc5c47129d61328"><td class="memItemLeft" align="right" valign="top"><a id="afcbe5f2360ff29a47dc5c47129d61328"></a>
-typedef AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b></td></tr>
-<tr class="separator:afcbe5f2360ff29a47dc5c47129d61328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71fe99497e07f0b0b538d75b16219b8c"><td class="memItemLeft" align="right" valign="top"><a id="a71fe99497e07f0b0b538d75b16219b8c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZStd::recursive_mutex</td></tr>
+<tr class="separator:a71fe99497e07f0b0b538d75b16219b8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40062d422d8f34066082e4f110625c2b"><td class="memItemLeft" align="right" valign="top"><a id="a40062d422d8f34066082e4f110625c2b"></a>
-virtual AZStd::intrusive_ptr&lt; Internal::ScriptEvent &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterScriptEvent</b> ([[maybe_unused]] const AZ::Data::AssetId &amp;assetId, [[maybe_unused]] AZ::u32 version)</td></tr>
-<tr class="separator:a40062d422d8f34066082e4f110625c2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13e8b2d714af18e9d60fb1e925587b54"><td class="memItemLeft" align="right" valign="top"><a id="a13e8b2d714af18e9d60fb1e925587b54"></a>
+virtual AZStd::intrusive_ptr&lt; Internal::ScriptEventRegistration &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterScriptEvent</b> (const AZ::Data::AssetId &amp;assetId, AZ::u32 version)=0</td></tr>
+<tr class="separator:a13e8b2d714af18e9d60fb1e925587b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae890ddaeadc2242beb55db299196bbc9"><td class="memItemLeft" align="right" valign="top"><a id="ae890ddaeadc2242beb55db299196bbc9"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterScriptEventFromDefinition</b> ([[maybe_unused]] const <a class="el" href="class_script_events_1_1_script_event.html">ScriptEvent</a> &amp;definition)</td></tr>
 <tr class="separator:ae890ddaeadc2242beb55db299196bbc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0acdd7c6b4f48122cf0b503c62007b1"><td class="memItemLeft" align="right" valign="top"><a id="ad0acdd7c6b4f48122cf0b503c62007b1"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterScriptEventFromDefinition</b> ([[maybe_unused]] const <a class="el" href="class_script_events_1_1_script_event.html">ScriptEvent</a> &amp;definition)</td></tr>
 <tr class="separator:ad0acdd7c6b4f48122cf0b503c62007b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6e5bae4de5435a61e457b835b1cabc"><td class="memItemLeft" align="right" valign="top"><a id="a9a6e5bae4de5435a61e457b835b1cabc"></a>
-virtual AZStd::intrusive_ptr&lt; Internal::ScriptEvent &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptEvent</b> ([[maybe_unused]] const AZ::Data::AssetId &amp;assetId, [[maybe_unused]] AZ::u32 version)</td></tr>
-<tr class="separator:a9a6e5bae4de5435a61e457b835b1cabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affaa22f47aeff735f64098ee4eafecf4"><td class="memItemLeft" align="right" valign="top"><a id="affaa22f47aeff735f64098ee4eafecf4"></a>
+virtual AZStd::intrusive_ptr&lt; Internal::ScriptEventRegistration &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptEvent</b> (const AZ::Data::AssetId &amp;assetId, AZ::u32 version)=0</td></tr>
+<tr class="separator:affaa22f47aeff735f64098ee4eafecf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a605659a069d752f291466108114285dd"><td class="memItemLeft" align="right" valign="top"><a id="a605659a069d752f291466108114285dd"></a>
 virtual const <a class="el" href="struct_script_events_1_1_fundamental_types.html">FundamentalTypes</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFundamentalTypes</b> ()=0</td></tr>
 <tr class="separator:a605659a069d752f291466108114285dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,7 +97,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:30 for ScriptEvents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:47 for ScriptEvents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

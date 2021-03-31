@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><b>Nodes</b></li><li class="navelem"><b>Time</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_nodes_1_1_time_1_1_heart_beat.html">HeartBeat</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><b>Nodes</b></li><li class="navelem"><b>Time</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_nodes_1_1_time_1_1_heart_beat.html">HeartBeat</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -51,33 +51,44 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Deprecated: see HeartBeatNodeableNode.  
+ <a href="class_script_canvas_1_1_nodes_1_1_time_1_1_heart_beat.html#details">More...</a></p>
+
+<p><code>#include &lt;HeartBeat.h&gt;</code></p>
+
 <p>Inherits ScriptCanvas::Nodes::Internal::BaseTimerNode.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7ff50345e88e3923d10f5a411a19ba83"><td class="memItemLeft" align="right" valign="top"><a id="a7ff50345e88e3923d10f5a411a19ba83"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>SCRIPTCANVAS_NODE</b> (<a class="el" href="class_script_canvas_1_1_nodes_1_1_time_1_1_heart_beat.html">HeartBeat</a>)</td></tr>
+<tr class="separator:a7ff50345e88e3923d10f5a411a19ba83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ddcef7b3d396da06e13d0f33ac9ca7"><td class="memItemLeft" align="right" valign="top"><a id="aa2ddcef7b3d396da06e13d0f33ac9ca7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomizeReplacementNode</b> (<a class="el" href="class_script_canvas_1_1_node.html">Node</a> *replacementNode, AZStd::unordered_map&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>, AZStd::vector&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &gt;&gt; &amp;outSlotIdMap) const override</td></tr>
+<tr class="separator:aa2ddcef7b3d396da06e13d0f33ac9ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d4359db5cf08780765220016dd7ae8a"><td class="memItemLeft" align="right" valign="top"><a id="a8d4359db5cf08780765220016dd7ae8a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInputSignal</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;) override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_nodes_1_1_time_1_1_heart_beat.html#a8d4359db5cf08780765220016dd7ae8a">OnInputSignal</a> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;) override</td></tr>
+<tr class="memdesc:a8d4359db5cf08780765220016dd7ae8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any node that is not pure data will perform its operation assuming that all input has been pushed and is reasonably valid. <br /></td></tr>
 <tr class="separator:a8d4359db5cf08780765220016dd7ae8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60838917c7196407e18ecaf987483c13"><td class="memItemLeft" align="right" valign="top"><a id="a60838917c7196407e18ecaf987483c13"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseTimeSlotName</b> () const override</td></tr>
+<tr class="separator:a60838917c7196407e18ecaf987483c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bbdae57efcbfa82bff675adffe5ee4"><td class="memItemLeft" align="right" valign="top"><a id="ad6bbdae57efcbfa82bff675adffe5ee4"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseTimeSlotToolTip</b> () const override</td></tr>
+<tr class="separator:ad6bbdae57efcbfa82bff675adffe5ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a53ed88f681a5bb83037e92a6babb9467"><td class="memItemLeft" align="right" valign="top"><a id="a53ed88f681a5bb83037e92a6babb9467"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimeElapsed</b> () override</td></tr>
 <tr class="separator:a53ed88f681a5bb83037e92a6babb9467"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbc50ec9840c69e03f3b92b6ef685eb2"><td class="memItemLeft" align="right" valign="top"><a id="afbc50ec9840c69e03f3b92b6ef685eb2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_In</b> (<a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_In::Name</a>(&quot;Start&quot;, &quot;&quot;))</td></tr>
-<tr class="separator:afbc50ec9840c69e03f3b92b6ef685eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d26148def3bf2d20a7252821c05b2ee"><td class="memItemLeft" align="right" valign="top"><a id="a6d26148def3bf2d20a7252821c05b2ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_In</b> (<a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_In::Name</a>(&quot;Stop&quot;, &quot;&quot;))</td></tr>
-<tr class="separator:a6d26148def3bf2d20a7252821c05b2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e76213fcd8c1039b8edf4d23247a1f3"><td class="memItemLeft" align="right" valign="top"><a id="a6e76213fcd8c1039b8edf4d23247a1f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ScriptCanvas_OutLatent</b> (<a class="el" href="struct_script_canvas_tags_1_1_name.html">ScriptCanvas_OutLatent::Name</a>(&quot;Pulse&quot;, &quot;&quot;))</td></tr>
-<tr class="separator:a6e76213fcd8c1039b8edf4d23247a1f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Deprecated: see HeartBeatNodeableNode. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:26 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:43 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -38,7 +38,7 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_node_utils.html">NodeUtils</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_node_utils.html">NodeUtils</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -55,44 +55,59 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a32f2c1b8f8ae51b7af4087b6ac6028eb"><td class="memItemLeft" align="right" valign="top"><a id="a32f2c1b8f8ae51b7af4087b6ac6028eb"></a>
 static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructNodeType</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *scriptCanvasNode)</td></tr>
 <tr class="separator:a32f2c1b8f8ae51b7af4087b6ac6028eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3338678c82c07d71cf46ab6a38bd99b6"><td class="memItemLeft" align="right" valign="top"><a id="a3338678c82c07d71cf46ab6a38bd99b6"></a>
-static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusIdentifier</b> (const ScriptCanvas::EBusBusId &amp;ebusIdentifier)</td></tr>
-<tr class="separator:a3338678c82c07d71cf46ab6a38bd99b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7290585841a60bbe1f559ffe856689f1"><td class="memItemLeft" align="right" valign="top"><a id="a7290585841a60bbe1f559ffe856689f1"></a>
-static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusEventSenderIdentifier</b> (const ScriptCanvas::EBusBusId &amp;ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
-<tr class="separator:a7290585841a60bbe1f559ffe856689f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abadcabee4b9ae2d45ac31cb24e9a95b6"><td class="memItemLeft" align="right" valign="top"><a id="abadcabee4b9ae2d45ac31cb24e9a95b6"></a>
-static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusEventReceiverIdentifier</b> (const ScriptCanvas::EBusBusId &amp;ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
-<tr class="separator:abadcabee4b9ae2d45ac31cb24e9a95b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad386259625c946f6edc5335fda814d26"><td class="memItemLeft" align="right" valign="top"><a id="ad386259625c946f6edc5335fda814d26"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusIdentifier</b> (ScriptCanvas::EBusBusId ebusIdentifier)</td></tr>
+<tr class="separator:ad386259625c946f6edc5335fda814d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc7794d05bf0323ec0d1419a0c6fac3"><td class="memItemLeft" align="right" valign="top"><a id="aacc7794d05bf0323ec0d1419a0c6fac3"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusEventSenderIdentifier</b> (ScriptCanvas::EBusBusId ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
+<tr class="separator:aacc7794d05bf0323ec0d1419a0c6fac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdc476c892016669a84a2f7951ea6d4f"><td class="memItemLeft" align="right" valign="top"><a id="afdc476c892016669a84a2f7951ea6d4f"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusEventSenderOverloadedIdentifier</b> (ScriptCanvas::EBusBusId ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
+<tr class="separator:afdc476c892016669a84a2f7951ea6d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bc10694c3af99173d57102fed64a64"><td class="memItemLeft" align="right" valign="top"><a id="ae8bc10694c3af99173d57102fed64a64"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructEBusEventReceiverIdentifier</b> (ScriptCanvas::EBusBusId ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
+<tr class="separator:ae8bc10694c3af99173d57102fed64a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c03a73df1a6238ad1a84e2728f7c1f1"><td class="memItemLeft" align="right" valign="top"><a id="a4c03a73df1a6238ad1a84e2728f7c1f1"></a>
 static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructFunctionNodeIdentifier</b> (const AZ::Data::AssetId &amp;assetId)</td></tr>
 <tr class="separator:a4c03a73df1a6238ad1a84e2728f7c1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92a8882f769af2ebab6c2980e62de1cb"><td class="memItemLeft" align="right" valign="top"><a id="a92a8882f769af2ebab6c2980e62de1cb"></a>
-static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructScriptEventIdentifier</b> (const ScriptCanvas::EBusBusId &amp;busId)</td></tr>
-<tr class="separator:a92a8882f769af2ebab6c2980e62de1cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7aff62e53c6220883b592b84e296d86"><td class="memItemLeft" align="right" valign="top"><a id="ad7aff62e53c6220883b592b84e296d86"></a>
-static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructSendScriptEventIdentifier</b> (const ScriptCanvas::EBusBusId &amp;ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
-<tr class="separator:ad7aff62e53c6220883b592b84e296d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bb6b25e7eff6786bcd190888871fae8"><td class="memItemLeft" align="right" valign="top"><a id="a8bb6b25e7eff6786bcd190888871fae8"></a>
-static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructScriptEventReceiverIdentifier</b> (const ScriptCanvas::EBusBusId &amp;ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
-<tr class="separator:a8bb6b25e7eff6786bcd190888871fae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ce3601dd20f533d6b42c9a96fba187"><td class="memItemLeft" align="right" valign="top"><a id="a47ce3601dd20f533d6b42c9a96fba187"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructScriptEventIdentifier</b> (ScriptCanvas::EBusBusId busId)</td></tr>
+<tr class="separator:a47ce3601dd20f533d6b42c9a96fba187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade4005df0ad2c9df76bbcf8d73675edf"><td class="memItemLeft" align="right" valign="top"><a id="ade4005df0ad2c9df76bbcf8d73675edf"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructSendScriptEventIdentifier</b> (ScriptCanvas::EBusBusId ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
+<tr class="separator:ade4005df0ad2c9df76bbcf8d73675edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11b7c35dc4eec5ce3f8ee8e8b81934c"><td class="memItemLeft" align="right" valign="top"><a id="af11b7c35dc4eec5ce3f8ee8e8b81934c"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructScriptEventReceiverIdentifier</b> (ScriptCanvas::EBusBusId ebusIdentifier, const EBusEventId &amp;eventId)</td></tr>
+<tr class="separator:af11b7c35dc4eec5ce3f8ee8e8b81934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfe53fa5c64ac7abc7d0a8b7133171c6"><td class="memItemLeft" align="right" valign="top"><a id="abfe53fa5c64ac7abc7d0a8b7133171c6"></a>
 static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructCustomNodeIdentifier</b> (const AZ::Uuid &amp;nodeId)</td></tr>
 <tr class="separator:abfe53fa5c64ac7abc7d0a8b7133171c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a566ca9b884318907ca9daf91155c93d0"><td class="memItemLeft" align="right" valign="top"><a id="a566ca9b884318907ca9daf91155c93d0"></a>
 static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructMethodNodeIdentifier</b> (AZStd::string_view methodClass, AZStd::string_view methodName)</td></tr>
 <tr class="separator:a566ca9b884318907ca9daf91155c93d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f7c1fa66e00d7640a8829abbeabe3a6"><td class="memItemLeft" align="right" valign="top"><a id="a1f7c1fa66e00d7640a8829abbeabe3a6"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructGlobalMethodNodeIdentifier</b> (AZStd::string_view methodName)</td></tr>
+<tr class="separator:a1f7c1fa66e00d7640a8829abbeabe3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eb8f3c6949000b5247751caf1935b32"><td class="memItemLeft" align="right" valign="top"><a id="a0eb8f3c6949000b5247751caf1935b32"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructMethodOverloadedNodeIdentifier</b> (AZStd::string_view methodName)</td></tr>
+<tr class="separator:a0eb8f3c6949000b5247751caf1935b32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4487590a287f11fafc2e64bce6521d8"><td class="memItemLeft" align="right" valign="top"><a id="aa4487590a287f11fafc2e64bce6521d8"></a>
 static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructGetVariableNodeIdentifier</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId)</td></tr>
 <tr class="separator:aa4487590a287f11fafc2e64bce6521d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9704c73b4b73fd92dfdfb2a87f3946e"><td class="memItemLeft" align="right" valign="top"><a id="ab9704c73b4b73fd92dfdfb2a87f3946e"></a>
 static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructSetVariableNodeIdentifier</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId)</td></tr>
 <tr class="separator:ab9704c73b4b73fd92dfdfb2a87f3946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c7f3f312a09e4b90224369c1ed377f"><td class="memItemLeft" align="right" valign="top"><a id="a67c7f3f312a09e4b90224369c1ed377f"></a>
+static NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>ConstructAzEventIdentifier</b> (AzEventIdentifier azEventIdentifier)</td></tr>
+<tr class="separator:a67c7f3f312a09e4b90224369c1ed377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe294bac58584787fd88bc6ee96d55e1"><td class="memItemLeft" align="right" valign="top"><a id="afe294bac58584787fd88bc6ee96d55e1"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeNode</b> (<a class="el" href="class_script_canvas_1_1_node.html">Node</a> *node, const <a class="el" href="struct_script_canvas_1_1_node_configuration.html">NodeConfiguration</a> &amp;config)</td></tr>
+<tr class="separator:afe294bac58584787fd88bc6ee96d55e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:24 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:39 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

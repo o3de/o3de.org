@@ -1,5 +1,5 @@
 ---
-description: Learn how to debug template drivers that are run from Open 3D Engine's AZ Code Generator. 
+description: Learn how to debug template drivers used in the Open 3D Engine code generation system.
 title: Template Driver Debugging
 weight: 500
 ---

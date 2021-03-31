@@ -77,9 +77,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a560dd1f7b457f077c6c4542126161db8"><td class="memItemLeft" align="right" valign="top"><a id="a560dd1f7b457f077c6c4542126161db8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a560dd1f7b457f077c6c4542126161db8">InitShader</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; shaderAsset)</td></tr>
-<tr class="memdesc:a560dd1f7b457f077c6c4542126161db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this context with the input shader/shader asset. <br /></td></tr>
+<tr class="memitem:a9c4bb4ddb2c656e931a3c9506cc32e61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a9c4bb4ddb2c656e931a3c9506cc32e61">InitShaderWithVariant</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; shaderAsset, const ShaderOptionList *optionAndValues)</td></tr>
+<tr class="separator:a9c4bb4ddb2c656e931a3c9506cc32e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf36e8517bdcb44cad8a847e117f08c7"><td class="memItemLeft" align="right" valign="top"><a id="abf36e8517bdcb44cad8a847e117f08c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitShaderWithVariant</b> (Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt; shader, const ShaderOptionList *optionAndValues)</td></tr>
+<tr class="separator:abf36e8517bdcb44cad8a847e117f08c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560dd1f7b457f077c6c4542126161db8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a560dd1f7b457f077c6c4542126161db8">InitShader</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; shaderAsset)</td></tr>
 <tr class="separator:a560dd1f7b457f077c6c4542126161db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5377b1cc95450cc3850a037f73668301"><td class="memItemLeft" align="right" valign="top"><a id="a5377b1cc95450cc3850a037f73668301"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InitShader</b> (Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt; shader)</td></tr>
@@ -108,6 +111,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#afe1659d86c713e4024ca6fed9c09c3a0">HasDrawStateOptions</a> (DrawStateOptions options)</td></tr>
 <tr class="memdesc:afe1659d86c713e4024ca6fed9c09c3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if some draw state options change are enabled. <br /></td></tr>
 <tr class="separator:afe1659d86c713e4024ca6fed9c09c3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe3881bbee41a1cc406f8f7bf9080f9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#afe3881bbee41a1cc406f8f7bf9080f9d">UseShaderVariant</a> (const ShaderOptionList &amp;optionAndValues)</td></tr>
+<tr class="separator:afe3881bbee41a1cc406f8f7bf9080f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22694a2ac6f999de7e2f29aea6202e93"><td class="memItemLeft" align="right" valign="top"><a id="a22694a2ac6f999de7e2f29aea6202e93"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a22694a2ac6f999de7e2f29aea6202e93">SetDepthState</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_depth_state.html">RHI::DepthState</a> depthState)</td></tr>
 <tr class="memdesc:a22694a2ac6f999de7e2f29aea6202e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set DepthState if DrawStateOptions::DepthState option is enabled. <br /></td></tr>
@@ -128,6 +133,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#ac8c2f1ddb94a549457de33127ae31c71">SetPrimitiveType</a> (RHI::PrimitiveTopology topology)</td></tr>
 <tr class="memdesc:ac8c2f1ddb94a549457de33127ae31c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set PrimitiveType if DrawStateOptions::PrimitiveType option is enabled. <br /></td></tr>
 <tr class="separator:ac8c2f1ddb94a549457de33127ae31c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6efaf5a50af12838ff1526d75a22248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#af6efaf5a50af12838ff1526d75a22248">SetShaderVariant</a> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> shaderVariantId)</td></tr>
+<tr class="separator:af6efaf5a50af12838ff1526d75a22248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3bee30aac5f1348ae5ee353e3bb1b6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#ac3bee30aac5f1348ae5ee353e3bb1b6b">SetScissor</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_scissor.html">RHI::Scissor</a> scissor)</td></tr>
 <tr class="separator:ac3bee30aac5f1348ae5ee353e3bb1b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8bc905c7a92aec3ce2b9601b7dd8a38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#ad8bc905c7a92aec3ce2b9601b7dd8a38">UnsetScissor</a> ()</td></tr>
@@ -138,13 +145,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aafc4a5204dff69e4e7b0e045a5e252cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448ab89f7217e30b4aa10f34a9b3ae90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a448ab89f7217e30b4aa10f34a9b3ae90">DrawIndexed</a> (void *vertexData, uint32_t vertexCount, void *indexData, uint32_t indexCount, RHI::IndexFormat indexFormat, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt; drawSrg=nullptr)</td></tr>
 <tr class="separator:a448ab89f7217e30b4aa10f34a9b3ae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5de4cd8f6b135f78326f3e8114cd4c80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a5de4cd8f6b135f78326f3e8114cd4c80">DrawLinear</a> (void *vertexData, uint32_t vertexCount, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt; drawSrg)</td></tr>
+<tr class="separator:a5de4cd8f6b135f78326f3e8114cd4c80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa36fe3cf731a4de1fb978ccb057e904d"><td class="memItemLeft" align="right" valign="top"><a id="aa36fe3cf731a4de1fb978ccb057e904d"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#aa36fe3cf731a4de1fb978ccb057e904d">GetPerVertexDataSize</a> ()</td></tr>
 <tr class="memdesc:aa36fe3cf731a4de1fb978ccb057e904d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get per vertex size. The size was evaluated when vertex format was set. <br /></td></tr>
 <tr class="separator:aa36fe3cf731a4de1fb978ccb057e904d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48ca2e2d26ed7e60c9634babeae53d35"><td class="memItemLeft" align="right" valign="top"><a id="a48ca2e2d26ed7e60c9634babeae53d35"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a48ca2e2d26ed7e60c9634babeae53d35">GetDrawListTag</a> ()</td></tr>
-<tr class="memdesc:a48ca2e2d26ed7e60c9634babeae53d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DrawListTag of this DyanmicDrawContext. <br /></td></tr>
+<tr class="memdesc:a48ca2e2d26ed7e60c9634babeae53d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DrawListTag of this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a>. <br /></td></tr>
 <tr class="separator:a48ca2e2d26ed7e60c9634babeae53d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a263b6999a405dac9cfc447e10ac0d10e"><td class="memItemLeft" align="right" valign="top"><a id="a263b6999a405dac9cfc447e10ac0d10e"></a>
 Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a263b6999a405dac9cfc447e10ac0d10e">NewDrawSrg</a> ()</td></tr>
@@ -158,6 +167,10 @@ Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_g
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a720132e10987b6c9f17812d1a1fde6fe">IsVertexSizeValid</a> (uint32_t vertexSize)</td></tr>
 <tr class="memdesc:a720132e10987b6c9f17812d1a1fde6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">return whether the vertex data size is valid <br /></td></tr>
 <tr class="separator:a720132e10987b6c9f17812d1a1fde6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33d000c15a9aa261cd20c59f4336b8f9"><td class="memItemLeft" align="right" valign="top"><a id="a33d000c15a9aa261cd20c59f4336b8f9"></a>
+const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a33d000c15a9aa261cd20c59f4336b8f9">GetShader</a> () const</td></tr>
+<tr class="memdesc:a33d000c15a9aa261cd20c59f4336b8f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the shader which is associated with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a>. <br /></td></tr>
+<tr class="separator:a33d000c15a9aa261cd20c59f4336b8f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -263,6 +276,90 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
 
 </div>
 </div>
+<a id="a5de4cd8f6b135f78326f3e8114cd4c80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5de4cd8f6b135f78326f3e8114cd4c80">&#9670;&nbsp;</a></span>DrawLinear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::DrawLinear </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>vertexData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>vertexCount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td>
+          <td class="paramname"><em>drawSrg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Draw linear indexed primitives with vertex data and per draw srg The per draw srg need to be provided if it's required by shader. <br  />
+ </p>
+
+</div>
+</div>
+<a id="a560dd1f7b457f077c6c4542126161db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560dd1f7b457f077c6c4542126161db8">&#9670;&nbsp;</a></span>InitShader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::InitShader </td>
+          <td>(</td>
+          <td class="paramtype">Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt;&#160;</td>
+          <td class="paramname"><em>shaderAsset</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize this context with the input shader/shader asset. <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> initialized with this function may use shader variant later (AddShaderVariant and SetShaderVariant). </p>
+
+</div>
+</div>
+<a id="a9c4bb4ddb2c656e931a3c9506cc32e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4bb4ddb2c656e931a3c9506cc32e61">&#9670;&nbsp;</a></span>InitShaderWithVariant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::InitShaderWithVariant </td>
+          <td>(</td>
+          <td class="paramtype">Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt;&#160;</td>
+          <td class="paramname"><em>shaderAsset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ShaderOptionList *&#160;</td>
+          <td class="paramname"><em>optionAndValues</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Initialize this context with the input shader/shader asset with only one shader variant <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> initialized with this function can't use other variant later (AddShaderVariant and SetShaderVariant). </p>
+
+</div>
+</div>
 <a id="ac3bee30aac5f1348ae5ee353e3bb1b6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3bee30aac5f1348ae5ee353e3bb1b6b">&#9670;&nbsp;</a></span>SetScissor()</h2>
 
@@ -279,6 +376,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
       </table>
 </div><div class="memdoc">
 <p>Setup scissor for following draws which are added to this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> Note: it won't effect any draws submitted out of this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> </p>
+
+</div>
+</div>
+<a id="af6efaf5a50af12838ff1526d75a22248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6efaf5a50af12838ff1526d75a22248">&#9670;&nbsp;</a></span>SetShaderVariant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::SetShaderVariant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a>&#160;</td>
+          <td class="paramname"><em>shaderVariantId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the shader variant as the current variant which is used for any following draw calls. Note, <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#af6efaf5a50af12838ff1526d75a22248">SetShaderVariant()</a> needs to be called before <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a263b6999a405dac9cfc447e10ac0d10e" title="Create a draw srg.">NewDrawSrg()</a> if a draw srg is used in following draw calls. </p>
 
 </div>
 </div>
@@ -339,10 +455,29 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
 
 </div>
 </div>
+<a id="afe3881bbee41a1cc406f8f7bf9080f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3881bbee41a1cc406f8f7bf9080f9d">&#9670;&nbsp;</a></span>UseShaderVariant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> AZ::RPI::DynamicDrawContext::UseShaderVariant </td>
+          <td>(</td>
+          <td class="paramtype">const ShaderOptionList &amp;&#160;</td>
+          <td class="paramname"><em>optionAndValues</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Tell <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> it will use the shader variant specified by ShaderOptionList. The returned <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> can be used via <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#af6efaf5a50af12838ff1526d75a22248">SetShaderVariant()</a> before making any draw calls. Note, if the <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> was initialized with default shader variant, it won't return a valid variant Id. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:02:46 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:03 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

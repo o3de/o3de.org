@@ -38,12 +38,18 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ScriptCanvas</b></li><li class="navelem"><b>Grammar</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_grammar_1_1_abstract_code_model.html">AbstractCodeModel</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespace_script_canvas.html">ScriptCanvas</a></li><li class="navelem"><b>Grammar</b></li><li class="navelem"><a class="el" href="class_script_canvas_1_1_grammar_1_1_abstract_code_model.html">AbstractCodeModel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="class_script_canvas_1_1_grammar_1_1_abstract_code_model-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::Grammar::AbstractCodeModel Class Reference</div>  </div>
@@ -51,34 +57,594 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;AbstractCodeModel.h&gt;</code></p>
+
+<p>Inherits enable_shared_from_this&lt; AbstractCodeModel &gt;.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_connection_in_previously_executed_scope.html">ConnectionInPreviouslyExecutedScope</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_connections_in_previously_executed_scope.html">ConnectionsInPreviouslyExecutedScope</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_return_value_connections.html">ReturnValueConnections</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_user_in_parse_topology_result.html">UserInParseTopologyResult</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a3bdb92314675b15f5fbad9b27d2f9023"><td class="memItemLeft" align="right" valign="top"><a id="a3bdb92314675b15f5fbad9b27d2f9023"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>FirstNode</b> { <b>Self</b>, 
+<b>Parent</b>
+ }</td></tr>
+<tr class="separator:a3bdb92314675b15f5fbad9b27d2f9023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638ec11b9c35e8cd4d4718d62bcb5c70"><td class="memItemLeft" align="right" valign="top"><a id="a638ec11b9c35e8cd4d4718d62bcb5c70"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>MarkLatent</b> { <b>No</b>, 
+<b>Yes</b>
+ }</td></tr>
+<tr class="separator:a638ec11b9c35e8cd4d4718d62bcb5c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad04b824d47898e8889f5ec5fc5acb05a"><td class="memItemLeft" align="right" valign="top"><a id="ad04b824d47898e8889f5ec5fc5acb05a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractCodeModel</b> (const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a> &amp;source)</td></tr>
-<tr class="separator:ad04b824d47898e8889f5ec5fc5acb05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c06a8eece7a46ef7c97f1d4ab684d67"><td class="memItemLeft" align="right" valign="top"><a id="a7c06a8eece7a46ef7c97f1d4ab684d67"></a>
-const Functions &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctions</b> () const</td></tr>
-<tr class="separator:a7c06a8eece7a46ef7c97f1d4ab684d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a43bdc8c711b08a84a17d377805fe3"><td class="memItemLeft" align="right" valign="top"><a id="a07a43bdc8c711b08a84a17d377805fe3"></a>
-AZ::Outcome&lt; void, AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutcome</b> () const</td></tr>
-<tr class="separator:a07a43bdc8c711b08a84a17d377805fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f779494dcbef1df6829a253b30a74da"><td class="memItemLeft" align="right" valign="top"><a id="a6f779494dcbef1df6829a253b30a74da"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractCodeModel</b> (const <a class="el" href="class_script_canvas_1_1_grammar_1_1_abstract_code_model.html">AbstractCodeModel</a> &amp;)=delete</td></tr>
+<tr class="separator:a6f779494dcbef1df6829a253b30a74da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a153d8f2347656d695158816ab0b77fc7"><td class="memItemLeft" align="right" valign="top"><a id="a153d8f2347656d695158816ab0b77fc7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AbstractCodeModel</b> (const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a> &amp;source, bool terminateOnError=false, bool terminateOnInternalError=false)</td></tr>
+<tr class="separator:a153d8f2347656d695158816ab0b77fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66de7248bc774ba819eb010431a87c75"><td class="memItemLeft" align="right" valign="top"><a id="a66de7248bc774ba819eb010431a87c75"></a>
+AZStd::vector&lt; Grammar::VariableConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CombineVariableLists</b> (const AZStd::vector&lt; <a class="el" href="class_script_canvas_1_1_nodeable.html">Nodeable</a> * &gt; &amp;constructionNodeables, const AZStd::vector&lt; AZStd::pair&lt; <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>, <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &gt;&gt; &amp;constructionInputVariableIds, const AZStd::vector&lt; AZStd::pair&lt; <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>, Data::EntityIDType &gt;&gt; &amp;entityIds) const</td></tr>
+<tr class="separator:a66de7248bc774ba819eb010431a87c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39a13db640777c19c02ea8398de46f2"><td class="memItemLeft" align="right" valign="top"><a id="ac39a13db640777c19c02ea8398de46f2"></a>
+const size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugInfoInIndex</b> (ExecutionTreeConstPtr execution) const</td></tr>
+<tr class="separator:ac39a13db640777c19c02ea8398de46f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee91add361c4d0a9dae0e7529715feb4"><td class="memItemLeft" align="right" valign="top"><a id="aee91add361c4d0a9dae0e7529715feb4"></a>
+const size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugInfoOutIndex</b> (ExecutionTreeConstPtr execution, size_t index) const</td></tr>
+<tr class="separator:aee91add361c4d0a9dae0e7529715feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929172df603579a416f6241019ec9bf3"><td class="memItemLeft" align="right" valign="top"><a id="a929172df603579a416f6241019ec9bf3"></a>
+const size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugInfoReturnIndex</b> (ExecutionTreeConstPtr execution) const</td></tr>
+<tr class="separator:a929172df603579a416f6241019ec9bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89a646d95dff2a759c82e62a64c35c3f"><td class="memItemLeft" align="right" valign="top"><a id="a89a646d95dff2a759c82e62a64c35c3f"></a>
+const size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugInfoVariableAssignmentIndex</b> (OutputAssignmentConstPtr output, size_t assignmentIndex) const</td></tr>
+<tr class="separator:a89a646d95dff2a759c82e62a64c35c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5650cdf34c057ded47d40a5b10b83a19"><td class="memItemLeft" align="right" valign="top"><a id="a5650cdf34c057ded47d40a5b10b83a19"></a>
+const size_t *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugInfoVariableSetIndex</b> (OutputAssignmentConstPtr output) const</td></tr>
+<tr class="separator:a5650cdf34c057ded47d40a5b10b83a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98013670f00fdf385c7ce14da72789c4"><td class="memItemLeft" align="right" valign="top"><a id="a98013670f00fdf385c7ce14da72789c4"></a>
+const <a class="el" href="struct_script_canvas_1_1_dependency_report.html">DependencyReport</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependencies</b> () const</td></tr>
+<tr class="separator:a98013670f00fdf385c7ce14da72789c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bfe0b4ccfa7fa7cc9f5a465e9b86a56"><td class="memItemLeft" align="right" valign="top"><a id="a2bfe0b4ccfa7fa7cc9f5a465e9b86a56"></a>
+EBusHandlingConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetEBusEventHandling</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *) const</td></tr>
+<tr class="separator:a2bfe0b4ccfa7fa7cc9f5a465e9b86a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c79e007fd178b22114e3a7fb30ce92"><td class="memItemLeft" align="right" valign="top"><a id="af9c79e007fd178b22114e3a7fb30ce92"></a>
+AZStd::vector&lt; EBusHandlingConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEBusHandlings</b> () const</td></tr>
+<tr class="separator:af9c79e007fd178b22114e3a7fb30ce92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1bb5416d58ac0969b147f9a545c2959"><td class="memItemLeft" align="right" valign="top"><a id="ab1bb5416d58ac0969b147f9a545c2959"></a>
+EventHandlingConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventHandling</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *) const</td></tr>
+<tr class="separator:ab1bb5416d58ac0969b147f9a545c2959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b38f05653420c9277635ab0b5736d9b"><td class="memItemLeft" align="right" valign="top"><a id="a4b38f05653420c9277635ab0b5736d9b"></a>
+AZStd::vector&lt; EventHandlingConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetEventHandlings</b> () const</td></tr>
+<tr class="separator:a4b38f05653420c9277635ab0b5736d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0941493458e41bc271dbf35cd4e8bc7"><td class="memItemLeft" align="right" valign="top"><a id="ab0941493458e41bc271dbf35cd4e8bc7"></a>
+AZStd::vector&lt; ExecutionTreeConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctions</b> () const</td></tr>
+<tr class="separator:ab0941493458e41bc271dbf35cd4e8bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84be65455ea03a83ff42ed2290652867"><td class="memItemLeft" align="right" valign="top"><a id="a84be65455ea03a83ff42ed2290652867"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetImplicitVariable</b> (ExecutionTreeConstPtr execution) const</td></tr>
+<tr class="separator:a84be65455ea03a83ff42ed2290652867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98d58e6b80df7a51892616309e24e7e8"><td class="memItemLeft" align="right" valign="top"><a id="a98d58e6b80df7a51892616309e24e7e8"></a>
+AZStd::vector&lt; VariableConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetLocalVariablesUser</b> () const</td></tr>
+<tr class="separator:a98d58e6b80df7a51892616309e24e7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6806c416f9f4d266922cbd67ee1b5d85"><td class="memItemLeft" align="right" valign="top"><a id="a6806c416f9f4d266922cbd67ee1b5d85"></a>
+AZStd::vector&lt; VariableConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemberVariables</b> () const</td></tr>
+<tr class="separator:a6806c416f9f4d266922cbd67ee1b5d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb7e0d2dd04560cbbac15c0ba217406f"><td class="memItemLeft" align="right" valign="top"><a id="aeb7e0d2dd04560cbbac15c0ba217406f"></a>
+AZStd::vector&lt; NodeableParseConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeableParse</b> () const</td></tr>
+<tr class="separator:aeb7e0d2dd04560cbbac15c0ba217406f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0a156ca9b2238a5475bdb1fda937a0"><td class="memItemLeft" align="right" valign="top"><a id="a1e0a156ca9b2238a5475bdb1fda937a0"></a>
+Grammar::ExecutionCharacteristics&#160;</td><td class="memItemRight" valign="bottom"><b>GetRuntimeCharacteristics</b> () const</td></tr>
+<tr class="separator:a1e0a156ca9b2238a5475bdb1fda937a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb7f9ba2d193be2737f8c136def62d12"><td class="memItemLeft" align="right" valign="top"><a id="acb7f9ba2d193be2737f8c136def62d12"></a>
 const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSource</b> () const</td></tr>
 <tr class="separator:acb7f9ba2d193be2737f8c136def62d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf975ff51b5466ec1e68981a9cb71dc9"><td class="memItemLeft" align="right" valign="top"><a id="abf975ff51b5466ec1e68981a9cb71dc9"></a>
-const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStartNode</b> () const</td></tr>
-<tr class="separator:abf975ff51b5466ec1e68981a9cb71dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaba43c97fa8194014eb285872271ffb"><td class="memItemLeft" align="right" valign="top"><a id="aaaba43c97fa8194014eb285872271ffb"></a>
+const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSourceString</b> () const</td></tr>
+<tr class="separator:aaaba43c97fa8194014eb285872271ffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1ce84e5a3b1743b14d1ae4b8bdcb113"><td class="memItemLeft" align="right" valign="top"><a id="ab1ce84e5a3b1743b14d1ae4b8bdcb113"></a>
+ExecutionTreeConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetStart</b> () const</td></tr>
+<tr class="separator:ab1ce84e5a3b1743b14d1ae4b8bdcb113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46f0cbe3642970d48fce9316e374346"><td class="memItemLeft" align="right" valign="top"><a id="ab46f0cbe3642970d48fce9316e374346"></a>
+const ValidationResults::ValidationEventList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetValidationEvents</b> () const</td></tr>
+<tr class="separator:ab46f0cbe3642970d48fce9316e374346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde49f495585318d548be3a6f6742100"><td class="memItemLeft" align="right" valign="top"><a id="acde49f495585318d548be3a6f6742100"></a>
+VariableWriteHandlingConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableHandling</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *slot) const</td></tr>
+<tr class="separator:acde49f495585318d548be3a6f6742100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a497f3e96cec87d77659bc9d01b88dda4"><td class="memItemLeft" align="right" valign="top"><a id="a497f3e96cec87d77659bc9d01b88dda4"></a>
+VariableWriteHandlingConstSet&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableHandling</b> (VariableConstPtr variable) const</td></tr>
+<tr class="separator:a497f3e96cec87d77659bc9d01b88dda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23bf68cc9ce08ac91fc598bb259f2965"><td class="memItemLeft" align="right" valign="top"><a id="a23bf68cc9ce08ac91fc598bb259f2965"></a>
+const AZStd::vector&lt; VariableConstPtr &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariables</b> () const</td></tr>
+<tr class="separator:a23bf68cc9ce08ac91fc598bb259f2965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d25f9ce8ec2444f3a7230632f8df44b"><td class="memItemLeft" align="right" valign="top"><a id="a3d25f9ce8ec2444f3a7230632f8df44b"></a>
+VariableScopeMeaning&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableScopeMeaning</b> () const</td></tr>
+<tr class="separator:a3d25f9ce8ec2444f3a7230632f8df44b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63316da4e45016c16005b496e9437b7"><td class="memItemLeft" align="right" valign="top"><a id="aa63316da4e45016c16005b496e9437b7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsErrorFree</b> () const</td></tr>
+<tr class="separator:aa63316da4e45016c16005b496e9437b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a504b7b16c1542dd6c95dd9f852f7e"><td class="memItemLeft" align="right" valign="top"><a id="a66a504b7b16c1542dd6c95dd9f852f7e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPerEntityDataRequired</b> () const</td></tr>
+<tr class="separator:a66a504b7b16c1542dd6c95dd9f852f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe6966c8f97875c481107d0e472cfa4d"><td class="memItemLeft" align="right" valign="top"><a id="abe6966c8f97875c481107d0e472cfa4d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPureLibrary</b> () const</td></tr>
 <tr class="separator:abe6966c8f97875c481107d0e472cfa4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a518316fe330eca111dcc0e2e10578b74"><td class="memItemLeft" align="right" valign="top"><a id="a518316fe330eca111dcc0e2e10578b74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUserNodeable</b> () const</td></tr>
+<tr class="separator:a518316fe330eca111dcc0e2e10578b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a30f8204cc7a142563cb313e7015917"><td class="memItemLeft" align="right" valign="top"><a id="a4a30f8204cc7a142563cb313e7015917"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsUserNodeable</b> (VariableConstPtr variable) const</td></tr>
+<tr class="separator:a4a30f8204cc7a142563cb313e7015917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75c9bb4aa9b4d220716a2251a3eddce"><td class="memTemplParams" colspan="2"><a id="ad75c9bb4aa9b4d220716a2251a3eddce"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ad75c9bb4aa9b4d220716a2251a3eddce"><td class="memTemplItemLeft" align="right" valign="top">AZStd::vector&lt; Grammar::VariableConstPtr &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><b>ToVariableList</b> (const AZStd::vector&lt; AZStd::pair&lt; <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>, T &gt;&gt; &amp;source) const</td></tr>
+<tr class="separator:ad75c9bb4aa9b4d220716a2251a3eddce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f476fadc5ad3392896f87a09e27cf7"><td class="memItemLeft" align="right" valign="top"><a id="ad0f476fadc5ad3392896f87a09e27cf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddAllVariablesPreParse</b> ()</td></tr>
+<tr class="separator:ad0f476fadc5ad3392896f87a09e27cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3fb4f1cdb2e3ccfdb3dfdfb28e0b323"><td class="memItemLeft" align="right" valign="top"><a id="ad3fb4f1cdb2e3ccfdb3dfdfb28e0b323"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInformation</b> ()</td></tr>
+<tr class="separator:ad3fb4f1cdb2e3ccfdb3dfdfb28e0b323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c68a0f41b6d98bca9f4e79e3244ae7"><td class="memItemLeft" align="right" valign="top"><a id="ad4c68a0f41b6d98bca9f4e79e3244ae7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInformation</b> (<a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;execution)</td></tr>
+<tr class="separator:ad4c68a0f41b6d98bca9f4e79e3244ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d938257cfd54c3cfa165df72ccd4d5"><td class="memItemLeft" align="right" valign="top"><a id="a49d938257cfd54c3cfa165df72ccd4d5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInformationFunctionDefinition</b> (ExecutionTreePtr root)</td></tr>
+<tr class="separator:a49d938257cfd54c3cfa165df72ccd4d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab14f8380d203850391955a9668c27d03"><td class="memItemLeft" align="right" valign="top"><a id="ab14f8380d203850391955a9668c27d03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInformationIn</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ab14f8380d203850391955a9668c27d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a548db77c5162bfed6b4ca11c22eb4d23"><td class="memItemLeft" align="right" valign="top"><a id="a548db77c5162bfed6b4ca11c22eb4d23"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInformationOut</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a548db77c5162bfed6b4ca11c22eb4d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf932cc1fd16adfdee375a7ecc183cfc"><td class="memItemLeft" align="right" valign="top"><a id="acf932cc1fd16adfdee375a7ecc183cfc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInfiniteLoopDetectionInLoop</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:acf932cc1fd16adfdee375a7ecc183cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae345074b27233648c4a3498001da1a88"><td class="memItemLeft" align="right" valign="top"><a id="ae345074b27233648c4a3498001da1a88"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDebugInfiniteLoopDetectionInHandler</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ae345074b27233648c4a3498001da1a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae785e00a8f04bced3ff663e0a9b03386"><td class="memItemLeft" align="right" valign="top"><a id="ae785e00a8f04bced3ff663e0a9b03386"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddError</b> (ExecutionTreeConstPtr execution, ValidationConstPtr &amp;&amp;error) const</td></tr>
+<tr class="separator:ae785e00a8f04bced3ff663e0a9b03386"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d193e55d80e4d0f4cd42f903d61e522"><td class="memItemLeft" align="right" valign="top"><a id="a2d193e55d80e4d0f4cd42f903d61e522"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddError</b> (const AZ::EntityId &amp;nodeId, ExecutionTreeConstPtr execution, const AZStd::string_view error) const</td></tr>
+<tr class="separator:a2d193e55d80e4d0f4cd42f903d61e522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd58a3d8d878488c74bf0a923d11403"><td class="memItemLeft" align="right" valign="top"><a id="a4dd58a3d8d878488c74bf0a923d11403"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddMemberVariable</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;datum, AZStd::string_view rawName)</td></tr>
+<tr class="separator:a4dd58a3d8d878488c74bf0a923d11403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2ad35d28e4f2584f2902dd33f80cc1"><td class="memItemLeft" align="right" valign="top"><a id="a4c2ad35d28e4f2584f2902dd33f80cc1"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddMemberVariable</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;datum, AZStd::string_view rawName, const AZ::EntityId &amp;sourceNodeId)</td></tr>
+<tr class="separator:a4c2ad35d28e4f2584f2902dd33f80cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a686fd5061959de1f07f1a95a8ca678e1"><td class="memItemLeft" align="right" valign="top"><a id="a686fd5061959de1f07f1a95a8ca678e1"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddMemberVariable</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;datum, AZStd::string_view rawName, const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;sourceVariableId)</td></tr>
+<tr class="separator:a686fd5061959de1f07f1a95a8ca678e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa307399439593f674e2770ce6ecbe6a9"><td class="memItemLeft" align="right" valign="top"><a id="aa307399439593f674e2770ce6ecbe6a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddValidation</b> (ValidationConstPtr &amp;&amp;validation) const</td></tr>
+<tr class="separator:aa307399439593f674e2770ce6ecbe6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6da4959a69375d8e4a5040b40f7bd8"><td class="memItemLeft" align="right" valign="top"><a id="aca6da4959a69375d8e4a5040b40f7bd8"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddVariable</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;datum, AZStd::string_view rawName)</td></tr>
+<tr class="separator:aca6da4959a69375d8e4a5040b40f7bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea7fa46c0b798b1556c09dbe04ebb69e"><td class="memItemLeft" align="right" valign="top"><a id="aea7fa46c0b798b1556c09dbe04ebb69e"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddVariable</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;datum, AZStd::string_view rawName, const AZ::EntityId &amp;sourceNodeId)</td></tr>
+<tr class="separator:aea7fa46c0b798b1556c09dbe04ebb69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9920dfad99637537fbec76ea4770eaba"><td class="memItemLeft" align="right" valign="top"><a id="a9920dfad99637537fbec76ea4770eaba"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddVariable</b> (const <a class="el" href="class_script_canvas_1_1_datum.html">Datum</a> &amp;datum, AZStd::string_view rawName, const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;sourceVariableId)</td></tr>
+<tr class="separator:a9920dfad99637537fbec76ea4770eaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc853a5eb8a2b45e90bfad3fdbc49bc"><td class="memItemLeft" align="right" valign="top"><a id="aacc853a5eb8a2b45e90bfad3fdbc49bc"></a>
+VariablePtr&#160;</td><td class="memItemRight" valign="bottom"><b>AddVariable</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;type, AZStd::string_view rawName)</td></tr>
+<tr class="separator:aacc853a5eb8a2b45e90bfad3fdbc49bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dcc898a0d3d60d7b512b4ff008124dd"><td class="memItemLeft" align="right" valign="top"><a id="a1dcc898a0d3d60d7b512b4ff008124dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVariable</b> (VariablePtr variable)</td></tr>
+<tr class="separator:a1dcc898a0d3d60d7b512b4ff008124dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa1a648d64ab366b04fe6ae16e080a16"><td class="memItemLeft" align="right" valign="top"><a id="aaa1a648d64ab366b04fe6ae16e080a16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckConversion</b> (ConversionByIndex &amp;conversion, VariableConstPtr source, size_t index, const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;targetType)</td></tr>
+<tr class="separator:aaa1a648d64ab366b04fe6ae16e080a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb07c8931b0f8fab98be009b78dfabb8"><td class="memItemLeft" align="right" valign="top"><a id="acb07c8931b0f8fab98be009b78dfabb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckConversions</b> (OutputAssignmentPtr output)</td></tr>
+<tr class="separator:acb07c8931b0f8fab98be009b78dfabb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5396318192a3fe972c9560044d0e9fb5"><td class="memItemLeft" align="right" valign="top"><a id="a5396318192a3fe972c9560044d0e9fb5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckCreateRoot</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:a5396318192a3fe972c9560044d0e9fb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49789947e66e517f0b2ca3d28b6060c"><td class="memItemLeft" align="right" valign="top"><a id="ab49789947e66e517f0b2ca3d28b6060c"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>CheckUniqueInterfaceNames</b> (AZStd::string_view candidate, AZStd::string_view defaultName, AZStd::unordered_set&lt; AZStd::string &gt; &amp;uniqueNames, const AZStd::unordered_set&lt; const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">ScriptCanvas::Nodes::Core::FunctionDefinitionNode</a> * &gt; &amp;nodelingsOut)</td></tr>
+<tr class="separator:ab49789947e66e517f0b2ca3d28b6060c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9008514ea5917f0cf5f0e6c035e07a8"><td class="memItemLeft" align="right" valign="top"><a id="ab9008514ea5917f0cf5f0e6c035e07a8"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>CheckUniqueOutNames</b> (AZStd::string_view outName, const AZStd::unordered_set&lt; const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">ScriptCanvas::Nodes::Core::FunctionDefinitionNode</a> * &gt; &amp;nodelingsOut)</td></tr>
+<tr class="separator:ab9008514ea5917f0cf5f0e6c035e07a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67eea5c850fbb7881d38ab7c3eebef60"><td class="memItemLeft" align="right" valign="top"><a id="a67eea5c850fbb7881d38ab7c3eebef60"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateChild</b> (ExecutionTreePtr parent, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *outSlot) const</td></tr>
+<tr class="separator:a67eea5c850fbb7881d38ab7c3eebef60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf37b6319acb0b81a0e1c5abc41b5471"><td class="memItemLeft" align="right" valign="top"><a id="acf37b6319acb0b81a0e1c5abc41b5471"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateChildDebugMarker</b> (ExecutionTreePtr parent) const</td></tr>
+<tr class="separator:acf37b6319acb0b81a0e1c5abc41b5471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb8bb6922f69e31483c0c76e7e07b19"><td class="memItemLeft" align="right" valign="top"><a id="a0bb8bb6922f69e31483c0c76e7e07b19"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateChildPlaceHolder</b> (ExecutionTreePtr parent) const</td></tr>
+<tr class="separator:a0bb8bb6922f69e31483c0c76e7e07b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe31ca6503e6463cc2588ce525003962"><td class="memItemLeft" align="right" valign="top"><a id="afe31ca6503e6463cc2588ce525003962"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEBusHandling</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:afe31ca6503e6463cc2588ce525003962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae366d4cea8a759553f32b60f6222d253"><td class="memItemLeft" align="right" valign="top"><a id="ae366d4cea8a759553f32b60f6222d253"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEventHandling</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:ae366d4cea8a759553f32b60f6222d253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e47ad8d8a4f26e5556870835ec141d5"><td class="memItemLeft" align="right" valign="top"><a id="a0e47ad8d8a4f26e5556870835ec141d5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateNodeableParse</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:a0e47ad8d8a4f26e5556870835ec141d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc10352d4223c255139d22b8169b7646"><td class="memItemLeft" align="right" valign="top"><a id="afc10352d4223c255139d22b8169b7646"></a>
+OutputAssignmentPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutput</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outputSlot, AZStd::string_view slotNameOverride, AZStd::string_view suffix)</td></tr>
+<tr class="separator:afc10352d4223c255139d22b8169b7646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb1986f69ec7610bbee0f4de077c2c5"><td class="memItemLeft" align="right" valign="top"><a id="a2bb1986f69ec7610bbee0f4de077c2c5"></a>
+OutputAssignmentPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputAssignment</b> (VariableConstPtr variable)</td></tr>
+<tr class="separator:a2bb1986f69ec7610bbee0f4de077c2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c5bd0c7ef5266883467c4d0c7f9642"><td class="memItemLeft" align="right" valign="top"><a id="a84c5bd0c7ef5266883467c4d0c7f9642"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUserEventHandling</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:a84c5bd0c7ef5266883467c4d0c7f9642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea9e0fc2d47b049d238a487a02b4d1fc"><td class="memItemLeft" align="right" valign="top"><a id="aea9e0fc2d47b049d238a487a02b4d1fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateUserFunctionDefinition</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:aea9e0fc2d47b049d238a487a02b4d1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93064166c294d3f3f9061476a23400d"><td class="memItemLeft" align="right" valign="top"><a id="ab93064166c294d3f3f9061476a23400d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CreateVariableWriteHandling</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:ab93064166c294d3f3f9061476a23400d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f09605de621296046f84808dc23f784"><td class="memItemLeft" align="right" valign="top"><a id="a6f09605de621296046f84808dc23f784"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateVariableWriteHandling</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot, VariableConstPtr variable, bool startsConnected)</td></tr>
+<tr class="separator:a6f09605de621296046f84808dc23f784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65f7165d9a05bb720bb58532d463bc5"><td class="memItemLeft" align="right" valign="top"><a id="ae65f7165d9a05bb720bb58532d463bc5"></a>
+OutputAssignmentConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>CreateOutputData</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;executionChild, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;output)</td></tr>
+<tr class="separator:ae65f7165d9a05bb720bb58532d463bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4dabfe0e6a0acc9aba9cdf79d4d4eba"><td class="memItemLeft" align="right" valign="top"><a id="ab4dabfe0e6a0acc9aba9cdf79d4d4eba"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionContainsCycles</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outSlot) const</td></tr>
+<tr class="separator:ab4dabfe0e6a0acc9aba9cdf79d4d4eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab537589175d1e38c09823b4c363b724f"><td class="memItemLeft" align="right" valign="top"><a id="ab537589175d1e38c09823b4c363b724f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionContainsCyclesRecurse</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outSlot) const</td></tr>
+<tr class="separator:ab537589175d1e38c09823b4c363b724f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bf0adaf776f573d01f02f0c0c6cf89"><td class="memItemLeft" align="right" valign="top"><a id="a96bf0adaf776f573d01f02f0c0c6cf89"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionContainsCyclesRecurse</b> (const EndpointsResolved &amp;nextEndpoints, AZStd::unordered_set&lt; const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> * &gt; &amp;previousIns) const</td></tr>
+<tr class="separator:a96bf0adaf776f573d01f02f0c0c6cf89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3f18eb7531c2b461cc3379acaa3ee3"><td class="memItemLeft" align="right" valign="top"><a id="a1d3f18eb7531c2b461cc3379acaa3ee3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ExecutionContainsCyclesRecurse</b> (const EndpointResolved &amp;in, AZStd::unordered_set&lt; const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> * &gt; &amp;previousIns) const</td></tr>
+<tr class="separator:a1d3f18eb7531c2b461cc3379acaa3ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39502315078f93263a55c9ab7083d070"><td class="memItemLeft" align="right" valign="top"><a id="a39502315078f93263a55c9ab7083d070"></a>
+<a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_return_value_connections.html">ReturnValueConnections</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindAssignments</b> (ExecutionTreeConstPtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;output)</td></tr>
+<tr class="separator:a39502315078f93263a55c9ab7083d070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81355f45a7e8f56fa38362de0f371b16"><td class="memItemLeft" align="right" valign="top"><a id="a81355f45a7e8f56fa38362de0f371b16"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindMemberVariable</b> (const AZ::EntityId &amp;sourceNodeId) const</td></tr>
+<tr class="separator:a81355f45a7e8f56fa38362de0f371b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e29b85e89274e2de64be8d02a25cb4"><td class="memItemLeft" align="right" valign="top"><a id="ae6e29b85e89274e2de64be8d02a25cb4"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindMemberVariable</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;sourceVariableId) const</td></tr>
+<tr class="separator:ae6e29b85e89274e2de64be8d02a25cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae48d9c777540f677c4609ba6799a4250"><td class="memItemLeft" align="right" valign="top"><a id="ae48d9c777540f677c4609ba6799a4250"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindReferencedVariableChecked</b> (ExecutionTreeConstPtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
+<tr class="separator:ae48d9c777540f677c4609ba6799a4250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a886bf9f9eb1cb904620a1c9442790885"><td class="memItemLeft" align="right" valign="top"><a id="a886bf9f9eb1cb904620a1c9442790885"></a>
+AZStd::pair&lt; ExecutionTreeConstPtr, VariableConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindReturnValueOnThread</b> (ExecutionTreeConstPtr executionNode, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *slot) const</td></tr>
+<tr class="separator:a886bf9f9eb1cb904620a1c9442790885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ee0b41797d78bf16048da2e934e61c"><td class="memItemLeft" align="right" valign="top"><a id="a80ee0b41797d78bf16048da2e934e61c"></a>
+AZStd::vector&lt; ExecutionTreeConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllExecutionRoots</b> () const</td></tr>
+<tr class="separator:a80ee0b41797d78bf16048da2e934e61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af296688d38e8bdc94147a72603aa7ef8"><td class="memItemLeft" align="right" valign="top"><a id="af296688d38e8bdc94147a72603aa7ef8"></a>
+const <a class="el" href="class_script_canvas_1_1_grammar_1_1_subgraph_interface.html">SubgraphInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterface</b> () const</td></tr>
+<tr class="separator:af296688d38e8bdc94147a72603aa7ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb0968fd65d2004b6eca96dbb0d5b93"><td class="memItemLeft" align="right" valign="top"><a id="a4fb0968fd65d2004b6eca96dbb0d5b93"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetOriginalVariableName</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;sourceVariableId)</td></tr>
+<tr class="separator:a4fb0968fd65d2004b6eca96dbb0d5b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4a9f28e15cf79a4672e0df1732dbe2"><td class="memItemLeft" align="right" valign="top"><a id="a4b4a9f28e15cf79a4672e0df1732dbe2"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetOutputSlotNameOverride</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outputSlot)</td></tr>
+<tr class="separator:a4b4a9f28e15cf79a4672e0df1732dbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6adf1c30820c5527edbbb13e35ea96e9"><td class="memItemLeft" align="right" valign="top"><a id="a6adf1c30820c5527edbbb13e35ea96e9"></a>
+AZStd::sys_time_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetParseDuration</b> () const</td></tr>
+<tr class="separator:a6adf1c30820c5527edbbb13e35ea96e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed189ac7fd62d584165794b76e16034a"><td class="memItemLeft" align="right" valign="top"><a id="aed189ac7fd62d584165794b76e16034a"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetReadVariable</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:aed189ac7fd62d584165794b76e16034a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd102bdbd43668d96c079c7f85ac6c70"><td class="memItemLeft" align="right" valign="top"><a id="afd102bdbd43668d96c079c7f85ac6c70"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetWrittenVariable</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:afd102bdbd43668d96c079c7f85ac6c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e0ca403eb61eaedb66e68c968c9e10f"><td class="memItemLeft" align="right" valign="top"><a id="a5e0ca403eb61eaedb66e68c968c9e10f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActiveGraph</b> () const</td></tr>
+<tr class="separator:a5e0ca403eb61eaedb66e68c968c9e10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66ad32937d8f6e7630e58300a486fc4c"><td class="memItemLeft" align="right" valign="top"><a id="a66ad32937d8f6e7630e58300a486fc4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAutoConnectedLocalEBusHandler</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *node) const</td></tr>
+<tr class="separator:a66ad32937d8f6e7630e58300a486fc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e057a366dfbdbdb1ab04619848698db"><td class="memItemLeft" align="right" valign="top"><a id="a6e057a366dfbdbdb1ab04619848698db"></a>
+AZStd::vector&lt; ExecutionTreePtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ModAllExecutionRoots</b> ()</td></tr>
+<tr class="separator:a6e057a366dfbdbdb1ab04619848698db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93463189273641febc294d94292de2b"><td class="memItemLeft" align="right" valign="top"><a id="ab93463189273641febc294d94292de2b"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>OpenScope</b> (ExecutionTreePtr parent, const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *outSlot) const</td></tr>
+<tr class="separator:ab93463189273641febc294d94292de2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa43c649fb7a17a45d917ae60e84ad0b3"><td class="memItemLeft" align="right" valign="top"><a id="aa43c649fb7a17a45d917ae60e84ad0b3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> ()</td></tr>
+<tr class="separator:aa43c649fb7a17a45d917ae60e84ad0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554488a2960891f530589831c1ff70ac"><td class="memItemLeft" align="right" valign="top"><a id="a554488a2960891f530589831c1ff70ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:a554488a2960891f530589831c1ff70ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1a78e496f69340286b8b97bf0970d2"><td class="memItemLeft" align="right" valign="top"><a id="aff1a78e496f69340286b8b97bf0970d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (const AZStd::vector&lt; const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_start.html">Nodes::Core::Start</a> * &gt; &amp;startNodes)</td></tr>
+<tr class="separator:aff1a78e496f69340286b8b97bf0970d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6869226ab8ad7054c7608be35a9e98b2"><td class="memItemLeft" align="right" valign="top"><a id="a6869226ab8ad7054c7608be35a9e98b2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (VariableWriteHandlingPtr variableHandling)</td></tr>
+<tr class="separator:a6869226ab8ad7054c7608be35a9e98b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcdcc51d91cdd2ef63b16725a938713"><td class="memItemLeft" align="right" valign="top"><a id="adfcdcc51d91cdd2ef63b16725a938713"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseAutoConnectedEBusHandlerVariables</b> ()</td></tr>
+<tr class="separator:adfcdcc51d91cdd2ef63b16725a938713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bf1cd9b53b4396373c33ed24525d72d"><td class="memItemLeft" align="right" valign="top"><a id="a9bf1cd9b53b4396373c33ed24525d72d"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>ParseConnectedInputData</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;inputSlot, ExecutionTreePtr executionWithInput, const EndpointsResolved &amp;scriptCanvasNodesConnectedToInput, FirstNode firstNode)</td></tr>
+<tr class="separator:a9bf1cd9b53b4396373c33ed24525d72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a371948b1219fc0b7ee6c92fbc0bde22c"><td class="memItemLeft" align="right" valign="top"><a id="a371948b1219fc0b7ee6c92fbc0bde22c"></a>
+SlotsOutcome&#160;</td><td class="memItemRight" valign="bottom"><b>ParseDataOutSlots</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;executionChild) const</td></tr>
+<tr class="separator:a371948b1219fc0b7ee6c92fbc0bde22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830aad167d44127662fe9f3c7cac3d3b"><td class="memItemLeft" align="right" valign="top"><a id="a830aad167d44127662fe9f3c7cac3d3b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseDeactivation</b> ()</td></tr>
+<tr class="separator:a830aad167d44127662fe9f3c7cac3d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a2152b0e5b4dbca7e3ef8d4101116a8"><td class="memItemLeft" align="right" valign="top"><a id="a2a2152b0e5b4dbca7e3ef8d4101116a8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseDebugInformation</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a2a2152b0e5b4dbca7e3ef8d4101116a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52005b0667078b5e0004f0ea0df8f7bf"><td class="memItemLeft" align="right" valign="top"><a id="a52005b0667078b5e0004f0ea0df8f7bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseDependencies</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:a52005b0667078b5e0004f0ea0df8f7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41269151c2f885f7ba5b0a3eafa3f3ac"><td class="memItemLeft" align="right" valign="top"><a id="a41269151c2f885f7ba5b0a3eafa3f3ac"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEntityIdInput</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a41269151c2f885f7ba5b0a3eafa3f3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a955bdd333aed8cd1ffedd8b8bdde5e4f"><td class="memItemLeft" align="right" valign="top"><a id="a955bdd333aed8cd1ffedd8b8bdde5e4f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionBreak</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a955bdd333aed8cd1ffedd8b8bdde5e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335d0cc3936cc861e7beaf7d6a888db6"><td class="memItemLeft" align="right" valign="top"><a id="a335d0cc3936cc861e7beaf7d6a888db6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionCycleStatement</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a335d0cc3936cc861e7beaf7d6a888db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02dc8edd4f3d55862a72f259c1829315"><td class="memItemLeft" align="right" valign="top"><a id="a02dc8edd4f3d55862a72f259c1829315"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionForEachLoop</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;loopSlot, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;breakSlot)</td></tr>
+<tr class="separator:a02dc8edd4f3d55862a72f259c1829315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad76dea02d69ae4a8e977256d4ce35773"><td class="memItemLeft" align="right" valign="top"><a id="ad76dea02d69ae4a8e977256d4ce35773"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionForEachStatement</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ad76dea02d69ae4a8e977256d4ce35773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa32a5893aba9fbb3527874b79345098"><td class="memItemLeft" align="right" valign="top"><a id="aaa32a5893aba9fbb3527874b79345098"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionFunction</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outSlot)</td></tr>
+<tr class="separator:aaa32a5893aba9fbb3527874b79345098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa141613b5cb43cc1ba2946574b0f9d"><td class="memItemLeft" align="right" valign="top"><a id="a8aa141613b5cb43cc1ba2946574b0f9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionFunctionRecurse</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;child, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outSlot, const AZStd::pair&lt; const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> * &gt; &amp;nodeAndSlot)</td></tr>
+<tr class="separator:a8aa141613b5cb43cc1ba2946574b0f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07095386021016176728245c8447f4c7"><td class="memItemLeft" align="right" valign="top"><a id="a07095386021016176728245c8447f4c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionIfStatement</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a07095386021016176728245c8447f4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bf39558e946cb0bf755a120aedecdf0"><td class="memItemLeft" align="right" valign="top"><a id="a1bf39558e946cb0bf755a120aedecdf0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionLogicalExpression</b> (ExecutionTreePtr execution, Symbol symbol)</td></tr>
+<tr class="separator:a1bf39558e946cb0bf755a120aedecdf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6576ae558fc8f1a54efa7a3d4a8ed56e"><td class="memItemLeft" align="right" valign="top"><a id="a6576ae558fc8f1a54efa7a3d4a8ed56e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionLoop</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a6576ae558fc8f1a54efa7a3d4a8ed56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5aa29e3a4c4811f9176e96d01545d4"><td class="memItemLeft" align="right" valign="top"><a id="a8b5aa29e3a4c4811f9176e96d01545d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionMultipleOutSyntaxSugar</b> (ExecutionTreePtr execution, const EndpointsResolved &amp;executionOutNodes, const AZStd::vector&lt; const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> * &gt; &amp;outSlots)</td></tr>
+<tr class="separator:a8b5aa29e3a4c4811f9176e96d01545d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9c6990c1e52cba35d1a823facaabb0b"><td class="memItemLeft" align="right" valign="top"><a id="af9c6990c1e52cba35d1a823facaabb0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionMultipleOutSyntaxSugarOfSequencNode</b> (ExecutionTreePtr sequence)</td></tr>
+<tr class="separator:af9c6990c1e52cba35d1a823facaabb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fefe0917e089c0d90324b5c917c857"><td class="memItemLeft" align="right" valign="top"><a id="a28fefe0917e089c0d90324b5c917c857"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionOnce</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a28fefe0917e089c0d90324b5c917c857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a7137142b8ed1989e09a3930a7d3eb0"><td class="memItemLeft" align="right" valign="top"><a id="a5a7137142b8ed1989e09a3930a7d3eb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionRandomSwitchStatement</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a5a7137142b8ed1989e09a3930a7d3eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca6f2ad0a39f33aac47f36b6dab2c0b"><td class="memItemLeft" align="right" valign="top"><a id="a6ca6f2ad0a39f33aac47f36b6dab2c0b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionSequentialChildren</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a6ca6f2ad0a39f33aac47f36b6dab2c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d94bb1c4c371b79b82540c7d0077a2"><td class="memItemLeft" align="right" valign="top"><a id="ab8d94bb1c4c371b79b82540c7d0077a2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionSwitchStatement</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ab8d94bb1c4c371b79b82540c7d0077a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff9d10e5b0d065c421cc2783adcdddb"><td class="memItemLeft" align="right" valign="top"><a id="a2ff9d10e5b0d065c421cc2783adcdddb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionTreeBody</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outSlot)</td></tr>
+<tr class="separator:a2ff9d10e5b0d065c421cc2783adcdddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a150c9c20653c59c3da661ba972b89da5"><td class="memItemLeft" align="right" valign="top"><a id="a150c9c20653c59c3da661ba972b89da5"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionTreeRoot</b> (ExecutionTreePtr root)</td></tr>
+<tr class="separator:a150c9c20653c59c3da661ba972b89da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aa8cd9ec10cfc895d463b793802caa4"><td class="memItemLeft" align="right" valign="top"><a id="a3aa8cd9ec10cfc895d463b793802caa4"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionTreeRoot</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;outSlot, MarkLatent markLatent)</td></tr>
+<tr class="separator:a3aa8cd9ec10cfc895d463b793802caa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86808d5e4915ca51d6e6229ab4907b5"><td class="memItemLeft" align="right" valign="top"><a id="ab86808d5e4915ca51d6e6229ab4907b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionTreeRoots</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:ab86808d5e4915ca51d6e6229ab4907b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3fcdd0a39f0727df1160255680263b9"><td class="memItemLeft" align="right" valign="top"><a id="ad3fcdd0a39f0727df1160255680263b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseExecutionWhileLoop</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ad3fcdd0a39f0727df1160255680263b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa602dda61154be11e2cb30f811d1747a"><td class="memItemLeft" align="right" valign="top"><a id="aa602dda61154be11e2cb30f811d1747a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseImplicitVariables</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node)</td></tr>
+<tr class="separator:aa602dda61154be11e2cb30f811d1747a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7880f1e56076def1e7001318589b147"><td class="memItemLeft" align="right" valign="top"><a id="aa7880f1e56076def1e7001318589b147"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseInputData</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:aa7880f1e56076def1e7001318589b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae65a728a3cd8c03e98579e6726932565"><td class="memItemLeft" align="right" valign="top"><a id="ae65a728a3cd8c03e98579e6726932565"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseInputDatum</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;input)</td></tr>
+<tr class="separator:ae65a728a3cd8c03e98579e6726932565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378ecf1f7937cd94b36ec3c01cc3dd74"><td class="memItemLeft" align="right" valign="top"><a id="a378ecf1f7937cd94b36ec3c01cc3dd74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ParseInputThisPointer</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a378ecf1f7937cd94b36ec3c01cc3dd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed20f7b303a09b9c755b962a9a806f14"><td class="memItemLeft" align="right" valign="top"><a id="aed20f7b303a09b9c755b962a9a806f14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMetaData</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:aed20f7b303a09b9c755b962a9a806f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6db167531f56bcb6d6d86919f9acdce"><td class="memItemLeft" align="right" valign="top"><a id="ac6db167531f56bcb6d6d86919f9acdce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMultiExecutionPost</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ac6db167531f56bcb6d6d86919f9acdce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae721c4a1c1ca30a0d70123547c78574c"><td class="memItemLeft" align="right" valign="top"><a id="ae721c4a1c1ca30a0d70123547c78574c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseMultiExecutionPre</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ae721c4a1c1ca30a0d70123547c78574c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826b7dfacda939b11234325dca86da65"><td class="memItemLeft" align="right" valign="top"><a id="a826b7dfacda939b11234325dca86da65"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOperatorArithmetic</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a826b7dfacda939b11234325dca86da65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac178a18c7bb9e504cc25624d625bfc11"><td class="memItemLeft" align="right" valign="top"><a id="ac178a18c7bb9e504cc25624d625bfc11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOutputData</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;executionChild)</td></tr>
+<tr class="separator:ac178a18c7bb9e504cc25624d625bfc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24ae54bb13b512156f059d8b56bcf345"><td class="memItemLeft" align="right" valign="top"><a id="a24ae54bb13b512156f059d8b56bcf345"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOutputData</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;executionChild, AZStd::vector&lt; const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> * &gt; &amp;slots)</td></tr>
+<tr class="separator:a24ae54bb13b512156f059d8b56bcf345"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b5ae284b2d84fb15eeddb9898e3e30"><td class="memItemLeft" align="right" valign="top"><a id="a21b5ae284b2d84fb15eeddb9898e3e30"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseOutputData</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;executionChild, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;output)</td></tr>
+<tr class="separator:a21b5ae284b2d84fb15eeddb9898e3e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d420880f0e51714fb278cbdce461159"><td class="memItemLeft" align="right" valign="top"><a id="a7d420880f0e51714fb278cbdce461159"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParsePropertyExtractionsPost</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a7d420880f0e51714fb278cbdce461159"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27c0e75ba766e8acf105b297c066eb14"><td class="memItemLeft" align="right" valign="top"><a id="a27c0e75ba766e8acf105b297c066eb14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParsePropertyExtractionsPre</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a27c0e75ba766e8acf105b297c066eb14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6b6ce89cc0367afd217492a9333f28"><td class="memItemLeft" align="right" valign="top"><a id="aac6b6ce89cc0367afd217492a9333f28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseReturnValue</b> (ExecutionTreePtr execution, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;returnValueSlot)</td></tr>
+<tr class="separator:aac6b6ce89cc0367afd217492a9333f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0fcdf900a6b12e3fa4e5872e6a73aad"><td class="memItemLeft" align="right" valign="top"><a id="ac0fcdf900a6b12e3fa4e5872e6a73aad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseReturnValue</b> (ExecutionTreePtr execution, VariableConstPtr variable, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *returnValueSlot)</td></tr>
+<tr class="separator:ac0fcdf900a6b12e3fa4e5872e6a73aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482a1995c0b5c6840603aa783a2db683"><td class="memItemLeft" align="right" valign="top"><a id="a482a1995c0b5c6840603aa783a2db683"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserFunctionTopology</b> ()</td></tr>
+<tr class="separator:a482a1995c0b5c6840603aa783a2db683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa58f2632a885a29010be6637d1f450c"><td class="memItemLeft" align="right" valign="top"><a id="afa58f2632a885a29010be6637d1f450c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserIn</b> (ExecutionTreePtr root, const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">Nodes::Core::FunctionDefinitionNode</a> *nodeling)</td></tr>
+<tr class="separator:afa58f2632a885a29010be6637d1f450c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9cff13b32740a5f6f7c91e3afe47b6"><td class="memItemLeft" align="right" valign="top"><a id="abd9cff13b32740a5f6f7c91e3afe47b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserInData</b> (ExecutionTreePtr execution, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &amp;executionChild)</td></tr>
+<tr class="separator:abd9cff13b32740a5f6f7c91e3afe47b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5729561c56b904d2723f825278da3b9"><td class="memItemLeft" align="right" valign="top"><a id="ad5729561c56b904d2723f825278da3b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserLatent</b> (ExecutionTreePtr leaf, const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">Nodes::Core::FunctionDefinitionNode</a> *nodeling)</td></tr>
+<tr class="separator:ad5729561c56b904d2723f825278da3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0b49c5e0a2c5a50787679cb73c2b9c5"><td class="memItemLeft" align="right" valign="top"><a id="ae0b49c5e0a2c5a50787679cb73c2b9c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserLatentData</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ae0b49c5e0a2c5a50787679cb73c2b9c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a463f2ab33ffe4727f3cfd3fb6f6fb"><td class="memItemLeft" align="right" valign="top"><a id="a64a463f2ab33ffe4727f3cfd3fb6f6fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserOutCall</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a64a463f2ab33ffe4727f3cfd3fb6f6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ebefb5d3d49405ec794300f84c88732"><td class="memItemLeft" align="right" valign="top"><a id="a0ebefb5d3d49405ec794300f84c88732"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserOuts</b> ()</td></tr>
+<tr class="separator:a0ebefb5d3d49405ec794300f84c88732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018c812672a726d756b4246e472967d6"><td class="memItemLeft" align="right" valign="top"><a id="a018c812672a726d756b4246e472967d6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ParseVariableHandling</b> ()</td></tr>
+<tr class="separator:a018c812672a726d756b4246e472967d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a917ae07323369e8b01859759ce97c3aa"><td class="memItemLeft" align="right" valign="top"><a id="a917ae07323369e8b01859759ce97c3aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PostParseErrorDetect</b> (ExecutionTreePtr root)</td></tr>
+<tr class="separator:a917ae07323369e8b01859759ce97c3aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc486baf5876d4a5b2cfd82d148753a"><td class="memItemLeft" align="right" valign="top"><a id="addc486baf5876d4a5b2cfd82d148753a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PostParseProcess</b> (ExecutionTreePtr root)</td></tr>
+<tr class="separator:addc486baf5876d4a5b2cfd82d148753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e2b12a04b29f29eddd23273593370a"><td class="memItemLeft" align="right" valign="top"><a id="aa5e2b12a04b29f29eddd23273593370a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PruneNoOpChildren</b> (const ExecutionTreePtr &amp;execution)</td></tr>
+<tr class="separator:aa5e2b12a04b29f29eddd23273593370a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49a9dfd64f35fc0e2a68ca518ea11513"><td class="memItemLeft" align="right" valign="top"><a id="a49a9dfd64f35fc0e2a68ca518ea11513"></a>
+AZ::Outcome&lt; AZStd::pair&lt; size_t, <a class="el" href="struct_script_canvas_1_1_grammar_1_1_execution_child.html">ExecutionChild</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveChild</b> (const ExecutionTreePtr &amp;execution, const ExecutionTreeConstPtr &amp;child)</td></tr>
+<tr class="separator:a49a9dfd64f35fc0e2a68ca518ea11513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab498ed8845180610633ff2d84c529c8d"><td class="memItemLeft" align="right" valign="top"><a id="ab498ed8845180610633ff2d84c529c8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFromTree</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:ab498ed8845180610633ff2d84c529c8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab45e96eb024e83fe7b6d8115d1436eb2"><td class="memItemLeft" align="right" valign="top"><a id="ab45e96eb024e83fe7b6d8115d1436eb2"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresCreationFunction</b> (Data::eType type)</td></tr>
+<tr class="separator:ab45e96eb024e83fe7b6d8115d1436eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb9c19943754e896666bf80d2c04703"><td class="memItemLeft" align="right" valign="top"><a id="abbb9c19943754e896666bf80d2c04703"></a>
+static AbstractCodeModelConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>Parse</b> (const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a> &amp;source, bool terminateOnError=false, bool terminateOnInternalError=false)</td></tr>
+<tr class="separator:abbb9c19943754e896666bf80d2c04703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0ab1cb2f9b5a86784e332e977b7ea565"><td class="memItemLeft" align="right" valign="top"><a id="a0ab1cb2f9b5a86784e332e977b7ea565"></a>
+ExecutionTreePtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_start</b></td></tr>
+<tr class="separator:a0ab1cb2f9b5a86784e332e977b7ea565"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42b713cb11464ce28f128eb64832010"><td class="memItemLeft" align="right" valign="top"><a id="ac42b713cb11464ce28f128eb64832010"></a>
+AZStd::vector&lt; const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_start.html">Nodes::Core::Start</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_startNodes</b></td></tr>
+<tr class="separator:ac42b713cb11464ce28f128eb64832010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c3691a913555abeec4b4bab4328c23"><td class="memItemLeft" align="right" valign="top"><a id="a18c3691a913555abeec4b4bab4328c23"></a>
+ScopePtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_graphScope</b></td></tr>
+<tr class="separator:a18c3691a913555abeec4b4bab4328c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6275c44eca00d378625da4c9d764bf26"><td class="memItemLeft" align="right" valign="top"><a id="a6275c44eca00d378625da4c9d764bf26"></a>
+const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_source.html">Source</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_source</b></td></tr>
+<tr class="separator:a6275c44eca00d378625da4c9d764bf26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a278992ef63be6385adb551f7f0f695a2"><td class="memItemLeft" align="right" valign="top"><a id="a278992ef63be6385adb551f7f0f695a2"></a>
+<a class="el" href="struct_script_canvas_1_1_dependency_report.html">DependencyReport</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dependencies</b></td></tr>
+<tr class="separator:a278992ef63be6385adb551f7f0f695a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fdbac6817661fd2952d4793df1f6a0e"><td class="memItemLeft" align="right" valign="top"><a id="a5fdbac6817661fd2952d4793df1f6a0e"></a>
+AZStd::unordered_set&lt; VariableConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_userNodeables</b></td></tr>
+<tr class="separator:a5fdbac6817661fd2952d4793df1f6a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910b9cb943de50dfb47f25b656bd6458"><td class="memItemLeft" align="right" valign="top"><a id="a910b9cb943de50dfb47f25b656bd6458"></a>
+AZStd::vector&lt; VariableConstPtr &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_variables</b></td></tr>
+<tr class="separator:a910b9cb943de50dfb47f25b656bd6458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad65df6f0edf80c30dfaa539eb8bea691"><td class="memItemLeft" align="right" valign="top"><a id="ad65df6f0edf80c30dfaa539eb8bea691"></a>
+AZStd::vector&lt; const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_possibleExecutionRoots</b></td></tr>
+<tr class="separator:ad65df6f0edf80c30dfaa539eb8bea691"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333c42def45c40acd7e4a0facf3f1601"><td class="memItemLeft" align="right" valign="top"><a id="a333c42def45c40acd7e4a0facf3f1601"></a>
+VariableScopeMeaning&#160;</td><td class="memItemRight" valign="bottom"><b>m_variableScopeMeaning</b> = VariableScopeMeaning::ValueInitialization</td></tr>
+<tr class="separator:a333c42def45c40acd7e4a0facf3f1601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b1d1946e8f33135f7c9b6358416a4d2"><td class="memItemLeft" align="right" valign="top"><a id="a0b1d1946e8f33135f7c9b6358416a4d2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isErrorFree</b> = true</td></tr>
+<tr class="separator:a0b1d1946e8f33135f7c9b6358416a4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afae9af7a6988d8276a106802490c8515"><td class="memItemLeft" align="right" valign="top"><a id="afae9af7a6988d8276a106802490c8515"></a>
+ValidationResults::ValidationEventList&#160;</td><td class="memItemRight" valign="bottom"><b>m_validationEvents</b></td></tr>
+<tr class="separator:afae9af7a6988d8276a106802490c8515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c0eac2db28830aef9cc68bcc7ca42d"><td class="memItemLeft" align="right" valign="top"><a id="a58c0eac2db28830aef9cc68bcc7ca42d"></a>
+<a class="el" href="struct_script_canvas_1_1_grammar_1_1_debug_symbol_map.html">DebugSymbolMap</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_debugMap</b></td></tr>
+<tr class="separator:a58c0eac2db28830aef9cc68bcc7ca42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84ca9f18d38a946a06b953715cfdda3"><td class="memItemLeft" align="right" valign="top"><a id="ad84ca9f18d38a946a06b953715cfdda3"></a>
+<a class="el" href="struct_script_canvas_1_1_grammar_1_1_debug_symbol_map_reverse.html">DebugSymbolMapReverse</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_debugMapReverse</b></td></tr>
+<tr class="separator:ad84ca9f18d38a946a06b953715cfdda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a4677ab5481336b6d2e6939b87b700a6c"><td class="memItemLeft" align="right" valign="top"><a id="a4677ab5481336b6d2e6939b87b700a6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AccountForEBusConnectionControl</b> (ExecutionTreePtr execution)</td></tr>
+<tr class="separator:a4677ab5481336b6d2e6939b87b700a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4bdee32b658b2b13a94d9148b0b8440"><td class="memTemplParams" colspan="2"><a id="af4bdee32b658b2b13a94d9148b0b8440"></a>
+template&lt;typename t_Handling &gt; </td></tr>
+<tr class="memitem:af4bdee32b658b2b13a94d9148b0b8440"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AccountForEBusConnectionControl</b> (ExecutionTreePtr execution, t_Handling handling)</td></tr>
+<tr class="separator:af4bdee32b658b2b13a94d9148b0b8440"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae4ee1fc19780fc89ce1537d95767a3"><td class="memItemLeft" align="right" valign="top"><a id="abae4ee1fc19780fc89ce1537d95767a3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddExecutionMapIn</b> (<a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_user_in_parse_topology_result.html">UserInParseTopologyResult</a> result, ExecutionTreeConstPtr root, const AZStd::vector&lt; ExecutionTreeConstPtr &gt; &amp;outCalls, AZStd::string_view defaultOutName, const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">Nodes::Core::FunctionDefinitionNode</a> *nodelingIn, const AZStd::unordered_set&lt; const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">ScriptCanvas::Nodes::Core::FunctionDefinitionNode</a> * &gt; &amp;uniqueNodelingsOut)</td></tr>
+<tr class="separator:abae4ee1fc19780fc89ce1537d95767a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d52deecc4bca175e15b4ca384228926"><td class="memItemLeft" align="right" valign="top"><a id="a8d52deecc4bca175e15b4ca384228926"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddExecutionMapLatentOut</b> (const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">Nodes::Core::FunctionDefinitionNode</a> &amp;nodeling, ExecutionTreePtr out)</td></tr>
+<tr class="separator:a8d52deecc4bca175e15b4ca384228926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac860331a8f482faab99dd8f3b0c93a76"><td class="memItemLeft" align="right" valign="top"><a id="ac860331a8f482faab99dd8f3b0c93a76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddUserOut</b> (ExecutionTreePtr parent, ExecutionTreeConstPtr root, AZStd::string_view name)</td></tr>
+<tr class="separator:ac860331a8f482faab99dd8f3b0c93a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a178d1b373b8e4a718809a0fd306e892a"><td class="memItemLeft" align="right" valign="top"><a id="a178d1b373b8e4a718809a0fd306e892a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPreviouslyExecutedScopeVariableToOutputAssignments</b> (VariableConstPtr newInputVariable, const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_connections_in_previously_executed_scope.html">ConnectionsInPreviouslyExecutedScope</a> &amp;connectedInputInPreviouslyExecutedScope)</td></tr>
+<tr class="separator:a178d1b373b8e4a718809a0fd306e892a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab86eb75c0fecc24c46f593188a9902c8"><td class="memItemLeft" align="right" valign="top"><a id="ab86eb75c0fecc24c46f593188a9902c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertNamesToIdentifiers</b> ()</td></tr>
+<tr class="separator:ab86eb75c0fecc24c46f593188a9902c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6b20b3971c3dc6d6e6ba47e4e0bafd"><td class="memItemLeft" align="right" valign="top"><a id="a9e6b20b3971c3dc6d6e6ba47e4e0bafd"></a>
+AZStd::vector&lt; AZStd::pair&lt; ExecutionTreePtr, const <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html">Nodes::Core::FunctionDefinitionNode</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>FindAllNodelingOuts</b> (ExecutionTreePtr root) const</td></tr>
+<tr class="separator:a9e6b20b3971c3dc6d6e6ba47e4e0bafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dc18d736337d9e26af4735009a1fd4b"><td class="memItemLeft" align="right" valign="top"><a id="a3dc18d736337d9e26af4735009a1fd4b"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindBoundVariable</b> (<a class="el" href="class_script_canvas_1_1_graph_scoped_identifier.html">GraphScopedVariableId</a> variableId) const</td></tr>
+<tr class="separator:a3dc18d736337d9e26af4735009a1fd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa21cc212045411f369e7d862756799d2"><td class="memItemLeft" align="right" valign="top"><a id="aa21cc212045411f369e7d862756799d2"></a>
+<a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_connections_in_previously_executed_scope.html">ConnectionsInPreviouslyExecutedScope</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindConnectedInputInPreviouslyExecutedScope</b> (ExecutionTreePtr executionWithInput, const EndpointsResolved &amp;scriptCanvasNodesConnectedToInput, FirstNode firstNode) const</td></tr>
+<tr class="separator:aa21cc212045411f369e7d862756799d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00a4e28c581d4f50346cf11c168350a2"><td class="memItemLeft" align="right" valign="top"><a id="a00a4e28c581d4f50346cf11c168350a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>FindConnectedInputInPreviouslyExecutedScopeRecurse</b> (<a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_connections_in_previously_executed_scope.html">ConnectionsInPreviouslyExecutedScope</a> &amp;result, ExecutionTreeConstPtr outputSource, ExecutionTreePtr executionWithInput, const EndpointsResolved &amp;scriptCanvasNodesConnectedToInput) const</td></tr>
+<tr class="separator:a00a4e28c581d4f50346cf11c168350a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad41c7eda5e65768a177d29f584152186"><td class="memItemLeft" align="right" valign="top"><a id="ad41c7eda5e65768a177d29f584152186"></a>
+VariableConstPtr&#160;</td><td class="memItemRight" valign="bottom"><b>FindConnectedInputInScope</b> (ExecutionTreePtr executionWithInput, const EndpointsResolved &amp;scriptCanvasNodesConnectedToInput, FirstNode firstNode) const</td></tr>
+<tr class="separator:ad41c7eda5e65768a177d29f584152186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510efa04b18f0c81ce1684148ab1f1cc"><td class="memItemLeft" align="right" valign="top"><a id="a510efa04b18f0c81ce1684148ab1f1cc"></a>
+AZStd::vector&lt; AZStd::pair&lt; VariableConstPtr, AZStd::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllDeactivationVariables</b> () const</td></tr>
+<tr class="separator:a510efa04b18f0c81ce1684148ab1f1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae782b0e8f35e711d5af75bb956fba6d2"><td class="memItemLeft" align="right" valign="top"><a id="ae782b0e8f35e711d5af75bb956fba6d2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InSimultaneousDataPath</b> (const <a class="el" href="class_script_canvas_1_1_node.html">Node</a> &amp;node, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;reference, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;candidate) const</td></tr>
+<tr class="separator:ae782b0e8f35e711d5af75bb956fba6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2897bd8325fd7ad42063fe1c5bf5979"><td class="memItemLeft" align="right" valign="top"><a id="ac2897bd8325fd7ad42063fe1c5bf5979"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkAllFunctionsPure</b> ()</td></tr>
+<tr class="separator:ac2897bd8325fd7ad42063fe1c5bf5979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a2aa5fcecca8413ea24200d5c7301a336"><td class="memItemLeft" align="right" valign="top"><a id="a2aa5fcecca8413ea24200d5c7301a336"></a>
+static <a class="el" href="struct_script_canvas_1_1_grammar_1_1_abstract_code_model_1_1_user_in_parse_topology_result.html">UserInParseTopologyResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ParseUserInTolopology</b> (size_t nodelingsOutCount, size_t leavesWithoutNodelingsCount)</td></tr>
+<tr class="separator:a2aa5fcecca8413ea24200d5c7301a336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class parses a graph into abstract programming concepts for easier translation into C++, LLVM-IR, Lua, or whatever else would be needed </p>
+<div class="textblock"><p>This class parses a graph into abstract programming concepts for easier translation into C++, Lua, or whatever else would be needed </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 6 2021 15:03:25 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 29 2021 11:34:40 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
