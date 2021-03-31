@@ -19,6 +19,6 @@ the O3DE [build system](/docs/user-guide/build).
 
 **Topics**
 + [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)
-+ [Creating a Gem](/docs/user-guide/gems/development/creating/intro.md)
++ [Creating a Gem](/docs/user-guide/gems/development/creating)
 + [Programming with Gems](/docs/userguide/gems/_index.md)
 + [Gems Available in O3DE](/docs/user-guide/gems/list.md)
