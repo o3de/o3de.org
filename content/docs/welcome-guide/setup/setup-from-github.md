@@ -128,13 +128,13 @@ The instructions here will guide you through the following steps:
 
 * Configure credentials for Git LFS.
 * Fork and clone the O3DE GitHub repo.
+* Additional setup steps during O3DE preview.
 
 ## Prerequisites
 
 The instructions that follow assume you have the following:
 
-* Git client 1.8.2 or later installed.
-* 25 GB of free space for downloaded files. (Additional space is required to build.)
+* [Git client](https://git-scm.com/downloads) 1.8.2 or later installed.
 * Met all requirements listed in [O3DE System Requirements](./requirements.md).
 
 ## Configure credentials for Git LFS
@@ -307,13 +307,34 @@ For more information about contributing to O3DE and the O3DE code contribution w
     If new commits were merged from the upstream repo, you can push them to your fork.
 
     ```cmd
-    git push
+    git push origin
     ```
 <<<<<<< HEAD
 >>>>>>> 08172c74 (instructions for installing from GitHub)
 =======
 
-You are now ready to configure a project and build! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
+## O3DE preview setup
+
+During O3DE preview, there are a few additional steps you must complete before getting started:
+
+* Download 3rd party packages.
+* Install additional SDK's.
+
+**3rd party packages**
+
+1. Download the 3rd Party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev8.zip>.
+
+1. Unzip this file into a writable folder. The path up to and including the 3rdParty folder unzipped from this zip file will be referred to as the `<3rdParty Path>` in the remainder of this section.
+
+    By default, this location will also act as a cache location for the 3rd party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
+
+**Additional SDK's**
+
+1. Install the FBX SDK as instructed in `<3rdParty Path>\FbxSdk\2016.1.2-az.1\README.md`.
+
+1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. Once installed, copy the SDK directory from the install location into the `<3rdParty Path>\Wwise\2019.2.8.7432` directory that you will create.
+
+You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
 
 For more information about contributing to O3DE and the O3DE code contribution workflow, refer to [Git Workflow](/docs/contributing/to-code/git-workflow.md) in the Contributor's Guide.
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)

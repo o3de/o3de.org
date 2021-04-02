@@ -58,6 +58,7 @@ Minimum hardware requirements for development include the following:
 Minimum hardware requirements for development include the following:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
 =======
 + 3 GHz quad-core processor
@@ -68,6 +69,14 @@ Minimum hardware requirements for development include the following:
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 63fabf12 (update setup requirements)
+=======
++ Quad-core Intel or AMD processor, 2.5 GHz or fastder
++ 8 GB RAM
++ DirectX 12 or Vulkan-compatible video card
+  + 4 GB VRAM recommended
+  + NVIDIA GeForce GTX 1060 or better, driver version 465.89 or later recommended
+  + AMD Radeon Pro 560 or better
+>>>>>>> a5546fa2 (added additional setup instructions needed for the preview)
 + 60 GB of free disk space
 + 1366 x 768 px screen resolution
 
@@ -82,6 +91,7 @@ To create new projects or use advanced development features in O3DE, you need a 
 
 + Windows 10 version 1809 (10.0.17763) or later
 + [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.3.x** through version **16.9.x**
+<<<<<<< HEAD
 + [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
 + [CMake {{< versions/cmake >}} or later](https://cmake.org/download/)
 
@@ -113,6 +123,8 @@ To create new projects or use advanced development features in O3DE, you need a 
 
 + Windows 10
 + [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.2.4** through version **16.9.x**
+=======
+>>>>>>> a5546fa2 (added additional setup instructions needed for the preview)
 + [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
 + [CMake {{< versions/cmake >}} or later](https://cmake.org/download/)
 
@@ -137,6 +149,7 @@ The default Visual Studio installation might not include all of the features tha
 >>>>>>> 68220315 (Update from feedback)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Choose **More - Modify** on the version of Visual Studio that you'll use with O3DE.
 =======
 1. Launch the **Visual Studio Installer** from your download directory or the **Start Menu** if you've already installed Visual Studio.
@@ -149,6 +162,9 @@ The default Visual Studio installation might not include all of the features tha
 >>>>>>> 68220315 (Update from feedback)
 =======
 1. Launch the **Visual Studio Installer**. 
+=======
+1. Launch the **Visual Studio Installer**.
+>>>>>>> a5546fa2 (added additional setup instructions needed for the preview)
 
 1. Choose **More - Modify** on the version of Visual Studio that you'll use with O3DE.
 >>>>>>> b339b493 (Apply suggestions from code review)
