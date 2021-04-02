@@ -8,7 +8,7 @@ weight: 200
 
 {{< preview-new >}}
 
-In order to support multiple native build toolchains, Open 3D Engine uses the [CMake build system](https://cmake.org/). While most configurable build systems make
+To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMake build system](https://cmake.org/). While most configurable build systems make
 it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project and build files.
 This is an alternative to other build systems where compiler toolchains are explicitly called.
 
@@ -34,7 +34,7 @@ O3DE requires CMake v3.19 or higher.
 | Topic | Description |
 | --- | --- |
 | [Configure and Build](./configure-and-build.md) | The full details on how to configure and build O3DE core, Gems, and projects. |
-| [CMake files for Gems](./gems.md) | How to write a CMake build file to use with a custom gem. |
-| [Packages](./packages.md) | Learn about O3DE's third-party package system, used to ship binaries along with your Gem or project. |
+| [Gem CMake files](./gems.md) | Information about Gem CMake build files. |
+| [Packages](./packages.md) | Learn about the Open 3D Engine package system, used to ship binaries along with your Gem or project. |
 | [CMake settings reference](./reference.md) | Reference for user-configurable CMake settings specific to O3DE. |
 | [Troubleshooting](./troubleshooting.md) | How to debug and troubleshoot CMake and build problems. |
