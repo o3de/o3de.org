@@ -35,3 +35,19 @@ $(function() {
     scrollTop: ($('.currentPage').first().offset().top - 75)
   },500);
 });
+
+
+// parse user agent on downloads page
+
+$(function() {
+  console.log($.ua.os.name); 
+  const ua = $.ua.os.name;
+  $("#download-page-buttons a").each(function(){
+    if($(this).data('os') == ua) {
+      $(this).addClass("active-os-cta");
+      $(this).removeClass("btn-secondary");
+    }
+  })
+});
+
+
