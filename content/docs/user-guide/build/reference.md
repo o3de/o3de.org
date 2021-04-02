@@ -4,7 +4,7 @@ description: The reference guide to Open 3D Engine-specific CMake settings.
 weight: 500
 ---
 
-Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/gems/reference). For general CMake options, see the [cmake.variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
+Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/gems/reference). For general CMake options, see the [cmake-variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
 
 Keep in mind that every time you change a configuration value, you need to regenerate the project files so that the changes are picked up and apply to your next build.
 
@@ -16,18 +16,18 @@ CMake options like `CMAKE_CXX_STANDARD` are set during configuration by the O3DE
 
 ### Required settings
 
-These options are the user-supplied settings required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
+These options are the user-supplied settings that are required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
 
-* **`LY_3RDPARTY_PATH`** - The filesystem path to your 3rd party library directory. Changing this value requires reconfiguration, and will prompt another install of 3rd party packages. See [Third-party Library Integration](./thirdparty.md)] for more information.
+* **`LY_3RDPARTY_PATH`** - The filesystem path to your third party library directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
   
   *Type*: `PATH`
-* **`LY_PROJECTS`** - The O3DE projects to include as build targets and scan for dependencies, as a `;`-separated string. For example, `Project1;Project2;Project3` generates targets for `Project1Launcher`, `Project2Launcher`, and `Project3Launcher` and correctly identifies the dependencies for each. Each dependency also produces a target in the generated project.
+* **`LY_PROJECTS`** - The O3DE projects to include as build targets and scan for dependencies, as a semi-colon (`;`) separated string. For example, `Project1;Project2;Project3` generates targets for `Project1Launcher`, `Project2Launcher`, and `Project3Launcher`, and correctly identifies the dependencies for each. Each dependency also produces a target in the generated project.
   
   *Type*: `STRING`
 
 ### Build configuration
 
-* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/v3.20/prop_tgt/UNITY_BUILD.html) files, designed to speed up build times. Unity builds take multiple `.cpp` files and merge them together into a single compilation unit in order to speed up build times.
+* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/v3.20/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
 
   {{< note >}}  
   Make sure that this option is turned `ON` if you experience slow build times for your projects, the O3DE engine, or O3DE tools. The impact is most dramatic for systems with lots of available RAM but fewer available cores or low disk throughput.
@@ -42,7 +42,7 @@ These options are the user-supplied settings required to configure O3DE builds. 
 
 ### Asset configuration
 
-These options control the types of assets built, and where projects load assets from at runtime.
+These options control the types of assets that are built, and where projects load assets from at runtime.
 
 * **`LY_ASSET_DEPLOY_TYPE`** - The *default* type of assets to be built by the [asset processor](/docs/user-guide/assets/pipeline/intro). Valid platforms are:
   * `pc` - Windows PC
@@ -88,7 +88,7 @@ These settings control how the third party package download system functions.
   *Type*: `BOOL`  
   *Default*: `ON`
 
-* **`LY_PACKAGE_SERVER_URLS`** - The URLs for servers to pull packages from, as a `;`-separated list. These can be `http`, `https`, `file`, or `s3` URLs. These values are _prepended_ to any `LY_PACKAGE_SERVER_URLS` environment variable.
+* **`LY_PACKAGE_SERVER_URLS`** - The URLs for servers to pull packages from, as a semi-colon (`;`) separated list. These can be `http`, `https`, `file`, or `s3` URLs. These values are _prepended_ to any `LY_PACKAGE_SERVER_URLS` environment variable.
 
   *Type*: `STRING`  
   *Default*: `(Empty string)`
@@ -98,15 +98,23 @@ These settings control how the third party package download system functions.
   *Type*: `PATH`  
   *Default*: `${LY_3RDPARTY_PATH}/packages`
 
-* **`LY_PACKAGE_VALIDATE_CONTENTS`** - Whether or not to perform a full validation of every file contained in a package. When this option is disabled, files are checked based on name only, rather than checksum. This option offers extra security to check if your local files have been poisoned, but can make configuration much slower.
+* **`LY_PACKAGE_VALIDATE_PACKAGE`** - Validate packages against checksums in the requesting CMake file, redownloading the package from sources
+  as necessary.
 
-  *Type*: `BOOL`  
+  *Type*: `BOOL`
+  *Default*: `ON`
+
+* **`LY_PACKAGE_VALIDATE_CONTENTS`** - Check each file against the hashes contained in the `SHA256SUMS` of the package. When this value is
+  `OFF`, the checksums are validated only on the first package download. Turning this setting on allows for checking for local modifications
+  to the package, but will slow down configuration.
+
+  *Type*: `BOOL`
   *Default*: `OFF`
 
-* **`LY_PACKAGE_VALIDATE_CONTENTS_FROM_SERVER`** - Whether or not to request a new set of manifest information from the server with every new CMake configuration. This option offers extra security to check if your local files have been poisoned, but makes configuration slower.
+* **`LY_PACKAGE_DOWNLOAD_RETRY_COUNT`** - The number of times to attempt retrieval from a package source if an error occurs in the transfer.
 
-  *Type*: `BOOL`  
-  *Default*: `OFF`
+  *Type*: Integer
+  *Default*: 3
 
 <!-- 
   TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)
