@@ -143,7 +143,7 @@ code
 .navbar-logo
   max-height: 36px
 
-// layouts/partials/hero.html
+// layouts/partials/hero.html, layouts/partial/download/hero.html
 
 //scales the header proportionally
 $width: '59vw';
@@ -153,20 +153,20 @@ $width: '59vw';
     height: calc((#{$width} / 3) * 2); // note the variable is declared inside #${}
     background: black
     filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.9))
-    background-image: url('/img/home/hero.jpg')
-    background-size: cover
     @include media-breakpoint-down(lg) 
       height: auto 
       background-position: right
+
+.home-hero 
+  background-image: url('/img/home/hero.jpg')
+  background-size: cover
     
-    
-.hero 
+.hero-inner 
   margin-bottom: 0rem
   background-color: transparent
   color: $o3de-white
   .desc
     text-shadow: 8px 8px 8px #000
-
 
 .learnmore-cta 
   background-color: $o3de-green
@@ -178,6 +178,17 @@ $width: '59vw';
   &:hover 
     background-color: darken(#1E71EB, 10%)
 
+
+// layouts/partial/download/hero.html
+
+.download-hero 
+  background-image: url('/img/download/hero.jpg')
+  background-size: cover
+
+.active-os-cta
+  background-color: $o3de-blue
+  &:hover 
+    background-color: darken(#1E71EB, 10%)
 
 // layouts/partials/home/features.html 
 
@@ -213,6 +224,12 @@ $width: '59vw';
 .social 
   font-size: 2rem
   padding: 0.5rem
+
+
+// layouts/download/section.html 
+
+// partials/download/hero.html 
+
 
 
 // Docs pages 
@@ -269,3 +286,4 @@ nav
     font-size: 1.2rem
     margin-top: 0
     margin-bottom: 0
+

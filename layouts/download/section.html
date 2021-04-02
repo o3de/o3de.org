@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "download/hero.html" . }}
+{{ with .Content }}
+<section class="container-xl mt-5 pt-5">
+  <div class="row">
+    <div class="col-12">
+      {{ . }}
+    </div>
+  </div>
+</section>
+{{ end }}   
+{{ partial "footer.html" . }}  
+{{ end }}
