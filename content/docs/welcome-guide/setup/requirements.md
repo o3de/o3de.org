@@ -10,7 +10,7 @@ toc: true
 
 O3DE has a minimum set of hardware and software requirements for development, as outlined in the following sections.
 
-## System requirements
+## Hardware requirements
 
 Minimum hardware requirements for development include the following:
 

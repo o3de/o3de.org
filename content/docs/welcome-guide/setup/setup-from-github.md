@@ -125,7 +125,7 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     git push origin
     ```
 
-## O3DE preview setup
+## Additional setup for O3DE preview
 
 During O3DE preview, there are a few additional steps you must complete before getting started:
 

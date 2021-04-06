@@ -52,43 +52,28 @@ External projects are considered experimental. They might be unstable in some sc
     scripts\o3de register -p <full path to project>
     ```
 
-## Create the Visual Studio project
-
-Use CMake to generate the Visual Studio project files for your O3DE project.
-
-**To create the Visual Studio project from command line**
-
-1. Open a command line to your project directory.
+1. Use CMake to create the Visual Studio project from within the new project directory. Supply the project path, the build path, the Visual Studio generator, the path to the 3rd party packages, and any other project options. Paths can be absolute or relative.
 
     ```cmd
     cd <path to project>
+    cmake -S <path to project> -B <path to project>/build -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=<path to 3rd party packages> -DLY_UNITY_BUILD=ON
     ```
 
-1. Invoke CMake using the project path, build path, Visual Studio generator, and 3rd party path. Paths can be absolute or relative.
+    {{< note >}}
+Unity builds are recommended for improved build performance.
+    {{< /note >}}
 
-    ```cmd
-    cmake -S <path to project> -B <path to project>/build -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=%LY_3RDPARTY_PATH% -DLY_UNITY_BUILD=ON
-    ```
-
-## Build the O3DE Editor and AssetProcessor
-
-Build the O3DE **Editor** and **AssetProcessor** executables from within your project directory.
-
-**To build the Editor and AssetProcessor from command line**
-
-1. Open a command line to your project directory.
-
-    ```cmd
-    cd <path to project>
-    ```
-
-1. Use CMake to build the Editor target using the profile configuration. AssetProcessor will also be built since it is a target dependency.
+1. Use CMake to build the O3DE **Editor** and **AssetProcessor**. Building the `profile` configuration is shown here. When specifying the Editor as a build target, the AssetProcessor will be built too, since it is a dependency of the Editor.
 
     ```cmd
     cmake --build <path to project>/build --target Editor --config profile -- /m
     ```
 
-1. Once the build completes, the binaries will be available in the build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. If relative, make sure the path ends with the project directory name.
+    {{< note >}}
+The `/m` is a recommended build tool optimization.
+    {{< /note >}}
+
+1. Once the build completes, the binaries will be available in the project build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. If relative, make sure the path ends with the project directory name.
 
     ```cmd
     build\bin\profile\Editor.exe --project-path <path to project>
