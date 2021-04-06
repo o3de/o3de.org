@@ -20,7 +20,7 @@ The instructions here will guide you through the following steps:
 The instructions that follow assume you have the following:
 
 * [Git client](https://git-scm.com/downloads) 1.8.2 or later installed.
-* Met all requirements listed in [O3DE System Requirements](./requirements.md).
+* Met all requirements listed in [System Requirements](./requirements.md).
 
 ## Configure credentials for Git LFS
 
@@ -129,10 +129,20 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
 During O3DE preview, there are a few additional steps you must complete before getting started:
 
+* Set the package server URL environment variable.
 * Download 3rd party packages.
 * Install additional SDK's.
+* Register the engine.
 
-**3rd party packages**
+### Set environment variables
+
+1. Set an environment variable for the package server.
+
+    ```cmd
+    LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
+    ```
+
+### Download 3rd party packages
 
 1. Download the 3rd Party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev8.zip>.
 
@@ -140,11 +150,23 @@ During O3DE preview, there are a few additional steps you must complete before g
 
     By default, this location will also act as a cache location for the 3rd party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
 
-**Additional SDK's**
+### Install Additional SDK's
 
-1. Install the FBX SDK as instructed in `<3rdParty Path>\FbxSdk\2016.1.2-az.1\README.md`.
+1. Install the FBX SDK as instructed in `<3rdParty Path>/FbxSdk/2016.1.2-az.1/README.md`.
 
-1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. Once installed, copy the SDK directory from the install location into the `<3rdParty Path>\Wwise\2019.2.8.7432` directory that you will create.
+1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. Once installed, copy the `SDK` directory from the install location into the `<3rdParty Path>/Wwise/2019.2.8.7432` directory that you will create.
+
+### Register O3DE engine
+
+Each time you setup a new O3DE engine directory, you must register it. This creates (or updates) the O3DE manifest in your user directory on your computer.
+
+1. Open a command prompt to the directory where you setup O3DE and use the `o3de register` command as shown.
+
+    ```cmd
+    scripts\o3de register --this-engine
+    ```
+
+    The manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, gems, and templates are recorded in this file.
 
 You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
 

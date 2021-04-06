@@ -12,3 +12,5 @@ Once you have Open 3D Engine (O3DE) installed in your development environment, y
 ## Creating a Project
 
 You will use CMake and the O3DE CMake scripts from the command line to start an O3DE project. Typically, to get you started with a common set of features, it's easiest to create your project using the default template that comes with O3DE. This project template specifies a set of Gems that enable these features. Later on, you will learn how to create your own custom project templates.
+
+The topics in this section introduce you to the options available in O3DE for creating projects.
