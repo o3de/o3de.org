@@ -13,6 +13,7 @@ This section provides a high-level overview of graphics features that the Atom r
 
 ## Anti-aliasing
 A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
+<<<<<<< HEAD
 
 Multisampling Anti-aliasing (MSAA)   
 : MSAA is an anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
@@ -83,9 +84,11 @@ This section provides a high-level overview of graphics features that the Atom r
 
 ## Anti-aliasing
 A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multi-Sampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
+=======
+>>>>>>> 13ba3e2b (Apply PR fix, clarified how features are provided by Atom)
 
 Multisampling Anti-aliasing (MSAA)   
-: MSAA is an anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA; MSAA samples from groups of pixels, whereas SSAA samples each individual pixel, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
+: MSAA is an anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
 
 Subpixel Morphological Anti-aliasing (SMAA)  
 : An image-based, post-processing anti-aliasing technique that implements a combination of morphological anti-aliasing and multi-/super- sampling anti-aliasing strategies. It is more efficient than MSAA, but provides less quality. SMAA can be enabled and configured in the file `SMAAConfiguration.azasset`. 
@@ -94,11 +97,11 @@ Subpixel Morphological Anti-aliasing (SMAA)
 ## Lighting
 
 Punctual Lights  
-: Punctual lights are efficient, simple to compute, light sources. O3DE has two punctual lights:
+: Punctual lights are efficient, simple to compute, light sources. Atom integrates punctual lights into O3DE using feature processor interfaces. The following punctual lights are supported:
 + **Point Light** - Casts light from an infinitely small point in all directions within a radius, similar to a light bulb.
 + **Directional Light** - Casts light from an infinitely distant point in a single direction. Directional lights are often used to simulate large distant light sources link the sun, and to cast shadows.
 
-*Related to: [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Spot Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_spot_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html)*
+*Related to: [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Spot Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_spot_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html), [O3DE Point Light Component](TBD), [O3DE Directional Light Component](TBD)*
 
 
 Area Lights
@@ -215,7 +218,7 @@ Screen Space Ambient Occlusion (SSAO)
 >>>>>>> a101f8eb (Apply PR fixes. Reorganie section and clarify definitions.)
 
  Decal   
-: Non-repeating materials that are projected onto to the surface of an object. Decals can be used to apply all manner of unique surface details including painted insignias, chipping, dirt, rust, and more. 
+: Non-repeating materials that are projected onto the surface of an object. Decals can be used to apply all manner of unique surface details including painted insignias, chipping, dirt, rust, and more. 
 
 *Related to: [Decal Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_decal_feature_processor_interface.html), [O3DE Decal Component](/docs/user-guide/components/reference/atom/decal.md)* 
 
