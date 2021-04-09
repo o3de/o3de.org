@@ -31,7 +31,7 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 ### Changelog
 
-#### Open 3D Engine v0.1.0 -- April 15th, 2021
+#### Open 3D Engine v1.0.0 -- April 15th, 2021
 
 **New:**
 
