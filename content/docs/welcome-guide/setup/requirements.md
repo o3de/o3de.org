@@ -88,7 +88,7 @@ Minimum hardware requirements for development include the following:
 
 O3DE has a minimum set of hardware and software requirements for development, as outlined in the following sections.
 
-## System Requirements
+## System requirements
 
 Minimum hardware requirements include the following:
 
@@ -190,7 +190,7 @@ The default Visual Studio installation might not include all of the features tha
 =======
 Required free disk space and RAM requirements are dependent on the options that you select when configuring your project in O3DE.
 
-## Software Prerequisites
+## Software prerequisites
 
 To create new projects or use advanced development features in O3DE, you need a developer environment that includes the following software:
 
@@ -200,7 +200,7 @@ To create new projects or use advanced development features in O3DE, you need a 
 
 *Microsoft offers Visual Studio Community edition free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
 
-### Visual Studio Configuration
+### Visual Studio configuration
 
 The default Visual Studio installation might not include all of the features that are required by O3DE. Ensure that the following Visual Studio features are enabled:
 
