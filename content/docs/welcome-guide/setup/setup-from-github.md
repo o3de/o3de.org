@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: Setting up O3DE from GitHub
 description: Learn how to set up Open 3D Engine (O3DE) by cloning the source from GitHub.
 weight: 300
@@ -7,6 +8,10 @@ toc: true
 =======
 title: Setup O3DE from GitHub
 description: Learn how to setup Open 3D Engine (O3DE) by cloning the source from GitHub.
+=======
+title: Setting up O3DE from GitHub
+description: Learn how to set up Open 3D Engine (O3DE) by cloning the source from GitHub.
+>>>>>>> 68220315 (Update from feedback)
 weight: 300
 <<<<<<< HEAD
 >>>>>>> 08172c74 (instructions for installing from GitHub)
@@ -17,6 +22,7 @@ toc: true
 
 {{< preview-new >}}
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base.
 
@@ -110,6 +116,9 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 1. Add a remote to track the upstream repo. This will enable you to pull updates from the O3DE repo directly into your local clone.
 =======
 Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to setup your development environment to prepare for easily syncing future engine updates, and for making contributions to the open source project base.
+=======
+Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment to prepare for easily syncing future engine updates, and for making contributions to the open source project base.
+>>>>>>> 68220315 (Update from feedback)
 
 The instructions here will guide you through the following steps:
 
@@ -128,15 +137,15 @@ The instructions that follow assume you have the following:
 
 The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing large binary files. The following instructions will prepare your PC to authenticate and download these files automatically when you clone, fetch, or pull from the repo.
 
-**To configure for Git LFS:**
+**To configure for Git LFS**
 
-1. Verify **Git LFS** is available on your PC.
+1. Verify that **Git LFS** is available on your PC.
 
     ```cmd
     git lfs install
     ```
 
-1. Verify you have a **credential manager** setup for Git. Recent versions of Git install a credential manager to store your credentials so that you don't have to enter them for every request.
+1. Verify that you have a **credential manager** setup for Git. Recent versions of Git install a credential manager to store your credentials so that you don't have to enter them for every request.
 
     ```cmd
     git config credential.helper
@@ -146,12 +155,12 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
 1. Create a GitHub **personal access token** with `repo` and `read:org` scope.
 
-    1. Go to [https://github.com/settings/tokens](https://github.com/settings/tokens)
+    1. Go to [https://github.com/settings/tokens](https://github.com/settings/tokens).
 
         (GitHub menu equivalent: Settings > Developer Settings > Personal Access Tokens)
     1. Choose **Generate new token**.
     1. (Optional) Add an entry under **Note**. This is only for your reference.
-    1. Under **Select scopes** check the following:
+    1. Under **Select scopes**, select the following:
         * `repo` (all)
         * `read:org` (under admin:org)
     1. Choose **Generate token**.
@@ -160,7 +169,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
 All contributions to the O3DE repo are expected to be staged in a fork before submitting a pull request.
 
-**To fork and clone O3DE on your PC from GitHub:**
+**To fork and clone O3DE on your PC from GitHub**
 
 1. Create a fork of the O3DE GitHub repo from [https://github.com/aws/o3de](https://github.com/aws/o3de). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and make use of your team's existing fork.
 
@@ -168,7 +177,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
     For general instructions and help with creating and using forks in GitHub, see the GitHub Guide on [Forking Projects](https://guides.github.com/activities/forking/).
 
-1. Clone your forked repo. Use your preferred Git UI or a command line to clone the repo in a directory of your choice. You will need your GitHub username and the personal access token you created earlier.
+1. Clone your forked repo. Use your preferred Git UI or a command line to clone the repo in a directory of your choice. You will need your GitHub user name and the personal access token that you created earlier.
 
     1. Clone the repo from your fork.
 
@@ -181,20 +190,24 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
         {{< /note >}}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- TODO: Verify that we are indeed expecting customers to fork. Show them how to disable pushing to upstream, too. -->
 >>>>>>> 08172c74 (instructions for installing from GitHub)
 =======
     1. If you are shown a **Connect to GitHub** dialog box, sign in to GitHub as instructed, using either your browser or your personal access token:
+=======
+    1. If you are shown a **Connect to GitHub** dialog box, sign in to GitHub as instructed, using either your browser or your personal access token.
+>>>>>>> 68220315 (Update from feedback)
 
         ![GitHub sign in dialog box](/images/welcome-guide/setup-github-signin.png)
 
-    1. Enter your credentials for the LFS endpoint in the next sign in dialog box. Use your **GitHub username** and your **personal access token** for the password:
+    1. Enter your credentials for the LFS endpoint in the next sign in dialog box. Use your **GitHub user name** and your **personal access token** for the password.
 
         ![Credential manager asking for LFS credentials](/images/welcome-guide/setup-credential-manager-lfs.png)
 
     1. Update and verify LFS.
 
-        Once the clone operation completes, update LFS and verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
+        When the clone operation completes, update LFS and verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
 
         ```cmd
         cd o3de
@@ -211,10 +224,14 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
 =======
     Verify the upstream repository. You should see the URL for the fork as origin, and the URL for the original repository as upstream:
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
+=======
+    Verify the upstream repository. You should see the URL for the fork as origin, and the URL for the original repository as upstream.
+>>>>>>> 68220315 (Update from feedback)
 
     ```cmd
     > git remote -v
@@ -225,10 +242,14 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
 =======
 1. Any time you want to sync the latest files from the repo and LFS, you can pull from upstream main:
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
+=======
+1. Any time that you want to sync the latest files from the repo and LFS, you can pull from upstream main.
+>>>>>>> 68220315 (Update from feedback)
 
     ```cmd
     git fetch upstream
@@ -271,7 +292,7 @@ For more information about contributing to O3DE and the O3DE code contribution w
 =======
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
 
-    If new commits were merged from the upstream repo, you can push them to your fork:
+    If new commits were merged from the upstream repo, you can push them to your fork.
 
     ```cmd
     git push

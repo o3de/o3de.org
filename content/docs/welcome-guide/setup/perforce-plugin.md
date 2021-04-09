@@ -1,5 +1,6 @@
 ---
 <<<<<<< HEAD
+<<<<<<< HEAD
 linktitle: Setting up Perforce Plugin
 title: Setting up the Perforce Plugin in Open 3D Engine
 description: Learn how to configure the Perforce Plugin to use Perforce as the source
@@ -10,6 +11,12 @@ title: Setup the Perforce Plugin in Open 3D Engine
 description: Learn how to configure the Perforce Plugin to use Perforce as the source
   control solution for your Open 3D Engine projects.
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
+=======
+linktitle: Setting up Perforce Plugin
+title: Setting up the Perforce Plugin in Open 3D Engine
+description: Learn how to configure the Perforce Plugin to use Perforce as the source
+  control solution for your Open 3D Engine (O3DE) projects.
+>>>>>>> 68220315 (Update from feedback)
 weight: 700
 ---
 
