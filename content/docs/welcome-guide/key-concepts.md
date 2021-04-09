@@ -178,7 +178,7 @@ O3DE is comprised of sub-modules, called *Gems*. As you develop a project, you c
 
 Think of O3DE as a collection of discrete elements: code, scripts, various GUI-based editors, and command-line tools. When you compile a project, O3DE's build scripts pull in all the pieces that are specified in your project's configuration. When built, your project will only use the parts of the O3DE SDK that you included in your configuration. Likewise, the asset bundling and management tools ensure you only ship the assets that your project requires.
 
-## Overview of the O3DE SDK<a name="how-ly-works-overview"></a>
+## Overview of the O3DE SDK
 
 O3DE is modular. It is constructed of a common *core* that all modules depend on, and then a plugin and extension system that adds more features.
 
@@ -207,21 +207,21 @@ q + `/cmake` contains configuration, download and build scripts for O3DE.
   + `/Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration.
   + `/Templates` contains the default templates for Gems and Projects.
 
-## Working with Gems<a name="how-ly-works-extending"></a>
+## Working with Gems
 
 O3DE is a sandbox of different bits, provided by Gems, that you can combine in your project. You only need to include the Gems that provide the features and functionality that your project requires. When you need to change or extend the behavior of something, you can work with only the Gem that contains the functionality that you want to change. This modular approach allows the community to provide packaged features and assets to extend O3DE, and even provide alternate solutions for entire systems. Suppose you'd like to use a an unsupported file format, an alternate scripting language, or that you need a version of a system that has some cutting-edge experimental features. You can use solutions that O3DE users have provided via their own Gems, or you can create a Gem that provides that support and share it with other O3DE users. By focusing on modularity, you can safely experiment with different feature changes without risking progress and unintended regression on your project. Asset collections, code samples, components, libraries, tools, and even entire game projects can be distributed as Gems.
 
 You enable Gems when you create and configure your project. You can enable additional Gems and disable unused Gems at any time by updating your project configuration. Some Gems are core systems and are required for all O3DE projects. Other Gems are extensions for existing Gems and require their dependencies to be enabled for your project. Enabled Gems are detected and built automatically when you build your project.
 
-You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/Gems` directory of `/O3DE` and examine the included Gems. The process for creating your own Gem is very similar to creating a project.
+You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/O3DE/Gems` directory and examine the included Gems. The process for creating your own Gem is very similar to creating a project.
 
-## Messaging Between Systems with EBus<a name="how-ly-works-messaging"></a>
+## Messaging Between Systems with EBus
 
 All of O3DE's Gems and systems, as well as the components in your projects, need a way to communicate with each other. O3DE uses a general-purpose communication system called Event Bus (EBus for short).
 
 As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them-​and specifically, to invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces (buses) that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
 
-here are two types of EBus:
+The two types of EBusses are:
 
 + Request bus: This EBus type registers a handler for a method that can be called by other systems.
 + Notification bus: This EBus type provides a messaging interface for notifications that systems can publish or subscribe to.
@@ -229,17 +229,18 @@ here are two types of EBus:
 EBuses have many advantages over traditional polling methods:
 
 + Abstraction - Minimize hard dependencies between systems.
-+ Event-driven programming - Eliminate polling patterns for more scalable and higher performance software.
++ Event-driven - Eliminate polling patterns for more scalable and higher performance software.
 + Cleaner application code - Safely dispatch messages without concern for what is handling them or whether they are being handled at all.
 + Concurrency - Queue events from various threads for safe execution on another thread or for distributed system applications.
 + Predictability - Provide support for ordering of handlers on a given bus.
 + Debugging - Intercept messages for reporting, profiling, and introspection purposes.
 
-EBuses are configurable and support many different use cases:
+With EBusses, you can:
 
-+ As a direct global function call.
++ Make direct gobal function calls.
 + Dispatch processing to multiple handlers.
 + Queue all calls, acting like a command buffer.
+<<<<<<< HEAD
 >>>>>>> d4bf0db0 (How O3DE Works redux. This commit incorporates all the feedback from https://github.com/o3de/o3de.org/pull/389)
 + As an addressable mailbox.
 + For imperative delivery.
@@ -335,6 +336,11 @@ O3DE's functionality is exposed to **Script Canvas** and Lua by the behavior con
 
 For the purposes of O3DE, an asset is a resource file, saved on disk, that's consumed by your project in some way. An asset might be a font for your user interface, a bitmap file that contains a grassy terrain texture, a rock mesh you sculpted, animations for a character, and so on. Some assets might be created in O3DE. For example, you can use O3DE's **Asset Editor** to create specialized files called *inputbindings* that map buttons from a game pad to input events for your project and *physicsmaterials* that describe the physical properties of surfaces.
 =======
+=======
++ Use as an addressable mailbox.
++ Perform either imperative or queued delivery.
++ Automatically marshal results of a function call into a buffer.
+>>>>>>> 0517ad68 (Apply suggestions from code review)
 
 Interfaces are provided for the Gems and systems DLLs included with O3DE. To use the functionality in these DLLs, you use the interfaces in the headers to register for a single cast (Event) or broadcast (Broadcast) event, or through supplying a data request functor to a Request Bus handler.
 
@@ -346,7 +352,7 @@ For singleton handlers where you only need one interface to communicate across D
 
 For details on using EBus, see [Working with the Event Bus (EBus) System](/docs/user-guide/engine/ebus)
 
-## The Component Entity system<a name="how-ly-works-component-entity"></a>
+## The Component Entity system
 
 Understanding the component entity system is fundamental to using O3DE. It's conceptually simple: Every in-game object you create for your project is an *entity*, with a unique ID and container. Each entity contains *components* that provide functionality. The functionality that components provide is broad and can include primitive shapes for collision and overlap detection, meshes and materials, audio, artificial intelligence behaviors, animation, physics, scripts, and so much more. There are even components that provide tool and debugging functionality.
 
@@ -368,10 +374,14 @@ Behaviors applied to a prefab or a spawnable can potentially cascade down to all
 
 When you've internalized the spawnable > prefab > entity > component hierarchy, consider how you would use these concepts to develop the various elements potentially populating your project.
 
-## The O3DE Asset Pipeline<a name="how-ly-works-assets"></a>
+## The O3DE Asset Pipeline
 
+<<<<<<< HEAD
 For the purposes of O3DE, we'll define an asset as a resource file, saved on disk, that's consumed by your project in some way. An asset might be a font for your user interface, a bitmap file that contains a grassy terrain texture, a rock mesh you sculpted, animations for a character, and so on. Some assets might be created in O3DE. For example, you can use O3DE's **Asset Editor** to create specialized files called *inputbindings* that map buttons from a game pad to input events for your project and *physicsmaterials* that describe the physical properties of surfaces.
 >>>>>>> d4bf0db0 (How O3DE Works redux. This commit incorporates all the feedback from https://github.com/o3de/o3de.org/pull/389)
+=======
+For the purposes of O3DE, an asset is a resource file, saved on disk, that's consumed by your project in some way. An asset might be a font for your user interface, a bitmap file that contains a grassy terrain texture, a rock mesh you sculpted, animations for a character, and so on. Some assets might be created in O3DE. For example, you can use O3DE's **Asset Editor** to create specialized files called *inputbindings* that map buttons from a game pad to input events for your project and *physicsmaterials* that describe the physical properties of surfaces.
+>>>>>>> 0517ad68 (Apply suggestions from code review)
 
 For many reasons, the primary being performance considerations, these different assets cannot be consumed by O3DE without being converted to operating system specific, *game ready* data. This process, going from a source asset file on disk to game ready data is the *Asset Pipeline*. The processing is performed automatically by **Asset Processor**.
 
@@ -393,10 +403,14 @@ When you're preparing to ship, you'll need to package the assets that your proje
 Asset Bundler makes shipping the specific assets that are used for the release of your game more reliable and repeatable. Reliability is based on an underlying dependency system. If you make changes to your project and add, remove, or update assets, Asset Bundler uses the dependencies to automatically determine which assets to include. Repeatability is based on underlying configuration files that provide consistency each time you run Asset Bundler.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ## Scripting for O3DE
 =======
 ## Scripting for O3DE<a name="how-ly-works-scripting"></a>
 >>>>>>> d4bf0db0 (How O3DE Works redux. This commit incorporates all the feedback from https://github.com/o3de/o3de.org/pull/389)
+=======
+## Scripting for O3DE
+>>>>>>> 0517ad68 (Apply suggestions from code review)
 
 O3DE includes two scripting technologies for creating logic and behaviors: *Script Canvas* and *Lua*.
 
