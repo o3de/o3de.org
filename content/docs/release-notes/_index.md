@@ -30,10 +30,8 @@ guide_img: "/images/release-notes/guide_img.svg"
 |-----------------|----------------------------------|--------------------|
 | v0.1.0 (stable) | [main](https://github.com)       |  April 15, 2021    |
 | v0.1.0 (beta)   | [release](https://github.com)    |  April 15, 2021    |
-### Changelog
 
-Stable Release: stable branch, once every 6 months
-Beta branch: main
+### Changelog
 
 #### Open 3D Engine v0.1.0 -- April 15th, 2021
 
