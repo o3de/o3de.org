@@ -8,6 +8,7 @@ title: Open 3D Engine system requirements
 linktitle: System Requirements
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: Open 3D Engine (O3DE) System Requirements
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -15,6 +16,9 @@ title: Open 3D Engine (O3DE) System Requirements
 description: View the system requirements for Open 3D Engine (O3DE).
 >>>>>>> 08172c74 (instructions for installing from GitHub)
 =======
+=======
+title: O3DE System Requirements
+>>>>>>> 68220315 (Update from feedback)
 =======
 title: O3DE System Requirements
 >>>>>>> 68220315 (Update from feedback)
@@ -221,11 +225,11 @@ To create new projects or use advanced development features in O3DE, you need a 
 
 ### Visual Studio configuration
 
-The default Visual Studio installation might not include all of the features that are required by O3DE. Ensure that the following Visual Studio features are enabled:
+The default Visual Studio installation might not include all of the features that are required by O3DE. The following steps describe how to ensure that the necessary Visual Studio features are enabled:
 
 1. Launch the **Visual Studio Installer** from your download directory or the **Start Menu** if you've already installed Visual Studio.
 
-1. If you've installed Visual Studio, choose **More - Modify** on the version of Visual Studio you'll use with O3DE.
+1. If you've installed Visual Studio, choose **More - Modify** on the version of Visual Studio that you'll use with O3DE.
 
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
 1. On the **Workloads** tab:

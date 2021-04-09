@@ -10,6 +10,7 @@ weight: 400
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 The following topics in this section detail the minimum requirements for Open 3D Engine (O3DE) and guide you through the installation process.
 =======
 The following topics in this section detail the minimum requirements for O3DE and guide you through the installation process.
@@ -20,6 +21,9 @@ The following topics in this section detail the minimum requirements for Open 3D
 =======
 The following topics in this section detail the minimum requirements for O3DE and guide you through the installation process.
 >>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
+=======
+The following topics in this section detail the minimum requirements for Open 3D Engine (O3DE) and guide you through the installation process.
+>>>>>>> 68220315 (Update from feedback)
 ## Setup Topics
 
 | Topic | Description |
