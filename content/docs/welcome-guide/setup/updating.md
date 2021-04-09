@@ -1,9 +1,9 @@
 ---
 title: Updating O3DE
-date: 2021-03-02T00:23:49-05:00
+description: Learn how to update the version of Open 3D Engine used in your project.
 weight: 500
 ---
 
-{{< preview-new >}}
+{{< placeholder >}}
 
-Coming soon.
+Coming soon: Learn how to update the version of Open 3D Engine used in your project.
