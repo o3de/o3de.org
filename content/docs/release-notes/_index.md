@@ -14,24 +14,24 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
-| v1.0.0       | [LINK HERE]                   |  April 15, 2021    |
+| v1.0.0       | [LINK HERE]                   |  April 2, 2021    |
 
 ### Latest beta releases
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
-| v1.0.0       | [LINK HERE]                   |  April 15, 2021    |
+| v1.0.0       | [LINK HERE]                   |  April 2, 2021    |
 
 ### Source branches
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| v1.0.0 (stable) | [main](https://github.com)       |  April 15, 2021    |
-| v1.0.0 (beta)   | [release](https://github.com)    |  April 15, 2021    |
+| v1.0.0 (stable) | [main](https://github.com)       |  April 2, 2021    |
+| v1.0.0 (beta)   | [release](https://github.com)    |  April 2, 2021    |
 
 ### Changelog
 
-#### Open 3D Engine v1.0.0 -- April 15th, 2021
+#### Open 3D Engine v1.0.0 -- April 2th, 2021
 
 **New:**
 
