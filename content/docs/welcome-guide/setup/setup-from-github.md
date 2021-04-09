@@ -42,6 +42,7 @@ toc: true
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base.
 
 The instructions here will guide you through the following steps:
@@ -243,6 +244,9 @@ Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to setup
 =======
 Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment to prepare for easily syncing future engine updates, and for making contributions to the open source project base.
 >>>>>>> 68220315 (Update from feedback)
+=======
+Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base.
+>>>>>>> b339b493 (Apply suggestions from code review)
 
 The instructions here will guide you through the following steps:
 
@@ -263,7 +267,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
 **To configure for Git LFS**
 
-1. Verify that **Git LFS** is available on your PC.
+1. Verify that **Git LFS** is available on your computer.
 
     ```cmd
     git lfs install
@@ -295,7 +299,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
 **To fork and clone O3DE on your PC from GitHub**
 
-1. Create a fork of the O3DE GitHub repo from [https://github.com/aws/o3de](https://github.com/aws/o3de). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and make use of your team's existing fork.
+1. Create a fork of the O3DE GitHub repo from [https://github.com/aws/o3de](https://github.com/aws/o3de). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
 
     ![Create a fork using the Fork button on the O3DE GitHub repo](/images/welcome-guide/setup-create-fork.png)
 
@@ -310,7 +314,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
         ```
 
         {{< note >}}
-        To save space and improve cloning performance, use the `--depth 1` argument in the git clone command. This creates a shallow clone, which only pulls down the latest commits, and not the entire repo history.
+To save space and improve cloning performance, use the `--depth 1` argument in the git clone command. This creates a shallow clone, which only pulls down the latest commits, and not the entire repo history.
         {{< /note >}}
 
 <<<<<<< HEAD
@@ -325,7 +329,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
         ![GitHub sign in dialog box](/images/welcome-guide/setup-github-signin.png)
 
-    1. Enter your credentials for the LFS endpoint in the next sign in dialog box. Use your **GitHub user name** and your **personal access token** for the password.
+    1. Enter your credentials for the LFS endpoint in the next _sign in_ dialog box. Use your **GitHub user name** and your **personal access token** for the password.
 
         ![Credential manager asking for LFS credentials](/images/welcome-guide/setup-credential-manager-lfs.png)
 
@@ -353,6 +357,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
 =======
     Verify the upstream repository. You should see the URL for the fork as origin, and the URL for the original repository as upstream:
@@ -369,6 +374,9 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 =======
     Verify the upstream repository. You should see the URL for the fork as origin, and the URL for the original repository as upstream.
 >>>>>>> 68220315 (Update from feedback)
+=======
+    Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
+>>>>>>> b339b493 (Apply suggestions from code review)
 
     ```cmd
     > git remote -v
@@ -383,6 +391,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
 =======
 1. Any time you want to sync the latest files from the repo and LFS, you can pull from upstream main:
@@ -399,6 +408,9 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 =======
 1. Any time that you want to sync the latest files from the repo and LFS, you can pull from upstream main.
 >>>>>>> 68220315 (Update from feedback)
+=======
+1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
+>>>>>>> b339b493 (Apply suggestions from code review)
 
     ```cmd
     git fetch upstream
