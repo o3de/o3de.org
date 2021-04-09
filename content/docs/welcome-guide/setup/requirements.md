@@ -29,6 +29,7 @@ toc: true
 
 O3DE has a minimum set of hardware and software requirements for development, as outlined in the following sections.
 
+<<<<<<< HEAD
 ## System requirements
 
 Minimum hardware requirements for development include the following:
@@ -39,9 +40,17 @@ Minimum hardware requirements for development include the following:
   + 4 GB VRAM recommended
   + NVIDIA GeForce GTX 1060 or better, driver version 465.89 or later recommended
   + AMD Radeon Pro 560 or better
+=======
+## System Requirements
+
+Minimum hardware requirements include the following:
+
+>>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
 + 60 GB of free disk space
 + 1366 x 768 px screen resolution
++ _Other specs for processor, memory, and video cards - coming soon._
 
+<<<<<<< HEAD
 {{< note >}}
 RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.
 {{< /note >}}
@@ -60,12 +69,33 @@ Microsoft offers **Visual Studio Community** free to individual developers. For 
 {{< /note >}}
 
 ### Visual Studio configuration
+=======
+Required free disk space and RAM requirements are dependent on the options that you select when configuring your project in O3DE.
+
+## Software Prerequisites
+
+To create new projects or use advanced development features in O3DE, you need a developer environment that includes the following software:
+
++ [Microsoft Visual Studio 2019*](https://visualstudio.microsoft.com/downloads/) version **16.2.4** through version **16.9.x**
++ [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
++ [CMake 3.19.1](https://cmake.org/files/LatestRelease/cmake-3.19.1-win64-x64.msi) or later
+
+*Microsoft offers Visual Studio Community edition free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
+
+### Visual Studio Configuration
+>>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
 
 The default Visual Studio installation might not include all of the features that are required by O3DE. The following steps describe how to ensure that the necessary Visual Studio features are enabled:
 
+<<<<<<< HEAD
 1. Launch the **Visual Studio Installer**.
 
 1. Choose **More - Modify** on the version of Visual Studio that you'll use with O3DE.
+=======
+1. Launch the **Visual Studio Installer** from your download directory or the **Start Menu** if you've already installed Visual Studio.
+
+1. If you've installed Visual Studio, choose **More - Modify** on the version of Visual Studio you'll use with O3DE.
+>>>>>>> b1ca3379 (updated setup from GitHub and system requirements)
 
 1. On the **Workloads** tab:
    + Select **Game development with C++**.
