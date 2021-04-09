@@ -14,22 +14,20 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
-| v0.1.0       | [LINK HERE]                   |  April 15, 2021    |
-
+| v1.0.0       | [LINK HERE]                   |  April 15, 2021    |
 
 ### Latest beta releases
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
-| v0.1.0       | [LINK HERE]                   |  April 15, 2021    |
-
+| v1.0.0       | [LINK HERE]                   |  April 15, 2021    |
 
 ### Source branches
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| v0.1.0 (stable) | [main](https://github.com)       |  April 15, 2021    |
-| v0.1.0 (beta)   | [release](https://github.com)    |  April 15, 2021    |
+| v1.0.0 (stable) | [main](https://github.com)       |  April 15, 2021    |
+| v1.0.0 (beta)   | [release](https://github.com)    |  April 15, 2021    |
 
 ### Changelog
 
