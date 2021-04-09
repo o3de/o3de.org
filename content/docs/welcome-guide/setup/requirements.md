@@ -1,6 +1,7 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 description:  View the system requirements for Open 3D Engine. 
 title: Open 3D Engine system requirements
 =======
@@ -29,6 +30,11 @@ description: View the system requirements for Open 3D Engine (O3DE).
 =======
 description: View the system requirements for development with Open 3D Engine (O3DE).
 >>>>>>> c7b7d43c (more system requirements edits)
+=======
+linktitle: System Requirements
+title: Open 3D Engine (O3DE) System Requirements
+description: View the system requirements for Open 3D Engine (O3DE).
+>>>>>>> 08172c74 (instructions for installing from GitHub)
 weight: 100
 toc: true
 ---

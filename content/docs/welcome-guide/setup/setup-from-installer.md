@@ -1,6 +1,7 @@
 ---
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 title: Setting up O3DE from the Installer
 description: Learn how to install and set up Open 3D Engine (O3DE) using the installer tool.
 =======
@@ -11,6 +12,10 @@ description: Learn how to install and setup Open 3D Engine using the installer t
 title: Setting up O3DE from the Installer
 description: Learn how to install and set up Open 3D Engine (O3DE) using the installer tool.
 >>>>>>> 68220315 (Update from feedback)
+=======
+title: Setup O3DE from Installer
+description: Learn how to install and setup Open 3D Engine using the installer tool.
+>>>>>>> 08172c74 (instructions for installing from GitHub)
 weight: 200
 ---
 
