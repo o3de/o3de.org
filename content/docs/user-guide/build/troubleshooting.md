@@ -49,9 +49,9 @@ These values are stored in the CMake cache. Clean the cache and reconfigure by d
 
 After cleaning the cache, the correct compiler should be detected during the CMake configuration stage.
 
-## 3rdParty Directory Detection Fails
+## Package Directory Detection Fails
 
-**Issue:** During configuration, the 3rd party directory isn't correctly detected and the CMake configure task reports
+**Issue:** During configuration, the package directory isn't correctly detected and the CMake configure task reports
 an error similar to the following:
 
 ```cmd

@@ -1,6 +1,6 @@
 ---
 title: O3DE Packages
-description: Integrate third-party dependencies as packages into Open 3D Engine (O3DE) Gems or projects using the CMake build system.
+description: Integrate dependencies as packages into Open 3D Engine (O3DE) Gems or projects using the CMake build system.
 weight: 300
 ---
 
@@ -23,26 +23,26 @@ making sure that you have the packages needed on your system at compile-time.
 
 The dependency system runs through the following steps when invoked:
 
-1. It checks for a valid third-party directory in the location set as the `LY_3RDPARTY_PATH` value. Any directory can be used for storing packages, but it's recommended that you avoid changing your `LY_3RDPARTY_PATH` value once it's set. After a directory has contents downloaded into it by the O3DE build system, a cache file is created there to make future dependency checks easily, so changing this value will re-download all packages.
+1. It checks for a valid package location at the `LY_3RDPARTY_PATH` value. Any directory can be used for storing packages, but it's recommended that you avoid changing your `LY_3RDPARTY_PATH` value once it's set. After a directory has contents downloaded into it by the O3DE build system, a cache file is created there to make future dependency checks easily, so changing the package location will re-download and all packages.
 
 1. The build system loads the available package sources. This is a semi-colon (`;`) separated list of package sources that are stored in the `LY_PACKAGE_SERVER_URLS` cache value. If the `LY_PACKAGE_SERVER_URLS` environment variable is set, it's _prepended_ to the cached value.
 
 1. For each package:
    1. The next source in `LY_PACKAGE_SERVER_URLS` is checked. If a matching package is found in the source, the package is downloaded to `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION`.
-   2. The package checksum is downloaded from the source, and checked against the checksum contained in the requesting CMake file. If there's a checksum mismatch, the next available package source is checked.
-   4. The package is extracted into `LY_PACKAGE_UNPACK_LOCATION/<full-package-name>`.
-   5. Each individual file in the package is checked against a checksum file contained in the package. If a checksum fails,
-      the package and unpacked contents are deleted and the next package source is checked.
-   6. The extracted package contents are copied to `LY_3RDPARTY_PATH`.
+   2. The package tarball is downloaded from the source, and checked against the checksum contained in the requesting CMake file. If there's a checksum mismatch,
+      the tarball is deleted and the next available package source is checked for the package.
+   3. The package is extracted into `LY_PACKAGE_UNPACK_LOCATION/<full-package-name>`. By default `LY_PACKAGE_UNPACK_LOCATION` is `LY_3RDPARTY_PATH/packages`.
+   4. Each individual file in the package is checked against a checksum file contained in the package. If a checksum fails,
+      the package tarball and unpacked contents are deleted and the next source is checked for the package.
 
 You can also add Python module requirements so that `pip` is used to automatically to retrieve packages that are required by tools or other libraries.
 
 {{< note >}}
 Package downloads and target creation run only as part of CMake configuration and generation. If a new dependency is added to a Gem or project,
-you'll need to reconfigure your CMake cache and regenerate build projects.
+you need to reconfigure your CMake cache and regenerate.
 {{< /note >}}
 
-See the [CMake settings reference](./reference.md) for the full list of available settings that affect third-party downloads.
+See the [CMake settings reference](./reference.md) for the full list of available settings that affect the package system.
 
 ## Create a Package
 
@@ -87,7 +87,7 @@ See the [SPDX License List](https://spdx.org/licenses/) for allowed values of `L
 ### The `Find<Package>.cmake` file
 
 To create a target and allow it to be referenced from the O3DE build system, packages need to include a `Find<Package>.cmake` file, where
-`<Package>` must be the name of the package content directory. This CMake file is responsible for identifying the target in the third-party package
+`<Package>` must be the name of the package content directory. This CMake file is responsible for identifying the target in the package
 namespace, setting any cache or build values required, and registering the target with the O3DE build system.
 
 For a package with the structure:
@@ -197,6 +197,11 @@ system offers the functions `update_pip_requirements` and `ly_pip_install_local_
   inside of the user's "local" `pip` Site-Packages directory, allowing the system Python to behave as if the module is installed.
   If the linked Python module has any requirements, you **must** call `update_pip_requirements` before this function to ensure
   that Python dependencies are correctly tracked.
+
+{{< important >}}
+You can't declare another source for `pip` to download your Python modules from for those listed in `requirements.txt`. If your Python dependencies
+are hosted on a service other than PyPi, users will need to manually configure `pip` to pull from the appropriate CDN.
+{{< /important >}}
 
 For example, say that your Gem contains a Python module called `example-py`, with a setup file at `example-py/setup.py`.
 To give O3DE access to this module, the CMake file for this Gem would require the following snippet:

@@ -4,7 +4,7 @@ description: The reference guide to Open 3D Engine-specific CMake settings.
 weight: 500
 ---
 
-Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded third party packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/gems/reference). For general CMake options, see the [cmake-variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
+Open 3D Engine uses custom CMake configuration values in order to detect settings like valid deployment platforms, active projects, and the locations of downloaded packages. This document is a reference for the user-available CMake settings used by O3DE. Settings specific to a Gem are covered in [Gem reference](/docs/user-guide/gems/reference). For general CMake options, see the [cmake-variables documentation](https://cmake.org/cmake/help/v3.18/manual/cmake-variables.7.html).
 
 Keep in mind that every time you change a configuration value, you need to regenerate the project files so that the changes are picked up and apply to your next build.
 
@@ -18,7 +18,7 @@ CMake options like `CMAKE_CXX_STANDARD` are set during configuration by the O3DE
 
 These options are the user-supplied settings that are required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
 
-* **`LY_3RDPARTY_PATH`** - The filesystem path to your third party library directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
+* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
   
   *Type*: `PATH`
 * **`LY_PROJECTS`** - The O3DE projects to include as build targets and scan for dependencies, as a semi-colon (`;`) separated string. For example, `Project1;Project2;Project3` generates targets for `Project1Launcher`, `Project2Launcher`, and `Project3Launcher`, and correctly identifies the dependencies for each. Each dependency also produces a target in the generated project.
@@ -69,11 +69,12 @@ Controls where asset `.pak` files are loaded from. An empty string uses the pred
   *Type*: `STRING`  
   *Default*: Predefined `paks` root under your O3DE installation
 
-### Third-party package settings
+### Package system settings
 
-These settings control how the third party package download system functions.
+These settings control how the package download system functions.
 
-* **`LY_PACKAGE_DEBUG`** - Produces verbose information about the 3rd party package download and installation process for debugging when `ON`.
+* **`LY_PACKAGE_DEBUG`** - Produces verbose information about the package download and installation process when `ON`. Set this cache value before filing any bug
+  report against the O3DE package system to make sure that all the necessary information is there to resolve the issue.
 
   *Type*: `BOOL`  
   *Default*: `OFF`
@@ -93,7 +94,7 @@ These settings control how the third party package download system functions.
   *Type*: `STRING`  
   *Default*: `(Empty string)`
 
-* **`LY_PACKAGE_UNPACK_LOCATION`** - The location where downloaded packages are unpacked to, before being relocated to the 3rd party folder.
+* **`LY_PACKAGE_UNPACK_LOCATION`** - The location where downloaded packages are unpacked to, before being relocated to the package folder.
 
   *Type*: `PATH`  
   *Default*: `${LY_3RDPARTY_PATH}/packages`
@@ -102,7 +103,7 @@ These settings control how the third party package download system functions.
   as necessary.
 
   *Type*: `BOOL`
-  *Default*: `ON`
+  *Default*: `OFF`
 
 * **`LY_PACKAGE_VALIDATE_CONTENTS`** - Check each file against the hashes contained in the `SHA256SUMS` of the package. When this value is
   `OFF`, the checksums are validated only on the first package download. Turning this setting on allows for checking for local modifications
