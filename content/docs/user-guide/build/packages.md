@@ -206,7 +206,7 @@ update_pip_requirements(${CMAKE_CURRENT_LIST_DIR}/requirements.txt <ExamplePyGem
 ly_pip_install_local_package_editable(${CMAKE_CURRENT_LIST_DIR}/<example-py> <ExamplePyGem>)
 ```
 
-The `<ExamplePyGem>` can be any unique identifier for the Python module, but is conventionally the name of the gem followed by
+The `<ExamplePyGem>` can be any unique identifier for the Python module, but is conventionally the name of the Gem followed by
 `Gem`.
 
 Changing the `requirements.txt` file or the identifier used for the module will re-run the registration.
