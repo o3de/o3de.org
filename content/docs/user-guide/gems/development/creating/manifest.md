@@ -5,3 +5,5 @@ weight: 200
 ---
 
 {{< preview-migrated >}}
+
+<!-- TODO: We need a full reference of the gem.json manifest. This can appear here, or be moved to a 'references' section. -->
