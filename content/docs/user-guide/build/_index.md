@@ -27,7 +27,7 @@ cmake --build windows_vs2019 --config profile --target Editor -- /m
 {{< /tab >}}
 {{< /tabs >}}
 
-O3DE requires CMake v3.19 or higher.
+O3DE requires CMake {{< versions/cmake >}} or higher.
 
 ## Section topics
 
