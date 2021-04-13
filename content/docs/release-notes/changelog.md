@@ -27,8 +27,8 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| v1.0.0 (stable) | [main](https://github.com/aws-lumberyard/o3de/tree/1.0)       |  April 2, 2021     |
-| v1.0.0 (beta)   | [release](https://github.com/aws-lumberyard/o3de/tree/1.0)    |  April 2, 2021     |
+| v1.0.0 (stable) | [1.0](https://github.com/aws-lumberyard/o3de/tree/1.0)       |  April 2, 2021     |
+| v1.0.0 (beta)   | [main](https://github.com/aws-lumberyard/o3de/tree/main)    |  April 2, 2021     |
 
 ### Release notes
 
