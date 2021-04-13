@@ -38,7 +38,7 @@ CMake Error at CMakeLists.txt:15 (project):
   is not a full path to an existing compiler tool.
 ```
 
-This is a caused when Visual Studio is updated or modified, and the CMake cache holds information pointing to the previous compiler install. 
+This is caused when Visual Studio is updated or modified, and the CMake cache holds information pointing to the previous compiler install. 
 
 **Remedy:** This issue is most often caused after a Visual Studio update, without a regeneration of the O3DE project files.
 The path of the C and C++ compiler is set at configure-time by the CMake system, using the `CMAKE_C_COMPILER` and `CMAKE_CXX_COMPILER` values.

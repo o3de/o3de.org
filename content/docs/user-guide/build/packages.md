@@ -23,7 +23,7 @@ making sure that you have the packages needed on your system at compile-time.
 
 The dependency system runs through the following steps when invoked:
 
-1. It checks for a valid package location at the `LY_3RDPARTY_PATH` value. Any directory can be used for storing packages, but it's recommended that you avoid changing your `LY_3RDPARTY_PATH` value once it's set. After a directory has contents downloaded into it by the O3DE build system, a cache file is created there to make future dependency checks easily, so changing the package location will re-download and all packages.
+1. It checks for a valid package location at the `LY_3RDPARTY_PATH` value. Any directory can be used for storing packages, but it's recommended that you avoid changing your `LY_3RDPARTY_PATH` value once it's set. After a directory has contents downloaded into it by the O3DE build system, a cache file is created there to make future dependency checks easily, so changing the package location will re-download all packages.
 
 1. The build system loads the available package sources. This is a semi-colon (`;`) separated list of package sources that are stored in the `LY_PACKAGE_SERVER_URLS` cache value. If the `LY_PACKAGE_SERVER_URLS` environment variable is set, it's _prepended_ to the cached value.
 
