@@ -48,10 +48,10 @@ With a basic understanding of the documentation structure, and with exposure to 
    1. Make sure you branch is up-to-date with `o3de.org/main` before committing your content. 
    2. Sign-off on the changes you commit. The sign-off is a [*Developer Certificate of Origin (DCO)*](https://github.com/apps/dco). The DCO is your certification that your contribution is your own original work, or that you otherwise have the right to submit the work. For more information on committing your changes, see the [Submit a PR](./submit-a-pr) topic in this guide.
 5. **Submit a pull request:** Once you've committed your changes to your own fork/branch, you can create a pull request again `o3de.org/main`. When submitting a pull request, ensure the following:
-   A. The PR only contains commits and changes you want reviewed for the PR.
-   B. The PR message briefly and clearly explains the changes you are submitting.
-   C. You have requested at least three reviewers. Approval from two reviewers is required to merge a PR. Requesting more than two reviewers but no more than six, depending on the requirements of the review, increases the probability that your PR will be reviewed quickly.
-   D. The PR contains the appropriate *Labels* if required. Labels make it easier to sort through lists of PRs and may specify whether a PR is a work in progress, seeking feedback and review, that should not be merged into `o3de.org/main`. For more information on committing your changes, see the [Submit a PR](./submit-a-pr) topic in this guide.
+   1. The PR only contains commits and changes you want reviewed for the PR.
+   2. The PR message briefly and clearly explains the changes you are submitting.
+   3. You have requested at least three reviewers. Approval from two reviewers is required to merge a PR. Requesting more than two reviewers but no more than six, depending on the requirements of the review, increases the probability that your PR will be reviewed quickly.
+   4. The PR contains the appropriate *Labels* if required. Labels make it easier to sort through lists of PRs and may specify whether a PR is a work in progress, seeking feedback and review, that should not be merged into `o3de.org/main`. For more information on committing your changes, see the [Submit a PR](./submit-a-pr) topic in this guide.
 6. **Respond to PR feedback:** Feedback will come in the form of *suggestions* that can be committed from the GitHub PR interface, or comments you must address. To commit multiple suggestions, use the batch functionality to commit all the suggestions at once in a single commit. When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR. Make sure to request a re-review of your new commits if required. For more information on the PR review process, see the [Review PRs:](./review-prs)) topic in this guide.
 7. **Merge the PR:** When the comments and suggestions have be addressed, and two reviewers have approved the PR, it can be merged into `o3de.org/main`. You should not merge your own PRs, the second reviewer to approve the PR should be the person to merge the PR.
 8. **Close the related issue:** Now that the PR has been merged, the issue can be closed. Find the issue in the issues list, and add a comment. It's good practice to link the related PR before you close the issue.
@@ -61,4 +61,4 @@ With a basic understanding of the documentation structure, and with exposure to 
 
 ## Next step
 
-Now that you have high level understanding of the O3DE documentation, and the documentation process, start the contribution process with a closer look at [working with issues](./work-with-issues).
+Now that you have a high level understanding of the O3DE documentation, and the documentation process, start the contribution process with a closer look at [working with issues](./work-with-issues).
