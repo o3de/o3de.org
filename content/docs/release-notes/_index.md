@@ -2,7 +2,7 @@
 linktitle: Release Notes
 title: Release Notes for Open 3D Engine
 description: Find out what's in a given version of O3DE.
-weight: 1000
+weight: 100
 toc: true
 menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.svg"
@@ -10,41 +10,24 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 ## Current Versions of Open 3D Engine
 
-### Latest stable releases
+### Download the latest stable version
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
-| v1.0.0       | [LINK HERE]                   |  April 2, 2021    |
+| v1.0.0       | [LINK HERE]                   |  April 2, 2021     |
 
-### Latest beta releases
-
-| Version      | Binary download link          |  Date of Release   |
-|--------------|-------------------------------|--------------------|
-| v1.0.0       | [LINK HERE]                   |  April 2, 2021    |
-
-### Source branches
+### Get the latest stable sources
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| v1.0.0 (stable) | [main](https://github.com)       |  April 2, 2021    |
-| v1.0.0 (beta)   | [release](https://github.com)    |  April 2, 2021    |
+| v1.0.0 (stable) | [main](https://github.com)       |  April 2, 2021     |
 
-### Changelog
+### Highlights
 
-#### Open 3D Engine v1.0.0 -- April 2th, 2021
+* It's the initial release of O3DE!
 
-**New:**
+### New and updated features
 
-* This is the initial release of Open 3D Engine to private partners.
+### Bug fixes and API deprecations
 
-**Updated:**
-
-* N/A
-
-**Removed:**
-
-* N/A
-
-### Previous versions
-
-* None yet.
+### Known Issues
