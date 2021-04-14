@@ -37,16 +37,16 @@ External projects are considered experimental. They might be unstable in some sc
 1. Open a command line in your O3DE engine directory.
 
     ```cmd
-    cd o3de
+    cd <path to o3de>
     ```
 
-1. Create the project directory.
+1. Use the `o3de` script to create a new project. The `create-project` command, used with the `project-path` and no other options, creates a new project using the default project template.
 
     ```cmd
     scripts\o3de create-project --project-path <full path to project>
     ```
 
-1. Register the project.
+1. Register the project. This adds your new project to the list of known projects in the O3DE manifest, located at `<user directory>/.o3de/o3de_manifest.json`.
 
     ```cmd
     scripts\o3de register -p <full path to project>
@@ -73,7 +73,7 @@ Unity builds are recommended for improved build performance.
 The `/m` is a recommended build tool optimization.
     {{< /note >}}
 
-1. Once the build completes, the binaries will be available in the project build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. If relative, make sure the path ends with the project directory name.
+1. Once the build completes, the binaries will be available in the project build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. However, if you use a relative path, it must be relative to the _engine_ directory.
 
     ```cmd
     build\bin\profile\Editor.exe --project-path <path to project>
