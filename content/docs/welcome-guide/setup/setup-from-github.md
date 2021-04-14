@@ -60,7 +60,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
 **To fork and clone O3DE on your PC from GitHub**
 
-1. Create a fork of the O3DE GitHub repo from [https://github.com/aws/o3de](https://github.com/aws/o3de). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
+1. Create a fork of the O3DE GitHub repo from [{{< links/o3de-source >}}]({{< links/o3de-source >}}). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
 
     ![Create a fork using the Fork button on the O3DE GitHub repo](/images/welcome-guide/setup-create-fork.png)
 
@@ -99,7 +99,7 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 1. Add a remote to track the upstream repo. This will enable you to pull updates from the O3DE repo directly into your local clone.
 
     ```cmd
-    git remote add upstream https://github.com/aws/o3de.git
+    git remote add upstream {{< links/o3de-source >}}.git
     ```
 
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
@@ -108,8 +108,8 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     > git remote -v
     origin  https://github.com/<account>/o3de.git (fetch)
     origin  https://github.com/<account>/o3de.git (push)
-    upstream        https://github.com/aws/o3de.git (fetch)
-    upstream        https://github.com/aws/o3de.git (push)
+    upstream        {{< links/o3de-source >}}.git (fetch)
+    upstream        {{< links/o3de-source >}}.git (push)
     ```
 
 1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
@@ -144,7 +144,7 @@ During O3DE preview, there are a few additional steps you must complete before g
 
 ### Download 3rd party packages
 
-1. Download the 3rd Party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev8.zip>.
+1. Download the 3rd Party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.
 
 1. Unzip this file into a writable folder. The path up to and including the 3rdParty folder unzipped from this zip file will be referred to as the `<3rdParty Path>` in the remainder of this section.
 
