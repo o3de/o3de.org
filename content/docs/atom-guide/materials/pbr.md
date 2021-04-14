@@ -22,7 +22,7 @@ The following list of properties are used to define PBR materials in Atom. An ov
 | [Roughness](#roughness) | Apparent smoothness or roughness of a surface. |
 | [Specular Reflectance f0](#specular-reflectance-f0) | Apparent reflectance of non-metal surfaces. The constant f0 represents the specular reflectance at normal incidence (Fresnel 0 angle). |
 | Emissive | A mechanism to simulate light emitting from the surface. |
-| Ambient Occlusion | Describes how much ambient light affects a point on a surface using baked AO texture maps. |
+| Occlusion | Describes how much ambient light affects a point on a surface using baked AO texture maps. |
 | Opacity | Transparency levels of a surface. |
 | Normal | A texture mapping technique that simulates bumpiness on a surface. Similar to bump maps. |
 | UVs | Texture coordinates that describe how a texture maps to a surface. |
