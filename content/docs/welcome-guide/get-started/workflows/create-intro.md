@@ -49,7 +49,7 @@ Tools you might use that are associated to specific components include:
 
 \.\.\.and many more\.
 
-Some tools can be opened directly from their associated component\. Others require you to open them from the **Tools** menu in O3DE Editor\. For a tour of O3DE Editor, see [Introduction to the O3DE Editor](wg-editor.md)\. For an overview of the tools provided with O3DE, see the following topic on [Tools available in Open 3D Engine](wg-tools.md)\.
+Some tools can be opened directly from their associated component\. Others require you to open them from the **Tools** menu in O3DE Editor\. For a tour of O3DE Editor, see [Introduction to the O3DE Editor](/docs/welcome-guide/features-intro/)\. For an overview of the tools provided with O3DE, see the following topic on [Tools available in Open 3D Engine](/docs/welcome-guide/quick-tour/)\.
 
 The modular nature of O3DE means there are additional assets, components, and tools that you can add by enabling Gems in Project Configurator\. O3DE comes with a library of Gems\. Gems can include new code, new assets, or both\! You can even write your own\. In fact, this is what a game's C\+\+ programmers will often spend their time doing, to help create the gameplay that makes your game unique\.
 
@@ -102,16 +102,17 @@ As an example, let's take a look at the workflow for setting up an actor in your
 1.  To control your character in your level, you might want to work with a gameplay designer or programmer at this point to add an **Input** component, **PhysX** components, and script components so you can run through and playtest all of your character's animations in your game's specific environment\.
 
 We suggest that you begin your learning path by browsing the following set of O3DE tools and technologies, and then focusing on the ones that apply to your needs:
-+  [O3DE Editor](/docs/userguide/editor/intro)
-+  [Asset Pipeline](/docs/userguide/assets/intro)
-+  [Component Entity System](/docs/userguide/components/intro)
-+  [Component Reference](/docs/userguide/components/components)
-+  [Emotion FX Animation Editor](/docs/userguide/char-intro)
-+  [FBX Settings Tool](/docs/userguide/fbx/import)
-+  [Gem Library](/docs/userguide/gems/ref)
-+  [Cinematics and the Track View Editor](/docs/userguide/cinematics/intro)
-+  [Shaders and Materials](/docs/userguide/materials/intro)
-+  [Terrain and Environment](/docs/userguide/level-intro)
++  [O3DE Editor](/docs/user-guide/editor/)
++  [Asset Pipeline](/docs/user-guide/assets/pipeline/)
++  [Component Entity System](/docs/user-guide/components/)
++  [Component Reference](/docs/user-guide/components/reference/)
++  [Emotion FX Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
++  [FBX Settings Tool](/docs/user-guide/assets/fbx-settings/)
++  [Gem Library](/docs/user-guide/gems/)
++  [Cinematics and the Track View Editor](/docs/user-guide/visualization/cinematics/)
++  [Shaders and Materials](/docs/atom-guide/materials/)
++  [Terrain and Environment](/docs/user-guide/visualization/environments/)
+<!-- tdoyon: Please add in correct link when available. -->
 +  [Vegetation Editor](/docs/userguide/vegetation/intro)
 
 Some specific tutorials you might want to look at include:
@@ -144,18 +145,19 @@ Here's how you might start out:
 To get the most out of O3DE, browse the Components library and the Gems library to see what O3DE has to offer\. Then talk to your programmers to see what additional components need to be authored for your game\.
 
 We suggest that you begin your learning path by browsing the following set of O3DE tools and technologies, and then focusing on the ones that apply to your needs:
-+  [O3DE Editor](/docs/userguide/editor/intro)
-+  [Asset Pipeline](/docs/userguide/assets/intro)
-+  [Component Entity System](/docs/userguide/components/intro)
-+  [Component Reference](/docs/userguide/components/components)
-+  [Gem Library](/docs/userguide/gems/ref)
-+  [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro)
-+  [Lua Editor](/docs/userguide/scripting/lua/intro)
-+  [AI Navigation](/docs/userguide/ai/nav-intro)
++  [O3DE Editor](/docs/user-guide/editor/)
++  [Asset Pipeline](/docs/user-guide/assets/pipeline/)
++  [Component Entity System](/docs/user-guide/components/)
++  [Component Reference](/docs/user-guide/components/reference/)
++  [Gem Library](/docs/user-guide/gems/)
++  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
++  [Lua Editor](/docs/user-guide/scripting/lua/)
++  [AI Navigation](/docs/user-guide/interactivity/navigation-and-pathfinding/)
+<!-- tdoyon: Please add in correct link when available. -->
 +  [Audio Controls Editor](/docs/userguide/audio/intro)
-+  [Emotion FX Animation Editor](/docs/userguide/char-intro)
-+  [Cloud Canvas](/docs/userguide/gems/cloud-canvas/intro)
-+  [UI Editor](/docs/userguide/ui/editor/intro)
++  [Emotion FX Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
++  [Cloud Canvas](/docs/user-guide/cloud/)
++  [UI Editor](/docs/user-guide/interactivity/user-interface/editor/)
 
 Some specific tutorials you might want to look at include:
 +  [Creating a Controllable Entity](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-written-basics-of-motion-overview.html)
@@ -180,15 +182,15 @@ We suggest that your learning path looks like this:
 1.  Learn about authoring your own components and Gems, where you will also learn about working with EBuses, O3DE's event bus and general\-purpose messaging system; AZ Modules, a collection of C\+\+ code built as a static or dynamic library; and more\.
 
 Here is a basic set of O3DE tools and technologies to focus on:
-+  [O3DE Editor](/docs/userguide/editor/intro)
-+  [Programming Concepts](/docs/userguide/lumberyard-programming-concepts)
-+  [Gems](/docs/userguide/gems/builtin/s)
-+  [Component Entity System](/docs/userguide/components/intro)
-+  [Component Reference](/docs/userguide/components/components)
-+  [Programmer's Guide to Entities and Components](/docs/userguide/components/entity-system-pg-intro)
-+  [Emotion FX Animation Editor](/docs/userguide/char-intro)
-+  [Script Canvas](/docs/userguide/scripting/scriptcanvas/intro)
-+  [Lua Editor](/docs/userguide/scripting/lua/intro)
++  [O3DE Editor](/docs/user-guide/editor/)
++  [Programming Concepts](/docs/user-guide/engine/intro/)
++  [Gems](/docs/user-guide/gems/)
++  [Component Entity System](/docs/user-guide/components/)
++  [Component Reference](/docs/user-guide/components/reference/)
++  [Programmer's Guide to Entities and Components](/docs/user-guide/components/development/)
++  [Emotion FX Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
++  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
++  [Lua Editor](/docs/user-guide/scripting/lua/)
 
 Some specific tutorials you might want to look at include:
 +  [Creating a Controllable Entity](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-written-basics-of-motion-overview.html)
