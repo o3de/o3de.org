@@ -63,11 +63,11 @@ weight = 1
 # url ="#"
 # weight = 2
 
-# [[menu.main]]
-# name = "Community"
-# url = "#"
-# weight = 3
-# identifier = "community"
+[[menu.main]]
+name = "Community"
+url = "/community"
+weight = 3
+identifier = "community"
 
 # [[menu.main]]
 # name = "Community subitem placeholder"
