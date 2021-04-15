@@ -38,7 +38,7 @@ Entity Outliner in the O3DE Editor uses multiple filter categories in a filtered
 
    By default, any filters that users select from the filter menu will appear under the search field\. You can turn this off by calling `setEnabledFiltersVisible(false)` on your filtered search widget\.
 
-   You can also add an icon in front of the name of the applied filter\. See how to do this in the [filtered type icon](#filtered-search-filter-type-icons) example\.
+   You can also add an icon in front of the name of the applied filter\. See how to do this in the [filtered type icon](#filtered-search-with-filter-type-iconsa-namefiltered-search-filter-type-iconsa) example\.
 
 1.  **Search results**
 
