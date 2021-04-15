@@ -13,7 +13,9 @@ To get started, launch the Material Editor and create or edit a material.
 You can launch the Material Editor from the Open 3D Engine (O3DE) Editor, or as a standalone application:   
 
 - From the Open 3D Engine (O3DE) Editor, you can launch Material Editor in two ways.
+  
   - Select **Main Menu > Tools > Material Editor**.
+  
   - From a Material component in the Inspector, select **Edit Material in Material Editor...** in the hamburger menu of a material assignment slot.
 
 - As a standalone application, launch the executable `<build>\bin\profile\MaterialEditor.exe`.
@@ -22,14 +24,21 @@ You can launch the Material Editor from the Open 3D Engine (O3DE) Editor, or as 
 You can create a new material or edit an existing material from the File menu in the Material Editor, or from the Context menu in the Asset Browser: 
 
 - From the File menu in the Material Editor:
+  
   - To create a new material, choose **New** and choose a material type for the new material.
+  
   - To open an existing material, choose **Open...** or **Open Recent**, and select an existing material.
 
 - From the Context menu in the Asset Browser:
+  
   1. Select a `.material` file.
+ 
   2. Then, right-click the `.material` file to open the context menu.
+  
   3. Finally, choose one of the following options from the context menu:
+  
      - **Create a Child Material...** to create a new material based on the material highlighted.
+  
      - **Open Parent Material** to open the selected material. 
 
 ![Material Editor](/images/atom-guide/materials/material-editor.jpg)
@@ -130,13 +139,12 @@ Industry-standard controls to orbit, zoom, and pan in the Viewport.
 ## Viewport Toolbar
 The Viewport Toolbar contains the following set of functions to configure the Viewport:
 
-- **Display Ground**: Show or hide the ground plane in the Viewport. 
-  
-- **Display Shadow**: Show or hide the shadow effect in the Viewport. 
-  
-- **View Model Preset**: Select a model preset to preview the material on. A model preset can be configured in the [Model property group](#model) in the Viewport Settings.
-
-- **Lighting Preset**: Select a lighting preset to view your material in a specific image-based lighting (IBL) environment. A lighting preset is a set of image-based lighting (IBL) data that can be configured in the [Lighting property group](#lighting) in the Viewport Settings.
+| Function | Description |
+| - | - |
+| **Display Ground** | Show or hide the ground plane in the Viewport.    |  |  |
+| **Display Shadow** | Show or hide the shadow effect in the Viewport.    |  |  |
+| **View Model Preset** | Select a model preset to preview the material on. A model preset can be configured in the [Model property group](#model) in the Viewport Settings.   |  |  |
+| **Lighting Preset** | Select a lighting preset to view your material in a specific image-based lighting (IBL) environment. A lighting preset is a set of image-based lighting (IBL) data that can be configured in the [Lighting property group](#lighting) in the Viewport Settings. |  |  |
 
 ## Viewport Settings
 The Viewport Settings panel displays options to configure the Viewport properties. These properties control how the Viewport appears and which features are active. You can also create or edit configuration presets for the viewport model and the lighting environments. 
@@ -148,27 +156,32 @@ Viewport Settings contains the following settings groups:
 ### General
 The General property group contains basic properties that are required by the Viewport. 
 
-**Properties**
-- **Enable Grid**: Show or hide the ground plane. (This property is also accessible in the Viewport Toolbar.)
-- **Enable Shadow Catcher**: Show or hide shadow effects. (This property is also accessible in the Viewport Toolbar.)
-- **Enable Alternate Skybox**: Toggle to display the alternate skybox image if one is specified by the **Skybox Image Asset (Alt)** property in the lighting preset. 
-- **Field of View**: Adjust the camera's field of view.
+| Property | Description |
+| - | - |
+| **Enable Grid** | Show or hide the ground plane. (This property is also accessible in the Viewport Toolbar.) |  |  |
+| **Enable Shadow Catcher** | Show or hide shadow effects. (This property is also accessible in the Viewport Toolbar.) |  |  |
+| **Enable Alternate Skybox** | Toggle to display the alternate skybox image if one is specified by the **Skybox Image Asset (Alt)** property in the lighting preset.  |  |  |
+| **Field of View** | Adjust the camera's field of view. |  |  |
 
 ### Model
 The Model property group allows you to manage the list of available model presets, and configure their properties. Model presets are useful for previewing materials on a variety of surfaces. Atom includes a collection of basic models, and you can create additional presets with custom models. Model presets are stored in JSON files (`*.modelpreset.azasset`) and can be configured in the Viewport Settings. 
 
 #### Buttons
 These controls are used to create, edit, save, or reset a specific model preset.  
-- **Add**: Create a new model preset and select a save file location. Model presets can be saved anywhere in your project folder. 
-- **Select**: Open the **Model Preset Browser**, browse, and select from the list of available model presets.
-- **Save**: Save changes made to the selected model preset.
-- **Refresh**: Remove any unsaved changes made to the model preset.
+| Button | Description |
+| - | - |
+| **Add** | Create a new model preset and select a save file location. Model presets can be saved anywhere in your project folder.  |  |  |
+| **Select** | Open the **Model Preset Browser**, browse, and select from the list of available model presets. |  |  |
+| **Save** | Save changes made to the selected model preset. |  |  |
+| **Refresh** | Remove any unsaved changes made to the model preset. |  |  |
 
 #### Properties
 The following are properties you can configure for the selected model preset.  
-- **Display Name**: Specify the name of this preset. The name appears in the Viewport Model drop-down list in the Viewport Toolbar. 
-- **Model Asset**: Assign a model asset for this preset. The model asset must be in FBX format (`.fbx`).
-- **Preview Image Asset**: Assign an image as the preview icon for this preset. The image appears in the Viewport Model drop-down list in the Model Preset Browser.
+| Property | Description |
+| - | - |
+| **Display Name** | Specify the name of this preset. The name appears in the Viewport Model drop-down list in the Viewport Toolbar.  |  |  |
+| **Model Asset** | Assign a model asset for this preset. The model asset must be in FBX format (`.fbx`). |  |  |
+| **Preview Image Asset** | Assign an image as the preview icon for this preset. The image appears in the Viewport Model drop-down list in the Model Preset Browser. |  |  |
 
 #### Model Preset Browser
 The **Model Preset Browser** panel opens when the **Select** button is pressed. The Model Preset Browser panel is a separate window that cannot be docked.
@@ -182,23 +195,27 @@ The Lighting property group allows you to manage the list of available lighting 
 #### Buttons  
 These controls are used to create, edit, save, or reset a specific lighting preset.  
 
-- **Add**: Create a new lighting preset and select a save file location. Lighting presets can be saved anywhere in your project folder. 
-- **Select**: Open the **Lighting Preset Browser**, browse, and select from the list of available lighting presets.
-- **Save**: Save changes made to the selected lighting preset.
-- **Refresh**: Remove any unsaved changes made to the lighting preset.
+| Button | Description |
+| - | - |
+| **Add** | Create a new lighting preset and select a save file location. Lighting presets can be saved anywhere in your project folder.  |  |  |
+| **Select** | Open the **Lighting Preset Browser**, browse, and select from the list of available lighting presets. |  |  |
+| **Save** | Save changes made to the selected lighting preset. |  |  |
+| **Refresh** | Remove any unsaved changes made to the lighting preset. |  |  |
 
 #### Properties  
 The following are properties you can configure for the selected lighting preset.  
 
-- **Display Name**: Specify the name of this preset. The name appears in the Viewport Model drop-down list in the Viewport Toolbar. 
-- **IBL Diffuse Image Asset**: Assign a diffuse lighting cubemap to use for IBL.
-- **IBL Specular Image Asset**: Assign a specular lighting cubemap to use for IBL.
-- **Skybox Image Asset**: Assign a diffuse lighting cubemap to use as the skybox, or background.
-- **Skybox Image Asset (Alt)**: Assign a diffuse lighting cubemap to use an alternative skybox, or background. This allows you to have a different background while using the same lighting settings. Enable this skybox using the **Enable Alternate Skybox** property in the [General](#general) settings.
-- **Skybox Exposure**: Adjust the brightness of the skybox.
-- **Shadow Catcher Opacity**: Adjust the opacity level of the ground plane that catches the model's shadows. 
-- **Exposure**: A group of settings to configure the exposure. <!-- More details coming soon -->
-- **Lights**: Manage a list of lights for the active lighting preset. <!-- More details coming soon -->
+| Property | Description |
+| - | - |
+| **Display Name** | Specify the name of this preset. The name appears in the Viewport Model drop-down list in the Viewport Toolbar.  |  |  |
+| **IBL Diffuse Image Asset** | Assign a diffuse lighting cubemap to use for IBL. |  |  |
+| **IBL Specular Image Asset** | Assign a specular lighting cubemap to use for IBL. |  |  |
+| **Skybox Image Asset** | Assign a diffuse lighting cubemap to use as the skybox, or background. |  |  |
+| **Skybox Image Asset (Alt)** | Assign a diffuse lighting cubemap to use an alternative skybox, or background. This allows you to have a different background while using the same lighting settings. Enable this skybox using the **Enable Alternate Skybox** property in the [General](#general) settings. |  |  |
+| **Skybox Exposure** | Adjust the brightness of the skybox. |  |  |
+| **Shadow Catcher Opacity** | Adjust the opacity level of the ground plane that catches the model's shadows.  |  |  |
+| **Exposure** | A group of settings to configure the exposure. <!-- More details coming soon --> |  |  |
+| **Lights** | Manage a list of lights for the active lighting preset. <!-- More details coming soon --> |  |  |
 
 #### Lighting Preset Browser  
 The **Lighting Preset Browser** panel opens when the **Select** button is pressed. The Lighting Preset Browser panel is a separate window that cannot be docked.
@@ -210,7 +227,7 @@ The collection of lighting presets are stored in the folder `Gems/Atom/Tools/Mat
 {{< /note >}}  
 
 ## Inspector
-In the **Inspector** you can configure the properties for the active material. The **Details** group shows the material's material type and optional parent material properties. All other property groups depend on the material type and are defined in the `.materialtype` file. See the [Material Type Reference](TBD) for all the material types in Atom and the property groups in each. 
+In the **Inspector**, you can configure the properties for the active material. The **Details** group shows the material's material type and optional parent material properties. All other property groups depend on the material type and are defined in the `.materialtype` file. See the [Material Type Reference](TBD) for all the material types in Atom and the property groups in each. 
 
 ## Asset Browser
 The **Asset Browser** allows you to search for assets across O3DE, Gems, and other project folders. In the Material Editor, the Asset Browser is automatically filtered to show image and material assets. You can display more assets by changing the filter. When an asset is selected, a preview of the asset is shown on the side. 
