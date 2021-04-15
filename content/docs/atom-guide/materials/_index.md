@@ -12,4 +12,4 @@ For more technical details regarding Atom's material system, read the Developer 
 | Contents                        | Details |
 |--------------------------------------|---------|
 | [Material Editor](material-editor.md) | An overview of the Material Editor. The Material Editor is used to create and edit materials. |
-| [PBR Materials](pbr.md) | The basic concepts of physically based rendering and how it applies to Atom's PBR shading model. |
+| [PBR Materials](pbr.md) | The basic concepts of physically based rendering (PBR) and how they apply to Atom's PBR shading model. |
