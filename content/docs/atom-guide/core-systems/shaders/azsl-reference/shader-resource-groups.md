@@ -9,7 +9,7 @@ description: Learn about how shader resource groups (SRGs) are used in the Atom 
 In AZSL, uniform constants and shader resources are declared through **Shader Resource Groups (SRGs)**. Data views and sampler states are declared and bundled in an SRG. It's common practice to define SRGs based on the frequency of the binding data. Common cases include per-object, per-scene, per-view, and per-material. For example, the view projection matrix associated with the camera should be declared as part of a per-view SRG because it only changes when the camera/view is updated; a position vector should be in the per-entity group because every time the entity's position changes in the scene, the per-entity group gets updated.
 
 ### SRG Definition Requirements
-Each SRG definition will include a name, an SRG semantic, and a list of constants and shader resources. 
+Each SRG definition will include a name, an SRG semantic, and a list of constants and shader resources. You can define SRGs in `.azsl` files. Atom supports up to eight SRGs. 
 
 {{< note >}}
 SRGs may also be defined as multiple "partial" SRGs that get combined during compilation (see link to partial SRGs page).
@@ -84,7 +84,7 @@ float4 MainPS() : SV_TARGET
 ```
 
 ### SRGs and SRG Semantics in Atom
-When defining an SRG, it must indicate a semantic. In Atom, common SRG semantics are defined in the file **SrgSemantics.azsli**. To access the definitions of all available SRG semantics in your shader source file, add the following include directive at the top of your file. 
+When defining an SRG, it must indicate an SRG semantic. In Atom, common SRG semantics are defined in the file **SrgSemantics.azsli**. To access the definitions of all available SRG semantics in your shader source file, add the following include directive at the top of your file. 
 
 ```cpp
 #include <Atom/Features/SrgSemantics.azsli>
@@ -101,16 +101,19 @@ The common SRG semantics are `SRG_PerDraw`, `SRG_PerObject`, `SRG_PerMaterial`, 
 
 Atom has the following SRG semantics built in.    
 - **SRG_PerDraw**
+  - FrequencyID = 0
   - This SRG contains data which is likely to change with every draw call, regardless of other SRGs. 
   - This contains the fallback key for Shader Variants. 
-  - This SRG is unique for every draw item and not shared by any. 
+  - This SRG is unique for every draw item and not shared by any.
   
 - **SRG_PerObject**
+  - FrequencyID = 1
   - This SRG contains data specific for the object or geometry being rendered. 
   - It should work with multiple materials and should not contain any data specific for materials. 
   - This SRG is shared by all draw items generated from a single draw packet. 
     
 - **SRG_PerMaterial**  
+  - FrequencyID = 2
   - This SRG contains surface data specific for the material, but which can be shared between different geometries. 
   - It should not contain any data which affects the object or its geometry.
   - This SRG is shared by all draw items generated from a single draw packet. 
@@ -118,32 +121,39 @@ Atom has the following SRG semantics built in.
   <!-- [todo] [Add a link to a page where we talk about the MaterialSRG, we might not have this yet] -->
 
 - **SRG_PerSubPass**
+  - FrequencyID = 3
 <!-- [NOTE TO DEVS: Elaborate] -->
 
 - **SRG_PerPass**  
+  - FrequencyID = 4
   <!-- [NOTE TO DEVS: Elaborate] -->
   
 - **SRG_PerPass_WithFallback**  
+  - FrequencyID = 5
   <!-- [NOTE TO DEVS: Elaborate] -->
 
 - **SRG_PerView**
+  - FrequencyID = 6
   - This SRG is compiled by the Asset Processor. In each game project, reads the file `<Gproject>/ShaderLib/viewsrg.srgi` and stitches together the SRG definitions from multiple files. 
   - It should contain information related to the view (camera) changes, such as view, projection, inverse viewProjection matrices, and culling frustum.
   - It should contain data which is culled per view, such as lists of active lights and occlusion bodies. 
   - Any `*.azsl` or `*.azsli` file that needs the symbols defined in `scenesrg.srgi` must have the include directive: `#include <viewsrg.srgi>`
 
 - **SRG_PerScene**
+  - FrequencyID = 7
   - This SRG is compiled by the Asset Processor. In each game project, Asset Processor reads the file `<project>/ShaderLib/scenes.srgi` and stitches together the SRG definitions from multiple files. 
   - It should contain data shared for the whole scene, such as global time or the sky constants. These data belong to the PerScene SRG because they are likely to change only with the scene. 
   - Any `*.azsl` or *`.azsli`* file that needs the symbols defined in `scenesrg.srgi` must have the include directive: `#include <scenesrg.srgi>`
 
 
 ### SRG Semantics (ShaderResourceGroupSemantic)
-An SRG Semantic provides meta-data for the SRG that is reflected to the Atom Asset Builder. SRG semantics contain the attributes, **FrequencyId** and **ShaderVariantFallback**. 
+An SRG Semantic provides meta-data for the SRG that is reflected to the Asset Builder. SRG semantics contain the attributes, **FrequencyId** and **ShaderVariantFallback**.
+
 #### FrequencyId
 The `FrequencyId` attribute contains a value that indicates a specific frequency in which that SRG changes. A lower value indicates higher priority, while a higher value indicates lower priority. Logically, each SRG is a shader resource data mapped per frequency. For example, once every time the scene changes (PerScene), the view changes (PerView), the material changes (PerMaterial), and the geometry changes (PerObject). 
+
 #### **ShaderVariantFallback**
-When using option variables, you must designate exactly one SRG as a fallback for the shader variant key. The size must be large enough to fit all options serialized into a single key. The value is in bits and is 128-bit aligned, so it's recommended to choose values such as 128, 256, 384, and so on. The size limit prevents an unwanted explosion of options. Setting it to 128 should be sufficient unless a higher value is needed. 
+When using shader options, you must designate exactly one SRG as a fallback for the shader variant key. The size must be large enough to fit all options serialized into a single key. The value is in bits and is 128-bit aligned, so it's recommended to choose values such as 128, 256, 384, and so on. The size limit prevents an unwanted explosion of options. Setting it to 128 should be sufficient unless a higher value is needed. (At this time there is no reason to set this above 128, as the runtime is hard-coded for a 128 bit limit. See ShaderVariantKeyBitCount in ShaderVariantKey.h).
 
 ### SRG Functions
 SRGs contain function declarations.
