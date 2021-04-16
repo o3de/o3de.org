@@ -5,9 +5,12 @@ toc:
 
 {{< preview-new >}}
 
-Open 3D Engine's (O3DE) graphics features are integrated using the Atom renderer, a high performance, physically based rendering (PBR) engine. Atom provides advanced graphics techniques, such as ray tracing to produce authentic environments, PBR to achieve real-world lighting, and modern post-processing effects to enhance the game experience. Atom currently supports Forward+ rendering, and is designed to support deferred rendering in the future. Atom supports multiple platforms: Windows, Linux, Mac, Android, and iOS. Atom also provides a unified interface across multiple graphics APIs: DirectX 12, Vulkan, and Metal. 
+Open 3D Engine's (O3DE) graphics features are integrated using the Atom renderer, a high performance, physically based rendering (PBR) engine. Atom provides advanced graphics techniques; Ray tracing to produce authentic environments; PBR to achieve real-world lighting; Modern post-processing effects to enhance the game experience. Atom currently supports forward+ rendering, and is designed to support deferred rendering in the future.
+
+Atom has a unified interface which supports multiple platforms and graphics APIs: DirectX 12 or Vulkan on Windows, Metal on macOS and iOS, and Vulkan on Linux.
 
 The following sections go into detail the graphics features in O3DE. 
+
 | Feature | Description |
 | - | - |
 | [Materials](/docs/atom-guide/materials/_index.md) | Create PBR materials with global illumination support using Atom's Material Editor. |
