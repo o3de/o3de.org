@@ -28,7 +28,7 @@ O3DE uses Lua version {{< versions/lua >}}.
 For learning the Lua language itself, the [lua.org](http://www.lua.org) website is a good place to start.
 + [Official Lua Documentation](http://www.lua.org/docs.html) - Provides a central location for information about Lua, including a [Getting started](http://www.lua.org/start.html) page.
 + [Programming in Lua](http://www.lua.org/pil/) - This text is a resource for getting started with Lua programming.
-+ [Lua 5.3 Reference Manual](http://www.lua.org/manual/5.3/) - Provides a reference of all the functions that are available by default in Lua.
++ [Lua {{< versions/lua >}} Reference Manual](http://www.lua.org/manual/{{< versions/lua >}}/) - Provides a reference of all the functions that are available by default in Lua.
 
 ## Learning Lua in O3DE {#lua-scripting-resources-ly}
 
