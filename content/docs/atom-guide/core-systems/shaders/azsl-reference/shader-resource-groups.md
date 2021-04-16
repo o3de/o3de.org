@@ -101,19 +101,19 @@ The common SRG semantics are `SRG_PerDraw`, `SRG_PerObject`, `SRG_PerMaterial`, 
 
 Atom has the following SRG semantics built in.    
 - **SRG_PerDraw**
-  - FrequencyID = 0
-  - This SRG contains data which is likely to change with every draw call, regardless of other SRGs. 
+  - **FrequencyID** = 0
+  - This SRG contains data that is likely to change with every draw call, regardless of other SRGs. 
   - This contains the fallback key for Shader Variants. 
   - This SRG is unique for every draw item and not shared by any.
   
 - **SRG_PerObject**
-  - FrequencyID = 1
+  - **FrequencyID** = 1
   - This SRG contains data specific for the object or geometry being rendered. 
   - It should work with multiple materials and should not contain any data specific for materials. 
   - This SRG is shared by all draw items generated from a single draw packet. 
     
 - **SRG_PerMaterial**  
-  - FrequencyID = 2
+  - **FrequencyID** = 2
   - This SRG contains surface data specific for the material, but which can be shared between different geometries. 
   - It should not contain any data which affects the object or its geometry.
   - This SRG is shared by all draw items generated from a single draw packet. 
@@ -121,26 +121,26 @@ Atom has the following SRG semantics built in.
   <!-- [todo] [Add a link to a page where we talk about the MaterialSRG, we might not have this yet] -->
 
 - **SRG_PerSubPass**
-  - FrequencyID = 3
+  - **FrequencyID** = 3
 <!-- [NOTE TO DEVS: Elaborate] -->
 
 - **SRG_PerPass**  
-  - FrequencyID = 4
+  - **FrequencyID** = 4
   <!-- [NOTE TO DEVS: Elaborate] -->
   
 - **SRG_PerPass_WithFallback**  
-  - FrequencyID = 5
+  - **FrequencyID** = 5
   <!-- [NOTE TO DEVS: Elaborate] -->
 
 - **SRG_PerView**
-  - FrequencyID = 6
-  - This SRG is compiled by the Asset Processor. In each game project, reads the file `<Gproject>/ShaderLib/viewsrg.srgi` and stitches together the SRG definitions from multiple files. 
+  - **FrequencyID** = 6
+  - This SRG is compiled by the Asset Processor. In each game project, the Asset Processor reads the file `<Gproject>/ShaderLib/viewsrg.srgi` and stitches together the SRG definitions from multiple files. 
   - It should contain information related to the view (camera) changes, such as view, projection, inverse viewProjection matrices, and culling frustum.
   - It should contain data which is culled per view, such as lists of active lights and occlusion bodies. 
   - Any `*.azsl` or `*.azsli` file that needs the symbols defined in `scenesrg.srgi` must have the include directive: `#include <viewsrg.srgi>`
 
 - **SRG_PerScene**
-  - FrequencyID = 7
+  - **FrequencyID** = 7
   - This SRG is compiled by the Asset Processor. In each game project, Asset Processor reads the file `<project>/ShaderLib/scenes.srgi` and stitches together the SRG definitions from multiple files. 
   - It should contain data shared for the whole scene, such as global time or the sky constants. These data belong to the PerScene SRG because they are likely to change only with the scene. 
   - Any `*.azsl` or *`.azsli`* file that needs the symbols defined in `scenesrg.srgi` must have the include directive: `#include <scenesrg.srgi>`
