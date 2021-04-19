@@ -127,7 +127,7 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
 ## Additional setup for O3DE preview
 
-During O3DE preview, there are a few additional steps you must complete before getting started:
+At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
 * Set the package server URL environment variable.
 * Download third-party packages.

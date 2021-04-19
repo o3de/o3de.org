@@ -14,7 +14,7 @@ This tutorial provides an introduction to project configuration in Open 3D Engin
 * Creating a Visual Studio project in the O3DE project directory.
 * Building the O3DE **Editor** and **AssetProcessor** in the O3DE project directory.
 
-At the end of the tutorial, you will have a new O3DE project, based on the default project template.
+At the end of the tutorial you'll have a new O3DE project based on the default project template.
 
 ## Prerequisites
 
@@ -56,11 +56,13 @@ External projects are considered experimental. They might be unstable in some sc
 
     ```cmd
     cd <path to project>
-    cmake -S <path to project> -B <path to project>/build -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=<path to 3rd party packages> -DLY_UNITY_BUILD=ON
+    cmake -B build -G "Visual Studio 16 2019" ^
+        -DLY_3RDPARTY_PATH=<path to 3rd party packages> ^
+        -DLY_UNITY_BUILD=ON
     ```
 
     {{< note >}}
-Unity builds are recommended for improved build performance.
+Unity builds are recommended for improved build performance. If you encounter a build error, disable unity builds to help with debugging the problem.
     {{< /note >}}
 
 1. Use CMake to build the O3DE **Editor** and **AssetProcessor**. Building the `profile` configuration is shown here. When specifying the Editor as a build target, the AssetProcessor will be built too, since it is a dependency of the Editor.
@@ -70,7 +72,7 @@ Unity builds are recommended for improved build performance.
     ```
 
     {{< note >}}
-The `/m` is a recommended build tool optimization.
+The `/m` is a recommended build tool optimization, which tells MSVC to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
 1. When the build completes, the binaries are available in the project build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
