@@ -36,7 +36,7 @@ The following list of properties are used to define PBR materials in Atom. An ov
 
 The **base color** defines the diffuse albedo for non-metals, and the specular color for metals. 
 
-When configuring the **Base Color** property group in a PBR material type, you can set a linear sRGB color in the `Color` property. This color can be combined with a texture by assigning an image to the `Texture Map` property. The `Texture Blend Mode` dictates how the `Color` and `Texture Map` are combined. And the `Factor` value can be used to adjust the strength of the blend. Colors are stored as linear sRGB on disk and later converted to ACEScg before passing to the shaders and the GPU (for more information, see [Color Space](color-space.md)). 
+When configuring the **Base Color** property group in a PBR material type, you can set a linear sRGB color in the `Color` property. This color can be combined with a texture by assigning an image to the `Texture Map` property. The `Texture Blend Mode` dictates how the `Color` and `Texture Map` are combined. And the `Factor` value can be used to adjust the strength of the blend. Colors are stored as linear sRGB on disk and later converted to ACEScg before passing to the shaders and the GPU (for more information, see [Color Management](docs/atom-guide/color-management/index.md)). 
 
 ### Metallic 
 
@@ -65,7 +65,7 @@ You can take multi-scattering into account in your materials by toggling `Multis
 <!-- 
 ### Emissive
 
-...Ambient Occlusion, and more will be filled in later. [todo]
+... Occlusion, and more will be filled in later. [todo]
 
 ### Subsurface Scattering
 
@@ -94,14 +94,14 @@ The following table lists which properties are included in which PBR material ty
 | Roughness  | X | X | X |  
 | Specular Reflectivity F0  | X | X | X |  
 | Emissive  | X | X | X |  
-| Ambient Occlusion  | X | X | X |  
+| Occlusion | X | X | X |  
 | Opacity  | X | X |  |  
 | Normal  | X | X | X |  
 | UVs  | X | X | X |  
 | Clear Coat  | X | X | X |  
 | Subsurface Scattering  | X | X |  |  
 | Irradiance | X | X | X |  
-| Parallax |  | X | X |  
+| Parallax | X | X |  |  
 | Anistropic Material Response |  | X |  |
 | Detail Layer | X | X |  |
 | Detail Layer UV | X | X |  |
