@@ -8,14 +8,14 @@ description: Learn about how constants are declared and used in AZSL shader reso
 
 In addition to textures, buffers, and samplers, Shader Resource Groups (SRGs) may include a list of constants. In AZSL, these fields are easily accessed, like `MaterialSrg::m_baseColor`. In C++, they are easily accessed through the `ShaderResourceGroup` class API. Behind the scenes, the system packs all this data into a single implicit constant buffer, manages the layout of that buffer, and protects client code from invalid access. However, this complexity is all conveniently hidden. The programmer using this API only needs to know the name and data type for the constants.
 
-Generally, every constant declaration that is valid in HLSL is also valid in an AZSL Shader Resource Group (SRG).
+Generally, every constant declaration that is valid in HLSL is also valid in an AZSL Shader Resource Group (SRG). This includes variables of a *primitive* type, such as `float4` or `uint`, or a *user-defined* type, such as a `struct`. 
 
 This includes variables of a *primitive* type, such as `float4` or `uint`, or a *user-defined* type, such as a `struct`. 
 
 Note that constant variables can be defined inside a ShaderResourceGroup as `static const` data. They are accessed in AZSL just like SRG normal constants, but are part of the implicit constant buffer and are not exposed in C++. 
 
 ## Top-Level Variable Declarations
-Top-Level variable declarations, which are declared outside of all functions, must contain `static` variables. This includes the `option` variable, which acts as `static const` (see [Shader Variants](shader-variants.md)). A `static`, non-`const` variable is also allowed; it declares a thread-local variable in global memory.
+Top-level variable declarations, which are declared outside of all functions, must contain `static` variables. This includes the `option` variable, which acts as `static const` (see [Shader Variants](shader-variants.md)). A `static`, non-`const` variable is also allowed; it declares a thread-local variable in global memory.
 
 ### Declaring SRG Constants Example
 ```glsl
