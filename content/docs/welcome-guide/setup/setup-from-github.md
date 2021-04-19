@@ -132,6 +132,7 @@ During O3DE preview, there are a few additional steps you must complete before g
 * Set the package server URL environment variable.
 * Download 3rd party packages.
 * Install additional SDK's.
+* Get the Python runtime.
 * Register the engine.
 
 ### Set environment variables
@@ -155,6 +156,16 @@ During O3DE preview, there are a few additional steps you must complete before g
 1. Install the FBX SDK as instructed in `<3rdParty Path>/FbxSdk/2016.1.2-az.1/README.md`.
 
 1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. Once installed, copy the `SDK` directory from the install location into the `<3rdParty Path>/Wwise/2019.2.8.7432` directory that you will create.
+
+### Get the Python runtime
+
+The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using a script the provided in the `python` directory.
+
+1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown.
+
+    ```cmd
+    python\get_python
+    ```
 
 ### Register O3DE engine
 
