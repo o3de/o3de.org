@@ -7,7 +7,7 @@ weight: 100
 
 {{< preview-new >}}
 
-Once you have Open 3D Engine (O3DE) installed in your development environment, you are ready to create an O3DE project. Projects define and configure the set of code and assets that make up your game or other application. Projects need a project directory, which can be located anywhere that is convenient to you - within the O3DE directory itself, somewhere else on your computer, or even on a network drive.
+When you have Open 3D Engine (O3DE) installed in your development environment, you are ready to create an O3DE project. Projects define and configure the set of code and assets that make up your game or other application. Projects need a project directory, which can be located anywhere that is convenient to you - within the O3DE directory itself, somewhere else on your computer, or even on a network drive.
 
 ## Creating a Project
 

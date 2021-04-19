@@ -52,7 +52,7 @@ External projects are considered experimental. They might be unstable in some sc
     scripts\o3de register -p <full path to project>
     ```
 
-1. Use CMake to create the Visual Studio project from within the new project directory. Supply the project path, the build path, the Visual Studio generator, the path to the 3rd party packages, and any other project options. Paths can be absolute or relative.
+1. Use CMake to create the Visual Studio project from within the new project directory. Supply the project path, the build path, the Visual Studio generator, the path to the third-party packages, and any other project options. Paths can be absolute or relative.
 
     ```cmd
     cd <path to project>
