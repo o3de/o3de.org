@@ -7,7 +7,7 @@ weight: 600
 
 This section is a high-level guide for working with materials in Atom. 
 
-For more technical details regarding Atom's material system, read the Developer Guide on [Material System](/docs/atom-guide/core-systems/materials/_index.md).
+For more technical details, see [Atom Developer Guide - Material System](/docs/atom-guide/core-systems/materials/_index.md).
 
 | Contents                        | Details |
 |--------------------------------------|---------|
