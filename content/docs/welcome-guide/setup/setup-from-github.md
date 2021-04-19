@@ -20,7 +20,7 @@ The instructions here will guide you through the following steps:
 The instructions that follow assume you have the following:
 
 * [Git client](https://git-scm.com/downloads) 1.8.2 or later installed.
-* Met all requirements listed in [System Requirements](./requirements.md).
+* Met all hardware and software requirements listed in [System Requirements](./requirements.md).
 
 ## Configure credentials for Git LFS
 
@@ -40,7 +40,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
     git config credential.helper
     ```
 
-    If you don't see one listed, you can install [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core#readme) as your credential manager.
+    Common examples of results to this `git config` command include `manager-core`, `wincred`, `osxkeychain`, and `cache`. However, if you don't see _anything_ in response to this command, you can install [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core#readme) as your credential manager.
 
 1. Create a GitHub **personal access token** with `repo` and `read:org` scope.
 
@@ -52,7 +52,11 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
     1. Under **Select scopes**, select the following:
         * `repo` (all)
         * `read:org` (under admin:org)
-    1. Choose **Generate token**.
+    1. Choose **Generate token**. Keep the token handy (but private!) for use in later steps.
+
+    {{< important >}}
+This token can be used in place of your GitHub password, so protect it just as you would your GitHub password!
+    {{< /important >}}
 
 ## Fork and clone
 

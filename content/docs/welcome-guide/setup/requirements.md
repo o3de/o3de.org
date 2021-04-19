@@ -14,7 +14,7 @@ Open 3D Engine (O3DE) has a minimum set of hardware and software requirements fo
 
 Minimum hardware requirements for development include the following:
 
-+ Quad-core Intel or AMD processor, 2.5 GHz or fastder
++ Quad-core Intel or AMD processor, 2.5 GHz or faster
 + 8 GB RAM
 + DirectX 12 or Vulkan-compatible video card
   + 4 GB VRAM recommended
