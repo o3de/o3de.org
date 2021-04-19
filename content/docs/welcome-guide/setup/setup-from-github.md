@@ -145,7 +145,7 @@ During O3DE preview, there are a few additional steps you must complete before g
 
 ### Download third-party packages
 
-1. Download the 3rd Party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.
+1. Download the third-party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.
 
 1. Unzip this file into a writable folder. The path, up to and including the 3rdParty folder that was unzipped from this file, will be referred to as the `<3rdParty Path>` in the remainder of this section.
 

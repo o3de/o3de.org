@@ -73,7 +73,7 @@ Unity builds are recommended for improved build performance.
 The `/m` is a recommended build tool optimization.
     {{< /note >}}
 
-1. Once the build completes, the binaries will be available in the project build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. However, if you use a relative path, it must be relative to the _engine_ directory.
+1. When the build completes, the binaries are available in the project build path. Run the Editor from the command line to verify a successful build. Be sure to supply a project path. The path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
 
     ```cmd
     build\bin\profile\Editor.exe --project-path <path to project>
