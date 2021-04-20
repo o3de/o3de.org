@@ -1,6 +1,6 @@
 ---
 linkTitle: Style Guide
-title: ' O3DE Documentation Contribution: Style Guide '
+title: O3DE Documentation Contribution Style Guide
 description: Style guide for contributors to the Open 3D Engine (O3DE) documentation project.
 weight: 1000
 toc: true
@@ -96,7 +96,7 @@ The O3DE documentation project serves a global audience. To support English as a
 
     "**Asset Processor** checks for new files, detects changed files, and uses asset manifest files to process game-ready assets."
 
-* Avoid Latin phrases such as *etc.* and *vs.*
+* Avoid Latin phrases such as *etc.*, *vs.*, *i.e.*, and *e.g.*.
 
 ## Documentation format standards
 
@@ -116,7 +116,7 @@ toc: true
 ---
 ```
 
-Front Matter is placed at the topic of the Markdown source file and enclosed in three dashes `---`. Each O3DE topic should minimally contain `linkTitle`, `title`, and `description` in that order, descending.
+Front Matter is placed at the topic of the Markdown source file and enclosed in three dashes `---`. Each O3DE topic should at least have `linkTitle`, `title`, and `description` in that order.
 
 Variable | Usage
 :--| :-----
@@ -284,7 +284,7 @@ Do | Don't
 ... to create *image based lighting (IBL)*. | ... to create **image based lighting (IBL)**.
 A *prefab* is a collection of entities ... | A "prefab" is a collection of entities ...
 
-### Quotes and punctuation placement.
+### Quotes and punctuation placement
 
 When the quote is contained within a sentence, place the punctuation outside the quote.
 
@@ -293,9 +293,9 @@ Do | Don't
 ... assets that are "game-ready". | ... assets that are "game-ready."
 ... process called "rigging". | ... process called "rigging."
 
-What the quote is a complete sentence, place the punctuation inside the quote.
+When the quote is a complete sentence, place the punctuation inside the quote.
 
-"Focus is a matter of deciding what things you're not going to do." - John Carmack
+> "Focus is a matter of deciding what things you're not going to do." - John Carmack
 
 ### Code style for filenames, directories, and paths
 
@@ -578,7 +578,7 @@ Image output:
 ### Image file location
 Images are placed subdirectories of the `/static/` directory of the O3DE documentation repository.
 
-Guide-specific images, such as interface screenshots and diagrams, are located in subdirectories of `/static/images/`. The directory structure of `/static/images/` is a mirror of the directory structure of `/docs/`. Shared images such as logos, are placed in subdirectories of `/static/img/`. When submitting images as part of a PR, ensure the images are placed in the appropriate subdirectories.
+Guide-specific images, such as interface screenshots and diagrams, are located in subdirectories of `/static/images/`. The directory structure of `/static/images/` is a mirror of the directory structure of `/content/docs/`. Shared images like logos are placed in subdirectories of `/static/img/`. When submitting images as part of a PR, ensure the images are placed in the appropriate subdirectories.
 
 ### General image guidelines
 
@@ -586,7 +586,16 @@ In order to standardize presentation, and to keep the O3DE documentation reposit
   
 * Text in images should be U.S. English.
 
-* Do not include personal identification information (PII) in your screenshots.
+* Do not include personal identification information (PII) in your screenshots. PII includes, but it not limited to, names, geographic information, project names, IP addresses, DNS names, and directory paths. We recommend you crop out areas of images that might contain PII and that you create projects specifically for documentation contributions that do not expose PII. Using common image filters to blur or disguise PII is not recommended as they can sometimes be reversed. To remove PII from an image:
+
+1. In any image editor, draw a rectangle selection box around the PII.
+1. Use the cut tool or **CTRL+X** to cut the information from the image completely.
+1. Fill the empty selection area with a solid color such as black or white.
+1. Save the edited image and include it with your PR.
+
+{{< important >}}
+Be sure to thoroughly examine all images for PII before adding them to a pull request!
+{{< /important >}}
 
 ### Screenshots
 
