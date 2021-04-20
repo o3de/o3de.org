@@ -67,7 +67,7 @@ The following file types are used for the **Animation Editor**\. For more inform
 
 **Audio Asset File Types**
 
-The following file types are used for the audio system\. For more information, see [Adding Audio and Sound Effects](/docs/user-guide/interactivity/audio/intro.md)\.
+The following file types are used for the audio system\. For more information, see [Adding Audio and Sound Effects](/docs/user-guide/interactivity/audio/)\.
 
 
 ****
