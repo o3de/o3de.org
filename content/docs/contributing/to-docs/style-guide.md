@@ -588,14 +588,17 @@ In order to standardize presentation, and to keep the O3DE documentation reposit
 
 * Do not include personal identification information (PII) in your screenshots. PII includes, but it not limited to, names, geographic information, project names, IP addresses, DNS names, and directory paths. We recommend you crop out areas of images that might contain PII and that you create projects specifically for documentation contributions that do not expose PII. Using common image filters to blur or disguise PII is not recommended as they can sometimes be reversed. To remove PII from an image:
 
-1. In any image editor, draw a rectangle selection box around the PII.
-1. Use the cut tool or **CTRL+X** to cut the information from the image completely.
-1. Fill the empty selection area with a solid color such as black or white.
-1. Save the edited image and include it with your PR.
+  1. In any image editor, draw a rectangle selection box around the PII.
 
-{{< important >}}
-Be sure to thoroughly examine all images for PII before adding them to a pull request!
-{{< /important >}}
+  1. Use the cut tool or **CTRL+X** to cut the information from the image completely.
+
+  1. Fill the empty selection area with a solid color such as black or white.
+
+  1. Save the edited image and include it with your PR.
+
+    {{< important >}}
+    Be sure to thoroughly examine all images for PII before adding them to a pull request!
+    {{< /important >}}
 
 ### Screenshots
 
