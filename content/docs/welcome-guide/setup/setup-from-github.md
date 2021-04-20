@@ -20,7 +20,7 @@ The instructions here will guide you through the following steps:
 The instructions that follow assume you have the following:
 
 * [Git client](https://git-scm.com/downloads) 1.8.2 or later installed.
-* Met all requirements listed in [O3DE System Requirements](./requirements.md).
+* Met all hardware and software requirements listed in [System Requirements](./requirements.md).
 
 ## Configure credentials for Git LFS
 
@@ -40,7 +40,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
     git config credential.helper
     ```
 
-    If you don't see one listed, you can install [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core#readme) as your credential manager.
+    Common examples of results to this `git config` command include `manager-core`, `wincred`, `osxkeychain`, and `cache`. However, if you don't see _anything_ in response to this command, you can install [Git Credential Manager Core](https://github.com/microsoft/Git-Credential-Manager-Core#readme) as your credential manager.
 
 1. Create a GitHub **personal access token** with `repo` and `read:org` scope.
 
@@ -52,7 +52,11 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
     1. Under **Select scopes**, select the following:
         * `repo` (all)
         * `read:org` (under admin:org)
-    1. Choose **Generate token**.
+    1. Choose **Generate token**. Keep the token handy (but private!) for use in later steps.
+
+    {{< important >}}
+This token can be used in place of your GitHub password, so protect it just as you would your GitHub password!
+    {{< /important >}}
 
 ## Fork and clone
 
@@ -60,7 +64,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
 **To fork and clone O3DE on your PC from GitHub**
 
-1. Create a fork of the O3DE GitHub repo from [https://github.com/aws/o3de](https://github.com/aws/o3de). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
+1. Create a fork of the O3DE GitHub repo from [{{< links/o3de-source >}}]({{< links/o3de-source >}}). Alternatively, if you are working as a member of a team that has already created a fork, you can skip this step and use your team's existing fork.
 
     ![Create a fork using the Fork button on the O3DE GitHub repo](/images/welcome-guide/setup-create-fork.png)
 
@@ -99,7 +103,7 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 1. Add a remote to track the upstream repo. This will enable you to pull updates from the O3DE repo directly into your local clone.
 
     ```cmd
-    git remote add upstream https://github.com/aws/o3de.git
+    git remote add upstream {{< links/o3de-source >}}.git
     ```
 
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
@@ -108,8 +112,8 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     > git remote -v
     origin  https://github.com/<account>/o3de.git (fetch)
     origin  https://github.com/<account>/o3de.git (push)
-    upstream        https://github.com/aws/o3de.git (fetch)
-    upstream        https://github.com/aws/o3de.git (push)
+    upstream        {{< links/o3de-source >}}.git (fetch)
+    upstream        {{< links/o3de-source >}}.git (push)
     ```
 
 1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
@@ -125,26 +129,59 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     git push origin
     ```
 
-## O3DE preview setup
+## Additional setup for O3DE preview
 
-During O3DE preview, there are a few additional steps you must complete before getting started:
+At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
-* Download 3rd party packages.
-* Install additional SDK's.
+* Set the package server URL environment variable.
+* Download third-party packages.
+* Install additional SDKs.
+* Get the Python runtime.
+* Register the engine.
 
-**3rd party packages**
+### Set environment variables
 
-1. Download the 3rd Party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev8.zip>.
+1. Set an environment variable for the package server.
 
-1. Unzip this file into a writable folder. The path up to and including the 3rdParty folder unzipped from this zip file will be referred to as the `<3rdParty Path>` in the remainder of this section.
+    ```cmd
+    LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
+    ```
 
-    By default, this location will also act as a cache location for the 3rd party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
+### Download third-party packages
 
-**Additional SDK's**
+1. Download the third-party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.
 
-1. Install the FBX SDK as instructed in `<3rdParty Path>\FbxSdk\2016.1.2-az.1\README.md`.
+1. Unzip this file into a writable folder. The path, up to and including the 3rdParty folder that was unzipped from this file, will be referred to as the `<3rdParty Path>` in the remainder of this section.
 
-1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. Once installed, copy the SDK directory from the install location into the `<3rdParty Path>\Wwise\2019.2.8.7432` directory that you will create.
+    By default, this location will also act as a cache location for the third-party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
+
+### Install Additional SDKs
+
+1. Install the FBX SDK as instructed in `<3rdParty Path>/FbxSdk/2016.1.2-az.1/README.md`.
+
+1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. When the deployment platform is installed, copy the `SDK` directory from the install location into the `<3rdParty Path>/Wwise/2019.2.8.7432` directory that you will create.
+
+### Get the Python runtime
+
+The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory.
+
+1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown.
+
+    ```cmd
+    python\get_python
+    ```
+
+### Register O3DE engine
+
+Each time you setup a new O3DE engine directory, you must register it. This creates (or updates) the O3DE manifest in your user directory on your computer.
+
+1. Open a command prompt to the directory where you set up O3DE and use the `o3de register` command as shown.
+
+    ```cmd
+    scripts\o3de register --this-engine
+    ```
+
+    The manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, gems, and templates are recorded in this file.
 
 You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
 
