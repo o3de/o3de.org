@@ -6,7 +6,7 @@ title: Camera Framework Gem
 
 {{< preview-migrated >}}
 
-The Camera and Camera Framework Gems are a base upon which you can build more complex camera systems\. This gem contains the [Camera](/docs/user-guide/components/reference/camera/) and the [Camera Rig](https://o3deorg.netlify.app/docs/user-guide/components/reference/camera-rig/), which work together to define a basic camera and its control rig\. You can customize the camera rig component through three different behaviors:
+The Camera and Camera Framework Gems are a base upon which you can build more complex camera systems\. This gem contains the [Camera](/docs/user-guide/components/reference/camera/) and the [Camera Rig](/docs/user-guide/components/reference/camera-rig/), which work together to define a basic camera and its control rig\. You can customize the camera rig component through three different behaviors:
 + Target acquiring behavior
 + Target transform modifying behaviors
 + Final camera transform modifying behaviors
