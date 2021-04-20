@@ -155,7 +155,7 @@ At this time, O3DE is available for preview. During O3DE preview, there are a fe
 
     By default, this location will also act as a cache location for the third-party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
 
-### Install Additional SDK's
+### Install Additional SDKs
 
 1. Install the FBX SDK as instructed in `<3rdParty Path>/FbxSdk/2016.1.2-az.1/README.md`.
 
