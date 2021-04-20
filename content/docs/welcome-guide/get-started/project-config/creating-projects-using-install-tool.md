@@ -1,9 +1,10 @@
 ---
-title: "Creating projects using the install tool"
-date: 2021-03-02T00:23:50-05:00
+linktitle: Creating Projects Using Installer
+title: Creating Projects Using the Open 3D Engine (O3DE) Installer
+description: Learn how to create new projects from a project template using the Open 3D Engine (O3DE) installer tool.
 weight: 200
 ---
 
-{{< preview-migrated >}}
+{{< placeholder >}}
 
-Coming soon.
+For now, follow the instructions on using the CLI to create projects, which you can find in [Creating Projects Using CLI](./creating-projects-using-cli.md).
