@@ -77,9 +77,6 @@ int MyCppUIComponent::GetTickOrder()
 }
 ```
 
-**Note**
-As of O3DE version 1\.11, use of the `TickEvents::m_tickOrder` variable is deprecated\. If you change the value of `m_tickOrder` instead of overriding `GetTickOrder()`, you will receive a warning\. However, your component will still tick in the appropriate order\.
-
 ## Event\-Based Programming and Event\-Based Polling: Best Practices {#component-entity-system-pg-tick-bus-event-based-programming-polling-best-practices}
 
 It is important to know when to use the tick bus and when to use event\-driven programming patterns instead\.

@@ -22,7 +22,7 @@ This is an image within a scroll box with both a horizontal and a vertical scrol
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/scrollbar-scrollbox.gif)
 
-In O3DE version 1\.24 and later, the scroll bar can also fade automatically when not in use:
+The scroll bar can also fade automatically when not in use:
 
 ![\[Example of auto fade scroll bar.\]](/images/user-guide/game_ui_editor/ui-scrollbar-autofade.gif)
 
