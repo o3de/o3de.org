@@ -44,7 +44,7 @@ This section shows you how to create reference nodes in the **Animation Editor**
 
    The **Reference** section of the **Attributes** tab shows the attributes for the reference node\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/referencing-character-animation-editor-anim-graph)
+
 
 1. On the **Attributes** tab, for **Anim graph**, click the \(**\.\.\.**\) icon\.
 ![\[Click to browse to an external anim graph for the reference node.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-5.png)
