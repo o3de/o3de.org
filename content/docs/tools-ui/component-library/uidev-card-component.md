@@ -110,7 +110,7 @@ The following code demonstrates how to set up a help link and start a context me
 
 ```
 // Set the card help icon.
-card->header()->setHelpURL("https://aws.amazon.com/documentation/lumberyard/");
+card->header()->setHelpURL("https://o3de.org/docs/");
 
 // Enable the context menu (enabled by default).
 card->header()->setHasContextMenu(true);

@@ -1,16 +1,11 @@
 ---
-description: ' Test the connection between the Windows client and the Linux server
-  for Open 3D Engine. '
+description:  Test the connection between the Windows client and the Linux server for Open 3D Engine. 
 linktitle: Client connection testing
 title: Testing the Windows Client to Linux Server Connection
 weight: 200
 ---
 
 {{< preview-migrated >}}
-
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 After you've [built the Windows client and Linux server](/docs/user-guide/platforms/linux/build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\.
 
@@ -21,7 +16,7 @@ To test your server setup, complete the following tasks\.
 + Get the *public* IP address \(not DNS name\) of your Linux server\.
 + Get the *public* IP address of your client machine\.
 +  Allow outbound TCP connections on Windows 10 to your Linux server on port `4600`, and outbound UDP connections on port `33435`\. If you're not familiar with how to configure Windows firewall to allow outbound connections, see the [Microsoft Windows Firewall documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule)\.
-+  Allow inbound TCP connections on Linux on port `4600`, and inbound UDP connections on port `33435`\. If you're using an Amazon EC2 instance, follow the instructions for [Authorizing inbound traffic on Linux](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html)\. If you're running your own independent Linux server or using Windows Subsystem for Linux \(WSL\), read your distribution's instructions on configuring your firewall to allow the client connection\.
++  Allow inbound TCP connections on Linux on port `4600`, and inbound UDP connections on port `33435`\. Read your distribution or provider's instructions on configuring your firewall to allow the client connection\.
 
 **Important**
  There might be other considerations in your network environment that require additional setup - such as a corporate firewall, proxy, or VPN - that you should consult with your system administrator on as part of setting up for testing\.

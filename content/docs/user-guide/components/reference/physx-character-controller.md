@@ -93,6 +93,4 @@ Character controllers are usually **kinematic** or **dynamic**\. Dynamic charact
 
 For more information, see [Character Controllers](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/3.3.4/Manual/CharacterControllers.html) in the NVIDIA documentation\.
 
-In O3DE, the **PhysX Character Controller** component is kinematic\. The legacy [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html) component is dynamic\.
-
 Because the **PhysX Character Controller** component is kinematic and not affected by outside forces, it is not affected by gravity out of the box\. This separation allows you to use Script Canvas or C\+\+ to implement custom behavior for gravity\. Kinematic controllers behave as if they have infinite mass when dynamic objects collide with them\. Your custom gameplay logic determines how the controller responds to collisions such as the recoil from heavy impacts\.
