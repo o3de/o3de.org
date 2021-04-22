@@ -38,7 +38,7 @@ Entity Outliner in the O3DE Editor uses multiple filter categories in a filtered
 
    By default, any filters that users select from the filter menu will appear under the search field\. You can turn this off by calling `setEnabledFiltersVisible(false)` on your filtered search widget\.
 
-   You can also add an icon in front of the name of the applied filter\. See how to do this in the [filtered type icon](#filtered-search-filter-type-icons) example\.
+   You can also add an icon in front of the name of the applied filter\. See how to do this in the [filtered type icon](#filtered-search-with-filter-type-icons) example\.
 
 1.  **Search results**
 
@@ -78,7 +78,7 @@ connect(filteredSearchWidget, &AzQtComponents::FilteredSearchWidget::TypeFilterC
         proxyModel, &MyProxyModel::ApplyTypeFilters);
 ```
 
-## Filtered search with filter type icons<a name="filtered-search-filter-type-icons"></a>
+## Filtered search with filter type icons
 
 ![\[component filtered search filter type icons\]](/images/tools-ui/component-filtered-search-filter-type-icons.png)
 
