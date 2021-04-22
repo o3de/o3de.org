@@ -142,7 +142,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    **Track View** then uses a color track for the property, as the following image shows\.
 ![\[Color picker in Track View\]](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
 
-   Other units can be found in the file `dev\Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`\. As of O3DE release 1\.8, these units are the following\.
+   Other units can be found in the file `Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`\. These units are the following\.
 
    ```
    const static AZ::Crc32 PropertyUnitsRadian = AZ_CRC("Radians");

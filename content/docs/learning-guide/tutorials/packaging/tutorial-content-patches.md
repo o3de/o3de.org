@@ -6,10 +6,6 @@ title: Create content patches with O3DE
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This tutorial is out of date for the new Starter Game project that shipped as part of O3DE 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |
-
 This tutorial demonstrates a bundling process designed to simulate a patch update to existing content\. In this tutorial, you create a set of bundles that simulates a content patch\. These bundles include the patch itself, and a new version of the software to distribute with the patch already in place\. The update bundle contains only content that changed since the first set of bundles was created\. This topic covers:
 + Modifying an asset reference to reference a new asset that was not bundled previously\.
 + Creating an updated asset bundle that contains only updated or new assets\.

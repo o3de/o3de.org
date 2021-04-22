@@ -15,9 +15,6 @@ For a 20\-minute crash course on navigating the **Perspective** viewport, custom
 
 [![AWS Videos](https://img.youtube.com/vi/https://www.youtube.com/embed/E1NgI8urJ7o?rel=0/0.jpg)](http://www.youtube.com/watch?v=https://www.youtube.com/embed/E1NgI8urJ7o?rel=0)
 
-**Note**
-Open 3D Engine version 1\.25 introduced an updated interface\. You will notice differences in the visual interface and user experience viewing this video while using O3DE 1\.25 or later; however, the information in the video tutorial is still applicable to the fundamentals of using O3DE Editor\.
-
 ## The O3DE Editor default layout<a name="editor-default-layout"></a>
 
 The default layout of O3DE Editor contains the most commonly used tools in a configuration, similar to other content creation applications\. The core workflow of O3DE is to create and place *entities* in a level, so the default layout contains a menu bar, two toolbars, and five tool panes focused on entity creation and placement\.

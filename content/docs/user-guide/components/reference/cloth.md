@@ -5,10 +5,6 @@ title: Cloth component
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 The **Cloth** component treats the vertices of any mesh that it references as cloth particles and applies physical properties, forces, and constraints to simulate the behavior of cloth\. You can add this component to any entity that has **Mesh** or **Actor** components\. You can add multiple cloth components to an entity\.
 
 The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md)\.
@@ -68,7 +64,7 @@ Stiffness exponent that adjusts the overall stiffness of the cloth simulation\. 
 
 ## Motion constraints properties {#component-cloth-motion-constraints-properties}
 
-![\[Motion constraints properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-B-1.27.png)
+![\[Motion constraints properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-B.png)
 
 **Max distance**
 Maximum distance limit in meters for cloth particle movement\.
@@ -88,7 +84,7 @@ Stiffness for motion constraints\.
 
 ## Backstop properties {#component-cloth-backstop-properties}
 
-![\[Backstop properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-C-1.27.png)
+![\[Backstop properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-C.png)
 
 **Note**
 Backstop properties are only available when a **Backstop** vertex color stream is specified in the **Cloth** modifier for the selected **Mesh node** in **FBX Settings**\.
@@ -104,7 +100,7 @@ The offset in meters for backstop spheres in front of the cloth\.
 
 ## Damping properties {#component-cloth-damping-properties}
 
-![\[Damping properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-D-1.27.png)
+![\[Damping properties of the Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-D.png)
 
 **Damping**
 Damping of cloth particle velocity\.
@@ -123,7 +119,7 @@ Portion of angular velocity applied to turning cloth particles\.
 
 ## Inertia properties {#component-cloth-inertia-properties}
 
-![\[Inertia properties of the NVIDIA Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-E-1.27.png)
+![\[Inertia properties of the NVIDIA Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-E.png)
 
 **Linear**
 Portion of linear acceleration applied to cloth particles\.

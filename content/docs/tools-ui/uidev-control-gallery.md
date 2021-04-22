@@ -1,7 +1,8 @@
 ---
-description: ' Learn about the Amazon Qt Control Gallery tool that demonstrates the
+description: >-
+  Learn about the Amazon Qt Control Gallery tool that demonstrates the
   O3DE UI 2.0 custom Qt widget library in action, and see sample code related
-  to each example. '
+  to each example.
 title: O3DE Qt control gallery tool
 weight: 100
 ---
@@ -12,11 +13,9 @@ Use the **Amazon Qt Control Gallery** tool to see the Open 3D Engine custom Qt w
 
 ![\[image\]](/images/tools-ui/amazon-qt-control-gallery.jpg)
 
-## How to use the Amazon Qt control gallery<a name="gallery-usage"></a>
+## How to use the Amazon Qt control gallery
 
-Before you begin, make sure that you have O3DE 1\.25 or later installed on your machine\.
-
-1.  Open File Explorer and go to your build directory\. \(For example, `C:\{your-lumberyard-installation-path}\{version}\dev\Bin64vc142\` or `Bin64vc141\`\.\)
+1.  Open File Explorer and go to your build directory\.
 
 1.  Double\-click on `AmazonQtControlGallery.exe` to launch the **Amazon Qt Control Gallery** tool\.
 ![\[image\]](/images/tools-ui/amazon-qt-control-gallery-file.png)
