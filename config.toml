@@ -14,6 +14,7 @@ description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, 
 favicon = "favicon.png"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
+sourceRepo = "https://github.com/aws-lumberyard/o3de"
 
 [params.logos]
 navbar = "O3DE-Logo-REV-Mono.svg"
