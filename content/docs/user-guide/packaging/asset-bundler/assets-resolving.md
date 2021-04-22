@@ -6,7 +6,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-After you build and package your O3DE game, you want to frequently verify that your packages contain every asset they require\. For information about verifying your asset bundles, see [Verifying that Bundles Contain Required Assets](/docs/user-guide/packaging/asset-bundler/assets-verifying.md)\.
+After you build and package your O3DE game, you want to frequently verify that your packages contain every asset they require\. For information about verifying your asset bundles, see [Verifying that Bundles Contain Required Assets](/docs/user-guide/packaging/asset-bundler/verifying-bundles/)\.
 
 When you identify a potential missing asset, you want to include it so that the asset is no longer missing in your next bundled game package\.
 
@@ -24,7 +24,7 @@ A missing asset might have been loaded as a reference from O3DE or from your gam
 ### Finding the Asset Reference {#asset-bundler-assets-resolving-finding-the-asset-reference}
 
 To find the source of the asset reference, try the following approaches:
-+ Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/packaging/asset-bundler/missing-dependency-scanner.md)\.
++ Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/packaging/asset-bundler/verifying-bundles/missing-dependency-scanner/)\.
 + Debug the file load using the following methods:
   + Set breakpoints, if possible
   + Add extra `print` commands
@@ -50,7 +50,7 @@ If the source of the generated asset is not obvious, you can use the asset datab
 
 ### Updating the Builder to Emit the Dependency {#asset-bundler-assets-resolving-updating-the-builder}
 
-After you've identified the builder which emits the product that is missing the dependency, update the builder\. For more information, see [Declare Product Dependencies](/docs/userguide/asset-builder-custom#asset-builder-custom-create-builder-class-optional-declare-product-dependencies)\.
+After you've identified the builder which emits the product that is missing the dependency, update the builder\. For more information, see [Declare Product Dependencies](/docs/user-guide/packaging/asset-bundler/overview/#why-use-product-dependencies)\.
 
 ## Hardcoded File Loads {#asset-bundler-assets-resolving-hardcoded-file-loads}
 
@@ -77,6 +77,7 @@ To resolve the missing asset from a hardcoded file load, try the following optio
 
 #### Using the Wildcard Dependency System to Resolve Path Loads {#asset-bundler-assets-resolving-path-loads}
 
+<!--tdoyon: Need a new migrate page to update link -->
 When you [migrate](/docs/userguide/assets/bundle/migrating.md) a O3DE project to use seeds or emit dependencies for all referenced assets, two cases cannot be resolved as seeds: Optional relative path loads and wildcard path loads\. If your bundle is missing an asset that is loaded in either style, try to resolve the missing asset by using wildcard dependencies\.
 
 To handle dependency tracking for runtime systems that use path manipulation or directory scanning to load product files, declare dependencies in a `*_Dependencies.xml` file\. For example, dependencies in the core engine are included in the `lumberyard_version\dev\Engine\Engine_Dependencies.xml` file\. A dependencies file uses the following format\.
