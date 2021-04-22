@@ -24,7 +24,7 @@ To complete this tutorial, you should have completed the [Build and bundle asset
 For this tutorial you'll modify the `level2` level created in the previous tutorial\. You'll also be adding a new asset\-only gem to the Starter Game project, to demonstrate how to update auxiliary content in addition to pushing direct changes to a bundle\.
 
 1. Launch the Project Configurator, make sure that the Starter Game is selected, and select **Enable Gems**\.
-![\[Selecting the 'Enable Gems' button for the Starter Game in Project Configurator.\]](/images/user-guide/assetbundler/tutorial-content-patches/ui-project-configutator-create-1.25.png)
+![\[Selecting the 'Enable Gems' button for the Starter Game in Project Configurator.\]](/images/user-guide/assetbundler/tutorial-content-patches/ui-project-configutator-create.png)
 
 1. Search for the term *primitive* in the search bar\. The **Primitive Assets** gem should appear in the results list\. Select the checkbox to include it as part of the Starter Game, and then select **Save**\.
 ![\[Searching for 'primitive', then selecting the 'Primitive Assets' gem, followed by a 'Save' action.\]](/images/user-guide/assetbundler/tutorial-content-patches/02.png)

@@ -24,7 +24,7 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
 
 ## PhysX Force Region Component Properties {#physx-terrain-component-properties}
 
-![\[Force Region component properties.\]](/images/user-guide/component/physx/ui-physx-force-region-component-properties-1.27.png)
+![\[Force Region component properties.\]](/images/user-guide/component/physx/ui-physx-force-region-component-properties.png)
 
 
 | Property | Description |

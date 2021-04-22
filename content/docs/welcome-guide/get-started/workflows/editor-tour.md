@@ -21,7 +21,7 @@ The default layout of O3DE Editor contains the most commonly used tools in a con
 
 You can customize the layout through drag and drop, and save to a custom layout through the **Layouts** option in the **View** menu of the main menu bar\. Drag the separator bars between panes to resize the panes\. Drag the title bar of a pane to tear off the pane\. The pane can be dropped anywhere in the layout or dropped outside of O3DE Editor as its own window\. To restore the default layout, select **Default Layout** from the **Layouts** option in the **View** menu of the main menu bar\.
 
-![\[The default O3DE Editor layout.\]](/images/welcome-guide/ui-editor-labeled-1.25.png)
+![\[The default O3DE Editor layout.\]](/images/welcome-guide/ui-editor-labeled.png)
 
 1.  **Perspective** - This 3D viewport is a real\-time view of your level\. In **Perspective**, you create and place entities, and view and play your project\.
 
@@ -67,13 +67,13 @@ O3DE's interaction model will be familiar to anyone who has played a first\-pers
 
 You might prefer that your editor camera controls behave like a flight simulator\. Or you might want to speed up or slow down the default movement or rotation of the editor camera\. You can adjust the default editor camera control behavior by setting the **Movement** properties in the **Global Preferences** editor\.
 
-![\[O3DE movement preferences.\]](/images/welcome-guide/ui-preferences-movement-1.25.png)
+![\[O3DE movement preferences.\]](/images/welcome-guide/ui-preferences-movement.png)
 
 Choose **Global Preferences** from the **Editor Settings** group in the **Edit** menu\. Select **Movement** under the **Viewports** list on the left\. Here, you can invert either mouse axis and adjust the movement speed of the editor camera\.
 
 When you have your movement preferences set to your liking, you might find at times that the editor camera movement is too fast or too slow in certain situations\. You can adjust the movement speed in the **Perspective Toolbar** at the bottom of the **Perspective** pane\.
 
-![\[O3DE Perspective movement speed.\]](/images/welcome-guide/ui-camera-speed-1.25.png)
+![\[O3DE Perspective movement speed.\]](/images/welcome-guide/ui-camera-speed.png)
 
 Enter a floating point value in the **Speed** property to set movement speed\. You can also click the arrow to the right of the **Speed** property to set the movement speed to **0\.1**, **1\.0**, or **10\.0**\.
 

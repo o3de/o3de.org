@@ -29,7 +29,7 @@ You can control the character's movement by using Script Canvas, the C\+\+ API, 
 
 You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)**\.
 
-![\[PhysX Character Controller component properties in the Entity Inspector.\]](/images/user-guide/component/physx/ui-physx-character-controller-properties-1.27.png)
+![\[PhysX Character Controller component properties in the Entity Inspector.\]](/images/user-guide/component/physx/ui-physx-character-controller-properties.png)
 
 The **PhysX Character Controller** has the following component properties\.
 
