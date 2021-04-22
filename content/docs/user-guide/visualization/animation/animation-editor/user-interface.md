@@ -5,10 +5,6 @@ title: 'Animation Editor User Interface'
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **Topics**
 + [Opening Animation Editor](#opening-animation-editor-)
 + [Anim Graph Interface](/docs/user-guide/visualization/animation/animation-editor/animation-graph-user-interface.md)

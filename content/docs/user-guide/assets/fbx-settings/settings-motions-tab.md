@@ -5,10 +5,6 @@ title: FBX Settings Motions tab
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 You can process animation sequences from a single `.fbx` file as **Motions**\. Each **Motion** produces its own `.motion` file\. The processed runtime assets appear in **Asset Browser** as children of the `.fbx` file\.
 
 **Important**

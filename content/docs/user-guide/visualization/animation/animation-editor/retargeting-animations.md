@@ -6,10 +6,6 @@ title: Retargeting Motions
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 Use the Animation Editor to retarget motions from one actor to another actor\. This lets you reuse motions that you've created for an actor, and to quickly prototype motions on other actors while you wait for new ones to be created\. The retarget feature is also important to ensure that actors are scaled appropriately\. Without this feature, the retargeted actor stretches and scales to the size of the original actor for which the motion was recorded\. With this feature, the retargeted actor retains its size\.
 
 For example, you may have a human character that's six feet tall and your motions are recorded for that actor\. You may also have a giant character that's 18 feet tall\. If you play the motions for the human character on the giant character without retargeting, the giant character will scale to the size of the human character\. When you enable the retarget feature, the giant character retains its height of 18 feet\.

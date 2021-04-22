@@ -6,10 +6,6 @@ weight: 200
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 When you build a macOS game using O3DE, you must first build the assets that are included with the application\. All built assets are located in the `cache` folder of your O3DE installation\. For example, when you build the Samples Project, the assets are saved to the `lumberyard_version\dev\cache\SamplesProject\osx_gl` directory\. The initial build of the Samples Project assets may take up to an hour to process, but incremental changes should process almost instantly\.
 
 **Note**

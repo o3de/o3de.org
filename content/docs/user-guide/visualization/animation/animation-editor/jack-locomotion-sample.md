@@ -7,10 +7,6 @@ title: Simple_JackLocomotion Sample
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 This sample level showcases Jack the robot in a basic environment and demonstrates how the **Animation Editor** uses actors, motion sets, and animation graphs to control character behavior\. Playable animations include idle, walk, run, and navigate\.
 
 The Simple\_JackLocomotion sample level is located in the `\dev\SamplesProject\AnimationSamples` directory\. The assets are located in the `\dev\SamplesProject\AnimationSamples\Simple_JackLocomotion` directory\.

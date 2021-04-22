@@ -8,10 +8,6 @@ weight: 200
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 After you've [built the Windows client and Linux server](/docs/user-guide/platforms/linux/build-lumberyard-executable.md), you should test the connection to make sure that everything is running smoothly\. This topic covers starting your server, getting connection information, running the remote console on Windows to manage your connection, and connecting your game client to the server\.
 
 ## Prerequisites {#linux-test-windows-client-linux-server-connection-prerequisites}
