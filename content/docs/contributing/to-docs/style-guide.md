@@ -75,7 +75,7 @@ The O3DE documentation project serves a global audience. To support English as a
     Verb | ... rendering the scene.
     Adjective | ... the rendering path.
 
-* Watch for words that end in *-ed*. Words that end in *-ed* can also be ambiguous. Use determiner phrases such as *that is* to clarify the usage of words that end in *-ed*. Taker the word "rendered", for example.
+* Watch for words that end in *-ed*. Words that end in *-ed* can also be ambiguous. Use determiner phrases such as *that is* to clarify the usage of words that end in *-ed*. Take the word "rendered", for example.
 
     Do | Don't
     :--| :--
@@ -85,7 +85,7 @@ The O3DE documentation project serves a global audience. To support English as a
 
     Type | Definition | Example
     :--| :-- | :--
-    Idiom | A phrase established to have a meaning that is not discernable from the individual words. | Forward+ rendering provides *the best of both worlds*.
+    Idiom | A phrase established to have a meaning that is not discernible from the individual words. | Forward+ rendering provides *the best of both worlds*.
     Slang | Informal and nonstandard vocabulary. | *Chill* for a bit, while the O3DE project compiles.
     Colloquialism | Ordinary and familiar conversational words and phrases, especially those that might be specific to a region. | ... On Create will execute the function *ASAP*.
     Jargon | Specialized terms used in a particular field that are difficult for others to understand. | ... entering the *vertical-slice* phase of development.
@@ -120,7 +120,7 @@ Front Matter is placed at the topic of the Markdown source file and enclosed in 
 
 Variable | Usage
 :--| :-----
-`linktitle:` | A short title that appears in links such a a table of contents.
+`linktitle:` | A short title that appears in links such as a table of contents.
 `title:` | A long title that appears on-page and the H1 heading.
 `description:` | A short description of the topic content.
 `weight:` | A value used to sort the content for lists, such as a table of contents. Lower weight values are sorted higher in lists. It's good practice to use increments of 100 for weight values to ensure additional topics can be inserted and sorted properly in the future.
@@ -160,7 +160,7 @@ toc: true
 ```
 
 {{< note >}}
-A table of contents for the page is automatically generated in the right gutter using the on-page headings in the `toc` Front Matter variable is set to `true`.
+A table of contents for the page is automatically generated in the right gutter using the on-page headings if the `toc` Front Matter variable is set to `true`.
 {{< /note >}}
 
 ## Text format
@@ -359,7 +359,7 @@ Copyright (C) Microsoft Corporation. All rights reserved.
 
 ## Lists
 
-Use ordered lists when the order of the items are significant, such as a procedure of sequential steps. Use unordered lists if the order of the items is arbitrary, such as a list of assets.
+Use ordered lists when the order of the items is significant, such as a procedure of sequential steps. Use unordered lists if the order of the items is arbitrary, such as a list of assets.
 
 If the list is longer than four items, or if the list contains call-out shortcode or an image, add newlines between each list element to improve readability.
 
@@ -467,7 +467,7 @@ Second Term
 
 ## O3DE documentation Hugo shortcodes
 
-Hugo [Shortcodes](https://gohugo.io/content-management/shortcodes) are used to add complex elements to pages that aren't supported by markdown, such as embedded video links and call-outs. Shortcodes can be written in other languages, such as HTML. The currently available shortcodes are located in the `/layouts/shortcodes` directory of the O3DE documentation repository. You can create additional shortcodes. To see all the currently available shortcodes, view the [smoketest](/smoketest) page.
+Hugo [Shortcodes](https://gohugo.io/content-management/shortcodes) are used to add complex elements to pages that aren't supported by Markdown, such as embedded video links and call-outs. Shortcodes can be written in other languages, such as HTML. The currently available shortcodes are located in the `/layouts/shortcodes` directory of the O3DE documentation repository. You can create additional shortcodes. To see all the currently available shortcodes, view the [smoketest](/smoketest) page.
 
 {{< important >}}
 If you create new shortcodes for O3DE documentation, be sure to add them to the [smoketest](/smoketest) page so that other contributors can discover them and use them!
@@ -634,7 +634,7 @@ Screenshots are images of various O3DE user interfaces, or the interfaces of oth
 
 ### Artful images
 
-Artful images are images produced for artistic or marketing purposes such as images that demonstrate output from Atom renderer, or the fidelity of Atom materials.
+Artful images are used for artistic or marketing purposes, such as images that demonstrate output from Atom renderer, or the fidelity of Atom materials.
 
 * Use the PNG format (`.png`) or the JPEG format (`.jpg`) for artful images.
 
