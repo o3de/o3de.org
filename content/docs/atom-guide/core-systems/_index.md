@@ -15,4 +15,5 @@ This section provides a deeper technical read into the systems and interfaces un
 | [Material System](materials/_index.md) | The material system processes materials and material types and builds them into assets to use in the simulation. |
 | [Shader System](shaders/_index.md) | The shader system processes AZSL shaders and builds them into shader assets that can be used in the simulation. This section also contains the AZSL Reference.  |
 | [Render Pipeline Interface (RPI)](rpi/_index.md) | The Render Pipeline Interface (RPI) contains the main interface for developers to program the render pipeline. |
+| [Passes](passes/_index.md) | Passes are essential to the render pipeline, transforming data from a scene into a final rendered output. |
 | [Rendering Hardware Interface (RHI)](rhi/_index.md) | The Rendering Hardware Interface (RHI) provides a low-level interface that abstracts platform-specific code. |
