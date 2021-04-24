@@ -8,57 +8,103 @@ weight: 200
 
 {{< preview-new >}}
 
-Take some time to browse the [Open 3D Engine (O3DE) documentation](https://www.o3de.org/docs) to understand how the documentation is organized and how it is written. There are several guides in the O3DE documentation:
+Anyone can be a contributor to Open 3D Engine (O3DE) docs and determine their own level of participation. Here, we'll help you navigate the documentation process so you can decide how you'd like to contribute.
 
-* [Welcome:](https://www.o3de.org/docs/welcome-guide) Provides an introduction and overview of O3DE.
-* [Tutorials and Examples:](https://www.o3de.org/docs/learning-guide) Guided tutorials, samples, and cookbooks to help users learn O3DE.
-* [User Guide:](https://www.o3de.org/docs/user-guide) Feature and reference documentation for the various editors, tools, components and Gems provided with O3DE.
-* [Atom Renderer:](https://www.o3de.org/docs/atom-guide) Feature and reference documentation for Atom Renderer and its tools and editors.
-* [Tools UI Developer Guide:](https://www.o3de.org/docs/tools-ui) The style and implementation guide for the UI used throughout the tools of O3DE and Atom Renderer.
-* [API Reference:](https://www.o3de.org/docs/api) Automatically generated API reference for O3DE.
-* [Contribute:](https://www.o3de.org/docs/contributing) Guidelines for contributing to O3DE and its documentation.
-* [Release Notes:](https://www.o3de.org/release-notes) Release notes for O3DE including new features, fixes, and known issues.
+## Before you do anything
 
-Some documentation, such as **API Reference**, is generated automatically. Some documentation, such as **Release Notes**, is provided by various O3DE SIGs.
+It's important to be familiar with the O3DE documentation and get a feel for its style. Take some time to browse the [O3DE documentation](https://www.o3de.org/docs). The documentation consists of several guides:
+
+* [Welcome](https://www.o3de.org/docs/welcome-guide): A friendly introduction and overview of O3DE. The purpose of this guide is to get new users, particularly those without much prior experience, comfortable with O3DE. If you have a gift for simplifying technical concepts, this is a great area to investigate for contributions.
+* [Tutorials and Examples](https://www.o3de.org/docs/learning-guide): Guided tutorials, samples, and cookbooks to help users learn O3DE. If you are an O3DE user, submitting recipes for the cookbooks is a great way to contribute new documentation without investing much time.
+* [User Guide](https://www.o3de.org/docs/user-guide): Feature and reference documentation for the various editors, tools, components and Gems provided with O3DE. Feature reference is in-depth and we sometimes miss coverage on important features and the finer details of O3DE. Contributions to the User Guide are always needed and greatly appreciated.
+* [Atom Renderer](https://www.o3de.org/docs/atom-guide): Feature and reference documentation for Atom Renderer and its tools and editors.
+* [Tools UI Developer Guide](https://www.o3de.org/docs/tools-ui): The style and implementation guide for the UI used throughout the tools of O3DE and Atom Renderer.
+* [API Reference](https://www.o3de.org/docs/api): Automatically generated API reference for O3DE.
+* [Contribute](https://www.o3de.org/docs/contributing): You are here. Guidelines for contributing to O3DE and its documentation.
+* [Release Notes](https://www.o3de.org/release-notes): Release notes for O3DE including new features, fixes, and known issues.
+
+Some documentation, such as **API Reference**, is generated automatically. Some documentation, such as **Release Notes**, is maintained and provided by O3DE SIGs and governance.
 
 {{< note >}}
-Whether you would like to fix an issue, contribute new documentation or tutorials, or simply file an issue, participation as a contributor requires a [GitHub account](https://github.com/signup).
+Participation as a contributor requires a [GitHub account](https://github.com/signup).
 {{< /note >}}
 
 ## Technical information
 
-The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. Information on setting up an environment so that you can contribute to O3DE documentation can be found in the [O3DE documentation repository](./o3de-documentation-repository) topic in this guide.
+The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. For information on setting up an environment so that you can contribute to O3DE documentation, see [O3DE documentation repository](./o3de-documentation-repository).
 
 ## Begin with issues
 
-Once you have a GitHub account, your first stop should be the [O3DE repository issues](https://github.com/o3de/o3de.org/issues). Issues aren't just bugs and errors found in the documentation. All contributions, including new feature documentation, tutorials, recipes, site maintenance, and site improvements, are tracked in issues. Browsing the current issues can familiarize you with the O3DE documentation, it's current state and future direction, and provides ideas where you can best contribute. For more information on issues, see the [Work with issues](./work-with-issues) topic in this guide.
+After you create a GitHub account, your first stop should the current O3DE docs issues. See the [O3DE repository good-first-issues](https://github.com/o3de/o3de.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22good-first-issue%22). Note the search field at the top of the page is specifying issues labeled **good-first-issue**. These are issues that have been determined to be good entry points for new contributors.
+
+Issues aren't just bugs and errors found in the documentation. All contributions, including new feature documentation, tutorials, recipes, site maintenance, and site improvements, are tracked in issues. For more information on issues, see [Work with issues](./work-with-issues).
 
 ## Move on to pull requests
 
-After getting familiar with issues, have a look at the current [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs are contributions that have been submitted to the main repository. The open PRs are currently being peer reviewed by contributors. PRs must be edited by peer contributors for technical accuracy, spelling, grammar, clarity, and style. Contributors should **not** merge their own PRs, and any given PR should have at least two approved reviews before being merged into main. Browsing the open PR list can give you an idea what the current active areas are for other contributors, can help you collaborate and prioritize your own contributions, and shows you how different types of content are reviewed.
+After getting familiar with issues, have a look at the current [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs are contributions that have been submitted to the main repository.
+
+Open PRs are currently being peer reviewed by contributors for several potential issues:
+
+* technical accuracy
+* spelling
+* grammar
+* clarity
+* style
+
+Here are some important guidelines you should keep in mind about PRs in O3DE:
+
+* Contributors should **not** merge their own PRs.
+* Every PR must have at least **two** approvals by someone other than the contributor before being merged into main.
+* Check the open PR list before creating a new one. Browsing the open PR list gives you an idea what the current active topics are, and shows you how different types of content are reviewed. It's a great idea to take a look at current PRs, even if you have not been requested as a reviewer.
 
 ## Documentation process overview
 
-With a basic understanding of the documentation structure, and with exposure to issues and PRs, consider the high level view of the documentation process. The process for contributing documentation is as follows:
+Now that you are familiar with the O3DE docs, and have had some exposure to issues and PRs, let's have a look at the high-level process for making a contribution to documentation.
 
-1. **Create a new issue or claim an existing issue:** It's important to maintain a public record for the development of O3DE and its documentation. Using issues to document discussions and contributor efforts is critical to that goal. All contributions begin with an issue. As a contributor, you can file an issue and then assign it to yourself, or you can claim an existing issue. When creating a new issue, search the current issue list to ensure the issue hasn't already been submitted. When claiming issues for yourself as a contributor, try to be mindful of the PRs and issues your fellow contributors are working with to ensure your contributions are supportive and collaborative. Be communicative on your issues. Leave comments as your work progresses, and respond to comments on your issues. For more information on issues, see the [Work with issues](./work-with-issues) topic in this guide.
-2. **Create a branch on your fork for the issue:** Contributions can't be submitted directly to the main O3DE documentation repository. You must fork the main repository, and submit pull requests to the main repository from your fork/branch. It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [O3DE documentation repository](./o3de-documentation-repository) topic in this guide.
-3. **Make changes:** [Goldmark](https://www.markdownguide.org/tools/hugo/) is very easy to use. Because it is CommonMark compliant, you can use any editor that supports Markdown syntax highlighting to edit content for o3de.org. Be sure to reference the [Style Guide](./style-guide) to ensure your content is ready for review.
-4. **Commit your changes:** Before you can submit a PR, you must commit your changes and push them to a branch on your o3de.org fork. Make sure to do the following:
-   1. Make sure you branch is up-to-date with `o3de.org/main` before committing your content. 
+1. **Agree the the O3DE Contributor License Agreement (CLA)** \<Comming soon\>
+
+1. **Create a new issue or claim an existing issue:** All contributions begin with a GitHub issue. You can file an issue and then assign it to yourself, or you can claim an existing issue. When creating a new issue, search the current issue list to ensure the issue hasn't already been submitted.
+ 
+   During issue triage, other community members might ask you for additional information, and being responsive is the best way to make sure your issue stays relevant. When claiming issues for yourself as a contributor, try to be mindful of the PRs and issues your fellow contributors are working with to ensure your contributions are supportive and collaborative. Be communicative on your issues. Leave comments as your work progresses, and respond to comments on your issues, moving discussions to a pull request when you create one. For more information, see [Work with issues](./work-with-issues).
+
+1. **Create a branch on your fork for the issue:** Contributions can't be submitted directly to the main O3DE documentation repository. You must fork the main repository, and submit pull requests to the main repository from your fork/branch.
+   
+   It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [O3DE documentation repository](./o3de-documentation-repository) topic in this guide.
+
+1. **Make changes:** The O3DE documentation is written in [CommonMark Markdown](https://commonmark.org/) and processed with [Goldmark](https://www.markdownguide.org/tools/hugo/). We recommend using an editor with robust Markdown support during your writing, so that you can get live previews and catch any linting errors. During your writing, follow our [Style Guide](./style-guide) to help your review go smoothly and quickly.
+
+1. **Commit your changes:** Before you can submit a PR, you must commit your changes and push them to a branch on your o3de.org fork. Make sure to do the following:
+
+   1. Make sure you branch is up-to-date with `o3de.org/main` before committing.
+
    2. Sign-off on the changes you commit. The sign-off is a [*Developer Certificate of Origin (DCO)*](https://github.com/apps/dco). The DCO is your certification that your contribution is your own original work, or that you otherwise have the right to submit the work. For more information on committing your changes, see the [Submit a PR](./submit-a-pr) topic in this guide.
-5. **Submit a pull request:** Once you've committed your changes to your own fork/branch, you can create a pull request again `o3de.org/main`. When submitting a pull request, ensure the following:
-   1. The PR only contains commits and changes you want reviewed for the PR.
-   2. The PR message briefly and clearly explains the changes you are submitting.
-   3. You have requested at least three reviewers. Approval from two reviewers is required to merge a PR. Requesting more than two reviewers but no more than six, depending on the requirements of the review, increases the probability that your PR will be reviewed quickly.
-   4. The PR contains the appropriate *Labels* if required. Labels make it easier to sort through lists of PRs and may specify whether a PR is a work in progress, seeking feedback and review, that should not be merged into `o3de.org/main`. For more information on committing your changes, see the [Submit a PR](./submit-a-pr) topic in this guide.
-6. **Respond to PR feedback:** Feedback will come in the form of *suggestions* that can be committed from the GitHub PR interface, or comments you must address. To commit multiple suggestions, use the batch functionality to commit all the suggestions at once in a single commit. When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR. Make sure to request a re-review of your new commits if required. For more information on the PR review process, see the [Review PRs:](./review-prs)) topic in this guide.
-7. **Merge the PR:** When the comments and suggestions have be addressed, and two reviewers have approved the PR, it can be merged into `o3de.org/main`. You should not merge your own PRs, the second reviewer to approve the PR should be the person to merge the PR.
-8. **Close the related issue:** Now that the PR has been merged, the issue can be closed. Find the issue in the issues list, and add a comment. It's good practice to link the related PR before you close the issue.
+   {{< important >}}You must sign-off on all commits. When committing changes with `git commit`, use the `-s` option to sign-off. When committing individual suggestions and batch suggestions in the GitHub PR interface, paste your sign-off (`Signed-off-by: Your Name <yourname@yourdomain.com>`) into the comment field before committing the suggestion.
+   {{< /important >}}
 
- {{< important >}}You must sign-off on all commits. When committing changes with `git commit`, use the `-s` option to sign-off. When committing individual suggestions and batch suggestions in the GitHub PR interface, paste your sign-off (`Signed-off-by: Your Name <yourname@yourdomain.com>`) into the comment field before committing the suggestion.
-{{< /important >}}
+1. **Submit a pull request:** Once you've committed your changes to your own fork/branch, you can create a pull request to `o3de.org/main`. When submitting a pull request, ensure the following:
+
+   1. The PR only contains commits and changes you want reviewed for the PR.
+
+   2. If the PR has a related issue, the issue number must be included in the PR title.
+
+   3. The PR message briefly and clearly explains the changes you are submitting.
+
+   4. You have requested at least two reviewers. Approval from two reviewers is required to merge a PR - if your contribution is deeply technical, it also requires a third review from an O3DE code contributor for accuracy. The more reviewers on your PR, the sooner you're likely to be signed off on it - but never request more than five reviewers (max 3 editorial, max 2 technical) without prior approval from the D&C SIG.
+
+   5. The PR contains the appropriate *Labels*, if required. Labels make it easier to sort through lists of PRs and may specify whether a PR is a work in progress, seeking feedback and review, that should not be merged into `o3de.org/main`. For more information, see [Submit a PR](./submit-a-pr).
+
+1. **Respond to PR feedback:** Feedback will come in the form of comments and *suggestions* that can be committed from the GitHub PR interface. It's important to understand that the PR process is a collaborative discussion. Every comment does not need to be addressed, and every suggestion does not need to be integrated. When the contributor and two reviewers approve of the contribution, it can be integrated. Here are a few tips for addressing suggestions and comments:
+
+   1. To commit multiple suggestions, use the batch functionality to integrate multiple suggestions in a single commit.
+
+   2. When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR.
+
+   3. Make sure to request a re-review of your new commits if required. For more information on the PR review process, see the [Review PRs:](./review-prs)) topic in this guide.
+
+1. **The PR is merged and closed:** When the comments and suggestions have been addressed, and two reviewers have approved the PR, it can be merged into `o3de.org/main`. **Never** merge your own PRs, the final reviewer to sign off is responsible for the merge. The PR is automatically closed when merged.
+
+1.  **The related issue is closed:** If you have included a related issue number in the title of your PR, the related issue will be automatically closed when the PR is closed. Your contribution is complete. Congrats!
 
 ## Next step
 
-Now that you have a high level understanding of the O3DE documentation, and the documentation process, start the contribution process with a closer look at [working with issues](./work-with-issues).
+Let's start with the easiest way to make a contribution. File an issue. See [Working with issues](./work-with-issues).
