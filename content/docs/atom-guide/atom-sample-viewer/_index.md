@@ -11,16 +11,18 @@ weight: 400
 The **Atom Sample Viewer** showcases samples of features and rendering techniques that the Atom Renderer supports.
 
 ## Quick Start
-To launch the Atom Sample Viewer, run AtomSampleViewerStandalone.exe located in the folder `<build>/bin/profile`. The following list of samples can be viewed in the Atom Sample Viewer. 
+
+To launch the Atom Sample Viewer, run `AtomSampleViewerStandalone.exe` located in the directory `<build>/bin/profile`. The following list of samples can be viewed in the Atom Sample Viewer. 
 
 ## Debug Menus
-The following debug menus in the Atom Sample Viewer are tools for profiling and debugging systems across the render engine. You can run these tools while viewing samples in the Atom Sample Viewer.
+
+The following debug menus in the Atom Sample Viewer are tools for profiling and debugging systems across the rendering engine. You can run these tools while viewing samples in the Atom Sample Viewer.
 | Menu | Description |
 |---------|---------|
 | [CPU Profiler](debug-menu-samples.md#cpu-profiler) | Provides CPU timing information, including the time spent working on RHI threads and on waiting for the GPU work to complete. |
-| [Culling Debug Window](debug-menu-samples.md#culling-debug-window) | Provides information on what the culling system is doing at real time.  |
+| [Culling Debug Window](debug-menu-samples.md#culling-debug-window) | Provides information on what the culling system is doing in real time.  |
 | [GPU Profiler](debug-menu-samples.md#gpu-profiler) | Provides information on the GPU workload for each render pass. |
-| [Pass Tree](debug-menu-samples.md#pass-tree) | Displays a hierarchic list of all the passes and their details. |
+| [Pass Tree](debug-menu-samples.md#pass-tree) | Displays a pass hierarchy and pass details. |
 | [Transient Attachment Profiler](debug-menu-samples.md#transient-attachment-profiler) | Provides information about transient allocations that happen during a frame. |
 
 
@@ -29,7 +31,7 @@ The following samples demonstrate graphics features and rendering techniques tha
 | Sample | Description |
 |---------|---------|
 | [Area Lights](graphics-feature-samples.md#area-lights) | Demonstrates different area light types with modifiable parameters. |
-| [Bloom](graphics-feature-samples.md#bloom) | Demonstrates the bloom effect with modifiable parameters. |
+| [Bloom](graphics-feature-samples.md#bloom) | Demonstrates bloom effects with modifiable parameters. |
 | [Checkerboard Render Pipeline](graphics-feature-samples.md#checkerboard-render-pipeline) | Demonstrates how to set up a basic checkerboard render pipeline. |
 | [Depth of Field](graphics-feature-samples.md#depth-of-field) | Demonstrates the depth of field effect with modifiable parameters. |
 | [Diffuse Global Illumination](graphics-feature-samples.md#diffuse-global-illumination) | Demonstrates diffuse global illumination using ray-traced light probes.  |
@@ -69,7 +71,7 @@ The following samples demonstrate rendering features in the RHI.
 | [Subpass](rhi-samples.md#subpass) | Demonstrates the use of a simple deferred renderer with two subpasses. |
 | [Swapchain](rhi-samples.md#swapchain) | Demonstrates swap chains by animating colors on a single screen. |
 | [Texture](rhi-samples.md#texture) | Demonstrates textures on a quad. |
-| [Texture3D](rhi-samples.md#texture3d) | Demonstrates support for 3D images using the RHI's Image structure. (There are two structures to represent images: Image and Streaming Image.)|
+| [Texture3D](rhi-samples.md#texture3d) | Demonstrates support for 3D images using the RHI's Image structure. There are two structures to represent images: Image and Streaming Image.|
 | [Texture Array](rhi-samples.md#texture-array) | Demonstrates support for image array descriptors and how to sample them with a uniform index. |
 | [Texture Map](rhi-samples.md#texture-map) | Tests texture type functionality for the following: Texture1D, Texture1DArray, Texture2DArray, TextureCube, TextureCubeArray, and Texture3D.  |
 | [Triangle](rhi-samples.md#triangle) | Demonstrates how to draw and animate a triangle on a screen. Also known as a "Hello Triangle" example. |
@@ -91,7 +93,7 @@ The following samples demonstrate rendering features in the RPI.
 | [MSAA](rpi-samples.md#msaa) | Demonstrates how to load a new pipeline with MSAA enabled, and a simple scene with a single mesh. |
 | [Multi-Render Pipeline](rpi-samples.md#multi-render-pipeline) | Demonstrates how to create two render pipelines. |
 | [Multi-Scene](rpi-samples.md#multi-scene) | Demonstrates how to create two RPI scenes with different content in each. |
-| [Multi-View Single Scene Aux Geom](rpi-samples.md#multi-view) | Tests the ability to send draw calls to all, or a selection of windows in a scene. |
+| [Multi-View Single Scene Aux Geom](rpi-samples.md#multi-view) | Tests the ability to send draw calls to any selection of windows in a scene. |
 | [Root Constants](rpi-samples.md#root-constants) | Demonstrates the use of root constants to pass information quickly from the CPU to the shader. |
 | [Scene Reload Soak](rpi-samples.md#scene-reload-soak) | Tests Atom's stability by repeatedly performing many different commands across various times. This sample is used to discover timing-sensitive issues.  |
 | [Shading](rpi-samples.md#shading) | Demonstrates rendering a shaderball with default StandardPBR material, with the LuxCore feature. |
