@@ -28,7 +28,7 @@ Cards allow for a certain amount of customization\. The basic layout of a card i
 
 1.  **Card icon**
 
-   \(Optional\) Cards can have their own unique icon related to their purpose\. For the full list of icons, see [O3DE component icons](uidev-component-icons.md)\.
+   \(Optional\) Cards can have their own unique icon related to their purpose\. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/)\.
 **Note**
 Two icons are required for new components:
 A 16 x 16 SVG with a background box for the perspective window\.
