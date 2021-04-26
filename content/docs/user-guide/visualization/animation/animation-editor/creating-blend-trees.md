@@ -9,7 +9,7 @@ title: Creating Blend Trees
 | --- |
 | This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
-In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes\. The **Animation Editor** supports state machines and blend trees\. For more information about state machines, see [About State Machines](/docs/userguide/animation/character-editor/concepts-and-terms#understanding-state-machines)\.
+In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes\. The **Animation Editor** supports state machines and blend trees\. For more information about state machines, see [About State Machines](/docs/user-guide/visualization/animation/character-editor/concepts-and-terms/#understanding-state-machines)\.
 
 A blend tree is a collection of nodes with input and output ports that are color coded by data type and read from left to right\. Input ports appear on the left side of the nodes and output ports appear on the right\. The blend tree outputs the pose that is connected to the **Final Node**, which is included in every blend tree and cannot be deleted\. If you choose not to connect a node to **Input Pose**, the **Final Node** outputs a bind pose\.
 
