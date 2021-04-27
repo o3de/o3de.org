@@ -29,7 +29,9 @@ Wondering where to start? The conveniently titled [get started](./get-started) t
 
 * [Review PRs](./review-prs): Help ensure new documentation is as great as it can be by reviewing pull requests.
 
-* [O3DE documentation repository](./o3de-documentation-repository): Need guidance on working with and navigating the repository? This map will help.
+* [Setup a local O3DE docs repo](./o3de-docs-repo-setup): A step-by-step guide to setting up and maintaining your O3DE docs repo.
+
+* [O3DE docs structure](./o3de-docs-structure): Need guidance on navigating the repository? This map will help.
 
 * [Write documentation](./write-documentation): Everything you need to know about improving existing docs and contributing new topics.
 
