@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ partial "community/hero.html" . }}
+<section class="container-xl">
+  <div class="row">
+    <!-- <div class="col-12">
+      <h1>
+        {{ .Title }}
+      </h1>
+    {{ with .Content }}
+      {{ . }}
+    {{ end }}  
+    </div> -->
+  </div>
+    <div class="col-12">
+      {{ partial "blog-display.html" . }}
+    </div>
+    </div> 
+</section> 
+{{ partial "footer.html" . }}  
+{{ end }}
