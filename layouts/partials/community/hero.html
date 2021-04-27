@@ -1,0 +1,19 @@
+{{ $title := site.Title }}
+{{ $desc  := site.Params.description | markdownify }}
+<div class="scalable community-hero d-flex align-items-center">
+  <div class="container hero-inner">
+    <h2> Join the community! </h2>
+    {{ $social := site.Params.social }}
+    {{ range $social }}
+    {{ $color := .color }}
+    <a class="social btn text-light mr-1" title="{{ .name }}" href="{{ .url }}" target="_blank">
+        {{ with .icon }}
+        <span class="icon">
+          <i class="{{ . }}"></i>
+        </span>
+        {{ end }}
+        <span class="social-name">{{ .name }}</span>
+      </a>
+    {{ end }}
+  </div>
+</div>
