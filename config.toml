@@ -31,7 +31,7 @@ icon = "fab fa-github"
 [[params.social]]
 name = "Discord"
 url = "#"
-icon = "fas fa-envelope"
+icon = "fab fa-discord"
 
 [[params.social]]
 name = "Slack"

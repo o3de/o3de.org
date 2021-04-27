@@ -3,20 +3,20 @@
   <div class="row">
     {{ range (.Paginate $posts).Pages }}
     {{ $date := dateFormat "January 2, 2006" .Date }}
-    <div class="col col-lg-6 col-md-12 col-12">
-          <div>
+    <div class="col col-lg-6 col-md-12 col-12 mt-4">
+      <div class="card">
+          <div class="card-body">
             <a href="{{ .RelPermalink }}">
             <h2>
               {{ .Title }}
             </h2>
-            <h3>
+            <p>
               {{ $date }}
-            </h3>
+            </p>
             </a>
-          </div>
-          <div>
             {{ .Summary }}...
           </div>
+        </div>
     </div>
     {{ end }}
   </div>
