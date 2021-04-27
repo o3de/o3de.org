@@ -26,7 +26,7 @@ The `ScriptCanvas_DynamicDataSlot` tag includes the following code gen attribute
 
 | Attribute | Description |
 | --- | --- |
-| DynamicDataType |  Allows the user to specify a macro category of dynamic typing information\. DynamicDataType has the following supported values: [\[See the AWS documentation website for more details\]](/docs/userguide/scripting/scriptcanvas/custom-nodes-dynamic-data)  |
+| DynamicDataType |  Allows the user to specify a macro category of dynamic typing information\. DynamicDataType has the following supported values:   |
 | DynamicGroup | Unifies a group of dynamically typed slots\. When one slot has a type, all slots in the group share the same type\. This attribute is useful for ensuring that passthrough values or operands all share a common type\. |
 | RestrictedTypeContractTag | Restricts the data types that the dynamically typed slot accepts\. Takes an argument that is a list of supported data types\. |
 

@@ -10,9 +10,7 @@ title: Debugging Issues
 | This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in O3DE Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [O3DE Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
 
 O3DE provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
-+ [Character skeleton debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-model-debugging.html) - Use the `p_draw_helpers` console variable to debug character skeleton issues\.
 + [Cinematics debugging](/docs/user-guide/visualization/cinematics/debugging.md) - Debug cinematics issues\.
-+ [Mannequin debugging](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/mannequin-debugging-intro.html) - Debug Mannequin system issues\.
 + [Particle debugging](/docs/userguide/particles/debugging.md) - Debug particles\.
 + [Vegetation debugging](/docs/userguide/vegetation/debugging.md) - Debug vegetation objects\.
 

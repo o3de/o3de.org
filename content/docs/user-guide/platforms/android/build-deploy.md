@@ -20,9 +20,6 @@ weight: 300
 
  During development, your O3DE project connects to the Shader Compiler to generate the shaders for your device\. To do this, by set up a reverse proxy between the Android device and the host machine, in order to connect to the Asset Processor\. Note that through the VFS you can connect to a remote Asset Processor, which will handle shader compilation\. Follow the steps in [Serving assets over the Virtual File System \(VFS\)](/docs/userguide/mobile/android/configure-project#android-vfs) to configure VFS\.
 
-**Important**
- The Shader Compiler only runs on Windows PCs\. If you're using another environment to develop your Android game, you'll need access to a server with the Shader Compiler running and accessible through a firewall\. One option is to run a [Windows GPU\-based EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/accelerated-computing-instances.html#gpu-instances)\. For more information on running a dedicated Shader Compiler service, see [Remote Shader Compiler](/docs/userguide/materials/shaders/custom-dev-remote-compiler.md)\.
-
 **To connect to the Shader Compiler**
 
 1. Open the `lumberyard_install_dir\dev\system_android_es3.cfg` file in a text editor\.
