@@ -12,7 +12,7 @@ In this topic, you'll learn to create your own fork of the Open 3D Engine (O3DE)
 
 ## Prerequisites
 
-O3DE documentation uses the *fork and pull model* for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub and work locally on your computer to edit documentation. You then submit PRs from your fork for review. You need to set up a few things before you proceed:
+O3DE documentation uses the *fork and pull model* for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review. You need to set up a few things before you proceed:
 
 * Install **Git** version control software. Get Git here [Git Downloads](https://git-scm.com/downloads).
 
@@ -34,13 +34,13 @@ The contribution process hs these four basic steps:
 
 1. Respond to feedback in your PRs until the changes are approved and merged.
 
-A fork is your own copy of `o3de:main` on GitHub. You can do anything you like within your fork, though it is recommend that keep your fork synced with `o3de:main`, and work within branches in your fork. Working this way ensures the integrity of `o3de:main` and makes it easy for you to work at your own pace, experiment with changes along the way, and collaborate with other contributors. To create a fork, perform the steps below:
+A fork is your own copy of `o3de:main` on GitHub. You can do anything you like within your fork, though it is recommend that you keep your fork synced with `o3de:main`, and work within branches in your fork. Working this way ensures the integrity of `o3de:main` and makes it easy for you to work at your own pace, experiment with changes, and collaborate with other contributors. To create a fork, perform the steps below:
 
 1. Go to the [O3DE docs repo](https://github.com/o3de/o3de.org).
 
 2. Fork `o3de:main`. Choose the **Fork** button in the upper right hand corner of the page. For more information on creating forks, see [Fork a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-3. Find your fork of `o3de:main`. Choose your profile icon in the upper-right corner of the GitHub page. Select **Your repositories** from the list. On your repositories page, choose the **o3de.org** repository. The page displays a directory listing in a table of your fork of `o3de:main`, with some information about recent changes.
+3. Find your fork of `o3de:main`. Choose your profile icon in the upper-right corner of the GitHub page. Select **Your repositories** from the list. On your repositories page, choose the **o3de.org** repository. The page displays a directory listing of your fork with information about recent changes.
 
 {{< important >}}
 There is one very important thing to take note about your fork. At the very top of the repo listing, GitHub shows the status of your fork. **"This branch is even with o3de:main."** If your fork or the selected branch has not been synced, the message will tell you how many commits behind it is. If you've made commits to the fork or branch that have not been merged into `o3de:main`, it will tell you how many commits ahead it is. You need to maintain your fork and its branches to keep them current with `o3de:main`. You learn to maintain your fork below in [Sync your clone](#sync-your-clone).
@@ -85,7 +85,7 @@ For more information on working with forks, see [Working with forks](https://doc
 
 ### Sync your clone
 
-Now you can *sync* your clone. Syncing is the process of pull the latest changes from a source repository to a clone. In a terminal, in the root of your `o3de.org` clone, perform the steps below:
+Now you can *sync* your clone. Syncing is the process of pulling the latest changes from a source repository to a clone. In a terminal, in the root of your `o3de.org` clone, perform the steps below:
 
 1. Make sure you are in the main branch.
 
@@ -149,7 +149,7 @@ Hugo is the static site builder used by O3DE documentation. Once you have Hugo i
 
 ### Run a Hugo server
 
-Now you can test you set up by running a local Hugo server and viewing the O3DE docs produced by your clone.
+Now you can test your set up by running a local Hugo server and viewing the O3DE docs produced by your clone.
 
 1. In the terminal `cd` to the root of your o3de.org clone.
 
@@ -221,7 +221,7 @@ As you work on contributions and respond to feedback in the PR process, you may 
     git pull
     ```
 
-1. Push the changes to your branch on GitHub.
+1. Push the changes to your fork on GitHub.
 
     ```shell
     git push origin
