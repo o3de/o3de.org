@@ -7,19 +7,21 @@ weight: 600
 
 {{< preview-new >}}
 
-There are many folders and files in the O3DE docs structure, but as a contributor, you will be interested in some specific areas. The areas of interest are highlighted in the diagram below:
-
-![O3DE directory structure diagram.](/images/contributing/to-docs/o3de-directory-structure.svg "O3DE important directories.")
-
-The are two high level directories of interest:
+There are many folders and files in the O3DE docs directory structure. If you are a new contributor, it can be a puzzle to sort out where to find or place topics and images you'd like to contribute. The structure is actually easy to navigate when you know a couple specific high level directories.
 
 * `/content/docs/`: The root directory of the Markdown (`.md`) files that make up the documentation for the various O3DE guides.
 
-* `/static/images/`: The root directory of the images (`.png`, `jpg`, and `.svg`) ued in the various O3DE guides.
+* `/static/images/`: The root directory of the image (`.png`, `jpg`, and `.svg`) files used in the various O3DE guides.
+
+The overwhelming majority of content contributions will reside somewhere in the two directories above. The structure beneath each of these directories is identical and easy to navigate.
 
 {{< note >}}
 The directory structure below `/static/images/` mirrors the directory structure below `/content/docs/`. When adding images to your topics, make sure to place them in the appropriate directory. In some instances, you may need to create new directories in `/static/images/` to replicate the structure of `/content/docs/`.
 {{< /note >}}
+
+In the structure below `/content/docs/` and `/static/images/`, directories map to the various O3DE documentation guides. You will most likely be interested in just a few specific areas. These areas of interest are highlighted in the diagram below:
+
+![O3DE directory structure diagram.](/images/contributing/to-docs/o3de-directory-structure.svg "O3DE important directories.")
 
 The highlighted directories in the above diagram are where most contributions will be made:
 
@@ -37,12 +39,10 @@ The structure beneath each of the above directories is reflected in the table of
 
 The remaining directories are less likely to be of interest to individual contributors because their topics are generated trough some other process, or because their topics are not directly related to using O3DE.
 
-* `api`: Maps to the [**API Reference**](/docs/api/) section in the O3DE docs. The API reference for O3DE which is generated through automation.
+* `api`: Maps to the [**API Reference**](/docs/api/) section in the O3DE docs. The API reference for O3DE is generated through an automated process.
 
 * `contributing`: Maps to the [**Contribute**](/docs/contributing/) section in the O3DE docs. Contribute contains information on contributing to O3DE code and documentation. You are here.
 
-* `release-notes`: Maps to the [**Release Notes**](/docs/release-notes/) section in the O3DE docs. Release Notes are release specific information for O3DE that is provided by the various O3DE Special Interest Groups.
+* `release-notes`: Maps to the [**Release Notes**](/docs/release-notes/) section in the O3DE docs. Release Notes contains release specific information for O3DE that is provided by the various O3DE Special Interest Groups.
 
-* `tools-ui`: Maps to the [**Tools UI Developer's Guide**](/docs/tools-ui/) section in the O3DE docs. User information on UI design concepts, framework, and widgets used to create tools and applications for O3DE.
-
-With this high-level understanding of the O3DE docs structure, continue to the next topic, [Write Documentation](/docs/contributing/to-docs/write-documentation).
+* `tools-ui`: Maps to the [**Tools UI Developer's Guide**](/docs/tools-ui/) section in the O3DE docs. This guide has information on design concepts, framework, and UI widgets used to create tools and applications for O3DE.
