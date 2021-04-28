@@ -104,4 +104,4 @@ You can also overcome this issue by using a gradient modifier on your existing g
 
 1. To produce a swizzling effect on the y\-axis, use the following values or a variation on them\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/vegetation/procedures-adding-modifiers)
+

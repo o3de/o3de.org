@@ -11,4 +11,4 @@ weight: 150
 
 ## Open 3D Engine Contribution: Overview of the O3DE Open-source Project
 
-![Overview chart of the O3DE contribution workflow.](/images/contributor-guide/o3de-user-workflow.png)
+![Overview chart of the O3DE contribution workflow.](/images/contributing/to-code/o3de-user-workflow.png)

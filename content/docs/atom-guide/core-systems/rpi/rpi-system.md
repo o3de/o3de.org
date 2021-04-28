@@ -19,7 +19,7 @@ A **scene** represents a rendering context. Commonly, we need an application to 
 In Atom RPI, scenes are defined by the `Scene` class. The RPI system must have at least one scene. Scenes are independent of each other, and must have their own scene Shader Resource Group (SRG) to provide related constant buffer data.
 
 ### Pass
-A **pass** is where the GPU command submissions are handled. GPU commands, such as draw commands, compute commands, or copy commands must be submitted in a pass. For more information on passes, see the [Pass System](pass-system.md) section. 
+A **pass** is where the GPU command submissions are handled. GPU commands, such as draw commands, compute commands, or copy commands must be submitted in a pass. For more information on passes, see the [Pass System](../pass-system/pass-system/) section. 
 
 ### Render Pipeline
 A **render pipeline** defines how to render a scene.
@@ -42,4 +42,4 @@ RPI system simulation is used primarily for graphics features that are computed 
 ## Draw Data Flow
 Feature processors prepare draw packets and add them to views. (Draw packets are collections of draw items, which are data to be rendered.) Views filter the draw items from the draw packets into different groups. They then sort each group of draw items. A pass requests a certain group of draw items from a view and then submits them. 
 
-For a more detailed explanation, see [Frame Rendering Process](../atom-architecture/frame-rendering-process.md).
+For a more detailed explanation, see [Frame Rendering Process](/core-systems/frame-rendering/).

@@ -36,7 +36,7 @@ option LightContributionT o_indirectLightContribution;
 option int o_numberOfTaps;
 ```
 
-When one or more shader options are declared, one of the SRGs in the shader must have a fallback key, through its SRG semantic (see [SRG Semantic](#srg-semantics-shaderresourcegroupsemantic)).
+When one or more shader options are declared, one of the SRGs in the shader must have a fallback key, through its SRG semantic (see [SRG Semantic](/docs/atom-guide/core-systems/shaders/azsl-reference/shader-resource-groups/#defining-an-srg-semantic)).
 
 ```glsl
 ShaderResourceGroupSemantic SRG_PerDraw
