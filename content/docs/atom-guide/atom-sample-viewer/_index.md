@@ -91,7 +91,7 @@ The following samples demonstrate rendering features in the RPI.
 | [MSAA](rpi-samples.md#msaa) |  |
 | [Multi-Render Pipeline](rpi-samples.md#multi-render-pipeline) |  |
 | [Multi-Scene](rpi-samples.md#multi-scene) |  |
-| [Multi-View Single Scene Aux Geom](rpi-samples.md#multi-view) |  |
+| [Multi-View Single Scene Aux Geom](rpi-samples.md#multi-view-single-scene-aux-geom) |  |
 | [Root Constants](rpi-samples.md#root-constants) |  |
 | [Scene Reload Soak](rpi-samples.md#scene-reload-soak) |  |
 | [Shading](rpi-samples.md#shading) |  |
