@@ -20,8 +20,6 @@ In addition, input data should have these attributes:
 + Must be obtainable on demand by polling the state or value of an input device
 + Can be a custom payload, but adds no overhead when not used
 
-O3DE's input system satisfies all of these requirements and replaces the [deprecated input system](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/input-legacy.html)\.
-
 ## AZ Framework Input {#input-intro-azframework}
 
 The O3DE input interface is called AZ framework input\. AZ framework already provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management, so the AZ framework code location is a natural fit\.

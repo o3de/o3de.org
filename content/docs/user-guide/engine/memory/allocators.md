@@ -30,7 +30,7 @@ O3DE uses the following memory allocation functions\. You can find the source co
 
 
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/programming/memory/allocators)
+
 
 ## AZ Memory Allocators {#memory-allocators-az-memory-allocators}
 
