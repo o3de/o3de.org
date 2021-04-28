@@ -16,8 +16,6 @@ Open 3D Engine provides a set of tools for intelligently bundling assets and man
 | [Bundle assets for release](/docs/learning-guide/tutorials/packaging/tutorial-release/) | Learn how to create release builds and use the Asset Bundler to package assets\. |
 | [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles/) | Learn how to create multiple asset bundles for a game project\. |
 | [Creating Content Patch Bundles](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/) | Learn how to create delta content patches for your shipped games\. |
-<!-- tdoyon: Still need this page to replace link -->
-| [Migrating to the New Asset Bundler](/docs/userguide/assets/bundle/migrating.md) | Learn how to migrate projects from versions prior to Beta v1\.22 to the new asset bundler system\. |
 | [Resolving Missing Assets](/docs/user-guide/packaging/asset-bundler/assets-resolving.md) | Learn how to resolve missing assets and their dependencies\. |
 | [Verifying Asset Bundles](/docs/user-guide/packaging/asset-bundler/verifying-bundles/) | Learn about the tools and processes for managing and verifying your game project's assets\. |
 | [Tagging Asset Files](/docs/user-guide/packaging/asset-bundler/file-tagging.md) | Learn how to add and support tags for your asset files\. |
