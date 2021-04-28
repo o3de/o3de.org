@@ -69,16 +69,16 @@ url = "/community"
 weight = 3
 identifier = "community"
 
-# [[menu.main]]
-# name = "Community subitem placeholder"
-# url = "#"
-# weight = 1 
-# parent = "community"
+[[menu.main]]
+name = "Contribute"
+url = "/contribute"
+weight = 4
+identifier = "contribute"
 
 [[menu.main]]
 name = "Learn"
 url = "#"
-weight = 4
+weight = 5
 identifier = "learn"
 
 [[menu.main]]
