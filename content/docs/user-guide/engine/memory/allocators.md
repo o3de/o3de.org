@@ -226,13 +226,3 @@ namespace ScriptCanvas
 ## Static Initialization {#memory-allocators-static-initialization}
 
 In a monolithic build, at static initialization time \(before the allocators are bootstrapped\), allocations are routed directly to the underlying operating system\. These static allocations are tracked in a fixed size set and sent back to the OS when they are freed\. They are also reported separately to memory tracking in the `Global` category\. To discover the memory that is being allocated globally, set a breakpoint in `AZ::Internal::GlobalAlloc`\.
-
-## Legacy Memory Management {#memory-allocators-legacy-memory-management}
-
-`Cry` dynamic\-link libraries override the `new` and `delete` functions instead of tagging their classes with allocators\. This behavior is controlled with the `USE_CRY_NEW_AND_DELETE` macro \(`lumberyard_version\dev\Code\CryEngine\CryCommon\CryMemoryManager_impl.h`\)\. This practice should not be used outside `Cry` DLLs\. When compiled monolithically, the `LegacyAllocator` catches any uses of global `new` or `delete`\. This allows all allocations to be tracked and managed\.
-
-**Note** 
-All `Cry` static functions that allocate memory have been removed or wrapped in `StaticInstance<T>`, which creates the functions only when the functions are first accessed\. `StaticInstance<T>` can be used in any DLL which depends on `CryCommon` and includes the `lumberyard_version\dev\Code\CryEngine\CryCommon\platform_impl.h` file\.
-
-**Note**
-Within AZ code, there is a `NewAndDelete.inl` file in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\` directory\. You can use this code within a gem DLL, but only in nonmonolithic mode\. We do not recommended using this code except to track down untagged classes or allocations\.

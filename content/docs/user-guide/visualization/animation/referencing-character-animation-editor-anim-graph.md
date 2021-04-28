@@ -8,7 +8,7 @@ title: Referencing External Anim Graphs
 
 A node\-based animation system that has thousands of nodes can be difficult to manage\. O3DE's **EMotion FX Animation Editor** uses hierarchical nodes that help alleviate this problem, but universal\-level changes to game logic can still be challenging\.
 
-In O3DE, you can create **Animation Editor** reference nodes to reference external animation graph \(anim graph\) files\. This helps reduce the scale and complexity of anim graphs and minimize human error\. Reference nodes behave as the root state machine of the anim graphs that they reference and always output one pose\.
+**Animation Editor** reference nodes solve this by offering references to external animation graph \(anim graph\) files\. This helps reduce the scale and complexity of anim graphs and minimize human error\. Reference nodes behave as the root state machine of the anim graphs that they reference and always output one pose\.
 
 **Topics**
 + [Benefits](#character-animation-editor-anim-graph-referencing-benefits)

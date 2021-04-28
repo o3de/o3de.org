@@ -6,7 +6,7 @@ title: Adding Variable References in Script Canvas Nodes
 
 {{< preview-migrated >}}
 
-Introduced in v1\.24 of O3DE, **variable references** provide a shortcut for getting and setting variable values directly from the Script Canvas nodes that use them\. Any data pin can be converted to a variable reference by dragging a variable from the **Variable Manager** directly onto the pin\.
+**Variable references** provide a shortcut for getting and setting variable values directly from the Script Canvas nodes that use them\. Any data pin can be converted to a variable reference by dragging a variable from the **Variable Manager** directly onto the pin\.
 
 **To create a variable reference**
 + Drag a variable from the Variable Manager onto a data input pin to create an input reference, or to a data output pin to create an output reference\.

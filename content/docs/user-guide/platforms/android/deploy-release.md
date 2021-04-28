@@ -51,7 +51,7 @@ weight: 400
 
  This enables your ability to produce release builds\. In order to switch back to performing development builds, change `BUILD_ENVIRONMENT` back to **Development**\.
 
-## Create expansion files \(OBBs\) {#android-create-expansion}
+## Create expansion files \(OBBs\)
 
  The Google Play Store has limitations on how applications can be distributed\. Android application packages \(APKs\) are limited to 100MB in size\. To ship larger applications, you should use either [dynamic content delivery](/docs/userguide/gems/cloud-canvas/dc-manager.md) or Android expansion files\. The O3DE engine has support for downloading, checking, and extracting expansion files \- all you have to do is create them\. Google Play allows for uploading two separate OBB files, `main` and `patch`, which have a size limit of 2\.0Gb each\.
 

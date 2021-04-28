@@ -143,7 +143,7 @@ The following diagram shows the comparison process and the outputs for this exam
 ### Prerequisites {#how-to-perform-list-comparisons-prereqs}
 
 To complete the procedures in this tutorial, make sure that you have the following set up:
-+ An installed and configured installation of Open 3D Engine.
++ An installed and configured version of Open 3D Engine.
 + An O3DE project ready to build and compile. 
 
 ### Setup {#how-to-perform-list-comparisons-setup}

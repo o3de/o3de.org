@@ -57,9 +57,9 @@ Enter the minimum size of the handle in pixels\.
 Enter a text string\. This string is sent as an action on the UI canvas when the scroll bar changes values\.
 **Actions**, **End Change**
 Enter a text string\. This string is sent as an action on the UI canvas when the scroll bar has finished changing values\.
-**Fade**, **Auto Fade When Not In Use** \(v1\.24 and later\)
+**Fade**, **Auto Fade When Not In Use**
 Select the check box to enable the scrollbar to fade to transparency after it is not used for a set amount of time\. Specify the delay time in **Fade Delay**\.
-**Fade**, **Fade Delay** \(v1\.24 and later\)
+**Fade**, **Fade Delay**
 Enter the delay in seconds before the scrollbar begins fading to transparency\. Requires **Auto Fade When Not In Use** to be checked\.
-**Fade**, **Fade Speed** \(v1\.24 and later\)
+**Fade**, **Fade Speed**
 Enter the time in seconds that it will take for the scrollbar to completely fade to transparency\. Requires **Auto Fade When Not In Use** to be checked\.
