@@ -10,6 +10,7 @@ Otherwise, documentation is browsable in this repository at `content/docs`. API 
 
 You'll need:
 
+* Golang
 * **[Hugo (extended version)](https://gohugo.io/)** as a static site generator.
 * [NodeJS](https://nodejs.org), [npm](https://www.npmjs.com/), and [yarn](https://yarnpkg.com/).
  
