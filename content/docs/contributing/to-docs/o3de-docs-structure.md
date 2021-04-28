@@ -25,13 +25,13 @@ In the structure below `/content/docs/` and `/static/images/`, directories map t
 
 The highlighted directories in the above diagram are where most contributions will be made:
 
-* `atom-guide`: Maps to the [**Atom Render**](/docs/atom-guide/) section in the O3DE docs. Atom Guide contains feature and reference documentation for Atom that is exclusive to Atom Renderer. Topics that deal with the connection between Atom and O3DE, and using Atom within the context of O3DE, are in the various O3DE guides.
+* `atom-guide`: The [**Atom Render**](/docs/atom-guide/) section in the O3DE docs. The Atom Guide contains feature and reference documentation for Atom that is exclusive to Atom Renderer. Topics that deal with the connection between Atom and O3DE, and using Atom within the context of O3DE, are in the various O3DE guides.
 
-* `learning-guide`: Maps to the [**Tutorials & Examples**](/docs/learning-guide/) section in the O3DE docs. Tutorials and Examples contains user tutorials, a cookbook, and sample documentation. Tutorials should only use assets that are part of the O3DE distribution, are freely available, or can be quickly and easily replicated in open source content creation tools. The Cookbook section contains targeted recipes that demonstrate how to perform specific tasks, such as script canvas snippets. The Cookbook is a fantastic place for O3DE users to make quick, useful contributions. The Samples section contains documentation for samples that are included with the O3DE distribution.
+* `learning-guide`: The [**Tutorials & Examples**](/docs/learning-guide/) section in the O3DE docs. Tutorials and Examples contains user tutorials, a cookbook, and sample documentation. Tutorials should only use assets that are part of the O3DE distribution, are freely available, or can be quickly and easily replicated in open source content creation tools. The Cookbook section contains targeted recipes that demonstrate how to perform specific tasks, such as script canvas snippets. The Cookbook is a fantastic place for O3DE users to make quick, useful contributions. The Samples section contains documentation for samples that are included with the O3DE distribution.
 
-* `user-guide`: Maps to the [**User Guide**](/docs/user-guide/) section in the O3DE docs. User Guide contains feature and reference documentation for the tools, gems, components, and systems that are part of the O3DE distribution.
+* `user-guide`: The [**User Guide**](/docs/user-guide/) section in the O3DE docs. The User Guide contains feature and reference documentation for the tools, gems, components, and systems that are part of the O3DE distribution.
 
-* `welcome-guide`: Maps to the [**Welcome**](/docs/welcome-guide/) section in the O3DE docs. Welcome contains an overview of O3DE, an installation guide, tutorials to help new users get started, and links to various hubs for O3DE users.
+* `welcome-guide`: The [**Welcome**](/docs/welcome-guide/) section in the O3DE docs. The Welcome section contains an overview of O3DE, an installation guide, tutorials to help new users get started, and links to various hubs for O3DE users.
 
 {{< note >}}
 The structure beneath each of the above directories is reflected in the table of contents that appears on the left in each guide. Keep this in mind when planning and adding new topics.
@@ -41,8 +41,8 @@ The remaining directories are less likely to be of interest to individual contri
 
 * `api`: Maps to the [**API Reference**](/docs/api/) section in the O3DE docs. The API reference for O3DE is generated through an automated process.
 
-* `contributing`: Maps to the [**Contribute**](/docs/contributing/) section in the O3DE docs. Contribute contains information on contributing to O3DE code and documentation. You are here.
+* `contributing`: Maps to the [**Contribute**](/docs/contributing/) section in the O3DE docs. This is all the information on contributing to O3DE code and documentation. You are here.
 
-* `release-notes`: Maps to the [**Release Notes**](/docs/release-notes/) section in the O3DE docs. Release Notes contains release specific information for O3DE that is provided by the various O3DE Special Interest Groups.
+* `release-notes`: The [**Release Notes**](/docs/release-notes/) section in the O3DE docs. The Release Notes contain release-specific information for O3DE that is provided by O3DE Special Interest Groups.
 
-* `tools-ui`: Maps to the [**Tools UI Developer's Guide**](/docs/tools-ui/) section in the O3DE docs. This guide has information on design concepts, framework, and UI widgets used to create tools and applications for O3DE.
+* `tools-ui`: The [**Tools UI Developer's Guide**](/docs/tools-ui/) section in the O3DE docs. This guide has information on design concepts, framework, and UI widgets used to create tools and applications for O3DE.
