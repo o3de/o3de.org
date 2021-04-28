@@ -25,14 +25,8 @@ The following table describes the `AZ_Tracing` macros and their uses\.
 
 ## Suppressing AZ Trace Messages in Unit Tests {#cpp-best-practices-lumberyard-tracing-unit-tests}
 
-You can use macros to suppress AZ trace messages\. Starting in O3DE version 1\.21, the following macros for suppressing AZ Trace messages in the AZ Unit Test framework have equivalent macros with new names\. The old macros will be removed in a future release\.
+You can use macros to suppress AZ trace messages\.
 
+* `AZ_TEST_START_ASSERTTEST` - Enable `AZ_Error` and `AZ_Assert` trace messages
+* `AZ_TEST_STOP_ASSERTTEST` - Disable `AZ_Error` and `AZ_Assert` trace messages
 
-| Old Macro Name | New Macro Name |
-| --- | --- |
-| AZ\_TEST\_START\_ASSERTTEST | AZ\_TEST\_START\_TRACE\_SUPPRESSION |
-| AZ\_TEST\_STOP\_ASSERTTEST | AZ\_TEST\_STOP\_TRACE\_SUPPRESSION |
-
-The old macros only suppressed the *AZ\_Error* and *AZ\_Assert* trace messages, but their names implied application termination\. The new macros are equivalent in functionality to the old macros but have names that more accurately reflect their functionality\.
-
-For source code, see `lumberyard_version\dev\Code\Framework\AzCore\AzCore\UnitTest\UnitTest.h`\.

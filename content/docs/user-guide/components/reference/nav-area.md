@@ -33,7 +33,7 @@ You can use a **[Navigation Seed](/docs/user-guide/components/nav-seed.md)** com
 1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism#component-polygon-prism-height-adjustment) if necessary\.
 
    If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.
-![\[Enable Show Navigation Areas and View Agent Type in O3DE Editor.\]](/images/user-guide/component/component-nav-area-1.1.png)
+![\[Enable Show Navigation Areas and View Agent Type in O3DE Editor.\]](/images/user-guide/component/component-nav-area.png)
 
 **To view the generated Navigation Area mesh** {#render-navigation-mesh}
 

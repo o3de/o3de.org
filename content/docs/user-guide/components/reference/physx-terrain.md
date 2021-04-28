@@ -20,7 +20,7 @@ For more information about using PhysX components, see [Simulating physics behav
 
 ## PhysX Terrain Component Properties {#physx-terrain-component-properties}
 
-![\[PhysX Terrain component properties.\]](/images/user-guide/component/physx/ui-phsx-terrain-component-properties-1.27.png)
+![\[PhysX Terrain component properties.\]](/images/user-guide/component/physx/ui-phsx-terrain-component-properties.png)
 
 
 | Property | Description |

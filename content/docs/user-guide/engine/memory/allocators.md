@@ -78,8 +78,6 @@ We recommend that each O3DE gem or logical subsystem create a `ChildAllocator` t
 
 If you choose to write your own schema, be aware that caching significant chunks of memory can be problematic\. Such caching can hamper the ability of other systems to evolve to fit the content in your game\. Unless you have specific requirements, we recommend that you create a `ChildAllocator` that eventually uses the `SystemAllocator`\. Using a `ChildAllocator` ensures that your memory is as recoverable and reusable as possible\.
 
-Prior to O3DE version 1\.16, the most common mechanism for creating a new allocator was to inherit from `SystemAllocator`\. This practice, which creates a completely separate free list of memory usage, results in the problem of memory being spread among disparate caches\. In most cases, it is better to use the inheritance `ChildAllocator<SystemAllocator>`, which also makes it trivial to swap the base class of your custom allocator\.
-
 **To create an allocator**
 
 1. Choose a schema to use, write a custom schema, or choose an existing allocator that you want to modify\. For more information, see [AZ Allocator Schemas](#memory-allocators-az-allocator-schemas)\.
@@ -228,17 +226,3 @@ namespace ScriptCanvas
 ## Static Initialization {#memory-allocators-static-initialization}
 
 In a monolithic build, at static initialization time \(before the allocators are bootstrapped\), allocations are routed directly to the underlying operating system\. These static allocations are tracked in a fixed size set and sent back to the OS when they are freed\. They are also reported separately to memory tracking in the `Global` category\. To discover the memory that is being allocated globally, set a breakpoint in `AZ::Internal::GlobalAlloc`\.
-
-## Legacy Memory Management {#memory-allocators-legacy-memory-management}
-
-Starting in O3DE version 1\.16, all `Cry*` allocation routines route to `AZ::LegacyAllocator`, which you can find in the `lumberyard_version\dev\Code\CryEngine\CryCommon\LegacyAllocator.h` file\. `LegacyAllocator` has the same lifetime as `OSAllocator` and obtains its memory from `OSAllocator`\.
-
-`Cry` dynamic\-link libraries override the `new` and `delete` functions instead of tagging their classes with allocators\. This behavior is controlled with the `USE_CRY_NEW_AND_DELETE` macro \(`lumberyard_version\dev\Code\CryEngine\CryCommon\CryMemoryManager_impl.h`\)\. This practice should not be used outside `Cry` DLLs\. When compiled monolithically, the `LegacyAllocator` catches any uses of global `new` or `delete`\. This allows all allocations to be tracked and managed\.
-
-**Note**
-As of O3DE version 1\.16, `operator new` and `operator delete` overrides are restricted to Cry DLLs\.
-
-All `Cry` static functions that allocate memory have been removed or wrapped in `StaticInstance<T>`, which creates the functions only when the functions are first accessed\. `StaticInstance<T>` can be used in any DLL which depends on `CryCommon` and includes the `lumberyard_version\dev\Code\CryEngine\CryCommon\platform_impl.h` file\.
-
-**Note**
-Within AZ code, there is a `NewAndDelete.inl` file in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\` directory\. You can use this code within a gem DLL, but only in nonmonolithic mode\. We do not recommended using this code except to track down untagged classes or allocations\.
