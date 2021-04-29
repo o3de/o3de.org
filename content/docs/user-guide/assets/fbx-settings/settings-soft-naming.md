@@ -44,7 +44,7 @@ You can use the System Entity Editor to view the current soft naming conventions
 1. Expand the **Scene Processing Config** section to find the soft naming conventions\.
 **Note**
 If the **Scene Processing Config** section doesn't appear, choose **Add Component** and then choose **Scene Processing Config**\.
-![\[Example System Entity Editor for default soft naming conventions.\]](/images/user-guide/fbx/ui-fbx-soft-naming-conventions-1.27.png)
+![\[Example System Entity Editor for default soft naming conventions.\]](/images/user-guide/fbx/ui-fbx-soft-naming-conventions.png)
 
 ## Soft naming convention parameters {#understanding-the-soft-naming-convention-parameters}
 

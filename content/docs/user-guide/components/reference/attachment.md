@@ -25,7 +25,7 @@ The **Attachment** component has the following properties\.
 | Rotation offset |  Specifies the x, y, and z local rotation offset from the target bone\.  |
 |  **Scale offset**  |  Specifies the x, y, and z local scale offset from the target bone\.  |
 | Attached initially |  Specifies whether to attach to the target entity automatically\.  |
-|  **Scaling**  |  Specifies how the object scaling is determined\. You can specify the following values: [\[See the AWS documentation website for more details\]](/docs/userguide/components/attachment)  |
+|  **Scaling**  |  Specifies how the object scaling is determined\. You can specify the following values:   |
 
 ## EBus Request Bus Interface {#component-attachment-legacy-ebusrequest}
 

@@ -8,7 +8,7 @@ title: O3DE UI styled dock widget
 
 Use **styled dock widgets** in conjunction with `DockMainWindow` and `FancyDocking` components to create the custom docking solution in O3DE called "fancy docking", which provides users with a variety of options for arranging their window layout\.
 
-Fancy docking provides four docking drop zones around the edge of a target, and one in the center that's used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing O3DE Editor](/docs/userguide/editor/customizing)\.
+Fancy docking provides four docking drop zones around the edge of a target, and one in the center that's used to dock a window as a tabbed pane\. Dragging a window or toolbar over an interface element or the edges of the window causes docking targets to appear to show you where you can dock\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\. To learn more fancy docking features and controls, see [Customizing O3DE Editor](/docs/user-guide/editor/customizing/)\.
 
 ![\[component fancy docking editor\]](/images/tools-ui/component-fancy-docking-editor.gif)
 
@@ -26,7 +26,7 @@ Fancy docking can use up to five styled dock widgets added to a `DockMainWindow`
 
 1.  Construct a `AzQtComponents::StyledDockWidget` for the center and add it to the main window\.
 
-For the complete working example pictured in the preceding image, be sure to look at the **Styled Dock Widget** page in the [O3DE Qt control gallery tool](uidev-control-gallery.md), and browse the source code for that page\. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.cpp`\.
+For the complete working example pictured in the preceding image, be sure to look at the **Styled Dock Widget** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), and browse the source code for that page\. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.cpp`\.
 
 The following code shows a simplistic example of the styled dock widget\.
 

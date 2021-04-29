@@ -14,9 +14,6 @@ Manage assert notifications in O3DE with the `sys_asserts` console variable\. Th
 | 1 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This is the default value\. |
 | 2 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This value displays a dialog box with options to ignore the current assert, ignore all asserts, or break on the assert\. |
 
-**Note**
-Prior to O3DE version 1\.21, when a debugger was attached and an assert was triggered, the debugger triggered a breakpoint on the assert\. In the new implementation, asserts print to the log at setting `sys_asserts=1` and display a dialog box at setting `sys_asserts=2`\. This gives you the option to break on the assert rather breaking automatically\.
-
 ## Example Outputs {#debugging-using-asserts-example-outputs}
 
 `sys_asserts=1` produces output similar to the following:

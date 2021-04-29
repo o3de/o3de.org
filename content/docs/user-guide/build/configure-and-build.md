@@ -103,7 +103,7 @@ For the full set of flags used by the compiler for each build configuration, see
 * `cmake/Platform/<platform ID>/Configurations_<platform ID>.cmake`
 
 {{< note >}}
-On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information on building on Linux, see [Deploy a O3DE multiplayer project's server on Linux](linux-build-lumberyard-executable.md).
+On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information on building on Linux, see [Deploy a O3DE multiplayer project's server on Linux](/docs/user-guide/platforms/linux/build-lumberyard-executable/).
 {{< /note >}}
 
 The following table is a high-level overview of what each build configuration does.

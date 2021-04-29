@@ -7,10 +7,6 @@ weight: 200
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| AZ Code Generator is in preview release and is subject to change\. |
-
 AZ Code Generator uses the [Jinja2](http://jinja.pocoo.org/) template engine for Python to render its output\. The Jinja template engine outputs plain text with embedded variable and logic statements\.
 
 Jinja templates are designed to be highly readable and mimic the overall structure of the desired output\. They are processed top to bottom\. Any text outside of the control block in the template is sent directly to the output\.
