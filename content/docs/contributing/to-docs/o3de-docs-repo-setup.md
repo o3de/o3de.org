@@ -12,7 +12,9 @@ In this topic, you'll learn to create your own fork of the Open 3D Engine (O3DE)
 
 ## Prerequisites
 
-O3DE documentation uses the *fork and pull model* for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review. You need to set up a few things before you proceed:
+O3DE documentation uses the *fork and pull model* for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review. 
+
+You need to set up a few things before you proceed:
 
 * Install **Git** version control software. Get Git here [Git Downloads](https://git-scm.com/downloads).
 
@@ -24,26 +26,26 @@ O3DE documentation uses the *fork and pull model* for contributions. As a contri
 
 ## What the fork?
 
-The contribution process hs these four basic steps:
+The contribution process has these four basic steps:
 
 1. Create branches for your changes in your fork of the O3DE docs repo.
 
 1. Commit your changes to branches on your fork.
 
-1. Submit PRs from the branches on your fork to `o3de:main`.
+1. Submit PRs from the branches on your fork to `o3de.org:main`.
 
 1. Respond to feedback in your PRs until the changes are approved and merged.
 
-A fork is your own copy of `o3de:main` on GitHub. You can do anything you like within your fork, though it is recommend that you keep your fork synced with `o3de:main`, and work within branches in your fork. Working this way ensures the integrity of `o3de:main` and makes it easy for you to work at your own pace, experiment with changes, and collaborate with other contributors. To create a fork, perform the steps below:
+A fork is your own copy of `o3de.org:main` on GitHub. You can do anything you like within your fork, though it is recommend that you keep your fork synced with `o3de.org:main`, and work within branches in your fork. Working this way ensures the integrity of `o3de.org:main` and makes it easy for you to work at your own pace, experiment with changes, and collaborate with other contributors. To create a fork, perform the steps below:
 
 1. Go to the [O3DE docs repo](https://github.com/o3de/o3de.org).
 
-2. Fork `o3de:main`. Choose the **Fork** button in the upper right hand corner of the page. For more information on creating forks, see [Fork a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
+2. Fork `o3de.org:main`. Choose the **Fork** button in the upper right hand corner of the page. For more information on creating forks, see [Fork a repo](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo).
 
-3. Find your fork of `o3de:main`. Choose your profile icon in the upper-right corner of the GitHub page. Select **Your repositories** from the list. On your repositories page, choose the **o3de.org** repository. The page displays a directory listing of your fork with information about recent changes.
+3. Find your fork of `o3de.org:main`. Choose your profile icon in the upper-right corner of the GitHub page. Select **Your repositories** from the list. On your repositories page, choose the **o3de.org** repository. The page displays a directory listing of your fork with information about recent changes.
 
 {{< important >}}
-There is one very important thing to take note about your fork. At the very top of the repo listing, GitHub shows the status of your fork. **"This branch is even with o3de:main."** If your fork or the selected branch has not been synced, the message will tell you how many commits behind it is. If you've made commits to the fork or branch that have not been merged into `o3de:main`, it will tell you how many commits ahead it is. You need to maintain your fork and its branches to keep them current with `o3de:main`. You learn to maintain your fork below in [Sync your clone](#sync-your-clone).
+There is one very important thing to take note about your fork. At the very top of the repo listing, GitHub shows the status of your fork. **"This branch is even with o3de.org:main."** If your fork or the selected branch has not been synced, the message will tell you how many commits behind it is. If you've made commits to the fork or branch that have not been merged into `o3de.org:main`, it will tell you how many commits ahead it is. You need to maintain your fork and its branches to keep them current with `o3de.org:main`. You learn to maintain your fork below in [Sync your clone](#sync-your-clone).
 {{< /important >}}
 
 For more information on working with forks, see [Working with forks](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
@@ -63,7 +65,7 @@ For more information on working with forks, see [Working with forks](https://doc
 
 ### Set the upstream for your clone
 
-`o3de:main` is the source of record for O3DE docs. You need to be able to pull new changes into your fork and from `o3de:main`, but you should **never** push directly to `o3de:main`. Changes are submitted  through PRs. In a terminal, perform the steps below:
+`o3de.org:main` is the source of record for O3DE docs. You need to be able to pull new changes into your fork and from `o3de.org:main`, and contributors don't have direct push access to `o3de.org:main`. Changes are submitted  through PRs. In a terminal, perform the steps below:
 
 1. `cd` into your new `o3de.org` clone.
 
@@ -93,7 +95,7 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
     git checkout main
     ```
 
-1. Fetch the latest upstream commits from `o3de:main`.
+1. Fetch the latest upstream commits from `o3de.org:main`.
 
     ```shell
     git fetch upstream
@@ -119,11 +121,11 @@ You must perform the above four steps whenever you need to ensure your fork is s
 
 Hugo is the static site builder used by O3DE documentation. Once you have Hugo installed, you can run a local server that will live reload the docs when changes are made, and allow you to preview the changes locally. To setup Hugo, follow the steps below.
 
-1. Get the **extended** Hugo binary here [Hugo release on GitHub](https://github.com/gohugoio/hugo/releases). The extended binary is required for some of the features the O3DE documentation site uses. On Windows, you can use [Chocolatey](https://chocolatey.org/) to install Hugo extended if you prefer.
+1. Get the **extended** Hugo binary here [Hugo release on GitHub](https://github.com/gohugoio/hugo/releases). The extended binary is required for some of the features that the O3DE documentation site uses. On Windows, you can use [Chocolatey](https://chocolatey.org/) to install Hugo extended if you prefer.
 
 1. If you do not use Chocolatey, you need to make sure the Hugo binary is in your executable environment path so you can run it from a terminal.
 
-    * On Linux or MacOS place the binary in a subdirectory of your `$PATH` environment variable, such as in `$HOME/bin` or `$HOME/.local/bin`. If you place the binary in a directory that is not in your `$PATH`, you must add the directory to your `$PATH` permanently. To add the directory containing the Hugo extended binary to your `$PATH` , use the command below:
+    * On Linux or MacOS, place the binary in a subdirectory of your `$PATH` environment variable, such as in `$HOME/bin` or `$HOME/.local/bin`. If you place the binary in a directory that is not in your `$PATH`, you must add the directory to your `$PATH` permanently. To add the directory containing the Hugo extended binary to your `$PATH` , use the command below:
 
         ```shell
         echo "export PATH=<full path to Hugo binary>:$PATH" >> $HOME/.zshrc
@@ -149,7 +151,7 @@ Hugo is the static site builder used by O3DE documentation. Once you have Hugo i
 
 ### Run a Hugo server
 
-Now you can test your set up by running a local Hugo server and viewing the O3DE docs produced by your clone.
+Now you can test your setup by running a local Hugo server and viewing the O3DE docs produced by your clone.
 
 1. In the terminal `cd` to the root of your o3de.org clone.
 
@@ -186,7 +188,7 @@ As a general rule follow, the steps in [Sync your clone](#sync-your-clone) befor
     ```
 
     {{< note >}}
-    When naming branches, use a short dash separated name that clearly denotes the contents of the branch. For example, `camera-follow-tutorial`.
+    When naming branches, we recommend a short dash separated name that clearly denotes the contents of the branch. For example, `camera-follow-tutorial`.
     {{< /note >}}
 
 2. Switch to your new branch.
@@ -205,7 +207,7 @@ If you go to your fork on GitHub, you can see this new branch in the branch list
 
 ## Maintain your branch
 
-As you work on contributions and respond to feedback in the PR process, you may need to get the latest changes from `o3de:main`. To maintain a branch, follow the steps below:
+As you work on contributions and respond to feedback in the PR process, you may need to get the latest changes from `o3de.org:main`. To maintain a branch, follow the steps below:
 
 1. Update your fork. Follow the steps in [Sync your clone](#sync-your-clone) to get the latest commits and push them to the main branch of your fork.
 
@@ -227,4 +229,4 @@ As you work on contributions and respond to feedback in the PR process, you may 
     git push origin
     ```
 
-At this point, you can start making contributions. We highly recommend you continue with this guide, however, so that you understand the directory structure, style, and terminology of the O3DE documentation. To learn more, continue to the next topic, [O3DE Docs Structure](/docs/contributing/to-docs/o3de-docs-structure).
+At this point, you can start making contributions. We highly recommend you continue reading this guide, however, so that you understand the directory structure, style, and terminology of the O3DE documentation. To learn more, continue to the next topic, [O3DE Docs Structure](/docs/contributing/to-docs/o3de-docs-structure).
