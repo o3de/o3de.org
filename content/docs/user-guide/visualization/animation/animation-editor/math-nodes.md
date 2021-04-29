@@ -95,7 +95,7 @@ The **Boolean Logic** node features a set of attributes that performs operations
 | Attribute | Description |
 | --- | --- |
 |  **Name**  |  Name of the node\.  |
-|  **Logic Function**  |  You can set the following functions on boolean inputs: [\[See the AWS documentation website for more details\]](/docs/userguide/animation/editor/math-nodes)  |
+|  **Logic Function**  |  You can set the following functions on boolean inputs:   |
 |  **Default Value**  |  Used as a second value when only one input value is specified\.  |
 |  **Float Result When True**  |  Sets a float value to output when the result of the boolean function is true \(`1`\)\. You must also use the **Float** output connector to output this value\.  |
 |  **Float Result When False**  |  Sets a float value to output when the result of the boolean function is false \(`0`\)\. You must also use the **Float** output connector to output this value\.  |

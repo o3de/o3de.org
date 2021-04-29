@@ -6,9 +6,6 @@ title: Using Profiler for VRAM
 
 {{< preview-migrated >}}
 
-****
-Profiler is in preview release and is subject to change\.
-
 You can use the video memory profiler \(VRAM profiler\) to determine which resources are contributing most to runtime VRAM usage in your game\.
 
  The VRAM profiler records the amount of video memory used by a game, including how many memory deallocations and allocations occurred during the capture\. This latter information is useful in tracking down rendering performance bottlenecks\.

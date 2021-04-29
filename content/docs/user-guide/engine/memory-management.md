@@ -36,7 +36,7 @@ Remember that the lifetime of a static variable lasts until the module in which 
 
 ### Static Local Variable Example {#cpp-best-practices-lumberyard-static-local-variable-example}
 
-The following example code from the O3DE version 1\.17 AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
+The following example code from AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
 
 **Example**
 

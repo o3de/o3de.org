@@ -8,10 +8,6 @@ weight: 300
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 O3DE supports compiling a Windows client for a multiplayer project and connecting to a Linux dedicated server\. You must do the following to ensure that the Windows client works properly on a Linux dedicated server:
 + [Compile the assets on a Windows computer](/docs/user-guide/tutorials/packaging/tutorial-release.md)
 + [Compile the server executable for use on a Linux computer](/docs/user-guide/platforms/linux/build-lumberyard-executable.md)

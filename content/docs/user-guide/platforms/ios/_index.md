@@ -28,7 +28,6 @@ O3DE has the following minimum requirements for iOS:
 To build apps for iOS devices, you must have the following:
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
 + iOS 13 SDK or later
-+ [O3DE Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
 + O3DE installed on a Windows computer
 + O3DE installed on a macOS computer
 + Familiarity with O3DE Editor, the Shader Compiler, and Asset Processor
