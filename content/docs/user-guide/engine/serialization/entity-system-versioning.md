@@ -20,12 +20,6 @@ Successful conversion of serialized data to a newer version requires careful pla
 + [Upgrade Class Builders](#component-entity-system-versioning-builders)
 + [Deprecation](#component-entity-system-versioning-deprecation)
 
-**Important**
-If you upgraded to O3DE v1\.23 or later from a previous version of O3DE, and you have not converted your slice files to the new slice file format, you must upgrade these files using the Slice Upgrade Pipeline before you can use the NameChange and TypeChange class builders\. For more information about this upgrade tool and how to use it, see [Converting Slices with the Slice Upgrade Pipeline](/docs/userguide/components/slice-upgrade-process.md)\.
-
-**Important**
-If you are using O3DE v1\.22 or earlier, be sure to read important information about [Avoiding Data Loss when Serializing Component Data](/docs/userguide/best-practices-for-component-data-serialization.md)\.
-
 ## Version Converters {#component-entity-system-versioning-converters}
 
 A version change can create incompatibilities that require data to be converted from one format to another\. To resolve this, you can implement a version converter that reformats data "on the spot" to maintain data compatibility\. For example, you might require a version converter if you change a data type or a container \(for example, an `AZStd::vector` becomes an `AZStd::unordered_map`\)\.

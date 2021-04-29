@@ -63,4 +63,4 @@ Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/inter
 **To edit a Mask component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Mask** and specify the following parameters, as appropriate:
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-mask)
+

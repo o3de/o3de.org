@@ -65,9 +65,6 @@ You'll use the Project Configurator tool to set the project that you're working 
 
 Then, launch the O3DE Editor, open one of the sample levels in the Sample Project, and start exploring\! We suggest following along with one of these written or video tutorials:
 +  [Learn O3DE in 20 Minutes](https://www.youtube.com/watch?v=E1NgI8urJ7o)
-+  [Set Up Open 3D Engine](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-setting-up.html) series
-+  [Creating a Controllable Entity](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-written-basics-of-motion-overview.html)
-+  [Basics of Motion](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-game-engine-101.html) series
 
  **Joining a Team**
 
@@ -116,9 +113,7 @@ We suggest that you begin your learning path by browsing the following set of O3
 +  [Vegetation Editor](/docs/userguide/vegetation/intro)
 
 Some specific tutorials you might want to look at include:
-+  [Import Assets into O3DE](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-importing-assets.html)
-+  [Animation System and Emotion FX](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-animation-intro.html)
-+  [Lighting](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-lighting.html)
++ ... ?
 
 ## Work as a designer<a name="ly-create-designer"></a>
 
@@ -160,14 +155,7 @@ We suggest that you begin your learning path by browsing the following set of O3
 +  [UI Editor](/docs/user-guide/interactivity/user-interface/editor/)
 
 Some specific tutorials you might want to look at include:
-+  [Creating a Controllable Entity](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-written-basics-of-motion-overview.html)
-+  [Script Canvas](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-script-canvas-intro.html) series
-+  [Basics of Motion](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-game-engine-101.html) series
-+  [Working with Slices](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-slices.html)
-+  [Simulate Physics](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-physics.html)
-+  [Modify Terrain](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-terrain.html)
-+  [Import Assets into O3DE](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-importing-assets.html)
-+  [Animation System and Emotion FX](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-animation-intro.html)
++ ... ?
 
 ## Work as a game engineer<a name="ly-create-programmer"></a>
 
@@ -193,10 +181,4 @@ Here is a basic set of O3DE tools and technologies to focus on:
 +  [Lua Editor](/docs/user-guide/scripting/lua/)
 
 Some specific tutorials you might want to look at include:
-+  [Creating a Controllable Entity](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-written-basics-of-motion-overview.html)
-+  [Import Assets into O3DE](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-importing-assets.html)
-+  [Script Canvas](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-script-canvas-intro.html) series
-+  [Working with Slices](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-slices.html)
-+  [Working with Gems](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-gems.html)
-+  [Simulate Physics](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-physics.html)
-+  [Animation System and Emotion FX](https://docs.aws.amazon.com/lumberyard/latest/tutorials/tutorials-animation-intro.html)
++ ... ?

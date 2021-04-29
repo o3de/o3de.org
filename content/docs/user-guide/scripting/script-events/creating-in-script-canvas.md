@@ -19,11 +19,11 @@ In O3DE Editor, you can create script events by using the Asset Editor\.
 1. In the **Asset Editor**, enter the information that defines the script event\.
 ![\[Creating a script event in the Asset Editor.\]](/images/user-guide/script-canvas-script-events-3.png)
 **Script Event Properties**
-[\[See the AWS documentation website for more details\]](/docs/userguide/scripting/events/creating-in-script-canvas)
+
 **Event Properties**
-[\[See the AWS documentation website for more details\]](/docs/userguide/scripting/events/creating-in-script-canvas)
+
 **Parameter Properties**
-[\[See the AWS documentation website for more details\]](/docs/userguide/scripting/events/creating-in-script-canvas)
+
 
 1. Choose **File**, **Save**, or press **Ctrl\+S**\.
 

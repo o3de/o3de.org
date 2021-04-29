@@ -20,7 +20,7 @@ Instead of manually copying values from one entity's position to another, you ca
 
    The following is a shortcut to use the ditto feature\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/transform-matching)
+
 
 ## Ditto a Group Selection {#ditto-group-selection}
 
@@ -38,7 +38,7 @@ You can use the ditto feature for a group of entities\. This makes it easier for
 
    See the following shortcut to use the ditto feature\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/transform-matching)
+
 
 ## Ditto a Group Selection to Local Space {#ditto-group-selection-local-space}
 
@@ -56,4 +56,4 @@ You can ditto a group of entities to local space so that you can modify entities
 
    See the following shortcut to use the ditto feature for a group selection\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/transform-matching)
+

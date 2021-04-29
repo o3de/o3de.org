@@ -33,7 +33,7 @@ The **Actor** component has the following properties\.
 | --- | --- |
 |  **Actor asset**  |  Specifies the actor file that you want to add to your entity\.   |
 |  **LOD Materials**  | Specifies the material that is linked to your actor asset\. |
-|  **Attachment type**  |  The **Actor** component has the following attachment types: [\[See the AWS documentation website for more details\]](/docs/userguide/components/actor)  |
+|  **Attachment type**  |  The **Actor** component has the following attachment types:   |
 | Draw skeleton |  Determines whether character joints are visible\.   |
 | Draw character |  Determines whether character mesh is visible\.  |
-| Skinning method |  Specifies the skinning method to use for the actor\. You can choose the following options: [\[See the AWS documentation website for more details\]](/docs/userguide/components/actor)  |
+| Skinning method |  Specifies the skinning method to use for the actor\. You can choose the following options:   |

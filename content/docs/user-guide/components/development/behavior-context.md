@@ -9,8 +9,6 @@ weight: 1500
 
 The behavior context works with *serialize context*, *edit context*, and *network context* to provide rich C\+\+ reflection\. The behavior context focuses on the runtime aspects of C\+\+ code and allows you to manipulate C\+\+ code and objects while they are being created\. All script bindings, including Lua, use this reflection\. Reflection is also used for modification of objects while in running state \(such as animating object properties\) and reading of current properties for component state transitions\. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts in order to implement reloading\. At a high level, the behavior context uses only a few primitives on which to build: properties, methods, classes, EBuses and attributes\.
 
-For C\+\+ API reference documentation on the behavior context, see the [BehaviorContext Class Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_behavior_context.html) in the [Open 3D Engine C\+\+ API Reference](https://docs.aws.amazon.com/lumberyard/latest/apireference/)\.
-
 ## Reflection API {#component-entity-system-behavior-context-reflection-api}
 
 This section describes how methods, properties, classes, and other primitives are used in the O3DE reflection API\.
