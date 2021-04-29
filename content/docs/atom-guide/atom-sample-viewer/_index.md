@@ -55,7 +55,7 @@ The following samples demonstrate rendering features in the RHI.
 | [Async Compute](rhi-samples.md#async-compute) | Demonstrates the use of asynchronous compute to render meshes with shadows, and to apply simple tonemapping during post-processing. |
 | [Bindless Prototype](rhi-samples.md#bindless-prototype) | Explores a method for supporting bindless resources by allocating a sizeable float buffer.  |
 | [Compute](rhi-samples.md#compute) | Demonstrates the functionality of a dispatch pipeline by calculating a 2D fractal on a compute shader. |
-| [Copy Queue](rhi-samples.md#copy-queue) |  |
+| [Copy Queue](rhi-samples.md#copy-queue) | Demonstrates queued uploads of data to the GPU while rendering. |
 | [Dual Source Blending](rhi-samples.md#dual-source-blending) | Demonstrates the functionality of dual source blending. |
 | [Indirect Rendering](rhi-samples.md#indirect-rendering) | Demonstrates indirect rendering by executing commands from the GPU rather than from the CPU.  |
 | [Input Assembly](rhi-samples.md#input-assembly) | Demonstrates how to handle vertex buffer generation on a compute shader, and how to declare shader inputs. |
