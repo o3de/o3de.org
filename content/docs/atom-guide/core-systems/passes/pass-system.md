@@ -130,7 +130,7 @@ A pass request is a query to create a pass from a pass template. It uses the `Na
 
 ## Data Side: Serializing Passes
 
-Passes can be authored in a data-driven way using JSON. Pass files use the `.pass` extension. Authoring passes in JSON  allows you to configure passes and edit the render pipeline without needing to recompile any binaries.
+Passes can be authored in a data-driven way using JSON. Pass files use the `.pass` extension. Authoring passes in JSON allows you to configure passes and edit the render pipeline without needing to recompile any binaries.
 
 ### Pass Asset
 
