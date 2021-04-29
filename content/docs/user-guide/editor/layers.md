@@ -31,7 +31,7 @@ When you create a layer, you can add entities to that layer\. This helps you org
 1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**\.
 ![\[Select a layer in the Entity Outliner and then modify its properties in the Entity Inspector.\]](/images/user-guide/component/entity_system/modifying-layers-inspector.png)
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/components/entity-outliner-layers)
+
 
 ## Modifying a Layer {#modifying-layers}
 
@@ -48,7 +48,7 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 
    The following options in the context menu perform actions on the selected layer\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/components/entity-outliner-layers)
+
 
 ### Layer Hierarchies {#layer-hierarchy}
 

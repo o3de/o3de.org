@@ -29,7 +29,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 1. You can specify the following settings\.
 ![\[PhysX Visual Debugger settings.\]](/images/user-guide/physx/physx-configuration-debugger-1.png)
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/nvidia/physx/configuration-debugger)
+
 
 1. To verify that the PVD is connected to O3DE, for **PVD Auto Connect**, choose **Game** or **Editor** and then enter gameplay or editor mode\. Depending on what you choose, the following message appears in the console\.
 

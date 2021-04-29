@@ -24,4 +24,4 @@ When you move the manipulator to another location in the viewport, you can modif
 
     The following are shortcuts to switch between the different manipulator modes\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/viewport-interaction-model-transform)
+

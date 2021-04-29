@@ -51,11 +51,7 @@ weight: 400
 
  This enables your ability to produce release builds\. In order to switch back to performing development builds, change `BUILD_ENVIRONMENT` back to **Development**\.
 
-## Create expansion files \(OBBs\) {#android-create-expansion}
-
-**Warning**
- In O3DE version v1\.21 and later, the resource compiler job which builds OBB files does not ship with the O3DE installer\. [Download the Android\_MakeObb job file](https://d3bqhfbip4ze4a.cloudfront.net/RCJob_Generic_Android_MakeObb.xml) and place it in the `lumberyard_install_dir/dev/Code/Tools/RC/Config/rc` directory before continuing\.
- The `MakeObb` job uses the old O3DE asset management system, where the project\-specific resources you include and exclude from the OBB expansions are defined as part of the job\.
+## Create expansion files \(OBBs\)
 
  The Google Play Store has limitations on how applications can be distributed\. Android application packages \(APKs\) are limited to 100MB in size\. To ship larger applications, you should use either [dynamic content delivery](/docs/userguide/gems/cloud-canvas/dc-manager.md) or Android expansion files\. The O3DE engine has support for downloading, checking, and extracting expansion files \- all you have to do is create them\. Google Play allows for uploading two separate OBB files, `main` and `patch`, which have a size limit of 2\.0Gb each\.
 

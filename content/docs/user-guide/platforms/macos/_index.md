@@ -22,7 +22,6 @@ You can use O3DE to build macOS applications\. O3DE includes four macOS\-support
 ## Prerequisites {#osx-prerequisites}
 
 To build games for macOS or iOS, O3DE requires the following on your Mac:
-+ [O3DE Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
 + macOS Mojave or later
 

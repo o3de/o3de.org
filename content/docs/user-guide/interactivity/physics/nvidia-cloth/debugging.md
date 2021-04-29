@@ -6,7 +6,11 @@ weight: 500
 
 {{< preview-migrated >}}
 
-![\[Debug visualization of the NVIDIA Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-debug-1.23.png)
+|  |
+| --- |
+| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
+
+![\[Debug visualization of the NVIDIA Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-debug.png)
 
 To enable debug cloth visualization, use the following console variables \(CVARs\) in the editor console\.
 

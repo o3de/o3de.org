@@ -17,7 +17,6 @@ title: Build and bundle assets for release in O3DE
 
 To complete the procedures in this tutorial, you need the following:
 
-+ Open 3D Engine\. [Download the latest version of Open 3D Engine](https://aws.amazon.com/lumberyard/downloads/)\.
 + Visual Studio 2019 installed and configured to develop with C\+\+\. [Download Visual Studio from Microsoft](https://visualstudio.microsoft.com/downloads/)\.
 + \(Recommended\) Some familiarity with the [Asset Bundler concepts and terminology](/docs/user-guide/packaging/asset-bundler/concepts.md)\. This tutorial uses seed lists and asset lists to generate bundles\.
 

@@ -8,9 +8,8 @@ weight: 100
 
 {{< preview-migrated >}}
 
-To distribute your O3DE project's server onto Linux, you need to have access to a Windows 10 computer to perform your first build, which generates the client executable and assets that the server uses\. After your build is complete, bundle up the assets and code for distribution, building, and hosting on your Linux server\. This topic walks you through the steps to perform the Windows 10 client build, get the files onto your Linux host, and then build the Linux server application\.
 
-Currently, the only officially supported Linux distribution is Ubuntu 18\.04 LTS\. To verify that you're running the correct distribution on your Linux host, run the **lsb\_release \-a** command\. If you're on the correct distribution, you should see `Ubuntu 18.04` in the output\.
+ To distribute your O3DE project's server onto Linux, you need to have access to a Windows 10 computer to perform your first build, which generates the client executable and assets that the server uses\. After your build is complete, bundle up the assets and code for distribution, building, and hosting on your Linux server\. This topic walks you through the steps to perform the Windows 10 client build, get the files onto your Linux host, and then build the Linux server application\.
 
 These instructions are for building the **MultiplayerSample** project that's included in the O3DE distribution\. When you build and distribute your project, edit the scripts referenced in this topic where needed to reference your project's name and contents instead\.
 
@@ -44,7 +43,7 @@ To create a Linux server for your project, you first have to build the assets on
 **Note**
  This archive file is uncompressed and is quite large\. Before distributing it to a remote Linux host, you might want to compress it with LZMA, bzip2, or gzip\.
 
-1.  Copy the created archive over to your Linux host\. You can use SFTP, SCP, or any other method that you would normally use to achieve this\. For instructions on copying to an Amazon EC2 instance using SCP, see [Transfer files to your Linux instance using WinSCP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html#Transfer_WinSCP)\.
+1.  Copy the created archive over to your Linux host\. 
 
     If you're running Windows 10, you can use the Windows Subsystem for Linux \(WSL\) to test a deployment\. See Microsoft's instructions on [installing WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and [initializing a distribution](https://docs.microsoft.com/en-us/windows/wsl/initialize-distro) to get set up with WSL\. You can access the file directly from the WSL mount points for your Windows drives\. The drives are available from within a WSL terminal at `/mnt/drive_letter`\. To avoid performance problems when running the dedicated server under WSL, copy the archive into WSL's file system before continuing\.
 

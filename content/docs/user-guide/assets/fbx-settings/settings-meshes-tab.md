@@ -20,7 +20,7 @@ All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\)
 
 ## Meshes tab properties {#fbx-settings-meshes-tab-properties}
 
-![\[The FBX Settings Meshes tab.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-tab-1.25.png)
+![\[The FBX Settings Meshes tab.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-tab.png)
 
 ****Add another mesh****
 Add a mesh group to process\. Each mesh group can contain one or more meshes from the `.fbx` file\. Each mesh group produces a `.cgf` file\.
@@ -45,7 +45,7 @@ Some modifiers are not available unless the gem that provides the modifier is en
 
 ## Cloth modifier {#w31aac15b9c11c11c11}
 
-![\[The FBX Settings Meshes tab Cloth modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cloth-1.27.png)
+![\[The FBX Settings Meshes tab Cloth modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cloth.png)
 
 Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 
@@ -84,13 +84,13 @@ Select the channel in the vertex color stream that contains backstop radius data
 
 ## Comment modifier {#w31aac15b9c11c11c13}
 
-![\[The FBX Settings Meshes tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
+![\[The FBX Settings Meshes tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed\. Multiple comment modifiers can be added to a mesh group\.
 
 ## Level of Detail modifier {#w31aac15b9c11c11c15}
 
-![\[The FBX Settings Meshes tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-level-of-detail-1.25.png)
+![\[The FBX Settings Meshes tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-level-of-detail.png)
 
 Add level of detail \(LoD\) meshes to the **Mesh group**\.
 
@@ -109,7 +109,7 @@ When you author the mesh in your 3D application, you can add `_lod1`, `_lod2`, `
 
 ## Material modifier {#w31aac15b9c11c11c17}
 
-![\[The FBX Settings Meshes tab Material modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-material-1.25.png)
+![\[The FBX Settings Meshes tab Material modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-material.png)
 
 The **Material** modifier helps automatically manage the contents of the `.mtl` file that corresponds to the mesh group when mesh assets are updated\.
 
@@ -125,7 +125,7 @@ When enabled, removes materials that are present in the `.mtl` file that are not
 
 ## Mesh \(Advanced\) modifier {#w31aac15b9c11c11c19}
 
-![\[The FBX Settings Meshes tab Mesh (Advanced) modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-mesh-1.25.png)
+![\[The FBX Settings Meshes tab Mesh (Advanced) modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-mesh.png)
 
 The **Mesh \(Advanced\)** modifier adds advanced mesh processing features such as a setting for vertex precision, which can save memory, and a setting to choose a vertex color stream to include in the processed mesh\.
 
@@ -146,7 +146,7 @@ Vertex color streams contain per vertex color data that can be referenced by mat
 
 ## Origin modifier {#w31aac15b9c11c11c21}
 
-![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin-1.25.png)
+![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 
 Change the position \(translation\), orientation \(rotation\), and scale of a mesh relative to how it was authored\.
 
@@ -164,7 +164,7 @@ Sets the scale offset of the processed mesh\.
 
 ## Touch Bending modifier {#w31aac15b9c11c11c23}
 
-![\[The FBX Settings Meshes tab Touch Bending modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-touch-bending-1.25.png)
+![\[The FBX Settings Meshes tab Touch Bending modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-touch-bending.png)
 
 The **Touch Bending** modifier sets up mesh assets for touch bending\. Touch bending is a collision effect, typically used on vegetation assets such as plants or tall grass, that causes the asset to bend away from an entity that brushes against it\. You can use this modifier to create a field of wheat, for example, where the wheat parts and bends as a player character passes through\.
 
@@ -187,7 +187,7 @@ Set a thickness value for all branches to define the amount of bending\. Thickne
 
 ## CryPhysics Proxy modifier {#w31aac15b9c11c11c25}
 
-![\[The FBX Settings Meshes tab CryPhysics Proxy modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cryphysics-proxy-1.25.png)
+![\[The FBX Settings Meshes tab CryPhysics Proxy modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cryphysics-proxy.png)
 
 Select meshes to use as proxy physics meshes for the legacy physics system\.
 
