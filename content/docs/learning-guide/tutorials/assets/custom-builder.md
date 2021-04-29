@@ -1,6 +1,5 @@
 ---
-description: ' Create an asset builder to process your custom asset type source files
-  into game-ready files in Open 3D Engine. '
+description: ' Create an asset builder to process your custom asset type source files  into game-ready files in Open 3D Engine. '
 title: Creating a Custom Asset Builder
 ---
 
@@ -40,7 +39,7 @@ Gems contain two kinds of modules:
 + A runtime module: `gem_name.dll`
 + A tools module: `gem_name.Editor.dll`
 
-These modules contain [system components](/docs/userguide/modules/system-components.md) and tool components\. When O3DE starts, an [AZ::ComponentApplication](https://docs.aws.amazon.com/lumberyard/latest/apireference/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
+These modules contain [system components](/docs/userguide/modules/system-components.md) and tool components\. When O3DE starts, an [AZ::ComponentApplication](/docs/api/frameworks/azcore/class_a_z_1_1_component_application.html) activates all required system components for the gems that are enabled for the project\.
 
 ## 1\. Create Builder Classes {#asset-builder-custom-create-builder-class}
 

@@ -44,7 +44,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 
 1. In the right pane, on the **Attributes** tab, specify the **Transform Space**\. You can specify the following\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/animation/editor/controller-nodes)
+
 
 ## Set Transform {#animation-editor-set-transform-node}
 
@@ -70,4 +70,4 @@ The **Set Transform** node sets the transform from a selected joint, including t
 
 1. In the right pane, on the **Attributes** tab, specify the **Transform space**\. You can specify the following\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/animation/editor/controller-nodes)
+

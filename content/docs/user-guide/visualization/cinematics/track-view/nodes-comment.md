@@ -25,4 +25,4 @@ Use the **Comment** node to add comments to your track view sequence\. This is m
 | --- | --- |
 | Unit Pos X | position of the text horizontally |
 | Unit Pos Y | position of the text vertically |
-| Text | [\[See the AWS documentation website for more details\]](/docs/userguide/cinematics/track-view/nodes-comment) |
+| Text |  |

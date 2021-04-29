@@ -90,4 +90,4 @@ You can use the **Node Inspector** to customize the color of a group and to chan
 1. Enter or choose the values that you want to use for the group title font\. The changes that you make are immediately visible\.
 ![\[Expand a node group's Font Settings section in the Script Canvas Node Inspector.\]](/images/user-guide/scripting/script-canvas/script-canvas-node-groups-4.png)
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/scripting/scriptcanvas/node-groups)
+

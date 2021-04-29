@@ -32,7 +32,7 @@ The **TooltipDisplay** component defines the tooltip's display behavior\. Add a 
 
 **To edit a TooltipDisplay component**
 + In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **TooltipDisplay** and use the following settings, as appropriate:
-**Trigger Mode \(v1\.24 and later\)**
+**Trigger Mode**
 Select a tooltip trigger condition:
   + **On Hover** - The tooltip appears when the pointer hovers over the interactive element, and disappears when the pointer moves off of the interactive element\.
   + **On Press** - The tooltip appears when the interactive element is pressed and held, and disappears when the press is released\. Note that the pointer might have moved elsewhere on the canvas by the time the release action has occurred\.

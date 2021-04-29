@@ -29,7 +29,7 @@ You can control the character's movement by using Script Canvas, the C\+\+ API, 
 
 You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector.md)**\.
 
-![\[PhysX Character Controller component properties in the Entity Inspector.\]](/images/user-guide/component/physx/ui-physx-character-controller-properties-1.27.png)
+![\[PhysX Character Controller component properties in the Entity Inspector.\]](/images/user-guide/component/physx/ui-physx-character-controller-properties.png)
 
 The **PhysX Character Controller** has the following component properties\.
 
@@ -39,17 +39,17 @@ The **PhysX Character Controller** has the following component properties\.
 | Property | Description |
 | --- | --- |
 |  **Collision Layer**  |  Collision layer assigned to the controller\. The default is **Default**\.  |
-|  **Collides With**  |  Collision layers that this character controller collides with\. Possible values are those that you define in the collision groups section of the PhysX configuration\.  You can specify the following values: [\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller)  The collision filters determine whether dynamic objects collide with the controller\. A separate set of filters control what objects can impede the character from moving\. The movement filters are currently hard\-coded so that static objects obstruct character movement\.   |
-| Material Library |  [PhysX material](/docs/user-guide/interactivity/physics/nvidia-physx/materials.md) assigned to this character controller\. [\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller)  |
+|  **Collides With**  |  Collision layers that this character controller collides with\. Possible values are those that you define in the collision groups section of the PhysX configuration\.  You can specify the following values:   The collision filters determine whether dynamic objects collide with the controller\. A separate set of filters control what objects can impede the character from moving\. The movement filters are currently hard\-coded so that static objects obstruct character movement\.   |
+| Material Library |  [PhysX material](/docs/user-guide/interactivity/physics/nvidia-physx/materials.md) assigned to this character controller\.   |
 | Material Slot |  Specifies a material from the material library\. To select a material from the library, click the drop\-down list\. The default is the first value configured\.  If the material library is empty, this option does not appear and the default material values \(`0.5` and average for all parameters\) are used\.   |
 |  **[Maximum Slope Angle](#component-physx-character-controller-maximum-slope-angle)**  |  Angle in degrees of the largest slope that the character controller can climb\.   |
 |  **[Step Height](#component-physx-character-controller-step-height)**  |  Height of steps in meters that the character controller can traverse\.   |
 |  **Minimum Movement Distance**  |  Distance in meters below which the controller doesn't attempt to move\. Used to avoid jittering\.   |
 |  **Collider Tag**  |  A tag string used to identify the collider associated with the character controller\.  |
-|  **Slope Behavior**  |  Behavior of the controller on surfaces above the maximum slope\.  You can specify the following values: [\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller) The default is **Prevent Climbing**\.  |
+|  **Slope Behavior**  |  Behavior of the controller on surfaces above the maximum slope\.  You can specify the following values:  The default is **Prevent Climbing**\.  |
 | [Contact Offset](#component-physx-character-controller-contact-offset) |  Additional distance in meters beyond the controller that is monitored for potential contact\. Used for smoother contact resolution\.   |
 | Scale |  Scales the size of the collider created in PhysX relative to the dimensions specified for the controller\. A value slightly smaller than `1` is recommended\.  The default is `0.8`\.  |
-| [Shape](#component-physx-character-controller-shape) | Shape of the character controller\.You can specify the following values:[\[See the AWS documentation website for more details\]](/docs/userguide/components/physx-character-controller)The default is Capsule\. |
+| [Shape](#component-physx-character-controller-shape) | Shape of the character controller\.You can specify the following values:The default is Capsule\. |
 | Height \(Capsule Only\) |  Height of the capsule in meters\.  |
 | Radius \(Capsule Only\) |  Radius of the capsule in meters\.  |
 | Dimensions \(Box Only\) |  The x, y, and z dimensions of the box in meters\.  |
@@ -92,7 +92,5 @@ Use the **Shape** property in the **Entity Inspector** to choose the desired sha
 Character controllers are usually **kinematic** or **dynamic**\. Dynamic character controllers are controlled through their velocity or by applying forces\. Kinematic character controllers are controlled directly by position\. Each controller type has advantages and disadvantages\.
 
 For more information, see [Character Controllers](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/3.3.4/Manual/CharacterControllers.html) in the NVIDIA documentation\.
-
-In O3DE, the **PhysX Character Controller** component is kinematic\. The legacy [https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/component-physics-character.html) component is dynamic\.
 
 Because the **PhysX Character Controller** component is kinematic and not affected by outside forces, it is not affected by gravity out of the box\. This separation allows you to use Script Canvas or C\+\+ to implement custom behavior for gravity\. Kinematic controllers behave as if they have infinite mass when dynamic objects collide with them\. Your custom gameplay logic determines how the controller responds to collisions such as the recoil from heavy impacts\.

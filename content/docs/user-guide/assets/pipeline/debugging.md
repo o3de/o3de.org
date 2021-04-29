@@ -80,7 +80,7 @@ You must start Asset Processor before you can enter a `-debug` command\.
 
 1. You can use the following debug options\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/assets/processing/debugging)
+
 
 **Example**
 To debug a specified file, run the following command\.
