@@ -10,11 +10,11 @@ toc: true
 
 When you've made an edit or created a new topic, you need to submit a pull request (PR) for review before the changes can be merged into `o3de:main`. You can see the current list of active PRs here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues:
 
-* technical accuracy
-* spelling
-* grammar
-* clarity
-* style
+* Technical accuracy
+* Spelling
+* Grammar
+* Clarity
+* Style
 
 Before submitting a PR, ensure your contributions meet the guidelines below:
 
@@ -23,20 +23,21 @@ Before submitting a PR, ensure your contributions meet the guidelines below:
 * Contributions use O3DE terms correctly. See [O3DE Documentation Terminology](/docs/contributing/to-docs/style-guide).
 * All commits in the PR have a proper *DCO sign off*. See [Commit your changes](#commit-your-changes) below.
 * The PR only contains commits and changes you want reviewed for the PR.
-* If the PR has a related issue, the issue number is incorporated in the title of the PR.
+* If the PR has a related issue, the issue number is part of the PR title.
 
 ## The PR Process
 
 Despite only having five steps, the PR process can take some time depending on the availability of reviewers and the length and technical depth of the submitted changes. You can help keep PRs moving by quickly responding to feedback and review requests. The PR process is summarized below.
 
 1. Commit your changes to a branch on your fork.
-2. Create a PR against `o3de:main` from your branch.
+2. Create a PR against `o3de.org:main` from your branch.
 3. Request reviewers for your PR.
 4. Respond to feedback from reviewers.
 5. When the PR receives two approvals, plus a technical review approval for highly technical topics, it can be merged.
 
 {{< important >}}
-**Never** merge your own PRs. PRs require two approvals, and may require an additional approval from a technical reviewer. The last reviewer to approve the PR should merge it into `o3de:main`.
+**Never** merge your own PRs. PRs require two approvals, and may require an additional approval from a technical reviewer. The last reviewer to approve the PR should merge it into `o3de.org:main`.
+
 {{< /important >}}
 
 ### Commit your changes
@@ -111,7 +112,7 @@ For more information on creating a pull request, see [Creating a pull request](h
 
 ### Request reviewers
 
-PRs require two reviewer approvals to be merged into main. Highly technical topics additionally require review by an O3DE code contributor for technical accuracy. You should request at least two, but no more than five reviewers for your PRs. Keep in mind that as this is a community project, and that interested contributors can add themselves as reviewers to any PR.
+PRs require two reviewer approvals to be merged into main. Highly technical topics require an additional review by an O3DE code contributor for technical accuracy. You should request at least two, but no more than five reviewers for your PRs. Keep in mind that as this is a community project, and that interested contributors can add themselves as reviewers to any PR.
 
 "But who do I ask to review my PRs?" you are probably wondering. If you are new to the project, you may not know any other contributors. You can look through the PR list and try to find reviewers who seem responsive, but a better solution is to visit the O3DE Discord and ask for suggestions and volunteers for reviewers. It's a great way to meet new people and introduce yourself to other contributors.
 
@@ -137,7 +138,3 @@ For more information on incorporating PR feedback, see [Incorporating feedback i
 ### The PR merge
 
 When you have approval from two reviewers, and approval from a technical reviewer (if necessary), your PR can be merged. Never merge your own PRs. The last reviewer to approve the PR is responsible for merging the PR.
-
-To merge a PR, the reviewer needs to choose **Merge pull request** from the GitHub PR interface.
-
-For more information on merging pull requests, see [Merging a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/merging-a-pull-request).
