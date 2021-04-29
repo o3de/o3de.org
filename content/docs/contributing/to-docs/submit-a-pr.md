@@ -9,7 +9,7 @@ toc: true
 
 {{< preview-new >}}
 
-When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de:main`. You can see the current list of active PRs here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
+When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
 
 
 * Technical accuracy
@@ -20,10 +20,10 @@ When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, y
 
 Before submitting a PR, ensure your contributions meet the guidelines below:
 
-* Files in the PR are placed in the proper directories. See [O3DE Docs Structure](/docs/contributing/to-docs/o3de-docs-structure).
-* Contributions adhere to the O3DE Documentation style. See [O3DE Documentation Contribution Style Guide](/docs/contributing/to-docs/style-guide).
-* Contributions use O3DE terms correctly. See [O3DE Documentation Terminology](/docs/contributing/to-docs/style-guide).
-* All commits in the PR have a proper *DCO sign-off*. See [Commit your changes](#commit-your-changes) below.
+* Files in the PR are placed in the proper directories. Refer to [O3DE Docs Structure](/docs/contributing/to-docs/o3de-docs-structure).
+* Contributions adhere to the O3DE Documentation style. Refer to [O3DE Documentation Contribution Style Guide](/docs/contributing/to-docs/style-guide).
+* Contributions use O3DE terms correctly. Refer to [O3DE Documentation Terminology](/docs/contributing/to-docs/style-guide).
+* All commits in the PR have a proper *DCO sign-off*. Refer to [Commit your changes](#commit-your-changes) below.
 
 * The PR only contains commits and changes you want reviewed for the PR.
 * If the PR has a related issue, the issue number is part of the PR title.
@@ -45,57 +45,13 @@ Despite only having five steps, the PR process can take some time depending on t
 
 ### Commit your changes
 
-The first step in the PR process is to commit your changes to a branch on your fork. You must add a DCO sign-off to all of your commits, otherwise your PRs will not be reviewed or merged. DCO stands for [*Developer Certificate of Origin (DCO)*](https://github.com/apps/dco). The DCO sign-off is your certification that your contribution is your own original work, or that you otherwise have the right to submit the work. DCO sign-off is easy to do, and just as easy to forget. Follow the steps below to properly sign off and commit your changes.
+The first step in the PR process is to commit your changes to a branch on your fork. You must add a DCO sign-off to all of your commits, otherwise your PRs will not be reviewed or merged. DCO stands for [*Developer Certificate of Origin (DCO)*](https://github.com/apps/dco). The DCO sign-off is your certification that your contribution is your own original work, or that you otherwise have the right to submit the work. DCO sign-off is easy to do, and just as easy to forget.
 
+For an introductory tutorial on Git, refer to [A tutorial introduction to Git](https://git-scm.com/docs/gittutorial).
 
-1. Make sure you are in the correct branch.
+For complete reference on the `commit` command, refer to the [Git commit reference](https://git-scm.com/docs/git-commit).
 
-    ```shell
-    git checkout <your branch>
-    ```
-
-1. Check your branch for new, modified, and deleted files.
-
-    ```shell
-    git status
-    ```
-
-1. Add new and modified files to the commit. Use the list generated in step 2 to determine which files to add to the commit.
-
-    ```shell
-    git add <space separated list of files>
-    ```
-
-1. Remove deleted files from the commit, if any. Use the list generated in step 2 to determine which files to remove from the commit.
-
-    ```shell
-    git rm <space separated list of files>
-    ```
-
-1. Commit your changes with your DCO sign-off.
-
-    ```shell
-    git commit -s -m "<commit message>"
-    ```
-
-[//]: # (Seems to be a bug in Hugo. If the following shortcodes are properly indented, the are enclosed in the codeblock.)
-
-{{< important >}}
-The `-s` option provides the DCO sign-off. A properly signed off commit will contain the line `Signed-off-by: Your Name <youralias@youremail.com>`
-
-{{< /important >}}
-
-{{< note >}}
-The `-m` option allows you to add a commit message enclosed in double quotes. Commit messages should be brief and clear.
-{{< /note >}}
-
-6. Push your changes to the branch on your GitHub fork.
-
-    ```shell
-    git push origin
-    ```
-
-For more information on staging and committing files with Git, see [Git Basics - Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
+For more information on staging and committing files with Git, refer to [Git Basics - Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
 
 ### Create a PR
 
@@ -108,13 +64,13 @@ PRs are created in the GitHub web interface from your branch. Go to your fork on
 1. In the **Open a pull request** dialog, the pull request will automatically point to `o3de.org:main`. The PR comment will use the message from your commit. Depending on the length of the first sentence in the comment, the message might be improperly split between the title and the body of the message. Make changes to the title and message for clarity, and be sure to include the issue number in the title of the PR if the PR is addressing an existing issue.
 
 
-1. Add appropriate labels to your PR if necessary. In the column on the right is a section named **Labels**. Choose the **gear button** to view the label list and select labels for your PR. Each label has a short explanation for how it is used. Not all labels are appropriate for PRs. Some are meant to be used on issues. PRs do not always require labels.
+1. Add appropriate labels to your PR if necessary. In the column on the right is a section named **Labels**. Choose the **gear button** to show the label list and select labels for your PR. Each label has a short explanation for how it is used. Not all labels are appropriate for PRs. Some are meant to be used on issues. PRs do not always require labels.
 
 1. Choose **Create pull request** to submit the PR.
 
-If you go to the main o3de.org repo on GitHub and view [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls), you will see your new PR at the top of the list.
+If you go to the main o3de.org repo on GitHub and refer to [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls), your new PR appears at the top of the list.
 
-For more information on creating a pull request, see [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+For more information on creating a pull request, refer to [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ### Request reviewers
 
@@ -126,7 +82,7 @@ PRs require two reviewer approvals to be merged into main. Highly technical topi
 
 To add reviewers to your PR, find the section named **Reviewers** in the column to the right of your PR. Choose the **gear button** to open the list of potential reviewers, and search for the names of reviewers you'd like to add. Click the reviewer's name to select them and add them to your PR's reviewer list.
 
-For more information on requesting reviewers, see [Requesting a pull request review](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review).
+For more information on requesting reviewers, refer to [Requesting a pull request review](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/requesting-a-pull-request-review).
 
 ### Respond to feedback
 
@@ -135,14 +91,13 @@ For more information on requesting reviewers, see [Requesting a pull request rev
 * To commit multiple suggestions, use the batch functionality to integrate multiple suggestions in a single commit.
 * Do try to acknowledge all the feedback you are given. This doesn't mean to integrate every comment and commit every suggestion. It simply means to avoid resolving comments and suggestions without action or a response. Embrace collaboration.
 * When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR.
-* Make sure to request a re-review of your new commits if required. For more information on the PR review process, see the [Review PRs:](./review-prs)) topic in this guide.
+* Make sure to request a re-review of your new commits if required. For more information on the PR review process, refer to the [Review PRs:](./review-prs)) topic in this guide.
 
 {{< important >}}
-If you commit individual suggestions or batch commit suggestions through the GitHub PR interface, be sure to sign off on the commit by adding your sign-off to the comment. Add the string `Signed-off-by: Your Name <youralias@youremail.com>` to sign-off your commits.
-
+If you commit individual suggestions or batch commit suggestions through the GitHub PR interface, be sure to sign off on the commit by adding your sign-off to the comment. Add the string `Signed-off-by: Your Name <youralias@youremail.com>` to sign-off your commits. Check your GitHub profile email settings to ensure you use the correct email address.
 {{< /important >}}
 
-For more information on incorporating PR feedback, see [Incorporating feedback in your pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request).
+For more information on incorporating PR feedback, refer to [Incorporating feedback in your pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request).
 
 ### The PR merge
 
