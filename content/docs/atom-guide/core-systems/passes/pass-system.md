@@ -105,7 +105,7 @@ Name
 Pass Descriptor
 : *Related to: [PassDescriptor API](/docs/api/gems/atom/struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html)*  
 
-A struct that is used as input to pass constructors. It contains the name of the pass to be created. If it creates a pass from a `PassTemplate` or a `PassRequest`, it also contains pointers that pass template or pass request; otherwise, the pointers point to `nullptr`.
+A class that is used as input to pass constructors. It contains the name of the pass to be created. If it creates a pass from a `PassTemplate` or a `PassRequest`, it also contains pointers that pass template or pass request; otherwise, the pointers point to `nullptr`.
 
 ### Pass System
 
