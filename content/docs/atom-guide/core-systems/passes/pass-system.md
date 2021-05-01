@@ -47,14 +47,16 @@ Passes use RHI attachments like textures, buffers and render targets. There are 
 | Attachment | Description | 
 | - | - |
 | Input | If a pass reads an attachment and does not write to it, then the attachment slot should be an Input. For example, in SSAO, the depth buffer is bound as an Input because the contents only need to be read. |
-| Output | If a pass writes to an attachment and the previous state of the attachment doesn't matter, then the attachment slot should be an Output. For example, in a depth pre-pass, the depth buffer is bound as an Output because it only needs to be written to. Another example is that for a fullscreen pass that renders to a target, the target is bound as an Output. |
-| InputOutput | If a pass writes to an attachment, but the previous state of the attachment matters, then the attachment slot should be an InputOutput. For example, in a forward transparent pass the render target is an InputOutput because the render target already contains pixels rendered in the opaque pass. | 
+| Output | If a pass writes to an attachment and the previous state of the attachment isn't needed, then the attachment slot should be an Output. The previous state of an Output may be cleared or overwritten. For example, in a depth pre-pass, the depth buffer is bound as an Output because it only needs to be written to. Another example is that for a fullscreen pass that renders to a target, the target is bound as an Output. |
+| InputOutput | If a pass writes to an attachment, but the previous state of the attachment is needed, then the attachment slot should be an InputOutput. The previous state of an InputOutput is preserved. For example, in a forward transparent pass the render target is an InputOutput because the render target already contains pixels rendered in the opaque pass. | 
 
 #### Pass Behavior
 
-The behavior of passes is defined in virtual functions, which can be overridden. These virtual functions can be identified as having the suffix `Internal` at the end of their name. Each of the virtual functions have a non-virtual counterpart, which have the same name, but without `Internal`. 
+The behavior of passes is defined in virtual functions, which can be overridden. These virtual functions have the suffix `Internal` at the end of their name. They do not contain any default behavior and only need to be implemented by the derived class if desired. 
 
-The non-virtual function calls the virtual counterpart and implements core functionality common to all passes. When authoring a new pass in C++, users create a class derived from `Pass` and override any functions they need to obtain the desired behavior. 
+Each of the virtual functions have a non-virtual counterpart, which have the same name, but without `Internal`. The non-virtual function calls the virtual counterpart and implements core functionality common to all passes. 
+
+When authoring a new pass in C++, users create a class derived from `Pass` and override any functions they need to obtain the desired behavior. 
 
 The following functions are used for defining pass behavior. 
 
