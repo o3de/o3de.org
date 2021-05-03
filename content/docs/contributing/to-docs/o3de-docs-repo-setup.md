@@ -87,7 +87,10 @@ For more information on working with forks, refer to [Working with forks](https:
 
 ### Sync your clone
 
-Now you can *sync* your clone. Syncing is the process of pulling the latest changes from a source repository to a clone. In a terminal, in the root of your `o3de.org` clone, perform the steps below:
+Now you can *sync* your clone. Syncing is the process of pulling the latest changes from a source repository to a clone. Use one of the two options outlined below:
+
+
+#### Option One: Sync your fork and pull to your branch.
 
 1. Make sure you are in the main branch.
 
@@ -113,8 +116,31 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
     git push origin
     ```
 
+1. If you are working in a branch, refer to [Miantian your branch](#maintain-your-branch) for information on syncing your branch.
+
+#### Option Two: Pull to your branch directly from `o3de:main`
+
+1. Set the upstream of your branch to `o3de:main`. You only need to do this step one time.
+
+    ```shell
+    `git branch -M main upstream/main`
+    ```
+
+1. Fetch the latest upstream commits from `o3de.org:main`.
+
+    ```shell
+    git fetch upstream
+    ```
+
+1. Pull the latest to your branch.
+
+    ```shell
+    git pull
+    ```
+
+
 {{< important >}}
-You must perform the above four steps whenever you need to ensure your fork is synced with `o3de:main`, such as before creating a new branch, or before syncing a branch to submit a PR.
+You must perform one of the above options whenever you need to ensure your branch is synced with `o3de:main`, such as before creating a new branch, or before syncing a branch to submit a PR.
 {{< /important >}}
 
 ## Set up Hugo
