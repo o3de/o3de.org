@@ -13,9 +13,9 @@ A camera space manipulator is built into the rotation manipulator\. You can rota
 
 1. Adjust the camera around the selected entity in the viewport\. You can use the following camera shortcuts to adjust your view\.
 **Adjusting the Camera View**
-[\[See the AWS documentation website for more details\]](/docs/userguide/camera-space)
+
 **Moving the Camera**
-[\[See the AWS documentation website for more details\]](/docs/userguide/camera-space)
+
 **Example**
 
    In the following example, you can adjust the camera space so that your selected entity remains the center of focus in the viewport\.

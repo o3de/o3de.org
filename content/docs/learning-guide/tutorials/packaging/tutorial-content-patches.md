@@ -6,10 +6,6 @@ title: Create content patches with O3DE
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This tutorial is out of date for the new Starter Game project that shipped as part of O3DE 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |
-
 This tutorial demonstrates a bundling process designed to simulate a patch update to existing content\. In this tutorial, you create a set of bundles that simulates a content patch\. These bundles include the patch itself, and a new version of the software to distribute with the patch already in place\. The update bundle contains only content that changed since the first set of bundles was created\. This topic covers:
 + Modifying an asset reference to reference a new asset that was not bundled previously\.
 + Creating an updated asset bundle that contains only updated or new assets\.
@@ -28,7 +24,7 @@ To complete this tutorial, you should have completed the [Build and bundle asset
 For this tutorial you'll modify the `level2` level created in the previous tutorial\. You'll also be adding a new asset\-only gem to the Starter Game project, to demonstrate how to update auxiliary content in addition to pushing direct changes to a bundle\.
 
 1. Launch the Project Configurator, make sure that the Starter Game is selected, and select **Enable Gems**\.
-![\[Selecting the 'Enable Gems' button for the Starter Game in Project Configurator.\]](/images/user-guide/assetbundler/tutorial-content-patches/ui-project-configutator-create-1.25.png)
+![\[Selecting the 'Enable Gems' button for the Starter Game in Project Configurator.\]](/images/user-guide/assetbundler/tutorial-content-patches/ui-project-configutator-create.png)
 
 1. Search for the term *primitive* in the search bar\. The **Primitive Assets** gem should appear in the results list\. Select the checkbox to include it as part of the Starter Game, and then select **Save**\.
 ![\[Searching for 'primitive', then selecting the 'Primitive Assets' gem, followed by a 'Save' action.\]](/images/user-guide/assetbundler/tutorial-content-patches/02.png)

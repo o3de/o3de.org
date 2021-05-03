@@ -65,9 +65,6 @@ When using packed assets, we recommend the `apk_paks` mode, which offers some pe
 android_asset_mode = apk_paks
 ```
 
-**Tip**
- If you want to do large\-scale automated testing across multiple devices, you can build packed APKs and distribute them to [AWS Device Farm](https://docs.aws.amazon.com/devicefarm/latest/developerguide)\.
-
 ## Serving assets over the Virtual File System \(VFS\) {#android-vfs}
 
  During the early stages of development with O3DE, and for users rapidly iterating on assets in a way that requires live reloading, you can use the Virtual File System \(VFS\) to stream assets to a device from your development machine\. The VFS uses the Asset Processor as a proxy that your Android device connects to in order to receive updated assets\. Whenever the Asset Processor rebuilds a product asset, that asset is copied to the device and reloaded\. The VFS doesn't do initial asset deployments - your build configuration's asset mode is respected - only reloads\.

@@ -19,5 +19,4 @@ weight: 1200
 + [Modifying Project Settings for Mobile Device Games](/docs/user-guide/editor/mobile-settings.md)
 + [Updating Graphics Settings for Android and iOS](/docs/user-guide/platforms/mobile-graphics-settings.md)
 + [Adding IP Addresses to Allow Access to the Asset Processor and Remote Console](/docs/user-guide/assets/processor-remote-access.md)
-+ [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)
 + [Using AWS Device Farm in O3DE Editor](/docs/userguide/mobile/deployment-tool-device-farm-integration.md)

@@ -97,7 +97,7 @@ The following example creates a receiver node for a Light event\.
 
    The **Source** pin of the receiver node refers to the entity from which the event is received\. The default is **Self**, which means the node receives Light events for the same entity that the Script Canvas component is on\. You can change the target to any entity in the game world\.
 
-   In O3DE v1\.24 and later, you can also specify the target using a [variable reference](/docs/user-guide/scripting/script-canvas/adding-variable-references.md)\. Whenever the variable changes, the EBus handler will update the Source to match the variable reference\.
+   You can also specify the target using a [variable reference](/docs/user-guide/scripting/script-canvas/adding-variable-references.md)\. Whenever the variable changes, the EBus handler will update the Source to match the variable reference\.
 
 1. Click **Add/Remove Events**\.
 

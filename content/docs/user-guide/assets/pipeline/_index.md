@@ -1,6 +1,5 @@
 ---
-description: ' Use the Open 3D Engine Asset Pipeline to convert your source art and other
-  assets into game ready data. '
+description:  Use the Open 3D Engine Asset Pipeline to convert your source art and other assets into game ready data. 
 linktitle: Asset pipeline
 title: Working with the Asset Pipeline and asset files
 weight: 100
@@ -26,6 +25,7 @@ Each output directory in the asset cache represents a full image of all files \(
 + [Configuring the Asset Pipeline](/docs/user-guide/assets/pipeline/configuring.md)
 + [Configuring Image Processing](/docs/user-guide/assets/pipeline/configuring-image-processing.md)
 + [Live Reloading and VFS](/docs/user-guide/assets/pipeline/live-reloading.md)
++ [Move assets](./move-assets)
 + [Compiling Shaders for Release Builds](/docs/userguide/assets/pipeline/shader-compilation.md)
 + [Shader Compiler Proxy](/docs/userguide/assets/pipeline/shader-compiler.md)
 + [Shader Cache and Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md)

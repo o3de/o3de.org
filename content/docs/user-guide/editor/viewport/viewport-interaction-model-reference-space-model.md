@@ -37,7 +37,7 @@ Parent space is the transform that the parent entity has in the hierarchy\. If a
 
    The following are shortcuts to work with the reference space mode\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/viewport-interaction-model-reference-space-model)
+
 
 ## Using Custom Reference Spaces {#custom-reference-spaces}
 
@@ -59,7 +59,7 @@ You can adjust the manipulator independent of the entity to create a custom refe
 
    The following are shortcuts for working with custom reference spaces\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/viewport-interaction-model-reference-space-model)
+
 
 **Note**
 The manipulator and the custom reference space are context\-based and apply only when you select an entity\. If you don't select an entity, there's no manipulator, and you can't create a reference space\. The reference space doesn't persist across selections\. However, if you move the reference space, you can undo that action\.

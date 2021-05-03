@@ -315,6 +315,8 @@ Notes catch the reader's attention without a sense of urgency.
 You can have multiple paragraphs and block-level elements inside an admonition.
 
 | Or | a | table |
+| - | - | - |
+| | |
 {{< /note >}}
 
 {{< caution >}}
@@ -328,6 +330,15 @@ Important information the reader must heed.
 {{< preview-new >}}
 
 {{< preview-migrated >}}
+
+{{< todo issue="https://github.com/o3de/o3de.org/issues/432" >}}
+Indicates a section needs work, followed by a description of the task and a link to the issue in GitHub.
+{{< /todo >}}
+
+
+{{< todo >}}
+Indicates a section needs work, followed by a description of the task and a prompt for someone to create a GitHub issue for this task.
+{{< /todo >}}   
 
 ## Includes
 
