@@ -8,15 +8,9 @@ weight: 400
 
 {{< preview-new >}}
 
-This section contains technical details about the Render Pipeline Interface (RPI) in the Atom renderer. The pass system and feature processors also live in the RPI. 
+This section contains technical details about the Render Pipeline Interface (RPI) in the Atom renderer.
 
 | Contents                        | Details |
 |--------------------------------------|---------|
 | [RPI Overview](rpi.md) | An overview of the RPI in Atom. |
 | [RPI System](rpi-system.md) | Learn about the core components of the RPI. |
-|  |  |
-| [Pass System Overview](pass-system/pass-system.md) | An overview of the pass system in Atom. |
-| [Pass Template File Specification](pass-system/pass-template-file-spec.md) | JSON reference for pass template data. |
-| [Authoring Passes](pass-system/authoring-passes.md) | Learn how to author passes in the pass system.  |
-<!-- | Features and feature processors |  |
-|  |  | -->
