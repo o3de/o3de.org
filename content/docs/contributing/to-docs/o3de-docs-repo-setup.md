@@ -116,7 +116,7 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
     git push origin
     ```
 
-1. If you are working in a branch, refer to [Miantian your branch](#maintain-your-branch) for information on syncing your branch.
+1. If you are working in a branch, refer to [Maintian your branch](#maintain-your-branch) for information on syncing your branch.
 
 #### Option Two: Pull to your branch directly from `o3de:main`
 
@@ -145,11 +145,11 @@ You must perform one of the above options whenever you need to ensure your branc
 
 ## Set up Hugo
 
-Hugo is the static site builder used by O3DE documentation. Once you have Hugo installed, you can run a local server that will live reload the docs when changes are made, and allow you to preview the changes locally. To setup Hugo, follow the steps below.
+Hugo is the static site builder that O3DE documentation uses. When you have Hugo installed, you can run a local server that will live reload the docs when changes are made, and allow you to preview the changes locally. To set up Hugo, follow the steps below.
 
 1. Get the **extended** Hugo binary. For Hugo installation, refer to [Install Hugo](https://gohugo.io/getting-started/installing/). The extended binary is required for some of the features that the O3DE documentation site uses.
 
-2. You need to add the Node.js bootstrap package. Bootstrap contains some modules used to style the O3DE documentation site. Get Node.js here [Download Node.js](https://nodejs.org/en/download/) and run the installer.
+2. You need to add the Node.js bootstrap package. Bootstrap contains some modules that are used to style the O3DE documentation site. Get Node.js here [Download Node.js](https://nodejs.org/en/download/) and run the installer.
 
 3. In the terminal `cd` to the root of your o3de.org clone.
 
