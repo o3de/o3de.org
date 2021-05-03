@@ -7,10 +7,6 @@ weight: 300
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 O3DE uses a versatile shader system to achieve high quality, realistic graphics\. Because the shader compilation pipeline depends on the Windows\-specific HLSL optimizer, you must connect to a shader compiler on your PC when running a game on macOS during development\. This compiles the subset of shaders required by your game, on demand\.
 
 **Note**

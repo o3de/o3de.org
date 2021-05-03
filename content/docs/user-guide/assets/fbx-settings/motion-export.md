@@ -5,10 +5,6 @@ title: FBX Settings motion export
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **Motions** contain keyframe animated sequences that can be sequenced and blended in **Animation Editor** and applied to actors to create behaviors\. Motions must use identical skeleton hierarchies as their actor counterparts\.
 
 ## Export a motion {#fbx-exporting-motions}

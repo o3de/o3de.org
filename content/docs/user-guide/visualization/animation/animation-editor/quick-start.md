@@ -5,10 +5,6 @@ title: Getting Started with the Animation Editor
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 See the following procedures to get started with the **Animation Editor**\.
 
 In this procedure, you do the following:

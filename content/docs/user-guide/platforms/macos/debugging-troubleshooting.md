@@ -7,10 +7,6 @@ weight: 500
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 O3DE provides full access to the source code, which allows you to debug your macOS application using Xcode without additional O3DE\-specific steps to follow\. For information about debugging and profiling your macOS application, see [Debugging](https://developer.apple.com/support/debugging/) in the official Apple developer documentation\.
 
 **Unable to see activity in the shader compiler window**

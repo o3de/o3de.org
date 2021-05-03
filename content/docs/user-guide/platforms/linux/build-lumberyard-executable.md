@@ -8,11 +8,10 @@ weight: 100
 
 {{< preview-migrated >}}
 
+
  To distribute your O3DE project's server onto Linux, you need to have access to a Windows 10 computer to perform your first build, which generates the client executable and assets that the server uses\. After your build is complete, bundle up the assets and code for distribution, building, and hosting on your Linux server\. This topic walks you through the steps to perform the Windows 10 client build, get the files onto your Linux host, and then build the Linux server application\.
 
- Currently, the only officially supported Linux distribution is Ubuntu 18\.04 LTS\. To verify that you're running the correct distribution on your Linux host, run the **lsb\_release \-a** command\. If you're on the correct distribution, you should see `Ubuntu 18.04` in the output\.
-
- These instructions are for building the **MultiplayerSample** project that's included in the O3DE distribution\. When you build and distribute your project, edit the scripts referenced in this topic where needed to reference your project's name and contents instead\.
+These instructions are for building the **MultiplayerSample** project that's included in the O3DE distribution\. When you build and distribute your project, edit the scripts referenced in this topic where needed to reference your project's name and contents instead\.
 
 ## Bundle the assets and source on Windows {#linux-build-lumberyard-executable-package}
 

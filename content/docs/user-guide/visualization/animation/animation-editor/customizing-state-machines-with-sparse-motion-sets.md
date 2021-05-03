@@ -6,10 +6,6 @@ title: Customizing State Machine Routing with Sparse Motion Sets
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 You might run into a case where you have different characters that don't have the exact same motions as the character for which you created the animation graph\. Instead of duplicating large parts or creating new animation graphs for different characters, you can share the same animation graph for all your characters\.
 
 You can allow or deny transitions and routes to motion states in a state machine, based on the existence of the given motion entry\.

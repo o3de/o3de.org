@@ -6,10 +6,6 @@ title: FBX Settings export properties
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **Topics**
 + [FBX Settings overview](#fbx-properties-overview)
 + [Modify FBX Settings](#fbx-properties-modify)

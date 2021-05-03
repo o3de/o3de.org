@@ -7,10 +7,6 @@ weight: 100
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md) documentation\.
 
 You can create cloth assets for entities with **Mesh** components in the content creation application of your choice and import them into O3DE from an `.fbx` file\. The mesh asset should have the following:

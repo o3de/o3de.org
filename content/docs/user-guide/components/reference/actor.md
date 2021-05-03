@@ -5,10 +5,6 @@ title: Actor
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 You can use the **Actor** component to create characters for your game\. After you import your character files from your DCC tool into O3DE, you can create an entity and add the **Actor** component to it\. For example, you must use an **Actor** component to create a controllable character for your game\.
 
 For the **Actor** component to work properly, you must also add one of the following:

@@ -6,10 +6,6 @@ weight: 600
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **NVIDIA Cloth** gem supports **NVIDIA CUDA** on Windows 10\. With NVIDIA CUDA enabled for cloth, the simulation is computed on the GPU instead of the CPU\. This allows you to use all the computational power of the GPU to run more complex cloth instances, in larger numbers, leaving the CPU free to do other tasks\.
 
 For more information about NVIDIA CUDA, visit the [ NVIDIA CUDA](https://developer.nvidia.com/cuda-zone) portal\.

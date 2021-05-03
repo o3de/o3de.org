@@ -1,6 +1,5 @@
 ---
-description: ' Use AZ::Console to set console variables and functors for your O3DE
-  game. '
+description:  Use AZ::Console to set console variables and functors for your O3DE game. 
 title: AZ::Console
 ---
 

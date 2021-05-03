@@ -5,10 +5,6 @@ title: FBX Settings PhysX tab
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 In the **PhysX** tab, you can create **PhysX Mesh groups** to process collider assets for PhysX\. Collider assets can be triangle meshes, or generated as primitives or convex meshes based on meshes contained in the `.fbx` file\. Multiple **PhysX Mesh groups** can be processed from a single `.fbx` file\. Each **PhysX Mesh group** produces its own `.pxmesh` file\. The processed runtime assets appear in Asset Browser as children of the `.fbx` file\.
 
 **Important**

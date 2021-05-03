@@ -5,10 +5,6 @@ title: FBX Settings Meshes tab
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\) by default\. In the **Meshes** tab, you can create mesh groups containing specific meshes from the `.fbx` file\. Each **Mesh group** produces its own `.cgf` file\. The processed runtime assets appear in **Asset Browser** as children of the `.fbx` file\.
 
 **Contents**
@@ -192,9 +188,6 @@ Set a thickness value for all branches to define the amount of bending\. Thickne
 ## CryPhysics Proxy modifier {#w31aac15b9c11c11c25}
 
 ![\[The FBX Settings Meshes tab CryPhysics Proxy modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cryphysics-proxy.png)
-
-**Important**
-The legacy physics system will be deprecated in a future O3DE release\. Use the PhysX system instead\.
 
 Select meshes to use as proxy physics meshes for the legacy physics system\.
 

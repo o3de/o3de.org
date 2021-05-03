@@ -6,10 +6,6 @@ title: Using Morph Targets to Deform Characters
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 A morph target is a deformed mesh that is stored as a series of vertex positions\. Morph targets are also called blend shapes or vertex\-level deformations\. You can use morph targets to deform a character's face to animate facial expressions or a character's body part to correct undesired deformation of skinning\. You can also simulate deformation of clothing on a character\.
 
 In the **Animation Editor**, you can use morph targets with one of the following nodes:
