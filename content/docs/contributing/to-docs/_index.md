@@ -9,7 +9,7 @@ toc: true
 
 Welcome to Open 3D Engine (O3DE) docs!
 
-O3DE documentation is driven by contributors like you. Whether you want to report an issue, document a feature, provide a tutorial, or join the [O3DE Documentation and Community Special Interest Group (SIG-Docs)](/docs/contributing/to-docs/documentation-and-community-sig), this guide will provide you the information you need. Your participation is critical. Large or small, your contributions chart the course of O3DE documentation.
+O3DE documentation is driven by contributors like you. Whether you want to report an issue, document a feature, provide a tutorial, or join the [O3DE Documentation and Community Special Interest Group (SIG-Docs)](./documentation-and-community-sig), this guide will provide you the information you need. Your participation is critical. Large or small, your contributions chart the course of O3DE documentation.
 
 ### Becoming a contributor
 
@@ -17,7 +17,7 @@ Although there are many avenues for discussion with O3DE users and contributors,
 
 O3DE welcomes feedback, suggestions, and improvements from all, no matter their level of experience. To learn how you can be an inclusive contributor, see the [O3DE Code of Conduct](/docs/contributing/code-of-conduct/).
 
-If you want to learn about O3DE documentation oversight, see the [O3DE Documentation and Community Special Interest Group (SIG-Docs)](/docs/contributing/to-docs/documentation-and-community-sig).
+If you want to learn about O3DE documentation oversight, see the [O3DE Documentation and Community Special Interest Group (SIG-Docs)](./documentation-and-community-sig).
 
 Wondering where to start? The conveniently titled [get started](./get-started) topic provides an overview of the O3DE docs contribution process, as well as guidance on the best ways to start as a contributor.
 
@@ -32,8 +32,6 @@ Wondering where to start? The conveniently titled [get started](./get-started) t
 * [Setup a local O3DE docs repo](./o3de-docs-repo-setup): A step-by-step guide to setting up and maintaining your O3DE docs repo.
 
 * [O3DE docs structure](./o3de-docs-structure): Need guidance on navigating the repository? This map will help.
-
-* [Write documentation](./write-documentation): Everything you need to know about improving existing docs and contributing new topics.
 
 * [Submit a PR](./submit-a-pr): Navigate the pitfalls of making submissions to O3DE documentation.
 

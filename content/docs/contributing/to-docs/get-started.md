@@ -31,7 +31,7 @@ Participation as a contributor requires a [GitHub account](https://github.com/si
 
 ## Technical information
 
-The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. For information on setting up an environment so that you can contribute to O3DE documentation, see [O3DE documentation repository](./o3de-documentation-repository).
+The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. For information on setting up an environment so that you can contribute to O3DE documentation, see [O3DE documentation repository](./o3de-docs-repo-setup).
 
 ## Begin with issues
 
@@ -61,7 +61,7 @@ Here are some important guidelines you should keep in mind about PRs in O3DE:
 
 Now that you are familiar with the O3DE docs, and have had some exposure to issues and PRs, let's have a look at the high-level process for making a contribution to documentation.
 
-1. **Agree the the O3DE Contributor License Agreement (CLA)** \<Comming soon\>
+1. **Agree the the O3DE Contributor License Agreement (CLA):** Refer to [Contributing to Open 3D Engine Documentation](https://github.com/o3de/o3de.org/CONTRIBUTING.md).
 
 1. **Create a new issue or claim an existing issue:** All contributions begin with a GitHub issue. You can file an issue and then assign it to yourself, or you can claim an existing issue. When creating a new issue, search the current issue list to ensure the issue hasn't already been submitted.
  
@@ -69,7 +69,7 @@ Now that you are familiar with the O3DE docs, and have had some exposure to issu
 
 1. **Create a branch on your fork for the issue:** Contributions can't be submitted directly to the main O3DE documentation repository. You must fork the main repository, and submit pull requests to the main repository from your fork/branch.
    
-   It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [O3DE documentation repository](./o3de-documentation-repository) topic in this guide.
+   It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [O3DE documentation repository](./o3de-docs-repo-setup) topic in this guide.
 
 1. **Make changes:** The O3DE documentation is written in [CommonMark Markdown](https://commonmark.org/) and processed with [Goldmark](https://www.markdownguide.org/tools/hugo/). We recommend using an editor with robust Markdown support during your writing, so that you can get live previews and catch any linting errors. During your writing, follow our [Style Guide](./style-guide) to help your review go smoothly and quickly.
 
