@@ -99,7 +99,7 @@ Now that you are familiar with the O3DE docs, and have had some exposure to issu
 
    2. When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR.
 
-   3. Make sure to request a re-review of your new commits if required. For more information on the PR review process, see the [Review PRs:](./review-prs)) topic in this guide.
+   3. Make sure to request a re-review of your new commits if required. 
 
 1. **The PR is merged and closed:** When the comments and suggestions have been addressed, and two reviewers have approved the PR, it can be merged into `o3de.org/main`. **Never** merge your own PRs, the final reviewer to sign off is responsible for the merge. The PR is automatically closed when merged.
 
