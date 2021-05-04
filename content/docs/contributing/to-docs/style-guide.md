@@ -2,7 +2,7 @@
 linkTitle: Style Guide
 title: O3DE Documentation Contribution Style Guide
 description: Style guide for contributors to the Open 3D Engine (O3DE) documentation project.
-weight: 1000
+weight: 700
 toc: true
 ---
 
@@ -327,14 +327,14 @@ Do | Don't
 Do | Don't
 :--| :-----
 Set the **Color** property to `255,0,0`. | Set the Color property to "255,0,0".
-For **Intensity Mode**, select `Candela`. | For `Intensity Mode`, select Candela. 
+For **Intensity Mode**, select `Candela`. | For `Intensity Mode`, select Candela.
 Valid **Mass** values range from `0` to `Infinity`. | Valid Mass values range from `0` to Infinity.
 
 ### Don't include the command prompt
 
 Do | Don't
 :--| :-----
-`cmake --build ...` | `C:\> cmake --build ...` 
+`cmake --build ...` | `C:\> cmake --build ...`
 
 ### Separate commands from output
 
@@ -576,6 +576,7 @@ Image output:
 ![O3DE Logo](/img/logos/O3DE-Logo-RGB.svg "The O3DE logo")
 
 ### Image file location
+
 Images are placed subdirectories of the `/static/` directory of the O3DE documentation repository.
 
 Guide-specific images, such as interface screenshots and diagrams, are located in subdirectories of `/static/images/`. The directory structure of `/static/images/` is a mirror of the directory structure of `/content/docs/`. Shared images like logos are placed in subdirectories of `/static/img/`. When submitting images as part of a PR, ensure the images are placed in the appropriate subdirectories.

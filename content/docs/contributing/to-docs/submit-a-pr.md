@@ -3,14 +3,13 @@ linkTitle: Submit a PR
 title: Submit a PR to Open 3D Engine (O3DE) Docs 
 description: A guide to submitting a PR to the Open 3D Engine (O3DE) documentation repository.
 
-weight: 750
+weight: 400
 toc: true
 ---
 
 {{< preview-new >}}
 
 When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
-
 
 * Technical accuracy
 * Spelling
@@ -63,7 +62,6 @@ PRs are created in the GitHub web interface from your branch. Go to your fork on
 
 1. In the **Open a pull request** dialog, the pull request will automatically point to `o3de.org:main`. The PR comment will use the message from your commit. Depending on the length of the first sentence in the comment, the message might be improperly split between the title and the body of the message. Make changes to the title and message for clarity, and be sure to include the issue number in the title of the PR if the PR is addressing an existing issue.
 
-
 1. Add appropriate labels to your PR if necessary. In the column on the right is a section named **Labels**. Choose the **gear button** to show the label list and select labels for your PR. Each label has a short explanation for how it is used. Not all labels are appropriate for PRs. Some are meant to be used on issues. PRs do not always require labels.
 
 1. Choose **Create pull request** to submit the PR.
@@ -76,9 +74,7 @@ For more information on creating a pull request, refer to [Creating a pull reque
 
 PRs require two reviewer approvals to be merged into main. Highly technical topics require an additional review by an O3DE code contributor for technical accuracy. You should request at least two, but no more than five reviewers for your PRs. Keep in mind that this is a community project, and that interested contributors can add themselves as reviewers to any PR.
 
-
 "But who do I ask to review my PRs?" you are probably wondering. If you are new to the project, you might not know any other contributors. You can look through the PR list and try to find reviewers who seem responsive, but a better solution is to visit the O3DE Discord and ask for suggestions and volunteers for reviewers. It's a great way to meet new people and introduce yourself to other contributors.
-
 
 To add reviewers to your PR, find the section named **Reviewers** in the column to the right of your PR. Choose the **gear button** to open the list of potential reviewers, and search for the names of reviewers you'd like to add. Click the reviewer's name to select them and add them to your PR's reviewer list.
 

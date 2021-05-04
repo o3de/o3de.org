@@ -64,11 +64,11 @@ Now that you are familiar with the O3DE docs, and have had some exposure to issu
 1. **Agree the the O3DE Contributor License Agreement (CLA):** Refer to [Contributing to Open 3D Engine Documentation](https://github.com/o3de/o3de.org/CONTRIBUTING.md).
 
 1. **Create a new issue or claim an existing issue:** All contributions begin with a GitHub issue. You can file an issue and then assign it to yourself, or you can claim an existing issue. When creating a new issue, search the current issue list to ensure the issue hasn't already been submitted.
- 
+
    During issue triage, other community members might ask you for additional information, and being responsive is the best way to make sure your issue stays relevant. When claiming issues for yourself as a contributor, try to be mindful of the PRs and issues your fellow contributors are working with to ensure your contributions are supportive and collaborative. Be communicative on your issues. Leave comments as your work progresses, and respond to comments on your issues, moving discussions to a pull request when you create one. For more information, see [Work with issues](./work-with-issues).
 
 1. **Create a branch on your fork for the issue:** Contributions can't be submitted directly to the main O3DE documentation repository. You must fork the main repository, and submit pull requests to the main repository from your fork/branch.
-   
+
    It's good practice, and very helpful to contributors who might review your PRs, to create a new branch on your fork for each new issue. Having small branches containing only the changes required for the issue can expedite the PR review process and lend themselves to collaboration with other contributors. For large issues, consider breaking the work down into smaller issues, creating new branches for each smaller issue. The smaller the number of changes in your branch, the easier it will be to review and merge into main. For more information on creating a fork and branches, see the [O3DE documentation repository](./o3de-docs-repo-setup) topic in this guide.
 
 1. **Make changes:** The O3DE documentation is written in [CommonMark Markdown](https://commonmark.org/) and processed with [Goldmark](https://www.markdownguide.org/tools/hugo/). We recommend using an editor with robust Markdown support during your writing, so that you can get live previews and catch any linting errors. During your writing, follow our [Style Guide](./style-guide) to help your review go smoothly and quickly.
@@ -103,8 +103,8 @@ Now that you are familiar with the O3DE docs, and have had some exposure to issu
 
 1. **The PR is merged and closed:** When the comments and suggestions have been addressed, and two reviewers have approved the PR, it can be merged into `o3de.org/main`. **Never** merge your own PRs, the final reviewer to sign off is responsible for the merge. The PR is automatically closed when merged.
 
-1.  **The related issue is closed:** If you have included a related issue number in the title of your PR, the related issue will be automatically closed when the PR is closed. Your contribution is complete. Congrats!
+1. **The related issue is closed:** If you have included a related issue number in the title of your PR, the related issue will be automatically closed when the PR is closed. Your contribution is complete. Congrats!
 
 ## Next step
 
-Let's start with the easiest way to make a contribution. File an issue. See [Working with issues](./work-with-issues).
+Let's start with the easiest way to make a contribution. File an issue. See [Working with issues](./work-with-issues)
