@@ -65,8 +65,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba9f17ec4b5f6cdc1bb7feb31718baab"><td align="right" class="memItemLeft" valign="top"><a id="aba9f17ec4b5f6cdc1bb7feb31718baab"></a>
 virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Shape</a> &gt; </td><td class="memItemRight" valign="bottom"><b>CreateShape</b> (const <a class="el" href="class_physics_1_1_collider_configuration.html">ColliderConfiguration</a> &amp;colliderConfiguration, const <a class="el" href="class_physics_1_1_shape_configuration.html">ShapeConfiguration</a> &amp;configuration)=0</td></tr>
 <tr class="separator:aba9f17ec4b5f6cdc1bb7feb31718baab"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a6535b48a8178134432e475688d4d1486"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a6535b48a8178134432e475688d4d1486">AddColliderComponentToEntity</a> (AZ::Entity *entity, const <a class="el" href="class_physics_1_1_collider_configuration.html">Physics::ColliderConfiguration</a> &amp;colliderConfiguration, const <a class="el" href="class_physics_1_1_shape_configuration.html">Physics::ShapeConfiguration</a> &amp;shapeConfiguration, bool addEditorComponents=false)=0</td></tr>
-<tr class="separator:a6535b48a8178134432e475688d4d1486"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a0741232a3c80a7fe21643436a4ad5718"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a0741232a3c80a7fe21643436a4ad5718">ReleaseNativeMeshObject</a> (void *nativeMeshObject)=0</td></tr>
 <tr class="separator:a0741232a3c80a7fe21643436a4ad5718"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a9de26d14b7570692734769678f7cfe1d"><td align="right" class="memItemLeft" valign="top"><a id="a9de26d14b7570692734769678f7cfe1d"></a>
@@ -105,61 +103,6 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Physics system global requests. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6535b48a8178134432e475688d4d1486"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6535b48a8178134432e475688d4d1486">◆ </a></span>AddColliderComponentToEntity()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual void Physics::System::AddColliderComponentToEntity </td>
-<td>(</td>
-<td class="paramtype">AZ::Entity * </td>
-<td class="paramname"><em>entity</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype">const <a class="el" href="class_physics_1_1_collider_configuration.html">Physics::ColliderConfiguration</a> &amp; </td>
-<td class="paramname"><em>colliderConfiguration</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype">const <a class="el" href="class_physics_1_1_shape_configuration.html">Physics::ShapeConfiguration</a> &amp; </td>
-<td class="paramname"><em>shapeConfiguration</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype">bool </td>
-<td class="paramname"><em>addEditorComponents</em> = <code>false</code> </td>
-</tr>
-<tr>
-<td></td>
-<td>)</td>
-<td></td><td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Adds an appropriate collider component to the entity based on the provided shape configuration. </p><dl class="params"><dt>Parameters</dt><dd>
-<table class="params">
-<tr><td class="paramname">entity</td><td>Entity where the component should be added to. </td></tr>
-<tr><td class="paramname">colliderConfiguration</td><td>Configuration of the collider. </td></tr>
-<tr><td class="paramname">shapeConfiguration</td><td>Configuration of the shape of the collider. </td></tr>
-<tr><td class="paramname">addEditorComponents</td><td>Tells whether to add the Editor version of the collider component or the Game one. </td></tr>
-</table>
-</dd>
-</dl>
-</div>
-</div>
 <a id="a4307a96cf23df2a9ff4cae36c8509160"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4307a96cf23df2a9ff4cae36c8509160">◆ </a></span>ComputeInitialJointLimitConfiguration()</h2>
 <div class="memitem">
@@ -617,7 +560,7 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:31 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:26 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

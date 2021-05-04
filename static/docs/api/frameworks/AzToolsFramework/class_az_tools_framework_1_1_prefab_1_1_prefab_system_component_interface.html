@@ -100,19 +100,22 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>UpdatePrefabTempl
 <tr class="memitem:aace975967b6bdeca0f17bf1d257deb76"><td align="right" class="memItemLeft" valign="top"><a id="aace975967b6bdeca0f17bf1d257deb76"></a>
 virtual void </td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId)=0</td></tr>
 <tr class="separator:aace975967b6bdeca0f17bf1d257deb76"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4c7110e4bcb45ed1f6f5b3049e4c4d04"><td align="right" class="memItemLeft" valign="top"><a id="a4c7110e4bcb45ed1f6f5b3049e4c4d04"></a>
+virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (AZ::IO::PathView filePath)=0</td></tr>
+<tr class="separator:a4c7110e4bcb45ed1f6f5b3049e4c4d04"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a6a94d59eae8c4dd0baf390955a4b3593"><td align="right" class="memItemLeft" valign="top"><a id="a6a94d59eae8c4dd0baf390955a4b3593"></a>
 virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (const TemplateId &amp;templateId)=0</td></tr>
 <tr class="separator:a6a94d59eae8c4dd0baf390955a4b3593"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:acff86c2090820ceae3bae48127903b54"><td align="right" class="memItemLeft" valign="top"><a id="acff86c2090820ceae3bae48127903b54"></a>
-virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><b>CreatePrefab</b> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr)=0</td></tr>
-<tr class="separator:acff86c2090820ceae3bae48127903b54"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6598c1c4efc2754e37092deee9b8dd62"><td align="right" class="memItemLeft" valign="top"><a id="a6598c1c4efc2754e37092deee9b8dd62"></a>
+virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><b>CreatePrefab</b> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr, bool ShouldCreateLinks=true)=0</td></tr>
+<tr class="separator:a6598c1c4efc2754e37092deee9b8dd62"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">PrefabSystemComponentInterface</a> Interface serviced by the Prefab System Component. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:45 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:38 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

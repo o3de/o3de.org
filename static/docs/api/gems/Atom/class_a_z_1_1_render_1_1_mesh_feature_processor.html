@@ -79,14 +79,12 @@ void </td><td class="memItemRight" valign="bottom"><b>OnBeginPrepareRender</b> 
 <tr class="memitem:a7e47d33c97e938fa5dad4f744b81cd57"><td align="right" class="memItemLeft" valign="top"><a id="a7e47d33c97e938fa5dad4f744b81cd57"></a>
 void </td><td class="memItemRight" valign="bottom"><b>OnEndPrepareRender</b> () override</td></tr>
 <tr class="separator:a7e47d33c97e938fa5dad4f744b81cd57"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a7fa97e287accd681544681d428a6db61"><td align="right" class="memItemLeft" valign="top"><a id="a7fa97e287accd681544681d428a6db61"></a>
-<a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a7fa97e287accd681544681d428a6db61">AcquireMesh</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const MaterialAssignmentMap &amp;materials={}, bool skinnedMeshWithMotion=false, bool rayTracingEnabled=true) override</td></tr>
-<tr class="memdesc:a7fa97e287accd681544681d428a6db61"><td class="mdescLeft"> </td><td class="mdescRight">Acquires a model with an optional collection of material assignments. <br/></td></tr>
-<tr class="separator:a7fa97e287accd681544681d428a6db61"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ae89e621a2d3543342b96944ac0229264"><td align="right" class="memItemLeft" valign="top"><a id="ae89e621a2d3543342b96944ac0229264"></a>
-<a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ae89e621a2d3543342b96944ac0229264">AcquireMesh</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;material, bool skinnedMeshWithMotion=false, bool rayTracingEnabled=true) override</td></tr>
-<tr class="memdesc:ae89e621a2d3543342b96944ac0229264"><td class="mdescLeft"> </td><td class="mdescRight">Acquires a model with a single material applied to all its meshes. <br/></td></tr>
-<tr class="separator:ae89e621a2d3543342b96944ac0229264"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4b58254038a05eeb891963d74b0d80ba"><td align="right" class="memItemLeft" valign="top"><a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a4b58254038a05eeb891963d74b0d80ba">AcquireMesh</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const MaterialAssignmentMap &amp;materials={}, bool skinnedMeshWithMotion=false, bool rayTracingEnabled=true, RequiresCloneCallback requiresCloneCallback={}) override</td></tr>
+<tr class="separator:a4b58254038a05eeb891963d74b0d80ba"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a53fbf4b103190512392e65b9257b0b33"><td align="right" class="memItemLeft" valign="top"><a id="a53fbf4b103190512392e65b9257b0b33"></a>
+<a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a53fbf4b103190512392e65b9257b0b33">AcquireMesh</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;material, bool skinnedMeshWithMotion=false, bool rayTracingEnabled=true, RequiresCloneCallback requiresCloneCallback={}) override</td></tr>
+<tr class="memdesc:a53fbf4b103190512392e65b9257b0b33"><td class="mdescLeft"> </td><td class="mdescRight">Acquires a model with a single material applied to all its meshes. <br/></td></tr>
+<tr class="separator:a53fbf4b103190512392e65b9257b0b33"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aeb4377c3ec4c457f7eb113cd1d5312e4"><td align="right" class="memItemLeft" valign="top"><a id="aeb4377c3ec4c457f7eb113cd1d5312e4"></a>
 bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#aeb4377c3ec4c457f7eb113cd1d5312e4">ReleaseMesh</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
 <tr class="memdesc:aeb4377c3ec4c457f7eb113cd1d5312e4"><td class="mdescLeft"> </td><td class="mdescRight">Releases the mesh handle. <br/></td></tr>
@@ -99,6 +97,10 @@ bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_
 Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ac37253075638d543c1e1cbd2b5c8e425">GetModel</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
 <tr class="memdesc:ac37253075638d543c1e1cbd2b5c8e425"><td class="mdescLeft"> </td><td class="mdescRight">Gets the underlying <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> instance for a meshHandle. May be null if the model has not loaded. <br/></td></tr>
 <tr class="separator:ac37253075638d543c1e1cbd2b5c8e425"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3cc2d6730c2f9842589a7760ebd4de7d"><td align="right" class="memItemLeft" valign="top"><a id="a3cc2d6730c2f9842589a7760ebd4de7d"></a>
+Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a3cc2d6730c2f9842589a7760ebd4de7d">GetModelAsset</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
+<tr class="memdesc:a3cc2d6730c2f9842589a7760ebd4de7d"><td class="mdescLeft"> </td><td class="mdescRight">Gets the underlying <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> for a meshHandle. <br/></td></tr>
+<tr class="separator:a3cc2d6730c2f9842589a7760ebd4de7d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a14704ad492988480f47e0889412f0d36"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a14704ad492988480f47e0889412f0d36">SetMaterialAssignmentMap</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;material) override</td></tr>
 <tr class="separator:a14704ad492988480f47e0889412f0d36"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a4895c975e694c8f98c937455a819571c"><td align="right" class="memItemLeft" valign="top"><a id="a4895c975e694c8f98c937455a819571c"></a>
@@ -113,14 +115,17 @@ const MaterialAssignmentMap &amp; </td><td class="memItemRight" valign="bottom"
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a31a09e9a893069642e606054f88137c4">ConnectModelChangeEventHandler</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, ModelChangedEvent::Handler &amp;handler) override</td></tr>
 <tr class="memdesc:a31a09e9a893069642e606054f88137c4"><td class="mdescLeft"> </td><td class="mdescRight">Connects a handler to any changes to an <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a>. Changes include loading and reloading. <br/></td></tr>
 <tr class="separator:a31a09e9a893069642e606054f88137c4"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a275bbcec56edd3527cc69d1977894fc1"><td align="right" class="memItemLeft" valign="top"><a id="a275bbcec56edd3527cc69d1977894fc1"></a>
-void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a275bbcec56edd3527cc69d1977894fc1">SetTransform</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const AZ::Transform &amp;transform) override</td></tr>
-<tr class="memdesc:a275bbcec56edd3527cc69d1977894fc1"><td class="mdescLeft"> </td><td class="mdescRight">Sets the transform for a given mesh handle. <br/></td></tr>
-<tr class="separator:a275bbcec56edd3527cc69d1977894fc1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa7118b9a734263192e19212118863a19"><td align="right" class="memItemLeft" valign="top"><a id="aa7118b9a734263192e19212118863a19"></a>
+void </td><td class="memItemRight" valign="bottom"><b>SetTransform</b> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const AZ::Transform &amp;transform, const AZ::Vector3 &amp;nonUniformScale=AZ::Vector3::CreateOne()) override</td></tr>
+<tr class="separator:aa7118b9a734263192e19212118863a19"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a5c832d41232841da6716e0aec120c099"><td align="right" class="memItemLeft" valign="top"><a id="a5c832d41232841da6716e0aec120c099"></a>
 Transform </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a5c832d41232841da6716e0aec120c099">GetTransform</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
 <tr class="memdesc:a5c832d41232841da6716e0aec120c099"><td class="mdescLeft"> </td><td class="mdescRight">Gets the transform for a given mesh handle. <br/></td></tr>
 <tr class="separator:a5c832d41232841da6716e0aec120c099"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7ae980c77dbfbeac6d0799aabc46a01c"><td align="right" class="memItemLeft" valign="top"><a id="a7ae980c77dbfbeac6d0799aabc46a01c"></a>
+Vector3 </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a7ae980c77dbfbeac6d0799aabc46a01c">GetNonUniformScale</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
+<tr class="memdesc:a7ae980c77dbfbeac6d0799aabc46a01c"><td class="mdescLeft"> </td><td class="mdescRight">Gets the non-uniform scale for a given mesh handle. <br/></td></tr>
+<tr class="separator:a7ae980c77dbfbeac6d0799aabc46a01c"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a6e5e19cbf39da972330bf6f2ce38ddfe"><td align="right" class="memItemLeft" valign="top"><a id="a6e5e19cbf39da972330bf6f2ce38ddfe"></a>
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a6e5e19cbf39da972330bf6f2ce38ddfe">SetSortKey</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, RHI::DrawItemSortKey sortKey) override</td></tr>
 <tr class="memdesc:a6e5e19cbf39da972330bf6f2ce38ddfe"><td class="mdescLeft"> </td><td class="mdescRight">Sets the sort key for a given mesh handle. <br/></td></tr>
@@ -131,7 +136,7 @@ RHI::DrawItemSortKey </td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="separator:a9d8f10df1d335fbbae369e7bc9ca92eb"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:adef18e376d91c1bb833a6b430b9fecf9"><td align="right" class="memItemLeft" valign="top"><a id="adef18e376d91c1bb833a6b430b9fecf9"></a>
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#adef18e376d91c1bb833a6b430b9fecf9">SetLodOverride</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, RPI::Cullable::LodOverride lodOverride) override</td></tr>
-<tr class="memdesc:adef18e376d91c1bb833a6b430b9fecf9"><td class="mdescLeft"> </td><td class="mdescRight">Sets an LOD override for a given mesh handle. This LOD will always be rendered instead being automatitcally determined. <br/></td></tr>
+<tr class="memdesc:adef18e376d91c1bb833a6b430b9fecf9"><td class="mdescLeft"> </td><td class="mdescRight">Sets an LOD override for a given mesh handle. This LOD will always be rendered instead being automatically determined. <br/></td></tr>
 <tr class="separator:adef18e376d91c1bb833a6b430b9fecf9"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a08e9ab7cf96b70bd5542ba53c41e682a"><td align="right" class="memItemLeft" valign="top"><a id="a08e9ab7cf96b70bd5542ba53c41e682a"></a>
 RPI::Cullable::LodOverride </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a08e9ab7cf96b70bd5542ba53c41e682a">GetLodOverride</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
@@ -160,6 +165,10 @@ void </td><td class="memItemRight" valign="bottom"><b>UpdateMeshReflectionProbe
 <tr class="memitem:a142356d673f1f49bf873ad39854f5da8 inherit pub_methods_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td align="right" class="memItemLeft" valign="top"><a id="a142356d673f1f49bf873ad39854f5da8"></a>
  </td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">AZ::Render::MeshFeatureProcessorInterface</a>, "{975D7F0C-2E7E-4819-94D0-D3C4E2024721}", FeatureProcessor)</td></tr>
 <tr class="separator:a142356d673f1f49bf873ad39854f5da8 inherit pub_methods_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa2b7f68d77803d1750c4bba8f8899769 inherit pub_methods_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td align="right" class="memItemLeft" valign="top"><a id="aa2b7f68d77803d1750c4bba8f8899769"></a>
+virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#aa2b7f68d77803d1750c4bba8f8899769">SetTransform</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const Transform &amp;transform, const Vector3 &amp;nonUniformScale=Vector3::CreateOne())=0</td></tr>
+<tr class="memdesc:aa2b7f68d77803d1750c4bba8f8899769 inherit pub_methods_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="mdescLeft"> </td><td class="mdescRight">Sets the transform for a given mesh handle. <br/></td></tr>
+<tr class="separator:aa2b7f68d77803d1750c4bba8f8899769 inherit pub_methods_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor')"><img alt="-" src="/images/api-ref/closed.png"/> Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a></td></tr>
 <tr class="memitem:a011d9c30a4429e37a8e21a0b6087935e inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td align="right" class="memItemLeft" valign="top"><a id="a011d9c30a4429e37a8e21a0b6087935e"></a>
  </td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a>, "{B8027170-C65C-4237-964D-B557FC9D7575}")</td></tr>
@@ -194,6 +203,9 @@ using </td><td class="memItemRight" valign="bottom"><b>MeshHandle</b> = <a clas
 <tr class="memitem:a204218038491066bf47d1dba1c27bab9 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td align="right" class="memItemLeft" valign="top"><a id="a204218038491066bf47d1dba1c27bab9"></a>
 using </td><td class="memItemRight" valign="bottom"><b>ModelChangedEvent</b> = Event&lt; const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> &gt; &gt;</td></tr>
 <tr class="separator:a204218038491066bf47d1dba1c27bab9 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4cec33377531e27eea219b10e5dfa226 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td align="right" class="memItemLeft" valign="top"><a id="a4cec33377531e27eea219b10e5dfa226"></a>
+using </td><td class="memItemRight" valign="bottom"><b>RequiresCloneCallback</b> = AZStd::function&lt; bool(const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset)&gt;</td></tr>
+<tr class="separator:a4cec33377531e27eea219b10e5dfa226 inherit pub_types_class_a_z_1_1_render_1_1_mesh_feature_processor_interface"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor')"><img alt="-" src="/images/api-ref/closed.png"/> Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a></td></tr>
 <tr class="memitem:a527c85ae0643dbdbdd2a7fa4bfda8fae inherit pro_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td align="right" class="memItemLeft" valign="top"><a id="a527c85ae0643dbdbdd2a7fa4bfda8fae"></a>
 void </td><td class="memItemRight" valign="bottom"><b>EnableSceneNotification</b> ()</td></tr>
@@ -205,6 +217,65 @@ void </td><td class="memItemRight" valign="bottom"><b>DisableSceneNotification<
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This feature processor handles static and dynamic non-skinned meshes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4b58254038a05eeb891963d74b0d80ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b58254038a05eeb891963d74b0d80ba">◆ </a></span>AcquireMesh()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname"><a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> AZ::Render::MeshFeatureProcessor::AcquireMesh </td>
+<td>(</td>
+<td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp; </td>
+<td class="paramname"><em>modelAsset</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">const MaterialAssignmentMap &amp; </td>
+<td class="paramname"><em>materials</em> = <code>{}</code>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool </td>
+<td class="paramname"><em>skinnedMeshWithMotion</em> = <code>false</code>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool </td>
+<td class="paramname"><em>rayTracingEnabled</em> = <code>true</code>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">RequiresCloneCallback </td>
+<td class="paramname"><em>requiresCloneCallback</em> = <code>{}</code> </td>
+</tr>
+<tr>
+<td></td>
+<td>)</td>
+<td></td><td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Acquires a model with an optional collection of material assignments. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">requiresCloneCallback</td><td>The callback indicates whether cloning is required for a given model asset. </td></tr>
+</table>
+</dd>
+</dl>
+<p>Implements <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a8f6709c2d74578df53ebf343f88bbad1">AZ::Render::MeshFeatureProcessorInterface</a>.</p>
+</div>
+</div>
 <a id="a14704ad492988480f47e0889412f0d36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a14704ad492988480f47e0889412f0d36">◆ </a></span>SetMaterialAssignmentMap()</h2>
 <div class="memitem">
@@ -244,7 +315,7 @@ void </td><td class="memItemRight" valign="bottom"><b>DisableSceneNotification<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:01 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:52 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

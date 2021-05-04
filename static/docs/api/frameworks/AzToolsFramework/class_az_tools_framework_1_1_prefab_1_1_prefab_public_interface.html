@@ -58,10 +58,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a28b681df52f8999a9d37e8748a708ecb"><td align="right" class="memItemLeft" valign="top"><a id="a28b681df52f8999a9d37e8748a708ecb"></a>
  </td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">PrefabPublicInterface</a>, "{931AAE9D-C775-4818-9070-A2DA69489CBE}")</td></tr>
 <tr class="separator:a28b681df52f8999a9d37e8748a708ecb"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a169e2610efd7dc87496c79f0d9bf8f13"><td align="right" class="memItemLeft" valign="top">virtual PrefabOperationResult </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a169e2610efd7dc87496c79f0d9bf8f13">CreatePrefab</a> (const AZStd::vector&lt; AZ::EntityId &gt; &amp;entityIds, AZStd::string_view filePath)=0</td></tr>
-<tr class="separator:a169e2610efd7dc87496c79f0d9bf8f13"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a671071189be3cfffd124d52848218931"><td align="right" class="memItemLeft" valign="top">virtual PrefabOperationResult </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a671071189be3cfffd124d52848218931">InstantiatePrefab</a> (AZStd::string_view filePath, AZ::EntityId parent, AZ::Vector3 position)=0</td></tr>
-<tr class="separator:a671071189be3cfffd124d52848218931"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a53171abfdd31a309b133c43e704ca3f5"><td align="right" class="memItemLeft" valign="top">virtual PrefabOperationResult </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a53171abfdd31a309b133c43e704ca3f5">CreatePrefab</a> (const AZStd::vector&lt; AZ::EntityId &gt; &amp;entityIds, AZ::IO::PathView filePath)=0</td></tr>
+<tr class="separator:a53171abfdd31a309b133c43e704ca3f5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6aec9f85c3290358fc51b84e0b19993e"><td align="right" class="memItemLeft" valign="top">virtual PrefabOperationResult </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a6aec9f85c3290358fc51b84e0b19993e">InstantiatePrefab</a> (AZStd::string_view filePath, AZ::EntityId parent, const AZ::Vector3 &amp;position)=0</td></tr>
+<tr class="separator:a6aec9f85c3290358fc51b84e0b19993e"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a48ffcfbd9e325e586cafd9f4634c901d"><td align="right" class="memItemLeft" valign="top">virtual PrefabOperationResult </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a48ffcfbd9e325e586cafd9f4634c901d">SavePrefab</a> (AZ::IO::Path filePath)=0</td></tr>
 <tr class="separator:a48ffcfbd9e325e586cafd9f4634c901d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae905468dc2ae176e5762e9595ce5f74f"><td align="right" class="memItemLeft" valign="top">virtual PrefabEntityResult </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#ae905468dc2ae176e5762e9595ce5f74f">CreateEntity</a> (AZ::EntityId parentId, const AZ::Vector3 &amp;position)=0</td></tr>
@@ -132,8 +132,8 @@ Public Member Functions</h2></td></tr>
 <p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a742cfb08b34bce17cd2518d345259232">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
 </div>
 </div>
-<a id="a169e2610efd7dc87496c79f0d9bf8f13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a169e2610efd7dc87496c79f0d9bf8f13">◆ </a></span>CreatePrefab()</h2>
+<a id="a53171abfdd31a309b133c43e704ca3f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53171abfdd31a309b133c43e704ca3f5">◆ </a></span>CreatePrefab()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
 <tr>
 <td class="paramkey"></td>
 <td></td>
-<td class="paramtype">AZStd::string_view </td>
+<td class="paramtype">AZ::IO::PathView </td>
 <td class="paramname"><em>filePath</em> </td>
 </tr>
 <tr>
@@ -172,7 +172,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An outcome object; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
-<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa57c3383330e02300a4fa154bc2d2736">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa8e7df30a0b6cce980b4049954d6e216">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
 </div>
 </div>
 <a id="aa578241e92eeea6629986c8724a8b8a4"></a>
@@ -403,8 +403,8 @@ Public Member Functions</h2></td></tr>
 <p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aea780e346eb390aabc4dfbc340e4a68e">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
 </div>
 </div>
-<a id="a671071189be3cfffd124d52848218931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a671071189be3cfffd124d52848218931">◆ </a></span>InstantiatePrefab()</h2>
+<a id="a6aec9f85c3290358fc51b84e0b19993e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6aec9f85c3290358fc51b84e0b19993e">◆ </a></span>InstantiatePrefab()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -426,7 +426,7 @@ Public Member Functions</h2></td></tr>
 <tr>
 <td class="paramkey"></td>
 <td></td>
-<td class="paramtype">AZ::Vector3 </td>
+<td class="paramtype">const AZ::Vector3 &amp; </td>
 <td class="paramname"><em>position</em> </td>
 </tr>
 <tr>
@@ -450,7 +450,7 @@ Public Member Functions</h2></td></tr>
 </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>An outcome object; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
-<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a13facc21e860cd50026be089b85b1df1">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a2f64d94a9ead5ea2818cf06e943baff8">AzToolsFramework::Prefab::PrefabPublicHandler</a>.</p>
 </div>
 </div>
 <a id="a3e9548b9f0585011b0d65aa4c38b080c"></a>
@@ -552,7 +552,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:45 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:38 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

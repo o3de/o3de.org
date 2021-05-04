@@ -89,6 +89,8 @@ virtual </td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a53b3d93b64c147f6a3471989d92e0ce3"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a19ac55a6b82d5b8b05b7f5a2a5c434bb"><td align="right" class="memItemLeft" valign="top">virtual <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a19ac55a6b82d5b8b05b7f5a2a5c434bb">GetEntityName</a> (const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id)</td></tr>
 <tr class="separator:a19ac55a6b82d5b8b05b7f5a2a5c434bb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae708d2415654546645045938049de4db"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#ae708d2415654546645045938049de4db">SetEntityName</a> ([[maybe_unused]] const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id, [[maybe_unused]] const <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name)</td></tr>
+<tr class="separator:ae708d2415654546645045938049de4db"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa3cc5e6e8f11b67ac1d1e32350fc55b2"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#aa3cc5e6e8f11b67ac1d1e32350fc55b2">EnumerateEntities</a> (const <a class="el" href="class_a_z_1_1_component_application_requests.html#a2e5e9008371472f2c65456cef64b5010">EntityCallback</a> &amp;callback)=0</td></tr>
 <tr class="separator:aa3cc5e6e8f11b67ac1d1e32350fc55b2"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a49f2246d7cdf45d88747408c2d7ac66e"><td align="right" class="memItemLeft" valign="top">virtual class <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a49f2246d7cdf45d88747408c2d7ac66e">GetSerializeContext</a> ()=0</td></tr>
@@ -649,6 +651,47 @@ virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="
 <p>ResolveModulePath is called whenever LoadDynamicModule wants to resolve a module in order to actually load it. You can override this if you need to load modules from a different path or hijack module loading in some other way. If you do, ensure that you use platform-specific conventions to do so, as this is called by multiple platforms. The default implantation prepends the path to the executable to the module path, but you can override this behavior (Call the base class if you want this behavior to persist in overrides) </p>
 </div>
 </div>
+<a id="ae708d2415654546645045938049de4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae708d2415654546645045938049de4db">◆ </a></span>SetEntityName()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual bool AZ::ComponentApplicationRequests::SetEntityName </td>
+<td>(</td>
+<td class="paramtype">[[maybe_unused] ] const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp; </td>
+<td class="paramname"><em>id</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">[[maybe_unused] ] const <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> </td>
+<td class="paramname"><em>name</em> </td>
+</tr>
+<tr>
+<td></td>
+<td>)</td>
+<td></td><td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the name of the entity that has the specified entity ID. <a class="el" href="class_a_z_1_1_entity.html">Entity</a> names are not enforced to be unique. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">entityId</td><td>A reference to the entity whose name you want to change. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the name was changed successfully, false if it wasn't. </dd></dl>
+</div>
+</div>
 <a id="a8d84f526957d92fb64dd97fd9d8e02b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d84f526957d92fb64dd97fd9d8e02b4">◆ </a></span>UnregisterComponentDescriptor()</h2>
 <div class="memitem">
@@ -682,7 +725,7 @@ virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:09:55 for AzCore API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:15:50 for AzCore API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

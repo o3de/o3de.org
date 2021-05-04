@@ -53,7 +53,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <p><code>#include &lt;FFont.h&gt;</code></p>
-<p>Inherits IFFont, intrusive_refcount&lt; AZStd::atomic_uint, FontDeleter &gt;, and Handler.</p>
+<p>Inherits IFFont, intrusive_refcount&lt; AZStd::atomic_uint, FontDeleter &gt;, FontDrawInterface, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -87,9 +87,6 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:a46d14b99ec6bfdbdf1c0249ed24b5f7e"><td class="mdescLeft"> </td><td class="mdescRight">Chooses whether hinting info should be obtained from the font, turned off entirely, or automatically generated.  <a href="class_a_z_1_1_f_font.html#a46d14b99ec6bfdbdf1c0249ed24b5f7e">More...</a><br/></td></tr>
 <tr class="separator:a46d14b99ec6bfdbdf1c0249ed24b5f7e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ab4c50d19dbf26cef82b11e2902d015c8"><td align="right" class="memItemLeft" valign="top"><a id="ab4c50d19dbf26cef82b11e2902d015c8"></a>
-using </td><td class="memItemRight" valign="bottom"><b>TextDrawContext</b> = STextDrawContext</td></tr>
-<tr class="separator:ab4c50d19dbf26cef82b11e2902d015c8"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:af4590be8f18cf468ef9c59c361fe74d9"><td align="right" class="memItemLeft" valign="top"><a id="af4590be8f18cf468ef9c59c361fe74d9"></a>
 typedef std::vector&lt; <a class="el" href="struct_a_z_1_1_f_font_1_1_font_effect.html">FontEffect</a> &gt; </td><td class="memItemRight" valign="bottom"><b>FontEffects</b></td></tr>
 <tr class="separator:af4590be8f18cf468ef9c59c361fe74d9"><td class="memSeparator" colspan="2"> </td></tr>
@@ -177,6 +174,12 @@ int </td><td class="memItemRight" valign="bottom"><b>GetFontTextureId</b> () ov
 <tr class="memitem:a408f0c26b5e8faba67bb9172c2bf6c23"><td align="right" class="memItemLeft" valign="top"><a id="a408f0c26b5e8faba67bb9172c2bf6c23"></a>
 uint32_t </td><td class="memItemRight" valign="bottom"><b>GetFontTextureVersion</b> () override</td></tr>
 <tr class="separator:a408f0c26b5e8faba67bb9172c2bf6c23"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6698c5ba2999f511bb32023e53147eaf"><td align="right" class="memItemLeft" valign="top"><a id="a6698c5ba2999f511bb32023e53147eaf"></a>
+void </td><td class="memItemRight" valign="bottom"><b>DrawScreenAlignedText2d</b> (const AzFramework::TextDrawParameters &amp;params, const AZStd::string_view &amp;string) override</td></tr>
+<tr class="separator:a6698c5ba2999f511bb32023e53147eaf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0cc0291dcb091f79b3939b63a1988478"><td align="right" class="memItemLeft" valign="top"><a id="a0cc0291dcb091f79b3939b63a1988478"></a>
+void </td><td class="memItemRight" valign="bottom"><b>DrawScreenAlignedText3d</b> (const AzFramework::TextDrawParameters &amp;params, const AZStd::string_view &amp;string) override</td></tr>
+<tr class="separator:a0cc0291dcb091f79b3939b63a1988478"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa0311a0a5281678fb77bf3560fc19c9b"><td align="right" class="memItemLeft" valign="top"><a id="aa0311a0a5281678fb77bf3560fc19c9b"></a>
  </td><td class="memItemRight" valign="bottom"><b>FFont</b> (<a class="el" href="class_a_z_1_1_atom_font.html">AtomFont</a> *atomFont, const char *fontName)</td></tr>
 <tr class="separator:aa0311a0a5281678fb77bf3560fc19c9b"><td class="memSeparator" colspan="2"> </td></tr>
@@ -285,7 +288,7 @@ AZ::Data::Instance&lt; AZ::RPI::Image &gt; </td><td class="memItemRight" valign
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:07 for AtomLyIntegration API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:58 for AtomLyIntegration API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

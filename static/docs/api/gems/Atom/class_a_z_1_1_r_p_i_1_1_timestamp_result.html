@@ -56,28 +56,28 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a175f74552f846d833712d66205867303"><td align="right" class="memItemLeft" valign="top"><a id="a175f74552f846d833712d66205867303"></a>
- </td><td class="memItemRight" valign="bottom"><b>TimestampResult</b> (uint64_t timestampInTicks)</td></tr>
-<tr class="separator:a175f74552f846d833712d66205867303"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ab974b94c556bf3bf1f5c4d44e967950e"><td align="right" class="memItemLeft" valign="top"><a id="ab974b94c556bf3bf1f5c4d44e967950e"></a>
- </td><td class="memItemRight" valign="bottom"><b>TimestampResult</b> (uint64_t timestampQueryResultLow, uint64_t timestampQueryResultHigh)</td></tr>
-<tr class="separator:ab974b94c556bf3bf1f5c4d44e967950e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a4c52da9c12d5843781b0182098a32e7d"><td align="right" class="memItemLeft" valign="top"><a id="a4c52da9c12d5843781b0182098a32e7d"></a>
- </td><td class="memItemRight" valign="bottom"><b>TimestampResult</b> (AZStd::array_view&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_timestamp_result.html">TimestampResult</a> &gt; &amp;&amp;timestampResultArray)</td></tr>
-<tr class="separator:a4c52da9c12d5843781b0182098a32e7d"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a351d589dd147cf89247016a9cb91cc26"><td align="right" class="memItemLeft" valign="top"><a id="a351d589dd147cf89247016a9cb91cc26"></a>
-uint64_t </td><td class="memItemRight" valign="bottom"><b>GetTimestampInNanoseconds</b> () const</td></tr>
-<tr class="separator:a351d589dd147cf89247016a9cb91cc26"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a5ef81030dbce95bd7df768a1d2d4b3e4"><td align="right" class="memItemLeft" valign="top"><a id="a5ef81030dbce95bd7df768a1d2d4b3e4"></a>
-uint64_t </td><td class="memItemRight" valign="bottom"><b>GetTimestampInTicks</b> () const</td></tr>
-<tr class="separator:a5ef81030dbce95bd7df768a1d2d4b3e4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae0d159429ab45538fd21fc6a70c31406"><td align="right" class="memItemLeft" valign="top"><a id="ae0d159429ab45538fd21fc6a70c31406"></a>
+ </td><td class="memItemRight" valign="bottom"><b>TimestampResult</b> (uint64_t beginTick, uint64_t endTick, RHI::HardwareQueueClass hardwareQueueClass)</td></tr>
+<tr class="separator:ae0d159429ab45538fd21fc6a70c31406"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae409e529a79e2d9f866a023c7e1185b6"><td align="right" class="memItemLeft" valign="top"><a id="ae409e529a79e2d9f866a023c7e1185b6"></a>
+uint64_t </td><td class="memItemRight" valign="bottom"><b>GetDurationInNanoseconds</b> () const</td></tr>
+<tr class="separator:ae409e529a79e2d9f866a023c7e1185b6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5d4501ec9fa0fecede8f5476a9237969"><td align="right" class="memItemLeft" valign="top"><a id="a5d4501ec9fa0fecede8f5476a9237969"></a>
+uint64_t </td><td class="memItemRight" valign="bottom"><b>GetDurationInTicks</b> () const</td></tr>
+<tr class="separator:a5d4501ec9fa0fecede8f5476a9237969"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a60c33efd30e5728fcd3cba5e04cfcdfc"><td align="right" class="memItemLeft" valign="top"><a id="a60c33efd30e5728fcd3cba5e04cfcdfc"></a>
+uint64_t </td><td class="memItemRight" valign="bottom"><b>GetTimestampBeginInTicks</b> () const</td></tr>
+<tr class="separator:a60c33efd30e5728fcd3cba5e04cfcdfc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a845f83be496fd1dfe31c20120e7aecd7"><td align="right" class="memItemLeft" valign="top"><a id="a845f83be496fd1dfe31c20120e7aecd7"></a>
+void </td><td class="memItemRight" valign="bottom"><b>Add</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_timestamp_result.html">TimestampResult</a> &amp;extent)</td></tr>
+<tr class="separator:a845f83be496fd1dfe31c20120e7aecd7"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The structure that is used to store the readback data from the timestamp queries. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:05 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:56 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

@@ -678,6 +678,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_plane.html">Plane</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_platform_defaults_1_1_platform_helper.html">PlatformHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft"> </td><td class="mdescRight">Platform Helper is an utility class that can be used to retrieve platform related information.  <a href="class_a_z_1_1_platform_defaults_1_1_platform_helper.html#details">More...</a><br/></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_polygon_prism.html">PolygonPrism</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:"><td align="right" class="memItemLeft" valign="top">class  </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_pool_allocation.html">PoolAllocation</a></td></tr>
@@ -1174,9 +1177,9 @@ using </td><td class="memItemRight" valign="bottom"><b>NonUniformScaleRequestBu
 <tr class="separator:a4a978153f97e869c8113177818434aa7"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae026317ae0435b26c00cc6fb8c032302"><td align="right" class="memItemLeft" valign="top">using </td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#ae026317ae0435b26c00cc6fb8c032302">SystemTickBus</a> = <a class="el" href="class_a_z_1_1_e_bus.html">AZ::EBus</a>&lt; <a class="el" href="class_a_z_1_1_system_tick_events.html">SystemTickEvents</a> &gt;</td></tr>
 <tr class="separator:ae026317ae0435b26c00cc6fb8c032302"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:aedbb23ebd14e031edeadebf6664626a5"><td align="right" class="memItemLeft" valign="top"><a id="aedbb23ebd14e031edeadebf6664626a5"></a>
-using </td><td class="memItemRight" valign="bottom"><b>TransformChangedEvent</b> = <a class="el" href="class_a_z_1_1_event.html">Event</a>&lt; <a class="el" href="class_a_z_1_1_transform.html">Transform</a>, <a class="el" href="class_a_z_1_1_transform.html">Transform</a> &gt;</td></tr>
-<tr class="separator:aedbb23ebd14e031edeadebf6664626a5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a08660a642abbc09ddd3c5ef619b194e2"><td align="right" class="memItemLeft" valign="top"><a id="a08660a642abbc09ddd3c5ef619b194e2"></a>
+using </td><td class="memItemRight" valign="bottom"><b>TransformChangedEvent</b> = <a class="el" href="class_a_z_1_1_event.html">Event</a>&lt; const <a class="el" href="class_a_z_1_1_transform.html">Transform</a> &amp;, const <a class="el" href="class_a_z_1_1_transform.html">Transform</a> &amp; &gt;</td></tr>
+<tr class="separator:a08660a642abbc09ddd3c5ef619b194e2"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a92aea4be1a6de2e5b9d541da37a2582c"><td align="right" class="memItemLeft" valign="top"><a id="a92aea4be1a6de2e5b9d541da37a2582c"></a>
 using </td><td class="memItemRight" valign="bottom"><b>ParentChangedEvent</b> = <a class="el" href="class_a_z_1_1_event.html">Event</a>&lt; <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a>, <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &gt;</td></tr>
 <tr class="separator:a92aea4be1a6de2e5b9d541da37a2582c"><td class="memSeparator" colspan="2"> </td></tr>
@@ -1279,6 +1282,12 @@ template&lt;class ValueT &gt; </td></tr>
 template&lt;class ValueT &gt; </td></tr>
 <tr class="memitem:a900ea7967bdf6f840279caf6737005fa"><td align="right" class="memTemplItemLeft" valign="top">using </td><td class="memTemplItemRight" valign="bottom"><b>FailureValue</b> = Internal::OutcomeStorage&lt; typename AZStd::decay&lt; ValueT &gt;::type, 1u &gt;</td></tr>
 <tr class="separator:a900ea7967bdf6f840279caf6737005fa"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4d00327eea2d400d386f7607c7cc9389"><td align="right" class="memItemLeft" valign="top"><a id="a4d00327eea2d400d386f7607c7cc9389"></a>
+using </td><td class="memItemRight" valign="bottom"><b>AssetPlatformFixedString</b> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; 32 &gt;</td></tr>
+<tr class="separator:a4d00327eea2d400d386f7607c7cc9389"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a34813745a5e5a58baf93cd68da55efe1"><td align="right" class="memItemLeft" valign="top"><a id="a34813745a5e5a58baf93cd68da55efe1"></a>
+using </td><td class="memItemRight" valign="bottom"><b>AssetPlatformCombinedString</b> = <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt;(AssetPlatformFixedString{}.max_size()+1) *PlatformId::NumPlatformIds &gt;</td></tr>
+<tr class="separator:a34813745a5e5a58baf93cd68da55efe1"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a4f5080ba5bd0a7d0f1e50dab64a49976"><td class="memTemplParams" colspan="2"><a id="a4f5080ba5bd0a7d0f1e50dab64a49976"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a4f5080ba5bd0a7d0f1e50dab64a49976"><td align="right" class="memTemplItemLeft" valign="top">using </td><td class="memTemplItemRight" valign="bottom"><b>decay_array</b> = AZStd::conditional_t&lt; AZStd::is_array_v&lt; AZStd::remove_reference_t&lt; T &gt; &gt;, std::remove_extent_t&lt; AZStd::remove_reference_t&lt; T &gt; &gt; *, T &amp;&amp; &gt;</td></tr>
@@ -1576,6 +1585,24 @@ Enumerations</h2></td></tr>
 <br/>
  }</td></tr>
 <tr class="separator:acc05eb98461465d261196f649084318c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a33e9ebde458990a0c74325fac68e4976"><td align="right" class="memItemLeft" valign="top"><a id="a33e9ebde458990a0c74325fac68e4976"></a>enum  </td><td class="memItemRight" valign="bottom"><b>PlatformFlags</b> : AZ::u32 { <br/>
+  <b>Platform_NONE</b> = 0x00, 
+<b>Platform_PC</b> = 1 &lt;&lt; PlatformId::PC, 
+<b>Platform_ES3</b> = 1 &lt;&lt; PlatformId::ES3, 
+<b>Platform_IOS</b> = 1 &lt;&lt; PlatformId::IOS, 
+<br/>
+  <b>Platform_OSX</b> = 1 &lt;&lt; PlatformId::OSX, 
+<b>Platform_PROVO</b> = 1 &lt;&lt; PlatformId::PROVO, 
+<b>Platform_SALEM</b> = 1 &lt;&lt; PlatformId::SALEM, 
+<b>Platform_JASPER</b> = 1 &lt;&lt; PlatformId::JASPER, 
+<br/>
+  <b>Platform_SERVER</b> = 1 &lt;&lt; PlatformId::SERVER, 
+<b>Platform_ALL</b> = 1ULL &lt;&lt; 30, 
+<b>Platform_ALL_CLIENT</b> = 1ULL &lt;&lt; 31, 
+<b>AllNamedPlatforms</b> = Platform_PC | Platform_ES3 | Platform_IOS | Platform_OSX | Platform_PROVO | Platform_SALEM | Platform_JASPER | Platform_SERVER
+<br/>
+ }</td></tr>
+<tr class="separator:a33e9ebde458990a0c74325fac68e4976"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad49ae84c220453bc7b80048c9da51896"><td align="right" class="memItemLeft" valign="top">enum  </td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#ad49ae84c220453bc7b80048c9da51896">PlatformID</a> { <br/>
   <b>PLATFORM_WINDOWS_64</b>, 
 <b>PLATFORM_LINUX_64</b>, 
@@ -2195,6 +2222,19 @@ template&lt;class T &gt; </td></tr>
 <tr class="memitem:a8195ae706f9877fda1e15929d3fe429a"><td align="right" class="memItemLeft" valign="top"><a id="a8195ae706f9877fda1e15929d3fe429a"></a>
  </td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO_TEMPLATE</b> (<a class="el" href="class_a_z_1_1_outcome.html">Outcome</a>, "{C1DB96E5-922A-4387-B658-B4BE7FB94EA0}", AZ_TYPE_INFO_CLASS, AZ_TYPE_INFO_CLASS)</td></tr>
 <tr class="separator:a8195ae706f9877fda1e15929d3fe429a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9f963e6b70d9432ab37f502e562d9073"><td align="right" class="memItemLeft" valign="top"><a id="a9f963e6b70d9432ab37f502e562d9073"></a>
+ </td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a9f963e6b70d9432ab37f502e562d9073">AZ_ENUM_WITH_UNDERLYING_TYPE</a> (PlatformId, int,(Invalid, -1), PC, ES3, IOS, OSX, PROVO, SALEM, JASPER, SERVER, ALL, ALL_CLIENT, NumPlatformIds)</td></tr>
+<tr class="memdesc:a9f963e6b70d9432ab37f502e562d9073"><td class="mdescLeft"> </td><td class="mdescRight">This platform enum have platform values in sequence and can also be used to get the platform count. <br/></td></tr>
+<tr class="separator:a9f963e6b70d9432ab37f502e562d9073"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9fb58964e3ae2a0deb26a7de2157ea6e"><td align="right" class="memItemLeft" valign="top"><a id="a9fb58964e3ae2a0deb26a7de2157ea6e"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AZ_DEFINE_ENUM_BITWISE_OPERATORS</b> (PlatformFlags)</td></tr>
+<tr class="separator:a9fb58964e3ae2a0deb26a7de2157ea6e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a355abc1cb2046696df87b3aab99248b4"><td align="right" class="memItemLeft" valign="top"><a id="a355abc1cb2046696df87b3aab99248b4"></a>
+const char * </td><td class="memItemRight" valign="bottom"><b>PlatformIdToPalFolder</b> (PlatformId platform)</td></tr>
+<tr class="separator:a355abc1cb2046696df87b3aab99248b4"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a95ca6f0ebc158d463bbf0899802b5e5b"><td align="right" class="memItemLeft" valign="top"><a id="a95ca6f0ebc158d463bbf0899802b5e5b"></a>
+const char * </td><td class="memItemRight" valign="bottom"><b>OSPlatformToDefaultAssetPlatform</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> osPlatform)</td></tr>
+<tr class="separator:a95ca6f0ebc158d463bbf0899802b5e5b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a74659db6b1c2817429267d9f07a46287"><td align="right" class="memItemLeft" valign="top"><a id="a74659db6b1c2817429267d9f07a46287"></a>
 bool </td><td class="memItemRight" valign="bottom"><b>IsBigEndian</b> (<a class="el" href="namespace_a_z.html#ad49ae84c220453bc7b80048c9da51896">PlatformID</a>)</td></tr>
 <tr class="separator:a74659db6b1c2817429267d9f07a46287"><td class="memSeparator" colspan="2"> </td></tr>
@@ -2633,10 +2673,6 @@ Variables</h2></td></tr>
 <tr class="memitem:afaa69d0dd866e3f3bcfbc89e94b97a6e"><td align="right" class="memItemLeft" valign="top"><a id="afaa69d0dd866e3f3bcfbc89e94b97a6e"></a>
 static const ComponentId </td><td class="memItemRight" valign="bottom"><b>InvalidComponentId</b> = 0</td></tr>
 <tr class="separator:afaa69d0dd866e3f3bcfbc89e94b97a6e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a86050cb3fc03f38aa80bb8c73f3dbeee"><td align="right" class="memItemLeft" valign="top"><a id="a86050cb3fc03f38aa80bb8c73f3dbeee"></a>
-static constexpr float </td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a86050cb3fc03f38aa80bb8c73f3dbeee">MinNonUniformScale</a> = 1e-3f</td></tr>
-<tr class="memdesc:a86050cb3fc03f38aa80bb8c73f3dbeee"><td class="mdescLeft"> </td><td class="mdescRight">Do not allow the scale to be zero to avoid problems with inverting scale. <br/></td></tr>
-<tr class="separator:a86050cb3fc03f38aa80bb8c73f3dbeee"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:accf6b1cce8cd27dd2f103767495f4c03"><td align="right" class="memItemLeft" valign="top"><a id="accf6b1cce8cd27dd2f103767495f4c03"></a>
 static const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">TypeId</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#accf6b1cce8cd27dd2f103767495f4c03">TransformComponentTypeId</a> = "{22B10178-39B6-4C12-BB37-77DB45FDD3B6}"</td></tr>
 <tr class="memdesc:accf6b1cce8cd27dd2f103767495f4c03"><td class="mdescLeft"> </td><td class="mdescRight">The typeId of game component AzFramework::TransformComponent. <br/></td></tr>
@@ -2666,6 +2702,51 @@ const char </td><td class="memItemRight" valign="bottom"><b>CreateModuleClassFu
 <tr class="memitem:ad8a668f9133125ed958ea73a84df3677"><td align="right" class="memItemLeft" valign="top"><a id="ad8a668f9133125ed958ea73a84df3677"></a>
 const char </td><td class="memItemRight" valign="bottom"><b>DestroyModuleClassFunctionName</b> [] = "DestroyModuleClass"</td></tr>
 <tr class="separator:ad8a668f9133125ed958ea73a84df3677"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abcdff908349700fa90e131532bb5a8f7"><td align="right" class="memItemLeft" valign="top"><a id="abcdff908349700fa90e131532bb5a8f7"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformPC</b> [] = "pc"</td></tr>
+<tr class="separator:abcdff908349700fa90e131532bb5a8f7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a712c135c1bea9d2f120285c05615eab9"><td align="right" class="memItemLeft" valign="top"><a id="a712c135c1bea9d2f120285c05615eab9"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformES3</b> [] = "es3"</td></tr>
+<tr class="separator:a712c135c1bea9d2f120285c05615eab9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a4a7ddb67654200175b8a6b73ccea5176"><td align="right" class="memItemLeft" valign="top"><a id="a4a7ddb67654200175b8a6b73ccea5176"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformIOS</b> [] = "ios"</td></tr>
+<tr class="separator:a4a7ddb67654200175b8a6b73ccea5176"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abfb2cfd0c62edc5c27602ad8e120f70f"><td align="right" class="memItemLeft" valign="top"><a id="abfb2cfd0c62edc5c27602ad8e120f70f"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformOSX</b> [] = "osx_gl"</td></tr>
+<tr class="separator:abfb2cfd0c62edc5c27602ad8e120f70f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a49d3b09edd5cb7071d1efe63a495b64d"><td align="right" class="memItemLeft" valign="top"><a id="a49d3b09edd5cb7071d1efe63a495b64d"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformServer</b> [] = "server"</td></tr>
+<tr class="separator:a49d3b09edd5cb7071d1efe63a495b64d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a283625bbd67eabee44604003a02946de"><td align="right" class="memItemLeft" valign="top"><a id="a283625bbd67eabee44604003a02946de"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformCodeNameWindows</b> [] = "Windows"</td></tr>
+<tr class="separator:a283625bbd67eabee44604003a02946de"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac9b3c49c270eed25cd07b6e4e99c5575"><td align="right" class="memItemLeft" valign="top"><a id="ac9b3c49c270eed25cd07b6e4e99c5575"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformCodeNameLinux</b> [] = "Linux"</td></tr>
+<tr class="separator:ac9b3c49c270eed25cd07b6e4e99c5575"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a5662369221f4173f1a4b70de7c78496b"><td align="right" class="memItemLeft" valign="top"><a id="a5662369221f4173f1a4b70de7c78496b"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformCodeNameAndroid</b> [] = "Android"</td></tr>
+<tr class="separator:a5662369221f4173f1a4b70de7c78496b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acdd068160ec0b0065ede10b335d27981"><td align="right" class="memItemLeft" valign="top"><a id="acdd068160ec0b0065ede10b335d27981"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformCodeNameiOS</b> [] = "iOS"</td></tr>
+<tr class="separator:acdd068160ec0b0065ede10b335d27981"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7dbd78e0bc70acb403b8798b8d5fdb58"><td align="right" class="memItemLeft" valign="top"><a id="a7dbd78e0bc70acb403b8798b8d5fdb58"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformCodeNameMac</b> [] = "Mac"</td></tr>
+<tr class="separator:a7dbd78e0bc70acb403b8798b8d5fdb58"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afcbddfe265672a723792a246b823a7c1"><td align="right" class="memItemLeft" valign="top"><a id="afcbddfe265672a723792a246b823a7c1"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformAll</b> [] = "all"</td></tr>
+<tr class="separator:afcbddfe265672a723792a246b823a7c1"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:abb3c286e4cbfd231bd6da65e838ad39c"><td align="right" class="memItemLeft" valign="top"><a id="abb3c286e4cbfd231bd6da65e838ad39c"></a>
+constexpr char </td><td class="memItemRight" valign="bottom"><b>PlatformAllClient</b> [] = "all_client"</td></tr>
+<tr class="separator:abb3c286e4cbfd231bd6da65e838ad39c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab7bd2386730d902a717ee9fbd3592829"><td align="right" class="memItemLeft" valign="top"><a id="ab7bd2386730d902a717ee9fbd3592829"></a>
+constexpr size_t </td><td class="memItemRight" valign="bottom"><b>MaxPlatformCodeNames</b> = 16</td></tr>
+<tr class="separator:ab7bd2386730d902a717ee9fbd3592829"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aead7d6a2661ec8e0561ee6ee4eb6740f"><td align="right" class="memItemLeft" valign="top"><a id="aead7d6a2661ec8e0561ee6ee4eb6740f"></a>
+constexpr int </td><td class="memItemRight" valign="bottom"><b>NumClientPlatforms</b> = 7</td></tr>
+<tr class="separator:aead7d6a2661ec8e0561ee6ee4eb6740f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b55ceb1eff2480ef8f28b1a612d11ab"><td align="right" class="memItemLeft" valign="top"><a id="a6b55ceb1eff2480ef8f28b1a612d11ab"></a>
+constexpr int </td><td class="memItemRight" valign="bottom"><b>NumPlatforms</b> = NumClientPlatforms + 1</td></tr>
+<tr class="separator:a6b55ceb1eff2480ef8f28b1a612d11ab"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a4fda9bd50d1633cbc453b27a397d3913"><td align="right" class="memItemLeft" valign="top"><a id="a4fda9bd50d1633cbc453b27a397d3913"></a>
 const static <a class="el" href="class_a_z_1_1_crc32.html">AZ::Crc32</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_a_z.html#a4fda9bd50d1633cbc453b27a397d3913">RuntimeEBusAttribute</a> = AZ_CRC("RuntimeEBus", 0x466b899b)</td></tr>
 <tr class="memdesc:a4fda9bd50d1633cbc453b27a397d3913"><td class="mdescLeft"> </td><td class="mdescRight">Signals that this reflected ebus should only be available at runtime, helps tools filter out data driven ebuses. <br/></td></tr>
@@ -5390,11 +5471,33 @@ template&lt;class ValueT , class &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_a_z_1_1_vector4.html">Vector4</a> created from the given <a class="el" href="class_a_z_1_1_vector3.html" title="3-dimensional vector class.">Vector3</a> with a 0 for the W component </dd></dl>
 </div>
 </div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a4eaab2385df29a84ec893a9f2f20383d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eaab2385df29a84ec893a9f2f20383d">◆ </a></span>MinTransformScale</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">constexpr float AZ::MinTransformScale = 1e-2f</td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Limits for transform scale values. The scale should not be zero to avoid problems with inverting. </p>
+</div>
+</div>
 </div><!-- contents -->
 <div class="ttc" id="aclass_a_z_1_1_module_html"><div class="ttname"><a href="class_a_z_1_1_module.html">AZ::Module</a></div><div class="ttdef"><b>Definition:</b> Module.h:36</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:09:54 for AzCore API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:15:50 for AzCore API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

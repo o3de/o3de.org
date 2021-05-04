@@ -56,8 +56,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a442917f0c81338e380fcdece0c613834"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a442917f0c81338e380fcdece0c613834">RenderViewportWidget</a> (AzFramework::ViewportId id=AzFramework::InvalidViewportId, QWidget *parent=nullptr)</td></tr>
-<tr class="separator:a442917f0c81338e380fcdece0c613834"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa2a85c245ac8ed1100d3bdf9474c06a3"><td align="right" class="memItemLeft" valign="top"> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#aa2a85c245ac8ed1100d3bdf9474c06a3">RenderViewportWidget</a> (QWidget *parent=nullptr, bool shouldInitializeViewportContext=true)</td></tr>
+<tr class="separator:aa2a85c245ac8ed1100d3bdf9474c06a3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a89def81897e54b9009fbd32bdef7d605"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a89def81897e54b9009fbd32bdef7d605">InitializeViewportContext</a> (AzFramework::ViewportId id=AzFramework::InvalidViewportId)</td></tr>
+<tr class="separator:a89def81897e54b9009fbd32bdef7d605"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a90e51018828e57c13d74f9e5cd50fa7f"><td align="right" class="memItemLeft" valign="top">AZ::Name </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a90e51018828e57c13d74f9e5cd50fa7f">GetCurrentContextName</a> () const</td></tr>
 <tr class="separator:a90e51018828e57c13d74f9e5cd50fa7f"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad67d77842db4ac7bc78e077f5326bfc0"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#ad67d77842db4ac7bc78e077f5326bfc0">SetCurrentContextName</a> (const AZ::Name &amp;contextName)</td></tr>
@@ -84,8 +86,8 @@ AZ::RPI::ViewportContextPtr </td><td class="memItemRight" valign="bottom"><a cl
 <tr class="memitem:ac04f6dd705e173e6698963f04ebe244f"><td align="right" class="memItemLeft" valign="top"><a id="ac04f6dd705e173e6698963f04ebe244f"></a>
 AZ::RPI::ConstViewportContextPtr </td><td class="memItemRight" valign="bottom"><b>GetViewportContext</b> () const</td></tr>
 <tr class="separator:ac04f6dd705e173e6698963f04ebe244f"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a76cb797c127e25248ea3ac51c7313211"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a76cb797c127e25248ea3ac51c7313211">SetScene</a> (AzFramework::Scene *scene, bool useDefaultRenderPipeline=true)</td></tr>
-<tr class="separator:a76cb797c127e25248ea3ac51c7313211"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a9b0c50b664de5280700cf845b21d25ad"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a9b0c50b664de5280700cf845b21d25ad">SetScene</a> (const AZStd::shared_ptr&lt; AzFramework::Scene &gt; &amp;scene, bool useDefaultRenderPipeline=true)</td></tr>
+<tr class="separator:a9b0c50b664de5280700cf845b21d25ad"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a10a00efc48d9c7e01d4c21a43bcb1b4a"><td align="right" class="memItemLeft" valign="top"><a id="a10a00efc48d9c7e01d4c21a43bcb1b4a"></a>
 AZ::RPI::ViewPtr </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a10a00efc48d9c7e01d4c21a43bcb1b4a">GetDefaultCamera</a> ()</td></tr>
 <tr class="memdesc:a10a00efc48d9c7e01d4c21a43bcb1b4a"><td class="mdescLeft"> </td><td class="mdescRight">Gets the default camera that's been automatically registered to our ViewportContext. <br/></td></tr>
@@ -182,8 +184,8 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 <div class="textblock"><p>The <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> class is a Qt wrapper around an Atom viewport. <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> renders to an internal window using RPI::ViewportContext and delegates input via its internal ViewportControllerList. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">AZ::RPI::ViewportContext</a> for Atom's API for setting up <br/>
 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a442917f0c81338e380fcdece0c613834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a442917f0c81338e380fcdece0c613834">◆ </a></span>RenderViewportWidget()</h2>
+<a id="aa2a85c245ac8ed1100d3bdf9474c06a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a85c245ac8ed1100d3bdf9474c06a3">◆ </a></span>RenderViewportWidget()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -193,14 +195,14 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 <tr>
 <td class="memname">AtomToolsFramework::RenderViewportWidget::RenderViewportWidget </td>
 <td>(</td>
-<td class="paramtype">AzFramework::ViewportId </td>
-<td class="paramname"><em>id</em> = <code>AzFramework::InvalidViewportId</code>, </td>
+<td class="paramtype">QWidget * </td>
+<td class="paramname"><em>parent</em> = <code>nullptr</code>, </td>
 </tr>
 <tr>
 <td class="paramkey"></td>
 <td></td>
-<td class="paramtype">QWidget * </td>
-<td class="paramname"><em>parent</em> = <code>nullptr</code> </td>
+<td class="paramtype">bool </td>
+<td class="paramname"><em>shouldInitializeViewportContext</em> = <code>true</code> </td>
 </tr>
 <tr>
 <td></td>
@@ -214,7 +216,7 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a>. Requires the Atom RPI to be initialized in order to internally construct an RPI::ViewportContext. </p>
+<p>Creates a <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a>. Requires the Atom RPI to be initialized in order to internally construct an RPI::ViewportContext. If initializeViewportContext is set to false, nothing will be displayed on-screen until InitiliazeViewportContext is called. </p>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -264,6 +266,23 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 </table>
 </div><div class="memdoc">
 <p>Gets this Viewport's unique idenitifer. </p><dl class="section see"><dt>See also</dt><dd>AzFramework::ViewportRequestBus </dd></dl>
+</div>
+</div>
+<a id="a89def81897e54b9009fbd32bdef7d605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89def81897e54b9009fbd32bdef7d605">◆ </a></span>InitializeViewportContext()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">bool AtomToolsFramework::RenderViewportWidget::InitializeViewportContext </td>
+<td>(</td>
+<td class="paramtype">AzFramework::ViewportId </td>
+<td class="paramname"><em>id</em> = <code>AzFramework::InvalidViewportId</code></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Initializes the underlying ViewportContext, if it hasn't already been. If id is specified, the target ViewportContext will be overridden. NOTE: ViewportContext IDs must be unique. Returns true if the ViewportContext is available (i.e. GetViewportContext will return a valid pointer). </p>
 </div>
 </div>
 <a id="a53f252a752c3a7588f5e41d2b0db0063"></a>
@@ -327,15 +346,15 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 <p>Sets the name associated with this viewport's ViewportContext. The viewport may inherit a new Camera from the new context name. </p>
 </div>
 </div>
-<a id="a76cb797c127e25248ea3ac51c7313211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76cb797c127e25248ea3ac51c7313211">◆ </a></span>SetScene()</h2>
+<a id="a9b0c50b664de5280700cf845b21d25ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0c50b664de5280700cf845b21d25ad">◆ </a></span>SetScene()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="memname">
 <tr>
 <td class="memname">void AtomToolsFramework::RenderViewportWidget::SetScene </td>
 <td>(</td>
-<td class="paramtype">AzFramework::Scene * </td>
+<td class="paramtype">const AZStd::shared_ptr&lt; AzFramework::Scene &gt; &amp; </td>
 <td class="paramname"><em>scene</em>, </td>
 </tr>
 <tr>
@@ -357,7 +376,7 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:00 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:51 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

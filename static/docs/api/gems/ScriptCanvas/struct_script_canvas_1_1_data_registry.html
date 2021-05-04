@@ -44,6 +44,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
 <div class="summary">
+<a href="#pub-types">Public Types</a> |
 <a href="#pub-methods">Public Member Functions</a> |
 <a href="#pub-attribs">Public Attributes</a> |
 <a href="struct_script_canvas_1_1_data_registry-members.html">List of all members</a> </div>
@@ -52,6 +53,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac9928888d60471fcf0001d30b8907a9c"><td align="right" class="memItemLeft" valign="top"><a id="ac9928888d60471fcf0001d30b8907a9c"></a>enum  </td><td class="memItemRight" valign="bottom"><b>Createability</b> { <b>None</b>, 
+<b>SlotAndVariable</b>, 
+<b>SlotOnly</b>
+ }</td></tr>
+<tr class="separator:ac9928888d60471fcf0001d30b8907a9c"><td class="memSeparator" colspan="2"> </td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af57fc6bc4cecb9464b3c501afc53d3ba"><td align="right" class="memItemLeft" valign="top"><a id="af57fc6bc4cecb9464b3c501afc53d3ba"></a>
@@ -60,12 +69,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8c05425930cda62f4a41ba604accb36e"><td align="right" class="memItemLeft" valign="top"><a id="a8c05425930cda62f4a41ba604accb36e"></a>
  </td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="struct_script_canvas_1_1_data_registry.html">DataRegistry</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a8c05425930cda62f4a41ba604accb36e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:abcd347d3368c9096fb5f840ed1c7c5a8"><td align="right" class="memItemLeft" valign="top"><a id="abcd347d3368c9096fb5f840ed1c7c5a8"></a>
-void </td><td class="memItemRight" valign="bottom"><b>RegisterType</b> (const AZ::TypeId &amp;typeId, <a class="el" href="struct_script_canvas_1_1_type_properties.html">TypeProperties</a> typeProperties)</td></tr>
-<tr class="separator:abcd347d3368c9096fb5f840ed1c7c5a8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aac1f75fd61b1a355133a98637ae14e27"><td align="right" class="memItemLeft" valign="top"><a id="aac1f75fd61b1a355133a98637ae14e27"></a>
+void </td><td class="memItemRight" valign="bottom"><b>RegisterType</b> (const AZ::TypeId &amp;typeId, <a class="el" href="struct_script_canvas_1_1_type_properties.html">TypeProperties</a> typeProperties, Createability registration)</td></tr>
+<tr class="separator:aac1f75fd61b1a355133a98637ae14e27"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a6964e68b57221080fd6c349809a1dc42"><td align="right" class="memItemLeft" valign="top"><a id="a6964e68b57221080fd6c349809a1dc42"></a>
 void </td><td class="memItemRight" valign="bottom"><b>UnregisterType</b> (const AZ::TypeId &amp;typeId)</td></tr>
 <tr class="separator:a6964e68b57221080fd6c349809a1dc42"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acb1b136157cd0776723f2bb4697da0bc"><td align="right" class="memItemLeft" valign="top"><a id="acb1b136157cd0776723f2bb4697da0bc"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>IsUseableInSlot</b> (const AZ::TypeId &amp;typeId) const</td></tr>
+<tr class="separator:acb1b136157cd0776723f2bb4697da0bc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab28a0e6e1d1a45c99a0588b04a3a5c3e"><td align="right" class="memItemLeft" valign="top"><a id="ab28a0e6e1d1a45c99a0588b04a3a5c3e"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>IsUseableInSlot</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;type) const</td></tr>
+<tr class="separator:ab28a0e6e1d1a45c99a0588b04a3a5c3e"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -75,11 +90,14 @@ AZStd::unordered_map&lt; Data::eType, <a class="el" href="struct_script_canvas_1
 <tr class="memitem:aea7c5da81076dd2d47309c2f96484758"><td align="right" class="memItemLeft" valign="top"><a id="aea7c5da81076dd2d47309c2f96484758"></a>
 AZStd::unordered_map&lt; <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a>, <a class="el" href="struct_script_canvas_1_1_type_properties.html">TypeProperties</a> &gt; </td><td class="memItemRight" valign="bottom"><b>m_creatableTypes</b></td></tr>
 <tr class="separator:aea7c5da81076dd2d47309c2f96484758"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a49b12325e71cbab065bda7cedd8dd5ff"><td align="right" class="memItemLeft" valign="top"><a id="a49b12325e71cbab065bda7cedd8dd5ff"></a>
+AZStd::unordered_map&lt; <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a>, <a class="el" href="struct_script_canvas_1_1_type_properties.html">TypeProperties</a> &gt; </td><td class="memItemRight" valign="bottom"><b>m_slottableTypes</b></td></tr>
+<tr class="separator:a49b12325e71cbab065bda7cedd8dd5ff"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:39 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:17:28 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

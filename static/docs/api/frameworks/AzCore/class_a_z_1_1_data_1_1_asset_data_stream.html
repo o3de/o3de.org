@@ -127,6 +127,8 @@ bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_
 size_t </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data_stream.html#ad00e72f46aeb2584569413bfec079e92">GetLoadedSize</a> () const</td></tr>
 <tr class="memdesc:ad00e72f46aeb2584569413bfec079e92"><td class="mdescLeft"> </td><td class="mdescRight">Gets the size of data loaded (so far). <br/></td></tr>
 <tr class="separator:ad00e72f46aeb2584569413bfec079e92"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7ff02d098fe88ebd1fe618c76cdba8a3"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_asset_data_stream.html#a7ff02d098fe88ebd1fe618c76cdba8a3">RequestCancel</a> ()</td></tr>
+<tr class="separator:a7ff02d098fe88ebd1fe618c76cdba8a3"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_i_o_1_1_generic_stream')"><img alt="-" src="/images/api-ref/closed.png"/> Public Member Functions inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_generic_stream.html">AZ::IO::GenericStream</a></td></tr>
 <tr class="memitem:aa27f423ca5691ce49a4b34b0069d999a inherit pub_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td align="right" class="memItemLeft" valign="top"><a id="aa27f423ca5691ce49a4b34b0069d999a"></a>
 virtual SizeType </td><td class="memItemRight" valign="bottom"><b>Write</b> (SizeType bytes, const void *iBuffer)=0</td></tr>
@@ -160,10 +162,27 @@ static constexpr size_t </td><td class="memItemRight" valign="bottom"><b>Stream
 SizeType </td><td class="memItemRight" valign="bottom"><b>ComputeSeekPosition</b> (OffsetType bytes, SeekMode mode)</td></tr>
 <tr class="separator:abf7627673005156a3cd9be9f2c1617a7 inherit pro_methods_class_a_z_1_1_i_o_1_1_generic_stream"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7ff02d098fe88ebd1fe618c76cdba8a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff02d098fe88ebd1fe618c76cdba8a3">◆ </a></span>RequestCancel()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void AZ::Data::AssetDataStream::RequestCancel </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Request a cancellation of any current <a class="el" href="namespace_a_z_1_1_i_o.html" title="PathView implementation.">IO</a> streamer requests. Note: This is asynchronous and not guaranteed to cancel if the request is already in-process. </p>
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:09:58 for AzCore API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:15:53 for AzCore API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

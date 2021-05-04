@@ -62,6 +62,9 @@ Public Types</h2></td></tr>
 <b>UsageReflectiveCubeMap</b> = (1u &lt;&lt; 2)
  }</td></tr>
 <tr class="separator:a85cdbba4a2167031107e01db5f489016"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a252edc7dccc32f5c87001e286350b2f6"><td align="right" class="memItemLeft" valign="top"><a id="a252edc7dccc32f5c87001e286350b2f6"></a>
+using </td><td class="memItemRight" valign="bottom"><b>MatrixChangedEvent</b> = AZ::Event&lt; const AZ::Matrix4x4 &amp; &gt;</td></tr>
+<tr class="separator:a252edc7dccc32f5c87001e286350b2f6"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -92,10 +95,10 @@ Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_g
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a64634b5655c27259fa86a39c500c825e">AddDrawPacket</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">RHI::DrawPacket</a> *drawPacket, Vector3 worldPosition)</td></tr>
 <tr class="memdesc:a64634b5655c27259fa86a39c500c825e"><td class="mdescLeft"> </td><td class="mdescRight">Similar to previous <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a029397593d1075af9aa023123a43ba5b">AddDrawPacket()</a> but calculates depth from packet position. <br/></td></tr>
 <tr class="separator:a64634b5655c27259fa86a39c500c825e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:afba52d4243f98772c39472caf2012430"><td align="right" class="memItemLeft" valign="top"><a id="afba52d4243f98772c39472caf2012430"></a>
-void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#afba52d4243f98772c39472caf2012430">AddDrawItem</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_key_pair.html">RHI::DrawItemKeyPair</a> &amp;drawItemKeyPair)</td></tr>
-<tr class="memdesc:afba52d4243f98772c39472caf2012430"><td class="mdescLeft"> </td><td class="mdescRight">Add a draw item to this view with its associated draw list tag. <br/></td></tr>
-<tr class="separator:afba52d4243f98772c39472caf2012430"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a97f567087cfdb57c80e7fa9b099cba6a"><td align="right" class="memItemLeft" valign="top"><a id="a97f567087cfdb57c80e7fa9b099cba6a"></a>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a97f567087cfdb57c80e7fa9b099cba6a">AddDrawItem</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html">RHI::DrawItemProperties</a> &amp;drawItemProperties)</td></tr>
+<tr class="memdesc:a97f567087cfdb57c80e7fa9b099cba6a"><td class="mdescLeft"> </td><td class="mdescRight">Add a draw item to this view with its associated draw list tag. <br/></td></tr>
+<tr class="separator:a97f567087cfdb57c80e7fa9b099cba6a"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a338655b78dd94f736caa7bbf5f801f99"><td align="right" class="memItemLeft" valign="top"><a id="a338655b78dd94f736caa7bbf5f801f99"></a>
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a338655b78dd94f736caa7bbf5f801f99">SetWorldToViewMatrix</a> (const AZ::Matrix4x4 &amp;worldToView)</td></tr>
 <tr class="memdesc:a338655b78dd94f736caa7bbf5f801f99"><td class="mdescLeft"> </td><td class="mdescRight">Sets the worldToView matrix and recalculates the other matrices. <br/></td></tr>
@@ -152,6 +155,14 @@ void </td><td class="memItemRight" valign="bottom"><b>SetPassesByDrawList</b> (
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#afd37768f1a0789659fc7bec67d142a0f">UpdateSrg</a> ()</td></tr>
 <tr class="memdesc:afd37768f1a0789659fc7bec67d142a0f"><td class="mdescLeft"> </td><td class="mdescRight">Update <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a>'s SRG values and compile. This should only be called once per frame before execute command lists. <br/></td></tr>
 <tr class="separator:afd37768f1a0789659fc7bec67d142a0f"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a849682d856d4882dd6603033f2daa2d9"><td align="right" class="memItemLeft" valign="top"><a id="a849682d856d4882dd6603033f2daa2d9"></a>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a849682d856d4882dd6603033f2daa2d9">ConnectWorldToViewMatrixChangedHandler</a> (MatrixChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a849682d856d4882dd6603033f2daa2d9"><td class="mdescLeft"> </td><td class="mdescRight">Notifies consumers when the world to view matrix has changed. <br/></td></tr>
+<tr class="separator:a849682d856d4882dd6603033f2daa2d9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2b34b8ea6d0474ec28b5f5f270b6ee57"><td align="right" class="memItemLeft" valign="top"><a id="a2b34b8ea6d0474ec28b5f5f270b6ee57"></a>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a2b34b8ea6d0474ec28b5f5f270b6ee57">ConnectWorldToClipMatrixChangedHandler</a> (MatrixChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a2b34b8ea6d0474ec28b5f5f270b6ee57"><td class="mdescLeft"> </td><td class="mdescRight">Notifies consumers when the world to clip matrix has changed. <br/></td></tr>
+<tr class="separator:a2b34b8ea6d0474ec28b5f5f270b6ee57"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -237,7 +248,7 @@ static ViewPtr </td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:05 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:56 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

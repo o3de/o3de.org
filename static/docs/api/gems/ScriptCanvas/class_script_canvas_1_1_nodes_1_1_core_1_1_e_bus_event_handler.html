@@ -156,6 +156,9 @@ AZ::Outcome&lt; AZStd::string, void &gt; </td><td class="memItemRight" valign="
 <tr class="memitem:a8d1126e33b2715e11c514055a9366676"><td align="right" class="memItemLeft" valign="top"><a id="a8d1126e33b2715e11c514055a9366676"></a>
 bool </td><td class="memItemRight" valign="bottom"><b>IsEBusAddressed</b> () const override</td></tr>
 <tr class="separator:a8d1126e33b2715e11c514055a9366676"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad7e0585f212909e6f27c0ca4c4a0a037"><td align="right" class="memItemLeft" valign="top"><a id="ad7e0585f212909e6f27c0ca4c4a0a037"></a>
+AZStd::optional&lt; size_t &gt; </td><td class="memItemRight" valign="bottom"><b>GetEventIndex</b> (AZStd::string eventName) const</td></tr>
+<tr class="separator:ad7e0585f212909e6f27c0ca4c4a0a037"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a6d996458f87c6b00abd61ea56c5fbf6d"><td align="right" class="memItemLeft" valign="top"><a id="a6d996458f87c6b00abd61ea56c5fbf6d"></a>
 const <a class="el" href="struct_script_canvas_1_1_nodes_1_1_core_1_1_e_bus_event_entry.html">EBusEventEntry</a> * </td><td class="memItemRight" valign="bottom"><b>FindEvent</b> (const AZStd::string &amp;name) const</td></tr>
 <tr class="separator:a6d996458f87c6b00abd61ea56c5fbf6d"><td class="memSeparator" colspan="2"> </td></tr>
@@ -570,6 +573,9 @@ virtual AZ::Outcome&lt; <a class="el" href="struct_script_canvas_1_1_grammar_1_1
 <tr class="memitem:afa01a587126e8bfdc385c41064386dc4 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="afa01a587126e8bfdc385c41064386dc4"></a>
 ConstSlotsOutcome </td><td class="memItemRight" valign="bottom"><b>GetSlotsInExecutionThreadByType</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;executionSlot, CombinedSlotType targetSlotType, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *executionChildSlot=nullptr) const</td></tr>
 <tr class="separator:afa01a587126e8bfdc385c41064386dc4 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2c71adc62ecb6d47c13dda1a08806a3 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="ad2c71adc62ecb6d47c13dda1a08806a3"></a>
+size_t </td><td class="memItemRight" valign="bottom"><b>GetOutIndex</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
+<tr class="separator:ad2c71adc62ecb6d47c13dda1a08806a3 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a566805e6b1a33813dcb7373ee7a55a52 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="a566805e6b1a33813dcb7373ee7a55a52"></a>
 virtual AZ::Outcome&lt; AZStd::string &gt; </td><td class="memItemRight" valign="bottom"><b>GetLatentOutKey</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
 <tr class="separator:a566805e6b1a33813dcb7373ee7a55a52 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
@@ -986,7 +992,7 @@ static AZ_INLINE bool </td><td class="memItemRight" valign="bottom"><b>IsVariab
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:41 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:17:31 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

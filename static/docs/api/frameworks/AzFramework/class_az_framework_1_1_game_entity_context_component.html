@@ -71,6 +71,9 @@ void </td><td class="memItemRight" valign="bottom"><b>Deactivate</b> () overrid
 <tr class="memitem:a84c91be6893a1b08696433fac62ff50b"><td align="right" class="memItemLeft" valign="top"><a id="a84c91be6893a1b08696433fac62ff50b"></a>
 AZ::Uuid </td><td class="memItemRight" valign="bottom"><b>GetGameEntityContextId</b> () override</td></tr>
 <tr class="separator:a84c91be6893a1b08696433fac62ff50b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a48e907f0824c93968618b715e59211aa"><td align="right" class="memItemLeft" valign="top"><a id="a48e907f0824c93968618b715e59211aa"></a>
+<a class="el" href="class_az_framework_1_1_entity_context.html">EntityContext</a> * </td><td class="memItemRight" valign="bottom"><b>GetGameEntityContextInstance</b> () override</td></tr>
+<tr class="separator:a48e907f0824c93968618b715e59211aa"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad98cc653613e3bd8ff8a09872f3a16de"><td align="right" class="memItemLeft" valign="top"><a id="ad98cc653613e3bd8ff8a09872f3a16de"></a>
 void </td><td class="memItemRight" valign="bottom"><b>ResetGameContext</b> () override</td></tr>
 <tr class="separator:ad98cc653613e3bd8ff8a09872f3a16de"><td class="memSeparator" colspan="2"> </td></tr>
@@ -180,9 +183,17 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetRequiredService
 <tr class="memitem:a6241e289606ad947b2138c417cabe6fe inherit pub_static_methods_class_az_framework_1_1_entity_context"><td align="right" class="memItemLeft" valign="top"><a id="a6241e289606ad947b2138c417cabe6fe"></a>
 static void </td><td class="memItemRight" valign="bottom"><b>Reflect</b> (AZ::ReflectContext *context)</td></tr>
 <tr class="separator:a6241e289606ad947b2138c417cabe6fe inherit pub_static_methods_class_az_framework_1_1_entity_context"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:acfe7e31829f6eaa16fb9f3bf31ada129 inherit pub_static_methods_class_az_framework_1_1_entity_context"><td align="right" class="memItemLeft" valign="top"><a id="acfe7e31829f6eaa16fb9f3bf31ada129"></a>
+static AZStd::shared_ptr&lt; <a class="el" href="class_az_framework_1_1_scene.html">Scene</a> &gt; </td><td class="memItemRight" valign="bottom"><b>FindContainingScene</b> (const <a class="el" href="namespace_az_framework.html#a1a3f4ee1f65bca5c5030b67d2ca8cb0c">EntityContextId</a> &amp;contextId)</td></tr>
+<tr class="separator:acfe7e31829f6eaa16fb9f3bf31ada129 inherit pub_static_methods_class_az_framework_1_1_entity_context"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_class_az_framework_1_1_entity_context"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_framework_1_1_entity_context')"><img alt="-" src="/images/api-ref/closed.png"/> Public Types inherited from <a class="el" href="class_az_framework_1_1_entity_context.html">AzFramework::EntityContext</a></td></tr>
+<tr class="memitem:a9e9f8cc3218d22840c0dccd2081dd3b5 inherit pub_types_class_az_framework_1_1_entity_context"><td align="right" class="memItemLeft" valign="top"><a id="a9e9f8cc3218d22840c0dccd2081dd3b5"></a>
+using </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_entity_context.html#a9e9f8cc3218d22840c0dccd2081dd3b5">SceneStorageType</a> = <a class="el" href="class_az_framework_1_1_entity_context.html">EntityContext</a> *</td></tr>
+<tr class="memdesc:a9e9f8cc3218d22840c0dccd2081dd3b5 inherit pub_types_class_az_framework_1_1_entity_context"><td class="mdescLeft"> </td><td class="mdescRight">The type used to store entity in <a class="el" href="class_az_framework_1_1_scene.html">AzFramework::Scene</a>. <br/></td></tr>
+<tr class="separator:a9e9f8cc3218d22840c0dccd2081dd3b5 inherit pub_types_class_az_framework_1_1_entity_context"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="inherit_header pro_methods_class_az_framework_1_1_entity_context"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_az_framework_1_1_entity_context')"><img alt="-" src="/images/api-ref/closed.png"/> Protected Member Functions inherited from <a class="el" href="class_az_framework_1_1_entity_context.html">AzFramework::EntityContext</a></td></tr>
 <tr class="memitem:a0797d7f1492da5dc6f9add976237b2c2 inherit pro_methods_class_az_framework_1_1_entity_context"><td align="right" class="memItemLeft" valign="top"><a id="a0797d7f1492da5dc6f9add976237b2c2"></a>
 <a class="el" href="namespace_az_framework.html#a1a3f4ee1f65bca5c5030b67d2ca8cb0c">EntityContextId</a> </td><td class="memItemRight" valign="bottom"><b>GetOwningContextId</b> () override</td></tr>
@@ -269,7 +280,7 @@ bool </td><td class="memItemRight" valign="bottom"><b>m_contextIsResetting</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:28 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:23 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

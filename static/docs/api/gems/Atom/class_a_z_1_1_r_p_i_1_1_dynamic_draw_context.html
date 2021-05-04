@@ -170,6 +170,12 @@ bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_
 const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &gt; &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a33d000c15a9aa261cd20c59f4336b8f9">GetShader</a> () const</td></tr>
 <tr class="memdesc:a33d000c15a9aa261cd20c59f4336b8f9"><td class="mdescLeft"> </td><td class="mdescRight">Get the shader which is associated with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a>. <br/></td></tr>
 <tr class="separator:a33d000c15a9aa261cd20c59f4336b8f9"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab0d21d9113b4d81d572d038b5250503e"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#ab0d21d9113b4d81d572d038b5250503e">SetSortKey</a> (RHI::DrawItemSortKey key)</td></tr>
+<tr class="separator:ab0d21d9113b4d81d572d038b5250503e"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a34a190a09e098f4f8529576bd9e305b2"><td align="right" class="memItemLeft" valign="top"><a id="a34a190a09e098f4f8529576bd9e305b2"></a>
+RHI::DrawItemSortKey </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a34a190a09e098f4f8529576bd9e305b2">GetSortKey</a> () const</td></tr>
+<tr class="memdesc:a34a190a09e098f4f8529576bd9e305b2"><td class="mdescLeft"> </td><td class="mdescRight">Get the current sort key. <br/></td></tr>
+<tr class="separator:a34a190a09e098f4f8529576bd9e305b2"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -381,6 +387,23 @@ class </td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b></t
 <p>Set the shader variant as the current variant which is used for any following draw calls. Note, <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#af6efaf5a50af12838ff1526d75a22248">SetShaderVariant()</a> needs to be called before <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a263b6999a405dac9cfc447e10ac0d10e" title="Create a draw srg.">NewDrawSrg()</a> if a draw srg is used in following draw calls. </p>
 </div>
 </div>
+<a id="ab0d21d9113b4d81d572d038b5250503e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d21d9113b4d81d572d038b5250503e">◆ </a></span>SetSortKey()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="memname">
+<tr>
+<td class="memname">void AZ::RPI::DynamicDrawContext::SetSortKey </td>
+<td>(</td>
+<td class="paramtype">RHI::DrawItemSortKey </td>
+<td class="paramname"><em>key</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Set the sort key for the next draw. Note: The sort key will be increased by 1 whenever the a draw function is called. </p>
+</div>
+</div>
 <a id="ab5c1bc48bcd6a1e8f2b9e2f5fd9e2cf9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5c1bc48bcd6a1e8f2b9e2f5fd9e2cf9">◆ </a></span>SetViewport()</h2>
 <div class="memitem">
@@ -452,7 +475,7 @@ class </td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:03 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:54 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>
