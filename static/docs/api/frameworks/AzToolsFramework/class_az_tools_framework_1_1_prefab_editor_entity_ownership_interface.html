@@ -59,6 +59,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a93326c6418c331e105302168baa1961f"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aadaa9719260499631f0400d5791a1464"><td align="right" class="memItemLeft" valign="top">virtual Prefab::InstanceOptionalReference </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#aadaa9719260499631f0400d5791a1464">CreatePrefab</a> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Prefab::Instance</a> &gt;&gt; &amp;&amp;nestedPrefabInstances, AZ::IO::PathView filePath, Prefab::InstanceOptionalReference instanceToParentUnder=AZStd::nullopt)=0</td></tr>
 <tr class="separator:aadaa9719260499631f0400d5791a1464"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a486324c837b3a00c2ab4242b83975d1b"><td align="right" class="memItemLeft" valign="top">virtual Prefab::InstanceOptionalReference </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_editor_entity_ownership_interface.html#a486324c837b3a00c2ab4242b83975d1b">InstantiatePrefab</a> (AZ::IO::PathView filePath, Prefab::InstanceOptionalReference instanceToParentUnder=AZStd::nullopt)=0</td></tr>
+<tr class="separator:a486324c837b3a00c2ab4242b83975d1b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a3fe3bc9cdc98aa445e5781df46838440"><td align="right" class="memItemLeft" valign="top"><a id="a3fe3bc9cdc98aa445e5781df46838440"></a>
 virtual Prefab::InstanceOptionalReference </td><td class="memItemRight" valign="bottom"><b>GetRootPrefabInstance</b> ()=0</td></tr>
 <tr class="separator:a3fe3bc9cdc98aa445e5781df46838440"><td class="memSeparator" colspan="2"> </td></tr>
@@ -120,13 +122,48 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>StopPlayInEditor<
 </tr>
 </table>
 </div><div class="memdoc">
-<p>Creates a prefab instance with the provided entities and nestedPrefabInstances. /param entities The entities to put under the new prefab. /param nestedPrefabInstances The nested prefab instances to put under the new prefab. /param filePath The filepath corresponding to the prefab file to be created. /param instanceToParentUnder The instance under which the newly created prefab instance is parented under. /return The optional reference to the prefab created. </p>
+<p>Creates a prefab instance with the provided entities and nestedPrefabInstances. /param entities The entities to put under the new prefab. /param nestedPrefabInstances The nested prefab instances to put under the new prefab. /param filePath The filepath corresponding to the prefab file to be created. /param instanceToParentUnder The instance the newly created prefab instance is parented under. /return The optional reference to the prefab created. </p>
+</div>
+</div>
+<a id="a486324c837b3a00c2ab4242b83975d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a486324c837b3a00c2ab4242b83975d1b">◆ </a></span>InstantiatePrefab()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual Prefab::InstanceOptionalReference AzToolsFramework::PrefabEditorEntityOwnershipInterface::InstantiatePrefab </td>
+<td>(</td>
+<td class="paramtype">AZ::IO::PathView </td>
+<td class="paramname"><em>filePath</em>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">Prefab::InstanceOptionalReference </td>
+<td class="paramname"><em>instanceToParentUnder</em> = <code>AZStd::nullopt</code> </td>
+</tr>
+<tr>
+<td></td>
+<td>)</td>
+<td></td><td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Instantiate the prefab file provided. /param filePath The filepath for the prefab file the instance should be created from. /param instanceToParentUnder The instance the newly instantiated prefab instance is parented under. /return The optional reference to the prefab instance. </p>
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:43 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:36 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

@@ -55,13 +55,13 @@ $(function() {
 <p><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html" title="ThumbnailContext provides distinct thumbnail location for specific context.">ThumbnailContext</a> provides distinct thumbnail location for specific context.  
  <a href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html#details">More...</a></p>
 <p><code>#include &lt;ThumbnailContext.h&gt;</code></p>
-<p>Inherits QObject.</p>
+<p>Inherits QObject, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e1681ff7e286c829b291ec43ca6a770"><td align="right" class="memItemLeft" valign="top"><a id="a8e1681ff7e286c829b291ec43ca6a770"></a>
- </td><td class="memItemRight" valign="bottom"><b>ThumbnailContext</b> (int thumbnailSize)</td></tr>
-<tr class="separator:a8e1681ff7e286c829b291ec43ca6a770"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a8e947afc45722fc672d8be75eba7661b"><td align="right" class="memItemLeft" valign="top"><a id="a8e947afc45722fc672d8be75eba7661b"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html">ThumbnailContext</a>, AZ::SystemAllocator, 0)</td></tr>
+<tr class="separator:a8e947afc45722fc672d8be75eba7661b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a2cec5d08b47b9292c65327ae250e4eaf"><td align="right" class="memItemLeft" valign="top"><a id="a2cec5d08b47b9292c65327ae250e4eaf"></a>
 bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_thumbnailer_1_1_thumbnail_context.html#a2cec5d08b47b9292c65327ae250e4eaf">IsLoading</a> (SharedThumbnailKey key)</td></tr>
 <tr class="memdesc:a2cec5d08b47b9292c65327ae250e4eaf"><td class="mdescLeft"> </td><td class="mdescRight">Is the thumbnail currently loading or is about to load. <br/></td></tr>
@@ -81,6 +81,9 @@ void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az
 <tr class="memitem:a54891a4944963fe4e5e8770c5b38d9bf"><td align="right" class="memItemLeft" valign="top"><a id="a54891a4944963fe4e5e8770c5b38d9bf"></a>
 void </td><td class="memItemRight" valign="bottom"><b>RedrawThumbnail</b> ()</td></tr>
 <tr class="separator:a54891a4944963fe4e5e8770c5b38d9bf"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab31ee219e202c973cd9f3689dd3532d2"><td align="right" class="memItemLeft" valign="top"><a id="ab31ee219e202c973cd9f3689dd3532d2"></a>
+QThreadPool * </td><td class="memItemRight" valign="bottom"><b>GetThreadPool</b> () override</td></tr>
+<tr class="separator:ab31ee219e202c973cd9f3689dd3532d2"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -94,7 +97,7 @@ static constexpr const char * </td><td class="memItemRight" valign="bottom"><a 
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:45 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:38 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

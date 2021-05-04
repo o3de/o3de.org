@@ -179,6 +179,9 @@ void </td><td class="memItemRight" valign="bottom"><b>CheckoutPressed</b> () ov
 <tr class="memitem:a4ea09f5a8b824e3468d8c6413d56e550"><td align="right" class="memItemLeft" valign="top"><a id="a4ea09f5a8b824e3468d8c6413d56e550"></a>
 bool </td><td class="memItemRight" valign="bottom"><b>AreAnyEntitiesSelected</b> () override</td></tr>
 <tr class="separator:a4ea09f5a8b824e3468d8c6413d56e550"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aa189b2a768bb660426a0b9827d9fe58a"><td align="right" class="memItemLeft" valign="top"><a id="aa189b2a768bb660426a0b9827d9fe58a"></a>
+int </td><td class="memItemRight" valign="bottom"><b>GetSelectedEntitiesCount</b> () override</td></tr>
+<tr class="separator:aa189b2a768bb660426a0b9827d9fe58a"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a6ace68074cc7bc49a3b443dc3b59cc9e"><td align="right" class="memItemLeft" valign="top"><a id="a6ace68074cc7bc49a3b443dc3b59cc9e"></a>
 const EntityIdList &amp; </td><td class="memItemRight" valign="bottom"><b>GetSelectedEntities</b> () override</td></tr>
 <tr class="separator:a6ace68074cc7bc49a3b443dc3b59cc9e"><td class="memSeparator" colspan="2"> </td></tr>
@@ -277,12 +280,6 @@ void </td><td class="memItemRight" valign="bottom"><b>ExitEditorIsolationMode</
 <tr class="memitem:a80a30607f8b9886cce117646d9d72830"><td align="right" class="memItemLeft" valign="top"><a id="a80a30607f8b9886cce117646d9d72830"></a>
 bool </td><td class="memItemRight" valign="bottom"><b>IsEditorInIsolationMode</b> () override</td></tr>
 <tr class="separator:a80a30607f8b9886cce117646d9d72830"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a6cddcb9c58e1abc793469dfe12eb487c"><td align="right" class="memItemLeft" valign="top"><a id="a6cddcb9c58e1abc793469dfe12eb487c"></a>
-const char * </td><td class="memItemRight" valign="bottom"><b>GetEngineRootPath</b> () const override</td></tr>
-<tr class="separator:a6cddcb9c58e1abc793469dfe12eb487c"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ad611895df7280f77957760f5b38e863b"><td align="right" class="memItemLeft" valign="top"><a id="ad611895df7280f77957760f5b38e863b"></a>
-const char * </td><td class="memItemRight" valign="bottom"><b>GetEngineVersion</b> () const override</td></tr>
-<tr class="separator:ad611895df7280f77957760f5b38e863b"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a3e62890140b8609a9e7172c20d005104"><td align="right" class="memItemLeft" valign="top"><a id="a3e62890140b8609a9e7172c20d005104"></a>
 void </td><td class="memItemRight" valign="bottom"><b>CreateAndAddEntityFromComponentTags</b> (const AZStd::vector&lt; AZ::Crc32 &gt; &amp;requiredTags, const char *entityName) override</td></tr>
 <tr class="separator:a3e62890140b8609a9e7172c20d005104"><td class="memSeparator" colspan="2"> </td></tr>
@@ -295,9 +292,6 @@ void </td><td class="memItemRight" valign="bottom"><b>CreateUndosForDirtyEntiti
 <tr class="memitem:a9981fc565f1ea6631c9a6010b495a302"><td align="right" class="memItemLeft" valign="top"><a id="a9981fc565f1ea6631c9a6010b495a302"></a>
 void </td><td class="memItemRight" valign="bottom"><b>ConsistencyCheckUndoCache</b> ()</td></tr>
 <tr class="separator:a9981fc565f1ea6631c9a6010b495a302"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a3ee495ec96fcc934a6cc461f004746ab"><td align="right" class="memItemLeft" valign="top"><a id="a3ee495ec96fcc934a6cc461f004746ab"></a>
-void </td><td class="memItemRight" valign="bottom"><b>InitializeEngineConfig</b> ()</td></tr>
-<tr class="separator:a3ee495ec96fcc934a6cc461f004746ab"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -331,9 +325,6 @@ bool </td><td class="memItemRight" valign="bottom"><b>m_isInIsolationMode</b></
 <tr class="memitem:a827b25d1db276132addd402a0529e588"><td align="right" class="memItemLeft" valign="top"><a id="a827b25d1db276132addd402a0529e588"></a>
 EntityIdSet </td><td class="memItemRight" valign="bottom"><b>m_isolatedEntityIdSet</b></td></tr>
 <tr class="separator:a827b25d1db276132addd402a0529e588"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ac61ba09a34821e1f6000f4630aa66b35"><td align="right" class="memItemLeft" valign="top"><a id="ac61ba09a34821e1f6000f4630aa66b35"></a>
-AZStd::unique_ptr&lt; EngineConfigImpl &gt; </td><td class="memItemRight" valign="bottom"><b>m_engineConfigImpl</b></td></tr>
-<tr class="separator:ac61ba09a34821e1f6000f4630aa66b35"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad9bf6cc0d24456c9e2c4ab915ae06745"><td align="right" class="memItemLeft" valign="top"><a id="ad9bf6cc0d24456c9e2c4ab915ae06745"></a>
 <a class="el" href="class_az_tools_framework_1_1_editor_entity_a_p_i.html">EditorEntityAPI</a> * </td><td class="memItemRight" valign="bottom"><b>m_editorEntityAPI</b> = nullptr</td></tr>
 <tr class="separator:ad9bf6cc0d24456c9e2c4ab915ae06745"><td class="memSeparator" colspan="2"> </td></tr>
@@ -390,7 +381,7 @@ AZStd::unique_ptr&lt; EngineConfigImpl &gt; </td><td class="memItemRight" valig
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:43 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:36 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

@@ -123,8 +123,8 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>DrawLines</b> (co
 <tr class="memitem:a5590eed31aef9125c860f391fa206b5a"><td align="right" class="memItemLeft" valign="top"><a id="a5590eed31aef9125c860f391fa206b5a"></a>
 virtual void </td><td class="memItemRight" valign="bottom"><b>DrawTriangles</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_aux_geom_draw_1_1_aux_geom_dynamic_indexed_draw_arguments.html">AuxGeomDynamicIndexedDrawArguments</a> &amp;args, FaceCullMode faceCull=FaceCullMode::None)=0</td></tr>
 <tr class="separator:a5590eed31aef9125c860f391fa206b5a"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a325fd3d7083197a6e84a36f3493f9af6"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a325fd3d7083197a6e84a36f3493f9af6">DrawQuad</a> (float width, float height, const AZ::Transform &amp;transform, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
-<tr class="separator:a325fd3d7083197a6e84a36f3493f9af6"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae89d5ee75ddf25578f6882ca0acb3864"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ae89d5ee75ddf25578f6882ca0acb3864">DrawQuad</a> (float width, float height, const AZ::Matrix3x4 &amp;transform, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
+<tr class="separator:ae89d5ee75ddf25578f6882ca0acb3864"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae9c653a941a9248121c04ebe58a41c92"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ae9c653a941a9248121c04ebe58a41c92">DrawSphere</a> (const AZ::Vector3 &amp;center, float radius, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
 <tr class="separator:ae9c653a941a9248121c04ebe58a41c92"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a3081d2150a8a7766cf176b2897297614"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a3081d2150a8a7766cf176b2897297614">DrawDisk</a> (const AZ::Vector3 &amp;center, const AZ::Vector3 &amp;direction, float radius, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
@@ -841,8 +841,8 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>DrawTriangles</b>
 </dl>
 </div>
 </div>
-<a id="a325fd3d7083197a6e84a36f3493f9af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a325fd3d7083197a6e84a36f3493f9af6">◆ </a></span>DrawQuad()</h2>
+<a id="ae89d5ee75ddf25578f6882ca0acb3864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89d5ee75ddf25578f6882ca0acb3864">◆ </a></span>DrawQuad()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -864,7 +864,7 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>DrawTriangles</b>
 <tr>
 <td class="paramkey"></td>
 <td></td>
-<td class="paramtype">const AZ::Transform &amp; </td>
+<td class="paramtype">const AZ::Matrix3x4 &amp; </td>
 <td class="paramname"><em>transform</em>, </td>
 </tr>
 <tr>
@@ -1057,7 +1057,7 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>DrawTriangles</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:03 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:54 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

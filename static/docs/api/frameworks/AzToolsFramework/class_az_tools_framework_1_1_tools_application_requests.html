@@ -116,6 +116,8 @@ virtual bool </td><td class="memItemRight" valign="bottom"><b>AreEntitiesEditab
 <tr class="separator:afbf2feb294ec6c424ec7182a29e61c99"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aabf8fbe105ab11d9c80ec8e1fa8096b2"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#aabf8fbe105ab11d9c80ec8e1fa8096b2">AreAnyEntitiesSelected</a> ()=0</td></tr>
 <tr class="separator:aabf8fbe105ab11d9c80ec8e1fa8096b2"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a08a22a489e46c31ffe0d78880812871a"><td align="right" class="memItemLeft" valign="top">virtual int </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a08a22a489e46c31ffe0d78880812871a">GetSelectedEntitiesCount</a> ()=0</td></tr>
+<tr class="separator:a08a22a489e46c31ffe0d78880812871a"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a8c3a356dfcf74063aa237b4537578528"><td align="right" class="memItemLeft" valign="top">virtual const EntityIdList &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a8c3a356dfcf74063aa237b4537578528">GetSelectedEntities</a> ()=0</td></tr>
 <tr class="separator:a8c3a356dfcf74063aa237b4537578528"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ab13ac2d363c9ceff5cec1bd03fcc5a2d"><td align="right" class="memItemLeft" valign="top">virtual const EntityIdList &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ab13ac2d363c9ceff5cec1bd03fcc5a2d">GetHighlightedEntities</a> ()=0</td></tr>
@@ -192,10 +194,6 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>RequestEditForFil
 <tr class="separator:a5f63b34061257107f478fc0a1cfa3079"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae26bc15d783ba20adf74c47027247300"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ae26bc15d783ba20adf74c47027247300">IsEditorInIsolationMode</a> ()=0</td></tr>
 <tr class="separator:ae26bc15d783ba20adf74c47027247300"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a1814d1ad963d810cdb4897760b834f58"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a1814d1ad963d810cdb4897760b834f58">GetEngineRootPath</a> () const =0</td></tr>
-<tr class="separator:a1814d1ad963d810cdb4897760b834f58"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a964e77f01ffd45853c384fae10831692"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a964e77f01ffd45853c384fae10831692">GetEngineVersion</a> () const =0</td></tr>
-<tr class="separator:a964e77f01ffd45853c384fae10831692"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a46447c771b559f25aa39c4af6c001b95"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a46447c771b559f25aa39c4af6c001b95">CreateAndAddEntityFromComponentTags</a> (const AZStd::vector&lt; AZ::Crc32 &gt; &amp;requiredTags, const char *entityName)=0</td></tr>
 <tr class="separator:a46447c771b559f25aa39c4af6c001b95"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:adfb0c5215ac18f38de7f81f45c1c5c53"><td align="right" class="memItemLeft" valign="top"><a id="adfb0c5215ac18f38de7f81f45c1c5c53"></a>
@@ -1039,55 +1037,6 @@ static const AZ::EBusHandlerPolicy </td><td class="memItemRight" valign="bottom
 <p>Retrieves the current undo batch. </p><dl class="section return"><dt>Returns</dt><dd>a pointer to the top of the undo stack. </dd></dl>
 </div>
 </div>
-<a id="a1814d1ad963d810cdb4897760b834f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1814d1ad963d810cdb4897760b834f58">◆ </a></span>GetEngineRootPath()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual const char* AzToolsFramework::ToolsApplicationRequests::GetEngineRootPath </td>
-<td>(</td>
-<td class="paramname"></td><td>)</td>
-<td> const</td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Get the engine root path that the current tool is running under. <br/>
-</p>
-</div>
-</div>
-<a id="a964e77f01ffd45853c384fae10831692"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a964e77f01ffd45853c384fae10831692">◆ </a></span>GetEngineVersion()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual const char* AzToolsFramework::ToolsApplicationRequests::GetEngineVersion </td>
-<td>(</td>
-<td class="paramname"></td><td>)</td>
-<td> const</td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Get the version of the engine the current tools application is running under </p>
-</div>
-</div>
 <a id="ab13ac2d363c9ceff5cec1bd03fcc5a2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab13ac2d363c9ceff5cec1bd03fcc5a2d">◆ </a></span>GetHighlightedEntities()</h2>
 <div class="memitem">
@@ -1189,6 +1138,30 @@ static const AZ::EBusHandlerPolicy </td><td class="memItemRight" valign="bottom
 </table>
 </div><div class="memdoc">
 <p>Retrieves the set of selected entities. </p><dl class="section return"><dt>Returns</dt><dd>a list of entity Ids. </dd></dl>
+</div>
+</div>
+<a id="a08a22a489e46c31ffe0d78880812871a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a22a489e46c31ffe0d78880812871a">◆ </a></span>GetSelectedEntitiesCount()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual int AzToolsFramework::ToolsApplicationRequests::GetSelectedEntitiesCount </td>
+<td>(</td>
+<td class="paramname"></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of selected entities. </p>
 </div>
 </div>
 <a id="a1f62c085136165095738cb30652e73cf"></a>
@@ -1807,7 +1780,7 @@ static const AZ::EBusHandlerPolicy </td><td class="memItemRight" valign="bottom
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:43 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:36 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

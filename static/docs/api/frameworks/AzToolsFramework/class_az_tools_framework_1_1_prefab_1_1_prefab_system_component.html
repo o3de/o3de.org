@@ -88,6 +88,8 @@ void </td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () overr
 <tr class="separator:acf5622e26935b9493a6df97396e64837"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a0db51cd1aade144c34bf32fdcf86bff5"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a0db51cd1aade144c34bf32fdcf86bff5">RemoveAllTemplates</a> () override</td></tr>
 <tr class="separator:a0db51cd1aade144c34bf32fdcf86bff5"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a790d2e6c8f9d26718258980745a9b684"><td align="right" class="memItemLeft" valign="top">AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a790d2e6c8f9d26718258980745a9b684">InstantiatePrefab</a> (AZ::IO::PathView filePath) override</td></tr>
+<tr class="separator:a790d2e6c8f9d26718258980745a9b684"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a01e2f7d82544189e248d480cbb3677ee"><td align="right" class="memItemLeft" valign="top">AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a01e2f7d82544189e248d480cbb3677ee">InstantiatePrefab</a> (const TemplateId &amp;templateId) override</td></tr>
 <tr class="separator:a01e2f7d82544189e248d480cbb3677ee"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a883a4f8f250b8f703229697029a4f714"><td align="right" class="memItemLeft" valign="top">LinkId </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a883a4f8f250b8f703229697029a4f714">AddLink</a> (const TemplateId &amp;sourceTemplateId, const TemplateId &amp;targetTemplateId, PrefabDomValue::MemberIterator &amp;instanceIterator, InstanceOptionalReference instance) override</td></tr>
@@ -102,8 +104,8 @@ void </td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () overr
 <tr class="separator:a1b885cbad0c3d2402905455882f1e3ec"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a3604c2eb3174d21fefa5377d04017017"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a3604c2eb3174d21fefa5377d04017017">SetTemplateDirtyFlag</a> (const TemplateId &amp;templateId, bool dirty) override</td></tr>
 <tr class="separator:a3604c2eb3174d21fefa5377d04017017"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a990032147a5ea0098724d3f0afe6fd54"><td align="right" class="memItemLeft" valign="top">AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a990032147a5ea0098724d3f0afe6fd54">CreatePrefab</a> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr) override</td></tr>
-<tr class="separator:a990032147a5ea0098724d3f0afe6fd54"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a502f626eac1fd07196d2306686b89063"><td align="right" class="memItemLeft" valign="top">AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a502f626eac1fd07196d2306686b89063">CreatePrefab</a> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr, bool ShouldCreateLinks=true) override</td></tr>
+<tr class="separator:a502f626eac1fd07196d2306686b89063"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad68a1aa9db39684ab41e27f397906487"><td align="right" class="memItemLeft" valign="top"><a id="ad68a1aa9db39684ab41e27f397906487"></a>
 PrefabDom &amp; </td><td class="memItemRight" valign="bottom"><b>FindTemplateDom</b> (TemplateId templateId) override</td></tr>
 <tr class="separator:ad68a1aa9db39684ab41e27f397906487"><td class="memSeparator" colspan="2"> </td></tr>
@@ -296,8 +298,8 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetIncompatibleSer
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>.</p>
 </div>
 </div>
-<a id="a990032147a5ea0098724d3f0afe6fd54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a990032147a5ea0098724d3f0afe6fd54">◆ </a></span>CreatePrefab()</h2>
+<a id="a502f626eac1fd07196d2306686b89063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a502f626eac1fd07196d2306686b89063">◆ </a></span>CreatePrefab()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -326,7 +328,13 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetIncompatibleSer
 <td class="paramkey"></td>
 <td></td>
 <td class="paramtype">AZStd::unique_ptr&lt; AZ::Entity &gt; </td>
-<td class="paramname"><em>containerEntity</em> = <code>nullptr</code> </td>
+<td class="paramname"><em>containerEntity</em> = <code>nullptr</code>, </td>
+</tr>
+<tr>
+<td class="paramkey"></td>
+<td></td>
+<td class="paramtype">bool </td>
+<td class="paramname"><em>ShouldCreateLinks</em> = <code>true</code> </td>
 </tr>
 <tr>
 <td></td>
@@ -344,7 +352,9 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetIncompatibleSer
 <table class="params">
 <tr><td class="paramname">entities</td><td>A vector of entities that will be used in the new instance. May be empty </td></tr>
 <tr><td class="paramname">instances</td><td>A vector of Prefab Instances that will be nested in the new instance, will be consumed and moved. May be empty </td></tr>
-<tr><td class="paramname">filePath</td><td>the path to associate the template of the new instance to </td></tr>
+<tr><td class="paramname">filePath</td><td>the path to associate the template of the new instance to. </td></tr>
+<tr><td class="paramname">containerEntity</td><td>The container entity for the prefab to be created. It will be created if a nullptr is provided. </td></tr>
+<tr><td class="paramname">shouldCreateLinks</td><td>The flag indicating if links should be created between the templates of the instance and its nested instances. </td></tr>
 </table>
 </dd>
 </dl>
@@ -448,8 +458,40 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetIncompatibleSer
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>.</p>
 </div>
 </div>
+<a id="a790d2e6c8f9d26718258980745a9b684"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790d2e6c8f9d26718258980745a9b684">◆ </a></span>InstantiatePrefab() <span class="overload">[1/2]</span></h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">AZStd::unique_ptr&lt;<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a>&gt; AzToolsFramework::Prefab::PrefabSystemComponent::InstantiatePrefab </td>
+<td>(</td>
+<td class="paramtype">AZ::IO::PathView </td>
+<td class="paramname"><em>filePath</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Generates a new Prefab <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> based on the <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> whose source is stored in filepath. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">filePath</td><td>the path to the prefab source file containing the template being instantiated. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A unique_ptr to the newly instantiated instance. Null if operation failed. </dd></dl>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>.</p>
+</div>
+</div>
 <a id="a01e2f7d82544189e248d480cbb3677ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01e2f7d82544189e248d480cbb3677ee">◆ </a></span>InstantiatePrefab()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01e2f7d82544189e248d480cbb3677ee">◆ </a></span>InstantiatePrefab() <span class="overload">[2/2]</span></h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -472,7 +514,7 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetIncompatibleSer
 </div><div class="memdoc">
 <p>Generates a new Prefab <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> based on the <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> referenced by templateId </p><dl class="params"><dt>Parameters</dt><dd>
 <table class="params">
-<tr><td class="paramname">templateId</td><td>the id of the template being instantiated </td></tr>
+<tr><td class="paramname">templateId</td><td>the id of the template being instantiated. </td></tr>
 </table>
 </dd>
 </dl>
@@ -710,7 +752,7 @@ static void </td><td class="memItemRight" valign="bottom"><b>GetIncompatibleSer
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:45 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:38 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

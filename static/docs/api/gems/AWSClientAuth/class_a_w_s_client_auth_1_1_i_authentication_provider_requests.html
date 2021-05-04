@@ -50,6 +50,9 @@ $(function() {
 <div class="title">AWSClientAuth::IAuthenticationProviderRequests Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div> </div>
 </div><!--header-->
 <div class="contents">
+<p>Abstract class for authentication provider requests.  
+ <a href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#details">More...</a></p>
+<p><code>#include &lt;AuthenticationProviderBus.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -60,9 +63,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a956ca3c16a1000f1c70b4e1762f9cfeb"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a76d8f9aee1b7be84021091e5fb7dd6ad"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a76d8f9aee1b7be84021091e5fb7dd6ad">IsSignedIn</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:a76d8f9aee1b7be84021091e5fb7dd6ad"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a4080556db2a409454e39bd064da50b7d"><td align="right" class="memItemLeft" valign="top"><a id="a4080556db2a409454e39bd064da50b7d"></a>
-virtual <a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.html">AuthenticationTokens</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a4080556db2a409454e39bd064da50b7d">GetAuthenticationTokens</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
-<tr class="memdesc:a4080556db2a409454e39bd064da50b7d"><td class="mdescLeft"> </td><td class="mdescRight">Get cached tokens from last last successful sign-in for the provider. <br/></td></tr>
+<tr class="memitem:a4080556db2a409454e39bd064da50b7d"><td align="right" class="memItemLeft" valign="top">virtual <a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.html">AuthenticationTokens</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a4080556db2a409454e39bd064da50b7d">GetAuthenticationTokens</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:a4080556db2a409454e39bd064da50b7d"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a1807a9ba54a92f874d2f2ec9ca2756e0"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a1807a9ba54a92f874d2f2ec9ca2756e0">PasswordGrantSingleFactorSignInAsync</a> (const ProviderNameEnum &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;password)=0</td></tr>
 <tr class="separator:a1807a9ba54a92f874d2f2ec9ca2756e0"><td class="memSeparator" colspan="2"> </td></tr>
@@ -70,24 +71,111 @@ virtual <a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.ht
 <tr class="separator:ab924c69d328d91a582b31d2dbb691dce"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a08a2bd4399c4fed0a52b2855d6793e50"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a08a2bd4399c4fed0a52b2855d6793e50">PasswordGrantMultiFactorConfirmSignInAsync</a> (const ProviderNameEnum &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;confirmationCode)=0</td></tr>
 <tr class="separator:a08a2bd4399c4fed0a52b2855d6793e50"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a8d8a61b00355dee808062c7dd3d0a0ec"><td align="right" class="memItemLeft" valign="top"><a id="a8d8a61b00355dee808062c7dd3d0a0ec"></a>
-virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a8d8a61b00355dee808062c7dd3d0a0ec">DeviceCodeGrantSignInAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
-<tr class="memdesc:a8d8a61b00355dee808062c7dd3d0a0ec"><td class="mdescLeft"> </td><td class="mdescRight">Call code-pair endpoint for provider device grant flow. <br/></td></tr>
+<tr class="memitem:a8d8a61b00355dee808062c7dd3d0a0ec"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a8d8a61b00355dee808062c7dd3d0a0ec">DeviceCodeGrantSignInAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:a8d8a61b00355dee808062c7dd3d0a0ec"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a7d4e7e726f8fe6c685d19b08baf4ebc1"><td align="right" class="memItemLeft" valign="top"><a id="a7d4e7e726f8fe6c685d19b08baf4ebc1"></a>
-virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a7d4e7e726f8fe6c685d19b08baf4ebc1">DeviceCodeGrantConfirmSignInAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
-<tr class="memdesc:a7d4e7e726f8fe6c685d19b08baf4ebc1"><td class="mdescLeft"> </td><td class="mdescRight">Call tokens endpoint for provider device grant flow. <br/></td></tr>
+<tr class="memitem:a7d4e7e726f8fe6c685d19b08baf4ebc1"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a7d4e7e726f8fe6c685d19b08baf4ebc1">DeviceCodeGrantConfirmSignInAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:a7d4e7e726f8fe6c685d19b08baf4ebc1"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a80edda54ec579210f5c2714d6d3a0839"><td align="right" class="memItemLeft" valign="top"><a id="a80edda54ec579210f5c2714d6d3a0839"></a>
-virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a80edda54ec579210f5c2714d6d3a0839">RefreshTokensAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
-<tr class="memdesc:a80edda54ec579210f5c2714d6d3a0839"><td class="mdescLeft"> </td><td class="mdescRight">Call refresh endpoint for provider refresh grant flow. <br/></td></tr>
+<tr class="memitem:a80edda54ec579210f5c2714d6d3a0839"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a80edda54ec579210f5c2714d6d3a0839">RefreshTokensAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:a80edda54ec579210f5c2714d6d3a0839"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:af42c1ddf6e6d12e3da06dc46a5c8dc55"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#af42c1ddf6e6d12e3da06dc46a5c8dc55">GetTokensWithRefreshAsync</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:af42c1ddf6e6d12e3da06dc46a5c8dc55"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a590a766b05ff97779079a3df127afb9b"><td align="right" class="memItemLeft" valign="top">virtual bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a590a766b05ff97779079a3df127afb9b">SignOut</a> (const ProviderNameEnum &amp;providerName)=0</td></tr>
 <tr class="separator:a590a766b05ff97779079a3df127afb9b"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract class for authentication provider requests. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7d4e7e726f8fe6c685d19b08baf4ebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d4e7e726f8fe6c685d19b08baf4ebc1">◆ </a></span>DeviceCodeGrantConfirmSignInAsync()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void AWSClientAuth::IAuthenticationProviderRequests::DeviceCodeGrantConfirmSignInAsync </td>
+<td>(</td>
+<td class="paramtype">const ProviderNameEnum &amp; </td>
+<td class="paramname"><em>providerName</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call tokens endpoint for provider device grant flow. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to call device confirm sign in. </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a8d8a61b00355dee808062c7dd3d0a0ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8a61b00355dee808062c7dd3d0a0ec">◆ </a></span>DeviceCodeGrantSignInAsync()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void AWSClientAuth::IAuthenticationProviderRequests::DeviceCodeGrantSignInAsync </td>
+<td>(</td>
+<td class="paramtype">const ProviderNameEnum &amp; </td>
+<td class="paramname"><em>providerName</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call code-pair endpoint for provider device grant flow. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to call device sign in. </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a4080556db2a409454e39bd064da50b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4080556db2a409454e39bd064da50b7d">◆ </a></span>GetAuthenticationTokens()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual <a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.html">AuthenticationTokens</a> AWSClientAuth::IAuthenticationProviderRequests::GetAuthenticationTokens </td>
+<td>(</td>
+<td class="paramtype">const ProviderNameEnum &amp; </td>
+<td class="paramname"><em>providerName</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Get cached tokens from last last successful sign-in for the provider. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to get authentication tokens. </td></tr>
+</table>
+</dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.html" title="Used to share authentication tokens to caller and to AWSCognitoAuthorizationController.">AuthenticationTokens</a> tokens from successful authentication. </dd></dl>
+</div>
+</div>
 <a id="af42c1ddf6e6d12e3da06dc46a5c8dc55"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af42c1ddf6e6d12e3da06dc46a5c8dc55">◆ </a></span>GetTokensWithRefreshAsync()</h2>
 <div class="memitem">
@@ -231,6 +319,7 @@ virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 <p>Call confirm endpoint for provider password grant multi factor authentication flow . </p><dl class="params"><dt>Parameters</dt><dd>
 <table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to call MFA confirm sign in. </td></tr>
 <tr><td class="paramname">username</td><td>Username to use for MFA confirm. </td></tr>
 <tr><td class="paramname">confirmationCode</td><td>Confirmation code (sent to email/text) to use for MFA confirm. </td></tr>
 </table>
@@ -278,6 +367,7 @@ virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 <p>Call sign in endpoint for provider password grant multi factor authentication flow. </p><dl class="params"><dt>Parameters</dt><dd>
 <table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to call MFA sign in. </td></tr>
 <tr><td class="paramname">username</td><td>Username to use for MFA sign in. </td></tr>
 <tr><td class="paramname">password</td><td>Password to use for MFA sign in. </td></tr>
 </table>
@@ -325,8 +415,39 @@ virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><div class="memdoc">
 <p>Call sign in endpoint for provider password grant flow. </p><dl class="params"><dt>Parameters</dt><dd>
 <table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to call sign in. </td></tr>
 <tr><td class="paramname">username</td><td>Username to use to for sign in. </td></tr>
 <tr><td class="paramname">password</td><td>Password to use to for sign in. </td></tr>
+</table>
+</dd>
+</dl>
+</div>
+</div>
+<a id="a80edda54ec579210f5c2714d6d3a0839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80edda54ec579210f5c2714d6d3a0839">◆ </a></span>RefreshTokensAsync()</h2>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+<tr>
+<td class="mlabels-left">
+<table class="memname">
+<tr>
+<td class="memname">virtual void AWSClientAuth::IAuthenticationProviderRequests::RefreshTokensAsync </td>
+<td>(</td>
+<td class="paramtype">const ProviderNameEnum &amp; </td>
+<td class="paramname"><em>providerName</em></td><td>)</td>
+<td></td>
+</tr>
+</table>
+</td>
+<td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
+</tr>
+</table>
+</div><div class="memdoc">
+<p>Call refresh endpoint for provider refresh grant flow. </p><dl class="params"><dt>Parameters</dt><dd>
+<table class="params">
+<tr><td class="paramname">providerName</td><td>Provider to call refresh tokens. </td></tr>
 </table>
 </dd>
 </dl>
@@ -366,7 +487,7 @@ virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:52 for AWSClientAuth API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:43 for AWSClientAuth API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

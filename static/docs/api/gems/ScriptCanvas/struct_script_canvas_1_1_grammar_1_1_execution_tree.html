@@ -46,7 +46,6 @@ $(function() {
 <div class="summary">
 <a href="#pub-types">Public Types</a> |
 <a href="#pub-methods">Public Member Functions</a> |
-<a href="#pro-attribs">Protected Attributes</a> |
 <a href="struct_script_canvas_1_1_grammar_1_1_execution_tree-members.html">List of all members</a> </div>
 <div class="headertitle">
 <div class="title">ScriptCanvas::Grammar::ExecutionTree Struct Reference</div> </div>
@@ -156,6 +155,9 @@ const <a class="el" href="struct_script_canvas_1_1_grammar_1_1_lexical_scope.htm
 <tr class="memitem:a47c8ec166565e8f34a5505c84ccaffea"><td align="right" class="memItemLeft" valign="top"><a id="a47c8ec166565e8f34a5505c84ccaffea"></a>
 VariableConstPtr </td><td class="memItemRight" valign="bottom"><b>GetNodeable</b> () const</td></tr>
 <tr class="separator:a47c8ec166565e8f34a5505c84ccaffea"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7a469f8af773b360d184ee71f1f00fbc"><td align="right" class="memItemLeft" valign="top"><a id="a7a469f8af773b360d184ee71f1f00fbc"></a>
+AZStd::optional&lt; size_t &gt; </td><td class="memItemRight" valign="bottom"><b>GetOutCallIndex</b> () const</td></tr>
+<tr class="separator:a7a469f8af773b360d184ee71f1f00fbc"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a2b0a23a571354418e51aa1bc53b7d755"><td align="right" class="memItemLeft" valign="top"><a id="a2b0a23a571354418e51aa1bc53b7d755"></a>
 ExecutionTreeConstPtr </td><td class="memItemRight" valign="bottom"><b>GetParent</b> () const</td></tr>
 <tr class="separator:a2b0a23a571354418e51aa1bc53b7d755"><td class="memSeparator" colspan="2"> </td></tr>
@@ -273,6 +275,9 @@ void </td><td class="memItemRight" valign="bottom"><b>SetNameLexicalScope</b> (
 <tr class="memitem:aa3eef2f54270751aae0be4a6652b1ee3"><td align="right" class="memItemLeft" valign="top"><a id="aa3eef2f54270751aae0be4a6652b1ee3"></a>
 void </td><td class="memItemRight" valign="bottom"><b>SetNodeable</b> (VariableConstPtr nodeable)</td></tr>
 <tr class="separator:aa3eef2f54270751aae0be4a6652b1ee3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab486144d8bce15d7144c43e5b65803e7"><td align="right" class="memItemLeft" valign="top"><a id="ab486144d8bce15d7144c43e5b65803e7"></a>
+void </td><td class="memItemRight" valign="bottom"><b>SetOutCallIndex</b> (size_t index)</td></tr>
+<tr class="separator:ab486144d8bce15d7144c43e5b65803e7"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa15030e9f6fec97c85212c050c3a3f53"><td align="right" class="memItemLeft" valign="top"><a id="aa15030e9f6fec97c85212c050c3a3f53"></a>
 void </td><td class="memItemRight" valign="bottom"><b>SetParent</b> (ExecutionTreePtr parent)</td></tr>
 <tr class="separator:aa15030e9f6fec97c85212c050c3a3f53"><td class="memSeparator" colspan="2"> </td></tr>
@@ -282,17 +287,11 @@ void </td><td class="memItemRight" valign="bottom"><b>SetScope</b> (ScopePtr sc
 <tr class="memitem:a0abaabdf1d9b41cec400bffb051461a7"><td align="right" class="memItemLeft" valign="top"><a id="a0abaabdf1d9b41cec400bffb051461a7"></a>
 void </td><td class="memItemRight" valign="bottom"><b>SetSymbol</b> (Symbol val)</td></tr>
 <tr class="separator:a0abaabdf1d9b41cec400bffb051461a7"><td class="memSeparator" colspan="2"> </td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a5293d94e20cfae9aa83a755cd1c5cd44"><td align="right" class="memItemLeft" valign="top"><a id="a5293d94e20cfae9aa83a755cd1c5cd44"></a>
-VariableConstPtr </td><td class="memItemRight" valign="bottom"><b>m_nodeable</b></td></tr>
-<tr class="separator:a5293d94e20cfae9aa83a755cd1c5cd44"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:41 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:17:30 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

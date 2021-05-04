@@ -55,7 +55,7 @@ $(function() {
 <p>Manages various authentication provider implementations and implements AuthenticationProvider Request bus.  
  <a href="class_a_w_s_client_auth_1_1_authentication_provider_manager.html#details">More...</a></p>
 <p><code>#include &lt;AuthenticationProviderManager.h&gt;</code></p>
-<p>Inherits Handler.</p>
+<p>Inherits Handler, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -98,6 +98,39 @@ bool </td><td class="memItemRight" valign="bottom"><b>SignOut</b> (const Provid
 <tr class="memitem:a6ec935b8d31296a1921fd5007850e2d0"><td align="right" class="memItemLeft" valign="top"><a id="a6ec935b8d31296a1921fd5007850e2d0"></a>
 <a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.html">AuthenticationTokens</a> </td><td class="memItemRight" valign="bottom"><b>GetAuthenticationTokens</b> (const ProviderNameEnum &amp;providerName) override</td></tr>
 <tr class="separator:a6ec935b8d31296a1921fd5007850e2d0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a9892d0ff0d7d051421345d2d98e66d"><td align="right" class="memItemLeft" valign="top"><a id="a0a9892d0ff0d7d051421345d2d98e66d"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>Initialize</b> (const AZStd::vector&lt; AZStd::string &gt; &amp;providerNames, const AZStd::string &amp;settingsRegistryPath) override</td></tr>
+<tr class="separator:a0a9892d0ff0d7d051421345d2d98e66d"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a1e38765c033bf9f47f41993beb190ed3"><td align="right" class="memItemLeft" valign="top"><a id="a1e38765c033bf9f47f41993beb190ed3"></a>
+void </td><td class="memItemRight" valign="bottom"><b>PasswordGrantSingleFactorSignInAsync</b> (const AZStd::string &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;password) override</td></tr>
+<tr class="separator:a1e38765c033bf9f47f41993beb190ed3"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a40c2625647e9a92027d4cb803bf4ceec"><td align="right" class="memItemLeft" valign="top"><a id="a40c2625647e9a92027d4cb803bf4ceec"></a>
+void </td><td class="memItemRight" valign="bottom"><b>PasswordGrantMultiFactorSignInAsync</b> (const AZStd::string &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;password) override</td></tr>
+<tr class="separator:a40c2625647e9a92027d4cb803bf4ceec"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a63a2ebe81de23fc17fa04be0a1d3ccf0"><td align="right" class="memItemLeft" valign="top"><a id="a63a2ebe81de23fc17fa04be0a1d3ccf0"></a>
+void </td><td class="memItemRight" valign="bottom"><b>PasswordGrantMultiFactorConfirmSignInAsync</b> (const AZStd::string &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;confirmationCode) override</td></tr>
+<tr class="separator:a63a2ebe81de23fc17fa04be0a1d3ccf0"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ab552016efb10ab1096d2d429d0ad4968"><td align="right" class="memItemLeft" valign="top"><a id="ab552016efb10ab1096d2d429d0ad4968"></a>
+void </td><td class="memItemRight" valign="bottom"><b>DeviceCodeGrantSignInAsync</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:ab552016efb10ab1096d2d429d0ad4968"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aeb967e9b4eb5965f8761c23b5312957a"><td align="right" class="memItemLeft" valign="top"><a id="aeb967e9b4eb5965f8761c23b5312957a"></a>
+void </td><td class="memItemRight" valign="bottom"><b>DeviceCodeGrantConfirmSignInAsync</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:aeb967e9b4eb5965f8761c23b5312957a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a7994d724fad4975d831b9cedd29e7df7"><td align="right" class="memItemLeft" valign="top"><a id="a7994d724fad4975d831b9cedd29e7df7"></a>
+void </td><td class="memItemRight" valign="bottom"><b>RefreshTokensAsync</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:a7994d724fad4975d831b9cedd29e7df7"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6c427acaf604eb7dafeaa4f3a3579683"><td align="right" class="memItemLeft" valign="top"><a id="a6c427acaf604eb7dafeaa4f3a3579683"></a>
+void </td><td class="memItemRight" valign="bottom"><b>GetTokensWithRefreshAsync</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:a6c427acaf604eb7dafeaa4f3a3579683"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a2930ada280e20c8301cdc6452f5058eb"><td align="right" class="memItemLeft" valign="top"><a id="a2930ada280e20c8301cdc6452f5058eb"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>IsSignedIn</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:a2930ada280e20c8301cdc6452f5058eb"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:accc5085656923a48eae16dc1facfc01c"><td align="right" class="memItemLeft" valign="top"><a id="accc5085656923a48eae16dc1facfc01c"></a>
+bool </td><td class="memItemRight" valign="bottom"><b>SignOut</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:accc5085656923a48eae16dc1facfc01c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6b4b2196b38ff78cbba4f8ebb3b53034"><td align="right" class="memItemLeft" valign="top"><a id="a6b4b2196b38ff78cbba4f8ebb3b53034"></a>
+<a class="el" href="class_a_w_s_client_auth_1_1_authentication_tokens.html">AuthenticationTokens</a> </td><td class="memItemRight" valign="bottom"><b>GetAuthenticationTokens</b> (const AZStd::string &amp;providerName) override</td></tr>
+<tr class="separator:a6b4b2196b38ff78cbba4f8ebb3b53034"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a7cc5705596d212c9f9e10cf86169aa98"><td align="right" class="memItemLeft" valign="top"><a id="a7cc5705596d212c9f9e10cf86169aa98"></a>
 virtual AZStd::unique_ptr&lt; <a class="el" href="class_a_w_s_client_auth_1_1_authentication_provider_interface.html">AuthenticationProviderInterface</a> &gt; </td><td class="memItemRight" valign="bottom"><b>CreateAuthenticationProviderObject</b> (const ProviderNameEnum &amp;providerName)</td></tr>
 <tr class="separator:a7cc5705596d212c9f9e10cf86169aa98"><td class="memSeparator" colspan="2"> </td></tr>
@@ -113,7 +146,7 @@ AZStd::map&lt; ProviderNameEnum, AZStd::unique_ptr&lt; <a class="el" href="class
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:10:51 for AWSClientAuth API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:16:43 for AWSClientAuth API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

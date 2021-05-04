@@ -497,6 +497,9 @@ virtual AZ::Outcome&lt; <a class="el" href="struct_script_canvas_1_1_grammar_1_1
 <tr class="memitem:afa01a587126e8bfdc385c41064386dc4 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="afa01a587126e8bfdc385c41064386dc4"></a>
 ConstSlotsOutcome </td><td class="memItemRight" valign="bottom"><b>GetSlotsInExecutionThreadByType</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;executionSlot, CombinedSlotType targetSlotType, const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *executionChildSlot=nullptr) const</td></tr>
 <tr class="separator:afa01a587126e8bfdc385c41064386dc4 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ad2c71adc62ecb6d47c13dda1a08806a3 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="ad2c71adc62ecb6d47c13dda1a08806a3"></a>
+size_t </td><td class="memItemRight" valign="bottom"><b>GetOutIndex</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
+<tr class="separator:ad2c71adc62ecb6d47c13dda1a08806a3 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a566805e6b1a33813dcb7373ee7a55a52 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="a566805e6b1a33813dcb7373ee7a55a52"></a>
 virtual AZ::Outcome&lt; AZStd::string &gt; </td><td class="memItemRight" valign="bottom"><b>GetLatentOutKey</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
 <tr class="separator:a566805e6b1a33813dcb7373ee7a55a52 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
@@ -563,6 +566,9 @@ virtual const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *�
 <tr class="memitem:aa78e3f295d2de7b8b998b7807e9b26d8 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="aa78e3f295d2de7b8b998b7807e9b26d8"></a>
 virtual AZStd::string </td><td class="memItemRight" valign="bottom"><b>GetEBusName</b> () const</td></tr>
 <tr class="separator:aa78e3f295d2de7b8b998b7807e9b26d8 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a779b30ba129d352d1de3c4baf7bec526 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="a779b30ba129d352d1de3c4baf7bec526"></a>
+virtual AZStd::optional&lt; size_t &gt; </td><td class="memItemRight" valign="bottom"><b>GetEventIndex</b> (AZStd::string eventName) const</td></tr>
+<tr class="separator:a779b30ba129d352d1de3c4baf7bec526 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aec1a9c769ba0fcee98657e1c40fc7493 inherit pub_methods_class_script_canvas_1_1_node"><td align="right" class="memItemLeft" valign="top"><a id="aec1a9c769ba0fcee98657e1c40fc7493"></a>
 virtual AZStd::vector&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &gt; </td><td class="memItemRight" valign="bottom"><b>GetEventSlotIds</b> () const</td></tr>
 <tr class="separator:aec1a9c769ba0fcee98657e1c40fc7493 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2"> </td></tr>
@@ -744,9 +750,6 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>AddOut</b> (const
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_nodes_1_1_nodeable_node.html#a9c43a724941bd25add0ca9bf475ad2f6">ConfigureSlots</a> () override</td></tr>
 <tr class="memdesc:a9c43a724941bd25add0ca9bf475ad2f6 inherit pro_methods_class_script_canvas_1_1_nodes_1_1_nodeable_node"><td class="mdescLeft"> </td><td class="mdescRight">This is a used by CodeGen to configure slots just prior to OnInit. <br/></td></tr>
 <tr class="separator:a9c43a724941bd25add0ca9bf475ad2f6 inherit pro_methods_class_script_canvas_1_1_nodes_1_1_nodeable_node"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a7b463ff8869329358c2e7df42a78226b inherit pro_methods_class_script_canvas_1_1_nodes_1_1_nodeable_node"><td align="right" class="memItemLeft" valign="top"><a id="a7b463ff8869329358c2e7df42a78226b"></a>
-AZ::Outcome&lt; AZStd::pair&lt; size_t, size_t &gt; &gt; </td><td class="memItemRight" valign="bottom"><b>FindMethodAndInputIndexOfSlot</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotID) const</td></tr>
-<tr class="separator:a7b463ff8869329358c2e7df42a78226b inherit pro_methods_class_script_canvas_1_1_nodes_1_1_nodeable_node"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ad89a75e2ff585ce1b964e45bd00a6ea9 inherit pro_methods_class_script_canvas_1_1_nodes_1_1_nodeable_node"><td align="right" class="memItemLeft" valign="top"><a id="ad89a75e2ff585ce1b964e45bd00a6ea9"></a>
 AZ::Outcome&lt; const AZ::BehaviorClass *, AZStd::string &gt; </td><td class="memItemRight" valign="bottom"><b>GetBehaviorContextClass</b> () const</td></tr>
 <tr class="separator:ad89a75e2ff585ce1b964e45bd00a6ea9 inherit pro_methods_class_script_canvas_1_1_nodes_1_1_nodeable_node"><td class="memSeparator" colspan="2"> </td></tr>
@@ -1030,7 +1033,7 @@ AZStd::unique_ptr&lt; <a class="el" href="class_script_canvas_1_1_nodeable.html"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 14 2021 13:11:41 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Tue May 4 2021 15:17:30 for ScriptCanvas API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>
