@@ -2,7 +2,7 @@
 linkTitle: Docs Repo Setup
 title: Setup a Local O3DE Docs Repo
 description: A guide to working with the Open 3D Engine (O3DE) documentation repository.
-weight: 500
+weight: 300
 toc: true
 ---
 
@@ -12,7 +12,7 @@ In this topic, you'll learn to create your own fork of the Open 3D Engine (O3DE)
 
 ## Prerequisites
 
-O3DE documentation uses the *fork and pull model* for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review. 
+O3DE documentation uses the *fork and pull model* for contributions. As a contributor, you maintain a fork (your own repository of the O3DE documentation) on GitHub, and work locally to edit documentation. You then submit PRs from your fork for review.
 
 You need to set up a few things before you proceed:
 
@@ -49,6 +49,7 @@ There is one very important thing to take note about your fork. At the very top 
 {{< /important >}}
 
 For more information on working with forks, refer to [Working with forks](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks).
+
 ### Clone your fork
 
 *Cloning* is the process of creating a local copy of a repo. To create a clone of your fork, in a terminal, perform the steps below:
@@ -89,8 +90,7 @@ For more information on working with forks, refer to [Working with forks](https:
 
 Now you can *sync* your clone. Syncing is the process of pulling the latest changes from a source repository to a clone. Use one of the two options outlined below:
 
-
-#### Option One: Sync your fork and pull to your branch.
+#### Option 1: Sync your fork and pull to your branch
 
 1. Make sure you are in the main branch.
 
@@ -118,7 +118,7 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
 
 1. If you are working in a branch, refer to [Maintian your branch](#maintain-your-branch) for information on syncing your branch.
 
-#### Option Two: Pull to your branch directly from `o3de:main`
+#### Option 2: Pull to your branch directly from `o3de:main`
 
 1. Set the upstream of your branch to `o3de:main`. You only need to do this step one time.
 
@@ -137,7 +137,6 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
     ```shell
     git pull
     ```
-
 
 {{< important >}}
 You must perform one of the above options whenever you need to ensure your branch is synced with `o3de:main`, such as before creating a new branch, or before syncing a branch to submit a PR.
