@@ -26,8 +26,6 @@ Wondering where to start? The conveniently titled [get started](./get-started) t
 
 * [Get started](./get-started): A high-level overview of the O3DE docs contribution process.
 
-* [Work with issues](./work-with-issues): Search existing issues, report new issues, and claim issues for your contribution efforts.
-
 * [Review PRs](./review-prs): Help ensure new documentation is as great as it can be by reviewing pull requests.
 
 * [Setup a local O3DE docs repo](./o3de-docs-repo-setup): A step-by-step guide to setting up and maintaining your O3DE docs repo.

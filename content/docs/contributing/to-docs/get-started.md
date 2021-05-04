@@ -104,7 +104,3 @@ Now that you are familiar with the O3DE docs, and have had some exposure to issu
 1. **The PR is merged and closed:** When the comments and suggestions have been addressed, and two reviewers have approved the PR, it can be merged into `o3de.org/main`. **Never** merge your own PRs, the final reviewer to sign off is responsible for the merge. The PR is automatically closed when merged.
 
 1. **The related issue is closed:** If you have included a related issue number in the title of your PR, the related issue will be automatically closed when the PR is closed. Your contribution is complete. Congrats!
-
-## Next step
-
-Let's start with the easiest way to make a contribution. File an issue. See [Working with issues](./work-with-issues)
