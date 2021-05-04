@@ -13,7 +13,7 @@ toc: true
 | Step | Action | Notes |
 |-|-|-|
 |  \#1       | Fork the [O3DE docs repo](https://github.com/o3de/o3de.org) to your personal GitHub account. | A GitHub account is required. Sign up [here](https://github.com/join). |
-|  \#2       | Clone _your_ fork of the O3DE docs repo to your local workstation. | Make sure you remember the file path to the cloned repo on your local workstation. What's "cloning"? Read our [detailed Getting started with O3DE docs contributions guidance](get-started)! |
+|  \#2       | Clone _your_ fork of the O3DE docs repo to your local workstation. | Make sure you remember the file path to the cloned repo on your local workstation. What's "cloning"? Read our [detailed Getting started with O3DE docs contributions guidance](./get-started)! |
  |  \#3       | `git remote add upstream  https://github.com/o3de/o3de.org` | Sets _upstream_ to the O3DE docs repo. _origin_ is your remote fork. Ultimately, you will push your changes to _origin_, and then submit a PR from your fork (_origin_) to the O3DE docs repo (_upstream_). Any subsequent pushes of changes to the branch you push will be reflected in the PR you made to from _origin_ to _upstream_ &mdash; you don't need to create another PR from _origin_ to _upstream_ as long as the PR for your branch remains open.  |
  |  \#4       | `git fetch upstream` | This updates local Git information about what is available from the upstream repo. |
  |  \#5       | `git branch -m main upstream/main` | Sets your local main branch to track the upstream main branch as its remote repo. This ensures that your local `main` is always in sync with the latest changes to `main` after a `git pull`. |

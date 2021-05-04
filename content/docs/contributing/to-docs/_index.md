@@ -32,6 +32,8 @@ Wondering where to start? The conveniently titled [get started](./get-started) t
 
 * [Setup a local O3DE docs repo](./o3de-docs-repo-setup): A step-by-step guide to setting up and maintaining your O3DE docs repo.
 
+* [Docs Contribution Runbook](./git-workflow): Just give me the Git commands for the basic workflow!
+
 * [O3DE docs structure](./o3de-docs-structure): Need guidance on navigating the repository? This map will help.
 
 * [Submit a PR](./submit-a-pr): Navigate the pitfalls of making submissions to O3DE documentation.
