@@ -1,7 +1,7 @@
 ---
 linktitle: AZSL Compiler (AZSLc)
 title: Amazon Shader Language Compiler (AZSLc)
-description: Learn how Shader Variant Options are encoded when compiled in AZSL. 
+description: Learn about the Amazon Shader Language Compiler (AZSLc) and how it compiles AZSL shaders in the Atom renderer. 
 toc: true
 weight: 600
 ---
