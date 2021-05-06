@@ -13,7 +13,7 @@ With the **Blast Family Mesh Data** component, you can set the mesh and material
 
 The **Blast Family Mesh Data** component is provided by the [NVIDIA Blast gem](/docs/user-guide/interactivity/physics/nvidia-blast/_index.md)\.
 
-For information on using the **Blast Family Mesh Data** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/intro.md)\.
+For information on using the **Blast Family Mesh Data** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/simulate/)\.
 
 ## Blast Family Mesh Data component properties {#component-blast-family-mesh-data-properties}
 
