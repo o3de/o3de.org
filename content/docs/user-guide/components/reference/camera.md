@@ -6,7 +6,7 @@ title: Camera
 
 {{< preview-migrated >}}
 
-The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/gems/camera.md)\.
+The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/gems/reference/camera/)\.
 
 ## Camera Component Properties {#component-camera-properties}
 
@@ -22,7 +22,7 @@ The **Camera** component has the following properties:
 |  **Field of view**  |  Vertical field of view in degrees\. Valid values: `0` to `180`  Default value: `75`  |
 |  **Near clip distance**  |  Distance to the near clip plane of the view frustum in meters\. Default value: `0.2`  |
 |  **Far clip distance**  |  Distance to the near far plane of the view frustum in meters\. Default value: `1024`  |
-|  **Be this camera**  |  Editor uses the selected camera as its view\. For more information, see [Changing the Camera View](/docs/userguide/editor/viewport#lumberyard-editor-viewport-camera)\.  |
+|  **Be this camera**  |  Editor uses the selected camera as its view\. For more information, see [Changing the Camera View](/docs/user-guide/editor/camera-space/)\.  |
 | Frustum length |  Length of the frustum shape\. Default value: `1.0` percent  |
 |  **Frustum color**  |  Color of the frustum shape\. Default value: `255`, `255`, `0`  |
 
