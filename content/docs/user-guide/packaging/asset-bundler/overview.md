@@ -14,7 +14,7 @@ The Asset Bundler is a command\-line tool, `AssetBundlerBatch.exe`, and a set of
 ## Prerequisites to use the Asset Bundler {#first-time-user}
 
 To use the Asset Bundler, your game project must meet the following criteria:
-+ The assets that you are bundling have been processed by the [Asset Processor](/docs/user-guide/assets/processor)\.
++ The assets that you are bundling have been processed by the [Asset Processor](/docs/user-guide/assets/pipeline/processor/)\.
 + You have Visual Studio 2019 \(any edition\) installed and configured for C\+\+ development\.
 
 ## Why use the Asset Bundler? {#related-services}
@@ -48,8 +48,9 @@ With those product dependency relationships in place, the Asset Bundler examines
 The Asset Bundler runs whenever the Asset Processor starts, which includes any time you launch O3DE\. You can also run it from the command line with the `AssetBundlerBatch` command\. For more information on the latter, read the [Asset Bundler Command Line Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference)\.
 
 To get started using the Asset Bundler, read the following tutorials:
-+ [Work with Asset Bundling and the O3DE Starter Game](/docs/user-guide/tutorials/packaging/tutorial-release)\. This tutorial uses the Starter Game packaged with O3DE and walks you through the general asset bundling process\.
-+ [Creating Basic Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-release)\. This tutorial covers the most simple case for asset bundling and release, using a single seed\. Once you've worked through this topic, read the extended tutorials for [multiple packages](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles) and [delta patches](/docs/user-guide/tutorials/packaging/tutorial-content-patches)\.
++ [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/)\. This tutorial uses the Starter Game packaged with O3DE and walks you through the general asset bundling process\.
++ [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles)\. This tutorial covers bundling assets for games that download additional content after launch.\. 
++ [Create Content Patches with O3DE](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/)\. This tutorial covers bundling to simulate a patch update to existing content.\.
 
 ## Why define product dependencies? {#why-use-product-dependencies}
 
@@ -79,21 +80,21 @@ For more complex game projects, with file loads implemented in C\+\+ and custom 
 
 ![\[New Asset Bundler workflow for complex projects.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart.png)
 
-With the O3DE asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/user-guide/packaging/asset-bundler/assets-verifying)\. You also have opportunities early in development to verify that you're bundling the correct assets\.
+With the O3DE asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/user-guide/packaging/asset-bundler/assets-resolving/)\. You also have opportunities early in development to verify that you're bundling the correct assets\.
 
 ## Asset Builders and the Asset Bundler {#asset-bundler-and-asset-builders}
 
 An Asset Builder is a standalone application that primarily translates intermediate assets to a platform\-native asset format\. An Asset Builder also provides dependency tracking and tasks related to managing asset metadata\.
 
-O3DE ships with Asset Builders for many common asset types\. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies\. If you use custom asset types, you can [create your own Asset Builders](/docs/user-guide/tutorials/assets/custom-builder) to support proper asset management and bundling with O3DE\.
+O3DE ships with Asset Builders for many common asset types\. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies\. If you use custom asset types, you can [create your own Asset Builders](/docs/learning-guide/tutorials/assets/custom-builder/) to support proper asset management and bundling with O3DE\.
 
 For example, Asset Builders for images can convert any portable image asset into a set of performance image formats\. When the Asset Builder for the images run, they create the dependency tree for the performance\-oriented image formats generated from the more general\-use portable image formats, and define them as dependent on the respective portable image format\. If you create the performance\-oriented images manually or through a separate process, the dependencies are not defined and not available to the Asset Bundler\.
 
-In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/user-guide/assets/asset-type-adding) for later use by the Asset Bundler\. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on\. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game\. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones\. With asset dependencies defined in your Asset Builder\(s\), you can be assured that you are including exactly the assets you need for your game and nothing more\.
+In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/user-guide/assets/pipeline/asset-type-adding/) for later use by the Asset Bundler\. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on\. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game\. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones\. With asset dependencies defined in your Asset Builder\(s\), you can be assured that you are including exactly the assets you need for your game and nothing more\.
 
 You can use the Asset Builder APIs to develop your own Asset Builders, which can then process your custom asset type's source files and generate files that you can use in O3DE\. Source code for a sample Asset Builder implementation is provided in the `Games/CustomAssetExample/Code/Source/Builder` directory under your O3DE installation root\.
 
-For more information, see the [the Asset Builder documentation](/docs/user-guide/tutorials/assets/custom-builder)\.
+For more information, see the [the Asset Builder documentation](/docs/learning-guide/tutorials/assets/custom-builder/)\.
 
 ## Define dependencies in your Asset Builder {#asset-builder-define-dependencies}
 
@@ -133,8 +134,6 @@ The following table provides some examples of the artifacts generated and used i
 
 ## Additional Resources {#asset-bundler-overview-resources}
 + [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts)
-+ [Work with Asset Bundling and the O3DE Starter Game](/docs/user-guide/tutorials/packaging/tutorial-release)
-+ [Creating Basic Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-release)
-+ [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles)
-+ [Creating Content Patch Bundles](/docs/user-guide/tutorials/packaging/tutorial-content-patches)
-+ [Migrating to the New Asset Bundler](/docs/userguide/assets/bundle/migrating)
++ [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/)
++ [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles/)
++ [Creating Content Patch Bundles](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/)

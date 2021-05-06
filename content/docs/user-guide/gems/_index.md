@@ -8,7 +8,7 @@ weight: 400
 
 {{< preview-migrated >}}
 
-Gems are packages that contain code and assets to augment your game projects\. With the [Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in O3DE, see [Gems Available in O3DE](/docs/user-guide/gems/list.md)\.
+Gems are packages that contain code and assets to augment your game projects\. With the <!--tdoyon: Need link for this -->[Programming with Gems](/docs/userguide/gems/_index.md), you can choose the features and assets that you need for your game project without including unnecessary components\. For a list of all gems included in O3DE, see [Gems Available in O3DE](/docs/user-guide/gems/reference/)\.
 
 O3DE features two types of Gems:
 + **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets\.
@@ -18,7 +18,7 @@ All gems that come bundled with O3DE are located in the `Gems` directory. Enable
 the O3DE [build system](/docs/user-guide/build).
 
 **Topics**
-+ [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)
-+ [Creating a Gem](/docs/user-guide/gems/development/creating)
+<!--tdoyon: Need link for Programming with Gems -->
++ [Creating a Gem](/docs/user-guide/gems/development/creating/)
 + [Programming with Gems](/docs/userguide/gems/_index.md)
-+ [Gems Available in O3DE](/docs/user-guide/gems/list.md)
++ [Gems Available in O3DE](/docs/user-guide/gems/reference/)
