@@ -49,7 +49,7 @@ The Asset Bundler runs whenever the Asset Processor starts, which includes any t
 
 To get started using the Asset Bundler, read the following tutorials:
 + [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/)\. This tutorial uses the Starter Game packaged with O3DE and walks you through the general asset bundling process\.
-+ [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles)\. This tutorial covers bundling assets for games that download additional content after launch.\. 
++ [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles)\. This tutorial covers bundling assets for games that download additional content after launch.\. 
 + [Create Content Patches with O3DE](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/)\. This tutorial covers bundling to simulate a patch update to existing content.\.
 
 ## Why define product dependencies? {#why-use-product-dependencies}
