@@ -97,8 +97,8 @@ Use the following attributes to customize your image\. Only the `src` attribute 
 | Attribute | Example | Description |
 | --- | --- | --- |
 | src | src="images/icons/button" |  Asset path of the texture to display\.  |
-| vAlign | vAlign="center" |  Alignment of image in the text area\. The text area refers to the total height of the largest glyph in the font\. If you don't specify this attribute, the default alignment is `baseline`\. [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-text)  |
-| height | height="100" |  Sets the image height and adjusts its width to preserve the aspect ratio\. If you don't specify this attribute, the default alignment is `fontAscent`\. [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-text)  |
+| vAlign | vAlign="center" |  Alignment of image in the text area\. The text area refers to the total height of the largest glyph in the font\. If you don't specify this attribute, the default alignment is `baseline`\.   |
+| height | height="100" |  Sets the image height and adjusts its width to preserve the aspect ratio\. If you don't specify this attribute, the default alignment is `fontAscent`\.   |
 | scale | scale="0\.8" | Scales the image by the specified scale factor\. If not specified, this attribute defaults to 1\.0\. |
 | yOffset | yOffset="\-3" |  Offsets the image vertically by the specified float value in pixels\. If not specified, this attribute defaults to `0`\.  |
 | xPadding | xPadding="6" |  Adds equal spacing before and after the image by the specified float value in pixels\. If not specified, this attribute defaults to 0\.0\.  |

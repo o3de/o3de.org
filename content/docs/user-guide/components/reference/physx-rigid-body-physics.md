@@ -30,7 +30,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 
 ## PhysX Rigid Body component properties {#component-physx-rigid-body-physics-properties}
 
-![\[PhysX Rigid Body component properties.\]](/images/user-guide/component/physx/component-physx-rigid-body-1.27.png)
+![\[PhysX Rigid Body component properties.\]](/images/user-guide/component/physx/component-physx-rigid-body.png)
 
 The **PhysX Rigid Body** component has the following properties\.
 

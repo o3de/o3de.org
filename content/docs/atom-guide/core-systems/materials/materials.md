@@ -18,7 +18,7 @@ Materials and material types are stored as data items in JSON files. The Atom Ma
 
 A full list of material types in Atom is listed in [Material Types in Atom](#material-types-in-atom).
 
-For more information on PBR, see [Physically-based Rendering (PBR)](./pbr.md) and [Working with StandardPBR materials](./create-standardpbr-material.md). 
+For more information on PBR, see [Physically-based Rendering (PBR)](/docs/atom-guide/materials/pbr/) and [Working with StandardPBR materials](./material-build-pipeline.md). 
 
 
 ## Materials

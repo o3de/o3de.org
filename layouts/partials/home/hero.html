@@ -1,5 +1,6 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
+{{ $source := site.Params.sourceRepo }}
 <div class="scalable home-hero d-flex align-items-center">
   <div class="container-fluid hero-inner">
     <div class="row">
@@ -15,7 +16,7 @@
           {{ end }}
 
           <p class="buttons">
-            <a href="https://github.com/aws/o3de" class="my-3 mr-3 btn btn-lg text-white download-cta">Clone on GitHub</a>
+            <a href={{ $source }} class="my-3 mr-3 btn btn-lg text-white download-cta">Clone on GitHub</a>
             <a href="/docs" class="my-3 mr-3 btn btn-lg text-white learnmore-cta">Learn more</a>
           </p>
         </div>

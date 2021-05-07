@@ -139,7 +139,7 @@ Every O3DE project includes an `Info.plist` file that contains the default value
 + Screen orientation
 + Other related settings
 
-You can access the `Info.plist` file in the `lumberyard_version\dev\Code\game_project_name\Resources\IOSLauncher\` directory\. The default app icons and splash screens are in the `Images.xcassets` directory\. For information about using the default app icons and splash screens, see the [O3DE Logos and Branding Guidelines](https://aws.amazon.com/lumberyard/support/)\.
+You can access the `Info.plist` file in the `lumberyard_version\dev\Code\game_project_name\Resources\IOSLauncher\` directory\. The default app icons and splash screens are in the `Images.xcassets` directory\. 
 
 Verify the `Info.plist` file is writeable and then use Xcode to modify the values for these settings\. For information about modifying these settings in Xcode, see [Configuring Your Xcode Project for Distribution](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/ConfiguringYourApp/ConfiguringYourApp.html)\.
 

@@ -5,10 +5,6 @@ title: Programmer's Guide to Component Mode
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 If you're a programmer, you can edit your components to add support for Component Mode\. This can help designers on your team work more easily with components\. You can use this feature to do the following:
 + Use manipulators to edit a component directly in the viewport
 + Create editing modes and tools without needing to create custom standalone editors

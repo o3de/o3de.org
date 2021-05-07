@@ -56,7 +56,7 @@ The Virtual Gamepad gem features two components that you can use to customize in
 
 ![\[VirutalGamepadThumbStick component properties\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-properties-2.png)
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/gems/builtin/virtualgamepad)
+
 
 ## Displaying the Virtual Gamepad at Runtime {#gems-system-gem-virtualgamepad-displaying}
 

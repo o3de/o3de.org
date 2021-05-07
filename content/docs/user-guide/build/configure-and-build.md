@@ -1,14 +1,14 @@
 ---
 title: Configure and Build
-description: Learn how to configure your Open 3D Engine builds with CMake, and then build O3DE projects with a native toolchain.
+description: Learn how to use the CMake build tools with Open 3D Engine (O3DE).
 weight: 100
 ---
 
-{{< preview-migrated >}}
+{{< preview-new >}}
 
-Building your O3DE project with CMake is done in two steps: Creating platform- and toolchain-specific configuration files, and then running the build on them. For many projects you can combine these into a single command, but it's useful to know how to run through each step of the process individually, in case you want to make project changes without immediately rebuilding everything. CMake lets you configure and build from the command line, and offers a GUI tool for ease of use.
+Building your O3DE project with CMake is done in two steps: Creating platform- and toolchain-specific configuration files, and then running the build on them. For many projects, you can combine these steps into a single command. However, it's also useful to know how to run through each step of the process individually, in case you want to make project changes without immediately rebuilding everything. CMake lets you configure and build from the command line, and also offers a GUI tool for ease of use.
 
-As part of keeping builds fast, where possible, CMake uses its cache to hold information about project generation as well as builds. After you configure for the first time, you won't need to pass some options to CMake. This means that after setting up your first configure and build, you should be able to go through your normal development process without needing to change your build configuration except in some rare circumstances.
+As part of keeping builds fast, where possible, CMake uses its cache to hold information about project generation as well as builds. After you configure for the first time, you won't need to pass some options to CMake. This means that after setting up your first configure and build, you should be able to go through your normal development process without needing to change your build configuration, except in some rare circumstances.
 
 These instructions are for Windows x86\_64 platforms, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference.md) or the build page for your platform.
 
@@ -103,7 +103,7 @@ For the full set of flags used by the compiler for each build configuration, see
 * `cmake/Platform/<platform ID>/Configurations_<platform ID>.cmake`
 
 {{< note >}}
-On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information on building on Linux, see [Deploy a O3DE multiplayer project's server on Linux](linux-build-lumberyard-executable.md).
+On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information on building on Linux, see [Deploy a O3DE multiplayer project's server on Linux](/docs/user-guide/platforms/linux/build-lumberyard-executable/).
 {{< /note >}}
 
 The following table is a high-level overview of what each build configuration does.

@@ -5,10 +5,6 @@ title: 'Animation Editor Components'
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 You can add the following **Animation Editor** components to an entity\. You can then specify the actor file, animation graph file, the motion file, or attachment\.
 
 For more information, see the following components:

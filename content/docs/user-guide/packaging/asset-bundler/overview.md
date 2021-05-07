@@ -14,7 +14,7 @@ The Asset Bundler is a command\-line tool, `AssetBundlerBatch.exe`, and a set of
 ## Prerequisites to use the Asset Bundler {#first-time-user}
 
 To use the Asset Bundler, your game project must meet the following criteria:
-+ The assets that you are bundling have been processed by the [Asset Processor](/docs/user-guide/assets/processor.md)\.
++ The assets that you are bundling have been processed by the [Asset Processor](/docs/user-guide/assets/pipeline/processor/)\.
 + You have Visual Studio 2019 \(any edition\) installed and configured for C\+\+ development\.
 
 ## Why use the Asset Bundler? {#related-services}
@@ -45,11 +45,12 @@ In this example, the seeds are the assets Level1\.pak and Level2\.pak\. These `.
 
 With those product dependency relationships in place, the Asset Bundler examines the hierarchies of each seed and generates an asset list\. Asset lists, along with the bundle settings file that you create, are used to assemble the final bundle as a `.pak` file with all of the dependent assets\. Any assets not associated with a seed are not included in the final release bundle\.
 
-The Asset Bundler runs whenever the Asset Processor starts, which includes any time you launch O3DE\. You can also run it from the command line with the `AssetBundlerBatch` command\. For more information on the latter, read the [Asset Bundler Command Line Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference.md)\.
+The Asset Bundler runs whenever the Asset Processor starts, which includes any time you launch O3DE\. You can also run it from the command line with the `AssetBundlerBatch` command\. For more information on the latter, read the [Asset Bundler Command Line Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference)\.
 
 To get started using the Asset Bundler, read the following tutorials:
-+ [Work with Asset Bundling and the O3DE Starter Game](/docs/user-guide/tutorials/packaging/tutorial-release.md)\. This tutorial uses the Starter Game packaged with O3DE and walks you through the general asset bundling process\.
-+ [Creating Basic Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-release.md)\. This tutorial covers the most simple case for asset bundling and release, using a single seed\. Once you've worked through this topic, read the extended tutorials for [multiple packages](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md) and [delta patches](/docs/user-guide/tutorials/packaging/tutorial-content-patches.md)\.
++ [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/)\. This tutorial uses the Starter Game packaged with O3DE and walks you through the general asset bundling process\.
++ [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles)\. This tutorial covers bundling assets for games that download additional content after launch.\. 
++ [Create Content Patches with O3DE](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/)\. This tutorial covers bundling to simulate a patch update to existing content.\.
 
 ## Why define product dependencies? {#why-use-product-dependencies}
 
@@ -61,7 +62,7 @@ There are two types of asset dependencies:
 
 In these topics, we are referring to *product dependencies* unless otherwise indicated\.
 
-The Asset Bundler also lets you exclude content that you don't want to release using the [asset list comparison feature](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
+The Asset Bundler also lets you exclude content that you don't want to release using the [asset list comparison feature](/docs/user-guide/packaging/asset-bundler/list-operations)\.
 
 ## How product asset dependencies are used by O3DE {#how-O3DE-uses-dependencies}
 
@@ -71,18 +72,6 @@ For example, you have a game that has one level for your release build\. Your ga
 
 ![\[Screenshot of a set of dependent assets represented as a folder and file structure on a disk.\]](/images/user-guide/assetbundler/asset-bundler-simple-game-files.png)
 
-In the asset bundling workflow in versions of O3DE prior to version 1\.22, each file had to be tracked and added to the game package\. This was generally done by specifying wildcards\. It worked for simple builds\. However, this process became hard to use when a game was split into multiple bundles\. The multiple bundles accomodated content being downloaded on demand, or the hard upper limit on package size because of platform package restrictions\. It also became difficult to safely manage excluded content, such as when your game project had assets that could not appear in your release build\.
-
-Based on the file layout in the previous example, here's a simple diagram of the workflow in O3DE versions prior to 1\.22:
-
-![\[A diagram of the legacy asset bundling workflow in O3DE.\]](/images/user-guide/assetbundler/legacy-asset-bundler-flowchart-simple.png)
-
-For more complex game projects, the asset bundling workflow can look more like this:
-
-![\[A diagram showing a more complex workflow for legacy asset bundling.\]](/images/user-guide/assetbundler/legacy-asset-bundler-flowchart.png)
-
-The bundling workflow in O3DE version 1\.22 has fewer steps, fewer loopbacks, and less complex steps than prior versions\.
-
 The following example shows a basic workflow for a simple game with assets that emits dependencies correctly\.
 
 ![\[New Asset Bundler dependency workflow.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart-simple.png)
@@ -91,21 +80,21 @@ For more complex game projects, with file loads implemented in C\+\+ and custom 
 
 ![\[New Asset Bundler workflow for complex projects.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart.png)
 
-In the previous bundling method, it was necessary to learn how each asset worked to find asset references in O3DE's tools\. With the new asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/user-guide/packaging/asset-bundler/assets-verifying.md)\. You also have opportunities earlier in development to verify that you are bundling the correct assets\. This is unlike the previous method that offered verification tools only for a bundled release build\.
+With the O3DE asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/user-guide/packaging/asset-bundler/assets-resolving/)\. You also have opportunities early in development to verify that you're bundling the correct assets\.
 
 ## Asset Builders and the Asset Bundler {#asset-bundler-and-asset-builders}
 
 An Asset Builder is a standalone application that primarily translates intermediate assets to a platform\-native asset format\. An Asset Builder also provides dependency tracking and tasks related to managing asset metadata\.
 
-O3DE ships with Asset Builders for many common asset types\. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies\. If you use custom asset types, you can [create your own Asset Builders](/docs/user-guide/tutorials/assets/custom-builder.md) to support proper asset management and bundling with O3DE\.
+O3DE ships with Asset Builders for many common asset types\. The Asset Bundler relies on the information produced by the Asset Builders for your project to manage the dependencies\. If you use custom asset types, you can [create your own Asset Builders](/docs/learning-guide/tutorials/assets/custom-builder/) to support proper asset management and bundling with O3DE\.
 
 For example, Asset Builders for images can convert any portable image asset into a set of performance image formats\. When the Asset Builder for the images run, they create the dependency tree for the performance\-oriented image formats generated from the more general\-use portable image formats, and define them as dependent on the respective portable image format\. If you create the performance\-oriented images manually or through a separate process, the dependencies are not defined and not available to the Asset Bundler\.
 
-In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/user-guide/assets/asset-type-adding.md) for later use by the Asset Bundler\. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on\. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game\. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones\. With asset dependencies defined in your Asset Builder\(s\), you can be assured that you are including exactly the assets you need for your game and nothing more\.
+In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/user-guide/assets/pipeline/asset-type-adding/) for later use by the Asset Bundler\. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on\. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game\. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones\. With asset dependencies defined in your Asset Builder\(s\), you can be assured that you are including exactly the assets you need for your game and nothing more\.
 
 You can use the Asset Builder APIs to develop your own Asset Builders, which can then process your custom asset type's source files and generate files that you can use in O3DE\. Source code for a sample Asset Builder implementation is provided in the `Games/CustomAssetExample/Code/Source/Builder` directory under your O3DE installation root\.
 
-For more information, see the [the Asset Builder documentation](/docs/user-guide/tutorials/assets/custom-builder.md)\.
+For more information, see the [the Asset Builder documentation](/docs/learning-guide/tutorials/assets/custom-builder/)\.
 
 ## Define dependencies in your Asset Builder {#asset-builder-define-dependencies}
 
@@ -135,18 +124,16 @@ The following table provides some examples of the artifacts generated and used i
 
 | Files \(Example\) | Usage | Notes |
 | --- | --- | --- |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | The asset lists used to generate the bundles for version 1 of the game\. | You should keep these files in source control with the version in the file name\. This lets you use these files to generate delta patches for future game releases\. |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | Asset lists to generate bundles for version 2 of the game\. | You should keep these files in source control with the version in the file name\. This allows these files to be easily used to generate delta patches for future game releases\. |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | These are asset lists generated as an interim step in creating the game bundle\. An asset list comparison that removes content in the engine asset list is used to trim these down to the "engineRemoved" asset lists in the previous row\. | You may have asset lists that you generate as interim steps that aren't used to create bundles directly\. These could go into source control as a historical record, but they won't be used in the future to generate delta patches\. |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | The asset list comparison rules\. One set of rules is used to generate the upgrade bundles between versions\. The other set of rules is used to remove assets in the engine asset list from the game asset list\. | Comparison rules files should be stored in source control, so you can use the same bundle creation process each release\. Versioning information is not stored in the file name, because it's unlikely you will need to use two versions at the same time\. If you ever do, you can rely on your source control's history to retrieve the older version\. |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | The settings used to generate the bundles\. | Bundle settings files should be stored in source control, so you can use the same bundle creation process each release\. |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | The game's seed list\. | Your game's seed list should be stored in source control\. As you change your game's content, you'll add and remove seeds from it\. Versioning information is not stored in the file name, because it's unlikely you will need to use two versions at the same time\. If you do, rely on your source control's history to retrieve older versions\. |
-|  [\[See the AWS documentation website for more details\]](/docs/userguide/assets/bundle/overview)  | The asset bundles generated for each release\. | Keep track of your game content's packaged asset bundles, to use in your game's releases\. You can store your game's packaged content in source control, but this is not optimal, because these are large, binary files\. We recommend that you use a separate storage solution, like Amazon S3\. |
+|    | The asset lists used to generate the bundles for version 1 of the game\. | You should keep these files in source control with the version in the file name\. This lets you use these files to generate delta patches for future game releases\. |
+|    | Asset lists to generate bundles for version 2 of the game\. | You should keep these files in source control with the version in the file name\. This allows these files to be easily used to generate delta patches for future game releases\. |
+|    | These are asset lists generated as an interim step in creating the game bundle\. An asset list comparison that removes content in the engine asset list is used to trim these down to the "engineRemoved" asset lists in the previous row\. | You may have asset lists that you generate as interim steps that aren't used to create bundles directly\. These could go into source control as a historical record, but they won't be used in the future to generate delta patches\. |
+|    | The asset list comparison rules\. One set of rules is used to generate the upgrade bundles between versions\. The other set of rules is used to remove assets in the engine asset list from the game asset list\. | Comparison rules files should be stored in source control, so you can use the same bundle creation process each release\. Versioning information is not stored in the file name, because it's unlikely you will need to use two versions at the same time\. If you ever do, you can rely on your source control's history to retrieve the older version\. |
+|    | The settings used to generate the bundles\. | Bundle settings files should be stored in source control, so you can use the same bundle creation process each release\. |
+|    | The game's seed list\. | Your game's seed list should be stored in source control\. As you change your game's content, you'll add and remove seeds from it\. Versioning information is not stored in the file name, because it's unlikely you will need to use two versions at the same time\. If you do, rely on your source control's history to retrieve older versions\. |
+|    | The asset bundles generated for each release\. | Keep track of your game content's packaged asset bundles, to use in your game's releases\. You can store your game's packaged content in source control, but this is not optimal, because these are large, binary files\. We recommend that you use a separate storage solution, like Amazon S3\. |
 
 ## Additional Resources {#asset-bundler-overview-resources}
-+ [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts.md)
-+ [Work with Asset Bundling and the O3DE Starter Game](/docs/user-guide/tutorials/packaging/tutorial-release.md)
-+ [Creating Basic Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-release.md)
-+ [Creating Multiple Asset Bundles](/docs/user-guide/tutorials/packaging/tutorial-multiple-bundles.md)
-+ [Creating Content Patch Bundles](/docs/user-guide/tutorials/packaging/tutorial-content-patches.md)
-+ [Migrating to the New Asset Bundler](/docs/userguide/assets/bundle/migrating.md)
++ [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts)
++ [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/)
++ [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles/)
++ [Creating Content Patch Bundles](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/)

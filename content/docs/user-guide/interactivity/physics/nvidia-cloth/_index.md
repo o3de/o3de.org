@@ -8,10 +8,6 @@ weight: 300
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
  With **NVIDIA Cloth** in Open 3D Engine you can create realistic cloth simulations for entities that contain **Actor** or **Mesh** components\. The **NVIDIA Cloth** gem provides a component you can use to simulate cloth on any mesh that has been processed with a **Cloth** modifier applied in **FBX Settings**\.
 
 To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md)\.

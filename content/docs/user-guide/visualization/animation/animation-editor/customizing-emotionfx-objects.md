@@ -5,10 +5,6 @@ title: Customizing EMotionFX Objects
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 The EMotion FX API supports registering custom object types, including state machine nodes, blend tree nodes, transitions, and conditions\. You can define custom object types in your game code or a custom gem\. This allows you to have granular control of the O3DE animation system\.
 
 ## Registering Custom Objects {#animation-editor-registering-custom-objects}

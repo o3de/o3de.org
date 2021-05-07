@@ -57,7 +57,7 @@ After you create your input event group, you can add event generators to the gro
 
 1. Specify your changes for the event generator\. Each event generator has a set of properties that you can customize\.
 **Event Generator Properties**
-[\[See the AWS documentation website for more details\]](/docs/userguide/working-with-the-input-component)
+
 **Example**
 
    The following `.inputbindings` file specifies a keyboard for the device type and the spacebar for the input name\.

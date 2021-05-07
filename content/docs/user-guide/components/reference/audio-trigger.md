@@ -6,7 +6,7 @@ title: Audio Trigger
 
 {{< preview-migrated >}}
 
-The **Audio Trigger** component provides basic play and stop features so that you can set up [Audio Translation Layer \(ATL\)](/docs/user-guide/interactivity/audio/default-controls.md) play and stop triggers that can be executed on demand\. With an audio trigger, you can also enable the player to run or stop audio triggers by name on entities\.
+The **Audio Trigger** component provides basic play and stop features so that you can set up [Audio Translation Layer \(ATL\)](/docs/user-guide/interactivity/audio/translation-layer/) play and stop triggers that can be executed on demand\. With an audio trigger, you can also enable the player to run or stop audio triggers by name on entities\.
 
 ## Audio Trigger Properties {#component-audio-trigger-properties}
 

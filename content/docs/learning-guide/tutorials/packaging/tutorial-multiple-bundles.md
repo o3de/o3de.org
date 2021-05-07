@@ -6,10 +6,6 @@ title: Creating Multiple Asset Bundles
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This tutorial is out of date for the new Starter Game project that shipped as part of O3DE 1\.25\. We're working to revise it and provide better, more comprehensive instructions\.  |
-
 The [Build and bundle assets for release in O3DE](/docs/user-guide/tutorials/packaging/tutorial-release.md) tutorial gets you started with using the asset bundling system to produce a game release\. However, it doesn't represent what most games require\. In this tutorial, you learn the bundling process for a common use case: Games that download additional content after the player launches the game\. The tutorial shows you how to create a release build with multiple game levels in separate asset bundles that have the contents of the base game removed\.
 
 This topic covers the following points:
@@ -56,7 +52,7 @@ It's also useful to be familiar with the [Open 3D Engine Asset List Comparison O
 
 ## Generate the new content bundle {#asset-bundler-tutorial-multiple-bundles-generate-bundles}
 
- In the [Build and bundle assets for release in O3DE](/docs/user-guide/tutorials/packaging/tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in O3DE Beta v1\.24 and later is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\.
+ In the [Build and bundle assets for release in O3DE](/docs/user-guide/tutorials/packaging/tutorial-release.md) tutorial, you created two `.pak` bundles for the game release\. This new level you've created only uses the already\-available assets that are bundled with your game, making it easy to distribute only the content that you need\. One important feature available in O3DE is the ability to distribute level data as part of its own `.pak`, rather than with the auxiliary game data\.
 
  This section of the tutorial walks you through creating a new asset list based on the `level2.pak` dependencies, removing duplicate entries that already appear in `startergame_pc.pak`, and bundling the level for distribution\.
 

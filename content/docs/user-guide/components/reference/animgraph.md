@@ -6,11 +6,7 @@ title: AnimGraph
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
-You can use the **AnimGraph** component to add an animation graph and motion set to your character\. Add this component to the [Actor](/docs/user-guide/components/actor.md) component to control character behavior from an animation graph\. For single motions, see the [Simple Motion](/docs/user-guide/components/simple-motion.md) component\.
+You can use the **AnimGraph** component to add an animation graph and motion set to your character\. Add this component to the [Actor](/docs/user-guide/components/reference/actor/) component to control character behavior from an animation graph\. For single motions, see the [Simple Motion](/docs/user-guide/components/reference/simple-motion/) component\.
 
 ## AnimGraph Component Properties {#component-animgraph-properties}
 

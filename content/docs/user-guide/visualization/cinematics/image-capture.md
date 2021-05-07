@@ -50,7 +50,7 @@ You can capture image frames when a sequence is played in game mode\.
 
 1. Double\-click the created track to add a capture keyframe\. You can set the following key properties:
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/cinematics/image-capture)
+
 
 1. Set up a Script Canvas graph to play the sequence on game start\.
 

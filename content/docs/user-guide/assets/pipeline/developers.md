@@ -66,7 +66,6 @@ The following utilities and guidelines are provided to make this easier:
   + Call `Path::FullPathToGamePath(string)` to convert any full path into a game asset ID automatically\.
   + Call `Path::GamePathToFullPath(string)` to convert any asset ID into a full source asset name\.
   + Call `Path::GetEditingGameDataFolder` to see where to save files that do not exist yet, such as for a **File Save** dialog\.
-+ If you are working in a new system that does rely on legacy systems, you can use an EBus, which has the same functionality as described above\. For more information about the EBus, see [Event Bus \(EBus\)](/docs/userguide/assets/ebus) in the [Open 3D Engine User Guide](https://docs.aws.amazon.com/lumberyard/latest/userguide/)\.
   + `#include <AzToolsFramework/API/EditorAssetSystemAPI.h>`
   + Call EBus messages `ConvertFullPathToRelativeAssetPath` and `ConvertRelativeAssetPathToFullPath` to convert back and forth\.
   + Call EBus messages `GetAbsoluteDevGameFolderPath` to get the game directory for **File Save** dialogs\. Use this only when you do not have an asset ID already, such as in the case of new files\.

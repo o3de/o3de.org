@@ -26,7 +26,7 @@ Use the **Screen Fader** node to fade the screen in and out in a scene\.
 | Property | Description |
 | --- | --- |
 | Type | Specifies either FadeIn or FadeOut values\. |
-| ChangeType |  For this transition type, you can specify one of the following:  [\[See the AWS documentation website for more details\]](/docs/userguide/cinematics/track-view/nodes-screen-fader)  |
+| ChangeType |  For this transition type, you can specify one of the following:    |
 | Color | Specifies the RGB value used for fading\. |
 | Duration | Specifies how long it takes to fade in or out the screen\. |
 | Texture |  Specifies a texture file to use as a screen overlay\. An alpha texture is commonly used for effects like dirt or blood\. The texture is multiplied by the color value to allow you to animate the brightness during the fade\.  |

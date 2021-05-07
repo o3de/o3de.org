@@ -7,10 +7,6 @@ weight: 100
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md) documentation\.
 
 You can create cloth assets for entities with **Mesh** components in the content creation application of your choice and import them into O3DE from an `.fbx` file\. The mesh asset should have the following:
@@ -36,7 +32,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 1. Set the cloth data of the mesh asset\.
 
    1. Click the button beside the **Mesh node** property to open the **FBX Settings** window\.
-![\[Open 3D Engine cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select-1.27.png)
+![\[Open 3D Engine cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select.png)
 
    1. In the **FBX Settings** window, on the **Meshes** tab, and choose **Add Modifier**, **Cloth**\.
 
@@ -49,14 +45,14 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
       1. When applicable, select the vertex color stream and channel that include the **Motion Constraints** data\. If data is not provided, then cloth defaults to a motion constraint value of 1\.0 for all vertices\.
 
       1. When applicable, select the vertex color streams and channels that includes the **Backstop Offset** and **Backstop Radius** data\. If data is not provided, then no backstop constraints will be applied in the simulation\.
-![\[Open 3D Engine cloth modifier setup.\]](/images/user-guide/physx/cloth/ui-cloth-modifier-mesh-setup-1.27.png)
+![\[Open 3D Engine cloth modifier setup.\]](/images/user-guide/physx/cloth/ui-cloth-modifier-mesh-setup.png)
 
    1. Choose the **Update** button\. **Asset Processor** then updates the asset and includes the cloth data\.
 
 1. Configure the cloth component\.
 
    1. Select the cloth mesh node from the drop\-down list\.
-![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-mesh-1.27.png)
+![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-mesh.png)
 
    1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/components/cloth.md)\.
 

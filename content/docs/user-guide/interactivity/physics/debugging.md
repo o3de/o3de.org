@@ -81,7 +81,7 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 
 1. You can make the following changes\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/debugging/physx)
+
 
 ## Debug Options in the PhysX Configuration {#physx-debugging-configuration}
 

@@ -6,15 +6,11 @@ title: Using Tags with Animation Graphs
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 In the **Animation Editor**, you use tags to describe the current state of your character and control the transition between different states\. Tags are Boolean flags that are either active \(enabled\) or inactive \(disabled\)\. Some examples of tags are Happy, Holding Sword, and Left Leg Injured\.
 
 ## Adding Tags {#animation-editor-adding-tags}
 
-Tags are represented by animation graph parameters\. When you define a parameter, you can specify a different value for each entity that uses the same animation graph and parameter\. For example, you can specify a different value for the **Speed** parameter for each entity that uses the animation graph\. Similarly, you can assign a different tag to each entity\. For example, one entity has the Holding Sword tag active and another entity has the Happy tag active\. For more information about parameters, see [About Parameters](/docs/userguide/animation/character-editor/concepts-and-terms#animation-graph-parameters)\.
+Tags are represented by animation graph parameters\. When you define a parameter, you can specify a different value for each entity that uses the same animation graph and parameter\. For example, you can specify a different value for the **Speed** parameter for each entity that uses the animation graph\. Similarly, you can assign a different tag to each entity\. For example, one entity has the Holding Sword tag active and another entity has the Happy tag active\. For more information about parameters, see [About Parameters](/docs/user-guide/visualization/animation/character-editor/concepts-and-terms/#animation-graph-parameters)\.
 
 **To create a tag**
 

@@ -29,7 +29,7 @@ Download the required software for your platform before setting up Atom.
 * You have installed the latest version of **Xcode**.
 * You have installed **CMake** and synced to all required 3rd party libraries.
 
-To install Visual Studio 2019, [get it from Microsoft](https://visualstudio.microsoft.com/downloads/). For CMake, [download and install](https://cmake.org/download/) and then check out the [O3DE build documentation](/docs/user-guide/features/build).
+To install Visual Studio 2019, [get it from Microsoft](https://visualstudio.microsoft.com/downloads/). For CMake, [download and install](https://cmake.org/download/) and then check out the [O3DE build documentation](/docs/user-guide/build/).
 
 ## Setting Up Visual Studio 2019
 The minimum required version of Visual Studio supported is 16.2.4. 

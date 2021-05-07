@@ -157,7 +157,7 @@ You can find the following properties in the **Platforms Settings** on the **iOS
 | Development Region |  Default language and region for the app. Defined by the region in which it was developed and the primary language used during development.  |
 | Requires Fullscreen |  Specifies whether the app is required to run in full-screen mode.  |
 | Hide Status Bar |  Specifies whether the status bar is initially hidden when the app launches.  |
-| Orientations |  Select which orientations to enable on the iOS device: [\[See the AWS documentation website for more details\]](/docs/userguide/mobile/project-settings-tool)  |
+| Orientations |  Select which orientations to enable on the iOS device:   |
 | Icons |  All icon overrides for iOS. PNG images are required. All resolutions must be exactly as specified.  |
 | Launchscreens |  All launch screen overrides for iOS. PNG images are required. All resolutions must be exactly as specified.  |
 

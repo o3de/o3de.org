@@ -6,10 +6,6 @@ title: Simplify Node Groups with Hub Nodes
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 The **Hub** node acts as a connection point between groups of nodes in an animation graph\. This pass\-through node outputs or forwards the pose of the node that entered it\. Hub nodes reduce the complexity of transitions by acting as the central point in a state machine\. By connecting multiple nodes to hubs, you can combine transition lines that share the same transition conditions and strategically organize nodes to create an easy\-to\-read state machine\.
 
 **Example**

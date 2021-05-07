@@ -112,9 +112,6 @@ O3DE uses a versatile shader system to achieve high quality, realistic graphics\
 
 When a new shader is compiled, the game waits for the remote shader compiler to compile the binary shader permutation and then send it back to your device\. Once this occurs, the shader is cached on your device until you delete the app\. When you are ready to release your game, you must pack up and include all cached binary shaders\.
 
-**Note**
-You can also run the remote shader compiler on an Amazon EC2 instance\. For information, see [Running the Shader Compiler on Amazon EC2](/docs/userguide/mobile/running-shader-compiler-amazon-EC2.md)\.
-
 ### Prerequisites {#ios-remote-shader-compiler-prerequisites}
 
 To use the remote shader compiler, you must do the following:

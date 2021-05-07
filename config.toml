@@ -10,10 +10,11 @@ style = "paraiso-dark"
 
 [params]
 font_awesome_version = "5.12.0"
-description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, bringing together over 30 fully matured and integrated 3D authoring tools, enabling users to build AAA games, cinema quality 3D worlds for video production, and high-fidelity simulations for non-gaming use cases with zero lisencing fees, commercial terms, or disclosure obligations."
+description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, bringing together over 30 fully matured and integrated 3D authoring tools, enabling users to build AAA games, cinema quality 3D worlds for video production, and high-fidelity simulations for non-gaming use cases with zero licensing fees, commercial terms, or disclosure obligations."
 favicon = "favicon.png"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
+sourceRepo = "https://github.com/aws-lumberyard/o3de"
 
 [params.logos]
 navbar = "O3DE-Logo-REV-Mono.svg"

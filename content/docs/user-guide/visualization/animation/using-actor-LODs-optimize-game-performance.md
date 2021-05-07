@@ -53,7 +53,7 @@ Currently, O3DE supports skeletons created with LOD groups only\.
 
 1. Create an actor with multiple LOD meshes by adding a suffix at the end of the name of each LOD mesh\. See the following table for examples\.
 ****
-[\[See the AWS documentation website for more details\]](/docs/userguide/using-actor-LODs-optimize-game-performance)
+
 
    For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming.md)\.
 

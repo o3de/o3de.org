@@ -17,5 +17,5 @@ You can use O3DE to develop games for the following platforms:
 
 Some platforms have additional requirements\.
 + For mobile devices, see [Developing for Android and iOS with O3DE](/docs/user-guide/platforms/mobile-support.md)\.
-+ For macOS, see [Create macOS projects in O3DE](/docs/userguide/macos/intro.md)\.
-+ For Linux dedicated servers, see [Creating O3DE Executables for Linux](/docs/userguide/linux/intro.md)\.
++ For macOS, see [Create macOS projects in O3DE](/docs/user-guide/platforms/macos/)\.
++ For Linux dedicated servers, see [Creating O3DE Executables for Linux](/docs/user-guide/platforms/linux/)\.

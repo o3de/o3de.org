@@ -120,7 +120,7 @@ Deferred Fog
 
 
 Depth of Field   
-: A post-processing effect that uses a point-of-focus and distance to simulate a bokeh effect (softening of distant objects) in a camera. Atom handles depth of field effects using shader passes.
+: A post-processing effect that uses a point-of-focus and distance to simulate lens effects of real world cameras that focus on a specific area. Atom handles depth of field effects using shader passes.
 
 *Related to: [O3DE Depth of Field Component](/docs/user-guide/components/reference/atom/depth-of-field.md)* 
 

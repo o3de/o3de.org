@@ -5,10 +5,6 @@ title: FBX Settings PhysX tab
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 In the **PhysX** tab, you can create **PhysX Mesh groups** to process collider assets for PhysX\. Collider assets can be triangle meshes, or generated as primitives or convex meshes based on meshes contained in the `.fbx` file\. Multiple **PhysX Mesh groups** can be processed from a single `.fbx` file\. Each **PhysX Mesh group** produces its own `.pxmesh` file\. The processed runtime assets appear in Asset Browser as children of the `.fbx` file\.
 
 **Important**
@@ -26,7 +22,7 @@ There are many options for creating PhysX collider assets\. The *best* options i
 
 ## PhysX tab properties {#fbx-importer-physx-tab-base-properties}
 
-![\[The FBX Settings PhysX tab.\]](/images/user-guide/fbx/ui-fbx-settings-physx-tab-1.25.png)
+![\[The FBX Settings PhysX tab.\]](/images/user-guide/fbx/ui-fbx-settings-physx-tab.png)
 
 ****Add another physxmesh****
 Add a **PhysX mesh group** to process as a PhysX collider asset \(`.pxmesh`\) from the `.fbx` file\.
@@ -49,7 +45,7 @@ Triangle mesh colliders can only be used with static and kinematic entities\. To
 
 Triangle mesh colliders accurately reproduce the shape of the selected meshes, but cannot be used on dynamic entities\. Triangle mesh colliders are most suitable for static environment entities that have complex shapes and require colliders that accurately resemble the visible render mesh shape\.
 
-![\[The FBX Settings PhysX tab Triangle mesh asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-triangle-parameters-1.25.png)
+![\[The FBX Settings PhysX tab Triangle mesh asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-triangle-parameters.png)
 
 **Merge Meshes**
 When enabled, all selected mesh nodes are merged into a single collider mesh\. Otherwise, the selected mesh nodes are exported as separate shapes\. It is usually more efficient to have a single collider mesh\.
@@ -81,7 +77,7 @@ Set the mesh cooking hint for max triangles per leaf\. Fewer triangles per leaf 
 
 Convex hulls are generated colliders that can approximate the shape of the selected meshes\. Convex hulls can be used with static, kinematic, and dynamic entities, and are often used on interactive entities such as weapons that require rigid body physics and a collider mesh that resembles the shape of the visible render mesh\.
 
-![\[The FBX Settings PhysX tab Convex asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-convex-parameters-1.25.png)
+![\[The FBX Settings PhysX tab Convex asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-convex-parameters.png)
 
 **Area Test Epsilon**
 If the area of a triangle in the hull is below this value, the triangle is rejected\. This test is performed only if **Check Zero Area Triangles** is set\. Valid values range from a minimum of **0** to a maximum value of **100**\.
@@ -119,7 +115,7 @@ When enabled, the V\-HACD algorithm is applied to split each node into approxima
 
 Primitive colliders are simple parametric primitives \(box, capsule, sphere\) fit to the selected meshes and can be used with static, kinematic, and dynamic entities\. Primitive colliders generally provide the best simulation performance, but might not closely match the shape of the visible render mesh\. They are best suited for dynamic entities with simple meshes such as crates and barrels, as well as projectiles, triggers, and entities where colliders that accurately represent shape of the visible render mesh are not necessary\.
 
-![\[The FBX Settings PhysX tab Primitive asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-primitive-parameters-1.25.png)
+![\[The FBX Settings PhysX tab Primitive asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-primitive-parameters.png)
 
 **Target Shape**
 Select a target shape to fit to the mesh: **Box**, **Capsule**, or **Sphere**\. If **Automatic** is selected, then the algorithm determines which shape fits best\.
@@ -140,7 +136,7 @@ Decomposing meshes has the advantage that each individual, nearly convex part, c
 
 For more information and illustrated examples of results, see the [V\-HACD library on GitHub](https://github.com/kmammou/v-hacd)\.
 
-![\[The FBX Settings PhysX tab Decomposition properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-decomposition-parameters-1.25.png)
+![\[The FBX Settings PhysX tab Decomposition properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-decomposition-parameters.png)
 
 **Maximum Hulls**
 Specify the maximum number of hulls to generate\. Valid values range from a minimum of **1** to a maximum value of **1024**\.
@@ -184,13 +180,13 @@ Modifiers can be added to a **PhysX mesh group** by choosing the **Add Modifier*
 
 ## Comment modifier {#w31aac15b9c11c17c23}
 
-![\[The FBX Settings PhysX tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment-1.25.png)
+![\[The FBX Settings PhysX tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\.
 
 ## Origin modifier {#w31aac15b9c11c17c25}
 
-![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin-1.25.png)
+![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 
 Change the position \(translation\), orientation \(rotation\), and scale of a mesh relative to how it was authored\.
 
