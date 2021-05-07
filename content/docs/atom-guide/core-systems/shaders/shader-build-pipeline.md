@@ -1,122 +1,58 @@
 ---
 title: Shader Build Pipeline
-description: Learn about the shader build pipeline in the Atom renderer.
+description: Learn about the Shader Build Pipeline in the Atom Renderer.
 toc: true
 weight: 200
 ---
 
 {{< preview-new >}}
 
-Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled with specialized configuration files that add various metadata. This consists of a main AZSL source file (`*.azsl`) and a shader asset file (`*.shader`). It might also include a shader variant list (`*.shadervariantlist`) and multiple AZSL include files (`*.azsli`, `*.srgi`).
+Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled with specialized configuration files that add various metadata.
+
+Shaders are made up of several files:  
+
+- **`*.azsl`**: The main AZSL source file that contains the shader program.
+- **`*.shader`**: References the .azsl file and attaches metadata to configure the shader for compiling. 
+- **`*.azsli`**: (Optional) Contains reusable AZSL code, which are intended to be included in .azsl files. 
+- **`*.srgi`**: (Optional) Contains AZSL code, which combines partial SRGs.
+- **`.shadervariantlist`**: (Optional) Describes what shader variants must be compiled for a given .shader file. 
+  
+
+## AZSL Files
+
+**AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/_index.md) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  
+
+There are a few key extensions of AZSL, which affect the shader build pipeline:
+- **Shader Resource Groups (SRGs)**: A container for application visible variables, which are defined in code with the class `ShaderResourceGroup`. SRGs can be defined in `.azsl` files as *partial SRGs*, which defines only a portion of an SRG. You can combine the partial SRGs in a single `.srgi` file. Learn more about SRGs in the [AZSL Reference](azsl/reference.md).
+- **Shader Variant Options**: Application visible variables, which the developer can choose to compile as static constants or as regular global variables. The compiled shader code results in **shader variants**, or variations of the shader code, which minimizes branching in runtime. You can specify the variants you want to pre-build in a `.shadervariantlist` file. Learn more about shader variant options in the [AZSL Reference](azsl/reference.md).
+
+### AZSL file (`.azsl`)
+
+The `.azsl` files are the main source file that contain AZSL code and shader programs. Atom currently supports vertex, pixel (or fragment), compute, and raytracing shaders. The `.azsl` file might also include other files with reusable AZSL code, like `.azsli` and `.srgi` files.
+
+
+### Shader Asset Files (`*.shader`)
+
+The `.shader` files are written in JSON. They reference the main AZSL source file (`*.azsl`) and add a variety of metadata for configuring AZSLc and indicating how the render pipeline should use this shader. 
+
+### AZSL Include file (`.azsli`)
+
+The `.azsli` files contain AZSL code that is meant to be reused and shared among multiple `.azsl` files. The `.azsli` extension is simply a naming convention to indicate that the file contains reusable AZSL code and should be included by `.azsl` files; otherwise, `.azsli` files are virtually identical to the `.azsl` files. 
+
+### SRG Include file (`.srgi`)
+
+The `.srgi` files are specialized AZSL files that are used to merge multiple partial SRG definitions into a single SRG asset. This allows multiple Gems to contribute their own resources to a common SRG, like the SceneSrg or ViewSrg. 
 
 ## Shaders in the Asset Pipeline
-The Asset Processer has several builders that work together to process .shader, .azsl, .azsli, and .shadervariantlist files and produce all the assets needed by the runtime. These shader assets and shader variant assets are most often used by the pass system or by the material system. During the build process, the Shader Asset Builder converts the `.shader` file into `.azshader` file. The `.azsl` file is translated from AZSL to HLSL (Shader Model 6.3) using the **Amazon Shading Language Compiler (AZSLc)**. The translated code is then compiled by the platform compilers:
+
+The **Asset Processer** has several builders that work together to process shader files and produce all the assets needed in runtime. These shader assets and shader variant assets are most often used by the pass system or by the material system. 
+
+The shader build pipeline consists of the following processes: 
+1. The **Shader Asset Builder** converts the `.shader` file into a `.azshader` file, known as a *shader asset*. It also produces a shader variant asset (`*.azshadervariant`) for the root shader variant, which is the main variant of the shader and is the default bytecode used for rendering.
+2. The **Amazon Shading Language Compiler (AZSLc)** and platform compilers compile the `.azsl` file by transpiling AZSL to HLSL (Shader Model 6.3)
+3. The target platform's shader compiler compiles the HLSL code.
+
+The Shader System uses the following shader compilers for supported platforms: 
 - **D3D12**: DirectX shader compiler with DXT emission.
 - **Vulkan**: DirectX shader compiler with SpirV emission.
 - **Metal**: DirectX shader compiler and [SPIRV-Cross](https://github.com/KhronosGroup/SPIRV-Cross) to generate metalSL emission. 
-
-<!-- [todo] Link to new doc 'Shader build pipeline' -->
-
-## AZSL Source Files (`*.azsl`, `*.azsli`, `*.srgi`)
-**AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most constructs that works in HLSL will work in AZSL as well. A key difference between AZSL and HLSL is the use of **Shader Resource Groups (SRGs)**, which make it easier to write shaders for multiple platforms and populate the shader inputs at runtime. Also, **shader options** simplify the process of generating multiple shader variants for optimizing shader bytecode. 
-
-The **AZSL compiler (AZSLc)** is a "transpiler" that translates AZSL into HLSL. It is then passed to common shader compilers like DXC.exe to compile bytecode for the target platforms. 
-
-<!-- [todo] Further details on shader compilers can be found in the AZSL Reference. -->
-
-The main source code file for any shader is a `.azsl` file. This contains the entry point functions for the relevant shader stages, like the vertex shader, pixel shader, and/or compute shader. It might include other files containing reusable AZSL code, like `.azsli` files and `.srgi` files.
-The `.azsli` files are virtually identical to the `.azsl` files; they just use the “azsli” extension by convention to indicate they contain reusable utility code rather than shader entry point functions (the “i" stands for “include”). Atom comes with many `.azsli` files for various utility code that is reused throughout the renderer and can be used by project teams to create their own custom shaders.
-
-The `.srgi` files are specialized AZSL files that are used to merge multiple **partial ShaderResourceGroup** definitions into a single shader resource group asset. This allows multiple Gems to contribute their own resources to a common SRG, like the SceneSrg or ViewSrg. 
-
-<!-- [todo] For more detail on this topic see TBD link. -->
-
-
-## Shader Asset Files (`*.shader`)
-Shader asset files (`*.shader`) are written in JSON. They reference the main AZSL source file (`*.azsl`) and add a variety of metadata for configuring the shader compiler (AZSLc) and indicating how the render pipeline should use this shader. 
-
-When built by the Asset Processor, the *source* shader asset file (`*.shader`) will produce a corresponding *product* shader asset file (`*.azshader`) in the cache. It will also produce a shader variant asset (`*.azshadervariant`) for the root shader variant, which is the default bytecode used for rendering <!-- [todo] (see the [Shader Variants]() section for more information) -->.
-
-The shader asset file includes the following elements:
-
-- **Source**: A file path to the AZSL source file (`*.azsl`). The path can be relative to this shader file or relative to the asset root.
-  
-- **RasterState**: The render state configuration for the rasterizer. 
-
-- **DepthStencilState**: The depth stencil state for the output merger. 
-
-- **CompilerHints**: A container of settings for the chain of shader compilers. The settings might be implemented differently per platform with varying levels of support.  
-  
-  For the full list of settings, see `ShaderCompilerArguments::Reflect` in `Gems\Atom\RHI\Code\Source\RHI.Edit\ShaderCompilerArguments.cpp`. 
-  {{< note >}}
-AZSLc is just the first compiler in the chain, that generates HLSL code. There are various other compilers, like dxc and spirv-cross, that perform additional translation and compilation. 
-  {{< /note >}}
-  
-
-- **ProgramSettings**: A container for shader program settings.
-  - **EntryPoints**: The list of shader entry points to build. If the EntryPoints setting is omitted, the builders will look for valid functions starting or ending with VS, PS, or CS, corresponding to vertex, fragment, and compute shaders.
-    - **Name**: The name of the shader entry point function, which was defined in the AZSL source file (`.azsl`). 
-    - **Type**: The type of shader function. The supported types are “Vertex”, “Fragment”, and “Compute”. 
-  
-- **DrawLists**: The name of the draw list where DrawItems using this shader should be queued for rendering. This name must match the draw list name in one or more passes (`*.pass` file) to be rendered.
-
-{{< note >}}
-This is a high level breakdown of the available elements in the shader asset file. The most reliable way to know the full specification is to inspect `ShaderSourceData::Reflect()` in `Gems\Atom\Code\Source\RPI.Edit\Shader\ShaderSourceData.cpp`. 
-
-For the various render states listed above, like DepthStencilState and RasterState, see `Gems\Atom\RHI\Code\Source\RHI.Reflect\RenderStates.cpp`.
-{{< /note >}}
-
-
-The following is an example of a shader file, `MinimalPBR_ForwardPass.shader`. 
-```json
-{
-    "Source" : "./MinimalPBR_ForwardPass.azsl",
-
-    "DepthStencilState" :
-    {
-        "Depth" :
-        {
-            "Enable" : true,
-            "CompareFunc" : "GreaterEqual"
-        },
-        "Stencil" :
-        {
-            "Enable" : true,
-            "ReadMask" : "0x00",
-            "WriteMask" : "0xFF",
-            "FrontFace" :
-            {
-                "Func" : "Always",
-                "DepthFailOp" : "Keep",
-                "FailOp" : "Keep",
-                "PassOp" : "Replace"
-            }
-        }
-    },
-
-    "CompilerHints" : { 
-        "DxcDisableOptimizations" : false
-    },
-
-    "ProgramSettings":
-    {
-      "EntryPoints":
-      [
-        {
-          "name": "MinimalPBR_MainPassVS",
-          "type": "Vertex"
-        },
-        {
-          "name": "MinimalPBR_MainPassPS",
-          "type": "Fragment"
-        }
-      ]
-    },
-
-    "DrawList" : "forward"
-}
-
-```
-
-## Shader Variant List (`*.shadervariantlist`)
-This section is in progress. 

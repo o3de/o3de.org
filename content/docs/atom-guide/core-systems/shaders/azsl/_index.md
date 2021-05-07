@@ -1,13 +1,13 @@
 ---
 linktitle: AZSL and Compiler
 title: Amazon Shader Language and Compiler
-description: Learn about the Amazon Shading Language in the Atom Renderer. 
+description: Learn about the Amazon Shader Language in the Atom Renderer. 
 weight: 100
 ---
 
 {{< preview-new >}}
 
-This section contains technical details about programming in the Amazon Shading Language (AZSL) and compiling with the Amazon Shading Language Compiler (AZSLc). In the Atom renderer, shaders are written in AZSL and are compiled by AZSLc. 
+This section contains technical details about programming in the Amazon Shader Language (AZSL) and compiling with the Amazon Shader Language Compiler (AZSLc). In the Atom Renderer, shaders are written in AZSL and are compiled by AZSLc. 
 
 ## Contents
 | Topic                        | Description |
