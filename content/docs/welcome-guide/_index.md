@@ -1,10 +1,10 @@
 ---
-linktitle: Welcome
+linkTitle: Welcome
 title: Welcome to Open 3D Engine!
+description: New to O3DE? Get started with and overview, installation and setup information, and a quick tour of O3DE.
 weight: 100
 menu_uuid: welcome
 guide_img: "/images/welcome-guide/guide_img.png"
-description: "New to O3DE? Get started with an overview of it, along with tutorials designed to help you get up and running."
 ---
 
 {{< preview-new >}}
