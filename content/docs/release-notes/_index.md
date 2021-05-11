@@ -14,20 +14,15 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
-| v1.0.0       | [LINK HERE]                   |  April 2, 2021     |
+| v1.0.0       | Not available                 |  May 10, 2021      |
 
 ### Get the latest stable sources
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| v1.0.0 (stable) | [main](https://github.com)       |  April 2, 2021     |
+| v0.5.0 (stable) | [v0.5.0](https://github.com/aws-lumberyard/o3de/tree/0.5) |  May 10, 2021      |
 
-### Highlights
+### v0.5.0 (alpha) Release Information
 
-* It's the initial release of O3DE!
-
-### New and updated features
-
-### Bug fixes and API deprecations
-
-### Known Issues
+* [v0.5.0 Release Notes](archive/v0-5-0-release-notes)
+* [v0.5.0 Known Issues](archive/v0-5-0-known-issues)

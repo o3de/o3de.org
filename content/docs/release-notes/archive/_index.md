@@ -11,6 +11,6 @@ Looking for older versions of release notes for Open 3D Engine (O3DE)? Look no f
 
 | Version     |  Link                                           | Date of Release    |
 |-------------|-------------------------------------------------|--------------------|
-| v1.0.0      | [v1.0.0 Release Notes](v1-0-0-release-notes.md) | 4/2/2021           |
+| v0.5.0      | [v0.5.0 Release Notes](v0-5-0-release-notes.md) | 5/10/2021           |
 
 * [Back to Release Notes Home](../_index.md)
