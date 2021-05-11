@@ -55,7 +55,6 @@ The following errors occur using RHI with Vulkan on Android platforms:
 
 ## Editor
 
-* **New level** dialog has no way to select a different folder.
 * O3DE Editor layout is broken in Atom projects when moved to a second monitor.
 
 ## UI Canvas (LYShine)
