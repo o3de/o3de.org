@@ -1,5 +1,5 @@
 ---
-linktitle: v0.5.0
+linktitle: v0.5.0 Release Notes
 title: Release Notes for Open 3D Engine v0.5.0 (alpha)
 description: Find out what's was delivered in O3DE v0.5.0 (alpha).
 weight: 101

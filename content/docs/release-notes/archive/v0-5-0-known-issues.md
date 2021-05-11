@@ -1,5 +1,5 @@
 ---
-linktitle: v0.5.0
+linktitle: v0.5.0 Known Issues
 title: Known Issues for Open 3D Engine v0.5.0 (alpha)
 description: Find out the known issues in O3DE v0.5.0 (alpha).
 weight: 102
