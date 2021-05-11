@@ -75,5 +75,4 @@ Open 3D Engine (O3DE) Release v0.5.0 (alpha) has the following known issues:
 
 ## Systems
 
-* After AN o3de project is built, the `project_path` is still incorrectly points to "AutomatedTest".
-
+* After an o3de project is built, the `project_path` is still incorrectly points to "AutomatedTest".
