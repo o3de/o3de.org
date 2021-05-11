@@ -13,7 +13,7 @@ Shaders are made up of several files:
 
 - **`*.azsl`**: The main AZSL source file that contains the shader program.
 - **`*.shader`**: References the .azsl file and attaches metadata to configure the shader for compiling. 
-- **`*.azsli`**: (Optional) Contains reusable AZSL code, which are intended to be included in .azsl files. 
+- **`*.azsli`**: (Optional) Contains reusable AZSL code, which is intended to be included in .azsl files. 
 - **`*.srgi`**: (Optional) Contains AZSL code, which combines partial SRGs.
 - **`.shadervariantlist`**: (Optional) Describes what shader variants must be compiled for a given .shader file. 
   
@@ -23,12 +23,12 @@ Shaders are made up of several files:
 **AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/_index.md) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  
 
 There are a few key extensions of AZSL, which affect the shader build pipeline:
-- **Shader Resource Groups (SRGs)**: A container for application visible variables, which are defined in code with the class `ShaderResourceGroup`. SRGs can be defined in `.azsl` files as *partial SRGs*, which defines only a portion of an SRG. You can combine the partial SRGs in a single `.srgi` file. Learn more about SRGs in the [AZSL Reference](azsl/reference.md).
-- **Shader Variant Options**: Application visible variables, which the developer can choose to compile as static constants or as regular global variables. The compiled shader code results in **shader variants**, or variations of the shader code, which minimizes branching in runtime. You can specify the variants you want to pre-build in a `.shadervariantlist` file. Learn more about shader variant options in the [AZSL Reference](azsl/reference.md).
+- **Shader Resource Groups (SRGs)**: A container for application visible variables, which are defined in code with the class `ShaderResourceGroup`. SRGs can be defined in `.azsl` files as *partial SRGs*, which define only a portion of an SRG. You can combine the partial SRGs in a single `.srgi` file. Learn more about SRGs in the [AZSL Reference](azsl/reference.md).
+- **Shader Variant Options**: Application visible variables, which the developer can choose to compile as static constants or as regular global variables. The compiled shader code results in **shader variants**, or variations of the shader code, which minimize branching in runtime. You can specify the variants you want to pre-build in a `.shadervariantlist` file. Learn more about shader variant options in the [AZSL Reference](azsl/reference.md).
 
 ### AZSL file (`.azsl`)
 
-The `.azsl` files are the main source file that contain AZSL code and shader programs. Atom currently supports vertex, pixel (or fragment), compute, and raytracing shaders. The `.azsl` file might also include other files with reusable AZSL code, like `.azsli` and `.srgi` files.
+The `.azsl` file is the main source file that contains AZSL code and shader programs. Atom currently supports vertex, pixel (or fragment), compute, and raytracing shaders. The `.azsl` file might also include other files with reusable AZSL code, like `.azsli` and `.srgi` files.
 
 
 ### Shader Asset Files (`*.shader`)
@@ -45,11 +45,11 @@ The `.srgi` files are specialized AZSL files that are used to merge multiple par
 
 ## Shaders in the Asset Pipeline
 
-The **Asset Processer** has several builders that work together to process shader files and produce all the assets needed in runtime. These shader assets and shader variant assets are most often used by the pass system or by the material system. 
+The **Asset Processer** has several builders that work together to process shader files and produce all of the assets that are needed in runtime. These shader assets and shader variant assets are most often used by the pass system or by the material system. 
 
 The shader build pipeline consists of the following processes: 
-1. The **Shader Asset Builder** converts the `.shader` file into a `.azshader` file, known as a *shader asset*. It also produces a shader variant asset (`*.azshadervariant`) for the root shader variant, which is the main variant of the shader and is the default bytecode used for rendering.
-2. The **Amazon Shading Language Compiler (AZSLc)** and platform compilers compile the `.azsl` file by transpiling AZSL to HLSL (Shader Model 6.3)
+1. The **Shader Asset Builder** converts the `.shader` file into a `.azshader` file, known as a *shader asset*. It also produces a shader variant asset (`*.azshadervariant`) for the root shader variant, which is the main variant of the shader and is the default bytecode that's used for rendering.
+2. The **Amazon Shading Language Compiler (AZSLc)** and platform compilers compile the `.azsl` file by transpiling AZSL to HLSL (Shader Model 6.3).
 3. The target platform's shader compiler compiles the HLSL code.
 
 The Shader System uses the following shader compilers for supported platforms: 
