@@ -10,13 +10,13 @@ guide_img: "/images/release-notes/guide_img.svg"
 
 ## Current Versions of Open 3D Engine
 
-### Download the latest stable version
+### Download the latest version
 
 | Version      | Binary download link          |  Date of Release   |
 |--------------|-------------------------------|--------------------|
 | v0.5.0 (alpha) | Not available                 |  May 10, 2021      |
 
-### Get the latest stable sources
+### Get the latest source code
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
