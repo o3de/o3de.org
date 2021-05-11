@@ -36,20 +36,18 @@ Open 3D Engine (O3DE) Release v0.5.0 (alpha) has the following known issues:
 
 ### Render Hardware Interface (RHI)
 
-* Changing Viewport layout while running with null renderer (-rhi=Null) causes an Editor crash.
+The following errors occur using RHI with Vulkan on Android platforms:
 
-  The following errors occur using RHI with Vulkan on Android platforms:
-
-  * Dynamic Material Test throws Device Lost error upon switch test material on Mali
-  * Device lost on Features/SSAO sample
-  * Device lost error on Features/LightCulling sample
-  * Device lost on Features/Exposure sample
-  * Device lost on Features/Exposure sample
-  * Unknown error assert for RPI/SceneReloadTest
-  * Unknown error assert for RPI/Dynamic Material Test
-  * Unknown error assert for RPI/AssetLoadTest
-  * RPI/DynamicDrawTest assert: Vulkan API method failed: Unknown error
-  * Crash on RPI/Bistrobenchmark sample
+* Dynamic Material Test throws Device Lost error upon switch test material on Mali
+* Device lost on Features/SSAO sample
+* Device lost error on Features/LightCulling sample
+* Device lost on Features/Exposure sample
+* Device lost on Features/Exposure sample
+* Unknown error assert for RPI/SceneReloadTest
+* Unknown error assert for RPI/Dynamic Material Test
+* Unknown error assert for RPI/AssetLoadTest
+* RPI/DynamicDrawTest assert: Vulkan API method failed: Unknown error
+* Crash on RPI/Bistrobenchmark sample
 
 ## Character
 
