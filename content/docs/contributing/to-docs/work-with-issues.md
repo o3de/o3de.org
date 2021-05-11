@@ -43,15 +43,15 @@ In an ideal scenario, every PR that's submitted to the repository will have an a
 
 When creating new issues keep the following in mind:
 
-* Give the issue a crisp title that clearly identifies the issue.
+* Give the issue a concise title that clearly identifies the request.
 
-* Each issue should contain a single work item.
+* Each issue should be for a single request. If the request is large enough, like a major new feature or site section, it may be split in triage.
 
-* Issue descriptions should concisely explain the bug or request.
+* Provide as much information as you think is relevant for resolving your issue. Include things like URLs for the site, and browser versions for rendering issues.
 
-* Use labels when appropriate. Labels help contributors organize and prioritize their work.
+* Use appropriate labels. Correct labels help with triage and make it easier for contributors to find something suited to their skills.
 
-* If it is a technical issue, include steps to reproduce the issue along with information that might be relevant, such as your browser and version number.
+* For technical issues include steps to reproduce the issue along with information that might be relevant, such as your browser version.
 
 * Respond to comments on issues you create. Providing additional information and actively participating with contributors can help address your issues more quickly.
 
