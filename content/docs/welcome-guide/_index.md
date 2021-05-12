@@ -19,9 +19,9 @@ description: "New to O3DE? Get started with an overview of it, along with tutori
 |------------------|-------------------------------------------------------------|
 | [O3DE features](features-intro.md) | An overview of O3DE's feature set. |
 | [Key concepts](key-concepts.md)    | How does O3DE work? Understand O3DE at a high level. |
-| [Open 3D Engine system requirements](setup/requirements.md) | The hardware and software you need to use O3DE. |
-| [Set up Open 3D Engine](setup) | Install O3DE and set up your environment. |
-| [Get started with Open 3D Engine](get-started) | Create a new O3DE project and take a quick tour of O3DE. |
+| [O3DE system requirements](setup/requirements.md) | The hardware and software you need to use O3DE. |
+| [Set up O3DE](setup) | Install O3DE and set up your environment. |
+| [Get started with O3DE](get-started) | Create a new O3DE project and take a quick tour of O3DE. |
 | [Communities](community-support.md) | Need help? Want to discuss O3DE? Join our communities! |
 
 For more detailed docs, check out the [Open 3D Engine User Guide](/docs/user-guide/).
