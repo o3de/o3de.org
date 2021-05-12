@@ -12,7 +12,7 @@ Open 3D Engine (O3DE) is an open source, cross-platform, real time 3D engine you
 
 ## Open source
 
-O3DE is open source under the Linux Foundation. You can use the provided binaries and tools to build your own projects, or get the source code and extend it!
+O3DE is open source. You can use the provided binaries and tools to build your own projects, or get the source code and extend it!
 
 Visit [O3DE on GitHub](https://github.com/aws-lumberyard/o3de) to get the source code.
 
@@ -52,7 +52,7 @@ Some of Atom's features include:
 
 * DirectX 12, Vulkan, and Metal graphics API support.
 
-* Optimized cluster Forward+ shading model with discrete passes that gives you greater control over Atom's final output. 
+* Optimized cluster Forward+ shading model with discrete passes that gives you greater control over Atom's final output.
 
 * The AZSL shader language is a flexible extension of HLSL that allows you to write your own shaders in a familiar syntax.
 
@@ -157,11 +157,9 @@ All of Open 3D Engine is backed with a high performance math library, designed t
 
 ## Simplified project management
 
-O3DE projects are managed through JSON configuration files and the CMake build system, making it simple for you to build custom management tools, or design and distribute your own customizations as Gems. O3DE's project design gives you:
+O3DE projects are managed through JSON configuration files and the CMake build system, making it simple for you to build custom management tools, or design and distribute your own customizations as Gems. Gems can add new functionality to your projects with a single line of JSON. O3DE's project design gives you:
 
-* Adding new functionality your project with an existing Gem is as easy as adding one line of JSON.
-
-* Each Gem comes with a JSON descriptor of its contents, enabled components, and libraries.
+* A JSON descriptor of a Gem's contents, enabled components, and libraries.
 
 * Python scripts with support for basic project management from the command line.
 
