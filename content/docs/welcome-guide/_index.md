@@ -15,8 +15,8 @@ description: "New to O3DE? Get started with an overview of it, along with tutori
 
 ## Welcome Guide Contents
 
-| Documentation    | Description                                                 |
-|------------------|-------------------------------------------------------------|
+| Topic | Description |
+|---|---|
 | [O3DE features](features-intro.md) | An overview of O3DE's feature set. |
 | [Key concepts](key-concepts.md)    | How does O3DE work? Understand O3DE at a high level. |
 | [O3DE system requirements](setup/requirements.md) | The hardware and software you need to use O3DE. |
