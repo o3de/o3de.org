@@ -1,0 +1,35 @@
+<!-- displays 3 blog posts and links to blogs, for homepage & community page -->
+
+{{ $posts := where site.RegularPages "Section" "blog" | first 3 }}
+  <div class="row">
+      <div class="col mx-auto">
+          <h2>Blog</h2>
+      </div>
+  </div>
+  <div class="row">
+    {{ range (.Paginate $posts).Pages }}
+    {{ $date := dateFormat "January 2, 2006" .Date }}
+    <div class="col col-lg-4 col-md-12 col-12">
+      <div class="card">
+          <div class="card-body">
+            <a href="{{ .RelPermalink }}">
+            <h2>
+              {{ .Title }}
+            </h2>
+            <p>
+              {{ $date }}
+            </p>
+            </a>
+            {{ .Summary }}...
+          </div>
+        </div>
+    </div>
+    {{ end }}
+  </div>
+  <div class="row mt-3">
+    <div class="col mx-auto">
+        <a href="/blog" class="btn btn-light border float-right" target="_blank">
+            Read more »
+          </a>
+    </div>
+    </div>
