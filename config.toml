@@ -89,5 +89,5 @@ parent = "learn"
 
 [[menu.main]]
 name = "Contribute"
-url = "/docs/contribute"
+url = "/docs/contributing"
 weight = 5
