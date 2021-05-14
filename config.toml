@@ -87,3 +87,8 @@ name = "Documentation"
 url = "/docs"
 weight = 1 
 parent = "learn"
+
+[[menu.main]]
+name = "Contribute"
+url = "/docs/contribute"
+weight = 5
