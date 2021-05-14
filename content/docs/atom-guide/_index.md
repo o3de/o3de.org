@@ -1,7 +1,7 @@
 ---
-linktitle: Atom Renderer
+linkTitle: Atom Renderer
 title: "Atom Renderer"
-description: "Learn about the Atom graphics rendering engine, its features, and how to use and extend them."
+description: Learn about Atom, a modular, multi-threaded, physically based renderer through features, tutorials, and API reference.
 weight: 400
 menu_uuid: atom
 guide_img: "/images/atom-guide/guide_img.png"
