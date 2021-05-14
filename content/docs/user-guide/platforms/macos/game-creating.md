@@ -6,10 +6,6 @@ weight: 600
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 The topics in [Create macOS projects in O3DE](/docs/user-guide/platforms/macos/intro.md) demonstrate how to use the Samples Project that is included with O3DE to build game assets, shaders, and macOS applications\. You can follow the same instructions to create a project for your own macOS game\.
 
 **Note**

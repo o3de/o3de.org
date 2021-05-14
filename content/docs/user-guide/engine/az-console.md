@@ -1,6 +1,5 @@
 ---
-description: ' Use AZ::Console to set console variables and functors for your O3DE
-  game. '
+description:  Use AZ::Console to set console variables and functors for your O3DE game. 
 title: AZ::Console
 ---
 
@@ -21,12 +20,6 @@ The console found inside `AzCore` is a console and cvar system intended to repla
 + Support for the legacy CryEngine console, specifically to reduce user confusion\. For users of the in\-game console, legacy cvars and `AZ_CVAR` cvars appear identical\.
 
 ![\[Image NOT FOUND\]](/images/userguide/az/az-console-1.png)
-
-**Important**
-As of Open 3D Engine version 1\.24, AZ::Console does not support the following features present in the CryEngine console:
-Registration of cvars at runtime by name\. Formerly, you could register a CryEngine cvar using `IConsole->Register<String/Int/Float>()` and then retrieve the value of that cvar with `IConsole->GetCVar()`\. `AZ::Console` cvars must be declared at compile\-time using one of the macros in IConsole\.h\.
-Custom cvar/cfunc autocomplete callbacks\. Formerly, you could specify an autocomplete callback and attach it to a CryEngine cvar\. `AZ::Console` currently does not support this functionality\.
-Remote console support\. The CryEngine console allows remote access by opening a socket on a provided port, and then listening for console commands issued to that socket\. `AZ::Console` currently does not support this functionality\.
 
 **Topics**
 + [Console variables \(cvars\)](#az-console-cvars)

@@ -5,10 +5,6 @@ title: FBX Settings actor export
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **Actors** contain geometry that has a skeleton and skinning data\. An **Actor** is not necessarily a character\. Assets that use a skeleton and skinning data to drive animation such as weapons, machines, and foliage, are **Actors**\. **Actors** can be animated through keyframe animation imported as **Motions** or through PhysX simulation and other dynamic solvers such as **Touch Bending**\.
 
 ## Export an actor {#fbx-exporting-actors}

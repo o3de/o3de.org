@@ -5,10 +5,6 @@ title: Creating and Visualizing Blend Spaces
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 Blend spaces are a collection of sample motions that are organized spatially according to their coordinates\. The visual representation is a graph with xy\-axes for the coordinates\. The xy\-axes can represent values such as move speed, travel direction, turn angle, and so on\. Each motion is represented by a point \(white dot\) in the graph or blend space\.
 
 When you pick a point in the blend space \(interactively or with parameter controls\), your character automatically plays a resulting motion that is computed based on the sample motions and appropriate blend weights\.

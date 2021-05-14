@@ -13,11 +13,11 @@ With the **Blast Family** component, you can enable destruction simulation using
 
 The **Blast Family** component is provided by the [NVIDIA Blast gem](/docs/user-guide/interactivity/physics/nvidia-blast/_index.md)\.
 
-For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/intro.md)\.
+For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/simulate/)\.
 
 ## Blast Family component properties {#component-blast-family-properties}
 
-![\[Properties of the Blast Family component\]](/images/user-guide/physx/blast/ui-blast-family-component-1.27.png)
+![\[Properties of the Blast Family component\]](/images/user-guide/physx/blast/ui-blast-family-component.png)
 
 **Blast Asset**
 The blast asset that will be used for the destruction simulation\.

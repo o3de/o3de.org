@@ -5,9 +5,6 @@ title: Creating Blend Trees
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
 
 In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes\. The **Animation Editor** supports state machines and blend trees\. For more information about state machines, see [About State Machines](/docs/userguide/animation/character-editor/concepts-and-terms#understanding-state-machines)\.
 

@@ -5,10 +5,6 @@ title: FBX Settings PhysX export
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 PhysX colliders are required by **Actors** and **Meshes** to perform collision detection, raycast hit detection, overlap testing, and PhysX simulation\. It's possible to use simple parametric primitive shapes in the **PhysX collider** component to create PhysX colliders, but many situations require colliders that more closely resemble the render mesh than simple shapes\.
 
 The **PhysX** tab in **FBX Settings** has many options to generate PhysX colliders that offer the best resolution and performance for any use scenario\.

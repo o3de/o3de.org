@@ -15,9 +15,6 @@ In the **Animation Editor**, you can preview the animations and blends between t
 
 O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md)\.
 
-**Note**
-If you are using O3DE 1\.10 or earlier, you can use the legacy animation system \(Geppetto and Mannequin\) to accomplish these tasks\. For more information, see [Animation System](https://docs.aws.amazon.com/lumberyard/latest/legacyreference/char-legacy-intro.html) in the *Open 3D Engine Legacy Reference*\.
-
 **Topics**
 + [Animation Editor Concepts and Terms](/docs/user-guide/visualization/animation/character-editor/concepts-and-terms.md)
 + [Animation Editor User Interface](/docs/user-guide/visualization/animation/animation-editor/user-interface.md)

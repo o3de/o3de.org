@@ -28,7 +28,7 @@ Follow these guidelines as you design your UI with tree views:
 
 Create a simple tree view, with support for showing branch lines\.
 
-For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [O3DE Qt control gallery tool](uidev-control-gallery.md), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`\.
+For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`\.
 
  **Example**
 

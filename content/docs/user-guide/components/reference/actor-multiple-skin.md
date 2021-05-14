@@ -26,8 +26,6 @@ Whether you use a single FBX file or multiple FBX files, you create an actor for
 
 For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md)\.
 
-To download the assets used in the following sections, see [Open 3D Engine Downloads](https://aws.amazon.com/lumberyard/downloads/) and choose the O3DE characters file\.
-
 ## Using a Single FBX File {#component-actor-single-fbx}
 
 When you use a single FBX file embedded with multiple meshes, you must create an actor for each attachment\. For example, a cowboy character would be an actor, while his interchangeable hat and belt must each be added as additional actors\.

@@ -7,10 +7,6 @@ weight: 400
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 You can use O3DE to build macOS applications\. O3DE includes four macOS\-supported sample projects that you can use to learn how to build assets for macOS games using the Asset Processor, build shaders using the remote shader compiler, and build and deploy macOS applications using the O3DE build tools\.
 
 **Topics**
@@ -26,7 +22,6 @@ You can use O3DE to build macOS applications\. O3DE includes four macOS\-support
 ## Prerequisites {#osx-prerequisites}
 
 To build games for macOS or iOS, O3DE requires the following on your Mac:
-+ [O3DE Mac Support Files](https://aws.amazon.com/lumberyard/downloads/)
 + [Xcode 11](https://developer.apple.com/xcode/download/) or later
 + macOS Mojave or later
 

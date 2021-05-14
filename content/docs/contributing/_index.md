@@ -1,10 +1,10 @@
 ---
-linktitle: Contribute
-title: Contributor's Guide for Open 3D Engine
+linkTitle: Contribute
+title: Contributor Guide for Open 3D Engine
+description: Want to contribute to O3DE? This guide will get you started with code and documentation contributions.
 weight: 700
 menu_uuid: contributing
-description: "Want to contribute to the O3DE docs? Check this short guide out first."
-guide_img: "/images/contributor-guide/guide_img.png"
+guide_img: "/images/contributing/guide_img.png"
 ---
 
 {{< preview-new >}}

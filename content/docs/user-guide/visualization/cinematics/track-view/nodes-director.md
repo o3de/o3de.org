@@ -26,7 +26,7 @@ The **Director \(Scene\)** node includes a camera track that specifies the activ
 
    You can add the following tracks and then set the key properties to the **Director** node\.
 **Director Node Tracks and Key Properties**
-[\[See the AWS documentation website for more details\]](/docs/userguide/cinematics/track-view/nodes-director)
+
 
 **Note**
 You can add multiple **Director** nodes to a scene, but only one **Director** node can be active\.

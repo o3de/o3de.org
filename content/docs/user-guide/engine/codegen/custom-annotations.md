@@ -7,10 +7,6 @@ weight: 400
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| AZ Code Generator is in preview release and is subject to change\. |
-
 You can provide additional data to your template driver by attaching annotations and tags to your source code\.
 
 **Topics**

@@ -5,10 +5,6 @@ title: FBX Settings mesh export
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **Meshes** contain geometry that doesn't have a skeleton and skinning data\. These assets are also called *static* **Meshes**\. Static meshes are most often used as props and environment objects, but can be used as interactive objects and even player avatars\. Entities containing static meshes can be animated through scripts \(*kinematics*\) or PhysX simulation \(*dynamics*\)\.
 
 **Contents**

@@ -6,10 +6,6 @@ weight: 600
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 **NVIDIA Cloth** gem supports **NVIDIA CUDA** on Windows 10\. With NVIDIA CUDA enabled for cloth, the simulation is computed on the GPU instead of the CPU\. This allows you to use all the computational power of the GPU to run more complex cloth instances, in larger numbers, leaving the CPU free to do other tasks\.
 
 For more information about NVIDIA CUDA, visit the [ NVIDIA CUDA](https://developer.nvidia.com/cuda-zone) portal\.
@@ -35,7 +31,7 @@ NVIDIA CUDA Toolkit can be installed through Setup Assistant\. The install link 
 1. Choose **Install Software** and scroll down to the **Optional software** group\.
 
 1. Choose **Get it** to the right of **NVIDIA CUDA Toolkit**\.
-![\[CUDA Toolkit installation in Open 3D Engine.\]](/images/user-guide/physx/cloth/ui-cloth-cuda-toolkit-1.25.png)
+![\[CUDA Toolkit installation in Open 3D Engine.\]](/images/user-guide/physx/cloth/ui-cloth-cuda-toolkit.png)
 
 1. A browser opens on the NVIDIA CUDA Toolkit Download page\. Use the prompts on the page to download the correct version of the toolkit for your system\.
 

@@ -6,10 +6,6 @@ title: Blending Poses with Blend Nodes
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 You can use **Blend** nodes in animation graphs to create an animation that blends two input poses\.
 
 **Animation Editor** has the following types of blend nodes, each of which blend poses in different manners:

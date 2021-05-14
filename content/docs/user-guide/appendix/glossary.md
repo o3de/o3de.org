@@ -20,9 +20,6 @@ Part of a collection of parametric\-blended poses for making a character take ai
 **alpha channel** {#alpha_channel}
 An extension of RGB color values for specifying the opacity of an object\. A value of 0\.0 indicates fully transparent while a value of 1\.0 indicates fully opaque\.
 
-**Amazon GameLift** {#amazon_gamelift}
-A fully managed [AWS](#aws) service for deploying, operating, and scaling session\-based multiplayer game servers in the cloud\.
-
 **archetype entity** {#archetype}
 A special type of [entity](#entity) with linked instances\. If a parameter of the archetype entity is changed, all other instances of that entity parameter are automatically updated\.
 
@@ -31,10 +28,6 @@ Any art, texture, 3D model, sound effect, or other digital data that is presente
 
 **attachment** {#attachment}
 A hierarchical object that is attached to characters, respond to real\-world physics, and can be attached, detached, or replaced at runtime in the game\. Character attachments include clothing, weapons, tools, or entire body parts such as heads or hands\.
-
-**AWS** {#aws}
-Amazon Web Services, an infrastructure web services platform in the cloud for companies of all sizes\.
-See also [http://aws\.amazon\.com](http://aws.amazon.com/what-is-cloud-computing/).
 
 **baked** {#baked}
 Performs and stores all calculations for a scene element so that the element does not need to be processed or rendered in real time in the game\. Often used for lighting or physics\. Also referred to as *prebaked*\.
@@ -62,9 +55,6 @@ See [blend space](#blend_space).
 
 **bump map** {#bump_map}
 A grayscale image that allows more realistic rendering of an object by introducing small displacements of its surface without changing its geometry\. This is done by perturbing the surface normals of a rendered object during lighting\. The amount of perturbation is specified by the values in the bump map\.
-
-**Cloud Canvas** {#cloud_canvas}
-A tool for building connected gameplay by using O3DE and AWS services, such as Amazon Cognito, Amazon DynamoDB, AWS Lambda, Amazon S3, Amazon SNS, and Amazon SQS\.
 
 **collision proxy** {#collision_proxy}
 A simplified geometric shape for approximating a more complex piece of geometry for purposes of a fast first\-pass collision detection\.

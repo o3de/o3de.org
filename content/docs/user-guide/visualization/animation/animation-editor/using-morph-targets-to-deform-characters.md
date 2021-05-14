@@ -6,10 +6,6 @@ title: Using Morph Targets to Deform Characters
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 A morph target is a deformed mesh that is stored as a series of vertex positions\. Morph targets are also called blend shapes or vertex\-level deformations\. You can use morph targets to deform a character's face to animate facial expressions or a character's body part to correct undesired deformation of skinning\. You can also simulate deformation of clothing on a character\.
 
 In the **Animation Editor**, you can use morph targets with one of the following nodes:
@@ -19,7 +15,7 @@ In the **Animation Editor**, you can use morph targets with one of the following
 ## Prerequisites {#animation-editor-morph-targets-prerequisites}
 
 To use morph targets in the **Animation Editor**, you must do the following:
-+ Prepare your asset for `.fbx` export\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md)\.
++ Prepare your asset for `.fbx` export\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/)\.
 + Create and animate morph targets on your character in your DCC tool \(for example, Maya\)\.
 + Export the character as an `.fbx` file\.
 

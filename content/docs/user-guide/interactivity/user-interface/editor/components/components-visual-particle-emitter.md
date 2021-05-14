@@ -37,7 +37,7 @@ Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) 
 | Infinite life time | Make the lifetime of the emitter infinite\. |
 | Emitter life time | Enter the number of seconds that the emitter is active during\. When the end of the lifetime is reached, the emitter stops emitting\. This option is available when Infinite life time isn't set\. |
 | Emit rate | Enter the number of particles to emit per second\. |
-| Emitter shape |  Select one of the following: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
+| Emitter shape |  Select one of the following:   |
 | Particle count limit | Use the Active particle limit value to limit the number of active particles\. |
 | Active particles limit | This option is available when Particle Count Limit is set\. Type the maximum number of active particles\. When the maximum number is reached, additional particles are emitted only after existing particles are removed\. The maximum value is 9999\. |
 | Fixed random seed | Specify a fixed random seed for the emitter\. When not selected, a random seed is generated each time the emitter starts emitting\. |
@@ -45,7 +45,7 @@ Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) 
 | Emit on edge | This option is available when Emitter shape is Circle or Quad\. Emit particles on the edge of the specified shape\. |
 | Emit inside distance | This option is available when Emit on Edge is set\. Enter the distance inside the edge that the particles are emitted from\. |
 | Emit outside distance | Type the distance outside the edge that the particles are emitted from\. |
-| Initial direction type |  This option is available when **Emitter shape** is **Circle** or **Quad**\. Select one of the following to specify how the initial direction is calculated: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
+| Initial direction type |  This option is available when **Emitter shape** is **Circle** or **Quad**\. Select one of the following to specify how the initial direction is calculated:   |
 | Emit angle | Enter the number of degrees vertical that particles are emitted from\. |
 | Emit angle variation | Enter a number or use the slider to specify, in degrees, the variation of the emit angle\. Valid values are from 0 through 180\. A value of 10 specifies a variation range of plus or minus 10 degrees\. |
 
@@ -65,7 +65,7 @@ Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) 
 | Sprite sheet start frame | This option is available when the selected sprite is a sprite sheet \(has more than one cell\) and Random sprite sheet index is set\. Select the starting frame of the sprite sheet range for sprite sheet animation or randomly choosing the index\. |
 | Sprite sheet end frame | This option is available when the selected sprite is a sprite sheet \(has more than one cell\) and Random sprite sheet index is set\. Sets the end frame of the sprite sheet range for sprite sheet animation or randomly choosing the index\. |
 | Sprite sheet frame delay | This option is available when Animated sprite sheet is set\. Type the number of seconds of delay between each sprite sheet frame\. |
-| Blend mode |  Select one of the following: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
+| Blend mode |  Select one of the following:   |
 
 
 **Particle Movement**
@@ -73,12 +73,12 @@ Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) 
 | Name | Description |
 | --- | --- |
 | Relative to emitter | Move particles relative to the element to which the Particle Emitter component is attached\. When this option isn't selected, the element leaves a trail of particles as the emitter moves around the canvas\. |
-| Movement co\-ordinate type |  Select the type of coordinate space for particle movement: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
+| Movement co\-ordinate type |  Select the type of coordinate space for particle movement:   |
 | Speed | This option is available when Movement co\-ordinate type is set to Cartesian\. Enter a number that specifies the initial speed of the emitted particles when the emit direction is calculated\. |
 | Speed variation | This option is available when Movement co\-ordinate type is set to Cartesian\. Enter a number that specifies the variation in initial speed of the emitted particles when the emit direction is calculated\. |
 | Initial velocity | This option is available when Movement co\-ordinate type is set to Polar\. Enter X and Y values that specify the initial velocity of the emitted particles\. |
 | Initial velocity variation | This option is available when Movement co\-ordinate type is set to Polar\. Enter X and Y values that specify the variation in the initial velocity of the emitted particles\. |
-| Acceleration co\-ordinate type |  Select the type of coordinate space that is used for particle acceleration: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
+| Acceleration co\-ordinate type |  Select the type of coordinate space that is used for particle acceleration:   |
 | Acceleration | Enter X and Y values that specify the acceleration of each emitted particle\. |
 | Orientation velocity based | Point the top of each particle toward the current velocity vector\. |
 | Initial orientation velocity based | Point the top of each particle toward the initial velocity vector\. |
@@ -120,8 +120,8 @@ Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) 
 | Alpha multiplier | Click the plus sign \(\+\) to add keyframes that control a curve to multiply the particle alpha over its lifetime\. |
 | Time |  Enter a value between `0` and `1` that specifies when the keyframe occurs during the particle lifetime\.  A value of `0` is the start of the particle lifetime and `1` is the end of the particle lifetime\.  |
 | Multiplier |  Specify a value from `-100` through `100` to multiply against the value that this timeline controls\.  For example, if the speed value is `50.0` and the speed multiplier for a specific keyframe is `2.0`, the value of speed at the specified keyframe is `100`\.  |
-| In tangent |  Controls the in tangent for the current keyframe\. Select one of the following:  [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
-| Out tangent |  Controls the out tangent for the current keyframe\. Select one of the following:  [\[See the AWS documentation website for more details\]](/docs/userguide/ui/editor/components-visual-particle-emitter)  |
+| In tangent |  Controls the in tangent for the current keyframe\. Select one of the following:    |
+| Out tangent |  Controls the out tangent for the current keyframe\. Select one of the following:    |
 | Ease In |  Specifies a gradual approach of a curve to a flat tangent\.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 \(x\-cubed\) curve at its origin\.  |
 | Ease Out |  Specifies a gradual retreat of a curve from a flat tangent\.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 \(x\-cubed\) curve at its origin\.  |
 | Linear | Specifies that the curve moves linearly from the keyframe towards the next or previous keyframe\. |
