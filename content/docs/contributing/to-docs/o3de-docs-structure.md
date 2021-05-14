@@ -2,8 +2,7 @@
 linkTitle: O3DE Docs Structure
 title: The Open 3D Engine (O3DE) Docs Structure 
 description: A guide to the Open 3D Engine (O3DE) documentation repository structure.
-
-weight: 600
+weight: 400
 ---
 
 {{< preview-new >}}

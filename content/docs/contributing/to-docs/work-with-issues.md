@@ -1,7 +1,6 @@
 ---
-linkTitle: Working with issues
-title: Working with O3DE documentation issues
-
+linkTitle: Work with Issues
+title: Work with O3DE Documentation Issues
 description: Guide to create and work with issues in the Open 3D Engine (O3DE) documentation project.  
 toc: true
 weight: 250
