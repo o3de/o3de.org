@@ -35,6 +35,7 @@ To create new projects or use advanced development features in O3DE, you need a 
 + [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.3.x** through version **16.9.x**
 + [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
 + [CMake {{< versions/cmake >}} or later](https://cmake.org/download/)
++ (Optional) Wwise version 2019.2.8.7432 audio SDK. Use the [Wwise Launcher](https://www.audiokinetic.com/download/) to install.
 
 {{< note >}}
 Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.

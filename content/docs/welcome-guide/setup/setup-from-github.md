@@ -28,7 +28,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
 **To configure for Git LFS**
 
-1. Verify that **Git LFS** is available on your computer.
+1. Verify that **Git LFS** is installed.
 
     ```cmd
     git lfs install
@@ -90,13 +90,11 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
         ![Credential manager asking for LFS credentials](/images/welcome-guide/setup-credential-manager-lfs.png)
 
-    1. Update and verify LFS.
+    1. Verify you have the LFS files.
 
-        When the clone operation completes, update LFS and verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
+        When the clone operation completes, verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
 
         ```cmd
-        cd o3de
-        git lfs install
         git lfs pull
         ```
 
@@ -133,33 +131,15 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
 At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
-* Set the package server URL environment variable.
-* Download third-party packages.
-* Install additional SDKs.
+* Set the Wwise audio environment variable.
 * Get the Python runtime.
 * Register the engine.
 
 ### Set environment variables
 
-1. Set an environment variable for the package server.
+1. If your project requires the **Wwise** audio Gem, set a user or system environment variable named `LY_WWISE_INSTALL_PATH` to the path where you installed the Wwise SDK.
 
-    ```cmd
-    LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
-    ```
-
-### Download third-party packages
-
-1. Download the third-party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.
-
-1. Unzip this file into a writable folder. The path, up to and including the 3rdParty folder that was unzipped from this file, will be referred to as the `<3rdParty Path>` in the remainder of this section.
-
-    By default, this location will also act as a cache location for the third-party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
-
-### Install Additional SDKs
-
-1. Install the FBX SDK as instructed in `<3rdParty Path>/FbxSdk/2016.1.2-az.1/README.md`.
-
-1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. When the deployment platform is installed, copy the `SDK` directory from the install location into the `<3rdParty Path>/Wwise/2019.2.8.7432` directory that you will create.
+    ![Set new user variable](/images/welcome-guide/setup-wwise-environment-variable.png)
 
 ### Get the Python runtime
 
