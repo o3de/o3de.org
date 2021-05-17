@@ -18,7 +18,7 @@ The [O3DE SIG Docs Mailing List](https://lists.o3de.org/g/sig-docs) is the discu
 
 ### Style Guides and Templates
 
-Before submitting a pull request to create new content, please review the [O3DE style guide](https://o3deorg.netlify.app/docs/contributing/to-docs/style-guide/).
+Before submitting a pull request to create new content, please review the [O3DE style guide](https://docs.o3de.org/docs/contributing/to-docs/style-guide/).
 
 ## Contributing to Documentation
 
@@ -33,6 +33,6 @@ Note that code issues should be filed against the main O3DE repository, while do
 
 ### Submitting Documentation Pull Requests
 
-If you're fixing an issue in the existing documentation, you should submit a PR against the master branch. Follow [these instructions to create a documentation pull request against the o3de.org repository](https://o3deorg.netlify.app/docs/contributing/to-docs/submit-a-pr/).
+If you're fixing an issue in the existing documentation, you should submit a PR against the master branch. Follow [these instructions to create a documentation pull request against the o3de.org repository](https://docs.o3de.org/docs/contributing/to-docs/submit-a-pr/).
 
-For more information, see [contributing to O3DE documentation](https://o3deorg.netlify.app/docs/contributing/to-docs/).
+For more information, see [contributing to O3DE documentation](https://docs.o3de.org/docs/contributing/to-docs/).
