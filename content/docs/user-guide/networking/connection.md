@@ -6,6 +6,4 @@ description: Learn how to listen for, connect to, and manage data transmission o
 toc: true
 ---
 
-{{< preview-new >}}
-
 Managing connections in O3DE requires using the `Az::Networking::IConnectionListener` interface for listening for connections, and the `Az::Networking::IConnection` interface for establishing connections.
