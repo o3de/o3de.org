@@ -60,13 +60,19 @@ AZ_FORCE_INLINE void </td><td class="memItemRight" valign="bottom"><b>soft_lock
 <tr class="memitem:a89b8388b2dd597e22270d42bfbabbfff"><td align="right" class="memItemLeft" valign="top"><a id="a89b8388b2dd597e22270d42bfbabbfff"></a>
 AZ_FORCE_INLINE void </td><td class="memItemRight" valign="bottom"><b>soft_unlock</b> ()</td></tr>
 <tr class="separator:a89b8388b2dd597e22270d42bfbabbfff"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a130f6695fba52be05e0096f22e5dccb8"><td align="right" class="memItemLeft" valign="top"><a id="a130f6695fba52be05e0096f22e5dccb8"></a>
+AZ_FORCE_INLINE void </td><td class="memItemRight" valign="bottom"><b>soft_lock_shared</b> ()</td></tr>
+<tr class="separator:a130f6695fba52be05e0096f22e5dccb8"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aec6699d8dadc133a63be1736daa5fc08"><td align="right" class="memItemLeft" valign="top"><a id="aec6699d8dadc133a63be1736daa5fc08"></a>
+AZ_FORCE_INLINE void </td><td class="memItemRight" valign="bottom"><b>soft_unlock_shared</b> ()</td></tr>
+<tr class="separator:aec6699d8dadc133a63be1736daa5fc08"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Simple class for verifying that no concurrent access is occuring. This is <em>not</em> a synchronization primitive, and is intended simply for checking that no concurrency issues exist. It will be compiled out in release builds. Use <a class="el" href="class_a_z_std_1_1concurrency__checker.html">concurrency_checker</a> like a mutex (i.e. call soft_lock() and soft_unlock() around all instances of your data access). It will assert if there are multiple threads accessing the locked code/data at the same time. Expected use case is for defensive programming: when you do not expect any concurrent access within a system, but want to verify that it stays that way in the future, without incurring the overhead of a mutex. </p>
+<div class="textblock"><p>Simple class for verifying that no concurrent access is occurring. This is <em>not</em> a synchronization primitive, and is intended simply for checking that no concurrency issues exist. It will be compiled out in release builds. Use <a class="el" href="class_a_z_std_1_1concurrency__checker.html">concurrency_checker</a> like a mutex (i.e. call soft_lock() and soft_unlock() around all instances of your data access). Use soft_lock_shared and soft_unlock_shared around places where multiple threads are allowed to have read access at the same time as long as nothing else already has a soft lock It will assert if there are multiple threads accessing the locked code/data at the same time. Expected use case is for defensive programming: when you do not expect any concurrent access within a system, but want to verify that it stays that way in the future, without incurring the overhead of a mutex. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:15:42 for AtomCore API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:49:44 for AtomCore API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

@@ -57,9 +57,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a9c6b4ef277e1e10f2db7f00119f10838"><td align="right" class="memItemLeft" valign="top"><a id="a9c6b4ef277e1e10f2db7f00119f10838"></a>
-using </td><td class="memItemRight" valign="bottom"><b>DrawItemVisitor</b> = AZStd::function&lt; void(<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a>, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html">DrawItemProperties</a>)&gt;</td></tr>
-<tr class="separator:a9c6b4ef277e1e10f2db7f00119f10838"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:aaa7ae564d12977600a82e564cea6082d"><td align="right" class="memItemLeft" valign="top"><a id="aaa7ae564d12977600a82e564cea6082d"></a>
+using </td><td class="memItemRight" valign="bottom"><b>DrawItemVisitor</b> = AZStd::function&lt; void(<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a>, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_key_pair.html">DrawItemKeyPair</a>)&gt;</td></tr>
+<tr class="separator:aaa7ae564d12977600a82e564cea6082d"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -75,18 +75,14 @@ DrawListMask </td><td class="memItemRight" valign="bottom"><a class="el" href="
 size_t </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a7d58e88bddaca8b405dbbc60fe6ccdd1">GetDrawItemCount</a> () const</td></tr>
 <tr class="memdesc:a7d58e88bddaca8b405dbbc60fe6ccdd1"><td class="mdescLeft"> </td><td class="mdescRight">Returns the number of draw items stored in the packet. <br/></td></tr>
 <tr class="separator:a7d58e88bddaca8b405dbbc60fe6ccdd1"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a3cd947ce25d3210497993e48ab10a844"><td align="right" class="memItemLeft" valign="top"><a id="a3cd947ce25d3210497993e48ab10a844"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html">DrawItemProperties</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a3cd947ce25d3210497993e48ab10a844">GetDrawItem</a> (size_t index) const</td></tr>
-<tr class="memdesc:a3cd947ce25d3210497993e48ab10a844"><td class="mdescLeft"> </td><td class="mdescRight">Returns the draw item and its properties associated with the provided index. <br/></td></tr>
-<tr class="separator:a3cd947ce25d3210497993e48ab10a844"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a891ba0223183fea7514e165b6f0e20d1"><td align="right" class="memItemLeft" valign="top"><a id="a891ba0223183fea7514e165b6f0e20d1"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_key_pair.html">DrawItemKeyPair</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a891ba0223183fea7514e165b6f0e20d1">GetDrawItem</a> (size_t index) const</td></tr>
+<tr class="memdesc:a891ba0223183fea7514e165b6f0e20d1"><td class="mdescLeft"> </td><td class="mdescRight">Returns the draw item / sort key associated with the provided index. <br/></td></tr>
+<tr class="separator:a891ba0223183fea7514e165b6f0e20d1"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a91c7cb6f667d0a88a7cc8a007071f8b5"><td align="right" class="memItemLeft" valign="top"><a id="a91c7cb6f667d0a88a7cc8a007071f8b5"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DrawListTag</a> </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a91c7cb6f667d0a88a7cc8a007071f8b5">GetDrawListTag</a> (size_t index) const</td></tr>
 <tr class="memdesc:a91c7cb6f667d0a88a7cc8a007071f8b5"><td class="mdescLeft"> </td><td class="mdescRight">Returns the draw list tag associated with the provided index. <br/></td></tr>
 <tr class="separator:a91c7cb6f667d0a88a7cc8a007071f8b5"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:ac7b7ea78528d3cdbf089ec33d9c1a759"><td align="right" class="memItemLeft" valign="top"><a id="ac7b7ea78528d3cdbf089ec33d9c1a759"></a>
-DrawFilterMask </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#ac7b7ea78528d3cdbf089ec33d9c1a759">GetDrawFilterMask</a> () const</td></tr>
-<tr class="memdesc:ac7b7ea78528d3cdbf089ec33d9c1a759"><td class="mdescLeft"> </td><td class="mdescRight">Returns the draw filter mask which applied to all the draw items. <br/></td></tr>
-<tr class="separator:ac7b7ea78528d3cdbf089ec33d9c1a759"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a9fc1f19717769ad16299cbdc973e4321"><td align="right" class="memItemLeft" valign="top"><a id="a9fc1f19717769ad16299cbdc973e4321"></a>
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a9fc1f19717769ad16299cbdc973e4321">operator delete</a> (void *p, size_t size)</td></tr>
 <tr class="memdesc:a9fc1f19717769ad16299cbdc973e4321"><td class="mdescLeft"> </td><td class="mdescRight">Overloaded operator delete for freeing a draw packet. <br/></td></tr>
@@ -99,7 +95,7 @@ class </td><td class="memItemRight" valign="bottom"><b>DrawPacketBuilder</b></t
 <tr class="separator:a9cf263519c3cc706d7863c522501e95d"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">DrawPacket</a> is a packed data structure (one contiguous allocation) containing a collection of DrawItems and their associated array data. Each draw item in the packet is associated with a DrawListTag. All draw items in the packet share the same set of shader resource groups, index buffer, one DrawFilterMask, and draw arguments.</p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">DrawPacket</a> is a packed data structure (one contiguous allocation) containing a collection of DrawItems and their associated array data. Each draw item in the packet is associated with a DrawListTag. All draw items in the packet share the same set of shader resource groups, index buffer, and draw arguments.</p>
 <p>Some notes about design and usage:</p><ul>
 <li>Draw packets should be used to 'broadcast' variations of the same 'object' to multiple passes. For example: 'Shadow', 'Depth', 'Forward'.</li>
 <li>Draw packets can be re-used between different views, scenes, or passes. The embedded shader resource groups should represent only the local data necessary to describe the 'object', not the full context including scene / view / pass specific state. They serve as a 'template'.</li>
@@ -108,7 +104,7 @@ class </td><td class="memItemRight" valign="bottom"><b>DrawPacketBuilder</b></t
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:53 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:54 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>
