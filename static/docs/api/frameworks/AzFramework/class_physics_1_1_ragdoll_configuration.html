@@ -75,9 +75,9 @@ AZ::Outcome&lt; size_t &gt; </td><td class="memItemRight" valign="bottom"><b>Fi
 void </td><td class="memItemRight" valign="bottom"><b>RemoveNodeConfigByName</b> (const AZStd::string &amp;nodeName)</td></tr>
 <tr class="separator:a2d3266bde78e38cafa33475821865fd5"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="inherit_header pub_methods_struct_az_physics_1_1_simulated_body_configuration"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_az_physics_1_1_simulated_body_configuration')"><img alt="-" src="/images/api-ref/closed.png"/> Public Member Functions inherited from <a class="el" href="struct_az_physics_1_1_simulated_body_configuration.html">AzPhysics::SimulatedBodyConfiguration</a></td></tr>
-<tr class="memitem:a8181ed9a5e7f171ed7cbdfe33c8bd8e9 inherit pub_methods_struct_az_physics_1_1_simulated_body_configuration"><td align="right" class="memItemLeft" valign="top"><a id="a8181ed9a5e7f171ed7cbdfe33c8bd8e9"></a>
- </td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_az_physics_1_1_simulated_body_configuration.html">AzPhysics::SimulatedBodyConfiguration</a>, "{52844E3D-79C8-4F34-AF63-5C45ADE77F85}")</td></tr>
-<tr class="separator:a8181ed9a5e7f171ed7cbdfe33c8bd8e9 inherit pub_methods_struct_az_physics_1_1_simulated_body_configuration"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0f0121fb6f8ceb484dfe557f92a576ad inherit pub_methods_struct_az_physics_1_1_simulated_body_configuration"><td align="right" class="memItemLeft" valign="top"><a id="a0f0121fb6f8ceb484dfe557f92a576ad"></a>
+ </td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_az_physics_1_1_simulated_body_configuration.html">SimulatedBodyConfiguration</a>, "{52844E3D-79C8-4F34-AF63-5C45ADE77F85}")</td></tr>
+<tr class="separator:a0f0121fb6f8ceb484dfe557f92a576ad inherit pub_methods_struct_az_physics_1_1_simulated_body_configuration"><td class="memSeparator" colspan="2"> </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -97,12 +97,6 @@ AZStd::vector&lt; <a class="el" href="class_physics_1_1_ragdoll_node_configurati
 <tr class="memitem:a2a9d18f6090e246f3915d8297dd245a7"><td align="right" class="memItemLeft" valign="top"><a id="a2a9d18f6090e246f3915d8297dd245a7"></a>
 <a class="el" href="class_physics_1_1_character_collider_configuration.html">CharacterColliderConfiguration</a> </td><td class="memItemRight" valign="bottom"><b>m_colliders</b></td></tr>
 <tr class="separator:a2a9d18f6090e246f3915d8297dd245a7"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:abf9336bcc3eb23d42ee5079816fabfa0"><td align="right" class="memItemLeft" valign="top"><a id="abf9336bcc3eb23d42ee5079816fabfa0"></a>
-RagdollState </td><td class="memItemRight" valign="bottom"><b>m_initialState</b></td></tr>
-<tr class="separator:abf9336bcc3eb23d42ee5079816fabfa0"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a7b39d6201b6f6f5554404ab38b6018e0"><td align="right" class="memItemLeft" valign="top"><a id="a7b39d6201b6f6f5554404ab38b6018e0"></a>
-ParentIndices </td><td class="memItemRight" valign="bottom"><b>m_parentIndices</b></td></tr>
-<tr class="separator:a7b39d6201b6f6f5554404ab38b6018e0"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="inherit_header pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_az_physics_1_1_simulated_body_configuration')"><img alt="-" src="/images/api-ref/closed.png"/> Public Attributes inherited from <a class="el" href="struct_az_physics_1_1_simulated_body_configuration.html">AzPhysics::SimulatedBodyConfiguration</a></td></tr>
 <tr class="memitem:ad50f16dad358d8aae99161a6ddde2fbd inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td align="right" class="memItemLeft" valign="top"><a id="ad50f16dad358d8aae99161a6ddde2fbd"></a>
  </td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR_DECL</b></td></tr>
@@ -116,9 +110,6 @@ AZ::Quaternion </td><td class="memItemRight" valign="bottom"><b>m_orientation</
 <tr class="memitem:a6e3e588b592ce705fdefd5fa71130117 inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td align="right" class="memItemLeft" valign="top"><a id="a6e3e588b592ce705fdefd5fa71130117"></a>
 AZ::Vector3 </td><td class="memItemRight" valign="bottom"><b>m_scale</b> = AZ::Vector3::CreateOne()</td></tr>
 <tr class="separator:a6e3e588b592ce705fdefd5fa71130117 inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a300e39ae0bb590826711ce5709a20cfc inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td align="right" class="memItemLeft" valign="top"><a id="a300e39ae0bb590826711ce5709a20cfc"></a>
-bool </td><td class="memItemRight" valign="bottom"><b>m_startSimulationEnabled</b> = true</td></tr>
-<tr class="separator:a300e39ae0bb590826711ce5709a20cfc inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a744f510e540702429f394e2e1fc49d9e inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td align="right" class="memItemLeft" valign="top"><a id="a744f510e540702429f394e2e1fc49d9e"></a>
 AZ::EntityId </td><td class="memItemRight" valign="bottom"><b>m_entityId</b> = AZ::EntityId(AZ::EntityId::InvalidEntityId)</td></tr>
 <tr class="separator:a744f510e540702429f394e2e1fc49d9e inherit pub_attribs_struct_az_physics_1_1_simulated_body_configuration"><td class="memSeparator" colspan="2"> </td></tr>
@@ -132,7 +123,7 @@ AZStd::string </td><td class="memItemRight" valign="bottom"><b>m_debugName</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:26 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:50:32 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

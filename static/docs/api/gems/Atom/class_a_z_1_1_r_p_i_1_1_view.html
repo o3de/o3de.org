@@ -95,10 +95,10 @@ Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_g
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a64634b5655c27259fa86a39c500c825e">AddDrawPacket</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html">RHI::DrawPacket</a> *drawPacket, Vector3 worldPosition)</td></tr>
 <tr class="memdesc:a64634b5655c27259fa86a39c500c825e"><td class="mdescLeft"> </td><td class="mdescRight">Similar to previous <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a029397593d1075af9aa023123a43ba5b">AddDrawPacket()</a> but calculates depth from packet position. <br/></td></tr>
 <tr class="separator:a64634b5655c27259fa86a39c500c825e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a97f567087cfdb57c80e7fa9b099cba6a"><td align="right" class="memItemLeft" valign="top"><a id="a97f567087cfdb57c80e7fa9b099cba6a"></a>
-void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a97f567087cfdb57c80e7fa9b099cba6a">AddDrawItem</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_properties.html">RHI::DrawItemProperties</a> &amp;drawItemProperties)</td></tr>
-<tr class="memdesc:a97f567087cfdb57c80e7fa9b099cba6a"><td class="mdescLeft"> </td><td class="mdescRight">Add a draw item to this view with its associated draw list tag. <br/></td></tr>
-<tr class="separator:a97f567087cfdb57c80e7fa9b099cba6a"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:afba52d4243f98772c39472caf2012430"><td align="right" class="memItemLeft" valign="top"><a id="afba52d4243f98772c39472caf2012430"></a>
+void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#afba52d4243f98772c39472caf2012430">AddDrawItem</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::DrawListTag</a> drawListTag, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_draw_item_key_pair.html">RHI::DrawItemKeyPair</a> &amp;drawItemKeyPair)</td></tr>
+<tr class="memdesc:afba52d4243f98772c39472caf2012430"><td class="mdescLeft"> </td><td class="mdescRight">Add a draw item to this view with its associated draw list tag. <br/></td></tr>
+<tr class="separator:afba52d4243f98772c39472caf2012430"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a338655b78dd94f736caa7bbf5f801f99"><td align="right" class="memItemLeft" valign="top"><a id="a338655b78dd94f736caa7bbf5f801f99"></a>
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a338655b78dd94f736caa7bbf5f801f99">SetWorldToViewMatrix</a> (const AZ::Matrix4x4 &amp;worldToView)</td></tr>
 <tr class="memdesc:a338655b78dd94f736caa7bbf5f801f99"><td class="mdescLeft"> </td><td class="mdescRight">Sets the worldToView matrix and recalculates the other matrices. <br/></td></tr>
@@ -124,6 +124,10 @@ const AZ::Matrix4x4 &amp; </td><td class="memItemRight" valign="bottom"><b>GetV
 <tr class="memitem:a32012a2cd2ef1b774df2fb494a291b83"><td align="right" class="memItemLeft" valign="top"><a id="a32012a2cd2ef1b774df2fb494a291b83"></a>
 const AZ::Matrix4x4 &amp; </td><td class="memItemRight" valign="bottom"><b>GetWorldToClipMatrix</b> () const</td></tr>
 <tr class="separator:a32012a2cd2ef1b774df2fb494a291b83"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ac4e9a129b0818ec4cb62bdfc4a992b63"><td align="right" class="memItemLeft" valign="top"><a id="ac4e9a129b0818ec4cb62bdfc4a992b63"></a>
+AZ::Transform </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#ac4e9a129b0818ec4cb62bdfc4a992b63">GetCameraTransform</a> () const</td></tr>
+<tr class="memdesc:ac4e9a129b0818ec4cb62bdfc4a992b63"><td class="mdescLeft"> </td><td class="mdescRight">Get the camera's world transform, converted from the viewToWorld matrix's native y-up to z-up. <br/></td></tr>
+<tr class="separator:ac4e9a129b0818ec4cb62bdfc4a992b63"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a1e92bb51c1178ac3c5e6639c89074084"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a1e92bb51c1178ac3c5e6639c89074084">FinalizeDrawLists</a> ()</td></tr>
 <tr class="separator:a1e92bb51c1178ac3c5e6639c89074084"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a76f7fd2b36ebb9b3d8a08c6788b3b6be"><td align="right" class="memItemLeft" valign="top"><a id="a76f7fd2b36ebb9b3d8a08c6788b3b6be"></a>
@@ -248,7 +252,7 @@ static ViewPtr </td><td class="memItemRight" valign="bottom"><a class="el" href
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:56 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:58 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>
