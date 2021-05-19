@@ -1,8 +1,7 @@
 ---
 title: "Material File Specification"
 description: "Material files (`*.material`) are written in JSON format and contain the following elements."
-date: 2021-03-04
-toc: false
+toc: true
 ---
 
 {{< preview-new >}}

@@ -13,5 +13,3 @@ This section contains technical details about the material system in the Atom re
 | Contents                        | Details |
 |--------------------------------------|---------|
 | [Material System](materials.md) | An overview of Atom's material system. |
-| [Material File Specification](material-file-spec.md) | JSON reference for material data. |
-| [Material Type File Specification](material-type-file-spec.md) | JSON reference for material type data. |
