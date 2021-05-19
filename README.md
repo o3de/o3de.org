@@ -20,5 +20,5 @@ Clone this repository and run the following two commands in its directory:
 yarn
 
 # Run the server locally
-make serve
+hugo serve
 ```
