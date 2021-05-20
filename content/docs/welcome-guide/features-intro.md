@@ -8,13 +8,13 @@ toc: true
 
 {{< preview-new >}}
 
-Open 3D Engine (O3DE) is an open source, cross-platform, real time 3D engine you can use to create high performance interactive experiences including games and simulations. O3DE has a suite of tools to build and process assets, simulate physics, create animation and cinematics, and a physically based renderer, all wrapped in a modular framework that you can modify and extend with your preferred development tools.  
+Open 3D Engine (O3DE) is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. O3DE has a physically based renderer and a suite of tools to build and process assets, simulate physics, and create animation and cinematics. The renderer and tools are all wrapped in a modular framework that you can modify and extend with your preferred development tools.  
 
 ## Open source
 
 O3DE is open source. You can use the provided binaries and tools to build your own projects, or get the source code and extend it!
 
-Visit [O3DE on GitHub](https://github.com/aws-lumberyard/o3de) to get the source code.
+Visit [O3DE on GitHub]({{< links/o3de-source >}}) to get the source code, then follow the [GitHub setup instructions](/docs/welcome-guide/setup/setup-from-github) to get started.
 
 ## Modular engine and components
 
@@ -26,7 +26,7 @@ For more information, see [the O3DE Gems documentation](/docs/user-guide/gems).
 
 ## Build with familiar tools
 
-O3DE uses [CMake](https://cmake.org/) for creating build files, dependency management, testing, and automated code generation. O3DE's build system has the following advantages:
+O3DE uses [CMake](https://cmake.org/) for creating build files, managing dependencies, testing, and automating code generation. O3DE's build system has the following advantages:
 
 * Your project is created for, and built with, your native IDE and toolchain.
 
@@ -62,7 +62,7 @@ Some of Atom's features include:
 
 * High resolution reflection cubemaps.
 
-* Pipeline interface abstraction allowing for platform-independent creation of forward+, deferred or hybrid
+* Pipeline interface abstraction allowing for platform-independent creation of forward+, deferred, or hybrid
 renderers via a pass system.
 
 * Support for parallax correction, mixed reflections per render pass, and runtime editing and visualization for lighting artists.
@@ -95,11 +95,11 @@ O3DE provides support for a suite of industry standard physics solutions that yo
 
 ## Robust networking
 
-Open 3D Engine comes with a high-performance networking Gem that gives you the features you need for robust communications and servers. Networking features include:
+O3DE comes with a high-performance networking Gem that gives you the features you need for robust communications and servers. Networking features include:
 
 * Highly flexible, TCP/UDP low latency transport layer abstracted behind a simplified API.
 
-* Encryption and compression support with built in simulator for latency, jitter, reorder and loss.
+* Encryption and compression support with a built-in simulator for latency, jitter, reorder, and loss.
 
 * Entity replication using unordered, unreliable data replication for lowest possible latency.
 
