@@ -1,7 +1,6 @@
 ---
 title: "Material Type File Specification"
 description: "Material type files (`*.materialtype`) are in written JSON format."
-date: 2021-03-04
 toc: true
 ---
 
