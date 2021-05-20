@@ -1,6 +1,6 @@
 ---
 linktitle: Get Started
-title: Get started as an O3DE documentation contributor
+title: Get Started as an O3DE Documentation Contributor
 description: What you need to know before contributing to the Open 3D Engine (O3DE) documentation project.  
 toc: true
 weight: 200

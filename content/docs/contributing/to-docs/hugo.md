@@ -1,6 +1,9 @@
 ---
-title: "O3DE Docs Contribution: Hugo"
+linkTitle: Hugo
+title: O3DE Docs Contribution with Hugo
+description: Learn to work with Hugo, the static site generator for O3DE documentation
 toc: true
+weight: 600
 ---
 
 # Hugo 

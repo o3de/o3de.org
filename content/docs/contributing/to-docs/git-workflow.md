@@ -2,7 +2,7 @@
 linkTitle: Git Runbook
 title: "O3DE Docs Contributions: Runbook"
 description: A checklist of actions to take to start working with the Open 3D Engine (O3DE) documentation repository.
-weight: 500
+weight: 350
 toc: true
 ---
 
