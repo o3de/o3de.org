@@ -5,14 +5,15 @@ title: Test Suites
 
 Test Suite | Test Content | Gating | Frequency | Notes
 :--| :--| :--| :--| :--
-Smoke | Build verification, high level smoke | Yes | Every Automated Review | 
+Smoke | Build verification, high level smoke | Yes | Every Automated Review | The minimal set of tests that prove basic functionality
 Main | Critical path functional, unmarked Google tests | Yes | Every Automated Review | The default Suite for all new tests that are not specifically tagged to be in any other suite.
-Periodic | All functional tests, performance, load, stress, benchmark | No | Nightly. The SLA Is that the periodic runs complete overnight. | Other type of non functional tests may be added.
-Sandbox | Flaky tests | No | Every two hours | 
+Periodic | All functional tests, performance, load, stress | No | Nightly | Other type of non functional tests may be added.
+Benchmark | Benchmark | No | Nightly | 
+Sandbox | Flaky tests | No | Nightly | Tests in this suite should be actively worked on, and live here only a short time
 
 ### Smoke Test Suite
 
-Comprises of the bare minimum tests that provides the highest level of confidence that the build is in a usable state for further testing. The Smoke Test Suite aims to quickly run through a set of tests that validates the smallest critical testable units to ensure product stability and can perform the most basic functions (i.e. loading the editor without crashing).
+Comprises of the bare minimum tests that provides the basic level of confidence that the build is in a usable state for further testing. The Smoke Test Suite aims to quickly run through a set of tests that validates the smallest critical testable units to ensure product stability and can perform the most basic functions (i.e. loading the editor without crashing).
 
 In general Smoke Tests will cover all product level tests:
 
@@ -35,7 +36,9 @@ All submissions to mainline will be tested against the Main Tests Suite. Any sub
 
 **Total time to run**: 20 minutes.
 
-The total time to run per feature area is 3 minutes. Current feature areas are:
+First, tests of the test tools are run.
+
+Then, feature area tests are run. The total time to run per feature area is 3 minutes. Current feature areas are:
 
 * PhysX
 * Large Worlds
@@ -46,12 +49,6 @@ The total time to run per feature area is 3 minutes. Current feature areas are:
 * Atom
 
 **Run cadence**: Triggers with every AR Submission Run.
-
-### Sandbox Test Suite
-
-Comprises of automated tests that are buggy, or unstable. The Sandbox Test Suite exist to move flaky tests off from the Smoke and Main Test Suite to remove any disruptions and blockages in the submission AR pipeline. The Sandbox Test Suite does not gate mainline submissions. There will be a separate AR job setup to execute the flaky tests in the Sandbox Suite on a regular cadence and surface the execution metrics to MARS.
-
-**Run cadence**: Every 2 hours (Subject to change)
 
 ### Periodic Test Suite
 
@@ -66,6 +63,12 @@ Current functional tests that are already automated will for now stay in Periodi
 The Periodic Test Suite runs at a separate cadence from Smoke and Main Test Suite.
 
 **Run cadence**: Depends on the type of tests being executed. Soak tests and Stress tests may take from several hours to days to give results. Unless such tests are setup, the cadence cannot be determined. There could be multiple periodic jobs setup with each job testing a different aspect.
+
+### Sandbox Test Suite
+
+Comprises of automated tests that are buggy, or unstable. The Sandbox Test Suite exist to move flaky tests off from the Smoke and Main Test Suite to remove any disruptions and blockages in the submission AR pipeline. The Sandbox Test Suite does not gate mainline submissions. There will be a separate AR job setup to execute the flaky tests in the Sandbox Suite on a regular cadence and surface the execution metrics to MARS.
+
+**Run cadence**: Every 2 hours (Subject to change)
 
 ### User Expectation from Different Suites
 
