@@ -70,18 +70,21 @@ virtual void </td><td class="memItemRight" valign="bottom"><b>SetProbeOuterExte
 <tr class="memitem:a59f62ae53de8e5221132054ae3b6f52f"><td align="right" class="memItemLeft" valign="top"><a id="a59f62ae53de8e5221132054ae3b6f52f"></a>
 virtual void </td><td class="memItemRight" valign="bottom"><b>SetProbeInnerExtents</b> (const ReflectionProbeHandle &amp;handle, const AZ::Vector3 &amp;innerExtents)=0</td></tr>
 <tr class="separator:a59f62ae53de8e5221132054ae3b6f52f"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:afb39c83b5e779a576714082c756cc33b"><td align="right" class="memItemLeft" valign="top"><a id="afb39c83b5e779a576714082c756cc33b"></a>
-virtual void </td><td class="memItemRight" valign="bottom"><b>SetProbeCubeMap</b> (const ReflectionProbeHandle &amp;handle, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">RPI::Image</a> &gt; &amp;cubeMapImage)=0</td></tr>
-<tr class="separator:afb39c83b5e779a576714082c756cc33b"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a6fe8e48d505135b56fb164d61b4e610e"><td align="right" class="memItemLeft" valign="top"><a id="a6fe8e48d505135b56fb164d61b4e610e"></a>
+virtual void </td><td class="memItemRight" valign="bottom"><b>SetProbeCubeMap</b> (const ReflectionProbeHandle &amp;handle, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_image.html">RPI::Image</a> &gt; &amp;cubeMapImage, const AZStd::string &amp;relativePath)=0</td></tr>
+<tr class="separator:a6fe8e48d505135b56fb164d61b4e610e"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a159605fbae2f89e3f93ff48e69807b8e"><td align="right" class="memItemLeft" valign="top"><a id="a159605fbae2f89e3f93ff48e69807b8e"></a>
 virtual void </td><td class="memItemRight" valign="bottom"><b>SetProbeTransform</b> (const ReflectionProbeHandle &amp;handle, const AZ::Transform &amp;transform)=0</td></tr>
 <tr class="separator:a159605fbae2f89e3f93ff48e69807b8e"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:aaf1a0064e5fffc385b3fe513d64e5bcc"><td align="right" class="memItemLeft" valign="top"><a id="aaf1a0064e5fffc385b3fe513d64e5bcc"></a>
-virtual void </td><td class="memItemRight" valign="bottom"><b>BakeProbe</b> (const ReflectionProbeHandle &amp;handle, BuildCubeMapCallback callback)=0</td></tr>
-<tr class="separator:aaf1a0064e5fffc385b3fe513d64e5bcc"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a283c83dbb7b64cc072b3417e33454a37"><td align="right" class="memItemLeft" valign="top"><a id="a283c83dbb7b64cc072b3417e33454a37"></a>
-virtual void </td><td class="memItemRight" valign="bottom"><b>NotifyCubeMapAssetReady</b> (const AZStd::string relativePath, NotifyCubeMapAssetReadyCallback callback)=0</td></tr>
-<tr class="separator:a283c83dbb7b64cc072b3417e33454a37"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a497d06c467ad5e94d1a739e59cd30bcc"><td align="right" class="memItemLeft" valign="top"><a id="a497d06c467ad5e94d1a739e59cd30bcc"></a>
+virtual void </td><td class="memItemRight" valign="bottom"><b>BakeProbe</b> (const ReflectionProbeHandle &amp;handle, BuildCubeMapCallback callback, const AZStd::string &amp;relativePath)=0</td></tr>
+<tr class="separator:a497d06c467ad5e94d1a739e59cd30bcc"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a3399caf50a871092ffe286a34c145e91"><td align="right" class="memItemLeft" valign="top"><a id="a3399caf50a871092ffe286a34c145e91"></a>
+virtual bool </td><td class="memItemRight" valign="bottom"><b>CheckCubeMapAssetNotification</b> (const AZStd::string &amp;relativePath, Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset.html">RPI::StreamingImageAsset</a> &gt; &amp;outCubeMapAsset, CubeMapAssetNotificationType &amp;outNotificationType)=0</td></tr>
+<tr class="separator:a3399caf50a871092ffe286a34c145e91"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a886974b987d052bfc1703af97e2beb9e"><td align="right" class="memItemLeft" valign="top"><a id="a886974b987d052bfc1703af97e2beb9e"></a>
+virtual bool </td><td class="memItemRight" valign="bottom"><b>IsCubeMapReferenced</b> (const AZStd::string &amp;relativePath)=0</td></tr>
+<tr class="separator:a886974b987d052bfc1703af97e2beb9e"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ae3eac0517e898e39f4990843c1727736"><td align="right" class="memItemLeft" valign="top"><a id="ae3eac0517e898e39f4990843c1727736"></a>
 virtual bool </td><td class="memItemRight" valign="bottom"><b>IsValidProbeHandle</b> (const ReflectionProbeHandle &amp;probe) const =0</td></tr>
 <tr class="separator:ae3eac0517e898e39f4990843c1727736"><td class="memSeparator" colspan="2"> </td></tr>
@@ -128,7 +131,7 @@ void </td><td class="memItemRight" valign="bottom"><b>DisableSceneNotification<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:52 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:53 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

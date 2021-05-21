@@ -3,7 +3,7 @@ linkTitle: Terminology
 title: O3DE Documentation Terminology and Usage
 description: Rules for using Open 3D Engine (O3DE) specific technical terminology.
 toc: true
-weight: 600
+weight: 550
 ---
 
 {{< preview-new >}}

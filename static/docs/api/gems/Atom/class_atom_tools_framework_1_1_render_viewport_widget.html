@@ -86,8 +86,8 @@ AZ::RPI::ViewportContextPtr </td><td class="memItemRight" valign="bottom"><a cl
 <tr class="memitem:ac04f6dd705e173e6698963f04ebe244f"><td align="right" class="memItemLeft" valign="top"><a id="ac04f6dd705e173e6698963f04ebe244f"></a>
 AZ::RPI::ConstViewportContextPtr </td><td class="memItemRight" valign="bottom"><b>GetViewportContext</b> () const</td></tr>
 <tr class="separator:ac04f6dd705e173e6698963f04ebe244f"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a9b0c50b664de5280700cf845b21d25ad"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a9b0c50b664de5280700cf845b21d25ad">SetScene</a> (const AZStd::shared_ptr&lt; AzFramework::Scene &gt; &amp;scene, bool useDefaultRenderPipeline=true)</td></tr>
-<tr class="separator:a9b0c50b664de5280700cf845b21d25ad"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a76cb797c127e25248ea3ac51c7313211"><td align="right" class="memItemLeft" valign="top">void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a76cb797c127e25248ea3ac51c7313211">SetScene</a> (AzFramework::Scene *scene, bool useDefaultRenderPipeline=true)</td></tr>
+<tr class="separator:a76cb797c127e25248ea3ac51c7313211"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a10a00efc48d9c7e01d4c21a43bcb1b4a"><td align="right" class="memItemLeft" valign="top"><a id="a10a00efc48d9c7e01d4c21a43bcb1b4a"></a>
 AZ::RPI::ViewPtr </td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a10a00efc48d9c7e01d4c21a43bcb1b4a">GetDefaultCamera</a> ()</td></tr>
 <tr class="memdesc:a10a00efc48d9c7e01d4c21a43bcb1b4a"><td class="mdescLeft"> </td><td class="mdescRight">Gets the default camera that's been automatically registered to our ViewportContext. <br/></td></tr>
@@ -346,15 +346,15 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 <p>Sets the name associated with this viewport's ViewportContext. The viewport may inherit a new Camera from the new context name. </p>
 </div>
 </div>
-<a id="a9b0c50b664de5280700cf845b21d25ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b0c50b664de5280700cf845b21d25ad">◆ </a></span>SetScene()</h2>
+<a id="a76cb797c127e25248ea3ac51c7313211"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76cb797c127e25248ea3ac51c7313211">◆ </a></span>SetScene()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="memname">
 <tr>
 <td class="memname">void AtomToolsFramework::RenderViewportWidget::SetScene </td>
 <td>(</td>
-<td class="paramtype">const AZStd::shared_ptr&lt; AzFramework::Scene &gt; &amp; </td>
+<td class="paramtype">AzFramework::Scene * </td>
 <td class="paramname"><em>scene</em>, </td>
 </tr>
 <tr>
@@ -376,7 +376,7 @@ void </td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMous
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:51 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:53 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

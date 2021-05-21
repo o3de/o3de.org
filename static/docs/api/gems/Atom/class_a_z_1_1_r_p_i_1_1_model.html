@@ -84,8 +84,8 @@ const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.ht
 <tr class="separator:ab9815c33a8774b0e8284bdb94db226e1"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a98ce643f8a226eba430000fec79c13a1"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html#a98ce643f8a226eba430000fec79c13a1">LocalRayIntersection</a> (const AZ::Vector3 &amp;rayStart, const AZ::Vector3 &amp;dir, float &amp;distanceFactor, AZ::Vector3 &amp;normal) const</td></tr>
 <tr class="separator:a98ce643f8a226eba430000fec79c13a1"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:aa28069aad5f7cd95d2664504529e0355"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html#aa28069aad5f7cd95d2664504529e0355">RayIntersection</a> (const AZ::Transform &amp;modelTransform, const AZ::Vector3 &amp;nonUniformScale, const AZ::Vector3 &amp;rayStart, const AZ::Vector3 &amp;dir, float &amp;distanceFactor, AZ::Vector3 &amp;normal) const</td></tr>
-<tr class="separator:aa28069aad5f7cd95d2664504529e0355"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a18ffb84a1c0f47ccc40f75035ccfcb31"><td align="right" class="memItemLeft" valign="top">bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html#a18ffb84a1c0f47ccc40f75035ccfcb31">RayIntersection</a> (const AZ::Transform &amp;modelTransform, const AZ::Vector3 &amp;rayStart, const AZ::Vector3 &amp;dir, float &amp;distanceFactor, AZ::Vector3 &amp;normal) const</td></tr>
+<tr class="separator:a18ffb84a1c0f47ccc40f75035ccfcb31"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a5af85f6a2a739fe5726681a381a2d621"><td align="right" class="memItemLeft" valign="top"><a id="a5af85f6a2a739fe5726681a381a2d621"></a>
 const AZStd::unordered_set&lt; AZ::Name &gt; &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html#a5af85f6a2a739fe5726681a381a2d621">GetUvNames</a> () const</td></tr>
 <tr class="memdesc:a5af85f6a2a739fe5726681a381a2d621"><td class="mdescLeft"> </td><td class="mdescRight">Get available UV names from the model and its lods. <br/></td></tr>
@@ -153,8 +153,8 @@ class </td><td class="memItemRight" valign="bottom"><b>ModelSystem</b></td></tr
 <dl class="section return"><dt>Returns</dt><dd>true if the ray intersects the mesh </dd></dl>
 </div>
 </div>
-<a id="aa28069aad5f7cd95d2664504529e0355"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa28069aad5f7cd95d2664504529e0355">◆ </a></span>RayIntersection()</h2>
+<a id="a18ffb84a1c0f47ccc40f75035ccfcb31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ffb84a1c0f47ccc40f75035ccfcb31">◆ </a></span>RayIntersection()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="memname">
@@ -163,12 +163,6 @@ class </td><td class="memItemRight" valign="bottom"><b>ModelSystem</b></td></tr
 <td>(</td>
 <td class="paramtype">const AZ::Transform &amp; </td>
 <td class="paramname"><em>modelTransform</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype">const AZ::Vector3 &amp; </td>
-<td class="paramname"><em>nonUniformScale</em>, </td>
 </tr>
 <tr>
 <td class="paramkey"></td>
@@ -205,7 +199,6 @@ class </td><td class="memItemRight" valign="bottom"><b>ModelSystem</b></td></tr
 <dl class="params"><dt>Parameters</dt><dd>
 <table class="params">
 <tr><td class="paramname">modelTransform</td><td>a transform that puts the model into the ray's coordinate space </td></tr>
-<tr><td class="paramname">nonUniformScale</td><td>Non-uniform scale applied in the model's local frame. </td></tr>
 <tr><td class="paramname">rayStart</td><td>position where the ray starts </td></tr>
 <tr><td class="paramname">dir</td><td>direction where the ray ends (does not have to be unit length) </td></tr>
 <tr><td class="paramname">distanceFactor</td><td>if an intersection is detected, this will be set such that distanceFactor * dir.length == distance to intersection </td></tr>
@@ -235,7 +228,7 @@ class </td><td class="memItemRight" valign="bottom"><b>ModelSystem</b></td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:55 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:57 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

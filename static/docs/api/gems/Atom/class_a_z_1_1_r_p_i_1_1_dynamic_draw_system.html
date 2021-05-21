@@ -68,8 +68,10 @@ void </td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
 <tr class="separator:a37a8a695c09f706f84273505d661b7c2"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a13a2a0a53df76cf9ee00f0d201108ae1"><td align="right" class="memItemLeft" valign="top">RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_system.html#a13a2a0a53df76cf9ee00f0d201108ae1">CreateDynamicDrawContext</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene) override</td></tr>
 <tr class="separator:a13a2a0a53df76cf9ee00f0d201108ae1"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a69d1da2a966a79c59470247fa5d3642c"><td align="right" class="memItemLeft" valign="top">RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_system.html#a69d1da2a966a79c59470247fa5d3642c">CreateDynamicDrawContext</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline) override</td></tr>
-<tr class="separator:a69d1da2a966a79c59470247fa5d3642c"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:a0a80e8a75afeca9cbb659ff2ffe0bc19"><td align="right" class="memItemLeft" valign="top"><a id="a0a80e8a75afeca9cbb659ff2ffe0bc19"></a>
+RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_system.html#a0a80e8a75afeca9cbb659ff2ffe0bc19">CreateDynamicDrawContext</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> *pass) override</td></tr>
+<tr class="memdesc:a0a80e8a75afeca9cbb659ff2ffe0bc19"><td class="mdescLeft"> </td><td class="mdescRight">Create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> for specified pass. <br/></td></tr>
+<tr class="separator:a0a80e8a75afeca9cbb659ff2ffe0bc19"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a1339731669335eb71a742bc375f86b51"><td align="right" class="memItemLeft" valign="top">RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> &gt; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_system.html#a1339731669335eb71a742bc375f86b51">GetDynamicBuffer</a> (uint32_t size, uint32_t alignment=1) override</td></tr>
 <tr class="separator:a1339731669335eb71a742bc375f86b51"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a592647eb8c20d46d8b80c8148509a783"><td align="right" class="memItemLeft" valign="top"><a id="a592647eb8c20d46d8b80c8148509a783"></a>
@@ -147,34 +149,8 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html">
 <p>Implements <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html#a1e2615f46ae07bc625aa7d6f22371435">AZ::RPI::DynamicDrawInterface</a>.</p>
 </div>
 </div>
-<a id="a69d1da2a966a79c59470247fa5d3642c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69d1da2a966a79c59470247fa5d3642c">◆ </a></span>CreateDynamicDrawContext() <span class="overload">[1/2]</span></h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">RHI::Ptr&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a>&gt; AZ::RPI::DynamicDrawSystem::CreateDynamicDrawContext </td>
-<td>(</td>
-<td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> * </td>
-<td class="paramname"><em>pipeline</em></td><td>)</td>
-<td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Create a <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> for specified render pipeline Draw calls submitted through the context created by this function are only submitted to the supplied render pipeline (viewport) </p>
-<p>Implements <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html#a8322a082325f0955766c3f0ba2e69368">AZ::RPI::DynamicDrawInterface</a>.</p>
-</div>
-</div>
 <a id="a13a2a0a53df76cf9ee00f0d201108ae1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13a2a0a53df76cf9ee00f0d201108ae1">◆ </a></span>CreateDynamicDrawContext() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a2a0a53df76cf9ee00f0d201108ae1">◆ </a></span>CreateDynamicDrawContext()</h2>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -238,7 +214,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:54 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:56 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

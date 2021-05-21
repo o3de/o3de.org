@@ -59,8 +59,12 @@ $(function() {
 <li>SaveCatalog()
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_requests.html#a57de8b1864cbfbc2a110fc44c027b76a">AzFramework::AssetSystem::AssetSystemRequests</a>
 </li>
-<li>SceneStorageType
-: <a class="el" href="class_az_framework_1_1_entity_context.html#a9e9f8cc3218d22840c0dccd2081dd3b5">AzFramework::EntityContext</a>
+<li>SceneAboutToBeRemoved()
+: <a class="el" href="class_az_framework_1_1_scene_notifications.html#a811dc0644a2e12df855e5a681e871a1a">AzFramework::SceneNotifications</a>
+, <a class="el" href="class_az_framework_1_1_scene_system_notifications.html#ae4e1f885264fb5d17952506f1dc8f597">AzFramework::SceneSystemNotifications</a>
+</li>
+<li>SceneCreated()
+: <a class="el" href="class_az_framework_1_1_scene_system_notifications.html#aef516248a9bbb4c0141ac1bc1f943472">AzFramework::SceneSystemNotifications</a>
 </li>
 <li>Select
 : <a class="el" href="struct_az_framework_1_1_input_device_gamepad_1_1_button.html#a96d081dd40fd87a10ce6214625c5f8d9">AzFramework::InputDeviceGamepad::Button</a>
@@ -236,6 +240,9 @@ $(function() {
 <li>SetReplicaPriority()
 : <a class="el" href="class_az_framework_1_1_net_binding_handler_interface.html#a546c68cb0fcc0c6917af12c26538a35c">AzFramework::NetBindingHandlerInterface</a>
 </li>
+<li>SetSceneForEntityContextId()
+: <a class="el" href="class_az_framework_1_1_scene_system_requests.html#afed04c30a5f7ed2816ce83aaff2cf142">AzFramework::SceneSystemRequests</a>
+</li>
 <li>SetSliceInstanceId()
 : <a class="el" href="class_az_framework_1_1_net_binding_handler_interface.html#a0a03c96f3b0af024d104d906d68d4f90">AzFramework::NetBindingHandlerInterface</a>
 </li>
@@ -338,13 +345,13 @@ $(function() {
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#aa64cc15f4883b5b4950624224ac2914b">AzFramework::InputChannel::Snapshot</a>
 </li>
 <li>SourceAssetInfoRequest()
-: <a class="el" href="class_az_framework_1_1_asset_system_1_1_source_asset_info_request.html#a749d54451388bb73fa59bdb6d5482173">AzFramework::AssetSystem::SourceAssetInfoRequest</a>
+: <a class="el" href="class_az_framework_1_1_asset_system_1_1_source_asset_info_request.html#a83684e82284161d12f9508311a06b50b">AzFramework::AssetSystem::SourceAssetInfoRequest</a>
 </li>
 <li>SourceInputChannelIds
 : <a class="el" href="class_az_framework_1_1_input_mapping.html#ab7246917a9d489c93cc3a7f29df81dd6">AzFramework::InputMapping</a>
 </li>
 <li>SpawnableEntitiesContainer()
-: <a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a68c9f62ebec6e5a09da0d557e9b00a79">AzFramework::SpawnableEntitiesContainer</a>
+: <a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#a83b4202fa950513b818616f4c335b7ca">AzFramework::SpawnableEntitiesContainer</a>
 </li>
 <li>SpawnableMonitor()
 : <a class="el" href="class_az_framework_1_1_spawnable_monitor.html#a0585f12a168f358f92e19d06cc9e8913">AzFramework::SpawnableMonitor</a>
@@ -400,7 +407,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:26 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:50:33 for AzFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

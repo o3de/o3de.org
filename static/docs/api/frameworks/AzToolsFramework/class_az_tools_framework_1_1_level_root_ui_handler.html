@@ -64,18 +64,10 @@ Public Member Functions</h2></td></tr>
 QPixmap </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a1243763512d9549b04fca9292766cbe8">GenerateItemIcon</a> (AZ::EntityId entityId) const override</td></tr>
 <tr class="memdesc:a1243763512d9549b04fca9292766cbe8"><td class="mdescLeft"> </td><td class="mdescRight">Returns the item icon pixmap to display in the Outliner. <br/></td></tr>
 <tr class="separator:a1243763512d9549b04fca9292766cbe8"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a05e1b26bf557808c00e2d7a6ee9aacbb"><td align="right" class="memItemLeft" valign="top"><a id="a05e1b26bf557808c00e2d7a6ee9aacbb"></a>
-QString </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a05e1b26bf557808c00e2d7a6ee9aacbb">GenerateItemInfoString</a> (AZ::EntityId entityId) const override</td></tr>
-<tr class="memdesc:a05e1b26bf557808c00e2d7a6ee9aacbb"><td class="mdescLeft"> </td><td class="mdescRight">Returns the item info string that is appended to the item name in the Outliner. <br/></td></tr>
-<tr class="separator:a05e1b26bf557808c00e2d7a6ee9aacbb"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a091a423c91a1650f48a0107089517764"><td align="right" class="memItemLeft" valign="top"><a id="a091a423c91a1650f48a0107089517764"></a>
 bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a091a423c91a1650f48a0107089517764">CanToggleLockVisibility</a> (AZ::EntityId entityId) const override</td></tr>
 <tr class="memdesc:a091a423c91a1650f48a0107089517764"><td class="mdescLeft"> </td><td class="mdescRight">Returns whether the element's lock and visibility state should be accessible in the Outliner. <br/></td></tr>
 <tr class="separator:a091a423c91a1650f48a0107089517764"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a2461cac4489e159c8cd14e834991ca82"><td align="right" class="memItemLeft" valign="top"><a id="a2461cac4489e159c8cd14e834991ca82"></a>
-bool </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a2461cac4489e159c8cd14e834991ca82">CanRename</a> (AZ::EntityId entityId) const override</td></tr>
-<tr class="memdesc:a2461cac4489e159c8cd14e834991ca82"><td class="mdescLeft"> </td><td class="mdescRight">Returns whether the element's name should be editable. <br/></td></tr>
-<tr class="separator:a2461cac4489e159c8cd14e834991ca82"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:ab538061680306d2268797607348fe6e6"><td align="right" class="memItemLeft" valign="top"><a id="ab538061680306d2268797607348fe6e6"></a>
 void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#ab538061680306d2268797607348fe6e6">PaintItemBackground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
 <tr class="memdesc:ab538061680306d2268797607348fe6e6"><td class="mdescLeft"> </td><td class="mdescRight">Paints the background of the item in the Outliner. <br/></td></tr>
@@ -84,6 +76,10 @@ void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az
 <tr class="memitem:aa08fdc40455fd8d2004629fb10eab9f6 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td align="right" class="memItemLeft" valign="top"><a id="aa08fdc40455fd8d2004629fb10eab9f6"></a>
 EditorEntityUiHandlerId </td><td class="memItemRight" valign="bottom"><b>GetHandlerId</b> ()</td></tr>
 <tr class="separator:aa08fdc40455fd8d2004629fb10eab9f6 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2"> </td></tr>
+<tr class="memitem:ae4baa7ba572ae73243d1413cd7fcb800 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td align="right" class="memItemLeft" valign="top"><a id="ae4baa7ba572ae73243d1413cd7fcb800"></a>
+virtual QString </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ae4baa7ba572ae73243d1413cd7fcb800">GenerateItemInfoString</a> (AZ::EntityId entityId) const</td></tr>
+<tr class="memdesc:ae4baa7ba572ae73243d1413cd7fcb800 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft"> </td><td class="mdescRight">Returns the item info string that is appended to the item name in the Outliner. <br/></td></tr>
+<tr class="separator:ae4baa7ba572ae73243d1413cd7fcb800 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a79d84c56d7fc771d73e82857ad60cebe inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td align="right" class="memItemLeft" valign="top"><a id="a79d84c56d7fc771d73e82857ad60cebe"></a>
 virtual QString </td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a79d84c56d7fc771d73e82857ad60cebe">GenerateItemTooltip</a> (AZ::EntityId entityId) const</td></tr>
 <tr class="memdesc:a79d84c56d7fc771d73e82857ad60cebe inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft"> </td><td class="mdescRight">Returns the item tooltip text to display in the Outliner. <br/></td></tr>
@@ -115,7 +111,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:36 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:50:44 for AzToolsFramework API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

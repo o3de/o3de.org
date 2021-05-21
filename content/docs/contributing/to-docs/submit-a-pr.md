@@ -1,9 +1,9 @@
 ---
 linkTitle: Submit a PR
-title: Submit a PR to Open 3D Engine (O3DE) Docs 
+title: Submit a PR to O3DE Docs 
 description: A guide to submitting a PR to the Open 3D Engine (O3DE) documentation repository.
 
-weight: 400
+weight: 450
 toc: true
 ---
 

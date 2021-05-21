@@ -1,3 +1,10 @@
+---
+title: O3DE Gem API reference
+description: Reference index for Gems shipped with Open 3D Engine.
+---
+
+{{< preview-new >}}
+
 * [AWSClientAuth](/docs/api/gems/AWSClientAuth)
 * [AWSCore](/docs/api/gems/AWSCore)
 * [AWSMetrics](/docs/api/gems/AWSMetrics)
@@ -63,7 +70,6 @@
 * [SceneProcessing](/docs/api/gems/SceneProcessing)
 * [ScriptCanvas](/docs/api/gems/ScriptCanvas)
 * [ScriptCanvasDeveloper](/docs/api/gems/ScriptCanvasDeveloper)
-* [ScriptCanvasDiagnosticLibrary](/docs/api/gems/ScriptCanvasDiagnosticLibrary)
 * [ScriptCanvasPhysics](/docs/api/gems/ScriptCanvasPhysics)
 * [ScriptCanvasTesting](/docs/api/gems/ScriptCanvasTesting)
 * [ScriptEvents](/docs/api/gems/ScriptEvents)
@@ -82,4 +88,5 @@
 * [Vegetation_Gem_Assets](/docs/api/gems/Vegetation_Gem_Assets)
 * [VideoPlaybackFramework](/docs/api/gems/VideoPlaybackFramework)
 * [VirtualGamepad](/docs/api/gems/VirtualGamepad)
+* [Visibility](/docs/api/gems/Visibility)
 * [WhiteBox](/docs/api/gems/WhiteBox)

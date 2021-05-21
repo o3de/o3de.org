@@ -2,7 +2,7 @@
 linkTitle: Style Guide
 title: O3DE Documentation Contribution Style Guide
 description: Style guide for contributors to the Open 3D Engine (O3DE) documentation project.
-weight: 700
+weight: 500
 toc: true
 ---
 
@@ -657,7 +657,9 @@ Artful images are used for artistic or marketing purposes, such as images that d
 
 * Use solid color fills, not gradient fills.
 
-* Avoid colors affected by colorblindness. Be selective about tones of red, green, blue, and yellow.
+* Avoid colors affected by colorblindness. We recommend using white text and Rhodamine Red C (RGB: 225,0,152 HEX: E10098) for image annotations. See the following annotated image example:
+
+![Example of an image annotation](/images/welcome-guide/ui-editor-labeled.png)
 
 ### Diagrams
 
