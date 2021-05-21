@@ -52,11 +52,7 @@ Then, feature area tests are run. The total time to run per feature area is 3 mi
 
 ### Periodic Test Suite
 
-Comprises of sets of non-functional tests that do not gate mainline submissions but provide general health checks on the overall product as well as each system. The types of tests are:
-
-* Performance tests
-* Stress tests
-* Load tests
+Comprises of tests that do not gate mainline submissions but provide general health checks on the overall product as well as each system.
 
 Current functional tests that are already automated will for now stay in Periodic Test Suite. This is subject to change as we are actively working to move Functional tests that should really be in Main Suite and gate submissions. The long term goal is to only write gating Functional tests and save on automation cycles.
 
@@ -64,11 +60,21 @@ The Periodic Test Suite runs at a separate cadence from Smoke and Main Test Suit
 
 **Run cadence**: Depends on the type of tests being executed. Soak tests and Stress tests may take from several hours to days to give results. Unless such tests are setup, the cadence cannot be determined. There could be multiple periodic jobs setup with each job testing a different aspect.
 
+### Benchmark Test Suite
+
+The types of tests are:
+
+* Performance tests
+* Stress tests
+* Load tests
+
+**Run cadence**: Nightly
+
 ### Sandbox Test Suite
 
 Comprises of automated tests that are buggy, or unstable. The Sandbox Test Suite exist to move flaky tests off from the Smoke and Main Test Suite to remove any disruptions and blockages in the submission AR pipeline. The Sandbox Test Suite does not gate mainline submissions. There will be a separate AR job setup to execute the flaky tests in the Sandbox Suite on a regular cadence and surface the execution metrics to MARS.
 
-**Run cadence**: Every 2 hours (Subject to change)
+**Run cadence**: Nightly
 
 ### User Expectation from Different Suites
 
