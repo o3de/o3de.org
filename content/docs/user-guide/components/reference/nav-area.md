@@ -11,7 +11,7 @@ The **Navigation Area** component defines the features of a navigable area or vo
 **Note**
 When you add a **Navigation Area** component, you must also add the **Polygon Prism Shape** component\.
 
-For instructions on how to adjust the **Polygon Prism Shape** component, see [Polygon Prism Shape](/docs/user-guide/components/polygon-prism.md)\.
+For instructions on how to adjust the **Polygon Prism Shape** component, see [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)\.
 
 When you create a **Navigation Area**, all areas that are traversable by the specified AI [**Agent Type**](#component-nav-area-properties) show as blue when you [render the navigation mesh](#render-navigation-mesh)\. Any areas that are not traversable render as blank areas, such as deep pits and steep slopes\. Exclusion areas and areas around static objects also render as blank areas\. Even if your navigation area is divided into separate pieces by static objects, terrain features, and exclusion areas, each traversable area renders blue\.
 

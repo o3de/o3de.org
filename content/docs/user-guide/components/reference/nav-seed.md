@@ -18,7 +18,7 @@ For example, [static objects](/docs/user-guide/components/reference/nav-area/#co
 
 1. [Create a navigation area](/docs/user-guide/components/reference/nav-area/)\.
 
-1. Divide the navigation area into multiple chunks using [static objects](/docs/userguide/components/nav-area#component-nav-area-static-entities), [exclusion areas](/docs/userguide/components/nav-area#component-nav-area-exclusion), or terrain\.
+1. Divide the navigation area into multiple chunks using [static objects](/docs/user-guide/components/reference/nav-area/#component-nav-area-static-entities), [exclusion areas](/docs/user-guide/components/reference/nav-area/#component-nav-area-exclusion), or terrain\.
 
 1. [Add](/docs/userguide/components/working-adding.md) the **Navigation Seed** component to the navigation area entity or to a separate entity\.
 
