@@ -116,7 +116,7 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
     git push origin
     ```
 
-1. If you are working in a branch, refer to [Maintian your branch](#maintain-your-branch) for information on syncing your branch.
+1. If you are working in a branch, refer to [Maintain your branch](#maintain-your-branch) for information on syncing your branch.
 
 #### Option 2: Pull to your branch directly from `o3de:main`
 
