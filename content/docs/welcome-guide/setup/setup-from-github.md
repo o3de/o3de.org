@@ -95,6 +95,8 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
         When the clone operation completes, verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
 
         ```cmd
+        // Change to the directory name that was created when you cloned the engine repo. Default is o3de.
+        cd o3de 
         git lfs pull
         ```
 
@@ -114,7 +116,7 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     upstream        {{< links/o3de-source >}}.git (push)
     ```
 
-1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
+1. Any time that you want to sync the latest files from the repo and LFS, you can pull from the branch you are woking with, such as `upstream main`.
 
     ```cmd
     git fetch upstream
@@ -127,11 +129,26 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     git push origin
     ```
 
+1. To switch to a release branch, use the `git checkout` or `git switch` command. For example, to switch to branch **0.5**:
+
+    ```cmd
+    git fetch upstream
+    git checkout --track upstream/0.5
+    ```
+
+    To get updates for a release branch, make sure to fetch and merge from the correct upstream branch.
+
+    ```cmd
+    git fetch upstream
+    git merge upstream/0.5
+    ```
+
 ## Additional setup for O3DE preview
 
 At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
-* Set the Wwise audio environment variable.
+* Set Windows environment variables.
+* Create a third-party folder for downloaded packages.
 * Get the Python runtime.
 * Register the engine.
 
@@ -141,27 +158,34 @@ At this time, O3DE is available for preview. During O3DE preview, there are a fe
 
     ![Set new user variable](/images/welcome-guide/setup-wwise-environment-variable.png)
 
+### Create a third-party folder
+
+1. Create a new folder in a writeable location. This folder will be used by the third-party package downloader to download third-party libraries that are needed when building the engine.
+
+1. Create an empty text file named `3rdParty.txt` in this folder. (Later versions of the engine will not require this file.)
+
 ### Get the Python runtime
 
 The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory.
 
-1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown.
+1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown. Note that in the 0.5 release branch, you need to temporarily set the LY_PACKAGE_SERVER_URLS environment variable, as shown in the following example.
 
     ```cmd
-    python\get_python
+    set LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
+    python\get_python.bat
     ```
 
 ### Register O3DE engine
 
-Each time you setup a new O3DE engine directory, you must register it. This creates (or updates) the O3DE manifest in your user directory on your computer.
+Each time you setup a new O3DE engine directory, you must register it. This creates (or updates) the **O3DE manifest** in your user directory on your computer.
 
 1. Open a command prompt to the directory where you set up O3DE and use the `o3de register` command as shown.
 
     ```cmd
-    scripts\o3de register --this-engine
+    scripts\o3de.bat register --this-engine
     ```
 
-    The manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, gems, and templates are recorded in this file.
+    The O3DE manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, gems, and templates are recorded in this file.
 
 You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
 
