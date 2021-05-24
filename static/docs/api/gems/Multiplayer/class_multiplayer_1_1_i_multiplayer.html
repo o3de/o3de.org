@@ -69,16 +69,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a393df910eade10cf771978203ed3d0e8"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:a58cec4e0bc53a20dacc05df0ebf8fb73"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a58cec4e0bc53a20dacc05df0ebf8fb73">AddSessionShutdownHandler</a> (SessionShutdownEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:a58cec4e0bc53a20dacc05df0ebf8fb73"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a8d143ca3330c235a6c1638fd390844c1"><td align="right" class="memItemLeft" valign="top">virtual void </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a8d143ca3330c235a6c1638fd390844c1">SendReadyForEntityUpdates</a> (bool readyForEntityUpdates)=0</td></tr>
-<tr class="separator:a8d143ca3330c235a6c1638fd390844c1"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a7f2f46de70423c105d38435b536f588b"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a7f2f46de70423c105d38435b536f588b">GetComponentGemName</a> (NetComponentId netComponentId) const =0</td></tr>
-<tr class="separator:a7f2f46de70423c105d38435b536f588b"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a256391be422e2bd349d2debd6acfa4b4"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a256391be422e2bd349d2debd6acfa4b4">GetComponentName</a> (NetComponentId netComponentId) const =0</td></tr>
-<tr class="separator:a256391be422e2bd349d2debd6acfa4b4"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a7205f2c3c7b785e4ca5dbd6cd2c7a453"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a7205f2c3c7b785e4ca5dbd6cd2c7a453">GetComponentPropertyName</a> (NetComponentId netComponentId, PropertyIndex propertyIndex) const =0</td></tr>
-<tr class="separator:a7205f2c3c7b785e4ca5dbd6cd2c7a453"><td class="memSeparator" colspan="2"> </td></tr>
-<tr class="memitem:a47d11f479b213587ba83f502b0deea68"><td align="right" class="memItemLeft" valign="top">virtual const char * </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a47d11f479b213587ba83f502b0deea68">GetComponentRpcName</a> (NetComponentId netComponentId, RpcIndex rpcIndex) const =0</td></tr>
-<tr class="separator:a47d11f479b213587ba83f502b0deea68"><td class="memSeparator" colspan="2"> </td></tr>
 <tr class="memitem:aa29eec22ef97dc4e2fb110802adbeb3a"><td align="right" class="memItemLeft" valign="top"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats.html">MultiplayerStats</a> &amp; </td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aa29eec22ef97dc4e2fb110802adbeb3a">GetStats</a> ()</td></tr>
 <tr class="separator:aa29eec22ef97dc4e2fb110802adbeb3a"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
@@ -199,152 +189,6 @@ Public Member Functions</h2></td></tr>
 <p>Gets the type of Agent this <a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> impl represents </p><dl class="section return"><dt>Returns</dt><dd>The type of agents represented </dd></dl>
 </div>
 </div>
-<a id="a7f2f46de70423c105d38435b536f588b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f2f46de70423c105d38435b536f588b">◆ </a></span>GetComponentGemName()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual const char* Multiplayer::IMultiplayer::GetComponentGemName </td>
-<td>(</td>
-<td class="paramtype">NetComponentId </td>
-<td class="paramname"><em>netComponentId</em></td><td>)</td>
-<td> const</td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the gem name associated with the provided component index. </p><dl class="params"><dt>Parameters</dt><dd>
-<table class="params">
-<tr><td class="paramname">netComponentId</td><td>the componentId to return the gem name of </td></tr>
-</table>
-</dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the name of the gem that contains the requested component </dd></dl>
-</div>
-</div>
-<a id="a256391be422e2bd349d2debd6acfa4b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a256391be422e2bd349d2debd6acfa4b4">◆ </a></span>GetComponentName()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual const char* Multiplayer::IMultiplayer::GetComponentName </td>
-<td>(</td>
-<td class="paramtype">NetComponentId </td>
-<td class="paramname"><em>netComponentId</em></td><td>)</td>
-<td> const</td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the component name associated with the provided component index. </p><dl class="params"><dt>Parameters</dt><dd>
-<table class="params">
-<tr><td class="paramname">netComponentId</td><td>the componentId to return the component name of </td></tr>
-</table>
-</dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the name of the component </dd></dl>
-</div>
-</div>
-<a id="a7205f2c3c7b785e4ca5dbd6cd2c7a453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7205f2c3c7b785e4ca5dbd6cd2c7a453">◆ </a></span>GetComponentPropertyName()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual const char* Multiplayer::IMultiplayer::GetComponentPropertyName </td>
-<td>(</td>
-<td class="paramtype">NetComponentId </td>
-<td class="paramname"><em>netComponentId</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype">PropertyIndex </td>
-<td class="paramname"><em>propertyIndex</em> </td>
-</tr>
-<tr>
-<td></td>
-<td>)</td>
-<td></td><td> const</td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the property name associated with the provided component index and property index. </p><dl class="params"><dt>Parameters</dt><dd>
-<table class="params">
-<tr><td class="paramname">netComponentId</td><td>the component index to return the property name of </td></tr>
-<tr><td class="paramname">propertyIndex</td><td>the index of the network property to return the property name of </td></tr>
-</table>
-</dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the name of the network property </dd></dl>
-</div>
-</div>
-<a id="a47d11f479b213587ba83f502b0deea68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47d11f479b213587ba83f502b0deea68">◆ </a></span>GetComponentRpcName()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual const char* Multiplayer::IMultiplayer::GetComponentRpcName </td>
-<td>(</td>
-<td class="paramtype">NetComponentId </td>
-<td class="paramname"><em>netComponentId</em>, </td>
-</tr>
-<tr>
-<td class="paramkey"></td>
-<td></td>
-<td class="paramtype">RpcIndex </td>
-<td class="paramname"><em>rpcIndex</em> </td>
-</tr>
-<tr>
-<td></td>
-<td>)</td>
-<td></td><td> const</td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the Rpc name associated with the provided component index and rpc index. </p><dl class="params"><dt>Parameters</dt><dd>
-<table class="params">
-<tr><td class="paramname">netComponentId</td><td>the componentId to return the property name of </td></tr>
-<tr><td class="paramname">rpcIndex</td><td>the index of the rpc to return the rpc name of </td></tr>
-</table>
-</dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the name of the requested rpc </dd></dl>
-</div>
-</div>
 <a id="aa29eec22ef97dc4e2fb110802adbeb3a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa29eec22ef97dc4e2fb110802adbeb3a">◆ </a></span>GetStats()</h2>
 <div class="memitem">
@@ -399,40 +243,10 @@ Public Member Functions</h2></td></tr>
 </dl>
 </div>
 </div>
-<a id="a8d143ca3330c235a6c1638fd390844c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d143ca3330c235a6c1638fd390844c1">◆ </a></span>SendReadyForEntityUpdates()</h2>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-<tr>
-<td class="mlabels-left">
-<table class="memname">
-<tr>
-<td class="memname">virtual void Multiplayer::IMultiplayer::SendReadyForEntityUpdates </td>
-<td>(</td>
-<td class="paramtype">bool </td>
-<td class="paramname"><em>readyForEntityUpdates</em></td><td>)</td>
-<td></td>
-</tr>
-</table>
-</td>
-<td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span> </td>
-</tr>
-</table>
-</div><div class="memdoc">
-<p>Sends a packet telling if entity update messages can be sent </p><dl class="params"><dt>Parameters</dt><dd>
-<table class="params">
-<tr><td class="paramname">readyForEntityUpdates</td><td>Ready for entity updates or not </td></tr>
-</table>
-</dd>
-</dl>
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:17:16 for Multiplayer API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:58:19 for Multiplayer API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>

@@ -26,7 +26,7 @@ Wondering where to start? The conveniently titled [get started](./get-started) t
 
 * [Get started](./get-started): A high-level overview of the O3DE docs contribution process.
 
-* [Review PRs](./review-prs): Help ensure new documentation is as great as it can be by reviewing pull requests.
+* [Work with Issues](./work-with-issues): How to create and work with issues in the Open 3D Engine (O3DE) documentation project.
 
 * [Setup a local O3DE docs repo](./o3de-docs-repo-setup): A step-by-step guide to setting up and maintaining your O3DE docs repo.
 
@@ -39,5 +39,7 @@ Wondering where to start? The conveniently titled [get started](./get-started) t
 * [Style Guide](./style-guide): The fine details you need to know to create consistently formatted and styled docs for O3DE.
 
 * [Terminology](./terminology): O3DE has many specialized terms, and a handful of terms you shouldn't use.
+
+* [Work with Hugo](./hugo): Learn to work with Hugo, the static site generator for O3DE documentation.
 
 * [O3DE Documentation and Community SIG](./documentation-and-community-sig): The charter of the O3DE Documentation and Community Special Interest Group (D&C SIG) and information on how you can participate.

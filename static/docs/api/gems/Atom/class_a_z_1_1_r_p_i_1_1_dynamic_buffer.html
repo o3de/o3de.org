@@ -82,7 +82,7 @@ class </td><td class="memItemRight" valign="bottom"><b>DynamicBufferAllocator</
 <tr class="separator:a86f7b472348821bbdfca0f3778d6e391"><td class="memSeparator" colspan="2"> </td></tr>
 </table>
 <a id="details" name="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> represents a transient GPU buffer which only be valid for one frame after it's acquired. The acquired DynamicBuffers become invalid when DynamicDrawInterface::Get()-&gt;FrameEnd() is called. DynamicBuffers are allocated by <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a>. Check the description of <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a> class for detail. The typical usage: // For every frame auto buffer = DynamicDrawInterface::Get()-&gt;GetDynamicBuffer(size); if (buffer) // the buffer could be empty if the allocation failed.e { // write data to the buffer buffer-&gt;Write(data, size); // Use the buffer view for DrawItem or etc. } Note: <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> should only be used for DynamicInputAssembly buffer or Constant buffer (not supported yet). </p>
+<div class="textblock"><p>A <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> represents a transient GPU buffer which only be valid for one frame after it's acquired. The acquired DynamicBuffers become invalid when DynamicDrawInterface::Get()-&gt;FrameEnd() is called. DynamicBuffers are allocated by <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a>. Check the description of <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a> class for detail. The typical usage: // For every frame auto buffer = DynamicDrawInterface::Get()-&gt;GetDynamicBuffer(size); if (buffer) // the buffer could be empty if the allocation failed.e { // write data to the buffer buffer-&gt;Write(data, size); // Use the buffer view for DrawItem or etc. } Note: <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> should only be used for InputAssembly buffer or Constant buffer (not supported yet). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61b5d3709db97dc78414454dd2f7455e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61b5d3709db97dc78414454dd2f7455e">◆ </a></span>GetStreamBufferView()</h2>
@@ -109,7 +109,7 @@ class </td><td class="memItemRight" valign="bottom"><b>DynamicBufferAllocator</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 4 2021 15:16:54 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
+Generated on Wed May 19 2021 13:57:56 for Atom API Reference by  <a href="http://www.doxygen.org/index.html">
 <img alt="doxygen" class="footer" src="/images/api-ref/doxygen.png"/>
 </a> 1.8.17
 </small></address>
