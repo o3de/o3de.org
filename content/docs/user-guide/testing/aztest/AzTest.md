@@ -11,23 +11,15 @@ AzTest is designed to be an abstraction around our underlying test frameworks. B
 
 Google Test and Google Mock are fully accessible through AzTest. Including AzTest/AzTest.h in other modules gives developers access to everything Google Test and Google Mock have.
 
-AzTest.h includes several macros that allow for easy hooking of modules to be included in the AzTestScanner. These hooks should only be implemented once per module.
-
-### Links
-
-1. [GoogleTest Documentation](https://github.com/google/googletest)
-1. [Official CTest Documentation](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
-1. [O3DE Test Onboarding TODO]()
-
 ### CTest
 
-CTest is as a testing tool which is also a part of CMake. Tests are registered and ran with CTest which is utilized in the submission pipeline and can also be ran locally. CTest will run a dll via AzTestRunner in order to perform the tests once they are registered. For more information about using CTest in O3DE, refer to the [O3DE Test Onboarding TODO]() document.
+CTest is as a test executor tool which is also a part of CMake. Tests are registered and initiated by CTest, which then calls AzTestRunner. AzTestRunner helps start a module of GoogleTest tests inside a library or executable. CTest will run a dll via AzTestRunner in order to perform the tests once they are registered. For more information about using CTest in O3DE, refer to the [O3DE Test Onboarding TODO]() document.
 
 ### Features of AzTest
 
-### Test Scanner Hooking
+### Test Hooking
 
-The first feature to be added to AzTest outside of automatic linking of Google Test/Mock was test scanner hooking. AzTest.h provides several macros that can be used for creating a hook that test scanner can use to call tests. These are listed below with examples of use.
+AzTest.h provides several macros that can be used for creating a hook that test scanner can use to call tests. These are listed below with examples of use.
 
 AZ_UNIT_TEST_HOOK(...)
 
@@ -93,3 +85,9 @@ class ModuleSpecificTestEnvironment : public AZ::Test::ITestEnvironment
 // in the list!
 AZ_UNIT_TEST_HOOK(new SharedTestEnvironment, new ModuleSpecificTestEnvironment)
 ```
+
+### Links
+
+1. [GoogleTest Documentation](https://github.com/google/googletest)
+1. [Official CTest Documentation](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
+1. [O3DE Test Onboarding TODO]()
