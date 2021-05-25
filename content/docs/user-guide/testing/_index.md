@@ -16,5 +16,4 @@ Test runners collect tests, execute them and collate their results. We currently
 
 [**Tools Packages**](/docs/user-guide/testing/tools-packages)
 
-Tools packages are collections of useful functions and files to help you write tests quicker, safer, and more consistently. We currently have several tools packages, including: LauncherTestTools, LyTestTools, and RemoteConsole.
-
+Tools packages are collections of useful functions and files to help you write tests quicker, safer, and more consistently. We currently have several tools packages, including: AzTest, EditorPythonTestTools, and LyTestTools.
