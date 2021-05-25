@@ -7,7 +7,7 @@ title: Using AzTest
 
 ### What is AzTest?
 
-AzTest is designed to be an abstraction around our underlying test frameworks. By using an abstraction instead of the framework itself, we are not locked into having to make changes all over the system if we decide to switch frameworks or if the framework itself changes with updates. AzTest will also provide convenience functions and basic implementations that will make writing tests easier for all modules that use it.
+AzTest is designed to be an abstraction around our underlying C++ test frameworks. By using an abstraction instead of the framework itself, we are not locked into having to make changes all over the system if we decide to switch frameworks or if the framework itself changes with updates. AzTest also provides convenience functions and basic implementations that make writing tests easier for all modules that use it.
 
 Google Test and Google Mock are fully accessible through AzTest. Including AzTest/AzTest.h in other modules gives developers access to everything Google Test and Google Mock have.
 
