@@ -109,9 +109,14 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
 
     ```cmd
-    > git remote -v
-    origin  https://github.com/<account>/o3de.git (fetch)
-    origin  https://github.com/<account>/o3de.git (push)
+    git remote -v
+    ```
+
+    Output:
+
+    ```cmd
+    origin  https://github.com/<USERNAME>/o3de.git (fetch)
+    origin  https://github.com/<USERNAME>/o3de.git (push)
     upstream        {{< links/o3de-source >}}.git (fetch)
     upstream        {{< links/o3de-source >}}.git (push)
     ```
@@ -147,16 +152,9 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
 At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
-* Set Windows environment variables.
 * Create a third-party folder for downloaded packages.
 * Get the Python runtime.
 * Register the engine.
-
-### Set environment variables
-
-1. If your project requires the **Wwise** audio Gem, set a user or system environment variable named `LY_WWISE_INSTALL_PATH` to the path where you installed the Wwise SDK.
-
-    ![Set new user variable](/images/welcome-guide/setup-wwise-environment-variable.png)
 
 ### Create a third-party folder
 
@@ -166,7 +164,7 @@ At this time, O3DE is available for preview. During O3DE preview, there are a fe
 
 ### Get the Python runtime
 
-The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory.
+The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory. This script requires CMake to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements.md) page for installation instructions.
 
 1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown. Note that in the 0.5 release branch, you need to temporarily set the LY_PACKAGE_SERVER_URLS environment variable, as shown in the following example.
 

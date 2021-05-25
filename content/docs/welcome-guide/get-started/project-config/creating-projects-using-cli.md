@@ -33,7 +33,7 @@ This tutorial will use the following project name and directories in the example
 
 * O3DE engine directory: `C:\o3de`
 * New project name and location: `C:\o3de\MyProject`
-* Third-party directory (created earlier during setup): `C:\o3de-3rdparty`
+* Third-party directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#create-a-third-party-folder)): `C:\o3de-3rdparty`
 
 {{< caution >}}
 External projects - projects created outside the engine directory - are considered experimental. They might be unstable in some scenarios or versions of the engine.
@@ -65,6 +65,10 @@ External projects - projects created outside the engine directory - are consider
     cmake -B MyProject/build -S MyProject -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-3rdparty -DLY_UNITY_BUILD=ON
     ```
 
+    {{< caution >}}
+Do not use trailing slashes when specifying the path to the third-party package directory.
+    {{< /caution >}}
+
     {{< note >}}
 Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help with debugging the problem.
     {{< /note >}}
@@ -76,7 +80,7 @@ Unity builds are recommended in many cases for improved build performance. If yo
     ```
 
     {{< note >}}
-The `/m` is a recommended build tool optimization, which tells MSVC to use multiple threads during compilation to speed up build times.
+The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
 1. This will take some time to build. When the build completes, the binaries are available in the project build path, under `bin\<build configuration>`. Run the Editor from the command line to verify a successful build, supplying the project directory path to the `--project-path` argument. The path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
@@ -86,7 +90,7 @@ The `/m` is a recommended build tool optimization, which tells MSVC to use multi
     ```
 
     {{< note >}}
-To launch the Editor from Windows File Explorer, or to avoid having to supply the project path, edit the file `bootstrap.cfg`, located in the root of the engine directory, and set `project_path` equal to the project path. For example: `project_path=MyProject`. (This is only applicable to the 0.5 preview branch.)
+In the 0.5 preview branch, to launch the Editor from Windows File Explorer, or to avoid having to supply the project path, edit the file `bootstrap.cfg`, located in the root of the engine directory, and set `project_path` equal to the project path. For example: `project_path=MyProject`.
     {{< /note >}}
 
 For more details about project configuration and building, see the sections on [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) in the User Guide.

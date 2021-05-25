@@ -31,15 +31,44 @@ RAM and free disk space requirements are dependent on the options that you selec
 
 To create new projects or use advanced development features in O3DE, you need a developer environment that includes the following software:
 
-+ Windows 10 version 1809 (10.0.17763) or later
-+ [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.3.x** through version **16.9.x**
-+ [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family)
-+ [CMake {{< versions/cmake >}} or later](https://cmake.org/download/)
++ Windows 10 version 1809 (10.0.17763) or later.
++ [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.3.x** through version **16.9.x**.
++ [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family).
++ [CMake {{< versions/cmake >}} or later](https://cmake.org/download/). Select the install option that adds CMake to the system PATH during installation to save you from having to do this later.
+
+   ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
+
 + (Optional) Wwise version 2019.2.8.7432 audio SDK. Use the [Wwise Launcher](https://www.audiokinetic.com/download/) to install.
+
+See the following sections for additional configuration instructions.
 
 {{< note >}}
 Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
 {{< /note >}}
+
+### CMake configuration
+
+Several O3DE CLI scripts require the `cmake.exe` command line tool to be available from a command line window. You can check to see if this tool is on the system path by opening a command prompt and using the `--version` command.
+
+   ```cmd
+   cmake --version
+   ```
+
+If the current CMake version was not returned because CMake cannot be found, locate the `bin` folder in the CMake installation directory and add the path to that folder to your Windows system `PATH` environment variable.
+
+1. Open the Windows Start menu.
+
+1. Type "env" to search for environment variables. Choose **Edit system environment variables**.
+
+1. Choose the **Environment Variables** button.
+
+1. Select **Path** under **System variables**.
+
+1. Choose the **Edit...** button.
+
+1. Choose **New** to add a new path to the list and type the full path to the CMake `bin` folder.
+
+   ![Manually add CMake to the system PATH](/images/welcome-guide/requirements-cmake-add-to-path-manually.png)
 
 ### Visual Studio configuration
 
@@ -47,7 +76,7 @@ The default Visual Studio installation might not include all of the features tha
 
 1. Launch the **Visual Studio Installer**.
 
-1. Choose **More - Modify** on the version of Visual Studio that you'll use with O3DE.
+1. Choose **Modify** on the version of Visual Studio that you'll use with O3DE.
 
 1. On the **Workloads** tab:
    + Select **Game development with C++**.
@@ -56,3 +85,5 @@ The default Visual Studio installation might not include all of the features tha
 
 1. On the **Individual components** tab, in **Compilers, build tools, and runtime**:
    + Select at least one version of the **MSVC v142 - VS 2019 C++ x64/x86 build tool**.
+
+1. If you've made changes, choose the **Modify** button in the lower right corner of the window when you're ready to install the new options you've selected.
