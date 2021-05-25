@@ -77,16 +77,10 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "Learn"
-url = "#"
-weight = 4
-identifier = "learn"
-
-[[menu.main]]
 name = "Documentation"
 url = "/docs"
-weight = 1 
-parent = "learn"
+weight = 4
+identifier = "docs"
 
 [[menu.main]]
 name = "Contribute"
