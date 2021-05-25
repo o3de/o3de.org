@@ -18,11 +18,13 @@ Comprises of the bare minimum tests that provides the basic level of confidence 
 In general Smoke Tests will cover all product level tests:
 
 1. **Build Verification Tests**: Are basic boot tests.
-2. **Unit Tests**: Automated tests that covers the smallest testable unit of code, i.e. single function calls, API, or product core functionality. 
+2. **Unit Tests**: Are automated tests that covers the smallest testable unit of code, i.e. single function calls, API, or product core functionality. Unit tests of single functions can be in the smoke suite, but only when they are critically important, and that unit tests can live in the main suite.
 
 All submissions to mainline will be tested against the Smoke Tests Suite first before any other test suites. Any submission that fails the Smoke Testing will be rejected.
 
-**Total time to run**: 10 minutes.
+**Maximum total time to run**: 10 minutes.
+
+If this maximum time is exceeded, the suite needs to be brought back under 10 minutes by optimizing tests and/or moving less-critical tests out of Smoke and into Main.
 
 **Run cadence**: Triggers with every AR Submission Run.
 
@@ -34,7 +36,7 @@ All new tests submitted into mainline through Pull Request will be grouped withi
 
 All submissions to mainline will be tested against the Main Tests Suite. Any submission that fails the Main Testing will be rejected.
 
-**Total time to run**: 20 minutes.
+**Maximum total time to run**: 20 minutes.
 
 First, tests of the test tools are run.
 
@@ -47,6 +49,8 @@ Then, feature area tests are run. The total time to run per feature area is 3 mi
 * Editor
 * Script Canvas
 * Atom
+
+If this maximum time is exceeded, the suite needs to be brought back under 20 minutes by optimizing tests and/or moving less-critical tests out of Main and into Periodic.
 
 **Run cadence**: Triggers with every AR Submission Run.
 
@@ -82,4 +86,4 @@ Once the Smoke Test Suite passes, users should have a strong level of confidence
 
 To obtain a build that has all system functionalities tested, users will have to wait until the Main Suite passes.
 
-If a user is looking for more than functional validation, they should pick the last successful build from Periodic Suite.
+If a user is looking for deeper functional validation, they should pick the last successful build from Periodic Suite.
