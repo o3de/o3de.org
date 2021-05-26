@@ -10,7 +10,7 @@ The PhysX Terrain component and associated documentation are legacy features ret
 
 The **PhysX Terrain** component exports and saves the terrain as an asset that loads at runtime\. The **PhysX Terrain** component is required for games in which physics interacts with the terrain\. For example, you can create a terrain collider so that your entities can interact with it, such as a barrel that falls to the ground and then rolls to a stop\.
 
-For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/intro.md)\.
+For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/)\.
 
 
 
@@ -25,10 +25,10 @@ For more information about using PhysX components, see [Simulating physics behav
 
 | Property | Description |
 | --- | --- |
-| Collision Layer |  Specifies on which **Collision Layer** the terrain exists\. You can configure **Collision Layer** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuration.md)\.  |
-| Collision Group |  Specifies the group of layers in which the terrain collides\. You can configure **Collision Group** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuration.md)\.  |
+| Collision Layer |  Specifies on which **Collision Layer** the terrain exists\. You can configure **Collision Layer** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/)\.  |
+| Collision Group |  Specifies the group of layers in which the terrain collides\. You can configure **Collision Group** settings in the **PhysX Configuration** window\.  See [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/)\.  |
 | HeightField Asset |  A read\-only parameter that specifies the height field asset that contains the terrain\. This property can't be changed\.  |
-| Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in O3DE Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.  |
+| Terrain In Editor |  If set, terrain physics exist while editing\. This means raycasts can be performed in O3DE Editor and can be viewed in the PhysX Visual Debugger\. For more information, see [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/)\.  |
 
 ## Creating a PhysX Terrain Collider {#creating-physx-terrain-collider}
 
@@ -51,4 +51,4 @@ The **Transform** component for the entity is ignored and doesn't affect the pos
 1. Press **Esc** to leave gameplay mode\.
 
 **Note**
-In some cases, performance can be impacted when a large body intersects the terrain\. To overcome this issue, you can clear the **Persistent Contact Manifold** option in the [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world)\. If you clear this option, keep the size of the colliders that intersect the terrain small\.
+In some cases, performance can be impacted when a large body intersects the terrain\. To overcome this issue, you can clear the **Persistent Contact Manifold** option in the [World Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#physx-configuration-global-world)\. If you clear this option, keep the size of the colliders that intersect the terrain small\.
