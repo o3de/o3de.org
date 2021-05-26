@@ -10,7 +10,7 @@ weight: 200
 
 This guide provides engine and game programmers with examples and best practices for creating and reflecting custom O3DE components in C\+\+\.
 
-For information on using the component entity system in O3DE Editor, see [Working with component entities](/docs/userguide/components/intro.md)\.
+For information on using the component entity system in O3DE Editor, see [Working with component entities](/docs/user-guide/components/)\.
 
 O3DE uses a lightweight entity/component model called the component entity system for both game objects and systems\. O3DE entities are simply an ID and a container of components\. They have no functionality associated with them\. O3DE's component model is granular: It expects each component to provide independent functionality\. It expects game objects to be made up of one or more entities with many components attached to each entity\. O3DE components communicate with each other using a messaging system called EBuses\. O3DE expects you to use EBuses instead of holding references to other entities or their components\.
 
@@ -30,14 +30,13 @@ Components are always activated in order of their dependency\. For this reason, 
 Entities are never allowed to be in a state in which one of their component dependencies is missing, even during authoring\. In O3DE's editing tools, this means that components whose dependencies are missing are actually removed from the entity and stored in a temporary list\. When all of the component's dependencies become available, the component is restored to the entity\.
 
 **Topics**
-+ [Creating a Component](/docs/user-guide/engine/components/create-component.md)
-+ [Registering Your Component](/docs/userguide/components/entity-system-pg-registering-your-component.md)
-+ [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection.md)
-+ [Defining and Using Component Services](/docs/user-guide/engine/components/services.md)
-+ [Editor Components](/docs/user-guide/engine/components/entity-system-pg-editor-components.md)
-+ [Creating System Components](/docs/user-guide/engine/components/system-wide.md)
-+ [Programmer's Guide to Component Mode](/docs/user-guide/tutorials/engine/components/_index.md)
-+ [Components and EBuses](/docs/user-guide/engine/components/ebus-integration.md)
-+ [Tick Bus and Components](/docs/user-guide/engine/ebus/tick.md)
-+ [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md)
-+ [Components and EBuses: Best Practices](/docs/user-guide/engine/ebus/entity-system-pg-components-ebuses-best-practices.md)
++ [Creating a Component](/docs/user-guide/components/development/create-component/)
++ [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/)
++ [Defining and Using Component Services](/docs/user-guide/components/development/services/)
++ [Editor Components](/docs/user-guide/components/development/entity-system-pg-editor-components/)
++ [Creating System Components](/docs/user-guide/components/development/system-wide/)
++ [Programmer's Guide to Component Mode](/docs/learning-guide/tutorials/engine/components/)
++ [Components and EBuses](/docs/user-guide/components/development/ebus-integration/)
++ [Tick Bus and Components](/docs/user-guide/components/development/tick/)
++ [Exposing Custom Components to Track View for Animation](/docs/user-guide/components/development/expose-animation/)
++ [Components and EBuses: Best Practices](/docs/user-guide/components/development/entity-system-pg-components-ebuses-best-practices/)
