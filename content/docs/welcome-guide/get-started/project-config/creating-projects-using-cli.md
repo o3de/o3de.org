@@ -36,7 +36,7 @@ This tutorial will use the following project name and directories in the example
 * Third-party directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#create-a-third-party-folder)): `C:\o3de-3rdparty`
 
 {{< caution >}}
-External projects - projects created outside the engine directory - are considered experimental. They might be unstable in some scenarios or versions of the engine.
+External projects - projects created outside the engine directory - are considered experimental. They might be unstable, and will need updates to their project configuration in later versions of O3DE.
 {{< /caution >}}
 
 **To create a new O3DE project from command line**
