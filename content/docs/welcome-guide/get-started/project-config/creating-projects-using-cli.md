@@ -66,7 +66,7 @@ External projects - projects created outside the engine directory - are consider
     ```
 
     {{< caution >}}
-Do not use trailing slashes when specifying the path to the third-party package directory.
+Do not use trailing slashes when specifying the path to the packages directory.
     {{< /caution >}}
 
     {{< note >}}
