@@ -154,13 +154,13 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
 At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
-* Create a third-party folder for downloaded packages.
+* Create a directory for downloaded packages.
 * Get the Python runtime.
 * Register the engine.
 
-### Create a third-party folder
+### Create a packages directory
 
-1. Create a new folder in a writeable location. This folder will be used by the third-party package downloader to download third-party libraries that are needed when building the engine.
+1. Create a new directory in a writeable location. This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
 
 1. Create an empty text file named `3rdParty.txt` in this folder. (Later versions of the engine will not require this file.)
 
@@ -168,7 +168,7 @@ At this time, O3DE is available for preview. During O3DE preview, there are a fe
 
 The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory. This script requires CMake to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements.md) page for installation instructions.
 
-1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown. Note that in the 0.5 release branch, you need to temporarily set the LY_PACKAGE_SERVER_URLS environment variable, as shown in the following example.
+1. Open a command prompt to the directory where you set up O3DE and run the `get_python` script as shown. Note that in the 0.5 release branch, you need to temporarily set the LY_PACKAGE_SERVER_URLS environment variable, as shown in the following example.
 
     ```cmd
     set LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
@@ -177,7 +177,7 @@ The Python runtime is not included in the GitHub repo. Since it is required by t
 
 ### Register O3DE engine
 
-Each time you setup a new O3DE engine directory, you must register it. This creates (or updates) the **O3DE manifest** in your user directory on your computer.
+Each time you set up a new O3DE engine directory, you must register it. This creates (or updates) the **O3DE manifest** in your user directory on your computer.
 
 1. Open a command prompt to the directory where you set up O3DE and use the `o3de register` command as shown.
 
@@ -185,7 +185,7 @@ Each time you setup a new O3DE engine directory, you must register it. This crea
     scripts\o3de.bat register --this-engine
     ```
 
-    The O3DE manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, gems, and templates are recorded in this file.
+    The O3DE manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, Gems, and templates are recorded in this file.
 
 You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
 
