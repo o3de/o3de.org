@@ -13,7 +13,7 @@ Include as much useful context as you can.
 
 ## Which page(s) / section(s) are affected?
 
-Provide links to individual pages or sections of the documentation which demonstrate your problem, or where a good solution can be provided.
+Provide links to individual pages or sections of the documentation that should be updated, or where a new topic could be placed.
 
 ## Does this work have an engineering dependency? What is it?
 
