@@ -12,7 +12,7 @@ To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMa
 it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project and build files.
 This is an alternative to other build systems where compiler toolchains are explicitly called.
 
-Here's an example showing how to build the editor while also adding support for the `AtomSampleViewer` project, packaged as a Gem:
+Here's an example showing how to build the editor while also adding support for the `AtomTest` project, packaged as a Gem:
 
 <!-- TODO: Add other host platforms/toolchains here, max 1/platform -->
 
@@ -22,7 +22,7 @@ mkdir windows_vs2019
 cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
     -DLY_3RDPARTY_PATH=<3rdParty_fullpath> ^
     -DLY_UNITY_BUILD=ON ^
-    -DLY_PROJECTS=AtomSampleViewer
+    -DLY_PROJECTS=AtomTest
 cmake --build windows_vs2019 --config profile --target Editor -- /m
 {{< /tab >}}
 {{< /tabs >}}

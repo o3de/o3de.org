@@ -139,14 +139,6 @@ At this time, O3DE is available for preview. During O3DE preview, there are a fe
 * Get the Python runtime.
 * Register the engine.
 
-### Set environment variables
-
-1. Set an environment variable for the package server.
-
-    ```cmd
-    LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
-    ```
-
 ### Download third-party packages
 
 1. Download the third-party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.

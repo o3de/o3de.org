@@ -32,7 +32,7 @@ icon = "fab fa-github"
 [[params.social]]
 name = "Discord"
 url = "#"
-icon = "fas fa-envelope"
+icon = "fab fa-discord"
 
 [[params.social]]
 name = "Slack"
@@ -64,11 +64,11 @@ weight = 1
 # url ="#"
 # weight = 2
 
-# [[menu.main]]
-# name = "Community"
-# url = "#"
-# weight = 3
-# identifier = "community"
+[[menu.main]]
+name = "Community"
+url = "/community"
+weight = 3
+identifier = "community"
 
 # [[menu.main]]
 # name = "Community subitem placeholder"
@@ -87,3 +87,8 @@ name = "Documentation"
 url = "/docs"
 weight = 1 
 parent = "learn"
+
+[[menu.main]]
+name = "Contribute"
+url = "/docs/contributing"
+weight = 5

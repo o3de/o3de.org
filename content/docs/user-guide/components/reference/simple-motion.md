@@ -6,9 +6,9 @@ title: Simple Motion
 
 {{< preview-migrated >}}
 
-You can use the **Simple Motion** component to play a motion without an animation graph\. Add this component to the **[Actor](/docs/user-guide/components/actor.md)** component to use a single motion for your actor\. For complex motions, see the **[AnimGraph](/docs/user-guide/components/animgraph.md)** component\.
+You can use the **Simple Motion** component to play a motion without an animation graph\. Add this component to the **[Actor](/docs/user-guide/components/reference/actor/)** component to use a single motion for your actor\. For complex motions, see the **[AnimGraph](/docs/user-guide/components/reference/animgraph/)** component\.
 
-For creating cinematics with the **Simple Motion** component, see [Creating Character Animations with the Simple Motion Component](/docs/user-guide/visualization/cinematics/create-cinematics-with-simple-motion-animations-in-track-view-editor.md)\.
+For creating cinematics with the **Simple Motion** component, see [Creating Character Animations with the Simple Motion Component](/docs/user-guide/visualization/cinematics/create-cinematics-with-simple-motion-animations-in-track-view-editor/)\.
 
 ## Simple Motion Component Properties {#component-simple-motion-properties}
 

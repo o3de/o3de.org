@@ -1,5 +1,7 @@
-{{ range . }}
-{{ $color := .color | default "white" }}
+{{ $social := site.Params.social }}
+
+{{ range $social }}
+{{ $color := .color }}
 <a class="social btn text-light mr-1" title="{{ .name }}" style="background-color: {{ .color }}" href="{{ .url }}" target="_blank">
     {{ with .icon }}
     <span class="icon">

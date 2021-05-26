@@ -27,4 +27,4 @@ The following optional components change the **Vegetation Layer Spawner** compon
 + **Vegetation Modifier** components change the appearance of generated vegetation
 + **Vegetation Selector** components determine which asset descriptors are selected for creation
 
-For information on how to use the **Vegetation Layer Spawner**, see [Dynamic vegetation](/docs/user-guide/gems/vegetation/_index.md)\.
+For information on how to use the **Vegetation Layer Spawner**, see [Dynamic vegetation](/docs/user-guide/gems/reference/vegetation/)\.

@@ -1,9 +1,8 @@
 ---
 title: "Atom Sample Viewer"
 description: "The Atom Sample Viewer showcases samples of some features and rendering techniques capable in Atom."
-date: 2021-03-04
 toc: true
-weight: 400
+weight: 300
 ---  
 
 {{< preview-new >}}
