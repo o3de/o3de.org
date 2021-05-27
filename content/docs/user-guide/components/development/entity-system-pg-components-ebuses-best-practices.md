@@ -95,6 +95,6 @@ Consider the following when deciding to make functions public or private\.
 ## Additional Resources {#component-entity-system-pg-components-ebuses-best-practices-additional-resources}
 
 For more information on components and EBuses, consult the following resources\.
-+ For examples of EBus usage, see [Usage and Examples](/docs/user-guide/samples/ebus/examples.md)\.
-+ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/engine/ebus/design.md)\.
++ For examples of EBus usage, see [Usage and Examples](/docs/learning-guide/samples/ebus/direct-access/)\.
++ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/engine/ebus/design/)\.
 + For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](/docs/userguide/components/entity-system-pg-components-ebuses-questions-and-answers.md)\.
