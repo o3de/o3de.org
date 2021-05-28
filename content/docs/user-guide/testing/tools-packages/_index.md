@@ -9,7 +9,7 @@ Open 3D Engine (O3DE) offers several tools packages to make writing tests quicke
 
 These are a collection of abstractions, functions, and wrappers to make writing C++ tests easier and more consistent.
 
-TODO: Include link to AzTest documentation
+<!-- TODO: Include link to AzTest documentation -->
 
 ## EditorPythonTestTools
 
