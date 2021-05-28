@@ -3,7 +3,7 @@ description: ' Use tools packages to write tests quicker, safer, and more consis
 title: Tools Packages
 ---
 
-We have several tools packages in Open 3D Engine (O3DE) to make writing tests quicker, safer, and more consistent. Before you write tests, you should familiarize yourself with the tools. Use them where appropriate to keep tests uniform across O3DE. Don't be afraid to add useful functionality to the tools themselves!
+Open 3D Engine (O3DE) offers several tools packages to make writing tests quicker, safer, and more consistent. Before you write tests, take time to familiarize yourself with the tools. Use them where appropriate to keep tests uniform across O3DE. Don't be afraid to add useful functionality to the tools themselves!
 
 ## AzTest
 
