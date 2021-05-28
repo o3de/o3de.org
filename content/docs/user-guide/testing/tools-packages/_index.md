@@ -15,7 +15,7 @@ TODO: Include link to AzTest documentation
 
 These are a collection of test tools focused around accessing Editor functionality. Here is where you would want to start for tasks that you would expect a user of the Editor to perform.
 
-TODO: Include link to EditorTestTools documentation
+<!-- TODO: Include link to EditorTestTools documentation -->
 
 ## LyTestTools
 
