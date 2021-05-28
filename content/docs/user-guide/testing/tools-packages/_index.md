@@ -21,4 +21,4 @@ TODO: Include link to EditorTestTools documentation
 
 LyTestTools are OS-level productivity tools, which simplify writing and debugging tests that across different environments. This includes (but is definitely not limited to) environment manipulation, creating/collecting images & logs, and starting launchers.
 
-TODO: Include link to LyTestTools documentation
+<!-- TODO: Include link to LyTestTools documentation -->
