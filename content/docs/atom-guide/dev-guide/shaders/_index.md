@@ -7,7 +7,7 @@ weight: 300
 
 {{< preview-new >}}
 
-This section contains technical details about the shader system in the Atom renderer.
+This section contains technical details about the shader system in the Atom Renderer.
 
 ## Contents
 | Topic                        | Description |

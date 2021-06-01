@@ -1,13 +1,13 @@
 ---
 title: "Developer Guide"
-description: "Learn about the systems and interfaces behind the Atom renderer"
+description: "Learn about the systems and interfaces behind the Atom Renderer"
 toc: true
 weight: 1000
 ---  
 
 {{< preview-new >}}
 
-This section provides a deeper technical read into the systems and interfaces underlying the Atom renderer. 
+This section provides a deeper technical read into the systems and interfaces underlying the Atom Renderer. 
 
 | Contents                        | Details |
 |--------------------------------------|---------|
