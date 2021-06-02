@@ -25,10 +25,10 @@ In the animation above, the door was created with White Box and animated with a 
 ![\[White Box Collider component interface.\]](/images/user-guide/component/whitebox/ui-white-box-collider.png)
 
 ****Collision Layer****
-The collision layer that's assigned to the collider\. For more information, see [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-layers.md)\.
+The collision layer that's assigned to the collider\. For more information, see [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/)\.
 
 ****Collides With****
-The collision group containing the layers that this collider collides with\. For more information, see [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-groups.md)\.
+The collision group containing the layers that this collider collides with\. For more information, see [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/)\.
 
 ****Physics Material \- Library****
 Set the physics material library for this collider\.

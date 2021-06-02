@@ -30,7 +30,7 @@ The **Camera** component has the following properties:
 
 Use the following request functions with the event bus \(EBus\) interface, `CameraRequestBus`, to communicate with other components of your game\.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
 
 
 ****
