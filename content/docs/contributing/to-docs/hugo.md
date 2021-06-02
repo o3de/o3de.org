@@ -139,7 +139,7 @@ O3DE's top level pages – `/docs`, `/download` and `/community` – all use cus
 In all cases, the following files are key:
 
 * `/assets/sass/custom.sass`: Stores all custom SCSS for layouts. 
-* `/assets/js/app.js`: Stores Javascript for pages. This is important if you need to update the downloads page, which uses Javsascript to parse the browser's user agent. 
+* `/assets/js/app.js`: Stores Javascript for pages. This is important if you need to update the downloads page, which uses Javascript to parse the browser's user agent. 
 *  `/layouts/partials/javascript.html`: Adds Javascript files to pages. Important if you want to add a new script to the site. 
 
 ### Updating top level page content
