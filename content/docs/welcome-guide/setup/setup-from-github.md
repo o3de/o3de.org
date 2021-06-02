@@ -19,7 +19,7 @@ The instructions here will guide you through the following steps:
 
 The instructions that follow assume you have the following:
 
-* [Git client](https://git-scm.com/downloads) 1.8.2 or later installed.
+* [Git client](https://git-scm.com/downloads) installed (1.8.2 or later required, 2.23.4 or later recommended).
 * Met all hardware and software requirements listed in [System Requirements](./requirements.md).
 
 ## Configure credentials for Git LFS
@@ -28,11 +28,13 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
 **To configure for Git LFS**
 
-1. Verify that **Git LFS** is available on your computer.
+1. Verify that **Git LFS** is installed.
 
     ```cmd
     git lfs install
     ```
+
+    If the output from this command is "Git LFS initialized", then you already have Git LFS installed.
 
 1. Verify that you have a **credential manager** setup for Git. Recent versions of Git install a credential manager to store your credentials so that you don't have to enter them for every request.
 
@@ -90,13 +92,13 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
 
         ![Credential manager asking for LFS credentials](/images/welcome-guide/setup-credential-manager-lfs.png)
 
-    1. Update and verify LFS.
+    1. Verify you have the LFS files.
 
-        When the clone operation completes, update LFS and verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
+        When the clone operation completes, verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
 
         ```cmd
-        cd o3de
-        git lfs install
+        // Change to the directory name that was created when you cloned the engine repo. Default is o3de.
+        cd o3de 
         git lfs pull
         ```
 
@@ -109,14 +111,19 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     Verify the upstream repository. You should see the URL for the fork as `origin`, and the URL for the original repository as `upstream`.
 
     ```cmd
-    > git remote -v
-    origin  https://github.com/<account>/o3de.git (fetch)
-    origin  https://github.com/<account>/o3de.git (push)
+    git remote -v
+    ```
+
+    Output:
+
+    ```cmd
+    origin  https://github.com/<USERNAME>/o3de.git (fetch)
+    origin  https://github.com/<USERNAME>/o3de.git (push)
     upstream        {{< links/o3de-source >}}.git (fetch)
     upstream        {{< links/o3de-source >}}.git (push)
     ```
 
-1. Any time that you want to sync the latest files from the repo and LFS, you can pull from `upstream main`.
+1. Any time that you want to sync the latest files from the repo and LFS, you can pull from the branch you are woking with, such as `upstream main`.
 
     ```cmd
     git fetch upstream
@@ -129,51 +136,56 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     git push origin
     ```
 
+1. To switch to a release branch, use the `git checkout` or `git switch` command. For example, to switch to branch **0.5**:
+
+    ```cmd
+    git fetch upstream
+    git checkout --track upstream/0.5
+    ```
+
+    To get updates for a release branch, make sure to fetch and merge from the correct upstream branch.
+
+    ```cmd
+    git fetch upstream
+    git merge upstream/0.5
+    ```
+
 ## Additional setup for O3DE preview
 
 At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
 
-* Set the package server URL environment variable.
-* Download third-party packages.
-* Install additional SDKs.
+* Create a directory for downloaded packages.
 * Get the Python runtime.
 * Register the engine.
 
-### Download third-party packages
+### Create a packages directory
 
-1. Download the third-party zip file: <https://d2c171ws20a1rv.cloudfront.net/3rdParty-windows-no-symbols-rev13.zip>.
+1. Create a new directory in a writeable location. This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
 
-1. Unzip this file into a writable folder. The path, up to and including the 3rdParty folder that was unzipped from this file, will be referred to as the `<3rdParty Path>` in the remainder of this section.
-
-    By default, this location will also act as a cache location for the third-party package downloader (configurable with the `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION` environment variable).
-
-### Install Additional SDKs
-
-1. Install the FBX SDK as instructed in `<3rdParty Path>/FbxSdk/2016.1.2-az.1/README.md`.
-
-1. Install **Wwise version 2019.2.8.7432** using the [Wwise Launcher](https://www.audiokinetic.com/download/). Select the C++ SDK and one or more deployment platforms to install. When the deployment platform is installed, copy the `SDK` directory from the install location into the `<3rdParty Path>/Wwise/2019.2.8.7432` directory that you will create.
+1. Create an empty text file named `3rdParty.txt` in this folder. (Later versions of the engine will not require this file.)
 
 ### Get the Python runtime
 
-The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory.
+The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory. This script requires CMake to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements.md) page for installation instructions.
 
-1. Open a command prompt to the directory where you setup O3DE and run the `get_python` script as shown.
+1. Open a command prompt to the directory where you set up O3DE and run the `get_python` script as shown. Note that in the 0.5 release branch, you need to temporarily set the LY_PACKAGE_SERVER_URLS environment variable, as shown in the following example.
 
     ```cmd
-    python\get_python
+    set LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
+    python\get_python.bat
     ```
 
 ### Register O3DE engine
 
-Each time you setup a new O3DE engine directory, you must register it. This creates (or updates) the O3DE manifest in your user directory on your computer.
+Each time you set up a new O3DE engine directory, you must register it. This creates (or updates) the **O3DE manifest** in your user directory on your computer.
 
 1. Open a command prompt to the directory where you set up O3DE and use the `o3de register` command as shown.
 
     ```cmd
-    scripts\o3de register --this-engine
+    scripts\o3de.bat register --this-engine
     ```
 
-    The manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, gems, and templates are recorded in this file.
+    The O3DE manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, Gems, and templates are recorded in this file.
 
 You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
 
