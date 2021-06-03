@@ -568,12 +568,12 @@ To add an image, use syntax similar to a link, preceded by an exclamation mark. 
 Image example:
 
 ```markdown
-![O3DE Logo](/img/logos/O3DE-Logo-RGB.svg "The O3DE logo")
+![O3DE Logo](/img/logos/O3DE-Logo-with-WordMark-Black-Mono.svg "The O3DE logo")
 ```
 
 Image output:
 
-![O3DE Logo](/img/logos/O3DE-Logo-RGB.svg "The O3DE logo")
+![O3DE Logo](/img/logos/O3DE-Logo-with-WordMark-Black-Mono.svg "The O3DE logo")
 
 ### Image file location
 
