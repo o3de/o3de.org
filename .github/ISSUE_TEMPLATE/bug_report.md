@@ -16,5 +16,5 @@ assignees: ''
 
 ## Expected experience
 
-<!-- Provide any information that you might need to about what an appropriate resolution to this issue is. -->
+<!-- Provide any information that might help explain what an appropriate resolution to this issue is. -->
  
