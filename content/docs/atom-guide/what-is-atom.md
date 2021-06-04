@@ -36,7 +36,7 @@ In Atom, shaders are written in the Amazon Shading Language (AZSL), an extended 
 **Features**  
 As a part of the renderer, Atom provides built-in graphics features. Most graphics features are implemented using Feature Processor interfaces, which are defined in the RPI. For example, the RPI defines the Mesh Feature Processor, which implements static and dynamic meshes. Other features (like physically based rendering) live outside of feature processors and are instead implemented through passes and shaders. Atom integrates many features into Open 3D Engine (O3DE) through the Atom Gem, introducing components such as lighting, camera, and mesh. For more information on the features, see [Features and Feature Processors](core-systems/features/_index.md). 
 
-![Atom Architecture](/images/atom-guide/what-is-atom/atom-architecture.svg)
+![Atom Architecture](/images/atom-guide/what-is-atom/atom-architecture.jpg)
 
 
 ## Common Workflows
