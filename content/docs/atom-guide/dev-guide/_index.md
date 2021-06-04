@@ -2,7 +2,7 @@
 title: "Developer Guide"
 description: "Learn about the systems and interfaces behind the Atom Renderer"
 toc: true
-weight: 1000
+weight: 600
 ---  
 
 {{< preview-new >}}

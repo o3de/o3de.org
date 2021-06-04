@@ -3,7 +3,7 @@ linktitle: Look Development
 title: "Look Development"
 description: "Learn about the different tools in the Atom Renderer for look development."
 toc: true
-weight: 400
+weight: 500
 ---
 
 {{< preview-new >}}

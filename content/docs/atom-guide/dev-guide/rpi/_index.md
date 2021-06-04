@@ -2,7 +2,7 @@
 title: "Render Pipeline Interface"
 description: "Render Pipeline Interface in the Atom Renderer"
 toc: true
-weight: 400
+weight: 200
 ---
 
 {{< preview-new >}}

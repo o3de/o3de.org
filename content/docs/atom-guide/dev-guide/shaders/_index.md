@@ -2,7 +2,7 @@
 title: "Shader System"
 description: "Learn about the Shader System in the Atom Renderer."
 toc: false
-weight: 300
+weight: 500
 ---
 
 {{< preview-new >}}

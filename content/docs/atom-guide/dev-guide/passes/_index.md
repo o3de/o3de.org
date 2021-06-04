@@ -1,7 +1,7 @@
 ---
 title: "Passes"
 description: "Passes in the Atom Renderer"
-weight: 410
+weight: 300
 toc: true
 ---
 
