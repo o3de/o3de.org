@@ -65,7 +65,7 @@ weight = 1
 # weight = 2
 
 [[menu.main]]
-name = "Community"
+name = "COMMUNITY"
 url = "/community"
 weight = 3
 identifier = "community"
@@ -77,12 +77,12 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "Documentation"
+name = "DOCUMENTATION"
 url = "/docs"
 weight = 4
 identifier = "docs"
 
 [[menu.main]]
-name = "Contribute"
+name = "CONTRIBUTE"
 url = "/docs/contributing"
 weight = 5

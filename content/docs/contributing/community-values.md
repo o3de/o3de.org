@@ -2,9 +2,7 @@
 linkTitle: Tenets
 title: Open 3D Engine Community Tenets
 description: What do O3DE community members value in their work with you? Read this list of tenets.
-weight: 300
-menu_uuid: contributing
-guide_img: "/images/contributing/guide_img.png"
+weight: 200
 ---
 
 ## Open 3D Community Tenets
