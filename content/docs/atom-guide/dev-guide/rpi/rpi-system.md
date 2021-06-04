@@ -1,7 +1,6 @@
 ---
 title: "RPI System"
 description: "RPI System in the Atom Renderer"
-date: 2021-03-04
 toc: false
 weight: 200
 ---

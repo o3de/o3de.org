@@ -1,7 +1,6 @@
 ---
 title: "Render Hardware Interface"
 description: "What is RHI? The Render Hardware Interface (RHI) is an abstraction layer over several platform-specific graphics APIs."
-date: 2021-03-05
 toc: false
 weight: 600
 ---

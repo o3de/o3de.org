@@ -1,11 +1,11 @@
 ---
 title: "Passes"
 description: "Passes in the Atom Renderer"
-weight: 410
+weight: 300
 toc: true
 ---
 
-This section provides technical details about how passes are created and managed in the Atom renderer.
+This section provides technical details about how passes are created and managed in the Atom Renderer.
 
 ## What are passes?  
 
@@ -24,5 +24,5 @@ This section covers the following topics.
 | Topics                        | Description |
 |--------------------------------------|---------|
 | [Pass System](pass-system.md) | An overview of the pass system in Atom. |
-| [Pass Template File Specification](pass-template-file-spec.md) | JSON reference for pass template data. |
+| [Pass Template File Specification](pass-template-file-spec.md) | JSON reference for pass template data (`*.pass` files). |
 | [Authoring Passes](authoring-passes.md) | Learn how to author passes in the pass system.  |

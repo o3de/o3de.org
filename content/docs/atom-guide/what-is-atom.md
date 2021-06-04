@@ -51,6 +51,6 @@ Atom can elevate your project’s rendering capabilities and energize you and yo
 
 ## First Steps  
 Ready to get started? Head over to one of the following sections to get up and running with Atom:
-- **[Getting Started](get-started/_index.md)** to begin creating materials and shaders or setting up an O3DE level. 
+- **[Set up Atom projects](TBD)** to begin creating materials and shaders, exploring graphics features, or setting up a scene in the Open 3D Engine.
 - **[Atom Sample Viewer](atom-sample-viewer/_index.md)** to preview Atom's rendering features through a series of samples. 
-- **[Developer Guide](core-systems/_index.md)** to learn more about the core systems that make up Atom's render engine. 
+- **[Developer Guide](dev-guide/_index.md)** to learn more about the core systems that make up Atom's render engine. 
