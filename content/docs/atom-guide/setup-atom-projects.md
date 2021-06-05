@@ -14,7 +14,7 @@ Get to know the Atom Renderer and its features by setting up an Atom project wit
 - **Atom Sample Viewer**: This project is a standalone application that is intended for developers and engineers who want to test out Atom's individual features. Although you will not run the O3DE Editor, O3DE is still required to build this project.
 
 ## Prerequisites
-Before setting up the Atom projects, you must have the O3DE engine installed on your computer. Follow the instructions in the [Setup](C:\O3DE\o3de.org\content\docs\welcome-guide\setup) section of the Welcome Guide to set up O3DE.
+Before setting up the Atom projects, you must have the O3DE engine installed on your computer. Follow the instructions in the [Setup](/docs/welcome-guide/setup) section of the Welcome Guide to set up O3DE.
 
 
 ## Setting up the Atom projects
@@ -71,13 +71,13 @@ Use CMake to generate a Visual Studio solution, which is used in the next step t
 Atom Test
 : 
     ```cmd
-    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH="C:\O3DE\3rdParty" -DLY_UNITY_BUILD=ON
+    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
     ```
 
 Atom Sample Viewer
 : 
     ```cmd    
-    `cmake -B "C:\AtomSampleViewer\build" -S "C:\AtomSampleViewer" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages`
+    cmake -B "C:\AtomSampleViewer\build" -S "C:\AtomSampleViewer" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
 ## Register project to O3DE
@@ -88,7 +88,7 @@ Register the Atom Test project to add it to the list of known projects in the O3
 Atom Test
 : 
     ```cmd
-    C:\o3de\scripts\o3de.bat register —project-path C:\AtomTest
+    C:\o3de\scripts\o3de.bat register --project-path C:\AtomTest
     ```
 
 ## Build and run
@@ -112,4 +112,4 @@ You are all set up to explore Atom with the Atom Sample Viewer project! Check ou
 
 2. When the project is done building, you can find the build files in the directory `C:\AtomTest\build\bin\profile`. From there, you can launch `Editor.exe`, `AssetProcessor.exe`, and other tools. 
 
-You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](docs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 
+You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](/content/blog/_posts/test-post%20copy%202.mddocs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 
