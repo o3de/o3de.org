@@ -1,14 +1,14 @@
 ---
 linktitle: Scripting
 title: AWS Core Scripting
-description: Learn how to use AWS Core Script Canvas nodes by example in Open 3D Engine.
+description: See examples of how to use the AWS Core Gem with Script Canvas in Open 3D Engine.
 weight: 300
 toc: true
 ---
 
 {{< preview-new >}}
 
-This page documents Script Canvas behaviors defined by the AWS Core Gem.
+This page demonstrates Script Canvas nodes defined by the AWS Core Gem.
 
 ## AWS S3
 

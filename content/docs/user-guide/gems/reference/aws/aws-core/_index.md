@@ -31,7 +31,7 @@ In this file you can set the following options:
 | Setting | Description |
 | --- | --- |
 | ProfileName | \[Optional\] The project will use **default** profile in `./aws/credential`. Overrides the **default** profile or any environment variable setting by using this variable. Must be a named profile in your credential file. |
-| ResourceMappingConfigFileName | \[Optional\] The name of the resource mappings file to load while starting up. This variable is required if you need to utilize resource mappings file during runtime (which should be located under `<ProjectName>/Config` directory). See [Resource Mapping Tool & APIs](./resource-mapping.md) for more information. |
+| ResourceMappingConfigFileName | \[Optional\] The name of the resource mappings file to load while starting up. This variable is required if you need to utilize resource mappings file during runtime (which should be located under `<ProjectName>/Config` directory). See [Resource Mapping Tool & APIs](./resource-mapping-tool.md) for more information. |
 
 Example registry settings file:
 

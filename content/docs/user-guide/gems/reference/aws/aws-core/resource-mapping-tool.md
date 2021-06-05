@@ -1,5 +1,5 @@
 ---
-linktitle: Resource Mapping
+linktitle: Resource Mapping Tool
 title: Resource Mapping Tool & APIs
 description: Learn how to use the AWS Resource Mapping Tool in Open 3D Engine.
 weight: 250

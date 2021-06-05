@@ -8,7 +8,9 @@ toc: true
 
 {{< preview-new >}}
 
-This is an optional CDK application that provides two stacks:
+Cloud Development Kit (CDK) is a software development framework from AWS for defining cloud infrastructure in your project and provisioning it through AWS Cloud Formation.
+
+AWS Core is an optional CDK application that provides two stacks:
 
 * A core stack to use as the basis for a project's CDK application.
 * An example stack with example resources that can be connected to **ScriptBehavior** samples in Core.
@@ -17,9 +19,9 @@ This project is set up like a standard Python project. The initialization proces
 
 To create the virtualenv it assumes that there is a `python3` executable (`python` for Windows) in your path with access to the `venv` package. If the automatic creation of the virtualenv fails, you can create the virtualenv manually.
 
-See [https://docs.aws.amazon.com/cdk/latest/guide/getting\_started.html](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html) for information about how to set up the prerequisites for CDK development.
+## Prerequisites
 
-## Deploy the CDK application
+Follow the prerequisite instructions in [AWS CDK: Getting Started](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting-started-prerequisites) to prepare for use of the CDK in your project.
 
 ### Setup python environment
 
@@ -46,6 +48,8 @@ Once the virtualenv is activated, you can install the required dependencies.
 ```cmd
 pip install -r requirements.txt
 ```
+
+## Deploy the CDK
 
 ### Set environment variables or accept defaults
 
