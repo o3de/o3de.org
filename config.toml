@@ -55,7 +55,7 @@ sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
 [[menu.main]]
-name = "Download"
+name = "DOWNLOAD"
 url = "/download"
 weight = 1
 
