@@ -11,7 +11,7 @@ style = "paraiso-dark"
 [params]
 font_awesome_version = "5.12.0"
 description = "Open 3D Engine (O3DE) is an open-source, real-time 3D game and simulation engine that’s fully modular and extensible. Managed by the Linux Foundation and backed by industry leaders O3DE brings together over 30 integrated 3D authoring tools. Whether you’re a AAA game studio, indie developer, or simulation creator, O3DE enables you to use a physically-based, photorealistic renderer to build cinema quality 3D worlds for games, video production, and high-fidelity simulations with zero licensing fees or obligations."
-favicon = "favicon.png"
+favicon = "favicon.png",
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
 sourceRepo = "https://github.com/aws-lumberyard/o3de"
