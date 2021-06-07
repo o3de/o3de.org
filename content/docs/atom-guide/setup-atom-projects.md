@@ -112,4 +112,4 @@ You are all set up to explore Atom with the Atom Sample Viewer project! Check ou
 
 2. When the project is done building, you can find the build files in the directory `C:\AtomTest\build\bin\profile`. From there, you can launch `Editor.exe`, `AssetProcessor.exe`, and other tools. 
 
-You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](/content/blog/_posts/test-post%20copy%202.mddocs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 
+You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](docs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 
