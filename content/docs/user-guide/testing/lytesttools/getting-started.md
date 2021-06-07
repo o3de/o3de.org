@@ -26,7 +26,3 @@ When your tools are ready, configured, and working, proceed to the next guide ap
  * Ctest - Running tests
 
 Visit [PyTest framework](https://docs.pytest.org/en/latest/) for further information about the framework and how it helps in writing tests.
-
-## Support ##
-
-For additional questions and troubleshooting, please reach out in the sig-testing channel in the Open 3D Engine Foundation Discord.
