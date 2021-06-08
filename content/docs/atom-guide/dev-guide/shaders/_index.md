@@ -2,12 +2,12 @@
 title: "Shader System"
 description: "Learn about the Shader System in the Atom Renderer."
 toc: false
-weight: 300
+weight: 500
 ---
 
 {{< preview-new >}}
 
-This section contains technical details about the shader system in the Atom renderer.
+This section contains technical details about the shader system in the Atom Renderer.
 
 ## Contents
 | Topic                        | Description |

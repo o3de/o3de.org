@@ -417,9 +417,7 @@ To create a new material using **Material Editor**:
 
 That's it! You created an AZSL shader, a new material type, and a material. 
 
-## What's next?
+## Dive Deeper
 Check out the following pages to learn more about materials and shaders in Atom.
-- [Materials](../materials/_index.md): Learn about creating materials in Atom. 
-- [AZSL Reference](../core-systems/shaders/azsl-reference/_index.md): Learn about the AZSL language. 
-- [Material System](../core-systems/materials/_index.md): Learn about the technical details underlying the material system in Atom. 
-- [Shader System](../core-systems/shaders/_index.md): Learn about the technical details underlying the shader system in Atom.
+- [Shader System and AZSL Reference](/docs/atom-guide/dev-guide/shaders/): Learn about the Shader System, including the AZSL language. 
+- [Material System](/docs/atom-guide/dev-guide/materials/): Learn about the technical details underlying the material system in Atom. 

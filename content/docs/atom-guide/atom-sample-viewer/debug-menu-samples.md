@@ -1,11 +1,10 @@
 ---
 title: "Debug Menu Samples"
 description: "This section dives into the debug menu samples demonstrated in the Atom Sample Viewer."
-date: 2021-03-09
-toc: false
+toc: true
 ---  
   
-{{< preview-new >}}
+{{< placeholder >}}
 
 This section dives into the debug menu samples demonstrated in the Atom Sample Viewer. 
 
