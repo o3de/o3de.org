@@ -15,7 +15,7 @@ Welcome to the Atom Documentation! The Atom Renderer is the graphics engine powe
 | Section                        | Description |
 |--------------------------------------|---------|
 | [What is Atom?](what-is-atom.md) |  An introduction and high-level overview of Atom.  |
-| [Setup and Installation](setup/installing-atom.md) |  Atom is already built into O3DE, but you can read about how to set up Atom as a standalone or across other platforms. <!-- Not sure if this section is even needed since it seems like Atom is in the same bundle as O3DE and follows the O3DE setup. --> |
+| [Setting Up Atom Projects](setup-atom-projects.md) | Atom is already built into O3DE, but you can set up these projects to learn about Atom's features. |
 | [Atom Sample Viewer](atom-sample-viewer/) |  Preview Atom’s rendering features through a series of samples, such as global illumination and multi-scene rendering.  |
 | [Features](/docs/atom-guide/features/) |  Learn about graphics features and rendering techniques that Atom provides.  |
 | [Look Development](look-dev/) | Learn about materials, the Material Editor, textures, shaders, and color in Atom. |
