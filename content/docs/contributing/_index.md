@@ -3,6 +3,8 @@ linkTitle: Contribute
 title: Contributor Guide for Open 3D Engine
 description: Want to contribute to O3DE? This guide will get you started with code and documentation contributions.
 weight: 700
+menu_uuid: contributing
+guide_img: "/images/contributing/guide_img.png"
 ---
 
 Have you ever wanted to contribute to an open-source 3D development engine?
@@ -14,4 +16,4 @@ This guide will help you understand the overall organization of the Open 3D Engi
 | [Contribute to O3DE Code](to-code/) | Learn how to contribute to O3DE's codebase.  |
 | [Contribute to O3DE Documentation](to-docs/) | Learn how to contribute to O3DE's technical documentation. |
 | [Code of Conduct](code-of-conduct.md) | Learn what our expectations for community engagement are. |
-| [Tenets](community-values.md) | Learn about the type of open source culture we'd like to foster. |
+| [Community Tenets](https://github.com/o3de/foundation/blob/master/tenets.md) | Learn about the type of open source culture we'd like to foster. |
