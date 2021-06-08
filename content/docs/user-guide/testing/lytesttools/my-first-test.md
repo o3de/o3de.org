@@ -29,6 +29,8 @@ After compiling the O3DE project, run the example test using the following comma
 ~/python/python.cmd -m pytest ~/Tools/LyTestTools/tests/example/tests/test_system_example.py --build-directory [path_to_build_output]
 ```
 
+Once you've got the example test working, you should try modifying it to add more capabilities.
+
 ## Further Reading ##
 
 * https://automatetheboringstuff.com/ - This site is great for learning when to apply test automation and when not to.

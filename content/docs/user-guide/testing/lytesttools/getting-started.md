@@ -3,21 +3,21 @@ description: ' Follow this guide for the first steps to start using LyTestTools.
 title: Getting Started with LyTestTools
 ---
 
-This guide outlines the first steps to start using LyTestTools. By the end of this guide, you will be ready to begin writing tests by following the LyTestTools - My First Test guide or to run tests by following the CTest documentation.
+This guide outlines the first steps to start using LyTestTools. By the end of this guide, you will be ready to write and run tests.
 
 ## Prerequisites ##
 
 This guide requires you have completed the following:
 
- * [Getting Started](/docs/user-guide)
- * [Configure and build](/docs/user-guide/build/configure-and-build)
+ * [Open 3D Engine - Getting Started](/docs/user-guide)
+ * [Configure and Build](/docs/user-guide/build/configure-and-build)
 
 ## Start Testing ##
 
-Once you have the prerequisites finished, you should have everything for testing configured and ready. You can test this by running the following command. Replace [path_to_test_file] with the appropriate path to the test file and [path_to_build_output] with the appropriate path to the build output.
+Once you have the prerequisites finished, you should have everything for testing configured and ready. You can verify this by running the following command. Replace [path_to_test_file] with the appropriate path to the test file and [path_to_build_output] with the appropriate path to the build output.
 
 ```shell
-Tools\Python\python3.cmd -m pytest [path_to_test_file] --build-directory [path_to_build_output]
+~/python/python -m pytest [path_to_test_file] --build-directory [path_to_build_output]
 ```
 
 When your tools are ready, configured, and working, proceed to the next guide appropriate for you:
