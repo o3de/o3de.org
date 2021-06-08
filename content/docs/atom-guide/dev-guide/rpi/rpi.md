@@ -48,7 +48,7 @@ Atom's render pipeline is configurable. We can load the configuration from data 
 Developers use the RPI to develop new graphics features or add 3D rendering support in their application. It's recommended to develop with the RPI instead of the RHI because the RPI implements a data-driven feature, which simplifies many workflows. You can create and configure many assets, such as materials or shaders, by editing JSON files. 
 
 Here are a few brief pointers when beginning to develop with the RPI:
-- To use Atom renderer for rendering, instantiate and initialize the `RPISystem` class. 
+- To use Atom Renderer for rendering, instantiate and initialize the `RPISystem` class. 
 - The `RPI::Scene` class must be created and added to the `RPISystem`. The `RPI::Scene` holds the data to be rendered.
 - At least one instance of the `RPI::RenderPipeline` class needs to be created and added to the `RPI::Scene`. The `RPI::RenderPipeline` is used to describe how to render the data in the `RPI::Scene`. 
 - The application must call the `RPISystemInterface` class's `SimulationTick` function to perform the scenes' simulation, and the `RenderTick` function to have the scenes rendered. 

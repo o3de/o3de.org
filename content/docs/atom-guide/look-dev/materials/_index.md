@@ -1,6 +1,6 @@
 ---
 title: "Materials"
-description: "Learn about materials in Atom."
+description: "Learn about PBR materials, how to create materials, and the Material Editor in the Atom Renderer."
 toc: true
 weight: 200
 ---  

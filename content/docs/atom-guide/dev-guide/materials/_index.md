@@ -1,14 +1,13 @@
 ---
 title: "Material System"
 description: "Material System in the Atom Renderer"
-date: 2021-03-04
 toc: true
-weight: 200
+weight: 400
 ---
 
 {{< preview-new >}}
 
-This section contains technical details about the material system in the Atom renderer.
+This section contains technical details about the material system in the Atom Renderer.
 
 | Contents                        | Details |
 |--------------------------------------|---------|
