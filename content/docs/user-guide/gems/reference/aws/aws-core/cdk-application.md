@@ -1,16 +1,15 @@
 ---
-linktitle: CDK Application
-title: AWS Core CDK Application
-description: Learn how to deploy the optional AWS Core CDK application in Open 3D Engine.
+title: Deploying the CDK Application
+description: Learn how to deploy the optional AWS CDK application in Open 3D Engine.
 weight: 200
 toc: true
 ---
 
 {{< preview-new >}}
 
-Cloud Development Kit (CDK) is a software development framework from AWS for defining cloud infrastructure in your project and provisioning it through AWS Cloud Formation.
+Cloud Development Kit (CDK) is a software development framework from AWS for defining cloud infrastructure in your project and provisioning it through **AWS Cloud Formation**.
 
-AWS Core is an optional CDK application that provides two stacks:
+AWS Core includes an optional CDK application that provides two stacks:
 
 * A core stack to use as the basis for a project's CDK application.
 * An example stack with example resources that can be connected to **ScriptBehavior** samples in Core.
@@ -67,8 +66,11 @@ An environment needs to be bootstrapped since this CDK application uses assets l
 
 Use the following `cdk` bootstrap command to bootstrap one or more AWS environments.
 
+TODO: Which is the correct command line?
+
 ```cmd
 cdk bootstrap ACCOUNT-NUMBER-1/REGION-1 ACCOUNT-NUMBER-2/REGION-2 [...]
+cdk bootstrap aws://ACCOUNT-NUMBER-1/REGION-1 aws://ACCOUNT-NUMBER-2/REGION-2 ...
 ```
 
 See [https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html) for more information about bootstrapping.

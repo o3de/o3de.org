@@ -1,0 +1,90 @@
+---
+title: Scripting Metrics
+description: See examples of how to use Lua or Script Canvas with the AWS Metrics Gem and Open 3D Engine (O3DE) to generate and submit metrics.
+weight: 300
+toc: true
+---
+
+{{< preview-new >}}
+
+Once set up, clients can generate and submit metrics events using C++, Lua, or Script Canvas. The following examples demonstrate use of Lua and Script Canvas to script behavior. Refer to the **(Using C++ with AWS Metrics)** document for examples using the C++ API.
+
+TODO: Add link.
+
+## Script Canvas
+
+### Nodes and variables used with AWS Metrics
+
+Following is a description of each of the Script Canvas nodes and variables added by the AWS Metrics Gem.
+
+#### Variables
+
+TODO?
+
+#### Nodes
+
+TODO?
+
+### Example: Submitting a metrics event
+
+The following sample graph demonstrates how to submit a metrics event and listen to the success or failure notification with the AWS Metrics nodes.
+
+![Script Canvas graph example of submitting a metrics event](/images/user-guide/gems/reference/aws/aws-metrics/scripting-submitting-metrics-event.png)
+
+## Lua
+
+The script below provides a simple example of calling the AWS Metrics API from Lua script.
+
+```lua
+-- Create a new metrics attribute.
+attribute = AWSMetrics_MetricsAttribute()
+
+-- Set the name of the metrics attribute.
+attribute:SetName("attribute_name")
+
+-- Set the value of the metrics attribute.
+-- You can set string, integer or double as the attribute value. Call SetStrValue, SetIntValue or SetDoubleValue for different value types.
+attribute:SetStrValue("attribute_value")
+
+-- Add the attribute to the metrics attribute list.
+attributeList = AWSMetrics_AttributesSubmissionList()
+attributeList.attributes:push_back(attribute)
+ 
+-- Generate a new metrics event using the metrics attribute list and submit it.
+AWSMetricsRequestBus.Broadcast.SubmitMetrics(attributeList.attributes, "event_source", true)
+ 
+-- Flush the buffer and send all the metrics.
+AWSMetricsRequestBus.Broadcast.FlushMetrics()
+```
+
+You can also add multiple metrics attributes to an event. Custom metrics attributes not included in the Event JSON Schema will be added to the event_data field as a flat JSON dictionary.
+
+{{< todo >}}
+TODO: Add link to Event JSON Schema docs.
+{{< /todo >}}
+
+Please note that the metrics event will be validated against a JSON schema before submission and it will be dropped if any of the required attributes are missing, or if the attribute value does not match the expected pattern.
+
+### Capturing notifications
+
+To capture notifications in Lua, connect to the `AWSMetricsNotificationBus` during activation, and disconnect from it during the deactivation, as shown in the following example.
+
+```lua
+function sample:OnActivate()
+    -- Connect to the AWSMetricsNotificationBus.
+    self.metricsNotificationHandler = AWSMetricsNotificationBus.Connect(self, self.entityId)
+end
+
+function sample:OnSendMetricsSuccess(requestId)
+    -- Do something after metrics events are sent successfully.
+end
+ 
+function sample:OnSendMetricsFailure(requestId, errorMessage)
+    -- Do something when metrics events fail to send.
+end
+ 
+function sample:OnDeactivate()
+    -- Disconnect from the AWSMetricsNotificationBus.
+    self.metricsNotificationHandler:Disconnect()
+end
+```
