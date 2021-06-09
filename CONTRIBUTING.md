@@ -2,14 +2,14 @@
 
 **First off, thanks for taking the time to contribute!**
 
-The following is a set of guidelines for contributing to Open 3D Engine (O3DE) documentation, hosted at [o3de.org](http://o3de.org/).
+The following is a set of guidelines for contributing to Open 3D Engine (O3DE) documentation, hosted at [docs.o3de.org](http://docs.o3de.org/).
 These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Before you get started
 
 ### Code of Conduct
 
-Open 3D Engine follows the [Open 3D Foundation Code of Conduct](https://github.com/o3de/foundation/blob/master/code-of-conduct.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the
+Open 3D Engine follows the [Open 3D Foundation Code of Conduct](http://docs.o3de.org/docs/contributing/code-of-conduct). By participating, you are expected to uphold this code. Please report unacceptable behavior to the
 [O3DE Code of Conduct Committee](TBD) &lt;conduct@o3de.org&gt;.
 
 ### Documentation and Site Decisions
