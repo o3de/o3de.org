@@ -11,6 +11,10 @@ style = "paraiso-dark"
 [markup.goldmark.renderer]
 unsafe = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]
+
 [params]
 font_awesome_version = "5.12.0"
 description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, bringing together over 30 fully matured and integrated 3D authoring tools, enabling users to build AAA games, cinema quality 3D worlds for video production, and high-fidelity simulations for non-gaming use cases with zero licensing fees, commercial terms, or disclosure obligations."
