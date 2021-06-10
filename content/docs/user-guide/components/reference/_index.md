@@ -20,8 +20,10 @@ The components below are grouped by type as they appear in the O3DE editor.
 
 ## Atom ##
 
-* [Area Light](/docs/user-guide/components/reference/atom/area-light.md) - Creates a light with realistic attenuation, cast from a shape.
-* [Decal](/docs/user-guide/components/reference/atom/decal.md) - Projects materials onto meshes.
+| Component | Description | 
+| - | - |
+| [Light](/docs/user-guide/components/reference/atom/light.md) | Creates punctual and area lights with realistic shadow effects. |
+| [Decal](/docs/user-guide/components/reference/atom/decal.md) | Projects materials onto meshes. |
 
 ## Shape ##
 
