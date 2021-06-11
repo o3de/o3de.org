@@ -1,6 +1,6 @@
 ---
-title: Using the CDK Application
-description: Learn how to use the sample CDK application provided by the AWS Metrics Gem in your Open 3D Engine (O3DE) project.
+title: Using the Deployed Resources
+description: Learn how to use the AWS Metrics Gem resources you deployed for your Open 3D Engine (O3DE) project.
 toc: true
 weight: 200
 ---

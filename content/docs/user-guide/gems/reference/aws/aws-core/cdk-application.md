@@ -39,7 +39,7 @@ source .env/bin/activate
 On a Windows platform, you would activate the virtualenv like this:
 
 ```cmd
-.env\Scripts\activate.ba
+.env\Scripts\activate.bat
 ```
 
 Once the virtualenv is activated, you can install the required dependencies.
@@ -54,9 +54,9 @@ pip install -r requirements.txt
 
 | Variable | Description |
 | --- | --- |
-| `O3D_AWS_DEPLOY_REGION` | The region to deploy the stacks into, will default to CDK_DEFAULT_REGION. |
-| `O3D_AWS_DEPLOY_ACCOUNT` | The account to deploy stacks into, will default to CDK_DEFAULT_ACCOUNT. |
-| `O3D_AWS_PROJECT_NAME` | The name of the O3DE project stacks should be deployed for, will default to AWS-PROJECT. |
+| `O3DE_AWS_DEPLOY_REGION` | The region to deploy the stacks into, will default to CDK_DEFAULT_REGION. |
+| `O3DE_AWS_DEPLOY_ACCOUNT` | The account to deploy stacks into, will default to CDK_DEFAULT_ACCOUNT. |
+| `O3DE_AWS_PROJECT_NAME` | The name of the O3DE project stacks should be deployed for, will default to AWS-PROJECT. |
 
 See [https://docs.aws.amazon.com/cdk/latest/guide/environments.html](https://docs.aws.amazon.com/cdk/latest/guide/environments.html) for more information including how to pass parameters to use for environment variables.
 

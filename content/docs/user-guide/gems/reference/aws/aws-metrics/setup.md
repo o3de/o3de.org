@@ -1,5 +1,5 @@
 ---
-linktitle: Setting Up
+linktitle: Setting Up Metrics
 title: Setting Up the AWS Metrics Gem
 description: Learn how to set up the AWS Metrics Gem for your Open 3D Engine (O3DE) project.
 toc: true
@@ -17,39 +17,35 @@ The AWS Metrics Gem requires the following to be installed and configured:
 * AWS credentials
 * O3DE AWS Core Gem
 
-See the instructions in [AWS Core Gem Set Up]() for help with installing and configuring these prerequisites.
+See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core/getting-started.md) for help with installing and configuring these prerequisites.
 
 ## Setting up AWS Metrics
 
-Using the AWS Metrics Gem in your project requires the following set up steps:
+Complete the following set up steps to use the AWS Metrics Gem in your project:
 
-* Add the AWS Metrics to your project.
+* Enable the AWS Metrics Gem in your project.
 * Deploy the CDK application.
-* Link the CDK application to the client.
+* Update the resource mapping file to use the deployed AWS resources.
 
-### Adding AWS Metrics to your project
+### Enabling the AWS Metrics Gem in your project
 
-Use Project Manager to add the **AWS Metrics Gem** to your project. At the same time, you can also verify that the **AWS Core Gem** is enabled in your project, too.
-
-TODO: Link to Project Manager.
+If you haven't already added and built the **AWS Metrics Gem** in your project, do so now using the instructions in [Enabling the AWS Metrics Gem](./_index.md#enabling-the-aws-metrics-gem).
 
 ### Deploying the CDK application
 
-With the AWS Metrics Gem enabled, you can deploy the sample CDK application to build the AWS-backed analytics pipeline shown in the following diagram.
+Deploy the sample CDK application to build the AWS-backed analytics pipeline shown in the following diagram.
 
 ![Analytics pipeline provided by the sample CDK application](/images/user-guide/gems/reference/aws/aws-metrics/sample-analytics-pipeline.png)
 
-The pipeline will mainly focus on two uses cases: hot/near real time for operations and cold/batch for BI use cases (such as DAU, MAU). The sample analytics pipeline uses API Gateway (a service endpoint) for the user access and administrative interface, Kinesis Data Streams and Kinesis Data Firehose for streaming ingestion, Kinesis Data Analytics + CloudWatch for real-time analytics, S3 for date lake integration, and Glue plus Athena for batch analytics.
+The pipeline will mainly focus on two uses cases: hot/near-real-time for operations and cold/batch for BI use cases (such as DAU, MAU). The sample analytics pipeline uses API Gateway (a service endpoint) for the user access and administrative interface, Kinesis Data Streams and Kinesis Data Firehose for streaming ingestion, Kinesis Data Analytics + CloudWatch for real-time analytics, S3 for date lake integration, and Glue plus Athena for batch analytics.
 
-To deploy this sample application, follow the deploy steps in the AWS Core documentation.
+For instructions on how to deploy the CDK application, see the deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
-TODO: Add link.
-
-### Linking the CDK application
+### Using deployed AWS resources
 
 After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information.
 
-The `RESTApiStage` and `RESTApiId` must be added to the file, as shown in the following example.
+Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the `RESTApiStage` and `RESTApiId` information to your project's resource mapping file. The new sections will be similar to the following example.
 
 **project_aws_resource_mappings.json**
 
@@ -71,7 +67,3 @@ The `RESTApiStage` and `RESTApiId` must be added to the file, as shown in the fo
     "Version": "1.0.0"
 }
 ```
-
-For details on the resource mapping file and its reference in the AWS Core configuration registry file, see **(Resource Mapping File Topic)** in the AWS Core documentation.
-
-TODO: Add link.

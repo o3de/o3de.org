@@ -1,5 +1,5 @@
 ---
-linktitle: Scripting
+linktitle: Scripting Client Auth
 title: AWS Client Auth Scripting
 description: See examples of how to use the AWS Client Auth Gem with Script Canvas and Lua in Open 3D Engine.
 weight: 300

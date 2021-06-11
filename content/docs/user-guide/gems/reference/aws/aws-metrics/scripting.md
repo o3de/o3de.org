@@ -1,5 +1,6 @@
 ---
-title: Scripting Metrics
+linktitle: Scripting Metrics
+title: AWS Metrics Scripting
 description: See examples of how to use Lua or Script Canvas with the AWS Metrics Gem and Open 3D Engine (O3DE) to generate and submit metrics.
 weight: 300
 toc: true
@@ -7,29 +8,19 @@ toc: true
 
 {{< preview-new >}}
 
-Once set up, clients can generate and submit metrics events using C++, Lua, or Script Canvas. The following examples demonstrate use of Lua and Script Canvas to script behavior. Refer to the **(Using C++ with AWS Metrics)** document for examples using the C++ API.
-
-TODO: Add link.
+Once set up, clients can generate and submit metrics events using C++, Lua, or Script Canvas. The following examples demonstrate use of Lua and Script Canvas to script behavior. Refer to [Using C++ API with the AWS Metrics Gem](./cpp-api.md) for examples of using the C++ API with the Gem.
 
 ## Script Canvas
-
-### Nodes and variables used with AWS Metrics
-
-Following is a description of each of the Script Canvas nodes and variables added by the AWS Metrics Gem.
-
-#### Variables
-
-TODO?
-
-#### Nodes
-
-TODO?
 
 ### Example: Submitting a metrics event
 
 The following sample graph demonstrates how to submit a metrics event and listen to the success or failure notification with the AWS Metrics nodes.
 
 ![Script Canvas graph example of submitting a metrics event](/images/user-guide/gems/reference/aws/aws-metrics/scripting-submitting-metrics-event.png)
+
+{{< todo >}}
+Break this image into smaller pieces and describe each one.
+{{< /todo >}}
 
 ## Lua
 

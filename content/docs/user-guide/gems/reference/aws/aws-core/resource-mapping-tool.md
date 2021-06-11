@@ -1,8 +1,7 @@
 ---
-linktitle: Resource Mapping Tool
-title: Resource Mapping Tool & APIs
+title: Using the Resource Mapping Tool
 description: Learn how to use the AWS Resource Mapping Tool in Open 3D Engine.
-weight: 250
+weight: 350
 toc: true
 ---
 

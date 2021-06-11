@@ -1,6 +1,6 @@
 ---
-linktitle: Using C++ API
-title: Using C++ API with the AWS Metrics Gem
+linktitle: Using the C++ API
+title: Using the C++ API with the AWS Metrics Gem
 description: Get an overview of using the C++ API with the AWS Metrics Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 400
@@ -8,7 +8,7 @@ weight: 400
 
 {{< preview-new >}}
 
-The AWS Metrics Gem provides a C++ API for submitting metrics and handling notifications using the O3DE EBus. For more information about using the EBus system, please check https://docs.aws.amazon.com/lumberyard/latest/userguide/ebus-intro.html.
+The AWS Metrics Gem provides a C++ API for submitting metrics and handling notifications using the O3DE EBus. For more information about using the EBus system, refer to the [EBus](/docs/user-guide/engine/ebus) documentation.
 
 ## Using the AWSMetricsRequestBus
 
@@ -29,9 +29,9 @@ AWSMetricsRequestBus::Broadcast(&AWSMetricsRequests::FlushMetrics);
 
 ## Using the AWSMetricsNotificationBus
 
-You can define custom EBus handlers for capturing notifications in C++. 
+Use standard EBus notification handlers for capturing OnSendMetricsSuccess and OnSendMetricsFailure notifications in C++.
 
-TODO: Add example of OnSendMetricsSuccess and OnSendMetricsFailure.
+## C++ API Reference
 
 For a complete reference to the AWS Metrics C++ API, see the O3DE C++ API Reference Guide.
 

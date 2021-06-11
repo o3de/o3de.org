@@ -1,8 +1,8 @@
 ---
-linktitle: Scripting
+linktitle: Scripting with AWS Core
 title: AWS Core Scripting
 description: See examples of how to use the AWS Core Gem with Script Canvas in Open 3D Engine.
-weight: 300
+weight: 400
 toc: true
 ---
 

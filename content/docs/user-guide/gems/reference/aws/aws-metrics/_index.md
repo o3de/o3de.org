@@ -1,7 +1,7 @@
 ---
 linktitle: AWS Metrics
 title: AWS Metrics Gem
-description: Open 3D Engine (O3DE) AWS Metrics Gem reference.
+description: Introduction to the Open 3D Engine (O3DE) AWS Metrics Gem.
 toc: true
 ---
 
@@ -16,3 +16,15 @@ The AWS Metrics Gem provides an extensible, out-of-the-box instrumentation and a
 * reporting
 
 Using this Gem, metrics events can be generated and submitted in a thread safe manner from C++, Lua, and Script Canvas. You can deploy the sample CDK application as a reasonable starting point to use AWS services for real-time and batch analytics. You can extend the CDK application to a full production-ready solution to meet your production and scaling needs. Refer to the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/) for an in-depth look at the architecture.
+
+## Enabling the AWS Metrics Gem
+
+To enable the AWS Metrics Gem, do the following:
+
+1. Use **O3DE Project Manager** or the command line to add the **AWS Metrics Gem** to your project. AWS Metrics also requires the following Gems as dependencies:
+
+    * [AWS Core](/docs/user-guide/gems/reference/aws/aws-core)
+
+1. Build your project using Project Manager, Visual Studio, or CMake.
+
+1. Continue with [Setting Up AWS Metrics](./setup.md) to configure AWS Metrics for your project.
