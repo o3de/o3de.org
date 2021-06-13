@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: AzFramework::SpawnableEntitiesDefinition Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: AzFramework::SpawnableEntitiesDefinition Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -60,28 +63,28 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1df3e8dcbb470c7887dc23da0bf331e4"><td class="memItemLeft" align="right" valign="top"><a id="a1df3e8dcbb470c7887dc23da0bf331e4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html">AzFramework::SpawnableEntitiesDefinition</a>, &quot;{A9ED3F1F-4D69-4182-B0CD-EB561EEA7068}&quot;)</td></tr>
 <tr class="separator:a1df3e8dcbb470c7887dc23da0bf331e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045d1151d7bfe2bf83ec51d338fd2d41"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a045d1151d7bfe2bf83ec51d338fd2d41">SpawnAllEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, EntitySpawnCallback completionCallback={})=0</td></tr>
-<tr class="separator:a045d1151d7bfe2bf83ec51d338fd2d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2378da42b0f4f802e8e4eb68580ed6ef"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a2378da42b0f4f802e8e4eb68580ed6ef">SpawnEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZStd::vector&lt; size_t &gt; entityIndices, EntitySpawnCallback completionCallback={})=0</td></tr>
-<tr class="separator:a2378da42b0f4f802e8e4eb68580ed6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c077b28fbd5e025b75c84e1ff85d784"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a5c077b28fbd5e025b75c84e1ff85d784">DespawnAllEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, EntityDespawnCallback completionCallback={})=0</td></tr>
-<tr class="separator:a5c077b28fbd5e025b75c84e1ff85d784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaaa75b6d919068f0b5a0478e6ed8d0b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#aaaa75b6d919068f0b5a0478e6ed8d0b8">ReloadSpawnable</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; spawnable, ReloadSpawnableCallback completionCallback={})=0</td></tr>
-<tr class="separator:aaaa75b6d919068f0b5a0478e6ed8d0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8caa20140646017be56cb035944a5eaf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a8caa20140646017be56cb035944a5eaf">ListEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, ListEntitiesCallback listCallback)=0</td></tr>
-<tr class="separator:a8caa20140646017be56cb035944a5eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace542c805e9591dcdf6fed473dc84e27"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#ace542c805e9591dcdf6fed473dc84e27">ClaimEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, ClaimEntitiesCallback listCallback)=0</td></tr>
-<tr class="separator:ace542c805e9591dcdf6fed473dc84e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a056a2bd3292d677b52ac4bd9b21d263d"><td class="memItemLeft" align="right" valign="top"><a id="a056a2bd3292d677b52ac4bd9b21d263d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a056a2bd3292d677b52ac4bd9b21d263d">Barrier</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, BarrierCallback completionCallback)=0</td></tr>
-<tr class="memdesc:a056a2bd3292d677b52ac4bd9b21d263d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until all operations made on the provided ticket before the barrier call have completed. <br /></td></tr>
-<tr class="separator:a056a2bd3292d677b52ac4bd9b21d263d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ecdb641a615b9ee1694f926e7014b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a92ecdb641a615b9ee1694f926e7014b7">SpawnAllEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html">SpawnAllEntitiesOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a92ecdb641a615b9ee1694f926e7014b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c2cc10324885fa5f0549e893e6e2fe0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a6c2cc10324885fa5f0549e893e6e2fe0">SpawnEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZStd::vector&lt; size_t &gt; entityIndices, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html">SpawnEntitiesOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a6c2cc10324885fa5f0549e893e6e2fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9ebc6d1ed317c4a3a8e63ba74ed888"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a2e9ebc6d1ed317c4a3a8e63ba74ed888">DespawnAllEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html">DespawnAllEntitiesOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a2e9ebc6d1ed317c4a3a8e63ba74ed888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8941816a4c9984811ff9c2b35c6500"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a0f8941816a4c9984811ff9c2b35c6500">ReloadSpawnable</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; spawnable, <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html">ReloadSpawnableOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a0f8941816a4c9984811ff9c2b35c6500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab45bd77aec4104083e7a186bf5aede16"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#ab45bd77aec4104083e7a186bf5aede16">ListEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, ListEntitiesCallback listCallback, <a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:ab45bd77aec4104083e7a186bf5aede16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d7410815950c43b4a85eb64e50e885"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a58d7410815950c43b4a85eb64e50e885">ListIndicesAndEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, ListIndicesEntitiesCallback listCallback, <a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a58d7410815950c43b4a85eb64e50e885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d28a5c54bd9b7a77631a0495ab7c4da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a7d28a5c54bd9b7a77631a0495ab7c4da">ClaimEntities</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, ClaimEntitiesCallback listCallback, <a class="el" href="struct_az_framework_1_1_claim_entities_optional_args.html">ClaimEntitiesOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a7d28a5c54bd9b7a77631a0495ab7c4da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93abf59da2eb670a57bf9f7b04941285"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a93abf59da2eb670a57bf9f7b04941285">Barrier</a> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, BarrierCallback completionCallback, <a class="el" href="struct_az_framework_1_1_barrier_optional_args.html">BarrierOptionalArgs</a> optionalArgs={})=0</td></tr>
+<tr class="separator:a93abf59da2eb670a57bf9f7b04941285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:af83c36926f97f39e06eee13992769067"><td class="memItemLeft" align="right" valign="top"><a id="af83c36926f97f39e06eee13992769067"></a>
-virtual void *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTicket</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;spawnable)=0</td></tr>
-<tr class="separator:af83c36926f97f39e06eee13992769067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b3447dd7c333261fdfa968996e6222"><td class="memItemLeft" align="right" valign="top"><a id="ab5b3447dd7c333261fdfa968996e6222"></a>
+virtual AZStd::pair&lt; EntitySpawnTicket::Id, void * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateTicket</b> (AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; &amp;&amp;spawnable)=0</td></tr>
+<tr class="separator:ab5b3447dd7c333261fdfa968996e6222"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6ac0bb9b8626b6ca6849cb946ac974f"><td class="memItemLeft" align="right" valign="top"><a id="af6ac0bb9b8626b6ca6849cb946ac974f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DestroyTicket</b> (void *ticket)=0</td></tr>
 <tr class="separator:af6ac0bb9b8626b6ca6849cb946ac974f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,10 +115,63 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
 <tr class="separator:a156a0949c9d909eaef62efdd6a8badf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface definition to (de)spawn entities from a spawnable into the game world. While the callbacks of the individual calls are being processed they will block processing any other request. Callbacks can be issued from threads other than the one that issued the call, including the main thread. Calls on the same ticket are guaranteed to be executed in the order they are issued. Note that when issuing requests from multiple threads on the same ticket the order in which the requests are assigned to the ticket is not guaranteed. </p>
+<div class="textblock"><p>Interface definition to (de)spawn entities from a spawnable into the game world.</p>
+<p>While the callbacks of the individual calls are being processed they will block processing any other request. Callbacks can be issued from threads other than the one that issued the call, including the main thread.</p>
+<p>Calls on the same ticket are guaranteed to be executed in the order they are issued. Note that when issuing requests from multiple threads on the same ticket the order in which the requests are assigned to the ticket is not guaranteed.</p>
+<p>Most calls have a priority with values that range from 0 (highest priority) to 255 (lowest priority). The implementation of this interface may choose to use priority lanes which doesn't guarantee that higher priority requests happen before lower priority requests if they don't pass the priority lane threshold. Priority lanes and their thresholds are implementation specific and may differ between platforms. Note that if a call happened on a ticket with lower priority followed by a one with a higher priority the first lower priority call will still need to complete before the second higher priority call can be executed and the priority of the first call will not be updated. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ace542c805e9591dcdf6fed473dc84e27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace542c805e9591dcdf6fed473dc84e27">&#9670;&nbsp;</a></span>ClaimEntities()</h2>
+<a id="a93abf59da2eb670a57bf9f7b04941285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93abf59da2eb670a57bf9f7b04941285">&#9670;&nbsp;</a></span>Barrier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::SpawnableEntitiesDefinition::Barrier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;&#160;</td>
+          <td class="paramname"><em>ticket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BarrierCallback&#160;</td>
+          <td class="paramname"><em>completionCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_barrier_optional_args.html">BarrierOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Blocks until all operations made on the provided ticket before the barrier call have completed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticket</td><td>The ticket to monitor. </td></tr>
+    <tr><td class="paramname">completionCallback</td><td>Required callback that will be called as soon as the barrier has been reached. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_barrier_optional_args.html">BarrierOptionalArgs</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d28a5c54bd9b7a77631a0495ab7c4da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d28a5c54bd9b7a77631a0495ab7c4da">&#9670;&nbsp;</a></span>ClaimEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +189,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ClaimEntitiesCallback&#160;</td>
-          <td class="paramname"><em>listCallback</em>&#160;</td>
+          <td class="paramname"><em>listCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_claim_entities_optional_args.html">ClaimEntitiesOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -151,14 +213,15 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
   <table class="params">
     <tr><td class="paramname">ticket</td><td>Only the entities associated with this ticket will be released. </td></tr>
     <tr><td class="paramname">listCallback</td><td>Required callback that will be called to transfer the entities through. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_claim_entities_optional_args.html">ClaimEntitiesOptionalArgs</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a5c077b28fbd5e025b75c84e1ff85d784"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c077b28fbd5e025b75c84e1ff85d784">&#9670;&nbsp;</a></span>DespawnAllEntities()</h2>
+<a id="a2e9ebc6d1ed317c4a3a8e63ba74ed888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e9ebc6d1ed317c4a3a8e63ba74ed888">&#9670;&nbsp;</a></span>DespawnAllEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,8 +238,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EntityDespawnCallback&#160;</td>
-          <td class="paramname"><em>completionCallback</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html">DespawnAllEntitiesOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,15 +256,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
 <p>Removes all entities in the provided list from the environment. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ticket</td><td>The ticket previously used to spawn entities with. </td></tr>
-    <tr><td class="paramname">completionCallback</td><td>Optional callback that's called when despawning entities has completed. This can be called from a different thread than the one that made this function call. </td></tr>
+    <tr><td class="paramname">priority</td><td>The priority at which this call will be executed. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html">DespawnAllEntitiesOptionalArgs</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a8caa20140646017be56cb035944a5eaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8caa20140646017be56cb035944a5eaf">&#9670;&nbsp;</a></span>ListEntities()</h2>
+<a id="ab45bd77aec4104083e7a186bf5aede16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab45bd77aec4104083e7a186bf5aede16">&#9670;&nbsp;</a></span>ListEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +283,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ListEntitiesCallback&#160;</td>
-          <td class="paramname"><em>listCallback</em>&#160;</td>
+          <td class="paramname"><em>listCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -237,14 +307,65 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
   <table class="params">
     <tr><td class="paramname">ticket</td><td>Only the entities associated with this ticket will be listed. </td></tr>
     <tr><td class="paramname">listCallback</td><td>Required callback that will be called to list the entities on. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aaaa75b6d919068f0b5a0478e6ed8d0b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaaa75b6d919068f0b5a0478e6ed8d0b8">&#9670;&nbsp;</a></span>ReloadSpawnable()</h2>
+<a id="a58d7410815950c43b4a85eb64e50e885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d7410815950c43b4a85eb64e50e885">&#9670;&nbsp;</a></span>ListIndicesAndEntities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::SpawnableEntitiesDefinition::ListIndicesAndEntities </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;&#160;</td>
+          <td class="paramname"><em>ticket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ListIndicesEntitiesCallback&#160;</td>
+          <td class="paramname"><em>listCallback</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>List all entities that are spawned using this ticket with their spawnable index. Spawnables contain a flat list of entities, which are used as templates to spawn entities from. For every spawned entity the index of the entity in the spawnable that was used as a template is stored. This version of ListEntities will return both the entities and this index. The index can be used with SpawnEntities to create the same entities again. Note that the same index may appear multiple times as there are no restriction on how many instance of a specific entity can be created. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticket</td><td>Only the entities associated with this ticket will be listed. </td></tr>
+    <tr><td class="paramname">listCallback</td><td>Required callback that will be called to list the entities and indices on. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html">ListEntitiesOptionalArgs</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0f8941816a4c9984811ff9c2b35c6500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8941816a4c9984811ff9c2b35c6500">&#9670;&nbsp;</a></span>ReloadSpawnable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -267,8 +388,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ReloadSpawnableCallback&#160;</td>
-          <td class="paramname"><em>completionCallback</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html">ReloadSpawnableOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -284,17 +405,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
 </div><div class="memdoc">
 <p>Removes all entities in the provided list from the environment and reconstructs the entities from the provided spawnable. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ticket</td><td>Stores the results of the call. Use this ticket to spawn additional entities or to despawn them. </td></tr>
+    <tr><td class="paramname">ticket</td><td>Holds the information on the entities to reload. </td></tr>
+    <tr><td class="paramname">priority</td><td>The priority at which this call will be executed. </td></tr>
     <tr><td class="paramname">spawnable</td><td>The spawnable that will replace the existing spawnable. Both need to have the same asset id. </td></tr>
-    <tr><td class="paramname">completionCallback</td><td>Optional callback that's called when the entities have been reloaded. This can be called from a different thread than the one that made this function call. The returned list of entities contains all the replacement entities. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html">ReloadSpawnableOptionalArgs</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a045d1151d7bfe2bf83ec51d338fd2d41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a045d1151d7bfe2bf83ec51d338fd2d41">&#9670;&nbsp;</a></span>SpawnAllEntities()</h2>
+<a id="a92ecdb641a615b9ee1694f926e7014b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ecdb641a615b9ee1694f926e7014b7">&#9670;&nbsp;</a></span>SpawnAllEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,8 +433,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EntitySpawnCallback&#160;</td>
-          <td class="paramname"><em>completionCallback</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html">SpawnAllEntitiesOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -328,17 +450,16 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
 </div><div class="memdoc">
 <p>Spawn instances of all entities in the spawnable. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">spawnable</td><td>The <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> asset that will be used to create entity instances from. </td></tr>
     <tr><td class="paramname">ticket</td><td>Stores the results of the call. Use this ticket to spawn additional entities or to despawn them. </td></tr>
-    <tr><td class="paramname">completionCallback</td><td>Optional callback that's called when spawning entities has completed. This can be called from a different thread than the one that made the function call. The returned list of entities contains all the newly created entities. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html">SpawnAllEntitiesOptionalArgs</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a2378da42b0f4f802e8e4eb68580ed6ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2378da42b0f4f802e8e4eb68580ed6ef">&#9670;&nbsp;</a></span>SpawnEntities()</h2>
+<a id="a6c2cc10324885fa5f0549e893e6e2fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c2cc10324885fa5f0549e893e6e2fe0">&#9670;&nbsp;</a></span>SpawnEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,8 +482,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">EntitySpawnCallback&#160;</td>
-          <td class="paramname"><em>completionCallback</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html">SpawnEntitiesOptionalArgs</a>&#160;</td>
+          <td class="paramname"><em>optionalArgs</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -379,18 +500,22 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntitySpawnTicket</b
 <p>Spawn instances of some entities in the spawnable. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ticket</td><td>Stores the results of the call. Use this ticket to spawn additional entities or to despawn them. </td></tr>
+    <tr><td class="paramname">priority</td><td>The priority at which this call will be executed. </td></tr>
     <tr><td class="paramname">entityIndices</td><td>The indices into the template entities stored in the spawnable that will be used to spawn entities from. </td></tr>
-    <tr><td class="paramname">completionCallback</td><td>Optional callback that's called when spawning entities has completed. This can be called from a different thread than the one that made this function call. The returned list of entities contains all the newly created entities. </td></tr>
+    <tr><td class="paramname">optionalArgs</td><td>Optional additional arguments, see <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html">SpawnEntitiesOptionalArgs</a>. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Spawnable/SpawnableEntitiesInterface.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:54 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

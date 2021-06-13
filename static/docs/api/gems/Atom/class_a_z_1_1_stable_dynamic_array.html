@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt; Class Template Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -138,10 +141,14 @@ template&lt;class ... Args&gt; </td></tr>
 class AZ::StableDynamicArray&lt; T, ElementsPerPage, Allocator &gt;</h3>
 
 <p>A <a class="el" href="class_a_z_1_1_stable_dynamic_array.html">StableDynamicArray</a> uses a variable number of arrays to store data. Basically this container is a list of arrays, with some information to track usage within those arrays, some optimization to keep jumping through the list to a minimum, and a forward iterator to traverse the whole container. This container produces better cache locality when iterating on elements (vs a list) and keeps appending/removing cost low by reusing empty slots. Resizing is also contained to allocating new arrays. It will always place new items at the front-most slot of the first array with available space. DefragmentHandle() can be called to reorganize data to reduce the amount of empty slots. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>Gems/Atom/Utils/Code/Include/Atom/Utils/StableDynamicArray.h</li>
+<li>Gems/Atom/Utils/Code/Include/Atom/Utils/StableDynamicArray.inl</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:12 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:29 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: Class Members - Functions</title>
+<title>Open 3D Engine AzCore API Reference: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -196,14 +199,24 @@ $(function() {
 <li>RegisterCatalog()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_manager.html#a4107344b894096f5462d674c27cf187b">AZ::Data::AssetManager</a>
 </li>
+<li>RegisterCommandInvokerWithSettingsRegistry()
+: <a class="el" href="class_a_z_1_1_console.html#aba7a6cda5295e5aa19f3b29b69b321f9">AZ::Console</a>
+, <a class="el" href="class_a_z_1_1_i_console.html#abaadd721704e3b3736dbf8beb60ceeb7">AZ::IConsole</a>
+</li>
 <li>RegisterComponentDescriptor()
 : <a class="el" href="class_a_z_1_1_component_application_requests.html#a86572e12b22d18995b923cf38cfae0c4">AZ::ComponentApplicationRequests</a>
 </li>
 <li>RegisterCoreComponents()
 : <a class="el" href="class_a_z_1_1_component_application.html#a3426557bf7f28c2d69d731071b46f53a">AZ::ComponentApplication</a>
 </li>
+<li>RegisterEntityActivatedEventHandler()
+: <a class="el" href="class_a_z_1_1_component_application_requests.html#a844822648ff295e316c4fe5a5eff3c94">AZ::ComponentApplicationRequests</a>
+</li>
 <li>RegisterEntityAddedEventHandler()
 : <a class="el" href="class_a_z_1_1_component_application_requests.html#a67f4b568a5ff4c564c33f79ba5d803b1">AZ::ComponentApplicationRequests</a>
+</li>
+<li>RegisterEntityDeactivatedEventHandler()
+: <a class="el" href="class_a_z_1_1_component_application_requests.html#ae80df8949c4435b35d6a22405f14eb94">AZ::ComponentApplicationRequests</a>
 </li>
 <li>RegisterEntityRemovedEventHandler()
 : <a class="el" href="class_a_z_1_1_component_application_requests.html#aedcee5e44de78d0273e06bda9bd428e5">AZ::ComponentApplicationRequests</a>
@@ -285,10 +298,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_slice_component_1_1_data_flags_per_entity.html#a55817789b0f2d3a5ff52e0a4407543fa">AZ::SliceComponent::DataFlagsPerEntity</a>
 </li>
 <li>RemapIds()
-: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a2e3d141f869778bd97d6ab0fe959dfff">AZ::IdUtils::Remapper&lt; IdType &gt;</a>
+: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a154b9f15344cf2474760309cb9758c6a">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>RemapIdsAndIdRefs()
-: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a1a37f8deac106335fcb89c220326b552">AZ::IdUtils::Remapper&lt; IdType &gt;</a>
+: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a728e640ad5a0ca5fe9eb82f57620bef8">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>Remove()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_file_i_o_base.html#ac1fe3fbe1a6f453d5a98a29fa2d4fe1b">AZ::IO::FileIOBase</a>
@@ -383,10 +396,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#aad2cb5d225e8e37d17c118bb9d0ffe95">AZ::IO::BasicPath&lt; StringType &gt;</a>
 </li>
 <li>ReplaceIdsAndIdRefs()
-: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#adaa208da0a78bb34c721f2e9e9110b3e">AZ::IdUtils::Remapper&lt; IdType &gt;</a>
+: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a17da2325c195d5afc341c895bb18754d">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>Report()
-: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#adde44a6b14138ef0685c201372e60dda">AZ::IO::Streamer</a>
+: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#a53b2b0781dde89a5df350eef4e278a05">AZ::IO::Streamer</a>
 , <a class="el" href="class_a_z_1_1_json_base_context.html#a0837adc7b83a586c4d588ff11c3c463d">AZ::JsonBaseContext</a>
 </li>
 <li>ReportError()
@@ -411,21 +424,21 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_debug_1_1_allocation_records.html#a5d85826ffb350897eb611a391b4d9644">AZ::Debug::AllocationRecords</a>
 </li>
 <li>Requeue()
-: <a class="el" href="class_a_z_1_1_scheduled_event.html#a25c6b09cf1e43a1b13522eedf395c57e">AZ::ScheduledEvent</a>
+: <a class="el" href="class_a_z_1_1_scheduled_event.html#a333c70dc2af6a95962397a35c290702b">AZ::ScheduledEvent</a>
 </li>
 <li>rerase()
 : <a class="el" href="class_a_z_std_1_1ring__buffer.html#ad5109d5a8e05a3dfb1d9325a0bb4158a">AZStd::ring_buffer&lt; T, Allocator &gt;</a>
 </li>
 <li>RescheduleRequest()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a6b994108864bd3f1317f2b1fa3fd45b6">AZ::IO::IStreamer</a>
-, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#ab25bf9a44dd808643553154404623f2f">AZ::IO::Streamer</a>
+, <a class="el" href="class_a_z_1_1_i_o_1_1_streamer.html#a6fff8e32ab85b8764e280e3c04b31f42">AZ::IO::Streamer</a>
 </li>
 <li>ReserveElement()
 : <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html#a25e487a40a58f37395725edc991339b7">AZ::SerializeContext::IDataContainer</a>
 </li>
 <li>reset()
 : <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1scoped__ref.html#adddd4870c58e345a7b136dbc952c4a35">AZ::Android::JNI::scoped_ref&lt; JniType &gt;</a>
-, <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a7c6e60414d65d3644a004ef7a166cfa5">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
+, <a class="el" href="class_a_z_1_1_android_1_1_j_n_i_1_1shared__ref.html#a4b5c3e60bdd1b0d3ab4ad53af3773535">AZ::Android::JNI::shared_ref&lt; JniType &gt;</a>
 </li>
 <li>Reset()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset.html#a1fbdafbcfbc4fd14e841a6b4f406a11f">AZ::Data::Asset&lt; T &gt;</a>
@@ -502,6 +515,11 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a2fad040e9cedfc2c66c1db876fac9677">AZ::Matrix3x4</a>
 , <a class="el" href="class_a_z_1_1_matrix4x4.html#a582e9f6d344b5a85adce7ae775639aad">AZ::Matrix4x4</a>
 </li>
+<li>RetrieveScaleSq()
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a9ab74e49f747566e0ff83e5a0a545976">AZ::Matrix3x3</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#a8bb43853131f81e6217c6754784d4cdc">AZ::Matrix3x4</a>
+, <a class="el" href="class_a_z_1_1_matrix4x4.html#ab1b789b7930c3dc269af77a491562662">AZ::Matrix4x4</a>
+</li>
 <li>RootDirectory()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_basic_path.html#a876c45aae9618dd23257983af10e9679">AZ::IO::BasicPath&lt; StringType &gt;</a>
 , <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a4621dfef401afc295bd370d3f94d41e2">AZ::IO::PathView</a>
@@ -526,15 +544,6 @@ $(function() {
 <li>RotateAroundLocalZ()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#a090faadf6afbaf83fbfb0b3f78313be4">AZ::TransformInterface</a>
 </li>
-<li>RotateByX()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a005b369b7d007eeac4adbabfe000c719">AZ::TransformInterface</a>
-</li>
-<li>RotateByY()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a76033bfe67cf7d94fd727164f46f0b9a">AZ::TransformInterface</a>
-</li>
-<li>RotateByZ()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a9f658c15807c11c6590177f538e20d36">AZ::TransformInterface</a>
-</li>
 <li>run()
 : <a class="el" href="class_a_z_1_1structured__task__group.html#afef8404f22ec22163145e4d80c0c1a31">AZ::structured_task_group</a>
 </li>
@@ -545,7 +554,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:48 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:06 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::Prefab::PrefabConversionUtils::PrefabProcessorContext Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -58,6 +61,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:a77262214b1afcb3c217d89be7b9c7ba2"><td class="memItemLeft" align="right" valign="top"><a id="a77262214b1afcb3c217d89be7b9c7ba2"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessedObjectStoreContainer</b> = AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_conversion_utils_1_1_processed_object_store.html">ProcessedObjectStore</a> &gt;</td></tr>
 <tr class="separator:a77262214b1afcb3c217d89be7b9c7ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e410c132fbf92b46d869ae6eff16f4"><td class="memItemLeft" align="right" valign="top"><a id="a62e410c132fbf92b46d869ae6eff16f4"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ProductAssetDependencyContainer</b> = AZStd::unordered_map&lt; AZ::Data::AssetId, AZStd::unordered_set&lt; AZ::Data::AssetId &gt; &gt;</td></tr>
+<tr class="separator:a62e410c132fbf92b46d869ae6eff16f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -73,9 +79,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4f156009806dd1d11e1c20f09a6c10bd"><td class="memItemLeft" align="right" valign="top"><a id="a4f156009806dd1d11e1c20f09a6c10bd"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddPrefab</b> (AZStd::string prefabName, PrefabDom prefab)</td></tr>
 <tr class="separator:a4f156009806dd1d11e1c20f09a6c10bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72d40241da496507affa5968c7a1b171"><td class="memItemLeft" align="right" valign="top"><a id="a72d40241da496507affa5968c7a1b171"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemovePrefab</b> (AZStd::string_view prefabName)</td></tr>
-<tr class="separator:a72d40241da496507affa5968c7a1b171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa87d92d26b33ed57be834f12eb190d4"><td class="memItemLeft" align="right" valign="top"><a id="aaa87d92d26b33ed57be834f12eb190d4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ListPrefabs</b> (const AZStd::function&lt; void(AZStd::string_view, PrefabDom &amp;)&gt; &amp;callback)</td></tr>
 <tr class="separator:aaa87d92d26b33ed57be834f12eb190d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,12 +88,30 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ListPrefabs</
 <tr class="memitem:a1c4f6d53f9dcf41fedc0b5ea8331afa0"><td class="memItemLeft" align="right" valign="top"><a id="a1c4f6d53f9dcf41fedc0b5ea8331afa0"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPrefabs</b> () const</td></tr>
 <tr class="separator:a1c4f6d53f9dcf41fedc0b5ea8331afa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e00183799ffe377eec8dbef5414e4c3"><td class="memItemLeft" align="right" valign="top"><a id="a3e00183799ffe377eec8dbef5414e4c3"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (AZStd::string prefabName, AZStd::string dependentPrefabName)</td></tr>
+<tr class="separator:a3e00183799ffe377eec8dbef5414e4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55e4a61bb49970a9b735d8f2c794f898"><td class="memItemLeft" align="right" valign="top"><a id="a55e4a61bb49970a9b735d8f2c794f898"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (AZStd::string prefabName, const AZ::Data::AssetId &amp;dependentAssetId)</td></tr>
+<tr class="separator:a55e4a61bb49970a9b735d8f2c794f898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a93042d9340971a7c262b3cf2d5923"><td class="memItemLeft" align="right" valign="top"><a id="a56a93042d9340971a7c262b3cf2d5923"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSpawnableProductAssetDependency</b> (uint32_t spawnableAssetSubId, uint32_t dependentSpawnableAssetSubId)</td></tr>
+<tr class="separator:a56a93042d9340971a7c262b3cf2d5923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a34273441851921ba36d46687dd6903"><td class="memItemLeft" align="right" valign="top"><a id="a2a34273441851921ba36d46687dd6903"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterProductAssetDependency</b> (const AZ::Data::AssetId &amp;assetId, const AZ::Data::AssetId &amp;dependentAssetId)</td></tr>
+<tr class="separator:a2a34273441851921ba36d46687dd6903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e728fca51dda376881152374f61700"><td class="memItemLeft" align="right" valign="top"><a id="ae3e728fca51dda376881152374f61700"></a>
 virtual ProcessedObjectStoreContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetProcessedObjects</b> ()</td></tr>
 <tr class="separator:ae3e728fca51dda376881152374f61700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af294d40b3563b70f87a9fa92157db764"><td class="memItemLeft" align="right" valign="top"><a id="af294d40b3563b70f87a9fa92157db764"></a>
 virtual const ProcessedObjectStoreContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetProcessedObjects</b> () const</td></tr>
 <tr class="separator:af294d40b3563b70f87a9fa92157db764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a6de5d246aaa24a1a30073b47d29562"><td class="memItemLeft" align="right" valign="top"><a id="a1a6de5d246aaa24a1a30073b47d29562"></a>
+virtual ProductAssetDependencyContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisteredProductAssetDependencies</b> ()</td></tr>
+<tr class="separator:a1a6de5d246aaa24a1a30073b47d29562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1ad3b7afe7f10c4623a13ccc952f7a"><td class="memItemLeft" align="right" valign="top"><a id="a5d1ad3b7afe7f10c4623a13ccc952f7a"></a>
+virtual const ProductAssetDependencyContainer &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegisteredProductAssetDependencies</b> () const</td></tr>
+<tr class="separator:a5d1ad3b7afe7f10c4623a13ccc952f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4668c028a5fc3515faac0367e0fd1f3e"><td class="memItemLeft" align="right" valign="top"><a id="a4668c028a5fc3515faac0367e0fd1f3e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPlatformTags</b> (AZ::PlatformTagSet tags)</td></tr>
 <tr class="separator:a4668c028a5fc3515faac0367e0fd1f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,9 +142,9 @@ NamedPrefabContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_pre
 <tr class="memitem:a3baded51863a3bc7eaffe1f01611ad9e"><td class="memItemLeft" align="right" valign="top"><a id="a3baded51863a3bc7eaffe1f01611ad9e"></a>
 ProcessedObjectStoreContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_products</b></td></tr>
 <tr class="separator:a3baded51863a3bc7eaffe1f01611ad9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36953b142bdb616be68c1c6e46b00071"><td class="memItemLeft" align="right" valign="top"><a id="a36953b142bdb616be68c1c6e46b00071"></a>
-AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_delayedDelete</b></td></tr>
-<tr class="separator:a36953b142bdb616be68c1c6e46b00071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8a6da7e6eeb1e34ebbe5afe12febee"><td class="memItemLeft" align="right" valign="top"><a id="acc8a6da7e6eeb1e34ebbe5afe12febee"></a>
+ProductAssetDependencyContainer&#160;</td><td class="memItemRight" valign="bottom"><b>m_registeredProductAssetDependencies</b></td></tr>
+<tr class="separator:acc8a6da7e6eeb1e34ebbe5afe12febee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70bd160711df8dae18d1d2c9133d13ad"><td class="memItemLeft" align="right" valign="top"><a id="a70bd160711df8dae18d1d2c9133d13ad"></a>
 AZ::PlatformTagSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_platformTags</b></td></tr>
 <tr class="separator:a70bd160711df8dae18d1d2c9133d13ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,10 +158,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isIterating</b> { f
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_completedSuccessfully</b> { true }</td></tr>
 <tr class="separator:a4ac05dcb4a55046529c628c131e7d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Spawnable/PrefabProcessorContext.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:10 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:29 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

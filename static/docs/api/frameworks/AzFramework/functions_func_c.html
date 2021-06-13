@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: Class Members - Functions</title>
+<title>Open 3D Engine AzFramework API Reference: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -59,17 +62,12 @@ $(function() {
 <li>ChangeChunkPriority()
 : <a class="el" href="class_az_framework_1_1_streaming_install_1_1_streaming_install_requests.html#a73058a8123f639ca6fcda9c05e43ffce">AzFramework::StreamingInstall::StreamingInstallRequests</a>
 </li>
-<li>Chunk()
-: <a class="el" href="class_az_framework_1_1_network_context_1_1_class_builder.html#aec962b45f623ecd8fd1b7001478d5b47">AzFramework::NetworkContext::ClassBuilder</a>
-</li>
 <li>ClaimEntities()
-: <a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#ace542c805e9591dcdf6fed473dc84e27">AzFramework::SpawnableEntitiesDefinition</a>
-</li>
-<li>Class()
-: <a class="el" href="class_az_framework_1_1_network_context.html#a4354c0df47840e962f257b2c6bd43afe">AzFramework::NetworkContext</a>
+: <a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a7d28a5c54bd9b7a77631a0495ab7c4da">AzFramework::SpawnableEntitiesDefinition</a>
 </li>
 <li>Clear()
-: <a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#acf0a8a42ecd4f16e22d27ede1bc8871f">AzFramework::SpawnableEntitiesContainer</a>
+: <a class="el" href="class_az_framework_1_1_cameras.html#ad88f21c92895a386657a3f30160e4fc8">AzFramework::Cameras</a>
+, <a class="el" href="class_az_framework_1_1_spawnable_entities_container.html#acf0a8a42ecd4f16e22d27ede1bc8871f">AzFramework::SpawnableEntitiesContainer</a>
 </li>
 <li>CloneEntity()
 : <a class="el" href="class_az_framework_1_1_entity_context_requests.html#aebafcf36b2facbac57719e176b4d88f2">AzFramework::EntityContextRequests</a>
@@ -81,7 +79,7 @@ $(function() {
 : <a class="el" href="class_az_physics_1_1_collision_group.html#a942997a0d6d243cdc365c3ce58806685">AzPhysics::CollisionGroup</a>
 </li>
 <li>CollisionLayer()
-: <a class="el" href="class_az_physics_1_1_collision_layer.html#ab38316c0dea283a89f58a41ad9cc3e3b">AzPhysics::CollisionLayer</a>
+: <a class="el" href="class_az_physics_1_1_collision_layer.html#ac80905b619d5aa93afce368aff4739c8">AzPhysics::CollisionLayer</a>
 </li>
 <li>Compare()
 : <a class="el" href="class_az_framework_1_1_input_channel_notifications.html#a7bfa5eba49541f327b37b90a05ce22c6">AzFramework::InputChannelNotifications</a>
@@ -107,6 +105,9 @@ $(function() {
 </li>
 <li>ConnectionFailed()
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_system_connection_notifications.html#ab251c65cfaec60c28a0973c72561eda7">AzFramework::AssetSystem::AssetSystemConnectionNotifications</a>
+</li>
+<li>ConnectToEvents()
+: <a class="el" href="class_az_framework_1_1_i_scene_system.html#a26a44a527a6830d78ca7d141399d6b43">AzFramework::ISceneSystem</a>
 </li>
 <li>ConvertToScreenSpaceCoordinates()
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_position_data2_d.html#acf9a4cc326eef57cdd84feeb39a15623">AzFramework::InputChannel::PositionData2D</a>
@@ -134,9 +135,6 @@ $(function() {
 , <a class="el" href="class_az_framework_1_1_input_device_touch_1_1_implementation.html#a618cdd38ce880496bffcedfff6f5cb3b">AzFramework::InputDeviceTouch::Implementation</a>
 , <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard_1_1_implementation.html#a5957326e51da158651240ae5a90135d5">AzFramework::InputDeviceVirtualKeyboard::Implementation</a>
 </li>
-<li>CreateCharacter()
-: <a class="el" href="class_physics_1_1_character_system_requests.html#a8790c20847bb6941f5348cc6b420f155">Physics::CharacterSystemRequests</a>
-</li>
 <li>CreateCollisionGroup()
 : <a class="el" href="class_physics_1_1_collision_requests.html#a37720a3a0ee385cd480ec843fb69386a">Physics::CollisionRequests</a>
 </li>
@@ -162,29 +160,26 @@ $(function() {
 <li>CreateGroup()
 : <a class="el" href="class_az_physics_1_1_collision_groups.html#ab5eb6e65b3fca7041a917a6cd030b32c">AzPhysics::CollisionGroups</a>
 </li>
-<li>CreateReplicaChunk()
-: <a class="el" href="class_az_framework_1_1_network_context.html#a7d3d3183757421682c991e71a3dfe78a">AzFramework::NetworkContext</a>
-</li>
 <li>CreateScene()
-: <a class="el" href="class_az_framework_1_1_scene_system_requests.html#ade4447afffb76f46703153ce55fd7180">AzFramework::SceneSystemRequests</a>
+: <a class="el" href="class_az_framework_1_1_i_scene_system.html#a967e1c41b5609dd7163ad9f7aa8dc079">AzFramework::ISceneSystem</a>
 </li>
-<li>CreateSystemReplica()
-: <a class="el" href="class_az_framework_1_1_net_binding_system_impl.html#a83cea9eaa338e7ad620ef9cc8d9fa320">AzFramework::NetBindingSystemImpl</a>
+<li>CreateSceneWithParent()
+: <a class="el" href="class_az_framework_1_1_i_scene_system.html#aef296851ae2f09e3f8b78392a1b0e1b5">AzFramework::ISceneSystem</a>
 </li>
 <li>CreateVisibilityScene()
 : <a class="el" href="class_az_framework_1_1_i_visibility_system.html#a278be8ff9c26595586c445b4d8577c7a">AzFramework::IVisibilitySystem</a>
 </li>
-<li>CTOR_DATA_OVERLOAD()
-: <a class="el" href="class_az_framework_1_1_network_context_1_1_class_builder.html#a1d1008c7a1b7e971956aaef2295bd639">AzFramework::NetworkContext::ClassBuilder</a>
-</li>
 <li>CurrentlyInstantiatingSlice()
 : <a class="el" href="class_az_framework_1_1_slice_entity_ownership_service_requests.html#a26a67a787b2b22963abb4c430dc51878">AzFramework::SliceEntityOwnershipServiceRequests</a>
+</li>
+<li>CursorDelta()
+: <a class="el" href="struct_az_framework_1_1_cursor_state.html#a506c9701c3ce93ff2e4a890a85f801a7">AzFramework::CursorState</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:56 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:14 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

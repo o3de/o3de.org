@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: AzFramework::RotateCameraInput Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: AzFramework::RotateCameraInput Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -43,9 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_az_framework_1_1_rotate_camera_input-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzFramework::RotateCameraInput Class Reference</div>  </div>
@@ -54,19 +55,14 @@ $(function() {
 
 <p>Inherits <a class="el" href="class_az_framework_1_1_camera_input.html">AzFramework::CameraInput</a>.</p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_rotate_camera_input_1_1_props.html">Props</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3ba20aa0522e943e2eea42d2ca0f8a09"><td class="memItemLeft" align="right" valign="top"><a id="a3ba20aa0522e943e2eea42d2ca0f8a09"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RotateCameraInput</b> (const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> channelId)</td></tr>
-<tr class="separator:a3ba20aa0522e943e2eea42d2ca0f8a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d76e6948f8226f8d887aea1a740f48"><td class="memItemLeft" align="right" valign="top"><a id="a93d76e6948f8226f8d887aea1a740f48"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> (const InputEvent &amp;event) override</td></tr>
-<tr class="separator:a93d76e6948f8226f8d887aea1a740f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ec2bf6718eeffb54e0a61cc3093295"><td class="memItemLeft" align="right" valign="top"><a id="a84ec2bf6718eeffb54e0a61cc3093295"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RotateCameraInput</b> (<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a> rotateChannelId)</td></tr>
+<tr class="separator:a84ec2bf6718eeffb54e0a61cc3093295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8806f10d464d6fa18c5775fbe17e01d"><td class="memItemLeft" align="right" valign="top"><a id="ad8806f10d464d6fa18c5775fbe17e01d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleEvents</b> (const InputEvent &amp;event, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta) override</td></tr>
+<tr class="separator:ad8806f10d464d6fa18c5775fbe17e01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47d1d25725cc09f0610b7029a4867c63"><td class="memItemLeft" align="right" valign="top"><a id="a47d1d25725cc09f0610b7029a4867c63"></a>
 <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StepCamera</b> (const <a class="el" href="struct_az_framework_1_1_camera.html">Camera</a> &amp;targetCamera, const <a class="el" href="struct_az_framework_1_1_screen_vector.html">ScreenVector</a> &amp;cursorDelta, float scrollDelta, float deltaTime) override</td></tr>
 <tr class="separator:a47d1d25725cc09f0610b7029a4867c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,15 +98,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Exclusive</b> () const</td></tr>
 <tr class="separator:a220f31242a709eafd576f55ddff1e960 inherit pub_methods_class_az_framework_1_1_camera_input"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a019ba0898b7fa53553120fcde551e269"><td class="memItemLeft" align="right" valign="top"><a id="a019ba0898b7fa53553120fcde551e269"></a>
-<a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_channelId</b></td></tr>
-<tr class="separator:a019ba0898b7fa53553120fcde551e269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c090e2d43b7d6220c283c100716d7ab"><td class="memItemLeft" align="right" valign="top"><a id="a5c090e2d43b7d6220c283c100716d7ab"></a>
-struct <a class="el" href="struct_az_framework_1_1_rotate_camera_input_1_1_props.html">AzFramework::RotateCameraInput::Props</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_props</b></td></tr>
-<tr class="separator:a5c090e2d43b7d6220c283c100716d7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_class_az_framework_1_1_camera_input"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_az_framework_1_1_camera_input')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_az_framework_1_1_camera_input.html">AzFramework::CameraInput</a></td></tr>
@@ -125,10 +112,13 @@ Additional Inherited Members</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetImpl</b> ()</td></tr>
 <tr class="separator:ac0da4bb90f788e0004b3d0097726a3a0 inherit pro_methods_class_az_framework_1_1_camera_input"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Viewport/CameraInput.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:53 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

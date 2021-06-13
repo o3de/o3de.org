@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: Member List</title>
+<title>Open 3D Engine Atom Gem API Reference: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -62,11 +65,13 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a71cbf5453c67ecc8d16bf271ffaae6bc">GetNumCullables</a>() const</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>m_cullDataConcurrencyCheck</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_debugCtx</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>m_mutex</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr bgcolor="#f0f0f0"><td class="entry"><b>m_occlusionPlanes</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>m_parentScene</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>m_visScene</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#ad14fe80971d60c2287733c7e964b1129">ProcessCullables</a>(const Scene &amp;scene, View &amp;view, AZ::Job &amp;parentJob)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#adad78311446f60233c7adf2f8fccc944">RegisterOrUpdateCullable</a>(Cullable &amp;cullable)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>OcclusionPlaneVector</b> typedef (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#ad14fe80971d60c2287733c7e964b1129">ProcessCullables</a>(const Scene &amp;scene, View &amp;view, AZ::Job &amp;parentJob)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#adad78311446f60233c7adf2f8fccc944">RegisterOrUpdateCullable</a>(Cullable &amp;cullable)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8c4de8cce94ac3ce84c686ef71d5d9a9">SetOcclusionPlanes</a>(const OcclusionPlaneVector &amp;occlusionPlanes)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a30d4543e681add3e440f2c6c8ba75f14">UnregisterCullable</a>(Cullable &amp;cullable)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>WorkListCapacity</b> (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>WorkListType</b> typedef (defined in <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a>)</td><td class="entry"><a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html">AZ::RPI::CullingScene</a></td><td class="entry"></td></tr>
@@ -74,7 +79,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:16 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:33 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: AzFramework::DebugDisplayRequests Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: AzFramework::DebugDisplayRequests Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -58,6 +61,8 @@ $(function() {
 <p><code>#include &lt;EntityDebugDisplayBus.h&gt;</code></p>
 
 <p>Inherits EBusTraits.</p>
+
+<p>Inherited by UnitTest::TestDebugDisplayRequests.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -109,6 +114,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireBox</
 <tr class="memitem:a4d8d24bab5e2b7092f32ecea2a092f6f"><td class="memItemLeft" align="right" valign="top"><a id="a4d8d24bab5e2b7092f32ecea2a092f6f"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSolidBox</b> (const AZ::Vector3 &amp;min, const AZ::Vector3 &amp;max)</td></tr>
 <tr class="separator:a4d8d24bab5e2b7092f32ecea2a092f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f372b5ff8c56dfc5f632814a53df77c"><td class="memItemLeft" align="right" valign="top"><a id="a7f372b5ff8c56dfc5f632814a53df77c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireOBB</b> (const AZ::Vector3 &amp;center, const AZ::Vector3 &amp;axisX, const AZ::Vector3 &amp;axisY, const AZ::Vector3 &amp;axisZ, const AZ::Vector3 &amp;halfExtents)</td></tr>
+<tr class="separator:a7f372b5ff8c56dfc5f632814a53df77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd1e1e6d9cd3025cd42644145d713940"><td class="memItemLeft" align="right" valign="top"><a id="acd1e1e6d9cd3025cd42644145d713940"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSolidOBB</b> (const AZ::Vector3 &amp;center, const AZ::Vector3 &amp;axisX, const AZ::Vector3 &amp;axisY, const AZ::Vector3 &amp;axisZ, const AZ::Vector3 &amp;halfExtents)</td></tr>
 <tr class="separator:acd1e1e6d9cd3025cd42644145d713940"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,12 +147,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawLine2dGra
 <tr class="memitem:af576fa483a079910a95dafb195ceb53e"><td class="memItemLeft" align="right" valign="top"><a id="af576fa483a079910a95dafb195ceb53e"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireCircle2d</b> (const AZ::Vector2 &amp;center, float radius, float z)</td></tr>
 <tr class="separator:af576fa483a079910a95dafb195ceb53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8adc158129e2699f33bae7477707f59"><td class="memItemLeft" align="right" valign="top"><a id="ae8adc158129e2699f33bae7477707f59"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTerrainCircle</b> (const AZ::Vector3 &amp;worldPos, float radius, float height)</td></tr>
-<tr class="separator:ae8adc158129e2699f33bae7477707f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82f4c889128dc541ad7b44d81126c038"><td class="memItemLeft" align="right" valign="top"><a id="a82f4c889128dc541ad7b44d81126c038"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTerrainCircle</b> (const AZ::Vector3 &amp;center, float radius, float angle1, float angle2, float height)</td></tr>
-<tr class="separator:a82f4c889128dc541ad7b44d81126c038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a4d2711a2da0cda2ae54bdc58ecb163"><td class="memItemLeft" align="right" valign="top"><a id="a7a4d2711a2da0cda2ae54bdc58ecb163"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawArc</b> (const AZ::Vector3 &amp;pos, float radius, float startAngleDegrees, float sweepAngleDegrees, float angularStepDegrees, int referenceAxis=2)</td></tr>
 <tr class="separator:a7a4d2711a2da0cda2ae54bdc58ecb163"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,9 +159,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawCircle</b
 <tr class="memitem:a9df6423332a900b8965cba0f9a0036e7"><td class="memItemLeft" align="right" valign="top"><a id="a9df6423332a900b8965cba0f9a0036e7"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawHalfDottedCircle</b> (const AZ::Vector3 &amp;pos, float radius, const AZ::Vector3 &amp;viewPos, int nUnchangedAxis=2)</td></tr>
 <tr class="separator:a9df6423332a900b8965cba0f9a0036e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff986f20aab68958e63be38a7774ceb4"><td class="memItemLeft" align="right" valign="top"><a id="aff986f20aab68958e63be38a7774ceb4"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawCone</b> (const AZ::Vector3 &amp;pos, const AZ::Vector3 &amp;dir, float radius, float height, bool drawShaded=true)</td></tr>
-<tr class="separator:aff986f20aab68958e63be38a7774ceb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e72be874866d15aedf6f97b69ad70b8"><td class="memItemLeft" align="right" valign="top"><a id="a5e72be874866d15aedf6f97b69ad70b8"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireCone</b> (const AZ::Vector3 &amp;pos, const AZ::Vector3 &amp;dir, float radius, float height)</td></tr>
+<tr class="separator:a5e72be874866d15aedf6f97b69ad70b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f0b9bd01db2556ff86533957af6af80"><td class="memItemLeft" align="right" valign="top"><a id="a6f0b9bd01db2556ff86533957af6af80"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSolidCone</b> (const AZ::Vector3 &amp;pos, const AZ::Vector3 &amp;dir, float radius, float height, bool drawShaded=true)</td></tr>
+<tr class="separator:a6f0b9bd01db2556ff86533957af6af80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7673de9fcd2a88c2c1b71859f9ffa3bf"><td class="memItemLeft" align="right" valign="top"><a id="a7673de9fcd2a88c2c1b71859f9ffa3bf"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireCylinder</b> (const AZ::Vector3 &amp;center, const AZ::Vector3 &amp;axis, float radius, float height)</td></tr>
 <tr class="separator:a7673de9fcd2a88c2c1b71859f9ffa3bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,12 +174,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawSolidCyli
 <tr class="memitem:aed1b470c4205a52fb31935c4b25e9093"><td class="memItemLeft" align="right" valign="top"><a id="aed1b470c4205a52fb31935c4b25e9093"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireCapsule</b> (const AZ::Vector3 &amp;center, const AZ::Vector3 &amp;axis, float radius, float heightStraightSection)</td></tr>
 <tr class="separator:aed1b470c4205a52fb31935c4b25e9093"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5e255a94a2be1ef466bd9699ad5f4d6"><td class="memItemLeft" align="right" valign="top"><a id="af5e255a94a2be1ef466bd9699ad5f4d6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTerrainRect</b> (float x1, float y1, float x2, float y2, float height)</td></tr>
-<tr class="separator:af5e255a94a2be1ef466bd9699ad5f4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ecf32cde55f0030054d7fa02cd0c9bb"><td class="memItemLeft" align="right" valign="top"><a id="a0ecf32cde55f0030054d7fa02cd0c9bb"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTerrainLine</b> (AZ::Vector3 worldPos1, AZ::Vector3 worldPos2)</td></tr>
-<tr class="separator:a0ecf32cde55f0030054d7fa02cd0c9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a811ccc9b552e6ae52ae1822c1a15d637"><td class="memItemLeft" align="right" valign="top"><a id="a811ccc9b552e6ae52ae1822c1a15d637"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawWireSphere</b> (const AZ::Vector3 &amp;pos, float radius)</td></tr>
 <tr class="separator:a811ccc9b552e6ae52ae1822c1a15d637"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,21 +201,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Draw2dTextLab
 <tr class="memitem:a147530951f7f1f8a6c1722ed187f61f2"><td class="memItemLeft" align="right" valign="top"><a id="a147530951f7f1f8a6c1722ed187f61f2"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTextOn2DBox</b> (const AZ::Vector3 &amp;pos, const char *text, float textScale, const AZ::Vector4 &amp;TextColor, const AZ::Vector4 &amp;TextBackColor)</td></tr>
 <tr class="separator:a147530951f7f1f8a6c1722ed187f61f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f2c8fbeef6885a29affd3cc0b903817"><td class="memItemLeft" align="right" valign="top"><a id="a4f2c8fbeef6885a29affd3cc0b903817"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTextureLabel</b> (ITexture *texture, const AZ::Vector3 &amp;pos, float sizeX, float sizeY, int texIconFlags)</td></tr>
-<tr class="separator:a4f2c8fbeef6885a29affd3cc0b903817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8df4fa5e445da2bcb47c8efdd7ed6a13"><td class="memItemLeft" align="right" valign="top"><a id="a8df4fa5e445da2bcb47c8efdd7ed6a13"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTextureLabel</b> (int textureId, const AZ::Vector3 &amp;pos, float sizeX, float sizeY, int texIconFlags)</td></tr>
-<tr class="separator:a8df4fa5e445da2bcb47c8efdd7ed6a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5367956159e63d2ce63311d39ceda14d"><td class="memItemLeft" align="right" valign="top"><a id="a5367956159e63d2ce63311d39ceda14d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLineWidth</b> (float width)</td></tr>
 <tr class="separator:a5367956159e63d2ce63311d39ceda14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a850f83a003350e9200f5e94cd1f2060e"><td class="memItemLeft" align="right" valign="top"><a id="a850f83a003350e9200f5e94cd1f2060e"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVisible</b> (const AZ::Aabb &amp;bounds)</td></tr>
 <tr class="separator:a850f83a003350e9200f5e94cd1f2060e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0efae5b32904d364cffd8440f84799d"><td class="memItemLeft" align="right" valign="top"><a id="ae0efae5b32904d364cffd8440f84799d"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>SetFillMode</b> (int nFillMode)</td></tr>
-<tr class="separator:ae0efae5b32904d364cffd8440f84799d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fae2fa1a1b58407527a048e0ff1c772"><td class="memItemLeft" align="right" valign="top"><a id="a4fae2fa1a1b58407527a048e0ff1c772"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLineWidth</b> ()</td></tr>
 <tr class="separator:a4fae2fa1a1b58407527a048e0ff1c772"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,12 +240,6 @@ virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</
 <tr class="memitem:a034faf151a63fe10b7a1fcac1b913fe6"><td class="memItemLeft" align="right" valign="top"><a id="a034faf151a63fe10b7a1fcac1b913fe6"></a>
 virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>SetState</b> (AZ::u32 state)</td></tr>
 <tr class="separator:a034faf151a63fe10b7a1fcac1b913fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2c98f8ee7a4a14076f5807d076d985"><td class="memItemLeft" align="right" valign="top"><a id="a9b2c98f8ee7a4a14076f5807d076d985"></a>
-virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>SetStateFlag</b> (AZ::u32 state)</td></tr>
-<tr class="separator:a9b2c98f8ee7a4a14076f5807d076d985"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05f5fa1c042298ecce20a0cf140186db"><td class="memItemLeft" align="right" valign="top"><a id="a05f5fa1c042298ecce20a0cf140186db"></a>
-virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>ClearStateFlag</b> (AZ::u32 state)</td></tr>
-<tr class="separator:a05f5fa1c042298ecce20a0cf140186db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed3c4fc89c40d96bb76274c61dfefdcd"><td class="memItemLeft" align="right" valign="top"><a id="aed3c4fc89c40d96bb76274c61dfefdcd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PushMatrix</b> (const AZ::Transform &amp;tm)</td></tr>
 <tr class="separator:aed3c4fc89c40d96bb76274c61dfefdcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,10 +258,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_framework_1_1_debug_display_requests.html" title="DebugDisplayRequests provides a debug draw api to be used by components and viewport features.">DebugDisplayRequests</a> provides a debug draw api to be used by components and viewport features. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Entity/EntityDebugDisplayBus.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:52 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:10 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

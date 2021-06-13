@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::ToolsApplicationRequests Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::ToolsApplicationRequests Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -78,6 +81,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae57e8d16c488eb509eb2783a208410e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e87a9d25a8c4145245fa59d7b98213b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a9e87a9d25a8c4145245fa59d7b98213b">RemoveDirtyEntity</a> (AZ::EntityId target)=0</td></tr>
 <tr class="separator:a9e87a9d25a8c4145245fa59d7b98213b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d0bad742df52ffb55b737187673c42b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a7d0bad742df52ffb55b737187673c42b">ClearDirtyEntities</a> ()=0</td></tr>
+<tr class="separator:a7d0bad742df52ffb55b737187673c42b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d14018e2dc8c797032e2fb8e8075ded"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a9d14018e2dc8c797032e2fb8e8075ded">IsDuringUndoRedo</a> ()=0</td></tr>
 <tr class="separator:a9d14018e2dc8c797032e2fb8e8075ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d75548eb4017ed9b7431b78cae7c823"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a8d75548eb4017ed9b7431b78cae7c823">UndoPressed</a> ()=0</td></tr>
@@ -117,6 +122,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreEntitiesEd
 <tr class="separator:afbf2feb294ec6c424ec7182a29e61c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabf8fbe105ab11d9c80ec8e1fa8096b2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#aabf8fbe105ab11d9c80ec8e1fa8096b2">AreAnyEntitiesSelected</a> ()=0</td></tr>
 <tr class="separator:aabf8fbe105ab11d9c80ec8e1fa8096b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08a22a489e46c31ffe0d78880812871a"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a08a22a489e46c31ffe0d78880812871a">GetSelectedEntitiesCount</a> ()=0</td></tr>
+<tr class="separator:a08a22a489e46c31ffe0d78880812871a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c3a356dfcf74063aa237b4537578528"><td class="memItemLeft" align="right" valign="top">virtual const EntityIdList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a8c3a356dfcf74063aa237b4537578528">GetSelectedEntities</a> ()=0</td></tr>
 <tr class="separator:a8c3a356dfcf74063aa237b4537578528"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab13ac2d363c9ceff5cec1bd03fcc5a2d"><td class="memItemLeft" align="right" valign="top">virtual const EntityIdList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ab13ac2d363c9ceff5cec1bd03fcc5a2d">GetHighlightedEntities</a> ()=0</td></tr>
@@ -478,6 +485,32 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean value indicating if the file is writable after the operation. </dd></dl>
+
+</div>
+</div>
+<a id="a7d0bad742df52ffb55b737187673c42b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d0bad742df52ffb55b737187673c42b">&#9670;&nbsp;</a></span>ClearDirtyEntities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::ToolsApplicationRequests::ClearDirtyEntities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Clears the dirty entity set. </p>
 
 </div>
 </div>
@@ -1206,6 +1239,32 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a08a22a489e46c31ffe0d78880812871a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08a22a489e46c31ffe0d78880812871a">&#9670;&nbsp;</a></span>GetSelectedEntitiesCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int AzToolsFramework::ToolsApplicationRequests::GetSelectedEntitiesCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of selected entities. </p>
+
+</div>
+</div>
 <a id="a1f62c085136165095738cb30652e73cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f62c085136165095738cb30652e73cf">&#9670;&nbsp;</a></span>GetUndoCache()</h2>
 
@@ -1861,10 +1920,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/API/ToolsApplicationAPI.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:08 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:27 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: Deprecated List</title>
+<title>Open 3D Engine AzCore API Reference: Deprecated List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -44,94 +47,54 @@ $(function() {
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="class_a_z_1_1_allocator_base.html#ab8cde659f584df96b281b961cdb54566">AZ::AllocatorBase::ProfileReallocation</a>  (void *ptr, void *newPtr, size_t newSize, size_t newAlignment)</dt>
-<dd><a class="anchor" id="_deprecated000027"></a>Please use ProfileReallocationBegin/ProfileReallocationEnd instead.  </dd>
+<dd><a class="anchor" id="_deprecated000007"></a>Please use ProfileReallocationBegin/ProfileReallocationEnd instead.  </dd>
 <dt>Member <a class="el" href="struct_a_z_1_1_behavior_context_1_1_class_builder.html#a4b272e20319297b4fee7954b8a7f38b8">AZ::BehaviorContext::ClassBuilder&lt; C &gt;::Method</a>  (const char *name, Function, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000032"></a>Use "Method(const char* name, Function f, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp; args, const char* dbgDesc = nullptr)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </p>
-<p class="enddd"><a class="anchor" id="_deprecated000033"></a>Use "Method(const char* name, Function f, const char* deprecatedName, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp; args, const char* dbgDesc = nullptr)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits  </p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000012"></a>Use "Method(const char* name, Function f, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp; args, const char* dbgDesc = nullptr)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits </p>
+<p class="enddd"><a class="anchor" id="_deprecated000013"></a>Use "Method(const char* name, Function f, const char* deprecatedName, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp; args, const char* dbgDesc = nullptr)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits  </p>
 </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_behavior_context.html#a8489a68356cd8ae1ed45a0e6539b6144">AZ::BehaviorContext::Method</a>  (const char *name, Function f, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000031"></a>Use "Method(const char*, Function, const char*, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits  </dd>
+<dd><a class="anchor" id="_deprecated000011"></a>Use "Method(const char*, Function, const char*, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_behavior_context.html#a3eca1e3fb495cc9d8c0c739c5451ce3f">AZ::BehaviorContext::Method</a>  (const char *name, Function f, const <a class="el" href="class_a_z_std_1_1array.html">AZStd::array</a>&lt; <a class="el" href="struct_a_z_1_1_behavior_parameter_overrides.html">BehaviorParameterOverrides</a>, AZStd::function_traits&lt; Function &gt;::num_args &gt; &amp;args, const char *dbgDesc=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000028"></a>Use "Method(const char*, Function, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead  </dd>
+<dd><a class="anchor" id="_deprecated000008"></a>Use "Method(const char*, Function, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_behavior_context.html#a442780874f7f74cc450e0179248b3bb5">AZ::BehaviorContext::Method</a>  (const char *name, Function f, const char *deprecatedName, <a class="el" href="class_a_z_1_1_behavior_values.html">BehaviorValues</a> *defaultValues=nullptr, const char *dbgDesc=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000029"></a>Use "Method(const char*, Function, const char*, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead  </dd>
+<dd><a class="anchor" id="_deprecated000009"></a>Use "Method(const char*, Function, const char*, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_behavior_context.html#ad9dd62d502fa9aa44392550cbbee494f">AZ::BehaviorContext::~BehaviorContext</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000030"></a>Use "Method(const char*, Function, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits  </dd>
+<dd><a class="anchor" id="_deprecated000010"></a>Use "Method(const char*, Function, const AZStd::array&lt;ParameterOverrides, AZStd::function_traits&lt;Function&gt;::num_args&gt;&amp;, const char*)" instead This method does not support passing in argument names and tooltips nor does it support overriding specific parameter Behavior traits  </dd>
 <dt>Member <a class="el" href="namespace_a_z.html#a4f9fb16a902b6f99bafcfbd220d9b10a">AZ::DynamicPrefabAsset</a>  </dt>
-<dd><a class="anchor" id="_deprecated000037"></a>Use <a class="el" href="class_a_z_1_1_dynamic_slice_asset.html">DynamicSliceAsset</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000017"></a>Use <a class="el" href="class_a_z_1_1_dynamic_slice_asset.html">DynamicSliceAsset</a>.  </dd>
 <dt>Member <a class="el" href="namespace_a_z.html#ad4bb7b55533db3b96cbe43e179a627bf">AZ::PrefabAsset</a>  </dt>
-<dd><a class="anchor" id="_deprecated000036"></a>Use <a class="el" href="class_a_z_1_1_slice_asset.html">SliceAsset</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000016"></a>Use <a class="el" href="class_a_z_1_1_slice_asset.html">SliceAsset</a>.  </dd>
 <dt>Member <a class="el" href="namespace_a_z.html#aefa7d50d9e3c76ba05f4c79fcf4b4387">AZ::PrefabBus</a>  </dt>
-<dd><a class="anchor" id="_deprecated000040"></a>Use SliceBus.  </dd>
+<dd><a class="anchor" id="_deprecated000020"></a>Use SliceBus.  </dd>
 <dt>Member <a class="el" href="namespace_a_z.html#a67225c65aeae9cca169ebbe7875bd3fd">AZ::PrefabComponent</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_deprecated000035"></a>Use <a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a>. </p>
-<p class="interdd"><a class="anchor" id="_deprecated000038"></a>Use <a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a>. </p>
-<p class="enddd"><a class="anchor" id="_deprecated000041"></a>Use <a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a>.  </p>
+<dd><p class="startdd"><a class="anchor" id="_deprecated000015"></a>Use <a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a>. </p>
+<p class="interdd"><a class="anchor" id="_deprecated000018"></a>Use <a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a>. </p>
+<p class="enddd"><a class="anchor" id="_deprecated000021"></a>Use <a class="el" href="class_a_z_1_1_slice_component.html">SliceComponent</a>.  </p>
 </dd>
 <dt>Member <a class="el" href="namespace_a_z.html#af40edacfb76d157f0bb6ea41d746a1ff">AZ::PrefabEvents</a>  </dt>
-<dd><a class="anchor" id="_deprecated000039"></a>Use <a class="el" href="class_a_z_1_1_slice_events.html">SliceEvents</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000019"></a>Use <a class="el" href="class_a_z_1_1_slice_events.html">SliceEvents</a>.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_serialize_context_1_1_data_element_node.html#a55ce2f53d06154f540562f2e99f66fb6">AZ::SerializeContext::DataElementNode::GetDataHierarchy</a>  (<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> &amp;, T &amp;value, <a class="el" href="class_a_z_1_1_serialize_context_1_1_error_handler.html">ErrorHandler</a> *errorHandler=nullptr)</dt>
-<dd><a class="anchor" id="_deprecated000034"></a>Use GetData instead  </dd>
+<dd><a class="anchor" id="_deprecated000014"></a>Use GetData instead  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_slice_component.html#af3cc1fd7058b7ca7abf6ee60ed55eee0">AZ::SliceComponent::PrefabInstance</a>  </dt>
-<dd><a class="anchor" id="_deprecated000043"></a>Use <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000023"></a>Use <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance.html">SliceInstance</a>.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_slice_component.html#ac7ad4025606aaff58495b977dc1b9820">AZ::SliceComponent::PrefabInstanceAddress</a>  </dt>
-<dd><a class="anchor" id="_deprecated000044"></a>Use <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance_address.html">SliceInstanceAddress</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000024"></a>Use <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_instance_address.html">SliceInstanceAddress</a>.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_slice_component.html#a6db04767ba0b88957f92de791ce3e372">AZ::SliceComponent::PrefabInstanceId</a>  </dt>
-<dd><a class="anchor" id="_deprecated000045"></a>Use SliceInstanceId.  </dd>
+<dd><a class="anchor" id="_deprecated000025"></a>Use SliceInstanceId.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_slice_component.html#ac4ecba5b2f3fdacf65968aee859d4529">AZ::SliceComponent::PrefabReference</a>  </dt>
-<dd><a class="anchor" id="_deprecated000042"></a>Use <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html">SliceReference</a>.  </dd>
+<dd><a class="anchor" id="_deprecated000022"></a>Use <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html">SliceReference</a>.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_slice_component_1_1_slice_reference.html#a338ecd2f4a5922671cd9334baa77e776">AZ::SliceComponent::SliceReference::PrefabInstances</a>  </dt>
-<dd><a class="anchor" id="_deprecated000046"></a>Use SliceInstances  </dd>
+<dd><a class="anchor" id="_deprecated000026"></a>Use SliceInstances  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_tick_events.html#a5d0c8f19043cd248ab8f877941817e84">AZ::TickEvents::m_tickOrder</a>  </dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Override <a class="el" href="class_a_z_1_1_tick_events.html#a4c63ea1efaf23340024dabd1de1fd311">GetTickOrder()</a> to specify the order in which the handler receives tick events.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_transform_config.html#ad944278e9dfde0bb0f4b00984dffd258">AZ::TransformConfig::m_interpolatePosition</a>  </dt>
-<dd><a class="anchor" id="_deprecated000025"></a> Behavior for smoothing of position between network updates.  </dd>
+<dd><a class="anchor" id="_deprecated000005"></a> Behavior for smoothing of position between network updates.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_transform_config.html#a4fa3033564ebed6fd20fecc1fb488f5e">AZ::TransformConfig::m_interpolateRotation</a>  </dt>
-<dd><a class="anchor" id="_deprecated000026"></a> Behavior for smoothing of rotation between network updates.  </dd>
+<dd><a class="anchor" id="_deprecated000006"></a> Behavior for smoothing of rotation between network updates.  </dd>
 <dt>Member <a class="el" href="class_a_z_1_1_transform_config.html#acbd8ad2fc53a3f3dde458e59f5deb87b">AZ::TransformConfig::m_netSyncEnabled</a>  </dt>
-<dd><a class="anchor" id="_deprecated000024"></a> Whether the transform can be synced over the network.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#af608d2b23c6c47dcc82c4951e44a11a9">AZ::TransformInterface::GetRotationEulerRadians</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000011"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#ab5a37fb1594a84c3f62486f2983a1961">GetLocalRotation()</a> Gets the entity's rotation in the world in Euler angles rotation in radians.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#acad3ab80cdfbd6d12c7b07f0d7e79b2e">AZ::TransformInterface::GetRotationQuaternion</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000012"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a74bea4443fa3baddef7f0bd0749c1821">GetLocalRotationQuaternion()</a> Gets the entity's rotation in the world in quaternion format.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a4fda73fd5dbe3951717563c09fbcbab2">AZ::TransformInterface::GetRotationX</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000013"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#ab5a37fb1594a84c3f62486f2983a1961">GetLocalRotation()</a> Gets the entity's rotation around the world's X axis.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#aa09ea60158dc5fcc4f1793a9fe286b4e">AZ::TransformInterface::GetRotationY</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000014"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#ab5a37fb1594a84c3f62486f2983a1961">GetLocalRotation()</a> Gets the entity's rotation around the world's Y axis.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a6a123367815b79758d457f941308029c">AZ::TransformInterface::GetRotationZ</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000015"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#ab5a37fb1594a84c3f62486f2983a1961">GetLocalRotation()</a> Gets the entity's rotation around the world's Z axis.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a938bd8c9ed3d2cf5e62f53b820ba897d">AZ::TransformInterface::GetScale</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000020"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a50d0b78135f542f6d8a1a6b7bcbf6107">GetLocalScale()</a> Gets the scale of the entity in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a1f2cd7a6393172f806d65aa676773724">AZ::TransformInterface::GetScaleX</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000021"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a50d0b78135f542f6d8a1a6b7bcbf6107">GetLocalScale()</a> Gets the amount by which an entity is scaled along the world's X axis.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#afce70134b230cf95fc5ff6691a876b7e">AZ::TransformInterface::GetScaleY</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000022"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a50d0b78135f542f6d8a1a6b7bcbf6107">GetLocalScale()</a> Gets the amount by which an entity is scaled along the world's Y axis.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#aeebd9cec007c5275318b88b1fcbb285a">AZ::TransformInterface::GetScaleZ</a>  ()</dt>
-<dd><a class="anchor" id="_deprecated000023"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a50d0b78135f542f6d8a1a6b7bcbf6107">GetLocalScale()</a> Gets the amount by which an entity is scaled along the world's Z axis.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a005b369b7d007eeac4adbabfe000c719">AZ::TransformInterface::RotateByX</a>  ([[maybe_unused]] float eulerAngleRadian)</dt>
-<dd><a class="anchor" id="_deprecated000008"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a72d00c723b0d06460d6969a08d010c0c">RotateAroundLocalX()</a> Rotates the entity around the world's X axis. The origin of the axis is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a76033bfe67cf7d94fd727164f46f0b9a">AZ::TransformInterface::RotateByY</a>  ([[maybe_unused]] float eulerAngleRadian)</dt>
-<dd><a class="anchor" id="_deprecated000009"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a4a5243b84e41aa44b89d4327f74feee1">RotateAroundLocalY()</a> Rotates the entity around the world's Y axis. The origin of the axis is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a9f658c15807c11c6590177f538e20d36">AZ::TransformInterface::RotateByZ</a>  ([[maybe_unused]] float eulerAngleRadian)</dt>
-<dd><a class="anchor" id="_deprecated000010"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a090faadf6afbaf83fbfb0b3f78313be4">RotateAroundLocalZ()</a> Rotates the entity around the world's Z axis. The origin of the axis is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a46baf32e9af7e11ed0f7c03415364526">AZ::TransformInterface::SetRotation</a>  ([[maybe_unused]] const <a class="el" href="class_a_z_1_1_vector3.html" title="3-dimensional vector class.">AZ::Vector3</a> &amp;eulerAnglesRadians)</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a54f8119331e5c4fb1a9a9d98019eeb73">SetLocalRotation()</a> Sets the entity's rotation in the world. The origin of the axes is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#aa1335b361bec0208b55280794b1e8d38">AZ::TransformInterface::SetRotationQuaternion</a>  ([[maybe_unused]] const <a class="el" href="class_a_z_1_1_quaternion.html">AZ::Quaternion</a> &amp;quaternion)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#aca22eb455ead36875ee45744cb1e0e4e">SetLocalRotationQuaternion()</a> Sets the entity's rotation in the world in quaternion notation. The origin of the axes is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a9422b1e37903d116d58bb9e7adecf5e6">AZ::TransformInterface::SetRotationX</a>  ([[maybe_unused]] float eulerAngleRadian)</dt>
-<dd><a class="anchor" id="_deprecated000004"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a54f8119331e5c4fb1a9a9d98019eeb73">SetLocalRotation()</a> Sets the entity's rotation around the world's X axis. The origin of the axis is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a0802077f7bce0cbea7ae388c89007be2">AZ::TransformInterface::SetRotationY</a>  ([[maybe_unused]] float eulerAngleRadian)</dt>
-<dd><a class="anchor" id="_deprecated000005"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a54f8119331e5c4fb1a9a9d98019eeb73">SetLocalRotation()</a> Sets the entity's rotation around the world's Y axis. The origin of the axis is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a18de0d0bc20b09215f60f0dced731d67">AZ::TransformInterface::SetRotationZ</a>  ([[maybe_unused]] float eulerAngleRadian)</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a54f8119331e5c4fb1a9a9d98019eeb73">SetLocalRotation()</a> Sets the entity's rotation around the world's Z axis. The origin of the axis is the entity's position in world space.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#aec37775571316517d0bf9547927268f3">AZ::TransformInterface::SetScale</a>  ([[maybe_unused]] const <a class="el" href="class_a_z_1_1_vector3.html" title="3-dimensional vector class.">AZ::Vector3</a> &amp;scale)</dt>
-<dd><a class="anchor" id="_deprecated000016"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a2199fd3c44e1e632e98e09db1f483729">SetLocalScale()</a> Scales the entity along the world's axes. The origin of the axes is the entity's position in the world.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a337dd944db160ce72c51cb5256c75e88">AZ::TransformInterface::SetScaleX</a>  ([[maybe_unused]] float scaleX)</dt>
-<dd><a class="anchor" id="_deprecated000017"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a73680cf5d3d2cd70b9cc261cf1d49b71">SetLocalScaleX()</a> Scales the entity along the world's X axis. The origin of the axis is the entity's position in the world.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a29949722a7f756dec3eae3b6d65cfbdf">AZ::TransformInterface::SetScaleY</a>  ([[maybe_unused]] float scaleY)</dt>
-<dd><a class="anchor" id="_deprecated000018"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a01434f801840f63a0449744d428af2d5">SetLocalScaleY()</a> Scales the entity along the world's Y axis. The origin of the axis is the entity's position in the world.  </dd>
-<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a631a96e5b35454858c9d60b5674f9b9b">AZ::TransformInterface::SetScaleZ</a>  ([[maybe_unused]] float scaleZ)</dt>
-<dd><a class="anchor" id="_deprecated000019"></a>Use <a class="el" href="class_a_z_1_1_transform_interface.html#a07598fa169f1c560a1481be251b21513">SetLocalScaleZ()</a> Scales the entity along the world's Z axis. The origin of the axis is the entity's position in the world.  </dd>
+<dd><a class="anchor" id="_deprecated000004"></a> Whether the transform can be synced over the network.  </dd>
+<dt>Member <a class="el" href="class_a_z_1_1_transform_interface.html#a50d0b78135f542f6d8a1a6b7bcbf6107">AZ::TransformInterface::GetLocalScale</a>  ()</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>GetLocalScale is deprecated, and is left only to allow migration of legacy vector scale. Get the legacy vector scale value in local space.  </dd>
 <dt>Class <a class="el" href="class_a_z_1_1_transform_notification.html">AZ::TransformNotification</a>  </dt>
 <dd><a class="anchor" id="_deprecated000002"></a>Use <a class="el" href="class_a_z_1_1_event.html">AZ::Event</a> notifications on the main transform interface. <a class="el" href="class_a_z_1_1_interface.html">Interface</a> for <a class="el" href="namespace_a_z.html#aa0f59d5f3954f794161789c02729ccc2">AZ::TransformNotificationBus</a>, which is the <a class="el" href="class_a_z_1_1_e_bus.html">EBus</a> that dispatches transform changes to listeners. </dd>
 </dl>
@@ -139,7 +102,7 @@ $(function() {
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:18 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:22:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

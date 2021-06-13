@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ScriptCanvas API Reference: ScriptCanvas::RuntimeComponent Class Reference</title>
+<title>Open 3D Engine ScriptCanvas Gem API Reference: ScriptCanvas::RuntimeComponent Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ScriptCanvas API Reference
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -55,13 +58,13 @@ $(function() {
 
 <p><code>#include &lt;RuntimeComponent.h&gt;</code></p>
 
-<p>Inherits Component, NetBindable, and Handler.</p>
+<p>Inherits Component, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad32ba38885b074cc0c85852a500e59fb"><td class="memItemLeft" align="right" valign="top"><a id="ad32ba38885b074cc0c85852a500e59fb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_script_canvas_1_1_runtime_component.html">RuntimeComponent</a>, &quot;{95BFD916-E832-4956-837D-525DE8384282}&quot;, NetBindable)</td></tr>
-<tr class="separator:ad32ba38885b074cc0c85852a500e59fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a645448727d42c3d76601019f167c9cc6"><td class="memItemLeft" align="right" valign="top"><a id="a645448727d42c3d76601019f167c9cc6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_script_canvas_1_1_runtime_component.html">RuntimeComponent</a>, &quot;{95BFD916-E832-4956-837D-525DE8384282}&quot;, AZ::Component)</td></tr>
+<tr class="separator:a645448727d42c3d76601019f167c9cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf19b4a228d7a048f6e9366989136265"><td class="memItemLeft" align="right" valign="top"><a id="aaf19b4a228d7a048f6e9366989136265"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RuntimeComponent</b> (AZ::Data::Asset&lt; <a class="el" href="class_script_canvas_1_1_runtime_asset.html">RuntimeAsset</a> &gt; runtimeAsset)</td></tr>
 <tr class="separator:aaf19b4a228d7a048f6e9366989136265"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -83,9 +86,6 @@ AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetScriptCanv
 <tr class="memitem:ab9aaba9a437bfb9b9c3848c1a37f5100"><td class="memItemLeft" align="right" valign="top"><a id="ab9aaba9a437bfb9b9c3848c1a37f5100"></a>
 const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableOverrides</b> () const</td></tr>
 <tr class="separator:ab9aaba9a437bfb9b9c3848c1a37f5100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0344f87f6c51b866efde7d62ed9dcde5"><td class="memItemLeft" align="right" valign="top"><a id="a0344f87f6c51b866efde7d62ed9dcde5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNetworkBinding</b> (GridMate::ReplicaChunkPtr)</td></tr>
-<tr class="separator:a0344f87f6c51b866efde7d62ed9dcde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a591cc458acfa3fc611a68b28e5de51ab"><td class="memItemLeft" align="right" valign="top"><a id="a591cc458acfa3fc611a68b28e5de51ab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetVariableOverrides</b> (const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;overrideData)</td></tr>
 <tr class="separator:a591cc458acfa3fc611a68b28e5de51ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,9 +128,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnEntityDeactivated</
 <tr class="memitem:ad340af54d610a5c0e092e8e0b3abf69b"><td class="memItemLeft" align="right" valign="top"><a id="ad340af54d610a5c0e092e8e0b3abf69b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopExecution</b> ()</td></tr>
 <tr class="separator:ad340af54d610a5c0e092e8e0b3abf69b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad83b24365dae513ceaf28725412fbeb9"><td class="memItemLeft" align="right" valign="top"><a id="ad83b24365dae513ceaf28725412fbeb9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UnbindFromNetwork</b> (void)</td></tr>
-<tr class="separator:ad83b24365dae513ceaf28725412fbeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -144,10 +141,13 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Runtime Component responsible for loading an executing the compiled <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph from a runtime asset. It contains none of the <a class="el" href="class_script_canvas_1_1_graph.html" title="Graph is the execution model of a ScriptCanvas graph.">Graph</a> functionality of Validating Connections, as well as adding and removing nodes. Furthermore none of the functionality to remove and add variables exist in this component. It is assumed that the graph has runtime graph has already been validated and compiled at this point. This component should only be used at runtime <br  />
  </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Execution/RuntimeComponent.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:52 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:22:07 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

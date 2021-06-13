@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: Physics::Material Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: Physics::Material Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -74,12 +77,12 @@ Public Member Functions</h2></td></tr>
 virtual AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material.html#af7e2227890df1880db2b86d8be4ef32e">GetSurfaceType</a> () const =0</td></tr>
 <tr class="memdesc:af7e2227890df1880db2b86d8be4ef32e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns AZ::Crc32 of the surface name. <br /></td></tr>
 <tr class="separator:af7e2227890df1880db2b86d8be4ef32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96dab7cd08444b950a17d15933e74bd7"><td class="memItemLeft" align="right" valign="top"><a id="a96dab7cd08444b950a17d15933e74bd7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSurfaceType</b> (AZ::Crc32 surfaceType)=0</td></tr>
-<tr class="separator:a96dab7cd08444b950a17d15933e74bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae99d095756b209fefe2691b6e12b8d2d"><td class="memItemLeft" align="right" valign="top"><a id="ae99d095756b209fefe2691b6e12b8d2d"></a>
 virtual const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSurfaceTypeName</b> () const =0</td></tr>
 <tr class="separator:ae99d095756b209fefe2691b6e12b8d2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad118f7873fe2e360eca9bec5e177767b"><td class="memItemLeft" align="right" valign="top"><a id="ad118f7873fe2e360eca9bec5e177767b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSurfaceTypeName</b> (const AZStd::string &amp;surfaceTypeName)=0</td></tr>
+<tr class="separator:ad118f7873fe2e360eca9bec5e177767b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bec516db6b747816367046fbbdd3469"><td class="memItemLeft" align="right" valign="top"><a id="a7bec516db6b747816367046fbbdd3469"></a>
 virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDynamicFriction</b> () const =0</td></tr>
 <tr class="separator:a7bec516db6b747816367046fbbdd3469"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,12 @@ virtual float&#160;</td><td class="memItemRight" valign="bottom"><b>GetDensity</
 <tr class="memitem:aa492456f270c275636a1275af1bfe18a"><td class="memItemLeft" align="right" valign="top"><a id="aa492456f270c275636a1275af1bfe18a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDensity</b> (float density)=0</td></tr>
 <tr class="separator:aa492456f270c275636a1275af1bfe18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac10a6124bda2a713a9106952c7b94a8b"><td class="memItemLeft" align="right" valign="top"><a id="ac10a6124bda2a713a9106952c7b94a8b"></a>
+virtual AZ::Color&#160;</td><td class="memItemRight" valign="bottom"><b>GetDebugColor</b> () const =0</td></tr>
+<tr class="separator:ac10a6124bda2a713a9106952c7b94a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097dfbfc7e7e3044950083e654d37b25"><td class="memItemLeft" align="right" valign="top"><a id="a097dfbfc7e7e3044950083e654d37b25"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugColor</b> (const AZ::Color &amp;debugColor)=0</td></tr>
+<tr class="separator:a097dfbfc7e7e3044950083e654d37b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55dfaea4ee3e8e00204d0d7010dd3955"><td class="memItemLeft" align="right" valign="top">virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material.html#a55dfaea4ee3e8e00204d0d7010dd3955">GetCryEngineSurfaceId</a> () const =0</td></tr>
 <tr class="separator:a55dfaea4ee3e8e00204d0d7010dd3955"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc7e9ff6e629c51bcde541bf74fa4b6d"><td class="memItemLeft" align="right" valign="top"><a id="afc7e9ff6e629c51bcde541bf74fa4b6d"></a>
@@ -126,14 +135,12 @@ virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" 
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="autotoc_md0"></a>
 Physics material</h1>
-<p>This is the interface to the wrapper around native material type (such as PxMaterial in PhysX gem) that stores extra metadata, like Surface Type name. To see more details about PhysX implementation please refer to PhysX::Material class</p>
+<p>This is the interface to the wrapper around native material type (such as PxMaterial in PhysX gem) that stores extra metadata, like Surface Type name.</p>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Usage example</h2>
 <p>Create new material using Physics::SystemRequestBus and <a class="el" href="class_physics_1_1_material_configuration.html">Physics::MaterialConfiguration</a>: </p><pre class="fragment">Physics::MaterialConfiguration materialProperties;
 AZStd::shared_ptr&lt;Physics::Material&gt; newMaterial = AZ::Interface&lt;Physics::System&gt;::Get()-&gt;CreateMaterial(materialProperties);
-</pre><p>To get PxMaterial use GetNativePointer function </p><pre class="fragment">physx::PxMaterial* material = static_cast&lt;physx::PxMaterial*&gt;(newMaterial-&gt;GetNativePointer());
-</pre><p>You can use retrieved PxMaterial pointer on its own, provided you increment its reference count. If this class goes out of scope, the PxMaterial pointer will be valid, but its userData will be cleaned up to point to nullptr. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+</pre> </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="aab6fac9c9b38d1bf830d2fafdc04b31a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aab6fac9c9b38d1bf830d2fafdc04b31a">&#9670;&nbsp;</a></span>CombineMode</h2>
 
@@ -186,10 +193,13 @@ CrySurface types are defined in libs/materialeffects/surfacetypes.xml </p>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Physics/Material.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:55 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

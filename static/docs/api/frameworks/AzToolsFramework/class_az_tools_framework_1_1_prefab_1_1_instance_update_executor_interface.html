@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::Prefab::InstanceUpdateExecutorInterface Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::Prefab::InstanceUpdateExecutorInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -57,17 +60,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a93fe0c772c836884d509b1812590b679"><td class="memItemLeft" align="right" valign="top"><a id="a93fe0c772c836884d509b1812590b679"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_update_executor_interface.html">InstanceUpdateExecutorInterface</a>, &quot;{26BB4ACF-6EA5-4668-84E7-AB75B90BA449}&quot;)</td></tr>
 <tr class="separator:a93fe0c772c836884d509b1812590b679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1867907abaa6bfede1b01f508caf84b"><td class="memItemLeft" align="right" valign="top"><a id="ac1867907abaa6bfede1b01f508caf84b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTemplateInstancesToQueue</b> (TemplateId instanceTemplateId)=0</td></tr>
-<tr class="separator:ac1867907abaa6bfede1b01f508caf84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb8bd6539a96918386b1b090aa7f27e"><td class="memItemLeft" align="right" valign="top"><a id="a2bb8bd6539a96918386b1b090aa7f27e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddTemplateInstancesToQueue</b> (TemplateId instanceTemplateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
+<tr class="separator:a2bb8bd6539a96918386b1b090aa7f27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae64bd93546a57c15ab9c8827111eb9a5"><td class="memItemLeft" align="right" valign="top"><a id="ae64bd93546a57c15ab9c8827111eb9a5"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateTemplateInstancesInQueue</b> ()=0</td></tr>
 <tr class="separator:ae64bd93546a57c15ab9c8827111eb9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accc1b8fecfaaca6548eaac0992ee2a3c"><td class="memItemLeft" align="right" valign="top"><a id="accc1b8fecfaaca6548eaac0992ee2a3c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveTemplateInstanceFromQueue</b> (const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> *instance)=0</td></tr>
+<tr class="separator:accc1b8fecfaaca6548eaac0992ee2a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Instance/InstanceUpdateExecutorInterface.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:09 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
