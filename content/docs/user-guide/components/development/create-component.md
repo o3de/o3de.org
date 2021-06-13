@@ -8,11 +8,11 @@ weight: 100
 
 A component in O3DE is a simple class that inherits from O3DE's `AZ::Component`\. A component's behavior is determined by its reflected data and the actions it takes when it is activated\. This section shows you how to create O3DE components programmatically\. For information about adding and customizing the components available in O3DE Editor, see [Working with component entities](/docs/user-guide/components/)\.
 
-## Component Example {#component-entity-system-create-component-example}
+## Component Example 
 
 An example component class skeleton follows:
 
-```
+```cpp
 #include <AzCore/Component/Component.h>
 
 class MyComponent
@@ -37,17 +37,18 @@ public:
 };
 ```
 
-## Component Members {#component-entity-system-create-component-component-members}
+## Component Members 
 
 The required and optional members that a component comprises are as follows:
 
 AZ::Component
 Every component must include `AZ::Component` somewhere in its inheritance ancestry\. Noneditor components generally inherit directly from `AZ::Component`, as in the following example:
 
-```
+```cpp
 class MyComponent
       : public AZ::Component
 ```
+
 You can also create your own component class hierarchies\.
 
 AZ\_COMPONENT Macro
@@ -58,18 +59,19 @@ Every component must specify the `AZ_COMPONENT` macro in its class definition\. 
 1. A unique UUID\. You may use any UUID generator to produce the value\. Visual Studio provides this functionality through **Tools**, **Create GUID**\. Use the **Registry Format** setting, and then copy and paste the value that is generated\.
 A sample `AZ_COMPONENT` macro follows:
 
-```
+```cpp
 AZ_COMPONENT(MyComponent, "{0C09F774-DECA-40C4-8B54-3A93033EC381}", AZ::Component);
 ```
 
 AZ::Component Functions   {#component-entity-system-create-component-az-functions}
 To define a component's behavior, you generally override three `AZ::Component` functions: `Init`, `Activate`, and `Deactivate`:
 
-```
+```cpp
 void Init() override       {}
 void Activate() override   {}
 void Deactivate() override {}
 ```
+
 These functions are as described as follows:
 Init\(\)
 \(Optional\) Called only once for a given entity\. It requires minimal construction or setup work, since the component may not be activated anytime soon\. An important best practice is to minimize your component's CPU and memory overhead while the component is inactive\.
@@ -82,16 +84,17 @@ Destruction does not necessarily follow deactivation\. An entity can be deactiva
 Reflect\(\)
 \(Required\) All components are AZ reflected classes\. Because all components must be serializable and editable, they must contain a `Reflect()` function, as in the following example:
 
-```
+```cpp
 // Required Reflect function.
 static void Reflect(AZ::ReflectContext* context);
 ```
+
 For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/)\.
 
 Logical Services
 \(Optional\) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with\. To define these logical services, use the following functions:
 
-```
+```cpp
 // Optional functions for defining provided and dependent services.
 static void GetProvidedServices(AZ::ComponentDescriptor::DependencyArrayType& provided);
 static void GetDependentServices(AZ::ComponentDescriptor::DependencyArrayType& dependent);

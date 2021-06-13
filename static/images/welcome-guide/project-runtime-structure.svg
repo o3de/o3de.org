@@ -1,0 +1,3046 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:xhtml="http://www.w3.org/1999/xhtml"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Example Client Application Structure.svg"
+   id="svg6928"
+   height="476.00000000000006"
+   width="865"
+   version="1.1">
+  <metadata
+     id="metadata6932">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:current-layer="g6926"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="238"
+     inkscape:cx="432.5"
+     inkscape:zoom="1.2127168"
+     showgrid="false"
+     id="namedview6930"
+     inkscape:window-height="1057"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <xhtml:style />
+  <defs
+     id="defs5892" />
+  <g
+     id="g6926"
+     transform="translate(0,0)">
+    <path
+       id="path5894"
+       stroke-dasharray="undefined"
+       stroke="none"
+       fill="none" />
+    <g
+       id="g5898">
+      <rect
+         id="rect5896"
+         height="476.00000000000006"
+         width="865"
+         y="0"
+         x="0"
+         stroke="none"
+         fill="#FFFFFF" />
+    </g>
+    <g
+       id="g5910"
+       transform="translate(0,0) matrix(1,0,0,1,40,16.000000000000057)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="440"
+       data-width="470.00000000000006">
+      <g
+         id="g5908">
+        <g
+           id="g5906"
+           transform="translate(0,0) scale(4.7,4.4)">
+          <g
+             id="g5904">
+            <path
+               id="path5900"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               stroke="#BBBBBB"
+               fill="#d9d2e9" />
+            <g
+               id="g5902"
+               transform="scale(0.2127659574468085,0.22727272727272727)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5922"
+       transform="translate(0,0) matrix(1,0,0,1,515,16.000000000000057)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="440"
+       data-width="329.99999999999994">
+      <g
+         id="g5920">
+        <g
+           id="g5918"
+           transform="translate(0,0) scale(3.2999999999999994,4.4)">
+          <g
+             id="g5916">
+            <path
+               id="path5912"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               stroke="#BBBBBB"
+               fill="#d9ead3" />
+            <g
+               id="g5914"
+               transform="scale(0.3030303030303031,0.22727272727272727)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5934"
+       transform="translate(0,0) matrix(1,0,0,1,50,319)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="125.99999999999999"
+       data-width="450">
+      <g
+         id="g5932">
+        <g
+           id="g5930"
+           transform="translate(0,0) scale(4.5,1.2599999999999998)">
+          <g
+             id="g5928">
+            <path
+               id="path5924"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               stroke="#333333"
+               fill="#FFFFFF" />
+            <g
+               id="g5926"
+               transform="scale(0.2222222222222222,0.7936507936507938)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g5946"
+       transform="translate(0,0) matrix(1,0,0,1,55.00000000000003,46.16666666666663)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="84.33333333333333"
+       data-width="101.47058823529413">
+      <g
+         id="g5944">
+        <g
+           id="g5942"
+           transform="translate(0,0) scale(1.0147058823529413,0.8433333333333333)">
+          <g
+             id="g5940">
+            <path
+               id="path5936"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 25 0 L 75 0 L 100 50 L 75 100 L 25 100 L 0 50 L 25 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               stroke="#333333"
+               fill="#f4cccc" />
+            <g
+               id="g5938"
+               transform="scale(0.9855072463768114,1.1857707509881423)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6000"
+       transform="matrix(1,0,0,1,57,74)">
+      <g
+         id="g5952">
+        <g
+           id="g5950">
+          <rect
+             id="rect5948"
+             fill-opacity="0"
+             height="28"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g5958">
+        <g
+           id="g5956">
+          <rect
+             id="rect5954"
+             fill-opacity="0"
+             height="14"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g5964">
+        <g
+           id="g5962">
+          <rect
+             id="rect5960"
+             fill-opacity="0"
+             height="14"
+             width="57"
+             y="0"
+             x="20.199996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g5974">
+        <g
+           id="g5968">
+          <rect
+             id="rect5966"
+             fill-opacity="0"
+             height="14"
+             width="57"
+             y="0"
+             x="20.199996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text5970"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="20.199996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Input</text>
+        <text
+           id="text5972"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="50.19999694824219"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Gem</text>
+      </g>
+      <g
+         id="g5978">
+        <g
+           id="g5976" />
+      </g>
+      <g
+         id="g5984">
+        <g
+           id="g5982">
+          <rect
+             id="rect5980"
+             fill-opacity="0"
+             height="14"
+             width="97"
+             y="14"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g5990">
+        <g
+           id="g5988">
+          <rect
+             id="rect5986"
+             fill-opacity="0"
+             height="14"
+             width="40"
+             y="14"
+             x="28.699996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g5998">
+        <g
+           id="g5994">
+          <rect
+             id="rect5992"
+             fill-opacity="0"
+             height="14"
+             width="40"
+             y="14"
+             x="28.699996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text5996"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="28.699996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Module</text>
+      </g>
+    </g>
+    <g
+       id="g6012"
+       transform="translate(0,0) matrix(1,0,0,1,131.1029411764706,88.33333333333329)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="84.33333333333333"
+       data-width="101.47058823529413">
+      <g
+         id="g6010">
+        <g
+           id="g6008"
+           transform="translate(0,0) scale(1.0147058823529413,0.8433333333333333)">
+          <g
+             id="g6006">
+            <path
+               id="path6002"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 25 0 L 75 0 L 100 50 L 75 100 L 25 100 L 0 50 L 25 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#f4cccc" />
+            <g
+               id="g6004"
+               transform="scale(0.9855072463768114,1.1857707509881423)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6066"
+       transform="matrix(1,0,0,1,133,116)">
+      <g
+         id="g6018">
+        <g
+           id="g6016">
+          <rect
+             id="rect6014"
+             fill-opacity="0"
+             height="28"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6024">
+        <g
+           id="g6022">
+          <rect
+             id="rect6020"
+             fill-opacity="0"
+             height="14"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6030">
+        <g
+           id="g6028">
+          <rect
+             id="rect6026"
+             fill-opacity="0"
+             height="14"
+             width="58"
+             y="0"
+             x="19.699996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6040">
+        <g
+           id="g6034">
+          <rect
+             id="rect6032"
+             fill-opacity="0"
+             height="14"
+             width="58"
+             y="0"
+             x="19.699996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6036"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="19.699996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Atom</text>
+        <text
+           id="text6038"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="50.69999694824219"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Gem</text>
+      </g>
+      <g
+         id="g6044">
+        <g
+           id="g6042" />
+      </g>
+      <g
+         id="g6050">
+        <g
+           id="g6048">
+          <rect
+             id="rect6046"
+             fill-opacity="0"
+             height="14"
+             width="97"
+             y="14"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6056">
+        <g
+           id="g6054">
+          <rect
+             id="rect6052"
+             fill-opacity="0"
+             height="14"
+             width="47"
+             y="14"
+             x="25.199996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6064">
+        <g
+           id="g6060">
+          <rect
+             id="rect6058"
+             fill-opacity="0"
+             height="14"
+             width="47"
+             y="14"
+             x="25.199996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6062"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="25.199996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Modules</text>
+      </g>
+    </g>
+    <g
+       id="g6078"
+       transform="translate(0,0) matrix(1,0,0,1,55.00000000000003,130.49999999999994)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="84.33333333333333"
+       data-width="101.47058823529413">
+      <g
+         id="g6076">
+        <g
+           id="g6074"
+           transform="translate(0,0) scale(1.0147058823529413,0.8433333333333333)">
+          <g
+             id="g6072">
+            <path
+               id="path6068"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 25 0 L 75 0 L 100 50 L 75 100 L 25 100 L 0 50 L 25 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#f4cccc" />
+            <g
+               id="g6070"
+               transform="scale(0.9855072463768114,1.1857707509881423)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6116"
+       transform="matrix(1,0,0,1,57,159)">
+      <g
+         id="g6084">
+        <g
+           id="g6082">
+          <rect
+             id="rect6080"
+             fill-opacity="0"
+             height="28"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6090">
+        <g
+           id="g6088">
+          <rect
+             id="rect6086"
+             fill-opacity="0"
+             height="28"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6098">
+        <g
+           id="g6094">
+          <rect
+             id="rect6092"
+             fill-opacity="0"
+             height="28"
+             width="73"
+             y="0"
+             x="12.199996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6096"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="12.199996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">P</text>
+      </g>
+      <g
+         id="g6110">
+        <g
+           id="g6102">
+          <rect
+             id="rect6100"
+             fill-opacity="0"
+             height="28"
+             width="65"
+             y="0"
+             x="20.199996948242188"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6104"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="20.199996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">hysics</text>
+        <text
+           id="text6106"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="58.19999694824219"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Gem</text>
+        <text
+           id="text6108"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="28.699996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Module</text>
+      </g>
+      <g
+         id="g6114">
+        <g
+           id="g6112" />
+      </g>
+    </g>
+    <g
+       id="g6128"
+       transform="translate(0,0) matrix(1,0,0,1,131.1029411764706,172.66666666666663)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="84.33333333333333"
+       data-width="101.47058823529413">
+      <g
+         id="g6126">
+        <g
+           id="g6124"
+           transform="translate(0,0) scale(1.0147058823529413,0.8433333333333333)">
+          <g
+             id="g6122">
+            <path
+               id="path6118"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 25 0 L 75 0 L 100 50 L 75 100 L 25 100 L 0 50 L 25 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#f4cccc" />
+            <g
+               id="g6120"
+               transform="scale(0.9855072463768114,1.1857707509881423)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6168"
+       transform="matrix(1,0,0,1,133,187)">
+      <g
+         id="g6134">
+        <g
+           id="g6132">
+          <rect
+             id="rect6130"
+             fill-opacity="0"
+             height="56"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6140">
+        <g
+           id="g6138">
+          <rect
+             id="rect6136"
+             fill-opacity="0"
+             height="56"
+             width="97"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6162">
+        <g
+           id="g6144">
+          <rect
+             id="rect6142"
+             fill-opacity="0"
+             height="56"
+             width="82"
+             y="0"
+             x="7.6999969482421875"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6146"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="13.699996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">...</text>
+        <text
+           id="text6148"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="25.699996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Other</text>
+        <text
+           id="text6150"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="58.69999694824219"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">gem</text>
+        <text
+           id="text6152"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="24.199996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">modules</text>
+        <text
+           id="text6154"
+           data-layerId="XXc3w15O2SVq"
+           y="39"
+           x="7.6999969482421875"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">selected</text>
+        <text
+           id="text6156"
+           data-layerId="XXc3w15O2SVq"
+           y="39"
+           x="57.69999694824219"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">by</text>
+        <text
+           id="text6158"
+           data-layerId="XXc3w15O2SVq"
+           y="39"
+           x="72.69999694824219"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">the</text>
+        <text
+           id="text6160"
+           data-layerId="XXc3w15O2SVq"
+           y="53"
+           x="18.699996948242188"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">applicaiton</text>
+      </g>
+      <g
+         id="g6166">
+        <g
+           id="g6164" />
+      </g>
+    </g>
+    <g
+       id="g6180"
+       transform="translate(0,0) matrix(1,0,0,1,740,59.64583333333333)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="87.99999999999999"
+       data-width="100.00000000000001">
+      <g
+         id="g6178">
+        <g
+           id="g6176"
+           transform="translate(0,0) scale(1.0000000000000002,0.8799999999999999)">
+          <g
+             id="g6174">
+            <path
+               id="path6170"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 25 0 L 75 0 L 100 50 L 75 100 L 25 100 L 0 50 L 25 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#f4cccc" />
+            <g
+               id="g6172"
+               transform="scale(0.9999999999999998,1.1363636363636365)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6218"
+       transform="matrix(1,0,0,1,742,97)">
+      <g
+         id="g6186">
+        <g
+           id="g6184">
+          <rect
+             id="rect6182"
+             fill-opacity="0"
+             height="14"
+             width="96"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6192">
+        <g
+           id="g6190">
+          <rect
+             id="rect6188"
+             fill-opacity="0"
+             height="14"
+             width="96"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6198">
+        <g
+           id="g6196">
+          <rect
+             id="rect6194"
+             fill-opacity="0"
+             height="14"
+             width="85"
+             y="0"
+             x="5.48333740234375"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6212">
+        <g
+           id="g6202">
+          <rect
+             id="rect6200"
+             fill-opacity="0"
+             height="14"
+             width="85"
+             y="0"
+             x="5.48333740234375"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6206"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="9.4833374"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="Arial"
+           stroke="none"
+           fill="#000000">Project</text>
+        <text
+           id="text6208"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="43.483337"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="Arial"
+           stroke="none"
+           fill="#000000" />
+        <text
+           id="text6210"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="50.48333740234375"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Module</text>
+      </g>
+      <g
+         id="g6216">
+        <g
+           id="g6214" />
+      </g>
+    </g>
+    <g
+       id="g6230"
+       transform="translate(0,0) matrix(1,0,0,1,65.02941176470591,342)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="40"
+       data-width="120">
+      <g
+         id="g6228">
+        <g
+           id="g6226"
+           transform="translate(0,0) scale(1.2,0.4)">
+          <g
+             id="g6224">
+            <path
+               id="path6220"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#c9daf8" />
+            <g
+               id="g6222"
+               transform="scale(0.8333333333333334,2.5)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6268"
+       transform="matrix(1,0,0,1,67,348)">
+      <g
+         id="g6236">
+        <g
+           id="g6234">
+          <rect
+             id="rect6232"
+             fill-opacity="0"
+             height="28"
+             width="115"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6242">
+        <g
+           id="g6240">
+          <rect
+             id="rect6238"
+             fill-opacity="0"
+             height="28"
+             width="115"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6250">
+        <g
+           id="g6246">
+          <rect
+             id="rect6244"
+             fill-opacity="0"
+             height="28"
+             width="84"
+             y="0"
+             x="15.600006103515625"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6248"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="15.600006103515625"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">A</text>
+      </g>
+      <g
+         id="g6262">
+        <g
+           id="g6254">
+          <rect
+             id="rect6252"
+             fill-opacity="0"
+             height="28"
+             width="77"
+             y="0"
+             x="22.600006103515625"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6256"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="22.600006103515625"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">ZCore</text>
+        <text
+           id="text6258"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="59.600006103515625"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Module</text>
+        <text
+           id="text6260"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="33.58332824707031"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Manager</text>
+      </g>
+      <g
+         id="g6266">
+        <g
+           id="g6264" />
+      </g>
+    </g>
+    <g
+       id="g6280"
+       transform="translate(0.5,0.5) matrix(1,0,0,1,555.0000000000001,59.64583333333333)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="62.99999999999999"
+       data-width="100.00000000000001">
+      <g
+         id="g6278">
+        <g
+           id="g6276"
+           transform="translate(0,0) scale(1.0000000000000002,0.6299999999999999)">
+          <g
+             id="g6274">
+            <path
+               id="path6270"
+               stroke-miterlimit="10"
+               stroke-linejoin="round"
+               d="M 0 0 L 90 0 L 100 15.873015873015873 L 90 15.873015873015873 L 90 0 L 100 15.873015873015873 L 100 100 L 0 100 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#000000"
+               fill="#FFFFFF" />
+            <g
+               id="g6272"
+               transform="scale(0.9999999999999998,1.5873015873015877)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6316"
+       transform="matrix(1,0,0,1,557,70)">
+      <g
+         id="g6286">
+        <g
+           id="g6284">
+          <rect
+             id="rect6282"
+             fill-opacity="0"
+             height="42"
+             width="96"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6292">
+        <g
+           id="g6290">
+          <rect
+             id="rect6288"
+             fill-opacity="0"
+             height="42"
+             width="96"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6306">
+        <g
+           id="g6296">
+          <rect
+             id="rect6294"
+             fill-opacity="0"
+             height="42"
+             width="75"
+             y="0"
+             x="10.48333740234375"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6298"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="29"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Project</text>
+        <text
+           id="text6300"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="11"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Configuration</text>
+        <text
+           id="text6302"
+           data-layerId="XXc3w15O2SVq"
+           y="39"
+           x="10.48333740234375"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Registry</text>
+        <text
+           id="text6304"
+           data-layerId="XXc3w15O2SVq"
+           y="39"
+           x="58.48333740234375"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Files</text>
+      </g>
+      <g
+         id="g6310">
+        <g
+           id="g6308" />
+      </g>
+      <g
+         id="g6314">
+        <g
+           id="g6312" />
+      </g>
+    </g>
+    <g
+       id="g6328"
+       transform="translate(0,0) matrix(1,0,0,1,375,342)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="40"
+       data-width="110">
+      <g
+         id="g6326">
+        <g
+           id="g6324"
+           transform="translate(0,0) scale(1.1,0.4)">
+          <g
+             id="g6322">
+            <path
+               id="path6318"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#c9daf8" />
+            <g
+               id="g6320"
+               transform="scale(0.9090909090909091,2.5)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6362"
+       transform="matrix(1,0,0,1,377,348)">
+      <g
+         id="g6334">
+        <g
+           id="g6332">
+          <rect
+             id="rect6330"
+             fill-opacity="0"
+             height="28"
+             width="106"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6340">
+        <g
+           id="g6338">
+          <rect
+             id="rect6336"
+             fill-opacity="0"
+             height="28"
+             width="106"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6352">
+        <g
+           id="g6344">
+          <rect
+             id="rect6342"
+             fill-opacity="0"
+             height="28"
+             width="89"
+             y="0"
+             x="8.300003051757812"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6346"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="8.300003051757812"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">AZCore</text>
+        <text
+           id="text6348"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="52.30000305175781"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Settings</text>
+        <text
+           id="text6350"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="28.783340454101562"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Manager</text>
+      </g>
+      <g
+         id="g6356">
+        <g
+           id="g6354" />
+      </g>
+      <g
+         id="g6360">
+        <g
+           id="g6358" />
+      </g>
+    </g>
+    <g
+       id="g6396"
+       transform="matrix(1,0,0,1,52,319)">
+      <g
+         id="g6368">
+        <g
+           id="g6366">
+          <rect
+             id="rect6364"
+             fill-opacity="0"
+             height="14"
+             width="146"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6374">
+        <g
+           id="g6372">
+          <rect
+             id="rect6370"
+             fill-opacity="0"
+             height="14"
+             width="146"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6380">
+        <g
+           id="g6378">
+          <rect
+             id="rect6376"
+             fill-opacity="0"
+             height="14"
+             width="104"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6390">
+        <g
+           id="g6384">
+          <rect
+             id="rect6382"
+             fill-opacity="0"
+             height="14"
+             width="104"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6386"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="0"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">AZCore</text>
+        <text
+           id="text6388"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="44"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Application</text>
+      </g>
+      <g
+         id="g6394">
+        <g
+           id="g6392" />
+      </g>
+    </g>
+    <g
+       id="g6408"
+       transform="translate(0,0) matrix(1,0,0,1,740,147.64583333333331)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="87.99999999999999"
+       data-width="100.00000000000001">
+      <g
+         id="g6406">
+        <g
+           id="g6404"
+           transform="translate(0,0) scale(1.0000000000000002,0.8799999999999999)">
+          <g
+             id="g6402">
+            <path
+               id="path6398"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 25 0 L 75 0 L 100 50 L 75 100 L 25 100 L 0 50 L 25 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#f4cccc" />
+            <g
+               id="g6400"
+               transform="scale(0.9999999999999998,1.1363636363636365)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6442"
+       transform="matrix(1,0,0,1,742,178)">
+      <g
+         id="g6414">
+        <g
+           id="g6412">
+          <rect
+             id="rect6410"
+             fill-opacity="0"
+             height="28"
+             width="96"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6420">
+        <g
+           id="g6418">
+          <rect
+             id="rect6416"
+             fill-opacity="0"
+             height="28"
+             width="96"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6426">
+        <g
+           id="g6424">
+          <rect
+             id="rect6422"
+             fill-opacity="0"
+             height="28"
+             width="54"
+             y="0"
+             x="21"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6436">
+        <g
+           id="g6430">
+          <rect
+             id="rect6428"
+             fill-opacity="0"
+             height="28"
+             width="54"
+             y="0"
+             x="21"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6432"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="21"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Additional</text>
+        <text
+           id="text6434"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="24.48333740234375"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Modules</text>
+      </g>
+      <g
+         id="g6440">
+        <g
+           id="g6438" />
+      </g>
+    </g>
+    <g
+       id="g6482"
+       transform="matrix(1,0,0,1,542,27)">
+      <g
+         id="g6448">
+        <g
+           id="g6446">
+          <rect
+             id="rect6444"
+             fill-opacity="0"
+             height="14"
+             width="226"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6454">
+        <g
+           id="g6452">
+          <rect
+             id="rect6450"
+             fill-opacity="0"
+             height="14"
+             width="226"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6460">
+        <g
+           id="g6458">
+          <rect
+             id="rect6456"
+             fill-opacity="0"
+             height="14"
+             width="155"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6476">
+        <g
+           id="g6464">
+          <rect
+             id="rect6462"
+             fill-opacity="0"
+             height="14"
+             width="155"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6466"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="0"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Provided</text>
+        <text
+           id="text6468"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="51"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">by</text>
+        <text
+           id="text6470"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="66"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">the</text>
+        <text
+           id="text6472"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="86"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">client</text>
+        <text
+           id="text6474"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="118"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">project</text>
+      </g>
+      <g
+         id="g6480">
+        <g
+           id="g6478" />
+      </g>
+    </g>
+    <g
+       id="g6518"
+       transform="matrix(1,0,0,1,72,27)">
+      <g
+         id="g6488">
+        <g
+           id="g6486">
+          <rect
+             id="rect6484"
+             fill-opacity="0"
+             height="14"
+             width="229"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6494">
+        <g
+           id="g6492">
+          <rect
+             id="rect6490"
+             fill-opacity="0"
+             height="14"
+             width="229"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6500">
+        <g
+           id="g6498">
+          <rect
+             id="rect6496"
+             fill-opacity="0"
+             height="14"
+             width="99"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6512">
+        <g
+           id="g6504">
+          <rect
+             id="rect6502"
+             fill-opacity="0"
+             height="14"
+             width="99"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6506"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="0"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Provided</text>
+        <text
+           id="text6508"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="51"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">by</text>
+        <text
+           id="text6510"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="66"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">O3DE</text>
+      </g>
+      <g
+         id="g6516">
+        <g
+           id="g6514" />
+      </g>
+    </g>
+    <g
+       id="g6530"
+       transform="translate(0,0) matrix(1,0,0,1,345,382)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="40"
+       data-width="140">
+      <g
+         id="g6528">
+        <g
+           id="g6526"
+           transform="translate(0,0) scale(1.4,0.4)">
+          <g
+             id="g6524">
+            <path
+               id="path6520"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#fff2cc" />
+            <g
+               id="g6522"
+               transform="scale(0.7142857142857143,2.5)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6562"
+       transform="matrix(1,0,0,1,348,395)">
+      <g
+         id="g6536">
+        <g
+           id="g6534">
+          <rect
+             id="rect6532"
+             fill-opacity="0"
+             height="14"
+             width="134"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6542">
+        <g
+           id="g6540">
+          <rect
+             id="rect6538"
+             fill-opacity="0"
+             height="14"
+             width="134"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6552">
+        <g
+           id="g6546">
+          <rect
+             id="rect6544"
+             fill-opacity="0"
+             height="14"
+             width="118"
+             y="0"
+             x="8.183334350585938"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6548"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="8.183334350585938"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Memory</text>
+        <text
+           id="text6550"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="54.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Management</text>
+      </g>
+      <g
+         id="g6556">
+        <g
+           id="g6554" />
+      </g>
+      <g
+         id="g6560">
+        <g
+           id="g6558" />
+      </g>
+    </g>
+    <g
+       id="g6574"
+       transform="translate(0,0) matrix(1,0,0,1,204.99999999999997,382)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="40"
+       data-width="140">
+      <g
+         id="g6572">
+        <g
+           id="g6570"
+           transform="translate(0,0) scale(1.4,0.4)">
+          <g
+             id="g6568">
+            <path
+               id="path6564"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#fff2cc" />
+            <g
+               id="g6566"
+               transform="scale(0.7142857142857143,2.5)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6610"
+       transform="matrix(1,0,0,1,208,395)">
+      <g
+         id="g6580">
+        <g
+           id="g6578">
+          <rect
+             id="rect6576"
+             fill-opacity="0"
+             height="14"
+             width="134"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6586">
+        <g
+           id="g6584">
+          <rect
+             id="rect6582"
+             fill-opacity="0"
+             height="14"
+             width="134"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6600">
+        <g
+           id="g6590">
+          <rect
+             id="rect6588"
+             fill-opacity="0"
+             height="14"
+             width="38"
+             y="0"
+             x="48.18333435058594"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6592"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="48.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">File</text>
+        <text
+           id="text6594"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="71.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">I</text>
+        <text
+           id="text6596"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="74.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">/</text>
+        <text
+           id="text6598"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="77.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">O</text>
+      </g>
+      <g
+         id="g6604">
+        <g
+           id="g6602" />
+      </g>
+      <g
+         id="g6608">
+        <g
+           id="g6606" />
+      </g>
+    </g>
+    <g
+       id="g6622"
+       transform="translate(0,0) matrix(1,0,0,1,65,382)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="40"
+       data-width="140">
+      <g
+         id="g6620">
+        <g
+           id="g6618"
+           transform="translate(0,0) scale(1.4,0.4)">
+          <g
+             id="g6616">
+            <path
+               id="path6612"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#fff2cc" />
+            <g
+               id="g6614"
+               transform="scale(0.7142857142857143,2.5)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6656"
+       transform="matrix(1,0,0,1,68,395)">
+      <g
+         id="g6628">
+        <g
+           id="g6626">
+          <rect
+             id="rect6624"
+             fill-opacity="0"
+             height="14"
+             width="134"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6634">
+        <g
+           id="g6632">
+          <rect
+             id="rect6630"
+             fill-opacity="0"
+             height="14"
+             width="134"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6646">
+        <g
+           id="g6638">
+          <rect
+             id="rect6636"
+             fill-opacity="0"
+             height="14"
+             width="109"
+             y="0"
+             x="12.683334350585938"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6640"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="12.683334350585938"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Other</text>
+        <text
+           id="text6642"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="45.68333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Core</text>
+        <text
+           id="text6644"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="75.68333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">services</text>
+      </g>
+      <g
+         id="g6650">
+        <g
+           id="g6648" />
+      </g>
+      <g
+         id="g6654">
+        <g
+           id="g6652" />
+      </g>
+    </g>
+    <g
+       id="g6660"
+       transform="matrix(1,0,0,1,432.78174593052023,108.14583333333326)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6658"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALoAAAD9CAYAAAALU20lAAADtUlEQVR4nO3ZLwinhR3H8U/0D4oyq6JxzTJ0cYJoFy6JRWUKS1eEFc81gyAoiAaLYhDMFkWxuoGYBDEMVkRhUYbCDHfigVyRe3i4e79e8C0Pv/AJ7/A8/DYAAAAAAAAAAAAA4NoePnsAHO3xbR+ePQKOJnQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE7ChW0fnD0Cjvb3bS+fPQKO9va2Z88eAUf7bNtfzh4BR7p120/b7j17CBzplW1vnD0CjvSnbf/dds/ZQ+AoD2/7ftvfzh4CR7hj26vbvtv23Mlbfpf7tj2y7Qnnrrqntv1j23vbPt/lV5XXt929G8Qft72/7cttP2z7z7ZPd/kfLud+uXe3Xdr25LaHtv1hN5CXtv247YVtD267/dw5cH3due2rbe9su//cKXCcV7e9dvYIONKfd/lL+a6zh8CRPtr217NHwNH+t+22s0fAkR7Y9u+zR8DRHt328dkj4GjPb3vz7BFwtBevHNzUhE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0EkQOglCJ0HoJAidBKGTIHQShE6C0LkpXdr21lX3zyt39bNLJ22D6+aWbd9u+/817tsrv4Eb3sVdO/SLJ+6C6+7r/Tbyb05dBAd4Zr8N/elTF8FB/rVfI//i5C1wmAv7NfQLJ2+BQ31y5eCm9vi2x84eAQAAAAAAAAAAAAAAAAAQ8zOpKomZdxTtiwAAAABJRU5ErkJggg=="
+         preserveAspectRatio="none"
+         height="253"
+         width="186" />
+    </g>
+    <g
+       id="g6664"
+       transform="matrix(1,0,0,1,129.88222550709162,242.49999999999994)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6662"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAB3CAYAAACe5GlxAAABaElEQVR4nO3ZoUoEYRiF4RdEMCoIm2wGYa9gxSrqDWywCCYx2AxabKZNolVRm0HYLmzxLiyCSVBMK7IGDY5s2J35DJ+cWTgPnDAw4S0/A/+AmZmZmf2vXXXAXzwDDXVExJFZHJnFkVkcmcWRWRyZxZFZHJnFkVkcmcWRWRyZxZFZHJnFkVkmIvINmFNHRD6BaXVElRngQx0RmQde1BGRJeBBHRHZBG7UEZEOcKCOiNwDa+qIKltATx1RZhm4AAbAqrhlrEt+TvM+MCtuGWsFeAKm1CFVboEddUTkEVhUR1RpAK/qiMgGcKeOiLSZgM/fNnCujojsASfqiMghcKyOiBwVqzVHZnFkFkdmcWQWR2ZxZBZHZnFkFkdmcWQWR2apZWQb6APvxQbFfp/7xTtyPeCrZLW50F+nPLJWv0W6jAZ2pUVjtBiNbEmLSlwzDLwSt5RqMoxsilsqnQGn6ojIQjEzMzMzMzOFb+jBdfcyX9i8AAAAAElFTkSuQmCC"
+         preserveAspectRatio="none"
+         height="119"
+         width="41" />
+    </g>
+    <g
+       id="g6668"
+       transform="matrix(1,0,0,1,129.88222550709156,221.14583333333331)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6666"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAokAAACMCAYAAAAQhTO7AAAEFklEQVR4nO3dT6ilAxjH8e/CQkqzQLIRtoSSJCVZYEfyp5RiJjZWZkWjjEkpYStiSWmKIhY2ZEWIFBZSCkkhRRY2Y3FuM1MPmrnNnfcdPp96Nrdz63d339M5vbcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4L/i/KUHAACwLrurF5ceAQDAuohEAAAGkQgAwCASAQAYRCIAAINIBABgEIkAAAwiEQCAQSQCADCIRAAABpEIAMAgEgEAGEQiAACDSAQAYBCJAAAMIhEAgEEkAgAwiEQAAAaRCADAIBIBABhEIgAAg0gEAGAQiQAADCIRAIBBJAIAMIhEAAAGkQgAwCASAQAYRCIAAINIBABgEIkAAAwiEQCAQSQCADCIRAAABpEIAMAgEgEAGEQiAACDSAQAYBCJAAAMIhEAgEEkAgAwiEQAAAaRCADA8NjWAXCMLqzuqp6q3qnerA5Ut1RnLrgL4ER6qbp76REAp4oHq0PVwerh6oY2cXigTSx+W9222DqAE+eD6uqlRwCs3bnVW9Xb1cX/8rqbqi+r507GKIAd9HN1ztIjANbu5erxY3ztadVr1SM7NwdgR91bvbf0CIC1293mY5fjcUH1e3XVCV8DsLPOqL6rrlt4B8Dq/Vpds43fuy/vxIFTz9PVs0uPAFi7S9t8x3A7dlV/nMAtADvp8uqN6v3q7IW3AKzePW0eA7FdX7YJTYC1Ob26pM0TGp5o8xWZBxdddJwua/M4iYeqF6p3q8+cc+4k3U/V3rbvwzaPxVn673DOuaPvm+rP6ovq9eqZ6rxOEWe1+Tz8++rV6snq/ur6Nu/KnXPuZN52Lb3bOef+7i7qFPVA9UubL06esfAWAABW4Obq8+rKpYcAALAen1W3Lj0CAID12Fe9svQIAADW5Yfq2qVHAACwHruq35YeAQDAulxRfbL0CAAA1uXO6uDSIwAAWJd9bf4lDAAAHPbo1gEAwGEiEQCAQSQCADCIRAAABpEIAMAgEgEAGEQiAACDSAQAYBCJAAAMIhEAgEEkAgAwiEQAAAaRCADAIBIBABhEIgAAg0gEAGAQiQAADCIRAIBBJAIAMIhEAAAGkQgAwCASAQAYRCIAAINIBABgEIkAAAwiEQCAQSQCADCIRAAABpEIAMAgEgEAGEQiAACDSAQAYBCJAAAMIhEAgPZXzx91H23d0T/bv9A2AAAWcnr1Y3XoH+7HrdcAAPA/s7d/jsS9C+4CAGBhXzUD8etFFwEAsLg9zUjcs+giAABW4eOOBOKnC28BAGAlbu9IJN6x8BYAAFbkna0DAIDDbtw6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/s78A4k7xMtD5uw4AAAAASUVORK5CYII="
+         preserveAspectRatio="none"
+         height="140"
+         width="649" />
+    </g>
+    <g
+       id="g6672"
+       transform="matrix(1,0,0,1,270,76.64583333333331)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6670"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAABmCAYAAACTFbeyAAACQElEQVR4nO3XMWsTYRjA8bdLSHMJp1kOOopLP0DdM2nH0CzFD5BB8hFiOjqmk7hnclbpLg5dXUM3wUGaUCgtXTwnQbTVxZJ77n4/eJfjGd7h+PM+KQEAAAAAAAAAAAAAAAAAAAAA/1/5y7nt223HXDPmoFL8nEAIYgWEIFZACGIFhCBWAAAAjWINBEIQKyAEsQJCECsgBLECQhArIASxAkIQKwAAgEaxBgIhiBUQglgBIYgVEIJYASGIFRCCWAEhiBUAAECjWAOBEMQKCEGsgBDECghBrIAQxAoIQayAEMQKAACgUayBQAhiBYQgVkAIYgWEIFZACGIFhCBWQAhiBQAA0CjWQCAEsQJCECsgBLECQhArIASxAkIQKyAEsQIAAGgUayAQglhRKx82fQHujVhRC8/a7fa3lNJs0xfh3ogVoT3e3t5+WxTF6uDgoExiVWdiRUx5nr/a2toqp9PpdVmW5dHRkVjVm1gRzvNOp/NlOByen52dlT+JVe2JFWE86ff7n3Z3d89PTk7K34lV7YkVlfew2+2+ybLsej6fX/1RKbECKmDSarUux+PxxXq9vqtTYgVszF5K6X2n07k5Pj7+a6TuiFX5j5PMhZ6DyjnM8/zraDS6XC6XXlZA5b1MKX2fzWZiBVTeo52dnXdFUVwsFguxAirvaa/X+zwYDK5OT0/FCqi8F+12+3IymZSr1UqsgEp70O12X2dZdrO/vy9WQOXt9fv9j0msgCAON30BAAAAAAAAAAAAAAAAAAjiB2H8K/9wvxXoAAAAAElFTkSuQmCC"
+         preserveAspectRatio="none"
+         height="102"
+         width="299" />
+    </g>
+    <g
+       id="g6686"
+       transform="translate(0.5,0.5) matrix(1,0,0,1,232.5,77)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="180"
+       data-width="60">
+      <g
+         id="g6684">
+        <g
+           id="g6682"
+           transform="translate(0,0) scale(5.882352941176471,3.585657370517928) translate(0.2,0.2)">
+          <g
+             id="g6680">
+            <g
+               id="g6678">
+              <path
+                 id="path6674"
+                 stroke-miterlimit="10"
+                 fill-opacity="0"
+                 d="M 0 0 L 10 10 L 10 40 L 0 50"
+                 stroke-dasharray="5,2"
+                 data-layerId="XXc3w15O2SVq"
+                 stroke="#000000"
+                 fill="rgb(0,0,0)" />
+              <g
+                 id="g6676"
+                 transform="scale(0.16999999999999998,0.2788888888888889)" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6726"
+       transform="matrix(1,0,0,1,352,60)">
+      <g
+         id="g6692">
+        <g
+           id="g6690">
+          <rect
+             id="rect6688"
+             fill-opacity="0"
+             height="28"
+             width="146"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6698">
+        <g
+           id="g6696">
+          <rect
+             id="rect6694"
+             fill-opacity="0"
+             height="28"
+             width="146"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6704">
+        <g
+           id="g6702">
+          <rect
+             id="rect6700"
+             fill-opacity="0"
+             height="28"
+             width="143"
+             y="0"
+             x="1.5"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6720">
+        <g
+           id="g6708">
+          <rect
+             id="rect6706"
+             fill-opacity="0"
+             height="28"
+             width="143"
+             y="0"
+             x="1.5"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6710"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="1.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Selects</text>
+        <text
+           id="text6712"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="45.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Which</text>
+        <text
+           id="text6714"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="82.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">modules</text>
+        <text
+           id="text6716"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="134.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">to</text>
+        <text
+           id="text6718"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="60.98333740234375"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">load</text>
+      </g>
+      <g
+         id="g6724">
+        <g
+           id="g6722" />
+      </g>
+    </g>
+    <g
+       id="g6730"
+       transform="matrix(1,0,0,1,170.52941176470586,350.2842712474619)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6728"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOAAAAAoCAYAAADnlvY4AAAAnElEQVR4nO3ZwQnCQBCG0b8OK7CCVGAFNmQNVmAF2oCtBfViIBC8iDjJ7nvw3YeFgWU3AQAAAAAAAAAAAAAAAAC+cKweAHo2JrknOVQPAj0akzzfXZMMteNAX+YLOHVJsq8c6pOT1FiPLBdw6pxklxWpPizp121qAaE1m7qCQmvmC3iLRxj4K98QUMhHPAAAAAAAAAAAAAAAALBGL9Kt2rDzMWKRAAAAAElFTkSuQmCC"
+         preserveAspectRatio="none"
+         height="40"
+         width="224" />
+    </g>
+    <g
+       id="g6774"
+       transform="matrix(1,0,0,1,243,363)">
+      <g
+         id="g6738">
+        <path
+           id="path6732"
+           d="M 0 0 L 74 0 L 74 14 L 0 14 Z"
+           stroke-dasharray="5,2"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6736">
+          <rect
+             id="rect6734"
+             height="14"
+             width="74"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(255, 255, 255)" />
+        </g>
+      </g>
+      <g
+         id="g6746">
+        <path
+           id="path6740"
+           d="M 0 0 L 74 0 L 74 14 L 0 14 Z"
+           stroke-dasharray="5,2"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6744">
+          <rect
+             id="rect6742"
+             fill-opacity="0"
+             height="14"
+             width="74"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6754">
+        <path
+           id="path6748"
+           d="M 2.5 0 L 71.5 0 L 71.5 14 L 2.5 14 Z"
+           stroke-dasharray="5,2"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6752">
+          <rect
+             id="rect6750"
+             fill-opacity="0"
+             height="14"
+             width="69"
+             y="0"
+             x="2.5"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6766">
+        <path
+           id="path6756"
+           d="M 2.5 0 L 71.5 0 L 71.5 14 L 2.5 14 Z"
+           stroke-dasharray="5,2"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6760">
+          <rect
+             id="rect6758"
+             fill-opacity="0"
+             height="14"
+             width="69"
+             y="0"
+             x="2.5"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6762"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="2.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Reads</text>
+        <text
+           id="text6764"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="42.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">From</text>
+      </g>
+      <g
+         id="g6772">
+        <path
+           id="path6768"
+           d="M 71.5 0 L 71.5 0 L 71.5 14 L 71.5 14 Z"
+           stroke-dasharray="5,2"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6770" />
+      </g>
+    </g>
+    <g
+       id="g6788"
+       transform="translate(0.5,0.5) matrix(-1,0,0,1,740,57.645833333333314)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="180"
+       data-width="60">
+      <g
+         id="g6786">
+        <g
+           id="g6784"
+           transform="translate(0,0) scale(5.882352941176471,3.585657370517928) translate(0.2,0.2)">
+          <g
+             id="g6782">
+            <g
+               id="g6780">
+              <path
+                 id="path6776"
+                 stroke-miterlimit="10"
+                 fill-opacity="0"
+                 d="M 0 0 L 10 10 L 10 40 L 0 50"
+                 stroke-dasharray="5,2"
+                 data-layerId="XXc3w15O2SVq"
+                 stroke="#000000"
+                 fill="rgb(0,0,0)" />
+              <g
+                 id="g6778"
+                 transform="scale(0.16999999999999998,0.2788888888888889)" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6792"
+       transform="matrix(1,0,0,1,640.3343835014425,68.10000610351562)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6790"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAAoCAYAAACmTknCAAABSElEQVRoge3WsUvDQBQG8A+uEHIcbZOm3OJWyOjeLXPH+icUZ1c3HYNkcVeyumZ0cbnZzT9BJFtNBVvT4TkVRdoqJc0F+35w2w3fB8e9BzDGGGOMMcbYlxsAR7ZD1K7Vai2EEEsA57az1EpKWRhjaDQaTXu93jOAE9uZaiGlLPI8JyKiLMtoMBi8ttvtewDHtrPt1ffiK0mSkOM4JYArAK7tjHuxrjgRUZ7nNJlMPqSUUwCntnNWblPxFWMMDYfDWafTeQQQ2c77UwTgYsuJNt1zXXexrfhKmqbked7M9/07NGj8RaihuNZ63rTiO/vrU9daP6GBT31nv31uSqlCa31mO2fl1hWP4/jdcZxSKXWNQxhnWZZRGIZvQRA84BAWGGMMjcfjst/vv+BQVlYhxFwIsex2u5e2s9TtFv9hPDHGGGOMMcYq9wlVTTqYBToPogAAAABJRU5ErkJggg=="
+         preserveAspectRatio="none"
+         height="40"
+         width="62" />
+    </g>
+    <g
+       id="g6804"
+       transform="translate(0,0) matrix(1,0,0,1,615,307)"
+       data-layerId="XXc3w15O2SVq"
+       data-height="38"
+       data-width="190">
+      <g
+         id="g6802">
+        <g
+           id="g6800"
+           transform="translate(0,0) scale(1.9,0.38)">
+          <g
+             id="g6798">
+            <path
+               id="path6794"
+               stroke-width="2"
+               stroke-miterlimit="10"
+               d="M 0 0 L 100 0 Q 100 0 100 0 L 100 100 Q 100 100 100 100 L 0 100 Q 0 100 0 100 L 0 0 Q 0 0 0 0 Z"
+               stroke-dasharray="1.7976931348623157e+308"
+               data-layerId="XXc3w15O2SVq"
+               stroke="#333333"
+               fill="#FFFFFF" />
+            <g
+               id="g6796"
+               transform="scale(0.5263157894736842,2.6315789473684212)" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g6844"
+       transform="matrix(1,0,0,1,619,319)">
+      <g
+         id="g6810">
+        <g
+           id="g6808">
+          <rect
+             id="rect6806"
+             fill-opacity="0"
+             height="14"
+             width="182"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6816">
+        <g
+           id="g6814">
+          <rect
+             id="rect6812"
+             fill-opacity="0"
+             height="14"
+             width="182"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6822">
+        <g
+           id="g6820">
+          <rect
+             id="rect6818"
+             fill-opacity="0"
+             height="14"
+             width="152"
+             y="0"
+             x="15.183334350585938"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6838">
+        <g
+           id="g6826">
+          <rect
+             id="rect6824"
+             fill-opacity="0"
+             height="14"
+             width="152"
+             y="0"
+             x="15.183334350585938"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6828"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="15.183334350585938"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Main</text>
+        <text
+           id="text6830"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="44.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">entrypoint</text>
+        <text
+           id="text6832"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="97.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)"> (</text>
+        <text
+           id="text6834"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="104.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">executable</text>
+        <text
+           id="text6836"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="163.18333435058594"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">)</text>
+      </g>
+      <g
+         id="g6842">
+        <g
+           id="g6840" />
+      </g>
+    </g>
+    <g
+       id="g6848"
+       transform="matrix(1,0,0,1,480,311.5)"
+       data-layerId="XXc3w15O2SVq">
+      <image
+         id="image6846"
+         transform="translate(0,0)"
+         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAABaCAYAAACxHBQuAAABq0lEQVR4nO3dMWobQQCF4QciJ/AJUgjfxI0u4RM4VVK5N7j1JXwDH0SlCpMm5AApUkUpBmEwqqwHs2u+D7Yf2F+7MyPYSQAAAAAAAAAAWJdtkm9JnpK8JDkkOa78YqL7jJvwlBHWLsl1ks3MQbFON0n2SZ4znlRwsX2Sh9mD4PO4z3hCQcU2Yw7llUfNaZUHNadVHtS8ZGwbQM0hYx8Kao6xsUmZvzCoExV1oqJOVNSJijpRUScq6kRFnaioExV1oqJOVNSJijpRUScq6kRFnaioExV1oqJOVNSJijpRUScq6kRFnaioExV1oqJOVNSJijpRUScq6kRFnaioExV1oqJqE1FRdp3xdWKo2WV8Rx1qHCFCnSNEFujr7AFcwOlZC3OV5DHJj9kDucBzxjl/TPYl40b8zfiVf587nA97yDiJlMnukvzOiOlf1hnVNuMJtc84M5lJbpP8zPlj6Zcc1SZjH2qXt1XeMV55Uz0m+ZPzMa3lOmTsQ51WeSblC3Gb5DXnb9qaJ+oswF2SXxEVZe9Xf6Ki5rRPteSJOiu15h11AAAAAAAAAAAW4z91G8Ly69eJzwAAAABJRU5ErkJggg=="
+         preserveAspectRatio="none"
+         height="90"
+         width="149" />
+    </g>
+    <g
+       id="g6924"
+       transform="matrix(1,0,0,1,523,325)">
+      <g
+         id="g6856">
+        <path
+           id="path6850"
+           d="M 0 0 L 69 0 L 69 28 L 0 28 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6854">
+          <rect
+             id="rect6852"
+             height="28"
+             width="69"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(255, 255, 255)" />
+        </g>
+      </g>
+      <g
+         id="g6864">
+        <path
+           id="path6858"
+           d="M 0 0 L 69 0 L 69 14 L 0 14 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6862">
+          <rect
+             id="rect6860"
+             fill-opacity="0"
+             height="14"
+             width="69"
+             y="0"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6872">
+        <path
+           id="path6866"
+           d="M 2.5 0 L 66.5 0 L 66.5 14 L 2.5 14 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6870">
+          <rect
+             id="rect6868"
+             fill-opacity="0"
+             height="14"
+             width="64"
+             y="0"
+             x="2.5"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6882">
+        <path
+           id="path6874"
+           d="M 2.5 0 L 66.5 0 L 66.5 14 L 2.5 14 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6878">
+          <rect
+             id="rect6876"
+             fill-opacity="0"
+             height="14"
+             width="64"
+             y="0"
+             x="2.5"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6880"
+           data-layerId="XXc3w15O2SVq"
+           y="11"
+           x="2.5"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">Instantiates</text>
+      </g>
+      <g
+         id="g6888">
+        <path
+           id="path6884"
+           d="M 66.5 0 L 66.5 0 L 66.5 14 L 66.5 14 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6886" />
+      </g>
+      <g
+         id="g6896">
+        <path
+           id="path6890"
+           d="M 0 14 L 69 14 L 69 28 L 0 28 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6894">
+          <rect
+             id="rect6892"
+             fill-opacity="0"
+             height="14"
+             width="69"
+             y="14"
+             x="0"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6904">
+        <path
+           id="path6898"
+           d="M 10 14 L 59 14 L 59 28 L 10 28 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6902">
+          <rect
+             id="rect6900"
+             fill-opacity="0"
+             height="14"
+             width="49"
+             y="14"
+             x="10"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+      </g>
+      <g
+         id="g6916">
+        <path
+           id="path6906"
+           d="M 10 14 L 59 14 L 59 28 L 10 28 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6910">
+          <rect
+             id="rect6908"
+             fill-opacity="0"
+             height="14"
+             width="49"
+             y="14"
+             x="10"
+             stroke="none"
+             fill="rgb(0,0,0)" />
+        </g>
+        <text
+           id="text6912"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="10"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">and</text>
+        <text
+           id="text6914"
+           data-layerId="XXc3w15O2SVq"
+           y="25"
+           x="34"
+           line-height="14px"
+           text-decoration=""
+           font-weight="normal"
+           font-style="normal"
+           font-size="12px"
+           font-family="&quot;Arial&quot;"
+           stroke="none"
+           fill="rgb(0, 0, 0)">runs</text>
+      </g>
+      <g
+         id="g6922">
+        <path
+           id="path6918"
+           d="M 59 14 L 59 14 L 59 28 L 59 28 Z"
+           stroke-dasharray="1.7976931348623157e+308"
+           data-layerId="XXc3w15O2SVq"
+           stroke="none"
+           fill="none" />
+        <g
+           id="g6920" />
+      </g>
+    </g>
+  </g>
+</svg>
