@@ -1,7 +1,7 @@
 ---
 title: Create an O3DE Gem
 description: Learn about the requirements for creating a component to use with the Open 3D Engine Gem system.
-weight: 100
+weight: 200
 ---
 
 {{< preview-migrated >}}

@@ -3,23 +3,26 @@ linktitle: Key Concepts
 title: 'Key Concepts: How Open 3D Engine Works'
 description: Dive into the Open 3D Engine (O3DE) tools and systems, to see how they work together to help you create games and immersive experiences.
 weight: 200
+toc: true
 ---
-
-{{< preview-migrated >}}
 
 Open 3D Engine (O3DE) provides a complete, end-to-end environment for developing and packaging graphically intensive games, simulations, and applications on a wide variety of platforms. Because it's a large development environment with so many different features and tools, O3DE can be intimidating at first. This topic covers the various parts of O3DE at a high level, and the common ways you can work with it depending on your role as a developer, designer, or artist.
 
 O3DE consists of tools, editors, and systems that help you build your project. At its core, it provides the following:
 
-+ Core modules that provide math, memory management, serialization, event messaging, and more.
-+ Authoring tools such as the Editor and related applications for placing objects in a level, adding components, and scripting logic.
-+ A plugin and extension system for adding more features.
-+ Asset pipeline tools for converting, optimizing, and bundling assets.
-+ A build system to build and package a shippable launcher.
+* Core modules that provide math, memory management, serialization, event messaging, and more.
+* Authoring tools such as the Editor and related applications for placing objects in a level, adding components, and scripting logic.
+* A plugin and extension system for adding more features.
+* Asset pipeline tools for converting, optimizing, and bundling assets.
+* A build system to build and package a shippable launcher.
 
 O3DE is comprised of sub-modules, called *Gems*. As you develop a project, you can add features and functionality by including Gems that supply those features and functions. Gems might include anything from assets such as materials, textures, and models, to development tools such as Script Canvas (a visual script editor), to entire runtime systems such as the Atom renderer, AI, and Physics.
 
 Think of O3DE as a collection of discrete elements: code, scripts, various GUI-based editors, and command-line tools. When you compile a project, O3DE's build scripts pull in all the pieces that are specified in your project's configuration. When built, your project will only use the parts of the O3DE SDK that you included in your configuration. Likewise, the asset bundling and management tools ensure you only ship the assets that your project requires.
+
+The following image shows the structure of project runtimes built with O3DE:
+
+![O3DE project runtime structure: O3DE provides Gem libraries and the core application runtimes like memory management, networking, and file I/O. The project itself provides configuration information to O3DE to determine what libraries to dynamically load, as well as defining the core logic and entry point to start the O3DE runtime.](/images/welcome-guide/project-runtime-structure.svg)
 
 ## Overview of the O3DE SDK
 
@@ -27,28 +30,42 @@ O3DE is modular. It is constructed of a common *core* that all modules depend on
 
 The following are the core modules:
 
-+ `AzCore` provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
-+ `AzFramework` provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
-+ `AzGameFramework` contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
-+ `AzToolsFramework` contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
-+ `AzQtComponents` contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
+* `AzCore` provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
+* `AzFramework` provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
+* `AzGameFramework` contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
+* `AzToolsFramework` contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
+* `AzQtComponents` contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
 
 The following image illustrates the dependency graph for the core modules of O3DE.
 
 ![O3DE core module dependency graph](/images/welcome-guide/o3de-architecture-dependency-graph.svg)
 
+Some examples of the high-level products using these frameworks are:
+
+* **Project runtimes** - End products created by developers using O3DE, such as games, dedicated server runtimes, and world simulations.
+* **CLI tools** - Tools invoked from the command-line interface without a GUI, such as the AZSL Compiler and the Asset Batch Processor.
+* **GUI tools** - Tools with a graphical UX used for developing O3DE projects, such as the O3DE Editor, O3DE Asset Processor, and the Atom Materials Editor.
+
+### O3DE Directory Structure
+
 There are two primary directories to be aware of with O3DE: The `3rdParty` directory, and the `O3DE` directory.
 
-+ `/3rdParty` - Many of O3DE's features (both core features, and those that are provided by Gems) leverage third-party libraries. For example, O3DE supports `.fbx` files through the Open Asset Import Library, O3DE's interface uses Qt, and O3DE's physics system uses NVIDIA PhysX. The third-party libraries that are required to build these features for your project, along with all the other necessary third-party libraries, live in the `3rdParty` directory. This directory can exist anywhere on your file system, or even on a network drive. You can specify its location during configuration. Your `3rdParty` directory must contain an empty `.txt` file named `3rdParty.txt` so that the configure and build system can identify the location of your third-party directory.
-+ `/O3DE` - The `O3DE` directory contains subdirectories that hold O3DE's core (including source code for AzFramework), various tools including **O3DE Editor**, and available Gems. You may also choose to keep your own project directories in the main `O3DE` directory. In the `O3DE` directory are several subdirectories to be aware of:
-q + `/cmake` contains configuration, download and build scripts for O3DE.
-  + `/Code` contains the C++ API headers that you include in any code that you create to extend the functionality of O3DE. The API is organized in directories for each feature or system. The headers contain virtual interfaces that you'll implement so that you can connect functionality to the relevant O3DE system or feature through EBus, as well as the expected type and template definitions.
-  + `/Code/Framework` contains the AzFramework APIs. AzFramework is the core that defines all of O3DE's systems, including Gems and EBus.
-  + `/Code/Framework/AzCore/AzCore` contains all of the APIs for interoperating with O3DE's systems, modules, and Gems. If you are extending O3DE's default functionality, this is where you'll find all the APIs that you need.
-  + `/Editor` contains the assets, scripts, and configuration files for the O3DE Editor.
-  + `/Engine` contains the default asset binaries, script files (`.lua`), entity configuration files (`.ent`), and engine configuration files for O3DE.
-  + `/Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration.
-  + `/Templates` contains the default templates for Gems and Projects.
+* `3rdParty` - A user-created directory that may live outside of the O3DE install. Many O3DE features (both core features and those provided by Gems) use third-party libraries. For example, O3DE supports `.fbx` files through the Open Asset Import Library, the O3DE GUI Tools use Qt, and the physics system uses NVIDIA PhysX. The third-party libraries that are required to build these features for your project, along with all the other necessary third-party libraries, live in the `3rdParty` directory. The location of this directory is set as part of the O3DE configuration process before build. Your `3rdParty` directory must contain an empty `.txt` file named `3rdParty.txt` for the O3DE build system to work.
+* `/O3DE` - The `O3DE` directory contains subdirectories that hold O3DE's core (including source code for AzFramework), various tools including **O3DE Editor**, and available Gems. You may also choose to keep your own project directories in the main `O3DE` directory. In the `O3DE` directory are several subdirectories to be aware of:
+
+  {{< note >}}
+  This section describes the directory structure of the O3DE open source project, not the directories produced from a binary installer.
+  {{< /note >}}
+  
+  * `cmake` contains configuration, download and build scripts for O3DE.
+  * `Code` contains the C++ code and headers that used to build O3DE and provide its APIs. APIs are organized by libraries, each of which consists of a well-defined feature set. Library headers offer virtual interfaces that you'll provide implementations of to connect your code to the relevant O3DE system or feature.
+  * `Code/Framework` contains the all of the source code and headers used by the core O3DE libaries such as `AzCore`, `AzFramework`, and `AzNetworking`.
+  * `Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration.
+  * `Templates` contains the default templates for Gems and Projects.
+
+## Project Runtime Structure
+
+
 
 ## Working with Gems
 
@@ -58,34 +75,34 @@ You enable Gems when you create and configure your project. You can enable addit
 
 You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/O3DE/Gems` directory and examine the included Gems. The process for creating your own Gem is very similar to creating a project.
 
-## Messaging Between Systems with EBus
+## The EBus Messaging System
 
-All of O3DE's Gems and systems, as well as the components in your projects, need a way to communicate with each other. O3DE uses a general-purpose communication system called Event Bus (EBus for short).
+All of the Open 3D Engine Gems and systems, as well as the components in your projects, need a way to communicate with each other. O3DE uses a general-purpose communication system called Event Bus (EBus for short).
 
-As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them-​and specifically, to invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces (buses) that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
+As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them and invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces (buses) that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
 
 The two types of EBuses are:
 
-+ Request bus: This EBus type registers a handler for a method that can be called by other systems.
-+ Notification bus: This EBus type provides a messaging interface for notifications that systems can publish or subscribe to.
+* Request bus: This EBus type registers a handler for a method that can be called by other systems.
+* Notification bus: This EBus type provides a messaging interface for notifications that systems can publish or subscribe to.
 
 EBuses have many advantages over traditional polling methods:
 
-+ Abstraction - Minimize hard dependencies between systems.
-+ Event-driven - Eliminate polling patterns for more scalable and higher performance software.
-+ Cleaner application code - Safely dispatch messages without concern for what is handling them or whether they are being handled at all.
-+ Concurrency - Queue events from various threads for safe execution on another thread or for distributed system applications.
-+ Predictability - Provide support for ordering of handlers on a given bus.
-+ Debugging - Intercept messages for reporting, profiling, and introspection purposes.
+* Abstraction - Minimize hard dependencies between systems.
+* Event-driven - Eliminate polling patterns for more scalable and higher performance software.
+* Cleaner application code - Safely dispatch messages without concern for what is handling them or whether they are being handled at all.
+* Concurrency - Queue events from various threads for safe execution on another thread or for distributed system applications.
+* Predictability - Provide support for ordering of handlers on a given bus.
+* Debugging - Intercept messages for reporting, profiling, and introspection purposes.
 
 With EBusses, you can:
 
-+ Make direct gobal function calls.
-+ Dispatch processing to multiple handlers.
-+ Queue all calls, acting like a command buffer.
-+ Use as an addressable mailbox.
-+ Perform either imperative or queued delivery.
-+ Automatically marshal results of a function call into a buffer.
+* Make direct gobal function calls.
+* Dispatch processing to multiple handlers.
+* Queue all calls, acting like a command buffer.
+* Use as an addressable mailbox.
+* Perform either imperative or queued delivery.
+* Automatically marshal results of a function call into a buffer.
 
 Interfaces are provided for the Gems and systems DLLs included with O3DE. To use the functionality in these DLLs, you use the interfaces in the headers to register for a single cast (Event) or broadcast (Broadcast) event, or through supplying a data request functor to a Request Bus handler.
 
@@ -103,13 +120,15 @@ Understanding the component entity system is fundamental to using O3DE. It's con
 
 As an example, suppose you want to create a door entity that can be opened and closed. You made a mesh and a couple audio files. Now, consider the functionality your door must have.
 
-+ Display the door model.
-+ Play back the audio files when the door opens and closes.
-+ Prevent passing through the door when it's closed.
-+ Animate the door open and close.
-+ Trigger the door open and close by some mechanism.
+* Display the door model.
+* Play back the audio files when the door opens and closes.
+* Prevent passing through the door when it's closed.
+* Animate the door open and close.
+* Trigger the door open and close by some mechanism.
 
 Knowing the functionality that your door entity needs, you add components to the entity for each aspect of the door, including its presence in the game world and the ways a player can interact with it. A *Mesh* component visually represents the door in the game world. *Audio Trigger* components provide the audio when it opens or closes. A *PhysX Collider* component prevents a player from passing through the door when it's closed. *Script Canvas* components define the behaviors, including animation and sound playback, when the door is opened or closed. Whatever behavior you need to model, each entity needs a collection of components to support it. The only component that's common to all entities is the *Transform* component, which provides the position, orientation, and scale of your entity in the game world.
+
+### Spawnables and Prefabs
 
 Entities are easy to grasp and create, but can become complex. If the entity requires a lot of functionality, the list of components grows quickly. What if you want to add a latch with its own animation and audio to the door? What if you want to add a breakable glass pane to the door? Suddenly, the entity goes from having five components to dozens of components. This is where *prefabs* and *spawnables* come in.
 
@@ -131,12 +150,12 @@ The asset cache contains a full image of all files (except executables and relat
 
 Projects can have thousands of assets that need to be monitored and processed for multiple target operating systems. To manage this complexity, the Asset Pipeline is completely configurable. Here are just some of the configuration options available:
 
-+ Specify what directories should be monitored for changes.
-+ Specify target operating systems and tailor the Asset Pipeline's behavior per target operating system.
-+ Set the number of concurrent processing tasks.
-+ Use metadata information to associate file types and process side-by-side assets.
-+ Add your own asset types to the Asset Pipeline.
-+ Batch process assets on a build server.
+* Specify what directories should be monitored for changes.
+* Specify target operating systems and tailor the Asset Pipeline's behavior per target operating system.
+* Set the number of concurrent processing tasks.
+* Use metadata information to associate file types and process side-by-side assets.
+* Add your own asset types to the Asset Pipeline.
+* Batch process assets on a build server.
 
 When you're preparing to ship, you'll need to package the assets that your project uses. Even small projects can have hundreds of assets, including multiple versions of assets, many of them not required in your final distributable. Manually tracking and determining which assets you need to ship can be tedious, time consuming, and error prone. *Asset Bundler* solves this for you..
 
@@ -155,3 +174,17 @@ Lua is a powerful, fast, lightweight, embeddable scripting language. Lua facilit
 O3DE's functionality is exposed to Script Canvas and Lua by the behavior context. The behavior context reflects runtime code and makes it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's EBus so you can dispatch and handle events through Script Canvas and Lua.
 
 Functionality for both Script Canvas and Lua is added to entities through components. You can have multiple script components and mix and match between Lua and Script Canvas within your entities. This approach enables you to create small, manageable modules of logic and behavior that can be reused throughout your projects.
+
+## Available Release Runtimes
+
+O3DE offers both client (or single-user) application and dedicated runtime support. Your project can produce either (or both) as part of a build, allowing you to easily share code and assets where it makes sense.
+
+### The Client ("Launcher")
+
+The **Client**, also called the **Launcher**, is the bootstrap application that loads and runs your project. This application is based on the core O3DE libraries and is responsible for loading your project and Gems. The client runtime provides enough functionality to handle bootstrapping the rest of the systems, handing application lifecycle and some core systems like input and crash handling.
+
+The Client is the binary application that would be shipped to customers or end users to run.
+
+### Dedicated Server Runtime
+
+The *dedicated server runtime* is meant to be run in an environment where it provides a shared session to many clients. Dedicated runtimes don't have rendering or audio capabilities enabled, but loads simulations and provides synchronization between them. The most common example of a dedicated runtime is a multiplayer game server.
