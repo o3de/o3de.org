@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Multiplayer API Reference: Multiplayer::IMultiplayer Class Reference</title>
+<title>Open 3D Engine Multiplayer Gem API Reference: Multiplayer::IMultiplayer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Multiplayer API Reference
+   <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -60,8 +63,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7eb36fd30a666459a5bc1bac1d043c3"><td class="memItemLeft" align="right" valign="top"><a id="aa7eb36fd30a666459a5bc1bac1d043c3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_multiplayer_1_1_i_multiplayer.html">IMultiplayer</a>, &quot;{90A001DD-AD31-46C7-9FBE-1059AFB7F5E9}&quot;)</td></tr>
 <tr class="separator:aa7eb36fd30a666459a5bc1bac1d043c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a894d11f98acb0c6afc20a7c1489700f8"><td class="memItemLeft" align="right" valign="top">virtual MultiplayerAgentType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a894d11f98acb0c6afc20a7c1489700f8">GetAgentType</a> ()=0</td></tr>
-<tr class="separator:a894d11f98acb0c6afc20a7c1489700f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c2a4b335fb923e5930aea09a35c422"><td class="memItemLeft" align="right" valign="top">virtual MultiplayerAgentType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a13c2a4b335fb923e5930aea09a35c422">GetAgentType</a> () const =0</td></tr>
+<tr class="separator:a13c2a4b335fb923e5930aea09a35c422"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35703a1996a1bb57ea035936be75e0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#ac35703a1996a1bb57ea035936be75e0f">InitializeMultiplayer</a> (MultiplayerAgentType state)=0</td></tr>
 <tr class="separator:ac35703a1996a1bb57ea035936be75e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a5cf5ec4a68f412e289de2236184486"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a2a5cf5ec4a68f412e289de2236184486">AddConnectionAcquiredHandler</a> (ConnectionAcquiredEvent::Handler &amp;handler)=0</td></tr>
@@ -70,6 +73,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a393df910eade10cf771978203ed3d0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58cec4e0bc53a20dacc05df0ebf8fb73"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a58cec4e0bc53a20dacc05df0ebf8fb73">AddSessionShutdownHandler</a> (SessionShutdownEvent::Handler &amp;handler)=0</td></tr>
 <tr class="separator:a58cec4e0bc53a20dacc05df0ebf8fb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d143ca3330c235a6c1638fd390844c1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a8d143ca3330c235a6c1638fd390844c1">SendReadyForEntityUpdates</a> (bool readyForEntityUpdates)=0</td></tr>
+<tr class="separator:a8d143ca3330c235a6c1638fd390844c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a220460c811310f8bd548d021e43f26f2"><td class="memItemLeft" align="right" valign="top">virtual AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a220460c811310f8bd548d021e43f26f2">GetCurrentHostTimeMs</a> () const =0</td></tr>
+<tr class="separator:a220460c811310f8bd548d021e43f26f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a0b76e27edc11a1c889477d071a2d2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_i_network_time.html">INetworkTime</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a57a0b76e27edc11a1c889477d071a2d2">GetNetworkTime</a> ()=0</td></tr>
+<tr class="separator:a57a0b76e27edc11a1c889477d071a2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd397b4df8ab87352fd9597a9d2c8df6"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html">INetworkEntityManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#afd397b4df8ab87352fd9597a9d2c8df6">GetNetworkEntityManager</a> ()=0</td></tr>
+<tr class="separator:afd397b4df8ab87352fd9597a9d2c8df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa29eec22ef97dc4e2fb110802adbeb3a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats.html">MultiplayerStats</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aa29eec22ef97dc4e2fb110802adbeb3a">GetStats</a> ()</td></tr>
 <tr class="separator:aa29eec22ef97dc4e2fb110802adbeb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -99,7 +110,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds a ConnectionAcquiredEvent Handler which is invoked when a new endpoint connects to the session </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a ConnectionAcquiredEvent Handler which is invoked when a new endpoint connects to the session. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The SessionInitEvent Handler to add </td></tr>
   </table>
@@ -131,7 +142,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds a SessionInitEvent Handler which is invoked when a new network session starts </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a SessionInitEvent Handler which is invoked when a new network session starts. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The SessionInitEvent Handler to add </td></tr>
   </table>
@@ -163,7 +174,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds a SessionShutdownEvent Handler which is invoked when the current network session ends </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Adds a SessionShutdownEvent Handler which is invoked when the current network session ends. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>The SessionShutdownEvent handler to add </td></tr>
   </table>
@@ -172,8 +183,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a894d11f98acb0c6afc20a7c1489700f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a894d11f98acb0c6afc20a7c1489700f8">&#9670;&nbsp;</a></span>GetAgentType()</h2>
+<a id="a13c2a4b335fb923e5930aea09a35c422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c2a4b335fb923e5930aea09a35c422">&#9670;&nbsp;</a></span>GetAgentType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,6 +196,63 @@ Public Member Functions</h2></td></tr>
           <td class="memname">virtual MultiplayerAgentType Multiplayer::IMultiplayer::GetAgentType </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Gets the type of Agent this <a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> impl represents. </p><dl class="section return"><dt>Returns</dt><dd>The type of agents represented </dd></dl>
+
+</div>
+</div>
+<a id="a220460c811310f8bd548d021e43f26f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a220460c811310f8bd548d021e43f26f2">&#9670;&nbsp;</a></span>GetCurrentHostTimeMs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::TimeMs Multiplayer::IMultiplayer::GetCurrentHostTimeMs </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the current server time in milliseconds. This can be one of three possible values:</p><ol type="1">
+<li>On the host outside of rewind scope, this will return the latest application elapsed time in ms.</li>
+<li>On the host within rewind scope, this will return the rewound time in ms.</li>
+<li>On the client, this will return the most recently replicated server time in ms. <dl class="section return"><dt>Returns</dt><dd>the current server time in milliseconds </dd></dl>
+</li>
+</ol>
+
+</div>
+</div>
+<a id="afd397b4df8ab87352fd9597a9d2c8df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd397b4df8ab87352fd9597a9d2c8df6">&#9670;&nbsp;</a></span>GetNetworkEntityManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html">INetworkEntityManager</a>* Multiplayer::IMultiplayer::GetNetworkEntityManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -194,7 +262,33 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Gets the type of Agent this <a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> impl represents </p><dl class="section return"><dt>Returns</dt><dd>The type of agents represented </dd></dl>
+<p>Returns the network entity manager instance bound to this multiplayer instance. </p><dl class="section return"><dt>Returns</dt><dd>pointer to the network entity manager instance bound to this multiplayer instance </dd></dl>
+
+</div>
+</div>
+<a id="a57a0b76e27edc11a1c889477d071a2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57a0b76e27edc11a1c889477d071a2d2">&#9670;&nbsp;</a></span>GetNetworkTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_multiplayer_1_1_i_network_time.html">INetworkTime</a>* Multiplayer::IMultiplayer::GetNetworkTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the network time instance bound to this multiplayer instance. </p><dl class="section return"><dt>Returns</dt><dd>pointer to the network time instance bound to this multiplayer instance </dd></dl>
 
 </div>
 </div>
@@ -247,7 +341,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the type of this Multiplayer connection and calls any related callback </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the type of this Multiplayer connection and calls any related callback. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>The state of this connection </td></tr>
   </table>
@@ -256,10 +350,45 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8d143ca3330c235a6c1638fd390844c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d143ca3330c235a6c1638fd390844c1">&#9670;&nbsp;</a></span>SendReadyForEntityUpdates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::IMultiplayer::SendReadyForEntityUpdates </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>readyForEntityUpdates</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sends a packet telling if entity update messages can be sent </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">readyForEntityUpdates</td><td>Ready for entity updates or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Multiplayer/Code/Include/Multiplayer/IMultiplayer.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:39 for Multiplayer API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:55 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

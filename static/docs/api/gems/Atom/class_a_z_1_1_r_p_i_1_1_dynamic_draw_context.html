@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::DynamicDrawContext Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::DynamicDrawContext Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -67,7 +70,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:ab2fa38584d0c5d05c8cacfa7f300c4b6"><td class="memItemLeft" align="right" valign="top"><a id="ab2fa38584d0c5d05c8cacfa7f300c4b6"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>DrawStateOptions</b> : uint32_t { <br />
 &#160;&#160;<b>PrimitiveType</b> = AZ_BIT(0), 
 <b>DepthState</b> = AZ_BIT(1), 
-<b>EnableStencil</b> = AZ_BIT(2), 
+<b>StencilState</b> = AZ_BIT(2), 
 <b>FaceCullMode</b> = AZ_BIT(3), 
 <br />
 &#160;&#160;<b>BlendMode</b> = AZ_BIT(4)
@@ -103,6 +106,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#aa908fcd5f7301534d6416bd5b87dec55">EndInit</a> ()</td></tr>
 <tr class="memdesc:aa908fcd5f7301534d6416bd5b87dec55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize and validate initialization. Any initialization functions should be called before EndInit is called. <br /></td></tr>
 <tr class="separator:aa908fcd5f7301534d6416bd5b87dec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a66a130a7d87b5675a12c6e8bbc7ad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a0a66a130a7d87b5675a12c6e8bbc7ad1">SetScene</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="separator:a0a66a130a7d87b5675a12c6e8bbc7ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa079c9ab5b18eee5e99af0a914e6ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#afa079c9ab5b18eee5e99af0a914e6ce7">SetRenderPipeline</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline)</td></tr>
+<tr class="separator:afa079c9ab5b18eee5e99af0a914e6ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd1406dc7074b5201f6bbd118bbed23"><td class="memItemLeft" align="right" valign="top"><a id="a3bd1406dc7074b5201f6bbd118bbed23"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a3bd1406dc7074b5201f6bbd118bbed23">IsReady</a> ()</td></tr>
 <tr class="memdesc:a3bd1406dc7074b5201f6bbd118bbed23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> is ready to add draw calls. <br /></td></tr>
@@ -117,10 +124,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a22694a2ac6f999de7e2f29aea6202e93">SetDepthState</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_depth_state.html">RHI::DepthState</a> depthState)</td></tr>
 <tr class="memdesc:a22694a2ac6f999de7e2f29aea6202e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set DepthState if DrawStateOptions::DepthState option is enabled. <br /></td></tr>
 <tr class="separator:a22694a2ac6f999de7e2f29aea6202e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827c1dfd44eaae68e73736c7835d2c89"><td class="memItemLeft" align="right" valign="top"><a id="a827c1dfd44eaae68e73736c7835d2c89"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a827c1dfd44eaae68e73736c7835d2c89">SetEnableStencil</a> (bool enable)</td></tr>
-<tr class="memdesc:a827c1dfd44eaae68e73736c7835d2c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable/disable stencil if DrawStateOptions::EnableStencil option is enabled. <br /></td></tr>
-<tr class="separator:a827c1dfd44eaae68e73736c7835d2c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4050d20a1409a6d16db281e9c7e12101"><td class="memItemLeft" align="right" valign="top"><a id="a4050d20a1409a6d16db281e9c7e12101"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a4050d20a1409a6d16db281e9c7e12101">SetStencilState</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_stencil_state.html">RHI::StencilState</a> stencilState)</td></tr>
+<tr class="memdesc:a4050d20a1409a6d16db281e9c7e12101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set StencilState if DrawStateOptions::StencilState option is enabled. <br /></td></tr>
+<tr class="separator:a4050d20a1409a6d16db281e9c7e12101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62cff10724e04de0df3a5dd9aaa2cc98"><td class="memItemLeft" align="right" valign="top"><a id="a62cff10724e04de0df3a5dd9aaa2cc98"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a62cff10724e04de0df3a5dd9aaa2cc98">SetCullMode</a> (RHI::CullMode cullMode)</td></tr>
 <tr class="memdesc:a62cff10724e04de0df3a5dd9aaa2cc98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set CullMode if DrawStateOptions::FaceCullMode option is enabled. <br /></td></tr>
@@ -143,6 +150,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ab5c1bc48bcd6a1e8f2b9e2f5fd9e2cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafc4a5204dff69e4e7b0e045a5e252cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#aafc4a5204dff69e4e7b0e045a5e252cd">UnsetViewport</a> ()</td></tr>
 <tr class="separator:aafc4a5204dff69e4e7b0e045a5e252cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad4a6a4697ead1151e4cf2ac25957875"><td class="memItemLeft" align="right" valign="top"><a id="aad4a6a4697ead1151e4cf2ac25957875"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#aad4a6a4697ead1151e4cf2ac25957875">SetStencilReference</a> (uint8_t stencilRef)</td></tr>
+<tr class="memdesc:aad4a6a4697ead1151e4cf2ac25957875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set stencil reference for following draws which are added to this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a>. <br /></td></tr>
+<tr class="separator:aad4a6a4697ead1151e4cf2ac25957875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f13a4ac6e95413055ec3240392c552c"><td class="memItemLeft" align="right" valign="top"><a id="a0f13a4ac6e95413055ec3240392c552c"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a0f13a4ac6e95413055ec3240392c552c">GetStencilReference</a> () const</td></tr>
+<tr class="memdesc:a0f13a4ac6e95413055ec3240392c552c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current stencil reference. <br /></td></tr>
+<tr class="separator:a0f13a4ac6e95413055ec3240392c552c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a448ab89f7217e30b4aa10f34a9b3ae90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a448ab89f7217e30b4aa10f34a9b3ae90">DrawIndexed</a> (void *vertexData, uint32_t vertexCount, void *indexData, uint32_t indexCount, RHI::IndexFormat indexFormat, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt; drawSrg=nullptr)</td></tr>
 <tr class="separator:a448ab89f7217e30b4aa10f34a9b3ae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5de4cd8f6b135f78326f3e8114cd4c80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a5de4cd8f6b135f78326f3e8114cd4c80">DrawLinear</a> (void *vertexData, uint32_t vertexCount, Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt; drawSrg)</td></tr>
@@ -366,6 +381,44 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
 
 </div>
 </div>
+<a id="afa079c9ab5b18eee5e99af0a914e6ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa079c9ab5b18eee5e99af0a914e6ce7">&#9670;&nbsp;</a></span>SetRenderPipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::SetRenderPipeline </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *&#160;</td>
+          <td class="paramname"><em>pipeline</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set up the <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> for the input <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a>. This should be called after the last frame is done and before any draw calls. </p>
+
+</div>
+</div>
+<a id="a0a66a130a7d87b5675a12c6e8bbc7ad1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a66a130a7d87b5675a12c6e8bbc7ad1">&#9670;&nbsp;</a></span>SetScene()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::SetScene </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td>
+          <td class="paramname"><em>scene</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set up the <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> for the input <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a>. This should be called after the last frame is done and before any draw calls. </p>
+
+</div>
+</div>
 <a id="ac3bee30aac5f1348ae5ee353e3bb1b6b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3bee30aac5f1348ae5ee353e3bb1b6b">&#9670;&nbsp;</a></span>SetScissor()</h2>
 
@@ -499,10 +552,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/DynamicDraw/DynamicDrawContext.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:16 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:33 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

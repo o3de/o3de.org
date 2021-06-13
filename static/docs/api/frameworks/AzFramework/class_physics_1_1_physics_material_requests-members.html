@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: Member List</title>
+<title>Open 3D Engine AzFramework API Reference: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -50,15 +53,16 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a>, including all inherited members.</p>
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>AddressPolicy</b> (defined in <a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a>)</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a0cf450255a665953d9e68c19da4f19b4">GetFirstSelectedMaterialIndex</a>(const MaterialSelection &amp;materialSelection)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a9a666bcf3cd41fe725e4fa49289e9cb2">GetGenericDefaultMaterial</a>()=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a354d2fbc6f8089ae4e036496dfb092b0">GetMaterialByName</a>(const AZStd::string &amp;name)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a8692d7e1047aa91e3a4d09d12882b4cf">GetMaterials</a>(const MaterialSelection &amp;materialSelection, AZStd::vector&lt; AZStd::weak_ptr&lt; Physics::Material &gt;&gt; &amp;outMaterials)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a9a666bcf3cd41fe725e4fa49289e9cb2">GetGenericDefaultMaterial</a>()=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a405cc92f80c54cc6986b13e5dc2df9b3">GetMaterialById</a>(Physics::MaterialId id)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a662bb279cbffcbab3d67a14edeed87cb">GetMaterialByName</a>(const AZStd::string &amp;name)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#aed83f29e6a8b0330f26a5300f1145ce4">GetMaterials</a>(const MaterialSelection &amp;materialSelection, AZStd::vector&lt; AZStd::shared_ptr&lt; Physics::Material &gt;&gt; &amp;outMaterials)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>HandlerPolicy</b> (defined in <a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a>)</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html#a06f02b50332ed5e6a3b037b2ccee271f">UpdateMaterialSelectionFromPhysicsAsset</a>(const ShapeConfiguration &amp;shapeConfiguration, MaterialSelection &amp;materialSelection)=0</td><td class="entry"><a class="el" href="class_physics_1_1_physics_material_requests.html">Physics::PhysicsMaterialRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:55 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::Render::MaterialAssignmentId Struct Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::Render::MaterialAssignmentId Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -52,6 +55,8 @@ $(function() {
 <div class="title">AZ::Render::MaterialAssignmentId Struct Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;MaterialAssignmentId.h&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -65,25 +70,32 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>MaterialAssignmentId</b> (MaterialAssignmentLodIndex lodIndex, const AZ::Data::AssetId &amp;materialAssetId)</td></tr>
 <tr class="separator:a9271e5530e0c2ebe90bf189abd3ce312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e93d2fdc07d725157b8cb916b98fe5"><td class="memItemLeft" align="right" valign="top"><a id="af5e93d2fdc07d725157b8cb916b98fe5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDefault</b> () const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#af5e93d2fdc07d725157b8cb916b98fe5">IsDefault</a> () const</td></tr>
+<tr class="memdesc:af5e93d2fdc07d725157b8cb916b98fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the asset ID and LOD are invalid. <br /></td></tr>
 <tr class="separator:af5e93d2fdc07d725157b8cb916b98fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcdda9f1c4c5726361092f338734d774"><td class="memItemLeft" align="right" valign="top"><a id="afcdda9f1c4c5726361092f338734d774"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAssetOnly</b> () const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#afcdda9f1c4c5726361092f338734d774">IsAssetOnly</a> () const</td></tr>
+<tr class="memdesc:afcdda9f1c4c5726361092f338734d774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the asset ID is valid and LOD is invalid. <br /></td></tr>
 <tr class="separator:afcdda9f1c4c5726361092f338734d774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5006e03f3a04ece7326f4f35c518486"><td class="memItemLeft" align="right" valign="top"><a id="ac5006e03f3a04ece7326f4f35c518486"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsLodAndAsset</b> () const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#ac5006e03f3a04ece7326f4f35c518486">IsLodAndAsset</a> () const</td></tr>
+<tr class="memdesc:ac5006e03f3a04ece7326f4f35c518486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the asset ID and LOD are both valid. <br /></td></tr>
 <tr class="separator:ac5006e03f3a04ece7326f4f35c518486"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a118a5986ac185e0911c055f1d18b63d0"><td class="memItemLeft" align="right" valign="top"><a id="a118a5986ac185e0911c055f1d18b63d0"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>ToString</b> () const</td></tr>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a118a5986ac185e0911c055f1d18b63d0">ToString</a> () const</td></tr>
+<tr class="memdesc:a118a5986ac185e0911c055f1d18b63d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a string composed of the asset path and LOD. <br /></td></tr>
 <tr class="separator:a118a5986ac185e0911c055f1d18b63d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96405732a746faebb0abdcead2fdea2f"><td class="memItemLeft" align="right" valign="top"><a id="a96405732a746faebb0abdcead2fdea2f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetHash</b> () const</td></tr>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a96405732a746faebb0abdcead2fdea2f">GetHash</a> () const</td></tr>
+<tr class="memdesc:a96405732a746faebb0abdcead2fdea2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a hash composed of the asset ID sub ID and LOD. <br /></td></tr>
 <tr class="separator:a96405732a746faebb0abdcead2fdea2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1011a57914d738f624a562115de4bbe8"><td class="memItemLeft" align="right" valign="top"><a id="a1011a57914d738f624a562115de4bbe8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a1011a57914d738f624a562115de4bbe8">operator==</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a1011a57914d738f624a562115de4bbe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if both asset ID sub IDs and LODs match. <br /></td></tr>
 <tr class="separator:a1011a57914d738f624a562115de4bbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00407489e52bf4b4c9c0043cbff88b2e"><td class="memItemLeft" align="right" valign="top"><a id="a00407489e52bf4b4c9c0043cbff88b2e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a00407489e52bf4b4c9c0043cbff88b2e">operator!=</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> &amp;rhs) const</td></tr>
+<tr class="memdesc:a00407489e52bf4b4c9c0043cbff88b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if both asset ID sub IDs and LODs do not match. <br /></td></tr>
 <tr class="separator:a00407489e52bf4b4c9c0043cbff88b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -92,13 +104,16 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (ReflectContext *context)</td></tr>
 <tr class="separator:a116cedbc31afb16240e3d2cc8bacfb4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a756f466692a1902525bf36759bc8429b"><td class="memItemLeft" align="right" valign="top"><a id="a756f466692a1902525bf36759bc8429b"></a>
-static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateDefault</b> ()</td></tr>
+static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a756f466692a1902525bf36759bc8429b">CreateDefault</a> ()</td></tr>
+<tr class="memdesc:a756f466692a1902525bf36759bc8429b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to all material slots, regardless of asset ID or LOD, effectively applying to an entire model. <br /></td></tr>
 <tr class="separator:a756f466692a1902525bf36759bc8429b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a916356bc615a60ead28fc3ba6e7b0e54"><td class="memItemLeft" align="right" valign="top"><a id="a916356bc615a60ead28fc3ba6e7b0e54"></a>
-static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromAssetOnly</b> (AZ::Data::AssetId materialAssetId)</td></tr>
+static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a916356bc615a60ead28fc3ba6e7b0e54">CreateFromAssetOnly</a> (AZ::Data::AssetId materialAssetId)</td></tr>
+<tr class="memdesc:a916356bc615a60ead28fc3ba6e7b0e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to all material slots with a corresponding asset ID, regardless of LOD. <br /></td></tr>
 <tr class="separator:a916356bc615a60ead28fc3ba6e7b0e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5968b405f599508f7150e064a1a81d0a"><td class="memItemLeft" align="right" valign="top"><a id="a5968b405f599508f7150e064a1a81d0a"></a>
-static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromLodAndAsset</b> (MaterialAssignmentLodIndex lodIndex, AZ::Data::AssetId materialAssetId)</td></tr>
+static <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a5968b405f599508f7150e064a1a81d0a">CreateFromLodAndAsset</a> (MaterialAssignmentLodIndex lodIndex, AZ::Data::AssetId materialAssetId)</td></tr>
+<tr class="memdesc:a5968b405f599508f7150e064a1a81d0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an ID that maps to a specific material slot with a corresponding asset ID and LOD. <br /></td></tr>
 <tr class="separator:a5968b405f599508f7150e064a1a81d0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -116,10 +131,15 @@ Static Public Attributes</h2></td></tr>
 static constexpr MaterialAssignmentLodIndex&#160;</td><td class="memItemRight" valign="bottom"><b>NonLodIndex</b> = -1</td></tr>
 <tr class="separator:a1fb5a173ce7f7efbd2a5166108117415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html">MaterialAssignmentId</a> is used to address available and overridable material slots on a model. The LOD and one of the model's original material asset IDs are used as coordinates that identify a specific material slot or a set of slots matching either. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Material/MaterialAssignmentId.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:13 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:30 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

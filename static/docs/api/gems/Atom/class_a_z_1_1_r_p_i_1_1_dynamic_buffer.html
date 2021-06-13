@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::DynamicBuffer Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::DynamicBuffer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +86,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicBufferAllocat
 <tr class="separator:a86f7b472348821bbdfca0f3778d6e391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> represents a transient GPU buffer which only be valid for one frame after it's acquired. The acquired DynamicBuffers become invalid when DynamicDrawInterface::Get()-&gt;FrameEnd() is called. DynamicBuffers are allocated by <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a>. Check the description of <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a> class for detail. The typical usage: // For every frame auto buffer = DynamicDrawInterface::Get()-&gt;GetDynamicBuffer(size); if (buffer) // the buffer could be empty if the allocation failed.e { // write data to the buffer buffer-&gt;Write(data, size); // Use the buffer view for DrawItem or etc. } Note: <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> should only be used for InputAssembly buffer or Constant buffer (not supported yet). </p>
+<div class="textblock"><p>A <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> represents a transient GPU buffer which only be valid for one frame after it's acquired. The acquired DynamicBuffers become invalid when DynamicDrawInterface::Get()-&gt;FrameEnd() is called. DynamicBuffers are allocated by <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a>. Check the description of <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer_allocator.html">DynamicBufferAllocator</a> class for detail. The typical usage: // For every frame auto buffer = DynamicDrawInterface::Get()-&gt;GetDynamicBuffer(size); if (buffer) // the buffer could be empty if the allocation failed.e { // write data to the buffer buffer-&gt;Write(data, size); // Use the buffer view for DrawItem or etc. } Note: <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_buffer.html">DynamicBuffer</a> should only be used for DynamicInputAssembly buffer or Constant buffer (not supported yet). </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a61b5d3709db97dc78414454dd2f7455e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a61b5d3709db97dc78414454dd2f7455e">&#9670;&nbsp;</a></span>GetStreamBufferView()</h2>
@@ -109,10 +112,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicBufferAllocat
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/DynamicDraw/DynamicBuffer.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:16 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:33 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

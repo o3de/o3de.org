@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: Member List</title>
+<title>Open 3D Engine AzToolsFramework API Reference: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -51,22 +54,24 @@ $(function() {
 <table class="directory">
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>AZ_RTTI</b>(PrefabPublicInterface, &quot;{931AAE9D-C775-4818-9070-A2DA69489CBE}&quot;) (defined in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a>)</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#ae905468dc2ae176e5762e9595ce5f74f">CreateEntity</a>(AZ::EntityId parentId, const AZ::Vector3 &amp;position)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a169e2610efd7dc87496c79f0d9bf8f13">CreatePrefab</a>(const AZStd::vector&lt; AZ::EntityId &gt; &amp;entityIds, AZStd::string_view filePath)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#af15fce7fa26fac3575a6ed94103158c9">CreatePrefab</a>(const AZStd::vector&lt; AZ::EntityId &gt; &amp;entityIds, AZ::IO::PathView absolutePath)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#aa578241e92eeea6629986c8724a8b8a4">DeleteEntitiesAndAllDescendantsInInstance</a>(const EntityIdList &amp;entityIds)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#aa0ba70d009f5b243fdb692825c2c67e4">DeleteEntitiesInInstance</a>(const EntityIdList &amp;entityIds)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a1ed4214e4db244b3bfc32055692d483b">DetachPrefab</a>(const AZ::EntityId &amp;containerEntityId)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4a75b291ecf3aff23af04d7488ad7c11">DuplicateEntitiesInInstance</a>(const EntityIdList &amp;entityIds)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#ad2ee22691fb90dcb3c214fb6259e52d7">GenerateUndoNodesForEntityChangeAndUpdateCache</a>(AZ::EntityId entityId, UndoSystem::URSequencePoint *parentUndoBatch)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a98df8668d022e57cd2de3bece14240fb">GetInstanceContainerEntityId</a>(AZ::EntityId entityId) const =0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a67b2e56cb2f3ccd4bef6abd3687d662d">GetLevelInstanceContainerEntityId</a>() const =0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a75a5cf3516b4b1f3b2a8d6fa71a6a19b">GetOwningInstancePrefabPath</a>(AZ::EntityId entityId) const =0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#addbae9df6f1c7e65fbcf921badff8592">HasUnsavedChanges</a>(AZ::IO::Path prefabFilePath) const =0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a671071189be3cfffd124d52848218931">InstantiatePrefab</a>(AZStd::string_view filePath, AZ::EntityId parent, AZ::Vector3 position)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a6aec9f85c3290358fc51b84e0b19993e">InstantiatePrefab</a>(AZStd::string_view filePath, AZ::EntityId parent, const AZ::Vector3 &amp;position)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a3e9548b9f0585011b0d65aa4c38b080c">IsInstanceContainerEntity</a>(AZ::EntityId entityId) const =0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#aab899f8986977cb7cd1e2b3d689adb96">IsLevelInstanceContainerEntity</a>(AZ::EntityId entityId) const =0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a48ffcfbd9e325e586cafd9f4634c901d">SavePrefab</a>(AZ::IO::Path filePath)=0</td><td class="entry"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html">AzToolsFramework::Prefab::PrefabPublicInterface</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:09 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

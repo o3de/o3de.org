@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LyShine API Reference: CDraw2d Class Reference</title>
+<title>Open 3D Engine LyShine Gem API Reference: CDraw2d Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">LyShine API Reference
+   <div id="projectname">Open 3D Engine LyShine Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -97,9 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#afe4a6797d9ef321a1f21e2bc880cc8ad">DrawText</a> (const char *textString, AZ::Vector2 position, float pointSize, float opacity=1.0f, TextOptions *textOptions=nullptr)</td></tr>
 <tr class="memdesc:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a text string. Only supports ASCII text.  <a href="class_c_draw2d.html#afe4a6797d9ef321a1f21e2bc880cc8ad">More...</a><br /></td></tr>
 <tr class="separator:afe4a6797d9ef321a1f21e2bc880cc8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0a61b54502d592865ad2230be0b912"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#afa0a61b54502d592865ad2230be0b912">DrawRectOutlineTextured</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, UiTransformInterface::RectPoints points, AZ::Vector2 rightVec, AZ::Vector2 downVec, AZ::Color color)</td></tr>
-<tr class="memdesc:afa0a61b54502d592865ad2230be0b912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a rectangular outline with a texture.  <a href="class_c_draw2d.html#afa0a61b54502d592865ad2230be0b912">More...</a><br /></td></tr>
-<tr class="separator:afa0a61b54502d592865ad2230be0b912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eee9e7af49f7865a867766de8a10fac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a7eee9e7af49f7865a867766de8a10fac">DrawRectOutlineTextured</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, UiTransformInterface::RectPoints points, AZ::Vector2 rightVec, AZ::Vector2 downVec, AZ::Color color, uint32_t lineThickness=0)</td></tr>
+<tr class="memdesc:a7eee9e7af49f7865a867766de8a10fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a rectangular outline with a texture.  <a href="class_c_draw2d.html#a7eee9e7af49f7865a867766de8a10fac">More...</a><br /></td></tr>
+<tr class="separator:a7eee9e7af49f7865a867766de8a10fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac4fcca4a21a2b501a4b70c33efa276d"><td class="memItemLeft" align="right" valign="top">AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#aac4fcca4a21a2b501a4b70c33efa276d">GetTextSize</a> (const char *textString, float pointSize, TextOptions *textOptions=nullptr)</td></tr>
 <tr class="memdesc:aac4fcca4a21a2b501a4b70c33efa276d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the width and height (in pixels) that would be used to draw the given text string.  <a href="class_c_draw2d.html#aac4fcca4a21a2b501a4b70c33efa276d">More...</a><br /></td></tr>
 <tr class="separator:aac4fcca4a21a2b501a4b70c33efa276d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,6 +167,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a616dc3e01100b8f5432503b8605e2c73">DrawOrDeferLine</a> (const <a class="el" href="class_c_draw2d_1_1_deferred_line.html">DeferredLine</a> *line)</td></tr>
 <tr class="memdesc:a616dc3e01100b8f5432503b8605e2c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw or defer a line. <br /></td></tr>
 <tr class="separator:a616dc3e01100b8f5432503b8605e2c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a17746fd522f5ccb4926616902aca0"><td class="memItemLeft" align="right" valign="top"><a id="a82a17746fd522f5ccb4926616902aca0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a82a17746fd522f5ccb4926616902aca0">DrawOrDeferTextString</a> (const <a class="el" href="class_c_draw2d_1_1_deferred_text.html">DeferredText</a> *text)</td></tr>
+<tr class="memdesc:a82a17746fd522f5ccb4926616902aca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw or defer a text string. <br /></td></tr>
+<tr class="separator:a82a17746fd522f5ccb4926616902aca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d17c56719f86e6f4f96cc188b1692c9"><td class="memItemLeft" align="right" valign="top"><a id="a6d17c56719f86e6f4f96cc188b1692c9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_draw2d.html#a6d17c56719f86e6f4f96cc188b1692c9">DrawOrDeferRectOutline</a> (const <a class="el" href="class_c_draw2d_1_1_deferred_rect_outline.html">DeferredRectOutline</a> *outlineRect)</td></tr>
 <tr class="memdesc:a6d17c56719f86e6f4f96cc188b1692c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw or defer a rect outline. <br /></td></tr>
@@ -574,8 +581,8 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
 
 </div>
 </div>
-<a id="afa0a61b54502d592865ad2230be0b912"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa0a61b54502d592865ad2230be0b912">&#9670;&nbsp;</a></span>DrawRectOutlineTextured()</h2>
+<a id="a7eee9e7af49f7865a867766de8a10fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eee9e7af49f7865a867766de8a10fac">&#9670;&nbsp;</a></span>DrawRectOutlineTextured()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -608,7 +615,13 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AZ::Color&#160;</td>
-          <td class="paramname"><em>color</em>&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>lineThickness</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -626,6 +639,7 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
     <tr><td class="paramname">rightVec</td><td>Right vector. Specified because the rect's width/height could be 0 </td></tr>
     <tr><td class="paramname">downVec</td><td>Down vector. Specified because the rect's width/height could be 0 </td></tr>
     <tr><td class="paramname">color</td><td>The color of the outline </td></tr>
+    <tr><td class="paramname">lineThickness</td><td>The thickness in pixels of the outline. If 0, it will be based on image height </td></tr>
   </table>
   </dd>
 </dl>
@@ -835,10 +849,13 @@ AZ::RHI::Ptr&lt; AZ::RPI::DynamicDrawContext &gt;&#160;</td><td class="memItemRi
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/LyShine/Code/Include/LyShine/Draw2d.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:36 for LyShine API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:52 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

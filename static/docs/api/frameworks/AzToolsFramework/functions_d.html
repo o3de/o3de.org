@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: Class Members</title>
+<title>Open 3D Engine AzToolsFramework API Reference: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -121,11 +124,18 @@ $(function() {
 <li>DestroyEditorRepresentation()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a074a449123e6e7ccdb71d16b859cc836">AzToolsFramework::EditorRequests</a>
 </li>
+<li>DetachAllEntitiesInHierarchy()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a96c8988ca75550c4965fd593093cf8fc">AzToolsFramework::Prefab::Instance</a>
+</li>
 <li>detachedWindow
 : <a class="el" href="struct_az_tools_framework_1_1_view_pane_options.html#a8298b9598928425bfae155c083eb3b07">AzToolsFramework::ViewPaneOptions</a>
 </li>
 <li>DetachOverride()
 : <a class="el" href="class_az_tools_framework_1_1_editor_action_requests.html#a6bd1941ffd5dd229a64e4c1914d5a468">AzToolsFramework::EditorActionRequests</a>
+</li>
+<li>DetachPrefab()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa62063527bd49e5825997901c1f9fc49">AzToolsFramework::Prefab::PrefabPublicHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a1ed4214e4db244b3bfc32055692d483b">AzToolsFramework::Prefab::PrefabPublicInterface</a>
 </li>
 <li>DetachSliceEntities()
 : <a class="el" href="class_az_tools_framework_1_1_slice_editor_entity_ownership_service_requests.html#ad1d0f6bec42141917cb0d16478492c63">AzToolsFramework::SliceEditorEntityOwnershipServiceRequests</a>
@@ -143,6 +153,9 @@ $(function() {
 </li>
 <li>DetectLeaveComponentModeInteraction()
 : <a class="el" href="class_az_tools_framework_1_1_component_mode_framework_1_1_component_mode_delegate_requests.html#a4b6c243dedf1085d5a2ac9c1272ab9d9">AzToolsFramework::ComponentModeFramework::ComponentModeDelegateRequests</a>
+</li>
+<li>DeviceScalingFactor()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_interaction_requests.html#a8f8d772bd45a3bd675f4ac65d5cd2ca4">AzToolsFramework::ViewportInteraction::ViewportInteractionRequests</a>
 </li>
 <li>Dimensions()
 : <a class="el" href="class_az_tools_framework_1_1_editor_vertex_selection_base.html#a630662aa7c3740b0e432dc2c70709dae">AzToolsFramework::EditorVertexSelectionBase&lt; Vertex &gt;</a>
@@ -173,7 +186,7 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_previewer_frame.html#a68a3cb4443614539dc5ffe8ecc44e205">AzToolsFramework::AssetBrowser::PreviewerFrame</a>
 </li>
 <li>Display2d()
-: <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#a01d06e5acf315f5c83b595bc258970ea">AzToolsFramework::EditorBoxSelect</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_box_select.html#a114e21dcfe2d629ff7436638ff1ae959">AzToolsFramework::EditorBoxSelect</a>
 </li>
 <li>DisplayHelpers()
 : <a class="el" href="class_az_tools_framework_1_1_editor_helpers.html#adb61acd29ef73637a431ba32873832c6">AzToolsFramework::EditorHelpers</a>
@@ -209,14 +222,33 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#af84b62b5743b912456e5c84e7bfb0472">AzToolsFramework::SplineSelectionManipulator</a>
 , <a class="el" href="class_az_tools_framework_1_1_surface_manipulator.html#af39cb8d21d5ba4f360396021181be88c">AzToolsFramework::SurfaceManipulator</a>
 </li>
+<li>DrawIcon()
+: <a class="el" href="class_az_tools_framework_1_1_editor_viewport_icon_display_interface.html#ae3dda61b1f22558f5036f39ed2a974e8">AzToolsFramework::EditorViewportIconDisplayInterface</a>
+</li>
 <li>DrawThumbnail()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_entry_delegate.html#ab927cc1a01cce063c7a5c8a18040eb14">AzToolsFramework::AssetBrowser::EntryDelegate</a>
+</li>
+<li>DuplicateEntities()
+: <a class="el" href="class_az_tools_framework_1_1_editor_entity_a_p_i.html#a8578ddc98f3c0b2a95b9768166df8e38">AzToolsFramework::EditorEntityAPI</a>
+, <a class="el" href="class_az_tools_framework_1_1_editor_entity_manager.html#ab02d1bb363791e0a2067b73691e2b532">AzToolsFramework::EditorEntityManager</a>
+</li>
+<li>DuplicateEntitiesInInstance()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a7a2bdd6997d366f08143a488a48146f9">AzToolsFramework::Prefab::PrefabPublicHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a4a75b291ecf3aff23af04d7488ad7c11">AzToolsFramework::Prefab::PrefabPublicInterface</a>
+</li>
+<li>DuplicateEntityById()
+: <a class="el" href="class_az_tools_framework_1_1_editor_entity_a_p_i.html#a3649413049ff11fb7fa6fb641b111c89">AzToolsFramework::EditorEntityAPI</a>
+, <a class="el" href="class_az_tools_framework_1_1_editor_entity_manager.html#a6f3a58b1c099241ae1573dcd5e4c0161">AzToolsFramework::EditorEntityManager</a>
+</li>
+<li>DuplicateSelected()
+: <a class="el" href="class_az_tools_framework_1_1_editor_entity_a_p_i.html#aff600c47d04f7c1ba4850c9eec6bc460">AzToolsFramework::EditorEntityAPI</a>
+, <a class="el" href="class_az_tools_framework_1_1_editor_entity_manager.html#a1f76c3859edc2dcbff4c11d21e540e41">AzToolsFramework::EditorEntityManager</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:10 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:30 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

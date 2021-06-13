@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzNetworking API Reference: AzNetworking::NetworkingSystemComponent Class Reference</title>
+<title>Open 3D Engine AzNetworking API Reference: AzNetworking::NetworkingSystemComponent Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzNetworking API Reference
+   <div id="projectname">Open 3D Engine AzNetworking API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +88,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTickOrder</b> () ov
 <tr class="separator:aa901f6c84a9af578daf71778d36431f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cb48f5f605fbdcb47805dfc5311b870"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#a9cb48f5f605fbdcb47805dfc5311b870">UnregisterCompressorFactory</a> (AZ::Name name) override</td></tr>
 <tr class="separator:a9cb48f5f605fbdcb47805dfc5311b870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8eb5dcb565749d9bc7b76712321d13"><td class="memItemLeft" align="right" valign="top">const NetworkInterfaces &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#acd8eb5dcb565749d9bc7b76712321d13">GetNetworkInterfaces</a> () const override</td></tr>
+<tr class="separator:acd8eb5dcb565749d9bc7b76712321d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a07450de63e6a6028fa46b9090b08cd"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#a7a07450de63e6a6028fa46b9090b08cd">GetTcpListenThreadSocketCount</a> () const override</td></tr>
+<tr class="separator:a7a07450de63e6a6028fa46b9090b08cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd442c1712f8a237f88402d3dd095be"><td class="memItemLeft" align="right" valign="top">AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#a8fd442c1712f8a237f88402d3dd095be">GetTcpListenThreadUpdateTime</a> () const override</td></tr>
+<tr class="separator:a8fd442c1712f8a237f88402d3dd095be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac274d8c7d3e789fd5bb91a7457f9ecb1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#ac274d8c7d3e789fd5bb91a7457f9ecb1">GetUdpReaderThreadSocketCount</a> () const override</td></tr>
+<tr class="separator:ac274d8c7d3e789fd5bb91a7457f9ecb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d509d9c7591474c5b791abc8658073"><td class="memItemLeft" align="right" valign="top">AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#a12d509d9c7591474c5b791abc8658073">GetUdpReaderThreadUpdateTime</a> () const override</td></tr>
+<tr class="separator:a12d509d9c7591474c5b791abc8658073"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
 <tr class="memitem:ad072828b21b883b7ba4b605c38b3fa5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_networking_system_component.html#ad072828b21b883b7ba4b605c38b3fa5f">DumpStats</a> (const AZ::ConsoleCommandContainer &amp;arguments)</td></tr>
 <tr class="separator:ad072828b21b883b7ba4b605c38b3fa5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,6 +287,146 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 
 </div>
 </div>
+<a id="acd8eb5dcb565749d9bc7b76712321d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8eb5dcb565749d9bc7b76712321d13">&#9670;&nbsp;</a></span>GetNetworkInterfaces()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const NetworkInterfaces&amp; AzNetworking::NetworkingSystemComponent::GetNetworkInterfaces </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the raw network interfaces owned by the networking instance. </p><dl class="section return"><dt>Returns</dt><dd>the raw network interfaces owned by the networking instance </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_networking.html#a523b67347382e031aefd56faa1c2cfb1">AzNetworking::INetworking</a>.</p>
+
+</div>
+</div>
+<a id="a7a07450de63e6a6028fa46b9090b08cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a07450de63e6a6028fa46b9090b08cd">&#9670;&nbsp;</a></span>GetTcpListenThreadSocketCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AzNetworking::NetworkingSystemComponent::GetTcpListenThreadSocketCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of sockets monitored by our <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html" title="A class for managing a TCP listen socket and accepting new incoming connections.">TcpListenThread</a>. </p><dl class="section return"><dt>Returns</dt><dd>the number of sockets monitored by our <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html" title="A class for managing a TCP listen socket and accepting new incoming connections.">TcpListenThread</a> </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_networking.html#a817da5ccd909f2c954d1444975a77d47">AzNetworking::INetworking</a>.</p>
+
+</div>
+</div>
+<a id="a8fd442c1712f8a237f88402d3dd095be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd442c1712f8a237f88402d3dd095be">&#9670;&nbsp;</a></span>GetTcpListenThreadUpdateTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::TimeMs AzNetworking::NetworkingSystemComponent::GetTcpListenThreadUpdateTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the total time spent updating our <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html" title="A class for managing a TCP listen socket and accepting new incoming connections.">TcpListenThread</a>. </p><dl class="section return"><dt>Returns</dt><dd>the total time spent updating our <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html" title="A class for managing a TCP listen socket and accepting new incoming connections.">TcpListenThread</a> </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_networking.html#a61600117fcdfb4ec03e222c2e2da2946">AzNetworking::INetworking</a>.</p>
+
+</div>
+</div>
+<a id="ac274d8c7d3e789fd5bb91a7457f9ecb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac274d8c7d3e789fd5bb91a7457f9ecb1">&#9670;&nbsp;</a></span>GetUdpReaderThreadSocketCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t AzNetworking::NetworkingSystemComponent::GetUdpReaderThreadSocketCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of sockets monitored by our <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a>. </p><dl class="section return"><dt>Returns</dt><dd>the number of sockets monitored by our <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a> </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_networking.html#a85677fe6a3633bae432c6f31956363c5">AzNetworking::INetworking</a>.</p>
+
+</div>
+</div>
+<a id="a12d509d9c7591474c5b791abc8658073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12d509d9c7591474c5b791abc8658073">&#9670;&nbsp;</a></span>GetUdpReaderThreadUpdateTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::TimeMs AzNetworking::NetworkingSystemComponent::GetUdpReaderThreadUpdateTime </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the total time spent updating our <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a>. </p><dl class="section return"><dt>Returns</dt><dd>the total time spent updating our <a class="el" href="class_az_networking_1_1_udp_reader_thread.html">UdpReaderThread</a> </dd></dl>
+
+<p>Implements <a class="el" href="class_az_networking_1_1_i_networking.html#ab3a474cb65907ec4f4a3b8064e9fb7a2">AzNetworking::INetworking</a>.</p>
+
+</div>
+</div>
 <a id="a86192fca97b757307d662814ef00dc43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86192fca97b757307d662814ef00dc43">&#9670;&nbsp;</a></span>OnTick()</h2>
 
@@ -415,10 +568,13 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzNetworking/AzNetworking/Framework/NetworkingSystemComponent.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:58 for AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:16 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

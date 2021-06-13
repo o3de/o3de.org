@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::ViewportContext Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::ViewportContext Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -67,6 +70,15 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixChangedEvent</
 <tr class="memitem:adbea875b6c50c6bb6320892ff4adf1d5"><td class="memItemLeft" align="right" valign="top"><a id="adbea875b6c50c6bb6320892ff4adf1d5"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SceneChangedEvent</b> = AZ::Event&lt; ScenePtr &gt;</td></tr>
 <tr class="separator:adbea875b6c50c6bb6320892ff4adf1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8be54eb7144b767286fb4f2a9d8cd4f"><td class="memItemLeft" align="right" valign="top"><a id="ac8be54eb7144b767286fb4f2a9d8cd4f"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineChangedEvent</b> = AZ::Event&lt; RenderPipelinePtr &gt;</td></tr>
+<tr class="separator:ac8be54eb7144b767286fb4f2a9d8cd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a167bcf5deebf52e5f01cede6b18fc480"><td class="memItemLeft" align="right" valign="top"><a id="a167bcf5deebf52e5f01cede6b18fc480"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewChangedEvent</b> = AZ::Event&lt; ViewPtr &gt;</td></tr>
+<tr class="separator:a167bcf5deebf52e5f01cede6b18fc480"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae28d573a6b469e0287274521f1cc440c"><td class="memItemLeft" align="right" valign="top"><a id="ae28d573a6b469e0287274521f1cc440c"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportIdEvent</b> = AZ::Event&lt; AzFramework::ViewportId &gt;</td></tr>
+<tr class="separator:ae28d573a6b469e0287274521f1cc440c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,6 +152,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#acc1b19c699ef3052d30f47b07f3b969a">ConnectSceneChangedHandler</a> (SceneChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="memdesc:acc1b19c699ef3052d30f47b07f3b969a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the render scene has changed. <br /></td></tr>
 <tr class="separator:acc1b19c699ef3052d30f47b07f3b969a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54ef0f5735785faa9fec13587fd13432"><td class="memItemLeft" align="right" valign="top"><a id="a54ef0f5735785faa9fec13587fd13432"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a54ef0f5735785faa9fec13587fd13432">ConnectCurrentPipelineChangedHandler</a> (PipelineChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a54ef0f5735785faa9fec13587fd13432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the current pipeline associated with our window has changed. <br /></td></tr>
+<tr class="separator:a54ef0f5735785faa9fec13587fd13432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a55a6038899513bcb653b99eee3599e"><td class="memItemLeft" align="right" valign="top"><a id="a8a55a6038899513bcb653b99eee3599e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a8a55a6038899513bcb653b99eee3599e">ConnectDefaultViewChangedHandler</a> (ViewChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a8a55a6038899513bcb653b99eee3599e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the default view has changed. <br /></td></tr>
+<tr class="separator:a8a55a6038899513bcb653b99eee3599e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85465a9bdd7c28508537bcf69b8b7e2d"><td class="memItemLeft" align="right" valign="top"><a id="a85465a9bdd7c28508537bcf69b8b7e2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a85465a9bdd7c28508537bcf69b8b7e2d">ConnectAboutToBeDestroyedHandler</a> (ViewportIdEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a85465a9bdd7c28508537bcf69b8b7e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> is about to be destroyed. <br /></td></tr>
+<tr class="separator:a85465a9bdd7c28508537bcf69b8b7e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40eeeae789269ce96440f2341ca71014"><td class="memItemLeft" align="right" valign="top"><a id="a40eeeae789269ce96440f2341ca71014"></a>
 const AZ::Matrix4x4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a40eeeae789269ce96440f2341ca71014">GetCameraViewMatrix</a> () const override</td></tr>
 <tr class="memdesc:a40eeeae789269ce96440f2341ca71014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current camera's view matrix. <br /></td></tr>
@@ -172,7 +196,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 <tr class="separator:a0428d64a175e63ba6792293e2e92af06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> wraps a native window and represents a minimal viewport in which a scene is rendered on-screen ViewportContexts are registered on creation to allow consumers to listen to notifications and manage the view stack for a given viewport </p>
+<div class="textblock"><p><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> wraps a native window and represents a minimal viewport in which a scene is rendered on-screen. ViewportContexts are registered on creation to allow consumers to listen to notifications and manage the view stack for a given viewport. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a68da921f32e69127c509b4298b4986d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a68da921f32e69127c509b4298b4986d3">&#9670;&nbsp;</a></span>ViewportContext()</h2>
@@ -261,7 +285,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the default view associated with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>. Alternatively, use AZ::Interface&lt;ViewportContextRequestsInterface&gt;::Get()-&gt;GetCurrentView. </p>
+<p>Gets the default view associated with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>. Alternatively, use AZ::RPI::ViewportContextRequests::Get()-&gt;GetCurrentView(). </p>
 
 </div>
 </div>
@@ -279,7 +303,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gets the current name of this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>. This name is used to tie this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> to its <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> stack, and ViewportContexts may be renamed via AZ::Interface&lt;ViewportContextRequestsInterface&gt;::Get()-&gt;RenameViewportContext. </p>
+<p>Gets the current name of this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>. This name is used to tie this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> to its <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> stack, and ViewportContexts may be renamed via AZ::RPI::ViewportContextRequests::Get()-&gt;RenameViewportContext(...). </p>
 
 </div>
 </div>
@@ -320,10 +344,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/ViewportContext.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:17 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:35 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

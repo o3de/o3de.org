@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RHI::RHISystem Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RHI::RHISystem Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -79,7 +82,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html">RHI::Device</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDevice</b> () override</td></tr>
 <tr class="separator:a4050390fbaa8f567da75d9a757ea47aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf40bc6d50993816ec6eefe8d42e1a6a"><td class="memItemLeft" align="right" valign="top"><a id="aaf40bc6d50993816ec6eefe8d42e1a6a"></a>
-<a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_list_tag_registry.html">RHI::DrawListTagRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListTagRegistry</b> () override</td></tr>
+<a class="el" href="class_a_z_1_1_r_h_i_1_1_tag_registry.html">RHI::DrawListTagRegistry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawListTagRegistry</b> () override</td></tr>
 <tr class="separator:aaf40bc6d50993816ec6eefe8d42e1a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec6a46d79db20a75990146192984023c"><td class="memItemLeft" align="right" valign="top"><a id="aec6a46d79db20a75990146192984023c"></a>
 <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_state_cache.html">RHI::PipelineStateCache</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipelineStateCache</b> () override</td></tr>
@@ -102,6 +105,9 @@ const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_transient_attachment_pool_des
 <tr class="memitem:adbe0dd191609e0e596c5747124fb3817"><td class="memItemLeft" align="right" valign="top"><a id="adbe0dd191609e0e596c5747124fb3817"></a>
 ConstPtr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_platform_limits_descriptor.html">PlatformLimitsDescriptor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlatformLimitsDescriptor</b> () const override</td></tr>
 <tr class="separator:adbe0dd191609e0e596c5747124fb3817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8502e102acc34bff8e347b9df3f9799"><td class="memItemLeft" align="right" valign="top"><a id="ae8502e102acc34bff8e347b9df3f9799"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>QueueRayTracingShaderTableForBuild</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_shader_table.html">RayTracingShaderTable</a> *rayTracingShaderTable) override</td></tr>
+<tr class="separator:ae8502e102acc34bff8e347b9df3f9799"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html">AZ::RHI::RHISystemInterface</a></td></tr>
 <tr class="memitem:ac61e62f8fab8b1d7ae5928e2ec4e4405 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface"><td class="memItemLeft" align="right" valign="top"><a id="ac61e62f8fab8b1d7ae5928e2ec4e4405"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html">RHISystemInterface</a>, &quot;{B70BB184-D7D5-4C15-9C82-C9459F552F13}&quot;)</td></tr>
@@ -136,10 +142,13 @@ static <a class="el" href="class_a_z_1_1_r_h_i_1_1_r_h_i_system_interface.html">
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RHI/Code/Include/Atom/RHI/RHISystem.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:15 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:32 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

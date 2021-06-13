@@ -87,6 +87,7 @@ var menudata={children:[
 {text:"m",url:"functions_vars_m.html#index_m"},
 {text:"p",url:"functions_vars_p.html#index_p"},
 {text:"r",url:"functions_vars_r.html#index_r"},
+{text:"s",url:"functions_vars_s.html#index_s"},
 {text:"u",url:"functions_vars_u.html#index_u"},
 {text:"w",url:"functions_vars_w.html#index_w"}]},
 {text:"Typedefs",url:"functions_type.html"},

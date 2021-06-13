@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RHI::MemorySubAllocator&lt; Traits &gt; Class Template Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RHI::MemorySubAllocator&lt; Traits &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb47ce1fda93480942381bea5a1249e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43a077676618c020fe4de51b5818cbbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html#a43a077676618c020fe4de51b5818cbbf">Init</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_sub_allocator_1_1_descriptor.html">Descriptor</a> &amp;descriptor, page_allocator_reference pageAllocator)</td></tr>
 <tr class="separator:a43a077676618c020fe4de51b5818cbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f651e6aeabe820d24bf3d5f016a1b70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_allocation.html">memory_allocation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html#a8f651e6aeabe820d24bf3d5f016a1b70">Allocate</a> (size_t sizeInBytes, size_t alignmentInBytes)</td></tr>
+<tr class="memitem:a8f651e6aeabe820d24bf3d5f016a1b70"><td class="memItemLeft" align="right" valign="top"><a id="a8f651e6aeabe820d24bf3d5f016a1b70"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_allocation.html">memory_allocation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (size_t sizeInBytes, size_t alignmentInBytes)</td></tr>
 <tr class="separator:a8f651e6aeabe820d24bf3d5f016a1b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7882fb3220b6295dc3538975ebd969d3"><td class="memItemLeft" align="right" valign="top"><a id="a7882fb3220b6295dc3538975ebd969d3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DeAllocate</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_allocation.html">const_memory_allocation_reference</a> pageView)</td></tr>
@@ -110,38 +114,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td><
 <tr class="separator:a3d51cf7e72b7ad9cfa5cb3987cc55b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8f651e6aeabe820d24bf3d5f016a1b70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f651e6aeabe820d24bf3d5f016a1b70">&#9670;&nbsp;</a></span>Allocate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html">MemorySubAllocator</a>&lt; Traits &gt;::<a class="el" href="struct_a_z_1_1_r_h_i_1_1_memory_allocation.html">memory_allocation</a> <a class="el" href="class_a_z_1_1_r_h_i_1_1_memory_sub_allocator.html">AZ::RHI::MemorySubAllocator</a>&lt; Traits &gt;::Allocate </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sizeInBytes</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>alignmentInBytes</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Attempt to allocate from an existing page.</p>
-<p>Create a new page if none of our current ones can service the request.</p>
-
-</div>
-</div>
 <a id="a43a077676618c020fe4de51b5818cbbf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43a077676618c020fe4de51b5818cbbf">&#9670;&nbsp;</a></span>Init()</h2>
 
@@ -173,10 +145,13 @@ template&lt;class Traits &gt; </div>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RHI/Code/Include/Atom/RHI/MemorySubAllocator.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:14 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:32 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

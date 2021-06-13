@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::ViewportUi::ViewportUiManager Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::ViewportUi::ViewportUiManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -55,24 +58,45 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adc85b3155828ba0f01d05a83b3e21334"><td class="memItemLeft" align="right" valign="top"><a id="adc85b3155828ba0f01d05a83b3e21334"></a>
-const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCluster</b> () override</td></tr>
-<tr class="separator:adc85b3155828ba0f01d05a83b3e21334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e07b09a0afcbadd7ab4ec153e2becc"><td class="memItemLeft" align="right" valign="top"><a id="a88e07b09a0afcbadd7ab4ec153e2becc"></a>
+const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCluster</b> (Alignment align) override</td></tr>
+<tr class="separator:a88e07b09a0afcbadd7ab4ec153e2becc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac48eb770e901be368071913b1a6dc9d3"><td class="memItemLeft" align="right" valign="top"><a id="ac48eb770e901be368071913b1a6dc9d3"></a>
+const <a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSwitcher</b> (Alignment align) override</td></tr>
+<tr class="separator:ac48eb770e901be368071913b1a6dc9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5a4859a39ba93955b22f2d4c215bfdd"><td class="memItemLeft" align="right" valign="top"><a id="ad5a4859a39ba93955b22f2d4c215bfdd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterActiveButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId) override</td></tr>
 <tr class="separator:ad5a4859a39ba93955b22f2d4c215bfdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d0dd27d6169c268f8c94b4666a2934b"><td class="memItemLeft" align="right" valign="top"><a id="a0d0dd27d6169c268f8c94b4666a2934b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwitcherActiveButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId) override</td></tr>
+<tr class="separator:a0d0dd27d6169c268f8c94b4666a2934b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0985a1565af5b5673bc1f31a44fdefc7"><td class="memItemLeft" align="right" valign="top"><a id="a0985a1565af5b5673bc1f31a44fdefc7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterButtonLocked</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId, bool isLocked) override</td></tr>
+<tr class="separator:a0985a1565af5b5673bc1f31a44fdefc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef2dfee93a2a30b934407eca7bfe2004"><td class="memItemLeft" align="right" valign="top"><a id="aef2dfee93a2a30b934407eca7bfe2004"></a>
 const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateClusterButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, const AZStd::string &amp;icon) override</td></tr>
 <tr class="separator:aef2dfee93a2a30b934407eca7bfe2004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0206a58351f8ff6c48dac250b0250af5"><td class="memItemLeft" align="right" valign="top"><a id="a0206a58351f8ff6c48dac250b0250af5"></a>
+const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateSwitcherButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, const AZStd::string &amp;icon, const AZStd::string &amp;name=AZStd::string()) override</td></tr>
+<tr class="separator:a0206a58351f8ff6c48dac250b0250af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeca42a474aa718e9e2ec328093fb9d43"><td class="memItemLeft" align="right" valign="top"><a id="aeca42a474aa718e9e2ec328093fb9d43"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterClusterEventHandler</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, AZ::Event&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> &gt;::Handler &amp;handler) override</td></tr>
 <tr class="separator:aeca42a474aa718e9e2ec328093fb9d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350c95b3653df7dbb25130f18fb94815"><td class="memItemLeft" align="right" valign="top"><a id="a350c95b3653df7dbb25130f18fb94815"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterSwitcherEventHandler</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, AZ::Event&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> &gt;::Handler &amp;handler) override</td></tr>
+<tr class="separator:a350c95b3653df7dbb25130f18fb94815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a820a8737ce27edfbe178b4e888af1258"><td class="memItemLeft" align="right" valign="top"><a id="a820a8737ce27edfbe178b4e888af1258"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveCluster</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId) override</td></tr>
 <tr class="separator:a820a8737ce27edfbe178b4e888af1258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381df55bd92ca23c2e205ffc9dca66d9"><td class="memItemLeft" align="right" valign="top"><a id="a381df55bd92ca23c2e205ffc9dca66d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSwitcher</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId) override</td></tr>
+<tr class="separator:a381df55bd92ca23c2e205ffc9dca66d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8562ce5c5fcd7182b2b322e961198ab"><td class="memItemLeft" align="right" valign="top"><a id="af8562ce5c5fcd7182b2b322e961198ab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterVisible</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, bool visible)</td></tr>
 <tr class="separator:af8562ce5c5fcd7182b2b322e961198ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1c0173ea9268820a9c6ddb3815f456"><td class="memItemLeft" align="right" valign="top"><a id="acb1c0173ea9268820a9c6ddb3815f456"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSwitcherVisible</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, bool visible)</td></tr>
+<tr class="separator:acb1c0173ea9268820a9c6ddb3815f456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f659d61216f5bf3c2192d8585aab73c"><td class="memItemLeft" align="right" valign="top"><a id="a0f659d61216f5bf3c2192d8585aab73c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetClusterGroupVisible</b> (const AZStd::vector&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> &gt; &amp;clusterGroup, bool visible) override</td></tr>
 <tr class="separator:a0f659d61216f5bf3c2192d8585aab73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +124,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveComponentModeBo
 <tr class="memitem:ae1b453a4922d49f6dc5b48145b06007a"><td class="memItemLeft" align="right" valign="top"><a id="ae1b453a4922d49f6dc5b48145b06007a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PressButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId) override</td></tr>
 <tr class="separator:ae1b453a4922d49f6dc5b48145b06007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27175e2cb651cf96a2422160b333c0a"><td class="memItemLeft" align="right" valign="top"><a id="af27175e2cb651cf96a2422160b333c0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PressButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId) override</td></tr>
+<tr class="separator:af27175e2cb651cf96a2422160b333c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad485b11ff778c6defef848eb287d66a2"><td class="memItemLeft" align="right" valign="top"><a id="ad485b11ff778c6defef848eb287d66a2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#ad485b11ff778c6defef848eb287d66a2">ConnectViewportUiBus</a> (const int viewportId)</td></tr>
 <tr class="memdesc:ad485b11ff778c6defef848eb287d66a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects to the correct viewportId bus address. <br /></td></tr>
@@ -119,23 +146,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aefab7b5821fd265972a9e94fdc5e813d"><td class="memItemLeft" align="right" valign="top"><a id="aefab7b5821fd265972a9e94fdc5e813d"></a>
-AZStd::unordered_map&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>, AZStd::shared_ptr&lt; Internal::Cluster &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#aefab7b5821fd265972a9e94fdc5e813d">m_clusters</a></td></tr>
-<tr class="memdesc:aefab7b5821fd265972a9e94fdc5e813d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered clusters. <br /></td></tr>
-<tr class="separator:aefab7b5821fd265972a9e94fdc5e813d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27b1545c3de91fd7271822d2b40d1d67"><td class="memItemLeft" align="right" valign="top"><a id="a27b1545c3de91fd7271822d2b40d1d67"></a>
+AZStd::unordered_map&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>, AZStd::shared_ptr&lt; Internal::ButtonGroup &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a27b1545c3de91fd7271822d2b40d1d67">m_clusterButtonGroups</a></td></tr>
+<tr class="memdesc:a27b1545c3de91fd7271822d2b40d1d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered Clusters. <br /></td></tr>
+<tr class="separator:a27b1545c3de91fd7271822d2b40d1d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca46999e19517f21ec0815716ef5f4b"><td class="memItemLeft" align="right" valign="top"><a id="abca46999e19517f21ec0815716ef5f4b"></a>
+AZStd::unordered_map&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a>, AZStd::shared_ptr&lt; Internal::ButtonGroup &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#abca46999e19517f21ec0815716ef5f4b">m_switcherButtonGroups</a></td></tr>
+<tr class="memdesc:abca46999e19517f21ec0815716ef5f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered Switchers. <br /></td></tr>
+<tr class="separator:abca46999e19517f21ec0815716ef5f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2d64aa9960c2004990cda22f9681a6"><td class="memItemLeft" align="right" valign="top"><a id="a6d2d64aa9960c2004990cda22f9681a6"></a>
 AZStd::unordered_map&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">TextFieldId</a>, AZStd::shared_ptr&lt; Internal::TextField &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a6d2d64aa9960c2004990cda22f9681a6">m_textFields</a></td></tr>
-<tr class="memdesc:a6d2d64aa9960c2004990cda22f9681a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered textFields. <br /></td></tr>
+<tr class="memdesc:a6d2d64aa9960c2004990cda22f9681a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A map of all registered TextFields. <br /></td></tr>
 <tr class="separator:a6d2d64aa9960c2004990cda22f9681a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9a152e637d7923b4caa300c31a9d4df"><td class="memItemLeft" align="right" valign="top"><a id="ab9a152e637d7923b4caa300c31a9d4df"></a>
 AZStd::unique_ptr&lt; Internal::ViewportUiDisplay &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#ab9a152e637d7923b4caa300c31a9d4df">m_viewportUi</a></td></tr>
 <tr class="memdesc:ab9a152e637d7923b4caa300c31a9d4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lower level graphical API for Viewport UI. <br /></td></tr>
 <tr class="separator:ab9a152e637d7923b4caa300c31a9d4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportUi/ViewportUiManager.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:10 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:29 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

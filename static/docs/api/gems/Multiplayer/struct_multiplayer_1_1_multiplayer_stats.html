@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Multiplayer API Reference: Multiplayer::MultiplayerStats Struct Reference</title>
+<title>Open 3D Engine Multiplayer Gem API Reference: Multiplayer::MultiplayerStats Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Multiplayer API Reference
+   <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -43,13 +46,75 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_multiplayer_1_1_multiplayer_stats-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Multiplayer::MultiplayerStats Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_component_stats.html">ComponentStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ab747f5162d2040a8fae656ec860d8b22"><td class="memItemLeft" align="right" valign="top"><a id="ab747f5162d2040a8fae656ec860d8b22"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>MetricRingbuffer</b> = AZStd::array&lt; uint64_t, RingbufferSamples &gt;</td></tr>
+<tr class="separator:ab747f5162d2040a8fae656ec860d8b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a2bdc844bac0bdf65a8bb98e12d160fba"><td class="memItemLeft" align="right" valign="top"><a id="a2bdc844bac0bdf65a8bb98e12d160fba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReserveComponentStats</b> (NetComponentId netComponentId, uint16_t propertyCount, uint16_t rpcCount)</td></tr>
+<tr class="separator:a2bdc844bac0bdf65a8bb98e12d160fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8eb0352926d4169112c1de40413e1db"><td class="memItemLeft" align="right" valign="top"><a id="ac8eb0352926d4169112c1de40413e1db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordPropertySent</b> (NetComponentId netComponentId, PropertyIndex propertyId, uint32_t totalBytes)</td></tr>
+<tr class="separator:ac8eb0352926d4169112c1de40413e1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211aee7a264aee5e6addb2bb6012e576"><td class="memItemLeft" align="right" valign="top"><a id="a211aee7a264aee5e6addb2bb6012e576"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordPropertyReceived</b> (NetComponentId netComponentId, PropertyIndex propertyId, uint32_t totalBytes)</td></tr>
+<tr class="separator:a211aee7a264aee5e6addb2bb6012e576"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5f5af2329e27d3e8dbc9d3cd339d91"><td class="memItemLeft" align="right" valign="top"><a id="aeb5f5af2329e27d3e8dbc9d3cd339d91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordRpcSent</b> (NetComponentId netComponentId, RpcIndex rpcId, uint32_t totalBytes)</td></tr>
+<tr class="separator:aeb5f5af2329e27d3e8dbc9d3cd339d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e3397b46a7bfda1fbec703413b3acf"><td class="memItemLeft" align="right" valign="top"><a id="a94e3397b46a7bfda1fbec703413b3acf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RecordRpcReceived</b> (NetComponentId netComponentId, RpcIndex rpcId, uint32_t totalBytes)</td></tr>
+<tr class="separator:a94e3397b46a7bfda1fbec703413b3acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7128b577bfb5c0faeb8f62adf19c22"><td class="memItemLeft" align="right" valign="top"><a id="adb7128b577bfb5c0faeb8f62adf19c22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>TickStats</b> (AZ::TimeMs metricFrameTimeMs)</td></tr>
+<tr class="separator:adb7128b577bfb5c0faeb8f62adf19c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac49ec8f0a6d0caa543a26daa9e7563b0"><td class="memItemLeft" align="right" valign="top"><a id="ac49ec8f0a6d0caa543a26daa9e7563b0"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateComponentPropertyUpdateSentMetrics</b> (NetComponentId netComponentId) const</td></tr>
+<tr class="separator:ac49ec8f0a6d0caa543a26daa9e7563b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7343012e2f3b1dedfc8b84be109dfbfc"><td class="memItemLeft" align="right" valign="top"><a id="a7343012e2f3b1dedfc8b84be109dfbfc"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateComponentPropertyUpdateRecvMetrics</b> (NetComponentId netComponentId) const</td></tr>
+<tr class="separator:a7343012e2f3b1dedfc8b84be109dfbfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae82a07b5e585c1e8de2a24ec8813d058"><td class="memItemLeft" align="right" valign="top"><a id="ae82a07b5e585c1e8de2a24ec8813d058"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateComponentRpcsSentMetrics</b> (NetComponentId netComponentId) const</td></tr>
+<tr class="separator:ae82a07b5e585c1e8de2a24ec8813d058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7732dfaf11c25c263b158e50b909091d"><td class="memItemLeft" align="right" valign="top"><a id="a7732dfaf11c25c263b158e50b909091d"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateComponentRpcsRecvMetrics</b> (NetComponentId netComponentId) const</td></tr>
+<tr class="separator:a7732dfaf11c25c263b158e50b909091d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fd3a2d519d3e9c7bf165446c782571"><td class="memItemLeft" align="right" valign="top"><a id="ae7fd3a2d519d3e9c7bf165446c782571"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateTotalPropertyUpdateSentMetrics</b> () const</td></tr>
+<tr class="separator:ae7fd3a2d519d3e9c7bf165446c782571"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bab7f39f7a8fe103b4ab64ec0f261f"><td class="memItemLeft" align="right" valign="top"><a id="a05bab7f39f7a8fe103b4ab64ec0f261f"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateTotalPropertyUpdateRecvMetrics</b> () const</td></tr>
+<tr class="separator:a05bab7f39f7a8fe103b4ab64ec0f261f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce45b2eff223f822e413dc1b71f8585"><td class="memItemLeft" align="right" valign="top"><a id="abce45b2eff223f822e413dc1b71f8585"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateTotalRpcsSentMetrics</b> () const</td></tr>
+<tr class="separator:abce45b2eff223f822e413dc1b71f8585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab744f089c3517e8ecc395101994ff5"><td class="memItemLeft" align="right" valign="top"><a id="acab744f089c3517e8ecc395101994ff5"></a>
+<a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_metric.html">Metric</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateTotalRpcsRecvMetrics</b> () const</td></tr>
+<tr class="separator:acab744f089c3517e8ecc395101994ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a77ac912d332038b877dfd8034d684d7a"><td class="memItemLeft" align="right" valign="top"><a id="a77ac912d332038b877dfd8034d684d7a"></a>
@@ -61,35 +126,29 @@ uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_clientConnectio
 <tr class="memitem:a7be107fa17c0ceff2c9b16a80c007161"><td class="memItemLeft" align="right" valign="top"><a id="a7be107fa17c0ceff2c9b16a80c007161"></a>
 uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_serverConnectionCount</b> = 0</td></tr>
 <tr class="separator:a7be107fa17c0ceff2c9b16a80c007161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744a83971f3757a97a5db693d58a3bf6"><td class="memItemLeft" align="right" valign="top"><a id="a744a83971f3757a97a5db693d58a3bf6"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyUpdatesSent</b> = 0</td></tr>
-<tr class="separator:a744a83971f3757a97a5db693d58a3bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78f3eb7d5669c8ce9c5a986fc7deb4e6"><td class="memItemLeft" align="right" valign="top"><a id="a78f3eb7d5669c8ce9c5a986fc7deb4e6"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyUpdatesSentBytes</b> = 0</td></tr>
-<tr class="separator:a78f3eb7d5669c8ce9c5a986fc7deb4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa274a7e1a671b1e0a6bd1662ae7562c5"><td class="memItemLeft" align="right" valign="top"><a id="aa274a7e1a671b1e0a6bd1662ae7562c5"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyUpdatesRecv</b> = 0</td></tr>
-<tr class="separator:aa274a7e1a671b1e0a6bd1662ae7562c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd46ce2c844754f6b86ab4519c24d61"><td class="memItemLeft" align="right" valign="top"><a id="afcd46ce2c844754f6b86ab4519c24d61"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_propertyUpdatesRecvBytes</b> = 0</td></tr>
-<tr class="separator:afcd46ce2c844754f6b86ab4519c24d61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae27fa463c70304fadfb0ee925494a1a4"><td class="memItemLeft" align="right" valign="top"><a id="ae27fa463c70304fadfb0ee925494a1a4"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_rpcsSent</b> = 0</td></tr>
-<tr class="separator:ae27fa463c70304fadfb0ee925494a1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a683a5566fbba5da871ee3de5175f074b"><td class="memItemLeft" align="right" valign="top"><a id="a683a5566fbba5da871ee3de5175f074b"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_rpcsSentBytes</b> = 0</td></tr>
-<tr class="separator:a683a5566fbba5da871ee3de5175f074b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b22ece7514e503e825d8468e7fee4a1"><td class="memItemLeft" align="right" valign="top"><a id="a6b22ece7514e503e825d8468e7fee4a1"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_rpcsRecv</b> = 0</td></tr>
-<tr class="separator:a6b22ece7514e503e825d8468e7fee4a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f212e03ff5d25edfc9b863ec6846eca"><td class="memItemLeft" align="right" valign="top"><a id="a9f212e03ff5d25edfc9b863ec6846eca"></a>
-uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_rpcsRecvBytes</b> = 0</td></tr>
-<tr class="separator:a9f212e03ff5d25edfc9b863ec6846eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70f8c0ecac8b4c4274e255674ecc885"><td class="memItemLeft" align="right" valign="top"><a id="aa70f8c0ecac8b4c4274e255674ecc885"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_recordMetricIndex</b> = 0</td></tr>
+<tr class="separator:aa70f8c0ecac8b4c4274e255674ecc885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3965e8adbd288155c63290d591291bb"><td class="memItemLeft" align="right" valign="top"><a id="ae3965e8adbd288155c63290d591291bb"></a>
+AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><b>m_totalHistoryTimeMs</b> = AZ::TimeMs{ 0 }</td></tr>
+<tr class="separator:ae3965e8adbd288155c63290d591291bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0eaff0ea2381514a79690cfe418f52"><td class="memItemLeft" align="right" valign="top"><a id="adc0eaff0ea2381514a79690cfe418f52"></a>
+AZStd::vector&lt; <a class="el" href="struct_multiplayer_1_1_multiplayer_stats_1_1_component_stats.html">ComponentStats</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_componentStats</b></td></tr>
+<tr class="separator:adc0eaff0ea2381514a79690cfe418f52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae9568486894dc879c4b6f38bad33dc78"><td class="memItemLeft" align="right" valign="top"><a id="ae9568486894dc879c4b6f38bad33dc78"></a>
+static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>RingbufferSamples</b> = 32</td></tr>
+<tr class="separator:ae9568486894dc879c4b6f38bad33dc78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Gems/Multiplayer/Code/Include/Multiplayer/MultiplayerStats.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:39 for Multiplayer API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:55 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
