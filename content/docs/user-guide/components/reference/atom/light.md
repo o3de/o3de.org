@@ -7,9 +7,9 @@ toc: true
 ---
 
 {{< preview-new >}}
-The **Light** component simulates soft studio light by emitting various types of punctual and area lights. The types of lights available are Point (sphere), Point (simple punctual), Spot (disk), Spot (simple punctual), Capsule, Quad, and Polygon. 
+The **Light** component simulates soft studio light by allowing creation of various types of punctual and area lights. The types of lights available are Point (sphere), Point (simple punctual), Spot (disk), Spot (simple punctual), Capsule, Quad, and Polygon. 
 - Point (sphere), Spot (disk), Capsule, Quad, and Polygon are area lights. They most accurately simulate real world light sources.
-- Point (simple punctual) and Spot (simple punctual) are punctual lights. They are slightly more performant than their area light counterparts, but produce simpler light effects.
+- Point (simple punctual) and Spot (simple punctual) are punctual lights, which are infinitesimally small lights. They are slightly more performant than their area light counterparts, but produce simpler light effects.
 - Point (sphere) and Spot (disk) light types support shadow effects.
 - Quad and Polygon light types can emit light from one or both directions. 
 - Quad light type optionally supports fast approximation, which produces a more efficient but lower quality light effect. 
@@ -111,7 +111,7 @@ The **Light** component simulates soft studio light by emitting various types of
 |-|-|-|-|
 | **Enable shadow** | Enable shadow effects. | Boolean | `Disabled` |
 | **Shadowmap size** | Set the width and height of the shadowmap. A higher size leads to a more detailed shadow effect.| `256`, `512`, `1024`, `2048` | `256` |
-| **Shadow filter method** | Set the shadow filtering method to reduce aliasing in the shadow map. The supported methods are Percentage-Closer Filtering (PCF), Exponential Shadow Maps (ESM), and a combination of both. | `None`, `PCF`, `ESM`, `ESM+PCF` | `None` |
+| **Shadow filter method** | Set the shadow filtering method to reduce aliasing in the shadow map. The supported methods are Percentage-Closer Filtering (PCF) or Exponential Shadow Maps (ESM). `ESM+PCF` uses ESM, but falls back to PCF in areas where ESM might fail. | `None`, `PCF`, `ESM`, `ESM+PCF` | `None` |
 | **Softening boundary width** | Set the width in meters of the boundary between the shadowed and the lit area to adjust the softness of the shadow edges. If width is 0, the soft edge is disabled. <br> <br>*This field is only available if Pcf method is set to `BoundarySearch`.* | `0` to `1` meter | `0.25`|
 | **Prediction sample count** | The sample count used to predict whether the pixel is on the boundary. <br> <br>*This field is only available if Pcf method is set to `BoundarySearch`.* | `0` to `16` | `4` |
 | **Filtering sample count** | The sample count used to filter the shadow boundary. <br> <br>*This field is only available if Shadowmap filter method is set to PCF or `ESM+PCF`.* | `0` to `64` | `12` |
