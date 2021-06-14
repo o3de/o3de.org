@@ -40,7 +40,7 @@ For more information, refer to [Get started with O3DE builds](/docs/user-guide/b
 
 ## Atom physically based renderer
 
-O3DE uses the [Atom physically based renderer](atom-guide). Atom is a cross-platform, modular, data-driven, and multi-threaded renderer that can be extended for a wide variety of visual and performance needs.
+O3DE uses the Atom physically based renderer. Atom is a cross-platform, modular, data-driven, and multi-threaded renderer that can be extended for a wide variety of visual and performance needs.
 
 Some of Atom's features include:
 
