@@ -78,7 +78,7 @@ EBuses have many advantages over traditional polling methods:
 + Predictability - Provide support for ordering of handlers on a given bus.
 + Debugging - Intercept messages for reporting, profiling, and introspection purposes.
 
-With EBusses, you can:
+With EBuses, you can:
 
 + Make direct gobal function calls.
 + Dispatch processing to multiple handlers.
