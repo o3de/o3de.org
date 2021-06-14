@@ -56,7 +56,7 @@ Conduct may be permanently removed from the project team.
 This code of conduct applies both within project spaces and in public spaces
 when an individual is representing the project or its community.
 
-Instances of abusive, harassing, or otherwise unacceptable behavior in Kubernetes may be reported by contacting the [O3DE Code of Conduct Committee](https://git.k8s.io/community/committee-code-of-conduct) via <conduct@o3de.org>. For other projects, please contact a CNCF project maintainer or our mediator, Mishi Choudhary <mishi@linux.com>.
+Instances of abusive, harassing, or otherwise unacceptable behavior in O3DE may be reported by contacting the [O3DE Code of Conduct Committee](https://github.com/o3de/foundation/tree/main/committee/committee-code-of-conduct) via <conduct@o3de.org>. For other projects, please contact a CNCF project maintainer.
 
 This Code of Conduct is adapted from the Contributor Covenant
 (http://contributor-covenant.org), version 1.2.0, available at
