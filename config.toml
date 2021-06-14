@@ -13,7 +13,7 @@ unsafe = true
 
 [params]
 font_awesome_version = "5.12.0"
-description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, bringing together over 30 fully matured and integrated 3D authoring tools, enabling users to build AAA games, cinema quality 3D worlds for video production, and high-fidelity simulations for non-gaming use cases with zero licensing fees, commercial terms, or disclosure obligations."
+description = "Open 3D Engine (O3DE) is an open-source, real-time 3D game and simulation engine that’s fully modular and extensible. Managed by the Linux Foundation and backed by industry leaders O3DE brings together over 30 integrated 3D authoring tools. Whether you’re a AAA game studio, indie developer, or simulation creator, O3DE enables you to use a physically-based, photorealistic renderer to build cinema quality 3D worlds for games, video production, and high-fidelity simulations with zero licensing fees or obligations."
 favicon = "favicon.png"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
@@ -58,7 +58,7 @@ sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
 [[menu.main]]
-name = "Download"
+name = "DOWNLOAD"
 url = "/download"
 weight = 1
 
@@ -68,7 +68,7 @@ weight = 1
 # weight = 2
 
 [[menu.main]]
-name = "Community"
+name = "COMMUNITY"
 url = "/community"
 weight = 3
 identifier = "community"
@@ -80,12 +80,12 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "Documentation"
+name = "DOCUMENTATION"
 url = "/docs"
 weight = 4
 identifier = "docs"
 
 [[menu.main]]
-name = "Contribute"
+name = "CONTRIBUTE"
 url = "/docs/contributing"
 weight = 5
