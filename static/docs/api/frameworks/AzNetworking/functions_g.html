@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzNetworking API Reference: Class Members</title>
+<title>Open 3D Engine AzNetworking API Reference: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzNetworking API Reference
+   <div id="projectname">Open 3D Engine AzNetworking API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -65,6 +68,7 @@ $(function() {
 , <a class="el" href="class_az_networking_1_1_i_serializer.html#a265e7595f7c96bcdf25942200c72b6e9">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_input_serializer.html#aff8e6680d1cf7082ccff04fd4e1338a8">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a77dc56f6ed5943dd84b419aae184844a">AzNetworking::NetworkOutputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a2bd123a7f8c82d238ccc58a4c2860bd3">AzNetworking::StringifySerializer</a>
 </li>
 <li>GetBufferEnd()
 : <a class="el" href="class_az_networking_1_1_byte_buffer.html#ade6eb25abe01229e351a5f614bc9977a">AzNetworking::ByteBuffer&lt; SIZE &gt;</a>
@@ -80,6 +84,7 @@ $(function() {
 , <a class="el" href="class_az_networking_1_1_i_serializer.html#a6e14e1357d1c94a4671c9107370cb9ea">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a410b9ad4140fe21ce0f29fc567ac7b67">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a3f344d0bcaf036ca27bae52a6e46318b">AzNetworking::NetworkOutputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ad2ebf74b92edb3706f71bd0cd5dfa1a7">AzNetworking::StringifySerializer</a>
 </li>
 <li>GetConnection()
 : <a class="el" href="class_az_networking_1_1_i_connection_set.html#abe5b177810386e2da64559ec09b6bd65">AzNetworking::IConnectionSet</a>
@@ -169,6 +174,10 @@ $(function() {
 : <a class="el" href="class_az_networking_1_1_i_network_interface.html#aeb89ae9cb1f7901dc19c2c1f821d0122">AzNetworking::INetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a3283865f91097f481a162ac8db7dcd44">AzNetworking::TcpNetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a08f0cf7417b334f17df10ced609dc4c2">AzNetworking::UdpNetworkInterface</a>
+</li>
+<li>GetNetworkInterfaces()
+: <a class="el" href="class_az_networking_1_1_i_networking.html#a523b67347382e031aefd56faa1c2cfb1">AzNetworking::INetworking</a>
+, <a class="el" href="class_az_networking_1_1_networking_system_component.html#acd8eb5dcb565749d9bc7b76712321d13">AzNetworking::NetworkingSystemComponent</a>
 </li>
 <li>GetNextConnectionId()
 : <a class="el" href="class_az_networking_1_1_i_connection_set.html#a2901b5be71ed350ad15cb01a0dc8cd97">AzNetworking::IConnectionSet</a>
@@ -303,6 +312,7 @@ $(function() {
 , <a class="el" href="class_az_networking_1_1_i_serializer.html#a7e67dccef6742012b84423d8957107d9">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a0e875ee80a3b0d8c21a423c603b522b5">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#ac460473f10d915e6ca6b80c8218d317f">AzNetworking::NetworkOutputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ab80f9c31b51027d456356fe5ba9b38ca">AzNetworking::StringifySerializer</a>
 </li>
 <li>GetSize()
 : <a class="el" href="class_az_networking_1_1_byte_buffer.html#a3298b8d9dad966c785d3e5537d82ba4a">AzNetworking::ByteBuffer&lt; SIZE &gt;</a>
@@ -312,6 +322,7 @@ $(function() {
 , <a class="el" href="class_az_networking_1_1_i_serializer.html#aa4d81153f462c6a239930c4f5ece7cc2">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a35b550ed7f93ed0fe473acac39ec4228">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#aced4c256404a31760ab5c6a198d88114">AzNetworking::NetworkOutputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#a2d09ad320e25b9bce432f76531b6d719">AzNetworking::StringifySerializer</a>
 </li>
 <li>GetSocketCount()
 : <a class="el" href="class_az_networking_1_1_tcp_listen_thread.html#afabee717a2abeeaa4937af3dc004cfcb">AzNetworking::TcpListenThread</a>
@@ -327,6 +338,14 @@ $(function() {
 <li>GetString()
 : <a class="el" href="class_az_networking_1_1_ip_address.html#a29ebcd58c57ed478dba6fab0781bc5f0">AzNetworking::IpAddress</a>
 </li>
+<li>GetTcpListenThreadSocketCount()
+: <a class="el" href="class_az_networking_1_1_i_networking.html#a817da5ccd909f2c954d1444975a77d47">AzNetworking::INetworking</a>
+, <a class="el" href="class_az_networking_1_1_networking_system_component.html#a7a07450de63e6a6028fa46b9090b08cd">AzNetworking::NetworkingSystemComponent</a>
+</li>
+<li>GetTcpListenThreadUpdateTime()
+: <a class="el" href="class_az_networking_1_1_i_networking.html#a61600117fcdfb4ec03e222c2e2da2946">AzNetworking::INetworking</a>
+, <a class="el" href="class_az_networking_1_1_networking_system_component.html#a8fd442c1712f8a237f88402d3dd095be">AzNetworking::NetworkingSystemComponent</a>
+</li>
 <li>GetTcpSocket()
 : <a class="el" href="class_az_networking_1_1_tcp_connection.html#a89cb8a372de9c61fa888f5d46f24c59e">AzNetworking::TcpConnection</a>
 </li>
@@ -341,6 +360,7 @@ $(function() {
 , <a class="el" href="class_az_networking_1_1_i_serializer.html#a9b1787cdf55b22c8e9e4600e0cac853b">AzNetworking::ISerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_input_serializer.html#a94743ddabaa005d058f10ac66c08c443">AzNetworking::NetworkInputSerializer</a>
 , <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a2ec7b41b380019c58570c758a6ae0e9b">AzNetworking::NetworkOutputSerializer</a>
+, <a class="el" href="class_az_networking_1_1_stringify_serializer.html#ae4c0cb7101f9f4384237ef6682acff2a">AzNetworking::StringifySerializer</a>
 </li>
 <li>GetTrustZone()
 : <a class="el" href="class_az_networking_1_1_i_network_interface.html#a4bfe19e0d4f9d9cca9c44f3fd05d71c8">AzNetworking::INetworkInterface</a>
@@ -352,6 +372,14 @@ $(function() {
 , <a class="el" href="class_az_networking_1_1_i_network_interface.html#a19ecbd94c4114b464a9d9a265b57d761">AzNetworking::INetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a0c897c2b78de2de705dc0a513d88c112">AzNetworking::TcpNetworkInterface</a>
 , <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a53d5e61b3a7d10fe677aa5c969c21a4b">AzNetworking::UdpNetworkInterface</a>
+</li>
+<li>GetUdpReaderThreadSocketCount()
+: <a class="el" href="class_az_networking_1_1_i_networking.html#a85677fe6a3633bae432c6f31956363c5">AzNetworking::INetworking</a>
+, <a class="el" href="class_az_networking_1_1_networking_system_component.html#ac274d8c7d3e789fd5bb91a7457f9ecb1">AzNetworking::NetworkingSystemComponent</a>
+</li>
+<li>GetUdpReaderThreadUpdateTime()
+: <a class="el" href="class_az_networking_1_1_i_networking.html#ab3a474cb65907ec4f4a3b8064e9fb7a2">AzNetworking::INetworking</a>
+, <a class="el" href="class_az_networking_1_1_networking_system_component.html#a12d509d9c7591474c5b791abc8658073">AzNetworking::NetworkingSystemComponent</a>
 </li>
 <li>GetUnreadData()
 : <a class="el" href="class_az_networking_1_1_network_output_serializer.html#a28a7e444ad7bcb29aa6a87b6c6c66f24">AzNetworking::NetworkOutputSerializer</a>
@@ -380,7 +408,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:58 for AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:17 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

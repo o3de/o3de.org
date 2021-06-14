@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::Prefab::PrefabSystemComponentInterface Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::Prefab::PrefabSystemComponentInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -77,9 +80,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllTemp
 <tr class="memitem:a34e15dc8be0e3eeb80cf31205f49300d"><td class="memItemLeft" align="right" valign="top"><a id="a34e15dc8be0e3eeb80cf31205f49300d"></a>
 virtual LinkId&#160;</td><td class="memItemRight" valign="bottom"><b>AddLink</b> (const TemplateId &amp;sourceTemplateId, const TemplateId &amp;targetTemplateId, PrefabDomValue::MemberIterator &amp;instanceIterator, InstanceOptionalReference instance)=0</td></tr>
 <tr class="separator:a34e15dc8be0e3eeb80cf31205f49300d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4586c5bf6bd0ed5fc9cc2cd27e732ca7"><td class="memItemLeft" align="right" valign="top"><a id="a4586c5bf6bd0ed5fc9cc2cd27e732ca7"></a>
-virtual LinkId&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLink</b> (const TemplateId &amp;linkTargetId, const TemplateId &amp;linkSourceId, const InstanceAlias &amp;instanceAlias, const PrefabDomReference linkPatch, const LinkId &amp;linkId=InvalidLinkId)=0</td></tr>
-<tr class="separator:a4586c5bf6bd0ed5fc9cc2cd27e732ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1afe92ef1740228ddd939b80f806435e"><td class="memItemLeft" align="right" valign="top"><a id="a1afe92ef1740228ddd939b80f806435e"></a>
+virtual LinkId&#160;</td><td class="memItemRight" valign="bottom"><b>CreateLink</b> (const TemplateId &amp;linkTargetId, const TemplateId &amp;linkSourceId, const InstanceAlias &amp;instanceAlias, const PrefabDomConstReference linkPatches, const LinkId &amp;linkId=InvalidLinkId)=0</td></tr>
+<tr class="separator:a1afe92ef1740228ddd939b80f806435e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b910433b3001159786f9e6aa71b3a2b"><td class="memItemLeft" align="right" valign="top"><a id="a1b910433b3001159786f9e6aa71b3a2b"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLink</b> (const LinkId &amp;linkId)=0</td></tr>
 <tr class="separator:a1b910433b3001159786f9e6aa71b3a2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,22 +101,28 @@ virtual PrefabDom &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>Fi
 <tr class="memitem:a7312a82fa896ff38dd121793785911da"><td class="memItemLeft" align="right" valign="top"><a id="a7312a82fa896ff38dd121793785911da"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdatePrefabTemplate</b> (TemplateId templateId, const PrefabDom &amp;updatedDom)=0</td></tr>
 <tr class="separator:a7312a82fa896ff38dd121793785911da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aace975967b6bdeca0f17bf1d257deb76"><td class="memItemLeft" align="right" valign="top"><a id="aace975967b6bdeca0f17bf1d257deb76"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId)=0</td></tr>
-<tr class="separator:aace975967b6bdeca0f17bf1d257deb76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8741962a31f07019f681d57b32698e15"><td class="memItemLeft" align="right" valign="top"><a id="a8741962a31f07019f681d57b32698e15"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
+<tr class="separator:a8741962a31f07019f681d57b32698e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7110e4bcb45ed1f6f5b3049e4c4d04"><td class="memItemLeft" align="right" valign="top"><a id="a4c7110e4bcb45ed1f6f5b3049e4c4d04"></a>
+virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (AZ::IO::PathView filePath)=0</td></tr>
+<tr class="separator:a4c7110e4bcb45ed1f6f5b3049e4c4d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a94d59eae8c4dd0baf390955a4b3593"><td class="memItemLeft" align="right" valign="top"><a id="a6a94d59eae8c4dd0baf390955a4b3593"></a>
 virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InstantiatePrefab</b> (const TemplateId &amp;templateId)=0</td></tr>
 <tr class="separator:a6a94d59eae8c4dd0baf390955a4b3593"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acff86c2090820ceae3bae48127903b54"><td class="memItemLeft" align="right" valign="top"><a id="acff86c2090820ceae3bae48127903b54"></a>
-virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePrefab</b> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr)=0</td></tr>
-<tr class="separator:acff86c2090820ceae3bae48127903b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6598c1c4efc2754e37092deee9b8dd62"><td class="memItemLeft" align="right" valign="top"><a id="a6598c1c4efc2754e37092deee9b8dd62"></a>
+virtual AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreatePrefab</b> (const AZStd::vector&lt; AZ::Entity * &gt; &amp;entities, AZStd::vector&lt; AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&gt; &amp;&amp;instancesToConsume, AZ::IO::PathView filePath, AZStd::unique_ptr&lt; AZ::Entity &gt; containerEntity=nullptr, bool ShouldCreateLinks=true)=0</td></tr>
+<tr class="separator:a6598c1c4efc2754e37092deee9b8dd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html">PrefabSystemComponentInterface</a> Interface serviced by the Prefab System Component. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/PrefabSystemComponentInterface.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:09 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:23:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

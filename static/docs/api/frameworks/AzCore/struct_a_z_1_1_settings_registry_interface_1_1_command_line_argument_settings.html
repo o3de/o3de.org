@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::SettingsRegistryInterface::CommandLineArgumentSettings Struct Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::SettingsRegistryInterface::CommandLineArgumentSettings Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -43,9 +46,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AZ::SettingsRegistryInterface::CommandLineArgumentSettings Struct Reference</div>  </div>
@@ -54,46 +57,47 @@ $(function() {
 
 <p><code>#include &lt;SettingsRegistry.h&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings_1_1_json_path_value.html">JsonPathValue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa26a8f7d3c18dae2470ad73463684622"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html#aa26a8f7d3c18dae2470ad73463684622">DelimiterFunc</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; bool(const char delimiter)&gt;</td></tr>
-<tr class="separator:aa26a8f7d3c18dae2470ad73463684622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4273ce705f80da91e6f0047536b911d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html#ad4273ce705f80da91e6f0047536b911d">DelimiterFunc</a> = <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt; <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings_1_1_json_path_value.html">JsonPathValue</a>(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> line)&gt;</td></tr>
+<tr class="separator:ad4273ce705f80da91e6f0047536b911d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a11ea3b27ebe54c9060969453f2f18922"><td class="memItemLeft" align="right" valign="top"><a id="a11ea3b27ebe54c9060969453f2f18922"></a>
-<a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html#aa26a8f7d3c18dae2470ad73463684622">DelimiterFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_delimiterFunc</b></td></tr>
+<a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html#ad4273ce705f80da91e6f0047536b911d">DelimiterFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_delimiterFunc</b></td></tr>
 <tr class="separator:a11ea3b27ebe54c9060969453f2f18922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ace5788af771a5c6b48720fb4f066a338"><td class="memItemLeft" align="right" valign="top"><a id="ace5788af771a5c6b48720fb4f066a338"></a>
-static constexpr <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CommandLineArgumentDelimiters</b> { &quot;=:&quot;}</td></tr>
-<tr class="separator:ace5788af771a5c6b48720fb4f066a338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Structure which contains configuration settings for how to parse a single command line argument It supports supplying a functor for determining if a character is a delimiter </p>
+<div class="textblock"><p>Structure which contains configuration settings for how to parse a single command line argument It supports supplying a functor for splitting a line into JSON path and JSON value </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa26a8f7d3c18dae2470ad73463684622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa26a8f7d3c18dae2470ad73463684622">&#9670;&nbsp;</a></span>DelimiterFunc</h2>
+<a id="ad4273ce705f80da91e6f0047536b911d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4273ce705f80da91e6f0047536b911d">&#9670;&nbsp;</a></span>DelimiterFunc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html#aa26a8f7d3c18dae2470ad73463684622">AZ::SettingsRegistryInterface::CommandLineArgumentSettings::DelimiterFunc</a> =  <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt;bool(const char delimiter)&gt;</td>
+          <td class="memname">using <a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings.html#ad4273ce705f80da91e6f0047536b911d">AZ::SettingsRegistryInterface::CommandLineArgumentSettings::DelimiterFunc</a> =  <a class="el" href="class_a_z_std_1_1function.html">AZStd::function</a>&lt;<a class="el" href="struct_a_z_1_1_settings_registry_interface_1_1_command_line_argument_settings_1_1_json_path_value.html">JsonPathValue</a>(<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> line)&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Callback function which is invoked to determine whether a delimiter has been found return value of true indicates that a delimiter has been found <br  />
- </p>
+<p>Callback function which is invoked to determine how to split a command line argument into a JSON path and a JSON value </p>
 
 </div>
 </div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:21 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:22:36 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

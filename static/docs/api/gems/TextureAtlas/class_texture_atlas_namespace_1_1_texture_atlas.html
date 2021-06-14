@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TextureAtlas API Reference: TextureAtlasNamespace::TextureAtlas Class Reference</title>
+<title>Open 3D Engine TextureAtlas Gem API Reference: TextureAtlasNamespace::TextureAtlas Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">TextureAtlas API Reference
+   <div id="projectname">Open 3D Engine TextureAtlas Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -67,14 +70,14 @@ Public Member Functions</h2></td></tr>
 virtual <a class="el" href="struct_texture_atlas_namespace_1_1_atlas_coordinates.html">AtlasCoordinates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture_atlas_namespace_1_1_texture_atlas.html#a92110fa8e7d41f9662c1abc05c1ba668">GetAtlasCoordinates</a> (const AZStd::string &amp;handle) const =0</td></tr>
 <tr class="memdesc:a92110fa8e7d41f9662c1abc05c1ba668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve a coordinate set from the Atlas by its handle. <br /></td></tr>
 <tr class="separator:a92110fa8e7d41f9662c1abc05c1ba668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32d29472e69f4ccf0a618a6d88e86a85"><td class="memItemLeft" align="right" valign="top"><a id="a32d29472e69f4ccf0a618a6d88e86a85"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture_atlas_namespace_1_1_texture_atlas.html#a32d29472e69f4ccf0a618a6d88e86a85">SetTexture</a> (ITexture *image)=0</td></tr>
-<tr class="memdesc:a32d29472e69f4ccf0a618a6d88e86a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links this atlas to an image pointer. <br /></td></tr>
-<tr class="separator:a32d29472e69f4ccf0a618a6d88e86a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a807ef44f2efcdeb075967a88cfe5dd04"><td class="memItemLeft" align="right" valign="top"><a id="a807ef44f2efcdeb075967a88cfe5dd04"></a>
-virtual ITexture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture_atlas_namespace_1_1_texture_atlas.html#a807ef44f2efcdeb075967a88cfe5dd04">GetTexture</a> () const =0</td></tr>
-<tr class="memdesc:a807ef44f2efcdeb075967a88cfe5dd04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image linked to this atlas. <br /></td></tr>
-<tr class="separator:a807ef44f2efcdeb075967a88cfe5dd04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d259919f828fbd188c6f89740dc3c75"><td class="memItemLeft" align="right" valign="top"><a id="a8d259919f828fbd188c6f89740dc3c75"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture_atlas_namespace_1_1_texture_atlas.html#a8d259919f828fbd188c6f89740dc3c75">SetTexture</a> (AZ::Data::Instance&lt; AZ::RPI::Image &gt; image)=0</td></tr>
+<tr class="memdesc:a8d259919f828fbd188c6f89740dc3c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Links this atlas to an image pointer. <br /></td></tr>
+<tr class="separator:a8d259919f828fbd188c6f89740dc3c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af412247107721cc5ad4aa103b17fdf7b"><td class="memItemLeft" align="right" valign="top"><a id="af412247107721cc5ad4aa103b17fdf7b"></a>
+virtual AZ::Data::Instance&lt; AZ::RPI::Image &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture_atlas_namespace_1_1_texture_atlas.html#af412247107721cc5ad4aa103b17fdf7b">GetTexture</a> () const =0</td></tr>
+<tr class="memdesc:af412247107721cc5ad4aa103b17fdf7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the image linked to this atlas. <br /></td></tr>
+<tr class="separator:af412247107721cc5ad4aa103b17fdf7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36907b52b56c26d1ba56d64ad9ff32c5"><td class="memItemLeft" align="right" valign="top"><a id="a36907b52b56c26d1ba56d64ad9ff32c5"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_texture_atlas_namespace_1_1_texture_atlas.html#a36907b52b56c26d1ba56d64ad9ff32c5">GetWidth</a> () const =0</td></tr>
 <tr class="memdesc:a36907b52b56c26d1ba56d64ad9ff32c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the width of the atlas. <br /></td></tr>
@@ -86,10 +89,13 @@ virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An abstract class that exposes atlas pointers to the rest of the codebase. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/TextureAtlas/Code/Include/TextureAtlas/TextureAtlas.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:04:03 for TextureAtlas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:22:19 for Open 3D Engine TextureAtlas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

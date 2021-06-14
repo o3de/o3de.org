@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AtomLyIntegration API Reference: AZ::Render::AreaLightComponentConfig Struct Reference</title>
+<title>Open 3D Engine AtomLyIntegration Gem API Reference: AZ::Render::AreaLightComponentConfig Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AtomLyIntegration API Reference
+   <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +88,10 @@ AZStd::vector&lt; Edit::EnumConstant&lt; PhotometricUnit &gt; &gt;&#160;</td><td
 <tr class="memitem:a718f0009d75298685cc6036ba16b3511"><td class="memItemLeft" align="right" valign="top"><a id="a718f0009d75298685cc6036ba16b3511"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresShapeComponent</b> () const</td></tr>
 <tr class="separator:a718f0009d75298685cc6036ba16b3511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d0ca3e0f5b08f5b5a691e6490885050"><td class="memItemLeft" align="right" valign="top"><a id="a8d0ca3e0f5b08f5b5a691e6490885050"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a8d0ca3e0f5b08f5b5a691e6490885050">LightTypeIsSelected</a> () const</td></tr>
+<tr class="memdesc:a8d0ca3e0f5b08f5b5a691e6490885050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the light type is anything other than unknown. <br /></td></tr>
+<tr class="separator:a8d0ca3e0f5b08f5b5a691e6490885050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a28d9e63f629091e2163327a02fedc2"><td class="memItemLeft" align="right" valign="top"><a id="a9a28d9e63f629091e2163327a02fedc2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_area_light_component_config.html#a9a28d9e63f629091e2163327a02fedc2">IsAttenuationRadiusModeAutomatic</a> () const</td></tr>
 <tr class="memdesc:a9a28d9e63f629091e2163327a02fedc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if m_attenuationRadiusMode is set to LightAttenuationRadiusMode::Automatic. <br /></td></tr>
@@ -204,7 +211,7 @@ ShadowmapSize&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadowmapM
 ShadowFilterMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_shadowFilterMethod</b> = ShadowFilterMethod::None</td></tr>
 <tr class="separator:a1b676966c4938dc34f310ecd5374ee7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a9466ba8772434d890721229c8d90eb"><td class="memItemLeft" align="right" valign="top"><a id="a9a9466ba8772434d890721229c8d90eb"></a>
-PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_pcfMethod</b> = PcfMethod::BoundarySearch</td></tr>
+PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_pcfMethod</b> = PcfMethod::Bicubic</td></tr>
 <tr class="separator:a9a9466ba8772434d890721229c8d90eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35f48c45096f831a6140f59782eedfc"><td class="memItemLeft" align="right" valign="top"><a id="ac35f48c45096f831a6140f59782eedfc"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_boundaryWidthInDegrees</b> = 0.25f</td></tr>
@@ -222,10 +229,13 @@ Static Public Attributes</h2></td></tr>
 static constexpr float&#160;</td><td class="memItemRight" valign="bottom"><b>CutoffIntensity</b> = 0.1f</td></tr>
 <tr class="separator:a2c8a046c8db27a8d7485e2480ea8855f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/CoreLights/AreaLightComponentConfig.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:20 for AtomLyIntegration API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:38 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

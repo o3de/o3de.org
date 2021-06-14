@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::AuxGeomDraw Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::AuxGeomDraw Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -123,8 +126,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawLines</b>
 <tr class="memitem:a5590eed31aef9125c860f391fa206b5a"><td class="memItemLeft" align="right" valign="top"><a id="a5590eed31aef9125c860f391fa206b5a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTriangles</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_aux_geom_draw_1_1_aux_geom_dynamic_indexed_draw_arguments.html">AuxGeomDynamicIndexedDrawArguments</a> &amp;args, FaceCullMode faceCull=FaceCullMode::None)=0</td></tr>
 <tr class="separator:a5590eed31aef9125c860f391fa206b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a325fd3d7083197a6e84a36f3493f9af6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a325fd3d7083197a6e84a36f3493f9af6">DrawQuad</a> (float width, float height, const AZ::Transform &amp;transform, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
-<tr class="separator:a325fd3d7083197a6e84a36f3493f9af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae89d5ee75ddf25578f6882ca0acb3864"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ae89d5ee75ddf25578f6882ca0acb3864">DrawQuad</a> (float width, float height, const AZ::Matrix3x4 &amp;transform, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
+<tr class="separator:ae89d5ee75ddf25578f6882ca0acb3864"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9c653a941a9248121c04ebe58a41c92"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ae9c653a941a9248121c04ebe58a41c92">DrawSphere</a> (const AZ::Vector3 &amp;center, float radius, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
 <tr class="separator:ae9c653a941a9248121c04ebe58a41c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3081d2150a8a7766cf176b2897297614"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#a3081d2150a8a7766cf176b2897297614">DrawDisk</a> (const AZ::Vector3 &amp;center, const AZ::Vector3 &amp;direction, float radius, const AZ::Color &amp;color, <a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2">DrawStyle</a> style=<a class="el" href="class_a_z_1_1_r_p_i_1_1_aux_geom_draw.html#ad0c12e86444e5b497032713f9d37a3c2a95e4c683b31aacc6c251c95780ff6808">DrawStyle::Shaded</a>, DepthTest depthTest=DepthTest::On, DepthWrite depthWrite=DepthWrite::On, FaceCullMode faceCull=FaceCullMode::Back, int32_t viewProjOverrideIndex=-1)=0</td></tr>
@@ -861,8 +864,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTriangles
 
 </div>
 </div>
-<a id="a325fd3d7083197a6e84a36f3493f9af6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a325fd3d7083197a6e84a36f3493f9af6">&#9670;&nbsp;</a></span>DrawQuad()</h2>
+<a id="ae89d5ee75ddf25578f6882ca0acb3864"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae89d5ee75ddf25578f6882ca0acb3864">&#9670;&nbsp;</a></span>DrawQuad()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -885,7 +888,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTriangles
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const AZ::Transform &amp;&#160;</td>
+          <td class="paramtype">const AZ::Matrix3x4 &amp;&#160;</td>
           <td class="paramname"><em>transform</em>, </td>
         </tr>
         <tr>
@@ -1080,10 +1083,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawTriangles
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/AuxGeom/AuxGeomDraw.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:15 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:33 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

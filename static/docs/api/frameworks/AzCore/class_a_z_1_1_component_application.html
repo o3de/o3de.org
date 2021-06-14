@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::ComponentApplication Class Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::ComponentApplication Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -99,6 +102,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterEntityAddedEv
 <tr class="memitem:a887b826e7ff090f72d92b94be4b6c016"><td class="memItemLeft" align="right" valign="top"><a id="a887b826e7ff090f72d92b94be4b6c016"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterEntityRemovedEventHandler</b> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityRemovedEvent::Handler</a> &amp;handler) override final</td></tr>
 <tr class="separator:a887b826e7ff090f72d92b94be4b6c016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5debfd00d429c47eae00d12e8b325a20"><td class="memItemLeft" align="right" valign="top"><a id="a5debfd00d429c47eae00d12e8b325a20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterEntityActivatedEventHandler</b> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityActivatedEvent::Handler</a> &amp;handler) override final</td></tr>
+<tr class="separator:a5debfd00d429c47eae00d12e8b325a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95e2c8f2565de75dc7f87f890ad14e07"><td class="memItemLeft" align="right" valign="top"><a id="a95e2c8f2565de75dc7f87f890ad14e07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterEntityDeactivatedEventHandler</b> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityDeactivatedEvent::Handler</a> &amp;handler) override final</td></tr>
+<tr class="separator:a95e2c8f2565de75dc7f87f890ad14e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcf9f42c762158fa618b90547a7d925b"><td class="memItemLeft" align="right" valign="top"><a id="adcf9f42c762158fa618b90547a7d925b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalEntityActivated</b> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity) override final</td></tr>
+<tr class="separator:adcf9f42c762158fa618b90547a7d925b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af676a5259de7fb5f114c958baa5367"><td class="memItemLeft" align="right" valign="top"><a id="a7af676a5259de7fb5f114c958baa5367"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SignalEntityDeactivated</b> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity) override final</td></tr>
+<tr class="separator:a7af676a5259de7fb5f114c958baa5367"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a983ba81be511165554a046efbcd2c7d9"><td class="memItemLeft" align="right" valign="top"><a id="a983ba81be511165554a046efbcd2c7d9"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntity</b> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity) override</td></tr>
 <tr class="separator:a983ba81be511165554a046efbcd2c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +129,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>DeleteEntity</b> (con
 <tr class="memitem:a21a23508c7678df5a0c94b13459f99e8"><td class="memItemLeft" align="right" valign="top"><a id="a21a23508c7678df5a0c94b13459f99e8"></a>
 <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntityName</b> (const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id) override</td></tr>
 <tr class="separator:a21a23508c7678df5a0c94b13459f99e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7655d9c83960a0e6dc6295d08a2772e7"><td class="memItemLeft" align="right" valign="top"><a id="a7655d9c83960a0e6dc6295d08a2772e7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetEntityName</b> (const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id, const <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name) override</td></tr>
+<tr class="separator:a7655d9c83960a0e6dc6295d08a2772e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20607b3750277f9cb32f600d2970992"><td class="memItemLeft" align="right" valign="top"><a id="ae20607b3750277f9cb32f600d2970992"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EnumerateEntities</b> (const <a class="el" href="class_a_z_1_1_component_application_requests.html#a2e5e9008371472f2c65456cef64b5010">ComponentApplicationRequests::EntityCallback</a> &amp;callback) override</td></tr>
 <tr class="separator:ae20607b3750277f9cb32f600d2970992"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -277,6 +295,12 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_deltaTime</b> { 0.
 <tr class="memitem:a33891a9bdc635a66808ac773f3185d25"><td class="memItemLeft" align="right" valign="top"><a id="a33891a9bdc635a66808ac773f3185d25"></a>
 <a class="el" href="class_a_z_1_1_event.html">EntityRemovedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityRemovedEvent</b></td></tr>
 <tr class="separator:a33891a9bdc635a66808ac773f3185d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab23ec3e01a8165495b70fd845d76ee4a"><td class="memItemLeft" align="right" valign="top"><a id="ab23ec3e01a8165495b70fd845d76ee4a"></a>
+<a class="el" href="class_a_z_1_1_event.html">EntityAddedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityActivatedEvent</b></td></tr>
+<tr class="separator:ab23ec3e01a8165495b70fd845d76ee4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac71a0ec460ba9d23448946602893450"><td class="memItemLeft" align="right" valign="top"><a id="aac71a0ec460ba9d23448946602893450"></a>
+<a class="el" href="class_a_z_1_1_event.html">EntityRemovedEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_entityDeactivatedEvent</b></td></tr>
+<tr class="separator:aac71a0ec460ba9d23448946602893450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5f8b5dcdb5ac9d8c9a9ede252ee8120"><td class="memItemLeft" align="right" valign="top"><a id="aa5f8b5dcdb5ac9d8c9a9ede252ee8120"></a>
 <a class="el" href="class_a_z_1_1_i_console.html">AZ::IConsole</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_console</b> {}</td></tr>
 <tr class="separator:aa5f8b5dcdb5ac9d8c9a9ede252ee8120"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -673,10 +697,13 @@ EventLoggerPtr&#160;</td><td class="memItemRight" valign="bottom"><b>m_eventLogg
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/Component/ComponentApplication.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:18 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:22:32 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

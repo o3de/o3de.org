@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ScriptCanvas API Reference: ScriptCanvas::Nodes::Core::String Class Reference</title>
+<title>Open 3D Engine ScriptCanvas Gem API Reference: ScriptCanvas::Nodes::Core::String Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ScriptCanvas API Reference
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae283e0efd367b1ad5794d0d579b3f53e inherit pub_methods_class_script_canvas_1_1_pure_data"><td class="memItemLeft" align="right" valign="top"><a id="ae283e0efd367b1ad5794d0d579b3f53e"></a>
 const AZStd::unordered_map&lt; AZStd::string, AZStd::pair&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>, <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyNameSlotMap</b> () const</td></tr>
 <tr class="separator:ae283e0efd367b1ad5794d0d579b3f53e inherit pub_methods_class_script_canvas_1_1_pure_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5993a6c316a0b0f602a973ca29da25e inherit pub_methods_class_script_canvas_1_1_pure_data"><td class="memItemLeft" align="right" valign="top"><a id="aa5993a6c316a0b0f602a973ca29da25e"></a>
+AZ_INLINE AZ::Outcome&lt; <a class="el" href="struct_script_canvas_1_1_dependency_report.html">DependencyReport</a>, void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependencies</b> () const override</td></tr>
+<tr class="separator:aa5993a6c316a0b0f602a973ca29da25e inherit pub_methods_class_script_canvas_1_1_pure_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_script_canvas_1_1_node"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_script_canvas_1_1_node')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a></td></tr>
 <tr class="memitem:af14fbf307f25b94a089129aa231ff831 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="af14fbf307f25b94a089129aa231ff831"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_COMPONENT</b> (<a class="el" href="class_script_canvas_1_1_node.html">Node</a>, &quot;{52B454AE-FA7E-4FE9-87D3-A1CAB235C691}&quot;)</td></tr>
@@ -403,9 +409,6 @@ virtual NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a6b601a5f3c5078ac4b5dd0cd27a89289 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a6b601a5f3c5078ac4b5dd0cd27a89289"></a>
 virtual NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputNodeType</b> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId) const</td></tr>
 <tr class="separator:a6b601a5f3c5078ac4b5dd0cd27a89289 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38ce4100a301282fe418a31f03c9dfd6 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a38ce4100a301282fe418a31f03c9dfd6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDeprecated</b> () const</td></tr>
-<tr class="separator:a38ce4100a301282fe418a31f03c9dfd6 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8bdb3ff029741cd3d1bed111358fac inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a0a8bdb3ff029741cd3d1bed111358fac"></a>
 virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFingerprint</b> () const</td></tr>
 <tr class="separator:a0a8bdb3ff029741cd3d1bed111358fac inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -451,9 +454,6 @@ virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetU
 <tr class="memitem:a63f6e4efaeced356b0bf2ce252bb1535 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a63f6e4efaeced356b0bf2ce252bb1535"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertsInputToStrings</b> () const</td></tr>
 <tr class="separator:a63f6e4efaeced356b0bf2ce252bb1535 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02f7e02f3a44fef85609d885a464136c inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a02f7e02f3a44fef85609d885a464136c"></a>
-virtual AZ::Outcome&lt; <a class="el" href="struct_script_canvas_1_1_dependency_report.html">DependencyReport</a>, void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDependencies</b> () const</td></tr>
-<tr class="separator:a02f7e02f3a44fef85609d885a464136c inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5884a6ec25802e642ac5947f6bf8bcb1 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a5884a6ec25802e642ac5947f6bf8bcb1"></a>
 virtual AZ::Outcome&lt; AZStd::string, void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFunctionCallName</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *) const</td></tr>
 <tr class="separator:a5884a6ec25802e642ac5947f6bf8bcb1 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -487,6 +487,9 @@ virtual <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>&#1
 <tr class="memitem:acd201a1305c34639f9cddd0240383c47 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="acd201a1305c34639f9cddd0240383c47"></a>
 virtual PropertyFields&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyFields</b> () const</td></tr>
 <tr class="separator:acd201a1305c34639f9cddd0240383c47 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0742b6c10bca03fa68ef8e89417d457 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="aa0742b6c10bca03fa68ef8e89417d457"></a>
+virtual <a class="el" href="struct_script_canvas_1_1_grammar_1_1_multiple_function_call_from_single_slot_info.html">Grammar::MultipleFunctionCallFromSingleSlotInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMultipleFunctionCallFromSingleSlotInfo</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
+<tr class="separator:aa0742b6c10bca03fa68ef8e89417d457 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d23ff833afaeac0f36456ca7236f9ab inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a6d23ff833afaeac0f36456ca7236f9ab"></a>
 virtual <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableIdRead</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *) const</td></tr>
 <tr class="separator:a6d23ff833afaeac0f36456ca7236f9ab inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -711,6 +714,9 @@ template&lt;typename DatumType &gt; </td></tr>
 <tr class="memitem:aa8e84b55d945536300d7c1e6ec1912a8 inherit pro_methods_class_script_canvas_1_1_pure_data"><td class="memItemLeft" align="right" valign="top"><a id="aa8e84b55d945536300d7c1e6ec1912a8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddInputTypeAndOutputTypeSlot</b> (const <a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a> &amp;type)</td></tr>
 <tr class="separator:aa8e84b55d945536300d7c1e6ec1912a8 inherit pro_methods_class_script_canvas_1_1_pure_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08862ff0624ade96c0d05ddc7cbaecc inherit pro_methods_class_script_canvas_1_1_pure_data"><td class="memItemLeft" align="right" valign="top"><a id="af08862ff0624ade96c0d05ddc7cbaecc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDeprecated</b> () const override</td></tr>
+<tr class="separator:af08862ff0624ade96c0d05ddc7cbaecc inherit pro_methods_class_script_canvas_1_1_pure_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1da5b5d6e9a576103a7e8a093f8bf6b4 inherit pro_methods_class_script_canvas_1_1_pure_data"><td class="memItemLeft" align="right" valign="top"><a id="a1da5b5d6e9a576103a7e8a093f8bf6b4"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_pure_data.html#a1da5b5d6e9a576103a7e8a093f8bf6b4">OnActivate</a> () override</td></tr>
 <tr class="memdesc:a1da5b5d6e9a576103a7e8a093f8bf6b4 inherit pro_methods_class_script_canvas_1_1_pure_data"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity level activation, perform entity lifetime setup here, i.e. connect to EBuses. <br /></td></tr>
@@ -1005,10 +1011,13 @@ static AZ_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsVa
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_configured</b> = false</td></tr>
 <tr class="separator:adc724265fe449f1fb9575bd16e0b312a inherit pro_attribs_class_script_canvas_1_1_pure_data"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Core/String.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:54 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:22:10 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

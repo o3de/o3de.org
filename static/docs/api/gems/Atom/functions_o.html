@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: Class Members</title>
+<title>Open 3D Engine Atom Gem API Reference: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">preview</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +104,9 @@ $(function() {
 <li>OnControllerEnabled()
 : <a class="el" href="class_a_z_1_1_debug_1_1_camera_controller_notifications.html#a1b4106ee9c681efcec52343e85016d1d">AZ::Debug::CameraControllerNotifications</a>
 </li>
+<li>OnDisplayMapperOperationTypeChanged()
+: <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#af9941215c34403f38c041c53e6babac9">MaterialEditor::MaterialViewportNotifications</a>
+</li>
 <li>OnDocumentClosed()
 : <a class="el" href="class_material_editor_1_1_material_document_notifications.html#a3736aba1321d1e24bc7088f2ad21dc56">MaterialEditor::MaterialDocumentNotifications</a>
 , <a class="el" href="class_shader_management_console_1_1_shader_management_console_document_notifications.html#a808e6aac3dbf3744edbac090fe2e96e7">ShaderManagementConsole::ShaderManagementConsoleDocumentNotifications</a>
@@ -129,6 +135,9 @@ $(function() {
 </li>
 <li>OnDocumentPropertyConfigModified()
 : <a class="el" href="class_material_editor_1_1_material_document_notifications.html#ad21c64b8bb385470d9fc853a03479a42">MaterialEditor::MaterialDocumentNotifications</a>
+</li>
+<li>OnDocumentPropertyGroupVisibilityChanged()
+: <a class="el" href="class_material_editor_1_1_material_document_notifications.html#a3d760c629ca27e712548734ae1ce235c">MaterialEditor::MaterialDocumentNotifications</a>
 </li>
 <li>OnDocumentPropertyValueModified()
 : <a class="el" href="class_material_editor_1_1_material_document_notifications.html#a169cd0bcd9a1d2c61087dd4d3863967e">MaterialEditor::MaterialDocumentNotifications</a>
@@ -197,9 +206,6 @@ $(function() {
 <li>OnModelPresetSelected()
 : <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#a37cf6c6052c269dcdbd460d4849d55dc">MaterialEditor::MaterialViewportNotifications</a>
 </li>
-<li>OnPassAttachmentsBuilt()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_notificiations.html#acf2f85b6d7371a992d6c2dbf04c6c196">AZ::RPI::PassSystemNotificiations</a>
-</li>
 <li>OnPassModified()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ab5fd5e44651e91f17631ffaea70d3b9b">AZ::RPI::RenderPipeline</a>
 </li>
@@ -233,13 +239,16 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_controller.html#aa5364cad741b06898e42e275fa1cff11">AZ::RPI::StreamingImageController</a>
 </li>
 <li>OnShaderAssetReinitialized()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#a64c9e7d5a50dce46d930a97a135183ca">AZ::RPI::ShaderReloadNotifications</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications2.html#a27f9a950570d5fd456fead3cec29952e">AZ::RPI::ShaderReloadNotifications2</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#a64c9e7d5a50dce46d930a97a135183ca">AZ::RPI::ShaderReloadNotifications</a>
 </li>
 <li>OnShaderReinitialized()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#ae7c810c16e30110c1798d18953439750">AZ::RPI::ShaderReloadNotifications</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications2.html#adb15760a7b3d982ecfff32195cf6a88a">AZ::RPI::ShaderReloadNotifications2</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#ae7c810c16e30110c1798d18953439750">AZ::RPI::ShaderReloadNotifications</a>
 </li>
 <li>OnShaderVariantReinitialized()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#adbc419798b4a8c9a64c260a8df181fdd">AZ::RPI::ShaderReloadNotifications</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications2.html#a4e0affa8116496e8415c270b53c4c069">AZ::RPI::ShaderReloadNotifications2</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#adbc419798b4a8c9a64c260a8df181fdd">AZ::RPI::ShaderReloadNotifications</a>
 </li>
 <li>OnShadowCatcherEnabledChanged()
 : <a class="el" href="class_material_editor_1_1_material_viewport_notifications.html#af6700a606c3b36d37be39cec4336cca1">MaterialEditor::MaterialViewportNotifications</a>
@@ -273,15 +282,16 @@ $(function() {
 <li>operator delete()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_packet.html#a9fc1f19717769ad16299cbdc973e4321">AZ::RHI::DrawPacket</a>
 </li>
-<li>operator()()
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_object_deleter.html#ae6af27fdb1af0cb7e4d2a1fd327d99fd">AZ::RHI::ObjectDeleter</a>
+<li>operator!=()
+: <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a00407489e52bf4b4c9c0043cbff88b2e">AZ::Render::MaterialAssignmentId</a>
 </li>
 <li>operator=()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#adeb9635e54039f40bfe41e81955d9134">AZ::RPI::MaterialPropertyValue</a>
 , <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html#af5aa2270d4eb3e65d5ee02a14b84eaae">AZ::StableDynamicArrayHandle&lt; ValueType &gt;</a>
 </li>
 <li>operator==()
-: <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html#ae49883317152ab3ca6c24304c2c63a9e">AZ::RHI::ImageSubresourceRange</a>
+: <a class="el" href="struct_a_z_1_1_render_1_1_material_assignment_id.html#a1011a57914d738f624a562115de4bbe8">AZ::Render::MaterialAssignmentId</a>
+, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_range.html#ae49883317152ab3ca6c24304c2c63a9e">AZ::RHI::ImageSubresourceRange</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value.html#a576e818694cdb6dc45edc8a68151ffff">AZ::RPI::MaterialPropertyValue</a>
 </li>
 <li>Orphan()
@@ -297,7 +307,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:18 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun Jun 13 2021 13:21:36 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
