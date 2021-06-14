@@ -1,5 +1,5 @@
 ---
-title: Welcome to Open 3D Engine Documentation
+title: O3DE Documentation
 description: Landing page for the open-source Open 3D Engine (O3DE) documentation.
 toc: true
 layout: docs_landing
