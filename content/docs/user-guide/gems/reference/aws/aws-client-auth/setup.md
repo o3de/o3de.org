@@ -24,17 +24,17 @@ See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core
 Complete the following set up steps to use the AWS Client Auth Gem in your project:
 
 * Enable the AWS Client Auth Gem in your project.
-* Set project level settings.
+* Configure project-level settings.
 * Deploy the CDK application.
 * Update the resource mapping file to use the deployed AWS resources.
 
-### Enabling the AWS Client Auth Gem in your project
+### Enabling the AWS Client Auth Gem
 
 If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./_index.md#enabling-the-aws-client-auth-gem).
 
-### Setting project level settings
+### Configuring project settings
 
-The `AuthenticationProvider.setreg` registry file defines the third-party OAuth authentication provider settings.
+The `AuthenticationProvider.setreg` registry file defines the third-party OAuth authentication provider settings. This file is located in the project's registry directory: `<ProjectName>\Registry`.
 
 These settings and those in the resource mapping file are read once during activation of `AWSClientAuthSystemComponent`.
 

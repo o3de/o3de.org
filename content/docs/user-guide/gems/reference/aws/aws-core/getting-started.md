@@ -21,23 +21,23 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 1. **Build** your O3DE project with the AWS Core Gem (and other AWS Gems you need) enabled.
 
-1. **Deploy the CDK applications(s)** for the Gems. See [Deploying the CDK Application](./cdk-application.md) for instructions.
+1. Deploy the **CDK applications** for the AWS Gems you have enabled. See [Deploying the CDK Application](./cdk-application.md) for instructions.
 
-1. Build a [resource mapping file](./resource-mapping-file.md) using the [Resource Mapping Tool](./resource-mapping-tool.md).
+1. Configure a [resource mapping file](./resource-mapping-file.md) using the [Resource Mapping Tool](./resource-mapping-tool.md).
 
-1. Associate the resource mapping file with the project. See [Project Level Settings](#project-level-settings).
+1. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
 
 You should now be able to utilize AWS functions in Lua script, Script Canvas, or C++ to communicate with your AWS resources. See [Scripting with AWS Core](./scripting.md) for scripting examples.
 
-## Project level settings
+## Project settings
 
-On start up the AWS Core Gem will look for the `awscoreconfiguration.setreg` file in the current project's registry directory: `<ProjectName>\Registry`.
+On start up the AWS Core Gem will look for the `awscoreconfiguration.setreg` file in the project's registry directory: `<ProjectName>\Registry`.
 
 In this file you can set the following options:
 
 | Setting | Description |
 | --- | --- |
-| **ProfileName** | \[Optional\] The project will use **default** profile in `./aws/credential`. Override the **default** profile or any environment variable setting by using this variable. Must be a named profile in your `./aws/credential` file. |
+| **ProfileName** | \[Optional\] The project will use your **default** profile in `./aws/credentials` (on macOS and Linux) or `%USERPROFILE%\.aws\credentials` (on Windows). Override the **default** profile or any environment variable setting by using this variable. Must be a named profile in your `credentials` file. |
 | **ResourceMappingConfigFileName** | \[Optional\] The name of the resource mapping file to load while starting up. Resource mapping files are expected to be located in `<ProjectName>\Config`. See [Resource Mapping Files](./resource-mapping-files.md) for more information. |
 
 {{< note >}}

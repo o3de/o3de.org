@@ -33,6 +33,4 @@ Use standard EBus notification handlers for capturing OnSendMetricsSuccess and O
 
 ## C++ API Reference
 
-For a complete reference to the AWS Metrics C++ API, see the O3DE C++ API Reference Guide.
-
-TODO: Add link.
+See the O3DE API Reference Guide for a complete reference to the [AWS Metrics C++ API](/docs/api/gems/awsmetrics).
