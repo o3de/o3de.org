@@ -28,15 +28,15 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 ## PhysX Gems {#physx-intro-gems}
 
 The PhysX system uses the following gems, which you can [enable](/docs/userguide/gems/using-project-configurator.md) in the Project Configurator:
-+ **[PhysX](/docs/user-guide/gems/physx.md)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into O3DE\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\.
++ **[PhysX](/docs/user-guide/gems/reference/physx/)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into O3DE\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\.
 
-  For more information, see [PhysX](/docs/user-guide/gems/physx.md)\.
-+ **[PhysX Characters](/docs/user-guide/gems/physx-characters.md)** - Provides integration for character controllers and ragdolls\. To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/user-guide/gems/physx.md) gem\.
+  For more information, see [PhysX](/docs/user-guide/gems/reference/physx/)\.
++ **[PhysX Characters](/docs/user-guide/gems/reference/physx-characters/)** - Provides integration for character controllers and ragdolls\. To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/user-guide/gems/reference/physx/) gem\.
 
-  For more information, see [PhysX Characters](/docs/user-guide/gems/physx-characters.md)\.
-+ **[PhysX Debug](/docs/user-guide/gems/physx-debug.md)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools\.
+  For more information, see [PhysX Characters](/docs/user-guide/gems/reference/physx-characters/)\.
++ **[PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools\.
 
-  For more information, see [PhysX Debug](/docs/user-guide/gems/physx-debug.md)\.
+  For more information, see [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)\.
 
 ## PhysX Components {#physx-intro-physx-components}
 
@@ -67,7 +67,7 @@ For more information, see [Physics materials](/docs/user-guide/interactivity/phy
 To verify the implementation of interactions in the simulated world, the following tools are available\.
 + **PhysX Debug gem** - The PhysX Debug gem is recommended if you are a developer or technical artist\. You can use this tool to view the physics world in real time in O3DE Editor's editor mode or game mode\. To activate the tool, you use console commands or an immediate mode graphical user interface \(ImGui\)\. The tool displays PhysX debug lines within the editor and game modes\.
 
-  For more information, see [PhysX Debug](/docs/user-guide/gems/physx-debug.md)\.
+  For more information, see [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)\.
 + **PhysX Visual Debugger** - The [PhysX Visual Debugger \(PVD\)](https://developer.nvidia.com/physx-visual-debugger) is a third party tool provided by NVIDIA that is useful for deep inspection of the PhysX world\. O3DE can connect PhysX worlds and scenes to a running PVD application instance\. You can use the PVD to step through your simulation and examine various properties at your own pace in detail\.
 
   For information on configuring O3DE's connection to PVD, see [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
