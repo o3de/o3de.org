@@ -8,6 +8,7 @@ LyTestTools are tools designed to simplify writing and debugging tests that acro
 The LyTestTools are located in `Tools/LyTestTools`.
 
 ## Topics
+
 + [Getting Started](/docs/user-guide/testing/lytesttools/getting-started)
 + [My First Test](/docs/user-guide/testing/lytesttools/my-first-test)
 + [Extending LyTestTools](/docs/user-guide/testing/lytesttools/extending-lytesttools)
