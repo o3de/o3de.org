@@ -300,3 +300,6 @@ Number of iterations to average the delta time factor used for gravity and exter
 
 **Remove static triangles**
 Enable to remove triangles composed of static cloth particles\. Enabling this property improves performance, however the removed static cloth particles will not be present for collision and self collision calculations\.
+
+**Update normals of static particles**
+When enabled the normals of static particles will be updated according with the movement of the simulated mesh\. When disabled the static particles will keep the same normals as the original mesh\.

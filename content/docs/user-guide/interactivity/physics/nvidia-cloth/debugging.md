@@ -39,3 +39,9 @@ Draw the cloth motion constraints\.
 Draw the cloth backstop\.
 **0**: Disable backstop display\.
 **1**: Enable backstop display\.
+
+**`cloth_DistanceToTeleport <meters>`**
+The amount of meters the entity has to move in a frame to consider it a teleport for cloth\.
+
+**`cloth_SecondsToDelaySimulationOnActorSpawned <seconds>`**
+The amount of time in seconds the cloth simulation will be delayed to avoid sudden impulses when actors are spawned\.
