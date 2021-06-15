@@ -23,9 +23,6 @@ The NVIDIA Cloth gem provides the following:
 
 To enable the NVIDIA Cloth gem, do the following:
 
-**Note**
-By default, NVIDIA Cloth simulation is performed on the CPU\. To enable GPU accelerated simulation for NVIDIA Cloth, follow the installation instructions here: [GPU cloth simulation with NVIDIA CUDA](/docs/user-guide/interactivity/physics/nvidia-cloth/gpu.md)
-
 1. Use [Project Configurator](/docs/userguide/configurator/projects.md) to add the **NVIDIA Cloth** gem to your project\. The **NVIDIA Cloth** gem requires the following gems as dependencies:
    + **LmbrCentral**
    + **Emotion FX Animation**
