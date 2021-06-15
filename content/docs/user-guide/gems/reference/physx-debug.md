@@ -24,6 +24,6 @@ This gem includes the following features:
 **Note**
 This feature is similar to the legacy `p_draw_helpers=1` console variable\.
 
-To enable the PhysX Debug gem, you must first enable the [PhysX](/docs/user-guide/gems/physx.md) and ImGui gems\.
+To enable the PhysX Debug gem, you must first enable the [PhysX](/docs/user-guide/gems/reference/physx/) and ImGui gems\.
 
 For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md)\.
