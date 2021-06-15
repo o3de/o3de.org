@@ -47,7 +47,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
    1. Click the button beside the **Mesh node** property to open the **FBX Settings** window\.
 ![\[Open 3D Engine cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select.png)
 
-   1. In the **FBX Settings** window, on the **Actors** tab, and choose **Add Modifier**, **Cloth**\.
+   1. In the **FBX Settings** window, on the **Meshes** tab, and choose **Add Modifier**, **Cloth**\.
 
    1. In the **Cloth** modifier area:
 
