@@ -1,19 +1,19 @@
 ---
 title: Light component
 linktitle: Light
-description: ' Open 3D Engine (O3DE) Area Light component reference. '
+description: ' Open 3D Engine (O3DE) Light component reference. '
 weight: 100
 toc: true
 ---
 
 {{< preview-new >}}
-The **Light** component simulates soft studio light by allowing creation of various types of punctual and area lights. The types of lights available are Point (sphere), Point (simple punctual), Spot (disk), Spot (simple punctual), Capsule, Quad, and Polygon. 
-- Point (sphere), Spot (disk), Capsule, Quad, and Polygon are area lights. They most accurately simulate real world light sources.
-- Point (simple punctual) and Spot (simple punctual) are punctual lights, which are infinitesimally small lights. They are slightly more performant than their area light counterparts, but produce simpler light effects.
+The **Light** component simulates soft studio light by allowing the creation of various types of punctual and area lights. The types of lights available are Point (sphere), Point (simple punctual), Spot (disk), Spot (simple punctual), Capsule, Quad, and Polygon. 
+- Point (sphere), Spot (disk), Capsule, Quad, and Polygon are area lights. They most accurately simulate real-world light sources.
+- Point (simple punctual) and Spot (simple punctual) are punctual lights, which are infinitesimally small. They are slightly more performant than their area light counterparts, but they produce simpler light effects.
 - Point (sphere) and Spot (disk) light types support shadow effects.
 - Quad and Polygon light types can emit light from one or both directions. 
 - Quad light type optionally supports fast approximation, which produces a more efficient but lower quality light effect. 
-- Polygon light type can be significantly more expensive as the points in the polygon shape increases.
+- Polygon light type becomes more expensive as the number of points in the polygon increases.
 
 
 
@@ -86,9 +86,9 @@ The **Light** component simulates soft studio light by allowing creation of vari
 | Property | Description | Values | Default |
 |-|-|-|-|
 |**Light Type** | Specify the type of light. The properties vary for each light type.  | `Point (Sphere)`, `Point (Simple)`, `Spot (Disk)`, `Spot (Simple)`, `Capsule`, `Quad`, `Polygon` | - |
-| **Color** | The color of the light. Color acts as a gel on a pure white light and reduces the total energy output of the light for any color other than pure white. For example, a 100 `Lumens` area light with a color setting of medium grey (18%) will only output 18 lumens of light. | Eight bits per channel color: `0` to `255` | `255,255,255` |
-| **Intensity Mode** | The photometric unit of the light. `Candela` and `Lumens` specify the total amount of light energy that is emitted from the entire surface area of the shape. If `Candela` or `Lumens` is selected as the Intensity Mode, and Intensity is specified as 100.0, the larger the provided shape component, the dimmer the light will appear because the total light energy is spread over a larger surface area. `Nit` represents light energy as Candelas per square meter. `Ev100` represents light energy as an exposure value over an area. `Ev100` values are exponential, so a value of 5.0 `Ev100` will be twice as bright as a value of 4.0 `Ev100`. With `Nit` and `Ev100`, the larger the shape, the brighter the light, because the total light energy increases with the shape's surface area. | `Candela`, `Lumens`, `Nit`, `Ev100` | `Lumens` |
-| **Intensity** | The light energy output or brightness of the light in the selected photometric units that is provided by the Intensity Mode property. | `0` to `1e+06` | `100` |
+| **Color** | The color of the light. Color acts as a gel on a pure white light and reduces the total energy output of the light for any color other than pure white. For example, a 100 `Lumen` area light with a color setting of medium grey (18%) will only output 18 lumens of light. | Eight bits per channel color: `0` to `255` | `255,255,255` |
+| **Intensity Mode** | The photometric unit of the light. `Candela` and `Lumen` specify the total amount of light energy that is emitted from the entire surface area of the shape. If `Candela` or `Lumen` is selected as the Intensity Mode, and Intensity is specified as 100.0, the larger the provided shape component, the dimmer the light will appear because the total light energy is spread over a larger surface area. `Nit` represents light energy as Candelas per square meter. `Ev100` represents light energy as an exposure value over an area. `Ev100` values are exponential, so a value of 5.0 `Ev100` will be twice as bright as a value of 4.0 `Ev100`. With `Nit` and `Ev100`, the larger the shape, the brighter the light, because the total light energy increases with the shape's surface area. | `Candela`, `Lumen`, `Nit`, `Ev100` | `Lumen` |
+| **Intensity** | The light energy output or brightness of the light in the selected photometric units that is provided by the Intensity Mode property. | EV100: `-10` to `20` <br><br> Candela, Lumen, Nit: `0` to `1,000,000`| `100` |
 | **Attenuation Radius** | Refer to [Attenuation Radius properties](#attenuation-radius-properties) below. | Boolean | `Disabled` |
 | **Shadows** | Refer to [Shadows properties](#shadows-properties) below. | Boolean | `Disabled` |
 | **Shutters** | Refer to [Shutters properties](#shutters-properties) below. | Boolean | `Disabled` |
@@ -123,13 +123,13 @@ Shutter properties are only available for Spot (disk) and Spot (simple punctual)
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Enable Shutters** | Enable shutters to constrain the light to a cone-shape. <br> <br>*This field is only available for Spot (simple) light type.* | Boolean | `Disabled` |
-| **Inner Angle** | Set the inner cone angles in degrees. | `0.0` to `180.0` degrees (angles) | `35.0` |
-| **Outer Angle** | Set the outer cone angles in degrees. | `0.0` to `180.0` degrees (angles) | `45.0` |
+| **Inner Angle** | Set the inner cone angles in degrees. | `0.5` to `90.0` degrees (angles) | `35.0` |
+| **Outer Angle** | Set the outer cone angles in degrees. | `0.5` to `90.0` degrees (angles) | `45.0` |
 
 
 ## Notes
 - For shadow effects, the properties and filter methods have varying impacts on performance and quality. The best compromise between performance and quality is to use PCF with the bicubic method.
 
-- A shadowmap size of 512 produces a balanced result between quality and performance. 256 produces lower quality shadows. 1024 and 2048 produces excellent quality but is less efficient.
+- A shadowmap size of 512 produces a balanced result between quality and performance. 256 produces lower quality shadows. 1024 and 2048 produces excellent quality but is more expensive.
   
 - When editing Light components, enable **Debug Helpers** in the **Viewport** to see the shape and direction of the light. 
