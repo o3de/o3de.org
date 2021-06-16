@@ -106,7 +106,7 @@ The following errors occur using RHI with Vulkan on Android platforms:
 * V-HACD Mesh Decomposition:
     * Mesh decomposition is only available if the export type is selected as Convex or Primitive.
     * The actual results achieved by the decomposition depend mostly on the V-HACD library and are out of our control.
-* Importing from FBX:
+* Importing from FBX as Primitive with automatic **Target Shape**:
     * Almost any FBX mesh will be exportable, but the accuracy of the result will depend on how close the mesh is to one of the supported primitives.
     * Lumberyard will attempt to fix one primitive for each node selected for export. It will not recognize multiple primitive shapes contained within the same node.
     * The algorithm considers only the vertices of the mesh, not edges/faces. Apart from some edge cases, this is usually sufficient, but the user may need to configure the export parameters correctly before a desirable result is obtained.
