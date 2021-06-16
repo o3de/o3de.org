@@ -24,4 +24,6 @@ Open 3D Engine ships with a sample test that demonstrates the use of `LyTestTool
 ```shell
 python -m pytest Tools/LyTestTools/tests/example/tests/test_system_example.py --build-directory <cmake-build-directory>
 
-Visit [PyTest framework](https://docs.pytest.org/en/latest/) for further information about the framework and how it helps in writing tests.
+## More Information
+
+* [PyTest framework](https://docs.pytest.org/) - Information about the framework used by LyTestTools and how it helps with writing tests.
