@@ -58,7 +58,7 @@ For more information, see [Configuring the PhysX System](/docs/user-guide/intera
 
 ## PhysX Materials {#physx-intro-materials}
 
-PhysX materials allow simulation properties to be configured by entity\. Materials customize how an object reacts when it hits a surface and control qualities like friction and bounciness\. You use the **Asset Editor** to create a material library, assign the library to a collider, and then select a specific material from the library for the collider\.
+PhysX materials allow simulation properties to be configured by entity\. Materials customize how an object reacts when it hits a surface and control qualities like friction and bounciness\. You use the **Asset Editor** to create a material library, assign the library in PhysX Configuration, and then select a specific material from the library for the collider\.
 
 For more information, see [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials.md)\.
 

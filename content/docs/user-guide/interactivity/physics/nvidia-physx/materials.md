@@ -7,24 +7,20 @@ weight: 200
 
 {{< preview-migrated >}}
 
-Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution \(bounce\)\. In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**\. One library can store all the physics materials for a project or separate libraries can be made for different physics material types\.
-
-**Tip**
-Having one library makes it easier to see all the physics materials and their properties in a project\.
+Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution \(bounce\)\. In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**\. One library stores all the physics materials for a project\.
 
 **Topics**
 + [Physics material properties](#physics-material-properties)
 + [Create a physics material](#create-a-physics-material)
 + [Assign a physics material library](#assign-a-physics-material-library)
 + [Assign a physics material](#Assign-a-physics-material-collider)
-+ [Assign physics materials per face](#assign-physics-materials-per-face)
-+ [**Terrain physics materials**](#terrain-physics-materials)
+  + [Assign physics materials per face](#assign-physics-materials-per-face)
 
 ## Physics material properties {#physics-material-properties}
 
 ![\[Physics material interface.\]](/images/user-guide/physx/physx/ui-physx-material-A.png)
 
-****Surface Type****
+****Name****
 Name of the physics material\.
 
 ****Dynamic Friction****
@@ -54,6 +50,9 @@ Define how physics material restitutions are combined between PhysX colliders wh
 **Maximum**: The larger of the values of the materials in contact\.
 **Multiply**: The product of the values of the materials in contact\.
 
+****Density****
+Define the degree of compactness of a material\.
+
 ****Debug Color****
 The display color of the physics material in debug view\.
 
@@ -78,7 +77,7 @@ Physics materials define the physical properties of PhysX colliders\. To create 
 1. Create a physics material in the library by clicking the **\+** on the right\.
 ![\[Create a physics material library in the Asset Editor.\]](/images/user-guide/physx/physx/ui-physx-material-C.png)
 
-1. Name the physics material by editing the **Surface Type** property\. Set the material properties as desired\.
+1. Name the physics material by editing the **Name** property\. Set the material properties as desired\.
 **Note**
 You can add additional physics materials to the library by repeating the preceding two steps\.
 
@@ -86,50 +85,33 @@ You can add additional physics materials to the library by repeating the precedi
 
 ## Assign a physics material library {#assign-a-physics-material-library}
 
-Physics materials can be assigned to entire PhysX colliders, or on a per\-face basis if the PhysX mesh is a triangle mesh\. To assign a material, you first assign the library containing the desired physics material\.
+Your project has the physics material library set in **PhysX Configuration**\. To change the physics material library, choose **PhysX Configuration** from the **Tools** menu\. In the **Global Configuration** tab, click the button to the right of **Physics Material Library** to change the library\.
+![\[PhysX Configuration, physics material library.\]](/images/user-guide/physx/physx/ui-physx-material-D.png)
 
-**To assign a physics material library**
+PhysX collider components use the physics material library that is assigned to PhysX Configuration\.
 
-1. Your project has a default physics material library\. When new PhysX collider components are added to entities, the default physics material library is assigned to the collider\. To change the default physics material library, choose **PhysX Configuration** from the **Tools** menu\. In the **Global Configuration** tab, click the **\.\.\.** button to the right of **Default Physics Material Library** to change the default library\.
-![\[PhysX Configuration, default physics material library.\]](/images/user-guide/physx/physx/ui-physx-material-D.png)
-**Note**
-The default physics material library cannot be removed\. If the default physics material library is deleted or invalid, a new library named `SurfaceTypeMaterialLibrary` is created automatically when the editor is opened\.
+You can specify the paremeter of the **Default Physics Material** in **PhysX Configuration**, which is the default option used before physics materials are assigned in PhysX collider components\.
 
-1. Newly added **PhysX Collider** components have the default physics material library assigned\. A default physics material library assignment appears in gray text in the component properties\. To change the physics material library assigned to a collider, click the **\.\.\.** button to the right of **Physics Material \- Library** in the **PhysX Collider** component properties\. To reset to the default physics material library, click the **x** button to the right of **Physics Material \- Library** in the **PhysX Collider** component properties\.
-![\[PhysX Collider, setting the physics material library.\]](/images/user-guide/physx/physx/ui-physx-material-E.png)
-**Note**
-Use this method to set the physics material library on any component that has a **Physics Material \- Library** property, including **PhysX Collider**, **PhysX Ragdoll**, **PhysX Character Controller**, and **Terrain Texture Layers**\.
+![\[PhysX Configuration, default physics material.\]](/images/user-guide/physx/physx/ui-physx-material-E.png)
 
 ## Assign a physics material {#Assign-a-physics-material-collider}
 
-When the **Physics Asset** shape is selected, and **Physics Materials from Mesh** is enabled, the physics material for this collider is automatically set based on the surface type in the mesh's material\. To manually set the physics material, uncheck the **Physics Materials from Mesh** property and select the physics material from the **Mesh Surfaces \- Entire object** property list to assign it\.
+Physics materials can be assigned to entire PhysX colliders, or on a per\-face basis if the PhysX mesh is a triangle mesh\.
 
-![\[PhysX Collider, setting the physics material.\]](/images/user-guide/physx/physx/ui-physx-material-F.png)
+When the **Physics Asset** shape is selected in **PhysX Collider** component, and the **Physics Materials from Asset** property is enabled, the physics materials for this collider is automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/))\. To manually set the physics materials, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it\.
 
-**Warning**
-There is a known issue where switching physics material libraries between colliders such as **Ragdoll PhysX** components will not update the physics material list to the newly assigned physics material library\. To update the physics material list, click on another collider, then back on the initial collider\.
+![\[PhysX Collider, setting the physics materials.\]](/images/user-guide/physx/physx/ui-physx-material-F.png)
 
-## Assign physics materials per face {#assign-physics-materials-per-face}
+### Assign physics materials per face {#assign-physics-materials-per-face}
 
-Static entities that have PhysX collider triangle mesh assets can have physics materials assigned per face\. You define physics material placement by assigning placeholder materials to the faces of the triangle collision mesh in a content creation application\. The names of placeholder materials become physics material properties of the collider component\.
+Static entities that have PhysX triangle mesh assets can have physics materials assigned per face\. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application\. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material\.
 
-For more information on creating PhysX collider mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md)\.
+For more information on creating PhysX mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md)\.
 
-**Note**
-You can use the names of the placeholder materials to automate material assignment in O3DE by using an `_` in the placeholder material name\. The FBX exporter parses placeholder material names found on PhysX collider mesh assets as `PropertyName_PhysicsMaterialName`\.
-A placeholder material named `Road` creates a physics material property named **Road** on the collider component under **Mesh Surfaces**\.
-A placeholder material named `Road_Dirt` creates a physics material property named **Road** and attempts to assign the physics material named **Dirt** to the **Road** property, assuming that the assigned physics material library contains a physics material named **Dirt**\.
-
-In the example below, the PhysX collider mesh asset has two placeholder materials, *Mud* and *Grass*\. The FBX exporter creates physics material properties using the placeholder material names, and corresponding physics materials are assigned from the physics material library\.
+In the example below, the PhysX mesh asset was authored with six materials in the content creation application: *Yellow*, *Red*, *Blue*, *Teal*, *Green* and *Orange*\. In FBX Settings, under PhysX tab, a physics material can be assigned to each material.
 
 ![\[PhysX Collider, per face physics materials.\]](/images/user-guide/physx/physx/ui-physx-material-G.png)
 
-## **Terrain physics materials** {#terrain-physics-materials}
+In PhysX Component, when **Physics Materials from Asset** property is disabled, a physics material can be manually assigned to each material. When **Physics Materials from Asset** property is enabled the physics materials assigned in FBX Settings will be used automatically\.
 
-Terrain is assigned the default physics material\. Use the **[Terrain Texture Layers](/docs/userguide/terrain/texture-layers-intro.md)** editor to assign materials to different surface types\.
-
-![\[Surface ID and Material Library properties in the Terrain Editor.\]](/images/user-guide/physx/physx/ui-physx-material-H.png)
-
-**Note**
-To add terrain physics materials, you must have a **[PhysX Terrain](/docs/user-guide/components/physx-terrain.md)** component in your scene\.
-To ensure that the engine generates a unique surface ID that can be assigned with the physics material, you must change the layer's material\. If multiple layers share the same surface ID, they must have the same physics material assigned\.
+![\[PhysX Collider, per face physics materials.\]](/images/user-guide/physx/physx/ui-physx-material-H.png)
