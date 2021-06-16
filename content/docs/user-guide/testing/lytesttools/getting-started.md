@@ -19,9 +19,9 @@ Once you have the prerequisites finished, you should have everything for testing
 ```shell
 ~/python/python -m pytest <path_to_test_file> --build-directory <path_to_build_output>
 
-When your tools are ready, configured, and working, proceed to the next guide appropriate for you:
+Open 3D Engine ships with a sample test that demonstrates the use of `LyTestTools`, located in the `Tools/LyTestTools/tests/example/tests/test_system_example.py` file. After compiling O3DE, you can run the sample test against your build output with the following command (run from your O3DE directory):
 
- * [LyTestTools - My First Test](/docs/user-guide/testing/lytesttools/my-first-test) to learn how to create your first tests with LyTestTools
- * Ctest - Running tests
+```shell
+python -m pytest Tools/LyTestTools/tests/example/tests/test_system_example.py --build-directory <cmake-build-directory>
 
 Visit [PyTest framework](https://docs.pytest.org/en/latest/) for further information about the framework and how it helps in writing tests.
