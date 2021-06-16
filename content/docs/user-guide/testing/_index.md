@@ -10,9 +10,13 @@ Test automation is the process of writing small snippets of code (tests) to veri
 Contributors to the O3DE Project are required to write tests for their features, following the standards set by the [Open 3D Foundation Testing Special Interest Group](https://github.com/o3de/sig-testing). If you plan to contribute, make sure that you're familiar with project test standards as well as the frameworks.
 {{< /important >}} 
 
-[**Test Runners**](/docs/user-guide/testing/test-runners)
+## Test Runners
 
-Test runners collect tests, execute them and collate their results. We currently have three test runners in O3DE. GoogleTest, PyTest, and GoogleBenchmark.
+O3DE uses standard test runners to collect, execute, and gather results. The officially supported test runners are:
+
+* [GoogleTest](https://github.com/google/googletest)
+* [GoogleBenchmark](https://github.com/google/benchmark)
+* [PyTest](https://docs.pytest.org)
 
 [**Tools Packages**](/docs/user-guide/testing/tools-packages)
 
