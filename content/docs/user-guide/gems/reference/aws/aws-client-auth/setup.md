@@ -23,16 +23,16 @@ See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core
 
 Complete the following set up steps to use the AWS Client Auth Gem in your project:
 
-1. Enable the AWS Client Auth Gem in your project.
-1. Configure project-level settings.
-1. Deploy the CDK application.
-1. Update the resource mapping file to use the deployed AWS resources.
+* Enable the AWS Client Auth Gem in your project.
+* Configure project settings.
+* Deploy the CDK application.
+* Update the resource mapping file to use the deployed AWS resources.
 
-### Enabling the AWS Client Auth Gem
+### 1. Enable the AWS Client Auth Gem
 
 If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./_index.md#enabling-the-aws-client-auth-gem).
 
-### Configuring project settings
+### 2. Configure project settings
 
 The `AuthenticationProvider.setreg` registry file defines the third-party OAuth authentication provider settings. This file is located in the project's registry directory: `<ProjectName>\Registry`.
 
@@ -73,7 +73,7 @@ Example `AuthenticationProvider.setreg` file:
     }
     ```
 
-### Deploying the CDK application
+### 3. Deploy the CDK application
 
 The AWS Client Auth Gem requires AWS resources to be deployed for authentication and authorization support. For instructions on how to deploy the CDK application, see the deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
@@ -113,9 +113,9 @@ Create identity pool to support authenticated and anonymous identities.
 2. **Google**: Use Google authentication provider for authentication.
 3. **Login With Amazon**: Use LWA authentication provider for authentication.
 
-### Using deployed AWS resources
+### 4. Update the resource mapping file
 
-After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information.
+After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information so that you can use the deployed AWS resources.
 
 Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the following information to your project's resource mapping file:
 

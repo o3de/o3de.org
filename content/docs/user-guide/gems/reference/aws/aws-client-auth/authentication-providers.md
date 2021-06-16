@@ -15,7 +15,7 @@ The AWS Client Auth Gem supports several third-party and custom authentication p
 
 1. Make note of the **App ID** and **App secret** for device type flow.
 
-1. Add the **App ID** and **App secret** to your project's authentication provider registry settings in `AuthenticationProvider.setreg`. For details about this file, see [Configuring Project Settings](./setup.md#configuring-project-settings) in the set up instructions.
+1. Add the **App ID** and **App secret** to your project's authentication provider registry settings in `AuthenticationProvider.setreg`. For details about this file, see [Configure Project Settings](./setup.md#2-configure-project-settings) in the set up instructions.
 
 1. Update the third-party authentication provider in the CDK constants.
 

@@ -27,11 +27,11 @@ Complete the following set up steps to use the AWS Metrics Gem in your project:
 * Deploy the CDK application.
 * Update the resource mapping file to use the deployed AWS resources.
 
-### Enabling the AWS Metrics Gem in your project
+### 1. Enable the AWS Metrics Gem in your project
 
 If you haven't already added and built the **AWS Metrics Gem** in your project, do so now using the instructions in [Enabling the AWS Metrics Gem](./_index.md#enabling-the-aws-metrics-gem).
 
-### Deploying the CDK application
+### 2. Deploy the CDK application
 
 Deploy the sample CDK application to build the AWS-backed analytics pipeline shown in the following diagram.
 
@@ -41,9 +41,9 @@ The pipeline will mainly focus on two uses cases: hot/near-real-time for operati
 
 For instructions on how to deploy the CDK application, see the deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
-### Using deployed AWS resources
+### 3. Update the resource mapping file
 
-After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information.
+After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information so that you can use the deployed AWS resources.
 
 Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the `RESTApiStage` and `RESTApiId` information to your project's resource mapping file. The new sections will be similar to the following example.
 
