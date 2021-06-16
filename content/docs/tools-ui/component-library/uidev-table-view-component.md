@@ -66,8 +66,8 @@ logModel->AppendLine(
 
 ## C\+\+ API reference<a name="table-view-api-ref"></a>
 
-For details on the **table view** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::TableView](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_table_view.html)
+For details on the **table view** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::TableView](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_table_view.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QTreeView Class](https://doc.qt.io/qt-5/qtreeview.html)

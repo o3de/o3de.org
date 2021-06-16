@@ -52,8 +52,8 @@ toggleSwitch->setEnabled(false);
 
 ## C\+\+ API reference<a name="toggle-switch-api-ref"></a>
 
-For details on the **checkbox** API used to style a toggle switch, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::CheckBox](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_check_box.html)
+For details on the **checkbox** API used to style a toggle switch, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::CheckBox](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_check_box.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QCheckBox Class](https://doc.qt.io/qt-5/qcheckbox.html)

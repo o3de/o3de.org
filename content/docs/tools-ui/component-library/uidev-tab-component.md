@@ -69,9 +69,9 @@ tabWidget->addAction(action1);
 
 ## C\+\+ API reference<a name="tab-api-ref"></a>
 
-For details on the **tab** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::TabWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget.html)
-+  [AzQtComponents::TabWidgetActionToolBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_tab_widget_action_tool_bar.html)
+For details on the **tab** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::TabWidget](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tab_widget.html)
++  [AzQtComponents::TabWidgetActionToolBar](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tab_widget_action_tool_bar.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QTabBar Class](https://doc.qt.io/qt-5/qtabbar.html)

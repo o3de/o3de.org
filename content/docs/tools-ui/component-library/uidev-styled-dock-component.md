@@ -70,10 +70,10 @@ mainWindow->setCentralWidget(centralWidget);
 
 ## C\+\+ API reference<a name="styled-dock-api-ref"></a>
 
-For details on the **styled dock** API and other components related to fancy docking, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::StyledDockWidget](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_styled_dock_widget.html)
-+  [AzQtComponents::DockMainWindow](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_dock_main_window.html)
-+  [AzQtComponents::FancyDocking](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_fancy_docking.html)
+For details on the **styled dock** API and other components related to fancy docking, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::StyledDockWidget](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_styled_dock_widget.html)
++  [AzQtComponents::DockMainWindow](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_dock_main_window.html)
++  [AzQtComponents::FancyDocking](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_fancy_docking.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QDockWidget Class](https://doc.qt.io/qt-5/qdockwidget.html)
