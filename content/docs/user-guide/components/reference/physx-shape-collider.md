@@ -54,11 +54,11 @@ When enabled, this shape collider will be part of the physics simulation\.
 ****In Scene Queries****
 When enabled, this shape collider can be queried for raycasts, shapecasts and overlap\.
 
-****Physics Material \- Library****
-Set the physics material library for this shape collider\.
+****Library (Physics Materials)****
+The physics material library of the project\.
 
-****Physics Material \- Mesh Surfaces****
-Choose a material from the physics material library for this shape collider\.
+****Slot (Physics Materials)****
+Choose a physics material for this shape collider\.
 
 ****Tag****
 Set a tag for this shape collider\. Tags can be used to quickly identify components in script or code\.
