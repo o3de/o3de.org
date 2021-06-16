@@ -23,15 +23,22 @@ The AWS Client Auth Gem supports several third-party and custom authentication p
 
 To use a custom authentication provider with the AWS Client Auth Gem, you must have endpoints based on the OAuth 2.0/OIDC protocol. Use the following steps to enable your provider.
 
-1. Update the **Cognito Identity Pool** to support a custom login provider.
+1. Update the **Amazon Cognito identity pool** to support a custom login provider.
 
-    1. In the CDK application, constants.py add entry for the App Client Id for your authentication service.
-    1. Add above app id to supported_login_providers in cognito_identity_pool.py.
-    1. Synth and deploy AWSClientAuth stack.
+    a. In the CDK application, in the file `constants.py`, add an entry for the App Client ID for your authentication service.
+
+    b. Add the same App Client ID to `supported_login_providers` in `cognito_identity_pool.py`.
+
+    c. Synth and deploy the AWS Client Auth stack. For help with these commands, see [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core Gem documentation.
 
 1. Implement your C++ custom provider.
 
-    1. Add a new enum value to ProviderNameEnum in AuthenticationTokens.h.
-    1. Implement new custom provider inheriting from AuthenticationProviderInterface.
-    1. In AuthenticationManager CreateAuthenticationProviderObject method, add support for above.
-    1. Authorization will work if Cognito setting above is setup correctly.
+    a. Add a new enum value to `ProviderNameEnum` in `AuthenticationTokens.h`.
+
+    b. Implement a new custom provider inheriting from `AuthenticationProviderInterface`.
+
+    c. In the `AuthenticationProviderManager::CreateAuthenticationProviderObject` method, add support for the above.
+
+    d. Authorization will work if the Amazon Cognito setting above is setup correctly.
+
+Refer to the [AWS Client Auth](/docs/api/gems/awsclientauth) API Reference for more information.

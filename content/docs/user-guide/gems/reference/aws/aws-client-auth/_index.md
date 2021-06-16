@@ -7,9 +7,15 @@ toc: true
 
 {{< preview-new >}}
 
-AWS Client Auth Gem enables users to access AWS services using authenticated or anonymous users. It provides authentication for following identity providers Cognito User pool, Login With Amazon and Google. Auth Gem gets AWS credentials from Cognito Identity pool based on the current authenticated login status. If a successful login is found, authenticated AWS credentials are fetched else anonymous AWS credentials will be fetched.
+The AWS Client Auth Gem enables authenticated or anonymous users to access AWS services. It provides authentication options using any of these supported identity providers:
 
-AWS credentials have shared ownership with AWS native SDK client objects. They are refreshed or updated appropriately whenever a new user signs in or sign out or refreshes tokens.
+* Amazon Cognito user pool
+* Google
+* Login With Amazon
+
+The Gem gets AWS credentials from the Amazon Cognito identity pool based on the current authenticated login status. If a successful login is found, authenticated AWS credentials are fetched. Otherwise, anonymous AWS credentials are fetched.
+
+AWS credentials have shared ownership with AWS native SDK client objects. They are refreshed or updated whenever a new user signs in, signs out, or refreshes tokens.
 
 If multiple sign-in's are found, `GetCredentials` will link those identities together and you will get the same identity going forward regardless of the what authentication provider is used.
 
@@ -17,17 +23,17 @@ If multiple sign-in's are found, `GetCredentials` will link those identities tog
 
 This Gem has the following key features:
 
-* User management on Cognito user pool users.
+* User management on Amazon Cognito user pool users.
 
-  * Email sign up
-  * Phone sign up
-  * Enable MFA
-  * Forgot Password
+  * Sign up with email confirmation.
+  * Sign up with phone confirmation.
+  * Enable multi-factor authentication (MFA).
+  * Handle forgotten password.
 
-* Ways to authenticate with various authentication providers.
+* Authentication methods for the supported authentication providers.
 
-  * Sign in using username and password in Cognito user pool (IDP).
-  * MFA sign in using OAuth password flow in Cognito user pool.
+  * Sign in using username and password in Amazon Cognito user pool (IDP).
+  * MFA sign in using OAuth password flow in Amazon Cognito user pool.
   * MFA sign in using OAuth device flow in Login with Amazon.
   * MFA sign in using OAuth device flow in Google.
   * Provider pattern to add implementations for custom authentication providers.
@@ -39,7 +45,7 @@ This Gem has the following key features:
   * Get anonymous credentials if no user signed in.
   * Auto refresh credentials using existing tokens.
   * Refresh credentials on refreshing authenticated tokens.
-  * Provide sharing of credentials with AWS Native SDK service clients using shared AWSCredentialsProvider object.
+  * Provide sharing of credentials with AWS Native SDK service clients using shared `AWSCredentialsProvider` object.
   * Invalidate credentials on sign out.
   * Link identities if multiple sign in found for different authentication providers.
 

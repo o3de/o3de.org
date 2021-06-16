@@ -23,10 +23,10 @@ See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core
 
 Complete the following set up steps to use the AWS Client Auth Gem in your project:
 
-* Enable the AWS Client Auth Gem in your project.
-* Configure project-level settings.
-* Deploy the CDK application.
-* Update the resource mapping file to use the deployed AWS resources.
+1. Enable the AWS Client Auth Gem in your project.
+1. Configure project-level settings.
+1. Deploy the CDK application.
+1. Update the resource mapping file to use the deployed AWS resources.
 
 ### Enabling the AWS Client Auth Gem
 
@@ -40,12 +40,12 @@ These settings and those in the resource mapping file are read once during activ
 
 | Setting | Description |
 | --- | --- |
-| **AppClientId** | Client id provided by the authentication provider on creating an account with them. |
-| **ClientSecret** | Client secret provided by the authentication provider on creating an account with them. Required only for Login With Amazon. |
-| **GrantType** | What type of grant is requested. [https://oauth.net/2/grant-types/](https://oauth.net/2/grant-types/) |
-| **ResponseType** | Required only for Login With Amazon. Same as grant type. |
-| **OAuthCodeURL** | Url to request cod for authentication. |
-| **OAuthTokensURL** | Url to confirm and get authenticated tokens on success. |
+| **AppClientId** | Client ID provided by the authentication provider upon creating an account. |
+| **ClientSecret** | Client secret provided by the authentication provider upon creating an account. Required only for **Login With Amazon**. |
+| **GrantType** | Type of grant requested. See [https://oauth.net/2/grant-types/](https://oauth.net/2/grant-types/). |
+| **ResponseType** | Required only for **Login With Amazon**. Same as grant type. |
+| **OAuthCodeURL** | URL to request code for authentication. |
+| **OAuthTokensURL** | URL to confirm and get authenticated tokens on success. |
 
 Example `AuthenticationProvider.setreg` file:
 
@@ -77,11 +77,11 @@ Example `AuthenticationProvider.setreg` file:
 
 The AWS Client Auth Gem requires AWS resources to be deployed for authentication and authorization support. For instructions on how to deploy the CDK application, see the deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
-When setting constants for deploy, the AWS Client Auth Gem includes the following additional optional values. If set, the CDK application will try to enable the authenticated provider authorization using the AWS Cognito Identity pool.
+When setting constants for deploy, the AWS Client Auth Gem includes the following additional optional values. If set, the CDK application will try to enable the authenticated provider authorization using the Amazon Cognito identity pool.
 
-**`GOOGLE_APP_CLIENT_ID`**: Google app client id to enable authenticated authorization in Cognito Identity pool. <https://docs.aws.amazon.com/cognito/latest/developerguide/google.html>
+**`GOOGLE_APP_CLIENT_ID`**: **Google** app client ID to enable Google-authenticated authorization in Amazon Cognito identity pool.
 
-**`LOGIN_WITH_AMAZON_APP_CLIENT_ID`**: Login with Amazon app client id to enable Google authenticated authorization in Cognito Identity pool. <https://docs.aws.amazon.com/cognito/latest/developerguide/amazon.html>
+**`LOGIN_WITH_AMAZON_APP_CLIENT_ID`**: **Login with Amazon** (LWA) app client ID to enable LWA-authenticated authorization in Amazon Cognito identity pool.
 
 You can use [deployment scripts](https://docs.aws.amazon.com/cdk/latest/guide/environments.html) to set these environment variables.
 
@@ -93,23 +93,23 @@ Groups all resources provisioned for AWS Client Auth Gem. Deleting stack will de
 
 #### IAM roles
 
-1. **CognitoUserPoolSMSRole**: Allows Cognito user pool to send sms for signup and MFA.
+1. **CognitoUserPoolSMSRole**: Allows Amazon Cognito user pool to send SMS messages for sign up and MFA.
 
 1. **Authenticated CognitoIdentityPoolRole**: Provides permission to authenticated clients by providing credentials associated with the managed policy attached to this role.
 
 1. **Anonymous CognitoIdentityPoolRole**: Provides permission to anonymous clients by providing credentials associated with the managed policy attached to this role.
 
-#### Cognito User pool
+#### Amazon Cognito user pool
 
-Create user pool with email/phone sign-up enabled, SMS_MFA enabled and optional.
+Create user pool with email/phone sign up enabled, SMS_MFA enabled and optional.
 
-#### Cognito Identity pool
+#### Amazon Cognito identity pool
 
 Create identity pool to support authenticated and anonymous identities.
 
 ##### Authenticated
 
-1. **Cognito User pool**: Use above created user pool for authentication.
+1. **Amazon Cognito user pool**: Use the created user pool for authentication.
 2. **Google**: Use Google authentication provider for authentication.
 3. **Login With Amazon**: Use LWA authentication provider for authentication.
 

@@ -12,11 +12,11 @@ The AWS Client Auth Gem provides a C++ API for making client authorization and u
 
 ## C++ API Reference
 
-The O3DE API Reference Guide has a complete reference to the [AWS Client Auth C++ API](/docs/api/gems/awsclientauth).
+The O3DE API Reference Guide has a complete reference to the [AWS Client Auth](/docs/api/gems/awsclientauth) C++ API.
 
-In particular, for AWS Cognito authorization requests, refer to the documentation for the [IAWSCognitoAuthorizationRequests](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_i_a_w_s_cognito_authorization_requests.html) interface and the [AWSCognitoAuthorizationNotifications](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_a_w_s_cognito_authorization_notifications.html) notification bus for handler functions.
+In particular, for Amazon Cognito authorization requests, refer to the documentation for the [IAWSCognitoAuthorizationRequests](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_i_a_w_s_cognito_authorization_requests.html) interface and the [AWSCognitoAuthorizationNotifications](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_a_w_s_cognito_authorization_notifications.html) notification bus for handler functions.
 
-For AWS Cognito user management requests, refer to the documentation for the [IAWSCognitoUserManagementRequests](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_i_a_w_s_cognito_user_management_requests.html) interface and the [AWSCognitoUserManagementNotifications](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html) notification bus for handler functions.
+For Amazon Cognito user management requests, refer to the documentation for the [IAWSCognitoUserManagementRequests](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_i_a_w_s_cognito_user_management_requests.html) interface and the [AWSCognitoUserManagementNotifications](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_a_w_s_cognito_user_management_notifications.html) notification bus for handler functions.
 
 For authentication requests using one of the supported authentication providers, refer to the documentation for the [AuthenticationProviderInterface](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html) interface and the [AuthenticationProviderNotifications](https://docs.o3de.org/docs/api/gems/awsclientauth/class_a_w_s_client_auth_1_1_authentication_provider_notifications.html) notification bus for handler functions.
 

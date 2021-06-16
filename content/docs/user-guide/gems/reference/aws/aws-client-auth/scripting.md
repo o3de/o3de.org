@@ -29,13 +29,13 @@ Output data pins:
 
 ![Scripting AWS Client Auth Initialize node](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-initialize.png)
 
-### Password sign in flow with Cognito
+### Password sign in flow with Amazon Cognito
 
-The following graph shows the flow for password sign in with the AWS Cognito user pool.
+The following graph shows the flow for password sign in with the Amazon Cognito user pool.
 
 Note the variables created for providers, tokens, and credentials.
 
-![Scripting password sign in with the AWS Cognito user pool](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-password-sign-in.png)
+![Scripting password sign in with the Amazon Cognito user pool](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-password-sign-in.png)
 
 ### LWA device sign in flow
 
