@@ -18,6 +18,18 @@ O3DE uses standard test runners to collect, execute, and gather results. The off
 * [GoogleBenchmark](https://github.com/google/benchmark)
 * [PyTest](https://docs.pytest.org)
 
-[**Tools Packages**](/docs/user-guide/testing/tools-packages)
+## Test Tools Packages
 
-Tools packages are collections of useful functions and files to help you write tests quicker, safer, and more consistently. We currently have several tools packages, including: AzTest, EditorPythonTestTools, and LyTestTools.
+Open 3D Engine (O3DE) offers several tools packages to make writing tests quicker, safer, and more consistent. Before you write tests, take time to familiarize yourself with the tools.
+
+### AzTest
+
+[AzTest](/docs/api/frameworks/aztest/) is a collection of abstractions, functions, and wrappers to make writing C++ tests easier.
+
+### EditorPythonTestTools
+
+EditorPythonTestTools are a collection of test tools focused around accessing Editor functionality. These tools should be used whenever you want to automate tasks which would occur in the Editor. 
+
+### LyTestTools
+
+The LyTestTools are testing productivity tools for writing and debugging tests that across different environments. This includes (but isn't limited to) environment manipulation, creating/collecting images and logs, and starting project launchers.
