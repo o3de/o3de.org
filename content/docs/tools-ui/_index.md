@@ -66,4 +66,4 @@ guide_img: "/images/tools-ui/guide_img.png"
 
   + [O3DE entity outliner icons](uidev-entity-outliner-icons.md)
 
-+ [O3DE UI Extensions C++ API Reference index](ui20-reference-index.md)
++ [O3DE UI Extensions C++ API Reference index](/docs/api/frameworks/azqtcomponents)
