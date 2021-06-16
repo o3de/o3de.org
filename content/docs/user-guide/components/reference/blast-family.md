@@ -11,9 +11,9 @@ title: Blast Family component
 
 With the **Blast Family** component, you can enable destruction simulation using the NVIDIA Blast library, and set properties for the simulation\. The **Blast Family** component is used with the **Blast Family Mesh Data** component\. This topic describes the properties of the **Blast Family** component\.
 
-The **Blast Family** component is provided by the [NVIDIA Blast gem](/docs/user-guide/interactivity/physics/nvidia-blast/nvidia-blast/)\.
+The **Blast Family** component is provided by the [NVIDIA Blast gem](/docs/user-guide/gems/reference/nvidia-blast/)\.
 
-For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/simulate/)\.
+For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)\.
 
 ## Blast Family component properties {#component-blast-family-properties}
 

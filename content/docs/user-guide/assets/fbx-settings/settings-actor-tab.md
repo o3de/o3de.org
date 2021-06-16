@@ -59,7 +59,7 @@ Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 **Note**
 Each mesh in the **Actor group** to simulate as cloth requires its own **Cloth** modifier\.
 
-For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
+For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/)\.
 
 ****Select Cloth Mesh****
 Select the mesh to have cloth data applied and simulate as a cloth object\.

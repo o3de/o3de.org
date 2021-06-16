@@ -11,9 +11,9 @@ title: Blast Family Mesh Data component
 
 With the **Blast Family Mesh Data** component, you can set the mesh and material assets for NVIDIA Blast entities\. The **Blast Family Mesh Data** component is used with the **Blast Family** component\. This topic describes the properties of the **Blast Family Mesh Data** component\.
 
-The **Blast Family Mesh Data** component is provided by the [NVIDIA Blast gem](/docs/user-guide/interactivity/physics/nvidia-blast/nvidia-blast/)\.
+The **Blast Family Mesh Data** component is provided by the [NVIDIA Blast gem](/docs/user-guide/gems/reference/nvidia-blast/)\.
 
-For information on using the **Blast Family Mesh Data** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/simulate/)\.
+For information on using the **Blast Family Mesh Data** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)\.
 
 ## Blast Family Mesh Data component properties {#component-blast-family-mesh-data-properties}
 
