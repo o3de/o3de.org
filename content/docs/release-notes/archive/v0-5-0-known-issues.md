@@ -83,6 +83,7 @@ The following errors occur using RHI with Vulkan on Android platforms:
 * Passive forces like gravity can have a cumulative damage effect on a NVIDIA Blast assets causing destruction to trigger when no obvious external force or collider has acted on the asset, particularly with large objects. To mitigate this, be sure to create `.blast` materials for your NVIDIA Blast assets and set the Health and Damage Thresholds appropriately for the asset.
 
 ## NVIDIA Cloth
+
 * Cloth Debug Visualization will not show when running from Launchers.
 * Cloth does not support LOD meshes.
 * Cloth does not support scaled transforms.
@@ -91,15 +92,16 @@ The following errors occur using RHI with Vulkan on Android platforms:
 * Lumberyard’s debug display system is always rendered with a 1 frame delay. The cloth mesh component compensates for this by sending draw calls with the previous frame data while the **Cloth Debug Display** draws the current data. This workaround suffices when the entity is not moving. However, when an actor has an animation that moves the root bone, the cloth colliders are delayed in the debug display. On top of that, if the animation graph uses the root bone to move the entity (motion extraction joint), then both the cloth debug mesh and the colliders are delayed in debug display.
 
 ## PhysX
-* It may be possible for the PhysX Character Controller to climb slopes or steps higher than expected if the Step Height value is set to 0, or if the Maximum Slope Angle is set to a small value (for example,15 degrees or less).
-* There is currently no mechanism to automatically disable collisions between a PhysX Character Controller and a PhysX Ragdoll belonging to the same character, which will cause simulated characters to behave unexpectedly. Collisions can be prevented using the collision filtering settings for the controller and the ragdoll nodes.
+
+* It may be possible for the **PhysX Character Controller** to climb slopes or steps higher than expected if the **Step Height** value is set to 0, or if the **Maximum Slope Angle** is set to a small value (for example,15 degrees or less).
+* There is currently no mechanism to automatically disable collisions between a **PhysX Character Controller** and a **PhysX Ragdoll** belonging to the same character, which will cause simulated characters to behave unexpectedly. Collisions can be prevented using the collision filtering settings for the controller and the ragdoll nodes.
 * Joint limits may be exceeded in the ragdoll because of interactions with animated movements.
 * If the PhysX collider and the mesh are the same size, you will observe jittering during rendering. This behavior is expected.
-* Functional and rendering issues, such as jittering, occur if you apply impulse to parent-child entities that have PhysX Rigid Body components. To work around this issue, use joints.
-* Functional and rendering issues, such as jittering, occur if you apply impulse to parent-child entities that have PhysX Rigid Body components.
-* When there is more than one PhysX Ragdoll component in your level, increasing the Position Iteration Count and Velocity Iteration Count parameters of one ragdoll affects the other ragdolls.
-* Modifying the World Transform of entities with non-kinematic PhysX Rigid Body Components at game-time (with scripts) is not supported and may result in unexpected behavior.
-* The existing cases of using RayCast and ShapeCast must be evaluated to see where the hits from the inside of collision mesh are desired. In those cases, the Physics::HitFlags::MeshBothSides flag needs to be added to RayCastRequest::m_hitFlags or ShapeCastRequest::m_hitFlags. Note: This only applies to triangle meshes. Primitives and Convex meshes are considered to be solid and will give the hit from the inside if ray starting position is inside the shape (the distance will be 0 in this case).
+* Functional and rendering issues, such as jittering, occur if you apply impulse to parent-child entities that have **PhysX Rigid Body** components. To work around this issue, use joints.
+* Functional and rendering issues, such as jittering, occur if you apply impulse to parent-child entities that have **PhysX Rigid Body** components.
+* When there is more than one **PhysX Ragdoll** component in your level, increasing the **Position Iteration Count** and **Velocity Iteration Count** parameters of one ragdoll affects the other ragdolls.
+* Modifying the **World Transform** of entities with non-kinematic **PhysX Rigid Body** Components at game-time (with scripts) is not supported and may result in unexpected behavior.
+* The existing cases of using `RayCast` and `ShapeCast` must be evaluated to see where the hits from the inside of collision mesh are desired. In those cases, the `Physics::HitFlags::MeshBothSides` flag needs to be added to `RayCastRequest::m_hitFlags` or `ShapeCastRequest::m_hitFlags`. **Note:** This only applies to triangle meshes. Primitives and Convex meshes are considered to be solid and will give the hit from the inside if ray starting position is inside the shape (the distance will be 0 in this case).
 * If the PhysX TGS solver is enabled, ragdolls with high position or velocity iteration counts can become unstable. Note that PhysX internally groups together nearby bodies for simulation and uses the highest iteration counts of any object in the grouping, so ragdolls with high iteration counts may affect other nearby ragdolls.
 * V-HACD Mesh Decomposition:
     * Mesh decomposition is only available if the export type is selected as Convex or Primitive.
@@ -110,6 +112,6 @@ The following errors occur using RHI with Vulkan on Android platforms:
     * The algorithm considers only the vertices of the mesh, not edges/faces. Apart from some edge cases, this is usually sufficient, but the user may need to configure the export parameters correctly before a desirable result is obtained.
     * The algorithm is subject to mathematical restrictions and does not work well if the mesh has extreme proportions or sizes. Likewise, a vertex cloud that predominantly occupies a lower dimension subspace (plane, line or point) will not work well.
     * Non-uniform scaling of automatically fitted primitive colliders can have unintuitive behavior and is not recommended.
-* PhysX parameter changes in the PhysX Configuration window may only take effect when the editor is restarted.
+* PhysX parameter changes in the **PhysX Configuration** window may only take effect when the editor is restarted.
 * Using multiple ragdolls with pose moves may result in poor performance.
 * Entity transforms would not be updated correctly for ragdolls if physics is disabled on the character controller.
