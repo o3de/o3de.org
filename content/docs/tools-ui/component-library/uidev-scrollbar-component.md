@@ -58,8 +58,8 @@ AzQtComponents::ScrollBar::applyLightStyle(scrollArea);
 
 ## C\+\+ API reference<a name="scrollbar-api-ref"></a>
 
-For details on the **scrollbar** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::ScrollBar](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_scroll_bar.html)
+For details on the **scrollbar** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::ScrollBar](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_scroll_bar.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QScrollArea Class](https://doc.qt.io/qt-5/qscrollarea.html)

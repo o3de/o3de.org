@@ -88,8 +88,8 @@ toolButton->setMenu(menu);
 
 ## C\+\+ API reference<a name="button-api-ref"></a>
 
-For details on the button styles, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::PushButton](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_push_button.html)
+For details on the button styles, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::PushButton](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_push_button.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QPushButton Class](https://doc.qt.io/qt-5/qpushbutton.html)
