@@ -5,11 +5,11 @@ title: My First Test
 
 This guide will walk you through writing your first test with LyTestTools.
 
-## Prerequisites ##
+## Prerequisites
 
 + [Getting Started](/docs/user-guide/testing/lytesttools/getting-started)
 
-## Example Test Code ##
+## Example Test Code
 
 We will be using an example test file to help familiarize you with the code, how its written, and how to utilize LyTestTools in writing test cases. Most of this guide will be driven by the provided example test and explore extra configuration options and setups for your tests. This example test file is located located in the following directory as part of your Open 3D Engine build:
 
@@ -31,6 +31,6 @@ After compiling the O3DE project, run the example test using the following comma
 
 Once you've got the example test working, you should try modifying it to add more capabilities.
 
-## Further Reading ##
+## Further Reading
 
 * https://automatetheboringstuff.com/ - This site is great for learning when to apply test automation and when not to.
