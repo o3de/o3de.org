@@ -14,11 +14,10 @@ This guide requires that you've completed the following:
 
 ## Start Testing
 
-Once you have the prerequisites finished, you should have everything for testing configured and ready. You can verify this by running the following command. Replace [path_to_test_file] with the appropriate path to the test file and [path_to_build_output] with the appropriate path to the build output.
+Once you have the prerequisites finished, you should have everything for testing configured and ready. You can verify this by running the following command. 
 
 ```shell
-~/python/python -m pytest [path_to_test_file] --build-directory [path_to_build_output]
-```
+~/python/python -m pytest <path_to_test_file> --build-directory <path_to_build_output>
 
 When your tools are ready, configured, and working, proceed to the next guide appropriate for you:
 
