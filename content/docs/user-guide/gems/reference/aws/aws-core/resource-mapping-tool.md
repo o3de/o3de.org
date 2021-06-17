@@ -34,7 +34,7 @@ Select an existing mapping file to edit, or generate a new mapping file.
 
 On first launch in a new project, no resource mapping files exist.
 
-![Start a new mapping file using the resource mapping tool](/images/user-guide/gems/reference/aws/aws-core/resource-manager-new.png)
+![Start a new mapping file using the resource mapping tool](/images/user-guide/gems/reference/aws/aws-core/resource-mapping-new.png)
 
 Choose **Create New** to generate a new mappings file. Then use the **Config File** drop-down box to select the newly created file.
 
@@ -48,7 +48,7 @@ You can add or import resources individually, or import them from an AWS CloudFo
 
 #### Importing individual resources
 
-![Use Import Additional Resources to import AWS resources in the resource mapping tool](/images/user-guide/gems/reference/aws/aws-core/resource-manager-import.png)
+![Use Import Additional Resources to import AWS resources in the resource mapping tool](/images/user-guide/gems/reference/aws/aws-core/resource-mapping-import.png)
 
 **To import a resource deployed in your account**
 
