@@ -14,7 +14,7 @@ The AWS Core Gem includes an optional Python CDK application that provides two s
 1. A core stack to use as the basis for a project's CDK application.
 1. An example stack with example resources that can be connected to **ScriptBehavior** samples in Core.
 
-The Python project is set up like a standard Python project. The initialization process also creates a virtual environment with `virtualenv`, stored under the `.env` directory.
+The Python project is set up like a standard Python project. The initialization process also creates a virtual environment with `virtualenv`, stored under the `.venv` directory.
 
 To create the `virtualenv` you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
 

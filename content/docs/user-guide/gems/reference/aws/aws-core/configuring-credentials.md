@@ -21,7 +21,7 @@ If you are integrating with the Client Auth Gem and the end user only needs to i
 
 ## AWS CLI
 
-It is recommended to use the AWS CLI to manage the import and configuration of AWS credentials. If you have not configured credentials or a region on your computer, the easiest way to satisfy this requirement is to use the AWS `configure` command:
+It is recommended to use the [AWS CLI](https://docs.aws.amazon.com/cli/index.html) to manage the import and configuration of AWS credentials. If you have not configured credentials or a region on your computer, the easiest way to satisfy this requirement is to use the AWS `configure` command:
 
 ```cmd
 aws configure
