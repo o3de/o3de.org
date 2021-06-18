@@ -7,15 +7,26 @@ toc: true
 ---
 
 {{< preview-new >}}
-The **Light** component simulates soft studio light by allowing the creation of various types of punctual and area lights. The types of lights available are Point (sphere), Point (simple punctual), Spot (disk), Spot (simple punctual), Capsule, Quad, and Polygon. 
-- Point (sphere), Spot (disk), Capsule, Quad, and Polygon are area lights. They most accurately simulate real-world light sources.
-- Point (simple punctual) and Spot (simple punctual) are punctual lights, which are infinitesimally small. They are slightly more performant than their area light counterparts, but they produce simpler light effects.
-- Point (sphere) and Spot (disk) light types support shadow effects.
-- Quad and Polygon light types can emit light from one or both directions. 
-- Quad light type optionally supports fast approximation, which produces a more efficient but lower quality light effect. 
-- Polygon light type becomes more expensive as the number of points in the polygon increases.
+The **Light** component simulates soft studio light by allowing the creation of various types of punctual and area lights. The Light component supports punctual lights: Point (simple punctual) and Spot (simple punctual), which are infinitesimally small. They are slightly more performant than their area light counterparts, but they produce simpler light effects. The Light component also supports the area lights Point (sphere), Spot (disk), Capsule, Quad, and Polygon. They most accurately simulate real-world light sources. 
 
+## Light Types
+Point (sphere)
+: Emits light from the surface of a sphere in all directions, similar to standard light bulbs. Point (sphere) light type supports shadow effects.
 
+Point (simple punctual)   
+: Emits light from a single point in space. Point (simple punctual) light type is less photorealistic than Point (sphere) light type, but it is more performant.
+
+Spot (disk)   
+: Emits light from a circle in 3D space, similar to spot lights or recessed lights. Shutters can be added to constrain the light to a cone. Spot (disk) light type supports shadow effects.
+
+Spot (simple punctual)   
+: Emits light from a single point in space constrained to a cone. Spot (simple punctual) light type is less Photorealistic than a Spot (disk) light type, but it is more performant.
+
+Quad   
+: Emits light from the surface of a rectangle in 3D space. Quad light type is most useful to illuminate a larger area with diffuse light. By default, Quad light type uses linearly transformed cosines to calculate accurate lighting, but it also supports a fast approximation calculation that is more performant, but produces lesser quality light. Quad light type can emit light from one or both directions. 
+
+Polygon   
+: Emits light from an arbitrarily shaped polygon in 3D space. Polygon light type is the most expensive light type, but it produces very realistic area lighting. The polygon can have up to 64 points, but the Polygon Light type becomes more expensive as the number of points in the polygon increases. Polygon light type can emit light from one or both directions. 
 
 ## Provider
 
@@ -28,9 +39,9 @@ The **Light** component simulates soft studio light by allowing the creation of 
 | - | - |
 | Point (sphere) | [Sphere Shape component](\docs\user-guide\components\reference\shape\sphere-shape.md) | 
 | Point (simple punctual) | - | 
-| Spot (disk) | [Disk Shape component](\docs\user-guide\components\reference\shape\disk-shape.md) | 
+| Spot (disk) | [Disk Shape component](\docs\user-guide\components\reference\shape\disk-shape.md) |
 | Spot (simple punctual) | - | 
-| Capsule | [Capsule Shape component](\docs\user-guide\components\reference\shape\capsule-shape.md) | 
+| Capsule | [Capsule Shape component](\docs\user-guide\components\reference\shape\capsule-shape.md) |
 | Quad | [Quad Shape component](\docs\user-guide\components\reference\shape\quad-shape.md) | 
 | Polygon | [Polygon Prism Shape component](\docs\user-guide\components\reference\shape\polygon-prism-shape.md) |
 
@@ -85,10 +96,10 @@ The **Light** component simulates soft studio light by allowing the creation of 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-|**Light Type** | Specify the type of light. The properties vary for each light type.  | `Point (Sphere)`, `Point (Simple)`, `Spot (Disk)`, `Spot (Simple)`, `Capsule`, `Quad`, `Polygon` | - |
+|**Light Type** | Specify the type of light. The properties vary for each light type.  | `Point (sphere)`, `Point (Simple)`, `Spot (disk)`, `Spot (Simple)`, `Capsule`, `Quad`, `Polygon` | - |
 | **Color** | The color of the light. Color acts as a gel on a pure white light and reduces the total energy output of the light for any color other than pure white. For example, a 100 `Lumen` area light with a color setting of medium grey (18%) will only output 18 lumens of light. | Eight bits per channel color: `0` to `255` | `255,255,255` |
 | **Intensity Mode** | The photometric unit of the light. `Candela` and `Lumen` specify the total amount of light energy that is emitted from the entire surface area of the shape. If `Candela` or `Lumen` is selected as the Intensity Mode, and Intensity is specified as 100.0, the larger the provided shape component, the dimmer the light will appear because the total light energy is spread over a larger surface area. `Nit` represents light energy as Candelas per square meter. `Ev100` represents light energy as an exposure value over an area. `Ev100` values are exponential, so a value of 5.0 `Ev100` will be twice as bright as a value of 4.0 `Ev100`. With `Nit` and `Ev100`, the larger the shape, the brighter the light, because the total light energy increases with the shape's surface area. | `Candela`, `Lumen`, `Nit`, `Ev100` | `Lumen` |
-| **Intensity** | The light energy output or brightness of the light in the selected photometric units that is provided by the Intensity Mode property. | EV100: `-10` to `20` <br><br> Candela, Lumen, Nit: `0` to `1,000,000`| `100` |
+| **Intensity** | The light energy output or brightness of the light in the selected photometric units that is provided by the Intensity Mode property. | EV100: -inifinty to +infinity <br><br> Candela, Lumen, Nit: `0` to infinity| `100` |
 | **Attenuation Radius** | Refer to [Attenuation Radius properties](#attenuation-radius-properties) below. | Boolean | `Disabled` |
 | **Shadows** | Refer to [Shadows properties](#shadows-properties) below. | Boolean | `Disabled` |
 | **Shutters** | Refer to [Shutters properties](#shutters-properties) below. | Boolean | `Disabled` |
