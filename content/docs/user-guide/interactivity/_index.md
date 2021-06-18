@@ -4,5 +4,14 @@ date: 2021-03-02T00:23:54-05:00
 weight: 800
 ---
 
-{{< preview-migrated >}}
+{{< preview-new >}}
 
+| Topic | Description |
+| - | - | 
+| [Entities](entities) | Learn about how to interact with entities in the Editor. |
+| [Navigation and pathfinding](navigation-and-pathfinding) |  |
+| [Physics](physics) | Simulate physics interactions in O3DE using NVIDIA PhysX for collisions and rigid bodies, NVIDIA Blast to simulate destruction, and NVIDIA Cloth to simulate cloth. |
+| [Prefabs](prefabs) | Learn about O3DE's prefab system. |
+| [Audio](audio) | Control audio and sound effects in your game. |
+| [Input](input) | Allow player input such as key presses and mouse clicks, to create an interactive experience in O3DE. |
+| [User interface](user-interface) | Create a user interface in your game such as with images, text, buttons, menus, scroll boxes, and heads-up displays (HUDs). |
