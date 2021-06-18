@@ -8,7 +8,7 @@ toc: true
 
 {{< preview-new >}}
 
-Once set up, clients can generate and submit metrics events using C++, Lua, or Script Canvas. The following examples demonstrate use of Lua and Script Canvas to script behavior. Refer to [Using C++ API with the AWS Metrics Gem](./cpp-api.md) for examples of using the C++ API with the Gem.
+With the AWS Metrics Gem set up, clients can generate and submit metrics events using C++, Lua, or Script Canvas. The following examples demonstrate use of Lua and Script Canvas to script behavior. Refer to [Using C++ API with the AWS Metrics Gem](./cpp-api.md) for examples of using the C++ API with the Gem.
 
 ## Script Canvas
 
@@ -34,7 +34,8 @@ attribute = AWSMetrics_MetricsAttribute()
 attribute:SetName("attribute_name")
 
 -- Set the value of the metrics attribute.
--- You can set string, integer or double as the attribute value. Call SetStrValue, SetIntValue or SetDoubleValue for different value types.
+-- You can set string, integer, or double as the attribute value.
+-- Call SetStrValue, SetIntValue, or SetDoubleValue for the corresponding value type.
 attribute:SetStrValue("attribute_value")
 
 -- Add the attribute to the metrics attribute list.
@@ -48,17 +49,15 @@ AWSMetricsRequestBus.Broadcast.SubmitMetrics(attributeList.attributes, "event_so
 AWSMetricsRequestBus.Broadcast.FlushMetrics()
 ```
 
-You can also add multiple metrics attributes to an event. Custom metrics attributes not included in the Event JSON Schema will be added to the event_data field as a flat JSON dictionary.
+You can also add multiple metrics attributes to an event. Custom metrics attributes not included in the [Event JSON Schema](./event-schema.md) will be added to the `event_data` field as a flat JSON dictionary.
 
-{{< todo >}}
-TODO: Add link to Event JSON Schema docs.
-{{< /todo >}}
-
-Please note that the metrics event will be validated against a JSON schema before submission and it will be dropped if any of the required attributes are missing, or if the attribute value does not match the expected pattern.
+{{< note >}}
+The metrics event will be validated against a JSON schema before submission and it will be dropped if any of the required attributes are missing, or if the attribute value does not match the expected pattern.
+{{< /note >}}
 
 ### Capturing notifications
 
-To capture notifications in Lua, connect to the `AWSMetricsNotificationBus` during activation, and disconnect from it during the deactivation, as shown in the following example.
+To capture notifications in Lua, connect to the `AWSMetricsNotificationBus` during activation, and disconnect from it during deactivation, as shown in the following example.
 
 ```lua
 function sample:OnActivate()

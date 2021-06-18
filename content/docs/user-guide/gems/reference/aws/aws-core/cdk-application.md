@@ -14,42 +14,52 @@ The AWS Core Gem includes an optional Python CDK application that provides two s
 1. A core stack to use as the basis for a project's CDK application.
 1. An example stack with example resources that can be connected to **ScriptBehavior** samples in Core.
 
-The Python project is set up like a standard Python project. The initialization process also creates a virtual environment with `virtualenv`, stored under the `.venv` directory.
+The Python project is set up like a standard Python project. The initialization process uses virtual environments, created with `virtualenv` and stored under the `.venv` directory.
 
-To create the `virtualenv` you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
+To create the virtual environment, you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
 
 ## Prerequisites
 
-You should already have set up AWS credentials for your computer using the steps shown in [Configuring AWS Credentials](./configuring-credentials.md).
+* AWS credentials configured. Refer to the steps shown in [Configuring AWS Credentials](./configuring-credentials.md).
+* [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install) (CDK) installed.
+* O3DE project built.
 
-## Deploy the CDK
+## Working with the CDK application
+
+There are a few one-time set up steps to prepare for your first CDK deployment.
 
 ### 1. Set up Python environment
 
 _For the latest instructions, see the `readme.md` file in the AWS Core Gem source directory._
 
-To manually create a `virtualenv` on MacOS and Linux:
+To manually create a `virtualenv`, use the following command.
 
 ```cmd
+# Windows
 python -m venv .venv
+
+# Mac or Linux
+python3 -m venv .venv
 ```
 
-Once the `virtualenv` is created, you can use the following step to activate your `virtualenv`.
+Once the `virtualenv` is created, activate your `virtualenv`.
 
 ```cmd
-source .venv/bin/activate
-```
-
-On a Windows platform, you would activate the `virtualenv` like this:
-
-```cmd
+# Windows
 .venv\Scripts\activate.bat
+
+# Mac or Linux
+source .venv/bin/activate
 ```
 
 Once the virtualenv is activated, you can install the required dependencies.
 
 ```cmd
+# Windows
 pip install -r requirements.txt
+
+# Mac or Linux
+pip3 install -r requirements.txt
 ```
 
 ### 2. Set environment variables or accept defaults
@@ -82,19 +92,17 @@ See [Bootstrapping](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.h
 
 ### 4. Synthesize the project
 
-At this point you can now synthesize the AWS CloudFormation template.
+At this point you can now synthesize the AWS CloudFormation template. Use the CDK `synth` command from the `cdk` directory of the Gem whose application you are deploying.
 
 ```cmd
 cdk synth
 ```
 
-You may need to do a one-time bootstrap, once per account, per region. The CDK application will prompt you about this.
-  
 To add additional dependencies, such as other CDK libraries, just add them to your `requirements.txt` file and rerun the `pip install -r requirements.txt` command.
 
 ### 5. Deploy the project
 
-To deploy the CDK application, use the CDK `deploy` command.
+To deploy the CDK application, use the CDK `deploy` command from the `cdk` directory of the Gem whose application you are deploying.
 
 ```cmd
 cdk deploy

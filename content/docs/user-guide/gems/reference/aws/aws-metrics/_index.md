@@ -15,7 +15,7 @@ The AWS Metrics Gem provides an extensible, out-of-the-box instrumentation and a
 * monitoring
 * reporting
 
-Using this Gem, metrics events can be generated and submitted in a thread safe manner from C++, Lua, and Script Canvas. You can deploy the sample CDK application as a reasonable starting point to use AWS services for real-time and batch analytics. You can extend the CDK application to a full production-ready solution to meet your production and scaling needs. Refer to the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/) for an in-depth look at the architecture.
+Using this Gem, metrics events can be generated and submitted in a thread safe manner from C++, Lua, and Script Canvas. You can deploy the sample CDK application as a reasonable starting point to use AWS services for real-time and batch analytics. You can also extend the CDK application to a full production-ready solution to meet your production and scaling needs. Refer to the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/) for an in-depth look at the architecture.
 
 ## Enabling the AWS Metrics Gem
 

@@ -33,7 +33,7 @@ You should now be able to utilize AWS functions in Lua script, Script Canvas, or
 
 On start up the AWS Core Gem will look for the `awscoreconfiguration.setreg` file in the project's registry directory: `<ProjectName>\Registry`.
 
-In this file you can set the following options:
+You will need to create this file if you want to set any of the following options. Use the format shown in the example.
 
 | Setting | Description |
 | --- | --- |
@@ -41,7 +41,7 @@ In this file you can set the following options:
 | **ResourceMappingConfigFileName** | \[Optional\] The name of the resource mapping file to load while starting up. Resource mapping files are expected to be located in `<ProjectName>\Config`. See [Resource Mapping Files](./resource-mapping-files.md) for more information. |
 
 {{< note >}}
-If you make changes to this file, you will need to restart the O3DE Editor or launcher.
+If you make changes to this file, you will need to restart the O3DE Editor.
 {{< /note >}}
 
 Example registry settings file:

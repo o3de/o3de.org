@@ -19,7 +19,7 @@ Sample code for calling the APIs in C++.
 bool result = false;
 AWSMetricsRequestBus::BroadcastResult(result, &AWSMetricsRequests::SubmitMetrics, metricsAttributes, 0, "C++", true);
  
-// Submit a metrics event directly without using buffer.
+// Or, submit a metrics event directly without using a buffer.
 bool result = false;
 AWSMetricsRequestBus::BroadcastResult(result, &AWSMetricsRequests::SubmitMetrics, metricsAttributes, 0, "C++", false);
  

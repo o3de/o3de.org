@@ -10,38 +10,48 @@ weight: 500
 
 ## Console command
 
-The AWSMetrics gem provides the following two console commands to dump statistics and enable/disable offline recording.
+The AWS Metrics Gem provides two `AWSMetricsSystemComponent` console commands to dump statistics and enable/disable offline recording.
 
-TODO: Convert to table.
+### DumpStats
 
-**AWSMetricsSystemComponent.DumpStats**: Used to show statistics for the metrics submission in the console. Statistics includes: Total number of events sent to the local file or AWS backed backend, total number of successes, total number of failures and total number of drops.
+Used to show statistics for the metrics submission in the console. Statistics include the following.
 
-**AWSMetricsSystemComponent.EnableOfflineRecording**: Used to enable/disable offline recording. If this feature is enabled, metrics events will be sent to a local file. Customers have the option to resubmit events stored in the local file by specifying the "submit" argument when disable the feature, like "AWSMetricsSystemComponent.EnableOfflineRecording false submit".
+* Total number of events sent to the local file or AWS-backed backend.
+* Total number of successes.
+* Total number of failures.
+* Total number of drops.
+
+```console
+AWSMetricsSystemComponent.DumpStats
+```
+
+### EnableOfflineRecording
+
+Used to enable/disable offline recording. If this feature is enabled, metrics events will be sent to a local file. You have the option to resubmit events stored in the local file by specifying the `submit` argument when disabling the feature.
+
+```console
+AWSMetricsSystemComponent.EnableOfflineRecording false submit
+```
 
 ## Client configuration
 
-You can change a few client settings in the client configuration file Gems/AWSMetrics/Code/Registry/awsMetricsClientConfiguration.setreg.
+You can change a few client settings in the client configuration file `Gems\AWSMetrics\Code\Registry\awsMetricsClientConfiguration.setreg`.
 
-Configurable settings include:
+Configurable settings include the following.
 
-TODO: Convert to table.
-
-**OfflineRecording**: Whether send metrics to a local file instead of the AWS backed backend. Default to false. You can change this setting at runtime as well using the console command AWSMetricsSystemComponent.EnableOfflineRecording.
-
-**MaxQueueSizeInMb**: Maximum size (in MB) for the local buffer for sending metrics events in batch. Default to 0.3. Suggest to be less than 5MB due to the limit for the Kinesis Data Stream. Refer to the AWS documentation on [PutRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html) for more information.
-
-**QueueFlushPeriodInSeconds**: Flush period (in seconds) for flushing the metrics events queue. Default to 60.
-
-**MaxNumRetries**: Maximum number of retries for sending metrics events before dropping them. Default to 1.
+| Settings | Description |
+| --- | --- |
+| **OfflineRecording** | Whether send metrics to a local file instead of the AWS-backed backend. <br> Defaults to false. <br> You can change this setting at runtime using the console command `AWSMetricsSystemComponent.EnableOfflineRecording`. |
+| **MaxQueueSizeInMb** | Maximum size (in MB) for the local buffer for sending metrics events in batch. <br> Defaults to 0.3. <br> Suggested to be less than 5 MB due to the limit for the Kinesis Data Stream. Refer to the Amazon Kinesis [PutRecords](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecords.html) documentation for more information.
+| **QueueFlushPeriodInSeconds** | Flush period (in seconds) for flushing the metrics events queue. <br> Defaults to 60. |
+| **MaxNumRetries** | Maximum number of retries for sending metrics events before dropping them. <br> Defaults to 1. |
 
 ## Metrics event schema
 
-The AWS Metrics Gem uses an Event JSON Schema for validating the metrics events submitted from the client or sent to the Service API. Any metrics event that fail the validation will be dropped. Any custom metrics attributes that are not defined in the schema will be added to the `event_data` field of the metrics event as a flat JSON dictionary.
+The AWS Metrics Gem uses an [Event JSON Schema](./event-schema.md) for validating the metrics events submitted from the client or sent to the Service API. Any metrics event that fails the validation will be dropped. Any custom metrics attributes that are not defined in the schema will be added to the `event_data` field of the metrics event as a flat JSON dictionary.
 
-TODO: Add link to Event JSON Schema.
-
-If you want to customize the schema, update it in both `Gems\AWSMetrics\Code\Include\Public\AWSMetricsConstant.h` and `api_spec.json` inside your CDK application. You will need to rebuild the editor/launcher and redeploy your CDK application after this change.
+If you want to customize the schema, update it in both `Gems\AWSMetrics\Code\Include\Public\AWSMetricsConstant.h` and `api_spec.json` inside your CDK application. You will need to rebuild your project and redeploy your CDK application after this change.
 
 ## Migrate to production-ready solution
 
-The sample CDK application provides a reasonable starting point to use AWS analytics services that is thoughtful with respect to security, cost and usability. Experienced developers can also customize the CDK application or even migrate it to the production-ready solution detailed in the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/).
+The sample CDK application provides a reasonable starting point to use AWS analytics services that is thoughtful with respect to security, cost, and usability. Experienced developers can also customize the CDK application or even migrate it to the production-ready solution detailed in the AWS guide on the [Game Analytics Pipeline](https://aws.amazon.com/solutions/implementations/game-analytics-pipeline/).

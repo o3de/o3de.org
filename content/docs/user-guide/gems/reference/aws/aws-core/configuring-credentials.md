@@ -9,19 +9,17 @@ toc: true
 
 To work with AWS resources in O3DE, you first need an AWS account. See the [AWS home page](https://aws.amazon.com/) for instructions on creating an account.
 
-You will also need to provision AWS credentials for your users. To provision credentials, you must do one of the following:
+You will also need to provision AWS credentials for your users. You can choose between short-term and long-term credentials. Long-term credentials are convenient during the development process. They're easier to configure, but you need to be careful they are kept secure. Short-term credentials are generally recommended for release because they have a finite lifetime. For more information and best practices, refer to the AWS topic on [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#use-roles) using IAM roles.
 
 * To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and use one of the methods below. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information.
 
 * To provide short-term credentials, use the [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth) or use the AWS Security Token Service (STS) to generate [temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html).
 
-It is strongly recommend against using your AWS root account for day-to-day tasks. Instead, create a user in IAM with programmatic access credentials. Best practice is to change this account's access key regularly and to use a least-privileges role (specifying `--role-arn`) when deploying. For more information on managing access keys, see [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the AWS IAM User Guide.
-
-If you are integrating with the Client Auth Gem and the end user only needs to interact with deployed AWS resources, then you can skip local provisioning of AWS credentials.
+It is strongly recommend against using your AWS root account for day-to-day tasks. Instead, create a user in IAM with programmatic access credentials. Best practice is to change this account's access key regularly and follow the practice of least privileges. For more information on managing access keys, see [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the AWS IAM User Guide.
 
 ## AWS CLI
 
-It is recommended to use the [AWS CLI](https://docs.aws.amazon.com/cli/index.html) to manage the import and configuration of AWS credentials. If you have not configured credentials or a region on your computer, the easiest way to satisfy this requirement is to use the AWS `configure` command:
+It is recommended to use the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) (CLI) (version 2) to manage the import and configuration of AWS credentials. If you have not configured credentials or a region on your computer, the easiest way to satisfy this requirement is to use the AWS `configure` command:
 
 ```cmd
 aws configure

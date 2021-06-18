@@ -12,10 +12,11 @@ weight: 100
 
 The AWS Client Auth Gem requires the following to be installed and configured:
 
-* AWS Command Line Interface (CLI)
 * AWS Cloud Development Kit (CDK)
 * AWS credentials
 * O3DE AWS Core Gem
+
+The [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) (CLI) (version 2) is optional but also strongly recommended.
 
 See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core/getting-started.md) for help with installing and configuring these prerequisites.
 
@@ -32,52 +33,15 @@ Complete the following set up steps to use the AWS Client Auth Gem in your proje
 
 If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./_index.md#enabling-the-aws-client-auth-gem).
 
-### 2. Configure project settings
+### 2. Configure authentication providers
 
-The `AuthenticationProvider.setreg` registry file defines the third-party OAuth authentication provider settings. This file is located in the project's registry directory: `<ProjectName>\Registry`.
-
-These settings and those in the resource mapping file are read once during activation of `AWSClientAuthSystemComponent`.
-
-| Setting | Description |
-| --- | --- |
-| **AppClientId** | Client ID provided by the authentication provider upon creating an account. |
-| **ClientSecret** | Client secret provided by the authentication provider upon creating an account. Required only for **Login With Amazon**. |
-| **GrantType** | Type of grant requested. See [https://oauth.net/2/grant-types/](https://oauth.net/2/grant-types/). |
-| **ResponseType** | Required only for **Login With Amazon**. Same as grant type. |
-| **OAuthCodeURL** | URL to request code for authentication. |
-| **OAuthTokensURL** | URL to confirm and get authenticated tokens on success. |
-
-Example `AuthenticationProvider.setreg` file:
-
-    ```json
-    {
-        "AWS":
-        {
-            "LoginWithAmazon":
-            {
-                "AppClientId": "",
-                "GrantType":  "device_code",
-                "ResponseType":  "device_code",
-                "OAuthCodeURL": "https://api.amazon.com/auth/o2/create/codepair",
-                "OAuthTokensURL": "https://api.amazon.com/auth/o2/token"
-            },
-            "Google":
-            {
-                "AppClientId": "",
-                "ClientSecret": "",
-                "GrantType": "urn:ietf:params:oauth:grant-type:device_code",
-                "OAuthCodeURL": "https://oauth2.googleapis.com/device/code",
-                "OAuthTokensURL": "https://oauth2.googleapis.com/token"
-            }
-        }
-    }
-    ```
+For this step, decide which authentication provider you will use and configure your project to use that provider by following the steps in [Using Authentication Providers](./authentication-providers.md). You can use one of the supported providers, or extend the Gem to support your own.
 
 ### 3. Deploy the CDK application
 
-The AWS Client Auth Gem requires AWS resources to be deployed for authentication and authorization support. For instructions on how to deploy the CDK application, see the deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
+Use the CDK synth and deploy commands to deploy AWS resources for authentication and authorization support. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
-When setting constants for deploy, the AWS Client Auth Gem includes the following additional optional values. If set, the CDK application will try to enable the authenticated provider authorization using the Amazon Cognito identity pool.
+When setting constants for deploy, the AWS Client Auth Gem supports the following additional, optional values. If set, the CDK application will try to enable the authenticated provider authorization using the Amazon Cognito identity pool.
 
 **`GOOGLE_APP_CLIENT_ID`**: **Google** app client ID to enable Google-authenticated authorization in Amazon Cognito identity pool.
 
@@ -117,7 +81,7 @@ Create identity pool to support authenticated and anonymous identities.
 
 After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information so that you can use the deployed AWS resources.
 
-Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the following information to your project's resource mapping file:
+Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the following mappings to your project's resource mapping file:
 
 * `AWSClientAuth.CognitoUserPoolId`
 * `AWSClientAuth.CognitoUserPoolAppClientId`
