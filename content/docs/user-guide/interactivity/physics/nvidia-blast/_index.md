@@ -13,7 +13,7 @@ weight: 200
 
  With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components\.
 
-To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/interactivity/physics/nvidia-blast/_index.md)\.
+To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/nvidia-blast/)\.
 
 **Note**
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
@@ -44,7 +44,7 @@ See the following topics for detailed information about NVIDIA Blast\.
 
 [Processing assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/process-blast-asset.md) \- Process NVIDIA Blast assets for O3DE\.
 
-[Simulate destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/simulate.md) \- Create entities with NVIDIA Blast assets and simulate destruction\.
+[Simulate destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/) \- Create entities with NVIDIA Blast assets and simulate destruction\.
 
 [Partial destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/static-chunks.md) \- Use attributes to create partial destruction\.
 

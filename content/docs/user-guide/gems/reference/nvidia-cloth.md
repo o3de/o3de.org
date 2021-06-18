@@ -8,7 +8,7 @@ title: NVIDIA Cloth Gem
 
 Physical cloth simulations can create more immersive environments and characters\. The **NVIDIA Cloth** gem uses the NVIDIA Cloth library to provide fast, robust cloth simulation in Open 3D Engine\.
 
-For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
+For information on using **NVIDIA Cloth**, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/)\.
 
 ## Functionality provided by the NVIDIA Cloth gem {#nvidia-cloth-functionality}
 

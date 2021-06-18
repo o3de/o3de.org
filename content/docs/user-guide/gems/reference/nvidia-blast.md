@@ -16,7 +16,7 @@ The **NVIDIA Blast** gem uses the NVIDIA Blast library to provide fast, high\-fi
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
-For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/intro.md)\.
+For NVIDIA Blast developer information, see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)\.
 
 **Contents**
 - [Functionality provided by the NVIDIA Blast gem {#nvidia-blast-functionality}](#functionality-provided-by-the-nvidia-blast-gem-nvidia-blast-functionality)
