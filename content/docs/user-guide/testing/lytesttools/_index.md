@@ -10,6 +10,3 @@ The LyTestTools are located in `Tools/LyTestTools`.
 ## Topics
 
 + [Getting Started](/docs/user-guide/testing/lytesttools/getting-started)
-+ [My First Test](/docs/user-guide/testing/lytesttools/my-first-test)
-+ [Extending LyTestTools](/docs/user-guide/testing/lytesttools/extending-lytesttools)
-+ [Feature Requests](/docs/user-guide/testing/lytesttools/feature-requests)
