@@ -22,7 +22,7 @@ Input data pins:
 
 Get a success message from the **OnSuccess** handler. The file downloads to the location specified as the output file name.
 
-Get error message from **OnError** handler.
+Get an error message from the **OnError** handler.
 
 ![Scripting AWS S3 GetObject node](/images/user-guide/gems/reference/aws/aws-core/scripting-s3-get-object.png)
 
