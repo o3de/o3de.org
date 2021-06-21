@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzToolsFramework API Reference
-   &#160;<span id="projectnumber">preview</span>
+   &#160;<span id="projectnumber">2106</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -49,7 +49,6 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
 <a href="class_az_tools_framework_1_1_prefab_1_1_instance-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -130,6 +129,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Reset</b> ()</td></tr
 <tr class="memitem:a99b64c8fd97fdf5d380fa4794de09d32"><td class="memItemLeft" align="right" valign="top"><a id="a99b64c8fd97fdf5d380fa4794de09d32"></a>
 AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DetachNestedInstance</b> (const InstanceAlias &amp;instanceAlias)</td></tr>
 <tr class="separator:a99b64c8fd97fdf5d380fa4794de09d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21db2ac42382051c0eb3374ccd170bed"><td class="memItemLeft" align="right" valign="top"><a id="a21db2ac42382051c0eb3374ccd170bed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachNestedInstances</b> (const AZStd::function&lt; void(AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt;)&gt; &amp;callback)</td></tr>
+<tr class="separator:a21db2ac42382051c0eb3374ccd170bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0fb95caa54470af791dfb75986ad49f"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; EntityAlias &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#aa0fb95caa54470af791dfb75986ad49f">GetEntityAliases</a> ()</td></tr>
 <tr class="separator:aa0fb95caa54470af791dfb75986ad49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c107184e23ba034de7fe3c8e116510c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a6c107184e23ba034de7fe3c8e116510c">GetNestedEntityIds</a> (const AZStd::function&lt; bool(AZ::EntityId)&gt; &amp;callback)</td></tr>
@@ -137,17 +139,17 @@ AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_
 <tr class="memitem:acf847ee400a9ec656fb815cfa254310d"><td class="memItemLeft" align="right" valign="top"><a id="acf847ee400a9ec656fb815cfa254310d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntityIds</b> (const AZStd::function&lt; bool(AZ::EntityId)&gt; &amp;callback)</td></tr>
 <tr class="separator:acf847ee400a9ec656fb815cfa254310d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6bf25f420c1c3567de9f876ef95895c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#aa6bf25f420c1c3567de9f876ef95895c">GetConstNestedEntities</a> (const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;callback)</td></tr>
-<tr class="separator:aa6bf25f420c1c3567de9f876ef95895c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3550bcf5cb589924a49932a496de5076"><td class="memItemLeft" align="right" valign="top"><a id="a3550bcf5cb589924a49932a496de5076"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstEntities</b> (const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;callback)</td></tr>
-<tr class="separator:a3550bcf5cb589924a49932a496de5076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae055abb4f48abe2c234ee394b46c4274"><td class="memItemLeft" align="right" valign="top"><a id="ae055abb4f48abe2c234ee394b46c4274"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetNestedEntities</b> (const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;callback)</td></tr>
-<tr class="separator:ae055abb4f48abe2c234ee394b46c4274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaead32ae4ece5cefdbac53a360a7305"><td class="memItemLeft" align="right" valign="top"><a id="acaead32ae4ece5cefdbac53a360a7305"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>GetEntities</b> (const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;callback)</td></tr>
+<tr class="memitem:acaead32ae4ece5cefdbac53a360a7305"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#acaead32ae4ece5cefdbac53a360a7305">GetEntities</a> (const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;callback)</td></tr>
 <tr class="separator:acaead32ae4ece5cefdbac53a360a7305"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa250529d420fee2db34547c866ac2c8a"><td class="memItemLeft" align="right" valign="top"><a id="aa250529d420fee2db34547c866ac2c8a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetConstEntities</b> (const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;callback) const</td></tr>
+<tr class="separator:aa250529d420fee2db34547c866ac2c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf27a03ed852e01f862e9ead9eea4c3"><td class="memItemLeft" align="right" valign="top"><a id="aecf27a03ed852e01f862e9ead9eea4c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllEntitiesInHierarchy</b> (const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;callback)</td></tr>
+<tr class="separator:aecf27a03ed852e01f862e9ead9eea4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbc692cbd597199d84089445c84d74a"><td class="memItemLeft" align="right" valign="top"><a id="a2dbc692cbd597199d84089445c84d74a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllEntitiesInHierarchyConst</b> (const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;callback) const</td></tr>
+<tr class="separator:a2dbc692cbd597199d84089445c84d74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebd1dd51948f3e87e2ed260cc95ece75"><td class="memItemLeft" align="right" valign="top"><a id="aebd1dd51948f3e87e2ed260cc95ece75"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetNestedInstances</b> (const AZStd::function&lt; void(AZStd::unique_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &gt; &amp;)&gt; &amp;callback)</td></tr>
 <tr class="separator:aebd1dd51948f3e87e2ed260cc95ece75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,11 +220,6 @@ static EntityAlias&#160;</td><td class="memItemRight" valign="bottom"><b>Generat
 static InstanceAlias&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateInstanceAlias</b> ()</td></tr>
 <tr class="separator:a4dcf33321ac1437146545ef14f0c0ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a9ef61fb2cf0ea7370c0eb9d7df6427cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html#a9ef61fb2cf0ea7370c0eb9d7df6427cd">GetEntities</a> (EntityList &amp;entities, bool includeNestedEntities=false)</td></tr>
-<tr class="separator:a9ef61fb2cf0ea7370c0eb9d7df6427cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:abfd2330769f3f925507e2e305c2ef0ee"><td class="memItemLeft" align="right" valign="top"><a id="abfd2330769f3f925507e2e305c2ef0ee"></a>
@@ -260,59 +257,22 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 
 </div>
 </div>
-<a id="aa6bf25f420c1c3567de9f876ef95895c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6bf25f420c1c3567de9f876ef95895c">&#9670;&nbsp;</a></span>GetConstNestedEntities()</h2>
+<a id="acaead32ae4ece5cefdbac53a360a7305"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaead32ae4ece5cefdbac53a360a7305">&#9670;&nbsp;</a></span>GetEntities()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AzToolsFramework::Prefab::Instance::GetConstNestedEntities </td>
+          <td class="memname">void AzToolsFramework::Prefab::Instance::GetEntities </td>
           <td>(</td>
-          <td class="paramtype">const AZStd::function&lt; bool(const AZ::Entity &amp;)&gt; &amp;&#160;</td>
+          <td class="paramtype">const AZStd::function&lt; bool(AZStd::unique_ptr&lt; AZ::Entity &gt; &amp;)&gt; &amp;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Gets the entities in the <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> DOM. Can recursively trace all nested instances. </p>
-
-</div>
-</div>
-<a id="a9ef61fb2cf0ea7370c0eb9d7df6427cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ef61fb2cf0ea7370c0eb9d7df6427cd">&#9670;&nbsp;</a></span>GetEntities()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzToolsFramework::Prefab::Instance::GetEntities </td>
-          <td>(</td>
-          <td class="paramtype">EntityList &amp;&#160;</td>
-          <td class="paramname"><em>entities</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>includeNestedEntities</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the entities owned by this instance </p>
 
 </div>
 </div>
@@ -426,7 +386,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>InstanceEntityIdMapp
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 13 2021 13:23:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
