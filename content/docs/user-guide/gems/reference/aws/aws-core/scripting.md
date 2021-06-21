@@ -1,26 +1,26 @@
 ---
-linktitle: Scripting with AWS Core
+linktitle: Scripting
 title: AWS Core Scripting
-description: See examples of how to use the AWS Core Gem with Script Canvas in Open 3D Engine.
+description: Examples of using the AWS Core Gem with Script Canvas in Open 3D Engine (O3DE).
 weight: 400
 toc: true
 ---
 
 {{< preview-new >}}
 
-This page demonstrates Script Canvas nodes defined by the AWS Core Gem.
+This topic demonstrates the Script Canvas nodes that the AWS Core Gem defines.
 
-## AWS S3
+## Amazon S3
 
 ### GetObject
 
 Input data pins:
 
-* Bucket name
-* Object name
-* Output filename
+* Bucket Resource KeyName
+* Object KeyName
+* Outfile Name
 
-Get success message from **OnSuccess** handler. File is downloaded to the location specifed by the output filename.
+Get a success message from the **OnSuccess** handler. The file downloads to the location specified as the output file name.
 
 Get error message from **OnError** handler.
 

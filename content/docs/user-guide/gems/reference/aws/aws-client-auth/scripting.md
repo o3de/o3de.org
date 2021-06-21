@@ -1,7 +1,7 @@
 ---
 linktitle: Scripting Client Auth
 title: AWS Client Auth Scripting
-description: See examples of how to use the AWS Client Auth Gem with Script Canvas and Lua in Open 3D Engine.
+description: Examples of using the AWS Client Auth Gem with Script Canvas and Lua in Open 3D Engine (O3DE).
 weight: 300
 toc: true
 ---
@@ -14,9 +14,9 @@ This page demonstrates example usage of Script Canvas nodes and Lua scripting de
 
 ### Initialize
 
-Initializes all EBuses from AWS Client Auth Gem.
+Initializes all event buses (EBuses) from the AWS Client Auth Gem.
 
-Note the use of a providers variable, which is an array of strings.
+Note the use of a `Providers` variable, which is an array of strings.
 
 Input data pins:
 
@@ -29,15 +29,15 @@ Output data pins:
 
 ![Scripting AWS Client Auth Initialize node](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-initialize.png)
 
-### Password sign in flow with Amazon Cognito
+### Amazon Cognito user pool password sign-in flow
 
-The following graph shows the flow for password sign in with the Amazon Cognito user pool.
+The following image shows the password sign-in flow in an Amazon Cognito user pool.
 
 Note the variables created for providers, tokens, and credentials.
 
 ![Scripting password sign in with the Amazon Cognito user pool](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-password-sign-in.png)
 
-### LWA device sign in flow
+### Login with Amazon device sign-in flow
 
 ![Scripting LWA device sign in](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-lwa-device-sign-in.png)
 
