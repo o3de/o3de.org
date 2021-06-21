@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">preview</span>
+   &#160;<span id="projectnumber">2106</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -70,18 +70,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a734b72d96a8148c7a01784183b4ab21f"><td class="memItemLeft" align="right" valign="top"><a id="a734b72d96a8148c7a01784183b4ab21f"></a>
 NetEntityRole&#160;</td><td class="memItemRight" valign="bottom"><b>GetNetEntityRole</b> () const</td></tr>
 <tr class="separator:a734b72d96a8148c7a01784183b4ab21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d9ed880ee56c313ebdfab51a7f447dc"><td class="memItemLeft" align="right" valign="top"><a id="a1d9ed880ee56c313ebdfab51a7f447dc"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAuthority</b> () const</td></tr>
-<tr class="separator:a1d9ed880ee56c313ebdfab51a7f447dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada274827d1fd0905abaa9de7becccdf7"><td class="memItemLeft" align="right" valign="top"><a id="ada274827d1fd0905abaa9de7becccdf7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAutonomous</b> () const</td></tr>
-<tr class="separator:ada274827d1fd0905abaa9de7becccdf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853e4a6235261d278dd51ed43174242a"><td class="memItemLeft" align="right" valign="top"><a id="a853e4a6235261d278dd51ed43174242a"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsServer</b> () const</td></tr>
-<tr class="separator:a853e4a6235261d278dd51ed43174242a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab14f6a5cd41af7d13dc1111816f79c31"><td class="memItemLeft" align="right" valign="top"><a id="ab14f6a5cd41af7d13dc1111816f79c31"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsClient</b> () const</td></tr>
-<tr class="separator:ab14f6a5cd41af7d13dc1111816f79c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2b3ff9eca491ba1184416cec061780e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#ae2b3ff9eca491ba1184416cec061780e">IsNetEntityRoleAuthority</a> () const</td></tr>
+<tr class="separator:ae2b3ff9eca491ba1184416cec061780e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840bf52798c9ed92fe182a0ba721e000"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#a840bf52798c9ed92fe182a0ba721e000">IsNetEntityRoleAutonomous</a> () const</td></tr>
+<tr class="separator:a840bf52798c9ed92fe182a0ba721e000"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8314a86781906ce2fd27bf46d9d7974d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#a8314a86781906ce2fd27bf46d9d7974d">IsNetEntityRoleServer</a> () const</td></tr>
+<tr class="separator:a8314a86781906ce2fd27bf46d9d7974d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6bbd395672e3ec91451a4641937eff6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#ad6bbd395672e3ec91451a4641937eff6">IsNetEntityRoleClient</a> () const</td></tr>
+<tr class="separator:ad6bbd395672e3ec91451a4641937eff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada96b9408827bd9bb31c56c790dbb546"><td class="memItemLeft" align="right" valign="top"><a id="ada96b9408827bd9bb31c56c790dbb546"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasController</b> () const</td></tr>
 <tr class="separator:ada96b9408827bd9bb31c56c790dbb546"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,13 +252,86 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityReplicationMan
 
 </div>
 </div>
+<a id="ae2b3ff9eca491ba1184416cec061780e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2b3ff9eca491ba1184416cec061780e">&#9670;&nbsp;</a></span>IsNetEntityRoleAuthority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Multiplayer::NetBindComponent::IsNetEntityRoleAuthority </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IsNetEntityRoleAuthority </p><dl class="section return"><dt>Returns</dt><dd>true if this network entity is an authoritative proxy on a server (full authority); otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a840bf52798c9ed92fe182a0ba721e000"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840bf52798c9ed92fe182a0ba721e000">&#9670;&nbsp;</a></span>IsNetEntityRoleAutonomous()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Multiplayer::NetBindComponent::IsNetEntityRoleAutonomous </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IsNetEntityRoleAutonomous </p><dl class="section return"><dt>Returns</dt><dd>true if this network entity is an autonomous proxy on a client (can execute local prediction) or if this network entity is an authoritative proxy on a server but has autonomous privileges (ie: a host who is also a player); otherwise false. <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="ad6bbd395672e3ec91451a4641937eff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6bbd395672e3ec91451a4641937eff6">&#9670;&nbsp;</a></span>IsNetEntityRoleClient()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Multiplayer::NetBindComponent::IsNetEntityRoleClient </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IsNetEntityRoleClient </p><dl class="section return"><dt>Returns</dt><dd>true if this network entity is a simulated proxy on a client; otherwise false. </dd></dl>
+
+</div>
+</div>
+<a id="a8314a86781906ce2fd27bf46d9d7974d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8314a86781906ce2fd27bf46d9d7974d">&#9670;&nbsp;</a></span>IsNetEntityRoleServer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Multiplayer::NetBindComponent::IsNetEntityRoleServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>IsNetEntityRoleServer </p><dl class="section return"><dt>Returns</dt><dd>true if this network entity is a simulated proxy on a server (ie: a different server may have authority for this entity, but the entity has been replicated on this server; otherwise false. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/Components/NetBindComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 13 2021 13:21:55 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
