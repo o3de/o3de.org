@@ -30,33 +30,33 @@ Get an error message from the **OnError** handler.
 
 Input data pins:
 
-* Bucket name
-* Object name
+* Bucket Resource KeyName
+* Object KeyName
 
-Get success message from **OnSuccess** handler.
+Get a success message from the **OnSuccess** handler.
 
-Get error message from **OnError** handler.
+Get an error message from the **OnError** handler.
 
 ![Scripting AWS S3 HeadObject node](/images/user-guide/gems/reference/aws/aws-core/scripting-s3-head-object.png)
 
-## AWS DynamoDB
+## Amazon DynamoDB
 
 ### GetItem
 
 Input data pins:
 
-* Table name
-* Key
+* Table Resource KeyName
+* Key Map
 
 Key map variable format:
 
 ![GetItem - Key variable properties](/images/user-guide/gems/reference/aws/aws-core/scripting-dynamodb-get-item-key-variable.png)
 
-See [https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html).
+Refer to [AttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) in the Amazon DynamoDB API Reference.
 
-Get result in `AttributeValue` map from **OnSuccess** handler.
+Get a result in the `AttributeValue` map from the **OnSuccess** handler.
 
-Get error message from **OnError** handler.
+Get an error message from the **OnError** handler.
 
 ![Scripting AWS DynamoDB GetItem node](/images/user-guide/gems/reference/aws/aws-core/scripting-dynamodb-get-item.png)
 
@@ -66,11 +66,11 @@ Get error message from **OnError** handler.
 
 Input data pins:
 
-* Function name
-* Function payload
+* Function Resource KeyName
+* Payload
 
-Get function return value from **OnSuccess** handler.
+Get the function return value from the **OnSuccess** handler.
 
-Get error message from **OnError** handler.
+Get an error message from the **OnError** handler.
 
 ![Scripting AWS Lambda Invoke node](/images/user-guide/gems/reference/aws/aws-core/scripting-lambda-invoke.png)
