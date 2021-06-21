@@ -37,4 +37,4 @@ In the O3DE UI component library, you will find an explanation of each UI compon
 + [Toggle switch](uidev-toggle-switch-component.md)
 + [Tree view](uidev-tree-view-component.md)
 
-Additionally, a complete guide to the C\+\+ API can be found in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html)\.
+Additionally, a complete guide to the C\+\+ API can be found in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html)\.

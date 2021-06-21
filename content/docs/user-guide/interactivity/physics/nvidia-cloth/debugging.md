@@ -6,10 +6,6 @@ weight: 500
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is in [preview](/docs/userguide/ly-glos-chap#preview) release and is subject to change\.  |
-
 ![\[Debug visualization of the NVIDIA Cloth component\]](/images/user-guide/physx/cloth/ui-cloth-component-debug.png)
 
 To enable debug cloth visualization, use the following console variables \(CVARs\) in the editor console\.
@@ -39,3 +35,9 @@ Draw the cloth motion constraints\.
 Draw the cloth backstop\.
 **0**: Disable backstop display\.
 **1**: Enable backstop display\.
+
+**`cloth_DistanceToTeleport <meters>`**
+The amount of meters the entity has to move in a frame to consider it a teleport for cloth\.
+
+**`cloth_SecondsToDelaySimulationOnActorSpawned <seconds>`**
+The amount of time in seconds the cloth simulation will be delayed to avoid sudden impulses when actors are spawned\.

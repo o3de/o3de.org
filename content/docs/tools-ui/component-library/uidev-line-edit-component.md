@@ -71,7 +71,7 @@ lineEdit->setClearButtonEnabled(true);
 
 ![\[component line edit search style\]](/images/tools-ui/component-line-edit-search-style.png)
 
-The `AzQtComponents::LineEdit` class provides several static style functions that apply a style to a `QLineEdit` widget\. One example is the search style, which adds a search icon\. Additional styles are documented in the API reference for [AzQtComponents::LineEdit](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_line_edit.html)\.
+The `AzQtComponents::LineEdit` class provides several static style functions that apply a style to a `QLineEdit` widget\. One example is the search style, which adds a search icon\. Additional styles are documented in the API reference for [AzQtComponents::LineEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_line_edit.html)\.
 
  **Example**
 
@@ -178,8 +178,8 @@ lineEdit->setEnabled(false);
 
 ## C\+\+ API reference<a name="line-edit-api-ref"></a>
 
-For details on the **line edit** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
-+  [AzQtComponents::LineEdit](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_line_edit.html)
+For details on the **line edit** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::LineEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_line_edit.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QLineEdit Class](https://doc.qt.io/qt-5/qlineedit.html)

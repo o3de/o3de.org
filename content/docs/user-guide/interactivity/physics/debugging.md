@@ -9,7 +9,7 @@ weight: 1000
 The PhysX system has the following features that you can use to debug issues\.
 
 **Note**
-You must first enable the [PhysX Debug](/docs/user-guide/gems/physx-debug.md) gem\.
+You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/) gem\.
 
 **Topics**
 + [PhysX Debug Console Variables](#debugging-physx-console-variables)

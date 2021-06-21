@@ -103,16 +103,16 @@ sliderDoubleCombo->setRange(-1.0, 100.0);
 
 ## C\+\+ API reference<a name="sliders-api-ref"></a>
 
-For details on the **slider** API's, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html):
+For details on the **slider** API's, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 
  **Slider:**
-+  [AzQtComponents::Slider](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider.html)
-+  [AzQtComponents::SliderInt](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_int.html)
-+  [AzQtComponents::SliderDouble](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_double.html)
++  [AzQtComponents::Slider](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_slider.html)
++  [AzQtComponents::SliderInt](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_slider_int.html)
++  [AzQtComponents::SliderDouble](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_slider_double.html)
 
  **Slider combo:**
-+  [AzQtComponents::SliderCombo](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_combo.html)
-+  [AzQtComponents::SliderDoubleCombo](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/class_az_qt_components_1_1_slider_double_combo.html)
++  [AzQtComponents::SliderCombo](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_slider_combo.html)
++  [AzQtComponents::SliderDoubleCombo](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_slider_double_combo.html)
 
 Relevant Qt documentation includes the following topics:
 +  [QSlider Class](https://doc.qt.io/qt-5/qslider.html)

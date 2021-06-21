@@ -7,9 +7,9 @@ title: Cloth component
 
 The **Cloth** component treats the vertices of any mesh that it references as cloth particles and applies physical properties, forces, and constraints to simulate the behavior of cloth\. You can add this component to any entity that has **Mesh** or **Actor** components\. You can add multiple cloth components to an entity\.
 
-The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md)\.
+The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/)\.
 
-For information on using the **Cloth** component see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
+For information on using the **Cloth** component see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/)\.
 
 **Contents**
 + [Base properties](#component-cloth-base-properties)
@@ -300,3 +300,6 @@ Number of iterations to average the delta time factor used for gravity and exter
 
 **Remove static triangles**
 Enable to remove triangles composed of static cloth particles\. Enabling this property improves performance, however the removed static cloth particles will not be present for collision and self collision calculations\.
+
+**Update normals of static particles**
+When enabled the normals of static particles will be updated according with the movement of the simulated mesh\. When disabled the static particles will keep the same normals as the original mesh\.

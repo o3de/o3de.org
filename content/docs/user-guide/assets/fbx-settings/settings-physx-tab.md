@@ -17,8 +17,8 @@ There are many options for creating PhysX collider assets\. The *best* options i
 + [Primitive asset properties](#fbx-importer-physx-tab-primitive-properties)
 + [Decomposition properties](#fbx-importer-physx-tab-decomposition-properties)
 + [PhysX modifiers](#fbx-settings-physx-modifiers)
-+ [Comment modifier](#w31aac15b9c11c17c23)
-+ [Origin modifier](#w31aac15b9c11c17c25)
+    + [Comment modifier](#w31aac15b9c11c17c23)
+    + [Origin modifier](#w31aac15b9c11c17c25)
 
 ## PhysX tab properties {#fbx-importer-physx-tab-base-properties}
 
@@ -40,6 +40,9 @@ The cooking method to apply to this **PhysX mesh group**\. This setting exposes 
 + Convex \- Generate convex hull colliders based on the selected meshes\.
 + Primitive \- Fit primitive colliders based on the selected meshes\.
 Triangle mesh colliders can only be used with static and kinematic entities\. To use the PhysX collider asset with dynamic entities \(entities that have a **PhysX Rigid Body** component\), choose **Convex** or **Primitive** for the **Export as** property\.
+
+****Physics Materials****
+Associate a physics material to each material from the selected meshes\.
 
 ## Triangle mesh asset properties {#fbx-importer-physx-tab-triangle-properties}
 
@@ -178,13 +181,13 @@ When enabled, the output convex hull vertices are projected onto the original so
 
 Modifiers can be added to a **PhysX mesh group** by choosing the **Add Modifier** button, and selecting a modifier from the list\.
 
-## Comment modifier {#w31aac15b9c11c17c23}
+### Comment modifier {#w31aac15b9c11c17c23}
 
 ![\[The FBX Settings PhysX tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\.
 
-## Origin modifier {#w31aac15b9c11c17c25}
+### Origin modifier {#w31aac15b9c11c17c25}
 
 ![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 

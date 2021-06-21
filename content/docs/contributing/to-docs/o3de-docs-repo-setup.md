@@ -116,14 +116,14 @@ Now you can *sync* your clone. Syncing is the process of pulling the latest chan
     git push origin
     ```
 
-1. If you are working in a branch, refer to [Maintian your branch](#maintain-your-branch) for information on syncing your branch.
+1. If you are working in a branch, refer to [Maintain your branch](#maintain-your-branch) for information on syncing your branch.
 
 #### Option 2: Pull to your branch directly from `o3de:main`
 
 1. Set the upstream of your branch to `o3de:main`. You only need to do this step one time.
 
     ```shell
-    `git branch -M main upstream/main`
+    git switch -c main upstream/main
     ```
 
 1. Fetch the latest upstream commits from `o3de.org:main`.
