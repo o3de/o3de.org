@@ -8,7 +8,7 @@ menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.svg"
 ---
 
-The current version of Open 3D Engine is 2107.1 (alpha). Check out the [known issues](2107-1-release-notes) here.
+The current version of Open 3D Engine is 2107.1 (alpha). Check out the [known issues](2107-1-known-issues.md) here.
 
 ## Highlights
 

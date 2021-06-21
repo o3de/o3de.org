@@ -12,15 +12,15 @@ guide_img: "/images/release-notes/guide_img.png"
 
 ### Download the latest version
 
-| Version      | Binary download link          |  Date of Release   |
-|--------------|-------------------------------|--------------------|
-| 2107.1 (alpha) | Not available                 |  May 10, 2021      |
+| Version        | Binary download link          |  Date of Release   |
+|----------------|-------------------------------|--------------------|
+| 2107.1 (alpha) | [NEED LINK TO BINARY]         |  July 6, 2021      |
 
 ### Get the latest source code
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| 2107.1 (alpha) | [2107.1](https://github.com/aws-lumberyard/o3de/tree/0.5) |  May 10, 2021      |
+| 2107.1 (alpha) | [2107.1 LINK NEEDS UPDATE](https://github.com/aws-lumberyard/o3de/tree/0.5) |  July 6, 2021      |
 
 ### 2107.1 (alpha) Release Information
 
