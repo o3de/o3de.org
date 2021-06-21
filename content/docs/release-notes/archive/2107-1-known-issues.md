@@ -1,14 +1,14 @@
 ---
-linktitle: v0.5.0 Known Issues
-title: Known Issues for Open 3D Engine v0.5.0 (alpha)
-description: Find out the known issues in O3DE v0.5.0 (alpha).
+linktitle: 2107.1 Known Issues
+title: Known Issues for Open 3D Engine 2107.1 (alpha)
+description: Find out the known issues in 2107.1 (alpha).
 weight: 102
 toc: true
 menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.svg"
 ---
 
-Open 3D Engine (O3DE) Release v0.5.0 (alpha) has the following known issues:
+Open 3D Engine (O3DE) Release 2107.1 (alpha) has the following known issues:
 
 ## AI
 
@@ -106,14 +106,14 @@ The following errors occur using RHI with Vulkan on Android platforms:
     {{< /note >}}
 * If the PhysX TGS solver is enabled, ragdolls with high position or velocity iteration counts can become unstable. Note that PhysX internally groups together nearby bodies for simulation and uses the highest iteration counts of any object in the grouping, so ragdolls with high iteration counts may affect other nearby ragdolls.
 * V-HACD Mesh Decomposition:
-    * Mesh decomposition is only available if the export type is selected as Convex or Primitive.
-    * The actual results achieved by the decomposition depend mostly on the V-HACD library and are out of our control.
+  * Mesh decomposition is only available if the export type is selected as Convex or Primitive.
+  * The actual results achieved by the decomposition depend mostly on the V-HACD library and are out of our control.
 * Importing from FBX as Primitive with automatic **Target Shape**:
-    * Almost any FBX mesh will be exportable, but the accuracy of the result will depend on how close the mesh is to one of the supported primitives.
-    * O3DE will attempt to fix one primitive for each node selected for export. It will not recognize multiple primitive shapes contained within the same node.
-    * The algorithm considers only the vertices of the mesh, not edges/faces. Apart from some edge cases, this is usually sufficient, but the user may need to configure the export parameters correctly before a desirable result is obtained.
-    * The algorithm is subject to mathematical restrictions and does not work well if the mesh has extreme proportions or sizes. Likewise, a vertex cloud that predominantly occupies a lower dimension subspace (plane, line or point) will not work well.
-    * Non-uniform scaling of automatically fitted primitive colliders can have unintuitive behavior and is not recommended.
+  * Almost any FBX mesh will be exportable, but the accuracy of the result will depend on how close the mesh is to one of the supported primitives.
+  * O3DE will attempt to fix one primitive for each node selected for export. It will not recognize multiple primitive shapes contained within the same node.
+  * The algorithm considers only the vertices of the mesh, not edges/faces. Apart from some edge cases, this is usually sufficient, but the user may need to configure the export parameters correctly before a desirable result is obtained.
+  * The algorithm is subject to mathematical restrictions and does not work well if the mesh has extreme proportions or sizes. Likewise, a vertex cloud that predominantly occupies a lower dimension subspace (plane, line or point) will not work well.
+  * Non-uniform scaling of automatically fitted primitive colliders can have unintuitive behavior and is not recommended.
 * PhysX parameter changes in the **PhysX Configuration** window may only take effect when the editor is restarted.
 * Using multiple ragdolls with pose moves may result in poor performance.
 * Entity transforms would not be updated correctly for ragdolls if physics is disabled on the character controller.

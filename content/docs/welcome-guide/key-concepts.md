@@ -64,7 +64,7 @@ All of O3DE's Gems and systems, as well as the components in your projects, need
 
 As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them-​and specifically, to invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces (buses) that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
 
-The two types of EBusses are:
+The two types of EBuses are:
 
 + Request bus: This EBus type registers a handler for a method that can be called by other systems.
 + Notification bus: This EBus type provides a messaging interface for notifications that systems can publish or subscribe to.

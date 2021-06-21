@@ -58,10 +58,8 @@ when an individual is representing the project or its community.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior in O3DE may be reported by contacting the [O3DE Code of Conduct Committee](https://github.com/o3de/foundation/tree/main/committee/committee-code-of-conduct) via <conduct@o3de.org>. For other projects, please contact a CNCF project maintainer.
 
-This Code of Conduct is adapted from the Contributor Covenant
-(http://contributor-covenant.org), version 1.2.0, available at
-http://contributor-covenant.org/version/1/2/0/
+This Code of Conduct is adapted from the [Contributor Covenant](http://contributor-covenant.org), version 1.2.0, available [here](http://contributor-covenant.org/version/1/2/0/).
 
 ### CNCF Events Code of Conduct
 
-CNCF events are governed by the Linux Foundation [Code of Conduct](https://events.linuxfoundation.org/code-of-conduct/) available on the event page. This is designed to be compatible with the above policy and also includes more details on responding to incidents.
+CNCF events are governed by the Linux Foundation [Code of Conduct](https://events.linuxfoundation.org/code-of-conduct/) available on the event page. This is designed to be compatible with the above policy and also includes more details on responding to incidents
