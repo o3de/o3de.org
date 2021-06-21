@@ -40,7 +40,6 @@ O3DE ships with the following Gems that are ready to be enabled:
 + [NVIDIA Cloth Gem](/docs/user-guide/gems/reference/nvidia-cloth/)
 + [Physically Based Shaders \(PBS\) Gem](/docs/userguide/gems/builtin/pbs)
 + [PhysX](/docs/user-guide/gems/reference/physx/)
-+ [PhysX Characters](/docs/user-guide/gems/reference/physx-characters/)
 + [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)
 + [Physics Entities Gem](/docs/userguide/gems/builtin/physics)
 + [Primitive Assets Gem](/docs/user-guide/gems/primitive-assets)

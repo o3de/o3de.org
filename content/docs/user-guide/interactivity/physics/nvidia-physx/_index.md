@@ -31,9 +31,6 @@ The PhysX system uses the following gems, which you can [enable](/docs/userguide
 + **[PhysX](/docs/user-guide/gems/reference/physx/)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into O3DE\. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games\.
 
   For more information, see [PhysX](/docs/user-guide/gems/reference/physx/)\.
-+ **[PhysX Characters](/docs/user-guide/gems/reference/physx-characters/)** - Provides integration for character controllers and ragdolls\. To enable the PhysX Characters gem, you must first enable the [PhysX](/docs/user-guide/gems/reference/physx/) gem\.
-
-  For more information, see [PhysX Characters](/docs/user-guide/gems/reference/physx-characters/)\.
 + **[PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools\.
 
   For more information, see [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)\.
@@ -41,20 +38,22 @@ The PhysX system uses the following gems, which you can [enable](/docs/userguide
 ## PhysX Components {#physx-intro-physx-components}
 
 The **PhysX** gem has the following components, which you can [add](/docs/userguide/components/working-adding.md) to entities by using the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector.md):
-+ **[PhysX Collider](/docs/user-guide/components/physx-collider.md)** - Enables physics objects to collide with other physics objects\. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider\.
-+ **[PhysX Force Region](/docs/user-guide/components/physx-force-region.md)** - Enables an entity to specify a region that applies physical force to entities\. For each physics simulation frame, the component applies force to entities that are in the bounds of the region\.
-+ **[PhysX Rigid Body](/docs/user-guide/components/physx-rigid-body-physics.md)** - Enables an entity to be simulated by physics\. Rigid body mode can be **kinematic** or **dynamic**\. Dynamic rigid bodies respond to collision events with other rigid bodies\. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting\.
-+ **[PhysX Terrain](/docs/user-guide/components/physx-terrain.md)** - Implements physical interaction with the terrain\. It exports terrain and saves it as an asset that loads at runtime\.
-
-The **PhysX Characters** gem has the following components:
-+ **[PhysX Character Controller](/docs/user-guide/components/physx-character-controller.md)** - Implements basic character interactions with the physical world\. For example, it can control interactions with slopes and steps, manage interactions with other characters, and prevent characters from walking through walls or passing through terrain\.
-+ **[PhysX Ragdoll](/docs/user-guide/components/physx-ragdoll.md)** - Enables animation of certain character behaviors\. The physical representation is usually a hierarchical collection of rigid bodies with simple shapes connected by joints\.
++ **[PhysX Collider](/docs/user-guide/components/reference/physx-collider.md)** - Enables physics objects to collide with other physics objects\. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider\.
++ **[PhysX Shape Collider](/docs/user-guide/components/reference/physx-shape-collider.md)** - Enables physics objects to collide with other physics objects, using geometry defined by a **[Shape component](/docs/user-guide/components/reference/shape/)**. An entity that does not have a **PhysX Rigid Body Physics** component is a **static** collider, while an entity with the component is a **dynamic** collider\.
++ **[PhysX Force Region](/docs/user-guide/components/reference/physx-force-region.md)** - Enables an entity to specify a region that applies physical force to entities\. For each physics simulation frame, the component applies force to entities that are in the bounds of the region\.
++ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx-rigid-body-physics.md)** - Enables an entity to be simulated by physics\. Rigid body mode can be **kinematic** or **dynamic**\. Dynamic rigid bodies respond to collision events with other rigid bodies\. Kinematic rigid bodies are not affected by outside forces and gravity; their motion is driven by scripting\.
++ **[PhysX Character Controller](/docs/user-guide/components/reference/physx-character-controller.md)** - Implements basic character interactions with the physical world\. For example, it can control interactions with slopes and steps, manage interactions with other characters, and prevent characters from walking through walls or passing through terrain\.
++ PhysX Character Gameplay - Provides example implementations for character controller behaviors which are likely to require game-specific tweaking, such as detecting whether the character is on the ground, interacting with gravity, and behavior for interacting with kinematic bodies and other controllers. 
++ **[PhysX Ragdoll](/docs/user-guide/components/reference/physx-ragdoll.md)** - Enables animation of certain character behaviors\. The physical representation is usually a hierarchical collection of rigid bodies with simple shapes connected by joints\.
++ **[PhysX Ball Joint](/docs/user-guide/components/reference/physx-ball-joint.md)** - Creates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.
++ **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx-fixed-joint.md)** - Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis.
++ **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx-hinge-joint.md)** - Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.
 
 ## PhysX Configuration {#physx-intro-configuration}
 
 Use the **PhysX Configuration** window in O3DE Editor to configure global settings, collision layers, collision groups, and PhysX Visual Debugger settings\.
 
-For more information, see [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuration.md)\.
+For more information, see [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/)\.
 
 ## PhysX Materials {#physx-intro-materials}
 
@@ -70,6 +69,6 @@ To verify the implementation of interactions in the simulated world, the followi
   For more information, see [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/)\.
 + **PhysX Visual Debugger** - The [PhysX Visual Debugger \(PVD\)](https://developer.nvidia.com/physx-visual-debugger) is a third party tool provided by NVIDIA that is useful for deep inspection of the PhysX world\. O3DE can connect PhysX worlds and scenes to a running PVD application instance\. You can use the PVD to step through your simulation and examine various properties at your own pace in detail\.
 
-  For information on configuring O3DE's connection to PVD, see [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.
+  For information on configuring O3DE's connection to PVD, see [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md)\.
 
 For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md)\.
