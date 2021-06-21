@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">preview</span>
+   &#160;<span id="projectnumber">2106</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -117,6 +117,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements a UDP network interface. </p>
+<p><a class="el" href="class_az_networking_1_1_udp_network_interface.html" title="This class implements a UDP network interface.">UdpNetworkInterface</a> is an implementation of <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">AzNetworking::INetworkInterface</a>. Since UDP is a very bare bones protocol, the Open 3D Engine implementation has to provide significantly more than its TCP counterpart (since TCP implements a significant number of reliability features.)</p>
+<p>When sent through UDP, a packet can have additional actions performed on it depending on which features are enabled and configured. Each feature listed in this description is in the order a packet will see them on Send.</p>
+<h3><a class="anchor" id="autotoc_md5"></a>
+Packet structure</h3>
+<p>The general structure of a UDP packet is:</p>
+<ul>
+<li>Flags - A bitfield a receiving endpoint can quickly inspect to learn about configuration of a packet</li>
+<li>Header - Details the type of packet and other information related to reliability</li>
+<li>Payload - The actual serialized content of the packet</li>
+</ul>
+<p>For more information, read <a href="http://docs.o3de.org/docs/user-guide/networking/packets">Networking Packets</a> in the O3DE documentation.</p>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Reliability</h3>
+<p>UDP packets can be sent reliably or unreliably. Reliably sent packets are registered for tracking first. This causes the reliable packet to be resent if a timeout on the packet is reached. Once the packet is acknowledged, the packet is unregistered.</p>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Fragmentation</h3>
+<p>If the raw packet size exceeds the configured maximum transmission unit (MTU) then the packet is broken into multiple reliable fragments to avoid fragmentation at the routing level. Fragments are always reliable so the original packet can be reconstructed. Operations that alter the payload generally follow this step so that they can be separately applied to the Fragments in addition to not being applied to both the original and Fragments.</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Compression</h3>
+<p>Compression here refers to content insensitive compression using libraries like LZ4. If enabled, the target payload is run through the compressor and replaces the original payload if it's in fact smaller. To tell if compression is enabled on a given packet, we operate on a bit in the packet's Flags. The Sender writes this bit while the Receiver checks it to see if a packet needs to be decompressed.</p>
+<p>O3DE could potentially move from over MTU to under with compression, and the UDP interface doesn't check for this. Detecting a change that would reduce the number of fragmented packets would require pre-emptively compressing payloads to tell if that change happened, which could potentially lead to a lot of unnecessary calls to the compressor.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Encryption</h3>
+<p>AzNetworking uses the <a href="https://www.openssl.org/">OpenSSL</a> library to implement Datagram Layer Transport Security (DTLS) encryption on UDP traffic. Encryption operates as described in <a href="http://docs.o3de.org/docs/user-guide/networking/encryption">O3DE Networking Encryption</a> on the documentation website. Once both endpoints have completed their handshake, all traffic is expected to be fully encrypted. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2203eed45354db8458db3c74a975fb34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2203eed45354db8458db3c74a975fb34">&#9670;&nbsp;</a></span>UdpNetworkInterface()</h2>
@@ -327,7 +351,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
   </tr>
 </table>
 </div><div class="memdoc">
-<p><a class="el" href="class_az_networking_1_1_i_network_interface.html" title="pure virtual network interface class to abstract client/server and tcp/udp concerns from application ...">INetworkInterface</a> interface. </p>
+<p><a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a> interface. </p>
 
 <p>Implements <a class="el" href="class_az_networking_1_1_i_network_interface.html#aeb89ae9cb1f7901dc19c2c1f821d0122">AzNetworking::INetworkInterface</a>.</p>
 
@@ -603,7 +627,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Updates the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="pure virtual network interface class to abstract client/server and tcp/udp concerns from application ...">INetworkInterface</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Updates the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deltaTimeMs</td><td>milliseconds since update was last invoked </td></tr>
   </table>
@@ -666,7 +690,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>UdpConnection</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 13 2021 13:23:17 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:30 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

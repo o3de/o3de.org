@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">preview</span>
+   &#160;<span id="projectnumber">2106</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -53,7 +53,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>pure virtual network interface class to abstract client/server and tcp/udp concerns from application code.  
+<p>Network interface class to abstract client/server and protocol concerns from application code.  
  <a href="class_az_networking_1_1_i_network_interface.html#details">More...</a></p>
 
 <p><code>#include &lt;INetworkInterface.h&gt;</code></p>
@@ -97,7 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abc812b9d417c4beb84f1bd8c489f7778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>pure virtual network interface class to abstract client/server and tcp/udp concerns from application code. </p>
+<div class="textblock"><p>Network interface class to abstract client/server and protocol concerns from application code. </p>
+<p><a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a> provides an abstract API capable of receiving and opening <a class="el" href="class_az_networking_1_1_i_connection.html" title="interface class for network connections.">IConnection</a> objects, sending <a class="el" href="class_az_networking_1_1_i_packet.html" title="Base class for all packets.">IPacket</a> objects with optional reliability, and determining the delivery status of packets that have been sent unreliably (delivery of reliable packets is guaranteed as long as the associated connection remains open). <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a> must be provided an <a class="el" href="class_az_networking_1_1_i_connection_listener.html" title="interface class for application layer dealing with connection level events.">IConnectionListener</a> instance that outlives the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a> itself. The <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a> also creates and manages the <a class="el" href="class_az_networking_1_1_i_connection_set.html" title="interface class for managing a set of connections.">IConnectionSet</a>, which tracks all open connections bound to the interface. <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a> also provides GetMetrics functions which can be used to fetch a struct detailing a variety of metrics relating to send and receive rates for both packets and bytes in addition to the effect of features on those rates (such as packet size reduction due to compression.) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a81d1e6904b2288456b9ede5e36c0e8aa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81d1e6904b2288456b9ede5e36c0e8aa">&#9670;&nbsp;</a></span>Connect()</h2>
@@ -130,7 +131,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the connectionId of the new connection, or InvalidConnectionId if the operation failed </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ab172981b147bb5965e53c311267c63b6">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a864d587dabeb0ac93556f8b33273180d">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a864d587dabeb0ac93556f8b33273180d">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ab172981b147bb5965e53c311267c63b6">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -176,7 +177,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true on success </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a6563b9451b2e9173e907256cd08a7ed8">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a06c314ac0ef88dced460596eecebe7f0">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a06c314ac0ef88dced460596eecebe7f0">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a6563b9451b2e9173e907256cd08a7ed8">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -204,7 +205,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns a reference to the connection listener for this network interface. </p><dl class="section return"><dt>Returns</dt><dd>reference to the connection listener for this network interface </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a3baa23e5fe3d3e18c42928839530ccb1">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a24d913a3be201fa8277e172f510ff652">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a24d913a3be201fa8277e172f510ff652">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a3baa23e5fe3d3e18c42928839530ccb1">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -232,7 +233,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the connection set for this network interface. </p><dl class="section return"><dt>Returns</dt><dd>the connection set for this network interface </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ae315636ecd5aff5408df2009913fd233">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a0eebc4a0e69faa908a703ad92ee59d4a">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a0eebc4a0e69faa908a703ad92ee59d4a">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ae315636ecd5aff5408df2009913fd233">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -304,7 +305,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves the name of this network interface instance. </p><dl class="section return"><dt>Returns</dt><dd>the name of this network interface instance </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a3283865f91097f481a162ac8db7dcd44">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a08f0cf7417b334f17df10ced609dc4c2">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a08f0cf7417b334f17df10ced609dc4c2">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a3283865f91097f481a162ac8db7dcd44">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -332,7 +333,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the port number this network interface is bound to. </p><dl class="section return"><dt>Returns</dt><dd>the port number this network interface is bound to </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a525f1d7b413fe747526aa170c4b020d1">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ade2919f4f0f4ce0bf31d341cc17e4898">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ade2919f4f0f4ce0bf31d341cc17e4898">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a525f1d7b413fe747526aa170c4b020d1">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -360,7 +361,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves the trust zone for this network interface instance. </p><dl class="section return"><dt>Returns</dt><dd>the trust zone for this network interface instance </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#aa7afe36aae78c31a9c5f62777fac5957">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#affd446250d821c8aa9984270d30c8fb8">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#affd446250d821c8aa9984270d30c8fb8">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#aa7afe36aae78c31a9c5f62777fac5957">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -388,7 +389,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves the type of this network interface instance. </p><dl class="section return"><dt>Returns</dt><dd>the type of this network interface instance </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a0c897c2b78de2de705dc0a513d88c112">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a53d5e61b3a7d10fe677aa5c969c21a4b">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a53d5e61b3a7d10fe677aa5c969c21a4b">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a0c897c2b78de2de705dc0a513d88c112">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -423,7 +424,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true if the operation was successful, false if it failed </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a35a0c996ff19072ca8b28100b45c08ae">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a31946b1725e333b968a1e432db8641ef">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a31946b1725e333b968a1e432db8641ef">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a35a0c996ff19072ca8b28100b45c08ae">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -469,7 +470,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true if the packet was transmitted (not an indication of delivery) </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#aaee40bcdb760214d4d159082b02fdbcb">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ab818227340221e76f95e67a6b9a8aca2">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ab818227340221e76f95e67a6b9a8aca2">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#aaee40bcdb760214d4d159082b02fdbcb">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -515,7 +516,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the unreliable packet identifier of the transmitted packet </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a208aa867e1e6604e93a83fc0a9b6a70b">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a3b114c42750dd1c6afed11bcf5a60756">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a3b114c42750dd1c6afed11bcf5a60756">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a208aa867e1e6604e93a83fc0a9b6a70b">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -542,14 +543,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Updates the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="pure virtual network interface class to abstract client/server and tcp/udp concerns from application ...">INetworkInterface</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Updates the <a class="el" href="class_az_networking_1_1_i_network_interface.html" title="Network interface class to abstract client/server and protocol concerns from application code.">INetworkInterface</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">deltaTimeMs</td><td>milliseconds since update was last invoked </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a158364b5516ec3160f0b3b76c096be33">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ae7cb42cedb625a3b43936f035e7843cd">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ae7cb42cedb625a3b43936f035e7843cd">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a158364b5516ec3160f0b3b76c096be33">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -595,7 +596,7 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>boolean true if the packet is confirmed acknowledged, false if the packet number is out of range, lost, or still pending acknowledgment </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ada9aeb6fe8536fb4f85b9ccac6beea99">AzNetworking::TcpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a962021d19f08b7d04ffa9b3dcb351df0">AzNetworking::UdpNetworkInterface</a>.</p>
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a962021d19f08b7d04ffa9b3dcb351df0">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ada9aeb6fe8536fb4f85b9ccac6beea99">AzNetworking::TcpNetworkInterface</a>.</p>
 
 </div>
 </div>
@@ -605,7 +606,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 13 2021 13:23:16 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:29 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

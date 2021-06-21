@@ -20,7 +20,7 @@
   <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Multiplayer Gem API Reference
-   &#160;<span id="projectnumber">preview</span>
+   &#160;<span id="projectnumber">2106</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -86,6 +86,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> provides insight into the Multiplayer session and its Agents. </p>
+<p><a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> is an AZ::Interface&lt;T&gt; that provides applications access to multiplayer session information and events. <a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> is implemented on the MultiplayerSystemComponent and is used to define and access information about the type of session and the role held by the current agent. An Agent is defined here as an actor in a session. Types of Agents included by default are a Client, a Client Server and a Dedicated Server.</p>
+<p><a class="el" href="class_multiplayer_1_1_i_multiplayer.html" title="IMultiplayer provides insight into the Multiplayer session and its Agents.">IMultiplayer</a> also provides events to allow developers to receive and respond to notifications relating to the session. These include Session Init and Shutdown and on acquisition of a new connection. These events are only fired on Client Server or Dedicated Server. These events are useful for services that talk to matchmaking services that may run in an entirely different layer which may need insight to the gameplay session. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2a5cf5ec4a68f412e289de2236184486"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a5cf5ec4a68f412e289de2236184486">&#9670;&nbsp;</a></span>AddConnectionAcquiredHandler()</h2>
@@ -388,7 +390,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 13 2021 13:21:55 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
