@@ -1,14 +1,14 @@
 ---
-linktitle: v0.5.0 Known Issues
-title: Known Issues for Open 3D Engine v0.5.0 (alpha)
-description: Find out the known issues in O3DE v0.5.0 (alpha).
+linktitle: 2107.1 Known Issues
+title: Known Issues for Open 3D Engine 2107.1 (alpha)
+description: Find out the known issues in 2107.1 (alpha).
 weight: 102
 toc: true
 menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.svg"
 ---
 
-Open 3D Engine (O3DE) Release v0.5.0 (alpha) has the following known issues:
+Open 3D Engine (O3DE) Release 2107.1 (alpha) has the following known issues:
 
 ## AI
 
