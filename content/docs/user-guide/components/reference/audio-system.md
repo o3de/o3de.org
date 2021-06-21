@@ -7,7 +7,7 @@ The Audio System Component exposes an API that is used for working with audio at
 
 ## EBuses
 
-The Audio System component works with the following request busses.
+The Audio System component works with the following request buses.
 
 ### Request Bus Interface
 
