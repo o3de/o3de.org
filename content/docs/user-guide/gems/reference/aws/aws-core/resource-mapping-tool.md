@@ -88,10 +88,10 @@ You have two options for which Python runtime to use - your own, or the one incl
 
 This project is set up like a standard Python project. The initialization process also creates a `virtualenv` virtual environment within this project, stored under the `.venv` directory. To create the `virtualenv`, you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If for any reason the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
 
-Open a command prompt to the project directory where you want to create the virtual environment.
+Open a command prompt to the resource mapping tool directory.
 
 ```cmd
-cd <PROJECT_DIRECTORY>
+cd <ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool
 ```
 
 Create a `virtualenv`.
@@ -127,12 +127,12 @@ pip3 install -r requirements.txt
 Launch the resource mapping tool, located in the engine root directory.
 
 ```cmd
-python <ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.py
+python resource_mapping_tool.py
 ```
 
 ### Option 2: Use the Python distribution from O3DE
 
-This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README.md` located in `<engine root>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
+This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README.md` located in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
 
 Open a command prompt and change the directory to the engine root.
 
@@ -154,4 +154,4 @@ python\python.cmd Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_t
 
 ## Troubleshooting
 
-For help troubleshooting, check the resource mapping tool logs that are generated in `Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
+For help troubleshooting, check the resource mapping tool logs that are generated in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
