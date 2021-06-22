@@ -34,7 +34,7 @@ If you haven't already added and built the **AWS Metrics Gem** in your project, 
 
 ### 2. Deploy the CDK application
 
-Use the CDK synth and deploy commands to deploy the sample CDK application and build the AWS-backed analytics pipeline shown in the following diagram. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
+Use the CDK synth and deploy commands from the AWS Metrics Gem directory to deploy the sample CDK application and build the AWS-backed analytics pipeline shown in the following diagram. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
 ![Analytics pipeline provided by the sample CDK application](/images/user-guide/gems/reference/aws/aws-metrics/sample-analytics-pipeline.png)
 

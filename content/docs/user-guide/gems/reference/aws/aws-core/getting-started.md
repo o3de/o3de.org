@@ -23,7 +23,7 @@ To get started using AWS Gems with AWS services in your O3DE project, complete t
 
 1. Deploy the **CDK applications** for the AWS Gems you have enabled. See [Deploying the CDK Application](./cdk-application.md) for instructions.
 
-1. Configure a [resource mapping file](./resource-mapping-file.md) using the [Resource Mapping Tool](./resource-mapping-tool.md).
+1. Configure a [resource mapping file](./resource-mapping-files.md) using the [Resource Mapping Tool](./resource-mapping-tool.md).
 
 1. Associate the resource mapping file with the project. See the next section entitled [Project Settings](#project-settings).
 
