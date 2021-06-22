@@ -39,7 +39,7 @@ For this step, decide which authentication provider you will use and configure y
 
 ### 3. Deploy the CDK application
 
-Use the CDK synth and deploy commands to deploy AWS resources for authentication and authorization support. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
+Use the CDK synth and deploy commands from the AWS Client Auth Gem directory to deploy AWS resources for authentication and authorization support. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
 
 When setting constants for deploy, the AWS Client Auth Gem supports the following additional, optional values. If set, the CDK application will try to enable the authenticated provider authorization using the Amazon Cognito identity pool.
 

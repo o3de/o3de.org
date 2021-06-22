@@ -82,17 +82,19 @@ You can add or import resources individually, or import them from an AWS CloudFo
 
 ## Launching the resource mapping tool from command line
 
-See the `README.md` file in `AWSCore\Code\Tools\ResourceMappingTool` for complete instructions.
+You have two options for which Python runtime to use - your own, or the one included with O3DE.
 
-You will need to configure which Python runtime to use and ensure prerequisites are installed.
-
-### 1. Use a Python virtual environment
+### Option 1: Set up your own Python virtual environment
 
 This project is set up like a standard Python project. The initialization process also creates a `virtualenv` virtual environment within this project, stored under the `.venv` directory. To create the `virtualenv`, you must have a `python3` executable (or `python` for Windows) in your path with access to the `venv` package. If for any reason the automatic creation of the `virtualenv` fails, you can create the `virtualenv` manually.
 
-#### Set up Python environment
+Open a command prompt to the project directory where you want to create the virtual environment.
 
-Use the following command to manually create a `virtualenv`.
+```cmd
+cd <PROJECT_DIRECTORY>
+```
+
+Create a `virtualenv`.
 
 ```cmd
 # Windows
@@ -102,7 +104,7 @@ python -m venv .venv
 python3 -m venv .venv
 ```
 
-Once the `virtualenv` is created, activate your `virtualenv`.
+Activate your `virtualenv`.
 
 ```cmd
 # Windows
@@ -112,7 +114,7 @@ Once the `virtualenv` is created, activate your `virtualenv`.
 source .venv/bin/activate
 ```
 
-Once the virtualenv is activated, you can install the required dependencies.
+Install the required dependencies.
 
 ```cmd
 # Windows
@@ -122,24 +124,34 @@ pip install -r requirements.txt
 pip3 install -r requirements.txt
 ```
 
-#### Launch options
-
-At this point you can launch the resource mapping tool like any other standard python project.
+Launch the resource mapping tool, located in the engine root directory.
 
 ```cmd
-python resource_mapping_tool.py
+python <ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.py
 ```
 
-### 2. Use the Python distribution from O3DE
+### Option 2: Use the Python distribution from O3DE
 
-Follow the instructions in the tools's `README.md` to ensure everything is built as required.
+This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README.md` located in `<engine root>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
 
-Use the following python script to update the paths to the correct build folder and debug, profile, and release locations.
+Open a command prompt and change the directory to the engine root.
 
 ```cmd
-python\python.cmd Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.py --binaries_path <PATH_TO_BUILD_FOLDER>\bin\profile\AWSCoreEditorQtBin
+cd <ENGINE_ROOT>
+```
+
+Launch the resource mapping tool, specifying the path to the project's build folder and to your chosen build configuration.
+
+```cmd
+python\python.cmd Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.py --binaries_path <PATH_TO_BUILD_FOLDER>\bin\<BUILD_CONFIGURATION>\AWSCoreEditorQtBin
+```
+
+Example using the **profile** build configuration:
+
+```cmd
+python\python.cmd Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.py --binaries_path C:\MyProject\bin\profile\AWSCoreEditorQtBin
 ```
 
 ## Troubleshooting
 
-For help troubleshooting, check resource mapping tool logs that are generated in `Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
+For help troubleshooting, check the resource mapping tool logs that are generated in `Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
