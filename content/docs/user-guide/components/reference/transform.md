@@ -6,7 +6,7 @@ title: Transform
 
 {{< preview-migrated >}}
 
-The **Transform** component controls the translation, rotation, and scale information of an entity in the 3D world\. When you create an entity in O3DE Editor, the **Transform** component is automatically added\. The translation is the coordinate location \(x, y, and z axes\) of the entity\. The rotation is the degree in which the entity is rotated around its center\. The scale is the dimension of the entity in comparison to its original size\.
+The **Transform** component controls the translation, rotation, and scale information of an entity in the 3D world\. When you create an entity in O3DE Editor, the **Transform** component is automatically added\. The translation is the coordinate location \(x, y, and z axes\) of the entity\. The rotation is the degree in which the entity is rotated around its center\. The uniform scale is the dimension of the entity in comparison to its original size, applied uniformly in each direction\.
 
 *World space* refers to the entity's absolute translation, rotation, and scale in the level\. If a child is attached to a parent entity, *local space* refers to the entity's translation, rotation, and scale relative to its parent entity\.
 
@@ -27,30 +27,14 @@ The local position \(relative to the parent\) in meters\.
 **Rotate**
 The local rotation \(relative to the parent\) in degrees\.
 
-**Scale**
-The local scale\.
+**Uniform Scale**
+The local scale, with a single value applied uniformly in each direction\. Click on the **Add non-uniform scale** button to add a [Non-uniform Scale](/docs/user-guide/components/reference/non-uniform-scale.md) component, which allows different scale values to be used on each axis of an entity.
 
 **Parent activation**
 Configures transform behavior when the parent entity activates\.
 
 **Static**
 Entities that can't be moved at run time\. Some systems in O3DE treat static entities differently than movable entities \(for example, the renderer can optimize static entities, making them less resource intensive to draw\)\.
-
-### Network Sync {#component-transform-properties-network-sync}
-
-The **Transform** component has following network sync options:
-
-**Sync to replicas**
-Transform component syncs in a networked game\. If you enable this option, you must also add the [Network Binding](/docs/userguide/components/network-binding.md) component\. Otherwise, the entity is not replicated and the interpolation options don't apply\.
-
-**Position Interpolation**
-The smoothing of position between network updates and interruptions\. This is useful if your objects change location and you notice visual jitter or sudden changes in orientation due to network conditions\.
-
-**Rotation Interpolation**
-The smoothing of rotation between network updates and interruptions\. This is useful if your objects rotate and you notice visual jitter or sudden changes in orientation due to network conditions\.
-
-**Note**
-Scale interpolation is not supported in the **Transform** component\.
 
 ## EBus Request Bus Interface {#component-transform-ebusrequest}
 
@@ -397,71 +381,38 @@ None
 The quaternion that represents the local rotation\.
 Type: Quaternion
 
-### SetLocalScale {#transform-ebus-set-local-scale}
+### SetLocalUniformScale {#transform-ebus-set-local-uniform-scale}
 
-Sets local scale of the transform\.
-
-**Parameters**
-Local scale of the transform, in x, y, and z coordinates\.
-Type: Vector3
-
-**Return**
-None
-
-### SetLocalScaleX {#transform-ebus-set-local-scale-x}
-
-Sets local scale of the transform on the x\-axis\.
+Sets local uniform scale of the transform\.
 
 **Parameters**
-X\-axis coordinate for the local scale\.
+Local uniform scale of the transform, applied equally to each axis\.
 Type: Float
 
 **Return**
 None
 
-### SetLocalScaleY {#transform-ebus-set-local-scale-y}
+### GetLocalUniformScale {#transform-ebus-get-local-uniform-scale}
 
-Sets local scale of the transform on the y\-axis\.
+Gets the uniform scale value, applied equally to each axis in local space\.
 
 **Parameters**
-Y\-axis coordinate for the local scale\.
+None
+
+**Return**
+Uniform scale value, applied equally to each axis in local space\.
 Type: Float
 
-**Return**
-None
+### GetWorldUniformScale {#transform-ebus-get-world-uniform-scale}
 
-### SetLocalScaleZ {#transform-ebus-set-local-scale-z}
-
-Sets local scale of the transform on the z\-axis\.
+Gets the uniform scale value, applied equally to each axis in world space\.
 
 **Parameters**
-Z\-axis coordinate for the local scale\.
+None
+
+**Return**
+Uniform scale value, applied equally to each axis in world space\.
 Type: Float
-
-**Return**
-None
-
-### GetLocalScale {#transform-ebus-get-local-scale}
-
-Gets the scale value on each axis in local space\.
-
-**Parameters**
-None
-
-**Return**
-Scale value for each axis in local space\.
-Type: Vector3
-
-### GetWorldScale {#transform-ebus-get-world-scale}
-
-Gets the scale value on each axis in world space\. Note that the transform is skewed when it is rotated and has a parent transform scale in which the returned world scale from this function is inaccurate\.
-
-**Parameters**
-None
-
-**Return**
-Scale values for each axis in world space\.
-Type: Vector3
 
 ### GetParentId {#transform-ebus-get-parent-ID}
 
