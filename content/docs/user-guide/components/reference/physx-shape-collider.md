@@ -7,10 +7,11 @@ title: 'PhysX Shape Collider'
 {{< preview-migrated >}}
 
 The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider geometry based on the shape definition supplied by a **Shape** component\. The PhysX Shape Collider supports the following Shape components:
-+  [Box](/docs/user-guide/components/reference/shape/box-shape/)
-+  [Capsule](/docs/user-guide/components/reference/shape/capsule-shape/)
-+  [Polygon Prism](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
-+  [Sphere](/docs/user-guide/components/reference/shape/sphere-shape/)
++  [Box Shape](/docs/user-guide/components/reference/shape/box-shape/)
++  [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/)
++  [Cylinder Shape](/docs/user-guide/components/reference/shape/cylinder-shape/)
++  [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
++  [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
 
 **Note**
 The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static \(non\-moving\) entity\. To create a dynamic \(moving\) entity, you also must add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx-rigid-body-physics/) component\.
