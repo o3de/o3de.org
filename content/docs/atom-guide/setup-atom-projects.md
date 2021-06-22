@@ -14,7 +14,7 @@ Get to know the Atom Renderer and its features by setting up an Atom project wit
 - **Atom Sample Viewer**: This project is a standalone application that is intended for developers and engineers who want to test out Atom's individual features. Although you will not run the O3DE Editor, O3DE is still required to build this project.
 
 ## Prerequisites
-Before setting up the Atom projects, you must have the O3DE engine installed on your computer. Follow the instructions in the [Setup](/docs/welcome-guide/setup) section of the Welcome Guide to set up O3DE.
+Before setting up the Atom projects, you must have the O3DE engine installed on your computer. Follow the instructions in the [Setup](/docs/welcome-guide/setup) section of the Get Started Guide to set up O3DE.
 
 
 ## Setting up the Atom projects
