@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GridMate API Reference: GridMate::ReplicaChunkBase Class Reference</title>
+<title>Open 3D Engine GridMate API Reference: GridMate::ReplicaChunkBase Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GridMate API Reference
+   <div id="projectname">Open 3D Engine GridMate API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -94,9 +97,9 @@ virtual <a class="el" href="class_grid_mate_1_1_replica_manager.html">ReplicaMan
 <tr class="memitem:ae7e46a1b0aaa84633aa405bdcfb4f815"><td class="memItemLeft" align="right" valign="top"><a id="ae7e46a1b0aaa84633aa405bdcfb4f815"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> () const</td></tr>
 <tr class="separator:ae7e46a1b0aaa84633aa405bdcfb4f815"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a7be3be383c5b09e4acadcc51676dec"><td class="memItemLeft" align="right" valign="top"><a id="a8a7be3be383c5b09e4acadcc51676dec"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMaster</b> () const</td></tr>
-<tr class="separator:a8a7be3be383c5b09e4acadcc51676dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62a1a20935985101461181090ea9f74"><td class="memItemLeft" align="right" valign="top"><a id="ae62a1a20935985101461181090ea9f74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPrimary</b> () const</td></tr>
+<tr class="separator:ae62a1a20935985101461181090ea9f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95aee71d9fdb5e3f91fdb58b2e90a81b"><td class="memItemLeft" align="right" valign="top"><a id="a95aee71d9fdb5e3f91fdb58b2e90a81b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProxy</b> () const</td></tr>
 <tr class="separator:a95aee71d9fdb5e3f91fdb58b2e90a81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,16 +319,19 @@ template&lt;class T &gt; </td></tr>
 <tr class="separator:a0391770bbe0b2798fb59abd6fb58916f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A single unit of network functionality A <a class="el" href="class_grid_mate_1_1_replica_chunk.html">ReplicaChunk</a> is a user extendable network object. One or more ReplicaChunks can be owned by a <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>, which is both a container and manager for them. A replica is owned by a Master, and is propagated to other network nodes, who interact with is as a Proxy. The data a <a class="el" href="class_grid_mate_1_1_replica_chunk.html">ReplicaChunk</a> contains should generally be related to the other data stored within it. Since multiple chunks can be attached to a <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>, unrelated data can simply be stored in other chunks on the same <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>.</p>
-<p>A <a class="el" href="class_grid_mate_1_1_replica_chunk.html">ReplicaChunk</a> has two primary ways to interact with it: DataSets and Remote Procedure Calls (RPCs). DataSets store arbitrary data, which only the Master is able to modify. Any changes are propagated to the Proxy ReplicaChunks on the other nodes. RPCs are methods that can be executed on a remote node. They are first invoked on the Master, who then decides if the invocation should be propagated to the Proxies.</p>
+<div class="textblock"><p>A single unit of network functionality A <a class="el" href="class_grid_mate_1_1_replica_chunk.html">ReplicaChunk</a> is a user extendable network object. One or more ReplicaChunks can be owned by a <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>, which is both a container and manager for them. A replica is owned by a Primary, and is propagated to other network nodes, who interact with is as a Proxy. The data a <a class="el" href="class_grid_mate_1_1_replica_chunk.html">ReplicaChunk</a> contains should generally be related to the other data stored within it. Since multiple chunks can be attached to a <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>, unrelated data can simply be stored in other chunks on the same <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>.</p>
+<p>A <a class="el" href="class_grid_mate_1_1_replica_chunk.html">ReplicaChunk</a> has two primary ways to interact with it: DataSets and Remote Procedure Calls (RPCs). DataSets store arbitrary data, which only the Primary is able to modify. Any changes are propagated to the Proxy ReplicaChunks on the other nodes. RPCs are methods that can be executed on a remote node. They are first invoked on the Primary, who then decides if the invocation should be propagated to the Proxies.</p>
 <p>ReplicaChunks can be created by inheriting from the class and registered by calling <a class="el" href="class_grid_mate_1_1_replica_chunk_descriptor_table.html#af4f4bca151c74c1736c29c0a3595f6f1">ReplicaChunkDescriptorTable::RegisterChunkType()</a> to create the factory required by the network. Every concrete replica chunk type needs to implement a static member function const char* GetChunkName(). The string returned by this function will be used to generate a ReplicaChunkClassId which will be used to identify this chunk type throughout the system.</p>
 <p><a class="el" href="class_grid_mate_1_1_replica.html">Replica</a> chunks can be instantiated directly in a <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a>, or standalone and attached to a <a class="el" href="class_grid_mate_1_1_replica.html">Replica</a> afterwards. Once attached to a replica they are bound to the network.</p>
 <p>To add a handler interface for RPC calls and <a class="el" href="class_grid_mate_1_1_data_set.html">DataSet</a> changed events, call SetHandler with an object that inherits from <a class="el" href="struct_grid_mate_1_1_replica_chunk_interface.html">ReplicaChunkInterface</a>.</p>
 <p>Use <a class="el" href="class_grid_mate_1_1_replica_chunk_base.html">ReplicaChunkBase</a> as the parent class when the event handler logic is separate from the chunk itself. This is useful for example when a client and server want to connect different logic to the chunk. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/GridMate/GridMate/Replica/<a class="el" href="_replica_chunk_8h.html">ReplicaChunk.h</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:13 for GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:44 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

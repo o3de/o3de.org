@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: Class Members - Functions</title>
+<title>Open 3D Engine AzFramework API Reference: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -53,8 +56,8 @@ $(function() {
 </li>
 <li>RayCast()
 : <a class="el" href="struct_az_physics_1_1_simulated_body.html#a7605b0549429c2c03e8b78eb1f26da6f">AzPhysics::SimulatedBody</a>
+, <a class="el" href="class_az_physics_1_1_simulated_body_component_requests.html#a72ac48b3a8945410f0aba786fc2f0741">AzPhysics::SimulatedBodyComponentRequests</a>
 , <a class="el" href="class_physics_1_1_shape.html#a3547682890fbee8af8e6cbb0c0fa593c">Physics::Shape</a>
-, <a class="el" href="class_physics_1_1_world_body_requests.html#aa56b0a4c7bdf6ccf5232daad4936cfe8">Physics::WorldBodyRequests</a>
 </li>
 <li>RayCastLocal()
 : <a class="el" href="class_physics_1_1_shape.html#aac2911f98e7fcc8373b50ca17e1fc7d4">Physics::Shape</a>
@@ -71,7 +74,7 @@ $(function() {
 , <a class="el" href="class_az_framework_1_1_transform_component.html#ad91430543cb0b00deea9bbf0d0ecb82c">AzFramework::TransformComponent</a>
 </li>
 <li>RefreshEntityLocalBoundsUnion()
-: <a class="el" href="class_az_framework_1_1_entity_bounds_union_requests.html#a0fc7e6b87ee1e026fcd276e612db1dff">AzFramework::EntityBoundsUnionRequests</a>
+: <a class="el" href="class_az_framework_1_1_i_entity_bounds_union.html#aeda0c9d359c43fb25a2a9e3ed03cd078">AzFramework::IEntityBoundsUnion</a>
 </li>
 <li>RefreshMotionSensors()
 : <a class="el" href="class_az_framework_1_1_input_device_motion_1_1_implementation.html#a1d758423f7fa7ef8e1d5c0feb5069469">AzFramework::InputDeviceMotion::Implementation</a>
@@ -91,11 +94,14 @@ $(function() {
 <li>RegisterOnCollisionPersistHandler()
 : <a class="el" href="struct_az_physics_1_1_simulated_body.html#a4daaf9e5f0e3b06f6fdd128aed1a66aa">AzPhysics::SimulatedBody</a>
 </li>
-<li>RegisterOnDefaultMaterialLibraryChangedEventHandler()
-: <a class="el" href="class_az_physics_1_1_system_interface.html#a8a00843b38244a3d8eedd7a0e2690138">AzPhysics::SystemInterface</a>
-</li>
 <li>RegisterOnDefaultSceneConfigurationChangedEventHandler()
 : <a class="el" href="class_az_physics_1_1_system_interface.html#addcc4fea69fa9ce3e40c569cd47c2333">AzPhysics::SystemInterface</a>
+</li>
+<li>RegisterOnMaterialLibraryChangedEventHandler()
+: <a class="el" href="class_az_physics_1_1_system_interface.html#aff87cfc6a4ef4ecef0e59d6f8b39ac71">AzPhysics::SystemInterface</a>
+</li>
+<li>RegisterOnMaterialLibraryLoadErrorEventHandler()
+: <a class="el" href="class_az_physics_1_1_system_interface.html#a0b0d57e0d20e12bfb138f97d07b63036">AzPhysics::SystemInterface</a>
 </li>
 <li>RegisterOnTriggerEnterHandler()
 : <a class="el" href="struct_az_physics_1_1_simulated_body.html#a636d92482b366a4b570b9a037c99d2f1">AzPhysics::SimulatedBody</a>
@@ -108,9 +114,6 @@ $(function() {
 </li>
 <li>RegisterPreSimulateEvent()
 : <a class="el" href="class_az_physics_1_1_system_interface.html#a2a79229eef73b4ba5dd052d11b0f49a5">AzPhysics::SystemInterface</a>
-</li>
-<li>RegisterRPC()
-: <a class="el" href="class_az_framework_1_1_script_net_binding_table.html#aecbcb25727ec5dc2cfe4fad655aa8192">AzFramework::ScriptNetBindingTable</a>
 </li>
 <li>RegisterSceneActiveSimulatedBodiesHandler()
 : <a class="el" href="class_az_physics_1_1_scene.html#af749c3c3c0fa3c5f8b68e4409172920d">AzPhysics::Scene</a>
@@ -190,7 +193,7 @@ $(function() {
 : <a class="el" href="class_az_framework_1_1_root_spawnable_definition.html#a1af32e13b580c3c094c9d017507e2873">AzFramework::RootSpawnableDefinition</a>
 </li>
 <li>ReloadSpawnable()
-: <a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#aaaa75b6d919068f0b5a0478e6ed8d0b8">AzFramework::SpawnableEntitiesDefinition</a>
+: <a class="el" href="class_az_framework_1_1_spawnable_entities_definition.html#a0f8941816a4c9984811ff9c2b35c6500">AzFramework::SpawnableEntitiesDefinition</a>
 </li>
 <li>Remove()
 : <a class="el" href="class_az_framework_1_1_octree_node.html#a472cc2728cce00c414c6b3c0467b74b0">AzFramework::OctreeNode</a>
@@ -217,29 +220,23 @@ $(function() {
 , <a class="el" href="class_az_framework_1_1_socket_connection.html#a16bdb75ee00154584b3e9294d9d52c73">AzFramework::SocketConnection</a>
 </li>
 <li>RemoveScene()
-: <a class="el" href="class_az_framework_1_1_scene_system_requests.html#ae07c46b0fdc799309bf5a9ada82db853">AzFramework::SceneSystemRequests</a>
+: <a class="el" href="class_az_framework_1_1_i_scene_system.html#a698b8eb6efab22eeb742a61fc17fbbec">AzFramework::ISceneSystem</a>
 , <a class="el" href="class_az_physics_1_1_system_interface.html#ad9f1da9d6ac688a92a9a21d21e52b138">AzPhysics::SystemInterface</a>
-</li>
-<li>RemoveSceneForEntityContextId()
-: <a class="el" href="class_az_framework_1_1_scene_system_requests.html#a73e74d69a27f10320e7338cec1d40efe">AzFramework::SceneSystemRequests</a>
 </li>
 <li>RemoveScenes()
 : <a class="el" href="class_az_physics_1_1_system_interface.html#ae11b2fc20f8dd8232f88fd240c76c6fd">AzPhysics::SystemInterface</a>
 </li>
 <li>RemoveSimulatedBodies()
-: <a class="el" href="class_az_physics_1_1_scene.html#a25c59fa00bfd96164cca47fb2ddebdb3">AzPhysics::Scene</a>
-, <a class="el" href="class_az_physics_1_1_scene_interface.html#a6fc4b4a717302460bc03b03a74b13d81">AzPhysics::SceneInterface</a>
+: <a class="el" href="class_az_physics_1_1_scene.html#a45fe63123eec640264db74a2d76dfcb1">AzPhysics::Scene</a>
+, <a class="el" href="class_az_physics_1_1_scene_interface.html#a4525fd31e8439b5f44a93ea411eb211d">AzPhysics::SceneInterface</a>
 </li>
 <li>RemoveSimulatedBody()
-: <a class="el" href="class_az_physics_1_1_scene.html#a7303beb97528dda8a4445b4863fc1ec1">AzPhysics::Scene</a>
-, <a class="el" href="class_az_physics_1_1_scene_interface.html#af6a091849bdc8dade5225570717a4113">AzPhysics::SceneInterface</a>
+: <a class="el" href="class_az_physics_1_1_scene.html#a570232ffc1b3192cfc6701bbeb3ee27d">AzPhysics::Scene</a>
+, <a class="el" href="class_az_physics_1_1_scene_interface.html#a8e37a172ac7cdeddb3a16389509a2975">AzPhysics::SceneInterface</a>
 </li>
 <li>RemoveSourceInput()
 : <a class="el" href="class_az_framework_1_1_input_mapping_and.html#a9aa5be81cc4d146409a6661ce87bfc3c">AzFramework::InputMappingAnd</a>
 , <a class="el" href="class_az_framework_1_1_input_mapping_or.html#ac86af03c468782c2a3c6c4e43ce5ab33">AzFramework::InputMappingOr</a>
-</li>
-<li>RequestEntityChangeOwnership()
-: <a class="el" href="class_az_framework_1_1_net_binding_handler_interface.html#a8ae8d194d6f8665c35e3bfe6d6252c7d">AzFramework::NetBindingHandlerInterface</a>
 </li>
 <li>RequestPermission()
 : <a class="el" href="class_az_framework_1_1_android_app_requests.html#a05255f637c06773ca47a12328ec36da8">AzFramework::AndroidAppRequests</a>
@@ -249,6 +246,7 @@ $(function() {
 </li>
 <li>Reset()
 : <a class="el" href="class_az_framework_1_1_asset_catalog.html#a5a714717ac5c57b366bd95b95768e7ed">AzFramework::AssetCatalog</a>
+, <a class="el" href="class_az_framework_1_1_cameras.html#ace6a5647084aef70cd92c68f0f41cd16">AzFramework::Cameras</a>
 , <a class="el" href="class_az_framework_1_1_entity_ownership_service.html#a20b1f98287242763776f6e4af6f8f328">AzFramework::EntityOwnershipService</a>
 , <a class="el" href="struct_az_framework_1_1_input_device_gamepad_1_1_implementation_1_1_raw_gamepad_state.html#ab47c05df93609cdc3d52726c3829ab8a">AzFramework::InputDeviceGamepad::Implementation::RawGamepadState</a>
 , <a class="el" href="class_az_framework_1_1_slice_entity_ownership_service.html#a503209d0b96f41d7fd540e399dd550cc">AzFramework::SliceEntityOwnershipService</a>
@@ -294,9 +292,6 @@ $(function() {
 , <a class="el" href="class_az_framework_1_1_input_mapping_and.html#a60862f840adbcd15a8056eb53c14957b">AzFramework::InputMappingAnd</a>
 , <a class="el" href="class_az_framework_1_1_input_mapping_or.html#adb7032814178e803d46c00f9abab5515">AzFramework::InputMappingOr</a>
 </li>
-<li>ResetToDefaultMaterialLibrary()
-: <a class="el" href="class_physics_1_1_material_selection.html#a2b1a619718286a8f00f9625fbbca1311">Physics::MaterialSelection</a>
-</li>
 <li>ResizeClientArea()
 : <a class="el" href="class_az_framework_1_1_window_requests.html#a6225c98d16892667a43b992ffd4dd160">AzFramework::WindowRequests</a>
 </li>
@@ -309,9 +304,6 @@ $(function() {
 <li>Rotation()
 : <a class="el" href="struct_az_framework_1_1_camera.html#a42409d550ee13afa75388448626832a5">AzFramework::Camera</a>
 </li>
-<li>RPC()
-: <a class="el" href="class_az_framework_1_1_network_context_1_1_class_builder.html#a26a43a1f12459fd08e9ef8143cbc2c74">AzFramework::NetworkContext::ClassBuilder</a>
-</li>
 <li>RunMainLoop()
 : <a class="el" href="class_az_framework_1_1_application_requests.html#ab44609739861ff6c22668f2c9e7b8b09">AzFramework::ApplicationRequests</a>
 </li>
@@ -319,7 +311,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:56 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:27 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

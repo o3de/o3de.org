@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::EditorTransformComponentSelectionRequests Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::EditorTransformComponentSelectionRequests Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -121,14 +124,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a496fc557f4b6fdfe913d64171e96a595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543589547a20641bdcdde1d62a1420ff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a543589547a20641bdcdde1d62a1420ff">ResetOrientationForSelectedEntitiesLocal</a> ()=0</td></tr>
 <tr class="separator:a543589547a20641bdcdde1d62a1420ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f0ac5350faf4c34557607c5def4aed6"><td class="memItemLeft" align="right" valign="top"><a id="a2f0ac5350faf4c34557607c5def4aed6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a2f0ac5350faf4c34557607c5def4aed6">CopyScaleToSelectedEntitiesIndividualLocal</a> (const AZ::Vector3 &amp;scale)=0</td></tr>
-<tr class="memdesc:a2f0ac5350faf4c34557607c5def4aed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy scale to each individual entity in local space without moving position. <br /></td></tr>
-<tr class="separator:a2f0ac5350faf4c34557607c5def4aed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2842d0c50e0e2f85fd4f07d30bebbeb6"><td class="memItemLeft" align="right" valign="top"><a id="a2842d0c50e0e2f85fd4f07d30bebbeb6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a2842d0c50e0e2f85fd4f07d30bebbeb6">CopyScaleToSelectedEntitiesIndividualWorld</a> (const AZ::Vector3 &amp;scale)=0</td></tr>
-<tr class="memdesc:a2842d0c50e0e2f85fd4f07d30bebbeb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy scale to to each individual entity in world (absolute) space. <br /></td></tr>
-<tr class="separator:a2842d0c50e0e2f85fd4f07d30bebbeb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b09121ae6f42f8a9008735d8997fea7"><td class="memItemLeft" align="right" valign="top"><a id="a1b09121ae6f42f8a9008735d8997fea7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a1b09121ae6f42f8a9008735d8997fea7">CopyScaleToSelectedEntitiesIndividualLocal</a> (float scale)=0</td></tr>
+<tr class="memdesc:a1b09121ae6f42f8a9008735d8997fea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy scale to each individual entity in local space without moving position. <br /></td></tr>
+<tr class="separator:a1b09121ae6f42f8a9008735d8997fea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb0c072e1e2c927adac6303033d0da3"><td class="memItemLeft" align="right" valign="top"><a id="a6cb0c072e1e2c927adac6303033d0da3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_transform_component_selection_requests.html#a6cb0c072e1e2c927adac6303033d0da3">CopyScaleToSelectedEntitiesIndividualWorld</a> (float scale)=0</td></tr>
+<tr class="memdesc:a6cb0c072e1e2c927adac6303033d0da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy scale to to each individual entity in world (absolute) space. <br /></td></tr>
+<tr class="separator:a6cb0c072e1e2c927adac6303033d0da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -307,10 +310,13 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportSelection/EditorTransformComponentSelectionRequestBus.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:07 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

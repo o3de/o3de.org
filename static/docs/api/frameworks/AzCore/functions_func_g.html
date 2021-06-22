@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: Class Members - Functions</title>
+<title>Open 3D Engine AzCore API Reference: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -74,7 +77,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_slice_component.html#ade845507fcb5456d9b8480eb051e9911">AZ::SliceComponent</a>
 </li>
 <li>GenerateNewIdsAndFixRefs()
-: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a4def4b1cf2d4dfceb8716433486fcbec">AZ::IdUtils::Remapper&lt; IdType &gt;</a>
+: <a class="el" href="struct_a_z_1_1_id_utils_1_1_remapper.html#a8a840e6546a27dda041e7e40008c14d3">AZ::IdUtils::Remapper&lt; IdType, AllowDuplicates &gt;</a>
 </li>
 <li>Get()
 : <a class="el" href="class_a_z_1_1_allocator_wrapper.html#ab4654886ba86767f84c23b35c02a89e2">AZ::AllocatorWrapper&lt; Allocator &gt;</a>
@@ -90,8 +93,9 @@ $(function() {
 , <a class="el" href="struct_a_z_1_1_e_bus_global_storage_policy.html#a4462add04827f2cff017558d377674bf">AZ::EBusGlobalStoragePolicy&lt; Context &gt;</a>
 , <a class="el" href="struct_a_z_1_1_e_bus_thread_local_storage_policy.html#a0b259d1b6128c4613145695ed7bd2551">AZ::EBusThreadLocalStoragePolicy&lt; Context &gt;</a>
 , <a class="el" href="class_a_z_1_1_interface.html#a39327bbc100e05276cedfefbafa97d44">AZ::Interface&lt; T &gt;</a>
+, <a class="el" href="class_a_z_1_1_script_time_point.html#a4ecdd4d135f6934b2a1d099586541782">AZ::ScriptTimePoint</a>
 , <a class="el" href="class_a_z_1_1_settings_registry_impl.html#a972d3ecf69b09b6d5d44209f11547f5c">AZ::SettingsRegistryImpl</a>
-, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#a1b02656f7c5dbdb407d34fabd84f66ef">AZ::SettingsRegistryInterface</a>
+, <a class="el" href="class_a_z_1_1_settings_registry_interface.html#aa952537e6581b37466fb2af477b0cde1">AZ::SettingsRegistryInterface</a>
 </li>
 <li>get_allocator()
 : <a class="el" href="class_a_z_std_1_1basic__string.html#a30f3ca84958aeafc38adb9e4df1b47f4">AZStd::basic_string&lt; Element, Traits, Allocator &gt;</a>
@@ -653,6 +657,9 @@ $(function() {
 <li>GetGroup()
 : <a class="el" href="class_a_z_1_1_asset_type_info.html#a92d36a9cb50931209024f3e33cd89d36">AZ::AssetTypeInfo</a>
 </li>
+<li>GetHaltonSequence()
+: <a class="el" href="class_a_z_1_1_halton_sequence.html#a2cc0b61b3184652820ce781227716480">AZ::HaltonSequence&lt; Dimensions &gt;</a>
+</li>
 <li>GetHandleCount()
 : <a class="el" href="class_a_z_1_1_event_scheduler_system_component.html#a550311ae6ab66522b00e40fdd915c43d">AZ::EventSchedulerSystemComponent</a>
 </li>
@@ -827,6 +834,9 @@ $(function() {
 <li>GetLocalTranslation()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#aa3b35b9ebff80d70d25175224b51f8da">AZ::TransformInterface</a>
 </li>
+<li>GetLocalUniformScale()
+: <a class="el" href="class_a_z_1_1_transform_interface.html#a35982bb516d468593b1d5d26f96144b5">AZ::TransformInterface</a>
+</li>
 <li>GetLocalX()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#a05d6d33f98fd3f93040878ed7fcf7ff7">AZ::TransformInterface</a>
 </li>
@@ -878,6 +888,9 @@ $(function() {
 </li>
 <li>GetMetadataEntityIds()
 : <a class="el" href="class_a_z_1_1_slice_component.html#afc203accc30b73685be7838389f5a7bb">AZ::SliceComponent</a>
+</li>
+<li>GetMilliseconds()
+: <a class="el" href="class_a_z_1_1_script_time_point.html#ace4eda009e79a5b42ecbf6015c941110">AZ::ScriptTimePoint</a>
 </li>
 <li>GetMin()
 : <a class="el" href="class_a_z_1_1_vector2.html#aaa1be139ba88c6cfcb27911e95a61c6b">AZ::Vector2</a>
@@ -1018,8 +1031,19 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_i_o_1_1_file_range.html#aabcff61c48fbbdadb288117d60067540">AZ::IO::FileRange</a>
 </li>
 <li>GetOperationsFlags()
-: <a class="el" href="class_a_z_1_1_base_json_serializer.html#abdb778a4b07e2e66c8264ae4fd272a5f">AZ::BaseJsonSerializer</a>
+: <a class="el" href="class_a_z_1_1_base_json_integer_serializer.html#a22b7558183a8f9478a7edf69cfdf147f">AZ::BaseJsonIntegerSerializer</a>
+, <a class="el" href="class_a_z_1_1_base_json_matrix_serializer.html#ae4d22808e1996265772394b9368a6093">AZ::BaseJsonMatrixSerializer</a>
+, <a class="el" href="class_a_z_1_1_base_json_serializer.html#abdb778a4b07e2e66c8264ae4fd272a5f">AZ::BaseJsonSerializer</a>
+, <a class="el" href="class_a_z_1_1_base_json_vector_serializer.html#acdc76b54fa68fd0c76d9792ed5c16173">AZ::BaseJsonVectorSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_array_serializer.html#abfd0ef6166735732ca0b59c35750fdfe">AZ::JsonArraySerializer</a>
+, <a class="el" href="class_a_z_1_1_json_bool_serializer.html#a0f5153d54be1d2be47f13f52d18fc1b5">AZ::JsonBoolSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_color_serializer.html#a0aa2ad4fe2b745f9fe4cd6a70e7374e3">AZ::JsonColorSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_double_serializer.html#ae1d678c9559e64ce1c3021fb3cba760e">AZ::JsonDoubleSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_float_serializer.html#a6a10d4cc1ceb87f85e714ca6d25cf56c">AZ::JsonFloatSerializer</a>
 , <a class="el" href="class_a_z_1_1_json_smart_pointer_serializer.html#a6adabc246fa4002509e1aa8ab31ebd73">AZ::JsonSmartPointerSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_transform_serializer.html#abec54d955fa94a1f823e5a0822ff97f2">AZ::JsonTransformSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_tuple_serializer.html#a81ba0203598e3cd4f93f769414169150">AZ::JsonTupleSerializer</a>
+, <a class="el" href="class_a_z_1_1_json_uuid_serializer.html#a28d5f86e4c6ea4d45530d81dbee97ea3">AZ::JsonUuidSerializer</a>
 </li>
 <li>GetOrCreate()
 : <a class="el" href="struct_a_z_1_1_e_bus_environment_storage_policy.html#a5dccc2f8ca2204a8fdb5e2c19d522dd4">AZ::EBusEnvironmentStoragePolicy&lt; Context &gt;</a>
@@ -1110,7 +1134,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_plane.html#a48620bab7620d1514d1d160731597a1a">AZ::Plane</a>
 </li>
 <li>GetPolarDecomposition()
-: <a class="el" href="class_a_z_1_1_matrix3x3.html#af53d19fc0ec644baaf8b6689fe914242">AZ::Matrix3x3</a>
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a8ec55665bee011821e6c3f530bde63ee">AZ::Matrix3x3</a>
 </li>
 <li>GetPosition()
 : <a class="el" href="class_a_z_1_1_bezier_spline.html#a3b9f5e3561e62e3dd9e8018a9f2fc7f6">AZ::BezierSpline</a>
@@ -1119,10 +1143,10 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_spline.html#ae04352a305d5432f4caf79b4c5940456">AZ::Spline</a>
 </li>
 <li>GetPreparedRequests()
-: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html#a2726f1cd0262000430c947f5048478dc">AZ::IO::StreamerContext</a>
+: <a class="el" href="class_a_z_1_1_i_o_1_1_streamer_context.html#af1218f8e3bc1c6d95927163a4923eab6">AZ::IO::StreamerContext</a>
 </li>
 <li>GetPriority()
-: <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a530eae8b2ec1f3e1f29f4239f4ea37b4">AZ::SettingsRegistryInterface::Specializations</a>
+: <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html#a38e585341ed6d7927b8c22548d304ed4">AZ::SettingsRegistryInterface::Specializations</a>
 </li>
 <li>GetProcessSignature()
 : <a class="el" href="class_a_z_1_1_entity.html#a5d1ad5a5167c0b88a21f69d0ad49afb0">AZ::Entity</a>
@@ -1147,8 +1171,8 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_user_settings_component.html#aaa19782ea5f34040497987fec9f0eca3">AZ::UserSettingsComponent</a>
 </li>
 <li>GetRandom()
-: <a class="el" href="class_a_z_1_1_better_pseudo_random___unix_like.html#ad140fe6bcf397a76043ed65ef49f08cc">AZ::BetterPseudoRandom_UnixLike</a>
-, <a class="el" href="class_a_z_1_1_better_pseudo_random___windows.html#afd0a5ca6365f53705bca068fc499ed0a">AZ::BetterPseudoRandom_Windows</a>
+: <a class="el" href="class_a_z_1_1_better_pseudo_random___unix_like.html#a67b4fdb82d5ce17c2174aac9262798ce">AZ::BetterPseudoRandom_UnixLike</a>
+, <a class="el" href="class_a_z_1_1_better_pseudo_random___windows.html#a3954745382c91dcf1a915ea3123cef51">AZ::BetterPseudoRandom_Windows</a>
 </li>
 <li>GetReadRequestResult()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a53b2bd2d1ab820bfff9834fc7acd36b8">AZ::IO::IStreamer</a>
@@ -1163,6 +1187,11 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_vector2.html#a6044a9c9c13f8b03b72450793190ffde">AZ::Vector2</a>
 , <a class="el" href="class_a_z_1_1_vector3.html#a5b26027f6042c9f79275029242b369a3">AZ::Vector3</a>
 , <a class="el" href="class_a_z_1_1_vector4.html#a1c3edf2bb9a450cdb350acdba117da15">AZ::Vector4</a>
+</li>
+<li>GetReciprocalScaled()
+: <a class="el" href="class_a_z_1_1_matrix3x3.html#a99f2b53c8c95383215641beecb655415">AZ::Matrix3x3</a>
+, <a class="el" href="class_a_z_1_1_matrix3x4.html#a856abab157103794fb83e271296d45de">AZ::Matrix3x4</a>
+, <a class="el" href="class_a_z_1_1_matrix4x4.html#a30ff9a1a9ec3e93925e1881fffdd5eec">AZ::Matrix4x4</a>
 </li>
 <li>GetRecommendations()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#ad09a7d2dac3fc48a65b1e27ab53c48c4">AZ::IO::IStreamer</a>
@@ -1187,7 +1216,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_console_functor_base.html#af72dbdac7bed4fe46c6a71fa8b906cc2">AZ::ConsoleFunctorBase</a>
 </li>
 <li>GetReporter()
-: <a class="el" href="class_a_z_1_1_json_base_context.html#a95908657346592812d6c9bacb8712222">AZ::JsonBaseContext</a>
+: <a class="el" href="class_a_z_1_1_json_base_context.html#ac57be0f6edbda59bdd93706ce62e28a6">AZ::JsonBaseContext</a>
 </li>
 <li>GetRequestStatus()
 : <a class="el" href="class_a_z_1_1_i_o_1_1_i_streamer.html#a74a99d73452bdc019af0e88d9c1c6729">AZ::IO::IStreamer</a>
@@ -1206,21 +1235,6 @@ $(function() {
 <li>GetRootAsset()
 : <a class="el" href="class_a_z_1_1_data_1_1_asset_container.html#a165ebfe22339e8dda8d62faa7f11009a">AZ::Data::AssetContainer</a>
 </li>
-<li>GetRotationEulerRadians()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#af608d2b23c6c47dcc82c4951e44a11a9">AZ::TransformInterface</a>
-</li>
-<li>GetRotationQuaternion()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#acad3ab80cdfbd6d12c7b07f0d7e79b2e">AZ::TransformInterface</a>
-</li>
-<li>GetRotationX()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a4fda73fd5dbe3951717563c09fbcbab2">AZ::TransformInterface</a>
-</li>
-<li>GetRotationY()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#aa09ea60158dc5fcc4f1793a9fe286b4e">AZ::TransformInterface</a>
-</li>
-<li>GetRotationZ()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a6a123367815b79758d457f941308029c">AZ::TransformInterface</a>
-</li>
 <li>GetRow()
 : <a class="el" href="class_a_z_1_1_matrix3x3.html#a453d68d8d55840fca6468a9b53e19e09">AZ::Matrix3x3</a>
 , <a class="el" href="class_a_z_1_1_matrix3x4.html#a2014fdd85df6627f0b9cd37b61625bdd">AZ::Matrix3x4</a>
@@ -1234,16 +1248,6 @@ $(function() {
 </li>
 <li>GetScale()
 : <a class="el" href="class_a_z_1_1_non_uniform_scale_requests.html#a24c5d7e6794b43929eeed7fb55dffe38">AZ::NonUniformScaleRequests</a>
-, <a class="el" href="class_a_z_1_1_transform_interface.html#a938bd8c9ed3d2cf5e62f53b820ba897d">AZ::TransformInterface</a>
-</li>
-<li>GetScaleX()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a1f2cd7a6393172f806d65aa676773724">AZ::TransformInterface</a>
-</li>
-<li>GetScaleY()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#afce70134b230cf95fc5ff6691a876b7e">AZ::TransformInterface</a>
-</li>
-<li>GetScaleZ()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#aeebd9cec007c5275318b88b1fcbb285a">AZ::TransformInterface</a>
 </li>
 <li>GetScheduledEvent()
 : <a class="el" href="class_a_z_1_1_scheduled_event_handle.html#a9d4db28f1ee965bf565640b89248632d">AZ::ScheduledEventHandle</a>
@@ -1253,6 +1257,9 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_i_allocator.html#a31b4adc37ee7c6402213394c427d9287">AZ::IAllocator</a>
 , <a class="el" href="class_a_z_1_1_simple_schema_allocator.html#aa50ef41e0ec3bb537fe9a7936e1b403e">AZ::SimpleSchemaAllocator&lt; Schema, DescriptorType, ProfileAllocations, ReportOutOfMemory &gt;</a>
 , <a class="el" href="class_a_z_1_1_system_allocator.html#a8f85c2f674f09982c7ee79f8e76c6406">AZ::SystemAllocator</a>
+</li>
+<li>GetSeconds()
+: <a class="el" href="class_a_z_1_1_script_time_point.html#ad95fb0da7ccc14c15ce8200d4950eff4">AZ::ScriptTimePoint</a>
 </li>
 <li>GetSegmentCount()
 : <a class="el" href="class_a_z_1_1_bezier_spline.html#a622e051d1735b1461d6798f74bad65d3">AZ::BezierSpline</a>
@@ -1423,10 +1430,10 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_plane.html#aa8bd98a4c5a8a86a5bccc379ec283034">AZ::Plane</a>
 </li>
 <li>GetTransformedAabb()
-: <a class="el" href="class_a_z_1_1_aabb.html#af7181459b514caecd41ce4423db26a7e">AZ::Aabb</a>
+: <a class="el" href="class_a_z_1_1_aabb.html#a17fa039fa4d114d6cb5d3b3672188d2e">AZ::Aabb</a>
 </li>
 <li>GetTransformedObb()
-: <a class="el" href="class_a_z_1_1_aabb.html#a426505a503de88d330f346d999e98355">AZ::Aabb</a>
+: <a class="el" href="class_a_z_1_1_aabb.html#a22eb12c71f0f591c7b416a27fc58c695">AZ::Aabb</a>
 </li>
 <li>GetTranslation()
 : <a class="el" href="class_a_z_1_1_matrix3x4.html#a7c7a2e59c12258080accd48a1ae90eb2">AZ::Matrix3x4</a>
@@ -1510,14 +1517,14 @@ $(function() {
 <li>GetWorldRotationQuaternion()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#a9a4ba3d33eba143f57fef995db2f1bb2">AZ::TransformInterface</a>
 </li>
-<li>GetWorldScale()
-: <a class="el" href="class_a_z_1_1_transform_interface.html#a299676452c7711e3db7eaeaa1f6c0d01">AZ::TransformInterface</a>
-</li>
 <li>GetWorldTM()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#ae4868563ace500d050ea8c774db9bd08">AZ::TransformInterface</a>
 </li>
 <li>GetWorldTranslation()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#ab6667c8ceac8c96644c699fb79c63731">AZ::TransformInterface</a>
+</li>
+<li>GetWorldUniformScale()
+: <a class="el" href="class_a_z_1_1_transform_interface.html#ad56764a1f1259905f37401a413bf9718">AZ::TransformInterface</a>
 </li>
 <li>GetWorldX()
 : <a class="el" href="class_a_z_1_1_transform_interface.html#aefc2efdd0d6fa2bf616bbfcc05a65987">AZ::TransformInterface</a>
@@ -1541,7 +1548,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:48 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:19 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

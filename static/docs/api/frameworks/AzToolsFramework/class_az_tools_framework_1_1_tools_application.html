@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::ToolsApplication Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::ToolsApplication Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -54,6 +57,8 @@ $(function() {
 <div class="contents">
 
 <p>Inherits Application, and Handler.</p>
+
+<p>Inherited by UnitTest::ToolsTestApplication.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -140,6 +145,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddDirtyEntity</b> (A
 <tr class="memitem:a040f7a83ffb5ede771394187d71d2afb"><td class="memItemLeft" align="right" valign="top"><a id="a040f7a83ffb5ede771394187d71d2afb"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDirtyEntity</b> (AZ::EntityId entityId) override</td></tr>
 <tr class="separator:a040f7a83ffb5ede771394187d71d2afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf9345bf80709ac54926e9042dd56af"><td class="memItemLeft" align="right" valign="top"><a id="afdf9345bf80709ac54926e9042dd56af"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearDirtyEntities</b> () override</td></tr>
+<tr class="separator:afdf9345bf80709ac54926e9042dd56af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae56cb3c209c63320e89a3d87bc78f55a"><td class="memItemLeft" align="right" valign="top"><a id="ae56cb3c209c63320e89a3d87bc78f55a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDuringUndoRedo</b> () override</td></tr>
 <tr class="separator:ae56cb3c209c63320e89a3d87bc78f55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +187,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckoutPressed</b> (
 <tr class="memitem:a4ea09f5a8b824e3468d8c6413d56e550"><td class="memItemLeft" align="right" valign="top"><a id="a4ea09f5a8b824e3468d8c6413d56e550"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AreAnyEntitiesSelected</b> () override</td></tr>
 <tr class="separator:a4ea09f5a8b824e3468d8c6413d56e550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa189b2a768bb660426a0b9827d9fe58a"><td class="memItemLeft" align="right" valign="top"><a id="aa189b2a768bb660426a0b9827d9fe58a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelectedEntitiesCount</b> () override</td></tr>
+<tr class="separator:aa189b2a768bb660426a0b9827d9fe58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ace68074cc7bc49a3b443dc3b59cc9e"><td class="memItemLeft" align="right" valign="top"><a id="a6ace68074cc7bc49a3b443dc3b59cc9e"></a>
 const EntityIdList &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelectedEntities</b> () override</td></tr>
 <tr class="separator:a6ace68074cc7bc49a3b443dc3b59cc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,10 +388,13 @@ EntityIdSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_isolatedEnti
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Application/ToolsApplication.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:08 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

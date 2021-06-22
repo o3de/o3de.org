@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::ComponentApplicationRequests Class Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::ComponentApplicationRequests Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -80,6 +83,14 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a67f4b568a5ff4c564c33f79ba5d803b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedcee5e44de78d0273e06bda9bd428e5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#aedcee5e44de78d0273e06bda9bd428e5">RegisterEntityRemovedEventHandler</a> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityRemovedEvent::Handler</a> &amp;handler)=0</td></tr>
 <tr class="separator:aedcee5e44de78d0273e06bda9bd428e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844822648ff295e316c4fe5a5eff3c94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a844822648ff295e316c4fe5a5eff3c94">RegisterEntityActivatedEventHandler</a> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityActivatedEvent::Handler</a> &amp;handler)=0</td></tr>
+<tr class="separator:a844822648ff295e316c4fe5a5eff3c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80df8949c4435b35d6a22405f14eb94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#ae80df8949c4435b35d6a22405f14eb94">RegisterEntityDeactivatedEventHandler</a> (<a class="el" href="class_a_z_1_1_event_handler.html">EntityDeactivatedEvent::Handler</a> &amp;handler)=0</td></tr>
+<tr class="separator:ae80df8949c4435b35d6a22405f14eb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1bda2df2a3da16cb5f4a86cf6a6ba48"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#aa1bda2df2a3da16cb5f4a86cf6a6ba48">SignalEntityActivated</a> (<a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> *entity)=0</td></tr>
+<tr class="separator:aa1bda2df2a3da16cb5f4a86cf6a6ba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa9d4336405df2770454350dd154f859"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#afa9d4336405df2770454350dd154f859">SignalEntityDeactivated</a> (<a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> *entity)=0</td></tr>
+<tr class="separator:afa9d4336405df2770454350dd154f859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf011e99d6c982f1d2222f948155cb70"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#aaf011e99d6c982f1d2222f948155cb70">AddEntity</a> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity)=0</td></tr>
 <tr class="separator:aaf011e99d6c982f1d2222f948155cb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8045c743de46dc6220fce13b3f846329"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a8045c743de46dc6220fce13b3f846329">RemoveEntity</a> (<a class="el" href="class_a_z_1_1_entity.html">Entity</a> *entity)=0</td></tr>
@@ -90,6 +101,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a53b3d93b64c147f6a3471989d92e0ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ac55a6b82d5b8b05b7f5a2a5c434bb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_std_1_1basic__string.html">AZStd::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a19ac55a6b82d5b8b05b7f5a2a5c434bb">GetEntityName</a> (const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id)</td></tr>
 <tr class="separator:a19ac55a6b82d5b8b05b7f5a2a5c434bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae708d2415654546645045938049de4db"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#ae708d2415654546645045938049de4db">SetEntityName</a> ([[maybe_unused]] const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;id, [[maybe_unused]] const <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> name)</td></tr>
+<tr class="separator:ae708d2415654546645045938049de4db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3cc5e6e8f11b67ac1d1e32350fc55b2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#aa3cc5e6e8f11b67ac1d1e32350fc55b2">EnumerateEntities</a> (const <a class="el" href="class_a_z_1_1_component_application_requests.html#a2e5e9008371472f2c65456cef64b5010">EntityCallback</a> &amp;callback)=0</td></tr>
 <tr class="separator:aa3cc5e6e8f11b67ac1d1e32350fc55b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49f2246d7cdf45d88747408c2d7ac66e"><td class="memItemLeft" align="right" valign="top">virtual class <a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a49f2246d7cdf45d88747408c2d7ac66e">GetSerializeContext</a> ()=0</td></tr>
@@ -566,6 +579,38 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="a844822648ff295e316c4fe5a5eff3c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844822648ff295e316c4fe5a5eff3c94">&#9670;&nbsp;</a></span>RegisterEntityActivatedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ComponentApplicationRequests::RegisterEntityActivatedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_event_handler.html">EntityActivatedEvent::Handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Registers an event handler that will be signalled whenever an entity is added. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>the event handler to signal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a67f4b568a5ff4c564c33f79ba5d803b1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a67f4b568a5ff4c564c33f79ba5d803b1">&#9670;&nbsp;</a></span>RegisterEntityAddedEventHandler()</h2>
 
@@ -590,6 +635,38 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Registers an event handler that will be signalled whenever an entity is added. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handler</td><td>the event handler to signal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae80df8949c4435b35d6a22405f14eb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80df8949c4435b35d6a22405f14eb94">&#9670;&nbsp;</a></span>RegisterEntityDeactivatedEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ComponentApplicationRequests::RegisterEntityDeactivatedEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_event_handler.html">EntityDeactivatedEvent::Handler</a> &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Registers an event handler that will be signalled whenever an entity is removed. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">handler</td><td>the event handler to signal. </td></tr>
   </table>
@@ -690,6 +767,113 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<a id="ae708d2415654546645045938049de4db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae708d2415654546645045938049de4db">&#9670;&nbsp;</a></span>SetEntityName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AZ::ComponentApplicationRequests::SetEntityName </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="class_a_z_1_1_entity_id.html">EntityId</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">[[maybe_unused] ] const <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a>&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the name of the entity that has the specified entity ID. <a class="el" href="class_a_z_1_1_entity.html">Entity</a> names are not enforced to be unique. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityId</td><td>A reference to the entity whose name you want to change. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the name was changed successfully, false if it wasn't. </dd></dl>
+
+</div>
+</div>
+<a id="aa1bda2df2a3da16cb5f4a86cf6a6ba48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1bda2df2a3da16cb5f4a86cf6a6ba48">&#9670;&nbsp;</a></span>SignalEntityActivated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ComponentApplicationRequests::SignalEntityActivated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> *&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Signals that the provided entity has been activated. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>the entity being activated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa9d4336405df2770454350dd154f859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa9d4336405df2770454350dd154f859">&#9670;&nbsp;</a></span>SignalEntityDeactivated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::ComponentApplicationRequests::SignalEntityDeactivated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_a_z_1_1_entity.html">AZ::Entity</a> *&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Signals that the provided entity has been deactivated. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>the entity being deactivated. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8d84f526957d92fb64dd97fd9d8e02b4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8d84f526957d92fb64dd97fd9d8e02b4">&#9670;&nbsp;</a></span>UnregisterComponentDescriptor()</h2>
 
@@ -722,10 +906,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/Component/ComponentApplicationBus.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:18 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:13:47 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

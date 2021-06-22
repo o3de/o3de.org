@@ -64,7 +64,7 @@ All of O3DE's Gems and systems, as well as the components in your projects, need
 
 As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them-​and specifically, to invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces (buses) that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
 
-The two types of EBusses are:
+The two types of EBuses are:
 
 + Request bus: This EBus type registers a handler for a method that can be called by other systems.
 + Notification bus: This EBus type provides a messaging interface for notifications that systems can publish or subscribe to.
@@ -125,9 +125,9 @@ For the purposes of O3DE, an asset is a resource file, saved on disk, that's con
 
 For many reasons, the primary being performance considerations, these different assets cannot be consumed by O3DE without being converted to operating system specific, *game ready* data. This process, going from a source asset file on disk to game ready data is the *Asset Pipeline*. The processing is performed automatically by **Asset Processor**.
 
-**Asset Processor** is a background process (you'll see its icon in the task tray when it's running) that constantly scans directories in your project for new and updated files. **Asset Processor** uses configurable rules to determine how to handle new and updated asset files. The objective is to have game ready versions of all assets for each OS and each game directory in a location called the *asset cache*. The asset cache is kept separate from your asset directories and can be automatically rebuilt entirely from your source assets by the **Asset Processor**.
+**Asset Processor** is a background process (you'll see its icon in the task tray when it's running) that constantly scans directories in your project for new and updated files. Asset Processor uses configurable rules to determine how to handle new and updated asset files. The objective is to have game ready versions of all assets for each OS and each game directory in a location called the *asset cache*. The asset cache is kept separate from your asset directories and can be automatically rebuilt entirely from your source assets by the Asset Processor.
 
-The asset cache contains a full image of all files (except executables and related files) that are needed to run your project. **Asset Processor** keeps the image up to date, ensuring that new files are ready to use in the project runtime and **O3DE Editor** as soon as possible. Your project runtime will only load assets from the asset cache and never directly from your asset source directories.
+The asset cache contains a full image of all files (except executables and related files) that are needed to run your project. Asset Processor keeps the image up to date, ensuring that new files are ready to use in the project runtime and **O3DE Editor** as soon as possible. Your project runtime will only load assets from the asset cache and never directly from your asset source directories.
 
 Projects can have thousands of assets that need to be monitored and processed for multiple target operating systems. To manage this complexity, the Asset Pipeline is completely configurable. Here are just some of the configuration options available:
 
@@ -146,12 +146,12 @@ Asset Bundler makes shipping the specific assets that are used for the release o
 
 O3DE includes two scripting technologies for creating logic and behaviors: *Script Canvas* and *Lua*.
 
-**Script Canvas** is a visual scripting environment. In the **Script Canvas** editor, you create, connect, and rearrange graphical nodes that provide a visual representation of the logic flow. **Script Canvas** offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
+**Script Canvas** is a visual scripting environment. In the Script Canvas editor, you create, connect, and rearrange graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
 
-To enable **Script Canvas** for O3DE, you must enable the **Script Canvas Gem**.
+To enable Script Canvas for O3DE, you must enable the **Script Canvas Gem**.
 
 Lua is a powerful, fast, lightweight, embeddable scripting language. Lua facilitates quick iteration in your project because you can run your changes immediately without needing to recompile your source code.
 
-O3DE's functionality is exposed to **Script Canvas** and Lua by the behavior context. The behavior context reflects runtime code and makes it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's EBus so you can dispatch and handle events through **Script Canvas** and Lua.
+O3DE's functionality is exposed to Script Canvas and Lua by the behavior context. The behavior context reflects runtime code and makes it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's EBus so you can dispatch and handle events through Script Canvas and Lua.
 
-Functionality for both **Script Canvas** and Lua is added to entities through components. You can have multiple script components and mix and match between Lua and **Script Canvas** within your entities. This approach enables you to create small, manageable modules of logic and behavior that can be reused throughout your projects.
+Functionality for both Script Canvas and Lua is added to entities through components. You can have multiple script components and mix and match between Lua and Script Canvas within your entities. This approach enables you to create small, manageable modules of logic and behavior that can be reused throughout your projects.

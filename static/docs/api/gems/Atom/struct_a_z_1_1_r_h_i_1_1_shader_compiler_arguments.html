@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RHI::ShaderCompilerArguments Struct Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RHI::ShaderCompilerArguments Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -58,13 +61,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae7a1846f12b7a87fb55d57959c2f45b"><td class="memItemLeft" align="right" valign="top"><a id="aae7a1846f12b7a87fb55d57959c2f45b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a>, &quot;{7D0D58C8-EB95-4595-BC96-7390BEE0C048}&quot;)</td></tr>
 <tr class="separator:aae7a1846f12b7a87fb55d57959c2f45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97f7ea3baf49ef5a2d23b09e35dc163"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#ae97f7ea3baf49ef5a2d23b09e35dc163">HasMacroDefinitionsInCommandLineArguments</a> ()</td></tr>
+<tr class="separator:ae97f7ea3baf49ef5a2d23b09e35dc163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcecb111dd64d08058877840e608a0c3"><td class="memItemLeft" align="right" valign="top"><a id="abcecb111dd64d08058877840e608a0c3"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#abcecb111dd64d08058877840e608a0c3">Merge</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;right)</td></tr>
 <tr class="memdesc:abcecb111dd64d08058877840e608a0c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mix two instances of arguments, by or-ing bools, or by "if different, right hand side wins". <br /></td></tr>
 <tr class="separator:abcecb111dd64d08058877840e608a0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dc09452e19fcb634d2ab54324ab3e63"><td class="memItemLeft" align="right" valign="top"><a id="a1dc09452e19fcb634d2ab54324ab3e63"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#a1dc09452e19fcb634d2ab54324ab3e63">HasDifferentAzslcArguments</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;right) const</td></tr>
-<tr class="memdesc:a1dc09452e19fcb634d2ab54324ab3e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether there is a rebuild-worthy difference in arguments for AZSLc. <br /></td></tr>
+<tr class="memitem:a1dc09452e19fcb634d2ab54324ab3e63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#a1dc09452e19fcb634d2ab54324ab3e63">HasDifferentAzslcArguments</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;right) const</td></tr>
 <tr class="separator:a1dc09452e19fcb634d2ab54324ab3e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2d934143a16901ded76565b3a2c70c2"><td class="memItemLeft" align="right" valign="top"><a id="ac2d934143a16901ded76565b3a2c70c2"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html#ac2d934143a16901ded76565b3a2c70c2">MakeAdditionalAzslcCommandLineString</a> () const</td></tr>
@@ -127,10 +130,51 @@ static constexpr uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a c
 <tr class="memdesc:a132a76f85d54b909b4cb0264ad87ccfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZSLc. <br /></td></tr>
 <tr class="separator:a132a76f85d54b909b4cb0264ad87ccfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1dc09452e19fcb634d2ab54324ab3e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc09452e19fcb634d2ab54324ab3e63">&#9670;&nbsp;</a></span>HasDifferentAzslcArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RHI::ShaderCompilerArguments::HasDifferentAzslcArguments </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_shader_compiler_arguments.html">ShaderCompilerArguments</a> &amp;&#160;</td>
+          <td class="paramname"><em>right</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[GFX TODO] [ATOM-15472] Remove this function. Determine whether there is a rebuild-worthy difference in arguments for AZSLc </p>
+
+</div>
+</div>
+<a id="ae97f7ea3baf49ef5a2d23b09e35dc163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae97f7ea3baf49ef5a2d23b09e35dc163">&#9670;&nbsp;</a></span>HasMacroDefinitionsInCommandLineArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RHI::ShaderCompilerArguments::HasMacroDefinitionsInCommandLineArguments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns true if either @m_azslcAdditionalFreeArguments or @m_dxcAdditionalFreeArguments contain macro definitions, e.g. "-D MACRO" or "-D MACRO=VALUE" or "-DMACRO", "-DMACRO=VALUE". It is used for validation to forbid macro definitions, because the idea is that this struct is used inside GlobalBuildOptions which has a dedicated variable for macro definitions. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Gems/Atom/RHI/Code/Include/Atom/RHI.Edit/ShaderCompilerArguments.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:15 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:58 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

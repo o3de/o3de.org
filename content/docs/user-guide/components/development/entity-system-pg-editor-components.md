@@ -67,7 +67,7 @@ public:
 
 ## Editor Component and Runtime Component Differences {#component-entity-system-pg-editor-components-editor-runtime-differences}
 
-The code for editor components is similar to the code for runtime components\. The following sections list the key differences\. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed\. For more information, see [Creating a Component](/docs/user-guide/engine/components/create-component.md)\.
+The code for editor components is similar to the code for runtime components\. The following sections list the key differences\. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed\. For more information, see [Creating a Component](/docs/user-guide/components/development/create-component/)\.
 
 ### Base Classes {#component-entity-system-pg-editor-components-base-classes}
 

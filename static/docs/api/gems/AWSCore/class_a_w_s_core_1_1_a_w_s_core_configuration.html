@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AWSCore API Reference: AWSCore::AWSCoreConfiguration Class Reference</title>
+<title>Open 3D Engine AWSCore Gem API Reference: AWSCore::AWSCoreConfiguration Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AWSCore API Reference
+   <div id="projectname">Open 3D Engine AWSCore Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +72,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>InitConfig</b> ()</td
 <tr class="memitem:a6ea08af3001aa072df49515f856b065e"><td class="memItemLeft" align="right" valign="top"><a id="a6ea08af3001aa072df49515f856b065e"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceMappingConfigFilePath</b> () const override</td></tr>
 <tr class="separator:a6ea08af3001aa072df49515f856b065e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850875b6d17fbc3b4d5138e7e9b235c9"><td class="memItemLeft" align="right" valign="top"><a id="a850875b6d17fbc3b4d5138e7e9b235c9"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceMappingConfigFolderPath</b> () const override</td></tr>
+<tr class="separator:a850875b6d17fbc3b4d5138e7e9b235c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1008ff6b6f00e108a40b9e92ffd146b"><td class="memItemLeft" align="right" valign="top"><a id="ad1008ff6b6f00e108a40b9e92ffd146b"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetProfileName</b> () const override</td></tr>
 <tr class="separator:ad1008ff6b6f00e108a40b9e92ffd146b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -78,28 +84,139 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadConfiguration</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ad5179c6a888b11430d3301ba0d0d8b4e"><td class="memItemLeft" align="right" valign="top"><a id="ad5179c6a888b11430d3301ba0d0d8b4e"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCORE_CONFIGURATION_FILENAME</b> [] = &quot;awscoreconfiguration.setreg&quot;</td></tr>
-<tr class="separator:ad5179c6a888b11430d3301ba0d0d8b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a259fdb886bf4690f7820d315594ea925"><td class="memItemLeft" align="right" valign="top"><a id="a259fdb886bf4690f7820d315594ea925"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCORE_RESOURCE_MAPPING_CONFIG_FOLDERNAME</b> [] = &quot;Config&quot;</td></tr>
-<tr class="separator:a259fdb886bf4690f7820d315594ea925"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad65bb3ea4d80152ab4ea7632abd3cc8b"><td class="memItemLeft" align="right" valign="top"><a id="ad65bb3ea4d80152ab4ea7632abd3cc8b"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCORE_RESOURCE_MAPPING_CONFIG_FILENAME_KEY</b> [] = &quot;/AWSCore/ResourceMappingConfigFileName&quot;</td></tr>
-<tr class="separator:ad65bb3ea4d80152ab4ea7632abd3cc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67969dbd2545bdf52d5b6f49b87298c1"><td class="memItemLeft" align="right" valign="top"><a id="a67969dbd2545bdf52d5b6f49b87298c1"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCORE_DEFAULT_PROFILE_NAME</b> [] = &quot;default&quot;</td></tr>
-<tr class="separator:a67969dbd2545bdf52d5b6f49b87298c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a475c919c0fc69385b68907b68c27df"><td class="memItemLeft" align="right" valign="top"><a id="a6a475c919c0fc69385b68907b68c27df"></a>
-static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCORE_PROFILENAME_KEY</b> [] = &quot;/AWSCore/ProfileName&quot;</td></tr>
-<tr class="separator:a6a475c919c0fc69385b68907b68c27df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b7fddc7451c2bd9389b5cc96475105"><td class="memItemLeft" align="right" valign="top"><a id="ab7b7fddc7451c2bd9389b5cc96475105"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreConfigurationName</b> [] = &quot;AWSCoreConfiguration&quot;</td></tr>
+<tr class="separator:ab7b7fddc7451c2bd9389b5cc96475105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06979d7547c838436951df78773cb6a6"><td class="memItemLeft" align="right" valign="top"><a id="a06979d7547c838436951df78773cb6a6"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreConfigurationFileName</b> [] = &quot;awscoreconfiguration.setreg&quot;</td></tr>
+<tr class="separator:a06979d7547c838436951df78773cb6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a507e7449fff0500d4214638a74a8300c"><td class="memItemLeft" align="right" valign="top"><a id="a507e7449fff0500d4214638a74a8300c"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreResourceMappingConfigFolderName</b> [] = &quot;Config&quot;</td></tr>
+<tr class="separator:a507e7449fff0500d4214638a74a8300c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56d0d3a8a654a328065dc871187ee1e9"><td class="memItemLeft" align="right" valign="top"><a id="a56d0d3a8a654a328065dc871187ee1e9"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreResourceMappingConfigFileNameKey</b> [] = &quot;/AWSCore/ResourceMappingConfigFileName&quot;</td></tr>
+<tr class="separator:a56d0d3a8a654a328065dc871187ee1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4472d044e266ce1f6bcf88bbd8e466"><td class="memItemLeft" align="right" valign="top"><a id="adf4472d044e266ce1f6bcf88bbd8e466"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreDefaultProfileName</b> [] = &quot;default&quot;</td></tr>
+<tr class="separator:adf4472d044e266ce1f6bcf88bbd8e466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe23d5bd957b9342703bea10ceacaef3"><td class="memItemLeft" align="right" valign="top"><a id="abe23d5bd957b9342703bea10ceacaef3"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreProfileNameKey</b> [] = &quot;/AWSCore/ProfileName&quot;</td></tr>
+<tr class="separator:abe23d5bd957b9342703bea10ceacaef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98343e9fa83321f7ea848ef4063e9f43"><td class="memItemLeft" align="right" valign="top">static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>ProjectSourceFolderNotFoundErrorMessage</b> []</td></tr>
+<tr class="separator:a98343e9fa83321f7ea848ef4063e9f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a273455032b16c27c6ba5e98a52f2d27e"><td class="memItemLeft" align="right" valign="top">static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>ProfileNameNotFoundErrorMessage</b> []</td></tr>
+<tr class="separator:a273455032b16c27c6ba5e98a52f2d27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56fb59b3c590b968d4127952bb61f3a"><td class="memItemLeft" align="right" valign="top">static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceMappingFileNameNotFoundErrorMessage</b> []</td></tr>
+<tr class="separator:af56fb59b3c590b968d4127952bb61f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d21dd29227b53f8ea0ae917241ef31"><td class="memItemLeft" align="right" valign="top">static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>SettingsRegistryLoadFailureErrorMessage</b> []</td></tr>
+<tr class="separator:a49d21dd29227b53f8ea0ae917241ef31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Responsible for handling configuration for AWSCore gem TODO: Expose internal field through edit behavior if required </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a273455032b16c27c6ba5e98a52f2d27e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a273455032b16c27c6ba5e98a52f2d27e">&#9670;&nbsp;</a></span>ProfileNameNotFoundErrorMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char AWSCore::AWSCoreConfiguration::ProfileNameNotFoundErrorMessage[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Failed to get profile name, return default value instead.&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a98343e9fa83321f7ea848ef4063e9f43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98343e9fa83321f7ea848ef4063e9f43">&#9670;&nbsp;</a></span>ProjectSourceFolderNotFoundErrorMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char AWSCore::AWSCoreConfiguration::ProjectSourceFolderNotFoundErrorMessage[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Failed to get project source folder path.&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af56fb59b3c590b968d4127952bb61f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af56fb59b3c590b968d4127952bb61f3a">&#9670;&nbsp;</a></span>ResourceMappingFileNameNotFoundErrorMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char AWSCore::AWSCoreConfiguration::ResourceMappingFileNameNotFoundErrorMessage[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Failed to get resource mapping config file name, return empty value instead.&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a49d21dd29227b53f8ea0ae917241ef31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d21dd29227b53f8ea0ae917241ef31">&#9670;&nbsp;</a></span>SettingsRegistryLoadFailureErrorMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr const char AWSCore::AWSCoreConfiguration::SettingsRegistryLoadFailureErrorMessage[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">            <span class="stringliteral">&quot;Failed to load AWSCore settings registry file.&quot;</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/AWSCore/Code/Include/Private/Configuration/AWSCoreConfiguration.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:04 for AWSCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:48 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

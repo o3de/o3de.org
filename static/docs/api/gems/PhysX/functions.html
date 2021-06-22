@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PhysX API Reference: Class Members</title>
+<title>Open 3D Engine PhysX Gem API Reference: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">PhysX API Reference
+   <div id="projectname">Open 3D Engine PhysX Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -196,7 +199,7 @@ $(function() {
 : <a class="el" href="class_phys_x_1_1_character_controller_requests.html#ae7ab98e3d88be6b124a51c1ceb076560">PhysX::CharacterControllerRequests</a>
 </li>
 <li>GetShapeConfigurations()
-: <a class="el" href="class_phys_x_1_1_collider_component_requests.html#a8d2aff31432f50b455f2669ff4a563a6">PhysX::ColliderComponentRequests</a>
+: <a class="el" href="class_phys_x_1_1_collider_component_requests.html#ad0b443e4caff8895669328cdf6015f89">PhysX::ColliderComponentRequests</a>
 </li>
 <li>GetShapes()
 : <a class="el" href="class_phys_x_1_1_collider_component_requests.html#a5dfc6cd5dd425de4cd1b017cef09fa39">PhysX::ColliderComponentRequests</a>
@@ -285,9 +288,6 @@ $(function() {
 <li>m_collisionLayer
 : <a class="el" href="class_phys_x_1_1_pipeline_1_1_asset_collider_configuration.html#a11821727140b33c06bb00af6750b5f38">PhysX::Pipeline::AssetColliderConfiguration</a>
 </li>
-<li>m_defaultMaterialLibrary
-: <a class="el" href="struct_phys_x_1_1_phys_x_system_configuration.html#a1e76e67c1ba71da3ee56d1f2e887a027">PhysX::PhysXSystemConfiguration</a>
-</li>
 <li>m_eigenpairs
 : <a class="el" href="struct_numerical_methods_1_1_eigenanalysis_1_1_solver_result.html#a3106a7d2949921a7986e362b14cab220">NumericalMethods::Eigenanalysis::SolverResult&lt; Scalar, D &gt;</a>
 </li>
@@ -331,6 +331,9 @@ $(function() {
 : <a class="el" href="struct_numerical_methods_1_1_eigenanalysis_1_1_solver_result.html#a088c688db240b933440f00db4484ee1a">NumericalMethods::Eigenanalysis::SolverResult&lt; Scalar, D &gt;</a>
 , <a class="el" href="struct_numerical_methods_1_1_optimization_1_1_solver_result.html#a9064342b427f799ccb504968a29725d7">NumericalMethods::Optimization::SolverResult</a>
 </li>
+<li>m_physicsMaterialNames
+: <a class="el" href="class_phys_x_1_1_pipeline_1_1_mesh_asset_data.html#a6e09008c3010ac1119322d4af9bb040e">PhysX::Pipeline::MeshAssetData</a>
+</li>
 <li>m_port
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_pvd_configuration.html#a91dee2ed910d5912a46f4d03e616fb25">PhysX::Debug::PvdConfiguration</a>
 </li>
@@ -345,9 +348,6 @@ $(function() {
 </li>
 <li>m_showJointHierarchy
 : <a class="el" href="struct_phys_x_1_1_debug_1_1_debug_display_data.html#a98d9da0c6a5eafb55c20a9bba3e13e53">PhysX::Debug::DebugDisplayData</a>
-</li>
-<li>m_surfaceNames
-: <a class="el" href="class_phys_x_1_1_pipeline_1_1_mesh_asset_data.html#a59c336810132c382db999666da15ca40">PhysX::Pipeline::MeshAssetData</a>
 </li>
 <li>m_tag
 : <a class="el" href="class_phys_x_1_1_pipeline_1_1_asset_collider_configuration.html#a6814633159f00dd7cd2387bec9c0d44f">PhysX::Pipeline::AssetColliderConfiguration</a>
@@ -469,9 +469,6 @@ $(function() {
 , <a class="el" href="class_phys_x_1_1_force_point_requests.html#a3c013b3b812e2e167f2f92a786d538f9">PhysX::ForcePointRequests</a>
 , <a class="el" href="class_phys_x_1_1_force_world_space_requests.html#a1c50c5e2a631a3af98794411b9fb73f2">PhysX::ForceWorldSpaceRequests</a>
 </li>
-<li>SetMaterialAsset()
-: <a class="el" href="class_phys_x_1_1_mesh_collider_component_requests.html#a174b13c29c83d82cc004e89adee96bff">PhysX::MeshColliderComponentRequests</a>
-</li>
 <li>SetMaterialId()
 : <a class="el" href="class_phys_x_1_1_mesh_collider_component_requests.html#a037368f6c259a131990e180248e7c3de">PhysX::MeshColliderComponentRequests</a>
 </li>
@@ -507,7 +504,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:41 for PhysX API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:23 for Open 3D Engine PhysX Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

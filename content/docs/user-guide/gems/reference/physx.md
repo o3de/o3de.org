@@ -10,4 +10,4 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 
 ![\[PhysX gem in O3DE.\]](/images/user-guide/gems/gems-system-physx.png)
 
-For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/intro.md)\.
+For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/)\.

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::IO::PathView Class Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::IO::PathView Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +117,8 @@ constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Compare</b> 
 <tr class="memitem:a21a870d8c6367e036add14f1f5a59563"><td class="memItemLeft" align="right" valign="top"><a id="a21a870d8c6367e036add14f1f5a59563"></a>
 constexpr int&#160;</td><td class="memItemRight" valign="bottom"><b>Compare</b> (const value_type *pathString) const noexcept</td></tr>
 <tr class="separator:a21a870d8c6367e036add14f1f5a59563"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d627e2cbad38122637b55859120ebfc"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a4d627e2cbad38122637b55859120ebfc">FixedMaxPathString</a> () const noexcept</td></tr>
+<tr class="separator:a4d627e2cbad38122637b55859120ebfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fb6318edc646e251a23a20a760a74d9"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a0fb6318edc646e251a23a20a760a74d9">RootName</a> () const</td></tr>
 <tr class="separator:a0fb6318edc646e251a23a20a760a74d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4621dfef401afc295bd370d3f94d41e2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html">PathView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_path_view.html#a4621dfef401afc295bd370d3f94d41e2">RootDirectory</a> () const</td></tr>
@@ -481,6 +486,32 @@ directory-separators - the forward slash character '/' or the preferred separato
 </table>
 </div><div class="memdoc">
 <p>Returns the filename of the path windows = "name.txt", posix = "name.txt" </p>
+
+</div>
+</div>
+<a id="a4d627e2cbad38122637b55859120ebfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d627e2cbad38122637b55859120ebfc">&#9670;&nbsp;</a></span>FixedMaxPathString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">AZStd::fixed_string</a>&lt; <a class="el" href="namespace_a_z_1_1_i_o.html#ae164229bbf1f88cf7a2bbfb660f444c6">MaxPathLength</a> &gt; AZ::IO::PathView::FixedMaxPathString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>extension: fixed string types with MaxPathLength capacity Returns a new instance of an AZStd::fixed_string with capacity of MaxPathLength made from the internal string </p>
 
 </div>
 </div>
@@ -871,10 +902,14 @@ a glob containing '*' will match a single component of a path</h1>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Code/Framework/AzCore/AzCore/IO/Path/Path.h</li>
+<li>Code/Framework/AzCore/AzCore/IO/Path/Path.inl</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:23 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:13:52 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

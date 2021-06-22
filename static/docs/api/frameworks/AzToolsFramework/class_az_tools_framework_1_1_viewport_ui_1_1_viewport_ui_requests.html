@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::ViewportUi::ViewportUiRequests Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::ViewportUi::ViewportUiRequests Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -54,26 +57,49 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a90dd7793753f4dc10e4b641bb8ce2fef"><td class="memItemLeft" align="right" valign="top"><a id="a90dd7793753f4dc10e4b641bb8ce2fef"></a>
-virtual const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a90dd7793753f4dc10e4b641bb8ce2fef">CreateCluster</a> ()=0</td></tr>
-<tr class="memdesc:a90dd7793753f4dc10e4b641bb8ce2fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and registers a cluster with the Viewport UI system. <br /></td></tr>
-<tr class="separator:a90dd7793753f4dc10e4b641bb8ce2fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95eeb3fc65270eb55e9c465ec4eba33"><td class="memItemLeft" align="right" valign="top"><a id="aa95eeb3fc65270eb55e9c465ec4eba33"></a>
+virtual const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#aa95eeb3fc65270eb55e9c465ec4eba33">CreateCluster</a> (Alignment align)=0</td></tr>
+<tr class="memdesc:aa95eeb3fc65270eb55e9c465ec4eba33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and registers a cluster with the Viewport UI system. <br /></td></tr>
+<tr class="separator:aa95eeb3fc65270eb55e9c465ec4eba33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40d9577594ff30a3ed7c3fade278261"><td class="memItemLeft" align="right" valign="top"><a id="aa40d9577594ff30a3ed7c3fade278261"></a>
+virtual const <a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#aa40d9577594ff30a3ed7c3fade278261">CreateSwitcher</a> (Alignment align)=0</td></tr>
+<tr class="memdesc:aa40d9577594ff30a3ed7c3fade278261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and registers a switcher with the Viewport UI system. <br /></td></tr>
+<tr class="separator:aa40d9577594ff30a3ed7c3fade278261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329e0193dfbe1e492eb8950561c88ae4"><td class="memItemLeft" align="right" valign="top"><a id="a329e0193dfbe1e492eb8950561c88ae4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a329e0193dfbe1e492eb8950561c88ae4">SetClusterActiveButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
 <tr class="memdesc:a329e0193dfbe1e492eb8950561c88ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active button of the cluster. This is the button which will display as highlighted. <br /></td></tr>
 <tr class="separator:a329e0193dfbe1e492eb8950561c88ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66da743ce25c8aa2ce7fe58ce79164c9"><td class="memItemLeft" align="right" valign="top"><a id="a66da743ce25c8aa2ce7fe58ce79164c9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a66da743ce25c8aa2ce7fe58ce79164c9">SetSwitcherActiveButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
+<tr class="memdesc:a66da743ce25c8aa2ce7fe58ce79164c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the active button of the switcher. This is the button which has a text label. <br /></td></tr>
+<tr class="separator:a66da743ce25c8aa2ce7fe58ce79164c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbce92187a070400fc4b3c532018f0de"><td class="memItemLeft" align="right" valign="top"><a id="afbce92187a070400fc4b3c532018f0de"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#afbce92187a070400fc4b3c532018f0de">SetClusterButtonLocked</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId, bool isLocked)=0</td></tr>
+<tr class="memdesc:afbce92187a070400fc4b3c532018f0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a locked overlay to the cluster button's icon. <br /></td></tr>
+<tr class="separator:afbce92187a070400fc4b3c532018f0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e603dd2fd97b752bb7d93c7a358ac28"><td class="memItemLeft" align="right" valign="top"><a id="a3e603dd2fd97b752bb7d93c7a358ac28"></a>
 virtual const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a3e603dd2fd97b752bb7d93c7a358ac28">CreateClusterButton</a> (const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, const AZStd::string &amp;icon)=0</td></tr>
 <tr class="memdesc:a3e603dd2fd97b752bb7d93c7a358ac28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new button onto a cluster. <br /></td></tr>
 <tr class="separator:a3e603dd2fd97b752bb7d93c7a358ac28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4cf5550eab2a15785d54bb3da2d15c"><td class="memItemLeft" align="right" valign="top"><a id="a2a4cf5550eab2a15785d54bb3da2d15c"></a>
+virtual const <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a2a4cf5550eab2a15785d54bb3da2d15c">CreateSwitcherButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, const AZStd::string &amp;icon, const AZStd::string &amp;name=AZStd::string())=0</td></tr>
+<tr class="memdesc:a2a4cf5550eab2a15785d54bb3da2d15c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a new button onto a switcher. <br /></td></tr>
+<tr class="separator:a2a4cf5550eab2a15785d54bb3da2d15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4de399556b06a8c4def544e684dc8b0"><td class="memItemLeft" align="right" valign="top"><a id="ad4de399556b06a8c4def544e684dc8b0"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ad4de399556b06a8c4def544e684dc8b0">RegisterClusterEventHandler</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, AZ::Event&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> &gt;::Handler &amp;handler)=0</td></tr>
 <tr class="memdesc:ad4de399556b06a8c4def544e684dc8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event handler to handle events from the cluster. <br /></td></tr>
 <tr class="separator:ad4de399556b06a8c4def544e684dc8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad366b43a5f7437820c5bc73ce45f4763"><td class="memItemLeft" align="right" valign="top"><a id="ad366b43a5f7437820c5bc73ce45f4763"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ad366b43a5f7437820c5bc73ce45f4763">RegisterSwitcherEventHandler</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, AZ::Event&lt; <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> &gt;::Handler &amp;handler)=0</td></tr>
+<tr class="memdesc:ad366b43a5f7437820c5bc73ce45f4763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers an event handler to handle events from the cluster. <br /></td></tr>
+<tr class="separator:ad366b43a5f7437820c5bc73ce45f4763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d375bfd76cd12de4fc4de6cdd01b172"><td class="memItemLeft" align="right" valign="top"><a id="a0d375bfd76cd12de4fc4de6cdd01b172"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a0d375bfd76cd12de4fc4de6cdd01b172">RemoveCluster</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId)=0</td></tr>
 <tr class="memdesc:a0d375bfd76cd12de4fc4de6cdd01b172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a cluster from the Viewport UI system. <br /></td></tr>
 <tr class="separator:a0d375bfd76cd12de4fc4de6cdd01b172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751e44c1b9bfa1c2291d888b3b41d2f5"><td class="memItemLeft" align="right" valign="top"><a id="a751e44c1b9bfa1c2291d888b3b41d2f5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSwitcher</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId)=0</td></tr>
+<tr class="separator:a751e44c1b9bfa1c2291d888b3b41d2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad23b078ebcd8ce2cac915dd2fa3a0c10"><td class="memItemLeft" align="right" valign="top"><a id="ad23b078ebcd8ce2cac915dd2fa3a0c10"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#ad23b078ebcd8ce2cac915dd2fa3a0c10">SetClusterVisible</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, bool visible)=0</td></tr>
 <tr class="memdesc:ad23b078ebcd8ce2cac915dd2fa3a0c10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the visibility of the cluster. <br /></td></tr>
@@ -114,13 +140,19 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_requests.html#a3626fa2b31652198543aa64e2f05c7b4">PressButton</a> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">ClusterId</a> clusterId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
 <tr class="memdesc:a3626fa2b31652198543aa64e2f05c7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invoke a button press in a cluster. <br /></td></tr>
 <tr class="separator:a3626fa2b31652198543aa64e2f05c7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a324c8fe399ddee458bc8937cd20f6379"><td class="memItemLeft" align="right" valign="top"><a id="a324c8fe399ddee458bc8937cd20f6379"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>PressButton</b> (<a class="el" href="class_az_tools_framework_1_1_id_type.html">SwitcherId</a> switcherId, <a class="el" href="class_az_tools_framework_1_1_id_type.html">ButtonId</a> buttonId)=0</td></tr>
+<tr class="separator:a324c8fe399ddee458bc8937cd20f6379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Viewport requests to interact with the Viewport UI. Viewport UI refers to the entire UI overlay (one per viewport). Each widget on the Viewport UI is referred to as an element. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/ViewportUi/ViewportUiRequestBus.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:10 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

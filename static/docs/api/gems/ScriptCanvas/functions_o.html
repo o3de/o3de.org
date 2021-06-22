@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ScriptCanvas API Reference: Class Members</title>
+<title>Open 3D Engine ScriptCanvas Gem API Reference: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ScriptCanvas API Reference
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -74,9 +77,6 @@ $(function() {
 <li>OnConnectionRemoved()
 : <a class="el" href="class_script_canvas_1_1_graph_notifications.html#ab310dc966a967098626bd24810c4c973">ScriptCanvas::GraphNotifications</a>
 </li>
-<li>OnDatumChanged()
-: <a class="el" href="class_script_canvas_1_1_graph_variable_net_binding_table.html#afc4dbe1fe74f61aad3362196e5555350">ScriptCanvas::GraphVariableNetBindingTable</a>
-</li>
 <li>OnDeactivate()
 : <a class="el" href="class_script_canvas_1_1_node.html#a22e6410c48b8f4dabfb088c8ef1167ca">ScriptCanvas::Node</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_e_bus_event_handler.html#ace3fcdbc2dd3c9174512f2318b2910ae">ScriptCanvas::Nodes::Core::EBusEventHandler</a>
@@ -122,8 +122,8 @@ $(function() {
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_error.html#a2c1621978c80c242148a4bfbca6b47f5">ScriptCanvas::Nodes::Core::Error</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_error_handler.html#ad810d3316aeba8f5738dee9688152ee5">ScriptCanvas::Nodes::Core::ErrorHandler</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_extract_property.html#a33659fdb8a4f8967f2cc7f1a02dea960">ScriptCanvas::Nodes::Core::ExtractProperty</a>
-, <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_for_each.html#a37637a9553e33540f1ad0c5d1126e972">ScriptCanvas::Nodes::Core::ForEach</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_call_node.html#a6b154e2d837b0e313773f2bf8809ec5e">ScriptCanvas::Nodes::Core::FunctionCallNode</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_function_definition_node.html#a899f7fb666c9739b2345a069faa1e25f">ScriptCanvas::Nodes::Core::FunctionDefinitionNode</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_get_variable_node.html#a2faad77a5ecb014e55311f126bfdf0e6">ScriptCanvas::Nodes::Core::GetVariableNode</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_method_overloaded.html#a994ed9f863f98eacb1651724c27eaa33">ScriptCanvas::Nodes::Core::MethodOverloaded</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#a3f0cf09802bd8e6ed167513fccbfbb30">ScriptCanvas::Nodes::Core::Repeater</a>
@@ -147,6 +147,14 @@ $(function() {
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_operators_1_1_operator_size.html#a68ec7a6e93bcccaa9943896d11226247">ScriptCanvas::Nodes::Operators::OperatorSize</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_string_1_1_contains.html#abb1a81d9455ffc3e965b98cd082495f5">ScriptCanvas::Nodes::String::Contains</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_string_1_1_replace.html#a3d72a8aa03b137d216590cc7a84a8935">ScriptCanvas::Nodes::String::Replace</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_equal.html#a1dfc8655de329dc6147cc19971cc59d8">ScriptCanvas::Nodes::UnitTesting::ExpectEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_false.html#adb60d9aa67149c5d33b0090ee5d350ce">ScriptCanvas::Nodes::UnitTesting::ExpectFalse</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_greater_than.html#a39d9761d7c386dcee4cebc0e0fb15080">ScriptCanvas::Nodes::UnitTesting::ExpectGreaterThan</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_greater_than_equal.html#a6a16da23465760c495b702f7857acd5c">ScriptCanvas::Nodes::UnitTesting::ExpectGreaterThanEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_less_than.html#a1cbaa79172166ab7c6b85ed1af2977f9">ScriptCanvas::Nodes::UnitTesting::ExpectLessThan</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_less_than_equal.html#ac7ea2628d4cc7783a30d52c3e350a1f9">ScriptCanvas::Nodes::UnitTesting::ExpectLessThanEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_not_equal.html#af48cd72abd5ded0b5c5f48010ebd09a1">ScriptCanvas::Nodes::UnitTesting::ExpectNotEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_true.html#a86ba1bc0216c6e065885078dcdbb546d">ScriptCanvas::Nodes::UnitTesting::ExpectTrue</a>
 </li>
 <li>OnInputSignal()
 : <a class="el" href="class_script_canvas_1_1_node.html#aaaf25eb4a376cd73016ef3ad1f93b88a">ScriptCanvas::Node</a>
@@ -158,7 +166,6 @@ $(function() {
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_e_bus_event_handler.html#aabd9ee2c82dd8e023bd05e1e77f53f15">ScriptCanvas::Nodes::Core::EBusEventHandler</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_error.html#a2e5772f01247d4c46a0ccd1a5041ac76">ScriptCanvas::Nodes::Core::Error</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_extract_property.html#a72b16bdfff882af40f9be29eb189b636">ScriptCanvas::Nodes::Core::ExtractProperty</a>
-, <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_for_each.html#a1e24ada94dd9d5ceafbf51edf6ef580e">ScriptCanvas::Nodes::Core::ForEach</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_get_variable_node.html#ae62813ea739cfa6161e689a811dff977">ScriptCanvas::Nodes::Core::GetVariableNode</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#aed8419232f9cbd753ba030c5fd11726e">ScriptCanvas::Nodes::Core::Repeater</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_send_script_event.html#a2114fddfcfa740e223b40de742e94e96">ScriptCanvas::Nodes::Core::SendScriptEvent</a>
@@ -205,6 +212,18 @@ $(function() {
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_time_1_1_timer.html#a9fa9facbf2d874784c54cd19c088259d">ScriptCanvas::Nodes::Time::Timer</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_unary_expression.html#ac3b7761ef07dbabb6b564fde6144cbb0">ScriptCanvas::Nodes::UnaryExpression</a>
 , <a class="el" href="class_script_canvas_1_1_nodes_1_1_unary_operator.html#aea472a6fe43824ddd597c271fc97de39">ScriptCanvas::Nodes::UnaryOperator</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_add_failure.html#a5fda6ae21cb13abf9cfa1e3f7104126d">ScriptCanvas::Nodes::UnitTesting::AddFailure</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_add_success.html#a5752a113884abe5ff255ba693eb1a1e3">ScriptCanvas::Nodes::UnitTesting::AddSuccess</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_checkpoint.html#a894e05e2970d2a0f6bc8d6bac59c2594">ScriptCanvas::Nodes::UnitTesting::Checkpoint</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_equal.html#a8b391b023c380b544c72e11e826bdd02">ScriptCanvas::Nodes::UnitTesting::ExpectEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_false.html#a073b5d8cd80e4a6352cdcea077f051df">ScriptCanvas::Nodes::UnitTesting::ExpectFalse</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_greater_than.html#ac99701c01c289d0fc314276f7d10d869">ScriptCanvas::Nodes::UnitTesting::ExpectGreaterThan</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_greater_than_equal.html#ac4ef2c43788ce14fe61e896bf2c38213">ScriptCanvas::Nodes::UnitTesting::ExpectGreaterThanEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_less_than.html#a0dcb46c6bac2873a97eb7294f37aa4c3">ScriptCanvas::Nodes::UnitTesting::ExpectLessThan</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_less_than_equal.html#a6eaa3187c98c77909607f1d2daadc423">ScriptCanvas::Nodes::UnitTesting::ExpectLessThanEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_not_equal.html#a84829338984086201cd2f2d001e7c9a6">ScriptCanvas::Nodes::UnitTesting::ExpectNotEqual</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_expect_true.html#a2dd1977b0f8938ac6b478326e5466127">ScriptCanvas::Nodes::UnitTesting::ExpectTrue</a>
+, <a class="el" href="class_script_canvas_1_1_nodes_1_1_unit_testing_1_1_mark_complete.html#aedbdaed2cb2d22d595411bcc318495b4">ScriptCanvas::Nodes::UnitTesting::MarkComplete</a>
 </li>
 <li>OnNodeAdded()
 : <a class="el" href="class_script_canvas_1_1_graph_notifications.html#a5dfa751260a4cc4a6cae799f7d07716e">ScriptCanvas::GraphNotifications</a>
@@ -214,9 +233,6 @@ $(function() {
 </li>
 <li>OnPreConnectionRemoved()
 : <a class="el" href="class_script_canvas_1_1_graph_notifications.html#a8f28001609866096cfb8a0bc0e2dc8d0">ScriptCanvas::GraphNotifications</a>
-</li>
-<li>OnPropertyUpdate()
-: <a class="el" href="class_script_canvas_1_1_graph_variable_net_binding_table.html#ac0625b4e5aa38e1983ca63173d1dbc2f">ScriptCanvas::GraphVariableNetBindingTable</a>
 </li>
 <li>OnReadBegin()
 : <a class="el" href="class_script_canvas_1_1_serialize_context_read_write_handler.html#a8e82db0737c6110c5a75fada174e415f">ScriptCanvas::SerializeContextReadWriteHandler&lt; t_Class &gt;</a>
@@ -279,7 +295,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:57 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:37 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

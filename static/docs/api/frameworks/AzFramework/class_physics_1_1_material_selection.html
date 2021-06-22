@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: Physics::MaterialSelection Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: Physics::MaterialSelection Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -69,16 +72,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3863e9b3194842cb9a0ec4ea83fd0576"><td class="memItemLeft" align="right" valign="top"><a id="a3863e9b3194842cb9a0ec4ea83fd0576"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_physics_1_1_material_selection.html">Physics::MaterialSelection</a>, &quot;{F571AFF4-C4BB-4590-A204-D11D9EEABBC4}&quot;)</td></tr>
 <tr class="separator:a3863e9b3194842cb9a0ec4ea83fd0576"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb4f6803b4a00c970c57c1a1819beb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a8fb4f6803b4a00c970c57c1a1819beb8">IsMaterialLibraryValid</a> () const</td></tr>
-<tr class="separator:a8fb4f6803b4a00c970c57c1a1819beb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb8208f2e3e3a5d26e4d8216c1c6e3bc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#afb8208f2e3e3a5d26e4d8216c1c6e3bc">GetMaterialConfiguration</a> (<a class="el" href="class_physics_1_1_material_from_asset_configuration.html">Physics::MaterialFromAssetConfiguration</a> &amp;configuration, const <a class="el" href="class_physics_1_1_material_id.html">Physics::MaterialId</a> &amp;materialId) const</td></tr>
-<tr class="separator:afb8208f2e3e3a5d26e4d8216c1c6e3bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89dd024a520eb3915854e7ffeb6fc291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a89dd024a520eb3915854e7ffeb6fc291">SetMaterialLibrary</a> (const AZ::Data::AssetId &amp;assetId)</td></tr>
-<tr class="separator:a89dd024a520eb3915854e7ffeb6fc291"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b1a619718286a8f00f9625fbbca1311"><td class="memItemLeft" align="right" valign="top"><a id="a2b1a619718286a8f00f9625fbbca1311"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a2b1a619718286a8f00f9625fbbca1311">ResetToDefaultMaterialLibrary</a> ()</td></tr>
-<tr class="memdesc:a2b1a619718286a8f00f9625fbbca1311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material library to none, this will cause to use the project-wide default material library. <br /></td></tr>
-<tr class="separator:a2b1a619718286a8f00f9625fbbca1311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87542db955508bed6c306b023a59c614"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a87542db955508bed6c306b023a59c614">SetMaterialSlots</a> (const SlotsArray &amp;slots)</td></tr>
 <tr class="separator:a87542db955508bed6c306b023a59c614"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a075bb9e0b6f68a1868f9dac71269a9c3"><td class="memItemLeft" align="right" valign="top"><a id="a075bb9e0b6f68a1868f9dac71269a9c3"></a>
@@ -87,24 +80,12 @@ const AZStd::vector&lt; <a class="el" href="class_physics_1_1_material_id.html">
 <tr class="separator:a075bb9e0b6f68a1868f9dac71269a9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa87584aee8968911ce3c3c51fb29535d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#aa87584aee8968911ce3c3c51fb29535d">SetMaterialId</a> (const <a class="el" href="class_physics_1_1_material_id.html">Physics::MaterialId</a> &amp;materialId, int slotIndex=0)</td></tr>
 <tr class="separator:aa87584aee8968911ce3c3c51fb29535d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcd87abd126936b2f73cc65408ee30cf"><td class="memItemLeft" align="right" valign="top"><a id="afcd87abd126936b2f73cc65408ee30cf"></a>
-AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#afcd87abd126936b2f73cc65408ee30cf">GetMaterialLibraryAssetId</a> () const</td></tr>
-<tr class="memdesc:afcd87abd126936b2f73cc65408ee30cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the material library asset id. <br /></td></tr>
-<tr class="separator:afcd87abd126936b2f73cc65408ee30cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cfbd364231687567e762b13536de91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_physics_1_1_material_id.html">Physics::MaterialId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a85cfbd364231687567e762b13536de91">GetMaterialId</a> (int slotIndex=0) const</td></tr>
 <tr class="separator:a85cfbd364231687567e762b13536de91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17decbd899ade222ede2018541c6f988"><td class="memItemLeft" align="right" valign="top"><a id="a17decbd899ade222ede2018541c6f988"></a>
-const <a class="el" href="class_physics_1_1_material_library_asset.html">Physics::MaterialLibraryAsset</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a17decbd899ade222ede2018541c6f988">GetMaterialLibraryAssetData</a> () const</td></tr>
-<tr class="memdesc:a17decbd899ade222ede2018541c6f988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the material library asset. <br /></td></tr>
-<tr class="separator:a17decbd899ade222ede2018541c6f988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a790ba69a17606e8ca16ee967adfa3a27"><td class="memItemLeft" align="right" valign="top"><a id="a790ba69a17606e8ca16ee967adfa3a27"></a>
-const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a790ba69a17606e8ca16ee967adfa3a27">GetMaterialLibraryAssetHint</a> () const</td></tr>
-<tr class="memdesc:a790ba69a17606e8ca16ee967adfa3a27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the material library asset hint(UI display string) <br /></td></tr>
-<tr class="separator:a790ba69a17606e8ca16ee967adfa3a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f8e9048bdc264b86f79fd5549bdda1e"><td class="memItemLeft" align="right" valign="top"><a id="a8f8e9048bdc264b86f79fd5549bdda1e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a8f8e9048bdc264b86f79fd5549bdda1e">OnDefaultMaterialLibraryChanged</a> (const AZ::Data::AssetId &amp;defaultMaterialLibraryId)</td></tr>
-<tr class="memdesc:a8f8e9048bdc264b86f79fd5549bdda1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the material library has changed. <br /></td></tr>
-<tr class="separator:a8f8e9048bdc264b86f79fd5549bdda1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a403ab2bfd0af6ded0648fd2026cbae99"><td class="memItemLeft" align="right" valign="top"><a id="a403ab2bfd0af6ded0648fd2026cbae99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a403ab2bfd0af6ded0648fd2026cbae99">OnMaterialLibraryChanged</a> (const AZ::Data::AssetId &amp;defaultMaterialLibraryId)</td></tr>
+<tr class="memdesc:a403ab2bfd0af6ded0648fd2026cbae99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the material library has changed. <br /></td></tr>
+<tr class="separator:a403ab2bfd0af6ded0648fd2026cbae99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bd6c05e273bac5cc15df54f9f654148"><td class="memItemLeft" align="right" valign="top"><a id="a7bd6c05e273bac5cc15df54f9f654148"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_material_selection.html#a7bd6c05e273bac5cc15df54f9f654148">SetSlotsReadOnly</a> (bool readOnly)</td></tr>
 <tr class="memdesc:a7bd6c05e273bac5cc15df54f9f654148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the material slots are editable in the edit context. <br /></td></tr>
@@ -124,46 +105,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>MaterialSelectionEve
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h1><a class="anchor" id="autotoc_md7"></a>
-The class is used to store a MaterialLibraryAsset and a vector of MaterialIds selected from the library</h1>
-<p>This class is used to store a reference to the library asset and user's selection of the materials from this library.<br  />
-It also reflects UI controls for assigning <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> and selecting a material from it. You can reflect this class in EditorContext to provide UI for selecting materials on any custom component or QWidget. </p>
+The class is used to store a vector of MaterialIds selected from the library</h1>
+<p>This class is used to store the user's selection of the materials from this library. You can reflect this class in EditorContext to provide UI for selecting materials on any custom component or QWidget. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afb8208f2e3e3a5d26e4d8216c1c6e3bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb8208f2e3e3a5d26e4d8216c1c6e3bc">&#9670;&nbsp;</a></span>GetMaterialConfiguration()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Physics::MaterialSelection::GetMaterialConfiguration </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_physics_1_1_material_from_asset_configuration.html">Physics::MaterialFromAssetConfiguration</a> &amp;&#160;</td>
-          <td class="paramname"><em>configuration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="class_physics_1_1_material_id.html">Physics::MaterialId</a> &amp;&#160;</td>
-          <td class="paramname"><em>materialId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Looks up <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> for <a class="el" href="class_physics_1_1_material_from_asset_configuration.html">MaterialFromAssetConfiguration</a> with <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> that is stored intrenally. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">configuration</td><td>contains material data if there is a material selected by user and if it exists in the <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> </td></tr>
-    <tr><td class="paramname">materialId</td><td><a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> to retrieve <a class="el" href="class_physics_1_1_material_from_asset_configuration.html">MaterialFromAssetConfiguration</a> for </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if lookup was successful. </dd></dl>
-
-</div>
-</div>
 <a id="a85cfbd364231687567e762b13536de91"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85cfbd364231687567e762b13536de91">&#9670;&nbsp;</a></span>GetMaterialId()</h2>
 
@@ -181,28 +125,10 @@ It also reflects UI controls for assigning <a class="el" href="class_physics_1_1
 </div><div class="memdoc">
 <p>Returns the material id assigned to this selection at a specific slotIndex. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">slotIndex</td><td>index of the slot to retrieve <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> for </td></tr>
+    <tr><td class="paramname">slotIndex</td><td>Index of the slot to retrieve the <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a8fb4f6803b4a00c970c57c1a1819beb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fb4f6803b4a00c970c57c1a1819beb8">&#9670;&nbsp;</a></span>IsMaterialLibraryValid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Physics::MaterialSelection::IsMaterialLibraryValid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns whether <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> assigned to this selection exists and valid. Attempts to load the library if it's not loaded yet. </p><dl class="section return"><dt>Returns</dt><dd>true if <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> has a valid AssetId, loaded and isn't empty </dd></dl>
 
 </div>
 </div>
@@ -231,34 +157,10 @@ It also reflects UI controls for assigning <a class="el" href="class_physics_1_1
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> from <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> as the selected material at a specific slotIndex. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Sets the <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> as the selected material at a specific slotIndex. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">materialId</td><td><a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> that user selected from the <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> </td></tr>
-    <tr><td class="paramname">slotIndex</td><td>index of the slot to set <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> for </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a89dd024a520eb3915854e7ffeb6fc291"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89dd024a520eb3915854e7ffeb6fc291">&#9670;&nbsp;</a></span>SetMaterialLibrary()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Physics::MaterialSelection::SetMaterialLibrary </td>
-          <td>(</td>
-          <td class="paramtype">const AZ::Data::AssetId &amp;&#160;</td>
-          <td class="paramname"><em>assetId</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets and loads <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> with specified AssetId. It is used to construct <a class="el" href="class_physics_1_1_material_selection.html">MaterialSelection</a> at runtime. It is not a typical use case and mostly needed to convert legacy entities and auto-generate material libraries </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">assetId</td><td>AssetId to create <a class="el" href="class_physics_1_1_material_library_asset.html">MaterialLibraryAsset</a> with </td></tr>
+    <tr><td class="paramname">materialId</td><td><a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> that user selected </td></tr>
+    <tr><td class="paramname">slotIndex</td><td>Index of the slot to set the <a class="el" href="class_physics_1_1_material_id.html">MaterialId</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -289,10 +191,13 @@ It also reflects UI controls for assigning <a class="el" href="class_physics_1_1
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Physics/Material.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:55 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:26 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

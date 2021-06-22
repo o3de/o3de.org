@@ -3,8 +3,6 @@ title: O3DE Gem API reference
 description: Reference index for Gems shipped with Open 3D Engine.
 ---
 
-{{< preview-new >}}
-
 * [AWSClientAuth](/docs/api/gems/AWSClientAuth)
 * [AWSCore](/docs/api/gems/AWSCore)
 * [AWSMetrics](/docs/api/gems/AWSMetrics)
@@ -30,7 +28,6 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [EditorPythonBindings](/docs/api/gems/EditorPythonBindings)
 * [ExpressionEvaluation](/docs/api/gems/ExpressionEvaluation)
 * [FastNoise](/docs/api/gems/FastNoise)
-* [GameEffectSystem](/docs/api/gems/GameEffectSystem)
 * [GameState](/docs/api/gems/GameState)
 * [GameStateSamples](/docs/api/gems/GameStateSamples)
 * [Gestures](/docs/api/gems/Gestures)
@@ -39,7 +36,6 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [GraphModel](/docs/api/gems/GraphModel)
 * [HttpRequestor](/docs/api/gems/HttpRequestor)
 * [ImGui](/docs/api/gems/ImGui)
-* [ImageProcessing](/docs/api/gems/ImageProcessing)
 * [InAppPurchases](/docs/api/gems/InAppPurchases)
 * [LandscapeCanvas](/docs/api/gems/LandscapeCanvas)
 * [LmbrCentral](/docs/api/gems/LmbrCentral)
@@ -57,14 +53,12 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [PhysX](/docs/api/gems/PhysX)
 * [PhysXDebug](/docs/api/gems/PhysXDebug)
 * [PhysXSamples](/docs/api/gems/PhysXSamples)
-* [PhysicsEntities](/docs/api/gems/PhysicsEntities)
 * [Prefab](/docs/api/gems/Prefab)
 * [Presence](/docs/api/gems/Presence)
 * [PrimitiveAssets](/docs/api/gems/PrimitiveAssets)
 * [PythonAssetBuilder](/docs/api/gems/PythonAssetBuilder)
 * [QtForPython](/docs/api/gems/QtForPython)
 * [RADTelemetry](/docs/api/gems/RADTelemetry)
-* [SVOGI](/docs/api/gems/SVOGI)
 * [SaveData](/docs/api/gems/SaveData)
 * [SceneLoggingExample](/docs/api/gems/SceneLoggingExample)
 * [SceneProcessing](/docs/api/gems/SceneProcessing)
@@ -88,5 +82,4 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [Vegetation_Gem_Assets](/docs/api/gems/Vegetation_Gem_Assets)
 * [VideoPlaybackFramework](/docs/api/gems/VideoPlaybackFramework)
 * [VirtualGamepad](/docs/api/gems/VirtualGamepad)
-* [Visibility](/docs/api/gems/Visibility)
 * [WhiteBox](/docs/api/gems/WhiteBox)

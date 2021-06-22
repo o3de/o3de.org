@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AtomToolsFramework::InspectorWidget Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AtomToolsFramework::InspectorWidget Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -43,7 +46,9 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_atom_tools_framework_1_1_inspector_widget-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AtomToolsFramework::InspectorWidget Class Reference</div>  </div>
@@ -74,6 +79,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddGroupsEnd</b> () o
 <tr class="memitem:a1edaf37bace6b8482354c65633064920"><td class="memItemLeft" align="right" valign="top"><a id="a1edaf37bace6b8482354c65633064920"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddGroup</b> (const AZStd::string &amp;groupNameId, const AZStd::string &amp;groupDisplayName, const AZStd::string &amp;groupDescription, QWidget *groupWidget) override</td></tr>
 <tr class="separator:a1edaf37bace6b8482354c65633064920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e651c56787a385480e8da525efed19"><td class="memItemLeft" align="right" valign="top"><a id="a28e651c56787a385480e8da525efed19"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGroupVisible</b> (const AZStd::string &amp;groupNameId, bool visible) override</td></tr>
+<tr class="separator:a28e651c56787a385480e8da525efed19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a143173328c16db121b36e9bfb24bb5bc"><td class="memItemLeft" align="right" valign="top"><a id="a143173328c16db121b36e9bfb24bb5bc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGroupVisible</b> (const AZStd::string &amp;groupNameId) const override</td></tr>
+<tr class="separator:a143173328c16db121b36e9bfb24bb5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69f61604027fcc33849370c550122e64"><td class="memItemLeft" align="right" valign="top"><a id="a69f61604027fcc33849370c550122e64"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGroupHidden</b> (const AZStd::string &amp;groupNameId) const override</td></tr>
+<tr class="separator:a69f61604027fcc33849370c550122e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1e82072bb0dbf49b2180f55985e84c5"><td class="memItemLeft" align="right" valign="top"><a id="af1e82072bb0dbf49b2180f55985e84c5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshGroup</b> (const AZStd::string &amp;groupNameId) override</td></tr>
 <tr class="separator:af1e82072bb0dbf49b2180f55985e84c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,13 +100,46 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshAll</b> () ove
 <tr class="memitem:ab7e51348c1f98fb0f7a1cb8bdf357f28"><td class="memItemLeft" align="right" valign="top"><a id="ab7e51348c1f98fb0f7a1cb8bdf357f28"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RebuildAll</b> () override</td></tr>
 <tr class="separator:ab7e51348c1f98fb0f7a1cb8bdf357f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ed3708af16db5de85dfad4e24ca5a7"><td class="memItemLeft" align="right" valign="top"><a id="ab9ed3708af16db5de85dfad4e24ca5a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandGroup</b> (const AZStd::string &amp;groupNameId) override</td></tr>
+<tr class="separator:ab9ed3708af16db5de85dfad4e24ca5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa16cfe35c3378626177b6bb1cc424051"><td class="memItemLeft" align="right" valign="top"><a id="aa16cfe35c3378626177b6bb1cc424051"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CollapseGroup</b> (const AZStd::string &amp;groupNameId) override</td></tr>
+<tr class="separator:aa16cfe35c3378626177b6bb1cc424051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae45df5716b7744d8f9573ea7a225f050"><td class="memItemLeft" align="right" valign="top"><a id="ae45df5716b7744d8f9573ea7a225f050"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGroupExpanded</b> (const AZStd::string &amp;groupNameId) const override</td></tr>
+<tr class="separator:ae45df5716b7744d8f9573ea7a225f050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd05e058913eebc91a88cb2d6a9fae90"><td class="memItemLeft" align="right" valign="top"><a id="abd05e058913eebc91a88cb2d6a9fae90"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandAll</b> () override</td></tr>
+<tr class="separator:abd05e058913eebc91a88cb2d6a9fae90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e99f9e9272ffef0aed44e23da062f5"><td class="memItemLeft" align="right" valign="top"><a id="a53e99f9e9272ffef0aed44e23da062f5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CollapseAll</b> () override</td></tr>
+<tr class="separator:a53e99f9e9272ffef0aed44e23da062f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa2f96a7635ea3fd8520cf7f6d4cd19b9"><td class="memItemLeft" align="right" valign="top"><a id="aa2f96a7635ea3fd8520cf7f6d4cd19b9"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShouldGroupAutoExpanded</b> (const AZStd::string &amp;groupNameId) const</td></tr>
+<tr class="separator:aa2f96a7635ea3fd8520cf7f6d4cd19b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5094cbe9fd25db07795c1a652b77ce"><td class="memItemLeft" align="right" valign="top"><a id="a2c5094cbe9fd25db07795c1a652b77ce"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGroupExpanded</b> (const AZStd::string &amp;groupNameId)</td></tr>
+<tr class="separator:a2c5094cbe9fd25db07795c1a652b77ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8135ae1adce66db9b9e4c0325a829b89"><td class="memItemLeft" align="right" valign="top"><a id="a8135ae1adce66db9b9e4c0325a829b89"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGroupCollapsed</b> (const AZStd::string &amp;groupNameId)</td></tr>
+<tr class="separator:a8135ae1adce66db9b9e4c0325a829b89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b94bf7c01198c19e1d2bc6d2be4c5ce"><td class="memItemLeft" align="right" valign="top"><a id="a2b94bf7c01198c19e1d2bc6d2be4c5ce"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHeaderClicked</b> (const AZStd::string &amp;groupNameId, QMouseEvent *event)</td></tr>
+<tr class="separator:a2b94bf7c01198c19e1d2bc6d2be4c5ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides controls for viewing and editing object settings. The settings can be divided into groups, with each one showing a subset of properties. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/Tools/AtomToolsFramework/Code/Include/AtomToolsFramework/Inspector/InspectorWidget.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:12 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:55 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

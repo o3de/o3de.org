@@ -1,4 +1,4 @@
-baseURL = "https://o3deorg.netlify.app"
+baseURL = "https://docs.o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
@@ -8,9 +8,12 @@ enableGitInfo = true
 [markup.highlight]
 style = "paraiso-dark"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 font_awesome_version = "5.12.0"
-description = "Open 3D Engine (O3DE) is a multi-platform 3D development engine, bringing together over 30 fully matured and integrated 3D authoring tools, enabling users to build AAA games, cinema quality 3D worlds for video production, and high-fidelity simulations for non-gaming use cases with zero licensing fees, commercial terms, or disclosure obligations."
+description = "Open 3D Engine (O3DE) is an Apache 2.0-licensed multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, and high-fidelity simulations <b>without any fees or commercial obligations</b>.<br><br><b>Try the Developer Preview today!</b>"
 favicon = "favicon.png"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
@@ -55,7 +58,7 @@ sizes = [100, 200, 300, 400, 500, 600, 700]
 type = "heading_font"
 
 [[menu.main]]
-name = "Download"
+name = "DOWNLOAD"
 url = "/download"
 weight = 1
 
@@ -65,7 +68,7 @@ weight = 1
 # weight = 2
 
 [[menu.main]]
-name = "Community"
+name = "COMMUNITY"
 url = "/community"
 weight = 3
 identifier = "community"
@@ -77,18 +80,12 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "Learn"
-url = "#"
-weight = 4
-identifier = "learn"
-
-[[menu.main]]
-name = "Documentation"
+name = "DOCUMENTATION"
 url = "/docs"
-weight = 1 
-parent = "learn"
+weight = 4
+identifier = "docs"
 
 [[menu.main]]
-name = "Contribute"
+name = "CONTRIBUTE"
 url = "/docs/contributing"
 weight = 5

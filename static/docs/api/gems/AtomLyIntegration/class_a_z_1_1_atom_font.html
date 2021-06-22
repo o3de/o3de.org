@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AtomLyIntegration API Reference: AZ::AtomFont Class Reference</title>
+<title>Open 3D Engine AtomLyIntegration Gem API Reference: AZ::AtomFont Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AtomLyIntegration API Reference
+   <div id="projectname">Open 3D Engine AtomLyIntegration Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -55,7 +58,7 @@ $(function() {
 
 <p><code>#include &lt;AtomFont.h&gt;</code></p>
 
-<p>Inherits ICryFont.</p>
+<p>Inherits ICryFont, and FontQueryInterface.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -85,9 +88,6 @@ FontFamilyPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetFontFamil
 <tr class="memitem:a3b99441236a423b8f9914aba0a35e3db"><td class="memItemLeft" align="right" valign="top"><a id="a3b99441236a423b8f9914aba0a35e3db"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddCharsToFontTextures</b> (FontFamilyPtr fontFamily, const char *chars, int glyphSizeX=ICryFont::defaultGlyphSizeX, int glyphSizeY=ICryFont::defaultGlyphSizeY) override</td></tr>
 <tr class="separator:a3b99441236a423b8f9914aba0a35e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74009d7b5a256ca1792e0369d9427394"><td class="memItemLeft" align="right" valign="top"><a id="a74009d7b5a256ca1792e0369d9427394"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRendererProperties</b> ([[maybe_unused]] IRenderer *renderer) override</td></tr>
-<tr class="separator:a74009d7b5a256ca1792e0369d9427394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34cef1d695195cf74138709635fd132e"><td class="memItemLeft" align="right" valign="top"><a id="a34cef1d695195cf74138709635fd132e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryUsage</b> ([[maybe_unused]] ICrySizer *sizer) const override</td></tr>
 <tr class="separator:a34cef1d695195cf74138709635fd132e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +100,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLanguageChanged</b>
 <tr class="memitem:a3066363202fdabb6982072df5e536af6"><td class="memItemLeft" align="right" valign="top"><a id="a3066363202fdabb6982072df5e536af6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadAllFonts</b> () override</td></tr>
 <tr class="separator:a3066363202fdabb6982072df5e536af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a238332edc42380e8cb92c8ef58b247d1"><td class="memItemLeft" align="right" valign="top"><a id="a238332edc42380e8cb92c8ef58b247d1"></a>
+AzFramework::FontDrawInterface *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFontDrawInterface</b> (AzFramework::FontId fontId) const override</td></tr>
+<tr class="separator:a238332edc42380e8cb92c8ef58b247d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a144ac12b077e634f0cbbb86780ff2ee7"><td class="memItemLeft" align="right" valign="top"><a id="a144ac12b077e634f0cbbb86780ff2ee7"></a>
+AzFramework::FontDrawInterface *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultFontDrawInterface</b> () const override</td></tr>
+<tr class="separator:a144ac12b077e634f0cbbb86780ff2ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7821f3db527c50d0c276bec90fac93a7"><td class="memItemLeft" align="right" valign="top"><a id="a7821f3db527c50d0c276bec90fac93a7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterFont</b> (const char *fontName)</td></tr>
 <tr class="separator:a7821f3db527c50d0c276bec90fac93a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,10 +147,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>FFont</b></td></tr>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/AtomLyIntegration/AtomFont/Code/Include/AtomLyIntegration/AtomFont/AtomFont.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:20 for AtomLyIntegration API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:03 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

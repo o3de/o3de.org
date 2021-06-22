@@ -7,10 +7,11 @@ title: 'PhysX Shape Collider'
 {{< preview-migrated >}}
 
 The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider geometry based on the shape definition supplied by a **Shape** component\. The PhysX Shape Collider supports the following Shape components:
-+  [Box](/docs/user-guide/components/reference/shape/box-shape/)
-+  [Capsule](/docs/user-guide/components/reference/shape/capsule-shape/)
-+  [Polygon Prism](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
-+  [Sphere](/docs/user-guide/components/reference/shape/sphere-shape/)
++  [Box Shape](/docs/user-guide/components/reference/shape/box-shape/)
++  [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/)
++  [Cylinder Shape](/docs/user-guide/components/reference/shape/cylinder-shape/)
++  [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
++  [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
 
 **Note**
 The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static \(non\-moving\) entity\. To create a dynamic \(moving\) entity, you also must add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx-rigid-body-physics/) component\.
@@ -54,11 +55,11 @@ When enabled, this shape collider will be part of the physics simulation\.
 ****In Scene Queries****
 When enabled, this shape collider can be queried for raycasts, shapecasts and overlap\.
 
-****Physics Material \- Library****
-Set the physics material library for this shape collider\.
+****Library (Physics Materials)****
+The physics material library of the project\.
 
-****Physics Material \- Mesh Surfaces****
-Choose a material from the physics material library for this shape collider\.
+****Slot (Physics Materials)****
+Choose a physics material for this shape collider\.
 
 ****Tag****
 Set a tag for this shape collider\. Tags can be used to quickly identify components in script or code\.

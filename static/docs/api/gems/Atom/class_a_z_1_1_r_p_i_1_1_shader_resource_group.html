@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::ShaderResourceGroup Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::ShaderResourceGroup Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -64,6 +67,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9239ad5cd81a9872a33552b5658c12d"><td class="memItemLeft" align="right" valign="top"><a id="ae9239ad5cd81a9872a33552b5658c12d"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:ae9239ad5cd81a9872a33552b5658c12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14945abf9e4e6997de5e6e71cad0f7e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a14945abf9e4e6997de5e6e71cad0f7e4">ReplaceSrgLayoutUsingShaderAsset</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset2.html">ShaderAsset2</a> &gt; shaderAsset, const Name &amp;supervariantName, const Name &amp;srgName)</td></tr>
+<tr class="separator:a14945abf9e4e6997de5e6e71cad0f7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95be9f8474f2064a68bb4ecebbd21787"><td class="memItemLeft" align="right" valign="top"><a id="a95be9f8474f2064a68bb4ecebbd21787"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a95be9f8474f2064a68bb4ecebbd21787">Compile</a> ()</td></tr>
 <tr class="memdesc:a95be9f8474f2064a68bb4ecebbd21787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queues a request that the underlying hardware shader resource group be compiled. <br /></td></tr>
@@ -85,6 +90,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a27585d11c05abc8e7143a27b352ad1bb"><td class="memItemLeft" align="right" valign="top"><a id="a27585d11c05abc8e7143a27b352ad1bb"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputConstantIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindShaderInputConstantIndex</b> (const Name &amp;name) const</td></tr>
 <tr class="separator:a27585d11c05abc8e7143a27b352ad1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc1f8acb83f3e963f8c757cbd4407ece"><td class="memItemLeft" align="right" valign="top"><a id="acc1f8acb83f3e963f8c757cbd4407ece"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputBufferUnboundedArrayIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindShaderInputBufferUnboundedArrayIndex</b> (const Name &amp;name) const</td></tr>
+<tr class="separator:acc1f8acb83f3e963f8c757cbd4407ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a240c63e101e8d4ec586936fa15974e20"><td class="memItemLeft" align="right" valign="top"><a id="a240c63e101e8d4ec586936fa15974e20"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputImageUnboundedArrayIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindShaderInputImageUnboundedArrayIndex</b> (const Name &amp;name) const</td></tr>
+<tr class="separator:a240c63e101e8d4ec586936fa15974e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c008c9fc8731d56ecc34da2fc8066b6"><td class="memItemLeft" align="right" valign="top"><a id="a2c008c9fc8731d56ecc34da2fc8066b6"></a>
 const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a2c008c9fc8731d56ecc34da2fc8066b6">GetAsset</a> () const</td></tr>
 <tr class="memdesc:a2c008c9fc8731d56ecc34da2fc8066b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent shader resource group asset. <br /></td></tr>
@@ -444,10 +455,48 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a14945abf9e4e6997de5e6e71cad0f7e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14945abf9e4e6997de5e6e71cad0f7e4">&#9670;&nbsp;</a></span>ReplaceSrgLayoutUsingShaderAsset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RPI::ShaderResourceGroup::ReplaceSrgLayoutUsingShaderAsset </td>
+          <td>(</td>
+          <td class="paramtype">Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset2.html">ShaderAsset2</a> &gt;&#160;</td>
+          <td class="paramname"><em>shaderAsset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Name &amp;&#160;</td>
+          <td class="paramname"><em>supervariantName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Name &amp;&#160;</td>
+          <td class="paramname"><em>srgName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[GFX TODO] [ATOM-15472] <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> Build Pipeline: Remove Deprecated Files And Functions That Predate The <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> Supervariants This is a temporary hack to enable integration of the new supervariant system. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Shader/ShaderResourceGroup.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:17 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZStd::IntrusivePtrCountPolicy&lt; T &gt; Struct Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZStd::IntrusivePtrCountPolicy&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -67,10 +70,13 @@ struct AZStd::IntrusivePtrCountPolicy&lt; T &gt;</h3>
 
 <p>By default we use object internal reference counting. We will call pObj-&gt;add_ref and pObj-&gt;release. The pointer will call class functions to do the reference counting. There is no need for ADL and you can implement your functions as you wish.</p>
 <p>If you want external reference count (boost style), which is useful for structs or retrofitting in existing code (you don't want to change). To do so specialize <a class="el" href="struct_a_z_std_1_1_intrusive_ptr_count_policy.html">IntrusivePtrCountPolicy</a> for your object type. Example: template&lt;&gt; struct IntrusivePtrCountPolicy&lt;MyObject&gt; { static AZ_FORCE_INLINE void add_ref(MyObject* p) { your code to add a reference } static AZ_FORCE_INLINE void release(MyObject* p) { your code to remove a reference } } </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/std/smart_ptr/intrusive_ptr.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:38 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:09 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

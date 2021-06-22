@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::ModelKdTree Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::ModelKdTree Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -75,9 +78,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9da5914d1d962646a8da09083989f1bc"><td class="memItemLeft" align="right" valign="top"><a id="a9da5914d1d962646a8da09083989f1bc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Build</b> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a> *model)</td></tr>
 <tr class="separator:a9da5914d1d962646a8da09083989f1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3261c57398d8050955039e09d3820f5e"><td class="memItemLeft" align="right" valign="top"><a id="a3261c57398d8050955039e09d3820f5e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RayIntersection</b> (const AZ::Vector3 &amp;raySrc, const AZ::Vector3 &amp;rayDir, float &amp;distance, AZ::Vector3 &amp;normal) const</td></tr>
-<tr class="separator:a3261c57398d8050955039e09d3820f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa688ab6f919c13be98dd220a3a997678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_kd_tree.html#aa688ab6f919c13be98dd220a3a997678">RayIntersection</a> (const AZ::Vector3 &amp;raySrc, const AZ::Vector3 &amp;rayDir, float &amp;distanceNormalized, AZ::Vector3 &amp;normal) const</td></tr>
+<tr class="separator:aa688ab6f919c13be98dd220a3a997678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ce49b94f1117b40799492ba0eeaaaa"><td class="memItemLeft" align="right" valign="top"><a id="a27ce49b94f1117b40799492ba0eeaaaa"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>GetPenetratedBoxes</b> (const AZ::Vector3 &amp;raySrc, const AZ::Vector3 &amp;rayDir, AZStd::vector&lt; AZ::Aabb &gt; &amp;outBoxes)</td></tr>
 <tr class="separator:a27ce49b94f1117b40799492ba0eeaaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,10 +95,64 @@ static AZStd::array_view&lt; TriangleIndices &gt;&#160;</td><td class="memItemRi
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Spatial structure for a single model. May contain indices pointing to triangles from multiple meshes, if a model contains multiple meshes. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa688ab6f919c13be98dd220a3a997678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa688ab6f919c13be98dd220a3a997678">&#9670;&nbsp;</a></span>RayIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AZ::RPI::ModelKdTree::RayIntersection </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>raySrc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>rayDir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>distanceNormalized</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::Vector3 &amp;&#160;</td>
+          <td class="paramname"><em>normal</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return if a ray intersected the model. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">raySrc</td><td>The starting point of the ray. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">rayDir</td><td>The direction and length of the ray (magnitude is encoded in the direction). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">The</td><td>normalized distance of the intersection (in the range 0.0-1.0) - to calculate the actual distance, multiply distanceNormalized by the magnitude of rayDir. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">The</td><td>surface normal of the intersection with the model. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return true if there was an intersection with the model, false otherwise. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Reflect/Model/ModelKdTree.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:16 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: AzPhysics::SceneInterface Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: AzPhysics::SceneInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -81,10 +84,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aafcff4dd717fcbecee6225965932f1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a479fe3701c54ddec7de3d34f7bc816cc"><td class="memItemLeft" align="right" valign="top">virtual SimulatedBodyList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a479fe3701c54ddec7de3d34f7bc816cc">GetSimulatedBodiesFromHandle</a> (SceneHandle sceneHandle, const SimulatedBodyHandleList &amp;bodyHandles)=0</td></tr>
 <tr class="separator:a479fe3701c54ddec7de3d34f7bc816cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6a091849bdc8dade5225570717a4113"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#af6a091849bdc8dade5225570717a4113">RemoveSimulatedBody</a> (SceneHandle sceneHandle, SimulatedBodyHandle bodyHandle)=0</td></tr>
-<tr class="separator:af6a091849bdc8dade5225570717a4113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc4b4a717302460bc03b03a74b13d81"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a6fc4b4a717302460bc03b03a74b13d81">RemoveSimulatedBodies</a> (SceneHandle sceneHandle, const SimulatedBodyHandleList &amp;bodyHandles)=0</td></tr>
-<tr class="separator:a6fc4b4a717302460bc03b03a74b13d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e37a172ac7cdeddb3a16389509a2975"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a8e37a172ac7cdeddb3a16389509a2975">RemoveSimulatedBody</a> (SceneHandle sceneHandle, SimulatedBodyHandle &amp;bodyHandle)=0</td></tr>
+<tr class="separator:a8e37a172ac7cdeddb3a16389509a2975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4525fd31e8439b5f44a93ea411eb211d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a4525fd31e8439b5f44a93ea411eb211d">RemoveSimulatedBodies</a> (SceneHandle sceneHandle, SimulatedBodyHandleList &amp;bodyHandles)=0</td></tr>
+<tr class="separator:a4525fd31e8439b5f44a93ea411eb211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e10e58a269af764149e08186b43fbe3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a4e10e58a269af764149e08186b43fbe3">EnableSimulationOfBody</a> (SceneHandle sceneHandle, SimulatedBodyHandle bodyHandle)=0</td></tr>
 <tr class="separator:a4e10e58a269af764149e08186b43fbe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbc8b39d8679b93a71e4c03d8a190ea"><td class="memItemLeft" align="right" valign="top"><a id="a8fbc8b39d8679b93a71e4c03d8a190ea"></a>
@@ -1162,8 +1165,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 
 </div>
 </div>
-<a id="a6fc4b4a717302460bc03b03a74b13d81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc4b4a717302460bc03b03a74b13d81">&#9670;&nbsp;</a></span>RemoveSimulatedBodies()</h2>
+<a id="a4525fd31e8439b5f44a93ea411eb211d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4525fd31e8439b5f44a93ea411eb211d">&#9670;&nbsp;</a></span>RemoveSimulatedBodies()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1180,7 +1183,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const SimulatedBodyHandleList &amp;&#160;</td>
+          <td class="paramtype">SimulatedBodyHandleList &amp;&#160;</td>
           <td class="paramname"><em>bodyHandles</em>&#160;</td>
         </tr>
         <tr>
@@ -1198,15 +1201,15 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 <p>Remove a list of simulated bodies from the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sceneHandle</td><td>A handle to the scene to remove the simulated bodies from. </td></tr>
-    <tr><td class="paramname">bodyHandles</td><td>A list of simulated body handles to be removed. </td></tr>
+    <tr><td class="paramname">bodyHandles</td><td>A list of simulated body handles to be removed. All handles will be set to AzPhysics::InvalidSimulatedBodyHandle as they're no longer valid. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="af6a091849bdc8dade5225570717a4113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6a091849bdc8dade5225570717a4113">&#9670;&nbsp;</a></span>RemoveSimulatedBody()</h2>
+<a id="a8e37a172ac7cdeddb3a16389509a2975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e37a172ac7cdeddb3a16389509a2975">&#9670;&nbsp;</a></span>RemoveSimulatedBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1223,7 +1226,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">SimulatedBodyHandle&#160;</td>
+          <td class="paramtype">SimulatedBodyHandle &amp;&#160;</td>
           <td class="paramname"><em>bodyHandle</em>&#160;</td>
         </tr>
         <tr>
@@ -1241,7 +1244,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 <p>Remove a simulated body from the Scene.z </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sceneHandle</td><td>A handle to the scene to remove the requested simulated body. </td></tr>
-    <tr><td class="paramname">bodyHandle</td><td>A handle to the simulated body being removed. </td></tr>
+    <tr><td class="paramname">bodyHandle</td><td>A handle to the simulated body being removed. This will be set to AzPhysics::InvalidSimulatedBodyHandle as they're no longer valid. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1476,10 +1479,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Physics/PhysicsScene.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:55 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:26 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ScriptCanvas API Reference: ScriptCanvas::Nodes::Math::Divide Class Reference</title>
+<title>Open 3D Engine ScriptCanvas Gem API Reference: ScriptCanvas::Nodes::Math::Divide Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ScriptCanvas API Reference
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -69,9 +72,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57a0dcb29600939a2bbea37bcdb18b9d inherit pub_methods_class_script_canvas_1_1_nodes_1_1_arithmetic_expression"><td class="memItemLeft" align="right" valign="top"><a id="a57a0dcb29600939a2bbea37bcdb18b9d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsDeprecated</b> () const override</td></tr>
 <tr class="separator:a57a0dcb29600939a2bbea37bcdb18b9d inherit pub_methods_class_script_canvas_1_1_nodes_1_1_arithmetic_expression"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3580af7093fab064bb2689a55bec3389 inherit pub_methods_class_script_canvas_1_1_nodes_1_1_arithmetic_expression"><td class="memItemLeft" align="right" valign="top"><a id="a3580af7093fab064bb2689a55bec3389"></a>
-AZStd::unordered_map&lt; AZStd::string, AZStd::vector&lt; AZStd::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReplacementSlotsMap</b> () const override</td></tr>
-<tr class="separator:a3580af7093fab064bb2689a55bec3389 inherit pub_methods_class_script_canvas_1_1_nodes_1_1_arithmetic_expression"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e448ede0886ea577506964a4a90a72b inherit pub_methods_class_script_canvas_1_1_nodes_1_1_arithmetic_expression"><td class="memItemLeft" align="right" valign="top"><a id="a5e448ede0886ea577506964a4a90a72b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomizeReplacementNode</b> (<a class="el" href="class_script_canvas_1_1_node.html">Node</a> *replacementNode, AZStd::unordered_map&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>, AZStd::vector&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &gt;&gt; &amp;outSlotIdMap) const override</td></tr>
 <tr class="separator:a5e448ede0886ea577506964a4a90a72b inherit pub_methods_class_script_canvas_1_1_nodes_1_1_arithmetic_expression"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -379,6 +379,9 @@ virtual NodeTypeIdentifier&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memitem:a0a8bdb3ff029741cd3d1bed111358fac inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a0a8bdb3ff029741cd3d1bed111358fac"></a>
 virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateFingerprint</b> () const</td></tr>
 <tr class="separator:a0a8bdb3ff029741cd3d1bed111358fac inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6f3b9b519e7791d2539c6bd1b9e1f5 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a8d6f3b9b519e7791d2539c6bd1b9e1f5"></a>
+virtual AZStd::unordered_map&lt; AZStd::string, AZStd::vector&lt; AZStd::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReplacementSlotsMap</b> () const</td></tr>
+<tr class="separator:a8d6f3b9b519e7791d2539c6bd1b9e1f5 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe04512203a89ffc148a5f6913be3963 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="abe04512203a89ffc148a5f6913be3963"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshInput</b> ()</td></tr>
 <tr class="separator:abe04512203a89ffc148a5f6913be3963 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -448,6 +451,9 @@ virtual <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a>&#1
 <tr class="memitem:acd201a1305c34639f9cddd0240383c47 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="acd201a1305c34639f9cddd0240383c47"></a>
 virtual PropertyFields&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyFields</b> () const</td></tr>
 <tr class="separator:acd201a1305c34639f9cddd0240383c47 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0742b6c10bca03fa68ef8e89417d457 inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="aa0742b6c10bca03fa68ef8e89417d457"></a>
+virtual <a class="el" href="struct_script_canvas_1_1_grammar_1_1_multiple_function_call_from_single_slot_info.html">Grammar::MultipleFunctionCallFromSingleSlotInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetMultipleFunctionCallFromSingleSlotInfo</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> &amp;slot) const</td></tr>
+<tr class="separator:aa0742b6c10bca03fa68ef8e89417d457 inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d23ff833afaeac0f36456ca7236f9ab inherit pub_methods_class_script_canvas_1_1_node"><td class="memItemLeft" align="right" valign="top"><a id="a6d23ff833afaeac0f36456ca7236f9ab"></a>
 virtual <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableIdRead</b> (const <a class="el" href="class_script_canvas_1_1_slot.html">Slot</a> *) const</td></tr>
 <tr class="separator:a6d23ff833afaeac0f36456ca7236f9ab inherit pub_methods_class_script_canvas_1_1_node"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -967,10 +973,13 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>k_datumIn
 static const int&#160;</td><td class="memItemRight" valign="bottom"><b>k_datumIndexRHS</b> = 1</td></tr>
 <tr class="separator:acf20df13b92f6615b5bc09730a89f097 inherit pro_static_attribs_class_script_canvas_1_1_nodes_1_1_binary_operator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Math/Divide.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:55 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:35 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

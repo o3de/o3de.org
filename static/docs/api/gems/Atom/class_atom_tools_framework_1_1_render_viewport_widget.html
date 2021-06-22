@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AtomToolsFramework::RenderViewportWidget Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AtomToolsFramework::RenderViewportWidget Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -87,8 +90,8 @@ AZ::RPI::ViewportContextPtr&#160;</td><td class="memItemRight" valign="bottom"><
 <tr class="memitem:ac04f6dd705e173e6698963f04ebe244f"><td class="memItemLeft" align="right" valign="top"><a id="ac04f6dd705e173e6698963f04ebe244f"></a>
 AZ::RPI::ConstViewportContextPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewportContext</b> () const</td></tr>
 <tr class="separator:ac04f6dd705e173e6698963f04ebe244f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cb797c127e25248ea3ac51c7313211"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a76cb797c127e25248ea3ac51c7313211">SetScene</a> (AzFramework::Scene *scene, bool useDefaultRenderPipeline=true)</td></tr>
-<tr class="separator:a76cb797c127e25248ea3ac51c7313211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b0c50b664de5280700cf845b21d25ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a9b0c50b664de5280700cf845b21d25ad">SetScene</a> (const AZStd::shared_ptr&lt; AzFramework::Scene &gt; &amp;scene, bool useDefaultRenderPipeline=true)</td></tr>
+<tr class="separator:a9b0c50b664de5280700cf845b21d25ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a00efc48d9c7e01d4c21a43bcb1b4a"><td class="memItemLeft" align="right" valign="top"><a id="a10a00efc48d9c7e01d4c21a43bcb1b4a"></a>
 AZ::RPI::ViewPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a10a00efc48d9c7e01d4c21a43bcb1b4a">GetDefaultCamera</a> ()</td></tr>
 <tr class="memdesc:a10a00efc48d9c7e01d4c21a43bcb1b4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the default camera that's been automatically registered to our ViewportContext. <br /></td></tr>
@@ -114,15 +117,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>AngleSnappingEnabled<
 <tr class="memitem:a725908f1615bfcb5afd5138cc05f5064"><td class="memItemLeft" align="right" valign="top"><a id="a725908f1615bfcb5afd5138cc05f5064"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>AngleStep</b> () override</td></tr>
 <tr class="separator:a725908f1615bfcb5afd5138cc05f5064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac06987a0e4dcf31d0bdc7d2b392af911"><td class="memItemLeft" align="right" valign="top"><a id="ac06987a0e4dcf31d0bdc7d2b392af911"></a>
-QPoint&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportWorldToScreen</b> (const AZ::Vector3 &amp;worldPosition) override</td></tr>
-<tr class="separator:ac06987a0e4dcf31d0bdc7d2b392af911"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76101dde1761df9d0a76d738de3f08d4"><td class="memItemLeft" align="right" valign="top"><a id="a76101dde1761df9d0a76d738de3f08d4"></a>
-AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorld</b> (const QPoint &amp;screenPosition, float depth) override</td></tr>
-<tr class="separator:a76101dde1761df9d0a76d738de3f08d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa86d0d7cf47bc16c3a6fac6017cada90"><td class="memItemLeft" align="right" valign="top"><a id="aa86d0d7cf47bc16c3a6fac6017cada90"></a>
-AZStd::optional&lt; AzToolsFramework::ViewportInteraction::ProjectedViewportRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorldRay</b> (const QPoint &amp;screenPosition) override</td></tr>
-<tr class="separator:aa86d0d7cf47bc16c3a6fac6017cada90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687fa44a32be2167a8a05d71b6e229e0"><td class="memItemLeft" align="right" valign="top"><a id="a687fa44a32be2167a8a05d71b6e229e0"></a>
+AzFramework::ScreenPoint&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportWorldToScreen</b> (const AZ::Vector3 &amp;worldPosition) override</td></tr>
+<tr class="separator:a687fa44a32be2167a8a05d71b6e229e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb151fb28808129654fa232d000ca86f"><td class="memItemLeft" align="right" valign="top"><a id="adb151fb28808129654fa232d000ca86f"></a>
+AZStd::optional&lt; AZ::Vector3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorld</b> (const AzFramework::ScreenPoint &amp;screenPosition, float depth) override</td></tr>
+<tr class="separator:adb151fb28808129654fa232d000ca86f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132a929a35b1a5dc75f8e15cf68438f8"><td class="memItemLeft" align="right" valign="top"><a id="a132a929a35b1a5dc75f8e15cf68438f8"></a>
+AZStd::optional&lt; AzToolsFramework::ViewportInteraction::ProjectedViewportRay &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportScreenToWorldRay</b> (const AzFramework::ScreenPoint &amp;screenPosition) override</td></tr>
+<tr class="separator:a132a929a35b1a5dc75f8e15cf68438f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f9d9f93f69663b0026c56cadacd637"><td class="memItemLeft" align="right" valign="top"><a id="a37f9d9f93f69663b0026c56cadacd637"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceScalingFactor</b> () override</td></tr>
+<tr class="separator:a37f9d9f93f69663b0026c56cadacd637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b66bec589c45ff88256dc0ed35af9e1"><td class="memItemLeft" align="right" valign="top"><a id="a6b66bec589c45ff88256dc0ed35af9e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#a6b66bec589c45ff88256dc0ed35af9e1">SetViewportSettings</a> (const AzToolsFramework::ViewportInteraction::ViewportSettings *viewportSettings)</td></tr>
+<tr class="memdesc:a6b66bec589c45ff88256dc0ed35af9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interface for providing viewport specific settings (e.g. snapping properties). <br /></td></tr>
+<tr class="separator:a6b66bec589c45ff88256dc0ed35af9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c6829ab2cd6bbd2f7f9d1ab3a394a2"><td class="memItemLeft" align="right" valign="top"><a id="af1c6829ab2cd6bbd2f7f9d1ab3a394a2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginCursorCapture</b> () override</td></tr>
 <tr class="separator:af1c6829ab2cd6bbd2f7f9d1ab3a394a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +145,9 @@ AzFramework::ScreenPoint&#160;</td><td class="memItemRight" valign="bottom"><b>V
 <tr class="memitem:aa2b484144ffcdc9f32c8ea2f332b503b"><td class="memItemLeft" align="right" valign="top"><a id="aa2b484144ffcdc9f32c8ea2f332b503b"></a>
 AZStd::optional&lt; AzFramework::ScreenPoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PreviousViewportCursorScreenPosition</b> () override</td></tr>
 <tr class="separator:aa2b484144ffcdc9f32c8ea2f332b503b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21327b6b34fe6f7bb878301fe87f7790"><td class="memItemLeft" align="right" valign="top"><a id="a21327b6b34fe6f7bb878301fe87f7790"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsMouseOver</b> () const override</td></tr>
+<tr class="separator:a21327b6b34fe6f7bb878301fe87f7790"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ccd6d0ed368c6cc84ca2468d4c4644"><td class="memItemLeft" align="right" valign="top"><a id="a11ccd6d0ed368c6cc84ca2468d4c4644"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetWindowTitle</b> (const AZStd::string &amp;title) override</td></tr>
 <tr class="separator:a11ccd6d0ed368c6cc84ca2468d4c4644"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -363,8 +376,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
 
 </div>
 </div>
-<a id="a76cb797c127e25248ea3ac51c7313211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76cb797c127e25248ea3ac51c7313211">&#9670;&nbsp;</a></span>SetScene()</h2>
+<a id="a9b0c50b664de5280700cf845b21d25ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b0c50b664de5280700cf845b21d25ad">&#9670;&nbsp;</a></span>SetScene()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,7 +385,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
         <tr>
           <td class="memname">void AtomToolsFramework::RenderViewportWidget::SetScene </td>
           <td>(</td>
-          <td class="paramtype">AzFramework::Scene *&#160;</td>
+          <td class="paramtype">const AZStd::shared_ptr&lt; AzFramework::Scene &gt; &amp;&#160;</td>
           <td class="paramname"><em>scene</em>, </td>
         </tr>
         <tr>
@@ -392,10 +405,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (Q
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/Tools/AtomToolsFramework/Code/Include/AtomToolsFramework/Viewport/RenderViewportWidget.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:12 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:55 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

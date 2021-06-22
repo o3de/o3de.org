@@ -11,6 +11,8 @@ The **Atom Sample Viewer** showcases samples of features and rendering technique
 
 ## Quick Start
 
+Before starting, you must get a local copy of the [Atom Sample Viewer](https://github.com/aws-lumberyard/o3de-atom-sampleviewer) repository from GitHub and build it using Visual Studio. Follow the instructions in the [Setting Up Atom Projects](/docs/atom-guide/setup-atom-projects.md) page to get set up. 
+
 To launch the Atom Sample Viewer, run `AtomSampleViewerStandalone.exe` located in the directory `<build>/bin/profile`. The following list of samples can be viewed in the Atom Sample Viewer. 
 
 ## Debug Menus

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::ShaderSourceData Struct Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::ShaderSourceData Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -62,6 +65,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_program_settings.html">ProgramSettings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_supervariant_info.html">SupervariantInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -71,10 +76,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed64d26a781d0e604258b862cb504609"><td class="memItemLeft" align="right" valign="top"><a id="aed64d26a781d0e604258b862cb504609"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html">ShaderSourceData</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:aed64d26a781d0e604258b862cb504609"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef06099690619748ca1f9db15602fad3"><td class="memItemLeft" align="right" valign="top"><a id="aef06099690619748ca1f9db15602fad3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#aef06099690619748ca1f9db15602fad3">IsRhiBackendDisabled</a> (const AZ::Name &amp;rhiName)</td></tr>
-<tr class="memdesc:aef06099690619748ca1f9db15602fad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function. Returns true if @rhiName is present in m_disabledRhiBackends. <br /></td></tr>
-<tr class="separator:aef06099690619748ca1f9db15602fad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad330ca353b6e4c57dd15fc02577a4b2"><td class="memItemLeft" align="right" valign="top"><a id="aad330ca353b6e4c57dd15fc02577a4b2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#aad330ca353b6e4c57dd15fc02577a4b2">IsRhiBackendDisabled</a> (const AZ::Name &amp;rhiName) const</td></tr>
+<tr class="memdesc:aad330ca353b6e4c57dd15fc02577a4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function. Returns true if @rhiName is present in m_disabledRhiBackends. <br /></td></tr>
+<tr class="separator:aad330ca353b6e4c57dd15fc02577a4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -105,26 +110,33 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawListNa
 <tr class="memitem:a1e11ad4b8fee091875e8f91f4c01d3b1"><td class="memItemLeft" align="right" valign="top"><a id="a1e11ad4b8fee091875e8f91f4c01d3b1"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_target_blend_state.html">RHI::TargetBlendState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_blendState</b></td></tr>
 <tr class="separator:a1e11ad4b8fee091875e8f91f4c01d3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a438240eaeb78e1f2133842d4f541ba"><td class="memItemLeft" align="right" valign="top"><a id="a5a438240eaeb78e1f2133842d4f541ba"></a>
-<a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_option_group_hints.html">RPI::ShaderOptionGroupHints</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderOptionGroupHints</b></td></tr>
-<tr class="separator:a5a438240eaeb78e1f2133842d4f541ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e435c93fba04965114b65f9e83eb20e"><td class="memItemLeft" align="right" valign="top"><a id="a7e435c93fba04965114b65f9e83eb20e"></a>
 AZStd::vector&lt; AZStd::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#a7e435c93fba04965114b65f9e83eb20e">m_disabledRhiBackends</a></td></tr>
 <tr class="memdesc:a7e435c93fba04965114b65f9e83eb20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of RHI Backends (aka ShaderPlatformInterface) for which this shader should not be compiled. <br /></td></tr>
 <tr class="separator:a7e435c93fba04965114b65f9e83eb20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf4f8c281925facdc98fdf0458b6ab0"><td class="memItemLeft" align="right" valign="top"><a id="abaf4f8c281925facdc98fdf0458b6ab0"></a>
+AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data_1_1_supervariant_info.html">SupervariantInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#abaf4f8c281925facdc98fdf0458b6ab0">m_supervariants</a></td></tr>
+<tr class="memdesc:abaf4f8c281925facdc98fdf0458b6ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional list of supervariants. <br /></td></tr>
+<tr class="separator:abaf4f8c281925facdc98fdf0458b6ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aa832b1e7b0f7c3fbbffc6688d49a860b"><td class="memItemLeft" align="right" valign="top"><a id="aa832b1e7b0f7c3fbbffc6688d49a860b"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>Extension</b></td></tr>
-<tr class="separator:aa832b1e7b0f7c3fbbffc6688d49a860b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a567e78373d48427ee9f21a80e38b8961"><td class="memItemLeft" align="right" valign="top"><a id="a567e78373d48427ee9f21a80e38b8961"></a>
+static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>Extension</b> [] = &quot;shader&quot;</td></tr>
+<tr class="separator:a567e78373d48427ee9f21a80e38b8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd9996a3a42dcdff5343d264350b085"><td class="memItemLeft" align="right" valign="top"><a id="a7cd9996a3a42dcdff5343d264350b085"></a>
+static constexpr char&#160;</td><td class="memItemRight" valign="bottom"><b>Extension2</b> [] = &quot;shader2&quot;</td></tr>
+<tr class="separator:a7cd9996a3a42dcdff5343d264350b085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a simple data structure that represents a .shader file. Provides configuration data about how to compile AZSL code. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Edit/Shader/ShaderSourceData.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:17 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

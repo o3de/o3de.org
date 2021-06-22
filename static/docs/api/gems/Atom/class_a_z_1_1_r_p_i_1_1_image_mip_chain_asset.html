@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::ImageMipChainAsset Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::ImageMipChainAsset Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -150,10 +153,13 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>StreamingImageAssetH
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A container of packed image data. This asset is designed to represent image data located on disk. It may contain multiple mip levels, each with an array of sub-images. Support for multiple mip levels allows the streaming system to partition mip levels into groups. For example, the lowest N mips can be streamed at once and loaded as a unit. The mip data is defined independently from any parent image asset. Only the topology of the sub-images is known (i.e. the number of mip levels and the array size). The first slice (index 0) is the highest detail mip. The lowest detail mip is N-1. Since the mip chain is independent, the slice index is local to the container. That means you will have to translate a parent image mip slice to the local container slice index. This is an immutable, serialized asset. It can be either serialized-in or created dynamically using <a class="el" href="class_a_z_1_1_r_p_i_1_1_image_mip_chain_asset_creator.html">ImageMipChainAssetCreator</a>. See RPI::ImageMipChain for runtime features based on this asset. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Reflect/Image/ImageMipChainAsset.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:16 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

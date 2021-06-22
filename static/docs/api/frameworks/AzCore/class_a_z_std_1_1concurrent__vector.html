@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZStd::concurrent_vector&lt; T, Allocator, INITIAL_CAPACITY_LOG, MAX_CAPACITY_LOG &gt; Class Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZStd::concurrent_vector&lt; T, Allocator, INITIAL_CAPACITY_LOG, MAX_CAPACITY_LOG &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -84,10 +87,13 @@ class AZStd::concurrent_vector&lt; T, Allocator, INITIAL_CAPACITY_LOG, MAX_CAPAC
 <p>This container is lock free, provides indexed access and is dynamically resizable. It will not free up memory unless clear() is explicitly called.</p>
 <p>WARNING 1: <a class="el" href="class_a_z_std_1_1concurrent__vector.html">concurrent_vector</a> IS NOT THREADSAFE! The size of the vector is changed atomically, and memory allocations are atomic, but elements are not pushed onto the list atomically when the size changes. If you just want a list that dynamically grows, doesn't free up and reallocate existing pointers, and can be read from in a thread-safe way, then use this. Otherwise, use something else (like an <a class="el" href="class_a_z_std_1_1list.html">AZStd::list</a> with a mutex).</p>
 <p>WARNING 2: constructors and destructors on elements created by this will not be called. Best to use with structs and simple data types (ints, floats, etc) </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/std/parallel/containers/concurrent_vector.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:32 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:02 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

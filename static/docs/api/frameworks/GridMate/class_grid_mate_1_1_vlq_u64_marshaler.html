@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>GridMate API Reference: GridMate::VlqU64Marshaler Class Reference</title>
+<title>Open 3D Engine GridMate API Reference: GridMate::VlqU64Marshaler Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">GridMate API Reference
+   <div id="projectname">Open 3D Engine GridMate API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -88,10 +91,13 @@ static const AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>MaxEn
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Quantizes an AZ::u64 into 1, 2, 3, 4, 5, 7, 8, or 9 bytes based on highest bit usage. The format of the serialized value is a sequence of 1's specifying the number of bytes trailing the initial byte, followed by a 0, followed by the bits that make up the actual value. For example, the number 98 decimal (one byte) will be encoded as 0|1100010</p>
 <p>In the case of 9 byte encoding, the first byte is 0xFF and indicates 9 byte encoding (without a zero to follow for optimization based on assumption that 64bit is the largest integer supported) where as in 8 byte encoding, the first byte is 0xFE. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/GridMate/GridMate/Serialize/CompressionMarshal.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:14 for GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:45 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

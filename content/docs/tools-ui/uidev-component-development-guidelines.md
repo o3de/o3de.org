@@ -65,7 +65,7 @@ Writing code to extend the core O3DE Editor? Here are some high-level suggestion
 
 ### Can I copy the code example directly from the AmazonQtControlGallery?
 
-Yes. Please note that not all settings will be covered by this tool. Use this extensions guide and the [O3DE UI Extensions C++ API Reference](https://d3bqhfbip4ze4a.cloudfront.net/api/ui/namespace_az_qt_components.html) to find additional examples and documentation.
+Yes. Please note that not all settings will be covered by this tool. Use this extensions guide and the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html) to find additional examples and documentation.
 
 ### What about visual and color modifications to the controls?
 

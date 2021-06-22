@@ -10,7 +10,7 @@ weight: 300
 
  With **NVIDIA Cloth** in Open 3D Engine you can create realistic cloth simulations for entities that contain **Actor** or **Mesh** components\. The **NVIDIA Cloth** gem provides a component you can use to simulate cloth on any mesh that has been processed with a **Cloth** modifier applied in **FBX Settings**\.
 
-To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md)\.
+To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/)\.
 
 ## NVIDIA Cloth features {#nvidia-cloth-features}
 
@@ -22,7 +22,7 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/
 + Blend between cloth simulation and actor keyframe animation with motion constraints\.
 + Add cloth colliders to actors with **Animation Editor**\.
 + Add local wind forces to your cloth simulations or use force regions to simulate wind\.
-+ Simulate cloth in parallel across available CPU cores, or simulate cloth on a discrete GPU that supports NVIDIA CUDA \(Windows 10 only\)\.
++ Simulate cloth in parallel across available CPU cores.
 + **NVIDIA Cloth** gem's public API allows other systems and gems to access cloth simulation functionality\.
 + Debug cloth simulations and constraints with real\-time cloth debug visualizations\.
 
@@ -39,8 +39,6 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/
 [Cloth simulation constraints](/docs/user-guide/interactivity/physics/nvidia-cloth/constraints.md) \- An overview of how **Motion constraints** and **Backstop** work to improve the results of cloth simulations\.
 
 [Cloth visual debugger](/docs/user-guide/interactivity/physics/nvidia-cloth/debugging.md) \- Enable the visual debugger for cloth simulations\.
-
-[GPU cloth simulation with NVIDIA CUDA](/docs/user-guide/interactivity/physics/nvidia-cloth/gpu.md) \- Install NVIDIA CUDA to enable GPU acceleration for NVIDIA Cloth\.
 
 ## NVIDIA Cloth references {#component-cloth-references}
 

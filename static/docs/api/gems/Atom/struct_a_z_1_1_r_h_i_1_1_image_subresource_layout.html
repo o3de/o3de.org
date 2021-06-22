@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RHI::ImageSubresourceLayout Struct Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RHI::ImageSubresourceLayout Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -59,9 +62,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a085aa4eb3b241bb75ad733c5f1fcbbf1"><td class="memItemLeft" align="right" valign="top"><a id="a085aa4eb3b241bb75ad733c5f1fcbbf1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html">ImageSubresourceLayout</a>, &quot;{076A8345-B6E4-4287-A1B3-4079E1BA3CA9}&quot;)</td></tr>
 <tr class="separator:a085aa4eb3b241bb75ad733c5f1fcbbf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab79d71f7cc9b6ff4eae2db28ad9b2c86"><td class="memItemLeft" align="right" valign="top"><a id="ab79d71f7cc9b6ff4eae2db28ad9b2c86"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ImageSubresourceLayout</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_size.html">Size</a> size, uint32_t rowCount, uint32_t bytesPerRow, uint32_t bytesPerImage)</td></tr>
-<tr class="separator:ab79d71f7cc9b6ff4eae2db28ad9b2c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1dfdd854761ddedba72b88f2f033543"><td class="memItemLeft" align="right" valign="top"><a id="af1dfdd854761ddedba72b88f2f033543"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageSubresourceLayout</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_size.html">Size</a> size, uint32_t rowCount, uint32_t bytesPerRow, uint32_t bytesPerImage, uint32_t numBlocksWidth, uint32_t numBlocksHeight)</td></tr>
+<tr class="separator:af1dfdd854761ddedba72b88f2f033543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -85,6 +88,14 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html#a70f3ddb5084fbc2d60e0545699961c83">m_bytesPerImage</a> = 0</td></tr>
 <tr class="memdesc:a70f3ddb5084fbc2d60e0545699961c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in a single image slice. 3D textures are comprised of m_size.m_depth image slices. <br /></td></tr>
 <tr class="separator:a70f3ddb5084fbc2d60e0545699961c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0ecfb1c1a074ebec89b628fe889e40a"><td class="memItemLeft" align="right" valign="top"><a id="ac0ecfb1c1a074ebec89b628fe889e40a"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html#ac0ecfb1c1a074ebec89b628fe889e40a">m_blockElementWidth</a> = 1</td></tr>
+<tr class="memdesc:ac0ecfb1c1a074ebec89b628fe889e40a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of blocks in width based on the texture fomat. <br /></td></tr>
+<tr class="separator:ac0ecfb1c1a074ebec89b628fe889e40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5f9ef1547a7b8dd100436c132012f44"><td class="memItemLeft" align="right" valign="top"><a id="ac5f9ef1547a7b8dd100436c132012f44"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_image_subresource_layout.html#ac5f9ef1547a7b8dd100436c132012f44">m_blockElementHeight</a> = 1</td></tr>
+<tr class="memdesc:ac5f9ef1547a7b8dd100436c132012f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of blocks in height based on the texture fomat. <br /></td></tr>
+<tr class="separator:ac5f9ef1547a7b8dd100436c132012f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="abe1961deaa0786de854267ee5fe3b46a"></a>
@@ -102,10 +113,13 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 
 </div>
 </div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Gems/Atom/RHI/Code/Include/Atom/RHI.Reflect/ImageSubresource.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:14 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

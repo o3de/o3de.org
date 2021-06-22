@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::Render::DecalFeatureProcessorInterface Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::Render::DecalFeatureProcessorInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -102,8 +105,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#aaadd6e50e8d5243933e5e4f429541a25">SetDecalOpacity</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, float opacity)=0</td></tr>
 <tr class="memdesc:aaadd6e50e8d5243933e5e4f429541a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the opacity of the decal. <br /></td></tr>
 <tr class="separator:aaadd6e50e8d5243933e5e4f429541a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa177fe674ad407a8c0665bc303aa8469"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#aa177fe674ad407a8c0665bc303aa8469">SetDecalTransform</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, const AZ::Transform &amp;world)=0</td></tr>
-<tr class="separator:aa177fe674ad407a8c0665bc303aa8469"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48507fc4a3ea666aadc9b7e3494b1bde"><td class="memItemLeft" align="right" valign="top"><a id="a48507fc4a3ea666aadc9b7e3494b1bde"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a48507fc4a3ea666aadc9b7e3494b1bde">SetDecalMaterial</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, const AZ::Data::AssetId)=0</td></tr>
 <tr class="memdesc:a48507fc4a3ea666aadc9b7e3494b1bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the material information for this decal. <br /></td></tr>
@@ -120,6 +121,12 @@ virtual const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_buf
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#a36c3bbf4a6a89bc8f55852abdff8a5b0">GetDecalCount</a> () const =0</td></tr>
 <tr class="memdesc:a36c3bbf4a6a89bc8f55852abdff8a5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of decals currently in the buffer. <br /></td></tr>
 <tr class="separator:a36c3bbf4a6a89bc8f55852abdff8a5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aa177fe674ad407a8c0665bc303aa8469"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_decal_feature_processor_interface.html#aa177fe674ad407a8c0665bc303aa8469">SetDecalTransform</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, const AZ::Transform &amp;world)=0</td></tr>
+<tr class="separator:aa177fe674ad407a8c0665bc303aa8469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75db4e7669656c91915bf0fb09df7761"><td class="memItemLeft" align="right" valign="top"><a id="a75db4e7669656c91915bf0fb09df7761"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDecalTransform</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">DecalHandle</a> handle, const AZ::Transform &amp;world, const AZ::Vector3 &amp;nonUniformScale)=0</td></tr>
+<tr class="separator:a75db4e7669656c91915bf0fb09df7761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">AZ::RPI::FeatureProcessor</a></td></tr>
 <tr class="memitem:a011d9c30a4429e37a8e21a0b6087935e inherit pub_methods_class_a_z_1_1_r_p_i_1_1_feature_processor"><td class="memItemLeft" align="right" valign="top"><a id="a011d9c30a4429e37a8e21a0b6087935e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html">FeatureProcessor</a>, &quot;{B8027170-C65C-4237-964D-B557FC9D7575}&quot;)</td></tr>
@@ -197,10 +204,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/Feature/Common/Code/Include/Atom/Feature/Decals/DecalFeatureProcessorInterface.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:13 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

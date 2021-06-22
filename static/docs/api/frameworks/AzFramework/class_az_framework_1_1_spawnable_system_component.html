@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: AzFramework::SpawnableSystemComponent Class Reference</title>
+<title>Open 3D Engine AzFramework API Reference: AzFramework::SpawnableSystemComponent Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -54,7 +57,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Component, Handler, Handler, Registrar, and Handler.</p>
+<p>Inherits Component, Handler, Handler, Handler, Registrar, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -76,6 +79,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a1d81f5a5b947cfede998c732e58cc8"><td class="memItemLeft" align="right" valign="top"><a id="a9a1d81f5a5b947cfede998c732e58cc8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
 <tr class="separator:a9a1d81f5a5b947cfede998c732e58cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f3befa268d5152eb56ba7bbde84bee"><td class="memItemLeft" align="right" valign="top"><a id="ad2f3befa268d5152eb56ba7bbde84bee"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTickOrder</b> () override</td></tr>
+<tr class="separator:ad2f3befa268d5152eb56ba7bbde84bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7155007ada5b22a5f2b059e1540951"><td class="memItemLeft" align="right" valign="top"><a id="a3d7155007ada5b22a5f2b059e1540951"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () override</td></tr>
+<tr class="separator:a3d7155007ada5b22a5f2b059e1540951"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea87b4145c2404ff791e617c19454e6a"><td class="memItemLeft" align="right" valign="top"><a id="aea87b4145c2404ff791e617c19454e6a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCatalogLoaded</b> (const char *catalogFile) override</td></tr>
 <tr class="separator:aea87b4145c2404ff791e617c19454e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,10 +155,13 @@ AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>m_rootSp
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_catalogAvailable</b> { false }</td></tr>
 <tr class="separator:a596ca736bbf232fd2ac23a7ba15a0ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Spawnable/SpawnableSystemComponent.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:54 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

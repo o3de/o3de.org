@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::Prefab::InstanceToTemplateInterface Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::Prefab::InstanceToTemplateInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -80,10 +83,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a5efc55cf9a9d8afb11d7ef31970882cd"><td class="memItemLeft" align="right" valign="top"><a id="a5efc55cf9a9d8afb11d7ef31970882cd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendEntityAliasToPatchPaths</b> (PrefabDom &amp;providedPatch, const AZ::EntityId &amp;entityId)=0</td></tr>
 <tr class="separator:a5efc55cf9a9d8afb11d7ef31970882cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9596371b83c2c931715d78d0623cfc1c"><td class="memItemLeft" align="right" valign="top"><a id="a9596371b83c2c931715d78d0623cfc1c"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#a9596371b83c2c931715d78d0623cfc1c">PatchTemplate</a> (PrefabDomValue &amp;providedPatch, TemplateId templateId)=0</td></tr>
-<tr class="memdesc:a9596371b83c2c931715d78d0623cfc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the template links (updating instances) for the given templateId using the providedPatch. <br /></td></tr>
-<tr class="separator:a9596371b83c2c931715d78d0623cfc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf37ff2371e17aaacc096aef7e2048fc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#abf37ff2371e17aaacc096aef7e2048fc">PatchTemplate</a> (PrefabDomValue &amp;providedPatch, TemplateId templateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
+<tr class="separator:abf37ff2371e17aaacc096aef7e2048fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039408efd31c0e18ae44e9cd293eed09"><td class="memItemLeft" align="right" valign="top"><a id="a039408efd31c0e18ae44e9cd293eed09"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyPatchesToInstance</b> (const AZ::EntityId &amp;entityId, PrefabDom &amp;patches, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;instanceToAddPatches)=0</td></tr>
 <tr class="separator:a039408efd31c0e18ae44e9cd293eed09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,10 +92,67 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyPatchesT
 virtual InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopMostInstanceInHierarchy</b> (AZ::EntityId entityId)=0</td></tr>
 <tr class="separator:ac94cbe249c395df48954f59915eaad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="abf37ff2371e17aaacc096aef7e2048fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf37ff2371e17aaacc096aef7e2048fc">&#9670;&nbsp;</a></span>PatchTemplate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzToolsFramework::Prefab::InstanceToTemplateInterface::PatchTemplate </td>
+          <td>(</td>
+          <td class="paramtype">PrefabDomValue &amp;&#160;</td>
+          <td class="paramname"><em>providedPatch</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>templateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">InstanceOptionalReference&#160;</td>
+          <td class="paramname"><em>instanceToExclude</em> = <code>AZStd::nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Updates the template links (updating instances) for the given template and triggers propagation on its instances. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">providedPatch</td><td>The patch to apply to the template. </td></tr>
+    <tr><td class="paramname">templateId</td><td>The id of the template to update. </td></tr>
+    <tr><td class="paramname">instanceToExclude</td><td>An optional reference to an instance of the template being updated that should not be refreshes as part of propagation. Defaults to nullopt, which means that all instances will be refreshed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the template was patched correctly, false if the operation failed. </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a3ff5ba0e04fcead354bfc0e92482415b">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/Instance/InstanceToTemplateInterface.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:09 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

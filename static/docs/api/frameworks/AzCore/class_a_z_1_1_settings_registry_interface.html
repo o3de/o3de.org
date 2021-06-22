@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::SettingsRegistryInterface Class Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::SettingsRegistryInterface Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -55,7 +58,7 @@ $(function() {
 
 <p><code>#include &lt;SettingsRegistry.h&gt;</code></p>
 
-<p>Inherited by <a class="el" href="class_a_z_1_1_settings_registry_impl.html">AZ::SettingsRegistryImpl</a>.</p>
+<p>Inherited by <a class="el" href="class_a_z_1_1_mock_settings_registry.html">AZ::MockSettingsRegistry</a>, and <a class="el" href="class_a_z_1_1_settings_registry_impl.html">AZ::SettingsRegistryImpl</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -181,6 +184,11 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>Set</b> (<a c
 <tr class="separator:aff7426fc771d33c6323aa2cb1916e3f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a94b17e0ee588c4882980c415036537"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#a6a94b17e0ee588c4882980c415036537">MergeSettingsFolder</a> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> path, const <a class="el" href="class_a_z_1_1_settings_registry_interface_1_1_specializations.html">Specializations</a> &amp;specializations, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> platform={}, <a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::string_view</a> rootKey=&quot;&quot;, <a class="el" href="class_a_z_std_1_1vector.html">AZStd::vector</a>&lt; char &gt; *scratchBuffer=nullptr)=0</td></tr>
 <tr class="separator:a6a94b17e0ee588c4882980c415036537"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf51c98f70814b11a2c72615e7e3ec2f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_settings_registry_interface.html#abf51c98f70814b11a2c72615e7e3ec2f">SetApplyPatchSettings</a> (const <a class="el" href="struct_a_z_1_1_json_apply_patch_settings.html">AZ::JsonApplyPatchSettings</a> &amp;applyPatchSettings)=0</td></tr>
+<tr class="separator:abf51c98f70814b11a2c72615e7e3ec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a782164bee2c60b2c90442ddb1379ab"><td class="memItemLeft" align="right" valign="top"><a id="a3a782164bee2c60b2c90442ddb1379ab"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplyPatchSettings</b> (<a class="el" href="struct_a_z_1_1_json_apply_patch_settings.html">AZ::JsonApplyPatchSettings</a> &amp;applyPatchSettings)=0</td></tr>
+<tr class="separator:a3a782164bee2c60b2c90442ddb1379ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -1160,6 +1168,40 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="abf51c98f70814b11a2c72615e7e3ec2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf51c98f70814b11a2c72615e7e3ec2f">&#9670;&nbsp;</a></span>SetApplyPatchSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AZ::SettingsRegistryInterface::SetApplyPatchSettings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_json_apply_patch_settings.html">AZ::JsonApplyPatchSettings</a> &amp;&#160;</td>
+          <td class="paramname"><em>applyPatchSettings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Stores the settings structure which is used when merging settings to the Settings Registry using JSON Merge Patch or JSON Merge Patch. The settings contain an issue reporting callback which can be used to track patching process. Potential application of the reporting callback could be to update a UI whenever a key receives an updated value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">applyPatchSettings</td><td>The ApplyPatchSettings which are using during JSON Merging </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_a_z_1_1_settings_registry_impl.html#ab2f86cabc2c1d877fdca1fa9a52b0db1">AZ::SettingsRegistryImpl</a>.</p>
+
+</div>
+</div>
 <a id="a7d5b86a746cb20f471eb916ef8f443b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d5b86a746cb20f471eb916ef8f443b5">&#9670;&nbsp;</a></span>SetObject() <span class="overload">[1/2]</span></h2>
 
@@ -1351,10 +1393,13 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/Settings/SettingsRegistry.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:21 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:13:50 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

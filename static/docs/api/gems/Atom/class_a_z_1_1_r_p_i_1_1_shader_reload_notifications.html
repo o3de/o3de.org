@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Atom API Reference: AZ::RPI::ShaderReloadNotifications Class Reference</title>
+<title>Open 3D Engine Atom Gem API Reference: AZ::RPI::ShaderReloadNotifications Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Atom API Reference
+   <div id="projectname">Open 3D Engine Atom Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -72,10 +75,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#ae7c810c16e30110c1798d18953439750">OnShaderReinitialized</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &amp;shader)</td></tr>
 <tr class="memdesc:ae7c810c16e30110c1798d18953439750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> instance reinitializes itself in response to the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> being reloaded. <br /></td></tr>
 <tr class="separator:ae7c810c16e30110c1798d18953439750"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbc419798b4a8c9a64c260a8df181fdd"><td class="memItemLeft" align="right" valign="top"><a id="adbc419798b4a8c9a64c260a8df181fdd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#adbc419798b4a8c9a64c260a8df181fdd">OnShaderVariantReinitialized</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader.html">Shader</a> &amp;shader, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_variant_id.html">ShaderVariantId</a> &amp;shaderVariantId, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderVariantStableId</a> shaderVariantStableId)</td></tr>
-<tr class="memdesc:adbc419798b4a8c9a64c260a8df181fdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a particular shader variant is reinitialized. <br /></td></tr>
-<tr class="separator:adbc419798b4a8c9a64c260a8df181fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e043457b154d8591cf4fa0976654cb"><td class="memItemLeft" align="right" valign="top"><a id="ae7e043457b154d8591cf4fa0976654cb"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_notifications.html#ae7e043457b154d8591cf4fa0976654cb">OnShaderVariantReinitialized</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant.html">ShaderVariant</a> &amp;shaderVariant)</td></tr>
+<tr class="memdesc:ae7e043457b154d8591cf4fa0976654cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a particular shader variant is reinitialized. <br /></td></tr>
+<tr class="separator:ae7e043457b154d8591cf4fa0976654cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -84,11 +87,15 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 <tr class="separator:a3ef1d556a7fcf83ea4af2cdde0635bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Connect to this EBus to get notifications whenever a Data::Instance&lt;Shader&gt; reloads its <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a>. The bus address is the AssetId of the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a>. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Connect to this EBus to get notifications whenever a shader system class reinitializes itself. The bus address is the AssetId of the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a>, even when the thing being reinitialized is a <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant.html">ShaderVariant</a> or other shader related class.</p>
+<p>Be careful when using the parameters provided by these functions. The bus ID is an AssetId, and it's possible for the system to have both <em>old</em> versions and <em>new reloaded</em> versions of the asset in memory at the same time, and they will have the same AssetId. Therefore your bus Handlers could receive Reinitialized messages from multiple sources. It may be necessary to check the memory addresses of these parameters against local members before using this data. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Shader/ShaderReloadNotificationBus.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:17 for Atom API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:00 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

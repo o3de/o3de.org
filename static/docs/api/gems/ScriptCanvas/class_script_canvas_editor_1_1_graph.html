@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ScriptCanvas API Reference: ScriptCanvasEditor::Graph Class Reference</title>
+<title>Open 3D Engine ScriptCanvas Gem API Reference: ScriptCanvasEditor::Graph Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">ScriptCanvas API Reference
+   <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -437,6 +440,9 @@ AZStd::vector&lt; AZ::EntityId &gt;&#160;</td><td class="memItemRight" valign="b
 <tr class="memitem:a50900366b21c97da558fb0478d7a94b6 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a50900366b21c97da558fb0478d7a94b6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddConnection</b> (const AZ::EntityId &amp;) override</td></tr>
 <tr class="separator:a50900366b21c97da558fb0478d7a94b6 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596164d0d3dbd6e63c96b287e46ff196 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a596164d0d3dbd6e63c96b287e46ff196"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAllConnections</b> ()</td></tr>
+<tr class="separator:a596164d0d3dbd6e63c96b287e46ff196 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a99f3363b9fd93c9ede926dfafb1072 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a5a99f3363b9fd93c9ede926dfafb1072"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveConnection</b> (const AZ::EntityId &amp;connectionId) override</td></tr>
 <tr class="separator:a5a99f3363b9fd93c9ede926dfafb1072 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -621,12 +627,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNodeVersionConverti
 <tr class="memitem:a8ee4d590999039a1a3125e728eee7652"><td class="memItemLeft" align="right" valign="top"><a id="a8ee4d590999039a1a3125e728eee7652"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleFunctionDefinitionExtension</b> (<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *node, GraphCanvas::SlotId graphCanvasSlotId, const GraphCanvas::NodeId &amp;nodeId)</td></tr>
 <tr class="separator:a8ee4d590999039a1a3125e728eee7652"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a498ca4ad50696c0754f9b9cefccc8626"><td class="memItemLeft" align="right" valign="top"><a id="a498ca4ad50696c0754f9b9cefccc8626"></a>
-AZ::Outcome&lt; <a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReplaceNodeByConfig</b> (<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *, const <a class="el" href="struct_script_canvas_1_1_node_configuration.html">ScriptCanvas::NodeConfiguration</a> &amp;, ScriptCanvas::ReplacementConnectionMap &amp;)</td></tr>
-<tr class="separator:a498ca4ad50696c0754f9b9cefccc8626"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b857cbb5eccec84242aa15e1420e34c"><td class="memItemLeft" align="right" valign="top"><a id="a1b857cbb5eccec84242aa15e1420e34c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SanityCheckNodeReplacement</b> (<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *, <a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *, AZStd::unordered_map&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">ScriptCanvas::SlotId</a>, AZStd::vector&lt; <a class="el" href="struct_script_canvas_1_1_slot_id.html">ScriptCanvas::SlotId</a> &gt;&gt; &amp;)</td></tr>
-<tr class="separator:a1b857cbb5eccec84242aa15e1420e34c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24428ae0d5156b5f0d527e8665c18ee1"><td class="memItemLeft" align="right" valign="top"><a id="a24428ae0d5156b5f0d527e8665c18ee1"></a>
+AZ::Outcome&lt; <a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ReplaceNodeByConfig</b> (<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *, const <a class="el" href="struct_script_canvas_1_1_node_configuration.html">ScriptCanvas::NodeConfiguration</a> &amp;, <a class="el" href="struct_script_canvas_1_1_node_update_slot_report.html">ScriptCanvas::NodeUpdateSlotReport</a> &amp;nodeUpdateSlotReport)</td></tr>
+<tr class="separator:a24428ae0d5156b5f0d527e8665c18ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65660111524f034cc3ef32894ac08ae4"><td class="memItemLeft" align="right" valign="top"><a id="a65660111524f034cc3ef32894ac08ae4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SanityCheckNodeReplacement</b> (<a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *, <a class="el" href="class_script_canvas_1_1_node.html">ScriptCanvas::Node</a> *, <a class="el" href="struct_script_canvas_1_1_node_update_slot_report.html">ScriptCanvas::NodeUpdateSlotReport</a> &amp;nodeUpdateSlotReport)</td></tr>
+<tr class="separator:a65660111524f034cc3ef32894ac08ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_script_canvas_1_1_graph"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_script_canvas_1_1_graph')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_script_canvas_1_1_graph.html">ScriptCanvas::Graph</a></td></tr>
 <tr class="memitem:af8035216d0d64e87907b6775c2ac553c inherit pro_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="af8035216d0d64e87907b6775c2ac553c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PostActivate</b> ()</td></tr>
@@ -847,10 +853,13 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>EditorGraph is the editor version of the <a class="el" href="class_script_canvas_1_1_graph.html" title="Graph is the execution model of a ScriptCanvas graph.">ScriptCanvas::Graph</a> component that is activated when executing the script canvas engine. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>Gems/ScriptCanvas/Code/Editor/Include/ScriptCanvas/Components/EditorGraph.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:56 for ScriptCanvas API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:37 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -7,7 +7,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md) documentation\.
+To use **Cloth**, you must enable the **NVIDIA Cloth** gem\. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/) documentation\.
 
 You can create cloth assets for entities with **Actor** components in the content creation application of your choice and import them into O3DE from an `.fbx` file\. The actor asset should have the following:
 
@@ -47,7 +47,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
    1. Click the button beside the **Mesh node** property to open the **FBX Settings** window\.
 ![\[Open 3D Engine cloth component mesh node select.\]](/images/user-guide/physx/cloth/ui-cloth-mesh-node-select.png)
 
-   1. In the **FBX Settings** window, on the **Actors** tab, and choose **Add Modifier**, **Cloth**\.
+   1. In the **FBX Settings** window, on the **Meshes** tab, and choose **Add Modifier**, **Cloth**\.
 
    1. In the **Cloth** modifier area:
 

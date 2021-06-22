@@ -29,7 +29,7 @@ The instructions that follow assume you have the following:
 <!---
 Project directories can be located either in the same directory as the O3DE root directory or outside of this directory. The latter are referred to as "external projects" in this documentation.
 -->
-This tutorial will use the following project name and directories in the examples:
+This tutorial uses the following project name and directories in the examples:
 
 * O3DE engine directory: `C:\o3de`
 * New project name and location: `C:\o3de\MyProject`

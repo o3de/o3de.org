@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::ManipulatorManager Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::ManipulatorManager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -105,8 +108,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>Interacting</b> () co
 <tr class="memitem:a15336281326a81353dc865ee6141d31e"><td class="memItemLeft" align="right" valign="top"><a id="a15336281326a81353dc865ee6141d31e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawManipulators</b> (AzFramework::DebugDisplayRequests &amp;debugDisplay, const AzFramework::CameraState &amp;cameraState, const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction.html">ViewportInteraction::MouseInteraction</a> &amp;mouseInteraction)</td></tr>
 <tr class="separator:a15336281326a81353dc865ee6141d31e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46d711bf4c11a2df4711bf22a11c3326"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_manipulator_manager.html#a46d711bf4c11a2df4711bf22a11c3326">AZ_DEPRECATED</a> (void CheckModifierKeysChanged(<a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_keyboard_modifiers.html">ViewportInteraction::KeyboardModifiers</a> keyboardModifiers, const <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_pick.html">ViewportInteraction::MousePick</a> &amp;mousePick), &quot;CheckModifierKeysChanged is deprecated and will be removed in a future release&quot;)</td></tr>
-<tr class="separator:a46d711bf4c11a2df4711bf22a11c3326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
@@ -167,35 +168,6 @@ AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_base_mani
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class serves to manage all relevant mouse events and coordinate all registered manipulators to function properly. <a class="el" href="class_az_tools_framework_1_1_manipulator_manager.html">ManipulatorManager</a> does not manage the life cycle of specific manipulators. The users of manipulators are responsible for creating and deleting them at right time, as well as registering and unregistering accordingly. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a46d711bf4c11a2df4711bf22a11c3326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46d711bf4c11a2df4711bf22a11c3326">&#9670;&nbsp;</a></span>AZ_DEPRECATED()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">AzToolsFramework::ManipulatorManager::AZ_DEPRECATED </td>
-          <td>(</td>
-          <td class="paramtype">void &#160;</td>
-          <td class="paramname"><em>CheckModifierKeysChanged</em>ViewportInteraction::KeyboardModifiers keyboardModifiers, const ViewportInteraction::MousePick &amp;mousePick, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&quot;CheckModifierKeysChanged is deprecated and will be removed in a future release&quot;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Check if the modifier key state has changed - if so we may need to refresh certain manipulator bounds. </p>
-
-</div>
-</div>
 <a id="a1664bc9a1b07da7482f229996a7bf006"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1664bc9a1b07da7482f229996a7bf006">&#9670;&nbsp;</a></span>PerformRaycast()</h2>
 
@@ -274,10 +246,13 @@ AZStd::shared_ptr&lt; <a class="el" href="class_az_tools_framework_1_1_base_mani
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Manipulators/ManipulatorManager.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:07 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:39 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::AllocatorStorage::ModuleStoragePolicyBase&lt; Allocator, StoreAllocatorOnHeap &gt; Struct Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::AllocatorStorage::ModuleStoragePolicyBase&lt; Allocator, StoreAllocatorOnHeap &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -54,10 +57,13 @@ struct AZ::AllocatorStorage::ModuleStoragePolicyBase&lt; Allocator, StoreAllocat
 
 <p><a class="el" href="class_a_z_1_1_allocator_storage_1_1_module_storage_policy.html">ModuleStoragePolicy</a> stores the allocator in a static variable that is local to the module using it. This forces separate instances of the allocator to exist in each module, and permits lazy instantiation. We only tolerate this for some special allocators, primarily to maintain backwards compatibility with CryEngine, since it still allocates outside of code in the data section.</p>
 <p>It has two ways of storing its allocator: either on the heap, which is the preferred way, since it guarantees the memory for the allocator won't be deallocated (such as in a DLL) before anyone that's using it. If disabled the allocator is stored in a static variable, which should only be used where this isn't a problem a shut-down time, such as on a console. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/Memory/Memory.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:22 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:13:51 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

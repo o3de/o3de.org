@@ -9,7 +9,6 @@ Actors are assets with at least one bone and can contain one or more skinned mes
 
 **Contents**
 + [Actors tab properties](#fbx-settings-actors-tab-properties)
-+ [Cloth modifier](#w31aac15b9c11c13c11)
 + [Comment modifier](#w31aac15b9c11c13c13)
 + [Coordinate system change modifier](#w31aac15b9c11c13c15)
 + [Level of Detail modifier](#w31aac15b9c11c13c17)
@@ -39,7 +38,6 @@ If you have defined level of detail meshes for your actor by appending `_lod0` t
 
 ****Add Modifier****
 Modifiers add additional specialized options for processing assets\. Choose the **Add Modifier** button to see a list of available modifiers:
-+ **Cloth**
 + **Comment**
 + **Coordinate system change**
 + **Material**
@@ -49,44 +47,6 @@ Modifiers add additional specialized options for processing assets\. Choose the 
 + **Skin**
 + **Tangents**
 Some modifiers are not be available unless the gem that provides the modifier is enabled in your project\.
-
-## Cloth modifier {#w31aac15b9c11c13c11}
-
-![\[The FBX Settings Actors tab Cloth modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cloth.png)
-
-Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
-
-**Note**
-Each mesh in the **Actor group** to simulate as cloth requires its own **Cloth** modifier\.
-
-For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
-
-****Select Cloth Mesh****
-Select the mesh to have cloth data applied and simulate as a cloth object\.
-
-**Note**
-For information on the **Inverse Masses**, **Motion Constraints**, and **Backstop** properties below see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data.md)\.
-
-****Inverse Masses****
-Select a vertex color stream to apply per vertex inverse mass data for cloth simulation\. If no vertex color stream is selected, an inverse mass value of **1\.0** is assigned to all vertices in the cloth mesh\.
-
-****Inverse Masses Channel****
-Select the channel in the vertex color stream that contains inverse mass data\.
-
-****Motion Constraints****
-Select a vertex color stream to apply per vertex motion constraints data for cloth simulation\. If no vertex color stream is selected, a motion constraint value of **1\.0** is assigned to all vertices in the cloth mesh\.
-
-****Motion Constraints Channel****
-Select the channel in the vertex color stream that contains motion constraints data\.
-
-****Backstop****
-Select a vertex color stream to apply per vertex backstop data for cloth simulation\. If no vertex color stream is selected, backstop will be disabled for the cloth mesh\.
-
-****Backstop Offset Channel****
-Select the channel in the vertex color stream that contains backstop offset data\.
-
-****Backstop Radius Channel****
-Select the channel in the vertex color stream that contains backstop radius data\.
 
 ## Comment modifier {#w31aac15b9c11c13c13}
 

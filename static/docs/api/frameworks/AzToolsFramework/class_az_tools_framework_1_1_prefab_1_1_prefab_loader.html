@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzToolsFramework API Reference: AzToolsFramework::Prefab::PrefabLoader Class Reference</title>
+<title>Open 3D Engine AzToolsFramework API Reference: AzToolsFramework::Prefab::PrefabLoader Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzToolsFramework API Reference
+   <div id="projectname">Open 3D Engine AzToolsFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +72,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a69715b7a428e5e2fb24f6d00fc241cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9a4c96533ae753fa6a1eacf7418d0ed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#aa9a4c96533ae753fa6a1eacf7418d0ed">SaveTemplate</a> (TemplateId templateId) override</td></tr>
 <tr class="separator:aa9a4c96533ae753fa6a1eacf7418d0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe12aef02d348137ebef708035b1bead"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#abe12aef02d348137ebef708035b1bead">SaveTemplateToFile</a> (TemplateId templateId, AZ::IO::PathView absolutePath) override</td></tr>
+<tr class="separator:abe12aef02d348137ebef708035b1bead"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abacf824040ac6cdf72a5acb352937719"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#abacf824040ac6cdf72a5acb352937719">SaveTemplateToString</a> (TemplateId templateId, AZStd::string &amp;outputJson) override</td></tr>
 <tr class="separator:abacf824040ac6cdf72a5acb352937719"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0292086816ba641055b9d855091e8ae5"><td class="memItemLeft" align="right" valign="top"><a id="a0292086816ba641055b9d855091e8ae5"></a>
@@ -79,8 +84,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabLoade
 <tr class="separator:a445fb8f7673ff5f617346ac688112e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac093cd09a73d1bcd04a8c83c8a1aa3c1"><td class="memItemLeft" align="right" valign="top">AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#ac093cd09a73d1bcd04a8c83c8a1aa3c1">GetFullPath</a> (AZ::IO::PathView path) override</td></tr>
 <tr class="separator:ac093cd09a73d1bcd04a8c83c8a1aa3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35278e65c909abcceee5ca4685cce66c"><td class="memItemLeft" align="right" valign="top">AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#a35278e65c909abcceee5ca4685cce66c">GetRelativePathToProject</a> (AZ::IO::PathView path) override</td></tr>
-<tr class="separator:a35278e65c909abcceee5ca4685cce66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b39ccc56a2ee52d7a3f53f21fe57600"><td class="memItemLeft" align="right" valign="top">AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader.html#a0b39ccc56a2ee52d7a3f53f21fe57600">GenerateRelativePath</a> (AZ::IO::PathView path) override</td></tr>
+<tr class="separator:a0b39ccc56a2ee52d7a3f53f21fe57600"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html">AzToolsFramework::Prefab::PrefabLoaderInterface</a></td></tr>
 <tr class="memitem:a8b516cc62af857cf55ad0de84cbf87cd inherit pub_methods_class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface"><td class="memItemLeft" align="right" valign="top"><a id="a8b516cc62af857cf55ad0de84cbf87cd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html">PrefabLoaderInterface</a>, &quot;{C7B26070-B1BE-470C-BE5A-45B0CF112E68}&quot;)</td></tr>
@@ -103,6 +108,35 @@ static AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Genera
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Prefab Loader helps saving/loading Prefab files. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0b39ccc56a2ee52d7a3f53f21fe57600"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b39ccc56a2ee52d7a3f53f21fe57600">&#9670;&nbsp;</a></span>GenerateRelativePath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZ::IO::Path AzToolsFramework::Prefab::PrefabLoader::GenerateRelativePath </td>
+          <td>(</td>
+          <td class="paramtype">AZ::IO::PathView&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Converts path into a path that's relative to the highest-priority containing folder of all the folders registered with the engine. This path will be the path that appears in the .prefab file. The path will always use the '/' separator. </p>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#a7e1c9e8b94757918650e6298b7077147">AzToolsFramework::Prefab::PrefabLoaderInterface</a>.</p>
+
+</div>
+</div>
 <a id="ac093cd09a73d1bcd04a8c83c8a1aa3c1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac093cd09a73d1bcd04a8c83c8a1aa3c1">&#9670;&nbsp;</a></span>GetFullPath()</h2>
 
@@ -129,35 +163,6 @@ static AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Genera
 <p>Converts path into full absolute path. This will be used by loading/save IO operations. The path will always have the correct separator for the current OS </p>
 
 <p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#ad452c47eb99304f54f40b7463df8732a">AzToolsFramework::Prefab::PrefabLoaderInterface</a>.</p>
-
-</div>
-</div>
-<a id="a35278e65c909abcceee5ca4685cce66c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35278e65c909abcceee5ca4685cce66c">&#9670;&nbsp;</a></span>GetRelativePathToProject()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">AZ::IO::Path AzToolsFramework::Prefab::PrefabLoader::GetRelativePathToProject </td>
-          <td>(</td>
-          <td class="paramtype">AZ::IO::PathView&#160;</td>
-          <td class="paramname"><em>path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Converts path into a relative path to the project, this will be the paths in .prefab file. The path will always have '/' separator. </p>
-
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#a3b7ed5c05047554f4666f0491d070836">AzToolsFramework::Prefab::PrefabLoaderInterface</a>.</p>
 
 </div>
 </div>
@@ -277,6 +282,52 @@ static AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Genera
 
 </div>
 </div>
+<a id="abe12aef02d348137ebef708035b1bead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe12aef02d348137ebef708035b1bead">&#9670;&nbsp;</a></span>SaveTemplateToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::Prefab::PrefabLoader::SaveTemplateToFile </td>
+          <td>(</td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>templateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::IO::PathView&#160;</td>
+          <td class="paramname"><em>absolutePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Saves a Prefab <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> to the provided absolute source path, which needs to match the relative path in the template. Converts Prefab <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> form into .prefab form by collapsing nested <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> info into a source path and patches. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">templateId</td><td>Id of the template to be saved </td></tr>
+    <tr><td class="paramname">absolutePath</td><td>Absolute path to save the file to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool on whether the operation succeeded or not </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_loader_interface.html#a4d051843141cc79755263dfd86be9206">AzToolsFramework::Prefab::PrefabLoaderInterface</a>.</p>
+
+</div>
+</div>
 <a id="abacf824040ac6cdf72a5acb352937719"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abacf824040ac6cdf72a5acb352937719">&#9670;&nbsp;</a></span>SaveTemplateToString()</h2>
 
@@ -323,10 +374,13 @@ static AZ::IO::Path&#160;</td><td class="memItemRight" valign="bottom"><b>Genera
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzToolsFramework/AzToolsFramework/Prefab/PrefabLoader.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:02:09 for AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

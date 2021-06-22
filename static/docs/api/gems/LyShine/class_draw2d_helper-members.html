@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>LyShine API Reference: Member List</title>
+<title>Open 3D Engine LyShine Gem API Reference: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">LyShine API Reference
+   <div id="projectname">Open 3D Engine LyShine Gem API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -52,7 +55,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#abe6290775e573cda84bd2af8fbc3a3d7">DrawLine</a>(AZ::Vector2 start, AZ::Vector2 end, AZ::Color color, int blendMode=IDraw2d::UseDefault, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, int baseState=IDraw2d::UseDefault)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#aa19ecf343e4e681ea8a553fbe3fce92b">DrawLineTextured</a>(AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, IDraw2d::VertexPosColUV *verts, int blendMode=IDraw2d::UseDefault, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, int baseState=IDraw2d::UseDefault)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#a02c8eb1164b05024689ed921b816962b">DrawQuad</a>(AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, IDraw2d::VertexPosColUV *verts, int blendMode=IDraw2d::UseDefault, IDraw2d::Rounding pixelRounding=IDraw2d::Rounding::Nearest, int baseState=IDraw2d::UseDefault)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#ad990ef580e8160fe9f07bfd9a2a25c16">DrawRectOutlineTextured</a>(AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, UiTransformInterface::RectPoints points, AZ::Vector2 rightVec, AZ::Vector2 downVec, AZ::Color color)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#acd00ce79b23babf03fb6f534cca85ea4">DrawRectOutlineTextured</a>(AZ::Data::Instance&lt; AZ::RPI::Image &gt; image, UiTransformInterface::RectPoints points, AZ::Vector2 rightVec, AZ::Vector2 downVec, AZ::Color color, uint32_t lineThickness=0)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#a1c0e72304c74268bf510801f8cad5e6e">DrawText</a>(const char *textString, AZ::Vector2 position, float pointSize, float opacity=1.0f)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#ae2814631e8b6d4c1d3f3b72004e86d89">GetDefaultDraw2d</a>()</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#afb66af9703890bb20bb73e71fe6f7d55">GetTextSize</a>(const char *textString, float pointSize)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -71,13 +74,13 @@ $(function() {
   <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#a090a62ffc66cc51033f9a60bef1c9fa5">SetTextColor</a>(AZ::Vector3 color)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#a6ca4503c55269389c1ae1ed00de67756">SetTextDropShadow</a>(AZ::Vector2 offset, AZ::Color color)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#a1a6bf5d8a49b205492ff6d5721c66fe0">SetTextEffectIndex</a>(unsigned int effectIndex)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#a1d3a183b5397f2e690d2e4d9206feba1">SetTextFont</a>(IFFont *font)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#a788dcdc4caff27ed7d6011d237f42807">SetTextFont</a>(AZStd::string_view fontName)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_draw2d_helper.html#a8e460bf5434c18b6ec4b58bd38330d28">SetTextRotation</a>(float rotation)</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_draw2d_helper.html#aa984858753ccf6ae8cefba10ce11bdb5">~Draw2dHelper</a>()</td><td class="entry"><a class="el" href="class_draw2d_helper.html">Draw2dHelper</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:03:36 for LyShine API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:15:18 for Open 3D Engine LyShine Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -33,6 +33,15 @@ The English-language documentation uses U.S. English spelling and grammar.
 
 [//]: # (If you're localizing this page, you can omit the point about U.S. English.)
 
+## Documentation traits
+
+Facilitate code review by checking your work against the following traits of good O3DE documentation.
+
+- ✅ **Use active voice** - Do descriptive sentences have a clear _subject_ _verb_ action?
+- ✅ **Answer the 'why'?** - Does the documentation answer "why does this exist"?
+- ✅ **Be consistent** - Did you audit each change to ensure it conforms with this **O3DE Documentation Contribution Style Guide**?
+- ✅ **Help the user** - Is the documentation task-oriented, and assistive for users looking to accomplish a goal?
+
 ## General writer guidance
 
 The O3DE documentation project serves a global audience. To support English as a Second Language (ESL) readers, and to ease localization efforts, adhere to the following guidelines.
@@ -568,12 +577,12 @@ To add an image, use syntax similar to a link, preceded by an exclamation mark. 
 Image example:
 
 ```markdown
-![O3DE Logo](/img/logos/O3DE-Logo-RGB.svg "The O3DE logo")
+![O3DE Logo](/img/logos/O3DE-Logo-with-WordMark-Black-Mono.svg "The O3DE logo")
 ```
 
 Image output:
 
-![O3DE Logo](/img/logos/O3DE-Logo-RGB.svg "The O3DE logo")
+![O3DE Logo](/img/logos/O3DE-Logo-with-WordMark-Black-Mono.svg "The O3DE logo")
 
 ### Image file location
 

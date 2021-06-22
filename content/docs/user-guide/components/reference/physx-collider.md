@@ -50,11 +50,11 @@ Local offset position of the collider, relative to the entity\.
 ****Rotation****
 Local rotation of the collider about the **Offset** of the PhysX collider component\.
 
-****Physics Material \- Library****
-Set the physics material library for this collider\.
+****Library (Physics Materials)****
+The physics material library of the project\.
 
-****Physics Material \- Mesh Surfaces****
-Choose a material from the physics material library for this collider\. A collider can have multiple materials assigned\. For more information, see [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials/)\.
+****Slots (Physics Materials)****
+Choose a physics material for each material of this collider\. A collider can have multiple materials assigned\. For more information, see [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials/)\.
 
 ****Tag****
 Set a tag for this collider\. Tags can be used to quickly identify components in script or code\.
@@ -70,37 +70,47 @@ Shape of the collider\. A collider can be a primitive shape or a physics asset\.
 To use a primitive shape, choose **Box**, **Sphere**, or **Capsule**\. For more information, see [Primitive colliders](#primitive-colliders)\.
 To use a physics asset, choose **Physics Asset**\. For more information, see [Physics asset colliders](#physics-asset-colliders)\.
 
-****PhysX Mesh** \(Physics Asset shape\)**
+****Physics Asset shape****
+
+![\[PhysX Collider component interface, Physics Asset.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-0.png)
+
+**PhysX Mesh**
 Assign a physics asset to the collider\. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/)\.
-
-![\[PhysX Collider component interface, Sphere.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-1.png)
-
-****Radius** \(Sphere shape\)**
-Radius multiplier of the sphere collider\. The size of the sphere primitive is the **Radius** multiplied by the largest value in the **Scale** property in the **[Transform](/docs/user-guide/components/reference/transform/)** component\.
-
-![\[PhysX Collider component interface, Box.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-2.png)
-
-**Dimensions** \(Box shape\)
-Width, depth, and height of the box collider\.
-
-![\[PhysX Collider component interface, Capsule.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-3.png)
-
-**Height** \(Capsule shape\)
-Height of the capsule primitive shape\. The height property of the capsule must be at least twice the radius property\. For example, if the radius of the capsule is **5\.0**, the minimum height is **10\.0**\.
-
-**Radius** \(Capsule shape\)
-Radius of the capsule primitive shape\. The radius property of the capsule must be no greater than half the height property\. For example, if the height of the capsule is **10\.0**, the maximum radius is **5\.0**\.
 
 **Asset Scale**
 Scale the collider shape independent of the entity\.
 
-**Physics Materials from Mesh**
-When the **Physics Asset** shape is selected, and **Physics Materials from Mesh** is enabled, the physics material for this collider is automatically set based on the surface type in the mesh's material\. If the surface type in the mesh's material doesn't exist in the **Physics Material \- Library**, the **Physics Material \- Mesh Surface** is set to default\. The collider **Mesh Surfaces** properties cannot be edited while this option is enabled\.
+**Physics Materials from Asset**
+When the **Physics Asset** shape is selected, and **Physics Materials from Asset** is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/))\. If the physics material doesn't exist in the **Physics Material \- Library** the default physics material from **PhysX Configuration** will be used\. The physics materials cannot be edited while this option is enabled\.
 
-**Draw Collider**
+****Sphere shape****
+
+![\[PhysX Collider component interface, Sphere.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-1.png)
+
+**Radius**
+Radius multiplier of the sphere collider\. The size of the sphere primitive is the **Radius** multiplied by the largest value in the **Scale** property in the **[Transform](/docs/user-guide/components/reference/transform/)** component\.
+
+****Box shape****
+
+![\[PhysX Collider component interface, Box.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-2.png)
+
+**Dimensions**
+Width, depth, and height of the box collider\.
+
+****Capsule shape****
+
+![\[PhysX Collider component interface, Capsule.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-3.png)
+
+**Height**
+Height of the capsule primitive shape\. The height property of the capsule must be at least twice the radius property\. For example, if the radius of the capsule is **5\.0**, the minimum height is **10\.0**\.
+
+**Radius**
+Radius of the capsule primitive shape\. The radius property of the capsule must be no greater than half the height property\. For example, if the height of the capsule is **10\.0**, the maximum radius is **5\.0**\.
+
+****Draw Collider****
 Render the collider in the viewport\. Enabled by default\.
 
-**Edit**
+****Edit****
 Enable collider component mode to edit properties of the collider in the viewport using manipulators\.
 
 ## Static PhysX entities {#static-physx-entities}

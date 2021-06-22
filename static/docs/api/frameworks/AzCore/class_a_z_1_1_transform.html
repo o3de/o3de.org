@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::Transform Class Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::Transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -69,10 +72,10 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a47996b30080aea3ac1d215622d324a42">Transform</a> ()=default</td></tr>
 <tr class="memdesc:a47996b30080aea3ac1d215622d324a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor does not initialize the matrix. <br /></td></tr>
 <tr class="separator:a47996b30080aea3ac1d215622d324a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae81b897f9aed313871e8923142a5090c"><td class="memItemLeft" align="right" valign="top"><a id="ae81b897f9aed313871e8923142a5090c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#ae81b897f9aed313871e8923142a5090c">Transform</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;translation, const <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> &amp;rotation, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
-<tr class="memdesc:ae81b897f9aed313871e8923142a5090c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a transform from components. <br /></td></tr>
-<tr class="separator:ae81b897f9aed313871e8923142a5090c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af890bdb61355797653f7aad7054cd181"><td class="memItemLeft" align="right" valign="top"><a id="af890bdb61355797653f7aad7054cd181"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#af890bdb61355797653f7aad7054cd181">Transform</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;translation, const <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> &amp;rotation, float scale)</td></tr>
+<tr class="memdesc:af890bdb61355797653f7aad7054cd181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a transform from components. <br /></td></tr>
+<tr class="separator:af890bdb61355797653f7aad7054cd181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d2db9e289cadd48adbc7223fd21d112"><td class="memItemLeft" align="right" valign="top"><a id="a3d2db9e289cadd48adbc7223fd21d112"></a>
 <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetBasis</b> (int index) const</td></tr>
 <tr class="separator:a3d2db9e289cadd48adbc7223fd21d112"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,19 +106,19 @@ const <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> &amp;&#1
 <tr class="memitem:aa5de3eb1798912749c28e63afadb0a3a"><td class="memItemLeft" align="right" valign="top"><a id="aa5de3eb1798912749c28e63afadb0a3a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRotation</b> (const <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> &amp;rotation)</td></tr>
 <tr class="separator:aa5de3eb1798912749c28e63afadb0a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26bf0def462f7d8e914a868ec29fd9d5"><td class="memItemLeft" align="right" valign="top"><a id="a26bf0def462f7d8e914a868ec29fd9d5"></a>
-const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetScale</b> () const</td></tr>
-<tr class="separator:a26bf0def462f7d8e914a868ec29fd9d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1899cd674b789f9db65209e360aef9ca"><td class="memItemLeft" align="right" valign="top"><a id="a1899cd674b789f9db65209e360aef9ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScale</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;v)</td></tr>
-<tr class="separator:a1899cd674b789f9db65209e360aef9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15348dc02d777945623db39a293bb9cc"><td class="memItemLeft" align="right" valign="top"><a id="a15348dc02d777945623db39a293bb9cc"></a>
-<a class="el" href="class_a_z_1_1_vector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a15348dc02d777945623db39a293bb9cc">ExtractScale</a> ()</td></tr>
-<tr class="memdesc:a15348dc02d777945623db39a293bb9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transforms scale to a unit value and returns the previous scale value. <br /></td></tr>
-<tr class="separator:a15348dc02d777945623db39a293bb9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8296729ef6ab5fe0e1b5a3eee7bd817"><td class="memItemLeft" align="right" valign="top"><a id="ae8296729ef6ab5fe0e1b5a3eee7bd817"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MultiplyByScale</b> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
-<tr class="separator:ae8296729ef6ab5fe0e1b5a3eee7bd817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058ce34734303d64c788ded5a85a77e2"><td class="memItemLeft" align="right" valign="top"><a id="a058ce34734303d64c788ded5a85a77e2"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>GetUniformScale</b> () const</td></tr>
+<tr class="separator:a058ce34734303d64c788ded5a85a77e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244030ac168e7b87b0b99ab218eb4a82"><td class="memItemLeft" align="right" valign="top"><a id="a244030ac168e7b87b0b99ab218eb4a82"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUniformScale</b> (const float scale)</td></tr>
+<tr class="separator:a244030ac168e7b87b0b99ab218eb4a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5077cf2de88f0177aa752c7eed2f8caa"><td class="memItemLeft" align="right" valign="top"><a id="a5077cf2de88f0177aa752c7eed2f8caa"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a5077cf2de88f0177aa752c7eed2f8caa">ExtractUniformScale</a> ()</td></tr>
+<tr class="memdesc:a5077cf2de88f0177aa752c7eed2f8caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transform's scale to a unit value and returns the previous scale value. <br /></td></tr>
+<tr class="separator:a5077cf2de88f0177aa752c7eed2f8caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16557cdcb4e51c0ebb2d65fa173dc199"><td class="memItemLeft" align="right" valign="top"><a id="a16557cdcb4e51c0ebb2d65fa173dc199"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MultiplyByUniformScale</b> (float scale)</td></tr>
+<tr class="separator:a16557cdcb4e51c0ebb2d65fa173dc199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa62ab9b374217e46e6680ae8b34c77fc"><td class="memItemLeft" align="right" valign="top"><a id="aa62ab9b374217e46e6680ae8b34c77fc"></a>
 <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_a_z_1_1_transform.html">Transform</a> &amp;rhs) const</td></tr>
 <tr class="separator:aa62ab9b374217e46e6680ae8b34c77fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,21 +191,16 @@ static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td
 static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#ac99f6e934a88ae3ce9643e0ae7b3dfc3">CreateFromQuaternionAndTranslation</a> (const class <a class="el" href="class_a_z_1_1_quaternion.html">Quaternion</a> &amp;q, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p)</td></tr>
 <tr class="memdesc:ac99f6e934a88ae3ce9643e0ae7b3dfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the matrix from a quaternion and a translation. <br /></td></tr>
 <tr class="separator:ac99f6e934a88ae3ce9643e0ae7b3dfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a507de2980dae051aa855d25137afe242"><td class="memItemLeft" align="right" valign="top"><a id="a507de2980dae051aa855d25137afe242"></a>
-static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a507de2980dae051aa855d25137afe242">CreateFromMatrix3x3</a> (const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;value)</td></tr>
-<tr class="memdesc:a507de2980dae051aa855d25137afe242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs from a <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a>, translation is set to zero. <br /></td></tr>
+<tr class="memitem:a507de2980dae051aa855d25137afe242"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a507de2980dae051aa855d25137afe242">CreateFromMatrix3x3</a> (const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;value)</td></tr>
 <tr class="separator:a507de2980dae051aa855d25137afe242"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a000c68e47f995c45b889409477f46719"><td class="memItemLeft" align="right" valign="top"><a id="a000c68e47f995c45b889409477f46719"></a>
-static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a000c68e47f995c45b889409477f46719">CreateFromMatrix3x3AndTranslation</a> (const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;value, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p)</td></tr>
-<tr class="memdesc:a000c68e47f995c45b889409477f46719"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs from a <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a>, translation is set to zero. <br /></td></tr>
+<tr class="memitem:a000c68e47f995c45b889409477f46719"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a000c68e47f995c45b889409477f46719">CreateFromMatrix3x3AndTranslation</a> (const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;value, const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;p)</td></tr>
 <tr class="separator:a000c68e47f995c45b889409477f46719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a660e9402094b102927b021771fd60f84"><td class="memItemLeft" align="right" valign="top"><a id="a660e9402094b102927b021771fd60f84"></a>
-static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateFromMatrix3x4</b> (const <a class="el" href="class_a_z_1_1_matrix3x4.html">Matrix3x4</a> &amp;value)</td></tr>
+<tr class="memitem:a660e9402094b102927b021771fd60f84"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#a660e9402094b102927b021771fd60f84">CreateFromMatrix3x4</a> (const <a class="el" href="class_a_z_1_1_matrix3x4.html">Matrix3x4</a> &amp;value)</td></tr>
 <tr class="separator:a660e9402094b102927b021771fd60f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ec585bbf0efaeaa87d1c808c711210"><td class="memItemLeft" align="right" valign="top"><a id="af6ec585bbf0efaeaa87d1c808c711210"></a>
-static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#af6ec585bbf0efaeaa87d1c808c711210">CreateScale</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;scale)</td></tr>
-<tr class="memdesc:af6ec585bbf0efaeaa87d1c808c711210"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the matrix to be a scale matrix, translation is set to zero. <br /></td></tr>
-<tr class="separator:af6ec585bbf0efaeaa87d1c808c711210"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbdf9050b15bd4318df9644e2896b918"><td class="memItemLeft" align="right" valign="top"><a id="acbdf9050b15bd4318df9644e2896b918"></a>
+static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#acbdf9050b15bd4318df9644e2896b918">CreateUniformScale</a> (const float scale)</td></tr>
+<tr class="memdesc:acbdf9050b15bd4318df9644e2896b918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the transform to apply (uniform) scale only, no rotation or translation. <br /></td></tr>
+<tr class="separator:acbdf9050b15bd4318df9644e2896b918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7b4599acb40e691608d9c543d551225"><td class="memItemLeft" align="right" valign="top"><a id="af7b4599acb40e691608d9c543d551225"></a>
 static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_transform.html#af7b4599acb40e691608d9c543d551225">CreateTranslation</a> (const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;translation)</td></tr>
 <tr class="memdesc:af7b4599acb40e691608d9c543d551225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the matrix to be a translation matrix, rotation part is set to identity. <br /></td></tr>
@@ -223,8 +221,99 @@ static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td
 <tr class="separator:a2a3d74c8619bf74dc22914ffd7726dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The basic transformation class, represented using a quaternion rotation, vector scale and vector translation. By design, cannot represent skew transformations. </p>
+<div class="textblock"><p>The basic transformation class, represented using a quaternion rotation, float scale and vector translation. By design, cannot represent skew transformations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a507de2980dae051aa855d25137afe242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a507de2980dae051aa855d25137afe242">&#9670;&nbsp;</a></span>CreateFromMatrix3x3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_a_z_1_1_transform.html">Transform</a> AZ::Transform::CreateFromMatrix3x3 </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs from a <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a>, translation is set to zero. Note that <a class="el" href="class_a_z_1_1_transform.html">Transform</a> only allows uniform scale, so if the matrix has different scale values along its axes, the largest matrix scale value will be used to uniformly scale the <a class="el" href="class_a_z_1_1_transform.html">Transform</a>. </p>
+
+</div>
+</div>
+<a id="a000c68e47f995c45b889409477f46719"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a000c68e47f995c45b889409477f46719">&#9670;&nbsp;</a></span>CreateFromMatrix3x3AndTranslation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_a_z_1_1_transform.html">Transform</a> AZ::Transform::CreateFromMatrix3x3AndTranslation </td>
+          <td>(</td>
+          <td class="paramtype">const class <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_vector3.html">Vector3</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs from a <a class="el" href="class_a_z_1_1_matrix3x3.html">Matrix3x3</a> and translation <a class="el" href="class_a_z_1_1_vector3.html" title="3-dimensional vector class.">Vector3</a>. Note that <a class="el" href="class_a_z_1_1_transform.html">Transform</a> only allows uniform scale, so if the matrix has different scale values along its axes, the largest matrix scale value will be used to uniformly scale the <a class="el" href="class_a_z_1_1_transform.html">Transform</a>. </p>
+
+</div>
+</div>
+<a id="a660e9402094b102927b021771fd60f84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660e9402094b102927b021771fd60f84">&#9670;&nbsp;</a></span>CreateFromMatrix3x4()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="class_a_z_1_1_transform.html">Transform</a> AZ::Transform::CreateFromMatrix3x4 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_matrix3x4.html">Matrix3x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs from a <a class="el" href="class_a_z_1_1_matrix3x4.html">Matrix3x4</a>. Note that <a class="el" href="class_a_z_1_1_transform.html">Transform</a> only allows uniform scale, so if the matrix has different scale values along its axes, the largest matrix scale value will be used to uniformly scale the <a class="el" href="class_a_z_1_1_transform.html">Transform</a>. </p>
+
+</div>
+</div>
 <a id="ad474a41847c95e2a741439aec0fa2d27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad474a41847c95e2a741439aec0fa2d27">&#9670;&nbsp;</a></span>CreateLookAt()</h2>
 
@@ -335,10 +424,14 @@ static <a class="el" href="class_a_z_1_1_transform.html">Transform</a>&#160;</td
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>Code/Framework/AzCore/AzCore/Math/Transform.h</li>
+<li>Code/Framework/AzCore/AzCore/Math/Transform.inl</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:22 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:13:51 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

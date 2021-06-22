@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: AZ::IO::IArchive Struct Reference</title>
+<title>Open 3D Engine AzFramework API Reference: AZ::IO::IArchive Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -99,6 +102,11 @@ Public Types</h2></td></tr>
 <b>eInMemoryPakLocale_PAK</b>
  }</td></tr>
 <tr class="separator:ada6079462fb923591e9a54c0fd820700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacac0651d8b48547edf34f417f31e69c"><td class="memItemLeft" align="right" valign="top"><a id="aacac0651d8b48547edf34f417f31e69c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>EFileSearchType</b> { <b>eFileSearchType_AllowInZipsOnly</b> = 0, 
+<b>eFileSearchType_AllowOnDiskAndInZips</b>, 
+<b>eFileSearchType_AllowOnDiskOnly</b>
+ }</td></tr>
+<tr class="separator:aacac0651d8b48547edf34f417f31e69c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a356625f1bf8f798d81b1f67078aef3"><td class="memItemLeft" align="right" valign="top"><a id="a9a356625f1bf8f798d81b1f67078aef3"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>FileTime</b> = uint64_t</td></tr>
 <tr class="separator:a9a356625f1bf8f798d81b1f67078aef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,9 +261,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a98554b5ab0139e0167c58daf8eea6a55"><td class="memItemLeft" align="right" valign="top"><a id="a98554b5ab0139e0167c58daf8eea6a55"></a>
 virtual AZStd::intrusive_ptr&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_memory_block.html">AZ::IO::MemoryBlock</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PoolAllocMemoryBlock</b> (size_t nSize, const char *sUsage, size_t nAlign=1)=0</td></tr>
 <tr class="separator:a98554b5ab0139e0167c58daf8eea6a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c2cc82ab96298335f657d182dd0d022"><td class="memItemLeft" align="right" valign="top"><a id="a3c2cc82ab96298335f657d182dd0d022"></a>
-virtual <a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindFirst</b> (AZStd::string_view pDir, uint32_t nFlags=0, bool bAllowUseFileSystem=false)=0</td></tr>
-<tr class="separator:a3c2cc82ab96298335f657d182dd0d022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50da4cf7f10b4e8fd6424cd269fad8b6"><td class="memItemLeft" align="right" valign="top"><a id="a50da4cf7f10b4e8fd6424cd269fad8b6"></a>
+virtual <a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindFirst</b> (AZStd::string_view pDir, EFileSearchType searchType=eFileSearchType_AllowInZipsOnly)=0</td></tr>
+<tr class="separator:a50da4cf7f10b4e8fd6424cd269fad8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7539a6dc549c838b25e56a32bc774ca"><td class="memItemLeft" align="right" valign="top"><a id="af7539a6dc549c838b25e56a32bc774ca"></a>
 virtual <a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindNext</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">AZ::IO::ArchiveFileIterator</a> handle)=0</td></tr>
 <tr class="separator:af7539a6dc549c838b25e56a32bc774ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,10 +425,13 @@ static constexpr IArchive::SignedFileSize&#160;</td><td class="memItemRight" val
 
 </div>
 </div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Code/Framework/AzFramework/AzFramework/Archive/IArchive.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:52 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

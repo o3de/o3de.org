@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzNetworking API Reference: AzNetworking::IPacket Class Reference</title>
+<title>Open 3D Engine AzNetworking API Reference: AzNetworking::IPacket Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzNetworking API Reference
+   <div id="projectname">Open 3D Engine AzNetworking API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +72,8 @@ Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for all packets. </p>
+<p><a class="el" href="class_az_networking_1_1_i_packet.html" title="Base class for all packets.">IPacket</a> defines an abstract interface that all packets transmitted using AzNetworking must conform to. While there are a number of core packets used internally by AzNetworking, it is fully possible for end-users to define their own custom packets using this interface. PacketType should be distinct, and should be greater than AzNetworking::CorePackets::MAX. The Serialize method allows the <a class="el" href="class_az_networking_1_1_i_packet.html" title="Base class for all packets.">IPacket</a> to be used by an <a class="el" href="class_az_networking_1_1_i_serializer.html" title="Interface class for all serializers to derive from.">ISerializer</a> to move data between hosts safely and efficiently.</p>
+<p>For more information on the packet format and best practices for extending the packet system, read <a href="http://docs.o3de.org/docs/user-guide/networking/packets">Networking Packets</a> on the O3DE documentation site. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a11c4563c9bf9130e6bbea4d6194a3041"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11c4563c9bf9130e6bbea4d6194a3041">&#9670;&nbsp;</a></span>Clone()</h2>
@@ -155,10 +160,13 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Code/Framework/AzNetworking/AzNetworking/PacketLayer/IPacket.h</li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:58 for AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:29 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

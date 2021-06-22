@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzCore API Reference: AZ::AzTypeInfo&lt; T, false &gt; Struct Template Reference</title>
+<title>Open 3D Engine AzCore API Reference: AZ::AzTypeInfo&lt; T, false &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzCore API Reference
+   <div id="projectname">Open 3D Engine AzCore API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -73,10 +76,13 @@ static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Si
 struct AZ::AzTypeInfo&lt; T, false &gt;</h3>
 
 <p>Since we fully support cross shared libraries (DLL) operation, we can no longer rely on typeid, static templates, etc. to generate the same result in different compilations. We will need to used (codegen too when used) to generate a unique ID for each type. By default we will try to access to static functions inside a class that will provide this identifiers. For classes when intrusive is not an option, you will need to specialize the <a class="el" href="struct_a_z_1_1_az_type_info.html">AzTypeInfo</a>. All of those are automated with code generator. For a reference we used AZ_FUNCTION_SIGNATURE to generate a type ID, but some compilers failed to always expand the template type, thus giving is the same string for many time and we need a robust system. </p>
-</div></div><!-- contents -->
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>Code/Framework/AzCore/AzCore/RTTI/TypeInfo.h</li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:18 for AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:13:47 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

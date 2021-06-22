@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>AzFramework API Reference: Class Members</title>
+<title>Open 3D Engine AzFramework API Reference: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -17,9 +17,12 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">AzFramework API Reference
+   <div id="projectname">Open 3D Engine AzFramework API Reference
+   &#160;<span id="projectnumber">2106</span>
    </div>
+   <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
  </tr>
  </tbody>
@@ -87,9 +90,6 @@ $(function() {
 <li>m_autoManageSimulationUpdate
 : <a class="el" href="struct_az_physics_1_1_system_configuration.html#a65274587f7431573a4f3228305dae2f2">AzPhysics::SystemConfiguration</a>
 </li>
-<li>m_bindTime
-: <a class="el" href="class_az_framework_1_1_net_binding_slice_instantiation_handler.html#a9138c9d4cebd5809fde5bd2548aa0cb7">AzFramework::NetBindingSliceInstantiationHandler</a>
-</li>
 <li>m_bodyHandle
 : <a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a86c740ff4300074b011d7218fac783c1">AzPhysics::SceneQueryHit</a>
 , <a class="el" href="struct_az_physics_1_1_simulated_body.html#a586fc0e16f474be589291241d0303087">AzPhysics::SimulatedBody</a>
@@ -102,9 +102,6 @@ $(function() {
 </li>
 <li>m_bounceThresholdVelocity
 : <a class="el" href="struct_az_physics_1_1_scene_configuration.html#a55ec7db1e8701e2aa758c4393ae31f26">AzPhysics::SceneConfiguration</a>
-</li>
-<li>m_boundEntities
-: <a class="el" href="class_az_framework_1_1_net_binding_slice_instantiation_handler.html#ab88a96d4ad02a73cc740ddea0139ef71">AzFramework::NetBindingSliceInstantiationHandler</a>
 </li>
 <li>m_branchToken
 : <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html#a09890c58f15ddbbb555cdee8f8b13980">AzFramework::AssetSystem::ConnectionSettings</a>
@@ -142,18 +139,12 @@ $(function() {
 <li>m_childLocalRotation
 : <a class="el" href="class_physics_1_1_joint_limit_configuration.html#a924a708761f72e8c3413f9aab4082bfd">Physics::JointLimitConfiguration</a>
 </li>
-<li>m_chunk
-: <a class="el" href="class_az_framework_1_1_net_binding_component.html#a103e38e56fbd1789e7c807c2f180dc7c">AzFramework::NetBindingComponent</a>
-</li>
-<li>m_chunkDesc
-: <a class="el" href="class_az_framework_1_1_network_context_1_1_class_desc.html#a7dc88925b420be02efc420caf03c05c2">AzFramework::NetworkContext::ClassDesc</a>
-</li>
-<li>m_chunkId
-: <a class="el" href="struct_az_framework_1_1_network_context_1_1_chunk_desc.html#ac088c17d69105b00e370556cf94fac14">AzFramework::NetworkContext::ChunkDesc</a>
-</li>
 <li>m_colliderAndShapeData
 : <a class="el" href="struct_az_physics_1_1_rigid_body_configuration.html#a31afece82071d4f52bdd7e2e2e2c5ba4">AzPhysics::RigidBodyConfiguration</a>
 , <a class="el" href="struct_az_physics_1_1_static_rigid_body_configuration.html#addb01e49921fc69eb7b674b9559883ba">AzPhysics::StaticRigidBodyConfiguration</a>
+</li>
+<li>m_colliders
+: <a class="el" href="class_physics_1_1_character_configuration.html#aa187a2de1355f4ed1f206eb8805a1cc8">Physics::CharacterConfiguration</a>
 </li>
 <li>m_colliderTag
 : <a class="el" href="class_physics_1_1_character_configuration.html#a91e64e90c7ceff687a4742e6419522ab">Physics::CharacterConfiguration</a>
@@ -172,11 +163,20 @@ $(function() {
 : <a class="el" href="class_physics_1_1_character_configuration.html#a52f61a874abd310f3f0f38798848d129">Physics::CharacterConfiguration</a>
 , <a class="el" href="class_physics_1_1_collider_configuration.html#a478fa6a8eba499513bbcc4870abf8b0d">Physics::ColliderConfiguration</a>
 </li>
+<li>m_color
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a4d4dce40eac38478dc77a63706acce57">AzFramework::TextDrawParameters</a>
+</li>
 <li>m_commandChannelsById
 : <a class="el" href="class_az_framework_1_1_input_device_virtual_keyboard.html#ad58a7fac1f64923c2f4e690b94a25564">AzFramework::InputDeviceVirtualKeyboard</a>
 </li>
 <li>m_commandlineParameters
 : <a class="el" href="struct_az_framework_1_1_process_launcher_1_1_process_launch_info.html#a5b0501725b30cb5bd3b766e323e9b3d0">AzFramework::ProcessLauncher::ProcessLaunchInfo</a>
+</li>
+<li>m_completionCallback
+: <a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html#ae2c61e001c554f9a83870eabc94ddbb6">AzFramework::DespawnAllEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html#ac8f702e28db2e8aaf254a6170def2092">AzFramework::ReloadSpawnableOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html#a5134e9bed53a43cfbccae85aabf652f7">AzFramework::SpawnAllEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html#a1b015aaff6367d54451822b046a5b0b6">AzFramework::SpawnEntitiesOptionalArgs</a>
 </li>
 <li>m_connectionDirection
 : <a class="el" href="struct_az_framework_1_1_asset_system_1_1_connection_settings.html#afb8cf7348384b3f2f32412f256df53db">AzFramework::AssetSystem::ConnectionSettings</a>
@@ -204,11 +204,8 @@ $(function() {
 : <a class="el" href="class_physics_1_1_convex_hull_shape_configuration.html#a2bc4b6ef919e9fa9f4da9712b48b54ad">Physics::ConvexHullShapeConfiguration</a>
 , <a class="el" href="class_physics_1_1_triangle_mesh_shape_configuration.html#a89ef5d06945804c77464a48469143251">Physics::TriangleMeshShapeConfiguration</a>
 </li>
-<li>m_ctorBuffer
-: <a class="el" href="class_az_framework_1_1_reflected_replica_chunk_base.html#a2ba0cf5ed9fe9cd638b1427ad23c336d">AzFramework::ReflectedReplicaChunkBase</a>
-</li>
-<li>m_ctors
-: <a class="el" href="struct_az_framework_1_1_network_context_1_1_chunk_desc.html#afb89941ca0090d436c0148dba77974ee">AzFramework::NetworkContext::ChunkDesc</a>
+<li>m_currentRequestId
+: <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_ticket.html#acd81d04af91d45a11e002c5994c0e5f6">AzFramework::SpawnableEntitiesManager::Ticket</a>
 </li>
 <li>m_cursorPositionChannel
 : <a class="el" href="class_az_framework_1_1_input_device_mouse.html#a068117c127589ea54a0cd33deeea3c41">AzFramework::InputDeviceMouse</a>
@@ -219,6 +216,12 @@ $(function() {
 <li>m_dampingRatio
 : <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#a6620b86cb40447eb7eb4b69e7df4a78d">Physics::RagdollNodeState</a>
 </li>
+<li>m_defaultMaterialConfiguration
+: <a class="el" href="struct_az_physics_1_1_system_configuration.html#a951523994a0a29547ee005400a0cc8fc">AzPhysics::SystemConfiguration</a>
+</li>
+<li>m_delayed
+: <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_queue.html#aacae6eac726a3211e52a828c584642ac">AzFramework::SpawnableEntitiesManager::Queue</a>
+</li>
 <li>m_delta
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#af7888765c23bccd4c96d3f4e105f5454">AzFramework::InputChannel::Snapshot</a>
 </li>
@@ -227,6 +230,9 @@ $(function() {
 </li>
 <li>m_dependencies
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_dependency_info_response.html#ad46fb8ff22ed64baf1e1a1dcdc72b265">AzFramework::AssetSystem::AssetDependencyInfoResponse</a>
+</li>
+<li>m_depthTest
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a10c3ea65661eb22eda87bb6f3aa078d6">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_deviceId
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#a690b4c695536b11471ecd585522d8b29">AzFramework::InputChannel::Snapshot</a>
@@ -264,6 +270,12 @@ $(function() {
 <li>m_drawTriBatchCB
 : <a class="el" href="struct_physics_1_1_debug_draw_settings.html#ac83ee90c3c1157450829b619d49e9020">Physics::DebugDrawSettings</a>
 </li>
+<li>m_drawViewportId
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a8c4899961d94eb34c191e6236f6d7b32">AzFramework::TextDrawParameters</a>
+</li>
+<li>m_effectIndex
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#ae9b7ce7cb5e1cd39554a215eb78e0902">AzFramework::TextDrawParameters</a>
+</li>
 <li>m_enableActiveActors
 : <a class="el" href="struct_az_physics_1_1_scene_configuration.html#a22dde9a727ce07d2fd68c4f115e29f43">AzPhysics::SceneConfiguration</a>
 </li>
@@ -300,14 +312,8 @@ $(function() {
 <li>m_eventBusPtr
 : <a class="el" href="class_az_framework_1_1_entity_context.html#a80f06ab5d86b361416a1de639066875d">AzFramework::EntityContext</a>
 </li>
-<li>m_external
-: <a class="el" href="struct_az_framework_1_1_network_context_1_1_chunk_desc.html#ac8f3e73e7e3928be96cdc0a24111637c">AzFramework::NetworkContext::ChunkDesc</a>
-</li>
 <li>m_farClip
 : <a class="el" href="struct_az_framework_1_1_camera_state.html#ab8d0e0e0a4750509328077c25b53761a">AzFramework::CameraState</a>
-</li>
-<li>m_fields
-: <a class="el" href="struct_az_framework_1_1_network_context_1_1_chunk_desc.html#a454374d628e34c8009f2825a849a28aa">AzFramework::NetworkContext::ChunkDesc</a>
 </li>
 <li>m_filterCallback
 : <a class="el" href="struct_az_physics_1_1_overlap_request.html#a42ed774864ddc2da68c4db683a63b8c6">AzPhysics::OverlapRequest</a>
@@ -331,6 +337,12 @@ $(function() {
 </li>
 <li>m_gemName
 : <a class="el" href="struct_az_framework_1_1_gem_info.html#a6660f16bba67e2abb666f7bb5cfd41a8">AzFramework::GemInfo</a>
+</li>
+<li>m_hAlign
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#ac4eed2be31c2917353c348d2f0d2b954">AzFramework::TextDrawParameters</a>
+</li>
+<li>m_highPriorityThreshold
+: <a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html#afd51b8c9494c41361d9579ca2e4042ff">AzFramework::SpawnableEntitiesManager</a>
 </li>
 <li>m_hitFlags
 : <a class="el" href="struct_az_physics_1_1_ray_cast_request.html#a1034b3047bf2ad814a71bd0fc4916eec">AzPhysics::RayCastRequest</a>
@@ -366,9 +378,6 @@ $(function() {
 </li>
 <li>m_internalFaceIndex02
 : <a class="el" href="struct_az_physics_1_1_contact.html#ac0f285eaafdf7526fa77558e1358cc1a">AzPhysics::Contact</a>
-</li>
-<li>m_interpolatePosition
-: <a class="el" href="class_az_framework_1_1_transform_component.html#a8256c48e09259c40404fe14222a0bfa7">AzFramework::TransformComponent</a>
 </li>
 <li>m_isExclusive
 : <a class="el" href="class_physics_1_1_collider_configuration.html#aad7364fd2f2dc60072ec20f54b7f50ae">Physics::ColliderConfiguration</a>
@@ -406,6 +415,9 @@ $(function() {
 <li>m_linearVelocity
 : <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#a722d1f69242e3455d1a1137a09cd70b5">Physics::RagdollNodeState</a>
 </li>
+<li>m_lineSpacing
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#aefdeb3eee6f1e0c78c3763e3afb4e1c5">AzFramework::TextDrawParameters</a>
+</li>
 <li>m_localTM
 : <a class="el" href="class_az_framework_1_1_transform_component.html#ad63854209afdeb3955c881d083f0464c">AzFramework::TransformComponent</a>
 </li>
@@ -424,6 +436,9 @@ $(function() {
 </li>
 <li>m_material
 : <a class="el" href="struct_az_physics_1_1_scene_query_hit.html#ad355b5501abe427d8af787f44379dc80">AzPhysics::SceneQueryHit</a>
+</li>
+<li>m_materialLibraryAsset
+: <a class="el" href="struct_az_physics_1_1_system_configuration.html#a9274ca6664ca0b838e656ec8decc5fb6">AzPhysics::SystemConfiguration</a>
 </li>
 <li>m_materialSelection
 : <a class="el" href="class_physics_1_1_character_configuration.html#af0a6483ea3c54fb17d86c348d92ac968">Physics::CharacterConfiguration</a>
@@ -450,13 +465,14 @@ $(function() {
 <li>m_modifierKeyStates
 : <a class="el" href="class_az_framework_1_1_input_device_keyboard.html#ad32e0bc42ddcb80b94cd69e4e07df3ec">AzFramework::InputDeviceKeyboard</a>
 </li>
+<li>m_monospace
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a4f412464817b43e2b0c8b1416a877f37">AzFramework::TextDrawParameters</a>
+</li>
 <li>m_movementChannelsById
 : <a class="el" href="class_az_framework_1_1_input_device_mouse.html#aebf9636b362201276a471f44a5deec92">AzFramework::InputDeviceMouse</a>
 </li>
-<li>m_name
-: <a class="el" href="struct_az_framework_1_1_network_context_1_1_chunk_desc.html#a17cd79e93c333133961c45c9cf6b1d07">AzFramework::NetworkContext::ChunkDesc</a>
-, <a class="el" href="class_az_framework_1_1_network_context_1_1_class_desc.html#a3e551fd0b132459d25edd1e223559441">AzFramework::NetworkContext::ClassDesc</a>
-, <a class="el" href="class_az_framework_1_1_network_context_1_1_desc_base.html#a39853f9e298b903026a74ba60092ba8a">AzFramework::NetworkContext::DescBase</a>
+<li>m_multiline
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#abd5112832b97c76f41ce4c0ad6cc7ed1">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_nativeShapePtr
 : <a class="el" href="class_physics_1_1_native_shape_configuration.html#a6561459351b307d2319aa4ab69dc935d">Physics::NativeShapeConfiguration</a>
@@ -467,8 +483,8 @@ $(function() {
 <li>m_nearClip
 : <a class="el" href="struct_az_framework_1_1_camera_state.html#abf3b8c1bd45dc1c2be02ccaf8cce7d4b">AzFramework::CameraState</a>
 </li>
-<li>m_netBindingTable
-: <a class="el" href="class_az_framework_1_1_script_component.html#ae40c181c91928033a8f2fcae8d7863a4">AzFramework::ScriptComponent</a>
+<li>m_nextRequestId
+: <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_ticket.html#a672bade8fef583d7764ed968a4c2a3e1">AzFramework::SpawnableEntitiesManager::Ticket</a>
 </li>
 <li>m_noloadSet
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_dependency_info_response.html#a9d97d890aa5b6ef72f5cfe175d7a21c6">AzFramework::AssetSystem::AssetDependencyInfoResponse</a>
@@ -499,9 +515,6 @@ $(function() {
 </li>
 <li>m_objectLayers
 : <a class="el" href="struct_physics_1_1_debug_draw_settings.html#abdcc9a6a5e20080ee8cfa464f5ef8647">Physics::DebugDrawSettings</a>
-</li>
-<li>m_offset
-: <a class="el" href="class_az_framework_1_1_network_context_1_1_desc_base.html#a64c17543846c6299262484871b5a5239">AzFramework::NetworkContext::DescBase</a>
 </li>
 <li>m_onlyVisible
 : <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_ray_request.html#aa39cd9a854f7d44de94e45b1ca816609">AzFramework::RenderGeometry::RayRequest</a>
@@ -548,6 +561,9 @@ $(function() {
 <li>m_parentTM
 : <a class="el" href="class_az_framework_1_1_transform_component.html#a9b55fd4c2c5853bd67dae6457b3bd7d7">AzFramework::TransformComponent</a>
 </li>
+<li>m_pendingRequest
+: <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_queue.html#a192e9f9c4d333418c13004c9d2c70023">AzFramework::SpawnableEntitiesManager::Queue</a>
+</li>
 <li>m_pimpl
 : <a class="el" href="class_az_framework_1_1_application.html#a7124043455bce8e8f4764be07eb222ff">AzFramework::Application</a>
 </li>
@@ -565,15 +581,27 @@ $(function() {
 </li>
 <li>m_position
 : <a class="el" href="struct_az_framework_1_1_camera_state.html#aafa7018179d3240899235b6f4ff4ee7a">AzFramework::CameraState</a>
+, <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#afd6dacf14d13dfb6693deaa6b6a8dd9e">AzFramework::TextDrawParameters</a>
 , <a class="el" href="struct_az_physics_1_1_contact.html#af083c78556f02b00fa0cb2e3245c89e0">AzPhysics::Contact</a>
 , <a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a7542de875819dc09d0f07d87e28c98a9">AzPhysics::SceneQueryHit</a>
 , <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#ae8735410f07d7ac66e2946741adbd72e">Physics::RagdollNodeState</a>
+</li>
+<li>m_preInsertionCallback
+: <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html#aa6904470326c266feb378d9787fcaaba">AzFramework::SpawnAllEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html#a19b856f6073fed43d0955865c75380a7">AzFramework::SpawnEntitiesOptionalArgs</a>
 </li>
 <li>m_preloadAssetList
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_dependency_info_response.html#a01261dd930a8d390dd8dea37cc9697d1">AzFramework::AssetSystem::AssetDependencyInfoResponse</a>
 </li>
 <li>m_priority
-: <a class="el" href="struct_az_framework_1_1_viewport_controller_input_event.html#acb8a07a191b5fd9c4a07a6ba873d729e">AzFramework::ViewportControllerInputEvent</a>
+: <a class="el" href="struct_az_framework_1_1_barrier_optional_args.html#ae9e204f43b1342de2b334f7c035be8a6">AzFramework::BarrierOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_claim_entities_optional_args.html#ab8a3b8c358b71d8afbc7e2998f6b1f36">AzFramework::ClaimEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html#ac57ab6a1f464bff966e6eb4d1f182741">AzFramework::DespawnAllEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_list_entities_optional_args.html#a62a062a5bae86b92b59cddab3789eefd">AzFramework::ListEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html#a6a0a1a74a4a3107a2017677f36230f26">AzFramework::ReloadSpawnableOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html#a297a4746d8d37ac40140fffceabd8c77">AzFramework::SpawnAllEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html#abbd2969983f3aec866dcc9b59f82d7c0">AzFramework::SpawnEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_viewport_controller_input_event.html#acb8a07a191b5fd9c4a07a6ba873d729e">AzFramework::ViewportControllerInputEvent</a>
 , <a class="el" href="struct_az_framework_1_1_viewport_controller_update_event.html#abab363d78cae53fcfc39664c8796160c">AzFramework::ViewportControllerUpdateEvent</a>
 </li>
 <li>m_processExecutableString
@@ -600,6 +628,9 @@ $(function() {
 <li>m_raycastBufferSize
 : <a class="el" href="struct_az_physics_1_1_system_configuration.html#ad0819f76e86d8d6aab4fa37d1f803ba1">AzPhysics::SystemConfiguration</a>
 </li>
+<li>m_referencePreviouslySpawnedEntities
+: <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html#a309c3ebe5d21acdf5c59d0464c5b9131">AzFramework::SpawnEntitiesOptionalArgs</a>
+</li>
 <li>m_reportMultipleHits
 : <a class="el" href="struct_az_physics_1_1_ray_cast_request.html#ac6bb00781a313e4a84207e94a8ece0cb">AzPhysics::RayCastRequest</a>
 , <a class="el" href="struct_az_physics_1_1_shape_cast_request.html#ae70835324f5761d5939495d93480df76">AzPhysics::ShapeCastRequest</a>
@@ -612,6 +643,7 @@ $(function() {
 </li>
 <li>m_rootFolder
 : <a class="el" href="class_az_framework_1_1_asset_system_1_1_asset_info_response.html#a80ee2a1764ac63e17fd9a62cadfbd6c3">AzFramework::AssetSystem::AssetInfoResponse</a>
+, <a class="el" href="class_az_framework_1_1_asset_system_1_1_generate_relative_source_path_response.html#a6052fb22cace8c851683b1ca0f5ef44c">AzFramework::AssetSystem::GenerateRelativeSourcePathResponse</a>
 , <a class="el" href="class_az_framework_1_1_asset_system_1_1_source_asset_info_response.html#a42e8dfd719be6d057669c99c85151b80">AzFramework::AssetSystem::SourceAssetInfoResponse</a>
 </li>
 <li>m_rotation
@@ -620,11 +652,11 @@ $(function() {
 <li>m_rotationRateChannelsById
 : <a class="el" href="class_az_framework_1_1_input_device_motion.html#ad44476701de3adf3ed52a677b1716b2a">AzFramework::InputDeviceMotion</a>
 </li>
-<li>m_rpcs
-: <a class="el" href="struct_az_framework_1_1_network_context_1_1_chunk_desc.html#a9008ac3221a5dcdb1e1202806877fae2">AzFramework::NetworkContext::ChunkDesc</a>
+<li>m_scale
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#afe02a01ef2aaf2113647447037db4730">AzFramework::TextDrawParameters</a>
 </li>
-<li>m_runtimeEntityId
-: <a class="el" href="class_az_framework_1_1_net_binding_component_chunk_1_1_spawn_info.html#a32da7edf3119442972f120d2ff9cc460">AzFramework::NetBindingComponentChunk::SpawnInfo</a>
+<li>m_scaleWithWindow
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#ad3cf7aada9f8c1f7db2c18b59a31f36e">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_sceneName
 : <a class="el" href="struct_az_physics_1_1_scene_configuration.html#acb104d20679c0143690a24555b352ed2">AzPhysics::SceneConfiguration</a>
@@ -638,8 +670,10 @@ $(function() {
 <li>m_separation
 : <a class="el" href="struct_az_physics_1_1_contact.html#a92474cf4f8291a0ac01a9b847abb92c1">AzPhysics::Contact</a>
 </li>
-<li>m_session
-: <a class="el" href="class_az_framework_1_1_interest_manager_component.html#a4d511b4305fc084b9aed1b4f291ed278">AzFramework::InterestManagerComponent</a>
+<li>m_serializeContext
+: <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html#af5f98cf933a44925adede1766dec657a">AzFramework::ReloadSpawnableOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_all_entities_optional_args.html#a4e461f866c2a8ef45b2fedea68ddbf42">AzFramework::SpawnAllEntitiesOptionalArgs</a>
+, <a class="el" href="struct_az_framework_1_1_spawn_entities_optional_args.html#ab009b9ae0bd5868a5f3530c291e7681d">AzFramework::SpawnEntitiesOptionalArgs</a>
 </li>
 <li>m_shape
 : <a class="el" href="struct_az_physics_1_1_scene_query_hit.html#a08b523503b6893d20a34db766a58002a">AzPhysics::SceneQueryHit</a>
@@ -652,6 +686,9 @@ $(function() {
 </li>
 <li>m_shapecastBufferSize
 : <a class="el" href="struct_az_physics_1_1_system_configuration.html#a33ebd897afd3a971b4554cdd75654370">AzPhysics::SystemConfiguration</a>
+</li>
+<li>m_shapeConfig
+: <a class="el" href="class_physics_1_1_character_configuration.html#a60fe4eaeb1303ee01c86c28e814c670d">Physics::CharacterConfiguration</a>
 </li>
 <li>m_shapeConfiguration
 : <a class="el" href="struct_az_physics_1_1_overlap_request.html#a47521fffa5bd787e5898d07cc8a79a2e">AzPhysics::OverlapRequest</a>
@@ -666,11 +703,6 @@ $(function() {
 <li>m_simulationType
 : <a class="el" href="struct_physics_1_1_ragdoll_node_state.html#aef24eaad3506150df60836d0ba0d12e9">Physics::RagdollNodeState</a>
 </li>
-<li>m_sliceInstanceId
-: <a class="el" href="class_az_framework_1_1_net_binding_component_chunk_1_1_spawn_info.html#a5943918fc73fcecd8b63a5b307c5448b">AzFramework::NetBindingComponentChunk::SpawnInfo</a>
-, <a class="el" href="struct_az_framework_1_1_net_binding_slice_context.html#adcd1c9e56d6c57fb7841670e7c26ec6f">AzFramework::NetBindingSliceContext</a>
-, <a class="el" href="class_az_framework_1_1_net_binding_slice_instantiation_handler.html#a9136df8be2b96580b2daa1b2b935e605">AzFramework::NetBindingSliceInstantiationHandler</a>
-</li>
 <li>m_start
 : <a class="el" href="struct_az_physics_1_1_ray_cast_request.html#a008a8cf9f0052601fba8a83a2b3e2671">AzPhysics::RayCastRequest</a>
 , <a class="el" href="struct_az_physics_1_1_shape_cast_request.html#a71c49e0bdc30bc87d7bd384034a22381">AzPhysics::ShapeCastRequest</a>
@@ -682,9 +714,6 @@ $(function() {
 : <a class="el" href="struct_az_framework_1_1_discrete_input_event.html#ab132f8d95b9a26472dc0ac8f83f1138a">AzFramework::DiscreteInputEvent</a>
 , <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#a2c40b880ad78ae4d9c7579202037deac">AzFramework::InputChannel::Snapshot</a>
 , <a class="el" href="struct_az_framework_1_1_input_device_touch_1_1_implementation_1_1_raw_touch_event.html#a7bb932109f79b6ccfb2423b2f11a45f9">AzFramework::InputDeviceTouch::Implementation::RawTouchEvent</a>
-</li>
-<li>m_staticEntityId
-: <a class="el" href="class_az_framework_1_1_net_binding_component_chunk_1_1_spawn_info.html#a649a01b9466a2d6e1fa189a88e1a179a">AzFramework::NetBindingComponentChunk::SpawnInfo</a>
 </li>
 <li>m_stepHeight
 : <a class="el" href="class_physics_1_1_character_configuration.html#ab3325803007f1f399ef2c1905e46dd89">Physics::CharacterConfiguration</a>
@@ -700,6 +729,9 @@ $(function() {
 </li>
 <li>m_tag
 : <a class="el" href="class_physics_1_1_collider_configuration.html#aafbdb07bcaa3a0de60b5ba9713fbea08">Physics::ColliderConfiguration</a>
+</li>
+<li>m_textSizeFactor
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a9cb3192577c154a1cb6e06cef8da79a2">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_thumbStickAxis1DChannelsById
 : <a class="el" href="class_az_framework_1_1_input_device_gamepad.html#a651972058c82ddaac0b8d3b09aff1999">AzFramework::InputDeviceGamepad</a>
@@ -740,6 +772,9 @@ $(function() {
 <li>m_touchChannelsById
 : <a class="el" href="class_az_framework_1_1_input_device_touch.html#a91e7057c436d8d4975279d0712c08862">AzFramework::InputDeviceTouch</a>
 </li>
+<li>m_transform
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#ae14f9ac94b29239248cfc3d09e15a5b4">AzFramework::TextDrawParameters</a>
+</li>
 <li>m_transformChangedEvent
 : <a class="el" href="class_az_framework_1_1_transform_component.html#a039e8da034191f3e5f7d5f2cb63ed9ae">AzFramework::TransformComponent</a>
 </li>
@@ -767,9 +802,6 @@ $(function() {
 <li>m_triggerShape
 : <a class="el" href="struct_az_physics_1_1_trigger_event.html#a8731b2ce8d6dd21c892c02fff50d1272">AzPhysics::TriggerEvent</a>
 </li>
-<li>m_typeId
-: <a class="el" href="class_az_framework_1_1_network_context_1_1_class_desc.html#afe3b3dc33e48de44fb275f673ac7be3d">AzFramework::NetworkContext::ClassDesc</a>
-</li>
 <li>m_udata
 : <a class="el" href="struct_physics_1_1_debug_draw_settings.html#a7b456bbf9b883be3c51a9ca205a25671">Physics::DebugDrawSettings</a>
 </li>
@@ -782,8 +814,14 @@ $(function() {
 <li>m_upDirection
 : <a class="el" href="class_physics_1_1_character_configuration.html#a1d25fce1db237b74d645443a79d2c173">Physics::CharacterConfiguration</a>
 </li>
+<li>m_useTransform
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a3dd26a82066b00b4d22231897bc09973">AzFramework::TextDrawParameters</a>
+</li>
 <li>m_uv
 : <a class="el" href="struct_az_framework_1_1_render_geometry_1_1_ray_result.html#a3b2e34269f1fc1410162c0bbad219775">AzFramework::RenderGeometry::RayResult</a>
+</li>
+<li>m_vAlign
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#a2907236e11770f7cdc2462015a151d69">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_value
 : <a class="el" href="struct_az_framework_1_1_input_channel_1_1_snapshot.html#af5164f9b277af70fa30fdd6a09c91bb7">AzFramework::InputChannel::Snapshot</a>
@@ -798,6 +836,9 @@ $(function() {
 </li>
 <li>m_viewportSize
 : <a class="el" href="struct_az_framework_1_1_camera_state.html#a40569037eb8068e5ea1ae3a1869fed0c">AzFramework::CameraState</a>
+</li>
+<li>m_virtual800x600ScreenSize
+: <a class="el" href="struct_az_framework_1_1_text_draw_parameters.html#ab3e8c7498c796fc297b951f6cb5237fc">AzFramework::TextDrawParameters</a>
 </li>
 <li>m_visible
 : <a class="el" href="class_physics_1_1_collider_configuration.html#a21f28821eba460e90f2c3a2308ea2112">Physics::ColliderConfiguration</a>
@@ -845,9 +886,6 @@ $(function() {
 </li>
 <li>MakePathRootRelative()
 : <a class="el" href="class_az_framework_1_1_application_requests.html#af9e9fd3d22c9e070ecacf6ecd1e151ab">AzFramework::ApplicationRequests</a>
-</li>
-<li>MarkAsLevelSliceEntity()
-: <a class="el" href="class_az_framework_1_1_net_binding_handler_interface.html#a531379a72dd014b7c30b7b61074a808c">AzFramework::NetBindingHandlerInterface</a>
 </li>
 <li>Match()
 : <a class="el" href="class_az_framework_1_1_file_tag_1_1_query_file_tags_event.html#aa3eca7172ea8c660b6c11d44affe11f8">AzFramework::FileTag::QueryFileTagsEvent</a>
@@ -911,7 +949,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 25 2021 15:01:56 for AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 21 2021 09:14:27 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

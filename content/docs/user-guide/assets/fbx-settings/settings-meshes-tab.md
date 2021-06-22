@@ -53,7 +53,7 @@ Add NVIDIA Cloth data to a selected mesh to simulate cloth physics\.
 Each mesh in the **Mesh group** to simulate as cloth requires its own **Cloth** modifier\.
 When a **Cloth** modifier is added to a mesh group, the **Merge Meshes** property in the **Mesh \(Advanced\)** modifier will be ignored and treated as disabled\. A cloth mesh needs to be processed independently and cannot be merged with other meshes\.
 
-For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/intro.md)\.
+For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/)\.
 
 ****Select Cloth Mesh****
 Select the mesh to have cloth data applied and simulate as a cloth object\.
