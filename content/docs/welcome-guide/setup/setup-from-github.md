@@ -165,7 +165,7 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
     In the following example, including the `AutomatedTesting` project is optional, but recommended if you plan on contributing changes to the engine source. You should use this project to run automated testing locally before submitting a pull request (PR) in GitHub.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_PROJECTS=AutomatedTesting
+    cmake -B build -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_PROJECTS=AutomatedTesting
     ```
 
     {{< caution >}}
@@ -173,20 +173,20 @@ Do not use trailing slashes when specifying the path to the packages directory.
     {{< /caution >}}
 
     {{< note >}}
-Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help with debugging the problem.
+Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
     {{< /note >}}
 
 1. Use CMake to build the test project, engine, and tools. When specifying the Editor as a build target, the AssetProcessor and Project Manager will be built too, since they are dependencies of the Editor. The `profile` build configuration is shown in this example.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target AutomatedTesting.GameLauncher Editor --config profile -- /m
+    cmake --build build --target AutomatedTesting.GameLauncher Editor --config profile -- /m
     ```
 
     {{< note >}}
 The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
-The engine will take a while to build. Once the build is complete, the tools can be found in `bin/<BUILD_CONFIG>` under the build directory.
+The engine will take a while to build. In this example, when the build is complete, the tools can be found in `/build/bin/profile`.
 
 ## Register the engine
 
