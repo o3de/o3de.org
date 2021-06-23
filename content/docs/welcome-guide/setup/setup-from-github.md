@@ -138,7 +138,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     git switch -c <NEW_WORKING_BRANCH> upstream/development
     ```
 
-    Use the git `pull` command whenever you want to sync the latest changes from upstream.
+    When set up to track an upstream branch, you can use the git `pull` command whenever you want to sync the latest changes from upstream.
 
     ```cmd
     git pull

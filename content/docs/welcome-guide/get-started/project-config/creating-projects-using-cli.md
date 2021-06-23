@@ -19,7 +19,7 @@ At the end of the tutorial you'll have a new O3DE project based on the default p
 The instructions that follow assume you have the following:
 
 * O3DE installed on your computer. For help, see [Setup](/docs/welcome-guide/setup).
-* An O3DE engine registered in the O3DE manifest. When setting up O3DE from GitHub, you must manually register the engine. For help, see [Register O3DE engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
+* An O3DE engine registered in the O3DE manifest. When setting up O3DE from GitHub, you must manually register the engine. For help, see [Register the Engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
 * Met all hardware and software requirements listed in [System Requirements](/docs/welcome-guide/setup/requirements.md).
 
 ## Create a new O3DE project
