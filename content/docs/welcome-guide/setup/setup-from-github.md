@@ -5,15 +5,14 @@ weight: 300
 toc: true
 ---
 
-{{< preview-new >}}
-
 Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base.
 
 The instructions here will guide you through the following steps:
 
 * Configure credentials for Git LFS.
 * Fork and clone the O3DE GitHub repo.
-* Additional setup steps during O3DE preview.
+* Build the O3DE engine.
+* Register the engine.
 
 ## Prerequisites
 
@@ -50,7 +49,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
 
         (GitHub menu equivalent: Settings > Developer Settings > Personal Access Tokens)
     1. Choose **Generate new token**.
-    1. (Optional) Add an entry under **Note**. This is only for your reference.
+    1. (Optional) Add an entry under **Note**. This is only for your reference. You can use it as a personal reminder of what the token is for.
     1. Under **Select scopes**, select the following:
         * `repo` (all)
         * `read:org` (under admin:org)
@@ -62,7 +61,7 @@ This token can be used in place of your GitHub password, so protect it just as y
 
 ## Fork and clone
 
-All contributions to the O3DE repo are expected to be staged in a fork before submitting a pull request.
+All contributions to the O3DE repo are expected to be staged in a fork before submitting a pull request. Refer to the documentation on [Contributing to O3DE Code Sources](/docs/contributing/to-code) in the O3DE Contributor Guide for details about the contribution workflow.
 
 **To fork and clone O3DE on your PC from GitHub**
 
@@ -72,23 +71,23 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
     For general instructions and help with creating and using forks in GitHub, see the GitHub Guide on [Forking Projects](https://guides.github.com/activities/forking/).
 
-1. Clone your forked repo. Use your preferred Git UI or a command line to clone the repo in a directory of your choice. You will need your GitHub user name and the personal access token that you created earlier.
+1. Clone your forked repo. Use your preferred Git UI or a command line to clone the repo in a directory of your choice. You will need your GitHub sign in account and the personal access token that you created earlier.
 
-    1. Clone the repo from your fork.
+    1. Clone the repo from a fork.
 
         ```cmd
+        # Cloning from your personal fork.
         git clone https://github.com/YOUR-USERNAME/o3de.git
-        ```
 
-        {{< note >}}
-To save space and improve cloning performance, use the `--depth 1` argument in the git clone command. This creates a shallow clone, which only pulls down the latest commits, and not the entire repo history.
-        {{< /note >}}
+        # Cloning from your team's fork.
+        git clone https://github.com/TEAM-FORK/o3de.git
+        ```
 
     1. If you are shown a **Connect to GitHub** dialog box, sign in to GitHub as instructed, using either your browser or your personal access token.
 
         ![GitHub sign in dialog box](/images/welcome-guide/setup-github-signin.png)
 
-    1. Enter your credentials for the LFS endpoint in the next _sign in_ dialog box. Use your **GitHub user name** and your **personal access token** for the password.
+    1. Enter your credentials for the LFS endpoint in the next _sign in_ dialog box. Use your **GitHub account** (full email address) and your **personal access token** for the password.
 
         ![Credential manager asking for LFS credentials](/images/welcome-guide/setup-credential-manager-lfs.png)
 
@@ -97,8 +96,10 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
         When the clone operation completes, verify that you have all of the files from the LFS endpoint. You should no longer receive credential prompts.
 
         ```cmd
-        // Change to the directory name that was created when you cloned the engine repo. Default is o3de.
-        cd o3de 
+        # Change to the directory name that was created when you cloned the engine repo.
+        # The default is o3de.
+        cd o3de
+        
         git lfs pull
         ```
 
@@ -117,76 +118,86 @@ To save space and improve cloning performance, use the `--depth 1` argument in t
     Output:
 
     ```cmd
-    origin  https://github.com/<USERNAME>/o3de.git (fetch)
-    origin  https://github.com/<USERNAME>/o3de.git (push)
+    origin  https://github.com/<FORK>/o3de.git (fetch)
+    origin  https://github.com/<FORK>/o3de.git (push)
     upstream        {{< links/o3de-source >}}.git (fetch)
     upstream        {{< links/o3de-source >}}.git (push)
     ```
 
-1. Any time that you want to sync the latest files from the repo and LFS, you can pull from the branch you are woking with, such as `upstream main`.
+1. Any time that you want to sync the latest files from the repo and LFS, you can merge changes from the upstream branch you are working with. The default branch is **development**.
 
     ```cmd
     git fetch upstream
-    git merge upstream/main
+    git merge upstream/development
     ```
 
-    If new commits were merged from the upstream repo, you can push them to your fork.
-
-    ```cmd
-    git push origin
-    ```
-
-1. To switch to a release branch, use the `git checkout` or `git switch` command. For example, to switch to branch **0.5**:
+1. In a typical contributor workflow, you will primarily work from a branch off of your fork's development branch. You can use the git `switch` command to create your local working branch and set it to track the upstream development branch.
 
     ```cmd
     git fetch upstream
-    git checkout --track upstream/0.5
+    git switch -c <NEW_WORKING_BRANCH> upstream/development
     ```
 
-    To get updates for a release branch, make sure to fetch and merge from the correct upstream branch.
+    Use the git `pull` command whenever you want to sync the latest changes from upstream.
 
     ```cmd
-    git fetch upstream
-    git merge upstream/0.5
+    git pull
     ```
 
-## Additional setup for O3DE preview
+For more information and examples of common contributor workflows, refer to [O3DE Code Contribution GitHub Workflow](/docs/contributing/to-code/git-workflow.md) in the Contributor Guide.
 
-At this time, O3DE is available for preview. During O3DE preview, there are a few additional steps you must complete before getting started:
+## Build the engine
 
-* Create a directory for downloaded packages.
-* Get the Python runtime.
-* Register the engine.
+Now that you have a local copy of the O3DE source, you can build the engine, including key tools such as the O3DE **Asset Processor**, **Editor**, and **Project Manager**.
 
-### Create a packages directory
+1. Create a package directory in a writeable location. This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
 
-1. Create a new directory in a writeable location. This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
+1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements.md) page for installation instructions.
 
-1. Create an empty text file named `3rdParty.txt` in this folder. (Later versions of the engine will not require this file.)
-
-### Get the Python runtime
-
-The Python runtime is not included in the GitHub repo. Since it is required by the `o3de` script in the next step, download it now using the script provided in the `python` directory. This script requires CMake to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements.md) page for installation instructions.
-
-1. Open a command prompt to the directory where you set up O3DE and run the `get_python` script as shown. Note that in the 0.5 release branch, you need to temporarily set the LY_PACKAGE_SERVER_URLS environment variable, as shown in the following example.
+    Open a command prompt to the directory where you set up O3DE and run the `get_python` script.
 
     ```cmd
-    set LY_PACKAGE_SERVER_URLS=https://d2c171ws20a1rv.cloudfront.net
     python\get_python.bat
     ```
 
-### Register O3DE engine
+1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
-Each time you set up a new O3DE engine directory, you must register it. This creates (or updates) the **O3DE manifest** in your user directory on your computer.
+    In the following example, including the `AutomatedTesting` project is optional, but recommended if you plan on contributing changes to the engine source. You should use this project to run automated testing locally before submitting a pull request (PR) in GitHub.
 
-1. Open a command prompt to the directory where you set up O3DE and use the `o3de register` command as shown.
+    ```cmd
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_PROJECTS=AutomatedTesting
+    ```
+
+    {{< caution >}}
+Do not use trailing slashes when specifying the path to the packages directory.
+    {{< /caution >}}
+
+    {{< note >}}
+Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help with debugging the problem.
+    {{< /note >}}
+
+1. Use CMake to build the test project, engine, and tools. When specifying the Editor as a build target, the AssetProcessor and Project Manager will be built too, since they are dependencies of the Editor. The `profile` build configuration is shown in this example.
+
+    ```cmd
+    cmake --build build/windows_vs2019 --target AutomatedTesting.GameLauncher Editor --config profile -- /m
+    ```
+
+    {{< note >}}
+The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    {{< /note >}}
+
+The engine will take a while to build. Once the build is complete, the tools can be found in `bin/<BUILD_CONFIG>` under the build directory.
+
+## Register the engine
+
+Registering the O3DE engine enables O3DE projects to find the engine, even when they exist in different locations on your computer. The registration process creates (or updates) the **O3DE manifest** in your user directory.
+
+1. Use the `o3de register` command from the O3DE repo to register the engine.
 
     ```cmd
     scripts\o3de.bat register --this-engine
     ```
 
-    The O3DE manifest file is `<user directory>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, Gems, and templates are recorded in this file.
+    The O3DE manifest file is `<USER_DIRECTORY>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
 
-You are now ready to create a project! For an introduction to project configuration, see [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
-
-For more information about contributing to O3DE and the O3DE code contribution workflow, refer to [Git Workflow](/docs/contributing/to-code/git-workflow.md) in the Contributor's Guide.
+You are now ready to create a project! For an introduction to project configuration, refer to [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).

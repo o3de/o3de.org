@@ -6,15 +6,13 @@ weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
+This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here will guide you through the following steps:
 
-This tutorial provides an introduction to project configuration in Open 3D Engine (O3DE). The instructions here will guide you through the following steps:
+* Create a new O3DE project.
+* Create a Visual Studio project in your project directory.
+* Build the project.
 
-* Creating a new O3DE project.
-* Creating a Visual Studio project in the O3DE project directory.
-* Building the O3DE **Editor** and **AssetProcessor** in the O3DE project directory.
-
-At the end of the tutorial you'll have a new O3DE project based on the default project template.
+At the end of the tutorial you'll have a new O3DE project based on the default project template, ready to open in the **O3DE Editor**.
 
 ## Prerequisites
 
@@ -26,18 +24,13 @@ The instructions that follow assume you have the following:
 
 ## Create a new O3DE project
 
-<!---
 Project directories can be located either in the same directory as the O3DE root directory or outside of this directory. The latter are referred to as "external projects" in this documentation.
--->
+
 This tutorial uses the following project name and directories in the examples:
 
 * O3DE engine directory: `C:\o3de`
 * New project name and location: `C:\o3de\MyProject`
 * Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#create-a-packages-directory)): `C:\o3de-packages`
-
-{{< caution >}}
-External projects - projects created outside the engine directory - are considered experimental. They might be unstable, and will need updates to their project configuration in later versions of O3DE.
-{{< /caution >}}
 
 **To create a new O3DE project from command line**
 
@@ -73,7 +66,7 @@ Do not use trailing slashes when specifying the path to the packages directory.
 Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help with debugging the problem.
     {{< /note >}}
 
-1. Use CMake to build the project launcher, O3DE **Editor**, and **AssetProcessor**. Building the `profile` configuration is shown here. When specifying the Editor as a build target, the AssetProcessor will be built too, since it is a dependency of the Editor.
+1. Use CMake to build the project launcher, **O3DE Editor**, and **AssetProcessor**. Building the `profile` configuration is shown here. When specifying the Editor as a build target, the AssetProcessor will be built too, since it is a dependency of the Editor.
 
     ```cmd
     cmake --build MyProject/build --target MyProject.GameLauncher Editor --config profile -- /m
