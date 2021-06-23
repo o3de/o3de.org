@@ -7,7 +7,7 @@ toc: true
 ---
 
 {{< preview-new >}}
-The **Light** component simulates soft studio light by allowing the creation of various types of punctual and area lights. The Light component supports the punctual lights Point (simple punctual) and Spot (simple punctual), which are infinitesimally small. These are slightly more performant than their area light counterparts, but they produce simpler light effects. The Light component also supports the area lights Point (sphere), Spot (disk), Capsule, Quad, and Polygon. These most accurately simulate real-world light sources.
+The **Light** component simulates soft studio light with various types of punctual and area lights. The Light component supports the punctual lights Point (simple punctual) and Spot (simple punctual), which are infinitesimally small. These are slightly more performant than their area light counterparts, but they produce simpler light effects. The Light component also supports the area lights Point (sphere), Spot (disk), Capsule, Quad, and Polygon. These most accurately simulate real-world light sources.
 
 ## Light types
 Point (sphere)
@@ -96,8 +96,8 @@ Polygon
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Light type** | Specify the type of light. The properties vary for each light type. | `Point (sphere)`, `Point (simple punctual)`, `Spot (disk)`, `Spot (simple punctual)`, `Capsule`, `Quad`, `Polygon` | - |
-| **Color** | The color of the light. Color acts as a gel on a pure white light and reduces the total energy output for light of any other color. For example, a 100 `Lumen` area light with a color setting of medium gray (18%) outputs only 18 lumens of light. | Eight bits per channel color: `0` to `255` | `255,255,255` |
+| **Light type** | The type of light. The properties vary for each light type. | `Point (sphere)`, `Point (simple punctual)`, `Spot (disk)`, `Spot (simple punctual)`, `Capsule`, `Quad`, `Polygon` | - |
+| **Color** | The color of the light. **Color** acts as a gel on a pure white light and reduces the total energy output for light of any other color. For example, a 100 `Lumen` area light with a color setting of medium gray (18%) outputs only 18 lumens of light. | Eight bits per channel color: `0` to `255` | `255,255,255` |
 | **Intensity mode** | The photometric unit of the light. `Candela` and `Lumen` specify the total amount of light energy that's emitted from the entire surface area of the shape. If this mode is set as either `Candela` or `Lumen`, and **Intensity** is specified as `100.0`, then the larger the provided shape component, the dimmer the light. This is because the total light energy is spread over a larger surface area. `Nit` represents light energy as candelas per square meter. `Ev100` represents light energy as an exposure value over an area. `Ev100` values are exponential, so a value of 5.0 `Ev100` is twice as bright as a value of 4.0 `Ev100`. With `Nit` and `Ev100`, the larger the shape, the brighter the light. This is because the total light energy increases with the shape's surface area. | `Candela`, `Lumen`, `Nit`, `Ev100` | `Lumen` |
 | **Intensity** | The light energy output or brightness in the photometric unit selected for **Intensity mode**. | Candela, Lumen, Nit: `0` to infinity<br><br>Ev100: -infinity to +infinity | `100` |
 | **Attenuation radius** | Refer to [Attenuation radius properties](#attenuation-radius-properties) below. | Boolean | `Disabled` |
@@ -121,12 +121,12 @@ Polygon
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Enable shadow** | Enable shadow effects. | Boolean | `Disabled` |
-| **Shadowmap size** | Set the width and height of the shadowmap. The shadowmap texture contains information about the light and objects in an area of the scene. It is used for *Shadow Mapping*, a technique that renders shadows in the scene. A greater size results in a more detailed shadow effect.| `256`, `512`, `1024`, `2048` | `256` |
-| **Shadow filter method** | Set the shadow filtering method to reduce aliasing in the shadow map. The supported methods are *percentage-closer filtering (PCF)* or *exponential shadow maps (ESM)*. `ESM+PCF` uses ESM, but falls back to PCF in areas where ESM might fail. | `None`, `PCF`, `ESM`, `ESM+PCF` | `None` |
+| **Shadowmap size** | Set the width and height of the shadowmap. The shadowmap texture contains information about the light and objects in an area of the scene. It's used for *Shadow Mapping*, a technique that renders shadows in the scene. A greater size results in a more detailed shadow effect.| `256`, `512`, `1024`, `2048` | `256` |
+| **Shadow filter method** | Set the shadow filtering method to reduce aliasing in the shadowmap. The supported methods are *percentage-closer filtering (PCF)* or *exponential shadow maps (ESM)*. `ESM+PCF` uses ESM, but falls back to PCF in areas where ESM might fail. | `None`, `PCF`, `ESM`, `ESM+PCF` | `None` |
 | **Softening boundary width** | To adjust the softness of the shadow edges, set the width in meters for the boundary between the shadowed and the lit area. If the width is 0, the soft edge is disabled.<br> <br>*This field is available only if **Pcf method** is set to `BoundarySearch`.* | `0` to `1` meter | `0.25`|
 | **Prediction sample count** | The sample count used to predict whether the pixel is on the boundary.<br> <br>*This field is available only if **Pcf method** is set to `BoundarySearch`.* | `0` to `16` | `4` |
 | **Filtering sample count** | The sample count used to filter the shadow boundary.<br> <br>*This field is available only if **Shadow filter method** is set to `PCF` or `ESM+PCF`.* | `0` to `64` | `12` |
-| **Pcf method** | The PCF method used for shadows. The *boundary search* method performs a variable number of taps. The first tap determines if you are on a shadow boundary, and the remaining taps find the occlusion amount. The *bicubic* method uses a fixed-size PCF kernel with kernel weights that are set to approximate bicubic filtering.<br> <br>*This field is available only if **Shadow filter method** is set to `PCF` or `ESM+PCF`.* | `BoundarySearch`, `Bicubic` | `Bicubic` |
+| **Pcf method** | The PCF method used for shadows. The *boundary search* method performs a variable number of taps. The first tap determines if you're on a shadow boundary, and the remaining taps find the occlusion amount. The *bicubic* method uses a fixed-size PCF kernel with kernel weights that are set to approximate bicubic filtering.<br> <br>*This field is available only if **Shadow filter method** is set to `PCF` or `ESM+PCF`.* | `BoundarySearch`, `Bicubic` | `Bicubic` |
 
 #### Tips
 
