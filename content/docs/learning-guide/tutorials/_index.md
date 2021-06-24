@@ -1,8 +1,8 @@
 ---
-title: "Tutorials"
-date: 2021-03-02T00:23:51-05:00
+title: Tutorials
+description: Learn O3DE with the help of guided tutorials.
 weight: 200
+draft: true
 ---
 
-{{< preview-migrated >}}
-
+{{< placeholder >}}

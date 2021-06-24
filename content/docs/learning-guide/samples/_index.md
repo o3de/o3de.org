@@ -1,8 +1,8 @@
 ---
-title: "Samples"
-date: 2021-03-02T00:23:51-05:00
+title: Samples
+description: Learn O3DE by example using working sample projects.
 weight: 300
+draft: true
 ---
 
-{{< preview-migrated >}}
-
+{{< placeholder >}}
