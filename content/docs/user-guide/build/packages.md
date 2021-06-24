@@ -42,7 +42,7 @@ Package downloads and target creation run only as part of CMake configuration an
 you need to reconfigure your CMake cache and regenerate.
 {{< /note >}}
 
-See the [CMake settings reference](./reference.md) for the full list of available settings that affect the package system.
+See the [CMake settings reference](reference/) for the full list of available settings that affect the package system.
 
 ## Create a Package
 
@@ -142,7 +142,7 @@ CMake functions used in this example:
 * `ly_add_target_files`: Adds files to an existing target. See the definition in `cmake/LYWrappers.cmake`.
 * `ly_target_include_system_directories`: This is a thin wrapper around [target_include_directories](https://cmake.org/cmake/help/latest/command/target_include_directories.html), providing support for this feature on platforms that don't include it.
 
-For the full details of functions declared in O3DE CMake files, see [CMake reference - functions](./reference.md#cmake-functions-reference).
+For the full details of functions declared in O3DE CMake files, see [CMake reference - functions](/docs/user-guide/build/reference/#cmake-functions-reference).
 {{< /note >}}
 
 ### Checksums file
@@ -166,7 +166,7 @@ af173c7e6c28551679f6676cd923731b514f02c8a29980cb54987be8479a251e *cityhash/src/c
 ## Add a Package as a Dependency
 
 When a package is uploaded to a source that's available from `LY_PACKAGE_SERVER_URLS`, you need to register the package with the build system
-in the [Gem build file](/docs/user-guide/gems/development/build) or [Project build file](TBD?). Package registration is done with the
+in the [Gem build file](/docs/user-guide/gems/development/build) or Project build file. Package registration is done with the
 `ly_associate_package` function.
 
 For a Gem that would use the `example-0.1` package using `ly_associate_package`, this would look like the following:
