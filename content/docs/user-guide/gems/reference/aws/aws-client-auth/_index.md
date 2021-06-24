@@ -10,8 +10,8 @@ toc: true
 The **AWS Client Auth** Gem lets authenticated or anonymous users access AWS services. It provides authentication options using any of the following supported identity providers:
 
 * Amazon Cognito user pool
-* Google
-* Login with Amazon
+* [Google Identity](https://developers.google.com/identity)
+* [Login with Amazon](https://developer.amazon.com/login-with-amazon)
 
 The Gem gets AWS credentials from the Amazon Cognito identity pool based on the current authenticated login status. If a successful login is found, authenticated AWS credentials are fetched. Otherwise, anonymous AWS credentials are fetched.
 

@@ -12,7 +12,7 @@ The following diagram shows some of the features of the **PhysX Character Contro
 
 ![\[Contact offset of a PhysX Character Controller component in the O3DE Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-1.png)
 
-The **PhysX Character Controller** component requires the [PhysX Characters](/docs/user-guide/gems/reference/physx-characters/) gem\.
+The **PhysX Character Controller** component requires the [PhysX](/docs/user-guide/gems/reference/physx/) gem\.
 
 **Topics**
 + [Using the PhysX Character Controller Component](#component-physx-character-controller-using)

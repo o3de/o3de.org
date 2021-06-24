@@ -26,13 +26,25 @@ To create the virtual environment, you must have a `python3` executable (or `pyt
 
 ## Working with the CDK application
 
-There are a few one-time set up steps to prepare for your first CDK deployment.
+There are a few one-time set up steps to prepare for your first CDK deployment. The following commands should all be run from the `cdk` directory of the Gem you're working with.
 
 ### 1. Set up Python environment
 
-_For the latest instructions, see the `readme.md` file in the AWS Core Gem source directory._
+_For the latest instructions, refer to the `README.MD` located in `<engine root>\Gems\AWSCore\cdk`._
 
-To manually create a `virtualenv`, use the following command.
+Open a command prompt to the `cdk` directory of the Gem you're working with.
+
+```cmd
+cd <ENGINE_ROOT>\Gems\<AWS_GEM>\cdk
+```
+
+* Example when deploying the CDK application for AWS Core:
+
+    ```cmd
+    cd <ENGINE_ROOT>\Gems\AWSCore\cdk
+    ```
+
+Create a `virtualenv`.
 
 ```cmd
 # Windows
@@ -42,7 +54,7 @@ python -m venv .venv
 python3 -m venv .venv
 ```
 
-Once the `virtualenv` is created, activate your `virtualenv`.
+Activate your `virtualenv`.
 
 ```cmd
 # Windows
@@ -52,7 +64,7 @@ Once the `virtualenv` is created, activate your `virtualenv`.
 source .venv/bin/activate
 ```
 
-Once the virtualenv is activated, you can install the required dependencies.
+Install the required dependencies.
 
 ```cmd
 # Windows
