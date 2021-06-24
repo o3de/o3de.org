@@ -111,7 +111,7 @@ O3DE comes with a high-performance networking Gem that gives you the features yo
 
 * RPC and future elastic fault tolerant multi-server support with prediction and reconciliation.
 
-For more information, read [O3DE Networking](/docs/user-guide/networking).
+<!-- For more information, read [O3DE Networking](/docs/user-guide/networking). -->
 
 ## Data-driven asset workflows and asset handling
 
