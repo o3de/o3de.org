@@ -33,8 +33,7 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 
 | Topic | Description |
 | --- | --- |
-| [Configure and Build](./configure-and-build.md) | The full details on how to configure and build O3DE core, Gems, and projects. |
-| [Gem CMake files](./gems.md) | Information about Gem CMake build files. |
-| [Packages](./packages.md) | Learn about the Open 3D Engine package system, used to ship binaries along with your Gem or project. |
-| [CMake settings reference](./reference.md) | Reference for user-configurable CMake settings specific to O3DE. |
-| [Troubleshooting](./troubleshooting.md) | How to debug and troubleshoot CMake and build problems. |
+| [Configure and Build](configure-and-build/) | The full details on how to configure and build O3DE core, Gems, and projects. |
+| [Packages](packages/) | Learn about the Open 3D Engine package system, used to ship binaries along with your Gem or project. |
+| [CMake settings reference](reference/) | Reference for user-configurable CMake settings specific to O3DE. |
+| [Troubleshooting](troubleshooting/) | How to debug and troubleshoot CMake and build problems. |
