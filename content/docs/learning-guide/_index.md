@@ -7,4 +7,4 @@ menu_uuid: learning
 guide_img: "/images/learning-guide/guide_img.png"
 ---
 
-Coming soon: Your source for learning O3DE by example!
+![Tutorials under construction and coming soon](/images/learning-guide/tutorials-under-construction.png)

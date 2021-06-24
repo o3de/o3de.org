@@ -1,0 +1,25 @@
+<script>
+  window.store = {
+      // You can specify your blog section only:
+      {{ range .Site.Pages }}
+      // For all pages in your site, use "range .Site.Pages"
+      // You can use any unique identifier here
+      "{{ .Permalink }}": {
+          // You can customize your searchable fields using any .Page parameters
+          "title": "{{ .Title  }}",
+          "content": {{ .Content | plainify }}, // Strip out HTML tags
+          "url": "{{ .Permalink }}"
+      },
+      {{ end }}
+  }
+
+
+  const params = new URLSearchParams(window.location.search);
+  const queryParam = params.get('query');
+  console.log("Query param is " + params.get('query'));
+  </script>
+
+<div class="container">
+  <h1 id="search-title"> Search Results for </h1>
+  <ul id="results"></ul>
+</div>
