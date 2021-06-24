@@ -53,7 +53,7 @@ Reflection Probes
  Subsurface Scattering   
 : Describes how light that enters a translucent object scatters through a material. Subsurface scattering is implemented into material properties. 
 
-Related to: [Material System](docs\atom-guide\core-systems\materials\_index.md)
+Related to: [Material System](docs/atom-guide/dev-guide/materials/_index.md)
 
 
 Exposure and Eye Adaptation 
@@ -91,7 +91,7 @@ Atom has a unified mesh format with support for several mesh types:
 + **Skinned** meshes that are bound to a skeleton with per vertex bone weights and animated through transforms applied to the bones of the skeleton. Skinned meshes can't be included in light maps or reflection maps.
 + **Cloth** meshes that dynamically simulate the physical properties of cloth-like objects. Cloth meshes can't be included in light maps or reflection maps.
 
-*Related to: [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [O3DE Mesh Component](/content/docs/user-guide/components/reference/atom/mesh.md), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html), [O3DE Skinned Mesh Component](/content/docs/user-guide/components/reference/atom/skinned-mesh.md)*  
+*Related to: [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [O3DE Mesh Component](/docs/user-guide/components/reference/atom/mesh.md), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html), [O3DE Skinned Mesh Component](/docs/user-guide/components/reference/atom/skinned-mesh.md)*  
 
 
 ## Processing and Post FX
@@ -99,7 +99,7 @@ Atom has a unified mesh format with support for several mesh types:
 Tone Mapping and Color Grading   
 : Techniques that adjust the overall lighting and color in a scene. Tone mapping simulates high dynamic range (HDR) by mapping one set of colors to another set that has a higher range. Color grading adjusts the color output of the render. There are two color grading modes: HDR Color Grading and LDR Color Grading. Tone mapping and color grading can be configured in O3DE using the **Display Mapper**. You can also view a demo of tone mapping and color grading in the Atom Sample Viewer. 
 
-*Related to: [O3DE Display Mapper Component](TBD), [Tonemapping (Atom Sample Viewer)](\docs\atom-guide\atom-sample-viewer\graphics-feature-samples.md#tonemapping)*
+*Related to: [O3DE Display Mapper Component](TBD), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
 
 Post-processing Volumes   
 : Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
