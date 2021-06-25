@@ -20,11 +20,7 @@ In the preceding example, one renders in red, two in green, and three \(and the 
 
 ## Console Variables {#system-console-cvars}
 
-Console variables provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command\-line argument before launching the application\.
-
-More information on how to use command\-line arguments can be found in the [Command Line Arguments](http://docs.cryengine.com/display/SDKDOC2/Command+Line+Arguments) article\.
-
-Console variables are commonly referred to as `CVar` in the code base\.
+Console variables (cvars) provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command\-line argument before launching the application\.
 
 ### Registering new console variables {#system-console-cvars-registering}
 
@@ -56,7 +52,7 @@ void RequestLoadMod(IConsoleCmdArgs* pCmdArgs)
   }
   else
   {
-	 CryLog("Error, correct syntax is: g_loadMod modname");
+    // error
   }
 }
 ```

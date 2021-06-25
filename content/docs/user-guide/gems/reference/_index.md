@@ -13,7 +13,6 @@ O3DE ships with the following Gems that are ready to be enabled:
 + [Camera Framework Gem](/docs/user-guide/gems/camera)
 + [Cloud Canvas Cloud Gems](/docs/userguide/gems/builtin/aws-cloud-gems)
 + [Cloud Canvas Gem](/docs/userguide/gems/builtin/aws)
-+ [CryEntity Removal Gem](/docs/userguide/gems/cryentity-removal-gem)
 + [EMotion FX Animation Gem](/docs/user-guide/gems/emotionfx-animation)
 + [GameEffect Gem](/docs/userguide/gems/builtin/game-effect)
 + [GameLift Gem](/docs/user-guide/gems/gamelift)
