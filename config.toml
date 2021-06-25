@@ -84,7 +84,7 @@ identifier = "community"
 # parent = "community"
 
 [[menu.main]]
-name = "DOCUMENTATION"
+name = "LEARN"
 url = "/docs"
 weight = 4
 identifier = "docs"

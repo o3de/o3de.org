@@ -1,7 +1,7 @@
 ---
-linkTitle: Welcome
-title: Welcome to Open 3D Engine!
-description: New to O3DE? Get started with and overview, installation and setup information, and a quick tour of O3DE.
+linkTitle: Get Started
+title: Get started with Open 3D Engine!
+description: New to O3DE? Get started with an overview, installation and setup information, and a quick tour of O3DE.
 weight: 100
 menu_uuid: welcome
 guide_img: "/images/welcome-guide/guide_img.png"
@@ -11,9 +11,9 @@ guide_img: "/images/welcome-guide/guide_img.png"
 
 **Welcome to Open 3D Engine (O3DE)!** Are you a new user or contributor? This guide is a short collection of topics designed to help you understand O3DE and get up-and-running in short order.
 
-![Introductory graphic for O3DE Welcome Guide.](/images/welcome-guide/wg-welcome-page-color.png)
+![Introductory graphic for O3DE Get Started Guide.](/images/welcome-guide/wg-welcome-page-color.png)
 
-## Welcome Guide Contents
+## Get Started Guide Contents
 
 | Topic | Description |
 |---|---|
