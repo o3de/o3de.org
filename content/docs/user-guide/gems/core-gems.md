@@ -8,7 +8,7 @@ While Open 3D Engine's architecture and core frameworks provide the backbone and
 most features required for creating projects come in the form of extensions to the core through the Gem system. Not all of these Gems are used by
 released projects using the O3DE runtime - some are specific to the Editor, Asset Processor, or other O3DE tools.
 
-Even if a Gem only adds Editor or Asset Processor functionality, it should be included as part of your project's gems. These Gems are only built and loaded
+Even if a Gem only adds Editor or Asset Processor functionality, it should be included as part of your project's Gems. These Gems are only built and loaded
 for products that require them.
 
 * **Atom** - The real-time physically based renderer used by O3DE. In addition to rendering at runtime, Atom provides Editor components and asset processing tools.

@@ -5,7 +5,7 @@ linktitle: System Components
 weight: 600
 ---
 
-System components are similar to other components in O3DE's component entity framework. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, and are activated when the Gem is loaded, and deactivated when the Gem is unloaded.
+System components are similar to other components in Open 3D Engine's component entity framework. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, and are activated when the Gem is loaded, and deactivated when the Gem is unloaded.
 
 Like any O3DE [component](/docs/user-guide/components/development/create-component/), a system component can provide services and can depend on or require other system component services. O3DE provides precise control over the order of engine initialization and system dependencies.
 
@@ -13,7 +13,7 @@ When you author system components, follow the best practices for component autho
 
 * [The EBus system](/docs/user-guide/engine/ebus) to expose their interfaces.
 * [Reflection](/docs/user-guide/components/development/reflection/) to serialize and edit settings.
-* The same AZ::Component Functions for activation and deactivation.
+* The [AZ::Component](/docs/api/frameworks/azcore/class_a_z_1_1_component.html) class to activate or deactivate the system component..
 
 {{< important >}}
 Just like game components, system components often provide request and notification buses. However, because system components are global systems, they should not specify IDs for their buses like game components. Game developers should be able to call your system's EBuses without having to deal with or know about the system entity that contains all system components.
@@ -23,7 +23,7 @@ For an example of a Gem which provides system components, the `HttpRequestor` Ge
 
 ## Creating a System Component in a Gem
 
-O3DE enables the creation of custom system components through gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [Gems and AZ Modules](/docs/user-guide/engine/gems/structure.md). Most O3DE games organize their game code in one or more gems. These gems can contain system components that integrate with the game engine as well as components for use on game entities.
+O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [Gems and AZ Modules](/docs/user-guide/engine/gems/structure.md). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine as well as components for use on game entities.
 
 When you create a system component as part of a Gem, follow these requirements:
 

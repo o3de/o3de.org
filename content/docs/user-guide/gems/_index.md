@@ -15,7 +15,7 @@ O3DE features two types of Gems:
 * **Code & Assets** - Contains assets as well as code that performs certain functions upon the assets.
 * **Assets Only** - Contains only assets and no code.
 
-All gems that come bundled with O3DE are located in the `Gems` directory. Enabled Gems are detected and set as dependencies for your project by
+All Gems that come bundled with O3DE are located in the `Gems` directory. Enabled Gems are detected and set as dependencies for your project by
 the O3DE [build system](/docs/user-guide/build).
 
 ## Topics
