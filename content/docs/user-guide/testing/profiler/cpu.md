@@ -105,8 +105,6 @@ Use this selector to choose the meaning of the time displayed\.
 + **Acc\. Time** - \(Accumulated time\) The total amount of time spent in this function up to the frame being analyzed\.
 + **Acc\. Calls** - \(Accumulated calls\) - The total number of times this function was called up to the frame being analyzed\.
 
-   
-
 ***<number>* Frames**
 Use this selector to choose how frames of history are displayed in the graph:
 

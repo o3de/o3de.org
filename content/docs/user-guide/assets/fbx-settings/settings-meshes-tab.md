@@ -16,7 +16,6 @@ All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\)
 + [Mesh \(Advanced\) modifier](#w31aac15b9c11c11c19)
 + [Origin modifier](#w31aac15b9c11c11c21)
 + [Touch Bending modifier](#w31aac15b9c11c11c23)
-+ [CryPhysics Proxy modifier](#w31aac15b9c11c11c25)
 
 ## Meshes tab properties {#fbx-settings-meshes-tab-properties}
 
@@ -35,7 +34,6 @@ Specify the meshes to process from the `.fbx` file for this **mesh group**\. Cho
 Modifiers add specialized options for processing assets\. Choose the **Add Modifier** button to see a list of available modifiers:
 + **Cloth**
 + **Comment**
-+ **CryPhysics Proxy**
 + **Level of Detail**
 + **Material**
 + **Mesh \(Advanced\)**
@@ -184,13 +182,3 @@ Set a damping value between **0\.0** and **1\.0** for all branches to define how
 
 ****Thickness****
 Set a thickness value for all branches to define the amount of bending\. Thickness is determined as the radius of a cylinder in meters\. Most often a small decimal number less than **1\.0** is required\. Valid values range from **0\.00001** to infinity\.
-
-## CryPhysics Proxy modifier {#w31aac15b9c11c11c25}
-
-![\[The FBX Settings Meshes tab CryPhysics Proxy modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cryphysics-proxy.png)
-
-Select meshes to use as proxy physics meshes for the legacy physics system\.
-
-****Physics meshes****
-Choose the **Hierarchy** icon to specify the meshes to use for physics proxies from the `.fbx` file\. Physics proxies are meshes that encapsulate render geometry \(for example, hit detection or physics collision\) and are optimized with a low polygon count for better performance\. Primitives such as a cube, sphere or capsule are best for optimal physics performance\.
-If your `.fbx` file includes a mesh node with the suffix `_phys`, the mesh node automatically adds a new **Physics Proxy** modifier\.

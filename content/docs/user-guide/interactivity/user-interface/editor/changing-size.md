@@ -1,6 +1,5 @@
 ---
-description: ' Change your game UI canvas size to visualize how your canvas might
-  look on other displays and devices of varying resolutions in Open 3D Engine. '
+description:  Change your game UI canvas size to visualize how your canvas might look on other displays and devices of varying resolutions in Open 3D Engine. 
 title: Changing the Canvas Size
 ---
 
@@ -15,7 +14,3 @@ Change your game UI canvas size to visualize how your canvas might look on other
 
 1. Select the size you want or click **Other** to enter a custom canvas size\.
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-canvas-select-size.png)
-
-**Tip**
-You can customize the list of canvas sizes that appear in the list by modifying a `JSON` file stored locally on your machine\. In Windows, the canvas size presets file is located in the following directory:
-`C:\Users\<UserName>\AppData\Local\Amazon\Lumberyard\size_presets.json`

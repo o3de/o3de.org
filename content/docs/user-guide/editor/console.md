@@ -37,7 +37,7 @@ You can retrieve a complete list of console commands and variables, including th
 
 1. In the **Console** window, enter the following command: DumpCommandsVars
 
-1. Navigate to the `lumberyard_version\dev\` directory and then open the `consolecommandandvars.txt` file\.
+1. Navigate to the O3DE directory and then open the `consolecommandandvars.txt` file\.
 **Example**
 
     You can see the available commands and variables in the file\.
@@ -51,8 +51,8 @@ Console variables can also be set in code or specified in configuration files\. 
 
 1. Configuration files:
    + The `game.cfg` file in your project directory
-   + The `lumberyard_version\dev\system_gamesystem.cfg` file for your game system
-   + The `lumberyard_version\dev\engine\config\user.cfg` file
+   + The `system_gamesystem.cfg` file for your game system
+   + The `engine\config\user.cfg` file
    + The `level.cfg` file in your project's level directory
 
 1. Code
@@ -76,7 +76,7 @@ You can specify values for console variables in the configuration files, such as
 
 **To configure console variables with a configuration file**
 
-1. Navigate to the directory that has the configuration file\. For example, if you want to configure the `level.cfg` file, navigate to the `lumberyard_version\dev\ProjectName\Levels\level_name` directory\.
+1. Navigate to the directory that has the configuration file\. For example, if you want to configure the `level.cfg` file, navigate to the `Levels\level_name` directory in your project.
 
 1. Use a text editor to edit the file or to create one\.
 

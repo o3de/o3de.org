@@ -20,11 +20,11 @@ Manage assert notifications in O3DE with the `sys_asserts` console variable\. Th
 
 ```
 (System) - Trace::Assert
-e:\dev\Code\CryEngine\Cry3DEngine\Particle.cpp(1289): (68792) 'void __cdecl CParticle::Update(const struct SParticleUpdateContext &,float,bool)'
-(System) - e:\dev\code\cryengine\cry3dengine\particle.cpp (1290) : CParticle::Update
-(System) - e:\dev\code\cryengine\cry3dengine\particlecontainer.cpp (777) : CParticleContainer::UpdateParticleStates
-(System) - e:\dev\code\cryengine\cry3dengine\particlecontainer.cpp (731) : CParticleContainer::UpdateParticles
-(System) - e:\dev\code\cryengine\cry3dengine\particleemitter.cpp (87) : <lambda_11fc931574fd38d67807576e751a0e04>::operator()
+<path>\Particle.cpp(1289): (68792) 'void __cdecl CParticle::Update(const struct SParticleUpdateContext &,float,bool)'
+(System) - <path>\particle.cpp (1290) : CParticle::Update
+(System) - <path>\particlecontainer.cpp (777) : CParticleContainer::UpdateParticleStates
+(System) - <path>\particlecontainer.cpp (731) : CParticleContainer::UpdateParticles
+(System) - <path>\particleemitter.cpp (87) : <lambda_11fc931574fd38d67807576e751a0e04>::operator()
 ```
 
 `sys_asserts=2` opens a dialog box like the following:

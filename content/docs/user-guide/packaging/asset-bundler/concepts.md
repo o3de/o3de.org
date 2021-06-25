@@ -17,8 +17,7 @@ All product assets are assigned an Asset ID\. The asset ID consists of the sourc
 The Asset Browser program, which is part of the O3DE Editor, shows the current state of your assets\. You can use this program to navigate through a set of assets, such as tracking which assets have been processed and which will be processed\.
 
 **Asset Bundle**
-An asset bundle consists of product assets grouped together in a single compressed file\. The bundle is mounted in a O3DE game so that the assets can be loaded and used during runtime\. Asset bundles are `.pak` files, which use the CryEngine `.pak` file format\. This file format is similar to the `.zip` file format\.
-For more information, see [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md)\.
+An asset bundle consists of product assets grouped together in a single compressed file\. The bundle is mounted in a O3DE game so that the assets can be loaded and used during runtime\. Asset bundles are `.pak` files, which use the `.zip` file format.
 
 **Asset List**
 An asset list contains information for product assets\. This file is generated using the Asset Bundler\. The information includes a fingerprint for each asset in the list\. The fingerprint includes a modification time and file hash\. An asset list can be generated from seed lists, individual seeds, or by using comparison operations on other asset lists\. Asset list files have the file extension `.assetlist`\. See also **Seed** and **Seed List**\.
@@ -45,10 +44,6 @@ For more information about the asset life cycle, see [Working with the Asset Pip
 **Product Dependency**
 A product dependency occurs when one product asset references another product asset\. When bundling assets, both the referencing asset and the referenced asset should be included in the bundle\. Dependencies are created by referencing the Asset ID of the product asset\. See also **Source Dependency**\.
 Product dependencies are generally relevant during asset packaging and bundling\. With product dependencies established, bundling becomes the task of "shipping game level 1 and everything it references"\. For example, you have a character that is spawned through a dynamic slice\. This character has a model, and the model has a material, which has a texture\. In this scenario, the material needs the texture loaded to work, so the material has a product dependency on the texture\. The model needs the material loaded to work, so the model has a product dependency on the material\. The character needs the model loaded to work, so the dynamic slice for the character has a product dependency on the model\. When bundling, you can include the character and expect that all dependencies are included\.
-
-**Root Folder**
-The root folder concept is inherited from CryEngine\. When a O3DE application starts, it loads and initializes a set of modules, or code libraries, to support the application's gems\. Legacy modules, such as `bootstrap.cfg` and `engine.cfg`, are loaded from the root folder\. Newer AZ modules are loaded from the assets folder\.
-For more information, see [Programming with Gems](/docs/userguide/gems/)\.
 
 **Runtime**
 A standalone game is referred to as the runtime\. It can be run through a platform\-specific launcher or in the O3DE Editor\. A runtime uses the O3DE asset system to access only those product assets that were bundled with the game\.

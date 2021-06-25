@@ -1,29 +1,27 @@
 ---
-description: ' Use the Audio Environment component to set up a default environment
-  for an entity in Open 3D Engine. '
 title: Audio Environment
+description: Use the Audio Environment component to set up a default environment for an entity in Open 3D Engine.
+toc: true
 ---
 
-{{< preview-migrated >}}
+The **Audio Environment** component provides access to features of the [Audio Translation Layer (ATL)](/docs/user-guide/interactivity/audio/audio-translation-layer) environments. Environments are used to apply environmental effects such as reverb or echo.
 
-The **Audio Environment** component provides access to features of the [Audio Translation Layer \(ATL\)](/docs/user-guide/interactivity/audio/translation-layer/) environments\. Environments are used to apply environmental effects such as reverb or echo\.
+![Audio Environment component](/images/user-guide/component/audio/component-audio-environment1.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/component/audio/component-audio-environment1.png)
-
-## Audio Environment Properties {#component-audio-environment-properties}
+## Audio Environment Properties
 
 The **Audio Environment** component has the following property:
 
 **Default Environment**
 Enter the name of the audio environment to use by default when setting amounts\.
 
-## EBus Request Bus Interface {#component-audio-environ-ebusrequest}
+## EBus Request Bus Interface
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
 
-### SetAmount {#environ-audio-ebus-setamount}
+### SetAmount
 
 Sets the amount of environmental **'send'** to apply to the default environment, if set\.
 
@@ -36,7 +34,7 @@ None
 **Scriptable**
 Yes
 
-### SetEnvironmentAmount {#environ-audio-ebus-setenvironmentamount}
+### SetEnvironmentAmount
 
 Sets the amount of environmental **'send'** to apply to the specified environment\.
 

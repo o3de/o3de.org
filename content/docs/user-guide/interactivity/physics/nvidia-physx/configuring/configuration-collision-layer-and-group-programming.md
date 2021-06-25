@@ -6,23 +6,9 @@ weight: 350
 
 {{< preview-migrated >}}
 
-The API for collision layers and groups is defined in the `Collision.h` and `CollisionBus.h` headers\. The following code shows example include statements\.
+The API for collision layers and groups is defined in the [PhysX Gem API](/docs/api/gems/physx)
 
-```
-// Main API
-#include <AzFramework/Physics/Collision.h>
-
-// Bus API
-#include <AzFramework/Physics/CollisionBus.h>
-
-// For the rest of the examples:
-using namespace AzFramework;
-using namespace Physics;
-```
-
-For source code, see the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Physics\Collision.*` files\.
-
-## Retrieving Layers and Groups {#physx-configuration-programming-creating-layers-and-groups}
+## Retrieving Layers and Groups
 
 You can use the `layer(`*layer\_name*`)` and `group(`*group\_name*`)` methods to retrieve instances of collision layers and groups [that you created in O3DE Editor](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-groups.md)\. These methods perform a lookup of the definitions defined in the **PhysX Configuration** tool\. If no collision layer is found that matches the name, the default layer \(`0`\) is returned\.
 
@@ -40,7 +26,7 @@ CollisionGroup group;
 CollisionRequestBus::BroadcastResult(group, &Physics::CollisionRequests::GetCollisionGroupByName, groupName);
 ```
 
-## Creating Collision Groups in Code {#physx-configuration-programming-adhoc-collision-groups}
+## Creating Collision Groups in Code
 
 Unlike the predefined collision groups that you create in O3DE Editor, you can use code to create collision groups at runtime\. This is useful when you don't know the layers involved in advance at therefore must define a collision group at runtime\.
 

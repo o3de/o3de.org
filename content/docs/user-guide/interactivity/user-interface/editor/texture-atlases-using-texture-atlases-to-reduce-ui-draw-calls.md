@@ -28,7 +28,7 @@ To gather data to make these determinations, you can use the O3DE Editor console
 
 1. In the O3DE Editor console, enter the `ui_ReportDrawCalls` console command\. This command outputs a report of the draw calls for all active canvases into a text file\.
 
-1. Open the `lumberyard_version\dev\Cache\your_project_name\pc\user\log\LyShine\drawcallreport.txt` log file\.
+1. Open the `drawcallreport.txt` log file\.
 
 1. At the end of the report, examine the following two sections to identify the textures to put into texture atlases\.
 

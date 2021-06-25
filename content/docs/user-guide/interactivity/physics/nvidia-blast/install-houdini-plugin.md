@@ -6,11 +6,6 @@ weight: 100
 ---
 
 {{< preview-migrated >}}
-
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change\.  |
-
  To create NVIDIA Blast assets, you must install a set of plug\-ins and Houdini Digital Assets for SideFX Houdini\.
 
 **Note**
@@ -25,7 +20,7 @@ The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require
 
 **To install plug\-ins**
 
-1. Run `install_plugin.bat` from the `houdini` directory located at `lumberyard_installation\dev\Gems\Blast\houdini`\.
+1. Run `install_plugin.bat` from the `houdini` directory located at `Gems\Blast\houdini`\.
 
 1. Grant the installer script administrator privileges when requested\.
 

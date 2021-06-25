@@ -28,12 +28,12 @@ O3DE enables the creation of custom system components through gems and AZ module
 
 When you create a system component as part of a gem, note the following requirements:
 + Your gem's `GetRequiredSystemComponents()` function must return the system component\.
-+ Your `GemNameBus.h` file goes under the `lumberyard_version\dev\Gems\GemName\Code\Include\GemName\` directory\.
-+ Your component source files go under the `lumberyard_version\dev\Gems\GemName\Code\Source\` directory\.
++ Your `GemNameBus.h` file goes under the `Gems\GemName\Code\Include\GemName\` directory\.
++ Your component source files go under the `Gems\GemName\Code\Source\` directory\.
 
 ### Example: HttpRequestorSystemComponent {#component-entity-system-pg-creating-system-components-gem-example}
 
-The [HttpRequestor gem](/docs/userguide/http-requestor-gem.md) makes asynchronous HTTP/HTTPS requests and returns data through a callback function that you provide\. The HttpRequestor gem uses the EBus for communication and provides all requests asynchronously\. The `HttpRequestorSystemComponent` is part of the HttpRequestor gem\. You can find the source code files for the gem under the `lumberyard_version\dev\Gems\HttpRequestor\Code\` directory\.
+The [HttpRequestor gem](/docs/userguide/http-requestor-gem.md) makes asynchronous HTTP/HTTPS requests and returns data through a callback function that you provide\. The HttpRequestor gem uses the EBus for communication and provides all requests asynchronously\. The `HttpRequestorSystemComponent` is part of the HttpRequestor gem\. You can find the source code files for the gem under the `Gems\HttpRequestor\Code\` directory\.
 
 **The HttpRequestor EBus**
 

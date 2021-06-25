@@ -179,4 +179,3 @@ Creates a hash on the sync track of a motion\.
 size_t HashForSyncing (bool isMirror) const
 ```
 
-For the `MotionEvent` class source code, see `lumberyard_version\dev\Gems\EMotionFX\Code\EMotionFX\Source\MotionEvent.*`\.

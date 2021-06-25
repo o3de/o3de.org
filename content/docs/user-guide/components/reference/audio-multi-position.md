@@ -1,6 +1,7 @@
 ---
-description:  Use the Audio Multi-Position component to play sounds at multiple locations in Open 3D Engine. 
 title: Audio Multi-Position
+description: Use the Audio Multi-Position component to play sounds at multiple locations in Open 3D Engine.
+toc: true
 ---
 
 The Audio Multi-Position Component helps to create sounds that emanate
@@ -11,7 +12,7 @@ resources.
 
 ## Editor
 
-![The Audio Multi-Position component pane in the O3DE Editor.](/images/user-guide/component/audio/multi-position-component.png)
+![The Multi-Position Audio component pane in the O3DE Editor.](/images/user-guide/component/audio/multi-position-component.png)
 
 ## Properties
 

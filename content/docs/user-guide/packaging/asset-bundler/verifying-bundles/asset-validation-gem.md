@@ -16,11 +16,11 @@ During development, use seed mode to ensure that as assets get added they're pro
 **Note**
 If you already have bundles to test, you can use *bundle mode* instead of seed mode\. For more information, see [Using Bundle Mode to Test Bundles](/docs/user-guide/packaging/asset-bundler/bundle-mode.md)\.
 
-## Prerequisites {#asset-bundler-asset-validation-gem-prerequisites}
+## Prerequisites
 
 [Enable](/docs/userguide/gems/using-project-configurator.md) the Asset Validation gem in your game project, and then [build](/docs/userguide/game-build-intro.md) your game project\.
 
-## Seed Mode Commands {#asset-bundler-asset-validation-gem-seed-mode-commands}
+## Seed Mode Commands
 
 When you use O3DE Editor or the launcher to run your game, the following console commands are available:
 + **seedmode** - Enables or disables the reporting system\.
@@ -33,7 +33,7 @@ When you use O3DE Editor or the launcher to run your game, the following console
   ```
 + **removeseedpath** *<Relative cache path to an asset>* - Removes an asset from the dependency graph\.
 + **listknownassets** - Lists all the assets in your current dependency graph\.
-+ **addseedlist** *<Relative source path to a seed list>* - Adds all the seeds found in the specified seed list to your known dependency graph\. Because the path is a source path, it is relative to the `lumberyard_version\dev` directory\.
++ **addseedlist** *<Relative source path to a seed list>* - Adds all the seeds found in the specified seed list to your known dependency graph\. Because the path is a source path, it is relative to your project directory.
 
   **Example**
 
@@ -43,7 +43,7 @@ When you use O3DE Editor or the launcher to run your game, the following console
 + **removeseedlist** *<Relative source path to a seed list>* - Removes all the assets in a seed list from your graph\.
 + **printblacklisted** - Enables or disables the display of approved assets in the system\. Some assets, like shaders, are loaded at runtime and do not appear in your dependency graph\. By design, shaders are packaged in their own `.pak` file, are not found in the dependency graph, and do not need to be reported by the system\. However, you can use the `printblacklisted` command to force shaders or other approved asset types to be included in the dependency graph\.
 
-## Using Seed Mode {#asset-bundler-asset-validation-gem-using-seed-mode}
+## Using Seed Mode
 
 The following procedure shows how to use seed mode to troubleshoot a level that has missing assets\.
 
@@ -67,7 +67,7 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
 1. Enter game mode\. The Asset not found errors no longer appear\.
 ![\[Using the addseedpath command in the O3DE console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-2.png)
 
-### Handling Missing Asset Errors {#asset-bundler-asset-validation-gem-using-seed-mode-handling-missing}
+### Handling Missing Asset Errors
 
 If seed mode reports that an asset is missing, the asset might be one of the following:
 + Part of a list that you haven't added to the graph yet\.

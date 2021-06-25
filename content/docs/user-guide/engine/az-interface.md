@@ -1,6 +1,5 @@
 ---
-description: ' Use the AZ::Interface<T> template class to create global message
-  request buses for Amazon Lumberyard game code. '
+description:  Use the AZ::Interface<T> template class to create global message request buses for Open 3D Engine. 
 title: AZ::Interface<T>
 ---
 
@@ -13,14 +12,14 @@ Commonly, `AZ::Interface` should be used when you want to invoke methods on a co
 A system is an instance of a class that inherits the `Registrar` method from `AZ::Interface`\. Systems that are registered with `AZ::Interface` are designed to replace global or application lifetime request buses that are currently implemented using EBus\. There are a number of benefits to this new system, including vastly improved performance and compatibility with IDE standard code autocomplete functionality\.
 
 **Note**
-*Systems*, in this usage, are key parts of the Lumberyard game engine\. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system\. With `AZ::Interface`, you access these systems with this simplified syntax:
+*Systems*, in this usage, are key parts of O3DE. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system\. With `AZ::Interface`, you access these systems with this simplified syntax:
  `AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
 For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
 Likewise, you can use this syntax to invoke behaviors across systems for console functors \(cfuncs\) declared with [AZ::Console](/docs/userguide/az-console.md)\.
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
 + Improved performance\. Calls to the singleton are a virtual function call that can often even be de\-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call\.
-+ Improved debuggability\. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within the Lumberyard engine\.
++ Improved debuggability\. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within O3DE.
 + Compatibility with code autocomplete in Visual Studio.
 
 `AZ::Interface` is defined as a C\+\+ template \(`template <T>`\) in the following header: `%INSTALL-ROOT%dev\Code\Framework\AzCore\AzCore\Interface\Interface.h`

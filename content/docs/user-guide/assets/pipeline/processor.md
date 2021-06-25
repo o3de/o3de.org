@@ -10,18 +10,11 @@ Asset Processor is a utility that runs in the background to detect changes to yo
 
 As part of Asset Processing, the Asset Processor generates and stores product and source dependencies \. In this context, a dependency defines how a one product or source asset depends on another asset\. A given asset may have 0 or more dependencies, and these dependencies are used by features such as the [Asset Bundler](/docs/user-guide/packaging/asset-bundler/intro.md) in order to determine which assets must be included when you bundle your game for release\.
 
-**Topics**
-- [Using Asset Processor {#asset-pipeline-processor}](#using-asset-processor-asset-pipeline-processor)
-  - [Modifying the Asset Processor Configuration File {#asset-pipeline-processor-config}](#modifying-the-asset-processor-configuration-file-asset-pipeline-processor-config)
-  - [Using the Asset Processor Batch Program {#asset-pipeline-processor-batch-processing}](#using-the-asset-processor-batch-program-asset-pipeline-processor-batch-processing)
-
 Asset Processor enables games to run on other platforms without deploying assets to that platform\. Instead, the assets are accessed from the asset cache on a connected Windows or macOS system\. With Asset Processor, you can also run games that use someone else's assets\.
 
 By proxying requests through itself, Asset Processor communicates with an iOS or Android shader compiler server through a USB cable on iOS and Android\.
 
 In Windows, Asset Processor starts automatically if you run O3DE Editor with automatically maintained connections\. Asset Processor also restarts automatically if you modify any of the data files that it needs to operate or if you retrieve a new version\.
-
-In macOS, you must manually start Asset Processor from a command line window\. Asset Processor is located in the `lumberyard_version/dev/BinMac64` directory\.
 
 **Note**
 Symbolic links are not supported when using Asset Processor in macOS\. To ensure that Asset Processor works properly in macOS, follow these guidelines:
@@ -41,7 +34,7 @@ Asset Processor can also serve files directly to devices, avoiding copying asset
 
 ## Modifying the Asset Processor Configuration File {#asset-pipeline-processor-config}
 
-Use the `AssetProcessorPlatformConfig.ini` configuration file \(located in the `lumberyard_version/dev/` directory\) to perform the following tasks:
+Use the `AssetProcessorPlatformConfig.ini` configuration file to perform the following tasks:
 + Add new file types for Asset Processor to feed to the Resource Compiler, copy into the cache, or update existing file type rules\.
 + Update the ignore list\.
 + Specify which platforms are currently enabled\. The default value is the host platform that Asset Processor runs on\. Asset Processor automatically builds assets for the host platform\. For example, if Asset Processor is running on Windows, Asset Processor builds Windows assets even if **pc** is not enabled in the `.ini` file\. If Asset Processor is running on macOS, Asset Processor builds macOS assets even if **osx\_gl** is not enabled in the `.ini` file\. To build assets for other platforms, update the `.ini` file and specify the platforms that you want\.

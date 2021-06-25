@@ -9,7 +9,7 @@ Be aware that you might come across situations unique to your project or build t
 issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered
 here, try searching our [forums](TBD), asking in the [O3DE discord](TBD), or searching the [O3DE tag on StackOverflow](TBD).
 
-If you believe your build problem is due to a bug in O3DE, check for [existing bug reports](TBD) and [file an issue](TBD).
+If you believe your build problem is due to a bug in O3DE, check for [existing bug reports](https://github.com/o3de/o3de.org/issues) and [file an issue](https://github.com/o3de/o3de.org/issues/new/choose).
 
 ## C2027 Errors on Generated Files
 

@@ -29,13 +29,9 @@ SaveData gem communications that deal with local user profiles depend on the loc
 + Data associated with a local user ID is saved into a container or directory that is unique to the local user ID and the application\.
 + Data not associated with a local user ID is saved into a 'global' container or directory unique to the application\.
 
-For more information about the `SaveDataRequests` bus, see the commented source code at `lumberyard_version\dev\Gems\SaveData\Code\Include\SaveData\SaveDataRequestBus.h`\.
-
 ## Getting Save Data Notifications {#gems-system-save-data-notifications}
 
 All save and load operations performed by the SaveData gem are asynchronous\. Therefore, you must either subscribe to receive Save Data notifications or supply a callback function that notifies you when a save or load operation completes\. This action is always performed in the main thread\.
-
-For more information about the `SaveDataNotifications` bus, see the commented source code at `lumberyard_version\dev\Gems\SaveData\Code\Include\SaveData\SaveDataNotificationBus.h`\.
 
 ## Save Data Code Example {#gems-system-save-data-code-example}
 

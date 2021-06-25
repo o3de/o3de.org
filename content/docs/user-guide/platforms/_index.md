@@ -4,18 +4,14 @@ description: ' Learn about the platforms supported by Open 3D Engine for develop
 title: Platform development
 weight: 1500
 ---
-## Supported platforms {#lumberyard-supported-platforms}
-
-{{< preview-migrated >}}
+## Supported platforms
 
 You can use O3DE to develop games for the following platforms:
+
 + Microsoft Windows PC
 + Android
 + iOS
 + macOS
-+ Linux \(dedicated server only\)
++ Linux
 
-Some platforms have additional requirements\.
-+ For mobile devices, see [Developing for Android and iOS with O3DE](/docs/user-guide/platforms/mobile-support.md)\.
-+ For macOS, see [Create macOS projects in O3DE](/docs/user-guide/platforms/macos/)\.
-+ For Linux dedicated servers, see [Creating O3DE Executables for Linux](/docs/user-guide/platforms/linux/)\.
+**Instructions on development for non-Windows platforms is coming soon!**
