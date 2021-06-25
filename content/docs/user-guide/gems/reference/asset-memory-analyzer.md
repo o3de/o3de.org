@@ -8,11 +8,6 @@ title: Asset Memory Analyzer Gem
 Resource management is critical, particularly on platforms where memory is limited. In any given project, the model, texture, animation, and audio resource files that make up the project's assets use the bulk of the memory allocated to run the project. **Asset Memory Analyzer** shows how memory is allocated to assets as your project runs. It is an indispensable tool to balance memory usage and get the best performance for your project.
 
 The **Asset Memory Analyzer** is an Open 3D Engine Gem that displays a table of heap and VRAM memory allocations per asset through the **ImGUI** (Immediate Mode Graphical User Interface) overlay. In addition to live display of memory allocations for assets loaded in the project, the **Asset Memory Analyzer** can export allocation data to `JSON` and `CSV` files.
-- [Enable the **Asset Memory Analyzer**](#enable-the-asset-memory-analyzer-enable-asset-memory-analyzer)
-- [View Live Asset Memory Analysis with **ImGUI**](#view-live-asset-memory-analysis-with-imgui-view-live-asset-memory-analysis)
-- [Export an Asset Memory Analysis Snapshot to a File](#export-an-asset-memory-analysis-snapshot-to-a-file-export-asset-memory-analysis-to-file)
-- [View a JSON Asset Memory Analysis Snapshot in a Browser](#view-a-json-asset-memory-analysis-snapshot-in-a-browser-view-json-snapshot-in-browser)
-- [Instrumenting Code for Asset Memory Analysis](#instrumenting-code-for-asset-memory-analysis-instrumenting-code)
 
 ## Enable the **Asset Memory Analyzer** {#enable-asset-memory-analyzer}
 

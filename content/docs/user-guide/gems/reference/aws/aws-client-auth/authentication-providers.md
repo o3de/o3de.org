@@ -26,7 +26,9 @@ To create and use a custom provider, refer to the instructions at the end of thi
 
 You must create a registry settings file named `AuthenticationProvider.setreg` to configure the authentication provider's settings. This file must be located in the project's registry directory: `<ProjectName>\Registry`. Its format is shown in the example that follows.
 
-Use the app ID and app secret that you obtained when you enabled your account as the values for the `AppClientId` and `ClientSecret` settings, respectively.
+Use the app ID that you obtained when you enabled your account as the value for `AppClientId`.
+
+If you are using Google, you must also use the app secret you were given for your account as the value for `ClientSecret`.
 
 When deploying the CDK application, be sure to use the CDK constant that corresponds to your selected provider. Refer to the CDK application deployment step in [Setting Up Client Auth](./setup.md) for details.
 
@@ -35,7 +37,7 @@ These settings and those in the resource mapping file are read once during activ
 | Setting | Description |
 | --- | --- |
 | **AppClientId** | Client ID provided by the authentication provider upon creating an account. |
-| **ClientSecret** | Client secret provided by the authentication provider upon creating an account. Required only for **Login With Amazon**. |
+| **ClientSecret** | Client secret provided by the authentication provider upon creating an account. Required only for **Google**. |
 | **GrantType** | Type of grant requested. See [https://oauth.net/2/grant-types/](https://oauth.net/2/grant-types/). |
 | **ResponseType** | Required only for **Login With Amazon**. Same as grant type. |
 | **OAuthCodeURL** | URL to request code for authentication. |

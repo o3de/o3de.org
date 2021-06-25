@@ -1,6 +1,5 @@
 ---
-description: ' Configure the Asset Pipeline to customize the processing of assets
-  in Open 3D Engine. '
+description:  Configure the Asset Pipeline to customize the processing of assets in Open 3D Engine. 
 title: Configuring the Asset Pipeline
 ---
 
@@ -20,9 +19,9 @@ Backslashes in `.ini` files have a special meaning\. To use a regular backslash 
 .*\\/Levels\\/.*
 ```
 
-In addition to the `AssetProcessorPlatformConfig.ini` file \(located in the `/lumberyard_version/dev` directory\), you can also add the following:
+In addition to the project `AssetProcessorPlatformConfig.ini` file, you can also add the following:
 + `AssetProcessorGamePlatformConfig.ini` - Add this file to your game project folder to override any configurations that are specific to a project\. The final configuration is the result of merging both files\. The `AssetProcessorGamePlatformConfig.ini` file is read last and therefore takes priority\.
-+ `AssetProcessorGemConfig.ini` - Add this file to the gem folder to allow your enabled gem to affect the asset processor configuration\. The impact is similar to editing the root file but without making permanent changes to the root file\. For example, you can add an `AssetProcessorGemConfig.ini` file for the Cloud gem to the `/lumberyard_version/dev/Gems/Clouds` directory\.
++ `AssetProcessorGemConfig.ini` - Add this file to a Gem folder to allow the Gem access to the asset processor configuration\. The impact is similar to editing the root file but without making permanent changes to the root file\. 
 
   The final configuration is the result of merging the following files in order:
   + `dev/AssetProcessorPlatformConfig.ini`
@@ -31,7 +30,7 @@ In addition to the `AssetProcessorPlatformConfig.ini` file \(located in the `/lu
   + `dev/Gems/GEM_NAME3/AssetProcessorGemConfig.ini`
   + `your_project_folder/AssetProcessorGamePlatformConfig.ini`
 
-## Platforms Section {#asset-pipeline-configuring-platforms-section}
+## Platforms Section
 
 The `Platforms` section contains two subsections:
 + `Platform Definition` - Defines which platforms exist when you use the `[Platform platformName]` section header\.

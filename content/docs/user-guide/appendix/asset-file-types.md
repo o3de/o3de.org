@@ -39,7 +39,7 @@ The following file formats are used for static geometry:
 
 **Material and Texture File Types**
 
-The following files are used for the **Material Editor**\. For more information, see [Working with shaders and materials](/docs/userguide/materials/intro.md)\.
+The following files are used for the **Material Editor**\. For more information, see [Working with shaders and materials](/docs/atom-guide/look-dev/materials/)\.
 
 
 ****

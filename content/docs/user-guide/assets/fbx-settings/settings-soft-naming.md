@@ -28,10 +28,9 @@ The following table lists current soft naming conventions and the actions that a
 
 | Soft Naming Convention | Method | Supported Modules | Example | Asset Processor Action |
 | --- | --- | --- | --- | --- |
-| \_phys | Apply suffix to node name\. | CryPhysics, PhysX | legMesh\_phys | Nodes with the \_phys suffix are treated as a physics proxy\. A physics proxy modifier is automatically added\. |
+| \_phys | Apply suffix to node name\. | PhysX | legMesh\_phys | Nodes with the \_phys suffix are treated as a physics proxy\. A physics proxy modifier is automatically added\. |
 |  `_lod1` `_lod2` `_lod3` `_lod4` `_lod5`  | Apply suffix to node name\. | Graphics |  `jack_lod1` `jack_lod2` `jack_lod3` `jack_lod4` `jack_lod5`  | Nodes are treated as LoD meshes\. The scene settings automatically add an LoD modifier with each suffixed node\. |
-| \_ignore | Apply suffix to node name\. | Graphics and CryPhysics | jackSkeleton\_ignore | Asset Processor ignores and doesn't process nodes with the \_ignore suffix\. |
-| \_anim | Apply suffix to file name\. | CryAnimation | jackMoves\_anim\.fbx | For \.fbx file names with the \_anim suffix, Asset Processor processes only the animations in the \.fbx file\. |
+| \_ignore | Apply suffix to node name\. | Graphics | jackSkeleton\_ignore | Asset Processor ignores and doesn't process nodes with the \_ignore suffix\. |
 
 ## Viewing soft naming conventions {#viewing-the-fbx-soft-naming-convention}
 

@@ -1,0 +1,11 @@
+<form id="search"
+    action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="row">
+    <div class="col px-1">
+        <label hidden for="search-input">Search site</label>
+        <input type="text" id="search-input" class="form-control form-control-sm" name="query"
+        placeholder="Search site">
+    </div>
+    <div class="col-3 px-1">
+        <input type="submit" class="btn btn-sm btn-primary" value="search">
+    </div>
+</form>

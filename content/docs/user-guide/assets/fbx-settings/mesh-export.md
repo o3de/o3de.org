@@ -14,7 +14,7 @@ title: FBX Settings mesh export
 
 ## Export a mesh {#fbx-exporting-meshes}
 
-1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\.
+1. Copy your `.fbx` file to a sub directory in your project.
 
    Alternatively, choose **Import** from the **File** menu in O3DE Editor to copy or move the `.fbx` file into your project\.
 

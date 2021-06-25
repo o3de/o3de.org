@@ -29,7 +29,7 @@ If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**
 
 **To enable mip maps for an image processing preset**
 
-1. In a text editor, open the `rc.ini` file, located in the `lumberyard_version\dev\Bin64vc141\rc` directory\.
+1. In a text editor, open the `rc.ini` file.
 
    For more information, see [Creating Image Processing Presets](/docs/userguide/assets/creating-image-processing-presets.md)\.
 

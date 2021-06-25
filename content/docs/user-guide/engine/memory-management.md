@@ -7,7 +7,7 @@ title: Memory Management
 
 When managing memory in O3DE, use AZ memory management calls and avoid static variables whose constructors allocate memory or connect to EBuses\.
 
-## Memory Allocations {#cpp-best-practices-lumberyard-memory-allocations}
+## Memory Allocations
 
 When allocating memory, use the following recommended practices:
 + Do not use `new`, `malloc`, and similar allocators directly\. Instead, use AZ memory manager calls to `aznew`, `azmalloc`, `azfree`, `azcreate`, and `azdestroy`\.
@@ -18,7 +18,7 @@ When allocating memory, use the following recommended practices:
 
 For information about O3DE's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/userguide/programming/memory/allocators#memory-allocators-manually-allocating-memory)\.
 
-## Memory Issues Caused by Static Variables {#cpp-best-practices-lumberyard-memory-issues-caused-by-static-variables}
+## Memory Issues Caused by Static Variables
 
 In constructors and destructors for static variables, avoid the following:
 + Allocating memory with the AZ memory allocator system\.
@@ -34,7 +34,7 @@ These rules apply to global static variables, function local static variables, a
 
 Remember that the lifetime of a static variable lasts until the module in which the variable is declared is unloaded\. In static linked libraries, the duration of static variables is the entire duration of the application\.
 
-### Static Local Variable Example {#cpp-best-practices-lumberyard-static-local-variable-example}
+### Static Local Variable Example
 
 The following example code from AzFramework \(`\dev\Code\Framework\AzFramework\AzFramework\Physics\DefaultDebugDrawSettings.h`\) uses function static container variables whose destructors rely on `AZ::SystemAllocator`\.
 
@@ -45,8 +45,8 @@ namespace Physics
 {
     AZ_INLINE void GetDefaultDebugDrawSettings(DebugDrawSettings& settings)
     {
-        static AZStd::vector<Vec3> cryVerts;      // These function static container variables use AZ::SystemAllocator.
-        static AZStd::vector<ColorB> cryColors;
+        static AZStd::vector<Vec3> verts;      // These function static container variables use AZ::SystemAllocator.
+        static AZStd::vector<ColorB> colors;
         //...
     }
 }
@@ -54,7 +54,7 @@ namespace Physics
 
 By default, the `AZStd::vector` class uses the `SystemAllocator`\. Invoking this function on application shutdown, when `SystemAllocator` no longer exists, causes a deletion from a destroyed heap\.
 
-### Global Static Variable Example {#cpp-best-practices-lumberyard-global-static-variable-example}
+### Global Static Variable Example 
 
 On startup, the following code attempts to create a global static variable whose constructor connects to an EBus:
 

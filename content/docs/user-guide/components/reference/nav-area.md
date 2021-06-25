@@ -32,7 +32,7 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/nav-seed
 
 1. Add the **Polygon Prism** component\. [Adjust the size and shape](/docs/userguide/components/polygon-prism#working-with-polygon-prism-components) of the **Polygon Prism**\. Ensure that your terrain and objects intersect with the volume of the polygon prism\. [Adjust the height](/docs/userguide/components/polygon-prism#component-polygon-prism-height-adjustment) if necessary\.
 
-   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) tool to lower the Z \(up and down\) position of the entity\.
+   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas\. The following examples show a navigation area that is too high above the terrain \(1\), and a navigation area appropriately situated on the terrain \(2\)\. If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars) tool to lower the Z \(up and down\) position of the entity\.
 ![\[Enable Show Navigation Areas and View Agent Type in O3DE Editor.\]](/images/user-guide/component/component-nav-area.png)
 
 **To view the generated Navigation Area mesh** {#render-navigation-mesh}
@@ -58,7 +58,7 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/nav-seed
 The **Navigation Area** component has the following properties: {#component-nav-area-properties-agent-types}
 
 **Agent Types**
-Specifies the types of AI that can traverse this navigation area\. These agent types are defined in `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml`\. To specify multiple agent types for this area, click the **\+** icon\.
+Specifies the types of AI that can traverse this navigation area\. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project. To specify multiple agent types for this area, click the **\+** icon\.
 You use this property to restrict which agents can navigate within that area\. For example, you can allow characters to navigate within a narrow corridor but restrict vehicles\.
 To define an agent type on your AI, see the [Navigation](/docs/user-guide/components/reference/navigation/) component\.
 
@@ -107,14 +107,7 @@ The following example shows a navigation mesh \(1\) and the same navigation mesh
 
 ## Navigation Physics Integration {#component-nav-area-physics}
 
-The navigation system builds the navigation mesh based on all the static physics colliders provided by the physics system, including terrain\. By default, both the CryPhysics and PhysX systems \(`AZ::Physics`\) are supported\. This can be changed with the **ai\_NavPhysicsMode** cvar:
-
-**ai\_NavPhysicsMode**
-Navigation physics integration mode which determines where collider and terrain data used in navigation mesh calculations comes from\.
-Default: `1`
-`0` - CryPhysics only
-`1` - CryPhysics and AZ::Physics
-`2` - AZ::Physics only
+The navigation system builds the navigation mesh based on all the static physics colliders provided by the physics system, including terrain\.
 
 **Physics integration details**
 When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer issues a `WorldRequestBus::Overlap` static query to gather colliders within a bounding box\. Shape geometry is returned from the new `AZ::Shape::GetGeometry()` method\. PhysX colliders for terrain, shapes, and meshes will provide triangle data in an operation that acquires a PhysX scene read lock while retrieving geometry data\.

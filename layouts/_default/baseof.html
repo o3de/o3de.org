@@ -10,13 +10,15 @@
     {{ partial "css.html" . }}
     {{ partial "favicon.html" . }}
   </head>
-
+  {{ partial "javascript.html" }}
     <body>
       {{ partial "navbar.html" . }}
-    <main>
+    <div id="search-results" style="display: none;" aria-hidden="true">
+      {{ partial "search-results.html" . }}
+    </div>
+    <main id="primary">
       {{ block "main" . }}
       {{ end }}
     </main>
-    {{ partial "javascript.html" }}
   </body>
 </html>

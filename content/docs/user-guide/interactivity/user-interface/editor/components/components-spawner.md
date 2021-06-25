@@ -28,30 +28,6 @@ Use the **UISpawner** component to spawn a runtime dynamic [slice](/docs/user-gu
   + [OnTopLevelEntitiesSpawned](#ui-editor-components-spawner-notification-bus-ontoplevelentitiesspawned)
   + [OnSpawnFailed](#ui-editor-components-spawner-notification-bus-on-spawn-failed)
 
-## Example UISpawner Component {#ui-spawner-component-example}
-
-You can view a canvas with the **UISpawner** component in Samples Project\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
-
-**To view an example canvas with a UISpawner component**
-
-1. For Samples Project, choose **File**, **Open**, **UI**, **UiFeatures**\.
-
-1. To start the game, press **Ctrl\+G**\.
-
-1. Choose **Components**, **Dynamic Components**, **Spawner**\. You can see an example of a simple button spawner and a more complex radio button spawner\.
-
-1. To exit the game, press **Esc**\.
-
-You can also view the example canvases in the **UI Editor**\.
-
-**To view the canvases**
-
-1. In O3DE Editor, choose **Tools**, **UI Editor**\.
-
-1. Navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Spawner` directory\.
-
-1. Select a file and click **Open**\.
-
 ## UISpawner Component Properties {#ui-editor-components-spawner-properties}
 
 The **UISpawner** component has the following properties:

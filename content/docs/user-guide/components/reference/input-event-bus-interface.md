@@ -16,7 +16,7 @@ void Deactivate(const AZ::InputEventNotificationId& channelId) override;
 
 You can use the `GameplayNotificationBus` to work with the `InputSubComponent`\. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus#component-entity-system-gameplay-bus-gameplaynotifications)\.
 
-You can find example Lua scripts and code in the `lumberyard_version\dev\Gems\StartingPointInput\Assets\Scripts\Input` directory\.
+You can find example Lua scripts and code in the `Gems\StartingPointInput\Assets\Scripts\Input` directory\.
 
 ## Input Event Notification Bus {#component-input-event-notification-bus}
 

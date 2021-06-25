@@ -1,6 +1,7 @@
 ---
-description: Use an Audio System component to manage global audio in Open 3D Engine.
 title: Audio System
+description: Use an Audio System component to manage global audio in Open 3D Engine.
+toc: true
 ---
 
 The Audio System Component exposes an API that is used for working with audio at a global scope. For instance, playing sounds without an Entity (using a global audio object under the hood), or setting parameters that affect the Master Mix Bus, or putting the audio system into global game states.

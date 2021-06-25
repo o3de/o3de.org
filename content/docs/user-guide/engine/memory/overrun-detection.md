@@ -27,7 +27,7 @@ Overrun detection is enabled by a setting in your project's `Game.xml` file\.
 
 **To enable overrun detection**
 
-1. Open your project's `lumberyard_version\dev\project_name\Config\Game.xml` file\.
+1. Open your project's `Config\Game.xml` file\.
 
 1. Change `useOverrunDetection` from the default `false` to `true`, as shown in the following example\.
 
@@ -44,7 +44,3 @@ When overrun detection is enabled, debug your game as usual\. Keep the following
 
 **Note**
 The detector doesn't always release memory after the memory is acquired from the operating system\. Depending on the game, the detector can increase memory consumption as gameplay continues\. If you run out of memory when you use the detector, a crash occurs in either `WindowsPlatformAllocator::ReserveBytes` or `WindowsPlatformAllocator::CommitBytes`\.
-
-## Source Code Location {#memory-management-overrun-detection-source-code}
-
-For the source code, see `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\OverrunDetectionAllocator.*`

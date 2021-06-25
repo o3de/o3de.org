@@ -248,7 +248,7 @@ At this point, you can choose either one of the next two steps to complete the t
    In this step the files that are in the v1 asset list, `fileA.txt` and `fileB.txt`, are removed based on `comparisonType 0`, the delta comparison type\. Your command output should look like this:
 
    ```
-   Printing assets from the comparison result {PATH TO YOUR LUMBERYARD ROOT HERE}\dev\multistep_delta_pc.assetlist.
+   Printing assets from the comparison result multistep_delta_pc.assetlist.
    ------------------------------------------
    - filee.cfg
    - do-not-add-me.txt
@@ -274,7 +274,7 @@ At this point, you can choose either one of the next two steps to complete the t
    For this step, the file `do-not-add-me.txt` is removed because it isn't in the generated inclusion list, based on specified the intersection comparison \(`comparisonType 2`\)\. Your command output should look like this:
 
    ```
-   Printing assets from the comparison result {PATH TO YOUR LUMBERYARD ROOT HERE}\dev\multistep_include_pc.assetlist.
+   Printing assets from the comparison result multistep_include_pc.assetlist.
    ------------------------------------------
    - filec.txt
    - filee.cfg
@@ -300,7 +300,7 @@ At this point, you can choose either one of the next two steps to complete the t
    For this step, the two `.cfg` files are removed because they don't match the file pattern, based on the file pattern comparison \(`comparisonType 4`\)\. Your command output should look like this:
 
    ```
-   Printing assets from the comparison result {PATH TO YOUR LUMBERYARD ROOT HERE}\dev\multistep_filepattern_pc.assetlist.
+   Printing assets from the comparison result multistep_filepattern_pc.assetlist.
    ------------------------------------------
    - filec.txt
    Total number of assets (1).
@@ -331,7 +331,7 @@ AssetBundlerBatch.exe compare ^
 The command should produce output that looks like this:
 
 ```
-Printing assets from the comparison result {PATH TO YOUR LUMBERYARD ROOT HERE}\dev\mygame_v1tov2_patch_pc.assetlist.
+Printing assets from the comparison result mygame_v1tov2_patch_pc.assetlist.
 ------------------------------------------
 - filec.txt
 Total number of assets (1).

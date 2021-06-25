@@ -79,7 +79,7 @@ Optionally, you can describe your asset to the UI \(and other systems\) and cust
 
 1. **Customize file open behavior** - Customize file open operations to create custom behaviors when interaction occurs with your asset\. For example, you can make your asset type open in a custom editor or create custom entities\.
 
-In addition, you can use the thumbnail API to generate thumbnails for your asset for use in the **Asset Browser** and other UI contexts\. Although not described here, the related source code is located in the `lumberyard_version\dev\Code\Framework\AzToolsFramework\AzToolsFramework\Thumbnails` directory\.
+In addition, you can use the thumbnail API to generate thumbnails for your asset for use in the **Asset Browser** and other UI contexts\. Although not described here, the related source code is located in the `Code\Framework\AzToolsFramework\AzToolsFramework\Thumbnails` directory\.
 
 ## A\. Registering Your Asset with the Asset Pipeline {#asset-pipeline-asset-type-adding-registering-your-asset-with-the-asset-pipeline}
 
@@ -88,7 +88,7 @@ When you register your asset with the asset pipeline, you define your asset to t
 ### Copying Assets {#asset-pipeline-asset-type-adding-copying-assets}
 
 To copy assets, you typically create a copy rule in a configuration file\. The configuration file that you use depends on your implementation goals\.
-+ To copy assets as\-is into the cache, add a copy rule to your `lumberyard_version\dev\AssetProcessorPlatformConfig.ini` file\.
++ To copy assets as\-is into the cache, add a copy rule to your `AssetProcessorPlatformConfig.ini` file\.
 + If the asset type is specific to a gem, add it to your gem's root directory \(the directory with the `gem.json` file\) instead of to the `AssetProcessorGemConfig.ini`\. This overrides the platform configuration file but is overridden by the game configuration file\.
 + If the asset type is specific to the game project, add it to your game directory's `AssetProcessorGamePlatformConfig.ini` file instead of to the `AssetProcessorPlatformConfig.ini` file\.
 
@@ -126,7 +126,7 @@ For more information and examples, see the [Asset Builder API](/docs/user-guide/
 
 #### Writing a Scene API Plug\-in {#asset-pipeline-asset-type-adding-writing-a-scene-api-plug-in}
 
-The Scene API provides boilerplate code so that you only have to write a few code hooks to create a plug\-in\. For an example Scene API plug\-in, see the `SceneLoggingExample` gem in the `lumberyard_version\dev\Gems` directory\. The `SceneLoggingExample` gem shows how logging can be added to the asset pipeline\. The gem adds a scene plug\-in that outputs logs for each node in the file\. The gem is a good starting point for your own code\. You can replace the log outputs with the data collection and/or compiling functions that you want\.
+The Scene API provides boilerplate code so that you only have to write a few code hooks to create a plug\-in\. For an example Scene API plug\-in, see the `SceneLoggingExample` Gem, which adds a scene plug\-in that outputs logs for each node in the file\. The gem is a good starting point for your own code\. You can replace the log outputs with the data collection and/or compiling functions that you want\.
 
 ### Registration Versus Integration {#asset-pipeline-asset-type-adding-registration-versus-integration}
 
@@ -148,7 +148,7 @@ To represent an image that is usable in\-memory for your asset, derive a class f
 + You can place `AssetData`\-derived classes in gems\.
 + Your asset class must have an AZ\_RTTI declaration, including a UUID for the class's type\. The UUID that you use for this type is actually the asset type that it represents\. The UUID matches the type that you use in your asset builder or your copy rule\.
 + While an `AssetData`\-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement\. If you have special requirements \(like third\-party considerations\), your class can simply provide a handle to a foreign system that contains the asset data\.
-+ For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the O3DE code at `lumberyard_version\dev\Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`\.
++ For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the O3DE code at `Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`\.
 
 #### Asset Instances and Asset Data {#asset-pipeline-asset-type-adding-asset-instances-and-asset-data}
 
@@ -167,7 +167,7 @@ You can place asset handlers in gems\. For information on adding code to gems, s
 
 #### Using the Generic Asset Handler for Structured Data {#asset-pipeline-asset-type-adding-using-the-generic-asset-handler-for-structured-data}
 
-If your asset is a serialized `AZ::Reflected` `ObjectStream`, you can use `GenericAssetHandler`, located in the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Asset\GenericAssetHandler.h` file\. `GenericAssetHandler` calls the usual `Serialize` and `Deserialize` functions in its callbacks that load assets and registers your types for you\.
+If your asset is a serialized `AZ::Reflected` `ObjectStream`, you can use `GenericAssetHandler`, located in the `Code\Framework\AzFramework\AzFramework\Asset\GenericAssetHandler.h` file\. `GenericAssetHandler` calls the usual `Serialize` and `Deserialize` functions in its callbacks that load assets and registers your types for you\.
 
 Because assets like classes, lists, vectors, and properties are structured data, they are suitable for handling by `GenericAssetHandler`\.
 
@@ -205,7 +205,7 @@ After you create your handler, install the class that you derived from `AssetHan
 
 1. Create an instance of the handler class in your component\.
 
-1. Call `RegisterHandler` on the asset manager instance\. For an example, see the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Script\ScriptSystemComponent.*` files\.
+1. Call `RegisterHandler` on the asset manager instance\. For an example, see the `Code\Framework\AzCore\AzCore\Script\ScriptSystemComponent.*` files\.
 **Note**
 Your component does not have to be a system component, but the component must exist to handle load request calls\.
 
@@ -213,11 +213,11 @@ Your component does not have to be a system component, but the component must ex
 
 For example asset handlers, see `MeshAssetHandler`, `ParticleAssetHandler`, and `ScriptAssetHandler` in the following locations:
 
-`lumberyard_version\dev\Gems\LmbrCentral\Code\Source\Rendering\MeshAssetHandler.*`
+`Gems\LmbrCentral\Code\Source\Rendering\MeshAssetHandler.*`
 
-`lumberyard_version\dev\Gems\LmbrCentral\Code\Source\Rendering\ParticleAssetHandler.*`
+`Gems\LmbrCentral\Code\Source\Rendering\ParticleAssetHandler.*`
 
-`lumberyard_version\dev\Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAssetHandler.h`
+`Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAssetHandler.h`
 
 ### 3\. Register Your Asset Type and Handler with the Asset System {#asset-pipeline-asset-type-adding-register-your-asset-type-and-handler-with-the-asset-system}
 
@@ -251,7 +251,7 @@ At this point, you can use your custom assets in your structures and components\
 
 1. Reflect the fields that you added by using editor reflection\. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection.md)\.
 
-1. \(Optional\) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior\. For more information, see `m_script` in the `lumberyard_version\dev\Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file\.
+1. \(Optional\) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior\. For more information, see `m_script` in the `Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file\.
 
 After you perform these steps, your component appears in the component editor\. The component has a field to which you can drag and drop the asset from the **Asset Browser**\. When the asset is dragged on the socket, the component accepts it\. At this point, runtime or editor code can call functions like `QueueLoad` on the asset\.
 
@@ -330,7 +330,7 @@ The events are described in the following table\.
 | DragLeave | Called when the item leaves the viewport, provided DragEnter accepted the event earlier\. |
 | Drop | Called if the game developer drops the item into the viewport\. |
 
-For more information, see `lumberyard_version\dev\Code\Framework\AzQtComponents\AzQtComponents\Buses\DragAndDrop.h` and `lumberyard_version\dev\Code\Sandbox\Editor\AzAssetBrowser\AzAssetBrowserRequestHandler.h`\.
+For more information, see `Code\Framework\AzQtComponents\AzQtComponents\Buses\DragAndDrop.h` and `Code\Sandbox\Editor\AzAssetBrowser\AzAssetBrowserRequestHandler.h`\.
 
 #### Priority of Handling {#asset-pipeline-asset-type-adding-priority-of-handling}
 
@@ -338,7 +338,7 @@ Bus handlers on the `DragAndDropEventsBus` are sorted by the return value of `Ge
 
 When assets from the **Asset Browser** are dragged, the `MimeData` function in the drag event contains one or more `AssetBrowserEntry` pointers\.
 
-Several utility functions make it easier to implement your drag handlers\. The following example is from `lumberyard_version\dev\Code\Sandbox\Editor\AzAssetBrowser\AzAssetBrowserRequestHandler.cpp`:
+Several utility functions make it easier to implement your drag handlers\. The following example is from `Code\Sandbox\Editor\AzAssetBrowser\AzAssetBrowserRequestHandler.cpp`:
 
 ```
 AssetBrowserEntry::ForEachEntryInMimeData<ProductAssetBrowserEntry>(event->mimeData(),

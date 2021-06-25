@@ -7,13 +7,13 @@ toc: true
 
 {{< preview-new >}}
 
-The **AWS Client Auth** Gem lets authenticated or anonymous users access AWS services. It provides authentication options using any of the following supported identity providers:
+The **AWS Client Auth** Gem lets authenticated or anonymous users access AWS services when running your game or simulation. It provides authentication options using any of the following supported identity providers:
 
 * Amazon Cognito user pool
 * [Google Identity](https://developers.google.com/identity)
 * [Login with Amazon](https://developer.amazon.com/login-with-amazon)
 
-The Gem gets AWS credentials from the Amazon Cognito identity pool based on the current authenticated login status. If a successful login is found, authenticated AWS credentials are fetched. Otherwise, anonymous AWS credentials are fetched.
+The Gem gets AWS credentials from the Amazon Cognito identity pool based on the current authenticated login status. If a successful login is found for the user, authenticated AWS credentials are fetched. Otherwise, anonymous AWS credentials are fetched.
 
 AWS credentials have shared ownership with AWS native SDK client objects. Credentials are refreshed or updated whenever a new user signs in, signs out, or refreshes tokens.
 

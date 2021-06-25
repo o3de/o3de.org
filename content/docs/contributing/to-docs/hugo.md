@@ -10,7 +10,7 @@ weight: 600
 
 The O3DE documentation website uses the [Hugo](https://gohugo.io/) static site generator and deploys using [Netlify](https://netlify.com).
 
-See the [GitHub repository](https://github.com/o3de/o3de.org) for build instructions and prerequisites, and [the Git workflow](/git-workflow) for more information on how the project works.
+See the [GitHub repository](https://github.com/o3de/o3de.org) for build instructions and prerequisites, and [the Git workflow](git-workflow.md) for more information on how the project works.
 
 ## Adding new pages 
 
