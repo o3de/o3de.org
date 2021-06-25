@@ -7,14 +7,7 @@ title: Working with the Input Component
 
 You can create an `.inputbindings` file for an **Input** component and specify the input values and events\.
 
-**Topics**
-+ [Creating an Input to Event Binding Asset](#component-input-event-binding-asset)
-+ [Creating Input Event Groups](#input-event-groups)
-+ [Creating Event Generators](#event-generators)
-+ [Mapping Input Events to Gameplay Actions](#mapping-the-input-events-to-gameplay-actions)
-+ [Testing Your Input Events](#testing-your-input-events-in-gamemode)
-
-## Creating an Input to Event Binding Asset {#component-input-event-binding-asset}
+## Creating an Input to Event Binding Asset
 
 Follow these steps to create an `.inputbindings` file\.
 
@@ -148,7 +141,7 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. In the **Entity Inspector**, click **Add Component**, and add the **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
 
-1. For **Mesh asset**, specify a mesh asset file\. This gives your entity a shape\. For example, you can specify the `lumberyard_version\dev\SamplesProject\Objects\Primitives\cube_001.cgf` file\.
+1. For **Mesh asset**, specify a mesh asset file\. This gives your entity a shape\.
 
 1. Press **Ctrl\+G** to enter game mode\.
 

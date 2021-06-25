@@ -10,9 +10,9 @@ Images or textures are automatically processed by Asset Processor, which makes t
 
 You can [edit the configuration files](/docs/userguide/assets/creating-image-processing-presets#asset-pipeline-creating-presets-imagecompiler-rc) to create your own image processing presets\. To use these presets, you append existing or customized suffixes to your image file names\. Based on these file name suffixes, Asset Processor automatically uses the appropriate preset to convert the image\.
 
-After Asset Processor successfully converts the image, the resulting `.dds` asset is placed in the appropriate `lumberyard_version\dev\Cache` directory\. The image source file remains in its original form and location\.
+After Asset Processor successfully converts the image, the resulting `.dds` asset is placed in the O3DE cache. The image source file remains in its original form and location\.
 
-Asset Processor calls the Resource Compiler, `rc.exe` \(located in `lumberyard_version\dev\Bin64vc141\rc`\), to convert the image files\. Resource Compiler also has an [image tool](/docs/user-guide/assets/image-tool.md), which you can use to manually select image presets, mip maps, and so on\. The Resource Compiler image tool can also output an `imagefilename.exportsettings`, which you must check in if your project uses source control such as Perforce\. Checking in the `.exportsettings` file ensures that the texture renders similarly for each person working on the project\.
+Asset Processor calls the Resource Compiler to convert the image files\. Resource Compiler also has an [image tool](/docs/user-guide/assets/image-tool.md), which you can use to manually select image presets, mip maps, and so on\. The Resource Compiler image tool can also output an `imagefilename.exportsettings`, which you must check in if your project uses source control such as Perforce\. Checking in the `.exportsettings` file ensures that the texture renders similarly for each person working on the project\.
 
 O3DE supports the following image file types:
 + TIFF - No grayscale

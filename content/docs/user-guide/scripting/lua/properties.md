@@ -106,21 +106,7 @@ return ExampleScript
 
 ![\[Property array\]](/images/user-guide/scripting/lua/lua-scripting-ces-properties-types-arrays.png)
 
-In the Entity Inspector, you can use the green **\+** and red **X** icons to add and remove entries in real time\. You can also use `EntityId()` to make the array elements entity references, as in the following example from the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Scripts\LyShineExamples\Image\ImageFillTypes.lua` file\.
-
-```
-local ImageFillTypes =
-{
-	Properties =
-	{
-		FilledImages = { default = { EntityId(), EntityId(), EntityId(), EntityId() } },
-		Dropdowns = { default = { EntityId(), EntityId(), EntityId(), EntityId() } },
-		RadialStartAngleSlider = { default = EntityId() },
-		SpriteRadioButtonGroup = { default = EntityId() },
-	},
-}
-...
-```
+In the Entity Inspector, you can use the green **\+** and red **X** icons to add and remove entries in real time\. You can also use `EntityId()` to make the array elements entity references.
 
 ## Grouping Properties {#lua-scripting-ces-properties-grouping}
 

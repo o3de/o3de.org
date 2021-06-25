@@ -192,7 +192,7 @@ The asset list files generated are named based on the value of this argument and
 *Required:* No
 
 **\-\-addDefaultSeedListFiles**
- Automatically include the default seed lists for the O3DE Engine, default project, and all enabled Gems\. As paths relative to `lumberyard_dev`, the files that define default assets are:
+ Automatically include the default seed lists for the O3DE Engine, default project, and all enabled Gems\. As project-relative paths, the files that define default assets are:
 +  **Engine** - `Engine\Engine_Dependencies.xml`
 +  **Gems** - `Gems\gem_name\Assets\gem_name_Dependencies.xml`
 +  **Project** - `project_name\project_name_Dependencies.xml`

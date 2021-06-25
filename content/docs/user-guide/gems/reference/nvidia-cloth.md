@@ -16,7 +16,7 @@ The NVIDIA Cloth gem provides the following:
 + **Cloth** modifier for Mesh and Actor import in **FBX Settings**\.
 + **Cloth** component for entities that contain a **Mesh** or **Actor** component\.
 + Cloth colliders that can be added to actors in **Animation Editor**\.
-+ Mesh and Actor example assets and slices located in: *lumberyard\_version*\\dev\\Gems\\NvCloth\\Assets\\
++ Mesh and Actor example assets
 + A public C\+\+ API that allows other systems and gems to access cloth simulation functionality\.
 
 ## Enable the NVIDIA Cloth gem {#enable-gem-nvidia-cloth}

@@ -1,6 +1,5 @@
 ---
-description: ' Use the Render to Texture gem to add the Render to Texture component
-  in Amazon Lumberyard. '
+description: ' Use the Render to Texture gem to add the Render to Texture component in O3DE. '
 title: Render to Texture
 ---
 # Render to Texture

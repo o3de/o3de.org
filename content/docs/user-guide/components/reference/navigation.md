@@ -23,7 +23,7 @@ The **Navigation** component has the following properties:
 ![\[Navigation component properties\]](/images/user-guide/component/component-navigation-properties.png)
 
 **Agent Type**
-Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](/docs/user-guide/components/reference/nav-area/) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `lumberyard_version\dev\your_project_name\Scripts\AI\Navigation.xml` file\.
+Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](/docs/user-guide/components/reference/nav-area/) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project.
 To define an agent type on your navigation area, see the **[Navigation Area](/docs/user-guide/components/reference/nav-area/)** component\.
 
 **Agent Speed**

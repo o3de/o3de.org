@@ -23,7 +23,7 @@ The following table describes the `AZ_Tracing` macros and their uses.
 
  For source code, see `Code\Framework\AzCore\AzCore\Debug\Trace.*`.
 
-## Suppressing AZ Trace Messages in Unit Tests {#cpp-best-practices-lumberyard-tracing-unit-tests}
+## Suppressing AZ Trace Messages in Unit Tests
 
 You can use macros to suppress AZ trace messages\.
 
