@@ -14,7 +14,7 @@ Use the following tweener parameters to customize your animation\.
 Specifies the time in seconds for the animation to go from the start value to its final value\.
 
 **\["x"\] and \["y"\]**
-Shortcuts for the `x` and `y` values of a `UiTransform2dComponent`, which is automatically attached to every UI entity\. For a full list of shortcuts, see `lumberyard_version\dev\Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua`\.
+Shortcuts for the `x` and `y` values of a `UiTransform2dComponent`, which is automatically attached to every UI entity\.
 
 **timeIntoTween**
 Specifies a tween to begin at a specified point \(in seconds\)\. For example, if the `duration` is set to `6`, and `timeIntoTween` is set to `3`, then the tween begins immediately at its halfway point and finishes in three more seconds\.

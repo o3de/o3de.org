@@ -47,7 +47,7 @@ Connection is facilitated by [GridHub](/docs/userguide/gridhub-intro.md), which 
 **Note**
 You may need to expand the Lua Editor window to see the buttons on the Lua Editor toolbar for the next few steps\.
 
-1. In the Lua Editor toolbar, leave **Context** setting at **Default** for the debugging context\. The default setting is good for debugging component entity scripts such as the one in this tutorial\. The **Cry** context option is for debugging legacy scripts such as those associated with Cry entities or the Game SDK\.
+1. In the Lua Editor toolbar, leave **Context** setting at **Default** for the debugging context\. The default setting is good for debugging component entity scripts such as the one in this tutorial\.
 ![\[Context selector\]](/images/user-guide/lua-editor-debugger-context-choose.png)
 
 1. The **Debugging** icon turns green to show that Lua Editor and O3DE Editor are connected:
@@ -57,7 +57,7 @@ You may need to expand the Lua Editor window to see the buttons on the Lua Edito
 ![\[Classes Reference\]](/images/user-guide/lua-editor-debugger-class-reference-pane.png)
 ![\[Classes\]](/images/user-guide/lua-editor-debugger-class-reference-pane-open.png)
 **Note**
-The class reference feature is active only for the default context and component entity scripts\. This feature is not active in the Cry context, which exists only for backward compatibility\.
+The class reference feature is active only for the default context and component entity scripts\.
 
    After you connect, you can pause the execution of a given script by setting breakpoints\.
 

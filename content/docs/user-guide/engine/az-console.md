@@ -9,15 +9,11 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 
 `AZ::Console` is defined in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Console\IConsole.h`
 
-**Note**
-The console found inside `AzCore` is a console and cvar system intended to replace the legacy CryEngine console and cvar system\. This system is free of any CryEngine code, and depends only on `AzCore`\.
-
 `AZ::Console` features:
 
 + Basic access protections and anti\-cheat mechanisms for locking down cvars and cfuncs in release builds\.
 + Default support for several C\+\+ types, including bool \(Boolean\), stdint \(all types\), floats, doubles, vectors and quaternions, and enums \(enumerations\)\.
 + Flexible and expandable type support\. You can add support for new cvar types without altering the console code directly\.
-+ Support for the legacy CryEngine console, specifically to reduce user confusion\. For users of the in\-game console, legacy cvars and `AZ_CVAR` cvars appear identical\.
 
 ![\[Image NOT FOUND\]](/images/userguide/az/az-console-1.png)
 

@@ -11,9 +11,7 @@ For physics objects to be simulated, they must exist inside a world\. Multiple w
 + To simulate a subset of objects that you don't want to interact with the rest of the world\. For example, you could simulate the movement of objects attached to a player's belt\.
 + To overcome hardware or software limits on a single large world\. By tiling the single world into multiple smaller worlds and moving objects among them, you can create the illusion of a single large world\.
 
-The PhysX gem automatically creates a world inside `ActionGame` with the default ID of `AZPhysicalWorld`\. By default, all objects are added to this world and simulated each frame\. You can find the source code in the following directory: `lumberyard_version\dev\Gems\CryLegacy\Code\Source\CryAction\ActionGame.*`\)
-
-## World ID {#physx-configuration-physx-world-world-id}
+## World ID
 
 Every world created in the PhysX gem is addressable by an ID of type `AZ::Crc32`\. Use this ID to address the `WorldRequestBus`\.
 
@@ -36,6 +34,6 @@ WorldRequestBus::EventResult(choose, AZ_CRC("AZPhysicalWorld"), &WorldRequests::
 **Note**
 If your game creates multiple worlds, it must manage the objects that are added into those worlds\.
 
-## Step Constants {#physx-configuring-step-constants}
+## Step Constants
 
 You can configure step constants for `Physics::WorldSettings` when `PhysXWorld` is created\. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world)\.

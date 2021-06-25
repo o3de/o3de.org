@@ -126,7 +126,7 @@ The command output displays the location of the log file, as in the following ex
 
 ![\[Entering the ui_ReportDrawCalls command.\]](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-5.png)
 
-The log file is written to `lumberyard_version\dev\Cache\project_name\pc\user\log\LyShine\drawcallreport.txt`\.
+The log file is written to `drawcallreport.txt` in the log directory\.
 
 The log file lists all of the draw calls for each enabled canvas\. The report can be useful for determining how to reduce the number of draw calls\.
 

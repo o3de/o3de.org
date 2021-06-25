@@ -31,7 +31,7 @@ unordered_multiset
 vector
 ```
 
-For multithreaded environments, O3DE has concurrent versions of `vector`, `map`, `set`, and `fixed`\. For the source code, see `lumberyard_version\dev\Code\Framework\AzCore\AzCore\std\containers`\.
+For multithreaded environments, O3DE has concurrent versions of `vector`, `map`, `set`, and `fixed`\. For the source code, see `Code\Framework\AzCore\AzCore\std\containers`\.
 
 **Recommended**: Create containers by value\. Because none of the `AZStd` containers allocate memory when they are empty, creating containers with `new` on the heap is usually not necessary\.
 

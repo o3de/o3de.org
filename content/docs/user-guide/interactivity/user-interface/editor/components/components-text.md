@@ -6,26 +6,7 @@ title: Text
 
 {{< preview-migrated >}}
 
-You can use a **Text** component to add a text string to an element\.
-
-**To see in\-game examples of completed canvases with text components**
-
-1. In O3DE Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
-
-1. Press **Ctrl\+G** to play the game and then choose in order **Components**, **Visual Components**, and **Text**\. The level has examples of text alignment, color and alpha, styling markup, overflow and wrapping, and character and line spacing\.
-
-1. Press **Esc** to exit the game\.
-
-To view the same canvases in the **UI Editor**, navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Text` directory\.
-
-You can open the following canvases:
-+ `Alignment.uicanvas` - Examples of aligning the text in its element rectangle
-+ `ColorAlpha.uicanvas` - Examples of setting different colors and transparency levels
-+ `StylingMarkup.uicanvas` - Examples of customizing the appearance of text using different styles, colors, and font in a single string
-+ `ImageMarkup.uicanvas` - Example of embedding images in text
-+ `OverflowWrap.uicanvas` - Examples of different wrap and overflow options
-
-Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Text** component\.
+You can use a **Text** component to add a text string to an element\.  Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Text** component\.
 
 
 **Text Settings**

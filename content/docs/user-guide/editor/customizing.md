@@ -11,34 +11,29 @@ You can customize your workspace by adjusting how the windows and tools are dock
 **Note**
 To change the size setting for the toolbar icon, open the `Editor.cfg` file and enter a value for the `ed_toolbarIconSize` parameter\. By default, the toolbar icon size is set to `0` \(32 pixels\)\.
 
-**Topics**
-+ [Docking Windows and Toolbars](#lumberyard-editor-customizing-docking)
-+ [Customizing Toolbars and Menus](#lumberyard-editor-customizing-tabs)
-+ [Changing Preferences](#lumberyard-editor-customizing-preferences)
-
-## Docking Windows and Toolbars {#lumberyard-editor-customizing-docking}
+## Docking Windows and Toolbars 
 
 When you drag a window or toolbar over an interface element or the edges of the editor, docking targets appear to show you where you can dock them\. These targets appear for the top, bottom, left, and right quadrants of the pane\. You can dock windows relative to any open pane, whether it is already docked, floating as a tab, or split in a column or row\.
 
 **To split a row or column**
 To split a row or column, drop the window or toolbar on a docking target\.
 
-![\[Split the column into two panes\]](/images/user-guide/lumberyard-editor-customize-splitting-column.gif)
+![\[Split the column into two panes\]](/images/user-guide/editor-customize-splitting-column.gif)
 
 **To dock a window or toolbar as a tab**
 To dock a window or toolbar as a tab, drop it on the docking target in the middle of a pane\.
 
-![\[Dock the window into a tabbed view\]](/images/user-guide/lumberyard-editor-customize-docking-tabs.gif)
+![\[Dock the window into a tabbed view\]](/images/user-guide/editor-customize-docking-tabs.gif)
 
 **To dock a window or toolbar to the editor window**
 To dock a window or toolbar to the editor window, drop it on the outer docking target\. This creates a new column next to the existing column\.
 
-![\[Dock the window to the editor window and create a new column\]](/images/user-guide/lumberyard-editor-customize-docking-to-editor-window.gif)
+![\[Dock the window to the editor window and create a new column\]](/images/user-guide/editor-customize-docking-to-editor-window.gif)
 
 **To undock a window or toolbar**
 To undock a window or toolbar, drag the title bar and move the selection window away\. Avoid the docking targets to prevent from accidentally redocking the window\. To help prevent accidental docking, a brief delay occurs before a docking target becomes active\. You can also undock a window by right\-clicking the title bar and choosing **Undock**\.
 
-![\[Undock the window from the tabbed view\]](/images/user-guide/lumberyard-editor-customize-undocking-tabs.gif)
+![\[Undock the window from the tabbed view\]](/images/user-guide/editor-customize-undocking-tabs.gif)
 
 **To prevent a window from docking**
 To prevent a window from docking, press and hold **Ctrl** while moving the window\.
@@ -46,7 +41,7 @@ To prevent a window from docking, press and hold **Ctrl** while moving the windo
 **To snap windows**
 To snap a window in place, move the window close to a stationary window\. Snapping works on the top, bottom, left, and right borders of the pane\.
 
-## Customizing Toolbars and Menus {#lumberyard-editor-customizing-tabs}
+## Customizing Toolbars and Menus
 
 You can also give toolbars and menus your own personal touch\.
 
@@ -60,7 +55,7 @@ You can also give toolbars and menus your own personal touch\.
 1. In the **Commands** tab, drag and drop menu commands to any menu category\.
 ![\[Commands tab in the Customize window\]](/images/user-guide/editor-customizing-commands.png)
 
-## Changing Preferences {#lumberyard-editor-customizing-preferences}
+## Changing Preferences 
 
 You can change the default settings to customize the look and functionality of the editor\.
 
@@ -68,7 +63,7 @@ You can change the default settings to customize the look and functionality of t
 + In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**\.
 ![\[General Settings tab in the Preferences window\]](/images/user-guide/editor-preferences.png)
 
-### General Settings {#lumberyard-editor-customizing-preferences-general}
+### General Settings 
 
 You can change the general O3DE Editor settings and file settings\.
 
@@ -160,7 +155,7 @@ You can change the general O3DE Editor settings and file settings\.
 | Maximum Backups |  Specifies the maximum number of auto backups\.  |
 | Remind Time |  Specifies the frequency of auto backup reminders \(in minutes\)\.  |
 
-### Viewport {#lumberyard-editor-customizing-preferences-viewports}
+### Viewport 
 
 You can change the default settings for the viewport\.
 
@@ -241,7 +236,7 @@ You can change the default settings for the viewport\.
 | Show Scale Warnings |  Displays an icon and warning text for objects that have been scaled\.  |
 | Show Rotation Warnings |  Displays an icon and warning text for objects that have been rotated\.  |
 
-### Experimental Features {#lumberyard-editor-customizing-preferences-experimental-features}
+### Experimental Features
 
 You can change the default settings for experimental features such as total illumination\.
 

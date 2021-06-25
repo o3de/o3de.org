@@ -13,7 +13,7 @@ weight: 600
 
 ## Default dependency file locations {#asset-bundler-default-dependencies-locations}
 
- There are four levels of default dependency files available\. All paths are relative to `lumberyard_install\dev`:
+ There are four levels of default dependency files available\.
 
 
 ****

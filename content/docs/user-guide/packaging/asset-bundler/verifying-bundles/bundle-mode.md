@@ -15,7 +15,7 @@ Using bundle mode involves two key tasks:
 
 When reporting is enabled, the `sys_report_files_not_found_in_paks` console variable reports when an asset loads that isn't in any of your bundles\. By selectively loading bundles and using the `sys_report_files_not_found_in_paks` command, you can find assets that need to be included in your bundles\.
 
-## Enabling Bundle Mode {#asset-bundler-bundle-mode-enabling-bundle-mode}
+## Enabling Bundle Mode
 
 To enable bundle mode, use the `sys_report_files_not_found_in_paks` console variable and specify a value of `1`,`2`, or `3`\. A value of `1` writes missing files as log entries without issuing warning messages\.
 
@@ -29,7 +29,7 @@ The following list shows valid arguments for the `sys_report_files_not_found_in_
 <Every other value> = Error
 ```
 
-### Log File Entries {#asset-bundler-bundle-mode-log-file-entries}
+### Log File Entries
 
 Missing files are logged with entries similar to the following:
 
@@ -37,27 +37,21 @@ Missing files are logged with entries similar to the following:
 Missing from bundle: @assets@\levels\milestone2\auto_resourcelist.txt
 ```
 
-If you use the `sys_report_files_not_found_in_paks` console variable with the launcher, the error messages are written to a log file in your cache user directory\. On a PC, these are located at `lumberyard_version\dev\Cache\project_name\pc\user\log\logs\pakmissingassets.log`\.
+If you use the `sys_report_files_not_found_in_paks` console variable with the launcher, the error messages are written to a log file.
 
-### Setting the Console Variable {#asset-bundler-bundle-mode-setting-the-console-variable}
+### Setting the Console Variable
 
-Enabling the console variable before running the editor or launcher ensures that all missing assets are reported\. To ensure that the console variable is always active when you run the editor or launcher, modify the following files:
-
-Editor: `lumberyard_version\dev\editor.cfg`
-
-Runtime: `lumberyard_version\dev\project_name\autoexec.cfg`
+Enabling the console variable before running the editor or launcher ensures that all missing assets are reported\. To ensure that the console variable is always active when you run the editor or launcher, modify `editor.cfg` and `autoexec.cfg` in your project directory.
 
 You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](/docs/user-guide/engine/remote-console.md)\.
 
-## Bundle Mode Commands {#asset-bundler-bundle-mode-bundle-mode-commands}
+## Bundle Mode Commands
 
 Bundle mode has two commands:
 + **loadbundles** *<bundle\_directory>* *<extension>* - Loads all the bundles from the specified directory into the game\. If no arguments are supplied, the directory defaults to `Bundles` and the extension to `.pak`\.
-
-  For example, if you run the Starter Game project and enter the command `loadbundles` without arguments, O3DE loads all source files in the `lumberyard_version\dev\StarterGame\Bundles` directory that have the extension `.pak`\.
 + **unloadbundles** - Unload any bundle that was loaded through the `loadbundles` command\.
 
-## Using Bundle Mode Example {#asset-bundler-bundle-mode-using-bundle-mode-example}
+## Using Bundle Mode Example
 
 The following procedure shows how bundle mode works\. In the example, game mode is entered when a bundle is missing\.
 

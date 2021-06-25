@@ -66,7 +66,7 @@ enum class JobDependencyType : AZ::u32
     };
 ```
 
-For example code, see the CustomAssetExample gem\. For source files related to builders, see the `lumberyard_version\dev\Gems\CustomAssetExample\Code\Source\CustomAssetExample\Builder\CustomAssetExampleBuilderWorker.cpp` file\.
+For example code, see the CustomAssetExample gem\.
 
 **Example**
 To declare a job dependency inside a builder, see the following code example\.

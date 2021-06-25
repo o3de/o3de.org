@@ -6,26 +6,7 @@ title: Particle Emitter
 
 {{< preview-migrated >}}
 
-You can use a **Particle Emitter** component to emit two\-dimensional particles from an element\.
-
-**To see in\-game examples of completed canvases with a **Particle Emitter** component**
-
-1. In O3DE Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
-
-1. Press **Ctrl\+G** to play the game and then choose in order **Components**, **Visual Components**, and **Particle Emitter**\.
-
-   You can view particle emitter examples that create a variety of spark effects and trail effects\.
-
-1. Press **Esc** to exit the game\.
-
-To view these same canvases in the **UI Editor**, navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\ParticleEmitter` directory\.
-
-You can open the following canvases:
-+ `ParticleEmitter.uicanvas`
-+ `ParticleEmitterSparks.uicanvas`
-+ `ParticleEmitterTrails.uicanvas`
-
-Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Particle Emitter** component\.
+You can use a **Particle Emitter** component to emit two\-dimensional particles from an element\. Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Particle Emitter** component\.
 
 
 **Emitter Settings**
