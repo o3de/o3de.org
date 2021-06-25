@@ -12,7 +12,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 
 **To start the Universal Remote Console**
 
-1. Run `lumberyard_version\dev\Tools\RemoteConsole\RemoteConsole.exe`
+1. Run `Tools\RemoteConsole\RemoteConsole.exe`
 ![\[Image NOT FOUND\]](/images/user-guide/remote-console.png)
 
 1. To see output from the O3DE logging system, click the **Full Log** tab\.
@@ -48,7 +48,7 @@ If your network allows you to assign fixed IP addresses per device, you can edit
 
 This lets you select from a list of devices instead of entering the IP address each time\. Once successfully connected, the status indicator in the lower right corner will turn green\.
 
-## Issuing Commands {#lumberyard-remote-console-commands}
+## Issuing Commands
 
 In the **Type a command** box at the bottom of the window, enter a command like the ones that follow\. This control features autocomplete and, for certain commands \(like `map`\), can also detect available options\.
 

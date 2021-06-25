@@ -12,26 +12,6 @@ O3DE supports all the best known memory allocation schemes\. You can use O3DE's 
 **Note**
 For best C\+\+ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/engine/memory-management.md)\.
 
-**Topics**
-- [Using Memory Allocators in O3DE {#memory-allocators}](#using-memory-allocators-in-lumberyard-memory-allocators)
-  - [Manually Allocating Memory {#memory-allocators-manually-allocating-memory}](#manually-allocating-memory-memory-allocators-manually-allocating-memory)
-  - [AZ Memory Allocators {#memory-allocators-az-memory-allocators}](#az-memory-allocators-memory-allocators-az-memory-allocators)
-  - [Applying Allocators to Your Classes {#memory-allocators-applying-allocators-to-your-classes}](#applying-allocators-to-your-classes-memory-allocators-applying-allocators-to-your-classes)
-  - [AZ Allocator Schemas {#memory-allocators-az-allocator-schemas}](#az-allocator-schemas-memory-allocators-az-allocator-schemas)
-  - [Creating an Allocator {#memory-allocators-creating-an-allocator}](#creating-an-allocator-memory-allocators-creating-an-allocator)
-    - [Using Your Own Allocators from Containers {#memory-allocators-using-your-own-allocators-from-containers}](#using-your-own-allocators-from-containers-memory-allocators-using-your-own-allocators-from-containers)
-    - [Child Allocator Example {#memory-allocators-creating-a-child-allocator-example}](#child-allocator-example-memory-allocators-creating-a-child-allocator-example)
-  - [Static Initialization {#memory-allocators-static-initialization}](#static-initialization-memory-allocators-static-initialization)
-  - [Legacy Memory Management {#memory-allocators-legacy-memory-management}](#legacy-memory-management-memory-allocators-legacy-memory-management)
-
-## Manually Allocating Memory {#memory-allocators-manually-allocating-memory}
-
-O3DE uses the following memory allocation functions\. You can find the source code in the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\` directory\.
-
-
-****
-
-
 ## AZ Memory Allocators {#memory-allocators-az-memory-allocators}
 
 The following diagram illustrates the hierarchy of AZ memory allocators\.

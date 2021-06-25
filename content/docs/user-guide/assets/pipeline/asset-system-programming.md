@@ -19,7 +19,7 @@ The O3DE asset system includes the following classes and class families:
 + [AzFramework::AssetCatalog](#asset-pipeline-asset-system-programming-azframeworkassetcatalog)
 + [AZ::Data::AssetHandler Derived Classes](#asset-pipeline-asset-system-programming-azdataassethandler-derived-classes)
 
-The following sections describe these classes in detail\. For the source code, see the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Asset` directory\.
+The following sections describe these classes in detail\. For the source code, see the `Code\Framework\AzCore\AzCore\Asset` directory\.
 
 ### AZ::Data::AssetData Derived Classes {#asset-pipeline-asset-system-programming-azdataassetdata-derived-classes}
 
@@ -32,10 +32,10 @@ The following O3DE classes derive from `AssetData`:
 
 | AssetData Class | Source Code Location |
 | --- | --- |
-| ScriptAsset | lumberyard\_version\\dev\\Code\\FrameworkNoteBeg\\AzCore\\AzCore\\Script\\ScriptAsset\.h |
-| SliceAsset | lumberyard\_version\\dev\\Code\\Framework\\AzCore\\AzCore\\Slice\\SliceAsset\.h |
-| MeshAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\MeshAsset\.h |
-| ParticleAsset | lumberyard\_version\\dev\\Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset\.h |
+| ScriptAsset | Code\\FrameworkNoteBeg\\AzCore\\AzCore\\Script\\ScriptAsset\.h |
+| SliceAsset | Code\\Framework\\AzCore\\AzCore\\Slice\\SliceAsset\.h |
+| MeshAsset | Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\MeshAsset\.h |
+| ParticleAsset | Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset\.h |
 
 **Note**
 Adding your own asset type to O3DE includes the following high\-level steps:
@@ -95,7 +95,7 @@ AZ::Data::AssetBus::Handler::BusConnect(m_scriptAsset.GetId());
 
 In the example, `m_scriptAsset` is a field of type `Asset<ScriptAsset>`\.
 
-For related code, see `lumberyard_version\dev\Code\Framework\AzToolsFramework\AzToolsFramework\ToolsComponents\ScriptEditorComponent.cpp`\.
+For related code, see `Code\Framework\AzToolsFramework\AzToolsFramework\ToolsComponents\ScriptEditorComponent.cpp`\.
 
 Note the following points:
 + `GetAsset` loads the asset asynchronously\. By assigning the asset to the member `m_scriptAsset`, you ensure that the reference count is at least `1`\.

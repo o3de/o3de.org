@@ -5,19 +5,10 @@ title: Debugging Issues
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This topic references tools and features that are [legacy](/docs/userguide/ly-glos-chap#legacy)\. If you want to use legacy tools in O3DE Editor, disable the [CryEntity Removal gem](/docs/userguide/gems/cryentity-removal-gem) using the [Project Configurator](/docs/userguide/configurator/intro) or the [command line](/docs/userguide/lmbr-exe)\. To learn more about legacy features, see the [O3DE Legacy Reference](https://d3bqhfbip4ze4a.cloudfront.net/lumberyard-legacy.pdf)\. |
-
 O3DE provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues\.
 + [Cinematics debugging](/docs/user-guide/visualization/cinematics/debugging.md) - Debug cinematics issues\.
 + [Particle debugging](/docs/userguide/particles/debugging.md) - Debug particles\.
 + [Vegetation debugging](/docs/userguide/vegetation/debugging.md) - Debug vegetation objects\.
-
-**Topics**
-+ [Crash logging](#debugging-crash-logging)
-+ [Using Console Debug Views](#debugging-debug-views)
-+ [Using the `sys_asserts` Console Variable \(CVAR\)](/docs/user-guide/engine/debugging/cvar-asserts.md)
 
 ## Crash logging {#debugging-crash-logging}
 

@@ -10,12 +10,6 @@ Profiler is a O3DE tool that can capture, save, and analyze network, CPU, and VR
 To capture data, Profiler works with GridHub\. When you launch Profiler, GridHub launches automatically as a supporting background process\. For more information about GridHub, see [Using GridHub](/docs/userguide/gridhub-intro.md)\.
 
 **Topics**
-<!--tdoyon: Points to main tutorials page - still need profiler tutorial -->
-+ [Profiler Tutorial](/docs/learning-guide/)
 + [Creating and Using Annotations](/docs/user-guide/testing/profiler/annotations/)
-<!--tdoyon: Points to main networking/multiplayer page that still needs populating -->
-+ [Using Profiler for Networking](/docs/user-guide/networking/)
 + [Using the Profiler for CPU Usage](/docs/user-guide/testing/profiler/cpu/)
 + [Using Profiler for VRAM](/docs/user-guide/testing/profiler/vram/)
-<!--tdoyon: Need GridHub tutorial -->
-+ [Using GridHub](/docs/userguide/gridhub-intro.md)

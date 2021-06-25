@@ -43,9 +43,7 @@ You can view logs for internal operations of Asset Processor\. If Asset Processo
 
 1. Click **OK**\. Your log report appears as another tab in Asset Processor\.
 
-1. You can click **Copy all** and paste the raw logs into a text file\.
-
-1. You can also click **Open log files** to open `lumberyard_version\dev\Bin64vc141\logs\JobLogs` directory\.
+1. You can click **Copy all** and paste the raw logs into a text file\. You can also click **Open log files** to open the directory containing the log files in your operating system.
 
 1. In a text editor, open the `example.log` file\.
 
@@ -70,7 +68,7 @@ You must start Asset Processor before you can enter a `-debug` command\.
 
 **To debug Asset Processor using Asset Builder**
 
-1. Navigate to the `lumberyard_version\dev\Bin64vc141` directory\.
+1. Navigate to `<build>/bin/<config>/` in a termainal.
 
 1. In a command line prompt, enter the following command to get a list of possible options\.
 
@@ -123,8 +121,6 @@ Use the following procedure to debug in the following scenarios:
 
 **To debug Asset Builders from Asset Processor**
 
-1. Navigate to the `lumberyard_version\dev` directory\.
-
 1. In a text editor, open the `AssetProcessorPlatformConfig.ini` file and set `maxjobs=1`\. This limits Asset Processor to run one job at a time\.
 
 1. Run Asset Processor so that it spawns the Asset Builder process\.
@@ -142,13 +138,3 @@ If you're a game artist and you're having issues running Asset Processor, this m
 
 **Note**
 If you're an engineer making new BuilderSDK\-based builders, we recommend that you don't delete your cache\.
-
-**To delete the Asset Processor cache**
-
-1. Quit Asset Processor\.
-
-1. Navigate to the `lumberyard_version/dev/Bin` directory\.
-
-1. Delete the `Cache` directory\.
-
-1. Restart Asset Processor to rebuild all assets\.

@@ -24,7 +24,7 @@ For example, [static objects](/docs/user-guide/components/reference/nav-area/#co
 
 2. If you want to specify an [agent type](/docs/user-guide/components/reference/navigation/#component-navigation-properties), select it in the **Navigation Seed** component\.
 
-3. [Move](/docs/userguide/editor/toolbars#lumberyard-editor-toolbars-editmode) the seed around\.
+3. [Move](/docs/userguide/editor/toolbars) the seed around\.
 
    If you [turned on visualization](/docs/userguide/components/nav-area#render-navigation-mesh), all AI\-accessible areas render blue in the chunk where you placed the navigation seed\. Inaccessible areas render red\.
 
