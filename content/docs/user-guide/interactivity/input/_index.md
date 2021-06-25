@@ -5,10 +5,11 @@ title: Input
 
 {{< preview-migrated >}}
 
-Use the information in this section to learn about game input in Open 3D Engine\.
+Use the information in this section to learn about game input in Open 3D Engine.
 
-**Note**
-For information on the **Input** component that replaces legacy action maps, see [Input](/docs/user-guide/components/input.md)\.
+{{< note >}}
+For information on the **Input** component, see [Input](/docs/user-guide/components/reference/input).
+{{< /note >}}
 
 Input is what differentiates interactive experiences from all other entertainment media\. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device\. There are many different types of input devices, each of which can produce a wide range of input data\. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems\. As a cross\-operating system and device game engine, O3DE's goal is to provide independent access to input data from any supported device\. The goal is to provide a common interface with these qualities:
 + OS and device agnostic
@@ -80,7 +81,7 @@ This core set of input devices are managed by the `AzFramework::InputSystemCompo
 
 #### Creating Input Devices {#input-intro-creating-input-devices}
 
-You can create and implement new types of input devices by inheriting from `AzFramework::InputDevice` and creating or destroying instances of the new class as required\. For examples, see the [Configuring your Project for Virtual Reality](/docs/userguide/vr/configuring.md), which define and create new types of input devices that inherit from `AzFramework::InputDevice`\. Their code is located at the O3DE directory locations `\dev\Gems\Oculus` and `\dev\Gems\OpenVR`, respectively\.
+You can create and implement new types of input devices by inheriting from `AzFramework::InputDevice` and creating or destroying instances of the new class as required.
 
 The implementation details of each input device differ depending on the device type and operating system\. However, almost all devices follow a similar pattern\. They use an OS\-specific API to obtain raw input data for each frame and then update all the device's associated input channels accordingly\.
 
