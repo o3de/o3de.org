@@ -1,7 +1,7 @@
 ---
 linkTitle: Get Started
 title: Get started with Open 3D Engine!
-description: New to O3DE? Get started with and overview, installation and setup information, and a quick tour of O3DE.
+description: New to O3DE? Get started with an overview, installation and setup information, and a quick tour of O3DE.
 weight: 100
 menu_uuid: welcome
 guide_img: "/images/welcome-guide/guide_img.png"
