@@ -1,6 +1,6 @@
 ---
 title: Setting the Panning Mode
-description: Set the Audio panning in Open 3D Engine.
+description: Set the audio panning in Open 3D Engine.
 ---
 
 Two common speaker panning modes can be set in the engine: Speakers and Headphones.
