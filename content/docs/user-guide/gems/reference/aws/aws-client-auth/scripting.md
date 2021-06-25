@@ -14,18 +14,22 @@ This page demonstrates example usage of Script Canvas nodes and Lua scripting de
 
 ### Initialize
 
-Initializes all event buses (EBuses) from the AWS Client Auth Gem.
+This script initializes the following event buses (EBuses) from the AWS Client Auth Gem:
 
-Note the use of a `Providers` variable, which is an array of strings.
+* **AuthenticationProviderRequestBus**
+* **AWSCognitoUserManagementRequestBus**
+* **AWSCognitoAuthorizationRequestBus**
 
-Input data pins:
+Note the use of a `Providers` variable when initializing the AuthenticationProviderRequestBus. This variable is an array of authentication provider strings.
 
-* Providers
-* Authentication provider registry file path
+Input data pins for the AuthenticationProviderRequestBus bus's **Initialize** function:
 
-Output data pins:
+* Providers (string array)
+* File path to `authenticationProvider.setreg` (string)
 
-* Result
+Output data pin for all Initialize functions:
+
+* Result (boolean)
 
 ![Scripting AWS Client Auth Initialize node](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-initialize.png)
 
@@ -37,9 +41,17 @@ Note the variables created for providers, tokens, and credentials.
 
 ![Scripting password sign in with the Amazon Cognito user pool](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-password-sign-in.png)
 
+{{< todo >}}
+Break this image into smaller pieces and describe each one.
+{{< /todo >}}
+
 ### Login with Amazon device sign-in flow
 
 ![Scripting LWA device sign in](/images/user-guide/gems/reference/aws/aws-client-auth/scripting-lwa-device-sign-in.png)
+
+{{< todo >}}
+Break this image into smaller pieces and describe each one.
+{{< /todo >}}
 
 ## Lua
 
