@@ -1,6 +1,7 @@
 ---
 title: Docs smoke test page
 main_menu: false
+draft: true
 ---
 
 This page serves two purposes:
