@@ -36,7 +36,7 @@ The following list of properties are used to define PBR materials in Atom. An ov
 
 The **base color** defines the diffuse albedo for non-metals, and the specular color for metals. 
 
-When configuring the **Base Color** property group in a PBR material type, you can set a linear sRGB color in the `Color` property. This color can be combined with a texture by assigning an image to the `Texture Map` property. The `Texture Blend Mode` dictates how the `Color` and `Texture Map` are combined. And the `Factor` value can be used to adjust the strength of the blend. Colors are stored as linear sRGB on disk and later converted to ACEScg before passing to the shaders and the GPU (for more information, see [Color Management](docs/atom-guide/color-management/index.md)). 
+When configuring the **Base Color** property group in a PBR material type, you can set a linear sRGB color in the `Color` property. This color can be combined with a texture by assigning an image to the `Texture Map` property. The `Texture Blend Mode` dictates how the `Color` and `Texture Map` are combined. And the `Factor` value can be used to adjust the strength of the blend. Colors are stored as linear sRGB on disk and later converted to ACEScg before passing to the shaders and the GPU (for more information, see [Color Management](docs/atom-guide/look-dev/color-management/index.md)). 
 
 ### Metallic 
 

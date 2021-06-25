@@ -18,14 +18,14 @@ A **scene** represents a rendering context. Commonly, we need an application to 
 In Atom RPI, scenes are defined by the `Scene` class. The RPI system must have at least one scene. Scenes are independent of each other, and must have their own scene Shader Resource Group (SRG) to provide related constant buffer data.
 
 ### Pass
-A **pass** is where the GPU command submissions are handled. GPU commands, such as draw commands, compute commands, or copy commands must be submitted in a pass. For more information on passes, see the [Pass System](../pass-system/pass-system/) section. 
+A **pass** is where the GPU command submissions are handled. GPU commands, such as draw commands, compute commands, or copy commands must be submitted in a pass. For more information on passes, see the [Pass System](../passes/pass-system/) section. 
 
 ### Render Pipeline
 A **render pipeline** defines how to render a scene.
 
 A scene that is not rendered does not need to have a render pipeline. Otherwise, a rendered scene must have at least one render pipeline. It can have additional render pipelines to render the scene in different ways. For example, in a level editor, we might have several windows to show the same level with different rendering modes. One mode might render the in-game view, which includes lighting passes and post effects. The other mode might render a debug view, which shows colored wireframes.
 
-A render pipeline contains a pass tree that defines how passes handle draw data submission (see [Pass System](pass-system.md) section). A render pipeline also provides an interface to associate views and assign persistent attachments to the passes, so users don't need to manually look for the specific pass to do the operation.
+A render pipeline contains a pass tree that defines how passes handle draw data submission (see [Pass System](../passes/pass-system/) section). A render pipeline also provides an interface to associate views and assign persistent attachments to the passes, so users don't need to manually look for the specific pass to do the operation.
 
 Since pass trees in a render pipeline can be dynamic, it's possible to use them to enable or disable passes during runtime. For example, if we need to disable some post-effect during runtime, we can disable the pass responsible for the post effect. 
 
@@ -41,4 +41,4 @@ RPI system simulation is used primarily for graphics features that are computed 
 ## Draw Data Flow
 Feature processors prepare draw packets and add them to views. (Draw packets are collections of draw items, which are data to be rendered.) Views filter the draw items from the draw packets into different groups. They then sort each group of draw items. A pass requests a certain group of draw items from a view and then submits them. 
 
-For a more detailed explanation, see [Frame Rendering Process](/core-systems/frame-rendering/).
+For a more detailed explanation, see [Frame Rendering Process](../frame-rendering/).
