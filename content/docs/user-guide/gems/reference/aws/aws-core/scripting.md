@@ -20,9 +20,9 @@ Input data pins:
 * Object KeyName
 * Outfile Name
 
-Get a success message from the **OnSuccess** handler. The file downloads to the location specified as the output file name.
+If the function is successful, you will get a success message from the **OnGetObjectSuccess** event handler on the **AWSS3BehaviorNotificationBus** bus. The file downloads to the location specified as the Outfile Name.
 
-Get an error message from the **OnError** handler.
+If the function results in an error, you will get an error message from the **OnGetObjectError** event handler on the **AWSS3BehaviorNotificationBus** bus.
 
 ![Scripting AWS S3 GetObject node](/images/user-guide/gems/reference/aws/aws-core/scripting-s3-get-object.png)
 
@@ -33,9 +33,9 @@ Input data pins:
 * Bucket Resource KeyName
 * Object KeyName
 
-Get a success message from the **OnSuccess** handler.
+If the function is successful, you will get a success message from the **OnHeadObjectSuccess** event handler on the **AWSS3BehaviorNotificationBus** bus.
 
-Get an error message from the **OnError** handler.
+If the function results in an error, you will get an error message from the **OnHeadObjectError** event handler on the **AWSS3BehaviorNotificationBus** bus.
 
 ![Scripting AWS S3 HeadObject node](/images/user-guide/gems/reference/aws/aws-core/scripting-s3-head-object.png)
 
@@ -54,9 +54,9 @@ Key map variable format:
 
 Refer to [AttributeValue](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeValue.html) in the Amazon DynamoDB API Reference.
 
-Get a result in the `AttributeValue` map from the **OnSuccess** handler.
+If the function is successful, you will get a result in the `AttributeValue` string map from the **OnGetItemSuccess** event handler on the **AWSDynamoDBBehaviorNotificationBus** bus.
 
-Get an error message from the **OnError** handler.
+If the function results in an error, you will get an error message from the **OnGetItemError** event handler on the **AWSDynamoDBBehaviorNotificationBus** bus.
 
 ![Scripting AWS DynamoDB GetItem node](/images/user-guide/gems/reference/aws/aws-core/scripting-dynamodb-get-item.png)
 
@@ -69,8 +69,8 @@ Input data pins:
 * Function Resource KeyName
 * Payload
 
-Get the function return value from the **OnSuccess** handler.
+If the function is successful, you will get the return value from the **OnInvokeSuccess** event handler on the **AWSLambdaBehaviorNotificationBus** bus.
 
-Get an error message from the **OnError** handler.
+If the function results in an error, you will get an error message from the **OnInvokeError** event handler on the **AWSLambdaBehaviorNotificationBus** bus.
 
 ![Scripting AWS Lambda Invoke node](/images/user-guide/gems/reference/aws/aws-core/scripting-lambda-invoke.png)
