@@ -25,16 +25,16 @@ The Atom architecture is designed for modularity, allowing developers to activat
 
 
 **RHI**  
-The RHI is at the lower level of the rendering pipeline. It talks directly to different graphics APIs and hardware. It provides an abstract layer of APIs to expose the GPU's functionality so high-level graphics features don't need to use platform-specific graphics APIs. For more information on the RHI, see [RHI](core-systems/rhi/_index.md).
+The RHI is at the lower level of the rendering pipeline. It talks directly to different graphics APIs and hardware. It provides an abstract layer of APIs to expose the GPU's functionality so high-level graphics features don't need to use platform-specific graphics APIs. For more information on the RHI, see [RHI](dev-guide/rhi/_index.md).
 
 **RPI**  
-The RPI is the data-driven layer that makes the rendering pipeline customizable. The RPI also defines fundamental graphics assets such as images, materials, and shaders. Furthermore, it defines the Feature Processors that implement most of the high-level graphics features and enable their interaction with the render pipeline. When making changes to the rendering pipeline or adding and editing features, developers and engineers work with the RPI API (C++ and JSON). For more information on the RPI, see [RPI](core-systems/rpi/_index.md).
+The RPI is the data-driven layer that makes the rendering pipeline customizable. The RPI also defines fundamental graphics assets such as images, materials, and shaders. Furthermore, it defines the Feature Processors that implement most of the high-level graphics features and enable their interaction with the render pipeline. When making changes to the rendering pipeline or adding and editing features, developers and engineers work with the RPI API (C++ and JSON). For more information on the RPI, see [RPI](dev-guide/rpi/_index.md).
 
 **Shader and Materials**  
-In Atom, shaders are written in the Amazon Shading Language (AZSL), an extended version of HLSL. Shaders are compiled by the AZSL compiler. Then, materials reference these shaders, which ultimately describes how to render a mesh. For more information on shaders and materials, see [Shader System](core-systems/shaders/_index.md) and [Material System](core-systems/materials/_index.md).
+In Atom, shaders are written in the Amazon Shading Language (AZSL), an extended version of HLSL. Shaders are compiled by the AZSL compiler. Then, materials reference these shaders, which ultimately describes how to render a mesh. For more information on shaders and materials, see [Shader System](dev-guide/shaders/_index.md) and [Material System](dev-guide/materials/_index.md).
 
 **Features**  
-As a part of the renderer, Atom provides built-in graphics features. Most graphics features are implemented using Feature Processor interfaces, which are defined in the RPI. For example, the RPI defines the Mesh Feature Processor, which implements static and dynamic meshes. Other features (like physically based rendering) live outside of feature processors and are instead implemented through passes and shaders. Atom integrates many features into Open 3D Engine (O3DE) through the Atom Gem, introducing components such as lighting, camera, and mesh. For more information on the features, see [Features and Feature Processors](core-systems/features/_index.md). 
+As a part of the renderer, Atom provides built-in graphics features. Most graphics features are implemented using Feature Processor interfaces, which are defined in the RPI. For example, the RPI defines the Mesh Feature Processor, which implements static and dynamic meshes. Other features (like physically based rendering) live outside of feature processors and are instead implemented through passes and shaders. Atom integrates many features into Open 3D Engine (O3DE) through the Atom Gem, introducing components such as lighting, camera, and mesh. For more information on the features, see [Features and Feature Processors](dev-guide/features/_index.md). 
 
 ![Atom Architecture](/images/atom-guide/what-is-atom/atom-architecture.jpg)
 

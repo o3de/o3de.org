@@ -67,7 +67,7 @@ Frame Graph
 Feature Processor  
 : Feature processors are responsible for receiving data from the simulation and processing it into a form that's consumable by the renderer. Each feature processor handles a specific type of data, like static meshes or hair. Feature processors own render proxies and convert them into draw packets that are consumed by the RHI. For example, an Animated Mesh Feature Processor owns all the animated mesh render proxies in a given scene. Feature processors are owned by scenes and there can be at most one feature processor of a given type per scene.
 
-*Related to: [Render Pipeline Interface (RPI)](dev-guide/rpi/), [RPI System](dev-guide/rpi/rpi-system.md), [Frame Rendering](dev-guide/frame-rendering.md), [Features](features/), [Creating a New Feature](dev-guide/rpi/creating-a-feature-processor.md)*
+*Related to: [Render Pipeline Interface (RPI)](dev-guide/rpi/), [RPI System](dev-guide/rpi/rpi-system.md), [Frame Rendering](/docs/atom-guide/dev-guide/frame-rendering/), [Features](features/), [Creating a New Feature](dev-guide/rpi/creating-a-feature-processor.md)*
 
 Material  
 : A material is a data item that can be applied to a single mesh, describing how it should be rendered. Each material references a material type that defines the material's behavior and properties. In the Atom documentation, the term "material data" is used to disambiguate from the general concept of a "material". 
@@ -121,7 +121,7 @@ Pass
 Render component  
 : A render component is a feature that pushes data to the Atom renderer via its corresponding feature processor. For example, at every frame, an Animated Mesh Component sends bone matrix updates to its Feature Processor.
 
-*Related to: [Open 3D Engine - Components](/content/docs/user-guide/components/), [Frame Rendering](dev-guide/atom-architecture/frame-rendering-process.md), [Creating a Feature Processor](dev-guide/rpi/creating-a-feature-processor.md)*
+*Related to: [Open 3D Engine - Components](/docs/user-guide/components/), [Frame Rendering](/docs/atom-guide/dev-guide/frame-rendering/), [Creating a Feature Processor](dev-guide/rpi/creating-a-feature-processor.md)*
 
 Render Hardware Interface (RHI)  
 : The Render Hardware Interface (RHI) is a hardware abstraction layer, and is the lowest layer of the Atom renderer. The RHI manages GPU resources, handles GPU fences, schedules work on the GPU queues, and handles synchronization between the GPU work.
