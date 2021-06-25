@@ -15,12 +15,9 @@ serializeContext->Class<SerializedStruct>()
     ->Version(1)
 ```
 
-Successful conversion of serialized data to a newer version requires careful planning\. Use the information in the following sections to help with your planning\.
-+ [Version Converters](#component-entity-system-versioning-converters)
-+ [Upgrade Class Builders](#component-entity-system-versioning-builders)
-+ [Deprecation](#component-entity-system-versioning-deprecation)
+Successful conversion of serialized data to a newer version requires careful planning\.
 
-## Version Converters {#component-entity-system-versioning-converters}
+## Version Converters
 
 A version change can create incompatibilities that require data to be converted from one format to another\. To resolve this, you can implement a version converter that reformats data "on the spot" to maintain data compatibility\. For example, you might require a version converter if you change a data type or a container \(for example, an `AZStd::vector` becomes an `AZStd::unordered_map`\)\.
 
@@ -88,15 +85,15 @@ if (rootElement.GetVersion() <= 1)
 ```
 
 **Note**
-If you need to emit a warning or error when a conversion fails \(for example, for asset builds\), use the `AZ_Warning` or `AZ_Error` macro\. For related source code, see `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Debug\Trace.h`\.
+If you need to emit a warning or error when a conversion fails \(for example, for asset builds\), use the `AZ_Warning` or `AZ_Error` macros\.
 
-## Upgrade Class Builders {#component-entity-system-versioning-builders}
+## Upgrade Class Builders 
 
 Slice data patches present a unique challenge to versioning your component data structures\. Data patches cannot be upgraded by version converters because they do not contain all the information about a component class\. Changing the serialization of a component without upgrading data patches that contain partial component data can lead to crashes, corrupted slice data, or invalid slice files that cannot be loaded or manipulated and must be rebuilt from scratch\.
 
 In most cases, the solution is to use NameChange and TypeChange class builders alongside your version converters\. This causes the serializer to update the data patch and apply basic type changes and field name changes\. These builders can be chained together to upgrade across multiple version changes, and can also be written to skip versions entirely\.
 
-### Class Builder Syntax {#versioning-class-builder-format}
+### Class Builder Syntax
 
 Name\-change class builders require an input and output version, followed by the input serialized name and a new output name\.
 
@@ -110,7 +107,7 @@ Type\-change class builders require input and output data types as template argu
 TypeChange<InputType, OutputType>("FieldName", InputVersion, OutputVersion, Function<OutputType(InputType)>)
 ```
 
-### NameChange Class Builder Examples {#versioning-name-change-builder}
+### NameChange Class Builder Examples 
 
 In the following example, we use a `NameChange` class builder to change a serialized name of a field from `"MyData"`, used in version `4` of the component serialization, to `"Data"` in version `5`\.
 
@@ -136,7 +133,7 @@ serializeContext->Class<ExampleClass>()
     ->NameChange(4, 5, "MyStructData", "StructData");
 ```
 
-### TypeChange Class Builder Examples {#versioning-type-change-builder}
+### TypeChange Class Builder Examples
 
 In the following example, class member `m_data` has changed from an `int` in version `4` to a `float` in version `5`\. We add a `TypeChange` class builder to the serialization context so that any data patches containing the serialized field name `"MyData"` will be applied using the new data type\.
 
@@ -205,7 +202,7 @@ class ExampleClass
 };
 ```
 
-### Advanced Class Builder Examples {#versioning-class-builder-advanced-examples}
+### Advanced Class Builder Examples
 
 The following examples demonstrate more complex usage of class builders\.
 
@@ -293,7 +290,7 @@ class ExampleClass
 ```
 We strongly recommend that you do not use this version skipping technique with the `NameChange` builder\. Doing so will cause problems for any `TypeChange` builders used on the same field in between the skipped versions as they try to match the serialized field name\.
 
-## Deprecation {#component-entity-system-versioning-deprecation}
+## Deprecation
 
 The serialization context also supports deprecation of a previously reflected class name\. To deprecate a class, use the `ClassDeprecate` method\. After a class is deprecated, any instances of the class are silently discarded during load\.
 

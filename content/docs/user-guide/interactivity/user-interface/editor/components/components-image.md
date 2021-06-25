@@ -6,26 +6,7 @@ title: Image
 
 {{< preview-migrated >}}
 
-You can use an **Image** component to add a color tint or texture to an element\.
-
-**To see in\-game examples of completed canvases with **Image** components**
-
-1. In O3DE Editor, in the [Samples Project](/docs/userguide/samples/projects/samples.md), open the UiFeatures level\.
-
-1. Press **Ctrl\+G** to play the game and then choose f**Components**, and then **Visual Components**, and then **Image**\.
-
-   You can view examples of image types such as sliced, stretched, fixed, tiled, stretched to fit, and stretched to fill\.
-
-1. Press **Esc** to exit the game\.
-
-To view these same canvases in the **UI Editor**, navigate to the `lumberyard_version\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Image` directory\.
-
-You can open the following canvases:
-+ `ColorTest.uicanvas`
-+ `ImageTypes.uicanvas`
-
-Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Image** component\.
-
+You can use an **Image** component to add a color tint or texture to an element\. Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Image** component\.
 
 **Image Settings**
 

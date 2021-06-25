@@ -8,11 +8,6 @@ title: Virtual Gamepad Gem
 
 Use the Virtual Gamepad gem to provide your game's UI with touch screen capabilities on mobile devices\. After you enable the Virtual Gamepad gem, you can add the virtual gamepad components to your game's UI in the **UI Editor**\.
 
-**Topics**
-+ [Configuring Virtual Gamepad Behavior](#gems-system-gem-virtualgamepad-behavior)
-+ [Virtual Gamepad Component Properties](#gems-system-gem-virtualgamepad-properties)
-+ [Displaying the Virtual Gamepad at Runtime](#gems-system-gem-virtualgamepad-displaying)
-
 The Virtual Gamepad gem includes a sample UI canvas that you can either customize for your game or use as an example for a new UI canvas\. To view this canvas in the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), open `Gems\VirtualGamepad\Assets\UI\Canvases\VirtualGamepad\VirtualGamepad.uicanvas`\.
 
 There is no limit for the number of active UI canvases that can contain virtual gamepad components\. This means you can create many virtual gamepad canvases to display for the appropriate scenarios, or even at the same time\. For example, you can show a different UI canvas on each half of your virtual gamepad\.
@@ -83,8 +78,6 @@ end
 ```
 
 The following Lua script enables the virtual gamepad when a physical gamepad is disconnected and disables the virtual gamepad when a physical gamepad is connected\.
-
-You can find a working example of this Lua script in the `lumberyard_version\dev\SamplesProject\AnimationSamples\Advanced_RinLocomotion\Scripts\Advanced_RinLocomotion.lua` file\.
 
 ```
 function Example:OnActivate()

@@ -30,7 +30,7 @@ The following diagram shows the flow of the default game states in the GameState
 ## Possible Uses {#gems-system-gem-game-state-samples-possible-uses}
 
 The following are some possible ways to use the GameState Samples gem:
-+ **Copy** - Copy the gem to your game project to use as a starting point for further customization\. This method offers the most flexibility\. However, you should not enable the GameState Samples gem in Project Configurator\. Instead, copy each class in the gem that inherits from `IGameState` into your game project\. \(For the source code, see the `lumberyard_version\dev\Gems\GameStateSamples\Code\Include\GameStateSamples\` directory\.\) The advantage of this approach over either of the following options is that you can freely modify the samples to fit the specific needs of your game\.
++ **Copy** - Copy the gem to your game project to use as a starting point for further customization\. This method offers the most flexibility\. However, you should not enable the GameState Samples gem in Project Configurator\. Instead, copy each class in the gem that inherits from `IGameState` into your game project\. The advantage of this approach over either of the following options is that you can freely modify the samples to fit the specific needs of your game\.
 + **Derive** - Derive from the code to create your own game states\. This approach is recommended if you want to keep the same behavior as the sample game states, but with only minor customizations\. For example, you could create a main menu class like the following:
 
   ```

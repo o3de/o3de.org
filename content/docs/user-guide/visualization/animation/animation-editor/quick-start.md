@@ -12,18 +12,7 @@ In this procedure, you do the following:
 + Create a basic animation graph using nodes\.
 + Create a blend tree to combine the motions and use a slider to control character movement from idle to walking and then running\.
 
-You can use the Samples Project to find the files used in this procedure\. For more information, see [Samples Project](/docs/userguide/samples/projects/samples.md)\.
-
-The files for this procedure are located in the following directory:
-
-`lumberyard_version\dev\SamplesProject\AnimationSamples\Simple_JackLocomotion`
-
-**Topics**
-+ [Step 1: Creating a Motion Set](#creating-a-motion-set-with-animation-editor)
-+ [Step 2: Creating an Animation Graph](#creating-motion-set-with-animation-editor)
-+ [Step 3: Blending the Animations](#creating-a-blend-tree-with-animation-editor)
-
-## Step 1: Creating a Motion Set {#creating-a-motion-set-with-animation-editor}
+## Step 1: Creating a Motion Set
 
 In the following procedure, you import your character, Jack the robot, select the motions that you want, and then add those motions to a motion set\.
 
@@ -58,7 +47,7 @@ In the following procedure, you import your character, Jack the robot, select th
 1. Navigate to the `/SamplesProject/AnimationSamples/Simple_JackLocomotion` directory\. For the file name, type **quickstart** and then click **Save** to save the `quickstart.motionset` file\.
 ![\[Create a motion set and add motion files in the Animation Editor.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-motion-set.png)
 
-## Step 2: Creating an Animation Graph {#creating-motion-set-with-animation-editor}
+## Step 2: Creating an Animation Graph
 
 In the following procedure, create an animation graph and nodes\.
 
@@ -112,7 +101,7 @@ In the following procedure, create an animation graph and nodes\.
    1. For **Test Function**, select **param == testValue**\. This means that if the speed is equal to zero, the motion transitions back to idle, and the character stops moving\.
 ![\[Add parameter conditions to specify when the character stops moving.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-add-condition-02.png)
 
-## Step 3: Blending the Animations {#creating-a-blend-tree-with-animation-editor}
+## Step 3: Blending the Animations
 
 In the following procedure, you use the blend tree node to build your blend tree, which blends the walk and run animations together\.
 

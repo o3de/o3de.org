@@ -7,7 +7,6 @@ weight: 200
 
 {{< preview-new >}}
 
-
 Get to know the Atom Renderer and its features by setting up an Atom project with the Open 3D Engine. This tutorial covers how to set up two Atom projects: **Atom Test** and **Atom Sample Viewer**.
 
 - **Atom Test**: This project contains a collection of levels that demonstrates Atom's features in the O3DE Editor.
@@ -33,15 +32,14 @@ To get a local copy of the Atom projects, you must clone their repository from G
 Atom Test
 : 
     ```cmd
-    git clone https://github.com/aws-lumberyard/o3de-atomtest.git C:\AtomTest
+    git clone https://github.com/o3de/o3de-atomtest.git C:\AtomTest
     ```
 
 Atom Sample Viewer
 : 
     ```cmd    
-    git clone https://github.com/aws-lumberyard/o3de-atom-sampleviewer.git C:\AtomSampleViewer
+    git clone https://github.com/o3de/o3de-atom-sampleviewer.git C:\AtomSampleViewer
     ```
-
 
 ## Update the local project repos
 

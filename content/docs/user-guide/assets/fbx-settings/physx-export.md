@@ -11,7 +11,7 @@ The **PhysX** tab in **FBX Settings** has many options to generate PhysX collide
 
 ## Export PhysX colliders {#fbx-exporting-physx}
 
-1. Copy your `.fbx` file to a sub directory in your project located at `lumberyard_version\dev\your_project`\. The `.fbx` file can contain a mesh or an actor\.
+1. Copy your `.fbx` file to a sub directory in your project. The `.fbx` file can contain a mesh or an actor\.
 
    Alternatively, choose **Import** from the **File** menu in O3DE Editor to copy or move the `.fbx` file into your project\.
 

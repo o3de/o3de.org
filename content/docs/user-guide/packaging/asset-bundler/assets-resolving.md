@@ -17,11 +17,11 @@ An asset that is missing from a bundle might be one of the following:
 
 To resolve the missing asset, check each of these possibilities in turn\.
 
-## Missing Product Dependencies {#asset-bundler-assets-resolving-missing-product-dependencies}
+## Missing Product Dependencies 
 
 A missing asset might have been loaded as a reference from O3DE or from your game code's interaction with another asset\. In these cases, you can resolve the issue by emitting a new product dependency\.
 
-### Finding the Asset Reference {#asset-bundler-assets-resolving-finding-the-asset-reference}
+### Finding the Asset Reference
 
 To find the source of the asset reference, try the following approaches:
 + Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/packaging/asset-bundler/verifying-bundles/missing-dependency-scanner/)\.
@@ -30,9 +30,9 @@ To find the source of the asset reference, try the following approaches:
   + Add extra `print` commands
   + Try interacting with your game in different ways to see what triggers the missing asset to load\.
 
-As a hint to where to start debugging, note that most file loading routes through `lumberyard_version\dev\Code\CryEngine\CrySystem\CryPak.cpp` in `CCryPak::FOpen` and `CCryPak::GetFileData`\. Setting breakpoints or adding additional debugging logic \(like `printf` statements\) can help identify what is triggering the asset load that you are investigating\.
+As a hint to where to start debugging, note that most file loading routes through [`AzFramework::IO::Archive`](/docs/api/frameworks/azframework/class_a_z_1_1_i_o_1_1_archive.html). Setting breakpoints or adding additional debugging logic \(like `printf` statements\) can help identify what is triggering the asset load that you are investigating\.
 
-### Finding the Builder to Update {#asset-bundler-assets-resolving-finding-the-builder-to-update}
+### Finding the Builder to Update 
 
 Track down the job that generates the asset that references your missing asset\. Then you can update the generated asset to emit the missing asset as a product dependency\. The source of the generated asset can be obvious if it has a file extension that is associated with a known builder\.
 
@@ -48,15 +48,15 @@ If the source of the generated asset is not obvious, you can use the asset datab
 
 1. Look up the `JobKey` or `BuilderGuid` in your code base\.
 
-### Updating the Builder to Emit the Dependency {#asset-bundler-assets-resolving-updating-the-builder}
+### Updating the Builder to Emit the Dependency 
 
 After you've identified the builder which emits the product that is missing the dependency, update the builder\. For more information, see [Declare Product Dependencies](/docs/user-guide/packaging/asset-bundler/overview/#why-use-product-dependencies)\.
 
-## Hardcoded File Loads {#asset-bundler-assets-resolving-hardcoded-file-loads}
+## Hardcoded File Loads 
 
 To resolve missing assets from hardcoded file loads, find where in code the file is loaded and then choose a resolution strategy\.
 
-### Finding the File Load {#asset-bundler-assets-resolving-finding-the-file-load}
+### Finding the File Load 
 
 We recommend the following techniques for tracking down a hardcoded file load:
 
@@ -68,18 +68,18 @@ We recommend the following techniques for tracking down a hardcoded file load:
 
 For more information, see [Finding the Asset Reference](#asset-bundler-assets-resolving-finding-the-asset-reference) earlier in this topic\.
 
-### Resolving the Missing Asset {#asset-bundler-assets-resolving-the-missing-asset}
+### Resolving the Missing Asset
 
 To resolve the missing asset from a hardcoded file load, try the following options:
 + **Remove the hardcoded load** - By emitting assets as product dependencies from relevant builders, you can use seed lists with fewer files that are easier to maintain\.
 + **Add as seed** - If you can't or don't want to replace the hard\-coded asset load, you can add the referenced file as a seed to your game's seed list\. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes\. For information about adding the referenced file as a seed to your game's seed list, see the [O3DE Asset Bundler Command\-Line Tool Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference.md)\.
 + **Use the Wildcard Dependency System** - If your project uses relative path loads or wildcard path loads, you can declare the dependencies in a dependencies file\. This technique is explained in the following section\.
 
-#### Using the Wildcard Dependency System to Resolve Path Loads {#asset-bundler-assets-resolving-path-loads}
+#### Using the Wildcard Dependency System to Resolve Path Loads
 
 When you [migrate](/docs/userguide/assets/bundle/migrating.md) a O3DE project to use seeds or emit dependencies for all referenced assets, two cases cannot be resolved as seeds: Optional relative path loads and wildcard path loads\. If your bundle is missing an asset that is loaded in either style, try to resolve the missing asset by using wildcard dependencies\.
 
-To handle dependency tracking for runtime systems that use path manipulation or directory scanning to load product files, declare dependencies in a `*_Dependencies.xml` file\. For example, dependencies in the core engine are included in the `lumberyard_version\dev\Engine\Engine_Dependencies.xml` file\. A dependencies file uses the following format\.
+To handle dependency tracking for runtime systems that use path manipulation or directory scanning to load product files, declare dependencies in a `*_Dependencies.xml` file\. For example, dependencies in the core engine are included in the `Assets\Engine\Engine_Dependencies.xml` file of your project\. A dependencies file uses the following format\.
 
 ```
 <EngineDependencies versionnumber="1.0.0">
@@ -91,10 +91,10 @@ The `path` value is a relative path to a product file that uses simple glob sear
 
 After you add a new `*_Dependencies.xml` file, add an entry for the referenced file to a seed list to ensure full dependency tracking\. The core `Engine_Dependencies.xml` file is already included in the default seed list\.
 
-## False Positives {#asset-bundler-assets-resolving-false-positives}
+## False Positives
 
 Some assets and asset references are used only in the editor or in launchers during development\. These assets aren't used in release builds\. Therefore, you can consider any assets that are missing from bundles that aren't used in release builds to be false positives\.
 
-### Removing False Positives From Missing Asset Scanning Results {#asset-bundler-assets-resolving-removing-false-positives}
+### Removing False Positives From Missing Asset Scanning Results
 
 After you've verified that an asset is not used in your release builds, you can use the file tagging system to tag it so that it doesn't appear in future scans\. For more information, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/packaging/asset-bundler/file-tagging.md)\.

@@ -13,7 +13,7 @@ To avoid performance issues, debugging features are disabled by default\.
 
 **To enable HPHA memory debugging**
 
-1. In the `lumberyard_version\dev\Code\Framework\AzCore\AzCore\Memory\HphaSchema.cpp` file, uncomment the following line:
+1. In the engine source `Code\Framework\AzCore\AzCore\Memory\HphaSchema.cpp` file, uncomment the following line:
 
    ```
    #define DEBUG_ALLOCATOR

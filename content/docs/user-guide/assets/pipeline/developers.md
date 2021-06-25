@@ -60,7 +60,7 @@ If you are writing a new editor tool or porting an existing one from a legacy sy
 Instead, develop your editor code in such a way that the editor decides where files are saved, and optionally loaded from, and correctly interfaces with source control and the asset processing system\. \(Source control and asset processing are overhead that is governed by the editor tool, not the game\.\)
 
 The following utilities and guidelines are provided to make this easier:
-+ Store only asset IDs for all source assets\. For example, if you are writing a file that refers to other files, do not store `C:\lumberyard_version\dev\MyGame\myasset.txt` in the file's data, for example\. Instead, just store `myasset.txt`, its asset ID\.
++ Store only asset IDs for all source assets\. **Don't** store file paths.
 + If you are in an editor tool, link to EditorCore, and then do the following:
   + \#include `<PathUtil.h>`
   + Call `Path::FullPathToGamePath(string)` to convert any full path into a game asset ID automatically\.

@@ -6,9 +6,7 @@ title: Creating EventData Types
 
 {{< preview-migrated >}}
 
-You can create `EventData` types in a separate gem or directly in a game project's code\. Each parameterized motion event can contain more than one `EventData` object\. This makes it possible for users to attach an arbitrary number of `EventData` objects to a single event\.
-
-The `EMotionFX::EventData` class describes a set of parameters and values that is sent when an event is dispatched\. The `EventData` class is the base class for all event data types\. For full source code, see the `lumberyard_version\dev\Gems\EMotionFX\Code\EMotionFX\Source\EventData.*` files\.
+You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emotionfx/) interface to attach an arbitrary number of data objects to a single event\.
 
 **To create an EventData type**
 
@@ -145,13 +143,11 @@ The `EventManager` stores a list of the `EventData` instances in use and attempt
 
 When a call to `AnimGraphMotionCondition` tests a motion event, `AnimGraphMotionCondition::TestCondition` calls the `Equal` method with the `ignoreEmptyFields` parameter set to `true`\. The `ignoreEmptyFields` parameter enables partial matching of `EventData` instances\. For example, if one of the fields is a string and the string value is empty in the condition, any value in the field matches\.
 
-## Synchronizing Blended Motions {#char-animation-editor-custom-events-parameters-synchronizing-blended-motions}
+## Synchronizing Blended Motions
 
 The `EMotionFX::EventDataSyncable` class extends the functionality of the base `EventData` class and enables events that drive motion synchronization behavior\. Use the `EventDataSyncable` class to specify parameters for synchronizing blended motions\. The class calls `HashForSyncing` on the sync tracks of two different motions, compares the results, and finds events that are equal based on their hash value\.
 
-For source code, see `lumberyard_version\dev\Gems\EMotionFX\Code\EMotionFX\Source\EventDataSyncable.*`\.
-
-### Mirroring {#char-animation-editor-custom-events-parameters-mirroring}
+### Mirroring
 
 You can use `EMotionFX` to mirror motions programmatically\. When a motion is being mirrored, its sync events must also be mirrored\. To signal this mirroring, the `HashForSyncing` method accepts an `isMirror` parameter\.
 
