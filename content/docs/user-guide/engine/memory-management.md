@@ -45,8 +45,8 @@ namespace Physics
 {
     AZ_INLINE void GetDefaultDebugDrawSettings(DebugDrawSettings& settings)
     {
-        static AZStd::vector<Vec3> cryVerts;      // These function static container variables use AZ::SystemAllocator.
-        static AZStd::vector<ColorB> cryColors;
+        static AZStd::vector<Vec3> verts;      // These function static container variables use AZ::SystemAllocator.
+        static AZStd::vector<ColorB> colors;
         //...
     }
 }
