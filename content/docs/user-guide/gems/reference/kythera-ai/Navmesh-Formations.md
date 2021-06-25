@@ -1,3 +1,13 @@
+---
+linkTitle: Formations
+title: Navmesh formations
+description: Guide to the navmesh formations feature of the Kythera AI Gem
+weight: 500
+---
+[Kythera AI Gem](index.md)
+
+# Navmesh formations
+
 **Navmesh formations** allow multiple Kythera agents to move together in a fixed two-dimensional structure. The formation itself is its own Kythera Entity and can be controlled with a behavior tree.
 
 There is a demo level called **Formations2DDemo** in ShooterDemo with some basic behavior trees.

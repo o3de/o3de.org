@@ -1,6 +1,12 @@
+---
+linkTitle: Setup
+title: Kythera AI Gem setup
+description: Instructions for setting up the Kythera AI Gem
+weight: 200
+---
 [Kythera AI Gem](index.md)
 
-# Kythera AI Gem Setup
+# Kythera AI Gem setup
 
 Download the Kythera AI Gem .zip file from Kythera AI’s website: <insert URL here>.
 

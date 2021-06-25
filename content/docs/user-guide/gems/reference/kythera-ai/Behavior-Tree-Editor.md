@@ -1,3 +1,9 @@
+---
+linkTitle: BT Editor
+title: Behavior Tree Editor
+description: Overview of the Kythera AI Inspector's Behavior Tree editor tool
+weight: 800
+---
 [Kythera AI Gem](index.md)
 
 # Behavior Tree Editor

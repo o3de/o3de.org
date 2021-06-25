@@ -1,3 +1,9 @@
+---
+linkTitle: Kythera AI Gem
+title: Kythera AI Gem
+description: Contents page for the Kythera AI Gem documentation
+weight: 100
+---
 
 ![](/images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
 

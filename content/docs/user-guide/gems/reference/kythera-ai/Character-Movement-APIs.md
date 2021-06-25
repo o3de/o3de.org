@@ -1,6 +1,12 @@
+---
+linkTitle: Character Movement APIs
+title: Character Movement APIs
+description: Details of APIs for character movement with the Kythera AI Gem
+weight: 400
+---
 [Kythera AI Gem](index.md)
 
-# Character Movement APIs
+# Character movement APIs
 
 
 There are two main buses that we expose to implement character movement on a two dimensional navigation mesh - `Kythera::MovementRequestBus` and `Kythera::MovementNotificationBus`. 
