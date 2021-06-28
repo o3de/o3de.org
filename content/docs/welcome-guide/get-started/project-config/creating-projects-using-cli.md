@@ -83,10 +83,10 @@ The `/m` is a recommended build tool optimization, which tells the Microsoft com
 
 1. Run the O3DE Editor, which is located in your engine directory, to verify the project is ready to use.
 
-    The project path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
+    The project path can be absolute or relative. If relative, it must be relative to the _engine_ directory. This example uses `C:\o3de\build\windows_vs2019` as the engine build directory. Your build directory might be different.
 
     ```cmd
-    C:\o3de\build\bin\profile\Editor.exe --project-path C:\MyProject
+    C:\o3de\build\windows_vs2019\bin\profile\Editor.exe --project-path C:\MyProject
     ```
 
     If you don't supply the project path when you run the Editor from the command line, the **O3DE Project Manager** will launch. Using the Project Manager's GUI, you can edit your project's settings, add or remove Gems from the project, and launch the Editor.
