@@ -72,24 +72,29 @@ weight = 1
 # weight = 2
 
 [[menu.main]]
+name = "GET STARTED"
+url = "/docs/welcome-guide"
+weight = 3
+
+[[menu.main]]
 name = "COMMUNITY"
 url = "/community"
-weight = 3
+weight = 4
 identifier = "community"
 
 # [[menu.main]]
 # name = "Community subitem placeholder"
 # url = "#"
-# weight = 1 
+# weight = 5 
 # parent = "community"
 
 [[menu.main]]
 name = "LEARN"
 url = "/docs"
-weight = 4
+weight = 6
 identifier = "docs"
 
 [[menu.main]]
 name = "CONTRIBUTE"
 url = "/docs/contributing"
-weight = 5
+weight = 7

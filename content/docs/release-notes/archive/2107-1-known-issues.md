@@ -1,14 +1,14 @@
 ---
 linktitle: 2107.1 Known Issues
-title: Known Issues for Open 3D Engine 2107.1 (alpha)
-description: Find out the known issues in 2107.1 (alpha).
+title: Known Issues for Open 3D Engine 2107.1 (Developer Preview)
+description: Find out the known issues in 2107.1 (Developer Preview).
 weight: 102
 toc: true
 menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.svg"
 ---
 
-Open 3D Engine (O3DE) Release 2107.1 (alpha) has the following known issues:
+Open 3D Engine (O3DE) Release 2107.1 (Developer Preview) has the following known issues:
 
 ## AI
 
@@ -41,7 +41,6 @@ The following errors occur using RHI with Vulkan on Android platforms:
 * Dynamic Material Test throws Device Lost error upon switch test material on Mali
 * Device lost on Features/SSAO sample
 * Device lost error on Features/LightCulling sample
-* Device lost on Features/Exposure sample
 * Device lost on Features/Exposure sample
 * Unknown error assert for RPI/SceneReloadTest
 * Unknown error assert for RPI/Dynamic Material Test

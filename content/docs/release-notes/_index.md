@@ -14,15 +14,15 @@ guide_img: "/images/release-notes/guide_img.png"
 
 | Version        | Binary download link          |  Date of Release   |
 |----------------|-------------------------------|--------------------|
-| 2107.1 (alpha) | [NEED LINK TO BINARY]         |  July 6, 2021      |
+| 2107.1 (Developer Preview) | [NEED LINK TO BINARY]         |  July 6, 2021      |
 
 ### Get the latest source code
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| 2107.1 (alpha) | [2107.1]({{< links/o3de-source >}}/tree/2107.1) |  July 6, 2021      |
+| 2107.1 (Developer Preview) | [2107.1]({{< links/o3de-source >}}/tree/2107.1) |  July 6, 2021      |
 
-### 2107.1 (alpha) Release Information
+### 2107.1 (Developer Preview) Release Information
 
 * [2107.1 Release Notes](archive/2107-1-release-notes)
 * [2107.1 Known Issues](archive/2107-1-known-issues)
