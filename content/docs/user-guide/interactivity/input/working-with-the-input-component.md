@@ -13,14 +13,15 @@ Follow these steps to create an `.inputbindings` file\.
 
 **To create an input to event binding asset**
 
-1. [Create](/docs/userguide/creating-entity.md) an entity\.
+1. Create an entity.
 
 1.  In the **Perspective** viewport, select the entity\.
 
 1. In the **Entity Inspector**, click **Add Component**, and add the **Input** component\.
 
-1. In the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![\[Image NOT FOUND\]](/images/user-guide/component/component-input-edit-icon.png) to open the **Asset Editor**\.
-![\[\]](/images/user-guide/component/input-component-properties-1.png)
+1. In the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![Input Bindings Editor icon](/images/user-guide/component/component-input-edit-icon.png) to open the **Asset Editor**.
+
+	![Input component](/images/user-guide/component/input-component-properties-1.png)
 
 1. In the **Asset Editor**, choose **File**, **New**, **Input Bindings**\.
 
@@ -66,36 +67,39 @@ After you create an `.inputbindings` file and specify your input events, you can
 
 ### Using a Script Canvas Graph for Input {#component-script-canvas-input}
 
-You can create a Script Canvas graph that maps to your input events\. For more information, see [Creating Gameplay with Script Canvas](/docs/user-guide/scripting/script-canvas/intro.md)\.
+You can create a Script Canvas graph that maps to your input events. For more information, see [Creating Gameplay with Script Canvas](/docs/user-guide/scripting/script-canvas).
 
 **To use a Script Canvas graph for input**
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/user-guide/components/script-canvas.md)** component\.
+1. In the **Entity Inspector**, click **Add Component** and add the **Script Canvas** component.
 
-1. In the **Script Canvas** component, for **Script Canvas Asset**, specify a Script Canvas graph like the following\.
-**Example Script Canvas Graph**
+1. In the **Script Canvas** component, for **Script Canvas Asset**, specify a Script Canvas graph like the following.
 
-   In the following graph, the **Input Handler** node maps the **Event Name** `Action` to the `.inputbindings` file\.
-![\[Example Script Canvas graph for the Input component.\]](/images/user-guide/component/input-configuration-script-canvas-example.png)
+	**Example Script Canvas Graph**
+
+   	In the following graph, the **Input Handler** node maps the **Event Name** `Action` to the `.inputbindings` file.
+
+	![Example Script Canvas graph for the Input component](/images/user-guide/component/input-configuration-script-canvas-example.png)
 
 ### Using a Lua Script for Input {#component-input-lua-script}
 
-You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/user-guide/scripting/lua/_index.md)\.
+You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/user-guide/scripting/lua)\.
 
 **To add a Lua script for input**
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/user-guide/components/lua-script.md)** component\.
+1. In the **Entity Inspector**, click **Add Component**, and add the **Lua Script** component.
 
-1. In the **Lua Script** component, specify a Lua script file like the following\.
-**Example Lua Script**
+1. In the **Lua Script** component, specify a Lua script file like the following.
 
-   The following Lua script maps the **Event Name** `Action` to the `.inputbindings` file\.
+	**Example Lua Script**
 
-   ```
+   	The following Lua script maps the **Event Name** `Action` to the `.inputbindings` file.
+
+   ```lua
    local tutorial_input =
    {
    	Properties =
@@ -139,7 +143,7 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. In the **Perspective** viewport, select your entity\.
 
-1. In the **Entity Inspector**, click **Add Component**, and add the **[Mesh](/docs/userguide/components/static-mesh.md)** component\.
+1. In the **Entity Inspector**, click **Add Component**, and add the **Mesh** component.
 
 1. For **Mesh asset**, specify a mesh asset file\. This gives your entity a shape\.
 
