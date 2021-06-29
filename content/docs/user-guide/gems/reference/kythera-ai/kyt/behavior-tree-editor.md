@@ -4,9 +4,6 @@ title: Behavior Tree Editor
 description: Overview of the Kythera AI Inspector's Behavior Tree editor tool
 weight: 800
 ---
-[Kythera AI Gem](index.md)
-
-# Behavior Tree Editor
 
 _**Note that currently the BT Editor is only supported in the Chrome browser.**_
 
@@ -32,9 +29,7 @@ In this view you can move, add and remove nodes, or select a node and edit its p
 *   Nodes can be removed from the tree by simply selecting the node and pressing the _delete_ key. It is not possible to delete the root node of the tree; if you wish to delete an entire tree, you can do so with the _File_ drop-down menu.
 *   The properties of a node can be edited by selecting that node, then making changes to the dialog box that appears in the bottom right of the screen.
 
-Your browser does not support the HTML5 video element
-
-Navigating the Tree
+Navigating the tree
 -------------------
 
 While in the BT editor, the tree view can be navigated fairly intuitively. The mouse scroll can be used to zoom in and out the tree view, and the view can be panned across by right-clicking and dragging somewhere on the backdrop.
@@ -47,7 +42,7 @@ Alongside the list of trees available, there are three buttons that can be used 
 
 A recommended usage is to zoom the view out with the second button to find the part of the tree you are interested in, then use the third button to zoom in on that part.
 
-Node Types
+Node types
 ----------
 
 There are four main types of nodes available in the behavior tree editor:
@@ -57,9 +52,8 @@ There are four main types of nodes available in the behavior tree editor:
 3.  **Decorator -** This is a more general class of decorating nodes. These again are used to decorate another node (hence the name) but they are used to alter something about either the node's return value or another aspect of the game state. They can also be used to repeat the execution of the nodes below them until a certain condition is met.
 4.  **Leaf -** These nodes cannot have children. They terminate the execution of a branch and perform some sort of function before returning.
 
-For more information on the individual nodes, please see [this page](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/180060187/Behavior+Tree+Nodes). 
 
-Behavior Tree Validation
+Behavior tree validation
 ------------------------
 
 The correctness of the full tree is re-calculated by the _Validator_ whenever a change is made to any part of the tree, including moving nodes around. This is because behavior trees are executed top to bottom (through connections), then left to right. That is to say, the children of each node are executed in the order they appear from left to right. If a node has not been properly configured it will appear red, and clicking on it will bring up a message about how to fix it.
@@ -68,7 +62,7 @@ The correctness of the full tree is re-calculated by the _Validator_ whenever a 
 
   
 
-Saving Behaviors
+Saving behaviors
 ----------------
 
 **Behaviors are automatically imported into the game and saved every time you make a change to them**, so there is no need to explicitly save them. It is important to be aware of this, because there is not currently an undo/revert feature in the editor (other than undoing the last action in a session), so you will need to make use of source control if you want to go back to a previous version.

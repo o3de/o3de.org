@@ -4,9 +4,6 @@ title: Introduction the the Kythera AI Inspector
 description: Overview of the browser-based debugger and behavior tree authoring tool, the Kythera AI Inspector
 weight: 700
 ---
-[Kythera AI Gem](index.md)
-
-# Introduction to the Kythera AI Inspector
 
 **The Inspector** is the primary tool for configuring and debugging Kythera AI. It allows you to configure aspects of Kythera and monitor the state of the AIs as the game is running.
 
