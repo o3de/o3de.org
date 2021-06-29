@@ -18,7 +18,7 @@ The current version of Open 3D Engine is 2107.1 (Developer Preview). Check out t
 
 This is the very first public release of Open 3D Engine! This release is a Developer Preview and is incomplete for many major development workflows.
 
-* Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a performant, photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation](./atom/).
+* Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a performant, photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation](/docs/atom-guide/).
 
 * Math libraries:
 
