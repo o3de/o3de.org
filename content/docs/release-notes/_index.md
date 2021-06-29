@@ -20,7 +20,7 @@ guide_img: "/images/release-notes/guide_img.png"
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| 2107.1 (alpha) | [2107.1 LINK NEEDS UPDATE](https://github.com/aws-lumberyard/o3de/tree/0.5) |  July 6, 2021      |
+| 2107.1 (alpha) | [2107.1]({{< links/o3de-source >}}/tree/2107.1) |  July 6, 2021      |
 
 ### 2107.1 (alpha) Release Information
 
