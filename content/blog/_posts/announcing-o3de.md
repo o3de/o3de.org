@@ -1,6 +1,6 @@
 ---
 title: "Announcing Open 3D Engine!"
-date: 2021-07-06
+date: 2021-06-28
 slug: welcome-post
 author: Doug Erickson
 ---

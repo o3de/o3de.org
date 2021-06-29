@@ -27,11 +27,6 @@ sourceRepo = "https://github.com/o3de/o3de"
 navbar = "O3DE-Logo-REV-Mono.svg"
 
 [[params.social]]
-name = "Twitter"
-url = "#"
-icon = "fab fa-twitter"
-
-[[params.social]]
 name = "GitHub"
 url = "https://github.com/o3de"
 icon = "fab fa-github"
