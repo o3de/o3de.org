@@ -23,7 +23,6 @@ As O3DE itself evolves, we plan to keep developing our Gem -- and this documenta
 
 * [Navmesh Generation](Navmesh-Generation.md) - How to create two-dimensional navigation mesh (navmesh) in O3DE levels
 * [Character Movement APIs](Character-Movement-APIs.md) - The APIs used to move characters on Kythera navmesh
-* [Navmesh Formations](Navmesh-Formations.md) - Make multiple characters move in dynamic formation structures
 
 ### 3d Navigation
 
