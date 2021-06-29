@@ -36,11 +36,6 @@ name = "Discord"
 url = "#"
 icon = "fab fa-discord"
 
-[[params.social]]
-name = "Slack"
-url = "#"
-icon = "fab fa-slack"
-
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]
