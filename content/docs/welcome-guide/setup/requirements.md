@@ -34,7 +34,7 @@ To create new projects or use advanced development features in O3DE, you need a 
 + Windows 10 version 1809 (10.0.17763) or later.
 + [Microsoft Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) version **16.9.2** through version **16.10.x**.
 + [Visual C++ Redistributable for Visual Studio 2019](https://visualstudio.microsoft.com/downloads/#other-family).
-+ [CMake {{< versions/cmake >}} or later](https://cmake.org/download/). Select the install option that adds CMake to the system PATH during installation to save you from having to do this later.
++ [CMake {{< versions/cmake >}} or later](https://cmake.org/download/). It is recommended that you install the **Latest Release** from the CMake download page instead of the Release Candidate. Select the install option that adds CMake to the system PATH during installation to save you from having to do this later.
 
    ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
 

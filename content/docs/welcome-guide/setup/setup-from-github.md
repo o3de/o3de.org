@@ -71,7 +71,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
     For general instructions and help with creating and using forks in GitHub, see the GitHub Guide on [Forking Projects](https://guides.github.com/activities/forking/).
 
-1. Clone your forked repo. Use your preferred Git UI or a command line to clone the repo in a directory of your choice. You will need your GitHub sign in account and the personal access token that you created earlier.
+1. Clone your forked repo. Use your preferred Git UI or a command line to clone the repo in a directory of your choice. You will need your GitHub username and the personal access token that you created earlier.
 
     1. Clone the repo from a fork.
 
@@ -87,7 +87,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
         ![GitHub sign in dialog box](/images/welcome-guide/setup-github-signin.png)
 
-    1. Enter your credentials for the LFS endpoint in the next _sign in_ dialog box. Use your **GitHub account** (full email address) and your **personal access token** for the password.
+    1. Enter your credentials for the LFS endpoint in the next _sign in_ dialog box. Use your **GitHub username** and your **personal access token** for the password.
 
         ![Credential manager asking for LFS credentials](/images/welcome-guide/setup-credential-manager-lfs.png)
 
@@ -165,7 +165,7 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
     In the following example, including the `AutomatedTesting` project is optional, but recommended if you plan on contributing changes to the engine source. You should use this project to run automated testing locally before submitting a pull request (PR) in GitHub.
 
     ```cmd
-    cmake -B build -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_PROJECTS=AutomatedTesting
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_PROJECTS=AutomatedTesting
     ```
 
     {{< caution >}}
@@ -179,14 +179,14 @@ Unity builds are recommended in many cases for improved build performance. If yo
 1. Use CMake to build the test project, engine, and tools. When specifying the Editor as a build target, the AssetProcessor and Project Manager will be built too, since they are dependencies of the Editor. The `profile` build configuration is shown in this example.
 
     ```cmd
-    cmake --build build --target AutomatedTesting.GameLauncher Editor --config profile -- /m
+    cmake --build build/windows_vs2019 --target AutomatedTesting.GameLauncher Editor --config profile -- /m
     ```
 
     {{< note >}}
 The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
-The engine will take a while to build. In this example, when the build is complete, the tools can be found in `/build/bin/profile`.
+The engine will take a while to build. In this example, when the build is complete, the tools can be found in `/build/windows_vs2019/bin/profile`.
 
 ## Register the engine
 

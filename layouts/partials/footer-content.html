@@ -1,0 +1,8 @@
+{{ $year := now.Year }}
+{{ with site.Copyright }}
+<p>&copy; {{ $year }} {{ . }}</p>
+<p>&copy; {{ $year }} The Linux Foundation. All rights reserved. 
+The Linux Foundation has registered trademarks and uses trademarks. 
+For a list of trademarks of The Linux Foundation, 
+please see our <a href="https://www.linuxfoundation.org/trademark-usage" target="_blank">Trademark Policy</a> page.</p>
+{{ end }}
