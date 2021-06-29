@@ -1,12 +1,12 @@
 ---
-title: Open 3D Engine Documentation Hugo Shortcodes
-description: A list of the shortcodes used in Open 3D Engine documentation.
+title: Hugo Shortcodes Used in Open 3D Engine Documentation
+description: A list of the shortcodes used in Open 3D Engine (O3DE) documentation.
 linktitle: Shortcodes
 weight: 500
 toc: true
 ---
 
-Hugo [Shortcodes](https://gohugo.io/content-management/shortcodes) are used to add complex elements to pages that aren't supported by Markdown, such as embedded video links and call-outs. Shortcodes can be written in other languages, such as HTML. The currently available shortcodes are located in the `/layouts/shortcodes` directory of the O3DE documentation repository. You can create additional shortcodes. To see all the currently available shortcodes, view the [smoketest](/smoketest) page.
+To enrich Open 3D Engine (O3DE) documentation pages with complex elements such as embedded video links and call-outs, use Hugo [shortcodes](https://gohugo.io/content-management/shortcodes). Markdown doesn't support these complex elements, but you can write shortcodes in other languages, such as HTML. You can review all currently available shortcodes in the `/layouts/shortcodes` directory of the O3DE docs repository and on the [smoketest](/smoketest) page. You can also create additional shortcodes.
 
 {{< important >}}
 If you create new shortcodes for O3DE documentation, be sure to add them to the [smoketest](/smoketest) page so that other contributors can discover them and use them!

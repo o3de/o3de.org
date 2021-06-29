@@ -6,27 +6,25 @@ weight: 500
 toc: true
 ---
 
-Ready to start contributing to the Open 3D Engine (O3DE) documentation? This style guide will help you prepare, and give you recommendations and guidelines for [submitting documentation](/docs/contributing/to-docs/submit-a-pr). We've made an effort to give as much information as possible to help contibutors when they have a question about writing style, formatting, or the conventions used across our documentation site. If you find guidance that you need but is missing, [file an issue with the D&C SIG](https://github.com/o3de/sig-docs-community) to suggest an improvement.
+Ready to contribute to the Open 3D Engine (O3DE) documentation? This style guide prepares you with recommendations and guidelines for [submitting a docs pull request](/docs/contributing/to-docs/submit-a-pr). We've tried to provide contributors with all the information that they need about writing style, formatting, and the conventions used across our docs site. If you need guidance that isn't included, [file an issue with the D&C SIG](https://github.com/o3de/sig-docs-community) to suggest an improvement.
 
-Following the style guide is the single best way to make sure that contributions to the O3DE documentation get reviewed and merged quickly, but we don't expect every contributor to know every detail. All we ask is that contributors be _familiar_ with the guide and follow it to the best of their ability. Pull request reviews are there to catch any of the most serious style errors in contributions.
+Following the style guide is the best way to make sure that contributions to the O3DE docs get reviewed and merged quickly. We don't expect every contributor to know every detail. All we ask is that contributors be familiar with the guide and follow it to the best of their ability. Pull request reviews are there to catch any of the most serious style errors in contributions.
 
-## Ideal Traits
+## Ideal traits
 
-What are the ideal traits for Open 3D Engine documentation?
+What are the ideal traits for O3DE docs?
 
-* ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject* and *action verb*?
+* ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject (noun)* that performs the *action (verb)*?
 * ✅ **Answer the question at hand** - Does the documentation answer a *why*, *how*, or *where* type of question?
-* ✅ **Consistency** - Does the formatting of text and style of writing remain *relatively consistent*?
-* ✅ **Help the user** - Does the documentation show the user something *meaningful*    ?
+* ✅ **Consistency** - Do the text formatting and writing style remain *relatively consistent*?
+* ✅ **Help the user** - Does the documentation show the user something *meaningful*?
 
 ## What's in the guide?
 
-* [General guidance](./guidance) - Some guidance on our documentation style, tone, and how to write in an accessible manner. This section of the guide is very _opinionated_, and unlike other parts of the style guide, is applied much more flexibly.
-* [Copy rules](./copy) - Copyedit and style rules. Have a _passing familiarity_ with them when contributing, as light copy passes are part of most reviews.
-* [Typesetting and Formatting](./format) - Specific rules regarding typesetting on our documentation, such as how to format executable names, file paths, and code blocks. Features available in the variant of Markdown used by the O3DE documentation site are covered here.
-* [Frontmatter metadata](./metadata) - Available (and required) information in the [YAML](https://yaml.org/) headers of Markdown files.
-* [Shortcodes](./shortcodes) - The shortcodes that we use for the O3DE documentation; Call-out boxes, version numbers, static paths used by O3DE, and other useful tidbits.
-* [Including media](./media) - Guidelines for how to submit media (images, video, audio, or assets) as part of documentation.
+* [Writing guidelines](./guidance) - Guidance on our documentation style, tone, and how to write in an accessible manner.
+* [Formatting](./format) - Specific rules regarding formatting and typesetting our documentation, such as how to format executable names, file paths, and code blocks. Covers the features available in the variant of Markdown that the O3DE docs site uses.
+* [Front matter metadata](./metadata) - Details on the available (and required) Hugo front matter metadata to use in the [YAML](https://yaml.org/) headers of Markdown files.
+* [Shortcodes](./shortcodes) - The Hugo shortcodes that we use for the O3DE docs. Includes call-out boxes, version numbers, static paths that O3DE uses, and other useful tidbits.
+* [Submitting media](./media) - Guidelines for submitting media (images, video, audio, or assets) to the docs.
 
-This guide _isn't_ meant to be an extensive introduction to either [Markdown](https://www.markdownguide.org/) or the [Hugo site generator](https://gohugo.io/). If you're learning Hugo, you should read [Work with Hugo](/docs/contributing/to-docs/hugo).
-
+This guide isn't meant to be an extensive introduction to either [Markdown](https://www.markdownguide.org/) or the [Hugo site generator](https://gohugo.io/). If you're learning Hugo, refer to [Work with Hugo](/docs/contributing/to-docs/hugo).

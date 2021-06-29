@@ -1,6 +1,6 @@
 ---
 title: Submitting Media to Open 3D Engine Documentation
-description: Guidelines for how to submit media (images, video, audio, or assets) as part of documentation.
+description: Guidelines for submitting media (images, video, audio, or assets) to Open 3D Engine (O3DE) documentation.
 linktitle: Media
 weight: 600
 toc: true

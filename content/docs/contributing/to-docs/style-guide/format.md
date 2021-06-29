@@ -1,7 +1,7 @@
 ---
-title: How to Format Documentation for Open 3D Engine
-description: A reference for all of the typesetting and formatting rules for the Open 3D Engine documentation.
-linktitle: Format
+title: Formatting Documentation for Open 3D Engine
+description: A reference for all of the typesetting and formatting rules for the Open 3D Engine (O3DE) documentation.
+linktitle: Formatting
 weight: 200
 toc: true
 ---
