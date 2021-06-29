@@ -11,21 +11,21 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Animation
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [EMotionFX](./animation/emotionfx) | The EMotion FX Animation Gem provides Open 3D Engine's animation system for rigged actors and includes Animation Editor, a tool for creating animated behaviors, simulated objects, and colliders for rigged actors. |
 | [Maestro](./animation/maestro) | The Maestro Gem provides Track View, Open 3D Engine's animated sequence and cinematics editor. |
 
 ## Artificial Intelligence
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Kythera AI](./kythera-ai/) | The Kythera AI Gem provides support for Kythera AI features in Open 3D Engine (O3DE), and includes a demo project, levels, and assets that demonstrate the features of Kythera AI. |
 
 
 ## Assets
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Asset Validation](./assets/asset-validation) | The Asset Validation Gem provides seed-related commands to ensure assets have valid seeds for asset bundling. |
 | [Custom Asset Example](./assets/custom-asset-example) | The Custom Asset Example Gem provides example code for creating a custom asset for Open 3D Engine's asset pipeline. |
@@ -37,7 +37,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Audio
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Audio Engine Wwise](./audio/wwise/audio-engine-wwise) | The Wwise Audio Engine Gem provides support for Audiokinetic Wave Works Interactive Sound Engine (Wwise). |
 | [Audio System](./audio/audio-system) | The Audio System Gem provides the Audio Translation Layer (ATL), which adds support for audio in your Open 3D Engine projects. |
@@ -45,7 +45,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## AWS
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [AWS Client Auth](./aws/aws-client-auth) | The AWS Client Auth Gem provides solutions for client authentication and AWS authorization. |
 | [AWS Core](./aws/aws-core) | The AWS Core Gem provides basic shared AWS functionality such as AWS SDK initialization and client configuration. |
@@ -53,13 +53,13 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Core
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Lmbr Central](./core/lmbr-central) | The Lmbr Central Gem provides required code and assets for running Open 3D Engine Editor. |
 
 ## Debug
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Asset Memory Analyzer](./debug/asset-memory-analyzer) | The Asset Memory Analyzer Gem provides tools to profile asset memory usage in Open 3D Engine through ImGUI (Immediate Mode Graphical User Interface). |
 | [Automated Launcher Testing](./debug/automated-launcher-testing) | The Automated Launcher Testing Gem manages automated Open 3D Engine (O3DE) launcher tests. |
@@ -70,13 +70,13 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Design
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [White Box](./design/white-box) | The White Box Gem provides White Box rapid design components for Open 3D Engine. |
 
 ## Environment
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Landscape Canvas](./environment/landscape-canvas) | The Landscape Canvas Gem provides the Landscape Canvas editor; a node-based graph tool for authoring workflows to populate landscape with dynamic vegetation. |
 | [Surface Data](./environment/surface-data) | The Surface Data Gem provides functionality to emit signals or tags from surfaces such as meshes and terrain. |
@@ -85,14 +85,14 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Framework
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Graph Canvas](./framework/graph-canvas) | The Graph Canvas Gem provides a C++ framework for creating custom graphical node based editors for Open 3D Engine. |
 | [Graph Model](./framework/graph-model) | The Graph Model Gem provides a generic node graph data model framework for Open 3D Engine. |
 
 ## Gameplay
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Achievements](./gameplay/achievements) | The Achievements Gem provides a  target platform agnostic interface for retrieving achievement details and unlocking achievements. |
 | [Game State](./gameplay/game-state) | The Game State Gem provides functionality to determine and manage game states in Open 3D Engine projects. |
@@ -101,7 +101,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Input
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Gestures](./input/gestures) | The Gestures Gem provides detection for common gesture-based input actions. |
 | [Local User](./input/local-user) | The Local User Gem provides functionality for mapping local user ids to local player slots and managing local user profiles. |
@@ -111,14 +111,14 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Multiplayer
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Multiplayer](./multiplayer/multiplayer) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
 | [Multiplayer Compression](./multiplayer/multiplayer-compression) | The Multiplayer Compression Gem provides an open source compressor for use with the Multiplayer Gem. |
 
 ## Network
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Certificate Manager](./network/certificate-manager) | The Certificate Manager Gem provides access to authentication files for secure game connections from Amazon S3, files on disk, and other 3rd party sources. |
 | [Http Requestor](./network/http-requestor) | The HTTP Requestor Gem provides functionality to make asynchronous HTTP/HTTPS requests and return data through a user-provided call back function. |
@@ -128,7 +128,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Physics
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [NVIDIA Blast](./physics/nvidia/nvidia-blast) | The NVIDIA Blast Gem provides tools to author fractured mesh assets in Houdini, and functionality to create realistic destruction simulations in Open 3D Engine. |
 | [NVIDIA Cloth (NvCloth)](./physics/nvidia/nvidia-cloth) | The NVIDIA Cloth (NvCloth) Gem provides functionality to create realistic cloth and fabric simulation. |
@@ -139,7 +139,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Rendering
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Atom](./rendering/atom/atom) | The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilites, libraries, and interfaces. |
 | [Atom Content](./rendering/atom/atom-content) | The Atom Content Gem provides assets including models, textures, and materials, that  can be used to test Atom Renderer in  Open 3D Engine. |
@@ -153,7 +153,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Script
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Editor Python Bindings](./script/python/editor-python-bindings) | The Editor Python Bindings Gem provides Python commands for Open 3D Engine  Editor functions. |
 | [Expression Evaluation](./script/expression-evaluation) | The Expression Evaluation Gem provides a method for parsing and executing string expressions. |
@@ -168,13 +168,13 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## SDK
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [In App Purchases](./monetization/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
 
 ## UI
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [LyShine](./ui/lyshine) | The LyShine Gem provides the runtime UI system and creation tools for Open 3D Engine projects. |
 | [LyShine Examples](./ui/lyshine-examples) | The LyShine Examples Gem provides example code and assets for LyShine, the runtime UI system and editor for Open 3D Engine projects. |
@@ -183,7 +183,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## Utility
 
-| Gem | Descritpiton |
+| Gem | Description |
 | - | - |
 | [Fast Noise](./utility/fast-noise) | The Fast Noise Gradient Gem uses the third-party, open source FastNoise library to provide a variety of high-performance noise generation algorithms. |
 | [Gradient Signal](./utility/gradient-signal) | The Gradient Signal Gem provides a number of components for generating, modifying, and mixing gradient signals. |
