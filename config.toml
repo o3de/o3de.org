@@ -1,7 +1,7 @@
 baseURL = "https://docs.o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
+copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 
 enableGitInfo = true
 
