@@ -6,7 +6,7 @@ linktitle: Validator Errors
 
 **NOTE:** The most likely reason you visited this page was to help work past a validation failure.  To find the relevant fix, first look at the standard output logs!
 
-The Open 3d Engine Early Warning System is a tool for style checks and basic static analysis to find errors before building the engine and performing tests. It runs before the pipeline starts a build, attempting to quickly reject invalid changes before spending machine resources to build and test, and minimize human effort on reviewing changes.
+The Open 3D Engine Early Warning System is a tool for style checks and basic static analysis to find errors before building the engine and performing tests. It runs before the pipeline starts a build, attempting to quickly reject invalid changes before spending machine resources to build and test, and minimize human effort on reviewing changes.
 
 ## What file is failing? What rule is failing?
 
