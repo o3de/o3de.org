@@ -36,6 +36,11 @@ name = "O3DE Discord Chat"
 url = "https://discord.gg/neVKVbs6"
 icon = "fab fa-discord"
 
+[[params.social]]
+name = "O3DE Public Calendar"
+url = "https://lists.o3de.org/g/o3de-calendar/calendar"
+icon = "fab fa-github"
+
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]
