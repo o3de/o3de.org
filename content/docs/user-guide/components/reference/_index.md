@@ -3,6 +3,7 @@ title: Component reference
 linktitle: Component reference
 description: ' Open 3D Engine (O3DE) component reference index. '
 weight: 100
+toc: true
 ---
 
 {{< preview-new >}}
