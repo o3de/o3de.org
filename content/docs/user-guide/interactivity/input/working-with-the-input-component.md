@@ -72,7 +72,7 @@ You can create a Script Canvas graph that maps to your input events\. For more i
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/user-guide/components/script-canvas.md)** component\.
+1. In the **Entity Inspector**, click **Add Component** and add the **[Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/)** component\.
 
 1. In the **Script Canvas** component, for **Script Canvas Asset**, specify a Script Canvas graph like the following\.
 **Example Script Canvas Graph**
@@ -88,7 +88,7 @@ You can also create a Lua script that maps to your input events\. For more infor
 
 1. In the **Perspective** viewport, select the entity\.
 
-1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/user-guide/components/lua-script.md)** component\.
+1. In the **Entity Inspector**, click **Add Component**, and add the **[Lua Script](/docs/user-guide/components/scripting/lua-script/)** component\.
 
 1. In the **Lua Script** component, specify a Lua script file like the following\.
 **Example Lua Script**

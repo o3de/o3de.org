@@ -78,7 +78,7 @@ After you import your LODs into O3DE Editor, you can add an actor LOD to a level
 
 1. In O3DE Editor, choose **Tools**, **Asset Browser**\.
 
-1. Select and drag the exported `.fbx` file to the viewport\. In the **[Actor](/docs/user-guide/components/actor.md)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset\.
+1. Select and drag the exported `.fbx` file to the viewport\. In the **[Actor](/docs/user-guide/components/animation/actor/)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset\.
 
 1. To preview the LODs, change the number for **LOD Level** in the **Actor** component\.
 

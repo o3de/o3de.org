@@ -28,7 +28,7 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/
 
 ## Using NVIDIA Cloth {#nvidia-cloth-topics}
 
-[Cloth component](/docs/user-guide/components/cloth.md) \- Cloth component reference\.
+[Cloth component](/docs/user-guide/components/reference/physx/cloth/) \- Cloth component reference\.
 
 [Cloth for Mesh components](/docs/user-guide/interactivity/physics/nvidia-cloth/meshes.md) \- Create cloth for entities containing **Mesh** components\.
 

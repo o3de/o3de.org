@@ -37,7 +37,7 @@ Common variable types are pinned to the top of the list by default\. You can cus
    + For **Name**, enter a name to identify that color variable\. You can also double\-click the name in the **Variable Manager** to rename the variable\.
    + For **Color**, enter an RGB value or use the color picker\.
    + For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas editor, or leave the default at \-1\.
-   + For **Scope**, select **In** to show the variable property and value under the assigned **[Script Canvas](/docs/user-guide/components/script-canvas.md)** component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph\.
+   + For **Scope**, select **In** to show the variable property and value under the assigned **[Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/)** component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph\.
 **Note**
 This setting allows you to use the same Script Canvas graph for more than one entity, but customize part of the graph for a specific entity\. When you change the variable value on a component, that value takes precedence over the default value that is specified in the graph\.
 ![\[Example of Color variable properties in the Script Canvas Node Inspector.\]](/images/user-guide/scripting/script-canvas/node-inspector-scope-in-example.png)

@@ -67,7 +67,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
    1. Select the cloth mesh node from the drop\-down list\.
 ![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-actor.png)
 
-   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/components/cloth.md)\.
+   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/components/reference/physx/cloth/)\.
 
    1. You can use the **Motion constraints** properties **Max Distance** and **Scale** to blend between cloth simulation and keyframe animation\.
 

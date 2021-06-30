@@ -12,7 +12,7 @@ To create character animations with the Track View, you can add the **Simple Mot
 + **Blend in time**
 + **Blend out time**
 
-For more information, see the **[Simple Motion](/docs/user-guide/components/simple-motion.md)** component\.
+For more information, see the **[Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/)** component\.
 
 **Note**
 The **Play speed** property is always set to `0.0`\. This is because the Track View will set the **Play time** value every frame to drive the playback of the motion\. This allows scrubbing and playback in the Track View as well as playback in the game\.
@@ -28,7 +28,7 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 
 1. In the **Entity Inspector**, click **Add Component**, and then choose the **Simple Motion** component\.
 
-1. Add the **[Actor](/docs/user-guide/components/actor.md)** component\.
+1. Add the **[Actor](/docs/user-guide/components/animation/actor/)** component\.
 
 1. In the **Actor** component, for **Actor asset**, specify an actor file\. For example, you can specify the `Jack.fbx` file\.
 **Example**

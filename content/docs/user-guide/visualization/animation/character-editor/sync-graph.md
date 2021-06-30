@@ -242,7 +242,7 @@ In the example, the synchronization state of the primary and secondary graphs an
 | S | Fires the gun\. | 1 |
 | D | Stops the gun from firing\. | \-1 |
 
-To gather these inputs, the example adds [Input](/docs/user-guide/components/input.md) components to the robot entity and to the gun entity\.
+To gather these inputs, the example adds [Input](/docs/user-guide/components/reference/gameplay/input/) components to the robot entity and to the gun entity\.
 
 To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project\. The Input Management Framework converts input to user\-defined gameplay events\. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`\.
 
