@@ -27,13 +27,13 @@ sourceRepo = "https://github.com/o3de/o3de"
 navbar = "O3DE-Logo-REV-Mono.svg"
 
 [[params.social]]
-name = "GitHub"
-url = "https://github.com/o3de"
+name = "O3DE GitHub Forums"
+url = "https://github.com/o3de/o3de/discussions"
 icon = "fab fa-github"
 
 [[params.social]]
-name = "Discord"
-url = "#"
+name = "O3DE Discord Chat"
+url = "https://discord.gg/neVKVbs6"
 icon = "fab fa-discord"
 
 [[params.fonts]]
