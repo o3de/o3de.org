@@ -9,4 +9,5 @@ The LyTestTools are located in `Tools/LyTestTools`.
 
 ## Topics
 
-+ [Getting Started](/docs/user-guide/testing/lytesttools/getting-started)
++ [Getting Started](getting-started.md)
++ [Example Test Walkthrough](example-test-walkthrough.md)
