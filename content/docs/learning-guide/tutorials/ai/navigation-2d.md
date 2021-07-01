@@ -20,8 +20,8 @@ The behavior of an AI agent is defined in its **Profile**. One of the most impor
 Profiles are defined in XML in the `Profiles.xml` in the `Scripts` directory of your project. Open (or create) this file and add a new profile, `WanderProfile`:
 
 ```
-<Profiles id="1">
-    <WanderProfile  id="2" type="bb">
+<Profiles>
+    <WanderProfile type="bb">
         <CharacterFeatures type="bb">
             <GroundNav type="bool">true</GroundNav>
             <GroundAvoidance type="bool">true</GroundAvoidance>
@@ -98,13 +98,16 @@ Create a level and reference the behavior tree
         
     *   Add a Kythera `Agent` component to the entity, and set the `Profile` property to `WanderProfile`, which as been defined in `Profiles.xml` above.
         
-    *   Add a `SimpleMovementController` component. This component translates movement requests from Kythera AI into actual movement of the Entity by implementing the `MovementRequestBus` (see [Character movement APIs](http://localhost:44541/docs/user-guide/gems/reference/kythera-ai/kyt/character-movement-apis/). It does not support Animations yet.
+    *   Add a `SimpleMovementController` component. This component translates movement requests from Kythera AI into actual movement of the Entity by implementing the `MovementRequestBus` (see [Character movement APIs](http://localhost:44541/docs/user-guide/gems/reference/kythera-ai/character-movement-apis/). It does not support Animations yet.
         
 
 Create a behavior tree with the Inspector
 -----------------------------------------
 
-[The Inspector](/docs/user-guide/gems/reference/kythera-ai/kyt/introduction-to-the-inspector/) is Kythera AI's web-based debugger and behavior tree authoring tool. While Kythera AI is running, the Inspector will be available at [http://localhost:8081/](http://localhost:8081/) (by default). We will define a very basic behavior tree that randomly generates a position on the NavMesh and then moves to that position. After arriving, it will generate another position and move there to, in an endless loop.
+[The Inspector](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector/) is Kythera AI's browser based debugger and behavior tree authoring tool.
+The inspector webserver is started on the local machine when the Kythera Gem is initialized. While Kythera AI is running, the Inspector is available at [http://localhost:8081/](http://localhost:8081/).
+
+We will define a very basic behavior tree that randomly generates a position on the NavMesh and then moves to that position. After arriving, it will generate another position and move there to, in an endless loop.
 
 *   Open the Inspector Go to the BT Editor tab in the inspector
     
