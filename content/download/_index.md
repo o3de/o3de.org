@@ -6,9 +6,10 @@ title: Download O3DE
 **Current Release:** 2017.1
 
 Read the [Release Notes](https://docs.o3de.org/docs/release-notes/archive/2107-1-release-notes/) to learn more about O3DE [Developer Preview] Release 2107.01.
+
 ## Windows 10 Requirements
 
-* 2.5 GHz quad-core Intel or AMD processor 
+* 2.5 GHz quad-core Intel or AMD processor
 * 8 GB RAM
 * 2 GB VRAM DirectX 11; 4 GB VRAM recommended
 * NVIDIA GeForce GTX 1660 with driver version 465.89 or later
