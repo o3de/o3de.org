@@ -18,6 +18,8 @@ The Gem is available from our website at [https://kythera.ai/o3de](kyt/https://k
 
 * [Kythera AI Gem Setup](kyt/kythera-ai-gem-setup) - How to install the Gem and get started
 
+* [Tutorials](/docs/learning-guide/tutorials/ai/) - Tutorials on using the Gem
+
 ### 2D Navigation
 
 * [Navmesh Generation](kyt/navmesh-generation) - How to create two-dimensional navigation mesh (kyt/navmesh) in O3DE levels
