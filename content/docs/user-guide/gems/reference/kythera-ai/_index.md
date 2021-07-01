@@ -7,35 +7,35 @@ toc: true
 menu_uuid: Kythera AI
 ---
 
-![](kyt//images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
+![](/images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
 
 
 The Kythera AI Gem adds a broad toolset of AI features to Open 3D Engine (O3DE). It includes a demo project, ShooterDemo, with levels and assets that demonstrate the features of Kythera AI. The following topics cover the tools provided with the Kythera AI Gem.
 
-The Gem is available from our website at [https://kythera.ai/o3de](kyt/https://kythera.ai/o3de).
+The Gem is available from our website at [https://kythera.ai/o3de](https://kythera.ai/o3de).
 
 
 
-* [Kythera AI Gem Setup](kyt/kythera-ai-gem-setup) - How to install the Gem and get started
+* [Kythera AI Gem Setup](kythera-ai-gem-setup) - How to install the Gem and get started
 
 * [Tutorials](/docs/learning-guide/tutorials/ai/) - Tutorials on using the Gem
 
 ### 2D Navigation
 
-* [Navmesh Generation](kyt/navmesh-generation) - How to create two-dimensional navigation mesh (kyt/navmesh) in O3DE levels
-* [Character Movement APIs](kyt/character-movement-apis) - The APIs used to move characters on Kythera navmesh
+* [Navmesh Generation](navmesh-generation) - How to create two-dimensional navigation mesh (navmesh) in O3DE levels
+* [Character Movement APIs](character-movement-apis) - The APIs used to move characters on Kythera navmesh
 
 ### 3D Navigation
 
-* [3D Navigation Splines](kyt/navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
+* [3D Navigation Splines](navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
 
 ### Debugging and Behavior Authoring with the Kythera AI Inspector
 
 The Inspector is Kythera AI's browser-based debugger and behavior tree editor.
 
-* [Introduction to the Inspector](kyt/introduction-to-the-inspector)
-* [Behavior Tree Editor](kyt/behavior-tree-editor)
+* [Introduction to the Inspector](introduction-to-the-inspector)
+* [Behavior Tree Editor](behavior-tree-editor)
 
 ## License
 
-The Kythera AI Gem is free for non-commercial use, or for a 60-day trial period. Details of our licensing options, including our royalty-based license designed for independent developers, are avaliable [on our website](kyt/https://kythera.ai/o3de).
+The Kythera AI Gem is free for non-commercial use, or for a 60-day trial period. Details of our licensing options, including our royalty-based license designed for independent developers, are avaliable [on our website](https://kythera.ai/o3de).
