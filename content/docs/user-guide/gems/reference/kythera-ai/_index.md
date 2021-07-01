@@ -18,14 +18,14 @@ The Gem is available from our website at [https://kythera.ai/o3de](kyt/https://k
 
 * [Kythera AI Gem Setup](kyt/kythera-ai-gem-setup) - How to install the Gem and get started
 
-### 2d Navigation
+### 2D Navigation
 
 * [Navmesh Generation](kyt/navmesh-generation) - How to create two-dimensional navigation mesh (kyt/navmesh) in O3DE levels
 * [Character Movement APIs](kyt/character-movement-apis) - The APIs used to move characters on Kythera navmesh
 
-### 3d Navigation
+### 3D Navigation
 
-* [3D Navigation Splines](kyt/navigation-splines-tool) - Highly configurable 3d splines
+* [3D Navigation Splines](kyt/navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
 
 ### Debugging and Behavior Authoring with the Kythera AI Inspector
 

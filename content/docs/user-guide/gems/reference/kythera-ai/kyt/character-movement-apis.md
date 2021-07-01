@@ -1,5 +1,5 @@
 ---
-linkTitle: Character Movement APIs
+linkTitle: Character movement APIs
 title: Character Movement APIs
 description: Details of APIs for character movement with the Kythera AI Gem
 weight: 400

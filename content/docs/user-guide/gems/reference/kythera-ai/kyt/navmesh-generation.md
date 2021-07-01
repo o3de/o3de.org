@@ -1,6 +1,6 @@
 ---
-linkTitle: Navmesh Generation
-title: Navmesh Generation
+linkTitle: Navmesh generation
+title: Navmesh generation
 description: Generating a navigation mesh with the Kythera AI Gem
 weight: 300
 ---
@@ -8,7 +8,7 @@ weight: 300
 Bounds setup
 ------------
 
-In order for a Navigation Mesh to be generated, you will need at least one set of navmesh bounds in the level.
+In order for a navigation mesh to be generated, you will need at least one set of navmesh bounds in the level.
 
 To declare a set of navmesh bounds, create an entity with a `PolygonPrismShape` to form the bounds, and use a `BoundsNavPath` component to mark it for navmesh generation.
 
@@ -36,8 +36,6 @@ Settings for navmesh generation are configured in the file `navmesh.xml.` This c
 Multiple navmeshes may be specified in this file – for example, separate navmeshes for small and large characters. 
 
 Each navmesh must be specified with an entry in the `NavMeshNames` section of the XML, declaring its name and type, as shown below.
-
-  
 
 **Navmesh configuration XML**
 
