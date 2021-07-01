@@ -5,18 +5,18 @@ description: Telemetry data collected by the AWS Core Gem in Open 3D Engine.
 weight: 500
 ---
 
-The AWS Core gem includes an option to send a single usage metric to AWS periodically when the Editor is launched. We use this data to better understand how customers use the AWS solutions provided and related services and products. When enabled, the following information is collected and sent to AWS:
+The AWS Core Gem includes an option to send usage metrics to AWS periodically when the Editor is launched. We use this data to better understand how customers use the AWS solutions and related services and products. When enabled, we collect the following information and send it to AWS:
 
 ## Collected Metrics
 
 | Field            | Description                | Example                                  |
 |------------------|----------------------------|------------------------------------------|
 | `version`        | Defines the version of the metric schema this event was produced under. | `Schema Policy 1.1` |
-| `o3de_version`   | Defines the O3DE version (if known) producing the metric. | `2107.1` |
+| `o3de_version`   | Defines the O3DE version (if known) providing the metric. | `2107.1` |
 | `platform`       | Editor platform producing the metric. | Mac |
-| `platform_version` | Identify of the version or sub-platform type. | `10.15.7` |
+| `platform_version` | Identify the version or sub-platform type. | `10.15.7` |
 | `timestamp` | Timestamp for metric generation. | `2007-04-05T14:30` |
-| `active_aws_gems` | An array of Gems active in your project, separated by '/' | `AWSCore/AWSMetrics/AWSClientAuth` |
+| `active_aws_gems` | An array of Gems active in your project, separated by '/'. | `AWSCore/AWSMetrics/AWSClientAuth` |
 
 ## Opting Out
 
