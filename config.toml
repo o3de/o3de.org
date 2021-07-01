@@ -42,7 +42,7 @@ url = "https://lists.o3de.org/g/o3de-calendar/calendar"
 icon = "fab fa-github"
 
 [[params.social]
-name = "O3DE Twitter"]
+name = "O3DE Twitter"
 url = "https://twitter.com/o3dengine"
 icon = "fab fa-twitter"
 
