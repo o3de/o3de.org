@@ -7,13 +7,13 @@ weight: 200
 
 Download the Kythera AI Gem .zip file from Kythera AI’s website: https://www.kythera.ai/o3de.
 
-To build the Kythera AI demo project
+Building the Kythera AI demo project
 ====================================
 
 The demo project (called KytheraAIDemo) is part of the downloaded zip file.
 
 *   Make sure O3DE is set up according the [official guide](/docs/welcome-guide/setup/).
-*   Unpack the .zip file into a folder - for this example we’ll use `C:\dev\kythera`. If you use a different path, substitute c:\\dev with the folder you unpacked the Kythera AI Gem into.
+*   Unpack the .zip file into a folder - for this example we’ll use `C:\dev\kythera`. If you use a different path, substitute `C:\dev` with the folder you unpacked the Kythera AI Gem into.
 *   Create a `build` directory in the unpacked `KytheraAIDemo` folder (`C:\dev\kythera\KytheraAIDemo\build`)
 *   Open a shell prompt and `cd` into the build directory
 *   Run the following cmake command (with the correct paths substituted):
