@@ -1,11 +1,11 @@
 ---
-linktitle: Telemetry Data Collection
-title: AWS Core Telemetry Data Collection
-description: Telemetry data collected by the AWS Core Gem in Open 3D Engine.
+linktitle: Metric Data Collection
+title: AWS Core Metric Data Collection
+description: Metric data collected by the AWS Core Gem in Open 3D Engine.
 weight: 500
 ---
 
-The AWS Core Gem includes an option to send usage metrics to AWS periodically when the Editor is launched. We use this data to better understand how customers use the AWS solutions and related services and products. When enabled, we collect the following information and send it to AWS:
+The AWS Core Gem includes an option to send usage metrics to AWS periodically when the Editor is launched. We use this data to better understand how customers use the AWS solutions provided through the Gem. When enabled, we collect the following information and send it to AWS:
 
 ## Collected Metrics
 
