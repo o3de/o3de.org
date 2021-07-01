@@ -3,16 +3,17 @@ linkTitle: BT Editor Nodes
 title: Behavior Tree Editor Nodes
 description: Reference for all nodes available in the Kythera AI Behavior Tree editor
 weight: 800
+toc: true
 ---
 This is a reference of all Behavior Tree nodes available in the [BT editor](behavior-tree-editor)
 
-### Leaf action nodes
+## Leaf action nodes
 
 Nodes with no children
 
-#### Ship movement
+### Ship movement
 
-##### Ship\_Drift
+#### Ship\_Drift
 
 Keep the ship moving at current velocity (and allow it to be affected by external influences)
 
@@ -25,7 +26,7 @@ Keep the ship moving at current velocity (and allow it to be affected by externa
 
 * * *
 
-##### Ship\_FlyFlourishSpline
+#### Ship\_FlyFlourishSpline
 
 Fly a nav spline as a flourish. That is - copy the spline directly in front of the ship and fly that
 
@@ -40,7 +41,7 @@ Fly a nav spline as a flourish. That is - copy the spline directly in front of t
 
 * * *
 
-##### Ship\_FlySpline
+#### Ship\_FlySpline
 
 Fly a nav spline
 
@@ -61,7 +62,7 @@ Fly a nav spline
 
 * * *
 
-##### Ship\_GetSplinePoint
+#### Ship\_GetSplinePoint
 
 Get a point from a spline
 
@@ -78,7 +79,7 @@ Get a point from a spline
 
 * * *
 
-##### Ship\_Goto
+#### Ship\_Goto
 
 Go straight to a destination. Destination is re-evaluated each update
 
@@ -98,7 +99,7 @@ Go straight to a destination. Destination is re-evaluated each update
 
 * * *
 
-##### Ship\_MaintainVel
+#### Ship\_MaintainVel
 
 Keep the ship moving at current velocity
 
@@ -112,7 +113,7 @@ Keep the ship moving at current velocity
 
 * * *
 
-##### Ship\_PathTo
+#### Ship\_PathTo
 
 Path to a destination. Destination is re-evaluated each update
 
@@ -131,7 +132,7 @@ Path to a destination. Destination is re-evaluated each update
 
 * * *
 
-##### Ship\_Roll
+#### Ship\_Roll
 
 Roll the ship, normally executed in parallel with another movement node. Never completes
 
@@ -144,7 +145,7 @@ Roll the ship, normally executed in parallel with another movement node. Never c
 
 * * *
 
-##### Ship\_Stop
+#### Ship\_Stop
 
 Bring the entity to a complete stop
 
@@ -154,7 +155,7 @@ Bring the entity to a complete stop
 
 * * *
 
-##### Ship\_Track
+#### Ship\_Track
 
 Attempt to reach and maintain a given distance from a target entity. Target is only evaluated on entry
 
@@ -173,7 +174,7 @@ Attempt to reach and maintain a given distance from a target entity. Target is o
 
 * * *
 
-##### Ship\_TurnToTarget
+#### Ship\_TurnToTarget
 
 Turn the ship to face a target. Reads target every frame until completes
 
@@ -188,9 +189,9 @@ Turn the ship to face a target. Reads target every frame until completes
 
 * * *
 
-#### Character movement
+### Character movement
 
-##### Character\_ExactGoto
+#### Character\_ExactGoto
 
 Move to the given position and direction
 
@@ -205,7 +206,7 @@ Move to the given position and direction
 
 * * *
 
-##### Character\_Goto
+#### Character\_Goto
 
 Path find and goto destination
 
@@ -220,7 +221,7 @@ Path find and goto destination
 
 * * *
 
-##### Character\_GotoDirectness
+#### Character\_GotoDirectness
 
 Approach the given waypoint at a given directness
 
@@ -236,7 +237,7 @@ Approach the given waypoint at a given directness
 
 * * *
 
-##### Character\_GotoWaypoint
+#### Character\_GotoWaypoint
 
 Pathfind to a given input. When nearly complete, redirect to a new waypoint if one has been given
 
@@ -254,7 +255,7 @@ Pathfind to a given input. When nearly complete, redirect to a new waypoint if o
 
 * * *
 
-##### Character\_IsPointReachableNow
+#### Character\_IsPointReachableNow
 
 Succeed if there is a valid path from the start point/entity to the end point/entity, fail if not
 
@@ -271,7 +272,7 @@ Succeed if there is a valid path from the start point/entity to the end point/en
 
 * * *
 
-##### Character\_PathDistance
+#### Character\_PathDistance
 
 Get the length of the current path. Fails if there is no current path
 
@@ -284,7 +285,7 @@ Get the length of the current path. Fails if there is no current path
 
 * * *
 
-##### Character\_SteeringGoto
+#### Character\_SteeringGoto
 
 Let steering handle motion for this entity (from other input)
 
@@ -297,7 +298,7 @@ Let steering handle motion for this entity (from other input)
 
 * * *
 
-##### Character\_TurnToFace
+#### Character\_TurnToFace
 
 Makes a character turn to face a direction or position
 
@@ -312,9 +313,9 @@ Makes a character turn to face a direction or position
 
 * * *
 
-#### Character control
+### Character control
 
-##### SetStance
+#### SetStance
 
 Set the stance of a character
 
@@ -328,9 +329,9 @@ Set the stance of a character
 
 * * *
 
-#### Conditional
+### Conditional
 
-##### CompareNow
+#### CompareNow
 
 Test a Lua script conditional expression. Can access entity, profile and behavior blackboards
 
@@ -344,7 +345,7 @@ Test a Lua script conditional expression. Can access entity, profile and behavio
 
 * * *
 
-##### EqualsNow
+#### EqualsNow
 
 Test whether two inputs are equal (Lhs == Rhs)
 
@@ -359,7 +360,7 @@ Test whether two inputs are equal (Lhs == Rhs)
 
 * * *
 
-##### GreaterThanEqualsNow
+#### GreaterThanEqualsNow
 
 Test whether one input is greater or equal to another (Lhs >= Rhs)
 
@@ -374,7 +375,7 @@ Test whether one input is greater or equal to another (Lhs >= Rhs)
 
 * * *
 
-##### GreaterThanNow
+#### GreaterThanNow
 
 Test whether one input is greater than another (Lhs > Rhs)
 
@@ -389,7 +390,7 @@ Test whether one input is greater than another (Lhs > Rhs)
 
 * * *
 
-##### HasTagNow
+#### HasTagNow
 
 Checks whether an entity has a particular tag
 
@@ -404,7 +405,7 @@ Checks whether an entity has a particular tag
 
 * * *
 
-##### HasVariableNow
+#### HasVariableNow
 
 Checks whether the named variable exists
 
@@ -418,7 +419,7 @@ Checks whether the named variable exists
 
 * * *
 
-##### IsInFrontNow
+#### IsInFrontNow
 
 True if the given entity or position has a dot product with our current direction greater than the minimum specified
 
@@ -433,7 +434,7 @@ True if the given entity or position has a dot product with our current directio
 
 * * *
 
-##### IsInGroupNow
+#### IsInGroupNow
 
 Checks whether an entity has membership of a particular group
 
@@ -448,7 +449,7 @@ Checks whether an entity has membership of a particular group
 
 * * *
 
-##### IsInRangeNow
+#### IsInRangeNow
 
 True if the distance between two positions is within the given range
 
@@ -465,7 +466,7 @@ True if the distance between two positions is within the given range
 
 * * *
 
-##### IsValidIDNow
+#### IsValidIDNow
 
 True if the given entity ID is not empty and the entity exists
 
@@ -479,7 +480,7 @@ True if the given entity ID is not empty and the entity exists
 
 * * *
 
-##### LessThanEqualsNow
+#### LessThanEqualsNow
 
 Test whether one input is less or equal to another (Lhs <= Rhs)
 
@@ -494,7 +495,7 @@ Test whether one input is less or equal to another (Lhs <= Rhs)
 
 * * *
 
-##### LessThanNow
+#### LessThanNow
 
 Test whether one input is less than another (Lhs < Rhs)
 
@@ -509,7 +510,7 @@ Test whether one input is less than another (Lhs < Rhs)
 
 * * *
 
-##### RandomChanceNow
+#### RandomChanceNow
 
 True with a given probability
 
@@ -523,7 +524,7 @@ True with a given probability
 
 * * *
 
-##### SignalHasParameterNow
+#### SignalHasParameterNow
 
 True if the given signal contains a parameter with the given name
 
@@ -538,7 +539,7 @@ True if the given signal contains a parameter with the given name
 
 * * *
 
-##### TimeGreaterThanNow
+#### TimeGreaterThanNow
 
 Test whether more than a certain interval of time has passed since a timestamp. False if the timestamp isn't set
 
@@ -553,7 +554,7 @@ Test whether more than a certain interval of time has passed since a timestamp. 
 
 * * *
 
-##### TimeLessThanNow
+#### TimeLessThanNow
 
 Test whether less than a certain interval of time has passed since a timestamp. False if the timestamp isn't set
 
@@ -568,10 +569,9 @@ Test whether less than a certain interval of time has passed since a timestamp. 
 
 * * *
 
-Math
-----
+### Math
 
-##### Add
+#### Add
 
 Add two inputs together. The inputs must be of types that make sense to be added (int, float, vector)
 
@@ -588,7 +588,7 @@ Add two inputs together. The inputs must be of types that make sense to be added
 
 * * *
 
-##### Divide
+#### Divide
 
 Divide one input by another. The numerator input must be a divisible type (int, float, vector). Denominator must a number (int, float)
 
@@ -605,7 +605,7 @@ Divide one input by another. The numerator input must be a divisible type (int, 
 
 * * *
 
-##### Dot
+#### Dot
 
 Calculate the dot product of two vectors
 
@@ -622,7 +622,7 @@ Calculate the dot product of two vectors
 
 * * *
 
-##### Length
+#### Length
 
 Get the length of a vector or velocity
 
@@ -638,7 +638,7 @@ Get the length of a vector or velocity
 
 * * *
 
-##### Multiply
+#### Multiply
 
 Multiply two inputs together. The inputs must of types that make sense to be multiplied (int, float, vector)
 
@@ -655,7 +655,7 @@ Multiply two inputs together. The inputs must of types that make sense to be mul
 
 * * *
 
-##### Normalize
+#### Normalize
 
 Normalize a vector. Return (0,0,0) if the vector has no length
 
@@ -671,7 +671,7 @@ Normalize a vector. Return (0,0,0) if the vector has no length
 
 * * *
 
-##### Subtract
+#### Subtract
 
 Subtract one input from another. The inputs must be of types that make sense to be subtracted (int, float, vector)
 
@@ -688,9 +688,9 @@ Subtract one input from another. The inputs must be of types that make sense to 
 
 * * *
 
-#### Search
+### Search
 
-##### Character\_PredictPosition
+#### Character\_PredictPosition
 
 Predict where an entity will be in x secs assuming they continue to move at constant velocity on the navmesh
 
@@ -707,7 +707,7 @@ Predict where an entity will be in x secs assuming they continue to move at cons
 
 * * *
 
-##### Character\_RandomPointInRange
+#### Character\_RandomPointInRange
 
 Find a random point within a given navigation distance of the agent (or an arbitrary position)
 
@@ -728,7 +728,7 @@ Find a random point within a given navigation distance of the agent (or an arbit
 
 * * *
 
-##### Character\_RandomPointWithDirectness
+#### Character\_RandomPointWithDirectness
 
 Find a random point closest to a given direction
 
@@ -748,7 +748,7 @@ Find a random point closest to a given direction
 
 * * *
 
-##### CountEntitiesWithTags
+#### CountEntitiesWithTags
 
 Search all entities and find the ones that match the specified tags. Returns an array of matching entities. If no entities match then node fails
 
@@ -767,7 +767,7 @@ Search all entities and find the ones that match the specified tags. Returns an 
 
 * * *
 
-##### FindEntitiesWithTags
+#### FindEntitiesWithTags
 
 Search all entities and find the ones that match the specified tags. Returns an array of matching entities. If no entities match then node fails
 
@@ -785,7 +785,7 @@ Search all entities and find the ones that match the specified tags. Returns an 
 
 * * *
 
-##### FindNearestEntityWithTags
+#### FindNearestEntityWithTags
 
 Search all entities within Range and find the ones that match the specified tags. Returns the closest entity from the set. If no entities match then node fails
 
@@ -805,7 +805,7 @@ Search all entities within Range and find the ones that match the specified tags
 
 * * *
 
-##### FindRandomEntityWithTags
+#### FindRandomEntityWithTags
 
 Search all entities and find the ones that match the specified tags. Returns a randomly select entity from the set. If no entities match then node fails
 
@@ -824,7 +824,7 @@ Search all entities and find the ones that match the specified tags. Returns a r
 
 * * *
 
-##### GetNextNavPoint
+#### GetNextNavPoint
 
 Finds the id of the next point on a nav route. Fails if there is no next point
 
@@ -840,7 +840,7 @@ Finds the id of the next point on a nav route. Fails if there is no next point
 
 * * *
 
-##### Ship\_RandomPointInRange
+#### Ship\_RandomPointInRange
 
 Find a random point in the octree within a given navigation distance of the agent (or an arbitrary position)
 
@@ -859,9 +859,9 @@ Find a random point in the octree within a given navigation distance of the agen
 
 * * *
 
-#### Utility
+### Utility
 
-##### AddTag
+#### AddTag
 
 Add a tag to an entity
 
@@ -875,7 +875,7 @@ Add a tag to an entity
 
 * * *
 
-##### ArrayBreak
+#### ArrayBreak
 
 Breaks out of currently iterating array loop, See also BTIterateOverArray
 
@@ -888,7 +888,7 @@ Breaks out of currently iterating array loop, See also BTIterateOverArray
 
 * * *
 
-##### Character\_AdjustSpeedToTargetDist
+#### Character\_AdjustSpeedToTargetDist
 
 Calculate speed based on distance from target
 
@@ -909,7 +909,7 @@ Calculate speed based on distance from target
 
 * * *
 
-##### Character\_Speed
+#### Character\_Speed
 
 Translate a named speed (e.g. 'Walk', 'Run') into its numerical value for this entity, applying an optional percentage modifier
 
@@ -927,7 +927,7 @@ Translate a named speed (e.g. 'Walk', 'Run') into its numerical value for this e
 
 * * *
 
-##### ClaimEntity
+#### ClaimEntity
 
 Claim ownership an entity and remove its 'Available' tag
 
@@ -941,7 +941,7 @@ Claim ownership an entity and remove its 'Available' tag
 
 * * *
 
-##### ClearTimestampVariable
+#### ClearTimestampVariable
 
 Clear the value of a timestamp so that any greater or less than comparisons will always return false
 
@@ -954,7 +954,7 @@ Clear the value of a timestamp so that any greater or less than comparisons will
 
 * * *
 
-##### Compute
+#### Compute
 
 Evaluate a Lua script conditional expression. Can access Entity, Profile and Behavior blackboards
 
@@ -970,7 +970,7 @@ Evaluate a Lua script conditional expression. Can access Entity, Profile and Beh
 
 * * *
 
-##### Copy
+#### Copy
 
 Copies a value (constant or variable) to a variable
 
@@ -986,7 +986,7 @@ Copies a value (constant or variable) to a variable
 
 * * *
 
-##### DistanceBetweenPoints
+#### DistanceBetweenPoints
 
 Get distance between two points, either of which can be specified as a KytPos or an entity ID
 
@@ -1003,7 +1003,7 @@ Get distance between two points, either of which can be specified as a KytPos or
 
 * * *
 
-##### DistanceToBoundsEdge
+#### DistanceToBoundsEdge
 
 Get distance of an entity to the nearest edge of a bounds object, negative if outside of bounds
 
@@ -1019,7 +1019,7 @@ Get distance of an entity to the nearest edge of a bounds object, negative if ou
 
 * * *
 
-##### EraseTag
+#### EraseTag
 
 Remove a tag from an entity
 
@@ -1034,7 +1034,7 @@ Remove a tag from an entity
 
 * * *
 
-##### EraseVariable
+#### EraseVariable
 
 Erases a specified variable
 
@@ -1047,7 +1047,7 @@ Erases a specified variable
 
 * * *
 
-##### Execute
+#### Execute
 
 Execute a Lua script expression. Can access Entity, Profile and Behavior blackboards
 
@@ -1060,7 +1060,7 @@ Execute a Lua script expression. Can access Entity, Profile and Behavior blackbo
 
 * * *
 
-##### Fail
+#### Fail
 
 Do nothing; return fail on first update
 
@@ -1070,7 +1070,7 @@ Do nothing; return fail on first update
 
 * * *
 
-##### GenerateRandom2dDirection
+#### GenerateRandom2dDirection
 
 Generate a random 2d direction in the x-y plane within +/- degrees of the forward direction
 
@@ -1087,7 +1087,7 @@ Generate a random 2d direction in the x-y plane within +/- degrees of the forwar
 
 * * *
 
-##### GenerateRandomDirectionOnPlane
+#### GenerateRandomDirectionOnPlane
 
 Generate a random direction on a plane given a normal to the plane
 
@@ -1103,7 +1103,7 @@ Generate a random direction on a plane given a normal to the plane
 
 * * *
 
-##### GenerateRandomFloat
+#### GenerateRandomFloat
 
 Generate a random float value from Min to Max, optionally scaled
 
@@ -1121,7 +1121,7 @@ Generate a random float value from Min to Max, optionally scaled
 
 * * *
 
-##### GenerateRandomInt
+#### GenerateRandomInt
 
 Generate a random integer value from Min to Max, optionally scaled
 
@@ -1139,7 +1139,7 @@ Generate a random integer value from Min to Max, optionally scaled
 
 * * *
 
-##### GenerateRandomPosition
+#### GenerateRandomPosition
 
 Generate a random position offsetting from reference pos, within the Min and Max constraints on each axis
 
@@ -1161,7 +1161,7 @@ Generate a random position offsetting from reference pos, within the Min and Max
 
 * * *
 
-##### GetArraySize
+#### GetArraySize
 
 Get an Entity's sate tree and gain access to it's blackboards. \[WARNING\] Do not attempt to change values of a blackboard recieved by this node
 
@@ -1177,7 +1177,7 @@ Get an Entity's sate tree and gain access to it's blackboards. \[WARNING\] Do no
 
 * * *
 
-##### GetDirection
+#### GetDirection
 
 Get a normalized direction vector between two points, either of which can be specified as a KytPos or an entity ID
 
@@ -1194,7 +1194,7 @@ Get a normalized direction vector between two points, either of which can be spe
 
 * * *
 
-##### GetEntityDirection
+#### GetEntityDirection
 
 Get direction in world space of entity's specified local axis
 
@@ -1211,7 +1211,7 @@ Get direction in world space of entity's specified local axis
 
 * * *
 
-##### GetEntityPos
+#### GetEntityPos
 
 Get position of an entity
 
@@ -1227,7 +1227,7 @@ Get position of an entity
 
 * * *
 
-##### GetEntityStateTree
+#### GetEntityStateTree
 
 Get an Entity's sate tree and gain access to it's blackboards. \[WARNING\] Do not attempt to change values of a blackboard recieved by this node
 
@@ -1243,7 +1243,7 @@ Get an Entity's sate tree and gain access to it's blackboards. \[WARNING\] Do no
 
 * * *
 
-##### GetEntityTargetBlackboard
+#### GetEntityTargetBlackboard
 
 Returns a pointer to entity's target blackboard. Fails if no blackboard exists
 
@@ -1259,7 +1259,7 @@ Returns a pointer to entity's target blackboard. Fails if no blackboard exists
 
 * * *
 
-##### GetSignalParameter
+#### GetSignalParameter
 
 Get the value of a signal parameter
 
@@ -1276,7 +1276,7 @@ Get the value of a signal parameter
 
 * * *
 
-##### InitializeVariable
+#### InitializeVariable
 
 Create a behavior variable initialized to the default value
 
@@ -1290,7 +1290,7 @@ Create a behavior variable initialized to the default value
 
 * * *
 
-##### Log
+#### Log
 
 Write a message to a log
 
@@ -1304,7 +1304,7 @@ Write a message to a log
 
 * * *
 
-##### Noop
+#### Noop
 
 Do nothing until interrupted
 
@@ -1314,7 +1314,7 @@ Do nothing until interrupted
 
 * * *
 
-##### OverrideEntityPhysics
+#### OverrideEntityPhysics
 
 Override the physics aspect of an entity for a given frame
 
@@ -1329,7 +1329,7 @@ Override the physics aspect of an entity for a given frame
 
 * * *
 
-##### PersonalLog
+#### PersonalLog
 
 Write a message to an entity's personal log
 
@@ -1342,7 +1342,7 @@ Write a message to an entity's personal log
 
 * * *
 
-##### PopArrayValue
+#### PopArrayValue
 
 Pops last value from the end of an array
 
@@ -1359,7 +1359,7 @@ Pops last value from the end of an array
 
 * * *
 
-##### PushArrayValue
+#### PushArrayValue
 
 Pops last value from the end of an array
 
@@ -1373,7 +1373,7 @@ Pops last value from the end of an array
 
 * * *
 
-##### Raycast
+#### Raycast
 
 Perform a raycast, succeeds if nothing is hit
 
@@ -1390,7 +1390,7 @@ Perform a raycast, succeeds if nothing is hit
 
 * * *
 
-##### ReleaseEntity
+#### ReleaseEntity
 
 Release ownership of an object and add 'Available' tag
 
@@ -1403,7 +1403,7 @@ Release ownership of an object and add 'Available' tag
 
 * * *
 
-##### ReplaceTag
+#### ReplaceTag
 
 Replace one tag with another on an entity
 
@@ -1418,7 +1418,7 @@ Replace one tag with another on an entity
 
 * * *
 
-##### SendResponseSignal
+#### SendResponseSignal
 
 Send a response to a signal handled by the Behavior Tree
 
@@ -1432,7 +1432,7 @@ Send a response to a signal handled by the Behavior Tree
 
 * * *
 
-##### SendSignal
+#### SendSignal
 
 Send a signal
 
@@ -1450,7 +1450,7 @@ Send a signal
 
 * * *
 
-##### SendSignalToGroup
+#### SendSignalToGroup
 
 Send a signal to all entities in a group
 
@@ -1468,7 +1468,7 @@ Send a signal to all entities in a group
 
 * * *
 
-##### SetBranchTag
+#### SetBranchTag
 
 Remove all tags within a given branch and add new tag instead
 
@@ -1483,7 +1483,7 @@ Remove all tags within a given branch and add new tag instead
 
 * * *
 
-##### SetTimestampVariable
+#### SetTimestampVariable
 
 Set the value of a timestamp to now, create if it doesn't already exist
 
@@ -1496,7 +1496,7 @@ Set the value of a timestamp to now, create if it doesn't already exist
 
 * * *
 
-##### SetVariable
+#### SetVariable
 
 Sets a variable to a particular value
 
@@ -1510,7 +1510,7 @@ Sets a variable to a particular value
 
 * * *
 
-##### Ship\_NavRaycast
+#### Ship\_NavRaycast
 
 Test if there is a straight navigable line between two positions
 
@@ -1527,7 +1527,7 @@ Test if there is a straight navigable line between two positions
 
 * * *
 
-##### SmoothSpeedToTargetDist
+#### SmoothSpeedToTargetDist
 
 Calculate speed based on distance from target, smoothing over frames for less abrupt changes
 
@@ -1553,7 +1553,7 @@ Calculate speed based on distance from target, smoothing over frames for less ab
 
 * * *
 
-##### Success
+#### Success
 
 Do nothing; return success on first update
 
@@ -1563,7 +1563,7 @@ Do nothing; return success on first update
 
 * * *
 
-##### Wait
+#### Wait
 
 Wait and do nothing for specified time
 
@@ -1576,7 +1576,7 @@ Wait and do nothing for specified time
 
 * * *
 
-##### WaitForSignal
+#### WaitForSignal
 
 Listen for a signal of a specified name and then keep copy of the signal
 
@@ -1596,7 +1596,7 @@ Listen for a signal of a specified name and then keep copy of the signal
 
 * * *
 
-##### WaitRandom
+#### WaitRandom
 
 Wait and do nothing for random time length between min and max specified values
 
@@ -1610,9 +1610,9 @@ Wait and do nothing for random time length between min and max specified values
 
 * * *
 
-#### Groups
+### Groups
 
-##### AddEntityToGroup
+#### AddEntityToGroup
 
 Add an entity to a group
 
@@ -1630,7 +1630,7 @@ Add an entity to a group
 
 * * *
 
-##### CreateGroup
+#### CreateGroup
 
 Create a new group entity
 
@@ -1646,7 +1646,7 @@ Create a new group entity
 
 * * *
 
-##### EraseGroup
+#### EraseGroup
 
 Erase an existing group entity
 
@@ -1659,7 +1659,7 @@ Erase an existing group entity
 
 * * *
 
-##### GetEntityInGroup
+#### GetEntityInGroup
 
 Get the nth Entity in a Group
 
@@ -1676,7 +1676,7 @@ Get the nth Entity in a Group
 
 * * *
 
-##### GetGroupCount
+#### GetGroupCount
 
 Get the count of entities in a group
 
@@ -1692,7 +1692,7 @@ Get the count of entities in a group
 
 * * *
 
-##### GetGroupFromEntity
+#### GetGroupFromEntity
 
 Get the group that an entity belongs to
 
@@ -1709,7 +1709,7 @@ Get the group that an entity belongs to
 
 * * *
 
-##### RemoveEntityFromGroup
+#### RemoveEntityFromGroup
 
 Remove an entity from a group
 
@@ -1726,9 +1726,9 @@ Remove an entity from a group
 
 * * *
 
-#### Exception handling
+### Exception handling
 
-##### ThrowException
+#### ThrowException
 
 Throw an exception
 
@@ -1741,9 +1741,9 @@ Throw an exception
 
 * * *
 
-#### Debug
+### Debug
 
-##### DD\_DrawLine
+#### DD\_DrawLine
 
 Draw a line between two points
 
@@ -1758,7 +1758,7 @@ Draw a line between two points
 
 * * *
 
-##### DD\_DrawSphere
+#### DD\_DrawSphere
 
 Draw a sphere at point with radius
 
@@ -1773,7 +1773,7 @@ Draw a sphere at point with radius
 
 * * *
 
-##### HDV2D\_DrawRandomPoints
+#### HDV2D\_DrawRandomPoints
 
 Generate and render random points on the navmesh
 
@@ -1788,10 +1788,9 @@ Generate and render random points on the navmesh
 
 * * *
 
-SQS
----
+### SQS
 
-##### SpatialQuerySimple
+#### SpatialQuerySimple
 
 Run a SQS query with simplest setup
 
@@ -1811,9 +1810,9 @@ Run a SQS query with simplest setup
 
 * * *
 
-#### State Machine
+### State Machine
 
-##### SendTransitionSignal
+#### SendTransitionSignal
 
 Send a signal to this entity to cause a state transition in a parent State Machine. This node throws an error if the state machine does not transition away from the current state after this node has sent the signal
 
@@ -1826,13 +1825,13 @@ Send a signal to this entity to cause a state transition in a parent State Machi
 
 * * *
 
-### Composite Nodes
+## Composite Nodes
 
 Nodes with one or more children
 
-#### Basic
+### Basic
 
-##### IfThenElse
+#### IfThenElse
 
 Test a Lua condition on entry and if true executes its first child, if false executes second child, if present, otherwise fails
 
@@ -1845,7 +1844,7 @@ Test a Lua condition on entry and if true executes its first child, if false exe
 
 * * *
 
-##### ParallelUntilAllComplete
+#### ParallelUntilAllComplete
 
 Runs all children at the same time all are complete. Returns fail if any failed
 
@@ -1855,7 +1854,7 @@ Runs all children at the same time all are complete. Returns fail if any failed
 
 * * *
 
-##### ParallelUntilAnyComplete
+#### ParallelUntilAnyComplete
 
 Runs all children at the same time until one completes
 
@@ -1865,7 +1864,7 @@ Runs all children at the same time until one completes
 
 * * *
 
-##### ParallelUntilFailure
+#### ParallelUntilFailure
 
 Runs all children at the same time until one fails
 
@@ -1875,7 +1874,7 @@ Runs all children at the same time until one fails
 
 * * *
 
-##### Selector
+#### Selector
 
 Runs children one after another until one succeeds or they all fail
 
@@ -1885,7 +1884,7 @@ Runs children one after another until one succeeds or they all fail
 
 * * *
 
-##### Sequence
+#### Sequence
 
 Sequence of nodes that is run in succession. Stops and fails as soon as any child fails
 
@@ -1895,9 +1894,9 @@ Sequence of nodes that is run in succession. Stops and fails as soon as any chil
 
 * * *
 
-#### State Machine
+### State Machine
 
-##### StateMachine
+#### StateMachine
 
 A state machine with transitions controlled by signals. This node completes if a child state runs to completion
 
@@ -1907,9 +1906,9 @@ A state machine with transitions controlled by signals. This node completes if a
 
 * * *
 
-#### Priority
+### Priority
 
-##### Priority
+#### Priority
 
 Controls an ordered set of children each with a boolean condition as to whether to execute. Will continuously evaluate and execute first child with a true condition
 
@@ -1919,13 +1918,13 @@ Controls an ordered set of children each with a boolean condition as to whether 
 
 * * *
 
-### Decorator Nodes
+## Decorator Nodes
 
 Nodes with exactly one child
 
-#### Flow control
+### Flow control
 
-##### RepeatUntilFails
+#### RepeatUntilFails
 
 Keeps repeating the child node until it fails
 
@@ -1938,7 +1937,7 @@ Keeps repeating the child node until it fails
 
 * * *
 
-##### RepeatUntilSucceeds
+#### RepeatUntilSucceeds
 
 Keeps repeating the child node until it succeeds
 
@@ -1951,7 +1950,7 @@ Keeps repeating the child node until it succeeds
 
 * * *
 
-##### Repeater
+#### Repeater
 
 Keeps repeating the child node regardless of the outcome
 
@@ -1964,7 +1963,7 @@ Keeps repeating the child node regardless of the outcome
 
 * * *
 
-##### Timer
+#### Timer
 
 Runs child node for up to the specified amount of time
 
@@ -1978,9 +1977,9 @@ Runs child node for up to the specified amount of time
 
 * * *
 
-#### Return code manipulation
+### Return code manipulation
 
-##### Failer
+#### Failer
 
 Always fails
 
@@ -1990,7 +1989,7 @@ Always fails
 
 * * *
 
-##### Inverter
+#### Inverter
 
 Reverse the return value of the child node
 
@@ -2000,7 +1999,7 @@ Reverse the return value of the child node
 
 * * *
 
-##### Succeeder
+#### Succeeder
 
 Always succeeds, unless there is an exception
 
@@ -2010,9 +2009,9 @@ Always succeeds, unless there is an exception
 
 * * *
 
-#### Exception handling
+### Exception handling
 
-##### HandleException
+#### HandleException
 
 Handle an exception by interrupting the tree and then failing or succeeding
 
@@ -2026,7 +2025,7 @@ Handle an exception by interrupting the tree and then failing or succeeding
 
 * * *
 
-##### ThrowOnFail
+#### ThrowOnFail
 
 Throw an exception if the child node fails
 
@@ -2039,9 +2038,9 @@ Throw an exception if the child node fails
 
 * * *
 
-#### Utility
+### Utility
 
-##### CallSubtree
+#### CallSubtree
 
 Call a registered pluggable BT subtree
 
@@ -2054,7 +2053,7 @@ Call a registered pluggable BT subtree
 
 * * *
 
-##### ClearTimestampVariableOnExit
+#### ClearTimestampVariableOnExit
 
 Clear the value of a timestamp on exit so that any greater or less than comparisons will always return false
 
@@ -2067,7 +2066,7 @@ Clear the value of a timestamp on exit so that any greater or less than comparis
 
 * * *
 
-##### EraseVariableOnExit
+#### EraseVariableOnExit
 
 Erase a variable when the child node finishes
 
@@ -2080,7 +2079,7 @@ Erase a variable when the child node finishes
 
 * * *
 
-##### HandleRequestSignal
+#### HandleRequestSignal
 
 Manages the sending of signal responses when handling request signals such as task switches or scripted commands
 
@@ -2096,7 +2095,7 @@ Manages the sending of signal responses when handling request signals such as ta
 
 * * *
 
-##### IterateOverArray
+#### IterateOverArray
 
 Iterates over elements in an array, See also BTArrayBreak
 
@@ -2113,7 +2112,7 @@ Iterates over elements in an array, See also BTArrayBreak
 
 * * *
 
-##### ReleaseEntityOnExit
+#### ReleaseEntityOnExit
 
 Release ownership of a claimed entity on exit
 
@@ -2126,7 +2125,7 @@ Release ownership of a claimed entity on exit
 
 * * *
 
-##### SetControlledEntity
+#### SetControlledEntity
 
 Specifies which entity the behavior tree is being applied to. Still keeps the same behavior blackboard
 
@@ -2139,7 +2138,7 @@ Specifies which entity the behavior tree is being applied to. Still keeps the sa
 
 * * *
 
-##### SetTimestampVariableOnExit
+#### SetTimestampVariableOnExit
 
 Set a timestamp variable to a current time on exit
 
@@ -2152,7 +2151,7 @@ Set a timestamp variable to a current time on exit
 
 * * *
 
-##### SetVariableOnExit
+#### SetVariableOnExit
 
 Set a variable to a particular value when the child node finishes
 
@@ -2166,9 +2165,9 @@ Set a variable to a particular value when the child node finishes
 
 * * *
 
-#### Character movement
+### Character movement
 
-##### Character\_DisableAvoidanceForEntity
+#### Character\_DisableAvoidanceForEntity
 
 Switch of avoidance against a particular entity. Usually used for your target. Avoidance is re enabled when this node terminates
 
@@ -2181,7 +2180,7 @@ Switch of avoidance against a particular entity. Usually used for your target. A
 
 * * *
 
-##### OverrideObstacleScale
+#### OverrideObstacleScale
 
 Temporarily changes the scale of the avoidance obstacle until the subtree finishes
 
@@ -2194,7 +2193,7 @@ Temporarily changes the scale of the avoidance obstacle until the subtree finish
 
 * * *
 
-##### Ship\_DisableAvoidanceForEntity
+#### Ship\_DisableAvoidanceForEntity
 
 Switch off avoidance against a particular entity. Usually used for your target. Avoidance is re enabled when this node terminates
 
@@ -2207,7 +2206,7 @@ Switch off avoidance against a particular entity. Usually used for your target. 
 
 * * *
 
-##### Ship\_ToggleAvoidance
+#### Ship\_ToggleAvoidance
 
 Switch on or off avoidance. Avoidance is reset when this node terminates
 
