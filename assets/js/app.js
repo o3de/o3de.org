@@ -16,6 +16,25 @@ $(() => {
 });
 
 
+// active nav bar link
+
+$(() => {
+
+  const url = window.location.pathname;
+  $("ul.mr-auto.navbar-nav li a").each(function(){
+    console.log("this: ", $(this), '         attr: ', $(this).attr("href")+"/");
+    console.log("URL IS: ", url);
+       if(  $(this).attr("href")+"/" == url ) {
+         console.log("IN IF CONDITION");
+          $("ul.navbar-nav li a").removeClass("active");
+          $("ul.navbar-nav li").removeClass("active");
+          $(this).addClass("active");
+          $(this).parents().addClass("active");
+       }
+  })
+});
+
+
 //active links on docs 
 
 $(function() {

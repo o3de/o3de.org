@@ -138,10 +138,30 @@ code
 .navbar-dark .navbar-nav .nav-link
     color: $o3de-white
     &:hover 
-      color: $o3de-lightblue
+      color: #94D2FF; 
+
+.navbar-dark .navbar-nav li.active
+    &:hover 
+      .nav-link.active
+        color: #94D2FF;
+      div
+        background-color: #94D2FF;    
+        padding: 2px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+.navbar-dark .navbar-nav .nav-link.active
+    color: #1E70EB;
+
+.navbar-dark .navbar-nav li.active div
+    background-color: #1E70EB;    
+    padding: 2px;
+    margin-left: 8px;
+    margin-right: 8px;
 
 .navbar-logo
   max-height: 36px
+  color: #FFFFFF
 
 // layouts/partials/hero.html, layouts/partial/download/hero.html
 
@@ -160,11 +180,14 @@ $width: '59vw';
 .home-hero 
   background-image: url('/img/home/hero.jpg')
   background-size: cover
+  height: 600px
     
 .hero-inner 
   margin-bottom: 0rem
   background-color: transparent
   color: $o3de-white
+  margin-right: 24px
+  margin-left: 124px
   .desc
     text-shadow: 8px 8px 8px #000
 
@@ -205,10 +228,78 @@ $width: '59vw';
   img
     width: 100%
 
-// layouts/partials/home/partners.html 
+// layouts/partials/home/partners.html .
 
-.home-logo 
-  max-width: 100%
+.accelByte-logo
+  background-color: white
+  padding: 20px 60px 20px 60px
+  margin-top: 5px
+
+.adobe-logo
+  background-color: white
+  padding: 20px 80px 20px 80px
+  margin-top: 5px
+
+.aocalypseStudios-logo
+  background-color: white
+  padding: 20px 60px 20px 60px
+  margin-top: 5px
+
+.audiokinetic-logo
+  background-color: white
+  padding: 20px 60px 20px 60px;
+  margin-top: 5px
+
+.aws-logo
+  background-color: white
+  padding: 15px 50px 15px 50px;
+  margin-top: 5px
+
+.backtrace-logo
+  background-color: white
+  padding: 10px 50px 10px 50px;
+  margin-top: 5px
+
+.carbonated-logo
+  background-color: white
+  padding: 4px 40px 4px 40px;
+  margin-top: 5px
+
+section.container-fluid.home-partners
+  background-color: #EEEEEE
+
+  
+// layouts/partials/home/get-statred.html 
+
+.row.getting-statred-view
+  margin-top: 20px
+
+.getStatred-img
+  padding: 10px
+  margin-bottom: -10px;
+  margin-top: -10px;
+
+.getstarted-text-width
+  padding-right: 50px
+  margin-bottom: 10px
+
+  
+// layouts/partials/home/features.html 
+
+.home-download  
+  background-image: url('/img/home/download-bg.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  color: $o3de-white
+  margin-bottom: -48px;
+
+.download-btn 
+  background-color: $o3de-blue
+  width: 240px
+  height: 36px
+  &:hover 
+    background-color: darken(#1E71EB, 10%)
+
 
 // layouts/footer.html 
 
