@@ -6,9 +6,9 @@ weight: 100
 toc: true
 menu_uuid: Kythera AI
 ---
-![](kyt//images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
+![](/images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
 
-The Kythera AI Gem adds a broad toolset of AI features to Open 3D Engine (O3DE). For installation intructions and full documentation, see [its section in the User Guide](http://localhost:44541/docs/user-guide/gems/reference/kythera-ai/).
+The Kythera AI Gem adds a broad toolset of AI features to Open 3D Engine (O3DE). For installation instructions and full documentation, see [its section in the User Guide](http://localhost:44541/docs/user-guide/gems/reference/kythera-ai/).
 
 This section contains tutorials on setting up various features of the Kythera AI Gem.
 

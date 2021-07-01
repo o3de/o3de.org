@@ -79,26 +79,24 @@ Each navmesh must be specified with an entry in the `NavMeshNames` section of th
 Filtering physics objects for navmesh generation
 ------------------------------------------------
 
-_Note: This feature is only supported with the [PhysX Integration](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/939229199)_
-
-Kythera can filter out which physics objects are considered when generating navmesh. This is performed by using a PhysX Collision Group- objects which collide with this collision group will be considered for navmesh, and those which do not collide with the collision group will be ignored. The collision group used can be set on a per-navmesh-type basis, by setting a `NavmeshPhysicsCollisionGroup` parameter in the per-navmesh-type parameters in NavMesh.xml. See the "PhysXTest" demo level for an example of this feature in action, where a "ghost hedge" is ignored by navmesh generation. 
+Kythera AI can filter out which physics objects are considered when generating navmesh. This is performed by using a PhysX Collision Group- objects which collide with this collision group will be considered for navmesh, and those which do not collide with the collision group will be ignored. The collision group used can be set on a per-navmesh-type basis, by setting a `NavmeshPhysicsCollisionGroup` parameter in the per-navmesh-type parameters in NavMesh.xml. See the "PhysXTest" demo level for an example of this feature in action, where a "ghost hedge" is ignored by navmesh generation. 
 
 Generating navmesh
 ------------------
 
-Trigger a generation or regeneration of the navmeshes by pressing the Regenerate Navmesh button on the Kythera toolbar (![](/images/user-guide/gems/kythera-ai/toolbar-regenerate-navmesh.png), or with the console command `kyt_Generate`.
+Trigger a generation or regeneration of the navmeshes by pressing the Regenerate Navmesh button on the Kythera toolbar (![](/images/user-guide/gems/kythera-ai/toolbar-regenerate-navmesh.png)), or with the console command `kyt_Generate`.
 
 Saving navmesh
 --------------
 
-To save the navmesh to disk, use the Save Navmesh button on the Kythera toolbar (![](/images/user-guide/gems/kythera-ai/toolbar-save-navmesh.png), or use the console command `kyt_SaveTiles`.
+To save the navmesh to disk, use the Save Navmesh button on the Kythera toolbar (![](/images/user-guide/gems/kythera-ai/toolbar-save-navmesh.png)), or use the console command `kyt_SaveTiles`.
 
 For small levels, saving the navmesh is often unnecessary, as it will be generated automatically at runtime.
 
 Visualization
 =============
 
-To turn on navmesh debug draw, use the Debug Draw Navmesh button (![](/images/user-guide/gems/kythera-ai/toolbar-debug-draw-navmesh.png) on the Kythera toolbar, or set the console variables `kyt_DrawMaster` and `kyt_DrawNavMesh` both to 1. Values higher than 1 will change the details of how the navmesh is drawn.
+To turn on navmesh debug draw, use the Debug Draw Navmesh button (![](/images/user-guide/gems/kythera-ai/toolbar-debug-draw-navmesh.png)) on the Kythera toolbar, or set the console variables `kyt_DrawMaster` and `kyt_DrawNavMesh` both to 1. Values higher than 1 will change the details of how the navmesh is drawn.
 
 It is possible to select which navmesh to visualize by using the combo-box in the Kythera toolbar; this defaults to "Default navmesh". This can also be set with the console variable `kyt_DrawNavMeshName` - set it to the name of the navmesh you want to draw.
 

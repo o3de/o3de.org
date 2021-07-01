@@ -22,8 +22,8 @@ The Gem is available from our website at [https://kythera.ai/o3de](https://kythe
 
 ### 2D Navigation
 
-* [Navmesh Generation](navmesh-generation) - How to create two-dimensional navigation mesh (navmesh) in O3DE levels
-* [Character Movement APIs](character-movement-apis) - The APIs used to move characters on Kythera navmesh
+* [Navmesh Generation](navmesh-generation) - How to create navigation mesh (navmesh) for ground-based navigation
+* [Character Movement APIs](character-movement-apis) - The APIs used to move characters on Kythera AI navmesh
 
 ### 3D Navigation
 
@@ -39,4 +39,4 @@ The Inspector is Kythera AI's browser-based debugger and behavior tree editor.
 
 ## License
 
-The Kythera Al Gem is free for non-commercial use, or for a 60-day trial period. For details of our licensing options, including our royalty-based Indie License designed for independent developers, please see our [End User Licence Agreement](https://www.kythera.ai/o3de-eula) and [commercial terms](https://kythera.ai/o3de-commercial-terms).
+The Kythera Al Gem is free for non-commercial use, or for a 60-day trial period. For details of our licensing options, including our royalty-based Community License designed for independent developers, please see our [End User Licence Agreement](https://www.kythera.ai/o3de-eula).

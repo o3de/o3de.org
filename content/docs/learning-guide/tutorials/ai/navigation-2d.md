@@ -67,7 +67,7 @@ Create a level and reference the behavior tree
 ----------------------------------------------
 *   Create a new empty level
 *   Remove the **ShaderBall** entity
-*   Select the **Grid** entity, and add a new **PhysX Collider** component to it. This will be an obstacle for your agent to navigate around. All entities that will be included in the NavMesh need some kind of PhysX collider.
+*   Select the **Grid** entity, and add a new **PhysX Collider** component to it. All entities that will be included in the NavMesh need some kind of PhysX collider.
     *   On the collider, set the shape property to `Box`
     *   On the collider, set the X and Y scale to 32, so the box encompasses the whole grid
     *   If you activate Debug Helpers (the ![](/images/learning-guide/tutorials/ai/debug-helpers.png) symbol in the top right corner of the viewport) and the **Draw Collider** option is active on the PhysX collider component, you should see the collider's debug draw:
