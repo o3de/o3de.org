@@ -7,7 +7,7 @@ weight: 100
 
 This tutorial shows you how to use the [Kythera AI Gem](/docs/user-guide/gems/reference/kythera-ai/) to create an area of level that is navigable to Kythera AI agents (e.g. characters or vehicles), and a simple AI agent that follows a visually scripted behavior tree.
 
-You will need to begin from either your own project with the Kythera AI Gem enabled, or the Kythera AI ShooterDemo project (see [Kythera AI Gem Setup](/docs/user-guide/gems/reference/kythera-ai/).
+You will need to begin from either your own project with the Kythera AI Gem enabled, or the Kythera AI ShooterDemo project. See [Kythera AI Gem Setup](/docs/user-guide/gems/reference/kythera-ai/kythera-ai-gem-setup/) for instructions.
 
 ### Configuration files
 
