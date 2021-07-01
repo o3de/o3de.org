@@ -40,10 +40,10 @@ Each navmesh must be specified with an entry in the `NavMeshNames` section of th
 **Navmesh configuration XML**
 
 ```
-<NavMeshParams id="12884967564">
+<NavMeshParams>
  <DefaultNavMeshName type="string">Default</DefaultNavMeshName>
  <DefaultNavMeshType type="string">MediumSizedCharacters</DefaultNavMeshType>
- <NavMeshNames id="12884967565" type="bb">
+ <NavMeshNames type="bb">
   <Default type="bba">
    <Entry0 type="string">MediumSizedCharacters</Entry0>
   </Default>
@@ -51,8 +51,8 @@ Each navmesh must be specified with an entry in the `NavMeshNames` section of th
    <Entry0 type="string">LargeSizedCharacters</Entry0>
   </Boss>
  </NavMeshNames>
- <NavMeshTypes id="12884967568" type="bb">
-  <MediumSizedCharacters id="12884967569" type="bb">
+ <NavMeshTypes type="bb">
+  <MediumSizedCharacters type="bb">
    <AgentHeight type="float">1.720000</AgentHeight>
    <AgentMaxClimb type="float">0.700000</AgentMaxClimb>
    <AgentMaxSlope type="float">45.000000</AgentMaxSlope>
@@ -61,7 +61,7 @@ Each navmesh must be specified with an entry in the `NavMeshNames` section of th
    <CellSize type="float">0.100000</CellSize>
    <Regenerate type="bool">false</Regenerate>
   </MediumSizedCharacters>
-  <LargeSizedCharacters id="12884967577" type="bb">
+  <LargeSizedCharacters type="bb">
    <AgentHeight type="float">1.800000</AgentHeight>
    <AgentMaxClimb type="float">0.700000</AgentMaxClimb>
    <AgentMaxSlope type="float">45.000000</AgentMaxSlope>
