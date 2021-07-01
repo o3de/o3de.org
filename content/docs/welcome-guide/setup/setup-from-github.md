@@ -166,7 +166,7 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
     cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
     ```
 
-    There are several noteworthy custom definitions (`-D`) specified in the preceding command. All are optional.
+    There are several noteworthy custom definitions (`-D`) specified in the preceding command. All are optional but recommended in this example.
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
     * `LY_UNITY_BUILD` : Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
