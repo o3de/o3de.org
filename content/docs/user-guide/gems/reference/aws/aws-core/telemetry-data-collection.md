@@ -16,9 +16,13 @@ The AWS Core Gem includes an option to send usage metrics to AWS periodically wh
 | `platform`       | Identifies the platform running the O3DE Editor. | Mac |
 | `platform_version` | Identifies the version or sub-platform type. | `10.15.7` |
 | `timestamp` | Timestamp for metric generation. | `2007-04-05T14:30` |
-| `active_aws_gems` | A list of Gems active in your project, separated by '/'. | `AWSCore/AWSMetrics/AWSClientAuth` |
+| `active_aws_gems` | A list of AWS Gems active in your project, separated by '/'. | `AWSCore/AWSMetrics/AWSClientAuth` |
 
 ## Opting Out
+
+{{< note >}}
+AWS owns the data gathered via this process. Data collection is subject to the [AWS Privacy Policy](https://aws.amazon.com/privacy/).
+{{< /note >}}
 
 You can also opt-out via the Editor preferences found at **Edit** -> **Editor Settings** -> **Global Preferences** -> **AWS**.
 
