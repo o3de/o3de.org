@@ -110,9 +110,9 @@ h1, h2, h3, h4, h5, h6
   margin-top: 1.8rem
 
 a 
-  color: $o3de-lightblue
+  color: $o3de-blue
   &:hover, &:active 
-    color: $o3de-blue
+    color: $o3de-lightblue
     text-decoration: none
 
   // give code some base styling 
@@ -152,7 +152,6 @@ $width: '59vw';
     width: 100%
     height: calc((#{$width} / 3) * 2); // note the variable is declared inside #${}
     background: black
-    filter: drop-shadow(0px 15px 15px rgba(0, 0, 0, 0.9))
     @include media-breakpoint-down(lg) 
       height: auto 
       background-position: right
@@ -216,6 +215,10 @@ $width: '59vw';
   background-image: url(/img/home/footer-bg.png)
   background-size: cover
   background-color: $o3de-darkblue
+  .a 
+    &:hover, &:active 
+      color: $o3de-lightblue
+      text-decoration: none
   @include media-breakpoint-up(lg)
     height: 300px
 
