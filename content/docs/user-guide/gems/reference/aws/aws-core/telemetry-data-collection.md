@@ -25,6 +25,7 @@ You can also opt-out via the Editor preferences found at **Edit** -> **Editor Se
 Or, you can modify the Editor Registry setting file under `<project>/user/Registry/editorpreferences.setreg` and restart the Editor.
 
 Registry setting:
+
 ```json
 {
     "Amazon"
