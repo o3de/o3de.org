@@ -60,7 +60,7 @@ The **Navigation Area** component has the following properties: {#component-nav-
 **Agent Types**
 Specifies the types of AI that can traverse this navigation area\. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project. To specify multiple agent types for this area, click the **\+** icon\.
 You use this property to restrict which agents can navigate within that area\. For example, you can allow characters to navigate within a narrow corridor but restrict vehicles\.
-To define an agent type on your AI, see the [Navigation](/docs/user-guide/components/reference/ai/navigation/ component\.
+To define an agent type on your AI, see the [Navigation](/docs/user-guide/components/reference/ai/navigation/) component\.
 
 **Exclusion**
 When selected, creates a subtractive navigation area\. This creates a cutout within an existing navigation mesh\. For more information, see [Creating Navigation Mesh Exclusion Areas](#component-nav-area-exclusion)\.
