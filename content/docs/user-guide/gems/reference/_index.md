@@ -50,6 +50,7 @@ Gems are redistributable packages that contain source code and assets that you c
 | [AWS Client Auth](./aws/aws-client-auth) | The AWS Client Auth Gem provides solutions for client authentication and AWS authorization. |
 | [AWS Core](./aws/aws-core) | The AWS Core Gem provides basic shared AWS functionality such as AWS SDK initialization and client configuration. |
 | [AWS Metrics](./aws/aws-metrics) | The AWS Metrics Gem provides a solution for AWS metrics submission and analytics. |
+| [AWS GameLift](./aws/aws-gamelift) | The AWS GameLift Gem provides a framework to extend the O3DE networking layer and Multiplayer Gem to work with Amazon GameLift. |
 
 ## Core
 
