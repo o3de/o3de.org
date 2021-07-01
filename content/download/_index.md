@@ -1,8 +1,7 @@
 ---
 title: Download O3DE
 ---
-
-## Get O3DE Developer Previe
+## Get O3DE Developer Preview
 
 **Current Release:** 2017.1
 
