@@ -314,32 +314,6 @@ Makes a character turn to face a direction or position
 
 #### Character control
 
-##### CoverEnter
-
-Attempt to enter requested cover, and leave any existing cover
-
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-| Input | Type | Required | Default | Description |
-| **CoverPoint** | EntityId, Blackboard | yes | \-  | The cover point to enter. Must be either the ID of a manually placed cover point, or the result blackboard from a spatial query |
-
-|     |     |     |     |
-| --- | --- | --- | --- |
-| Output | Type | Required | Description |
-| **CoverPointId** | EntityId | no  | ID of claimed cover point- may be virtual entity for cover rail claim |
-
-* * *
-
-##### CoverExit
-
-Release any claimed cover
-
-**Inputs:** none
-
-**Outputs:** none
-
-* * *
-
 ##### SetStance
 
 Set the stance of a character
@@ -415,21 +389,6 @@ Test whether one input is greater than another (Lhs > Rhs)
 
 * * *
 
-##### HasCoverTypeNow
-
-Checks whether an cover point supports a particular cover type
-
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-| Input | Type | Required | Default | Description |
-| **Invert** | Boolean | no  | false | Check for the opposite of the condition |
-| **CoverType** | StringHash | yes | \-  | The cover type to test |
-| **CoverPointId** | EntityId | yes | \-  | The id of the cover point to test on |
-
-**Outputs:** none
-
-* * *
-
 ##### HasTagNow
 
 Checks whether an entity has a particular tag
@@ -454,21 +413,6 @@ Checks whether the named variable exists
 | Input | Type | Required | Default | Description |
 | **Invert** | Boolean | no  | false | Check for the opposite of the condition |
 | **Name** | StringHash | yes | \-  | The variable name (or path) to check for |
-
-**Outputs:** none
-
-* * *
-
-##### IsCoverSameRailNow
-
-Checks whether a cover point is on the same rail
-
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-| Input | Type | Required | Default | Description |
-| **Invert** | Boolean | no  | false | Check for the opposite of the condition |
-| **SQSResultA** | Blackboard | yes | \-  | Result blackboard from a spatial query |
-| **SQSResultB** | Blackboard | yes | \-  | Result blackboard from a spatial query |
 
 **Outputs:** none
 
@@ -820,20 +764,6 @@ Search all entities and find the ones that match the specified tags. Returns an 
 | --- | --- | --- | --- |
 | Output | Type | Required | Description |
 | **Count** | Integer | yes | The number of entities found |
-
-* * *
-
-##### CoverCheck
-
-Test whether a cover point is still revelant, whether it still provides cover in the appropriate direction and whether it is still either available (if we're not in it) or wemust leave it for some reason (if we're in it)
-
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-| Input | Type | Required | Default | Description |
-| **CoverPoint** | EntityId | yes | \-  | The id the cover point to test |
-| **Target** | EntityId | yes | \-  | The entity to take cover from |
-
-**Outputs:** none
 
 * * *
 
@@ -2231,36 +2161,6 @@ Set a variable to a particular value when the child node finishes
 | Input | Type | Required | Default | Description |
 | **Name** | StringHash | yes | \-  | Variable name (or path) to set |
 | **Value** | Any | yes | \-  | Value to assign to the variable |
-
-**Outputs:** none
-
-* * *
-
-#### Character control
-
-##### CoverFind
-
-Searches for and claims cover points. Releases cover point on cleanup
-
-|     |     |     |     |     |
-| --- | --- | --- | --- | --- |
-| Input | Type | Required | Default | Description |
-| **Query** | StringHash | yes | \-  | Name of SQS query to process |
-| **Reference** | EntityId, Position | no  |     | Entity or position for the query reference |
-
-|     |     |     |     |
-| --- | --- | --- | --- |
-| Output | Type | Required | Description |
-| **SQSPoint** | Position | yes | Position of top point of query |
-| **SQSPointId** | EntityId | no  | EntityID of top point of query |
-
-* * *
-
-##### ExitCoverOnExit
-
-Exit cover on exit
-
-**Inputs:** none
 
 **Outputs:** none
 
