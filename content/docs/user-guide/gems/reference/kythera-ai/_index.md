@@ -8,6 +8,7 @@ menu_uuid: Kythera AI
 ---
 
 ![](/images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
+![](/images/user-guide/gems/kythera-ai/kythera-ai-level.jpg)
 
 The Kythera AI Gem adds a broad toolset of AI features to Open 3D Engine (O3DE). It includes a demo project with levels and assets that demonstrate the features of Kythera AI. The following topics cover the tools provided with the Kythera AI Gem.
 
@@ -19,14 +20,15 @@ The Gem is available from our website at [https://kythera.ai/o3de-download](http
 
 * [Tutorials](/docs/learning-guide/tutorials/ai/) - Tutorials on using the Gem
 
-### 2D Navigation
+### 2D navigation
 
-* [Navmesh Generation](navmesh-generation) - How to create navigation mesh (navmesh) for ground-based navigation
-* [Character Movement APIs](character-movement-apis) - The APIs used to move characters on Kythera AI navmesh
+* [Navmesh generation](navmesh-generation) - How to create navigation mesh (navmesh) for ground-based navigation
+* [Character movement APIs](character-movement-apis) - The APIs used to move characters on Kythera AI navmesh
 
-### 3D Navigation
+### 3D navigation
 
-* [3D Navigation Splines](navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
+* [Octree generation](octree-generation) - How to create octree for 3D navigation
+* [3D Navigation splines](navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
 
 ### Debugging and Behavior Authoring with the Kythera AI Inspector
 
