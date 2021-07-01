@@ -17,7 +17,9 @@ There are two main buses which we expose to implement character movement on a tw
 **MovementRequestBus**
 ======================
 
-This bus is used by Kythera to make requests to the game for an entity to move. In order for an entity to have movement driven by Kythera, it is required to have a component which implements this bus. For example, in our **ShooterDemo** demonstration, the **Simple Movement Controller Component** implements the MovementRequestBus. 
+This bus is used by Kythera to make requests to the game for an entity to move. In order for an entity to have movement driven by Kythera, it is required to have a component which implements this bus.
+
+The Gem contains a very basic implementation of this Bus in the form of the SimpleMovementControllerComponent. This implementation does not support animations yet.
 
 The movement request bus uses the struct `MovementRequest` to encapsulate Kythera's requested movement, and consists of three methods - `SetMovementRequest`, `ClearMovementRequest` and `IsAnimationSupported`.
 
