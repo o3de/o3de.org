@@ -33,7 +33,7 @@ Configuration
 
 Settings for navmesh generation are configured in the file `navmesh.xml.` This can be located in the folder for the particular level, or in the `scripts` or `levels` directories.
 
-Multiple navmeshes may be specified in this file – for example, separate navmeshes for small and large characters. 
+Multiple navmeshes may be specified in this file - for example, separate navmeshes for small and large characters. 
 
 Each navmesh must be specified with an entry in the `NavMeshNames` section of the XML, declaring its name and type, as shown below.
 
@@ -100,7 +100,7 @@ Visualization
 
 To turn on navmesh debug draw, use the Debug Draw Navmesh button (![](/images/user-guide/gems/kythera-ai/toolbar-debug-draw-navmesh.png) on the Kythera toolbar, or set the console variables `kyt_DrawMaster` and `kyt_DrawNavMesh` both to 1. Values higher than 1 will change the details of how the navmesh is drawn.
 
-It is possible to select which navmesh to visualize by using the combo-box in the Kythera toolbar; this defaults to "Default navmesh". This can also be set with the console variable `kyt_DrawNavMeshName` – set it to the name of the navmesh you want to draw.
+It is possible to select which navmesh to visualize by using the combo-box in the Kythera toolbar; this defaults to "Default navmesh". This can also be set with the console variable `kyt_DrawNavMeshName` - set it to the name of the navmesh you want to draw.
 
 
 Assigning to agents
