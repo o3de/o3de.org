@@ -1,6 +1,6 @@
 ---
 linkTitle: Setup
-title: Kythera AI Gem setup
+title: Kythera AI Gem Setup
 description: Instructions for setting up the Kythera AI Gem
 weight: 200
 ---

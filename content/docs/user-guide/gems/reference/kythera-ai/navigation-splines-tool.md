@@ -1,6 +1,6 @@
 ---
-linkTitle: Navigation splines
-title: 3D navigation splines tool
+linkTitle: Navigation Splines
+title: 3D Navigation Splines Tool
 description: Guide to the 3D navigation splines tool in the Kythera AI Gem
 weight: 600
 ---

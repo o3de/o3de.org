@@ -1,7 +1,7 @@
 ---
-linkTitle: Character movement APIs
+linkTitle: Character Movement APIs
 title: Character Movement APIs
-description: Details of APIs for character movement with the Kythera AI Gem
+description: Details of APIs for character movement with the Kythera AI Gem in Open 3D Engine (O3DE).
 weight: 400
 ---
 
@@ -38,19 +38,18 @@ A **GoTo** request represents a standard movement command. This is typically use
 
 ### **ExactGoTo**
 
-The **ExactGoTo** mode is used when it is important that an entity is positioned and oriented in exactly the right way when it finishes a move. For example, this can be used when a special animation is about to be triggered or the entity is about to traverse a [Navigation Mesh Link](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/641531905/Navigation+Objects+in+Lumberyard) and the exact positioning of the character is crucial for the animation to look correct.
+The `ExactGoTo` mode is used when an entity must be precisely positioned and oriented when it finishes a move. For example, this can be used when a special animation is about to be triggered or the entity is about to traverse a Navigation Mesh and the exact positioning of the character is crucial for the animation to look correct.
 
-ExactGoTo functions almost exactly the same as the GoTo mode, but with one important distinction - Kythera AI **does not** automatically detect that the movement request is complete. The game code must determine whether the character is positioned and oriented correctly, and then use the `ExactGotoEnded` method on the `MovementNotificationBus` to notify Kythera AI that the move has ended. At this point Kythera AI will update the movement request with the next goal.
+`ExactGoTo` functions similarly to the `GoTo` mode, but with one important distinction – Kythera doesn't automatically detect that the movement request is complete. The game code must determine whether the character is positioned and oriented correctly, and then use the `ExactGotoEnded` method on the `MovementNotificationBus` to notify Kythera that the move has ended. Then Kythera will update the movement request with the next goal.
 
-The specific accuracy required for orientation and positioning will vary between different animation systems and games, and as such this is left up to the user.
+The accuracy required for orientation and positioning can vary between different animation systems, and can be specified.
 
 ### **Animation**
 
-The **Animation** mode is used when a specific animation is being triggered to move a character between two locations. This is typically triggered when a character is traversing a [Navigation Mesh Link](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/641531905/Navigation+Objects+in+Lumberyard) - for example, they might be using a special "climb ladder" animation to move between floors, or a "vault wall" animation to move over a low obstacle.
+#### Animation
+The `Animation` mode triggers a specific animation to move a character between two locations. This is typically triggered when a character is traversing a navigation mesh. For example, a "climb ladder" animation to move between floors, or a "vault wall" animation to move over a low obstacle.
 
-When in Animation mode, the parameters in the `animation` struct are set - these define the `name` of the animation to use, the `start` position for the animation, and the desired `end` position for the animation. The choice of actual animation system used to implement this animation is left to the integrator. The name of the animation will be taken from user provided input- for example, the name of animation associated with a [Navigation Mesh Link](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/641531905/Navigation+Objects+in+Lumberyard). Once the animation has completed, the game code must call the `AnimationEnded` method on the `MovementNotificationBus` to notify Kythera AI that the move has ended. At this point Kythera AI will update the movement request with the next goal. 
-
-  
+The parameters in the `animation` struct define the `name` of the animation to use, the `start` position for the animation, and the desired `end` position for the animation. The choice of animation system is left to the integrator. The name of the animation will be taken from user provided input, for example, the name of animation associated with a navigation mesh. Once the animation has completed, the game code must call the `AnimationEnded` method on the `MovementNotificationBus` to notify Kythera that the move has ended. Kythera then updates the movement request with the next goal.
 
 **MovementNotificationBus**
 ===========================

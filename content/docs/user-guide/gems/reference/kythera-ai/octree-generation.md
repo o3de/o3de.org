@@ -1,20 +1,18 @@
 ---
-linkTitle: Octree generation
-title: Octree generation
+linkTitle: Octree Generation
+title: Octree Generation
 description: Generating an octree for 3D navigation with the Kythera AI Gem
 weight: 350
 ---
 The octree is used for 3D flight navigation, and is the 3D equivalent of the [navigation mesh](navmesh-generation) used for ground-based navigation. Like navmeshes, the physical geometry of the level is used as the basis. Unlike navmesh, no dynamic updates are currently supported, and generation must be triggered explicitly.
 
-Bounds Setup
-============
+## Bounds setup
 
-Octree generation will take place within bounds components present in the level. We use the **PolygonPrismShape** component to form the bounds, and use a **BoundsOctree** component to mark it for Octree generation. It is possible for an entity to be tagged for both octree and navmesh generation.
+Octree generation will take place within bounds components present in the level. We use the `PolygonPrismShape` component to form the bounds, and use a `BoundsOctree` component to mark it for Octree generation. It is possible for an entity to be tagged for both octree and navmesh generation.
 
 Additionally, one entity in the scene should have the single Octree component on it, which supplies global octree generation settings. Default settings will be used otherwise.
 
-Configuration
-=============
+## Configuration
 
 ![](/images/user-guide/gems/kythera-ai/octree-configuration.png)
 
@@ -29,8 +27,7 @@ Octree settings are as above (_details to come)_
 
 Only one configuration is supported for a level, but unlike navmeshes this is designed to accommodate multiple 3D agent (ship) sizes. There is no equivalent to the NavMesh.xml file.
 
-Minimizing Nodes and Memory
-===========================
+## Minimizing Nodes and Memory
 
 The more nodes in the octree, the longer searches will take and the more memory it will take up. When trying to minimize this:
 
@@ -39,8 +36,7 @@ The more nodes in the octree, the longer searches will take and the more memory 
 *   Keep the difference between Min and Max Ship Radius as small as possible - ideally they would be equal. If having trouble with memory while trying to support a very small and very large ship, consider if there is another approach you can take or talk to the Kythera team.
 *   Leave Auto Depths enabled
 
-Generation
-==========
+## Generation
 
 Trigger a generation or regeneration of the octree with the console command:
 
@@ -50,10 +46,7 @@ A modal dialog will pop up when complete.
 
 Alternatively, use the Generate Octree button (![](/images/user-guide/gems/kythera-ai/toolbar-generate-octree.png)) on the Kythera toolbar.
 
-There is currently no support for runtime, dynamic regeneration of areas of the octree during gameplay, but we do expect to add the feature in future.
-
-Saving
-======
+## Saving
 
 To save the navmesh to disk, use:
 
@@ -61,8 +54,7 @@ To save the navmesh to disk, use:
   
 Alternatively, use the Save Octree button (![](/images/user-guide/gems/kythera-ai/toolbar-save-octree.png)) on the Kythera toolbar.
 
-Debug Visualisation
-===================
+## Debug Visualisation
 
 Kythera provides debug draw of octrees.
 

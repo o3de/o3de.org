@@ -1,6 +1,6 @@
 ---
-linkTitle: Navmesh generation
-title: Navmesh generation
+linkTitle: Navmesh Generation
+title: Navmesh Generation
 description: Generating a navigation mesh with the Kythera AI Gem
 weight: 300
 ---

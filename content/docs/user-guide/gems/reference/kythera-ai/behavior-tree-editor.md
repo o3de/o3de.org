@@ -32,7 +32,7 @@ In this view you can move, add and remove nodes, or select a node and edit its p
 Navigating the tree
 -------------------
 
-While in the BT editor, the tree view can be navigated fairly intuitively. The mouse scroll can be used to zoom in and out the tree view, and the view can be panned across by right-clicking and dragging somewhere on the backdrop.
+Navigating the BT Editor tree view is intuitive. Use the mouse scroll wheel  to zoom  the tree view. Click and drag the on the backdrop to pan the tree view.
 
 Alongside the list of trees available, there are three buttons that can be used to navigate the tree. Working top-down:
 
