@@ -16,7 +16,7 @@ For example, [static objects](/docs/user-guide/components/reference/nav-area/#co
 
 **To use the Navigation Seed component**
 
-1. [Create a navigation area](/docs/user-guide/components/reference/ai/nav-area/\.
+1. [Create a navigation area](/docs/user-guide/components/reference/ai/nav-area/).
 
 1. Divide the navigation area into multiple chunks using [static objects](/docs/user-guide/components/reference/nav-area/#component-nav-area-static-entities), [exclusion areas](/docs/user-guide/components/reference/nav-area/#component-nav-area-exclusion), or terrain\.
 
@@ -46,4 +46,4 @@ By default, the navigation seed visualization system is not enabled\. You must u
   For more information, see [Using the Console Window](/docs/user-guide/editor/console/)\.
 
 **Note**
-The **Navigation Seed **component exists only in O3DE Editor\.
+The **Navigation Seed** component exists only in O3DE Editor\.

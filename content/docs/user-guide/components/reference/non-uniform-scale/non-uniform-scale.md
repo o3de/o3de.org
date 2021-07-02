@@ -14,10 +14,10 @@ The following components are **compatible** with **Non-uniform Scale**:
 + **[Box Shape](/docs/user-guide/components/reference/shape/box-shape/)**
 + **[Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)**
 + **[Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)**
-+ **[PhysX Collider](/docs/user-guide/components/reference/physx/physx-collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/physx-collider/) component.
-+ **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/physx-shape-collider/)**
-+ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/physx-rigid-body-physics/)**
-+ **[PhysX Force Region](/docs/user-guide/components/reference/physx/physx-force-region/)**
++ **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** - Note that primitive colliders are replaced with convex approximations if they are non-uniformly scaled, which may slightly deteriorate performance. The level of detail of the convex approximation can be adjusted using the **Subdivision level** setting on the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component.
++ **[PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/)**
++ **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)**
++ **[PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/)**
 + **[Decal](/docs/user-guide/components/reference/atom/decal.md)**
 + **Mesh**
 
@@ -30,11 +30,11 @@ The following components are **incompatible** with the **Non-uniform Scale** com
 + **[Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)**
 + **[Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/)**
 + **[Cloth](/docs/user-guide/components/reference/cloth.md)**
-+ **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/physx-ball-joint/)**
-+ **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/physx-fixed-joint/)**
-+ **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/physx-hinge-joint/)**
-+ **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/physx-ragdoll/)**
-+ **[PhysX Character Controller](/docs/user-guide/components/reference/physx/physx-character-controller/)**
++ **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)**
++ **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)**
++ **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)**
++ **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**
++ **[PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/)**
 + **PhysX Character Gameplay**
 + **[Blast Family](/docs/user-guide/components/reference/destruction/blast-family/)**
 + **[Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/)**

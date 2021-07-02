@@ -74,15 +74,15 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | Audio Animation | Adds the ability to execute audio triggers when animation events occur. |
-| [Audio Area Environment](/docs/user-guide/components/reference/audio/audio-area-environment/) | Enables entities that are moving around and throughout a shape to have environment effects applied to any sounds that they trigger. |
-| [Audio Environment ](/docs/user-guide/components/reference/audio/audio-environment/) | Applies environmental effects such as reverb or echo. |
-| [Audio Listener](/docs/user-guide/components/reference/audio/audio-listener/) | Allows a virtual microphone to be placed in the environment. |
-| [Audio Preload](/docs/user-guide/components/reference/audio/audio-preload/) | Loads and unloads soundbanks contained in the Audio Translation Layer preloads.|
-| [Audio Proxy](/docs/user-guide/components/reference/audio/audio-proxy/) | If multiple Audio components are added to an entity, the Audio Proxy component is required to ensure the other Audio components communicate to the same Audio object. |
-| [Audio Rtpc](/docs/user-guide/components/reference/audio/audio-rtpc/) | Provides basic *Real-time Parameter Control* (RTPC) functionality, which allows you to tweak sounds in real-time. |
-| [Audio Switch](/docs/user-guide/components/reference/audio/audio-switch/) | Provides basic Audio Translation Layer switch functionality to specify the state of an entity. |
-| [Audio Trigger](/docs/user-guide/components/reference/audio/audio-trigger/) | Provides Audio Translation Layer triggers that allows you to play or stop the audio. |
-| [Multi-Position Audio](/docs/user-guide/components/reference/audio/audio-multi-position/) | Provides the ability to broadcast sounds through multiple positions.|
+| [Audio Area Environment](/docs/user-guide/components/reference/audio/area-environment/) | Enables entities that are moving around and throughout a shape to have environment effects applied to any sounds that they trigger. |
+| [Audio Environment ](/docs/user-guide/components/reference/audio/environment/) | Applies environmental effects such as reverb or echo. |
+| [Audio Listener](/docs/user-guide/components/reference/audio/listener/) | Allows a virtual microphone to be placed in the environment. |
+| [Audio Preload](/docs/user-guide/components/reference/audio/preload/) | Loads and unloads soundbanks contained in the Audio Translation Layer preloads.|
+| [Audio Proxy](/docs/user-guide/components/reference/audio/proxy/) | If multiple Audio components are added to an entity, the Audio Proxy component is required to ensure the other Audio components communicate to the same Audio object. |
+| [Audio Rtpc](/docs/user-guide/components/reference/audio/rtpc/) | Provides basic *Real-time Parameter Control* (RTPC) functionality, which allows you to tweak sounds in real-time. |
+| [Audio Switch](/docs/user-guide/components/reference/audio/switch/) | Provides basic Audio Translation Layer switch functionality to specify the state of an entity. |
+| [Audio Trigger](/docs/user-guide/components/reference/audio/trigger/) | Provides Audio Translation Layer triggers that allows you to play or stop the audio. |
+| [Multi-Position Audio](/docs/user-guide/components/reference/audio/multi-position/) | Provides the ability to broadcast sounds through multiple positions.|
 
 
 ### Camera
@@ -160,16 +160,16 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | [Cloth](/docs/user-guide/components/reference/physx/cloth/) | Simulates the behavior of cloth by treating the vertices of a mesh as cloth particles with physical properties. |
-| [PhysX Ball Joint](/docs/user-guide/components/reference/physx/physx-ball-joint/) | Simulates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.|
-| [PhysX Character Controller](/docs/user-guide/components/reference/physx/physx-character-controller/) | Implements basic character interactions with the physical world. |
+| [PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/) | Simulates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.|
+| [PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/) | Implements basic character interactions with the physical world. |
 | PhysX Character Gameplay | Configures general character properties in the gameplay, such as the character's gravitational strength. |
 | [PhysX Collider](/docs/user-guide/components/reference/physx-collder/) | Allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities. |
-| [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/physx-fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
-| [PhysX Force Region](/docs/user-guide/components/reference/physx/physx-force-region/) | Applies a physical force on objects that are within the specified region. |
-| [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/physx-hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
-| [PhysX Ragdoll](/docs/user-guide/components/reference/physx/physx-ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
-| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/physx-rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
-| [PhysX Shape Collider](/docs/user-guide/components/reference/physx/physx-shape-collider/) | Creates a geometric collider based on the **Shape** component. |
+| [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
+| [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
+| [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
+| [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
+| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
+| [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |
 
 ### Scripting
 
@@ -215,9 +215,9 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| [UI Canvas Asset Ref](/docs/user-guide/components/reference/ui/ui-canvas-asset-ref/) | Allows you to associate a UI Canvas with an entity. |
-| [UI Canvas Proxy Ref](/docs/user-guide/components/reference/ui/ui-canvas-proxy-ref/) | Allows you to associate an entity with another entity that is managing a UI Canvas. |
-| [UI Canvas on Mesh](/docs/user-guide/components/reference/ui/ui-canvas-on-mesh/) | Allows you to place a UI Canvas on an entity in the 3D world that a player can interact with via ray casts. |
+| [UI Canvas Asset Ref](/docs/user-guide/components/reference/ui/canvas-asset-ref/) | Allows you to associate a UI Canvas with an entity. |
+| [UI Canvas Proxy Ref](/docs/user-guide/components/reference/ui/canvas-proxy-ref/) | Allows you to associate an entity with another entity that is managing a UI Canvas. |
+| [UI Canvas on Mesh](/docs/user-guide/components/reference/ui/canvas-on-mesh/) | Allows you to place a UI Canvas on an entity in the 3D world that a player can interact with via ray casts. |
 
 ### Vegetation  
 
@@ -231,7 +231,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Vegetation Layer Blocker | Defines an area in which dynamic vegetation cannot be placed. |
 | Vegetation Layer Blocker (Mesh) | Prevents vegetation from being placed in the mesh. |
 | Vegetation Layer Debugger | Enables debug visualizers for vegetation layers. |
-| [Vegetation Layer Spawner](/docs/user-guide/components/reference/vegetation/vegetation-layer-spawner/) | Creates dynamic vegetation in a specified area. |
+| [Vegetation Layer Spawner](/docs/user-guide/components/reference/vegetation/layer-spawner/) | Creates dynamic vegetation in a specified area. |
 | Vegetation Reference Shape | Enables the entity to reference and reuse shape entities. |
 
 ### Vegetation Filters  

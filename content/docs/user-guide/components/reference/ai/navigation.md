@@ -24,7 +24,7 @@ The **Navigation** component has the following properties:
 
 **Agent Type**
 Specifies this AI's entity type for navigation purposes\. Defining the agent type determines which [navigation area](/docs/user-guide/components/reference/ai/nav-area/) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots\. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project.
-To define an agent type on your navigation area, see the **[Navigation Area](/docs/user-guide/components/reference/ai/nav-area/** component\.
+To define an agent type on your navigation area, see the **[Navigation Area](/docs/user-guide/components/reference/ai/nav-area/)** component\.
 
 **Agent Speed**
 Sets the speed of the agent while navigating when using the Transform or Physics movement methods\.
