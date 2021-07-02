@@ -25,4 +25,4 @@ guide_img: "/images/release-notes/guide_img.png"
 ### 2107.1 (Developer Preview) Release Information
 
 * [2107.1 Release Notes](archive/2107-1-release-notes)
-* [2107.1 Known Issues](archive/2107-1-known-issues)
+* [2107.1 Known Issues](https://github.com/o3de/o3de/issues/1736)
