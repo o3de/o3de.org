@@ -41,6 +41,11 @@ name = "O3DE Public Calendar"
 url = "https://lists.o3de.org/g/o3de-calendar/calendar"
 icon = "fab fa-github"
 
+[[params.social]]
+name = "O3DE Twitter"
+url = "https://twitter.com/o3dengine"
+icon = "fab fa-twitter"
+
 [[params.fonts]]
 name = "Open Sans"
 sizes = [300, 400, 600, 700]
