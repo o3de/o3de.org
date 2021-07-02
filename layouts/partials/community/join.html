@@ -1,0 +1,19 @@
+{{ $title := site.Title }}
+{{ $desc  := site.Params.description | markdownify }}
+<div class="community-join d-flex align-items-center">
+  <div class="container text-center pb-4">
+    <h2>Join the Conversation</h2>
+    {{ $social := site.Params.social }}
+    {{ range $social }}
+    {{ $color := .color }}
+    <a class="btn mr-1" title="{{ .name }}" href="{{ .url }}" target="_blank">
+        {{ with .icon }}
+        <span class="icon">
+          <i class="{{ . }}"></i>
+        </span>
+        {{ end }} <br/>
+        <span class="social-name">{{ .name }}</span>
+      </a>
+    {{ end }}
+  </div>
+</div>

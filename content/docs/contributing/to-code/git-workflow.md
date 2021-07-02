@@ -33,9 +33,9 @@ At a high level, the workflow is:
 
 1. Create a fork of `https://github.com/o3de/o3de.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [https://github.com/o3de/o3de](https://github.com/o3de/o3de.git) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
 
-2. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
+1. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
 
-3. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo. Run the following Git commands from **your locally cloned fork's path**:
+1. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo, and updating the LFS URL. Run the following Git commands from **your locally cloned fork's path**:
 
     ```bash
     git remote add upstream https://github.com/o3de/o3de.git
@@ -50,23 +50,37 @@ At a high level, the workflow is:
     Minimally, you should see output that looks like this:
 
     ```bash
-    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (fetch)
-    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (push)
-    upstream        https://github.com/o3de/o3de.git (fetch)
-    upstream        https://github.com/o3de/o3de.git (push)
+    origin  https://github.com/<FORK>/o3de/o3de.org.git (fetch)
+    origin  https://github.com/<FORK>/o3de/o3de.org.git (push)
+    upstream  https://github.com/o3de/o3de.git (fetch)
+    upstream  https://github.com/o3de/o3de.git (push)
     ```
 
     You can also configure upstream to target specific branches, as well.
 
-4. Now, update your local repo by `git fetch`ing the branches currently active on the O3DE repo. You can get all working branches with `git fetch upstream --all`, or fetch a specific branch with `git fetch upstream <name-of-branch>`.
+    Update the LFS URL to include your fork.  This will enable you to push changes to large files.  Open the .lfsconfig file at the root of the repository for complete instructions and the **DISTRIBUTION** to use.
 
-5. Rebase the commit history to the last commit from the upstream `main` branch:
+    ```cmd
+    git config lfs.url https://<DISTRIBUTION>.cloudfront.net/api/v1/fork/<FORK> 
+    ```
+
+    You may be prompted to re-authenticate the next time you pull or push.  Remember to use your GitHub personal access token not your GitHub password.
+
+    If you need to revert this change later you can run the following command:
+
+    ```cmd
+    git config --unset lfs.url 
+    ```
+
+1. Now, update your local repo by `git fetch`ing the branches currently active on the O3DE repo. You can get all working branches with `git fetch upstream --all`, or fetch a specific branch with `git fetch upstream <name-of-branch>`.
+
+1. Rebase the commit history to the last commit from the upstream `main` branch:
 
     ```bash
     git rebase upstream/main
     ```
 
-6. Check out the branch you will be working on and **take your own branch from it** to perform your work.
+1. Check out the branch you will be working on and **take your own branch from it** to perform your work.
 
     ```bash
     git checkout <name-of-fetched-branch>
