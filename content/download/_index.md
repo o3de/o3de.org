@@ -5,7 +5,7 @@ title: Download O3DE
 
 **Current Release:** 2017.1
 
-Read the [Release Notes](https://docs.o3de.org/docs/release-notes/archive/2107-1-release-notes/) to learn more about O3DE [Developer Preview] Release 2107.01.
+Read the [Release Notes](https://o3de.org/docs/release-notes/archive/2107-1-release-notes/) to learn more about O3DE [Developer Preview] Release 2107.01.
 
 ## Windows 10 Requirements
 
@@ -19,4 +19,4 @@ Read the [Release Notes](https://docs.o3de.org/docs/release-notes/archive/2107-1
 
 ## Instructions
 
-Choose the "Access O3DE on GitHub"  button. To get started, [read the documentation](https://docs.o3de.org/docs/welcome-guide/setup/) and follow the instructions in it.
+Choose the "Access O3DE on GitHub"  button. To get started, [read the documentation](https://o3de.org/docs/welcome-guide/setup/) and follow the instructions in it.
