@@ -1,31 +1,72 @@
 {{ define "main" }}
 
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
-{{ $docsSections := where $allSections "Section" "docs" }} <!-- "getting-started" and "deployment" -->
+{{ $docsSections := where $allSections "Section" "docs" }}
 
 <div class="container pt-3 px-5 pb-3">
   <div class="row flex">
     <div class="col-12 docs-content">
       <h1 class="title">{{ .Page.Title | markdownify }}</h1>
       {{ partial "docs/content.html" . }}  
-      </div>
-    </div>
-    <div class="row">
-        {{ range $docsSections }}
-          {{ range .Sections }}
-          <div class="col col-12 col-xl-6 pb-3">
-              <div class="card">
-                  <img src="{{ .Param "guide_img" }}" class="card-img-top" alt="{{ .Page.Title }}">
-                  <div class="card-body">
-                  <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
-                  <p class="card-text">{{ .Page.Description }}</p>
-                  <a href="{{ .RelPermalink }}" class="btn btn-primary">Read more</a>
-                  </div>
-              </div>
-          </div>
-        {{ end }}
-    {{ end }}
     </div>
   </div>
-  {{ partial "footer.html" . }}
+  <div class="row mt-3">
+      {{ range $docsSections }}
+        {{ range where .Sections ".Page.LinkTitle" "Get Started" }}
+            <div class="col col-12 col-lg-8 pb-3">
+            <a href="{{ .RelPermalink }}" class="card doc_card intro">
+              <div class="row">
+                  <div class="col-md-6 pb-20 card-image" style="background-image: url('{{ .Param "guide_img" }}')">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+                      <p class="card-text">{{ .Page.Description }}</p>
+                    </div>
+                  </div>
+              </div>
+            </a>
+        </div>
+      {{ end }}
+      {{ range where .Sections ".Page.LinkTitle" "Release Notes" }}
+          <div class="col col-12 col-lg-4 pb-3">
+          <a href="{{ .RelPermalink }}" class="card doc_card intro">
+            <div class="row">
+                <div class="col-12">
+                  <div class="card-body">
+                    <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+                    <p class="card-text">{{ .Page.Description }}</p>
+                  </div>
+                </div>
+            </div>
+          </a>
+      </div>
+    {{ end }}
+  {{ end }}
+  </div>
+  <div class="row flex">
+    <div class="col-12 docs-content">
+      <h1 class="title">Lorem Ipsum</h1>
+      <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+      </div>
+    </div>
+  </div>
+  <div class="row mt-3">
+      {{ range $docsSections }}
+        {{ range where (where .Sections ".Page.LinkTitle" "!=" "Get Started") ".Page.LinkTitle" "!=" "Release Notes" }}
+        <div class="col col-lg-4 col-md-6 pb-3">
+          <a href="{{ .RelPermalink }}" class="card doc_card">
+              <img src="{{ .Param "guide_img" }}" class="card-img-top" alt="{{ .Page.Title }}">
+              <div class="card-body">
+              <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
+              <p class="card-text">{{ .Page.Description }}</p>
+              </div>
+          </a>
+        </div>
+      {{ end }}
+  {{ end }}
+  </div>
+</div>
+{{ partial "footer.html" . }}
 {{ end }}
