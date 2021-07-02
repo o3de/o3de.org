@@ -6,8 +6,6 @@ weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
-
 Open 3D Engine (O3DE) is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. O3DE has a physically based renderer and a suite of tools to build and process assets, simulate physics, and create animation and cinematics. The renderer and tools are all wrapped in a modular framework that you can modify and extend with your preferred development tools.  
 
 ## Open source
