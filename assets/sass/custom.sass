@@ -362,14 +362,44 @@ $width: '59vw';
 // layouts/community/section.html 
 
 .community-hero 
-  background-color: $o3de-darkblue  
+  background-color: $o3de-darkblue
+  background-image: url('/images/community/community_hero_background.png')
+  background-size: cover
+  background-position: 50% 50%
   color: $o3de-white
-  height: 40vh
+  height: 24vh
+  p
+    font-size: 1.5rem
+    font-weight: 200
+    max-width: 720px
+    margin: 0 auto
+
+.community-join
+  background-color: $o3de-white  
+  color: $o3de-black
+  height: 26vh
   .icon 
     font-size: 4rem
   .social-name 
     font-size: 1rem
     vertical-align: text-top
+
+.community-blog
+  background: #111
+
+  a.card
+    color: $o3de-black
+    min-height: 10rem
+    overflow: hidden
+
+    .card-body
+      padding: 1.6rem 1rem 0 0.2rem
+
+  .card-image
+    background-color: #C4C4C4
+    background-size: cover
+    background-position: 50% 50%
+    padding-bottom: 10rem
 
 // partials/download/hero.html 
 
