@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -186,6 +186,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<
 <tr class="memitem:aff665932629f302645296cedec18bdb6"><td class="memItemLeft" align="right" valign="top"><a id="aff665932629f302645296cedec18bdb6"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &amp;request)</td></tr>
 <tr class="separator:aff665932629f302645296cedec18bdb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64c0b1b4522e0166e6be50b97f99d34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html#ad64c0b1b4522e0166e6be50b97f99d34">InitializeEntityIdMappings</a> (const Spawnable::EntityList &amp;entities, EntityIdMap &amp;idMap, AZStd::unordered_set&lt; AZ::EntityId &gt; &amp;previouslySpawned)</td></tr>
+<tr class="separator:ad64c0b1b4522e0166e6be50b97f99d34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7cb800c29623e83b8cd7615a663954"><td class="memItemLeft" align="right" valign="top"><a id="a7e7cb800c29623e83b8cd7615a663954"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshEntityIdMapping</b> (const AZ::EntityId &amp;entityId, EntityIdMap &amp;idMap, AZStd::unordered_set&lt; AZ::EntityId &gt; &amp;previouslySpawned)</td></tr>
+<tr class="separator:a7e7cb800c29623e83b8cd7615a663954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -201,6 +206,50 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_d
 <tr class="memitem:afd51b8c9494c41361d9579ca2e4042ff"><td class="memItemLeft" align="right" valign="top">SpawnablePriority&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html#afd51b8c9494c41361d9579ca2e4042ff">m_highPriorityThreshold</a> { 64 }</td></tr>
 <tr class="separator:afd51b8c9494c41361d9579ca2e4042ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad64c0b1b4522e0166e6be50b97f99d34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64c0b1b4522e0166e6be50b97f99d34">&#9670;&nbsp;</a></span>InitializeEntityIdMappings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::SpawnableEntitiesManager::InitializeEntityIdMappings </td>
+          <td>(</td>
+          <td class="paramtype">const Spawnable::EntityList &amp;&#160;</td>
+          <td class="paramname"><em>entities</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">EntityIdMap &amp;&#160;</td>
+          <td class="paramname"><em>idMap</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZStd::unordered_set&lt; AZ::EntityId &gt; &amp;&#160;</td>
+          <td class="paramname"><em>previouslySpawned</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Generate a base set of original-to-new entity ID mappings to use during spawning. Since Entity references get fixed up on an entity-by-entity basis while spawning, it's important to have the complete set of new IDs available right at the start. This way, entities that refer to other entities that haven't spawned yet will still get their references remapped correctly. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="afd51b8c9494c41361d9579ca2e4042ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afd51b8c9494c41361d9579ca2e4042ff">&#9670;&nbsp;</a></span>m_highPriorityThreshold</h2>
@@ -231,7 +280,7 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:14:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:32:42 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -56,21 +56,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a84d415eb715dbf9de083ce12c07be2a0"><td class="memItemLeft" align="right" valign="top"><a id="a84d415eb715dbf9de083ce12c07be2a0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ActivationData</b> (const <a class="el" href="class_script_canvas_1_1_runtime_component.html">RuntimeComponent</a> &amp;component, ActivationInputArray &amp;storage)</td></tr>
-<tr class="separator:a84d415eb715dbf9de083ce12c07be2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa864c4a8f31a389bae21fad3c7a5ce79"><td class="memItemLeft" align="right" valign="top"><a id="aa864c4a8f31a389bae21fad3c7a5ce79"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>ActivationData</b> (const AZ::EntityId entityId, const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;variableOverrides, const <a class="el" href="struct_script_canvas_1_1_runtime_data.html">RuntimeData</a> &amp;runtimeData, ActivationInputArray &amp;storage)</td></tr>
-<tr class="separator:aa864c4a8f31a389bae21fad3c7a5ce79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f7b55bd1079bbc9c77376909376c53"><td class="memItemLeft" align="right" valign="top"><a id="a72f7b55bd1079bbc9c77376909376c53"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ActivationData</b> (const <a class="el" href="struct_script_canvas_1_1_runtime_data_overrides.html">RuntimeDataOverrides</a> &amp;variableOverrides, ActivationInputArray &amp;storage)</td></tr>
+<tr class="separator:a72f7b55bd1079bbc9c77376909376c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a350d32d1bdc2124e97a4f47c897bd121"><td class="memItemLeft" align="right" valign="top"><a id="a350d32d1bdc2124e97a4f47c897bd121"></a>
+const void *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableSource</b> (size_t index, size_t &amp;overrideIndexTracker) const</td></tr>
+<tr class="separator:a350d32d1bdc2124e97a4f47c897bd121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a248973a2675459261a3f9b2e00bd4161"><td class="memItemLeft" align="right" valign="top"><a id="a248973a2675459261a3f9b2e00bd4161"></a>
-const AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>entityId</b></td></tr>
-<tr class="separator:a248973a2675459261a3f9b2e00bd4161"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a820b07da23348eca7a1c34f41fba8998"><td class="memItemLeft" align="right" valign="top"><a id="a820b07da23348eca7a1c34f41fba8998"></a>
-const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>variableOverrides</b></td></tr>
-<tr class="separator:a820b07da23348eca7a1c34f41fba8998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5dac0c8e4adaacb34361ee3f464b73f"><td class="memItemLeft" align="right" valign="top"><a id="af5dac0c8e4adaacb34361ee3f464b73f"></a>
+const <a class="el" href="struct_script_canvas_1_1_runtime_data_overrides.html">RuntimeDataOverrides</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>variableOverrides</b></td></tr>
+<tr class="separator:af5dac0c8e4adaacb34361ee3f464b73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23ecbc9d09f1874ea29e93471ead7d86"><td class="memItemLeft" align="right" valign="top"><a id="a23ecbc9d09f1874ea29e93471ead7d86"></a>
 const <a class="el" href="struct_script_canvas_1_1_runtime_data.html">RuntimeData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>runtimeData</b></td></tr>
 <tr class="separator:a23ecbc9d09f1874ea29e93471ead7d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,7 +81,7 @@ ActivationInputArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:15:33 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:33:46 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
