@@ -155,7 +155,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | - | - |
 | [Non-uniform Scale](/docs/user-guide/components/reference/non-uniform-scale/non-uniform-scale/) | Allows an entity to scale by varying sizes across the x-, y-, and z- axes. By default, entities can scale only equally across the axes. |
 
-### PhysX
+### NVIDIA PhysX
 
 | Component | Description | 
 | - | - |
