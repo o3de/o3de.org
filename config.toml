@@ -1,7 +1,7 @@
 baseURL = "https://docs.o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
+copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 
 enableGitInfo = true
 
@@ -40,6 +40,11 @@ icon = "fab fa-discord"
 name = "O3DE Public Calendar"
 url = "https://lists.o3de.org/g/o3de-calendar/calendar"
 icon = "fab fa-github"
+
+[[params.social]]
+name = "O3DE Twitter"
+url = "https://twitter.com/o3dengine"
+icon = "fab fa-twitter"
 
 [[params.fonts]]
 name = "Open Sans"

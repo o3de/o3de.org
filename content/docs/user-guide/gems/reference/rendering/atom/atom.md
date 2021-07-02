@@ -5,6 +5,6 @@ description: The Atom Gem provides Atom Renderer and its associated tools (such 
 toc: true
 ---
 
-The Atom Gem adds **Atom Renderer** and associated tools and utilties such as **Material Editor** to Open 3D Engine projects.. Atom is a modular, data-driven, and multi-threaded renderer that supports Forward+ and Deferred rendering.
+The Atom Gem adds **Atom Renderer** and associated tools and utilties such as **Material Editor** to Open 3D Engine projects. Atom is a modular, data-driven, and multi-threaded renderer that supports Forward+ rendering.
 
 For more information refer to the [Atom Guide](/docs/atom-guide).
