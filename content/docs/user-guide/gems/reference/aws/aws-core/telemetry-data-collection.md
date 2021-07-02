@@ -26,7 +26,7 @@ Data collected is subject to the [AWS Privacy Policy](https://aws.amazon.com/pri
 AWS owns the data gathered via this process. Data collection is subject to the [AWS Privacy Policy](https://aws.amazon.com/privacy/).
 {{< /note >}}
 
-You can also opt-out via the Editor preferences found at **Edit** -> **Editor Settings** -> **Global Preferences** -> **AWS**.
+You can opt-out via the Editor preferences found at **Edit** -> **Editor Settings** -> **Global Preferences** -> **AWS**.
 
 Or, you can modify the Editor Registry setting file under `{YOUR-PROJECT}/user/Registry/editorpreferences.setreg` and restart the Editor.
 
@@ -37,7 +37,7 @@ Registry setting:
     "Amazon"
     {
         "Telemetry": {
-            "SendAWSUsageMetric": True
+            "SendAWSUsageMetric": true
         }
     }
 }
