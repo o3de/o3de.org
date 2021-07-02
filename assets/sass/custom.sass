@@ -180,6 +180,7 @@ $width: '59vw';
   background-image: url('/img/home/hero.jpg')
   background-size: cover
   height: 600px
+  width: 100%
     
 .hero-inner 
   margin-bottom: 0rem
@@ -197,6 +198,9 @@ $width: '59vw';
 
 .download-cta 
   background-color: $o3de-blue
+  width: 150px
+  height: 36px
+  padding: 0
   &:hover 
     background-color: darken(#1E71EB, 10%)
 
@@ -215,11 +219,27 @@ $width: '59vw';
 // layouts/partials/home/features.html 
 
 .home-features 
-  background-color: $o3de-black 
-  background-image: url('/img/home/feature-bg-2.png')
-  background-position: center
-  background-repeat: no-repeat
+  background-color: #111111
   color: $o3de-white
+  margin-top: -34px
+  padding-top: 72px
+  padding-bottom: 72px
+
+.features-img
+  width: 100%
+  margin-left: -15px
+
+.features-text
+  padding-right: 280px
+  padding-left: 52px
+
+.features-img-reverse
+  width: 100%
+  margin-left: 15px
+
+.features-text-reverse
+  padding-left: 280px
+  padding-right: 52px
 
 .feature
   margin-top: 2rem
@@ -227,70 +247,89 @@ $width: '59vw';
   img
     width: 100%
 
-// layouts/partials/home/partners.html .
+.features-mid-content
+  padding-top: 32px
+  padding-bottom: 32px
+
+
+
+// layouts/partials/home/partners.html 
+
+.home-partners
+  background-color: #EEEEEE
+  padding-top: 72px
+  padding-bottom: 72px
+
+.partners-logos-view
+  width: 80%
+  margin-top: 40px
 
 .accelByte-logo
   background-color: white
-  padding: 20px 60px 20px 60px
-  margin-top: 5px
+  padding: 35px 75px 35px 75px
+  margin: 12px
 
 .adobe-logo
   background-color: white
-  padding: 20px 80px 20px 80px
-  margin-top: 5px
+  padding: 35px 75px 35px 75px
+  margin: 9px
 
 .aocalypseStudios-logo
   background-color: white
-  padding: 20px 60px 20px 60px
-  margin-top: 5px
+  padding: 35px 75px 35px 75px
+  margin: 9px
 
 .audiokinetic-logo
   background-color: white
-  padding: 20px 60px 20px 60px;
-  margin-top: 5px
+  padding: 40px 95px 40px 95px;
+  margin: 9px
 
 .aws-logo
   background-color: white
-  padding: 15px 50px 15px 50px;
-  margin-top: 5px
+  padding: 35px 65px 35px 65px;
+  margin: 9px
 
 .backtrace-logo
   background-color: white
-  padding: 10px 50px 10px 50px;
-  margin-top: 5px
+  padding: 30px 50px 30px 50px;
+  margin: 9px
 
 .carbonated-logo
   background-color: white
-  padding: 4px 40px 4px 40px;
-  margin-top: 5px
-
-section.container-fluid.home-partners
-  background-color: #EEEEEE
+  padding: 25px 50px 25px 50px;
+  margin: 9px
 
   
 // layouts/partials/home/get-statred.html 
 
-.row.getting-statred-view
-  margin-top: 20px
+.home-getstarted
+  width: 70%
+  padding-top: 72px
+  padding-bottom: 72px
+
+.getting-statred-view
+  height: 180px
+  margin-top: 40px
 
 .getStatred-img
-  padding: 10px
-  margin-bottom: -10px;
-  margin-top: -10px;
+  height: 100%
+  margin-left: -14px
 
 .getstarted-text-width
   padding-right: 50px
   margin-bottom: 10px
 
   
-// layouts/partials/home/features.html 
+// layouts/partials/home/download.html 
 
 .home-download  
   background-image: url('/img/home/download-bg.jpg')
-  background-position: center
+  background-size: cover;
   background-repeat: no-repeat
   color: $o3de-white
   margin-bottom: -48px;
+  padding-top: 72px
+  padding-bottom: 72px
 
 .download-btn 
   background-color: $o3de-blue
@@ -310,8 +349,6 @@ section.container-fluid.home-partners
     &:hover, &:active 
       color: $o3de-darkblue
       text-decoration: none
-  @include media-breakpoint-up(lg)
-    height: 300px
 
 // layouts/social-buttons.html 
 
