@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine Atom Gem API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -71,21 +71,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MeshHandle</b> = <a 
 <tr class="memitem:a204218038491066bf47d1dba1c27bab9"><td class="memItemLeft" align="right" valign="top"><a id="a204218038491066bf47d1dba1c27bab9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ModelChangedEvent</b> = Event&lt; const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model.html">RPI::Model</a> &gt; &gt;</td></tr>
 <tr class="separator:a204218038491066bf47d1dba1c27bab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cec33377531e27eea219b10e5dfa226"><td class="memItemLeft" align="right" valign="top"><a id="a4cec33377531e27eea219b10e5dfa226"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>RequiresCloneCallback</b> = AZStd::function&lt; bool(const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset)&gt;</td></tr>
-<tr class="separator:a4cec33377531e27eea219b10e5dfa226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a142356d673f1f49bf873ad39854f5da8"><td class="memItemLeft" align="right" valign="top"><a id="a142356d673f1f49bf873ad39854f5da8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html">AZ::Render::MeshFeatureProcessorInterface</a>, &quot;{975D7F0C-2E7E-4819-94D0-D3C4E2024721}&quot;, FeatureProcessor)</td></tr>
 <tr class="separator:a142356d673f1f49bf873ad39854f5da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f6709c2d74578df53ebf343f88bbad1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a8f6709c2d74578df53ebf343f88bbad1">AcquireMesh</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const MaterialAssignmentMap &amp;materials={}, bool skinnedMeshWithMotion=false, bool rayTracingEnabled=true, RequiresCloneCallback requiresCloneCallback={})=0</td></tr>
-<tr class="separator:a8f6709c2d74578df53ebf343f88bbad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd52f62e8471dff785a3306782b60294"><td class="memItemLeft" align="right" valign="top"><a id="abd52f62e8471dff785a3306782b60294"></a>
-virtual <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#abd52f62e8471dff785a3306782b60294">AcquireMesh</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;modelAsset, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;material, bool skinnedMeshWithMotion=false, bool rayTracingEnabled=true, RequiresCloneCallback requiresCloneCallback={})=0</td></tr>
-<tr class="memdesc:abd52f62e8471dff785a3306782b60294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a model with a single material applied to all its meshes. <br /></td></tr>
-<tr class="separator:abd52f62e8471dff785a3306782b60294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacfcd15f1f2ecc3cb741188d6c28e62b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#aacfcd15f1f2ecc3cb741188d6c28e62b">AcquireMesh</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_mesh_handle_descriptor.html">MeshHandleDescriptor</a> &amp;descriptor, const MaterialAssignmentMap &amp;materials={})=0</td></tr>
+<tr class="separator:aacfcd15f1f2ecc3cb741188d6c28e62b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da6cc8fd3a67ce5f66cd13fde864585"><td class="memItemLeft" align="right" valign="top"><a id="a1da6cc8fd3a67ce5f66cd13fde864585"></a>
+virtual <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a1da6cc8fd3a67ce5f66cd13fde864585">AcquireMesh</a> (const <a class="el" href="struct_a_z_1_1_render_1_1_mesh_handle_descriptor.html">MeshHandleDescriptor</a> &amp;descriptor, const Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material.html">RPI::Material</a> &gt; &amp;material)=0</td></tr>
+<tr class="memdesc:a1da6cc8fd3a67ce5f66cd13fde864585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquires a model with a single material applied to all its meshes. <br /></td></tr>
+<tr class="separator:a1da6cc8fd3a67ce5f66cd13fde864585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10040c1b11e7b29c22d570f52d30b185"><td class="memItemLeft" align="right" valign="top"><a id="a10040c1b11e7b29c22d570f52d30b185"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html#a10040c1b11e7b29c22d570f52d30b185">ReleaseMesh</a> (<a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle)=0</td></tr>
 <tr class="memdesc:a10040c1b11e7b29c22d570f52d30b185"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the mesh handle. <br /></td></tr>
@@ -206,8 +203,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor_interface.html" title="MeshFeatureProcessorInterface provides an interface to acquire and release a MeshHandle from the unde...">MeshFeatureProcessorInterface</a> provides an interface to acquire and release a MeshHandle from the underlying <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html" title="This feature processor handles static and dynamic non-skinned meshes.">MeshFeatureProcessor</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8f6709c2d74578df53ebf343f88bbad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f6709c2d74578df53ebf343f88bbad1">&#9670;&nbsp;</a></span>AcquireMesh()</h2>
+<a id="aacfcd15f1f2ecc3cb741188d6c28e62b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacfcd15f1f2ecc3cb741188d6c28e62b">&#9670;&nbsp;</a></span>AcquireMesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,32 +215,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
         <tr>
           <td class="memname">virtual <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> AZ::Render::MeshFeatureProcessorInterface::AcquireMesh </td>
           <td>(</td>
-          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">RPI::ModelAsset</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>modelAsset</em>, </td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_render_1_1_mesh_handle_descriptor.html">MeshHandleDescriptor</a> &amp;&#160;</td>
+          <td class="paramname"><em>descriptor</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const MaterialAssignmentMap &amp;&#160;</td>
-          <td class="paramname"><em>materials</em> = <code>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>skinnedMeshWithMotion</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>rayTracingEnabled</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">RequiresCloneCallback&#160;</td>
-          <td class="paramname"><em>requiresCloneCallback</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>materials</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -264,7 +243,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a4b58254038a05eeb891963d74b0d80ba">AZ::Render::MeshFeatureProcessor</a>.</p>
+<p>Implemented in <a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ab0db9607278b12b9c1fffd64137222ae">AZ::Render::MeshFeatureProcessor</a>.</p>
 
 </div>
 </div>
@@ -342,7 +321,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:14:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:33:10 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
