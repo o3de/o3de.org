@@ -12,23 +12,29 @@ The current version of Open 3D Engine is 2107.1 (Developer Preview). Check out t
 
 ## Highlights
 
-* It's the initial Developer Preview release of O3DE!
+The [Open 3D Foundation](https://o3de.foundation) is very excited to bring you this initial Developer Preview release, kicking off what we hope is a long and illustrious community effort to develop a 3D rendering platform that can evolve as fast as modern gaming and simulation has. If it looks a bit familiar to AWS Lumberyard developers, well, they're right: O3DE builds off the effort Amazon Web Services poured into that engine.
 
-This is the very first public release of Open 3D Engine! This release is a Developer Preview and is incomplete for many major development workflows. Let's review a few of the bigger features available in O3DE 2107.1:
+Note that this release is a Developer Preview and is incomplete for many major development workflows. Initially, this release primarily supports engine and tools developers, and as the O3DE community builds it out, more features will be added.
+
+ With that said, let's review a few of the bigger features available in O3DE 2107.1:
 
 * Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation](/docs/atom-guide/).
 
-​* New math libraries:
+* New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries. [Check out the API reference for the AZ:Math APIs here]().
 
-* New networking stack:
+* New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](/docs/user-guide/networking/)
 
-* Prefab support:
+* Prefab support: O3DE replaces the old slice system with the well-understood prefab model for combining components and assets. Curious? [Read the early documentation here]().
 
-* Project Manager:
+* Project Manager: The new Project Manager simplifies the process of managing Gems and building your project and the O3DE engine. [Read more about it in the documentation here]().
+
+* CMake support: Heck yeah! CMake replaces WAF as the build environment and tools, and brings with it a host of great features. [Check out the documentation here]().
+
+Or, if you're the literary sort, [read through our new Get Started docs](/docs/welcome-guide/). This is a good place to get oriented to all the [features](/docs/welcome-guide/features-intro/), and [concepts](/docs/welcome-guide/key-concepts/) O3DE introduces.
 
 ## New and updated core features
 
-The
+There's a lot of updates we're bringing to you with this initial release. Check 'em out!
 
 ### Build
 
