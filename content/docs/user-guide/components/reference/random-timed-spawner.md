@@ -18,7 +18,7 @@ Currently, you can specify how entities spawn in random positions with the follo
 + Normal distribution
 + Uniform Real distribution
 
-The **Random Timed Spawner** component is part of the LmbrCentral gem\. For more information, see [Add modular features and assets with Gems](https://o3deorg.netlify.app/docs/user-guide/gems/)\.
+The **Random Timed Spawner** component is part of the LmbrCentral gem\. For more information, see [Add modular features and assets with Gems](/docs/user-guide/gems/)\.
 
 **Example**
 The following **Random Timed Spawner** component has the distribution type, Uniform Real\.
