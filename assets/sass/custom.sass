@@ -516,19 +516,69 @@ $width: '59vw';
 // layouts/docs/single.html, layouts/docs/section.html 
 
 .docs-sidebar 
-  height: 30vh 
-  overflow: auto
+  background-color: rgba(30, 112, 235, 0.03)  
+
+  .fa-chevron-right
+    display: none
+
+  .fa-chevron-down
+    display: none
+  
+  .section-nav-subsection
+    padding-top: 5px
+
+  .section-nav
+    padding-top: 16px
+
   @include media-breakpoint-up(xl)
     position: sticky
     top: 4rem
     z-index: 1000
     height: calc(100vh - 4rem)
-    border-right: 1px solid $o3de-lightgray
     flex: 0 1 320px
     order: 0
     box-sizing: border-box
     flex-wrap: wrap
     overflow: auto
+  
+  .card-body
+    padding: 10px 0 10px 10px
+
+  .card-header
+    background: transparent
+    border: 0 none
+    padding: 0 1rem
+
+    &show
+      color: $o3de-blue
+
+    .btn-link
+      color: $o3de-black
+
+      &:focus
+        text-decoration: none
+        box-shadow: none
+        
+      &:hover
+        text-decoration: none
+        box-shadow: none
+
+  .menu-body
+    padding-left: 20px
+
+  .section-nav-link
+    padding: 0 8px
+    color: $o3de-black
+    font-weight: normal
+
+  .currentPage
+    background-color: rgba(221, 221, 221, 0.3)
+    color: $o3de-blue
+  
+  .card
+    background: transparent
+    border: 0 none
+    box-shadow: none
 
 // layouts/section-nav.html 
 
@@ -539,7 +589,6 @@ nav
     margin-bottom: 0rem
     font-size: 1rem
     li 
-      border-bottom: 1px solid $o3de-lightgray
       padding-bottom: 0.2rem
       margin-bottom: 0.3rem
       font-weight: bold
