@@ -96,5 +96,5 @@ identifier = "docs"
 
 [[menu.main]]
 name = "CONTRIBUTE"
-url = "/docs/contributing"
+url = "/contribute"
 weight = 7
