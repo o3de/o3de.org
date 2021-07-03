@@ -1,12 +1,14 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
 <div class="community-join d-flex align-items-center">
-  <div class="container text-center pb-4">
+  <div class="container social-container text-center pb-4 pt-5">
     <h2>Join the Conversation</h2>
+    <div class="row">
     {{ $social := site.Params.social }}
     {{ range $social }}
     {{ $color := .color }}
-    <a class="btn mr-1" title="{{ .name }}" href="{{ .url }}" target="_blank">
+    <div class="col-6 col-md-3 pb-5">
+      <a class="btn" title="{{ .name }}" href="{{ .url }}" target="_blank">
         {{ with .icon }}
         <span class="icon">
           <i class="{{ . }}"></i>
@@ -14,6 +16,8 @@
         {{ end }} <br/>
         <span class="social-name">{{ .name }}</span>
       </a>
+    </div>
     {{ end }}
+    </div>
   </div>
 </div>

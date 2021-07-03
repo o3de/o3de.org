@@ -157,6 +157,15 @@ code
   border-radius: 5px
   background-color: #ebebeb
 
+// hover state for cards
+
+.card
+  border: 2px solid  $o3de-lightgray
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  transition: all .3s ease;
+  &:hover
+    border: 2px solid  $o3de-blue
+
 // layouts/partials/navbar.html 
 
 .main-navbar 
@@ -265,9 +274,11 @@ $width: '59vw';
         font-size: 1.25rem
       @include media-breakpoint-down(md)
         min-height: 4rem
-    
-    .learn-more
-      display: block
+
+.learn-more
+  display: block
+  font-weight: 600
+  color: $o3de-blue
 
 .active-os-cta
   background-color: $o3de-blue
@@ -425,7 +436,7 @@ $width: '59vw';
   background-size: cover
   background-position: 50% 50%
   color: $o3de-white
-  height: 24vh
+
   p
     font-size: 1.5rem
     font-weight: 200
@@ -435,7 +446,10 @@ $width: '59vw';
 .community-join
   background-color: $o3de-white  
   color: $o3de-black
-  height: 26vh
+
+  .social-container
+    max-width: 640px
+
   .icon 
     font-size: 4rem
   .social-name 
@@ -446,7 +460,7 @@ $width: '59vw';
     color: #231E1B
   .fa-discord
     color: #7289DA
-  .fa-calendar-days
+  .fa-calendar-day
     color: #2A4875
   .fa-twitter
     color: #2AA9E0
@@ -483,10 +497,17 @@ $width: '59vw';
     color: $o3de-black
 
   &.intro
-    min-height: 0
+    min-height: 11rem
 
   .card-title
     margin-top: 0
+
+  .card-image
+    position: absolute;
+    left: 0
+    top: 0
+    bottom: 0
+    width: 100%
   
 .card-image
   background-size: cover
