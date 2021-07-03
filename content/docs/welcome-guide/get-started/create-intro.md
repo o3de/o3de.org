@@ -10,7 +10,7 @@ Previously in this guide, we covered [Key concepts](../key-concepts) and [Settin
 
 ## Modular tools and features
 
-Development in O3DE is best understood if you keep a key O3DE design philosophy in mind as you learn: the concept of *modularity*. The packages that make up O3DE, many of the creative tools, and even the visual scripting systems in O3DE use modular concepts to provide building blocks for your creative vision.
+Development in O3DE is best understood if you keep a key O3DE design philosophy in mind as you learn: *Modularity*. The packages that make up O3DE, many of the creative tools, and even the visual scripting systems in O3DE use modular concepts to provide building blocks for your creative vision.
 
 ### Gems, the modules of O3DE
 
@@ -52,7 +52,7 @@ Tools you might use that are associated to specific components include:
 * **Script Canvas**, O3DE's visual editor for creating scripts, then reference the script from the **Script Canvas** component
 * **Animation Editor** to animate actors, then reference from the **Anim Graph** component
 * **Asset Editor** to create input bindings that bind raw player input, such as keystrokes, to events, then reference from the **Input** component
-* Audio Controls Editor to setup sound effects that map to Wwise controls, then reference from the **Audio Trigger** and **Audio Switch** components
+* **Audio Controls Editor** to setup sound effects that map to audio engine controls, then reference from the **Audio Trigger** and **Audio Switch** components
 
 ...and many more.
 
@@ -84,10 +84,10 @@ As an example, let's consider the workflow for setting up an actor in your proje
 
 1.  To see your animated character, you need an entity with:
 
-   * an **Actor** component to create a controllable character with the actor file from Animation Editor and a material linked to your actor asset.
-   * an **AnimGraph** component to use the animation graph and motion set assets that you created in the Animation Editor.
+    * An **Actor** component to create a controllable character with the actor file from Animation Editor and a material linked to your actor asset.
+    * An **AnimGraph** component to use the animation graph and motion set assets that you created in the Animation Editor.
 
-9.  To control your character in your level, you might want to work with a designer or programmer to add an **Input** component, **PhysX** components, and script components so you can test all of your character's animations in your project's specific environment.
+1.  To control your character in your level, you might want to work with a designer or programmer to add an **Input** component, **PhysX** components, and script components so you can test all of your character's animations in your project's specific environment.
 
 We suggest that you begin your learning path by browsing the following set of O3DE tools and technologies, and then focusing on the ones that apply to your needs:
 

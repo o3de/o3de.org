@@ -8,13 +8,13 @@ toc: true
 
 **O3DE Editor** is your primary workspace. From here, you can access all of the tools to design, create, test, and deploy your project. If you have used other professional engines or 3D animation packages, you'll find the user experience familiar and adapt to O3DE Editor quickly.
 
-O3DE Editor can be launched by choosing `o3de.exe` from your O3DE installation's `build\bin\target` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directories.
+O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
 
 ## The O3DE Editor default layout
 
 The default layout of O3DE Editor contains the most commonly used tools in a configuration, similar to other content creation applications. The core workflow of O3DE is to create and place entities in a level, so the default layout contains a menu bar, toolbars, panes, and tool tabs focused on entity creation and placement.
 
-You can customize the layout through drag and drop, and save to a custom layout through the **Layouts** option in the **View** menu of the main menu bar. Drag the separator bars between panes to resize the panes. Drag the title bar of a pane to tear off the pane. The pane can be dropped anywhere in the layout or dropped outside of O3DE Editor as its own window. To restore the default layout, in the main menu bar choose **View**, **Layouts**, **Default Layout**.
+You can customize the layout through drag and drop, and save to a custom layout through the **Layouts** option in the **View** menu of the main menu bar. Drag the separator bars between panes to resize the panes. Drag the title bar of a pane to tear off the pane. The pane can be dropped anywhere in the layout or dropped outside of O3DE Editor as its own window. To restore the default layout, in the main menu bar choose **View > Layouts > Default Layout**.
 
 ![[The default O3DE Editor layout.]](/images/welcome-guide/ui-editor-labeled.png)
 
@@ -26,19 +26,19 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
 * **B:** On the left side of O3DE Editor, **Entity Outliner** displays a list of entities and prefabs in the current level. Right-click in Entity Outliner to open the context menu to create entities and instantiate prefabs. When an entity or prefab is selected in Entity Outliner, the context menu also has options to duplicate or delete entities, find selected entities and prefabs, organize the list, and open the properties for the selected entity or prefab.
 
-* **C:** Below Entity Outliner is **Asset Browser**, which you can use to browse your project's on-disk assets. Assets such as meshes, animations, and textures are created in third-party applications. Assets such as materials, scripts, and prefabs are created in O3DE Editor. The assets that you create are stored in your project directory. You can also browse default assets that are included with O3DE, as well as assets that are included with Gems that have been added to your project.
+* **C:** Below Entity Outliner is **Asset Browser**, which you can use to browse your project's on-disk assets. Assets such as meshes, animations, and textures are created in third-party applications. Assets such as materials, scripts, and prefabs are created in O3DE Editor, or in editor tools such as **Script Canvas**. The assets that you create are stored in your project directory. You can also browse default assets that are included with O3DE, as well as assets that are included with Gems that have been added to your project.
 
-   The left of the pane of the Asset Browser displays a directory structure that you can browse for available assets. When an asset is selected, the preview pane on the right displays a thumbnail preview and information about the asset, if available.
+   The left pane of the Asset Browser displays a directory structure that you can browse for available assets. When an asset is selected, the preview pane on the right displays a thumbnail preview and information about the asset, if available.
 
-   With an asset selected in Asset Browser, the right-click context menu has options to open **Scene Settings** where you can set Asset Processor options for the asset, as well as open the asset in an associated application such as a modeling program, or open the file location in the system file browser.
+   With an asset selected in Asset Browser, the right-click context menu has options to open **Scene Settings** where you can set **Asset Processor** options for the asset, as well as open the asset in an associated application such as a modeling program, or open the file location in the system file browser.
 
 * **D:** In the center of the default O3DE Editor layout is **Perspective**. This 3D viewport is a real-time view of your level. In Perspective, you create and place entities, and view and play your project.
 
-   Right-click **Perspective** in the title bar of the pane to open the perspective menu. From the perspective menu, you can toggle visibility for various helpers such as the construction plane, icons, bounds, and guides. You can also select an aspect ratio, view through various cameras placed in the level, create new cameras from the current view, and split the Perspective pane into multiple views.
+   Right-click in the title bar of Perspective to open the perspective menu. From the perspective menu, you can toggle visibility for various helpers such as the construction plane, icons, bounds, and guides. You can also select an aspect ratio, view through various cameras placed in the level, create new cameras from the current view, and split Perspective into multiple views.
 
-   On the right of the title bar in Perspective are several icons to select cameras, set camera movement speed, set information display, enable view icons, set aspect ratio, and set grid snapping options.
+   On the right side of the Perspective title bar, are several icons to select cameras, set camera movement speed, set information display, enable view icons, set aspect ratio, and set grid snapping options.
 
-   Right-click in **Perspective** to open the context menu to create entities and prefabs. Much of the context menu functionality in Perspective is shared with the context menu functionality of Entity Outliner.
+   Right-click in the viewport of Perspective to open the context menu to create entities and prefabs. Much of the context menu functionality in Perspective is shared with the context menu functionality of Entity Outliner.
 
    In the upper left and upper right corners of Perspective are icon trays for manipulating entities. On the left, you can use the icons to select a transform operation. From top to bottom the icons represent translate, rotate, and scale operations. On the right, you can use the icons to select a space for the transform operation. From top to bottom the icons represent world, parent, and local spaces. 
 
@@ -73,7 +73,7 @@ O3DE has familiar viewport interaction models based on first-person PC games and
 *  **Left mouse** - Select entity.
 *  **Left mouse + drag** - Area select entities.
 
-The camera controls above are game centric. If you prefer to use camera controls closer to those you would find in a DCC application such as Maya, use these hotkeys.
+The camera controls above are game-centric. If you prefer to use camera controls closer to those you would find in a DCC application such as Maya, use these hotkeys.
 
 * **ALT + left mouse + drag** - Orbit view.
 * **ALT + right mouse + drag** - Dolly view.
