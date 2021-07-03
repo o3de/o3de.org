@@ -2,7 +2,7 @@
 linkTitle: Create with Open 3D Engine
 title: Create with Open 3D Engine
 description: Learn to create, configure and build projects in Open 3D Engine, and take a tour of the O3DE Editor.
-weight: 100
+weight: 500
 ---
 
 Now that you've [installed Open 3D Engine (O3DE)](../setup) it's time to create your own project, and learn a bit about the workflows available in O3DE, and take tour of O3DE's central creation tool, **O3DE Editor**.
