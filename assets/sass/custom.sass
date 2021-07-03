@@ -518,6 +518,15 @@ $width: '59vw';
 .docs-sidebar 
   background-color: rgba(30, 112, 235, 0.03)  
 
+  .fa-chevron-right
+    display: none
+
+  .fa-chevron-down
+    display: none
+  
+  .section-nav-subsection
+    padding-top: 5px
+
   .section-nav
     padding-top: 16px
 
@@ -532,27 +541,44 @@ $width: '59vw';
     flex-wrap: wrap
     overflow: auto
   
+  .card-body
+    padding: 10px 0 10px 10px
+
   .card-header
     background: transparent
     border: 0 none
     padding: 0 1rem
 
+    &show
+      color: $o3de-blue
+
     .btn-link
       color: $o3de-black
 
       &:focus
-        border: 0 none
         text-decoration: none
         box-shadow: none
         
       &:hover
-        border: 0 none
         text-decoration: none
         box-shadow: none
+
+  .menu-body
+    padding-left: 20px
+
+  .section-nav-link
+    padding: 0 8px
+    color: $o3de-black
+    font-weight: normal
+
+  .currentPage
+    background-color: rgba(221, 221, 221, 0.3)
+    color: $o3de-blue
   
   .card
     background: transparent
     border: 0 none
+    box-shadow: none
 
 // layouts/section-nav.html 
 
