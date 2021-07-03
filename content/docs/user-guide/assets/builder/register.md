@@ -17,7 +17,7 @@ When the Python Asset Builder is successfully registered, a handler for the buil
 + [PythonBuilderNotificationBusHandler](#python-asset-builder-notification-bus-handler)
 + [Example: Register an asset builder](#python-asset-builder-register-example)
 
-## PythonAssetBuilderRequestBus {#python-asset-builder-request-bus}
+## PythonAssetBuilderRequestBus 
 
 The PythonAssetBuilderRequestBus is a singleton EBus that serves methods to enable Python asset builders\.
 
@@ -35,7 +35,7 @@ The PythonAssetBuilderRequestBus is a singleton EBus that serves methods to enab
 'GetExecutableFolder'
 ```
 
-## AssetBuilderPattern {#python-asset-builder-pattern}
+## AssetBuilderPattern 
 
 The AssetBuilderPattern is a structure that defines the type of pattern to use to watch for source asset files\.
 
@@ -59,7 +59,7 @@ azlmbr.asset.builder.AssetBuilderPattern_Wildcard
 azlmbr.asset.builder.AssetBuilderPattern_Regex
 ```
 
-## AssetBuilderDesc {#python-asset-builder-desc}
+## AssetBuilderDesc 
 
 `AssetBuilderDesc` describes the asset builder for the **Asset Processor** so it can invoke callbacks for the *create jobs* event and the *process job* events for the patterns being that you are registering with the source asset watching system\.
 
@@ -88,7 +88,7 @@ class azlmbr.asset.builder.AssetBuilderDesc
  - version (number) Changing this version number will cause all your assets to be re-submitted to the builder for job creation and rebuilding
 ```
 
-## PythonBuilderNotificationBusHandler {#python-asset-builder-notification-bus-handler}
+## PythonBuilderNotificationBusHandler 
 
 The notification bus handler is used by Python Asset Builder to call back to the Python script to handle asset building events such as *create jobs* and *process job* to process source asset files\. The handler must be created in the global module scope so that the callbacks can stay active\.
 
@@ -106,7 +106,7 @@ The notification bus handler is used by Python Asset Builder to call back to the
 'OnProcessJobRequest'
 ```
 
-## Example: Register an asset builder {#python-asset-builder-register-example}
+## Example: Register an asset builder 
 
 This example code shows how to register an asset builder\. The `on_create_jobs` and `on_process_job` functions are stubbed out\. See the subsequent topics for information on creating and processing jobs\.
 

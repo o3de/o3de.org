@@ -21,7 +21,7 @@ Applying modifiers to your vegetation gives it a realistic, natural look\.
 
 ![\[Vegetation area after adding the scale, rotation, and position modifiers.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-after.png)
 
-## Adding a Scale Modifier {#dynamic-vegetation-adding-scale-modifier}
+## Adding a Scale Modifier 
 
 A scale modifier varies the size of the vegetation\.
 
@@ -46,7 +46,7 @@ A scale modifier varies the size of the vegetation\.
 
    **Range Min** sets the scale size for the gradient signal's lowest values\. **Range Max** sets the scale size for the gradient signal's highest values\. Because the gradient signal varies in range from black to white, a scale value between the minimum and the maximum is applied to that vegetation instance\.
 
-## Adding a Rotation Modifier {#dynamic-vegetation-adding-rotation-modifier}
+## Adding a Rotation Modifier 
 
 A rotation modifier varies the rotation of the vegetation\.
 
@@ -65,7 +65,7 @@ A rotation modifier varies the rotation of the vegetation\.
 
    The **Gradient Entity Id** field populates with the entity name\.
 
-## Adding a Position Modifier {#dynamic-vegetation-adding-position-modifier}
+## Adding a Position Modifier 
 
 A position modifier shifts each instance of vegetation by an amount that the gradient determines, which removes the grid\-like appearance of the vegetation\.
 

@@ -17,7 +17,7 @@ Currently, only Android and iOS are supported for platform-specific configuratio
 + [Using the Project Settings Tool](#mobile-project-settings-tool-using)
 + [Properties](#mobile-project-settings-tool-properties)
 
-## Settings Files {#mobile-project-settings-tool-settings-files}
+## Settings Files 
 
 The **Project Settings Tool** modifies project settings files, which are located in their respective project directories. The main settings file, [`project.json`](/docs/user-guide/project-config), is located in the root directory of each project and contains cross-platform settings for platforms such as PC and Android. The file also contains platform-specific settings for PC and Android.
 
@@ -27,7 +27,7 @@ For more information about `.plist` files, see [About Info.plist Keys and Values
 
 For more information about iOS-specific settings, see [iOS Keys](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/iPhoneOSKeys.html).
 
-## Using the Project Settings Tool {#mobile-project-settings-tool-using}
+## Using the Project Settings Tool 
 
 You can use the **Project Settings Tool** to set settings related to the current project.
 
@@ -43,13 +43,13 @@ You can use the **Project Settings Tool** to set settings related to the current
 
 ![\[The Project Settings Tool interface with Base Settings and Platform Settings.\]](/images/user-guide/mobile/mobile-project-settings-tool-ui.png)
 
-### Image Previews {#mobile-project-settings-tool-using-imagepreview}
+### Image Previews 
 
 For image settings such as **Icons** and **Splashscreens**, the **Project Settings Tool** displays image previews using the image to be used for each dpi or size.
 
 ![\[The Project Settings Tool displays image previews for image settings, such as for Splashscreens and Icons.\]](/images/user-guide/mobile/mobile-project-settings-tool-using-imagepreview.png)
 
-### Validation {#mobile-project-settings-tool-using-validation}
+### Validation 
 
 The **Project Settings Tool** validates settings as you enter values and provides feedback when a value is invalid with the selected setting.
 
@@ -57,7 +57,7 @@ A red outline appears around the setting to indicate an invalid value. You can a
 
 ![\[The Project Settings Tool displays a red outline and an error message for incompatible inputs on settings.\]](/images/user-guide/mobile/mobile-project-settings-tool-using-validation.png)
 
-### Linked Properties {#mobile-project-settings-tool-using-linked-properties}
+### Linked Properties 
 
 You can link similar properties to each other. When you link properties to one another, modifying one of them makes the same changes to all other linked properties.
 
@@ -80,7 +80,7 @@ You can link similar properties to each other. When you link properties to one a
 **Note**
 Some properties are always linked and can't be disabled, such as **Base Settings - Project Name** and **iOS - Bundle Name**. This ensures accuracy for properties that are required to have the same values across platforms. If the **Project Settings Tool** finds discrepancies between settings files for the always-linked properties, the `project.json` values take precedence.
 
-### Reconfiguring the Project {#mobile-project-settings-tool-using-reconfigure}
+### Reconfiguring the Project 
 
 After you make changes and save, the **Project Settings Tool** prompts you to reconfigure your project.
 
@@ -93,11 +93,11 @@ If you want to deploy your changes immediately, choose **Yes**. O3DE Editor does
 
 ![\[The Project Settings Tool displays a successful configure and shows "Reconfiguration Finished."\]](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure-result.png)
 
-## Properties {#mobile-project-settings-tool-properties}
+## Properties 
 
 See the following properties in the **Project Settings Tool**.
 
-### Base Settings {#mobile-project-settings-tool-properties-base}
+### Base Settings 
 
 The **Base Settings** properties apply to both Android and iOS.
 
@@ -113,7 +113,7 @@ The **Base Settings** properties apply to both Android and iOS.
 | Game Dll Name |  File name of the DLL used to load the game. This value should not be changed.  |
 | Output Folder |  Directory to which the packaged project is exported after being built.  |
 
-### Android Settings {#mobile-project-settings-tool-properties-android}
+### Android Settings 
 
 You can find the following properties in the **Platforms Settings** on the **Android** tab.
 
@@ -137,7 +137,7 @@ You can find the following properties in the **Platforms Settings** on the **And
 | Icons |  All icon overrides for Android. The **Default** property is used on all overrides that are not explicitly specified. PNG images are required.  Resolutions must be 48px, 72px, 96px, 144px, and 192px.  |
 | Splashscreens |  All splashscreen (the image shown while the app first loads) overrides for Android. The **Default** property is used on all overrides that are not explicitly specified. PNG images are required.  Resolution values are not strictly enforced but the recommended values are 1024 x 640, 1280 x 800, 1920 x 1200, and 2560 x 1600.  |
 
-### iOS Settings {#mobile-project-settings-tool-properties-ios}
+### iOS Settings 
 
 You can find the following properties in the **Platforms Settings** on the **iOS** tab.
 
@@ -161,7 +161,7 @@ You can find the following properties in the **Platforms Settings** on the **iOS
 | Icons |  All icon overrides for iOS. PNG images are required. All resolutions must be exactly as specified.  |
 | Launchscreens |  All launch screen overrides for iOS. PNG images are required. All resolutions must be exactly as specified.  |
 
-### Override Images {#mobile-project-settings-tool-properties-ios-override}
+### Override Images 
 
 On iOS devices, override images are stored in the `project_root\Gem\Resources\platformLauncher\Images.xcassets`. Within that directory, the `AppIcon.appiconset` directory contains icons and the `LaunchImage.launchimage` directory contains splashscreens.
 

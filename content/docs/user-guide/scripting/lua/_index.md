@@ -23,14 +23,14 @@ You can use Lua in O3DE to facilitate quick iteration of your game project. Lua 
 
 O3DE uses Lua version {{< versions/lua >}}.
 
-## Learning Lua {#lua-scripting-resources-general}
+## Learning Lua 
 
 For learning the Lua language itself, the [lua.org](http://www.lua.org) website is a good place to start.
 + [Official Lua Documentation](http://www.lua.org/docs.html) - Provides a central location for information about Lua, including a [Getting started](http://www.lua.org/start.html) page.
 + [Programming in Lua](http://www.lua.org/pil/) - This text is a resource for getting started with Lua programming.
 + [Lua {{< versions/lua >}} Reference Manual](http://www.lua.org/manual/{{< versions/lua >}}/) - Provides a reference of all the functions that are available by default in Lua.
 
-## Learning Lua in O3DE {#lua-scripting-resources-ly}
+## Learning Lua in O3DE 
 
 After you read through this tutorial on writing Lua scripts for the component entity system, learn more about using Lua in O3DE by consulting the following resources.
 + For information on O3DE's built-in Lua editor, see [Lua Editor](/docs/user-guide/interactivity/scripting/lua/debugging.md).

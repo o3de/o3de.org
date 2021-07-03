@@ -25,7 +25,7 @@ You can use a **Text** component to add a text string to an element\.  Use the *
 | Overflow mode |  Select **Overflow** to allow the text to display beyond the edges of the element\. Select **Clip text** to hide, or clip, any text that flows beyond the element's edges\.  |
 | Wrap text |  Select **No wrap** to prevent text from wrapping to subsequent lines\. Select **Wrap text** to allow text to be broken into separate lines\.  |
 
-## Text Markup {#ui-editor-component-text-styling-markup}
+## Text Markup 
 
 You can customize the appearance of the text in your game UI with bold and italic styling, multiple text colors, and multiple fonts in a single text string\. You can also embed images in the text\.
 
@@ -41,7 +41,7 @@ To use the text styling markup feature, you must use a font family `*.fontfamily
 
 1. Enter a string with markup styling in the **Text** box\. See the next section for examples\.
 
-### Styling Tags and Attributes {#ui-editor-component-text-attributes}
+### Styling Tags and Attributes 
 
 **Example**
 You can use the following tags and attributes when styling text with markup:
@@ -58,7 +58,7 @@ You can use the following tags and attributes when styling text with markup:
 
 ![\[Example that uses a Text component to add different fonts in the UI Editor.\]](/images/user-guide/game_ui_editor/this-text-font.png)
 
-### Image Tag and Attributes {#ui-editor-component-text-attributes-images}
+### Image Tag and Attributes 
 
 Use the `<img>` tag to embed an image in text\.
 

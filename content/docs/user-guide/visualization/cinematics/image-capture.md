@@ -13,7 +13,7 @@ You can capture image frames using render output, a capture track, or console va
 + [Capturing Image Frames using a Capture Track](#cinematics-image-capture-track)
 + [Capturing Image Frames with Console Variables](#cinematics-image-capture-cvar)
 
-## Capturing Image Frames with Render Output {#cinematics-image-capture-render-output}
+## Capturing Image Frames with Render Output 
 
 You can use the **Render Output** tool in the Track View to capture image frames\.
 
@@ -38,7 +38,7 @@ You may need to adjust the aspect ratio for captured image frames\.
 
 1. Under **General Viewport Settings**, change the value for **Perspective View Aspect Ratio**\. The default value is `1.3333`\.
 
-## Capturing Image Frames using a Capture Track {#cinematics-image-capture-track}
+## Capturing Image Frames using a Capture Track 
 
 You can capture image frames when a sequence is played in game mode\.
 
@@ -54,7 +54,7 @@ You can capture image frames when a sequence is played in game mode\.
 
 1. Set up a Script Canvas graph to play the sequence on game start\.
 
-## Capturing Image Frames with Console Variables {#cinematics-image-capture-cvar}
+## Capturing Image Frames with Console Variables 
 
 Capture image frames with the following console variables\. For more information, see [Using the Console Window](/docs/user-guide/editor/console.md)\.
 

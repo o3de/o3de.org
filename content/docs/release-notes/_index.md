@@ -14,7 +14,7 @@ guide_img: "/images/release-notes/guide_img.png"
 
 | Version        | Binary download link          |  Date of Release   |
 |----------------|-------------------------------|--------------------|
-| 2107.1 (Developer Preview) | [NEED LINK TO BINARY]         |  July 6, 2021      |
+| 2107.1 (Developer Preview) | _COMING SOON!_         |  July 6, 2021      |
 
 ### Get the latest source code
 

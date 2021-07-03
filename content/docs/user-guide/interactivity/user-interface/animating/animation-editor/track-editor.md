@@ -27,7 +27,7 @@ The **Track Editor** displays all the tracks in your current animation sequence\
 + [Moving the Play or Record Point in the Track Editor](#ui-animation-track-editor-play-record)
 + [Previewing in the Track Editor](#ui-animation-track-editor-preview)
 
-## Working with Keys in the Track Editor {#ui-animation-track-editor-keys}
+## Working with Keys in the Track Editor 
 
 When you create an animation, key values are automatically recorded\. Using the **Track Editor**, you can move, delete, copy, and paste keys\. Keys are represented by a green circle on the timeline of each track\.
 
@@ -72,14 +72,14 @@ You can also use the Track Editor toolbar to select, move, and snap keys\. When 
 | Frame Snapping | Snaps to frames\. |
 | Tick Snapping | Snaps to second ticks\. |
 
-## Moving the Play or Record Point in the Track Editor {#ui-animation-track-editor-play-record}
+## Moving the Play or Record Point in the Track Editor 
 
 The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline\. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](/docs/user-guide/user-interface/animation/_index.md) change to the values specified by the animation tracks\.
 
 **To move the play or record point in the Track Editor**
 + Click or drag the vertical magenta slider in the timeline\.
 
-## Previewing in the Track Editor {#ui-animation-track-editor-preview}
+## Previewing in the Track Editor 
 
 The **Track Editor** features a timeline along its top edge\. To preview your entire animation, simply click the **Play** button to play your animation at its normal speed\. You can also change the speed of preview by clicking the arrow beside the play button and selecting 2, 1, ½, ¼, or ⅛\. You can also limit your animation preview, as it plays, to a specific time frame\.
 

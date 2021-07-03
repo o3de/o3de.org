@@ -11,7 +11,7 @@ See the following controller nodes in the **Animation Editor**\.
 + [Get Transform](#animation-editor-get-transform-node)
 + [Set Transform](#animation-editor-set-transform-node)
 
-## Get Transform {#animation-editor-get-transform-node}
+## Get Transform 
 
 The **Get Transform** node gets the transform data from a joint that you specify\. The transform includes the translation \(position\), rotation, and scale\. You can use this node to return the transform for your animations\.
 
@@ -46,7 +46,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 ****
 
 
-## Set Transform {#animation-editor-set-transform-node}
+## Set Transform 
 
 The **Set Transform** node sets the transform from a selected joint, including translation \(position\), rotation, and scale\.
 

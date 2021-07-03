@@ -11,7 +11,7 @@ title: 'Animation Editor User Interface'
 + [Motion Sets Interface](/docs/user-guide/visualization/animation/animation-editor/motion-set-user-interface.md)
 + [Motions Interface](/docs/user-guide/visualization/animation/animation-editor/motions-user-interface.md)
 
-## Opening Animation Editor {#opening-animation-editor-}
+## Opening Animation Editor 
 
 You can open the **Animation Editor** from O3DE Editor\.
 

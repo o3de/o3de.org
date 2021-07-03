@@ -53,7 +53,7 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/nav-seed
 + [Navigation Physics Integration](#component-nav-area-physics)
 + [NavigationAreaRequestBus EBus Interface](#component-nav-area-ebus)
 
-## Navigation Area Component Properties {#component-nav-area-properties}
+## Navigation Area Component Properties 
 
 The **Navigation Area** component has the following properties: {#component-nav-area-properties-agent-types}
 
@@ -65,7 +65,7 @@ To define an agent type on your AI, see the [Navigation](/docs/user-guide/compon
 **Exclusion**
 When selected, creates a subtractive navigation area\. This creates a cutout within an existing navigation mesh\. For more information, see [Creating Navigation Mesh Exclusion Areas](#component-nav-area-exclusion)\.
 
-## Navigating Around Static Objects {#component-nav-area-static-entities}
+## Navigating Around Static Objects 
 
 When O3DE creates the navigation mesh, it can automatically exclude areas that should not be traversable, such as a large boulder or tree trunk\. To ensure that these areas are correctly detected by the navigation system, you must specify its **Transform** component as static\.
 
@@ -83,7 +83,7 @@ The following example shows the same navigation mesh, but with the **Static** pr
 
 ![\[Navigation mesh creates an exclusion area around the boulder, because Static is selected on the boulder's Transform component\]](/images/user-guide/component/component-nav-area-5.png)
 
-## Creating Navigation Mesh Exclusion Areas {#component-nav-area-exclusion}
+## Creating Navigation Mesh Exclusion Areas 
 
 You can use the **Navigation Area** component to manually create areas to exclude from the navigation mesh\. This means that the AI agents cannot traverse these areas\. To do this, you create a navigation area and select the **Exclusion** property, as shown in the following image\.
 
@@ -105,20 +105,20 @@ The following example shows a navigation mesh \(1\) and the same navigation mesh
 
 1. Shape the polygon to the preferred shape for the exclusion area\.
 
-## Navigation Physics Integration {#component-nav-area-physics}
+## Navigation Physics Integration 
 
 The navigation system builds the navigation mesh based on all the static physics colliders provided by the physics system, including terrain\.
 
 **Physics integration details**
 When `AZ::Physics` integration mode is enabled, the navigation mesh voxelizer issues a `WorldRequestBus::Overlap` static query to gather colliders within a bounding box\. Shape geometry is returned from the new `AZ::Shape::GetGeometry()` method\. PhysX colliders for terrain, shapes, and meshes will provide triangle data in an operation that acquires a PhysX scene read lock while retrieving geometry data\.
 
-## NavigationAreaRequestBus EBus Interface {#component-nav-area-ebus}
+## NavigationAreaRequestBus EBus Interface 
 
 Use the following request function with the `NavigationAreaRequestBus` EBus interface to communicate with other components of your game\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)
 
-### RefreshArea {#component-nav-area-ebus-refresharea}
+### RefreshArea 
 
 You can use the [PolygonPrismShapeComponentRequestBus](/docs/user-guide/components/reference/shape/polygon-prism-shape/#polygonprismshapecomponentrequestbus) to modify the polygon prism area by adding, removing, and updating its vertex positions\. Use `RefreshArea` to update the navigation area after making changes to the area\.
 

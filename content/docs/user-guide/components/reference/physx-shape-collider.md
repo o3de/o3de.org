@@ -35,7 +35,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
   - [Complex polygon prism shapes {#complex-polygon-prism-shapes}](#complex-polygon-prism-shapes)
   - [Colliders as triggers {#colliders-as-triggers}](#colliders-as-triggers)
 
-## PhysX Shape Collider properties {#component-physx-shape-collider-properties}
+## PhysX Shape Collider properties 
 
 ![\[PhysX Shape Collider component interface.\]](/images/user-guide/component/physx/physx/ui-physx-shape-collider-A.png)
 
@@ -73,7 +73,7 @@ PhysX bodies generate contacts when they are within the sum of their contact off
 ****Draw collider****
 Render this shape collider in the viewport\. Enabled by default\.
 
-## Complex polygon prism shapes {#complex-polygon-prism-shapes}
+## Complex polygon prism shapes 
 
 The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) is automatically subdivided into convex portions, which means that polygon prisms can be used with dynamic rigid bodies or as triggers in PhysX\. The subdivision is automatically updated if the vertices of the polygon prism are modified\.
 
@@ -83,7 +83,7 @@ If the vertices are modified so that the polygon prism is no longer a simple pol
 
 ![\[A complex polygon prism console error.\]](/images/user-guide/component/physx/physx/ui-physx-shape-collider-C.png)
 
-## Colliders as triggers {#colliders-as-triggers}
+## Colliders as triggers 
 
 Triggers allow colliders to perform efficient overlap tests\. Colliders marked as triggers won't have forces applied when they intersect with another collider\. This is useful for detecting when something enters a certain area or when two objects overlap\. Use Lua or Script Canvas to detect overlap\.
 

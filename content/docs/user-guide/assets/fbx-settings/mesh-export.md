@@ -12,7 +12,7 @@ title: FBX Settings mesh export
 + [Mesh export video tutorial](#fbx-export-mesh-tutorial)
 + [Mesh export tips](#fbx-export-meshes-tips)
 
-## Export a mesh {#fbx-exporting-meshes}
+## Export a mesh 
 
 1. Copy your `.fbx` file to a sub directory in your project.
 
@@ -36,9 +36,9 @@ title: FBX Settings mesh export
 **Note**
 When you close **FBX Settings** after making changes, you might see a pop\-up window warning of unsaved changes\. This is a known issue and can be disregarded\.
 
-## Mesh export video tutorial {#fbx-export-mesh-tutorial}
+## Mesh export video tutorial 
 
-## Mesh export tips {#fbx-export-meshes-tips}
+## Mesh export tips 
 + Ensure that each object that needs to perform runtime collision has a PhysX mesh\. Low\-resolution PhysX meshes work better than high\-resolution meshes\. Primitives such as a cube, sphere, or capsule are best for optimal physics performance\.
 + The maximum number of vertices for any static geometry is 65,536\. You can export a scene where the total number of vertices exceeds 65,536, but each static geometry piece can't exceed 65,536\.
 

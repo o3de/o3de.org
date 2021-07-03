@@ -27,14 +27,14 @@ The example image below is a simple demonstration of the three joint types\. In 
   + [Stiffness and Damping modes](#joint-soft-limit-properties)
 + [Notes on stability](#joint-stability)
 
-## PhysX joint types {#physx-joint-types}
+## PhysX joint types 
 
 See the linked component reference below for information on the three PhysX joint types:
 + [ PhysX Ball Joint component reference ](/docs/user-guide/components/physx-ball-joint.md) \- The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes\.
 + [ PhysX Fixed Joint component reference ](/docs/user-guide/components/physx-fixed-joint.md) \- The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis\.
 + [ PhysX Hinge Joint component reference ](/docs/user-guide/components/physx-hinge-joint.md) \- The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis\.
 
-## PhysX joint setup {#physx-joint-setup}
+## PhysX joint setup 
 
 The setup for each joint type is the same\.
 
@@ -69,11 +69,11 @@ The setup for each joint type is the same\.
 
    1. In **Perspective**, click on the leader entity to select it and assign it to the **Lead Entity** property\.
 
-## PhysX Joint configuration {#physx-joint-config}
+## PhysX Joint configuration 
 
 Joint components have an **Edit** button that enables component edit mode\. In component edit mode, you can edit the properties of the joint in **Perspective**\. You can use one of several edit contexts in component edit mode\. Press the **Tab** key to cycle through the edit mode contexts\. The current context is displayed at the bottom of the **Perspective** pane\.
 
-### Position mode {#joint-position}
+### Position mode 
 
 **Applies to:** All Joints
 
@@ -81,7 +81,7 @@ Joint components have an **Edit** button that enables component edit mode\. In c
 
 Position mode displays a translate gizmo that you can click and drag to adjust the **Local Position** of the joint relative to the entity transform\.
 
-### Rotation mode {#joint-rotation}
+### Rotation mode 
 
 **Applies to:** All Joints
 
@@ -89,7 +89,7 @@ Position mode displays a translate gizmo that you can click and drag to adjust t
 
 Rotation mode displays a rotation gizmo that you can click and drag on any axis to adjust the **Local Rotation** of the joint relative to the entity transform\.
 
-### Snap position mode {#joint-snap-position}
+### Snap position mode 
 
 **Applies to:** Ball Joint and Hinge Joint
 
@@ -97,7 +97,7 @@ Rotation mode displays a rotation gizmo that you can click and drag on any axis 
 
 Snap position mode displays a highlight bounding box and target when you hover over an entity\. Click the entity to snap the joint **Local Position** to the highlighted entity's position\. If **Select Lead on Snap** is enabled in the joint properties, the entity will be assigned to the joint's **Lead Entity** property\. Any entity can be selected except the follower entity\.
 
-### Snap rotation mode {#joint-snap-rotation}
+### Snap rotation mode 
 
 **Applies to:** Ball Joint
 
@@ -105,7 +105,7 @@ Snap position mode displays a highlight bounding box and target when you hover o
 
 Snap rotation mode displays a highlight bounding box and target when you hover over an entity\. Click the entity to snap the joint **Local Rotation** to the highlighted entity's rotation\. Any entity can be selected except the leader entity\.
 
-### Maximum Force and Maximum Torque modes {#joint-breakable-properties}
+### Maximum Force and Maximum Torque modes 
 
 **Applies to:** All Joints
 
@@ -113,7 +113,7 @@ Snap rotation mode displays a highlight bounding box and target when you hover o
 
 Maximum force and maximum torque modes display a gray box that you can click and drag to adjust the **Maximum Force** and **Maximum Torque** properties\. The maximum force and maximum torque modes and properties are available only when the **Breakable** property is enabled for the joint\.
 
-### Swing limits mode {#joint-swing-limit}
+### Swing limits mode 
 
 **Applies to:** Ball Joint
 
@@ -121,7 +121,7 @@ Maximum force and maximum torque modes display a gray box that you can click and
 
 Swing limits mode displays a ring gizmo at the local root of the joint that you can use to rotate the swing limits on the joint's x\-axis, and a scale gizmo that you can use to scale the swing limits uniformly or non\-uniformly on the joint's y\- and z\-axes\. Swing limits mode is available only when the **Limits** property is enabled for the ball joint component\.
 
-### Twist limits mode {#joint-twist-limit}
+### Twist limits mode 
 
 **Applies to:** Hinge Joint
 
@@ -129,7 +129,7 @@ Swing limits mode displays a ring gizmo at the local root of the joint that you 
 
 Twist limits mode displays two ring gizmos that you can click and drag to adjust the **Positive angular limit** and **Negative angular limit** properties\. The red ring adjusts the positive limit and the green ring adjusts the negative limit\. Twist limits mode is available only when the **Limits** property is enabled for the hinge joint component\.
 
-### Stiffness and Damping modes {#joint-soft-limit-properties}
+### Stiffness and Damping modes 
 
 **Applies to:** Ball Joint and Hinge Joint
 
@@ -137,6 +137,6 @@ Twist limits mode displays two ring gizmos that you can click and drag to adjust
 
 Stiffness and damping modes display a gray box that you can click and drag to adjust the **Stiffness** and **Damping** properties\. The stiffness and damping modes and properties are available only when the **Soft limit** property is enabled for the joint\.
 
-## Notes on stability {#joint-stability}
+## Notes on stability 
 
 The iterative solver used by PhysX joints may not be able to maintain constraints in some configurations\. For example, the solver might fail to converge\. The result is unstable or unexpected motion during simulation\. The PhysX documentation describes configurations that could help avoid such occurrences\. Please see [Configuring Joints for Best Behavior](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/Joints.html) in NVIDIA's PhysX Joint documentation\.

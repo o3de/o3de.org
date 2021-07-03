@@ -33,7 +33,7 @@ Not all components can be animated in the Track View\. For example, you can add 
 
 For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md)\.
 
-## Naming and Identifying Component Entities {#cinematics-track-view-component-entity-name-components}
+## Naming and Identifying Component Entities 
 
 O3DE uses entity IDs to identify component entities, which means that you can name your component entities as you want\. This includes reusing the same name for multiple entities\. In the Track View, if component entity nodes share the same name, a number is appended to the name\. This doesn't change the name of the component entity in the level, but it might be difficult to determine which entity to animate\.
 
@@ -43,14 +43,14 @@ O3DE uses entity IDs to identify component entities, which means that you can na
 
 If you have component entities with the same name \(for example, if they're multiple instances of a slice\), you can determine which entity that you're editing\. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md)\.
 
-## Adding or Removing Components from a Component Entity {#cinematics-track-view-component-entity-add-remove-components}
+## Adding or Removing Components from a Component Entity 
 
 When you add a component to a component entity in O3DE Editor, the component is automatically added to any component entity nodes in the Track View\. When you remove a component, the component and any animation data are also removed from the Track View\.
 
 **Important**
 Be careful when removing components from component entities because it might affect your existing sequence\. For example, if you remove a **Simple Motion** component from an entity that is part of a sequence, the animation no longer references the specified animation\.
 
-## Animating Components on a Component Entity {#cinematics-track-view-animating-components-on-component-entities}
+## Animating Components on a Component Entity 
 
 Component nodes that can be animated are nested as children under the associated component entity node\. You can add animation tracks to any of these component nodes\.
 

@@ -15,7 +15,7 @@ The **Blast Family Mesh Data** component is provided by the [NVIDIA Blast gem](/
 
 For information on using the **Blast Family Mesh Data** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)\.
 
-## Blast Family Mesh Data component properties {#component-blast-family-mesh-data-properties}
+## Blast Family Mesh Data component properties 
 
 ![\[Properties of the Blast Family Mesh Data component\]](/images/user-guide/physx/blast/ui-blast-family-mesh-data-component.png)
 

@@ -17,7 +17,7 @@ All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\)
 + [Origin modifier](#w31aac15b9c11c11c21)
 + [Touch Bending modifier](#w31aac15b9c11c11c23)
 
-## Meshes tab properties {#fbx-settings-meshes-tab-properties}
+## Meshes tab properties 
 
 ![\[The FBX Settings Meshes tab.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-tab.png)
 
@@ -41,7 +41,7 @@ Modifiers add specialized options for processing assets\. Choose the **Add Modif
 + **Touch Bending**
 Some modifiers are not available unless the gem that provides the modifier is enabled in your project\.
 
-## Cloth modifier {#w31aac15b9c11c11c11}
+## Cloth modifier 
 
 ![\[The FBX Settings Meshes tab Cloth modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-cloth.png)
 
@@ -80,13 +80,13 @@ Select the channel in the vertex color stream that contains backstop offset data
 ****Backstop Radius Channel****
 Select the channel in the vertex color stream that contains backstop radius data\.
 
-## Comment modifier {#w31aac15b9c11c11c13}
+## Comment modifier 
 
 ![\[The FBX Settings Meshes tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed\. Multiple comment modifiers can be added to a mesh group\.
 
-## Level of Detail modifier {#w31aac15b9c11c11c15}
+## Level of Detail modifier 
 
 ![\[The FBX Settings Meshes tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-level-of-detail.png)
 
@@ -105,7 +105,7 @@ You can specify up to five LoDs which are numbered \[`0`\] to \[`4`\], with \[`0
 **Note**
 When you author the mesh in your 3D application, you can add `_lod1`, `_lod2`, `_lod3`, `_lod4`, `_lod5` as suffixes to your mesh names to automatically add a **Level of Detail** modifier and assign the meshes to appropriate LoDs\. `_lod1` is mapped to \[`0`\], `_lod2` is mapped to \[`1`\], and so on\.
 
-## Material modifier {#w31aac15b9c11c11c17}
+## Material modifier 
 
 ![\[The FBX Settings Meshes tab Material modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-material.png)
 
@@ -121,7 +121,7 @@ When enabled, updates the texture map file names in the `.mtl` file to match the
 ****Remove unused materials****
 When enabled, removes materials that are present in the `.mtl` file that are not defined in the `.fbx` file\.
 
-## Mesh \(Advanced\) modifier {#w31aac15b9c11c11c19}
+## Mesh \(Advanced\) modifier 
 
 ![\[The FBX Settings Meshes tab Mesh (Advanced) modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-mesh.png)
 
@@ -142,7 +142,7 @@ Normals are vertex attributes that define the surface direction of your meshes\.
 If the mesh for this **Mesh group** contains a vertex color stream, it can be selected from this list to be processed\.
 Vertex color streams contain per vertex color data that can be referenced by materials\. Vertex color streams are also often used for tagging meshes with arbitrary data such as the inverse mass value used in cloth simulation\. Because of this, a mesh might have multiple vertex color streams\. Be sure to select a vertex color stream intended to be referenced by materials if multiple streams exist\.
 
-## Origin modifier {#w31aac15b9c11c11c21}
+## Origin modifier 
 
 ![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 
@@ -160,7 +160,7 @@ Sets the orientation offset of the processed mesh in degrees\.
 ****Scale****
 Sets the scale offset of the processed mesh\.
 
-## Touch Bending modifier {#w31aac15b9c11c11c23}
+## Touch Bending modifier 
 
 ![\[The FBX Settings Meshes tab Touch Bending modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-touch-bending.png)
 

@@ -40,7 +40,7 @@ define ScriptCanvas_Node(ClassName, ...) AZ_JOIN(AZ_GENERATED_, ClassName)
 
 When the project is compiled, the preprocessor finds `AZ_GENERATED_Countdown` in the `Countdown.generated.h` file and replaces that macro with the generated code\.
 
-## Generating the Node Topology {#script-canvas-custom-nodes-topology}
+## Generating the Node Topology 
 
 After you have declared the node, the next step is to generate the node's topology\. The topology can include a variety of tags, as the following table shows\.
 

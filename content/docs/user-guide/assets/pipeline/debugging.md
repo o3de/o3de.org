@@ -15,7 +15,7 @@ Use the following options to help debug Asset Processor issues\.
 + [Debug Asset Builders from Asset Processor](#debug-asset-builders-running-from-asset-processor)
 + [Clearing the Cache](#clearing-asset-processor-cache)
 
-## Viewing Asset Processor Log Files {#asset-processor-log-files}
+## Viewing Asset Processor Log Files 
 
 You can view logs for internal operations of Asset Processor\. If Asset Processor isn't processing or working as expected, use the information in the logs to debug the issue\. This doesn't include logs for the processing of individual assets\.
 
@@ -47,7 +47,7 @@ You can view logs for internal operations of Asset Processor\. If Asset Processo
 
 1. In a text editor, open the `example.log` file\.
 
-## Restarting Asset Processor {#restart-asset-processor}
+## Restarting Asset Processor 
 
 You can restart O3DE Editor and Asset Processor\. Verify that only one instance of Asset Processor runs at the same time\.
 
@@ -59,7 +59,7 @@ You can restart O3DE Editor and Asset Processor\. Verify that only one instance 
 
 1. Restart the project or branch that you are working on\. Asset Processor automatically starts\.
 
-## Using Asset Builder {#using-asset-builder}
+## Using Asset Builder 
 
 You can also debug Asset Processor using Asset Builder\. This is a standalone AzToolsFramework application that lets you run BuilderSDK modules in isolation\. You can run AssetBuilder in debug mode to develop new features for a builder\. In debug mode, Asset Builder creates a test job or processes jobs for specified files\.
 
@@ -101,7 +101,7 @@ To process without creating a job for a specified file, run the following comman
 AssetBuilder.exe -debug_process "Objects\Tutorials\Fbx\shapes.fbx"
 ```
 
-## Using the Microsoft Child Process Debugging Power Tool {#debug-with-visual-studio-child-process-add-on}
+## Using the Microsoft Child Process Debugging Power Tool 
 
 Use this tool to automatically attach the debugger to spawned child processes\.
 
@@ -113,7 +113,7 @@ Use this tool to automatically attach the debugger to spawned child processes\.
 
 1. In Visual Studio, start `AssetProcessor.exe`\. Breakpoints in Asset Builders work as normal\.
 
-## Debug Asset Builders from Asset Processor {#debug-asset-builders-running-from-asset-processor}
+## Debug Asset Builders from Asset Processor 
 
 Use the following procedure to debug in the following scenarios:
 + Debug intermittent failures that are difficult to reproduce in a single run of Asset Builder using the `-debug` option
@@ -132,7 +132,7 @@ Use the following procedure to debug in the following scenarios:
 **Tip**
 You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio\.
 
-## Clearing the Cache {#clearing-asset-processor-cache}
+## Clearing the Cache 
 
 If you're a game artist and you're having issues running Asset Processor, this might be the result of a corrupt cache\. In this case, you can delete your `Cache` directory\. When you delete your cache, you can restart Asset Processor to rebuild all of your assets\.
 

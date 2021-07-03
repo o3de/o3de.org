@@ -17,7 +17,7 @@ When you write an `AssetHandler`\-derived class to load assets in O3DE, runtime 
 
 The few cases where you need to work directly with files are covered by a small number of classes in the `AZ::IO` namespace such as `FileIOBase` and `FileIOStream.`
 
-## The FileIOBase Virtual Class {#file-access-direct-fileiobase-virtual-class}
+## The FileIOBase Virtual Class 
 
 The pure\-virtual base class `FileIOBase` \(located in `\dev\Code\Framework\AzCore\AzCore\IO AzCore\IO\FileIO.h`\) defines the API for accessing files\. It is a basic blocking low\-level file API, as the following code shows:
 
@@ -41,7 +41,7 @@ class FileIOBase
 
 The `FileIOBase` class contains operations to find files, create or delete directories, and inspect attributes\. In addition, the class contains a directory aliasing system that is covered later in this document\.
 
-### Getting an Instance of the I/O Interface {#file-access-direct-getting-an-instance-of-the-io-interface}
+### Getting an Instance of the I/O Interface 
 
 For almost all file operations, you call the `GetInstance` function to retrieve an instance of the file I/O interface:
 
@@ -49,7 +49,7 @@ For almost all file operations, you call the `GetInstance` function to retrieve 
 AZ::IO::FileIOBase::GetInstance()
 ```
 
-### Notes {#file-access-direct-fileiobase-notes}
+### Notes 
 + All file operations in the `FileIOBase` class are blocking\.
 + `FileIOBase` file operations behave similarly to the C language API `fopen`, `fread`, and `fclose` operations, but are 64\-bit aware and work with very large files\.
 + Because the `FileIOBase` instance is created and initialized when the engine initializes, it is generally always available\. It can inspect `.pak` files and arbitrary files on disk\. For more information, see [The FileIO Stack](#file-access-direct-fileio-stack) later in this document\.
@@ -59,14 +59,14 @@ Because `.pak` files are initialized only after the application boots, attemptin
 
 For more information, see the code comments in the `FileIO.h` file\.
 
-## The Aliasing System {#file-access-direct-aliasing-system}
+## The Aliasing System 
 
 In addition to a set of file functions mentioned above, the `FileIOBase` class provides *directory aliases\.* Directory aliases are prefixes that you add to a file name\. An alias indicates a virtual directory for a `.pak` file or arbitrary location on disk\.
 
 **Note**
 We recommend that you always use the aliasing system to refer to files that are in the cache\. Never use absolute paths\. Files in the cache might be inside `.pak` files or in unexpected locations on mobile devices\. In these cases, the use of absolute path names can fail\.
 
-### Getting the Path of an Alias {#file-access-direct-getting-the-path-of-an-alias}
+### Getting the Path of an Alias 
 
 To retrieve the path associated with an alias, use the `GetAlias` function\.
 
@@ -74,7 +74,7 @@ To retrieve the path associated with an alias, use the `GetAlias` function\.
 FileIOBase::GetAlias()
 ```
 
-### List of Aliases {#file-access-direct-list-of-aliases}
+### List of Aliases 
 
 This section describes the use of directory aliases\.
 
@@ -104,7 +104,7 @@ Specifies a writable directory for storing temporary data\. The user can delete 
 **`@log@`**
 Specifies a writable directory for storing diagnostic logs\.
 
-### Code Examples {#file-access-direct-code-examples}
+### Code Examples 
 
 A\. The following code example opens a file in the assets directory\.
 
@@ -140,7 +140,7 @@ if (FileIOBase::GetInstance()->Open("@log@/gamelog.txt", AOpenMode::ModeAppend|M
 
 The `FileIOStream` class in the `AZ::IO` namespace automatically closes a file when it goes out of scope and presents it as a `GenericStream` interface\. This provides compatibility for systems such as the streamer system and serialization system that expect generic streams\.
 
-### Tools\-Only Aliases {#file-access-direct-tools-only-aliases}
+### Tools\-Only Aliases 
 
 The following aliases are applicable only for editor tools\.
 
@@ -153,7 +153,7 @@ Specifies the location of your game project's assets directory in the source tre
 + Because existing files might be in a gem, do not save them in `@devassets@`\. Instead, when your editor opens a file, have your editor remember the file's location\. Then have the editor save the file to the file's original location\.
 + Because not all source files are located in `@devassets@` \(many are located in gems\), do not attempt to find all source files by searching its location\.
 
-## The FileIO Stack {#file-access-direct-fileio-stack}
+## The FileIO Stack 
 
 To service the needs of the game client and tools, more than one `FileIO` instance is created\. These instances form a stack through which file requests flow, as the following diagram illustrates\.
 
@@ -170,7 +170,7 @@ Because the VFS feature is at a low level, file access operations are transmitte
 
 To send requests for files through other systems, you can implement your own version of `FileIOBase` \(or one of the derived classes such as `RemoteFileIO` or `LocalFileIO`\)\. If you replace the instance returned by either `GetInstance` or `GetDirectinstance` with your own instance, the `FileIO` system uses your layer instead\. You can form a stack of additional filters by replacing the instance with your own\. Then make your own instance call down into the previously installed instance\.
 
-## Asynchronous Streaming {#file-access-direct-asynchronous-streaming}
+## Asynchronous Streaming 
 
 If you want to use asynchronous background streaming, consider using the `AZ::IO::Streamer` class instead of `FileIOBase`\. The `Streamer` class uses `FileIOBase` internally, but it uses asynchronous semantics\. To use the `Streamer` class, you pass data and a deadline to it\. The `Streamer` class puts the data into a buffer and does its best to fulfill the request before the specified deadline\.
 

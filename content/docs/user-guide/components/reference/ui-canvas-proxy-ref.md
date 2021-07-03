@@ -16,7 +16,7 @@ The following picture shows three entities that share the same loaded canvas\. T
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/ui_canvas/component-ui-canvas-proxy-ref-screenshot.png)
 
-## UI Canvas Proxy Ref Component Properties {#component-ui-canvas-proxy-ref-properties}
+## UI Canvas Proxy Ref Component Properties 
 
 The UI Canvas Proxy Ref component has the following properties:
 

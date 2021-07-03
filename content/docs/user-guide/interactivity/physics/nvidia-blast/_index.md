@@ -19,7 +19,7 @@ To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets\. The apprentice license is not sufficient\. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/)\.
 The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require Houdini 18\.0\.
 
-## NVIDIA Blast features {#nvidia-blast-features}
+## NVIDIA Blast features 
 
 These are the features that NVIDIA Blast provides:
 + Fracture geometry and author blast assets in SideFX Houdini with the provided Houdini plug\-ins and Houdini Digital Assets \(HDAs\)\.
@@ -30,7 +30,7 @@ These are the features that NVIDIA Blast provides:
 + Script destruction with the provided **Script Canvas** nodes for NVIDIA Blast\.
 + Debug NVIDIA Blast simulations with real\-time debug visualizations\.
 
-## Using NVIDIA Blast {#nvidia-blast-topics}
+## Using NVIDIA Blast 
 
 See the following topics for detailed information about NVIDIA Blast\.
 
@@ -54,6 +54,6 @@ See the following topics for detailed information about NVIDIA Blast\.
 
 [Script Canvas nodes for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/script-canvas.md) \- Script destruction simulation in Script Canvas\.
 
-## NVIDIA Blast references {#nvidia-blast-references}
+## NVIDIA Blast references 
 
  [NVIDIA Blast documentation](https://developer.nvidia.com/blast) at the NVIDIA GAMEWORKS developer portal\.

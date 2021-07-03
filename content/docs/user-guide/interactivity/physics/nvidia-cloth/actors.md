@@ -30,7 +30,7 @@ Sample **Actor** component cloth assets are located in the **NVIDIA Cloth** gem 
 
 For imformation on exporting actor assets, see [FBX Settings actor export](/docs/user-guide/assets/fbx-settings/actor-export.md)
 
-## Add Cloth to Actor components {#cloth-actor-setup}
+## Add Cloth to Actor components 
 
 Create cloth by adding the **Cloth** component to an entity that has an **Actor** component, and then setting the properties of the **Cloth** component\.
 
@@ -71,11 +71,11 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
    1. You can use the **Motion constraints** properties **Max Distance** and **Scale** to blend between cloth simulation and keyframe animation\.
 
-## Add cloth colliders to an actor {#add-char-cloth-colliders}
+## Add cloth colliders to an actor 
 
  You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation\. Cloth colliders are added to actors in **Animation Editor**\. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders.md)\.
 
-## View the Cloth Simulation {#view-cloth-simulation}
+## View the Cloth Simulation 
 
 In O3DE Editor, press Ctrl\+G or press the **Play** button to run your project\.
 

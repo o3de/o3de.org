@@ -98,7 +98,7 @@ Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, 
 **Vs\. AZ::Event**
 `AZ::Event` is a publish/subscribe \(pub/sub\) event handler that can be used when you want to subscribe to notifications from another component on the same thread\. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console\.
 
-## Converting from an EBus implementation {#az-interface-convert-ebus}
+## Converting from an EBus implementation 
 
 Here is an example of converting a global request bus to `AZ::Interface<T>`\.
 
@@ -220,7 +220,7 @@ public:
 AZ::Interface<IRequests>::Get()->Request(1);
 ```
 
-## Unit testing {#az-interface-unit-tests}
+## Unit testing 
 
 The `AZ::Interface` system includes a number of unit tests to validate correct behavior\.
 

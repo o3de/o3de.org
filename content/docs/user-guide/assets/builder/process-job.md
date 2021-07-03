@@ -19,7 +19,7 @@ weight: 500
 + [ProductPathDependency Type](#python-asset-builder-product-path-dependency-type)
 + [Example: Process](#python-asset-builder-process-job-example)
 
-## ProcessJobRequest {#python-asset-builder-process-job-request}
+## ProcessJobRequest 
 
 This is the input into the `OnProcessJobRequest` function to perform the steps that are needed to process a source asset file\. This contains the input data that's needed to process the job for the source asset file\.
 
@@ -45,7 +45,7 @@ class azlmbr.asset.builder.ProcessJobRequest
 - jobId (number) Job id for this job, this is also the address for the JobCancelListener
 ```
 
-## ProcessJobResponse {#python-asset-builder-process-job-response}
+## ProcessJobResponse 
 
 This is the class that the `OnProcessJobRequest` callback returns to describe the job's results\. The `ProcessJobResponse` contains job data that indicates the outputs from the job in the `outputProducts` field, the result code, and schedule sources to be reprocessed\.
 
@@ -65,7 +65,7 @@ class azlmbr.asset.builder.ProcessJobResponse
 - sourcesToReprocess (list of str) List of absolute source paths to trigger rebuilds
 ```
 
-## ProcessJobResponse ResultCode {#python-asset-builder-process-job-response-result}
+## ProcessJobResponse ResultCode 
 
 The process job response result code has both a 'Success' and a 'Failure', but it also has some specific failure cases, such as detecting a crash or network issues\.
 
@@ -88,7 +88,7 @@ azlmbr.asset.builder.ProcessJobResponse_Cancelled
 azlmbr.asset.builder.ProcessJobResponse_NetworkIssue
 ```
 
-## JobProduct {#python-asset-builder-job-product}
+## JobProduct 
 
 A successful processing of a source asset returns one or more `JobProduct` entries in the `ProcessJobResponse`'s `outputProducts` field\.
 
@@ -120,7 +120,7 @@ class azlmbr.asset.builder.JobProduct
 + JobProduct(productFileName:str, productAssetType:azlmbr.math.Uuid, productSubID:number) A constructor to set a job product
 ```
 
-## ProductDependency {#python-asset-builder-product-dependency}
+## ProductDependency 
 
 The product dependency information that the builder sends to **Asset Processor** to indicate that a product asset depends on another product asset during load\.
 
@@ -131,7 +131,7 @@ class azlmbr.asset.builder.ProductDependency
 - dependencyId (azlmbr.math.Uuid) Asset ID of this product asset dependency
 ```
 
-## ProductPathDependency {#python-asset-builder-product-path-dependency}
+## ProductPathDependency 
 
 The `ProductPathDpendency` represents the product's dependency information that the builder detected on another product file \(relative to the source asset path\)\. If the source asset ID can be determined, we recommend that you use the `productDependencies` instead to indicate the product's dependency information in terms of asset IDs\. It's preferable to depend on product files whenever possible, to avoid introducing unintended dependencies\.
 
@@ -145,7 +145,7 @@ class azlmbr.asset.builder.ProductPathDependency
 - dependencyType (azlmbr.asset.builder.ProductPathDependency Type) Indicates if the dependency path points to a source file or a product file
 ```
 
-## ProductPathDependency Type {#python-asset-builder-product-path-dependency-type}
+## ProductPathDependency Type 
 
 `ProductPathDependency Type` indicates how to use the dependency path in the `ProductPathDependency`\. A dependency on a source file is converted into dependencies on all product files produced from the source\. It's preferred to depend on product files whenever possible, to avoid introducing unintended dependencies\.
 
@@ -159,7 +159,7 @@ azlmbr.asset.builder.ProductPathDependency_ProductFile
 azlmbr.asset.builder.ProductPathDependency_SourceFile
 ```
 
-## Example: Process {#python-asset-builder-process-job-example}
+## Example: Process 
 
 This is a simple example of how the asset builder might process a job when Asset Processor detects a new or changed source asset file in the watch folders of the registered pattern\.
 

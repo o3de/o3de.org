@@ -9,7 +9,7 @@ Physical cloth simulations can create more immersive environments and characters
 
 For information on using NVIDIA Cloth, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/).
 
-## Functionality provided by the NVIDIA Cloth Gem {#nvidia-cloth-functionality}
+## Functionality provided by the NVIDIA Cloth Gem 
 
 The NVIDIA Cloth Gem provides the following:
 

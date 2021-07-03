@@ -16,7 +16,7 @@ When working with reference spaces, remember the following rules:
 
 The Viewport Interaction Model simplifies the mental mode for you and doesn't require you to keep track manually of the last space \(local or world\) that you were using\. You can specify a target and define that target as custom reference spaces\. This new reference space model covers any arbitrary transformation\.
 
-## Switching Between Local and World Space {#viewport-interaction-model-local-parent-world}
+## Switching Between Local and World Space 
 
 You can use the manipulator to switch between local and world space without losing focus of your entity selection in the viewport\.
 
@@ -39,7 +39,7 @@ Parent space is the transform that the parent entity has in the hierarchy\. If a
 ****
 
 
-## Using Custom Reference Spaces {#custom-reference-spaces}
+## Using Custom Reference Spaces 
 
 You can adjust the manipulator independent of the entity to create a custom reference space\. You can also pick another target entity as a reference space\. When you specify a reference space, the entities that you select move in relation to that space\.
 

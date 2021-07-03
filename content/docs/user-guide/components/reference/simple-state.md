@@ -10,7 +10,7 @@ The **Simple State** component provides a simple state machine\. Each state is r
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/component-simple-state.png)
 
-## Simple State Component Properties {#component-simple-state-properties}
+## Simple State Component Properties 
 
 The **Simple State** component has the following properties:
 
@@ -32,26 +32,26 @@ The name of this state\. Indicates the state to which to transition on the SetSt
 **Entities**
 List of the entities referenced by this state\.
 
-## EBus Request Bus Interface {#component-simple-state-ebusrequest}
+## EBus Request Bus Interface 
 
 Use the following request functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
-### SetState {#simple-state-ebus-setstate}
+### SetState 
 
 Sets the active state to the named state\.
 
 **Parameters**
 `stateName`
 
-## EBus Notification Bus Interface {#component-simple-state-ebusnotification}
+## EBus Notification Bus Interface 
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 
 For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
 
-### OnStateChanged {#simple-state-ebus-onstatechanged}
+### OnStateChanged 
 
 Notifies that the state has changed from state `oldName` to state `newName`\.
 

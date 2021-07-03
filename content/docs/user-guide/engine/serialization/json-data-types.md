@@ -9,7 +9,7 @@ title: Data types in serialized JSON
 
  This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C\+\+ types\.
 
-## Primitives {#serialization-json-data-types-primitives}
+## Primitives 
 
  The primitive types used in serialization are *booleans*, *integers*, *floating point numbers*, and *strings*\. These C\+\+ types map naturally to the native JSON boolean, number, and string types\. The only string types supported for serialization are `AZstd::string` and `OSString`\.
 
@@ -25,13 +25,13 @@ Deserialization can be conducted from any primitive JSON type to these C\+\+ typ
 | Floating point types | True maps to 1, False to 0\. | Direct mapping\. | Tries to extract a 64\-bit floating point and convert it to the target type\. |
 | Strings \(AZstd::string and OSString only\) | True is converted to "True", and False to "False"\. | String representation of the number\. | Direct mapping\. |
 
-## Pointers {#serialization-json-data-types-pointers}
+## Pointers 
 
  Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type\. For pointers to C\+\+ objects, this means that the pointed\-to object must be registered with the serialization context being used\. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name\. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the O3DE runtime can be used\.
 
  When deserializing, the `$type` value is used as a hint to determine which object to reconstruct if necessary\. Otherwise, only the C\+\+ type of the member is inspected\. Deserialization proceeds memberwise, using the field mapping that was registered with the serialization context to map JSON object keys to C\+\+ members\.
 
-## Enums {#serialization-json-data-types-enums}
+## Enums 
 
  In order to serialize enums, they need to be [registered](/docs/userguide/programming/serialization/register-objects#serialization-register-objects-enums) with the same serialization context as the class being serialized\. How values from an enum are serialized and deserialized depend on the details of the enum registration\.
 + **Enum value matches the value of a registered field** - The value is serialized as a string containing the field name\.
@@ -84,17 +84,17 @@ ExampleEnum::Flag4 | 16 // Serializes as ["Flag4", 16]
 
  Deserialization behaves as expected based on these serialization outputs\. Strings are first attempted to be mapped to a field name, and then the enum is assigned the field's value\. If the string contains something other than a field name, a type conversion to an integer is attempted\. Arrays have each element evaluated to convert to the enum field or an integer value, and then the results of those evaluations are ORed to produce the final deserialized value\.
 
-## Vectors {#serialization-json-data-types-vectors}
+## Vectors 
 
 Serialization supports 2D, 3D, and 4D vectors\. An N\-dimensional vector is serialized as a JSON array of N floating point numbers, in the order of the X, Y, Z, and W coordinate\.
 
 For deserialization, vectors can be read from an array of any length, but will only read up to the number of elements in the target type\. If the array has fewer elements than the vector type, those vector components are assigned the default value of 0\. Array elements follow the rules of deserialization for the C\+\+ floating point type of the vector elements\. Vectors can also be deserialized from JSON objects where the object keys map to the vector component name in a case\-insensitive compare\. Other keys are ignored, and components with missing keys use the default value\.
 
-## Containers {#serialization-json-data-types-containers}
+## Containers 
 
  Serialization supports a number of containers from `AZStd`\. These include the *array*, *vector*, *list*, *set*, *map*, and *tuple* types\.
 
-### Array types {#serialization-json-data-types-containers-arrays}
+### Array types 
 
 The following types are serialized to JSON arrays:
 + `AZStd::array`
@@ -109,11 +109,11 @@ The following types are serialized to JSON arrays:
 
 Deserialization of a JSON array to a C\+\+ array, list, vector, set, pair, or tuple type is a direct element\-by\-element conversion\. The types of each array element are converted to the target container's value type according to the other JSON deserialization rules\. Missing elements map to the default for the container's value type, and additional elements are ignored\. Types other than JSON arrays will result in a conversion error when attempting to deserialize to one of these C\+\+ types\.
 
-### Map types {#serialization-json-data-types-containers-maps}
+### Map types 
 
 The serialization of map types \(`AZStd::map`, `AZStd::unordered_map`, `AZStd::unordered_multimap`\) depends on the map's key type\. Maps with a serializable string type \(`AZStd::string` or `OSString`\) as the key are serialized directly to JSON objects with equivalent key/value pairs\. Maps with any other key type are serialized to JSON arrays, where every element is a key/value pair\. For example, the map `AZStd::map<uint8_t,uint8_t> = {0:1, 2:3}` serializes to the JSON array `[{"Key": 0, "Value": 1}, {"Key": 2, "Value": 3}]`\.
 
-## Miscellaneous types {#serialization-json-data-types-misc}
+## Miscellaneous types 
 
 Other internal types supported by JSON serialization are *UUID* and *color*\.
 

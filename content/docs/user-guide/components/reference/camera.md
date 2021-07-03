@@ -8,7 +8,7 @@ title: Camera
 
 The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/gems/reference/camera/)\.
 
-## Camera Component Properties {#component-camera-properties}
+## Camera Component Properties 
 
 ![\[Camera component properties in the Entity Inspector.\]](/images/user-guide/component/component-camera-properties.png)
 
@@ -26,7 +26,7 @@ The **Camera** component has the following properties:
 | Frustum length |  Length of the frustum shape\. Default value: `1.0` percent  |
 |  **Frustum color**  |  Color of the frustum shape\. Default value: `255`, `255`, `0`  |
 
-## EBus Request Bus Interface {#component-camera-ebusrequest}
+## EBus Request Bus Interface 
 
 Use the following request functions with the event bus \(EBus\) interface, `CameraRequestBus`, to communicate with other components of your game\.
 
@@ -63,6 +63,6 @@ end
 return camerasample
 ```
 
-## Creating Camera Entity from View {#component-slice-camera-entity}
+## Creating Camera Entity from View 
 
 You can create a static camera view from a specific entity by right\-clicking an entity in the viewport and choosing **Create camera entity from view**\. This places a new entity with a camera component at the same point\. You can adjust the view of the camera by modifying its transform component\.

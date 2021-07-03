@@ -10,18 +10,18 @@ Overrun detection is an experimental feature. It helps you detect corrupted memo
 **Note**
 Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [GFlags with full page heap verification](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/gflags-and-pageheap)\. However, it can be used with the O3DE memory allocators and does not require recompiling\.
 
-## Prerequisites and Limitations {#memory-management-overrun-detection-prerequisites-and-limitations}
+## Prerequisites and Limitations 
 
 The following are the prerequisites and limitations for using the O3DE overrun detection feature:
 + You must build and run your project for Windows PC in a Debug or Profile build\.
 + Overrun detection is available only on platforms that use the Windows API\.
 + Only allocations that go through the [O3DE allocators](/docs/user-guide/engine/memory/allocators.md) benefit from overrun detection\. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the O3DE allocators\.
 
-## When to Enable Overrun Detection {#memory-management-overrun-detection-when-to-enable}
+## When to Enable Overrun Detection 
 
 The most common indicator of overwritten memory is a crash that occurs with no obvious explanation\. The crash frequently occurs in a low\-level system or structure, such as an `AZStd::` container, or within the memory allocator\. The memory overrun is not an out\-of\-memory error\.
 
-## Enabling Overrun Detection {#memory-management-overrun-detection-enabling}
+## Enabling Overrun Detection 
 
 Overrun detection is enabled by a setting in your project's `Game.xml` file\.
 
@@ -35,7 +35,7 @@ Overrun detection is enabled by a setting in your project's `Game.xml` file\.
    <Class name="bool" field="useOverrunDetection" value="true" type="{A0CA880C-AFE4-43CB-926C-59AC48496112}"/>
    ```
 
-## Using Overrun Detection {#memory-management-overrun-detection-using}
+## Using Overrun Detection 
 
 When overrun detection is enabled, debug your game as usual\. Keep the following points in mind:
 + Your game runs more slowly and uses significantly more memory with overrun detection enabled\.

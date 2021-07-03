@@ -6,7 +6,7 @@ title: Toolbar
 
 {{< preview-migrated >}}
 
-## Interaction Modes {#ui-editor-toolbar-interaction-modes}
+## Interaction Modes 
 
 The **UI Editor** toolbar features interaction modes\. The selected interaction mode determines how you can interact with the UI elements in your canvas\.Interaction modes
 
@@ -31,7 +31,7 @@ Select and resize UI elements\. Resizing modifies the UI element's offsets\.
 Select and move UI elements by their anchors\. If you select one element, the anchor widget appears in blue, and you can interact directly with that element\. If you select multiple elements, the anchor widget is disabled\.
 In **Anchor** mode, you can interact with UI elements in the same ways as in the **Move** mode\.
 
-## Alignment Tool {#ui-editor-toolbar-alignment-tool}
+## Alignment Tool 
 
 The alignment tool is a set of buttons on the **UI Editor**'s toolbar\.
 

@@ -11,7 +11,7 @@ weight: 100
 
 To use Python Asset Builder you must enable the [Python Asset Builder gem](/docs/user-guide/assets/builder/_index.md)\.
 
-## Python Asset Builder terms {#python-asset-builder-terms}
+## Python Asset Builder terms 
 
 The input and output files for a Python Asset Builder are both assets of some type\. This documentation uses the following terms to distinguish between the input and output of **Python Asset Builder**\.
 
@@ -21,7 +21,7 @@ An input asset file, such as an asset produced by a content creation tool, that 
 **Product asset file**
 An output asset file produced by Python Asset Builder that can be consumed by a game launcher or O3DE Editor\.
 
-## Writing a Python Asset Builder {#python-asset-builder-overview}
+## Writing a Python Asset Builder 
 
 There are four steps to create a Python Asset Builder:
 + [Create or modify a bootstrap script](/docs/user-guide/assets/builder/bootstrap.md) \- Add a new Python Asset Builder script to a bootstrap location\.

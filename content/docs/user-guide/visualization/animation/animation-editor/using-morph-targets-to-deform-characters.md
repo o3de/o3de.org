@@ -12,7 +12,7 @@ In the **Animation Editor**, you can use morph targets with one of the following
 + **Motion** node - Plays morph target animations similarly as skeletal animations\.
 + **Morph Target** node - Animates morph targets by changing the weight at runtime\.
 
-## Prerequisites {#animation-editor-morph-targets-prerequisites}
+## Prerequisites 
 
 To use morph targets in the **Animation Editor**, you must do the following:
 + Prepare your asset for `.fbx` export\. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/)\.
@@ -27,7 +27,7 @@ To use morph targets in the **Animation Editor**, you must do the following:
 + [Creating Motion Nodes with Morph Targets](#animation-editor-creating-motion-nodes-with-morph-targets)
 + [Creating Morph Target Nodes](#animation-editor-creating-morph-target-nodes)
 
-## Importing Morph Targets {#animation-editor-importing-morph-targets}
+## Importing Morph Targets 
 
 When you import an `.fbx` file into O3DE, all morph targets and morph target motions in that file are imported as part of the actor\. This allows you to open your actor file in the **Animation Editor** without additional steps\.
 
@@ -61,7 +61,7 @@ If you have morph target animations in your `.fbx` file, a modifier appears to i
 
 1. Click **Update** to save your changes\.
 
-## Opening Actor Files {#animation-editor-opening-actor-files}
+## Opening Actor Files 
 
 When you open your actor file in the **Animation Editor**, all morph targets and morph target motions are imported by default\. To change how morph targets are imported, see [Importing Morph Targets](#animation-editor-importing-morph-targets)\.
 
@@ -74,7 +74,7 @@ When you open your actor file in the **Animation Editor**, all morph targets and
 1. In the **Pick EMotion FX Actor** window, select an actor to import and then click **OK**\.
 ![\[Choose an actor to import in the Pick EMotion FX Actor window.\]](/images/user-guide/actor-animation/animation-editor-pick-emotionfx-actor-dialog-box.png)
 
-## Previewing Morph Targets on Actors {#animation-editor-previewing-morph-targets-on-actors}
+## Previewing Morph Targets on Actors 
 
 You can preview the morph targets on an actor\.
 
@@ -98,7 +98,7 @@ You can preview the morph targets on an actor\.
 
 1. When you're done previewing the morph targets, clear the **Select All** check box and close the **Morph Targets** window\.
 
-## Creating Motion Nodes with Morph Targets {#animation-editor-creating-motion-nodes-with-morph-targets}
+## Creating Motion Nodes with Morph Targets 
 
 Creating a motion node with morph targets is similar to other methods of motion node generation\.
 
@@ -123,7 +123,7 @@ Creating a motion node with morph targets is similar to other methods of motion 
 
 1. In the **Motion Selection** window, select the motion with the morph targets that you want to import and then click **OK**\.
 
-## Creating Morph Target Nodes {#animation-editor-creating-morph-target-nodes}
+## Creating Morph Target Nodes 
 
 As an alternative to creating a motion node with morph targets, you can use a **Morph Target** node to directly animate morph targets in the animation graph\.
 

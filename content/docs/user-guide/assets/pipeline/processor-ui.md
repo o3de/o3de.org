@@ -43,11 +43,11 @@ Displays debugging values set in the program for the selected line in the **Even
 I - Asset processing timer
  After asset processing completes, displays information about the time that it took to perform scans, analyze assets, and produce a build\.
 
-## Jobs {#jobs-tab}
+## Jobs 
 
  The **Jobs** tab displays information about the current state of asset processor jobs\. This includes information on the state of jobs, events that occurred during processing, and detailed logging information from the asset processor\.
 
-### Asset Status {#asset-status-table}
+### Asset Status 
 
 The **Asset Status** table displays the status of assets that O3DE is processing\. Select a row to display contextual asset processing information in the **Event Log Details** table\.
 
@@ -59,7 +59,7 @@ The columns in the **Asset Status** table display the following information abou
 
 ![\[The Asset Status table displays specific information about assets in each column.\]](/images/user-guide/asset_processor/asset-status-table.png)
 
-#### Status Column {#status-column}
+#### Status Column 
 
 In the **Status** column, you can sort by status types\.
 
@@ -69,7 +69,7 @@ The column headers display the following information about each asset:
 + **In Process** - Currently processing and will display **Completed** or **Failed** when complete
 + **Pending** - Awaiting processing
 
-#### Filtering by Keyword and Status {#keyword-status-filtering}
+#### Filtering by Keyword and Status 
 
 In the filter box, you can filter the table view by entering keywords and regular expressions\. The regular expressions are standard `std::regex` in extended format\. The standard `std::regex` rules apply\.
 
@@ -97,7 +97,7 @@ Filters that you apply remain active until you remove them\. You can either clea
 
 ![\[Filter the Asset Status table using keywords or regular expressions. Remove filters by clearing the status type box or removing the label.\]](/images/user-guide/asset_processor/keyword-status-filtering.png)
 
-#### Using a Row's Context Menu {#row-asset-context-menu}
+#### Using a Row's Context Menu 
 
 You can perform actions on each row in the **Asset Status** table\. Right\-click on the row to expose a context menu with the following actions:
 
@@ -118,7 +118,7 @@ Opens the directory with the log file for the asset\.
 
 ![\[Right-click on a row to expose the context menu in the Asset Table.\]](/images/user-guide/asset_processor/row-asset-context-menu.png)
 
-### Event Log Details {#event-log-details-table}
+### Event Log Details 
 
 In the **Event Log Details** table, you can view asset processing information for an asset that you select in the **Asset Status** table\. This table provides an activity log that shows how the asset was processed and any errors or warnings generated during processing\.
 
@@ -149,7 +149,7 @@ The **Event Log Details** table also features a context menu to perform copy act
 
 ![\[Event log details table context menu actions.\]](/images/user-guide/asset_processor/event-log-details-context.png)
 
-#### Event Log Line Details {#event-log-line-details}
+#### Event Log Line Details 
 
 The **Event Log Line Details** table displays when you enable the **Context Details** option\. This table displays any additional information about the selected line in the **Event Log Details** table\. These details and additional information is generally useful only when debugging issues with a particular asset\.
 
@@ -162,11 +162,11 @@ The **Event Log Line Details** table also features a context menu to perform cop
 
 ![\[Event Log Line Details table context menu.\]](/images/user-guide/asset_processor/event-log-line-details-context.png)
 
-## Assets {#assets-tab}
+## Assets 
 
  The **Assets** tab displays information about the assets associated with your active project\. The data you get includes things like the name of the asset, what files are produced by the resource compiler, and dependencies\. In addition to seeing information on source assets, you can also look through generated assets and try to locate missing dependencies\.
 
-### Source assets {#assets-tab-source}
+### Source assets 
 
  Using the **Source Assets** view of the **Assets** tab shows you the assets picked up during asset processing and lets you investigate their dependencies, products, associated jobs, and force asset rebuilds\.
 
@@ -190,7 +190,7 @@ E - Outgoing source dependencies
 F - Incoming source dependencies
  The list of source assets which must have their jobs completed before the processing of this asset\. See [Why define product dependencies?](/docs/userguide/assets/bundle/overview#why-use-product-dependencies) for more information on product dependencies\.
 
-### Product assets {#assets-tab-product}
+### Product assets 
 
 ![\[The Asset Processor with the Assets tab selected, and the Product Assets view visible. The view is annotated with red markers calling out each individual section.\]](/images/user-guide/asset_processor/assets-product.png)
 
@@ -212,7 +212,7 @@ E - Incoming product dependencies
 F - Missing dependency scanner
  Run the missing dependency scanner from inside the Asset Processor\. See [Using the Missing Dependency Scanner](/docs/user-guide/packaging/asset-bundler/missing-dependency-scanner.md) for more information\.
 
-## Logs {#logs-tab}
+## Logs 
 
 The **Logs** tab displays events for the internal operation of the Asset Processor\. This area doesn't display logs for the processing of individual assets\. The information in these logs is helpful for troubleshooting the Asset Processor if an issue occurs\.
 
@@ -222,11 +222,11 @@ Right\-click to access the **Logs** context menu\.
 
 ![\[Logs tab context menu in Asset Processor.\]](/images/user-guide/asset_processor/logs-context.png)
 
-## Shaders {#shaders-tab}
+## Shaders 
 
 The **Shaders** tab displays a table with information related to shader compiler proxies\. Shader failures appear in this table\. For more information, see [Shader Compiler Proxy](/docs/userguide/assets/shader-compiler.md)\.
 
-## Connections {#connections-tab}
+## Connections 
 
 The **Connections** tab displays devices and programs that the Asset Processor is connected to and the platform they are running on\. You can add approved connections in the **White Listed Connections** box and disapproved connections in **Rejected Connections**\.
 
@@ -238,7 +238,7 @@ You can edit or remove a user\-created connection, or add a connection\.
 
 ![\[Edit a user-created connection in Asset Processor.\]](/images/user-guide/asset_processor/edit-connection.png)
 
-## Tools {#tools-tab}
+## Tools 
 
 On the **Tools** tab, you control how your assets are scanned\. Use **Faster Scanning Mode** when you don't need to perform a full asset scan\. For more information, see [Enabling Asset Processor's Faster Scanning Mode](/docs/user-guide/assets/faster-scanning.md)\.
 

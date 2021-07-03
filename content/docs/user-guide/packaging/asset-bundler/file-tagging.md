@@ -14,7 +14,7 @@ O3DE uses a file tagging system to include or exclude files at various stages of
 + [Creating File Tag Rules](#creating-file-tag-rules)
 + [Using the FileTag API](#using-the-filetag-api)
 
-## Creating File Tag Rules {#creating-file-tag-rules}
+## Creating File Tag Rules 
 
 Use the O3DE Asset Editor to add custom file tag rules to either `exclude.filetag` or `include.filetag`, depending on whether you are excluding or including asset files\. Both of these `.filetag` files are located in the `dev\Engine` directory\. File tag rules consist of two required parts:
 + A **File Pattern** that defines the files to match this rule\. Supported patterns include:
@@ -47,7 +47,7 @@ Some file tags have designated uses within O3DE\. Various tools may require that
 
 1. Select **File**, **Save** to save your new file tag rule\.
 
-## Using the FileTag API {#using-the-filetag-api}
+## Using the FileTag API 
 
 You can use the C\+\+ FileTag API to write your own logic for determining whether to include or exclude files\. The following example uses the file tagging system to ignore files that match patterns associated with the `ignore` and `shader` tags\.
 

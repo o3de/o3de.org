@@ -16,7 +16,7 @@ For the **Actor** component to work properly, you must also add one of the follo
 + [Using Multiple Skin Attachments for an Actor](/docs/user-guide/components/reference/actor-multiple-skin/)
 + [Setting Up Actor Entities](/docs/user-guide/components/reference/actor-component-entity-setup/)
 
-## Actor Component Properties {#component-actor-properties}
+## Actor Component Properties 
 
 ![\[Actor component properties.\]](/images/user-guide/component/actor_component_properties.png)
 

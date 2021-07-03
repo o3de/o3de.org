@@ -15,7 +15,7 @@ When you create a job with the Python Asset Builder, the callback for `OnCreateJ
   - [CreateJobsResponse {#python-asset-builder-create-jobs-response}](#createjobsresponse-python-asset-builder-create-jobs-response)
   - [Example: Create jobs {#python-asset-builder-create-jobs-example}](#example-create-jobs-python-asset-builder-create-jobs-example)
 
-## CreateJobsRequest {#python-asset-builder-create-jobs-request}
+## CreateJobsRequest 
 
 `CreateJobsRequest` provides data for operations related to the enabled platforms\. This data is used to build the output `JobDescriptor` for a specific enabled platform\. The `CreateJobsRequest` data contains input job data that is sent by **Asset Processor** to the builder for creating jobs\.
 
@@ -42,7 +42,7 @@ class azlmbr.asset.builder.PlatformInfo
 - tags (set of strings) The tags available for the platform
 ```
 
-## CreateJobsResponse {#python-asset-builder-create-jobs-response}
+## CreateJobsResponse 
 
 The response from the callback determines what work to process for the source asset file\. In most cases, the builder creates a job descriptor for each source asset and for each enabled platform\.
 
@@ -178,7 +178,7 @@ azlmbr.asset.builder.JobDependency_Order
 azlmbr.asset.builder.JobDependency_OrderOnce
 ```
 
-## Example: Create jobs {#python-asset-builder-create-jobs-example}
+## Example: Create jobs 
 
 This is a simple example of how the asset builder might create jobs when **Asset Processor** detects a new or changed source asset file in the watch folders of the registered pattern\.
 

@@ -36,7 +36,7 @@ The `Platforms` section contains two subsections:
 + `Platform Definition` - Defines which platforms exist when you use the `[Platform platformName]` section header\.
 + `Platforms` - Defines which of the platforms are enabled by default in your project\.
 
-### Platform Definition Subsection {#asset-pipeline-configuring-platform-definition-subsection}
+### Platform Definition Subsection 
 
 Use the following subsections to define an operating system and its attributes\. The name of the operating system appears in the section header, for example, `pc` or `ios`\.
 
@@ -52,7 +52,7 @@ tags=mobile,renderer
 
 You can define the `tags` attribute and assign tags to an operating system\. This allows you to control behavior based on the tags\. For example, you can choose to compile textures on all operating systems with the mobile tag rather than naming operating systems individually\. Should you add mobile operating systems to your configuration, you can use the mobile tag to include them when modifying behavior\. This removes the necessity of recompiling and modifying all rules and builders to include the new operating systems\.
 
-### Platforms Subsection {#asset-pipeline-configuring-platform-subsection}
+### Platforms Subsection 
 
 Use the `Platforms` subsection to enable and disable operating systems for the entire project\. Note that "disabling" means that the game project does not use the specified operating system\. When you disable an operating system, the related assets are removed, and the associated space on your hard drive is freed up\.
 
@@ -82,7 +82,7 @@ Using this command line parameter enables only the specified operating systems, 
 
 You can specify tags for the `platforms` command line parameter, for example: `AssetProcessorBatch.exe /platforms=tools,es3`
 
-## Jobs Section {#asset-pipeline-configuring-jobs-section}
+## Jobs Section 
 
 Use the `Jobs` section to control how many parallel jobs to run, as in the following example\.
 
@@ -95,7 +95,7 @@ maxJobs=0
 
 Setting `maxJobs` to zero specifies using as many cores as are available\. A number other than zero limits the cores used to no more than the number that you specify\.
 
-## MetaDataTypes Section {#asset-pipeline-configuring-metadatatypes-section}
+## MetaDataTypes Section 
 
 Use the `MetaDataTypes` section to tell the asset system that certain file types are associated with other files in the same folder\. These specifications control the compilation of side\-by\-side assets, as in the following example\.
 
@@ -117,7 +117,7 @@ In the example `Animations/SkeletonList.xml=i_caf`, the left side specifies not 
 **Note**
 If you use the Asset Builder SDK, you can declare your dependencies on other files explicitly\. This makes the `[MetaDataTypes]` section less important\.
 
-## ScanFolder Section {#asset-pipeline-configuring-scanfolder-section}
+## ScanFolder Section 
 
 Use the `ScanFolder` section to direct the Asset Processor to monitor the assets in specific folders\. The following example directs the Asset Processor to monitor the `Editor` folder\.
 
@@ -154,7 +154,7 @@ The `ScanFolder` section has the following parameters\.
 + It is not considered an error if a scan folder is missing\. This behavior is by design because it lets you have optional folders for assets\. For example, this might be useful for test cases\.
 + Removing folders from the `ScanFolder` sections removes any corresponding assets from the cache\. If the assets specified were overriding other assets, the overridden assets are reinstated and become primary assets again\.
 
-## Exclude Section {#asset-pipeline-configuring-exclude-section}
+## Exclude Section 
 
 Use the `Exclude` section to add file path patterns to ignore\. As in the rest of the `.ini` file, backslashes must be prefixed with an extra backslash to escape them from `.ini` file processing\.
 
@@ -173,7 +173,7 @@ pattern=.*Editor\\/Tmp\\/AnimationCompression\\/.*
 + The input paths are always absolute paths\. If you don't want to filter by absolute path, start your regular expressions with `.*`, as in the example\.
 + If you want to add new exclude rules, give them a unique name\. The actual name does not matter as long as each is unique\.
 
-## RC Section {#asset-pipeline-configuring-rc-section}
+## RC Section 
 
 Use the `RC` section to specify files to be processed by the `rc.exe` program or to be copied as\-is into the asset cache without processing\. The `RC` section is only for use by legacy RC modules and for specifying simple file copies to cache\.
 
@@ -272,7 +272,7 @@ The two example RC sections are both in the same file\. This has the following i
 
   For more examples, see the default `\dev\AssetProcessorPlatformConfig.ini` file\.
 
-## Common Problems {#asset-pipeline-configuring-common-problems}
+## Common Problems 
 
 When troubleshooting, be aware of the following pitfalls\.
 + Not escaping your regular expressions with two backslashes\. Remember that one of the slashes is removed when the `.ini` file is processed\.

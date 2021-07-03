@@ -17,7 +17,7 @@ Layers are standard O3DE entities with a special editor\-only layer component\. 
 + [Recovering a Layer](#recovering-layers)
 + [Layer\-Specific Components](#layer-specific-components)
 
-## Creating a Layer {#creating-layers}
+## Creating a Layer 
 
 When you create a layer, you can add entities to that layer\. This helps you organize the content in your game\. For example, you might create a layer for all character entities and another layer for vegetation\.
 
@@ -33,7 +33,7 @@ When you create a layer, you can add entities to that layer\. This helps you org
 ****
 
 
-## Modifying a Layer {#modifying-layers}
+## Modifying a Layer 
 
 After you create a layer, you can modify it by adding entities, reorganizing its hierarchy, adding nested layers, renaming the layer, and so on\.
 
@@ -50,7 +50,7 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 ****
 
 
-### Layer Hierarchies {#layer-hierarchy}
+### Layer Hierarchies 
 
 You can nest layers within other layers\. This is useful if you want to organize the enitites in your level\. This behavior is similar to creating hierarchies for parent and child entities\.
 
@@ -61,7 +61,7 @@ You can't make a layer a child of a non\-layer entity and you can't save a layer
 
 You can nest layers to break up your level into smaller, more workable sections\. If you are creating a large level, for example, you might have a single vegetation layer\. If you have just one vegetation layer, then only one environment artist could edit this layer at a time\. To allow multiple artists to work on the vegetation layer at once, you can nest other layers within the vegetation layer and assign each nested layer to different artists\. This helps build a well\-organized hierarchy to keep the game's structure efficient\.
 
-## Adding Entities to a Layer {#adding-entities-to-layers}
+## Adding Entities to a Layer 
 
 Layers can contain freestanding \(non\-slice\) entities and slices\.
 
@@ -72,7 +72,7 @@ Layers can contain freestanding \(non\-slice\) entities and slices\.
 
   1. Right\-click an entity, pause on **Assign to layer**, and then select a layer\.
 
-## Saving a Layer {#saving-layers}
+## Saving a Layer 
 
 The component entity system saves references to layers and their hierarchies in the level data\. When you add or remove a layer from your level, you must save your level before making more changes\. If you don't save your level, layers and their contents will not load correctly the next time you open the level\.
 
@@ -95,7 +95,7 @@ Layer names at the same hierarchy level must be unique\. Layers at the same hier
 
 1. In the **Entity Outliner**, right\-click the selection and choose **Save**\.
 
-## Recovering a Layer {#recovering-layers}
+## Recovering a Layer 
 
 If you delete a layer from a level in O3DE Editor, you can reimport it\.
 
@@ -113,7 +113,7 @@ If you delete a layer from a level in O3DE Editor, you can reimport it\.
 
 1. Reopen the level\. The newly created layer now references the recovered layer information\.
 
-## Layer\-Specific Components {#layer-specific-components}
+## Layer\-Specific Components 
 
 A layer is simply an entity with special rules\. As such, you can add layer\-specific components to layers\. By default, O3DE doesn't contain any layer\-specific components, but you can create your own, such as special layer components for streaming or tags\.
 

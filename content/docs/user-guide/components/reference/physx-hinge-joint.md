@@ -7,7 +7,7 @@ title: PhysX Hinge Joint component
 
 With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x\-axis of the joint\.
 
-## PhysX Hinge Joint component properties {#component-physx-hinge-joint-properties}
+## PhysX Hinge Joint component properties 
 
 ![\[Properties of the PhysX Hinge Joint component\]](/images/user-guide/physx/physx/ui-physx-hinge-joint-component.png)
 
