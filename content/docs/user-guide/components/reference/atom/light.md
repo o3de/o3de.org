@@ -37,13 +37,13 @@ Polygon
 
 | Light Type | Dependency |
 | - | - |
-| Point (sphere) | [Sphere Shape](\docs\user-guide\components\reference\shape\sphere-shape.md) | 
+| Point (sphere) | [Sphere Shape](\docs\user-guide\components\reference\shape\sphere-shape/) | 
 | Point (simple punctual) | - | 
-| Spot (disk) | [Disk Shape](\docs\user-guide\components\reference\shape\disk-shape.md) |
+| Spot (disk) | [Disk Shape](\docs\user-guide\components\reference\shape\disk-shape/) |
 | Spot (simple punctual) | - | 
-| Capsule | [Capsule Shape](\docs\user-guide\components\reference\shape\capsule-shape.md) |
-| Quad | [Quad Shape](\docs\user-guide\components\reference\shape\quad-shape.md) | 
-| Polygon | [Polygon Prism Shape](\docs\user-guide\components\reference\shape\polygon-prism-shape.md) |
+| Capsule | [Capsule Shape](\docs\user-guide\components\reference\shape\capsule-shape/) |
+| Quad | [Quad Shape](\docs\user-guide\components\reference\shape\quad-shape/) | 
+| Polygon | [Polygon Prism Shape](\docs\user-guide\components\reference\shape\polygon-prism-shape/) |
 
 
 

@@ -1,8 +1,11 @@
 ---
 title: "Components"
-date: 2021-03-02T00:23:52-05:00
 weight: 500
 ---
 
-{{< preview-migrated >}}
+{{< preview-new >}}
 
+| Topic | Description |
+| - | - | 
+| [Development](development) | A developer's guide for creating custom O3DE components in C++. | 
+| [Reference](reference) | A reference of all the components available to use in the O3DE Editor. | 
