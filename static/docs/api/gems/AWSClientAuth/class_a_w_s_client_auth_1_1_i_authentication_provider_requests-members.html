@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AWSClientAuth Gem API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -57,7 +57,7 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a8d8a61b00355dee808062c7dd3d0a0ec">DeviceCodeGrantSignInAsync</a>(const ProviderNameEnum &amp;providerName)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a4080556db2a409454e39bd064da50b7d">GetAuthenticationTokens</a>(const ProviderNameEnum &amp;providerName)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#af42c1ddf6e6d12e3da06dc46a5c8dc55">GetTokensWithRefreshAsync</a>(const ProviderNameEnum &amp;providerName)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a956ca3c16a1000f1c70b4e1762f9cfeb">Initialize</a>(const AZStd::vector&lt; ProviderNameEnum &gt; &amp;providerNames, const AZStd::string &amp;settingsRegistryPath)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a49143ef1990c9608f904ff7740e1f87c">Initialize</a>(const AZStd::vector&lt; ProviderNameEnum &gt; &amp;providerNames)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a76d8f9aee1b7be84021091e5fb7dd6ad">IsSignedIn</a>(const ProviderNameEnum &amp;providerName)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#a08a2bd4399c4fed0a52b2855d6793e50">PasswordGrantMultiFactorConfirmSignInAsync</a>(const ProviderNameEnum &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;confirmationCode)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html#ab924c69d328d91a582b31d2dbb691dce">PasswordGrantMultiFactorSignInAsync</a>(const ProviderNameEnum &amp;providerName, const AZStd::string &amp;username, const AZStd::string &amp;password)=0</td><td class="entry"><a class="el" href="class_a_w_s_client_auth_1_1_i_authentication_provider_requests.html">AWSClientAuth::IAuthenticationProviderRequests</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
@@ -67,7 +67,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:14:47 for Open 3D Engine AWSClientAuth Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:33:02 for Open 3D Engine AWSClientAuth Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

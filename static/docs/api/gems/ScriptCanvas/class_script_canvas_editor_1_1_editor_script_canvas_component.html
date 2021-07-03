@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine ScriptCanvas Gem API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -151,24 +151,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateName</b> ()</td
 <tr class="memitem:a4fca4aa7db6baa6601150489ac8d5f4f"><td class="memItemLeft" align="right" valign="top"><a id="a4fca4aa7db6baa6601150489ac8d5f4f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnScriptCanvasAssetReady</b> (const ScriptCanvasMemoryAsset::pointer asset)</td></tr>
 <tr class="separator:a4fca4aa7db6baa6601150489ac8d5f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d393c40de77e980320877d308e9a0b9"><td class="memItemLeft" align="right" valign="top"><a id="a3d393c40de77e980320877d308e9a0b9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVariable</b> (AZStd::string_view varName, const <a class="el" href="class_script_canvas_1_1_graph_variable.html">ScriptCanvas::GraphVariable</a> &amp;varDatum)</td></tr>
-<tr class="separator:a3d393c40de77e980320877d308e9a0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93451f5ffc81821fcce97e43aae19749"><td class="memItemLeft" align="right" valign="top"><a id="a93451f5ffc81821fcce97e43aae19749"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddNewVariables</b> (const <a class="el" href="class_script_canvas_1_1_variable_data.html">ScriptCanvas::VariableData</a> &amp;graphVarData)</td></tr>
-<tr class="separator:a93451f5ffc81821fcce97e43aae19749"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83e62053def77cf1e096eef09c08088e"><td class="memItemLeft" align="right" valign="top"><a id="a83e62053def77cf1e096eef09c08088e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveVariable</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">ScriptCanvas::VariableId</a> &amp;varId)</td></tr>
-<tr class="separator:a83e62053def77cf1e096eef09c08088e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6e802ebcdb60cc656eb16272a23f90d"><td class="memItemLeft" align="right" valign="top"><a id="ab6e802ebcdb60cc656eb16272a23f90d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveOldVariables</b> (const <a class="el" href="class_script_canvas_1_1_variable_data.html">ScriptCanvas::VariableData</a> &amp;graphVarData)</td></tr>
-<tr class="separator:ab6e802ebcdb60cc656eb16272a23f90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac14abaa25a3118e98230d5ade3558858"><td class="memItemLeft" align="right" valign="top"><a id="ac14abaa25a3118e98230d5ade3558858"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateVariable</b> (const <a class="el" href="class_script_canvas_1_1_graph_variable.html">ScriptCanvas::GraphVariable</a> &amp;graphDatum, <a class="el" href="class_script_canvas_1_1_graph_variable.html">ScriptCanvas::GraphVariable</a> &amp;updateDatum, <a class="el" href="class_script_canvas_1_1_graph_variable.html">ScriptCanvas::GraphVariable</a> &amp;originalDatum)</td></tr>
-<tr class="separator:ac14abaa25a3118e98230d5ade3558858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71518834667de815221dddfe1c479946"><td class="memItemLeft" align="right" valign="top"><a id="a71518834667de815221dddfe1c479946"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadVariables</b> (const ScriptCanvasMemoryAsset::pointer memoryAsset)</td></tr>
-<tr class="separator:a71518834667de815221dddfe1c479946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac204ce4f8e22c334482bfb21f02009a"><td class="memItemLeft" align="right" valign="top"><a id="aac204ce4f8e22c334482bfb21f02009a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildGameEntityData</b> ()</td></tr>
+<tr class="separator:aac204ce4f8e22c334482bfb21f02009a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49797829ef063ed95ed41e7d6041e121"><td class="memItemLeft" align="right" valign="top"><a id="a49797829ef063ed95ed41e7d6041e121"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearVariables</b> ()</td></tr>
 <tr class="separator:a49797829ef063ed95ed41e7d6041e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,15 +174,14 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <tr class="separator:af03322e5633b119d78efc0e6cc6e61db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> The user facing Editor Component for interfacing with <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> It connects to the AssetCatalogEventBus in order to remove the ScriptCanvasAssetHolder asset reference when the asset is removed from the file system. The reason the ScriptCanvasAssetHolder holder does not remove the asset reference itself is because the ScriptCanvasEditor MainWindow has a ScriptCanvasAssetHolder which it uses to maintain the asset data in memory. Therefore removing an open <a class="el" href="class_script_canvas_editor_1_1_script_canvas_asset.html">ScriptCanvasAsset</a> from the file system will remove the reference from the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a>, but not the reference from the MainWindow allowing the <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph to still be modified while open</p>
-<p>Finally per graph instance variables values are stored on the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> and injected into the runtime <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> component in BuildGameEntity </p>
+<div class="textblock"><p><a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> The user facing Editor Component for interfacing with <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> It connects to the AssetCatalogEventBus in order to remove the ScriptCanvasAssetHolder asset reference when the asset is removed from the file system. The reason the ScriptCanvasAssetHolder holder does not remove the asset reference itself is because the ScriptCanvasEditor MainWindow has a ScriptCanvasAssetHolder which it uses to maintain the asset data in memory. Therefore removing an open <a class="el" href="class_script_canvas_editor_1_1_script_canvas_asset.html">ScriptCanvasAsset</a> from the file system will remove the reference from the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a>, but not the reference from the MainWindow allowing the <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> graph to still be modified while open Finally per graph instance variables values are stored on the <a class="el" href="class_script_canvas_editor_1_1_editor_script_canvas_component.html">EditorScriptCanvasComponent</a> and injected into the runtime <a class="el" href="namespace_script_canvas.html">ScriptCanvas</a> component in BuildGameEntity </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Editor/Include/ScriptCanvas/Components/EditorScriptCanvasComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:15:36 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:33:50 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

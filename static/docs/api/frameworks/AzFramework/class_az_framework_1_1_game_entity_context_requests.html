@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzFramework API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -75,8 +75,12 @@ virtual <a class="el" href="class_az_framework_1_1_entity_context.html">EntityCo
 <tr class="separator:a51e74f36c8eabb2c3969891894e05983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3440229bbfb15177a8ff28a4b11808b8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#a3440229bbfb15177a8ff28a4b11808b8">DestroyGameEntity</a> (const AZ::EntityId &amp;)=0</td></tr>
 <tr class="separator:a3440229bbfb15177a8ff28a4b11808b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a795fb5c18b173917c96a3db495310a28"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#a795fb5c18b173917c96a3db495310a28">DestroyGameEntityOnlyInSliceMode</a> (const AZ::EntityId &amp;)=0</td></tr>
+<tr class="separator:a795fb5c18b173917c96a3db495310a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133a1b288547d17876b158ca3b449188"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#a133a1b288547d17876b158ca3b449188">DestroyGameEntityAndDescendants</a> (const AZ::EntityId &amp;)=0</td></tr>
 <tr class="separator:a133a1b288547d17876b158ca3b449188"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38fdf5f2f72d0e0c0418b0363687e85d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#a38fdf5f2f72d0e0c0418b0363687e85d">DestroyGameEntityAndDescendantsOnlyInSliceMode</a> (const AZ::EntityId &amp;)=0</td></tr>
+<tr class="separator:a38fdf5f2f72d0e0c0418b0363687e85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2215987a3235d6d8abac79bf5a41de8b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#a2215987a3235d6d8abac79bf5a41de8b">ActivateGameEntity</a> (const AZ::EntityId &amp;)=0</td></tr>
 <tr class="separator:a2215987a3235d6d8abac79bf5a41de8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c670f3adf29bfc00dffd28b2b1dfabb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_game_entity_context_requests.html#a3c670f3adf29bfc00dffd28b2b1dfabb">DeactivateGameEntity</a> (const AZ::EntityId &amp;)=0</td></tr>
@@ -350,6 +354,72 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a38fdf5f2f72d0e0c0418b0363687e85d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38fdf5f2f72d0e0c0418b0363687e85d">&#9670;&nbsp;</a></span>DestroyGameEntityAndDescendantsOnlyInSliceMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::GameEntityContextRequests::DestroyGameEntityAndDescendantsOnlyInSliceMode </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destroys an entity and its descendants only in slice mode (when prefabs are disabled). This request is only added as a stop-gap solution to prevent the editor from crashing when prefabs are enabled and must only be called through the BehaviorContext binding for 'DestroyGameEntityAndDescendants'.No code should be written to directly call this method. This will be removed soon.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the entity to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a795fb5c18b173917c96a3db495310a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a795fb5c18b173917c96a3db495310a28">&#9670;&nbsp;</a></span>DestroyGameEntityOnlyInSliceMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::GameEntityContextRequests::DestroyGameEntityOnlyInSliceMode </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destroys an entity only in slice mode (when prefabs are disabled). This request is only added as a stop-gap solution to prevent the editor from crashing when prefabs are enabled and must only be called through the BehaviorContext binding for 'DestroyGameEntity'. No code should be written to directly call this method. This will be removed soon.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of the entity to destroy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aac87b2a56f71c7e6c1b9776252bac324"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac87b2a56f71c7e6c1b9776252bac324">&#9670;&nbsp;</a></span>GetEntityName()</h2>
 
@@ -511,7 +581,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:14:23 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:32:40 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

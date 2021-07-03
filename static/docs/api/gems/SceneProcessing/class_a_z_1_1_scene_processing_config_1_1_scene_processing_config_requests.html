@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine SceneProcessing Gem API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -133,7 +133,7 @@ static const EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom
 <p>Adds a virtual type for matching against the name of asset files. @pattern See AddNodeSoftName(...) @approach See AddNodeSoftName(...) @virtualType See AddNodeSoftName(...) @inclusive 1. If the asset file name doesn't match the pattern then the value of this flag is irrelevant. No VirtualType will be assigned to any root node within the asset file. </p>
 <ol type="1">
 <li>If the asset file name MATCHES the pattern, then: 2.1. If at least one root node of type <code>graphObjectTypeName</code> is found in the scene then the Virtual Type is assigned or NOT depending on the value of this parameter. 2.2. If none of the root nodes are of type <code>graphObjectTypeName</code> then the Virtual Type is assigned or NOT depending on the NEGATED value of this parameter. @graphObjectTypeName TYPEINFO_Name() of a SceneAPI::DataTypes::IGraphObject derived class. e.g. SceneAPI::DataTypes::IAnimationData::TYPEINFO_Name(). <dl class="section return"><dt>Returns</dt><dd>See AddNodeSoftName(...) </dd></dl>
-<dl class="section pre"><dt>Precondition</dt><dd>Example: AddFileSoftName("_anim", PatternMatcher::MatchApproach::PostFix, "Ignore", false, SceneAPI::DataTypes::IAnimationData::TYPEINFO_Name()) If the filename ends with "_anim" this will mark all nodes as "Ignore" unless they're derived from IAnimationData. This will cause only animations to be exported from the .fbx file even if there's other data available. </dd></dl>
+<dl class="section pre"><dt>Precondition</dt><dd>Example: AddFileSoftName("_anim", PatternMatcher::MatchApproach::PostFix, "Ignore", false, SceneAPI::DataTypes::IAnimationData::TYPEINFO_Name()) If the filename ends with "_anim" this will mark all nodes as "Ignore" unless they're derived from IAnimationData. This will cause only animations to be exported from the source scene file even if there's other data available. </dd></dl>
 </li>
 </ol>
 
@@ -197,7 +197,7 @@ static const EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:15:27 for Open 3D Engine SceneProcessing Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:33:41 for Open 3D Engine SceneProcessing Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
