@@ -18,17 +18,17 @@ Note that this release is a Developer Preview and is incomplete for many major d
 
  With that said, let's review a few of the bigger features available in O3DE 2107.1:
 
-* Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation](/docs/atom-guide/).
+* Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation.](/docs/atom-guide/)
 
-* New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries. 
+* New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries.
 
 * New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](/docs/user-guide/networking/)
 
-* Prefab support: O3DE replaces the old slice system with the well-understood prefab model for combining components and assets. Curious? [Read the early documentation here]().
+* Prefab support: O3DE replaces the old slice system with the well-understood prefab model for combining components and assets.
 
 * Project Manager: The new Project Manager simplifies the process of managing Gems and building your project and the O3DE engine.
 
-* CMake support: Heck yeah! CMake replaces WAF as the build environment and tools, and brings with it a host of great features.
+* CMake support: Heck yeah! CMake replaces WAF as the build environment and tools, and brings with it a host of great features. [Check out the documentation here.](/docs/user-guide/build/)
 
 Or, if you're the literary sort, [read through our new Get Started docs](/docs/welcome-guide/). This is a good place to get oriented to all the [features](/docs/welcome-guide/features-intro/) and [concepts](/docs/welcome-guide/key-concepts/) O3DE introduces.
 
@@ -110,6 +110,11 @@ Looking for support for your favorite third-party libraries and cloud service SD
 
 ### Amazon Web Services
 
-* GameLift Gem support
+* GameLift Gem support: Amazon Web Services (AWS) brings you a Gem for GameLift support, enabling you to host multiplayer games with scaling support, as well as other cloud features. [Read the AWS GameLift Gem docs here],(/docs/user-guide/gems/reference/aws/aws-gamelift/) and read up on GameLift proper in [the AWS official GameLift documentation.](https://docs.aws.amazon.com/gamelift/index.html)
 
-* AWS Integrations Gems
+* AWS Integrations Gems: AWS also has developed several Gems for common cloud service support, such as S3 Storage. They include:
+  * [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth/): The AWS Client Auth Gem provides solutions for client authentication and AWS authorization.
+
+  * [AWS Core Gem](/docs/user-guide/gems/reference/aws/aws-core/): The AWS Core Gem provides basic shared AWS functionality such as AWS SDK initialization and client configuration.
+
+  * [AWS Metrics Gem](/docs/user-guide/gems/reference/aws/aws-metrics/): The AWS Metrics Gem provides a solution for AWS metrics submission and analytics.
