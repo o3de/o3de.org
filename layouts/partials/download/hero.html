@@ -1,43 +1,19 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
 <div class="scalable download-hero d-flex align-items-center">
-  <div class="container hero-inner">
+  <div class="container text-light">
     <div class="row">
-      <div class="col col-12 text-center">
+      <div class="col col-12 text-center pb-3">
         <h1 class="title">
-          Get Open 3D Engine
+          Preview Open 3D Engine
         </h1>
-        <p class="desc">
-          <b>NOTE: This is a Developer Preview release. There will be full binaries and an installer provided for a forthcoming version.</b>
-        </p>
-        <p id="download-page-buttons">
-          <a href="https://github.com/o3de/o3de" class="my-3 mr-3 btn btn-lg btn-secondary text-white" data-os="Windows">Access O3DE on GitHub</a>
-        </p>
-        <p>By downloading, you agree to the <a href= "">Terms of Use</a>.</p>
+        <h4 class="pb-2">
+          This Developer Preview enables you to start creating today
+        </h4>
+        <h5 class="pb-2">
+          The full O3DE release will be available in late 2021.
+        </h5>
       </div>
     </div>
   </div>
 </div>
-<!--
-{{ $title := site.Title }}
-{{ $desc  := site.Params.description | markdownify }}
-<div class="scalable download-hero d-flex align-items-center">
-  <div class="container hero-inner">
-    <div class="row">
-      <div class="col col-12 text-center">
-        <h1 class="title">
-          Download Open 3D Engine
-        </h1>
-        <p class="desc">
-          Download the latest stable version of O3DE for your operating system. 
-        </p>
-        <p id="download-page-buttons">
-          <a href="#" class="my-3 mr-3 btn btn-lg btn-secondary text-white" data-os="Windows">Windows</a>
-          <a href="#" class="my-3 mr-3 btn btn-lg btn-secondary text-white" data-os="Mac OS">OSX</a>
-          <a href="#" class="my-3 mr-3 btn btn-lg btn-secondary text-white" data-os="Linux">Linux</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
--->

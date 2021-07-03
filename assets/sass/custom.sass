@@ -79,6 +79,9 @@ $o3de-green: #58BD61
 
 // General 
 
+body
+  font-family: $font-family-headers
+
 .breadcrumb 
   li
     list-style: none
@@ -114,6 +117,31 @@ a
   &:hover, &:active 
     color: $o3de-mediumblue
     text-decoration: none
+
+.btn-xl-block
+  @include media-breakpoint-up(xl)
+    width: 100%
+    display: block
+
+.btn-lg-block
+  @include media-breakpoint-up(lg)
+    width: 100%
+    display: block
+
+.btn-md-block
+  @include media-breakpoint-up(md)
+    width: 100%
+    display: block
+
+.btn-sm-block
+  @include media-breakpoint-up(sm)
+    width: 100%
+    display: block
+
+.btn-xs-block
+  @include media-breakpoint-up(xs)
+    width: 100%
+    display: block
 
   // give code some base styling 
 pre
@@ -208,8 +236,38 @@ $width: '59vw';
 // layouts/partial/download/hero.html
 
 .download-hero 
-  background-image: url('/img/download/hero.jpg')
-  background-size: 50% auto
+  background-image: url('/img/download/hero-bg.png')
+  background-size: cover
+  background-position: 50% 50%
+  max-height: 20rem
+
+.getting-started
+  background: #111
+
+  a
+    color: #83BAE1
+
+  .card
+    padding: 1.5rem
+    display: block
+
+    p
+      color: $o3de-black
+      font-size: .9rem
+      line-height: 1.1rem
+
+    h4
+      margin: 0
+      color: $o3de-black
+      min-height: 5.5rem
+      padding-bottom: 1rem
+      @include media-breakpoint-down(lg)
+        font-size: 1.25rem
+      @include media-breakpoint-down(md)
+        min-height: 4rem
+    
+    .learn-more
+      display: block
 
 .active-os-cta
   background-color: $o3de-blue
@@ -400,10 +458,6 @@ $width: '59vw';
     background-size: cover
     background-position: 50% 50%
     padding-bottom: 10rem
-
-// partials/download/hero.html 
-
-
 
 // Docs pages 
 
