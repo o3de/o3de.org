@@ -121,4 +121,4 @@ Looking for support for your favorite third-party libraries and cloud service SD
 
 ## Known Issues
 
-* [The current list of Known Issues](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;--or a few! Or just comment on them and provide us with your thoughts.
+* [The current list of Known Issues in release 2107.1](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;--or a few! Or just comment on them and provide us with your thoughts.
