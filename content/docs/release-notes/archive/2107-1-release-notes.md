@@ -34,7 +34,7 @@ Or, if you're the literary sort, [read through our new Get Started docs](/docs/w
 
 ## New and updated core features
 
-There's a lot of updates we're bringing to you with this initial release. Check 'em out!
+There's a lot of additional updates we're bringing to you with this initial release. Check 'em out!
 
 ### Build
 
@@ -42,7 +42,7 @@ There's a lot of updates we're bringing to you with this initial release. Check 
 * Project and Gem management replaced with centralized JSON and python O3DE script tools
 * Engine, Gem and project configuration moved to `<platform user path>/.o3de`
 * XML configuration systems removed and replaced with JSON implementation
-* Autogen replacement for AzCodeGenerator implemented with Jinja2 templating language
+* Autogen replacement for `AzCodeGenerator` implemented with Jinja2 templating language
 * Added regex/wildcard and json document support for process and rule implementation
 * Restructured entire system to support modularity with precompiled binaries support outside of project folder path
 * Implemented support for Windows, MacOS, Linux, Android, and iOS editor and runtime builds
@@ -60,53 +60,53 @@ There's a lot of updates we're bringing to you with this initial release. Check 
 
 ### Asset processing
 
-* Asset processor changed to use file hash for change determinatino.
-* Python scriptable pipeline added to Asset processor for pre/post-processing of assets
-* Implemented Assimp library for FBX processing
+* Asset Processor changed to use file hash for change determination
+* Python scriptable pipeline added to the Asset Processor for pre/post-processing of assets
+* Implemented *AssImp* library for FBX processing
 ​
 
 ### Core Engine
 
-* All core and system modules Gems changed to common AZ::Interface allowing direct function call against any module Interface
+* All core and system modules Gems changed to common `AZ::Interface` allowing direct function calls against any module Interface
 * Modules now support global single handler ebuses for 5x speed improvement
-* AZ::Event replacement for notification buses using simplified C# style event system.
-* AZ::Console replacement for CryConsole exposing cvar and console to any Gem
-* Added thread safe mocking of raw var types in AZ::Console
-* Removed EBUS and Implemented AZ::Interface and AZ::Event for efficiency
-* AZ::ScheduledEvent added as alternative to TickBus for periodic or time sensitive tasks
+* `AZ::Event` replacement for notification buses using simplified C# style event system
+* `AZ::Console` replacement for CryConsole exposing cvar and console(s) to any Gem
+* Added thread safe mocking of raw var types in `AZ::Console`
+* Removed EBus and implemented `AZ::Interface` and `AZ::Event` for efficiency
+* `AZ::ScheduledEvent` added as alternative to `TickBus` for periodic or time-sensitive tasks
 * Added timeslicing and priority queue for event management control
 * Implemented scheduling algorithm to prevent starvation
-* Adjusted model to prevent server 'spiral  of death' behaviors
-* AZ::Logger replacement for CryLogger and AZ::Trace systems for syslog levels of loggint priorities
+* Adjusted model to prevent server "spiral of death" behaviors
+* `AZ::Logger` replacement for CryLogger and `AZ::Trace` systems for syslog levels of logging priorities
 * Implemented runtime toggling to change log levels without recompile or restart
-* Removed over 2M lines of legacy red-code
+* Removed over 2 million lines of legacy code
 * 98% Replacement of all major Cry systems
-* AZ::SIMD implemented to produce SIMD code for x64 SSE, ARM Neon or pure scalar fallback code
-* AZ::Transofrm implemented for non-matrix/decomposed required calculations with position, quaternion * orientation and scale
+* `AZ::SIMD` implemented to produce SIMD code for x64 SSE, ARM Neon, or pure scalar fallback code
+* `AZ::Transform` implemented for non-matrix/decomposed required calculations with position, quaternion * orientation and scale
 ​
 
 ### Simulation
 
 * Blast Destruction implemented
 * New Visibility interface for culling and occlusion using spatial-hash implementation
-* CryPhysics replaced with Physics API, implemented PhysX
+* CryPhysics replaced with Physics API; implemented PhysX support
 ​
 
 ### Editor
 
 * Editor extended
-* Whitebox polygonal shape/modelling tool added to editor
-* Implemented whitebox python scripting and toolchain support with import/export
+* White Box polygonal shape/modelling tool added to Editor
+* Implemented White Box python scripting and toolchain support with import/export
 * Script Canvas 2.0 implemented with full visual compile to LUA
 
 ### Networking
 
-* Networking 2.0 implemented with TCP/UDP transport extended with data abstracted generation.
+* Networking 2.0 implemented with TCP/UDP transport extended with data abstracted generation
 * Implemented encryption and compression into network stack
 
-## Partner Gems
+## 3rd Party Gems
 
-Looking for support for your favorite third-party libraries and cloud service SDKs? Here's what's been added in 2107.1.
+**Looking for support for your favorite third-party libraries and cloud service SDKs?** Here's what's been added in 2107.1.
 
 ### Amazon Web Services
 
