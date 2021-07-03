@@ -150,7 +150,13 @@ For more information and examples of common contributor workflows, refer to [O3D
 
 Now that you have a local copy of the O3DE source, you can build the engine, including key tools such as the O3DE **Asset Processor**, **Editor**, and **Project Manager**.
 
-1. Create a package directory in a writeable location. This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine. The directory `C:\o3de-packages` is used in the examples that follow.
+1. Create a package directory in a writeable location. The directory `C:\o3de-packages` is used in the examples that follow.
+
+    ```cmd
+    mkdir C:\o3de-packages
+    ```
+
+    This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
 
 1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements) page for installation instructions.
 
@@ -171,7 +177,7 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
     * `LY_UNITY_BUILD` : Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
     * `LY_VERSION_ENGINE_NAME` : The name you want to give the engine. Giving the install layout a different engine name ("o3de-install") than the source engine ("o3de") enables useful side-by-side options.
-    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. If you don't specify this option, the engine SDK binaries will be built to `/install/bin/Windows/profile`.
+    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Windows/profile`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Windows/profile`.
 
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The `profile` build configuration is shown in this example.
 

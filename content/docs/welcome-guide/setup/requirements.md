@@ -18,7 +18,7 @@ Minimum hardware requirements for development include the following:
   + 4 GB VRAM recommended
   + NVIDIA GeForce GTX 1060 or better, driver version 465.89 or later recommended
   + AMD Radeon Pro 560 or better
-+ 60 GB of free disk space
++ 20 - 100 GB of free disk space
 + 1366 x 768 px screen resolution
 
 {{< note >}}
@@ -36,7 +36,7 @@ To create new projects or use advanced development features in O3DE, you need a 
 
    ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
 
-+ (Optional) Wwise version 2019.2.8.7432 audio SDK. Use the [Wwise Launcher](https://www.audiokinetic.com/download/) to install.
++ (Optional) Wwise audio SDK. Use the [Wwise Launcher](https://www.audiokinetic.com/download/) to install version 2019.2.8.7432 or later.
 
 See the following sections for additional configuration instructions.
 

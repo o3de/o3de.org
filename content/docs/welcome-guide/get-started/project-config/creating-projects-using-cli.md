@@ -89,6 +89,10 @@ The `/m` is a recommended build tool optimization, which tells the Microsoft com
     C:\o3de-install\bin\Windows\profile\Editor.exe --project-path C:\o3de-projects\MyProject
     ```
 
+    {{< important >}}
+If you built the engine from source using the INSTALL target, make sure you launch the Editor and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile`.
+    {{< /important >}}
+
     If you don't supply the project path when you run the Editor from the command line, the O3DE **Project Manager** will launch. Using the Project Manager's GUI, you can edit your project's settings, add or remove Gems from the project, and launch the Editor.
 
 For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.

@@ -11,9 +11,7 @@ After installing Open 3D Engine (O3DE), you're ready to create your first O3DE p
 
 You create O3DE projects using the `o3de` tool and the CMake scripts included with O3DE. To get started with a common set of features, it's typically easiest to create your project using the O3DE default project template. This template specifies a set of Gems that enable these common features.
 
-You can create a project using either the GUI-based O3DE **Project Manager** tool or the command line interface (CLI).
-
-The topics in this section introduce you to creating O3DE projects using either of these options.
+You can create a project using either the GUI-based O3DE **Project Manager** tool or the command line interface (CLI). The topics in this section introduce you to creating O3DE projects using either of these options.
 
 | Topic | Description |
 | - | - |
