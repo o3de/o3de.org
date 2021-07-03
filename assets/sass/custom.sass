@@ -259,6 +259,11 @@ $width: '59vw';
   .card
     padding: 1.5rem
     display: block
+    min-height: 16rem
+    @include media-breakpoint-down(lg)
+      min-height: 18rem
+    @include media-breakpoint-down(md)
+      min-height: 13rem
 
     p
       color: $o3de-black
@@ -558,8 +563,10 @@ $width: '59vw';
       &:focus
         text-decoration: none
         box-shadow: none
+        color: $o3de-black
         
       &:hover
+        color: $o3de-blue
         text-decoration: none
         box-shadow: none
 
@@ -568,8 +575,13 @@ $width: '59vw';
 
   .section-nav-link
     padding: 0 8px
+    margin: 0 10px
+    display: inline-block
     color: $o3de-black
     font-weight: normal
+
+    &:hover
+      color: $o3de-blue
 
   .currentPage
     background-color: rgba(221, 221, 221, 0.3)
@@ -579,6 +591,10 @@ $width: '59vw';
     background: transparent
     border: 0 none
     box-shadow: none
+
+.accordion
+  .btn-link
+    font-weight: 600
 
 // layouts/section-nav.html 
 
