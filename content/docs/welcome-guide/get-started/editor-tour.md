@@ -20,7 +20,21 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
 * **A:** Near the top of O3DE Editor are the **Menu Bar** and the **Tool Bar**.
 
-   The Menu Bar contains several familiar menus for file save, load, and export operations, access to preferences, editor tools and actions, view configuration settings, and help.
+   The Menu Bar contains several familiar menus:
+
+   * **File** - File menu items include actions for opening an saving levels, managing editor and project settings, and creating and opening projects.
+
+   * **Edit** - Edit menu items include actions for working with selections such as duplicate, delete, hide and show selection, and working with selection transforms.
+
+   * **Game** - Game menu items include actions for running the project, enabling in editor simulation, enabling and refreshing audio, and debugging.
+
+   * **Tools** - Tools menu items provide access to all of O3DE's tools and editors.
+
+   * **View** - View menu items include actions to configure both the Perspective viewport and O3DE Editor layout.
+
+   * **AWS** - AWS menu items include tools and links to documentation for working with AWS in your O3DE projects.
+
+   * **Help** - Help menu items provide links to O3DE community and documentation resources.
 
    The Tool Bar provides easy access to various editor tools and features. On the left are buttons to open various O3DE tools and editors, on the right are controls to run your project or activate simulation in editor. The Tool Bar is docked at the top of the editor by default, but you can also dock it vertically on the edges of the editor. To customize the toolbar, right-click anywhere on the toolbar and select **Customize** from the context menu. You can choose which toolbars to include, and add commands to the toolbar.
 
@@ -40,7 +54,7 @@ You can customize the layout through drag and drop, and save to a custom layout 
 
    Right-click in the viewport of Perspective to open the context menu to create entities and prefabs. Much of the context menu functionality in Perspective is shared with the context menu functionality of Entity Outliner.
 
-   In the upper left and upper right corners of Perspective are icon trays for manipulating entities. On the left, you can use the icons to select a transform operation. From top to bottom the icons represent translate, rotate, and scale operations. On the right, you can use the icons to select a space for the transform operation. From top to bottom the icons represent world, parent, and local spaces. 
+   In the upper left and upper right corners of Perspective are icon trays for manipulating entities. On the left (**D1**), you can use the icons to select a transform operation. From top to bottom the icons represent translate, rotate, and scale operations. On the right (**D2**), you can use the icons to select a space for the transform operation. From top to bottom the icons represent world, parent, and local spaces. 
 
 * **E:**  On the right side of O3DE Editor, **Entity Inspector** displays the components of the currently selected entity. At the top of Entity Inspector is a field for the entity **Name** and an **Add Component** button. The Add Component button opens a list of available components, sorted by type, that can be added to the entity. Each component has its own set of properties that are displayed in Entity Inspector. All entities contain a transform component that sets the position, rotation, and scale of the entity in the level.
 
