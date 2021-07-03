@@ -1,46 +1,46 @@
 <!-- displays 3 blog posts and links to blogs, for homepage & community page -->
 
-
-
-{{ $posts := where site.RegularPages "Section" "blog" | first 3 }}
-  <div class="row">
-      <div class="col mx-auto">
-          <h2>Blog</h2>
-          <p>What’s going on in the O3DE community? Read the blog posts and catch up on the latest news, insights, and feature development.</p>
-      </div>
-  </div>
-  <div class="row">
-    {{ range (.Paginate $posts).Pages }}
-    {{ $date := dateFormat "January 2, 2006" .Date }}
-    <div class="col col-lg-4 col-md-12 col-12">
-      <div class="card">
-          <div class="card-body">
-            <a href="{{ .RelPermalink }}">
-            <h2>
-              {{ .Title }}
-            </h2>
-            <p>
-              {{ $date }}
-            </p>
-            </a>
-            {{ .Summary }}...
+<div class="getting-started d-flex align-items-center text-light mt-5">
+  <div class="container pt-4">
+    <h2>Getting Started</h2>
+    <p>Things getting tricky? Check out the community posts and documentation below, or ask a question in our forums.</p>
+    <div class="row pt-4 pb-4 mb-4">
+      <div class="col col-12 col-md-6 col-lg-3">
+        <a href="#">
+          <div class="card mb-3">
+            <h4>Prerequisites</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</p>
+            <div class="learn-more" href="#">Learn more</div>
           </div>
-        </div>
+        </a>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-3">
+        <a href="#">
+          <div class="card mb-3">
+            <h4>Setting up O3DE from GitHub</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</p>
+            <div class="learn-more" href="#">Learn more</div>
+          </div>
+        </a>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-3">
+        <a href="#">
+          <div class="card mb-3">
+            <h4>Creating a project using the CLI</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</p>
+            <div class="learn-more" href="#">Learn more</div>
+          </div>
+        </a>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-3">
+        <a href="#">
+          <div class="card mb-3">
+            <h4>Troubleshooting the setup</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et...</p>
+            <div class="learn-more" href="#">Learn more</div>
+          </div>
+        </a>
+      </div>
     </div>
-    {{ end }}
-  </div>
-  <div class="row mt-3">
-    <div class="col mx-auto">
-        <a href="/blog" class="btn btn-light border float-right" target="_blank">
-            Read more »
-          </a>
-    </div>
-    </div>
-
-    
-<section class="container pt-5">
-  <div class="row">
-    <div class="col-12 col-lg-3 pr-5">
-    </div>
-  </div>
-</section>
+  </div> 
+</div> 

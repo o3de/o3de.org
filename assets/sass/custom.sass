@@ -240,7 +240,30 @@ $width: '59vw';
   background-size: cover
   background-position: 50% 50%
   max-height: 20rem
-  
+
+.getting-started
+  background: #111
+  .card
+    padding: 1.5rem
+    display: block
+
+    p
+      color: $o3de-black
+      font-size: .9rem
+      line-height: 1.1rem
+
+    h4
+      margin: 0
+      color: $o3de-black
+      min-height: 5.5rem
+      padding-bottom: 1rem
+      @include media-breakpoint-down(lg)
+        font-size: 1.25rem
+      @include media-breakpoint-down(md)
+        min-height: 4rem
+    
+    .learn-more
+      display: block
 
 .active-os-cta
   background-color: $o3de-blue
