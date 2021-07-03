@@ -1,6 +1,6 @@
 ---
 title: Setting up O3DE from GitHub
-description: Learn how to set up Open 3D Engine (O3DE) by cloning the source from GitHub.
+description: Learn how to set up and build Open 3D Engine (O3DE) from its GitHub source.
 weight: 300
 toc: true
 ---
@@ -19,7 +19,7 @@ The instructions here will guide you through the following steps:
 The instructions that follow assume you have the following:
 
 * [Git client](https://git-scm.com/downloads) installed (1.8.2 or later required, 2.23.4 or later recommended).
-* Met all hardware and software requirements listed in [System Requirements](./requirements.md).
+* Met all hardware and software requirements listed in [System Requirements](./requirements).
 
 ## Configure credentials for Git LFS
 
@@ -158,15 +158,21 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     git pull
     ```
 
-For more information and examples of common contributor workflows, refer to [O3DE Code Contribution GitHub Workflow](/docs/contributing/to-code/git-workflow.md) in the Contributor Guide.
+For more information and examples of common contributor workflows, refer to [O3DE Code Contribution GitHub Workflow](/docs/contributing/to-code/git-workflow) in the Contributor Guide.
 
-## Build the engine
+## Build the engine as an SDK {#build-the-engine}
 
 Now that you have a local copy of the O3DE source, you can build the engine, including key tools such as the O3DE **Asset Processor**, **Editor**, and **Project Manager**.
 
-1. Create a package directory in a writeable location. This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
+1. Create a package directory in a writeable location. The directory `C:\o3de-packages` is used in the examples that follow.
 
-1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements.md) page for installation instructions.
+    ```cmd
+    mkdir C:\o3de-packages
+    ```
+
+    This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
+
+1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements) page for installation instructions.
 
     Open a command prompt to the directory where you set up O3DE and run the `get_python` script.
 
@@ -176,37 +182,46 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
 
 1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
-    In the following example, including the `AutomatedTesting` project is optional, but recommended if you plan on contributing changes to the engine source. You should use this project to run automated testing locally before submitting a pull request (PR) in GitHub.
-
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_PROJECTS=AutomatedTesting
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
     ```
 
-    {{< caution >}}
-Do not use trailing slashes when specifying the path to the packages directory.
-    {{< /caution >}}
+    There are several noteworthy custom definitions (`-D`) specified in the preceding command. All are optional but recommended in this example.
 
-    {{< note >}}
-Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
-    {{< /note >}}
+    * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
+    * `LY_UNITY_BUILD` : Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
+    * `LY_VERSION_ENGINE_NAME` : The name you want to give the engine. Giving the install layout a different engine name ("o3de-install") than the source engine ("o3de") enables useful side-by-side options.
+    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Windows/profile`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Windows/profile`.
 
-1. Use CMake to build the test project, engine, and tools. When specifying the Editor as a build target, the AssetProcessor and Project Manager will be built too, since they are dependencies of the Editor. The `profile` build configuration is shown in this example.
+1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The `profile` build configuration is shown in this example.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target AutomatedTesting.GameLauncher Editor --config profile -- /m
+    cmake --build build/windows_vs2019 --target INSTALL --config profile -- /m
     ```
 
     {{< note >}}
 The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
-The engine will take a while to build. In this example, when the build is complete, the tools can be found in `/build/windows_vs2019/bin/profile`.
+The engine will take a while to build. If you've used all the example commands in these steps, when the build is complete, the engine tools and other binaries can be found in `C:\o3de-install\bin\Windows\profile`.
 
 ## Register the engine
 
 Registering the O3DE engine enables O3DE projects to find the engine, even when they exist in different locations on your computer. The registration process creates (or updates) the **O3DE manifest** in your user directory.
 
-1. Use the `o3de register` command from the O3DE repo to register the engine.
+1. Change your current directory to the engine SDK binary directory.
+
+    ```cmd
+    cd C:\o3de-install
+    ```
+
+1. Get the Python runtime for this engine.
+
+    ```cmd
+    python\get_python.bat
+    ```
+
+1. Use the `o3de` script to register the engine.
 
     ```cmd
     scripts\o3de.bat register --this-engine

@@ -5,13 +5,12 @@ description: Learn how to install and set up Open 3D Engine (O3DE) for the first
 weight: 400
 ---
 
-{{< preview-new >}}
+The topics in this section detail the minimum requirements for Open 3D Engine (O3DE) and guide you through the installation process.
 
-The following topics in this section detail the minimum requirements for Open 3D Engine (O3DE) and guide you through the installation process.
-
-## Setup Topics
+## Setup topics
 
 | Topic | Description |
 | --- | --- |
-| [System requirements](./requirements.md) | Find the minimum hardware specs and software developer requirements for O3DE. |
-| [Setup O3DE from GitHub](./setup-from-github.md) | Learn how to setup O3DE by downloading from its GitHub source. |
+| [O3DE System Requirements](./requirements.md) | Find the minimum hardware specs and software developer requirements for O3DE. |
+| [Setting up O3DE from the Installer](./setup-from-installer) | Learn how to set up O3DE by downloading and running the installer tool. |
+| [Setting up O3DE from GitHub](./setup-from-github) | Learn how to set up O3DE by downloading and building the engine from its GitHub source. |
