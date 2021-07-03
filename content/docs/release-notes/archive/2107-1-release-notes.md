@@ -18,6 +18,8 @@ Note that this release is a Developer Preview and is incomplete for many major d
 
  With that said, let's review a few of the bigger features available in O3DE 2107.1:
 
+* It's more modular than ever! Just build your project with the Gems you need, and avoid tedious engine recompiles! If you're an experienced Lumberyard dev, you will appreciate this. [Huh? What? I want to read more about this SDK-esque model!](https://o3de.org/docs/welcome-guide/key-concepts/)
+
 * Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation.](/docs/atom-guide/)
 
 * New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries.
