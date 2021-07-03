@@ -495,19 +495,43 @@ $width: '59vw';
 // layouts/docs/single.html, layouts/docs/section.html 
 
 .docs-sidebar 
-  height: 30vh 
-  overflow: auto
+  background-color: rgba(30, 112, 235, 0.03)  
+
+  .section-nav
+    padding-top: 16px
+
   @include media-breakpoint-up(xl)
     position: sticky
     top: 4rem
     z-index: 1000
     height: calc(100vh - 4rem)
-    border-right: 1px solid $o3de-lightgray
     flex: 0 1 320px
     order: 0
     box-sizing: border-box
     flex-wrap: wrap
     overflow: auto
+  
+  .card-header
+    background: transparent
+    border: 0 none
+    padding: 0 1rem
+
+    .btn-link
+      color: $o3de-black
+
+      &:focus
+        border: 0 none
+        text-decoration: none
+        box-shadow: none
+        
+      &:hover
+        border: 0 none
+        text-decoration: none
+        box-shadow: none
+  
+  .card
+    background: transparent
+    border: 0 none
 
 // layouts/section-nav.html 
 
@@ -518,7 +542,6 @@ nav
     margin-bottom: 0rem
     font-size: 1rem
     li 
-      border-bottom: 1px solid $o3de-lightgray
       padding-bottom: 0.2rem
       margin-bottom: 0.3rem
       font-weight: bold
