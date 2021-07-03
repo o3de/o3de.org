@@ -19,7 +19,6 @@ $(() => {
 // active nav bar link
 
 $(() => {
-
   const url = window.location.pathname;
   $("ul.mr-auto.navbar-nav li a").each(function(){
     console.log("this: ", $(this), '         attr: ', $(this).attr("href")+"/");

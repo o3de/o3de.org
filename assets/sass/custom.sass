@@ -56,7 +56,7 @@
 //@import "bootstrap/scss/modal" 
 //@import "bootstrap/scss/tooltip" 
 //@import "bootstrap/scss/popover" 
-//@import "bootstrap/scss/carousel" 
+@import "bootstrap/scss/carousel" 
 //@import "bootstrap/scss/spinners" 
 @import "bootstrap/scss/utilities" 
 //@import "bootstrap/scss/print" 
@@ -178,6 +178,8 @@ $width: '59vw';
 
 .home-hero 
   background-image: url('/img/home/hero.jpg')
+  background-position: center center
+  background-repeat: no-repeat
   background-size: cover
   height: 600px
   width: 100%
@@ -226,20 +228,10 @@ $width: '59vw';
   padding-bottom: 72px
 
 .features-img
-  width: 100%
-  margin-left: -15px
-
-.features-text
-  padding-right: 280px
-  padding-left: 52px
+  margin-left: -30px
 
 .features-img-reverse
-  width: 100%
-  margin-left: 15px
-
-.features-text-reverse
-  padding-left: 280px
-  padding-right: 52px
+  margin-left: 30px
 
 .feature
   margin-top: 2rem
@@ -261,43 +253,22 @@ $width: '59vw';
   padding-bottom: 72px
 
 .partners-logos-view
-  width: 80%
   margin-top: 40px
 
-.accelByte-logo
+.partners-logo
   background-color: white
-  padding: 35px 75px 35px 75px
-  margin: 12px
+  &:hover 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
-.adobe-logo
-  background-color: white
-  padding: 35px 75px 35px 75px
-  margin: 9px
+.btn.carousel-btn
+  font-size: 0.5rem
 
-.aocalypseStudios-logo
-  background-color: white
-  padding: 35px 75px 35px 75px
-  margin: 9px
+.btn.carousel-btn.active
+  .fas.fa-circle
+    color: #EEEEEE
+    border: 2px solid #1E70EB !important
+    border-radius: 0.5rem !important;
 
-.audiokinetic-logo
-  background-color: white
-  padding: 40px 95px 40px 95px;
-  margin: 9px
-
-.aws-logo
-  background-color: white
-  padding: 35px 65px 35px 65px;
-  margin: 9px
-
-.backtrace-logo
-  background-color: white
-  padding: 30px 50px 30px 50px;
-  margin: 9px
-
-.carbonated-logo
-  background-color: white
-  padding: 25px 50px 25px 50px;
-  margin: 9px
 
   
 // layouts/partials/home/get-statred.html 
@@ -308,8 +279,7 @@ $width: '59vw';
   padding-bottom: 72px
 
 .getting-statred-view
-  height: 180px
-  margin-top: 40px
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 
 .getStatred-img
   height: 100%
@@ -342,9 +312,7 @@ $width: '59vw';
 // layouts/footer.html 
 
 .footer 
-  background-image: url(/img/home/footer-bg.png)
-  background-size: cover
-  background-color: $o3de-darkblue
+  background-color: #1E252F
   .a 
     &:hover, &:active 
       color: $o3de-darkblue

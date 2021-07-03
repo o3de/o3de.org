@@ -6,7 +6,7 @@
 <footer class="footer text-white">
   <div class="container mt-5 pt-5 pb-5">
     <div class="row">
-      <div class="col col-12 col-xl-8">
+      <div class="col col-12 col-xl-8 d-flex align-items-center">
         <div class="navbar-brand">
           <a class="navbar-item" href="{{ $home }}">
             {{ if $logo }}
@@ -17,12 +17,14 @@
             {{ end }}
           </a>
         </div>
-        {{ partial "footer-content.html" . }}
       </div>
       <div class="col col-12 col-xl-4">
         <div class="float-right">
             {{ partial "social-buttons.html" . }}
         </div>
+      </div>
+      <div class="col col-12 mt-4">
+        {{ partial "footer-content.html" . }}
       </div>
     </div>
   </div>

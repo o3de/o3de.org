@@ -39,12 +39,12 @@ icon = "fab fa-discord"
 [[params.social]]
 name = "O3DE Public Calendar"
 url = "https://lists.o3de.org/g/o3de-calendar/calendar"
-icon = "fab fa-github"
+icon = "far fa-calendar-alt"
 
-[[params.social]]
-name = "O3DE Twitter"
-url = "https://twitter.com/o3dengine"
-icon = "fab fa-twitter"
+# [[params.social]]
+# name = "O3DE Twitter"
+# url = "https://twitter.com/o3dengine"
+# icon = "fab fa-twitter"
 
 [[params.fonts]]
 name = "Open Sans"
@@ -71,10 +71,10 @@ weight = 1
 # url ="#"
 # weight = 2
 
-[[menu.main]]
-name = "GET STARTED"
-url = "/docs/welcome-guide"
-weight = 3
+# [[menu.main]]
+# name = "GET STARTED"
+# url = "/docs/welcome-guide"
+# weight = 3
 
 [[menu.main]]
 name = "COMMUNITY"
