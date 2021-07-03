@@ -48,7 +48,7 @@ There's a lot of updates we're bringing to you with this initial release. Check 
 * Implemented support for Windows, MacOS, Linux, Android, and iOS editor and runtime builds
 ​
 
-## Renderer
+### Renderer
 
 * Removed rendering from all coupled and replaced with new PBR Atom renderer library
 * Added HLSL compatibility with AZSL shader extension with export per backend
@@ -118,3 +118,7 @@ Looking for support for your favorite third-party libraries and cloud service SD
   * [AWS Core Gem](/docs/user-guide/gems/reference/aws/aws-core/): The AWS Core Gem provides basic shared AWS functionality such as AWS SDK initialization and client configuration.
 
   * [AWS Metrics Gem](/docs/user-guide/gems/reference/aws/aws-metrics/): The AWS Metrics Gem provides a solution for AWS metrics submission and analytics.
+
+## Known Issues
+
+* [The current list of Known Issues](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;--or a few! Or just comment on them and provide us with your thoughts.
