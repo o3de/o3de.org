@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzNetworking API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -127,7 +127,7 @@ Packet structure</h3>
 <li>Header - Details the type of packet and other information related to reliability</li>
 <li>Payload - The actual serialized content of the packet</li>
 </ul>
-<p>For more information, read <a href="http://docs.o3de.org/docs/user-guide/networking/packets">Networking Packets</a> in the O3DE documentation.</p>
+<p>For more information, read <a href="http://o3de.org/docs/user-guide/networking/packets">Networking Packets</a> in the O3DE documentation.</p>
 <h3><a class="anchor" id="autotoc_md6"></a>
 Reliability</h3>
 <p>UDP packets can be sent reliably or unreliably. Reliably sent packets are registered for tracking first. This causes the reliable packet to be resent if a timeout on the packet is reached. Once the packet is acknowledged, the packet is unregistered.</p>
@@ -140,7 +140,7 @@ Compression</h3>
 <p>O3DE could potentially move from over MTU to under with compression, and the UDP interface doesn't check for this. Detecting a change that would reduce the number of fragmented packets would require pre-emptively compressing payloads to tell if that change happened, which could potentially lead to a lot of unnecessary calls to the compressor.</p>
 <h3><a class="anchor" id="autotoc_md9"></a>
 Encryption</h3>
-<p>AzNetworking uses the <a href="https://www.openssl.org/">OpenSSL</a> library to implement Datagram Layer Transport Security (DTLS) encryption on UDP traffic. Encryption operates as described in <a href="http://docs.o3de.org/docs/user-guide/networking/encryption">O3DE Networking Encryption</a> on the documentation website. Once both endpoints have completed their handshake, all traffic is expected to be fully encrypted. </p>
+<p>AzNetworking uses the <a href="https://www.openssl.org/">OpenSSL</a> library to implement Datagram Layer Transport Security (DTLS) encryption on UDP traffic. Encryption operates as described in <a href="http://o3de.org/docs/user-guide/networking/encryption">O3DE Networking Encryption</a> on the documentation website. Once both endpoints have completed their handshake, all traffic is expected to be fully encrypted. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2203eed45354db8458db3c74a975fb34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2203eed45354db8458db3c74a975fb34">&#9670;&nbsp;</a></span>UdpNetworkInterface()</h2>
@@ -690,7 +690,7 @@ Encryption</h3>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:14:30 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:32:46 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -79,7 +79,6 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [Twitch](/docs/api/gems/Twitch)
 * [UiBasics](/docs/api/gems/UiBasics)
 * [Vegetation](/docs/api/gems/Vegetation)
-* [Vegetation_Gem_Assets](/docs/api/gems/Vegetation_Gem_Assets)
 * [VideoPlaybackFramework](/docs/api/gems/VideoPlaybackFramework)
 * [VirtualGamepad](/docs/api/gems/VirtualGamepad)
 * [WhiteBox](/docs/api/gems/WhiteBox)

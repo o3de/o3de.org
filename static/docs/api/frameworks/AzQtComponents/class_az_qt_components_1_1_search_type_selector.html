@@ -17,10 +17,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  <td id="projectlogo"><img alt="Logo" src="O3DE-logo-mockup.png"/></td>
+  <td id="projectlogo"><img alt="Logo" src="/images/api-reference/api-ref-icon.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Open 3D Engine AzQtComponents API Reference
-   &#160;<span id="projectnumber">2106</span>
+   &#160;<span id="projectnumber">2107.1 (Developer Preview)</span>
    </div>
    <div id="projectbrief">O3DE is an open-source, fully-featured, high-fidelity, modular 3D engine for building games and simulations, available to every industry.</div>
   </td>
@@ -51,6 +51,7 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="class_az_qt_components_1_1_search_type_selector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AzQtComponents::SearchTypeSelector Class Reference</div>  </div>
@@ -106,33 +107,30 @@ const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFil
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aaa47a72a3e7b9bd591d634fa806197c4"><td class="memItemLeft" align="right" valign="top"><a id="aaa47a72a3e7b9bd591d634fa806197c4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>estimateTableHeight</b> (QStandardItem *firstCategory, int numCategories, QStandardItem *firstItem, int numItems)</td></tr>
-<tr class="separator:aaa47a72a3e7b9bd591d634fa806197c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0e35634080e78672ae07b08f092b441"><td class="memItemLeft" align="right" valign="top"><a id="ad0e35634080e78672ae07b08f092b441"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resetData</b> ()</td></tr>
-<tr class="separator:ad0e35634080e78672ae07b08f092b441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1026d80357f02706e6430e1b22d552b7"><td class="memItemLeft" align="right" valign="top"><a id="a1026d80357f02706e6430e1b22d552b7"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>filterItemOut</b> (int index, bool itemMatchesFilter, bool categoryMatchesFilter)</td></tr>
-<tr class="separator:a1026d80357f02706e6430e1b22d552b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2b4a57d53cc5f280f3617227f7753f"><td class="memItemLeft" align="right" valign="top"><a id="a8c2b4a57d53cc5f280f3617227f7753f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>estimateTableHeight</b> (int numCategories, int numItems)</td></tr>
+<tr class="separator:a8c2b4a57d53cc5f280f3617227f7753f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa05c41aa615a3f6321deca2fd9f9c57"><td class="memItemLeft" align="right" valign="top"><a id="aaa05c41aa615a3f6321deca2fd9f9c57"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>filterItemOut</b> (const QModelIndex &amp;sourceIndex, bool filteredByBase)</td></tr>
+<tr class="separator:aaa05c41aa615a3f6321deca2fd9f9c57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac74f7d601be028d9e29214fe400f8262"><td class="memItemLeft" align="right" valign="top"><a id="ac74f7d601be028d9e29214fe400f8262"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>initItem</b> (QStandardItem *item, const <a class="el" href="struct_az_qt_components_1_1_search_type_filter.html">SearchTypeFilter</a> &amp;filter, int unfilteredDataIndex)</td></tr>
 <tr class="separator:ac74f7d601be028d9e29214fe400f8262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1cf9a7ace297a7c3bc2b26abc6a82c0"><td class="memItemLeft" align="right" valign="top"><a id="ad1cf9a7ace297a7c3bc2b26abc6a82c0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getUnfilteredDataIndex</b> (QStandardItem *item)</td></tr>
+<tr class="separator:ad1cf9a7ace297a7c3bc2b26abc6a82c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f81eb5aabd6ec81da010f72c3d0608b"><td class="memItemLeft" align="right" valign="top"><a id="a8f81eb5aabd6ec81da010f72c3d0608b"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumFixedItems</b> ()</td></tr>
 <tr class="separator:a8f81eb5aabd6ec81da010f72c3d0608b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a103b1ed964b30ee44e4f77ea97e4d334"><td class="memItemLeft" align="right" valign="top"><a id="a103b1ed964b30ee44e4f77ea97e4d334"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b> (QShowEvent *e) override</td></tr>
 <tr class="separator:a103b1ed964b30ee44e4f77ea97e4d334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f4ce5d0e85b867a7c309f405dae2444"><td class="memItemLeft" align="right" valign="top"><a id="a0f4ce5d0e85b867a7c309f405dae2444"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RepopulateDataModel</b> ()</td></tr>
-<tr class="separator:a0f4ce5d0e85b867a7c309f405dae2444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973db39a522ef6ea0e8d19badff19dca"><td class="memItemLeft" align="right" valign="top"><a id="a973db39a522ef6ea0e8d19badff19dca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RepopulateDataModel</b> (const SearchTypeFilterList &amp;unfilteredData)</td></tr>
+<tr class="separator:a973db39a522ef6ea0e8d19badff19dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad72a0231e36164dfc154144f9be1e7c5"><td class="memItemLeft" align="right" valign="top"><a id="ad72a0231e36164dfc154144f9be1e7c5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>maximizeGeometryToFitScreen</b> ()</td></tr>
 <tr class="separator:ad72a0231e36164dfc154144f9be1e7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e84476a76c06506abd60006e3108255"><td class="memItemLeft" align="right" valign="top"><a id="a1e84476a76c06506abd60006e3108255"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_PUSH_DISABLE_WARNING</b> (4127 4251, &quot;-Wunknown-warning-option&quot;) QVector&lt; int &gt; m_filteredItemIndices</td></tr>
-<tr class="separator:a1e84476a76c06506abd60006e3108255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -142,12 +140,12 @@ SearchTypeSelectorTreeView *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:a4dd9546c7e57edc851ae45e28ea644e6"><td class="memItemLeft" align="right" valign="top"><a id="a4dd9546c7e57edc851ae45e28ea644e6"></a>
 QStandardItemModel *&#160;</td><td class="memItemRight" valign="bottom"><b>m_model</b></td></tr>
 <tr class="separator:a4dd9546c7e57edc851ae45e28ea644e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6731f95840757846748eeec0378b647e"><td class="memItemLeft" align="right" valign="top"><a id="a6731f95840757846748eeec0378b647e"></a>
-const SearchTypeFilterList *&#160;</td><td class="memItemRight" valign="bottom"><b>m_unfilteredData</b></td></tr>
-<tr class="separator:a6731f95840757846748eeec0378b647e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51ef31ce14916e67ec7ecd671e4fc6df"><td class="memItemLeft" align="right" valign="top"><a id="a51ef31ce14916e67ec7ecd671e4fc6df"></a>
-AZ_POP_DISABLE_WARNING QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterString</b></td></tr>
-<tr class="separator:a51ef31ce14916e67ec7ecd671e4fc6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29fe169de6f916eda12942e3724fd725"><td class="memItemLeft" align="right" valign="top"><a id="a29fe169de6f916eda12942e3724fd725"></a>
+<a class="el" href="class_az_qt_components_1_1_search_type_selector_filter_model.html">SearchTypeSelectorFilterModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterModel</b></td></tr>
+<tr class="separator:a29fe169de6f916eda12942e3724fd725"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96a70e8428652bb6ce403f7c06eb99c6"><td class="memItemLeft" align="right" valign="top"><a id="a96a70e8428652bb6ce403f7c06eb99c6"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>m_filterString</b></td></tr>
+<tr class="separator:a96a70e8428652bb6ce403f7c06eb99c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7953613e7eadb816121a5ab039866da2"><td class="memItemLeft" align="right" valign="top"><a id="a7953613e7eadb816121a5ab039866da2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_settingUp</b> = false</td></tr>
 <tr class="separator:a7953613e7eadb816121a5ab039866da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +188,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>lineEditSearchVisible
 <tr class="memitem:abe2c52bcf0742aefe262d87394b65393"><td class="memItemLeft" align="right" valign="top"><a id="abe2c52bcf0742aefe262d87394b65393"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>searchLayoutMargin</b></td></tr>
 <tr class="separator:abe2c52bcf0742aefe262d87394b65393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a8fb102cbf2c49809b942dc3a376e7ca9"><td class="memItemLeft" align="right" valign="top"><a id="a8fb102cbf2c49809b942dc3a376e7ca9"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>SearchTypeSelectorFilterModel</b></td></tr>
+<tr class="separator:a8fb102cbf2c49809b942dc3a376e7ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzQtComponents/AzQtComponents/Components/FilteredSearchWidget.h</li>
@@ -197,7 +201,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>searchLayoutMargin</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 21 2021 09:14:33 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 2 2021 16:32:49 for Open 3D Engine AzQtComponents API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
