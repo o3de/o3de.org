@@ -5,7 +5,7 @@ description: Learn to create, configure and build projects in Open 3D Engine, an
 weight: 500
 ---
 
-Now that you've [installed Open 3D Engine (O3DE)](../setup) it's time to create your own project, and learn a bit about the workflows available in O3DE, and take tour of O3DE's central creation tool, **O3DE Editor**.
+Now that you've [installed Open 3D Engine (O3DE)](../setup) it's time to create your own project, learn a bit about the workflows available in O3DE, and take tour of O3DE's primary content creation tool, **O3DE Editor**.
 
 | Topic | Description |
 | - | - |
