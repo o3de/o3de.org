@@ -18,7 +18,7 @@
               <div class="row">
                   <div class="col-md-6 pb-20 card-image" style="background-image: url('{{ .Param "guide_img" }}')">
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 offset-md-6">
                     <div class="card-body">
                       <h5 class="card-title"> {{ .Page.LinkTitle }}</h5>
                       <p class="card-text">{{ .Page.Description }}</p>
@@ -68,5 +68,6 @@
   {{ end }}
   </div>
 </div>
+{{ partial "home/download.html" . }}
 {{ partial "footer.html" . }}
 {{ end }}
