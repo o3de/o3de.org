@@ -19,7 +19,7 @@ Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem d
 
 For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/assets/fbx-settings/mesh-export.md)
 
-## Add Cloth to Mesh components {#cloth-mesh-setup}
+## Add Cloth to Mesh components 
 
 Create cloth by adding the **Cloth** component to an entity that has a **Mesh** component, and then setting the properties of the **Cloth** component\.
 
@@ -56,7 +56,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 
    1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/components/cloth.md)\.
 
-## View the Cloth Simulation {#view-cloth-simulation}
+## View the Cloth Simulation 
 
 In O3DE Editor, press Ctrl\+G or press the **Play** button to run your project\.
 

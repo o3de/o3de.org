@@ -22,7 +22,7 @@ Instead of manually copying values from one entity's position to another, you ca
 ****
 
 
-## Ditto a Group Selection {#ditto-group-selection}
+## Ditto a Group Selection 
 
 You can use the ditto feature for a group of entities\. This makes it easier for you to modify multiple entities at once\.
 
@@ -40,7 +40,7 @@ You can use the ditto feature for a group of entities\. This makes it easier for
 ****
 
 
-## Ditto a Group Selection to Local Space {#ditto-group-selection-local-space}
+## Ditto a Group Selection to Local Space 
 
 You can ditto a group of entities to local space so that you can modify entities in local space in relation to another entity\.
 

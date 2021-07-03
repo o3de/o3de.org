@@ -24,7 +24,7 @@ For more information, see [Using Manipulators](/docs/userguide/components/manipu
 **Custom Reference Target**
 When you select an entity, you can specify whether to move that entity in relation to another entity\.
 
-## Viewport Interaction Model Limitations {#viewport-interaction-model-limits}
+## Viewport Interaction Model Limitations 
 
 This feature has the following limitations:
 + The Viewport Interaction Model supports component entities only and doesn't support legacy entities, such as terrain and vegetation\.

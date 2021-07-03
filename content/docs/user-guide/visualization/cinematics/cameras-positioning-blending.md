@@ -7,7 +7,7 @@ title: Positioning a Camera
 
 You can control a camera's position and rotation to manipulate the facing direction during a sequence\. These can be animated over time to make the camera dynamic\. If you have multiple cameras, you can also control if the cameras switch immediately or if they should blend over time\.
 
-## Animating the Camera {#animating-the-camera}
+## Animating the Camera 
 
 As a recommended workflow, enter record mode and then animate the camera while viewing from the specific camera's perspective\. For more information, see [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode.md)\.
 
@@ -39,11 +39,11 @@ You can still manipulate the component entity camera within the level from the d
 
 1. When finished, Click the **Start Animation Recording** icon again to exit record mode\.
 
-## Blending Cameras {#blending-cameras}
+## Blending Cameras 
 
 By default, when you switch between cameras, the change is immediate\. However, if you want a smoother transition, you can blend the cameras together\. You can blend a camera in and out of the camera\-controlled sequence, or blend between cameras that are part of the sequence\.
 
-### Blending from Game Camera to Sequence Camera {#blending-from-game-camera-to-sequence-camera}
+### Blending from Game Camera to Sequence Camera 
 
 **To use the default game camera**
 
@@ -57,7 +57,7 @@ By default, when you switch between cameras, the change is immediate\. However, 
 **Note**
 This creates a blend between the game camera to the sequence camera, or from the sequence camera back to the game camera, depending on where you place the key and adjust the **Blend time**\.
 
-### Blending Cameras within a Sequence {#blending-cameras-within-sequence}
+### Blending Cameras within a Sequence 
 
 Blended camera keys will blend the position, rotation, and field of view of the current camera into the next camera on the **Camera** track\. This allows the cut to appear as a continuous single camera motion rather than an abrupt jump cut\.
 

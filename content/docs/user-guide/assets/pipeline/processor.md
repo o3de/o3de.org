@@ -32,7 +32,7 @@ However, if you aren't using the game or O3DE Editor, you can exit Asset Process
 
 Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device\. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms\. For more information, see [Live Reloading and VFS](/docs/user-guide/assets/live-reloading.md)\.
 
-## Modifying the Asset Processor Configuration File {#asset-pipeline-processor-config}
+## Modifying the Asset Processor Configuration File 
 
 Use the `AssetProcessorPlatformConfig.ini` configuration file to perform the following tasks:
 + Add new file types for Asset Processor to feed to the Resource Compiler, copy into the cache, or update existing file type rules\.
@@ -45,7 +45,7 @@ To add game\-specific overrides, you can add a file named `AssetProcessorGamePla
 
 For more information about these configuration files, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md)\.
 
-## Using the Asset Processor Batch Program {#asset-pipeline-processor-batch-processing}
+## Using the Asset Processor Batch Program 
 
 The `AssetProcessorBatch.exe` application compiles all assets for the current project and enabled platforms\. If the process succeeds without errors, it exits with a `0` code\. You can use the Asset Processor Batch program as part of your build system for automation\.
 

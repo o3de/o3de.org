@@ -17,14 +17,14 @@ You can use the video memory profiler \(VRAM profiler\) to determine which resou
 + [Understanding the Captured Data](#profiler-vram-understanding-captured-data)
 + [Inspecting the Data](#profiler-vram-inspecting-the-data)
 
-## Notes {#profiler-vram-limitations}
+## Notes 
 
 The VRAM profiler has the following attributes:
 + The VRAM profiler has no graph view or tree view\.
 + The only supported export format is `.csv`\. For steps on saving Profiler data to a `.csv` file, see [Exporting Data](/docs/userguide/debugging/profiling/using#profiler-exporting-data)\.
 + O3DE uses a variety of memory pooling schemes, so the actual allocated amount of VRAM is slightly more than what is reported\.
 
-## Understanding the Captured Data {#profiler-vram-understanding-captured-data}
+## Understanding the Captured Data 
 
 The following image shows how your saved `.csv` file appears in a spreadsheet application:
 
@@ -53,7 +53,7 @@ The name and full path of the allocated resource\. A resource name without a pat
 **VRAM Allocation Size**
 The size, in bytes, of the allocation\.
 
-## Inspecting the Data {#profiler-vram-inspecting-the-data}
+## Inspecting the Data 
 
 When you first open the spreadsheet, the data is unordered\. To sort the data, you can use a spreadsheet application:
 
@@ -63,7 +63,7 @@ To quickly and easily identify the largest offending assets or runtime resources
 
 ![\[VRAM sort descending\]](/images/user-guide/profiler-vram-sort-descending.png)
 
-### Negative VRAM Allocation Sizes {#profiler-vram-negative-allocation-sizes}
+### Negative VRAM Allocation Sizes 
 
  Some fields may have a negative number for **VRAM Allocation Size**, as in the following image:
 
@@ -71,7 +71,7 @@ To quickly and easily identify the largest offending assets or runtime resources
 
 These important occurrences show that a VRAM deallocation event occurred during the capture\. If you observe a large number of deallocation entries over a short time period, your game might be experiencing a significance decrease in performance\. To improve your game's performance across all operating systems, you should aim to have as few idle per\-frame VRAM allocations and deallocations as possible\.
 
-### Why Some Textures Are Not Reported in the \.csv File {#profiler-vram-unreported-textures}
+### Why Some Textures Are Not Reported in the \.csv File 
 
 If you see a lot of allocations named `StreamingTexturePool` or entries like `$TexturePool_9_0000000002C59248`, this means the texture streaming system is active\. The texture streaming system allocates all textures by default into a variety of cached texture pools\. The VRAM profiler reports the size of the active streaming pools and not the names of the actual texture assets\. To obtain the names and sizes of the allocated and loaded textures, set `r_TexturesStreaming=0` in your system configuration file, and then do another capture\. This setting disables the texture streaming system and causes the true sizes of the texture allocations to be reported\.
 

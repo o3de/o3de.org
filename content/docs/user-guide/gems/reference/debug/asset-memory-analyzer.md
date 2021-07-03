@@ -41,7 +41,7 @@ Click the **Arrow** to the left of an asset to expand it and view individual all
 
 ![Expanded view of an asset in the Asset Memory Analyzer.](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-B.png)
 
-## Export an Asset Memory Analysis Snapshot to a File {#export-asset-memory-analysis-to-file}
+## Export an Asset Memory Analysis Snapshot to a File 
 
 Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files through three methods:
 

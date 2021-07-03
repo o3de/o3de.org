@@ -44,7 +44,7 @@ When using the **Scale to Device** setting, note the following:
 
   However, if you then add a scale on top of these anchor values, the element size no longer matches the viewport size\.
 
-## Scale to Device Examples {#ui-editor-transform-scale-examples}
+## Scale to Device Examples 
 
 Each of the following examples demonstrates a different **Scale to Device** setting\.
 
@@ -53,7 +53,7 @@ In each example, the background image covers the whole screen and uses the follo
 + Image type: Tiled
 + Scale to Device: None
 
-### Uniform Scaling {#ui-editor-transform-scale-uniform}
+### Uniform Scaling 
 
 In this uniform scaling example, the UI parent element has a fixed aspect ratio and is centered and fitted to the screen that it's displayed on\.
 
@@ -75,7 +75,7 @@ The elements that make up the UI are all contained in a parent element and has t
 
 ![\[Scale to fit uniformly example.\]](/images/user-guide/game_ui_editor/ui-editor-transform-scale-1.gif)
 
-### Scale to Fit Y {#ui-editor-transform-scale-fit-y}
+### Scale to Fit Y 
 
 In this uniform scale to fit Y example, the layout column and its buttons are uniformly scaled so that they fit vertically on the screen regardless of its resolution\.
 
@@ -96,7 +96,7 @@ The elements that make up the buttons are contained in a layout column element\.
 
 ![\[Scale to fit Y uniformly example.\]](/images/user-guide/game_ui_editor/ui-editor-transform-scale-2.gif)
 
-## Uniform Scaling While Maintaining Relative Position {#ui-editor-transform-scale-uniform-position}
+## Uniform Scaling While Maintaining Relative Position 
 
 In this example, the **Scale to Device** setting scales the health bar and speed indicator depending on the screen resolution\. Anchor settings maintain their positions so that the health bar always appears in the right corner and the speed indicator always appears in the center\.
 

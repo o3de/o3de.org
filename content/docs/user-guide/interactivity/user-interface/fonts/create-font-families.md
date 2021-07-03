@@ -27,7 +27,7 @@ The UI system uses the font family definitions to determine which font asset to 
 + **Italic** - Font representing text with italic styling\.
 + **Bold\-Italic** - Font representing text with both bold and italic styling\.
 
-## Font Family File XML {#ui-fonts-fontfamily-xml}
+## Font Family File XML 
 
 To create a new font family file, you can create a new, empty plain text file and enter the contents, or you can modify an existing font family file\.
 

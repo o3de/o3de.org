@@ -16,7 +16,7 @@ The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require
 + [Install NVIDIA Blast plug\-ins](#nvidia-blast-plugin-install)
 + [Enable the Blast tool shelf](#nvidia-blast-tool-enable)
 
-## Install NVIDIA Blast plug\-ins {#nvidia-blast-plugin-install}
+## Install NVIDIA Blast plug\-ins 
 
 **To install plug\-ins**
 
@@ -57,7 +57,7 @@ If Houdini is running prior to installation of the NVIDIA Blast tools for Houdin
 **Important**
 Some Houdini installations create the Houdini user directory at `C:\Users\user_name\houdini18.0\` rather than in the `Documents` directory\. If Houdini does not load the NVIDIA Blast tools, check to see if Houdini has created a user directory at `C:\Users\user_name\houdini18.0\`\. If the directory exists and contains Houdini files such as `dso.cache`, move the above files to `C:\Users\user_name\houdini18.0\` and add `C:\Users\user_name\houdini18.0\` to the **PATH** environment variable\.
 
-## Enable the Blast tool shelf {#nvidia-blast-tool-enable}
+## Enable the Blast tool shelf 
 
 The NVIDIA Blast installation for Houdini includes a tool shelf that you can enable to speed up the process of creating assets for NVIDIA Blast\.
 

@@ -19,7 +19,7 @@ These steps can be applied to any mesh\. For best results, the mesh should be fu
 + [Fracture a mesh for NVIDIA Blast](#nvidia-blast-fracture-mesh)
 + [Export an asset for NVIDIA Blast](#nvidia-blast-export)
 
-## Fracture a mesh for NVIDIA Blast {#nvidia-blast-fracture-mesh}
+## Fracture a mesh for NVIDIA Blast 
 
 **To fracture a mesh**
 
@@ -76,7 +76,7 @@ With Houdini's geometry select mode set to primitive, you can press the **S** ke
    1. In the **Fracture Single** SOP, specify a chunk to fracture\. In the example below, **chunk1** \(the rabbit's face\) is specified in the **Group to fracture** parameter using the path **root/chunk1**\.
 ![\[Fracture layer in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-fracture-layer.png)
 
-## Export an asset for NVIDIA Blast {#nvidia-blast-export}
+## Export an asset for NVIDIA Blast 
 
 With the mesh fractured, you must export `.fbx` and `.blast` assets to be processed by **Asset Processor** for use in Open 3D Engine\.
 

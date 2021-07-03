@@ -34,7 +34,7 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
      You can use a **Float Constant** node, for example, to specify a float value between `0.0` and `1.0`\. A value of `0.0` means 100% of **Pose 1** and 0% of **Pose 2**\. A value of `0.6` weights 40% of **Pose 1** and 60% of **Pose 2**\. Other nodes that can specify **Weight** include the **Parameter** node, the **Smoothing** node, and so on\.
    + **Output Pose** - The result of the pose blending\.
 
-## Blend Two Node Attributes {#animation-editor-blending-blendtwo-attributes}
+## Blend Two Node Attributes 
 
 For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/user-guide/visualization/animation/animation-editor/blending-poses/#animation-editor-blending-attributes)\.
 

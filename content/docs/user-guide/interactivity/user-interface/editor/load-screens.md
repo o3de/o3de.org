@@ -12,7 +12,7 @@ Load screens support more than just UI canvases when using RAD Game Tools' Bink 
 
 To define the game and level loading screens, you set the file paths as parameters in `game.cfg` and `level.cfg`\.
 
-## Defining a Game Loading Screen {#ui-editor-load-screens-game}
+## Defining a Game Loading Screen 
 
 To define a game loading screen, first do one of the following:
 + Create the loading screen canvas in the **UI Editor** and save it in your O3DE project directory\.
@@ -46,7 +46,7 @@ game_load_screen_bink_path="Videos\GameLoadingScreen.bk2"
 game_load_screen_minimum_time=5
 ```
 
-## Defining a Level Loading Screen {#ui-editor-load-screens-level}
+## Defining a Level Loading Screen 
 
 To define a level loading screen, first do one of the following:
 + Create the loading screen canvas in the **UI Editor** and save it in your level's directory\.

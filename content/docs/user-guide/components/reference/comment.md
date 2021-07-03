@@ -13,7 +13,7 @@ The **Comment** component allows you to add long\-form text comments for compone
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/comment-component.png)
 
-## Comment Properties {#component-comment-properties}
+## Comment Properties 
 
 The **Comment** component has the following property:
 
@@ -21,7 +21,7 @@ The **Comment** component has the following property:
 Stores the user comment for the component entity\.
 Default: None
 
-## Using the Comment Component {#component-comment-setup}
+## Using the Comment Component 
 
 You can use this feature by adding the component to an entity in your level\.
 

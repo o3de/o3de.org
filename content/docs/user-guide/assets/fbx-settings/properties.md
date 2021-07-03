@@ -14,7 +14,7 @@ title: FBX Settings export properties
 + [FBX Settings Motions tab](/docs/user-guide/assets/fbx-settings/settings-motions-tab.md)
 + [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab.md)
 
-## FBX Settings overview {#fbx-properties-overview}
+## FBX Settings overview 
 
 With **FBX Settings** you can customize how **Asset Processor** exports your `.fbx` files as runtime assets\. **FBX Settings** presents options based on the contents of the selected `.fbx` file\.
 
@@ -24,7 +24,7 @@ Your `.fbx` files can contain any number of assets\. You can create a single `.f
 
 ![\[Processed FBX assets in Asset Browser.\]](/images/user-guide/fbx/ui-fbx-asset-browser.png)
 
-## Modify FBX Settings {#fbx-properties-modify}
+## Modify FBX Settings 
 
 1. In **O3DE Editor**, in **Asset Browser**, select the `.fbx` file to modify\.
 **Tip**

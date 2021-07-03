@@ -12,7 +12,7 @@ The **PhysX Ragdoll** component requires the [PhysX](/docs/user-guide/gems/refer
 
 For more information about the PhysX system, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/)\.
 
-## Using the PhysX Ragdoll Component {#physx-ragdoll-using-the-component}
+## Using the PhysX Ragdoll Component 
 
 You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
@@ -24,7 +24,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll\.
 
 1. Use the **Animation Editor** to create and control the physical representation of the ragdoll\. For more information, see [Creating and Simulating a PhysX Ragdoll](/docs/user-guide/visualization/animation/animation-editor/creating-and-simulating-physx-ragdoll/)\.
 
-## PhysX Ragdoll Component Properties {#physx-ragdoll-component-properties}
+## PhysX Ragdoll Component Properties 
 
 ![\[PhysX Ragdoll component properties.\]](/images/user-guide/component/physx/ui-physx-ragdoll-component-properties.png)
 

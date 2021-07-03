@@ -68,7 +68,7 @@ You can set the **Loop** parameter so that motion continues to play as long as t
 **Note**
 When you update properties in the Track View, the original values for the entity properties are overwritten and are not restored\. For example, if you set the **Start time** to `3.0` in the Track View, this updates the **Simple Motion** component properties in the **Entity Inspector**\. If you want to reuse an entity with a **Simple Motion** component after a track view sequence is completed, update the **Play speed** parameter; the **Play speed** parameter always resets to zero in the Track View\. You can also avoid this issue by not reusing entities in this way\.
 
-## Blending Motions in the Track View Editor {#blending-motions-in-track-view-editor}
+## Blending Motions in the Track View Editor 
 
 The **Simple Motion** component supports two motions at a time for blending: the currently playing motion and the previously played motion\. For example, you can blend two motions so that your actor smoothly transitions between a walk motion to a run motion\.
 

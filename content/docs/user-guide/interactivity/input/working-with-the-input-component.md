@@ -26,7 +26,7 @@ Follow these steps to create an `.inputbindings` file\.
 
 1. Enter a name for the `.inputbindings` file and click **Save**\.
 
-## Creating Input Event Groups {#input-event-groups}
+## Creating Input Event Groups 
 
 After you create your `.inputbindings` file, you can add input event groups for different actions\.
 
@@ -38,7 +38,7 @@ After you create your `.inputbindings` file, you can add input event groups for 
 1. For **Event Name**, enter a name for your event, such as *Action*\.
 ![\[\]](/images/user-guide/component/input-component-properties-3.png)
 
-## Creating Event Generators {#event-generators}
+## Creating Event Generators 
 
 After you create your input event group, you can add event generators to the group\. An event generator is a handler that generates the named event\. For example, a pressed key, a held mouse button, or a series of actions on a game controller results in the named event\.
 
@@ -60,11 +60,11 @@ After you create your input event group, you can add event generators to the gro
 
 1. In the **Entity Inspector**, in the **Input** component, for **Input to event binding**, click the browse \(**…**\) icon and select your `.inputbindings` file\.
 
-## Mapping Input Events to Gameplay Actions {#mapping-the-input-events-to-gameplay-actions}
+## Mapping Input Events to Gameplay Actions 
 
 After you create an `.inputbindings` file and specify your input events, you can use a Script Canvas graph or Lua script to map the input events to gameplay actions\. You can create your graph in a visual scripting environment with the **Script Canvas** editor or write your own scripts with the Lua Editor \(Lua IDE\)\.
 
-### Using a Script Canvas Graph for Input {#component-script-canvas-input}
+### Using a Script Canvas Graph for Input 
 
 You can create a Script Canvas graph that maps to your input events\. For more information, see [Creating Gameplay with Script Canvas](/docs/user-guide/scripting/script-canvas/intro.md)\.
 
@@ -80,7 +80,7 @@ You can create a Script Canvas graph that maps to your input events\. For more i
    In the following graph, the **Input Handler** node maps the **Event Name** `Action` to the `.inputbindings` file\.
 ![\[Example Script Canvas graph for the Input component.\]](/images/user-guide/component/input-configuration-script-canvas-example.png)
 
-### Using a Lua Script for Input {#component-input-lua-script}
+### Using a Lua Script for Input 
 
 You can also create a Lua script that maps to your input events\. For more information about Lua, see [Writing Lua Scripts](/docs/user-guide/scripting/lua/_index.md)\.
 
@@ -131,7 +131,7 @@ You can also create a Lua script that maps to your input events\. For more infor
    return tutorial_input
    ```
 
-## Testing Your Input Events {#testing-your-input-events-in-gamemode}
+## Testing Your Input Events 
 
 After you specify the Script Canvas graph or Lua script, you can test your input events\.
 

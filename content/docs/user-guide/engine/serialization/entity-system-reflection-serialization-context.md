@@ -32,7 +32,7 @@ AZ_TYPE_INFO_SPECIALIZE(AZStd::chrono::system_clock::time_point, "{5C48FD59-7267
 AZ_TYPE_INFO_SPECIALIZE(float, "{EA2C3E90-AFBE-44d4-A90D-FAAF79BAF93D}");
 ```
 
-## Fields {#component-entity-system-reflection-serialization-context-fields}
+## Fields 
 
 To associate a text string with the address to a field of a serialized object, use the `Field` function, as in the following example\. You can use the builder pattern to serialize multiple fields\.
 
@@ -43,7 +43,7 @@ serializedContext->Class<SerializedObject>()
 ;
 ```
 
-## Serializers {#component-entity-system-reflection-serialization-context-serializers}
+## Serializers 
 
 Serializers are a useful way to provide custom data formats\. If you want to do custom processing on an object before writing or reading it, you can override O3DE's default serializer\.
 
@@ -113,13 +113,13 @@ size_t Uuid::TextToData(const char* text, unsigned int, IO::GenericStream& strea
 }
 ```
 
-## Data Containers {#component-entity-system-reflection-serialization-context-data-containers}
+## Data Containers 
 
 To create custom serialization for templates and types that are not directly reflected through the `SerializeContext::Reflect` function, you can use data containers\.
 
 To create a data container, implement the `AZ::SerializeContext::IDataContainer` interface\. You can use this interface to provide serialization for a class or template of classes and let the user choose the elements to be serialized\. This is possible because `IDataContainer` allows the user to override an `EnumElements` function\. The `EnumElements` function determines which elements of the serialized class are enumerated and are therefore capable of being serialized\.
 
-### Templates {#component-entity-system-reflection-serialization-context-data-containers-templates}
+### Templates 
 
 Data containers provide the best way to add support for templates to the serialization context\. The following templates have a [metaclass](https://en.wikipedia.org/wiki/Metaclass) that implements the `IDataContainer` interface and serializes the templates\.
 
@@ -129,7 +129,7 @@ AZStd::basic_string<T>
 AZStd::unique_ptr<T>
 ```
 
-### Nontemplate Types {#component-entity-system-reflection-serialization-context-data-containers-nontemplate-types}
+### Nontemplate Types 
 
 You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`\. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object\.
 
@@ -350,7 +350,7 @@ void    ClearElements(void* instance, SerializeContext* deletePointerDataContext
 }
 ```
 
-## Using the DataContainer to Serialize a Template Class {#component-entity-system-reflection-serialization-context-data-containers-serialize-a-template-class}
+## Using the DataContainer to Serialize a Template Class 
 
 After you have defined a data container, you can use it to serialize a specific type\. For example, to set up serialization for the templated `AZStd::vector<T>,` you must serialize `SerializeGenericTypeInfo<T>` for `AZStd::vector`\. To create the class data structure, you use the following `Create<ContainerType>` function:
 
@@ -438,7 +438,7 @@ struct SerializeGenericTypeInfo< AZStd::vector<T, A> >
 };
 ```
 
-## Events {#component-entity-system-reflection-serialization-context-events}
+## Events 
 
 To process data before or after you read or write serialized data, you can write serialization event handlers\. For example, by handling serialization events,you can perform runtime initializations specific to the data that is serialized\.
 
@@ -468,7 +468,7 @@ if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(
 }
 ```
 
-## Data Overlays {#component-entity-system-reflection-serialization-context-versioning-data-overlays}
+## Data Overlays 
 
 You can use the serialization context to provide data from an external source during serialization\. These external sources of data are called *data overlays*\.
 

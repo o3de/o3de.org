@@ -16,7 +16,7 @@ You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physx-de
 + [Debugging with the ImGui Tool](#imgui-debugging-tool)
 + [Debug Options in the PhysX Configuration](#physx-debugging-configuration)
 
-## PhysX Debug Console Variables {#debugging-physx-console-variables}
+## PhysX Debug Console Variables 
 
 Enter the following console variables to debug your PhysX issues\.
 
@@ -62,7 +62,7 @@ physx_PvdDisconnect
 
 For more information, see [Using the Console Window](/docs/user-guide/editor/console.md)\.
 
-## Debugging with the ImGui Tool {#imgui-debugging-tool}
+## Debugging with the ImGui Tool 
 
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface \(**ImGui**\) tool\.
 
@@ -83,6 +83,6 @@ You must enable the ImGui gem to access this tool\. For more information, see [E
 ****
 
 
-## Debug Options in the PhysX Configuration {#physx-debugging-configuration}
+## Debug Options in the PhysX Configuration 
 
 You can also specify debug settings in the **PhysX Configuration** tool\. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)\.

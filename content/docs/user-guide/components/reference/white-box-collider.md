@@ -20,7 +20,7 @@ In the animation above, the **White Box Collider** component is applied to a sta
 
 In the animation above, the door was created with White Box and animated with a script\. Note When the **White Box** component is edited, the **White Box Collider** component automatically recognizes the changes to the mesh\. You can then test the changes immediately\.
 
-## White Box Collider properties {#component-white-box-collider-properties}
+## White Box Collider properties 
 
 ![\[White Box Collider component interface.\]](/images/user-guide/component/whitebox/ui-white-box-collider.png)
 

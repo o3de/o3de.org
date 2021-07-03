@@ -32,7 +32,7 @@ The following table lists current soft naming conventions and the actions that a
 |  `_lod1` `_lod2` `_lod3` `_lod4` `_lod5`  | Apply suffix to node name\. | Graphics |  `jack_lod1` `jack_lod2` `jack_lod3` `jack_lod4` `jack_lod5`  | Nodes are treated as LoD meshes\. The scene settings automatically add an LoD modifier with each suffixed node\. |
 | \_ignore | Apply suffix to node name\. | Graphics | jackSkeleton\_ignore | Asset Processor ignores and doesn't process nodes with the \_ignore suffix\. |
 
-## Viewing soft naming conventions {#viewing-the-fbx-soft-naming-convention}
+## Viewing soft naming conventions 
 
 You can use the System Entity Editor to view the current soft naming conventions for your project\.
 
@@ -45,7 +45,7 @@ You can use the System Entity Editor to view the current soft naming conventions
 If the **Scene Processing Config** section doesn't appear, choose **Add Component** and then choose **Scene Processing Config**\.
 ![\[Example System Entity Editor for default soft naming conventions.\]](/images/user-guide/fbx/ui-fbx-soft-naming-conventions.png)
 
-## Soft naming convention parameters {#understanding-the-soft-naming-convention-parameters}
+## Soft naming convention parameters 
 
 You can use the System Entity Editor to match the files that use the specified pattern for the node name or file name\. The soft naming conventions are matched based on the pattern of the node name or file name that you specify\.
 
@@ -79,7 +79,7 @@ Select one or more graph types that the virtual type is applied to\.
 **Inclusive**
 If enabled, the virtual type applies to all graph node types that are selected\. If disabled, the virtual type applies to all graph node types that are unselected\.
 
-## Examples {#soft-naming-convention-examples}
+## Examples 
 
 Using these parameters, you can customize how Asset Processor processes `.fbx` files that you import\.
 
@@ -107,7 +107,7 @@ You can pair a file name in a source asset file to a predefined O3DE virtual typ
 
 1. When Asset Processor processes your files, it checks for file names with the **anim\_** prefix and that use the **IAnimData** graph type\. If any file names match, Asset Processor assigns them the **Ignore** virtual type\.
 
-## Configuring soft naming conventions {#configuring-soft-naming-conventions}
+## Configuring soft naming conventions 
 
 The preconfigured soft naming conventions might not apply to your workflow\. You can change the existing soft naming conventions or create and delete them as needed\.
 
@@ -155,7 +155,7 @@ The preconfigured soft naming conventions might not apply to your workflow\. You
 
 1. Click **Save**\.
 
-## Moving FBX files between projects {#moving-fbx-files-between-project}
+## Moving FBX files between projects 
 
 Soft naming conventions are project\-specific\. As a result, different projects can process the `.fbx` file differently\.
 

@@ -16,7 +16,7 @@ The **Navigation** component provides path\-finding and path\-following function
 + [NavigationComponentNotificationBus EBus Interface](#component-navigation-ebusnotification)
 + [Navigation Pathing Cvars](#component-navigation-cvars)
 
-## Navigation Component Properties {#component-navigation-properties}
+## Navigation Component Properties 
 
 The **Navigation** component has the following properties:
 
@@ -53,13 +53,13 @@ Default value: `Transform`
 Set to true if you want to to allow the navigation agent to include the vertical velocity when navigating a path, or false if you just want the velocity to be constrained to the X and Y plane \(2D\)\. Vertical navigation can be used for flying entities or entities that move with the Transform method but must move vertically\. Enabling this property can also help prevent "stair stepping" for entities moving down ramps or steep terrain\.
 Default value: `false`
 
-## NavigationComponentRequestBus EBus Interface {#component-navigation-ebusrequest}
+## NavigationComponentRequestBus EBus Interface 
 
 Use the following request functions with the `NavigationComponentRequestBus` event bus \(EBus\) interface to communicate with other components of your game\.
 
 For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
 
-### FindPath {#navigation-ebus-findpath}
+### FindPath 
 
 Finds a requested path configuration\.
 
@@ -72,7 +72,7 @@ A unique identifier for this pathfinding request\.
 **Scriptable**
 No
 
-### FindPathToEntity {#navigation-ebus-findpathtoentity}
+### FindPathToEntity 
 
 Creates a pathfinding request to navigate toward the specified entity\.
 
@@ -85,7 +85,7 @@ A unique identifier for the pathfinding request\.
 **Scriptable**
 Yes
 
-### FindPathToPosition {#navigation-ebus-findpathtoposition}
+### FindPathToPosition 
 
 Creates a pathfinding request to navigate towards the specified world position\. Note that while this may seem like the obvious simple choice for pathing, it is often more useful to use FindPathToEntity with a dummy entity because then the pathing will automatically update if you move the dummy entity to a new location before pathing is complete\.
 
@@ -98,7 +98,7 @@ A unique identifier for the pathfinding request\.
 **Scriptable**
 Yes
 
-### Stop {#navigation-ebus-stop}
+### Stop 
 
 Stops all pathfinding operations for the provided `requestId`\. Use the ID to ensure that the request you want to cancel is the request that is currently processing\. If the specified `requestId` is different from the ID of the current request, then the Stop command is ignored\.
 
@@ -111,7 +111,7 @@ None
 **Scriptable**
 Yes
 
-### GetAgentSpeed {#navigation-ebus-getagentspeed}
+### GetAgentSpeed 
 
 Returns the current AI Agent's speed\.
 
@@ -124,7 +124,7 @@ Returns the current agent's speed as a float\.
 **Scriptable**
 Yes
 
-### SetAgentSpeed {#navigation-ebus-setagentspeed}
+### SetAgentSpeed 
 
 Updates the AI Agent's speed\.
 
@@ -137,7 +137,7 @@ None
 **Scriptable**
 Yes
 
-### GetAgentMovementMethod {#navigation-ebus-getagentmovementmethod}
+### GetAgentMovementMethod 
 
 Returns the current AI Agent's movement method\.
 
@@ -150,7 +150,7 @@ Returns the current agent's movement method\.
 **Scriptable**
 Yes
 
-### SetAgentMovementMethod {#navigation-ebus-setagentmovementmethod}
+### SetAgentMovementMethod 
 
 Updates the AI Agent's movement method\.
 
@@ -163,13 +163,13 @@ None
 **Scriptable**
 Yes
 
-## NavigationComponentNotificationBus EBus Interface {#component-navigation-ebusnotification}
+## NavigationComponentNotificationBus EBus Interface 
 
 Use the following notification functions with the `NavigationComponentNotificationBus` event bus \(EBus\) interface to communicate with other components of your game\.
 
 For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
 
-### OnSearchingForPath {#navigation-ebus-onsearchingforpath}
+### OnSearchingForPath 
 
 Indicates that the pathfinding request has been submitted to the navigation system\.
 
@@ -182,7 +182,7 @@ None
 **Scriptable**
 Yes
 
-### OnPathFound {#navigation-ebus-onpathfound}
+### OnPathFound 
 
 Indicates that a path has been found for the indicated request\.
 
@@ -196,7 +196,7 @@ Returns a boolean value indicating whether this path is to be traversed\.
 **Scriptable**
 No
 
-### OnTraversalStarted {#navigation-ebus-ontraversalstarted}
+### OnTraversalStarted 
 
 Indicates that traversal for the indicated request has started\.
 
@@ -209,7 +209,7 @@ None
 **Scriptable**
 Yes
 
-### OnTraversalInProgress {#navigation-ebus-ontraversalinprogress}
+### OnTraversalInProgress 
 
 Indicates that traversal for the indicated request is in progress\.
 
@@ -223,7 +223,7 @@ None
 **Scriptable**
 Yes
 
-### OnTraversalPathUpdate {#navigation-ebus-ontraversalpathupdate}
+### OnTraversalPathUpdate 
 
 Indicates that the path for the traversal has updated\. If the `nextPathPosition` and `inflectionPosition` are equal, they represent the end of the path\.
 
@@ -238,7 +238,7 @@ None
 **Scriptable**
 Yes
 
-### OnTraversalComplete {#navigation-ebus-ontraversalcomplete}
+### OnTraversalComplete 
 
 Indicates that traversal for the indicated request completed successfully\.
 
@@ -251,7 +251,7 @@ None
 **Scriptable**
 Yes
 
-### OnTraversalCancelled {#navigation-ebus-ontraversalcancelled}
+### OnTraversalCancelled 
 
 Indicates that traversal for the indicated request was canceled before succesful completion\. A path request may be cancelled if no path could be found or if the request was stopped by the game\.
 
@@ -264,7 +264,7 @@ None
 **Scriptable**
 Yes
 
-## Navigation Pathing Cvars {#component-navigation-cvars}
+## Navigation Pathing Cvars 
 
 **ai\_DrawPathFollower**
 Enables PathFollower debug drawing, displaying agent paths and safe follow target\.

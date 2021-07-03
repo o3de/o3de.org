@@ -7,7 +7,7 @@ title: Script Canvas
 
 Use the **Script Canvas** component to add a script to an entity\.
 
-## Script Canvas Component Properties {#component-script-canvas-properties}
+## Script Canvas Component Properties 
 
 The **Script Canvas** component has the following properties:
 

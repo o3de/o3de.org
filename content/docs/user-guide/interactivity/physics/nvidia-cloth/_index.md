@@ -12,7 +12,7 @@ weight: 300
 
 To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/)\.
 
-## NVIDIA Cloth features {#nvidia-cloth-features}
+## NVIDIA Cloth features 
 
 ****
 + Apply cloth data to meshes imported from `.fbx` files\.
@@ -26,7 +26,7 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/
 + **NVIDIA Cloth** gem's public API allows other systems and gems to access cloth simulation functionality\.
 + Debug cloth simulations and constraints with real\-time cloth debug visualizations\.
 
-## Using NVIDIA Cloth {#nvidia-cloth-topics}
+## Using NVIDIA Cloth 
 
 [Cloth component](/docs/user-guide/components/cloth.md) \- Cloth component reference\.
 
@@ -40,6 +40,6 @@ To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/
 
 [Cloth visual debugger](/docs/user-guide/interactivity/physics/nvidia-cloth/debugging.md) \- Enable the visual debugger for cloth simulations\.
 
-## NVIDIA Cloth references {#component-cloth-references}
+## NVIDIA Cloth references 
 
  [NVIDIA Cloth documentation](https://gameworksdocs.nvidia.com/NvCloth/1.1/index.html) at the NVIDIA GAMEWORKS developer portal\.

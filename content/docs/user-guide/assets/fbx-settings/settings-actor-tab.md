@@ -19,7 +19,7 @@ Actors are assets with at least one bone and can contain one or more skinned mes
 + [Skin modifier](#w31aac15b9c11c13c27)
 + [Tangents modifier](#w31aac15b9c11c13c29)
 
-## Actors tab properties {#fbx-settings-actors-tab-properties}
+## Actors tab properties 
 
 ![\[The FBX Settings Actors tab.\]](/images/user-guide/fbx/ui-fbx-settings-actors-tab.png)
 
@@ -48,19 +48,19 @@ Modifiers add additional specialized options for processing assets\. Choose the 
 + **Tangents**
 Some modifiers are not be available unless the gem that provides the modifier is enabled in your project\.
 
-## Comment modifier {#w31aac15b9c11c13c13}
+## Comment modifier 
 
 ![\[The FBX Settings Actors tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment.png)
 
 Add a comment to the file\. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example\. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group\.
 
-## Coordinate system change modifier {#w31aac15b9c11c13c15}
+## Coordinate system change modifier 
 
 ![\[The FBX Settings Actors tab Coordinate system change modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change.png)
 
 Modify the coordinate system of the actor\. Third\-party content creation applications use varying coordinate systems with content applications often rotating the direction of the forward axis\. The **Facing direction** property can be set to rotate the actor 180 degrees around its up axis to account for this difference\. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged\.
 
-## Level of Detail modifier {#w31aac15b9c11c13c17}
+## Level of Detail modifier 
 
 ![\[The FBX Settings Actor tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-lod.png)
 
@@ -81,7 +81,7 @@ The meshes for the highest level of detail, \[`0`\], and the corresponding skele
 
 For more information, see [Using Actor LODs to Optimize Game Performance](/docs/user-guide/visualization/animation/using-actor-LODs-optimize-game-performance.md)\.
 
-## Material modifier {#w31aac15b9c11c13c19}
+## Material modifier 
 
 ![\[The FBX Settings Actors tab Material modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-material.png)
 
@@ -97,7 +97,7 @@ When enabled, updates the texture map file names in the `.mtl` file to match the
 ****Remove unused materials****
 When enabled, removes materials that are present in the `.mtl` file that are not defined in the `.fbx` file\.
 
-## Mesh modifier {#w31aac15b9c11c13c21}
+## Mesh modifier 
 
 ![\[The FBX Settings Actors tab Mesh modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-mesh.png)
 
@@ -111,13 +111,13 @@ Vertex color streams contain per vertex color data that can be referenced by mat
 Set the vertex color precision to either 32 bit \(8 bits per channel\) or 128 bit \(32 bits per channel\)\.
 Vertex color streams contain four channels: red, green, blue, and alpha\. Setting the mode to 32 bit vertex color precision saves significant memory over 128 bit vertex color precision at a loss of dynamic range\. If you are targeting a platform with memory constraints, using 32 bit precision is a very useful optimization\. If you are targeting a platform that supports high dynamic range \(HDR\) display, 128 bit precision offers much greater color fidelity\.
 
-## Scale actor modifier {#w31aac15b9c11c13c23}
+## Scale actor modifier 
 
 ![\[The FBX Settings Actors tab Scale actor modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-scale-actor.png)
 
 The **Scale factor** modifier sets a uniform scale for the **Actor group**\. This setting is useful if your assets are created in an application that uses a different base standard unit of measurement than O3DE\.
 
-## Skeleton optimization modifier {#w31aac15b9c11c13c25}
+## Skeleton optimization modifier 
 
 ![\[The FBX Settings Actors tab Skeleton optimization modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-skeleton-optimization.png)
 
@@ -132,7 +132,7 @@ When enabled, bones that do not have colliders attached are optimized out of the
 **Critical bones**
 Choose the **Hierarchy** button to select bones that should not be optimized out of the hierarchy\. Your actor might have bones that have no skin weights such as attachment bones for weapons and accessories, for example, that you do not want optimized out of the hierarchy\.
 
-## Skin modifier {#w31aac15b9c11c13c27}
+## Skin modifier 
 
 ![\[The FBX Settings Actors tab Skin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-skin.png)
 
@@ -144,7 +144,7 @@ The maximum number of bones that can influence a vertex\. Values range from a mi
 **Weight threshold**
 The minimum bone weight per vertex\. Weight values beneath this threshold are ignored during export\. Values range from a minimum of **0** to a maximum of **0\.01**\.
 
-## Tangents modifier {#w31aac15b9c11c13c29}
+## Tangents modifier 
 
 ![\[The FBX Settings Actors tab Tangents modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-tangents.png)
 

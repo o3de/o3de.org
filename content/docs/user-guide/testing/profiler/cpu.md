@@ -22,7 +22,7 @@ The CPU profiler gathers usage statistics about how long a function or method ex
 1. To show or hide the line graph of a row in the tree, double\-click the row\.
 ![\[Double-click a row to show or hide its graph\]](/images/user-guide/profiler-cpu-row-double-click.png)
 
-## Understanding the Tree View {#profiler-cpu-understanding-tree-view}
+## Understanding the Tree View 
 
 The CPU profiler tree view represents a call hierarchy of profiler log points \(called *hooks*\)\. A profiler hook that is active while another call is active shows as a child of the first hook\. The hooks act as a stack: The last hook that was pushed onto the stack is the parent of the hook that was pushed onto the stack before it\. The tree view has the following information:
 
@@ -62,7 +62,7 @@ The running total of how many times this function was called\.
 **Thread ID**
 The thread on which this function was executed
 
-## Controlling the Display {#profiler-cpu-controlling-the-display}
+## Controlling the Display 
 
 You can use the toolbar to control how the captured CPU data is displayed:
 

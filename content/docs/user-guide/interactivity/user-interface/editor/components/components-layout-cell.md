@@ -26,7 +26,7 @@ After layout cell values are calculated, layout cell space is allocated by the f
 
 1. If space is still available after that, then the **Extra Size Ratio** value is used to determine how to allocate the remaining space\. This ratio is relative to the child's siblings\. For example, if one child's extra size ratio is 1, and another child's is 2, then the second child gains twice as much extra space as the first child\. An extra size ratio of 0 means that no more space is allocated once the target size is reached\.
 
-## Using the LayoutCell Component {#ui-editor-components-layout-cell-using}
+## Using the LayoutCell Component 
 
 You can apply the **LayoutCell** component to the children of a layout row or column to override the layout cell's default calculations\.
 
