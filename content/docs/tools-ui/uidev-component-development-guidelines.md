@@ -6,7 +6,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to O3DE, are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
+For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to OPen 3D Engine (O3DE), are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
 
 ## Style sheets and StyleManager
 
@@ -55,7 +55,7 @@ For standalone tools with their own Qt Application, you must take some extra ste
 
 Writing code to extend the core O3DE Editor? Here are some high-level suggestions to comply with the UI guidelines:
 
-+ The UI styling uses an AWS standard color palette, which includes grays and blues. Creating a custom style and color override will have your tool looking inconsistent with the rest of the O3DE Editor. We suggest avoiding custom style overrides whenever possible so that O3DE appears as one cohesive application.
++ The UI styling uses an O3DE standard color palette, which includes grays and blues. Creating a custom style and color override will have your tool looking inconsistent with the rest of the O3DE Editor. We suggest avoiding custom style overrides whenever possible so that O3DE appears as one cohesive application.
 + The Editor now supports vector file formats for icons, which prevents them from appearing blurry or pixelated on high DPI displays. Make sure to use SVG files for your icons, and replace old PNGs and JPGs with vector graphics images in existing tools if possible.
 + When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16.
 + Moving forward, we want to make sure the user experience is cohesive and familiar throughout the whole O3DE Editor. You should avoid making one-off custom changes; and when you add new features, add them to the library so that they are available to the whole Editor instead of just a single tool.
@@ -63,7 +63,7 @@ Writing code to extend the core O3DE Editor? Here are some high-level suggestion
 
 ## Frequently asked questions
 
-### Can I copy the code example directly from the AmazonQtControlGallery?
+### Can I copy the code example directly from the O3DEQtControlGallery?
 
 Yes. Please note that not all settings will be covered by this tool. Use this extensions guide and the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html) to find additional examples and documentation.
 
