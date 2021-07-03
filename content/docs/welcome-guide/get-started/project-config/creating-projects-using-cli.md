@@ -1,30 +1,30 @@
 ---
 linktitle: Creating Projects Using the CLI
-title: Creating Projects Using the Command Line
+title: Creating Projects Using the Command Line Interface
 description: Learn how to create and build new Open 3D Engine (O3DE) projects from the default project template using the CLI.
 weight: 200
 toc: true
 ---
 
-This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here will guide you through the following steps:
+This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here guide you through the following steps:
 
 * Create a new O3DE project using the command line interface (CLI).
 * Create Visual Studio project files in your O3DE project directory.
-* Build the O3DE project.
+* Build your O3DE project.
 
-At the end of the tutorial you'll have a new O3DE project based on the default project template, opened in the O3DE **Editor**.
+At the end of the tutorial you'll have a new O3DE project based on the default project template, opened in the **O3DE Editor**.
 
 ## Prerequisites
 
-The instructions that follow assume you have the following:
+The following instructions assume that you have:
 
-* O3DE installed or built as an SDK on your computer. For help, see [Setup](/docs/welcome-guide/setup).
-* An O3DE engine registered in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, see [Register the Engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
-* Met all hardware and software requirements listed in [System Requirements](/docs/welcome-guide/setup/requirements).
+* O3DE installed or built as an SDK on your computer. For help, refer to [Setting up Open 3D Engine](/docs/welcome-guide/setup).
+* An O3DE engine registered in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
+* Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/setup/requirements).
 
 ## Create a new O3DE project
 
-Project directories can be located either in the same directory as the O3DE root directory or outside of this directory. The latter are referred to as "external projects" in this documentation.
+You can create project directories either in the same directory as the O3DE root directory or outside of this directory. This documentation refers to the latter as "external projects".
 
 This tutorial uses the following project name and directories in the examples:
 
@@ -69,7 +69,7 @@ Do not use trailing slashes when specifying the path to the packages directory.
 
 Use CMake to build the Visual Studio project in the build directory of your O3DE project.
 
-1. Build the project launcher using the solution you created in the `/build/windows_vs2019` directory. The `profile` build configuration is shown in this example.
+1. Build the project launcher using the solution you created in the `build/windows_vs2019` directory. The `profile` build configuration is shown in this example.
 
     ```cmd
     cmake --build build/windows_vs2019 --target MyProject.GameLauncher --config profile -- /m
@@ -79,7 +79,7 @@ Use CMake to build the Visual Studio project in the build directory of your O3DE
 The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
-1. If you're using an installed O3DE engine (or engine SDK), the project should build within minutes. In this example, when the build is complete, the project binaries can be found under `/bin/Windows/profile`.
+1. If you're using an installed O3DE engine (or engine SDK), the project should build within minutes. In this example, when the build is complete, the project binaries can be found under `build/windows_vs2019/bin/profile` in the project directory.
 
 1. Run the O3DE Editor to verify the project is ready to use.
 
