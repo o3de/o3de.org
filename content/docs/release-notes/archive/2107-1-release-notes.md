@@ -110,7 +110,7 @@ Looking for support for your favorite third-party libraries and cloud service SD
 
 ### Amazon Web Services
 
-* GameLift Gem support: Amazon Web Services (AWS) brings you a Gem for GameLift support, enabling you to host multiplayer games with scaling support, as well as other cloud features. [Read the AWS GameLift Gem docs here],(/docs/user-guide/gems/reference/aws/aws-gamelift/) and read up on GameLift proper in [the AWS official GameLift documentation.](https://docs.aws.amazon.com/gamelift/index.html)
+* GameLift Gem support: Amazon Web Services (AWS) brings you a Gem for GameLift support, enabling you to host multiplayer games with scaling support, as well as other cloud features. [Read the AWS GameLift Gem docs here](/docs/user-guide/gems/reference/aws/aws-gamelift/), and read up on GameLift proper in [the AWS official GameLift documentation.](https://docs.aws.amazon.com/gamelift/index.html)
 
 * AWS Integrations Gems: AWS also has developed several Gems for common cloud service support, such as S3 Storage. They include:
   * [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth/): The AWS Client Auth Gem provides solutions for client authentication and AWS authorization.
