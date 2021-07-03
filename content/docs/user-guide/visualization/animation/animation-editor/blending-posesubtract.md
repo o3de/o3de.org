@@ -32,7 +32,7 @@ With the **Pose Subtract** node, you can generate an additive pose\. You can the
    + **Pose 2** - The pose to be subtracted from the base pose\.
    + **Output Pose** - The result of the pose subtraction \(**Pose 1** \- **Pose 2**\)\.
 
-## Pose Subtract Node Attributes {#animation-editor-blending-posesubtract-attributes}
+## Pose Subtract Node Attributes 
 
 For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses#animation-editor-blending-attributes)\.
 

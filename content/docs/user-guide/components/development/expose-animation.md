@@ -15,7 +15,7 @@ To include custom components in cinematic cut scenes and movies rendered to disk
 
 1. Reflect your component to the edit context and the behavior context\. Edit context reflection exposes your component in **Entity Inspector**, and behavior context reflection exposes it in the Track View\.
 
-## Exposing a Custom Component: Example {#component-entity-system-track-view-example}
+## Exposing a Custom Component: Example 
 
 The following example assumes that a custom component called `ImaginaryTargetComponent` has been created\. The component has a `Vector3` property called `ImaginaryPosition` that you want to animate in **Track View**\. A request bus called `ImaginaryTargetComponentBus` has also been created for the component\. This example assumes that you are familiar with programming event buses and component handlers for them\. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/) and [Creating a Component](/docs/user-guide/components/development/create-component/)\.
 
@@ -151,7 +151,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
    If you have an angular parameter in radians that you want to **Track View** to convert to degrees in its user interface, use `AZ::Crc32 PropertyUnitsRadian`\.
 
-## Viewing the Result {#component-entity-system-track-view-viewing-the-result}
+## Viewing the Result 
 
 Now you can view how the example component and property appear in the **Entity Inspector** and the Track View\.
 

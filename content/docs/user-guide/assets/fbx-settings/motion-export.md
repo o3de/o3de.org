@@ -7,7 +7,7 @@ title: FBX Settings motion export
 
 **Motions** contain keyframe animated sequences that can be sequenced and blended in **Animation Editor** and applied to actors to create behaviors\. Motions must use identical skeleton hierarchies as their actor counterparts\.
 
-## Export a motion {#fbx-exporting-motions}
+## Export a motion 
 
 1. Copy your `.fbx` file to a sub directory in your project.
 

@@ -12,7 +12,7 @@ You can add comments to your script to describe how it works\.
 + [Adding Block Comment Nodes](#adding-block-comment-nodes)
 + [Changing Comment Node Font Settings](#change-font-settings-for-comments)
 
-## Adding Comment Nodes {#adding-comment-nodes}
+## Adding Comment Nodes 
 
 A **Comment** node is a floating block of text that you can move in the **Script Canvas** editor canvas\.
 
@@ -29,7 +29,7 @@ A **Comment** node is a floating block of text that you can move in the **Script
    + Select the node and press **Delete**\.
    + Right\-click the node and choose **Delete Node**\.
 
-## Adding Block Comment Nodes {#adding-block-comment-nodes}
+## Adding Block Comment Nodes 
 
 The **Block Comment** node is similar to the **Comment** node, except that you can also use block comments to contain other nodes and organize your script into sections\. You can add other nodes to the **Block Comment** node to tag a specific region or add colors to organize the different parts of your script\.
 
@@ -58,7 +58,7 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 **Note**
 Nodes inside the **Block Comment** node are not deleted\.
 
-## Changing Comment Node Font Settings {#change-font-settings-for-comments}
+## Changing Comment Node Font Settings 
 
 You can change the font settings in comment nodes to label and organize your script\. Font settings apply to the entire comment; you cannot specify individual sections of the comment\.
 

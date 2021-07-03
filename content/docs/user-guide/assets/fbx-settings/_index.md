@@ -20,7 +20,7 @@ Meshes, actors, PhysX colliders, and motions created in third\-party content cre
 + [Multiple UV sets for meshes and actors](/docs/user-guide/assets/fbx-settings/multiple-uv-sets.md)
 + [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming.md)
 
-## FBX Settings introduction {#fbx-settings-intro}
+## FBX Settings introduction 
 
  When you place `.fbx` files in an asset directory in your project, **Asset Processor** detects the new or modified files, determines the contents of the files, and then exports the data using basic settings\. However, `.fbx` files can be complex and might contain data that is necessary for an artist, animator, or designer, but not necessary for a runtime asset\. Data in the `.fbx` file might require special handling such as higher precision vertex data or a coordinate space change\. With **FBX Settings**, you can specify what data in the `.fbx` file to export, and how the data should be processed by **Asset Processor**\.
 

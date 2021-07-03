@@ -8,7 +8,7 @@ title: Using Container Types (Arrays and Maps)
 
 Script Canvas has support for arrays and maps\.
 
-## Arrays {#script-canvas-containers-arrays}
+## Arrays 
 
 Arrays provide a dynamic continuous area of memory that can hold storage of a given type\.
 
@@ -29,13 +29,13 @@ Arrays provide a dynamic continuous area of memory that can hold storage of a gi
    + \(Optional\) To pin the array to the list of variables in the **Variable Manager**, select **Pin To Variable List**\. Then, when you click **Create Variable**, the array appears in the list as **Array<*data\_type*>**\. This is useful when you reuse the same type frequently\.
 ![\[Array variable pinned to the variable list in Variable Manager.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-3.png)
 
-### Array Pin Icons {#script-canvas-containers-array-pin-icons}
+### Array Pin Icons 
 
 Some nodes, like **OnEntitiesSpawned** or **Get String Array**, provide data as arrays\. The data pins for the arrays on such nodes have a square icon\. The color of the icon shows the data type for the array\.
 
 ![\[Array data pins color-coded by data type.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-4.png)
 
-### Array Operation Nodes {#script-canvas-containers-array-operation-nodes}
+### Array Operation Nodes 
 
 In the **Node Palette**, the **Containers** section has nodes that you can use to add, get, and remove elements from arrays\.
 
@@ -57,7 +57,7 @@ All pins have an **Out** pin except **For Each**, which has an **Each** pin that
 
 ![\[For Each node connection pins.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-6.png)
 
-#### Automatic Data Pin Typing {#script-canvas-containers-automatic-data-pin-typing}
+#### Automatic Data Pin Typing 
 
 The pins on container operation are context\-sensitive\. Data input and output pins automatically take on the data type of the pin to which they are connected\.
 
@@ -73,13 +73,13 @@ When you connect the **Array<String>** pin to the **Source** pin on the **Add El
 
 ![\[Example of automatic data pin typing.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-8.png)
 
-#### Chaining Array Operation Nodes {#script-canvas-containers-chaining-array-operation-nodes}
+#### Chaining Array Operation Nodes 
 
 Array operation nodes typically have a **Container** output pin\. You can use this output pin to chain several operations on the same array, as the following image shows\.
 
 ![\[Chained array operation nodes.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-9.png)
 
-## Maps {#script-canvas-containers-maps}
+## Maps 
 
 Maps are containers of key\-value pairs\. Maps in the **Variable Manager** have a small split rectangular icon\.
 
@@ -103,13 +103,13 @@ Maps are containers of key\-value pairs\. Maps in the **Variable Manager** have 
    + \(Optional\) To pin the map to the list of variables in the **Variable Manager**, select **Pin To Variable List**\. Then, when you click **Create Variable**, the map appears in the list as **Map<*key\_data\_type*,*value\_data\_type*>**\. This is useful when you reuse the same key pair combination frequently\.
 ![\[A map variable pinned to the variable list in the Variable Manager.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-13.png)
 
-### Map Pin Icons {#script-canvas-containers-map-pin-icons}
+### Map Pin Icons 
 
 You can use **Get** or **Set** nodes to get values from a map or make changes to the map\. The data pins for the maps have square icons with two colors\. One color represents the data type for the key, the other for the value\.
 
 ![\[Dual-color map data pin icons.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-14.png)
 
-### Map Operation Nodes, Data Pin Typing, and Chaining {#script-canvas-containers-map-operation-nodes-data-pin-typing-and-chaining}
+### Map Operation Nodes, Data Pin Typing, and Chaining 
 
 Maps use the same container operation nodes as arrays\. As with arrays, data pins automatically take on the data types of the map to which they are connected, as the following image shows\.
 

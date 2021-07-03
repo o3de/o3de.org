@@ -18,7 +18,7 @@ You can use scene queries to find nearby objects using the following methods\.
 **Note**
 Scene queries can have a performance cost\.
 
-## Raycast {#physx-scene-queries-raycasts}
+## Raycast 
 
 Raycast queries are the most common scene query\. A raycast query takes a point and direction, with a distance, and returns the closest collider that intersected the ray\.
 
@@ -76,7 +76,7 @@ The following tables describe the properties for the `RayCastRequest` and `RayCa
 | m\_shape |  Shape on the body that was hit\.  |
 | m\_material |  Shape on the body that was hit\.  |
 
-## Shapecast {#physx-scene-queries-shapecasts}
+## Shapecast 
 
 A shapecast query is similar to a raycast query except that a shapecast query takes a shape as well as a point and direction\. The shape is swept along the ray to form a volume\. Anything that intersects with this volume is returned from the query\.
 
@@ -121,7 +121,7 @@ You can specify the maximum number of hits that can be collected from a `ShapeCa
 | m\_filterCallback |  Custom callback function provided by the game to filter out specific objects\.  |
 |  `m_queryType`  |  Includes static, dynamic, or both\.  |
 
-## Overlap {#physx-scene-queries-overlap}
+## Overlap 
 
 Overlap queries are simpler, as they don't take a direction or distance\. Overlap queries simply return all objects that intersect a shape at specified location in the world\. There is only one multiple version using this method\.
 

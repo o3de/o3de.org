@@ -20,7 +20,7 @@ Because **White Box** is implemented as a component, you can create well\-define
 + [White Box properties](#component-white-box-properties)
 + [White Box edit mode](#component-white-box-edit-mode)
 
-## White Box properties {#component-white-box-properties}
+## White Box properties 
 
 ![\[White Box component interface.\]](/images/user-guide/component/whitebox/ui-white-box.png)
 
@@ -56,11 +56,11 @@ Choose this button to enter edit mode and modify the white box mesh\. For inform
 ****Export****
 Export the mesh to a `.obj` file\. The `.obj` file can be loaded into a 3D modeling application and used as a template for creating the production mesh asset for the entity\.
 
-## White Box edit mode {#component-white-box-edit-mode}
+## White Box edit mode 
 
 In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by selecting and dragging the face, edge, and vertex components of the white box mesh\. To begin, add a **White Box** component to an entity, choose a default primitive shape in the **White Box** component interface, and choose **Edit** to enter edit mode\.
 
-### Move {#component-white-box-edit-move}
+### Move 
 
 ****Move polygon****
 
@@ -92,7 +92,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ![\[White Box move vertex animation.\]](/images/user-guide/component/whitebox/white-box-move-vertex.gif)
 
-### Scale {#component-white-box-edit-scale}
+### Scale 
 
 ****Scale polygon****
 
@@ -128,7 +128,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ![\[White Box scale edge animation.\]](/images/user-guide/component/whitebox/white-box-non-uniform-scale-edge.gif)
 
-### Extrude {#component-white-box-edit-extrude}
+### Extrude 
 
 ****Extrude polygon****
 
@@ -168,7 +168,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ![\[White Box extrude scale animation.\]](/images/user-guide/component/whitebox/white-box-extrude-scale.gif)
 
-### Flip edge {#component-white-box-flip-edge}
+### Flip edge 
 
 ****Flip edge****
 
@@ -178,7 +178,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ![\[White Box flip edge animation.\]](/images/user-guide/component/whitebox/white-box-flip-edge.gif)
 
-### Hide/Show edge {#component-white-box-hide-show-edge}
+### Hide/Show edge 
 
 ****Hide an edge****
 
@@ -196,7 +196,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ![\[White Box extrude edge animation.\]](/images/user-guide/component/whitebox/white-box-show-edge.gif)
 
-### Hide/Show vertex {#component-white-box-hide-show-vertex}
+### Hide/Show vertex 
 
 ****Hide a vertex****
 

@@ -9,7 +9,7 @@ weight: 400
 
 The following are some best practices for using script events\.
 
-## Ensure Entities are Activated Before Events are Sent {#script-events-best-practices-ensure-entity-activation-before-sending}
+## Ensure Entities are Activated Before Events are Sent 
 
 Sending events during entity activation can have undesired results\. Because the order of activation of entities is not guaranteed, when an event is sent during activation, some entities that need to handle the event might not receive it\. In particular, the **On Graph Start** and **On Entity Activated** events are subject to activation order issues\.
 
@@ -17,14 +17,14 @@ To ensure that all entities that need to listen for and handle a given script ev
 
 ![\[Using the Tick Delay node in Script Canvas to ensure that entities are activated before events are sent.\]](/images/user-guide/script-canvas-script-events-9.png)
 
-## Be Aware of Script Event Asset Versioning {#script-events-best-practices-asset-versioning}
+## Be Aware of Script Event Asset Versioning 
 
 Because Script Events are user\-created assets, problems can occur when an asset that is referenced in existing scripts or Script Canvas graphs changes\.
 
 **Note**
 Script Canvas provides Script Event version validation\. When a Script Event asset is modified, Script Canvas updates the Script Event nodes that reference it\. If you open a graph that has a Script Event that has been modified, the graph is marked as modified\. To update the Script Event nodes to their latest versions, save the graph\.
 
-## Use Script Events Instead of the Gameplay Notification Bus System {#script-events-gameplay-notification-bus-system-deprecation}
+## Use Script Events Instead of the Gameplay Notification Bus System 
 
 Script events offer the following advantages over the [gameplay bus](/docs/userguide/components/entity-system-gameplay-bus.md) system\. Script events:
 + Are data driven\.
@@ -38,7 +38,7 @@ For these reasons, script events supersede the gameplay notification bus system 
 + `BehaviorGameplayNotificationBusHandler`
 + `GameplayEventHandlerNode` \(Legacy\)
 
-### Migrating to Script Events {#script-events-migrating-to}
+### Migrating to Script Events 
 
 If your project uses `GameplayNotificationBus`, you can modify it to use script events\.
 

@@ -33,7 +33,7 @@ The **Play** toolbar has the following controls\.
 **Note**
 You can also manually adjust the playhead along the timeline\. At the top of the sequence timeline, select and drag the playhead to your preferred location\.
 
-## Setting the In and Out Markers {#setting-the-in-out-markers}
+## Setting the In and Out Markers 
 
 The **In** and **Out** markers are small red triangles at the top of the sequence timeline\. By default, the **In** and **Out** markers are set to the beginning and end of the sequence\. You can move the markers by right\-clicking at the top of the timeline where the frames/seconds are listed\. Depending on where you right\-click, the Track View identifies which marker is closest to the mouse cursor and moves that one\.
 

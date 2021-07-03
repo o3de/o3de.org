@@ -10,7 +10,7 @@ On the **Global Configuration** tab, you can configure world settings and editor
 
 ![\[PhysX Global Configuration tab\]](/images/user-guide/physx/physx-configuration-1.png)
 
-## System Configuration {#physx-configuration-global-world}
+## System Configuration 
 
 The following table describes the settings for **System Configuration**\.
 
@@ -24,7 +24,7 @@ The following table describes the settings for **System Configuration**\.
 | Shapecast Buffer Size |  Maximum number of hits that can be returned from a shapecast query\.  The default is `32`\.  |
 | Overlap Query Buffer Size |  Maximum number of hits that can be returned from an overlap query\.  The default is `32`\.  |
 
-## Physics Materials {#physx-configuration-global-materials}
+## Physics Materials 
 
 The following table describes the settings for **Physics Materials**\.
 
@@ -35,7 +35,7 @@ The following table describes the settings for **Physics Materials**\.
 | Default Physics Material  |  Properties of the default physics material used for this project. See [Physics material properties](/docs/user-guide/interactivity/physics/nvidia-physx/materials/#physics-material-properties) for a detail description of each property\.  |
 | Physics Material Library  |  The physics material library to use for this project\.  |
 
-## Scene Configuration {#physx-configuration-global-scene}
+## Scene Configuration 
 
 The following table describes the settings for **Scene Configuration**\.
 
@@ -48,7 +48,7 @@ The following table describes the settings for **Scene Configuration**\.
 | Persistent Contact Manifold |  If set, attempts to improve the calculation of the entities that are colliding and preserves this data between frames\.  Enabled by default, which is the recommended setting\. Persistent manifolds store the contact data created in one frame for potential reuse in subsequent frames\. For example, if the corner of box A collides with the side of box B, the contact data is stored and the manifold stores the collision point\. If box A's corner no longer collides in approximately in the same location in the next frame, the data is disregarded\. If box A moves too far \(for example, if it rotates so far that the corner no longer touches\), that data is discarded\. Otherwise, the manifold provides faster collision results by using the data from the previous frame to calculate the collision\. Although persistent manifolds require more memory, they improve performance and the accuracy of the simulation by reducing jitter and other unwanted physics artifacts\.   |
 | Bounce Threshold Velocity |  Relative velocity below which colliding objects will not bounce\. The default is `2.0`\.  |
 
-## Editor Configuration {#physx-configuration-global-editor}
+## Editor Configuration 
 
 The following options relate to the **Debug Draw COM** \(center of mass\) option of the [PhysX Rigid Body](/docs/user-guide/components/physx-rigid-body-physics.md) component\.
 
@@ -68,7 +68,7 @@ The following options relate to the **Debug Draw COM** \(center of mass\) option
 **Note**
 These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/) gem\.
 
-## Wind Configuration {#physx-configuration-global-wind}
+## Wind Configuration 
 
 The following table describes the settings for **Wind Configuration**\. See [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider/) for more details\.
 

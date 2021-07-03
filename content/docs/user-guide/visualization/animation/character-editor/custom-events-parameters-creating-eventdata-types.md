@@ -78,7 +78,7 @@ You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emo
    ...
    ```
 
-## Example {#char-animation-editor-custom-events-parameters-creating-eventdata-types-example}
+## Example 
 
 The following example shows the completed `LeftFootEvent` sample `EventData` subclass and the code to add the event to a motion\.
 
@@ -125,7 +125,7 @@ auto footstepData = GetEMotionFX().GetEventManager()->FindOrCreateEventData<Left
 motion->GetEventTable()->FindTrackByName("Sound")->AddEvent(0.2f, footstepData);
 ```
 
-## More About the Equal Function {#char-animation-editor-custom-events-parameters-the-equal-function}
+## More About the Equal Function 
 
 The `Equal` function tests whether two `EventData` instances are equal\.
 

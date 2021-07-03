@@ -35,6 +35,6 @@ The layers that you define are specific to your game\. When a collider is create
 1. In the **PhysX Collider** component, for **Collision Layer**, choose one of the colliders that you created from the drop\-down list\.
 ![\[The PhysX Collider component in the Entity Inspector.\]](/images/user-guide/physx/physx-configuration-3.png)
 
-## Notes {#physx-configuration-collision-layers-notes}
+## Notes 
 + If you rename a layer, its references are updated automatically, but you can't reorder layers\.
 + If an entity with a **PhysX Collider** component is selected in the viewport and you use the **PhysX Configuration** window to create, rename, or delete a collision layer, the changes do not appear in the **Entity Inspector**\. To see the changes, deselect and reselect the entity in the viewport\.

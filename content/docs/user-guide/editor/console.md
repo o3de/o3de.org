@@ -15,7 +15,7 @@ In O3DE Editor, the console window shows a running list of all editor commands, 
 + [Console in Depth](/docs/user-guide/editor/console-cvars-commands.md)
 + [Console Variable Tutorial](/docs/user-guide/engine/cvars.md)
 
-## Viewing the Console Window {#viewing-the-console-window}
+## Viewing the Console Window 
 
 You can enter commands directly in the console window or search and edit console variables\.
 
@@ -29,7 +29,7 @@ You can enter commands directly in the console window or search and edit console
 1. Enter a name to search for a specific console variable\. To learn more about the console variable, pause on the name\.
 ![\[View console variables in the console window.\]](/images/user-guide/console-variables.png)
 
-## Exporting All Console Commands and Variables {#exporting-console-variables-cvars}
+## Exporting All Console Commands and Variables 
 
 You can retrieve a complete list of console commands and variables, including their descriptions and assigned values\.
 
@@ -45,7 +45,7 @@ You can retrieve a complete list of console commands and variables, including th
 
 1. You can specify a sub\-string parameter to restrict the results that you want\. For example, the DumpCommandsVars i\_ command exports all commands and variables that begin with the prefix `i_`, such as `i_giveallitems` and `i_debug_projectiles`\.
 
-## Configuring Console Variables {#configuring-console-variables-cvars}
+## Configuring Console Variables 
 
 Console variables can also be set in code or specified in configuration files\. Console variables are executed in the following order:
 
@@ -61,7 +61,7 @@ Console variables can also be set in code or specified in configuration files\. 
 
 The order of execution is also the override order\. For example, console variables set in code override those set in configuration files \(and `level.cfg` overrides `user.cfg`, and so on\)\. Console variables set in flow graphs override any identical console variables set in code\. Finally, console variables typed directly into the console override all the other console variable settings\.
 
-### Configuring Console Variables in the Console {#configuring-console-variables-cvars-with-the-console}
+### Configuring Console Variables in the Console 
 
 You can specify values for console variables in the console to apply changes to your level\.
 
@@ -70,7 +70,7 @@ You can specify values for console variables in the console to apply changes to 
   + In the **Console Variables** window, search for the variable name, double\-click the value, and then enter the value that you want\.
   + In the **Console** command line, enter the console variable and its value, and then press **Enter**\. For example, enter the r\_DisplayInfo=1 command to display debugging information in the viewport\.
 
-### Configuring Console Variables in Configuration Files {#configuring-console-variables-cvars-with-the-configuration-file}
+### Configuring Console Variables in Configuration Files 
 
 You can specify values for console variables in the configuration files, such as the level configuration file \( `level.cfg`\)\.
 

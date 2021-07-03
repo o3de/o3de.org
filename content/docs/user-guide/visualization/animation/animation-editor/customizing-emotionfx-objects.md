@@ -7,7 +7,7 @@ title: Customizing EMotionFX Objects
 
 The EMotion FX API supports registering custom object types, including state machine nodes, blend tree nodes, transitions, and conditions\. You can define custom object types in your game code or a custom gem\. This allows you to have granular control of the O3DE animation system\.
 
-## Registering Custom Objects {#animation-editor-registering-custom-objects}
+## Registering Custom Objects 
 
 Before registering custom objects, activate the EMotion FX `SystemComponent` to ensure the EMotion FX runtime is initialized correctly\. Then use an EBus call to the `EMotionFXRequestBus::Events::RegisterAnimGraphObjectType` method\. You can ensure that EMotion FX runtime is activated by registering your custom node from a component that has a dependency on `EmotionFXAnimationService`\. You do not need to manually instantiate the EMotion FX `SystemComponent` and call `Activate`; component dependencies handle these tasks\.
 
@@ -32,7 +32,7 @@ Before registering custom objects, activate the EMotion FX `SystemComponent` to 
    );
    ```
 
-## Implementing AnimGraphObject Subclasses {#animation-editor-implementing-animgraphobject-subclasses}
+## Implementing AnimGraphObject Subclasses 
 
 `AnimGraphObject` is the base class for all objects in the animation graph\. The constructor on the base class is protected; instead, objects are instantiated with the `Create()` method\. The O3DE animation system \(EMotion FX\) uses an instance of `AnimGraphObject` to create other instances by calling the `Clone()` method\.
 

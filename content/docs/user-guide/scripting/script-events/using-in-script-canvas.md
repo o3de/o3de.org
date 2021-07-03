@@ -8,7 +8,7 @@ weight: 200
 
 Script Canvas scans for and detects script event assets, so after you define a script event, you can use it in Script Canvas\.
 
-## Script Events in the Node Palette {#script-events-node-palette}
+## Script Events in the Node Palette 
 
 Script event assets appear by default in the **Script Events** category in the Script Canvas editor **Node Palette**\.
 
@@ -17,7 +17,7 @@ Script event assets appear by default in the **Script Events** category in the S
 **Note**
 To change the name of the category, open the script event's asset definition in the Asset Editor and edit the `Category` property\.
 
-## Sending Events {#script-events-sending}
+## Sending Events 
 
 You can send an event by adding a **Send** *method\_name* node to a Script Canvas graph\.
 
@@ -33,7 +33,7 @@ You can send an event by adding a **Send** *method\_name* node to a Script Canva
 
 1. Connect this node to the appropriate logic and data inputs\. When the Script Canvas graph runs, it sends the event to the entities or systems to which the node is connected\.
 
-## Handling Events {#script-events-handling}
+## Handling Events 
 
 You can handle an event by adding a **Receive** *method\_name* node to a Script Canvas graph\.
 

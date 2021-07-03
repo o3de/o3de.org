@@ -8,7 +8,7 @@ title: Creating Comment and Group Presets
 
 You can save custom node comment and node group settings as presets that you can conveniently reuse\. In a team setting, these presets can help you create your own coloring and naming conventions to improve clarity and consistency among Script Canvas graphs\.
 
-## Customizing the Look of a Comment or Group {#script-canvas-comment-and-group-presets-customizing-the-look-of-a-comment-or-group}
+## Customizing the Look of a Comment or Group 
 
 Before you create a preset based on an existing node comment or node group, customize its color and font by using the **Background Color** and **Font Settings** options in **Node Inspector**\.
 
@@ -16,7 +16,7 @@ Before you create a preset based on an existing node comment or node group, cust
 
 For more information, see [Customizing Groups](/docs/userguide/scripting/scriptcanvas/node-groups#script-canvas-node-groups-customizing)\.
 
-## Creating and Using Presets {#script-canvas-comment-and-group-presets-creating-and-using}
+## Creating and Using Presets 
 
 You can create a preset in the Script Canvas editor by using an existing node group or node comment\.
 
@@ -31,7 +31,7 @@ You can create a preset in the Script Canvas editor by using an existing node gr
 1. To use the preset that you created, right\-click the canvas, choose **Add Comment** or **Group**, and then choose the preset comment or group that you created\.
 ![\[Choosing a preset comment\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-4.png)
 
-## Configuring a Default Preset {#script-canvas-comment-and-group-presets-configuring-a-default}
+## Configuring a Default Preset 
 
 You can define a preset as the default for either a node group or a comment\. The default group or comment is created when you perform one of the following actions:
 + On the Script Canvas editor toolbar, click the new comment ![\[New comment icon\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-5.png) or new group ![\[New group icon\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-6.png) icon\.
@@ -47,7 +47,7 @@ You can define a preset as the default for either a node group or a comment\. Th
 1. For **Is Default**, select the preset that you want to make the default, and then click **OK**\.
 ![\[Setting a preset as the default in the Script Canvas Presets Editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-7.png)
 
-## Removing a Preset {#script-canvas-comment-and-group-presets-removing}
+## Removing a Preset 
 
 To remove presets, use the Script Canvas Presets Editor\.
 
@@ -62,6 +62,6 @@ To remove presets, use the Script Canvas Presets Editor\.
 
 1. Click **Remove**, and then click **OK**\.
 
-## Notes {#script-canvas-comment-and-group-presets-notes}
+## Notes 
 + After you configure a preset, you cannot modify it\. Use the **Presets Editor** to remove the preset\. Then recreate the preset\.
 + If you recreate a preset, the changes that you make do not propagate to comments or groups that you created with the earlier version of the preset\.

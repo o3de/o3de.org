@@ -8,7 +8,7 @@ title: Attachment
 
 The **Attachment** component lets an entity attach to a bone on the skeleton of another entity\.
 
-## Attachment Component Properties {#component-attachment-properties}
+## Attachment Component Properties 
 
 ![\[Attachment component properties.\]](/images/user-guide/component/attachment-component-properties.png)
 
@@ -27,7 +27,7 @@ The **Attachment** component has the following properties\.
 | Attached initially |  Specifies whether to attach to the target entity automatically\.  |
 |  **Scaling**  |  Specifies how the object scaling is determined\. You can specify the following values:   |
 
-## EBus Request Bus Interface {#component-attachment-legacy-ebusrequest}
+## EBus Request Bus Interface 
 
 Use the following request functions with the event bus \(EBus\) interface to communicate with other components of your game\.
 
@@ -42,7 +42,7 @@ For more information, see [Working with the Event Bus \(EBus\) system](/docs/use
 | Detach |  Detaches the target from the entity\.  | None | Yes |
 | SetAttachmentOffset |  Update entity's offset from target\.  | offsetTransform - Attachment's offset from target\. | Yes |
 
-## EBus Notification Bus Interface {#component-attachment-legacy-ebusnotification}
+## EBus Notification Bus Interface 
 
 Use the following notification functions with the EBus interface to communicate with other components of your game\.
 

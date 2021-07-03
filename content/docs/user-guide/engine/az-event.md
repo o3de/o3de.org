@@ -163,7 +163,7 @@ event.Signal(1); // Signal an event, this will invoke our handler's lambda
 
 Note the reduced lines of code, as well as the overall simpler code pattern\. Try it out by porting some of your current EBus message handlers to use `AZ::Event`, and then test it using our built\-in unit tests and benchmarks\.
 
-## Unit testing and benchmarking {#az-event-unit-tests}
+## Unit testing and benchmarking 
 
 The `AZ::Event `system includes a number of unit tests and benchmarks to validate correct behavior and confirm the performance advantages over an equivalent EBus implementation\.
 

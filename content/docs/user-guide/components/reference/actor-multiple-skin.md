@@ -26,7 +26,7 @@ Whether you use a single FBX file or multiple FBX files, you create an actor for
 
 For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/)\.
 
-## Using a Single FBX File {#component-actor-single-fbx}
+## Using a Single FBX File 
 
 When you use a single FBX file embedded with multiple meshes, you must create an actor for each attachment\. For example, a cowboy character would be an actor, while his interchangeable hat and belt must each be added as additional actors\.
 
@@ -56,7 +56,7 @@ When you use a single FBX file embedded with multiple meshes, you must create an
    In the **Asset Browser**, a single FBX file contains the primary actor and the attachments\.
 ![\[View actor files in the Asset Browser.\]](/images/user-guide/component/component-actor-component-entity-setup-1.png)
 
-## Using Multiple FBX Files {#component-actor-multiple-fbx}
+## Using Multiple FBX Files 
 
 When you use an FBX file for each skin attachment, Asset Processor automatically generates an **Actor** file for each FBX file\. Modify the **FBX Settings** tool only if you want to change the default Asset Processor behavior\.
 

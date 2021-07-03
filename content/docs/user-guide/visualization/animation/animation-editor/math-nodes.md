@@ -14,7 +14,7 @@ O3DE's **Animation Editor** features a set of math nodes that perform math opera
 + [Vector Decompose Nodes](#vector-conversion)
 + [Boolean Logic Node](#boolean-logic-node)
 
-## Rotation Math 2 Node {#rotation-math}
+## Rotation Math 2 Node 
 
 With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap#quarternion)\.
 
@@ -36,7 +36,7 @@ Multiplies the **x** input with the inverse of the **y** input\. You can also us
 
 1. If only one input rotation exists, specify the unconnected rotation values \(X, Y, Z\) for the **Default Value**\.
 
-## Rotation Limit Node {#rotation-limit}
+## Rotation Limit Node 
 
 ![\[Figure of Rin in the Animation Editor with a rotated foot.\]](/images/user-guide/actor-animation/rotation-limit-figure.png)
 
@@ -60,7 +60,7 @@ The **Min angle** can't exceed the **Max angle**\. If it does, the error is disp
 
 ![\[Rotation Limit attributes panel.\]](/images/user-guide/actor-animation/rotation-limit-properties.png)
 
-## Vector Decompose Nodes {#vector-conversion}
+## Vector Decompose Nodes 
 
 Using **Vector Decompose** nodes, you can output one or more specific values of a vector\.
 
@@ -75,7 +75,7 @@ You don't need to use **Vector Decompose** nodes if you are simply adding or sub
 + **Vector3** to **Vector4** - Adds the **W** component set to `0`\.
 + **Vector4** to **Vector3** - Ignores the **W** component from **Vector4**\.
 
-## Boolean Logic Node {#boolean-logic-node}
+## Boolean Logic Node 
 
 Using the **Boolean Logic** node, you can apply a function to two boolean inputs\. Boolean values are always `1` or `0` \(true or false\), such as a check box item\. The **Boolean Logic** node sees any non\-zero value as true \(`1`\) and any zero value as false \(`0`\)\. For example, values `0.54`, `10.43` or \-`2.25` are all true \(`1`\)\. Only `0.0` values are false \(`0`\)\.
 
@@ -83,7 +83,7 @@ When choosing an output type, you can output from the **Float** output or the **
 
 ![\[Example of a Boolean Logic node in an animation graph.\]](/images/user-guide/actor-animation/boolean-logic-node.png)
 
-### Boolean Logic Node Attributes {#boolean-logic-node-attributes}
+### Boolean Logic Node Attributes 
 
 ![\[Boolean Logic node attributes pane.\]](/images/user-guide/actor-animation/boolean-logic-node-attributes.png)
 

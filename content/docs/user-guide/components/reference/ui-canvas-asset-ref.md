@@ -16,7 +16,7 @@ Use this component in conjunction with the [**UI Canvas on Mesh**](/docs/user-gu
 
 For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/editor/placing-canvases-3d/)\.
 
-## UI Canvas Asset Ref Component Properties {#component-ui-canvas-asset-ref-properties}
+## UI Canvas Asset Ref Component Properties 
 
 The **UI Canvas Asset Ref** component has the following properties:
 

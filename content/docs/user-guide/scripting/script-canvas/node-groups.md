@@ -8,7 +8,7 @@ title: Grouping Nodes
 
 As your Script Canvas graphs grow in size, you can group nodes to logically organize parts of a script or reduce its visual complexity\. Groups can be nested, named, and color\-coded\.
 
-## Creating and Managing Node Groups {#script-canvas-node-groups-creating-and-managing}
+## Creating and Managing Node Groups 
 
 **To create a node group from existing nodes and/or node groups**
 
@@ -55,7 +55,7 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
 **Note**
 Deleting a group removes all of the nodes in the group and their connections to other nodes outside of the group\. If you want to remove the group container but keep its nodes and connections, choose **Ungroup**\.
 
-### Enabling Groups as Bookmarks {#script-canvas-node-groups-bookmarks}
+### Enabling Groups as Bookmarks 
 
 To quickly navigate through the groups in your graphs, you can enable groups as bookmarks\.
 
@@ -65,7 +65,7 @@ To quickly navigate through the groups in your graphs, you can enable groups as 
 
 1. In **Node Inspector**, select **Enable as Bookmark**\.
 
-## Customizing Groups {#script-canvas-node-groups-customizing}
+## Customizing Groups 
 
 You can use the **Node Inspector** to customize the color of a group and to change the font settings of the group title\.
 

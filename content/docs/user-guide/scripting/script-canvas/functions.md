@@ -17,7 +17,7 @@ When you create a function, you define the input and output variables of that fu
 + [Using a Script Canvas Function in a Graph](#script-canvas-using-functions)
 + [Function Example: Linear Interpolation](#script-canvas-example-linear-interpolation)
 
-## Creating a Script Canvas Function {#script-canvas-creating-functions}
+## Creating a Script Canvas Function 
 
 Start creating a new function by choosing **File**, **New Function** in the Script Canvas editor\.
 
@@ -52,7 +52,7 @@ The scope of a variable determines if and where the variable will appear on the 
 | Out | Output slot | This is a result variable\. The function returns its value as a result\. |
 | In / Out | Both sides | This is an input parameter that can be modified by the function and returned as a result\. |
 
-## Using a Script Canvas Function in a Graph {#script-canvas-using-functions}
+## Using a Script Canvas Function in a Graph 
 
 Once a Script Canvas function has been saved, it automatically shows up in the **Node Palette**, under **Global Functions**\. The default directory for new functions is your project's `scriptcanvas\functions` directory\. If you save them in a subdirectory, or save them under a different project directory, the directory structure is used to categorize the functions within **Global Functions**\.
 
@@ -60,7 +60,7 @@ Using a function is just like using any other node in Script Canvas\. Simply dra
 
 ![\[Drag and drop functions from the Node Palette, under the Global Functions category, onto your graph.\]](/images/user-guide/scripting/script-canvas/script-canvas-function-use-node.gif)
 
-## Function Example: Linear Interpolation {#script-canvas-example-linear-interpolation}
+## Function Example: Linear Interpolation 
 
 In this example, we create a linear interpolation function\. This function is represented by the formula: *Result = Start \+ Time \* \(End \- Start\)*\.
 

@@ -16,7 +16,7 @@ Motion constraints and Backstop properties are set by creating vertex color stre
 
 Motion constraints and Backstop properties are per vertex and can be used with **Actor** and **Mesh** components\.
 
-## Motion constraints {#cloth-motion-constraints-diagram}
+## Motion constraints 
 
 Motion constraints limit the movement of a simulated cloth particle to an area defined by a sphere\. The sphere is centered on the corresponding vertex of the unsimulated mesh\. The radius of the sphere is calculated using the Motion Constraints value from the vertex color stream and the **Max Distance**, **Scale** and **Bias** properties in the **Motion constraints** property group of the **Cloth** component\.
 
@@ -26,7 +26,7 @@ If no vertex color stream is present, then a default value of **1\.0** is used f
 
 ![\[Motion constraint diagram for cloth simulation\]](/images/user-guide/physx/cloth/cloth-motion-constraints-diagram.png)
 
-## Backstop {#cloth-backstop-diagram}
+## Backstop 
 
 Because cloth colliders are simple primitives, you may encounter scenarios where cloth colliders aren't sufficient to prevent the simulated cloth particles from penetrating other meshes\. You can use **Backstop** to fine tune the behavior of simulated cloth particles to address these scenarios\.
 

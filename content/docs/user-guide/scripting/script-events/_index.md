@@ -11,7 +11,7 @@ Like entities and components, scripts can use events to communicate with each ot
 
 To author script events, use the Asset Editor or Lua\. Script Canvas and Lua can send or receive the events that you create\. In Script Canvas, you can add nodes that send or receive script events\. Events sent from Script Canvas can be handled in Lua\. Likewise, events sent from Lua can be handled in Script Canvas\.
 
-## Prerequisites {#script-events-prerequisites}
+## Prerequisites 
 
 To use script events, you must enable the **Script Events** gem in your project\. For information about enabling gems, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md)\.
 

@@ -48,7 +48,7 @@ Floats are numbers with decimals \(for example 1\.35 or 1\.0\.\) Booleans and in
 **Time**
 All time values and durations are in seconds\. For example, you can set the transition time for 0\.3 or 300 ms\.
 
-## About Animation Graphs {#understanding-animation-graphs}
+## About Animation Graphs 
 
 **Contents**
 + [Animation Graph Nodes](#animation-graph-nodes)
@@ -67,7 +67,7 @@ Each animation graph has one root node, which is a state machine\. This root nod
 
 Before you can add nodes to an animation graph, you must create a motion set\. After you create a motion set, you can create an animation graph and then assign the motion sets to the animation graph using the **Resource Management** pane in the **Anim Graph** window\.
 
-### Animation Graph Nodes {#animation-graph-nodes}
+### Animation Graph Nodes 
 
 In a state machine, you can add the following nodes from the **Sources** category:
 + **Blend Tree**
@@ -131,7 +131,7 @@ In a blend tree, you can add other nodes from the following six categories
 1. **Misc**
    + **Mirror Pose**
 
-## About Parameters {#animation-graph-parameters}
+## About Parameters 
 
 **Contents**
 + [Adding Parameters to an Animation Graph](#adding-parameters-to-an-animation-graph)
@@ -147,7 +147,7 @@ You can set this up in a game level by adding an **Actor** and an **Animation** 
 
 For more information, see [Animation Editor Components](/docs/user-guide/visualization/animation/character-editor/components.md)\.
 
-### Adding Parameters to an Animation Graph {#adding-parameters-to-an-animation-graph}
+### Adding Parameters to an Animation Graph 
 
 You can add parameters to an animation graph in the **Parameters** pane\.
 
@@ -179,7 +179,7 @@ You can name parameter types to identify the purpose of the control\. For exampl
 
 ![\[Create parameters for an animation graph in the Animation Editor.\]](/images/user-guide/actor-animation/animation-editor-parameters-pane.png)
 
-### Adding a Parameter Node to a Blend Tree {#adding-a-parameter-node-to-your-blend-tree}
+### Adding a Parameter Node to a Blend Tree 
 
 After you create your parameters in the **Parameter** pane, you can add a parameter node to your blend tree\.
 
@@ -195,7 +195,7 @@ You can rename parameter nodes and specify them to provide input to other nodes\
 
 ![\[Use parameter nodes in the Animation Editor to specify parameter types and values for your animation graph.\]](/images/user-guide/actor-animation/animation-editor-blend-tree.png)
 
-## About Motion Sets {#understanding-motion-sets}
+## About Motion Sets 
 
 A motion set is a collection of motions, where each motion refers to a specific motion file and is identified by a string ID, such as *idle\_motion1*\. When you create motion nodes, you specify the string ID for the motion, not the motion file itself\. You can use different motion sets in combination with the same animation graph\. For example, you can create an animation graph to define animation behavior for a controllable human character and apply the same animation graph to a frog\. Because frog movements differ from a human character's, you specify different motion sets for the frog\. You can share animation graphs for your characters; you don't need to create unique animation graphs for each character type\.
 
@@ -203,7 +203,7 @@ A combination of an animation graph with a specified motion set being applied to
 
 Motion sets can also be hierarchical\. Child motion sets can override certain motions from their parents\. When you apply a child motion set to a character, the character uses all the motions shared by the parent except for the motions that are specified for the child motion set\. For example, you can have a character that shares 90% of the same motions of the parent, but has custom motions specific to that character\.
 
-## About State Machines {#understanding-state-machines}
+## About State Machines 
 
 State machines contain a set of states that are linked together by transitions\. A transition goes from one node to another node and has properties, such as the time it takes to make the transition\. A blend between the outputs of both states is performed during the transition, when the animation moves from one state to another\.
 

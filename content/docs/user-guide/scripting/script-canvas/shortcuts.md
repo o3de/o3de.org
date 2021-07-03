@@ -43,7 +43,7 @@ The following table shows the keyboard shortcuts that you can use in the Script 
 **Note**
 If a keyboard shortcut doesn't appear to work for you, another process running in the background might have bound that key combination\. Consider searching the [forums](https://forums.awsgametech.com/) to see if others have encountered this issue\.
 
-## Mouse Shortcuts {#script-canvas-shortcuts-mouse-shortcuts}
+## Mouse Shortcuts 
 
 The following shortcuts use the mouse or keyboard and mouse\.
 

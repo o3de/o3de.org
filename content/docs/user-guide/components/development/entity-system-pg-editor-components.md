@@ -16,7 +16,7 @@ Your component must be fully active at edit time\. Edit time refers to standard 
 You must add special tools functionality to your component that requires that you compile only into your editor binaries\.
 Your component provides functionality only in the editor and does not export a runtime component \(for example, if your component manages selection logic\)\.
 
-## Sample Editor Component {#component-entity-system-pg-editor-components-sample}
+## Sample Editor Component 
 
 The following code shows a sample editor component\.
 
@@ -65,11 +65,11 @@ public:
 };
 ```
 
-## Editor Component and Runtime Component Differences {#component-entity-system-pg-editor-components-editor-runtime-differences}
+## Editor Component and Runtime Component Differences 
 
 The code for editor components is similar to the code for runtime components\. The following sections list the key differences\. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed\. For more information, see [Creating a Component](/docs/user-guide/components/development/create-component/)\.
 
-### Base Classes {#component-entity-system-pg-editor-components-base-classes}
+### Base Classes 
 
 All editor components include the `AzToolsFramework::Components::EditorComponentBase` class somewhere in their inheritance ancestry\. If a component must display edit\-time visualization, it must be a handler on the `AzFramework::EntityDebugDisplayEventBus::Handler` bus, as in the following example\.
 
@@ -82,7 +82,7 @@ class MyComponent
       , private AzFramework::EntityDebugDisplayEventBus::Handler
 ```
 
-### Macro {#component-entity-system-pg-editor-components-macro}
+### Macro 
 
 Every editor component must specify the `AZ_EDITOR_COMPONENT` macro within its class definition\. The macro takes two arguments:
 
@@ -103,7 +103,7 @@ Some O3DE editor components specify `AzToolsFramework::Components::EditorCompone
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);
 ```
 
-### The DisplayEntityViewport Method {#component-entity-system-pg-editor-components-displayentityviewport}
+### The DisplayEntityViewport Method 
 
 To draw debug visuals in the viewport for a specific entity, implement the `DisplayEntityViewport` method of the `AzFramework::EntityDebugDisplayEventBus` interface\. Use this location for custom primitive edit\-time visualization code\.
 
@@ -123,7 +123,7 @@ void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFram
 
 lala
 
-### The BuildGameEntity Method {#component-entity-system-pg-editor-components-buildgameentity}
+### The BuildGameEntity Method 
 
 The `BuildGameEntity` method from `EditorComponentBase.h` facilitates the translation of an editor component into a runtime component\. Override this method as follows\.
 

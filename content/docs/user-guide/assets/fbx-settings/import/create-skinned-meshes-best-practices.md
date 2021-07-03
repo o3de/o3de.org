@@ -8,7 +8,7 @@ title: Creating Skinned Meshes for Actors
 
 Use the following best practices when you create your character for the **Animation Editor**\. In O3DE, a character is a skinned mesh\.
 
-## Setting up the World Coordinate System and Root Joint {#char-fbx-importer-skinned-meshes-best-practices-setting-up-root-joint}
+## Setting up the World Coordinate System and Root Joint 
 
 If you use the y\-up or z\-up world coordinate system in your DCC, use the following guidelines to set up your character:
 + Use a root joint for your skinned mesh\. This is required to ensure that motion extraction works properly in the **Animation Editor**\.
@@ -20,7 +20,7 @@ If you use the y\-up or z\-up world coordinate system in your DCC, use the follo
 + If your character faces the negative y direction after you import the character into the **Animation Editor**, in the **Asset Browser** right\-click your `.fbx` file and choose **Edit Settings**\. For the **Coordinate system change** modifier, set **Facing Direction** to **Do Nothing**\.
 + Use the same **Coordinate system change** modifier for the actor and each of the actor's motions\. This is required to ensure that animations work properly in the **Animation Editor**\.
 
-## Setting up Skin Binding {#char-fbx-importer-skinned-meshes-best-practices-skin-binding}
+## Setting up Skin Binding 
 
 Observe the following best practices when you set up skin binding:
 + Delete the geometry history on your mesh before skinning the geometry to joints\.

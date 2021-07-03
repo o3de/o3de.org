@@ -22,7 +22,7 @@ You can set the **Parameter Action** on the following:
 + Entering a transition - Action triggers immediately upon starting a transition
 + Exiting a state - Action triggers when a transition is fully blended to the target state
 
-## Adding Actions to a State {#adding-action-to-state}
+## Adding Actions to a State 
 
 Add an action to a state to achieve a parameter value change that triggers after the state is either fully blended into the node or fully blended out of the node\.
 
@@ -46,7 +46,7 @@ Add an action to a state to achieve a parameter value change that triggers after
 
 1. To turn the action on, set the **Trigger Value** to `1`\.
 
-## Adding Actions to a Transition {#adding-action-to-transition}
+## Adding Actions to a Transition 
 
 Add an action to a transition to achieve a parameter value change that triggers either when the transition starts or when the transition is fully blended to the target state\.
 

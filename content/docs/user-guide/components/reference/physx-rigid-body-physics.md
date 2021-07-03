@@ -28,7 +28,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 + [PhysX Rigid Body component properties](#component-physx-rigid-body-physics-properties)
 + [Creating a Dynamic PhysX Entity](#example-creating-dynamic-game-entity)
 
-## PhysX Rigid Body component properties {#component-physx-rigid-body-physics-properties}
+## PhysX Rigid Body component properties 
 
 ![\[PhysX Rigid Body component properties.\]](/images/user-guide/component/physx/component-physx-rigid-body.png)
 
@@ -104,7 +104,7 @@ When enabled, non\-simulated shapes will be included in the mass, center of mass
 **Debug draw COM**
 When enabled, the center of mass is displayed for this PhysX rigid body\.
 
-## Creating a Dynamic PhysX Entity {#example-creating-dynamic-game-entity}
+## Creating a Dynamic PhysX Entity 
 
 A PhysX entity that is dynamic can move and collide with other entities\.
 

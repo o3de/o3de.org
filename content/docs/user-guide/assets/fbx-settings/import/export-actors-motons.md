@@ -21,7 +21,7 @@ Use the following best practices when you export your skinned meshes using the *
   + The theoretical maximum number of vertices for skinned meshes after processing is 4,294,967,295 \(232 - 1\)\. Although this limit is exceptionally high, we recommend that you follow best practices when modeling your skinned meshes\. Use a reasonable polygon count that's suitable for the game device for which you are developing\. Experiment with the number of polygons to get the desired quality while balancing game performance\. You may need to adjust the polygon count if your game displays many actors at once\. The value range for polygon counts can vary between 1,000 to 30,000\. The polygon count that you should use depends on the game device, and the performance and quality of the actor\.
   + The more vertices in an `.fbx` file, the longer Asset Processor takes to process it\. View Asset Processor often and check for errors\.
 
-## Using the Maya Game Exporter {#char-fbx-importer-export-skinned-meshes-using-maya-game-exporter}
+## Using the Maya Game Exporter 
 
 The following are typical settings for the Maya Game Exporter when you export your skinned mesh character into O3DE\.
 

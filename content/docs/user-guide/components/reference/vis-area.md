@@ -20,7 +20,7 @@ You can't modify the **[OccluderArea](/docs/user-guide/components/reference/occl
 + [VisArea Component Properties](#component-vis-area-properties)
 + [Vis Area Component Examples](#component-vis-area-examples)
 
-## VisArea Component Properties {#component-vis-area-properties}
+## VisArea Component Properties 
 
 ![\[The VisArea component properties in O3DE Editor.\]](/images/user-guide/component/vis-area-component-properties.png)
 
@@ -38,7 +38,7 @@ The **VisArea** component has the following properties\.
 |  **OceanIsVisible**  |  Renders the ocean outside the visible area\.   |
 |  **Edit**  |  Choose **Edit**, and the component is locked for editing\. For more information, see [Editing Components in the Viewport](/docs/userguide/edit-mode-for-components.md)\.  |
 
-## Vis Area Component Examples {#component-vis-area-examples}
+## Vis Area Component Examples 
 
 **Example 1**
 The following example shows two boxes\. One box is inside the visible area, and one is outside\. From outside the visible area, the inside box isn't visible\. The **DisplayFilled** option is enabled so that the visible area appears orange\.

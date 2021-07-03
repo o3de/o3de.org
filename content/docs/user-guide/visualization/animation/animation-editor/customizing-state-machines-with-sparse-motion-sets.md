@@ -15,7 +15,7 @@ You can allow or deny transitions and routes to motion states in a state machine
 + [Hierarchical Motion Sets and Overwriting Motion Entries](#hierarchy-motion-sets-and-overwriting-motion-entries)
 + [Customizing State Machines Based on Motion Sets](#customizing-state-machines-based-on-motion-sets)
 
-## Sparse Motion Sets {#sparse-motion-sets}
+## Sparse Motion Sets 
 
 A motion set contains a list of motion entries\. Each motion entry has a motion ID that you can define\. For example, you can name a motion ID, *Walk* or *Jump*\. The motion entry maps the custom motion ID like *Walk* to a specific motion file, such as `/SampleProject/Animations/Human_Walk.motion`\.
 
@@ -27,7 +27,7 @@ When you choose an unassigned motion entry on a motion state in a state machine,
 
 ![\[You can specify an unassigned motion entry to a sparse motion set.\]](/images/user-guide/actor-animation/animation-editor-sparse-motion-sets.png)
 
-## Hierarchical Motion Sets and Overwriting Motion Entries {#hierarchy-motion-sets-and-overwriting-motion-entries}
+## Hierarchical Motion Sets and Overwriting Motion Entries 
 
 A motion set can contain child motion sets that are stored in the same file\. Child motion sets inherit all motion entries from the parent\.
 
@@ -62,7 +62,7 @@ The **Zombie** motion set uses the `Idle` motion from the parent motion set, cus
 
 For hierarchical motion sets, you can create a motion entry and unassign it to disable inheritance from the parent motion set\. If you are not using hierarchical motion sets, this is the same as not having a motion entry with the specified motion ID\.
 
-## Customizing State Machines Based on Motion Sets {#customizing-state-machines-based-on-motion-sets}
+## Customizing State Machines Based on Motion Sets 
 
 Animation graphs can be shared across characters\. Two different characters that use the same animation graph can operate with two different motion sets\. For example, you can have a human character that uses the human motion set, and a zombie character that uses the **Zombie** motion set\. Both characters can use the same animation graph\.
 
