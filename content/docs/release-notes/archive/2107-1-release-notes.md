@@ -20,17 +20,17 @@ Note that this release is a Developer Preview and is incomplete for many major d
 
 * Atom renderer: With this initial release of O3DE, we're proud to introduce the first version of the Atom renderer! Atom is a photorealistic, physically based renderer with a modular, extensible implementation. For more details, read [the Atom renderer documentation](/docs/atom-guide/).
 
-* New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries. [Check out the API reference for the AZ:Math APIs here]().
+* New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries. 
 
 * New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](/docs/user-guide/networking/)
 
 * Prefab support: O3DE replaces the old slice system with the well-understood prefab model for combining components and assets. Curious? [Read the early documentation here]().
 
-* Project Manager: The new Project Manager simplifies the process of managing Gems and building your project and the O3DE engine. [Read more about it in the documentation here]().
+* Project Manager: The new Project Manager simplifies the process of managing Gems and building your project and the O3DE engine.
 
-* CMake support: Heck yeah! CMake replaces WAF as the build environment and tools, and brings with it a host of great features. [Check out the documentation here]().
+* CMake support: Heck yeah! CMake replaces WAF as the build environment and tools, and brings with it a host of great features.
 
-Or, if you're the literary sort, [read through our new Get Started docs](/docs/welcome-guide/). This is a good place to get oriented to all the [features](/docs/welcome-guide/features-intro/), and [concepts](/docs/welcome-guide/key-concepts/) O3DE introduces.
+Or, if you're the literary sort, [read through our new Get Started docs](/docs/welcome-guide/). This is a good place to get oriented to all the [features](/docs/welcome-guide/features-intro/) and [concepts](/docs/welcome-guide/key-concepts/) O3DE introduces.
 
 ## New and updated core features
 
