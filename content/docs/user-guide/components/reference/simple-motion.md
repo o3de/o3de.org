@@ -10,7 +10,7 @@ You can use the **Simple Motion** component to play a motion without an animatio
 
 For creating cinematics with the **Simple Motion** component, see [Creating Character Animations with the Simple Motion Component](/docs/user-guide/visualization/cinematics/create-cinematics-with-simple-motion-animations-in-track-view-editor/)\.
 
-## Simple Motion Component Properties {#component-simple-motion-properties}
+## Simple Motion Component Properties 
 
 ![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/user-guide/component/component-simple-motion-properties.png)
 

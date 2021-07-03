@@ -55,7 +55,7 @@ If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**
 
    To disable mip maps, specify `mipmaps=0`\.
 
-## Adjusting Alpha Test on Mip Maps {#asset-pipeline-mipmaps-adjusting-alphatest}
+## Adjusting Alpha Test on Mip Maps 
 
 You can adjust the Alpha Test value for each mip map in the **MIP Control** tab of the Resource Compiler image tool\.
 

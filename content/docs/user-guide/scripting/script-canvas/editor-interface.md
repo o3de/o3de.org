@@ -36,7 +36,7 @@ In the **Script Canvas** editor, you can do the following:
 
 1. In the **Node Inspector**, you can view and modify the properties for a selected node\.
 
-## Additional Tools {#script-canvas-other-menus-tools}
+## Additional Tools 
 
 **Script Canvas** editor has the following additional menus and tools\.
 

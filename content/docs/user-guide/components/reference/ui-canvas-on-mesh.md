@@ -11,7 +11,7 @@ With the **UI Canvas on Mesh** component, you can place a UI canvas on a compone
 
 For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/editor/placing-canvases-3d/)\.
 
-## UI Canvas on Mesh Component Properties {#component-ui-canvas-on-mesh-properties}
+## UI Canvas on Mesh Component Properties 
 
 The UI Canvas on Mesh component has the following properties:
 

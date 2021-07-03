@@ -13,7 +13,7 @@ Applying cloth simulation to actors adds realism and dynamism in their every mov
 
 For more information, see the [NVIDIA Cloth Gem documentation](/docs/user-guide/interactivity/physics/nvidia-cloth/_index.md)\.
 
-## Add Cloth Colliders to an actor {#component-cloth-collider-character}
+## Add Cloth Colliders to an actor 
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**\.
 

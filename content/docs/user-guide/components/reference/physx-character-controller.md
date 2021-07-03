@@ -19,13 +19,13 @@ The **PhysX Character Controller** component requires the [PhysX](/docs/user-gui
 + [PhysX Character Controller Properties](#component-physx-character-controller-properties)
 + [Differences Between PhysX and Legacy Character Physics Components](#component-physx-character-controller-vs-legacy)
 
-## Using the PhysX Character Controller Component {#component-physx-character-controller-using}
+## Using the PhysX Character Controller Component 
 
 To use the **PhysX Character Controller** component, [add it to an entity](/docs/userguide/components/working-adding.md) that represents a character\.
 
 You can control the character's movement by using Script Canvas, the C\+\+ API, or animation systems that use the C\+\+ API\.
 
-## PhysX Character Controller Properties {#component-physx-character-controller-properties}
+## PhysX Character Controller Properties 
 
 You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector/)**\.
 
@@ -54,11 +54,11 @@ The **PhysX Character Controller** has the following component properties\.
 | **Radius (Capsule Only)** |  Radius of the capsule in meters\.  |
 | **Dimensions (Box Only)** |  The x, y, and z dimensions of the box in meters\.  |
 
-### Maximum Slope Angle {#component-physx-character-controller-maximum-slope-angle}
+### Maximum Slope Angle 
 
 The maximum slope angle is the largest slope that the character controller can climb\. The character cannot move in directions that exceed this slope\. If the character is standing on a slope above the maximum slope angle, its behavior depends on the slope behavior setting\. The range of values allowed in the **Entity Inspector** is from `0` to `89` degrees\.
 
-### Step Height {#component-physx-character-controller-step-height}
+### Step Height 
 
 The maximum slope angle determines the step height that the controller can climb\.
 
@@ -67,7 +67,7 @@ Capsule controllers might be able to climb steps slightly higher than the step h
 
 ![\[Step height determines the height of steps that the controller can climb.\]](/images/user-guide/component/physx/component-physx-character-controller-6.png)
 
-### Contact Offset {#component-physx-character-controller-contact-offset}
+### Contact Offset 
 
 The contact offset is the distance padding between the collider shape and the contact surface\. The contact offset allows the simulation to provide smoother collision behavior\.
 
@@ -79,7 +79,7 @@ In the editor debug draw for the **PhysX Character Controller** component, the e
 
 ![\[Wireframe showing the contact offset for a PhysX Character Controller in the O3DE Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-7.png)
 
-### Shape {#component-physx-character-controller-shape}
+### Shape 
 
 You can use character controller collider with the following shapes:
 + Capsule
@@ -87,7 +87,7 @@ You can use character controller collider with the following shapes:
 
 Use the **Shape** property in the **Entity Inspector** to choose the desired shape\. When you do so, the relevant dimensions are displayed for editing\. The dimension settings are identical to the capsule and box options for the **[PhysX Collider](/docs/user-guide/components/reference/physx-collider/)** component\.
 
-## Differences Between PhysX and Legacy Character Physics Components {#component-physx-character-controller-vs-legacy}
+## Differences Between PhysX and Legacy Character Physics Components 
 
 Character controllers are usually **kinematic** or **dynamic**\. Dynamic character controllers are controlled through their velocity or by applying forces\. Kinematic character controllers are controlled directly by position\. Each controller type has advantages and disadvantages\.
 

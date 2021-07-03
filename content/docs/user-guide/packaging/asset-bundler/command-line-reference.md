@@ -40,7 +40,7 @@ weight: 800
 
 See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts.md) or [Glossary](/docs/user-guide/appendix/glossary.md) for definitions of terms used in this reference\.
 
-## General Use {#asset-bundler-command-line-reference-general}
+## General Use 
 
  The format for `AssetBundlerBatch` commands is:
 
@@ -69,7 +69,7 @@ Bin64vc141\AssetBundlerBatch seeds --seedFileList MyProject\AssetBundling\SeedLi
     --platform ios,pc
 ```
 
-### Options {#asset-bundler-command-line-reference-general-options}
+### Options 
 
  The options in this section are valid for all Asset Bundler subcommands\.
 
@@ -83,13 +83,13 @@ Enables more detailed output messages\. `Error` and `Warning` messages will disp
  *Type:* Flag
  *Required:* No
 
-## Seed lists \- `seeds` {#asset-bundler-command-line-reference-seeds}
+## Seed lists \- `seeds` 
 
  The `seeds` command is used to manage seed lists, the first phase of the Asset Bundler workflow\. Seed list files have the `.seed` extension\.
 
 This command requires an existing cache of assets for each provided platform\. To make sure that the cache is up to date, update the supported platforms and run the Asset Processor\.
 
-### Options {#asset-bundler-command-line-reference-seeds-options}
+### Options 
 
 **\-\-seedListFile**
  The seed list to modify and save\. This file must be writable and have the `.seed` extension\. The file is created if it doesn't exist\. The argument's value may be either an absolute or engine\-root\-relative path\.
@@ -138,7 +138,7 @@ This command requires an existing cache of assets for each provided platform\. T
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-seeds-examples}
+### Examples 
 
  In the following examples, assume that the current project has enabled the platforms `pc`, `ios`, and `es3`\.
 
@@ -165,13 +165,13 @@ Bin64vc141\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --addPlatfor
 Bin64vc141\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --print
 ```
 
-## Asset Lists \- `assetLists` {#asset-bundler-command-line-reference-assetlists}
+## Asset Lists \- `assetLists` 
 
  The `assetLists` command is used to manage and create asset lists\. See the `--assetListFile` argument for how platform information is encoded in asset list file names\. Asset list files have the `.assetlist` extension\.
 
 This command requires an existing cache of assets for each provided platform\. To make sure that the cache is up to date, update the supported platforms and run the Asset Processor\.
 
-### Options {#asset-bundler-command-line-reference-assetlists-options}
+### Options 
 
 **\-\-assetListFile**
 The base name of the platform\-specific asset list files to be generated\. This file's path must be writable, and the file name must have the `.assetlist` extension\. The argument's value may be either an absolute or engine\-root\-relative path\.
@@ -238,7 +238,7 @@ Generate a file that contains additional information about asset inclusion for d
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-assetlists-examples}
+### Examples 
 
  In the following examples, assume that the seed list `testFile.seed` exists and that the `pc`, `ios`, and `es3` platforms are enabled\.
 
@@ -280,11 +280,11 @@ Regenerate all asset lists from the `testFile.seed` seed list, overwriting the `
 Bin64vc141\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --seedListFile testFile.seed --allowOverwrites
 ```
 
-## Comparison rules \- `comparisonRules` {#asset-bundler-command-line-reference-comparisonrules}
+## Comparison rules \- `comparisonRules` 
 
 The `comparisonRules` command is used to generate comparison rules files\. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand\. Comparison rules files are pre\-built descriptions of which operations to perform and in what order\. For more information on comparison rules, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
 
-### Options {#asset-bundler-command-line-reference-comparisonrules-options}
+### Options 
 
 **\-\-comparisonRulesFile**
  The comparison rules file to generate\.
@@ -321,7 +321,7 @@ The `comparisonRules` command is used to generate comparison rules files\. Compa
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-comparisonrules-examples}
+### Examples 
 
 **Example Generate a delta and filter for XML files**
  Generate a comparison rules file which produces a delta comparison, and then filters the results to include only XML files:
@@ -333,11 +333,11 @@ Bin64vc141\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilt
      --filePattern "*xml"
 ```
 
-## Comparisons \- `compare` {#asset-bundler-command-line-reference-compare}
+## Comparisons \- `compare` 
 
  The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list\. See [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md) for details on comparison operations\.
 
-### Options {#asset-bundler-command-line-reference-compare-options}
+### Options 
 
 **\-\-comparisonRulesFile**
  The comparison rules file to load rules from\. Comparisons from the rules file will be performed before any other comparisons given as arguments, and are evaluated in the order that the rules file was created with\.
@@ -397,7 +397,7 @@ The comparison types to apply to the input files\. The first `--comparisonType` 
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-compare-examples}
+### Examples 
 
 **Example Compare to generate a delta**
  Generate a new asset list `deltaAssetList.assetlist` by taking the files which appear in either `firstAssetList_pc.assetlist` and `secondAssetList_pc.assetlist`, but not both:
@@ -429,11 +429,11 @@ Bin64vc141\AssetBundlerBatch.exe compare --comparisonType intersectionCount ^
     --print
 ```
 
-## Bundle settings \- `bundleSettings` {#asset-bundler-command-line-reference-bundlesettings}
+## Bundle settings \- `bundleSettings` 
 
  The `bundleSettings` command is used to manage bundle settings file, configuration files that let you store commonly\-used bundle configurations for easy reuse and automation\.
 
-### Options {#asset-bundler-command-line-reference-bundlesettings-options}
+### Options 
 
 **\-\-bundleSettingsFile**
  The bundle settings file to be modified when running this command\. If this file already exists, only those settings which are specified by the command invocation are changed\.
@@ -470,7 +470,7 @@ Bin64vc141\AssetBundlerBatch.exe compare --comparisonType intersectionCount ^
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-bundlesettings-examples}
+### Examples 
 
  The following examples assume that these platforms are enabled for the project: `pc`
 
@@ -484,11 +484,11 @@ Bin64vc141\AssetBundlerBatch.exe bundleSettings --bundleSettingsFile defaults.bu
     --platforms pc
 ```
 
-## Asset bundles \- `bundles` {#asset-bundler-command-line-reference-bundles}
+## Asset bundles \- `bundles` 
 
  The `bundles` command is used to generate the final bundle \(`.pak`\) files that contain all of the assets from an asset list\. Bundles can't be modified once created, only regenerated\.
 
-### Options {#asset-bundler-command-line-reference-bundles-options}
+### Options 
 
 **\-\-bundleSettingsFile**
  The bundle settings file to be loaded\. If arguments are provided which would override the settings file, the arguments override the settings file\.
@@ -525,7 +525,7 @@ The bundle format version to use in generation\. The only allowed value is `1`\.
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-bundles-examples}
+### Examples 
 
  In the following examples, assume that the current project has enabled the platforms `pc`, `ios`, and `es3`\.
 
@@ -543,11 +543,11 @@ Create bundles for all of a project's enabled platforms, using the `allAssets_pc
 Bin64vc141\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --maxSize 512 --assetListFile allAssets.assetlist
 ```
 
-## Bundle from seed \- `bundleSeed` {#asset-bundler-command-line-reference-bundleseed}
+## Bundle from seed \- `bundleSeed` 
 
  The `bundleSeed` command is used to generate bundles directly from seeds and their dependencies, without the use of an intermediate asset list\. No other files besides the required seeds are used as input, and only bundle files are produced as output\.
 
-### Options {#asset-bundler-command-line-reference-bundleseed-options}
+### Options 
 
 **\-\-addSeed**
 The seeds to be used in bundle file generation\. All asset dependencies of these seeds are included in the bundle as well\. Argument parameters should be given as cache\-relative paths to pre\-processed assets\.
@@ -584,7 +584,7 @@ The bundle format version to use in generation\. The only allowed value is `1`\.
 *Type:* Flag
 *Required:* No
 
-### Examples {#asset-bundler-command-line-reference-bundleseed-examples}
+### Examples 
 
 **Example Regenerate bundle for a seed**
  Regenerate the bundle `processed.pak` for the `example.cgf` asset and all of its dependencies, with a maximum size of 512MB\.

@@ -16,7 +16,7 @@ You can open the following canvases:
 + `TextOptions.uicanvas`
 + `Tooltips.uicanvas`
 
-## Tooltip {#ui-editor-components-tooltips-tooltips}
+## Tooltip 
 
 You can use a **Tooltip** component to provide the text of the tooltip\. Add a tooltip component to any interactive element that is to display a tooltip in the pause state\.
 
@@ -26,7 +26,7 @@ You can use a **Tooltip** component to provide the text of the tooltip\. Add a t
 
 1. Enter a text string\.
 
-## TooltipDisplay {#ui-editor-components-tooltipsdisplay}
+## TooltipDisplay 
 
 The **TooltipDisplay** component defines the tooltip's display behavior\. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip\. You must also set the [**Tooltip display element**](/docs/userguide/ui/editor/canvas-properties#editor-properties-tooltips) property of the canvas to this element\. For more information, see [Configuring Canvas Properties](/docs/user-guide/interactivity/user-interface/editor/canvas-properties.md)\.
 

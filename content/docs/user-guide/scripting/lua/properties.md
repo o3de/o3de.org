@@ -36,11 +36,11 @@ The result is the following **Properties** user interface in O3DE Editor:
 
 The type that you provide as the default value determines how the property is appears in the editor user interface\. You can further customize the representation of the property in the editor by specifying additional attributes in a table format\. All property types support a description field that appears when you pause your mouse on the property name in the editor\.
 
-## Supported Types {#lua-scripting-ces-properties-types}
+## Supported Types 
 
 Properties can have the types described in this section\.
 
-### Boolean Values \(True, False\) {#lua-scripting-ces-properties-types-boolean}
+### Boolean Values \(True, False\) 
 
 The following examples are Boolean values\.
 
@@ -51,7 +51,7 @@ AllowMovement = { default = true, description = "Allow or restrict movement of t
 
 In O3DE Editor, Boolean values are represented by a check box\.
 
-### Numeric Values \(Integer or Floating Point Numbers\) {#lua-scripting-ces-properties-types-numeric}
+### Numeric Values \(Integer or Floating Point Numbers\) 
 
 The following examples are numeric values\.
 
@@ -66,7 +66,7 @@ In O3DE Editor, numeric values are represented by an edit field with increase/de
 + Set minimum and maximum values\.
 + Provide a step value \(how much the value increases or decreases when the user clicks the arrows on the right side of the edit field\)\.
 
-### Strings {#lua-scripting-ces-properties-types-strings}
+### Strings 
 
 The following examples are strings\.
 
@@ -78,7 +78,7 @@ StartingState = { "Idle", description = "Specify the starting state. Valid start
 
 In O3DE Editor, string values are represented by a text edit box\.
 
-### Reflected Classes {#lua-scripting-ces-properties-types-reflected-classes}
+### Reflected Classes 
 
 You can use any class that is reflected to both the `BehaviorContext` and the `EditContext` as a property\. A good example of this is the `EntityId` type, which references other entities\.
 
@@ -90,7 +90,7 @@ Target = EntityId()
 
 The editor representation is the default editor for the type reflected\. For example, for `EntityId`, it's the entity reference picker\. For most reflected types, it is a tree of the type's properties\.
 
-### Arrays {#lua-scripting-ces-properties-types-arrays}
+### Arrays 
 
 Properties can contain resizable arrays of any of the types mentioned\. To create a simple array, declare the default value as a keyless table of values\. For example, the property definitions in the following code produce the properties shown in the image that follows\.
 
@@ -108,7 +108,7 @@ return ExampleScript
 
 In the Entity Inspector, you can use the green **\+** and red **X** icons to add and remove entries in real time\. You can also use `EntityId()` to make the array elements entity references.
 
-## Grouping Properties {#lua-scripting-ces-properties-grouping}
+## Grouping Properties 
 
 The following code example shows how you can use variables within the `Properties` table to expose named groupings of properties\.
 
@@ -135,7 +135,7 @@ When rendered in the UI, the property groupings and properties are sorted alphab
 
 ![\[Grouped properties\]](/images/user-guide/scripting/lua/lua-scripting-ces-properties-types-arrays-grouped.png)
 
-## Attributes {#lua-scripting-ces-properties-attributes}
+## Attributes 
 
 You can add attributes to a property by placing them alongside the default value in a property table\. Attribute keys are not case sensitive\. The following common attributes can be added to any property\.
 

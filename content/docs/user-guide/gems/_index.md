@@ -4,7 +4,7 @@ description: ' You can use gems to add features and assets to your Open 3D Engin
 title: Gems
 weight: 400
 ---
-## Add modular features and assets with Gems {#gems-system-gems}
+## Add modular features and assets with Gems 
 
 {{< preview-new >}}
 

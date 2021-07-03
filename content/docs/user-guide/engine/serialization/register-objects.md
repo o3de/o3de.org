@@ -17,11 +17,11 @@ AZ::ComponentApplicationBus::BroadcastResult(serializeContext, &AZ::ComponentApp
 **Warning**
  When using the global serialization context, only register an object for serialization in a `Reflect` function call\. Registering outside of this function can cause race conditions\. If you need to register for serialization at any other time, use a custom serialization context\.
 
-## Register classes {#serialization-register-objects-classes}
+## Register classes 
 
 Classes are registered on a serialization context with the `AZ::SerializeContext::Class<T>()` method, using the type `T` to determine which class to register\. In order to be serialized, the class **must** be a specialization of `AzTypeInfo` registered with the `AZ_TYPE_INFO_SPECIALIZE()` macro, or have RTTI information set with the `AZ_RTTI` macro\. The `AZ::SerializeContext::Class<T>()` method returns an `AZ::SerializeContext::ClassBuilder` object, which is used to store version and field information for the class\.
 
-### `AZ::SerializeContext::ClassBuilder` {#serialization-register-objects-classes-classbuilder}
+### `AZ::SerializeContext::ClassBuilder` 
 
 `Version(unsigned int version, VersionConverter converter = nullptr)`
 Sets version information for the serialization\.
@@ -56,11 +56,11 @@ if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(
 }
 ```
 
-## Register enums {#serialization-register-objects-enums}
+## Register enums 
 
 Enums are registered on a serialization context with the `AZ::SerializeContext::Enum<T>()` method, using the type `T` to determine which enum to register\. In order to be serialized, the enum **must** be a specialization of the `AzTypeInfo` using the `AZ_TYPE_INFO_SPECIALIZE()` macro\. The `AZ::SerializeContext::Enum<T>()` method returns an `AZ::SerializeContext::EnumBuilder` object, which is used to store version and value information for the enum\.
 
-### `AZ::SerializeContext::EnumBuilder` {#serialization-register-objects-enums-enumbuilder}
+### `AZ::SerializeContext::EnumBuilder` 
 
 `Version(unsigned int version, VersionConverter converter = nullptr)`
 Sets version information for the serialization\.

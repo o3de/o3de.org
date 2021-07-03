@@ -15,7 +15,7 @@ The **Blast Family** component is provided by the [NVIDIA Blast gem](/docs/user-
 
 For information on using the **Blast Family** component see [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)\.
 
-## Blast Family component properties {#component-blast-family-properties}
+## Blast Family component properties 
 
 ![\[Properties of the Blast Family component\]](/images/user-guide/physx/blast/ui-blast-family-component.png)
 

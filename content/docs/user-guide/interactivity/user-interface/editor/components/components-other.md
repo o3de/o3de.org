@@ -13,7 +13,7 @@ You can add either or both of the fader and mask components to an element\.
 + [Mask](/docs/user-guide/interactivity/user-interface/editor/components-mask.md)
 + [Flipbook Animation](/docs/user-guide/interactivity/user-interface/editor/components-other-flipbook.md)
 
-## Fader {#ui-editor-components-fader}
+## Fader 
 
 You can use a **Fader** component to simultaneously adjust the transparency of an element and its children\.
 

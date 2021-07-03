@@ -8,7 +8,7 @@ title: Camera Rig
 
 Use the **Camera Rig** component to add and remove behaviors to drive your camera entity\. To use the camera component, you must first add the [Camera Framework Gem](/docs/user-guide/gems/camera.md) to your project\.
 
-## Camera Rig Component Properties {#component-camera-rig-properties}
+## Camera Rig Component Properties 
 
 The **Camera Rig** component has the following properties:
 
@@ -21,11 +21,11 @@ Array of behaviors that modify the look\-at target transform\. The rig runs each
 [ **Transform behaviors**](#transform-behaviors)
 Array of behaviors that modify the camera transform based on the look\-at target transform\. The rig runs each in order before setting the camera component's transform\.
 
-## Target Acquirers {#target-acquirers}
+## Target Acquirers 
 
 **Target Acquirers** identify valid targets and acquire their transforms for use in other rig behaviors\.
 
-### Acquire By Tag {#camera-target-component-acquirer}
+### Acquire By Tag 
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/camera-target-component-acquirer.png)
 
@@ -40,7 +40,7 @@ If selected, uses the target's rotation when determining camera behavior\.
 **Use Target Position**
 If selected, uses the target's position when determining camera behavior\.
 
-### Acquire By Entity Id {#camera-target-component-acquirebyentityid}
+### Acquire By Entity Id 
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/camera-target-component-acquirebyentityid.png)
 
@@ -55,11 +55,11 @@ If selected, uses the target's rotation when determining camera behavior\.
 **Use Target Position**
 If selected, uses the target's position when determining camera behavior\.
 
-## Look\-at Behaviors {#look-at-behaviors}
+## Look\-at Behaviors 
 
 **Look\-at Behaviors** changes the target transform to modify camera behavior\.
 
-### OffsetPosition {#offset-position}
+### OffsetPosition 
 
 Use **OffsetPosition** to change the position of the target's transform\. Positions are often determined from the base of a model\. But suppose, for example, that you want to determine its position 1\.8 meters up from its base\. You can use this property to achieve that positional offset\.
 
@@ -73,7 +73,7 @@ Vector displacement of the target transform's position\.
 **Offset Is Relative**
 If selected, uses local coordinates\. If deselected, uses world\-basis vectors for the offset\.
 
-### Rotate Camera Target {#rotate-camera-target}
+### Rotate Camera Target 
 
 Use **Rotate Camera Target** to rotate the target separately from its source target\. For example, you may want your character to look up and down without pitching\.
 
@@ -93,7 +93,7 @@ If selected, inverts the axis of rotation\.
 **Rotation Speed Scale**
 Multiplier for new input values to scale the speed of rotation\.
 
-### SlideAlongAxisBasedOnAngle {#slide-along-axis-based-on-angle}
+### SlideAlongAxisBasedOnAngle 
 
 Use **SlideAlongAxisBasedOnAngle** to modify the position of the look\-at target based on an angle\. For example, say that you set the target to slide along the forward and backward axis based on pitch\. As the target pitched down, then the position would move ahead of the target\. If the target is attached to the character, then every time the target looked down, it would be ahead of the character\. Every time it looked up, it would be behind the character\.
 
@@ -122,15 +122,15 @@ The maximum slide along the axis when the angle reaches 90 degrees\.
 **Max Negative Slide Distance**
 The maximum slide along the axis when the angle reaches \-90 degrees\.
 
-## Transform Behaviors {#transform-behaviors}
+## Transform Behaviors 
 
 **Transform Behaviors** are a critical component of how the camera responds to the target\. For example, you can set the camera to face the target, follow from a distance, or follow the target at a specific angle\.
 
-### FaceTarget {#face-target}
+### FaceTarget 
 
 **FaceTarget** causes the camera to change the rotation of its transform to look at the target\. To use this feature, simply add it\. There are no additional properties to configure\.
 
-### FollowTargetFromAngle {#follow-target-from-angle}
+### FollowTargetFromAngle 
 
 **FollowTargetFromAngle** causes the camera to follow the target from a specified angle\. This feature works well for top\-down, isometric, and side scrolling cameras\.
 
@@ -147,7 +147,7 @@ Rotation type of the angle for following the target: yaw, pitch, or roll\.
 **Distance from Target**
 The distance in meters from which the camera follows the target\.
 
-### FollowTargetFromDistance {#follow-target-from-distance}
+### FollowTargetFromDistance 
 
 **FollowTargetFromDistance** causes the camera to follow the target from a specified distance\. You can also set named events to trigger the camera to zoom in on or out from a target\.
 
@@ -176,7 +176,7 @@ Scale amount for the incoming zoom value\.
 **Player Index**
 The index of the player \(device index\) that this feature supports\.
 
-### Offset Position {#offset-camera-position}
+### Offset Position 
 
 **Offset Position** sets the camera's position to the target's position with an offset\.
 
@@ -190,7 +190,7 @@ The vector offset in meters from the target\.
 **Is Offset Relative**
 If selected, local basis vectors are used\. If deselected, worldbasis vectors are used\.
 
-### Rotate {#camera-rig-rotate}
+### Rotate 
 
 Use **Rotate** to rotate a camera about one of its axes \(**X**, **Y**, or **Z**\)\.
 

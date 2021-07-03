@@ -11,7 +11,7 @@ This tutorial shows you how to modify existing and create console variables \(CV
 **Note**
  This brief tutorial is intended for programmers\. Most of the content uses code\.
 
-## Creating CVars {#system-cvar-tutorial-creating}
+## Creating CVars 
 
 **To create a console variable**
 
@@ -62,7 +62,7 @@ This tutorial shows you how to modify existing and create console variables \(CV
 
 1. After you finish making changes, don't forget to compile your code\.
 
-## Using the CVar {#system-cvar-tutorial-using}
+## Using the CVar 
 
 You can now change the value of the CVar that you created by using code, the console, and `.cfg` files\.
 

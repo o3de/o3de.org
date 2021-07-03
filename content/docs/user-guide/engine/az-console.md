@@ -23,7 +23,7 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 + [Optional flags](#az-console-flags)
 + [Adding support for new console variable types](#az-console-new-types)
 
-## Console variables \(cvars\) {#az-console-cvars}
+## Console variables \(cvars\) 
 
 Declare a cvar using one of two macros from `IConsole.h:`
 
@@ -83,7 +83,7 @@ AZ_CVAR_EXTERNED(_TYPE, _NAME)
 
 Make sure that the **\_TYPE **and **\_NAME** parameters match those of the previously defined cvar\.
 
-## Console functors \(cfuncs\) {#az-console-cfuncs}
+## Console functors \(cfuncs\) 
 
 Console functions allow you to register a command with the console that's not associated with a specific type or value\. In O3DE, they're purely a mechanism to allow a method to be invoked directly from the O3DE in\-game console\.
 
@@ -131,7 +131,7 @@ void ForceEnableMetrics(const StringSet&) {}
     AZ_CONSOLEFREEFREEFUNC(ForceEnableMetrics, FunctorFlags::Null, "If called, force enable metrics");
 ```
 
-## Optional flags {#az-console-flags}
+## Optional flags 
 
 `AZ::Console` provides a set of flags that can be passed to cvar and cfunc declarations and indicate how they should be handled:
 
@@ -149,7 +149,7 @@ enum class FunctorFlags
 };
 ```
 
-## Adding support for new console variable types {#az-console-new-types}
+## Adding support for new console variable types 
 
 To add support for a new cvar type, override the two template methods that convert the custom type to a space\-delimited string from a vector of space\-delimited string inputs\.
 

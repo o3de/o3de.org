@@ -11,7 +11,7 @@ When you import `.fbx` files from your DCC to O3DE Editor, Asset Processor creat
 
 The following are file types used in the **Animation Editor**:
 
-## Files Types {#file-types-created-from-asset-processor}
+## Files Types 
 
 When you import `.fbx` files into O3DE, Asset Processor generates the following file types used for the **Animation Editor**:
 + `.actor` files are created when the `.fbx` file has at least one bone\. You want to use your character's skinned mesh as your `.actor` file\. The `.actor` file is the character that displays the animation\.
@@ -20,7 +20,7 @@ When you import `.fbx` files into O3DE, Asset Processor generates the following 
 
 When a `.motion` file is created, an `.actor` file is also created\. The `.actor` file that you want to use in the **Animation Editor** is generally the skinned mesh in the bind pose that you export from your DCC\. Keep track of your skinned mesh that you want to use as your `.actor` file in the **Animation Editor**\. You can go to the **FBX Settings** tool and delete the actor files that you don't need\.
 
-## File Types Required for Animation Graphs {#file-types-required-for-animation-graphs}
+## File Types Required for Animation Graphs 
 
 When you create your animation graph in the **Animation Editor**, the animation graph must have the following files:
 + `.actor`
@@ -28,7 +28,7 @@ When you create your animation graph in the **Animation Editor**, the animation 
 + `.motionset`
 + `.animgraph`
 
-## Saving Animation Editor Files {#saving-animation-editor-files}
+## Saving Animation Editor Files 
 
 Saving your project in the **Animation Editor** creates a `.workspace` file\. The workspace saves the actor, motion, motion set and animation graphs that you are using\. When you open a workspace, the **Animation Editor** loads the files so that you can pick up where you last left off\.
 

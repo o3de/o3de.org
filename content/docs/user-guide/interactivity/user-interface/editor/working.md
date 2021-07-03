@@ -13,7 +13,7 @@ You can use the **UI Editor** to add and delete components, create references to
 + [Referencing UI Elements](#ui-editor-referencing-ui-elements)
 + [Managing UI Components](#ui-editor-managing)
 
-## Adding or Deleting Components {#ui-editor-add-delete}
+## Adding or Deleting Components 
 
 You can add or delete components in the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/using.md)\.
 
@@ -37,7 +37,7 @@ You can add or delete components in the [UI Editor](/docs/user-guide/interactivi
 
 1. In the **Properties** panel, right\-click the component and click **Remove**\.
 
-## Referencing UI Elements {#ui-editor-referencing-ui-elements}
+## Referencing UI Elements 
 
 You can specify a UI element for some properties on components\. For example, you can specify UI elements for **Lua Script** properties\.
 
@@ -65,7 +65,7 @@ After you specify a UI element as a property, you can select that element from t
 **To select a UI element from the **Properties** panel**
 + In the **Properties** panel, double\-click the element name\.
 
-## Managing UI Components {#ui-editor-managing}
+## Managing UI Components 
 
 You can use the context menu in the **Properties** panel to add, remove, cut, copy, and paste components\.
 

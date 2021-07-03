@@ -20,7 +20,7 @@ In this procedure, you'll do the following:
 
 1. View the simulation in the render window\.
 
-## Prerequisites {#prerequisites-for-creating-simulated-objects}
+## Prerequisites 
 
 Before you begin, you must do the following:
 + Using Project Configurator, enable the [Samples Project](/docs/userguide/samples/projects/samples.md)\.

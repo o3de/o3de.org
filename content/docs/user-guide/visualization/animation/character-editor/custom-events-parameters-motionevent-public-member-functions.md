@@ -19,7 +19,7 @@ The `MotionEvent` class includes the following public member functions\.
 + [SetIsSyncEvent](#char-animation-editor-custom-events-parameters-setissyncevent)
 + [HashForSyncing](#char-animation-editor-custom-events-parameters-hashforsyncing)
 
-## MotionEvent {#char-animation-editor-custom-events-parameters-motionevent}
+## MotionEvent 
 
 You can use the `MotionEvent` function to trigger an event at a specific point in time \(a tick event\) or during a specified time range \(a range event\)\. To specify the data that the event emits, you can use pointers or datasets\.
 
@@ -89,7 +89,7 @@ Creates a ranged event and uses a dataset\.
 | endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. |
 | datas | The values to emit when the event is triggered\. |
 
-## SetStartTime {#char-animation-editor-custom-events-parameters-setstarttime}
+## SetStartTime 
 
 Sets the start time value of the event, which is when the event should be processed\.
 
@@ -99,7 +99,7 @@ Sets the start time value of the event, which is when the event should be proces
 void SetStartTime (float timeValue)
 ```
 
-## SetEndTime {#char-animation-editor-custom-events-parameters-setendtime}
+## SetEndTime 
 
 Sets the end time value of the event, which is when the event should be processed\.
 
@@ -109,7 +109,7 @@ Sets the end time value of the event, which is when the event should be processe
 void SetEndTime (float timeValue)
 ```
 
-## GetStartTime {#char-animation-editor-custom-events-parameters-getstarttime}
+## GetStartTime 
 
 Gets the start time value of this event, which is when the event should be executed\.
 
@@ -119,7 +119,7 @@ Gets the start time value of this event, which is when the event should be execu
 float GetStartTime () const
 ```
 
-## GetEndTime {#char-animation-editor-custom-events-parameters-getendtime}
+## GetEndTime 
 
 Gets the end time value of this event, which is when the event should stop\.
 
@@ -129,7 +129,7 @@ Gets the end time value of this event, which is when the event should stop\.
 float GetEndTime () const
 ```
 
-## GetIsTickEvent {#char-animation-editor-custom-events-parameters-getistickevent}
+## GetIsTickEvent 
 
 Checks whether this is a tick event\.
 
@@ -139,7 +139,7 @@ Checks whether this is a tick event\.
 bool GetIsTickEvent () const
 ```
 
-## ConvertToTickEvent {#char-animation-editor-custom-events-parameters-converttotickevent}
+## ConvertToTickEvent 
 
 Converts this event into a tick event\.
 
@@ -149,7 +149,7 @@ Converts this event into a tick event\.
 void ConvertToTickEvent ()
 ```
 
-## GetIsSyncEvent {#char-animation-editor-custom-events-parameters-getissyncevent}
+## GetIsSyncEvent 
 
 Checks whether this event is a sync event\.
 
@@ -159,7 +159,7 @@ Checks whether this event is a sync event\.
 bool GetIsSyncEvent () const
 ```
 
-## SetIsSyncEvent {#char-animation-editor-custom-events-parameters-setissyncevent}
+## SetIsSyncEvent 
 
 Specifies whether this event is a sync event\.
 
@@ -169,7 +169,7 @@ Specifies whether this event is a sync event\.
 void SetIsSyncEvent (bool newValue)
 ```
 
-## HashForSyncing {#char-animation-editor-custom-events-parameters-hashforsyncing}
+## HashForSyncing 
 
 Creates a hash on the sync track of a motion\.
 

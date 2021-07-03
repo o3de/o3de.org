@@ -9,7 +9,7 @@ O3DE's built\-in UI system, `LyShine`, renders text using font textures\. The qu
 
 Use the procedures in this section to configure font size and texture to achieve quality text rendering\.
 
-## Font Texture Width and Height Attributes {#ui-fonts-texture-attributes}
+## Font Texture Width and Height Attributes 
 
 Fonts are defined in XML by `*.font` files\. The XML in a `.font` file defines various parameters, such as the path to the source TTF/OTF asset and important rendering properties\. The font file `Engine/Fonts/default-ui.font` included in the O3DE project has the following content\.
 
@@ -39,7 +39,7 @@ The font texture resolution is controlled by the following line\.
 
 In this example, the font texture has a resolution of 512x256\. This resolution size \(along with the number of character slots\) is an important value for determining font rendering quality\.
 
-## Character Slots {#ui-fonts-character-slots}
+## Character Slots 
 
 In O3DE, a font texture is logically divided into equally sized slots\. In each slot, there is a uniform amount of space for each character \(glyph\)\. By default \(without additional configuration\), there are 128 unique characters \(16 rows \* 8 columns\)\.
 
@@ -71,7 +71,7 @@ Here is another example\.
 
 In this example, the font texture size is `4096x4096`, and there are a total number of `128x128` \(16,384\) character slots\. To determine the available size for each character, divide the texture size \(4096x4096\) by the number of slots \(128x128\) to yield a 32x32 pixel space per character\. This configuration enables you to render over 16,000 unique characters at a 32\-pixel size in a single frame\.
 
-## Font Size {#ui-fonts-size}
+## Font Size 
 
 Because a font texture is divided into a logical grid, a simple calculation determines how much real estate each character in the font can use:
 + Font texture width / `widthslots` = slot width

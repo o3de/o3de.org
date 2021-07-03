@@ -26,7 +26,7 @@ Select an option for the raycasts used in calculation of obstruction and occlusi
 **Play immediately**
 Select this option to run upon component activation the audio **'play'** trigger.
 
-## EBus Request Bus Interface {#component-audio-trigger-ebusrequest}
+## EBus Request Bus Interface 
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 

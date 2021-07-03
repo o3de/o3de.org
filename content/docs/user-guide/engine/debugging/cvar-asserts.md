@@ -14,7 +14,7 @@ Manage assert notifications in O3DE with the `sys_asserts` console variable\. Th
 | 1 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This is the default value\. |
 | 2 | If asserts and assert call stacks are available, they are logged and printed to the console or terminal\. This value displays a dialog box with options to ignore the current assert, ignore all asserts, or break on the assert\. |
 
-## Example Outputs {#debugging-using-asserts-example-outputs}
+## Example Outputs 
 
 `sys_asserts=1` produces output similar to the following:
 
@@ -42,7 +42,7 @@ The following table describes the options for the **Assert** dialog box\.
 | Ignore All | Prevents the current assert and all future asserts from displaying a dialog box\. To prevent decreases in performance, prints debug information to the log only after completion\. |
 | Break | Breaks on the assert\. If a debugger is attached, creates a breakpoint and breaks at the breakpoint in the debugger\. If a debugger is not attached, stops the application\. |
 
-## Setting the Assert Level at Initialization {#debugging-using-asserts-setting-at-initialization}
+## Setting the Assert Level at Initialization 
 
 To set the assert level at engine initialization, add an entry to a project's `game.cfg` file\. The following example shows a `game.cfg` file for the SamplesProject\.
 
@@ -55,19 +55,19 @@ r_DisplayInfo=3
 sys_asserts=2
 ```
 
-## Setting the Assert Level at Runtime {#debugging-using-asserts-setting-at-runtime}
+## Setting the Assert Level at Runtime 
 
 You can set the `sys_asserts` console variable at runtime in the console window\. The following image shows an example\.
 
 ![\[Setting the sys_asserts console variable at runtime.\]](/images/user-guide/debugging-using-asserts-2.png)
 
-## Setting the Assert Level for Mobile Devices {#debugging-using-asserts-mobile-devices}
+## Setting the Assert Level for Mobile Devices 
 
 When debugging mobile platforms, you can use the Windows\-based [Universal Remote Console](/docs/user-guide/engine/remote-console.md) to set the assert level in the command\-line window of the application\.
 
 ![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/user-guide/debugging-using-asserts-3.png)
 
-## **Setting an Assert in Source Code** {#debugging-using-asserts-setting-in-source-code}
+## **Setting an Assert in Source Code** 
 
 To add an assert in source code, use the `AZ_Assert` macro\.
 

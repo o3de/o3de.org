@@ -10,7 +10,7 @@ O3DE provides the following built\-in debugging and profiling tools that you can
 + [Particle debugging](/docs/userguide/particles/debugging.md) - Debug particles\.
 + [Vegetation debugging](/docs/userguide/vegetation/debugging.md) - Debug vegetation objects\.
 
-## Crash logging {#debugging-crash-logging}
+## Crash logging 
 
  Logging and reporting for crashes that occur in the O3DE Editor or your O3DE game can be turned on by modifying the `sys_dump_type` console variable\. The type of crash log information generated depends on the value:
 + `0` - Disable crash reporting\.
@@ -22,7 +22,7 @@ O3DE provides the following built\-in debugging and profiling tools that you can
 
  By default, only the call stack for the main thread is in a crash dump\. In order to get the stack trace of auxiliary threads, set the `sys_dump_aux_threads` console variable to `1`\.
 
-## Using Console Debug Views {#debugging-debug-views}
+## Using Console Debug Views 
 
 The viewport window displays debugging information by default when you are in gameplay mode \(**Ctrl\+G**\)\. You can toggle this information on or off by pressing the tilde \(**\~**\) key\. Use the following console variables and values to generate viewing modes in the viewport that are useful for debugging\.
 + `e_Camerafreeze 1` - Freezes the camera to see what is rendered from the camera's point of view and what is occluded\. Also useful for debugging object culling and LOD\.
@@ -38,7 +38,7 @@ The viewport window displays debugging information by default when you are in ga
 + `r_ShowLines 2` - Overlays the wireframe only on the front\-facing geometry\. Anything behind this geometry isn't rendered\.
 + `r_TexBindMode 6` - Applies a uniform, flat, gray material with normal map information to every surface in the level\.
 
-### Using DebugDraw Console Variables {#debugging-debug-views-debugdraw}
+### Using DebugDraw Console Variables 
 
 Use the following console variables and values to display information about your level\.
 + `e_DebugDrawLodMinTriangles 1000` - Do not draw debug text for objects with less than 1000 triangles\.
@@ -67,7 +67,7 @@ Use the following console variables and values to display information about your
 + `e_DebugDraw 24` - Display objects with 0 LOD with red text\.
 + `e_DebugDraw 25` - Display objects with 0 LOD with red text and objects with 1 LOD with blue text\.
 
-### Using GBuffer Console Variables {#debugging-debug-views-gbuffer}
+### Using GBuffer Console Variables 
 
 Use the following console variables and values to display materials, colors, shadows, albedo, and other characteristics in your level\.
 + `r_DebugGBuffer 1` - Shows normals of all assets in the level\.

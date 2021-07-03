@@ -40,7 +40,7 @@ The following **Random Timed Spawner** component has the distribution type, Unif
     - [GetSpawnDelayVariation {#random-timed-spawner-ebus-get-spawn-delay-variation}](#getspawndelayvariation-random-timed-spawner-ebus-get-spawn-delay-variation)
     - [Notification Bus Example Script {#random-timed-spawner-notification-bus-example-script}](#notification-bus-example-script-random-timed-spawner-notification-bus-example-script)
 
-## Random Timed Spawner Properties {#component-random-timed-spawner-properties}
+## Random Timed Spawner Properties 
 
 **Enabled**
 Enables slices to spawn with the specified parameters\.
@@ -51,7 +51,7 @@ Specify the random distribution type when the **Random Timed Spawner** component
 Default value: Uniform Real
 Valid values: Normal, Uniform Real
 
-### Timing {#component-random-timed-spawner-timing}
+### Timing 
 
 **Spawn Delay**
 Time between spawns, in seconds\.
@@ -65,13 +65,13 @@ For example, a value of `1.0` and a **Spawn Delay** value of `2.0` means that th
 Default value: `0`
 Valid values: \-∞ to ∞
 
-## EBus Request Bus Interface {#component-random-timed-spawner-ebus-request}
+## EBus Request Bus Interface 
 
 You can use this EBus to communicate to an entity with a **Random Timed Spawner** component attached\. The EBus is available at game run time and editing and can be accessed from C\+\+, Lua, and the **Script Canvas** editor\.
 
 For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
 
-### Enable {#random-timed-spawner-ebus-enabled}
+### Enable 
 
 Starts random spawning\.
 
@@ -84,7 +84,7 @@ None
 **Scriptable**
 Yes
 
-### Disable {#random-timed-spawner-ebus-disable}
+### Disable 
 
 Stops random spawning\.
 
@@ -97,7 +97,7 @@ None
 **Scriptable**
 Yes
 
-### Toggle {#random-spawner-component-ebus-toggle}
+### Toggle 
 
 Toggles random spawning\.
 
@@ -110,7 +110,7 @@ None
 **Scriptable**
 Yes
 
-### IsEnabled {#random-timed-spawner-ebus-is-enabled}
+### IsEnabled 
 
 Returns whether the **Random Timed Spawner** component is spawning entities\.
 
@@ -123,7 +123,7 @@ Type: Boolean
 **Scriptable**
 Yes
 
-### SetRandomDistribution {#random-timed-spawner-ebus-set-random-distribution}
+### SetRandomDistribution 
 
 Sets the type of random distribution that determines where the **Random Timed Spawner** component places the entities that spawn\.
 
@@ -136,7 +136,7 @@ None
 **Scriptable**
 Yes
 
-### GetRandomDistribution {#random-timed-spawner-ebus-get-random-distribution}
+### GetRandomDistribution 
 
 Returns the type of random distribution for the **Random Timed Spawner** component\.
 
@@ -154,7 +154,7 @@ Type: `AZ::RandomDistributionType`
 **Scriptable**
 Yes
 
-### SetSpawnDelay {#random-timed-spawner-ebus-set-spawn-delay}
+### SetSpawnDelay 
 
 Sets the time between entity spawns, in seconds\.
 
@@ -167,7 +167,7 @@ None
 **Scriptable**
 Yes
 
-### GetSpawnDelay {#random-timed-spawner-ebus-get-spawn-delay}
+### GetSpawnDelay 
 
 Returns the time between entity spawns, in seconds\.
 
@@ -180,7 +180,7 @@ Type: Double
 **Scriptable**
 Yes
 
-### SetSpawnDelayVariation {#random-timed-spawner-ebus-set-spawn-delay-variation}
+### SetSpawnDelayVariation 
 
 Sets the random variation in spawn delay, in seconds\.
 
@@ -199,7 +199,7 @@ None
 **Scriptable**
 Yes
 
-### GetSpawnDelayVariation {#random-timed-spawner-ebus-get-spawn-delay-variation}
+### GetSpawnDelayVariation 
 
 Returns the random variation in spawn delay, in seconds\.
 
@@ -212,7 +212,7 @@ Type: Double
 **Scriptable**
 Yes
 
-### Notification Bus Example Script {#random-timed-spawner-notification-bus-example-script}
+### Notification Bus Example Script 
 
 ```
 function example:OnActivate()

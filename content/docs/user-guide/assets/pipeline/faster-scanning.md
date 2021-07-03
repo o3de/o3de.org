@@ -36,7 +36,7 @@ When you enable the feature you can also use console mode `stdout` as well as op
 
 For more information, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md)\.
 
-## Performing a Full Scan {#asset-processor-full-scan}
+## Performing a Full Scan 
 
 When you choose a full scan, Asset Processor performs the following actions\. Low cost actions contribute to less than 1% of the total time\.
 + \(Low\) Determines which builders are responsible for building a file\. Asset Processor examines builder patterns, such as `*.tif` or `*.fbx` when they register\.

@@ -8,7 +8,7 @@ weight: 100
 
 The O3DE audio system consists of Gems, components, and content\.
 
-## Gems {#audio-architecture-gems}
+## Gems 
 
 O3DE provides two audio Gems:
 + **AudioSystem**
@@ -30,11 +30,11 @@ O3DE audio Gems feature the following modules:
 | Audio Engine Wwise |  Part of the Audio Engine Wwise Gem\. Contains the implementation of `AudioSystemImplementation` interfaces for Wwise\. Contains all Audiokinetic APIs\. This is the only module that links with Wwise SDK\. Can be configured to use Wwise LTX or the full version of Wwise\.  |
 | Audio Engine Wwise Editor |  A O3DE Editor plugin, and part of the Audio Engine Wwise Gem\. This is an additional module that the **Audio Controls Editor** loads when O3DE uses Wwise\.  |
 
-## Components {#audio-architecture-components}
+## Components 
 
 Core audio components available in O3DE Editor enable you to trigger sound effects, play ambient music, change sound variables using RTPC, apply environmental effects, place listeners to act as virtual microphones, and more. For a complete list, see [Audio Components](./components).
 
-## Content {#audio-architecture-content}
+## Content 
 
 O3DE audio features the following content:
 

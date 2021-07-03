@@ -6,13 +6,8 @@
 
 {{ range $docsSections }}
   <nav class="section-nav" id="section-nav">
-    {{ range .Site.Sections }}
+    {{ range where .Site.Sections ".LinkTitle" "O3DE Documentation"}}
       <div class="accordion" id="accordionExample">
-        <div class="card border-left-0 border-right-0 rounded-0"> <!-- root -->
-          <div class="card-header">
-             <a id="docs-nav-title" href="{{ .Permalink }}"><h1>{{ .LinkTitle | markdownify }}</h1></a>
-          </div>
-        </div>
         {{ range .Sections }}
         <div class="card border-left-0 border-right-0 rounded-0">
           <div class="card-header" id="{{ .CurrentSection.Params.menu_uuid }}">
@@ -34,6 +29,8 @@
                   </a>
                   </li>
                 </ul>
+                
+                <div class="accordion" id="accordion{{ .CurrentSection.Params.menu_uuid }}">
                 {{ range .CurrentSection.Pages }}
                 <ul class="section-nav-subsection">
                   <li>
@@ -46,6 +43,7 @@
                     </li>
                   </ul>
                 {{ end }}
+                </div>
             </div>
           </div>
         </div>

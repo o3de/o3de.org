@@ -30,7 +30,7 @@ Two colliders interact if their collision layers are in each other's collision g
 1. In the **Entity Inspector**, in the **PhysX Collider** component, for **Collides With**, choose one of the collision groups that you created from the drop\-down list\.
 ![\[Choosing a collision group for the PhysX Collider component in the Entity Inspector.\]](/images/user-guide/physx/physx-configuration-5.png)
 
-## Example Collision Group Configuration {#physx-configuration-collision-groups-example}
+## Example Collision Group Configuration 
 
 The following example defines **Player**, **Enemy**, **Bullet**, **Foliage**, and **Terrain** layers, and the following collision groups:
 + **PlayerBullet** - Collides with **Enemy** and **Terrain**\.
