@@ -26,8 +26,6 @@ Fancy docking can use up to five styled dock widgets added to a `DockMainWindow`
 
 1.  Construct a `AzQtComponents::StyledDockWidget` for the center and add it to the main window.
 
-For the complete working example pictured in the preceding image, be sure to look at the **Styled Dock Widget** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), and browse the source code for that page. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\StyledDockWidgetPage.cpp`.
-
 The following code shows a simplistic example of the styled dock widget.
 
  **Example**
