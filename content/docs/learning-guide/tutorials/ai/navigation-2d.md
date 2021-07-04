@@ -40,7 +40,7 @@ If you change `Profiles.xml` while the editor or game is running, you can reload
 
 2D agents operate on a *navigation mesh* (navmesh) which is a network of 2D tiles that define the navigable areas of the level. Kythera AI generates these navmeshes automatically according to parameters defined in the `NavMesh.xml`. Kythera AI allows for multiple types of navmeshes that can be used by different types of agents. For example, a navmesh type for large creatures prevents them from navigating small spaces.
 
-Navmeshes can be global, meaning they are available in all levels in the project, or level-specific. The global `NavMesh.xml` is placed in the project's `Scripts` directory. For level-specific navmeshes, a `NavMesh.xml` can be placced in the level's subdirectory.
+Navmeshes can be global, meaning they are available in all levels in the project, or level-specific. The global `NavMesh.xml` is placed in the project's `Scripts` directory. For level-specific navmeshes, a `NavMesh.xml` can be placed in the level's subdirectory.
 
 ```xml
 <NavMeshParams>
