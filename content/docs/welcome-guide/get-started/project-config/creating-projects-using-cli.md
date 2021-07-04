@@ -58,7 +58,7 @@ Use CMake to create the Visual Studio project for your O3DE project.
 
     ```cmd
     cd C:\o3de-projects\MyProject
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B build -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -- /m
     ```
 
     {{< caution >}}
@@ -69,17 +69,17 @@ Do not use trailing slashes when specifying the path to the packages directory.
 
 Use CMake to build the Visual Studio project in the build directory of your O3DE project.
 
-1. Build the project launcher using the solution you created in the `build/windows_vs2019` directory. The `profile` build configuration is shown in this example.
+1. Build the project launcher using the solution you created in the `build` directory. The `profile` build configuration is shown in this example.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target MyProject.GameLauncher --config profile -- /m
+    cmake --build build --target MyProject.GameLauncher --config profile -- /m
     ```
 
     {{< note >}}
 The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
     {{< /note >}}
 
-1. If you're using an installed O3DE engine (or engine SDK), the project should build within minutes. In this example, when the build is complete, the project binaries can be found under `build/windows_vs2019/bin/profile` in the project directory.
+1. If you're using an installed O3DE engine (or engine SDK), the project should build within minutes. In this example, when the build is complete, the project binaries can be found under `build/bin/profile` in the project directory.
 
 1. Run the O3DE Editor to verify the project is ready to use.
 
