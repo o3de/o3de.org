@@ -32,6 +32,8 @@ Note that this release is a Developer Preview and is incomplete for many major d
 
 * CMake support: Heck yeah! CMake replaces WAF as the build environment and tools, and brings with it a host of great features. [Check out the documentation here.](/docs/user-guide/build/)
 
+* Script Canvas: We're pleased to introducine Script Canvas Backend 2.0, which decouples the front-end and back-end of ScriptCanvas and provides an all-new back-end that compiles to Lua. Users will see performance increases and reductions in memory use, as we reduced the per-entity and per-graph run-time memory costs from `O(entity * graph)` to `O(1)` in the best cases, and put so much more execution on the C++ stack (and Lua execution space) than before.
+
 Or, if you're the literary sort, [read through our new Get Started docs](/docs/welcome-guide/). This is a good place to get oriented to all the [features](/docs/welcome-guide/features-intro/) and [concepts](/docs/welcome-guide/key-concepts/) O3DE introduces.
 
 ## New and updated core features
@@ -50,7 +52,7 @@ There's a lot of additional updates we're bringing to you with this initial rele
 * Implemented support for Windows, MacOS, Linux, Android, and iOS editor and runtime builds
 ​
 
-### Renderer
+### Renderer (Atom)
 
 * Removed rendering from all coupled and replaced with new PBR Atom renderer library
 * Added HLSL compatibility with AZSL shader extension with export per backend
@@ -58,6 +60,9 @@ There's a lot of additional updates we're bringing to you with this initial rele
 * Implemented pipeline interface for forward+ and/or deferred render passes
 * Implemented Global Illumination for forward or deferred per mesh/material basis
 * Added MSAA/SSAO/SSR support
+* (Animation) We have unified the mesh format used by EMFX and Atom, such that EMotionFX Actors now use Atom's `ModelAsset` class for serializing mesh data.
+*  To improve the runtime drawing of its meshes, the mesh data for EMotionFX Actors is first processed by a mesh optimizer. This restructures the mesh data to better fit the needs of the graphics hardware.
+
 ​
 
 ### Asset processing
@@ -87,11 +92,12 @@ There's a lot of additional updates we're bringing to you with this initial rele
 * `AZ::Transform` implemented for non-matrix/decomposed required calculations with position, quaternion * orientation and scale
 ​
 
-### Simulation
+### Physics and Simulation
 
 * Blast Destruction implemented
 * New Visibility interface for culling and occlusion using spatial-hash implementation
 * CryPhysics replaced with Physics API; implemented PhysX support
+* NvCloth support is available!
 ​
 
 ### Editor
@@ -99,7 +105,7 @@ There's a lot of additional updates we're bringing to you with this initial rele
 * Editor extended
 * White Box polygonal shape/modelling tool added to Editor
 * Implemented White Box python scripting and toolchain support with import/export
-* Script Canvas 2.0 implemented with full visual compile to LUA
+* Script Canvas 2.0 implemented with full visual compile to Lua
 
 ### Networking
 
