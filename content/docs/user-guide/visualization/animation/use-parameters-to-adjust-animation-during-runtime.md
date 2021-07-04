@@ -10,7 +10,7 @@ You can adjust the **SimulatedObject** node to change its animation during runti
 
 **To adjust the animation during runtime**
 
-1. In the **Parameters** panel, click the **\+** icon and choose **Add parameter**.
+1. In the **Parameters** panel, click the **+** icon and choose **Add parameter**.
 
 1. Enter the following values.
 

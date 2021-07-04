@@ -71,7 +71,7 @@ You must enable the ImGui gem to access this tool. For more information, see [En
 
 **To debug with the ImGui tool**
 
-1. Press **Ctrl\+G** to enter gameplay mode.
+1. Press **Ctrl+G** to enter gameplay mode.
 
 1. Press the **Home** key to open the **ImGui** tool. The **PhysX Debug** menu appears under the **Perspective** viewport.
 

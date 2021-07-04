@@ -92,7 +92,7 @@ Add a comment to the file. You can add a comment about changes made to the `.fbx
 
 Add level of detail \(LoD\) meshes to the **Mesh group**.
 
-1. Choose the **\+** button to add an LoD.
+1. Choose the **+** button to add an LoD.
 
 1. Choose the **Trash Can** button to remove an LoD.
 

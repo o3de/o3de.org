@@ -49,9 +49,9 @@ treeView->setItemDelegate(new AzQtComponents::BranchDelegate());
 AzQtComponents::TreeView::setBranchLinesEnabled(treeView, true);
 ```
 
-## C\+\+ API reference<a name="tree-view-api-ref"></a>
+## C++ API reference<a name="tree-view-api-ref"></a>
 
-For details on the **tree view** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **tree view** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TreeView](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tree_view.html)
 
 Relevant Qt documentation includes the following topics:

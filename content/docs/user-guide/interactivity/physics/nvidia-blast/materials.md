@@ -36,7 +36,7 @@ Blast materials are stored in a blast material library. The blast material libra
 
 1. Set the blast material properties. For information, see [Blast material properties](#nvidia-blast-material-properties) below.
 
-1. Additional Blast materials can be created by choosing the **\+** button in the upper right corner of the Blast material list.
+1. Additional Blast materials can be created by choosing the **+** button in the upper right corner of the Blast material list.
 
 1. Save the Blast material library. In **Asset Editor**, in the **File** menu, choose **Save as**.
 

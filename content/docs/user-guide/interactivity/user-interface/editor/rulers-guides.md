@@ -10,7 +10,7 @@ Use **Rulers** and **Guides** to visually guide the placement of your UI element
 
 **To show or hide Rulers**
 + Do one of the following:
-  + Press **Ctrl\+R**
+  + Press **Ctrl+R**
   + Choose **View** and then **Rulers**
 
 The ruler's units are measured in pixels in the canvas space. Magenta lines on the rulers mark the current location of your cursor.
@@ -21,7 +21,7 @@ The ruler's units are measured in pixels in the canvas space. Magenta lines on t
 
 **To show or hide **Guides****
 + Do one of the following:
-  + Press **Ctrl\+;** \(semicolon\)
+  + Press **Ctrl+;** \(semicolon\)
   + Choose **View** and then **Guides**
 
 You place the guides at a specific pixel offset on a canvas. The **UI Editor** displays guides as green lines, which you can position UI elements around or along.

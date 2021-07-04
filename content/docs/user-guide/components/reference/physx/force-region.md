@@ -140,7 +140,7 @@ You can create a force region so that force applies to another entity that enter
 
    1. Select the **Visible** and **Debug Forces** properties.
 
-   1. For **Forces**, click the **\+** icon and for **Force Type**, select a force such as **Local Space**.
+   1. For **Forces**, click the **+** icon and for **Force Type**, select a force such as **Local Space**.
 
    1. For **Magnitude**, enter a value such as **20**.
 
@@ -154,7 +154,7 @@ You can create a force region so that force applies to another entity that enter
 1. Select and drag the **Sphere** entity so that it's above the force region.
 ![\[An entity entering the force region.\]](/images/user-guide/component/physx/force-region-component-local-force-2.png)
 
-1. After you create your dynamic entity, press **Ctrl**\+**G** to enter gameplay mode.
+1. After you create your dynamic entity, press **Ctrl**+**G** to enter gameplay mode.
 **Example**
 
    The sphere falls and collides with the force region. The force region applies force and pushes the sphere in the opposite direction.

@@ -7,7 +7,7 @@ title: ScrollBar
 
 You can use a **ScrollBar** component to add a scrollable bar, or handle, for manipulating settings or scrolling within a scroll box.
 
-To see in\-game examples of completed canvases with the **ScrollBar** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBar**. You can view examples of different types of scroll bar positioning and handles, scroll bars paired with scroll boxes, and visibility options. Press **Esc** to exit the game.
+To see in\-game examples of completed canvases with the **ScrollBar** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBar**. You can view examples of different types of scroll bar positioning and handles, scroll bars paired with scroll boxes, and visibility options. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\ScrollBar` directory. You can open the following canvases:
 + `ScrollBoxes.uicanvas` - Examples of scroll bars paired with scroll boxes

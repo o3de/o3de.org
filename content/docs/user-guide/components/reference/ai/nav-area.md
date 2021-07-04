@@ -26,7 +26,7 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/ai/nav-s
 1. With your new entity selected in the **Entity Outliner**, [add](/docs/userguide/components/working-adding.md) the **Navigation Area** component to it.
 ![\[Navigation Area component properties.\]](/images/user-guide/component/component-nav-area-1.png)
 
-1. In the **Navigation Area** component, next to **Agent Types**, click **\+**.
+1. In the **Navigation Area** component, next to **Agent Types**, click **+**.
 
    Next to **\[0\]**, select **MediumSizedCharacters**. This property defines the [types of agents](#component-nav-area-properties) that can navigate in this area.
 
@@ -58,7 +58,7 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/ai/nav-s
 The **Navigation Area** component has the following properties: {#component-nav-area-properties-agent-types}
 
 **Agent Types**
-Specifies the types of AI that can traverse this navigation area. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project. To specify multiple agent types for this area, click the **\+** icon.
+Specifies the types of AI that can traverse this navigation area. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project. To specify multiple agent types for this area, click the **+** icon.
 You use this property to restrict which agents can navigate within that area. For example, you can allow characters to navigate within a narrow corridor but restrict vehicles.
 To define an agent type on your AI, see the [Navigation](/docs/user-guide/components/reference/ai/navigation/) component.
 

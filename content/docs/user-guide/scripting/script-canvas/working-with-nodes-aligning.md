@@ -20,7 +20,7 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 **To align all nodes in a selection to the topmost node**
 + Use one of the following methods:
   + Click **Top Align** \(![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-10.png)\).
-  + Press **Shift \+ Up Arrow**.
+  + Press **Shift + Up Arrow**.
   + Right\-click the graph, and choose **Align**, **Align top**.
 
   The following animated images show the first two methods.
@@ -30,7 +30,7 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 **To align all nodes in a selection to the bottommost node**
 + Use one of the following methods:
   + Click **Bottom Align** \( ![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-11.png) \).
-  + Press **Shift \+ Down Arrow**.
+  + Press **Shift + Down Arrow**.
   + Right\-click the graph, and choose **Align**, **Align bottom**.
 
   The following animated images show the first two methods.
@@ -40,7 +40,7 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 **To align all nodes in a selection to the leftmost node**
 + Use one of the following methods:
   + Click **Left Align** \( ![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-12.png) \).
-  + Press **Shift \+ Left Arrow**.
+  + Press **Shift + Left Arrow**.
   + Right\-click the graph, and choose **Align**, **Align left**.
 
   The following animated images show the first two methods.
@@ -50,7 +50,7 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 **To align all nodes in a selection to the rightmost node**
 + Use one of the following methods:
   + Click **Right Align** \( ![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-13.png) \).
-  + Press **Shift \+ Right Arrow**.
+  + Press **Shift + Right Arrow**.
   + Right\-click the graph, and choose **Align**, **Align right**.
 
   The following animated images show the first two methods.

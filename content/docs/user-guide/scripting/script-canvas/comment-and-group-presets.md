@@ -35,8 +35,8 @@ You can create a preset in the Script Canvas editor by using an existing node gr
 
 You can define a preset as the default for either a node group or a comment. The default group or comment is created when you perform one of the following actions:
 + On the Script Canvas editor toolbar, click the new comment ![\[New comment icon\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-5.png) or new group ![\[New group icon\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-6.png) icon.
-+ Press **Ctrl\+Alt\+M** to create a comment.
-+ Press **Ctrl\+Shift\+G** to create a group.
++ Press **Ctrl+Alt+M** to create a comment.
++ Press **Ctrl+Shift+G** to create a group.
 
 **To configure a default preset**
 

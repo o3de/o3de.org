@@ -29,7 +29,7 @@ In the following procedure, you import your character, Jack the robot, select th
    Your character Jack appears in the **Animation Editor**.
 ![\[Import the JackBind_ZUp.fbx file into the Animation Editor.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-jack-idle.png)
 
-1. On the **Motion Sets** tab, under **Motion Set Management**, click the **\+** icon to add a motion set.
+1. On the **Motion Sets** tab, under **Motion Set Management**, click the **+** icon to add a motion set.
 
 1. Select the **MotionSet0** node.
 
@@ -53,7 +53,7 @@ In the following procedure, create an animation graph and nodes.
 
 **To create an animation graph**
 
-1. On the **Anim Graph** tab, click the **\+** icon to create an animation graph.
+1. On the **Anim Graph** tab, click the **+** icon to create an animation graph.
 
 1. Click the **Save** icon.
 
@@ -71,7 +71,7 @@ In the following procedure, create an animation graph and nodes.
 1. From the **BlendTree0** node, click and drag a line to the **Motion0** node.
 ![\[Connect the motion and blend tree nodes in the animation graph.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-motion-blend-tree-nodes.png)
 
-1. In the **Parameters** pane, click the **\+** icon to create a parameter.
+1. In the **Parameters** pane, click the **+** icon to create a parameter.
 
    1. Leave the **Value type** parameter to the default, **Float \(slider\)**.
 

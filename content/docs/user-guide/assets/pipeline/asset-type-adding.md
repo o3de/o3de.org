@@ -163,7 +163,7 @@ An `AssetData`\-derived class contains the asset data that is shared among insta
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type. Only one such handler generally exists for each type of asset. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`\-derived class. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads.
 
 **Note**
-You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C\+\+ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code.md).
+You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code.md).
 
 #### Using the Generic Asset Handler for Structured Data 
 

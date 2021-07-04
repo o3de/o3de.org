@@ -62,7 +62,7 @@ Using a function is just like using any other node in Script Canvas. Simply drag
 
 ## Function Example: Linear Interpolation 
 
-In this example, we create a linear interpolation function. This function is represented by the formula: *Result = Start \+ Time \* \(End \- Start\)*.
+In this example, we create a linear interpolation function. This function is represented by the formula: *Result = Start + Time \* \(End \- Start\)*.
 
 In this example you will learn how to do the following:
 + Create entry and exit points for a function

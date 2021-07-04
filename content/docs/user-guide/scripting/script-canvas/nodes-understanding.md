@@ -119,7 +119,7 @@ The following example uses the Light component **Turned On** event node.
 
 **To enable and use Display Connection Controls**
 
-1. Ensure that **Node Inspector** is visible. In Script Canvas editor, choose **View**, **Node Inspector**, or press **Ctrl\+Shift\+I**.
+1. Ensure that **Node Inspector** is visible. In Script Canvas editor, choose **View**, **Node Inspector**, or press **Ctrl+Shift+I**.
 
 1. Click the Light **Turned On** node to select it.
 ![\[Click to select a node in Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-nodes-understanding-13.png)

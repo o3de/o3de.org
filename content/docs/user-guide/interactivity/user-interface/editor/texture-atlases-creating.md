@@ -31,7 +31,7 @@ The following table shows the list of configurable properties.
 | Property | Default Value | Purpose |
 | --- | --- | --- |
 | maxdimension | 4096 | The maximum width and height of the output texture atlas. |
-| padding | 1 | The minimum number of extra pixels around each texture in the texture atlas. For compression purposes, the edge pixels of each texture are duplicated. The amount of duplication is determined by the calculation image\_size \+ padding rounded up to the nearest compression unit of four. |
+| padding | 1 | The minimum number of extra pixels around each texture in the texture atlas. For compression purposes, the edge pixels of each texture are duplicated. The amount of duplication is determined by the calculation image\_size + padding rounded up to the nearest compression unit of four. |
 | poweroftwo | false |  Whether the width and height of the output texture atlas is a power of two. If [PVRTC](https://en.wikipedia.org/wiki/PVRTC) compression is used for iOS, the output texture is a power of two regardless of this setting. |
 | square | false |  Whether the width and height of the output texture atlas is the same. If PVRTC compression is used for iOS, the output texture is a square regardless of this setting.  |
 | unusedcolor | \#3CB371FF | The color for the unused space in the output texture atlas. |

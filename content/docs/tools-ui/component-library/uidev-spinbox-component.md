@@ -57,9 +57,9 @@ doubleSpinBox->setValue(15.0);
 doubleSpinBox->setSingleStep(0.1);
 ```
 
-## C\+\+ API reference<a name="spinbox-api-ref"></a>
+## C++ API reference<a name="spinbox-api-ref"></a>
 
-For details on the **spinbox** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **spinbox** API's, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::SpinBox](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_spin_box.html)
 +  [AzQtComponents::DoubleSpinBox](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_double_spin_box.html)
 

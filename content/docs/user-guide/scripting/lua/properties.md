@@ -106,7 +106,7 @@ return ExampleScript
 
 ![\[Property array\]](/images/user-guide/scripting/lua/lua-scripting-ces-properties-types-arrays.png)
 
-In the Entity Inspector, you can use the green **\+** and red **X** icons to add and remove entries in real time. You can also use `EntityId()` to make the array elements entity references.
+In the Entity Inspector, you can use the green **+** and red **X** icons to add and remove entries in real time. You can also use `EntityId()` to make the array elements entity references.
 
 ## Grouping Properties 
 

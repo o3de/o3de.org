@@ -87,7 +87,7 @@ A regex to search for any files under a `Slices` subdirectory:
 ```
 /Slices/.+
 ```
-The dot plus \(.\+\) indicates any character 1 or more times.
+The dot plus \(.+\) indicates any character 1 or more times.
 
 To view all assets with a particular status, do one of the following:
 + Type the status keyword \(for example, "failed"\).

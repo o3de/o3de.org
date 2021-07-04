@@ -105,11 +105,11 @@ Creating a motion node with morph targets is similar to other methods of motion 
 **To create a motion node with morph targets**
 
 1. In the **Animation Editor**, on the **Motion Sets** tab, under **Motion Set Management**, do one of the following:
-   + Click the **\+** icon to create a motion set.
+   + Click the **+** icon to create a motion set.
    + Click the folder icon to open the **Pick EMotion FX Motion Set** window and select a motion set to import. Click **OK**.
 ![\[Choose a motion set to import in the Pick EMotion FX Motion Set window.\]](/images/user-guide/actor-animation/animation-editor-pick-emotionfx-motion-set-dialog-box.png)
 
-1. In the **Anim Graphs** pane, click the **\+** icon to create an animation graph.
+1. In the **Anim Graphs** pane, click the **+** icon to create an animation graph.
 ![\[Create an animation graph in the Anim Graphs pane.\]](/images/user-guide/actor-animation/anim-graphs-resource-management-new-animation-graph.png)
 
 1. Drag the **Motion** node from the **Sources** tab in the **Anim Graph Palette** to the animation graph.
@@ -146,7 +146,7 @@ As an alternative to creating a motion node with morph targets, you can use a **
 
    1. Drag the **Parameters** node from the **Sources** tab in the **Anim Graph Palette** to the animation graph.
 
-   1. In the **Parameters** pane, click the **\+** icon to create a parameter.
+   1. In the **Parameters** pane, click the **+** icon to create a parameter.
 ![\[Parameters pane in the Animation Editor.\]](/images/user-guide/actor-animation/anim-graph-parameters-pane.png)
 
    1. In the **Create Parameter** window, do the following:

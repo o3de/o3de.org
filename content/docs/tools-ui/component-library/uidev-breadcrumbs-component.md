@@ -117,7 +117,7 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 // Add the breadcrumbs to a UI layout as needed.
 ```
 
-## C\+\+ API reference<a name="breadcrumbs-api-ref"></a>
+## C++ API reference<a name="breadcrumbs-api-ref"></a>
 
-For details on the **breadcrumbs** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **breadcrumbs** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::BreadCrumbs](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_bread_crumbs.html)

@@ -41,6 +41,6 @@ If you choose to use the **Local wind tag**, the wind will only affect entities 
 1. Use the **Move** tool to place the cloth entity. If you are using the **Local wind tag**, you must place the cloth asset inside the **PhysX Collider** volume.
 ![\[PhysX Wind entity setup\]](/images/user-guide/physx/physx/ui-physx-wind-cloth-entity.png)
 
-1. Press **Control \+ G** to test the wind simulation.
+1. Press **Control + G** to test the wind simulation.
 
 ![\[PhysX Wind entity test\]](/images/user-guide/physx/physx/anim-wind-example.gif)

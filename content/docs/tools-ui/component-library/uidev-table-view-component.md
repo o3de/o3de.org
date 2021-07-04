@@ -64,9 +64,9 @@ logModel->AppendLine(
         QDateTime::currentMSecsSinceEpoch()));
 ```
 
-## C\+\+ API reference<a name="table-view-api-ref"></a>
+## C++ API reference<a name="table-view-api-ref"></a>
 
-For details on the **table view** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **table view** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TableView](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_table_view.html)
 
 Relevant Qt documentation includes the following topics:

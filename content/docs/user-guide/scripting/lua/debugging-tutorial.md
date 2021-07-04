@@ -18,7 +18,7 @@ This tutorial shows you how to use O3DE Editor to create a sample level in the *
 1. In O3DE Editor, create a new level by performing *one* of the following steps:
    + In the **Welcome to O3DE Editor** window, click **New level**
    + Click **File**, **New**
-   + Press **Ctrl\+N**
+   + Press **Ctrl+N**
 
 1. In the **New Level** dialog box, give the level a name, and then click **OK**.
 
@@ -65,7 +65,7 @@ The class reference feature is active only for the default context and component
 
 1. In Lua Editor, click one or more line numbers in the `constantrotation.lua` script to set one or more breakpoints. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window.
 
-1. In O3DE Editor, press **Ctrl\+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters.
+1. In O3DE Editor, press **Ctrl+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters.
 ![\[Debugger stopped on breakpoint\]](/images/user-guide/lua-editor-debugger-stopped-on-breakpoint.png)
 
    When execution is halted at a breakpoint, more information becomes available in the **Lua Locals**, **Stack**, and **Watched Variables** panes.
@@ -94,11 +94,11 @@ The following table summarizes common options available while debugging.
 
 | **Icon** | **Action** | **Keyboard Shortcut** | **Description** |
 | --- | --- | --- | --- |
-| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt\+F5 | Run in O3DE Editor. |
-| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl\+F5 | Send script to the connected target and run it. |
+| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt+F5 | Run in O3DE Editor. |
+| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl+F5 | Send script to the connected target and run it. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-run-continue.png) | Run/Continue | F5 | Run or continue running the current script. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-step-into.png) | Step Into | F11 | Step into the function called on the current line. |
-| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-step-out.png) | Step Out | Shift\+F11 | Step out of the called function. |
+| ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-step-out.png) | Step Out | Shift+F11 | Step out of the called function. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-step-over.png) | Step Over | F10 | Step over the function called on the current line. |
 | ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | F9 | Enable or disable a breakpoint on the current line. |
 
@@ -108,7 +108,7 @@ In addition to the usual search capabilities, the **Find** feature can display t
 
 **To maintain separate search results**
 
-1. Click the **Find** icon ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-find-results-icon.png) or press **Ctrl\+F** to perform searches in the currently open file, or in all open files.
+1. Click the **Find** icon ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-find-results-icon.png) or press **Ctrl+F** to perform searches in the currently open file, or in all open files.
 ![\[Lua Editor Find dialog\]](/images/user-guide/lua-editor-debugger-find-dialog.png)
 
 1. Before starting a search, choose **Find 1**, **Find 2**, **Find 3**, or **Find 4** to choose the window in which you want to see the results. You can maintain the results of four searches separately in the tabbed windows. The search results in the other windows remain unchanged.
@@ -131,27 +131,27 @@ The following table summarizes the options available while editing and debugging
 
 | **Action** | **Keyboard Shortcut** |
 | --- | --- |
-| Comment selected block | Ctrl\+K |
-| Copy | Ctrl\+C |
-| Cut | Ctrl\+X |
-| Find | Ctrl\+F |
-| Find in open files | Ctrl\+Shift\+F |
+| Comment selected block | Ctrl+K |
+| Copy | Ctrl+C |
+| Cut | Ctrl+X |
+| Find | Ctrl+F |
+| Find in open files | Ctrl+Shift+F |
 | Find next | F3 |
-| Fold source functions | Alt\+0 |
-| Go to line | Ctrl\+G |
-| Paste | Ctrl\+V |
-| Quick find local | Ctrl\+F3 |
-| Quick find local reverse | Ctrl\+Shift\+F3 |
-| Redo | Ctrl\+Y |
-| Replace | Ctrl\+R |
-| Replace in open files | Ctrl\+Shift\+R |
-| Select all | Ctrl\+A |
-|  Select to brace¹  | Ctrl\+Shift\+\] |
-| Transpose lines down | Ctrl\+Shift\+Down Arrow |
-| Transpose lines up | Ctrl\+Shift\+Up Arrow |
-| Uncomment selected block | Ctrl\+Shift\+K |
-| Undo | Ctrl\+Z |
-| Unfold source functions | Alt\+Shift\+0 |
+| Fold source functions | Alt+0 |
+| Go to line | Ctrl+G |
+| Paste | Ctrl+V |
+| Quick find local | Ctrl+F3 |
+| Quick find local reverse | Ctrl+Shift+F3 |
+| Redo | Ctrl+Y |
+| Replace | Ctrl+R |
+| Replace in open files | Ctrl+Shift+R |
+| Select all | Ctrl+A |
+|  Select to brace¹  | Ctrl+Shift+\] |
+| Transpose lines down | Ctrl+Shift+Down Arrow |
+| Transpose lines up | Ctrl+Shift+Up Arrow |
+| Uncomment selected block | Ctrl+Shift+K |
+| Undo | Ctrl+Z |
+| Unfold source functions | Alt+Shift+0 |
 
 ¹ Select to brace selects a block bounded by braces. Before using this option, the cursor must be immediately next to the beginning or ending brace of the block.
 

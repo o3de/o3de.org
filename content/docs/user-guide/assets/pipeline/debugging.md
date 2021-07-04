@@ -55,7 +55,7 @@ You can restart O3DE Editor and Asset Processor. Verify that only one instance o
 
 1. Close O3DE Editor.
 
-1. In the Windows taskbar, right\-click Asset Processor, and choose **Quit** or press **Ctrl\+Q**.
+1. In the Windows taskbar, right\-click Asset Processor, and choose **Quit** or press **Ctrl+Q**.
 
 1. Restart the project or branch that you are working on. Asset Processor automatically starts.
 

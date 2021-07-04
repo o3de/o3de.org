@@ -8,7 +8,7 @@ title: Tooltip Components
 
 You can add either a **Tooltip** component or a **TooltipDisplay** component to an element. With these components, you can display a tooltip when hovering over an interactive element.
 
-To see in\-game examples of completed canvases with **Tooltip** components, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Other Components**, **Tooltips**. You can view examples of tooltip text options and display styles. Press **Esc** to exit the game.
+To see in\-game examples of completed canvases with **Tooltip** components, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Other Components**, **Tooltips**. You can view examples of tooltip text options and display styles. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Tooltips` directory.
 

@@ -18,9 +18,9 @@ The vegetation entity, or the entity that contains the **Vegetation Layer Spawne
 
    To add more vegetation assets, do the following:
 
-   1. In the **Vegetation Asset List** component's properties, next to **Embedded Assets**, click **\+**.
+   1. In the **Vegetation Asset List** component's properties, next to **Embedded Assets**, click **+**.
 **Note**
-When specifying your first asset, you don't need to click \+ because there is an empty asset displayed by default. Specify the mesh.
+When specifying your first asset, you don't need to click + because there is an empty asset displayed by default. Specify the mesh.
 ![\[In the Vegetation Asset List component's properties, next to Embedded Assets, click the plus sign.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-browse.png)
 
    1. Under the blank asset, listed as **<asset name>**, next to **Mesh Asset**, click **Browse \(…\)**.

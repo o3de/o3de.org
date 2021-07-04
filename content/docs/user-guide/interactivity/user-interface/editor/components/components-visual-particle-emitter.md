@@ -93,12 +93,12 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 
 | Name | Description |
 | --- | --- |
-| Speed multiplier | Click the plus sign \(\+\) to add keyframes that control a curve to multiply the particle speed over its lifetime. |
-| Width multiplier |  This option is available when **Lock aspect ratio** \(in **Particle Size**\) isn't set.  Click the plus sign \(**\+**\) to add keyframes that control a curve to multiply the particle width over its lifetime.  |
-| Height multiplier |  This option is available when **Lock aspect ratio** \(in **Particle Size**\) isn't set.  Click the plus sign \(**\+**\) to add keyframes that control a curve to multiply the particle height over its lifetime.  |
-| Size multiplier | Click the plus sign \(\+\) to add keyframes that control a curve to multiply the particle size over its lifetime. |
-| Color multiplier | Click the plus sign \(\+\) to add keyframes that control a curve to multiply the particle color over its lifetime. |
-| Alpha multiplier | Click the plus sign \(\+\) to add keyframes that control a curve to multiply the particle alpha over its lifetime. |
+| Speed multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle speed over its lifetime. |
+| Width multiplier |  This option is available when **Lock aspect ratio** \(in **Particle Size**\) isn't set.  Click the plus sign \(**+**\) to add keyframes that control a curve to multiply the particle width over its lifetime.  |
+| Height multiplier |  This option is available when **Lock aspect ratio** \(in **Particle Size**\) isn't set.  Click the plus sign \(**+**\) to add keyframes that control a curve to multiply the particle height over its lifetime.  |
+| Size multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle size over its lifetime. |
+| Color multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle color over its lifetime. |
+| Alpha multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle alpha over its lifetime. |
 | Time |  Enter a value between `0` and `1` that specifies when the keyframe occurs during the particle lifetime.  A value of `0` is the start of the particle lifetime and `1` is the end of the particle lifetime.  |
 | Multiplier |  Specify a value from `-100` through `100` to multiply against the value that this timeline controls.  For example, if the speed value is `50.0` and the speed multiplier for a specific keyframe is `2.0`, the value of speed at the specified keyframe is `100`.  |
 | In tangent |  Controls the in tangent for the current keyframe. Select one of the following:    |

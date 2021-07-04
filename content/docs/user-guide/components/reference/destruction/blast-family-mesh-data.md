@@ -21,7 +21,7 @@ For information on using the **Blast Family Mesh Data** component see [Simulated
 
 **Show mesh assets**
 When enabled, you can manually add mesh assets to this **Blast Family Mesh Data** component.
-The **Show mesh assets** property exposes the **Mesh assets** list. Choose the **\+** button to the right of **Mesh assets** to add a list entry. Choose the **Folder** button to select a mesh for the list entry.
+The **Show mesh assets** property exposes the **Mesh assets** list. Choose the **+** button to the right of **Mesh assets** to add a list entry. Choose the **Folder** button to select a mesh for the list entry.
 
 **Material**
 The material that supplies the visual appearance for the meshes in this **Blast Family Mesh Data** component.

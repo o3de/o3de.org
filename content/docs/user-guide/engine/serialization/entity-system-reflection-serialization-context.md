@@ -6,7 +6,7 @@ title: Serialization Context
 
 {{< preview-migrated >}}
 
-You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C\+\+ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:
+You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:
 
 ```
 class SerializedObject
@@ -134,7 +134,7 @@ AZStd::unique_ptr<T>
 You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object.
 
 **Stable Elements**
-Elements are considered stable if their pointers do not change when other elements are added to or removed from a container. O3DE's implementation of stable elements corresponds to the [C\+\+17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous. Stable elements can be removed from a container without affecting other elements in the container. You can use the `IsStableElements` function to determine the status of a container's elements. If a container's elements are not stable, you must enumerate them in order for them to be serialized.
+Elements are considered stable if their pointers do not change when other elements are added to or removed from a container. O3DE's implementation of stable elements corresponds to the [C++17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous. Stable elements can be removed from a container without affecting other elements in the container. You can use the `IsStableElements` function to determine the status of a container's elements. If a container's elements are not stable, you must enumerate them in order for them to be serialized.
 
 The following code example shows how to set up serialization for a container that stores a dynamic sequence of homogenous elements.
 
@@ -238,7 +238,7 @@ bool    CanAccessElementsByIndex() const override   { return false; }
 ```
 
 **Notes**
-+ When `IsFixedSize` and `IsFixedCapacity` are false, the plus \(\+\) and minus \(-\) buttons in the property editor can be used to add and remove elements from the data container.
++ When `IsFixedSize` and `IsFixedCapacity` are false, the plus \(+\) and minus \(-\) buttons in the property editor can be used to add and remove elements from the data container.
 + When `IsSmartPointer` is false, the data container does not create an instance of the `SmartPointer` type when an element is added to the container.
 + When `CanAccessElementsByIndex` is false, the serialization system checks whether to allocate memory for new elements. `CanAccessElementsByIndex` is true for fixed\-size containers like `AZStd::array`, `AZStd::pair`, and `AZStd::tuple` because those containers already have memory storage allocated for their elements.
 

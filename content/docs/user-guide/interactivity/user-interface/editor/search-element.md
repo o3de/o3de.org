@@ -13,7 +13,7 @@ You can find UI elements by filtering by their name or their attached components
 **To open the **Find Element** tool**
 + In the **UI Editor**, do one of the following:
   + From the menu, choose **Edit** and then **Find Elements**.
-  + Press **Ctrl\+F**.
+  + Press **Ctrl+F**.
 
   Initially, all UI elements in the currently active UI canvas appear in a tree view.
 

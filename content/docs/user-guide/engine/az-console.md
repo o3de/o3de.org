@@ -12,7 +12,7 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 `AZ::Console` features:
 
 + Basic access protections and anti\-cheat mechanisms for locking down cvars and cfuncs in release builds.
-+ Default support for several C\+\+ types, including bool \(Boolean\), stdint \(all types\), floats, doubles, vectors and quaternions, and enums \(enumerations\).
++ Default support for several C++ types, including bool \(Boolean\), stdint \(all types\), floats, doubles, vectors and quaternions, and enums \(enumerations\).
 + Flexible and expandable type support. You can add support for new cvar types without altering the console code directly.
 
 ![\[Image NOT FOUND\]](/images/userguide/az/az-console-1.png)
@@ -46,7 +46,7 @@ Parameters:
 To declare a new cvar in your code, include the `IConsole.h` header. Then use one of the cvar macros \(such as `AZ_CVAR`\) to declare your new console variable in your own code \(.cpp\) files.
 
 **Note**
-AZ\_CVAR and AZ\_CVAR\_EXTERNABLE variables can be declared only in C\+\+ code \(.cpp\) files. AZ\_CVAR\_EXTERNED variables, however, can be declared in either C\+\+ code \(.cpp\) or header \(.h\) files.
+AZ\_CVAR and AZ\_CVAR\_EXTERNABLE variables can be declared only in C++ code \(.cpp\) files. AZ\_CVAR\_EXTERNED variables, however, can be declared in either C++ code \(.cpp\) or header \(.h\) files.
 
 Here are some examples.
 

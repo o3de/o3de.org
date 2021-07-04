@@ -12,7 +12,7 @@ This component is typically used with a mask component, which hides the content 
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.gif)
 
-To see in\-game examples of completed canvases with the **ScrollBox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBox**. You can view examples of different scrolling options, snapping options, interactions between scroll boxes and other components, and nested scroll boxes. Press **Esc** to exit the game.
+To see in\-game examples of completed canvases with the **ScrollBox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBox**. You can view examples of different scrolling options, snapping options, interactions between scroll boxes and other components, and nested scroll boxes. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\ScrollBox` directory. You can open the following canvases:
 + `Interactions.uicanvas` - Examples of interactions between scroll boxes and other interactive components

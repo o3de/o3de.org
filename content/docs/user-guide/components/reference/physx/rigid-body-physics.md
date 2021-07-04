@@ -122,7 +122,7 @@ A PhysX entity that is dynamic can move and collide with other entities.
 
 1. Create another entity for your PhysX terrain. For more information, see the **[PhysX Terrain](/docs/user-guide/components/reference/transform/)** component.
 
-1. Press **Ctrl\+G** to enter gameplay mode.
+1. Press **Ctrl+G** to enter gameplay mode.
 **Example**
 
    The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the **PhysX Terrain** component.

@@ -185,9 +185,9 @@ In the following example, the widget and its features have been disabled in code
 browseEdit->setEnabled(false);
 ```
 
-## C\+\+ API reference<a name="browse-edit-api-ref"></a>
+## C++ API reference<a name="browse-edit-api-ref"></a>
 
-For details on the **browse edit** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **browse edit** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::BrowseEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_browse_edit.html)
 
 ## Related links<a name="browse-edit-related-links"></a>

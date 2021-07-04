@@ -30,6 +30,6 @@ The **UI Editor** **Preview** consists of the following:
 Do one of the following:
 + From the **UI Editor** toolbar, click **Preview**.
 + From the **UI Editor** menu, click **Preview**, **Preview**.
-+ Press **Ctrl\+P**.
++ Press **Ctrl+P**.
 
 To exit the canvas preview, click **End Preview**.

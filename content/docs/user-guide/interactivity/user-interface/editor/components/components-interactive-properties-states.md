@@ -28,7 +28,7 @@ When you first add an interactive component to an element, no **state actions** 
 
 In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), in the **Properties** pane, under the interactive component's name \(for example, **Button**\), do the following:
 
-1. Under **Interactable**, **States**, click **Add new element** \(green **\+**\).
+1. Under **Interactable**, **States**, click **Add new element** \(green **+**\).
 
 1. From the list, choose one of the following: **Color**, **Font**, **Sprite**, **Alpha**.
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-interactive-stateactions.png)

@@ -10,7 +10,7 @@ You can use the **Dropdown** component to make an element behave like a drop\-do
 
 You can use the **Dropdown** component with the **DropdownOption** component. With the **DropdownOption** component, you can configure options to change the menu text and its icon after it is selected.
 
-To see in\-game examples of completed canvases with the **Dropdown** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **Dropdown**. You can view **Simple Dropdowns**, **Nested Dropdowns**, **Multiple Select & Functionality**, and **Using UI Components and Dropdowns**. Press **Esc** to exit the game.
+To see in\-game examples of completed canvases with the **Dropdown** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Dropdown**. You can view **Simple Dropdowns**, **Nested Dropdowns**, **Multiple Select & Functionality**, and **Using UI Components and Dropdowns**. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Dropdown` directory. You can open the following canvases:
 + `MultipleFunc.uicanvas` - Multiple selection drop\-down menu and functional drop\-down menu \(perform actions on a ball such as create, destroy, move, and change color\)

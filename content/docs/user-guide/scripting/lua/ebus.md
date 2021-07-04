@@ -11,7 +11,7 @@ Components provide interfaces that allow scripts to send them information and re
 ## Order of Component Activation 
 
 Keep in mind the following points regarding the order of activation of Lua components:
-+ Lua components are activated after all C\+\+ components have been activated.
++ Lua components are activated after all C++ components have been activated.
 + If an entity has multiple Lua components, there is no guarantee regarding which Lua component is activated first.
 
 ## Communicating with Components 
@@ -194,7 +194,7 @@ myCollection:clear()
 
 ## Using AZStd::any 
 
-You can pass any Lua primitive type excluding tables to any bus or function that takes `AZStd::any` as a parameter \(for example, `GameplayNotificationBus::OnEventBegin`\). You can also pass any type reflected from C\+\+ \(for example, vectors or `EntityId` values\). There is no syntax required to pass a value as an `any`-just call the bus or function.
+You can pass any Lua primitive type excluding tables to any bus or function that takes `AZStd::any` as a parameter \(for example, `GameplayNotificationBus::OnEventBegin`\). You can also pass any type reflected from C++ \(for example, vectors or `EntityId` values\). There is no syntax required to pass a value as an `any`-just call the bus or function.
 
 The following example shows the use of `AZStd::any`.
 

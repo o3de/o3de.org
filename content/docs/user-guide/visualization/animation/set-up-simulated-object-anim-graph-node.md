@@ -9,7 +9,7 @@ After you set up the simulated object, create an anim graph to view the simulati
 
 **To set up an anim graph node for the simulated object**
 
-1. In the **Anim Graph** panel, click the **\+** icon to create an anim graph.
+1. In the **Anim Graph** panel, click the **+** icon to create an anim graph.
 
 1. Right\-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 **Example**
@@ -29,7 +29,7 @@ After you set up the simulated object, create an anim graph to view the simulati
    Your graph should look like the following.
 ![\[Create an anim graph for the simulated object.\]](/images/user-guide/actor-animation/simulated-objects-10.png)
 
-1. Select the **Motion0** node and in the **Attributes** panel, click the **\+** icon to add a motion to the node.
+1. Select the **Motion0** node and in the **Attributes** panel, click the **+** icon to add a motion to the node.
 
 1. In the **Motion Selection Window**, select a motion, such as the `run`, and click **OK**.
 

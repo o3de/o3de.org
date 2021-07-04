@@ -115,7 +115,7 @@ Use `setTextFilterFillsWidth(false)` to limit the width of the search field and 
 filteredSearchWidget->setTextFilterFillsWidth(false);
 ```
 
-## C\+\+ API reference<a name="filtered-search-api-ref"></a>
+## C++ API reference<a name="filtered-search-api-ref"></a>
 
-For details on the **filtered search** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **filtered search** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::FilteredSearchWidget](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_filtered_search_widget.html)

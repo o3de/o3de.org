@@ -7,7 +7,7 @@ weight: 1500
 
 {{< preview-migrated >}}
 
-The behavior context works with *serialize context*, *edit context*, and *network context* to provide rich C\+\+ reflection. The behavior context focuses on the runtime aspects of C\+\+ code and allows you to manipulate C\+\+ code and objects while they are being created. All script bindings, including Lua, use this reflection. Reflection is also used for modification of objects while in running state \(such as animating object properties\) and reading of current properties for component state transitions. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts in order to implement reloading. At a high level, the behavior context uses only a few primitives on which to build: properties, methods, classes, EBuses and attributes.
+The behavior context works with *serialize context*, *edit context*, and *network context* to provide rich C++ reflection. The behavior context focuses on the runtime aspects of C++ code and allows you to manipulate C++ code and objects while they are being created. All script bindings, including Lua, use this reflection. Reflection is also used for modification of objects while in running state \(such as animating object properties\) and reading of current properties for component state transitions. You can have multiple behavior contexts that are specialized for different purposes, and you can unreflect the behavior contexts in order to implement reloading. At a high level, the behavior context uses only a few primitives on which to build: properties, methods, classes, EBuses and attributes.
 
 ## Reflection API 
 
@@ -15,7 +15,7 @@ This section describes how methods, properties, classes, and other primitives ar
 
 ### Method 
 
-Methods reflect a C\+\+ function. You can have global or class methods. Each method must have a unique name for its scope \(global or class\). You can also provide default values; this allows you to call reflected methods with fewer arguments. Default values are used right to left. You can also provide a debug description for your method. It's highly recommended that you do so. The debug description information is provided to users for context when they use the reflection, as is done with `ClassView` in the Lua editor. The system automatically generates a description that includes result and argument types. However, adding intent and additional details to your descriptions greatly improves the usability of your reflection. This is especially important when a method has many attributes.
+Methods reflect a C++ function. You can have global or class methods. Each method must have a unique name for its scope \(global or class\). You can also provide default values; this allows you to call reflected methods with fewer arguments. Default values are used right to left. You can also provide a debug description for your method. It's highly recommended that you do so. The debug description information is provided to users for context when they use the reflection, as is done with `ClassView` in the Lua editor. The system automatically generates a description that includes result and argument types. However, adding intent and additional details to your descriptions greatly improves the usability of your reflection. This is especially important when a method has many attributes.
 
 ### Property 
 
@@ -35,19 +35,19 @@ Because class enums often require casting, O3DE currently treats all enums value
 
 ### Class 
 
-Reflects a C\+\+ class or struct. You can provide an optional name. If you do not provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
+Reflects a C++ class or struct. You can provide an optional name. If you do not provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
 + **Allocator** \- You can provide a custom allocator/ deallocator for your class. This allows you to override any existing allocation schema. If you do not provide a custom allocator, aznew/delete is used \(`AZ_CLASS_ALLOCATOR`\).
 + **Constructor** \- Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template augments.
 + **Wrapping/WrappingMember** \- Allows code to inform the system that it is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers.
 + **Userdata** \- Allows you to provide a pointer to user data. The pointer is accessible from all callbacks \(like a custom allocator\) that you implement for the class.
-+ **Method** \- Reflects a C\+\+ class function. The first argument is the class pointer. This is the same usage as global methods.
++ **Method** \- Reflects a C++ class function. The first argument is the class pointer. This is the same usage as global methods.
 + **Property** \- Reflects class data. The first argument is the class pointer. This is the same usage as global properties.
 + **Enum** \- Enums are int read\-only properties.
 + **Constant** \- Constants are read\-only properties.
 
 #### Nested Classes 
 
-To bind a nested class to the behavior context, you must do it from within a function on the nested class. C\+\+ rules about nested class member access from outside scopes make this requirement necessary.
+To bind a nested class to the behavior context, you must do it from within a function on the nested class. C++ rules about nested class member access from outside scopes make this requirement necessary.
 
 The following counterexample shows a poorly formed nested class. The code does not work.
 

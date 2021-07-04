@@ -28,7 +28,7 @@ A recommended workflow is to select the material inside the **Material Editor** 
 
 1. Create or select an existing sequence or **Director** node that you want to contain the animation.
 
-1. In the node tree, right\-click and choose **Add Material Node** and then in the **Material Name** dialog box, press **Ctrl\+V** to paste the full path to the material that you copied in step 3 and then click **OK**.
+1. In the node tree, right\-click and choose **Add Material Node** and then in the **Material Name** dialog box, press **Ctrl+V** to paste the full path to the material that you copied in step 3 and then click **OK**.
 
 1. If the material is in a material group, the text appears red on the **Material** node in the Track View. This means that a submaterial hasn't been selected.
 

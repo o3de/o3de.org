@@ -74,7 +74,7 @@ Physics materials define the physical properties of PhysX colliders. To create p
 1. In the Asset Editor, choose **New**, **Physics Material** from the **File** menu to create a new physics material library.
 ![\[Create a physics material library in the Asset Editor.\]](/images/user-guide/physx/physx/ui-physx-material-B.png)
 
-1. Create a physics material in the library by clicking the **\+** on the right.
+1. Create a physics material in the library by clicking the **+** on the right.
 ![\[Create a physics material library in the Asset Editor.\]](/images/user-guide/physx/physx/ui-physx-material-C.png)
 
 1. Name the physics material by editing the **Name** property. Set the material properties as desired.

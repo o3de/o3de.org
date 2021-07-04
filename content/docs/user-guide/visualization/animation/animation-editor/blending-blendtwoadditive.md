@@ -48,7 +48,7 @@ The **Extraction Mode** for the **Blend Two Additive** node features masking and
 + `T` = Target transform delta
 
 Additive, root included in mask \(or no mask provided\):
-+ **Blend** = `S` \+ `T` \* weight
++ **Blend** = `S` + `T` \* weight
 + **Source** = `S`
 + **Target** = `T`
 

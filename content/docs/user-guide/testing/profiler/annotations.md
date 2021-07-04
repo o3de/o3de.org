@@ -33,9 +33,9 @@ Annotations in the O3DE Profiler tool flag frames in your captured data that hav
 
 ## Creating Annotations 
 
-To create an annotation, you add one or more lines of C\+\+ logging code to your application. The added code instructs O3DE's logging system to include the logging information that you specify as a part of your capture. O3DE transforms the logged messages into annotations for you. Then, in Profiler, when you click **Configure Annotations**, you actually choose which system's annotations are displayed \(for example, **GridMate** or **MultiplayerProject**\).
+To create an annotation, you add one or more lines of C++ logging code to your application. The added code instructs O3DE's logging system to include the logging information that you specify as a part of your capture. O3DE transforms the logged messages into annotations for you. Then, in Profiler, when you click **Configure Annotations**, you actually choose which system's annotations are displayed \(for example, **GridMate** or **MultiplayerProject**\).
 
-To create an annotation, place a line of C\+\+ code like the following in your application:
+To create an annotation, place a line of C++ code like the following in your application:
 
 ```
 AZ_TracePrintf("GridMate","Connection %s => %s (%s) (Connections=%d!\n")

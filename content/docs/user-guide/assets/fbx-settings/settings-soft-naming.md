@@ -147,7 +147,7 @@ The preconfigured soft naming conventions might not apply to your workflow. You 
 
    1. For **Inclusive**, specify whether the virtual type applies to graph node types that you selected in the previous step. If disabled, the virtual type applies to graphs that are unselected.
 
-1. To add a configuration, click the **\+** icon.
+1. To add a configuration, click the **+** icon.
 
 1. For **Classes**, choose **File name setting** or **Node name setting** and then click **Save**.
 

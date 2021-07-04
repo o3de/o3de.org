@@ -7,7 +7,7 @@ title: 'Script Canvas Errors and Troubleshooting'
 
 Script Canvas provides a mechanism to detect and report errors. Errors in Script Canvas are generally caused by invalid conditions.
 
-In C\+\+ Script Canvas provides the following macros for error management:
+In C++ Script Canvas provides the following macros for error management:
 
 ```
 #define SCRIPTCANVAS_NODE_DETECT_INFINITE_LOOP(node)

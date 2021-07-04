@@ -11,7 +11,7 @@ You can use the **DropdownOption** component to make an element an option in a d
 + The **DropdownOption** requires an interactive component, typically a **RadioButton** component so that only one option can be selected at any time in the drop\-down menu.
 + Its child elements typically contain the **Text** component, which appears when the option is selected.
 
-To see an in\-game example of a completed canvas with the **DropdownOption** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **Dropdown**, **Using UI Components and Dropdowns**. Press **Esc** to exit the game.
+To see an in\-game example of a completed canvas with the **DropdownOption** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Dropdown**, **Using UI Components and Dropdowns**. Press **Esc** to exit the game.
 
 To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Dropdown` directory and open the `UsingUi.uicanvas` file. This canvas features a drop\-down menu with a scroll box, image, check box, slider, and radio buttons.
 

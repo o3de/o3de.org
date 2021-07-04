@@ -43,7 +43,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 ![\[Animation Clips tab in the Maya Game Exporter.\]](/images/user-guide/actor-animation/fbx-settings-motions-animation-clips-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop\-down list.
-  + Click the **\+** button to add an animation clip.
+  + Click the **+** button to add an animation clip.
   + For **Clip Name**, enter a name for the clip.
   + For **Start** and **End**, specify a frame.
   + Select the **Bake Animation** check box.
@@ -59,7 +59,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 + Use the following settings:
   + Select **Export Selection** from the drop\-down list.
   + Select the clip that you want to export from the **Time Editor Clips** drop\-down list.
-  + Click the **\+** button to add an animation clip.
+  + Click the **+** button to add an animation clip.
   + Select the **Bake Animation** check box.
   + Select your world coordinate system from the **Up Axis** drop\-down list.
   + Navigate to a save path and specify the name of your `.fbx` file.

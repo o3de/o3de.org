@@ -172,7 +172,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Flip edge****
 
-1. Hold **Ctrl \+ Shift** to show hidden edges.
+1. Hold **Ctrl + Shift** to show hidden edges.
 
 1. Right click on a hidden edge to flip its orientation.
 

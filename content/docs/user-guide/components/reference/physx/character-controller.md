@@ -23,7 +23,7 @@ The **PhysX Character Controller** component requires the [PhysX](/docs/user-gui
 
 To use the **PhysX Character Controller** component, [add it to an entity](/docs/userguide/components/working-adding.md) that represents a character.
 
-You can control the character's movement by using Script Canvas, the C\+\+ API, or animation systems that use the C\+\+ API.
+You can control the character's movement by using Script Canvas, the C++ API, or animation systems that use the C++ API.
 
 ## PhysX Character Controller Properties 
 
@@ -93,4 +93,4 @@ Character controllers are usually **kinematic** or **dynamic**. Dynamic characte
 
 For more information, see [Character Controllers](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/3.3.4/Manual/CharacterControllers.html) in the NVIDIA documentation.
 
-Because the **PhysX Character Controller** component is kinematic and not affected by outside forces, it is not affected by gravity out of the box. This separation allows you to use Script Canvas or C\+\+ to implement custom behavior for gravity. Kinematic controllers behave as if they have infinite mass when dynamic objects collide with them. Your custom gameplay logic determines how the controller responds to collisions such as the recoil from heavy impacts.
+Because the **PhysX Character Controller** component is kinematic and not affected by outside forces, it is not affected by gravity out of the box. This separation allows you to use Script Canvas or C++ to implement custom behavior for gravity. Kinematic controllers behave as if they have infinite mass when dynamic objects collide with them. Your custom gameplay logic determines how the controller responds to collisions such as the recoil from heavy impacts.

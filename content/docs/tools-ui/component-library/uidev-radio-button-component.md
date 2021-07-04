@@ -55,9 +55,9 @@ radioButton1->setChecked(true);
 radioButton1->setEnabled(false);
 ```
 
-## C\+\+ API reference<a name="radio-button-api-ref"></a>
+## C++ API reference<a name="radio-button-api-ref"></a>
 
-For details on the **radio button** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **radio button** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::RadioButton](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_radio_button.html)
 
 Relevant Qt documentation includes the following topics:

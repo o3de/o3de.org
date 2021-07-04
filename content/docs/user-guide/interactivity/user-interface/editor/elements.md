@@ -32,7 +32,7 @@ For each of the following procedures, use the **UI Editor** to manage UI element
 
 | Task | Steps |
 | --- | --- |
-| To find an element | In the UI Editor menu, choose Edit and then Find Elements or press Ctrl\+F. For more information, see [Searching for UI Elements](/docs/user-guide/interactivity/user-interface/editor/search-element.md). |
+| To find an element | In the UI Editor menu, choose Edit and then Find Elements or press Ctrl+F. For more information, see [Searching for UI Elements](/docs/user-guide/interactivity/user-interface/editor/search-element.md). |
 | To create an element | In the UI Editor toolbar, click New and then Empty element. The element appears in the Hierarchy pane and viewport.  |
 | To move, rotate, or resize an element |  Select the element and then click the **Move**, **Rotate**, or **Resize** tool in the toolbar. Select **Snap to grid** to modify elements in increments.  |
 | To copy an element | Right\-click the element in the Hierarchy pane or viewport and choose Copy.  |

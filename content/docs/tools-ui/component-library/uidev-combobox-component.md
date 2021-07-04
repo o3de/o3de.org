@@ -88,9 +88,9 @@ auto validator = new FirstIsErrorComboBoxValidator();
 AzQtComponents::ComboBox::setValidator(comboBox, validator);
 ```
 
-## C\+\+ API reference<a name="combobox-api-ref"></a>
+## C++ API reference<a name="combobox-api-ref"></a>
 
-For details on the **combobox** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **combobox** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::ComboBox](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_combo_box.html)
 
 Relevant Qt documentation includes the following topics:

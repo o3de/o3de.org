@@ -8,7 +8,7 @@ title: Dynamic Components
 
 Dynamic components work together with [ Layout](/docs/user-guide/interactivity/user-interface/editor/components-layout.md) components and the [Scroll Box](/docs/user-guide/interactivity/user-interface/editor/components-scrollbox.md) component to display dynamic content in the user interface.
 
-To see in\-game examples of completed canvases with dynamic components, open the level **UiFeatures** in the project **SamplesProject**. Press **Ctrl\+G** to play the game, and then choose **Components**, **Dynamic Components**. You can view examples of different types of dynamic layouts and scroll boxes. Press **Esc** to exit the game.
+To see in\-game examples of completed canvases with dynamic components, open the level **UiFeatures** in the project **SamplesProject**. Press **Ctrl+G** to play the game, and then choose **Components**, **Dynamic Components**. You can view examples of different types of dynamic layouts and scroll boxes. Press **Esc** to exit the game.
 
 ## DynamicLayout 
 

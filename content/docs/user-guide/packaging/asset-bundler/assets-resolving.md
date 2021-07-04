@@ -12,7 +12,7 @@ When you identify a potential missing asset, you want to include it so that the 
 
 An asset that is missing from a bundle might be one of the following:
 + **A missing product dependency** - An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/user-guide/packaging/asset-bundler/list-operations.md).
-+ **A hardcoded file load** - Assets loaded by path or by asset ID in C\+\+.
++ **A hardcoded file load** - Assets loaded by path or by asset ID in C++.
 + **A false positive** - The asset appeared to be missing from a bundle, but is not actually used. For example, you might have an editor\-only asset that appears to be missing that is never loaded or used in your game's launcher.
 
 To resolve the missing asset, check each of these possibilities in turn.

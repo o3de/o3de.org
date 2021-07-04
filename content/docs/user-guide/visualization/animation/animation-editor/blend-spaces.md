@@ -69,7 +69,7 @@ You can undock the **Attributes** pane in order to see the attributes and values
 
      You can also use a combination of provided and custom values. For example, you can manually enter motion coordinates for the x\-axis and automatically calculate motion coordinates for the y\-axis using the **Travel distance** evaluator.
 
-1. In the **Attributes** pane, for **Motions**, click the **\+** button to add the source motion assets for your blend space.
+1. In the **Attributes** pane, for **Motions**, click the **+** button to add the source motion assets for your blend space.
 
 1. In the **Motion Selection Window**, choose the motions that you want to add to the blend space, and then click **OK**.
    + The coordinate value automatically calculates if you selected **Automatically calculate motion coordinates** for **Calculation method** and if you selected a motion characteristic for the **Evaluator**.

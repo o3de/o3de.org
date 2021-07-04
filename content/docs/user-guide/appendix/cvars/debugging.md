@@ -24,7 +24,7 @@ O3DE provides the following built\-in debugging and profiling tools that you can
 
 ## Using Console Debug Views 
 
-The viewport window displays debugging information by default when you are in gameplay mode \(**Ctrl\+G**\). You can toggle this information on or off by pressing the tilde \(**\~**\) key. Use the following console variables and values to generate viewing modes in the viewport that are useful for debugging.
+The viewport window displays debugging information by default when you are in gameplay mode \(**Ctrl+G**\). You can toggle this information on or off by pressing the tilde \(**\~**\) key. Use the following console variables and values to generate viewing modes in the viewport that are useful for debugging.
 + `e_Camerafreeze 1` - Freezes the camera to see what is rendered from the camera's point of view and what is occluded. Also useful for debugging object culling and LOD.
 + `e_DefaultMaterial 1` - Applies a uniform, flat, gray material to every surface in the level.
 + `e_memoryProfiling 1` - Prints onscreen statistics for the amount of GPU memory that textures and buffers use.

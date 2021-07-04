@@ -11,7 +11,7 @@ This sample level showcases the Rin character in a simplified environment and de
 The Advanced\_RinLocomotion sample level is located in the `\dev\SamplesProject\Samples\Advanced_RinLocomotion` directory. The assets are located in the `\dev\SamplesProject\AnimationSamples\Advanced_RinLocomotion` directory.
 
 Once the sample level is open, in the **Perspective** viewport in O3DE Editor, use the following keyboard keys and mouse controls:
-+ To start the level, press **Ctrl\+G**.
++ To start the level, press **Ctrl+G**.
 + To move forward, left, backward, and right, press the **W**, **A**, **S**, and **D** keys, respectively.
 + To look around, move the pointer.
 + To attack, press the left mouse button.

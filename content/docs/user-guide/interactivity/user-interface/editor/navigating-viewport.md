@@ -16,7 +16,7 @@ The checkerboard pattern represents empty space within the UI canvas, and the da
 
 Do one of the following:
 + Mouse - Scroll the mouse wheel.
-+ Keyboard - Press **Ctrl \+** or **Ctrl \-**.
++ Keyboard - Press **Ctrl +** or **Ctrl \-**.
 + Menu - Click **View**, then click **Zoom In** or **Zoom Out**.
 + Toolbar - In the **Zoom** box, enter a percentage value or click the up and down arrows.
 
@@ -27,5 +27,5 @@ Do one of the following:
 **To toggle common zoom settings**
 
 Do one of the following:
-+ Fit canvas to current view \(default\) - Press **Ctrl\+0**, or click **View**, **Fit Canvas**.
-+ View canvas at actual size - Press **Ctrl\+1**, or click **View**, **Actual Size**.
++ Fit canvas to current view \(default\) - Press **Ctrl+0**, or click **View**, **Fit Canvas**.
++ View canvas at actual size - Press **Ctrl+1**, or click **View**, **Actual Size**.

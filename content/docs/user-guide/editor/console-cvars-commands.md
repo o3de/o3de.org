@@ -24,19 +24,19 @@ Console variables (cvars) provide a convenient way to expose variables which can
 
 ### Registering new console variables 
 
-For an integer or float based console variable, it is recommended to use the `IConsole::Register()` function to expose a C\+\+ variable as a console variable.
+For an integer or float based console variable, it is recommended to use the `IConsole::Register()` function to expose a C++ variable as a console variable.
 
 To declare a new string console variable, use the `IConsole::RegisterString()` function.
 
-### Accessing console variables from C\+\+ 
+### Accessing console variables from C++ 
 
 Console variables are exposed using the `ICVar` interface. To retrieve this interface, use the `IConsole::GetCVar()` function.
 
-The most efficient way to read the console variable value is to access directly the C\+\+ variable bound to the console variable proxy.
+The most efficient way to read the console variable value is to access directly the C++ variable bound to the console variable proxy.
 
 ## Adding New Console Commands 
 
-The console can easily be extended with new console commands. A new console command can be implemented in C\+\+ as a static function which follows the `ConsoleCommandFunc` type. Arguments for this console command are passed using the `IConsoleCmdArgs` interface.
+The console can easily be extended with new console commands. A new console command can be implemented in C++ as a static function which follows the `ConsoleCommandFunc` type. Arguments for this console command are passed using the `IConsoleCmdArgs` interface.
 
 The following code shows the skeleton implementation of a console command:
 
@@ -135,13 +135,13 @@ sys_spec_Texture=1 [REQUIRE_NET_SYNC]
 
 By calling the console command `sys_RestoreSpec` you can check why the `sys_spec_` variables don't represent the right states.
 
-#### From C\+\+ code 
+#### From C++ code 
 
 From the code you can use the member function `GetRealIVal()` and compare its return value against the result of `GetIVal()` in `ICVar`.
 
 ## Deferred execution of command line console commands 
 
-The commands that are passed via the command line by using the \+ prefix are stored in a separate list as opposed to the rest of the console commands.
+The commands that are passed via the command line by using the + prefix are stored in a separate list as opposed to the rest of the console commands.
 
 This list allows the application to distribute the execution of those commands over several frames rather than executing everything at once.
 

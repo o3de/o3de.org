@@ -87,7 +87,7 @@ Layer names at the same hierarchy level must be unique. Layers at the same hiera
 ![\[Layer at the same hierarchy level must have unique names.\]](/images/user-guide/component/entity_system/saving-layers-duplicate.png)
 
 **To save your level and all layers**
-+ In O3DE Editor, choose **File**, **Save** or press **Ctrl\+S**.
++ In O3DE Editor, choose **File**, **Save** or press **Ctrl+S**.
 
 **To save specific layers only**
 

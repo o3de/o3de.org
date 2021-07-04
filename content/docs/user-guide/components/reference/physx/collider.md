@@ -129,7 +129,7 @@ A PhysX entity that is static can interact with other entities, but doesn't move
 
 1. In the **PhysX Collider** component, set the **Shape** to **Box**, and edit the **Dimensions** property so the box encloses the mesh asset.
 
-1. Press **Control\+G** to enter play mode. Because your entity does not have a **PhysX Rigid Body** component, it is static and does not move.
+1. Press **Control+G** to enter play mode. Because your entity does not have a **PhysX Rigid Body** component, it is static and does not move.
 ![\[PhysX Collider component example entity that is static.\]](/images/user-guide/component/physx/physx/ui-physx-collider-B.png)
 **Tip**
 On the **[Transform](/docs/user-guide/components/reference/transform/)** component, enable the **Static** property. This enables optimizations for static entities.
@@ -226,8 +226,8 @@ These navigation hotkeys are available in collider component mode.
 + **1** - Resize mode.
 + **2** - Offset mode.
 + **3** - Rotation mode.
-+ **Control \+ Mouse Wheel Up** - Next mode.
-+ **Control \+ Mouse Wheel Down** - Previous mode.
++ **Control + Mouse Wheel Up** - Next mode.
++ **Control + Mouse Wheel Down** - Previous mode.
 + **R** - Reset current mode. This is effectively an undo operation. You can step through the Resize, Offset, and Rotation modes and press R to reset changes to the current mode.
 + **Escape** - Exit component mode.
 

@@ -10,7 +10,7 @@ O3DE's memory management system determines how memory is allocated. All memory a
 O3DE supports all the best known memory allocation schemes. You can use O3DE's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation.
 
 **Note**
-For best C\+\+ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/engine/memory-management.md).
+For best C++ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/engine/memory-management.md).
 
 ## AZ Memory Allocators 
 

@@ -25,7 +25,7 @@ In O3DE Editor, you can create script events by using the Asset Editor.
 **Parameter Properties**
 
 
-1. Choose **File**, **Save**, or press **Ctrl\+S**.
+1. Choose **File**, **Save**, or press **Ctrl+S**.
 
 1. In the **Save As** dialog box, enter a file name for your `.scriptevents` file, and click **Save**.
 **Note**

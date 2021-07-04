@@ -34,7 +34,7 @@ Some file tags have designated uses within O3DE. Various tools may require that 
 
 1. Choose **File**, **Open**, and select either `exclude.filetag` or `include.filetag` from the `Engine` directory.
 
-1. Open **Definition**, find the line labeled **File Tag Map**, and click on the '**\+**' button to add a new child element.
+1. Open **Definition**, find the line labeled **File Tag Map**, and click on the '**+**' button to add a new child element.
 ![\[Start a new file tag rule by adding a new element to the File Tag Map.\]](/images/user-guide/assetbundler/asset-bundler-filetag-new-element.png)
 
 1. Enter the desired file matching pattern in the **New Key** field.
@@ -49,7 +49,7 @@ Some file tags have designated uses within O3DE. Various tools may require that 
 
 ## Using the FileTag API 
 
-You can use the C\+\+ FileTag API to write your own logic for determining whether to include or exclude files. The following example uses the file tagging system to ignore files that match patterns associated with the `ignore` and `shader` tags.
+You can use the C++ FileTag API to write your own logic for determining whether to include or exclude files. The following example uses the file tagging system to ignore files that match patterns associated with the `ignore` and `shader` tags.
 
 ```
    bool IsIgnored(const char* szPath)

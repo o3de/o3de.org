@@ -33,7 +33,7 @@ After you create your `.inputbindings` file, you can add input event groups for 
 
 **To add an input event group**
 
-1. In the **Asset Editor**, for your `.inputbindings` file, click the **\+** icon.
+1. In the **Asset Editor**, for your `.inputbindings` file, click the **+** icon.
 ![\[\]](/images/user-guide/component/input-component-properties-2.png)
 
 1. For **Event Name**, enter a name for your event, such as *Action*.
@@ -45,7 +45,7 @@ After you create your input event group, you can add event generators to the gro
 
 **To add an event generator to your input event group**
 
-1. In the **Asset Editor**, for your input event group, next to **Event Generators**, click the **\+** icon.
+1. In the **Asset Editor**, for your input event group, next to **Event Generators**, click the **+** icon.
 
 1. In the **Class to create** window, select **Input**, and click **OK**.
 
@@ -147,7 +147,7 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. For **Mesh asset**, specify a mesh asset file. This gives your entity a shape.
 
-1. Press **Ctrl\+G** to enter game mode.
+1. Press **Ctrl+G** to enter game mode.
 
 1. Press the keyboard spacebar so that your entity rotates on the local z\-axis.
 **Example**

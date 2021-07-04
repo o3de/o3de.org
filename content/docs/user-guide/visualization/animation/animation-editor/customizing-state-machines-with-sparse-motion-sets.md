@@ -19,7 +19,7 @@ You can allow or deny transitions and routes to motion states in a state machine
 
 A motion set contains a list of motion entries. Each motion entry has a motion ID that you can define. For example, you can name a motion ID, *Walk* or *Jump*. The motion entry maps the custom motion ID like *Walk* to a specific motion file, such as `/SampleProject/Animations/Human_Walk.motion`.
 
-You can add motion entries to a motion set with the **\+** icon or the folder icon in the motion set window. The **\+** icon creates a new motion entry where you can specify the motion ID, but does not assign it to a motion file. You can click the folder icon to select a motion to add. Based on the motion file name, a default motion ID is generated for you.
+You can add motion entries to a motion set with the **+** icon or the folder icon in the motion set window. The **+** icon creates a new motion entry where you can specify the motion ID, but does not assign it to a motion file. You can click the folder icon to select a motion to add. Based on the motion file name, a default motion ID is generated for you.
 
 A *sparse motion set* is when the motion entries do not have a motion file assigned to them.
 
@@ -36,12 +36,12 @@ In the following example, a hierarchical motion set has the **Human** motion at 
 **Example : Hierarchical Motion Set**
 
 **Human \(motion set\)**
-+ \+ Idle - `GenericIdle.motion`
-+ \+ Walk - `GenericWalk.motion`
-+ \+ Jump - `GenericJump.motion`
++ + Idle - `GenericIdle.motion`
++ + Walk - `GenericWalk.motion`
++ + Jump - `GenericJump.motion`
 
 **Zombie \(motion set\)**
-  + \+ Walk - `ZombieWalk.motion`
+  + + Walk - `ZombieWalk.motion`
 
 Because the parent motion set defines the `Jump` motion entry with a motion file, the child motion set inherits that motion. This means that when the **Zombie** motion set is activated, characters with that motion set play the human `Jump` motion.
 
@@ -50,13 +50,13 @@ If you don't want your zombie characters to jump, you can disable inheritance fo
 **Example : Child Motion Set with Unassigned Jump Motion**
 
 **Human \(motion set\)**
-+ \+ Idle - `GenericIdle.motion`
-+ \+ Walk - `GenericWalk.motion`
-+ \+ Jump - `GenericJump.motion`
++ + Idle - `GenericIdle.motion`
++ + Walk - `GenericWalk.motion`
++ + Jump - `GenericJump.motion`
 
 **Zombie \(motion set\)**
-  + \+ Walk - `ZombieWalk.motion`
-  + \+ Jump - *Unassigned*
+  + + Walk - `ZombieWalk.motion`
+  + + Jump - *Unassigned*
 
 The **Zombie** motion set uses the `Idle` motion from the parent motion set, customizes the `Walk` motion, and disables the `Jump` motion.
 

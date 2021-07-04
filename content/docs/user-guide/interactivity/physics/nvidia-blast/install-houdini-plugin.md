@@ -63,7 +63,7 @@ The NVIDIA Blast installation for Houdini includes a tool shelf that you can ena
 
 **To enable the Blast tool shelf**
 
-1. In Houdini, choose the **\+** button in the **Toolbar** to the far right.
+1. In Houdini, choose the **+** button in the **Toolbar** to the far right.
 
 1. From the list, choose **Shelves** to expose the **Shelf list**.
 

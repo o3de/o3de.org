@@ -115,7 +115,7 @@ AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
 
 ## Serialization 
 
- Reflecting a class for serialization involves a [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) style markup in C\+\+, as follows:
+ Reflecting a class for serialization involves a [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) style markup in C++, as follows:
 
 ```
 serialize->Class<TestAsset>()

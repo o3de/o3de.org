@@ -19,7 +19,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **\+** icon to create one.
+1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **+** icon to create one.
 
 1. Right\-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 
@@ -54,7 +54,7 @@ The **Set Transform** node sets the transform from a selected joint, including t
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **\+** icon to create one.
+1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **+** icon to create one.
 
 1. Right\-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 

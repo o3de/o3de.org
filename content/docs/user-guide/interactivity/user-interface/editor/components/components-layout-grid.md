@@ -12,7 +12,7 @@ You can use a layout grid component to organize child elements into a uniform gr
 
 
 
-To see an in\-game example of a completed canvas with the **LayoutGrid** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Grid**. You can view examples of different fill patterns. Press **Esc** to exit the game.
+To see an in\-game example of a completed canvas with the **LayoutGrid** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Grid**. You can view examples of different fill patterns. Press **Esc** to exit the game.
 
 To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Layout ` directory and open the `SimpleGrid.uicanvas` file.
 

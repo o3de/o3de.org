@@ -23,7 +23,7 @@ You can use a **Fader** component to simultaneously adjust the transparency of a
 
 1. When O3DE Editor has started, choose **File**, **Open** and open the UiFeatures level.
 
-1. Press **Ctrl\+G** to play the game.
+1. Press **Ctrl+G** to play the game.
 
 1. Choose **Components**, **Other Components**, **Fader**. You can view an example of a direct fade and an animated fade.
 

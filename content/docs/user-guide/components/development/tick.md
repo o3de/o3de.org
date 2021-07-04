@@ -46,7 +46,7 @@ By default, a handler receives events based on the order in which the components
 
 **Tick Order Preset Values**
 
-| Name \(C\+\+\) | Name \(Lua/Script Canvas\) | Value | Description |
+| Name \(C++\) | Name \(Lua/Script Canvas\) | Value | Description |
 | --- | --- | --- | --- |
 | TICK\_FIRST | TickOrder.First | 0 | First position in the tick handler order. |
 | TICK\_PLACEMENT | TickOrder.Placement | 50 | Suggested tick handler position for components that need to be early in the tick order. |
@@ -60,7 +60,7 @@ By default, a handler receives events based on the order in which the components
 | TICK\_UI | TickOrder.UI | 2000 | Suggested tick handler position for UI components. |
 | TICK\_LAST | TickOrder.Last | 100000 | Last position in the tick handler order. |
 
-The following code examples show how to override the `GetTickOrder()` function in Lua and in C\+\+.
+The following code examples show how to override the `GetTickOrder()` function in Lua and in C++.
 
 ```
 -- Lua example

@@ -233,9 +233,9 @@ QPushButton* button = notification->addButtonFeature("Clear Warnings");
 connect(button, &QPushButton::clicked, ui->functionalCard, &AzQtComponents::Card::clearNotifications);
 ```
 
-## C\+\+ API reference<a name="card-api-ref"></a>
+## C++ API reference<a name="card-api-ref"></a>
 
-For details on the **card** API, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **card** API, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::Card](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card.html)
 +  [AzQtComponents::CardHeader](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_header.html)
 +  [AzQtComponents::CardNotification](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_notification.html)

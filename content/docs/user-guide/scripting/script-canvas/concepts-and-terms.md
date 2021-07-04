@@ -55,7 +55,7 @@ The **Node Palette** contains a searchable list of nodes. By default, the palett
 
 1. In the **Script Canvas** window, do one of the following:
    + Choose **Tools**, **Node Palette**.
-   + Press **Ctrl\+Shift\+L**.
+   + Press **Ctrl+Shift+L**.
 **Note**
 If you have an existing script open, you can right\-click the canvas for the menu to appear.
 
@@ -68,4 +68,4 @@ The **Node Inspector** shows the properties of the node. You can edit each prope
 
 1. Do one of the following:
    + Click **Tools**, **Node Inspector**.
-   + Press **Ctrl\+Shift\+I**.
+   + Press **Ctrl+Shift+I**.

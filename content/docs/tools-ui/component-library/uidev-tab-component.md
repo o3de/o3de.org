@@ -67,9 +67,9 @@ tabWidget->addAction(action1);
 // NOTE: To perform an action when the action button is pressed, you will also need to connect the QAction::triggered signal.
 ```
 
-## C\+\+ API reference<a name="tab-api-ref"></a>
+## C++ API reference<a name="tab-api-ref"></a>
 
-For details on the **tab** API's, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **tab** API's, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TabWidget](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tab_widget.html)
 +  [AzQtComponents::TabWidgetActionToolBar](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tab_widget_action_tool_bar.html)
 

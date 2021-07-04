@@ -70,7 +70,7 @@ If your NVIDIA Blast mesh assets have been manually edited in **FBX Settings**, 
 
 1. In the **Blast family mesh data** component, enable the **Show mesh assets** property to show the mesh asset list.
 
-1. Add a mesh slot to the list. Choose the **\+** button to the right of **Mesh assets** to add a mesh slot to the **Mesh assets** list.
+1. Add a mesh slot to the list. Choose the **+** button to the right of **Mesh assets** to add a mesh slot to the **Mesh assets** list.
 
 1. Add a mesh to the list. Click the **Folder** button to the right of the numbered mesh slot property and select a mesh asset from the **Static Mesh** selection window.
 
@@ -89,8 +89,8 @@ Because the blast asset has been exported from Houdini with **Static root** disa
 
 1. Click and drag on the **Z** axis of the move gizmo to move the entity several units above the terrain.
 
-1.  Press **Control \+ P** to view simulation. The entity drops and shatters when it collides with the terrain.
+1.  Press **Control + P** to view simulation. The entity drops and shatters when it collides with the terrain.
 
-1.  Press **Control \+ P** to end the simulation.
+1.  Press **Control + P** to end the simulation.
 
 ![\[Add the blast slice asset to the Blast Family Mesh Data component.\]](/images/user-guide/physx/blast/anim-nvidia-blast-view-simulation.gif)

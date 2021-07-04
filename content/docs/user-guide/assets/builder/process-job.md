@@ -94,7 +94,7 @@ A successful processing of a source asset returns one or more `JobProduct` entri
 
 The `productSubID` field is a stable and unique product identifier for each product file created by this process job for the source asset file. It can be any unsigned 32\-bit integer that disambiguates different outputs from the same source. If builder source asset files produce only one product, the builder can use 0.
 
-The `productAssetType` field maps to a C\+\+ `AZ::Data::AssetData` type ID.
+The `productAssetType` field maps to a C++ `AZ::Data::AssetData` type ID.
 
 One way to determine the asset type ID from Python is to call the `AssetCatalogRequestBus` using the asset's display name:
 

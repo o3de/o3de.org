@@ -22,7 +22,7 @@ Likewise, you can use this syntax to invoke behaviors across systems for console
 + Improved debuggability. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within O3DE.
 + Compatibility with code autocomplete in Visual Studio.
 
-`AZ::Interface` is defined as a C\+\+ template \(`template <T>`\) in the following header: `%INSTALL-ROOT%dev\Code\Framework\AzCore\AzCore\Interface\Interface.h`
+`AZ::Interface` is defined as a C++ template \(`template <T>`\) in the following header: `%INSTALL-ROOT%dev\Code\Framework\AzCore\AzCore\Interface\Interface.h`
 
 **Using AZ::Interface**
 This is the process for registering a singleton thread for a system with `AZ::Interface`

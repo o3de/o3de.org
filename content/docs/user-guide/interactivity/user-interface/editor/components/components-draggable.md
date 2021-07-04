@@ -8,7 +8,7 @@ title: Draggable
 
 You can use the **Draggable** component to make a UI element movable from one location to another on screen. Use the **Draggable** component in combination with the **DropTarget** component so that dragging can start on the draggable element and end on the drop target element. Drag\-and\-drop is a common operation in UI screens, such as an inventory system.
 
-Because drag\-and\-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C\+\+ to define actions that result from the drag and the drop.
+Because drag\-and\-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C++ to define actions that result from the drag and the drop.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-draggable.gif)
 
@@ -31,11 +31,11 @@ When being dragged, however, the draggable component has an additional three sta
 + **Normal** - Automatic state when a drag state begins.
 
    
-+ **Valid** - Typically the state used when the draggable component pauses on a valid drop target. This state is determined by a script that you write or C\+\+ code that connects to the `UiDropTargetNotificationBus` and listens for the `OnDropHoverStart` method.
++ **Valid** - Typically the state used when the draggable component pauses on a valid drop target. This state is determined by a script that you write or C++ code that connects to the `UiDropTargetNotificationBus` and listens for the `OnDropHoverStart` method.
 
    
-+ **Invalid** - Typically the state used when a draggable component pauses over an invalid drop target. This state is determined by a script that you write or C\+\+ code. When a valid drag state is triggered, a notification is automatically sent using the `UiDropTargetNotificationBus`.
++ **Invalid** - Typically the state used when a draggable component pauses over an invalid drop target. This state is determined by a script that you write or C++ code. When a valid drag state is triggered, a notification is automatically sent using the `UiDropTargetNotificationBus`.
 
    
-The script or C\+\+ can use the `UiDraggableBus` to set the drag state of the **Draggable** component. It can also set the drop state of the **DropTarget** to indicate valid drop targets to the user.
+The script or C++ can use the `UiDraggableBus` to set the drag state of the **Draggable** component. It can also set the drop state of the **DropTarget** to indicate valid drop targets to the user.
 To see an example of simple drag Lua script, open `DraggableElement.lua` in `Gems\LyShineExamples\Assets\UI\Scripts\LyShineExamples\DragAndDrop`.

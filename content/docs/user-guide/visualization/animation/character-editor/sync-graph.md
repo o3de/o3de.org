@@ -89,7 +89,7 @@ You are now ready to add a parameter to the secondary graph that receives the pa
 
 **To add a parameter to the secondary graph to receive the change event from the primary graph**
 
-1. On the **Parameters** tab for the secondary animation graph, click the plus \(**\+**\) icon, and choose **Add parameter**.
+1. On the **Parameters** tab for the secondary animation graph, click the plus \(**+**\) icon, and choose **Add parameter**.
 ![\[Choose Add parameter in Animation Editor.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-6.png)
 
 1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean \(checkbox\)** value type because the gun trigger is either on or off.
@@ -143,7 +143,7 @@ You add a parameter and parameter conditions to the primary graph just as you di
 
 **To add a parameter to the primary graph**
 
-1. On the **Parameters** tab, click the plus \(**\+**\) icon, and choose **Add parameter**.
+1. On the **Parameters** tab, click the plus \(**+**\) icon, and choose **Add parameter**.
 ![\[Adding a parameter to the primary graph.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-16.png)
 
 1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean \(checkbox\)** value type because the gun trigger is either on or off.

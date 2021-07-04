@@ -5,31 +5,31 @@ title: Data types in serialized JSON
 
 {{< preview-migrated >}}
 
- In addition to primitive C\+\+ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C\+\+ type. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](/docs/userguide/programming/serialization/json-serialize-deserialize#serialization-json-serialize).
+ In addition to primitive C++ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C++ type. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](/docs/userguide/programming/serialization/json-serialize-deserialize#serialization-json-serialize).
 
- This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C\+\+ types.
+ This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C++ types.
 
 ## Primitives 
 
- The primitive types used in serialization are *booleans*, *integers*, *floating point numbers*, and *strings*. These C\+\+ types map naturally to the native JSON boolean, number, and string types. The only string types supported for serialization are `AZstd::string` and `OSString`.
+ The primitive types used in serialization are *booleans*, *integers*, *floating point numbers*, and *strings*. These C++ types map naturally to the native JSON boolean, number, and string types. The only string types supported for serialization are `AZstd::string` and `OSString`.
 
-Deserialization can be conducted from any primitive JSON type to these C\+\+ types as follows:
+Deserialization can be conducted from any primitive JSON type to these C++ types as follows:
 
 
 **Basic type mappings**
 
-| C\+\+ Type | JSON boolean | JSON number | JSON string |
+| C++ Type | JSON boolean | JSON number | JSON string |
 | --- | --- | --- | --- |
-| bool | Direct mapping. | 0 maps to false, all other values are true. | Case\-insensitive comparison against "true" and "false" to map to the respective C\+\+ values. |
+| bool | Direct mapping. | 0 maps to false, all other values are true. | Case\-insensitive comparison against "true" and "false" to map to the respective C++ values. |
 | Integer types | True maps to 1, False to 0. | Direct mapping, where floating point values are truncated. | Tries to extract a 64\-bit integer and convert to the target integer type.  |
 | Floating point types | True maps to 1, False to 0. | Direct mapping. | Tries to extract a 64\-bit floating point and convert it to the target type. |
 | Strings \(AZstd::string and OSString only\) | True is converted to "True", and False to "False". | String representation of the number. | Direct mapping. |
 
 ## Pointers 
 
- Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type. For pointers to C\+\+ objects, this means that the pointed\-to object must be registered with the serialization context being used. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the O3DE runtime can be used.
+ Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type. For pointers to C++ objects, this means that the pointed\-to object must be registered with the serialization context being used. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the O3DE runtime can be used.
 
- When deserializing, the `$type` value is used as a hint to determine which object to reconstruct if necessary. Otherwise, only the C\+\+ type of the member is inspected. Deserialization proceeds memberwise, using the field mapping that was registered with the serialization context to map JSON object keys to C\+\+ members.
+ When deserializing, the `$type` value is used as a hint to determine which object to reconstruct if necessary. Otherwise, only the C++ type of the member is inspected. Deserialization proceeds memberwise, using the field mapping that was registered with the serialization context to map JSON object keys to C++ members.
 
 ## Enums 
 
@@ -88,7 +88,7 @@ ExampleEnum::Flag4 | 16 // Serializes as ["Flag4", 16]
 
 Serialization supports 2D, 3D, and 4D vectors. An N\-dimensional vector is serialized as a JSON array of N floating point numbers, in the order of the X, Y, Z, and W coordinate.
 
-For deserialization, vectors can be read from an array of any length, but will only read up to the number of elements in the target type. If the array has fewer elements than the vector type, those vector components are assigned the default value of 0. Array elements follow the rules of deserialization for the C\+\+ floating point type of the vector elements. Vectors can also be deserialized from JSON objects where the object keys map to the vector component name in a case\-insensitive compare. Other keys are ignored, and components with missing keys use the default value.
+For deserialization, vectors can be read from an array of any length, but will only read up to the number of elements in the target type. If the array has fewer elements than the vector type, those vector components are assigned the default value of 0. Array elements follow the rules of deserialization for the C++ floating point type of the vector elements. Vectors can also be deserialized from JSON objects where the object keys map to the vector component name in a case\-insensitive compare. Other keys are ignored, and components with missing keys use the default value.
 
 ## Containers 
 
@@ -107,7 +107,7 @@ The following types are serialized to JSON arrays:
 + `AZStd::set` \- Values in the serialized array are sorted
 + `AZStd::unordered_set` \- Values in the serialized array are sorted
 
-Deserialization of a JSON array to a C\+\+ array, list, vector, set, pair, or tuple type is a direct element\-by\-element conversion. The types of each array element are converted to the target container's value type according to the other JSON deserialization rules. Missing elements map to the default for the container's value type, and additional elements are ignored. Types other than JSON arrays will result in a conversion error when attempting to deserialize to one of these C\+\+ types.
+Deserialization of a JSON array to a C++ array, list, vector, set, pair, or tuple type is a direct element\-by\-element conversion. The types of each array element are converted to the target container's value type according to the other JSON deserialization rules. Missing elements map to the default for the container's value type, and additional elements are ignored. Types other than JSON arrays will result in a conversion error when attempting to deserialize to one of these C++ types.
 
 ### Map types 
 

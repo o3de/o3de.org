@@ -14,7 +14,7 @@ You can use the **UI Editor** to add texture atlases to a UI canvas.
 1. Under **Editor settings**, note the **Texture atlases** property. The **Texture atlases** property lists the texture atlases that the UI canvas loads.
 ![\[The Texture atlases property in the UI Editor.\]](/images/user-guide/game_ui_editor/ui-editor-texture-atlases-1.png)
 
-1. For **Texture atlases**, click the plus \(**\+**\) sign to add one or more texture atlas child elements. One child element is required for each texture atlas to add to the UI canvas.
+1. For **Texture atlases**, click the plus \(**+**\) sign to add one or more texture atlas child elements. One child element is required for each texture atlas to add to the UI canvas.
 ![\[Adding a child element to the Texture atlas property of a UI canvas.\]](/images/user-guide/game_ui_editor/ui-editor-texture-atlases-2.png)
 
 1. Click the **Browse** \(**...**\) button for an element that you added.

@@ -117,7 +117,7 @@ The animation graph controls the ragdoll simulation of your character. When your
 1. In the **Animation Editor**, on the right side of the menu bar, choose **AnimGraph** from the drop\-down list. This changes the layout.
 ![\[Change the Animation Editor layout by choosing AnimGraph from the drop-down list\]](/images/user-guide/actor-animation/ragdoll-animation-editor-layout-option-animgraph.png)
 
-1. In the **Anim Graph** pane, click the **\+** icon to create a new animation graph.
+1. In the **Anim Graph** pane, click the **+** icon to create a new animation graph.
 
 1. Right\-click the grid and then choose **Create Node**, **Sources**, **Motion**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Motion** into the animation graph.
 ![\[Add a Motion node to the animation graph from the context menu or the Anim Graph Palette in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-anim-graph-context-menu-motion-node.png)
@@ -191,4 +191,4 @@ Once you've created your ragdoll and animation graph, you can simulate the ragdo
 
 1. Click **Add Component**, **PhysX Ragdoll**.
 
-1. To start the level and simulate your ragdoll, press **Ctrl\+G**.
+1. To start the level and simulate your ragdoll, press **Ctrl+G**.

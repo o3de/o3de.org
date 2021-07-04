@@ -155,7 +155,7 @@ You can add parameters to an animation graph in the **Parameters** pane.
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Parameters** pane, click the green **\+** icon.
+1. In the **Parameters** pane, click the green **+** icon.
 
 1. In the **Create Parameter** dialog box, specify the parameter name, description, and the value type.
 

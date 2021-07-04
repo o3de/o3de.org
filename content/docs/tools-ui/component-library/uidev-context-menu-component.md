@@ -70,9 +70,9 @@ auto disabledAction = menu->addAction(QStringLiteral("Disabled"));
 disabledAction->setEnabled(false);
 ```
 
-## C\+\+ API reference<a name="context-menu-api-ref"></a>
+## C++ API reference<a name="context-menu-api-ref"></a>
 
-For details on the **menu** API used for styling of context menus, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **menu** API used for styling of context menus, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::Menu](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_menu.html)
 
 Relevant Qt documentation includes the following topics:

@@ -14,7 +14,7 @@ A blend tree is a collection of nodes with input and output ports that are color
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Animation Editor**, on the **Anim Graph** tab, click the **\+** icon to create an animation graph.
+1. In the **Animation Editor**, on the **Anim Graph** tab, click the **+** icon to create an animation graph.
 
 1. Click the **Save** icon. Navigate to the directory where you want to save your animation graph. Type a name for your file and then click **Save**.
 

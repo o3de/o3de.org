@@ -16,7 +16,7 @@ Tags are represented by animation graph parameters. When you define a parameter,
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Animation Editor**, in the **Parameters** pane, click the **\+** button.
+1. In the **Animation Editor**, in the **Parameters** pane, click the **+** button.
 ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/anim-graph-parameters-pane.png)
 
 1. In the **Create Parameter** dialog box, do the following:

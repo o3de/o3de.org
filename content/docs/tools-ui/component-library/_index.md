@@ -12,7 +12,7 @@ In the O3DE UI component library, you will find an explanation of each UI compon
 + Screenshots and explanations of component features
 + Usage guidelines
 + Code snippets showing you how to use the most common features
-+ Links to C\+\+ API reference page for each component
++ Links to C++ API reference page for each component
 + Links to related information in the Qt widget library
 
 **Topics**
@@ -37,4 +37,4 @@ In the O3DE UI component library, you will find an explanation of each UI compon
 + [Toggle switch](uidev-toggle-switch-component.md)
 + [Tree view](uidev-tree-view-component.md)
 
-Additionally, a complete guide to the C\+\+ API can be found in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html).
+Additionally, a complete guide to the C++ API can be found in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html).

@@ -10,7 +10,7 @@ You can use a **Button** component to make an element behave like a button.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button.png)
 
-To see an in\-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl\+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**. You can view the different types of buttons you can create. Press **Esc** to exit the game.
+To see an in\-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**. You can view the different types of buttons you can create. Press **Esc** to exit the game.
 
 To view this same canvas in the **UI Editor**, open `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Button\Styles.uicanvas`.
 
