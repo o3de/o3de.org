@@ -7,7 +7,7 @@
           <p>What’s going on in the O3DE community? Read the blog posts and catch up on the latest news, insights, and feature development.</p>
       </div>
   </div>
-  <div class="row pb-5">
+  <div class="row card-stack pb-5">
     {{ range (.Paginate $posts).Pages }}
     {{ $date := dateFormat "January 2, 2006" .Date }}
     <div class="col col-12">
