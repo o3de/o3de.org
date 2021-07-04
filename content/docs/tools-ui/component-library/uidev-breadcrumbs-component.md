@@ -32,7 +32,6 @@ Breadcrumbs have several customization options. The standard, horizontal layout 
 1.  **Browse button**
 
    (Optional) Technically not part of the breadcrumb. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path. You push the new path to your breadcrumbs widget in your browse button handler code.
-![\[component breadcrumbs truncation menu\]](/images/tools-ui/component-breadcrumbs-truncation-menu.png)
 
 1.  **Truncation menu**
 
