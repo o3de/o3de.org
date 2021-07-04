@@ -6,23 +6,23 @@ title: O3DE UI table view component
 
 {{< preview-migrated >}}
 
-Use the **table view** component to present multiple columns of structured data in a table format\. By default, this component employs sortable columns and "zebra striping" \- where the background color of rows alternate \- to help you create an easily readable, scannable, and sortable presentation of data\.
+Use the **table view** component to present multiple columns of structured data in a table format. By default, this component employs sortable columns and "zebra striping" - where the background color of rows alternate - to help you create an easily readable, scannable, and sortable presentation of data.
 
 ![\[component table view example\]](/images/tools-ui/component-table-view-example.png)
 
 **Note**
- `AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows\.
+ `AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows.
 
 ## Basic table view<a name="table-view-basic"></a>
 
 ![\[component table view basic\]](/images/tools-ui/component-table-view-basic.png)
 
-Create a simple logging table view\.
+Create a simple logging table view.
 
-For a more complex working example of a table view, view the sample tables on the **Table View** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TableViewPage.cpp`\.
+For a more complex working example of a table view, view the sample tables on the **Table View** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TableViewPage.cpp`.
 
 **Note**
-If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors\(false\) function\.
+If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
 
  **Example**
 
@@ -64,9 +64,9 @@ logModel->AppendLine(
         QDateTime::currentMSecsSinceEpoch()));
 ```
 
-## C\+\+ API reference<a name="table-view-api-ref"></a>
+## C++ API reference<a name="table-view-api-ref"></a>
 
-For details on the **table view** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **table view** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TableView](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_table_view.html)
 
 Relevant Qt documentation includes the following topics:

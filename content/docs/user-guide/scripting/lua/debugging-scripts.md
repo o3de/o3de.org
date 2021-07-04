@@ -5,13 +5,13 @@ title: ' Debugging Lua scripts'
 
 {{< preview-migrated >}}
 
-O3DE provides Lua scripts with several functions to make debugging easier\.
+O3DE provides Lua scripts with several functions to make debugging easier.
 
 ## Logging to the Console 
 
-To print text to O3DE Editor and the console, use the `Debug.Log()` function\.
+To print text to O3DE Editor and the console, use the `Debug.Log()` function.
 
-The following example shows the use of the `Debug.Log()` function\.
+The following example shows the use of the `Debug.Log()` function.
 
 ```
 local LoggingTest = { }
@@ -25,9 +25,9 @@ return LoggingTest
 
 ## Using an Assert to Detect Potential Issues 
 
-You can use the `assert` function to display an error message in the console when conditions are detected that might result in an execution fault\. The `assert` function takes two arguments: a condition that evaluates to true or false, and a message to display if the condition is false\.
+You can use the `assert` function to display an error message in the console when conditions are detected that might result in an execution fault. The `assert` function takes two arguments: a condition that evaluates to true or false, and a message to display if the condition is false.
 
-The following example shows the use of the `assert` function\.
+The following example shows the use of the `assert` function.
 
 ```
 function SampleScript:DoStuff()
@@ -41,9 +41,9 @@ end
 
 ## Communicating Errors 
 
-You can use the `Debug.Error()` function to display an error in the console and halt execution of the current script function\. This does not halt all execution of the script\. If you have active handlers, they can still be called when the engine posts notifications\. The `Debug.Error()` function takes arguments similar to the `Debug.Assert` function: a condition and a message\. The message is displayed in bright red and execution halts only if the condition is false\.
+You can use the `Debug.Error()` function to display an error in the console and halt execution of the current script function. This does not halt all execution of the script. If you have active handlers, they can still be called when the engine posts notifications. The `Debug.Error()` function takes arguments similar to the `Debug.Assert` function: a condition and a message. The message is displayed in bright red and execution halts only if the condition is false.
 
-The following example shows the use of the `Debug.Error()` function\.
+The following example shows the use of the `Debug.Error()` function.
 
 ```
 function SampleScript:CheckAndError()
@@ -57,9 +57,9 @@ end
 
 ## Displaying a Warning When User Attention Is Required 
 
-A script condition can occur that does not adversely affect the execution of the script but might be useful for the user to know about\. The `Debug.Warning()` function uses arguments similar to those of the `Error` and `Assert` functions but just displays an orange warning message in the console\. It does not halt execution\.
+A script condition can occur that does not adversely affect the execution of the script but might be useful for the user to know about. The `Debug.Warning()` function uses arguments similar to those of the `Error` and `Assert` functions but just displays an orange warning message in the console. It does not halt execution.
 
-The following example shows the use of the `Debug.Warning()` function\.
+The following example shows the use of the `Debug.Warning()` function.
 
 ```
 function SampleScript:CheckValue()

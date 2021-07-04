@@ -5,13 +5,13 @@ title: Node Libraries
 
 {{< preview-migrated >}}
 
-Nodes in a gem are typically stored in node libraries\. These libraries aid in the registration of the nodes with the Script Canvas Gem\. They also help organize the nodes within the Script Canvas editor's **Node Palette**\.
+Nodes in a gem are typically stored in node libraries. These libraries aid in the registration of the nodes with the Script Canvas Gem. They also help organize the nodes within the Script Canvas editor's **Node Palette**.
 
-The following procedure uses the Script Canvas Diagnostic Library Gem, which is an example of how to create gems that extend Script Canvas\. The source code files are in the directory `\dev\Gems\ScriptCanvasDiagnosticLibrary\Code\Source`\.
+The following procedure uses the Script Canvas Diagnostic Library Gem, which is an example of how to create gems that extend Script Canvas. The source code files are in the directory `\dev\Gems\ScriptCanvasDiagnosticLibrary\Code\Source`.
 
 **To create a node library for a gem for use with Script Canvas**
 
-1. Declare your library\. The following example \(`Debug.h`\) shows a library declaration from the Script Canvas Diagnostic Library Gem\.
+1. Declare your library. The following example \(`Debug.h`\) shows a library declaration from the Script Canvas Diagnostic Library Gem.
 
    ```
    struct Debug : public Library::LibraryDefinition
@@ -23,7 +23,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    };
    ```
 
-1. After you declare the library, reflect it\. The following example is from `Debug.cpp`\.
+1. After you declare the library, reflect it. The following example is from `Debug.cpp`.
 
    ```
    void Debug::Reflect(AZ::ReflectContext* reflection)
@@ -46,7 +46,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    }
    ```
 
-1. Use the `InitNodeRegistry` and `AddNodeToRegistry` functions to register the library's nodes \(`Debug.cpp`\)\.
+1. Use the `InitNodeRegistry` and `AddNodeToRegistry` functions to register the library's nodes \(`Debug.cpp`\).
 
    ```
    void Debug::InitNodeRegistry(NodeRegistry& nodeRegistry)
@@ -61,13 +61,13 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    }
    ```
 
-1. Ensure that your library and its nodes are reflected in your gem's `Reflect` function\.
+1. Ensure that your library and its nodes are reflected in your gem's `Reflect` function.
 
    ```
    ScriptCanvas::Libraries::Debug::Reflect(context);
    ```
 
-1. Add the following code your gem's `Init` function\. The following example is from `ScriptCanvasDiagnosticSystemComponent.cpp`\. This code is important because it inserts your gem's nodes into the Script Canvas Gem's environment\.
+1. Add the following code your gem's `Init` function. The following example is from `ScriptCanvasDiagnosticSystemComponent.cpp`. This code is important because it inserts your gem's nodes into the Script Canvas Gem's environment.
 
    ```
    AZ::EnvironmentVariable<ScriptCanvas::NodeRegistry> nodeRegistryVariable = AZ::Environment::FindVariable<ScriptCanvas::NodeRegistry>(ScriptCanvas::s_nodeRegistryName);
@@ -78,7 +78,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
    }
    ```
 
-1. Make sure the library's descriptor is registered in your gem's module\. The following code is from `ScriptCanvasDiagnosticLibraryGem.cpp`\.
+1. Make sure the library's descriptor is registered in your gem's module. The following code is from `ScriptCanvasDiagnosticLibraryGem.cpp`.
 
    ```
    Module::Module()

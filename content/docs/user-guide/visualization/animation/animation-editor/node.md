@@ -6,7 +6,7 @@ title: 'Animation Editor Nodes'
 
 {{< preview-migrated >}}
 
-See the following nodes available in the Animation Editor\.
+See the following nodes available in the Animation Editor.
 
 **Topics**
 + [Creating Blend Trees](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md)

@@ -13,17 +13,17 @@ The **Audio Environment** component provides access to features of the [Audio Tr
 The **Audio Environment** component has the following property:
 
 **Default Environment**
-Enter the name of the audio environment to use by default when setting amounts\.
+Enter the name of the audio environment to use by default when setting amounts.
 
 ## EBus Request Bus Interface
 
-Use the following request functions with the EBus interface to communicate with other components of your game\.
+Use the following request functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### SetAmount
 
-Sets the amount of environmental **'send'** to apply to the default environment, if set\.
+Sets the amount of environmental **'send'** to apply to the default environment, if set.
 
 **Parameters**
 `amount` - Float value of the amount to set
@@ -36,7 +36,7 @@ Yes
 
 ### SetEnvironmentAmount
 
-Sets the amount of environmental **'send'** to apply to the specified environment\.
+Sets the amount of environmental **'send'** to apply to the specified environment.
 
 **Parameters**
 `environmentName` - Name of ATL Environment to set an amount on

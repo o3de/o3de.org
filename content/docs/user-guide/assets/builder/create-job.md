@@ -7,7 +7,7 @@ weight: 400
 
 {{< preview-migrated >}}
 
-When you create a job with the Python Asset Builder, the callback for `OnCreateJobsRequest` will be called with a `CreateJobsRequest` in a tuple\. The callback will return a `CreateJobsResponse` as the response using the data inside the request\.
+When you create a job with the Python Asset Builder, the callback for `OnCreateJobsRequest` will be called with a `CreateJobsRequest` in a tuple. The callback will return a `CreateJobsResponse` as the response using the data inside the request.
 
 **Contents**
 - [Create jobs with Python Asset Builder {#python-asset-builder-create-job}](#create-jobs-with-python-asset-builder-python-asset-builder-create-job)
@@ -17,9 +17,9 @@ When you create a job with the Python Asset Builder, the callback for `OnCreateJ
 
 ## CreateJobsRequest 
 
-`CreateJobsRequest` provides data for operations related to the enabled platforms\. This data is used to build the output `JobDescriptor` for a specific enabled platform\. The `CreateJobsRequest` data contains input job data that is sent by **Asset Processor** to the builder for creating jobs\.
+`CreateJobsRequest` provides data for operations related to the enabled platforms. This data is used to build the output `JobDescriptor` for a specific enabled platform. The `CreateJobsRequest` data contains input job data that is sent by **Asset Processor** to the builder for creating jobs.
 
-**azlmbr\.asset\.builder\.CreateJobsRequest**
+**azlmbr.asset.builder.CreateJobsRequest**
 
 ```
 class azlmbr.asset.builder.AssetBuilderDesc
@@ -32,9 +32,9 @@ class azlmbr.asset.builder.AssetBuilderDesc
 
 **PlatformInfo**
 
-This structure indicates the platform that has been enabled for the project\.
+This structure indicates the platform that has been enabled for the project.
 
-**azlmbr\.asset\.builder\.PlatformInfo**
+**azlmbr.asset.builder.PlatformInfo**
 
 ```
 class azlmbr.asset.builder.PlatformInfo
@@ -44,9 +44,9 @@ class azlmbr.asset.builder.PlatformInfo
 
 ## CreateJobsResponse 
 
-The response from the callback determines what work to process for the source asset file\. In most cases, the builder creates a job descriptor for each source asset and for each enabled platform\.
+The response from the callback determines what work to process for the source asset file. In most cases, the builder creates a job descriptor for each source asset and for each enabled platform.
 
-**azlmbr\.asset\.builder\.CreateJobsResponse**
+**azlmbr.asset.builder.CreateJobsResponse**
 
 ```
 class azlmbr.asset.builder.CreateJobsResponse
@@ -57,9 +57,9 @@ class azlmbr.asset.builder.CreateJobsResponse
 
 **CreateJobsResultCode**
 
-These are the possible result codes from `CreateJobs` request\.
+These are the possible result codes from `CreateJobs` request.
 
-**azlmbr\.asset\.builder\.CreateJobsResponse Return Code**
+**azlmbr.asset.builder.CreateJobsResponse Return Code**
 
 ```
 # Jobs failed to be created.
@@ -74,16 +74,16 @@ azlmbr.asset.builder.CreateJobsResponse_ResultSuccess
 
 **SourceFileDependency**
 
-This structure defines source asset file dependency information that the builder will send to **Asset Processor**\.
+This structure defines source asset file dependency information that the builder will send to **Asset Processor**.
 
-The `sourceFileDependencyPath` field can be either be a relative path from the assets folder, or an absolute path\.
+The `sourceFileDependencyPath` field can be either be a relative path from the assets folder, or an absolute path.
 
-The `sourceFileDependencyUUID` field is the source asset file UUID part of the asset ID, without the sub\-id\.
+The `sourceFileDependencyUUID` field is the source asset file UUID part of the asset ID, without the sub-id.
 
 **Important**
-The builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Procesor**\. Either one will be sufficient\.
+The builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Procesor**. Either one will be sufficient.
 
-**azlmbr\.asset\.builder\.SourceFileDependency**
+**azlmbr.asset.builder.SourceFileDependency**
 
 ```
 class azlmbr.asset.builder.SourceFileDependency
@@ -94,7 +94,7 @@ class azlmbr.asset.builder.SourceFileDependency
 
 **SourceFileDependency Type**
 
-**azlmbr\.asset\.builder\.SourceFileDependency Type**
+**azlmbr.asset.builder.SourceFileDependency Type**
 
 ```
 # Source file depends on other source file
@@ -106,22 +106,22 @@ azlmbr.asset.builder.SourceFileDependency_Wildcards
 
 **JobDescriptor**
 
-`JobDescriptor` is used by the builder to store job\-related information\.
+`JobDescriptor` is used by the builder to store job-related information.
 
-The `priority` field is the value for the jobs within the job queue\. A priority value less than **0** means the job's priority is not considered\. A priority value of **0** or greater prioritizes the job by value\. The higher the value, the higher priority\.
+The `priority` field is the value for the jobs within the job queue. A priority value less than **0** means the job's priority is not considered. A priority value of **0** or greater prioritizes the job by value. The higher the value, the higher priority.
 
 **Note**
-Priorities for critical and non\-critical jobs are set separately\.
+Priorities for critical and non-critical jobs are set separately.
 
-The `checkExclusiveLock` field is a flag to determine whether **Asset Processor** needs to check the source asset file for exclusive lock before processing the job\. **Asset Processor** will lock and unlock the source asset file to ensure it is not opened by another process\. This prevents premature processing of some source asset files that are opened for writing, but have zero bytes for longer than the modification threshold\. This will time out if the **Asset Processor** cannot get an exclusive lock\.
+The `checkExclusiveLock` field is a flag to determine whether **Asset Processor** needs to check the source asset file for exclusive lock before processing the job. **Asset Processor** will lock and unlock the source asset file to ensure it is not opened by another process. This prevents premature processing of some source asset files that are opened for writing, but have zero bytes for longer than the modification threshold. This will time out if the **Asset Processor** cannot get an exclusive lock.
 
-The `checkServer` field determines whether **Asset Processor** needs to check the server for the outputs of this job before starting to process the job locally\. If **Asset Processor** is running in server mode, then this is used to determine whether it needs to store the outputs of this job on the server\.
+The `checkServer` field determines whether **Asset Processor** needs to check the server for the outputs of this job before starting to process the job locally. If **Asset Processor** is running in server mode, then this is used to determine whether it needs to store the outputs of this job on the server.
 
-If the `failOnError` field is set to **True**, then all reported errors, asserts, and exceptions cause the job to fail, even if the result code is `ProcessJobResult_Success`\.
+If the `failOnError` field is set to **True**, then all reported errors, asserts, and exceptions cause the job to fail, even if the result code is `ProcessJobResult_Success`.
 
-The `setplatformidentifier` and `getplatformidentifier` methods set and retrieve the platform identifier such as `pc` or `android` for the job description\. It is the identifier of the platform from the `PlatformInfo` struct\.
+The `setplatformidentifier` and `getplatformidentifier` methods set and retrieve the platform identifier such as `pc` or `android` for the job description. It is the identifier of the platform from the `PlatformInfo` struct.
 
-**azlmbr\.asset\.builder\.JobDescriptor**
+**azlmbr.asset.builder.JobDescriptor**
 
 ```
 class azlmbr.asset.builder.JobDescriptor
@@ -139,7 +139,7 @@ class azlmbr.asset.builder.JobDescriptor
 
 **JobParameterMap**
 
-The `JobParameterMap` is a `Dictionary` of `Numbers` to `Strings`\. This is a map data structure that holds parameters that are passed into a job for `ProcessJob` requests\. These parameters can optionally be set during the create job function of the builder so that they are passed along to the `ProcessJobFunction`\. The values \(key and value\) are arbitrary and it is up to the builder on how to use them\.
+The `JobParameterMap` is a `Dictionary` of `Numbers` to `Strings`. This is a map data structure that holds parameters that are passed into a job for `ProcessJob` requests. These parameters can optionally be set during the create job function of the builder so that they are passed along to the `ProcessJobFunction`. The values (key and value) are arbitrary and it is up to the builder on how to use them.
 
 **Example:**
 
@@ -149,9 +149,9 @@ jobParameterMap = {1 : "MyValue", 2 : "Another Value"}
 
 **JobDependency**
 
-Job dependency information that the builder sends to the **Asset Processor**\.
+Job dependency information that the builder sends to the **Asset Processor**.
 
-**azlmbr\.asset\.builder\.JobDependency**
+**azlmbr.asset.builder.JobDependency**
 
 ```
 class azlmbr.asset.builder.JobDependency
@@ -163,7 +163,7 @@ class azlmbr.asset.builder.JobDependency
 
 **JobDependency Type**
 
-**azlmbr\.asset\.builder\.JobDependency Type**
+**azlmbr.asset.builder.JobDependency Type**
 
 ```
 # This implies that the dependent job should get processed by Asset Processor, if the fingerprint of job it depends on changes.
@@ -180,7 +180,7 @@ azlmbr.asset.builder.JobDependency_OrderOnce
 
 ## Example: Create jobs 
 
-This is a simple example of how the asset builder might create jobs when **Asset Processor** detects a new or changed source asset file in the watch folders of the registered pattern\.
+This is a simple example of how the asset builder might create jobs when **Asset Processor** detects a new or changed source asset file in the watch folders of the registered pattern.
 
 ```
 # Creates a single job to compile for each platform

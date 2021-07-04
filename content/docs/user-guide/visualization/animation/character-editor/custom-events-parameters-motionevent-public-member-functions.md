@@ -5,7 +5,7 @@ title: MotionEvent Public Member Functions
 
 {{< preview-migrated >}}
 
-The `MotionEvent` class includes the following public member functions\.
+The `MotionEvent` class includes the following public member functions.
 
 **Topics**
 + [MotionEvent](#char-animation-editor-custom-events-parameters-motionevent)
@@ -21,7 +21,7 @@ The `MotionEvent` class includes the following public member functions\.
 
 ## MotionEvent 
 
-You can use the `MotionEvent` function to trigger an event at a specific point in time \(a tick event\) or during a specified time range \(a range event\)\. To specify the data that the event emits, you can use pointers or datasets\.
+You can use the `MotionEvent` function to trigger an event at a specific point in time (a tick event) or during a specified time range (a range event). To specify the data that the event emits, you can use pointers or datasets.
 
 **Syntax**
 
@@ -29,15 +29,15 @@ You can use the `MotionEvent` function to trigger an event at a specific point i
 MotionEvent (float timeValue, EventDataPtr &&data)
 ```
 
-Creates a tick event and uses a data pointer\.
+Creates a tick event and uses a data pointer.
 
 
 ****
 
 | Parameter | Description |
 | --- | --- |
-| timeValue | The time value, in seconds, when the motion event should occur\. |
-| data | The values to emit when the event is triggered\. |
+| timeValue | The time value, in seconds, when the motion event should occur. |
+| data | The values to emit when the event is triggered. |
 
 **Syntax**
 
@@ -45,16 +45,16 @@ Creates a tick event and uses a data pointer\.
 MotionEvent (float startTimeValue, float endTimeValue, EventDataPtr &&data)
 ```
 
-Creates a ranged event and uses a data pointer\.
+Creates a ranged event and uses a data pointer.
 
 
 ****
 
 | `Parameter` | Description |
 | --- | --- |
-| startTimeValue | The start time value, in seconds, when the motion event should start\. |
-| endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. |
-| data | The values to emit when the event is triggered\. |
+| startTimeValue | The start time value, in seconds, when the motion event should start. |
+| endTimeValue | The end time value, in seconds, when the motion event should end. When equal to the start time value, a start event is triggered, but no end event occurs. |
+| data | The values to emit when the event is triggered. |
 
 **Syntax**
 
@@ -62,15 +62,15 @@ Creates a ranged event and uses a data pointer\.
 MotionEvent (float timeValue, EventDataSet &&datas)
 ```
 
-Creates a tick event and uses a dataset\.
+Creates a tick event and uses a dataset.
 
 
 ****
 
 | Parameter | Description |
 | --- | --- |
-| timeValue | The time value, in seconds, when the motion event should occur\. |
-| datas | The values to emit when the event is triggered\. |
+| timeValue | The time value, in seconds, when the motion event should occur. |
+| datas | The values to emit when the event is triggered. |
 
 **Syntax**
 
@@ -78,20 +78,20 @@ Creates a tick event and uses a dataset\.
 MotionEvent (float startTimeValue, float endTimeValue, EventDataSet &&datas)
 ```
 
-Creates a ranged event and uses a dataset\.
+Creates a ranged event and uses a dataset.
 
 
 ****
 
 | `Parameter` | Description |
 | --- | --- |
-| startTimeValue | The start time value, in seconds, when the motion event should start\. |
-| endTimeValue | The end time value, in seconds, when the motion event should end\. When equal to the start time value, a start event is triggered, but no end event occurs\. |
-| datas | The values to emit when the event is triggered\. |
+| startTimeValue | The start time value, in seconds, when the motion event should start. |
+| endTimeValue | The end time value, in seconds, when the motion event should end. When equal to the start time value, a start event is triggered, but no end event occurs. |
+| datas | The values to emit when the event is triggered. |
 
 ## SetStartTime 
 
-Sets the start time value of the event, which is when the event should be processed\.
+Sets the start time value of the event, which is when the event should be processed.
 
 **Syntax**
 
@@ -101,7 +101,7 @@ void SetStartTime (float timeValue)
 
 ## SetEndTime 
 
-Sets the end time value of the event, which is when the event should be processed\.
+Sets the end time value of the event, which is when the event should be processed.
 
 **Syntax**
 
@@ -111,7 +111,7 @@ void SetEndTime (float timeValue)
 
 ## GetStartTime 
 
-Gets the start time value of this event, which is when the event should be executed\.
+Gets the start time value of this event, which is when the event should be executed.
 
 **Syntax**
 
@@ -121,7 +121,7 @@ float GetStartTime () const
 
 ## GetEndTime 
 
-Gets the end time value of this event, which is when the event should stop\.
+Gets the end time value of this event, which is when the event should stop.
 
 **Syntax**
 
@@ -131,7 +131,7 @@ float GetEndTime () const
 
 ## GetIsTickEvent 
 
-Checks whether this is a tick event\.
+Checks whether this is a tick event.
 
 **Syntax**
 
@@ -141,7 +141,7 @@ bool GetIsTickEvent () const
 
 ## ConvertToTickEvent 
 
-Converts this event into a tick event\.
+Converts this event into a tick event.
 
 **Syntax**
 
@@ -151,7 +151,7 @@ void ConvertToTickEvent ()
 
 ## GetIsSyncEvent 
 
-Checks whether this event is a sync event\.
+Checks whether this event is a sync event.
 
 **Syntax**
 
@@ -161,7 +161,7 @@ bool GetIsSyncEvent () const
 
 ## SetIsSyncEvent 
 
-Specifies whether this event is a sync event\.
+Specifies whether this event is a sync event.
 
 **Syntax**
 
@@ -171,7 +171,7 @@ void SetIsSyncEvent (bool newValue)
 
 ## HashForSyncing 
 
-Creates a hash on the sync track of a motion\.
+Creates a hash on the sync track of a motion.
 
 **Syntax**
 
