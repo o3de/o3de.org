@@ -71,10 +71,11 @@ $font-family-headers: "Open Sans"
 $o3de-black: #000
 $o3de-white: #fff
 $o3de-lightgray: #ddd
-$o3de-blue: #1E71EB
+$o3de-blue: #1E252F
 $o3de-darkblue: #011C46
 $o3de-mediumblue: #054CBA
 $o3de-lightblue: #D2EDFF
+$o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
 
 // General 
@@ -113,9 +114,9 @@ h1, h2, h3, h4, h5, h6
   margin-top: 1.8rem
 
 a 
-  color: $o3de-blue
+  color: $o3de-mediumblue
   &:hover, &:active 
-    color: $o3de-mediumblue
+    color: $o3de-lightblue
     text-decoration: none
 
 .btn-xl-block
@@ -434,15 +435,16 @@ $width: '59vw';
 
 // layouts/footer.html 
 
-.footer 
-  background-image: url(/img/home/footer-bg.png)
+.footer
+  // background-image: url(/img/home/footer-bg.png)
   background-size: cover
   background-color: $o3de-darkblue
-  .a 
-    &:hover, &:active 
-      color: $o3de-darkblue
+  .a
+    &:link
+      color: $o3de-blue-highlight
+    &:hover, &:active
+      color: $o3de-blue-highlight
       text-decoration: none
-
 // layouts/social-buttons.html 
 
 .social 
