@@ -214,19 +214,24 @@ $width: '59vw';
       background-position: right
 
 .home-hero 
-  background-image: url('/img/home/hero.jpg')
   background-size: cover
-  height: 600px
+  background-position: 70% 100%
+  max-height: 800px
   width: 100%
+  
+  @include media-breakpoint-down(xxl)
+    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1600x500.jpg')
+
+  @include media-breakpoint-up(xxl)
+    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-3452x1080-%402x.jpg')
     
 .hero-inner 
-  margin-bottom: 0rem
+  margin-bottom: 0
   background-color: transparent
   color: $o3de-white
-  margin-right: 24px
-  margin-left: 124px
   .desc
-    text-shadow: 8px 8px 8px #000
+    font-weight: 300
+    line-height: 1.5rem
 
 .learnmore-cta 
   background-color: $o3de-green
@@ -235,9 +240,7 @@ $width: '59vw';
 
 .download-cta 
   background-color: $o3de-blue
-  width: 150px
-  height: 36px
-  padding: 0
+  padding: 4px 16px
   &:hover 
     background-color: darken(#1E71EB, 10%)
 
@@ -292,28 +295,44 @@ $width: '59vw';
 
 // layouts/partials/home/features.html 
 
+.features-outer
+  background-color: #111
+
 .home-features 
-  background-color: #111111
   color: $o3de-white
-  margin-top: -34px
-  padding-top: 72px
-  padding-bottom: 72px
+  width: 100%
+  max-width: 1600px
+  margin: 0 auto
+  padding: 72px 0
+
+.feature-row
+  position: relative
+  display: block
+  padding: 32px 0
 
 .features-img
-  width: 100%
-  margin-left: -15px
+  left: 0
+  right: 50%
+  top: 0
+  bottom: 0
+  position: absolute;
+  margin-right: 110px
+  background-position: 50% 0
+  background-size: cover
+  
+.features-img-reverse
+  left: 50%
+  right: 0
+  top: 0
+  bottom: 0
+  position: absolute;
+  margin-left: 110px
+  background-position: 50% 0
+  background-size: cover
 
 .features-text
-  padding-right: 280px
-  padding-left: 52px
-
-.features-img-reverse
-  width: 100%
-  margin-left: 15px
-
-.features-text-reverse
-  padding-left: 280px
-  padding-right: 52px
+  h2
+    margin: 0 0 24px
 
 .feature
   margin-top: 2rem
