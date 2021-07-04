@@ -34,9 +34,9 @@ These are the features that NVIDIA Blast provides:
 
 See the following topics for detailed information about NVIDIA Blast\.
 
-[Blast Family component](/docs/user-guide/components/blast-family.md) \- Blast Family component reference\.
+[Blast Family component](/docs/user-guide/components/reference/destruction/blast-family/) \- Blast Family component reference\.
 
-[Blast Family Mesh Data component](/docs/user-guide/components/blast-family-mesh-data.md) \- Blast Family Mesh Data component reference\.
+[Blast Family Mesh Data component](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) \- Blast Family Mesh Data component reference\.
 
 [Install NVIDIA Blast plug\-ins](/docs/userguide/nvidia/blast/install-houdini-plugin#nvidia-blast-plugin-install) \- Install the NVIDIA Blast plug\-ins and Houdini Digital Assets\.
 

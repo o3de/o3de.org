@@ -54,7 +54,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
    1. Select the cloth mesh node from the drop\-down list\.
 ![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-mesh.png)
 
-   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/components/cloth.md)\.
+   1. Adjust cloth properties to obtain the desired cloth behavior\. For more information, see [Cloth Component](/docs/user-guide/components/reference/physx/cloth/)\.
 
 ## View the Cloth Simulation 
 
