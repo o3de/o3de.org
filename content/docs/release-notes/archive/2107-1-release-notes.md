@@ -112,10 +112,6 @@ There's a lot of additional updates we're bringing to you with this initial rele
 * Networking 2.0 implemented with TCP/UDP transport extended with data abstracted generation
 * Implemented encryption and compression into network stack
 
-### Script Canvas
-
-* 
-
 ## 3rd Party Gems
 
 **Looking for support for your favorite third-party libraries and cloud service SDKs?** Here's what's been added in 2107.1.
