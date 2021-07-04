@@ -4,7 +4,6 @@ about: Report a bug you experienced with the O3DE website.
 title: "[BUG][WEBSITE]"
 labels: bug, needs-triage, website
 assignees: ''
-
 ---
 
 ## Describe the bug
