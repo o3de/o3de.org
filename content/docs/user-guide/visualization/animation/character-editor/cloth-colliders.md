@@ -5,9 +5,6 @@ title: Add Cloth Colliders to actors
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
 
 Applying cloth simulation to actors adds realism and dynamism in their every movement. Adding cloth colliders greatly enhances the effect. Cloth colliders can prevent cloth from penetrating into the meshes of the actor. To add cloth colliders, you must enable the NVIDIA Cloth Gem.
 

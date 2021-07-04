@@ -7,9 +7,6 @@ weight: 700
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
 
  To use the visual debugger for NVIDIA Blast, enable the `BLAST_DEBUG` console variable.
 
