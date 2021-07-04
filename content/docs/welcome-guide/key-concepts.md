@@ -63,10 +63,6 @@ There are two primary directories to be aware of with O3DE: The `3rdParty` direc
   * `Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration.
   * `Templates` contains the default templates for Gems and Projects.
 
-## Project Runtime Structure
-
-
-
 ## Working with Gems
 
 O3DE is a sandbox of different bits, provided by Gems, that you can combine in your project. You only need to include the Gems that provide the features and functionality that your project requires. When you need to change or extend the behavior of something, you can work with only the Gem that contains the functionality that you want to change. This modular approach allows the community to provide packaged features and assets to extend O3DE, and even provide alternate solutions for entire systems. Suppose you'd like to use a an unsupported file format, an alternate scripting language, or that you need a version of a system that has some cutting-edge experimental features. You can use solutions that O3DE users have provided via their own Gems, or you can create a Gem that provides that support and share it with other O3DE users. By focusing on modularity, you can safely experiment with different feature changes without risking progress and unintended regression on your project. Asset collections, code samples, components, libraries, tools, and even entire game projects can be distributed as Gems.

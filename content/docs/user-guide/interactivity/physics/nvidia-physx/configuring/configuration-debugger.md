@@ -20,7 +20,7 @@ You must have a NVIDIA account to download the PVD\. If you don't already have a
 
 1. After you install the application, open the PVD\. This application must be running if you want to record data from O3DE Editor\.
 
-1. In O3DE Editor, open a level or create one that has entities with PhysX components\. For example, you can create a dynamic entity that falls\. For more information, see [Creating a Dynamic PhysX Entity](/docs/userguide/components/physx-rigid-body-physics#example-creating-dynamic-game-entity)\.
+1. In O3DE Editor, open a level or create one that has entities with PhysX components\. For example, you can create a dynamic entity that falls\. For more information, see [Creating a Dynamic PhysX Entity](/docs/user-guide/components/reference/physx/rigid-body-physics#example-creating-dynamic-game-entity)\.
 
 1. In O3DE Editor, choose **Tools**, **PhysX Configuration**\.
 
