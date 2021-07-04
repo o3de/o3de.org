@@ -58,7 +58,7 @@ Use CMake to create the Visual Studio project for your O3DE project.
 
     ```cmd
     cd C:\o3de-projects\MyProject
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
     ```
 
     {{< caution >}}
