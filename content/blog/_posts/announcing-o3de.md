@@ -4,6 +4,7 @@ date: 2021-07-03
 slug: welcome-post
 author: Doug Erickson
 blog_img: "/images/blog/announcement_thumbnail.jpg"
+full_img: "/images/blog/atom_showcase.png"
 ---
 
 ## Announcing Open 3D Engine

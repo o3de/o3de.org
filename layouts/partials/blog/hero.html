@@ -1,13 +1,16 @@
 {{ $isPost := ne .File.BaseFileName "_index" }}
-  <div class="container p-4 mb-3">
+  <div class="container blog-post p-4 mb-3">
       <h1>
         {{ .Title }}
       </h1>
       {{ if $isPost }}
-      {{ $date := dateFormat "January 2, 2006" .Date }}
-      <h2>
-        {{ .Params.author }} | {{ $date }}
-      </h2>
+        {{ $date := dateFormat "January 2, 2006" .Date }}
+        <h4>
+          <span class="author">{{ .Params.author }}</span> | <span class="date">{{ $date }}</span>
+        </h4>
+        <div class="blog-hero-image">
+          <img src="{{ .Params.full_img }}"/>
+        </div>
       {{ end }}
   </div>
   
