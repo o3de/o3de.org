@@ -3,7 +3,7 @@ linkTitle: The Inspector
 title: Introduction the the Kythera AI Inspector
 description: Overview of the browser-based debugger and behavior tree authoring tool, the Kythera AI Inspector
 weight: 700
-toc: 100
+toc: true
 ---
 
 **The Inspector** is the primary tool for configuring and debugging Kythera AI. It allows you to configure aspects of Kythera and monitor the state of your AI agents as the game is running.
