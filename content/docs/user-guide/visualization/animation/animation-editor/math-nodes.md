@@ -16,7 +16,7 @@ O3DE's **Animation Editor** features a set of math nodes that perform math opera
 
 ## Rotation Math 2 Node 
 
-With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap#quarternion).
+With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/user-guide/appendix/glossary#quarternion).
 
 This node multiplies the input rotation and the specified **Default Value** to express an output rotation. The **Default Value** specifies the rotation of an unconnected input. This rotation value is expressed in Euler angle degrees (rotation about the X, Y, and Z axes).
 

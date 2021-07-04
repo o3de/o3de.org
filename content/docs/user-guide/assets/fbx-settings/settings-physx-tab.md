@@ -97,7 +97,7 @@ When enabled, 16-bit triangle or polygon indices are generated. Otherwise, 32-bi
 Checks and removes triangles that are have a smaller area than the area value specified in **Area Test Epsilon**.
 
 **Quantize Input**
-Quantizes the input vertices using [k-means clustering](/docs/userguide/ly-glos-chap#kmeansclustering).
+Quantizes the input vertices using [k-means clustering](/docs/user-guide/appendix/glossary#kmeansclustering).
 
 **Use Plane Shifting**
 Enables plane shifting vertex limit algorithm. For more information, see the [ NVIDIA PhysX Geometry documentation](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/Geometry.html).
