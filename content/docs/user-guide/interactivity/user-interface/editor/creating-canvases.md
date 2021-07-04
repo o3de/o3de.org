@@ -6,17 +6,17 @@ title: Working with UI Canvases
 
 {{< preview-migrated >}}
 
-The **UI Editor** uses the concept of a canvas as an invisible backdrop for your game user interface elements\. Once you create a canvas, you can add elements such as images, text, and buttons\.
+The **UI Editor** uses the concept of a canvas as an invisible backdrop for your game user interface elements. Once you create a canvas, you can add elements such as images, text, and buttons.
 
 **To create a UI canvas**
 
-1. In O3DE Editor, click **Tools**, **UI Editor**\.
+1. In O3DE Editor, click **Tools**, **UI Editor**.
 
-   The **UI Editor** automatically creates an empty canvas\.
+   The **UI Editor** automatically creates an empty canvas.
 
-1. In the **UI Editor**, add [elements](/docs/user-guide/interactivity/user-interface/editor/elements.md), [components](/docs/user-guide/interactivity/user-interface/editor/components.md), [slices](/docs/user-guide/interactivity/user-interface/editor/working-slices.md), and [prefabs](/docs/userguide/ui/editor/prefabs.md)\.
+1. In the **UI Editor**, add [elements](/docs/user-guide/interactivity/user-interface/editor/elements.md), [components](/docs/user-guide/interactivity/user-interface/editor/components.md), [slices](/docs/user-guide/interactivity/user-interface/editor/working-slices.md), and [prefabs](/docs/userguide/ui/editor/prefabs.md).
 
-1. Click **File**, **Save As**\. Name the canvas with a `.uicanvas` file extension, and then click **Save**\.
+1. Click **File**, **Save As**. Name the canvas with a `.uicanvas` file extension, and then click **Save**.
 
 **Topics**
 + [Navigating the Viewport](/docs/user-guide/interactivity/user-interface/editor/navigating-viewport.md)
@@ -28,7 +28,7 @@ The **UI Editor** uses the concept of a canvas as an invisible backdrop for your
 + [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/editor/texture-atlases.md)
 + [Debugging UI Canvases](/docs/user-guide/interactivity/user-interface/editor/debugging-ui-canvases.md)
 
-You can open multiple canvases in the **UI Editor**\. For each open canvas, a tab appears in the tab bar\. The active canvas is highlighted in the tab bar\. Its content is displayed in the viewport and its elements and properties are displayed in the hierarchy and properties panes\.
+You can open multiple canvases in the **UI Editor**. For each open canvas, a tab appears in the tab bar. The active canvas is highlighted in the tab bar. Its content is displayed in the viewport and its elements and properties are displayed in the hierarchy and properties panes.
 
 From the **UI Editor**'s **File** menu, in addition to the basic open, close, and save functionality, you can also do the following:
 + Save all open canvases

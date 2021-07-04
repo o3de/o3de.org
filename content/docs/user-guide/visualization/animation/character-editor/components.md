@@ -5,7 +5,7 @@ title: 'Animation Editor Components'
 
 {{< preview-migrated >}}
 
-You can add the following **Animation Editor** components to an entity\. You can then specify the actor file, animation graph file, the motion file, or attachment\.
+You can add the following **Animation Editor** components to an entity. You can then specify the actor file, animation graph file, the motion file, or attachment.
 
 For more information, see the following components:
 + **[Actor](/docs/user-guide/components/animation/actor/)**
@@ -13,4 +13,4 @@ For more information, see the following components:
 + **[Attachment](/docs/user-guide/components/animation/attachment/)**
 + **[Simple Motion](/docs/user-guide/components/reference/animation/simple-motion/)**
 
-For more information about adding a component to an entity, see [Adding Components to an Entity](/docs/userguide/components/working-adding.md)\.
+For more information about adding a component to an entity, see [Adding Components to an Entity](/docs/userguide/components/working-adding.md).

@@ -5,7 +5,7 @@ title: Creating Custom Motion Events and Parameters Using C++
 
 {{< preview-migrated >}}
 
-You can author custom event classes with custom parameters and reflect them to the edit context for use in Animation Editor\. By creating predefined motion events with known parameters, you minimize the performance impact of complex parameters and reduce the risk of human error\.
+You can author custom event classes with custom parameters and reflect them to the edit context for use in Animation Editor. By creating predefined motion events with known parameters, you minimize the performance impact of complex parameters and reduce the risk of human error.
 
 In Animation Editor, users can perform the following tasks with the events and parameters that you create:
 + Choose the events to add to motions

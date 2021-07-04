@@ -7,44 +7,44 @@ title: O3DE UI breadcrumb navigation component
 
 {{< preview-migrated >}}
 
-Use the breadcrumbs component to enable users to track their position along a hierarchical path\. Breadcrumbs include a path from the home page to the user's current location\. The points in the breadcrumbs refer to a directory or node\. Users can easily move positions in the path by selecting one of the breadcrumbs\.
+Use the breadcrumbs component to enable users to track their position along a hierarchical path. Breadcrumbs include a path from the home page to the user's current location. The points in the breadcrumbs refer to a directory or node. Users can easily move positions in the path by selecting one of the breadcrumbs.
 
-For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the O3DE **Animation Editor**\.
+For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the O3DE **Animation Editor**.
 
 ![\[component breadcrumbs navigation example\]](/images/tools-ui/component-breadcrumbs-navigation-example.gif)
 
-In an **Anim Graph** breadcrumb, the graph's name is displayed as the top level of navigation\. Each node that you open appears as a clickable hyperlink\.
+In an **Anim Graph** breadcrumb, the graph's name is displayed as the top level of navigation. Each node that you open appears as a clickable hyperlink.
 
 ## Anatomy of the breadcrumbs widget<a name="breadcrumbs-anatomy"></a>
 
-Breadcrumbs have several customization options\. The standard, horizontal layout includes the following features:
+Breadcrumbs have several customization options. The standard, horizontal layout includes the following features:
 
 ![\[component breadcrumbs anatomy\]](/images/tools-ui/component-breadcrumbs-anatomy.png)
 
 1.  **Path history navigation**
 
-   \(Optional\) Enable users to navigate backwards and forwards in their history of breadcrumb paths selections\. For example, if you browse to, or choose, a new path in the list, then choose the **back** button, you will navigate back to the previous breadcrumb position\.
+   \(Optional\) Enable users to navigate backwards and forwards in their history of breadcrumb paths selections. For example, if you browse to, or choose, a new path in the list, then choose the **back** button, you will navigate back to the previous breadcrumb position.
 
 1.  **Breadcrumb trail**
 
-   Shows the full path from root to tail\. Users can select any point in the path to set a new path\. Previously selected paths are automatically added to the navigational history\.
+   Shows the full path from root to tail. Users can select any point in the path to set a new path. Previously selected paths are automatically added to the navigational history.
 
 1.  **Browse button**
 
-   \(Optional\) Technically not part of the breadcrumb\. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path\. You push the new path to your breadcrumbs widget in your browse button handler code\.
+   \(Optional\) Technically not part of the breadcrumb. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path. You push the new path to your breadcrumbs widget in your browse button handler code.
 ![\[component breadcrumbs truncation menu\]](/images/tools-ui/component-breadcrumbs-truncation-menu.png)
 
 1.  **Truncation menu**
 
-   If the entire breadcrumb path cannot fit in the allotted space, the points on the path that don't fit are stacked in a dropdown menu\. Users can select these points from the truncation menu\.
+   If the entire breadcrumb path cannot fit in the allotted space, the points on the path that don't fit are stacked in a dropdown menu. Users can select these points from the truncation menu.
 
 ## Basic breadcrumb<a name="breadcrumbs-basic"></a>
 
 ![\[component breadcrumbs basic\]](/images/tools-ui/component-breadcrumbs-basic.png)
 
-The simplest breadcrumb example includes the **breadcrumbs** widget and an optional, initial path\. Your code can react to path changes by connecting to the `pathChanged` signal\. Alternatively, you can call `pushPath` to set the breadcrumb state to match the current state of your project\.
+The simplest breadcrumb example includes the **breadcrumbs** widget and an optional, initial path. Your code can react to path changes by connecting to the `pathChanged` signal. Alternatively, you can call `pushPath` to set the breadcrumb state to match the current state of your project.
 
-When passing a path QString into `pushPath`, use either forward slash \('/'\) or backward slash \('\\\\'\) as a path separator\.
+When passing a path QString into `pushPath`, use either forward slash \('/'\) or backward slash \('\\\\'\) as a path separator.
 
  **Example**
 
@@ -73,9 +73,9 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 
 ![\[component breadcrumbs navigation and browse\]](/images/tools-ui/component-breadcrumbs-navigation-and-browse.png)
 
-In some scenarios, it's useful for users to be able to navigate back and forth in their navigation history\. In addition, you might want to offer a browse button to select a new path\.
+In some scenarios, it's useful for users to be able to navigate back and forth in their navigation history. In addition, you might want to offer a browse button to select a new path.
 
-In the following example, `createBackForwardToolBar` provides the forward and backward navigation arrows, and a `NavigationButton::Browse` from AzQtComponents provides a file browser button\.
+In the following example, `createBackForwardToolBar` provides the forward and backward navigation arrows, and a `NavigationButton::Browse` from AzQtComponents provides a file browser button.
 
  **Example**
 

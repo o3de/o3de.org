@@ -5,39 +5,39 @@ title: AZ::Interface<T>
 
 {{< preview-migrated >}}
 
-Use the `AZ::Interface<T>` template class to create global or application lifetime message request buses that support systems of `type T`\. This template class is used to implement access for registered singletons across module boundaries\. In this case, a singleton is an instance of a type that inherits `AZ::Interface::Registrar`\. Once the singleton instance is registered, you can access the environment variables through code implemented on the instance\. You can also make changes to the envirovnment variables that can be viewed by other parts of your game's components\.
+Use the `AZ::Interface<T>` template class to create global or application lifetime message request buses that support systems of `type T`. This template class is used to implement access for registered singletons across module boundaries. In this case, a singleton is an instance of a type that inherits `AZ::Interface::Registrar`. Once the singleton instance is registered, you can access the environment variables through code implemented on the instance. You can also make changes to the envirovnment variables that can be viewed by other parts of your game's components.
 
-Commonly, `AZ::Interface` should be used when you want to invoke methods on a core system like the renderer or the console from another component\.
+Commonly, `AZ::Interface` should be used when you want to invoke methods on a core system like the renderer or the console from another component.
 
-A system is an instance of a class that inherits the `Registrar` method from `AZ::Interface`\. Systems that are registered with `AZ::Interface` are designed to replace global or application lifetime request buses that are currently implemented using EBus\. There are a number of benefits to this new system, including vastly improved performance and compatibility with IDE standard code autocomplete functionality\.
+A system is an instance of a class that inherits the `Registrar` method from `AZ::Interface`. Systems that are registered with `AZ::Interface` are designed to replace global or application lifetime request buses that are currently implemented using EBus. There are a number of benefits to this new system, including vastly improved performance and compatibility with IDE standard code autocomplete functionality.
 
 **Note**
-*Systems*, in this usage, are key parts of O3DE. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system\. With `AZ::Interface`, you access these systems with this simplified syntax:
+*Systems*, in this usage, are key parts of O3DE. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system. With `AZ::Interface`, you access these systems with this simplified syntax:
  `AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
 For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
-Likewise, you can use this syntax to invoke behaviors across systems for console functors \(cfuncs\) declared with [AZ::Console](/docs/userguide/az-console.md)\.
+Likewise, you can use this syntax to invoke behaviors across systems for console functors \(cfuncs\) declared with [AZ::Console](/docs/userguide/az-console.md).
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
-+ Improved performance\. Calls to the singleton are a virtual function call that can often even be de\-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call\.
-+ Improved debuggability\. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within O3DE.
++ Improved performance. Calls to the singleton are a virtual function call that can often even be de\-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call.
++ Improved debuggability. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within O3DE.
 + Compatibility with code autocomplete in Visual Studio.
 
 `AZ::Interface` is defined as a C\+\+ template \(`template <T>`\) in the following header: `%INSTALL-ROOT%dev\Code\Framework\AzCore\AzCore\Interface\Interface.h`
 
 **Using AZ::Interface**
 This is the process for registering a singleton thread for a system with `AZ::Interface`
-+ Obtain a raw interface pointer to a `type T` class instance for registration\. You can assume that the registered system will outlive any cached references\.
-+ Register the system with the interface at initialization time by calling `Register()` on the reference to it\.
-+ Wait\. If registration is successful, an `AZ::Environment` \(which contains the environment variables for your game\) is successfully attached and is ready to receive messages to update the environment variables\.
++ Obtain a raw interface pointer to a `type T` class instance for registration. You can assume that the registered system will outlive any cached references.
++ Register the system with the interface at initialization time by calling `Register()` on the reference to it.
++ Wait. If registration is successful, an `AZ::Environment` \(which contains the environment variables for your game\) is successfully attached and is ready to receive messages to update the environment variables.
 
-To deregister a system, call `Unregister()` on `AZ::Interface`\.
+To deregister a system, call `Unregister()` on `AZ::Interface`.
 
 `AZ::Interface` defines the following static methods:
-+ `static void Register(T* type)` - Registers an instance of `type T` to `AZ::Interface`\.
-+ `static void Unregister(T* type)` - Deregisters an instance of `type T` from `AZ::Interface`\.
-+ `static T* Get() `- Gets a reference to an instance of `type T` that is registered with `AZ::Interface`\.
++ `static void Register(T* type)` - Registers an instance of `type T` to `AZ::Interface`.
++ `static void Unregister(T* type)` - Deregisters an instance of `type T` from `AZ::Interface`.
++ `static T* Get() `- Gets a reference to an instance of `type T` that is registered with `AZ::Interface`.
 
-It also defines a helper class, `Registrar`, that enables registration and deregistration from within the `AZ::Interface` class constructor and destructor, respectively\.
+It also defines a helper class, `Registrar`, that enables registration and deregistration from within the `AZ::Interface` class constructor and destructor, respectively.
 
 ```
 /**
@@ -60,9 +60,9 @@ It also defines a helper class, `Registrar`, that enables registration and dereg
         };--
 ```
 
-In most cases, you use `Registrar` instead of implementing registration directly\.
+In most cases, you use `Registrar` instead of implementing registration directly.
 
-Here's an example of using `AZ::Interface::Registrar` to register a system with a single method, `DoSomething()`, defined for it\.
+Here's an example of using `AZ::Interface::Registrar` to register a system with a single method, `DoSomething()`, defined for it.
 
 ```
 class ISystem
@@ -90,17 +90,17 @@ if (ISystem* system = AZ::Interface<ISystem>::Get())
 
 **Important**
 The restrictions for `AZ::Interface` are similar to that of a single\-handler EBus:
-Use `AZ::Interface` on long\-lived instances only, such as instances with global variables that live across the lifetime of a module or application\.
-Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, you can only register/unregister after the `AZ::Environment` instance is attached after successful registration\.
-`AZ::Interface` works with EBus, and you can soft\-migrate EBus code by providing an `AZ::Interface<T>` handler for the same set of requests\.
-***Thread safety is your responsibility***\. Using `AZ::Interface<T>`does not make threads safe\.
+Use `AZ::Interface` on long\-lived instances only, such as instances with global variables that live across the lifetime of a module or application.
+Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, you can only register/unregister after the `AZ::Environment` instance is attached after successful registration.
+`AZ::Interface` works with EBus, and you can soft\-migrate EBus code by providing an `AZ::Interface<T>` handler for the same set of requests.
+***Thread safety is your responsibility***. Using `AZ::Interface<T>`does not make threads safe.
 
-**Vs\. AZ::Event**
-`AZ::Event` is a publish/subscribe \(pub/sub\) event handler that can be used when you want to subscribe to notifications from another component on the same thread\. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console\.
+**Vs. AZ::Event**
+`AZ::Event` is a publish/subscribe \(pub/sub\) event handler that can be used when you want to subscribe to notifications from another component on the same thread. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console.
 
 ## Converting from an EBus implementation 
 
-Here is an example of converting a global request bus to `AZ::Interface<T>`\.
+Here is an example of converting a global request bus to `AZ::Interface<T>`.
 
 **Example Original original EBus baseline**
 
@@ -134,11 +134,11 @@ EBusRequestsBus::Broadcast(&EBusRequests::Request, 1);
 
 **Example EBus implementation converted to use AZ::Interface**
 To convert from all\-in EBus usage to a global request bus that uses `AZ::Interface` but can still interoperate with Script Canvas, you must make a few changes:
-+ Create your pure virtual interface without any EBus code\.
++ Create your pure virtual interface without any EBus code.
 + Create an EBus wrapper that inherits from `AZ::EBusTraits`, and declare the EBus as `AZ::EBus<{your-interface-class-name}, {your-ebus-wrapper-name}>.`
 + Create your implementation of your interface, inherit from your EBus wrapper handler, and do the following:
-  + Call both `Register()` and `BusConnect()` in your class constructor\.
-  + Call both `Unregister()` and `BusDisconnect()` in your class destructor\.
+  + Call both `Register()` and `BusConnect()` in your class constructor.
+  + Call both `Unregister()` and `BusDisconnect()` in your class destructor.
 
 ```
 // Our pure-virtual interface only
@@ -186,7 +186,7 @@ AZ::Interface<IRequests>::Get()->Request(1);
 ```
 
 **Example**
-If you don't require interoperation with Script Canvas, you can avoid using EBus entirely, as seen in this example\.
+If you don't require interoperation with Script Canvas, you can avoid using EBus entirely, as seen in this example.
 
 ```
 // Our pure-virtual interface only
@@ -222,11 +222,11 @@ AZ::Interface<IRequests>::Get()->Request(1);
 
 ## Unit testing 
 
-The `AZ::Interface` system includes a number of unit tests to validate correct behavior\.
+The `AZ::Interface` system includes a number of unit tests to validate correct behavior.
 
 To execute the unit tests, the following command\-line arguments can be provided to the `AzTestRunner`:
 
-%INSTALL\-ROOT%\\dev\\Bin64vc141\.Test\\AzCoreTests\.dll AzRunUnitTests \-\-pause\-on\-completion \-\-gtest\_break\_on\_failure \-\-gtest\_filter=InterfaceTest\*
+%INSTALL\-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunUnitTests \-\-pause\-on\-completion \-\-gtest\_break\_on\_failure \-\-gtest\_filter=InterfaceTest\*
 
 You should see unit testing output like this:
 

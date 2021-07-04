@@ -34,11 +34,11 @@ weight: 800
   + [Options](#asset-bundler-command-line-reference-bundleseed-options)
   + [Examples](#asset-bundler-command-line-reference-bundleseed-examples)
 
- The Open 3D Engine Asset Bundler is driven by a command\-line tool called `AssetBundlerBatch`\. This tool manages seed lists, asset lists, comparisons, and asset bundles\. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor\. Before running the Asset Bundler, make sure that you:
-+  Enable each platform assets should be bundled for\. Enabled platforms are managed by editing the `dev\AssetProcessorPlatformConfig.ini` file in your project\.
-+ Run the Asset Processor to ensure that assets and their metadata are up to date\.
+ The Open 3D Engine Asset Bundler is driven by a command\-line tool called `AssetBundlerBatch`. This tool manages seed lists, asset lists, comparisons, and asset bundles. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor. Before running the Asset Bundler, make sure that you:
++  Enable each platform assets should be bundled for. Enabled platforms are managed by editing the `dev\AssetProcessorPlatformConfig.ini` file in your project.
++ Run the Asset Processor to ensure that assets and their metadata are up to date.
 
-See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts.md) or [Glossary](/docs/user-guide/appendix/glossary.md) for definitions of terms used in this reference\.
+See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts.md) or [Glossary](/docs/user-guide/appendix/glossary.md) for definitions of terms used in this reference.
 
 ## General Use 
 
@@ -48,18 +48,18 @@ See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bund
 AssetBundlerBatch command --parameterWithArgs arg1,arg2 --flagParameter ...
 ```
 
- The `AssetBundlerBatch` executable is contained in the `dev\Bin64HostPlatform` folder of your project\.
+ The `AssetBundlerBatch` executable is contained in the `dev\Bin64HostPlatform` folder of your project.
 
 The elements in this example invocation break down to:
-+  `command` \- The command for the asset bundler to run\. Examples include `seeds` and `assetLists`\.
-+  `--parameterWithArgs` \- An argument which takes parameters\. If a parameter can take more than one argument, you can either separate arguments with a `,` character without using whitespace, or by giving the parameter multiple times:
++  `command` \- The command for the asset bundler to run. Examples include `seeds` and `assetLists`.
++  `--parameterWithArgs` \- An argument which takes parameters. If a parameter can take more than one argument, you can either separate arguments with a `,` character without using whitespace, or by giving the parameter multiple times:
   + `--parameterWithArgs arg1,arg2`
   + `--parameterWithArgs="arg1,arg2"`
   + `--parameterWithArgs arg1 --parameterWithArgs arg2`
   + `--parameterWithArgs="arg1" --parameterWithArgs="arg2"`
 
-   These styles of writing parameters can be freely mixed and matched\. Note that not all arguments take more than one input parameter\.
-+  `--flagParameter` \- A flag which doesn't take any arguments\. Flags represent boolean values and turn features of the Asset Bundler on and off\.
+   These styles of writing parameters can be freely mixed and matched. Note that not all arguments take more than one input parameter.
++  `--flagParameter` \- A flag which doesn't take any arguments. Flags represent boolean values and turn features of the Asset Bundler on and off.
 
  An example command is:
 
@@ -71,76 +71,76 @@ Bin64vc141\AssetBundlerBatch seeds --seedFileList MyProject\AssetBundling\SeedLi
 
 ### Options 
 
- The options in this section are valid for all Asset Bundler subcommands\.
+ The options in this section are valid for all Asset Bundler subcommands.
 
 *\-\-help\-h*
-Without a command, prints out the help text for `AssetBundlerBatch`\. When used with a command, prints the help information for that command\.
+Without a command, prints out the help text for `AssetBundlerBatch`. When used with a command, prints the help information for that command.
  *Type:* Flag
  *Required:* No
 
 *\-\-verbose*
-Enables more detailed output messages\. `Error` and `Warning` messages will display the file name and line number which generated the message\. This flag is intended for use when looking at source files or generating output for debugging purposes\.
+Enables more detailed output messages. `Error` and `Warning` messages will display the file name and line number which generated the message. This flag is intended for use when looking at source files or generating output for debugging purposes.
  *Type:* Flag
  *Required:* No
 
 ## Seed lists \- `seeds` 
 
- The `seeds` command is used to manage seed lists, the first phase of the Asset Bundler workflow\. Seed list files have the `.seed` extension\.
+ The `seeds` command is used to manage seed lists, the first phase of the Asset Bundler workflow. Seed list files have the `.seed` extension.
 
-This command requires an existing cache of assets for each provided platform\. To make sure that the cache is up to date, update the supported platforms and run the Asset Processor\.
+This command requires an existing cache of assets for each provided platform. To make sure that the cache is up to date, update the supported platforms and run the Asset Processor.
 
 ### Options 
 
 **\-\-seedListFile**
- The seed list to modify and save\. This file must be writable and have the `.seed` extension\. The file is created if it doesn't exist\. The argument's value may be either an absolute or engine\-root\-relative path\.
+ The seed list to modify and save. This file must be writable and have the `.seed` extension. The file is created if it doesn't exist. The argument's value may be either an absolute or engine\-root\-relative path.
 *Type:* Single\-value argument
 *Required:* Yes
 
 **\-\-addSeed**
- Add seeds to the seed list for the `--platform` values\. If a seed does not exist for one of the specified platforms, then the invalid platforms are ignored\. The argument's value may be any number of cache\-relative paths to pre\-processed assets\.
- Although `.slice` files are built and present in the asset cache, they aren't product assets and don't generate dependencies when added to a seed list\. Avoid using them as seeds\.
+ Add seeds to the seed list for the `--platform` values. If a seed does not exist for one of the specified platforms, then the invalid platforms are ignored. The argument's value may be any number of cache\-relative paths to pre\-processed assets.
+ Although `.slice` files are built and present in the asset cache, they aren't product assets and don't generate dependencies when added to a seed list. Avoid using them as seeds.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-removeSeed**
- Remove the `--platform` values for the provided seeds\. If a seed is not available for a platform, it's ignored\. A seed is not completely removed from the seed list until it has no associated platforms\.
+ Remove the `--platform` values for the provided seeds. If a seed is not available for a platform, it's ignored. A seed is not completely removed from the seed list until it has no associated platforms.
 *Type: * Multi\-value argument
 *Required:* No
 
 **\-\-addPlatformToSeeds**
- Adds the `--platform` values to all seeds in the seed list\. If a seed isn't valid for a provided platform, a warning is printed indicating the affected seed and the platform which caused the warning\. The seed is updated for all other valid platforms\.
+ Adds the `--platform` values to all seeds in the seed list. If a seed isn't valid for a provided platform, a warning is printed indicating the affected seed and the platform which caused the warning. The seed is updated for all other valid platforms.
 *Type:* Flag
 *Required: No*
 
 **\-\-removePlatformFromSeeds**
- Removes the `--platform` values from all seeds in the seed list\. If this would remove all platforms for an existing seed, the seed is unchanged and a warning is printed\. Use `--removeSeed` to remove a seed from a seed list\.
+ Removes the `--platform` values from all seeds in the seed list. If this would remove all platforms for an existing seed, the seed is unchanged and a warning is printed. Use `--removeSeed` to remove a seed from a seed list.
 *Type:* Flag
 *Required:* No
 
 **\-\-print**
- Prints the contents of the seed list after performing operations\.
+ Prints the contents of the seed list after performing operations.
 *Type:* Flag
 *Required:* No
 
 **\-\-platform**
- The platforms used for this command\. Defaults to all supported platforms for the current project\. Supported platforms can be changed by modifying `AssetProcessorPlatformConfig.ini`\.
- Platform names can be found in the `AssetProcessorPlatformConfig.ini` file, or as folder names found under `dev\Cache\ProjectName`\.
+ The platforms used for this command. Defaults to all supported platforms for the current project. Supported platforms can be changed by modifying `AssetProcessorPlatformConfig.ini`.
+ Platform names can be found in the `AssetProcessorPlatformConfig.ini` file, or as folder names found under `dev\Cache\ProjectName`.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-updateSeedPath**
- Updates the relative paths for every seed in the seed list\.
+ Updates the relative paths for every seed in the seed list.
 *Type:* Flag
 *Required:* No
 
 **\-\-removeSeedPath**
- Removes the relative path hints for every seed in the seed list\. This argument is useful when you want to share your seed list with a third party\.
+ Removes the relative path hints for every seed in the seed list. This argument is useful when you want to share your seed list with a third party.
 *Type:* Flag
 *Required:* No
 
 ### Examples 
 
- In the following examples, assume that the current project has enabled the platforms `pc`, `ios`, and `es3`\.
+ In the following examples, assume that the current project has enabled the platforms `pc`, `ios`, and `es3`.
 
 **Example Add seed**
  Create the seed list `testFile.seed` if it doesn't exist, and adds the `asset1.pak` and `asset2.pak` assets as seeds for the `PC` platform:
@@ -167,80 +167,80 @@ Bin64vc141\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --print
 
 ## Asset Lists \- `assetLists` 
 
- The `assetLists` command is used to manage and create asset lists\. See the `--assetListFile` argument for how platform information is encoded in asset list file names\. Asset list files have the `.assetlist` extension\.
+ The `assetLists` command is used to manage and create asset lists. See the `--assetListFile` argument for how platform information is encoded in asset list file names. Asset list files have the `.assetlist` extension.
 
-This command requires an existing cache of assets for each provided platform\. To make sure that the cache is up to date, update the supported platforms and run the Asset Processor\.
+This command requires an existing cache of assets for each provided platform. To make sure that the cache is up to date, update the supported platforms and run the Asset Processor.
 
 ### Options 
 
 **\-\-assetListFile**
-The base name of the platform\-specific asset list files to be generated\. This file's path must be writable, and the file name must have the `.assetlist` extension\. The argument's value may be either an absolute or engine\-root\-relative path\.
-The asset list files generated are named based on the value of this argument and the provided platforms\. For an argument value of `path\assetFile.assetlist`, each platform gets an asset file created as `path\assetFile_Platform.assetlist`\. For example, `assetFile.assetlist` for the platform `pc` is named `assetFile_pc.assetlist`\.
-`assetLists` invocations must contain either the `--assetListFile` argument or `--print` flag\.
+The base name of the platform\-specific asset list files to be generated. This file's path must be writable, and the file name must have the `.assetlist` extension. The argument's value may be either an absolute or engine\-root\-relative path.
+The asset list files generated are named based on the value of this argument and the provided platforms. For an argument value of `path\assetFile.assetlist`, each platform gets an asset file created as `path\assetFile_Platform.assetlist`. For example, `assetFile.assetlist` for the platform `pc` is named `assetFile_pc.assetlist`.
+`assetLists` invocations must contain either the `--assetListFile` argument or `--print` flag.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-seedListFile**
- The seed list used to generate the asset list\. This argument can be used along with other arguments that provide seeds\.
+ The seed list used to generate the asset list. This argument can be used along with other arguments that provide seeds.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-addSeed**
- Individual seeds used to generate the asset list\. This argument can be used along with other arguments that provide seeds\.
- Although `.slice` files are built and present in the asset cache, they aren't product assets and don't generate dependencies when used as seeds\. Avoid using them as seeds\.
+ Individual seeds used to generate the asset list. This argument can be used along with other arguments that provide seeds.
+ Although `.slice` files are built and present in the asset cache, they aren't product assets and don't generate dependencies when used as seeds. Avoid using them as seeds.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-addDefaultSeedListFiles**
- Automatically include the default seed lists for the O3DE Engine, default project, and all enabled Gems\. As project-relative paths, the files that define default assets are:
+ Automatically include the default seed lists for the O3DE Engine, default project, and all enabled Gems. As project-relative paths, the files that define default assets are:
 +  **Engine** - `Engine\Engine_Dependencies.xml`
 +  **Gems** - `Gems\gem_name\Assets\gem_name_Dependencies.xml`
 +  **Project** - `project_name\project_name_Dependencies.xml`
-By default, the project dependencies includes pre\-loaded particle libraries and game\-wide audio, excluding level\-specific audio\.
-This argument can be used along with other arguments that provide seeds\.
+By default, the project dependencies includes pre\-loaded particle libraries and game\-wide audio, excluding level\-specific audio.
+This argument can be used along with other arguments that provide seeds.
 *Type:* Flag
 *Required:* No
 
 **\-\-skip**
-A list of assets to ignore\. This can include both seed assets and any dependencies that were picked up by the asset processor\. The argument value is a comma\-separated list of cache\-relative paths to assets that have already been pre\-processed\.
+A list of assets to ignore. This can include both seed assets and any dependencies that were picked up by the asset processor. The argument value is a comma\-separated list of cache\-relative paths to assets that have already been pre\-processed.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-platform**
-The platforms used for this command\. Defaults to all supported platforms for the current project\. Supported platforms can be changed by modifying `AssetProcessorPlatformConfig.ini`\.
-Enabled platform names can be found in the `AssetProcessorPlatformConfig.ini` file, or as directories under `dev\Cache\ProjectName`\.
+The platforms used for this command. Defaults to all supported platforms for the current project. Supported platforms can be changed by modifying `AssetProcessorPlatformConfig.ini`.
+Enabled platform names can be found in the `AssetProcessorPlatformConfig.ini` file, or as directories under `dev\Cache\ProjectName`.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-print**
- Output a list of all product dependencies\. The behavior of this argument depends on which other arguments are provided to the `AssetBundlerBatch argumentList` command:
-+ `--assetListFile` without operations: Read an existing asset list from disk and display its contents\.
-+ `--assetListFile` with operations: Generate a new asset list and display its contents\.
-+ Without `--assetListFile`: Display the contents of the asset list that would be generated\.
- Each of these behaviors is illustrated in the [assetList examples](#asset-bundler-command-line-reference-assetlists-examples)\.
-`AssetBundlerBatch assetLists` commands must contain either the `--assetListFile` argument to generate new asset lists, or the `--print` flag to write information to the console\.
+ Output a list of all product dependencies. The behavior of this argument depends on which other arguments are provided to the `AssetBundlerBatch argumentList` command:
++ `--assetListFile` without operations: Read an existing asset list from disk and display its contents.
++ `--assetListFile` with operations: Generate a new asset list and display its contents.
++ Without `--assetListFile`: Display the contents of the asset list that would be generated.
+ Each of these behaviors is illustrated in the [assetList examples](#asset-bundler-command-line-reference-assetlists-examples).
+`AssetBundlerBatch assetLists` commands must contain either the `--assetListFile` argument to generate new asset lists, or the `--print` flag to write information to the console.
 *Type:* Flag
 *Required:* No
 
 **\-\-dryRun**
- Run without generating new asset lists\.
+ Run without generating new asset lists.
 *Type:* Flag
 *Required:* No
 
 **\-\-generateDebugFile**
-Generate a file that contains additional information about asset inclusion for debugging purposes\. This file contains a hierarchical list of every asset contained within the asset list file, as well as information about which seeds marked each specific asset as a product dependency\. The debug file is stored in the same path as the `--assetListFile`, with the extension `.assetlistdebug`\.
- This argument requires the use of `--assetListFile`\. If you use the `--print` argument, the output of the generated files is displayed in the console, not the output of the debug file\.
+Generate a file that contains additional information about asset inclusion for debugging purposes. This file contains a hierarchical list of every asset contained within the asset list file, as well as information about which seeds marked each specific asset as a product dependency. The debug file is stored in the same path as the `--assetListFile`, with the extension `.assetlistdebug`.
+ This argument requires the use of `--assetListFile`. If you use the `--print` argument, the output of the generated files is displayed in the console, not the output of the debug file.
 *Type:* Flag
 *Required:* No
 
 **\-\-allowOverwrites**
- Allow overwriting of existing asset files\. By default, existing asset lists will not be regenerated\.
+ Allow overwriting of existing asset files. By default, existing asset lists will not be regenerated.
 *Type:* Flag
 *Required:* No
 
 ### Examples 
 
- In the following examples, assume that the seed list `testFile.seed` exists and that the `pc`, `ios`, and `es3` platforms are enabled\.
+ In the following examples, assume that the seed list `testFile.seed` exists and that the `pc`, `ios`, and `es3` platforms are enabled.
 
 **Example Display default assets**
  Display which asset lists would be generated from the seed lists for the O3DE Engine and enabled Gems for a project's default platforms:
@@ -282,42 +282,42 @@ Bin64vc141\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist -
 
 ## Comparison rules \- `comparisonRules` 
 
-The `comparisonRules` command is used to generate comparison rules files\. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand\. Comparison rules files are pre\-built descriptions of which operations to perform and in what order\. For more information on comparison rules, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
+The `comparisonRules` command is used to generate comparison rules files. Comparison rules files are used as inputs for the [compare](#asset-bundler-command-line-reference-compare) subcommand. Comparison rules files are pre\-built descriptions of which operations to perform and in what order. For more information on comparison rules, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md).
 
 ### Options 
 
 **\-\-comparisonRulesFile**
- The comparison rules file to generate\.
+ The comparison rules file to generate.
 *Type:* Single\-value argument
 *Required:* Yes
 
 **\-\-comparisonType**
- The comparison types to apply, in the given order\. Valid values are:
+ The comparison types to apply, in the given order. Valid values are:
 + *0* or *delta*: Delta comparison
 + *1* or *union*: Union
 + *2* or *intersection*: Intersection
 + *3* or *complement*: Complement
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
- For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
- The `intersectionCount` comparison type can't be combined with any other comparison type as part of a rule list\.
+ For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md).
+ The `intersectionCount` comparison type can't be combined with any other comparison type as part of a rule list.
 *Type:* Multi\-value argument
 *Required:* Yes
 
 **\-\-filePatternType**
- The type of file pattern matching to use on the provided file patterns\. Valid values are:
+ The type of file pattern matching to use on the provided file patterns. Valid values are:
 + *0*: Perform wildcard matching \- the `*` character will match any number of characters
 + *1*: Perform regular expression matching
-*Type:* Multi\-value argument\. The number of parameters for the `--filePatternType` argument must match the number of FilePattern arguments to the `--comparisonType` argument\.
+*Type:* Multi\-value argument. The number of parameters for the `--filePatternType` argument must match the number of FilePattern arguments to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-filePattern**
- The file patterns to use for building the list of files that will be compared by the corresponding `--comparisonType`\. The patterns are interpreted according to the corresponding `--filePatternType` parameter\.
-*Type:* Multi\-value argument\. The number of parameters for the `--filePattern` argument must match the number of FilePattern arguments to the `--comparisonType` argument\.
+ The file patterns to use for building the list of files that will be compared by the corresponding `--comparisonType`. The patterns are interpreted according to the corresponding `--filePatternType` parameter.
+*Type:* Multi\-value argument. The number of parameters for the `--filePattern` argument must match the number of FilePattern arguments to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-allowOverwrites**
- Allow overwriting of existing comparison rules files\. By default, existing files will not be overwritten\.
+ Allow overwriting of existing comparison rules files. By default, existing files will not be overwritten.
 *Type:* Flag
 *Required:* No
 
@@ -335,17 +335,17 @@ Bin64vc141\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilt
 
 ## Comparisons \- `compare` 
 
- The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list\. See [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md) for details on comparison operations\.
+ The `compare` command is used to take pairs of asset lists as input, perform a comparison operation, and write the result of the comparison as a new asset list. See [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md) for details on comparison operations.
 
 ### Options 
 
 **\-\-comparisonRulesFile**
- The comparison rules file to load rules from\. Comparisons from the rules file will be performed before any other comparisons given as arguments, and are evaluated in the order that the rules file was created with\.
+ The comparison rules file to load rules from. Comparisons from the rules file will be performed before any other comparisons given as arguments, and are evaluated in the order that the rules file was created with.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-comparisonType**
-The comparison types to apply to the input files\. The first `--comparisonType` parameter is applied to the first arguments of `--firstAssetListFile` and `--secondAssetListFile`, the second comparison is applied to the second parameters of those arguments, and so on\.
+The comparison types to apply to the input files. The first `--comparisonType` parameter is applied to the first arguments of `--firstAssetListFile` and `--secondAssetListFile`, the second comparison is applied to the second parameters of those arguments, and so on.
  Valid values are:
 + *0* or *delta*: Delta comparison
 + *1* or *union*: Union
@@ -353,47 +353,47 @@ The comparison types to apply to the input files\. The first `--comparisonType` 
 + *3* or *complement*: Complement
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
- For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
- The `intersectionCount` comparison type can't be combined with any other comparison type\.
+ For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md).
+ The `intersectionCount` comparison type can't be combined with any other comparison type.
 *Type:* Multi\-value argument
 *Required:* Yes
 
 **\-\-filePatternType**
- The type of file pattern matching to use on the provided file patterns\. Valid values for this argument are:
+ The type of file pattern matching to use on the provided file patterns. Valid values for this argument are:
 + *0*: Perform wildcard matching \- the `*` character will match any number of characters
 + *1*: Perform regular expression matching
-*Type:* Multi\-value argument\. The number of parameters for the `--filePatternType` argument must match the number of `FilePattern` comparison arguments to the `--comparisonType` argument\.
+*Type:* Multi\-value argument. The number of parameters for the `--filePatternType` argument must match the number of `FilePattern` comparison arguments to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-filePattern**
- The file patterns to use for matching asset file paths from inputs\. The patterns are interpreted according to the corresponding `--filePatternType` parameter\. The first pattern is used with the first occurrence of the `FilePattern` comparison type, the second with the second occurrence, and so on\.
-*Type:* Multi\-value argument\. The number of parameters for the `--filePattern` argument must match the number of `FilePattern` comparison arguments to the `--comparisonType` argument\.
+ The file patterns to use for matching asset file paths from inputs. The patterns are interpreted according to the corresponding `--filePatternType` parameter. The first pattern is used with the first occurrence of the `FilePattern` comparison type, the second with the second occurrence, and so on.
+*Type:* Multi\-value argument. The number of parameters for the `--filePattern` argument must match the number of `FilePattern` comparison arguments to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-firstAssetListFile**
- The files to use as the first set of inputs for comparison\.
-*Type:* Multi\-value argument\. The number of parameters for the `--firstAssetListFile` argument must match the number of arguments to the `--comparisonType` argument\.
+ The files to use as the first set of inputs for comparison.
+*Type:* Multi\-value argument. The number of parameters for the `--firstAssetListFile` argument must match the number of arguments to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-secondAssetListFile**
- The files to use as the second set of inputs for comparisons which require a second input file\. This arugment isn't used for the `FilePattern` or `IntersectionCount` comparison types\.
-*Type:* Multi\-value argument\. The number of parameters for the `--secondAssetListFile` argument must match the number of non\-`FilePattern` arguments to the `--comparisonType` argument\.
+ The files to use as the second set of inputs for comparisons which require a second input file. This arugment isn't used for the `FilePattern` or `IntersectionCount` comparison types.
+*Type:* Multi\-value argument. The number of parameters for the `--secondAssetListFile` argument must match the number of non\-`FilePattern` arguments to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-output**
- The output files for the result of each performed comparison\. Output files can be a file, or a variable passed from another comparison\. Variables start with the `$` character\. For more about variables, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md)\.
-*Type:* Multi\-value argument\. The number of parameters for the `--output` argument must match the number of parameters to the `--comparisonType` argument\.
+ The output files for the result of each performed comparison. Output files can be a file, or a variable passed from another comparison. Variables start with the `$` character. For more about variables, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations.md).
+*Type:* Multi\-value argument. The number of parameters for the `--output` argument must match the number of parameters to the `--comparisonType` argument.
 *Required:* No
 
 **\-\-print**
- This argument behaves differently depending on whether it's given as a flag or has a parameter list\.
-+ **Flag \(no arguments\)**: Prints the final comparison result to the console\.
-+  **With arguments**: Prints the contents of each argument to the console after comparisons complete\. Arguments can either be files or variables\.
+ This argument behaves differently depending on whether it's given as a flag or has a parameter list.
++ **Flag \(no arguments\)**: Prints the final comparison result to the console.
++  **With arguments**: Prints the contents of each argument to the console after comparisons complete. Arguments can either be files or variables.
 *Type:* Multi\-value argument or flag
 *Required:* No
 
 **\-\-allowOverwrites**
- Allow overwriting of existing output files\. By default, existing files will not be overwritten\.
+ Allow overwriting of existing output files. By default, existing files will not be overwritten.
 *Type:* Flag
 *Required:* No
 
@@ -431,42 +431,42 @@ Bin64vc141\AssetBundlerBatch.exe compare --comparisonType intersectionCount ^
 
 ## Bundle settings \- `bundleSettings` 
 
- The `bundleSettings` command is used to manage bundle settings file, configuration files that let you store commonly\-used bundle configurations for easy reuse and automation\.
+ The `bundleSettings` command is used to manage bundle settings file, configuration files that let you store commonly\-used bundle configurations for easy reuse and automation.
 
 ### Options 
 
 **\-\-bundleSettingsFile**
- The bundle settings file to be modified when running this command\. If this file already exists, only those settings which are specified by the command invocation are changed\.
+ The bundle settings file to be modified when running this command. If this file already exists, only those settings which are specified by the command invocation are changed.
 *Type:* Single\-value argument
 *Required:* Yes
 
 **\-\-assetListFile**
- Sets the asset list file to use in bundle generation\.
+ Sets the asset list file to use in bundle generation.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-outputBundlePath**
- Sets the location where the generated asset bundle is written to\. Asset bundles use the `.pak` file extension\.
+ Sets the location where the generated asset bundle is written to. Asset bundles use the `.pak` file extension.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-bundleVersion**
- Sets the bundle format version to use in generation\. The only allowed value is `1`\.
+ Sets the bundle format version to use in generation. The only allowed value is `1`.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-maxSize**
- Sets the maximum allowed size for individual bundles, in MB\. If any generated bundle is larger than the maximum size, it will be split into smaller bundles and named accordingly\.
+ Sets the maximum allowed size for individual bundles, in MB. If any generated bundle is larger than the maximum size, it will be split into smaller bundles and named accordingly.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-platform**
- The platforms to update the bundle settings for\. Defaults to the project's enabled platforms, defined in `AssetProcessorPlatformConfig.ini`\. Valid platform names can be found in the platform configuration file or as folder names under `dev\Cache\ProjectName`\.
+ The platforms to update the bundle settings for. Defaults to the project's enabled platforms, defined in `AssetProcessorPlatformConfig.ini`. Valid platform names can be found in the platform configuration file or as folder names under `dev\Cache\ProjectName`.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-print**
- Prints the contents of the bundle settings file to the console after modifying all values\.
+ Prints the contents of the bundle settings file to the console after modifying all values.
 *Type:* Flag
 *Required:* No
 
@@ -486,48 +486,48 @@ Bin64vc141\AssetBundlerBatch.exe bundleSettings --bundleSettingsFile defaults.bu
 
 ## Asset bundles \- `bundles` 
 
- The `bundles` command is used to generate the final bundle \(`.pak`\) files that contain all of the assets from an asset list\. Bundles can't be modified once created, only regenerated\.
+ The `bundles` command is used to generate the final bundle \(`.pak`\) files that contain all of the assets from an asset list. Bundles can't be modified once created, only regenerated.
 
 ### Options 
 
 **\-\-bundleSettingsFile**
- The bundle settings file to be loaded\. If arguments are provided which would override the settings file, the arguments override the settings file\.
+ The bundle settings file to be loaded. If arguments are provided which would override the settings file, the arguments override the settings file.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-assetListFile**
- The asset list file to use in bundle generation\.
+ The asset list file to use in bundle generation.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-outputBundlePath**
- The location where the generated asset bundle is written to\. Asset bundles use the `.pak` file extension\.
+ The location where the generated asset bundle is written to. Asset bundles use the `.pak` file extension.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-bundleVersion**
-The bundle format version to use in generation\. The only allowed value is `1`\.
+The bundle format version to use in generation. The only allowed value is `1`.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-maxSize**
- The maximum allowed size for individual bundles, in MB\. If any generated bundle is larger than the maximum size, it will be split into smaller bundles and named accordingly\.
+ The maximum allowed size for individual bundles, in MB. If any generated bundle is larger than the maximum size, it will be split into smaller bundles and named accordingly.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-platform**
- The platforms to generate bundles for\. Defaults to the project's enabled platforms, defined in `AssetProcessorPlatformConfig.ini`\. Valid platform names can be found in the platform configuration file or as folder names under `dev\Cache\ProjectName`\.
+ The platforms to generate bundles for. Defaults to the project's enabled platforms, defined in `AssetProcessorPlatformConfig.ini`. Valid platform names can be found in the platform configuration file or as folder names under `dev\Cache\ProjectName`.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-allowOverwrites**
- Allow overwriting of existing bundle files\. By default, bundles are not overwritten\.
+ Allow overwriting of existing bundle files. By default, bundles are not overwritten.
 *Type:* Flag
 *Required:* No
 
 ### Examples 
 
- In the following examples, assume that the current project has enabled the platforms `pc`, `ios`, and `es3`\.
+ In the following examples, assume that the current project has enabled the platforms `pc`, `ios`, and `es3`.
 
 **Example Create a bundle for PC using a settings file**
  Create a `assets_pc.pak` bundle for PC, using the `defaults_pc.bundlesettings` file:
@@ -545,49 +545,49 @@ Bin64vc141\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --maxSize
 
 ## Bundle from seed \- `bundleSeed` 
 
- The `bundleSeed` command is used to generate bundles directly from seeds and their dependencies, without the use of an intermediate asset list\. No other files besides the required seeds are used as input, and only bundle files are produced as output\.
+ The `bundleSeed` command is used to generate bundles directly from seeds and their dependencies, without the use of an intermediate asset list. No other files besides the required seeds are used as input, and only bundle files are produced as output.
 
 ### Options 
 
 **\-\-addSeed**
-The seeds to be used in bundle file generation\. All asset dependencies of these seeds are included in the bundle as well\. Argument parameters should be given as cache\-relative paths to pre\-processed assets\.
+The seeds to be used in bundle file generation. All asset dependencies of these seeds are included in the bundle as well. Argument parameters should be given as cache\-relative paths to pre\-processed assets.
 *Type:* Multi\-value argument
 *Required:* Yes
 
 **\-\-bundleSettingsFile**
- The bundle settings file to be loaded\. If arguments are provided which would override the settings file, the arguments override the settings file\.
+ The bundle settings file to be loaded. If arguments are provided which would override the settings file, the arguments override the settings file.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-outputBundlePath**
-The location where the generated asset bundle is written to\. Asset bundles use the `.pak` file extension\.
+The location where the generated asset bundle is written to. Asset bundles use the `.pak` file extension.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-bundleVersion**
-The bundle format version to use in generation\. The only allowed value is `1`\.
+The bundle format version to use in generation. The only allowed value is `1`.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-maxSize**
- The maximum allowed size for individual bundles, in MB\. If any generated bundle is larger than the maximum size, it will be split into smaller bundles and named accordingly\.
+ The maximum allowed size for individual bundles, in MB. If any generated bundle is larger than the maximum size, it will be split into smaller bundles and named accordingly.
 *Type:* Single\-value argument
 *Required:* No
 
 **\-\-platform**
- The platforms to update the bundle settings for\. Defaults to the project's enabled platforms, defined in `AssetProcessorPlatformConfig.ini`\. Valid platform names can be found in the platform configuration file or as folder names under `dev\Cache\ProjectName`\.
+ The platforms to update the bundle settings for. Defaults to the project's enabled platforms, defined in `AssetProcessorPlatformConfig.ini`. Valid platform names can be found in the platform configuration file or as folder names under `dev\Cache\ProjectName`.
 *Type:* Multi\-value argument
 *Required:* No
 
 **\-\-allowOverwrites**
- Allow overwriting of existing bundle files\. By default, bundles are not overwritten\.
+ Allow overwriting of existing bundle files. By default, bundles are not overwritten.
 *Type:* Flag
 *Required:* No
 
 ### Examples 
 
 **Example Regenerate bundle for a seed**
- Regenerate the bundle `processed.pak` for the `example.cgf` asset and all of its dependencies, with a maximum size of 512MB\.
+ Regenerate the bundle `processed.pak` for the `example.cgf` asset and all of its dependencies, with a maximum size of 512MB.
 
 ```
 Bin64vc141\AssetBundlerBatch.exe bundleSeed --addSeed example.cgf --outputBundlePath processed.pak --maxSize 512 --allowOverwrites

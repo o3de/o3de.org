@@ -6,15 +6,15 @@ title: O3DE UI scrollbar styles
 
 {{< preview-migrated >}}
 
-O3DE provides several style choices for your scrollbars\. With the default style, the scrollbar is always visible\. However, you have the option to set the scrollbar display mode so that it only appears when users hover over the scroll area\. You can also apply a dark style to the scrollbar to make it more visible on light backgrounds\.
+O3DE provides several style choices for your scrollbars. With the default style, the scrollbar is always visible. However, you have the option to set the scrollbar display mode so that it only appears when users hover over the scroll area. You can also apply a dark style to the scrollbar to make it more visible on light backgrounds.
 
-The following examples demonstrate how to apply these styles\.
+The following examples demonstrate how to apply these styles.
 
 ## Scrollbar display modes<a name="scrollbar-display-modes"></a>
 
 ![\[component scrollbar display modes\]](/images/tools-ui/component-scrollbar-display-modes.gif)
 
-Use `AzQtComponents::ScrollBar::setDisplayMode` to set the scrollbar display mode\. The default mode is `AlwaysShow`\.
+Use `AzQtComponents::ScrollBar::setDisplayMode` to set the scrollbar display mode. The default mode is `AlwaysShow`.
 
  **Example**
 
@@ -36,9 +36,9 @@ ScrollBar::setDisplayMode(scrollArea, ScrollBar::ScrollBarMode::AlwaysShow);
 
 ## Scrollbar with dark style<a name="scrollbar-dark-style"></a>
 
-Use `AzQtComponents::ScrollBar::applyDarkStyle` to make the scrollbar more visible on light backgrounds\.
+Use `AzQtComponents::ScrollBar::applyDarkStyle` to make the scrollbar more visible on light backgrounds.
 
- `ScrollBar::applyLightStyle` reverts the scrollbar back to the default style\.
+ `ScrollBar::applyLightStyle` reverts the scrollbar back to the default style.
 
  **Example**
 

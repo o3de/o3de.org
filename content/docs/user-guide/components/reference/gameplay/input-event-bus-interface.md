@@ -5,7 +5,7 @@ title: Input Component EBus Interface
 
 {{< preview-migrated >}}
 
-Input subcomponents are objects that have the same lifetime as components and must override `Activate` and `Deactivate`\.
+Input subcomponents are objects that have the same lifetime as components and must override `Activate` and `Deactivate`.
 
 ```
 //////////////////////////////////////////////////////////////////////////
@@ -14,15 +14,15 @@ void Activate(const AZ::InputEventNotificationId& channelId) override;
 void Deactivate(const AZ::InputEventNotificationId& channelId) override;
 ```
 
-You can use the `GameplayNotificationBus` to work with the `InputSubComponent`\. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus#component-entity-system-gameplay-bus-gameplaynotifications)\.
+You can use the `GameplayNotificationBus` to work with the `InputSubComponent`. For more information, see [GameplayNotifications](/docs/userguide/components/entity-system-gameplay-bus#component-entity-system-gameplay-bus-gameplaynotifications).
 
-You can find example Lua scripts and code in the `Gems\StartingPointInput\Assets\Scripts\Input` directory\.
+You can find example Lua scripts and code in the `Gems\StartingPointInput\Assets\Scripts\Input` directory.
 
 ## Input Event Notification Bus 
 
-Use the following notification functions with the event notification bus interface to communicate with other components of your game\.
+Use the following notification functions with the event notification bus interface to communicate with other components of your game.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
 
 ###  
 
@@ -31,9 +31,9 @@ For more information about using the event bus \(EBus\) interface, see [Working 
 
 | Request Name | Description | Parameters | Return | Scriptable |
 | --- | --- | --- | --- | --- |
-| OnPressed |  Event sent when an input surpasses the threshold\.  | Float | None | Yes |
-| OnHeld |  Event sent when an input continues to surpass the threshold\.  | Float | None | Yes |
-| OnReleased |  Event sent when an input no longer surpasses the threshold\.  | Float | None | Yes |
+| OnPressed |  Event sent when an input surpasses the threshold.  | Float | None | Yes |
+| OnHeld |  Event sent when an input continues to surpass the threshold.  | Float | None | Yes |
+| OnReleased |  Event sent when an input no longer surpasses the threshold.  | Float | None | Yes |
 
 **Example**
 
@@ -70,24 +70,24 @@ return held
 
 ## Input Request Bus 
 
-Use the following functions with the input request bus interface to communicate with other components of your game\.
+Use the following functions with the input request bus interface to communicate with other components of your game.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
 
 
 ****
 
 | Request Name | Description | Parameters | Return | Scriptable |
 | --- | --- | --- | --- | --- |
-| PushContext |  Pushes a new context onto the stack, which becomes the active context\.  | String | None | Yes |
-| PopContext |  Removes the top context from the input context stack\.  | None | None | Yes |
+| PushContext |  Pushes a new context onto the stack, which becomes the active context.  | String | None | Yes |
+| PopContext |  Removes the top context from the input context stack.  | None | None | Yes |
 | PopAllContexts |  Clears the context stack, and the active context becomes the empty string: `""`  | None | Empty string | Yes |
-| GetCurrentContext |  Returns the context at the top of the stack\. If the stack is empty, returns: `""`  | None | String | Yes |
+| GetCurrentContext |  Returns the context at the top of the stack. If the stack is empty, returns: `""`  | None | String | Yes |
 
 **Example Input Contexts**
-You can use the **Input contexts** parameter to specify what context asset binding is available\. For example, you can switch contexts so that when a character is under water, the input events are different than when the character is on the ground\.
-For example, for the **Input** component, you can specify **Input contexts**, such as an empty string, `"under water`", and `"run"`\. When you add a **Lua** component to the entity, you can specify the different **Input contexts**, `"under water"`, and `"run"` in your Lua script\.
-This means that when your Lua script runs, the Lua script tells the **Input** component which context to use\.
+You can use the **Input contexts** parameter to specify what context asset binding is available. For example, you can switch contexts so that when a character is under water, the input events are different than when the character is on the ground.
+For example, for the **Input** component, you can specify **Input contexts**, such as an empty string, `"under water`", and `"run"`. When you add a **Lua** component to the entity, you can specify the different **Input contexts**, `"under water"`, and `"run"` in your Lua script.
+This means that when your Lua script runs, the Lua script tells the **Input** component which context to use.
 
 ```
 local foo

@@ -6,7 +6,7 @@ title: Camera
 
 {{< preview-migrated >}}
 
-The **Camera** component allows an entity to be used as a camera\. To use the **Camera** component, you must first add a Camera Framework gem to your project\. For information, see [Camera Framework Gem](/docs/user-guide/gems/reference/camera/)\.
+The **Camera** component allows an entity to be used as a camera. To use the **Camera** component, you must first add a Camera Framework gem to your project. For information, see [Camera Framework Gem](/docs/user-guide/gems/reference/camera/).
 
 ## Camera Component Properties 
 
@@ -19,32 +19,32 @@ The **Camera** component has the following properties:
 
 | Name | Description |
 | --- | --- |
-|  **Field of view**  |  Vertical field of view in degrees\. Valid values: `0` to `180`  Default value: `75`  |
-|  **Near clip distance**  |  Distance to the near clip plane of the view frustum in meters\. Default value: `0.2`  |
-|  **Far clip distance**  |  Distance to the near far plane of the view frustum in meters\. Default value: `1024`  |
-|  **Be this camera**  |  Editor uses the selected camera as its view\. For more information, see [Changing the Camera View](/docs/user-guide/editor/camera-space/)\.  |
-| Frustum length |  Length of the frustum shape\. Default value: `1.0` percent  |
-|  **Frustum color**  |  Color of the frustum shape\. Default value: `255`, `255`, `0`  |
+|  **Field of view**  |  Vertical field of view in degrees. Valid values: `0` to `180`  Default value: `75`  |
+|  **Near clip distance**  |  Distance to the near clip plane of the view frustum in meters. Default value: `0.2`  |
+|  **Far clip distance**  |  Distance to the near far plane of the view frustum in meters. Default value: `1024`  |
+|  **Be this camera**  |  Editor uses the selected camera as its view. For more information, see [Changing the Camera View](/docs/user-guide/editor/camera-space/).  |
+| Frustum length |  Length of the frustum shape. Default value: `1.0` percent  |
+|  **Frustum color**  |  Color of the frustum shape. Default value: `255`, `255`, `0`  |
 
 ## EBus Request Bus Interface 
 
-Use the following request functions with the event bus \(EBus\) interface, `CameraRequestBus`, to communicate with other components of your game\.
+Use the following request functions with the event bus \(EBus\) interface, `CameraRequestBus`, to communicate with other components of your game.
 
-For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/)\.
+For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/).
 
 
 ****
 
 | Request Name | Description |
 | --- | --- |
-|  `GetFov`  |  Gets the current field of view\.  |
-|  `SetFov`  |  Sets the current field of view\.  |
-|  `GetNearClipDistance`  |  Gets the current near clip distance\.  |
-|  `SetNearClipDistance`  |  Sets the current near clip distance\.  |
-|  `GetFarClipDistance`  |  Gets the current far clip distance\.  |
-|  `SetFarClipDistance`  |  Sets the current far clip distance\.  |
+|  `GetFov`  |  Gets the current field of view.  |
+|  `SetFov`  |  Sets the current field of view.  |
+|  `GetNearClipDistance`  |  Gets the current near clip distance.  |
+|  `SetNearClipDistance`  |  Sets the current near clip distance.  |
+|  `GetFarClipDistance`  |  Gets the current far clip distance.  |
+|  `SetFarClipDistance`  |  Sets the current far clip distance.  |
 
-The following is an example of script using the **Request Bus Interface**\.
+The following is an example of script using the **Request Bus Interface**.
 
 ```
 local camerasample =
@@ -65,4 +65,4 @@ return camerasample
 
 ## Creating Camera Entity from View 
 
-You can create a static camera view from a specific entity by right\-clicking an entity in the viewport and choosing **Create camera entity from view**\. This places a new entity with a camera component at the same point\. You can adjust the view of the camera by modifying its transform component\.
+You can create a static camera view from a specific entity by right\-clicking an entity in the viewport and choosing **Create camera entity from view**. This places a new entity with a camera component at the same point. You can adjust the view of the camera by modifying its transform component.

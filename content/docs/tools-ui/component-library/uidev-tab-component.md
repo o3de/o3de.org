@@ -6,13 +6,13 @@ title: O3DE UI tab component
 
 {{< preview-migrated >}}
 
-Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application\.
+Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application.
 
-Tabs are also used in the widget headers\. When there is more than one widget docked together, the widget headers are shown as tabs\. Users can drag the tab/widget header to move it around and dock it elsewhere\.
+Tabs are also used in the widget headers. When there is more than one widget docked together, the widget headers are shown as tabs. Users can drag the tab/widget header to move it around and dock it elsewhere.
 
 ![\[component tab style\]](/images/tools-ui/component-tab-style.png)
 
-A tab can also display an action toolbar, where action buttons can be added and removed as needed\.
+A tab can also display an action toolbar, where action buttons can be added and removed as needed.
 
 ![\[component tab action bar\]](/images/tools-ui/component-tab-action-bar.png)
 
@@ -20,17 +20,17 @@ A tab can also display an action toolbar, where action buttons can be added and 
 
 Follow these guidelines as you design your UI with tabs:
 
-1.  Present tabs as a single row above their associated content\.
+1.  Present tabs as a single row above their associated content.
 
-1.  Tab labels should succinctly describe the content within\.
+1.  Tab labels should succinctly describe the content within.
 
 ## Basic tab<a name="tab-basic"></a>
 
 ![\[component tab basic\]](/images/tools-ui/component-tab-basic.png)
 
-Create a simple tab widget with movable, closeable tabs and an action in the action toolbar\.
+Create a simple tab widget with movable, closeable tabs and an action in the action toolbar.
 
-Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class\. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`\. You can add your customized toolbar using the tab widget's `setActionToolBar()` function\.
+Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`. You can add your customized toolbar using the tab widget's `setActionToolBar()` function.
 
  **Example**
 

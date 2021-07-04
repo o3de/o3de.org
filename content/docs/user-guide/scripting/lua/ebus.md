@@ -6,19 +6,19 @@ title: Using EBuses in Lua
 
 {{< preview-migrated >}}
 
-Components provide interfaces that allow scripts to send them information and receive notifications when certain actions take place\. Communication is established by creating two different objects in Lua: senders and handlers\. A sender or a handler is an interface to an [EBus](/docs/user-guide/engine/ebus), a communication system used extensively in the O3DE Engine\. When a sender is created, it can call functions, which in turn send information to a component\. When a handler is created, the component calls certain functions that the Lua script defines\. These senders and handlers are created with an entity ID\. You can use the entity ID to communicate with components that are attached to entities other than the one the script itself is running on\. The main script table always provides a field called `entityId` that contains the ID of the entity to which the script is attached\. Other entity IDs can be passed to the script through the `Properties` interface\.
+Components provide interfaces that allow scripts to send them information and receive notifications when certain actions take place. Communication is established by creating two different objects in Lua: senders and handlers. A sender or a handler is an interface to an [EBus](/docs/user-guide/engine/ebus), a communication system used extensively in the O3DE Engine. When a sender is created, it can call functions, which in turn send information to a component. When a handler is created, the component calls certain functions that the Lua script defines. These senders and handlers are created with an entity ID. You can use the entity ID to communicate with components that are attached to entities other than the one the script itself is running on. The main script table always provides a field called `entityId` that contains the ID of the entity to which the script is attached. Other entity IDs can be passed to the script through the `Properties` interface.
 
 ## Order of Component Activation 
 
 Keep in mind the following points regarding the order of activation of Lua components:
-+ Lua components are activated after all C\+\+ components have been activated\.
-+ If an entity has multiple Lua components, there is no guarantee regarding which Lua component is activated first\.
++ Lua components are activated after all C\+\+ components have been activated.
++ If an entity has multiple Lua components, there is no guarantee regarding which Lua component is activated first.
 
 ## Communicating with Components 
 
-When a Lua script creates a handler object, it notifies a component attached to an entity that it should call the script handler functions when certain events occur\. For example, in the first sample below, the script creates a [Spawner](/docs/user-guide/components/spawner.md) notification bus handler when `OnActivate()` is called\. This tells the spawner component attached to the entity that has the script to call the `OnSpawnBegin()`, `OnSpawnEnd()`, and `OnEntitySpawned()` functions when the spawner instantiates a new [dynamic slice](/docs/userguide/dynamic-slices-what-is.md)\. Subsequently, the handler is explicitly disconnected and set back to nil in the `OnDeactivate` function\. This ensures that processing time is not wasted when the entity attached to the script isn't active\. As long as the entity is active, these functions are called by the spawner component at the appropriate time\.
+When a Lua script creates a handler object, it notifies a component attached to an entity that it should call the script handler functions when certain events occur. For example, in the first sample below, the script creates a [Spawner](/docs/user-guide/components/spawner.md) notification bus handler when `OnActivate()` is called. This tells the spawner component attached to the entity that has the script to call the `OnSpawnBegin()`, `OnSpawnEnd()`, and `OnEntitySpawned()` functions when the spawner instantiates a new [dynamic slice](/docs/userguide/dynamic-slices-what-is.md). Subsequently, the handler is explicitly disconnected and set back to nil in the `OnDeactivate` function. This ensures that processing time is not wasted when the entity attached to the script isn't active. As long as the entity is active, these functions are called by the spawner component at the appropriate time.
 
-The following code example shows a spawner component handler\.
+The following code example shows a spawner component handler.
 
 ```
 local SpawnerScriptSample = { }
@@ -61,9 +61,9 @@ return SpawnerScriptSample
 
 ## Noncomponent Notifications 
 
-Some event buses that are available to Lua are not associated with components\. For example, the system's [tick bus](/docs/user-guide/engine/ebus/tick.md) is not a component bus and does not require an entity ID\. It provides both the amount of time that has passed since the last engine tick and the current time point\. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler\. The handler receives notifications from the system whenever the engine ticks\.
+Some event buses that are available to Lua are not associated with components. For example, the system's [tick bus](/docs/user-guide/engine/ebus/tick.md) is not a component bus and does not require an entity ID. It provides both the amount of time that has passed since the last engine tick and the current time point. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler. The handler receives notifications from the system whenever the engine ticks.
 
-The following example shows how to register with the tick bus\.
+The following example shows how to register with the tick bus.
 
 ```
 local TestScript = { }
@@ -87,7 +87,7 @@ return TestScript
 ```
 
 **Note**
-Instead of calling `CreateHandler` and then calling `Connect` on the handler, you can use the Lua shortcut function `TickBus.Connect`\. The `Connect` function uses the following syntax to create a handler and automatically connect the handler to the bus\.
+Instead of calling `CreateHandler` and then calling `Connect` on the handler, you can use the Lua shortcut function `TickBus.Connect`. The `Connect` function uses the following syntax to create a handler and automatically connect the handler to the bus.
 
 ```
 handler = TickBus.Connect(handlerTable[, connectionId])
@@ -95,9 +95,9 @@ handler = TickBus.Connect(handlerTable[, connectionId])
 
 ## Sending Events to a Component 
 
-In addition to receiving notifications from components, a script must sometimes exercise control over components\. Control is accomplished by sending events to components using the `Event` table and calling the functions implemented on it\. In the example script that follows, the **[Spawner](/docs/user-guide/components/spawner.md)** component is sent an event that tells the component to spawn a dynamic slice by calling the `Spawn()` function\. The first argument to an `Event` function is always the ID of the listener that you send the event to; the remaining arguments follow\.
+In addition to receiving notifications from components, a script must sometimes exercise control over components. Control is accomplished by sending events to components using the `Event` table and calling the functions implemented on it. In the example script that follows, the **[Spawner](/docs/user-guide/components/spawner.md)** component is sent an event that tells the component to spawn a dynamic slice by calling the `Spawn()` function. The first argument to an `Event` function is always the ID of the listener that you send the event to; the remaining arguments follow.
 
-The following example shows how to send EBus events\.
+The following example shows how to send EBus events.
 
 ```
 local SpawnerScript = { }
@@ -108,9 +108,9 @@ end
 return SpawnerScript
 ```
 
-You can request information from some event sending functions that return values\. The next example script uses a `TransformBus` to get the current local transform of the entity and uses the `GetLocalTM()` function, which returns a transform object\. This object is stored in a variable in the main script table\. `TransformBus` is used again to reset the transform of the object to the identity\.
+You can request information from some event sending functions that return values. The next example script uses a `TransformBus` to get the current local transform of the entity and uses the `GetLocalTM()` function, which returns a transform object. This object is stored in a variable in the main script table. `TransformBus` is used again to reset the transform of the object to the identity.
 
-The following example shows how to use the transform bus\.
+The following example shows how to use the transform bus.
 
 ```
 function samplescript:OnActivate()
@@ -125,7 +125,7 @@ end
 
 ## Communicating with Components Attached to Other Entities 
 
-You can also send events and create handlers to communicate with components that are attached to other entities\. The following example defines a parent entity in the properties table and requests its transform\. This allows it to set its transform to that of another entity\.
+You can also send events and create handlers to communicate with components that are attached to other entities. The following example defines a parent entity in the properties table and requests its transform. This allows it to set its transform to that of another entity.
 
 ```
 local ParentScriptSample = {
@@ -149,44 +149,44 @@ return ParentScriptSample
 ```
 
 **Important**
-If you have a Lua script that is attached to an entity that needs to get information from another entity, your script must subscribe to the target entity's `OnEntityActivated` event\. Your script should wait for the target entity to be activated before requesting the relevant information\. Otherwise, your script might return nil\.
+If you have a Lua script that is attached to an entity that needs to get information from another entity, your script must subscribe to the target entity's `OnEntityActivated` event. Your script should wait for the target entity to be activated before requesting the relevant information. Otherwise, your script might return nil.
 
 ## Using AZStd::vector and AZStd::array 
 
-Vectors and arrays in Lua behave very simarly to tables, with a few limitations\. Both vector and array have the following features\.
+Vectors and arrays in Lua behave very simarly to tables, with a few limitations. Both vector and array have the following features.
 
 **Length Operator `#`**
-You can obtain the length of a collection by prefixing the name of the collection with the length operator `#`, as in the following example\.
+You can obtain the length of a collection by prefixing the name of the collection with the length operator `#`, as in the following example.
 
 ```
 #myCollection
 ```
 
 **Indexing \[\]**
-To obtain the elements in a collection, use indexing in square brackets as the following syntax shows\. Indexing is 1 based, just like Lua tables\.
+To obtain the elements in a collection, use indexing in square brackets as the following syntax shows. Indexing is 1 based, just like Lua tables.
 
 ```
 myCollection[index]
 ```
 
-`Vector` also has the following methods for mutating the collection\.
+`Vector` also has the following methods for mutating the collection.
 
 **push\_back**
-Use the `push_back` method to append elements to the vector, as in the following example\.
+Use the `push_back` method to append elements to the vector, as in the following example.
 
 ```
 myCollection:push_back(5)
 ```
 
 **pop\_back**
-Use the `pop_back` method to remove the last element of the vector, as in the following example\.
+Use the `pop_back` method to remove the last element of the vector, as in the following example.
 
 ```
 myCollection:pop_back()
 ```
 
 **clear**
-Use the `clear` method to remove all elements from the vector, as in the following example\.
+Use the `clear` method to remove all elements from the vector, as in the following example.
 
 ```
 myCollection:clear()
@@ -194,9 +194,9 @@ myCollection:clear()
 
 ## Using AZStd::any 
 
-You can pass any Lua primitive type excluding tables to any bus or function that takes `AZStd::any` as a parameter \(for example, `GameplayNotificationBus::OnEventBegin`\)\. You can also pass any type reflected from C\+\+ \(for example, vectors or `EntityId` values\)\. There is no syntax required to pass a value as an `any`-just call the bus or function\.
+You can pass any Lua primitive type excluding tables to any bus or function that takes `AZStd::any` as a parameter \(for example, `GameplayNotificationBus::OnEventBegin`\). You can also pass any type reflected from C\+\+ \(for example, vectors or `EntityId` values\). There is no syntax required to pass a value as an `any`-just call the bus or function.
 
-The following example shows the use of `AZStd::any`\.
+The following example shows the use of `AZStd::any`.
 
 ```
 GameplayNotificationBus.Broadcast.OnEventBegin(self.eventId, "The value I'd like to pass to the handler")

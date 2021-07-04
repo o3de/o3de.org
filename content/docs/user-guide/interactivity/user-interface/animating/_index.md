@@ -10,7 +10,7 @@ weight: 200
 You can animate your game's UI using one of the following tools:
 
 [**Scripted Entity Tweener System**](/docs/user-guide/user-interface/animating/tweener.md)
-Installed as a gem, this system uses custom Lua scripts to create powerful and flexible animations\.
+Installed as a gem, this system uses custom Lua scripts to create powerful and flexible animations.
 
 [**UI Animation Editor**](/docs/user-guide/user-interface/animation/_index.md)
-Embedded as a GUI in the **UI Editor**, this tool can create complex animations\. You activate your animation sequences by using Script Canvas, with the UiAnimationBus eBus, or through C\+\+ scripting\.
+Embedded as a GUI in the **UI Editor**, this tool can create complex animations. You activate your animation sequences by using Script Canvas, with the UiAnimationBus eBus, or through C\+\+ scripting.

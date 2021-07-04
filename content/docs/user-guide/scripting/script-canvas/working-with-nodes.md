@@ -5,7 +5,7 @@ title: Working with Nodes
 
 {{< preview-migrated >}}
 
-Games are often built with complex logic, and complex logic can produce a large number of nodes and connections\. Script Canvas provides some specialized tools to help you manage this complexity\.
+Games are often built with complex logic, and complex logic can produce a large number of nodes and connections. Script Canvas provides some specialized tools to help you manage this complexity.
 
 **Topics**
 + [Understanding Script Canvas Nodes](/docs/user-guide/scripting/script-canvas/nodes-understanding.md)

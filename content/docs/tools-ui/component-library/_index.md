@@ -7,7 +7,7 @@ weight: 300
 
 {{< preview-migrated >}}
 
-In the O3DE UI component library, you will find an explanation of each UI component \(i\.e\. widget\), along with guidelines for their usage\. Typically, each page contains the following information:
+In the O3DE UI component library, you will find an explanation of each UI component \(i.e. widget\), along with guidelines for their usage. Typically, each page contains the following information:
 + Use cases
 + Screenshots and explanations of component features
 + Usage guidelines
@@ -37,4 +37,4 @@ In the O3DE UI component library, you will find an explanation of each UI compon
 + [Toggle switch](uidev-toggle-switch-component.md)
 + [Tree view](uidev-tree-view-component.md)
 
-Additionally, a complete guide to the C\+\+ API can be found in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html)\.
+Additionally, a complete guide to the C\+\+ API can be found in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html).

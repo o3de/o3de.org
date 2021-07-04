@@ -6,41 +6,41 @@ title: O3DE UI sliders
 
 {{< preview-migrated >}}
 
-Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically\. The visual feedback shows users where the current value is within the range of valid values\.
+Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically. The visual feedback shows users where the current value is within the range of valid values.
 
  **Slider**
 
-The basic slider is a styled version of the `QSlider` widget from the Qt library\.
+The basic slider is a styled version of the `QSlider` widget from the Qt library.
 
 ![\[component slider style\]](/images/tools-ui/component-slider-style.png)
 
-Use the `SliderInt` class for signed integer values, and the `SliderDouble` class for double values\.
+Use the `SliderInt` class for signed integer values, and the `SliderDouble` class for double values.
 
  **Slider combo**
 
-A slider combo is a combination of the slider and spinbox widgets\. In practice, sliders can be difficult for the user to manipulate with precision\. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine\-tuning capability of the spinbox\.
+A slider combo is a combination of the slider and spinbox widgets. In practice, sliders can be difficult for the user to manipulate with precision. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine\-tuning capability of the spinbox.
 
 ![\[component slider combo style\]](/images/tools-ui/component-slider-combo-style.png)
 
-Use the `SliderCombo` class for signed integer values, and the `SliderDoubleCombo` class for double values\.
+Use the `SliderCombo` class for signed integer values, and the `SliderDoubleCombo` class for double values.
 
 ## Usage guidelines<a name="sliders-usage"></a>
 
 Follow these guidelines as you design your UI with sliders:
 
-1.  Sliders work best when the specific value does not matter to the user, and an approximate value is good enough\. Example: selecting a volume or defining the color gradient\.
+1.  Sliders work best when the specific value does not matter to the user, and an approximate value is good enough. Example: selecting a volume or defining the color gradient.
 
-1.  When placing a slider control on the UI, it's best to show the outcome side by side with the control, so a user can review and confirm if the value they select matches their expectation\.
+1.  When placing a slider control on the UI, it's best to show the outcome side by side with the control, so a user can review and confirm if the value they select matches their expectation.
 
 Avoid these design choices when using sliders:
-+ Don't use the slider when picking an exact value is important to the goal of the interface\.
-+ Don't use the slider if you don't have the start and end value for your use case\. Use the number edit input box instead\.
++ Don't use the slider when picking an exact value is important to the goal of the interface.
++ Don't use the slider if you don't have the start and end value for your use case. Use the number edit input box instead.
 
 ## Basic slider with midpoint<a name="slider-basic"></a>
 
 ![\[component slider basic\]](/images/tools-ui/component-slider-basic.png)
 
-The following example demonstrates the creation of a simple, integer slider using the optional midpoint style\.
+The following example demonstrates the creation of a simple, integer slider using the optional midpoint style.
 
  **Example**
 
@@ -65,7 +65,7 @@ sliderInt->setEnabled(false);
 
 ![\[component slider tooltip\]](/images/tools-ui/component-slider-tooltip.png)
 
-Add a tooltip to provide context for the value in the slider\.
+Add a tooltip to provide context for the value in the slider.
 
  **Example**
 
@@ -79,7 +79,7 @@ sliderInt->setToolTipFormatting("Opacity", "%");
 
 ![\[component slider combo basic\]](/images/tools-ui/component-slider-combo-basic.png)
 
-The following example demonstrates the creation of a double slider combo\.
+The following example demonstrates the creation of a double slider combo.
 
  **Example**
 

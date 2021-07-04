@@ -6,37 +6,37 @@ title: Console in Depth
 
 {{< preview-migrated >}}
 
-The console is a user interface system which handles console commands and console variables\. It also outputs log messages and stores the input and output history\.
+The console is a user interface system which handles console commands and console variables. It also outputs log messages and stores the input and output history.
 
 ## Color coding 
 
-The game console supports color coding by using the color indices 0\.\.9 with a leading $ character\. The code is hidden in the text outputted on the console\. Simple log messages through the `ILog` interface can be used to send text to the console\.
+The game console supports color coding by using the color indices 0..9 with a leading $ character. The code is hidden in the text outputted on the console. Simple log messages through the `ILog` interface can be used to send text to the console.
 
 ```
 This is normal $1one$2two$3three and so on
 ```
 
-In the preceding example, one renders in red, two in green, and three \(and the remaining text\) in blue\.
+In the preceding example, one renders in red, two in green, and three \(and the remaining text\) in blue.
 
 ## Console Variables 
 
-Console variables (cvars) provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command\-line argument before launching the application\.
+Console variables (cvars) provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command\-line argument before launching the application.
 
 ### Registering new console variables 
 
-For an integer or float based console variable, it is recommended to use the `IConsole::Register()` function to expose a C\+\+ variable as a console variable\.
+For an integer or float based console variable, it is recommended to use the `IConsole::Register()` function to expose a C\+\+ variable as a console variable.
 
-To declare a new string console variable, use the `IConsole::RegisterString()` function\.
+To declare a new string console variable, use the `IConsole::RegisterString()` function.
 
 ### Accessing console variables from C\+\+ 
 
-Console variables are exposed using the `ICVar` interface\. To retrieve this interface, use the `IConsole::GetCVar()` function\.
+Console variables are exposed using the `ICVar` interface. To retrieve this interface, use the `IConsole::GetCVar()` function.
 
-The most efficient way to read the console variable value is to access directly the C\+\+ variable bound to the console variable proxy\.
+The most efficient way to read the console variable value is to access directly the C\+\+ variable bound to the console variable proxy.
 
 ## Adding New Console Commands 
 
-The console can easily be extended with new console commands\. A new console command can be implemented in C\+\+ as a static function which follows the `ConsoleCommandFunc` type\. Arguments for this console command are passed using the `IConsoleCmdArgs` interface\.
+The console can easily be extended with new console commands. A new console command can be implemented in C\+\+ as a static function which follows the `ConsoleCommandFunc` type. Arguments for this console command are passed using the `IConsoleCmdArgs` interface.
 
 The following code shows the skeleton implementation of a console command:
 
@@ -66,16 +66,16 @@ pConsole->AddCommand("g_loadMod", RequestLoadMod);
 
 ## Console Variable Groups 
 
-Console variable groups provide a convenient way to apply predefined settings to multiple console variables at once\.
+Console variable groups provide a convenient way to apply predefined settings to multiple console variables at once.
 
-Console variables are commonly referred to as `CVarGroup` in the code base\. Console variable groups can modify other console variables to build bigger hierarchies\.
+Console variables are commonly referred to as `CVarGroup` in the code base. Console variable groups can modify other console variables to build bigger hierarchies.
 
 **Warning**
-Cycles in the assignments are not detected and can cause crashes\.
+Cycles in the assignments are not detected and can cause crashes.
 
 ### Registering a new variable group 
 
-To register a new variable group, add a new `.cfg` text file to the `GameSDK\config\CVarGroups` directory\.
+To register a new variable group, add a new `.cfg` text file to the `GameSDK\config\CVarGroups` directory.
 
 `sys_spec_Particles.cfg`
 
@@ -97,15 +97,15 @@ e_particles_max_emitter_draw_screen=4
 e_particles_max_emitter_draw_screen=16
 ```
 
-This creates a new console variable group named `sys_spec_Particles` that behaves like an integer console variable\. By default, this variable has the state `4` \(set in the line following the comment in the example\)\.
+This creates a new console variable group named `sys_spec_Particles` that behaves like an integer console variable. By default, this variable has the state `4` \(set in the line following the comment in the example\).
 
-On changing the variable, the new state is applied\. Console variables not specified in the `.cfg` file are not set\. All console variables need to be part of the default section\. An error message is output in case of violation of this rule\.
+On changing the variable, the new state is applied. Console variables not specified in the `.cfg` file are not set. All console variables need to be part of the default section. An error message is output in case of violation of this rule.
 
-If a console variable is not specified in a custom section, the value specified in the default section is applied\.
+If a console variable is not specified in a custom section, the value specified in the default section is applied.
 
 ### Console variable group documentation 
 
-The documentation of the console variable group is generated automatically\.
+The documentation of the console variable group is generated automatically.
 
 `sys_spec_Particles`
 
@@ -125,7 +125,7 @@ sys_spec_Particles [1/2/3/4/x]:
 
 #### From the console 
 
-In the console you can enter in the console variable group name and press tab\. If the variable value is not represented, it will print the value of `RealState`\.
+In the console you can enter in the console variable group name and press tab. If the variable value is not represented, it will print the value of `RealState`.
 
 ```
 sys_spec_Particles=2 [REQUIRE_NET_SYNC] RealState=3
@@ -133,21 +133,21 @@ sys_spec_Sound=1 [REQUIRE_NET_SYNC] RealState=CUSTOM
 sys_spec_Texture=1 [REQUIRE_NET_SYNC]
 ```
 
-By calling the console command `sys_RestoreSpec` you can check why the `sys_spec_` variables don't represent the right states\.
+By calling the console command `sys_RestoreSpec` you can check why the `sys_spec_` variables don't represent the right states.
 
 #### From C\+\+ code 
 
-From the code you can use the member function `GetRealIVal()` and compare its return value against the result of `GetIVal()` in `ICVar`\.
+From the code you can use the member function `GetRealIVal()` and compare its return value against the result of `GetIVal()` in `ICVar`.
 
 ## Deferred execution of command line console commands 
 
-The commands that are passed via the command line by using the \+ prefix are stored in a separate list as opposed to the rest of the console commands\.
+The commands that are passed via the command line by using the \+ prefix are stored in a separate list as opposed to the rest of the console commands.
 
-This list allows the application to distribute the execution of those commands over several frames rather than executing everything at once\.
+This list allows the application to distribute the execution of those commands over several frames rather than executing everything at once.
 
 ### Example 
 
-Consider the following example\.
+Consider the following example.
 
 ```
 --- autotest.cfg --
@@ -162,29 +162,29 @@ StarterGameLauncher.exe -devmode +map SinglePlayer +exec autotest +quit
 ```
 
 In the example, the following operations were performed:
-+ Load the SinglePlayer map\.
-+ Wait for 100 frames\.
-+ Take a screenshot called autotestFrames\.
-+ Wait for 5 seconds\.
-+ Take a screenshot called autotestTime\.
-+ Quit the application\.
++ Load the SinglePlayer map.
++ Wait for 100 frames.
++ Take a screenshot called autotestFrames.
++ Wait for 5 seconds.
++ Take a screenshot called autotestTime.
++ Quit the application.
 
 ### Details 
 
-Two categories of commands are defined: blocker and normal\.
+Two categories of commands are defined: blocker and normal.
 
-For each frame, the deferred command list is processed as a fifo\. Elements of this list are consumed as long as normal commands are encountered\.
+For each frame, the deferred command list is processed as a fifo. Elements of this list are consumed as long as normal commands are encountered.
 
-When a blocker is consumed from the list and executed, the process is delayed until the next frame\. For instance, commands like `map` and `screenshot` are blockers\.
+When a blocker is consumed from the list and executed, the process is delayed until the next frame. For instance, commands like `map` and `screenshot` are blockers.
 
-A console command \(either command or variable\) can be tagged as a blocker during its declaration using the` VF_BLOCKFRAME` flag\.
+A console command \(either command or variable\) can be tagged as a blocker during its declaration using the` VF_BLOCKFRAME` flag.
 
-The following synchronization commands are supported\.
+The following synchronization commands are supported.
 
 
 **Optional Title**
 
 |  Command  |  Type  |  Description  |
 | --- | --- | --- |
-| wait\_frames num: |  <int>  |  Wait for *num* frames before the execution of the list is resumed\.  |
-| wait\_seconds sec: |  <float>  |  Wait for *sec* seconds before the execution of the list is resumed\.  |
+| wait\_frames num: |  <int>  |  Wait for *num* frames before the execution of the list is resumed.  |
+| wait\_seconds sec: |  <float>  |  Wait for *sec* seconds before the execution of the list is resumed.  |

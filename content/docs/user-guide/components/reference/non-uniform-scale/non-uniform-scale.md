@@ -56,27 +56,27 @@ The following components are currently **incompatible** because they are not yet
 ## EBus Request Bus Interface
 **NonUniformScaleRequestBus** is the request bus for the **Non-uniform Scale** component.
 
-For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md)\.
+For more information about using the event bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
 
-Use the following request functions with the EBus interface to communicate with other components\.
+Use the following request functions with the EBus interface to communicate with other components.
 
 ### GetScale
 
-Returns the entity's non-uniform scale\.
+Returns the entity's non-uniform scale.
 
 **Parameters**
 None
 
 **Return**
-Entity's non-uniform scale value\.
+Entity's non-uniform scale value.
 Type: Vector3
 
 ### SetScale
 
-Sets the entity's non-uniform scale\.
+Sets the entity's non-uniform scale.
 
 **Parameters**
-New non-uniform scale value\.
+New non-uniform scale value.
 Type: Vector3
 
 **Return**
@@ -84,10 +84,10 @@ None
 
 ### RegisterScaleChangedEvent
 
-Registers a handler for the **[AZ::Event](/docs/user-guide/engine/az-event.md)** raised when the entity's non-uniform scale is changed\.
+Registers a handler for the **[AZ::Event](/docs/user-guide/engine/az-event.md)** raised when the entity's non-uniform scale is changed.
 
 **Parameters**
-Handler for non-uniform scale change events\.
+Handler for non-uniform scale change events.
 Type: NonUniformScaleChangedEvent::Handler
 
 **Return**

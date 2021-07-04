@@ -6,17 +6,17 @@ title: O3DE UI reflected property editor
 
 {{< preview-migrated >}}
 
-A **reflected property editor** automatically lays out controls for user\-editable properties that are reflected using the edit context\. It is frequently used as a content widget to populate [card](uidev-card-component.md) components\.
+A **reflected property editor** automatically lays out controls for user\-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](uidev-card-component.md) components.
 
 ![\[component reflected property editor in card\]](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
-For more information about reflecting and the edit context, see the **O3DE User Guide** topic on [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/)\.
+For more information about reflecting and the edit context, see the **O3DE User Guide** topic on [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/).
 
 ## Reflected property editor in a card<a name="reflected-property-editor-basic"></a>
 
-The following code shows how to add a simple **reflected property editor** to a **card**, like the one pictured in the image at the beginning of this topic\.
+The following code shows how to add a simple **reflected property editor** to a **card**, like the one pictured in the image at the beginning of this topic.
 
-For a complete working example, which demonstrates the concepts of edit context and reflection, see the **Reflected Property Editor** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), and browse the source code for that page\. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\ReflectedPropertyEditorPage.cpp`\.
+For a complete working example, which demonstrates the concepts of edit context and reflection, see the **Reflected Property Editor** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), and browse the source code for that page. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\ReflectedPropertyEditorPage.cpp`.
 
  **Example**
 

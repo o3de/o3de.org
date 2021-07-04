@@ -39,7 +39,7 @@ The Virtual Gamepad Gem features two components that you can use to customize in
 
 You can enable the virtual gamepad for runtime by creating instructions that loads the virtual gamepad UI canvas. You can do this with C++, Lua, or Script Canvas. For more information, see UICanvasManager and UICanvasComponent.
 
-The following example Lua script displays a virtual gamepad UI canvas if touch screen support is detected\.
+The following example Lua script displays a virtual gamepad UI canvas if touch screen support is detected.
 
 ```lua
 local touchDevice =

@@ -6,11 +6,11 @@ title: O3DE UI tree view component
 
 {{< preview-migrated >}}
 
-With the **tree view** component, users can navigate file system directories or a list of hierarchical data in O3DE\. Each item, such as a node or a branch, can have sub\-items\. Items can be expanded to reveal sub\-items\.
+With the **tree view** component, users can navigate file system directories or a list of hierarchical data in O3DE. Each item, such as a node or a branch, can have sub\-items. Items can be expanded to reveal sub\-items.
 
 The **tree view** component is often used in the following scenarios:
-+ Show system or predefined contents, such as the settings in Inspector or system settings page\.
-+ Show user created contents, such as in File Directory or Outliner\.
++ Show system or predefined contents, such as the settings in Inspector or system settings page.
++ Show user created contents, such as in File Directory or Outliner.
 
 Example from O3DE **Asset Browser**:
 
@@ -20,15 +20,15 @@ Example from O3DE **Asset Browser**:
 
 Follow these guidelines as you design your UI with tree views:
 
-1.  When the tree hierarchy is anticipated to be deep, such as a tree view used in file directories, it is suggested to add a file path to help users know where they are in the path\.
+1.  When the tree hierarchy is anticipated to be deep, such as a tree view used in file directories, it is suggested to add a file path to help users know where they are in the path.
 
 ## Basic tree view<a name="tree-view-basic"></a>
 
 ![\[component tree view basic\]](/images/tools-ui/component-tree-view-basic.png)
 
-Create a simple tree view, with support for showing branch lines\.
+Create a simple tree view, with support for showing branch lines.
 
-For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`\.
+For a working example of a tree view, using the model shown in the preceding image, view the **Tree View** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TreeViewPage.cpp`.
 
  **Example**
 
