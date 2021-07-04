@@ -174,35 +174,56 @@ code
   background-color: $o3de-black
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
 
+.navbar-collapse
+  @include media-breakpoint-down(md)
+    position: absolute
+    right: 0
+    top: 62px
+
+.navbar-dark .navbar-toggler
+  border: 0 none
+  padding: .25rem 0
+
+.navbar-dark .navbar-nav
+  @include media-breakpoint-down(md)
+    padding: 8px 24px
+    background-color: #222
+
+
 .navbar-dark .navbar-nav .nav-link
     color: $o3de-white
     &:hover 
-      color: #94D2FF; 
+      color: #94D2FF
+
+.navbar-dark .navbar-nav li
+  display: inline-block
+  position: relative
 
 .navbar-dark .navbar-nav li.active
     &:hover 
       .nav-link.active
-        color: #94D2FF;
+        color: #94D2FF
       div
-        background-color: #94D2FF;    
-        padding: 2px;
-        margin-left: 8px;
-        margin-right: 8px;
+        background-color: #94D2FF
 
 .navbar-dark .navbar-nav .nav-link.active
-    color: #1E70EB;
+    color: #1E70EB
 
 .navbar-dark .navbar-nav li.active div
-    background-color: #1E70EB;    
-    padding: 2px;
-    margin-left: 8px;
-    margin-right: 8px;
+    background-color: #1E70EB
+    padding-bottom: 4px
+    position: absolute
+    width: 100%
+    bottom: -11px
+    
+    @include media-breakpoint-down(md)
+      display: none
 
 .navbar-logo
   max-height: 36px
   color: #FFFFFF
 
-// layouts/partials/hero.html, layouts/partial/download/hero.html
+// layouts/partials/hero.html
 
 //scales the header proportionally
 $width: '59vw';
@@ -278,6 +299,17 @@ $width: '59vw';
   background-position: 50% 50%
   max-height: 20rem
 
+  @include media-breakpoint-down(md)
+    h1
+      font-size: 1.8rem
+      
+    h4
+      font-size: 1.25rem
+      
+    h5
+      font-size: .8rem
+
+
 .getting-started
   background: #111
 
@@ -336,17 +368,16 @@ $width: '59vw';
   @include media-breakpoint-down(md)
     padding: 36px 0
 
-
 .feature-row
   position: relative
   display: block
-  @include media-breakpoint-up(md)
+  @include media-breakpoint-up(lg)
     padding: 32px 0
 
 .features-img
   background-size: cover
   
-  @include media-breakpoint-up(md)
+  @include media-breakpoint-up(lg)
     left: 0
     right: 50%
     top: 0
@@ -355,7 +386,7 @@ $width: '59vw';
     margin-right: 110px
     background-position: 100% 0
   
-  @include media-breakpoint-down(sm)
+  @include media-breakpoint-down(md)
     display: block
     width: 100%
     padding-bottom: 50%
@@ -364,7 +395,7 @@ $width: '59vw';
 .features-img-reverse
   background-size: cover
   
-  @include media-breakpoint-up(md)
+  @include media-breakpoint-up(lg)
     left: 50%
     right: 0
     top: 0
@@ -373,14 +404,14 @@ $width: '59vw';
     margin-left: 110px
     background-position: 0 0
   
-  @include media-breakpoint-down(sm)
+  @include media-breakpoint-down(md)
     display: block
     width: 100%
     padding-bottom: 50%
     background-position: 0 0
 
 .features-img-copy
-  @include media-breakpoint-down(sm)
+  @include media-breakpoint-down(md)
     background-position: 0 100%
 
 
@@ -388,10 +419,10 @@ $width: '59vw';
   h2
     margin: 0 0 24px
 
-    @include media-breakpoint-down(md)
+    @include media-breakpoint-down(lg)
       font-size: 1.8rem
     
-  @include media-breakpoint-down(sm)
+  @include media-breakpoint-down(md)
     text-align: center
     padding: 0 32px
     margin: 0
@@ -431,6 +462,8 @@ $width: '59vw';
     padding: 8px 0
     height: 80px
     width: auto
+    @include media-breakpoint-down(xs)
+      width: 100%
 
   .aws-logo
     padding: 12px 0 4px
@@ -555,7 +588,6 @@ $width: '59vw';
     @include media-breakpoint-down(sm)
       padding-bottom: 14rem
 
-  
 // layouts/contribute/section.html 
 
 .contribute-hero 
@@ -617,6 +649,32 @@ $width: '59vw';
       border-color: $o3de-blue
       color: $o3de-blue
 
+// Blog
+
+  // Single Blog page
+  
+.blog-post
+  h1
+    font-weight: 600
+  
+  h4
+    .author
+      color: $o3de-blue
+  
+  .blog-hero-image
+    padding-top: 1rem
+    img
+      width: 100%
+      height: auto
+  
+.blog-single-content
+  padding-bottom: 5rem
+
+  .back-to-blog
+    margin-top: 2rem
+
+  h2
+    margin-bottom: 1.5rem
 
 // Docs pages 
 
@@ -656,6 +714,9 @@ $width: '59vw';
 
 .docs-sidebar 
   background-color: rgba(30, 112, 235, 0.03)  
+  
+  @include media-breakpoint-down(lg)
+    max-width: 240px
 
   .fa-chevron-right
     display: none
@@ -765,3 +826,12 @@ nav
     margin-top: 0
     margin-bottom: 0
 
+// layouts/partials/footer-content.html
+
+.footer-links
+  a
+    padding: 8px 16px 0 0
+    display: inline-block
+    @include media-breakpoint-down(sm)
+      display: block
+      
