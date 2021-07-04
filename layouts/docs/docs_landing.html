@@ -55,7 +55,7 @@
   <div class="row mt-3">
       {{ range $docsSections }}
         {{ range where (where .Sections ".Page.LinkTitle" "!=" "Get Started") ".Page.LinkTitle" "!=" "Release Notes" }}
-        <div class="col col-lg-4 col-md-6 pb-3">
+        <div class="col-12 col-lg-4 col-md-6 pb-3">
           <a href="{{ .RelPermalink }}" class="card doc_card">
               <img src="{{ .Param "guide_img" }}" class="card-img-top" alt="{{ .Page.Title }}">
               <div class="card-body">

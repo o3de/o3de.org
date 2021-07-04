@@ -1,5 +1,5 @@
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
-{{ $docsSections := where $allSections "Section" "docs" }} <!-- "getting-started" and "deployment" -->
+{{ $docsSections := where $allSections "Section" "docs" }}
 {{ $thisUrl      := .RelPermalink }}
 {{ $thisSection := .CurrentSection.RelPermalink }}
 <!-- thisUrl = {{- $thisUrl -}} -->
