@@ -9,7 +9,7 @@ title: Customizing O3DE Editor
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings.
 
 **Note**
-To change the size setting for the toolbar icon, open the `Editor.cfg` file and enter a value for the `ed_toolbarIconSize` parameter. By default, the toolbar icon size is set to `0` \(32 pixels\).
+To change the size setting for the toolbar icon, open the `Editor.cfg` file and enter a value for the `ed_toolbarIconSize` parameter. By default, the toolbar icon size is set to `0` (32 pixels).
 
 ## Docking Windows and Toolbars 
 
@@ -81,13 +81,13 @@ You can change the general O3DE Editor settings and file settings.
 | Console Background |  Changes the background color for the console.  |
 | Auto\-load last level at startup |  Loads the level that was last loaded.  |
 | Show Time in Console |  Displays the time in the console window.  |
-| Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` \(32 pixels\).  |
+| Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` (32 pixels).  |
 | Stylus Mode |  Enables stylus mode for tablets and other pointing devices.  |
-|  **Enable UI 2.0 \(EXPERIMENTAL\)**  |  Enables the updated user interface \(UI\) in O3DE Editor.  |
-|  **Enable Scene Inspector \(EXPERIMENTAL\)**  | Enables the option to inspect scenes in files such as .fbx files. |
+|  **Enable UI 2.0 (EXPERIMENTAL)**  |  Enables the updated user interface (UI) in O3DE Editor.  |
+|  **Enable Scene Inspector (EXPERIMENTAL)**  | Enables the option to inspect scenes in files such as .fbx files. |
 |  **Restore Viewport Camera on Game Mode Exit**  |  Returns the camera to the original transform when you exit gameplay mode.  |
-|  **Enable Legacy UI \(DEPRECATED\)**  |  Enable the legacy user interface \(UI\) in O3DE Editor.  |
-|  **Enable New Viewport Interaction Model \(EXPERIMENTAL\)**  |  Replaces the old interaction model in the viewport. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/editor/viewport/working-with-viewport-interaction-model.md).  |
+|  **Enable Legacy UI (DEPRECATED)**  |  Enable the legacy user interface (UI) in O3DE Editor.  |
+|  **Enable New Viewport Interaction Model (EXPERIMENTAL)**  |  Replaces the old interaction model in the viewport. For more information, see [Working with the Viewport Interaction Model](/docs/user-guide/editor/viewport/working-with-viewport-interaction-model.md).  |
 
 
 **Messaging**
@@ -151,9 +151,9 @@ You can change the general O3DE Editor settings and file settings.
 | Texture Editor |  Specifies the program to use for textures.  |
 | Animation Editor |  Specifies the program to use for animations.  |
 | Enable |  Enables auto backup.  |
-| Time Interval |  Specifies the frequency of auto backup \(in minutes\).  |
+| Time Interval |  Specifies the frequency of auto backup (in minutes).  |
 | Maximum Backups |  Specifies the maximum number of auto backups.  |
-| Remind Time |  Specifies the frequency of auto backup reminders \(in minutes\).  |
+| Remind Time |  Specifies the frequency of auto backup reminders (in minutes).  |
 
 ### Viewport 
 
@@ -176,7 +176,7 @@ You can change the default settings for the viewport.
 | Drag Square Size |  Specifies the size of the drag square to prevent from accidentally moving objects when selecting.  |
 | Display Object Links |  Displays entity links in the viewport.  |
 | Display Animation Tracks |  Displays the animation path for any objects in the Track View. One line = one frame.  |
-| Always Show Radii |  Displays the area of effect \(radius\) for certain entities.  |
+| Always Show Radii |  Displays the area of effect (radius) for certain entities.  |
 | Always Show Prefab Bounds |  Displays the prefab boundary helpers.  |
 | Always Show Prefab Objects |  Displays the prefab object helpers.  |
 | Show Bounding Boxes |  Displays a bounding box around each object.  |

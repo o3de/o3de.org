@@ -30,7 +30,7 @@ When you select a group of entities, the Viewport Interaction Model follows the 
 1. Use the manipulator to modify the entities.
 **Example**
 
-   In the following example, three entities are selected. Because there is no common parent of the group, the manipulator defaults to world space. The entities now move in relation to the parent \(the manipulator\).
+   In the following example, three entities are selected. Because there is no common parent of the group, the manipulator defaults to world space. The entities now move in relation to the parent (the manipulator).
 ![\[Manipulate a group of entities using world space in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-6.gif)
 
 1. Press and hold **Ctrl** and **Alt** and click a target entity. This selects a reference space.
@@ -50,7 +50,7 @@ When you select a group of entities, the Viewport Interaction Model follows the 
 1. Select child entities of the same parent entity and use the manipulator to change them. When you select a group of entities that share the same parent, the manipulator defaults its orientation to the parent.
 **Example**
 
-   In the following example, two child entities \(the tires\) are selected. The manipulator rotates the child entities in relation to its parent \(the car\).
+   In the following example, two child entities (the tires) are selected. The manipulator rotates the child entities in relation to its parent (the car).
 ![\[Manipulate child entities from a parent entity in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-9.gif)
 
 1. Press and hold **Alt** while modifying a group of selected entities. This enables you to control changes to the entities in local space. You can quickly iterate and modify your entities and view the changes in the viewport.

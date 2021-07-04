@@ -14,7 +14,7 @@ You can adjust the **SimulatedObject** node to change its animation during runti
 
 1. Enter the following values.
 
-   1. For **Value type**, select the **Float \(slider\)**.
+   1. For **Value type**, select the **Float (slider)**.
 
    1. For **Name**, enter **Stiffness**.
 

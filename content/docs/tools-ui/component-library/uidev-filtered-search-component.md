@@ -20,7 +20,7 @@ Entity Outliner in the O3DE Editor uses multiple filter categories in a filtered
 
 1.  **Filter menu button**
 
-   \(Optional\) Add one or more type filters to your filtered search widget to show the filter menu button. When users select this button, the filter menu opens.
+   (Optional) Add one or more type filters to your filtered search widget to show the filter menu button. When users select this button, the filter menu opens.
 
 1.  **Filter type search field**
 

@@ -66,7 +66,7 @@ You can also use the Track Editor toolbar to select, move, and snap keys. When m
 | Go to previous key | Selects the key directly before the currently selected key. |
 | Go to next key | Selects the key directly after the currently selected key. |
 | Slide keys | Moves the currently selected key and slides all the keys after it to the new point on the timeline while maintaining the original spacing. |
-| Move keys | Moves the currently selected key\(s\) to the new point on the timeline without affecting other keys. |
+| Move keys | Moves the currently selected key(s) to the new point on the timeline without affecting other keys. |
 | Scale keys |  Functions only with multiple keys selected to increase or decrease the space between the selected keys proportionally.  |
 | Magnet Snapping | Snaps to keys in other tracks as you get close to them; allows you to place the key anywhere but indicates a red circle on the key you want to snap to. |
 | Frame Snapping | Snaps to frames. |

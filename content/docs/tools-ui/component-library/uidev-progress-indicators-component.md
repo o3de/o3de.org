@@ -92,7 +92,7 @@ spinner->SetIsBusy(true);
 
 For details on the **progress indicator** API's, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::ProgressBar](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_progress_bar.html)
-+  [AzQtComponents::StyledBusyLabel](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_styled_busy_label.html) \(spinner\)
++  [AzQtComponents::StyledBusyLabel](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_styled_busy_label.html) (spinner)
 
 Relevant Qt documentation includes the following topics:
 +  [QProgressBar](https://doc.qt.io/qt-5/qprogressbar.html)

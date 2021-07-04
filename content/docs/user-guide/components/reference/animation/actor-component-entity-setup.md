@@ -22,7 +22,7 @@ The attachments entities may not line up with the main entity. You'll fix this i
 **Example**
 ![\[View the main actor entity and the attachment entities in the viewport.\]](/images/user-guide/component/component-actor-component-entity-setup-3.png)
 
-1. To align the children with its parent, select a child \(attachment\) entity and then in the **Entity Inspector**, specify the **Translate** values to `0`. Repeat for any other child entities.
+1. To align the children with its parent, select a child (attachment) entity and then in the **Entity Inspector**, specify the **Translate** values to `0`. Repeat for any other child entities.
 ![\[Change the Translate values to 0 on each child entity to line it up with the parent.\]](/images/user-guide/component/component-actor-component-entity-setup-4.png)
 
    The attachments now line up with the main actor entities.
@@ -32,6 +32,6 @@ The attachments entities may not line up with the main entity. You'll fix this i
 
    1. In the **Actor** component, for **Attachment type**, choose **Skin attachment**.
 
-   1. For **Target entity**, click the picker icon ![\[Image NOT FOUND\]](/images/shared/picker.png) and then select the primary actor to attach the skinned mesh \(for example, the **cowboyactor**\).
+   1. For **Target entity**, click the picker icon ![\[Image NOT FOUND\]](/images/shared/picker.png) and then select the primary actor to attach the skinned mesh (for example, the **cowboyactor**).
 
 Your component entity setup is complete. When your primary actor animates, the additional skinned mesh attachments animate with the primary actor skeleton.

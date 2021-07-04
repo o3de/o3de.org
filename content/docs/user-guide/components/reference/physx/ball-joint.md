@@ -37,7 +37,7 @@ When enabled, a cone that represents the orientation and limits of the ball join
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
 
 **Lead\-Follower Collide**
-When enabled, the lead entity and follower entity \(the entity containing the joint component\) will collide.
+When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
 
 **Limit**
 When enabled, the lead entity's movement around the joint axes is constrained by angular limits. Enabling **Limit** exposes the **Soft Limit**, the **Y axis angular limit**, and the **Z axis angular limit** properties.

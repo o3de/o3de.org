@@ -64,7 +64,7 @@ You must export and save your deformer weights in order to import the weight map
 
 1. On the **Modify** tab, expand **Advanced Parameters**. Click **Save**.
 
-1. Save the mesh envelope \(skin\).
+1. Save the mesh envelope (skin).
 
 1. On the **Modify** tab, select the skin. Right\-click the skin and choose **Delete**.
 
@@ -80,7 +80,7 @@ You must export and save your deformer weights in order to import the weight map
 
 1. For **Modifier List**, choose **Skin**.
 
-1. Under **Advanced Parameters**, click **Load** and choose the mesh envelope \(skin\) that you saved earlier.
+1. Under **Advanced Parameters**, click **Load** and choose the mesh envelope (skin) that you saved earlier.
 **Note**
 You must save your weights in order to load the weights after adding a new skin modifier.
 

@@ -38,13 +38,13 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 | Infinite life time | Make the particle lifetime infinite. |
 | Life time | Enter the number of seconds that the emitted particles are initially active during. |
 | Life time variation | Enter the number of seconds that the lifetime of the emitted particles can vary. |
-| Sprite pathname | Click the ellipsis \(...\) to open the Pick Texture dialog box and select a sprite image file. |
-| Animated sprite sheet | This option is available when the selected sprite is a sprite sheet \(has more than one cell\). Select to change the sprite sheet cell index on each particle over time. |
+| Sprite pathname | Click the ellipsis (...) to open the Pick Texture dialog box and select a sprite image file. |
+| Animated sprite sheet | This option is available when the selected sprite is a sprite sheet (has more than one cell). Select to change the sprite sheet cell index on each particle over time. |
 | Loop sprite sheet animation | This option is available when Animated sprite sheet is set. Select to loop the sprite sheet cell animation. |
-| Random sprite sheet index | This option is available when the selected sprite is a sprite sheet \(has more than one cell\). Select to randomly choose the initial sprite sheet cell index. |
-| Sprite sheet index | This option is available when the selected sprite is a sprite sheet \(has more than one cell\) and Random sprite sheet index isn't set. Select the sprite sheet index that is used for the emitted particles. |
-| Sprite sheet start frame | This option is available when the selected sprite is a sprite sheet \(has more than one cell\) and Random sprite sheet index is set. Select the starting frame of the sprite sheet range for sprite sheet animation or randomly choosing the index. |
-| Sprite sheet end frame | This option is available when the selected sprite is a sprite sheet \(has more than one cell\) and Random sprite sheet index is set. Sets the end frame of the sprite sheet range for sprite sheet animation or randomly choosing the index. |
+| Random sprite sheet index | This option is available when the selected sprite is a sprite sheet (has more than one cell). Select to randomly choose the initial sprite sheet cell index. |
+| Sprite sheet index | This option is available when the selected sprite is a sprite sheet (has more than one cell) and Random sprite sheet index isn't set. Select the sprite sheet index that is used for the emitted particles. |
+| Sprite sheet start frame | This option is available when the selected sprite is a sprite sheet (has more than one cell) and Random sprite sheet index is set. Select the starting frame of the sprite sheet range for sprite sheet animation or randomly choosing the index. |
+| Sprite sheet end frame | This option is available when the selected sprite is a sprite sheet (has more than one cell) and Random sprite sheet index is set. Sets the end frame of the sprite sheet range for sprite sheet animation or randomly choosing the index. |
 | Sprite sheet frame delay | This option is available when Animated sprite sheet is set. Type the number of seconds of delay between each sprite sheet frame. |
 | Blend mode |  Select one of the following:   |
 
@@ -74,7 +74,7 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 | Name | Description |
 | --- | --- |
 | Lock aspect ratio | Locks the width and height of the emitted particles into the current aspect ratio. |
-| Pivot | Enter X and Y values that specify the pivot for the particles from \(0,0\) at the top left to \(1,1\) at the bottom right. |
+| Pivot | Enter X and Y values that specify the pivot for the particles from (0,0) at the top left to (1,1) at the bottom right. |
 | Size | Enter X and Y values that specify the size of each emitted particle. |
 | Size variation | Enter X and Y values that specify the variation in size of each emitted particle. |
 
@@ -93,17 +93,17 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 
 | Name | Description |
 | --- | --- |
-| Speed multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle speed over its lifetime. |
-| Width multiplier |  This option is available when **Lock aspect ratio** \(in **Particle Size**\) isn't set.  Click the plus sign \(**+**\) to add keyframes that control a curve to multiply the particle width over its lifetime.  |
-| Height multiplier |  This option is available when **Lock aspect ratio** \(in **Particle Size**\) isn't set.  Click the plus sign \(**+**\) to add keyframes that control a curve to multiply the particle height over its lifetime.  |
-| Size multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle size over its lifetime. |
-| Color multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle color over its lifetime. |
-| Alpha multiplier | Click the plus sign \(+\) to add keyframes that control a curve to multiply the particle alpha over its lifetime. |
+| Speed multiplier | Click the plus sign (+) to add keyframes that control a curve to multiply the particle speed over its lifetime. |
+| Width multiplier |  This option is available when **Lock aspect ratio** (in **Particle Size**) isn't set.  Click the plus sign (**+**) to add keyframes that control a curve to multiply the particle width over its lifetime.  |
+| Height multiplier |  This option is available when **Lock aspect ratio** (in **Particle Size**) isn't set.  Click the plus sign (**+**) to add keyframes that control a curve to multiply the particle height over its lifetime.  |
+| Size multiplier | Click the plus sign (+) to add keyframes that control a curve to multiply the particle size over its lifetime. |
+| Color multiplier | Click the plus sign (+) to add keyframes that control a curve to multiply the particle color over its lifetime. |
+| Alpha multiplier | Click the plus sign (+) to add keyframes that control a curve to multiply the particle alpha over its lifetime. |
 | Time |  Enter a value between `0` and `1` that specifies when the keyframe occurs during the particle lifetime.  A value of `0` is the start of the particle lifetime and `1` is the end of the particle lifetime.  |
 | Multiplier |  Specify a value from `-100` through `100` to multiply against the value that this timeline controls.  For example, if the speed value is `50.0` and the speed multiplier for a specific keyframe is `2.0`, the value of speed at the specified keyframe is `100`.  |
 | In tangent |  Controls the in tangent for the current keyframe. Select one of the following:    |
 | Out tangent |  Controls the out tangent for the current keyframe. Select one of the following:    |
-| Ease In |  Specifies a gradual approach of a curve to a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 \(x\-cubed\) curve at its origin.  |
-| Ease Out |  Specifies a gradual retreat of a curve from a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 \(x\-cubed\) curve at its origin.  |
+| Ease In |  Specifies a gradual approach of a curve to a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 (x\-cubed) curve at its origin.  |
+| Ease Out |  Specifies a gradual retreat of a curve from a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 (x\-cubed) curve at its origin.  |
 | Linear | Specifies that the curve moves linearly from the keyframe towards the next or previous keyframe. |
 | Step | Specifies that the curve jumps from the current keyframe value to the next or previous keyframe value. |

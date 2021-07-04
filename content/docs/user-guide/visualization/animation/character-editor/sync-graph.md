@@ -20,12 +20,12 @@ This topic describes the following main steps for synchronizing two animation gr
 
 1. Add a servant parameter action to the primary graph to send change events to the secondary graph.
 
-1. Synchronize the graphs by using O3DE's [Event Bus \(EBus\)](/docs/user-guide/engine/ebus/_index.md) system and Lua script.
+1. Synchronize the graphs by using O3DE's [Event Bus (EBus)](/docs/user-guide/engine/ebus/_index.md) system and Lua script.
 
 **Note**
 For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md).
 
-This topic illustrates this graph synchronization with an example that has two actors, a robot actor \("Jack"\) and a gun actor. When the player activates the sync mode and uses the keyboard to fire, the robot makes a firing motion and the gun fires. When the player deactivates the sync mode, the robot makes a firing motion, but the gun does not fire.
+This topic illustrates this graph synchronization with an example that has two actors, a robot actor ("Jack") and a gun actor. When the player activates the sync mode and uses the keyboard to fire, the robot makes a firing motion and the gun fires. When the player deactivates the sync mode, the robot makes a firing motion, but the gun does not fire.
 
 ![\[The example game scene.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-1.png)
 
@@ -89,10 +89,10 @@ You are now ready to add a parameter to the secondary graph that receives the pa
 
 **To add a parameter to the secondary graph to receive the change event from the primary graph**
 
-1. On the **Parameters** tab for the secondary animation graph, click the plus \(**+**\) icon, and choose **Add parameter**.
+1. On the **Parameters** tab for the secondary animation graph, click the plus (**+**) icon, and choose **Add parameter**.
 ![\[Choose Add parameter in Animation Editor.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-6.png)
 
-1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean \(checkbox\)** value type because the gun trigger is either on or off.
+1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean (checkbox)** value type because the gun trigger is either on or off.
 ![\[Choose a value type for the parameter.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-7.png)
 
 1. For **Name**, enter a name for the parameter. This example uses `gunTrigger`.
@@ -139,14 +139,14 @@ Now the secondary animation graph is ready to receive signals from the primary g
 
 ## 4. Add a Parameter and Parameter Conditions to the Primary Graph 
 
-You add a parameter and parameter conditions to the primary graph just as you did with the secondary graph. However, you also add secondary \("servant"\) parameter actions to the primary graph. The actions signal the secondary graph to mimic the animations of the primary graph.
+You add a parameter and parameter conditions to the primary graph just as you did with the secondary graph. However, you also add secondary ("servant") parameter actions to the primary graph. The actions signal the secondary graph to mimic the animations of the primary graph.
 
 **To add a parameter to the primary graph**
 
-1. On the **Parameters** tab, click the plus \(**+**\) icon, and choose **Add parameter**.
+1. On the **Parameters** tab, click the plus (**+**) icon, and choose **Add parameter**.
 ![\[Adding a parameter to the primary graph.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-16.png)
 
-1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean \(checkbox\)** value type because the gun trigger is either on or off.
+1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean (checkbox)** value type because the gun trigger is either on or off.
 ![\[Choosing a value type for the parameter.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-17.png)
 
 1. For **Name**, enter a name for the parameter. This example uses `shoot`.
@@ -185,7 +185,7 @@ Now you add parameter conditions on the transition lines in the primary graph as
 
 ## 5. Add Servant Parameter Actions to the Primary Graph 
 
-Now you are ready to add secondary \("servant"\) parameter actions to the primary graph. A script uses these actions to synchronize the two graphs.
+Now you are ready to add secondary ("servant") parameter actions to the primary graph. A script uses these actions to synchronize the two graphs.
 
 **To add a servant parameter action to the primary graph**
 
@@ -198,7 +198,7 @@ Now you are ready to add secondary \("servant"\) parameter actions to the primar
 1. For **Servant Parameter Action**, in the **Trigger Mode** box, keep the default **On Enter**. **On Enter** specifies that the action is triggered when the state or transition is entered.
 ![\[Use On Enter for Trigger Mode.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-24.png)
 
-1. In the **Servant anim graph** box, click **Browse** \(**...**\) and choose the secondary animation graph that has the parameter that you want to use. This example chooses a secondary animation graph called **syncFeature\_Gun**.
+1. In the **Servant anim graph** box, click **Browse** (**...**) and choose the secondary animation graph that has the parameter that you want to use. This example chooses a secondary animation graph called **syncFeature\_Gun**.
 
 1. Click **Select parameter** to choose a parameter from the secondary animation graph that you just chose. This example chooses the **gunTrigger** parameter.
 ![\[Click Select parameter.\]](/images/user-guide/actor-animation/char-animation-editor-sync-graph-25.png)
@@ -226,7 +226,7 @@ Synchronizing the primary and secondary graphs involves the following steps:
 
 1. Placing a Lua script component and Lua script on the primary entity.
 
-The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus \(EBus\)](/docs/user-guide/engine/ebus/_index.md) system.
+The Lua scripts synchonize the two graphs by handling animation graph events in O3DE's [Event Bus (EBus)](/docs/user-guide/engine/ebus/_index.md) system.
 
 ### Getting Input from the Player 
 
@@ -238,7 +238,7 @@ In the example, the synchronization state of the primary and secondary graphs an
 | Keystroke | Description | Event Value Multiplier |
 | --- | --- | --- |
 | 1 | Turns on sync mode. | 1 |
-| 2 | Turns off sync mode \(off by default\). | \-1 |
+| 2 | Turns off sync mode (off by default). | \-1 |
 | S | Fires the gun. | 1 |
 | D | Stops the gun from firing. | \-1 |
 
@@ -264,9 +264,9 @@ The following image shows the corresponding input bindings in the **Input Bindin
 
 ### Using a Script on the Secondary Graph to Toggle Synchronization 
 
-The example uses Lua Script components on both the primary \(robot\) and secondary \(gun\) entities. The script on the primary entity controls the firing of the gun. The script on the secondary entity controls the sync mode. To add a Lua script to an entity, add a [Lua Script component](/docs/user-guide/editor/add-lua-script.md) to the entity and then attach the script to the component.
+The example uses Lua Script components on both the primary (robot) and secondary (gun) entities. The script on the primary entity controls the firing of the gun. The script on the secondary entity controls the sync mode. To add a Lua script to an entity, add a [Lua Script component](/docs/user-guide/editor/add-lua-script.md) to the entity and then attach the script to the component.
 
-The Lua script on the gun entity receives the input from the keyboard to toggle the sync mode. To synchronize the secondary graph to the primary graph, the script uses the `SyncAnimGraph` EBus event. In the following example, the `self.entityId` parameter refers to the secondary entity \(the gun\). The `self.Properties.PrimaryEntity` parameter refers to the robot.
+The Lua script on the gun entity receives the input from the keyboard to toggle the sync mode. To synchronize the secondary graph to the primary graph, the script uses the `SyncAnimGraph` EBus event. In the following example, the `self.entityId` parameter refers to the secondary entity (the gun). The `self.Properties.PrimaryEntity` parameter refers to the robot.
 
 ```
 AnimGraphComponentRequestBus.Event.SyncAnimGraph(self.entityId,self.Properties.PrimaryEntity);
@@ -328,7 +328,7 @@ return syncSample;
 
 ### Using Script on the Primary Graph to Control Shooting 
 
-The example Lua script on the primary entity \(the robot\) receives the keyboard input that toggles the firing of the gun. The robot entity's animation graph's `shoot` parameter uses the **Boolean \(checkbox\)** type. When the gun fires, the `shoot` parameter is true. Because `shoot` is a named Boolean parameter, the Lua script on the primary entity uses the `SetNamedParameterBool` function on the `AnimGraphComponentBus`.
+The example Lua script on the primary entity (the robot) receives the keyboard input that toggles the firing of the gun. The robot entity's animation graph's `shoot` parameter uses the **Boolean (checkbox)** type. When the gun fires, the `shoot` parameter is true. Because `shoot` is a named Boolean parameter, the Lua script on the primary entity uses the `SetNamedParameterBool` function on the `AnimGraphComponentBus`.
 
 The full script shows how the `SetNamedParameterBool` function is used to toggle the shooting status.
 

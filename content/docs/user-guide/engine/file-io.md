@@ -11,7 +11,7 @@ When you write an `AssetHandler`\-derived class to load assets in O3DE, runtime 
 + Loading raw configuration files from the deployment root during startup before `.pak` files are mounted and available.
 + Direct access to the files in a `.pak` file.
 + Direct access to files at arbitrary locations on disk.
-+ Streaming file formats \(for example, audio or video\) that do not load the entire file but play it back. This approach commonly uses middleware to play back or capture audio, video, or vertex data. Most such systems require that you implement file hooks to perform operations like `read`, `seek`, `tell`, `open`, and `close`. In these cases, direct file access might be easier than treating the files as assets and performing operations on them with `AZ::Data` systems.
++ Streaming file formats (for example, audio or video) that do not load the entire file but play it back. This approach commonly uses middleware to play back or capture audio, video, or vertex data. Most such systems require that you implement file hooks to perform operations like `read`, `seek`, `tell`, `open`, and `close`. In these cases, direct file access might be easier than treating the files as assets and performing operations on them with `AZ::Data` systems.
 + Other legacy systems or middleware that require direct file access for which `AZ::DataAsset` systems cannot be used. However, note that it is possible to write a file access shim that describes how to access files for most middleware.
 + Loading raw source files from locations other than the asset cache. Loading source files from locations other than the asset cache is possible only for tools inside O3DE Editor. Only the asset cache ships with your game, so loading raw source files from locations other than the asset cache at run time is not possible.
 
@@ -83,7 +83,7 @@ Refers to the asset cache. This is the default alias when no alias is specified.
 + Because `@assets@` is the default alias, code can simply load files by name \(for example, `textures\MyTexture.dds`\) without using the asset system. This makes it unnecessary to have the `@assets@` alias appear throughout the code.
 **Note**
 If you are loading files from the asset cache, do not prefix your file names with the `@assets@` alias. The use of aliases is required only when you must alter the default behavior. This best practice makes your code easier to read and enhances compatibility.
-+ During development on a PC, `@assets@` points to the `dev\Cache\<game_name>\pc\<game_name>` directory. After release, it points to the directory where your `.pak` files are stored \(not the root of your cache where your configuration files are stored\).
++ During development on a PC, `@assets@` points to the `dev\Cache\<game_name>\pc\<game_name>` directory. After release, it points to the directory where your `.pak` files are stored (not the root of your cache where your configuration files are stored).
 + Because the asset cache can be locked by asset processing operations, attempting to write to the asset cache can cause an assertion fail. Do not attempt to write files to the asset cache.
 
 **`@root@`**
@@ -151,7 +151,7 @@ Specifies the `\dev\` directory of your source tree where files like `bootstrap.
 Specifies the location of your game project's assets directory in the source tree. This directory contains uncompiled source files like `.tif` or `.fbx` files. It does not contain compressed `.dds` files or other assets that a game normally uses. Note the following:
 + `@devassets@` is a good starting point for a file open dialog that asks a user where to save a new file.
 + Because existing files might be in a gem, do not save them in `@devassets@`. Instead, when your editor opens a file, have your editor remember the file's location. Then have the editor save the file to the file's original location.
-+ Because not all source files are located in `@devassets@` \(many are located in gems\), do not attempt to find all source files by searching its location.
++ Because not all source files are located in `@devassets@` (many are located in gems), do not attempt to find all source files by searching its location.
 
 ## The FileIO Stack 
 
@@ -159,7 +159,7 @@ To service the needs of the game client and tools, more than one `FileIO` instan
 
 ![\[File access in local and remote scenarios\]](/images/user-guide/file-access-direct-1.png)
 
-The behavior of the **Either/Or** branch depends on whether the virtual file system \(VFS\) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non\-PC devices such as [Android](/docs/userguide/mobile/android/configure-project#android-vfs) and [iOS](/docs/user-guide/platforms/ios/virtual-file-system.md). VFS is required for [live reloading of assets](/docs/user-guide/assets/live-reloading.md). Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
+The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non\-PC devices such as [Android](/docs/userguide/mobile/android/configure-project#android-vfs) and [iOS](/docs/user-guide/platforms/ios/virtual-file-system.md). VFS is required for [live reloading of assets](/docs/user-guide/assets/live-reloading.md). Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
 
 ```
 -- remote_filesystem - enable Virtual File System (VFS)

@@ -31,8 +31,8 @@ The following table shows the keyboard shortcuts that you can use in the Script 
 | Ctrl+Shift+H | Ungroup | Ungroups the currently selected group. |
 | Ctrl+Number\_Key | Create bookmark | Creates a bookmark out of the current view and assigns it to the specified number key. If you choose a number that is already assigned to a bookmark or a bookmark\-enabled group, you are prompted to reassign the existing bookmark. For more information about bookmarks, see [Adding Bookmarks for Script Canvas](/docs/user-guide/scripting/script-canvas/bookmarks.md). For information about enabling groups as bookmarks, see [Grouping Nodes](/docs/user-guide/scripting/script-canvas/node-groups.md). |
 | Number\_Key | Jump to bookmark | Jumps to the bookmark location associated with the key that is pressed. |
-| Ctrl+Plus Sign \(+\) | Zoom in | Zooms the graph in. |
-| Ctrl+Minus Sign \(\-\) | Zoom out | Zooms the graph out. |
+| Ctrl+Plus Sign (+) | Zoom in | Zooms the graph in. |
+| Ctrl+Minus Sign (\-) | Zoom out | Zooms the graph out. |
 | Ctrl+Shift+Up Arrow | Zoom to selection | Centers the view on the nodes that are currently selected. |
 | Ctrl+Shift+Down Arrow | Show entire graph | Centers the entire graph into the current display. Zooms out as much as possible to display all nodes. |
 | Ctrl+Shift+Left Arrow | Show start of chain | Centers the view on the nodes that do not have any input connections, and are connected to the selected node through their output connections. |
@@ -55,5 +55,5 @@ The following shortcuts use the mouse or keyboard and mouse.
 | Alt+Left Click node | Disconnect and delete a single node or group | Disconnects and deletes the node or group clicked. |
 | Alt+Left Click connection | Delete a connection | Deletes the connection clicked from the active graph. |
 | Alt+Left Click slot | Delete connections |  Deletes any connections to the slot from the active graph.  Ensure that the connections that you want to delete are highlighted before pressing **Alt+Left Click**. Otherwise, you might delete the node instead.   |
-| Middle Mouse Button \(Scroll Wheel\) Click graph tab | Close graph | Closes the open graph that corresponds to the tab that you clicked. If the graph has changed and has not been saved, you're prompted to save it first. |
+| Middle Mouse Button (Scroll Wheel) Click graph tab | Close graph | Closes the open graph that corresponds to the tab that you clicked. If the graph has changed and has not been saved, you're prompted to save it first. |
 | Scroll mouse wheel | Zoom the graph | Zooms the graph in or out. |

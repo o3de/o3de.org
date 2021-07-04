@@ -387,7 +387,7 @@ The comparison types to apply to the input files. The first `--comparisonType` p
 
 **\-\-print**
  This argument behaves differently depending on whether it's given as a flag or has a parameter list.
-+ **Flag \(no arguments\)**: Prints the final comparison result to the console.
++ **Flag (no arguments)**: Prints the final comparison result to the console.
 +  **With arguments**: Prints the contents of each argument to the console after comparisons complete. Arguments can either be files or variables.
 *Type:* Multi\-value argument or flag
 *Required:* No

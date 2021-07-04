@@ -5,7 +5,7 @@ title: Debugging tutorial with Lua Editor
 
 {{< preview-migrated >}}
 
-O3DE Lua Editor \(Lua IDE\) offers an intuitive integrated development environment \(IDE\) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but can be opened directly from O3DE Editor using the Tools menu.
+O3DE Lua Editor (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but can be opened directly from O3DE Editor using the Tools menu.
 
 ## Tutorial: Using Lua Editor for Debugging with O3DE Editor 
 
@@ -42,7 +42,7 @@ This tutorial shows you how to use O3DE Editor to create a sample level in the *
 **Note**
 Connection is facilitated by [GridHub](/docs/userguide/gridhub-intro.md), which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.
 
-1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor\(*ID*\)** to connect to O3DE Editor.
+1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor(*ID*)** to connect to O3DE Editor.
 ![\[Target selector\]](/images/user-guide/lua-editor-debugger-target-editor.png)
 **Note**
 You may need to expand the Lua Editor window to see the buttons on the Lua Editor toolbar for the next few steps.

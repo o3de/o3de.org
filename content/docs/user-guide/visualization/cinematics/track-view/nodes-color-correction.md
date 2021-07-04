@@ -10,7 +10,7 @@ You use the **Color Correction** node to change the CMYK, brightness, contrast, 
 
 **To add a Color Correction node in the Track View**
 
-1. In the Track View, right\-click either the sequence \(top node\) or the **Director** node in the tree as applicable, and then click **Add Color Correction Node**.
+1. In the Track View, right\-click either the sequence (top node) or the **Director** node in the tree as applicable, and then click **Add Color Correction Node**.
 
 1. Click the applicable key listed under the **ColorCorrection** node.
 

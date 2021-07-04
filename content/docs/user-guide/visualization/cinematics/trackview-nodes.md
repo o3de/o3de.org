@@ -11,7 +11,7 @@ The Track View offers a variety of nodes for specific purposes. Anything part of
 + [Component Entities and Component Nodes](/docs/user-guide/visualization/cinematics/track-view/nodes-component-entity.md)
 + [Comment Node](/docs/user-guide/visualization/cinematics/track-view/nodes-comment.md)
 + [Console Variable Node](/docs/user-guide/visualization/cinematics/track-view/nodes-cvar.md)
-+ [Director \(Scene\) Node](/docs/user-guide/visualization/cinematics/track-view/nodes-director.md)
++ [Director (Scene) Node](/docs/user-guide/visualization/cinematics/track-view/nodes-director.md)
 + [Environment Node](/docs/user-guide/visualization/cinematics/track-view/nodes-environment.md)
 + [Event Node](/docs/user-guide/visualization/cinematics/track-view/nodes-event.md)
 + [Material Node](/docs/user-guide/visualization/cinematics/track-view/nodes-material.md)

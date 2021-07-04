@@ -22,7 +22,7 @@ The precompiled Houdini plug\-ins supplied with the **NVIDIA Blast** gem require
 ## NVIDIA Blast features 
 
 These are the features that NVIDIA Blast provides:
-+ Fracture geometry and author blast assets in SideFX Houdini with the provided Houdini plug\-ins and Houdini Digital Assets \(HDAs\).
++ Fracture geometry and author blast assets in SideFX Houdini with the provided Houdini plug\-ins and Houdini Digital Assets (HDAs).
 + Create multiple levels of destruction for simulation.
 + Automatically process and quickly set up assets with the provided Python Asset Builder for NVIDIA Blast.
 + Create blast materials to define the forces required to trigger destruction simulation on blast assets.

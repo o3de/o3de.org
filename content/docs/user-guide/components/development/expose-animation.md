@@ -17,7 +17,7 @@ To include custom components in cinematic cut scenes and movies rendered to disk
 
 ## Exposing a Custom Component: Example 
 
-The following example assumes that a custom component called `ImaginaryTargetComponent` has been created. The component has a `Vector3` property called `ImaginaryPosition` that you want to animate in **Track View**. A request bus called `ImaginaryTargetComponentBus` has also been created for the component. This example assumes that you are familiar with programming event buses and component handlers for them. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/) and [Creating a Component](/docs/user-guide/components/development/create-component/).
+The following example assumes that a custom component called `ImaginaryTargetComponent` has been created. The component has a `Vector3` property called `ImaginaryPosition` that you want to animate in **Track View**. A request bus called `ImaginaryTargetComponentBus` has also been created for the component. This example assumes that you are familiar with programming event buses and component handlers for them. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/) and [Creating a Component](/docs/user-guide/components/development/create-component/).
 
 **To expose a custom component to Track View**
 
@@ -130,7 +130,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
 1.
 
-**\(Optional\) Place Unit Attributes on Getters**
+**(Optional) Place Unit Attributes on Getters**
 
    The **Track View** user interface depends on the data type that the getter and setter use. The foregoing example uses a type of `AZ::Vector3`, so **Track View** creates a compound `x,y,z` track from the property. By contrast, if the getter and setters use a `bool`, **Track View** creates a Boolean track. For the majority of animatable properties, the type is sufficient. However, in some cases you might have to set units for a reflected property. For example, if your property's `AZ::Vector3` represents a color, you must add an attribute to the reflection of the getter event. The attribute instructs **Track View** to use a color picker for that property. If you have a property called `ImaginaryTargetColor` that calls a getter event called `GetImaginaryTargetColor`, use reflection code like the following:
 

@@ -14,7 +14,7 @@ The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider 
 +  [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
 
 **Note**
-The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static \(non\-moving\) entity. To create a dynamic \(moving\) entity, you also must add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) component.
+The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static (non\-moving) entity. To create a dynamic (moving) entity, you also must add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) component.
 
 Although the PhysX Shape Collider is similar to the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component, you might want to use the PhysX Shape Collider instead in these scenarios:
 +  The shape information defined by the Shape component is used elsewhere in code or script. For example, the shape defines another volume, such as an audio volume or fog volume, and you want to keep the collider geometry and volume synchronized.

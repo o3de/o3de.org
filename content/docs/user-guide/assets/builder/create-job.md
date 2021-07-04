@@ -139,7 +139,7 @@ class azlmbr.asset.builder.JobDescriptor
 
 **JobParameterMap**
 
-The `JobParameterMap` is a `Dictionary` of `Numbers` to `Strings`. This is a map data structure that holds parameters that are passed into a job for `ProcessJob` requests. These parameters can optionally be set during the create job function of the builder so that they are passed along to the `ProcessJobFunction`. The values \(key and value\) are arbitrary and it is up to the builder on how to use them.
+The `JobParameterMap` is a `Dictionary` of `Numbers` to `Strings`. This is a map data structure that holds parameters that are passed into a job for `ProcessJob` requests. These parameters can optionally be set during the create job function of the builder so that they are passed along to the `ProcessJobFunction`. The values (key and value) are arbitrary and it is up to the builder on how to use them.
 
 **Example:**
 

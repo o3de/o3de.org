@@ -31,13 +31,13 @@ A curve has the following three parts:
 
 **To edit elements in a curve**
 
-1. Select a key to see the associated tangent handles and then drag the boxes on the keys or the ends of the tangent handles \(including unify tangents and automatic tangents\) to manipulate them.
+1. Select a key to see the associated tangent handles and then drag the boxes on the keys or the ends of the tangent handles (including unify tangents and automatic tangents) to manipulate them.
 
 1. When moving keyframes, press and hold **Shift** to constrain the movement to time only.
 
 1. Press and hold **Alt** to scale the selected keyframes around the playhead location.
 
-The path of the curve represents the transition of the value between the keyframes. If the value changes in a straight line between each keyframe \(linear\), transitions between keyframes aren't smooth. The default curve causes the value to smoothly ease in and ease out. Each key has an in tangent and an out tangent. Depending on the preferred effect, you can use the toolbar icons to switch the tangents to auto, zero, step, or linear. You can also manually drag the tangent handles.
+The path of the curve represents the transition of the value between the keyframes. If the value changes in a straight line between each keyframe (linear), transitions between keyframes aren't smooth. The default curve causes the value to smoothly ease in and ease out. Each key has an in tangent and an out tangent. Depending on the preferred effect, you can use the toolbar icons to switch the tangents to auto, zero, step, or linear. You can also manually drag the tangent handles.
 
 By default, animation tracks are recorded with a smooth transition. You can use the buttons in the toolbar at the top of the **Curve Editor** to change how the curves behave on either side of the selected key. You can also drag spline keys to a different point in the timeline.
 

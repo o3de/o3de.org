@@ -22,7 +22,7 @@ The Resource Compiler image tool lists image processing presets defined in the `
 
 1. In the Resource Compiler image tool, under **Preset**, select a preset from the drop\-down menu.
 
-1. \(Optional\) To see more information about the preset settings, click **Show preset info**.
+1. (Optional) To see more information about the preset settings, click **Show preset info**.
 
 1. Select other options you want to change, such as [MIP Control](/docs/userguide/assets/generating-mipmaps.md).
 

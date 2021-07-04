@@ -12,17 +12,17 @@ When working with cell contents, it's important to understand the difference bet
 A layout cell's properties consist of a minimum size, a target size, and an extra size ratio. These properties are not directly modifiable in the UI Editor, but are determined in several ways:
 + Components - The following components can affect the layout cell size:
   + Image or text - The image's default size is the layout cell's target size. The length and size of a string in a text component is the layout cell's target size.
-  + Layout row or layout column \(added or nested as children\) - The default values of a layout row or layout column, added as a child, determines the layout cell's minimum and target size. The default value is calculated by the sum of its own children plus padding and spacing.
+  + Layout row or layout column (added or nested as children) - The default values of a layout row or layout column, added as a child, determines the layout cell's minimum and target size. The default value is calculated by the sum of its own children plus padding and spacing.
 **Note**
 The **LayoutColumn** and **LayoutRow** components contain a property called **Ignore Default Cells**. Selecting this property causes the above calculations to be ignored and simply allocate equal space to all children regardless of content. Clear this property to calculate layout cell values by components. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md).
-+ Fixed default layout cell values - If the child doesn't have any components that calculate their own layout cell values, then the layout cell is assigned a minimum and target size of 0 and an extra size ratio of 1. This typically means equal spacing for the children that do not have a component affecting the layout cell's size. Each layout cell grows at the same rate to fill the available space \(hence the extra size ratio of 1\).
++ Fixed default layout cell values - If the child doesn't have any components that calculate their own layout cell values, then the layout cell is assigned a minimum and target size of 0 and an extra size ratio of 1. This typically means equal spacing for the children that do not have a component affecting the layout cell's size. Each layout cell grows at the same rate to fill the available space (hence the extra size ratio of 1).
 + **LayoutCell** component - Add the **LayoutCell** component to specify values for the minimum and target sizes, and the extra size ratio. Any values you specify here override the values calculated by all other methods.
 
 After layout cell values are calculated, layout cell space is allocated by the following:
 
-1. First, each child receives its minimum size \(**Min Height** or **Min Width**\).
+1. First, each child receives its minimum size (**Min Height** or **Min Width**).
 
-1. If space is available, each child receives its target size \(**Target Height** or **Target Width**\).
+1. If space is available, each child receives its target size (**Target Height** or **Target Width**).
 
 1. If space is still available after that, then the **Extra Size Ratio** value is used to determine how to allocate the remaining space. This ratio is relative to the child's siblings. For example, if one child's extra size ratio is 1, and another child's is 2, then the second child gains twice as much extra space as the first child. An extra size ratio of 0 means that no more space is allocated once the target size is reached.
 

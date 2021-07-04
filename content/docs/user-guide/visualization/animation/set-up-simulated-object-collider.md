@@ -45,7 +45,7 @@ title: Setting Up Simulated Object Colliders
 
 1.  In the **Skeleton Outliner**, select the joints where the simulated object colliders are attached.
 **Tip**
-In the render window, deselect the first icon \(**Solid**\) and select the second \(**Wireframe**\) to view the capsule colliders.
+In the render window, deselect the first icon (**Solid**) and select the second (**Wireframe**) to view the capsule colliders.
 **Example**
 
    In the render window, the colliders appear purple. If you deselect the joint, the collider appears gray.
@@ -55,7 +55,7 @@ In the render window, deselect the first icon \(**Solid**\) and select the secon
 
 1. In the **Simulated Objects** panel, select the simulated object.
 
-1. In the **Simulated Object Inspector**, for **Collides with**, select the available colliders. This enables the simulated object joints \(the tassel\) to collide with the actor's body \(the spine and left arm\).
+1. In the **Simulated Object Inspector**, for **Collides with**, select the available colliders. This enables the simulated object joints (the tassel) to collide with the actor's body (the spine and left arm).
 **Example**
 ![\[Enable the tassel to collide with the actor's body during an animation.\]](/images/user-guide/actor-animation/simulated-objects-18.gif)
 

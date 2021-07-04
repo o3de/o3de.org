@@ -7,7 +7,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution \(bounce\). In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**. One library stores all the physics materials for a project.
+Physics materials define how a PhysX collider reacts to collisions through properties like friction and restitution (bounce). In O3DE, you specify physics materials for each PhysX collider and store them inside a physics material library that you create with the **Asset Editor**. One library stores all the physics materials for a project.
 
 **Topics**
 + [Physics material properties](#physics-material-properties)
@@ -32,7 +32,7 @@ The friction coefficient when the PhysX collider is still.
 **0.0**: No friction.
 
 ****Restitution****
-The energy that the PhysX collider retains on collision \(bounce\).
+The energy that the PhysX collider retains on collision (bounce).
 **0.0**: No bounce.
 **1.0**: Maximum bounce.
 

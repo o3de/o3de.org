@@ -17,7 +17,7 @@ Specifies the time in seconds for the animation to go from the start value to it
 Shortcuts for the `x` and `y` values of a `UiTransform2dComponent`, which is automatically attached to every UI entity.
 
 **timeIntoTween**
-Specifies a tween to begin at a specified point \(in seconds\). For example, if the `duration` is set to `6`, and `timeIntoTween` is set to `3`, then the tween begins immediately at its halfway point and finishes in three more seconds.
+Specifies a tween to begin at a specified point (in seconds). For example, if the `duration` is set to `6`, and `timeIntoTween` is set to `3`, then the tween begins immediately at its halfway point and finishes in three more seconds.
 
 **easeMethod **
 Specifies the [easing type](/docs/user-guide/user-interface/animating/tweener-understanding-types.md) to apply to the tween.

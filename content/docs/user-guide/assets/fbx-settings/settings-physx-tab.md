@@ -8,7 +8,7 @@ title: FBX Settings PhysX tab
 In the **PhysX** tab, you can create **PhysX Mesh groups** to process collider assets for PhysX. Collider assets can be triangle meshes, or generated as primitives or convex meshes based on meshes contained in the `.fbx` file. Multiple **PhysX Mesh groups** can be processed from a single `.fbx` file. Each **PhysX Mesh group** produces its own `.pxmesh` file. The processed runtime assets appear in Asset Browser as children of the `.fbx` file.
 
 **Important**
-There are many options for creating PhysX collider assets. The *best* options in a scenario depend on many factors including mesh complexity, how the collider asset is used, and whether the entity containing the collider is static \(doesn't move\), kinematic \(animated\), or dynamic \(has a rigid body component\). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match a visible render mesh are desirable.
+There are many options for creating PhysX collider assets. The *best* options in a scenario depend on many factors including mesh complexity, how the collider asset is used, and whether the entity containing the collider is static (doesn't move), kinematic (animated), or dynamic (has a rigid body component). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match a visible render mesh are desirable.
 
 **Contents**
 + [PhysX tab properties](#fbx-importer-physx-tab-base-properties)
@@ -39,7 +39,7 @@ The cooking method to apply to this **PhysX mesh group**. This setting exposes p
 + Triangle \- Generate colliders composed of triangles based on the selected meshes.
 + Convex \- Generate convex hull colliders based on the selected meshes.
 + Primitive \- Fit primitive colliders based on the selected meshes.
-Triangle mesh colliders can only be used with static and kinematic entities. To use the PhysX collider asset with dynamic entities \(entities that have a **PhysX Rigid Body** component\), choose **Convex** or **Primitive** for the **Export as** property.
+Triangle mesh colliders can only be used with static and kinematic entities. To use the PhysX collider asset with dynamic entities (entities that have a **PhysX Rigid Body** component), choose **Convex** or **Primitive** for the **Export as** property.
 
 ****Physics Materials****
 Associate a physics material to each material from the selected meshes.
@@ -116,7 +116,7 @@ When enabled, the V\-HACD algorithm is applied to split each node into approxima
 
 ## Primitive asset properties 
 
-Primitive colliders are simple parametric primitives \(box, capsule, sphere\) fit to the selected meshes and can be used with static, kinematic, and dynamic entities. Primitive colliders generally provide the best simulation performance, but might not closely match the shape of the visible render mesh. They are best suited for dynamic entities with simple meshes such as crates and barrels, as well as projectiles, triggers, and entities where colliders that accurately represent shape of the visible render mesh are not necessary.
+Primitive colliders are simple parametric primitives (box, capsule, sphere) fit to the selected meshes and can be used with static, kinematic, and dynamic entities. Primitive colliders generally provide the best simulation performance, but might not closely match the shape of the visible render mesh. They are best suited for dynamic entities with simple meshes such as crates and barrels, as well as projectiles, triggers, and entities where colliders that accurately represent shape of the visible render mesh are not necessary.
 
 ![\[The FBX Settings PhysX tab Primitive asset properties.\]](/images/user-guide/fbx/ui-fbx-settings-physx-primitive-parameters.png)
 
@@ -191,7 +191,7 @@ Add a comment to the file. You can add a comment about changes made to the `.fbx
 
 ![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 
-Change the position \(translation\), orientation \(rotation\), and scale of a mesh relative to how it was authored.
+Change the position (translation), orientation (rotation), and scale of a mesh relative to how it was authored.
 
 ****Relative Origin Node****
 Select the transform relative to which the mesh is processed. By default, the mesh origin is placed at the scene position `0`, `0`, `0` in the `.fbx` file.

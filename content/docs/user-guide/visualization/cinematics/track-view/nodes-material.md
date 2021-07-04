@@ -47,12 +47,12 @@ A recommended workflow is to select the material inside the **Material Editor** 
 
 | Track | Key Property | Description |
 | --- | --- | --- |
-| Diffuse  | Color \(RGB\) |  RGB values to specify the base color of a material.  |
-| Emissive Color  | Color \(RGB\) |  RGB values to enable objects to emit light and be visible in the dark.  |
-| Emissive Intensity | Float \(0.00 to 1.0\) |  Float value that controls the brightness simulating light emitting from the surface that makes an object glow.  |
-| Emittance Map Gamma | Float \(1.0 to 2.0\) |  Float value that expands the lower range of the emittance map. This makes darker colors appear less bright.  |
-| Glossiness  | Float \(0 to 255\) | Acuity or sharpness of the specular reflection. Values of `10` or less create a scattered reflection. Values greater than `10` create a sharp reflection.  |
-| Indirect Color | Color \(RBG\) |  RGB values to specify that tints the bounce light from global illumination.  |
-| Opacity  | Float \(0.00 to 1.0\) | Degree of transparency. Values less than `50` fall more to the white end of the alpha channel map. Values greater than `50` fall more to the black end of the alpha channel map. |
-| SSSIndex  | Float \(0.00 to 3.99\) |  Controls subsurface scattering profile and amount.  For marble, specify a value between `0.01` to `0.99`.  For skin, specify a value between `1.00` to `1.99`.  |
-| Specular  | Color \(RGB\) |  Reflective brightness and color of a material when light shines on the object. The greater the value, the shinier the material.  To apply reflections in degrees of black and white, specify the same values for R, G, and B. For colored reflections, specify different values for each.  |
+| Diffuse  | Color (RGB) |  RGB values to specify the base color of a material.  |
+| Emissive Color  | Color (RGB) |  RGB values to enable objects to emit light and be visible in the dark.  |
+| Emissive Intensity | Float (0.00 to 1.0) |  Float value that controls the brightness simulating light emitting from the surface that makes an object glow.  |
+| Emittance Map Gamma | Float (1.0 to 2.0) |  Float value that expands the lower range of the emittance map. This makes darker colors appear less bright.  |
+| Glossiness  | Float (0 to 255) | Acuity or sharpness of the specular reflection. Values of `10` or less create a scattered reflection. Values greater than `10` create a sharp reflection.  |
+| Indirect Color | Color (RBG) |  RGB values to specify that tints the bounce light from global illumination.  |
+| Opacity  | Float (0.00 to 1.0) | Degree of transparency. Values less than `50` fall more to the white end of the alpha channel map. Values greater than `50` fall more to the black end of the alpha channel map. |
+| SSSIndex  | Float (0.00 to 3.99) |  Controls subsurface scattering profile and amount.  For marble, specify a value between `0.01` to `0.99`.  For skin, specify a value between `1.00` to `1.99`.  |
+| Specular  | Color (RGB) |  Reflective brightness and color of a material when light shines on the object. The greater the value, the shinier the material.  To apply reflections in degrees of black and white, specify the same values for R, G, and B. For colored reflections, specify different values for each.  |

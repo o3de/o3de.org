@@ -14,7 +14,7 @@ To see in\-game examples of completed canvases with dynamic components, open the
 
 To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md), [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components-layout-row.md), or [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components-layout-grid.md) component. With the **DynamicLayout** component, you can change the number of children of the layout element at run time.
 
-The layout element \(1\) dynamically resizes to fit its child elements. The first child \(2\) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
+The layout element (1) dynamically resizes to fit its child elements. The first child (2) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-child.png)
 
@@ -70,7 +70,7 @@ The **DynamicScrollBox** component uses a bus called `UiDynamicScrollBoxDataBus`
 
 Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
 
 ### UiDynamicScrollBoxDataBus:GetNumElements 
 

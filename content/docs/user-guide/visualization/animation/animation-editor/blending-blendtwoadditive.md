@@ -11,7 +11,7 @@ The **Blend Two Additive** node blends a pose 2 input additively on top of a pos
 ![\[Blend Two Additive node.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-blendtwoadditive.png)
 
 **Note**
-This node functions similarly to the **Blend Two \(Legacy\)** node with **Additive** enabled. The key difference is that the **Blend Two \(Legacy\)** node subtracts the bind pose when applying an additive blend. Furthermore, **Blend Two Additive** expects pose 2 to be an additive pose. This means that if you wanted **Blend Two Additive** to function like the **Blend Two \(Legacy\)** node, you must first subtract the bind pose from pose 2.
+This node functions similarly to the **Blend Two (Legacy)** node with **Additive** enabled. The key difference is that the **Blend Two (Legacy)** node subtracts the bind pose when applying an additive blend. Furthermore, **Blend Two Additive** expects pose 2 to be an additive pose. This means that if you wanted **Blend Two Additive** to function like the **Blend Two (Legacy)** node, you must first subtract the bind pose from pose 2.
 
 **To use the **Blend Two Additive** node**
 
@@ -47,7 +47,7 @@ The **Extraction Mode** for the **Blend Two Additive** node features masking and
 + `S` = Source transform delta
 + `T` = Target transform delta
 
-Additive, root included in mask \(or no mask provided\):
+Additive, root included in mask (or no mask provided):
 + **Blend** = `S` + `T` \* weight
 + **Source** = `S`
 + **Target** = `T`

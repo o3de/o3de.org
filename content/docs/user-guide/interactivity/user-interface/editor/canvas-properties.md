@@ -20,7 +20,7 @@ The following properties define how a canvas is rendered:
 ## Input Properties 
 
 The following properties define how a canvas handles inputs:
-+ **Handle positional** - Selected by default. This property causes an automatic response to positional input such as mouse movement, mouse button clicks, and touch screen input. Keyboard inputs also cause an automatic response when an interactive UI element is active \(such as an elemental with a **Text Input** component on it\).
++ **Handle positional** - Selected by default. This property causes an automatic response to positional input such as mouse movement, mouse button clicks, and touch screen input. Keyboard inputs also cause an automatic response when an interactive UI element is active (such as an elemental with a **Text Input** component on it).
 
   Common reasons to de\-select this property are if the canvas doesn't resuire input, or if you configure your game to handle all inputs and pass selected inputs to the UI system.
 + **Consume all input** - Cleared by default. When this property is selected, this canvas consumes *all* input events while it's enabled, regardless of whether the canvas handles a specific input event. For example, if you have canvas A covering canvas B, you probably don't want canvas B handling any input while canvas A is obstructing it, so you would select this property on canvas A. Modal dialog boxes are another example of a canvas that should have this property selected.

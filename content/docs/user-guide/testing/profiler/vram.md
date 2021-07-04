@@ -6,7 +6,7 @@ title: Using Profiler for VRAM
 
 {{< preview-migrated >}}
 
-You can use the video memory profiler \(VRAM profiler\) to determine which resources are contributing most to runtime VRAM usage in your game.
+You can use the video memory profiler (VRAM profiler) to determine which resources are contributing most to runtime VRAM usage in your game.
 
  The VRAM profiler records the amount of video memory used by a game, including how many memory deallocations and allocations occurred during the capture. This latter information is useful in tracking down rendering performance bottlenecks.
 
@@ -30,7 +30,7 @@ The following image shows how your saved `.csv` file appears in a spreadsheet ap
 
 ![\[Captured data\]](/images/user-guide/profiler-vram-captured-data.png)
 
-The captured data contains essentially two tables of information: an overview of memory allocation and usage \(divided between texture and buffer assets\), and a list of resources with the amount of VRAM that was allocated for each during the capture.
+The captured data contains essentially two tables of information: an overview of memory allocation and usage (divided between texture and buffer assets), and a list of resources with the amount of VRAM that was allocated for each during the capture.
 
 Detailed information about each heading follows.
 

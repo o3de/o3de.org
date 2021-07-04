@@ -23,7 +23,7 @@ The core Script Canvas code is built as a static library that is linked into the
 Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/user-guide/engine/ebus/_index.md) that are available in Lua. When you use the behavior context, you do not need to write any Script Canvas-specific code. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment.
 
 The behavior context for Script Canvas includes the following benefits:
-+ Functionality exposed through the behavior context is also available in Lua \(and any other scripting solution bound to the behavior context\).
++ Functionality exposed through the behavior context is also available in Lua (and any other scripting solution bound to the behavior context).
 + The EBus system makes it easier for you to use decoupled, event\-driven programming paradigms.
 + Script Canvas can use any functionality that is exposed to the behavior context, even if it comes from other gems. Therefore, when code is reflected to the behavior context, gems can enhance Script Canvas.
 + Reflecting gems to the behavior context removes any need to add gem dependencies to Script Canvas.
@@ -255,4 +255,4 @@ This is caused by an oversight that is easy to make: newly implemented EBus hand
 MyBus::BusConnect()
 ```
 
-Depending on the type of bus, you might have to specify an ID to connect to. For more information, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
+Depending on the type of bus, you might have to specify an ID to connect to. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).

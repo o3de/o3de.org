@@ -25,7 +25,7 @@ You can add a prebuilt **ScrollBox** element from the slice library. When you do
 **To add a ScrollBox element from the slice library**
 + In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Scrollbox**.
 
-The element named **ScrollBox** \(1\) has the **ScrollBox** component \(2\) applied to it. You can add an image to the **ScrollBox** element's **Image** component \(3\), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox **component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/editor/anchors.md) component.
+The element named **ScrollBox** (1) has the **ScrollBox** component (2) applied to it. You can add an image to the **ScrollBox** element's **Image** component (3), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox **component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/editor/anchors.md) component.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.jpg)
 

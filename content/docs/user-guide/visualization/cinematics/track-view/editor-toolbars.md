@@ -14,7 +14,7 @@ See the following main sections of the Track View:
 
 1. **Track Editor** - Track timeline of all node tracks specified for animation keys. Each row in the timeline corresponds to a track listed in the node browser.
 
-1. **Key properties** - Pane that shows more information for a selected animation key. It also provides information about the key number on the track and its location in the timeline, in seconds. Common properties are color \(RGB\) values and floats.
+1. **Key properties** - Pane that shows more information for a selected animation key. It also provides information about the key number on the track and its location in the timeline, in seconds. Common properties are color (RGB) values and floats.
 
 1. ****Curve Editor**** - Pane for controlling keys and their interpolation for all sequence nodes. The ****Curve Editor**** provides more control over easing in or out of curves, setting some curves to be linear, and so on, depending on your animation requirements.
 

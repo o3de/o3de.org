@@ -104,7 +104,7 @@ Note the following points:
 
 #### More About Automatic Reloading 
 
-An asset can change on disk after the asset has been loaded \(and therefore has a reference count greater than zero\). When this occurs, the asset manager creates an instance of the updated asset and loads it in the background. When the updated asset is finished loading, two `Asset<T>`'s temporarily exist. One `Asset<T>` points to the old `AssetData` instance in memory, and one to the new. Both instances have the same `AssetId`. However, now when you request the asset by `AssetId`, the asset manager returns the new instance and increases the reference count of the new instance. The asset manager also sends the `OnAssetReloaded(Asset<T>)` event to the `AssetBus`. This notifies other systems to reload the asset by replacing their current member `Asset<T>` with the new instance. It also keeps the reference count from reaching zero for the duration of the callback.
+An asset can change on disk after the asset has been loaded (and therefore has a reference count greater than zero). When this occurs, the asset manager creates an instance of the updated asset and loads it in the background. When the updated asset is finished loading, two `Asset<T>`'s temporarily exist. One `Asset<T>` points to the old `AssetData` instance in memory, and one to the new. Both instances have the same `AssetId`. However, now when you request the asset by `AssetId`, the asset manager returns the new instance and increases the reference count of the new instance. The asset manager also sends the `OnAssetReloaded(Asset<T>)` event to the `AssetBus`. This notifies other systems to reload the asset by replacing their current member `Asset<T>` with the new instance. It also keeps the reference count from reaching zero for the duration of the callback.
 
 The following code shows a component that has a member variable of type `Asset<T>` that handles live reloading. First, the component connects to the bus to monitor for asset reloading events.
 
@@ -170,7 +170,7 @@ O3DE loads assets in the following two ways:
 
 The following steps summarize the workflow of the asset system.
 
-1. `GetAsset(assetId)` calls `AssetManager` implicitly \(through the serialization system\) or explicitly.
+1. `GetAsset(assetId)` calls `AssetManager` implicitly (through the serialization system) or explicitly.
 
 1. `AssetManager` calls `GetAssetInfoById` to retrieve the information about the asset file.
 

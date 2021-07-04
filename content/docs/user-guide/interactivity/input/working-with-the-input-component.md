@@ -59,11 +59,11 @@ After you create your input event group, you can add event generators to the gro
 
 1. Save your `.inputbindings` file.
 
-1. In the **Entity Inspector**, in the **Input** component, for **Input to event binding**, click the browse \(**…**\) icon and select your `.inputbindings` file.
+1. In the **Entity Inspector**, in the **Input** component, for **Input to event binding**, click the browse (**…**) icon and select your `.inputbindings` file.
 
 ## Mapping Input Events to Gameplay Actions 
 
-After you create an `.inputbindings` file and specify your input events, you can use a Script Canvas graph or Lua script to map the input events to gameplay actions. You can create your graph in a visual scripting environment with the **Script Canvas** editor or write your own scripts with the Lua Editor \(Lua IDE\).
+After you create an `.inputbindings` file and specify your input events, you can use a Script Canvas graph or Lua script to map the input events to gameplay actions. You can create your graph in a visual scripting environment with the **Script Canvas** editor or write your own scripts with the Lua Editor (Lua IDE).
 
 ### Using a Script Canvas Graph for Input 
 

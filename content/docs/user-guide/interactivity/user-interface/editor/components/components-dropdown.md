@@ -13,7 +13,7 @@ You can use the **Dropdown** component with the **DropdownOption** component. Wi
 To see in\-game examples of completed canvases with the **Dropdown** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Dropdown**. You can view **Simple Dropdowns**, **Nested Dropdowns**, **Multiple Select & Functionality**, and **Using UI Components and Dropdowns**. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Dropdown` directory. You can open the following canvases:
-+ `MultipleFunc.uicanvas` - Multiple selection drop\-down menu and functional drop\-down menu \(perform actions on a ball such as create, destroy, move, and change color\)
++ `MultipleFunc.uicanvas` - Multiple selection drop\-down menu and functional drop\-down menu (perform actions on a ball such as create, destroy, move, and change color)
 + `Nested.uicanvas` - Two levels and multilevel with siblings submenus
 + `Simple.uicanvas` - Simple selection drop\-down menu, selection drop\-down menu with icons, expand on pause drop\-down menu, and expand on pause with icons
 + `UsingUi.uicanvas` - Drop\-down menus with a scroll box, image, check box, slider, and radio buttons

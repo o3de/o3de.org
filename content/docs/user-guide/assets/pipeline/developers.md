@@ -57,7 +57,7 @@ You can use the `FileIO` interface, which is accessible through `gEnv->pFileIO`,
 
 If you are writing a new editor tool or porting an existing one from a legacy system, keep in mind the separation between game code and editor code. Game code cannot manipulate asset IDs, and therefore it is invalid to retrieve the game path or concatenate game names with path names. The game code and game modules also have no access to source control, so relying on the game to find out where to save files will not work.
 
-Instead, develop your editor code in such a way that the editor decides where files are saved, and optionally loaded from, and correctly interfaces with source control and the asset processing system. \(Source control and asset processing are overhead that is governed by the editor tool, not the game.\)
+Instead, develop your editor code in such a way that the editor decides where files are saved, and optionally loaded from, and correctly interfaces with source control and the asset processing system. (Source control and asset processing are overhead that is governed by the editor tool, not the game.)
 
 The following utilities and guidelines are provided to make this easier:
 + Store only asset IDs for all source assets. **Don't** store file paths.

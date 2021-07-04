@@ -5,7 +5,7 @@ title: Director (Scene) Node
 
 {{< preview-migrated >}}
 
-The **Director \(Scene\)** node includes a camera track that specifies the active camera for a track view sequence. You can add sequence\-specific nodes \(for example, **Depth of Field** or **Comment**\) under the **Director** node to override the same nodes that were set at the sequence level.
+The **Director (Scene)** node includes a camera track that specifies the active camera for a track view sequence. You can add sequence\-specific nodes (for example, **Depth of Field** or **Comment**) under the **Director** node to override the same nodes that were set at the sequence level.
 
 **To add a Director node in the Track View**
 
@@ -15,7 +15,7 @@ The **Director \(Scene\)** node includes a camera track that specifies the activ
 
 1. In the **Add New Sequence** dialog box, enter a name for your sequence and click **OK**.
 
-1. Right\-click your sequence and choose **Add Director \(Scene\) Node**.
+1. Right\-click your sequence and choose **Add Director (Scene) Node**.
 
 1. Right\-click the **Director** node and click **Add Track**.
 ![\[Add the Director node in the Track View to manage your track view sequence.\]](/images/user-guide/cinematics/cinematics-trackview-nodes-director.png)

@@ -36,7 +36,7 @@ For these reasons, script events supersede the gameplay notification bus system 
 + `GameplayNotificationBus`
 + `GameplayNotificationId`
 + `BehaviorGameplayNotificationBusHandler`
-+ `GameplayEventHandlerNode` \(Legacy\)
++ `GameplayEventHandlerNode` (Legacy)
 
 ### Migrating to Script Events 
 

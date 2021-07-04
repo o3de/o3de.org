@@ -23,7 +23,7 @@ Breadcrumbs have several customization options. The standard, horizontal layout 
 
 1.  **Path history navigation**
 
-   \(Optional\) Enable users to navigate backwards and forwards in their history of breadcrumb paths selections. For example, if you browse to, or choose, a new path in the list, then choose the **back** button, you will navigate back to the previous breadcrumb position.
+   (Optional) Enable users to navigate backwards and forwards in their history of breadcrumb paths selections. For example, if you browse to, or choose, a new path in the list, then choose the **back** button, you will navigate back to the previous breadcrumb position.
 
 1.  **Breadcrumb trail**
 
@@ -31,7 +31,7 @@ Breadcrumbs have several customization options. The standard, horizontal layout 
 
 1.  **Browse button**
 
-   \(Optional\) Technically not part of the breadcrumb. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path. You push the new path to your breadcrumbs widget in your browse button handler code.
+   (Optional) Technically not part of the breadcrumb. The browse button is often useful because it enables a user to select a completely new path, instead of choosing a different point in the current path. You push the new path to your breadcrumbs widget in your browse button handler code.
 ![\[component breadcrumbs truncation menu\]](/images/tools-ui/component-breadcrumbs-truncation-menu.png)
 
 1.  **Truncation menu**
@@ -44,7 +44,7 @@ Breadcrumbs have several customization options. The standard, horizontal layout 
 
 The simplest breadcrumb example includes the **breadcrumbs** widget and an optional, initial path. Your code can react to path changes by connecting to the `pathChanged` signal. Alternatively, you can call `pushPath` to set the breadcrumb state to match the current state of your project.
 
-When passing a path QString into `pushPath`, use either forward slash \('/'\) or backward slash \('\\\\'\) as a path separator.
+When passing a path QString into `pushPath`, use either forward slash ('/') or backward slash ('\\\\') as a path separator.
 
  **Example**
 

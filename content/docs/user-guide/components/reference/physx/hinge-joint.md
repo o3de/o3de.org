@@ -37,7 +37,7 @@ When enabled, three planes are displayed showing the orientation and limits of t
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
 
 **Lead\-Follower Collide**
-When enabled, the lead entity and follower entity \(the entity containing the joint component\) will collide.
+When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
 
 **Limit**
 When enabled, the lead entity's movement around the joint axis is constrained by angular limits. Enabling **Limit** exposes the **Soft Limit**, the **Positive angular limit**, and the **Negative angular limit** properties.

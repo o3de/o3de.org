@@ -13,7 +13,7 @@ A bookmark is a shortcut that you can add to a specific location on your Script 
 
 1. In your script, navigate to the node or view that you want.
 
-1. Press **Ctrl+1** \(or **2** to **9**\) to add a bookmark. A colored icon appears on the script.
+1. Press **Ctrl+1** (or **2** to **9**) to add a bookmark. A colored icon appears on the script.
 
 **To snap the graph view to a bookmark**
 + Press **1** to **9** to snap the graph view to the bookmarked location.
@@ -30,4 +30,4 @@ A bookmark is a shortcut that you can add to a specific location on your Script 
    + Assign up to nine keyboard shortcuts for your bookmarks. To move to a bookmark that does not have an assigned keyboard shortcut, click the bookmark in the **Bookmarks** pane.
    + Double\-click a shortcut and then select a new number.
 **Note**
-If you specify a number for a shortcut that a previous shortcut already uses \(for example, 5\), a dialog box appears. If you want to replace the previous shortcut, click **Yes**.
+If you specify a number for a shortcut that a previous shortcut already uses (for example, 5), a dialog box appears. If you want to replace the previous shortcut, click **Yes**.

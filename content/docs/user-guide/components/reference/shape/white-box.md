@@ -51,7 +51,7 @@ Enable **Use Texture **to display a checkerboard texture on the white box mesh. 
 Enable **Visible** to make the white box mesh visible at runtime. When you use White Box to create custom invisible collision meshes, disable the **Visible** property to hide the mesh at runtime.
 
 ****Edit****
-Choose this button to enter edit mode and modify the white box mesh. For information on editing the white box mesh, see [White Box edit mode](#component-white-box-edit-mode). Choose this same button \(labeled **Done**\) to exit edit mode.
+Choose this button to enter edit mode and modify the white box mesh. For information on editing the white box mesh, see [White Box edit mode](#component-white-box-edit-mode). Choose this same button (labeled **Done**) to exit edit mode.
 
 ****Export****
 Export the mesh to a `.obj` file. The `.obj` file can be loaded into a 3D modeling application and used as a template for creating the production mesh asset for the entity.
@@ -96,7 +96,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Scale polygon****
 
-1. Select \(left click\) a polygon.
+1. Select (left click) a polygon.
 
 1. Hover over one of the polygon's vertices.
 
@@ -108,7 +108,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Scale edge****
 
-1. Select \(left click\) an edge.
+1. Select (left click) an edge.
 
 1. Hover over one of the edge's vertices.
 
@@ -120,7 +120,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Non\-uniform scale edge****
 
-1. Select \(left click\) an edge.
+1. Select (left click) an edge.
 
 1. Hover over one of the edge's vertices.
 
@@ -152,7 +152,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Extrude scale****
 
-1. Select \(left click\) a polygon.
+1. Select (left click) a polygon.
 
 1. Hover over one of the polygon's vertices.
 
@@ -182,7 +182,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Hide an edge****
 
-1. Select \(left click\) an edge.
+1. Select (left click) an edge.
 
 1. Press **H**.
 
@@ -192,7 +192,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 1. Hold **Ctrl** and **Shift** to show edges.
 
-1. Select \(left click\) an edge to unhide it.
+1. Select (left click) an edge to unhide it.
 
 ![\[White Box extrude edge animation.\]](/images/user-guide/component/whitebox/white-box-show-edge.gif)
 
@@ -200,7 +200,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ****Hide a vertex****
 
-1. Select \(left click\) a vertex.
+1. Select (left click) a vertex.
 
 1. Press **H**.
 
@@ -210,4 +210,4 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 1. Hold **Ctrl** and **Shift** to show hidden vertices.
 
-1. Select \(left click\) a vertex to unhide it.
+1. Select (left click) a vertex to unhide it.

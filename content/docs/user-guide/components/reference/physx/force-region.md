@@ -16,7 +16,7 @@ To create a force region, you must do the following:
 The **PhysX Collider** component's shape, size, and orientation represent the region that applies force to incoming entities.
 
 **Note**
-For the **Shape** property, if you select **PhysicsAsset**, you must select a **PxMesh** asset file. If the asset isn't a convex mesh \(for example, it's a triangle mesh\), the collider won't work as a trigger for collisions.
+For the **Shape** property, if you select **PhysicsAsset**, you must select a **PxMesh** asset file. If the asset isn't a convex mesh (for example, it's a triangle mesh), the collider won't work as a trigger for collisions.
 
 **Topics**
 + [PhysX Force Region Component Properties](#physx-terrain-component-properties)
@@ -84,7 +84,7 @@ Applies a force that simulates air resistance. **Simple Drag** always applies fo
 
 #### Spline Follow 
 
-Applies a force to make entities follow a spline. The force uses a proportional\-derivative \(PD\) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
+Applies a force to make entities follow a spline. The force uses a proportional\-derivative (PD) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
 
 **Note**
 For the force region entity, if you change the **Scale** property of the **Transform** component, the scaling must be uniform so that the x, y, and z scale values match. If scaling isn't uniform, the spline doesn't correctly reflect the path of the force.
@@ -149,7 +149,7 @@ You can create a force region so that force applies to another entity that enter
 
 1. To collide an entity with the force region, create a dynamic entity named *Sphere* and attach the **PhysX Collider** and **PhysX Rigid Body Physics** components. These components enable the entity to interact with other PhysX entities.
 
-1. \(Optional\) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `primitive_sphere.cgf`.
+1. (Optional) Add a **Mesh** component and, for **Mesh asset**, select a mesh asset, such as a `primitive_sphere.cgf`.
 
 1. Select and drag the **Sphere** entity so that it's above the force region.
 ![\[An entity entering the force region.\]](/images/user-guide/component/physx/force-region-component-local-force-2.png)

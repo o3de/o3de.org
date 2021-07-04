@@ -34,7 +34,7 @@ To create a new font family file, you can create a new, empty plain text file an
 **To add a new font family file to your UI**
 
 1. To create a new font family file, do one of the following:
-   + Open Notepad \(or similar program\) and save an empty text file with a `.fontfamily` file extension.
+   + Open Notepad (or similar program) and save an empty text file with a `.fontfamily` file extension.
    + Copy an existing `.fontfamily` file into your game project's `Fonts` directory.
 
 1. Name your `.fontfamily` file appropriately \(leave the `.fontfamily` extension\).
@@ -60,7 +60,7 @@ The `.fontfamily` file uses XML. The UI system supports the following tags and a
 
 Tag: `fontfamily`
 **Attribute**: `name`
-The unique name of the font family. Each font family name in a project must be unique, and only one `fontfamily` tag may be specified per `.fontfamily` file. You can, however, reuse the same font XML files \(defined by the file tag\) in multiple font families.
+The unique name of the font family. Each font family name in a project must be unique, and only one `fontfamily` tag may be specified per `.fontfamily` file. You can, however, reuse the same font XML files (defined by the file tag) in multiple font families.
 
 Tag: `font`
 Container tag for the `file` tag.

@@ -6,7 +6,7 @@ title: Using Math Nodes
 
 {{< preview-migrated >}}
 
-O3DE's **Animation Editor** features a set of math nodes that perform math operations on various types of input. The math nodes pass on the result\(s\) of the operation as output.
+O3DE's **Animation Editor** features a set of math nodes that perform math operations on various types of input. The math nodes pass on the result(s) of the operation as output.
 
 **Topics**
 + [Rotation Math 2 Node](#rotation-math)
@@ -18,13 +18,13 @@ O3DE's **Animation Editor** features a set of math nodes that perform math opera
 
 With the **Rotation Math 2** node, you can apply math operations to input rotations, which are represented by [quaternions](/docs/userguide/ly-glos-chap#quarternion).
 
-This node multiplies the input rotation and the specified **Default Value** to express an output rotation. The **Default Value** specifies the rotation of an unconnected input. This rotation value is expressed in Euler angle degrees \(rotation about the X, Y, and Z axes\).
+This node multiplies the input rotation and the specified **Default Value** to express an output rotation. The **Default Value** specifies the rotation of an unconnected input. This rotation value is expressed in Euler angle degrees (rotation about the X, Y, and Z axes).
 
 ![\[Example of the Rotation Math 2 node in an animation graph.\]](/images/user-guide/actor-animation/rotation-math.png)
 
 **To use the Rotation Math 2 node**
 
-1. Connect the **Output Rotation** output rotation output\(s\) to the input\(s\) of the **RotationMath2** node.
+1. Connect the **Output Rotation** output rotation output(s) to the input(s) of the **RotationMath2** node.
 
 1. Select the **RotationMath2** node.
 
@@ -34,7 +34,7 @@ Multiplies two input quaternions or one input with the **Default Value**.
 **Inverse rotate**
 Multiplies the **x** input with the inverse of the **y** input. You can also use this to calculate the relative rotation of X with respect to Y.
 
-1. If only one input rotation exists, specify the unconnected rotation values \(X, Y, Z\) for the **Default Value**.
+1. If only one input rotation exists, specify the unconnected rotation values (X, Y, Z) for the **Default Value**.
 
 ## Rotation Limit Node 
 
@@ -65,11 +65,11 @@ The **Min angle** can't exceed the **Max angle**. If it does, the error is displ
 Using **Vector Decompose** nodes, you can output one or more specific values of a vector.
 
 **Example**
-You have a 3D vector XYZ that indicates a position in a 3D world, but you only need its height \(Z\) for a computation. You would input your vector into a **Vector3Decompose** node and use only the Z output for your calculation.
+You have a 3D vector XYZ that indicates a position in a 3D world, but you only need its height (Z) for a computation. You would input your vector into a **Vector3Decompose** node and use only the Z output for your calculation.
 
 ![\[Example of the Vector Decompose nodes in an animation graph.\]](/images/user-guide/actor-animation/vector-decompose.png)
 
-You don't need to use **Vector Decompose** nodes if you are simply adding or subtracting one of the X, Y, Z, or W positions. For typical **Vector3** to **Vector2** \(and vice versa\) conversion, or **Vector3** to **Vector4** \(and vice versa\) conversion, the **Animation Editor** automatically converts vectors in the following way:
+You don't need to use **Vector Decompose** nodes if you are simply adding or subtracting one of the X, Y, Z, or W positions. For typical **Vector3** to **Vector2** (and vice versa) conversion, or **Vector3** to **Vector4** (and vice versa) conversion, the **Animation Editor** automatically converts vectors in the following way:
 + **Vector2** to **Vector3** - Adds the **Z** component set to `0`.
 + **Vector3** to **Vector2** - Ignores the **Z** component from **Vector3**.
 + **Vector3** to **Vector4** - Adds the **W** component set to `0`.
@@ -77,7 +77,7 @@ You don't need to use **Vector Decompose** nodes if you are simply adding or sub
 
 ## Boolean Logic Node 
 
-Using the **Boolean Logic** node, you can apply a function to two boolean inputs. Boolean values are always `1` or `0` \(true or false\), such as a check box item. The **Boolean Logic** node sees any non\-zero value as true \(`1`\) and any zero value as false \(`0`\). For example, values `0.54`, `10.43` or \-`2.25` are all true \(`1`\). Only `0.0` values are false \(`0`\).
+Using the **Boolean Logic** node, you can apply a function to two boolean inputs. Boolean values are always `1` or `0` (true or false), such as a check box item. The **Boolean Logic** node sees any non\-zero value as true \(`1`\) and any zero value as false \(`0`\). For example, values `0.54`, `10.43` or \-`2.25` are all true \(`1`\). Only `0.0` values are false \(`0`\).
 
 When choosing an output type, you can output from the **Float** output or the **Bool** output. The **Bool** output passes on a `0` or `1`. The **Float** output passes on a float value that you specify in the attributes.
 

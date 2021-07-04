@@ -50,14 +50,14 @@ Default value: `Transform`
 + **Custom** - Provide path updates and let the game logic move the entity however they want. This method is useful when you want to move an animated entity that uses root motion. By listening to the `OnTraversalPathUpdate` notification, you can move your entity toward the next point along a path. Once the entity gets within the arrival distance threshold another `OnTraversalPathUpdate` notification with the next path position will be provided and so on until the end of the path is reached.
 
 **Allow Vertical Navigation**
-Set to true if you want to to allow the navigation agent to include the vertical velocity when navigating a path, or false if you just want the velocity to be constrained to the X and Y plane \(2D\). Vertical navigation can be used for flying entities or entities that move with the Transform method but must move vertically. Enabling this property can also help prevent "stair stepping" for entities moving down ramps or steep terrain.
+Set to true if you want to to allow the navigation agent to include the vertical velocity when navigating a path, or false if you just want the velocity to be constrained to the X and Y plane (2D). Vertical navigation can be used for flying entities or entities that move with the Transform method but must move vertically. Enabling this property can also help prevent "stair stepping" for entities moving down ramps or steep terrain.
 Default value: `false`
 
 ## NavigationComponentRequestBus EBus Interface 
 
-Use the following request functions with the `NavigationComponentRequestBus` event bus \(EBus\) interface to communicate with other components of your game.
+Use the following request functions with the `NavigationComponentRequestBus` event bus (EBus) interface to communicate with other components of your game.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/).
+For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### FindPath 
 
@@ -155,7 +155,7 @@ Yes
 Updates the AI Agent's movement method.
 
 **Parameters**
-`movementMethod` - Specifies the new agent movement method \(Transform, Physics or Custom\).
+`movementMethod` - Specifies the new agent movement method (Transform, Physics or Custom).
 
 **Return**
 None
@@ -165,9 +165,9 @@ Yes
 
 ## NavigationComponentNotificationBus EBus Interface 
 
-Use the following notification functions with the `NavigationComponentNotificationBus` event bus \(EBus\) interface to communicate with other components of your game.
+Use the following notification functions with the `NavigationComponentNotificationBus` event bus (EBus) interface to communicate with other components of your game.
 
-For more information about using the EBus interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/).
+For more information about using the EBus interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### OnSearchingForPath 
 

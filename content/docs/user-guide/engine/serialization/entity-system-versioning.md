@@ -85,7 +85,7 @@ if (rootElement.GetVersion() <= 1)
 ```
 
 **Note**
-If you need to emit a warning or error when a conversion fails \(for example, for asset builds\), use the `AZ_Warning` or `AZ_Error` macros.
+If you need to emit a warning or error when a conversion fails (for example, for asset builds), use the `AZ_Warning` or `AZ_Error` macros.
 
 ## Upgrade Class Builders 
 

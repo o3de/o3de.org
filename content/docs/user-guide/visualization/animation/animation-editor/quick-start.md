@@ -73,7 +73,7 @@ In the following procedure, create an animation graph and nodes.
 
 1. In the **Parameters** pane, click the **+** icon to create a parameter.
 
-   1. Leave the **Value type** parameter to the default, **Float \(slider\)**.
+   1. Leave the **Value type** parameter to the default, **Float (slider)**.
 
    1. For **Name**, rename `Parameter0` to **speed**.
 

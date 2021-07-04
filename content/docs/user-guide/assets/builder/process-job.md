@@ -53,7 +53,7 @@ The `resultCode` field defaults to `azlmbr.asset.builder.ProcessJobResponse_Fail
 
 The `outputProducts` field indicates what product files need to be copied to the project cache folder. If this is empty, it indicates that the job failed.
 
-The `sourcesToReprocess` field triggers a rebuild of source assets \(via absolute paths\) due to the work performed in this job. To reprocess these sources, the builder updates `fingerprints` in `CreateJobs` of those builders that process them, like changing source dependencies.
+The `sourcesToReprocess` field triggers a rebuild of source assets (via absolute paths) due to the work performed in this job. To reprocess these sources, the builder updates `fingerprints` in `CreateJobs` of those builders that process them, like changing source dependencies.
 
 **azlmbr.asset.builder.ProcessJobResponse**
 
@@ -105,7 +105,7 @@ print(f'Asset type {assetType}')
 
 `dependenciesHandled` indicates to the **Asset Processor** that the builder has output all possible dependencies for this source asset file for this job product file. This can be true if there are no output product files. This should be set to `True` only if the builder outputs its dependencies or the output product doesn't have dependencies. When set to `False`, **Asset Processor** emits a warning that dependencies have not been handled.
 
-The `JobProduct` constructor takes in a product file name \(relative to the source asset path\), an asset type \(Uuid\), and a product sub\-ID number.
+The `JobProduct` constructor takes in a product file name (relative to the source asset path), an asset type (Uuid), and a product sub\-ID number.
 
 **azlmbr.asset.builder.JobProduct**
 
@@ -133,7 +133,7 @@ class azlmbr.asset.builder.ProductDependency
 
 ## ProductPathDependency 
 
-The `ProductPathDpendency` represents the product's dependency information that the builder detected on another product file \(relative to the source asset path\). If the source asset ID can be determined, we recommend that you use the `productDependencies` instead to indicate the product's dependency information in terms of asset IDs. It's preferable to depend on product files whenever possible, to avoid introducing unintended dependencies.
+The `ProductPathDpendency` represents the product's dependency information that the builder detected on another product file (relative to the source asset path). If the source asset ID can be determined, we recommend that you use the `productDependencies` instead to indicate the product's dependency information in terms of asset IDs. It's preferable to depend on product files whenever possible, to avoid introducing unintended dependencies.
 
 The `dependencyType` field indicates if the path points to a source file or a product file.
 

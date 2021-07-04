@@ -56,7 +56,7 @@ You can add joints to the ragdoll at any time.
    + A joint holds hit detection colliders
 ![\[Icons in the Skeleton Outliner show how joints are related to the ragdoll, ragdoll colliders, and hit detection colliders\]](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-joint-icons.png)
 
-1. In the **OpenGL Render window**, use the render options to show or hide the ragdoll colliders \(rendered in orange\), ragdoll joint limits, and the hit detection colliders \(rendered in blue\).
+1. In the **OpenGL Render window**, use the render options to show or hide the ragdoll colliders (rendered in orange), ragdoll joint limits, and the hit detection colliders (rendered in blue).
 **Note**
 If your ragdoll colliders and hit detection colliders are the same size, you may need to hide the colliders that you are not working on.
 ![\[Use the render options in the OpenGL Render window to show or hide ragdoll colliders and joint limits and hit detection colliders\]](/images/user-guide/actor-animation/ragdoll-skeleton-opengl-render-window-render-options.png)
@@ -68,7 +68,7 @@ If your ragdoll colliders and hit detection colliders are the same size, you may
 
 The ragdoll automatically suppresses collisions between joints that are adjacent in the skeleton. This means that adjacent colliders can overlap, but a pair of colliders that are not adjacent should not intersect. If the pair of colliders intersects, they'll collide when the ragdoll is simulated.
 
-In the following example, the collider for the second spine joint \(highlighted\) can intersect with the first or third spine joint. The first and third spine joints, however, should not intersect.
+In the following example, the collider for the second spine joint (highlighted) can intersect with the first or third spine joint. The first and third spine joints, however, should not intersect.
 
 ![\[Example that shows how the collider for the second spine joint intersects with the first or third spine joint\]](/images/user-guide/actor-animation/ragdoll-collider-spine-joints-example.png)
 
@@ -81,7 +81,7 @@ In the following example, the collider for the second spine joint \(highlighted\
 
    1. Set the **Offset** and **Rotation** to move the collider to the correct location. The **Offset** and **Rotation** are relative to the joint transform.
 
-   1. Adjust the collider dimensions \(for example, set the **Height** and **Radius** for a **Capsule**\) to resize the collider.
+   1. Adjust the collider dimensions (for example, set the **Height** and **Radius** for a **Capsule**) to resize the collider.
 ![\[Set the Offset, Rotation, Height, and Radius properties for the collider on the Ragdoll tab in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-collider-options-offset-rotation-height-radius.png)
 
 1. Choose **File**, **Save Selected Actors**. This saves the ragdoll data to the `.assetinfo` file for the character. The Asset Processor then bakes the ragdoll data into the `.actor` file.
@@ -170,7 +170,7 @@ Once you've created your ragdoll and animation graph, you can simulate the ragdo
 
    1. Click **Add Component**, **Actor**.
 
-   1. In the **Actor** component, for **Actor asset**, click the browse \(**...**\) button.
+   1. In the **Actor** component, for **Actor asset**, click the browse (**...**) button.
 
    1. In the **Pick EMotion FX Actor** window, select the actor for which you set up the ragdoll and then click **OK**.
 ![\[Select the actor for which you set up the ragdoll from the Pick EMotion FX Actor window in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-simulation-pick-ragdoll-actor.png)
@@ -179,12 +179,12 @@ Once you've created your ragdoll and animation graph, you can simulate the ragdo
 
    1. Click **Add Component**, **Anim Graph**.
 
-   1. In the **Anim Graph** component, for **Motion set asset**, click the browse \(**...**\) button.
+   1. In the **Anim Graph** component, for **Motion set asset**, click the browse (**...**) button.
 
    1. In the **Pick EMotion FX Motion Set** window, select your motion set and then click **OK**.
 ![\[Select a motion set from the Pick EMotion FX Motion Set window in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-simulation-pick-motion-set.png)
 
-   1. In the **Anim Graph** component, for **Anim graph**, click the browse \(**...**\) button.
+   1. In the **Anim Graph** component, for **Anim graph**, click the browse (**...**) button.
 
    1. In the **Pick EMotion FX Anim Graph** window, select your animation graph and then click **OK**.
 ![\[Select an animation graph from the Pick EMotion FX Anim Graph window in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-simulation-pick-animation-graph.png)

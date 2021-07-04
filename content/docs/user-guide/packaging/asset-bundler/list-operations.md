@@ -354,9 +354,9 @@ The previous example uses three comparison operations. The first two comparisons
 | Command Parameter | Step 1  | Step 2 | Step 3 |
 | --- | --- | --- | --- |
 | comparisonType | delta | intersection | filepattern |
-| firstAssetFile | mygame\_v1\_pc.assetlist | include\_pc.assetlist \(temp file\) | $delta\_include |
+| firstAssetFile | mygame\_v1\_pc.assetlist | include\_pc.assetlist (temp file) | $delta\_include |
 | secondAssetFile | mygame\_v2\_pc.assetlist | $delta\_all | N/A |
-| filePatternType | N/A | N/A | Wildcard \(parameter value 0\) |
+| filePatternType | N/A | N/A | Wildcard (parameter value 0) |
 | filePattern | N/A | N/A | \*.txt |
 | output | $delta\_all | $delta\_include | mygame\_v1tov2\_patch.assetlist |
 

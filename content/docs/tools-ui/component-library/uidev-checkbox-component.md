@@ -6,7 +6,7 @@ title: O3DE UI checkbox component
 
 {{< preview-migrated >}}
 
-Use checkboxes to enable users to select from a list of choices, when users can select any number of choices \(including zero, one, or several\). Each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.
+Use checkboxes to enable users to select from a list of choices, when users can select any number of choices (including zero, one, or several). Each checkbox is independent of all other checkboxes in the list, so checking one box doesn't uncheck the others.
 
 ![\[component checkbox style\]](/images/tools-ui/component-checkbox-style.png)
 

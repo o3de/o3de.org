@@ -26,7 +26,7 @@ In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity
 See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
 **Drag States**
 Define the color, alpha, sprite, or font of this element and its child elements for a particular drag state.
-When it is not being dragged, an element with a draggable component uses the interactable states \(pause on, pressed, and disabled\).
+When it is not being dragged, an element with a draggable component uses the interactable states (pause on, pressed, and disabled).
 When being dragged, however, the draggable component has an additional three states:
 + **Normal** - Automatic state when a drag state begins.
 

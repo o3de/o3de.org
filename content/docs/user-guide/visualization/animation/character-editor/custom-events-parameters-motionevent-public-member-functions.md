@@ -21,7 +21,7 @@ The `MotionEvent` class includes the following public member functions.
 
 ## MotionEvent 
 
-You can use the `MotionEvent` function to trigger an event at a specific point in time \(a tick event\) or during a specified time range \(a range event\). To specify the data that the event emits, you can use pointers or datasets.
+You can use the `MotionEvent` function to trigger an event at a specific point in time (a tick event) or during a specified time range (a range event). To specify the data that the event emits, you can use pointers or datasets.
 
 **Syntax**
 

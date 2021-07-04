@@ -40,4 +40,4 @@ You can open the following canvases:
 
 1. In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Fader**.
 
-1. For the **Fade** multiplier, use the slider to select a number between `0` \(invisible\) and `1` \(opaque\) and press **Enter**.
+1. For the **Fade** multiplier, use the slider to select a number between `0` (invisible) and `1` (opaque) and press **Enter**.

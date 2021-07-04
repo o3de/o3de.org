@@ -38,7 +38,7 @@ Creating a vegetation layer is the first and most basic step in creating your dy
    The **Vegetation Asset List** component defines what to plant. This is where you specify vegetation assets.
 ![\[On the Vegetation Layer Spawner, click Add Component and select Vegetation Asset List.\]](/images/user-guide/vegetation/dynamic/create-vegetation-layer-asset-list.png)
 
-1. In the **Vegetation Asset List** component, next to **Mesh Asset**, click **Browse \(...\)**.
+1. In the **Vegetation Asset List** component, next to **Mesh Asset**, click **Browse (...)**.
 ![\[Click Browse (…) to select a Mesh Asset.\]](/images/user-guide/vegetation/dynamic/create-vegetation-layer-browse.png)
 
 1. In the **Search** bar, enter **grass** and select one of the grass assets in the results.

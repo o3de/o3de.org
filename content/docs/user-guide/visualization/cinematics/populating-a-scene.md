@@ -6,7 +6,7 @@ title: Populating a Scene
 
 {{< preview-migrated >}}
 
-Cinematic scenes, also known as sequences, consist of multiple nodes, tracks, and track events. When you create a sequence, the sequence name is always the top \(parent\) node in the node browser.
+Cinematic scenes, also known as sequences, consist of multiple nodes, tracks, and track events. When you create a sequence, the sequence name is always the top (parent) node in the node browser.
 
 For more information, see [Using the Track View Editor](/docs/user-guide/visualization/cinematics/track-view/editor.md).
 

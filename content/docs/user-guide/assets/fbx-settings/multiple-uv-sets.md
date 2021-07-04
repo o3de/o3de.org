@@ -37,7 +37,7 @@ Follow these steps to apply the second UV set:
 
 ## Independent tiling and UV sets 
 
-On the **Second Diffuse Map**, you can set independent values for the blend layer's texture inputs \(tiling, rotation, and oscillation\). Changes to these values don't affect the tiling, rotation, and oscillation values on the first **Diffuse Map**. In addition, these values aren't applied to the **Blend Map**. You can use the **Blend Mask Tiling** parameter under **Shader Params** to tile the **Blend Map**.
+On the **Second Diffuse Map**, you can set independent values for the blend layer's texture inputs (tiling, rotation, and oscillation). Changes to these values don't affect the tiling, rotation, and oscillation values on the first **Diffuse Map**. In addition, these values aren't applied to the **Blend Map**. You can use the **Blend Mask Tiling** parameter under **Shader Params** to tile the **Blend Map**.
 
 You can also set independent values for tiling, rotation, and oscillation for the **Detail** and **Emittance** map features.
 

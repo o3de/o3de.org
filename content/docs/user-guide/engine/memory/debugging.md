@@ -27,7 +27,7 @@ To avoid performance issues, debugging features are disabled by default.
 
 Because of certain limitations, the HPHA debugger can help find memory issues but cannot guarantee their absence. When using HPHA memory debugging features, note the following:
 + For the HPHA debugger to work, allocations must use the HPHA allocator. HPHA memory debugging does not cover allocations created by other allocators such as a `PoolAllocator`.
-+ Most of the HPHA memory debugging features assert when they detect a memory issue. When possible, the debugger prints a stack trace that indicates where the allocation happened. The stack trace is printed into the debugger output \(not to the log\) so that Visual Studio can recognize it. This makes it possible to double\-click a trace and navigate directly to the corresponding file and line number.
++ Most of the HPHA memory debugging features assert when they detect a memory issue. When possible, the debugger prints a stack trace that indicates where the allocation happened. The stack trace is printed into the debugger output (not to the log) so that Visual Studio can recognize it. This makes it possible to double\-click a trace and navigate directly to the corresponding file and line number.
 + The HPHA memory debugger does not currently cover the following memory issues:
   + Buffer underflows.
   + "Far" buffer overflows. When detecting buffer overflows, O3DE detects changes up to 16 bytes after the memory block. If a buffer overflow writes on byte 17, O3DE does not detect it.
@@ -41,13 +41,13 @@ Some memory debugging features detect memory issues when an allocation is freed,
 
 For memory allocation operations, the debugger performs the following tasks:
 + If a previous allocation has the same pointer, the debugger asserts and prints the stack trace of the previous allocation. This usually occurs when a process overwrites the memory for the allocator's tracking structures. Because the allocator uses memory near the blocks that it allocates, a memory overflow or underflow in a neighboring block can overwrite the memory that the HPHA uses for memory tracking. When this occurs, the HPHA might consider a used block of memory to be "unused".
-+ Fills the memory with a [quiet NaN](https://en.wikipedia.org/wiki/NaN) \(qNaN\) pattern \(`0xFF, 0xC0, 0xC0, 0xFF`\). This is useful for detecting specific patterns of use in uninitialized memory and can detect most \(but not all\) cases. For more information about the qNaN pattern, see [Deallocations](#memory-management-debugging-hpha-deallocations).
++ Fills the memory with a [quiet NaN](https://en.wikipedia.org/wiki/NaN) (qNaN) pattern \(`0xFF, 0xC0, 0xC0, 0xFF`\). This is useful for detecting specific patterns of use in uninitialized memory and can detect most (but not all) cases. For more information about the qNaN pattern, see [Deallocations](#memory-management-debugging-hpha-deallocations).
 
 ### Deallocations 
 
 For memory deallocation operations, the debugger performs the following tasks:
 + Asserts if the debug record is not found. This can happen because of double deallocations or the deallocation of an invalid pointer.
-+ Asserts if a guard is invalid. When an allocation occurs, an additional 16 bytes \("the guard"\) are placed at the end of the allocation. For example, if the request is for 40 bytes, 56 bytes are assigned and 16 are used for the guard. Memory debugging assigns random values to the 16 bytes and places them in the debug record. When the deallocation happens, the 16 bytes are checked against the 16 bytes stored in the debug record. If they mismatch, the debugger asserts. This assert usually indicates a memory overflow \(that is, an attempt to write beyond the requested size\).
++ Asserts if a guard is invalid. When an allocation occurs, an additional 16 bytes ("the guard") are placed at the end of the allocation. For example, if the request is for 40 bytes, 56 bytes are assigned and 16 are used for the guard. Memory debugging assigns random values to the 16 bytes and places them in the debug record. When the deallocation happens, the 16 bytes are checked against the 16 bytes stored in the debug record. If they mismatch, the debugger asserts. This assert usually indicates a memory overflow (that is, an attempt to write beyond the requested size).
 
 **Note**
 This check cannot detect the cases in which the overflow writes the exact same random bytes or writes beyond the 16 byte guard.

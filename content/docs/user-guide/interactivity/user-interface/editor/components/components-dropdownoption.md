@@ -22,6 +22,6 @@ See [Properties](/docs/user-guide/interactivity/user-interface/editor/components
 **Elements, Owning Dropdown**
 Select an element from the list that has the **DropdWown** component. This is the element to be modified when this option is selected.
 **Elements, Text Element**
-Select an element from the list that displays the text corresponding to this option. This text is displayed on the owning drop\-down menu when this option is selected \(as long as the drop\-down menu has a **Text Element** configured\).
+Select an element from the list that displays the text corresponding to this option. This text is displayed on the owning drop\-down menu when this option is selected (as long as the drop\-down menu has a **Text Element** configured).
 **Elements, Icon Element**
-Select an element from the list that displays the icon corresponding to this option. This icon is displayed on the owning drop\-down menu when this option is selected \(as long as the drop\-down menu has an **Icon Element** configured\).
+Select an element from the list that displays the icon corresponding to this option. This icon is displayed on the owning drop\-down menu when this option is selected (as long as the drop\-down menu has an **Icon Element** configured).

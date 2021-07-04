@@ -6,10 +6,10 @@ title: Pose Subtract Node
 
 {{< preview-migrated >}}
 
-The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**. The output of a **Pose Subtract** node is the delta between them \(**Pose 1** - **Pose 2**\).
+The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**. The output of a **Pose Subtract** node is the delta between them (**Pose 1** - **Pose 2**).
 
 **Note**
-With the **Pose Subtract** node, you can generate an additive pose. You can then supply it to the **Blend Two Additive** node at runtime without manually generating it from a [DCC](/docs/userguide/ly-glos-chap#dcc). The output of the **Pose Subtract** node cannot be used as an input to the **Blend Two \(Legacy\)** node. This is because **Blend Two \(Legacy\)** does not expect a pose that is already a delta or additive pose, but expects a bind pose.
+With the **Pose Subtract** node, you can generate an additive pose. You can then supply it to the **Blend Two Additive** node at runtime without manually generating it from a [DCC](/docs/userguide/ly-glos-chap#dcc). The output of the **Pose Subtract** node cannot be used as an input to the **Blend Two (Legacy)** node. This is because **Blend Two (Legacy)** does not expect a pose that is already a delta or additive pose, but expects a bind pose.
 
 **To use the **Pose Subtract** node**
 
@@ -30,7 +30,7 @@ With the **Pose Subtract** node, you can generate an additive pose. You can then
    Connect nodes to the following inputs and output:
    + **Pose 1** - The base pose.
    + **Pose 2** - The pose to be subtracted from the base pose.
-   + **Output Pose** - The result of the pose subtraction \(**Pose 1** \- **Pose 2**\).
+   + **Output Pose** - The result of the pose subtraction (**Pose 1** \- **Pose 2**).
 
 ## Pose Subtract Node Attributes 
 

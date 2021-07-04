@@ -12,15 +12,15 @@ You can use multiple skin attachments on an actor or character to add interchang
 - [Using a Single FBX File](#using-a-single-fbx-file)
 - [Using Multiple FBX Files](#using-multiple-fbx-files)
 
-**Single FBX file with all skinned attachments \(meshes\) embedded**
+**Single FBX file with all skinned attachments (meshes) embedded**
 + Works well for an actor with a limited set of added or active attachments.
 + Causes initial performance slowdown with Asset Processor, especially with high fidelity meshes. The end result performance, however, is the same as with multiple FBX files.
 + Reduces number of FBX files to manage, but limits flexibility in modifying assets.
 
-**Multiple FBX files, each embedded with a skin attachment \(mesh\) that can be applied to an actor.**
+**Multiple FBX files, each embedded with a skin attachment (mesh) that can be applied to an actor.**
 + Multiple source files to manage within a project.
 + Provides flexibility for multiple content creators to manipulate meshes as needed.
-+ Asset Processor generates an `.mtl` \(material\) file for each FBX regardless of whether you intend to share materials.
++ Asset Processor generates an `.mtl` (material) file for each FBX regardless of whether you intend to share materials.
 
 Whether you use a single FBX file or multiple FBX files, you create an actor for each skinned mesh attachment. The single FBX file method requires some additional configuration in the **FBX Settings** tool.
 

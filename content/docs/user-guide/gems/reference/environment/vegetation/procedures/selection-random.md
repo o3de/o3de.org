@@ -23,7 +23,7 @@ The vegetation entity, or the entity that contains the **Vegetation Layer Spawne
 When specifying your first asset, you don't need to click + because there is an empty asset displayed by default. Specify the mesh.
 ![\[In the Vegetation Asset List component's properties, next to Embedded Assets, click the plus sign.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-browse.png)
 
-   1. Under the blank asset, listed as **<asset name>**, next to **Mesh Asset**, click **Browse \(…\)**.
+   1. Under the blank asset, listed as **<asset name>**, next to **Mesh Asset**, click **Browse (…)**.
 ![\[Under the blank asset, next to Mesh Asset, click Browse (…).\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-add-asset.png)
 
    1. In the search bar, enter a search term, such as **flower**, and select a vegetation asset.
@@ -63,14 +63,14 @@ If you don't have the **Gradient** category in your list of components, you must
 1. In the **Vegetation Reference Shape** component's properties, next to **Shape Entity Id**, click the target button.
 ![\[In the Vegetation Reference Shape component's properties, next to Shape Entity Id, click the target button.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-target.png)
 
-1. In the **Entity Outliner**, select the **TestBox** entity \(or the entity that contains your shape if you named it something else\).
+1. In the **Entity Outliner**, select the **TestBox** entity (or the entity that contains your shape if you named it something else).
 
    The **Shape Entity Id** field populates with the entity name that you selected and uses the shape on that entity as its reference shape.
 ![\[In the Entity Outliner, select the TestBox entity.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-gradient-random-selection-basic-coverage.png)
 
 ## Linking the Gradient to the Vegetation Area 
 
-Before the gradient that you created can have any effect on the vegetation, you must reference the gradient from within the vegetation area. This means the component that you reference the gradient \(in this example, the **Vegetation Asset Weight Selector**\) in uses the gradient's information for its selection of values.
+Before the gradient that you created can have any effect on the vegetation, you must reference the gradient from within the vegetation area. This means the component that you reference the gradient (in this example, the **Vegetation Asset Weight Selector**) in uses the gradient's information for its selection of values.
 
 You can reference the gradient that you created in any number of components. In the procedure [Adding Scale, Rotation, and Position Modifiers](/docs/user-guide/gems/vegetation/adding-modifiers.md), you use the same gradient for the vegetation modifiers.
 

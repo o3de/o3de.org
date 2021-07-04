@@ -30,7 +30,7 @@ You don't need to close Asset Processor when you get the latest updates from sou
 
 However, if you aren't using the game or O3DE Editor, you can exit Asset Processor by right\-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar.
 
-Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device. This is called virtual file system \(VFS\) and is required for live reloading to work on those platforms. For more information, see [Live Reloading and VFS](/docs/user-guide/assets/live-reloading.md).
+Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device. This is called virtual file system (VFS) and is required for live reloading to work on those platforms. For more information, see [Live Reloading and VFS](/docs/user-guide/assets/live-reloading.md).
 
 ## Modifying the Asset Processor Configuration File 
 

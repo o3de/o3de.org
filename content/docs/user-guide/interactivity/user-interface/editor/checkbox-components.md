@@ -27,14 +27,14 @@ In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity
 **Interactable**
 See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
 **Elements**, **On**
-Select an element from the list to specify the entity that appears when the check box state is `on` \(selected\).
+Select an element from the list to specify the entity that appears when the check box state is `on` (selected).
 **Elements**, **Off**
-Select an element from the list to specify the entity that appears when the check box state is `off` \(cleared\).
+Select an element from the list to specify the entity that appears when the check box state is `off` (cleared).
 **Value, Checked**
 Select the box to change the initial state of the check box.
 **Actions**, **Change**
 Enter a text string. This string is sent as an action on the UI canvas when the check box has any state changes.
 **Actions**, **On**
-Enter a text string. This string is sent as an action on the UI canvas when the check box state changes to `on` \(selected\).
+Enter a text string. This string is sent as an action on the UI canvas when the check box state changes to `on` (selected).
 **Actions**, **Off**
-Enter a text string. This string is sent as an action on the UI canvas when the check box state changes to `off` \(cleared\).
+Enter a text string. This string is sent as an action on the UI canvas when the check box state changes to `off` (cleared).

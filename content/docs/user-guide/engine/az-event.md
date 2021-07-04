@@ -12,7 +12,7 @@ The `AZ::Event` template class is used to subscribe to and publish single value 
 
 `AZ::Event `limitations include the following:
 * The event system is single\-threaded only. Handlers should `Connect()` and `Disconnect()` on the same thread that is dispatching events.
-* Handlers can be bound only to an existing event instance. You can't bind to an event prior to its creation \(the way you can with an address by ID EBus\).
+* Handlers can be bound only to an existing event instance. You can't bind to an event prior to its creation (the way you can with an address by ID EBus).
 * A handler can be bound only to a single event. You can't bind a single handler to more than one event.
 * There are no return results for handlers. The handler function signature must have a void return result.
 * There is no event queuing. A queue can be built as a modular handler wrapper, but in the single\-threaded implementation, all events immediately dispatch to all handlers.

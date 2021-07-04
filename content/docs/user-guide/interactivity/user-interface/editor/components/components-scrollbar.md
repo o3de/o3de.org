@@ -48,9 +48,9 @@ Select the scroll bar's orientation:
 
    
 **Values**, **Value**
-Enter the initial value of the scroll bar \(**0.0** to **1.0**\).
+Enter the initial value of the scroll bar (**0.0** to **1.0**).
 **Values**, **Handle size**
-Enter the size of the handle relative to the scroll bar \(**0.0** to **1.0**\).
+Enter the size of the handle relative to the scroll bar (**0.0** to **1.0**).
 **Values**, **Min handle size**
 Enter the minimum size of the handle in pixels.
 **Actions**, **Change**

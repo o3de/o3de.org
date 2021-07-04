@@ -150,7 +150,7 @@ Wind is disabled when both the below **Air drag** and **Air lift** coefficients 
 Enable to set a wind **Local velocity** for this cloth. When disabled, the velocity from Physics::WindBus will be used.
 
 **Local velocity**
-Wind vector \(direction and magnitude\) in world coordinates. A greater magnitude applies a stronger wind force.
+Wind vector (direction and magnitude) in world coordinates. A greater magnitude applies a stronger wind force.
 The wind **Local velocity** property is enabled by the **Enable local wind velocity** property.
 
 **Air drag coefficient**

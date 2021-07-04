@@ -35,7 +35,7 @@ To use the text styling markup feature, you must use a font family `*.fontfamily
 
 **To use text styling markup**
 
-1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), add a **Text** component to an element on your canvas \(or modify an existing component\).
+1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), add a **Text** component to an element on your canvas (or modify an existing component).
 
 1. With the element selected, in the **Properties** pane, set the **Font path** property to a `*.fontfamily` file.
 

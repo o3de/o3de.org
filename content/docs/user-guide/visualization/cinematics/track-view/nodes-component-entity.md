@@ -41,7 +41,7 @@ O3DE uses entity IDs to identify component entities, which means that you can na
 
 ![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
 
-If you have component entities with the same name \(for example, if they're multiple instances of a slice\), you can determine which entity that you're editing. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md).
+If you have component entities with the same name (for example, if they're multiple instances of a slice), you can determine which entity that you're editing. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md).
 
 ## Adding or Removing Components from a Component Entity 
 

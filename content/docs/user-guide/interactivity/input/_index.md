@@ -30,7 +30,7 @@ The AZ framework input interface uses the `AZCore` EBus system and defines the f
 + `InputDeviceId` - A device name and device index that together uniquely identify an `InputDevice`.
 + `InputDeviceNotificationBus` - An EBus interface that subscribes to events from input devices when they connect or disconnect.
 + `InputDeviceRequestBus` - An EBus interface that queries input devices about their associated input channels or current connected state.
-+ `InputChannel` - A base class that represents a specific source of input data \(for example, the left mouse button\). Input devices typically have multiple input channels.
++ `InputChannel` - A base class that represents a specific source of input data (for example, the left mouse button). Input devices typically have multiple input channels.
 + `InputChannelId` - A name that uniquely identifies an `InputChannel`.
 + `InputChannelNotificationBus` - An EBus interface that subscribes to events from input channels when the channels are active or when their state or value changes.
 + `InputChannelRequestBus` - An EBus interface that obtains an input channel from the input channel's ID. You can then query the input channel directly for its current state or value.

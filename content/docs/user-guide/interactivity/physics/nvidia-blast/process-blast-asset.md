@@ -67,6 +67,6 @@ Manually processing blast assets requires you to add a mesh group for each chunk
    1. Repeat steps **b** and **c** until each mesh in the mesh list is assigned to its own **Mesh group**.
 ![\[Create mesh groups for Blast assets.\]](/images/user-guide/physx/blast/ui-blast-asset-mesh-groups.png)
 
-1. **Optional:** If the meshes require special processing, such as a vertex color stream provided by the **Mesh \(Advanced\)** modifier, add modifiers to each mesh group as required.
+1. **Optional:** If the meshes require special processing, such as a vertex color stream provided by the **Mesh (Advanced)** modifier, add modifiers to each mesh group as required.
 
 1. Choose the **Update** button in the bottom right of **FBX Settings**. **Asset Processor** generates the run\-time assets. A **File progress** window appears and displays feedback about the process.

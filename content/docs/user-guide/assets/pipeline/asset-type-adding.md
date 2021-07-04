@@ -69,7 +69,7 @@ Enabling your asset for loading and streaming involves the following steps:
 
 ### C. Customize UI Interaction 
 
-Optionally, you can describe your asset to the UI \(and other systems\) and customize your asset's interaction with it, including with the **Asset Browser**.
+Optionally, you can describe your asset to the UI (and other systems) and customize your asset's interaction with it, including with the **Asset Browser**.
 
 1. **Describe your asset type to the UI** - Use the `AssetTypeInfoBus` to provide integration with UI features like the **Asset Browser**.
 
@@ -147,7 +147,7 @@ The following sections describe the steps required for integration with O3DE's a
 To represent an image that is usable in\-memory for your asset, derive a class from `AZ::Data::AssetData`. You do not load the asset from the `AssetData`\-derived class. Instead, the class actually represents your asset in memory, and the game uses it directly for processing. When you request the asset from `AssetManager`, the asset manager reference counts it, and the asset class is shared by any consumer of the asset. When you create an asset class, keep in mind the following:
 + You can place `AssetData`\-derived classes in gems.
 + Your asset class must have an AZ\_RTTI declaration, including a UUID for the class's type. The UUID that you use for this type is actually the asset type that it represents. The UUID matches the type that you use in your asset builder or your copy rule.
-+ While an `AssetData`\-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement. If you have special requirements \(like third\-party considerations\), your class can simply provide a handle to a foreign system that contains the asset data.
++ While an `AssetData`\-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement. If you have special requirements (like third\-party considerations), your class can simply provide a handle to a foreign system that contains the asset data.
 + For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the O3DE code at `Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`.
 
 #### Asset Instances and Asset Data 
@@ -156,7 +156,7 @@ It is important to understand the difference between asset `instances` and asset
 
 An `AssetData`\-derived class contains the asset data that is shared among instances that use that data. Data that is specific to an instance should live in the instance itself. For example, an animation asset usually contains actual animation curves and samples. Only one such asset is loaded even if many characters use the animation. However, each character instance has an additional block of data that keeps track of the frame that the animation is on for the instance.
 
-`AssetData` objects are not immutable, and often change over time. For example, textures can load higher level of detail \(LOD\) objects, and procedural meshes or textures can change over time. However, all instances that use an asset get the same pointer to the asset and therefore change when the asset changes. This is also true when instances have a pointer to an asset in a foreign system.
+`AssetData` objects are not immutable, and often change over time. For example, textures can load higher level of detail (LOD) objects, and procedural meshes or textures can change over time. However, all instances that use an asset get the same pointer to the asset and therefore change when the asset changes. This is also true when instances have a pointer to an asset in a foreign system.
 
 ### 2. Create an Asset Handler 
 
@@ -173,7 +173,7 @@ Because assets like classes, lists, vectors, and properties are structured data,
 
 #### Writing a Handler for Custom Assets 
 
-If you have a custom asset \(like bytes or custom formats\), you must write your own `AssetHandler`. To do so, implement the `CreateAsset`, `LoadAssetData`, and other functions in the following code:
+If you have a custom asset (like bytes or custom formats), you must write your own `AssetHandler`. To do so, implement the `CreateAsset`, `LoadAssetData`, and other functions in the following code:
 
 ```
 // AZ::Data::AssetHandler
@@ -251,13 +251,13 @@ At this point, you can use your custom assets in your structures and components.
 
 1. Reflect the fields that you added by using editor reflection. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection.md).
 
-1. \(Optional\) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior. For more information, see `m_script` in the `Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file.
+1. (Optional) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior. For more information, see `m_script` in the `Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file.
 
 After you perform these steps, your component appears in the component editor. The component has a field to which you can drag and drop the asset from the **Asset Browser**. When the asset is dragged on the socket, the component accepts it. At this point, runtime or editor code can call functions like `QueueLoad` on the asset.
 
 ## C. Customizing UI Interaction 
 
-\(Optional\) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/engine/ebus/_index.md) to customize your asset's interaction with the **Asset Browser**.
+(Optional) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/engine/ebus/_index.md) to customize your asset's interaction with the **Asset Browser**.
 
 ### 1. Describing Your Asset Type to the UI 
 
@@ -292,7 +292,7 @@ To customize how your asset type interacts with the **Asset Browser** and viewpo
 
 1. Default drag\-and\-drop behavior for viewport operations.
 
-1. Default context menu \(right\-click\) behavior for the **Asset Browser**.
+1. Default context menu (right\-click) behavior for the **Asset Browser**.
 
 1. Default file open behavior.
 

@@ -21,7 +21,7 @@ Serialization into JSON is done with the `static AZ::JsonSerialization::Store()`
 + `allocator` - The memory allocator used by RapidJSON.
 +  `object` - The object to serialize. This object's class must be registered with the provided serialization context.
 
-   When serializing, a second object of type `T` is created from the default constructor \(if possible\) to provide default values.
+   When serializing, a second object of type `T` is created from the default constructor (if possible) to provide default values.
 + `settings` - Configuration for how to treat the serialization. If not provided, the default settings are used.
 
 `template<typename T> static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Store(rapidjson::Value& output, rapidjson::Document::AllocatorType& allocator, const T& object, const T& defaultObject, AZ::JsonSerializerSettings settings = AZ::JsonSerializerSettings{});`

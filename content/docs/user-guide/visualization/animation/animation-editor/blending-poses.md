@@ -13,7 +13,7 @@ You can use **Blend** nodes in animation graphs to create an animation that blen
 + [Blend Two Additive Node](/docs/user-guide/visualization/animation/animation-editor/blending-blendtwoadditive.md)
 + [Pose Subtract Node](/docs/user-guide/visualization/animation/animation-editor/blending-posesubtract.md)
 + [Blend Two Node](/docs/user-guide/visualization/animation/animation-editor/blending-blendtwo.md)
-+ [Blend Two \(Legacy\) Node](/docs/user-guide/visualization/animation/animation-editor/blending-blendtwolegacy.md)
++ [Blend Two (Legacy) Node](/docs/user-guide/visualization/animation/animation-editor/blending-blendtwolegacy.md)
 
 ## Blend Node Attributes 
 

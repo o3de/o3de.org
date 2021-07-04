@@ -6,7 +6,7 @@ title: TextInput
 
 {{< preview-migrated >}}
 
-You can use a **TextInput** component to make an element offer player input. This component is typically applied to an element with an image component and two child elements with text components \(one for placeholder text and one for input text\).
+You can use a **TextInput** component to make an element offer player input. This component is typically applied to an element with an image component and two child elements with text components (one for placeholder text and one for input text).
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-textinput.png)
 

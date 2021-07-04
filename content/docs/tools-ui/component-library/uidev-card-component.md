@@ -12,7 +12,7 @@ For example, a card might include common properties, action buttons, advanced se
 
 ![\[component card concept\]](/images/tools-ui/component-card-concept.png)
 
-To make it easier for users to scan a card, make the content layout consistent. This includes using the same font size, style, and spacing for headings and content. Be consistent with your use of images and icons, and primary and secondary actions \(if required\). Card titles are key to allowing users to easily scan the content, so make sure the titles are highly visible.
+To make it easier for users to scan a card, make the content layout consistent. This includes using the same font size, style, and spacing for headings and content. Be consistent with your use of images and icons, and primary and secondary actions (if required). Card titles are key to allowing users to easily scan the content, so make sure the titles are highly visible.
 
 ## Anatomy of the card widget<a name="card-anatomy"></a>
 
@@ -28,7 +28,7 @@ Cards allow for a certain amount of customization. The basic layout of a card in
 
 1.  **Card icon**
 
-   \(Optional\) Cards can have their own unique icon related to their purpose. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/).
+   (Optional) Cards can have their own unique icon related to their purpose. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/).
 **Note**
 Two icons are required for new components:
 A 16 x 16 SVG with a background box for the perspective window.
@@ -40,11 +40,11 @@ An SVG for everywhere else in the editor, without a background box.
 
 1.  **Help icon**
 
-   \(Optional\) Cards can display a link to documentation that describes the card's functionality.
+   (Optional) Cards can display a link to documentation that describes the card's functionality.
 
 1.  **Context menu icon**
 
-   \(Optional\) The card's context menu opens when users choose this icon. The context menu can also be opened by right\-clicking the card header with a mouse.
+   (Optional) The card's context menu opens when users choose this icon. The context menu can also be opened by right\-clicking the card header with a mouse.
 
 1.  **Card content widget**
 
@@ -52,15 +52,15 @@ An SVG for everywhere else in the editor, without a background box.
 
 1.  **Advanced options**
 
-   \(Optional\) When a secondary content widget is set, a label for it is displayed here. The Advanced options menu expands or collapses when users choose the arrow on the left of the label. You can customize the label's text.
+   (Optional) When a secondary content widget is set, a label for it is displayed here. The Advanced options menu expands or collapses when users choose the arrow on the left of the label. You can customize the label's text.
 
 1.  **Notifications**
 
-   \(Optional\) [Notifications](#card-notification) that you added to the card are displayed here. Buttons or other widgets can be added to notifications as a means of resolving them.
+   (Optional) [Notifications](#card-notification) that you added to the card are displayed here. Buttons or other widgets can be added to notifications as a means of resolving them.
 
 1.  **Call to action region**
 
-   \(Optional\) Supplemental actions should be placed at the bottom of the card. We refer to this as the Call to Action region. Typically, a call to action is represented by a button added to the bottom of a content widget, or in a card notification. Avoid using primary buttons here because they should be reserved for the overall action on a page. Instead, use secondary or tertiary buttons, link buttons, and icon buttons here.
+   (Optional) Supplemental actions should be placed at the bottom of the card. We refer to this as the Call to Action region. Typically, a call to action is represented by a button added to the bottom of a content widget, or in a card notification. Avoid using primary buttons here because they should be reserved for the overall action on a page. Instead, use secondary or tertiary buttons, link buttons, and icon buttons here.
 
 ## Basic card<a name="card-basic"></a>
 
@@ -69,9 +69,9 @@ An SVG for everywhere else in the editor, without a background box.
 The simplest card consists of these components:
 + Card header
   + Expand/collapse icon
-  + \(Optional\) Card icon
+  + (Optional) Card icon
   + Card name
-  + \(Optional\) Context menu \(enabled by default\)
+  + (Optional) Context menu (enabled by default)
 + Card content
 
  **Example**
@@ -211,8 +211,8 @@ Add notifications to indicate misconfigurations and other errors. Remove the not
 
 Customize the notification with the following:
 + Message
-+ \(Optional\) Action button
-+ \(Optional\) Custom widget
++ (Optional) Action button
++ (Optional) Custom widget
 
 **Note**
 In addition to buttons, you can use `addFeature(QWidget*)` to add a custom widget to the warning notification.

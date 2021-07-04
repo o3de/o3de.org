@@ -10,7 +10,7 @@ title: Automating the O3DE Editor with the Python Editor Bindings gem
 
 ## Enable editor automation 
 
- Editor automation is enabled by selecting the **PythonEditorBindings** gem for your project, and then rebuilding the editor. No specific configuration \(debug, profile, release\) is required to enable the Python bindings. Because the bindings are enabled through a gem that you select for your project, you'll need to make sure that this gem is enabled for *all* projects that you intend to use automation with.
+ Editor automation is enabled by selecting the **PythonEditorBindings** gem for your project, and then rebuilding the editor. No specific configuration (debug, profile, release) is required to enable the Python bindings. Because the bindings are enabled through a gem that you select for your project, you'll need to make sure that this gem is enabled for *all* projects that you intend to use automation with.
 
 ## Use editor automation 
 
@@ -18,4 +18,4 @@ title: Automating the O3DE Editor with the Python Editor Bindings gem
 
  You can also access a set of available scripts, including some samples for common tasks in the editor, by selecting **Tools** > **Other** > **Python Scripts**. These scripts are stored in a directory depending on their scope. Scripts only for your project are stored in the `Editor\Scripts` directory, and scripts meant to be used along with a gem are stored at `Gems\<name>\Editor\Scripts`.
 
- Editor automation is driven primarily through the event bus \(EBus\) system. Before working with the editor bindings, you should become familiar with the basics of EBus from [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md). To learn about some of the specific buses used by the editor automation system, take a look at the [Python Editor Bindings gem examples](/docs/user-guide/editor/editor-automation-examples.md).
+ Editor automation is driven primarily through the event bus (EBus) system. Before working with the editor bindings, you should become familiar with the basics of EBus from [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md). To learn about some of the specific buses used by the editor automation system, take a look at the [Python Editor Bindings gem examples](/docs/user-guide/editor/editor-automation-examples.md).

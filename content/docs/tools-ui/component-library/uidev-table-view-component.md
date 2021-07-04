@@ -22,7 +22,7 @@ Create a simple logging table view.
 For a more complex working example of a table view, view the sample tables on the **Table View** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), then examine the source code for that page found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\TableViewPage.cpp`.
 
 **Note**
-If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors\(false\) function.
+If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
 
  **Example**
 

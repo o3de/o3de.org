@@ -23,7 +23,7 @@ If your original image is 4096x4096, then you will have mip maps that are 4096x4
 **Note**
 For most of the existing presets, mip maps are enabled by default. If you create your own presets, you must enable mip maps.
 
-If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**, **none \(0\)** appears.
+If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**, **none (0)** appears.
 
 ![\[If mip maps are not enabled for a particular image processing preset, then under Mip Control, Mip maps, none (0) appears.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-3.png)
 

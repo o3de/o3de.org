@@ -18,9 +18,9 @@ O3DE makes it easy for you to add script functionality to your game entities by 
 1. Scroll down to the **Scripting** section, and then click **Lua Script**.
 ![\[Click Lua Script\]](/images/user-guide/scripting/lua/lua-scripting-ces-2.png)
 
-1. A **Lua Script** component appears in the inspector. Use the file selection button \(**...**\) to select the Lua script from the file hierarchy that you want to use.
+1. A **Lua Script** component appears in the inspector. Use the file selection button (**...**) to select the Lua script from the file hierarchy that you want to use.
 ![\[Lua Script component\]](/images/user-guide/scripting/lua/lua-scripting-ces-3.png)
 
-   You can select either a `.lua` file \(a text copy of the original\), or a `.luac` file \(a precompiled version of the script\). The functionality should be the same. The precompiled version is preferable because it loads faster and is usually smaller. However, you can use`.lua` files if you experience any issues.
+   You can select either a `.lua` file (a text copy of the original), or a `.luac` file (a precompiled version of the script). The functionality should be the same. The precompiled version is preferable because it loads faster and is usually smaller. However, you can use`.lua` files if you experience any issues.
 
-1. After the script is loaded, click **Edit Script** \(**\{\}**\) to launch the Lua IDE and make changes to your script.
+1. After the script is loaded, click **Edit Script** (**\{\}**) to launch the Lua IDE and make changes to your script.

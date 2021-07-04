@@ -27,5 +27,5 @@ Do one of the following:
 **To toggle common zoom settings**
 
 Do one of the following:
-+ Fit canvas to current view \(default\) - Press **Ctrl+0**, or click **View**, **Fit Canvas**.
++ Fit canvas to current view (default) - Press **Ctrl+0**, or click **View**, **Fit Canvas**.
 + View canvas at actual size - Press **Ctrl+1**, or click **View**, **Actual Size**.

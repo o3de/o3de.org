@@ -16,7 +16,7 @@ The game console supports color coding by using the color indices 0..9 with a le
 This is normal $1one$2two$3three and so on
 ```
 
-In the preceding example, one renders in red, two in green, and three \(and the remaining text\) in blue.
+In the preceding example, one renders in red, two in green, and three (and the remaining text) in blue.
 
 ## Console Variables 
 
@@ -97,7 +97,7 @@ e_particles_max_emitter_draw_screen=4
 e_particles_max_emitter_draw_screen=16
 ```
 
-This creates a new console variable group named `sys_spec_Particles` that behaves like an integer console variable. By default, this variable has the state `4` \(set in the line following the comment in the example\).
+This creates a new console variable group named `sys_spec_Particles` that behaves like an integer console variable. By default, this variable has the state `4` (set in the line following the comment in the example).
 
 On changing the variable, the new state is applied. Console variables not specified in the `.cfg` file are not set. All console variables need to be part of the default section. An error message is output in case of violation of this rule.
 
@@ -177,7 +177,7 @@ For each frame, the deferred command list is processed as a fifo. Elements of th
 
 When a blocker is consumed from the list and executed, the process is delayed until the next frame. For instance, commands like `map` and `screenshot` are blockers.
 
-A console command \(either command or variable\) can be tagged as a blocker during its declaration using the` VF_BLOCKFRAME` flag.
+A console command (either command or variable) can be tagged as a blocker during its declaration using the` VF_BLOCKFRAME` flag.
 
 The following synchronization commands are supported.
 

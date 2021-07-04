@@ -38,14 +38,14 @@ For example, you can ensure an element remains full screen regardless of the scr
    1. Anchor all of the element's edges to the parent. The horizontal and vertical size adjusts to parent. You can use this anchor preset to place an element that remains full screen, regardless of a change in resolution. This applies if the canvas is its parent.
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-presets-1.png)
 
-**To further edit \(fine tune\) an element's anchors**
+**To further edit (fine tune) an element's anchors**
 In the **Properties** pane, under **Transform2D**, do the following for **Anchors**, as appropriate:
 + For **Left**, enter a value between `0.00%` and `100.00%`.
 + For **Right**, enter a value between `0.00%` and `100.00%`.
 + For **Top**, enter a value between `0.00%` and `100.00%`.
 + For **Bottom**, enter a value between `0.00%` and `100.00%`.
 
-The anchors' positions can be visualized as points on a grid, plotted in percentages by the length of its parent's edges from left to right and top to bottom. If you want to keep the element's size absolute \(so that it doesn't change size when the parent changes size\) but want to anchor it a particular vertical or horizontal point relative to the parent's size, make sure the top and bottom \(or left and right\) anchors have the same number. In this case, the anchors are said to be together.
+The anchors' positions can be visualized as points on a grid, plotted in percentages by the length of its parent's edges from left to right and top to bottom. If you want to keep the element's size absolute (so that it doesn't change size when the parent changes size) but want to anchor it a particular vertical or horizontal point relative to the parent's size, make sure the top and bottom (or left and right) anchors have the same number. In this case, the anchors are said to be together.
 
 But if, for example, you want the element's left and right edges to each remain at a fixed percentage relative to its parent and to change size as its parent changes size, then make the numbers different. In this case, the anchors are called split.
 
@@ -91,6 +91,6 @@ The layout column of buttons has the following settings.
 | --- | --- |
 | Anchors | Left = 20%, Top = 6%, Right = 80%, Bottom = 94% |
 | Pivot | Default settings: X = 0.5, Y = 0.5 |
-| Scale to device | None \(not selected\) |
+| Scale to device | None (not selected) |
 
 ![\[Using anchors to resize buttons to stay on the screen.\]](/images/user-guide/game_ui_editor/ui-editor-transform-scale-3.gif)

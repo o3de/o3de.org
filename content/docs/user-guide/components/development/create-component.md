@@ -73,16 +73,16 @@ void Deactivate() override {}
 ```
 
 These functions are as described as follows:
-Init\(\)
-\(Optional\) Called only once for a given entity. It requires minimal construction or setup work, since the component may not be activated anytime soon. An important best practice is to minimize your component's CPU and memory overhead while the component is inactive.
-Activate\(\)   {#component-entity-system-create-component-az-activate}
-\(Required\) Called when the owning entity is being activated. The system calls your component's `Activate()` function only if all dependent or required services are present. Your `Activate` function is always called after any components that it depends on. In addition, the component makeup of an entity never changes while the entity is active. Consequently, it is safe to cache pointers or references to other components on the entity when performance is critical.
-Deactivate\(\)   {#component-entity-system-create-component-az-deactivate}
-\(Required\) Called when the owning entity is being deactivated. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. As a best practice, make sure your component returns to a minimal footprint when it is deactivated. In general, deactivation should be symmetric to activation.
+Init()
+(Optional) Called only once for a given entity. It requires minimal construction or setup work, since the component may not be activated anytime soon. An important best practice is to minimize your component's CPU and memory overhead while the component is inactive.
+Activate()   {#component-entity-system-create-component-az-activate}
+(Required) Called when the owning entity is being activated. The system calls your component's `Activate()` function only if all dependent or required services are present. Your `Activate` function is always called after any components that it depends on. In addition, the component makeup of an entity never changes while the entity is active. Consequently, it is safe to cache pointers or references to other components on the entity when performance is critical.
+Deactivate()   {#component-entity-system-create-component-az-deactivate}
+(Required) Called when the owning entity is being deactivated. The order of deactivation is the reverse of activation, so your component is deactivated before the components it depends on. As a best practice, make sure your component returns to a minimal footprint when it is deactivated. In general, deactivation should be symmetric to activation.
 Destruction does not necessarily follow deactivation. An entity can be deactivated and then activated again without being destroyed, so ensure that your components support this efficiently. However, when you do destroy your entity, O3DE ensures that your `Deactivate()` function is called first. Components must be authored with this in mind.
 
-Reflect\(\)
-\(Required\) All components are AZ reflected classes. Because all components must be serializable and editable, they must contain a `Reflect()` function, as in the following example:
+Reflect()
+(Required) All components are AZ reflected classes. Because all components must be serializable and editable, they must contain a `Reflect()` function, as in the following example:
 
 ```cpp
 // Required Reflect function.
@@ -92,7 +92,7 @@ static void Reflect(AZ::ReflectContext* context);
 For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/).
 
 Logical Services
-\(Optional\) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with. To define these logical services, use the following functions:
+(Optional) Components can define any combination of logical services that they provide, depend on, require, or are incompatible with. To define these logical services, use the following functions:
 
 ```cpp
 // Optional functions for defining provided and dependent services.

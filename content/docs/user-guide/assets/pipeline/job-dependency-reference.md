@@ -35,7 +35,7 @@ An order job dependency means that Asset Processor must process the job only whe
 **Job A** has a specified order job dependency on **Job B**. This means that Asset Processor must process **Job B** first and then **Job A**.
 
 **Example**
-You might want a builder that operates on the output of the image compilation set of `example.tif` on the platform `pc`. If so, find the job key of that job \(for example, "RC Image"\) and declare a dependency, like the following: `("RC Image," "pc", "example.tif")`
+You might want a builder that operates on the output of the image compilation set of `example.tif` on the platform `pc`. If so, find the job key of that job (for example, "RC Image") and declare a dependency, like the following: `("RC Image," "pc", "example.tif")`
 
 ```
 enum class JobDependencyType : AZ::u32

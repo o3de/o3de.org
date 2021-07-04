@@ -12,9 +12,9 @@ When working with reference spaces, remember the following rules:
 + New selections always default to their parent space. This will be the world coordinate space if the entity does not have a parent.
 + Holding **Shift** aligns the manipulator to the world coordinate space.
 + Holding **Alt** aligns the manipulator to an entity's local coordinate space.
-+ You can easily access custom spaces by moving the manipulator \(press **Ctrl** and click and drag\) or picking a target entity as a reference space \(press **Ctrl** and **Alt** and click a target entity\).
++ You can easily access custom spaces by moving the manipulator (press **Ctrl** and click and drag) or picking a target entity as a reference space (press **Ctrl** and **Alt** and click a target entity).
 
-The Viewport Interaction Model simplifies the mental mode for you and doesn't require you to keep track manually of the last space \(local or world\) that you were using. You can specify a target and define that target as custom reference spaces. This new reference space model covers any arbitrary transformation.
+The Viewport Interaction Model simplifies the mental mode for you and doesn't require you to keep track manually of the last space (local or world) that you were using. You can specify a target and define that target as custom reference spaces. This new reference space model covers any arbitrary transformation.
 
 ## Switching Between Local and World Space 
 
@@ -32,7 +32,7 @@ If you selected an entity that doesn't have a parent, your selection defaults to
 Parent space is the transform that the parent entity has in the hierarchy. If an entity doesn't have a parent, the entity uses world space instead.
 **Example**
 
-   In the following example, the entity moves in world space because the car does not have a parent. When you select the child entity \(the tire\), the manipulator switches to the parent space of that entity \(the car\).
+   In the following example, the entity moves in world space because the car does not have a parent. When you select the child entity (the tire), the manipulator switches to the parent space of that entity (the car).
 ![\[Switch between local and parent space in the viewport in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
 
    The following are shortcuts to work with the reference space mode.

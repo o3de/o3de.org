@@ -11,16 +11,16 @@ After you create your vegetation entity, you can designate your customized veget
 
 1. In the **Entity Inspector**, select the **BasicCoverage** entity.
 
-1. Right\-click the entity, choose **Create child entity**, and name it *Cylinder\(PlacementTest\)*.
+1. Right\-click the entity, choose **Create child entity**, and name it *Cylinder(PlacementTest)*.
 
 1. Click **Add Component** and select the **Cylinder Shape** component.
 
-1. Select the **Cylinder\(PlacementTest\)** entity and move it away from the vegetation area.
+1. Select the **Cylinder(PlacementTest)** entity and move it away from the vegetation area.
 ![\[Multiple reference shapes for vegetation areas.\]](/images/user-guide/vegetation/dynamic/create-new-vegetation-reference-area.png)
 
 1. Select the **BasicCoverage** entity.
 
-1. On the **Vegetation Reference Shape** component, for **Shape Entity Id**, specify the **Cylinder\(PlacementTest\)** entity.
+1. On the **Vegetation Reference Shape** component, for **Shape Entity Id**, specify the **Cylinder(PlacementTest)** entity.
 ![\[Specify different shapes for the Vegetation Reference Shape component.\]](/images/user-guide/vegetation/dynamic/create-new-vegetation-reference-area-1.png)
 **Example**
 

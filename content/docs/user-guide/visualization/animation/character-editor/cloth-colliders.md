@@ -23,7 +23,7 @@ For more information, see the [NVIDIA Cloth Gem documentation](/docs/user-guide/
 
 1. In the **Skeleton Outliner**, select the joint that you want to add the cloth collider to.
 
-1. Right\-click the selected joint, and then choose **Cloth**, **Add collider**. You can add colliders \(capsules or spheres\). You can also copy them from Hit Detection, Ragdolls or Simulated Objects.
+1. Right\-click the selected joint, and then choose **Cloth**, **Add collider**. You can add colliders (capsules or spheres). You can also copy them from Hit Detection, Ragdolls or Simulated Objects.
 ![\[Add cloth collider to character.\]](/images/user-guide/actor-animation/nvidiacloth/ui-cloth-add-collider.png)
 
 1. The **Cloth Colliders** tab shows you the list of cloth colliders of the selected joint.

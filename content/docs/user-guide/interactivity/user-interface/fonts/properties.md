@@ -61,7 +61,7 @@ Most of these attributes have a direct impact on font rendering quality. For mor
 | Attribute | Example | Description |
 | --- | --- | --- |
 | path |  <pre><font path="Vera.ttf" ... /></pre>  | Type: String Path to TTF or OTF font file asset.  |
-| fontsize |  <pre>< ... fontsize="32"/></pre>  | Type: Integer Defines in pixels the square size of the slots used to store glyphs \(characters\) in the font texture. For pixel\-perfect render quality, this size should match the size specified when rendering the font.   |
+| fontsize |  <pre>< ... fontsize="32"/></pre>  | Type: Integer Defines in pixels the square size of the slots used to store glyphs (characters) in the font texture. For pixel\-perfect render quality, this size should match the size specified when rendering the font.   |
 | w |  <pre>< ... w="512" h="256" /></pre>  | Type: Integer Defines in pixels the width of the font texture. |
 | h |  <pre>< ... w="512" h="256" /></pre>  | Type: Integer Defines in pixels the width of the font texture. |
 | widthslots |  <pre><font path="Vera.ttf" w="512" h="512" widthslots="8" heightslots="8" /></pre>  | Type: Integer Default: 16 Defines the number of character or glyph slots along the X axis of the font texture. In the example, the font texture is 512x512. The width and height slots are set to 8. This gives a space of 64x64 for each character. |

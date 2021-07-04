@@ -5,9 +5,9 @@ title: Creating and Visualizing Blend Spaces
 
 {{< preview-migrated >}}
 
-Blend spaces are a collection of sample motions that are organized spatially according to their coordinates. The visual representation is a graph with xy\-axes for the coordinates. The xy\-axes can represent values such as move speed, travel direction, turn angle, and so on. Each motion is represented by a point \(white dot\) in the graph or blend space.
+Blend spaces are a collection of sample motions that are organized spatially according to their coordinates. The visual representation is a graph with xy\-axes for the coordinates. The xy\-axes can represent values such as move speed, travel direction, turn angle, and so on. Each motion is represented by a point (white dot) in the graph or blend space.
 
-When you pick a point in the blend space \(interactively or with parameter controls\), your character automatically plays a resulting motion that is computed based on the sample motions and appropriate blend weights.
+When you pick a point in the blend space (interactively or with parameter controls), your character automatically plays a resulting motion that is computed based on the sample motions and appropriate blend weights.
 
 In a 1D blend space the motions correspond to points along a line. In a 2D blend space the motions correspond to points in a 2D space.
 
@@ -54,18 +54,18 @@ You can undock the **Attributes** pane in order to see the attributes and values
 ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/animation-editor-attributes-pane.png)
    + To use provided values for the xy\-axes, do the following:
 
-     1. For **Calculation method \(X\-Axis\)**, select **Automatically calculate motion coordinates**.
+     1. For **Calculation method (X\-Axis)**, select **Automatically calculate motion coordinates**.
 
      1. For **X\-Axis Evaluator**, select a common motion characteristic.
 
-     1. For **Calculation method \(Y\-Axis\)**, select **Automatically calculate motion coordinates**.
+     1. For **Calculation method (Y\-Axis)**, select **Automatically calculate motion coordinates**.
 
      1. For **Y\-Axis Evaluator**, select another common motion characteristic.
    + To use custom values for the xy\-axes, do the following:
 
-     1. For **Calculation method \(X\-Axis\)**, select **Manually enter motion coordinates**.
+     1. For **Calculation method (X\-Axis)**, select **Manually enter motion coordinates**.
 
-     1. For **Calculation method \(Y\-Axis\)**, select **Manually enter motion coordinates**.
+     1. For **Calculation method (Y\-Axis)**, select **Manually enter motion coordinates**.
 
      You can also use a combination of provided and custom values. For example, you can manually enter motion coordinates for the x\-axis and automatically calculate motion coordinates for the y\-axis using the **Travel distance** evaluator.
 
@@ -80,7 +80,7 @@ You can undock the **Attributes** pane in order to see the attributes and values
 
 1. In the blend space view, do the following:
 
-   1. Drag within the blend space to change the point of interest \(represented by a red dot\).
+   1. Drag within the blend space to change the point of interest (represented by a red dot).
 
    1. When the point is highlighted, the corresponding motion is automatically computed by blending the motions represented by the three vertices of the triangle. View the blend weights next to each of the motions.
 

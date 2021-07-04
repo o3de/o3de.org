@@ -8,7 +8,7 @@ title: Referencing External Anim Graphs
 
 A node\-based animation system that has thousands of nodes can be difficult to manage. O3DE's **EMotion FX Animation Editor** uses hierarchical nodes that help alleviate this problem, but universal\-level changes to game logic can still be challenging.
 
-**Animation Editor** reference nodes solve this by offering references to external animation graph \(anim graph\) files. This helps reduce the scale and complexity of anim graphs and minimize human error. Reference nodes behave as the root state machine of the anim graphs that they reference and always output one pose.
+**Animation Editor** reference nodes solve this by offering references to external animation graph (anim graph) files. This helps reduce the scale and complexity of anim graphs and minimize human error. Reference nodes behave as the root state machine of the anim graphs that they reference and always output one pose.
 
 **Topics**
 + [Benefits](#character-animation-editor-anim-graph-referencing-benefits)
@@ -46,7 +46,7 @@ This section shows you how to create reference nodes in the **Animation Editor**
 ****
 
 
-1. On the **Attributes** tab, for **Anim graph**, click the \(**...**\) icon.
+1. On the **Attributes** tab, for **Anim graph**, click the (**...**) icon.
 ![\[Click to browse to an external anim graph for the reference node.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-5.png)
 
 1. In the **Pick EMotion FX Anim Graph** dialog box, select the `.animgraph` file that you want to assign to the reference node, and then click **OK**.
@@ -89,4 +89,4 @@ Both options allow the referenced anim graph to be tested by itself.
 
 Avoid the following practices when you work with referenced anim graphs:
 + **Changing an anim graph that is referenced by another** - Changing an anim graph that is referenced by another anim graph can break its behavior. For example, if you remove a parameter from the referenced anim graph that another anim graph uses, the parameter reverts to its default value. This can cause unexpected behavior.
-+ **Renaming, moving, or deleting an anim graph** - When you rename, move, or delete an anim graph, its asset ID changes. Therefore, all anim graphs that refer to the renamed, moved, or deleted anim graph must also be updated. Having a system that keeps track of your referencing hierarchy \(as mentioned in [Best Practices](#character-animation-editor-anim-graph-reference-best-practices)\) makes it easy to know which anim graphs are affected and which to update.
++ **Renaming, moving, or deleting an anim graph** - When you rename, move, or delete an anim graph, its asset ID changes. Therefore, all anim graphs that refer to the renamed, moved, or deleted anim graph must also be updated. Having a system that keeps track of your referencing hierarchy (as mentioned in [Best Practices](#character-animation-editor-anim-graph-reference-best-practices)) makes it easy to know which anim graphs are affected and which to update.

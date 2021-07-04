@@ -22,7 +22,7 @@ The animation sequence node, at the top level, contains a list of its UI element
 
 1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), select one or more elements.
 
-1. In the **Animation Editor**, right\-click anywhere in the node pane and select **Add Selected UI Element\(s\)**.
+1. In the **Animation Editor**, right\-click anywhere in the node pane and select **Add Selected UI Element(s)**.
 
 **To remove a UI element node**
 + In the **Animation Editor**, in the node pane, right\-click an element node and click **Delete**.

@@ -10,7 +10,7 @@ You can use the **Environment** node to set the sun's longitude and latitude in 
 
 **To add an Environment node in the Track View**
 
-1. In the Track View, right\-click either the sequence \(top node\) or the **Director** node in the tree as applicable, and then click **Add Environment Node**.
+1. In the Track View, right\-click either the sequence (top node) or the **Director** node in the tree as applicable, and then click **Add Environment Node**.
 
 1. For each of the keys listed below, click the applicable key listed under the **Environment** node.
 

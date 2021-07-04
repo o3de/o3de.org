@@ -12,7 +12,7 @@ The **[Navigation Area](/docs/user-guide/components/reference/ai/nav-area/)** co
 
 ![\[Example Navigation Seed component with red and blue chunks.\]](/images/user-guide/component/component-navigation-mesh-seed-enabled.png)
 
-For example, [static objects](/docs/user-guide/components/reference/nav-area/#component-nav-area-static-entities), [exclusion areas](/docs/user-guide/components/reference/nav-area/#component-nav-area-exclusion), or terrain features can divide a [navigation area](/docs/user-guide/components/reference/ai/nav-area/) into multiple chunks. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk \(for example, if they spawned there\). You might have multiple navigation areas in one location, such as for different [agent types](/docs/user-guide/components/reference/nav-area/#component-nav-area-properties). In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](/docs/user-guide/components/reference/navigation/#component-navigation-properties) or a specific agent type in the chunk where you placed the navigation seed.
+For example, [static objects](/docs/user-guide/components/reference/nav-area/#component-nav-area-static-entities), [exclusion areas](/docs/user-guide/components/reference/nav-area/#component-nav-area-exclusion), or terrain features can divide a [navigation area](/docs/user-guide/components/reference/ai/nav-area/) into multiple chunks. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk (for example, if they spawned there). You might have multiple navigation areas in one location, such as for different [agent types](/docs/user-guide/components/reference/nav-area/#component-nav-area-properties). In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](/docs/user-guide/components/reference/navigation/#component-navigation-properties) or a specific agent type in the chunk where you placed the navigation seed.
 
 **To use the Navigation Seed component**
 
@@ -39,7 +39,7 @@ By default, the navigation seed visualization system is not enabled. You must us
 
 **To enable Navigation Seed visualization**
 + Enable the following console variables. To do this, set the value to `1`.
-  + `ai_MNMDebugAccessibility` \(In O3DE Editor, you can also choose **Game**, **AI**, **Visualize Navigation Accessibility**./\)
+  + `ai_MNMDebugAccessibility` (In O3DE Editor, you can also choose **Game**, **AI**, **Visualize Navigation Accessibility**./)
   + `ai_DebugDraw`
   + `ai_DebugDrawNavigation`
 

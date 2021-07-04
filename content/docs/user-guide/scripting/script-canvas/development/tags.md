@@ -56,7 +56,7 @@ After you have declared the node, the next step is to generate the node's topolo
 | Property | Reflects a property to the serialization context that does not need to be an editable property or an input property. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior#script-canvas-custom-nodes-serializing-hidden-properties). |
 | EditProperty | Reflects a property to the serialization context and to the EditContext with EditContext attribute support. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior#script-canvas-custom-nodes-serializing-hidden-properties). |
 
-Each of these tags has attributes that can be configured. For example, the `Countdown.h` \(**Delay**\) node has the following topology:
+Each of these tags has attributes that can be configured. For example, the `Countdown.h` (**Delay**) node has the following topology:
 
 ```
 // Inputs

@@ -132,10 +132,10 @@ The example specifies that `m_someFloatField`, `m_someStringField`, `m_things`, 
 **Tip**
 We recommend that you keep field names simple for future proofing. If your component undergoes significant changes and you want to write a data converter to maintain backward data compatibility, you must reference the field names directly.
 
-The preceding example reflects two primitive types-a float, and a string-as well as a container \(vector\) of some structure. AZ reflection, serialization, and editing natively support a wide variety of types:
-+ Primitive types, including integers \(signed and unsigned, all sizes\), floats, and strings
+The preceding example reflects two primitive types-a float, and a string-as well as a container (vector) of some structure. AZ reflection, serialization, and editing natively support a wide variety of types:
++ Primitive types, including integers (signed and unsigned, all sizes), floats, and strings
 + Enums
-+ `AZStd` containers \(flat and associative\), including `AZStd::vector`, `AZStd::list`, `AZStd::map`, `AZStd::unordered_map`, `AZStd::set`, `AZStd::unordered_set`, `AZStd:pair`, `AZStd::bitset`, `AZStd::array`, fixed C\-style arrays, and others.
++ `AZStd` containers (flat and associative), including `AZStd::vector`, `AZStd::list`, `AZStd::map`, `AZStd::unordered_map`, `AZStd::set`, `AZStd::unordered_set`, `AZStd:pair`, `AZStd::bitset`, `AZStd::array`, fixed C\-style arrays, and others.
 + Pointers, including `AZStd::smart_ptr`, `AZStd::intrusive_ptr`, and raw native pointers.
 + Any class or structure that has also been reflected.
 
@@ -165,7 +165,7 @@ if (edit)
 }
 ```
 
-Although this example demonstrates the simplest usage, many features and options are available when you reflect structures \(including components\) to the edit context. For the fields to be exposed directly to content creators, the example provides a friendly name and a description \(tooltip\) as the third and fourth parameters of `DataElement`. For three fields, the first parameter of `DataElement` is the default UI handler `AZ::Edit::UIHandlers::Default`. The property system's architecture supports the ability to add any number of UI handlers, each valid for one or more field types. A given type can have multiple available handlers, with one handler designated as the default. For example, floats by default use the `SpinBox` handler, but a `Slider` handler is also available.
+Although this example demonstrates the simplest usage, many features and options are available when you reflect structures (including components) to the edit context. For the fields to be exposed directly to content creators, the example provides a friendly name and a description (tooltip) as the third and fourth parameters of `DataElement`. For three fields, the first parameter of `DataElement` is the default UI handler `AZ::Edit::UIHandlers::Default`. The property system's architecture supports the ability to add any number of UI handlers, each valid for one or more field types. A given type can have multiple available handlers, with one handler designated as the default. For example, floats by default use the `SpinBox` handler, but a `Slider` handler is also available.
 
 An example of binding a float to a slider follows:
 
@@ -211,7 +211,7 @@ Another commonly used feature of the edit context is its ability to bind a chang
     ->Attribute(AZ::Edit::Attributes::ChangeNotify, &MyComponent::OnStringFieldChanged)
 ```
 
-The example binds a member function to be invoked when this property is changed, which allows the component to conduct other logic. The `AZ::Edit::Attributes::ChangeNotify` attribute also looks for an optional returned value that tells the property system if it needs to refresh aspects of its state. For example, if your change callback modifies other internal data that affects the property system, you can request a value refresh. If your callback modifies data that requires attributes be reevaluated \(and any bound functions be reinvoked\), you can request a refresh of attributes and values. Finally, if your callback conducts work that requires a full refresh \(this is not typical\), you can refresh the entire state.
+The example binds a member function to be invoked when this property is changed, which allows the component to conduct other logic. The `AZ::Edit::Attributes::ChangeNotify` attribute also looks for an optional returned value that tells the property system if it needs to refresh aspects of its state. For example, if your change callback modifies other internal data that affects the property system, you can request a value refresh. If your callback modifies data that requires attributes be reevaluated (and any bound functions be reinvoked), you can request a refresh of attributes and values. Finally, if your callback conducts work that requires a full refresh (this is not typical), you can refresh the entire state.
 
 The following example causes the property grid to refresh values when `m_someStringField `is modified through the property grid. `AZ::Edit::PropertyRefreshLevels::ValuesOnly` signals the property grid to update the GUI with changes to the underlying data.
 

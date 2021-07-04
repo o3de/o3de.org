@@ -34,7 +34,7 @@ Default dependencies files are written in XML and consist of only two elements: 
 
 How each `Dependency` node is treated depends on the attribute values:
 + `optional` - This value is either `true` or `false`, and describes whether or not the listed asset is absolutely required by the asset bundling process. Most often you'll want to use `true` for asset paths without wildcards, and `false` for paths which contain a wildcard.
-+ `path` - This value is the path to the asset\(s\) to include, and accepts the use of the `*` wildcard character. Wildcards search all subdirectories recursively.
++ `path` - This value is the path to the asset(s) to include, and accepts the use of the `*` wildcard character. Wildcards search all subdirectories recursively.
 
   Because wildcard matching may catch files that you don't want to include as default assets, you can add *exclusion paths*: Dependencies where the path starts with a `:` character. Assets in an exclusion path are not included as a default dependency.
 

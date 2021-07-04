@@ -24,7 +24,7 @@ The CPU profiler gathers usage statistics about how long a function or method ex
 
 ## Understanding the Tree View 
 
-The CPU profiler tree view represents a call hierarchy of profiler log points \(called *hooks*\). A profiler hook that is active while another call is active shows as a child of the first hook. The hooks act as a stack: The last hook that was pushed onto the stack is the parent of the hook that was pushed onto the stack before it. The tree view has the following information:
+The CPU profiler tree view represents a call hierarchy of profiler log points (called *hooks*). A profiler hook that is active while another call is active shows as a child of the first hook. The hooks act as a stack: The last hook that was pushed onto the stack is the parent of the hook that was pushed onto the stack before it. The tree view has the following information:
 
 **Function**
 The function declaration where the profiler data point was generated.
@@ -32,25 +32,25 @@ The function declaration where the profiler data point was generated.
 **Comment**
 A user\-defined message that distinguishes specific events in the same function.
 
-**Excl. Time \(Micro\)**
-\(Exclusive time\) The time, in microseconds, spent executing this function and no other functions called by this function.
+**Excl. Time (Micro)**
+(Exclusive time) The time, in microseconds, spent executing this function and no other functions called by this function.
 
-**Incl. Time \(Micro\)**
-\(Inclusive time\) The time, in microseconds, spent executing this function and other functions called by this function.
+**Incl. Time (Micro)**
+(Inclusive time) The time, in microseconds, spent executing this function and other functions called by this function.
 
 **Excl. Pct**
-\(Exclusive percent\) Exclusive time represented as a percent of total run time.
+(Exclusive percent) Exclusive time represented as a percent of total run time.
 
 **Incl. Pct**
-\(Inclusive percent\) Inclusive time represented as a percent of total run time.
+(Inclusive percent) Inclusive time represented as a percent of total run time.
 
 **Calls**
 The number of calls to this function.
 
-**Child Time \(Micro\)**
+**Child Time (Micro)**
 The time, in microseconds, that functions that were called by this function took to execute.
 
-**Total Time \(Micro\)**
+**Total Time (Micro)**
 A running total of the time, in microseconds, that was spent inside of this function.
 
 **Child Calls**
@@ -99,11 +99,11 @@ Use the thread selector to control which threads are shown in the tree view and 
 Use this selector to choose the meaning of the time displayed.
 
 ![\[Time selector\]](/images/user-guide/profiler-cpu-thread-incl-time.png)
-+ **Incl. Time** - \(Inclusive time\) The time spent in this function inclusively.
-+ **Excl. Time** - \(Exclusive time\) The time spent in this function exclusively.
++ **Incl. Time** - (Inclusive time) The time spent in this function inclusively.
++ **Excl. Time** - (Exclusive time) The time spent in this function exclusively.
 + **Calls** - The number of times this function was called in the frame.
-+ **Acc. Time** - \(Accumulated time\) The total amount of time spent in this function up to the frame being analyzed.
-+ **Acc. Calls** - \(Accumulated calls\) - The total number of times this function was called up to the frame being analyzed.
++ **Acc. Time** - (Accumulated time) The total amount of time spent in this function up to the frame being analyzed.
++ **Acc. Calls** - (Accumulated calls) - The total number of times this function was called up to the frame being analyzed.
 
 ***<number>* Frames**
 Use this selector to choose how frames of history are displayed in the graph:
@@ -114,9 +114,9 @@ Use this selector to choose how frames of history are displayed in the graph:
 Unused option.
 
 **Autozoom**
-When selected, maintains the approximate zoom level \(number of frames displayed\) whenever the graph changes.
+When selected, maintains the approximate zoom level (number of frames displayed) whenever the graph changes.
 
 **Flat View**
-Flattens the tree of function calls \(removes the hierarchical indentation\), as in the following image:
+Flattens the tree of function calls (removes the hierarchical indentation), as in the following image:
 
 ![\[Flat View\]](/images/user-guide/profiler-cpu-flat-view.png)

@@ -24,7 +24,7 @@ O3DE provides the following built\-in debugging and profiling tools that you can
 
 ## Using Console Debug Views 
 
-The viewport window displays debugging information by default when you are in gameplay mode \(**Ctrl+G**\). You can toggle this information on or off by pressing the tilde \(**\~**\) key. Use the following console variables and values to generate viewing modes in the viewport that are useful for debugging.
+The viewport window displays debugging information by default when you are in gameplay mode (**Ctrl+G**). You can toggle this information on or off by pressing the tilde (**\~**) key. Use the following console variables and values to generate viewing modes in the viewport that are useful for debugging.
 + `e_Camerafreeze 1` - Freezes the camera to see what is rendered from the camera's point of view and what is occluded. Also useful for debugging object culling and LOD.
 + `e_DefaultMaterial 1` - Applies a uniform, flat, gray material to every surface in the level.
 + `e_memoryProfiling 1` - Prints onscreen statistics for the amount of GPU memory that textures and buffers use.
@@ -33,7 +33,7 @@ The viewport window displays debugging information by default when you are in ga
 + `p_debug_joints 1` - Shows the mass of objects in kilograms and the joint that is linked to the object. To display joints, you must first enable `p_draw_helpers 1`.
 + `p_draw_helpers 1` - Shows physics proxy meshes in addition to the render geometry.
 + `r_DisplayInfo 0` - Disables the debugging text.
-+ `r_DisplayInfo 1 | 2 | 3 | 4` - Enables various levels of debugging text. Displays memory consumption, frame rate, triangle count, visible light sources, and drawcall count. Use a value of `2` to display more detailed information. Use a value of `3` to display only frames per second \(FPS\) and frame time in milliseconds.
++ `r_DisplayInfo 1 | 2 | 3 | 4` - Enables various levels of debugging text. Displays memory consumption, frame rate, triangle count, visible light sources, and drawcall count. Use a value of `2` to display more detailed information. Use a value of `3` to display only frames per second (FPS) and frame time in milliseconds.
 + `r_wireframe 1 | 2` - Use a value of `1` to draw the level in wireframe mode. Use a value of `2` to draw the level in vertex mode. Both include the objects that are hidden from view.
 + `r_ShowLines 2` - Overlays the wireframe only on the front\-facing geometry. Anything behind this geometry isn't rendered.
 + `r_TexBindMode 6` - Applies a uniform, flat, gray material with normal map information to every surface in the level.
@@ -49,16 +49,16 @@ Use the following console variables and values to display information about your
 + `e_DebugDraw 5` - Displays a color\-coded number of render materials.
 + `e_DebugDraw 6` - Displays ambient color.
 + `e_DebugDraw 7` - Display triangle count, number of render materials, and texture memory.
-+ `e_DebugDraw 8` - Displays RenderWorld statistics \(with view cones\).
-+ `e_DebugDraw 9` - Displays RenderWorld statistics \(with view cones without lights\).
++ `e_DebugDraw 8` - Displays RenderWorld statistics (with view cones).
++ `e_DebugDraw 9` - Displays RenderWorld statistics (with view cones without lights).
 + `e_DebugDraw 10` - Displays render geometry with simple lines and triangles.
 + `e_DebugDraw 11` - Displays render occlusion geometry.
 + `e_DebugDraw 12` - Displays render occlusion geometry without render geometry.
-+ `e_DebugDraw 13` - Displays occlusion amount \(used during AO computations\).
++ `e_DebugDraw 13` - Displays occlusion amount (used during AO computations).
 + `e_DebugDraw 15` - Displays helpers.
 + `e_DebugDraw 16` - Displays debug gun.
-+ `e_DebugDraw 17` - Displays streaming information \(buffer sizes\).
-+ `e_DebugDraw 18` - Displays streaming information \(required streaming speed\).
++ `e_DebugDraw 17` - Displays streaming information (buffer sizes).
++ `e_DebugDraw 18` - Displays streaming information (required streaming speed).
 + `e_DebugDraw 19` - Displays physics proxy triangle count.
 + `e_DebugDraw 20` - Displays object instant texture memory usage.
 + `e_DebugDraw 21` - Displays animated object distance to camera.

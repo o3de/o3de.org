@@ -37,15 +37,15 @@ The font texture resolution is controlled by the following line.
 <font path="Vera.ttf" w="512" h="256"/>
 ```
 
-In this example, the font texture has a resolution of 512x256. This resolution size \(along with the number of character slots\) is an important value for determining font rendering quality.
+In this example, the font texture has a resolution of 512x256. This resolution size (along with the number of character slots) is an important value for determining font rendering quality.
 
 ## Character Slots 
 
-In O3DE, a font texture is logically divided into equally sized slots. In each slot, there is a uniform amount of space for each character \(glyph\). By default \(without additional configuration\), there are 128 unique characters \(16 rows \* 8 columns\).
+In O3DE, a font texture is logically divided into equally sized slots. In each slot, there is a uniform amount of space for each character (glyph). By default (without additional configuration), there are 128 unique characters (16 rows \* 8 columns).
 
-If you support a language with many unique characters, such as Chinese, Japanese, or Korean, the default number of slots \(128\) might not be adequate for your needs, requiring further configuration. Otherwise, 128 unique characters might be adequate for most languages. The following information about character slots describes in further detail the font rendering pipeline in O3DE.
+If you support a language with many unique characters, such as Chinese, Japanese, or Korean, the default number of slots (128) might not be adequate for your needs, requiring further configuration. Otherwise, 128 unique characters might be adequate for most languages. The following information about character slots describes in further detail the font rendering pipeline in O3DE.
 
-When rendering a string of characters, the number of *unique* characters in a string is different from the number of characters in a string \(its length\). The number of character slots in a font texture imposes a limitation only on the number of unique characters that can be rendered in a single frame.
+When rendering a string of characters, the number of *unique* characters in a string is different from the number of characters in a string (its length). The number of character slots in a font texture imposes a limitation only on the number of unique characters that can be rendered in a single frame.
 
 For example, the following is a font definition which defines a font texture with `1 (1x1)` texture slot.
 
@@ -57,7 +57,7 @@ The default values for `widthslots` and `heightslots` is *16* and *8*, respectiv
 
 AAAA
 
-The number of unique characters in `AAAA` is 1, and the length of the string is 4. This font texture configuration can render this character an unlimited number of times \(that is, a string of variable length\) as long as the string contains only a single character. However, this font can't render the following string.
+The number of unique characters in `AAAA` is 1, and the length of the string is 4. This font texture configuration can render this character an unlimited number of times (that is, a string of variable length) as long as the string contains only a single character. However, this font can't render the following string.
 
 AABB
 
@@ -69,7 +69,7 @@ Here is another example.
 <font path="NotoSansSC-Regular.otf" w="4096" h="4096" widthslots="128" heightslots="128"/>
 ```
 
-In this example, the font texture size is `4096x4096`, and there are a total number of `128x128` \(16,384\) character slots. To determine the available size for each character, divide the texture size \(4096x4096\) by the number of slots \(128x128\) to yield a 32x32 pixel space per character. This configuration enables you to render over 16,000 unique characters at a 32\-pixel size in a single frame.
+In this example, the font texture size is `4096x4096`, and there are a total number of `128x128` (16,384) character slots. To determine the available size for each character, divide the texture size (4096x4096) by the number of slots (128x128) to yield a 32x32 pixel space per character. This configuration enables you to render over 16,000 unique characters at a 32\-pixel size in a single frame.
 
 ## Font Size 
 
@@ -77,11 +77,11 @@ Because a font texture is divided into a logical grid, a simple calculation dete
 + Font texture width / `widthslots` = slot width
 + Font texture height / `heightslots` = slot height
 
-Where `widthslots` is the number of character slots across the width \(x\-axis\) of the font texture and `heightslots` is the number of character slots across the height \(y\-axis\) of the font texture.
+Where `widthslots` is the number of character slots across the width (x\-axis) of the font texture and `heightslots` is the number of character slots across the height (y\-axis) of the font texture.
 
-In the `default-ui.font` example in the previous section, the font texture size was 512x256. Assuming the character slots are at their default values \(16x8\):
-+ 512 / 16 = 32 \(slot width\)
-+ 256 / 8 = 32 \(slot height\)
+In the `default-ui.font` example in the previous section, the font texture size was 512x256. Assuming the character slots are at their default values (16x8):
++ 512 / 16 = 32 (slot width)
++ 256 / 8 = 32 (slot height)
 
 For a 512x256 sized font texture, you can render pixel\-perfect characters at 32x32 pixels.
 
@@ -107,6 +107,6 @@ The default value for `widthslots` and `heightslots` is *16* and *8*, respective
 
 **Note**
 
-Font texture sizes don't necessarily need to be a power of 2: 128, 256, 512, 1024, 2048, and so on. However, the width must be a multiple of `widthslots` \(the default value is 16\), and the height must be a multiple of `heightslots` \(the default value is 8\).
+Font texture sizes don't necessarily need to be a power of 2: 128, 256, 512, 1024, 2048, and so on. However, the width must be a multiple of `widthslots` (the default value is 16), and the height must be a multiple of `heightslots` (the default value is 8).
 You can have multiple font `.font` files that reference the same TTF/OTF file but have different font texture sizes.
-For example, you might have some caption text that needs to appear only at a small font size, but you have other screens \(perhaps a menu screen\) where you want the same look and feel by using the same font. However, it needs to be larger and therefore needs a higher resolution font texture. You can achieve this with separate `.font` files for each use case, with font texture settings adjusted for ideal rendering quality.
+For example, you might have some caption text that needs to appear only at a small font size, but you have other screens (perhaps a menu screen) where you want the same look and feel by using the same font. However, it needs to be larger and therefore needs a higher resolution font texture. You can achieve this with separate `.font` files for each use case, with font texture settings adjusted for ideal rendering quality.

@@ -5,7 +5,7 @@ title: Customizing the Entity Icon
 
 {{< preview-migrated >}}
 
-The default icon for an entity without any added components is the **Transform** \( ![\[Image NOT FOUND\]](/images/user-guide/component/entity_system/entity-inspector-transform-icon.png)\) component's icon. When you add another component, the icon changes to the first component that you add to that entity.
+The default icon for an entity without any added components is the **Transform** ( ![\[Image NOT FOUND\]](/images/user-guide/component/entity_system/entity-inspector-transform-icon.png)) component's icon. When you add another component, the icon changes to the first component that you add to that entity.
 
 You can also specify your own icon.
 

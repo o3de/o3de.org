@@ -87,7 +87,7 @@ To handle dependency tracking for runtime systems that use path manipulation or 
 </EngineDependencies>
 ```
 
-The `path` value is a relative path to a product file that uses simple glob searching. Asterisk \(\*\) characters match any number of characters. Glob searches do not support single character wildcards. The files listed are recorded as dependencies.
+The `path` value is a relative path to a product file that uses simple glob searching. Asterisk (\*) characters match any number of characters. Glob searches do not support single character wildcards. The files listed are recorded as dependencies.
 
 After you add a new `*_Dependencies.xml` file, add an entry for the referenced file to a seed list to ensure full dependency tracking. The core `Engine_Dependencies.xml` file is already included in the default seed list.
 

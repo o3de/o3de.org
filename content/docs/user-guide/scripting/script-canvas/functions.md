@@ -47,7 +47,7 @@ The scope of a variable determines if and where the variable will appear on the 
 
 | Scope | Location on Node | Usage |
 | --- | --- | --- |
-| Local | \(None\) | This is a local variable, for use only by the function. |
+| Local | (None) | This is a local variable, for use only by the function. |
 | In | Input slot | This is an input parameter. A value for this variable is passed in to the function. |
 | Out | Output slot | This is a result variable. The function returns its value as a result. |
 | In / Out | Both sides | This is an input parameter that can be modified by the function and returned as a result. |
@@ -62,7 +62,7 @@ Using a function is just like using any other node in Script Canvas. Simply drag
 
 ## Function Example: Linear Interpolation 
 
-In this example, we create a linear interpolation function. This function is represented by the formula: *Result = Start + Time \* \(End \- Start\)*.
+In this example, we create a linear interpolation function. This function is represented by the formula: *Result = Start + Time \* (End \- Start)*.
 
 In this example you will learn how to do the following:
 + Create entry and exit points for a function
@@ -91,7 +91,7 @@ The final function graph should look like this:
 
    1. In the **Subtract** node, reference the *End* and *Start* variables, so that *Start* is subtracted from *End*.
 
-   1. In the **Multiply** node, use the result of the subtraction and reference the *Time* variable, so that *\(End \- Start\)* is multiplied by *Time*.
+   1. In the **Multiply** node, use the result of the subtraction and reference the *Time* variable, so that *(End \- Start)* is multiplied by *Time*.
 
    1. In the **Add** node, use the result of the multiplication and reference the *Start* variable, so that these two values are added together. Then add a reference to the *Result* variable in the result slot, so that the final value is stored in *Result*.
 
@@ -99,11 +99,11 @@ The final function graph should look like this:
 
    1. Right\-click on the **Subtract** node's **In** slot and choose **Expose** from the context menu.
 
-   1. \(Optional\) Rename the entry point node to **In**, if you want to follow the naming convention for node input execution slots.
+   1. (Optional) Rename the entry point node to **In**, if you want to follow the naming convention for node input execution slots.
 
    1. Right\-click on the **Add** node's **Out** slot and choose **Expose** from the context menu.
 
-   1. \(Optional\) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots.
+   1. (Optional) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots.
 
 1. Finally, use **File**, **Save** to save the function and name it **Interpolate**. The function is now ready to use in a Script Canvas graph:
 ![\[When a function is used in a Script Canvas graph, it appears as a node, using the function's filename as the node name.\]](/images/user-guide/scripting/script-canvas/script-canvas-function-linear-interpolation-node.png)

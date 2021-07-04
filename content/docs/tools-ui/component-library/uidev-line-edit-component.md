@@ -20,7 +20,7 @@ The **line edit** component is one of several types of input boxes offered by th
 
 1.  **Placeholder text**
 
-   \(Optional\) Hint text set in the UI, or using `setPlaceholderText()`, appears here when the widget text is empty.
+   (Optional) Hint text set in the UI, or using `setPlaceholderText()`, appears here when the widget text is empty.
 
 1.  **Input box**
 
@@ -28,21 +28,21 @@ The **line edit** component is one of several types of input boxes offered by th
 
 1.  **Tooltip**
 
-   \(Optional\) If you set tooltip text for the widget, it will appear near where the user hovers.
+   (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
 ![\[component line edit anatomy clear\]](/images/tools-ui/component-line-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
-   \(Optional\) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
+   (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
 ![\[component line edit anatomy error state\]](/images/tools-ui/component-line-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 
-   \(Optional\) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
+   (Optional) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
 
 1.  **Error tooltip**
 
-   \(Optional\) When an error state exists, if an error message has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you don't set the error message, the default error tooltip text is "Invalid input".
+   (Optional) When an error state exists, if an error message has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you don't set the error message, the default error tooltip text is "Invalid input".
 
 ## Basic line edit<a name="line-edit-basic"></a>
 

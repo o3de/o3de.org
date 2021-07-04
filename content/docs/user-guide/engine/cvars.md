@@ -6,7 +6,7 @@ title: Console Variable Tutorial
 
 {{< preview-migrated >}}
 
-This tutorial shows you how to modify existing and create console variables \(CVARs\). CVARs can be used to control many configurable behaviors in O3DE. You can also use them in your game.
+This tutorial shows you how to modify existing and create console variables (CVARs). CVARs can be used to control many configurable behaviors in O3DE. You can also use them in your game.
 
 **Note**
  This brief tutorial is intended for programmers. Most of the content uses code.
@@ -85,7 +85,7 @@ It's also possible to change the default CVar value from one of the `.cfg` files
 
 The following list shows the order of initialization for console variables.
 
-1. The value specified in the `GameCVars.cpp` file when `REGISTER_CVAR` is used. \(A change here requires compiling.\)
+1. The value specified in the `GameCVars.cpp` file when `REGISTER_CVAR` is used. (A change here requires compiling.)
 
 1. The value specified in the `system.cfg` file.
 

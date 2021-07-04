@@ -15,7 +15,7 @@ The **Variable Manager** shows the variables that are used in your Script Canvas
 + [Creating Get or Set Variable Nodes](#script-canvas-create-get-or-set-nodes)
 + [Creating Value\-Changed Nodes](#script-canvas-create-on-value-changed-nodes)
 + [Deleting Variables](#script-canvas-delete-variable-nodes)
-+ [Using Container Types \(Arrays and Maps\)](/docs/user-guide/scripting/script-canvas/containers.md)
++ [Using Container Types (Arrays and Maps)](/docs/user-guide/scripting/script-canvas/containers.md)
 
 ## Adding and Configuring Variables 
 
@@ -75,7 +75,7 @@ You can use get and set variable nodes to retrieve or set the variable's value.
 
 ## Creating Value\-Changed Nodes 
 
-You can use **OnVariableValueChanged** \(value\-changed\) event nodes to react to a change in a variable's value.
+You can use **OnVariableValueChanged** (value\-changed) event nodes to react to a change in a variable's value.
 
 **To create value\-changed nodes**
 + Do one of the following:

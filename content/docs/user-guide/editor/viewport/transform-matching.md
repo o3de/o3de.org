@@ -33,7 +33,7 @@ You can use the ditto feature for a group of entities. This makes it easier for 
 1. Press and hold **Ctrl** and press the middle mouse button to match an entity's transform data to the group manipulator.
 **Example**
 
-   In the following example, you can select entities \(a group selection of tires\) and use the ditto feature to match a target entity \(the car\).
+   In the following example, you can select entities (a group selection of tires) and use the ditto feature to match a target entity (the car).
 ![\[Share the transform data from multiple entities to another using the ditto feature in O3DE\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-14.gif)
 
    See the following shortcut to use the ditto feature.

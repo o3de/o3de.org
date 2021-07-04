@@ -6,7 +6,7 @@ title: Mask
 
 {{< preview-migrated >}}
 
-You can add a **Mask** component to an element to reveal only those parts of the child elements \(for example, image or text\) that are within the mask visual. In other words, the opaque region of the mask visual defines a shape that acts like a window through which you view the descendant elements.
+You can add a **Mask** component to an element to reveal only those parts of the child elements (for example, image or text) that are within the mask visual. In other words, the opaque region of the mask visual defines a shape that acts like a window through which you view the descendant elements.
 
 
 When you add a **Mask** component, the default mask is the visual component on that element, usually an **Image** component. If you want to use a nonrectangular mask, you must set this **Image** component to use a texture that contains an [alpha channel](/docs/userguide/ly-glos-chap#alpha_channel), which specifies transparent and opaque areas. The child elements are masked by the mask visual. This means that the only parts of the child elements that are visible are the parts that are in the mask visual. In other words, the visible areas of the mask show the child elements, and the transparent areas of the mask visual hide the child elements. You can use other visual components, such as a **Text** component or **Particle Emitter** component to specify the mask visual.
@@ -33,7 +33,7 @@ Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/inter
 
 1. On the parent element, in the **Properties** pane, click the folder icon next to the **Image**, **Sprite Path** to select the texture or image to use as a mask.
 
-1. Open an image file in your current project directory. The image that you use as a mask should have opaque areas \(which shows the content in child elements\) and transparent areas \(which hides the content in child elements\).
+1. Open an image file in your current project directory. The image that you use as a mask should have opaque areas (which shows the content in child elements) and transparent areas (which hides the content in child elements).
 
 1. In the **Properties** pane, under **Mask**, select **Use alpha test**.
 

@@ -23,7 +23,7 @@ Deserialization can be conducted from any primitive JSON type to these C++ types
 | bool | Direct mapping. | 0 maps to false, all other values are true. | Case\-insensitive comparison against "true" and "false" to map to the respective C++ values. |
 | Integer types | True maps to 1, False to 0. | Direct mapping, where floating point values are truncated. | Tries to extract a 64\-bit integer and convert to the target integer type.  |
 | Floating point types | True maps to 1, False to 0. | Direct mapping. | Tries to extract a 64\-bit floating point and convert it to the target type. |
-| Strings \(AZstd::string and OSString only\) | True is converted to "True", and False to "False". | String representation of the number. | Direct mapping. |
+| Strings (AZstd::string and OSString only) | True is converted to "True", and False to "False". | String representation of the number. | Direct mapping. |
 
 ## Pointers 
 

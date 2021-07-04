@@ -10,13 +10,13 @@ In **UI Editor** **Preview**, the UI elements in your canvas perform as they wou
 
 Try these examples:
 + Pause on an interactive element to show its hover state.
-+ Press \(click\) an interactive element to show its pressed state.
++ Press (click) an interactive element to show its pressed state.
 + Adjust sliders.
 + Input and edit text.
 + Use keyboard, mouse, or gamepad to interact with the UI.
 
 **Note**
-If the interactive component's **Input enabled** setting is deselected \(unchecked\), that element is drawn in its disabled state and does not respond to hover or click actions.
+If the interactive component's **Input enabled** setting is deselected (unchecked), that element is drawn in its disabled state and does not respond to hover or click actions.
 
 ## Animation List 
 
@@ -36,7 +36,7 @@ To use this feature, you must type text strings in the **Actions** section of th
 
    The text strings are fully customizable; you can enter any string that helps you ensure that the correct actions are being triggered.
 
-For example, in the picture below, **EnablerChanged** is displayed whenever the **Enable Input** check box changes state \(from off to on, or on to off\). **EnablerOn** is displayed when the check box is selected, and **EnablerOff** is displayed when it is deselected.
+For example, in the picture below, **EnablerChanged** is displayed whenever the **Enable Input** check box changes state (from off to on, or on to off). **EnablerOn** is displayed when the check box is selected, and **EnablerOff** is displayed when it is deselected.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-previewing-action-log.png)
 

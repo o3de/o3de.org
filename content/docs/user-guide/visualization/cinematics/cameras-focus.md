@@ -5,7 +5,7 @@ title: Animating Depth of Field
 
 {{< preview-migrated >}}
 
-Camera focus, or depth of field \(DoF\), is used to add realism to scenes, which simulates the way a real\-world camera works. You can use a broad DoF to focus on the entire scene, or use a shallow DoF to have sharp focus only on objects that are a specific distance from the camera.
+Camera focus, or depth of field (DoF), is used to add realism to scenes, which simulates the way a real\-world camera works. You can use a broad DoF to focus on the entire scene, or use a shallow DoF to have sharp focus only on objects that are a specific distance from the camera.
 
 See the following guidelines and best practices when setting up camera focus:
 + Always keep characters in focus.
@@ -14,7 +14,7 @@ See the following guidelines and best practices when setting up camera focus:
 + Don't use DoF for scenes that are far away. DoF works best for differentiating between closeups and the background.
 + Use your eyes to focus at different distances and see what is sharp and what is blurred. You can use your thumb as a helper. This should give you a sense of how it should look in a scene.
 
-DoF is rendered only for a single view pane layout \(the default\) in the viewport in O3DE Editor. If you are using a multiple view pane layout and the sequence camera is not in the active pane, DoF doesn't render. If you need to set this, do the following.
+DoF is rendered only for a single view pane layout (the default) in the viewport in O3DE Editor. If you are using a multiple view pane layout and the sequence camera is not in the active pane, DoF doesn't render. If you need to set this, do the following.
 
 **To set the viewport for a single view pane layout**
 

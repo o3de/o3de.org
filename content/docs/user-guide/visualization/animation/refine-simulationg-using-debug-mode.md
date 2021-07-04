@@ -34,7 +34,7 @@ In the following procedure, use the debug mode to refine the simulated object's 
     In the render window, you can click the first icon to toggle the actor geometry and see only simulated objects.
 ![\[Use the render window to preview how the a tassel moves and collides with the joint colliders.\]](/images/user-guide/actor-animation/simulated-objects-22.gif)
 
-1. To fix the simulated object \(tassel\) movement, do the following.
+1. To fix the simulated object (tassel) movement, do the following.
 
    1. In the **Simulated Object** panel, select `L_tassle_02_JNT`.
 
@@ -46,7 +46,7 @@ In the following procedure, use the debug mode to refine the simulated object's 
 
    1. In the **Simulated Object Inspector**, for **Radius**, enter **0.065**.
 
-1. To fix the simulated joint colliders \(chest and arm of the actor\), do the following.
+1. To fix the simulated joint colliders (chest and arm of the actor), do the following.
 
    1. In the **Skeleton Outliner** panel, select the `C_spine_04_JNT` where you added the simulated joint collider.
 

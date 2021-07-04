@@ -67,4 +67,4 @@ Capture image frames with the following console variables. For more information,
 | capture\_frames |  Enables frame capture, if the value is set to `1`.  |
 | capture\_file\_format |  Sets the output format for the images. Valid values: `.jpg`, `.tga`, `.tif`  |
 | capture\_file\_prefix |  Sets a file name prefix to use for captured frames. Default: `Frame`  |
-| capture\_buffer |  Sets the type of buffer to capture. Valid values:  `0` = Color \(RGB pixels\) `1` = Color with Alpha \(RGBA pixels where the alpha channel is set to 255 where geometry exists\)  |
+| capture\_buffer |  Sets the type of buffer to capture. Valid values:  `0` = Color (RGB pixels) `1` = Color with Alpha (RGBA pixels where the alpha channel is set to 255 where geometry exists)  |

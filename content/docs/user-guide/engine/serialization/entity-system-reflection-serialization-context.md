@@ -6,7 +6,7 @@ title: Serialization Context
 
 {{< preview-migrated >}}
 
-You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:
+You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` (runtime type information), as in the following example:
 
 ```
 class SerializedObject
@@ -47,7 +47,7 @@ serializedContext->Class<SerializedObject>()
 
 Serializers are a useful way to provide custom data formats. If you want to do custom processing on an object before writing or reading it, you can override O3DE's default serializer.
 
-To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface. Use the interface to override how data is handled as it is streamed into its persistent format. You can also use the interface to determine the actions that occur when the reflected object is serialized \(read or written\).
+To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface. Use the interface to override how data is handled as it is streamed into its persistent format. You can also use the interface to determine the actions that occur when the reflected object is serialized (read or written).
 
 The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp`\) provides a good example of a custom serializer. To save a UUID value, the code writes it directly into the stream. This part of the code is straightforward.
 
@@ -134,7 +134,7 @@ AZStd::unique_ptr<T>
 You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object.
 
 **Stable Elements**
-Elements are considered stable if their pointers do not change when other elements are added to or removed from a container. O3DE's implementation of stable elements corresponds to the [C++17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous. Stable elements can be removed from a container without affecting other elements in the container. You can use the `IsStableElements` function to determine the status of a container's elements. If a container's elements are not stable, you must enumerate them in order for them to be serialized.
+Elements are considered stable if their pointers do not change when other elements are added to or removed from a container. O3DE's implementation of stable elements corresponds to the [C++17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017(E)](https://www.iso.org/standard/68564.html) standard. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous. Stable elements can be removed from a container without affecting other elements in the container. You can use the `IsStableElements` function to determine the status of a container's elements. If a container's elements are not stable, you must enumerate them in order for them to be serialized.
 
 The following code example shows how to set up serialization for a container that stores a dynamic sequence of homogenous elements.
 
@@ -238,7 +238,7 @@ bool    CanAccessElementsByIndex() const override   { return false; }
 ```
 
 **Notes**
-+ When `IsFixedSize` and `IsFixedCapacity` are false, the plus \(+\) and minus \(-\) buttons in the property editor can be used to add and remove elements from the data container.
++ When `IsFixedSize` and `IsFixedCapacity` are false, the plus (+) and minus (-) buttons in the property editor can be used to add and remove elements from the data container.
 + When `IsSmartPointer` is false, the data container does not create an instance of the `SmartPointer` type when an element is added to the container.
 + When `CanAccessElementsByIndex` is false, the serialization system checks whether to allocate memory for new elements. `CanAccessElementsByIndex` is true for fixed\-size containers like `AZStd::array`, `AZStd::pair`, and `AZStd::tuple` because those containers already have memory storage allocated for their elements.
 
@@ -364,8 +364,8 @@ The `Create<ContainerType>` function parameters are explained in the following t
 | Parameter | Description |
 | --- | --- |
 | "AZStd::vector" | Specifies the user friendly name of the class in a JSON or XML stream. |
-| GetSpecializedTypeId\(\) | Creates an ID that enables serialization of different types. For example, an AZStd::vector of integers can be serialized as a type that is different from an AZStd::vector of floats. The unique ID is made by aggregating the template type AZStd::vector with the contained type T.  |
-| Internal::NullFactory::GetInstance\(\) | NullFactory is used to prevent heap memory from being used to create an AZStd::vector. To load an AZStd::vector element of a pointer type, change this to Serialize::InstanceFactory<AZStd::vector<T,A>>. |
+| GetSpecializedTypeId() | Creates an ID that enables serialization of different types. For example, an AZStd::vector of integers can be serialized as a type that is different from an AZStd::vector of floats. The unique ID is made by aggregating the template type AZStd::vector with the contained type T.  |
+| Internal::NullFactory::GetInstance() | NullFactory is used to prevent heap memory from being used to create an AZStd::vector. To load an AZStd::vector element of a pointer type, change this to Serialize::InstanceFactory<AZStd::vector<T,A>>. |
 | nullptr  | This is the Serializer parameter. Because the serialization occurs through a data container, this parameter is nullptr. |
 | &m\_containerStorage | The m\_containerStorage structure is an AZStdBasicContainer that ClassData uses to serialize the AZStd::vector element array. |
 

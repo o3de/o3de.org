@@ -42,7 +42,7 @@ The **Extraction Mode** for the **Blend Two** node is calculated as follows.
 + `S` = Source transform delta
 + `T` = Target transform delta
 
-Root included in mask \(or no mask provided\):
+Root included in mask (or no mask provided):
 + **Blend** = `S` + \(`T` \- `S`\) \* weight
 + **Source** = `S`
 + **Target** = `T`

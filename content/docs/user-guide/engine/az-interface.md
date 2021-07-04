@@ -15,7 +15,7 @@ A system is an instance of a class that inherits the `Registrar` method from `AZ
 *Systems*, in this usage, are key parts of O3DE. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system. With `AZ::Interface`, you access these systems with this simplified syntax:
  `AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
 For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
-Likewise, you can use this syntax to invoke behaviors across systems for console functors \(cfuncs\) declared with [AZ::Console](/docs/userguide/az-console.md).
+Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](/docs/userguide/az-console.md).
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
 + Improved performance. Calls to the singleton are a virtual function call that can often even be de\-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call.
@@ -28,7 +28,7 @@ Likewise, you can use this syntax to invoke behaviors across systems for console
 This is the process for registering a singleton thread for a system with `AZ::Interface`
 + Obtain a raw interface pointer to a `type T` class instance for registration. You can assume that the registered system will outlive any cached references.
 + Register the system with the interface at initialization time by calling `Register()` on the reference to it.
-+ Wait. If registration is successful, an `AZ::Environment` \(which contains the environment variables for your game\) is successfully attached and is ready to receive messages to update the environment variables.
++ Wait. If registration is successful, an `AZ::Environment` (which contains the environment variables for your game) is successfully attached and is ready to receive messages to update the environment variables.
 
 To deregister a system, call `Unregister()` on `AZ::Interface`.
 
@@ -96,7 +96,7 @@ Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, 
 ***Thread safety is your responsibility***. Using `AZ::Interface<T>`does not make threads safe.
 
 **Vs. AZ::Event**
-`AZ::Event` is a publish/subscribe \(pub/sub\) event handler that can be used when you want to subscribe to notifications from another component on the same thread. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console.
+`AZ::Event` is a publish/subscribe (pub/sub) event handler that can be used when you want to subscribe to notifications from another component on the same thread. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console.
 
 ## Converting from an EBus implementation 
 

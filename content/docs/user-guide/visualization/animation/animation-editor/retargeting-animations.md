@@ -12,7 +12,7 @@ For example, you may have a human character that's six feet tall and your motion
 
 **Important**
 To retarget motions, your assets **must** meet these requirements:
-The first frame in **every** motion must be the actor's bind pose. For example, if you have an animation that contains frames 1\-100, the actor's bind pose \(skinned mesh and bones\) must be added at frame 0.
+The first frame in **every** motion must be the actor's bind pose. For example, if you have an animation that contains frames 1\-100, the actor's bind pose (skinned mesh and bones) must be added at frame 0.
 The bone names and hierarchy **must** be identical between the original actor and the retargeted actor. The retargeted actor *may* contain additional leaf bones in its hierarchy, but the areas of the hierarchy that are being retargeted must be identical.
 
 **Note**

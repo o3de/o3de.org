@@ -13,7 +13,7 @@ See the following controller nodes in the **Animation Editor**.
 
 ## Get Transform 
 
-The **Get Transform** node gets the transform data from a joint that you specify. The transform includes the translation \(position\), rotation, and scale. You can use this node to return the transform for your animations.
+The **Get Transform** node gets the transform data from a joint that you specify. The transform includes the translation (position), rotation, and scale. You can use this node to return the transform for your animations.
 
 **To create a Get Transform node**
 
@@ -40,7 +40,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 1. In the **Node Selection Window**, select your preferred joint and click **OK**.
 ![\[Select a joint for the Get Transform node.\]](/images/user-guide/actor-animation/animation-editor-get-set-transform-4.png)
 
-   The **Get Transform** node will output the vector \(x, y, z\) for **Output Translation** \(position\), **Output Rotation**, and **Output Scale**.
+   The **Get Transform** node will output the vector (x, y, z) for **Output Translation** (position), **Output Rotation**, and **Output Scale**.
 
 1. In the right pane, on the **Attributes** tab, specify the **Transform Space**. You can specify the following.
 ****
@@ -48,7 +48,7 @@ The **Get Transform** node gets the transform data from a joint that you specify
 
 ## Set Transform 
 
-The **Set Transform** node sets the transform from a selected joint, including translation \(position\), rotation, and scale.
+The **Set Transform** node sets the transform from a selected joint, including translation (position), rotation, and scale.
 
 **To create a Set Transform node**
 
@@ -61,12 +61,12 @@ The **Set Transform** node sets the transform from a selected joint, including t
 1. Double\-click the **Blend Tree** node, right\-click the graph, and then choose **Create Node**, **Controllers**, **Set Transform**.
 ![\[Add the Set Transform node to your anim graph.\]](/images/user-guide/actor-animation/animation-editor-get-set-transform-5.png)
 
-   The **Set Transform** node takes **Input Pose**, **Translation** \(position\), **Rotation**, and **Scale** as inputs, and then outputs **Output Pose** for selected nodes \(joints\).
+   The **Set Transform** node takes **Input Pose**, **Translation** (position), **Rotation**, and **Scale** as inputs, and then outputs **Output Pose** for selected nodes (joints).
 
 1. For the **Set Transform** node, on the **Attributes** tab, click **Select joint**. This specifies the joint from which you want to set the transform.
 ![\[Set the Select joint attribute for the Set Transform node.\]](/images/user-guide/actor-animation/animation-editor-get-set-transform-3.png)
 
-1. Select your preferred joint and click **OK**. The **Set Transform** node will output the vector \(x, y, z\) for **Output Pose**.
+1. Select your preferred joint and click **OK**. The **Set Transform** node will output the vector (x, y, z) for **Output Pose**.
 
 1. In the right pane, on the **Attributes** tab, specify the **Transform space**. You can specify the following.
 ****

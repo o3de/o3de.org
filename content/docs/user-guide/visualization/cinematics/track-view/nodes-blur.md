@@ -10,7 +10,7 @@ You can use the **Radial Blur** node to blur the animation radially outward from
 
 **To add a Radial Blur node in the Track View**
 
-1. In the Track View, right\-click the sequence \(top node\) or the **Director** node in the tree as applicable, and then choose **Add Radial Blur Node**.
+1. In the Track View, right\-click the sequence (top node) or the **Director** node in the tree as applicable, and then choose **Add Radial Blur Node**.
 
 1. For each of the keys in the following list, click the applicable key listed under the **RadialBlur** node.
 
@@ -28,4 +28,4 @@ You can use the **Radial Blur** node to blur the animation radially outward from
 | Amount | Intensity of the blur effect. Range is 0 to 1. |
 | ScreenPosX | X\-axis position of the effect's center. The range is \-1 to 1, with 0.5 being the center of the screen. |
 | ScreenPosY | Y\-axis position of the effect's center. Range is \-1 to 1, with 0.5 being the center of the screen. |
-| Blurring Radius | Size of the blur effect. The range is 0 \(not visible\) to 1 \(covers the entire screen\). |
+| Blurring Radius | Size of the blur effect. The range is 0 (not visible) to 1 (covers the entire screen). |

@@ -23,7 +23,7 @@ If selected, simple state returns to the configured initial state when activated
 **States**
 The list of states on this simple state component.
 
-**State \(\[0\], \[1\], \[2\], etc\)**
+**State (\[0\], \[1\], \[2\], etc)**
 Includes a name for the state and a set of entities that are activated when the state is entered and deactivated when the state is exited.
 
 **Name**
@@ -36,7 +36,7 @@ List of the entities referenced by this state.
 
 Use the following request functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
 
 ### SetState 
 
@@ -49,7 +49,7 @@ Sets the active state to the named state.
 
 Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus \(EBus\) interface, see [Working with the Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
 
 ### OnStateChanged 
 

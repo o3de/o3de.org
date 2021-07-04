@@ -39,7 +39,7 @@ You can add the **FlipbookAnimation** component to elements that also have an [*
 
    For the **SpriteType**, choose **Sprite/Texture asset**.
 
-   In the **Sprite path**, click **Browse** \(…\) and navigate to the directory that contains the sprite sheet asset that you created. Select the sprite sheet.
+   In the **Sprite path**, click **Browse** (…) and navigate to the directory that contains the sprite sheet asset that you created. Select the sprite sheet.
 
 1. Add a **FlipbookAnimation** component.
 

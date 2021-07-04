@@ -17,7 +17,7 @@ Select elements in your canvas. In this mode, selecting is the only action that 
 Select and move UI elements. Moving a UI element modifies its offset. In the **Move** mode, you can view but not interact with the anchor widget, which is disabled.
 You can move UI elements in the following ways:
 + Select an element and drag it to a new position.
-+ Select a particular axis \(X, Y, or Z\) on the axis gizmo and drag the element by only one axis at a time.
++ Select a particular axis (X, Y, or Z) on the axis gizmo and drag the element by only one axis at a time.
 + Nudge your selected elemented using keyboard arrows.
 + Select multiple elements and align them using the [Alignment Tool](#ui-editor-toolbar-alignment-tool).
 

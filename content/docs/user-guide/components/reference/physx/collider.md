@@ -9,7 +9,7 @@ title: PhysX Collider
 Performance demands in games and real\-time applications require physics simulations to be solved in fractions of a second. The PhysX Collider component allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities, ensuring fast physics simulation. A simple entity such as a crate might have a single PhysX Collider component, while more complex entities, such as vehicles, might require multiple PhysX Collider components.
 
 **Note**
-The PhysX Collider component attached to an entity by itself creates a static \(non\-moving\) entity, such as a wall or a mountain. To create a dynamic \(moving\) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body Physics** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities.
+The PhysX Collider component attached to an entity by itself creates a static (non\-moving) entity, such as a wall or a mountain. To create a dynamic (moving) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body Physics** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities.
 
 The PhysX Collider component requires the [PhysX](/docs/user-guide/gems/reference/physx/) gem enabled in your project.
 
@@ -191,22 +191,22 @@ There are three editing modes available in collider component mode.
 + **Offset** mode translates the collider relative to its entity transform.
 + **Rotation** mode rotates the collider about the component's **Offset**.
 
-**Resize \(Sphere Shape\)**
+**Resize (Sphere Shape)**
 **Sphere** resize mode has one linear manipulator that controls the **Radius** property.
 
 ![\[PhysX Collider component mode sphere resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-E.png)
 
-**Resize \(Box Shape\)**
+**Resize (Box Shape)**
 **Box** resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height **Dimensions** property.
 
 ![\[PhysX Collider component mode box resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-G.png)
 
-**Resize \(Capsule Shape\)**
+**Resize (Capsule Shape)**
 **Capsule** resize mode has two linear manipulators. The manipulator at the top of the capsule controls the **Height** property. The manipulator on the side controls the **Radius** property.
 
 ![\[PhysX Collider component mode capsule resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-F.png)
 
-**Resize \(Physics Asset Shape\)**
+**Resize (Physics Asset Shape)**
 **Physics Asset** resize mode has a three axis scale manipulator.
 
 ![\[PhysX Collider component mode Physics Asset resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-H.png)

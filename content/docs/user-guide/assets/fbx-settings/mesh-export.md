@@ -5,7 +5,7 @@ title: FBX Settings mesh export
 
 {{< preview-migrated >}}
 
-**Meshes** contain geometry that doesn't have a skeleton and skinning data. These assets are also called *static* **Meshes**. Static meshes are most often used as props and environment objects, but can be used as interactive objects and even player avatars. Entities containing static meshes can be animated through scripts \(*kinematics*\) or PhysX simulation \(*dynamics*\).
+**Meshes** contain geometry that doesn't have a skeleton and skinning data. These assets are also called *static* **Meshes**. Static meshes are most often used as props and environment objects, but can be used as interactive objects and even player avatars. Entities containing static meshes can be animated through scripts (*kinematics*) or PhysX simulation (*dynamics*).
 
 **Contents**
 + [Export a mesh](#fbx-exporting-meshes)
@@ -46,6 +46,6 @@ When you close **FBX Settings** after making changes, you might see a pop\-up wi
 
   1. In O3DE Editor, in the **Asset Browser**, right\-click the `.fbx` file and choose **Edit Settings**.
 
-  1. In the **FBX Settings** tool, on the **Meshes** tab, click **Add Modifier** and then choose **Mesh \(Advanced\)**.
+  1. In the **FBX Settings** tool, on the **Meshes** tab, click **Add Modifier** and then choose **Mesh (Advanced)**.
 
   1. Clear the **Merge Meshes** setting. This prevents **Asset Processor** from merging the meshes, which allows **Asset Processor** to process the geometry.

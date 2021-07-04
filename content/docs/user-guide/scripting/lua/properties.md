@@ -40,7 +40,7 @@ The type that you provide as the default value determines how the property is ap
 
 Properties can have the types described in this section.
 
-### Boolean Values \(True, False\) 
+### Boolean Values (True, False) 
 
 The following examples are Boolean values.
 
@@ -51,7 +51,7 @@ AllowMovement = { default = true, description = "Allow or restrict movement of t
 
 In O3DE Editor, Boolean values are represented by a check box.
 
-### Numeric Values \(Integer or Floating Point Numbers\) 
+### Numeric Values (Integer or Floating Point Numbers) 
 
 The following examples are numeric values.
 
@@ -64,7 +64,7 @@ Distance = { default = 5.0, min = 2.0, max = 10.0, step = 2.0, suffix = "m", des
 In O3DE Editor, numeric values are represented by an edit field with increase/decrease arrows. Numeric values can do the following:
 + Provide a custom suffix to indicate units.
 + Set minimum and maximum values.
-+ Provide a step value \(how much the value increases or decreases when the user clicks the arrows on the right side of the edit field\).
++ Provide a step value (how much the value increases or decreases when the user clicks the arrows on the right side of the edit field).
 
 ### Strings 
 
@@ -145,4 +145,4 @@ You can add attributes to a property by placing them alongside the default value
 | Attribute | Description |
 | --- | --- |
 | Description | A string that is the text of the tool tip for the property. |
-| UI | Specifies \(overrides\) the UI handler that the property uses.  |
+| UI | Specifies (overrides) the UI handler that the property uses.  |

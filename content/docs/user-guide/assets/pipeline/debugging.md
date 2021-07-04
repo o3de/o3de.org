@@ -25,7 +25,7 @@ You can view logs for internal operations of Asset Processor. If Asset Processor
 
 1. In the **Logs** section, you can view the following:
    + **Status** - The date and time stamp of the log
-   + **Source** - Where the log came from \(for example, Asset Processor\)
+   + **Source** - Where the log came from (for example, Asset Processor)
    + **Message** - The description of the log
 **Example**
 ![\[View logs in Asset Processor.\]](/images/user-guide/asset_processor/logs.png)
@@ -33,8 +33,8 @@ You can view logs for internal operations of Asset Processor. If Asset Processor
 1. To create another log report, click **Add**.
 
 1. In the **Create New Logging Tab**, you can specify the following settings.
-   + **Filter name** - Enter the name of your filter \(for example, *All logs*\).
-   + **Text filter \(optional\)** - Enter text to filter the log results.
+   + **Filter name** - Enter the name of your filter (for example, *All logs*).
+   + **Text filter (optional)** - Enter text to filter the log results.
    + **Show messages** - Displays messages about each log.
    + **Show warnings** - Displays logs that have warnings.
    + **Show errors** - Displays logs that have errors.

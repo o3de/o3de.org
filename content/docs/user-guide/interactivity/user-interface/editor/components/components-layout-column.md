@@ -44,5 +44,5 @@ If the layout's children don't occupy all the available layout space, use this s
 For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally.
 For **Vertical**, select **Top**, **Center**, or **Bottom** to determine how the children are aligned vertically.
 ****Ignore Default Cell****
-Selected by default, this property causes the layout column to give each child an equal amount of space regardless of their contents \(unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md) component\). The layout column ignores the layout cell's content\-based default calculations.
+Selected by default, this property causes the layout column to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md) component). The layout column ignores the layout cell's content\-based default calculations.
 When you clear this option, the layout column uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md).

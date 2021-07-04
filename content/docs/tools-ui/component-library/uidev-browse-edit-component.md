@@ -23,7 +23,7 @@ Use a dropdown [combo box](uidev-combobox-component.md) instead if there is a pr
 
 1.  **Placeholder text**
 
-   \(Optional\) Hint text that you set using `setPlaceholderText()` appears here when the widget text is empty.
+   (Optional) Hint text that you set using `setPlaceholderText()` appears here when the widget text is empty.
 
 1.  **Input box**
 
@@ -33,27 +33,27 @@ Generally when using the **browse edit** component, you set the input box to be 
 
 1.  **Attached button**
 
-   \(Optional\) The **browse edit** input box has an attached button. The default button uses a folder icon, but you can specify a different icon. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal.
+   (Optional) The **browse edit** input box has an attached button. The default button uses a folder icon, but you can specify a different icon. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal.
 **Note**
 When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format.
 
 1.  **Tooltip**
 
-   \(Optional\) If you set tooltip text for the widget, it will appear near where the user hovers.
+   (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
 ![\[component browse edit anatomy clear\]](/images/tools-ui/component-browse-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
-   \(Optional\) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
+   (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
 ![\[component browse edit anatomy error state\]](/images/tools-ui/component-browse-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 
-   \(Optional\) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
+   (Optional) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
 
 1.  **Error tooltip**
 
-   \(Optional\) When an error state exists, if an error tooltip has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you set a validator for the input box, it is highly recommended that you also set an error tooltip.
+   (Optional) When an error state exists, if an error tooltip has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you set a validator for the input box, it is highly recommended that you also set an error tooltip.
 
 ## Basic browse edit<a name="browse-edit-basic"></a>
 

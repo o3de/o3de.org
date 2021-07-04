@@ -45,7 +45,7 @@ When you assign property values, note the following:
 + The following entries report an error to the Asset Processor and fail the asset processing job:
   + Unrecognized properties
   + Properties with incorrect values
-  + Lines with more than one equal \(=\) symbol
+  + Lines with more than one equal (=) symbol
 
 **File Paths**
 If a line specifies a path to an image file, the image is included in the texture atlas. Image file paths can be relative to any watch folder that the Asset Processor monitors for assets. If a line refers to a file that can't be loaded, an error is reported to the Asset Processor and the asset processing job fails. Lines that are neither comments nor properties are assumed to be image file paths.

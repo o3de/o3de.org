@@ -10,7 +10,7 @@ Use the **Comment** node to add comments to your track view sequence. This is mo
 
 **To add a Comment node in the Track View**
 
-1. In the Track View, right\-click either the sequence \(top node\) or the **Director** node in the tree as applicable, and then click **Add Comment Node**.
+1. In the Track View, right\-click either the sequence (top node) or the **Director** node in the tree as applicable, and then click **Add Comment Node**.
 
 1. For each of the keys listed below, click the applicable key listed under the **Comment** node.
 

@@ -28,7 +28,7 @@ In the following procedure, you can divide the image into 12 columns when config
    The **Configure Spritesheet** view displays two new sections, **Configure Spritesheet** and **Select cell**.
 ![\[Configure Spritesheet and Select cell.\]](/images/user-guide/game_ui_editor/ui-editor-component-sprite-sheets-1.png)
 
-1. Enter the number of rows and columns. The walking images example has 12 columns and 1 row. These values divide the sprite into a uniform grid and assume that each cell of the sprite sheet is of the same \(uniform\) size.
+1. Enter the number of rows and columns. The walking images example has 12 columns and 1 row. These values divide the sprite into a uniform grid and assume that each cell of the sprite sheet is of the same (uniform) size.
 
 1. In the **Select cell** section, click a cell to select it and display its properties.
 
@@ -40,7 +40,7 @@ In the following procedure, you can divide the image into 12 columns when config
 
 1. To select the specific cell of the sprite sheet that you want to use, in the **Image** component properties, select the appropriate **Index** number.
 
-   The **Sprite Editor** assigns index numbers in the rows and columns of the sprite sheet, from left to right and then top to bottom, starting with 0 \(zero\).
+   The **Sprite Editor** assigns index numbers in the rows and columns of the sprite sheet, from left to right and then top to bottom, starting with 0 (zero).
 
    If you defined an **Alias** in the **Sprite Editor** properties, that also appears next to the index numbers.
 ![\[Select Index number of sprite sheet.\]](/images/user-guide/game_ui_editor/ui-editor-component-sprite-sheets-2.png)

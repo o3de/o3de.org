@@ -21,7 +21,7 @@ Note the following:
 + If you want to add a text label to a button, add a child element with a text component.
 
    
-+ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow \(open\-in\) ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button-1.png) next to **Sprite path**.
++ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open\-in) ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button-1.png) next to **Sprite path**.
 
 You can add a prebuilt **Button** element from the slice library. When you do this, a basic button with the text string "Button" is automatically created in your **Hierarchy** pane.
 

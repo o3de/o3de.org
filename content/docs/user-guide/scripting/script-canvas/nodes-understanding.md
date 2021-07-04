@@ -56,7 +56,7 @@ For more information about creating variable references, see [Adding Variable Re
 
 ## Event Nodes 
 
-In O3DE's [Event Bus \(EBus\) system](/docs/user-guide/engine/ebus/_index.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes.
+In O3DE's [Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes.
 
 ### Sender Nodes 
 
@@ -113,7 +113,7 @@ The following example creates a receiver node for a Light event.
 
 #### Displaying and Using Connection Controls 
 
-All receiver nodes have connection\-related pins, or controls, that are hidden by default. You can use these controls to manage when an event is connected or disconnected \(connected means that the event is ready to receive events, and disconnected means that the event is not receiving events\). The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error.
+All receiver nodes have connection\-related pins, or controls, that are hidden by default. You can use these controls to manage when an event is connected or disconnected (connected means that the event is ready to receive events, and disconnected means that the event is not receiving events). The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error.
 
 The following example uses the Light component **Turned On** event node.
 

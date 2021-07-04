@@ -22,4 +22,4 @@ Before completing the following procedure, you must have the following:
 
 1. In the **Entity Outliner**, select the **Gradient** entity.
 
-1. \(Optional\) Adjust the values for **Threshold Min** and **Threshold Max** to specify how much of the gradient can appear in the vegetation.
+1. (Optional) Adjust the values for **Threshold Min** and **Threshold Max** to specify how much of the gradient can appear in the vegetation.

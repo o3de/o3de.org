@@ -64,7 +64,7 @@ Modify the coordinate system of the actor. Third\-party content creation applica
 
 ![\[The FBX Settings Actor tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-lod.png)
 
-The **Level of detail** \(LoD\) modifier is added to the **Actor group** automatically when LoDs are found in the `.fbx` file. Choose the **Hierarchy** button to verify or modify the meshes and bones assigned to each LoD. Actors support up to 6 levels of detail including the base level of detail \[`0`\].
+The **Level of detail** (LoD) modifier is added to the **Actor group** automatically when LoDs are found in the `.fbx` file. Choose the **Hierarchy** button to verify or modify the meshes and bones assigned to each LoD. Actors support up to 6 levels of detail including the base level of detail \[`0`\].
 
 **Note**
 The **Level of detail** modifier for **Actor groups** cannot be added or removed manually and does not appear in the modifier list. The **Level of detail** modifier is automatically added and configured when actor LoDs are found in an `.fbx` file.
@@ -108,8 +108,8 @@ If the mesh for this **Actor group** contains a vertex color stream, it can be s
 Vertex color streams contain per vertex color data that can be referenced by materials. Vertex color streams are also often used for tagging meshes with arbitrary data such as the inverse mass value used in cloth simulation. Because of this, a mesh might have multiple vertex color streams. Be sure to select a vertex color stream intended to be referenced by materials if multiple streams exist.
 
 ****Vertex color mode****
-Set the vertex color precision to either 32 bit \(8 bits per channel\) or 128 bit \(32 bits per channel\).
-Vertex color streams contain four channels: red, green, blue, and alpha. Setting the mode to 32 bit vertex color precision saves significant memory over 128 bit vertex color precision at a loss of dynamic range. If you are targeting a platform with memory constraints, using 32 bit precision is a very useful optimization. If you are targeting a platform that supports high dynamic range \(HDR\) display, 128 bit precision offers much greater color fidelity.
+Set the vertex color precision to either 32 bit (8 bits per channel) or 128 bit (32 bits per channel).
+Vertex color streams contain four channels: red, green, blue, and alpha. Setting the mode to 32 bit vertex color precision saves significant memory over 128 bit vertex color precision at a loss of dynamic range. If you are targeting a platform with memory constraints, using 32 bit precision is a very useful optimization. If you are targeting a platform that supports high dynamic range (HDR) display, 128 bit precision offers much greater color fidelity.
 
 ## Scale actor modifier 
 
@@ -124,7 +124,7 @@ The **Scale factor** modifier sets a uniform scale for the **Actor group**. This
 The **Skeleton optimization** modifier automatically optimizes Actor skeletons for client and server scenarios.
 
 **Auto Skeleton LoD**
-When enabled, unskinned bones \(bones not weighted to any vertices\), are optimized out of the client side skeleton hierarchy.
+When enabled, unskinned bones (bones not weighted to any vertices), are optimized out of the client side skeleton hierarchy.
 
 **Server Skeleton Optimize**
 When enabled, bones that do not have colliders attached are optimized out of the server side skeleton hierarchy.
@@ -162,7 +162,7 @@ The **EMotion FX** option is for backward compatibility only and is not recommen
 
 **Bitangents**
 Defines how to generate or read the bitangents.
-+ **Use from source** - Use the bitangents from the FBX file or the output from the tangent generator used \(MikkT\).
++ **Use from source** - Use the bitangents from the FBX file or the output from the tangent generator used (MikkT).
 + **Orthogonal** - Generates the bitangents orthogonal to the tangent and normal. This is the default setting.
 
 ****Normalize****

@@ -14,7 +14,7 @@ The following concepts and terms are used in the **Animation Editor**:
 + [About State Machines](#understanding-state-machines)
 
 **Actor**
-A character with at least one bone is called an *actor*. An actor consists of a set of nodes in a hierarchy. Each node is a transformation \(position, rotation, and scale\) and can contain a mesh.
+A character with at least one bone is called an *actor*. An actor consists of a set of nodes in a hierarchy. Each node is a transformation (position, rotation, and scale) and can contain a mesh.
 Instances of actors are called *actor instances*. For example, one soldier that is instanced 100 times can create an army of the same character. You can animate actor instances separately, so that each instance behaves differently. Each actor instance has unique transformations, but shares the same hierarchy as the actor from which it was instanced.
 Actor files have the `.actor` extension \(for example, `hero.actor`\).
 
@@ -32,7 +32,7 @@ Motion sets can be hierarchical. A child set can override specific motions for a
 Motion set files have the `.motionset` extension \(for example, `MainSet.motionset`\).
 
 **Motion events**
-Markings at specific time values inside the motion files are called *motion events* \(also called notifiers or notifications\). A motion event has a type string \(for example, "SOUND"\) and parameter string \(for example, "Footstep"\).
+Markings at specific time values inside the motion files are called *motion events* (also called notifiers or notifications). A motion event has a type string (for example, "SOUND") and parameter string (for example, "Footstep").
 Motion events can have a fixed time value or range. Events with a single time value are called *tick events*. Events with specified start and end times are called *ranged events*.
 You can specify event presets, which are pre\-setup types of events that you drag and drop into the event tracks. An *event track* is a group of events that you enable or disable. For example, you can add all sound effects to an event track specifically for sounds.
 Motion event data is stored in the motion FBX's `.assetinfo` file.
@@ -40,10 +40,10 @@ Motion event data is stored in the motion FBX's `.assetinfo` file.
 **Synchronization**
 You can use *full clip\-base sync* or *sync tracks * to synchronize motion clips to keep a character's motions in sync while blending. For example, if your character is running, synchronization helps keep the right and left feet in sync.
 Full clip\-based sync warps the motions so that there is a constant change in playback time of the child motion.
-Sync tracks use motion events, where the events mark specific moments \(for example, where the right and left feet are on the floor\). This system is also known as phase matching and dynamically controls the playback speed.
+Sync tracks use motion events, where the events mark specific moments (for example, where the right and left feet are on the floor). This system is also known as phase matching and dynamically controls the playback speed.
 
 **Floats**
-Floats are numbers with decimals \(for example 1.35 or 1.0.\) Booleans and integers are also floats, so they can be passed as weight float inputs to blending nodes. If floats are rounded, the **Animation Editor** always rounds them down. For example, 2.99 becomes 2.
+Floats are numbers with decimals (for example 1.35 or 1.0.) Booleans and integers are also floats, so they can be passed as weight float inputs to blending nodes. If floats are rounded, the **Animation Editor** always rounds them down. For example, 2.99 becomes 2.
 
 **Time**
 All time values and durations are in seconds. For example, you can set the transition time for 0.3 or 300 ms.
@@ -96,7 +96,7 @@ In a blend tree, you can add other nodes from the following six categories
    + **Morph Target**
    + **Pose Mask**
    + **Blend N**
-   + **Blend Two \(Legacy\)**
+   + **Blend Two (Legacy)**
    + **Blend Space 2D**
    + **Blend Space 1D**
    + **Blend Two**
@@ -160,12 +160,12 @@ You can add parameters to an animation graph in the **Parameters** pane.
 1. In the **Create Parameter** dialog box, specify the parameter name, description, and the value type.
 
    You can specify the following value types to provide input into animation graph nodes:
-   + **Float \(slider\)**
-   + **Float \(spin box\)**
-   + **Boolean \(checkbox\)**
-   + **Tag \(checkbox\)**
-   + **Integer \(slider\)**
-   + **Integer \(spin box\)**
+   + **Float (slider)**
+   + **Float (spin box)**
+   + **Boolean (checkbox)**
+   + **Tag (checkbox)**
+   + **Integer (slider)**
+   + **Integer (spin box)**
    + **Vector2**
    + **Vector3**
    + **Vector3 gizmo**

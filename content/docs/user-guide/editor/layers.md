@@ -63,7 +63,7 @@ You can nest layers to break up your level into smaller, more workable sections.
 
 ## Adding Entities to a Layer 
 
-Layers can contain freestanding \(non\-slice\) entities and slices.
+Layers can contain freestanding (non\-slice) entities and slices.
 
 **To add an entity to a layer**
 + In the **Entity Outliner**, do one of the following:
@@ -78,11 +78,11 @@ The component entity system saves references to layers and their hierarchies in 
 
 O3DE layers are saved as `.layer` files in the `level_name/layers` directory. The layer's filename is saved as `layer_name.layer`. If a layer is nested within another layer, then the parent layer name is prepended to the layer filename.
 
-When a layer contains unsaved changes, an asterisk \(\*\) appears next to the layer name. After you save the level or the layer, the asterisk is removed.
+When a layer contains unsaved changes, an asterisk (\*) appears next to the layer name. After you save the level or the layer, the asterisk is removed.
 
 ![\[Asterisk (*) next to a layer with unsaved information.\]](/images/shared/shared-saving-layers.png)
 
-Layer names at the same hierarchy level must be unique. Layers at the same hierarchy level with duplicate names display a warning \(**\!**\) and can't be saved until you rename them.
+Layer names at the same hierarchy level must be unique. Layers at the same hierarchy level with duplicate names display a warning (**\!**) and can't be saved until you rename them.
 
 ![\[Layer at the same hierarchy level must have unique names.\]](/images/user-guide/component/entity_system/saving-layers-duplicate.png)
 

@@ -174,7 +174,7 @@ Event name that increases the current follow distance, in effect zooming out.
 Scale amount for the incoming zoom value.
 
 **Player Index**
-The index of the player \(device index\) that this feature supports.
+The index of the player (device index) that this feature supports.
 
 ### Offset Position 
 
@@ -192,7 +192,7 @@ If selected, local basis vectors are used. If deselected, worldbasis vectors are
 
 ### Rotate 
 
-Use **Rotate** to rotate a camera about one of its axes \(**X**, **Y**, or **Z**\).
+Use **Rotate** to rotate a camera about one of its axes (**X**, **Y**, or **Z**).
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/camera-rig-rotate.png)
 

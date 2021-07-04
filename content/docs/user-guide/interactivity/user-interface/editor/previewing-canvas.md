@@ -15,7 +15,7 @@ You can preview your game UI canvas to visualize how it might look at different 
 
 The **UI Editor** **Preview** consists of the following:
 
-1. **Toolbar** - Tools to view the current **Viewport size**, **Preview canvas size** \(selectable\), and **Canvas scale**.
+1. **Toolbar** - Tools to view the current **Viewport size**, **Preview canvas size** (selectable), and **Canvas scale**.
 
 1. **Viewport** - Display of the UI canvas as it would appear at the selected resolution.
 

@@ -83,7 +83,7 @@ If you have set up animations in the `.animevents` file in Geppetto, an `OnAnima
 | Methods | GetWorldX, SetWorldX, GetWorldY, SetWorldY, etc. |
 | File | TransformBus.h |
 
-The `TransformBus` contains many useful methods for getting or setting where in the world the entity is, such as xyz axis locations. For an example of using a pointer directly to the entity's transform for more optimal access to functions such as `GetBasisY` \(the entity's forward vector\), see [Direct Access to EBus Handlers](/docs/userguide/programming/ebus/handlers-direct-access.md).
+The `TransformBus` contains many useful methods for getting or setting where in the world the entity is, such as xyz axis locations. For an example of using a pointer directly to the entity's transform for more optimal access to functions such as `GetBasisY` (the entity's forward vector), see [Direct Access to EBus Handlers](/docs/userguide/programming/ebus/handlers-direct-access.md).
 
 ## Manually Play Animations 
 

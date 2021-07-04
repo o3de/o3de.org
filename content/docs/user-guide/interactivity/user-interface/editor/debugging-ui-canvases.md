@@ -44,21 +44,21 @@ The following table describes each column.
 | NN | The index number of the canvas in the list. The canvases are listed in the order that they're drawn in. |
 | Name | The leaf canvas name. |
 | En | Whether the canvas is enabled. |
-| Po | Whether the canvas accepts positional inputs \(for example, mouse input\). |
+| Po | Whether the canvas accepts positional inputs (for example, mouse input). |
 | Na | Whether the canvas has navigation enabled. |
 | DO | The draw order, which is used to sort the list of loaded canvases. |
 | nElem | The number of UI elements in the canvas. |
 | nEnab | The number of enabled UI elements in the canvas. If a parent isn't enabled, the element isn't counted. |
-| nRend | The number of enabled renderable elements in the canvas \(how many images, text and particle effects are being rendered\). |
-| nRCtrl | The number of enabled "render control" elements in THE canvas \(masks and faders\). |
+| nRend | The number of enabled renderable elements in the canvas (how many images, text and particle effects are being rendered). |
+| nRCtrl | The number of enabled "render control" elements in THE canvas (masks and faders). |
 | nImg | The number of enabled UI elements with UiImageComponents. |
 | nText | The number of enabled UI elements with UiTextComponents. |
 | nMask | The number of enabled UI elements with UiMaskComponents. |
 | nFadr | The number of enabled UI elements with UiFaderComponents. |
-| nIntr | The number of enabled UI elements with interactable components \(Button, Slider, TextInput, and so on\). |
-| nUpdt | Number of enabled UI elements with components that listen for updates \(that is, that potentially do something every frame\). |
-| ActiveInt | The name of the active interactable on this canvas \(if any\). |
-| HoverInt | The name of the current hover interactable on this canvas \(if any\). |
+| nIntr | The number of enabled UI elements with interactable components (Button, Slider, TextInput, and so on). |
+| nUpdt | Number of enabled UI elements with components that listen for updates (that is, that potentially do something every frame). |
+| ActiveInt | The name of the active interactable on this canvas (if any). |
+| HoverInt | The name of the current hover interactable on this canvas (if any). |
 
 ## ui\_DisplayDrawCallData 
 
@@ -86,7 +86,7 @@ The following table describes each column.
 | NN | The index number of the canvas in the list. The canvases are listed in the order that they're drawn in. |
 | Name | The leaf canvas name. |
 | nDraw | The number of draw calls. |
-| nPrim | The number of primitives \(for example, images and text strings\). |
+| nPrim | The number of primitives (for example, images and text strings). |
 | nTris | The number of triangles rendered for the UI. |
 | nMask | The number of mask render nodes in the render graph. |
 | nRTs | The number of render target render nodes in the render graph. |
@@ -94,7 +94,7 @@ The following table describes each column.
 | XMask | The number of draw calls caused by the use of masks.  One mask can cause up to four extra draw calls.  |
 | XRT | The number of draw calls caused by render targets. |
 | XBlnd | The number of draw calls caused by a change in blend mode. |
-| XSrgb | The number of draw calls caused by a change in Srgb write. This data point appears only for render targets \(for example, playing video\). |
+| XSrgb | The number of draw calls caused by a change in Srgb write. This data point appears only for render targets (for example, playing video). |
 | XMaxV | The number of draw calls caused by a render node that requires more than 65536 vertices or 16384 quads. This case is uncommon. For example, more than 16000 characters of text would be required for a value to appear. |
 | XTex | The number of draw calls that occur when the shader supported maximum of 16 textures is reached. To reduce the number of these calls, you can use a texture atlas. For more information, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/editor/texture-atlases.md). |
 

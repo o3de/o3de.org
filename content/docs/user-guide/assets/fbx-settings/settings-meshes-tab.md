@@ -13,7 +13,7 @@ All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\)
 + [Comment modifier](#w31aac15b9c11c11c13)
 + [Level of Detail modifier](#w31aac15b9c11c11c15)
 + [Material modifier](#w31aac15b9c11c11c17)
-+ [Mesh \(Advanced\) modifier](#w31aac15b9c11c11c19)
++ [Mesh (Advanced) modifier](#w31aac15b9c11c11c19)
 + [Origin modifier](#w31aac15b9c11c11c21)
 + [Touch Bending modifier](#w31aac15b9c11c11c23)
 
@@ -36,7 +36,7 @@ Modifiers add specialized options for processing assets. Choose the **Add Modifi
 + **Comment**
 + **Level of Detail**
 + **Material**
-+ **Mesh \(Advanced\)**
++ **Mesh (Advanced)**
 + **Origin**
 + **Touch Bending**
 Some modifiers are not available unless the gem that provides the modifier is enabled in your project.
@@ -49,7 +49,7 @@ Add NVIDIA Cloth data to a selected mesh to simulate cloth physics.
 
 **Note**
 Each mesh in the **Mesh group** to simulate as cloth requires its own **Cloth** modifier.
-When a **Cloth** modifier is added to a mesh group, the **Merge Meshes** property in the **Mesh \(Advanced\)** modifier will be ignored and treated as disabled. A cloth mesh needs to be processed independently and cannot be merged with other meshes.
+When a **Cloth** modifier is added to a mesh group, the **Merge Meshes** property in the **Mesh (Advanced)** modifier will be ignored and treated as disabled. A cloth mesh needs to be processed independently and cannot be merged with other meshes.
 
 For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/).
 
@@ -90,7 +90,7 @@ Add a comment to the file. You can add a comment about changes made to the `.fbx
 
 ![\[The FBX Settings Meshes tab Level of Detail modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-level-of-detail.png)
 
-Add level of detail \(LoD\) meshes to the **Mesh group**.
+Add level of detail (LoD) meshes to the **Mesh group**.
 
 1. Choose the **+** button to add an LoD.
 
@@ -121,11 +121,11 @@ When enabled, updates the texture map file names in the `.mtl` file to match the
 ****Remove unused materials****
 When enabled, removes materials that are present in the `.mtl` file that are not defined in the `.fbx` file.
 
-## Mesh \(Advanced\) modifier 
+## Mesh (Advanced) modifier 
 
 ![\[The FBX Settings Meshes tab Mesh (Advanced) modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-mesh.png)
 
-The **Mesh \(Advanced\)** modifier adds advanced mesh processing features such as a setting for vertex precision, which can save memory, and a setting to choose a vertex color stream to include in the processed mesh.
+The **Mesh (Advanced)** modifier adds advanced mesh processing features such as a setting for vertex precision, which can save memory, and a setting to choose a vertex color stream to include in the processed mesh.
 
 ****Vertex Precision****
 Select the precision of the vertex data for the mesh group. **16\-bit** floats have a range of \-65,500 to 65,500 and 3 significant decimal places. Using **16\-bit** precision results in a much smaller file size for processed meshes, but vertices in the resulting `.cgf` file might shift slightly from their positions in the `.fbx` file. This position shift might be noticeable on large meshes, meshes with precise detail, or meshes that are placed far from the origin. Choose **32\-bit** precision for larger maximum values and more significant decimal places if the vertices appear to have shifted in the runtime asset.
@@ -146,7 +146,7 @@ Vertex color streams contain per vertex color data that can be referenced by mat
 
 ![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 
-Change the position \(translation\), orientation \(rotation\), and scale of a mesh relative to how it was authored.
+Change the position (translation), orientation (rotation), and scale of a mesh relative to how it was authored.
 
 ****Relative Origin Node****
 Select the transform relative to which the mesh is processed. By default, the mesh origin is placed at the scene position `0`, `0`, `0` in the `.fbx` file.
@@ -166,13 +166,13 @@ Sets the scale offset of the processed mesh.
 
 The **Touch Bending** modifier sets up mesh assets for touch bending. Touch bending is a collision effect, typically used on vegetation assets such as plants or tall grass, that causes the asset to bend away from an entity that brushes against it. You can use this modifier to create a field of wheat, for example, where the wheat parts and bends as a player character passes through.
 
-Touch bendable assets require a rig similar to an actor. For more information on creating touch bendable assets, see [Adding Touch \(Collision\) Bending Effects](/docs/userguide/vegetation/bending-touch-intro.md).
+Touch bendable assets require a rig similar to an actor. For more information on creating touch bendable assets, see [Adding Touch (Collision) Bending Effects](/docs/userguide/vegetation/bending-touch-intro.md).
 
 ****Select root bone****
 Specify the root bone of the touch bendable mesh.
 
-****Proximity Trigger Mesh\(es\)****
-Choose the **Hierarchy** button to select collision meshes that trigger the touch bending effect. Multiple trigger meshes can be selected, however, each additional trigger mesh decreases performance. A new PhysicsNoDraw material with a NoCollide type is created for the mesh\(es\).
+****Proximity Trigger Mesh(es)****
+Choose the **Hierarchy** button to select collision meshes that trigger the touch bending effect. Multiple trigger meshes can be selected, however, each additional trigger mesh decreases performance. A new PhysicsNoDraw material with a NoCollide type is created for the mesh(es).
 
 ****Stiffness****
 Set a stiffness value between **0.0** and **1.0** for all branches to define how easily the asset bends.
