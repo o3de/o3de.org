@@ -588,6 +588,67 @@ $width: '59vw';
     @include media-breakpoint-down(sm)
       padding-bottom: 14rem
 
+// layouts/contribute/section.html 
+
+.contribute-hero 
+  background-color: $o3de-darkblue
+  background-image: url('/images/contribute/hero.png')
+  background-size: cover
+  background-position: 50% 50%
+  color: $o3de-white
+
+  p
+    font-size: 1.5rem
+    font-weight: 200
+    max-width: 800px
+    margin: 0 auto
+
+.contribute-section
+  margin-top: 10px
+
+.github-box
+  background-color: rgba(30, 112, 235, 0.03)
+  border-radius: 3px
+  padding: 16px
+  margin-bottom: 12px
+
+  h3
+    margin-top: 0
+    font-size: 1.25rem
+    line-height: 2rem 
+
+    i
+      font-size: 2rem 
+      margin-right: 12px
+  
+  p
+    font-size: .8rem
+  
+.contribute-sigs
+  width: 100%
+  display: block
+
+  .row
+    text-align: center
+  
+  .sig-card
+    text-align: center
+    display: inline-block
+    width: 15%
+    margin: 8px .5%
+    padding: 10px 0
+    border-color: #fff
+    @include media-breakpoint-down(lg)
+      width: 23%
+    @include media-breakpoint-down(sm)
+      width: 31%
+    @include media-breakpoint-down(xs)
+      width: 48%
+
+    &:hover
+      border-color: $o3de-blue
+      color: $o3de-blue
+
 // Blog
 
   // Single Blog page
