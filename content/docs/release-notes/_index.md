@@ -20,7 +20,7 @@ guide_img: "/images/release-notes/guide_img.png"
 
 | Version         | Current branch                   |  Last updated      |
 |-----------------|----------------------------------|--------------------|
-| 2107.1 (Developer Preview) | [2107.1]({{< links/o3de-source >}}/tree/2107.1) |  July 6, 2021      |
+| 2107.1 (Developer Preview) | [2107.1](https://github.com/o3de/o3de/tree/main) |  July 6, 2021      |
 
 ### 2107.1 (Developer Preview) Release Information
 
