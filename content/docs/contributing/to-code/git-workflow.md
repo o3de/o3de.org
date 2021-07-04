@@ -1,21 +1,18 @@
 ---
-linktitle: "Git Workflow"
-title: "O3DE Code Contribution GitHub Workflow"
-description: ' Overview and instructions for contributing code to Open 3D Engine (O3DE) through GitHub. '
-date: 2021-03-02T00:23:51-05:00
+linktitle: GitHub Workflow
+title: O3DE Code Contribution GitHub Workflow
+description: Overview and instructions for contributing code to Open 3D Engine (O3DE) through GitHub.
 toc: true
 weight: 200
 ---
 
 {{< preview-new >}}
 
-## Open 3D Engine Code Contribution: Git Workflow
-
 Looking to submit new or changed code to O3DE? Exciting! Follow the guidance below to submit your first PR.
 
 ### GitHub Code Contribution Workflow
 
-The O3DE base repository is on GitHub at [https://github.com/o3de/o3de](https://github.com/o3de/o3de).
+The O3DE base repository is on GitHub at [{{< links/o3de-source >}}]({{< links/o3de-source >}}).
 
 ![GitHub code contribution workflow diagram](/images/contributing/to-code/code-git-workflow.png)
 
@@ -31,14 +28,14 @@ At a high level, the workflow is:
 
 ### Initial Git contribution workflow steps
 
-1. Create a fork of `https://github.com/o3de/o3de.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [https://github.com/o3de/o3de](https://github.com/o3de/o3de.git) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
+1. Create a fork of `{{< links/o3de-source >}}.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [{{< links/o3de-source >}}]({{< links/o3de-source >}}) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
 
 1. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
 
 1. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo, and updating the LFS URL. Run the following Git commands from **your locally cloned fork's path**:
 
     ```bash
-    git remote add upstream https://github.com/o3de/o3de.git
+    git remote add upstream {{< links/o3de-source >}}.git
     ```
 
     Confirm that `upstream` points to the O3DE public repo and that `origin` points to your fork:
@@ -50,10 +47,10 @@ At a high level, the workflow is:
     Minimally, you should see output that looks like this:
 
     ```bash
-    origin  https://github.com/<FORK>/o3de/o3de.org.git (fetch)
-    origin  https://github.com/<FORK>/o3de/o3de.org.git (push)
-    upstream  https://github.com/o3de/o3de.git (fetch)
-    upstream  https://github.com/o3de/o3de.git (push)
+    origin  https://github.com/<FORK>/o3de.git (fetch)
+    origin  https://github.com/<FORK>/o3de.git (push)
+    upstream  {{< links/o3de-source >}}.git (fetch)
+    upstream  {{< links/o3de-source >}}.git (push)
     ```
 
     You can also configure upstream to target specific branches, as well.
@@ -64,7 +61,7 @@ At a high level, the workflow is:
     git config lfs.url https://<DISTRIBUTION>.cloudfront.net/api/v1/fork/<FORK> 
     ```
 
-    You may be prompted to re-authenticate the next time you pull or push.  Remember to use your GitHub personal access token not your GitHub password.
+    You may be prompted to re-authenticate the next time you pull or push. Remember to use your GitHub personal access token not your GitHub password.
 
     If you need to revert this change later you can run the following command:
 
@@ -107,7 +104,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
     This will push the update to your fork, and NOT the O3DE code repo.
 
     {{< note >}}
-    We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio 2019 or Visual Studio Code, turn on commit signing in the preferences.
+We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio 2019 or Visual Studio Code, turn on commit signing in the preferences.
     {{< /note >}}
 
 2. (Optional): Test your branch with Jenkins.
@@ -137,7 +134,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
 4. The SIG owner (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
 
     {{< note >}}
-    The SIG owner will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
+The SIG owner will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
     {{< /note >}}
 
 5. Once all review comments have been addressed, a SIG member will approve the pull request.
