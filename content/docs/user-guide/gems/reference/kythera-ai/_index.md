@@ -14,21 +14,20 @@ The Kythera AI Gem adds a broad toolset of AI features to Open 3D Engine (O3DE).
 
 The Gem is available from our website at [https://kythera.ai/o3de](https://kythera.ai/o3de).
 
-* [Kythera AI Gem Setup](kythera-ai-gem-setup) - How to install the Gem and get started
+* [Kythera AI Gem Setup](kythera-ai-gem-setup) - How to install the Kythera AI Gem and get started
+* [Tutorials](/docs/learning-guide/tutorials/ai/) - Tutorials on using the Kythera AI Gem
 
-* [Tutorials](/docs/learning-guide/tutorials/ai/) - Tutorials on using the Gem
-
-### 2D navigation
+## 2D navigation
 
 * [Navmesh generation](navmesh-generation) - How to create navigation mesh (navmesh) for ground-based navigation
 * [Character movement APIs](character-movement-apis) - The APIs used to move characters on Kythera AI navmesh
 
-### 3D navigation
+## 3D navigation
 
-* [Octree generation](octree-generation) - How to create octree for 3D navigation
+* [Octree generation](octree-generation) - How to create an octree for 3D navigation
 * [3D Navigation splines](navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
 
-### Debugging and behavior authoring with the Kythera AI Inspector
+## Debugging and behavior authoring with the Kythera AI Inspector
 
 The Inspector is Kythera AI's browser-based debugger and behavior tree editor.
 
