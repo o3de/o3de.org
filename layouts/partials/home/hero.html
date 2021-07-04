@@ -2,24 +2,24 @@
 {{ $desc  := site.Params.description | markdownify }}
 {{ $source := site.Params.sourceRepo }}
 <div class="scalable home-hero d-flex align-items-center">
-  <div class="container-fluid hero-inner">
+  <div class="container hero-inner">
     <div class="row">
-      <div class="col col-12 col-xl-7 pl-7">
+      <div class="col col-12 col-md-7 pb-4 pt-4">
           <h1 class="title">
             {{ $title }}
           </h1>
-          <h3 class="title">
+          <h4 class="title mt-0">
             An open-source, real-time 3D development engine
-          </h3>
+          </h4>
 
           {{ with $desc }}
-          <p class="desc">
+          <p class="desc mt-5">
             {{ . }}
           </p>
           {{ end }}
 
           <p class="buttons">
-            <a href="/download" class="my-3 mr-3 btn btn-lg text-white download-cta">Get Started</a>
+            <a href="/download" class="mt-4 btn btn-lg text-white download-cta">Fork O3DE from GitHub</a>
           </p>
         </div>
       </div>

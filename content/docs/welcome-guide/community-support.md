@@ -4,8 +4,6 @@ description: Open 3D Engine (O3DE) resources and links.
 weight: 600
 ---
 
-{{< preview-new >}}
-
 |  |  |
 | - | - |
 | [Getting Started with Open 3D Engine](TBD)  | After setting up Open 3D Engine, learn how to use the platform with our Getting Started video series. This series covers all the basics of working with O3DE and is a terrific foundation for moving on to intermediate and advanced topics. |

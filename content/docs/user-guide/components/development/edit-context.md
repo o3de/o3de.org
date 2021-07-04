@@ -7,7 +7,7 @@ weight: 1500
 
 {{< preview-migrated >}}
 
-The O3DE edit context is a utility context that relies on the [Serialization Context](/docs/user-guide/engine/serialization/entity-system-reflection-serialization-context.md)\. You can use the edit context to expose parameters of serialized data for editing in O3DE Editor\. However, the edit context is an abstract container for edit data\. As such, it is not directly tied to any specific editor\. Any editor can query the data in the edit context and implement its own visualization and editing controls\.
+The O3DE edit context is a utility context that relies on the [Serialization Context](/docs/user-guide/engine/serialization/entity-system-reflection-serialization-context.md). You can use the edit context to expose parameters of serialized data for editing in O3DE Editor. However, the edit context is an abstract container for edit data. As such, it is not directly tied to any specific editor. Any editor can query the data in the edit context and implement its own visualization and editing controls.
 
 The following code shows an `EditContext` definition:
 
@@ -20,15 +20,15 @@ if (editContext)
 }
 ```
 
-An `EditContext` consists of `ClassElements` and `DataElements`\.
-+ `ClassElements` - Specify attributes of the class that was reflected through the `SerializeContext::Class`\. You can use this to group common elements\.
-+ `DataElements` - Specify the display, behavior, and visualization of the fields that were serialized through `SerializeContext::Field`\.
+An `EditContext` consists of `ClassElements` and `DataElements`.
++ `ClassElements` - Specify attributes of the class that was reflected through the `SerializeContext::Class`. You can use this to group common elements.
++ `DataElements` - Specify the display, behavior, and visualization of the fields that were serialized through `SerializeContext::Field`.
 
 ## Attributes 
 
-You can use the `EditContext` to add arbitrary attributes to class and data elements\.
+You can use the `EditContext` to add arbitrary attributes to class and data elements.
 
-Attributes are template based\. As such, they can be of any type, including functions, as in the following example\.
+Attributes are template based. As such, they can be of any type, including functions, as in the following example.
 
 ```
 editContext->Class<EditorLightComponent>(
@@ -44,4 +44,4 @@ editContext->Class<EditorLightComponent>(
     	->Attribute(AZ::Edit::Attributes::AutoExpand, true)
 ```
 
-For convenience, O3DE stores a library of frequently used and implemented attributes in the file `dev\Code\Framework\AzCore\AzCore\Serialization\EditContextConstants.inl`\.
+For convenience, O3DE stores a library of frequently used and implemented attributes in the file `dev\Code\Framework\AzCore\AzCore\Serialization\EditContextConstants.inl`.

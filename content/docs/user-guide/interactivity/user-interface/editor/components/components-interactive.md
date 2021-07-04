@@ -5,9 +5,9 @@ title: Interactive Components
 
 {{< preview-migrated >}}
 
-Interactive components respond to user input\. For example, the user can click a button or drag a slider\. You can use [Lua scripts](/docs/user-guide/interactivity/user-interface/editor/loading-canvases-lua.md) or Script Canvas graphs to link the component response to an action\.
+Interactive components respond to user input. For example, the user can click a button or drag a slider. You can use [Lua scripts](/docs/user-guide/interactivity/user-interface/editor/loading-canvases-lua.md) or Script Canvas graphs to link the component response to an action.
 
-An interactive element is defined as an element that has an interactive component applied\.
+An interactive element is defined as an element that has an interactive component applied.
 
 **Topics**
 + [Properties for Interactive Components](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md)

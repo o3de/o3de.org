@@ -6,7 +6,7 @@ title: Visual Components
 
 {{< preview-migrated >}}
 
-You can add one visual component to an element: **Image**, **Particle Emitter**, or **Text**\.
+You can add one visual component to an element: **Image**, **Particle Emitter**, or **Text**.
 
 **Topics**
 + [Image](/docs/user-guide/interactivity/user-interface/editor/components-image.md)

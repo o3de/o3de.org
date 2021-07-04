@@ -25,7 +25,7 @@ The following table describes the `AZ_Tracing` macros and their uses.
 
 ## Suppressing AZ Trace Messages in Unit Tests
 
-You can use macros to suppress AZ trace messages\.
+You can use macros to suppress AZ trace messages.
 
 * `AZ_TEST_START_ASSERTTEST` - Enable `AZ_Error` and `AZ_Assert` trace messages
 * `AZ_TEST_STOP_ASSERTTEST` - Disable `AZ_Error` and `AZ_Assert` trace messages

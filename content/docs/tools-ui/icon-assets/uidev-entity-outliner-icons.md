@@ -8,7 +8,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-This page contains an organized collection of icons currently used in the O3DE **Entity Outliner**\. Use the following charts to help you find an icon\.
+This page contains an organized collection of icons currently used in the O3DE **Entity Outliner**. Use the following charts to help you find an icon.
 
 ![\[O3DE Entity Outliner Icons\]](/images/tools-ui/icons-entity-outliner.png)
 

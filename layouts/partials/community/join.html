@@ -3,11 +3,11 @@
 <div class="community-join d-flex align-items-center">
   <div class="container social-container text-center pb-4 pt-5">
     <h2>Join the Conversation</h2>
-    <div class="row">
+    <div class="row pb-5">
     {{ $social := site.Params.social }}
     {{ range $social }}
     {{ $color := .color }}
-    <div class="col-6 col-md-3 pb-5">
+    <div class="col-6 col-md-3">
       <a class="btn" title="{{ .name }}" href="{{ .url }}" target="_blank">
         {{ with .icon }}
         <span class="icon">

@@ -6,7 +6,7 @@ title: Common Tasks
 
 {{< preview-migrated >}}
 
-The topics in this section provide practical knowledge about common tasks associated with Script Canvas, including best practices, advice on troubleshooting, and use of the debugger\.
+The topics in this section provide practical knowledge about common tasks associated with Script Canvas, including best practices, advice on troubleshooting, and use of the debugger.
 
 **Topics**
 + [Adding Scripts to Entities](/docs/userguide/scripting/scriptcanvas/adding-scripts.md)

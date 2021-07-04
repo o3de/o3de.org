@@ -5,7 +5,7 @@ title: Common Tasks, EBuses, and Handlers
 
 {{< preview-migrated >}}
 
-The following are some common game programming tasks and the EBuses and handlers that you can use to implement them\.
+The following are some common game programming tasks and the EBuses and handlers that you can use to implement them.
 
 ## Detect Mouse, Keyboard, or Other Button Events 
 
@@ -16,9 +16,9 @@ The following are some common game programming tasks and the EBuses and handlers
 | --- |--- |
 | Bus | AZ::InputEventNotificationBus |
 | Events | OnPressed, OnHeld, OnReleased |
-| File | InputEventBus\.h |
+| File | InputEventBus.h |
 
-Use these events to detect when mouse, keyboard, or other buttons are pressed, held, or released\.
+Use these events to detect when mouse, keyboard, or other buttons are pressed, held, or released.
 
 ## Detect Entity or Component Readiness 
 
@@ -29,9 +29,9 @@ Use these events to detect when mouse, keyboard, or other buttons are pressed, h
 | --- |--- |
 | Bus | LmbrCentral::MeshComponentNotificationBus |
 | Events | OnMeshCreated, OnMeshDestroyed |
-| File | MeshComponentBus\.h |
+| File | MeshComponentBus.h |
 
-Even after an entity has been created and its components have been activated, visual data might not be fully loaded\. The `OnMeshCreated` event occurs when the mesh creation is complete\. This is useful if you want to access the underlying `ICharacterInstance` and `ISkeletonAnim` members in order to play animations\. More generally, it is useful to declare a component or entity as "alive" or game ready, whatever that might mean for your application\.
+Even after an entity has been created and its components have been activated, visual data might not be fully loaded. The `OnMeshCreated` event occurs when the mesh creation is complete. This is useful if you want to access the underlying `ICharacterInstance` and `ISkeletonAnim` members in order to play animations. More generally, it is useful to declare a component or entity as "alive" or game ready, whatever that might mean for your application.
 
 ## Detect When a Member Joins or Leaves a Session 
 
@@ -42,9 +42,9 @@ Even after an entity has been created and its components have been activated, vi
 | --- |--- |
 | Bus | GridMate::SessionEventBus |
 | Events | OnMemberJoined, OnMemberLeaving |
-| File | Session\.h |
+| File | Session.h |
 
-You can use the `SessionEventBus` to detect when a member joins or leaves a network session\. For documentation on this EBus, see [Reacting to Session Events](/docs/userguide/networking/session-service-events.md) in the [Using O3DE Networking](/docs/userguide/networking/intro.md)\.
+You can use the `SessionEventBus` to detect when a member joins or leaves a network session. For documentation on this EBus, see [Reacting to Session Events](/docs/userguide/networking/session-service-events.md) in the [Using O3DE Networking](/docs/userguide/networking/intro.md).
 
 ## Get and Set Physics Characteristics 
 
@@ -54,10 +54,10 @@ You can use the `SessionEventBus` to detect when a member joins or leaves a netw
 |  |  |
 | --- |--- |
 | Bus | LmbrCentral::PhysicsComponentRequestBus |
-| Methods | AddImpulse, GetMass, SetMass, GetVelocity, SetVelocity, etc\. |
-| File | PhysicsComponentBus\.h |
+| Methods | AddImpulse, GetMass, SetMass, GetVelocity, SetVelocity, etc. |
+| File | PhysicsComponentBus.h |
 
-The `PhysicsComponentRequestBus` contains useful methods for getting or setting the physical characteristics of objects like mass, density, velocity, and water damping\. For an example of using a pointer directly to the underlying handler for better access to functions such as `GetVelocity`, see [Direct Access to EBus Handlers](/docs/userguide/programming/ebus/handlers-direct-access.md)\.
+The `PhysicsComponentRequestBus` contains useful methods for getting or setting the physical characteristics of objects like mass, density, velocity, and water damping. For an example of using a pointer directly to the underlying handler for better access to functions such as `GetVelocity`, see [Direct Access to EBus Handlers](/docs/userguide/programming/ebus/handlers-direct-access.md).
 
 ## Get Notifications for Animation Events 
 
@@ -68,9 +68,9 @@ The `PhysicsComponentRequestBus` contains useful methods for getting or setting 
 | --- |--- |
 | Bus | LmbrCentral::CharacterAnimationNotificationBus |
 | Event | OnAnimationEvent |
-| File | CharacterAnimationBus\.h |
+| File | CharacterAnimationBus.h |
 
-If you have set up animations in the `.animevents` file in Geppetto, an `OnAnimationEvent` event is called for each animation event during animation playback\. You can monitor this to get notifications for animation events\. The string configured for the animation event in Geppetto is held in the `LmbrCentral::AnimationEvent::m_animName` variable\.
+If you have set up animations in the `.animevents` file in Geppetto, an `OnAnimationEvent` event is called for each animation event during animation playback. You can monitor this to get notifications for animation events. The string configured for the animation event in Geppetto is held in the `LmbrCentral::AnimationEvent::m_animName` variable.
 
 ## Get or Set the Location of an Entity in the World 
 
@@ -80,10 +80,10 @@ If you have set up animations in the `.animevents` file in Geppetto, an `OnAnima
 |  |  |
 | --- |--- |
 | Bus | AZ::TransformBus |
-| Methods | GetWorldX, SetWorldX, GetWorldY, SetWorldY, etc\. |
-| File | TransformBus\.h |
+| Methods | GetWorldX, SetWorldX, GetWorldY, SetWorldY, etc. |
+| File | TransformBus.h |
 
-The `TransformBus` contains many useful methods for getting or setting where in the world the entity is, such as xyz axis locations\. For an example of using a pointer directly to the entity's transform for more optimal access to functions such as `GetBasisY` \(the entity's forward vector\), see [Direct Access to EBus Handlers](/docs/userguide/programming/ebus/handlers-direct-access.md)\.
+The `TransformBus` contains many useful methods for getting or setting where in the world the entity is, such as xyz axis locations. For an example of using a pointer directly to the entity's transform for more optimal access to functions such as `GetBasisY` (the entity's forward vector), see [Direct Access to EBus Handlers](/docs/userguide/programming/ebus/handlers-direct-access.md).
 
 ## Manually Play Animations 
 
@@ -94,9 +94,9 @@ The `TransformBus` contains many useful methods for getting or setting where in 
 | --- |--- |
 | Bus | LmbrCentral::SkinnedMeshComponentRequestBus |
 | Method | GetCharacterInstance |
-| File | SkinnedMeshComponent\.h |
+| File | SkinnedMeshComponent.h |
 
-To play animations manually, use the `ISkeletonAnim` in the character instance\. To get the `ISkeletonAnim` from the `ICharacterInstance`, use `ICharacterInstance::GetISkeletonAnim()`\.
+To play animations manually, use the `ISkeletonAnim` in the character instance. To get the `ISkeletonAnim` from the `ICharacterInstance`, use `ICharacterInstance::GetISkeletonAnim()`.
 
 ## Use an EBus from Another Component 
 
@@ -107,9 +107,9 @@ To play animations manually, use the `ISkeletonAnim` in the character instance\.
 | --- |--- |
 | Bus | AZ::EntityBus |
 | Events | OnEntityActivated, OnEntityDeactivated |
-| File | EntityBus\.h |
+| File | EntityBus.h |
 
-The `OnEntityActivated` and `OnEntityDeactivated` events are called after all of an entity's components have had their `Activate()` or `Deactivate()` function called\. These events can be useful if you want your component to use an EBus that another component has already set up in its `Activate()` function\.
+The `OnEntityActivated` and `OnEntityDeactivated` events are called after all of an entity's components have had their `Activate()` or `Deactivate()` function called. These events can be useful if you want your component to use an EBus that another component has already set up in its `Activate()` function.
 
 ## Use Tick Events 
 
@@ -120,6 +120,6 @@ The `OnEntityActivated` and `OnEntityDeactivated` events are called after all of
 | --- |--- |
 | Bus | AZ::TickBus |
 | Event | OnTick |
-| File | TickBus\.h |
+| File | TickBus.h |
 
-A tick is a unit of time generated by the component application\. The `OnTick` event signals that the application has issued a tick and is called each frame\. By default, handlers receive events based on the order in which the components are initialized, but you can override this\. For more information, see [Tick Bus and Components](/docs/user-guide/engine/ebus/tick.md)\.
+A tick is a unit of time generated by the component application. The `OnTick` event signals that the application has issued a tick and is called each frame. By default, handlers receive events based on the order in which the components are initialized, but you can override this. For more information, see [Tick Bus and Components](/docs/user-guide/engine/ebus/tick.md).

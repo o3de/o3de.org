@@ -5,9 +5,9 @@ title: 'Script Canvas Errors and Troubleshooting'
 
 {{< preview-migrated >}}
 
-Script Canvas provides a mechanism to detect and report errors\. Errors in Script Canvas are generally caused by invalid conditions\.
+Script Canvas provides a mechanism to detect and report errors. Errors in Script Canvas are generally caused by invalid conditions.
 
-In C\+\+ Script Canvas provides the following macros for error management:
+In C++ Script Canvas provides the following macros for error management:
 
 ```
 #define SCRIPTCANVAS_NODE_DETECT_INFINITE_LOOP(node)
@@ -17,12 +17,12 @@ In C\+\+ Script Canvas provides the following macros for error management:
 #define SCRIPTCANVAS_RETURN_IF_ERROR_STATE(node)
 ```
 
-You can use these macros during a graph's execution\. When triggered, they stop the execution of nodes that have an error\.
+You can use these macros during a graph's execution. When triggered, they stop the execution of nodes that have an error.
 
-You can detect errors that occur in a graph at run time and provide an error handler to respond to the errors\. This helps users to gracefully handle graphs that encounter an invalid condition\.
+You can detect errors that occur in a graph at run time and provide an error handler to respond to the errors. This helps users to gracefully handle graphs that encounter an invalid condition.
 
-Runtime execution errors are reported to the **Event Handler** node\. You can use this node to perform custom logging or take appropriate action when an error occurs\.
+Runtime execution errors are reported to the **Event Handler** node. You can use this node to perform custom logging or take appropriate action when an error occurs.
 
-You can also raise and handle errors within a graph's execution\. The following simple example shows how you could use **Error** and **Error Handler** nodes to provide notification of an error in data validation\. This helps to rectify the solution to ensure that the graph remains stable\.
+You can also raise and handle errors within a graph's execution. The following simple example shows how you could use **Error** and **Error Handler** nodes to provide notification of an error in data validation. This helps to rectify the solution to ensure that the graph remains stable.
 
 ![\[Example that notifies users of errors in data validation\]](/images/user-guide/scripting/script-canvas/script-canvas-errors-and-troubleshooting-1.png)

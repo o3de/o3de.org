@@ -25,7 +25,7 @@ The Game State Gem manages a stack (or [pushdown automaton](https://en.wikipedia
 
 ### IGameState
 
-`IGameState` is the abstract interface that all concrete game state classes must be derived from\. The interface defines methods that track changes in game state, as seen in the following excerpt from the source code at `\Gems\GameState\Code\Include\GameState\GameState.h`.
+`IGameState` is the abstract interface that all concrete game state classes must be derived from. The interface defines methods that track changes in game state, as seen in the following excerpt from the source code at `\Gems\GameState\Code\Include\GameState\GameState.h`.
 
 ```c++
 //! Called when this game state is pushed onto the stack.
