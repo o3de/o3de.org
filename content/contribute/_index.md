@@ -3,6 +3,7 @@ title: "Contribute to Open 3D Engine"
 ---
 ## Get Involved
 Interested in contributing to O3DE? We’re always looking for developers, technical writers, reviewers, content contributors, and more.
+{{< partial "contribute/contribute.html" >}}  
 
 ## Join a Special Interest Group
 O3DE is a very large project. Special Interest Groups (SIGs) are the way we divide up the planning and communication for the different areas and responsibilities around developing and maintaining O3DE. Review the list below, and join the ones that map the best to your interests and experience.
