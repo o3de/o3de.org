@@ -2,7 +2,7 @@
 
 {{ range .CurrentSection.Pages }}
 <ul class="section-nav-subsection collapse">
-  <li>{{ if .IsSection }}<i id="docs-chevron" class="fas fa-chevron-right">&nbsp;</i> {{ end }}<a class="section-nav-link" href="{{ .Permalink }}"> 
+  <li>{{ if .IsSection }}<i id="docs-chevron" class="fas fa-chevron-right mr-1">&nbsp;</i> {{ end }}<a class="section-nav-link" href="{{ .Permalink }}"> 
     {{ .Page.LinkTitle | markdownify }}
     </a>
     {{ if .IsSection }}
