@@ -32,7 +32,7 @@ Avoid these design choices when using checkboxes:
 
 Set up and control checkboxes in Qt Designer or in code.
 
-Note that to set the "partially checked" state in tri\-state checkboxes, you must use code.
+Note that to set the "partially checked" state in tri-state checkboxes, you must use code.
 
  **Example**
 

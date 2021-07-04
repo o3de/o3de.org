@@ -6,7 +6,7 @@ title: Programming the O3DE AZCore Runtime Asset System
 
 {{< preview-migrated >}}
 
-The O3DE Editor and O3DE runtime code use the AZCore runtime asset system to asynchronously stream and activate assets. This topic describes the workflow of the classes in the asset system and shows how to load already\-built assets into a running instance of the engine.
+The O3DE Editor and O3DE runtime code use the AZCore runtime asset system to asynchronously stream and activate assets. This topic describes the workflow of the classes in the asset system and shows how to load already-built assets into a running instance of the engine.
 
 **Note**
 For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/intro.md).
@@ -38,7 +38,7 @@ The following O3DE classes derive from `AssetData`:
 | ParticleAsset | Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset.h |
 
 **Note**
-Adding your own asset type to O3DE includes the following high\-level steps:
+Adding your own asset type to O3DE includes the following high-level steps:
 Derive your type from `AssetData`.
 Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID.
 Add the member fields or structs that store your data in memory at run time.
@@ -46,7 +46,7 @@ For more information, see [Adding an Asset Type to O3DE](/docs/user-guide/assets
 
 ### AZ::Data::Asset<T> Templated Class 
 
-Typically, components which use assets directly or indirectly do not have a pointer to your `AssetData`\-derived class; instead, they have a member of type `Asset<T>`. The `AZ::Data::Asset<T>` templated class is a wrapper that is similar to a smart pointer, and the `T` templated type is an `AssetData`\-derived class.
+Typically, components which use assets directly or indirectly do not have a pointer to your `AssetData`-derived class; instead, they have a member of type `Asset<T>`. The `AZ::Data::Asset<T>` templated class is a wrapper that is similar to a smart pointer, and the `T` templated type is an `AssetData`-derived class.
 
 The use of `Asset<T>` provides the following benefits:
 + Automatic dependency tracking for components that are part of slices.
@@ -80,7 +80,7 @@ Note the following points:
 + Maintains a hash table that maps asset IDs to the instances of `Asset<T>` that are currently loaded.
 + Calls `FindAsset` to see if an asset is already loaded. If the asset is not currently loaded, `FindAsset` returns a null reference.
 + Automatically reloads assets as they change on disk.
-+ Notifies listeners about asset lifecycle changes. Events like asset loading or unloading are signalled on the `AssetBus`. The callback\-based adapter for this bus is called `AssetBusCallbacks`. For more information, see the `AssetCommon.h` file.
++ Notifies listeners about asset lifecycle changes. Events like asset loading or unloading are signalled on the `AssetBus`. The callback-based adapter for this bus is called `AssetBusCallbacks`. For more information, see the `AssetCommon.h` file.
 
   To get an asset, call `GetAsset`. If the reference count is greater than zero, `GetAsset` returns an `Asset<T>` that is already loaded. If no `Asset<T>` is currently loaded, `GetAsset` starts loading a new instance of `Asset<T>`.
 
@@ -149,18 +149,18 @@ The asset catalog is a set of lookup tables that notifies the O3DE asset system 
 
 To receive notifications about assets that change on disk, connect to the `AssetCatalogEventBus`. Then use the `AssetCatalogRequestBus` to make requests to the `AssetCatalog` to resolve assets by ID. For details, see the `AssetManagerBus.h` file.
 
-The `AssetCatalogRequestBus` contains other functions that look up asset dependencies, enumerate assets, and perform other low\-level tasks. In most cases you do not have to use these functions directly.
+The `AssetCatalogRequestBus` contains other functions that look up asset dependencies, enumerate assets, and perform other low-level tasks. In most cases you do not have to use these functions directly.
 
 **Note**
-You do not have to use the asset catalog directly unless you write low\-level code that performs custom file processing. If you use the higher level systems like `Asset<T>`, `AssetData`, and `AssetManager`, these classes communicate with the catalog for you.
+You do not have to use the asset catalog directly unless you write low-level code that performs custom file processing. If you use the higher level systems like `Asset<T>`, `AssetData`, and `AssetManager`, these classes communicate with the catalog for you.
 
 To look up asset file information manually, you can pass an `AssetId` to the `AssetCatalog`. `AssetCatalog` returns a struct that contains the file's type, size, canonical name, and location.
 
 ### AZ::Data::AssetHandler Derived Classes 
 
-When you [create a new type of asset](/docs/user-guide/assets/asset-type-adding.md), you also create an `AssetHandler` for the new asset type. The role of the asset handler is to create, load, save, and destroy assets when the asset manager requests it. After your asset handler creates an empty instance of your asset type, it loads serialized data into the in\-memory representation of `AssetData`.
+When you [create a new type of asset](/docs/user-guide/assets/asset-type-adding.md), you also create an `AssetHandler` for the new asset type. The role of the asset handler is to create, load, save, and destroy assets when the asset manager requests it. After your asset handler creates an empty instance of your asset type, it loads serialized data into the in-memory representation of `AssetData`.
 
-To create a handler for a specific asset type, derive from the `AssetHandler` class and register an instance of the handler with the asset manager. Because asset handling functions can be called from multiple threads, the handlers must be thread\-safe. The handler can block the calling thread while the asset is loading.
+To create a handler for a specific asset type, derive from the `AssetHandler` class and register an instance of the handler with the asset manager. Because asset handling functions can be called from multiple threads, the handlers must be thread-safe. The handler can block the calling thread while the asset is loading.
 
 ## Asset System Workflow 
 

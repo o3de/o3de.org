@@ -25,7 +25,7 @@ Component nodes that can be animated are nested as children under the associated
 
 1. In the Track View, create or select a sequence.
 
-1. In the node browser, right\-click and choose **Add Track**, then choose the component property.
+1. In the node browser, right-click and choose **Add Track**, then choose the component property.
 
 Not all components can be animated in the Track View. For example, you can add the **Visibility** track only for the **Mesh** component. The **Point Light** component has multiple tracks that you can add to the sequence. In the following example, the **Color**, **DiffuseMultiplier**, and **Visible** tracks are added to the sequence.
 
@@ -58,10 +58,10 @@ Component nodes that can be animated are nested as children under the associated
 
 1. In the Track View, select or create a sequence.
 
-1. In the node browser, right\-click the component node and choose **Add Track**, then choose the track that you want.
+1. In the node browser, right-click the component node and choose **Add Track**, then choose the track that you want.
 
 **Note**
-Some components support only a limited number of tracks that can be animated in a sequence. For more information for component\-specific properties, see the [Component Reference](/docs/userguide/components/components.md).
+Some components support only a limited number of tracks that can be animated in a sequence. For more information for component-specific properties, see the [Component Reference](/docs/userguide/components/components.md).
 Not all components can be animated in the Track View. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md).
 
 After you add the component entity nodes to the sequence and specify the tracks to animate, you can then add keyframes to the timeline. In keyframes, you specify where in the timeline you want to animate the property and edit its properties.

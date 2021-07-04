@@ -70,7 +70,7 @@ Because the default value for an operating system is `disabled`, the operating s
 
 If you want to enable an operating system that is already listed in the `[Platforms]` subsection, remove the semicolon to uncomment the corresponding line.
 
-If an entry for a game operating system that you want is not in the list, you can add it. However, you must also handle OS\-related differences like image formats. To do so, you must change the code in the asset processor (and possibly the image compiler and other builders).
+If an entry for a game operating system that you want is not in the list, you can add it. However, you must also handle OS-related differences like image formats. To do so, you must change the code in the asset processor (and possibly the image compiler and other builders).
 
 If you are using the `rc.exe` pipeline, specified operating systems are passed as parameters to the `rc.exe` program.
 
@@ -97,7 +97,7 @@ Setting `maxJobs` to zero specifies using as many cores as are available. A numb
 
 ## MetaDataTypes Section 
 
-Use the `MetaDataTypes` section to tell the asset system that certain file types are associated with other files in the same folder. These specifications control the compilation of side\-by\-side assets, as in the following example.
+Use the `MetaDataTypes` section to tell the asset system that certain file types are associated with other files in the same folder. These specifications control the compilation of side-by-side assets, as in the following example.
 
 ```
 [MetaDataTypes]
@@ -133,7 +133,7 @@ You can add as many scan folders as you want, but each folder must have a unique
 
 You can use the aliases `@root@` and `@gamename@` as placeholders to enable portability to the computers of other users who are working on the same project.
 
-To make the scan folder OS\-specific, use the keywords `include` and `exclude`. Both keywords can contain platform tags and/or platform identifiers. If you do not specify a keyword, all enabled operating systems are included by default.
+To make the scan folder OS-specific, use the keywords `include` and `exclude`. Both keywords can contain platform tags and/or platform identifiers. If you do not specify a keyword, all enabled operating systems are included by default.
 
 The `ScanFolder` section has the following parameters.
 
@@ -146,7 +146,7 @@ The `ScanFolder` section has the following parameters.
 | output=<foldername> | Put the contents of this watch folder into the subfolder of the @assets@ folder called <foldername>. |
 | recursive=1 | Recurse into subfolders. |
 | order=30000 |  Declares a priority order. The lower the number, the more "important" a folder is. The game folder for your project is always considered 0, the most important.  The `order` parameter affects only assets with the same name. For example, suppose you have an asset called `MyTexture.TIF` in two separate scan folders. If both asset files map to the same output file, then the asset file with the lower order number overrides the one with the higher.   |
-| include=<comma\-separated platform tags or identifiers> | Contains the list of platforms or platform tags to include for the scan folder. Only enabled platforms are included. If you include a disabled platform, it will not be considered for the scan folder. |
+| include=<comma-separated platform tags or identifiers> | Contains the list of platforms or platform tags to include for the scan folder. Only enabled platforms are included. If you include a disabled platform, it will not be considered for the scan folder. |
 | exclude==<comma separated platform tags or identifiers> | Contains the list of platforms or platform tags to exclude for the scan folder. |
 
 **Notes**
@@ -175,7 +175,7 @@ pattern=.*Editor\\/Tmp\\/AnimationCompression\\/.*
 
 ## RC Section 
 
-Use the `RC` section to specify files to be processed by the `rc.exe` program or to be copied as\-is into the asset cache without processing. The `RC` section is only for use by legacy RC modules and for specifying simple file copies to cache.
+Use the `RC` section to specify files to be processed by the `rc.exe` program or to be copied as-is into the asset cache without processing. The `RC` section is only for use by legacy RC modules and for specifying simple file copies to cache.
 
 The `RC` section consists of a series of *recognizer descriptors*. Each descriptor specifies a set of files (by glob or by pattern) and what to do with the specified files. Changing the fields of the recognizer invalidates assets according to the change made.
 
@@ -207,8 +207,8 @@ The following table describes each parameter and its options.
 | pattern | A regular expression that specifies the files to process. When you use regular expressions, remember to escape any backslashes. |
 | glob | A wildcard expression like \*.tif that specifies binary glob files to process. |
 | params | The `params` parameter can take one of the following three options.  If you omit the params, platform params, or tag params sections, the `rc.exe` program processes the file using default options. To process the file on specific operating systems, set the `params` parameter to `skip` and then specify the desired platforms. If you pass parameters to the `rc.exe` program, you can pass `p` \(as in `/p=pc`\) to force the program to process the asset as if it were the PC. You can pass the appropriate parameter for the desired platform.  |
-| (platformname)=(params) | Specifies OS\-specific parameters. You can use the params parameter to specify default parameters, and then override them for specific operating systems when required by using platformname=params. For example, the statement pc=/TEST overrides the default parameters for PC and passes the parameter /TEST to the rc.exe program.Can be `true` or `false`. When `true`, causes the job to wait until it can gain an exclusive read/write lock on the source file. |
-| (tagname)=(params) | Specifies tag\-specific parameters, which are generally better than platform\-specific parameters. For example, the following statement causes all platforms to use the default parameters when processing `.tiff` files. However, a platform with the `server` tag is skipped.<pre>[RC tif]<br />pattern=.*\.tiff? <br />server=skip</pre> |
+| (platformname)=(params) | Specifies OS-specific parameters. You can use the params parameter to specify default parameters, and then override them for specific operating systems when required by using platformname=params. For example, the statement pc=/TEST overrides the default parameters for PC and passes the parameter /TEST to the rc.exe program.Can be `true` or `false`. When `true`, causes the job to wait until it can gain an exclusive read/write lock on the source file. |
+| (tagname)=(params) | Specifies tag-specific parameters, which are generally better than platform-specific parameters. For example, the following statement causes all platforms to use the default parameters when processing `.tiff` files. However, a platform with the `server` tag is skipped.<pre>[RC tif]<br />pattern=.*\.tiff? <br />server=skip</pre> |
 | lockSource | The following statement passes `/p=pc` to invocations of the `rc.exe` program: `server=/p=pc`. This allows the program to process assets (such as textures) as if it were the PC, even on the server. The default behavior is to pass /p=server, which the rc.exe program may not understand.  The `lockSource` parameter is useful for dealing with applications that hold onto a file and then slowly stream data into it. For example, if a program creates very large files over a long period of time, you can set `lockSource=true` to avoid processing an asset until the other application releases it. Use of this parameter is relatively rare and is generally expensive, so you should avoid using it unless absolutely required. |
 | priority | Specifies job priority. A larger number gives a job greater priority in the queue. Normally, you should assign a larger number to assets that are likely to be needed from the start or that affect gameplay. This ensures that they get compiled sooner.  `params` `copy` jobs have an default priority of 1.  |
 | critical | Can be `true` or `false`. Critical jobs cause the editor splash screen to continue displaying and pause the startup of the runtime until every critical job has been completed. Marking jobs as critical ensures they are complete before the editor is allowed to start. You can specify entire types of assets as critical. This can be useful for files that are used during startup, cause bad behavior if they are not ready during bootstrap, or cannot be reloaded live.  Because critical jobs can delay the startup of the editor for the first time, not having critical jobs is always the preferred choice. Alternative approaches include:   Making the editor or runtime capable of reloading the asset live after it is compiled.   Making a call to compile the asset on demand using the asset system bus. You can use the public function `CompileAssetSync` to do this. See the O3DE source code for examples.     `params` `copy` jobs are critical by default.  |

@@ -8,7 +8,7 @@ weight: 10
 
 {{< preview-migrated >}}
 
-O3DE's **custom Qt widget library** provides developers with access to the same UI components used throughout O3DE. Using this library, UI developers can build their own tools and extensions for O3DE, while maintaining a coherent and standardized UI experience. This custom library provides new and extended widgets, and includes a set of styles and user interaction patterns that are applied on top of the Qt framework \- the C++ library that O3DE relies on for its UI. The library can be extended to support your own customizations and modifications.
+O3DE's **custom Qt widget library** provides developers with access to the same UI components used throughout O3DE. Using this library, UI developers can build their own tools and extensions for O3DE, while maintaining a coherent and standardized UI experience. This custom library provides new and extended widgets, and includes a set of styles and user interaction patterns that are applied on top of the Qt framework - the C++ library that O3DE relies on for its UI. The library can be extended to support your own customizations and modifications.
 
 ![\[uidev intro\]](/images/tools-ui/uidev-intro.png)
 

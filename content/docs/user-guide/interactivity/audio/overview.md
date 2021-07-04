@@ -14,7 +14,7 @@ O3DE provides two audio Gems:
 + **AudioSystem**
 + **AudioEngineWwise**
 
-AudioEngineWwise is an audio engine implementation provided by O3DE for Audiokinetic Wwise. An audio engine implementation translates generic Audio Translation Layer (ATL) state requests into real calls to the audio middleware API. It also implements low\-level hooks for file I/O and memory allocation as needed for the audio middleware.
+AudioEngineWwise is an audio engine implementation provided by O3DE for Audiokinetic Wwise. An audio engine implementation translates generic Audio Translation Layer (ATL) state requests into real calls to the audio middleware API. It also implements low-level hooks for file I/O and memory allocation as needed for the audio middleware.
 
 The AudioEngineWwise Gem depends on the AudioSystem Gem. It is recommended that you enable both Gems to enable audio, but the AudioSystem Gem has no dependencies and can be enabled by itself. This leaves open the possibility of other audio middleware Gems to be developed and used instead of AudioEngineWwise.
 

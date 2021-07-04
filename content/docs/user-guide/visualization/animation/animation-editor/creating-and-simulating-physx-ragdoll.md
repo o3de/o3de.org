@@ -36,13 +36,13 @@ Do the following to select the joints for your ragdoll.
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Animation Editor**, on the right side of the menu bar, choose **Physics** from the drop\-down list. This changes the layout.
+1. In the **Animation Editor**, on the right side of the menu bar, choose **Physics** from the drop-down list. This changes the layout.
 
 1. Choose **File**, **Open Actor** and select your actor.
 
-1. In the **Skeleton Outliner**, multi\-select the joints that you want to include in your ragdoll.
+1. In the **Skeleton Outliner**, multi-select the joints that you want to include in your ragdoll.
 
-1. Right\-click one of the selected joints and then choose **Ragdoll**, **Add to ragdoll**.
+1. Right-click one of the selected joints and then choose **Ragdoll**, **Add to ragdoll**.
 **Note**
 You can add joints to the ragdoll at any time.
 ![\[Add a selected joint to the ragdoll in the Skeleton Outliner in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-add-to-ragdoll.png)
@@ -114,12 +114,12 @@ The animation graph controls the ragdoll simulation of your character. When your
 
 **To create an animation graph to transition from running state to ragdoll state**
 
-1. In the **Animation Editor**, on the right side of the menu bar, choose **AnimGraph** from the drop\-down list. This changes the layout.
+1. In the **Animation Editor**, on the right side of the menu bar, choose **AnimGraph** from the drop-down list. This changes the layout.
 ![\[Change the Animation Editor layout by choosing AnimGraph from the drop-down list\]](/images/user-guide/actor-animation/ragdoll-animation-editor-layout-option-animgraph.png)
 
 1. In the **Anim Graph** pane, click the **+** icon to create a new animation graph.
 
-1. Right\-click the grid and then choose **Create Node**, **Sources**, **Motion**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Motion** into the animation graph.
+1. Right-click the grid and then choose **Create Node**, **Sources**, **Motion**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Motion** into the animation graph.
 ![\[Add a Motion node to the animation graph from the context menu or the Anim Graph Palette in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-anim-graph-context-menu-motion-node.png)
 
 1. Select the **Motion** node in the animation graph.
@@ -130,7 +130,7 @@ The animation graph controls the ragdoll simulation of your character. When your
 
    1. Click **Select motions**. In the **Motion Selection** window, select a motion and then click **OK**.
 
-1. Right\-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Blend Tree** into the animation graph.
+1. Right-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Blend Tree** into the animation graph.
 ![\[Add a Blend Tree node to the animation graph from the context menu or the Anim Graph Palette in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-anim-graph-palette-blend-tree.png)
 
 1. Select the **Blend Tree** node in the animation graph.
@@ -140,9 +140,9 @@ The animation graph controls the ragdoll simulation of your character. When your
 1. In the animation graph, connect the **Motion** node to the **Blend Tree** node. For example, connect the **Run** node to the **Ragdoll** node.
 ![\[Connect the Motion node to the Blend Tree node in the animation graph in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-animation-graph-connect-motion-and-ragdoll-nodes.png)
 
-1. Double\-click the **Blend Tree** node.
+1. Double-click the **Blend Tree** node.
 
-1. Right\-click the grid and then choose **Create Node**, **Sources**, **Ragdoll**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Ragdoll** into the animation graph.
+1. Right-click the grid and then choose **Create Node**, **Sources**, **Ragdoll**. Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Ragdoll** into the animation graph.
 
 1. Connect the **Output Pose** for the **Ragdoll** node to the **Input Pose** for the **Final Node** node.
 
@@ -162,7 +162,7 @@ Once you've created your ragdoll and animation graph, you can simulate the ragdo
 
 **To simulate your ragdoll**
 
-1. In O3DE Editor, right\-click the viewport and choose **Create entity**.
+1. In O3DE Editor, right-click the viewport and choose **Create entity**.
 
 1. In the **Entity Inspector**, for **Name**, enter **Ragdoll**.
 

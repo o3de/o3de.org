@@ -6,7 +6,7 @@ title: Particle Emitter
 
 {{< preview-migrated >}}
 
-You can use a **Particle Emitter** component to emit two\-dimensional particles from an element. Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Particle Emitter** component.
+You can use a **Particle Emitter** component to emit two-dimensional particles from an element. Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Particle Emitter** component.
 
 
 **Emitter Settings**
@@ -22,7 +22,7 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 | Particle count limit | Use the Active particle limit value to limit the number of active particles. |
 | Active particles limit | This option is available when Particle Count Limit is set. Type the maximum number of active particles. When the maximum number is reached, additional particles are emitted only after existing particles are removed. The maximum value is 9999. |
 | Fixed random seed | Specify a fixed random seed for the emitter. When not selected, a random seed is generated each time the emitter starts emitting. |
-| Random seed | This option is available when Fixed random seed is set. Enter the numerical seed to use for the particle emitter when Fixed random seed is selected. The field accepts a maximum nine\-digit negative or positive integer. |
+| Random seed | This option is available when Fixed random seed is set. Enter the numerical seed to use for the particle emitter when Fixed random seed is selected. The field accepts a maximum nine-digit negative or positive integer. |
 | Emit on edge | This option is available when Emitter shape is Circle or Quad. Emit particles on the edge of the specified shape. |
 | Emit inside distance | This option is available when Emit on Edge is set. Enter the distance inside the edge that the particles are emitted from. |
 | Emit outside distance | Type the distance outside the edge that the particles are emitted from. |
@@ -54,12 +54,12 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 | Name | Description |
 | --- | --- |
 | Relative to emitter | Move particles relative to the element to which the Particle Emitter component is attached. When this option isn't selected, the element leaves a trail of particles as the emitter moves around the canvas. |
-| Movement co\-ordinate type |  Select the type of coordinate space for particle movement:   |
-| Speed | This option is available when Movement co\-ordinate type is set to Cartesian. Enter a number that specifies the initial speed of the emitted particles when the emit direction is calculated. |
-| Speed variation | This option is available when Movement co\-ordinate type is set to Cartesian. Enter a number that specifies the variation in initial speed of the emitted particles when the emit direction is calculated. |
-| Initial velocity | This option is available when Movement co\-ordinate type is set to Polar. Enter X and Y values that specify the initial velocity of the emitted particles. |
-| Initial velocity variation | This option is available when Movement co\-ordinate type is set to Polar. Enter X and Y values that specify the variation in the initial velocity of the emitted particles. |
-| Acceleration co\-ordinate type |  Select the type of coordinate space that is used for particle acceleration:   |
+| Movement co-ordinate type |  Select the type of coordinate space for particle movement:   |
+| Speed | This option is available when Movement co-ordinate type is set to Cartesian. Enter a number that specifies the initial speed of the emitted particles when the emit direction is calculated. |
+| Speed variation | This option is available when Movement co-ordinate type is set to Cartesian. Enter a number that specifies the variation in initial speed of the emitted particles when the emit direction is calculated. |
+| Initial velocity | This option is available when Movement co-ordinate type is set to Polar. Enter X and Y values that specify the initial velocity of the emitted particles. |
+| Initial velocity variation | This option is available when Movement co-ordinate type is set to Polar. Enter X and Y values that specify the variation in the initial velocity of the emitted particles. |
+| Acceleration co-ordinate type |  Select the type of coordinate space that is used for particle acceleration:   |
 | Acceleration | Enter X and Y values that specify the acceleration of each emitted particle. |
 | Orientation velocity based | Point the top of each particle toward the current velocity vector. |
 | Initial orientation velocity based | Point the top of each particle toward the initial velocity vector. |
@@ -103,7 +103,7 @@ You can use a **Particle Emitter** component to emit two\-dimensional particles 
 | Multiplier |  Specify a value from `-100` through `100` to multiply against the value that this timeline controls.  For example, if the speed value is `50.0` and the speed multiplier for a specific keyframe is `2.0`, the value of speed at the specified keyframe is `100`.  |
 | In tangent |  Controls the in tangent for the current keyframe. Select one of the following:    |
 | Out tangent |  Controls the out tangent for the current keyframe. Select one of the following:    |
-| Ease In |  Specifies a gradual approach of a curve to a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 (x\-cubed) curve at its origin.  |
-| Ease Out |  Specifies a gradual retreat of a curve from a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 (x\-cubed) curve at its origin.  |
+| Ease In |  Specifies a gradual approach of a curve to a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 (x-cubed) curve at its origin.  |
+| Ease Out |  Specifies a gradual retreat of a curve from a flat tangent.  For example, a keyframe that specifies **Ease In** for **In tangent** and **Ease Out** for **Out tangent** looks like the flattened tangent of an x3 (x-cubed) curve at its origin.  |
 | Linear | Specifies that the curve moves linearly from the keyframe towards the next or previous keyframe. |
 | Step | Specifies that the curve jumps from the current keyframe value to the next or previous keyframe value. |

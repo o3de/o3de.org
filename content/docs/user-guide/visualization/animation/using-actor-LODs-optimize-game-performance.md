@@ -5,7 +5,7 @@ title: Using Actor LODs to Optimize Game Performance
 
 {{< preview-migrated >}}
 
-You can use levels of detail ([LODs](/docs/userguide/ly-glos-chap#lod)) to optimize the rendering performance of games. This is especially true for large in\-game worlds, which are constrained by hardware, frame rate, and the real\-time rendering limits. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera. To further reduce draw calls, lower LODs have multiple textures combined into one texture.
+You can use levels of detail ([LODs](/docs/userguide/ly-glos-chap#lod)) to optimize the rendering performance of games. This is especially true for large in-game worlds, which are constrained by hardware, frame rate, and the real-time rendering limits. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera. To further reduce draw calls, lower LODs have multiple textures combined into one texture.
 
 ## Using Actor LODs in O3DE
 
@@ -28,7 +28,7 @@ Note the following requirements:
 **Skeletons**
 + To skin each LOD mesh to a different skeleton, create a separate skeletal hierarchy.
 + For each LOD, the skeleton hierarchy must remain the same. Remove leaf bones first and work up the chain.
-+ In lower LODs, you cannot remove in\-between bones. For instance, if you have `Spine1`, `Spine2` and `Spine3` for an `LOD` of `0`, you cannot delete `Spine2` and leave `Spine1` and `Spine3`.
++ In lower LODs, you cannot remove in-between bones. For instance, if you have `Spine1`, `Spine2` and `Spine3` for an `LOD` of `0`, you cannot delete `Spine2` and leave `Spine1` and `Spine3`.
 
 **Materials or Textures**
 + Each actor requires a separate material group.

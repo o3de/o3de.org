@@ -28,7 +28,7 @@ You define your font's properties in the `.font` file, which is an XML file. The
 </fontshader>
 ```
 
-The default UI font XML uses the Vera font. It defines a font texture that can hold 128 unique character or glyphs that are 32x32 pixels. The font includes two representations that are defined with the effect tags `default` and `drop_shadow`. For the `default` effect, the font is rendered as is. For the `drop_shadow` effect, the font is first rendered as is. A second render pass produces the font in black with a 1\-pixel offset from the first pass. This creates a basic shadowing effect of the characters.
+The default UI font XML uses the Vera font. It defines a font texture that can hold 128 unique character or glyphs that are 32x32 pixels. The font includes two representations that are defined with the effect tags `default` and `drop_shadow`. For the `default` effect, the font is rendered as is. For the `drop_shadow` effect, the font is first rendered as is. A second render pass produces the font in black with a 1-pixel offset from the first pass. This creates a basic shadowing effect of the characters.
 
 **Note**
 Fonts can be part of a font family \(with a `.fontfamily` extension\), though you can use a standalone font that isn't in a font family. For more information on font families, see [Creating Font Families](/docs/user-guide/interactivity/user-interface/fonts/create-font-families.md).
@@ -61,11 +61,11 @@ Most of these attributes have a direct impact on font rendering quality. For mor
 | Attribute | Example | Description |
 | --- | --- | --- |
 | path |  <pre><font path="Vera.ttf" ... /></pre>  | Type: String Path to TTF or OTF font file asset.  |
-| fontsize |  <pre>< ... fontsize="32"/></pre>  | Type: Integer Defines in pixels the square size of the slots used to store glyphs (characters) in the font texture. For pixel\-perfect render quality, this size should match the size specified when rendering the font.   |
+| fontsize |  <pre>< ... fontsize="32"/></pre>  | Type: Integer Defines in pixels the square size of the slots used to store glyphs (characters) in the font texture. For pixel-perfect render quality, this size should match the size specified when rendering the font.   |
 | w |  <pre>< ... w="512" h="256" /></pre>  | Type: Integer Defines in pixels the width of the font texture. |
 | h |  <pre>< ... w="512" h="256" /></pre>  | Type: Integer Defines in pixels the width of the font texture. |
 | widthslots |  <pre><font path="Vera.ttf" w="512" h="512" widthslots="8" heightslots="8" /></pre>  | Type: Integer Default: 16 Defines the number of character or glyph slots along the X axis of the font texture. In the example, the font texture is 512x512. The width and height slots are set to 8. This gives a space of 64x64 for each character. |
-| heightslots |  <pre>< ... widthslots="8" heightslots="8" /></pre>  | Type: Integer Default: 8 Defines the number of character or glyph slots along the y\-axis of the font texture. |
+| heightslots |  <pre>< ... widthslots="8" heightslots="8" /></pre>  | Type: Integer Default: 8 Defines the number of character or glyph slots along the y-axis of the font texture. |
 | sizeratio |  <pre>< ... sizeratio="0.6" /></pre>  | Type: Float Default: 0.8 Applies uniform scaling to characters or glyphs when rendered into the font texture. The default scaling is usually ideal. You can adjust this value for fonts with unusual proportions, such as very long or wide fonts. |
 | sizebehavior |  <pre>< ... sizebehavior="rerender" /></pre>  | Type: String Value: rerender Renders text again at its new size. Improves font appearance quality when the text's rendered size differs from the font texture's glyph slot size. When text size changes, a simple transformation scale is applied. Quality degrades noticeably when text becomes larger or smaller. Rerendered text can improve that quality, depending on the font. Because rerendering takes time, it's not ideal for some cases, such as for animated text that changes sizes often. |
 | hintbehavior |  <pre>< ... hintbehavior="nohinting" /></pre>  | Type: String Configures hinting properties for the font. Possible values:  |

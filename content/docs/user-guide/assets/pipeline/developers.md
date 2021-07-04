@@ -74,7 +74,7 @@ As an example, the following steps code a tool that provides a list of all avail
 
 **To make a list of available sprite assets**
 
-1. Use the `gEnv->pCryPak` file\-finding functions to search for all asset IDs. Usually, since `@assets@` is assumed, just the directory name or extensions are all that is required, but aliases are accepted.
+1. Use the `gEnv->pCryPak` file-finding functions to search for all asset IDs. Usually, since `@assets@` is assumed, just the directory name or extensions are all that is required, but aliases are accepted.
 
 1. Once you have the asset ID list, call `GamePathToFullPath` or `ConvertRelativeAssetPathToFullPath` to convert the list to full source names.
 
@@ -96,4 +96,4 @@ To do this, do the following:
 
   Here is an example: `BusConnect(AZ_CRC("dds")); // Be notified of all DDS file changes.`
 
-Once you get your live reload notification, it contains an asset ID. Consider queueing the request for later if you are in a thread\-sensitive module.
+Once you get your live reload notification, it contains an asset ID. Consider queueing the request for later if you are in a thread-sensitive module.

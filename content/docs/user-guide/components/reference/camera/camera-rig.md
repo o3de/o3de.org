@@ -15,11 +15,11 @@ The **Camera Rig** component has the following properties:
 [ **Target acquirers**](#target-acquirers)
 Array of behaviors that define how a camera selects a target. The rig tries each acquirer in the order listed until one successfully finds a target.
 
-[ **Look\-at behaviors**](#look-at-behaviors)
-Array of behaviors that modify the look\-at target transform. The rig runs each in order to generate a final target transform.
+[ **Look-at behaviors**](#look-at-behaviors)
+Array of behaviors that modify the look-at target transform. The rig runs each in order to generate a final target transform.
 
 [ **Transform behaviors**](#transform-behaviors)
-Array of behaviors that modify the camera transform based on the look\-at target transform. The rig runs each in order before setting the camera component's transform.
+Array of behaviors that modify the camera transform based on the look-at target transform. The rig runs each in order before setting the camera component's transform.
 
 ## Target Acquirers 
 
@@ -55,9 +55,9 @@ If selected, uses the target's rotation when determining camera behavior.
 **Use Target Position**
 If selected, uses the target's position when determining camera behavior.
 
-## Look\-at Behaviors 
+## Look-at Behaviors 
 
-**Look\-at Behaviors** changes the target transform to modify camera behavior.
+**Look-at Behaviors** changes the target transform to modify camera behavior.
 
 ### OffsetPosition 
 
@@ -65,13 +65,13 @@ Use **OffsetPosition** to change the position of the target's transform. Positio
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/offset-position.png)
 
-**Look\-at Behaviors** has the following properties:
+**Look-at Behaviors** has the following properties:
 
 **Positional Offset**
 Vector displacement of the target transform's position.
 
 **Offset Is Relative**
-If selected, uses local coordinates. If deselected, uses world\-basis vectors for the offset.
+If selected, uses local coordinates. If deselected, uses world-basis vectors for the offset.
 
 ### Rotate Camera Target 
 
@@ -95,7 +95,7 @@ Multiplier for new input values to scale the speed of rotation.
 
 ### SlideAlongAxisBasedOnAngle 
 
-Use **SlideAlongAxisBasedOnAngle** to modify the position of the look\-at target based on an angle. For example, say that you set the target to slide along the forward and backward axis based on pitch. As the target pitched down, then the position would move ahead of the target. If the target is attached to the character, then every time the target looked down, it would be ahead of the character. Every time it looked up, it would be behind the character.
+Use **SlideAlongAxisBasedOnAngle** to modify the position of the look-at target based on an angle. For example, say that you set the target to slide along the forward and backward axis based on pitch. As the target pitched down, then the position would move ahead of the target. If the target is attached to the character, then every time the target looked down, it would be ahead of the character. Every time it looked up, it would be behind the character.
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/slide-along-axis-based-on-angle.png)
 
@@ -120,7 +120,7 @@ Select a vector component to ignore: **None**, **X**, **Y**, or **Z**.
 The maximum slide along the axis when the angle reaches 90 degrees.
 
 **Max Negative Slide Distance**
-The maximum slide along the axis when the angle reaches \-90 degrees.
+The maximum slide along the axis when the angle reaches -90 degrees.
 
 ## Transform Behaviors 
 
@@ -132,7 +132,7 @@ The maximum slide along the axis when the angle reaches \-90 degrees.
 
 ### FollowTargetFromAngle 
 
-**FollowTargetFromAngle** causes the camera to follow the target from a specified angle. This feature works well for top\-down, isometric, and side scrolling cameras.
+**FollowTargetFromAngle** causes the camera to follow the target from a specified angle. This feature works well for top-down, isometric, and side scrolling cameras.
 
 ![\[Image NOT FOUND\]](/images/user-guide/component/follow-target-from-angle.png)
 

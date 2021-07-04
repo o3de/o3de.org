@@ -46,9 +46,9 @@ You can capture image frames when a sequence is played in game mode.
 
 1. In O3DE Editor, choose **Tools**, **Track View**.
 
-1. In the Track View, right\-click the **Director** node and choose **Add Track**, **Capture**.
+1. In the Track View, right-click the **Director** node and choose **Add Track**, **Capture**.
 
-1. Double\-click the created track to add a capture keyframe. You can set the following key properties:
+1. Double-click the created track to add a capture keyframe. You can set the following key properties:
 ****
 
 

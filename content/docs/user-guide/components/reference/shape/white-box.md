@@ -14,7 +14,7 @@ The **White Box** component is a tool you can use to sketch 3D proxy meshes in O
 
 ![\[White Box component interface.\]](/images/user-guide/component/whitebox/white-box-A.gif)
 
-Because **White Box** is implemented as a component, you can create well\-defined entities that accurately represent the size, shape, and function of the final production entity in O3DE Editor before investing the time and effort into building finished models for your entity. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components. White box meshes can also be exported to `.obj` files and used as a template in a third\-party 3D modeling application to build final production assets.
+Because **White Box** is implemented as a component, you can create well-defined entities that accurately represent the size, shape, and function of the final production entity in O3DE Editor before investing the time and effort into building finished models for your entity. Meshes created with **White Box** can be saved to disk as white box mesh assets \(`.wbm`\) and reused in other **White Box** components. White box meshes can also be exported to `.obj` files and used as a template in a third-party 3D modeling application to build final production assets.
 
 **Topics**
 + [White Box properties](#component-white-box-properties)
@@ -42,7 +42,7 @@ Save the proxy mesh to a white box mesh \(`.wbm`\) asset. You can load the saved
 ![\[White Box .wbm mesh instancing animation.\]](/images/user-guide/component/whitebox/white-box-mesh-instancing.gif)
 
 ****Tint****
-Set a tint color for the white box mesh. Choose the swatch to open a color picker, or enter comma separated red, blue, and green 8\-bit values into the field to set a tint color for the **White Box** component.
+Set a tint color for the white box mesh. Choose the swatch to open a color picker, or enter comma separated red, blue, and green 8-bit values into the field to set a tint color for the **White Box** component.
 
 ****Use Texture****
 Enable **Use Texture **to display a checkerboard texture on the white box mesh. Each square is a half meter in size, and the texture is projected on the local X, Y, and Z axes of the mesh. This maintains an easy reference for the size of the proxy mesh, regardless of how the entity is oriented in the level.
@@ -118,7 +118,7 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 ![\[White Box scale edge animation.\]](/images/user-guide/component/whitebox/white-box-scale-edge.gif)
 
-****Non\-uniform scale edge****
+****Non-uniform scale edge****
 
 1. Select (left click) an edge.
 

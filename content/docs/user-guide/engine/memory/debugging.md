@@ -27,7 +27,7 @@ To avoid performance issues, debugging features are disabled by default.
 
 Because of certain limitations, the HPHA debugger can help find memory issues but cannot guarantee their absence. When using HPHA memory debugging features, note the following:
 + For the HPHA debugger to work, allocations must use the HPHA allocator. HPHA memory debugging does not cover allocations created by other allocators such as a `PoolAllocator`.
-+ Most of the HPHA memory debugging features assert when they detect a memory issue. When possible, the debugger prints a stack trace that indicates where the allocation happened. The stack trace is printed into the debugger output (not to the log) so that Visual Studio can recognize it. This makes it possible to double\-click a trace and navigate directly to the corresponding file and line number.
++ Most of the HPHA memory debugging features assert when they detect a memory issue. When possible, the debugger prints a stack trace that indicates where the allocation happened. The stack trace is printed into the debugger output (not to the log) so that Visual Studio can recognize it. This makes it possible to double-click a trace and navigate directly to the corresponding file and line number.
 + The HPHA memory debugger does not currently cover the following memory issues:
   + Buffer underflows.
   + "Far" buffer overflows. When detecting buffer overflows, O3DE detects changes up to 16 bytes after the memory block. If a buffer overflow writes on byte 17, O3DE does not detect it.

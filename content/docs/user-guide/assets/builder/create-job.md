@@ -78,7 +78,7 @@ This structure defines source asset file dependency information that the builder
 
 The `sourceFileDependencyPath` field can be either be a relative path from the assets folder, or an absolute path.
 
-The `sourceFileDependencyUUID` field is the source asset file UUID part of the asset ID, without the sub\-id.
+The `sourceFileDependencyUUID` field is the source asset file UUID part of the asset ID, without the sub-id.
 
 **Important**
 The builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Procesor**. Either one will be sufficient.
@@ -106,12 +106,12 @@ azlmbr.asset.builder.SourceFileDependency_Wildcards
 
 **JobDescriptor**
 
-`JobDescriptor` is used by the builder to store job\-related information.
+`JobDescriptor` is used by the builder to store job-related information.
 
 The `priority` field is the value for the jobs within the job queue. A priority value less than **0** means the job's priority is not considered. A priority value of **0** or greater prioritizes the job by value. The higher the value, the higher priority.
 
 **Note**
-Priorities for critical and non\-critical jobs are set separately.
+Priorities for critical and non-critical jobs are set separately.
 
 The `checkExclusiveLock` field is a flag to determine whether **Asset Processor** needs to check the source asset file for exclusive lock before processing the job. **Asset Processor** will lock and unlock the source asset file to ensure it is not opened by another process. This prevents premature processing of some source asset files that are opened for writing, but have zero bytes for longer than the modification threshold. This will time out if the **Asset Processor** cannot get an exclusive lock.
 

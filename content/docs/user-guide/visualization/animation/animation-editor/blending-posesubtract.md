@@ -17,7 +17,7 @@ With the **Pose Subtract** node, you can generate an additive pose. You can then
 
 1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md).
 
-1. Double\-click the blend tree node that you created.
+1. Double-click the blend tree node that you created.
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 
@@ -30,7 +30,7 @@ With the **Pose Subtract** node, you can generate an additive pose. You can then
    Connect nodes to the following inputs and output:
    + **Pose 1** - The base pose.
    + **Pose 2** - The pose to be subtracted from the base pose.
-   + **Output Pose** - The result of the pose subtraction (**Pose 1** \- **Pose 2**).
+   + **Output Pose** - The result of the pose subtraction (**Pose 1** - **Pose 2**).
 
 ## Pose Subtract Node Attributes 
 

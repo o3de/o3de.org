@@ -12,7 +12,7 @@ You can use a layout grid component to organize child elements into a uniform gr
 
 
 
-To see an in\-game example of a completed canvas with the **LayoutGrid** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Grid**. You can view examples of different fill patterns. Press **Esc** to exit the game.
+To see an in-game example of a completed canvas with the **LayoutGrid** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Grid**. You can view examples of different fill patterns. Press **Esc** to exit the game.
 
 To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Layout ` directory and open the `SimpleGrid.uicanvas` file.
 
@@ -31,8 +31,8 @@ Type values in pixels to adjust spacing among elements.
 Type values in pixels to specify the size of the child elements.
 ****Order****
  Do the following as appropriate:
-+  For **Horizontal**, select **Left\-to\-Right** or **Right\-to\-Left** to determine the order in which elements appear horizontally.
-+ For **Vertical**, select **Top\-to\-Bottom** or **Bottom\-to\-Top** to determine the order in which elements appear vertically.
++  For **Horizontal**, select **Left-to-Right** or **Right-to-Left** to determine the order in which elements appear horizontally.
++ For **Vertical**, select **Top-to-Bottom** or **Bottom-to-Top** to determine the order in which elements appear vertically.
 + For **Starting With**, select **Horizontal** or **Vertical** to determine whether elements appear horizontally or vertically first.
 ****Child Alignment****
 If the layout's children don't occupy all the available layout space, this setting determines how the children are aligned.

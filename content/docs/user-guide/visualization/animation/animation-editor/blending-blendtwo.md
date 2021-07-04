@@ -16,7 +16,7 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
 
 1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md).
 
-1. Double\-click the blend tree node that you created.
+1. Double-click the blend tree node that you created.
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 
@@ -43,7 +43,7 @@ The **Extraction Mode** for the **Blend Two** node is calculated as follows.
 + `T` = Target transform delta
 
 Root included in mask (or no mask provided):
-+ **Blend** = `S` + \(`T` \- `S`\) \* weight
++ **Blend** = `S` + \(`T` - `S`\) \* weight
 + **Source** = `S`
 + **Target** = `T`
 

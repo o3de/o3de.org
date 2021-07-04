@@ -60,7 +60,7 @@ See the following tips for working in the **Curve Editor**:
 
 **To edit multiple elements at once**
 
-  1. In the **Node** browser, select the parent track or sub\-track.
+  1. In the **Node** browser, select the parent track or sub-track.
 
   1. Drag the spline key to a different point on the timeline.
 

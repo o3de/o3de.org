@@ -12,7 +12,7 @@ Compiled O3DE games start up in the following sequence:
    + Name of the game, and optionally, the name of the game DLL, if it differs from the game name.
    + Whether or not to connect to the Asset Processor on startup or listen for an incoming connection instead.
    + Whether or not to wait for an established connection before proceeding.
-   + Whether or not to enable the virtual file system (VFS), which allows you to read assets remotely from a connected computer instead of having to deploy them to the game device. This also is required for live reloading to function on non\-PC operating systems.
+   + Whether or not to enable the virtual file system (VFS), which allows you to read assets remotely from a connected computer instead of having to deploy them to the game device. This also is required for live reloading to function on non-PC operating systems.
    + Which kind of assets to load. For example, you could configure the Android runtime to load `es3` assets, or `pc` assets, or `metal` assets. This determines which directory the game looks in for the assets so that the appropriate directory is also used for VFS.
 
 1. The `lyconfig_default.xml` file is read.

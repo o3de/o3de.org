@@ -6,7 +6,7 @@ title: Full Screen Effect Nodes
 
 {{< preview-migrated >}}
 
-Full Screen Effect nodes create post\-processing effects for a sequence. They are added by using the context menu for a Sequence or Director node.
+Full Screen Effect nodes create post-processing effects for a sequence. They are added by using the context menu for a Sequence or Director node.
 
 **Topics**
 + [Radial Blur Node](/docs/user-guide/visualization/cinematics/track-view/nodes-blur.md)

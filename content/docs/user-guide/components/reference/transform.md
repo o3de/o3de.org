@@ -152,10 +152,10 @@ None
 
 ### SetWorldX 
 
-Sets the entity's translation x\-axis coordinate in world space.
+Sets the entity's translation x-axis coordinate in world space.
 
 **Parameters**
-X\-axis coordinate in world space.
+X-axis coordinate in world space.
 Type: Float
 
 **Return**
@@ -163,10 +163,10 @@ None
 
 ### SetWorldY 
 
-Sets the entity's translation y\-axis coordinate in world space.
+Sets the entity's translation y-axis coordinate in world space.
 
 **Parameters**
-Y\-axis coordinate in world space.
+Y-axis coordinate in world space.
 Type: Float
 
 **Return**
@@ -174,10 +174,10 @@ None
 
 ### SetWorldZ 
 
-Sets the entity's translation z\-axis coordinate in world space.
+Sets the entity's translation z-axis coordinate in world space.
 
 **Parameters**
-Z\-axis coordinate in world space.
+Z-axis coordinate in world space.
 Type: Float
 
 **Return**
@@ -185,43 +185,43 @@ None
 
 ### GetWorldX 
 
-Gets the entity's translation x\-axis coordinate in world space.
+Gets the entity's translation x-axis coordinate in world space.
 
 **Parameters**
 None
 
 **Return**
-X\-axis coordinate in world space.
+X-axis coordinate in world space.
 Type: Float
 
 ### GetWorldY 
 
-Gets the entity's translation y\-axis coordinate in world space.
+Gets the entity's translation y-axis coordinate in world space.
 
 **Parameters**
 None
 
 **Return**
-Y\-axis coordinate in world space.
+Y-axis coordinate in world space.
 Type: Float
 
 ### GetWorldZ 
 
-Sets the entity's translation z\-axis coordinate in world space.
+Sets the entity's translation z-axis coordinate in world space.
 
 **Parameters**
 None
 
 **Return**
-Z\-axis coordinate in world space.
+Z-axis coordinate in world space.
 Type: Float
 
 ### SetLocalX 
 
-Sets the entity's translation x\-axis coordinate in local space.
+Sets the entity's translation x-axis coordinate in local space.
 
 **Parameters**
-X\-axis coordinate in local space.
+X-axis coordinate in local space.
 Type: Float
 
 **Return**
@@ -229,10 +229,10 @@ None
 
 ### SetLocalY 
 
-Sets the entity's translation y\-axis coordinate in local space.
+Sets the entity's translation y-axis coordinate in local space.
 
 **Parameters**
-Y\-axis coordinate in local space.
+Y-axis coordinate in local space.
 Type: Float
 
 **Return**
@@ -240,10 +240,10 @@ None
 
 ### SetLocalZ 
 
-Sets the entity's translation z\-axis coordinate in local space.
+Sets the entity's translation z-axis coordinate in local space.
 
 **Parameters**
-Z\-axis coordinate in local space.
+Z-axis coordinate in local space.
 Type: Float
 
 **Return**
@@ -251,40 +251,40 @@ None
 
 ### GetLocalX 
 
-Gets the entity's translation x\-axis coordinate in local space.
+Gets the entity's translation x-axis coordinate in local space.
 
 **Parameters**
 None
 
 **Return**
-X\-axis coordinate in local space.
+X-axis coordinate in local space.
 Type: Float
 
 ### GetLocalY 
 
-Gets the entity's y\-axis coordinate in local space.
+Gets the entity's y-axis coordinate in local space.
 
 **Parameters**
 None
 
 **Return**
-Y\-axis coordinate in local space.
+Y-axis coordinate in local space.
 Type: Float
 
 ### GetLocalZ 
 
-Gets the entity's z\-axis coordinate in local space.
+Gets the entity's z-axis coordinate in local space.
 
 **Parameters**
 None
 
 **Return**
-Z\-axis coordinate in local space.
+Z-axis coordinate in local space.
 Type: Float
 
 ### GetWorldRotation 
 
-Gets the angles in radians for each principle axis around which the world transform is rotated in the following order: z\-axis, y\-axis, x\-axis.
+Gets the angles in radians for each principle axis around which the world transform is rotated in the following order: z-axis, y-axis, x-axis.
 
 **Parameters**
 None
@@ -306,7 +306,7 @@ Type: Quaternion
 
 ### SetLocalRotation 
 
-Sets the local rotation around each principle axes in the following order: z\-axis, y\-axis, x\-axis.
+Sets the local rotation around each principle axes in the following order: z-axis, y-axis, x-axis.
 
 **Parameters**
 The Vector3 denoting radian angles of the rotations around each principle axis.
@@ -328,10 +328,10 @@ None
 
 ### RotateAroundLocalX 
 
-Rotates around the local x\-axis for a radian angle.
+Rotates around the local x-axis for a radian angle.
 
 **Parameters**
-The radian angle to rotate around the local x\-axis.
+The radian angle to rotate around the local x-axis.
 Type: Float
 
 **Return**
@@ -339,10 +339,10 @@ None
 
 ### RotateAroundLocalY 
 
-Rotates around the local y\-axis for a radian angle.
+Rotates around the local y-axis for a radian angle.
 
 **Parameters**
-The radian angle to rotate around the local y\-axis.
+The radian angle to rotate around the local y-axis.
 Type: Float
 
 **Return**
@@ -350,10 +350,10 @@ None
 
 ### RotateAroundLocalZ 
 
-Rotates around the local z\-axis for a radian angle.
+Rotates around the local z-axis for a radian angle.
 
 **Parameters**
-The radian angle to rotate around the local z\-axis.
+The radian angle to rotate around the local z-axis.
 Type: Float
 
 **Return**
@@ -361,7 +361,7 @@ None
 
 ### GetLocalRotation 
 
-Gets angles in radian for each principle axis around which the local transform is rotated in the following order: z\-axis, y\-axis, x\-axis.
+Gets angles in radian for each principle axis around which the local transform is rotated in the following order: z-axis, y-axis, x-axis.
 
 **Parameters**
 None

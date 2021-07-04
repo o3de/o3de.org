@@ -27,10 +27,10 @@ title: FBX Settings actor export
 
 1. Set the properties for each actor group. Add modifiers to each actor group as required. For information on **Acttor group** properties and modifiers, see [FBX Settings Actors tab](/docs/user-guide/assets/fbx-settings/settings-actor-tab.md).
 
-1. **Optional** \- Set up PhysX colliders for your meshes. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md)
+1. **Optional** - Set up PhysX colliders for your meshes. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md)
 
 1. Choose the **Update** button at the bottom right of the **FBX Settings** window. A **File progress** window opens to display information about asset processing. Choose **OK** to close the **File progress** window. This step creates or updates the `.assetinfo` file. **Asset Processor** automatically processes the `.fbx` file and generates the runtime `.actor` files, `.pxmesh` files for PhysX, and `.mtl` files for materials.
 
 1. Close the **FBX Settings** window.
 **Note**
-When you close **FBX Settings** after making changes, you might see a pop\-up window warning of unsaved changes. This is a known issue and can be disregarded.
+When you close **FBX Settings** after making changes, you might see a pop-up window warning of unsaved changes. This is a known issue and can be disregarded.

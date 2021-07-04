@@ -19,7 +19,7 @@ The following are the prerequisites and limitations for using the O3DE overrun d
 
 ## When to Enable Overrun Detection 
 
-The most common indicator of overwritten memory is a crash that occurs with no obvious explanation. The crash frequently occurs in a low\-level system or structure, such as an `AZStd::` container, or within the memory allocator. The memory overrun is not an out\-of\-memory error.
+The most common indicator of overwritten memory is a crash that occurs with no obvious explanation. The crash frequently occurs in a low-level system or structure, such as an `AZStd::` container, or within the memory allocator. The memory overrun is not an out-of-memory error.
 
 ## Enabling Overrun Detection 
 

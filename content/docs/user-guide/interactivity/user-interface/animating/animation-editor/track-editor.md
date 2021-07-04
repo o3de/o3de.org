@@ -41,13 +41,13 @@ When you create an animation, key values are automatically recorded. Using the *
 + Hold **Alt** as you drag the key to a new time on the timeline.
 
 **To delete a key**
-+ Right\-click a key and click **Delete**.
++ Right-click a key and click **Delete**.
 
 **To copy a key**
-+ Right\-click a key and click **Copy**.
++ Right-click a key and click **Copy**.
 
 **To paste a key**
-+ Right\-click in the timeline and click **Paste**. Move the key to the desired point on the timeline, then click to place.
++ Right-click in the timeline and click **Paste**. Move the key to the desired point on the timeline, then click to place.
 
 The **Track Editor**'s toolbar features a variety of tools to improve your workflow efficiency when editing tracks. Pause over each icon to reveal the tooltips.
 
@@ -85,9 +85,9 @@ The **Track Editor** features a timeline along its top edge. To preview your ent
 
 **To limit play preview in the Track Editor**
 
-1. In the timeline, at the start of your preferred preview time, right\-click to mark the time with a red triangle.
+1. In the timeline, at the start of your preferred preview time, right-click to mark the time with a red triangle.
 
-1. In the timeline, at the end of your preferred preview time, right\-click again to mark the end time with a red triangle.
+1. In the timeline, at the end of your preferred preview time, right-click again to mark the end time with a red triangle.
 
 1. Click the **Play** button to preview your animation in the time frame specified.
 

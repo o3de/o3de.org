@@ -10,14 +10,14 @@ Use the following best practices when you create your character for the **Animat
 
 ## Setting up the World Coordinate System and Root Joint 
 
-If you use the y\-up or z\-up world coordinate system in your DCC, use the following guidelines to set up your character:
+If you use the y-up or z-up world coordinate system in your DCC, use the following guidelines to set up your character:
 + Use a root joint for your skinned mesh. This is required to ensure that motion extraction works properly in the **Animation Editor**.
 + Do not use transforms, groups, or parent nodes in the hierarchy above your root joint. The root joint must be the top parent of the skeletal hierarchy to ensure that motion extraction works properly.
 + Set the root joint position at the origin: 0,0,0.
 + Set the root joint rotation and orientation to 0,0,0.
 + Orient your character so that the front orthographic camera view shows the front of your character.
 + When using the O3DE **Animation Editor**, ensure that your imported character faces the positive y direction. The Asset Processor automatically adds a **Coordinate system change** modifier in the `.fbx` settings. The default value for **Facing Direction** is **Rotate 180 degrees around the up axis**. This enables the game entity's forward direction and character to point in the same direction.
-+ If your character faces the negative y direction after you import the character into the **Animation Editor**, in the **Asset Browser** right\-click your `.fbx` file and choose **Edit Settings**. For the **Coordinate system change** modifier, set **Facing Direction** to **Do Nothing**.
++ If your character faces the negative y direction after you import the character into the **Animation Editor**, in the **Asset Browser** right-click your `.fbx` file and choose **Edit Settings**. For the **Coordinate system change** modifier, set **Facing Direction** to **Do Nothing**.
 + Use the same **Coordinate system change** modifier for the actor and each of the actor's motions. This is required to ensure that animations work properly in the **Animation Editor**.
 
 ## Setting up Skin Binding 
@@ -66,7 +66,7 @@ You must export and save your deformer weights in order to import the weight map
 
 1. Save the mesh envelope (skin).
 
-1. On the **Modify** tab, select the skin. Right\-click the skin and choose **Delete**.
+1. On the **Modify** tab, select the skin. Right-click the skin and choose **Delete**.
 
 1. On the **Utilities** tab, click **Reset XForm**.
 
@@ -76,7 +76,7 @@ You must export and save your deformer weights in order to import the weight map
 
 1. Click **Collapse Selected**.
 
-1. On the **Modify** tab, right\-click **Editable Mesh**, and choose **Editable Poly**.
+1. On the **Modify** tab, right-click **Editable Mesh**, and choose **Editable Poly**.
 
 1. For **Modifier List**, choose **Skin**.
 

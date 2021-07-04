@@ -23,7 +23,7 @@ Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/inter
 
 1. Choose **Add Component**, **Mask**.
 
-1. Right\-click the parent element and then choose **New**, **Empty Element** to add a child element.
+1. Right-click the parent element and then choose **New**, **Empty Element** to add a child element.
 
 1. Select the child element and add to it an **Image** component.
 

@@ -99,7 +99,7 @@ Filters that you apply remain active until you remove them. You can either clear
 
 #### Using a Row's Context Menu 
 
-You can perform actions on each row in the **Asset Status** table. Right\-click on the row to expose a context menu with the following actions:
+You can perform actions on each row in the **Asset Status** table. Right-click on the row to expose a context menu with the following actions:
 
 **Show in Asset Browser**
 Highlights the asset in the Editor's Asset Browser. The Editor must be open and running.
@@ -218,7 +218,7 @@ The **Logs** tab displays events for the internal operation of the Asset Process
 
 ![\[Logs tab in Asset Processor.\]](/images/user-guide/asset_processor/logs.png)
 
-Right\-click to access the **Logs** context menu.
+Right-click to access the **Logs** context menu.
 
 ![\[Logs tab context menu in Asset Processor.\]](/images/user-guide/asset_processor/logs-context.png)
 
@@ -230,11 +230,11 @@ The **Shaders** tab displays a table with information related to shader compiler
 
 The **Connections** tab displays devices and programs that the Asset Processor is connected to and the platform they are running on. You can add approved connections in the **White Listed Connections** box and disapproved connections in **Rejected Connections**.
 
-In the **Active Connections** table's **Enabled** column, automatic connections are labeled as **Auto**. This means that it's a connection that the Asset Processor created. One example of such a connection is Asset Builder connections. User\-created connections show a check box. If you select the check box, the Asset Processor continually attempts to reconnect to those connections. You can use these custom connections for specialized cases, such as when connecting to mobile devices outside of a company's internal network.
+In the **Active Connections** table's **Enabled** column, automatic connections are labeled as **Auto**. This means that it's a connection that the Asset Processor created. One example of such a connection is Asset Builder connections. User-created connections show a check box. If you select the check box, the Asset Processor continually attempts to reconnect to those connections. You can use these custom connections for specialized cases, such as when connecting to mobile devices outside of a company's internal network.
 
 ![\[Connections tab in the Asset Processor.\]](/images/user-guide/asset_processor/connections-tab.png)
 
-You can edit or remove a user\-created connection, or add a connection.
+You can edit or remove a user-created connection, or add a connection.
 
 ![\[Edit a user-created connection in Asset Processor.\]](/images/user-guide/asset_processor/edit-connection.png)
 

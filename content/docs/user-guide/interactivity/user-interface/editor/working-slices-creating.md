@@ -11,9 +11,9 @@ You don't need to select all of the elements to go into the new slice. If you ju
 
 **To create a UI slice**
 
-1. In the **UI Editor**, in the **Hierarchy** pane or in the viewport, select the top\-level parent entity to include in the slice.
+1. In the **UI Editor**, in the **Hierarchy** pane or in the viewport, select the top-level parent entity to include in the slice.
 
-1. Right\-click the parent entity and choose **Make New Slice from Selection**.
+1. Right-click the parent entity and choose **Make New Slice from Selection**.
 
 1. Save the slice with a descriptive name.
 **Tip**

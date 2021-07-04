@@ -5,7 +5,7 @@ title: Configuring Font Rendering Quality
 
 {{< preview-migrated >}}
 
-O3DE's built\-in UI system, `LyShine`, renders text using font textures. The quality of the on\-screen text is affected by the font texture size, the number of character slots in the font texture, and the size of the text itself when rendered on the screen.
+O3DE's built-in UI system, `LyShine`, renders text using font textures. The quality of the on-screen text is affected by the font texture size, the number of character slots in the font texture, and the size of the text itself when rendered on the screen.
 
 Use the procedures in this section to configure font size and texture to achieve quality text rendering.
 
@@ -61,7 +61,7 @@ The number of unique characters in `AAAA` is 1, and the length of the string is 
 
 AABB
 
-Because only one character slot exists in the texture, it can't store both the glyphs for upper\-case 'A' and upper\-case 'B' and render them both in a frame. To render this string, you need to increase the number of slots using the `widthslots` and `heightslots` parameters.
+Because only one character slot exists in the texture, it can't store both the glyphs for upper-case 'A' and upper-case 'B' and render them both in a frame. To render this string, you need to increase the number of slots using the `widthslots` and `heightslots` parameters.
 
 Here is another example.
 
@@ -69,7 +69,7 @@ Here is another example.
 <font path="NotoSansSC-Regular.otf" w="4096" h="4096" widthslots="128" heightslots="128"/>
 ```
 
-In this example, the font texture size is `4096x4096`, and there are a total number of `128x128` (16,384) character slots. To determine the available size for each character, divide the texture size (4096x4096) by the number of slots (128x128) to yield a 32x32 pixel space per character. This configuration enables you to render over 16,000 unique characters at a 32\-pixel size in a single frame.
+In this example, the font texture size is `4096x4096`, and there are a total number of `128x128` (16,384) character slots. To determine the available size for each character, divide the texture size (4096x4096) by the number of slots (128x128) to yield a 32x32 pixel space per character. This configuration enables you to render over 16,000 unique characters at a 32-pixel size in a single frame.
 
 ## Font Size 
 
@@ -77,13 +77,13 @@ Because a font texture is divided into a logical grid, a simple calculation dete
 + Font texture width / `widthslots` = slot width
 + Font texture height / `heightslots` = slot height
 
-Where `widthslots` is the number of character slots across the width (x\-axis) of the font texture and `heightslots` is the number of character slots across the height (y\-axis) of the font texture.
+Where `widthslots` is the number of character slots across the width (x-axis) of the font texture and `heightslots` is the number of character slots across the height (y-axis) of the font texture.
 
 In the `default-ui.font` example in the previous section, the font texture size was 512x256. Assuming the character slots are at their default values (16x8):
 + 512 / 16 = 32 (slot width)
 + 256 / 8 = 32 (slot height)
 
-For a 512x256 sized font texture, you can render pixel\-perfect characters at 32x32 pixels.
+For a 512x256 sized font texture, you can render pixel-perfect characters at 32x32 pixels.
 
 Knowing these calculations helps you determine the right font texture size for the purposes of your game UI.
 

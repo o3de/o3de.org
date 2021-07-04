@@ -11,7 +11,7 @@ After you create your vegetation entity, you can designate your customized veget
 
 1. In the **Entity Inspector**, select the **BasicCoverage** entity.
 
-1. Right\-click the entity, choose **Create child entity**, and name it *Cylinder(PlacementTest)*.
+1. Right-click the entity, choose **Create child entity**, and name it *Cylinder(PlacementTest)*.
 
 1. Click **Add Component** and select the **Cylinder Shape** component.
 

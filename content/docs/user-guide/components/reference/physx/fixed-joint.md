@@ -36,7 +36,7 @@ When enabled, a line that represents the connection between the joint and its le
 **Select Lead on Snap**
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
 
-**Lead\-Follower Collide**
+**Lead-Follower Collide**
 When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
 
 **Edit**

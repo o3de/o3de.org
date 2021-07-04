@@ -31,7 +31,7 @@ To dock a window or toolbar to the editor window, drop it on the outer docking t
 ![\[Dock the window to the editor window and create a new column\]](/images/user-guide/editor-customize-docking-to-editor-window.gif)
 
 **To undock a window or toolbar**
-To undock a window or toolbar, drag the title bar and move the selection window away. Avoid the docking targets to prevent from accidentally redocking the window. To help prevent accidental docking, a brief delay occurs before a docking target becomes active. You can also undock a window by right\-clicking the title bar and choosing **Undock**.
+To undock a window or toolbar, drag the title bar and move the selection window away. Avoid the docking targets to prevent from accidentally redocking the window. To help prevent accidental docking, a brief delay occurs before a docking target becomes active. You can also undock a window by right-clicking the title bar and choosing **Undock**.
 
 ![\[Undock the window from the tabbed view\]](/images/user-guide/editor-customize-undocking-tabs.gif)
 
@@ -47,7 +47,7 @@ You can also give toolbars and menus your own personal touch.
 
 **To customize preset toolbars or create custom toolbars and menus**
 
-1.  Right\-click the top toolbar and choose **Customize**.
+1.  Right-click the top toolbar and choose **Customize**.
 
 1. In the **Customize** window, for **Toolbars**, create, rename, and delete any custom toolbars and menus, or reset them to the default settings.
 ![\[Toolbars tab in the Customize window\]](/images/user-guide/editor-customizing-toolbars.png)
@@ -76,10 +76,10 @@ You can change the general O3DE Editor settings and file settings.
 | Hide objects by config spec |  Hides objects as determined by the minimal specifications and configuration specifications.  |
 | Enable Source Control |  Enables Perforce version control.  |
 | External Layers: Save only Modified |  Saves only the modified external layers.  |
-| Freeze Read\-only external layer on Load |  Freezes the read\-only external layers when loading the level.  |
+| Freeze Read-only external layer on Load |  Freezes the read-only external layers when loading the level.  |
 | Frozen layers are selectable |  Allows objects in frozen layers to be selected.  |
 | Console Background |  Changes the background color for the console.  |
-| Auto\-load last level at startup |  Loads the level that was last loaded.  |
+| Auto-load last level at startup |  Loads the level that was last loaded.  |
 | Show Time in Console |  Displays the time in the console window.  |
 | Toolbar Icon Size |  Adjusts the toolbar icon size.  Default: `16` (32 pixels).  |
 | Stylus Mode |  Enables stylus mode for tablets and other pointing devices.  |
@@ -167,7 +167,7 @@ You can change the default settings for the viewport.
 | Synchronize 2D Viewports |  Enables synchronization of 2D viewports to move and correspond with each other.  |
 | Perspective View FOV |  Specifies the field of vision for the viewport.  |
 | Perspective View Aspect Ratio |  Specifies the length of the aspect ratio for the viewport, where height = `1`.  |
-| Enable Right\-Click Context Menu |  Enables the context menu that appears when you right\-click in the viewport.  |
+| Enable Right-Click Context Menu |  Enables the context menu that appears when you right-click in the viewport.  |
 | Show 4:3 Aspect Ratio Frame |  Displays a 4:3 aspect ratio frame to show what is visible in game mode.  |
 | Highlight Selected Geometry |  Highlights the selected geometry.  |
 | Highlight Selected Vegetation |  Highlights the selected vegetation.  |
@@ -188,7 +188,7 @@ You can change the default settings for the viewport.
 | Fill Selected Shapes |  Highlights the inside area of a selected shape.  |
 | Show Snapping Grid Guide |  Displays the grid in the viewport.  |
 | Display Dimension Figures |  Displays the measurement dimensions of selected assets; you must enable helpers.  |
-| Swap X/Y Axis |  Reverses the x\-axis and y\-axis.  |
+| Swap X/Y Axis |  Reverses the x-axis and y-axis.  |
 | Map Texture Resolution |  Specifies the resolution for the displayed map.  |
 | Enabled |  Displays object names.  |
 | Distance |  Specifies the visibility distance for text labels.  |
@@ -210,7 +210,7 @@ You can change the default settings for the viewport.
 | Camera Rotation Speed |  Specifies the speed of movement while you control the viewport camera.  |
 | Fast Movement Scale |  Specifies the multiplier for the camera speed; for example, a value of two doubles the movement speed of the camera.  |
 | Wheel Zoom Speed |  Specifies the speed of the camera zoom when using the mouse wheel.  |
-| Invert Y Axis |  Inverts the direction that the camera moves on the y\-axis when holding the right button on the mouse and moving the mouse up or down.  |
+| Invert Y Axis |  Inverts the direction that the camera moves on the y-axis when holding the right button on the mouse and moving the mouse up or down.  |
 | Invert Pan |  Inverts the direction that the camera moves when holding the middle button on the mouse and moving the mouse left or right.  |
 
 
@@ -218,9 +218,9 @@ You can change the default settings for the viewport.
 
 | Parameter | Description |
 | --- | --- |
-| Size |  Specifies the size of the xyz\-axes gizmo.  |
-| Text Labels |  Displays the xyz\-axes labels.  |
-| Max Count |  Specifies the maximum number of xyz\-axes gizmos that can display onscreen at one time.  |
+| Size |  Specifies the size of the xyz-axes gizmo.  |
+| Text Labels |  Displays the xyz-axes labels.  |
+| Max Count |  Specifies the maximum number of xyz-axes gizmos that can display onscreen at one time.  |
 | Helpers Scale |  Specifies the size of onscreen helpers, including AIAnchors, Tagpoints, and CoverSurfaces.  |
 | Tagpoint Scale Multiplier |  Specifies the scale of the tagpoint helper sphere and the base helper scale value.  |
 | Ruler Sphere Scale |  Specifies the scale of the locator sphere size when using the **Ruler** tool.  |

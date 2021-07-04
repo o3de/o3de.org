@@ -128,15 +128,15 @@ When enabled, removes materials that are present in the `.mtl` file that are not
 The **Mesh (Advanced)** modifier adds advanced mesh processing features such as a setting for vertex precision, which can save memory, and a setting to choose a vertex color stream to include in the processed mesh.
 
 ****Vertex Precision****
-Select the precision of the vertex data for the mesh group. **16\-bit** floats have a range of \-65,500 to 65,500 and 3 significant decimal places. Using **16\-bit** precision results in a much smaller file size for processed meshes, but vertices in the resulting `.cgf` file might shift slightly from their positions in the `.fbx` file. This position shift might be noticeable on large meshes, meshes with precise detail, or meshes that are placed far from the origin. Choose **32\-bit** precision for larger maximum values and more significant decimal places if the vertices appear to have shifted in the runtime asset.
-32\-bit precision vertices consume more resources and might result in a loss of performance on some platforms. Some platforms have native support for 16\-bit precision which can offer improved performance. Check the capabilities of your target platform to determine which precision offers the best results.
+Select the precision of the vertex data for the mesh group. **16-bit** floats have a range of -65,500 to 65,500 and 3 significant decimal places. Using **16-bit** precision results in a much smaller file size for processed meshes, but vertices in the resulting `.cgf` file might shift slightly from their positions in the `.fbx` file. This position shift might be noticeable on large meshes, meshes with precise detail, or meshes that are placed far from the origin. Choose **32-bit** precision for larger maximum values and more significant decimal places if the vertices appear to have shifted in the runtime asset.
+32-bit precision vertices consume more resources and might result in a loss of performance on some platforms. Some platforms have native support for 16-bit precision which can offer improved performance. Check the capabilities of your target platform to determine which precision offers the best results.
 
 ****Merge Meshes****
-When enabled, combines all sub\-meshes in the mesh group into a single mesh for optimization.
+When enabled, combines all sub-meshes in the mesh group into a single mesh for optimization.
 
 ****Use Custom Normals****
 Enable this property to use custom normals, otherwise, **Asset Processor** generates averaged normals.
-Normals are vertex attributes that define the surface direction of your meshes. Normals can be customized in third\-party modeling tools to make a mesh appear faceted, create hard edges between surfaces, or smooth the appearance of a surface. Custom normals can be included in `.fbx` files.
+Normals are vertex attributes that define the surface direction of your meshes. Normals can be customized in third-party modeling tools to make a mesh appear faceted, create hard edges between surfaces, or smooth the appearance of a surface. Custom normals can be included in `.fbx` files.
 
 ****Vertex color stream****
 If the mesh for this **Mesh group** contains a vertex color stream, it can be selected from this list to be processed.

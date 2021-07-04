@@ -11,7 +11,7 @@ By default, an entity starts as active in a level. When you create a game, you c
 
 1. In the **Entity Outliner** or the viewport, select an entity.
 
-1. In the **Entity Inspector**, choose the **Status** drop\-down menu, and select one of the following options:
+1. In the **Entity Inspector**, choose the **Status** drop-down menu, and select one of the following options:
    + **Start active** - Entity is active when the level starts.
    + **Start inactive** - Entity is inactive when the level starts.
    + **Editor only** - Entity is only active in editor mode.

@@ -6,7 +6,7 @@ title: O3DE UI reflected property editor
 
 {{< preview-migrated >}}
 
-A **reflected property editor** automatically lays out controls for user\-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](uidev-card-component.md) components.
+A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](uidev-card-component.md) components.
 
 ![\[component reflected property editor in card\]](/images/tools-ui/component-reflected-property-editor-in-card.png)
 

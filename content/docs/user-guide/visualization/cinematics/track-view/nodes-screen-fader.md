@@ -10,13 +10,13 @@ Use the **Screen Fader** node to fade the screen in and out in a scene.
 
 **To add a Screen Fader node in the Track View**
 
-1. In the Track View, right\-click the sequence (top node) or the **Director** node in the tree as applicable, and then choose **Add Screen Fader**.
+1. In the Track View, right-click the sequence (top node) or the **Director** node in the tree as applicable, and then choose **Add Screen Fader**.
 
 1. Click the **Fader** key under the **ScreenFader** node.
 
-1. Double\-click to position the key on its highlighted row in the timeline.
+1. Double-click to position the key on its highlighted row in the timeline.
 
-1. Double\-click the green marker, and under **Key Properties**, enter a value for **Value**.
+1. Double-click the green marker, and under **Key Properties**, enter a value for **Value**.
 
 
 

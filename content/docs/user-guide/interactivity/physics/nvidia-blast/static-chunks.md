@@ -11,13 +11,13 @@ weight: 500
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
 
-In some scenarios, you might want to partly destroy an entity. For example, you create a destructible wall, but want the bottom of the wall to remain in place as a static mesh with colliders after the top of the wall takes damage from a projectile and is destroyed. You can achieve this by adding **static** to the `name` primitive attribute of non\-root mesh chunks in Houdini.
+In some scenarios, you might want to partly destroy an entity. For example, you create a destructible wall, but want the bottom of the wall to remain in place as a static mesh with colliders after the top of the wall takes damage from a projectile and is destroyed. You can achieve this by adding **static** to the `name` primitive attribute of non-root mesh chunks in Houdini.
 
-## Make non\-root chunks static in NVIDIA Blast 
+## Make non-root chunks static in NVIDIA Blast 
 
-Use Houdini to make non\-root chunks static, which results in partial destruction of the asset.
+Use Houdini to make non-root chunks static, which results in partial destruction of the asset.
 
-**To make non\-root chunks static**
+**To make non-root chunks static**
 
 1. In Houdini, add an **Attribute String Edit** SOP to the network.
 

@@ -28,23 +28,23 @@ title: FBX Settings mesh export
 
 1. Set the properties for each mesh group and add modifiers to each mesh group as required. For information on **Mesh group** properties and modifiers, see [FBX Settings Meshes tab](/docs/user-guide/assets/fbx-settings/settings-meshes-tab.md).
 
-1. **Optional** \- Set up PhysX colliders for your meshes. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md)
+1. **Optional** - Set up PhysX colliders for your meshes. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md)
 
 1. Choose the **Update** button at the bottom right of the **FBX Settings** window. A **File progress** window opens to display information about asset processing. Choose **OK** to close the **File progress** window. This step creates or updates the `.assetinfo` file. **Asset Processor** automatically processes the `.fbx` file and generates the runtime `.cgf` files for meshes, `.pxmesh` files for PhysX, and `.mtl` files for materials.
 
 1. Close the **FBX Settings** window.
 **Note**
-When you close **FBX Settings** after making changes, you might see a pop\-up window warning of unsaved changes. This is a known issue and can be disregarded.
+When you close **FBX Settings** after making changes, you might see a pop-up window warning of unsaved changes. This is a known issue and can be disregarded.
 
 ## Mesh export video tutorial 
 
 ## Mesh export tips 
-+ Ensure that each object that needs to perform runtime collision has a PhysX mesh. Low\-resolution PhysX meshes work better than high\-resolution meshes. Primitives such as a cube, sphere, or capsule are best for optimal physics performance.
++ Ensure that each object that needs to perform runtime collision has a PhysX mesh. Low-resolution PhysX meshes work better than high-resolution meshes. Primitives such as a cube, sphere, or capsule are best for optimal physics performance.
 + The maximum number of vertices for any static geometry is 65,536. You can export a scene where the total number of vertices exceeds 65,536, but each static geometry piece can't exceed 65,536.
 
   If the combined mesh has more than 65,536 vertices, make the following changes in the **FBX Settings** tool:
 
-  1. In O3DE Editor, in the **Asset Browser**, right\-click the `.fbx` file and choose **Edit Settings**.
+  1. In O3DE Editor, in the **Asset Browser**, right-click the `.fbx` file and choose **Edit Settings**.
 
   1. In the **FBX Settings** tool, on the **Meshes** tab, click **Add Modifier** and then choose **Mesh (Advanced)**.
 

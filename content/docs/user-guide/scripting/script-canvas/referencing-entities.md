@@ -18,4 +18,4 @@ Nodes can contain an entity property. These properties tell the node which entit
 
 1. To clear the entity, position your pointer over the entity property and then click the **x** icon.
 
-1. To reset a property back to self, right\-double\-click the entity property and choose **Set to Self**.
+1. To reset a property back to self, right-double-click the entity property and choose **Set to Self**.

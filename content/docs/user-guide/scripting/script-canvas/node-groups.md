@@ -6,7 +6,7 @@ title: Grouping Nodes
 
 {{< preview-migrated >}}
 
-As your Script Canvas graphs grow in size, you can group nodes to logically organize parts of a script or reduce its visual complexity. Groups can be nested, named, and color\-coded.
+As your Script Canvas graphs grow in size, you can group nodes to logically organize parts of a script or reduce its visual complexity. Groups can be nested, named, and color-coded.
 
 ## Creating and Managing Node Groups 
 
@@ -14,44 +14,44 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
 
 1. Select the nodes that you want to group.
 
-1. Right\-click the graph and choose **Group** or **New group**.
+1. Right-click the graph and choose **Group** or **New group**.
 
 1. Enter a name for the node group, and then press **Enter**.
 
 **To create an empty group**
-+ Right\-click an empty portion of the graph, and then choose **New group**. You can expand the group's borders and add nodes to it as you would on the main graph.
++ Right-click an empty portion of the graph, and then choose **New group**. You can expand the group's borders and add nodes to it as you would on the main graph.
 
 **To collapse a group**
 + Do one of the following:
-  + Double\-click the group.
-  + Right\-click the group, and choose **Collapse**.
+  + Double-click the group.
+  + Right-click the group, and choose **Collapse**.
   + In **Node Inspector**, select the **Collapse Group** option.
 
   A collapsed group has a border with a dashed line.
 
 **To expand a group**
 + Do one of the following:
-  + Double\-click the group.
-  + Right\-click the group, and choose **Expand**.
+  + Double-click the group.
+  + Right-click the group, and choose **Expand**.
   + In **Node Inspector**, clear the **Collapse Group** option.
 ![\[Creating a node group in the Script Canvas editor.\]](/images/shared/shared-script-canvas-node-groups-1.gif)
 
 **To edit the name of a group**
 + Do one of the following:
-  + Right\-click the title bar of the expanded group, and choose **Edit group title**.
+  + Right-click the title bar of the expanded group, and choose **Edit group title**.
   + In **Node Inspector**, in the **Group Name** box, edit the name.
 
 **To resize a group's borders to fit the contents of the group**
 
-1. To reduce empty horizontal space within the group, double\-click the group's left or right border.
+1. To reduce empty horizontal space within the group, double-click the group's left or right border.
 
-1. To reduce empty vertical space within the group, double\-click the group's top or bottom border.
+1. To reduce empty vertical space within the group, double-click the group's top or bottom border.
 
 **To ungroup a group**
-+ Right\-click the group, and choose **Ungroup**.
++ Right-click the group, and choose **Ungroup**.
 
 **To delete a group**
-+ Right\-click the group, and choose **Delete**.
++ Right-click the group, and choose **Delete**.
 **Note**
 Deleting a group removes all of the nodes in the group and their connections to other nodes outside of the group. If you want to remove the group container but keep its nodes and connections, choose **Ungroup**.
 

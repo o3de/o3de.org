@@ -24,7 +24,7 @@ Creating a vegetation layer is the first and most basic step in creating your dy
 
    The **Vegetation Reference Shape** has no shape on its own. You must next create a child entity and add a **Shape **component, which you will reference in the **Vegetation Reference Shape**.
 
-1. Right\-click **BasicCoverage**, select **Create Child Entity**, and name it **TestBox**.
+1. Right-click **BasicCoverage**, select **Create Child Entity**, and name it **TestBox**.
 
 1. Select **TextBox**, click **Add Component**, and select the **Box Shape** component.
 

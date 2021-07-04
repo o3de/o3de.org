@@ -126,7 +126,7 @@ AssetBundlerBatch.exe compare ^
 
 **Note:**
 
-The previous command looks for files that have the `.xml` suffix for inclusion. You can replace it with any wildcard\- or regex\-based file pattern that you want to use for comparison.
+The previous command looks for files that have the `.xml` suffix for inclusion. You can replace it with any wildcard- or regex-based file pattern that you want to use for comparison.
 
 The following diagram shows the file pattern comparison operation.
 
@@ -213,7 +213,7 @@ Create the `.seed` and `.assetlist` files to use in your comparisons.
    --assetListFile mygame_v2.assetlist --print
    ```
 
-This last command should produce output that looks like this, enabled by the \-\-print flag:
+This last command should produce output that looks like this, enabled by the --print flag:
 
 ```
 Printing assets for Platform ( pc ):
@@ -344,7 +344,7 @@ You can also confirm that the operation was successful by opening `mygame_v1tov2
 
 ### How multiple comparisons work 
 
-When running multiple step commands, use a comma\-separated list for each relevant parameter. The individual steps in the command match up to their placement in this comma\-separated parameter value list.
+When running multiple step commands, use a comma-separated list for each relevant parameter. The individual steps in the command match up to their placement in this comma-separated parameter value list.
 
 The previous example uses three comparison operations. The first two comparisons reference a first and second asset list file, and the last comparison references a file pattern and the first asset file. The multiple step command broken down into its component parts looks like this:
 

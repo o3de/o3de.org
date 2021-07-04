@@ -6,16 +6,16 @@ title: AZ::Event<...>
 
 {{< preview-migrated >}}
 
-The `AZ::Event` template class is used to subscribe to and publish single value messages across the different components of your game. It's designed to replace value\-based event pub/sub patterns that are currently implemented using EBus, only with significantly simpler syntax. There are a number of benefits to this new system, including simpler code, fewer files, removal of aggregate interfaces where a handler only cares about a subset of events, and improved runtime performance when dispatching value changes to registered handlers.
+The `AZ::Event` template class is used to subscribe to and publish single value messages across the different components of your game. It's designed to replace value-based event pub/sub patterns that are currently implemented using EBus, only with significantly simpler syntax. There are a number of benefits to this new system, including simpler code, fewer files, removal of aggregate interfaces where a handler only cares about a subset of events, and improved runtime performance when dispatching value changes to registered handlers.
 
 `AZ::Event` is defined as a C++ template \(`template <typename... Params>`\) in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Ebus\Event.h`
 
 `AZ::Event `limitations include the following:
-* The event system is single\-threaded only. Handlers should `Connect()` and `Disconnect()` on the same thread that is dispatching events.
+* The event system is single-threaded only. Handlers should `Connect()` and `Disconnect()` on the same thread that is dispatching events.
 * Handlers can be bound only to an existing event instance. You can't bind to an event prior to its creation (the way you can with an address by ID EBus).
 * A handler can be bound only to a single event. You can't bind a single handler to more than one event.
 * There are no return results for handlers. The handler function signature must have a void return result.
-* There is no event queuing. A queue can be built as a modular handler wrapper, but in the single\-threaded implementation, all events immediately dispatch to all handlers.
+* There is no event queuing. A queue can be built as a modular handler wrapper, but in the single-threaded implementation, all events immediately dispatch to all handlers.
 
 `AZ::Event` provides a `Handler` class and the following explicit constructors:
 + `Handler(std::nullptr_t)`
@@ -161,15 +161,15 @@ handler.Connect(event); // Connect the handler to our event
 event.Signal(1); // Signal an event, this will invoke our handler's lambda
 ```
 
-Note the reduced lines of code, as well as the overall simpler code pattern. Try it out by porting some of your current EBus message handlers to use `AZ::Event`, and then test it using our built\-in unit tests and benchmarks.
+Note the reduced lines of code, as well as the overall simpler code pattern. Try it out by porting some of your current EBus message handlers to use `AZ::Event`, and then test it using our built-in unit tests and benchmarks.
 
 ## Unit testing and benchmarking 
 
 The `AZ::Event `system includes a number of unit tests and benchmarks to validate correct behavior and confirm the performance advantages over an equivalent EBus implementation.
 
-To execute the unit tests, the following command\-line arguments can be provided to the `AzTestRunner`:
+To execute the unit tests, the following command-line arguments can be provided to the `AzTestRunner`:
 
-%INSTALL\-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunBenchmarks \-\-pause\-on\-completion \-\-benchmark\_filter=BM\_EventPerf\*
+%INSTALL-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunBenchmarks --pause-on-completion --benchmark\_filter=BM\_EventPerf\*
 
 You should see unit testing output like this.
 
@@ -194,9 +194,9 @@ You should see unit testing output like this.
 [----------] 7 tests from EventTests (9 ms total)
 ```
 
-To execute the benchmarks, the following command\-line arguments can be provided to the `AzTestRunner`:
+To execute the benchmarks, the following command-line arguments can be provided to the `AzTestRunner`:
 
-%INSTALL\-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunBenchmarks \-\-pause\-on\-completion \-\-benchmark\_filter=BM\_EventPerf\*
+%INSTALL-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunBenchmarks --pause-on-completion --benchmark\_filter=BM\_EventPerf\*
 
 You should see benchmark output like this.
 

@@ -22,12 +22,12 @@ The following properties define how a canvas is rendered:
 The following properties define how a canvas handles inputs:
 + **Handle positional** - Selected by default. This property causes an automatic response to positional input such as mouse movement, mouse button clicks, and touch screen input. Keyboard inputs also cause an automatic response when an interactive UI element is active (such as an elemental with a **Text Input** component on it).
 
-  Common reasons to de\-select this property are if the canvas doesn't resuire input, or if you configure your game to handle all inputs and pass selected inputs to the UI system.
+  Common reasons to de-select this property are if the canvas doesn't resuire input, or if you configure your game to handle all inputs and pass selected inputs to the UI system.
 + **Consume all input** - Cleared by default. When this property is selected, this canvas consumes *all* input events while it's enabled, regardless of whether the canvas handles a specific input event. For example, if you have canvas A covering canvas B, you probably don't want canvas B handling any input while canvas A is obstructing it, so you would select this property on canvas A. Modal dialog boxes are another example of a canvas that should have this property selected.
 
   Note that anytime a canvas is loaded, if it's set to consume all input, then it steals the inputs from any other loaded canvas. This includes canvases that are set to consume all inputs themselves.
-+ **Handle multi\-touch** - Cleared by default. When this property is selected, it enables elements on the canvas to handle multi\-touch input. This is useful for handling input from touch\-based screens, such as mobile devices.
-+ **Handle navigation** - Cleared by default. When this property is selected, it causes an automatic response to navigation input. For example, on a PC, pressing arrow keys moves focus from one interactive UI element to the next, and pressing **Enter** activates an interactive UI element. We recommend de\-selecting this property for canvases that are placed in the game world.
++ **Handle multi-touch** - Cleared by default. When this property is selected, it enables elements on the canvas to handle multi-touch input. This is useful for handling input from touch-based screens, such as mobile devices.
++ **Handle navigation** - Cleared by default. When this property is selected, it causes an automatic response to navigation input. For example, on a PC, pressing arrow keys moves focus from one interactive UI element to the next, and pressing **Enter** activates an interactive UI element. We recommend de-selecting this property for canvases that are placed in the game world.
 + **Navigation threshold** - The analog input value, from a thumbstick, for example, that must be exceeded before a navigation command is processed. Valid ranges are decimal values between 0 and 1, and the default is 0.4. Adjust this value based on the input sensitivity needs of your UI.
 + **Navigation repeat delay** - The delay, in milliseconds, before a held navigation command begins repeating. The default is 300 ms. Adjust this value based on the needs of your UI.
 + **Navigation repeat period** - The delay, in milliseconds, after the initial repeat delay, before a held navigation command repeats again. The default is 150 ms. Adjust this value based on the needs of your UI.
@@ -44,7 +44,7 @@ The following properties define how a canvas handles inputs:
 ## Tooltips Properties 
 
 The following property defines how a canvas displays tooltips:
-+ **Tooltip display element** - Controls which element the game displays when your users hover over an interactive element. Select an element from the drop\-down list. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component. For more information about the **Tooltips** components, see [Tooltip Components](/docs/user-guide/interactivity/user-interface/editor/components-tooltips.md).
++ **Tooltip display element** - Controls which element the game displays when your users hover over an interactive element. Select an element from the drop-down list. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component. For more information about the **Tooltips** components, see [Tooltip Components](/docs/user-guide/interactivity/user-interface/editor/components-tooltips.md).
 
 ## Editor Settings Properties 
 

@@ -37,8 +37,8 @@ A "leaf" asset is a product asset that has no dependencies on other product asse
 
 **Product Asset**
 A product asset is game content that is loaded and used in the runtime game. A product asset is generated from a source asset during asset processing using a builder. The product asset is often a modified version of the source asset, such as image content that is compressed and otherwise optimized for runtime. Product assets reference their product dependencies. See also **Source Asset**.
-When running a game using the O3DE asset system, only product assets are available. The source assets are not available. This includes running the game in the O3DE Editor or in a platform\-specific launcher. When packaging a game using the Asset Bundler, only product assets are bundled. Product assets are available only from the asset cache or from asset bundles.
-When working with slices, keep in mind that only dynamic slices can be used at run\-time. Non\-dynamic slices, even if they are product assets, should not be included in bundles.
+When running a game using the O3DE asset system, only product assets are available. The source assets are not available. This includes running the game in the O3DE Editor or in a platform-specific launcher. When packaging a game using the Asset Bundler, only product assets are bundled. Product assets are available only from the asset cache or from asset bundles.
+When working with slices, keep in mind that only dynamic slices can be used at run-time. Non-dynamic slices, even if they are product assets, should not be included in bundles.
 For more information about the asset life cycle, see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/).
 
 **Product Dependency**
@@ -46,7 +46,7 @@ A product dependency occurs when one product asset references another product as
 Product dependencies are generally relevant during asset packaging and bundling. With product dependencies established, bundling becomes the task of "shipping game level 1 and everything it references". For example, you have a character that is spawned through a dynamic slice. This character has a model, and the model has a material, which has a texture. In this scenario, the material needs the texture loaded to work, so the material has a product dependency on the texture. The model needs the material loaded to work, so the model has a product dependency on the material. The character needs the model loaded to work, so the dynamic slice for the character has a product dependency on the model. When bundling, you can include the character and expect that all dependencies are included.
 
 **Runtime**
-A standalone game is referred to as the runtime. It can be run through a platform\-specific launcher or in the O3DE Editor. A runtime uses the O3DE asset system to access only those product assets that were bundled with the game.
+A standalone game is referred to as the runtime. It can be run through a platform-specific launcher or in the O3DE Editor. A runtime uses the O3DE asset system to access only those product assets that were bundled with the game.
 
 **Scan Folder**
 Scan folders are scanned for assets during game runtime. A set of scan folders are designated in the `AssetProcessorPlatformConfig.ini` file. Scan folders are defined when the Asset Processor starts. They cannot be added, removed, or renamed during runtime.
@@ -59,7 +59,7 @@ A seed list is a `.seed` file containing a collection of seeds for the bundling 
 For simple game packages, seed lists are commonly used with level files. For example, you have a game with three levels. Levels 1 and 2 are production levels, and the other is the development test level. You want to ship your game with the two production levels and all files referenced by them. You can use the Asset Bundler to create a `MyGame.seed` asset list file, and then add your Level 1 and Level 2 product assets as seeds to this file.
 
 **Source Asset**
-A source asset is an instance of an asset that is not associated with a specific product. When working with an asset, you edit the source asset and then use an asset builder to generate a product\-specific instance of the asset. When authoring edit\-time code, you may need to access editor\-only product assets or source assets. If your logic is actually editing a file, use the source asset. If your logic is only reading the file, use the editor\-only product asset in the asset cache. Source assets are stored in the source asset folder, usually under `dev\ProjectName\`.
+A source asset is an instance of an asset that is not associated with a specific product. When working with an asset, you edit the source asset and then use an asset builder to generate a product-specific instance of the asset. When authoring edit-time code, you may need to access editor-only product assets or source assets. If your logic is actually editing a file, use the source asset. If your logic is only reading the file, use the editor-only product asset in the asset cache. Source assets are stored in the source asset folder, usually under `dev\ProjectName\`.
 
 **Source Dependency**
 A source dependency occurs when one source asset references another source asset. Source assets list each dependency by referencing the ID of the source asset. See also **Product Dependency**.
@@ -75,6 +75,6 @@ Source assets are associated with a gem, and source GUIDs are unique within a ge
 
 **Relative Paths**
 Some of the O3DE tool operations take relative paths as inputs. There are two types of relative paths:
-+ Cache\-relative paths - Tells various systems where to find pre\-processed assets in your asset cache. Each O3DE tool that uses cache\-relative paths will be relative to a different subdirectory of the asset cache. For example, a cache\-relative path from the absolute path `C:\O3DE\dev\Cache\SamplesProject\pc\samplesproject\levels\samples\advanced_rinlocomotion\level.pak` that does not include the platform and project would be `levels\samples\advanced_rinlocomotion\level.pak`.
-+ Engine\-root\-relative paths - Specifies files located in directories under `C:\O3DE\dev\`. For example, an engine\-root\-relative path lets you represent the location `C:\O3DE\dev\SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif` as `SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif`.
++ Cache-relative paths - Tells various systems where to find pre-processed assets in your asset cache. Each O3DE tool that uses cache-relative paths will be relative to a different subdirectory of the asset cache. For example, a cache-relative path from the absolute path `C:\O3DE\dev\Cache\SamplesProject\pc\samplesproject\levels\samples\advanced_rinlocomotion\level.pak` that does not include the platform and project would be `levels\samples\advanced_rinlocomotion\level.pak`.
++ Engine-root-relative paths - Specifies files located in directories under `C:\O3DE\dev\`. For example, an engine-root-relative path lets you represent the location `C:\O3DE\dev\SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif` as `SamplesProject\textures\UIEditor_Sample\ButtonNormal.tif`.
 For more information, see [Asset IDs and File Paths](/docs/user-guide/assets/pipeline/developers.md).

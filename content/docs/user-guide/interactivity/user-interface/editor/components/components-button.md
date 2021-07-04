@@ -10,7 +10,7 @@ You can use a **Button** component to make an element behave like a button.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button.png)
 
-To see an in\-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**. You can view the different types of buttons you can create. Press **Esc** to exit the game.
+To see an in-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**. You can view the different types of buttons you can create. Press **Esc** to exit the game.
 
 To view this same canvas in the **UI Editor**, open `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Button\Styles.uicanvas`.
 
@@ -21,7 +21,7 @@ Note the following:
 + If you want to add a text label to a button, add a child element with a text component.
 
    
-+ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open\-in) ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button-1.png) next to **Sprite path**.
++ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open-in) ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-button-1.png) next to **Sprite path**.
 
 You can add a prebuilt **Button** element from the slice library. When you do this, a basic button with the text string "Button" is automatically created in your **Hierarchy** pane.
 

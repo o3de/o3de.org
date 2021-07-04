@@ -6,7 +6,7 @@ title: Automating the O3DE Editor with the Python Editor Bindings gem
 
 {{< preview-migrated >}}
 
- Some tasks in the O3DE Editor are tedious or could easily be automated, and to support that, O3DE has support for scripting the editor through Python bindings to the underlying editor implementation. These bindings are enabled with the **PythonEditorBindings** gem, and interacted with through a Python 3 library embedded within the editor. You can access a Python REPL through an in\-editor console, or launch the editor with an argument that loads and runs a Python script on boot.
+ Some tasks in the O3DE Editor are tedious or could easily be automated, and to support that, O3DE has support for scripting the editor through Python bindings to the underlying editor implementation. These bindings are enabled with the **PythonEditorBindings** gem, and interacted with through a Python 3 library embedded within the editor. You can access a Python REPL through an in-editor console, or launch the editor with an argument that loads and runs a Python script on boot.
 
 ## Enable editor automation 
 
@@ -14,7 +14,7 @@ title: Automating the O3DE Editor with the Python Editor Bindings gem
 
 ## Use editor automation 
 
- The easiest way to get started with editor automation is to use the REPL that's available from within the O3DE Editor and try out some commands. Open this REPL by selecting **Tools** > **Other** > **Python Console**. The Python console opens in a new editor view, which gives you access to a console that displays output from Python, the REPL input, and a full reference of available commands. To get access to the reference, select the **?** icon in the lower\-right corner of the console.
+ The easiest way to get started with editor automation is to use the REPL that's available from within the O3DE Editor and try out some commands. Open this REPL by selecting **Tools** > **Other** > **Python Console**. The Python console opens in a new editor view, which gives you access to a console that displays output from Python, the REPL input, and a full reference of available commands. To get access to the reference, select the **?** icon in the lower-right corner of the console.
 
  You can also access a set of available scripts, including some samples for common tasks in the editor, by selecting **Tools** > **Other** > **Python Scripts**. These scripts are stored in a directory depending on their scope. Scripts only for your project are stored in the `Editor\Scripts` directory, and scripts meant to be used along with a gem are stored at `Gems\<name>\Editor\Scripts`.
 

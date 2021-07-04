@@ -21,7 +21,7 @@ Follow these guidelines as you design your UI with toggle switches:
 1.  Even if the active state always means "on", clearly indicate the consequences of the switch.
 
 Avoid these design choices when using toggle switches:
-+ Don't use when the options presented to the user are not binary. For example, if a mail setting has IMAP and POP as the two mail retrieval options, use a radio group instead. In this example there are actually four states \- IMAP on, IMAP off, POP on, and POP off.
++ Don't use when the options presented to the user are not binary. For example, if a mail setting has IMAP and POP as the two mail retrieval options, use a radio group instead. In this example there are actually four states - IMAP on, IMAP off, POP on, and POP off.
 + Don't use if the state does not persist or get serialized across sessions. For example, don't use for search filters, since filters are reset each time a user performs a new search.
 
 ## Basic toggle switch<a name="toggle-switch-basic"></a>

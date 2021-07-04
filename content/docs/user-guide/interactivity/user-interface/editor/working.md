@@ -25,7 +25,7 @@ You can add or delete components in the [UI Editor](/docs/user-guide/interactivi
 
 1. Do one of the following:
    + At the top of the **Properties** panel, click **Add Component**.
-   + In the **Properties** panel, right\-click and choose **Add Component**.
+   + In the **Properties** panel, right-click and choose **Add Component**.
 
 1. Select the component to add to the element: image, text, button, check box, slider, text input, scroll box, fader, mask, layout column, layout row, or layout grid.
 
@@ -35,7 +35,7 @@ You can add or delete components in the [UI Editor](/docs/user-guide/interactivi
 
 1. In the **UI Editor**, select an element in the **Hierarchy** pane.
 
-1. In the **Properties** panel, right\-click the component and click **Remove**.
+1. In the **Properties** panel, right-click the component and click **Remove**.
 
 ## Referencing UI Elements 
 
@@ -63,7 +63,7 @@ You can specify elements as properties either by dragging the element into the p
 After you specify a UI element as a property, you can select that element from the **Properties** panel.
 
 **To select a UI element from the **Properties** panel**
-+ In the **Properties** panel, double\-click the element name.
++ In the **Properties** panel, double-click the element name.
 
 ## Managing UI Components 
 
@@ -73,7 +73,7 @@ You can use the context menu in the **Properties** panel to add, remove, cut, co
 
 1. In the **Hierarchy** panel, select the UI element.
 
-1. In the **Properties** panel, either right\-click the component or click the menu button in the header. Then choose one of the following:
+1. In the **Properties** panel, either right-click the component or click the menu button in the header. Then choose one of the following:
    + **Add component** - Add a component to the element
    + **Delete component** - Remove a component from the element
    + **Cut component** - Cut a component from one UI element to be pasted onto a different UI element
@@ -84,7 +84,7 @@ You can also use the context menu to act on multiple components at once.
 
 **To perform actions on multiple components**
 
-1. Press **Ctrl** to select multiple components and then right\-click to open the context menu.
+1. Press **Ctrl** to select multiple components and then right-click to open the context menu.
 
 1. Choose an action.
 

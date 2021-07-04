@@ -174,13 +174,13 @@ Yes
 
 ### OnTopLevelEntitiesSpawned 
 
-Provides the list of all top\-level entities that were created during a spawn. This function is called only once for each spawn request. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call.
+Provides the list of all top-level entities that were created during a spawn. This function is called only once for each spawn request. The function is called after the [OnEntitySpawned](#ui-editor-components-spawner-notification-bus-onentityspawned) calls and before the [OnSpawnEnd](#ui-editor-components-spawner-notification-bus-onspawnend) call.
 
-Top\-level entities are entities that do not have any parent within the slice. Typically, there is only one top\-level entity for each slice.
+Top-level entities are entities that do not have any parent within the slice. Typically, there is only one top-level entity for each slice.
 
 **Parameters**
 `ticket` - The slice instantiation ticket returned by the spawn function. These can be compared in order to know which spawn request it relates to.
-`spawnedEntities` - Specifies the IDs of the spawned top\-level entities.
+`spawnedEntities` - Specifies the IDs of the spawned top-level entities.
 
 **Scriptable**
 Yes

@@ -57,7 +57,7 @@ The **Node Palette** contains a searchable list of nodes. By default, the palett
    + Choose **Tools**, **Node Palette**.
    + Press **Ctrl+Shift+L**.
 **Note**
-If you have an existing script open, you can right\-click the canvas for the menu to appear.
+If you have an existing script open, you can right-click the canvas for the menu to appear.
 
 **Node Inspector**
 The **Node Inspector** shows the properties of the node. You can edit each property in the inspector or directly in the node. By default, this window doesn't appear in the editor.

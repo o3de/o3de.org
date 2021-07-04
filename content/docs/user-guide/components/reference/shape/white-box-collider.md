@@ -30,15 +30,15 @@ The collision layer that's assigned to the collider. For more information, see [
 ****Collides With****
 The collision group containing the layers that this collider collides with. For more information, see [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/).
 
-****Physics Material \- Library****
+****Physics Material - Library****
 Set the physics material library for this collider.
 
-****Physics Material \- Mesh Surfaces****
+****Physics Material - Mesh Surfaces****
 Choose a material from the physics material library for this collider. The material is applied to the entire white box entity.
 
 ****Tag****
 Set a tag for this collider. Tags can be used to quickly identify components in script or code.
 
 ****Body Type****
-Select **Static** for non\-moving entities. Select **Kinematic** for animated entities.
+Select **Static** for non-moving entities. Select **Kinematic** for animated entities.
 The White Box collider must be set to **Static** to interact with the **PhysX Character Controller**.

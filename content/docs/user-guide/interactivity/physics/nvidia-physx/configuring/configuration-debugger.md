@@ -6,7 +6,7 @@ weight: 400
 
 {{< preview-migrated >}}
 
-In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger (PVD). The PVD is a third\-party application that records your PhysX data from O3DE Editor. You can then review this data to see how your physics effects appear.
+In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger (PVD). The PVD is a third-party application that records your PhysX data from O3DE Editor. You can then review this data to see how your physics effects appear.
 
 For more information, see the NVIDIA [PhysX Visual Debugger (PVD)](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/VisualDebugger.html#physxvisualdebugger) documentation.
 

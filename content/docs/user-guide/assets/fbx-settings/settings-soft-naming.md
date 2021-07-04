@@ -157,7 +157,7 @@ The preconfigured soft naming conventions might not apply to your workflow. You 
 
 ## Moving FBX files between projects 
 
-Soft naming conventions are project\-specific. As a result, different projects can process the `.fbx` file differently.
+Soft naming conventions are project-specific. As a result, different projects can process the `.fbx` file differently.
 
 **To process the FBX file the same way between projects**
 

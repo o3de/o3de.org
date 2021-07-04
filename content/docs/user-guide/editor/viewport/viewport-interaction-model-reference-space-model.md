@@ -62,4 +62,4 @@ You can adjust the manipulator independent of the entity to create a custom refe
 
 
 **Note**
-The manipulator and the custom reference space are context\-based and apply only when you select an entity. If you don't select an entity, there's no manipulator, and you can't create a reference space. The reference space doesn't persist across selections. However, if you move the reference space, you can undo that action.
+The manipulator and the custom reference space are context-based and apply only when you select an entity. If you don't select an entity, there's no manipulator, and you can't create a reference space. The reference space doesn't persist across selections. However, if you move the reference space, you can undo that action.

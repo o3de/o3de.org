@@ -5,7 +5,7 @@ title: Debugging Issues
 
 {{< preview-migrated >}}
 
-O3DE provides the following built\-in debugging and profiling tools that you can use to locate and fix performance issues.
+O3DE provides the following built-in debugging and profiling tools that you can use to locate and fix performance issues.
 + [Cinematics debugging](/docs/user-guide/visualization/cinematics/debugging.md) - Debug cinematics issues.
 + [Particle debugging](/docs/userguide/particles/debugging.md) - Debug particles.
 + [Vegetation debugging](/docs/userguide/vegetation/debugging.md) - Debug vegetation objects.
@@ -35,7 +35,7 @@ The viewport window displays debugging information by default when you are in ga
 + `r_DisplayInfo 0` - Disables the debugging text.
 + `r_DisplayInfo 1 | 2 | 3 | 4` - Enables various levels of debugging text. Displays memory consumption, frame rate, triangle count, visible light sources, and drawcall count. Use a value of `2` to display more detailed information. Use a value of `3` to display only frames per second (FPS) and frame time in milliseconds.
 + `r_wireframe 1 | 2` - Use a value of `1` to draw the level in wireframe mode. Use a value of `2` to draw the level in vertex mode. Both include the objects that are hidden from view.
-+ `r_ShowLines 2` - Overlays the wireframe only on the front\-facing geometry. Anything behind this geometry isn't rendered.
++ `r_ShowLines 2` - Overlays the wireframe only on the front-facing geometry. Anything behind this geometry isn't rendered.
 + `r_TexBindMode 6` - Applies a uniform, flat, gray material with normal map information to every surface in the level.
 
 ### Using DebugDraw Console Variables 
@@ -43,10 +43,10 @@ The viewport window displays debugging information by default when you are in ga
 Use the following console variables and values to display information about your level.
 + `e_DebugDrawLodMinTriangles 1000` - Do not draw debug text for objects with less than 1000 triangles.
 + `e_DebugDraw 1` - Displays the name of the `.cgf` used, polycount, and LOD.
-+ `e_DebugDraw 2` - Displays a color\-coded polygon count.
-+ `e_DebugDraw 3` - Displays a color\-coded LOD count. Flashing color indicates a single LOD.
++ `e_DebugDraw 2` - Displays a color-coded polygon count.
++ `e_DebugDraw 3` - Displays a color-coded LOD count. Flashing color indicates a single LOD.
 + `e_DebugDraw 4` - Displays object texture memory usage.
-+ `e_DebugDraw 5` - Displays a color\-coded number of render materials.
++ `e_DebugDraw 5` - Displays a color-coded number of render materials.
 + `e_DebugDraw 6` - Displays ambient color.
 + `e_DebugDraw 7` - Display triangle count, number of render materials, and texture memory.
 + `e_DebugDraw 8` - Displays RenderWorld statistics (with view cones).
@@ -74,9 +74,9 @@ Use the following console variables and values to display materials, colors, sha
 + `r_DebugGBuffer 2` - Shows the roughness or glossiness of the surfaces.
 + `r_DebugGBuffer 3` - Shows the specular color of materials.
 + `r_DebugGBuffer 4` - Shows the albedo of all surfaces in the level.
-+ `r_DebugGBuffer 5` - Shows the lighting model in the level. Gray = standard \| Yellow = transmittance \| Blue = POM self\-shadowing.
++ `r_DebugGBuffer 5` - Shows the lighting model in the level. Gray = standard \| Yellow = transmittance \| Blue = POM self-shadowing.
 + `r_DebugGBuffer 6` - Shows the translucency values that are set on assets in the level. Black = none.
-+ `r_DebugGBuffer 7` - Shows self\-shadowing of materials that use Offset Bump mapping or Parallax Occlusion Mapping.
++ `r_DebugGBuffer 7` - Shows self-shadowing of materials that use Offset Bump mapping or Parallax Occlusion Mapping.
 + `r_DebugGBuffer 8` - Shows in red and yellow any asset that uses SSS. The brighter the color, the higher the SSS index.
 + `r_DebugGBuffer 9` - Shows whether specular colors are in a reasonable range as follows:
   + **Blue** - The specular color is too low.

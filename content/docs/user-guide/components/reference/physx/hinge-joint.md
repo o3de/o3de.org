@@ -5,7 +5,7 @@ title: PhysX Hinge Joint component
 
 {{< preview-migrated >}}
 
-With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x\-axis of the joint.
+With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.
 
 ## PhysX Hinge Joint component properties 
 
@@ -31,12 +31,12 @@ When **Breakable** is enabled, specify the maximum force the joint can sustain b
 When **Breakable** is enabled, specify the maximum torque the joint can sustain before breaking. Valid values range from **0.01** to **Infinity**.
 
 **Display Setup in Viewport**
-When enabled, three planes are displayed showing the orientation and limits of the joint. Red and green planes show the **Positive angular limit** and **Negative angular limit**. The white plane shows the 0 degree rotation of the joint. The shared edge of the three planes is the x\-axis of the hinge joint. A line displays the connection between the joint and the **Lead Entity**.
+When enabled, three planes are displayed showing the orientation and limits of the joint. Red and green planes show the **Positive angular limit** and **Negative angular limit**. The white plane shows the 0 degree rotation of the joint. The shared edge of the three planes is the x-axis of the hinge joint. A line displays the connection between the joint and the **Lead Entity**.
 
 **Select Lead on Snap**
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
 
-**Lead\-Follower Collide**
+**Lead-Follower Collide**
 When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
 
 **Limit**

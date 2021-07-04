@@ -8,7 +8,7 @@ title: Track View Editor Toolbars
 
 See the following main sections of the Track View:
 
-1. **Main toolbar** - Tools to create and modify sequences and the tracks in a sequence. The main toolbar includes the **Sequence/Node**, **View**, **Play**, **Keys**, and **Tracks** toolbars. To add or remove toolbars, right\-click the main toolbar and select your preferred options.
+1. **Main toolbar** - Tools to create and modify sequences and the tracks in a sequence. The main toolbar includes the **Sequence/Node**, **View**, **Play**, **Keys**, and **Tracks** toolbars. To add or remove toolbars, right-click the main toolbar and select your preferred options.
 
 1. **Node browser** - Tree pane of all nodes and associated tracks. Nodes can be in reference to existing component entities or nodes that you can add to a sequence such as a **Director** Node.
 

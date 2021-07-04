@@ -16,7 +16,7 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 
 1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md).
 
-1. Double\-click the blend tree node that you created.
+1. Double-click the blend tree node that you created.
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 
@@ -57,7 +57,7 @@ You can use the **Evenly Distribute** feature to automatically calculate an even
 The value of the **Weight** parameter determines which inputs to blend by its value with respect to the **Max weight trigger** values. The **Weight** value naturally falls either before the lowest **Max weight trigger** values, between two values, or after the highest **Max weight trigger** value. If it's lower than the lowest **Max weight trigger** value, then only that pose is used in the calculation. If it's higher than the highest **Max weight trigger** value, then only that pose is used. If it's between two values, then those two poses are used.
 
 **Example**
-Input ports **Pose 5**, **Pose 7**, and **Pose 9** are connected, with **Max weight trigger** values of `-2.0`, `4.0`, and `8.0`. If the input value is less than or equal to \-2.0, then only the port **Pose 5** is used to calculate the output pose. If the input is between \-2.0 and 4.0, both ports **Pose 5** and port **Pose 7** are used to calculate the output pose. If the weight is greater than `8.0`, then only port **Pose 9** is used.
+Input ports **Pose 5**, **Pose 7**, and **Pose 9** are connected, with **Max weight trigger** values of `-2.0`, `4.0`, and `8.0`. If the input value is less than or equal to -2.0, then only the port **Pose 5** is used to calculate the output pose. If the input is between -2.0 and 4.0, both ports **Pose 5** and port **Pose 7** are used to calculate the output pose. If the weight is greater than `8.0`, then only port **Pose 9** is used.
 
 The weight assigned to each value in a pair depends on where the **Weight** parameter falls with respect to the pose values. It calculates the respective distances and assigns a weight based on its position.
 

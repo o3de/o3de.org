@@ -14,7 +14,7 @@ In the Track View, sequences determine what to animate based on what you add to 
 1. In the Track View, select or create the sequence that you want.
 
 1. Do one of the following:
-   + In the node browser, right\-click and choose **Add Selected Entity**.
+   + In the node browser, right-click and choose **Add Selected Entity**.
    + On the **Sequence/Node** toolbar, click the **Add Selected Entity** icon.
 ![\[Add a component entity to a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-adding-a-component-entity.png)
 
@@ -22,7 +22,7 @@ All component entities have the **Transform** component. This means you can anim
 
 If there are other components attached to the entity, those may also appear in the sequence. However, some components are not available for animating in the Track View.
 
-For components that are available, you can right\-click them to see what additional tracks can be added to the sequence. Some component properties can't be added as a track in a sequence and can't be animated.
+For components that are available, you can right-click them to see what additional tracks can be added to the sequence. Some component properties can't be added as a track in a sequence and can't be animated.
 
 For more information, see [Component Entities and Component Nodes](/docs/user-guide/visualization/cinematics/track-view/nodes-component-entity.md).
 

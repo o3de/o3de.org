@@ -7,11 +7,11 @@ title: Exporting Actors and Motions
 {{< preview-migrated >}}
 
 Use the following best practices when you export your skinned meshes using the **FBX Settings** tool.
-+ If you use the z\-up world coordinate system, use the following guidelines:
-  + Ensure that your DCC scene is set to z for the up\-axis world coordinate system.
++ If you use the z-up world coordinate system, use the following guidelines:
+  + Ensure that your DCC scene is set to z for the up-axis world coordinate system.
   + Set the axis conversion up axis to z when exporting an `.fbx` file.
-+ If you use the y\-up world coordinate system, use the following guidelines:
-  + Ensure that your DCC scene is set to y for the up\-axis world coordinate system.
++ If you use the y-up world coordinate system, use the following guidelines:
+  + Ensure that your DCC scene is set to y for the up-axis world coordinate system.
   + Set the axis conversion up axis to y when exporting an `.fbx` file.
 + When you create an `.actor` file, export your skinned mesh at the bind pose without any keyframes.
 + When you create a `.motion` file, bake animations before you export. Alternatively, bake animations when you use your DCC's `.fbx` export tools.
@@ -29,11 +29,11 @@ The following are typical settings for the Maya Game Exporter when you export yo
 + Use the **Model** tab to export your `.fbx` files.
 ![\[Models tab in the Maya Game Exporter.\]](/images/user-guide/actor-animation/fbx-settings-actors-model-tab.png)
 + Use the following settings:
-  + Select **Export Selection** from the drop\-down list.
+  + Select **Export Selection** from the drop-down list.
   + Select the **Skinning** check box.
   + If you are exporting blendshapes (morph targets), select the **Blendshapes** check box.
   + Clear the **Animation** check box. If this is selected, a `.motion` file is created.
-  + Select your world coordinate system from the **Up Axis** drop\-down list.
+  + Select your world coordinate system from the **Up Axis** drop-down list.
   + Navigate to a save path and specify the name of your `.fbx` file.
 + When you're done choosing these settings, select all of the bones for the character's skeleton and all of the skinned meshes.
 + Click **Export**.
@@ -42,12 +42,12 @@ The following are typical settings for the Maya Game Exporter when you export yo
 + Use the **Animation Clips** tab to export your `.fbx` files.
 ![\[Animation Clips tab in the Maya Game Exporter.\]](/images/user-guide/actor-animation/fbx-settings-motions-animation-clips-tab.png)
 + Use the following settings:
-  + Select **Export Selection** from the drop\-down list.
+  + Select **Export Selection** from the drop-down list.
   + Click the **+** button to add an animation clip.
   + For **Clip Name**, enter a name for the clip.
   + For **Start** and **End**, specify a frame.
   + Select the **Bake Animation** check box.
-  + Select your world coordinate system from the **Up Axis** drop\-down list.
+  + Select your world coordinate system from the **Up Axis** drop-down list.
   + Navigate to a save path and specify the name of your `.fbx` file.
 + When you're done choosing these settings, select all of the bones for the character's skeleton.
 + If you are exporting blendshapes with your animation, also select the skinned mesh that has the blendshape animations. For example, if your character's face mesh has blendshapes, select the skeleton and the character's face mesh.
@@ -57,11 +57,11 @@ The following are typical settings for the Maya Game Exporter when you export yo
 + Use the **Time Editor** tab to export your `.fbx` files.
 ![\[Time Editor tab in the Maya Game Exporter.\]](/images/user-guide/actor-animation/fbx-settings-motions-time-editor-tab.png)
 + Use the following settings:
-  + Select **Export Selection** from the drop\-down list.
-  + Select the clip that you want to export from the **Time Editor Clips** drop\-down list.
+  + Select **Export Selection** from the drop-down list.
+  + Select the clip that you want to export from the **Time Editor Clips** drop-down list.
   + Click the **+** button to add an animation clip.
   + Select the **Bake Animation** check box.
-  + Select your world coordinate system from the **Up Axis** drop\-down list.
+  + Select your world coordinate system from the **Up Axis** drop-down list.
   + Navigate to a save path and specify the name of your `.fbx` file.
 + When you're done choosing these settings, select all of the bones for the character's skeleton.
 + If you are exporting blendshapes with your animation, also select the skinned mesh that has the blendshape animations. For example, if your character's face mesh has blendshapes, select the skeleton and the character's face mesh.

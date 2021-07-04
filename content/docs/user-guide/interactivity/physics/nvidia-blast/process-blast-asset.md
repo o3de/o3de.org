@@ -10,7 +10,7 @@ weight: 300
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
 
-Blast assets that are exported from Houdini must be processed by **Asset Processor** to generate run\-time assets. There are two methods for processing Blast assets for use in O3DE: an automated method using Python Asset Builder, and a manual method where you select the meshes to be processed.
+Blast assets that are exported from Houdini must be processed by **Asset Processor** to generate run-time assets. There are two methods for processing Blast assets for use in O3DE: an automated method using Python Asset Builder, and a manual method where you select the meshes to be processed.
 
 **Important**
 Processing meshes automatically is less time consuming than manually setting up blast meshes to process. It is important to understand both processes, however. You might use the automatic process for the initial export and then manually edit the mesh assets to add modifiers for custom normals or vertex color streams.
@@ -37,14 +37,14 @@ Automatically processing assets for NVIDIA Blast requires that your project has 
 
    1. In **Asset Processor**, select the **Assets** tab.
 
-   1. Right\-click the asset in the asset list to open the context menu.
+   1. Right-click the asset in the asset list to open the context menu.
 
    1. Choose **Reprocess File** from the context menu.
 ![\[Automatic process of Blast assets.\]](/images/user-guide/physx/blast/ui-blast-process-automatic.png)
 
 ## Process Blast mesh assets manually 
 
-Manually processing blast assets requires you to add a mesh group for each chunk mesh so that **Asset Processor** can generate the run\-time asset. Manual processing also requires you to add each run\-time mesh to the **Blast Family Mesh Data** component. If you need to add modifiers to the blast mesh chunks, such as specifying a vertex color stream, you must use this manual process.
+Manually processing blast assets requires you to add a mesh group for each chunk mesh so that **Asset Processor** can generate the run-time asset. Manual processing also requires you to add each run-time mesh to the **Blast Family Mesh Data** component. If you need to add modifiers to the blast mesh chunks, such as specifying a vertex color stream, you must use this manual process.
 
 **To process Blast assets manually**
 
@@ -52,7 +52,7 @@ Manually processing blast assets requires you to add a mesh group for each chunk
 
 1. Start O3DE Editor.
 
-1. Locate the `.fbx` asset in **Asset Browser** and double\-click on the asset to open **FBX Settings**.
+1. Locate the `.fbx` asset in **Asset Browser** and double-click on the asset to open **FBX Settings**.
 
 1. Choose the **Meshes** tab.
 
@@ -69,4 +69,4 @@ Manually processing blast assets requires you to add a mesh group for each chunk
 
 1. **Optional:** If the meshes require special processing, such as a vertex color stream provided by the **Mesh (Advanced)** modifier, add modifiers to each mesh group as required.
 
-1. Choose the **Update** button in the bottom right of **FBX Settings**. **Asset Processor** generates the run\-time assets. A **File progress** window appears and displays feedback about the process.
+1. Choose the **Update** button in the bottom right of **FBX Settings**. **Asset Processor** generates the run-time assets. A **File progress** window appears and displays feedback about the process.

@@ -24,7 +24,7 @@ Script Canvas is designed to use behavior context reflection and provide access 
 
 The behavior context for Script Canvas includes the following benefits:
 + Functionality exposed through the behavior context is also available in Lua (and any other scripting solution bound to the behavior context).
-+ The EBus system makes it easier for you to use decoupled, event\-driven programming paradigms.
++ The EBus system makes it easier for you to use decoupled, event-driven programming paradigms.
 + Script Canvas can use any functionality that is exposed to the behavior context, even if it comes from other gems. Therefore, when code is reflected to the behavior context, gems can enhance Script Canvas.
 + Reflecting gems to the behavior context removes any need to add gem dependencies to Script Canvas.
 

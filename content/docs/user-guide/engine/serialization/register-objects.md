@@ -30,14 +30,14 @@ Sets version information for the serialization.
 
 `template<class ClassType, class FieldType> Field(const char* name, FieldType ClassType::* address, AZStd::initializer_list<AttributePair> attrbuteIds = {})`
 Tags a field in a class for storage.
-+ `name` \- The name to store the field as. Field names for the same class must be unique. Matching the member name isn't required.
-+ `address` \- The address of the field to store, as a pointer to member or offset from the start of an instance of `ClassType`. If a pointer to member is used, all type information is inferred.
-+ `attributeIds` \- Associate other attribute objects with this field.
++ `name` - The name to store the field as. Field names for the same class must be unique. Matching the member name isn't required.
++ `address` - The address of the field to store, as a pointer to member or offset from the start of an instance of `ClassType`. If a pointer to member is used, all type information is inferred.
++ `attributeIds` - Associate other attribute objects with this field.
 
 `template<class ClassType, class BaseType, class FieldType> FieldFromBase(const char* name, FieldType BaseType:* address)`
 Create a field from a base class member. This can be used if you want to serialize a base class member without registering and serializing a whole base class, to decouple the serialized class from its base.
-+ `name` \- The name to store the field as. Field names for the same class must be unique. Matching the member name isn't required.
-+ `address` \- The address of the field to store, as a pointer to member or offset from the start of an instance of `BaseType`. If a pointer to member is used, all type information is inferred.
++ `name` - The name to store the field as. Field names for the same class must be unique. Matching the member name isn't required.
++ `address` - The address of the field to store, as a pointer to member or offset from the start of an instance of `BaseType`. If a pointer to member is used, all type information is inferred.
 
 **Example Registering a class for serialization**
 The following is an example from the O3DE Asset Processor code, demonstrating how a class can be registered for serialization.
@@ -69,8 +69,8 @@ Sets version information for the serialization.
 
 `template<class EnumType> Value(const char* name, EnumType value)`
 Tags an enum value for serialization as part of the enum's information.
-+ `name` \- The name to store the value as. Field names for the same enum must be unique. Matching the internal value name isn't required.
-+ `value` \- The associated value to store for the enum. If this is a value associated with the enum, all type information is inferred.
++ `name` - The name to store the value as. Field names for the same enum must be unique. Matching the internal value name isn't required.
++ `value` - The associated value to store for the enum. If this is a value associated with the enum, all type information is inferred.
 
 **Important**
  If you're serializing a member from a class with an enum type, that enum **must** be registered with the serializer.

@@ -44,7 +44,7 @@ An SVG for everywhere else in the editor, without a background box.
 
 1.  **Context menu icon**
 
-   (Optional) The card's context menu opens when users choose this icon. The context menu can also be opened by right\-clicking the card header with a mouse.
+   (Optional) The card's context menu opens when users choose this icon. The context menu can also be opened by right-clicking the card header with a mouse.
 
 1.  **Card content widget**
 

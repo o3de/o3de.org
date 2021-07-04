@@ -38,7 +38,7 @@ Connections can be made only between pins of the same type. For example, logic c
 
 1. To move a connection from one pin to another, drag the end of a line from one pin and drop it onto another pin.
 
-   To delete a connection, right\-click and choose **Delete**. You can also press and hold **Alt**, and click the connection to delete it.
+   To delete a connection, right-click and choose **Delete**. You can also press and hold **Alt**, and click the connection to delete it.
 
 ## Variable Nodes 
 
@@ -69,7 +69,7 @@ The following example uses Light events to create a sender node.
 1. In the **Node Palette** search box, type **Light**. The results show nodes related to light.
 ![\[Light-related nodes in the Script Canvas Node Palette.\]](/images/user-guide/scripting/script-canvas/script-canvas-nodes-understanding-6.png)
 
-   In the **Node Palette**, sender events are the dark blue entries. All Light\-related sender events provide a way to communicate with, configure, or alter the behavior of a given Light component. You can send any of the Light\-related sender events to an entity that has a Light component. If the entity that owns the Script Canvas graph also has a Light component, it can send the event to itself.
+   In the **Node Palette**, sender events are the dark blue entries. All Light-related sender events provide a way to communicate with, configure, or alter the behavior of a given Light component. You can send any of the Light-related sender events to an entity that has a Light component. If the entity that owns the Script Canvas graph also has a Light component, it can send the event to itself.
 
 1. Drag **Turn On** or **Turn Off** onto the canvas to create a sender node.
 ![\[Light component Turn On sender node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-nodes-understanding-7.png)
@@ -113,7 +113,7 @@ The following example creates a receiver node for a Light event.
 
 #### Displaying and Using Connection Controls 
 
-All receiver nodes have connection\-related pins, or controls, that are hidden by default. You can use these controls to manage when an event is connected or disconnected (connected means that the event is ready to receive events, and disconnected means that the event is not receiving events). The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error.
+All receiver nodes have connection-related pins, or controls, that are hidden by default. You can use these controls to manage when an event is connected or disconnected (connected means that the event is ready to receive events, and disconnected means that the event is not receiving events). The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error.
 
 The following example uses the Light component **Turned On** event node.
 
@@ -127,7 +127,7 @@ The following example uses the Light component **Turned On** event node.
 1. In **Node Inspector**, select **Display Connection Controls**.
 ![\[Select Display Connection Controls in the Node Inspector.\]](/images/user-guide/scripting/script-canvas/script-canvas-nodes-understanding-14.png)
 
-   The Light component **Turned On** receiver node expands to provide connection\-related pins.
+   The Light component **Turned On** receiver node expands to provide connection-related pins.
 ![\[Expanded receiver node with connection controls.\]](/images/user-guide/scripting/script-canvas/script-canvas-nodes-understanding-15.png)
    + **Connect** and **Disconnect** - Use the **Disconnect** pin to prevent the receiver node from connecting. When the event should be connected and available to receive events, use the **Connect** pin.
 

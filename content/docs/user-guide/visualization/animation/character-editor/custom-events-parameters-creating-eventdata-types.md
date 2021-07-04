@@ -11,7 +11,7 @@ You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emo
 **To create an EventData type**
 
 1. Using the following criteria, subclass either the `EventData` class or the `EventDataSyncable` class:
-   + For general\-purpose parameters, subclass the `EventData` type.
+   + For general-purpose parameters, subclass the `EventData` type.
    + For parameters for the sync track, use the `EventDataSyncable` class. These parameters are for synchronizing blended motions.
 
    The following code snippet subclasses the `EventDataSyncable` class to create a `LeftFootEvent` for a left footstep.

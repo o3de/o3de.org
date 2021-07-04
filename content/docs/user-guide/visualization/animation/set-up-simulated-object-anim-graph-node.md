@@ -11,17 +11,17 @@ After you set up the simulated object, create an anim graph to view the simulati
 
 1. In the **Anim Graph** panel, click the **+** icon to create an anim graph.
 
-1. Right\-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
+1. Right-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 **Example**
 ![\[Create a blend tree node for your anim graph for the simulated object.\]](/images/user-guide/actor-animation/simulated-objects-7.png)
 
-1. Double\-click the **BlendTree0** node, right\-click the anim graph grid, and choose **Create Node**, **Physics**, **Simulated Object**.
+1. Double-click the **BlendTree0** node, right-click the anim graph grid, and choose **Create Node**, **Physics**, **Simulated Object**.
 **Example**
 ![\[Create a simulated object node in the BlendTree0 node.\]](/images/user-guide/actor-animation/simulated-objects-8.png)
 
 1. Connect the **Pose** output of the **SimulatedObject0** node to the **Input Pose** of the **FinalNode0** node.
 
-1. Right\-click the anim graph and choose **Create Node**, **Sources**, **Motion**.
+1. Right-click the anim graph and choose **Create Node**, **Sources**, **Motion**.
 
 1. Connect the **Output Pose** of the **Motion0** node to the **Pose** input of the **Simulated Object0** node.
 **Example**

@@ -11,7 +11,7 @@ Use the **Vegetation Layer Spawner** component to define areas and rules for pro
 To use the **Vegetation Layer Spawner** component, you must enable the **Vegetation** gem.
 
 With the **Vegetation Layer Spawner** component, you can do the following:
-+ Create vegetation within a user\-defined area at runtime
++ Create vegetation within a user-defined area at runtime
 + Configure layer settings to determine the depth or relative ordering in which to apply vegetation layers
 + (Optional) Add modifier and filter components to add variation to placed vegetation
 + (Optional) Use selector components to determine which vegetation assets to place at a given location

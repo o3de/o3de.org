@@ -19,7 +19,7 @@ This node functions similarly to the **Blend Two (Legacy)** node with **Additive
 
 1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md).
 
-1. Double\-click the blend tree node that you created.
+1. Double-click the blend tree node that you created.
 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 

@@ -15,7 +15,7 @@ This tutorial shows you how to modify existing and create console variables (CVA
 
 **To create a console variable**
 
-1. In your code editor, open the `Code\GameSDK\GameDll\GameCVars.h` file, which declares all game\-specific CVars.
+1. In your code editor, open the `Code\GameSDK\GameDll\GameCVars.h` file, which declares all game-specific CVars.
 
 1. Locate the `SCVars` struct. Inside the struct, declare a new variable, as in the following example.
 
@@ -47,7 +47,7 @@ This tutorial shows you how to modify existing and create console variables (CVA
 
 1. Specify a default value and help text for the variable. You can initialize the variable with any value that is valid for the type with which the variable was declared in the header file. The preceeding example specifies 42 as the default value and some help text that will be shown to users.
 
-1. When your game unloads, be sure to un\-register the variable. In the `Code\GameSDK\GameDll\GameCVars.cpp` file, locate and use the `ReleaseCVars` function, as shown in the following example.
+1. When your game unloads, be sure to un-register the variable. In the `Code\GameSDK\GameDll\GameCVars.cpp` file, locate and use the `ReleaseCVars` function, as shown in the following example.
 
    ```
    void SCVars::ReleaseCVars()

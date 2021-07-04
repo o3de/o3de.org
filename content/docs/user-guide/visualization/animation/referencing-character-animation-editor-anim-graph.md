@@ -6,7 +6,7 @@ title: Referencing External Anim Graphs
 
 {{< preview-migrated >}}
 
-A node\-based animation system that has thousands of nodes can be difficult to manage. O3DE's **EMotion FX Animation Editor** uses hierarchical nodes that help alleviate this problem, but universal\-level changes to game logic can still be challenging.
+A node-based animation system that has thousands of nodes can be difficult to manage. O3DE's **EMotion FX Animation Editor** uses hierarchical nodes that help alleviate this problem, but universal-level changes to game logic can still be challenging.
 
 **Animation Editor** reference nodes solve this by offering references to external animation graph (anim graph) files. This helps reduce the scale and complexity of anim graphs and minimize human error. Reference nodes behave as the root state machine of the anim graphs that they reference and always output one pose.
 
@@ -31,7 +31,7 @@ This section shows you how to create reference nodes in the **Animation Editor**
 **To create a reference to an external anim graph**
 
 1. In the **Animation Editor**, do one of the following:
-   + Right\-click the **Anim Graph** grid and choose **Create Node**, **Sources**, **Reference**.
+   + Right-click the **Anim Graph** grid and choose **Create Node**, **Sources**, **Reference**.
 ![\[Create a reference node from the Anim Graph grid.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-1.png)
    + Click the **Anim Graph Palette** tab. From **Sources**, drag and drop the **Reference** node to the grid.
 ![\[Drag a reference node from the Anim Graph Palette to the Anim Graph grid.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-2.png)
@@ -52,13 +52,13 @@ This section shows you how to create reference nodes in the **Animation Editor**
 1. In the **Pick EMotion FX Anim Graph** dialog box, select the `.animgraph` file that you want to assign to the reference node, and then click **OK**.
 ![\[Choose the anim graph to assign to the reference node.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-6.png)
 
-1. In the **Anim Graph** grid, double\-click the reference node to see the nodes that the referenced anim graph contains.
+1. In the **Anim Graph** grid, double-click the reference node to see the nodes that the referenced anim graph contains.
 ![\[Double-click the Reference node.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-7.png)
 
-1. Continue double\-clicking nodes to drill down into the nodes underneath. In this example, the referenced anim graph contains a **StateMachine** node, and the **StateMachine** node contains an **EntryNode** and an **ExitNode**.
+1. Continue double-clicking nodes to drill down into the nodes underneath. In this example, the referenced anim graph contains a **StateMachine** node, and the **StateMachine** node contains an **EntryNode** and an **ExitNode**.
 ![\[Double-click the next node.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-8.png)
 
-   When you view a referenced anim graph in this way, the referenced anim graph is read\-only.
+   When you view a referenced anim graph in this way, the referenced anim graph is read-only.
 ![\[Referenced anim graphs in the Animation Editor are read-only.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-9.png)
 
 1. The display above the grid shows your current location in the node hierarchy. To go back to a previous node, click the node name.
@@ -70,7 +70,7 @@ This section shows you how to create reference nodes in the **Animation Editor**
    The navigation pane opens up on the right side of the grid to show the hierarchy of nodes. The navigation pane displays all loaded anim graphs. The name of the current node is bold. The color of each node indicates its type. For example, the entry nodes are green and the exit nodes are red.
 ![\[The navigation pane showing the node hierarchy\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-12.png)
 
-1. To edit an external anim graph, right\-click the reference node that you assigned it to and choose **Open '***filename***.animgraph' file**. The changes that you make to the external anim graph are reflected in all anim graphs that reference it.
+1. To edit an external anim graph, right-click the reference node that you assigned it to and choose **Open '***filename***.animgraph' file**. The changes that you make to the external anim graph are reflected in all anim graphs that reference it.
 ![\[Right-clicking a reference node to edit the anim graph that is assigned to it.\]](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-13.png)
 
 ## Best Practices for Using Referenced Anim Graphs 

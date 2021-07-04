@@ -5,9 +5,9 @@ title: Flipbook Animation
 
 {{< preview-migrated >}}
 
-You can use the **FlipbookAnimation** component to create simple image\-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/component-sprite-sheets.md).
+You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/component-sprite-sheets.md).
 
-**To see in\-game examples of completed canvases with a FlipbookAnimation component**
+**To see in-game examples of completed canvases with a FlipbookAnimation component**
 
 1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects).
 

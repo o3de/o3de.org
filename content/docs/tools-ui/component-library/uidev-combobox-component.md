@@ -18,7 +18,7 @@ Follow these guidelines as you design your UI with comboboxes:
 
 1.  Use a dropdown list to give the user an option to make a single choice from a set of mutually exclusive options.
 
-1.  Use a dropdown list when the number of options is greater than 2 and less than "a lot". When you have only one or two options, use a [radio button](uidev-radio-button-component.md) group instead. It's difficult to prescribe an upper limit on the number of options, because it depends on context. However, it is acceptable to have a long list of choices when users are likely to be familiar with them and the options are well\-ordered and easily scannable to the eye.
+1.  Use a dropdown list when the number of options is greater than 2 and less than "a lot". When you have only one or two options, use a [radio button](uidev-radio-button-component.md) group instead. It's difficult to prescribe an upper limit on the number of options, because it depends on context. However, it is acceptable to have a long list of choices when users are likely to be familiar with them and the options are well-ordered and easily scannable to the eye.
 
 1.  Set a default value that most users would likely select. If you choose not to use a default value, include strong and clear placeholder text instead, such as "select size".
 

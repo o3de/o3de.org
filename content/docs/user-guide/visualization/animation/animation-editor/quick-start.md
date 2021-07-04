@@ -59,12 +59,12 @@ In the following procedure, create an animation graph and nodes.
 
 1. Navigate to the `/SamplesProject/AnimationSamples/Simple_JackLocomotion` directory. For the file name, enter **quickstart** and then click **Save** to save the `quickstart.animgraph` file.
 
-1. On the **Anim Graph** tab, right\-click the grid, and then select **Create Node**, **Sources**, **Motion**.
+1. On the **Anim Graph** tab, right-click the grid, and then select **Create Node**, **Sources**, **Motion**.
 ![\[Create a motion node in the animation graph.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-anim-graph-node.png)
 
 1. Select the **Motion0** node and in the **Attributes** pane, click **Select motions**. In the dialog box, select `Jack_Idle_ZUp.fbx` and then choose **OK**.
 
-1. Right\-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**.
+1. Right-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**.
 
 1. From the **Motion0** node, click and drag a line to the **BlendTree0** node. A transition line with an arrow connects the nodes.
 
@@ -107,9 +107,9 @@ In the following procedure, you use the blend tree node to build your blend tree
 
 **To blend the animations**
 
-1. In the animation graph, double\-click the **BlendTree0** node.
+1. In the animation graph, double-click the **BlendTree0** node.
 
-1. Right\-click the grid and choose **Create Node**, **Sources**, **Motion**.
+1. Right-click the grid and choose **Create Node**, **Sources**, **Motion**.
 
 1. Select the **Motion1** node.
 
@@ -120,7 +120,7 @@ In the following procedure, you use the blend tree node to build your blend tree
       The attributes for the **Motion1** node should look like this:
 ![\[Add the walk motion file to the Motion1 node.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-motion-node-walk.png)
 
-1. In the animation graph, right\-click the grid and choose **Create Node**, **Sources**, **Motion**.
+1. In the animation graph, right-click the grid and choose **Create Node**, **Sources**, **Motion**.
 
 1. Select the **Motion2** node.
 
@@ -131,7 +131,7 @@ In the following procedure, you use the blend tree node to build your blend tree
       The attributes for the **Motion2** node should look like this:
 ![\[Add the run motion file to the Motion2 node.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-motion-node-run.png)
 
-1. Right\-click the grid and choose **Create Node**, **Blending**, **Blend Two**.
+1. Right-click the grid and choose **Create Node**, **Blending**, **Blend Two**.
 
 1. Select the **BlendTwo0** node.
 
@@ -146,9 +146,9 @@ In the following procedure, you use the blend tree node to build your blend tree
    Your blend tree should look like the following:
 ![\[Create your blend tree in the animation graph.\]](/images/user-guide/actor-animation/animationeditorquickstart/animation-editor-quick-start-blend-tree-node.png)
 
-1. Right\-click the grid and choose **Create Node**, **Sources**, **Parameters**.
+1. Right-click the grid and choose **Create Node**, **Sources**, **Parameters**.
 
-1. Right\-click the grid and choose **Create Node**, **Math**, **Smoothing**.
+1. Right-click the grid and choose **Create Node**, **Math**, **Smoothing**.
 
 1. For **Parameters0** node, select the **speed** output box and drag the connector to the **Dest** input box of the **Smoothing0** node.
 

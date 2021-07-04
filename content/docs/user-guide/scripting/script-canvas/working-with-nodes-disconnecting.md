@@ -11,7 +11,7 @@ Script Canvas offers a variety of ways to delete connections between nodes.
 
 1. Pause your pointer over the connection. The white line becomes a line of moving blue dashes.
 
-1. Right\-click the blue dashed line.
+1. Right-click the blue dashed line.
 
 1. In the context menu, choose **Delete**.
 
@@ -19,17 +19,17 @@ Script Canvas offers a variety of ways to delete connections between nodes.
 
 1. Pause your pointer over the connection. The white line becomes a line of moving blue dashes.
 
-1. Left\-click the blue dashed line.
+1. Left-click the blue dashed line.
 
 1. Press **Delete**.
 **Note**
-You must left\-click the blue dashed line before you press **Delete**.
+You must left-click the blue dashed line before you press **Delete**.
 
 **To delete connections by using the **Alt** key**
 
 1. With the **Alt** key pressed, pause your pointer on the line. The line turns red.
 
-1. Left\-click the line.
+1. Left-click the line.
 
 **To delete a node's connections by "shaking" the node**
 

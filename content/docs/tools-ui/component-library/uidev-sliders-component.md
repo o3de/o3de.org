@@ -18,7 +18,7 @@ Use the `SliderInt` class for signed integer values, and the `SliderDouble` clas
 
  **Slider combo**
 
-A slider combo is a combination of the slider and spinbox widgets. In practice, sliders can be difficult for the user to manipulate with precision. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine\-tuning capability of the spinbox.
+A slider combo is a combination of the slider and spinbox widgets. In practice, sliders can be difficult for the user to manipulate with precision. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine-tuning capability of the spinbox.
 
 ![\[component slider combo style\]](/images/tools-ui/component-slider-combo-style.png)
 

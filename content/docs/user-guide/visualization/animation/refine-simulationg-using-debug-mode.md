@@ -15,7 +15,7 @@ In the following procedure, use the debug mode to refine the simulated object's 
    Use the speed slider to reduce the speed of the animation. Note that the tassel moves through the neck and arm of the actor.
 ![\[Slow down the animation to see how the simulated object moves with the actor.\]](/images/user-guide/actor-animation/simulated-objects-21.gif)
 
-1. In the **SimulatedObject0** node, click the right\-corner box. This enables debug rendering for the node.
+1. In the **SimulatedObject0** node, click the right-corner box. This enables debug rendering for the node.
 **Example**
 ![\[Enable debug mode for the simulated object in the anim graph.\]](/images/user-guide/actor-animation/simulated-objects-19.gif)
 
@@ -58,7 +58,7 @@ In the following procedure, use the debug mode to refine the simulated object's 
 
 1. If you're satisfied with the results, save the actor.
 
-1. To disable debugging mode, click the upper\-right box again on the **SimulatedObject0** node.
+1. To disable debugging mode, click the upper-right box again on the **SimulatedObject0** node.
 **Example**
 
    The following animation is the finished debugged version of the actor running. Note that the tassel no longer passes through the actor's body.

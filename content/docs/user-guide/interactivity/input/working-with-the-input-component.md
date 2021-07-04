@@ -149,7 +149,7 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. Press **Ctrl+G** to enter game mode.
 
-1. Press the keyboard spacebar so that your entity rotates on the local z\-axis.
+1. Press the keyboard spacebar so that your entity rotates on the local z-axis.
 **Example**
 ![\[Input bindings configuration example in the Asset Editor.\]](/images/user-guide/component/input-configuration-example-gamemode.gif)
 

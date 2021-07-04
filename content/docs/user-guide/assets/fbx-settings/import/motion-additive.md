@@ -5,7 +5,7 @@ title: Creating Additive Animations
 
 {{< preview-migrated >}}
 
-Additive animations are animations that you can add as layers on top of a base animation. They are commonly used to add a partial\-body animation to a full\-body animation. Because additive animations do not interfere with base animation functionality, you can reuse the same base to create many variations in motion. Reusing the base also has the advantage of greatly reducing the overall asset count.
+Additive animations are animations that you can add as layers on top of a base animation. They are commonly used to add a partial-body animation to a full-body animation. Because additive animations do not interfere with base animation functionality, you can reuse the same base to create many variations in motion. Reusing the base also has the advantage of greatly reducing the overall asset count.
 
 Because additive animations preserve the underlying animation's style, they are useful for adding poses and animations to a character's upper body. For example, you can use additive animations to make a character breathe, look around, flinch, or change posture. This adds variety to the animations and avoids what might otherwise be a monotonous look.
 
@@ -19,7 +19,7 @@ You can create additive animations in two ways:
 
 1. In the **Asset Browser**, locate the FBX animation file that you want to convert into an additive animation.
 
-1. Right\-click the FBX animation file and choose **Edit Settings**.
+1. Right-click the FBX animation file and choose **Edit Settings**.
 
 1. In the **FBX Settings** dialog box, on the **Motions** tab, click **Add Modifier**, and then choose **Additive Motion**.
 

@@ -13,7 +13,7 @@ The **Variable Manager** shows the variables that are used in your Script Canvas
 + [Adding and Configuring Variables](#script-canvas-add-and-configure-variable-nodes)
 + [Setting Default Values for Variables](#script-canvas-modify-variable-values)
 + [Creating Get or Set Variable Nodes](#script-canvas-create-get-or-set-nodes)
-+ [Creating Value\-Changed Nodes](#script-canvas-create-on-value-changed-nodes)
++ [Creating Value-Changed Nodes](#script-canvas-create-on-value-changed-nodes)
 + [Deleting Variables](#script-canvas-delete-variable-nodes)
 + [Using Container Types (Arrays and Maps)](/docs/user-guide/scripting/script-canvas/containers.md)
 
@@ -34,9 +34,9 @@ Common variable types are pinned to the top of the list by default. You can cust
 ![\[Configure variable properties in the Script Canvas Node Inspector.\]](/images/user-guide/scripting/script-canvas/node-inspector-properties-default.png)
 
    For example, if you add a **Color** variable, you can do the following:
-   + For **Name**, enter a name to identify that color variable. You can also double\-click the name in the **Variable Manager** to rename the variable.
+   + For **Name**, enter a name to identify that color variable. You can also double-click the name in the **Variable Manager** to rename the variable.
    + For **Color**, enter an RGB value or use the color picker.
-   + For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas editor, or leave the default at \-1.
+   + For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas editor, or leave the default at -1.
    + For **Scope**, select **In** to show the variable property and value under the assigned **[Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/)** component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph.
 **Note**
 This setting allows you to use the same Script Canvas graph for more than one entity, but customize part of the graph for a specific entity. When you change the variable value on a component, that value takes precedence over the default value that is specified in the graph.
@@ -55,7 +55,7 @@ You can set the default value for variables in the **Node Inspector** or the **V
 1. Do one of the following to update the properties for your variable:
    + In the **Node Inspector**, update the variable values as needed.
 ![\[Set the variable default values in the Node Inspector.\]](/images/user-guide/scripting/script-canvas/node-inspector-modify-variable-values.png)
-   + In the **Variable Manager**, update certain variable values. These values appear in a third column and can be selected or double\-clicked.
+   + In the **Variable Manager**, update certain variable values. These values appear in a third column and can be selected or double-clicked.
 ![\[Set the variable default values in the Variable Manager.\]](/images/user-guide/scripting/script-canvas/variable-manager-modify-variable-values.png)
 
 1. In the **Script Canvas** editor, choose **File**, **Save** to save your changes to the graph.
@@ -67,17 +67,17 @@ You can use get and set variable nodes to retrieve or set the variable's value.
 **To create get or set variable nodes**
 + Do one of the following:
   + Drag the variable from the **Variable Manager** to the canvas, and then choose **Get *variable name*** or **Set *variable name***.
-  + Right\-click the variable in the **Variable Manager** and choose **Get *variable name*** or **Set *variable name***.
+  + Right-click the variable in the **Variable Manager** and choose **Get *variable name*** or **Set *variable name***.
 ![\[Right-click to create a get or set variable in the Script Canvas Variable Manager.\]](/images/user-guide/scripting/script-canvas/variable-manager-create-get-set-variable.png)
   + Use the following keyboard shortcuts:
     + Press **Shift** and drag the variable from the **Variable Manager** to the canvas to create a get variable node.
     + Press **Alt** and drag the variable from the **Variable Manager** to the canvas to create a set variable node.
 
-## Creating Value\-Changed Nodes 
+## Creating Value-Changed Nodes 
 
-You can use **OnVariableValueChanged** (value\-changed) event nodes to react to a change in a variable's value.
+You can use **OnVariableValueChanged** (value-changed) event nodes to react to a change in a variable's value.
 
-**To create value\-changed nodes**
+**To create value-changed nodes**
 + Do one of the following:
   + Drag the variable from the **Variable Manager** to the canvas, and then choose **On *variable name* Changed**.
 ![\[Drag a variable from the Script Canvas Variable Manager to the canvas to create an on-value-changed node.\]](/images/user-guide/scripting/script-canvas/variable-manager-create-on-value-changed.gif)
@@ -92,5 +92,5 @@ You can delete variables from the graph or the **Variable Manager**.
 + Do one of the following:
   + Select the variable node in the canvas and press **Delete**.
   + Select the variable in the **Variable Manager** and press **Delete**.
-  + Right\-click the variable in the **Variable Manager** and choose **Delete *variable name***.
+  + Right-click the variable in the **Variable Manager** and choose **Delete *variable name***.
 ![\[Delete a variable in the Script Canvas Variable Manager.\]](/images/user-guide/scripting/script-canvas/variable-manager-delete-variable-node.png)

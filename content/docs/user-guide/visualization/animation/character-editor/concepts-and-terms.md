@@ -34,12 +34,12 @@ Motion set files have the `.motionset` extension \(for example, `MainSet.motions
 **Motion events**
 Markings at specific time values inside the motion files are called *motion events* (also called notifiers or notifications). A motion event has a type string (for example, "SOUND") and parameter string (for example, "Footstep").
 Motion events can have a fixed time value or range. Events with a single time value are called *tick events*. Events with specified start and end times are called *ranged events*.
-You can specify event presets, which are pre\-setup types of events that you drag and drop into the event tracks. An *event track* is a group of events that you enable or disable. For example, you can add all sound effects to an event track specifically for sounds.
+You can specify event presets, which are pre-setup types of events that you drag and drop into the event tracks. An *event track* is a group of events that you enable or disable. For example, you can add all sound effects to an event track specifically for sounds.
 Motion event data is stored in the motion FBX's `.assetinfo` file.
 
 **Synchronization**
-You can use *full clip\-base sync* or *sync tracks * to synchronize motion clips to keep a character's motions in sync while blending. For example, if your character is running, synchronization helps keep the right and left feet in sync.
-Full clip\-based sync warps the motions so that there is a constant change in playback time of the child motion.
+You can use *full clip-base sync* or *sync tracks * to synchronize motion clips to keep a character's motions in sync while blending. For example, if your character is running, synchronization helps keep the right and left feet in sync.
+Full clip-based sync warps the motions so that there is a constant change in playback time of the child motion.
 Sync tracks use motion events, where the events mark specific moments (for example, where the right and left feet are on the floor). This system is also known as phase matching and dynamically controls the playback speed.
 
 **Floats**
@@ -185,7 +185,7 @@ After you create your parameters in the **Parameter** pane, you can add a parame
 
 **To add a parameter node to your blend tree**
 
-1. In the **Animation Editor**, right\-click the animation graph grid and choose **Create Node**, **Sources**, **Parameters**.
+1. In the **Animation Editor**, right-click the animation graph grid and choose **Create Node**, **Sources**, **Parameters**.
 
 1. In the **Attributes** pane, click **select parameter** and specify the parameter that you want.
 

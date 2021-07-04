@@ -10,7 +10,7 @@ The **PhysX Rigid Body** component defines the entity as a rigid object that is 
 You can specify two main modes for a **PhysX Rigid Body** component.
 
 **Dynamic**
-Dynamic rigid bodies will be fully simulated by O3DE and respond to collision events with other rigid bodies. O3DE will apply forces to two dynamic objects that collide, which results in a realistic physics simulation. The simulation will also apply a gravity force to rigid bodies in dynamic mode. You can disable this feature for each rigid body on the component. Dynamic rigid bodies should be used for semi\-realistic solid objects that are effected by gravity and other forces.
+Dynamic rigid bodies will be fully simulated by O3DE and respond to collision events with other rigid bodies. O3DE will apply forces to two dynamic objects that collide, which results in a realistic physics simulation. The simulation will also apply a gravity force to rigid bodies in dynamic mode. You can disable this feature for each rigid body on the component. Dynamic rigid bodies should be used for semi-realistic solid objects that are effected by gravity and other forces.
 Dynamic is the default.
 
 **Kinematic**
@@ -41,16 +41,16 @@ Specifies the starting linear velocity of the rigid body when spawned. This crea
 Specifies the starting angular velocity of the rigid body when spawned. This creates rotation in the direction of the angular velocity.
 
 **Linear damping**
-Specifies the rate of decay over time for linear velocity even if no forces are acting on the rigid body. A non\-zero eventually stops the rigid body if no linear force is applied.
-Value must be non\-negative between **0** and **infinity**.
+Specifies the rate of decay over time for linear velocity even if no forces are acting on the rigid body. A non-zero eventually stops the rigid body if no linear force is applied.
+Value must be non-negative between **0** and **infinity**.
 
 **Angular damping**
-Specifies the rate of decay over time for angular velocity even if no forces are acting on the rigid body. A non\-zero eventually stops the rigid body if no torque force is applied.
-Value must be non\-negative between **0** and **infinity**.
+Specifies the rate of decay over time for angular velocity even if no forces are acting on the rigid body. A non-zero eventually stops the rigid body if no torque force is applied.
+Value must be non-negative between **0** and **infinity**.
 
 **Sleep threshold**
 Specifies the kinetic energy per unit mass below which the rigid body can go to sleep.
-Value must be non\-negative between **0** and **infinity**.
+Value must be non-negative between **0** and **infinity**.
 
 **Start asleep**
 When enabled, the rigid body component is asleep when the entity is spawned, and will wake when a sufficient force is applied.
@@ -98,8 +98,8 @@ When **Compute inertia** is disabled, an **Inertia diagonal** can be specified a
 **Maximum angular velocity**
 Angular velocity is clamped to the specified value. Valid values range from **0** to **infinity**.
 
-**Include non\-simulated shapes in Mass**
-When enabled, non\-simulated shapes will be included in the mass, center of mass, and inertia calculations.
+**Include non-simulated shapes in Mass**
+When enabled, non-simulated shapes will be included in the mass, center of mass, and inertia calculations.
 
 **Debug draw COM**
 When enabled, the center of mass is displayed for this PhysX rigid body.

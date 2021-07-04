@@ -25,7 +25,7 @@ The UI system uses the font family definitions to determine which font asset to 
 + **Unstyled** - Font representing text with no styling applied. In the preceding example, this is `myfontfamily-regular.xml`.
 + **Bold** - Font representing text with bold styling.
 + **Italic** - Font representing text with italic styling.
-+ **Bold\-Italic** - Font representing text with both bold and italic styling.
++ **Bold-Italic** - Font representing text with both bold and italic styling.
 
 ## Font Family File XML 
 

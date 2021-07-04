@@ -81,7 +81,7 @@ Use the following attributes to customize your image. Only the `src` attribute i
 | vAlign | vAlign="center" |  Alignment of image in the text area. The text area refers to the total height of the largest glyph in the font. If you don't specify this attribute, the default alignment is `baseline`.   |
 | height | height="100" |  Sets the image height and adjusts its width to preserve the aspect ratio. If you don't specify this attribute, the default alignment is `fontAscent`.   |
 | scale | scale="0.8" | Scales the image by the specified scale factor. If not specified, this attribute defaults to 1.0. |
-| yOffset | yOffset="\-3" |  Offsets the image vertically by the specified float value in pixels. If not specified, this attribute defaults to `0`.  |
+| yOffset | yOffset="-3" |  Offsets the image vertically by the specified float value in pixels. If not specified, this attribute defaults to `0`.  |
 | xPadding | xPadding="6" |  Adds equal spacing before and after the image by the specified float value in pixels. If not specified, this attribute defaults to 0.0.  |
 | lPadding | lPadding="10" |  Adds spacing to the left of the image by the specified float value in pixels. If not specified, this attribute defaults to 0.0.  |
 | rPadding | rPadding="2" |  Adds spacing to the right of the image by the specified float value in pixels. If not specified, this attribute defaults to 0.0. |

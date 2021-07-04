@@ -17,11 +17,11 @@ When you create a **Navigation Area**, all areas that are traversable by the spe
 
 ![\[Navigation Area\]](/images/user-guide/component/component-navigation-mesh.png)
 
-You can use a **[Navigation Seed](/docs/user-guide/components/reference/ai/nav-seed/)** component to fine\-tune AI accessibility.
+You can use a **[Navigation Seed](/docs/user-guide/components/reference/ai/nav-seed/)** component to fine-tune AI accessibility.
 
 **To add a Navigation Area** {#create-navigation-area}
 
-1. In the Viewport, near where you want to create your navigation area, right\-click and choose **Create entity**.
+1. In the Viewport, near where you want to create your navigation area, right-click and choose **Create entity**.
 
 1. With your new entity selected in the **Entity Outliner**, [add](/docs/userguide/components/working-adding.md) the **Navigation Area** component to it.
 ![\[Navigation Area component properties.\]](/images/user-guide/component/component-nav-area-1.png)

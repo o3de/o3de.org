@@ -58,7 +58,7 @@ Add a comment to the file. You can add a comment about changes made to the `.fbx
 
 ![\[The FBX Settings Actors tab Coordinate system change modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change.png)
 
-Modify the coordinate system of the actor. Third\-party content creation applications use varying coordinate systems with content applications often rotating the direction of the forward axis. The **Facing direction** property can be set to rotate the actor 180 degrees around its up axis to account for this difference. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged.
+Modify the coordinate system of the actor. Third-party content creation applications use varying coordinate systems with content applications often rotating the direction of the forward axis. The **Facing direction** property can be set to rotate the actor 180 degrees around its up axis to account for this difference. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged.
 
 ## Level of Detail modifier 
 
@@ -150,7 +150,7 @@ The minimum bone weight per vertex. Weight values beneath this threshold are ign
 
 The **Tangents** modifier generates or exports tangents and bitangents from your `.fbx` file. You should use the same tangent space you use to generate normal maps to achieve the desired appearance in O3DE.
 
-Normal maps can make a surface appear as though it has more geometric surface detail than exists in the mesh. The normals in the map are in tangent space which points in the positive Z direction. Tangent space is local to the surface and is used to transform the normals in the normal map into world space so the material can be lit and rendered correctly on a deforming surface such as a character mesh. You can create tangents and bitangents in your third\-party content application and save them as vertex attributes, then export the tangents with the **Tangents** modifier, or use the **Tangents** modifier to generate tangents when the mesh for this **Actor group** is processed.
+Normal maps can make a surface appear as though it has more geometric surface detail than exists in the mesh. The normals in the map are in tangent space which points in the positive Z direction. Tangent space is local to the surface and is used to transform the normals in the normal map into world space so the material can be lit and rendered correctly on a deforming surface such as a character mesh. You can create tangents and bitangents in your third-party content application and save them as vertex attributes, then export the tangents with the **Tangents** modifier, or use the **Tangents** modifier to generate tangents when the mesh for this **Actor group** is processed.
 
 **Tangent space**
 Defines the tangent space that O3DE uses for an actor. Choose from the following options:

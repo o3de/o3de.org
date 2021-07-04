@@ -6,7 +6,7 @@ title: O3DE UI table view component
 
 {{< preview-migrated >}}
 
-Use the **table view** component to present multiple columns of structured data in a table format. By default, this component employs sortable columns and "zebra striping" \- where the background color of rows alternate \- to help you create an easily readable, scannable, and sortable presentation of data.
+Use the **table view** component to present multiple columns of structured data in a table format. By default, this component employs sortable columns and "zebra striping" - where the background color of rows alternate - to help you create an easily readable, scannable, and sortable presentation of data.
 
 ![\[component table view example\]](/images/tools-ui/component-table-view-example.png)
 

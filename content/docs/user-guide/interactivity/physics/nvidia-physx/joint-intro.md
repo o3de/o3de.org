@@ -30,9 +30,9 @@ The example image below is a simple demonstration of the three joint types. In e
 ## PhysX joint types 
 
 See the linked component reference below for information on the three PhysX joint types:
-+ [ PhysX Ball Joint component reference ](/docs/user-guide/components/reference/physx/ball-joint/) \- The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes.
-+ [ PhysX Fixed Joint component reference ](/docs/user-guide/components/reference/physx/fixed-joint/) \- The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis.
-+ [ PhysX Hinge Joint component reference ](/docs/user-guide/components/reference/physx/hinge-joint/) \- The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis.
++ [ PhysX Ball Joint component reference ](/docs/user-guide/components/reference/physx/ball-joint/) - The **PhysX Ball Joint** component allows freedom of rotation of the leader rigid body in two axes.
++ [ PhysX Fixed Joint component reference ](/docs/user-guide/components/reference/physx/fixed-joint/) - The **PhysX Fixed Joint** component does not allow freedom of rotation of the leader rigid body in any axis.
++ [ PhysX Hinge Joint component reference ](/docs/user-guide/components/reference/physx/hinge-joint/) - The **PhysX Hinge Joint** component allows freedom of rotation of the leader rigid body in one axis.
 
 ## PhysX joint setup 
 
@@ -119,7 +119,7 @@ Maximum force and maximum torque modes display a gray box that you can click and
 
 ![\[PhysX joint swing limits mode\]](/images/user-guide/physx/physx/ui-physx-joint-swing-limit-mode.png)
 
-Swing limits mode displays a ring gizmo at the local root of the joint that you can use to rotate the swing limits on the joint's x\-axis, and a scale gizmo that you can use to scale the swing limits uniformly or non\-uniformly on the joint's y\- and z\-axes. Swing limits mode is available only when the **Limits** property is enabled for the ball joint component.
+Swing limits mode displays a ring gizmo at the local root of the joint that you can use to rotate the swing limits on the joint's x-axis, and a scale gizmo that you can use to scale the swing limits uniformly or non-uniformly on the joint's y- and z-axes. Swing limits mode is available only when the **Limits** property is enabled for the ball joint component.
 
 ### Twist limits mode 
 

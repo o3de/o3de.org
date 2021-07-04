@@ -15,7 +15,7 @@ The chunks of blast assets are held together by bonds. Blast materials determine
 
 **Important**
 Blast materials are a critical component in creating realistic destructible entities. Passive forces like gravity can have a cumulative damage effect on a blast asset, causing destruction to trigger when no obvious external force or collider has acted on the asset.
-Large\-scale destructible assets such as buildings have large chunks that require stronger bonds and higher damage thresholds to prevent premature triggering of destruction.
+Large-scale destructible assets such as buildings have large chunks that require stronger bonds and higher damage thresholds to prevent premature triggering of destruction.
 
 **Contents**
 + [Create Blast materials](#nvidia-blast-create-blast-material)

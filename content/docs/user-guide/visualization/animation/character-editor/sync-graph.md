@@ -238,13 +238,13 @@ In the example, the synchronization state of the primary and secondary graphs an
 | Keystroke | Description | Event Value Multiplier |
 | --- | --- | --- |
 | 1 | Turns on sync mode. | 1 |
-| 2 | Turns off sync mode (off by default). | \-1 |
+| 2 | Turns off sync mode (off by default). | -1 |
 | S | Fires the gun. | 1 |
-| D | Stops the gun from firing. | \-1 |
+| D | Stops the gun from firing. | -1 |
 
 To gather these inputs, the example adds [Input](/docs/user-guide/components/reference/gameplay/input/) components to the robot entity and to the gun entity.
 
-To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project. The Input Management Framework converts input to user\-defined gameplay events. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`.
+To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project. The Input Management Framework converts input to user-defined gameplay events. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`.
 
 Each Input component references an `.inputbindings` file. An `.inputbindings` file binds a set of inputs to an event. These inputs can come from sources like a mouse, keyboard, or game controller. You can use the **Input Bindings Editor** in O3DE Editor to create an input bindings file. For more information, see [Working with the Input Component](/docs/user-guide/interactivity/input/working-with-the-input-component.md).
 

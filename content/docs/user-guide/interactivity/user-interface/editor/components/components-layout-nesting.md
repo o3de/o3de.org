@@ -8,7 +8,7 @@ title: Nesting Layout Components
 
 You can nest layout components within other layout components.
 
-To see an in\-game example of a completed canvas with a nested layout, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Nested Layout**. Press **Esc** to exit the game.
+To see an in-game example of a completed canvas with a nested layout, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Nested Layout**. Press **Esc** to exit the game.
 
 To view that same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Layout` directory and open the `\NestedLayout.uicanvas`.
 

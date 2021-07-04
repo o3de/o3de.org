@@ -135,7 +135,7 @@ We recommend that you keep field names simple for future proofing. If your compo
 The preceding example reflects two primitive types-a float, and a string-as well as a container (vector) of some structure. AZ reflection, serialization, and editing natively support a wide variety of types:
 + Primitive types, including integers (signed and unsigned, all sizes), floats, and strings
 + Enums
-+ `AZStd` containers (flat and associative), including `AZStd::vector`, `AZStd::list`, `AZStd::map`, `AZStd::unordered_map`, `AZStd::set`, `AZStd::unordered_set`, `AZStd:pair`, `AZStd::bitset`, `AZStd::array`, fixed C\-style arrays, and others.
++ `AZStd` containers (flat and associative), including `AZStd::vector`, `AZStd::list`, `AZStd::map`, `AZStd::unordered_map`, `AZStd::set`, `AZStd::unordered_set`, `AZStd:pair`, `AZStd::bitset`, `AZStd::array`, fixed C-style arrays, and others.
 + Pointers, including `AZStd::smart_ptr`, `AZStd::intrusive_ptr`, and raw native pointers.
 + Any class or structure that has also been reflected.
 

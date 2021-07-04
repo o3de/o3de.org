@@ -13,7 +13,7 @@ In the following procedure, add motion to a tassel attached to the character.
 
 1. In the **Skeleton Outliner**, select the bones to add to a simulated object. Enter a name in the search bar or filter for results.
 
-1. Select the bones, right\-click, and choose **Simulated Object**, **Add selected joints**, **<New simulated object>**.
+1. Select the bones, right-click, and choose **Simulated Object**, **Add selected joints**, **<New simulated object>**.
 **Example**
 
    The `L_tassle_01_JNT` bone and its children are selected.

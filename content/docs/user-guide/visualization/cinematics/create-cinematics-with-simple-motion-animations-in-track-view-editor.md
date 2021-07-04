@@ -22,7 +22,7 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 
 **To add the Simple Motion component in the Track View editor**
 
-1. In O3DE Editor, right\-click in the viewport and choose **Create entity**.
+1. In O3DE Editor, right-click in the viewport and choose **Create entity**.
 
 1. Enter a name for the entity.
 
@@ -40,14 +40,14 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 
 1. Click the **Add Sequence **icon ![\[Add track view sequence icon\]](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-2.png), enter a sequence name, and then click **OK**.
 
-1. Select the entity in the viewport, right\-click the sequence, and then choose **Add Selected Entity**.
+1. Select the entity in the viewport, right-click the sequence, and then choose **Add Selected Entity**.
 
    This adds the entity and its components to the track view sequence.
 ![\[Entity and components added to the track view sequence.\]](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-3.png)
 
-1. Right\-click** Simple Motion**, choose **Add Track**, and then choose the **Motion** option.
+1. Right-click** Simple Motion**, choose **Add Track**, and then choose the **Motion** option.
 
-1. In the timeline, for **Simple Motion**, double\-click to create to a key.
+1. In the timeline, for **Simple Motion**, double-click to create to a key.
 
 1. Click the key and in the **Key Properties** dialog box, specify the following:
 
@@ -84,13 +84,13 @@ The **Blend In Time** and **Blend Out Time** parameters affect the bone weight t
 
 **To blend motions in the Track View Editor**
 
-1. Double\-click the first key and for **Blend Out Time**, enter `0.33`. This allows the first motion, `jack_idle_to_walk.motion`, to blend into the next motion.
+1. Double-click the first key and for **Blend Out Time**, enter `0.33`. This allows the first motion, `jack_idle_to_walk.motion`, to blend into the next motion.
 **Example**
 ![\[Key properties for the first motion for blending.\]](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-7.png)
 
-1. For the **Simple Motion** track, double\-click the timeline to create a second key.
+1. For the **Simple Motion** track, double-click the timeline to create a second key.
 
-1. Double\-click the key again and in the **Key Properties** dialog box, specify the following:
+1. Double-click the key again and in the **Key Properties** dialog box, specify the following:
 
    1. For **Motion**, click the folder icon and specify the next motion, such as the `jack_strafe_run_forwards.motion` file.
 

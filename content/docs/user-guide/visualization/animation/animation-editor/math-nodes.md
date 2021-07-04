@@ -77,7 +77,7 @@ You don't need to use **Vector Decompose** nodes if you are simply adding or sub
 
 ## Boolean Logic Node 
 
-Using the **Boolean Logic** node, you can apply a function to two boolean inputs. Boolean values are always `1` or `0` (true or false), such as a check box item. The **Boolean Logic** node sees any non\-zero value as true \(`1`\) and any zero value as false \(`0`\). For example, values `0.54`, `10.43` or \-`2.25` are all true \(`1`\). Only `0.0` values are false \(`0`\).
+Using the **Boolean Logic** node, you can apply a function to two boolean inputs. Boolean values are always `1` or `0` (true or false), such as a check box item. The **Boolean Logic** node sees any non-zero value as true \(`1`\) and any zero value as false \(`0`\). For example, values `0.54`, `10.43` or -`2.25` are all true \(`1`\). Only `0.0` values are false \(`0`\).
 
 When choosing an output type, you can output from the **Float** output or the **Bool** output. The **Bool** output passes on a `0` or `1`. The **Float** output passes on a float value that you specify in the attributes.
 

@@ -39,7 +39,7 @@ The **PhysX Character Controller** has the following component properties.
 | Property | Description |
 | --- | --- |
 |  **Collision Layer**  |  Collision layer assigned to the controller. The default is **Default**.  |
-|  **Collides With**  |  Collision layers that this character controller collides with. Possible values are those that you define in the collision groups section of the PhysX configuration.  You can specify the following values:   The collision filters determine whether dynamic objects collide with the controller. A separate set of filters control what objects can impede the character from moving. The movement filters are currently hard\-coded so that static objects obstruct character movement.   |
+|  **Collides With**  |  Collision layers that this character controller collides with. Possible values are those that you define in the collision groups section of the PhysX configuration.  You can specify the following values:   The collision filters determine whether dynamic objects collide with the controller. A separate set of filters control what objects can impede the character from moving. The movement filters are currently hard-coded so that static objects obstruct character movement.   |
 |  **Library (Physics Materials)** |  The physics material library of the project.   |
 |  **Slot (Physics Materials)** |  Choose a physics material for this character controller collider.   |
 |  **[Maximum Slope Angle](#component-physx-character-controller-maximum-slope-angle)**  |  Angle in degrees of the largest slope that the character controller can climb.   |

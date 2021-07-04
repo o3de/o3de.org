@@ -10,7 +10,7 @@ You can use the **Slider** component to make an element behave like a slider. Th
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-slider-components.png)
 
-To see in\-game examples of completed canvases with the **Slider** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Slider**. You can view examples of different slider behavior and positioning. Press **Esc** to exit the game.
+To see in-game examples of completed canvases with the **Slider** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Slider**. You can view examples of different slider behavior and positioning. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Slider` directory. You can open the following canvases:
 + `Behavior.uicanvas` - Examples of slider behaviors such as fill type, handles, and buttons to control the slider

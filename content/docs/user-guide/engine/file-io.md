@@ -7,7 +7,7 @@ title: Raw File Access in O3DE
 
 This topic describes how to directly access files in O3DE for special use cases. However, it's recommended that you use the O3DE Asset system to work with asset files. In most cases, raw file access is not required. For more information see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/intro.md).
 
-When you write an `AssetHandler`\-derived class to load assets in O3DE, runtime file handling is automatic. However, some cases might require lower levels of file access at run time. Scenarios that might require low\-level file access include:
+When you write an `AssetHandler`-derived class to load assets in O3DE, runtime file handling is automatic. However, some cases might require lower levels of file access at run time. Scenarios that might require low-level file access include:
 + Loading raw configuration files from the deployment root during startup before `.pak` files are mounted and available.
 + Direct access to the files in a `.pak` file.
 + Direct access to files at arbitrary locations on disk.
@@ -19,7 +19,7 @@ The few cases where you need to work directly with files are covered by a small 
 
 ## The FileIOBase Virtual Class 
 
-The pure\-virtual base class `FileIOBase` \(located in `\dev\Code\Framework\AzCore\AzCore\IO AzCore\IO\FileIO.h`\) defines the API for accessing files. It is a basic blocking low\-level file API, as the following code shows:
+The pure-virtual base class `FileIOBase` \(located in `\dev\Code\Framework\AzCore\AzCore\IO AzCore\IO\FileIO.h`\) defines the API for accessing files. It is a basic blocking low-level file API, as the following code shows:
 
 ```
 class FileIOBase
@@ -51,7 +51,7 @@ AZ::IO::FileIOBase::GetInstance()
 
 ### Notes 
 + All file operations in the `FileIOBase` class are blocking.
-+ `FileIOBase` file operations behave similarly to the C language API `fopen`, `fread`, and `fclose` operations, but are 64\-bit aware and work with very large files.
++ `FileIOBase` file operations behave similarly to the C language API `fopen`, `fread`, and `fclose` operations, but are 64-bit aware and work with very large files.
 + Because the `FileIOBase` instance is created and initialized when the engine initializes, it is generally always available. It can inspect `.pak` files and arbitrary files on disk. For more information, see [The FileIO Stack](#file-access-direct-fileio-stack) later in this document.
 
 **Note**
@@ -140,7 +140,7 @@ if (FileIOBase::GetInstance()->Open("@log@/gamelog.txt", AOpenMode::ModeAppend|M
 
 The `FileIOStream` class in the `AZ::IO` namespace automatically closes a file when it goes out of scope and presents it as a `GenericStream` interface. This provides compatibility for systems such as the streamer system and serialization system that expect generic streams.
 
-### Tools\-Only Aliases 
+### Tools-Only Aliases 
 
 The following aliases are applicable only for editor tools.
 
@@ -159,7 +159,7 @@ To service the needs of the game client and tools, more than one `FileIO` instan
 
 ![\[File access in local and remote scenarios\]](/images/user-guide/file-access-direct-1.png)
 
-The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non\-PC devices such as [Android](/docs/userguide/mobile/android/configure-project#android-vfs) and [iOS](/docs/user-guide/platforms/ios/virtual-file-system.md). VFS is required for [live reloading of assets](/docs/user-guide/assets/live-reloading.md). Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
+The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as [Android](/docs/userguide/mobile/android/configure-project#android-vfs) and [iOS](/docs/user-guide/platforms/ios/virtual-file-system.md). VFS is required for [live reloading of assets](/docs/user-guide/assets/live-reloading.md). Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
 
 ```
 -- remote_filesystem - enable Virtual File System (VFS)

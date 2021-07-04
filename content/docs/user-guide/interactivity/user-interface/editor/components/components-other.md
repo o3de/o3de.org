@@ -17,7 +17,7 @@ You can add either or both of the fader and mask components to an element.
 
 You can use a **Fader** component to simultaneously adjust the transparency of an element and its children.
 
-**To see in\-game examples of completed canvases with a **Fader** component**
+**To see in-game examples of completed canvases with a **Fader** component**
 
 1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects).
 

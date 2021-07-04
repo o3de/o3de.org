@@ -29,7 +29,7 @@ The **PhysX** tab in **FBX Settings** has many options to generate PhysX collide
 
    Use the **Export as** property to generate the appropriate type of PhysX colliders for your use scenario. **Export as** has three options and one property that are important to understand:
 **Triangle mesh**
-Triangle mesh generates a triangle mesh collider from the selected meshes. Triangle mesh colliders can offer high precision collisions because they can accurately represent the shape of the visible render mesh. Because triangle meshes can be complex and non\-convex, they might carry a performance penalty compared to convex and primitive colliders. Triangle mesh colliders can only be used with static and kinematic entities.
+Triangle mesh generates a triangle mesh collider from the selected meshes. Triangle mesh colliders can offer high precision collisions because they can accurately represent the shape of the visible render mesh. Because triangle meshes can be complex and non-convex, they might carry a performance penalty compared to convex and primitive colliders. Triangle mesh colliders can only be used with static and kinematic entities.
 **Primitive**
 Primitive either uses the selected primitive shape or determines the most appropriate primitive shape for the collider based on the selected meshes. The primitive shape is automatically fit over the selected meshes. Primitive shapes include box, sphere, and capsule. Primitive shapes offer the highest simulation performance, but might not closely represent the shape of the visible render mesh. Primitives can be used for static, kinematic, and, dynamic entities.
 **Convex**
@@ -43,4 +43,4 @@ When generating **Primitive** or **Convex** colliders, you have the option to de
 
 1. Close the **FBX Settings** window.
 **Note**
-When you close **FBX Settings** after making changes, you might see a pop\-up window warning of unsaved changes. This is a known issue and can be disregarded.
+When you close **FBX Settings** after making changes, you might see a pop-up window warning of unsaved changes. This is a known issue and can be disregarded.

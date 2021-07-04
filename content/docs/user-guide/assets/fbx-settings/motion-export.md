@@ -29,4 +29,4 @@ title: FBX Settings motion export
 
 1. Close the **FBX Settings** window.
 **Note**
-When you close **FBX Settings** after making changes, you might see a pop\-up window warning of unsaved changes. This is a known issue and can be disregarded.
+When you close **FBX Settings** after making changes, you might see a pop-up window warning of unsaved changes. This is a known issue and can be disregarded.

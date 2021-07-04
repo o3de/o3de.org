@@ -24,7 +24,7 @@ You can pin an inspector from the **Entity Outliner** or the **Entity Inspector*
 
 1. Do one of the following:
 
-   1. In the **Entity Outliner**, right\-click the entity and then choose **Open pinned Inspector**.
+   1. In the **Entity Outliner**, right-click the entity and then choose **Open pinned Inspector**.
 ![\[In the Entity Outliner, choose Open pinned Inspector to pin an inspector for that entity.\]](/images/user-guide/component/entity_system/component-entity-inspector-pin-1.png)
 
    1. In the **Entity Inspector**, click the pin icon.

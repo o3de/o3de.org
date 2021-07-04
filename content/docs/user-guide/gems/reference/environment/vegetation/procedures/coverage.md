@@ -13,7 +13,7 @@ After you create a vegetation patch, you can expand it so that your vegetation c
 
 1. Click **Add Component** and select the Box Shape component.
 
-1. In the **Box Shape** component, specify values for the x\-, y\-, and z\-axes to match your level. For example, if you created a level with a texture dimension of 512 x 512, specify similar values such as `512.0`, `512.0`, and `64.0`.
+1. In the **Box Shape** component, specify values for the x-, y-, and z-axes to match your level. For example, if you created a level with a texture dimension of 512 x 512, specify similar values such as `512.0`, `512.0`, and `64.0`.
 ![\[Create an entity to cover your level.\]](/images/user-guide/vegetation/dynamic/expanding-vegetation-coverage-1.png)
 
 1. Select the **BasicCoverage** entity.

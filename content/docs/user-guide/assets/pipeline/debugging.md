@@ -55,7 +55,7 @@ You can restart O3DE Editor and Asset Processor. Verify that only one instance o
 
 1. Close O3DE Editor.
 
-1. In the Windows taskbar, right\-click Asset Processor, and choose **Quit** or press **Ctrl+Q**.
+1. In the Windows taskbar, right-click Asset Processor, and choose **Quit** or press **Ctrl+Q**.
 
 1. Restart the project or branch that you are working on. Asset Processor automatically starts.
 
@@ -137,4 +137,4 @@ You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual
 If you're a game artist and you're having issues running Asset Processor, this might be the result of a corrupt cache. In this case, you can delete your `Cache` directory. When you delete your cache, you can restart Asset Processor to rebuild all of your assets.
 
 **Note**
-If you're an engineer making new BuilderSDK\-based builders, we recommend that you don't delete your cache.
+If you're an engineer making new BuilderSDK-based builders, we recommend that you don't delete your cache.

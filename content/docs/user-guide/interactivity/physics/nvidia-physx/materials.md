@@ -96,7 +96,7 @@ You can specify the paremeter of the **Default Physics Material** in **PhysX Con
 
 ## Assign a physics material 
 
-Physics materials can be assigned to entire PhysX colliders, or on a per\-face basis if the PhysX mesh is a triangle mesh.
+Physics materials can be assigned to entire PhysX colliders, or on a per-face basis if the PhysX mesh is a triangle mesh.
 
 When the **Physics Asset** shape is selected in **PhysX Collider** component, and the **Physics Materials from Asset** property is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)). To manually set the physics materials, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it.
 

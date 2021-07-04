@@ -28,15 +28,15 @@ Serialization into JSON is done with the `static AZ::JsonSerialization::Store()`
 + `output` - The RapidJSON document or value to write to. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value.
 + `allocator` - The memory allocator used by RapidJSON.
 +  `object` - The object to serialize. This object's class must be registered with the provided serialization context.
-+ `defaultObject` \- An object providing the values to treat as the defaults during serialization. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized.
++ `defaultObject` - An object providing the values to treat as the defaults during serialization. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized.
 + `settings` - Configuration for how to treat the serialization. If not provided, the default settings are used, except that default values will be stored in the output.
 
 `static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Store(rapidjson::Value& output, rapidjson::Document::AllocatorType& allocator, const void* object, const void* defaultObject, const AZ::Uuid& objectType, AZ::JsonSerializerSettings settings = AZ::JsonSerializerSettings{});`
 + `output` - The RapidJSON document or value to write to. Objects can be serialized at an arbitrary point in a JSON document by providing the appropriate value.
 + `allocator` - The memory allocator used by RapidJSON.
 +  `object` - The object to serialize, as anonymous data.
-+ `defaultObject` \- An object providing the values to treat as the defaults during serialization. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized. If a null pointer is passed as the default object, a temporary default may be created during serialization.
-+ `objectType` \- The UUID registered with the O3DE runtime representing the class for the provided `object`. The class represented by this UUID must be registered with the provided serialization context.
++ `defaultObject` - An object providing the values to treat as the defaults during serialization. Any members of `object` with values that don't match `defaultObject` are guaranteed to be serialized. If a null pointer is passed as the default object, a temporary default may be created during serialization.
++ `objectType` - The UUID registered with the O3DE runtime representing the class for the provided `object`. The class represented by this UUID must be registered with the provided serialization context.
 + `settings` - Configuration for how to treat the serialization. If not provided, the default settings are used, except that default values will be stored in the output provided `defaultObject` is not null.
 
 ### `AZ::JsonSerializerSettings` 
@@ -92,20 +92,20 @@ AZ_TracePrintf("Serialization", "SerializableClass as Json:\n%s", buffer.GetStri
 
 ## Deserialization 
 
-Deserialization from JSON into an object is done with the `static AZ::JsonSerialization::Load()` method. This method has two overloads \- one for use when an instance of the deserialized object type is available, and the other using `void*` and RTTI information.
+Deserialization from JSON into an object is done with the `static AZ::JsonSerialization::Load()` method. This method has two overloads - one for use when an instance of the deserialized object type is available, and the other using `void*` and RTTI information.
 
 ### `AZ::JsonSerialization::Load()` overloads 
 
 `template<typename T> static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Load(T& object, const rapidjson::Value& root, AZ::JsonDeserializerSettings settings = AZ::JsonDeserializerSettings{});`
-+ `object` \- The object to load data into.
-+ `root` \- The root of the JSON tree to deserialize from. This is normally a full JSON document, but can be any JSON value that will deserialize correctly to type `T`.
-+ `settings` \- Configuration for how to treat deserialization.
++ `object` - The object to load data into.
++ `root` - The root of the JSON tree to deserialize from. This is normally a full JSON document, but can be any JSON value that will deserialize correctly to type `T`.
++ `settings` - Configuration for how to treat deserialization.
 
  `static AZ::JsonSerializationResult::ResultCode AZ::JsonSerialization::Load(void* object, const AZ::Uuid& objectType, const rapidjson::Value& root, AZ::JsonDeserializerSettings settings = AZ::JsonDeserializerSettings{});`
-+ `object` \- A pointer to memory allocated as an object matching the type registered for `objectType`.
-+ `objectType` \- The UUID registered with the O3DE runtime representing the class for the provided `object`. The class represented by this UUID must be registered with the provided serialization context.
-+ `root` \- The root of the JSON tree to deserialize from. This is normally a full JSON document, but can be any JSON value that will deserialize correctly to the type identified by `objectType`.
-+ `settings` \- Configuration for how to treat deserialization.
++ `object` - A pointer to memory allocated as an object matching the type registered for `objectType`.
++ `objectType` - The UUID registered with the O3DE runtime representing the class for the provided `object`. The class represented by this UUID must be registered with the provided serialization context.
++ `root` - The root of the JSON tree to deserialize from. This is normally a full JSON document, but can be any JSON value that will deserialize correctly to the type identified by `objectType`.
++ `settings` - Configuration for how to treat deserialization.
 
 ### `AZ::JsonDeserializerSettings` 
 
@@ -146,7 +146,7 @@ if (result.GetProcessing() == AZ::JsonSerializationResult::Processing::Halted)
 
 ## Result codes 
 
- The JSON serializer uses the `AZ::JsonSerializationResult::ResultCode` type to report errors, warnings, and successful serialization and deserialization of objects. Result codes are broken down into three parts: task, processing result, and final outcome. These values can be obtained with the `GetTask()`, `GetProcessing()`, and `GetOutcome()` methods respectively. When checking results, you should first start with the processing to see if the task was successfully completed or if an error was encountered. For non\-`Success` values, the task indicates where in processing the error was encountered, and the outcome reflects why the failure occurred.
+ The JSON serializer uses the `AZ::JsonSerializationResult::ResultCode` type to report errors, warnings, and successful serialization and deserialization of objects. Result codes are broken down into three parts: task, processing result, and final outcome. These values can be obtained with the `GetTask()`, `GetProcessing()`, and `GetOutcome()` methods respectively. When checking results, you should first start with the processing to see if the task was successfully completed or if an error was encountered. For non-`Success` values, the task indicates where in processing the error was encountered, and the outcome reflects why the failure occurred.
 
  To write serialization results to a string, use the `AZ::JsonSerializationResult::ResultCode::AppendToString()` and `AZ::JsonSerializationResult::ResultCode::ToString()`, or `AZ::JsonSerializationResult::ResultCode::ToOSString()` methods.
 

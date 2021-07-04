@@ -8,9 +8,9 @@ weight: 400
 
 Constraints limit the movement of cloth particles to prevent mesh penetration and create more predictable results from cloth simulation. Open 3D Engine has two types of cloth constraints: **Motion constraints** and **Backstop**.
 
-**Motion constraints** \- Constrains a simulated cloth particle within an area defined by a sphere. The sphere's position is relative to the corresponding unsimulated vertex position.
+**Motion constraints** - Constrains a simulated cloth particle within an area defined by a sphere. The sphere's position is relative to the corresponding unsimulated vertex position.
 
-**Backstop** \- Prevents a simulated cloth particle from entering an area defined by a sphere. The sphere's position is relative to the corresponding unsimulated vertex position.
+**Backstop** - Prevents a simulated cloth particle from entering an area defined by a sphere. The sphere's position is relative to the corresponding unsimulated vertex position.
 
 Motion constraints and Backstop properties are set by creating vertex color streams for the mesh in a content creation application such as Maya. When exporting a mesh through **FBX Settings**, you can specify which vertex color streams and color channels define the properties in the **Cloth** modifier.
 
@@ -32,11 +32,11 @@ Because cloth colliders are simple primitives, you may encounter scenarios where
 
 Backstop prevents a simulated cloth particle from entering an area defined by a sphere. The sphere is positioned along the normal of the corresponding unsimulated mesh vertex through an offset property. Backstop requires color channels from a vertex color stream to define both the radius of the sphere and the sphere's offset. The **Backstop Radius** and **Backstop Offset** values in the vertex color stream are scaled by the **Radius** and **Offset** values in the **Cloth** component **Backstop** properties.
 
-Because a vertex color channel can only contain values between **0.0** and **1.0**, the value in the color channel representing the **Backstop Offset** property will be remapped to a range between **\-1.0** and **1.0**.
+Because a vertex color channel can only contain values between **0.0** and **1.0**, the value in the color channel representing the **Backstop Offset** property will be remapped to a range between **-1.0** and **1.0**.
 
 A Backstop Offset vertex color value of **1.0** is scaled by the **Back Offset** property of the **Cloth** component. The backstop sphere is placed behind the unsimulated mesh vertex .
 
-A Backstop Offset vertex color value of **0.0** is remapped to **\-1.0** and scaled by the **Front Offset** property of the **Cloth** component. The backstop sphere is placed in front of the unsimulated mesh vertex.
+A Backstop Offset vertex color value of **0.0** is remapped to **-1.0** and scaled by the **Front Offset** property of the **Cloth** component. The backstop sphere is placed in front of the unsimulated mesh vertex.
 
  A Backstop Offset vertex color value of **0.5** is remapped to **0.0** and scaled by the **Back Offset** property of the **Cloth** component. The backstop sphere is placed on the corresponding unsimulated vertex.
 

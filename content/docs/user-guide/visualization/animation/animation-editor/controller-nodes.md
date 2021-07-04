@@ -21,15 +21,15 @@ The **Get Transform** node gets the transform data from a joint that you specify
 
 1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **+** icon to create one.
 
-1. Right\-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
+1. Right-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 
-1. Double\-click the **Blend Tree** node, right\-click the graph, and then choose **Create Node**, **Controllers**, **Get Transform**.
+1. Double-click the **Blend Tree** node, right-click the graph, and then choose **Create Node**, **Controllers**, **Get Transform**.
 ![\[Add the Get Transform node to your anim graph.\]](/images/user-guide/actor-animation/animation-editor-get-set-transform-1.png)
 
    The **Get Transform** node appears in your graph.
 ![\[Get Transform node\]](/images/user-guide/actor-animation/animation-editor-get-transform.png)
 
-1. To get the transform from a specific animation, right\-click the graph and choose **Create Node**, **Sources**, **Motion**.
+1. To get the transform from a specific animation, right-click the graph and choose **Create Node**, **Sources**, **Motion**.
 
 1. Connect the **Output Pose** of the **Motion** node to the **Input Pose** of the **Get Transform** node.
 ![\[Connect the Motion node to the Get Transform node in your anim graph.\]](/images/user-guide/actor-animation/animation-editor-get-set-transform-2.png)
@@ -56,9 +56,9 @@ The **Set Transform** node sets the transform from a selected joint, including t
 
 1. In the **Animation Editor**, on the **Anim Graph** tab, open an existing animation graph or click the **+** icon to create one.
 
-1. Right\-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
+1. Right-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 
-1. Double\-click the **Blend Tree** node, right\-click the graph, and then choose **Create Node**, **Controllers**, **Set Transform**.
+1. Double-click the **Blend Tree** node, right-click the graph, and then choose **Create Node**, **Controllers**, **Set Transform**.
 ![\[Add the Set Transform node to your anim graph.\]](/images/user-guide/actor-animation/animation-editor-get-set-transform-5.png)
 
    The **Set Transform** node takes **Input Pose**, **Translation** (position), **Rotation**, and **Scale** as inputs, and then outputs **Output Pose** for selected nodes (joints).

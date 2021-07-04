@@ -19,7 +19,7 @@ The CPU profiler gathers usage statistics about how long a function or method ex
 1. Pause your mouse on a line in the graph to see the call that the line represents and to display the specific value for the graph at the area near the cursor.
 ![\[Using the CPU graph\]](/images/user-guide/profiler-cpu-graph-pause.png)
 
-1. To show or hide the line graph of a row in the tree, double\-click the row.
+1. To show or hide the line graph of a row in the tree, double-click the row.
 ![\[Double-click a row to show or hide its graph\]](/images/user-guide/profiler-cpu-row-double-click.png)
 
 ## Understanding the Tree View 
@@ -30,7 +30,7 @@ The CPU profiler tree view represents a call hierarchy of profiler log points (c
 The function declaration where the profiler data point was generated.
 
 **Comment**
-A user\-defined message that distinguishes specific events in the same function.
+A user-defined message that distinguishes specific events in the same function.
 
 **Excl. Time (Micro)**
 (Exclusive time) The time, in microseconds, spent executing this function and no other functions called by this function.

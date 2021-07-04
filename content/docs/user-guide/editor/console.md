@@ -43,7 +43,7 @@ You can retrieve a complete list of console commands and variables, including th
     You can see the available commands and variables in the file.
 ![\[Open the consolecommandandvars.txt file to see all console commands and variables.\]](/images/user-guide/console-variables-test-file.png)
 
-1. You can specify a sub\-string parameter to restrict the results that you want. For example, the DumpCommandsVars i\_ command exports all commands and variables that begin with the prefix `i_`, such as `i_giveallitems` and `i_debug_projectiles`.
+1. You can specify a sub-string parameter to restrict the results that you want. For example, the DumpCommandsVars i\_ command exports all commands and variables that begin with the prefix `i_`, such as `i_giveallitems` and `i_debug_projectiles`.
 
 ## Configuring Console Variables 
 
@@ -67,7 +67,7 @@ You can specify values for console variables in the console to apply changes to 
 
 **To configure console variables in the console**
 + Do one of the following:
-  + In the **Console Variables** window, search for the variable name, double\-click the value, and then enter the value that you want.
+  + In the **Console Variables** window, search for the variable name, double-click the value, and then enter the value that you want.
   + In the **Console** command line, enter the console variable and its value, and then press **Enter**. For example, enter the r\_DisplayInfo=1 command to display debugging information in the viewport.
 
 ### Configuring Console Variables in Configuration Files 

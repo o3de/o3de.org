@@ -5,7 +5,7 @@ title: PhysX Ball Joint component
 
 {{< preview-migrated >}}
 
-With the **PhysX Ball Joint** component, you can create a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y\- and z\-axes of the joint.
+With the **PhysX Ball Joint** component, you can create a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.
 
 ## PhysX Ball Joint component properties 
 
@@ -36,7 +36,7 @@ When enabled, a cone that represents the orientation and limits of the ball join
 **Select Lead on Snap**
 When enabled, snapping the joint to an entity in component mode will set the entity as the **Lead Entity**. The entity containing the joint component is excluded from this operation.
 
-**Lead\-Follower Collide**
+**Lead-Follower Collide**
 When enabled, the lead entity and follower entity (the entity containing the joint component) will collide.
 
 **Limit**
@@ -52,10 +52,10 @@ When **Soft Limit** is enabled, the spring's drive relative to the velocity of t
 When **Soft Limit** is enabled, the spring's drive relative to the position of the follower when outside the rotation limit. Valid values range from **0.001** to **1000000.0**.
 
 **Y axis angular limit**
-The rotation limit around the joint's y\-axis when **Limit** is enabled. Valid values range from **0.1** to **180.0**.
+The rotation limit around the joint's y-axis when **Limit** is enabled. Valid values range from **0.1** to **180.0**.
 
 **Z axis angular limit**
-The rotation limit around the joint's z\-axis when **Limit** is enabled. Valid values range from **0.1** to **180.0**.
+The rotation limit around the joint's z-axis when **Limit** is enabled. Valid values range from **0.1** to **180.0**.
 
 **Edit**
 When clicked, component edit mode is enabled. In component edit mode, all components are locked except for the **PhysX Ball Joint** component. The properties of the **PhysX Ball Joint** component can be edited in **Perspective**. Press **Tab** to cycle through the component edit modes. Click **Done** to exit component mode.

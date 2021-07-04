@@ -20,7 +20,7 @@ In the preceding example, one renders in red, two in green, and three (and the r
 
 ## Console Variables 
 
-Console variables (cvars) provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command\-line argument before launching the application.
+Console variables (cvars) provide a convenient way to expose variables which can be modified easily by the user either by being entered in the console during runtime or by passing it as command-line argument before launching the application.
 
 ### Registering new console variables 
 

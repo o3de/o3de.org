@@ -12,7 +12,7 @@ Use this component in conjunction with the **RadioButtonGroup** component. The *
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-radiobutton.png)
 
-To see in\-game examples of completed canvases with the **RadioButton** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game.
+To see in-game examples of completed canvases with the **RadioButton** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\RadioButton` directory. You can open the following canvases:
 + `Groups.uicanvas` - Examples of different radio button groupings

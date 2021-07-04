@@ -65,4 +65,4 @@ return camerasample
 
 ## Creating Camera Entity from View 
 
-You can create a static camera view from a specific entity by right\-clicking an entity in the viewport and choosing **Create camera entity from view**. This places a new entity with a camera component at the same point. You can adjust the view of the camera by modifying its transform component.
+You can create a static camera view from a specific entity by right-clicking an entity in the viewport and choosing **Create camera entity from view**. This places a new entity with a camera component at the same point. You can adjust the view of the camera by modifying its transform component.

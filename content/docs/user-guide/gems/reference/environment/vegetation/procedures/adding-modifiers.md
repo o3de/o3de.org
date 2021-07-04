@@ -8,14 +8,14 @@ title: Adding Scale, Rotation, and Position Modifiers
 
 Before you can complete this procedure, you must first [create a vegetation layer](/docs/user-guide/gems/vegetation/layer.md).
 
-If you have [added a gradient for random selection](/docs/user-guide/gems/vegetation/gradient-random.md), the vegetable selection appears random, but still produces a grid\-like pattern. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid.
+If you have [added a gradient for random selection](/docs/user-guide/gems/vegetation/gradient-random.md), the vegetable selection appears random, but still produces a grid-like pattern. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid.
 
 ![\[Vegetation area before adding any modifiers.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-before.png)
 
 To remedy this, do the following:
 + **Add a scale modifier** - Varies the size of the vegetation. You can specify a range of scale, which sizes vegetation up or down while maintaining original proportions.
-+ **Add a rotation modifier** - Changes the direction that vegetation faces. In this procedure, you modify only the z\-axis rotation.
-+ **Add a position modifier** - Modifies where on the grid points the plants appear. You can shift them by varying amounts on the x\-, y\-, and z\-axes. Modifying the x\- and y\-axes moves the plants on the ground plane. Modifying the z\-axis changes the height at which a plant sprouts (this procedure doesn't modify the z\-axis).
++ **Add a rotation modifier** - Changes the direction that vegetation faces. In this procedure, you modify only the z-axis rotation.
++ **Add a position modifier** - Modifies where on the grid points the plants appear. You can shift them by varying amounts on the x-, y-, and z-axes. Modifying the x- and y-axes moves the plants on the ground plane. Modifying the z-axis changes the height at which a plant sprouts (this procedure doesn't modify the z-axis).
 
 Applying modifiers to your vegetation gives it a realistic, natural look.
 
@@ -67,7 +67,7 @@ A rotation modifier varies the rotation of the vegetation.
 
 ## Adding a Position Modifier 
 
-A position modifier shifts each instance of vegetation by an amount that the gradient determines, which removes the grid\-like appearance of the vegetation.
+A position modifier shifts each instance of vegetation by an amount that the gradient determines, which removes the grid-like appearance of the vegetation.
 
 **To add a position modifier**
 
@@ -84,7 +84,7 @@ A position modifier shifts each instance of vegetation by an amount that the gra
 
    The **Gradient Entity Id** field populates with the entity name.
 
-   The result is a slight x\-axis variation in the ranges specified (the default is \-0.3 to 0.3). For greater variation, modify the **Range Min** and **Range Max** values.
+   The result is a slight x-axis variation in the ranges specified (the default is -0.3 to 0.3). For greater variation, modify the **Range Min** and **Range Max** values.
 
 1. In the **Vegetation Position Modifier** component's properties, under **Position Y**, **Gradient**, next to **Gradient Entity Id**, click the target.
 ![\[In the Vegetation Position Modifier component's properties, under Position Y, Gradient, next to Gradient Entity Id, click the target.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target-y.png)
@@ -102,6 +102,6 @@ You can also overcome this issue by using a gradient modifier on your existing g
 1. Under **Position Y**, expand the **Advanced** header and check **Enable Transform**.
 ![\[Under Position Y, expand the Advanced header and check Enable Transform.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-transform.png)
 
-1. To produce a swizzling effect on the y\-axis, use the following values or a variation on them.
+1. To produce a swizzling effect on the y-axis, use the following values or a variation on them.
 ****
 

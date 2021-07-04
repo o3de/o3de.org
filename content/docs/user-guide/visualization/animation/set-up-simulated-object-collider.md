@@ -12,7 +12,7 @@ title: Setting Up Simulated Object Colliders
 
 1. In the **Skeleton Outliner**, select the joint or joints to add a simulated object collider to. In this example, use the `C_spine_04_JNT` joint.
 
-1. Right\-click your selection and choose **Simulated object collider**, **Add collider**, **Add capsule**. This creates a shape that defines the collider area for the joint.
+1. Right-click your selection and choose **Simulated object collider**, **Add collider**, **Add capsule**. This creates a shape that defines the collider area for the joint.
 **Example**
 
    You can also add a sphere if that shape fits your actor better.
@@ -28,7 +28,7 @@ title: Setting Up Simulated Object Colliders
    By default, the name of the joint \(`C_spine_04_JNT`\) is also the name of the collider.
 ![\[Create a simulated object collider for the spine and make changes, so that it's slightly larger than the actor's shape.\]](/images/user-guide/actor-animation/simulated-objects-15.png)
 
-1. Repeat **Step 1** to add the `L_arm_JNT` joint. This creates another simulated object collider to the upper\-left arm.
+1. Repeat **Step 1** to add the `L_arm_JNT` joint. This creates another simulated object collider to the upper-left arm.
 
 1. Repeat **Step 2** and **3** to set up a collider for the arm.
 

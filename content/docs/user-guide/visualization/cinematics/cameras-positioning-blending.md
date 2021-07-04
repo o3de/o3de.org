@@ -30,7 +30,7 @@ You can still manipulate the component entity camera within the level from the d
 
 1. Click the **Start Animation Recording** icon to enter record mode.
 
-1. In the left\-corner of the viewport window, right\-click **Perspective** and choose **Camera** and then specify the camera that is part of your sequence. The text will change from **Perspective** to **Camera entity: *NameOfYourCamera***.
+1. In the left-corner of the viewport window, right-click **Perspective** and choose **Camera** and then specify the camera that is part of your sequence. The text will change from **Perspective** to **Camera entity: *NameOfYourCamera***.
 
 1. While you are viewing from the perspective of the camera, as you move in the level, the camera moves as well. This includes any rotations. In record mode, this adds animation keys at the current playhead location.
 ![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-6.png)
@@ -41,7 +41,7 @@ You can still manipulate the component entity camera within the level from the d
 
 ## Blending Cameras 
 
-By default, when you switch between cameras, the change is immediate. However, if you want a smoother transition, you can blend the cameras together. You can blend a camera in and out of the camera\-controlled sequence, or blend between cameras that are part of the sequence.
+By default, when you switch between cameras, the change is immediate. However, if you want a smoother transition, you can blend the cameras together. You can blend a camera in and out of the camera-controlled sequence, or blend between cameras that are part of the sequence.
 
 ### Blending from Game Camera to Sequence Camera 
 
@@ -49,11 +49,11 @@ By default, when you switch between cameras, the change is immediate. However, i
 
 1. Under the **Director** node, for the **Camera** track, add an animation key to the timeline.
 
-1. Double\-click the animation key and verify that the **Camera** property is set to **None**.
+1. Double-click the animation key and verify that the **Camera** property is set to **None**.
 
 1. Add another key on the timeline for the **Camera** track. You can add the key at the beginning or end of the sequence, or both.
 
-1. Double\-click the animation key before a camera change, and for **Blend time**, specify a value in seconds. This value determines how the current camera will blend into the next.
+1. Double-click the animation key before a camera change, and for **Blend time**, specify a value in seconds. This value determines how the current camera will blend into the next.
 **Note**
 This creates a blend between the game camera to the sequence camera, or from the sequence camera back to the game camera, depending on where you place the key and adjust the **Blend time**.
 
@@ -65,7 +65,7 @@ Blended camera keys will blend the position, rotation, and field of view of the 
 
 1. Select the key for the first camera of the blend.
 
-1. Double\-click the key and do the following:
+1. Double-click the key and do the following:
 
    1. For **Camera**, select the camera that you want to start.
 

@@ -8,7 +8,7 @@ title: Defining Game and Level Load Screens
 
 You can create a game or level loading screen with the **UI Editor**. The game loading screen is displayed while the game loads. The level loading screen is displayed while a level loads. You can create and define a loading screen for each level.
 
-Load screens support more than just UI canvases when using RAD Game Tools' Bink video files. You can specify a path to either a UI canvas or a Bink video file. Additionally, multi\-threaded load screens are supported for Bink videos, enabling a load screen to render hitch\-free while levels load.
+Load screens support more than just UI canvases when using RAD Game Tools' Bink video files. You can specify a path to either a UI canvas or a Bink video file. Additionally, multi-threaded load screens are supported for Bink videos, enabling a load screen to render hitch-free while levels load.
 
 To define the game and level loading screens, you set the file paths as parameters in `game.cfg` and `level.cfg`.
 
@@ -29,7 +29,7 @@ You then add or modify parameters in `game.cfg`, which is at the root of your pr
    + `game_load_screen_bink_path` - File path to the .bk2 game load screen file relative to your project path. Use this if you are using a Bink video for your loading screen.
    + `game_load_screen_minimum_time` - Minimum amount of time to show the game load screen, in seconds. Important to prevent short loads from flashing the load screen. 0 means there is no minimum. The default is 0.
    + `game_load_screen_sequence_to_auto_play` - Name of the game load screen animation sequence to play on load.
-   + `game_load_screen_sequence_fix_fps` - A fixed frame rate for the game load screen animation to play on load. Default is `60`. To ignore this setting and use the real time\-delta, specify `-1`.
+   + `game_load_screen_sequence_fix_fps` - A fixed frame rate for the game load screen animation to play on load. Default is `60`. To ignore this setting and use the real time-delta, specify `-1`.
    + `ly_EnableLoadingThread` - Experimental. Set to 1 to enable fully threaded loading where the load screen is drawn on a thread that isn't loading data. Currently only supported for Bink load screens.
 
 The following are examples of these parameters in a `game.cfg` file:
@@ -63,7 +63,7 @@ You then add or modify parameters in `level.cfg`, which is at the root of your l
    + `level_load_screen_bink_path` - File path to the .bk2 level load screen file relative to your project path. Use this if you are using a Bink video for your loading screen.
    + `level_load_screen_minimum_time` - Minimum amount of time to show the level load screen, in seconds. Important to prevent short loads from flashing the load screen. 0 means there is no minimum. The default is 0.
    + `level_load_screen_sequence_to_auto_play` - The name of the level load screen animation sequence to play on load.
-   + `level_load_screen_sequence_fix_fps` - A fixed frame rate for the level load screen animation to play on load. Default is `60`. To ignore this setting and use the real time\-delta, specify `-1`.
+   + `level_load_screen_sequence_fix_fps` - A fixed frame rate for the level load screen animation to play on load. Default is `60`. To ignore this setting and use the real time-delta, specify `-1`.
    + `ly_EnableLoadingThread` - Experimental. Set to 1 to enable fully threaded loading where the load screen is drawn on a thread that isn't loading data. Currently only supported for Bink load screens.
 
 The following are examples of these parameters in a `level.cfg` file:

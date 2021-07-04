@@ -6,7 +6,7 @@ title: Navigation
 
 {{< preview-migrated >}}
 
-The **Navigation** component provides path\-finding and path\-following functionality for AI movement, typically on a navigation mesh.
+The **Navigation** component provides path-finding and path-following functionality for AI movement, typically on a navigation mesh.
 
 ![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/user-guide/component/component-navigation-path.png)
 
@@ -230,7 +230,7 @@ Indicates that the path for the traversal has updated. If the `nextPathPosition`
 **Parameters**
 `requestId` - ID of the request for which traversal is in progress.
 `nextPathPosition` - Furthest point on the path we can move to without colliding with anything.
-`inflectionPosition` - Next point on the path beyond `nextPathPosition` that deviates from a straight\-line path.
+`inflectionPosition` - Next point on the path beyond `nextPathPosition` that deviates from a straight-line path.
 
 **Return**
 None

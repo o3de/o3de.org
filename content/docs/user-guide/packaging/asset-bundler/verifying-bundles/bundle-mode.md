@@ -71,7 +71,7 @@ The following procedure shows how bundle mode works. In the example, game mode i
 1. Enter the command `loadbundles` to load bundles for the level.
 ![\[Using the loadbundles command.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
 
-   There are fewer errors, but some assets are still missing. The [Asset Validation Gem](/docs/user-guide/packaging/asset-bundler/asset-validation-gem.md) seed\-related commands can help find the missing assets.
+   There are fewer errors, but some assets are still missing. The [Asset Validation Gem](/docs/user-guide/packaging/asset-bundler/asset-validation-gem.md) seed-related commands can help find the missing assets.
 
 1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle.
 
@@ -93,7 +93,7 @@ The following procedure shows how bundle mode works. In the example, game mode i
 
 1. Drop the bundles into the `Bundles` directory.
 
-1. Enter an `assetbundlerbatch assetlists` command, as shown in the following example. Use the `--print` argument to check the output. In the example, the single\-line command has been formatted for readability.
+1. Enter an `assetbundlerbatch assetlists` command, as shown in the following example. Use the `--print` argument to check the output. In the example, the single-line command has been formatted for readability.
 
    ```
    assetbundlerbatch assetlists
@@ -105,7 +105,7 @@ The following procedure shows how bundle mode works. In the example, game mode i
 
 1. Verify that the output displays as expected.
 
-1. Enter the `assetbundlerbatch assetlists` command again to bundle the assets, but this time without the `--print` argument. The example command is single\-line, but has been formatted for readability.
+1. Enter the `assetbundlerbatch assetlists` command again to bundle the assets, but this time without the `--print` argument. The example command is single-line, but has been formatted for readability.
 
    ```
    assetbundlerbatch assetlists

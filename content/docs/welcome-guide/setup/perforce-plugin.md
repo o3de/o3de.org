@@ -34,7 +34,7 @@ Certain values may not be modifiable if your Perforce connection settings are co
 Hover over the icon to display the connection status.
    {{< /note >}}
 
-1. In the drop\-down menu, you can do the following:
+1. In the drop-down menu, you can do the following:
 
    + Click **Enable** or **Disable** to toggle the plugin. The **Enable** setting allows you to work online. The **Disable** setting forces you to work offline.
 

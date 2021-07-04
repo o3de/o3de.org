@@ -6,14 +6,14 @@ title: 'Script Canvas Debugging'
 
 {{< preview-migrated >}}
 
-Script Canvas supports live debugging of a Script Canvas graph running in\-game. You can use O3DE Editor or non\-editor tools like game launchers as debug targets.
+Script Canvas supports live debugging of a Script Canvas graph running in-game. You can use O3DE Editor or non-editor tools like game launchers as debug targets.
 
 **To open the Script Canvas debugger and choose a target**
 
 1. From the Script Canvas editor, choose **Tools**, **Debugging**. The debugger panel opens at the bottom of the Script Canvas editor.
 ![\[Choose Tools, Debugging.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-1.png)
 
-1. On the **Live** tab of the debugging panel, use the dropdown menu to choose the debug target. The default target is O3DE Editor, but you can use Script Canvas to debug the game running in standalone mode. For more information, see [In\-Game Debugging](#script-canvas-debugging-in-game).
+1. On the **Live** tab of the debugging panel, use the dropdown menu to choose the debug target. The default target is O3DE Editor, but you can use Script Canvas to debug the game running in standalone mode. For more information, see [In-Game Debugging](#script-canvas-debugging-in-game).
 ![\[Choosing the debug target.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-2.png)
 
 ## Choosing Entities and Graphs to Debug 
@@ -111,15 +111,15 @@ Dynamically spawned graphs are usually part of a dynamic slice. Because dynamica
 
 1. Follow the same steps that you use to debug any other Script Canvas graph. The debugger records the graph's operations when the graph becomes active during gameplay.
 
-## In\-Game Debugging 
+## In-Game Debugging 
 
-For in\-game debugging, you use the Script Canvas debugger to connect to a running game launcher.
+For in-game debugging, you use the Script Canvas debugger to connect to a running game launcher.
 
 **To debug a running game**
 
 1. Run `GridHub.exe` from from your build directory \(for example, `build/bin/profile/GridHub.exe`\). GridHub is the network environment that provides connectivity between O3DE and its tools. For more information, see [Using GridHub](/docs/userguide/gridhub-intro.md).
 **Note**
-GridHub must be active for non\-editor targets to appear in the **Live** tab.
+GridHub must be active for non-editor targets to appear in the **Live** tab.
 
 1. Run the launcher for your game.
 
@@ -136,4 +136,4 @@ The editor experiences a severe decrease in performance when it is capturing dat
 
 ### Saving Issues 
 
-When you modify a graph and save it, some IDs are remapped in the asset, but not in the visualized Script Canvas scene. As a result, the unified ID used in the logging messages no long matches the visual presentation. This mismatch causes the visual scraping to fail. To work around this, close and re\-open the Script Canvas scene.
+When you modify a graph and save it, some IDs are remapped in the asset, but not in the visualized Script Canvas scene. As a result, the unified ID used in the logging messages no long matches the visual presentation. This mismatch causes the visual scraping to fail. To work around this, close and re-open the Script Canvas scene.

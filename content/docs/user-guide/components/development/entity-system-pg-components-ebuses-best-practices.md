@@ -52,11 +52,11 @@ virtual void OnEnabled() = 0;
 
 ## Avoid Using Type Definitions for Serialized Data 
 
-An instructive example from O3DE shows the importance of using classes instead of type definitions for serialized data. Formerly, `EntityId` used the type definition `uint32_t`. When the decision was made to change this to 64\-bit, upgrade functions had to be written for every class that contained an `EntityId`. If `EntityId` had been a class, a single upgrade function could have been written for the class, and no further work would have been required. Obviously, this principle does not apply to primitive types like `bool`, `float`, `int`, and `string`. However, if you have a specific type that is serialized and might change in the future, implement it as a reflected class. This provides a single context where you can easily make the conversion for the class or type.
+An instructive example from O3DE shows the importance of using classes instead of type definitions for serialized data. Formerly, `EntityId` used the type definition `uint32_t`. When the decision was made to change this to 64-bit, upgrade functions had to be written for every class that contained an `EntityId`. If `EntityId` had been a class, a single upgrade function could have been written for the class, and no further work would have been required. Obviously, this principle does not apply to primitive types like `bool`, `float`, `int`, and `string`. However, if you have a specific type that is serialized and might change in the future, implement it as a reflected class. This provides a single context where you can easily make the conversion for the class or type.
 
 ## EBus Results 
 
-Always initialize a variable before calling an EBus event that overwrites the variable. Even if you are sure that a particular class or component is listening on the bus, it's worth handling the exceptional case. This is especially true in distributed environments in which entities can come and go as part of area\-of\-interest or other dynamic patterns.
+Always initialize a variable before calling an EBus event that overwrites the variable. Even if you are sure that a particular class or component is listening on the bus, it's worth handling the exceptional case. This is especially true in distributed environments in which entities can come and go as part of area-of-interest or other dynamic patterns.
 
 The following example initializes a result variable before calling an EBus event that produces a result.
 
@@ -74,8 +74,8 @@ Following are some best practices for the timing of EBus actions.
   + Your component is fully activated before it starts reacting to events.
   + Your component stops receiving events before it starts deactivation.
 
-This practice prevents your component from being in a half\-activated state when it starts reacting to events, or in a half\-deactivated while still receiving events.
-+ When you send events on a notification\-style bus, the last step in a function should ensure that the data is fully populated.
+This practice prevents your component from being in a half-activated state when it starts reacting to events, or in a half-deactivated while still receiving events.
++ When you send events on a notification-style bus, the last step in a function should ensure that the data is fully populated.
 
 The following is an example to avoid.
 
@@ -96,5 +96,5 @@ Consider the following when deciding to make functions public or private.
 
 For more information on components and EBuses, consult the following resources.
 + For examples of EBus usage, see [Usage and Examples](/docs/learning-guide/samples/ebus/direct-access/).
-+ For in\-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/engine/ebus/design/).
++ For in-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/engine/ebus/design/).
 + For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](/docs/userguide/components/entity-system-pg-components-ebuses-questions-and-answers.md).

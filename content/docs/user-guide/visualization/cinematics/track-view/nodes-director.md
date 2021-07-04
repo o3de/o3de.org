@@ -5,7 +5,7 @@ title: Director (Scene) Node
 
 {{< preview-migrated >}}
 
-The **Director (Scene)** node includes a camera track that specifies the active camera for a track view sequence. You can add sequence\-specific nodes (for example, **Depth of Field** or **Comment**) under the **Director** node to override the same nodes that were set at the sequence level.
+The **Director (Scene)** node includes a camera track that specifies the active camera for a track view sequence. You can add sequence-specific nodes (for example, **Depth of Field** or **Comment**) under the **Director** node to override the same nodes that were set at the sequence level.
 
 **To add a Director node in the Track View**
 
@@ -15,14 +15,14 @@ The **Director (Scene)** node includes a camera track that specifies the active 
 
 1. In the **Add New Sequence** dialog box, enter a name for your sequence and click **OK**.
 
-1. Right\-click your sequence and choose **Add Director (Scene) Node**.
+1. Right-click your sequence and choose **Add Director (Scene) Node**.
 
-1. Right\-click the **Director** node and click **Add Track**.
+1. Right-click the **Director** node and click **Add Track**.
 ![\[Add the Director node in the Track View to manage your track view sequence.\]](/images/user-guide/cinematics/cinematics-trackview-nodes-director.png)
 
-1. Select the track and double\-click to position the key on its highlighted row in the timeline.
+1. Select the track and double-click to position the key on its highlighted row in the timeline.
 
-1. Double\-click the green marker, and under **Key Properties**, enter a value for **Value**.
+1. Double-click the green marker, and under **Key Properties**, enter a value for **Value**.
 
    You can add the following tracks and then set the key properties to the **Director** node.
 **Director Node Tracks and Key Properties**
@@ -30,4 +30,4 @@ The **Director (Scene)** node includes a camera track that specifies the active 
 
 **Note**
 You can add multiple **Director** nodes to a scene, but only one **Director** node can be active.
-To change the active **Director** node, right\-click the node and choose **Set as Active Director**. When you deactivate a **Director** node, all child node animations are deactivated. This is useful when you want to enable and disable animation for specific objects within the same track view sequence.
+To change the active **Director** node, right-click the node and choose **Set as Active Director**. When you deactivate a **Director** node, all child node animations are deactivated. This is useful when you want to enable and disable animation for specific objects within the same track view sequence.

@@ -10,7 +10,7 @@ You can use the **Checkbox** component to make an element behave like a check bo
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-checkbox-components.png)
 
-To see in\-game examples of completed canvases with the **Checkbox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **CheckBox**. You can view examples of color targets, check box interaction areas, and on and off elements. Press **Esc** to exit the game.
+To see in-game examples of completed canvases with the **Checkbox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **CheckBox**. You can view examples of color targets, check box interaction areas, and on and off elements. Press **Esc** to exit the game.
 
 To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\CheckBox` directory. You can open the following canvases:
 + `Area.uicanvas` - Examples of different check box interaction areas

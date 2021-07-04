@@ -95,13 +95,13 @@ In most cases, the solution is to use NameChange and TypeChange class builders a
 
 ### Class Builder Syntax
 
-Name\-change class builders require an input and output version, followed by the input serialized name and a new output name.
+Name-change class builders require an input and output version, followed by the input serialized name and a new output name.
 
 ```
 NameChange(InputVersion, OutputVersion, "OldFieldName", "NewFieldName")
 ```
 
-Type\-change class builders require input and output data types as template arguments, followed by the relevant field name, the input and output version, and a conversion function.
+Type-change class builders require input and output data types as template arguments, followed by the relevant field name, the input and output version, and a conversion function.
 
 ```
 TypeChange<InputType, OutputType>("FieldName", InputVersion, OutputVersion, Function<OutputType(InputType)>)

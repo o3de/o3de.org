@@ -12,7 +12,7 @@ To use **Cloth**, you must enable the **NVIDIA Cloth** gem. For more information
 You can create cloth assets for entities with **Mesh** components in the content creation application of your choice and import them into O3DE from an `.fbx` file. The mesh asset should have the following:
 + A cloth mesh that will be simulated and rendered in O3DE.
   + Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application. For more information see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data.md).
-+ **Optional** \- Any other static mesh. For example, if you create a flag to be simulated as cloth, then you can include a mesh for the flag pole.
++ **Optional** - Any other static mesh. For example, if you create a flag to be simulated as cloth, then you can include a mesh for the flag pole.
 
 **Note**
 Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Environment/`.
@@ -38,7 +38,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 
    1. In the **Cloth** modifier area:
 
-      1. Select the cloth mesh from the drop\-down list.
+      1. Select the cloth mesh from the drop-down list.
 
       1. When applicable, select the vertex color stream and channel that includes the **Inverse Masses** data. If data is not provided, then cloth defaults to an inverse mass value of 1.0 for all vertices.
 
@@ -51,7 +51,7 @@ Create cloth by adding the **Cloth** component to an entity that has a **Mesh** 
 
 1. Configure the cloth component.
 
-   1. Select the cloth mesh node from the drop\-down list.
+   1. Select the cloth mesh node from the drop-down list.
 ![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-mesh.png)
 
    1. Adjust cloth properties to obtain the desired cloth behavior. For more information, see [Cloth Component](/docs/user-guide/components/reference/physx/cloth/).

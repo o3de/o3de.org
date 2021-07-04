@@ -24,9 +24,9 @@ The following **Scale to Device** settings are available:
 | Scale to fill (uniformly) | Scales to fill while maintaining the aspect ratio. The final device scale for both X and Y is the maximum of the width and height ratios between the authored canvas size to the viewport size. |
 | Scale to fit X (uniformly) | Scales to fit horizontally while maintaining the aspect ratio. The final device scale for both X and Y is the ratio between the authored canvas width to the viewport width. |
 | Scale to fit Y (uniformly) | Scales to fit vertically while maintaining the aspect ratio. The final device scale for both X and Y is the ratio between the authored canvas height to the viewport height. |
-| Stretch to fill (non\-uniformly) | Stretches to fill horizontally and vertically without maintaining the aspect ratio. The final device scale is the ratio between the authored canvas size to the viewport size. |
-| Stretch to fit X (non\-uniformly) | Stretches to fit horizontally, but doesn't stretch vertically. The final device scale for X is the ratio between the authored canvas width to the viewport width. Y doesn't scale with the device resolution. |
-| Stretch to fit Y (non\-uniformly) | Stretches to fit vertically, but doesn't stretch horizontally. The final device scale for Y is the ratio between the authored canvas height to the viewport height. X doesn't scale with the device resolution. |
+| Stretch to fill (non-uniformly) | Stretches to fill horizontally and vertically without maintaining the aspect ratio. The final device scale is the ratio between the authored canvas size to the viewport size. |
+| Stretch to fit X (non-uniformly) | Stretches to fit horizontally, but doesn't stretch vertically. The final device scale for X is the ratio between the authored canvas width to the viewport width. Y doesn't scale with the device resolution. |
+| Stretch to fit Y (non-uniformly) | Stretches to fit vertically, but doesn't stretch horizontally. The final device scale for Y is the ratio between the authored canvas height to the viewport height. X doesn't scale with the device resolution. |
 
 When using the **Scale to Device** setting, note the following:
 + Scaling is performed about the element's pivot.

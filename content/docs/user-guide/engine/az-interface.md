@@ -18,7 +18,7 @@ For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
 Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](/docs/userguide/az-console.md).
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
-+ Improved performance. Calls to the singleton are a virtual function call that can often even be de\-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call.
++ Improved performance. Calls to the singleton are a virtual function call that can often even be de-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call.
 + Improved debuggability. `AZ::Interface` is essentially just an `AZ::Environment` variable wrapper that enables extensible singletons within O3DE.
 + Compatibility with code autocomplete in Visual Studio.
 
@@ -89,10 +89,10 @@ if (ISystem* system = AZ::Interface<ISystem>::Get())
 ```
 
 **Important**
-The restrictions for `AZ::Interface` are similar to that of a single\-handler EBus:
-Use `AZ::Interface` on long\-lived instances only, such as instances with global variables that live across the lifetime of a module or application.
+The restrictions for `AZ::Interface` are similar to that of a single-handler EBus:
+Use `AZ::Interface` on long-lived instances only, such as instances with global variables that live across the lifetime of a module or application.
 Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, you can only register/unregister after the `AZ::Environment` instance is attached after successful registration.
-`AZ::Interface` works with EBus, and you can soft\-migrate EBus code by providing an `AZ::Interface<T>` handler for the same set of requests.
+`AZ::Interface` works with EBus, and you can soft-migrate EBus code by providing an `AZ::Interface<T>` handler for the same set of requests.
 ***Thread safety is your responsibility***. Using `AZ::Interface<T>`does not make threads safe.
 
 **Vs. AZ::Event**
@@ -133,7 +133,7 @@ EBusRequestsBus::Broadcast(&EBusRequests::Request, 1);
 ```
 
 **Example EBus implementation converted to use AZ::Interface**
-To convert from all\-in EBus usage to a global request bus that uses `AZ::Interface` but can still interoperate with Script Canvas, you must make a few changes:
+To convert from all-in EBus usage to a global request bus that uses `AZ::Interface` but can still interoperate with Script Canvas, you must make a few changes:
 + Create your pure virtual interface without any EBus code.
 + Create an EBus wrapper that inherits from `AZ::EBusTraits`, and declare the EBus as `AZ::EBus<{your-interface-class-name}, {your-ebus-wrapper-name}>.`
 + Create your implementation of your interface, inherit from your EBus wrapper handler, and do the following:
@@ -224,9 +224,9 @@ AZ::Interface<IRequests>::Get()->Request(1);
 
 The `AZ::Interface` system includes a number of unit tests to validate correct behavior.
 
-To execute the unit tests, the following command\-line arguments can be provided to the `AzTestRunner`:
+To execute the unit tests, the following command-line arguments can be provided to the `AzTestRunner`:
 
-%INSTALL\-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunUnitTests \-\-pause\-on\-completion \-\-gtest\_break\_on\_failure \-\-gtest\_filter=InterfaceTest\*
+%INSTALL-ROOT%\\dev\\Bin64vc141.Test\\AzCoreTests.dll AzRunUnitTests --pause-on-completion --gtest\_break\_on\_failure --gtest\_filter=InterfaceTest\*
 
 You should see unit testing output like this:
 

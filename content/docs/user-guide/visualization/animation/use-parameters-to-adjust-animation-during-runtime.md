@@ -40,7 +40,7 @@ You can adjust the **SimulatedObject** node to change its animation during runti
    Your parameters should look like the following.
 ![\[Create your parameters for your anim graph.\]](/images/user-guide/actor-animation/simulated-objects-26.png)
 
-1. In the **Anim Graph** grid, right\-click and choose **Create Node**, **Sources**, **Parameters**.
+1. In the **Anim Graph** grid, right-click and choose **Create Node**, **Sources**, **Parameters**.
 
 1. On the **Parameters0** node, connect the **Stiffness** output to the **Stiffness factor**, the **Gravity** output to the **Gravity factor**, and so on.
 **Example**

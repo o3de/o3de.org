@@ -7,7 +7,7 @@ title: Adding and Removing Animation Keys on Tracks
 
 You can add a keyframe to a track in the timeline with one of the following:
 
-**Double\-click the track**
+**Double-click the track**
 This is the quickest way to add an animation key to the track. This adds a key exactly where you click and stores the data at the exact point in the timeline.
 
 **Add Keys**
@@ -28,6 +28,6 @@ You can delete individual keys or click and drag to select multiple animation ke
 1. In the timeline, select a key.
 
 1.  Do one of the following:
-   + Right\-click the key and choose **Delete**.
+   + Right-click the key and choose **Delete**.
    + Press **Delete** on your keyboard.
    + In the **Keys** toolbar, click the **Delete Keys** icon ![\[Delete keys button\]](/images/user-guide/cinematics/cinematics-delete-keys-icon-track-view-editor.png).

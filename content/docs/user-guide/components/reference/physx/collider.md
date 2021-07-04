@@ -6,10 +6,10 @@ title: PhysX Collider
 
 {{< preview-migrated >}}
 
-Performance demands in games and real\-time applications require physics simulations to be solved in fractions of a second. The PhysX Collider component allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities, ensuring fast physics simulation. A simple entity such as a crate might have a single PhysX Collider component, while more complex entities, such as vehicles, might require multiple PhysX Collider components.
+Performance demands in games and real-time applications require physics simulations to be solved in fractions of a second. The PhysX Collider component allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities, ensuring fast physics simulation. A simple entity such as a crate might have a single PhysX Collider component, while more complex entities, such as vehicles, might require multiple PhysX Collider components.
 
 **Note**
-The PhysX Collider component attached to an entity by itself creates a static (non\-moving) entity, such as a wall or a mountain. To create a dynamic (moving) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body Physics** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities.
+The PhysX Collider component attached to an entity by itself creates a static (non-moving) entity, such as a wall or a mountain. To create a dynamic (moving) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body Physics** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities.
 
 The PhysX Collider component requires the [PhysX](/docs/user-guide/gems/reference/physx/) gem enabled in your project.
 
@@ -34,7 +34,7 @@ The collision layer that's assigned to the collider. For more information, see [
 The collision group containing the layers that this collider collides with. For more information, see [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/).
 
 ****Trigger****
-Set this collider as a trigger. A trigger performs a quick overlap test and does not apply forces or return contact point information. Use this to speed\-up PhysX computations where a simple overlap between colliders is sufficient.
+Set this collider as a trigger. A trigger performs a quick overlap test and does not apply forces or return contact point information. Use this to speed-up PhysX computations where a simple overlap between colliders is sufficient.
 Triangle meshes are not supported as triggers.
 Trigger Area components cannot be used with PhysX Collider.
 
@@ -60,7 +60,7 @@ Choose a physics material for each material of this collider. A collider can hav
 Set a tag for this collider. Tags can be used to quickly identify components in script or code.
 
 ****Rest offset****
-PhysX bodies come to rest separated by the sum of their rest offset values. The **Rest offset** value must be less than the **Contact offset** value. Valid values rage from **\-Infinity** to **50**.
+PhysX bodies come to rest separated by the sum of their rest offset values. The **Rest offset** value must be less than the **Contact offset** value. Valid values rage from **-Infinity** to **50**.
 
 ****Contact offset****
 PhysX bodies generate contacts when they are within the sum of their contact offset values. The **Contact offset** value must be greater than the **Rest offset** value. Valid values rage from **0** to **50**.
@@ -81,7 +81,7 @@ Assign a physics asset to the collider. For more information, see [FBX Settings 
 Scale the collider shape independent of the entity.
 
 **Physics Materials from Asset**
-When the **Physics Asset** shape is selected, and **Physics Materials from Asset** is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)). If the physics material doesn't exist in the **Physics Material \- Library** the default physics material from **PhysX Configuration** will be used. The physics materials cannot be edited while this option is enabled.
+When the **Physics Asset** shape is selected, and **Physics Materials from Asset** is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)). If the physics material doesn't exist in the **Physics Material - Library** the default physics material from **PhysX Configuration** will be used. The physics materials cannot be edited while this option is enabled.
 
 ****Sphere shape****
 
@@ -141,7 +141,7 @@ When you add the **PhysX Collider** component to an entity, you can specify the 
 + **Box**
 + **Capsule**
 
-These primitive shapes don't have an underlying mesh. Because they are defined by dimensions rather than a mesh, they are high\-performance colliders and should be used when possible.
+These primitive shapes don't have an underlying mesh. Because they are defined by dimensions rather than a mesh, they are high-performance colliders and should be used when possible.
 
 ## Physics asset colliders 
 
@@ -149,7 +149,7 @@ Physics asset colliders are meshes that are created in a modeling application, o
 
 **Note**
 To define a mesh collider that has varying properties:
-Use a third\-party content creation tool to define a mesh collider and use the FBX exporter to convert the mesh collider for your project. Mesh colliders created this way can only be added to static entities.
+Use a third-party content creation tool to define a mesh collider and use the FBX exporter to convert the mesh collider for your project. Mesh colliders created this way can only be added to static entities.
 Alternatively, attach multiple **PhysX Collider** components to the entity, and specify different PhysX collider shapes and properties for each component.
 
 **To create a mesh collider**

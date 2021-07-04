@@ -32,7 +32,7 @@ When you use a single FBX file embedded with multiple meshes, you must create an
 
 **To add multiple actors from a single FBX file in the FBX Settings tool**
 
-1. In O3DE Editor's **Asset Browser**, right\-click the `.fbx` file that contains your meshes and choose **Edit Settings**.
+1. In O3DE Editor's **Asset Browser**, right-click the `.fbx` file that contains your meshes and choose **Edit Settings**.
 
 1. On the **Actors** tab, click **Add another actor**.
 

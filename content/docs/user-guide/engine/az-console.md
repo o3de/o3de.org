@@ -5,13 +5,13 @@ title: AZ::Console
 
 {{< preview-migrated >}}
 
-The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in\-game variables and processes. Use the macros defined in this class to set the console variables (cvars) and functors (cfuncs) for your game, and then access them through the O3DE console.
+The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in-game variables and processes. Use the macros defined in this class to set the console variables (cvars) and functors (cfuncs) for your game, and then access them through the O3DE console.
 
 `AZ::Console` is defined in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Console\IConsole.h`
 
 `AZ::Console` features:
 
-+ Basic access protections and anti\-cheat mechanisms for locking down cvars and cfuncs in release builds.
++ Basic access protections and anti-cheat mechanisms for locking down cvars and cfuncs in release builds.
 + Default support for several C++ types, including bool (Boolean), stdint (all types), floats, doubles, vectors and quaternions, and enums (enumerations).
 + Flexible and expandable type support. You can add support for new cvar types without altering the console code directly.
 
@@ -85,7 +85,7 @@ Make sure that the **\_TYPE **and **\_NAME** parameters match those of the previ
 
 ## Console functors (cfuncs) 
 
-Console functions allow you to register a command with the console that's not associated with a specific type or value. In O3DE, they're purely a mechanism to allow a method to be invoked directly from the O3DE in\-game console.
+Console functions allow you to register a command with the console that's not associated with a specific type or value. In O3DE, they're purely a mechanism to allow a method to be invoked directly from the O3DE in-game console.
 
 There are two types of cfuncs: one to invoke class member methods \(`AZ_CONSOLEFUNC`\), and one to invoke static methods \(`AZ_CONSOLEFREEFUNC`\).
 
@@ -113,7 +113,7 @@ public:
 };
 ```
 
-To declare a cfunc for a static method (or other non\-member function), use the `AZ_CONSOLEFREEFUNC` macro:
+To declare a cfunc for a static method (or other non-member function), use the `AZ_CONSOLEFREEFUNC` macro:
 
 ```
 AZ_CONSOLEFREEFUNC(_FUNCTION, _FLAGS, _DESC)
@@ -151,7 +151,7 @@ enum class FunctorFlags
 
 ## Adding support for new console variable types 
 
-To add support for a new cvar type, override the two template methods that convert the custom type to a space\-delimited string from a vector of space\-delimited string inputs.
+To add support for a new cvar type, override the two template methods that convert the custom type to a space-delimited string from a vector of space-delimited string inputs.
 
 As an example, an override that converts `AZ::Vector3` to a string and back to a value is declared like this:
 

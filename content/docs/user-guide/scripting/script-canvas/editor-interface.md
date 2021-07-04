@@ -26,7 +26,7 @@ In the **Script Canvas** editor, you can do the following:
 
 1. In the **Node Palette**, you can search for nodes.
 
-1. You can drag a node from the **Node Palette** to the canvas or right\-click the canvas for the menu to appear.
+1. You can drag a node from the **Node Palette** to the canvas or right-click the canvas for the menu to appear.
 
 1. On a node, you can specify values for the parameters.
 

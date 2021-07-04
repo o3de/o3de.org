@@ -92,7 +92,7 @@ azlmbr.asset.builder.ProcessJobResponse_NetworkIssue
 
 A successful processing of a source asset returns one or more `JobProduct` entries in the `ProcessJobResponse`'s `outputProducts` field.
 
-The `productSubID` field is a stable and unique product identifier for each product file created by this process job for the source asset file. It can be any unsigned 32\-bit integer that disambiguates different outputs from the same source. If builder source asset files produce only one product, the builder can use 0.
+The `productSubID` field is a stable and unique product identifier for each product file created by this process job for the source asset file. It can be any unsigned 32-bit integer that disambiguates different outputs from the same source. If builder source asset files produce only one product, the builder can use 0.
 
 The `productAssetType` field maps to a C++ `AZ::Data::AssetData` type ID.
 
@@ -105,7 +105,7 @@ print(f'Asset type {assetType}')
 
 `dependenciesHandled` indicates to the **Asset Processor** that the builder has output all possible dependencies for this source asset file for this job product file. This can be true if there are no output product files. This should be set to `True` only if the builder outputs its dependencies or the output product doesn't have dependencies. When set to `False`, **Asset Processor** emits a warning that dependencies have not been handled.
 
-The `JobProduct` constructor takes in a product file name (relative to the source asset path), an asset type (Uuid), and a product sub\-ID number.
+The `JobProduct` constructor takes in a product file name (relative to the source asset path), an asset type (Uuid), and a product sub-ID number.
 
 **azlmbr.asset.builder.JobProduct**
 

@@ -29,6 +29,6 @@ You can locally change an instantiated slice's name, which obscures the name of 
 
 **To push local changes to the slice**
 
-1. Right\-click in the **Properties** pane or on selected UI elements in the **Hierarchy** pane.
+1. Right-click in the **Properties** pane or on selected UI elements in the **Hierarchy** pane.
 
 1. In the context menu, choose **Push to Slice**.

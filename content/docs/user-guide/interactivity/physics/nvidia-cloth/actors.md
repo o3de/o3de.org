@@ -51,7 +51,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
    1. In the **Cloth** modifier area:
 
-      1. Select the cloth mesh from the drop\-down list.
+      1. Select the cloth mesh from the drop-down list.
 
       1. When applicable, select the vertex color stream and channel that includes the **Inverse Masses** data. If data is not provided, then cloth defaults to an inverse mass value of 1.0 for all vertices.
 
@@ -64,7 +64,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 1. Configure the cloth component.
 
-   1. Select the cloth mesh node from the drop\-down list.
+   1. Select the cloth mesh node from the drop-down list.
 ![\[Open 3D Engine cloth component.\]](/images/user-guide/physx/cloth/ui-cloth-component-select-actor.png)
 
    1. Adjust cloth properties to obtain the desired cloth behavior. For more information, see [Cloth Component](/docs/user-guide/components/reference/physx/cloth/).

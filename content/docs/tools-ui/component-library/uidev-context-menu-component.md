@@ -6,7 +6,7 @@ title: O3DE UI menu component
 
 {{< preview-migrated >}}
 
-A context menu (also called contextual or pop\-up menu) appears upon user interaction, such as a right\-click mouse operation. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs. Typically, the available choices are actions related to the selected object.
+A context menu (also called contextual or pop-up menu) appears upon user interaction, such as a right-click mouse operation. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs. Typically, the available choices are actions related to the selected object.
 
 ![\[component context menu style\]](/images/tools-ui/component-context-menu-style.png)
 
@@ -16,13 +16,13 @@ Follow these guidelines as you design your UI with context menus:
 
 1.  Include only the most commonly used commands that are appropriate in the current context. For example, in the context menu for selected text, it makes sense to include editing commands, but not a save or print command.
 
-1.  Limit the hierarchical depth of context menus to one or two levels. Sub\-menus in context menus can be difficult to navigate without accidentally dismissing the parent menu. If you must include sub\-menus, restrict them to a single level.
+1.  Limit the hierarchical depth of context menus to one or two levels. Sub-menus in context menus can be difficult to navigate without accidentally dismissing the parent menu. If you must include sub-menus, restrict them to a single level.
 
 1.  Make context menu items available in a menu bar, if available. A context menu is hidden by default and a user might not know it exists, so it shouldn't be the only way to access a command. In particular, avoid using a context menu as the only way to access an advanced feature.
 
-1.  Use a pop\-up button to elevate context menu functionality. You can use a pop\-up button to provide application\-wide context menu functionality in a toolbar. The toolbar of a **Finder** window, for example, includes a pop\-up button that gives users access to the same commands that are displayed in a context menu when control\-clicking the selected item.
+1.  Use a pop-up button to elevate context menu functionality. You can use a pop-up button to provide application-wide context menu functionality in a toolbar. The toolbar of a **Finder** window, for example, includes a pop-up button that gives users access to the same commands that are displayed in a context menu when control-clicking the selected item.
 
-1.  Context menus can also be used in the **list view**. Your UI should provide a hint to users that they can use right\-click to show the context menu.
+1.  Context menus can also be used in the **list view**. Your UI should provide a hint to users that they can use right-click to show the context menu.
 
 Avoid these design choices when using context menus:
 + Don't set a default item in a context menu. If a user opens the menu and closes it without selecting anything, no action should occur.

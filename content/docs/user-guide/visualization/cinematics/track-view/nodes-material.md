@@ -21,26 +21,26 @@ A recommended workflow is to select the material inside the **Material Editor** 
 
 1. Navigate to the material that you want to animate.
 
-1. Right\-click the selected material and choose **Copy Path to Clipboard**. If the material is in a material group, select the group and copy the group name to the clipboard.
+1. Right-click the selected material and choose **Copy Path to Clipboard**. If the material is in a material group, select the group and copy the group name to the clipboard.
 ![\[Copy the material name path in the Material Editor.\]](/images/user-guide/cinematics/cinematics-track-view-nodes-material-4.png)
 
 1. Choose **Tools**, **Track View**.
 
 1. Create or select an existing sequence or **Director** node that you want to contain the animation.
 
-1. In the node tree, right\-click and choose **Add Material Node** and then in the **Material Name** dialog box, press **Ctrl+V** to paste the full path to the material that you copied in step 3 and then click **OK**.
+1. In the node tree, right-click and choose **Add Material Node** and then in the **Material Name** dialog box, press **Ctrl+V** to paste the full path to the material that you copied in step 3 and then click **OK**.
 
 1. If the material is in a material group, the text appears red on the **Material** node in the Track View. This means that a submaterial hasn't been selected.
 
    To add a submaterial, do the following:
 
-   1. In the Track View, right\-click the **Material** node.
+   1. In the Track View, right-click the **Material** node.
 
    1. Select the submaterial that you want to animate.
 
    1. The **Material** node text should no longer appear in red.
 
-1. To add tracks to the **Material** node, right\-click the node name and choose **Add Track**. See the following table for the available tracks.
+1. To add tracks to the **Material** node, right-click the node name and choose **Add Track**. See the following table for the available tracks.
 
 
 **Material Node Tracks**

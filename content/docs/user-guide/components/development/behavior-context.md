@@ -27,23 +27,23 @@ O3DE provides macros that you can use to wrap a class value. You can use `Behavi
 
 ### Constant 
 
-Constants are implemented as read\-only properties and can be global or restricted to a class. A behavior context macro called `BehaviorConstant` implements the Lambda getter for you.
+Constants are implemented as read-only properties and can be global or restricted to a class. A behavior context macro called `BehaviorConstant` implements the Lambda getter for you.
 
 ### Enum 
 
-Because class enums often require casting, O3DE currently treats all enums values as `int`. Enums are implemented as read\-only `int` properties.
+Because class enums often require casting, O3DE currently treats all enums values as `int`. Enums are implemented as read-only `int` properties.
 
 ### Class 
 
 Reflects a C++ class or struct. You can provide an optional name. If you do not provide a name, the class name from `AzTypeInfo` is used. That name must be unique for the scope. Because the system uses `AzRTTI` to build the class hierarchy, you can use RTTI if you want to reflect base class functionality.
-+ **Allocator** \- You can provide a custom allocator/ deallocator for your class. This allows you to override any existing allocation schema. If you do not provide a custom allocator, aznew/delete is used \(`AZ_CLASS_ALLOCATOR`\).
-+ **Constructor** \- Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template augments.
-+ **Wrapping/WrappingMember** \- Allows code to inform the system that it is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers.
-+ **Userdata** \- Allows you to provide a pointer to user data. The pointer is accessible from all callbacks (like a custom allocator) that you implement for the class.
-+ **Method** \- Reflects a C++ class function. The first argument is the class pointer. This is the same usage as global methods.
-+ **Property** \- Reflects class data. The first argument is the class pointer. This is the same usage as global properties.
-+ **Enum** \- Enums are int read\-only properties.
-+ **Constant** \- Constants are read\-only properties.
++ **Allocator** - You can provide a custom allocator/ deallocator for your class. This allows you to override any existing allocation schema. If you do not provide a custom allocator, aznew/delete is used \(`AZ_CLASS_ALLOCATOR`\).
++ **Constructor** - Allows you to enumerate the class constructors that you want to reflect. You must pass all constructor arguments as template augments.
++ **Wrapping/WrappingMember** - Allows code to inform the system that it is a wrapper of another class. This is useful when you reflect smart pointers and string wrappers.
++ **Userdata** - Allows you to provide a pointer to user data. The pointer is accessible from all callbacks (like a custom allocator) that you implement for the class.
++ **Method** - Reflects a C++ class function. The first argument is the class pointer. This is the same usage as global methods.
++ **Property** - Reflects class data. The first argument is the class pointer. This is the same usage as global properties.
++ **Enum** - Enums are int read-only properties.
++ **Constant** - Constants are read-only properties.
 
 #### Nested Classes 
 
@@ -117,8 +117,8 @@ void Outer::Inner::Reflect(AZ::ReflectContext* context)
 ### EBus 
 
 `EBus` Reflects O3DE event bus messages. Depending on your EBus configuration, `Broadcast`, `Event` (with ID) and `Queuing` are reflected. Queuing is a generic function to be executed when the bus messages are consumed.
-+ **Event** \- Reflects an EBus event. Depending on your EBus configuration, O3DE automatically reflects `Broadcast`, `Event`, `QueueBroadCast`, and `QueueEvent.`
-+ **Handler** \- Reflects a class that you must implement to forward messages from the EBus to behavior context methods. You must create a class that can monitor the specified EBus and forward messages to the behavior context. This is a requirement because the behavior context can not guarantee that there is a handler for each message. If a message expects a result, you must provide a default result in case the message is not handled by the behavior context user. Keep in mind that the system creates as many of these handlers as the behavior context requires. Handlers can also execute in different threads. As a result, you should avoid static storage for values that change. The best way to understand this is to examine the example that follows.
++ **Event** - Reflects an EBus event. Depending on your EBus configuration, O3DE automatically reflects `Broadcast`, `Event`, `QueueBroadCast`, and `QueueEvent.`
++ **Handler** - Reflects a class that you must implement to forward messages from the EBus to behavior context methods. You must create a class that can monitor the specified EBus and forward messages to the behavior context. This is a requirement because the behavior context can not guarantee that there is a handler for each message. If a message expects a result, you must provide a default result in case the message is not handled by the behavior context user. Keep in mind that the system creates as many of these handlers as the behavior context requires. Handlers can also execute in different threads. As a result, you should avoid static storage for values that change. The best way to understand this is to examine the example that follows.
 
 ## Example 
 

@@ -60,6 +60,6 @@ Asset Processor performs a check at the beginning of the scan and does the follo
 + (Very low) Checks whether the source file in question had any builders version change or analysis fingerprint by comparing the data from the previous time.
 + (Very low) Compares the modtime with the previously recorded time in the database.
 + (Low) Queries the database files table to get a list of every file and its modtime from previous runs.
-+ (Low) Queries the database sources table to get a list of every source asset and its builder\-fingerprint signature.
++ (Low) Queries the database sources table to get a list of every source asset and its builder-fingerprint signature.
 
 If any of these checks fail, the source goes through the normal, unchanged analysis pipeline. This means that **Faster Scanning Mode** makes no changes to the actual analysis.

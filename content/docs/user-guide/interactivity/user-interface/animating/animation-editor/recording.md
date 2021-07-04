@@ -27,7 +27,7 @@ In the [**Animation Editor**](/docs/user-guide/user-interface/animation/_index.m
 
 1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), select the UI element that you want to animate.
 
-1. In the **Animation Editor**, right\-click the sequence that you created and click **Add Selected UI Element(s)**.
+1. In the **Animation Editor**, right-click the sequence that you created and click **Add Selected UI Element(s)**.
 
 **To record an animation sequence**
 

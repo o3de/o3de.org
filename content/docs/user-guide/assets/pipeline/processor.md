@@ -28,7 +28,7 @@ Use a unique cache directory. Do not share the cache directory with a Windows sy
 
 You don't need to close Asset Processor when you get the latest updates from source control. You can start O3DE Editor while Asset Processor is still processing your assets.
 
-However, if you aren't using the game or O3DE Editor, you can exit Asset Processor by right\-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar.
+However, if you aren't using the game or O3DE Editor, you can exit Asset Processor by right-clicking its icon in the notification area on the Windows taskbar or the macOS menu bar.
 
 Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device. This is called virtual file system (VFS) and is required for live reloading to work on those platforms. For more information, see [Live Reloading and VFS](/docs/user-guide/assets/live-reloading.md).
 
@@ -41,7 +41,7 @@ Use the `AssetProcessorPlatformConfig.ini` configuration file to perform the fol
 + Add additional folders for Asset Processor to watch. For example, you can specify folders such as shared particle libraries and associated textures between projects.
 + Specify which files trigger related files to be rebuilt. This is called metafile fingerprinting.
 
-To add game\-specific overrides, you can add a file named `AssetProcessorGamePlatformConfig.ini` to your game assets directory. This file is read after the root configuration file and can have additional game\-specific settings for the ignore list, platforms, and file types.
+To add game-specific overrides, you can add a file named `AssetProcessorGamePlatformConfig.ini` to your game assets directory. This file is read after the root configuration file and can have additional game-specific settings for the ignore list, platforms, and file types.
 
 For more information about these configuration files, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md).
 

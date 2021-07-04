@@ -41,7 +41,7 @@ When enabled, this **Blast Family**'s collision will be part of the PhysX simula
 When enabled, this **Blast Family**'s colliders will be available for scene queries.
 
 **CCD Enabled**
-When enabled, this **Blast Family** will use continuous collision detection. **CCD** is useful for ensuring accurate collision detection for high\-speed objects.
+When enabled, this **Blast Family** will use continuous collision detection. **CCD** is useful for ensuring accurate collision detection for high-speed objects.
 
 **Tag**
 Set a tag for this **Blast Family**. Tags can be used to quickly identify components in script or code.

@@ -6,7 +6,7 @@ title: UI Elements
 
 {{< preview-migrated >}}
 
-UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can [add an existing pre\-fabricated (prefab) element](/docs/userguide/ui/editor/prefabs.md), such as a scroll box, which is an element with components already attached. You can also [create your own prefab elements](/docs/userguide/ui/editor/prefabs.md).
+UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can [add an existing pre-fabricated (prefab) element](/docs/userguide/ui/editor/prefabs.md), such as a scroll box, which is an element with components already attached. You can also [create your own prefab elements](/docs/userguide/ui/editor/prefabs.md).
 
 ![\[UI element properties\]](/images/user-guide/game_ui_editor/ui-editor-elements.png)
 
@@ -35,15 +35,15 @@ For each of the following procedures, use the **UI Editor** to manage UI element
 | To find an element | In the UI Editor menu, choose Edit and then Find Elements or press Ctrl+F. For more information, see [Searching for UI Elements](/docs/user-guide/interactivity/user-interface/editor/search-element.md). |
 | To create an element | In the UI Editor toolbar, click New and then Empty element. The element appears in the Hierarchy pane and viewport.  |
 | To move, rotate, or resize an element |  Select the element and then click the **Move**, **Rotate**, or **Resize** tool in the toolbar. Select **Snap to grid** to modify elements in increments.  |
-| To copy an element | Right\-click the element in the Hierarchy pane or viewport and choose Copy.  |
+| To copy an element | Right-click the element in the Hierarchy pane or viewport and choose Copy.  |
 | To nudge an element | To nudge, or move, an element one pixel at a time, select the element and click the Move tool. Use arrow keys to nudge elements in the selected direction. Press and hold the Shift key while pressing the arrow keys to nudge elements 10 pixels at a time. |
-| To paste a copied element | Right\-click anywhere in the Hierarchy pane or viewport and choose Paste. If an element is selected, the Paste as sibling and Paste as child options appear.  |
-| To delete an element | Right\-click the element in the Hierarchy pane or viewport and choose Delete.  |
+| To paste a copied element | Right-click anywhere in the Hierarchy pane or viewport and choose Paste. If an element is selected, the Paste as sibling and Paste as child options appear.  |
+| To delete an element | Right-click the element in the Hierarchy pane or viewport and choose Delete.  |
 | To hide an element |  Click the eye icon (to the right of the element name) in the **Hierarchy** pane or viewport. Click again to show the element. When hiding or unhiding (showing) an element, the following behaviors apply:   |
 | To hide all elements | To hide all elements, clear any selected items and then click the eye icon in the top row of the Hierarchy pane. |
 | To prevent selection of an element in the viewport | Click the padlock icon to the right of the element name in the Hierarchy pane. This prevents selection only of that particular element; its children are still selectable. |
 | To prevent selection of all elements in the viewport | Clear any selected elements (click in a blank area of the Hierarchy pane) and then click the padlock icon in the top row of the Hierarchy pane. |
-| To rename an element | Double\-click the element in the Hierarchy pane, enter the new name, and press Enter.  |
+| To rename an element | Double-click the element in the Hierarchy pane, enter the new name, and press Enter.  |
 | To nest an element | Select the element in the Hierarchy pane and drag it on top of the parent element.  |
 | To change the element draw order | Select and drag elements up or down in the Hierarchy pane. Elements are drawn in order starting from the top of the hierarchy list, so elements at the bottom of the list appear in front of elements at the top of the list.  |
 

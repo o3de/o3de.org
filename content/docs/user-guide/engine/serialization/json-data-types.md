@@ -20,14 +20,14 @@ Deserialization can be conducted from any primitive JSON type to these C++ types
 
 | C++ Type | JSON boolean | JSON number | JSON string |
 | --- | --- | --- | --- |
-| bool | Direct mapping. | 0 maps to false, all other values are true. | Case\-insensitive comparison against "true" and "false" to map to the respective C++ values. |
-| Integer types | True maps to 1, False to 0. | Direct mapping, where floating point values are truncated. | Tries to extract a 64\-bit integer and convert to the target integer type.  |
-| Floating point types | True maps to 1, False to 0. | Direct mapping. | Tries to extract a 64\-bit floating point and convert it to the target type. |
+| bool | Direct mapping. | 0 maps to false, all other values are true. | Case-insensitive comparison against "true" and "false" to map to the respective C++ values. |
+| Integer types | True maps to 1, False to 0. | Direct mapping, where floating point values are truncated. | Tries to extract a 64-bit integer and convert to the target integer type.  |
+| Floating point types | True maps to 1, False to 0. | Direct mapping. | Tries to extract a 64-bit floating point and convert it to the target type. |
 | Strings (AZstd::string and OSString only) | True is converted to "True", and False to "False". | String representation of the number. | Direct mapping. |
 
 ## Pointers 
 
- Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type. For pointers to C++ objects, this means that the pointed\-to object must be registered with the serialization context being used. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the O3DE runtime can be used.
+ Pointers and smart pointer types are serialized out to the type that they point to as JSON values, following all of the rules for that type. For pointers to C++ objects, this means that the pointed-to object must be registered with the serialization context being used. While most types can be safely serialized without any metadata, for derived classes, an additional `$type` key is serialized into the JSON object with the class' name. If there could possibly be a conflict in the class name, fully namespaced names or a class' UUID in the O3DE runtime can be used.
 
  When deserializing, the `$type` value is used as a hint to determine which object to reconstruct if necessary. Otherwise, only the C++ type of the member is inspected. Deserialization proceeds memberwise, using the field mapping that was registered with the serialization context to map JSON object keys to C++ members.
 
@@ -86,9 +86,9 @@ ExampleEnum::Flag4 | 16 // Serializes as ["Flag4", 16]
 
 ## Vectors 
 
-Serialization supports 2D, 3D, and 4D vectors. An N\-dimensional vector is serialized as a JSON array of N floating point numbers, in the order of the X, Y, Z, and W coordinate.
+Serialization supports 2D, 3D, and 4D vectors. An N-dimensional vector is serialized as a JSON array of N floating point numbers, in the order of the X, Y, Z, and W coordinate.
 
-For deserialization, vectors can be read from an array of any length, but will only read up to the number of elements in the target type. If the array has fewer elements than the vector type, those vector components are assigned the default value of 0. Array elements follow the rules of deserialization for the C++ floating point type of the vector elements. Vectors can also be deserialized from JSON objects where the object keys map to the vector component name in a case\-insensitive compare. Other keys are ignored, and components with missing keys use the default value.
+For deserialization, vectors can be read from an array of any length, but will only read up to the number of elements in the target type. If the array has fewer elements than the vector type, those vector components are assigned the default value of 0. Array elements follow the rules of deserialization for the C++ floating point type of the vector elements. Vectors can also be deserialized from JSON objects where the object keys map to the vector component name in a case-insensitive compare. Other keys are ignored, and components with missing keys use the default value.
 
 ## Containers 
 
@@ -104,10 +104,10 @@ The following types are serialized to JSON arrays:
 + `AZStd::vector`
 + `AZStd::pair`
 + `AZStd::tuple`
-+ `AZStd::set` \- Values in the serialized array are sorted
-+ `AZStd::unordered_set` \- Values in the serialized array are sorted
++ `AZStd::set` - Values in the serialized array are sorted
++ `AZStd::unordered_set` - Values in the serialized array are sorted
 
-Deserialization of a JSON array to a C++ array, list, vector, set, pair, or tuple type is a direct element\-by\-element conversion. The types of each array element are converted to the target container's value type according to the other JSON deserialization rules. Missing elements map to the default for the container's value type, and additional elements are ignored. Types other than JSON arrays will result in a conversion error when attempting to deserialize to one of these C++ types.
+Deserialization of a JSON array to a C++ array, list, vector, set, pair, or tuple type is a direct element-by-element conversion. The types of each array element are converted to the target container's value type according to the other JSON deserialization rules. Missing elements map to the default for the container's value type, and additional elements are ignored. Types other than JSON arrays will result in a conversion error when attempting to deserialize to one of these C++ types.
 
 ### Map types 
 
@@ -130,5 +130,5 @@ Color types are serialized to JSON arrays containing 3 float values for RGB colo
 | RGBA | Array of 4 floating point elements. | \{ "RGBA" : \[1.0, 0.3, 0.2, 0.8\] \} |
 | RGB8 | Array of 3 integer elements with values in the range \[0, 255\]. | \{ "RGB8" : \[255, 77, 51\] \} |
 | RGBA8 | Array of 4 integer elements with values in the range \[0, 255\]. | \{ "RGBA8" : \[255, 77, 51, 204\] \} |
-| HEX | A string containing 3 8\-bit hex values representing the colors. | \{ "HEX" : "FF4D33" \} |
-| HEXA | A string containing 4 8\-bit hex values representing the colors and alpha channel. | \{ "HEXA" : "FF4D33CC" \} |
+| HEX | A string containing 3 8-bit hex values representing the colors. | \{ "HEX" : "FF4D33" \} |
+| HEXA | A string containing 4 8-bit hex values representing the colors and alpha channel. | \{ "HEXA" : "FF4D33CC" \} |

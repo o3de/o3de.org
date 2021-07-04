@@ -8,7 +8,7 @@ title: FBX Settings Motions tab
 You can process animation sequences from a single `.fbx` file as **Motions**. Each **Motion** produces its own `.motion` file. The processed runtime assets appear in **Asset Browser** as children of the `.fbx` file.
 
 **Important**
-Animation in your `.fbx` should be *baked*, that is, each animated channel should be keyed at every frame. Third\-party animation applications might use functions and simulations to interpolate between keyframes and the results are not exported from your `.fbx` file unless the animation is baked into the animation channels.
+Animation in your `.fbx` should be *baked*, that is, each animated channel should be keyed at every frame. Third-party animation applications might use functions and simulations to interpolate between keyframes and the results are not exported from your `.fbx` file unless the animation is baked into the animation channels.
 
 For more information, see [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types.md).
 
@@ -79,7 +79,7 @@ Specify the maximum error tolerance allowed in scale. Valid values range from a 
 
 ![\[The FBX Settings Motions tab Coordinate system change modifier.\]](/images/user-guide/fbx/ui-fbx-settings-actor-modifier-coord-sys-change.png)
 
-Modify the coordinate system of the motion. Third\-party content creation applications and game engines use varying coordinate systems with content applications often rotating the direction of the forward axis. The **Facing direction** property can be set to rotate the motion 180 degrees around its up axis to account for this difference. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged.
+Modify the coordinate system of the motion. Third-party content creation applications and game engines use varying coordinate systems with content applications often rotating the direction of the forward axis. The **Facing direction** property can be set to rotate the motion 180 degrees around its up axis to account for this difference. The rotation is applied when the asset is processed and the `.fbx` file remains unchanged.
 
 ## Motion range modifier 
 

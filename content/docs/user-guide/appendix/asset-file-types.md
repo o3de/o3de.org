@@ -33,8 +33,8 @@ The following file formats are used for static geometry:
 | \*skin (Character Skinned Render Mesh) | DCC tool | Contains skinned character data, including the mesh, vertex weighting, vertex colors, and morph targets. |
 | \*.fbx (Filmbox File) | DCC Tool | Contains mesh, material, camera, and animation data. Provides interoperability between DCC tools. |
 | \*.scenesettings (Scene Settings File) | O3DE | Contains configuration and rules settings from an .fbx file.  |
-| \*.abc (Alembic Cache File) | DCC tool | Contains non\-procedural, application\-independent set of baked geometric data such as baked meshes and their materials.  |
-| \*.cax (CAD/CAE Exchange File) | O3DE | Contains compressed game assets read from the .abc file and streamed in\-game on demand from disk.  |
+| \*.abc (Alembic Cache File) | DCC tool | Contains non-procedural, application-independent set of baked geometric data such as baked meshes and their materials.  |
+| \*.cax (CAD/CAE Exchange File) | O3DE | Contains compressed game assets read from the .abc file and streamed in-game on demand from disk.  |
 | \*.trb (Terrain Block File) | O3DE | Contains terrain data and associated level objects such as water and vegetation.  |
 
 **Material and Texture File Types**

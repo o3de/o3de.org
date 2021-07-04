@@ -13,7 +13,7 @@ Anchor values are always `0.00%` to `100.00%` as defined by the parent's edges. 
 Anchors and offsets are useful in a variety of situations:
 + Ensuring that an element maintains a specific padding within its parent's edges, regardless of changes to the parent's size
 + Anchoring an element to a corner of its parent, regardless of changes to the parent's size or position
-+ Building resolution\-independent UI elements
++ Building resolution-independent UI elements
 
 For example, you can ensure an element remains full screen regardless of the screen's resolution.
 
@@ -54,8 +54,8 @@ But if, for example, you want the element's left and right edges to each remain 
 **To edit an element's position and size**
 In the **Properties** pane, under **Transform2D**, modify the **Offsets**, as appropriate:
 If the element's anchors are together, do the following:
-+ For **X Pos**, enter a negative or positive value in pixels. This adjusts the horizontal offset relative to the left\-right anchor position.
-+ For **Y Pos**, enter a negative or positive value in pixels. This adjusts the vertical offset relative to the top\-bottom anchor position.
++ For **X Pos**, enter a negative or positive value in pixels. This adjusts the horizontal offset relative to the left-right anchor position.
++ For **Y Pos**, enter a negative or positive value in pixels. This adjusts the vertical offset relative to the top-bottom anchor position.
 When the element's anchors are together, only its position adjusts with the parent's size. The element's size is not adjusted. Therefore, you can manually adjust the element's size, which remains consistent when anchors are together.
 + For **Width**, enter a value in pixels.
 + For **Height**, enter a value in pixels.

@@ -59,7 +59,7 @@ All pins have an **Out** pin except **For Each**, which has an **Each** pin that
 
 #### Automatic Data Pin Typing 
 
-The pins on container operation are context\-sensitive. Data input and output pins automatically take on the data type of the pin to which they are connected.
+The pins on container operation are context-sensitive. Data input and output pins automatically take on the data type of the pin to which they are connected.
 
 **Example**
 In the following example, the array type is `string`.
@@ -81,7 +81,7 @@ Array operation nodes typically have a **Container** output pin. You can use thi
 
 ## Maps 
 
-Maps are containers of key\-value pairs. Maps in the **Variable Manager** have a small split rectangular icon.
+Maps are containers of key-value pairs. Maps in the **Variable Manager** have a small split rectangular icon.
 
 ![\[A map variable in the Script Canvas Variable Manager.\]](/images/user-guide/scripting/script-canvas/script-canvas-containers-10.png)
 

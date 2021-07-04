@@ -62,7 +62,7 @@ Add an action to a transition to achieve a parameter value change that triggers 
 
    The following options trigger the change on a follower graph but with different inputs to the follower graph's parameter:
    + **Follower Parameter Action** - A constant value is provided
-   + **Symbolic Follower Parameter Action** - A user\-selected value is provided
+   + **Symbolic Follower Parameter Action** - A user-selected value is provided
 
 1. In the **Attributes** panel, under **Parameter Action**, select a **Trigger Mode**. You can select one of the following options:
    + **On Enter** - Executes the action immediately upon starting a transition

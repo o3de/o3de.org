@@ -10,7 +10,7 @@ weight: 200
 | --- |
 | This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
 
-Assets for NVIDIA Blast are created in Houdini with the provided tools and plug\-ins. Follow the steps below to create and export blast assets for O3DE.
+Assets for NVIDIA Blast are created in Houdini with the provided tools and plug-ins. Follow the steps below to create and export blast assets for O3DE.
 
 **Note**
 These steps can be applied to any mesh. For best results, the mesh should be fully enclosed. Custom normals, UV sets, and vertex color streams can be applied to the root mesh and the resulting chunks.
@@ -96,7 +96,7 @@ With the mesh fractured, you must export `.fbx` and `.blast` assets to be proces
    + If the **Static root** parameter is enabled, the root mesh is a static rigid body and unaffected by gravity. Sufficient force fractures the root mesh and the chunks are dynamically simulated.
    + If the **Static root** parameter is disabled, the root mesh is dynamic, treated like a rigid body, and affected by gravity. Sufficient force fractures the root mesh and the chunks are dynamically simulated.
 **Note**
-All chunks are simulated as dynamic rigid bodies. You can make non\-root chunks into static rigid bodies by adding the word **static** to the name primitive attribute of the non\-root chunk. This is useful for scenarios where you want to destroy part of an entity while leaving part of the entity in place.
+All chunks are simulated as dynamic rigid bodies. You can make non-root chunks into static rigid bodies by adding the word **static** to the name primitive attribute of the non-root chunk. This is useful for scenarios where you want to destroy part of an entity while leaving part of the entity in place.
 For more information, see [Partial destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/static-chunks.md).
 
 1. Choose **Export Blast Asset** to generate a `.blast` asset.

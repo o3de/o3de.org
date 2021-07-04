@@ -43,7 +43,7 @@ Scale multiplier applied to the mass of all cloth particles. A value of **0.0** 
 Enable to override global gravity and set a custom gravity value for this cloth.
 
 **Gravity**
-Set gravity for this cloth. The default, **\-9.81** on the **Z** axis, is standard gravity.
+Set gravity for this cloth. The default, **-9.81** on the **Z** axis, is standard gravity.
 The **Gravity** property is enabled by the **Custom Gravity** property.
 
 **Gravity Scale**
@@ -52,15 +52,15 @@ Scale multiplier applied to the gravity of cloth particles.
 **Stiffness frequency**
 Stiffness exponent that adjusts the overall stiffness of the cloth simulation. This exponent is applied per second to these properties:
 + **Damping**
-+ **Damping \- Linear drag**
-+ **Damping \- Angular drag**
-+ **Wind \- Air drag coefficient**
-+ **Wind \- Air lift coefficient**
-+ **Self collision \- Stiffness**
++ **Damping - Linear drag**
++ **Damping - Angular drag**
++ **Wind - Air drag coefficient**
++ **Wind - Air lift coefficient**
++ **Self collision - Stiffness**
 + **Fabric stiffness**
 + **Fabric compression**
 + **Fabric stretch**
-+ **Tether \- Stretch**
++ **Tether - Stretch**
 
 ## Motion constraints properties 
 
@@ -75,7 +75,7 @@ Scale value applied to all motion constraints.
 **1.0**: Motion constraints are fully applied.
 
 **Bias**
-Bias value in meters added to all motion constraints. Valid values range from **\-Infinity** to **Infinity**.
+Bias value in meters added to all motion constraints. Valid values range from **-Infinity** to **Infinity**.
 
 **Stiffness**
 Stiffness for motion constraints.

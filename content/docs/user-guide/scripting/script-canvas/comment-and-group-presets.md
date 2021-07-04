@@ -22,13 +22,13 @@ You can create a preset in the Script Canvas editor by using an existing node gr
 
 **To create a preset from a group or comment**
 
-1. Right\-click the group or comment and choose **Create Preset From**. The preset that you create saves the font settings and color of the original group or comment. It does not save the display text.
+1. Right-click the group or comment and choose **Create Preset From**. The preset that you create saves the font settings and color of the original group or comment. It does not save the display text.
 ![\[Creating a preset from an existing comment in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-2.png)
 
 1. In the **Set Preset Name** dialog box, enter a name for the preset, and then click **OK**.
 ![\[Naming a comment or group preset in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-3.png)
 
-1. To use the preset that you created, right\-click the canvas, choose **Add Comment** or **Group**, and then choose the preset comment or group that you created.
+1. To use the preset that you created, right-click the canvas, choose **Add Comment** or **Group**, and then choose the preset comment or group that you created.
 ![\[Choosing a preset comment\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-4.png)
 
 ## Configuring a Default Preset 

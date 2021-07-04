@@ -30,7 +30,7 @@ When you create an entity, you add the NVIDIA Blast functionality and define how
 
 1. Ensure that the terrain has a **PhysX Terrain** level component. In **Level inspector**, choose **Add Component** and select **PhysX Terrain** from the component list.
 
-1. Create a new entity. Right\-click in **Perspective** and choose **Create entity** from the context menu.
+1. Create a new entity. Right-click in **Perspective** and choose **Create entity** from the context menu.
 
 1. Add a **Blast Family** component to the entity. In **Entity Inspector**, choose **Add Component** and select **Blast Family** from the component list. The **Blast Family** component adds NVIDIA Blast functionality to the entity. For more information, see [Blast Family component](/docs/user-guide/components/reference/destruction/blast-family/).
 

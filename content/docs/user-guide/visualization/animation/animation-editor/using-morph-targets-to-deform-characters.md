@@ -6,7 +6,7 @@ title: Using Morph Targets to Deform Characters
 
 {{< preview-migrated >}}
 
-A morph target is a deformed mesh that is stored as a series of vertex positions. Morph targets are also called blend shapes or vertex\-level deformations. You can use morph targets to deform a character's face to animate facial expressions or a character's body part to correct undesired deformation of skinning. You can also simulate deformation of clothing on a character.
+A morph target is a deformed mesh that is stored as a series of vertex positions. Morph targets are also called blend shapes or vertex-level deformations. You can use morph targets to deform a character's face to animate facial expressions or a character's body part to correct undesired deformation of skinning. You can also simulate deformation of clothing on a character.
 
 In the **Animation Editor**, you can use morph targets with one of the following nodes:
 + **Motion** node - Plays morph target animations similarly as skeletal animations.
@@ -35,7 +35,7 @@ You can also change how morph targets are imported.
 
 **To change how morph targets are imported**
 
-1. In the **Asset Browser**, right\-click your `.fbx` file and choose **Edit Settings**.
+1. In the **Asset Browser**, right-click your `.fbx` file and choose **Edit Settings**.
 ![\[Choose the Edit Settings option for your .fbx file in the Asset Browser.\]](/images/user-guide/actor-animation/asset-browser-fbx-file-edit-settings.png)
 
 1. In the **FBX Settings** window, click the **Actors** tab.
@@ -52,7 +52,7 @@ You can also change how morph targets are imported.
 
 **To change how morph target motions are imported**
 
-1. In the **Asset Browser**, right\-click your `.fbx` file and choose **Edit Settings**.
+1. In the **Asset Browser**, right-click your `.fbx` file and choose **Edit Settings**.
 
 1. In the **FBX Settings** window, click the **Motions** tab.
 **Note**
@@ -131,7 +131,7 @@ As an alternative to creating a motion node with morph targets, you can use a **
 
 1. In the **Animation Editor**, drag the **Blend Tree** node from the **Sources** tab in the **Anim Graph Palette** to the animation graph.
 
-1. In the animation graph, double\-click the **Blend Tree** node. You should see a **Final Node** node and additional nodes in the **Anim Graph Palette**.
+1. In the animation graph, double-click the **Blend Tree** node. You should see a **Final Node** node and additional nodes in the **Anim Graph Palette**.
 ![\[Blend Tree node and additional nodes in the Anim Graph Palette.\]](/images/user-guide/actor-animation/anim-graph-blendtree-node-finalnode.png)
 
 1. Drag the **Morph Target** node from the **Blending** tab in the **Anim Graph Palette** to the animation graph.
@@ -176,7 +176,7 @@ As an alternative to creating a motion node with morph targets, you can use a **
    The morph target is updated in the **Morph Target** node in the animation graph and in the **Attributes** pane.
 ![\[Morph target updated in the Morph Target node and Attributes pane.\]](/images/user-guide/actor-animation/animation-graph-attributes-pane-morph-target-set.png)
 
-1. In the **Anim Graphs** pane, activate the animation graph by double\-clicking the name.
+1. In the **Anim Graphs** pane, activate the animation graph by double-clicking the name.
 
 1. In the **Parameters** pane, move the slider to play the animation.
 ![\[Move the parameter slider to play the morph target animation.\]](/images/user-guide/actor-animation/morph-target-animation-parameter-slider.gif)

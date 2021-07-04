@@ -11,7 +11,7 @@ Use the information in this section to learn about game input in Open 3D Engine.
 For information on the **Input** component, see [Input](/docs/user-guide/components/reference/input).
 {{< /note >}}
 
-Input is what differentiates interactive experiences from all other entertainment media. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device. There are many different types of input devices, each of which can produce a wide range of input data. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems. As a cross\-operating system and device game engine, O3DE's goal is to provide independent access to input data from any supported device. The goal is to provide a common interface with these qualities:
+Input is what differentiates interactive experiences from all other entertainment media. Regardless of genre or operating system or device, every game is driven by some form of player interaction with a physical input device. There are many different types of input devices, each of which can produce a wide range of input data. Furthermore, the way this data is delivered to an application is rarely consistent across devices or operating systems. As a cross-operating system and device game engine, O3DE's goal is to provide independent access to input data from any supported device. The goal is to provide a common interface with these qualities:
 + OS and device agnostic
 + Extensible
 + Efficient
@@ -23,7 +23,7 @@ In addition, input data should have these attributes:
 
 ## AZ Framework Input 
 
-The O3DE input interface is called AZ framework input. AZ framework already provides abstracted interfaces for OS\-specific features like file I/O and application lifecycle management, so the AZ framework code location is a natural fit.
+The O3DE input interface is called AZ framework input. AZ framework already provides abstracted interfaces for OS-specific features like file I/O and application lifecycle management, so the AZ framework code location is a natural fit.
 
 The AZ framework input interface uses the `AZCore` EBus system and defines the following classes and EBuses:
 + `InputDevice` - A base class that represents a physical input device.
@@ -44,7 +44,7 @@ If you want to query the current input state directly, use `AzFramework`::`Input
 
 #### Text Input Interfaces 
 
-The following interfaces are designed to process text input. The input is delivered as a complete string of UTF\-8 code points. This eliminates the requirement to keep track of and interpret individual code units or convert from other encodings.
+The following interfaces are designed to process text input. The input is delivered as a complete string of UTF-8 code points. This eliminates the requirement to keep track of and interpret individual code units or convert from other encodings.
 + `InputTextEventNotificationBus` - An EBus interface that subscribes to text events from input devices or input channels.
 + `InputTextEntryRequestBus` - An EBus interface that sends text entry requests. The requests inform input devices that the user is expecting to start or stop entering text.
 + `InputTextEventListener` - An event monitor that inherits from `InputTextNotificationBus` but provides additional features. Subscribers can use the additional features to receive events in priority order or consume events so that the events aren't passed on to lower priority monitors.
@@ -83,14 +83,14 @@ This core set of input devices are managed by the `AzFramework::InputSystemCompo
 
 You can create and implement new types of input devices by inheriting from `AzFramework::InputDevice` and creating or destroying instances of the new class as required.
 
-The implementation details of each input device differ depending on the device type and operating system. However, almost all devices follow a similar pattern. They use an OS\-specific API to obtain raw input data for each frame and then update all the device's associated input channels accordingly.
+The implementation details of each input device differ depending on the device type and operating system. However, almost all devices follow a similar pattern. They use an OS-specific API to obtain raw input data for each frame and then update all the device's associated input channels accordingly.
 
 When you implement an input device, use only your device's `TickInput` function to update the value of the input channels. This ensures that input events are delivered at the same time every frame.
 
-Depending on how the input device gets the raw, operating system\-specific input, you might have to use one of the following techniques:
+Depending on how the input device gets the raw, operating system-specific input, you might have to use one of the following techniques:
 + Polling the underlying input API on each call to your input device's `TickInput` function. For examples, see all `InputDeviceGamepad` implementations in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Gamepad`.
 + Queuing or coalescing input data from the application's main message loop until the next call to `TickInput`. For an example, see `InputDeviceMouse` in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Mouse`.
-+ Ensuring input channels are updated in a thread\-safe manner if no raw input is received on the main thread. For an example, see `InputDeviceTouchAndroid` in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Touch`.
++ Ensuring input channels are updated in a thread-safe manner if no raw input is received on the main thread. For an example, see `InputDeviceTouchAndroid` in the directory `\dev\Code\Framework\AzFramework\AzFramework\Input\Devices\Touch`.
 
 ### Input Channels
 

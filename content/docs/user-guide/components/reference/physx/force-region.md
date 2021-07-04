@@ -61,7 +61,7 @@ Applies a force in local space, relative to the force region's orientation. For 
 
 | Property | Description |
 | --- | --- |
-| Direction |  The direction of the force in the local space of the force region.   You can specify a value from `-1000000` to `1000000`, but O3DE Editor normalizes the value to a range of \-`1` and `1`.   |
+| Direction |  The direction of the force in the local space of the force region.   You can specify a value from `-1000000` to `1000000`, but O3DE Editor normalizes the value to a range of -`1` and `1`.   |
 |  **Magnitude**  |  The amount of force to apply.  Specify a negative value to apply the force in the opposite direction.  |
 
 #### Point 
@@ -84,7 +84,7 @@ Applies a force that simulates air resistance. **Simple Drag** always applies fo
 
 #### Spline Follow 
 
-Applies a force to make entities follow a spline. The force uses a proportional\-derivative (PD) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
+Applies a force to make entities follow a spline. The force uses a proportional-derivative (PD) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
 
 **Note**
 For the force region entity, if you change the **Scale** property of the **Transform** component, the scaling must be uniform so that the x, y, and z scale values match. If scaling isn't uniform, the spline doesn't correctly reflect the path of the force.
@@ -114,7 +114,7 @@ You can define the direction for world space so that it always applies force in 
 **Note**
 When you select a force type, remember the following:
 For **Simple Drag**, you can't define the direction of force. **Simple Drag** always works in the opposite direction of the entity's movement. In contrast, you can define a direction of force using **World Space**, which always acts in the direction that you specify, regardless of the direction of the moving entity.
-To determine how much force to apply, **Linear Damping** takes into account the colliding entity's velocity and mass but not its shape. In contrast, **Simple Drag** takes into account the colliding entity's velocity, cross\-section area, and the **Region Density** of the force region.
+To determine how much force to apply, **Linear Damping** takes into account the colliding entity's velocity and mass but not its shape. In contrast, **Simple Drag** takes into account the colliding entity's velocity, cross-section area, and the **Region Density** of the force region.
 
 ## Creating a Force Region 
 

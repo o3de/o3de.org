@@ -48,7 +48,7 @@ azlmbr.legacy.general.save_level()
 
 ## Editor timing 
 
- Occasionally a script will need to introduce a delay in actions to be performed in the editor while another action completes, such as loading a level. Rather than use the built\-in Python delay methods, use these editor binding APIs.
+ Occasionally a script will need to introduce a delay in actions to be performed in the editor while another action completes, such as loading a level. Rather than use the built-in Python delay methods, use these editor binding APIs.
 
 ```
 # enables/disables idle processing for the Editor

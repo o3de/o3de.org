@@ -8,7 +8,7 @@ weight: 200
 
 {{< preview-migrated >}}
 
-Meshes, actors, PhysX colliders, and motions created in third\-party content creation tools must be exported to a runtime format for your project. To export your assets to O3DE, save the assets from your content application as `.fbx` files. Then, place the `.fbx` files in one of the asset directories of your project. O3DE uses `.fbx` as an intermediate file format because most modeling and animation applications can read and create `.fbx` files.
+Meshes, actors, PhysX colliders, and motions created in third-party content creation tools must be exported to a runtime format for your project. To export your assets to O3DE, save the assets from your content application as `.fbx` files. Then, place the `.fbx` files in one of the asset directories of your project. O3DE uses `.fbx` as an intermediate file format because most modeling and animation applications can read and create `.fbx` files.
 
 **Topics**
 + [FBX Settings introduction](#fbx-settings-intro)

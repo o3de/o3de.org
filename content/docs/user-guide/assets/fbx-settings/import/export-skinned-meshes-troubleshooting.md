@@ -13,7 +13,7 @@ If your character's skinning appears visually broken in the **Animation Editor**
 
 1. In O3DE Editor, in the **Asset Browser**, navigate to your `.fbx` file.
 
-1. Right\-click the `.fbx` file and choose **Edit Settings**.
+1. Right-click the `.fbx` file and choose **Edit Settings**.
 
 1. In the **FBX Settings** window, for the **Coordinate system change** modifier, set **Facing Direction** to **Do Nothing** or **Rotate 180 degrees around the up axis**.
 

@@ -26,7 +26,7 @@ You can also use the **Start Auto Recording** option. When you choose this optio
 
 1. In the Track View, select or create the sequence that you want.
 
-1. In the **Play** toolbar, click the **Start Auto Recording** icon. The playhead automatically moves in the timeline based on the setting specified in the drop\-down menu.
+1. In the **Play** toolbar, click the **Start Auto Recording** icon. The playhead automatically moves in the timeline based on the setting specified in the drop-down menu.
 
 1. In the viewport, manipulate a component entity that is part of your sequence. As the playhead moves and you make changes to component entities, your changes appear in the timeline as animation keys.
 
@@ -77,7 +77,7 @@ The following example shows how you can add animation keys automatically in the 
 
 1. Click the **Start Animation Recording** icon to enter record mode.
 
-1. In the left\-corner of the viewport window, right\-click **Perspective** and choose **Camera** and then specify the camera that is part of your sequence. The text will change from **Perspective** to **Camera entity: *NameOfYourCamera***.
+1. In the left-corner of the viewport window, right-click **Perspective** and choose **Camera** and then specify the camera that is part of your sequence. The text will change from **Perspective** to **Camera entity: *NameOfYourCamera***.
 
 1. While you are viewing from the perspective of the camera, when you move in the level, the camera will move as well. This includes any rotations. In record mode, this adds animation keys at the current playhead location.
 ![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-6.png)

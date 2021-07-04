@@ -20,7 +20,7 @@ If the interactive component's **Input enabled** setting is deselected (unchecke
 
 ## Animation List 
 
-The **Animation List** pane lists all the UI animation sequences found on the canvas that you are previewing. Select an animation to use the reset, play, pause, and set\-to\-end controls. Hold **Ctrl** or **Shift** to select and control multiple animations at once. You can also control animations independently and simultaneously so that one may be playing, for example, while you pause another.
+The **Animation List** pane lists all the UI animation sequences found on the canvas that you are previewing. Select an animation to use the reset, play, pause, and set-to-end controls. Hold **Ctrl** or **Shift** to select and control multiple animations at once. You can also control animations independently and simultaneously so that one may be playing, for example, while you pause another.
 
 ## Action Log 
 

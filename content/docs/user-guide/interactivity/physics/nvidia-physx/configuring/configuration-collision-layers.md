@@ -32,7 +32,7 @@ The layers that you define are specific to your game. When a collider is created
 
 1. In the **Entity Inspector**, add a **PhysX Collider** component to the entity.
 
-1. In the **PhysX Collider** component, for **Collision Layer**, choose one of the colliders that you created from the drop\-down list.
+1. In the **PhysX Collider** component, for **Collision Layer**, choose one of the colliders that you created from the drop-down list.
 ![\[The PhysX Collider component in the Entity Inspector.\]](/images/user-guide/physx/physx-configuration-3.png)
 
 ## Notes 

@@ -23,7 +23,7 @@ RayCastHit choose;
 WorldRequestBus::BroadcastResult(choose, &WorldRequests::RayCast, request);
 ```
 
-If you have a multi\-world game, use `EventResult` and pass in the world ID, as in the following example:
+If you have a multi-world game, use `EventResult` and pass in the world ID, as in the following example:
 
 ```
 // Multiple world setup

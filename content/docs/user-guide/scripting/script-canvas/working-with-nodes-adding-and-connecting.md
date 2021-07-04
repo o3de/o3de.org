@@ -13,7 +13,7 @@ You can add nodes quickly in succession to a graph by using the daisy chaining f
 
 **To create a chain of linked nodes**
 
-1. On the right side of the graph, press **Shift** + **Right\-click**.
+1. On the right side of the graph, press **Shift** + **Right-click**.
 
 1. In the context menu search box, enter the name or partial name of the node that you want to add.
 
@@ -23,10 +23,10 @@ You can add nodes quickly in succession to a graph by using the daisy chaining f
 
 1. Continue to add as many connected nodes as you want. Previously created nodes automatically scroll off to the left.
 **Note**
-If you start by adding nodes on the left side of the graph, the nodes that you create quickly scroll out of view. To see the previous nodes that you created, start by pressing **Shift+Right\-click** on the right side of the graph.
+If you start by adding nodes on the left side of the graph, the nodes that you create quickly scroll out of view. To see the previous nodes that you created, start by pressing **Shift+Right-click** on the right side of the graph.
 ![\[Quickly adding nodes in succession in the Script Canvas editor.\]](/images/shared/shared-script-canvas-working-with-nodes-1.gif)
 
-1. To exit the daisy\-chaining mode, press **ESC**.
+1. To exit the daisy-chaining mode, press **ESC**.
 
 ## Creating a Node From the Output Pin of an Existing Node 
 
@@ -51,15 +51,15 @@ To insert a node between two connected nodes and connect the new node automatica
 
 1. Drag a node over the line that connects the two nodes, and hold the new node in position.
 
-1. When an expanding, box\-shaped animation appears, the node pins are connected. Script Canvas nudges surrounding nodes aside to accommodate the new node.
+1. When an expanding, box-shaped animation appears, the node pins are connected. Script Canvas nudges surrounding nodes aside to accommodate the new node.
 ![\[Inserting an existing node between two connected nodes in the Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-3.gif)
 
-1. The node\-nudging feature is enabled by default. To change it, choose **Edit**, **Settings**, **Global Preferences** and select or clear the **Allow Node Nudging On Splice** option.
+1. The node-nudging feature is enabled by default. To change it, choose **Edit**, **Settings**, **Global Preferences** and select or clear the **Allow Node Nudging On Splice** option.
 ![\[Configuring the node nudging preferences in the Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-4.png)
 
 **To create a node between two connected nodes**
 
-1. Right\-click the line that connects the two nodes.
+1. Right-click the line that connects the two nodes.
 
 1. In the context menu search box, do one of the following:
    + Enter the name of the node that you want, and press **Enter**.
@@ -76,7 +76,7 @@ You can connect two nodes by dragging one node onto another node. Script Canvas 
 
 1. Drag a node over the side of the node that you want to connect, briefly holding the new node in position. For example, drag the left side of one node onto the right side of the second node.
 
-1. When an expanding, box\-shaped animation appears over the overlapping nodes, the node pins have been connected.
+1. When an expanding, box-shaped animation appears over the overlapping nodes, the node pins have been connected.
 
 1. Adjust the position of the new node on the graph.
 ![\[Connecting two existing nodes by superimposing them in the Script Canvas editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-6.gif)

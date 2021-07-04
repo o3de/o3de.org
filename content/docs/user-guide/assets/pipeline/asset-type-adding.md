@@ -5,7 +5,7 @@ title: Adding an Asset Type to O3DE
 
 {{< preview-migrated >}}
 
-When you develop a game, you might need to add a new kind of asset to O3DE. The new asset could be a configuration file, a game\-specific data asset, or structured data for which you created an editor. This topic guides you through the process of adding a custom asset type to O3DE.
+When you develop a game, you might need to add a new kind of asset to O3DE. The new asset could be a configuration file, a game-specific data asset, or structured data for which you created an editor. This topic guides you through the process of adding a custom asset type to O3DE.
 
 For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/asset-system-programming.md).
 
@@ -42,7 +42,7 @@ You can deploy your asset file by copying if the following are true:
 
 If your asset requires processing, compiling, or optimizing at run time, you can do one of the following:
 + Create a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder.md) to transform your source asset into its compiled form.
-+ If your asset is extracted from a scene file like FBX and you want to integrate with its corresponding pipeline, create a scene pipeline plug\-in.
++ If your asset is extracted from a scene file like FBX and you want to integrate with its corresponding pipeline, create a scene pipeline plug-in.
 
 #### Copying Versus Creating a Builder 
 
@@ -73,7 +73,7 @@ Optionally, you can describe your asset to the UI (and other systems) and custom
 
 1. **Describe your asset type to the UI** - Use the `AssetTypeInfoBus` to provide integration with UI features like the **Asset Browser**.
 
-1. **Customize drag\-and\-drop behavior** - If you have components, you can add reflection to them to enable custom behavior. For example, when a game developer drags your asset to the viewport, you can make your component be the default component that is spawned.
+1. **Customize drag-and-drop behavior** - If you have components, you can add reflection to them to enable custom behavior. For example, when a game developer drags your asset to the viewport, you can make your component be the default component that is spawned.
 
 1. **Customize the context menu** - You can add context menu actions to interact with your asset.
 
@@ -88,7 +88,7 @@ When you register your asset with the asset pipeline, you define your asset to t
 ### Copying Assets 
 
 To copy assets, you typically create a copy rule in a configuration file. The configuration file that you use depends on your implementation goals.
-+ To copy assets as\-is into the cache, add a copy rule to your `AssetProcessorPlatformConfig.ini` file.
++ To copy assets as-is into the cache, add a copy rule to your `AssetProcessorPlatformConfig.ini` file.
 + If the asset type is specific to a gem, add it to your gem's root directory \(the directory with the `gem.json` file\) instead of to the `AssetProcessorGemConfig.ini`. This overrides the platform configuration file but is overridden by the game configuration file.
 + If the asset type is specific to the game project, add it to your game directory's `AssetProcessorGamePlatformConfig.ini` file instead of to the `AssetProcessorPlatformConfig.ini` file.
 
@@ -104,9 +104,9 @@ version=1
 
 For more information, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md).
 
-### Custom\-Built Assets 
+### Custom-Built Assets 
 
-For custom\-built assets, you can write a BuilderSDK builder or a Scene API plug\-in. If your asset is extracted from an `.fbx` file, you can write a Scene API plug\-in. With either approach, you do not need to edit `.ini` files as you do when copying assets.
+For custom-built assets, you can write a BuilderSDK builder or a Scene API plug-in. If your asset is extracted from an `.fbx` file, you can write a Scene API plug-in. With either approach, you do not need to edit `.ini` files as you do when copying assets.
 
 #### Writing a BuilderSDK Builder 
 
@@ -124,9 +124,9 @@ When you write a BuilderSDK builder to create the asset, it should fill in the p
 
 For more information and examples, see the [Asset Builder API](/docs/user-guide/tutorials/assets/custom-builder.md).
 
-#### Writing a Scene API Plug\-in 
+#### Writing a Scene API Plug-in 
 
-The Scene API provides boilerplate code so that you only have to write a few code hooks to create a plug\-in. For an example Scene API plug\-in, see the `SceneLoggingExample` Gem, which adds a scene plug\-in that outputs logs for each node in the file. The gem is a good starting point for your own code. You can replace the log outputs with the data collection and/or compiling functions that you want.
+The Scene API provides boilerplate code so that you only have to write a few code hooks to create a plug-in. For an example Scene API plug-in, see the `SceneLoggingExample` Gem, which adds a scene plug-in that outputs logs for each node in the file. The gem is a good starting point for your own code. You can replace the log outputs with the data collection and/or compiling functions that you want.
 
 ### Registration Versus Integration 
 
@@ -135,7 +135,7 @@ After you register the asset with the asset system, you can use the `AssetCatalo
 While simple registration of an asset can be useful in some circumstances, full integration with the O3DE asset system offers many advantages, including the following:
 + Automatic live reloading
 + Automatic asynchronous streaming
-+ Automatic drag\-and\-drop support in the **Asset Browser**
++ Automatic drag-and-drop support in the **Asset Browser**
 + Thumbnails
 
 ## B. Enabling the Engine to Load and Stream the Asset 
@@ -144,23 +144,23 @@ The following sections describe the steps required for integration with O3DE's a
 
 ### 1. Create an AssetData Type 
 
-To represent an image that is usable in\-memory for your asset, derive a class from `AZ::Data::AssetData`. You do not load the asset from the `AssetData`\-derived class. Instead, the class actually represents your asset in memory, and the game uses it directly for processing. When you request the asset from `AssetManager`, the asset manager reference counts it, and the asset class is shared by any consumer of the asset. When you create an asset class, keep in mind the following:
-+ You can place `AssetData`\-derived classes in gems.
+To represent an image that is usable in-memory for your asset, derive a class from `AZ::Data::AssetData`. You do not load the asset from the `AssetData`-derived class. Instead, the class actually represents your asset in memory, and the game uses it directly for processing. When you request the asset from `AssetManager`, the asset manager reference counts it, and the asset class is shared by any consumer of the asset. When you create an asset class, keep in mind the following:
++ You can place `AssetData`-derived classes in gems.
 + Your asset class must have an AZ\_RTTI declaration, including a UUID for the class's type. The UUID that you use for this type is actually the asset type that it represents. The UUID matches the type that you use in your asset builder or your copy rule.
-+ While an `AssetData`\-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement. If you have special requirements (like third\-party considerations), your class can simply provide a handle to a foreign system that contains the asset data.
++ While an `AssetData`-derived class typically contains asset data that it stores in memory and that you use at run time, this is not a requirement. If you have special requirements (like third-party considerations), your class can simply provide a handle to a foreign system that contains the asset data.
 + For an example class that derives from `Az::Data::AssetData`, see the `ScriptCanvasAsset` class in the O3DE code at `Gems\ScriptCanvas\Code\Editor\Include\ScriptCanvas\Assets\ScriptCanvasAsset.h`.
 
 #### Asset Instances and Asset Data 
 
 It is important to understand the difference between asset `instances` and asset `data`.
 
-An `AssetData`\-derived class contains the asset data that is shared among instances that use that data. Data that is specific to an instance should live in the instance itself. For example, an animation asset usually contains actual animation curves and samples. Only one such asset is loaded even if many characters use the animation. However, each character instance has an additional block of data that keeps track of the frame that the animation is on for the instance.
+An `AssetData`-derived class contains the asset data that is shared among instances that use that data. Data that is specific to an instance should live in the instance itself. For example, an animation asset usually contains actual animation curves and samples. Only one such asset is loaded even if many characters use the animation. However, each character instance has an additional block of data that keeps track of the frame that the animation is on for the instance.
 
 `AssetData` objects are not immutable, and often change over time. For example, textures can load higher level of detail (LOD) objects, and procedural meshes or textures can change over time. However, all instances that use an asset get the same pointer to the asset and therefore change when the asset changes. This is also true when instances have a pointer to an asset in a foreign system.
 
 ### 2. Create an Asset Handler 
 
-You write an asset handler to read assets from buffer and convert them into your `AssetData` type. Only one such handler generally exists for each type of asset. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`\-derived class. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads.
+You write an asset handler to read assets from buffer and convert them into your `AssetData` type. Only one such handler generally exists for each type of asset. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`-derived class. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads.
 
 **Note**
 You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code.md).
@@ -290,20 +290,20 @@ void GetAssetTypeExtensions(AZStd::vector<AZStd::string>& extensions) override;
 
 To customize how your asset type interacts with the **Asset Browser** and viewport, use EBus listeners to override or supplement behaviors like the following:
 
-1. Default drag\-and\-drop behavior for viewport operations.
+1. Default drag-and-drop behavior for viewport operations.
 
-1. Default context menu (right\-click) behavior for the **Asset Browser**.
+1. Default context menu (right-click) behavior for the **Asset Browser**.
 
 1. Default file open behavior.
 
 **Note**
-Because a double\-click is a request to open a file, when you override file open behavior, you also override double\-click behavior.
+Because a double-click is a request to open a file, when you override file open behavior, you also override double-click behavior.
 
-### 2. Customizing Drag\-and\-Drop Behavior 
+### 2. Customizing Drag-and-Drop Behavior 
 
-To customize the default drag\-and\-drop behavior, you can edit the existing code in the `AzAssetBrowserRequestHandler.cpp` file. A more modular approach is to add a handler with higher priority to your gem.
+To customize the default drag-and-drop behavior, you can edit the existing code in the `AzAssetBrowserRequestHandler.cpp` file. A more modular approach is to add a handler with higher priority to your gem.
 
-To customize the default drag\-and\-drop behavior, create code that listens on the `DragAndDropEventsBus`, as in the following example.
+To customize the default drag-and-drop behavior, create code that listens on the `DragAndDropEventsBus`, as in the following example.
 
 ```
 AzQtComponents::DragAndDropEventsBus::Handler::BusConnect(AzQtComponents::DragAndDropContexts::EditorViewport);
@@ -367,7 +367,7 @@ if ((!event) || (!event->mimeData()) || (event->isAccepted()) || (!viewportDragC
  }
 ```
 
-The O3DE drag\-and\-drop system uses the same semantics as the Qt drag and drop system. For more information, see [Drag and Drop](http://doc.qt.io/qt-5/dnd.html) in the Qt documentation.
+The O3DE drag-and-drop system uses the same semantics as the Qt drag and drop system. For more information, see [Drag and Drop](http://doc.qt.io/qt-5/dnd.html) in the Qt documentation.
 
 ### 3. Customizing the Context Menu 
 
@@ -380,7 +380,7 @@ virtual void AddContextMenuActions(QWidget* /*caller*/, QMenu* /*menu*/, const A
 
 ### 4. Customizing File Open Behavior 
 
-Right or double\-clicking an asset in the **Asset Browser** or elsewhere in the UI triggers the file open behavior. The default behavior passes the asset file to the operating system.
+Right or double-clicking an asset in the **Asset Browser** or elsewhere in the UI triggers the file open behavior. The default behavior passes the asset file to the operating system.
 
 You can override this behavior by deriving from the `AssetBrowserInteractionNotificationsBus::Handler` and implementing `AddSourceFileOpeners`, as in the following code.
 
@@ -416,7 +416,7 @@ void AssetBrowserContextProvider::AddSourceFileOpeners(const char* fullSourceFil
     }
 ```
 
-If you implement an opener in this way, double\-clicks and other file open gestures call your opener instead of the operating system.
+If you implement an opener in this way, double-clicks and other file open gestures call your opener instead of the operating system.
 
 #### Preventing the OS from Opening a Custom File 
 

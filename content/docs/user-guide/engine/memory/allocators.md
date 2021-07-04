@@ -25,7 +25,7 @@ The following diagram illustrates the hierarchy of AZ memory allocators.
 + **`LegacyAllocator`** - Handles legacy memory allocations. For more information, see [Legacy Memory Management](#memory-allocators-legacy-memory-management).
 + **`PoolAllocator`** - Performs extremely fast small object memory allocations. `PoolAllocator` can allocate sizes in a range specified by `m_minAllocationSize` to `m_maxPoolSize`.
 **Note**
-`PoolAllocator` is not thread safe. If you need a thread\-safe version, use `ThreadPoolAllocator,` or inherit from `ThreadPoolBase` and then write custom code to handle the synchronization.
+`PoolAllocator` is not thread safe. If you need a thread-safe version, use `ThreadPoolAllocator,` or inherit from `ThreadPoolBase` and then write custom code to handle the synchronization.
 + **`ThreadPoolAllocator`** - Thread safe pool allocator. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as O3DE requires a unique static variable for the allocator type.
 
 ## Applying Allocators to Your Classes 
@@ -45,12 +45,12 @@ Each allocator commonly implements the `IAllocator` interface and uses a schema 
 
 | Schema | Description |
 | --- | --- |
-| AZ::HphaSchema |  This is the preferred schema. It combines a small block allocator for small allocations and a [red\-black tree](https://en.wikipedia.org/wiki/Red-black_tree) for large allocations. This provides good general purpose performance. Use this schema if you're not sure which one to use.  `HphaSchema` is based on Dimitar Lazarov's "High Performance Heap Allocator" (Game Programming Gems 7, Charles River Media, 2008, pp. 15-23).   |
-| AZ::HeapSchema |  Uses `nedmalloc` internally. Because `nedmalloc` uses thread caches to accelerate the re\-use of memory, `HeapSchema` can be useful for intensive allocation processing across multiple threads.  |
-| AZ::BestFitExternalSchema |  A best\-fit allocation scheme that uses an external map to store bookkeeping outside the memory being managed. Because the tracking node is stored outside the main chunk, O3DE can use this allocator with uncached memory. This is most useful for GPU resource management (for example, for textures, constant buffers, and compute buffers).  |
-| AZ::ChildAllocatorSchema |  Acts as a pass\-through schema to another allocator. Use this schema to create a new allocator based on an existing allocator like `SystemAllocator`. To properly tag the memory that each gem or logical subsystem allocates, each gem or subsystem can create its own child allocator. For more information, see [Creating an Allocator](#memory-allocators-creating-an-allocator).  |
-| AZ::PoolSchema |  A specialized schema that implements a small block allocator for managing small, high\-throughput allocations. Objects are typically pooled at the cost of using more memory.  `PoolSchema` is not thread safe. If you need a thread\-safe version, use `ThreadPoolSchema` or write custom code to handle the synchronization.   |
-| AZ::ThreadPoolSchema |  A thread\-safe pool schema that uses thread local storage to implement a small block allocator for each thread.  Because the thread pool allocator creates separate pools for each thread, it uses somewhat more memory, especially for fixed pool sizes.   |
+| AZ::HphaSchema |  This is the preferred schema. It combines a small block allocator for small allocations and a [red-black tree](https://en.wikipedia.org/wiki/Red-black_tree) for large allocations. This provides good general purpose performance. Use this schema if you're not sure which one to use.  `HphaSchema` is based on Dimitar Lazarov's "High Performance Heap Allocator" (Game Programming Gems 7, Charles River Media, 2008, pp. 15-23).   |
+| AZ::HeapSchema |  Uses `nedmalloc` internally. Because `nedmalloc` uses thread caches to accelerate the re-use of memory, `HeapSchema` can be useful for intensive allocation processing across multiple threads.  |
+| AZ::BestFitExternalSchema |  A best-fit allocation scheme that uses an external map to store bookkeeping outside the memory being managed. Because the tracking node is stored outside the main chunk, O3DE can use this allocator with uncached memory. This is most useful for GPU resource management (for example, for textures, constant buffers, and compute buffers).  |
+| AZ::ChildAllocatorSchema |  Acts as a pass-through schema to another allocator. Use this schema to create a new allocator based on an existing allocator like `SystemAllocator`. To properly tag the memory that each gem or logical subsystem allocates, each gem or subsystem can create its own child allocator. For more information, see [Creating an Allocator](#memory-allocators-creating-an-allocator).  |
+| AZ::PoolSchema |  A specialized schema that implements a small block allocator for managing small, high-throughput allocations. Objects are typically pooled at the cost of using more memory.  `PoolSchema` is not thread safe. If you need a thread-safe version, use `ThreadPoolSchema` or write custom code to handle the synchronization.   |
+| AZ::ThreadPoolSchema |  A thread-safe pool schema that uses thread local storage to implement a small block allocator for each thread.  Because the thread pool allocator creates separate pools for each thread, it uses somewhat more memory, especially for fixed pool sizes.   |
 
 ## Creating an Allocator 
 
