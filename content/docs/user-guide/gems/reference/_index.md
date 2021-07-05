@@ -45,6 +45,8 @@ Gems are redistributable packages that contain source code and assets that you c
 
 ## AWS
 
+For an overview of AWS Gems, refer to [AWS, AWS Gems, and O3DE](./aws)
+
 | Gem | Description |
 | - | - |
 | [AWS Client Auth](./aws/aws-client-auth) | The AWS Client Auth Gem provides solutions for client authentication and AWS authorization. |

@@ -7,10 +7,9 @@ menu_uuid: atom
 guide_img: "/images/atom-guide/guide_img.png"
 ---
 
-{{< preview-new >}}
+Welcome to the Atom Documentation! Atom Renderer is the graphics engine powering Open 3D Engine (O3DE). Check out the video below for a quick overview of some of Atom's features. Then, read on learn more about creating beautiful, high performance graphics with Atom!
 
-Welcome to the Atom Documentation! The Atom Renderer is the graphics engine powering the Open 3D Engine (O3DE). 
-
+{{< youtube id="GTJ_ie7yHdI" title="Atom Renderer" >}}
 
 | Section                        | Description |
 |--------------------------------------|---------|

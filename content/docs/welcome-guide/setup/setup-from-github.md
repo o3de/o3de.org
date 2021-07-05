@@ -5,14 +5,16 @@ weight: 300
 toc: true
 ---
 
-Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base.
+Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base. Check out the video below fo a step by step guide to set up O3DE from GitHub, or follow the tutorial on this page.
 
-The instructions here will guide you through the following steps:
+The instructions here and in the video will guide you through the following steps:
 
 * Configure credentials for Git LFS.
 * Fork and clone the O3DE GitHub repo.
 * Build the O3DE engine.
 * Register the engine.
+
+{{< youtube id="CIw9UoMMeX8" title="Setting up O3DE from GitHub" >}}
 
 ## Prerequisites
 

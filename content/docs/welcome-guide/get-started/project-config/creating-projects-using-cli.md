@@ -6,13 +6,17 @@ weight: 200
 toc: true
 ---
 
-This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here guide you through the following steps:
+The tutorial on this page and the video below provide an introduction to project configuration and building in Open 3D Engine (O3DE) using the command line interface (CLI).
 
-* Create a new O3DE project using the command line interface (CLI).
+The instructions here and in the video guide you through the following steps:
+
+* Create a new O3DE project using the CLI.
 * Create Visual Studio project files in your O3DE project directory.
 * Build your O3DE project.
 
 At the end of the tutorial you'll have a new O3DE project based on the default project template, opened in the **O3DE Editor**.
+
+{{< youtube id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}
 
 ## Prerequisites
 
