@@ -4,8 +4,6 @@ description: Integrate dependencies as packages into Open 3D Engine (O3DE) Gems 
 weight: 300
 ---
 
-{{< preview-new >}}
-
 Open 3D Engine (O3DE) offers a packaging system to allow for shipping pre-compiled libraries or other external sources. With the
 packaging system, you can more easily add external binaries as dependencies for your Gem or project without having to maintain them in source control. If you
 plan to add a static dependency that can't be shipped as source code, the packaging system offers consistency checks and target generation in
@@ -18,14 +16,13 @@ The CMake files that define the package system are located at `cmake/3rdParty.cm
 ## Overview
 
 The O3DE package system is used to deliver source and binary dependencies from external sources. These dependencies
-are needed by Gems, projects, and even the O3DE engine itself. The dependency system correctly detects dependencies and version requirements,
-making sure that you have the packages needed on your system at compile-time.
+are needed by Gems, projects, and even the O3DE engine itself. The dependency system correctly detects dependencies and version requirements, making sure that you have the packages needed on your system at compile-time.
 
 The dependency system runs through the following steps when invoked:
 
 1. It checks for a valid package location at the `LY_3RDPARTY_PATH` value. Any directory can be used for storing packages, but it's recommended that you avoid changing your `LY_3RDPARTY_PATH` value once it's set. After a directory has contents downloaded into it by the O3DE build system, a cache file is created there to make future dependency checks easily, so changing the package location will re-download all packages.
 
-1. The build system loads the available package sources. This is a semi-colon (`;`) separated list of package sources that are stored in the `LY_PACKAGE_SERVER_URLS` cache value. If the `LY_PACKAGE_SERVER_URLS` environment variable is set, it's _prepended_ to the cached value.
+1. The build system loads the available package sources. This is a semi-colon (`;`) separated list of package sources that are stored in the `LY_PACKAGE_SERVER_URLS` CMake cache value. If the `LY_PACKAGE_SERVER_URLS` environment variable is set, it's _prepended_ to the cached value.
 
 1. For each package:
    1. The next source in `LY_PACKAGE_SERVER_URLS` is checked. If a matching package is found in the source, the package is downloaded to `LY_PACKAGE_DOWNLOAD_CACHE_LOCATION`.
@@ -38,8 +35,7 @@ The dependency system runs through the following steps when invoked:
 You can also add Python module requirements so that `pip` is used to automatically to retrieve packages that are required by tools or other libraries.
 
 {{< note >}}
-Package downloads and target creation run only as part of CMake configuration and generation. If a new dependency is added to a Gem or project,
-you need to reconfigure your CMake cache and regenerate.
+Package downloads and target creation run only as part of CMake configuration and generation. If a new dependency is added to a Gem or project, you need to reconfigure your CMake cache and regenerate.
 {{< /note >}}
 
 See the [CMake settings reference](reference/) for the full list of available settings that affect the package system.
@@ -199,8 +195,7 @@ system offers the functions `update_pip_requirements` and `ly_pip_install_local_
   that Python dependencies are correctly tracked.
 
 {{< important >}}
-You can't declare another source for `pip` to download your Python modules from for those listed in `requirements.txt`. If your Python dependencies
-are hosted on a service other than PyPi, users will need to manually configure `pip` to pull from the appropriate CDN.
+You can't declare another source for `pip` to download your Python modules from for those listed in `requirements.txt`. If your Python dependencies are hosted on a service other than PyPi, users will need to manually configure `pip` to pull from the appropriate CDN.
 {{< /important >}}
 
 For example, say that your Gem contains a Python module called `example-py`, with a setup file at `example-py/setup.py`.
