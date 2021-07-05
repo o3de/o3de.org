@@ -195,7 +195,7 @@ system offers the functions `update_pip_requirements` and `ly_pip_install_local_
   that Python dependencies are correctly tracked.
 
 {{< important >}}
-You can't declare another source for `pip` to download your Python modules from for those listed in `requirements.txt`. If your Python dependencies are hosted on a service other than PyPi, users will need to manually configure `pip` to pull from the appropriate CDN.
+You can't declare another source for `pip` to download your Python modules from for those listed in `requirements.txt`. If your Python dependencies are hosted on a service other than PyPi, manually configure the O3DE Python install's `pip` to use the appropriate CDN.
 {{< /important >}}
 
 For example, say that your Gem contains a Python module called `example-py`, with a setup file at `example-py/setup.py`.

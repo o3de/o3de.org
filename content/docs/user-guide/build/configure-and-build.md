@@ -64,7 +64,7 @@ When building using the CMake CLI, you'll need to have a build output directory 
 CMake also offers an intuitive, GUI-based tool that you can use instead of the command line. Launch the CMake GUI with:
 
 ```shell
-cd <project-directory>
+cd <source-directory>
 cmake-gui .
 ```
 

@@ -8,7 +8,7 @@ weight: 200
 
 To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMake build tools](https://cmake.org/). While most configurable build systems make it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project files, and then perform native builds.
 
-Once you've [registered O3DE]() and [created a project](), you can build your project with the commands:
+ Once you've [registered O3DE](/docs/welcome-guide/setup) and [created a project](/docs/welcome-guide/get-started/project-config/), you can build your project with the commands: 
 
 {{< tabs >}}
 {{< tab name="Windows" codelang="cmd">}}cd <project-directory>
@@ -27,7 +27,7 @@ cmake --build build/linux-dedicated --config profile --target <ProjectName>.Serv
 {{< /tab >}}
 {{< /tabs >}}
 
-Builds created with these commands are located in the `<project-directory>/<build-dir>/bin/profile` directory.
+Builds created with these commands are located in the `<project-directory>/<build-dir>/bin/<platform>/profile` directory.
 
 O3DE requires CMake {{< versions/cmake >}} or higher.
 
