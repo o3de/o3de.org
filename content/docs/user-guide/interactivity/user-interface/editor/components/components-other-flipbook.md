@@ -5,37 +5,23 @@ title: Flipbook Animation
 
 {{< preview-migrated >}}
 
-You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/component-sprite-sheets.md).
+You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets).
 
-**To see in-game examples of completed canvases with a FlipbookAnimation component**
-
-1. [Open the Samples Project](/docs/userguide/configurator/projects#project-configurator-launch-projects).
-
-1. When O3DE Editor has started, choose **File**, **Open** and open the UiFeatures level.
-
-1. Press **Ctrl+G** to play the game.
-
-1. Then choose **Components**, **Other Components**, **Flipbook Animation**.
-
-1. Choose **None**, **Linear**, or **PingPong**. Then click **Start**.
-
-1. Click **Stop** to stop the animation. Press **Esc** to exit.
-
-**To view this canvas in the **UI Editor****
+**To view a canvas in the UI Editor**
 
 1. Navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Flipbook` directory.
 
 1. Open `Flipbook.uicanvas`.
 
-You can add the **FlipbookAnimation** component to elements that also have an [**Image**](/docs/user-guide/interactivity/user-interface/editor/components-image.md) component. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/component-sprite-sheets.md).
+You can add the **FlipbookAnimation** component to elements that also have an [**Image**](/docs/user-guide/interactivity/user-interface/editor/components/components-image) component. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets).
 
 ![\[FlipbookAnimation component and Image component set as sprite/texture asset\]](/images/user-guide/game_ui_editor/ui-editor-components-other-flipbook-1.png)
 
 **To add and configure a FlipbookAnimation component**
 
-1. If you have not already done so, create a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/component-sprite-sheets.md) for your animation image.
+1. If you have not already done so, create a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets) for your animation image.
 
-1. Add an [**Image**](/docs/user-guide/interactivity/user-interface/editor/components-image.md) component.
+1. Add an [**Image**](/docs/user-guide/interactivity/user-interface/editor/components/components-image) component.
 
    For the **SpriteType**, choose **Sprite/Texture asset**.
 

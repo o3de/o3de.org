@@ -23,16 +23,12 @@ In this procedure, you'll do the following:
 ## Prerequisites 
 
 Before you begin, you must do the following:
-+ Using Project Configurator, enable the [Samples Project](/docs/userguide/samples/projects/samples.md).
 + In the **Animation Editor**, complete the following:
   + Import your actor, such as the `rinActor.fbx` file
   + Create a motion set
   + Import your motions, such as the `rin_Run.fbx`
 
-For more information, see [Step 1: Creating a Motion Set](/docs/userguide/animation/editor/quick-start#creating-a-motion-set-with-animation-editor).
-
 **Topics**
-+ [Prerequisites](#prerequisites-for-creating-simulated-objects)
 + [Setting Up a Simulated Object](/docs/user-guide/visualization/animation/set-up-a-simulated-object.md)
 + [Setting Up the Simulated Object Anim Graph Node](/docs/user-guide/visualization/animation/set-up-simulated-object-anim-graph-node.md)
 + [Setting Up Simulated Object Colliders](/docs/user-guide/visualization/animation/set-up-simulated-object-collider.md)
