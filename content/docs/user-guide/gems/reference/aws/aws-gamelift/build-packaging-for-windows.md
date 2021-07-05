@@ -3,6 +3,7 @@ linkTitle: Build Packaging for Windows
 title: AWS GameLift Build Packaging for Windows
 description: "Learn how to package your dedicated server builds with the AWS GameLift Gem in O3DE"
 toc: true
+weight: 400
 ---
 
 This topic describes how to package your dedicated server builds, which is required to install and run them on Amazon GameLift. 
@@ -13,9 +14,9 @@ Creating a dedicated server package includes the following steps:
 3.  Test the dedicated server package on your local machine.
 
 ## Prerequisites
-The instructions that follow assume you have the following:
-- A build of your project with the AWS GameLift Gem enabled. For more information on building projects, read [Build the O3DE Project](/docs/welcome-guide/get-started/project-config/creating-projects-using-cli/#build-the-o3de-project). 
-- You have build the Profile version of your project's server launcher.
+The instructions that follow assume the following:
+- You have built your project with the AWS GameLift Gem enabled. For more information on building projects, read [Build the O3DE Project](/docs/welcome-guide/get-started/project-config/creating-projects-using-cli/#build-the-o3de-project). 
+- You have built the Profile version of your project's server launcher.
 - You have run the **Asset Processor** and compiled all of the project's assets.
 
 ## Prepare installation folder
@@ -30,9 +31,9 @@ You must create a separate installation folder to copy over the required assets,
 
 2. Copy the following files to the `/bin` folder:
 
-    -   All the `*.exe` and `*.dll` files from the engine build folder. For example,  `o3de/build/windows_vs2019/bin/profile`.
-    -   The Registry folder from the engine build folder. For example,  `o3de/build/windows_vs2019/bin/profile/Registry/`.
-    -   `VC_redist.x64.exe` from `o3de/Tools/Redistributables/Visual Studio 2015-2019`.
+    -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/profile`.
+    -   The `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/`.
+    -   The `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019`.
   
 3. Copy all of the files in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
 
@@ -52,7 +53,7 @@ To test the local server package:
     <package base folder>\bin\<server-launcher-executable> --engine-path=<package base folder> --project-path=<package base tallation-folder> --project-cache-path=<package base folder>\assets -bg_ConnectToAssetProcessor=0
     ```
 
-3.  Start a client and test the server behavior locally by following the Amazon GameLift documentation, [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html) document. Server log should be available at `<package base folder>/<unique server process id>/user/log/Server.log`.
+3.  Start a client and test the server behavior locally by following the Amazon GameLift [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html) documentation. The server log can be found at `<package base folder>/<unique server process id>/user/log/Server.log`.
 
 
 {{< caution >}}  

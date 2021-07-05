@@ -3,6 +3,7 @@ linkTitle: Using AWS GameLift Gem
 title: Using AWS GameLift Gem
 description: Learn how to use the AWS GameLift Gem in your game in O3DE.
 toc: true
+weight: 200
 ---
 
 ## Section topics

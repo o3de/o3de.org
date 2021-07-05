@@ -7,7 +7,7 @@ toc: true
 
 ## 1. Session Interface
 
-The *session interface*, `ISessionRequests` and `ISessionAsyncRequests`, provide public APIs that allows you to create game sessions and allows players to search and join online games. The session interface abstracts the implementation details of session related management.
+The *session interface*, `ISessionRequests` and `ISessionAsyncRequests`, provides public APIs that allows you to create game sessions and allows players to search and join online games. The session interface abstracts the implementation details of session related management.
 
 There must be only one implementation of the session interface per dedicated server solution. To add support for another dedicated server solution, you must create another implementation of the session interface.
 
@@ -71,7 +71,7 @@ void OnSearchSessionsAsyncComplete(const AzFramework::SearchSessionsResponse& se
 
 Reserves an open player slot in the game session, and initializes a connection from client to server.
 
-To begin the process that allows a player to join the game, call `AWSGameLiftClientManager::JoinSession()` or `AWSGameLiftClientManager::JoinSessionAsync()` and pass in the game session id, which you searched for in the previous step, and the player id that will join. The process returns `true` if both steps, reserving player slot and initializing connection, succeed. If either step fails, the process returns `false`.
+To begin the process that allows a player to join the game, call `AWSGameLiftClientManager::JoinSession()` or `AWSGameLiftClientManager::JoinSessionAsync()`, and pass in the game session id and the player id that will join. The process returns `true` if both steps, reserving player slot and initializing connection, succeed. If either step fails, the process returns `false`.
 
 ```cpp
 // Make synchronous call

@@ -3,6 +3,7 @@ linkTitle: Local Testing
 title: AWS GameLift Gem Local Testing
 description: "Learn how to test locally with the AWS GameLift Gem in O3DE"
 toc: true
+weight: 300
 ---
 
 In this topic, you will learn how to test and verify GameLift feature integrations on your local machine by using **GameLift Local**. 

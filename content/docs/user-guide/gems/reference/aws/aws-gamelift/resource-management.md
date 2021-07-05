@@ -1,14 +1,15 @@
 ---
-linkTitle: Setup
-title: AWS GameLift Gem Setup
+linkTitle: Resource Management
+title: AWS GameLift Gem Resource Management
 description: "Learn about the sample CDK application with the AWS GameLift Gem in O3DE"
 toc: true
+weight: 500
 ---
 
 The AWS GameLift Gem provides a sample CDK application that can be used to model and deploy the following Amazon GameLift resources:
 
-*   (Optional) A list of [GameLift builds](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html) used for GameLift fleet generation.
 *   A list of [GameLift fleets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html) to host game servers.
+*   (Optional) A list of [GameLift builds](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html) used for GameLift fleet generation.
 *   (Optional) An [Alias](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html) for each GameLift fleet destination.
 *   (Optional) A [game session queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html) that processes requests for new game sessions. Queues are recommend as the primary mechanism to place game sessions. For more information, read the [Amazon GameLift Queues Intro](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-intro.html) documentation.
 
@@ -206,7 +207,7 @@ To destroy all of the AWS resources deployed by the CDK application which uses a
 $ cdk destroy
 ```
 
-If you have any of the optional feature enabled, you can destroy the CDK application with all the optional features enabled by providing the context variable and the `--all` argument. The following command destroy the CDK application with all the optional features enabled:
+If you have any of the optional feature enabled, you can destroy the CDK application with all the optional features enabled by providing the context variable and the `--all` argument. The following command destroys the CDK application with all the optional features enabled:
 
 ```cmd
 $ cdk -c upload-with-support-stack=true -c create_game_session_queue=true --all
