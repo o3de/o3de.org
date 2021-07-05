@@ -245,13 +245,22 @@ $width: '59vw';
   @include media-breakpoint-down(md)
     background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1366x636.jpg')
     background-position: 80% 100%
+    
+    &::before
+      content: ''
+      background-color: rgba(0,0,0,.2)
+      position: absolute
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
   
   @include media-breakpoint-down(xxl)
     background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1600x500.jpg')
 
   @include media-breakpoint-up(xxl)
     background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-3452x1080-%402x.jpg')
-    
+
 .hero-inner 
   margin-bottom: 0
   background-color: transparent
@@ -261,8 +270,6 @@ $width: '59vw';
     line-height: 1.5rem
   
   @include media-breakpoint-down(md)
-    background-color: rgba(0,0,0,.2)
-
     h4
       width: 72%
       line-height: 2.5rem
