@@ -1,17 +1,22 @@
 ---
-description: ' Learn about the platforms supported by Open 3D Engine for developing games
-  and simulations. '
+description: Learn about the platforms supported by Open 3D Engine. 
 title: Platform development
+linkTitle: Platforms
 weight: 1500
 ---
-## Supported platforms
 
-You can use O3DE to develop games for the following platforms:
+Open 3D Engine has support for the following platforms:
 
-+ Microsoft Windows PC
-+ Android
-+ iOS
-+ macOS
-+ Linux
+- [Microsoft Windows 10](./windows)
+- [Linux](./linux)
+- macOS
+- iOS
+- Android
 
-**Instructions on development for non-Windows platforms is coming soon!**
+{{< todo issue="https://github.com/o3de/o3de.org/issues/481" >}}
+Provide information for Android targets (from any host platform).
+{{< /todo >}}
+
+{{< todo issue="https://github.com/o3de/o3de.org/issues/478" >}}
+Provide information for macOS host (+target), as well as iOS and iPad OS targets.
+{{< /todo >}}
