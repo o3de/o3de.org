@@ -19,18 +19,56 @@ $(() => {
 // active nav bar link
 
 $(() => {
-
   const url = window.location.pathname;
   $("ul.mr-auto.navbar-nav li a").each(function(){
-    console.log("this: ", $(this), '         attr: ', $(this).attr("href")+"/");
-    console.log("URL IS: ", url);
-       if(  $(this).attr("href")+"/" == url ) {
-         console.log("IN IF CONDITION");
-          $("ul.navbar-nav li a").removeClass("active");
-          $("ul.navbar-nav li").removeClass("active");
-          $(this).addClass("active");
-          $(this).parents().addClass("active");
-       }
+    if( $(this).attr("href")+"/" == url ) {
+      $("ul.navbar-nav li a").removeClass("active");
+      $("ul.navbar-nav li").removeClass("active");
+      $(this).addClass("active");
+      $(this).parents().addClass("active");
+    }
+  })
+});
+
+
+// nav bar search
+
+$(() => {
+  $("#search").click(function(event){
+    event.preventDefault();
+    console.log("SEARCH ICON CLICKED");
+    $(".search-input-view").show();
+
+    let data =  $('#search-input').val()
+    console.log("DATA FROM SEARCH INPUT: ", data, "    data length: ", data.length, "    data length check: ", data.length>0);
+    if (data.length > 0) {
+      console.log("IN IF CASE");
+    
+      const idx = lunr(function () {
+        this.ref('id')
+        this.field('title', {
+          boost: 15
+        })
+        this.field('tags')
+        this.field('content', {
+          boost: 10
+        })
+    
+        for (const key in window.store) {
+          this.add({
+            id: key,
+            title: window.store[key].title,
+            tags: window.store[key].category,
+            content: window.store[key].content
+          })
+        }
+      })
+    
+      // Perform the search
+      const results = idx.search(data)
+      // Update the list with results
+      displayResults(results, window.store)
+    }
   })
 });
 
@@ -99,32 +137,32 @@ const params = new URLSearchParams(window.location.search)
 const query = params.get('query')
 
 // Perform a search if there is a query
-if (query) {
-  // Retain the search input in the form when displaying results
-  document.getElementById('search-input').setAttribute('value', query)
+// if (query) {
+//   // Retain the search input in the form when displaying results
+//   document.getElementById('search-input').setAttribute('value', query)
 
-  const idx = lunr(function () {
-    this.ref('id')
-    this.field('title', {
-      boost: 15
-    })
-    this.field('tags')
-    this.field('content', {
-      boost: 10
-    })
+//   const idx = lunr(function () {
+//     this.ref('id')
+//     this.field('title', {
+//       boost: 15
+//     })
+//     this.field('tags')
+//     this.field('content', {
+//       boost: 10
+//     })
 
-    for (const key in window.store) {
-      this.add({
-        id: key,
-        title: window.store[key].title,
-        tags: window.store[key].category,
-        content: window.store[key].content
-      })
-    }
-  })
+//     for (const key in window.store) {
+//       this.add({
+//         id: key,
+//         title: window.store[key].title,
+//         tags: window.store[key].category,
+//         content: window.store[key].content
+//       })
+//     }
+//   })
 
-  // Perform the search
-  const results = idx.search(query)
-  // Update the list with results
-  displayResults(results, window.store)
-}
+//   // Perform the search
+//   const results = idx.search(query)
+//   // Update the list with results
+//   displayResults(results, window.store)
+// }
