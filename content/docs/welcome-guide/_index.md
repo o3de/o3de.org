@@ -7,9 +7,11 @@ menu_uuid: welcome
 guide_img: "/images/welcome-guide/guide_img.png"
 ---
 
-**Welcome to Open 3D Engine (O3DE)!** Are you a new user or contributor? This guide is a short collection of topics designed to help you understand O3DE and get up-and-running in short order.
+**Welcome to Open 3D Engine (O3DE)!**
 
-![Introductory graphic for O3DE Get Started Guide.](/images/welcome-guide/wg-welcome-page-color.png)
+O3DE is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. Check out the video below for a quick overview of some of O3DE's biggest features. Then, read on to get set up and start creating with O3DE!
+
+{{< youtube id="CQmjAxr7LZs" title="What is O3DE?" >}}
 
 ## Get Started Guide Contents
 
