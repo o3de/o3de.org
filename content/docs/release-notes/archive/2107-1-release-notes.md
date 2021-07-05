@@ -24,7 +24,7 @@ Note that this release is a Developer Preview and is incomplete for many major d
 
 * New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries.
 
-* New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](/docs/user-guide/networking/)
+* New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](https://o3de.org//docs/user-guide/networking/)
 
 * Prefab support: O3DE replaces the old slice system with the well-understood prefab model for combining components and assets.
 
@@ -56,12 +56,13 @@ There's a lot of additional updates we're bringing to you with this initial rele
 
 * Removed rendering from all coupled and replaced with new PBR Atom renderer library
 * Added HLSL compatibility with AZSL shader extension with export per backend
-* Implemented DirectX 12, Vulkan, and Metal interfaces with RT support
+* Implemented DirectX 12 and Vulkan support.
+  * Coming very soon: Metal interfaces with RT support!
 * Implemented pipeline interface for forward+ and/or deferred render passes
 * Implemented Global Illumination for forward or deferred per mesh/material basis
 * Added MSAA/SSAO/SSR support
-* (Animation) We have unified the mesh format used by EMFX and Atom, such that EMotionFX Actors now use Atom's `ModelAsset` class for serializing mesh data.
-*  To improve the runtime drawing of its meshes, the mesh data for EMotionFX Actors is first processed by a mesh optimizer. This restructures the mesh data to better fit the needs of the graphics hardware.
+* (Animation) We have unified the mesh format used by EMFX and Atom, such that EMotionFX Actors now use Atom's `ModelAsset` class for serializing mesh data
+* To improve the runtime drawing of its meshes, the mesh data for EMotionFX Actors is first processed by a mesh optimizer. This restructures the mesh data to better fit the needs of the graphics hardware
 
 ​
 
@@ -94,18 +95,20 @@ There's a lot of additional updates we're bringing to you with this initial rele
 
 ### Physics and Simulation
 
-* Blast Destruction implemented
+* NVIDIA Blast Destruction implemented
 * New Visibility interface for culling and occlusion using spatial-hash implementation
 * CryPhysics replaced with Physics API; implemented PhysX support
-* NvCloth support is available!
+* NVIDIA Cloth support is available!
 ​
 
 ### Editor
 
-* Editor extended
+* Editor extended with Python scripting support
 * White Box polygonal shape/modelling tool added to Editor
 * Implemented White Box python scripting and toolchain support with import/export
 * Script Canvas 2.0 implemented with full visual compile to Lua
+* Created a new Atom-native Editor viewport. The Editor viewport now supports rendering in DirectX 12 or Vulkan!
+* Implemented a new Viewport Interaction Model, designed to make editing within Lumberyard more intuitive and enjoyable!
 
 ### Networking
 
