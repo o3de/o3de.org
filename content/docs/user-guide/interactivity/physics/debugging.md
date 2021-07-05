@@ -67,7 +67,7 @@ For more information, see [Using the Console Window](/docs/user-guide/editor/con
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface (**ImGui**) tool.
 
 **Note**
-You must enable the ImGui gem to access this tool. For more information, see [Enabling Gems](/docs/userguide/gems/using-project-configurator.md).
+You must enable the ImGui gem to access this tool.
 
 **To debug with the ImGui tool**
 

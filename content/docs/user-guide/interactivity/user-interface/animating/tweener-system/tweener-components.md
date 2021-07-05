@@ -8,5 +8,8 @@ title: Tweener Supported Components
 
 You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system.
 
-You can see the list of supported entity parameters in the `Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua` file in the table `self.animationParameterShortcuts`.
+{{< todo issue="https://github.com/o3de/o3de.org/issues/670" >}}
+Determine complete list of supported components.
+{{< /todo >}}
 
+You can see the list of supported entity parameters in the `Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua` file in the table `self.animationParameterShortcuts`.

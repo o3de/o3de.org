@@ -34,16 +34,9 @@ The following table lists current soft naming conventions and the actions that a
 
 ## Viewing soft naming conventions 
 
-You can use the System Entity Editor to view the current soft naming conventions for your project.
-
-**To view the soft naming conventions**
-
-1. In **Project Configurator** choose **Advanced Editor Settings** for your project.
-
-1. Expand the **Scene Processing Config** section to find the soft naming conventions.
-**Note**
-If the **Scene Processing Config** section doesn't appear, choose **Add Component** and then choose **Scene Processing Config**.
-![\[Example System Entity Editor for default soft naming conventions.\]](/images/user-guide/fbx/ui-fbx-soft-naming-conventions.png)
+{{< todo issue="https://github.com/o3de/o3de.org/issues/668" >}}
+Determine replacement for the System Entity Editor that allowed users to view the current soft naming conventions in the Scene Processing Config section.
+{{< /todo >}}
 
 ## Soft naming convention parameters 
 
