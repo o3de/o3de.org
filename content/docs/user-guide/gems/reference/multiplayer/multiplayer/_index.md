@@ -6,11 +6,16 @@ linktitle: Multiplayer
 
 Open 3D Engine ships with a Multiplayer Gem that uses the [O3DE networking stack](/docs/user-guide/networking/) to offer services used for multiplayer projects.
 
+For a quick introduction of the O3DE Multiplayer Gem and networking, watch the video below.
+
+{{< youtube id="FfrkHJJt_X0" title="O3DE - Networking Overview" >}}
+
 ## Section topics
 
 | Topic | Description |
 |---|---|
 | [Overview](./overview) | An overview of the O3DE Multiplayer Gem, how it works, and how to use it in your project. |
+| [Project configuration](./configuration) | How to enable the O3DE Multiplayer Gem in a project. |
 | [Multiplayer Autocomponents](./autocomponents) | Automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
 | [Test Multiplayer Projects in the Editor](./test-in-editor) | Automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the O3DE Editor. |
 

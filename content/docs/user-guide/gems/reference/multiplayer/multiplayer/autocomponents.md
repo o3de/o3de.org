@@ -4,11 +4,9 @@ description: A reference for defining Open 3D Engine multiplayer state through a
 linktitle: Autocomponents
 ---
 
-*Autocomponents* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/engine/autogen) system, autocomponent files found inside of the Multiplayer Gem are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Autocomponents also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
+*Autocomponents* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/engine/autogen) system, autocomponent files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Autocomponents also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
 
-{{< todo issue="" >}}
-Document using autocomponents with Gems other than the Multiplayer Gem.
-{{< /todo >}}
+In order to enable autocomponent builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
 
 ## Autocomponent file structure
 
@@ -50,7 +48,7 @@ The `Include` tag is used to generate the `#includes` of the C++ code. Use an `I
 | Property | Description | Type |
 | File | The path to a header to add as an `#include` of the generated source. | `string` |
 
-{{< todo issue="" >}}
+{{< todo issue="https://github.com/o3de/o3de.org/issues/678" >}}
 Document the following parts of autocomponents:
 * NetworkInput
 * NetworkProperty

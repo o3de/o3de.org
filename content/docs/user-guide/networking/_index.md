@@ -4,12 +4,16 @@ weight: 999
 description: The user guide for Open 3D Engine's networking stack.
 ---
 
+Open 3D Engine uses an abstracted interface layer, the `AzNetworking` framework, to provide access to OS-level networking interfaces. This layer provides access to features like network compression, encryption, and reliable UDP packets.
+
+For a quick introduction to the O3DE network layer and Multiplayer Gem, watch the video below.
+
+{{< youtube id="FfrkHJJt_X0" title="O3DE - Networking Overview" >}}
+
 ## Section topics
 
 | Topic | Description |
 |---|---|
-| [Overview](./overview) | Overview of the Open 3D Engine core network stack and its capabilities. |
-| [Connections](./connection) | Establishing, listening on, and managing connections with `Az::Networking`. |
 | [Packet structure](./packets) | Information on the packet structure used for TCP and UDP packets by `Az::Networking`, and how to manage fragmented UDP packets. |
 | [UDP Encryption with DTLS](./encryption) | How to use the Open 3D Engine support for secure UDP connections over *Datagram Transport Layer Security (DTLS)*. |
 
