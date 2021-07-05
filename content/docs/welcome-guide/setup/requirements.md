@@ -37,8 +37,6 @@ To create new projects or use advanced development features in O3DE, you need a 
 
    ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
 
-+ (Optional) Wwise audio SDK. Use the [Wwise Launcher](https://www.audiokinetic.com/download/) to install version 2019.2.8.7432 or later.
-
 See the following sections for additional configuration instructions.
 
 {{< note >}}

@@ -18,9 +18,7 @@ The AWS Core Gem includes an option to periodically send usage metrics to AWS. W
 | `timestamp` | Timestamp for metric generation. | `2007-04-05T14:30` |
 | `active_aws_gems` | A list of AWS Gems active in your project, separated by '/'. | `AWSCore/AWSMetrics/AWSClientAuth` |
 
-{{< note >}}
-AWS owns the data gathered via this process. Data collection is subject to the [AWS Privacy Policy](https://aws.amazon.com/privacy/).
-{{< /note >}}
+Data collected is subject to the [AWS Privacy Policy](https://aws.amazon.com/privacy/).
 
 ## Opting Out
 
