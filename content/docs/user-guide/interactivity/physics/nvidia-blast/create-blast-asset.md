@@ -6,10 +6,6 @@ weight: 200
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
-
 Assets for NVIDIA Blast are created in Houdini with the provided tools and plug-ins. Follow the steps below to create and export blast assets for O3DE.
 
 **Note**

@@ -12,7 +12,6 @@ guide_img: "/images/tools-ui/guide_img.png"
 
 + [Introduction to O3DE UI development](ui-dev-intro/)
 
-+ [O3DE Qt control gallery tool](uidev-control-gallery.md)
 
 + [O3DE UI component development guidelines](uidev-component-development-guidelines/)
 

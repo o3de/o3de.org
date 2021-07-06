@@ -16,8 +16,6 @@ For more information about reflecting and the edit context, see the **O3DE User 
 
 The following code shows how to add a simple **reflected property editor** to a **card**, like the one pictured in the image at the beginning of this topic.
 
-For a complete working example, which demonstrates the concepts of edit context and reflection, see the **Reflected Property Editor** page in the [O3DE Qt control gallery tool](/docs/tools-ui/uidev-control-gallery/), and browse the source code for that page. This can be found in your O3DE dev directory: `Code\Framework\AzQtComponents\AzQtComponents\Gallery\ReflectedPropertyEditorPage.cpp`.
-
  **Example**
 
 ```

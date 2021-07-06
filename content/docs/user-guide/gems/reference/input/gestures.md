@@ -40,7 +40,7 @@ Each gesture recognizer that the **Gestures** system component exposes correspon
 
 You can use gesture input channels in the same way as other input channels with C++, Lua, or Script Canvas. You can map the gesture input channels to gameplay actions with an **Input** component.
 
-To add input to an entity, see the [Input](/docs/user-guide/components/reference/input.md) component.
+To add input to an entity, see the [Input component](/docs/user-guide/components/reference/gameplay/input).
 
 **Example Lua Script**
 The following script listens for and responds to the default double press gesture.

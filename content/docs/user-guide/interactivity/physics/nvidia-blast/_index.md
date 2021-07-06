@@ -7,10 +7,6 @@ weight: 200
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
-
  With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components.
 
 To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/nvidia-blast/).

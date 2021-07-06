@@ -11,7 +11,7 @@ The **Tube Shape** component creates a transparent, enclosed cylindrical volume 
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
 
 ## Dependencies ##
 

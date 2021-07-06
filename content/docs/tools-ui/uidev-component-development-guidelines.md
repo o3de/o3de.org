@@ -49,7 +49,7 @@ For standalone tools with their own Qt Application, you must take some extra ste
    styleManager->initialize(app, useLegacyStyle);
    ```
 
-   The StyleManager automatically loads the base style sheets, but you can add other resources as well. See the Stylesheet page of the [Control Gallery tool](uidev-control-gallery.md) for more information.
+   The StyleManager automatically loads the base style sheets, but you can add other resources as well.
 
 ## UI development best practices
 
@@ -69,7 +69,7 @@ Yes. Please note that not all settings will be covered by this tool. Use this ex
 
 ### What about visual and color modifications to the controls?
 
-We do not endorse custom modifications to the layout and visual design, because we want to support an experience that feels unified across all of our tooling. Still, sometimes minor spacing and style adjustments might be needed. See the Stylesheet page of the [Control Gallery tool](uidev-control-gallery.md) for more information on how to load a custom QSS style sheet.
+We do not endorse custom modifications to the layout and visual design, because we want to support an experience that feels unified across all of our tooling. Still, sometimes minor spacing and style adjustments might be needed.
 
 ### Why should I use the existing widget styling instead of creating my own?
 

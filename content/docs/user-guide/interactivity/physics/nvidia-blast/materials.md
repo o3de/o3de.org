@@ -7,9 +7,6 @@ weight: 600
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
 
 The chunks of blast assets are held together by bonds. Blast materials determine what types of forces can damage the bonds, the minimum amount of force that can damage the bonds, and how much damage the bonds can sustain before breaking.
 

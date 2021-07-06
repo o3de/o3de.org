@@ -20,4 +20,4 @@ The **Entity Outliner** shows all the entities and slices in the level. You can 
 
 **Note**
 Entities in white are freestanding entities.
-Entities in blue are part of a [slice](/docs/userguide/ly-glos-chap#slices). For more information, see the [slice icons](/docs/userguide/components/slices#identify-slices).
+Entities in blue are part of a [slice](/docs/user-guide/appendix/glossary#slices). For more information, see the [slice icons](/docs/userguide/components/slices#identify-slices).

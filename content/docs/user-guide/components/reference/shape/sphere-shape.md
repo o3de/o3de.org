@@ -11,7 +11,7 @@ The **Sphere Shape** component creates a transparent sphere. The dimensions of t
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
+[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
 
 ## Properties ##
 

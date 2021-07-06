@@ -102,9 +102,6 @@ A game object with one or more components that provide some behavior or function
 ### environment probe
 A technique that uses cube maps to provide a game level or location with realistic ambient lighting.
 
-### experimental
-A designation for a O3DE tool that we recommend that you not use in production yet, as it is still in the early stages of development and we have no current plans to support it. However, it also means that feature is stable enough and functional for specific use cases. You may find the experimental feature helpful as a guideline for implementing your own game-specific features. API operations are subject to change.
-
 ### gem
 A package that contains code and assets to provide a single feature or multiple tightly scoped functions.
 
