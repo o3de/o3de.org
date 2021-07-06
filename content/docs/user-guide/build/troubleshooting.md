@@ -5,11 +5,9 @@ weight: 400
 ---
 
 This guide will help you identify and resolve some common issues that you might encounter with the Open 3D Engine (O3DE) build system.
-Be aware that you might come across situations unique to your project or build that aren't addressed here. This reference is only for the most frequent build
-issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered
-here, try searching our [forums](TBD), asking in the [O3DE discord](TBD), or searching the [O3DE tag on StackOverflow](TBD).
+Be aware that you might come across situations unique to your project or build that aren't addressed here. This reference is only for the most frequent build issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching our [forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE discord](https://discord.gg/neVKVbs6).
 
-If you believe your build problem is due to a bug in O3DE, check for [existing bug reports](https://github.com/o3de/o3de.org/issues) and [file an issue](https://github.com/o3de/o3de.org/issues/new/choose).
+If you believe your build problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
 
 ## C2027 Errors on Generated Files
 

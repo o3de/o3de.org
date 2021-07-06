@@ -6,10 +6,6 @@ weight: 800
 
 {{< preview-migrated >}}
 
-|  |
-| --- |
-| This feature is an [experimental](/docs/userguide/ly-glos-chap#experimental) release and is subject to change.  |
-
 The NVIDIA Blast gem includes several **Script Canvas** nodes to script destructible assets. The nodes can be found in the **Blast** group in **Script Canvas**.
 
 **Contents**

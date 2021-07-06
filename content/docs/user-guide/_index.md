@@ -17,7 +17,7 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 | Documentation                        | Details |
 |--------------------------------------|---------|
 | [Assets](assets/) | Learn about O3DE's asset management tools and pipeline. |
-| [Build](build/) | Learn how to build an O3DE project with CMake. |
+| [Build](build/) | Learn how to use the CMake generator with O3DE projects to generate IDE projects and build them. |
 | [Cloud](cloud/) |  Learn about cloud service integrations for O3DE. |
 | [Components](components/) | Learn about the components that add functionality to your entities in O3DE, and how to create new components. |
 | [Editor](editor/) |  Learn how to use the O3DE Editor. |

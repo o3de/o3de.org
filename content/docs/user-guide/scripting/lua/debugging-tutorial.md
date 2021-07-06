@@ -9,11 +9,15 @@ O3DE Lua Editor (Lua IDE) offers an intuitive integrated development environment
 
 ## Tutorial: Using Lua Editor for Debugging with O3DE Editor 
 
+{{< todo issue="https://github.com/o3de/o3de.org/issues/671" >}}
+Update this Lua debugging tutorial with newer instructions that do not require the Samples Project.
+{{< /todo >}}
+
 This tutorial shows you how to use O3DE Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script.
 
 **Debugging Lua scripts using Lua Editor**
 
-1. Set the **SamplesProject** as the default project using Project Configurator.
+1. Set the **SamplesProject** as the default project using **Project Manager**.
 
 1. In O3DE Editor, create a new level by performing *one* of the following steps:
    + In the **Welcome to O3DE Editor** window, click **New level**
@@ -40,7 +44,7 @@ This tutorial shows you how to use O3DE Editor to create a sample level in the *
 
    Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
 **Note**
-Connection is facilitated by [GridHub](/docs/userguide/gridhub-intro.md), which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.
+Connection is facilitated by GridHub, which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.
 
 1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor(*ID*)** to connect to O3DE Editor.
 ![\[Target selector\]](/images/user-guide/lua-editor-debugger-target-editor.png)
