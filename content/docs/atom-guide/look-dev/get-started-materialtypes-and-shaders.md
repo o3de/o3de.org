@@ -132,7 +132,6 @@ Fragment Shader
 The fragment shader program entry point is defined in the function `MainPS`. It takes `VertexShaderOutput` as input. The resulting fragment shader outputs are stored in the `ForwardPassOutput` struct (included in `ForwardPassOutput.azsli`).
 
 Since this is an unlit single shader color, you only need to set the value for diffuse color and disable specular lighting.
-<!-- [TODO] Do we need all these? Normal is not being used anywhere -->
 
 Your fragment shader program should look like this: 
 ```hlsl

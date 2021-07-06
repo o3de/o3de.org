@@ -186,8 +186,6 @@ The following are properties you can configure for the selected model preset.
 #### Model Preset Browser
 The **Model Preset Browser** panel opens when the **Select** button is pressed. The Model Preset Browser panel is a separate window that cannot be docked.
 
-<!-- [todo] image for Model Preset Browser. Currently in development. -->
-
 
 ### Lighting
 The Lighting property group allows you to manage the list of available lighting presets, and configure their properties. Lighting presets are useful for previewing materials in a variety of lighting conditions. Atom includes a collection of lighting presets, and you can create additional presets with a custom skymap image and lighting properties. Lighting presets are stored in JSON files (`*.lightingpreset.azasset`), and can be configured in the Viewport Settings. 
@@ -214,8 +212,8 @@ The following are properties you can configure for the selected lighting preset.
 | **Skybox Image Asset (Alt)** | Assign a diffuse lighting cubemap to use an alternative skybox, or background. This allows you to have a different background while using the same lighting settings. Enable this skybox using the **Enable Alternate Skybox** property in the [General](#general) settings. |  |  |
 | **Skybox Exposure** | Adjust the brightness of the skybox. |  |  |
 | **Shadow Catcher Opacity** | Adjust the opacity level of the ground plane that catches the model's shadows.  |  |  |
-| **Exposure** | A group of settings to configure the exposure. <!-- More details coming soon --> |  |  |
-| **Lights** | Manage a list of lights for the active lighting preset. <!-- More details coming soon --> |  |  |
+| **Exposure** | A group of settings to configure the exposure. |  |  |
+| **Lights** | Manage a list of lights for the active lighting preset. |  |  |
 
 #### Lighting Preset Browser  
 The **Lighting Preset Browser** panel opens when the **Select** button is pressed. The Lighting Preset Browser panel is a separate window that cannot be docked.
