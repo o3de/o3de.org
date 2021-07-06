@@ -24,7 +24,7 @@ Watch these tutorials to get up to speed on Open 3D Engine (O3DE)!
 
 ## O3DE Developer Preview
 
-{{< youtube id="lWhPwDYeuhc" title="O3DE Developer Preview" >}}
+{{< youtube id="lWhPwDYeuhc" title="O3DE Developer Overview" >}}
 
 ## Atom Renderer
 
