@@ -63,6 +63,6 @@ The fields unique to UDP packets are as follows:
 |--|--|
 | Local sequence ID | The sequence ID for this packet instance. |
 | Remote sequence ID | The last sequence ID received by the remote endpoint. Used for ACK replication. |
-| ACK replication | Other information used to replicate transmission ackwnoledgement. |
+| ACK replication | Other information used to replicate transmission acknowledgement. |
 | Reliability flag | Whether or not the packet has reliability features enabled. |
 | Reliable sequence ID | If this packet is reliable, this is the sequence ID for reliability. |

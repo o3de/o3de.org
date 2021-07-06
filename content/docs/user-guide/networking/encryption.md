@@ -18,12 +18,12 @@ The packet types used to complete the handshake operation are:
 
 * `InitiateConnectionPacket` - Signals intent to perform the unencrypted connection. After the connection is established, sends the request to enable SSL, initiating the DTLS handshake.
 * `ConnectionHandshakePacket` - Transmits handshake data from the underlying OpenSSL handshake calls.
-* `FragmentedPacket` - Fragmented packets used by `ConnectionHandhsakePacket` to allow the SSL data exchanged in handshake to excede MTU.
+* `FragmentedPacket` - Fragmented packets used by `ConnectionHandshakePacket` to allow the SSL data exchanged in handshake to exceed MTU.
 
 To ensure only these types transmit, all other packets are queued to be sent after authentication. This occurs prior to any packet fragmentation so the only `FragmentedPackets` generated are of `ConnectionHandshakePacket`.
 
 {{< note >}}
-These classes have no API reference as they're generated during the Open 3D Engine build by [AzAutoGen](/docs/user-guide/engine/codegen/) from the contents of `Code/Framework/AzNetworking/AzNetworking/AutoGen`.
+These classes have no API reference as they're generated during the Open 3D Engine build by [AzAutoGen](/docs/user-guide/engine/autogen/) from the contents of `Code/Framework/AzNetworking/AzNetworking/AutoGen`.
 {{< /note >}}
 
 Once one side of the handshake has confirmed initialization of SSL, it immediately begins transmitting encrypted traffic. If the other side of the handshake process hasn't yet completed its SSL initialization, this presents a problem where encrypted traffic needs to be blocked while the handshake completes. In order to handle this issue, an encrypted socket will drop data it believes to be garbage **only** while connecting. Once the handshake has completed, receiving garbage data will lead to a disconnect.
@@ -32,7 +32,7 @@ Once one side of the handshake has confirmed initialization of SSL, it immediate
 
 Once authenticated, encryption is the last step performed when sending a packet. This is largely due to the assumption that any packet received by an authenticated endpoint is already encrypted. As long as the `DtlsEndpoint` is viewed as connected, all packets are encrypted.
 
-Encryption can often increase the payload size of a packet. In order to ensure this tax doesn't increase packet size over the MTU, O3DE subtracts an amount of available data for the application to accomodate the encryption size. The result is that packets close to MTU prior to encryption can end up being pre-emptively fragmented with encryption enabled.
+Encryption can often increase the payload size of a packet. In order to ensure this tax doesn't increase packet size over the MTU, O3DE subtracts an amount of available data for the application to accommodate the encryption size. The result is that packets close to MTU prior to encryption can end up being preemptively fragmented with encryption enabled.
 
 ## References
 

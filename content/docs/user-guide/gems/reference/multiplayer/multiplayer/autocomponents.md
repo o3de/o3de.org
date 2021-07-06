@@ -39,7 +39,7 @@ A component relation (the `ComponentRelation` tag) describes how various compone
 | | **Incompatible**: The related component isn't compatible with this autocomponent. Attempting to place both components on an entity will result in an error. | |
 | HasController | If `true`, the related component must have a multiplayer controller associated with it. Setting this value to true will cause controller accessors to be generated on the controller being described. | `bool` |
 
-For components which have a relation constrait of `Required` or `Weak`, accessors are generated on the autocomponent with the name `Get<ComponentName>()`. These accessors return a cached pointer to the related component, created on entity activation.
+For components which have a relation constraint of `Required` or `Weak`, accessors are generated on the autocomponent with the name `Get<ComponentName>()`. These accessors return a cached pointer to the related component, created on entity activation.
 
 ### Include
 
