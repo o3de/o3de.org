@@ -8,6 +8,12 @@ toc: true
 
 **O3DE Editor** is your primary workspace. From here, you can access all of the tools to design, create, test, and deploy your project. If you have used other professional engines or 3D animation packages, you'll find the user experience familiar and adapt to O3DE Editor quickly.
 
+You can learn the basics of navigating and customizing O3DE Editor from the quick video tutorial below, and a few additional tips by reading this topic.
+
+{{< youtube id="tFfiXhckd7g" title="O3DE Editor Tour" >}}
+
+## Launch O3DE Editor
+
 O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
 
 ## The O3DE Editor default layout
