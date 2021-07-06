@@ -24,7 +24,7 @@ Watch these tutorials to get up to speed on Open 3D Engine (O3DE)!
 
 ## O3DE Developer Preview
 
-{{< youtube id="CQmjAxr7LZs" title="O3DE Developer Preview" >}}
+{{< youtube id="lWhPwDYeuhc" title="O3DE Developer Overview" >}}
 
 ## Atom Renderer
 
@@ -40,7 +40,7 @@ Watch these tutorials to get up to speed on Open 3D Engine (O3DE)!
 
 ## O3DE Editor Tour
 
-{{< youtube id="lWhPwDYeuhc" title="O3DE Editor Tour" >}}
+{{< youtube id="tFfiXhckd7g" title="O3DE Editor Tour" >}}
 
 ## O3DE Script Canvas Overview
 
