@@ -11,9 +11,13 @@ Open 3D Engine (O3DE) provides a complete, end-to-end environment for developing
 O3DE consists of tools, editors, and systems that help you build your project. At its core, it provides the following:
 
 * Core modules that provide math, memory management, serialization, event messaging, and more.
+
 * Authoring tools such as the Editor and related applications for placing objects in a level, adding components, and scripting logic.
+
 * A plugin and extension system for adding more features.
+
 * Asset pipeline tools for converting, optimizing, and bundling assets.
+
 * A build system to build and package a shippable launcher.
 
 O3DE is comprised of sub-modules, called *Gems*. As you develop a project, you can add features and functionality by including Gems that supply those features and functions. Gems might include anything from assets such as materials, textures, and models, to development tools such as Script Canvas (a visual script editor), to entire runtime systems such as the Atom renderer, AI, and Physics.
@@ -30,11 +34,15 @@ O3DE is modular. It is constructed of a common *core* that all modules depend on
 
 The following are the core modules:
 
-* `AzCore` provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
-* `AzFramework` provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
-* `AzGameFramework` contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
-* `AzToolsFramework` contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
-* `AzQtComponents` contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
+* [`AzCore`](https://o3de.org/docs/api/frameworks/azcore/) provides math, serialization, memory management, eventing and pub/sub interfaces, as well as the ability to load plugin modules. It provides the component-entity model and contains an implementation of C++ STL that includes memory alignment aware containers and other guarantees.
+
+* [`AzFramework`](https://o3de.org/docs/api/frameworks/azframework/) provides higher level structures. `AzFramework` also contains some additional code common to most, but not all applications.
+
+* [`AzGameFramework`](https://o3de.org/docs/api/frameworks/azgameframework/) contains core functions only used by runtime applications. It provides loop management, and a bootstrap sequence that is specific to runtime applications.
+
+* [`AzToolsFramework`](https://o3de.org/docs/api/frameworks/aztoolsframework/) contains core functions only used by tools. It provides UI components such as object pickers, property editors, source control integrations, and a bootstrap sequence that is specific to tools.
+
+* [`AzQtComponents`](https://o3de.org/docs/api/frameworks/azqtcomponents/) contains common UI widgets (scroll bars, buttons, dialogs, and so on) that provide a consistent look and feel between tool applications.
 
 The following image illustrates the dependency graph for the core modules of O3DE.
 
@@ -43,24 +51,31 @@ The following image illustrates the dependency graph for the core modules of O3D
 Some examples of the high-level products using these frameworks are:
 
 * **Project runtimes** - End products created by developers using O3DE, such as games, dedicated server runtimes, and world simulations.
+
 * **CLI tools** - Tools invoked from the command-line interface without a GUI, such as the AZSL Compiler and the Asset Batch Processor.
+
 * **GUI tools** - Tools with a graphical UX used for developing O3DE projects, such as the O3DE Editor, O3DE Asset Processor, and the Atom Materials Editor.
 
 ### O3DE Directory Structure
 
-There are two primary directories to be aware of with O3DE: The `3rdParty` directory, and the `O3DE` directory.
+There are two primary directories to be aware of with O3DE: The `o3de-packages` directory, and the `o3de` directory.
 
-* `3rdParty` - A user-created directory that may live outside of the O3DE install. Many O3DE features (both core features and those provided by Gems) use third-party libraries. For example, O3DE supports `.fbx` files through the Open Asset Import Library, the O3DE GUI Tools use Qt, and the physics system uses NVIDIA PhysX. The third-party libraries that are required to build these features for your project, along with all the other necessary third-party libraries, live in the `3rdParty` directory. The location of this directory is set as part of the O3DE configuration process before build. Your `3rdParty` directory must contain an empty `.txt` file named `3rdParty.txt` for the O3DE build system to work.
-* `/O3DE` - The `O3DE` directory contains subdirectories that hold O3DE's core (including source code for AzFramework), various tools including **O3DE Editor**, and available Gems. You may also choose to keep your own project directories in the main `O3DE` directory. In the `O3DE` directory are several subdirectories to be aware of:
+* `o3de-packages` - A user-created directory that may live outside of the O3DE installation. Many O3DE features (both core features and those provided by Gems) use third-party libraries. For example, O3DE supports `.fbx` files through the Open Asset Import Library (assimp), the O3DE GUI Tools use Qt, and the physics system uses NVIDIA PhysX. The third-party libraries that are required to build these features for your project, along with all the other necessary third-party libraries, live in the `o3de-packages` directory you create. The location of this directory is set as part of the O3DE configuration process before build.
+
+* `o3de` - The `o3de` directory contains subdirectories that hold O3DE's core (including source code for `AzFramework`), various tools including **O3DE Editor**, and available Gems. You may also choose to keep your own project directories in the main `o3de` directory. In the `o3de` directory are several subdirectories to be aware of:
 
   {{< note >}}
   This section describes the directory structure of the O3DE open source project, not the directories produced from a binary installer.
   {{< /note >}}
   
   * `cmake` contains configuration, download and build scripts for O3DE.
+
   * `Code` contains the C++ code and headers that used to build O3DE and provide its APIs. APIs are organized by libraries, each of which consists of a well-defined feature set. Library headers offer virtual interfaces that you'll provide implementations of to connect your code to the relevant O3DE system or feature.
+
   * `Code/Framework` contains the all of the source code and headers used by the core O3DE libaries such as `AzCore`, `AzFramework`, and `AzNetworking`.
-  * `Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration.
+
+  * `Gems` contains the source and build files for the available Gems. Each Gem has its own subdirectory. When you create a new Gem, you add the code and build sources here, and then enable the Gem in your project configuration. It is possible for a Gem to contain other Gems. The Atom Gem, for example, contains several Gems providing various tools, libraries, interfaces, and utilities for Atom Renderer.
+
   * `Templates` contains the default templates for Gems and Projects.
 
 ## Working with Gems
@@ -69,13 +84,13 @@ O3DE is a sandbox of different bits, provided by Gems, that you can combine in y
 
 You enable Gems when you create and configure your project. You can enable additional Gems and disable unused Gems at any time by updating your project configuration. Some Gems are core systems and are required for all O3DE projects. Other Gems are extensions for existing Gems and require their dependencies to be enabled for your project. Enabled Gems are detected and built automatically when you build your project.
 
-You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/O3DE/Gems` directory and examine the included Gems. The process for creating your own Gem is very similar to creating a project.
+You can create your own Gems and easily reuse and distribute your own code and assets. To get a better idea of what goes into creating a Gem, have a look at the `/o3de/Gems` directory and examine the included Gems. The process for creating your own Gem is very similar to creating a project.
 
 ## The EBus Messaging System
 
 All of the Open 3D Engine Gems and systems, as well as the components in your projects, need a way to communicate with each other. O3DE uses a general-purpose communication system called Event Bus (EBus for short).
 
-As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them and invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces (buses) that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
+As discussed earlier, Gems and systems are typically implemented as DLLs. EBus is used to communicate between them and invoke functions in one Gem or system from another. EBus provides both request and publish/subscribe event interfaces that allow calls across those DLLs. For example, if you've created a Gem for custom animation behaviors and you'd like to provide data to the physics system, you'd do so by implementing an EBus interface in your Gem.
 
 The two types of EBuses are:
 
@@ -100,7 +115,7 @@ With EBusses, you can:
 * Perform either imperative or queued delivery.
 * Automatically marshal results of a function call into a buffer.
 
-Interfaces are provided for the Gems and systems DLLs included with O3DE. To use the functionality in these DLLs, you use the interfaces in the headers to register for a single cast (Event) or broadcast (Broadcast) event, or through supplying a data request functor to a Request Bus handler.
+Interfaces are provided for the Gems and systems DLLs included with O3DE. To use the functionality in these DLLs, you use the interfaces in the headers to register for a single cast (Event) or broadcast (Broadcast) event, or through supplying a data request functor to a request bus handler.
 
 Likewise, to expose functionality from your own gems and provide data to another system, you must inherit the virtual interface that's declared in the corresponding header file and implement the handlers on that interface in your Gem's classes. You then register the handlers with the EBus system. Specifically, you'll register a handler that you create with EBus, which will pass a pointer to your class method to the targeted system or post a notification to the systems that are subscribed to it.
 
