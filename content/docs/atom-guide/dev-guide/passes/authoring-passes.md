@@ -1,7 +1,6 @@
 ---
 title: "Authoring Passes"
 description: "Authoring Passes in Atom"
-date: 2021-03-09
 toc: true
 weight: 1200
 ---
@@ -11,7 +10,6 @@ weight: 1200
 **Passes** determine how a frame is rendered. You can customize your rendering pipeline by integrating different passes, such as lighting or post process passes. Passes are instantiated from **PassTemplates**, which can be authored in JSON or in C++. If you want to customize the functionality of a pass template, you can define custom `Pass` classes in C++.
 
 For authoring PassTemplates, read the [Authoring PassTemplates](#authoring-a-passtemplate) section below. 
-<!-- For authoring custom Pass Classes, read the Authoring Pass Classes section below.  -->
 
 ## Root Pass and Pass Registry
 Before you begin authoring passes, it's important to understand the Pass System (read the [Pass System](pass-system.md) section). The following key points are also important to understand when authoring passes: 
@@ -62,14 +60,11 @@ A **PassTemplate** (see `PassTemplate.h`) is used to instantiate a **Pass** (see
 When PassTemplates are authored as data (`.pass`), they are serialized as a PassAsset. A **PassAsset** (see `PassAsset.h`) is a thin wrapper around a PassTemplate that the asset system uses for serialization.
 
 #### Components of a PassTemplate
-<!-- [WRITER NOTE: Needs more work] -->
 The components of a PassTemplate vary depending on its `Pass` class. The `Pass` class is specified by the `PassClass` property in the `.pass` file. 
 
 PassTemplates specifies inputs and outputs and defines its function through the components `Slots`, `Connections`, `Image Attachments`, and `PassData`. 
 
 PassTemplates can also contain a `PassRequests` container, that lists child passes. When a PassTemplate gets instantiated as a Pass, each PassRequest creates a child pass. 
-
-<!-- @antonmic Which components of the PassTemplate are most important to create a minimal PassTemplate? I want to briefly introduce them, at a high-level understanding. Then link to another page that contains further detail (linked below.)  -->
 
 A complete breakdown of the PassTemplate JSON file (`*.pass`) can be found in [PassTemplate File Spec](pass-template-file-spec.md) section. 
 
@@ -82,12 +77,9 @@ Before a PassTemplate can be instantiated, it must be registered with the PassSy
     2. Call `PassSystemInterface.Get()->AddPassTemplate(...)`. This can be found in the files `PassSystem.h` and `PassLibrary.h` in the Atom API reference. 
 
 
-<!-- @antonmic Maybe we can break down the "Code" one into more steps. E.g. Where do we call this function? Are there other things we need to do before and after? -->
-
 ## Instantiating a Pass
-<!-- [WRITER NOTE: This section needs more work. We should restructure this in the POV of what the customer will actually be doing. For example, if the ywant to instantiate a pass through data, they just need to make a PassRequest in JSON. But under the hood, what is really happening is Example 4. But maybe Atom already has this built in and customers don't need to do it. It's good to point out how it is done, but make it clear to the customers that they don't need to do Example 4 themselves.] -->
 You can instantiate a Pass through the PassSystem in four ways, all of which are equally performant:
-1. Using the class of the pass you want directly as a function template parameter. This will call that pass class's `static Create(...)` function. <!-- (see Authoring a Pass Class below). -->
+1. Using the class of the pass you want directly as a function template parameter. This will call that pass class's `static Create(...)` function.
 
 2. Using the Name of the pass class that you want to instantiate. The PassSystem will use the Name to look up the appropriate PassCreator (the PassSystem holds a map of PassCreators that it can index with a Name). A PassCreator is simply a function pointer to the Pass's `static Create(...)` function.
 
@@ -117,23 +109,7 @@ myPassRequest.m_templateName = Name("MyPassTemplateName");
 Ptr<Pass> myPass4 = PassSystemInterface::Get()->CreatePassFromRequest(&myPassRequest);
 ```
 
-<!-- #### Customized Pass Instantiation
-[TODO]
+#### Customized Pass Instantiation
+{{< todo >}}
 
-## Authoring a Pass Class
-You can author most passes by specifying an existing pass type, such as raster pass or a compute pass. In some cases, you will need to author a completely new pass with its own set of pass behaviors by creating a Pass Class in C++. Atom contains two classes which inherit directly from the Pass class: **ParentPass** and **RenderPass**. You can inherit from either of these, or inherit directly from the Pass class and define its own custom behavior and logic.  
-
-[TODO]
-
-*[NOTE: This topic will be saved for a later time because it is more advanced.]*
-
-#### Implementing a ParentPass
-You can create a new pass that inherits from ParentPass. A ParentPass is characterized by ...
-
-[TODO]
-
-#### Implementing a RenderPass
-You can create a new pass that inherits from RenderPass. A RenderPass is the base class for all passes that implement some form of rendering work. 
-
-[TODO]
- -->
+{{< /todo >}}

@@ -64,28 +64,6 @@ By default, Atom uses a lighting model that assumes light only bounces once (sin
 
 You can take multi-scattering into account in your materials by toggling `Multiscattering Compensation`. For a bit extra performance cost, this simulates the fact that light may bounce off a rough surface multiple times at the microscopic level. This feature makes the lighting on certain materials appear more realistic (brighter). The impact is most noticeable on rough metallic surfaces. For smooth surfaces and non-metal surfaces, the impact likely won't be noticed and should be disabled.
 
-<!-- 
-### Emissive
-
-... Occlusion, and more will be filled in later. [todo]
-
-### Subsurface Scattering
-
-Subsurface scattering is part of our shading model, however it does not follow the traditional PBR shading model due to its complexity. Instead, subsurface scattering is handled by a separate shading pass.
-[todo]
-
-### Irradiance
-
-The irradiance color that is used for this material when calculating global illumination (indirect bounce lighting in the scene). Does not affect the appearance of the material itself.
-[todo]
--->
-
-<!-- 
-## Lighting
-
-This section describes lighting interactions in PBR. There are properties in a material that allow you to apply lighting interactions: enableIBL, enableDirectional lights. You can also edit the lighting environment of a scene.
--->
-
 ## Properties in Material Types
 
 The following table lists which properties are included in which PBR material types.

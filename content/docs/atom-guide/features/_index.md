@@ -27,13 +27,13 @@ Punctual Lights
 + **Point Light** - Casts light from an infinitely small point in all directions within a radius, similar to a light bulb.
 + **Directional Light** - Casts light from an infinitely distant point in a single direction. Directional lights are often used to simulate large distant light sources link the sun, and to cast shadows.
 
-*Related to: [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Spot Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_spot_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html), [O3DE Point Light Component](TBD), [O3DE Directional Light Component](TBD)*
+*Related to: [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Spot Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_spot_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html), O3DE Point Light Component, O3DE Directional Light Component*
 
 
 Area Lights
 : A light source that simulates light emitted from an area, rather than from a point or direction. This gives a more realistic depiction of light, since lights in the real world are area lights. Area lights require more complex calculations and are more expensive to render compared to punctual lights. 
 
-*Related to: [Capsule Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html), [Disk Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html), [Polygon Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_polygon_light_feature_processor_interface.html), [Quad Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html), [O3DE Area Light Component](TBD)*
+*Related to: [Capsule Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_capsule_light_feature_processor_interface.html), [Disk Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_disk_light_feature_processor_interface.html), [Polygon Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_polygon_light_feature_processor_interface.html), [Quad Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_quad_light_feature_processor_interface.html), O3DE Area Light Component*
 
 
 Clustered Forward Shading
@@ -43,13 +43,13 @@ Clustered Forward Shading
 Diffuse Probe Grid  
 : A volume of light probes that provides diffuse global illumination in a specified area. Each probe in the volume uses ray tracing to capture its diffuse lighting environment, known as irradiance.
 
-*Related to: [Diffuse Probe Grid Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor_interface.html), [Diffuse Probe Grid](TBD)*
+*Related to: [Diffuse Probe Grid Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_diffuse_probe_grid_feature_processor_interface.html), Diffuse Probe Grid*
 
 
 Reflection Probes  
 : A system that provides specular reflections for the environment around capture points, known as probes.  A probe stores its environment as a cubemap and applies the cubemap to meshes that are located inside the probe's volume. With the reflection probes system, the mesh can display environment reflections that match the surroundings at its location.
 
-*Related to: [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html), [O3DE Reflection Probe Component](TBD)*
+*Related to: [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html), O3DE Reflection Probe Component*
 
 
  Subsurface Scattering   
@@ -71,13 +71,13 @@ Eye adaptation is a technique that automatically adjusts the scene's light inten
 Global Skydome (IBL)   
 : An image-based global illumination effect that calculates lighting for a scene using an HDR skybox image.
 
-*Related to: [O3DE Global Skylight (IBL) Component](TBD)* 
+*Related to: O3DE Global Skylight (IBL) Component* 
 
 
  HDRi Skybox   
 : Creates a skybox in your scene using an HDR image.
 
-*Related to: [O3DE HDRi Skybox Component](TBD)* 
+*Related to: O3DE HDRi Skybox Component* 
 
 
  Decal   
@@ -101,7 +101,7 @@ Atom has a unified mesh format with support for several mesh types:
 Tone Mapping and Color Grading   
 : Techniques that adjust the overall lighting and color in a scene. Tone mapping simulates high dynamic range (HDR) by mapping one set of colors to another set that has a higher range. Color grading adjusts the color output of the render. There are two color grading modes: HDR Color Grading and LDR Color Grading. Tone mapping and color grading can be configured in O3DE using the **Display Mapper**. You can also view a demo of tone mapping and color grading in the Atom Sample Viewer. 
 
-*Related to: [O3DE Display Mapper Component](TBD), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
+*Related to: O3DE Display Mapper Component, [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
 
 Post-processing Volumes   
 : Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
@@ -112,13 +112,13 @@ Post-processing Volumes
 Bloom   
 : A post-processing effect that simulates real-world glow or light bleed that is caused by an overwhelming amount of light.
 
-*Related to: [O3DE Bloom Component](TBD)* 
+*Related to: O3DE Bloom Component* 
 
 
 Deferred Fog   
 : A post-processing effect that creates volumetric fog in a scene. Deferred fog is calculated using dynamic noise octaves to create fog, and ray marching to render the fog.
 
-*Related to: [O3DE Deferred Fog Component](TBD)* 
+*Related to: O3DE Deferred Fog Component* 
 
 
 Depth of Field   
@@ -130,7 +130,7 @@ Depth of Field
 Screen Space Ambient Occlusion (SSAO)   
 : Real-time estimation of ambient occlusion (a shading method based on both light sources and surrounding objects) as a screen space post effect.  Atom implements SSAO through a series of compute shader passes.  
 
-*Related to: [O3DE SSAO Component](TBD)* 
+*Related to: O3DE SSAO Component* 
 
 
 ## Rendering
