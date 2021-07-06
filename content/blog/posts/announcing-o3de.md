@@ -13,6 +13,8 @@ On July 6th, 2021, the Linux Foundation announced the public availability of the
 
 As a founding partner in O3DE, Amazon Web Services and the AWS Lumberyard team has been working on this effort for awhile, preparing the code and tools for a developer-centric initial release. Curious about the work? Read these AWS Game Tech blog posts that they published earlier in 2021, describing the new features they are building out for O3DE.
 
+* [Announcing Open 3D Engine (AWS)](https://aws.amazon.com/blogs/gametech/open-3d-engine/). Amar Mehta, General Manager of AWS Lumberyard, and Royal O'Brien, Principal Solutions Architect, discuss O3DE and why AWS supports this open-source effort.
+
 * [Splitting the Atom: Introducing Lumberyard's New Photorealistic Renderer](https://aws.amazon.com/blogs/gametech/splitting-the-atom-introducing-lumberyards-new-photorealistic-renderer/). In this post, Chanelle Mosquera and Doug Erickson, AWS Lumberyard programming writers, run down the basics of the new Atom renderer.
 
 * [The Future of the Lumberyard Build System](https://aws.amazon.com/blogs/gametech/lumberyard-build-system/). Let one of AWS Lumberyard's talented engineers, Esteban Papp, guide you through the development of the new CMAKE build system.
