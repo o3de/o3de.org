@@ -1,5 +1,6 @@
 ---
-title: Troubleshooting
+linktitle: Troubleshooting
+title: Build Troubleshooting in Open 3D Engine
 description: Tips, tricks, and advice for fixing failing O3DE builds.
 weight: 400
 ---
