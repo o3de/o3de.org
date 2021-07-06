@@ -10,7 +10,7 @@ These are just guidelines, not rules. Use your best judgment, and feel free to p
 ### Code of Conduct
 
 Open 3D Engine follows the [Open 3D Foundation Code of Conduct](http://o3de.org/docs/contributing/code-of-conduct). By participating, you are expected to uphold this code. Please report unacceptable behavior to the
-[O3DE Code of Conduct Committee](TBD) &lt;conduct@o3de.org&gt;.
+O3DE Code of Conduct Committee at &lt;conduct@o3de.org&gt;.
 
 ### Documentation and Site Decisions
 
