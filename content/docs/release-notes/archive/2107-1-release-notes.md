@@ -24,7 +24,7 @@ Note that this release is a Developer Preview and is incomplete for many major d
 
 * New math libraries: O3DE is built atop a foundation of all-new SIMD-enabled math libraries.
 
-* New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](https://o3de.org//docs/user-guide/networking/)
+* New networking stack: O3DE provides a performance-oriented basic networking stack to build on. [Read up on how it works here.](https://o3de.org//docs/user-guide/networking/) and [here](/docs/user-guide/multiplayer/_index.md)
 
 * Prefab support: O3DE replaces the old slice system with the well-understood prefab model for combining components and assets.
 
