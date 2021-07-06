@@ -7,4 +7,41 @@ menu_uuid: learning
 guide_img: "/images/learning-guide/guide_img.png"
 ---
 
-![Tutorials under construction and coming soon](/images/learning-guide/tutorials-under-construction.png)
+
+Watch these tutorials to get up to speed on Open 3D Engine (O3DE)!
+
+## What is O3DE?
+
+{{< youtube id="CQmjAxr7LZs" title="What is O3DE?" >}}
+
+## Setting up O3DE from GitHub
+
+{{< youtube id="CIw9UoMMeX8" title="Setting up O3DE from GitHub" >}}
+
+## Creating Projects Using the Command Line
+
+{{< youtube id="SZC13S0YZZs" title="Creating Projects Using the Command Line" >}}
+
+## O3DE Developer Preview
+
+{{< youtube id="CQmjAxr7LZs" title="O3DE Developer Preview" >}}
+
+## Atom Renderer
+
+{{< youtube id="GTJ_ie7yHdI" title="Atom Renderer" >}}
+
+## O3DE Networking Overview
+
+{{< youtube id="FfrkHJJt_X0" title="O3DE Networking Overview" >}}
+
+## AWS Gems in O3DE
+
+{{< youtube id="EG0C9enezzo" title="AWS Gems in O3DE" >}}
+
+## O3DE Editor Tour
+
+{{< youtube id="lWhPwDYeuhc" title="O3DE Editor Tour" >}}
+
+## O3DE Script Canvas Overview
+
+{{< youtube id="fTNcUV4zAgE" title="O3DE Script Canvas Overview" >}}
