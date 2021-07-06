@@ -11,4 +11,4 @@ This section contains information about shading using the Atom Renderer.
 ## Contents
 | Topic                        | Description |
 |--------------------------------------|---------|
-| Shader File Specification | JSON reference for shader asset data (`.shader`). |
+| [Shader File Specification](shader-file-spec.md) | JSON reference for shader asset data (`.shader`). |
