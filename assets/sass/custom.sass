@@ -223,6 +223,16 @@ code
   max-height: 36px
   color: #FFFFFF
 
+.search
+  .form-control
+    @include media-breakpoint-down(sm)
+      width: 100px
+      margin-left: 10px
+  
+  #nav-search
+    margin-left: 5px
+
+
 // layouts/partials/hero.html
 
 //scales the header proportionally
@@ -579,6 +589,9 @@ $width: '59vw';
     color: $o3de-black
     min-height: 10rem
     overflow: hidden
+
+    .row
+      margin: 0
 
     .card-body
       padding: 1.6rem 1rem 0 0.2rem
