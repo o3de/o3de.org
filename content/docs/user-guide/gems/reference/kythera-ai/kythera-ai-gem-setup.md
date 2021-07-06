@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Download the Kythera AI Gem .zip file from Kythera AI’s website: https://www.kythera.ai/o3de.
+Download the Kythera AI Gem .zip file from Kythera AI’s website: https://www.kythera.ai/kythera-for-o3de.
 
 ## Build the Kythera AI demo project
 
