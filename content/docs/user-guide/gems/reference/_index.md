@@ -6,8 +6,7 @@ weight: 100
 toc: true
 ---
 
-Gems are redistributable packages that contain source code and assets that you can include in your Open 3D Engine (O3DE) projects to add new functionality. O3DE provides the following Gems:
-
+*Gems* are redistributable packages that contain source code and assets that you can include in your Open 3D Engine (O3DE) projects to add new functionality. O3DE provides the following Gems:
 
 ## Animation
 
@@ -44,8 +43,6 @@ Gems are redistributable packages that contain source code and assets that you c
 | [Microphone](./audio/microphone) | The Microphone Gem provides support for audio input through microphones. |
 
 ## AWS
-
-For an overview of AWS Gems, refer to [AWS, AWS Gems, and O3DE](./aws)
 
 | Gem | Description |
 | - | - |
@@ -126,6 +123,7 @@ For an overview of AWS Gems, refer to [AWS, AWS Gems, and O3DE](./aws)
 | [Certificate Manager](./network/certificate-manager) | The Certificate Manager Gem provides access to authentication files for secure game connections from Amazon S3, files on disk, and other 3rd party sources. |
 | [Http Requestor](./network/http-requestor) | The HTTP Requestor Gem provides functionality to make asynchronous HTTP/HTTPS requests and return data through a user-provided call back function. |
 | [Metastream](./network/twitch/metastream) | The Metastream Gem provides functionality for an HTTP server that allows broadcasters to customize game streams with overlays of statistics and event data from a game session. |
+| [Multiplayer](./network/multiplayer) | The Multiplayer Gem provides support for synchronizing O3DE components across a network in a fault-tolerant way, allowing for the development of multiplayer games. |
 | [Presence](./network/presence) | The Presence Gem provides a target platform agnostic interface for Presence services. |
 | [Twitch](./network/twitch/twitch) | The Twitch Gem provides access to the Twitch API v5 SDK including social functions, channels, and other APIs. |
 
