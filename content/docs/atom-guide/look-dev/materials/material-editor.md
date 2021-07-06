@@ -227,7 +227,7 @@ The collection of lighting presets are stored in the folder `Gems/Atom/Tools/Mat
 {{< /note >}}  
 
 ## Inspector
-In the **Inspector**, you can configure the properties for the active material. The **Details** group shows the material's material type and optional parent material properties. All other property groups depend on the material type and are defined in the `.materialtype` file. See the [Material Type Reference](TBD) for all the material types in Atom and the property groups in each. 
+In the **Inspector**, you can configure the properties for the active material. The **Details** group shows the material's material type and optional parent material properties. All other property groups depend on the material type and are defined in the `.materialtype` file. See the [Material Type Reference](/docs/atom-guide/look-dev/materials/material-type-file-spec/) for all the material types in Atom and the property groups in each. 
 
 ## Asset Browser
 The **Asset Browser** allows you to search for assets across O3DE, Gems, and other project folders. In the Material Editor, the Asset Browser is automatically filtered to show image and material assets. You can display more assets by changing the filter. When an asset is selected, a preview of the asset is shown on the side. 
