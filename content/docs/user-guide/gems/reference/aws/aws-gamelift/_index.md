@@ -32,9 +32,12 @@ toc: true
 | Topic | Description |
 | - | - |
 | [AWS GameLift Gem Setup](gem-setup/) | Set up the AWS GameLift Gem in O3DE. |
-| [Prepare Game with AWS GameLift Gem](usage/) | Prepare your project to use the AWS GameLift Gem, including C++ programming, scripting, and other advanced topics. |
+| Prepare Game with AWS GameLift Gem |  |
+| <ul><li> [C++ API for AWS GameLift Gem ](cpp-api/)</li></ul>| Learn how to prepare your game using the C++ API for the AWS GameLift Gem. |
+| <ul><li> [Scripting with AWS GameLift Gem](scripting/) </li></ul>| Learn how to prepare your game using Script Canvas nodes that are provided by the AWS GameLift Gem. |
+| <ul><li> [AWS GameLift Gem Advanced Topics](advanced-topics/) | Learn about some advanced ways to prepare your game with the AWS GameLift Gem. |
 | [AWS GameLift Gem Local Testing](local-testing/) | Verify AWS GameLift feature integrations locally using GameLift Local, a command line tool that starts a self-contained version of the managed GameLift service. |
 | [AWS GameLift Build Packaging for Windows](build-packaging-for-windows/) | Learn how to package your dedicated server builds so you can install and run them on Amazon GameLift. |
 | [AWS GameLift Resource Management](resource-management/) | Learn about the sample CDK application that can be used to model and deploy Amazon GameLift resources. |
-| AWS GameLift & Multiplayer Sample | - |
+| AWS GameLift & Multiplayer Sample | Coming soon! |
 
