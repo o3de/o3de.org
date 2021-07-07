@@ -101,7 +101,7 @@ To upload a zipped server package from disk and create a GameLift build automati
 
 #### Runtime Configuration
 
-You can set up the fleet's runtime configuration to run multiple game server processes per instance. The [AWS GameLift Gem Advanced Topics](usage/advanced-topics/) page goes over the benefits of this setup and the launch parameters required to support a unique log path for each server process. 
+You can set up the fleet's runtime configuration to run multiple game server processes per instance. The [AWS GameLift Gem Advanced Topics](advanced-topics/) page goes over the benefits of this setup and the launch parameters required to support a unique log path for each server process. 
 
 The following example runs two Windows server processes on the fleet and writes log files to different subfolders under `C:\game`:
 

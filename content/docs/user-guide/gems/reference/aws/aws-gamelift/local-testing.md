@@ -63,6 +63,6 @@ You can also verify interactions and logs with GameLift Local tool. Read more in
 
   
 
-Previous Topic: [AWS GameLift Gem Advanced Topics](usage/advanced-topics/)
+Previous Topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)
 
 Next Topic: [AWS GameLift Build Packaging for Windows](build-build-packaging-for-windows/)

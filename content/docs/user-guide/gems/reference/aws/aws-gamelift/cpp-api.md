@@ -168,4 +168,4 @@ bool OnDestroySessionBegin()
 
 Previous Topic: [AWS GameLift Gem Setup](/docs/user-guide/gems/reference/aws/aws-gamelift/gem-setup/)
 
-Next Topic: [Scripting with AWS GameLift Gem](/docs/user-guide/gems/reference/aws/aws-gamelift/usage/scripting/)
+Next Topic: [Scripting with AWS GameLift Gem](/docs/user-guide/gems/reference/aws/aws-gamelift/scripting/)

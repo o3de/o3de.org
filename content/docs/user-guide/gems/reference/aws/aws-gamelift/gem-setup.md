@@ -24,8 +24,15 @@ The lifetime of a session involves the following phases:
 ## 2. Enable AWS GameLift
 
 To enable AWS GameLift in your project:  
-- [Enable the AWS GameLift Gem and its dependencies](#enable-aws-gamelift-gem-and-its-dependencies)
-- [Include AWS GameLift static library](#include-aws-gamelift-static-library)
+- [1. Understand GameLift](#1-understand-gamelift)
+- [2. Enable AWS GameLift](#2-enable-aws-gamelift)
+  - [Dependencies](#dependencies)
+  - [Enable AWS GameLift Gem and its dependencies](#enable-aws-gamelift-gem-and-its-dependencies)
+  - [Include AWS GameLift static library](#include-aws-gamelift-static-library)
+- [3. Integrate game](#3-integrate-game)
+- [4. Integrate server](#4-integrate-server)
+- [5. Set up AWS credentials](#5-set-up-aws-credentials)
+- [## 6. Set up AWS CLI and CDK](#-6-set-up-aws-cli-and-cdk)
 
 ### Dependencies
 
@@ -86,13 +93,13 @@ For a client application, your game must implement the following use cases to ma
 - `JoinSession`
 - `LeaveSession`
 
-The AWS GameLift Gem provides both [C++ APIs](usage/cpp-api/) and [Scripting](usage/scripting/) to support developers. You can implement these use cases using either method. 
+The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [Scripting](scripting/) to support developers. You can implement these use cases using either method. 
 
 ## 4. Integrate server
 
 To establish communication between your server and Amazon GameLift service, you must notify Amazon GameLift that your server is ready and then respond to GameLift notifications.
 
-For more details on Server Notifications, read [C++ API for AWS GameLift Gem](usage/cpp-api/)
+For more details on Server Notifications, read [C++ API for AWS GameLift Gem](cpp-api/)
 
 ## 5. Set up AWS credentials
 
@@ -114,6 +121,6 @@ The AWS GameLift provides a sample CDK application that you can use to model and
 
 
 
-Previous Topic: [AWS GameLift Feature Overview](_index.md)
+Previous Topic: [AWS GameLift Feature Overview](/docs/user-guide/gems/reference/aws/aws-gamelift)
 
-Next Topic:[C++ API for AWS GameLift Gem](usage/cpp-api.md)
+Next Topic:[C++ API for AWS GameLift Gem](cpp-api/)
