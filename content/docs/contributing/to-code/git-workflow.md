@@ -152,9 +152,3 @@ The SIG owner can request changes by providing feedback. You should engage with 
 ![An example of a failed AR check in a pull request.](/images/contributing/to-code/code-ar-failed.png)
 
 If you do not make the changes to pass the AR, or ignore the code review feedback, the SIG owner may reject the changes in the pull request by marking it closed.
-
-### Frequently Asked Questions
-
-**Q:** _QUESTION HERE._
-
-**A:** ANSWER HERE.

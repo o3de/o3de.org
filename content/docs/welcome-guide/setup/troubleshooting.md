@@ -6,7 +6,7 @@ weight: 400
 toc: true
 ---
 
-This guide will help you identify and resolve some common issues that you might encounter when setting up Open 3D Engine (O3DE) on your computer. Be aware that you might come across situations unique to your system or project that aren't addressed here. This reference is only for the most frequent setup issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching [our forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE discord](https://discord.gg/neVKVbs6).
+This guide will help you identify and resolve some common issues that you might encounter when setting up Open 3D Engine (O3DE) on your computer. Be aware that you might come across situations unique to your system or project that aren't addressed here. This reference is only for the most frequent setup issues that aren't affected by a known bug, or can't easily be worked around. If you don't find your problem covered here, try searching [our forums](https://github.com/o3de/o3de/discussions) or asking in the [O3DE discord](https://discord.gg/xNb2q4SJKJ).
 
 If you believe your setup problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
 
@@ -87,5 +87,5 @@ There are additional troubleshooting pages in other sections of the O3DE documen
 As a reminder, you can also try searching for your issue or asking for help in these locations:
 
 * [O3DE forums](https://github.com/o3de/o3de/discussions)
-* [O3DE discord](https://discord.gg/neVKVbs6)
+* [O3DE discord](https://discord.gg/xNb2q4SJKJ)
 * [Existing bug reports](https://github.com/o3de/o3de/issues)
