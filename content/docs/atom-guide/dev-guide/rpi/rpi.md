@@ -17,8 +17,6 @@ The Render Pipeline Interface (RPI) is the central hub in Atom's rendering pipel
 - Improve user workflow by configuring the preview window renderer. For example, in Open 3D Engine, users can set up lighting, background environment, and post effects in the preview window.
 - Develop and switch to other rendering techniques such as deferred or checkerboard rendering. (By default, Atom uses a forward+ render pipeline.)
 
-<!-- [TODO] The AtomSampleViewer demonstrates how to create a simple checkerboard render pipeline see __ . --> 
-
 In Atom, the RPI is an essential system that is responsible for managing many tasks in the rendering pipeline. The following highlights some of the RPI's responsibilities:
 * Define and implement a data-driven rendering pipeline.
 * Define and consume fundamental graphics data assets such as buffer asset, material asset, image asset, shader asset, pass asset, and resource pool asset. However, it is not responsible for high-level assets such as level assets or terrain assets. 
@@ -31,7 +29,6 @@ The RPI architecture is centered around the **RPI System**, the core system that
 
 ![RPI Architecture Diagram](/images/atom-guide/core-systems/rpi/rpi-architecture.svg)
 
-<!-- [WRITER NOTE: Diagram needs update.] -->
 
 ## RPI Code Organization
 The RPI interface is split into several modules, each with its own responsibilities. The code for these modules can be found in the Atom Gem, which is located in the folder `Gems/Atom/RPI/Code/Source/`. 

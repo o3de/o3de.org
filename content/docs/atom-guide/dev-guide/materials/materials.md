@@ -2,7 +2,6 @@
 linktitle: Overview
 title: "Material System Overview"
 description: "Materials contain data that control how model surfaces appear in a 3D environment."
-date: 2021-03-04
 toc: false
 weight: 100
 ---
@@ -60,10 +59,6 @@ A **material type** is a data item that includes everything that's needed to des
 - Metadata for the Material Editor to use when displaying material properties
 
 Material type files (`*.materialtype`) are in JSON format and can be authored directly. This will link together several other files as well, to form a complete material type definition. These additional files include *.shader*, *.azsl*, and *.lua* files.
-<!-- [NOTE FOR DEVS] 
-- Can we elaborate on why/when they would need to create material types using C++ or Lua? 
-- What is the API (or files) for programming material types?
-- What is the main purpose of a functor? -->
 
 For more information, see [Material Type File Specification](/docs/atom-guide/look-dev/materials/material-type-file-spec/).  
 
@@ -71,10 +66,8 @@ For more information, see [Material Type File Specification](/docs/atom-guide/lo
 Atom comes built with common material types that you can create materials from. To suit individual needs, you can also create and configure new material types by defining properties, shaders, and functors.
 
 The following material types are included in Atom: 
-<!-- [NOTE FOR DEVS: Can you review/edit these descriptions for the material types?] -->
 - **StandardPBR**  
     A full-featured PBR material type, but adopts certain feature limitations in order to improve performance. It is meant to provide as much functionality as possible with a limited number of render targets. 
-    <!-- For more information on StandardPBR material type, see _[TODO]__.    -->  
     
     This file is located in `Gems/Atom/Feature/Common/Assets/Materials/Types/StandardPBR.materialtype`.
 
