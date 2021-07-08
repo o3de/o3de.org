@@ -1,7 +1,6 @@
 ---
 linktitle: To Code
 title: "Contributing to O3DE Code Sources: Home"
-date: 2021-03-02T00:23:51-05:00
 toc: true
 weight: 100
 ---

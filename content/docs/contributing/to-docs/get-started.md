@@ -12,7 +12,7 @@ Anyone can be a contributor to Open 3D Engine (O3DE) docs and determine their ow
 
 ## Before you do anything
 
-It's important to be familiar with the O3DE documentation and get a feel for its style. Take some time to browse the [O3DE documentation](https://www.o3de.org/docs). The documentation consists of several guides:
+It's important to be familiar with the O3DE documentation and get a feel for its style. Take some time to browse the [O3DE documentation](/docs). The documentation consists of several guides:
 
 * [Welcome](/docs/welcome-guide): A friendly introduction and overview of O3DE. The purpose of this guide is to get new users, particularly those without much prior experience, comfortable with O3DE. If you have a gift for simplifying technical concepts, this is a great area to investigate for contributions.
 * [Tutorials and Examples](/docs/learning-guide): Guided tutorials, samples, and cookbooks to help users learn O3DE. If you are an O3DE user, submitting recipes for the cookbooks is a great way to contribute new documentation without investing much time.
