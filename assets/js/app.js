@@ -133,8 +133,8 @@ function displayResults (results, store) {
 }
 
 // Get the query parameter(s)
-const params = new URLSearchParams(window.location.search)
-const query = params.get('query')
+// const params = new URLSearchParams(window.location.search)
+// const query = params.get('query')
 
 // Perform a search if there is a query
 // if (query) {
