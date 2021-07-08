@@ -57,7 +57,7 @@ To test the local server package:
 
 
 {{< caution >}}  
-Make sure you replace `<package base folder>` with the path to the installation folder you created previously.  
+Make sure you replace `<package base folder>` with the path to the installation folder you created earlier.  
 {{< /caution >}}
 
 

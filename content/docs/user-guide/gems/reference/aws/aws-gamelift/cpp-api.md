@@ -5,7 +5,7 @@ description: "Learn how to use the C++ API for AWS GameLift Gem in O3DE"
 toc: true
 ---
 
-## 1. Session Interface
+## Session Interface
 
 The *session interface*, `ISessionRequests` and `ISessionAsyncRequests`, provides public APIs that allows you to create game sessions and allows players to search and join online games. The session interface abstracts the implementation details of session related management.
 
@@ -13,7 +13,7 @@ There must be only one implementation of the session interface per dedicated ser
 
 The AWS GameLift Gem implements a session interface for Amazon's dedicated server solution, Amazon GameLift service. The session interface performs all of the session handling, the AWS GameLift Gem acts as a game-specific handler of the session interface, and the game code makes calls to it when it needs to interact with the session. The game session is created and owned by Amazon GameLift service, and only exists on the server when running an online game.
 
-## 2. Session Management
+## Session Management
 
 ### `CreateSession`
 
@@ -117,7 +117,7 @@ void OnLeaveSessionAsyncComplete()
 
 As the default behavior, when the last player leaves the game session, the game session will be destroyed.
 
-## 3. Server Notifications
+## Server Notifications
 
 You must notify the Amazon GameLift server that your server process is ready to host game sessions, handle requests, and take connections. 
 

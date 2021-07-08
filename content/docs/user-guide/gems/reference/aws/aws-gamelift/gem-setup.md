@@ -24,30 +24,23 @@ The lifetime of a session involves the following phases:
 ## 2. Enable AWS GameLift
 
 To enable AWS GameLift in your project:  
-- [1. Understand GameLift](#1-understand-gamelift)
-- [2. Enable AWS GameLift](#2-enable-aws-gamelift)
-  - [Dependencies](#dependencies)
   - [Enable AWS GameLift Gem and its dependencies](#enable-aws-gamelift-gem-and-its-dependencies)
   - [Include AWS GameLift static library](#include-aws-gamelift-static-library)
-- [3. Integrate game](#3-integrate-game)
-- [4. Integrate server](#4-integrate-server)
-- [5. Set up AWS credentials](#5-set-up-aws-credentials)
-- [## 6. Set up AWS CLI and CDK](#-6-set-up-aws-cli-and-cdk)
 
 ### Dependencies
 
 The AWS GameLift Gem depends on the following Gems:
 
-- **[AWS Core Gem](/docs/user-guide/gems/reference/aws/aws-core)**: It provides the framework to use AWS services in O3DE.
-- **[Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer)**:  It provides the multiplayer functionality, like connection and hosting, by extending networking framework.
+- [AWS Core Gem](/docs/user-guide/gems/reference/aws/aws-core): Provides the framework to use AWS services in O3DE.
+- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer): Provides the multiplayer functionality, like connection and hosting, by extending networking framework.
   
 
 ### Enable AWS GameLift Gem and its dependencies
 To enable the AWS GameLift Gem in your project:
-1. Open the Project Manager. 
+1. Open the **Project Manager**. 
 2. Open the menu under your project and choose **Edit Project Settings...**.
 3. Select the **Configure Gems** button.
-4. Enable the AWS GameLift Gem and ensure that the dependent Gems are also enabled.
+4. Enable the AWS GameLift Gem and the dependent Gems.
 
 ### Include AWS GameLift static library
 You must include AWS GameLift static library in your project's CMake build target.

@@ -8,15 +8,14 @@ toc: true
 {{< preview-new >}}
 
 ## Feature Overview
- 
-### Amazon GameLift integration
+AWS GameLift Gem provides the following features:
 
-- AWS GameLift Gem provides a framework to extend O3DE networking layer and to allow the Multiplayer Gem to work with [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). It provides integrations with both the Amazon GameLift Server SDK and GameLift Client.
+**Amazon GameLift integration**
+- A framework to extend O3DE networking layer and to allow the Multiplayer Gem to work with [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). It provides integrations with both the Amazon GameLift Server SDK and GameLift Client.
 
-### Build and package management
-
-- AWS GameLift feature provides instruction to package and optionally upload the dedicated server build.
-- AWS GameLift feature provides a sample [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. Customers can deploy the CDK application for setting up basic GameLift resources or modify the CDK application to add their custom resources.
+**Build and package management**
+- Instruction to package and optionally upload the dedicated server build.
+- A sample [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. Customers can deploy the CDK application for setting up basic GameLift resources or modify the CDK application to add their custom resources.
 
 ## Release highlights
 
@@ -25,6 +24,13 @@ toc: true
 - Support CreateSession (on fleet/on queue), SearchSessions, JoinSession and LeaveSession through Amazon GameLift service.
 - Support Windows dedicated server and Windows client.
 - Support CDK application to manage GameLift resources.
+
+## Prerequisites
+
+The examples on this page require an understanding of the following topics:
+- [Amazon GameLift Introduction](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html)
+- [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer/)
+- [Networking](/docs/user-guide/networking/)
 
 
 ## Topics
