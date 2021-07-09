@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use the O3DE UI 2.0 styled dock widget with the
-  dock main window component, to enable fancy docking in O3DE tools and gems. '
-title: O3DE UI styled dock widget
+linktitle: Styled Dock
+title: O3DE UI Styled Dock Widget
+description: Learn how to use the O3DE UI styled dock widget with the dock main window component, to enable fancy docking in O3DE tools and Gems.
+toc: true
 ---
 
 {{< preview-migrated >}}

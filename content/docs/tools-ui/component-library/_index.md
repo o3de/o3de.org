@@ -1,13 +1,13 @@
 ---
-description: ' An introduction to the Open 3D Engine UI 2.0 component library. '
-linktitle: UI component library
-title: O3DE UI component library
+linktitle: UI Component Library
+title: O3DE UI Component Library
+description: An introduction to the Open 3D Engine UI component library.
 weight: 300
 ---
 
 {{< preview-migrated >}}
 
-In the O3DE UI component library, you will find an explanation of each UI component (i.e. widget), along with guidelines for their usage. Typically, each page contains the following information:
+In the Open 3D Engine (O3DE) UI component library, you will find an explanation of each UI component (i.e. widget), along with guidelines for their usage. Typically, each page contains the following information:
 + Use cases
 + Screenshots and explanations of component features
 + Usage guidelines
@@ -15,7 +15,8 @@ In the O3DE UI component library, you will find an explanation of each UI compon
 + Links to C++ API reference page for each component
 + Links to related information in the Qt widget library
 
-**Topics**
+## Components
+
 + [Breadcrumbs](uidev-breadcrumbs-component.md)
 + [Browse edit](uidev-browse-edit-component.md)
 + [Button styles](uidev-button-component.md)

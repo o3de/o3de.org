@@ -1,7 +1,8 @@
 ---
-description: ' Use the O3DE UI 2.0 card component as a container to organize
-  component property settings and actions together. '
-title: O3DE UI card component
+linktitle: Card
+title: O3DE UI Card Component
+description: Use the O3DE UI card component as a container to organize component property settings and actions together.
+toc: true
 ---
 
 {{< preview-migrated >}}

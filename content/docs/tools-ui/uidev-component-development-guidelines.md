@@ -1,12 +1,14 @@
 ---
-description: Get a high-level overview of the concepts behind O3DE UI component development using the custom Qt widget library. 
-title: O3DE UI component development guidelines
+linktitle: Component Development Guidelines
+title: O3DE UI Component Development Guidelines
+description: Get a high-level overview of the concepts behind Open 3D Engine (O3DE) UI component development using the custom Qt widget library.
 weight: 200
+toc: true
 ---
 
 {{< preview-migrated >}}
 
-For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to Open 3D Engine (O3DE), are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
+For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to Open 3D Engine (O3DE), are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `<engine>/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
 
 ## Style sheets and StyleManager
 
@@ -14,7 +16,7 @@ The O3DE UI is built upon [Qt Style Sheets](https://doc.qt.io/qt-5/stylesheet.ht
 
 In Qt Style Sheets, the `AzQtComponents` module has a `StyleManager` class, which installs a custom [QProxyStyle class](https://doc.qt.io/qt-5/qproxystyle.html) at the application level. The `QProxyStyle` class overrides the styling of all widgets with custom styling. This is how you can use a basic Qt widget (such as `QPushButton` or `QCheckBox`) and give it custom styling.
 
-The StyleManager class is pre-loaded with a series of base style sheets, starting with `dev/Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/BaseStyleSheet.qss`.
+The StyleManager class is pre-loaded with a series of base style sheets, starting with `<engine>/Code/Framework/AzQtComponents/AzQtComponents/Components/Widgets/BaseStyleSheet.qss`.
 
 This style sheet applies custom styling for each individual widget, each of which is separated into files such as "`CheckBox.qss`" and "`PushButton.qss`". This styling is applied down through the entire widget hierarchy, starting from the top application layer. Additional custom style sheets can be applied at lower levels (such as in your own custom tool) that affect only that widget and any of its children.
 
@@ -22,7 +24,7 @@ This style sheet applies custom styling for each individual widget, each of whic
 
 Depending on your tools and existing code, accessing the new library of components might require some initial setup.
 
-If your tool is part of the core O3DE Editor or is part of a Gem which uses the Editor's Qt Application, you're already set up and ready to go. Just include the header for the component that you need to use from the `Code/Framework/AzQtComponents/AzQtComponents/Components` folder.
+If your tool is part of the core O3DE Editor or is part of a Gem which uses the Editor's Qt Application, you're already set up and ready to go. Just include the header for the component that you need to use from the `<engine>/Code/Framework/AzQtComponents/AzQtComponents/Components` folder.
 
 For standalone tools with their own Qt Application, you must take some extra steps to make sure that the new styling is applied correctly.
 

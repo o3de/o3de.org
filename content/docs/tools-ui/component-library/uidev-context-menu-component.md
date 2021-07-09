@@ -1,7 +1,8 @@
 ---
-description: ' Use the O3DE UI 2.0 context menu component to display a popup
-  menu with a list of context-appropriate actions. '
-title: O3DE UI menu component
+linktitle: Context Menu
+title: O3DE UI Context Menu Component
+description: Use the O3DE UI context menu component to display a popup menu with a list of context-appropriate actions.
+toc: true
 ---
 
 {{< preview-migrated >}}

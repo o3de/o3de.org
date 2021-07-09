@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use the O3DE UI 2.0 tab widget component to create
-  tabs and tab action bars in O3DE tools and gems. '
-title: O3DE UI tab component
+linktitle: Tab
+title: O3DE UI Tab Component
+description: Learn how to use the O3DE UI tab widget component to create tabs and tab action bars in O3DE tools and Gems.
+toc: true
 ---
 
 {{< preview-migrated >}}

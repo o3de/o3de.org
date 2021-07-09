@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use O3DE UI 2.0 checkboxes in O3DE gems and
-  tools. '
-title: O3DE UI checkbox component
+linktitle: Checkbox
+title: O3DE UI Checkbox Component
+description: Learn how to use O3DE UI checkboxes in O3DE Gems and tools.
+toc: true
 ---
 
 {{< preview-migrated >}}

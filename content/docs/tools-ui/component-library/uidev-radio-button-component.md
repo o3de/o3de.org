@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to apply the O3DE UI 2.0 style for radio buttons in
-  O3DE gems and tools. '
-title: O3DE UI radio button style
+linktitle: Radio Button Style
+title: O3DE UI Radio Button Style
+description: Learn how to apply the O3DE UI style for radio buttons in O3DE Gems and tools.
+toc: true
 ---
 
 {{< preview-migrated >}}

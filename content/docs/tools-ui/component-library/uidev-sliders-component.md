@@ -1,7 +1,8 @@
 ---
-description: ' Learn about the O3DE UI 2.0 style of sliders, including the slider
-  and slider combo components. '
-title: O3DE UI sliders
+linktitle: Sliders
+title: O3DE UI Sliders
+description: Learn about the O3DE UI style of sliders, including the slider and slider combo components.
+toc: true
 ---
 
 {{< preview-migrated >}}
