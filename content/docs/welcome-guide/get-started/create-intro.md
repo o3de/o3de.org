@@ -133,7 +133,8 @@ We suggest that you begin your learning path by browsing the following set of O3
 *  [Gem Library](/docs/user-guide/gems/)
 *  [Script Canvas](/docs/user-guide/scripting/script-canvas/)
 *  [Lua Editor](/docs/user-guide/scripting/lua/)
-*  [AI Navigation](/docs/user-guide/interactivity/navigation-and-pathfinding/)
+<!-- *  [AI Navigation](/docs/user-guide/interactivity/navigation-and-pathfinding/) -->
+<!-- 7/9/2021 - The AI Navigation page is in progress -->
 *  [Audio Controls Editor](/docs/user-guide/interactivity/audio/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
 *  [Cloud Canvas](/docs/user-guide/cloud/)
