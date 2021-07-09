@@ -22,4 +22,6 @@ Before you begin, make sure that you have built or installed O3DE on your comput
 
 1. Use the dropdown menu in the upper left of the tool to navigate through the available components. For each component, the right side of the tool provides an interactive example of how the widget looks and works. The left side contains sample code related to the component.
 
-**Note:** The gallery does not cover how to set up a window for your tool, or the basics of how the Qt library works. Its primary objective is to illustrate the styles and features of the components in the library.
+{{< note >}}
+The gallery does not cover how to set up a window for your tool, or the basics of how the Qt library works. Its primary objective is to illustrate the styles and features of the components in the library.
+{{< /note >}}
