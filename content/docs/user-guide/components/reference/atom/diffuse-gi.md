@@ -2,6 +2,7 @@
 title: Diffuse Global Illumination component
 linktitle: Diffuse Global Illumination
 description: ' Open 3D Engine (O3DE) Diffuse Global Illumination component reference. '
+toc: true
 ---
 
 {{< preview-new >}}

@@ -2,11 +2,11 @@
 title: Light Component
 linktitle: Light
 description: ' Open 3D Engine (O3DE) Light component reference. '
-weight: 100
 toc: true
 ---
 
 {{< preview-new >}}
+
 The **Light** component simulates soft studio light with various types of punctual and area lights. The Light component supports the punctual lights Point (simple punctual) and Spot (simple punctual), which are infinitesimally small. These are slightly more performant than their area light counterparts, but they produce simpler light effects. The Light component also supports the area lights Point (sphere), Spot (disk), Capsule, Quad, and Polygon. These most accurately simulate real-world light sources.
 
 ## Light types
