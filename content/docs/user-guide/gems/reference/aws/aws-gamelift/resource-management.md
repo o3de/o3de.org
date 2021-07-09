@@ -99,6 +99,10 @@ To upload a zipped server package from disk and create a GameLift build automati
 }
 ```
 
+{{< caution >}}
+If you are deploying your server to an Amazon Linux instance, you must specify `AMAZON_LINUX_2` as the operating system. 
+{{< /caution >}}
+
 ### Runtime Configuration
 
 You can set up the fleet's runtime configuration to run multiple game server processes per instance. The [AWS GameLift Gem Advanced Topics](advanced-topics/) page goes over the benefits of this setup and the launch parameters required to support a unique log path for each server process. 
