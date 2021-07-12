@@ -108,8 +108,30 @@ $(function() {
 });
 
 
-// Search 
+// download page os buttons
 
+$(function() {
+  const macOsContent = "Fork the O3DE source and build the engine and tools directly from any branch. For more details, read the documentation.";
+  const windowsContent = "Coming Spring 2022.";
+  $(".download-os-button").click(function(event){
+    event.preventDefault()
+    console.log("OS SELECTED: ", $(this).text());
+    $(".download-os").removeClass("active");
+    $(this).parents().addClass("active");
+    if($(this).text().includes("macOS")){
+      $(".download-os-content").text(macOsContent);
+      $("#download-page-buttons a").removeClass("disabled");
+      $("#download-page-buttons a").attr('href', 'https://github.com/o3de/o3de');
+    } else {
+      $(".download-os-content").text(windowsContent);
+      $("#download-page-buttons a").addClass("disabled");
+      $("#download-page-buttons a").removeAttr('href');
+    }
+  })
+});
+
+
+// Search 
 
 function displayResults (results, store) {
   const resultsContainer = document.getElementById('search-results')
