@@ -20,7 +20,7 @@ Resource mapping tool uses boto3 to interact with backend AWS services. Before u
 
 The simplest approach is to launch the tool from the O3DE Editor. Use the **AWS - AWS Resource Mapping tool** menu item to launch the tool.
 
-The tool can also be run independently of the Editor. See the section [Launching the resource mapping tool from command line](launching-the-resource-mapping-tool-from-command-line) for instructions.
+The tool can also be run independently of the Editor. See the section [Launching the resource mapping tool from command line](#launching-the-resource-mapping-tool-from-command-line) for instructions.
 
 ## Importing resources
 

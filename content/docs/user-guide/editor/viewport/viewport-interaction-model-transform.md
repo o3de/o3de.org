@@ -17,11 +17,8 @@ When you move the manipulator to another location in the viewport, you can modif
 1. Press and hold **Ctrl**, and click and drag the manipulator to another location.
 
 1. Use the manipulator again to adjust the scale, rotation, or translation of the entity.
-**Example**
 
-   In the following example, the manipulator is moved away from the car, switches to rotate mode, and rotates the car.
-![\[Move and rotate an entity using a manipulator in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-3.gif)
+In the following example, the manipulator is moved away from the car, switches to rotate mode, and rotates the car.
 
-    The following are shortcuts to switch between the different manipulator modes.
-****
+![Move and rotate an entity using a manipulator in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-3.gif)
 
