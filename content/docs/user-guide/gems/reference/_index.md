@@ -171,7 +171,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [In App Purchases](./monetization/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
+| [In App Purchases](./sdk/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
 
 ## UI
 

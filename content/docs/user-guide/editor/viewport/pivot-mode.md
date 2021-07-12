@@ -16,7 +16,7 @@ Currently, this is a global toggle and doesn't support mixed use cases, such as 
 1. In the viewport, select an entity or group of entities.
 
 1. Press **P** to switch between the pivot and the entity's center.
-**Example**
 
    In the following example, the selected entities pivot around the manipulator.
-![\[Modify entities using pivot mode in O3DE.\]](/images/user-guide/viewportinteractionmodel/viewport-selection-model-16.gif)
+   
+   ![Modify entities using pivot mode in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-16.gif)
