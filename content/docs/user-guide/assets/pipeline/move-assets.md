@@ -9,7 +9,7 @@ During development, you might decide to relocate files to change project structu
 the references in the Asset Processor, and require updating the asset references manually as well. This would invalidate the asset
 cache and cause a rebuild - even if nothing had changed.
 
-To support the relocation of assets, the `AssetBundlerBatch` tool offers the `--move` parameter, which allows you to relocate files
+To support the relocation of assets, the `AssetProcessorBatch` tool offers the `--move` parameter, which allows you to relocate files
 and update references in the Asset Processor, without causing any unnecessary rebuilds.
 
 ## Move Syntax

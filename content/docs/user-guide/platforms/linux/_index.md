@@ -21,8 +21,8 @@ sudo apt-get update
 sudo apt-get install -y \
     build-essential clang-6.0 uuid-dev libz-dev libncurses5-dev libcurl4-openssl-dev \
     mesa-common-dev libglu1-mesa-dev libjpeg-dev libjbig-dev libsdl2-dev \
-    libxcb-xinerama0 libxcb-xinput0 \
-    libopus-dev libwebp-dev
+    libxcb-xinerama0 libxcb-xinput0 libfontconfig1-dev \
+    libopus-dev libwebp-dev 
 ```
 
 {{< note >}}
