@@ -9,7 +9,7 @@ The Wwise Audio Engine Gem provides support for using the Audiokinetic Wave Work
 
 The Wwise Audio Engine Gem requires the Audio System Gem.
 
-For more information, refer to [Audio System Overvieew](/docs/user-guide/interactivity/audio/overview/).
+For more information, refer to [Audio System Overview](/docs/user-guide/interactivity/audio/overview/).
 
 ## Enabling the Wwise Audio Engine Gem
 
