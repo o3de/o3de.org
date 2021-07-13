@@ -17,4 +17,4 @@ Special Interest Groups (SIGs) are the way work gets done in an open-source comm
 
 ## Contribution Guidelines
 
-Before you start participating in and contributing to O3DE, review our [code of conduct](https://o3de.org/docs/contributing/code-of-conduct/) guidance.
+Before you start participating in and contributing to O3DE, review our [code of conduct](https://o3de.org/docs/contributing/code-of-conduct/). Contributing guidelines for our projects are hosted in their GitHub repositories, within the root directory in a `CONTRIBUTING.md` file.
