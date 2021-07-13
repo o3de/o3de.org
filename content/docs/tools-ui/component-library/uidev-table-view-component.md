@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use the O3DE UI 2.0 table view component to present
-  columns of structured data in O3DE tools and gems. '
-title: O3DE UI table view component
+linktitle: Table View
+title: O3DE UI Table View Component
+description: Learn how to use the O3DE UI table view component to present columns of structured data in O3DE tools and Gems.
+toc: true
 ---
 
 {{< preview-migrated >}}

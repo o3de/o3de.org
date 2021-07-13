@@ -1,7 +1,8 @@
 ---
-description: ' Use the O3DE UI 2.0 line edit component to capture free-form
-  text from the user. '
-title: O3DE UI line edit component
+linktitle: Line Edit
+title: O3DE UI Line Edit Component
+description: Use the O3DE UI line edit component to capture free-form text from the user.
+toc: true
 ---
 
 {{< preview-migrated >}}

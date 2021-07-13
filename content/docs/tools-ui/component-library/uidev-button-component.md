@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to apply the O3DE UI 2.0 styles for push buttons and
-  tool buttons in O3DE gems and tools. '
-title: O3DE UI button styles
+linktitle: Button Styles
+title: O3DE UI Button Styles
+description: Learn how to apply the O3DE UI styles for push buttons and tool buttons in O3DE Gems and tools.
+toc: true
 ---
 
 {{< preview-migrated >}}

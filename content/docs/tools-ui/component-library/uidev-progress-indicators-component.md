@@ -1,7 +1,8 @@
 ---
-description: ' Learn about the O3DE UI 2.0 progress indicators, including the
-  spinner and progress bar components. '
-title: O3DE UI progress indicators
+linktitle: Progress Indicators
+title: O3DE UI Progress Indicators
+description: Learn about the O3DE UI progress indicators, including the spinner and progress bar components.
+toc: true
 ---
 
 {{< preview-migrated >}}

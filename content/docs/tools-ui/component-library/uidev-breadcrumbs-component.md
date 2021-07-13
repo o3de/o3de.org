@@ -1,8 +1,8 @@
 ---
-description: ' Use the O3DE UI 2.0 breadcrumbs component as a navigational tool
-  to show users where they are along a hierarchical path. Breadcrumbs also enable
-  users to jump to a different point in the path. '
-title: O3DE UI breadcrumb navigation component
+linktitle: Breadcrumb Navigation
+title: O3DE UI Breadcrumb Navigation Component
+description: Use the O3DE UI breadcrumbs component as a navigational tool to show users where they are along a hierarchical path. Breadcrumbs also enable users to jump to a different point in the path.
+toc: true
 ---
 
 {{< preview-migrated >}}

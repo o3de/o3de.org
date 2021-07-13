@@ -1,7 +1,8 @@
 ---
-description: ' Use the O3DE UI 2.0 browse edit component to enable users to
-  choose one or more values from a list or directory. '
-title: O3DE UI browse edit component
+linktitle: Browse Edit
+title: O3DE UI Browse Edit Component
+description: Use the O3DE UI browse edit component to enable users to choose one or more values from a list or directory.
+toc: true
 ---
 
 {{< preview-migrated >}}

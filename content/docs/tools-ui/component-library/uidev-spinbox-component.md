@@ -1,7 +1,8 @@
 ---
-description: ' Learn about the O3DE UI 2.0 style of spinboxes, including the
-  spinbox and double spinbox components. '
-title: O3DE UI spinbox component
+linktitle: Spinbox
+title: O3DE UI Spinbox Component
+description: Learn about the O3DE UI style of spinboxes, including the spinbox and double spinbox components.
+toc: true
 ---
 
 {{< preview-migrated >}}

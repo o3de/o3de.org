@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to apply the O3DE UI 2.0 toggle switch style to a checkbox
-  component in O3DE gems and tools. '
-title: O3DE UI toggle switch component
+linktitle: Toggle Switch
+title: O3DE UI Toggle Switch Component
+description: Learn how to apply the O3DE UI toggle switch style to a checkbox component in O3DE gems and tools.
+toc: true
 ---
 
 {{< preview-migrated >}}

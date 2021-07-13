@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use the O3DE UI 2.0 tree view component to give
-  users a file or list navigation interface in O3DE tools and gems. '
-title: O3DE UI tree view component
+linktitle: Tree View
+title: O3DE UI Tree View Component
+description: Learn how to use the O3DE UI tree view component to give users a file or list navigation interface in O3DE tools and Gems.
+toc: true
 ---
 
 {{< preview-migrated >}}

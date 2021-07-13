@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use the O3DE UI 2.0 combobox component in Amazon
-  O3DE gems and tools. '
-title: O3DE UI combobox component
+linktitle: Combobox
+title: O3DE UI Combobox Component
+description: Learn how to use the O3DE UI combobox component in O3DE Gems and tools.
+toc: true
 ---
 
 {{< preview-migrated >}}

@@ -1,7 +1,8 @@
 ---
-description: ' Learn how to use the O3DE UI 2.0 filtered search widget to give
-  users advanced search options in your O3DE tools and gems. '
-title: O3DE UI filtered search widget
+linktitle: Filtered Search
+title: O3DE UI Filtered Search Widget
+description: Learn how to use the O3DE UI filtered search widget to give users advanced search options in your O3DE tools and Gems.
+toc: true
 ---
 
 {{< preview-migrated >}}

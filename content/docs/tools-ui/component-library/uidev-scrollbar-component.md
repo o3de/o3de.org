@@ -1,7 +1,8 @@
 ---
-description: ' Learn about the O3DE UI 2.0 customizations to the scrollbar style
-  in O3DE tools and gems. '
-title: O3DE UI scrollbar styles
+linktitle: Scrollbar Styles
+title: O3DE UI Scrollbar Styles
+description: Learn about the O3DE UI customizations to the scrollbar style in O3DE tools and Gems.
+toc: true
 ---
 
 {{< preview-migrated >}}

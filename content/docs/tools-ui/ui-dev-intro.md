@@ -1,8 +1,6 @@
 ---
-description: ' Get started with the O3DE UI 2.0 design guidelines and component
-  libraries for building extensions that blend well with the standardized O3DE
-  user experience. '
-title: Introduction to O3DE UI development
+title: Introduction to O3DE UI Development
+description: Get started with the O3DE UI design guidelines and component libraries for building extensions that blend well with the standardized O3DE user experience.
 weight: 10
 ---
 
