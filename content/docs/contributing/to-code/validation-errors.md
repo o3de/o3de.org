@@ -21,7 +21,7 @@ VALIDATOR_FAILED: CopyrightHeaderValidator <file>::CopyrightHeaderValidator FAIL
 
 ## How do I submit a fix?
 
-Modify your code to be compliant and resubmit to the [Automated Review](/docs/contributing/to-code/ar/) pipeline.  You can also run the validator locally, if you don't want to wait or want to debug a validator.
+Modify your code to be compliant and resubmit to the [Automated Review](https://github.com/o3de/sig-build/tree/main/AutomatedReview) pipeline.  You can also run the validator locally, if you don't want to wait or want to debug a validator.
 
 If the validator script contains a bug, it is recommended that you open a [GitHub Issues ticket](https://github.com/o3de/sig-testing/issues/new/choose).
 
