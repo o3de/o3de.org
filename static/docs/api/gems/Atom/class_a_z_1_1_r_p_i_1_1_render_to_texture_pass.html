@@ -251,6 +251,8 @@ virtual const PipelineViewTag &amp;&#160;</td><td class="memItemRight" valign="b
 <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_statistics_result.html">PipelineStatisticsResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a96496e3f0adf47e5c78541b1cd54d554">GetLatestPipelineStatisticsResult</a> () const</td></tr>
 <tr class="memdesc:a96496e3f0adf47e5c78541b1cd54d554 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the latest PipelineStatistic result of this pass. <br /></td></tr>
 <tr class="separator:a96496e3f0adf47e5c78541b1cd54d554 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8af11ba636aad8efe8a64756c4bf0fca inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#a8af11ba636aad8efe8a64756c4bf0fca">ReadbackAttachment</a> (AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_readback.html">AttachmentReadback</a> &gt; readback, const Name &amp;slotName, PassAttachmentReadbackOption option=PassAttachmentReadbackOption::Output)</td></tr>
+<tr class="separator:a8af11ba636aad8efe8a64756c4bf0fca inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada67c60873f39f24fabaf35e14c7c39f inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="ada67c60873f39f24fabaf35e14c7c39f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html#ada67c60873f39f24fabaf35e14c7c39f">IsTimestampQueryEnabled</a> () const</td></tr>
 <tr class="memdesc:ada67c60873f39f24fabaf35e14c7c39f inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the Timestamp queries is enabled/disabled for this pass. <br /></td></tr>
@@ -392,6 +394,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>FrameBegin</b> (<a cl
 <tr class="memitem:add38a9e3ac0d55b7dd3b4358de644e2b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="add38a9e3ac0d55b7dd3b4358de644e2b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FrameEnd</b> ()</td></tr>
 <tr class="separator:add38a9e3ac0d55b7dd3b4358de644e2b inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56112fc14a2009c7cd18feed26ce5875 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a56112fc14a2009c7cd18feed26ce5875"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateReadbackAttachment</b> (<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_1_1_frame_prepare_params.html">FramePrepareParams</a> params, bool beforeAddScopes)</td></tr>
+<tr class="separator:a56112fc14a2009c7cd18feed26ce5875 inherit pro_methods_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -501,6 +506,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_warnings</b> = 
 <tr class="memitem:a574d74f3a0b61ce9af8fbab3e29104b6 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a574d74f3a0b61ce9af8fbab3e29104b6"></a>
 RHI::DrawListSortType&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawListSortType</b> = RHI::DrawListSortType::KeyThenDepth</td></tr>
 <tr class="separator:a574d74f3a0b61ce9af8fbab3e29104b6 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adca2e2d090214c5108e9a3280ff61cd7 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="adca2e2d090214c5108e9a3280ff61cd7"></a>
+AZStd::shared_ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_readback.html">AttachmentReadback</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_attachmentReadback</b></td></tr>
+<tr class="separator:adca2e2d090214c5108e9a3280ff61cd7 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d68ecd8c0d83f6c55fba8c93ccf855 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a18d68ecd8c0d83f6c55fba8c93ccf855"></a>
+PassAttachmentReadbackOption&#160;</td><td class="memItemRight" valign="bottom"><b>m_readbackOption</b></td></tr>
+<tr class="separator:a18d68ecd8c0d83f6c55fba8c93ccf855 inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">AZ::RPI::Pass</a></td></tr>
 <tr class="memitem:a0a4355f1d35336214808c24d8c5979bb inherit pro_static_attribs_class_a_z_1_1_r_p_i_1_1_pass"><td class="memItemLeft" align="right" valign="top"><a id="a0a4355f1d35336214808c24d8c5979bb"></a>
 static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>MessageLogLimit</b> = 256</td></tr>
@@ -544,7 +555,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Messag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 16:33:14 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

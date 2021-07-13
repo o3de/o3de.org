@@ -47,16 +47,12 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ScriptCanvas::Nodes::Core::Repeater Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A node that repeats an execution signal over the specified time.  
- <a href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#details">More...</a></p>
 
 <p><code>#include &lt;Repeater.h&gt;</code></p>
 
@@ -71,13 +67,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CustomizeReplacementN
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#a3f0cf09802bd8e6ed167513fccbfbb30">OnInit</a> () override</td></tr>
 <tr class="memdesc:a3f0cf09802bd8e6ed167513fccbfbb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entity level initialization, perform any resource allocation here that should be available throughout the node's existence. <br /></td></tr>
 <tr class="separator:a3f0cf09802bd8e6ed167513fccbfbb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed8419232f9cbd753ba030c5fd11726e"><td class="memItemLeft" align="right" valign="top"><a id="aed8419232f9cbd753ba030c5fd11726e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_nodes_1_1_core_1_1_repeater.html#aed8419232f9cbd753ba030c5fd11726e">OnInputSignal</a> (const <a class="el" href="struct_script_canvas_1_1_slot_id.html">SlotId</a> &amp;slotId) override</td></tr>
-<tr class="memdesc:aed8419232f9cbd753ba030c5fd11726e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any node that is not pure data will perform its operation assuming that all input has been pushed and is reasonably valid. <br /></td></tr>
-<tr class="separator:aed8419232f9cbd753ba030c5fd11726e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb321c798f6cb146ce717ec31e3b65f8"><td class="memItemLeft" align="right" valign="top"><a id="abb321c798f6cb146ce717ec31e3b65f8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimeElapsed</b> ()</td></tr>
-<tr class="separator:abb321c798f6cb146ce717ec31e3b65f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35c71ed7e8656dfb36ab9357f43b2141"><td class="memItemLeft" align="right" valign="top"><a id="a35c71ed7e8656dfb36ab9357f43b2141"></a>
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetTimeSlotFormat</b> () const override</td></tr>
 <tr class="separator:a35c71ed7e8656dfb36ab9357f43b2141"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,12 +77,6 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseTimeSl
 const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetBaseTimeSlotToolTip</b> () const override</td></tr>
 <tr class="separator:ac5394e99d175942bbb073c440ad346f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ae8b44b17f63857d14c6d73d7c7f4b606"><td class="memItemLeft" align="right" valign="top"><a id="ae8b44b17f63857d14c6d73d7c7f4b606"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>AllowInstantResponse</b> () const override</td></tr>
-<tr class="separator:ae8b44b17f63857d14c6d73d7c7f4b606"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a73eb942ffd7216a7afeada50247c6daf"><td class="memItemLeft" align="right" valign="top"><a id="a73eb942ffd7216a7afeada50247c6daf"></a>
@@ -101,14 +84,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_repetionCount</b></t
 <tr class="separator:a73eb942ffd7216a7afeada50247c6daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A node that repeats an execution signal over the specified time. </p>
+<div class="textblock"><p>A node that repeats an execution signal over the specified time Deprecated for nodeable version </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ScriptCanvas/Code/Include/ScriptCanvas/Libraries/Core/Repeater.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 16:33:48 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 13 2021 13:29:57 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
