@@ -180,6 +180,57 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIsGraphObs
 <tr class="memitem:aa8a80677b6ea0715e56e13bc14d74740"><td class="memItemLeft" align="right" valign="top"><a id="aa8a80677b6ea0715e56e13bc14d74740"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGraphObserved</b> () const =0</td></tr>
 <tr class="separator:aa8a80677b6ea0715e56e13bc14d74740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0737328eda88176d331d53eb3532b7a5"><td class="memItemLeft" align="right" valign="top"><a id="a0737328eda88176d331d53eb3532b7a5"></a>
+virtual <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindAssetVariableIdByRuntimeVariableId</b> (<a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> runtimeId) const =0</td></tr>
+<tr class="separator:a0737328eda88176d331d53eb3532b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b89e978a5780d9483e807431b47bcf8"><td class="memItemLeft" align="right" valign="top"><a id="a4b89e978a5780d9483e807431b47bcf8"></a>
+virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>FindAssetNodeIdByRuntimeNodeId</b> (AZ::EntityId editorNode) const =0</td></tr>
+<tr class="separator:a4b89e978a5780d9483e807431b47bcf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3b2fc67d04bf7a167f3d27688654f9"><td class="memItemLeft" align="right" valign="top"><a id="a4a3b2fc67d04bf7a167f3d27688654f9"></a>
+virtual AZ::Data::AssetId&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetId</b> () const =0</td></tr>
+<tr class="separator:a4a3b2fc67d04bf7a167f3d27688654f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a035b8ef2f7e3dec4719b865c9aebda6e"><td class="memItemLeft" align="right" valign="top"><a id="a035b8ef2f7e3dec4719b865c9aebda6e"></a>
+virtual <a class="el" href="struct_script_canvas_1_1_graph_identifier.html">GraphIdentifier</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphIdentifier</b> () const =0</td></tr>
+<tr class="separator:a035b8ef2f7e3dec4719b865c9aebda6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30641e889a6534e9cb46e5b0cbe9a4ad"><td class="memItemLeft" align="right" valign="top"><a id="a30641e889a6534e9cb46e5b0cbe9a4ad"></a>
+virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetName</b> () const =0</td></tr>
+<tr class="separator:a30641e889a6534e9cb46e5b0cbe9a4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d8efec9f9b67afcb364a5c33df2d54"><td class="memItemLeft" align="right" valign="top"><a id="a70d8efec9f9b67afcb364a5c33df2d54"></a>
+virtual <a class="el" href="class_script_canvas_1_1_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#a70d8efec9f9b67afcb364a5c33df2d54">FindNode</a> (AZ::EntityId nodeId) const =0</td></tr>
+<tr class="memdesc:a70d8efec9f9b67afcb364a5c33df2d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up the nodeId within the bus handler. <br /></td></tr>
+<tr class="separator:a70d8efec9f9b67afcb364a5c33df2d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eacc677cec66f113049164d493ecb49"><td class="memItemLeft" align="right" valign="top"><a id="a5eacc677cec66f113049164d493ecb49"></a>
+virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>FindRuntimeNodeIdByAssetNodeId</b> (AZ::EntityId runtimeNode) const =0</td></tr>
+<tr class="separator:a5eacc677cec66f113049164d493ecb49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3147b4e2f65159af0462283354422020"><td class="memItemLeft" align="right" valign="top"><a id="a3147b4e2f65159af0462283354422020"></a>
+virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#a3147b4e2f65159af0462283354422020">GetRuntimeEntityId</a> () const =0</td></tr>
+<tr class="memdesc:a3147b4e2f65159af0462283354422020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the entity id of the execution component. <br /></td></tr>
+<tr class="separator:a3147b4e2f65159af0462283354422020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d95a2b2264494179e2c8ab18799346d"><td class="memItemLeft" align="right" valign="top"><a id="a3d95a2b2264494179e2c8ab18799346d"></a>
+virtual AZStd::pair&lt; EndpointMapConstIterator, EndpointMapConstIterator &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetConnectedEndpointIterators</b> (const <a class="el" href="class_script_canvas_1_1_endpoint.html">Endpoint</a> &amp;endpoint) const =0</td></tr>
+<tr class="separator:a3d95a2b2264494179e2c8ab18799346d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb9b08191ad0e460e75be13948b67b61"><td class="memItemLeft" align="right" valign="top"><a id="aeb9b08191ad0e460e75be13948b67b61"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#aeb9b08191ad0e460e75be13948b67b61">IsEndpointConnected</a> (const <a class="el" href="class_script_canvas_1_1_endpoint.html">Endpoint</a> &amp;endpoint) const =0</td></tr>
+<tr class="memdesc:aeb9b08191ad0e460e75be13948b67b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the given endpoint has any connections. <br /></td></tr>
+<tr class="separator:aeb9b08191ad0e460e75be13948b67b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad03e831090a1f1aa3d92a55bcfa5593b"><td class="memItemLeft" align="right" valign="top"><a id="ad03e831090a1f1aa3d92a55bcfa5593b"></a>
+virtual <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#ad03e831090a1f1aa3d92a55bcfa5593b">GetVariableData</a> ()=0</td></tr>
+<tr class="memdesc:ad03e831090a1f1aa3d92a55bcfa5593b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves <a class="el" href="class_script_canvas_1_1_variable_data.html" title="Variable Data structure for storing mappings of variable names to variable objects.">VariableData</a> structure which manages variable data for the execution component. <br /></td></tr>
+<tr class="separator:ad03e831090a1f1aa3d92a55bcfa5593b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa520bfb37a521ebcbb5567087e31988e"><td class="memItemLeft" align="right" valign="top"><a id="aa520bfb37a521ebcbb5567087e31988e"></a>
+virtual const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableDataConst</b> () const =0</td></tr>
+<tr class="separator:aa520bfb37a521ebcbb5567087e31988e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1468c03860c0440d11bf2241b2879512"><td class="memItemLeft" align="right" valign="top"><a id="a1468c03860c0440d11bf2241b2879512"></a>
+virtual const GraphVariableMapping *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#a1468c03860c0440d11bf2241b2879512">GetVariables</a> () const =0</td></tr>
+<tr class="memdesc:a1468c03860c0440d11bf2241b2879512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a map of variable id to variable name and variable datums pair. <br /></td></tr>
+<tr class="separator:a1468c03860c0440d11bf2241b2879512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421884de68571774967e0fb8e45147bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_script_canvas_1_1_graph_variable.html">GraphVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#a421884de68571774967e0fb8e45147bc">FindVariable</a> (AZStd::string_view varName)=0</td></tr>
+<tr class="separator:a421884de68571774967e0fb8e45147bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19b22910bf589d4e75558499bc28711"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_script_canvas_1_1_graph_variable.html">GraphVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph_requests.html#ae19b22910bf589d4e75558499bc28711">FindVariableById</a> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId)=0</td></tr>
+<tr class="separator:ae19b22910bf589d4e75558499bc28711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77441c408bf9f3cd499ca08a05001678"><td class="memItemLeft" align="right" valign="top"><a id="a77441c408bf9f3cd499ca08a05001678"></a>
+virtual AZ::Data::AssetType&#160;</td><td class="memItemRight" valign="bottom"><b>GetAssetType</b> () const =0</td></tr>
+<tr class="separator:a77441c408bf9f3cd499ca08a05001678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -264,6 +315,60 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
+<a id="a421884de68571774967e0fb8e45147bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421884de68571774967e0fb8e45147bc">&#9670;&nbsp;</a></span>FindVariable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_script_canvas_1_1_graph_variable.html">GraphVariable</a>* ScriptCanvas::GraphRequests::FindVariable </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::string_view&#160;</td>
+          <td class="paramname"><em>varName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Searches for a variable with the specified name returns pointer to the first variable with the specified name or nullptr </p>
+
+</div>
+</div>
+<a id="ae19b22910bf589d4e75558499bc28711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19b22910bf589d4e75558499bc28711">&#9670;&nbsp;</a></span>FindVariableById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_script_canvas_1_1_graph_variable.html">GraphVariable</a>* ScriptCanvas::GraphRequests::FindVariableById </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;&#160;</td>
+          <td class="paramname"><em>variableId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Searches for a variable by <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> returns a pair of &lt;variable datum pointer, variable name&gt; with the supplied id The variable datum pointer is non-null if the variable has been found </p>
+
+</div>
+</div>
 <a id="a5db4c2284ccfff7ca7b8e3354fc29480"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5db4c2284ccfff7ca7b8e3354fc29480">&#9670;&nbsp;</a></span>GetGraphEntity()</h2>
 
@@ -296,7 +401,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 16:33:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 13 2021 13:29:54 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

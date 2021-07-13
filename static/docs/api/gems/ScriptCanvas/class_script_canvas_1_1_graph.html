@@ -64,7 +64,7 @@ $(function() {
 
 <p><code>#include &lt;Graph.h&gt;</code></p>
 
-<p>Inherits Component, Handler, Handler, Handler, Handler, and Handler.</p>
+<p>Inherits Component, Handler, Handler, Handler, and Handler.</p>
 
 <p>Inherited by <a class="el" href="class_script_canvas_editor_1_1_graph.html">ScriptCanvasEditor::Graph</a>.</p>
 <table class="memberdecls">
@@ -177,12 +177,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDependentAsset<
 <tr class="memitem:aa32eae3ec0690a42cfc59582e8095ba8"><td class="memItemLeft" align="right" valign="top"><a id="aa32eae3ec0690a42cfc59582e8095ba8"></a>
 <a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraph</b> ()</td></tr>
 <tr class="separator:aa32eae3ec0690a42cfc59582e8095ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19aba32ce99867c4ae47140c79e7c9c"><td class="memItemLeft" align="right" valign="top"><a id="ae19aba32ce99867c4ae47140c79e7c9c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFunctionGraph</b> () const</td></tr>
-<tr class="separator:ae19aba32ce99867c4ae47140c79e7c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199c70007442a46cf00170642f5480bd"><td class="memItemLeft" align="right" valign="top"><a id="a199c70007442a46cf00170642f5480bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkFunctionGraph</b> ()</td></tr>
-<tr class="separator:a199c70007442a46cf00170642f5480bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a271e39577b19034d1d055f44970431dd"><td class="memItemLeft" align="right" valign="top"><a id="a271e39577b19034d1d055f44970431dd"></a>
 <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphData</b> () override</td></tr>
 <tr class="separator:a271e39577b19034d1d055f44970431dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,9 +282,6 @@ AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetRuntimeEnt
 <tr class="memitem:aab4f9db84ef6c4a895509907f08bac34"><td class="memItemLeft" align="right" valign="top"><a id="aab4f9db84ef6c4a895509907f08bac34"></a>
 <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindAssetVariableIdByRuntimeVariableId</b> (<a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> runtimeId) const override</td></tr>
 <tr class="separator:aab4f9db84ef6c4a895509907f08bac34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3545549af512ce02338c7704ab4c2c"><td class="memItemLeft" align="right" valign="top"><a id="afe3545549af512ce02338c7704ab4c2c"></a>
-<a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindRuntimeVariableIdByAssetVariableId</b> (<a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> assetId) const override</td></tr>
-<tr class="separator:afe3545549af512ce02338c7704ab4c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e8bd24b74b2080e3da28933f4d9b28d"><td class="memItemLeft" align="right" valign="top"><a id="a6e8bd24b74b2080e3da28933f4d9b28d"></a>
 AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>FindAssetNodeIdByRuntimeNodeId</b> (AZ::EntityId editorNode) const override</td></tr>
 <tr class="separator:a6e8bd24b74b2080e3da28933f4d9b28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -309,12 +300,12 @@ const GraphVariableMapping *&#160;</td><td class="memItemRight" valign="bottom">
 <tr class="memitem:af82ac40002ce63ee8292510d2214819b"><td class="memItemLeft" align="right" valign="top"><a id="af82ac40002ce63ee8292510d2214819b"></a>
 <a class="el" href="class_script_canvas_1_1_graph_variable.html">GraphVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindVariableById</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId) override</td></tr>
 <tr class="separator:af82ac40002ce63ee8292510d2214819b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff376cbb1150d2048fa4bcf433b9a965"><td class="memItemLeft" align="right" valign="top"><a id="aff376cbb1150d2048fa4bcf433b9a965"></a>
-<a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableType</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId) const override</td></tr>
-<tr class="separator:aff376cbb1150d2048fa4bcf433b9a965"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a20020fa2ce5ce31fa7f1066316062"><td class="memItemLeft" align="right" valign="top"><a id="ab3a20020fa2ce5ce31fa7f1066316062"></a>
-AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableName</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId) const override</td></tr>
-<tr class="separator:ab3a20020fa2ce5ce31fa7f1066316062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87321cd7fd992f8130bd87226623e853"><td class="memItemLeft" align="right" valign="top"><a id="a87321cd7fd992f8130bd87226623e853"></a>
+<a class="el" href="class_script_canvas_1_1_data_1_1_type.html">Data::Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableType</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId) const</td></tr>
+<tr class="separator:a87321cd7fd992f8130bd87226623e853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cc84de567d547d1ac1f2895f0c68276"><td class="memItemLeft" align="right" valign="top"><a id="a8cc84de567d547d1ac1f2895f0c68276"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableName</b> (const <a class="el" href="struct_script_canvas_1_1_variable_id.html">VariableId</a> &amp;variableId) const</td></tr>
+<tr class="separator:a8cc84de567d547d1ac1f2895f0c68276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0bd189c52411f56d10ab2764a843fa"><td class="memItemLeft" align="right" valign="top"><a id="a3b0bd189c52411f56d10ab2764a843fa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsGraphObserved</b> () const override</td></tr>
 <tr class="separator:a3b0bd189c52411f56d10ab2764a843fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,7 +378,7 @@ AZ::Data::AssetType&#160;</td><td class="memItemRight" valign="bottom"><b>m_asse
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 16:33:45 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 13 2021 13:29:54 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
