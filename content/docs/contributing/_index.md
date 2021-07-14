@@ -16,4 +16,4 @@ This guide will help you understand the overall organization of the Open 3D Engi
 | [Contribute to O3DE Code](to-code/) | Learn how to contribute to O3DE's codebase.  |
 | [Contribute to O3DE Documentation](to-docs/) | Learn how to contribute to O3DE's technical documentation. |
 | [Code of Conduct](code-of-conduct.md) | Learn what our expectations for community engagement are. |
-| [Community Tenets](https://github.com/o3de/foundation/blob/master/tenets.md) | Learn about the type of open source culture we'd like to foster. |
+| [Open 3D Foundation Community Values](https://github.com/o3de/community/blob/main/values.md) | Learn about the type of open source culture we'd like to foster. |
