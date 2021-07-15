@@ -4,8 +4,8 @@
 {{ $logo   := site.Params.logos.navbar }}
 {{ $menu   := site.Menus.main }}
 
-<div class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
-  <div class="container-fluid d-flex flex-row justify-content-between">
+<div id="main-navbar" class="main-navbar navbar navbar-dark navbar-expand-lg sticky-top" role="navigation" aria-label="main navigation">
+  <div id="main-navbar-content" class="container-fluid d-flex flex-row justify-content-between main-navbar-content">
       <div class="navbar-brand">
         <a class="navbar-item" href="{{ $home }}">
           {{ if $logo }}
@@ -31,5 +31,48 @@
         </div>
        
       </div>  
+  </div> 
+
+  <div id="docs-navbar-content" class="container-fluid d-flex flex-row justify-content-between docs-navbar-content hide-content">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ $home }}">
+          {{ if $logo }}
+          {{ $url := printf "img/logos/%s" $logo | relURL }}
+            <img src="/images/welcome-guide/O3DE-Learn.svg" class="navbar-logo">
+          {{ else }}
+          {{ $title }}
+          {{ end }}
+        </a>
+      </div>
+  
+      <div class="d-flex flex-row align-items-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-nav">
+          {{ partial "docs-menu-loop.html" . }}
+        </div>  
+        <div class="d-flex flex-column">
+          <a class="ml-4" role="button" data-toggle="collapse" data-target="#docs-nav-view-tabs" aria-controls="docs-nav-view-tabs" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="/images/welcome-guide/Dropdown-Button-with-Icon.svg">
+          </a>
+          <div class="collapse float-right" id="docs-nav-view-tabs" style="background-color: #222; width: 200px; margin: 10px 0 -90px -150px;">
+              <a href="/docs/release-notes/" class="
+                  nav-link 
+                  navbar-item
+              " style="color: #fff;">
+                  Release Notes
+              </a>
+              <div class="w-100" style="padding: 1px; background-color: #fff; opacity: 0.2;"></div>
+              <a href="/docs/contributing/" class="
+                  nav-link 
+                  navbar-item
+              " style="color: #fff;">
+                  Contribute
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
   </div> 
 </div>

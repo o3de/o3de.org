@@ -16,6 +16,37 @@ $(() => {
 });
 
 
+// toggle navbar for get-started view
+
+$(() => {
+  const url = window.location.pathname;
+  console.log(url, "       navbar includes docs: ", url.includes("/docs"));
+  const docsNavbarContent = document.getElementById('docs-navbar-content');
+  const mainNavbarContent = document.getElementById('main-navbar-content');
+  $("#docs-navbar-content ul.navbar-nav li a").each(function(){
+    console.log("NV ITEMS: ",  $(this).attr("href"));
+    if( $(this).attr("href") == url ) {
+      console.log("IN IF CONDITION");
+      $("#docs-navbar-content ul.navbar-nav li a").removeClass("active");
+      $("#docs-navbar-content ul.navbar-nav li").removeClass("active");
+      $(this).addClass("active");
+      $(this).parents().addClass("active");
+    }
+  })
+  if (url.includes("/docs/")) {
+    $("#main-navbar").removeClass("main-navbar")
+    $("#main-navbar").addClass("docs-navbar")
+    $(".docs-navbar-content").removeClass("hide-content")
+    $(".main-navbar-content").addClass("hide-content")
+  } else {
+    $("#main-navbar").addClass("main-navbar")
+    $("#main-navbar").removeClass("docs-navbar")
+    $(".main-navbar-content").removeClass("hide-content")
+    $(".docs-navbar-content").addClass("hide-content")
+  }
+})
+
+
 // active nav bar link
 
 $(() => {

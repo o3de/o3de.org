@@ -174,6 +174,10 @@ code
   background-color: $o3de-black
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
 
+.docs-navbar
+  background-color: #2A4875
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+
 .navbar-collapse
   @include media-breakpoint-down(md)
     position: absolute
@@ -211,6 +215,19 @@ code
 
 .navbar-dark .navbar-nav li.active div
     background-color: #1E70EB
+    padding-bottom: 4px
+    position: absolute
+    width: 100%
+    bottom: -11px
+    
+    @include media-breakpoint-down(md)
+      display: none
+
+.docs-navbar-content .navbar-nav .nav-link.active
+    color: #94D2FF
+
+.docs-navbar-content .navbar-nav li.active div
+    background-color: #94D2FF
     padding-bottom: 4px
     position: absolute
     width: 100%
@@ -842,7 +859,7 @@ $width: '59vw';
   display: block
 
 .hide-content
-  display: none
+  display: none !important
 
 // layouts/section-nav.html 
 
