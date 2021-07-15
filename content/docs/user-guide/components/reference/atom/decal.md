@@ -12,7 +12,7 @@ The **Decal** component enables an entity to project a material onto a mesh. A l
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties
