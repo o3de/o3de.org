@@ -174,6 +174,10 @@ code
   background-color: $o3de-black
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
 
+.docs-navbar
+  background-color: #2A4875
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25))
+
 .navbar-collapse
   @include media-breakpoint-down(md)
     position: absolute
@@ -219,6 +223,19 @@ code
     @include media-breakpoint-down(md)
       display: none
 
+.docs-navbar-content .navbar-nav .nav-link.active
+    color: #94D2FF
+
+.docs-navbar-content .navbar-nav li.active div
+    background-color: #94D2FF
+    padding-bottom: 4px
+    position: absolute
+    width: 100%
+    bottom: -11px
+    
+    @include media-breakpoint-down(md)
+      display: none
+
 .navbar-logo
   max-height: 36px
   color: #FFFFFF
@@ -253,7 +270,7 @@ $width: '59vw';
   width: 100%
   
   @include media-breakpoint-down(md)
-    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1366x636.jpg')
+    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1366x636-v2.jpg')
     background-position: 80% 100%
     
     &::before
@@ -266,10 +283,10 @@ $width: '59vw';
       bottom: 0
   
   @include media-breakpoint-down(xxl)
-    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1600x500.jpg')
+    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-1600x500-v2.jpg')
 
   @include media-breakpoint-up(xxl)
-    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-3452x1080-%402x.jpg')
+    background-image: url('https://dhs-o.s3.us-east-2.amazonaws.com/images/Hero3-3452x1080-v2-%402x.jpg')
 
 .hero-inner 
   margin-bottom: 0
@@ -370,6 +387,30 @@ $width: '59vw';
   background-color: $o3de-blue
   &:hover 
     background-color: darken(#1E71EB, 10%)
+
+.download-os-button
+  color: #000000
+  background-color: #EEEEEE
+  border-radius: 0 
+  padding: 0.5rem 0
+  &:hover
+    color: #000000
+    background-color: #E8E8E8
+
+.download-os.active a.download-os-button
+  color: #000000
+  background-color: #FFFFFF
+  &:hover
+    color: #000000
+    background-color: #F8F8F8
+
+.download-os.active div
+  background-color: #1E70EB
+  padding-bottom: 3px
+
+#download-page-buttons a.disabled
+  background-color: #007bff78
+
 
 // layouts/partials/home/features.html 
 
@@ -818,7 +859,7 @@ $width: '59vw';
   display: block
 
 .hide-content
-  display: none
+  display: none !important
 
 // layouts/section-nav.html 
 
