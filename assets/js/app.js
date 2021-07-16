@@ -115,7 +115,6 @@ $(function() {
   const macOsContent = "Coming Spring 2022.";
   $(".download-os-button").click(function(event){
     event.preventDefault()
-    console.log("OS SELECTED: ", $(this).text());
     $(".download-os").removeClass("active");
     $(this).parents().addClass("active");
     if($(this).text().includes("Windows")){
