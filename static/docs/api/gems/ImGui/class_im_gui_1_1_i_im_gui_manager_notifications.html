@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Open 3D Engine ImGui Gem API Reference: ImGui::IImGuiEntityOutlinerNotifcations Class Reference</title>
+<title>Open 3D Engine ImGui Gem API Reference: ImGui::IImGuiManagerNotifications Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -41,18 +41,17 @@ $(function() {
 <div id="main-nav"></div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>ImGui</b></li><li class="navelem"><a class="el" href="class_im_gui_1_1_i_im_gui_entity_outliner_notifcations.html">IImGuiEntityOutlinerNotifcations</a></li>  </ul>
+<li class="navelem"><b>ImGui</b></li><li class="navelem"><a class="el" href="class_im_gui_1_1_i_im_gui_manager_notifications.html">IImGuiManagerNotifications</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="class_im_gui_1_1_i_im_gui_entity_outliner_notifcations-members.html">List of all members</a>  </div>
+<a href="class_im_gui_1_1_i_im_gui_manager_notifications-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ImGui::IImGuiEntityOutlinerNotifcations Class Reference</div>  </div>
+<div class="title">ImGui::IImGuiManagerNotifications Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -60,30 +59,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8144ccf58fb8dc5f084f96ab9ed74a9f"><td class="memItemLeft" align="right" valign="top"><a id="a8144ccf58fb8dc5f084f96ab9ed74a9f"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Bus</b> = AZ::EBus&lt; <a class="el" href="class_im_gui_1_1_i_im_gui_entity_outliner_notifcations.html">IImGuiEntityOutlinerNotifcations</a> &gt;</td></tr>
-<tr class="separator:a8144ccf58fb8dc5f084f96ab9ed74a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abad5693cc3bdee2a2885e9848b66d58e"><td class="memItemLeft" align="right" valign="top"><a id="abad5693cc3bdee2a2885e9848b66d58e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Bus</b> = AZ::EBus&lt; <a class="el" href="class_im_gui_1_1_i_im_gui_manager_notifications.html">IImGuiManagerNotifications</a> &gt;</td></tr>
+<tr class="separator:abad5693cc3bdee2a2885e9848b66d58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a191f8fb7bf8f2d958d84bd4e6bc3425d"><td class="memItemLeft" align="right" valign="top"><a id="a191f8fb7bf8f2d958d84bd4e6bc3425d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImGuiEntityOutlinerTarget</b> (AZ::EntityId target)</td></tr>
-<tr class="separator:a191f8fb7bf8f2d958d84bd4e6bc3425d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a4bd63fa4bac8631e503ad40604d120"><td class="memItemLeft" align="right" valign="top"><a id="a7a4bd63fa4bac8631e503ad40604d120"></a>
-static const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetUniqueName</b> ()</td></tr>
-<tr class="separator:a7a4bd63fa4bac8631e503ad40604d120"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c93fa4a568ec7b3f571c4afb8a72c2a"><td class="memItemLeft" align="right" valign="top"><a id="a9c93fa4a568ec7b3f571c4afb8a72c2a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ImGuiSetEnabled</b> ([[maybe_unused]] bool enabled)</td></tr>
+<tr class="separator:a9c93fa4a568ec7b3f571c4afb8a72c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a42a94e4f84f55065714a3f00e7d51289"><td class="memItemLeft" align="right" valign="top"><a id="a42a94e4f84f55065714a3f00e7d51289"></a>
+<tr class="memitem:a05d25021016b8809ef703b27f6026ef3"><td class="memItemLeft" align="right" valign="top"><a id="a05d25021016b8809ef703b27f6026ef3"></a>
 static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>HandlerPolicy</b> = AZ::EBusHandlerPolicy::Multiple</td></tr>
-<tr class="separator:a42a94e4f84f55065714a3f00e7d51289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5e5dc7313718450680149c808b77a1e"><td class="memItemLeft" align="right" valign="top"><a id="aa5e5dc7313718450680149c808b77a1e"></a>
+<tr class="separator:a05d25021016b8809ef703b27f6026ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a097017481bad291c2ce4da8c8ddc1c91"><td class="memItemLeft" align="right" valign="top"><a id="a097017481bad291c2ce4da8c8ddc1c91"></a>
 static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bottom"><b>AddressPolicy</b> = AZ::EBusAddressPolicy::Single</td></tr>
-<tr class="separator:aa5e5dc7313718450680149c808b77a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a097017481bad291c2ce4da8c8ddc1c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/ImGui/Code/Include/ImGuiBus.h</li>
@@ -91,7 +84,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 16:33:29 for Open 3D Engine ImGui Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 13 2021 13:29:38 for Open 3D Engine ImGui Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

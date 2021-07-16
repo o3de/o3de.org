@@ -2,7 +2,6 @@
 linkTitle: Submit a PR
 title: Submit a PR to O3DE Docs 
 description: A guide to submitting a PR to the Open 3D Engine (O3DE) documentation repository.
-
 weight: 450
 toc: true
 ---
@@ -39,7 +38,6 @@ Despite only having five steps, the PR process can take some time depending on t
 
 {{< important >}}
 **Never** merge your own PRs. PRs require two approvals, and may require an additional approval from a technical reviewer. The last reviewer to approve the PR should merge it into `o3de.org:main`.
-
 {{< /important >}}
 
 ### Commit your changes
@@ -87,7 +85,7 @@ For more information on requesting reviewers, refer to [Requesting a pull reques
 * To commit multiple suggestions, use the batch functionality to integrate multiple suggestions in a single commit.
 * Do try to acknowledge all the feedback you are given. This doesn't mean to integrate every comment and commit every suggestion. It simply means to avoid resolving comments and suggestions without action or a response. Embrace collaboration.
 * When addressing comments, maintain the relative conversation in the PR, edit the topics as necessary, and commit the changes to your fork/branch. Your new commits will be automatically added to the PR.
-* Make sure to request a re-review of your new commits if required. For more information on the PR review process, refer to the [Review PRs:](./review-prs)) topic in this guide.
+* Make sure to request a re-review of your new commits if required. More guidance on how to traverse our PR process is coming!
 
 {{< important >}}
 If you commit individual suggestions or batch commit suggestions through the GitHub PR interface, be sure to sign off on the commit by adding your sign-off to the comment. Add the string `Signed-off-by: Your Name <youralias@youremail.com>` to sign-off your commits. Check your GitHub profile email settings to ensure you use the correct email address.

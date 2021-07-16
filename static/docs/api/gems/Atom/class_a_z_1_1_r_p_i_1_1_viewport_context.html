@@ -64,6 +64,9 @@ Public Types</h2></td></tr>
 <tr class="memitem:ac015b4747a285b45bfe5719665d55e7f"><td class="memItemLeft" align="right" valign="top"><a id="ac015b4747a285b45bfe5719665d55e7f"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>SizeChangedEvent</b> = AZ::Event&lt; AzFramework::WindowSize &gt;</td></tr>
 <tr class="separator:ac015b4747a285b45bfe5719665d55e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac431abc2f359d5564c9bc018c95c82b8"><td class="memItemLeft" align="right" valign="top"><a id="ac431abc2f359d5564c9bc018c95c82b8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ScalarChangedEvent</b> = AZ::Event&lt; float &gt;</td></tr>
+<tr class="separator:ac431abc2f359d5564c9bc018c95c82b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5e76e8c155e88a49cb7bf406097238"><td class="memItemLeft" align="right" valign="top"><a id="a3d5e76e8c155e88a49cb7bf406097238"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixChangedEvent</b> = AZ::Event&lt; const AZ::Matrix4x4 &amp; &gt;</td></tr>
 <tr class="separator:a3d5e76e8c155e88a49cb7bf406097238"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,10 +121,10 @@ RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="memitem:abde37962d9f9f9bc7b9b49b1da6fed7c"><td class="memItemLeft" align="right" valign="top"><a id="abde37962d9f9f9bc7b9b49b1da6fed7c"></a>
 ConstViewPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultView</b> () const</td></tr>
 <tr class="separator:abde37962d9f9f9bc7b9b49b1da6fed7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e00f0206742e1430a3c17d057044d91"><td class="memItemLeft" align="right" valign="top"><a id="a9e00f0206742e1430a3c17d057044d91"></a>
-AzFramework::WindowSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a9e00f0206742e1430a3c17d057044d91">GetViewportSize</a> () const</td></tr>
-<tr class="memdesc:a9e00f0206742e1430a3c17d057044d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current size of the viewport. <br /></td></tr>
+<tr class="memitem:a9e00f0206742e1430a3c17d057044d91"><td class="memItemLeft" align="right" valign="top">AzFramework::WindowSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a9e00f0206742e1430a3c17d057044d91">GetViewportSize</a> () const</td></tr>
 <tr class="separator:a9e00f0206742e1430a3c17d057044d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82458ad7cdb124fdff3adb01af589202"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a82458ad7cdb124fdff3adb01af589202">GetDpiScalingFactor</a> () const</td></tr>
+<tr class="separator:a82458ad7cdb124fdff3adb01af589202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1175998abe896d7667ed3bbfb19a4253"><td class="memItemLeft" align="right" valign="top"><a id="a1175998abe896d7667ed3bbfb19a4253"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a1175998abe896d7667ed3bbfb19a4253">OnRenderPipelineAdded</a> (RenderPipelinePtr pipeline) override</td></tr>
 <tr class="memdesc:a1175998abe896d7667ed3bbfb19a4253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures our default view remains set when our scene's render pipelines are modified. <br /></td></tr>
@@ -138,8 +141,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ae017c60630bd4eb2f05f707b3569a48a">OnWindowResized</a> (uint32_t width, uint32_t height) override</td></tr>
 <tr class="memdesc:ae017c60630bd4eb2f05f707b3569a48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to fire a notification when our window resizes. <br /></td></tr>
 <tr class="separator:ae017c60630bd4eb2f05f707b3569a48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc764a81ecedc95965359d87204cdd20"><td class="memItemLeft" align="right" valign="top"><a id="acc764a81ecedc95965359d87204cdd20"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#acc764a81ecedc95965359d87204cdd20">OnDpiScaleFactorChanged</a> (float dpiScaleFactor) override</td></tr>
+<tr class="memdesc:acc764a81ecedc95965359d87204cdd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to fire a notification when our window DPI changes. <br /></td></tr>
+<tr class="separator:acc764a81ecedc95965359d87204cdd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3c78f3e793b6e8fa37079c5b655b18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#aff3c78f3e793b6e8fa37079c5b655b18">ConnectSizeChangedHandler</a> (SizeChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:aff3c78f3e793b6e8fa37079c5b655b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf2a8a5860fafd9b37fc965eaf928c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#adbf2a8a5860fafd9b37fc965eaf928c2">ConnectDpiScalingFactorChangedHandler</a> (ScalarChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="separator:adbf2a8a5860fafd9b37fc965eaf928c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae2e8e016e9c4e817eb62e47a1eda39"><td class="memItemLeft" align="right" valign="top"><a id="aeae2e8e016e9c4e817eb62e47a1eda39"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#aeae2e8e016e9c4e817eb62e47a1eda39">ConnectViewMatrixChangedHandler</a> (MatrixChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="memdesc:aeae2e8e016e9c4e817eb62e47a1eda39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the view matrix has changed. <br /></td></tr>
@@ -252,6 +261,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="adbf2a8a5860fafd9b37fc965eaf928c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf2a8a5860fafd9b37fc965eaf928c2">&#9670;&nbsp;</a></span>ConnectDpiScalingFactorChangedHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::ViewportContext::ConnectDpiScalingFactorChangedHandler </td>
+          <td>(</td>
+          <td class="paramtype">ScalarChangedEvent::Handler &amp;&#160;</td>
+          <td class="paramname"><em>handler</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Notifies consumers when the viewport DPI scaling ratio has changed. Alternatively, connect to ViewportContextNotificationsBus and listen to <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#a42b9b4bdd61f6acdd0a96d05d1391897" title="Called when the window DPI scaling changes for a given viewport context.">ViewportContextNotifications::OnViewportDpiScalingChanged</a>. </p>
+
+</div>
+</div>
 <a id="aff3c78f3e793b6e8fa37079c5b655b18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff3c78f3e793b6e8fa37079c5b655b18">&#9670;&nbsp;</a></span>ConnectSizeChangedHandler()</h2>
 
@@ -267,7 +295,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Notifies consumers when the viewport size has changed. Alternatively, connect to ViewportContextNotificationsBus and listen to <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#aa4c25640947268da92df8c458902c2c5" title="Called when the underlying native window size changes for a given viewport context name.">ViewportContextNotifications::OnViewportSizeChanged</a>. </p>
+<p>Notifies consumers when the viewport size has changed. Alternatively, connect to ViewportContextNotificationsBus and listen to <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_notifications.html#aa4c25640947268da92df8c458902c2c5" title="Called when the underlying native window size changes for a given viewport context.">ViewportContextNotifications::OnViewportSizeChanged</a>. </p>
 
 </div>
 </div>
@@ -289,6 +317,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 
 </div>
 </div>
+<a id="a82458ad7cdb124fdff3adb01af589202"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82458ad7cdb124fdff3adb01af589202">&#9670;&nbsp;</a></span>GetDpiScalingFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AZ::RPI::ViewportContext::GetDpiScalingFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the screen DPI scaling factor. This value is cached and updated on-demand, so may be efficiently queried. </p><dl class="section see"><dt>See also</dt><dd>AzFramework::WindowRequests::GetDpiScaleFactor </dd></dl>
+
+</div>
+</div>
 <a id="a4082dd661044fdd6365077cea4b6df2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4082dd661044fdd6365077cea4b6df2b">&#9670;&nbsp;</a></span>GetName()</h2>
 
@@ -304,6 +350,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
       </table>
 </div><div class="memdoc">
 <p>Gets the current name of this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>. This name is used to tie this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> to its <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> stack, and ViewportContexts may be renamed via AZ::RPI::ViewportContextRequests::Get()-&gt;RenameViewportContext(...). </p>
+
+</div>
+</div>
+<a id="a9e00f0206742e1430a3c17d057044d91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e00f0206742e1430a3c17d057044d91">&#9670;&nbsp;</a></span>GetViewportSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AzFramework::WindowSize AZ::RPI::ViewportContext::GetViewportSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the current size of the viewport. This value is cached and updated on-demand, so may be efficiently queried. </p>
 
 </div>
 </div>
@@ -350,7 +414,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 2 2021 16:33:15 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 13 2021 13:29:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
