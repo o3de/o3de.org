@@ -116,7 +116,7 @@ $(function() {
   $(".download-os-button").click(function(event){
     event.preventDefault()
     $(".download-os").removeClass("active");
-    $(this).parents().addClass("active");
+    $(this).parent().addClass("active");
     if($(this).text().includes("Windows")){
       $(".download-os-content").text(windowsContent);
       $("#download-page-buttons a").removeClass("disabled");
