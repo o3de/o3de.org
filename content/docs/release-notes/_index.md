@@ -1,5 +1,6 @@
 ---
 linkTitle: Release Notes
+menuTitle: Release Notes
 title: Release Notes for Open 3D Engine
 description: Learn about the new features, updates, and bug fixes in the current release of Open 3D Engine.
 weight: 100

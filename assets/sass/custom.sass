@@ -73,6 +73,7 @@ $o3de-white: #fff
 $o3de-lightgray: #ddd
 $o3de-blue: #1E71EB
 $o3de-darkblue: #011C46
+$o3de-docsblue: #2A4875
 $o3de-mediumblue: #054CBA
 $o3de-lightblue: #D2EDFF
 $o3de-blue-highlight: #94D2FF
@@ -180,6 +181,9 @@ code
     right: 0
     top: 62px
 
+.navbar-docs
+  background-color: $o3de-docsblue
+
 .navbar-dark .navbar-toggler
   border: 0 none
   padding: .25rem 0
@@ -189,39 +193,62 @@ code
     padding: 8px 24px
     background-color: #222
 
-
 .navbar-dark .navbar-nav .nav-link
-    color: $o3de-white
-    &:hover 
-      color: #94D2FF
+  color: $o3de-white
+  &:hover 
+    color: $o3de-blue-highlight
+
+.navbar-docs .navbar-nav .nav-link
+  text-transform: uppercase
+  &:hover 
+    color: $o3de-lightgray
 
 .navbar-dark .navbar-nav li
   display: inline-block
   position: relative
 
 .navbar-dark .navbar-nav li.active
-    &:hover 
-      .nav-link.active
-        color: #94D2FF
-      div
-        background-color: #94D2FF
+  &:hover 
+    .nav-link.active
+      color: $o3de-blue-highlight
+    div
+      background-color: $o3de-blue-highlight
+
+.navbar-dark .navbar-nav li.active
+  &:hover 
+    .nav-link.active
+      color: $o3de-lightgray
+    div
+      background-color: $o3de-lightgray
 
 .navbar-dark .navbar-nav .nav-link.active
-    color: #1E70EB
+  color: #1E70EB
+
+.navbar-docs .navbar-nav .nav-link.active
+  color: $o3de-blue-highlight
 
 .navbar-dark .navbar-nav li.active div
-    background-color: #1E70EB
-    padding-bottom: 4px
-    position: absolute
-    width: 100%
-    bottom: -11px
-    
-    @include media-breakpoint-down(md)
-      display: none
+  background-color: #1E70EB
+  padding-bottom: 4px
+  position: absolute
+  width: 100%
+  bottom: -11px
+  
+  @include media-breakpoint-down(md)
+    display: none
+      
+.navbar-docs .navbar-nav li.active div
+  background-color: $o3de-blue-highlight
 
 .navbar-logo
   max-height: 36px
   color: #FFFFFF
+
+.subTitle
+  color: $o3de-white
+  position: absolute
+  top: 17px
+  margin-left: 10px
 
 .search
   .form-control

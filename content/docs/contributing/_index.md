@@ -1,5 +1,6 @@
 ---
 linkTitle: Contribute
+menuTitle: Contribute
 title: Contributor Guide for Open 3D Engine
 description: Want to contribute to O3DE? This guide will get you started with code and documentation contributions.
 weight: 700

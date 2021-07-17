@@ -1,5 +1,6 @@
 ---
 linkTitle: Atom Renderer
+menuTitle: Atom Renderer
 title: "Atom Renderer"
 description: Learn about the Atom Renderer, a modular, multi-threaded, physically based renderer through features, tutorials, and API reference.
 weight: 400

@@ -1,5 +1,6 @@
 ---
 linkTitle: Tutorials & Examples
+menuTitle: Tutorials
 title: Open 3D Engine (O3DE) Tutorials and Examples
 description: Learn O3DE with the help of guided tutorials, samples, and recipes.
 weight: 200
