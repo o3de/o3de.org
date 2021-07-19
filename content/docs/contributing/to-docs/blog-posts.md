@@ -70,7 +70,7 @@ It's just like the [docs contribution workflow](get-started.md).
 
 {{ < note >}}
 The O3DE Community reserves the right to not publish any blog post that does not meet our standards. We also reserve the right to remove any currently published blog post that might conflict with the agreed-upon O3DE strategy or delivery.
-{{ < note >}}
+{{ < /note >}}
 
 ## What makes a good O3DE blog post?
 
@@ -86,9 +86,9 @@ Here's some basic Do's and Don'ts to help you scope your effort and avoid an obv
 
 * O3DE strategy, **if** you are actively participating in a SIG around feature or product strategy, **and** have the approval of a SIG.
 
-* Interviews with, or profiles of, important and established community members. People put a human face on a technical product, and the world reliably likes to hear what they have to say.
+* Interviews with, or profiles of, important and established community members. People put a human face on a technical product, and the world reliably likes to hear humans say they have to say. In this case, it should be professional observations, knowledge, and commentary&mdash;and shuld be specifically related to O3DE. Personal opinions, as ever, should be largely technical.
 
-* Write with strong grammar and an eye for easy readability. Rambling monologues may get a gentle request for editorial review and a number of suggestions to "tighten it up". The reader's time is precious, so compressinf your thoughts into short, information-dense sentences with regular paragraph breaks is just respectful.
+* Write with strong grammar and an eye for easy readability. Rambling monologues may get a gentle request for editorial review and a number of suggestions to "tighten it up". The reader's time is precious, so compressing your thoughts into short, information-dense sentences with regular paragraph breaks is just respectful.
 
 * Include images and diagrams wherever appropriate.
 
