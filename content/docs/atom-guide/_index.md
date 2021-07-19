@@ -6,6 +6,7 @@ description: Learn about the Atom Renderer, a modular, multi-threaded, physicall
 weight: 400
 menu_uuid: atom
 guide_img: "/images/atom-guide/guide_img.png"
+primary: true
 ---
 
 Welcome to the Atom Documentation! Atom Renderer is the graphics engine powering Open 3D Engine (O3DE). Check out the video below for a quick overview of some of Atom's features. Then, read on learn more about creating beautiful, high performance graphics with Atom!

@@ -7,6 +7,7 @@ weight: 500
 toc: true
 menu_uuid: tools
 guide_img: "/images/tools-ui/guide_img.png"
+primary: true
 ---
 
 Welcome to the Open 3D Engine (O3DE) Tools UI Developer's Guide! In this guide you will find guidelines around using the O3DE brand and UI style. Included is an introduction to component development and the custom Qt widget library for developers.

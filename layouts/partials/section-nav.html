@@ -2,15 +2,11 @@
 {{ $docsSections := where $allSections "Section" "docs" }}
 
 <form id="search"
-    action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="d-flex align-items-center justify-content-center">
-    <div class="col px-1 search-input-view hide-content">
+    action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="align-items-center justify-content-center">
+    <div class="search-input-view">
         <label hidden for="search-input">Search site</label>
-        <input type="text" id="search-input" class="form-control form-control-sm" name="query"
-        placeholder="Search site">
-    </div> 
-
-    <div class="col-3 px-1 pt-2">
-        <input type="image" src="/img/home/Search.svg" alt="submit" value="search" id="nav-search">
+        <img src="/img/home/Search_dark.svg" class="search-icon"/>
+        <input type="text" id="search-input" class="form-control form-control-sm" name="query" placeholder="Search site"/>
     </div>
 </form>
 

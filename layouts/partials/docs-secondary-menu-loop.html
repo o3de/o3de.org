@@ -3,25 +3,25 @@
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
 {{ $docsSections := where $allSections "Section" "docs" }}
 
-<ul class="mr-auto navbar-nav">
+<ul>
   {{ range $docsSections }}
     {{ range .Sections }}
       {{ $isHere := in $here .RelPermalink }}
       {{ $isPrimary := .Param "primary" }}
-      {{ if $isPrimary }}
-      <li class="
-        navbar-start 
-        navbar-item
-        {{ if $isHere }} active{{ end }}">
-        <a href="{{ .RelPermalink }}"
-        class="
-          nav-link 
+      {{ if not $isPrimary }}
+        <li class="
+          navbar-start 
           navbar-item
           {{ if $isHere }} active{{ end }}">
-          {{ .Page.Params.MenuTitle }}
-        </a>
-        <div></div>
-      </li>
+          <a href="{{ .RelPermalink }}"
+          class="
+            nav-link 
+            navbar-item
+            {{ if $isHere }} active{{ end }}">
+            {{ .Page.Params.MenuTitle }}
+          </a>
+          <div></div>
+        </li>
       {{ end }}
     {{ end }}
   {{ end }}

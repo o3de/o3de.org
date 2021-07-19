@@ -85,6 +85,12 @@ body
   font-family: $font-family-headers
   min-width: 360px
 
+.show-content
+  display: block
+
+.hide-content
+  display: none
+
 .breadcrumb 
   li
     list-style: none
@@ -259,6 +265,61 @@ code
   #nav-search
     margin-left: 5px
 
+
+// layouts/partials/navbar.html secondary
+
+.navbar-docs
+  ul
+    flex-direction: row;
+    
+    .nav-link
+      padding: 0 0.5rem
+  
+  .secondary-toggler
+    margin-left: .7rem
+
+    @include media-breakpoint-down(lg)
+      display: none
+
+.navbar-primary
+  
+  .navbar-nav li.active div
+    bottom: -19px
+    
+  @include media-breakpoint-down(lg)
+    display: none !important
+
+.navbar-dark .navbar-secondary
+  padding: 8px 0
+  background-color: #1F3557
+  position: absolute
+  right: 0
+  top: 62px
+  width: 214px
+
+  ul
+    padding: 0 0.75rem
+    margin: 0
+
+    li
+      display: block
+      
+      a
+        color: #fff
+        text-transform: uppercase
+        padding: 0.5rem
+
+      .active div
+        display: none
+
+.mobile-docs-toggler
+  .navbar-toggler-icon
+    font-size: 1.25rem
+    display: none
+    cursor: pointer
+    
+    @include media-breakpoint-down(lg)
+      display: block
 
 // layouts/partials/hero.html
 
@@ -762,7 +823,7 @@ $width: '59vw';
 
 // layouts/docs/single.html, layouts/docs/section.html 
 
-.docs-sidebar 
+.docs-sidebar
   background-color: rgba(30, 112, 235, 0.03)
   padding: 20px 10px 20px 16px
   
@@ -779,7 +840,44 @@ $width: '59vw';
     box-sizing: border-box
     flex-wrap: wrap
     overflow: auto
-  
+
+  @include media-breakpoint-down(lg)
+    position: fixed
+    display: block
+    top: 62px
+    bottom: 0
+    z-index: 100
+    width: 360px
+    max-width: 100%
+    overflow-y: auto
+    background: #F8FAFE
+    right: -360px
+    opacity: 0
+    transition: all .3s ease
+
+body.docs-mobile-menu-open .docs-sidebar
+  @include media-breakpoint-down(lg)
+    opacity: 1
+    right: 0
+
+@include media-breakpoint-down(lg)
+  .docs-mobile-menu-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0, 0, 0, .3)
+    content: ''
+    z-index: 99
+    display: none
+    transition: all .3s ease
+    opacity: 0
+
+    &.show
+      opacity: 1
+
+
 // layouts/section-nav.html 
 
 nav.docs-nav
@@ -799,7 +897,7 @@ nav.docs-nav
 
       a
         display: block
-        padding: 3px 20px 3px 3px
+        padding: 3px 20px 3px 5px
         color: #333
         &:hover
           color: $o3de-blue-highlight
@@ -838,7 +936,7 @@ nav.docs-nav
         border-color: $o3de-blue-highlight
       
       a.has-children.open::after
-        transform: rotate(45deg) translate(-2px, -2px)
+        transform: rotate(45deg) translate(-3px, -3px)
 
       ul
         display: none
@@ -853,6 +951,47 @@ nav.docs-nav
           a.has-children::after
             top: 10px
 
+// layouts/section-nav.html search
+
+.docs-sidebar form
+  padding: 0 4px 16px 0
+
+.docs-sidebar .search-input-view
+  padding: 0 !important
+  position: relative
+
+.docs-sidebar .search-input-view .search-icon
+  position: absolute
+  left: 6px
+  top: 5px
+  width: 20px
+  height: 20px
+
+.docs-sidebar .search-input-view input
+  padding-left: 30px
+
+
+// layouts/section-nav.html scrollbars
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%))
+  // For Google Chrome
+  &::-webkit-scrollbar
+    width:  $size;
+    height: $size;
+  
+  &::-webkit-scrollbar-thumb
+    background: $foreground-color
+  
+  &::-webkit-scrollbar-track
+    background: $background-color
+  
+  // For Internet Explorer
+  &
+    scrollbar-face-color: $foreground-color
+    scrollbar-track-color: $background-color
+
+.docs-sidebar
+  @include scrollbars(5px, $o3de-blue-highlight, $o3de-lightgray)
 
 // layouts/partials/footer-content.html
 

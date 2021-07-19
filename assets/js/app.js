@@ -115,7 +115,6 @@ $(function() {
   })
 });
 
-
 $(function() {
   const url = window.location.pathname;
   $("#docs-nav a").each(function(){
@@ -130,4 +129,30 @@ $(function() {
       })
     }
   })
+});
+
+$(function() {
+  $("body").append("<div id=\"docs-mobile-menu-overlay\" class=\"docs-mobile-menu-overlay\"></div>");
+
+  $("#docs-mobile-menu-overlay").click(function(){
+    $("body").removeClass("docs-mobile-menu-open");
+    $(this).removeClass("show");
+    setTimeout(function(){ $(this).hide(); }, 300);
+  });
+
+  $("#mobile-docs-toggler").click(function(){
+    var overlay = $("#docs-mobile-menu-overlay");
+    if(overlay.hasClass("show"))
+    {
+      $("body").removeClass("docs-mobile-menu-open");
+      overlay.removeClass("show");
+      setTimeout(function(){ overlay.hide(); }, 300);
+    }
+    else
+    {
+      $("body").addClass("docs-mobile-menu-open");
+      overlay.show();
+      setTimeout(function(){ overlay.addClass("show"); }, 10);
+    }
+  });
 });

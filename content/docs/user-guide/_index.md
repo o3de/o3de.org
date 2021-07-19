@@ -7,6 +7,7 @@ weight: 300
 toc: true
 menu_uuid: user
 guide_img: "/images/user-guide/guide_img.png"
+primary: true
 ---
 
 {{< preview-new >}}

@@ -6,6 +6,7 @@ description: Want to contribute to O3DE? This guide will get you started with co
 weight: 700
 menu_uuid: contributing
 guide_img: "/images/contributing/guide_img.png"
+primary: false
 ---
 
 Have you ever wanted to contribute to an open-source 3D development engine?
