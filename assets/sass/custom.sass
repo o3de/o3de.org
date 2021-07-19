@@ -763,22 +763,11 @@ $width: '59vw';
 // layouts/docs/single.html, layouts/docs/section.html 
 
 .docs-sidebar 
-  background-color: rgba(30, 112, 235, 0.03)  
+  background-color: rgba(30, 112, 235, 0.03)
+  padding: 20px 10px 20px 16px
   
   @include media-breakpoint-down(lg)
-    max-width: 240px
-
-  .fa-chevron-right
-    display: none
-
-  .fa-chevron-down
-    display: none
-  
-  .section-nav-subsection
-    padding-top: 5px
-
-  .section-nav
-    padding-top: 16px
+    max-width: 280px
 
   @include media-breakpoint-up(xl)
     position: sticky
@@ -791,96 +780,79 @@ $width: '59vw';
     flex-wrap: wrap
     overflow: auto
   
-  .card-body
-    padding: 10px 0 10px 10px
-
-  .card-header
-    background: transparent
-    border: 0 none
-    padding: 0 1rem
-
-    &show
-      color: $o3de-blue
-
-    .btn-link
-      color: $o3de-black
-
-      &:focus
-        text-decoration: none
-        box-shadow: none
-        color: $o3de-black
-        
-      &:hover
-        color: $o3de-blue
-        text-decoration: none
-        box-shadow: none
-
-  .menu-body
-    padding-left: 20px
-
-  .section-nav-link
-    padding: 0 8px
-    margin: 0 10px
-    display: inline-block
-    color: $o3de-black
-    font-weight: normal
-
-    &:hover
-      color: $o3de-blue
-
-  .currentPage
-    background-color: rgba(221, 221, 221, 0.3)
-    color: $o3de-blue
-  
-  .card
-    background: transparent
-    border: 0 none
-    box-shadow: none
-
-.accordion
-  .btn-link
-    font-weight: 600
-    
-.show-content
-  display: block
-
-.hide-content
-  display: none
-
 // layouts/section-nav.html 
 
-nav 
+nav.docs-nav
   ul 
     list-style: none
     padding-left: 0
     margin-bottom: 0rem
     font-size: 1rem
+    
+    &.currentAncestor
+      display: block
+
     li 
-      padding-bottom: 0.2rem
-      margin-bottom: 0.3rem
-      font-weight: bold
+      padding: 2px 0
+      font-weight: 600
+      position: relative
+
+      a
+        display: block
+        padding: 3px 20px 3px 3px
+        color: #333
+        &:hover
+          color: $o3de-blue-highlight
+      
+      a.currentPage:not(.has-children)
+        background: rgba(221, 221, 221, .3)
+        border-radius: 3px
+        color: $o3de-blue
+        font-weight: 600
+        &:hover
+          color: $o3de-blue-highlight
+      
+      a.currentAncestor
+        font-weight: 600
+        color: $o3de-blue
+        &:hover
+          color: $o3de-blue-highlight
+
+      a.has-children::after
+        content: ''
+        width: 10px
+        height: 10px
+        position: absolute
+        right: 8px
+        top: 13px
+        transition: transform .5s ease
+        transform: rotate(-45deg)
+        border: 2px solid #333
+        border-left: 0
+        border-top: 0
+        
+      a.currentAncestor.has-children::after
+        border-color: $o3de-blue
+
+      a.has-children:hover::after
+        border-color: $o3de-blue-highlight
+      
+      a.has-children.open::after
+        transform: rotate(45deg) translate(-2px, -2px)
+
       ul
+        display: none
         padding-bottom: 0rem
-        margin-left: 1rem
+        margin-left: 10px
         font-size: 0.9rem
         li 
           border-bottom: none
           margin-bottom: 0rem
           font-weight: normal
+          
+          a.has-children::after
+            top: 10px
 
-.currentPage
-  font-weight: bold
-  background-color: $o3de-lightblue
-  padding: 0.1rem
-  border-radius: 5px
-  
-#docs-nav-title
-  background-color: transparent
-  padding: 0rem
-  h1
-    font-size: 1.2rem
-    margin-top: 0
-    margin-bottom: 0
 
 // layouts/partials/footer-content.html
 

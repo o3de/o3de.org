@@ -1,0 +1,20 @@
+{{ $here   := .RelPermalink }}
+
+    {{ range .Pages }}
+        {{ $isHere := in $here .RelPermalink }}
+        <li>
+            <a href="{{ .RelPermalink }}"
+            class="docs-link{{ if .Pages }} has-children{{ end }}">
+            {{ .LinkTitle }}</a>
+            {{ if .Pages }}
+                <ul>
+                    <li>
+                        <a href="{{ .RelPermalink }}"
+                        class="docs-link">
+                        {{ .LinkTitle }}</a>
+                    </li>
+                    {{ partial "section-nav-walk.html" . }}
+                </ul>
+            {{ end }}
+        </li>
+    {{ end }}

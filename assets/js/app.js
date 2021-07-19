@@ -10,8 +10,6 @@ const navbarBurger = () => {
 }
 
 $(() => {
-  // console.log("Welcome to the CNCF's Hugo + Netlify starter");
-
   navbarBurger();
 });
 
@@ -36,14 +34,10 @@ $(() => {
 $(() => {
   $("#search").click(function(event){
     event.preventDefault();
-    console.log("SEARCH ICON CLICKED");
     $(".search-input-view").show();
 
     let data =  $('#search-input').val()
-    console.log("DATA FROM SEARCH INPUT: ", data, "    data length: ", data.length, "    data length check: ", data.length>0);
     if (data.length > 0) {
-      console.log("IN IF CASE");
-    
       const idx = lunr(function () {
         this.ref('id')
         this.field('title', {
@@ -72,32 +66,9 @@ $(() => {
   })
 });
 
-
-//active links on docs 
-
-$(function() {
-  const url = window.location.href;
-  $("#accordionExample .card a").each(function(){
-       if($(this).attr("href") == url || $(this).attr("href") == '' ) {
-        $(this).addClass("currentPage");
-        $(this).parents().addClass("currentLi");
-        $(this).closest(".card-body").parent().addClass("show");
-       }
-  })
-  $('.currentLi').children().addClass("show");
-  $('.currentLi').children('i').removeClass("fa-chevron-right");
-  $('.currentLi').children('i').addClass("fa-chevron-down");
-
-  $('.docs-sidebar').animate({
-    //scrollTop: ($('.currentPage').first().offset().top - 75)
-  },500);
-});
-
-
 // parse user agent on downloads page
 
 $(function() {
-  console.log($.ua.os.name); 
   const ua = $.ua.os.name;
   $("#download-page-buttons a").each(function(){
     if($(this).data('os') == ua) {
@@ -109,7 +80,6 @@ $(function() {
 
 
 // Search 
-
 
 function displayResults (results, store) {
   const resultsContainer = document.getElementById('search-results')
@@ -132,37 +102,32 @@ function displayResults (results, store) {
   mainContainer.style.display = "none"
 }
 
-// Get the query parameter(s)
-// const params = new URLSearchParams(window.location.search)
-// const query = params.get('query')
+// Docs navigation
 
-// Perform a search if there is a query
-// if (query) {
-//   // Retain the search input in the form when displaying results
-//   document.getElementById('search-input').setAttribute('value', query)
+$(function() {
+  $("#docs-nav a.has-children").click(function(e){
+    e.preventDefault();
+    $(this).toggleClass("open");
+    $(this).siblings('ul').each(function()
+    {
+      $(this).slideToggle(300);
+    });
+  })
+});
 
-//   const idx = lunr(function () {
-//     this.ref('id')
-//     this.field('title', {
-//       boost: 15
-//     })
-//     this.field('tags')
-//     this.field('content', {
-//       boost: 10
-//     })
 
-//     for (const key in window.store) {
-//       this.add({
-//         id: key,
-//         title: window.store[key].title,
-//         tags: window.store[key].category,
-//         content: window.store[key].content
-//       })
-//     }
-//   })
-
-//   // Perform the search
-//   const results = idx.search(query)
-//   // Update the list with results
-//   displayResults(results, window.store)
-// }
+$(function() {
+  const url = window.location.pathname;
+  $("#docs-nav a").each(function(){
+    if($(this).attr("href") == url) {
+      $(this).addClass("currentPage");
+      $(this).parentsUntil("#docs-nav", "ul").each(function(){
+        $(this).addClass("currentAncestor");
+        $(this).siblings('a').each(function()
+        {
+          $(this).addClass("currentAncestor").addClass("open");
+        });
+      })
+    }
+  })
+});
