@@ -176,7 +176,7 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
     hugo server --port 44541 --bind=0.0.0.0
     ```
 
-    If you are using a **macOS** platform for docs development, you must run Hugo Netlify with the `--watch=false` switch enabled. For example:
+    **NOTE**: If you are using a **macOS** platform for docs development, you must run Hugo Netlify with the `--watch=false` switch enabled. For example:
 
     ```macos
     hugo server --port 44541 --bind=0.0.0.0 --watch=false
