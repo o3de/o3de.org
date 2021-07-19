@@ -59,10 +59,6 @@ Testing steps and instructions really depend on your own project, but please mak
 
 You can also verify interactions and logs with GameLift Local tool. Read more in the AWS Amazon GameLift documentation, [Test a Game Server and Client](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-client).
 
-  
-
-  
-
-Previous Topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)
-
-Next Topic: [AWS GameLift Build Packaging for Windows](build-build-packaging-for-windows/)
+---
+Previous topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)  
+Next topic: [AWS GameLift Gem Build Packaging for Windows](build-build-packaging-for-windows/)
