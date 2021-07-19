@@ -18,10 +18,11 @@ The instructions here and in the video will guide you through the following step
 
 ## Prerequisites
 
-The instructions that follow assume you have the following:
+The instructions here assume you have the following:
 
 * [Git client](https://git-scm.com/downloads) installed (1.8.2 or later required, 2.23.4 or later recommended).
 * Met all hardware and software requirements listed in [System Requirements](./requirements).
+* Configured the required software as described in [Software Configuration](./requirements#software-configuration).
 
 ## Configure credentials for Git LFS
 

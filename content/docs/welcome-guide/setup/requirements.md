@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections.
+Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections. In addition, some of the software requires specific configurations, as detailed in the last section.
 
 ## Hardware requirements
 
@@ -42,6 +42,8 @@ See the following sections for additional configuration instructions.
 {{< note >}}
 Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
 {{< /note >}}
+
+## Software configuration
 
 ### CMake configuration
 
