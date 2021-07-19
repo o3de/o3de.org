@@ -22,23 +22,24 @@ To deploy the CDK application, you must have the following:
 
 ## Setup
 
-To set up a virtual environment and available environment variables, refer to AWS GameLift Gem's README located at `/Gems/AWSGameLift/cdk/README.md`.
+To learn how to set up a virtual environment and available environment variables, refer to the AWS GameLift Gem's README located at `/Gems/AWSGameLift/cdk/README.md`.
 
-## Prepare Server Package
+## Prepare a server package
 
-Prepare a server package that can be uploaded to GameLift. For more information, read [AWS GameLift Build Packaging for Windows](build-build-packaging-for-windows.md).
+Prepare a server package that you can upload to GameLift. For more information, refer to [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/).
 
-## Update Fleet Configuration
+## Update the fleet configuration
 
-Before deploying the CDK application, you must update the fleet configuration defined at `/Gems/AWSGameLift/cdk/aws_gamelift/fleet_configurations.py`.
+Before deploying the AWS CDK application, you must update the fleet configuration defined at `/Gems/AWSGameLift/cdk/aws_gamelift/fleet_configurations.py`.
 
-You can find descriptions for each field in the code comments or in the [Amazon GameLift resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_GameLift.html) page in the AWS CloudFormation documentation.
+You can find descriptions for each field in the code comments or in the [Amazon GameLift resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_GameLift.html) in the AWS CloudFormation User Guide.
 
-For best practices on configuring GameLift fleets to suit your application, read the [Amazon GameLift fleet design guide](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-design.htm). 
+For best practices on configuring GameLift fleets to suit your application, refer to the [GameLift fleet design guide](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-design.html) in the Amazon GameLift Developer Guide.
 
-### Fleet Alias
 
-You have the option to define an alias for each Amazon GameLift fleet destination, which makes it easier to switch player traffic from one fleet to another.
+### Fleet alias
+
+To more easily switch player traffic from one fleet to another, you can define an alias for each GameLift fleet destination.
 
 To define a fleet alias, add the following block inside the configuration for a fleet:
 ```bash
@@ -64,10 +65,10 @@ To define a fleet alias, add the following block inside the configuration for a 
 ```
 
 
-### GameLift Build
+### GameLift build
 
 To create a fleet, you can provide one of the following in the fleet configuration:
-- An existing GameLift build id
+- An existing GameLift build ID
 - A path to a zipped local server package
 
 ##### Use an Existing GameLift Build
@@ -100,12 +101,12 @@ To upload a zipped server package from disk and create a GameLift build automati
 ```
 
 {{< caution >}}
-If you are deploying your server to an Amazon Linux instance, you must specify `AMAZON_LINUX_2` as the operating system. 
+If you're deploying your server to an Amazon Linux 2 instance, you must specify `AMAZON_LINUX_2` as the operating system.
 {{< /caution >}}
 
-### Runtime Configuration
+### Runtime configuration
 
-You can set up the fleet's runtime configuration to run multiple game server processes per instance. The [AWS GameLift Gem Advanced Topics](advanced-topics/) page goes over the benefits of this setup and the launch parameters required to support a unique log path for each server process. 
+To run multiple game server processes per instance, you can set up the fleet's runtime configuration. The [AWS GameLift Gem Advanced Topics](advanced-topics/) page covers the benefits of this setup, as well as the launch parameters required to support a unique log path for each server process.
 
 The following example runs two Windows server processes on the fleet and writes log files to different subfolders under `C:\game`:
 
@@ -139,29 +140,32 @@ The following example runs two Windows server processes on the fleet and writes 
 ]
 ```
 
-## Navigate to CDK Application Folder
+## Navigate to the AWS CDK application folder
 
-To set up the Python environment and deploy the CDK application, open a command line window and navigate to the cdk folder of the AWS GameLift Gem. 
+To set up the Python environment and deploy the AWS CDK application, open a command line window and navigate to the `cdk` folder of the AWS GameLift Gem.
 
 ```cmd
 $ cd o3de\Gems\AWSGameLift\cdk
 ```
 
-## Synthesize Stacks
 
-To create an AWS CloudFormation template after updating the fleet configuration, you must synthesize the stack(s) defined in the CDK application. The synthesis step catches logical errors in defining AWS resources.
+## Synthesize stacks
 
-### Use an Existing GameLift Build
+To create an AWS CloudFormation template after updating the fleet configuration, you must synthesize the stack(s) defined in the AWS CDK application. The synthesis step catches logical errors in defining AWS resources.
 
-If an existing GameLift build id is provided in the fleet configuration file, you can synthesize the stack(s) by running the following CLI command under the CDK application root folder:
+
+### Use an existing GameLift build
+
+If there is an existing GameLift build ID in the fleet configuration file, you can synthesize the stack(s) by running the following CLI command under the AWS CDK application root folder:
 
 ```cmd
 $ cdk synth
 ```
 
-### Enable Optional Features
 
-If you need the CDK application to upload a local package and create a GameLift build accordingly, you must enable the `upload-with-support-stack` context variable as below:
+### Enable optional features
+
+If you need the AWS CDK application to upload a local package and create a GameLift build accordingly, you must enable the `upload-with-support-stack` context variable:
 
 ```cmd
 $ cdk synth -c upload-with-support-stack=true --all
@@ -175,19 +179,21 @@ Optionally, you can create a game session queue resource using this CDK applicat
 $ cdk synth -c upload-with-support-stack=true -c create_game_session_queue=true --all
 ```
 
-## Deploy AWS Resources
 
-### Deploy with an Existing GameLift Build
+## Deploy AWS resources
 
-If you provide an existing GameLift build id in the fleet configuration file, you can deploy the CDK application, which defines all of the AWS resources. To deploy the CDK application, run the following CLI command under the CDK application root folder:
+### Deploy with an existing GameLift build
+
+If you provide an existing GameLift build ID in the fleet configuration file, you can deploy the AWS CDK application, which defines all of the AWS resources. To deploy the CDK application, run the following CLI command under the application root folder:
 
 ```cmd
 $ cdk deploy
 ```
 
-### Deploy Optional Features
 
-Similar to using the `synth` command, if you want the CDK application to upload a local package and create a GameLift build automatically, you must provide the context variables `create_game_session_queue` and `--all`:
+### Deploy optional features
+
+Similar to using the `synth` command, if you want the AWS CDK application to upload a local package and create a GameLift build automatically, you must provide the context variables `create_game_session_queue` and `--all`:
 
 ```cmd
 $ cdk deploy -c upload-with-support-stack=true --all
@@ -199,13 +205,15 @@ To deploy a game session queue resource using this CDK application, you must pro
 $ cdk deploy -c upload-with-support-stack=true -c create_game_session_queue=true --all
 ```
 
-## Update CDK Application
 
-To update the existing CDK application re-run the exact same commands you used to synthesize and deploy the application.
+## Update the AWS CDK application
 
-## Destroy CDK Application
+To update the existing AWS CDK application, re-run the same commands that you used to synthesize and deploy the application.
 
-To destroy all of the AWS resources deployed by the CDK application which uses an existing GameLift build, run the following CLI command:
+
+## Destroy the AWS CDK application
+
+To destroy all of the AWS resources that the AWS CDK application (which uses an existing GameLift build) deployed, run the following CLI command:
 
 ```cmd
 $ cdk destroy

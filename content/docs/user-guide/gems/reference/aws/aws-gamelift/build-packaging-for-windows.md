@@ -1,6 +1,6 @@
 ---
 linkTitle: Build Packaging for Windows
-title: AWS GameLift Build Packaging for Windows
+title: AWS GameLift Gem Build Packaging for Windows
 description: "Learn how to package your dedicated server builds with the AWS GameLift Gem in O3DE"
 toc: true
 weight: 400
@@ -57,10 +57,10 @@ To test the local server package:
 
 
 {{< caution >}}  
-Make sure you replace `<package base folder>` with the path to the installation folder you created earlier.  
+Make sure to replace `<package base folder>` with the path to the installation folder that you created earlier. 
 {{< /caution >}}
 
 
-Previous Topic: [AWS GameLift Gem Local Testing](local-testing/)
-
+---
+Previous Topic: [AWS GameLift Gem Local Testing](local-testing/)  
 Next Topic: [AWS GameLift Resource Management](resource-management/)
