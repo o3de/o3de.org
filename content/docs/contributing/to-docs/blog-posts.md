@@ -68,9 +68,9 @@ It's just like the [docs contribution workflow](get-started.md).
 
 9. Go into the O3DE Discord server and share your pull request for review. (Alternatively, mail the sig-docs-community mailing list with a link.) Someone will review it and provide feedback or an okay. A maintainer will merge it when at least one reviewer approves it.
 
-{{ < note >}}
+{{< note >}}
 The O3DE Community reserves the right to not publish any blog post that does not meet our standards. We also reserve the right to remove any currently published blog post that might conflict with the agreed-upon O3DE strategy or delivery.
-{{ < /note >}}
+{{< /note >}}
 
 ## What makes a good O3DE blog post?
 
