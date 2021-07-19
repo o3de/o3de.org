@@ -77,7 +77,7 @@ For more information on working with forks, refer to [Working with forks](https:
 1. Set the upstream for your clone to the main O3DE docs repo.
 
     ```shell
-    git remote add upstream git@github.com:o3de/o3de.org.git
+    git remote add upstream https://github.com/o3de/o3de.org
     ```
 
 1. Disallow pushing to the main O3DE docs repo from your clone.
@@ -174,6 +174,12 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
 
     ```shell
     hugo server --port 44541 --bind=0.0.0.0
+    ```
+
+    If you are using a **macOS** platform for docs development, you must run Hugo Netlify with the `--watch=false` switch enabled. For example:
+
+    ```macos
+    hugo server --port 44541 --bind=0.0.0.0 --watch=false
     ```
 
 ## Create a branch
