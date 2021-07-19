@@ -56,7 +56,7 @@
 //@import "bootstrap/scss/modal" 
 //@import "bootstrap/scss/tooltip" 
 //@import "bootstrap/scss/popover" 
-//@import "bootstrap/scss/carousel" 
+@import "bootstrap/scss/carousel" 
 //@import "bootstrap/scss/spinners" 
 @import "bootstrap/scss/utilities" 
 //@import "bootstrap/scss/print" 
@@ -477,25 +477,49 @@ $width: '59vw';
   img
     margin: 0 12px
     padding: 8px 0
-    height: 80px
+    height: 90px
     width: auto
     @include media-breakpoint-down(xs)
       width: 100%
 
   .aws-logo
-    padding: 12px 0 4px
+    padding: 12px 4px 4px 0
 
   .intel-logo
-    height: 68px
+    height: 78px
     padding: 14px 0
   
   .niantic-logo
-    height: 86px;
+    height: 96px;
     padding: 5px 0
 
   .huawei-logo
-    height: 60px;
+    height: 70px;
+  
+  .huawei-logo
+    height: 70px;
 
+
+// layouts/partials/home/partners.html carousel
+
+.btn.carousel-btn
+  font-size: 0.5rem
+
+.btn.carousel-btn.active
+  .fas.fa-circle
+    color: #EEEEEE
+    border: 2px solid #1E70EB !important
+    border-radius: 0.5rem !important;
+
+.partner-carousel
+  .carousel-inner
+    width: 100%
+    max-width: 1080px
+    height: 220px
+    text-align: center;
+  
+  .partner-denomination
+    font-weight: 600
 
 //layouts/partials/home/get-started.html
 
