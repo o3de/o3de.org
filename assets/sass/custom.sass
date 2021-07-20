@@ -78,6 +78,56 @@ $o3de-lightblue: #D2EDFF
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
 
+// layouts/section-nav.html typography
+
+.docs-layout
+  h1
+    font-size: 40px
+    font-weight: 600
+    line-height: 48px
+    margin: 36px 0 12px
+
+  h2
+    font-weight: 600
+    font-size: 32px
+    line-height: 36px
+    margin: 42px 0 8px
+
+  h2::before
+    content: ''
+    display: block
+    width: 100%
+    border-bottom: 1px solid $o3de-lightgray
+    margin: 0 auto 64px
+
+  h2
+    a
+      opacity: 0
+      transition: opacity .3s ease
+
+  h2:hover
+    a
+      opacity: 1
+
+  h3
+    font-weight: 400
+    font-size: 24px
+    line-height: 36px
+    margin: 48px 0 8px
+
+  p
+    font-size: 16px
+    line-height: 28px
+    font-weight: 400
+    margin: 0 0 12px
+
+  ul
+    li
+      line-height: 32px
+
+      p
+        margin: 0 0 8px       
+
 // General 
 
 body
@@ -109,11 +159,7 @@ body
   img 
     @extend .img-fluid
 
-h1, h2, h3, h4, h5, h6 
   font-family: $font-family-headers
-  scroll-margin-top: 5rem
-  margin-top: 1.8rem
-
 a 
   color: $o3de-mediumblue
   &:hover, &:active 
