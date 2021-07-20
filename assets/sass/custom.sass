@@ -56,7 +56,7 @@
 //@import "bootstrap/scss/modal" 
 //@import "bootstrap/scss/tooltip" 
 //@import "bootstrap/scss/popover" 
-//@import "bootstrap/scss/carousel" 
+@import "bootstrap/scss/carousel" 
 //@import "bootstrap/scss/spinners" 
 @import "bootstrap/scss/utilities" 
 //@import "bootstrap/scss/print" 
@@ -78,6 +78,77 @@ $o3de-mediumblue: #054CBA
 $o3de-lightblue: #D2EDFF
 $o3de-blue-highlight: #94D2FF
 $o3de-green: #58BD61
+
+// layouts/section-nav.html typography
+
+.docs-content
+  h1
+    font-size: 40px
+    font-weight: 600
+    line-height: 48px
+    margin: 36px 0 12px
+    
+    @include media-breakpoint-down(sm)
+      font-size: 32px
+      line-height: 40px
+
+  h2
+    font-weight: 600
+    font-size: 32px
+    line-height: 36px
+    margin: 42px 0 8px
+    
+    @include media-breakpoint-down(sm)
+      font-size: 26px
+      line-height: 34px
+
+  h2::before
+    content: ''
+    display: block
+    width: 100%
+    border-bottom: 1px solid $o3de-lightgray
+    margin: 0 auto 64px
+
+  h2
+    a
+      opacity: 0
+      transition: opacity .3s ease
+
+  h2:hover
+    a
+      opacity: 1
+
+  h3
+    font-weight: 400
+    font-size: 24px
+    line-height: 36px
+    margin: 48px 0 8px
+    
+    @include media-breakpoint-down(sm)
+      font-size: 22px
+      line-height: 32px
+    
+  h3
+    a
+      opacity: 0
+      transition: opacity .3s ease
+
+  h3:hover
+    a
+      opacity: 1
+
+  p
+    font-size: 16px
+    line-height: 28px
+    font-weight: 400
+    margin: 0 0 12px
+
+  ul
+    li
+      line-height: 32px
+
+      p
+        margin: 0 0 8px       
 
 // General 
 
@@ -116,11 +187,7 @@ body
   img 
     @extend .img-fluid
 
-h1, h2, h3, h4, h5, h6 
   font-family: $font-family-headers
-  scroll-margin-top: 5rem
-  margin-top: 1.8rem
-
 a 
   color: $o3de-mediumblue
   &:hover, &:active 
@@ -559,31 +626,140 @@ $width: '59vw';
 
 .partners-logos-view
   padding: 16px 0
-  @include media-breakpoint-down(md)
-    max-width: 360px
 
-  img
-    margin: 0 12px
+  .partner-logo
+    margin: 0 16px
     padding: 8px 0
-    height: 80px
-    width: auto
+    height: 90px
+    width: 180px
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    display: inline-block
+    position: relative
+
     @include media-breakpoint-down(xs)
-      width: 100%
+      display: block
+      margin: 0 auto !important
+
+  .adobe-logo
+    background-image: url('/img/logos/partnerLogos/adobe.svg')
+    width: 200px
 
   .aws-logo
-    padding: 12px 0 4px
-
-  .intel-logo
-    height: 68px
-    padding: 14px 0
-  
-  .niantic-logo
-    height: 86px;
-    padding: 5px 0
+    background-image: url('/img/logos/partnerLogos/aws.svg')
+    width: 96px
+    margin-right: 24px
 
   .huawei-logo
-    height: 60px;
+    background-image: url('/img/logos/partnerLogos/huawei.svg')
 
+  .intel-logo
+    background-image: url('/img/logos/partnerLogos/intel.svg')
+    width: 110px
+  
+  .niantic-logo
+    background-image: url('/img/logos/partnerLogos/niantic.svg')
+    width: 140px
+
+
+  .accelbyte-logo
+    background-image: url('/img/logos/partnerLogos/accelbyte.svg')
+
+  .apocalypse-studios-logo
+    background-image: url('/img/logos/partnerLogos/apocalypse-studios.svg')
+
+  .audiokinetic-logo
+    background-image: url('/img/logos/partnerLogos/audiokinetic.svg')
+
+  .backtrace-logo
+    background-image: url('/img/logos/partnerLogos/backtrace.svg')
+
+  .carbonated-logo
+    background-image: url('/img/logos/partnerLogos/carbonated.svg')
+    width: 96px
+
+  .futurewei-logo
+    background-image: url('/img/logos/partnerLogos/futurewei.svg')
+
+  .gamepoch-logo
+    background-image: url('/img/logos/partnerLogos/gamepoch.svg')
+    
+  .genvid-logo
+    background-image: url('/img/logos/partnerLogos/genvid.svg')
+
+  .hadean-logo
+    background-image: url('/img/logos/partnerLogos/hadean.svg')
+
+  .here-logo
+    background-image: url('/img/logos/partnerLogos/here.svg')
+
+  .kitbash3D-logo
+    background-image: url('/img/logos/partnerLogos/kitbash3D.svg')
+
+  .kythera-ai-logo
+    background-image: url('/img/logos/partnerLogos/kythera-ai.svg')
+
+  .popcorn-fx-logo
+    background-image: url('/img/logos/partnerLogos/popcorn-fx.svg')
+    width: 128px
+
+  .red-hat-logo
+    background-image: url('/img/logos/partnerLogos/red-hat.svg')
+
+  .side-fx-logo
+    background-image: url('/img/logos/partnerLogos/side-fx.svg')
+
+  .tafi-logo
+    background-image: url('/img/logos/partnerLogos/tafi.svg')
+    width: 96px
+    margin-right: 32px
+
+  .tlm-partners-logo
+    background-image: url('/img/logos/partnerLogos/tlm-partners.svg')
+    width: 96px
+
+  .igda-logo
+    background-image: url('/img/logos/partnerLogos/igda.svg')
+    width: 120px
+
+  .open-robotics-logo
+    background-image: url('/img/logos/partnerLogos/open-robotics.svg')
+
+  .rit-logo
+    background-image: url('/img/logos/partnerLogos/rit.svg')
+    width: 96px
+
+// layouts/partials/home/partners.html carousel
+
+.btn.carousel-btn
+  font-size: 0.5rem
+
+.btn.carousel-btn.active
+  .fas.fa-circle
+    color: #EEEEEE
+    border: 2px solid #1E70EB !important
+    border-radius: 0.5rem !important;
+
+.partner-carousel
+  .carousel-inner
+    width: 100%
+    max-width: 1080px
+    height: 220px
+    text-align: center;
+    
+    @include media-breakpoint-down(lg)
+      height: 320px
+    
+    @include media-breakpoint-down(sm)
+      height: 420px
+    
+    @include media-breakpoint-down(xs)
+      height: 650px
+
+  
+  .partner-denomination
+    font-weight: 600
 
 //layouts/partials/home/get-started.html
 
