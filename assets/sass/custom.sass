@@ -86,12 +86,20 @@ $o3de-green: #58BD61
     font-weight: 600
     line-height: 48px
     margin: 36px 0 12px
+    
+    @include media-breakpoint-down(sm)
+      font-size: 32px
+      line-height: 40px
 
   h2
     font-weight: 600
     font-size: 32px
     line-height: 36px
     margin: 42px 0 8px
+    
+    @include media-breakpoint-down(sm)
+      font-size: 26px
+      line-height: 34px
 
   h2::before
     content: ''
@@ -114,6 +122,19 @@ $o3de-green: #58BD61
     font-size: 24px
     line-height: 36px
     margin: 48px 0 8px
+    
+    @include media-breakpoint-down(sm)
+      font-size: 22px
+      line-height: 32px
+    
+  h3
+    a
+      opacity: 0
+      transition: opacity .3s ease
+
+  h3:hover
+    a
+      opacity: 1
 
   p
     font-size: 16px
