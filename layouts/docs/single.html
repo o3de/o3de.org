@@ -16,11 +16,9 @@
             <hr class="mt-5" />   
             {{ partial "footer-content.html" . }}
           </div>
-            {{ if eq ($.Param "toc") true }}
-              <div class="col-12 col-xl-2 pt-5 order-2 order-xl-3">
-                {{ partial "docs/docs-nav.html" . }}
-              </div>
-          {{ end }}
+          <div class="col-12 col-xl-2 pt-5 order-2 order-xl-3">
+            {{ partial "docs/docs-nav.html" . }}
+          </div>
         </div>
       </section>
     </section>
