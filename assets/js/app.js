@@ -80,6 +80,29 @@ $(function() {
   })
 });
 
+// download page os buttons
+
+$(function() {
+  const contentAvailable = "Fork the O3DE source and build the engine and tools directly from any branch. For more details, read the documentation.";
+  const contentUnavailable = "Coming soon.";
+  $(".download-os-button").click(function(event){
+    event.preventDefault()
+    
+    $(".download-os").removeClass("active");
+    $(this).parent().addClass("active");
+
+    if($(this).text().includes("Windows")){
+      $(".download-os-content").text(contentAvailable);
+      $("#download-page-buttons a").removeClass("disabled");
+      $("#download-page-buttons a").attr('href', 'https://github.com/o3de/o3de');
+    } else {
+      $(".download-os-content").text(contentUnavailable);
+      $("#download-page-buttons a").addClass("disabled");
+      $("#download-page-buttons a").removeAttr('href');
+    }
+  })
+});
+
 
 // Search 
 
