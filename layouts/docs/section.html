@@ -16,9 +16,11 @@
             <hr class="mt-5" />   
             {{ partial "footer-content.html" . }}
           </div>
-          <div class="col-12 col-xl-2 pt-5 order-2 order-xl-3">
-            {{ partial "docs/docs-nav.html" . }}
-          </div>
+          {{ if and (ge (len .TableOfContents) 100) (ne .Params.toc "false") }}
+            <div class="col-12 col-xl-2 pt-5 order-2 order-xl-3">
+              {{ partial "docs/docs-nav.html" . }}
+            </div>
+          {{ end }}
         </div>
       </section>
     </section>

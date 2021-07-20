@@ -32,7 +32,7 @@ $(() => {
 // nav bar search
 
 $(() => {
-  $("#search").click(function(event){
+  $("#search").submit(function(event){
     event.preventDefault();
     $(".search-input-view").show();
 
@@ -60,6 +60,8 @@ $(() => {
     
       // Perform the search
       const results = idx.search(data)
+      // Update the search title
+      $('#search-title').append('"' + data + '"')
       // Update the list with results
       displayResults(results, window.store)
     }
@@ -85,6 +87,7 @@ function displayResults (results, store) {
   const resultsContainer = document.getElementById('search-results')
   const mainContainer = document.getElementById('primary')
   const searchResults = document.getElementById('results')
+  
   if (results.length) {
     let resultList = ''
     // Iterate and build result list elements
