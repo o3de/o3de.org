@@ -11,14 +11,14 @@ The AWS GameLift Gem provides a sample CDK application that can be used to model
 *   A list of [GameLift fleets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-fleet.html) to host game servers.
 *   (Optional) A list of [GameLift builds](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-build.html) used for GameLift fleet generation.
 *   (Optional) An [Alias](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-alias.html) for each GameLift fleet destination.
-*   (Optional) A [game session queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html) that processes requests for new game sessions. Queues are recommend as the primary mechanism to place game sessions. For more information, read the [Amazon GameLift Queues Intro](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-intro.html) documentation.
+*   (Optional) A [game session queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-gamelift-gamesessionqueue.html) that processes requests for new game sessions. Queues are recommend as the primary mechanism to place game sessions. For more information, refer to the [Amazon GameLift Queues Intro](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-intro.html) documentation.
 
 ## Prerequisites
 
 To deploy the CDK application, you must have the following:
 
 - [AWS CLI](https://aws.amazon.com/cli/) and [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) (CDK) installed on your local machine. 
-- Your AWS credentials set up. For instructions on setting up AWS credentials, read [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials.md).
+- Your AWS credentials set up. For instructions on setting up AWS credentials, refer to [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials.md).
 
 ## Setup
 
@@ -156,7 +156,7 @@ To create an AWS CloudFormation template after updating the fleet configuration,
 
 ### Use an existing GameLift build
 
-If there is an existing GameLift build ID in the fleet configuration file, you can synthesize the stack(s) by running the following CLI command under the AWS CDK application root folder:
+If there is an existing GameLift build ID in the fleet configuration file, you can synthesize the stack(s) by running the following AWS CLI command under the AWS CDK application root folder:
 
 ```cmd
 $ cdk synth

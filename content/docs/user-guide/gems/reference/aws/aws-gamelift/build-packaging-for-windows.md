@@ -15,7 +15,7 @@ Creating a dedicated server package includes the following steps:
 
 ## Prerequisites
 The instructions that follow assume the following:
-- You have built your project with the AWS GameLift Gem enabled. For more information on building projects, read [Build the O3DE Project](/docs/welcome-guide/get-started/project-config/creating-projects-using-cli/#build-the-o3de-project). 
+- You have built your project with the AWS GameLift Gem enabled. For more information on building projects, refer to [Build the O3DE Project](/docs/welcome-guide/get-started/project-config/creating-projects-using-cli/#build-the-o3de-project). 
 - You have built the Profile version of your project's server launcher.
 - You have run the **Asset Processor** and compiled all of the project's assets.
 
