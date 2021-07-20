@@ -6,11 +6,11 @@ toc: true
 weight: 100
 ---
 
-This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine (O3DE) and AWS GameLift in your project. 
+This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine (O3DE) and Amazon GameLift in your project. 
 
 ## 1. Understand GameLift
 
-GameLift allows players to connect to your game by creating a game session. Read more in the AWS Amazon GameLift [How Players Connect to Games](https://docs.aws.amazon.com/gamelift/latest/developerguide/game-sessions-intro.html) documentation.
+GameLift allows players to connect to your game by creating a game session. For more information, refer to the AWS Amazon GameLift [How Players Connect to Games](https://docs.aws.amazon.com/gamelift/latest/developerguide/game-sessions-intro.html) documentation.
 
 A *game session* is an instance of the game running on the server with a given set of properties. A game session can be either public so that it can be found and joined by other players, or private so only players who are invited or notified of it can join.  
 
@@ -99,12 +99,12 @@ For more details on GameLift server notifications, refer to the [Server notifica
 
 To work with AWS resources in O3DE you must set up AWS credentials for your users. 
 
-For more details, read [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
+For more details, refer to [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
 {{< note >}} 
 This step is only required for developers who perform remote tests and infrastructure builds against the Amazon GameLift service.
 
-Alternatively, you can test on your local machine using GameLift Local, which does not require AWS credentials. To test against GameLift Local, there is support for the client override. For more information, read [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/). 
+Alternatively, you can test on your local machine using GameLift Local, which does not require AWS credentials. To test against GameLift Local, there is support for the client override. For more information, refer to [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/). 
 {{< /note >}} 
 
 

@@ -132,7 +132,7 @@ AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSer
 
 When your server process is ready and running, `AzFramework::SessionNotificationBus::Events::OnSessionHealthCheck` is called regularly to report a health status of your server process.
 
-You can customize the health check logic in `OnSessionHealthCheck`. For more information, read about [ProcessParameters](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-datatypes.html#integration-server-sdk-cpp-ref-dataypes-process) in the Amazon GameLift documentation.
+You can customize the health check logic in `OnSessionHealthCheck`. For more information, refer to  [ProcessParameters](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-datatypes.html#integration-server-sdk-cpp-ref-dataypes-process) in the Amazon GameLift documentation.
 
 ```cpp
 
