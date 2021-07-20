@@ -1,11 +1,13 @@
 ---
 linkTitle: User Guide
+menuTitle: User Guide
 title: Open 3D Engine (O3DE) User Guide
 description: Explore the features of O3DE, understand how they work, and learn how to use them in your project.
 weight: 300
 toc: true
 menu_uuid: user
 guide_img: "/images/user-guide/guide_img.png"
+primary: true
 ---
 
 {{< preview-new >}}

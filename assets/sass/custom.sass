@@ -73,6 +73,7 @@ $o3de-white: #fff
 $o3de-lightgray: #ddd
 $o3de-blue: #1E71EB
 $o3de-darkblue: #011C46
+$o3de-docsblue: #2A4875
 $o3de-mediumblue: #054CBA
 $o3de-lightblue: #D2EDFF
 $o3de-blue-highlight: #94D2FF
@@ -80,7 +81,7 @@ $o3de-green: #58BD61
 
 // layouts/section-nav.html typography
 
-.docs-layout
+.docs-content
   h1
     font-size: 40px
     font-weight: 600
@@ -154,6 +155,12 @@ $o3de-green: #58BD61
 body
   font-family: $font-family-headers
   min-width: 360px
+
+.show-content
+  display: block
+
+.hide-content
+  display: none
 
 .breadcrumb 
   li
@@ -247,6 +254,9 @@ code
     right: 0
     top: 62px
 
+.navbar-docs
+  background-color: $o3de-docsblue
+
 .navbar-dark .navbar-toggler
   border: 0 none
   padding: .25rem 0
@@ -256,39 +266,62 @@ code
     padding: 8px 24px
     background-color: #222
 
-
 .navbar-dark .navbar-nav .nav-link
-    color: $o3de-white
-    &:hover 
-      color: #94D2FF
+  color: $o3de-white
+  &:hover 
+    color: $o3de-blue-highlight
+
+.navbar-docs .navbar-nav .nav-link
+  text-transform: uppercase
+  &:hover 
+    color: $o3de-lightgray
 
 .navbar-dark .navbar-nav li
   display: inline-block
   position: relative
 
 .navbar-dark .navbar-nav li.active
-    &:hover 
-      .nav-link.active
-        color: #94D2FF
-      div
-        background-color: #94D2FF
+  &:hover 
+    .nav-link.active
+      color: $o3de-blue-highlight
+    div
+      background-color: $o3de-blue-highlight
+
+.navbar-dark .navbar-nav li.active
+  &:hover 
+    .nav-link.active
+      color: $o3de-lightgray
+    div
+      background-color: $o3de-lightgray
 
 .navbar-dark .navbar-nav .nav-link.active
-    color: #1E70EB
+  color: #1E70EB
+
+.navbar-docs .navbar-nav .nav-link.active
+  color: $o3de-blue-highlight
 
 .navbar-dark .navbar-nav li.active div
-    background-color: #1E70EB
-    padding-bottom: 4px
-    position: absolute
-    width: 100%
-    bottom: -11px
-    
-    @include media-breakpoint-down(md)
-      display: none
+  background-color: #1E70EB
+  padding-bottom: 4px
+  position: absolute
+  width: 100%
+  bottom: -11px
+  
+  @include media-breakpoint-down(md)
+    display: none
+      
+.navbar-docs .navbar-nav li.active div
+  background-color: $o3de-blue-highlight
 
 .navbar-logo
   max-height: 36px
   color: #FFFFFF
+
+.subTitle
+  color: $o3de-white
+  position: absolute
+  top: 17px
+  margin-left: 10px
 
 .search
   .form-control
@@ -299,6 +332,61 @@ code
   #nav-search
     margin-left: 5px
 
+
+// layouts/partials/navbar.html secondary
+
+.navbar-docs
+  ul
+    flex-direction: row;
+    
+    .nav-link
+      padding: 0 0.5rem
+  
+  .secondary-toggler
+    margin-left: .7rem
+
+    @include media-breakpoint-down(lg)
+      display: none
+
+.navbar-primary
+  
+  .navbar-nav li.active div
+    bottom: -19px
+    
+  @include media-breakpoint-down(lg)
+    display: none !important
+
+.navbar-dark .navbar-secondary
+  padding: 8px 0
+  background-color: #1F3557
+  position: absolute
+  right: 0
+  top: 62px
+  width: 214px
+
+  ul
+    padding: 0 0.75rem
+    margin: 0
+
+    li
+      display: block
+      
+      a
+        color: #fff
+        text-transform: uppercase
+        padding: 0.5rem
+
+      .active div
+        display: none
+
+.mobile-docs-toggler
+  .navbar-toggler-icon
+    font-size: 1.25rem
+    display: none
+    cursor: pointer
+    
+    @include media-breakpoint-down(lg)
+      display: block
 
 // layouts/partials/hero.html
 
@@ -911,23 +999,12 @@ $width: '59vw';
 
 // layouts/docs/single.html, layouts/docs/section.html 
 
-.docs-sidebar 
-  background-color: rgba(30, 112, 235, 0.03)  
+.docs-sidebar
+  background-color: rgba(30, 112, 235, 0.03)
+  padding: 20px 10px 20px 16px
   
   @include media-breakpoint-down(lg)
-    max-width: 240px
-
-  .fa-chevron-right
-    display: none
-
-  .fa-chevron-down
-    display: none
-  
-  .section-nav-subsection
-    padding-top: 5px
-
-  .section-nav
-    padding-top: 16px
+    max-width: 280px
 
   @include media-breakpoint-up(xl)
     position: sticky
@@ -939,97 +1016,158 @@ $width: '59vw';
     box-sizing: border-box
     flex-wrap: wrap
     overflow: auto
-  
-  .card-body
-    padding: 10px 0 10px 10px
 
-  .card-header
-    background: transparent
-    border: 0 none
-    padding: 0 1rem
+  @include media-breakpoint-down(lg)
+    position: fixed
+    display: block
+    top: 62px
+    bottom: 0
+    z-index: 100
+    width: 360px
+    max-width: 100%
+    overflow-y: auto
+    background: #F8FAFE
+    right: -360px
+    opacity: 0
+    transition: all .3s ease
 
-    &show
-      color: $o3de-blue
+body.docs-mobile-menu-open .docs-sidebar
+  @include media-breakpoint-down(lg)
+    opacity: 1
+    right: 0
 
-    .btn-link
-      color: $o3de-black
+@include media-breakpoint-down(lg)
+  .docs-mobile-menu-overlay
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0, 0, 0, .3)
+    content: ''
+    z-index: 99
+    display: none
+    transition: all .3s ease
+    opacity: 0
 
-      &:focus
-        text-decoration: none
-        box-shadow: none
-        color: $o3de-black
-        
-      &:hover
-        color: $o3de-blue
-        text-decoration: none
-        box-shadow: none
+    &.show
+      opacity: 1
 
-  .menu-body
-    padding-left: 20px
-
-  .section-nav-link
-    padding: 0 8px
-    margin: 0 10px
-    display: inline-block
-    color: $o3de-black
-    font-weight: normal
-
-    &:hover
-      color: $o3de-blue
-
-  .currentPage
-    background-color: rgba(221, 221, 221, 0.3)
-    color: $o3de-blue
-  
-  .card
-    background: transparent
-    border: 0 none
-    box-shadow: none
-
-.accordion
-  .btn-link
-    font-weight: 600
-    
-.show-content
-  display: block
-
-.hide-content
-  display: none
 
 // layouts/section-nav.html 
 
-nav 
+nav.docs-nav
   ul 
     list-style: none
     padding-left: 0
     margin-bottom: 0rem
     font-size: 1rem
+    
+    &.currentAncestor
+      display: block
+
     li 
-      padding-bottom: 0.2rem
-      margin-bottom: 0.3rem
-      font-weight: bold
+      padding: 2px 0
+      font-weight: 600
+      position: relative
+
+      a
+        display: block
+        padding: 3px 20px 3px 5px
+        color: #333
+        &:hover
+          color: $o3de-blue-highlight
+      
+      a.currentPage:not(.has-children)
+        background: rgba(221, 221, 221, .3)
+        border-radius: 3px
+        color: $o3de-blue
+        font-weight: 600
+        &:hover
+          color: $o3de-blue-highlight
+      
+      a.currentAncestor
+        font-weight: 600
+        color: $o3de-blue
+        &:hover
+          color: $o3de-blue-highlight
+
+      a.has-children::after
+        content: ''
+        width: 10px
+        height: 10px
+        position: absolute
+        right: 8px
+        top: 13px
+        transition: transform .5s ease
+        transform: rotate(-45deg)
+        border: 2px solid #333
+        border-left: 0
+        border-top: 0
+        
+      a.currentAncestor.has-children::after
+        border-color: $o3de-blue
+
+      a.has-children:hover::after
+        border-color: $o3de-blue-highlight
+      
+      a.has-children.open::after
+        transform: rotate(45deg) translate(-3px, -3px)
+
       ul
+        display: none
         padding-bottom: 0rem
-        margin-left: 1rem
+        margin-left: 10px
         font-size: 0.9rem
         li 
           border-bottom: none
           margin-bottom: 0rem
           font-weight: normal
+          
+          a.has-children::after
+            top: 10px
 
-.currentPage
-  font-weight: bold
-  background-color: $o3de-lightblue
-  padding: 0.1rem
-  border-radius: 5px
+// layouts/section-nav.html search
+
+.docs-sidebar form
+  padding: 0 4px 16px 0
+
+.docs-sidebar .search-input-view
+  padding: 0 !important
+  position: relative
+
+.docs-sidebar .search-input-view .search-icon
+  position: absolute
+  left: 6px
+  top: 5px
+  width: 20px
+  height: 20px
+
+.docs-sidebar .search-input-view input
+  padding-left: 30px
+
+
+// layouts/section-nav.html scrollbars
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%))
+  // For Google Chrome
+  &::-webkit-scrollbar
+    width:  $size;
+    height: $size;
   
-#docs-nav-title
-  background-color: transparent
-  padding: 0rem
-  h1
-    font-size: 1.2rem
-    margin-top: 0
-    margin-bottom: 0
+  &::-webkit-scrollbar-thumb
+    background: $foreground-color
+  
+  &::-webkit-scrollbar-track
+    background: $background-color
+  
+  // For Internet Explorer
+  &
+    scrollbar-face-color: $foreground-color
+    scrollbar-track-color: $background-color
+
+.docs-sidebar
+  @include scrollbars(5px, $o3de-blue-highlight, $o3de-lightgray)
 
 // layouts/partials/footer-content.html
 
