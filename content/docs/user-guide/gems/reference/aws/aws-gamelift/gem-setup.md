@@ -1,12 +1,12 @@
 ---
 linkTitle: Setup
 title: AWS GameLift Gem Setup
-description: "Learn how to set up the AWS GameLift Gem in O3DE"
+description: Learn how to set up the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 100
 ---
 
-This topic teaches you how to set up the AWS GameLift Gem in Open 3D Engine (O3DE) and the AWS GameLift service in your project. 
+This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine (O3DE) and AWS GameLift in your project. 
 
 ## 1. Understand GameLift
 
@@ -61,7 +61,7 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
 
     ```
 
-2. **(Optional)** If you need to make AWS GameLift requests in C++, then you must include **Gem::AWSGameLift.Client.Static** as **BUILD_DEPENDENCIES** for your client target.
+2. **(Optional)** If you need to make GameLift requests in C++, then you must include **Gem::AWSGameLift.Client.Static** as **BUILD_DEPENDENCIES** for your client target.
 
 
     ```cpp
@@ -86,20 +86,20 @@ For a client application, your game must implement the following use cases to ma
 - `JoinSession`
 - `LeaveSession`
 
-The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scripting/) to support developers. You can implement these use cases using either method.  
+The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scripting/). You can implement these use cases using either method.
 
 
 ## 4. Integrate server
 
-To establish communication between your server and Amazon GameLift service, you must notify Amazon GameLift that your server is ready and then have your server respond to GameLift notifications.
+To establish communication between your server and GameLift, you must notify GameLift that your server is ready, and then have your server respond to GameLift notifications.
 
-For more details on GameLift server notifications, refer to [C++ API for the AWS GameLift Gem](cpp-api/#server-notifications).
+For more details on GameLift server notifications, refer to the [Server notifications](cpp-api/#server-notifications) section of the AWS GameLift Gem C++ API page.
 
 ## 5. Set up AWS credentials
 
 To work with AWS resources in O3DE you must set up AWS credentials for your users. 
 
-For more details, read [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/) in the AWS Core Gem section.
+For more details, read [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
 {{< note >}} 
 This step is only required for developers who perform remote tests and infrastructure builds against the Amazon GameLift service.
@@ -108,11 +108,13 @@ Alternatively, you can test on your local machine using GameLift Local, which do
 {{< /note >}} 
 
 
-## 6. Set up AWS CLI and CDK
+## 6. Set up the AWS CLI and AWS CDK
 
-The AWS GameLift provides a sample CDK application that you can use to model and deploy your server to the Amazon GameLift service. To do this, you must have [AWS CLI](https://aws.amazon.com/cli/) and [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) installed on your local machine.
+The AWS GameLift Gem provides a sample AWS Cloud Development Kit (AWS CDK) application that you can use to model and deploy your server to GameLift. To do this, you must have the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) and [AWS CDK](https://aws.amazon.com/cdk/) installed on your local machine.
 
 
 ---
-Previous Topic: [AWS GameLift Feature Overview](/docs/user-guide/gems/reference/aws/aws-gamelift)  
-Next topic: [C++ API for the AWS GameLift Gem](cpp-api/)
+
+Previous topic: [AWS GameLift Gem feature overview](/docs/user-guide/gems/reference/aws/aws-gamelift)
+
+Next topic: [AWS GameLift Gem C++ API](cpp-api/)

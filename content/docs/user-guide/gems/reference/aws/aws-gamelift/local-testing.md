@@ -57,8 +57,9 @@ $ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "[http://l
 
 Testing steps and instructions really depend on your own project, but please make sure your testing can cover CreateSession, JoinSession, LeaveSession and DestorySession use case.
 
-You can also verify interactions and logs with GameLift Local tool. Read more in the AWS Amazon GameLift documentation, [Test a Game Server and Client](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-client).
+You can also verify interactions and logs with the GameLift Local tool. For more information, refer to [Test a Game Server and Client](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-client) in the Amazon GameLift Developer Guide.
 
 ---
-Previous topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)  
-Next topic: [AWS GameLift Gem Build Packaging for Windows](build-build-packaging-for-windows/)
+Previous topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)
+
+Next topic: [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/)

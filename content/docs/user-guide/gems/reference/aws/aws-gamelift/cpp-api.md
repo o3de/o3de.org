@@ -1,17 +1,18 @@
 ---
 linkTitle: C++ API
 title: AWS GameLift Gem C++ API 
-description: "Learn how to use the C++ API for AWS GameLift Gem in O3DE"
+description: Learn how to use the C++ API for the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 ---
 
 ## Session interface
 
-The *session interface* - `ISessionRequests` and `ISessionAsyncRequests` -provides public APIs that allow you to create game sessions and allows players to search and join online games. The session interface abstracts the implementation details of session-related management.
+The **AWS GameLift** Gem implements a session interface for Amazon's dedicated server solution, Amazon GameLift. The *session interface* (`ISessionRequests` and `ISessionAsyncRequests`) provides public APIs that allow you to create game sessions and allow players to search and join online games. The session interface abstracts the implementation details of session-related management.
+
+The session interface performs all of the session handling. The Gem acts as a game-specific handler for the session interface. The game code makes calls by using the Gem's C++ API to interact with the session. GameLift creates and owns the game session, which exists on the server only when running an online game.
 
 There must be only one implementation of the session interface per dedicated server solution. To add support for another dedicated server solution, you must create another implementation of the session interface.
 
-The **AWS GameLift** Gem implements a session interface for Amazon's dedicated server solution, Amazon GameLift. The session interface performs all of the session handling, the Gem acts as a game-specific handler for the session interface, and the game code makes calls by using the Gem's C++ API to interact with the session. Amazon GameLift creates and owns the game session, which exists on the server only when running an online game.
 
 ## Session management
 
@@ -115,13 +116,13 @@ void OnLeaveSessionAsyncComplete()
 
 ### Destroy Session (Passively)
 
-As the default behavior, when the last player leaves the game session, the game session will be destroyed.
+As the default behavior, when the last player leaves the game session, GameLift destroys the game session. 
 
 ## Server notifications
 
-You must notify the Amazon GameLift server that your server process is ready to host game sessions, handle requests, and take connections.
+You must notify the GameLift server that your server process is ready to host game sessions, handle requests, and take connections.
 
-To send a notification that your server process is ready, use `AWSGameLiftServerManager::NotifyGameLiftProcessReady()`. Put this call in your project system component activate step, and call it after your project has been connected to `AzFramework::SessionNotificationBus`. 
+To send a notification that your server process is ready, use `AWSGameLiftServerManager::NotifyGameLiftProcessReady()`. Put this call in your project system component activate step, and call it after you connect your project to `AzFramework::SessionNotificationBus`. 
 
 ```cpp
 AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady);
@@ -168,5 +169,6 @@ bool OnDestroySessionBegin()
 
 ---
 
-Previous topic: [AWS GameLift Gem Setup](gem-setup/)  
-Next topic: [Scripting with the AWS GameLift Gem](scripting/)
+Previous topic: [AWS GameLift Gem Setup](gem-setup/)
+
+Next topic: [AWS GameLift Gem Scripting](scripting/)
