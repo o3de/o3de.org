@@ -2,6 +2,7 @@
 title: Setting up O3DE from the Installer
 description: Learn how to install and set up Open 3D Engine (O3DE) using the installer tool.
 weight: 200
+draft: true
 ---
 
 A quick way to get started with O3DE is to download and install a released version. After running the installer, you will have a stable, pre-built version of the engine and its Gems, ready for you to jump into your next project.
