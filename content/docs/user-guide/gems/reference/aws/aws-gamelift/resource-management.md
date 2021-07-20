@@ -71,7 +71,7 @@ To create a fleet, you can provide one of the following in the fleet configurati
 - An existing GameLift build ID
 - A path to a zipped local server package
 
-##### Use an Existing GameLift Build
+##### Use an existing GameLift build
 
 To specify an existing build id, edit the build configuration for a fleet, such as the example below. 
 
@@ -184,7 +184,7 @@ $ cdk synth -c upload-with-support-stack=true -c create_game_session_queue=true 
 
 ### Deploy with an existing GameLift build
 
-If you provide an existing GameLift build ID in the fleet configuration file, you can deploy the AWS CDK application, which defines all of the AWS resources. To deploy the CDK application, run the following CLI command under the application root folder:
+If you provide an existing GameLift build ID in the fleet configuration file, you can deploy the AWS CDK application, which defines all of the AWS resources. To deploy the CDK application, run the following AWS CLI command under the application root folder:
 
 ```cmd
 $ cdk deploy
@@ -213,7 +213,7 @@ To update the existing AWS CDK application, re-run the same commands that you us
 
 ## Destroy the AWS CDK application
 
-To destroy all of the AWS resources that the AWS CDK application (which uses an existing GameLift build) deployed, run the following CLI command:
+To destroy all of the AWS resources that the AWS CDK application (which uses an existing GameLift build) deployed, run the following AWS CLI command:
 
 ```cmd
 $ cdk destroy

@@ -10,7 +10,7 @@ toc: true
 
 This topic describes how to use Script Canvas to create, search, join, and leave game sessions.
 
-AWS GameLift Gem provides both synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate through AWS HTTPS requests or over the network. Each asynchronous node has a corresponding notification handler node.
+The **AWS GameLift** Gem provides both synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate through AWS HTTPS requests or over the network. Each asynchronous node has a corresponding notification handler node.
 
 ## Script Canvas nodes
 
@@ -116,5 +116,6 @@ To disconnect from a joined session, use the **LeaveSession** node.
   
 ---
 
-Previous topic: [C++ API for the AWS GameLift Gem](cpp-api/)  
+Previous topic: [AWS GameLift Gem C++ API](cpp-api/)
+
 Next topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)

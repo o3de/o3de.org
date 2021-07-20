@@ -1,7 +1,7 @@
 ---
 linkTitle: Build Packaging for Windows
 title: AWS GameLift Gem Build Packaging for Windows
-description: "Learn how to package your dedicated server builds with the AWS GameLift Gem in O3DE"
+description: Learn how to package your dedicated server builds with the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 400
 ---
@@ -62,5 +62,7 @@ Make sure to replace `<package base folder>` with the path to the installation f
 
 
 ---
-Previous Topic: [AWS GameLift Gem Local Testing](local-testing/)  
-Next Topic: [AWS GameLift Resource Management](resource-management/)
+
+Previous topic: [AWS GameLift Gem Local Testing](local-testing/)
+
+Next topic: [AWS GameLift Gem Resource Management](resource-management/)

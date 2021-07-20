@@ -14,30 +14,40 @@ A *fleet* is a set of Amazon EC2 virtual machines, called *instances*, that repr
 
 In most cases, your game will use more than one fleet. To avoid using a fixed fleet ID in your script, you can use a resource mapping file, which lets you look up fleet IDs at runtime. Using a resource mapping file helps keep your code or script clean and consistent. For more information, refer to [Resource Mapping Files](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-files/).
 
-The following examples are demonstrated with [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](cpp-api/). 
+The following examples use [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](cpp-api/). 
 
 
 ### Example: Fleet lookup
 
-This example script shows you how to look up a fleet from the resource mapping file. Then, with the fleet, you create a session that allows one maximum player.  (You can also do this using the AWS GameLift Gem C++ API.)
+This example script shows you how to look up a fleet from the resource mapping file. Then, with the fleet, you create a session that allows one maximum player. (You can also do this using the AWS GameLift Gem C++ API.)
 
 In Script Canvas, follow these steps:
+
 1. Get the request object for creating a session by using the **Get request** node.
+
 2. Look up the fleet with the ID `MyGameLiftFleetId` by using the **GetResourceNameId** node. 
+
 3. For the corresponding fleet, set the maximum number of players to be `1` by using the **FleetId** and **MaxPlayer** nodes. 
-4. Create a session on the fleet using the **CreateSessionAsync** node. 
+
+4. Create a session on the fleet by using the **CreateSessionAsync** node. 
 
 ![A script that gets a fleet from a resource mapping file and creates a session with 1 maximum player.](/images/user-guide/gems/reference/aws/aws-gamelift/createsessionandresourcemapping.PNG)
+
 
 ### Example: Multiple fleet lookup
 
 This example script shows you how to look up multiple fleets from the resource mapping file. If you have multiple fleets, you can store the fleet IDs in an array. Then, you can iterate through each fleet and search for active sessions in the corresponding fleet. (You can also do this using the AWS GameLift Gem C++ API.)
 
 In Script Canvas, follow these steps:
+
 1. Iterate through an array of `FleetId`s by using the **Get fleetId Keys** and **For Each** nodes. 
+
 2. For each fleet ID:  
+
    - Look up the fleet corresponding to the `FleetId` by using the **GetResourceNameId** node.  
+
    - Get a request object for searching through sessions by using the **Get request** node.  
+
    - Search for an active and joinable session by using the **SearchSessionsAsync** node.  
 
 ![A script that iterates through an array of fleets and searches for an active session.](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessionsandresourcemapping.PNG)
@@ -45,18 +55,23 @@ In Script Canvas, follow these steps:
 
 ## Search for and join sessions
 
-The most basic way to search for sessions is by browsing through the server, which shows all of the available games. Then, the player can filter the games based on the type that they want to play, choose a game, and join a session. 
+The most basic way to search for sessions is by browsing through the server, which shows all of the available games. Then, the player can filter the games based on the type that they want to play, choose a game, and join a session.
 
-The following examples are demonstrated with [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](cpp-api/). 
+The following examples use [Script Canvas](/docs/user-guide/scripting/script-canvas/), but you can also search and join sessions using the [AWS GameLift Gem C++ API](cpp-api/).
+
 
 ### Example: Search for sessions based on filter criteria
 
 This example script shows you how to search for a maximum of 10 sessions in the corresponding fleet.
 
 In Script Canvas, follow these steps:
+
 1. Get a request object for searching sessions by using the **Get searchrequest** node.
+
 2. Look up the fleet with the ID `MyGameLiftFleetId` by using the **GetResourceNameId** node.
+
 3. Filter the search with a maximum of 10 sessions in the corresponding fleet by using the **FleetId** and **MaxResult** nodes.
+
 4. Search for sessions by using the **SearchSessionsAsync** node.
    
 ![A scipt that searches for a maximum of ten sessions in the corresponding fleet.](/images/user-guide/gems/reference/aws/aws-gamelift/searchactivesessions.PNG)
@@ -67,9 +82,13 @@ In Script Canvas, follow these steps:
 After you get search results from the previous example, this script chooses the first game session and joins it. The script begins automatically after **SearchSessionsAsync** completes with results. 
 
 1. Set this script to begin automatically after searching for sessions by adding the **OnSearchSessionsAsyncComplete** event to **AWSGameLiftSessionAsyncRequestNotificationBus**, then applying that to the **SessionConfigs** node.
+   
 2. Get the first session from the results of the **SearchSessionsAsync** node by using the **Get First Element** and **SessionId** nodes.
+
 3. Get a request object to join the session by using the **Get joinrequest** and **SessionId** nodes.
+
 4. Create a player ID for the session by using the **SessionId** and **CreatePlayerId** nodes.
+
 5. Allow a player to join the session by using the **PlayerId** and **JoinSessionAsync** nodes.
 
 ![A script that chooses a game from search results and joins the first session.](/images/user-guide/gems/reference/aws/aws-gamelift/searchandjoin.PNG)
@@ -77,9 +96,9 @@ After you get search results from the previous example, this script chooses the 
 
 ## Get credentials from an Amazon Cognito identity pool
 
-To make requests against Amazon GameLift and permit players to interact your resources, you must get the players' AWS credentials. With the [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth/), you can use the player's login information to get their AWS credentials from an Amazon Cognito Identity Pool. To get a player's credential from Cognito Identity Pool, the player must successfully log in.
+To make requests against GameLift, and to permit players to interact with your resources, you must get the players' AWS credentials. With the [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth/), you can use players' login information to get their AWS credentials from an Amazon Cognito identity pool. To get players' credentials from an identity pool, they must successfully log in.
 
-After the player logs in, you can use the AWS GameLift Gem to configure the client and set up the AWS credentials by calling `AWSGameLiftClientManager::ConfigureGameLiftClient()`.
+After players log in, you can use the AWS GameLift Gem to configure the client and set up their AWS credentials by calling `AWSGameLiftClientManager::ConfigureGameLiftClient()`.
 
 
 ## Set up log paths for multiple processes
@@ -94,5 +113,6 @@ C:\game\bin\server.exe --engine-path=C:\game --project-path=C:\game\process1 --p
 
 ---
 
-Previous topic: [C++ API for the AWS GameLift Gem](cpp-api/)  
+Previous topic: [AWS GameLift Gem C++ API](cpp-api/)
+
 Next topic: [AWS GameLift Gem Local Testing](local-testing/)
