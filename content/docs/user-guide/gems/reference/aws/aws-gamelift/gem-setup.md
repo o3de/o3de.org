@@ -10,7 +10,7 @@ This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine 
 
 ## 1. Understand GameLift
 
-GameLift allows players to connect to your game by creating a game session. For more information, refer to the AWS Amazon GameLift [How Players Connect to Games](https://docs.aws.amazon.com/gamelift/latest/developerguide/game-sessions-intro.html) documentation.
+GameLift allows players to connect to your game by creating a game session. For more information, refer to [How Players Connect to Games](https://docs.aws.amazon.com/gamelift/latest/developerguide/game-sessions-intro.html) in the Amazon GameLift Developer Guide.
 
 A *game session* is an instance of the game running on the server with a given set of properties. A game session can be either public so that it can be found and joined by other players, or private so only players who are invited or notified of it can join.  
 

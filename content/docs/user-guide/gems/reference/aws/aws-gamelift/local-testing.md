@@ -8,7 +8,7 @@ weight: 300
 
 In this topic, you will learn how to test and verify GameLift feature integrations on your local machine by using **GameLift Local**. 
 
-GameLift Local is a command line tool that starts a self-contained version of the managed GameLift service. GameLift Local also provides a running event log of server process initialization, health checks, and API calls and responses. GameLift Local recognizes a subset of the AWS SDK actions for GameLift. You can make calls from the AWS CLI or from your game client. All API actions perform locally, just as they do in the GameLift web service. Learn more in the AWS Amazon GameLift documentation, [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-start).
+GameLift Local is a command line tool that starts a self-contained version of the managed GameLift service. GameLift Local also provides a running event log of server process initialization, health checks, and API calls and responses. GameLift Local recognizes a subset of the AWS SDK actions for GameLift. You can make calls from the AWS CLI or from your game client. All API actions perform locally, just as they do in the GameLift web service. For more information, refer to [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-start) in the Amazon GameLift Developer Guide.
 
 ## 1. Start GameLift Local
 
