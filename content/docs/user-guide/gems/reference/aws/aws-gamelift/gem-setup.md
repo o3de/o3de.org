@@ -102,7 +102,7 @@ To work with AWS resources in O3DE you must set up AWS credentials for your user
 For more details, refer to [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
 {{< note >}} 
-This step is only required for developers who perform remote tests and infrastructure builds against the Amazon GameLift service.
+This step is only required for developers who perform remote tests and infrastructure builds against the GameLift service.
 
 Alternatively, you can test your server's GameLift integration locally using GameLift Local, which does not require AWS credentials. With support for client override, you can test against GameLift Local. For more information, refer to [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/). 
 {{< /note >}} 
