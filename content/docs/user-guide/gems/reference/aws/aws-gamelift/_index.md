@@ -11,7 +11,7 @@ toc: true
 The **AWS GameLift** Gem provides the following features:
 
 **Amazon GameLift integration**
-- A framework to extend the O3DE networking layer and to let the **Multiplayer** Gem work with [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). The AWS GameLift Gem provides integrations with both the [GameLift Server SDK](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-supported.html#gamelift-supported-servers) and the AWS SDK client (to call the GameLift service itself). 
+- A framework to extend the O3DE networking layer and to let the **Multiplayer** Gem work with Amazon's dedicated server solution, [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). The AWS GameLift Gem provides integrations with both the [GameLift Server SDK](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-supported.html#gamelift-supported-servers) and the AWS SDK client (to call the GameLift service itself). 
 
 **Build and package management**
 - Instructions to package and optionally upload the dedicated server build.

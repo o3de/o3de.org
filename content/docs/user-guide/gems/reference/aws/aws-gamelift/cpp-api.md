@@ -8,7 +8,7 @@ weight: 300
 
 ## Session interface
 
-The **AWS GameLift** Gem implements a session interface for Amazon's dedicated server solution, Amazon GameLift. The *session interface* (`ISessionRequests` and `ISessionAsyncRequests`) provides public APIs that allow you to create game sessions and allow players to search and join online games. The session interface abstracts the implementation details of session-related management.
+The **AWS GameLift** Gem implements a session interface for Amazon GameLift. The *session interface* (`ISessionRequests` and `ISessionAsyncRequests`) provides public APIs that allow you to create game sessions and allow players to search and join online games. The session interface abstracts the implementation details of session-related management.
 
 The session interface performs all of the session handling. The Gem acts as a game-specific handler for the session interface. The game code makes calls by using the Gem's C++ API to interact with the session. GameLift creates and owns the game session, which exists on the server only when running an online game.
 
@@ -17,28 +17,37 @@ There must be only one implementation of the session interface per dedicated ser
 
 ## Session management
 
+To make requests against GameLift, you must configure a proper GameLift client by using `AWSGameLiftClientManager::ConfigureGameLiftClient()`. 
+
+Note that you must specify the AWS Region in the correct format. For example, for the US East (N. Virginia) Region, specify **us-east-1**. For a list of supported Regions, refer to [Amazon GameLift endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/gamelift.html) in the AWS General Reference.
+
+```cpp
+AWSGameLift::AWSGameLiftRequestBus::Broadcast(& AWSGameLift::AWSGameLiftRequestBus::Events::ConfigureGameLiftClient, "us-west-2");
+```
+
+
 ### `CreateSession`
 
 Creates a multiplayer session for players to find and join.
 
-To create a session, call `AWSGameLiftClientManager::CreateSession()` or `AWSGameLiftClientManager::CreateSessionAsync()`. This makes request calls that configure the new session. When a session begins to create, the `OnCreateSessionBegin` notification is broadcasted on the server side to perform setup operations, such as loading the level.
+To create a session, call `AWSGameLiftClientManager::CreateSession()` or `AWSGameLiftClientManager::CreateSessionAsync()`. This makes a request call that configures the new session. When a session begins to create, the `OnCreateSessionBegin` notification is broadcasted on the server side to perform setup operations, such as loading the level.
 
 ```cpp
-// Make synchronous call
+// make synchronous call
 AWSGameLift::AWSGameLiftCreateSessionRequest request;
 request.m_idempotencyToken = "YourGameLiftSessionId";
 request.m_fleetId = "YourGameLiftFleetId";
 request.m_maxPlayer = 1;
 AZStd::string result = "";
 AWSGameLift::AWSGameLiftSessionRequestBus::BroadcastResult(result, &AWSGameLift::AWSGameLiftSessionRequestBus::Events::CreateSession, request);
-
-// Make asynchronous call
+ 
+// make asynchronous call
 AWSGameLift::AWSGameLiftCreateSessionRequest request;
 request.m_idempotencyToken = "YourGameLiftSessionId";
 request.m_fleetId = "YourGameLiftFleetId";
 request.m_maxPlayer = 1;
 AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Events::CreateSessionAsync, request);
-
+ 
 void OnCreateSessionAsyncComplete(const AZStd::string& result)
 {
     ...

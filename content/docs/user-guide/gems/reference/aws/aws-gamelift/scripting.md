@@ -9,15 +9,15 @@ weight: 400
 {{< preview-new >}}
 
 
-This topic describes how to use Script Canvas to create, search, join, and leave game sessions.
+The **AWS GameLift** provides Script Canvas nodes that make requests against Amazon GameLift to create, search, join, and leave game sessions.
 
-The **AWS GameLift** Gem provides both synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate through AWS HTTPS requests or over the network. Each asynchronous node has a corresponding notification handler node.
+There are synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate through AWS HTTPS requests or over the network. Each asynchronous node has a corresponding notification handler node.
 
 ## Script Canvas nodes
 
 ### ConfigureGameLiftClient
 
-To make requests against Amazon GameLift, you must create a proper GameLift client using the **ConfigureGameLiftClient** node. With this node, you can specify the AWS Region where your GameLift fleets are created and reside.
+To make requests against GameLift, you must create a proper GameLift client using the **ConfigureGameLiftClient** node. With this node, you can specify the AWS Region where your GameLift fleets are created and reside.
 
 Note that you must specify the AWS Region in the correct format. For example, for the US East (N. Virginia) Region, specify **us-east-1**. For a list of supported Regions, refer to [Amazon GameLift endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/gamelift.html) in the AWS General Reference.
 
