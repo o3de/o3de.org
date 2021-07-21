@@ -7,7 +7,7 @@ weight: 100
 toc: true
 menu_uuid: releasenotes
 guide_img: "/images/release-notes/guide_img.png"
-primary: false
+primary: true
 ---
 
 ## Current Versions of Open 3D Engine

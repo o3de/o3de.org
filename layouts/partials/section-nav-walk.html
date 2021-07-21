@@ -8,7 +8,7 @@
             {{ .LinkTitle }}</a>
             {{ if .Pages }}
                 <ul>
-                    {{ if .IsSection }}
+                    {{ if and ( .IsSection ) (ge (len .Content) 1) }}
                     <li>
                         <a href="{{ .RelPermalink }}"
                         class="docs-link">
