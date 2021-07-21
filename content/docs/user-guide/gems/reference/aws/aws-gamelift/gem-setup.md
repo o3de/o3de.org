@@ -3,7 +3,7 @@ linkTitle: Setup
 title: AWS GameLift Gem Setup
 description: Learn how to set up the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
-weight: 100
+weight: 200
 ---
 
 This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine (O3DE), so you can use Amazon GameLift in your project.

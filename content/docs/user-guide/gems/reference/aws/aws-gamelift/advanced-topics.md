@@ -3,6 +3,7 @@ linkTitle: Advanced Topics
 title: AWS GameLift Gem Advanced Topics
 description: Learn some advanced ways to use the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
+weight: 500
 ---
 
 This topic covers some advanced ways to use the **AWS GameLift** Gem. 
