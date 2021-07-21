@@ -6,7 +6,7 @@ toc: true
 weight: 100
 ---
 
-This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine (O3DE) and Amazon GameLift in your project. 
+This topic teaches you how to set up the **AWS GameLift** Gem in Open 3D Engine (O3DE), so you can use Amazon GameLift in your project.
 
 ## 1. Understand GameLift
 
@@ -61,7 +61,7 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
 
     ```
 
-2. **(Optional)** If you need to make GameLift requests in C++, then you must include **Gem::AWSGameLift.Client.Static** as **BUILD_DEPENDENCIES** for your client target.
+2. **(Optional)** If you need to make GameLift service requests in C++, then you must include **Gem::AWSGameLift.Client.Static** as **BUILD_DEPENDENCIES** for your client target.
 
 
     ```cpp
@@ -104,13 +104,13 @@ For more details, refer to [Configuring AWS Credentials](/docs/user-guide/gems/r
 {{< note >}} 
 This step is only required for developers who perform remote tests and infrastructure builds against the Amazon GameLift service.
 
-Alternatively, you can test on your local machine using GameLift Local, which does not require AWS credentials. To test against GameLift Local, there is support for the client override. For more information, refer to [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/). 
+Alternatively, you can test your server's GameLift integration locally using GameLift Local, which does not require AWS credentials. With support for client override, you can test against GameLift Local. For more information, refer to [AWS GameLift Gem Local Testing](/docs/user-guide/gems/reference/aws/aws-gamelift/local-testing/). 
 {{< /note >}} 
 
 
 ## 6. Set up the AWS CLI and AWS CDK
 
-The AWS GameLift Gem provides a sample AWS Cloud Development Kit (AWS CDK) application that you can use to model and deploy your server to GameLift. To do this, you must have the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) and [AWS CDK](https://aws.amazon.com/cdk/) installed on your local machine.
+The AWS GameLift Gem provides a sample AWS Cloud Development Kit (AWS CDK) application that you can use to model GameLift resources and deploy your server to GameLift. To do this, you must have the [AWS Command Line Interface (AWS CLI)](https://aws.amazon.com/cli/) and [AWS CDK](https://aws.amazon.com/cdk/) installed on your local machine.
 
 
 ---

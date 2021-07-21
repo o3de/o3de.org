@@ -120,7 +120,7 @@ As the default behavior, when the last player leaves the game session, GameLift 
 
 ## Server notifications
 
-You must notify the GameLift server that your server process is ready to host game sessions, handle requests, and take connections.
+You must notify the GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
 
 To send a notification that your server process is ready, use `AWSGameLiftServerManager::NotifyGameLiftProcessReady()`. Put this call in your project system component activate step, and call it after you connect your project to `AzFramework::SessionNotificationBus`. 
 

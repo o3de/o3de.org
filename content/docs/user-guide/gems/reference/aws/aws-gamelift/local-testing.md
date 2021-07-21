@@ -49,7 +49,7 @@ You should be able to find application under build bin folder, and launch the ga
 
 // Override GameLift endpoint to local host
 
-$ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "[http://localhost:9080](http://localhost:9080)"
+$ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "http://localhost:9080"
 
 ```
 
