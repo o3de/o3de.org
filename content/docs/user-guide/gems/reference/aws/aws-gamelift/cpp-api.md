@@ -3,6 +3,7 @@ linkTitle: C++ API
 title: AWS GameLift Gem C++ API 
 description: Learn how to use the C++ API for the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
+weight: 300
 ---
 
 ## Session interface
@@ -120,13 +121,24 @@ As the default behavior, when the last player leaves the game session, GameLift 
 
 ## Server notifications
 
-You must notify the GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
+The AWS GameLift Gem notifies the GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
 
-To send a notification that your server process is ready, use `AWSGameLiftServerManager::NotifyGameLiftProcessReady()`. Put this call in your project system component activate step, and call it after you connect your project to `AzFramework::SessionNotificationBus`. 
+When your session is active, it broadcasts the following notifications to the GameLift server. You can program how your session responds to these notifications.  
+
+
+### `OnCreateSessionBegin`
+
+When the session begins to create on the server, the `AzFramework::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcasted on the server side. During this step, it's recommended to load the level on the server side. 
 
 ```cpp
-AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady);
+
+bool OnCreateSessionBegin(const AzFramework::SessionConfig& sessionConfig)
+{
+    ...
+}
+
 ```
+
 
 ### `OnSessionHealthCheck`
 
@@ -143,18 +155,6 @@ bool OnSessionHealthCheck()
 
 ```
 
-### `OnCreateSessionBegin`
-
-When the session begins to create on the server, the `AzFramework::SessionNotificationBus::Events::OnCreateSessionBegin()` notification is broadcasted on the server side. During this step, it's recommended to load the level on the server side. 
-
-```cpp
-
-bool OnCreateSessionBegin(const AzFramework::SessionConfig& sessionConfig)
-{
-    ...
-}
-
-```
 
 ### `OnDestroySessionBegin`
 

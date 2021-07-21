@@ -3,6 +3,7 @@ linkTitle: Scripting
 title: AWS GameLift Gem Scripting
 description: Learn about Script Canvas nodes for the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
+weight: 400
 ---
 
 {{< preview-new >}}
