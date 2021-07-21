@@ -11,19 +11,18 @@ toc: true
 The **AWS GameLift** Gem provides the following features:
 
 **Amazon GameLift integration**
-- A framework to extend the O3DE networking layer and to let the **Multiplayer** Gem work with [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). The AWS GameLift Gem provides integrations with both the [GameLift Server SDK](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-supported.html#gamelift-supported-servers) and the GameLift client (GameLift calls in the AWS SDK).
+- A framework to extend the O3DE networking layer and to let the **Multiplayer** Gem work with [Amazon GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html). The AWS GameLift Gem provides integrations with both the [GameLift Server SDK](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-supported.html#gamelift-supported-servers) and the AWS SDK client (to call the GameLift service itself). 
 
 **Build and package management**
 - Instructions to package and optionally upload the dedicated server build.
-- A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to add custom resources.
-
+- A sample [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) application. You can deploy the AWS CDK application to set up basic GameLift resources, or modify the application to meet your needs by adding or updating the deployed resources. 
 
 ## Release highlights
 
 **Preview features**  
 
 - Support for CreateSession (on fleet/on queue), SearchSessions, JoinSession, and LeaveSession through GameLift.
-- Support for Windows dedicated servers and the O3DE client for Windows.
+- Support for Windows dedicated servers and Windows client launchers. 
 - Support for AWS CDK applications to manage GameLift resources.
 
 
