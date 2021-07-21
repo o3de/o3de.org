@@ -14,8 +14,8 @@ To configure PhysX settings, use the **PhysX Configuration** tool.
 + In O3DE Editor, choose **Tools**, **PhysX Configuration**.
 
 **Topics**
-+ [Global Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-global.md)
-+ [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-layers.md)
-+ [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-groups.md)
-+ [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md)
-+ [PhysX World Programming Notes](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-physx-world-programming-notes.md)
++ [Global Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global.md)
++ [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers.md)
++ [Collision Groups](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups.md)
++ [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md)
++ [PhysX World Programming Notes](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-physx-world-programming-notes.md)
