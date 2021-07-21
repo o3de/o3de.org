@@ -129,6 +129,7 @@ $(function() {
         {
           $(this).addClass("currentAncestor").addClass("open");
         });
+        $(this).parent('li').addClass("currentAncestorCategory");
       })
     }
   })

@@ -1092,6 +1092,10 @@ body.docs-mobile-menu-open .docs-sidebar
 
 // layouts/section-nav.html 
 
+nav.docs-nav > ul > li:not(.currentAncestorCategory)
+    @include media-breakpoint-up(xl)
+      display: none
+
 nav.docs-nav
   ul 
     list-style: none
