@@ -137,7 +137,6 @@ We suggest that you begin your learning path by browsing the following set of O3
 <!-- 7/9/2021 - The AI Navigation page is in progress -->
 *  [Audio Controls Editor](/docs/user-guide/interactivity/audio/)
 *  [Animation Editor](/docs/user-guide/visualization/animation/animation-editor/)
-*  [Cloud Canvas](/docs/user-guide/cloud/)
 *  [UI Editor](/docs/user-guide/interactivity/user-interface/editor/)
 
 ### Engineer
