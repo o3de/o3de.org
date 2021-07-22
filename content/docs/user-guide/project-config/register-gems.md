@@ -1,17 +1,18 @@
 ---
 linktitle: Registering Gems
 title: Registering Gems to a Project
-description: 'Learn how to register external Gems to a project in Open 3D Engine (O3DE).'
+description: Learn how to register external Gems to a project in Open 3D Engine (O3DE).
 toc: true
+weight: 140
 ---
 
 {{< preview-new >}}
 
-Open 3D Engine (O3DE) is pre-equipped with many Gems that extend features and add assets to your project. For a full list, refer to the [Gem Reference](/docs/user-guide/gems/reference). These Gems are provided by O3DE and are already registered to the engine by default. 
+Open 3D Engine (O3DE) includes many Gems that extend features and add assets to your project. For a full list, refer to the [Gem Reference](/docs/user-guide/gems/reference). These Gems have already been registered to the engine and are ready to be added to a project.
 
-However, you can also use *external* Gems that are provided by a source outside of O3DE. Before you can use external gems in your project, you must register the Gem. Registering a Gem allows your project to find the Gem's folder path. Gem folders can live in the same drive as your engine, or in another drive. 
+You can also register *external* Gems from a source outside of O3DE so that they too can be used in your project. Registering a Gem enables your project to find the Gem. Gem folders can be located anywhere on your computer.
 
-After you've registered a Gem, you must enable the Gem to use it in your project. Refer to [Configure Gems](/docs/user-guide/project-config/add-remove-gems/) for instructions on enabling or disabling a Gem. 
+After you've registered a Gem, you can enable it for use in your project. Refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/) for instructions on enabling or disabling a Gem.
 
 ## Register
 
