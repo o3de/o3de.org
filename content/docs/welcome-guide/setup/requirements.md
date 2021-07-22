@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections.
+Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections. In addition, some of the software requires specific configurations, as detailed in the [Software configuration](#software-configuration) section.
 
 ## Hardware requirements
 
@@ -43,9 +43,11 @@ See the following sections for additional configuration instructions.
 Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
 {{< /note >}}
 
+## Software configuration
+
 ### CMake configuration
 
-Several O3DE CLI scripts require the `cmake.exe` command line tool to be available from a command line window. You can check to see if this tool is on the system path by opening a command prompt and using the `--version` command.
+Several O3DE CLI scripts require the `cmake.exe` command line tool to be available from a command line window. To see if this tool is on the system path, open a command prompt and use the `--version` command.
 
    ```cmd
    cmake --version
