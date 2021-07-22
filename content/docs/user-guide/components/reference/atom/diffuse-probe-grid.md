@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **Diffuse Probe Grid component** creates a volume of light probes that provides diffuse global illumination in a specified area.
+The **Diffuse Probe Grid component** creates a volume of light probes that provide diffuse global illumination within the specified area.
 
 
 ## Provider ##

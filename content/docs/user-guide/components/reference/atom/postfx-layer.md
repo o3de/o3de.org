@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **PostFx Layer** component is used to control how PostFx components, such as Depth of Field and Exposure Control, are applied in a scene.
+The **PostFx Layer** component controls how post-processing effects' (PostFX) are applied in a scene.
 
 ## Provider ##
 

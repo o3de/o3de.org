@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **Global Skylight (IBL)** component creates an image-based global illumination effect that calculates lighting for a scene based on an HDR skybox image.
+The **Global Skylight (IBL)** component creates an image-based global illumination effect that calculates light for a scene using an HDR skybox image. 
 
 
 ## Provider ##

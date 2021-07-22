@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **PostFX Shape Weight Modifier** component limits the PostFX to a volume of space that is defined by a shape component. The weight of the PostFX remains constant within the shape component's bounds, but it begins to fade outside of the bounds.
+The **PostFX Shape Weight Modifier** component limits post-processing effects (PostFX) to a volume of space that is defined by a shape component. The weight of the PostFX remains constant within the shape component's bounds, but it begins to fade outside of the bounds.
 
 
 ## Provider ##

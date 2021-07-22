@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **SSAO** component implements the screen space ambient occlusion (SSAO) technique to approximate indirect lighting in a scene.
+The **SSAO** component approximates indirect lighting in a scene by using the *screen space ambient occlusion* technique.
 
 
 ## Provider ##

@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **PostFX Gradient Weight Modifier** component modifies the PostFx's weight based on another entity's gradient signal.
+The **PostFX Gradient Weight Modifier** component modifies post-processing effects' (PostFX) weight based on another entity's gradient signal.
 
 
 ## Provider ##

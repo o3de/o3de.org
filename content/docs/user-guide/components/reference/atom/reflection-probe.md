@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **Reflection Probe** creates specular reflections in the environment around a probe, or a capture point.
+The **Reflection Probe** creates specular reflections in the environment around a probe (capture point). 
 
 
 ## Provider ##

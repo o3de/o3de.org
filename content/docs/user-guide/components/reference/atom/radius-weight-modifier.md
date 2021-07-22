@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **Radius Weight Modifier** component modifies the weight of a PostFX based on the camera's distance to the center. The PostFX is most effective at the center of the sphere, and lerps as the camera approaches the surface of the sphere.
+The **Radius Weight Modifier** component modifies post-processing effects' (PostFX) weight based on the camera's distance to the center.
 
 
 ## Provider ##

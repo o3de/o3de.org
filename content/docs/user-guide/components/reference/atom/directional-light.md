@@ -7,7 +7,7 @@ toc: true
 
 {{< preview-new >}}
 
-The **Directional Light** component casts light from from an infinitely distant point in a single direction, similar to sunlight.
+The **Directional Light** component casts light from an infinitely distant point towards a single direction, similar to sunlight. This component also supports shadow casting. 
 
 
 ## Provider ##
