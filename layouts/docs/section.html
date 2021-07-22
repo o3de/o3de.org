@@ -10,17 +10,17 @@
           <div class="col-12 col-md-12 col-xl-12 order-1 order-xl-1">
           {{ partial "single-header.html" . }}
           </div>
-          <div class="col order-3 order-xl-2">
-            <h1 class="title">{{ .Page.Title | markdownify }}</h1>
-            {{ partial "docs/content.html" . }}  
-            <hr class="mt-5" />   
-            {{ partial "footer-content.html" . }}
-          </div>
           {{ if and (ge (len .TableOfContents) 100) (ne .Params.toc "false") }}
             <div class="col-12 col-xl-2 pt-5 order-2 order-xl-3">
               {{ partial "docs/docs-nav.html" . }}
             </div>
           {{ end }}
+          <div class="col-12 col-xl-10 order-3 order-xl-2">
+            <h1 class="title">{{ .Page.Title | markdownify }}</h1>
+            {{ partial "docs/content.html" . }}  
+            <hr class="mt-5" />   
+            {{ partial "footer-content.html" . }}
+          </div>
         </div>
       </section>
     </section>
