@@ -1,51 +1,52 @@
 ---
 linktitle: Adding and Removing Gems
 title: Adding and Removing Gems in a Project
-description: 'Learn how to add and remove Gems in a project in Open 3D Engine.'
+description: Learn how to add and remove Gems in a project in Open 3D Engine.
 toc: true
+weight: 120
 ---
 
 {{< preview-new >}}
 
-This tutorial shows you how to add and remove Gems in your project by using the **Project Manager** or the command line interface (CLI) in Open 3D Engine (O3DE). Gems provide features and assets to your project. For more details on Gems and what Gems are available with O3DE, refer to the [Gems](/docs/user-guide/gems) section. 
+This tutorial shows you how to add and remove Gems in your project by using the **Project Manager** or the command line interface (CLI) in Open 3D Engine (O3DE). Gems provide features and assets to your project. For more details on Gems and what Gems are available with O3DE, refer to the [Gems](/docs/user-guide/gems) section.
 
-O3DE is pre-requipped with many Gems that you can add to or remove from your project, but you can also use *external*  Gems from other sources. External Gems must be registered to your project before you can enable it. Refer to [Register Gems](/docs/user-guide/project-config/register-gems/) for instructions.
+O3DE includes many Gems that you can add to your project. You can also use Gems from *external* sources. External Gems must be registered to your project before you can enable them. Refer to [Registering Gems](/docs/user-guide/project-config/register-gems/) for instructions on how to register additional Gems.
 
+## Overview
 
-## Steps  
-The basic steps to configure Gems are as follows:
+The basic steps to configure Gems for your project are as follows:
 
-1. (Optional) If adding an external Gem, you must register the Gem to your project.
-   
-2. Filter or search through the Gem catalog, and enable or disable a Gem.
-   
-3. Save changes. 
-   
-4. Rebuild your project. 
+1. (Optional) Register the Gem if it is from an external source.
 
+1. Locate the Gem you want to enable or disable.
 
-## Project Manager
+1. Enable or disable the Gem.
 
-### Quick Start
+1. Save changes.
 
-1. Launch **Project Manager**, which is located in your engine folder in `bin\Windows\profile\o3de.exe`.
-   
-2. Open the menu for a project and select the **Edit Project Settings...** button.
+1. Rebuild your project (if necessary).
+
+## Using Project Manager
+
+### Opening the Configure Gems screen
+
+1. Launch **Project Manager**, which can be found on your desktop or in `bin/Windows/profile/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
+
+1. Open the menu for a project and select the **Edit Project Settings...** button.
 
     ![For a project, go to the menu and select 'Edit Project Settings'. ](/images/user-guide/project-config/add-remove-gems/quick-start-1.png)
 
-3. Select the **Configure Gems** button.
-    
+1. Select the **Configure Gems** button.
+
     ![Select the 'Configure Gems' button to open the Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/quick-start-2.png)
 
-
-4. In the Configure Gems screen, you can filter through or search for available Gems, and enable or disable Gems for your project. 
-   
-    Some Gems require a rebuild of your project in order to work. If so, a warning message will appear after you save your configuration.
+1. In the **Configure Gems** screen, you can filter or search for available Gems. Scroll through the resulting list to find the Gem you want to enable or disable for your project.
 
     ![Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/quick-start-3.png)
 
-### Filter
+### Locating Gems
+
+**Filtering the catalog**
 
 Filter the Gem catalog to help you find a particular set of Gems. 
 
@@ -60,41 +61,48 @@ You can filter by the following groups:
 | Supported Platforms | Displays Gems based on the platforms that support it. |
 | Features | Displays Gems based on its provided features. |
 
-### Search
+**Searching the catalog**
 
 Search the Gem catalog by entering the Gem name in the search field.  
 
 ![Search field](/images/user-guide/project-config/add-remove-gems/ui-search.png)
 
+**Viewing Gem details**
 
-### View details
-
-Select a Gem to view its description, other Gems it depends on or conflicts with, and additional information. 
+Select a Gem to view its description, other Gems it depends on or conflicts with, and additional information.
 
 ![View Gem details](/images/user-guide/project-config/add-remove-gems/ui-gem-details.png)
 
+### Enabling or disabling Gems
 
-
-### Enable or disable
-
-Enable or Disable Gems in your project by toggling **Selected** for a given Gem. 
+Enable or disable Gems in your project by toggling the switch under the **Selected** column for a given Gem.
 
 ![Gems to enable or disable during configuration.](/images/user-guide/project-config/add-remove-gems/ui-enable-disable-gem.png)
 
-You can enable or disable multiple Gems at once. The changes you want to make are summarized in the top right corner of the window. Select the Gem bag icon to view the Gems to enable or disable. These changes become active only after you've saved and (depending on the configuration) rebuilt your project. 
+You can enable or disable multiple Gems at once. The changes that will be made to the project are summarized in the top right corner of the window. Select the Gem bag icon to view the Gems to enable or disable. These changes will take effect after you've saved and (depending on the Gem requirements) rebuilt your project.
 
 ![Gems to enable or disable during Gem configuration.](/images/user-guide/project-config/add-remove-gems/ui-gem-changes.png)
 
+### Saving and rebuilding
 
-## Command line Interface (CLI)
+1. Select the **Save** button when you are finished adding and removing Gems from your project.
 
-You can also configure Gems using the CLI. Refer to [CLI Reference](docs/user-guide/project-config/cli-reference/) for more details on supported CLI commands. 
+1. Asset-only Gems do not typically require a rebuild of your project, however Gems that include code do. When you save changes to your project configuration, a warning message will appear if you need to rebuild.
 
-### Enable or disable
-1. Open a command prompt to the folder where your engine lives.
+    ![Project rebuild warning](/images/user-guide/project-config/add-remove-gems/project-rebuild-warning.png)
 
-2. Use the following commands to enable or disable a Gem for a project. 
-   
+1. In the Project Manager home screen, select the **Build Project** button on your project to rebuild it (if necessary).
+
+    ![Build project button](/images/user-guide/project-config/add-remove-gems/project-build-button.png)
+
+## Using the Command Line Interface (CLI)
+
+You can also configure Gems using the CLI. Refer to [CLI Reference](docs/user-guide/project-config/cli-reference/) for additional supported CLI commands.
+
+1. Open a command prompt to the folder where your engine is located.
+
+1. Use the following commands to enable or disable a Gem for a project.
+
     **Enable**
 
     ```cmd
@@ -104,11 +112,13 @@ You can also configure Gems using the CLI. Refer to [CLI Reference](docs/user-gu
     **Disable**
 
     ```cmd
-    scripts/o3de enable-gem -gp <gem-path> -pp <project-path>
+    scripts/o3de disable-gem -gp <gem-path> -pp <project-path>
     ```
 
-    There are other variations of options you can use that specifies either the name or path of the Gem and project.
+    There are several variations of these commands that you can use to specify either the name or the path of the Gem and project.
     - `-gp`, `--gem-path`: Path to the Gem folder (can be absolute or relative).
     - `-gn`, `--gem-name`: Name of the Gem, which can be found in the Gem's `gem.json` configuration file. 
     - `-pp`, `--project-path`: Path to the project folder (can be absolute or relative).
-    - `-pn`, `--project-name`: Name of the project, which can be found in the project's `project.json` configuration file. 
+    - `-pn`, `--project-name`: Name of the project, which can be found in the project's `project.json` configuration file.
+
+1. Rebuild your project. Refer to the [Build](/docs/user-guide/build) section for more information about building your project from the command line.
