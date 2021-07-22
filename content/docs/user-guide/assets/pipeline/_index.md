@@ -21,14 +21,11 @@ The Asset Processor detects changes in the directories that contain input assets
 Each output directory in the asset cache represents a full image of all files (except for executables and related files) needed to run the game. The Asset Processor curates the directory to keep it up to date, ensuring that new files are ready to use in the game and O3DE Editor as soon as possible. Game runtimes load assets only from the asset cache and never directly from your input source folders.
 
 **Topics**
-+ [Using Asset Processor](/docs/user-guide/assets/pipeline/processor.md)
-+ [Configuring the Asset Pipeline](/docs/user-guide/assets/pipeline/configuring.md)
-+ [Configuring Image Processing](/docs/user-guide/assets/pipeline/configuring-image-processing.md)
-+ [Live Reloading and VFS](/docs/user-guide/assets/pipeline/live-reloading.md)
++ [Using Asset Processor](/docs/user-guide/assets/pipeline/processor)
++ [Configuring the Asset Pipeline](/docs/user-guide/assets/pipeline/configuring)
 + [Move assets](./move-assets)
 + [Compiling Shaders for Release Builds](/docs/userguide/assets/pipeline/shader-compilation.md)
 + [Shader Compiler Proxy](/docs/userguide/assets/pipeline/shader-compiler.md)
 + [Shader Cache and Generation](/docs/userguide/materials/shaders/custom-dev-cache-intro.md)
-+ [Game Startup Sequence](/docs/user-guide/assets/pipeline/game-sequence.md)
 + [Asset Browser](/docs/user-guide/editor/asset-browser.md)
 + [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/pipeline/asset-system-programming.md)

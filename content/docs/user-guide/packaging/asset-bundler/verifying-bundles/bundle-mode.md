@@ -43,7 +43,7 @@ If you use the `sys_report_files_not_found_in_paks` console variable with the la
 
 Enabling the console variable before running the editor or launcher ensures that all missing assets are reported. To ensure that the console variable is always active when you run the editor or launcher, modify `editor.cfg` and `autoexec.cfg` in your project directory.
 
-You can also enable the console variable at runtime by using the console (**\~**) or remote console. For information about the remote console, see [Universal Remote Console](/docs/user-guide/engine/remote-console.md).
+You can also enable the console variable at runtime by using the console (**\~**) or remote console.
 
 ## Bundle Mode Commands
 

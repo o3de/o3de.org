@@ -2,6 +2,7 @@
 description: ' Use the Resource Compiler image tool to manually select an image
   processing preset in Open 3D Engine and then save the settings to source control. '
 title: Using the Resource Compiler Image Tool
+draft: true
 ---
 
 {{< preview-migrated >}}

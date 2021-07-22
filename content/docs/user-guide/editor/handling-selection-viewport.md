@@ -2,6 +2,7 @@
 description: ' Update your component so that it knows how to handle selection in the
   Open 3D Engine viewport. '
 title: 'Step 5: Handle Selection in the Viewport'
+draft: true
 ---
 
 {{< preview-migrated >}}
