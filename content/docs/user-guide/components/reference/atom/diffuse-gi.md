@@ -2,11 +2,12 @@
 title: Diffuse Global Illumination component
 linktitle: Diffuse Global Illumination
 description: ' Open 3D Engine (O3DE) Diffuse Global Illumination component reference. '
+toc: true
 ---
 
 {{< preview-new >}}
 
-The **Diffuse Global Illumination** component is a Level component that controls the quality level of all the Diffuse Probe Grid components, which adds global illumination to areas in the scene. Global illumination calculates the effect of light bounce, reflection, scatter, and absorption throughout an environment. It simulates real-world lighting behavior, where objects are lit both from the light source and from the light reflected by other objects. 
+The **Diffuse Global Illumination** component is a Level component that controls the quality level of global illumination that **Diffuse Probe Grid** components provide. The diffuse global illumination technique calculates the effect of light bounce, reflection, scatter, and absorption throughout an environment. It simulates real-world lighting behavior, where objects are lit both from the light source and from the light reflected by other objects. 
 
 ## Provider ##
 

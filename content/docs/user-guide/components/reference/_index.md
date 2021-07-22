@@ -46,29 +46,31 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Bloom | Simulates real-world light bleeding, or glow. |
-| Decal (Atom) | Projects a texture material in a single direction onto mesh surfaces. |
-| Deferred Fog | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
-| Depth of Field | Simulates the lens effects of real world cameras that focus on a specific area. |
-| Diffuse Probe Grid | Creates a volume of light probes that provides diffuse global illumination in a specified area. |
-| Directional Light | Casts light from an infinitely distant point in a single direction, similar to sunlight, and supports shadow casting. |
-| Display Mapper | Configures tone mapping and color grading for the scene. |
-| Entity Reference | Allows you to provide an entity with references to other entities. |
-| Exposure Control | Adjusts the amount of light the camera exposes in the scene. |
-| Global Skylight (IBL) | Creates an image-based global illumination effect that calculates lighting for a scene using an HDR skybox image. |
-| Grid | Adds a customizeable grid to the scene. |
-| HDRi Skybox | Creates a skybox in your scene using an HDR image. |
+| [Bloom](/docs/user-guide/components/reference/atom/bloom/) | Simulates real-world light bleeding, or glow. |
+| [Decal (Atom)](/docs/user-guide/components/reference/atom/decal/) | Projects a texture material in a single direction onto mesh surfaces. |
+| [Deferred Fog](/docs/user-guide/components/reference/atom/deferred-fog/) | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
+| [Depth of Field](/docs/user-guide/components/reference/atom/depth-of-field/) | Simulates the lens effects of real world cameras that focus on a specific area. |
+| [Diffuse Global Illumination](/docs/user-guide/components/reference/atom/diffuse-gi/) | Controls the quality level of global illumination that **Diffuse Probe Grid** components provide.  | 
+| [Diffuse Probe Grid](/docs/user-guide/components/reference/atom/diffuse-probe-grid/) | Creates a volume of light probes that provide diffuse global illumination within the specified area. |
+| [Directional Light](/docs/user-guide/components/reference/atom/directional-light/) | Casts light from an infinitely distant point towards a single direction, similar to sunlight. |
+| [Display Mapper](/docs/user-guide/components/reference/atom/display-mapper/) | Configures tone mapping and color grading for the scene. |
+| [Entity Reference](/docs/user-guide/components/reference/atom/entity-reference/) | Allows you to provide an entity with references to other entities. |
+| [Exposure Control](/docs/user-guide/components/reference/atom/exposure-control/) | Adjusts the amount of light the camera exposes in the scene. |
+| [Global Skylight (IBL)](/docs/user-guide/components/reference/atom/global-skylight-ibl/) | Creates an image-based global illumination effect that calculates light for a scene using an HDR skybox image. |
+| [Grid](/docs/user-guide/components/reference/atom/grid/) | Adds a customizeable grid to the scene. |
+| [HDRi Skybox](/docs/user-guide/components/reference/atom/hdri-skybox/) | Creates a skybox in your scene using an HDR image. |
 | [Light](/docs/user-guide/components/reference/atom/light) | Simulates soft studio light by creating various types of punctual and area lights. |
-| Look Modification | Configures a color grading look-up table (LUT). |
-| Material | Adds a material on the object's mesh. |
-| Mesh | Specifies a model to render. |
-| Occlusion Culling Plane | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
-| Physical Sky | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
-| PostFX Gradient Weight Modifier | Modifies the Post FX's weight based on another entity's gradient signal. |
-| PostFX Shape Weight Modifier | Controls how Post FX components, such as Depth of Field and Exposure Control, are applied in a scene.|
-| Radius Weight Modifier | Modifies the weight of a Post FX component based on the camera's distance to the center. |
-| Reflection Probe | Provides specular reflections for the environment around a probe, or a capture point. |
-| SSAO | Uses the screen space ambient occlusion technique to approximate indirect lighting in a scene. |
+| [Look Modification](/docs/user-guide/components/reference/atom/look-modification/) | Configures a color grading look-up table (LUT). |
+| [Material](/docs/user-guide/components/reference/atom/material/) | Adds a material on the object's mesh. |
+| [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
+| [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
+| [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
+| [PostFX Gradient Weight Modifier](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/) | Modifies post-processing effects' (PostFX) weight based on another entity's gradient signal. |
+| [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/) | Controls how PostFX are applied in a scene. |
+| [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/) | Limits PostFX to a volume of space that's defined by a **Shape** component. The PostFX's weight remains constant within the volume, and it begins to fade outside of the volume.|
+| [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/) | Modifies PostFX's weight based on the camera's distance to the center. |
+| [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
+| [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
 
 ### Audio
 | Component | Description | 
