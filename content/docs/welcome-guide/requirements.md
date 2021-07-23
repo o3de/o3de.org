@@ -2,7 +2,7 @@
 linktitle: System Requirements
 title: O3DE System Requirements
 description: View the system requirements for development with Open 3D Engine (O3DE).
-weight: 100
+weight: 300
 toc: true
 ---
 

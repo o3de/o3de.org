@@ -21,8 +21,8 @@ The instructions here and in the video will guide you through the following step
 The instructions here assume that you have:
 
 * [Git client](https://git-scm.com/downloads) installed (1.8.2 or later required, 2.23.4 or later recommended).
-* Met all hardware and software requirements listed in [O3DE System Requirements](./requirements).
-* Configured the required software as described in the [Software configuration](./requirements#software-configuration) section of the system requirements topic.
+* Met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
+* Configured the required software as described in the [Software configuration](../requirements#software-configuration) section of the system requirements topic.
 
 ## Configure credentials for Git LFS
 
@@ -175,7 +175,7 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
 
     This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
 
-1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [System Requirements](./requirements) page for installation instructions.
+1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
 
     Open a command prompt to the directory where you set up O3DE and run the `get_python` script.
 
@@ -232,4 +232,4 @@ Registering the O3DE engine enables O3DE projects to find the engine, even when 
 
     The O3DE manifest file is `<USER_DIRECTORY>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
 
-You are now ready to create a project! For an introduction to project configuration, refer to [Intro to Project Configuration](/docs/welcome-guide/get-started/project-config).
+You are now ready to create a project! For an introduction to project configuration, refer to [Project Creation with Open 3D Engine](/docs/welcome-guide/create).

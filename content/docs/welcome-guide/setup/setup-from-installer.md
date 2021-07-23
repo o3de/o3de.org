@@ -11,8 +11,8 @@ To get started quickly with O3DE, download and run the installer. The following 
 
 The instructions here assume that you have:
 
-* Met all hardware and software requirements listed in [O3DE System Requirements](./requirements).
-* Configured the required software as described in the [Software configuration](./requirements#software-configuration) section of the system requirements topic.
+* Met all hardware and software requirements listed in [O3DE System Requirements](../requirements).
+* Configured the required software as described in the [Software configuration](../requirements#software-configuration) section of the system requirements topic.
 
 ## Installing O3DE
 
@@ -40,10 +40,10 @@ The instructions here assume that you have:
 
     ![O3DE Editor icon](/images/welcome-guide/desktop-icon-editor.png) **O3DE Editor**
 
-    Editor is a central hub for O3DE's creative tools. To help you implement your project goals, use Editor to place and group entities, add components, configure properties, and open supporting tools such as **Animation Editor** and **Script Canvas**. To learn more about Editor, take the [Editor tour](/docs/welcome-guide/get-started/editor-tour).
+    Editor is a central hub for O3DE's creative tools. To help you implement your project goals, use Editor to place and group entities, add components, configure properties, and open supporting tools such as **Animation Editor** and **Script Canvas**. To learn more about Editor, take the [Editor tour](/docs/welcome-guide/tours/editor-tour).
 
     ![O3DE Project Manager icon](/images/welcome-guide/desktop-icon-project-manager.png) **O3DE Project Manager**
 
     Create and customize projects using the Project Manager tool. To add or remove functionality for your project, you can also enable or disable Gems.
 
-    For an introduction to Project Manager and help creating your first project, continue to [Creating Projects Using the Open 3D Engine Project Manager](/docs/welcome-guide/get-started/project-config/creating-projects-using-project-manager) to take an introductory tutorial.
+    For an introduction to Project Manager and help creating your first project, continue to [Creating Projects Using the Open 3D Engine Project Manager](/docs/welcome-guide/create/creating-projects-using-project-manager) to take an introductory tutorial.
