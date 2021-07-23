@@ -15,20 +15,22 @@ Snippets of code and code-generated files in this guide are meant to be taken as
 
 ## Network Entity
 
-In order for an entity to be replicated from a server down to clients, that entity needs to have two components on it:
+In order for an entity to be replicated from a server down to clients, the entity must have the following two components on it:
 
 * Network Binding Component
 * Network Transform Component
 
-We will start by looking at what happens when a new prefab spawns on the server and how it gets replicated down to a client.
+![Network Binding and Transform Components](/images/user-guide/multiplayer/network_binding_and_transform_components.png)
 
-### Topic: How Does A Server Find Out about a newly spawned prefab?
+With this context in mind, let's go over some important questions and scenarios in replication code of Multiplayer Gem.
+
+## Topics
+
+### How Does A Server Find Out About A New Network Entity?
 
 ```c++
 Multiplayer.dll!Multiplayer::ServerToClientReplicationWindow::OnEntityActivated(AZ::Entity * entity) Line 220 C++
-Multiplayer.dll!AZStd::Internal::function_util::get_invoker<void __cdecl(AZ::Entity *),AZStd::Internal::function_util::function_obj_tag,AZStd::allocator>::call<<lambda_bfc0d0adf3d4bfe496a5db4663bc93f1>>(AZStd::Internal::function_util::function_buffer & function_obj_ptr, AZ::Entity * && <args_0>) Line 179 C++
-[Inline Frame] MultiplayerSample.ServerLauncher.exe!AZStd::function_intermediate<void,AZ::Entity *>::operator()(AZ::Entity * &&) Line 610 C++
-[Inline Frame] MultiplayerSample.ServerLauncher.exe!AZStd::function<void __cdecl(AZ::Entity *)>::operator()(AZ::Entity * <args_0>) Line 690 C++
+...
 MultiplayerSample.ServerLauncher.exe!AZ::Event<AZ::Entity *>::Signal(AZ::Entity * const & <params_0>) Line 253 C++
 MultiplayerSample.ServerLauncher.exe!AZ::ComponentApplication::SignalEntityActivated(AZ::Entity * entity) Line 1042 C++
 MultiplayerSample.ServerLauncher.exe!AZ::Entity::Activate() Line 228 C++
@@ -36,6 +38,130 @@ MultiplayerSample.ServerLauncher.exe!AzFramework::GameEntityContextComponent::On
 MultiplayerSample.ServerLauncher.exe!AzFramework::EntityContext::HandleEntitiesAdded(const AZStd::vector<AZ::Entity *,AZStd::allocator> & entities) Line 184 C++
 MultiplayerSample.ServerLauncher.exe!AzFramework::SliceEntityOwnershipService::AddEntity(AZ::Entity * entity) Line 122 C++
 ```
+
+`ServerToClientReplicationWindow` is a server-side object that handles entity replication to a client. There is one of such objects for each connected client to a server. It signs up for entity activation events, whenever a new entity is activated that has network components on them, it will add it for replication, if applicable.
+
+However, the actual serialization occurs in another important class - `EntityReplicationManager`. There is one `EntityReplicationManager` for each client connection:
+
+```c++
+Multiplayer.dll!Multiplayer::EntityReplicationManager::EntityReplicationManager(AzNetworking::IConnection & connection, AzNetworking::IConnectionListener & connectionListener, Multiplayer::EntityReplicationManager::Mode updateMode) Line 57 C++
+Multiplayer.dll!Multiplayer::ServerToClientConnectionData::ServerToClientConnectionData(AzNetworking::IConnection * connection, AzNetworking::IConnectionListener & connectionListener, Multiplayer::NetworkEntityHandle controlledEntity) Line 33 C++
+Multiplayer.dll!Multiplayer::MultiplayerSystemComponent::OnConnect(AzNetworking::IConnection * connection) Line 615 C++
+Multiplayer.dll!AzNetworking::UdpNetworkInterface::AcceptConnection(const AzNetworking::UdpReaderThread::ReceivedPacket & connectPacket) Line 650 C++
+Multiplayer.dll!AzNetworking::UdpNetworkInterface::Update(AZ::TimeMs deltaTimeMs) Line 186 C++
+Multiplayer.dll!AzNetworking::NetworkingSystemComponent::OnTick(float deltaTime, AZ::ScriptTimePoint time) Line 81 C++
+```
+
+On every server tick, `EntityReplicationManager` handles replication of network entities.
+
+```c++
+Multiplayer.dll!Multiplayer::EntityReplicator::EntityReplicator(Multiplayer::EntityReplicationManager & replicationManager, AzNetworking::IConnection * connection, Multiplayer::NetEntityRole remoteNetworkRole, const Multiplayer::ConstNetworkEntityHandle & entityHandle) Line 60 C++
+Multiplayer.dll!AZStd::make_unique<Multiplayer::EntityReplicator,Multiplayer::EntityReplicationManager &,AzNetworking::IConnection *,enum Multiplayer::NetEntityRole &,Multiplayer::ConstNetworkEntityHandle const &>(Multiplayer::EntityReplicationManager & <args_0>, AzNetworking::IConnection * && <args_1>, Multiplayer::NetEntityRole & <args_2>, const Multiplayer::ConstNetworkEntityHandle & <args_3>) Line 54 C++
+Multiplayer.dll!Multiplayer::EntityReplicationManager::AddEntityReplicator(const Multiplayer::ConstNetworkEntityHandle & entityHandle, Multiplayer::NetEntityRole remoteNetworkRole) Line 399 C++
+Multiplayer.dll!Multiplayer::EntityReplicationManager::UpdateWindow() Line 982 C++
+...
+MultiplayerSample.ServerLauncher.exe!AZ::EventSchedulerSystemComponent::OnTick(float deltaTime, AZ::ScriptTimePoint time) Line 90 C++
+...
+MultiplayerSample.ServerLauncher.exe!AZ::Internal::EBusContainer<AZ::TickEvents,AZ::TickEvents,0,2>::Dispatcher<AZ::EBus<AZ::TickEvents,AZ::TickEvents>>::Broadcast<void (__cdecl AZ::TickEvents::*)(float,AZ::ScriptTimePoint),float &,AZ::ScriptTimePoint>(void(AZ::TickEvents::*)(float, AZ::ScriptTimePoint) && func, float & <args_0>, AZ::ScriptTimePoint && <args_1>) Line 1369 C++
+MultiplayerSample.ServerLauncher.exe!AZ::ComponentApplication::Tick(float deltaOverride) Line 1421 C++
+```
+
+For each network entity there is an `EntityReplicator` for each connected client, assuming that the entity is within awareness radius of `EntityReplicationManager`. Here is the variable that controls that:
+
+```c++
+AZ_CVAR(float, sv_ClientAwarenessRadius, 500.0f, nullptr, AZ::ConsoleFunctorFlags::Null, "The maximum distance entities can be from the client and still be relevant");
+```
+
+{{<important>}}
+While O3DE engine uses AZ::EntityId to identify entities, Multiplayer Gem introduces its own entity identifier: Multiplayer::NetEntityId.
+{{</important>}}
+
+```c++
+AZ_TYPE_SAFE_INTEGRAL(NetEntityId, uint32_t);
+static constexpr NetEntityId InvalidNetEntityId = static_cast<NetEntityId>(-1);
+```
+
+There is a one to one mapping between AZ::EntityId and Multiplayer::NetEntityId for network entities.
+
+
+
+### How Does a New Client on a Server Becomes Aware of Existing Entities?
+
+*	a queued even kicks off ServerToClientReplicationWindow::UpdateWindow
+*	that performs a sphere test around the player on the server and picks up any new or removed entities
+
+![Server Selecting Entities to Replicate to a Client](/images/user-guide/multiplayer/server_selecting_entities_for_player_to_replicate.png)
+
+
+### How Does a Server Mark an Entity as Autonomous on Clients?
+
+* NetBindComponent is the main network component on an entity. It keeps track of the net role of an entity - NetBindComponent::m_netEntityRole
+
+![Client Marking Components as Autonomous](/images/user-guide/multiplayer/on_client_marking_as_autonomous.png)
+
+Stack:
+```c++
+>	Multiplayer.dll!Multiplayer::NetBindComponent::PreInit(AZ::Entity * entity, const Multiplayer::PrefabEntityId & prefabEntityId, Multiplayer::NetEntityId netEntityId, Multiplayer::NetEntityRole netEntityRole) Line 497	C++
+ 	Multiplayer.dll!Multiplayer::NetworkEntityManager::CreateEntitiesImmediate(const Multiplayer::PrefabEntityId & prefabEntryId, Multiplayer::NetEntityId netEntityId, Multiplayer::NetEntityRole netEntityRole, Multiplayer::AutoActivate autoActivate, const AZ::Transform & transform) Line 448	C++
+ 	Multiplayer.dll!Multiplayer::EntityReplicationManager::HandlePropertyChangeMessage(Multiplayer::EntityReplicator * entityReplicator, AzNetworking::PacketId packetId, Multiplayer::NetEntityId netEntityId, Multiplayer::NetEntityRole localNetworkRole, AzNetworking::ISerializer & serializer, const Multiplayer::PrefabEntityId & prefabEntityId) Line 554	C++
+ 	Multiplayer.dll!Multiplayer::EntityReplicationManager::HandleEntityUpdateMessage(AzNetworking::IConnection * invokingConnection, const AzNetworking::IPacketHeader & packetHeader, const Multiplayer::NetworkEntityUpdateMessage & updateMessage) Line 805	C++
+ 	Multiplayer.dll!Multiplayer::MultiplayerSystemComponent::HandleRequest(AzNetworking::IConnection * connection, const AzNetworking::IPacketHeader & packetHeader, MultiplayerPackets::EntityUpdates & packet) Line 530	C++
+ 	Multiplayer.dll!MultiplayerPackets::DispatchPacket<Multiplayer::MultiplayerSystemComponent>(AzNetworking::IConnection * connection, const AzNetworking::IPacketHeader & packetHeader, AzNetworking::ISerializer & serializer, Multiplayer::MultiplayerSystemComponent & handler) Line 79	C++
+ 	Multiplayer.dll!AzNetworking::UdpNetworkInterface::Update(AZ::TimeMs deltaTimeMs) Line 276	C++
+ 	Multiplayer.dll!AzNetworking::NetworkingSystemComponent::OnTick(float deltaTime, AZ::ScriptTimePoint time) Line 81	C++
+ 	[Inline Frame] MultiplayerSample.GameLauncher.exe!AZStd::Internal::INVOKE(void(AZ::TickEvents::*)(float, AZ::ScriptTimePoint) &) Line 181	C++
+ 	[Inline Frame] MultiplayerSample.GameLauncher.exe!AZStd::invoke(void(AZ::TickEvents::*)(float, AZ::ScriptTimePoint) &) Line 42	C++
+ 	[Inline Frame] MultiplayerSample.GameLauncher.exe!AZ::EBusEventProcessingPolicy::Call(void(AZ::TickEvents::*)(float, AZ::ScriptTimePoint) &) Line 450	C++
+ 	[Inline Frame] MultiplayerSample.GameLauncher.exe!AZ::Debug::AssetTrackingEventProcessingPolicy<AZ::EBusEventProcessingPolicy>::Call(void(AZ::TickEvents::*)(float, AZ::ScriptTimePoint) &) Line 129	C++
+ 	MultiplayerSample.GameLauncher.exe!AZ::Internal::EBusContainer<AZ::TickEvents,AZ::TickEvents,0,2>::Dispatcher<AZ::EBus<AZ::TickEvents,AZ::TickEvents>>::Broadcast<void (__cdecl AZ::TickEvents::*)(float,AZ::ScriptTimePoint),float &,AZ::ScriptTimePoint>(void(AZ::TickEvents::*)(float, AZ::ScriptTimePoint) && func, float & <args_0>, AZ::ScriptTimePoint && <args_1>) Line 1369	C++
+ 	MultiplayerSample.GameLauncher.exe!AZ::ComponentApplication::Tick(float deltaOverride) Line 1421	C++
+```
+
+### Structure of Network Update Message
+
+```c++
+NetworkEntityUpdateMessage
+
+        NetEntityRole  m_networkRole = NetEntityRole::InvalidRole;
+        NetEntityId    m_entityId = InvalidNetEntityId;
+        bool           m_isDelete = false;
+        bool           m_wasMigrated = false;
+        bool           m_takeOwnership = false;
+        bool           m_hasValidPrefabId = false;
+        PrefabEntityId m_prefabEntityId;
+```
+
+* AutoActivate::DoNotActivate - prefabs are immediately instantiated one entity at a time (?), the entity is not activated until its prepared later on, I'm assuming prepared with the Entity Update packet payload
+* m_prefabEntityId - is an index to the entity within the prefab associated with the network entity id (which is different from AZ::EntityId)
+
+### How does O3DE Networking listen for changes in Components?
+
+Here is a flow of registering for changes in a component? (Transform Component in this example.)
+
+![Client Marking Components as Autonomous](/images/user-guide/multiplayer/server_listening_on_changes_in_components.png)
+
+
+### How does a change to a Network Property on a Server get replicated to Clients?
+
+An example of a stack:
+
+```c++
+> Multiplayer.dll!Multiplayer::NetworkTransformComponentBase::SerializeStateDeltaMessage(Multiplayer::ReplicationRecord & replicationRecord, AzNetworking::ISerializer & serializer) Line 974 C++
+  Multiplayer.dll!Multiplayer::NetBindComponent::SerializeStateDeltaMessage(Multiplayer::ReplicationRecord & replicationRecord, AzNetworking::ISerializer & serializer) Line 456 C++
+  [Inline Frame] Multiplayer.dll!Multiplayer::PropertyPublisher::SerializeUpdateEntityRecord(AzNetworking::ISerializer &) Line 168 C++
+  Multiplayer.dll!Multiplayer::PropertyPublisher::UpdateSerialization(AzNetworking::ISerializer & serializer) Line 306 C++
+  Multiplayer.dll!Multiplayer::EntityReplicator::GenerateUpdatePacket() Line 443 C++
+  Multiplayer.dll!Multiplayer::EntityReplicationManager::SendEntityUpdatesPacketHelper(AZ::TimeMs hostTimeMs, AZStd::deque<Multiplayer::EntityReplicator *,AZStd::allocator,2,8> & toSendList, unsigned int maxPayloadSize, AzNetworking::IConnection & connection) Line 142 C++
+  Multiplayer.dll!Multiplayer::EntityReplicationManager::SendEntityUpdates(AZ::TimeMs hostTimeMs) Line 273 C++
+  Multiplayer.dll!Multiplayer::EntityReplicationManager::SendUpdates(AZ::TimeMs hostTimeMs) Line 105 C++
+  Multiplayer.dll!Multiplayer::ServerToClientConnectionData::Update(AZ::TimeMs hostTimeMs) Line 79 C++
+  Multiplayer.dll!Multiplayer::MultiplayerSystemComponent::OnTick::__l9::<lambda>(AzNetworking::IConnection & connection) Line 321 C++
+```
+
+### Serialization Update Callstack
+
+
+![Server: Serialization Callstack](/images/user-guide/multiplayer/on_server_update_serialization_callstack.png)
 
 
 ## Network Transform Component
