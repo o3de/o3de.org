@@ -1,2 +1,7 @@
-/docs/userguide/*                       /docs/user-guide/deadlink
-/docs/user-guide/gems/reference/aws-*   /docs/user-guide/gems/reference/aws/aws-:splat
+/docs/userguide/*                                   /docs/user-guide/deadlink
+/docs/user-guide/gems/reference/aws-*               /docs/user-guide/gems/reference/aws/aws-:splat
+/docs/welcome-guide/setup/requirements              /docs/welcome-guide/requirements
+/docs/welcome-guide/get-started                     /docs/welcome-guide/create
+/docs/welcome-guide/get-started/project-config/*    /docs/welcome-guide/create/:splat
+/docs/welcome-guide/get-started/create-intro        /docs/welcome-guide/tours/create-intro
+/docs/welcome-guide/get-started/editor-tour         /docs/welcome-guide/tours/editor-tour

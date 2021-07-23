@@ -18,8 +18,8 @@ At the end of the tutorial you'll have a new O3DE project based on the default p
 
 The instructions that follow assume you have the following:
 
-* O3DE installed or built as an SDK on your computer. For help, see [Setup](/docs/welcome-guide/setup).
-* Met all hardware and software requirements listed in [System Requirements](/docs/welcome-guide/setup/requirements).
+* O3DE installed or built as an SDK on your computer. For help, see [Setting up Open 3D Engine](/docs/welcome-guide/setup).
+* Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 ## Launch Project Manager
 

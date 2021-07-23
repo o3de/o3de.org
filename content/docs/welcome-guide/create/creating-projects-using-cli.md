@@ -24,7 +24,7 @@ The following instructions assume that you have:
 
 * O3DE installed or built as an SDK on your computer. For help, refer to [Setting up Open 3D Engine](/docs/welcome-guide/setup).
 * An O3DE engine registered in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
-* Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/setup/requirements).
+* Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 ## Create a new O3DE project
 

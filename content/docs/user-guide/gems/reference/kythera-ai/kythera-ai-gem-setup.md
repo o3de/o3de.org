@@ -37,7 +37,7 @@ Building the project with the SDK version of the engine is not supported yet, so
 
 ## Add the Kythera Gem to a project
 
-1. Create a new project following the guide [intro to project configuration](/docs/welcome-guide/get-started/project-config).
+1. Create a new project following the guide to [Project Creation with O3DE](/docs/welcome-guide/create).
 
 1. Add `Kythera` to your project's `enabled_gems.cmake` file, which can be found in the `Code` subdirectory of the project.
 
