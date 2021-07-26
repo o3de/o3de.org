@@ -7,83 +7,60 @@ weight: 100
 
 ![A ship navigates Kythera City in 3D](/images/learning-guide/tutorials/ai/kythera-city-ship.png)
 
-The `KytheraCity` level demonstrates simple examples of setup for several Kythera AI features, in the Open3D (developers preview) build of the Kythera AI gem.  
-  
-The Kythera AI gem features demonstrated in this level are:  
+The `KytheraCity` level demonstrates simple examples of setup for several Kythera AI features, in the Open3D (developers preview) build of the Kythera AI gem.
+
+The Kythera AI gem features demonstrated in this level are:
 
 *   [2D Navmesh generation](/docs/user-guide/gems/reference/kythera-ai/navmesh-generation) and customizability
-    
 *   [3D Octree generation](/docs/user-guide/gems/reference/kythera-ai/octree-generation) and customizability
-    
 *   [Kythera Inspector](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) [behavior trees](/docs/user-guide/gems/reference/kythera-ai/behavior-tree-editor)
-    
 *   [Kythera Inspector Tool](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) debug draw
-    
 *   2D Pathfinding
-    
 *   3D Pathfinding
-    
 *   [3D splines](/docs/user-guide/gems/reference/kythera-ai/navigation-splines) and orientation
-    
 
 ## Kythera actors
 
-When you open the level, the first thing to note is that the level actors are split into prefabs.  
+When you open the level, the first thing to note is that the level actors are split into prefabs.
 This tutorial provides an overview of the entities and actors within `KytheraActors.prefab`.
 
-![](![Actors dialog](/images/learning-guide/tutorials/ai/kythera-city-actors.png)
+![Actors dialog](/images/learning-guide/tutorials/ai/kythera-city-actors.png)
 
-`KytheraActors\_City.prefab` is located in the `KytheraAIDemo/Prefabs` folder and needs to be saved manually, by right-clicking on the shaded part of the prefab in the Entity Outliner and clicking **Save prefab to file**.  
-  
-`KytheraActors\_City` is split into three parent entities that serve as a container to keep entities organized:
+`KytheraActors_City.prefab` is located in the `KytheraAIDemo/Prefabs` folder and needs to be saved manually, by right-clicking on the shaded part of the prefab in the Entity Outliner and clicking **Save prefab to file**.
 
-*   `Generation`
-    
+`KytheraActors_City` is split into three parent entities that serve as a container to keep entities organized:
+
+*   Generation
     *   Contains the `Navmesh Bounds` entity
-        
     *   Contains the `3DOctree` entity
-        
-*   `2D Actors`
-    
+*   2D Actors
     *   Contains `Robot.prefab`s for 2D navigation
-        
-*   `3D Actors`
-    
+*   3D Actors
     *   Contains three more parent entities:
-        
         *   3D POIs (points of interest)
-            
         *   3D ships
-            
-            *   `KytSpaceship`
-                
-            *   `KytSpaceship\_Splines`
-                
-            *   `KytDrone\_Splines`
-                
+            * KytSpaceship
+            * KytSpaceship_Splines
+            * KytDrone_Splines
         *   3D Splines
-            
-            *   Contains `Kyt\_Spline`s
-                
+            *   Contains Kyt_Spline(s)
+
 
 ## 2D navmesh generation and customizability
 
 When you open the level for the first time, you will need to regenerate and save the navmesh before you can simulate the AI.
 
-To regenerate and debug the navmesh:  
+To regenerate and debug the navmesh:
 
-*   In the Kythera Toolbar, set the navmesh select to `Basic`
-    
+*   In the Kythera Toolbar, set the navmesh select to `Basic`<br>
     ![Navmesh select](/images/learning-guide/tutorials/ai/kythera-city-navmesh-basic.png)
-	
-*   To generate the navmesh, click the **Regenerate Navmesh** icon in the Kythera Toolbar
+*   To generate the navmesh, click the **Regenerate Navmesh** icon in the Kythera Toolbar<br>
     ![Generating the navmesh](/images/learning-guide/tutorials/ai/kythera-city-navmesh-generate.png)
+*   Then save the navmesh to a file using the **Save** icon in the Kythera Toolbar<br>
+	  ![Saving the navmesh](/images/learning-guide/tutorials/ai/kythera-city-navmesh-save.png)
 
-*   Then save the navmesh to a file using the **Save** icon in the Kythera Toolbar
-	![Saving the navmesh](/images/learning-guide/tutorials/ai/kythera-city-navmesh-save.png)
+The NavMesh Bounds component comes with a `Polygon Prism Shape` component when you first add it, to help you scale the shape to your level's requirements in edit mode.
 
-The NavMesh Bounds component comes with a `Polygon Prism Shape` component when you first add it, to help you scale the shape to your level's requirements in edit mode.  
-  
 ![Entity Inspector showing NavMesh Bounds component](/images/learning-guide/tutorials/ai/kythera-city-navmesh-bounds-dialog.png)
 
 * Click and drag the red points to move them
@@ -94,12 +71,12 @@ The navmesh name we're using in this level is `Default`, and the properties and 
 
 ![The Polygon Prism Shape component](/images/learning-guide/tutorials/ai/kythera-city-navmesh-bounds.png)
 
-`Navmesh.xml` is customized to be consistent with the `Robot.prefab` (`KytRobot`) entity that contains the  
+`Navmesh.xml` is customized to be consistent with the `Robot.prefab` (`KytRobot`) entity that contains the
 PhysX character controller for accurate obstacle avoidance and slope transitioning.
 
 ![Customizing the navmesh](/images/learning-guide/tutorials/ai/kythera-city-navmesh-customize.png)
 
-```
+```xml
 <AgentHeight type="float">1.720000</AgentHeight>
 <AgentMaxClimb type="float">0.750000</AgentMaxClimb>
 <AgentMaxSlope type="float">60.000000</AgentMaxSlope>
@@ -121,65 +98,61 @@ The `3DOctree` entity's `Octree component` is an configured for accuracy at the 
 
 ![Octree debug draw](/images/learning-guide/tutorials/ai/kythera-city-octree.png)
 
-*   To generate the octree use the **Generate Octree** icon on the Kythera AI Toolbar, 
-    then make sure to save the octree using the **Save Octree** button
-    
+*   To generate the octree use the **Generate Octree** icon on the Kythera AI Toolbar,
+    then make sure to save the octree using the **Save Octree** button<br>
     ![Regenerate Octree toolbar icon](/images/learning-guide/tutorials/ai/kythera-city-octree-regenerate.png)
 *   To show debug draw for the Octree, enter the following commands in the O3DE console:
-    *   `_kyt\_drawmaster 1;_`
-    *   `_kyt\_drawnavoctree 2;_`
-        
+    *   `kyt_drawmaster 1`
+    *   `kyt_drawnavoctree 2`
+
 
 ![Enabling octree debug draw in the O3DE console](/images/learning-guide/tutorials/ai/kythera-city-octree-console.png)
 
-## Kythera AI Inspector tool (behavior trees and debug draw)  
+## Kythera AI Inspector tool (behavior trees and debug draw)
 
 The [Kythera AI Inspector](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) is a web-based tool that allows you to author behavior trees (BTs) and access advanced debug draw features. To launch the Kythera AI Inspector, click on the **Launch Inspector** icon in the Kythera Toolbar.
-  
+
 By default, the Inspector will show the blackboard view, where you can debug existing blackboard values, and enable or disable the debug draw options.
 
 ![The blackboard view in the Kythera AI Inspector](/images/learning-guide/tutorials/ai/kythera-city-inspector-bbview.png)
 
-To enable debug draw, expand Console Variables or drag it to the side to create a new tab.  
-Set console variable "Draw Master" to 1 and collapse console variables.  
-  
-Expand "debug options", here you can disable/enable various specific debug draw features.
+To enable debug draw, expand Console Variables or drag it to the side to create a new tab.
+Set console variable `Draw Master` to 1 and collapse console variables.
 
-To view the behavior trees, click on BT Editor at the top of the page and select a behavior tree name to edit.  
+Expand `debug options`, here you can disable/enable various specific debug draw features.
+
+To view the behavior trees, click on BT Editor at the top of the page and select a behavior tree name to edit.
 Make sure the Open3D game or editor isn't playing or simulating while editing the behavior trees.
 
 ![](/images/learning-guide/tutorials/ai/kythera-city-inspector-bteditor.png)
 
-Alternatively, you can view the behavior in live mode, go to:  
-  
-1. In the top menu bar choose the "Live" tab, then the "Behavior trees" tab below it
-2. Simulate or play the level in the Open3D editor. The Inspector will show "Kythera is active"
+Alternatively, you can view the behavior in live mode, go to:
+
+1. In the top menu bar choose the `Live` tab, then the `Behavior trees` tab below it
+2. Simulate or play the level in the Open3D editor. The Inspector will show `Kythera is active`
 3. Find an entity in the dropdown menu to see which behavior tree is in use.
-4. Click the "Live" button to the right of the dropdown menu to view the behavior tree in real time
+4. Click the `Live` button to the right of the dropdown menu to view the behavior tree in real time
 
 ## 2D pathfinding
 
 ![A 2D Kythera AI agent](/images/learning-guide/tutorials/ai/kythera-city-robot.png)
 
 2D Navigation is demonstrated by the `Robot.prefab`. The robots use the behavior `2DRandomWalk`, which chooses a random point in a specified range, then finds and follows a path to that point.
-  
-When duplicating or moving entities, be sure to select the top (shaded tab) of the prefab in the Entity Outliner, to prevent detached objects in the level.  
-  
+
+When duplicating or moving entities, be sure to select the top (shaded tab) of the prefab in the Entity Outliner, to prevent detached objects in the level.
+
 The `KytRobot` entity in the prefab has the following components, which are required for 2D navigation:
 
 *   `Kythera`
-    
 *   `PhysX Character Controller`, set to be consistent with `navmesh.xml`
-    
 *   `Agent`, set to use the profile `RandomWalk`
-    
 *   `SimpleMovementController`
-    
 The `RandomWalk` profile can be found in `KytheraAIDemo/Scripts/Profiles.xml`:
-```
-	<RandomWalk id="140" inheritanceParent="100" type="bb">
-		<DefaultBehavior type="string">2DRandomWalk</DefaultBehavior>
-	</RandomWalk>
+
+```xml
+<RandomWalk id="140" inheritanceParent="100" type="bb">
+  <DefaultBehavior type="string">2DRandomWalk</DefaultBehavior>
+</RandomWalk>
 ```
 The `DefaultBehavior` name must match the behavior name set in the inspector.
 
@@ -189,32 +162,27 @@ The `DefaultBehavior` name must match the behavior name set in the inspector.
 
 3D Pathfinding is demonstrated by KytSpacship entities within the level.
 
-The `KytSpaceship` entities use the behavior tree `3DGoToRandomEntityTag`, which searches for a random entity with a Kythera AI tag of `Kyt\_Point\_of\_interest`, then finds and follows a path to that entity.
+The `KytSpaceship` entities use the behavior tree `3DGoToRandomEntityTag`, which searches for a random entity with a Kythera AI tag of `Kyt_Point_of_interest`, then finds and follows a path to that entity.
 
-You can find the `Kythera3D\_Point\_of\_Interest\_Tagged` entities in the outliner, which contains a `Kythera` component with an added tag of `Kyt\_Point\_of\_interest`.
+You can find the `Kythera3D_Point_of_Interest_Tagged` entities in the outliner, which contains a `Kythera` component with an added tag of `Kyt_Point_of_interest`.
 
 !["Point of interest" entity in the Entity Outliner](/images/learning-guide/tutorials/ai/kythera-city-point-of-interest.png)
 
 The octree must be built and present in the level for 3D navigation behavior tree nodes to work.
-  
+
 The `KytSpaceship` entity has the following components, which are required for 3D navigation:
 
 *   `Kythera`
-    
 *   `PhysX Collider`, set to the convex shape of the ship
-    
 *   `Agent`, set to use the profile `GoToRandomEntityProfile`
-    
 *   `FlightMovementController`, which can be configured to change the speed and acceleration of the ships
-    
 *   `PhysX Rigid Body` (required by the movement controller)
-    
 
 The profile `GoToRandomEntityProfile` can be found in `KytheraAIDemo/Scripts/Profiles.xml`.
-```
-  <GoToRandomEntityProfile id="210" inheritanceParent="200" type="bb">
-    <DefaultBehavior type="string">3DGoToRandomEntityTag</DefaultBehavior>
-  </GoToRandomEntityProfile>
+```xml
+<GoToRandomEntityProfile id="210" inheritanceParent="200" type="bb">
+  <DefaultBehavior type="string">3DGoToRandomEntityTag</DefaultBehavior>
+</GoToRandomEntityProfile>
 ```
 The `DefaultBehavior` name must match the behavior name set in the inspector.
 
@@ -230,26 +198,22 @@ The level contains couple of `Kyt_Spline` actor entities which are set up with a
 
 In the above screenshot, the spline is  shown using the "Ghost Vehicle" visualisation, which shows the expected physical behavior for agents following the spline, including orientation and speed (the further apart the ghost vehicles appear, the faster the agents will travel.)
 
-The `KytSpaceship\_Splines` entity has the following components, which are required for 3D navigation:
+The `KytSpaceship_Splines` entity has the following components, which are required for 3D navigation:
 
 *   `Kythera`
-    
 *   `PhysX Collider`, set to the convex shape of the ship
-    
 *   `Agent`, set to use the profile `PathToNearestSplineStart`
-    
 *   `FlightMovementController`, which can be configured to change the speed and acceleration of the ships
-    
 *   `PhysX Rigid Body` (required by the movement controller)
 
-The `KytDrone\_Splines` entity is set up in almost exactly the same way as the `KytSpaceshp\_Splines`, except that its `Agent` component is set to use the profile `PathToNearestSplinePoint`.
-    
+The `KytDrone_Splines` entity is set up in almost exactly the same way as the `KytSpaceshp_Splines`, except that its `Agent` component is set to use the profile `PathToNearestSplinePoint`.
+
 The following debug draw features, which can be set from the Kythera AI Inspector, are useful for debugging 3D Navigation:
 
-*   `ConsoleVariables` → `DrawMaster` 1
-*   `ConsoleVariables` → `DrawOctree` = 2
-*   `Debug Options` → `Splines`
-*   `Debug Options` → `3D Path`
-*   `Debug Options` → `Velocity`
-*   `Debug Options` → `Speed`
-*   `Debug Options → `Steering Path`
+*   `ConsoleVariables` / `DrawMaster 1`
+*   `ConsoleVariables` / `DrawOctree 2`
+*   `Debug Options` / `Splines`
+*   `Debug Options` / `3D Path`
+*   `Debug Options` / `Velocity`
+*   `Debug Options` / `Speed`
+*   `Debug Options` / `Steering Path`
