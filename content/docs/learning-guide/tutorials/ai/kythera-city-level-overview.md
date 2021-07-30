@@ -177,7 +177,7 @@ The `KytSpaceship` entity has the following components, which are required for 3
 *   `FlightMovementController`, which you can configure to change the speed and acceleration of the ships
 *   `PhysX Rigid Body` (required by the movement controller)
 
-The profile `GoToRandomEntityProfile` can be found in `KytheraAIDemo/Scripts/Profiles.xml`.
+You can find the profile `GoToRandomEntityProfile` in `KytheraAIDemo/Scripts/Profiles.xml`.
 ```xml
 <GoToRandomEntityProfile id="210" inheritanceParent="200" type="bb">
   <DefaultBehavior type="string">3DGoToRandomEntityTag</DefaultBehavior>
