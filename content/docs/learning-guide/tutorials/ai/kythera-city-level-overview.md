@@ -121,7 +121,7 @@ Set console variable `Draw Master` to 1 and collapse console variables.
 Expand `debug options`, here you can disable/enable various specific debug draw features.
 
 To view the behavior trees, click on BT Editor at the top of the page and select a behavior tree name to edit.
-Make sure the Open3D game or editor isn't playing or simulating while editing the behavior trees.
+Make sure that the game or **O3DE Editor** isn't playing or simulating while editing the behavior trees.
 
 ![](/images/learning-guide/tutorials/ai/kythera-city-inspector-bteditor.png)
 
