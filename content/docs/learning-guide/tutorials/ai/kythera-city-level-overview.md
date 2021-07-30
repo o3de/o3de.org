@@ -20,7 +20,7 @@ The `KytheraCity` level demonstrates basic setup examples for several features o
 
 ## Kythera actors
 
-When you open the level, the first thing to note is that the level actors are split into prefabs.
+When you open the level, note first that the level actors are split into prefabs.
 This tutorial provides an overview of the entities and actors within `KytheraActors.prefab`.
 
 ![Actors dialog](/images/learning-guide/tutorials/ai/kythera-city-actors.png)
