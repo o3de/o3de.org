@@ -12,5 +12,5 @@ The Kythera AI Gem adds a broad toolset of AI features to Open 3D Engine (O3DE).
 
 This section contains tutorials on setting up various features of the Kythera AI Gem.
 
-* [2D Navigation](navigation-2d) - Creating an AI agent that performs ground-based navigation and follows a visually scripted behavior tree.
-* [Kythera City Level Overview](kythera-city-level-overview) - Overview of the demo level "Kythera City"
+* [2D Navigation with Kythera AI](navigation-2d) - A tutorial for creating an AI agent that performs ground-based navigation and follows a visually scripted behavior tree.
+* [Kythera City Level Overview](kythera-city-level-overview) - An overview of the demo level "Kythera City".
