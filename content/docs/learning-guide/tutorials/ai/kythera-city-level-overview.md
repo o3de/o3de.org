@@ -128,7 +128,7 @@ Make sure that the game or **O3DE Editor** isn't playing or simulating while edi
 Alternatively, you can view the behavior in live mode, go to:
 
 1. In the top menu bar choose the `Live` tab, then the `Behavior trees` tab below it
-2. Simulate or play the level in the Open3D editor. The Inspector will show `Kythera is active`
+2. Simulate or play the level in O3DE Editor. The Inspector shows `Kythera is active`.
 3. Find an entity in the dropdown menu to see which behavior tree is in use.
 4. Click the `Live` button to the right of the dropdown menu to view the behavior tree in real time
 
