@@ -193,7 +193,7 @@ The `DefaultBehavior` name must match the behavior name set in the inspector.
 
 ![Navigation Spline component dialog](/images/learning-guide/tutorials/ai/kythera-city-spline-dialog.png)
 
-The level contains couple of `Kyt_Spline` actor entities which are set up with a `Navigation Spline` component. The parameters of this component change the physics behavior of agents flying the spline.
+The level contains a couple of `Kyt_Spline` actor entities that are set up with a `Navigation Spline` component. The parameters of this component change the physics behavior of agents flying the spline.
 
 In the above screenshot, the spline is shown using the "Ghost Vehicle" visualization, which shows the expected physical behavior for agents following the spline, including orientation and speed. (The further apart the ghost vehicles appear, the faster the agents travel.)
 
