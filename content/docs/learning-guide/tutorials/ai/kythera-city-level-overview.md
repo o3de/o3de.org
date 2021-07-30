@@ -16,7 +16,7 @@ The `KytheraCity` level demonstrates basic setup examples for several features o
     * Debug drawing
 *   2D pathfinding
 *   3D pathfinding
-*   [3D splines](/docs/user-guide/gems/reference/kythera-ai/navigation-splines) and orientation
+*   [3D splines](/docs/user-guide/gems/reference/kythera-ai/navigation-splines-tool) and orientation
 
 ## Kythera actors
 
