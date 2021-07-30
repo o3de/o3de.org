@@ -9,7 +9,7 @@ weight: 100
 
 The `KytheraCity` level demonstrates basic setup examples for several features of the **Kythera AI** Gem in **Open 3D Engine (O3DE)** [Developer Preview]. These features include:
 
-*   [2D Navmesh generation](/docs/user-guide/gems/reference/kythera-ai/navmesh-generation) and customizability
+*   [2D navmesh generation](/docs/user-guide/gems/reference/kythera-ai/navmesh-generation) and customizability
 *   [3D Octree generation](/docs/user-guide/gems/reference/kythera-ai/octree-generation) and customizability
 * The [**Kythera AI Inspector**](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) tool, which includes:
     * [Behavior tree editing](/docs/user-guide/gems/reference/kythera-ai/behavior-tree-editor)
