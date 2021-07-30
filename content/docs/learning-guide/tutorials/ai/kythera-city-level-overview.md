@@ -174,7 +174,7 @@ The `KytSpaceship` entity has the following components, which are required for 3
 *   `Kythera`
 *   `PhysX Collider`, set to the convex shape of the ship
 *   `Agent`, set to use the profile `GoToRandomEntityProfile`
-*   `FlightMovementController`, which can be configured to change the speed and acceleration of the ships
+*   `FlightMovementController`, which you can configure to change the speed and acceleration of the ships
 *   `PhysX Rigid Body` (required by the movement controller)
 
 The profile `GoToRandomEntityProfile` can be found in `KytheraAIDemo/Scripts/Profiles.xml`.
