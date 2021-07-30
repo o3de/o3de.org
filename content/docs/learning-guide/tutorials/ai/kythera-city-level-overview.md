@@ -195,7 +195,7 @@ The `DefaultBehavior` name must match the behavior name set in the inspector.
 
 The level contains couple of `Kyt_Spline` actor entities which are set up with a `Navigation Spline` component. The parameters of this component change the physics behavior of agents flying the spline.
 
-In the above screenshot, the spline is  shown using the "Ghost Vehicle" visualisation, which shows the expected physical behavior for agents following the spline, including orientation and speed (the further apart the ghost vehicles appear, the faster the agents will travel.)
+In the above screenshot, the spline is shown using the "Ghost Vehicle" visualization, which shows the expected physical behavior for agents following the spline, including orientation and speed. (The further apart the ghost vehicles appear, the faster the agents travel.)
 
 The `KytSpaceship_Splines` entity has the following components, which are required for 3D navigation:
 
