@@ -14,8 +14,8 @@ The `KytheraCity` level demonstrates basic setup examples for several features o
 * The [**Kythera AI Inspector**](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) tool, which includes:
     * [Behavior tree editing](/docs/user-guide/gems/reference/kythera-ai/behavior-tree-editor)
     * Debug drawing
-*   2D Pathfinding
-*   3D Pathfinding
+*   2D pathfinding
+*   3D pathfinding
 *   [3D splines](/docs/user-guide/gems/reference/kythera-ai/navigation-splines) and orientation
 
 ## Kythera actors
