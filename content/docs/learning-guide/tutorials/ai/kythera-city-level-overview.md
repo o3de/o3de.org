@@ -189,7 +189,7 @@ The `DefaultBehavior` name must match the behavior name set in the inspector.
 
 ![A 3D Kythera AI agent following a navigation spline](/images/learning-guide/tutorials/ai/kythera-city-spaceship.png)
 
-3D splines are demonstrated using a few entities.
+The level demonstrates 3D splines using a few entities.
 
 ![Navigation Spline component dialog](/images/learning-guide/tutorials/ai/kythera-city-spline-dialog.png)
 
