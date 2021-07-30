@@ -25,7 +25,7 @@ This tutorial provides an overview of the entities and actors within `KytheraAct
 
 ![Actors dialog](/images/learning-guide/tutorials/ai/kythera-city-actors.png)
 
-`KytheraActors_City.prefab` is located in the `KytheraAIDemo/Prefabs` folder and needs to be saved manually, by right-clicking on the shaded part of the prefab in the Entity Outliner and clicking **Save prefab to file**.
+`KytheraActors_City.prefab` is located in the `KytheraAIDemo/Prefabs` folder and must be saved manually. To save it, right-click on the shaded part of the prefab in the Entity Outliner, and then click **Save prefab to file**.
 
 `KytheraActors_City` is split into three parent entities that serve as a container to keep entities organized:
 
