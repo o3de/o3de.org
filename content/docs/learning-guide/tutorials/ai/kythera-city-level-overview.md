@@ -11,8 +11,9 @@ The `KytheraCity` level demonstrates basic setup examples for several features o
 
 *   [2D Navmesh generation](/docs/user-guide/gems/reference/kythera-ai/navmesh-generation) and customizability
 *   [3D Octree generation](/docs/user-guide/gems/reference/kythera-ai/octree-generation) and customizability
-*   [Kythera Inspector](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) [behavior trees](/docs/user-guide/gems/reference/kythera-ai/behavior-tree-editor)
-*   [Kythera Inspector Tool](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) debug draw
+* The [**Kythera AI Inspector**](/docs/user-guide/gems/reference/kythera-ai/introduction-to-the-inspector) tool, which includes:
+    * [Behavior tree editing](/docs/user-guide/gems/reference/kythera-ai/behavior-tree-editor)
+    * Debug drawing
 *   2D Pathfinding
 *   3D Pathfinding
 *   [3D splines](/docs/user-guide/gems/reference/kythera-ai/navigation-splines) and orientation
