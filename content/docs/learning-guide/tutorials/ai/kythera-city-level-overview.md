@@ -7,9 +7,7 @@ weight: 100
 
 ![A ship navigates Kythera City in 3D](/images/learning-guide/tutorials/ai/kythera-city-ship.png)
 
-The `KytheraCity` level demonstrates simple examples of setup for several Kythera AI features, in the Open3D (developers preview) build of the Kythera AI gem.
-
-The Kythera AI gem features demonstrated in this level are:
+The `KytheraCity` level demonstrates basic setup examples for several features of the **Kythera AI** Gem in **Open 3D Engine (O3DE)** [Developer Preview]. These features include:
 
 *   [2D Navmesh generation](/docs/user-guide/gems/reference/kythera-ai/navmesh-generation) and customizability
 *   [3D Octree generation](/docs/user-guide/gems/reference/kythera-ai/octree-generation) and customizability
