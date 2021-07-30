@@ -207,7 +207,7 @@ The `KytSpaceship_Splines` entity has the following components, which are requir
 
 The `KytDrone_Splines` entity is set up in almost exactly the same way as the `KytSpaceshp_Splines`, except that its `Agent` component is set to use the profile `PathToNearestSplinePoint`.
 
-The following debug draw features, which can be set from the Kythera AI Inspector, are useful for debugging 3D Navigation:
+The following debug draw features, which you can set from the Kythera AI Inspector, are useful for debugging 3D navigation:
 
 *   `ConsoleVariables` / `DrawMaster 1`
 *   `ConsoleVariables` / `DrawOctree 2`
