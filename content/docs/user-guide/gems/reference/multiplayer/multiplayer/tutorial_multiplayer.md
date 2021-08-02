@@ -724,7 +724,7 @@ void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
 Only entities that are autonomous will have controllers, otherwise `GetController()` will give a null on clients. If you are getting a null on your `GetController` calls then you have attached your component to an entity that is not autonomous. Attach them to player prefabs instead, as those are marked as autonomous by the server.
 {{</important>}}
 
-You can find the player prefab for MultiplayerSample project at `D:\git\o3de-multiplayersample\Prefabs\Player.prefab`. At this point you should:
+You can find the player prefab for MultiplayerSample project at `\path\to\o3de-multiplayersample\Prefabs\Player.prefab`. At this point you should:
 
 - Instantiate a player prefab in the level temporarily.
 - Modify the player prefab instance by adding `MyFirstNetworkComponent` to `player` entity.
