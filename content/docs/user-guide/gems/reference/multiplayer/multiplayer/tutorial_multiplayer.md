@@ -722,8 +722,9 @@ void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
 
 {{<important>}}
 Only entities that are autonomous will have controllers, otherwise `GetController()` will give a null on clients. If you are getting a null on your `GetController` calls then you have attached your component to an entity that is not autonomous. Attach them to player prefabs instead, as those are marked as autonomous by the server.
-![My First Network Component in the Editor](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
 {{</important>}}
+
+![Attaching Network Component to an Autonomous Entity](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
 
 Here is our full source code for our component with RPC. For the header, `D:\git\MultiplayerSample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
 
