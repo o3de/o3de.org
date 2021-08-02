@@ -50,7 +50,7 @@ set(FILES
     Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
 ```
 
-Re-run cmake configure for your O3DE project, or build `MultiplayerSample.Static`. The failure will be expected, since we have not written our code on top of the code-generated files.
+Re-run cmake configure for your O3DE project, or build `MultiplayerSample.Static`. The failure is expected, since we have not written our code on top of the code-generated files.
 
 ```
 3>------ Build started: Project: MultiplayerSample.Static, Configuration: profile x64 ------
