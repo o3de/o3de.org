@@ -1,12 +1,13 @@
 ---
-title: Tutorial - Using Multiplayer Gem
+title: Tutorial - Your First Network Component
 linktitle: Tutorial Multiplayer
-description: Use Multiplayer Gem to create multiplayer experiences with O3DE Networking.
+description: Use Multiplayer Gem to create multiplayer components.
+toc: true
 ---
 
 
 
-## Introduction
+# Introduction
 
 
 This tutorial will link all the relevant documentation to provide you with a detailed guide on getting started with creating multiplayer components.
@@ -17,11 +18,11 @@ Our starting base will be O3DE MultiplayerSample project. You can find the instr
 
 
 
-## Network Components
+# Network Components
 
-### Adding a New Component
+## Add a New Component
 
-We will start by creating a network component - MyFirstNetworkComponent. It will be only do one thing - replicate a monotonic counter.
+We will start by creating a network component - MyFirstNetworkComponent. It will only do one thing, which is to replicate a monotonic counter.
 
 Since we already have MultiplayerSample setup for codegen, we can start by duplicating one of the existing codegen xml files.
 
@@ -157,32 +158,14 @@ Now, MultiplayerSample project should compile without any issues. You should be 
 
 ![My First Network Component in the Editor](/images/user-guide/multiplayer/my_first_network_component_in_editor.png)
 
+Additionally, you can find the generated files and your XML file in Visual Studio:
 
-### Adding a Network Property
+![Generated Code in Visual Studio](/images/user-guide/multiplayer/visualstudio_generated_files_for_myfirstnetworkcomponent.png)
 
-Let's add a network property that will replicate uptime from the server to clients.
 
-The property we should pay attention the most are the following:
+## Add a Network Property
 
-```xml
-  <NetworkProperty Type="double"
-                   Name="UpTime"
-                   Init="0.0"
-                   ReplicateFrom="Authority"
-                   ReplicateTo="Client"
-```
-
-One can think of the above in C++ way:
-
-```c++
-double m_UpTime = 0.0; // replicate from Authority to Client
-```
-
-{{<note>}}
-For now, we can just think of `Authority` as the multiplayer server. `Authority` to `Client` is the most common direction of replication.
-{{</note>}}
-
-Here is the full component XML:
+Let's add a network property that will replicate uptime from the server to clients. Here is an example of the xml file with a network property:
 
 ```xml
 <?xml version="1.0"?>
@@ -207,6 +190,26 @@ Here is the full component XML:
                    Description="Time since the start of the application" />
 </Component>
 ```
+
+Let's focus on the basic details of a `NetworkProperty`. These are:
+
+```xml
+  <NetworkProperty Type="double"
+                   Name="UpTime"
+                   Init="0.0"
+                   ReplicateFrom="Authority"
+                   ReplicateTo="Client"
+```
+
+One can think of the above as if expressed in a C++ way:
+
+```c++
+double m_UpTime = 0.0; // replicate from Authority to Client
+```
+
+{{<note>}}
+For now, we can think of `Authority` as the multiplayer server. `Authority` to `Client` is the most common direction of replication.
+{{</note>}}
 
 Now in `MyFirstNetworkComponent` we can access `UpTime` via GetUpTime() method on clients.
 On the authority server we can set the value of `UpTime` by accessing the controller of our component - `MyFirstNetworkComponentController`. For example:
@@ -307,7 +310,7 @@ namespace MultiplayerSample
 }
 ```
 
-### Listen for Network Property Changes on Clients
+## Listen for Network Property Changes on Clients
 
 However, let's improve on this. A client has no need to tick, it can instead listen for changes. In order to do that, we need to enable `GenerateEventBindings`.
 This is what we have at the moment.
@@ -464,7 +467,7 @@ namespace MultiplayerSample
 }
 ```
 
-### Network Component Controllers
+## Network Component Controllers
 
 Let's improve on the separation between server and client code. At the moment, `MyFirstNetworkComponent` performs both server and client duties. Let's break it up. In O3DE Multiplayer, the way to do that is by using `controllers`. A controller does not exist on `Client` roles but does exist on Authority role. We already saw a glipmse into that in our previous examples:
 
@@ -637,4 +640,247 @@ namespace MultiplayerSample
 }
 ```
 
+Our code gen xml file `D:\git\o3de-multiplayersample\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml` is:
+
+```xml
+<?xml version="1.0"?>
+<Component Name="MyFirstNetworkComponent"
+           Namespace="MultiplayerSample"
+           OverrideComponent="true"
+           OverrideController="true"
+           OverrideInclude="Source/Components/MyFirstNetworkComponent.h"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetworkProperty Type="double"
+                   Name="UpTime"
+                   Init="0.0"
+                   ReplicateFrom="Authority"
+                   ReplicateTo="Client"
+                   IsRewindable="true"
+                   IsPredictable="true"
+                   IsPublic="true"
+                   Container="Object"
+                   ExposeToEditor="false"
+                   ExposeToScript="false"
+                   GenerateEventBindings="true"
+                   Description="Time since the start of the application" />
+</Component>
+```
+
 And now we have a clean separation between server and client logic for our component.
+
+## Add a Remote Procedure Call
+
+Now that we have created a data flow from the server to clients, let's reverse the direction with a remote procedure call. Building from the previous example, whenever a client gets new `UpTime` it will call a new RPC - `SendConfirmUptime` and send the value it got back to the server. Just for fun.
+
+```xml
+  <RemoteProcedure Name="SendConfirmUptime"
+                   InvokeFrom="Autonomous"
+                   HandleOn="Authority"
+                   IsPublic="false"
+                   IsReliable="false"
+                   GenerateEventBindings="false"
+                   Description="Uptime confirmed by the client">
+    <Param Type="double"
+           Name="UpTime" />
+  </RemoteProcedure>
+```
+
+{{<important>}}
+Notice that InvokeFrom is not `Client` but `Autonomous`. `Autonomous` is a special type of client behavior where a client initiates an action and may send data to the server. A common example is a player character controller and actions that has to be able to act on its own. Meanwhile, 'Client' only mirrors what the server tells them to do.
+
+By default, only the player prefab is marked as Autonomous, so we will move `MyFirstNetworkComponent` to the player prefab for this tutorial.
+{{</important>}}
+
+If you rebuild `MultiplayerSample.Static` project, you will notice that the generated header for our component, `D:\git\o3de\build\MultiplayerSample-6db9bd97\Gem\Code\Azcg\Generated\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.h`, has adding a new empty virtual method in the large comment block for `MyFirstNetworkComponentController`:
+
+```c++
+class MyFirstNetworkComponentController
+...
+
+    void HandleSendConfirmUptime(AzNetworking::IConnection* invokingConnection, const double& UpTime) override {}
+```
+
+We can take note of this and provite our own implementation of it:
+
+```c++
+void MyFirstNetworkComponentController::HandleSendConfirmUptime([[maybe_unused]] AzNetworking::IConnection* invokingConnection,
+    const double& upTime)
+{
+    AZLOG("MyFirstNetworkComponent", "on server - client told us about %f", upTime);
+}
+```
+
+The client will invoke the RPC by referring to its controller:
+
+```c++
+void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
+{
+    AZLOG("MyFirstNetworkComponent", "client = %f", uptime);
+    static_cast<MyFirstNetworkComponentController*>(GetController())->SendConfirmUptime(uptime);
+}
+```
+
+{{<important>}}
+Only entities that are autonomous will have controllers, otherwise `GetController()` will give a null on clients. If you are getting a null on your `GetController` calls then you have attached your component to an entity that is not autonomous. Attach them to player prefabs instead, as those are marked as autonomous by the server.
+![My First Network Component in the Editor](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
+{{</important>}}
+
+Here is our full source code for our component with RPC. For the header, `D:\git\MultiplayerSample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
+
+```c++
+#pragma once
+
+#include <Source/AutoGen/MyFirstNetworkComponent.AutoComponent.h>
+#include <AzCore/Component/TickBus.h>
+
+namespace MultiplayerSample
+{
+    class MyFirstNetworkComponent
+        : public MyFirstNetworkComponentBase
+    {
+    public:
+        AZ_MULTIPLAYER_COMPONENT( MultiplayerSample::MyFirstNetworkComponent, s_myFirstNetworkComponentConcreteUuid, MultiplayerSample::MyFirstNetworkComponentBase );
+
+        static void Reflect( AZ::ReflectContext* context );
+
+        MyFirstNetworkComponent();
+
+        void OnInit() override {}
+        void OnActivate( Multiplayer::EntityIsMigrating entityIsMigrating ) override;
+        void OnDeactivate( Multiplayer::EntityIsMigrating entityIsMigrating ) override;
+
+    private:
+        AZ::Event<double>::Handler m_uptimeChanged;
+        void OnUpTimeChanged( double uptime );
+    };
+
+    class MyFirstNetworkComponentController
+        : public MyFirstNetworkComponentControllerBase
+        , public AZ::TickBus::Handler
+    {
+    public:
+        MyFirstNetworkComponentController(MyFirstNetworkComponent& parent);
+
+        void OnActivate(Multiplayer::EntityIsMigrating entityIsMigrating) override;
+        void OnDeactivate(Multiplayer::EntityIsMigrating entityIsMigrating) override;
+
+        void OnTick( float deltaTime, AZ::ScriptTimePoint time ) override;
+
+        void HandleSendConfirmUptime(AzNetworking::IConnection* invokingConnection, const double& UpTime) override;
+    };
+}
+```
+
+The source `D:\git\MultiplayerSample\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`:
+```c++
+#include <Source/Components/MyFirstNetworkComponent.h>
+
+#include <AzCore/Serialization/SerializeContext.h>
+#include <Multiplayer/Components/NetBindComponent.h>
+
+namespace MultiplayerSample
+{
+    void MyFirstNetworkComponent::Reflect(AZ::ReflectContext* context)
+    {
+        AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(context);
+        if (serializeContext)
+        {
+            serializeContext->Class<MyFirstNetworkComponent, MyFirstNetworkComponentBase>()
+                ->Version(1);
+        }
+        MyFirstNetworkComponentBase::Reflect(context);
+    }
+
+    MyFirstNetworkComponent::MyFirstNetworkComponent()
+        : m_uptimeChanged([this](double uptime) { OnUpTimeChanged(uptime); })
+    {
+        if (IsNetEntityRoleAuthority())
+        {
+            GetNetBindComponent()->SetAllowAutonomy(true);
+        }
+    }
+
+    void MyFirstNetworkComponent::OnActivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
+    {
+        if (IsNetEntityRoleAutonomous())
+        {
+            UpTimeAddEvent(m_uptimeChanged); // listen only on clients
+        }
+    }
+
+    void MyFirstNetworkComponent::OnDeactivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
+    {
+    }
+
+    void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
+    {
+        AZLOG("MyFirstNetworkComponent", "client = %f", uptime);
+        static_cast<MyFirstNetworkComponentController*>(GetController())->SendConfirmUptime(uptime);
+    }
+
+    /////////// Controller ////////////////
+
+    MyFirstNetworkComponentController::MyFirstNetworkComponentController(MyFirstNetworkComponent& parent)
+        : MyFirstNetworkComponentControllerBase(parent)
+    {
+    }
+
+    void MyFirstNetworkComponentController::OnActivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
+    {
+        AZ::TickBus::Handler::BusConnect();
+    }
+
+    void MyFirstNetworkComponentController::OnDeactivate([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating)
+    {
+        AZ::TickBus::Handler::BusDisconnect();
+    }
+
+    void MyFirstNetworkComponentController::OnTick([[maybe_unused]] float deltaTime, AZ::ScriptTimePoint time)
+    {
+        ModifyUpTime() = time.GetSeconds();
+        AZLOG("MyFirstNetworkComponent", "server = %f", GetUpTime());
+    }
+
+    void MyFirstNetworkComponentController::HandleSendConfirmUptime([[maybe_unused]] AzNetworking::IConnection* invokingConnection,
+        const double& upTime)
+    {
+        AZLOG("MyFirstNetworkComponent", "on server - client told us about %f", upTime);
+    }
+}
+```
+
+And our xml for the code generator:
+
+```xml
+<?xml version="1.0"?>
+<Component Name="MyFirstNetworkComponent"
+           Namespace="MultiplayerSample"
+           OverrideComponent="true"
+           OverrideController="true"
+           OverrideInclude="Source/Components/MyFirstNetworkComponent.h"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <NetworkProperty Type="double"
+                   Name="UpTime"
+                   Init="0.0"
+                   ReplicateFrom="Authority"
+                   ReplicateTo="Client"
+                   IsRewindable="true"
+                   IsPredictable="true"
+                   IsPublic="true"
+                   Container="Object"
+                   ExposeToEditor="false"
+                   ExposeToScript="false"
+                   GenerateEventBindings="true"
+                   Description="Time since the start of the application" />
+  <RemoteProcedure Name="SendConfirmUptime"
+                   InvokeFrom="Autonomous"
+                   HandleOn="Authority"
+                   IsPublic="false"
+                   IsReliable="false"
+                   GenerateEventBindings="false"
+                   Description="Uptime confirmed by the client">
+    <Param Type="double"
+           Name="UpTime" />
+  </RemoteProcedure>
+</Component>
+```
