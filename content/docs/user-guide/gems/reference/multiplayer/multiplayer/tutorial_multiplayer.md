@@ -7,7 +7,7 @@ toc: true
 
 
 
-# Introduction
+## Introduction
 
 
 This tutorial will link all the relevant documentation to provide you with a detailed guide on getting started with creating multiplayer components.
@@ -18,9 +18,9 @@ Our starting base will be O3DE MultiplayerSample project. You can find the instr
 
 
 
-# Network Components
+## Network Components
 
-## Add a New Component
+### Add a New Component
 
 We will start by creating a network component - MyFirstNetworkComponent. It will only do one thing, which is to replicate a monotonic counter.
 
@@ -163,7 +163,7 @@ Additionally, you can find the generated files and your XML file in Visual Studi
 ![Generated Code in Visual Studio](/images/user-guide/multiplayer/visualstudio_generated_files_for_myfirstnetworkcomponent.png)
 
 
-## Add a Network Property
+### Add a Network Property
 
 Let's add a network property that will replicate uptime from the server to clients. Here is an example of the xml file with a network property:
 
@@ -310,7 +310,7 @@ namespace MultiplayerSample
 }
 ```
 
-## Listen for Network Property Changes on Clients
+### Listen for Network Property Changes on Clients
 
 However, let's improve on this. A client has no need to tick, it can instead listen for changes. In order to do that, we need to enable `GenerateEventBindings`.
 This is what we have at the moment.
@@ -467,7 +467,7 @@ namespace MultiplayerSample
 }
 ```
 
-## Network Component Controllers
+### Network Component Controllers
 
 Let's improve on the separation between server and client code. At the moment, `MyFirstNetworkComponent` performs both server and client duties. Let's break it up. In O3DE Multiplayer, the way to do that is by using `controllers`. A controller does not exist on `Client` roles but does exist on Authority role. We already saw a glipmse into that in our previous examples:
 
@@ -668,7 +668,7 @@ Our code gen xml file `D:\git\o3de-multiplayersample\Gem\Code\Source\AutoGen\MyF
 
 And now we have a clean separation between server and client logic for our component.
 
-## Add a Remote Procedure Call
+### Add a Remote Procedure Call
 
 Now that we have created a data flow from the server to clients, let's reverse the direction with a remote procedure call. Building from the previous example, whenever a client gets new `UpTime` it will call a new RPC - `SendConfirmUptime` and send the value it got back to the server. Just for fun.
 
