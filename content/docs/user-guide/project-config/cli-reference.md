@@ -17,10 +17,14 @@ The `o3de` Python script is responsible for multiple tasks:
 - Registering projects and Gems
 
 
+<!-------------------------------------------------------------->
+
 ## Prerequisites
 
 To use the `o3de` Python script, you must have Python runtime set up. Python runtime was downloaded when you set up the engine. For more information, refer to instructions on how to get Python runtime in the [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine) section of the Setup From GitHub page.
 
+
+<!-------------------------------------------------------------->
 
 ## Quick start
 
@@ -74,6 +78,8 @@ For example, to register the engine, you can enter the following command.
 {{< /tabs >}}
 
 
+<!-------------------------------------------------------------->
+
 ## Commands
 The `o3de` Python script contains the following commands, with further details in the following sections. 
 
@@ -85,19 +91,22 @@ The `o3de` Python script contains the following commands, with further details i
 | [`create-from-template`](#create-from-template) | Creates an instance from a generic template.  |
 | [`create-project`](#create-project) | Creates a new project. |
 | [`create-gem`](#create-gem) | Creates a new Gem. |
-| [`register`](#register) | Register an O3DE object. |
+| [`register`](#register) | Registers an O3DE object. |
 | [`register-show`](#register-show) | Shows the registered O3DE objects. |
-| [`get-registered`](#get-registered) | Shows the registered O3DE object's path that is mapped to the specified name. |
-| [`enable-gem`](#enable-gem) | Enables the Gem in your project, so you can use the assets or code the Gem provides. |
+| [`get-registered`](#get-registered) | Shows the path to the registered O3DE object with the specified name. |
+| [`enable-gem`](#enable-gem) | Enables the Gem in your project. |
 | [`disable-gem`](#disable-gem) | Disables the Gem in your project. |
+| [`edit-engine-properties`](#edit-engine-properties) | Edits the engine's properties. |
+| [`edit-project-properties`](#edit-project-properties) | Edits the project's properties. |
+| [`edit-gem-properties`](#edit-gem-properties) | Edits the Gem's properties. |
 | [`sha256`](#sha256) | Creates a hash value for an O3DE object using the SHA-256 secure hash algorithm. |
-<!-- | [`edit-project-properties`](#edit-project-properties) |  | -->
 
 
+<!-------------------------------------------------------------->
 
 ## `get-global-project`
 
-Gets the global project that is registered to the engine in the specified `.setreg` file at `<user>/.o3de/Registry/`.
+Gets the global project that is registered to the engine. By default, this is read from `<USER_PATH>/.o3de/Registry/bootstrap.setreg`. You can also specify a file path using `-i`.
 
 ### Format
 
@@ -113,7 +122,7 @@ Reads the global project from `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
 o3de.bat get-global-project
 ```
 
-Reads the global project from a specified path.
+Reads the global project from a specified file.
 ```cmd
 o3de.bat get-global-project -i C:\Users\<USERNAME>\.o3de\Registry\my-custom.setreg
 ```
@@ -128,6 +137,8 @@ o3de.bat get-global-project -i C:\Users\<USERNAME>\.o3de\Registry\my-custom.setr
 
   A path to the input file that you want to read the  `/Amazon/AzCore/Bootstrap/project_path` key from. If not supplied, then this command uses the input file `C:/Users/USER_PATH/.o3de/Registry/bootstrap.setreg` instead.
 
+
+<!-------------------------------------------------------------->
 
 ## `set-global-project`
 
@@ -176,6 +187,8 @@ o3de.bat set-global-project -pp PROJECT_PATH -o C:\Users\<USERNAME>\.o3de\Regist
 
   Forces the project path to be set in the supplied setreg file. 
 
+
+<!-------------------------------------------------------------->
 
 ## `create-template`
 
@@ -260,9 +273,11 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
   Forces the new template directory to override the existing one, if one exists. 
 
 
+<!-------------------------------------------------------------->
+
 ## `create-from-template`
 
-Creates a template with a `template.json` file. 
+Creates an instance of a generic template based on the specified template.
 
 ### Format
 
@@ -279,12 +294,6 @@ create-from-template [-h] -dp DESTINATION_PATH
 ```
 
 ### Usage
-
-Creates a generic template and saves it in the specified path. 
-
-```cmd
-o3de.bat create-from-template --destination-path DESTINATION_PATH
-```
 
 Creates a template based on the specified template and saves it in the specified path. 
 
@@ -354,6 +363,8 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
   Copies over instantiated template directory even if it exist.
 
+
+<!-------------------------------------------------------------->
 
 ## `create-project`
 
@@ -467,6 +478,8 @@ class component. The default is a random UUID. For example, {b60c92eb-3139-454b-
   Forces the new project directory to override the existing one, if one exists. 
 
 
+<!-------------------------------------------------------------->
+
 ## `create-gem`
 
 Create a new Gem at the specified path.
@@ -579,6 +592,8 @@ class component. The default is a random UUID. For example,
   Forces the new Gem directory to override the existing one, if one exists.
 
 
+<!-------------------------------------------------------------->
+
 ## `register`
 
 Register O3DE objects to the `o3de_manifest.json` file.
@@ -596,7 +611,7 @@ register [-h]
 ### Usage
 <br>
 
-#### Registering engines
+**Registering engines**
 
 Registers this engine to the `o3de_manifest.json` file.  This command maps the engine's name to its path in JSON. 
 
@@ -618,7 +633,7 @@ o3de.bat register --all-engines-path ALL_ENGINES_PATH
 
 <br>
 
-#### Registering projects
+**Registering projects**
 
 Registers the specified project to the engine. This command does two things: it adds the project's path to the `o3de_manifest.json` file; and it sets `engine` to the engine's name in each project's `project.json` file.
 
@@ -640,7 +655,7 @@ o3de.bat register --all-projects-path ALL_PROJECTS_PATH
 
 <br>
 
-#### Registering Gems
+**Registering Gems**
 
 Registers the Gem to the `o3de_manifest.json` file. Before registering the Gem, this command verifies that the Gem has a valid `gem.json` file. Then, it adds the Gem's path to the `external_subdirectories` list in the `o3de_manifest.json` file.
 
@@ -668,7 +683,7 @@ o3de.bat register --all-gems-path ALL_GEMS_PATH
 
 <br>
 
-#### Registering external subdirectories
+**Registering external subdirectories**
 
 Registers the specified subdirectory path to the `external_subdirectories` list in the `o3de_manifest.json` file.
 
@@ -690,7 +705,7 @@ o3de.bat register --external-subdirectory EXTERNAL_SUBDIRECTORY --external-subdi
 
 <br>
 
-#### Registering templates
+**Registering templates**
 
 Registers the specified template to the `templates` list in the `o3de_manifest.json` file.
 
@@ -712,7 +727,7 @@ o3de.bat register --all-templates-path ALL_TEMPLATES_PATH
 
 <br>
 
-#### Registering restricted paths
+**Registering restricted paths**
 
 Registers the specified restricted directory to the `restricted` list in the `o3de_manifest.json` file. 
 
@@ -728,7 +743,7 @@ o3de.bat register --all-restricted-path ALL_RESTRICTED_PATH
 
 <br>
 
-#### Registering repositories
+**Registering repositories**
 
 Registers the specified repository URI (uniform resource identifier) to the `repos` list in the `o3de_manifest.json` file.
 
@@ -744,7 +759,7 @@ o3de.bat register --all-repo-uri ALL_REPO_URI
 
 <br>
 
-#### Registering default folders
+**Registering default folders**
 
 Registers the specified folder as the default engines directory in the `o3de_manifest.json` file.
 
@@ -784,7 +799,7 @@ o3de.bat register --default-third-party folder THIRD_PARTY_FOLDER_PATH
 
 <br>
 
-#### Updating the `o3de_manifest.json` file
+**Updating the `o3de_manifest.json` file**
 
 Updates the `o3de_manifest.json` file. This command validates all of the registered objects, and then removes invalid objects.
 
@@ -908,8 +923,11 @@ The following parameters are used with the `--external-subdirectory` option.
   If supplied, registers the external subdirectory with the `project.json` file at the specified project path. 
 
 
+<!-------------------------------------------------------------->
+
 ## `register-show`
-Shows the registered O3DE objects in the `o3de_manifest.json` file. 
+
+Shows the O3DE objects that are registered in the `o3de_manifest.json` file. 
 
 ### Format
 
@@ -928,133 +946,160 @@ Outputs the `o3de_manifest.json` file.
 o3de.bat register-show
 ```
 
-Outputs the current engine that is registered in the `o3de_manifest.json` file.
+<br>
+
+**Showing registered engines**
+
+Outputs the current engine that is registered in the `o3de_manifest.json` file. If you use `-v`, this command also outputs the contents of the current engine's `engine.json` file.
 
 ```cmd
-o3de.bat register-show --this-engine
+o3de.bat register-show --this-engine -v
 ```
 
-Iterates over each engine that is registered in the `o3de_manifest.json` file. Then, for each iteration, outputs the `engine.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of engines that are registered in the `o3de_manifest.json` file. If you use `-v`, then this command outputs each engine's `engine.json` file. 
 
 ```cmd
-o3de.bat register-show --engines
+o3de.bat register-show --engines -v
 ```
 
-Iterates over each project that is registered in the `o3de_manifest.json` file. Then, for each iteration, outputs the `engine.json` file to stdout if verbose > 0 (`-v`).
+<br>
+
+**Showing registered projects**
+
+Outputs the list of projects that are registered in the `o3de_manifest.json` file. If you use `-v`, then this command outputs each project's `project.json` file.
 
 ```cmd
-o3de.bat register-show --projects
+o3de.bat register-show --projects -v
 ```
 
-Iterates over each engine that is registered in the current engine's `engine.json` file. Then, for each iteration, outputs the `engine.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of projects that are registered in the current engine's `engine.json` file. If you use `-v`, then this command outputs each project's `project.json` file.
 
 ```cmd
-o3de.bat register-show --engine-projects
+o3de.bat register-show --engine-projects -v
 ```
 
-Iterates over each project that is registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. Then, for each iteration, outputs the `project.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of projects that are registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. If you use `-v`, then this command outputs each project's `project.json` file.
 
 ```cmd
-o3de.bat register-show --all-projects
+o3de.bat register-show --all-projects -v
 ```
 
-Iterators over each Gem that is registered in the `o3de_manifest.json` file. Then, for each iteration, outputs the `gem.json` file to stdout if verbose > 0 (`-v`).
+<br>
+
+**Showing registered Gems**
+
+Outputs the list of Gems that are registered in the `o3de_manifest.json` file. If you use `-v`, then this command outputs each Gem's `gem.json` file.
 
 ```cmd
-o3de.bat register-show --gems
+o3de.bat register-show --gems -v
 ```
 
-Iterates over each Gem that is registered in the current engine's `engine.json`. Then, for each iteration, outputs the `gem.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of Gems that are registered in the current engine's `engine.json` file. If you use `-v`, then this command outputs each Gem's `gem.json` file.
 
 ```cmd
-o3de.bat register-show --engine-gems
+o3de.bat register-show --engine-gems -v
 ```
 
-Iterates over each gem in the project.json at the specified path. Then, for each iteration, outputs the `gem.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of Gems that are registered in the specified project's `project.json` file. If you use `-v`, then this command outputs each Gem's `gem.json` file.
 
 ```cmd
-o3de.bat register-show --project-gems --project-path PROJECT_PATH
+o3de.bat register-show --project-gems --project-path PROJECT_PATH -v
 ```
 
-Iterates over each gem that is registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. Then, for each iteration, outputs the Gem's path to stdout if verbose > 0 (`-v`).
+Outputs the list of Gems that are registered in both the `o3de_manifest.json` file and current engine's `engine.json` file. If you use `-v`, then this command outputs each Gem's `gem.json` file.
 
 ```cmd
-o3de.bat register-show --all-gems
+o3de.bat register-show --all-gems -v
 ```
 
-Outputs the templates that is registered in the `o3de_manifest.json` file. Then, for each iteration, outputs the `template.json` file to stdout if verbose > 0 (`-v`).
+<br>
+
+**Showing registered templates**
+
+Outputs the list of templates that are registered in the `o3de_manifest.json` file. If you use `-v`, then this command outputs each template's `template.json` file.
 
 ```cmd
-o3de.bat register-show --templates
+o3de.bat register-show --templates -v
 ```
 
-Iterates over each template that is registered in the current engine's `engine.json`. Then, for each iteration, outputs the `template.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of templates that are registered in the current engine's `engine.json` file. If you use `-v`, then this command outputs each template's `template.json` file.
 
 ```cmd
-o3de.bat register-show --engine-templates
+o3de.bat register-show --engine-templates -v
 ```
 
-Iterates over each template in the `project.json` file that is located at the specified project path. Then, for each iteration, outputs the `template.json` to stdout if verbose > 0 (`-v`).
+Outputs the list of templates that are registered in the specified project's `project.json` file. If you use `-v`, then this command outputs each template's `template.json` file.
 
 ```cmd
-o3de.bat register-show --project-templates --project-path C:/Projects/TestProject
+o3de.bat register-show --project-templates --project-path PROJECT_PATH -v
 ```
 
-Iterates over each template that is registered in both the `o3de_manifest.json` file and the current engine's `engine.json`. Then, for each iteration, outputs the `template.json` file path to stdout if verbose > 0 (`-v`).
+Outputs the list of templates that are registered in both the `o3de_manifest.json` file and current engine's `engine.json` file. If you use `-v`, then this command outputs each template's `template.json` file.
 
 ```cmd
-o3de.bat register-show --all-templates
+o3de.bat register-show --all-templates -v
 ```
 
-Outputs the restricted directories that are registered in the `o3de_manifest.json` file. For each restricted directory, this command outputs the `restricted.json` file to stdout if verbose > 0 (`-v`).
+<br>
+
+**Showing registered restricted directories**
+
+Outputs the list of restricted directories that are registered in the `o3de_manifest.json` file. If you use `-v`, then this command outputs each restricted directory's `restricted.json` file.
 
 ```cmd
-o3de.bat register-show --restricted
+o3de.bat register-show --restricted -v
 ```
 
-Iterates over each restricted directory that is registered in the current engine's `engine.json`. Then, for each iteration, outputs the `restricted.json` file to stdout if verbose > 0 (`-v`).
+Outputs the list of restricted directories that are registered in the current engine's `engine.json` file. If you use `-v`, then this command outputs each restricted directory's `restricted.json` file.
 
 ```cmd
-o3de.bat register-show --engine-restricted
+o3de.bat register-show --engine-restricted -v
 ```
 
-Iterates over each restricted directory in the `project.json` file that is located at the specified project path. Then, for each iteration outputs the restricted directory's path to stdout if verbose > 0 (`-v`).
+Outputs the list of restricted directories that are registered in the specified project's `project.json` file. If you use `-v`, then this command outputs each restricted directory's `restricted.json` file.
 
 ```cmd
-o3de.bat register-show --project-templates --project-path C:/Projects/TestProject
+o3de.bat register-show --project-restricted --project-path PROJECT_PATH -v
 ```
 
-Iterates over each restricted directory that is registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. Then, for each iteration, outputs the restricted directory's path to stdout if verbose > 0 (`-v`).
+Outputs the list of restricted directories that are registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. If you use `-v`, then this command outputs each restricted directory's `restricted.json` file.
 
 ```cmd
-o3de.bat register-show --all-restricted
+o3de.bat register-show --all-restricted -v
 ```
 
-Outputs the `external_subdirectories` array in the `o3de_manifest.json` file.
+<br>
+
+**Showing registered external subdirectories**
+
+Outputs the list of external subdirectories that are registered in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register-show --external-subdirectories
 ```
 
-Outputs the `external_subdirectories` array in the current engine's `engine.json` file. 
+Outputs the list of external subdirectories that are registered in the current engine's `engine.json` file.
 
 ```cmd
 o3de.bat register-show --engine-external-subdirectories
 ```
 
-Outputs the `external_subdirectories` array in the `project.json` that is located at the specified project path.
+Outputs the list of external subdirectories that are registered in the specified project's `project.json` file.
 
 ```cmd
 o3de.bat register-show --project-external-subdirectories --project-path PROJECT_PATH
 ```
 
-Outputs the `external_subdirectories` from both the `o3de_manifest.json` file and the current engine's `engine.json` file.
+Outputs the list of external subdirectories that are registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file.
 
 ```cmd
-o3de.bat register-show --all-external-subdirectories --project-path PROJECT_PATH
+o3de.bat register-show --all-external-subdirectories
 ```
 
-Iterates over the repositories that are registered in the `o3de_manifest.json` file. Then, for each repository, outputs the `repos` array to stdout.
+<br>
+
+**Showing registered repositories**
+Outputs the list of repositories that are registered in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register-show --repos
@@ -1168,8 +1213,11 @@ o3de.bat register-show --repos
 
 
 
+<!-------------------------------------------------------------->
+
 ## `get-registered`
-Shows the registered O3DE object's path that is mapped to the specified name.
+
+Shows the path to the registered O3DE object with the specified name.
 
 ### Format
 
@@ -1181,37 +1229,37 @@ get-registered [-h]
 
 ### Usage
 
-Returns the first path of an engine that has the specified "engine_name" value. 
+Returns the first path of an engine that has the specified `engine_name` value. 
 
 ```cmd
 o3de.bat get-registered --engine-name ENGINE_NAME
 ```
 
-Returns the first path of a project that has the specified "project_name" value. 
+Returns the first path of a project that has the specified `project_name` value. 
 
 ```cmd
 o3de.bat get-registered --project-name PROJECT_NAME
 ```
 
-Returns the first path of a Gem that has the specified "gem_name" value. 
+Returns the first path of a Gem that has the specified `gem_name` value. 
 
 ```cmd
 o3de.bat get-registered --gem-name GEM_NAME
 ```
 
-Returns the first path of a template that has the specified "template_name" value.
+Returns the first path of a template that has the specified `template_name` value.
 
 ```cmd
 o3de.bat get-registered --template-name TEMPLATE_NAME
 ```
 
-Returns the first path of a restricted directory that has the specified "restricted_name" value.
+Returns the first path of a restricted directory that has the specified `restricted_name` value.
 
 ```cmd
 o3de.bat get-registered --restricted-name RESTRICTED_NAME
 ```
 
-Returns the first URI for a repository that has the specified "repo_name" value.
+Returns the first URI for a repository that has the specified `repo_name` value.
 
 ```cmd
 o3de.bat get-registered --repo-name REPO_NAME
@@ -1287,6 +1335,8 @@ o3de.bat get-registered --default-folder restricted
   Overrides the default home folder with the specified folder. By default, the home folder is the user folder. 
 
 
+<!-------------------------------------------------------------->
+
 ## `enable-gem`
 
 Enables the Gem in your project, so you can use the assets or code the Gem provides. When you enable a Gem, this command adds the Gem's name to your project's `Code/enabled_gems.cmake` file, which adds the Gem as a build and load dependency of your project's **Game Launcher**, the **Editor**, and the **Asset Processor**.
@@ -1335,6 +1385,8 @@ o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 
   Overrides the default home folder with the specified folder. By default, the home folder is the user folder. 
 
+
+<!-------------------------------------------------------------->
 
 ## `disable-gem`
 
@@ -1385,9 +1437,69 @@ o3de.bat disable-gem -gp GEM_PATH -pp PROJECT_PATH
   Overrides the default home folder with the specified folder. By default, the home folder is the user folder. 
 
 
-<!-- ## edit-project-properties
+<!-------------------------------------------------------------->
 
-Edits a set of fields within a manifest file. 
+## `edit-engine-properties`
+
+Edits the specified engine's properties by modifying the `engine.json` file. 
+
+### Format
+
+```cmd
+edit-engine-properties [-h] (-ep ENGINE_PATH | -en ENGINE_NAME)
+                        [-enn ENGINE_NEW_NAME]
+                        [-ev ENGINE_VERSION]
+```
+
+### Usage
+
+Updates the `engine_name` field in the `engine.json` file located at the specified engine's folder. 
+
+```cmd
+o3de.bat edit-engine-properties --engine-path ENGINE_PATH --engine-new-name ENGINE_NEW_NAME
+
+// or
+
+o3de.bat edit-engine-properties --engine-name ENGINE_NAME --engine-new-name ENGINE_NEW_NAME
+```
+
+
+### Optional parameters
+
+  
+- **`-h, --help`**
+
+  Shows the help message.
+
+- **`-ep ENGINE_PATH, --engine-path ENGINE_PATH`**
+
+  The path to the engine.
+
+- **`-en ENGINE_NAME, --engine-name ENGINE_NAME`**
+
+  The name of the engine.
+
+
+**Engine properties:**
+
+The following parameters modify the specified engine's properties.
+  
+- **`-enn ENGINE_NEW_NAME, --engine-new-name ENGINE_NEW_NAME`**
+
+  Sets the engine's name. 
+
+- **`-ev ENGINE_VERSION, --engine-version ENGINE_VERSION`**
+
+  Sets the engine's version.
+
+
+<!-------------------------------------------------------------->
+
+## `edit-project-properties`
+
+Edits the specified project's properties by modifying the `project.json` file. 
+
+### Format 
 
 ```cmd
 edit-project-properties [-h]
@@ -1404,23 +1516,6 @@ edit-project-properties [-h]
 
 ### Usage
 
-Updates the `engine_name` field in the `engine.json` file located at the specified engine's folder. 
-
-```cmd
-o3de.bat edit-engine-properties --engine-path ENGINE_PATH --engine-new-name ENGINE_NEW_NAME
-
-// or
-
-o3de.bat edit-engine-properties --engine-name ENGINE_NAME --engine-new-name ENGINE_NEW_NAME
-```
-
-Updates the `gem_name` field in the `gem.json` file located at the specified Gem's folder.
-
-```cmd
-o3de.bat edit-gem-properties --gem-path GEM_PATH --gem-new-name GEM_NEW_NAME
-o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
-```
-
 Updates the "project_name" field within the gem.json located at the supplied project path or at the path of the registered project with <project-name>
 
 ```cmd
@@ -1430,60 +1525,152 @@ o3de.bat edit-project-properties --project-name PROJECT_NAME --project-new-name 
 
 ### Optional parameters
 
-`-h, --help`
+- **`-h, --help`**
 
-Shows the help message.
+  Shows the help message.
 
-`-pp PROJECT_PATH, --project-path PROJECT_PATH`
+- **`-pp PROJECT_PATH, --project-path PROJECT_PATH`**
 
-The path to the project.
+  The path to the project.
 
-`-pn PROJECT_NAME, --project-name PROJECT_NAME`
+- **`-pn PROJECT_NAME, --project-name PROJECT_NAME`**
 
-The name of the project.
+  The name of the project.
 
-`-at [ADD_TAGS [ADD_TAGS ...]], --add-tags [ADD_TAGS [ADD_TAGS ...]]`
+- **`-at [ADD_TAGS [ADD_TAGS ...]], --add-tags [ADD_TAGS [ADD_TAGS ...]]`**
 
-Adds tag(s) to the `user_tags` property. To add multiple tags, use a space delimited
+  Adds tag(s) to the `user_tags` property. To add multiple tags, use a space delimited
 list (for example, `-at A B C`).
 
-`-dt [DELETE_TAGS [DELETE_TAGS ...]], --delete-tags [DELETE_TAGS [DELETE_TAGS ...]]`
+- **`-dt [DELETE_TAGS [DELETE_TAGS ...]], --delete-tags [DELETE_TAGS [DELETE_TAGS ...]]`**
 
-Removes tag(s) from the `user_tags` property. To delete multiple tags, use a space delimited list (for example, `-dt A B C`).
+  Removes tag(s) from the `user_tags` property. To delete multiple tags, use a space delimited list (for example, `-dt A B C`).
 
-`-rt [REPLACE_TAGS [REPLACE_TAGS ...]], --replace-tags [REPLACE_TAGS [REPLACE_TAGS ...]]`
+- **`-rt [REPLACE_TAGS [REPLACE_TAGS ...]], --replace-tags [REPLACE_TAGS [REPLACE_TAGS ...]]`**
 
-Replace the `user_tags` property with the specified space delimited list of values.
+  Replace the `user_tags` property with the specified space delimited list of values.
 
 
 **Project properties:**
-The following properties modify individual project properties.
 
-`-pnn PROJECT_NEW_NAME, --project-new-name PROJECT_NEW_NAME`
+The following parameters modify the specified project's properties.
 
-Sets the project's name.
+- **`-pnn PROJECT_NEW_NAME, --project-new-name PROJECT_NEW_NAME`**
 
-`-po PROJECT_ORIGIN, --project-origin PROJECT_ORIGIN`
+  Sets the project's name.
 
-Sets the description or url for the project origin (such as the
-project host, repository, or owner).
+- **`-po PROJECT_ORIGIN, --project-origin PROJECT_ORIGIN`**
 
-`-pd PROJECT_DISPLAY, --project-display PROJECT_DISPLAY`
+  Sets the description or URL for the project origin (such as the project host, repository, or owner).
 
-Sets the project's display name.
+- **`-pd PROJECT_DISPLAY, --project-display PROJECT_DISPLAY`**
 
-`-ps PROJECT_SUMMARY, --project-summary PROJECT_SUMMARY`
+  Sets the project's display name.
 
-Sets the project's summary description.
+- **`-ps PROJECT_SUMMARY, --project-summary PROJECT_SUMMARY`**
 
-`-pi PROJECT_ICON, --project-icon PROJECT_ICON`
+  Sets the project's summary description.
 
-Sets the project's icon resource. -->
+- **`-pi PROJECT_ICON, --project-icon PROJECT_ICON`**
 
+  Sets the path to the project's icon resource.
+
+<!-------------------------------------------------------------->
+
+## `edit-gem-properties`
+
+Edits the specified Gem's properties by modifying the `gem.json` file. 
+
+### Format
+
+```cmd
+edit-gem-properties [-h] (-gp GEM_PATH | -gn GEM_NAME)
+                        [-gnn GEM_NEW_NAME] [-gd GEM_DISPLAY]
+                        [-go GEM_ORIGIN] [-gt {Code,Tool,Asset}]
+                        [-gs GEM_SUMMARY] [-gi GEM_ICON]
+                        [-gr GEM_REQUIREMENTS]
+                        [-at [ADD_TAGS [ADD_TAGS ...]] | -dt
+                        [REMOVE_TAGS [REMOVE_TAGS ...]] | -rt
+                        [REPLACE_TAGS [REPLACE_TAGS ...]]]
+```
+
+### Usage
+
+Updates the `gem_name` field in the `gem.json` file located at the specified Gem's folder.
+
+```cmd
+o3de.bat edit-gem-properties --gem-path GEM_PATH --gem-new-name GEM_NEW_NAME
+
+// or
+
+o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
+```
+
+### Optional parameters
+
+
+- **`-h, --help`**
+- 
+  Shows the help message.
+
+- **`-gp GEM_PATH, --gem-path GEM_PATH`**
+
+  The path to the Gem.
+
+- **`-gn GEM_NAME, --gem-name GEM_NAME`**
+
+  The name of the Gem.
+
+- **`-at [ADD_TAGS [ADD_TAGS ...]], --add-tags [ADD_TAGS [ADD_TAGS ...]]`**
+
+  Adds tag(s) to the `user_tags` property. To add multiple tags, use a space delimited list (for example, `-at A B C`).
+
+- **`-dt [DELETE_TAGS [DELETE_TAGS ...]], --delete-tags [DELETE_TAGS [DELETE_TAGS ...]]`**
+
+  Removes tag(s) from the `user_tags` property. To delete multiple tags, use a space delimited list (for example, `-dt A B C`).
+
+- **`-rt [REPLACE_TAGS [REPLACE_TAGS ...]], --replace-tags [REPLACE_TAGS [REPLACE_TAGS ...]]`**
+  
+  Replace the `user_tags` property with the specified space delimited list of values.
+
+
+**Gem properties:**
+
+  The following parameters modify the specified Gem's properties.
+
+- **`-gnn GEM_NEW_NAME, --gem-new-name GEM_NEW_NAME`**
+
+  Sets the Gem's name.
+
+- **`-gd GEM_DISPLAY, --gem-display GEM_DISPLAY`**
+
+  Sets the Gem's display name.
+
+- **`-go GEM_ORIGIN, --gem-origin GEM_ORIGIN`**
+
+  Sets the description or URL for the Gem origin (such as the Gem host, repository, or owner).
+
+- **`-gt {Code,Tool,Asset}, --gem-type {Code,Tool,Asset}`**
+
+  Sets the Gem type to either Code, Tool, or Asset.
+
+- **`-gs GEM_SUMMARY, --gem-summary GEM_SUMMARY`**
+
+  Sets the Gem's summary description.
+
+- **`-gi GEM_ICON, --gem-icon GEM_ICON`**
+
+  Sets the path to the Gem's icon resource.
+
+- **`-gr GEM_REQUIREMENTS, --gem-requirements GEM_REQUIREMENTS`**
+
+  Sets the description of the requirements that are needed to use the Gem.
+
+<!-------------------------------------------------------------->
 
 ## `sha256`
 
-Creates a *secure hash algorithm* (SHA-256). This command outputs the specified file path and writes the value to the `sha256` field in the specified JSON file. 
+Creates a hash value for an O3DE object using the SHA-256 secure hash algorithm. This command outputs the specified file path and writes the value to the `sha256` field in the specified JSON file. 
 
 ### Format
 
