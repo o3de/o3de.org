@@ -31,8 +31,14 @@ The following steps work for both installed/SDK builds and engine centric builds
 
 1. Unpack the zip file to a folder.
 1. Open a command prompt or PowerShell window inside your engine installation.
-1. Run the following command: `.\scripts\o3de.bat register -gp <path to the Kythera Gem> --external-subdirectory-project-path <path to your game directory>`. This will add the `external_subdirectories` key to the `project.json` file and make the Gem available to your project.
-1. Open the O3DE Project Manager (`o3de.exe`).
-1. In the project menu, click `Edit Project Settings` and then the `Configure Gems` button on the top right corner.
+1. Run the following command:
+    ```
+    .\scripts\o3de.bat register -gp <path to the Kythera Gem> --external-subdirectory-project-path <path to your game directory>`
+    ```
+    The Kythera Gem is the `Kythera` subdirectory in the unpacked zip folder.
+    The command will add the `external_subdirectories` key to the `project.json` file and make the Gem available to your project.
+1. Open the **O3DE Project Manager** (`o3de.exe`).
+1. In the project menu, click **Edit Project Settings** and then the **Configure Gems** button on the top right corner.
 1. Kythera AI should now be selectable as a Gem. Select it and save the project settings.
-1. Rebuild the project and start the Editor.
+
+The project has to be rebuilt before Kythera AI components can be used.
