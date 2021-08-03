@@ -13,7 +13,7 @@ You can then blend animations, so that your character transitions from one anima
 
 In the **Animation Editor**, you can preview the animations and blends between the animations for your characters.
 
-O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md).
+O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/).
 
 **Topics**
 + [Animation Editor Concepts and Terms](/docs/user-guide/visualization/animation/character-editor/concepts-and-terms.md)
