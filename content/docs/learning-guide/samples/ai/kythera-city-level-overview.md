@@ -3,6 +3,7 @@ linkTitle: Kythera City Level Overview
 title: Kythera City Level Overview
 description: Overview of the AI demo level "Kythera City"
 weight: 100
+draft: true
 ---
 
 ![A ship navigates Kythera City in 3D](/images/learning-guide/tutorials/ai/kythera-city-ship.png)
