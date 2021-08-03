@@ -8,14 +8,14 @@ title: FBX Settings Meshes tab
 All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\) by default. In the **Meshes** tab, you can create mesh groups containing specific meshes from the `.fbx` file. Each **Mesh group** produces its own `.cgf` file. The processed runtime assets appear in **Asset Browser** as children of the `.fbx` file.
 
 **Contents**
-+ [Meshes tab properties](#fbx-settings-meshes-tab-properties)
-+ [Cloth modifier](#w31aac15b9c11c11c11)
-+ [Comment modifier](#w31aac15b9c11c11c13)
-+ [Level of Detail modifier](#w31aac15b9c11c11c15)
-+ [Material modifier](#w31aac15b9c11c11c17)
-+ [Mesh (Advanced) modifier](#w31aac15b9c11c11c19)
-+ [Origin modifier](#w31aac15b9c11c11c21)
-+ [Touch Bending modifier](#w31aac15b9c11c11c23)
+- [Meshes tab properties](#meshes-tab-properties)
+- [Cloth modifier](#cloth-modifier)
+- [Comment modifier](#comment-modifier)
+- [Level of Detail modifier](#level-of-detail-modifier)
+- [Material modifier](#material-modifier)
+- [Mesh (Advanced) modifier](#mesh-advanced-modifier)
+- [Origin modifier](#origin-modifier)
+- [Touch Bending modifier](#touch-bending-modifier)
 
 ## Meshes tab properties 
 
@@ -166,7 +166,7 @@ Sets the scale offset of the processed mesh.
 
 The **Touch Bending** modifier sets up mesh assets for touch bending. Touch bending is a collision effect, typically used on vegetation assets such as plants or tall grass, that causes the asset to bend away from an entity that brushes against it. You can use this modifier to create a field of wheat, for example, where the wheat parts and bends as a player character passes through.
 
-Touch bendable assets require a rig similar to an actor. For more information on creating touch bendable assets, see [Adding Touch (Collision) Bending Effects](/docs/userguide/vegetation/bending-touch-intro.md).
+Touch bendable assets require a rig similar to an actor.
 
 ****Select root bone****
 Specify the root bone of the touch bendable mesh.
