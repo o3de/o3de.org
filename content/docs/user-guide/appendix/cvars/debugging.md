@@ -6,9 +6,8 @@ title: Debugging Issues
 {{< preview-migrated >}}
 
 O3DE provides the following built-in debugging and profiling tools that you can use to locate and fix performance issues.
-+ [Cinematics debugging](/docs/user-guide/visualization/cinematics/debugging.md) - Debug cinematics issues.
-+ [Particle debugging](/docs/userguide/particles/debugging.md) - Debug particles.
-+ [Vegetation debugging](/docs/userguide/vegetation/debugging.md) - Debug vegetation objects.
+
++ [Cinematics debugging](/docs/user-guide/visualization/cinematics/debugging) - Debug cinematics issues.
 
 ## Crash logging 
 

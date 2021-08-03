@@ -3,6 +3,7 @@ description:  Use the Open 3D Engine Asset Pipeline to convert your source art a
 linktitle: Asset pipeline
 title: Working with the Asset Pipeline and asset files
 weight: 100
+draft: true
 ---
 
 {{< preview-migrated >}}
