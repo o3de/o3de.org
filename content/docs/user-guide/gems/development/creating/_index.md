@@ -14,13 +14,13 @@ Although you can create a Gem manually by creating all of the files yourself, it
 o3de create-gem -gp <path to create gem at>
 ```
 
-This will create your Gem with a standard file structure and CMake files created from templates.
+This will create your Gem with a standard file structure and CMake files created from [templates](https://github.com/o3de/o3de/tree/development/Templates).
 
 ## Gem Assets
 
 Each Gem has an `Assets` directory that can contain models, textures, scripts, animations, and more. Asset files are accessed the same way as they are in a game project. O3DE uses this root directory to find the asset file path. For example, when O3DE looks for the `textures/rain/rainfall_ddn.tif` file, it looks in the `<GemName>/Assets/textures/rain/` directory.
 
-## Gem Code
+## Gem Code (Optional)
 
 Gem code can be contained in any directory that is picked up by the `CMakeLists.txt` file of the Gem, although, by convention, Gems with only one source module
 use `Code` for the directory name.
@@ -45,3 +45,18 @@ Your `CMakeLists.txt` file is like any other CMake file. When you create it, kee
   This will be the active target during the invocation of your Gem's `CMakeLists.txt`.
 * You can use the functions available in the core O3DE build system. See the contents of the `cmake` directory in source.
 * Avoid the use of `file(DOWNLOAD ...)`. The package system of O3DE is a robust replacement, and should be used instead.
+
+# Creating an Asset-Only Gem
+
+When a gem is created using the o3de `o3de create-gem -gp <path to create gem at>` command, by default it creates a Gem that can used for packaging code and assets.
+This Gem is actually created using the "DefaultGem" template.
+There is a way to create a gem that is only meant for providing asset only and not code.
+This can can be done by specifying the "AssetGem" template through the `create-gem` command
+```cmd
+o3de create-gem -gp <path to create gem at> -tn AssetGem
+# or
+o3de create-gem -gp <path to create gem at> -tp <engine-root>\Templates\AssetGem
+```
+
+## Gem Templates
+The list of Gem Templates that are provided with O3DE can be found in the [Templates](https://github.com/o3de/o3de/tree/development/Templates) directory in the main O3DE repo
