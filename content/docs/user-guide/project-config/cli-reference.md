@@ -124,7 +124,7 @@ o3de.bat get-global-project
 
 Reads the global project from a specified file.
 ```cmd
-o3de.bat get-global-project -i C:\Users\<USERNAME>\.o3de\Registry\my-custom.setreg
+o3de.bat get-global-project -i <USER_PATH>\.o3de\Registry\my-custom.setreg
 ```
 
 ### Optional parameters
@@ -135,7 +135,7 @@ o3de.bat get-global-project -i C:\Users\<USERNAME>\.o3de\Registry\my-custom.setr
 
 - **`-i INPUT_PATH, --input-path INPUT_PATH`**
 
-  A path to the input file that you want to read the  `/Amazon/AzCore/Bootstrap/project_path` key from. If not supplied, then this command uses the input file `C:/Users/USER_PATH/.o3de/Registry/bootstrap.setreg` instead.
+  A path to the input file that you want to read the  `/Amazon/AzCore/Bootstrap/project_path` key from. If not supplied, then this command uses the input file `</USER_PATH>/.o3de/Registry/bootstrap.setreg` instead.
 
 
 <!-------------------------------------------------------------->
@@ -143,6 +143,8 @@ o3de.bat get-global-project -i C:\Users\<USERNAME>\.o3de\Registry\my-custom.setr
 ## `set-global-project`
 
 Sets the specified project as the engine's global project. By default this is set in `C:\Users\USER_PATH\.o3de\Registry\bootstrap.setreg`. You can also specify a file path using `-o`.
+
+If you set a global project, then O3DE tools (such as the Asset Processor and Editor) will use the global project. You can override the global project by specifying a project with the `project-path` parameter when you launch the O3DE tools from the command line.
 
 ### Format 
 
@@ -162,7 +164,7 @@ o3de.bat set-global-project -pp PROJECT_PATH
 Sets the specified project as the global project in the specified path.
 
 ```cmd
-o3de.bat set-global-project -pp PROJECT_PATH -o C:\Users\<USERNAME>\.o3de\Registry\my-custom.setreg
+o3de.bat set-global-project -pp PROJECT_PATH -o <USER_PATH>\.o3de\Registry\my-custom.setreg
 ```
 
 ### Optional parameters
@@ -173,7 +175,7 @@ o3de.bat set-global-project -pp PROJECT_PATH -o C:\Users\<USERNAME>\.o3de\Regist
 
 - **`-pp PROJECT_PATH, --project-path PROJECT_PATH`**
 
-  The path to the project.
+  The path to the project. The path must contain the project manifest file, `project.json`, unless the `--force` parameter is also used.
 
 - **`-pn PROJECT_NAME, --project-name PROJECT_NAME`**
 
@@ -181,7 +183,7 @@ o3de.bat set-global-project -pp PROJECT_PATH -o C:\Users\<USERNAME>\.o3de\Regist
 
 - **`-o OUTPUT_PATH, --output-path OUTPUT_PATH`**
 
-  A path to the output file that you want to write the `project_path` key to. If not supplied, then  this command uses the input file `C:/Users/USER_NAME/.o3de/Registry/bootstrap.setreg` instead.
+  The path and filename where the `project_path` key is written. The file should be located in `<USER_PATH>/.o3de/Registry/` and have the file extension `.setreg`. If this parameter is not used, the key is written to `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
 
 - **`-f, --force`**
 
@@ -266,7 +268,7 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. FFor example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces ${User}with "MyUsername", and ${id} with "1723905". Note: <TemplateName> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: <TemplateName> -> ${Name}, <templatename> -> ${NameLower}, <TEMPLATENAME> -> ${NameUpper}. 
+  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces ${User}with "MyUsername", and ${id} with "1723905". Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: \<TemplateName\> -> ${Name}, \<templatename\> -> ${NameLower}, \<TEMPLATENAME\> -> ${NameUpper}. 
 
 - **`-f, --force`**
          
@@ -295,7 +297,7 @@ create-from-template [-h] -dp DESTINATION_PATH
 
 ### Usage
 
-Creates a template based on the specified template and saves it in the specified path. 
+Instantiates a template based on the specified template and saves it in the specified path.
 
 ```cmd
 o3de.bat create-from-template --destination-path DESTINATION_PATH --template-path TEMPLATE_PATH
@@ -561,7 +563,7 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. ${Name} and all of the other standard Gem replacements are automatically inferred from the Gem name. These replacements supersede all inferred replacement pairs. For example: `--replace ${DATE} 1/1/2020 ${id} 1723905`. This replaces ${DATE} with `1/1/2020`, and  ${id} with `1723905`. Note:  \<GemNam> is the last component of the GEM_PATH. The following replacement pairs already exist: \<GemName\> -> ${Name}, \<gemname\> -> ${NameLower}, \<GEMANME\> -> ${NameUpper}.
+  Add A->B replacement pairs. ${Name} and all of the other standard Gem replacements are automatically inferred from the Gem name. These replacements supersede all inferred replacement pairs. For example: `--replace ${DATE} 1/1/2020 ${id} 1723905`. This replaces ${DATE} with `1/1/2020`, and  ${id} with `1723905`. Note:  \<GemName> is the last component of the GEM_PATH. The following replacement pairs already exist: \<GemName\> -> ${Name}, \<gemname\> -> ${NameLower}, \<GEMNAME\> -> ${NameUpper}.
 
 - **`-kr, --keep-restricted-in-gem`**
 
