@@ -3,8 +3,6 @@ title: Project Configuration
 weight: 100
 ---
 
-{{< preview-new >}}
-
 | Topic | Description |
 | - | - | 
 | [Adding and Removing Gems](add-remove-gems/) | Learn how to add and remove Gems in your project. | 
