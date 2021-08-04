@@ -16,7 +16,7 @@ o3de create-gem -gp <path to create gem at>
 
 This will create your Gem with a standard file structure and CMake files created from [templates](https://github.com/o3de/o3de/tree/development/Templates).
 
-For more information on how to use the `o3de` tool, refer to [Project Configuration CLI Reference](/docs/user-guide/project-config/cli-reference/)
+For more information on how to use the `o3de` tool, refer to [Project Configuration CLI Reference](/docs/user-guide/project-config/cli-reference/).
 
 ## Gem Assets
 
@@ -48,7 +48,7 @@ Your `CMakeLists.txt` file is like any other CMake file. When you create it, kee
 * You can use the functions available in the core O3DE build system. See the contents of the `cmake` directory in source.
 * Avoid the use of `file(DOWNLOAD ...)`. The package system of O3DE is a robust replacement, and should be used instead.
 
-# Creating an Asset-Only Gem
+## Creating an Asset-Only Gem
 
 When you create a Gem without a specified template by using the command `o3de create-gem -gp <path to create a gem at>`, it's created from the "DefaultGem" template. This creates a Gem for packaging both code and assets. You can also create a Gem that provides only assets by specifying the "AssetGem" template through the `create-gem` command:
 
@@ -56,5 +56,8 @@ When you create a Gem without a specified template by using the command `o3de cr
 o3de create-gem --gem-path <path to create gem at> --template-name AssetGem
 # or
 o3de create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
+```
+
 ## Gem Templates
+
 O3DE provides a list of Gem templates, which can be found in the [Templates](https://github.com/o3de/o3de/tree/development/Templates) directory in the O3DE repository.
