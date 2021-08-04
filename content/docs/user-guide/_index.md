@@ -39,6 +39,5 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 | [Asset file types](appendix/asset-file-types.md) | Reference for the asset file types supported in O3DE by default. |
 | [Command-line tools](appendix/command-line-tools.md) | Reference for the O3DE tools available from the command line. |
 | [Console variable reference](appendix/cvars/) | Reference for the O3DE console variables. |
-| [EBus handler examples](appendix/available-ebus.md) | Collection of examples for EBus handlers. |
 | [File format support](appendix/file-formats.md) | Reference for file formats supported in O3DE by default. |
 | [Glossary](appendix/glossary.md) | Common terms and concepts used in O3DE development. |
