@@ -50,15 +50,11 @@ Your `CMakeLists.txt` file is like any other CMake file. When you create it, kee
 
 # Creating an Asset-Only Gem
 
-When a gem is created using the o3de `o3de create-gem -gp <path to create gem at>` command, by default it creates a Gem that can used for packaging code and assets.
-This Gem is actually created using the "DefaultGem" template.
-There is a way to create a gem that is only meant for providing asset only and not code.
-This can can be done by specifying the "AssetGem" template through the `create-gem` command
-```cmd
-o3de create-gem -gp <path to create gem at> -tn AssetGem
-# or
-o3de create-gem -gp <path to create gem at> -tp <engine-root>\Templates\AssetGem
-```
+When you create a Gem without a specified template by using the command `o3de create-gem -gp <path to create a gem at>`, it's created from the "DefaultGem" template. This creates a Gem for packaging both code and assets. You can also create a Gem that provides only assets by specifying the "AssetGem" template through the `create-gem` command:
 
+```cmd
+o3de create-gem --gem-path <path to create gem at> --template-name AssetGem
+# or
+o3de create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
 ## Gem Templates
-The list of Gem Templates that are provided with O3DE can be found in the [Templates](https://github.com/o3de/o3de/tree/development/Templates) directory in the main O3DE repo
+O3DE provides a list of Gem templates, which can be found in the [Templates](https://github.com/o3de/o3de/tree/development/Templates) directory in the O3DE repository.
