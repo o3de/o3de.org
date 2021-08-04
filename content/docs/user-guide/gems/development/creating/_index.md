@@ -16,6 +16,8 @@ o3de create-gem -gp <path to create gem at>
 
 This will create your Gem with a standard file structure and CMake files created from [templates](https://github.com/o3de/o3de/tree/development/Templates).
 
+For more information on how to use the `o3de` tool, refer to [Project Configuration CLI Reference](/docs/user-guide/project-config/cli-reference/)
+
 ## Gem Assets
 
 Each Gem has an `Assets` directory that can contain models, textures, scripts, animations, and more. Asset files are accessed the same way as they are in a game project. O3DE uses this root directory to find the asset file path. For example, when O3DE looks for the `textures/rain/rainfall_ddn.tif` file, it looks in the `<GemName>/Assets/textures/rain/` directory.
