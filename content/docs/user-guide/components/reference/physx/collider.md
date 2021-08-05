@@ -86,37 +86,37 @@ Resize mode scales the collider. The manipulator displayed in the viewport in re
 
 Sphere resize mode has one linear manipulator that modifies the **Radius** property.
 
-![\[PhysX Collider component mode sphere resize manipulator\]](/images/user-guide/components/reference/physx/ui-collider-f.png)
+![PhysX Collider component mode sphere resize manipulator](/images/user-guide/components/reference/physx/ui-collider-f.png)
 
 #### Resize Box shape
 
 Box resize mode has six linear manipulators, one on each side of the box. The manipulators modify the **Dimensions** property.
 
-![\[PhysX Collider component mode box resize manipulator\]](/images/user-guide/components/reference/physx/ui-collider-g.png)
+![PhysX Collider component mode box resize manipulator](/images/user-guide/components/reference/physx/ui-collider-g.png)
 
 #### Resize Capsule shape
 
 Capsule resize mode has two linear manipulators. The manipulator at the top of the capsule modifies the **Height** property. The manipulator on the side modifies the **Radius** property.
 
-![\[PhysX Collider component mode capsule resize manipulator\]](/images/user-guide/components/reference/physx/ui-collider-h.png)
+![PhysX Collider component mode capsule resize manipulator](/images/user-guide/components/reference/physx/ui-collider-h.png)
 
 #### Resize PhysicsAsset shape
 
 Physics Asset resize mode has a three axis scale manipulator that modifies the **Asset Scale** property.
 
-![\[PhysX Collider component mode Physics Asset resize manipulator\]](/images/user-guide/components/reference/physx/ui-collider-i.png)
+![PhysX Collider component mode Physics Asset resize manipulator](/images/user-guide/components/reference/physx/ui-collider-i.png)
 
 ### Offset mode
 
 Offset mode translates the collider relative to its entity transform. Offset mode has a three axis translate manipulator that modifies the **Offset** property.
 
-![\[PhysX Collider component mode offset manipulator\]](/images/user-guide/components/reference/physx/ui-collider-j.png)
+![PhysX Collider component mode offset manipulator](/images/user-guide/components/reference/physx/ui-collider-j.png)
 
 ### Rotate mode
 
 Rotation mode rotates the collider about the component's **Offset**. Rotation mode has a three axis rotate manipulator that modifies the **Rotation** property.
 
-![\[PhysX Collider component mode rotate manipulator\]](/images/user-guide/components/reference/physx/ui-collider-k.png)
+![PhysX Collider component mode rotate manipulator](/images/user-guide/components/reference/physx/ui-collider-k.png)
 
 ### Component mode keyboard shortcuts
 

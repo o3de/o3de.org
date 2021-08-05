@@ -42,7 +42,7 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 
 ## Properties 
 
-![\[PhysX Shape Collider component interface.\]](/images/user-guide/components/reference/physx/ui-shape-collider-a.png)
+![PhysX Shape Collider component interface]](/images/user-guide/components/reference/physx/ui-shape-collider-a.png)
 
 | Property | Description | Value | Default |
 | - | - | - | - |
@@ -62,11 +62,11 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 
 The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) is automatically subdivided into convex portions, which means that polygon prisms can be used with dynamic rigid bodies or as triggers in PhysX. The subdivision is automatically updated if the vertices of the polygon prism are modified.
 
-![\[A complex polygon prism can't be converted to convex geometry.\]](/images/user-guide/components/reference/physx/ui-shape-collider-b.png)
+![A complex polygon prism can't be converted to convex geometry.](/images/user-guide/components/reference/physx/ui-shape-collider-b.png)
 
 If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. In the example image above, the polygon prism is self-intersecting. If the polygon prism can't be subdivided into convex pieces, nn error will display in the Editor Console, as shown in the following example.
 
-![\[A complex polygon prism console error.\]](/images/user-guide/components/reference/physx/ui-shape-collider-c.png)
+![A complex polygon prism console error.](/images/user-guide/components/reference/physx/ui-shape-collider-c.png)
 
 ## Colliders as triggers 
 
