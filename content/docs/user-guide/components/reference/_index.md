@@ -15,7 +15,7 @@ Components are provided by Gems. To make a component available in **O3DE Editor*
 To add a component to an entity in O3DE Editor:
 
 1. In **Entity Outliner** or **Perspective**, click an entity to select it. This will show the entity's details in **Entity Inspector**. 
-1. In **Entity Inspector**, choose **Add Component**.
+1. In Entity Inspector, choose **Add Component**.
 1. Select a component from the component list to add to the entity. 
 
 {{< note >}}
