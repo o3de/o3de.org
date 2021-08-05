@@ -5,16 +5,16 @@ description: 'Open 3D Engine (O3DE) Reflection Probe component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Reflection Probe** creates specular reflections in the environment around a probe (capture point). A *probe* stores information about the surrounding environment as a cubemap. Then, it applies the cubemap to meshes that are located inside the probe's volume. This allows the mesh to display environment reflections based on its location in the environment.
 
 
-## Provider ##
+## Provider
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom)
+
 
 ## Dependencies
+
 [Box Shape component](/docs/user-guide/components/reference/shape/box-shape.md)
 
 
@@ -22,17 +22,20 @@ The **Reflection Probe** creates specular reflections in the environment around 
 
 ![Reflection Probe component properties](/images/user-guide/components/reference/atom/reflection-probe-component-ui.png)
  
+
 ### Cubemap Bake
+
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Bake Reflection Probe** | Bakes the surrounding environment to a cubemap. | - | - |
 
 ### Inner Extents
+
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Height** | The height of the reflection probe's inner volume. The height is dependent on the **Box Shape** component's dimension along the z-axis. | `0` to the Box Shape component's `Dimensions-Z` property | The value of the Box Shape component's `Dimensions-Z` property. |
-| **Length** | The length of the reflection probe's inner volume. The length is dependent on the Box Shape component's dimension along the y-axis. | `0` to the Box Shape component's `Dimensions-Y` property| The value of the Box Shape component's `Dimensions-Y` property. |
-| **Width** | The width of the reflection probe's inner volume. The width is dependent on the Box Shape component's dimension along the x-axis. | `0` to the Box Shape component's `Dimensions-X` property| The value of the Box Shape component's `Dimensions-X` property. |
+| **Height** | The height of the reflection probe's inner volume. The height is dependent on the **Box Shape** component's dimension along the z-axis. | `0` to the Box Shape component's `Dimensions`-`Z` property | The value of the Box Shape component's `Dimensions`-`Z` property. |
+| **Length** | The length of the reflection probe's inner volume. The length is dependent on the Box Shape component's dimension along the y-axis. | `0` to the Box Shape component's `Dimensions`-`Y` property| The value of the Box Shape component's `Dimensions`-`Y` property. |
+| **Width** | The width of the reflection probe's inner volume. The width is dependent on the Box Shape component's dimension along the x-axis. | `0` to the Box Shape component's `Dimensions`-`X` property| The value of the Box Shape component's `Dimensions`-`X` property. |
 
 ### Settings
 
