@@ -1,24 +1,25 @@
 ---
 title: Component Reference
-linktitle: Component Reference
-description: ' Open 3D Engine (O3DE) component reference index. '
+linkTitle: Component Reference
+description: Open 3D Engine (O3DE) component reference index.
 weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
+Components add functionality to entities in Open 3D Engine (O3DE). An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
-Components add functionality to entities. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Components are provided by Gems. To make a component available in **O3DE Editor**, you must add the Gem that provides the component. Though components might belong to the same type, they might not be provided by the same Gem. You can find out which Gem provides a component in the reference topic for the component.
 
-Components are provided by Gems. To make a component available in the O3DE Editor, you must add the Gem that provides it. If you configure the Gems available to your project, you must rebuild your project. Though components might belong to the same type, they might not be provided by the same Gem. Each component lists the Gem that provides it on its reference page.
+## Add a component to an entity
 
-## Adding components to an entity
-In the O3DE Editor, you can add components to an entity. To add a component:
-1. In the **Entity Outliner** panel, select an entity. This will show the entity's details in the **Entity Inspector** panel. 
-2. In the Entiy Inspector panel, select **Add Component** and choose a component to add to this entity. 
+To add a component to an entity in O3DE Editor:
+
+1. In **Entity Outliner** or **Perspective**, click an entity to select it. This will show the entity's details in **Entity Inspector**. 
+1. In Entity Inspector, choose **Add Component**.
+1. Select a component from the component list to add to the entity. 
 
 {{< note >}}
-If a component you are looking for does not appear in the **Add Component** list, you may need to enable the Gem that provides that component.
+If you can't find a component in the **Add Component** list, you may need to enable the Gem that provides the component and rebuild your project.
 {{< /note >}}
 
 ## Components
@@ -170,7 +171,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
-| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
+| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |
 
 ### Scripting
