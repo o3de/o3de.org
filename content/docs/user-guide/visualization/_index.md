@@ -1,6 +1,6 @@
 ---
 linkTitle: "Visualization"
-title: "Visualization systems in Open 3D Engine"
+title: "Visualization Systems in Open 3D Engine"
 description: Learn about the various systems that provide animation and rendering in Open 3D Engine (O3DE).
 weight: 1000
 ---
