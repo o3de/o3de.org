@@ -11,9 +11,9 @@ You can use physics raycast and shape cast queries to determine whether a specif
 You can use scene queries to find nearby objects using the following methods.
 
 **Topics**
-+ [Raycast](#physx-scene-queries-raycasts)
-+ [Shapecast](#physx-scene-queries-shapecasts)
-+ [Overlap](#physx-scene-queries-overlap)
++ [Raycast](#raycast)
++ [Shapecast](#shapecast)
++ [Overlap](#overlap)
 
 **Note**
 Scene queries can have a performance cost.
@@ -48,7 +48,7 @@ WorldRequestBus::BroadcastResult(result, &WorldRequests::RayCastMultiple, reques
 ```
 
 **Note**
-You can specify the maximum number of hits that can be collected from a `RayCastMultiple` query. You can specify the **RayCast Buffer Size** property in the **PhysX Configuration** window. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world).
+You can specify the maximum number of hits that can be collected from a `RayCastMultiple` query. You can specify the **RayCast Buffer Size** property in the **PhysX Configuration** window. For more information, see [System Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#system-configuration).
 
 The following tables describe the properties for the `RayCastRequest` and `RayCastHit` objects.
 
@@ -106,7 +106,7 @@ WorldRequestBus::BroadcastResult(results, &WorldRequests::ShapeCastMultiple, req
 ```
 
 **Note**
-You can specify the maximum number of hits that can be collected from a `ShapeCastMultiple` query. You can specify the **Shapecast Buffer Size** value in the **PhysX Configuration** window. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world).
+You can specify the maximum number of hits that can be collected from a `ShapeCastMultiple` query. You can specify the **Shapecast Buffer Size** value in the **PhysX Configuration** window. For more information, see [System Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#system-configuration).
 
 
 **ShapeCastRequest Properties**
@@ -139,7 +139,7 @@ WorldRequestBus::BroadcastResult(results, &WorldRequests::Overlap, request);
 ```
 
 **Note**
-You can specify the maximum number of hits that can be collected from a `Overlap` query. You can specify the **Overlap Query Buffer Size** value in the **PhysX Configuration** window. For more information, see [World Configuration](/docs/userguide/nvidia/physx/configuration-global#physx-configuration-global-world).
+You can specify the maximum number of hits that can be collected from a `Overlap` query. You can specify the **Overlap Query Buffer Size** value in the **PhysX Configuration** window. For more information, see [System Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#system-configuration).
 
 
 **OverlapRequest Properties**

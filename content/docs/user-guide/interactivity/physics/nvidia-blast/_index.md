@@ -9,7 +9,7 @@ weight: 200
 
  With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components.
 
-To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/nvidia-blast/).
+To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-blast/).
 
 **Note**
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets. The apprentice license is not sufficient. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/).
@@ -34,7 +34,7 @@ See the following topics for detailed information about NVIDIA Blast.
 
 [Blast Family Mesh Data component](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) - Blast Family Mesh Data component reference.
 
-[Install NVIDIA Blast plug-ins](/docs/userguide/nvidia/blast/install-houdini-plugin#nvidia-blast-plugin-install) - Install the NVIDIA Blast plug-ins and Houdini Digital Assets.
+[Install NVIDIA Blast plug-ins](/docs/user-guide/interactivity/physics/nvidia-blast/install-houdini-plugin/#install-nvidia-blast-plug-ins) - Install the NVIDIA Blast plug-ins and Houdini Digital Assets.
 
 [Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset.md) - Fracture meshes in Houdini and export assets for NVIDIA Blast.
 

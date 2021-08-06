@@ -20,13 +20,13 @@ Use this feature for objects such as moving platforms, doors, or anything that d
 **Note**
 You should always add the **PhysX Rigid Body** component to the top level of an entity hierarchy. If you add the component to a child entity, this can cause conflicts with the entity's world transform and result in undefined behavior.
 
-The **PhysX Rigid Body** components requires the [PhysX](/docs/user-guide/gems/reference/physx/) gem.
+The **PhysX Rigid Body** components requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem.
 
 For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/).
 
 **Topics**
-+ [PhysX Rigid Body component properties](#component-physx-rigid-body-physics-properties)
-+ [Creating a Dynamic PhysX Entity](#example-creating-dynamic-game-entity)
++ [PhysX Rigid Body component properties](#physx-rigid-body-component-properties)
++ [Creating a Dynamic PhysX Entity](#creating-a-dynamic-physx-entity)
 
 ## PhysX Rigid Body component properties 
 
@@ -68,7 +68,7 @@ When disabled, the rigid body is dynamic. The rigid body responds to gravity and
 
 **CCD enabled**
 When enabled, the rigid body is will have continuous collision detection (CCD). This property is useful for high speed objects to ensure accurate collision detection. Enabling continuous collision detection reveals two additional properties, **Min advance coefficient** and **CCD Friction**
-To set this property, you must also set the **Continuous Collision Detection** in the **PhysX Configuration** window. See [World Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#physx-configuration-global-world).
+To set this property, you must also set the **Continuous Collision Detection** in the **PhysX Configuration** window. See [Scene Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-global/#scene-configuration).
 
 **Min advance coefficient**
 Lower values reduce clipping but can affect motion smoothness.
@@ -110,9 +110,9 @@ A PhysX entity that is dynamic can move and collide with other entities.
 
 **To create a dynamic PhysX entity**
 
-1. Create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
+1. Create an entity.
 
-1. In the **Entity Inspector**, choose **Add Component** and then select a **[Mesh](/docs/userguide/components/static-mesh.md)** component.
+1. In the **Entity Inspector**, choose **Add Component** and then select a **Mesh** component.
 
 1. For **Mesh asset**, select the mesh asset so that your entity is visible, such as a `box.cgf`.
 
@@ -120,12 +120,13 @@ A PhysX entity that is dynamic can move and collide with other entities.
 
 1. Add the **PhysX Rigid Body** component to the entity.
 
-1. Create another entity for your PhysX terrain. For more information, see the **[PhysX Terrain](/docs/user-guide/components/reference/transform/)** component.
+1. Create another entity underneath the first, with a **PhysX Collider** component and a **Mesh** component but without a **PhysX Rigid Body** component. This will create a static rigid body.
 
 1. Press **Ctrl+G** to enter gameplay mode.
 **Example**
 
-   The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the **PhysX Terrain** component.
+   The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the static rigid body.
 ![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
+
 **Note**
 For the **[Transform](/docs/user-guide/components/reference/transform/)** component, clear the **Static** property. This ensures that the mesh moves with the physics simulation.

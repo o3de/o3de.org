@@ -19,7 +19,7 @@ title: FBX Settings actor export
 
 1. In **FBX Settings**, in the **Actors** tab, ensure the desired root bone of the actor's skeleton is selected in the **Select root bone** property.
 
-   An **Actor group** may contain only one skeleton hierarchy, and will only export bones that are part of the selected heirarchy.
+   An **Actor group** may contain only one skeleton hierarchy, and will only export bones that are part of the selected hierarchy.
 
 1. In **FBX Settings**, in the **Actors** tab, choose the **Hierarchy** button to the right of **Select base meshes** and ensure only the meshes required for the **Actor group** are selected in the mesh list.
 

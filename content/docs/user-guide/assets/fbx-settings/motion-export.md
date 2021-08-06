@@ -19,7 +19,7 @@ title: FBX Settings motion export
 
 1. In **FBX Settings**, in the **Motions** tab, ensure the desired root bone of the actor's skeleton is selected in the **Select root bone** property.
 
-   A **Motion** may contain only one skeleton hierarchy, and will only export bones that are part of the selected heirarchy.
+   A **Motion** may contain only one skeleton hierarchy, and will only export bones that are part of the selected hierarchy.
 
    A **Motion** exports a single animation sequence. If the `.fbx` contains multiple animation sequences, additional motions can be added by choosing **Add another motion**.
 
