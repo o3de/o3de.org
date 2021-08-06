@@ -5,7 +5,7 @@ description: "Open 3D Engine (O3DE) Diffuse Probe Grid component reference."
 toc: true
 ---
 
-The **Diffuse Probe Grid component** creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. The probe stores lighting information at each point of intersection between the ray and the mesh. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
+The **Diffuse Probe Grid** component creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. The probe stores lighting information at each point of intersection between the ray and the mesh. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
 
 ## Provider
 
@@ -28,19 +28,19 @@ The **Diffuse Probe Grid component** creates a volume of light probes that provi
 
 ### Probe Spacing
 
-Probe spacing is the distance between probes (in meters) along each axis within the volume. Less spacing results in more probes, which increases the fidelity of the GI at the expense of performance and memory. The maximum extents of the space depends on the **Box Shape component's** dimension.
+Probe spacing is the distance between probes (in meters) along each axis within the volume. Less spacing results in more probes, which increases the fidelity of the GI at the expense of performance and memory. The maximum extents of the space depends on the **Box Shape** component's dimension.
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **X** | The amount of space between probes along the x-axis. The space must be within the Box Shape component's dimension along the x-axis. | `0.0` to the Box Shape component's `Dimensions`-`X` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
-| **Y** | The amount of space between probes along the y-axis. The space must be within the Box Shape component's dimension along the y-axis. | `0.0` to the Box Shape component's `Dimensions`-`Y` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
-| **Z** | The amount of space between probes along the z-axis. The space must be within the Box Shape component's dimension along the z-axis. | `0.0` to the Box Shape component's `Dimensions`-`Z` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
+| **X-Axis** | The amount of space between probes along the x-axis. The space must be within the Box Shape component's dimension along the x-axis. | `0.0` to the Box Shape component's `Dimensions`-`X` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
+| **Y-Axis** | The amount of space between probes along the y-axis. The space must be within the Box Shape component's dimension along the y-axis. | `0.0` to the Box Shape component's `Dimensions`-`Y` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
+| **Z-Axis** | The amount of space between probes along the z-axis. The space must be within the Box Shape component's dimension along the z-axis. | `0.0` to the Box Shape component's `Dimensions`-`Z` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
 
 ### Grid Settings
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Ambient Multiplier** | Increases the strength of GI on the mesh. It can be used to fine-tune the scene's lighting or make the GI more visible to debug. | `0.0` to `10.0` | `1.0` |
+| **Ambient Multiplier** | Increases the strength of GI within the volume. It can be used to fine-tune the scene's lighting or make the GI more visible to debug. | `0.0` to `10.0` | `1.0` |
 | **View Bias** | Fine-tuned adjustment for eliminating visual artifacts that may appear due to the probes' positions. | `0.0` to `1.0` | `0.2` |
 | **Normal Bias** | Fine-tuned adjustment for the surface-to-light secondary raycast, which is used to determine if the surface point is affected by a direct light. Increasing the normal bias moves the start point of the raycast farther away from the surface, which makes it more likely to be affected by direct light. | `0.0` to `1.0` | `0.1` |
 | **Editor Mode** | Controls whether the **Editor** uses real-time or baked diffuse GI. `Real Time (Ray-Traced)` requires a GPU capable of ray tracing. `Auto Select` uses `Baked` as a fallback, if ray tracing is not available. Refer to [Global illumination modes](#global-illumination-modes). | `Real Time (Ray-Traced)`, `Baked`, `Auto Select` |`Real Time (Ray-Traced)` |
