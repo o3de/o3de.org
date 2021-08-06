@@ -1,6 +1,6 @@
 ---
 title: "Features"
-description: "Learn about graphics features in the Atom renderer"
+description: "Learn about graphics features in the Atom Renderer"
 toc: true
 weight: 400
 ---  
@@ -14,11 +14,13 @@ This section provides a high-level overview of graphics features that the Atom r
 A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
 
 Multisampling Anti-aliasing (MSAA)   
-: MSAA is an anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
+: An anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
 
 Subpixel Morphological Anti-aliasing (SMAA)  
 : An image-based, post-processing anti-aliasing technique that implements a combination of morphological anti-aliasing and multi-/super- sampling anti-aliasing strategies. It is more efficient than MSAA, but provides less quality. SMAA can be enabled and configured in the file `SMAAConfiguration.azasset`. 
 
+Temporal Anti-aliasing (TAA)
+: A type of supersampling that takes samples from different locations within a pixel each frame and combines them with samples from previous frames to create a supersampled image. You can also use contrast adaptive sharpening to reduce blurs that TAA may introduce. For more information, refer to [Temporal Anti-Aliasing](taa/) and [Contrast Adaptive Sharpening](cas/) .
 
 ## Lighting
 
