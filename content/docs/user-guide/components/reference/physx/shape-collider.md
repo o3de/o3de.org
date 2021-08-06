@@ -42,7 +42,7 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 
 ## Properties 
 
-![PhysX Shape Collider component interface]](/images/user-guide/components/reference/physx/ui-shape-collider-a.png)
+![PhysX Shape Collider component interface](/images/user-guide/components/reference/physx/ui-shape-collider-a.png)
 
 | Property | Description | Value | Default |
 | - | - | - | - |
