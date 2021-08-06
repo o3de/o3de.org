@@ -25,7 +25,7 @@ The results of scene queries are described using containers of `AzPhysics::Scene
 + [Raycast](#raycast)
 + [Shapecast](#shapecast)
 + [Overlap](#overlap)
-+ [SceneQueryHit](#scenequeryhit)
++ [SceSceneQueryHit](#scenequeryhit)
 
 **Note**
 Scene queries can have a performance cost.

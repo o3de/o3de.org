@@ -6,7 +6,7 @@ weight: 100
 
 {{< preview-migrated >}}
 
-The [PhysX](/docs/user-guide/gems/reference/physx/) gem can be configured for each project for your game. Your settings are saved in your project's `project_name\Registry\physxsystemconfiguration.setreg` file. If you use a version control system, include this file.
+The [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem can be configured for each project for your game. Your settings are saved in your project's `project_name\Registry\physxsystemconfiguration.setreg` file. If you use a version control system, include this file.
 
 To configure PhysX settings, use the **PhysX Configuration** tool.
 

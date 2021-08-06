@@ -9,7 +9,7 @@ title: PhysX Force Region
 You can use the **PhysX Force Region** component to specify a region that applies physical force to entities. For each physics simulation frame, the component applies force to entities that are in the region's bounds. You can use this component to simulate effects such as simulating gravity, slowing down, or deflecting an entity to another direction.
 
 To create a force region, you must do the following:
-+ Enable the [PhysX](/docs/user-guide/gems/reference/physx/) gem for your game project
++ Enable the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem for your game project
 + Add a **[PhysX Collider](/docs/user-guide/components/reference/physx/collider/)** component to the same entity
 + For the **PhysX Collider** component, you must select the **Trigger** property for the force region to work
 
@@ -19,8 +19,8 @@ The **PhysX Collider** component's shape, size, and orientation represent the re
 For the **Shape** property, if you select **PhysicsAsset**, you must select a **PxMesh** asset file. If the asset isn't a convex mesh (for example, it's a triangle mesh), the collider won't work as a trigger for collisions.
 
 **Topics**
-+ [PhysX Force Region Component Properties](#physx-terrain-component-properties)
-+ [Creating a Force Region](#creating-physx-force-region)
++ [PhysX Force Region Component Properties](#physx-force-region-component-properties)
++ [Creating a Force Region](#creating-a-force-region)
 
 ## PhysX Force Region Component Properties 
 
@@ -38,12 +38,12 @@ For the **Shape** property, if you select **PhysicsAsset**, you must select a **
 You can add multiple force types to the component. When an entity enters the force region, the entity moves according to the net value of the forces that you specify.
 
 **Contents**
-+ [Linear Damping](#linear-damping-force)
-+ [Local Space](#local-space-force)
-+ [Point](#point-force)
-+ [Simple Drag](#simple-drag-force)
-+ [Spline Follow](#spline-follow-force)
-+ [World Space](#world-space-force)
++ [Linear Damping](#linear-damping)
++ [Local Space](#local-space)
++ [Point](#point)
++ [Simple Drag](#simple-drag)
++ [Spline Follow](#spline-follow)
++ [World Space](#world-space)
 
 #### Linear Damping 
 
@@ -122,7 +122,7 @@ You can create a force region so that force applies to another entity that enter
 
 **To create a PhysX Force Region component**
 
-1. In O3DE Editor, create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
+1. In O3DE Editor, create an entity.
 
 1. Enter a name for the entity, such as *ForceRegion*.
 

@@ -13,7 +13,7 @@ Physics materials define how a PhysX collider reacts to collisions through prope
 + [Physics material properties](#physics-material-properties)
 + [Create a physics material](#create-a-physics-material)
 + [Assign a physics material library](#assign-a-physics-material-library)
-+ [Assign a physics material](#Assign-a-physics-material-collider)
++ [Assign a physics material](#assign-a-physics-material)
   + [Assign physics materials per face](#assign-physics-materials-per-face)
 
 ## Physics material properties 

@@ -11,16 +11,16 @@ Performance demands in games and real-time applications require physics simulati
 **Note**
 The PhysX Collider component attached to an entity by itself creates a static (non-moving) entity, such as a wall or a mountain. To create a dynamic (moving) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body Physics** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities.
 
-The PhysX Collider component requires the [PhysX](/docs/user-guide/gems/reference/physx/) gem enabled in your project.
+The PhysX Collider component requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem enabled in your project.
 
 For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/).
 
 **Topics**
-+ [PhysX Collider properties](#component-physx-collider-properties)
++ [PhysX Collider properties](#physx-collider-properties)
 + [Static PhysX entities](#static-physx-entities)
 + [Primitive colliders](#primitive-colliders)
 + [Physics asset colliders](#physics-asset-colliders)
-+ [Collider component mode](#colliders-component-mode)
++ [Collider component mode](#collider-component-mode)
 + [Colliders as triggers](#colliders-as-triggers)
 
 ## PhysX Collider properties 
@@ -119,9 +119,9 @@ A PhysX entity that is static can interact with other entities, but doesn't move
 
 **To create a static PhysX entity**
 
-1. Create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
+1. Create an entity.
 
-1. In the **Entity Inspector**, choose **Add Component** and then select **[Mesh](/docs/userguide/components/static-mesh.md)** component.
+1. In the **Entity Inspector**, choose **Add Component** and then select **Mesh** component.
 
 1. In the **Mesh** component, choose a mesh asset for the **Mesh asset** property.
 
@@ -154,9 +154,9 @@ Alternatively, attach multiple **PhysX Collider** components to the entity, and 
 
 **To create a mesh collider**
 
-1. Create an entity. For more information, see [Creating an Entity](/docs/userguide/creating-entity.md).
+1. Create an entity.
 
-1. In the **Entity Inspector**, choose **Add Component** and then select **[Mesh](/docs/userguide/components/static-mesh.md)**.
+1. In the **Entity Inspector**, choose **Add Component** and then select **Mesh**.
 
 1. In the **Mesh** component, choose a mesh asset for the **Mesh asset** property.
 
