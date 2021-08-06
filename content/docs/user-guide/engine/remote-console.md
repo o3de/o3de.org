@@ -2,6 +2,7 @@
 description: ' Use console commands to modify and configure the Open 3D Engine runtime
   application. '
 title: 'Universal Remote Console'
+draft: true
 ---
 
 {{< preview-migrated >}}

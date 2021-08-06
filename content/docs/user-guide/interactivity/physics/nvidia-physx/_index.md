@@ -18,6 +18,7 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 + [Configuring the PhysX System](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/)
 + [Physics materials](/docs/user-guide/interactivity/physics/nvidia-physx/materials.md)
 + [PhysX Scene Queries](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries.md)
++ [PhysX Simulated Bodies](/docs/user-guide/interactivity/physics/nvidia-physx/simulated-bodies.md)
 + [Dynamic joints with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/joint-intro.md)
 + [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider.md)
 + [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md)

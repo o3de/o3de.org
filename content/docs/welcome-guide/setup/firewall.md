@@ -2,6 +2,7 @@
 description: ' Enable a LAN firewall to protect your Open 3D Engine environment '
 title: Enabling a Firewall
 weight: 600
+draft: true
 ---
 
 {{< preview-migrated >}}

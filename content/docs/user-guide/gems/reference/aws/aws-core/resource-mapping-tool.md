@@ -154,4 +154,13 @@ python\python.cmd Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_t
 
 ## Troubleshooting
 
-For help troubleshooting, check the resource mapping tool logs that are generated in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
+### Check the logs
+Check the resource mapping tool logs that are generated in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool\resource_mapping_tool.log`.
+
+### Unable to call a resource
+Check the [resource mapping file](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-files.md) is configured correctly. Ensure the lookup name is defined as expected and it maps to the expected attributes. 
+
+Errors of the form ```Cannot determine region from the url``` in the logs indicate the wrong region or account has been set for the resource.
+* Double check that the resource's mapping entry has the correct region and account information, if overriding the global region and account attributes.
+* Double check that the resource's mapping entry has the correct resource type and name.
+* Ensure the mapping file sets the required global attributes for region and account. Ensure they are set to the expected values.

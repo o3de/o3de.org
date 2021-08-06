@@ -1,11 +1,13 @@
 ---
 linkTitle: User Guide
+menuTitle: User Guide
 title: Open 3D Engine (O3DE) User Guide
 description: Explore the features of O3DE, understand how they work, and learn how to use them in your project.
 weight: 300
 toc: true
 menu_uuid: user
 guide_img: "/images/user-guide/guide_img.png"
+primary: true
 ---
 
 {{< preview-new >}}
@@ -18,7 +20,6 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 |--------------------------------------|---------|
 | [Assets](assets/) | Learn about O3DE's asset management tools and pipeline. |
 | [Build](build/) | Learn how to use the CMake generator with O3DE projects to generate IDE projects and build them. |
-| [Cloud](cloud/) |  Learn about cloud service integrations for O3DE. |
 | [Components](components/) | Learn about the components that add functionality to your entities in O3DE, and how to create new components. |
 | [Editor](editor/) |  Learn how to use the O3DE Editor. |
 | [Engine](engine/) |  Learn about core engine programming concepts in O3DE. |

@@ -4,8 +4,6 @@ description: Learn about the requirements for creating a component to use with t
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 You can develop your own independent modules to distribute and build as Open 3D Engine (O3DE) Gems. A Gem is just a
 bundle of code and/or assets, a manifest file, a CMake build file, and an optional display icon for project configuration
 tools. This is all that's needed to ship a Gem.

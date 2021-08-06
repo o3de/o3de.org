@@ -159,7 +159,7 @@ To service the needs of the game client and tools, more than one `FileIO` instan
 
 ![\[File access in local and remote scenarios\]](/images/user-guide/file-access-direct-1.png)
 
-The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as [Android](/docs/userguide/mobile/android/configure-project#android-vfs) and [iOS](/docs/user-guide/platforms/ios/virtual-file-system.md). VFS is required for [live reloading of assets](/docs/user-guide/assets/live-reloading.md). Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
+The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as Android and iOS, allowing for the live reloading of assets. Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
 
 ```
 -- remote_filesystem - enable Virtual File System (VFS)
