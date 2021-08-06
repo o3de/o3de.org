@@ -5,7 +5,7 @@ weight: 300
 toc: true
 ---
 
-Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base. Check out the video below fo a step by step guide to set up O3DE from GitHub, or follow the tutorial on this page.
+Getting the source for Open 3D Engine (O3DE) from GitHub is a great way to set up your development environment, so you can easily sync future engine updates and make contributions to the open source project base. Check out the video below for a step by step guide to set up O3DE from GitHub, or follow the tutorial on this page.
 
 The instructions here and in the video will guide you through the following steps:
 
@@ -163,9 +163,60 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
 
 For more information and examples of common contributor workflows, refer to [O3DE Code Contribution GitHub Workflow](/docs/contributing/to-code/git-workflow) in the Contributor Guide.
 
-## Build the engine as an SDK {#build-the-engine}
+## Build the engine
 
 Now that you have a local copy of the O3DE source, you can build the engine, including key tools such as the O3DE **Asset Processor**, **Editor**, and **Project Manager**.
+
+Choose one of the following build types based on the primary focus of your development work, then follow the instructions in the corresponding tab:
+
+1. **Source Engine** - Choose this build type if you plan to make frequent changes to the engine source code.
+
+1. **Pre-Built SDK Engine** - Choose this build type if you are primarily interested in project development and make infrequent or no changes to the engine source.
+
+{{< tabs name="Engine build instructions" >}}
+{{% tab name="Source Engine" %}}
+
+1. Create a package directory in a writeable location. The directory `C:\o3de-packages` is used in the examples that follow.
+
+    ```cmd
+    mkdir C:\o3de-packages
+    ```
+
+    This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
+
+1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
+
+    Open a command prompt to the directory where you set up O3DE and run the `get_python` script.
+
+    ```cmd
+    python\get_python.bat
+    ```
+
+1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
+
+    ```cmd
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
+    ```
+
+    There are several noteworthy custom definitions (`-D`) specified in the preceding command. All are optional but recommended in this example.
+
+    * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
+    * `LY_UNITY_BUILD` : Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
+
+1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every _project_. To avoid building the engine twice, you might want to wait until you create and build a project in a later section on creating projects.
+
+    The `profile` build configuration is shown in this example.
+
+    ```cmd
+    cmake --build build/windows_vs2019 --target Editor --config profile -- /m
+    ```
+
+    The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+
+    The engine will take a while to build. If you've used all the example commands in these steps, when the build is complete, the engine tools and other binaries can be found in `C:\o3de\build\windows_vs2019\bin\profile`.
+
+{{% /tab %}}
+{{% tab name="Pre-Built SDK Engine" %}}
 
 1. Create a package directory in a writeable location. The directory `C:\o3de-packages` is used in the examples that follow.
 
@@ -202,23 +253,46 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
     cmake --build build/windows_vs2019 --target INSTALL --config profile -- /m
     ```
 
-    {{< note >}}
-The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
-    {{< /note >}}
+    The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
 The engine will take a while to build. If you've used all the example commands in these steps, when the build is complete, the engine tools and other binaries can be found in `C:\o3de-install\bin\Windows\profile`.
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Register the engine
 
 Registering the O3DE engine enables O3DE projects to find the engine, even when they exist in different locations on your computer. The registration process creates (or updates) the **O3DE manifest** in your user directory.
 
-1. Change your current directory to the engine SDK binary directory.
+Choose the tab that corresponds to the engine build type you chose in the preceding set of instructions.
+
+{{< tabs name="Engine registration instructions" >}}
+{{% tab name="Source Engine" %}}
+
+1. Open a command window if you don't already have one open. Change your current directory to the source engine directory.
+
+    ```cmd
+    cd C:\o3de
+    ```
+
+1. Use the `o3de` script to register the engine.
+
+    ```cmd
+    scripts\o3de.bat register --this-engine
+    ```
+
+    The O3DE manifest file is `<USER_DIRECTORY>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
+
+{{% /tab %}}
+{{% tab name="Pre-Built SDK Engine" %}}
+
+1. Open a command window if you don't already have one open. Change your current directory to the pre-built engine directory.
 
     ```cmd
     cd C:\o3de-install
     ```
 
-1. Get the Python runtime for this engine.
+1. Get the Python runtime for the pre-built engine.
 
     ```cmd
     python\get_python.bat
@@ -232,4 +306,15 @@ Registering the O3DE engine enables O3DE projects to find the engine, even when 
 
     The O3DE manifest file is `<USER_DIRECTORY>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
 
+{{% /tab %}}
+{{< /tabs >}}
+
 You are now ready to create a project! For an introduction to project configuration, refer to [Project Creation with Open 3D Engine](/docs/welcome-guide/create).
+
+## Side-by-side engines
+ 
+ In the preceding sections, you learned how to set up and configure the O3DE engine as either a source engine or a pre-built SDK engine. You also have the option of registering both engines in a side-by-side configuration. This is one way to isolate your engine source code development from your project development.
+
+ For example, if the engine source is in `C:\o3de` and the pre-built SDK engine is in `C:\o3de-install`, you can give each engine its own engine name so that you can register both in the O3DE manifest using the `o3de` script's `register` command. To test your engine modifications, you can build a test project using the source engine project creation instructions, which builds the engine in the project directory. When you're ready to update the SDK engine used by your production project, you can build a new version of the SDK engine from `C:\o3de` using the `INSTALL` target. This will update the binaries in `C:\o3de-install`.
+
+To update the name of an engine, open `engine.json` in the engine root directory and change the `engine_name` field. Then run `scripts\o3de.bat register --this-engine` again from that directory. New projects created from this engine will be configured to use the new engine name. To update the configured engine for an existing project, open `project.json` in the project root directory and change the `engine` field to use the new engine name.
