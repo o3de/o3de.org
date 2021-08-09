@@ -203,7 +203,7 @@ Choose one of the following build types based on the primary focus of your devel
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
     * `LY_UNITY_BUILD` : Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
 
-1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every _project_. To avoid building the engine twice, you might want to wait until you create and build a project in a later section on creating projects.
+1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every _project_. To avoid building the engine twice if you plan on working with projects, you might want to wait until you learn how to create and build a project in a later section on creating projects. However, if you want to proceed and build the engine without a project, use the following CMake build command.
 
     The `profile` build configuration is shown in this example.
 
