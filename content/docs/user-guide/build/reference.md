@@ -47,8 +47,6 @@ These options control the types of assets that are built, and where projects loa
   * `ios` - iOS and iPad OS
   * `es3` - Android
   
-  You can change the types of assets built by the Asset Processor, or build for multiple platforms, by [configuring the asset pipeline](/docs/user-guide/assets/pipeline/configuring).
-  
   *Type*: `STRING`  
   *Default*: The asset type for the current host platform.
 
