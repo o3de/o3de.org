@@ -7,7 +7,6 @@ weight: 1500
 
 This is a collection of terms used in the Atom renderer, their definition, and the system they belong to. 
 
-
 Attachment  
 : An attachment is a buffer or image instance associated with a unique name. Attachments are used by the Render Hardware Interface (RHI) and Frame Scheduler for state management inside of a scope.
 

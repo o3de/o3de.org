@@ -3,12 +3,12 @@ title: "Graphics Feature Samples"
 description: "This section dives into the graphic feature samples demonstrated in the Atom Sample Viewer. "
 toc: true
 ---  
-  
+
+This section dives into the graphic feature samples demonstrated in the Atom Sample Viewer. 
+
 {{< placeholder >}}
 {{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
 {{< /todo >}}
-
-This section dives into the graphic feature samples demonstrated in the Atom Sample Viewer. 
 
 ## Area Lights
 

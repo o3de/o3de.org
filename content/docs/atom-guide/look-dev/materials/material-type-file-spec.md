@@ -4,8 +4,6 @@ description: "Material type files (`*.materialtype`) are in written JSON format.
 toc: true
 ---
 
-{{< preview-new >}}
-
 Material type files (`*.materialtype`) are in written JSON format and contain the following elements.
 
 ### **propertyLayout**  

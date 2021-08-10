@@ -5,8 +5,6 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled with specialized configuration files that add various metadata.
 
 Shaders are made up of several files:  
@@ -17,7 +15,6 @@ Shaders are made up of several files:
 - **`*.srgi`**: (Optional) Contains AZSL code, which combines partial SRGs.
 - **`.shadervariantlist`**: (Optional) Describes what shader variants must be compiled for a given .shader file. 
   
-
 ## AZSL Files
 
 **AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/_index.md) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  

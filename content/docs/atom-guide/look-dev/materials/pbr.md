@@ -6,11 +6,10 @@ toc: true
 weight: 200
 ---  
 
-{{< preview-new >}}
+Physically based rendering (PBR) is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe the basic concepts underlying PBR and how they relate to PBR material types in Atom.
+
 {{< todo issue="https://github.com/o3de/o3de.org/issues/688" >}}
 {{< /todo >}}
-
-Physically based rendering (PBR) is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe the basic concepts underlying PBR and how they relate to PBR material types in Atom.
 
 ## PBR Shading Model
 
