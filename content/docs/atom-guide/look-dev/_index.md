@@ -6,8 +6,6 @@ toc: true
 weight: 500
 ---
 
-{{< preview-new >}}
-
 This section contains the information about creative tools and concepts for look development using the Atom Renderer. 
 
 | Topic                        | Description |

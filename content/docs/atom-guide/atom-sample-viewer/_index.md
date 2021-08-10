@@ -3,13 +3,12 @@ title: "Atom Sample Viewer"
 description: "The Atom Sample Viewer showcases samples of some features and rendering techniques capable in Atom."
 toc: true
 weight: 300
----  
-
-{{< preview-new >}}
-{{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
-{{< /todo >}}
+--- 
 
 The **Atom Sample Viewer** showcases samples of features and rendering techniques that the Atom Renderer supports.
+
+{{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
+{{< /todo >}}
 
 ## Quick Start
 

@@ -4,8 +4,6 @@ description: "This tutorial walks you through how to create a StandardPBR materi
 toc: false
 ---
 
-{{< preview-new >}}
-
 This tutorial walks you through how to create a StandardPBR material in Atom. The StandardPBR material type allows you to create an artist-friendly, full-featured physically based rendering (PBR) material.
 
 This tutorial covers the following concepts:
