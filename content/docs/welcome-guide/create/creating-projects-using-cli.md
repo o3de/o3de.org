@@ -94,11 +94,15 @@ Use CMake to build the Visual Studio project in the build directory of your O3DE
 
 1. When the build is complete, the project binaries can be found in the project directory under `build/windows_vs2019/bin/profile`. Run **O3DE Editor** to verify the project is ready to use.
 
-    **Scenario 1:** If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), you do not need to include the project path.
+    **Scenario 1:** If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), the Editor application is in the project build directory.
 
     ```cmd
     build\windows_vs2019\bin\profile\Editor.exe
     ```
+
+    {{< note >}}
+If your project build directory is outside the project path, you must include the project path when launching **O3DE Editor**, using the `--project-path` parameter.
+    {{< /note >}}
 
     **Scenario 2:** If you installed O3DE or built your engine as a [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, you must include the project path when launching Editor. If you don't supply the project path when you run the Editor from the command line, **Project Manager** will launch. The project path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
 
