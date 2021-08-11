@@ -86,7 +86,9 @@ Use CMake to build the Visual Studio project in the build directory of your O3DE
     cmake --build build/windows_vs2019 --target MyProject.GameLauncher Editor --config profile -- /m
     ```
 
-    Note that when building the project for a pre-built SDK engine, even though you are not building **O3DE Editor**, it is still recommended to include `Editor` as a build target. While the GameLauncher doesn't depend on the Editor target, there are some Gems that do. If you leave off the Editor target when building your project, those Gems won't be included in the build.
+    {{< important >}}
+When building the project for a pre-built SDK engine, even though you are not building **O3DE Editor**, it is still highly recommended to include `Editor` as a build target. While the GameLauncher doesn't depend on the Editor target, there are some Gems that do. If you leave off the Editor target when building your project, those Gems won't be included in the build.
+    {{< /important >}}
 
     When building the project for a source engine, the **Asset Processor** and **Project Manager** are built too, since they are dependencies of **O3DE Editor**.
 
