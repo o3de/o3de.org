@@ -6,8 +6,6 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 Looking to submit new or changed code to O3DE? Exciting! Follow the guidance below to submit your first PR.
 
 ### GitHub Code Contribution Workflow

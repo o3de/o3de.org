@@ -6,8 +6,6 @@ toc: true
 weight: 550
 ---
 
-{{< preview-new >}}
-
 Open 3D Engine (O3DE) has many unique and specialized terms. This topic explains these terms and how documentation contributors should use them.
 
 ## General terminology guidance

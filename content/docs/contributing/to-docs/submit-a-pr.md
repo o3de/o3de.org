@@ -6,8 +6,6 @@ weight: 450
 toc: true
 ---
 
-{{< preview-new >}}
-
 When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
 
 * Technical accuracy
