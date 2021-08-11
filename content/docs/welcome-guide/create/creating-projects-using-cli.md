@@ -6,11 +6,11 @@ weight: 200
 toc: true
 ---
 
-The tutorial on this page and the video below provide an introduction to project configuration and building in Open 3D Engine (O3DE) using the `o3de` command line interface (CLI).
+The tutorial on this page and the video below provide an introduction to project configuration and building in Open 3D Engine (O3DE) using the `o3de` command line interface (CLI) tool. The O3DE CLI is a Python script used for project configuration. It is invoked from the `scripts` directory in your O3DE install. For a complete guide to O3DE CLI commands, refer to the [Project Configuration CLI Reference](/docs/user-guide/project-config/cli-reference).
 
 The instructions here and in the video guide you through the following steps:
 
-* Create a new O3DE project using the CLI.
+* Create a new O3DE project using the O3DE CLI.
 * Create Visual Studio project files in your O3DE project directory.
 * Build your O3DE project.
 
