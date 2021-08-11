@@ -29,7 +29,7 @@ The following are a list of known issues and improvements for TAA:
 
 - TAA can cause Bloom to produce flickering in the resulting image.
 
-- TAA can cause Aux-Geom to produce jittering in the resulting image. The reason is that Aux-Geom uses the jittered view but applies it after TAA runs. Therefore, TAA is currently not recommended to use in the **O3DE Editor**.
+- TAA can cause Aux-Geom to produce jittering in the resulting image. The reason is that Aux-Geom uses the jittered view but applies it after TAA runs. Therefore, TAA is recommended to run in Game mode, rather than Edit mode.
 
 - TAA involves motion vectors, which when used on parallel occlusion mapping (POM) can cause blur in the resulting image. The reason is that motion vectors become more inaccurate the greater the depth offset is from POM. You can enable pixel depth offset to reduce the blur, but it can impact performance.
 
