@@ -1,7 +1,7 @@
 ---
 description: ' Details and instructions for using the validator tool. '
 title: How to Use the Validation Tool for Open 3D Engine Submissions
-linkTitle: Validator Errors
+linktitle: Validator Errors
 ---
 
 The Open 3D Engine Early Warning System is a tool for style checks and basic static analysis to find errors before building the engine and performing tests. It runs before the pipeline starts a build, attempting to quickly reject invalid changes before spending machine resources to build and test, and minimize human effort on reviewing changes.
