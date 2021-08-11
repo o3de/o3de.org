@@ -23,16 +23,16 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/ai/nav-s
 
 1. In the Viewport, near where you want to create your navigation area, right-click and choose **Create entity**.
 
-1. With your new entity selected in the **Entity Outliner**, [add](/docs/userguide/components/working-adding.md) the **Navigation Area** component to it.
+1. With your new entity selected in the **Entity Outliner**, add the **Navigation Area** component to it.
 ![\[Navigation Area component properties.\]](/images/user-guide/component/component-nav-area-1.png)
 
 1. In the **Navigation Area** component, next to **Agent Types**, click **+**.
 
    Next to **\[0\]**, select **MediumSizedCharacters**. This property defines the [types of agents](#component-nav-area-properties) that can navigate in this area.
 
-1. Add the **Polygon Prism** component. [Adjust the size and shape](/docs/userguide/components/polygon-prism#working-with-polygon-prism-components) of the **Polygon Prism**. Ensure that your terrain and objects intersect with the volume of the polygon prism. [Adjust the height](/docs/userguide/components/polygon-prism#component-polygon-prism-height-adjustment) if necessary.
+1. Add the **Polygon Prism** component. [Adjust the size, shape, and height](/docs/user-guide/components/reference/shape/polygon-prism-shape) of the **Polygon Prism**. Ensure that your terrain and objects intersect with the volume of the polygon prism.
 
-   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas. The following examples show a navigation area that is too high above the terrain (1), and a navigation area appropriately situated on the terrain (2). If your navigation area is too high, use the [move](/docs/userguide/editor/toolbars) tool to lower the Z (up and down) position of the entity.
+   If your polygon prism hovers above your terrain and does not fully intersect with it, the navigation system does not produce the appropriate traversable areas. The following examples show a navigation area that is too high above the terrain (1), and a navigation area appropriately situated on the terrain (2). If your navigation area is too high, use the **move** tool to lower the Z (up and down) position of the entity.
 ![\[Enable Show Navigation Areas and View Agent Type in O3DE Editor.\]](/images/user-guide/component/component-nav-area.png)
 
 **To view the generated Navigation Area mesh** {#render-navigation-mesh}
@@ -45,13 +45,6 @@ You can use a **[Navigation Seed](/docs/user-guide/components/reference/ai/nav-s
 ![\[Enable Show Navigation Areas, View Agent Type, and Continuous Update in O3DE Editor.\]](/images/user-guide/component/component-nav-area-gameai-menu-items.png)
 
    A navigation mesh shows traversable areas in blue.
-
-**Topics**
-+ [Navigation Area Component Properties](#component-nav-area-properties)
-+ [Navigating Around Static Objects](#component-nav-area-static-entities)
-+ [Creating Navigation Mesh Exclusion Areas](#component-nav-area-exclusion)
-+ [Navigation Physics Integration](#component-nav-area-physics)
-+ [NavigationAreaRequestBus EBus Interface](#component-nav-area-ebus)
 
 ## Navigation Area Component Properties 
 

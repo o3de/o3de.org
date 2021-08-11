@@ -29,7 +29,7 @@ The following components are **incompatible** with the **Non-uniform Scale** com
 + **[Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/)**
 + **[Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)**
 + **[Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/)**
-+ **[Cloth](/docs/user-guide/components/reference/cloth.md)**
++ **Cloth**
 + **[PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/)**
 + **[PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/)**
 + **[PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/)**

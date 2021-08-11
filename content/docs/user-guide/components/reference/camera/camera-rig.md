@@ -6,7 +6,7 @@ title: Camera Rig
 
 {{< preview-migrated >}}
 
-Use the **Camera Rig** component to add and remove behaviors to drive your camera entity. To use the camera component, you must first add the [Camera Framework Gem](/docs/user-guide/gems/camera/) to your project.
+Use the **Camera Rig** component to add and remove behaviors to drive your camera entity. To use the camera component, you must first add the [Camera Framework Gem](/docs/user-guide/gems/reference/rendering/camera/) to your project.
 
 ## Camera Rig Component Properties 
 
