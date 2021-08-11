@@ -1,12 +1,12 @@
 ---
 linktitle: Creating Projects Using the CLI
 title: Creating Projects Using the Command Line Interface
-description: Learn how to create and build new Open 3D Engine (O3DE) projects from the default project template using the command line (CLI).
+description: Learn how to create and build new Open 3D Engine (O3DE) projects from the default project template using the command line interface (CLI).
 weight: 200
 toc: true
 ---
 
-The tutorial on this page and the video below provide an introduction to project configuration and building in Open 3D Engine (O3DE) using a command line interface (CLI).
+The tutorial on this page and the video below provide an introduction to project configuration and building in Open 3D Engine (O3DE) using the `o3de` command line interface (CLI).
 
 The instructions here and in the video guide you through the following steps:
 
@@ -106,7 +106,7 @@ When building the project for a pre-built SDK engine, even though you are not bu
 If your project build directory is outside the project path, you must include the project path when launching **O3DE Editor**, using the `--project-path` parameter.
     {{< /note >}}
 
-    **Scenario 2:** If you installed O3DE or built your engine as a [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, you must include the project path when launching Editor. If you don't supply the project path when you run the Editor from the command line, **Project Manager** will launch. The project path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
+    **Scenario 2:** If you installed O3DE or built your engine as a [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, you must include the project path when launching the Editor. If you don't supply the project path when you run the Editor from the command line, **Project Manager** will launch. The project path can be absolute or relative. If relative, it must be relative to the _engine_ directory.
 
     ```cmd
     C:\o3de-install\bin\Windows\profile\Editor.exe --project-path C:\o3de-projects\MyProject
