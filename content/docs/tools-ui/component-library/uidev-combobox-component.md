@@ -5,8 +5,6 @@ description: Learn how to use the O3DE UI combobox component in O3DE Gems and to
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use comboboxes to offer users a list of options from a dropdown menu. You define whether or not the input box is editable. An editable input box allows the user to type in a value *or* select a value from the dropdown menu.
 
 ![\[component combobox style\]](/images/tools-ui/component-combobox-style.png)
