@@ -16,7 +16,6 @@ This guide provides engine and game programmers with examples and best practices
 + [Defining and Using Component Services](/docs/user-guide/components/development/services)
 + [Editor Components](/docs/user-guide/components/development/entity-system-pg-editor-components)
 + [Creating System Components](/docs/user-guide/components/development/system-wide)
-+ [Programmer's Guide to Component Mode](/docs/learning-guide/tutorials/engine/components)
 + [Components and EBuses](/docs/user-guide/components/development/ebus-integration)
 + [Tick Bus and Components](/docs/user-guide/components/development/tick)
 + [Exposing Custom Components to Track View for Animation](/docs/user-guide/components/development/expose-animation)

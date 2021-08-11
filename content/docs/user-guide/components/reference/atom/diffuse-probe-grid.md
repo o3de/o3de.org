@@ -12,7 +12,7 @@ The **Diffuse Probe Grid component** creates a volume of light probes that provi
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

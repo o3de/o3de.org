@@ -12,7 +12,7 @@ The **PostFX Shape Weight Modifier** component limits post-processing effects (P
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties
