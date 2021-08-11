@@ -22,5 +22,4 @@ Each output directory in the asset cache represents a full image of all files (e
 
 + [Using Asset Processor](/docs/user-guide/assets/pipeline/processor)
 + [Move assets](./move-assets)
-+ [Asset Browser](/docs/user-guide/editor/asset-browser)
 + [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/pipeline/asset-system-programming)
