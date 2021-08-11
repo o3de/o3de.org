@@ -5,8 +5,6 @@ description: Use the O3DE UI breadcrumbs component as a navigational tool to sho
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use the breadcrumbs component to enable users to track their position along a hierarchical path. Breadcrumbs include a path from the home page to the user's current location. The points in the breadcrumbs refer to a directory or node. Users can easily move positions in the path by selecting one of the breadcrumbs.
 
 For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the O3DE **Animation Editor**.

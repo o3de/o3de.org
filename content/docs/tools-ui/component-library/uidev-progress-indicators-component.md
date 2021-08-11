@@ -5,8 +5,6 @@ description: Learn about the O3DE UI progress indicators, including the spinner 
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use progress and status indicators to communicate to users that the O3DE application is working on a process, and what the result of that process is when it's finished. Indicators should be employed when there's a chance the user could be left wondering whether or not a process is working or hung.
 
 ![\[component progress indicators style\]](/images/tools-ui/component-progress-indicators-style.png)
