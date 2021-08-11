@@ -10,12 +10,6 @@ The **Navigation** component provides path-finding and path-following functional
 
 ![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/user-guide/component/component-navigation-path.png)
 
-**Topics**
-+ [Navigation Component Properties](#component-navigation-properties)
-+ [NavigationComponentRequestBus EBus Interface](#component-navigation-ebusrequest)
-+ [NavigationComponentNotificationBus EBus Interface](#component-navigation-ebusnotification)
-+ [Navigation Pathing Cvars](#component-navigation-cvars)
-
 ## Navigation Component Properties 
 
 The **Navigation** component has the following properties:

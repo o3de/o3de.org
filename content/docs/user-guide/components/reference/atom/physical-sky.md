@@ -12,7 +12,7 @@ The **Physical Sky** component adjusts the physical environment of the scene, su
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

@@ -12,7 +12,7 @@ The **Depth of Field component** simulates the lens effects of real world camera
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

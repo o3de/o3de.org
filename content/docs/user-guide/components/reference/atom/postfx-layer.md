@@ -11,7 +11,7 @@ The **PostFx Layer** component controls how post-processing effects' (PostFX) ar
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

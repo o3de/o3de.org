@@ -12,7 +12,7 @@ The **Occlusion Culling Plane** component adds a plane, or an occluder, that whe
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties
