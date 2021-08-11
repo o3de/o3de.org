@@ -4,9 +4,9 @@ description: "Learn about contrast adaptive sharpening in the Atom Renderer"
 toc: true
 ---  
 
-*Contrast adaptive sharpening* (CAS) is a type of sharpening that takes into account the local 3x3 neighborhood's contrast when deciding how much to sharpen. Samples that already have high contrast will be sharpened much less than samples that have low contrast. This helps prevent the over-sharpened look that is found in standard sharpening filters that sharpen uniformly. You can use CAS with [temporal anti-aliasing](taa/) (TAA) to reduce the softness that TAA introduces to your image.
+*Contrast adaptive sharpening* (CAS) is a technique for sharpening an image that takes into account the local 3x3 neighborhood's contrast when deciding how much to sharpen. Samples that already have high contrast are sharpened much less than samples that have low contrast. This helps prevent the over-sharpened look that is found in standard sharpening filters that sharpen uniformly. You can use CAS with temporal anti-aliasing (TAA) to reduce the softness that TAA introduces to your image. For more information, refer to [Temporal Anti-aliasing](taa/).
 
-Our contrast adaptive sharpening is based on AMD's implementation. For more information, refer to [AMD FidelityFX CAS](https://gpuopen.com/fidelityfx-cas/).
+CAS in the Atom Renderer is based on AMD's implementation. For more information, refer to [AMD FidelityFX CAS](https://gpuopen.com/fidelityfx-cas/).
 
 
 ## Parameters
@@ -23,3 +23,7 @@ You can enable `ContrastAdaptiveSharpening.pass` in the main render pipeline thr
 You can also add `ContrastAdaptiveSharpening.pass` to a custom pipeline. 
 
 To use CAS to improve the quality of your image with TAA, run the `ContrastAdaptiveSharpening.pass` after the `Taa.pass`. 
+
+## Issues and improvements
+
+In the future, the **O3DE Editor** will support a CAS component, making it easier to configure CAS in your scene.
