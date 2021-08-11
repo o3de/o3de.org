@@ -37,7 +37,7 @@ Polygon
 
 | Light Type | Dependency |
 | - | - |
-| Point (sphere) | [Sphere Shape](/docs/user-guide/components\reference\shape\sphere-shape/) | 
+| Point (sphere) | [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/) | 
 | Point (simple punctual) | - | 
 | Spot (disk) | [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/) |
 | Spot (simple punctual) | - | 

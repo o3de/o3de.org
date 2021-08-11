@@ -94,7 +94,7 @@ Atom has a unified mesh format with support for several mesh types:
 + **Skinned** meshes that are bound to a skeleton with per vertex bone weights and animated through transforms applied to the bones of the skeleton. Skinned meshes can't be included in light maps or reflection maps.
 + **Cloth** meshes that dynamically simulate the physical properties of cloth-like objects. Cloth meshes can't be included in light maps or reflection maps.
 
-*Related to: [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [O3DE Mesh Component](/docs/user-guide/components/reference/atom/mesh), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html), [O3DE Skinned Mesh Component](/docs/user-guide/components/reference/atom/skinned-mesh)*  
+*Related to: [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [O3DE Mesh Component](/docs/user-guide/components/reference/atom/mesh), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
 
 
 ## Processing and Post FX
@@ -107,7 +107,7 @@ Tone Mapping and Color Grading
 Post-processing Volumes   
 : Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
 
-*Related to: [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html), [O3DE Post Process Components](/docs/user-guide/components/reference/atom/post-process)*
+*Related to: [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html), O3DE PostFX components ([Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/)).* 
 
 
 Bloom   
