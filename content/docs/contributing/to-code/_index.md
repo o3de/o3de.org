@@ -5,8 +5,6 @@ toc: true
 weight: 100
 ---
 
-{{< preview-new >}}
-
 ## Open 3D Engine Code Contribution: Home
 
 Looking to contribute new or changed code to Open 3D Engine (O3DE)? The links below will help you get started.
