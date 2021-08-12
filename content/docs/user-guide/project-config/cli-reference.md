@@ -1,27 +1,28 @@
 ---
-linktitle: CLI Reference
-title: Project Configuration CLI Reference
+linktitle: O3DE CLI Reference
+title: O3DE Project Configuration CLI Reference
+description: The command line interface (CLI) reference for the Open 3D Engine (O3DE) Python script.
 weight: 200
 toc: true
 ---
 
-The `o3de` Python script provides a solution to accomplish project configuration tasks using the command line interface (CLI). It aggregates all of the functions from lower-level scripts in Open 3D Engine (O3DE), so users can access them from a single point. The script is located in the engine folder at `/scripts/o3de.py`. 
+The `o3de` Python script lets you configure your project using the command line interface (CLI). The script aggregates all of the functions from lower-level scripts in Open 3D Engine (O3DE), so you can access them from a single point. Find the script in the engine folder at `/scripts/o3de.py`. 
 
-The `o3de` Python script is responsible for multiple tasks:
+You can use the `o3de` Python script for the following tasks:
 
 - Creating projects
 - Creating Gems
 - Creating templates
-- [Enabling and disabling Gems for your project](add-remove-gems/)
+- [Enabling and disabling Gems for your project](add-remove-gems/#using-the-command-line-interface-cli)
 - [Registering the engine](/docs/welcome-guide/setup/setup-from-github#register-the-engine)
 - Registering projects and Gems
-
+  
 
 <!-------------------------------------------------------------->
 
 ## Prerequisites
 
-To use the `o3de` Python script, you must have Python runtime set up. Python runtime was downloaded when you set up the engine. For more information, refer to instructions on how to get Python runtime in the [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine) section of the Setup From GitHub page.
+To use the `o3de` Python script, you must set up the Python runtime, which you download when you set up the engine. For instructions on downloading the runtime, refer to the [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine) section of the Setting up O3DE from GitHub page.
 
 
 <!-------------------------------------------------------------->
@@ -31,21 +32,23 @@ To use the `o3de` Python script, you must have Python runtime set up. Python run
 {{< tabs name="Python runtime setup" >}}
 {{% tab name="Windows" %}}
 
-For Windows, open a command prompt. Then, run the O3DE Python runtime using one of the following ways, and enter the command you want to perform. Note: Replace `<engine>` with the path to your engine. 
+To run the O3DE Python runtime and a command, at a command prompt, do either of the following:
 
 - Run the `o3de.bat` batch file directly.
     ```cmd
     <engine>\scripts\o3de.bat <command>
     ```
 
-- Launch python and run the `o3de.py` script.
+- Launch Python and run the `o3de.py` script.
     ```cmd
     <engine>\python\python.cmd <engine>\scripts\o3de.py <command>
     ```
 
-**Example**
+{{< note >}}
+Replace `<engine>` with the path to your engine.
+{{< /note >}}
 
-For example, to register the engine, you can enter the following command. 
+For example, to register the engine, enter the following command:
 
 ```cmd
 <engine>\scripts\o3de.bat register --this-engine
@@ -54,21 +57,23 @@ For example, to register the engine, you can enter the following command.
 {{% /tab %}}
 {{% tab name="Linux" %}}
 
-For Linux, open a terminal. Then, run the O3DE Python runtime using one of the following ways, and enter the command you want to perform. Note: Replace `<engine>` with the path to your engine. 
+To run the O3DE Python runtime and a command, in a terminal window, do either of the following:
 
 - Run the `o3de.sh` shell script file directly.
     ```bash
     <engine>/scripts/o3de.sh <command>
     ```
 
-- Launch python and run the `o3de.py` script.
+- Launch Python and run the `o3de.py` script.
     ```bash
     <engine>/python/python.sh <engine>/scripts/o3de.py <command>
     ```
 
-**Example**
+{{< note >}}
+Replace `<engine>` with the path to your engine.
+{{< /note >}}
 
-For example, to register the engine, you can enter the following command. 
+For example, to register the engine, enter the following command:
 
 ```bash
 <engine>/scripts/o3de.sh register --this-engine
@@ -99,14 +104,14 @@ The `o3de` Python script contains the following commands, with further details i
 | [`edit-engine-properties`](#edit-engine-properties) | Edits the engine's properties. |
 | [`edit-project-properties`](#edit-project-properties) | Edits the project's properties. |
 | [`edit-gem-properties`](#edit-gem-properties) | Edits the Gem's properties. |
-| [`sha256`](#sha256) | Creates a hash value for an O3DE object using the SHA-256 secure hash algorithm. |
+| [`sha256`](#sha256) | Creates a hash value for an O3DE object using SHA-256 (Secure Hash Algorithm 256). |
 
 
 <!-------------------------------------------------------------->
 
 ## `get-global-project`
 
-Gets the global project that is registered to the engine. By default, this is read from `<USER_PATH>/.o3de/Registry/bootstrap.setreg`. You can also specify a file path using `-i`.
+Gets the global project that is registered to the engine. By default, reads the global project from `<USER_PATH>/.o3de/Registry/bootstrap.setreg`. You can also specify a file path using `-i`.
 
 ### Format
 
@@ -142,9 +147,9 @@ o3de.bat get-global-project -i <USER_PATH>\.o3de\Registry\my-custom.setreg
 
 ## `set-global-project`
 
-Sets the specified project as the engine's global project. By default this is set in `C:\Users\USER_PATH\.o3de\Registry\bootstrap.setreg`. You can also specify a file path using `-o`.
+Sets the specified project as the engine's global project. By default sets this in `C:\Users\USER_PATH\.o3de\Registry\bootstrap.setreg`. You can also specify a file path using `-o`.
 
-If you set a global project, then O3DE tools (such as the Asset Processor and Editor) will use the global project. You can override the global project by specifying a project with the `project-path` parameter when you launch the O3DE tools from the command line.
+If you set a global project, then O3DE tools (such as **Asset Processor** and **O3DE Editor**) use the global project when they are launched from an installed engine. To override the global project, specify a project with the `project-path` parameter when you launch the O3DE tools from the command line.
 
 ### Format 
 
@@ -175,7 +180,7 @@ o3de.bat set-global-project -pp PROJECT_PATH -o <USER_PATH>\.o3de\Registry\my-cu
 
 - **`-pp PROJECT_PATH, --project-path PROJECT_PATH`**
 
-  The path to the project. The path must contain the project manifest file, `project.json`, unless the `--force` parameter is also used.
+  The path to the project. The path must contain the project manifest file (`project.json`) unless you also use the `--force` parameter.
 
 - **`-pn PROJECT_NAME, --project-name PROJECT_NAME`**
 
@@ -183,11 +188,11 @@ o3de.bat set-global-project -pp PROJECT_PATH -o <USER_PATH>\.o3de\Registry\my-cu
 
 - **`-o OUTPUT_PATH, --output-path OUTPUT_PATH`**
 
-  The path and filename where the `project_path` key is written. The file should be located in `<USER_PATH>/.o3de/Registry/` and have the file extension `.setreg`. If this parameter is not used, the key is written to `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
+  The path and filename where the `project_path` key is written. The file should be located in `<USER_PATH>/.o3de/Registry/` and have the file extension `.setreg`. If you don't use this parameter, the key is written to `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
 
 - **`-f, --force`**
 
-  Forces the project path to be set in the supplied setreg file. 
+  Forcibly sets the project path in the supplied .setreg file.
 
 
 <!-------------------------------------------------------------->
@@ -210,11 +215,13 @@ create-template [-h] -sp SOURCE_PATH [-tp TEMPLATE_PATH]
 
 ### Usage
 
-Creates a template from the source folder and saves the template into the specified path.
+Creates a template from the source folder and saves the template in the specified path.
 
 ```cmd
 o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 ```
+
+{{< todo issue="https://github.com/o3de/o3de.org/issues/806">}} Add more usage examples. {{< /todo >}}
 
 ### Optional parameters
   
@@ -224,11 +231,11 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-sp SOURCE_PATH, --source-path SOURCE_PATH`**
 
-  The path to the source folder that you want to create into a template.
+  The path to the source folder that you want to use as a template.
 
 - **`-tp TEMPLATE_PATH, --template-path TEMPLATE_PATH`**
 
-  The path to an existing template you want to create a new template from. The path can be absolute or relative to the default templates path.
+  The path to an existing template that you want to create a new template from. The path can be absolute or relative to the default template's path.
 
 - **`-srp SOURCE_RESTRICTED_PATH, --source-restricted-path SOURCE_RESTRICTED_PATH`**
 
@@ -248,7 +255,7 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-sn SOURCE_NAME, --source-name SOURCE_NAME`**
 
-  Substitutes any file and path entries that match the source name - ${Name} and ${SanitizedCppName} - in the source-path directory. An example of path substitution: `--source-name Foo<source-path>/Code/Include/FooBus.h` -> `<source-path>/Code/Include/${Name}Bus.h`. An example of file content substitution: `class FooRequests` -> `class ${SanitizedCppName}Requests`.
+  Substitutes any file and path entries that match the source name -- ${Name} and ${SanitizedCppName} -- in the source-path directory. An example of path substitution: `--source-name Foo<source-path>/Code/Include/FooBus.h` -> `<source-path>/Code/Include/${Name}Bus.h`. An example of file content substitution: `class FooRequests` -> `class ${SanitizedCppName}Requests`.
 
 - **`-srprp SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH, --source-restricted-platform-relative-path SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
