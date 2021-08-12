@@ -141,10 +141,6 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     git config --unset lfs.url 
     ```
 
-    {{< note >}}
-If you did not clone from a fork, or will not push changes to files in the LFS, you do not need to do this step.
-    {{< /note >}}
-
 1. Any time that you want to sync the latest files from the repo and LFS, you can merge changes from the upstream branch you are working with. The default branch is **development**.
 
     ```cmd
