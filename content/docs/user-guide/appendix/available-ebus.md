@@ -4,8 +4,6 @@ title: Common Tasks, EBuses, and Handlers
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 The following are some common game programming tasks and the EBuses and handlers that you can use to implement them.
 
 ## Detect Mouse, Keyboard, or Other Button Events 

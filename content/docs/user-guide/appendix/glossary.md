@@ -4,8 +4,6 @@ weight: 1000
 toc: true
 ---
 
-{{< preview-new >}}
-
 ### actor
 A specialized [entity](#entity) that is the basis for characters in a game.
 

@@ -4,8 +4,6 @@ description: ' Learn the asset identifiers and file paths that game engineers ne
 title: Asset IDs and File Paths
 ---
 
-{{< preview-migrated >}}
-
 Consult this section if you are a game engineer who needs to port older game code or develop new code or tools.
 
 ## File Path Aliases versus Asset IDs 
