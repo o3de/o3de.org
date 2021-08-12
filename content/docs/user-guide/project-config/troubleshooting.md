@@ -1,7 +1,7 @@
 ---
 linktitle: Troubleshooting
-title: Troubleshooting for Project Configuration
-description: A troubleshooting guide for project configuration in Open 3D Engine.
+title: Project Configuration Troubleshooting in Open 3D Engine
+description: A troubleshooting guide for project configuration in Open 3D Engine (O3DE).
 toc: true
 weight: 160
 ---
