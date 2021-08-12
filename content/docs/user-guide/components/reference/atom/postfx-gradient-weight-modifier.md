@@ -12,7 +12,7 @@ The **PostFX Gradient Weight Modifier** component modifies post-processing effec
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

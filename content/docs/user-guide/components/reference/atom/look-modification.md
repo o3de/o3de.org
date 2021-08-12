@@ -12,7 +12,7 @@ The **Look Modification** component allows you to configure a color grading look
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

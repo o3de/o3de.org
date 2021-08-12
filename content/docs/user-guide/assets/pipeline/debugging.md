@@ -7,14 +7,6 @@ title: Debugging Asset Processor
 
 Use the following options to help debug Asset Processor issues.
 
-**Topics**
-+ [Viewing Asset Processor Log Files](#asset-processor-log-files)
-+ [Restarting Asset Processor](#restart-asset-processor)
-+ [Using Asset Builder](#using-asset-builder)
-+ [Using the Microsoft Child Process Debugging Power Tool](#debug-with-visual-studio-child-process-add-on)
-+ [Debug Asset Builders from Asset Processor](#debug-asset-builders-running-from-asset-processor)
-+ [Clearing the Cache](#clearing-asset-processor-cache)
-
 ## Viewing Asset Processor Log Files 
 
 You can view logs for internal operations of Asset Processor. If Asset Processor isn't processing or working as expected, use the information in the logs to debug the issue. This doesn't include logs for the processing of individual assets.

@@ -145,12 +145,12 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Slope Gradient | Generates a gradient based on the surface angle. |
 | Surface Mask Gradient | Generates a gradient based on the underlying surface types. |
 
+<!-- 
 ### Networking
 
 | Component | Description | 
 | - | - |
-| [Anim Graph Net Sync](/docs/user-guide/components/reference/networking/animgraph-netsync/) | The **AnimGraph** component, which adds an animation graph and motion set to a character, does not automatically synchronize its parameters across the network. The **Anim Graph Net Sync** component provides an authoritative way of replicating these parameters. |
-| Network Binding |  |
+-->
 
 ### Non-uniform Scale
 
@@ -171,7 +171,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
-| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
+| [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
 | [PhysX Shape Collider](/docs/user-guide/components/reference/physx/shape-collider/) | Creates a geometric collider based on the **Shape** component. |
 
 ### Scripting

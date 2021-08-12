@@ -12,7 +12,7 @@ The **SSAO** component approximates indirect lighting in a scene by using the *s
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties

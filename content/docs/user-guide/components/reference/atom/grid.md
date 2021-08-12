@@ -12,7 +12,7 @@ The **Grid** component adds a grid to the scene. You can customize the appearanc
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/atom-guide)
 
 
 ## Properties
