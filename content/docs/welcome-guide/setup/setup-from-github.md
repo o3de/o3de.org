@@ -127,7 +127,7 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     upstream        {{< links/o3de-source >}}.git (push)
     ```
 
-1. Update the LFS URL to include your fork. This will enable you to push changes to large files. Open the .lfsconfig file at the root of the repository for complete instructions and the **DISTRIBUTION** to use.
+1. (Optional) Update the LFS URL to include your fork. This will enable you to push changes to files in the LFS. If you do not expect to make changes to these files, you do not need to do this step. Open the .lfsconfig file at the root of the repository for complete instructions and the **DISTRIBUTION** to use.
 
     ```cmd
     git config lfs.url https://<DISTRIBUTION>.cloudfront.net/api/v1/fork/<FORK> 
