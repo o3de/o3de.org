@@ -3,8 +3,6 @@ description: ' Export meshes from .fbx files with FBX Settings to Open 3D Engine
 title: FBX Settings mesh export
 ---
 
-{{< preview-migrated >}}
-
 **Meshes** contain geometry that doesn't have a skeleton and skinning data. These assets are also called *static* **Meshes**. Static meshes are most often used as props and environment objects, but can be used as interactive objects and even player avatars. Entities containing static meshes can be animated through scripts (*kinematics*) or PhysX simulation (*dynamics*).
 
 **Contents**

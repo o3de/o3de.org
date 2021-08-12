@@ -1,10 +1,8 @@
 ---
-description: ' Understand the workflow of Open 3D Engine''s runtime asset system and learn
+description: ' Understand the workflow of Open 3D Engine's runtime asset system and learn
   how to load prebuilt assets into a running instance of the engine. '
 title: Programming the O3DE AZCore Runtime Asset System
 ---
-
-{{< preview-migrated >}}
 
 The O3DE Editor and O3DE runtime code use the AZCore runtime asset system to asynchronously stream and activate assets. This topic describes the workflow of the classes in the asset system and shows how to load already-built assets into a running instance of the engine.
 
