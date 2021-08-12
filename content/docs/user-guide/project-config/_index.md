@@ -5,7 +5,7 @@ weight: 100
 
 | Topic | Description |
 | - | - | 
-| [Adding and Removing Gems](add-remove-gems/) | Learn how to add and remove Gems in your project. | 
-| [Registering Gems](register-gems/) | Learn how to register Gems that are provided outside of the O3DE source. | 
-| [CLI Reference](cli-reference.md) | A command line interface reference for the `o3de` Python script. 
-| [Troubleshooting](troubleshooting/) | A troubleshooting guide for project configuration. |
+| [Adding and Removing Gems](add-remove-gems/) | Learn how to add and remove Gems in your project. |
+| [Registering Gems](register-gems/) | Learn how to register external Gems from sources outside of O3DE. |
+| [O3DE CLI Reference](cli-reference/) | A command line interface (CLI) reference for the `o3de` Python script.
+| [Troubleshooting](troubleshooting/) | Troubleshoot common issues that you might encounter during project configuration. |
