@@ -113,7 +113,7 @@ The list of arguments for this script is described below:
 
 
 ## **Android Deployment Script**
-The script to deploy the android project is located under `cmake\Tools\Platform\Android\deploy_androidt.py` 
+The script to deploy the android project is located under `cmake/Tools/Platform/Android/deploy_android.py` 
 
 The list of arguments for this script is described below:
 | Argument | Description | Default | Notes |
@@ -122,7 +122,7 @@ The list of arguments for this script is described below:
 | \-b, --build-dir | The build directory of the project to deploy from |     |     |
 | \-c, --configuration | The build configuration of the built binaries to deploy from |     |     |
 | \--device-id-filter | Comma separated list of connected android device IDs to filter the deployment to | All connected android devices | Only used when multiple devices are connected and you want to filter which devices will be the target for the deployment.|
-| \-t , --deployment-type {APK, ASSETS, BOTH} | The deployment type (APK\|ASSETS\|BOTH) to execute:<br><br>*   *APK*  <br>    Only deploy the APK, not any external assets (see --include-apk-assets options in the project configuration). If the assets are included in the APK, then it will be included as well.<br>*   *ASSETS*  <br>    Only deploy the assets for the APK. This option is only valid if --include-apk-assets was not set during the project generation<br>*   *BOTH*  <br>    Both the APK and assets will be deployed, regardless of the --include-apk-assets option. | BOTH | Separating the options to deploying assets separately from the APK optimizes different workflows. For developers making changes to the code, and not the assets, then 'APK' only deployments are more efficient (provided that the assets are deployed at least initially). For workflows where the assets are the only updates, then 'ASSETS' would be the more efficient workflow (provided that --include-apk-assets were not set during project generation) |
+| \-t , --deployment-type {APK, ASSETS, BOTH} | The deployment type (APK\|ASSETS\|BOTH) to execute:<br/><br/>**APK**<br/>Only deploy the APK, not any external assets (see --include-apk-assets options in the project configuration). If the assets are included in the APK, then it will be included as well.<br/><br/>**ASSETS**<br/>Only deploy the assets for the APK. This option is only valid if --include-apk-assets was not set during the project generation<br/><br/>**BOTH**<br/>Both the APK and assets will be deployed, regardless of the --include-apk-assets option. | BOTH | Separating the options to deploying assets separately from the APK optimizes different workflows. For developers making changes to the code, and not the assets, then 'APK' only deployments are more efficient (provided that the assets are deployed at least initially). For workflows where the assets are the only updates, then 'ASSETS' would be the more efficient workflow (provided that --include-apk-assets were not set during project generation)<br/>|
 | \--clean | Option to clean the target android device (uninstall) of any pre-existing projects before deploying. |     |     |
 
 
