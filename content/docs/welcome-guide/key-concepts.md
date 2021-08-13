@@ -108,7 +108,7 @@ EBuses have many advantages over traditional polling methods:
 
 With EBusses, you can:
 
-* Make direct gobal function calls.
+* Make direct global function calls.
 * Dispatch processing to multiple handlers.
 * Queue all calls, acting like a command buffer.
 * Use as an addressable mailbox.
