@@ -10,6 +10,10 @@ toc: true
 The **Diffuse Probe Grid component** creates a volume of light probes that provide diffuse global illumination within the specified area.
 
 
+{{< note >}}
+You must have Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
+{{< /note >}}
+
 ## Provider ##
 
 [Atom Gem](/docs/atom-guide)
