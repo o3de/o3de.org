@@ -1,10 +1,9 @@
 ---
-title: Open 3D Engine support for Android
+title: Android Support for Open 3D Engine (O3DE)
 linkTitle: Android
 description: An overview of Open 3D Engine support for development for Android.
 weight: 200
 ---
-# Android Support for Open 3D Engine (O3DE)
 
 O3DE projects for Android relies on the gradle build system to build the final APK required to launch and run O3DE projects. The gradle build scripts themselves uses cmake as a subset of the build process to compile the native C++ code, while gradle will also handle the build of the android application (java) and construction and package creation of the final APK and assets. 
 
@@ -79,7 +78,7 @@ Under the `Amazon/AssetProcessor/Platforms` section of the file, enable the "and
 }
 ```
 
-Optionally, `--platforms=android` can be passed in during the launch the Asset Processor (Batch)
+Optionally, `--platforms=android` can be passed in during the launch the **Asset Processor (Batch)**
 
 After the android assets are processed, you can proceed with the Android project generation.
 
