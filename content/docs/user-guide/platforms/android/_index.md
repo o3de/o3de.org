@@ -1,0 +1,134 @@
+---
+title: Open 3D Engine support for Android
+linkTitle: Android
+description: An overview of Open 3D Engine support for development for Android.
+weight: 200
+---
+# Android Support for Open 3D Engine (O3DE)
+
+O3DE projects for Android relies on the gradle build system to build the final APK required to launch and run O3DE projects. The gradle build scripts themselves uses cmake as a subset of the build process to compile the native C++ code, while gradle will also handle the build of the android application (java) and construction and package creation of the final APK and assets. 
+
+Because of this android projects require a custom script to generate the project beyond what cmake does by itself.
+
+## **Prerequisite Software and Packages**
+
+### **Java Development Kit (JDK)**
+The latest version of the Java Development Kit is needed to both compile the android java source for the project as well as to create a Java Key Storage (JKS) files used by the Android SDK to sign the APK.
+
+### **Gradle**
+[Gradle](https://gradle.org/install/) (version 6.7.1 or newer) is the build system designed to build and create Android applications.
+
+### **Android SDK** 
+The Android SDK will contain the android libraries, packages, ndk, tools, etc that are needed to build the Android App for an O3DE project. 
+
+### **CMake**
+[CMake](https://cmake.org/download/) project generator (version 3.21 or newer) is needed for O3DE for all native C++ builds, regardless of the platform. 
+
+### **Ninja Build System**
+The [ninja](https://ninja-build.org/) build system is used by CMake to build the underlying native C++ code for the O3DE project.
+
+## **Optional Software**
+
+### **Android Studio**
+Android Studio is the IDE commonly used in conjunction with Gradle to develop and build Android Apps. While Android Studio itself isn't absolutely necessary, it provides the mechanism to setup and download the required Android SDK for the build process. While its possible to just download the command line tools by itself, the current O3DE script that generates the Android Gradle project does not yet support this method. Download the latest version from [https://developer.android.com/studio](https://developer.android.com/studio) and run through the installation process.
+
+
+## **Setup Requirements**
+
+### **Setup the Android SDK**
+The Android SDK will be configured as part of the intial Android Studio experience. When you start Android Studio and have not setup the Android SDK yet, it will guide you through the steps to download and install it and at least one SDK platform.
+
+Keep track of the location of where the Android SDK is installed as it will be needed for the project generation command described below.
+
+It is also possible to just download the Android SDK manager without Android Studio, but in order to do so will require that the command line tool package be placed in a subfolder called 'tools' under the root of a local android sdk folder.
+
+### **Prerequisite Packages installation**
+
+The other prerequisites described above (Java, Gradle, CMake, Ninja) should be on the command path in order to simplify project generation steps. If not, the path to their respective executables will need to be configured in the command line arguments for the Android project generator.
+
+### **Android Key Store**
+APKs that are created from the Android build process must be signed before they are deployed. It is possible to configure this for a generated project after project creation through Android Studio, but it is also possible to set this during the project generation step. Android uses the JKS format so we can use the 'keytool' command from java to accomplish this. 
+
+|Field Name|Keytool Argument|Description|
+| --- | --- | --- |
+| Distinguished Name ([DN](https://datatracker.ietf.org/doc/html/rfc2253)) | dname | Descriptive name of an entity to identify the owner of the key. |
+| Alias Name | alias | Alias to identify the key and certificate in the keystore (a key store file may contain multiple keys and certificates).|
+| Key Password | keypass | The password to protect the individual signing key. |
+| Keystore Password | storepass | The password to protect the entire Keystore file. |
+| Validity Period | validity | The validity period (starting from the current time) that the certificate is valid for. This value is represented in days.|
+
+### **Android Assets**
+Before you can generate an O3DE Android project, you must have assets for the Android project processed and available. This is done by the Editor and Tools project for the host platform (i.e. Windows), and running AssetProcessor (or AssetProcessorBatch) on the desired project.
+
+Specifically for android, you must configure the registry settings value for AssetProcessor to process 'android' platform assets. This is done by updating the 'AssetProcessorPlatformConfig.setreg' file located under the 'Registry' folder of the engine root.
+
+Under the `Amazon/AssetProcessor/Platforms` section of the file, enable the "android" flag. For example:
+
+```
+"Amazon": {
+    "AssetProcessor": {
+        ...
+        "Platforms": {
+            //"pc": "enabled",
+            "android": "enabled"
+            //"ios": "enabled",
+            //"mac": "enabled",
+            //"server": "enabled"
+         }
+    ...
+}
+```
+
+Optionally, `--platforms=android` can be passed in during the launch the Asset Processor (Batch)
+
+After the android assets are processed, you can proceed with the Android project generation.
+
+## **Android Project Generation Script**
+
+The script to generate android projects is located in the engine root under `cmake/Tools/Platform/Android/generate_android_project.py`
+
+The list of arguments for this script is described below:
+| Command_Argument | Description | Default | Notes |
+| --- | --- | --- | --- |
+| \--engine-root | The path to the root of the engine folder. | <required> |     |
+| \--build-dir | The path to the build folder that will be created for the project. | <required> | This path can be relative (to the engine root path), or an absolute path |
+| \--third-party-path | The path to O3DE's designated 3rd Party folder | <required> | This correlates to O3DE's LY\_3RDPARTY\_PATH cmake variable |
+| \--android-sdk-path | The path to the location of the android sdk root | <required> | This path is normally set during configuration of Android Studio |
+| \-g / --project-path | The path to the O3DE project to generate the Android project for | <required> |     |
+| \--android-sdk-platform | The android API level to base the build on | The latest installed API level in the --android-sdk-path value | The API level needs to match the version of the target android device. (For a description of API levels, refer to [https://source.android.com/setup/start/build-numbers](https://source.android.com/setup/start/build-numbers) ).<br><br>Current the minimum API level supported is 28. |
+| \--android-sdk-build-tool-version | Override the android build tools version | The latest android build tools installed in the --android-sdk-path value |     |
+| \--gradle-plugin-version | The version of the Android Gradle Plugin to specify for the build | 4.2.0 | *   The minimum supported Android Gradle plugin is version 4.2.0 (the default). Refer to [https://developer.android.com/studio/releases/gradle-plugin?buildsystem=ndk-build](https://developer.android.com/studio/releases/gradle-plugin?buildsystem=ndk-build) for details.<br>*   Currently, only 4.2.0 is supported. As future versions are added, this script will need to be updated to support it. |
+| \--android-ndk-version | The specific NDK value to base the build on | 21.4.7075529 | The values are based on the full revision number of the NDK:<br><br>*   16.1.4479499    <br>*   17.2.4988734    <br>*   18.1.5063045    <br>*   19.2.5345600    <br>*   20.0.5594570    <br>*   20.1.5948944    <br>*   21.0.6113669    <br>*   21.1.6352462    <br>*   21.2.6472646    <br>*   21.3.6528147    <br>*   21.4.7075529    <br>*   22.0.7026061    <br>*   22.1.7171670    <br>This argument also accepts the '\*' wildcard, so you can specify 21.\* and it will select the most recent version of the NDK21 (21.4.7075529) |
+| \--android-native-api-level | For the native cmake android support, the API level that the NDK will be supporting | The same API Level set by the --android-sdk-platform parameter | *   The minimum API Level for the NDK is 24 |
+| \--include-apk-assets | Option to include the game assets for the APK. | False | If this option is set, you must have the android assets built (refer to the Android Assets section above) |
+| \--asset-mode | Asset Mode (VFS \| PAK \| LOOSE) to use when including assets into the APK | LOOSE | Accepted values are<br><br>*   LOOSE (default)  <br>    The assets are unpacked and is stored as individual files contained within the asset cache<br>*   PAK  <br>    The assets are packed into pak files<br>*   VFS  <br>    The assets are referenced remotely from the target device through the Virtual File System |
+| \--asset-type | Asset Type to use when including assets into the APK | android | This argument will be deprecated in the future and we will only be supported 'android' assets |
+| \--gradle-install-path | If gradle command is not in the PATH environment, or you want to specify an alternate gradle folder, this argument allows you to override the installed version of gradle to use for the project generation. | The gradle that is installed and part of the PATH environment will be specified. | *   The minimum version of gradle is currently 6.7.1 (in order to support the minimum version of the Android Gradle plugin, 4.2.0 )<br>*   If this argument is not specified, and there is no gradle installed in the PATH environment, this will be treated as an error |
+| \--cmake-install-path | If the cmake command is not in the PATH environment, or you want to specify an alternate cmake installation, this argument allows you to override the installed version of cmake to use for the project generation. | The cmake that is installed and part of the PATH environment will be specified. | *   The minimum version of cmake is currently 3.21 (in order to support the minimum version of the Android Gradle plugin, 4.2.0)<br>*   If this argument is not specified, and there is no cmake installed in the PATH environment, this will be treated as an error |
+| \--ninja-install-path | If the ninja command is not in the PATH environment, or you want to specify an alternate ninja installation, this argument allows you to override the installed version of ninja to use for the project generation. | The ninja build tool that is installed and part of the PATH environment will be specified. | *   If this argument is not specified, and there is no cmake installed in the PATH environment, this will be treated as an error |
+| \--signconfig-store-file | This is an optional JKS file that is used for APK signing when the project needs to be built and deployed to an android device. If this option is omitted, then it must be setup later in Android Studio if you want to deploy to Android, otherwise the project can only generate unsigned APKs. (Refer to the Android Key Store section above for more information) | None | *   If not specified, the Android project that is generated will not include any signing information. You will still be able to build but will not be able to deploy to any device.<br>*   The signing key information can be added after project generation through Android Studio |
+| \--signconfig-store-password | If an android jks keystore file is specified (`--signconfig-store-file`) , then this is the required password for the keystore file. | None | *   Required if --signconfig-store-file<br>*   If `--signconfig-store-file` is not specified, this argument is ignored |
+| \--signconfig-key-alias | If an android jks keystore file is specified (`--signconfig-store-file`) , then this is the required alias of the signing key in the keystore file. | None | *   Required if `--signconfig-store-file`<br>*   If `--signconfig-store-file` is not specified, this argument is ignored |
+| \--signconfig-key-password | If an android jks keystore file is specified (--signconfig-store-file) , then this is the required password in order to use the signing key | None | *   Required if --signconfig-store-file<br>*   If `--signconfig-store-file` is not specified, this argument is ignored |
+| \--overwrite-existing | Option to overwrite existing scripts in the target build folder if they exist already. | False |     |
+
+
+## **Android Deployment Script**
+The script to deploy the android project is located under `cmake\Tools\Platform\Android\deploy_androidt.py` 
+
+The list of arguments for this script is described below:
+| Argument | Description | Default | Notes |
+| --- | --- | --- | --- |
+| \-h. --help | Show the help message and exit |     |     |
+| \-b, --build-dir | The build directory of the project to deploy from |     |     |
+| \-c, --configuration | The build configuration of the built binaries to deploy from |     |     |
+| \--device-id-filter | Comma separated list of connected android device IDs to filter the deployment to | All connected android devices | Only used when multiple devices are connected and you want to filter which devices will be the target for the deployment.|
+| \-t , --deployment-type {APK, ASSETS, BOTH} | The deployment type (APK\|ASSETS\|BOTH) to execute:<br><br>*   *APK*  <br>    Only deploy the APK, not any external assets (see --include-apk-assets options in the project configuration). If the assets are included in the APK, then it will be included as well.<br>*   *ASSETS*  <br>    Only deploy the assets for the APK. This option is only valid if --include-apk-assets was not set during the project generation<br>*   *BOTH*  <br>    Both the APK and assets will be deployed, regardless of the --include-apk-assets option. | BOTH | Separating the options to deploying assets separately from the APK optimizes different workflows. For developers making changes to the code, and not the assets, then 'APK' only deployments are more efficient (provided that the assets are deployed at least initially). For workflows where the assets are the only updates, then 'ASSETS' would be the more efficient workflow (provided that --include-apk-assets were not set during project generation) |
+| \--clean | Option to clean the target android device (uninstall) of any pre-existing projects before deploying. |     |     |
+
+
+
+## **Additional Topics**
+
++ [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows)
+
