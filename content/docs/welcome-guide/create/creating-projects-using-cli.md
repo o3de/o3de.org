@@ -14,7 +14,7 @@ The instructions here and in the video guide you through the following steps:
 * Create Visual Studio project files in your O3DE project directory.
 * Build your O3DE project.
 
-At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template, opened in **O3DE Editor**.
+At the end of the tutorial, you'll have a new O3DE project based on the **standard** template (the default project template).
 
 {{< youtube id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}
 
@@ -39,21 +39,21 @@ This tutorial uses the following project name and directories in the examples. (
 
 To start a project based on the standard template, complete the following steps.
 
-1. Open a command line window and change to your O3DE engine directory.
+1. Open a command line window and change to your O3DE engine directory by doing one of the following:
 
-    **Scenario 1:** If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), use the engine source directory.
+    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), use the engine source directory.
 
-    ```cmd
-    cd C:\o3de
-    ```
+        ```cmd
+        cd C:\o3de
+        ```
 
-    **Scenario 2:** If you installed O3DE or built your engine as a [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, use the installed engine directory.
+    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, use the installed engine directory.
 
-    ```cmd
-    cd C:\o3de-install
-    ```
+        ```cmd
+        cd C:\o3de-install
+        ```
 
-1. To create a new external project, use the `o3de` script in the `scripts` subdirectory. The `create-project` command, used with the `project-path` and no other options, creates a new project using the default project template (the **standard** template). This command also registers the engine to the project in the project's `project.json` manifest.
+1. To create a new external project, use the `o3de` script in the `scripts` subdirectory. The `create-project` command, used with the `project-path` and no other options, creates a new project using the **standard** template (the default project template). This command also registers the engine to the project in the project's `project.json` manifest.
 
     ```cmd
     scripts\o3de.bat create-project --project-path C:\o3de-projects\MyProject
@@ -87,35 +87,35 @@ Use CMake to build the Visual Studio project in the build directory of your O3DE
     ```
 
     {{< important >}}
-When building the project for a pre-built SDK engine, even though you aren't building O3DE Editor, we still highly recommend including `Editor` as a build target. While the GameLauncher doesn't depend on the Editor target, some Gems do. If you leave off the Editor target, those Gems aren't included in the build.
+When building the project for a pre-built SDK engine, even though you aren't building **O3DE Editor**, we still highly recommend including `Editor` as a build target. While the GameLauncher doesn't depend on the Editor target, some Gems do. If you leave off the Editor target, those Gems aren't included in the build.
     {{< /important >}}
 
-When building the project for a source engine, you build the **Asset Processor** and Project Manager too, since they are dependencies of O3DE Editor.
+    When building the project for a source engine, you build the **Asset Processor** and Project Manager too, since they are dependencies of O3DE Editor.
 
-The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-1. When the build is complete, you can find the project binaries in the project directory under `build/windows_vs2019/bin/profile`. Run O3DE Editor to verify that the project is ready to use.
+1. When the build is complete, you can find the project binaries in the project directory under `build/windows_vs2019/bin/profile`. To verify that the project is ready to use, run O3DE Editor by doing one of the following:
 
-    **Scenario 1:** If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), the Editor application is in the project build directory.
+    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), run the Editor from the project build directory.
 
-    ```cmd
-    build\windows_vs2019\bin\profile\Editor.exe
-    ```
+        ```cmd
+        build\windows_vs2019\bin\profile\Editor.exe
+        ```
 
-    {{< note >}}
+        {{< note >}}
 If your project build directory is outside the project path, you must include the project path (using the `--project-path` parameter) when launching O3DE Editor.
-    {{< /note >}}
+        {{< /note >}}
 
-    **Scenario 2:** If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, you must include the project path when launching the Editor. If you don't supply the project path when you run the Editor from the command line, **Project Manager** launches. The project path can be absolute or relative to the engine directory.
+    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, run the Editor from the installed engine's build directory. (If you don't supply the project path, **Project Manager** launches instead.) The project path can be absolute or relative to the engine directory.
 
-    ```cmd
-    C:\o3de-install\bin\Windows\profile\Editor.exe --project-path C:\o3de-projects\MyProject
-    ```
+        ```cmd
+        C:\o3de-install\bin\Windows\profile\Editor.exe --project-path C:\o3de-projects\MyProject
+        ```
 
-    {{< important >}}
+        {{< important >}}
 If you built the engine from source using the INSTALL target, make sure that you launch the Editor and other tools from the install directory, _not_ the engine's build directory. The Windows install directory typically ends in `/bin/Windows/profile`.
-    {{< /important >}}
+        {{< /important >}}
 
-In both scenarios, you can also run Project Manager (`o3de.exe`) from the same directory to edit your project's settings, add or remove Gems from the project, rebuild your project, and launch the Editor.
+You can also run Project Manager (`o3de.exe`) from the same directory to edit your project's settings, add or remove Gems from the project, rebuild your project, and launch the Editor.
 
 For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.

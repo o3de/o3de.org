@@ -182,11 +182,11 @@ Choose one of the following build types based on the primary focus of your devel
     mkdir C:\o3de-packages
     ```
 
-The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
+    The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
 
-1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
+1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
 
-Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
+    Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
 
     ```cmd
     python\get_python.bat
@@ -198,14 +198,14 @@ Open a command prompt and change to the directory where you set up O3DE, then ru
     cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
     ```
 
-The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
+    The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
     * `LY_UNITY_BUILD` : We recommend Unity builds in many cases for improved build performance. If you encounter a build error, disable Unity builds to help debug the problem.
 
 1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which our documentation on creating projects covers. The following command builds the engine without a project.
 
-The following example shows the `profile` build configuration.
+    The following example shows the `profile` build configuration.
 
     ```cmd
     cmake --build build/windows_vs2019 --target Editor --config profile -- /m

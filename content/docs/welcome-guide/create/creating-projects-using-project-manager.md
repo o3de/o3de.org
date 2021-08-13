@@ -1,6 +1,6 @@
 ---
 linktitle: Creating Projects Using Project Manager
-title: Creating Projects Using the Open 3D Engine Project Manager
+title: Creating Projects Using O3DE Project Manager
 description: Learn how to create and build Open 3D Engine (O3DE) projects from the default project template using the Project Manager tool.
 weight: 100
 toc: true
@@ -81,12 +81,12 @@ If this is the first time you've used Project Manager to create a project, then 
 
 You are now ready to build the project from Project Manager.
 
-1. Choose the **Build Project** button for your new project.
+1. Inside your project's icon box, choose **Build Project**.
 
-    ![Choose the Build Project button](/images/welcome-guide/project-manager-build-project.png)
+    ![Choose Build Project](/images/welcome-guide/project-manager-build-project.png)
 
 1. The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/windows_vs2019/bin/profile`.
 
-1. To open your built project in the Editor, choose **Open Editor** inside the project box in Project Manager.
+1. To open your built project in the Editor, choose **Open Editor** from inside your project's icon box.
 
 For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.
