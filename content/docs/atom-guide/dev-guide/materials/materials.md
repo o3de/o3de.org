@@ -6,8 +6,6 @@ toc: false
 weight: 100
 ---
 
-{{< preview-new >}}
-
 **Materials** contain data that control how model surfaces appear in a 3D environment. All materials have a **material type**, which classifies materials that share the same properties such as hard surfaces, cloth, or skin. Materials inherit properties either directly from the material type, or from other materials. 
 
 Materials and material types are stored as data items in JSON files. The Atom Material Builder converts the data files into material assets. The material assets are then consumed by the application and applied to a mesh's surface. 

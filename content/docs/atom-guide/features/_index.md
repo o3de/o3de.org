@@ -3,9 +3,7 @@ title: "Features"
 description: "Learn about graphics features in the Atom renderer"
 toc: true
 weight: 400
----  
-
-{{< preview-new >}}
+---
 
 This section provides a high-level overview of graphics features that the Atom renderer supports. Some of these features are also implemented in Open 3D Engine (O3DE), so you can add rendering effects to your project. 
 

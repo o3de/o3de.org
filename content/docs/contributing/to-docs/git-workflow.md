@@ -6,8 +6,6 @@ weight: 350
 toc: true
 ---
 
-{{< preview-new >}}
-
 ## Quick Start: Runbook for O3DE Docs Contributions
 
 | Step | Action | Notes |

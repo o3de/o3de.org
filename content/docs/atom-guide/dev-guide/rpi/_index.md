@@ -5,8 +5,6 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 This section contains technical details about the Render Pipeline Interface (RPI) in the Atom Renderer.
 
 | Contents                        | Details |
