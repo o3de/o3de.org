@@ -11,5 +11,5 @@ You can create a project using either the GUI-based **Project Manager** tool or 
 
 | Topic | Description |
 | - | - |
-| [Creating Projects Using Project Manager](./creating-projects-using-project-manager) | Learn how to create new projects from a project template using the O3DE Project Manager. Choose this tutorial if you prefer a graphical user interface (GUI) and have already installed or built the engine. |
-| [Creating Projects Using the CLI](./creating-projects-using-cli) | Learn how to create new projects from a project template using the CLI. Choose this tutorial if you are using the [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) build type and have not yet built the engine. |
+| [Creating Projects Using Project Manager](./creating-projects-using-project-manager) | Learn how to create new projects from a project template using the O3DE Project Manager. Choose this tutorial if you prefer using a GUI and have already installed or built the engine. |
+| [Creating Projects Using the CLI](./creating-projects-using-cli) | Learn how to create new projects from a project template using the CLI. Choose this tutorial if you're using the [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) build type and haven't yet built the engine. |

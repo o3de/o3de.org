@@ -12,22 +12,22 @@ This tutorial provides an introduction to project configuration and building in 
 * Create a new O3DE project.
 * Build the O3DE project.
 
-At the end of the tutorial you'll have a new O3DE project, based on the default "standard" project template, ready to open in **O3DE Editor**.
+At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template, ready to open in **O3DE Editor**.
 
 ## Prerequisites
 
-The instructions that follow assume you have the following:
+The following instructions assume that you have:
 
 * O3DE installed or built as a pre-installed SDK engine on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
 * Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
-If you set up O3DE from GitHub and chose the [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) build type, it is recommended that you create your project using the CLI. Refer to [Creating Projects Using the CLI](../creating-projects-using-cli).
+If you set up O3DE from GitHub and chose the [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) build type, we recommend that you create your project using the command line interface (CLI). For more information, refer to [Creating Projects Using the CLI](../creating-projects-using-cli).
 {{< /note >}}
 
 ## Launch Project Manager
 
-Project directories can be located either in the same directory as the O3DE root directory or outside of this directory. The latter are referred to as "external projects" in this documentation.
+You can find project directories either in the same directory as the O3DE root directory or outside of this directory. In this documentation, we refer to the latter as "external projects".
 
 This tutorial uses the following project name and directories in the examples:
 
@@ -67,11 +67,13 @@ If this is the first time you've used Project Manager to create a project, then 
 
     ![Or choose "New Project - Create New Project"](/images/welcome-guide/project-manager-menu-create-new-project.png)
 
-1. Give your project a name, such as "MyProject". If you want to change the project location, choose the folder icon in the Project Location field and use the Browse dialog box to select a new location, creating the new project folder if needed. The folder you select will become the project root directory.
+1. Under **Project name**, give your project a name, such as "MyProject".
+
+1. If you want to change the project location, under **Project Location**, choose the folder icon, and then use the **Browse** dialog box to choose a new location. If needed, you can create a new project folder. The folder that you choose becomes the project root directory.
 
     ![Create a New Project - Project Details screen](/images/welcome-guide/project-manager-create-project.png)
 
-1. You can also select a different project template, and choose different Gems to enable for your project. In this tutorial, the default template and its pre-configured selection of common Gems will be used.
+1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can also choose different Gems to enable for your project. This tutorial uses the default template and its pre-configured selection of common Gems.
 
 1. Choose **Create Project** to create the project files in the directory specified by the project location. This will also register your project in the O3DE manifest, located at `<USER_DIRECTORY>/.o3de/o3de_manifest.json`.
 
@@ -83,8 +85,8 @@ You are now ready to build the project from Project Manager.
 
     ![Choose the Build Project button](/images/welcome-guide/project-manager-build-project.png)
 
-1. The project should not take long to build. When the build is complete, the project binaries can be found in your project directory under `build/windows_vs2019/bin/profile`.
+1. The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/windows_vs2019/bin/profile`.
 
-1. To open your built project in O3DE **Editor**, click or tap on the **Open Editor** button inside the project box in Project Manager.
+1. To open your built project in the Editor, choose **Open Editor** inside the project box in Project Manager.
 
 For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.
