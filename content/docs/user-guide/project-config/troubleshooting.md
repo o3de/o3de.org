@@ -12,6 +12,8 @@ This topic will help you identify and resolve some common issues that you might 
 
 If you believe your configuration problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
 
+Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/docs/user-guide/appendix/log-files) for locations.
+
 ## Tips for adding and removing Gems
 
 - When you register a new Gem to your project, the path to the Gem's directory is added in your project's `project.json` configuration file under `external_subdirectories`.

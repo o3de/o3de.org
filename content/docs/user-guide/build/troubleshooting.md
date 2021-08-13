@@ -10,6 +10,8 @@ Be aware that you might come across situations unique to your project or build t
 
 If you believe your build problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
 
+Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/docs/user-guide/appendix/log-files) for locations.
+
 ## C2027 Errors on Generated Files
 
 **Issue:** The MSVC [C2027 compiler error](https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/compiler-error-c2027) is caused by attempting to build a file referencing a missing type. This issue is normally caused by empty files created by the code generation tool, most often during the build of the
