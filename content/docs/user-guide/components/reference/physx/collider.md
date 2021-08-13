@@ -186,19 +186,19 @@ The setup for this example is the same as the previous example, except for two c
 + A **PhysX Rigid Body** component has been added, so the entity will be dynamic.
 + Because triangle meshes are incompatible with dynamic rigid bodies, the mesh has been exported for PhysX using the convex mesh option (see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/)).
 
-The convex mesh provides quite a tight fit to the shape of the object, but it does not do well at capturing the concave parts of the shape. In particular, the interior of the mug is closed off. 
+The convex mesh provides quite a tight fit to the shape of the object, but it does not do well at capturing the concave parts of the shape. In particular, the interior of the mug is closed off. This means that other objects may have implausible interactions with the opening, such as the sphere shown below colliding with an invisible boundary.
 
-![\[PhysX Collider component with a mesh exported as convex.\]](/images/user-guide/component/physx/physx/physx-collider-convex.png)
+![\[PhysX Collider component with a mesh exported as convex.\]](/images/user-guide/component/physx/physx/physx-collider-convex-A.png)
 
-![\[PhysX Collider component with a mesh exported as convex interacting with other physics bodies.\]](/images/user-guide/component/physx/physx/physx-collider-convex.gif)
+![\[PhysX Collider component with a mesh exported as convex interacting with other physics bodies.\]](/images/user-guide/component/physx/physx/physx-collider-convex-B.png)
 
 #### Dynamic body with collider using convex decomposition
 
 The setup for this example is identical to the previous example, with the exception that the **Decompose Meshes** option has been used when exporting the mesh for PhysX (see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/)). This splits the shape into multiple separate convex pieces, which can be seen most clearly in the handle of the mug. This allows the mug to be dynamic in the simulation, and also captures the fine detail of its shape, including the concave interior. However, since many shapes are used, the cost of computing the simulation will increase, so fidelity of collisions should be balanced with performance considerations.
 
-![\[PhysX Collider component with a mesh exported using convex decomposition.\]](/images/user-guide/component/physx/physx/physx-collider-convex-decomposition.png)
+![\[PhysX Collider component with a mesh exported using convex decomposition.\]](/images/user-guide/component/physx/physx/physx-collider-decomposed-A.png)
 
-![\[PhysX Collider component with a mesh exported using convex decomposition interacting with other physics bodies.\]](/images/user-guide/component/physx/physx/physx-collider-convex-decomposition.gif)
+![\[PhysX Collider component with a mesh exported using convex decomposition interacting with other physics bodies.\]](/images/user-guide/component/physx/physx/physx-collider-decomposed-B.png)
 
 ## Collider component mode 
 
