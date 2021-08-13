@@ -87,7 +87,7 @@ After the android assets are processed, you can proceed with the Android project
 The script to generate android projects is located in the engine root under `cmake/Tools/Platform/Android/generate_android_project.py`
 
 The list of arguments for this script is described below:
-| Command_Argument | Description | Default | Notes |
+| Argument&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description | Default | Notes |
 | --- | --- | --- | --- |
 | \--engine-root | The path to the root of the engine folder. | <required> |     |
 | \--build-dir | The path to the build folder that will be created for the project. | <required> | This path can be relative (to the engine root path), or an absolute path |
@@ -116,14 +116,15 @@ The list of arguments for this script is described below:
 The script to deploy the android project is located under `cmake/Tools/Platform/Android/deploy_android.py` 
 
 The list of arguments for this script is described below:
-| Argument | Description | Default | Notes |
+| Argument&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description | Default | Notes |
 | --- | --- | --- | --- |
-| \-h. --help | Show the help message and exit |     |     |
+| \-h, --help | Show the help message and exit |     |     |
 | \-b, --build-dir | The build directory of the project to deploy from |     |     |
 | \-c, --configuration | The build configuration of the built binaries to deploy from |     |     |
 | \--device-id-filter | Comma separated list of connected android device IDs to filter the deployment to | All connected android devices | Only used when multiple devices are connected and you want to filter which devices will be the target for the deployment.|
-| \-t , --deployment-type {APK, ASSETS, BOTH} | The deployment type (APK\|ASSETS\|BOTH) to execute:<br/><br/>**APK**<br/>Only deploy the APK, not any external assets (see --include-apk-assets options in the project configuration). If the assets are included in the APK, then it will be included as well.<br/><br/>**ASSETS**<br/>Only deploy the assets for the APK. This option is only valid if --include-apk-assets was not set during the project generation<br/><br/>**BOTH**<br/>Both the APK and assets will be deployed, regardless of the --include-apk-assets option. | BOTH | Separating the options to deploying assets separately from the APK optimizes different workflows. For developers making changes to the code, and not the assets, then 'APK' only deployments are more efficient (provided that the assets are deployed at least initially). For workflows where the assets are the only updates, then 'ASSETS' would be the more efficient workflow (provided that --include-apk-assets were not set during project generation)<br/>|
+| \-t , --deployment-type | The deployment type (APK\|ASSETS\|BOTH) to execute:<br/><br/>**APK**<br/>Only deploy the APK, not any external assets (see --include-apk-assets options in the project configuration). If the assets are included in the APK, then it will be included as well.<br/><br/>**ASSETS**<br/>Only deploy the assets for the APK. This option is only valid if --include-apk-assets was not set during the project generation<br/><br/>**BOTH**<br/>Both the APK and assets will be deployed, regardless of the --include-apk-assets option. | BOTH | Separating the options to deploying assets separately from the APK optimizes different workflows. For developers making changes to the code, and not the assets, then 'APK' only deployments are more efficient (provided that the assets are deployed at least initially). For workflows where the assets are the only updates, then 'ASSETS' would be the more efficient workflow (provided that --include-apk-assets were not set during project generation)<br/>|
 | \--clean | Option to clean the target android device (uninstall) of any pre-existing projects before deploying. |     |     |
+
 
 
 
