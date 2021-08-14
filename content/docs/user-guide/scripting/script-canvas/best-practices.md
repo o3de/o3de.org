@@ -15,7 +15,7 @@ In the core Script Canvas libraries, state is used primarily to drive the execut
 
 We recommend that you reflect functionality to Script Canvas through the behavior context. This is true even for Script Canvas-specific functionality. Using the behavior context encourages event-driven paradigms through EBuses. This approach yields modular, decoupled behaviors that can reduce graph complexity and takes advantage of execution optimizations.
 
-## Use Custom Nodes to Simplify Your Graphs
+## Use Custom Nodes to Simplify Your Graphs 
 
 Identify frequently used but complicated user patterns and simplify them through custom nodes and/or improved behavior context methods. Using custom nodes with EBuses can reduce the overall complexity of graphs and make graph authoring more intuitive. For information on creating custom nodes, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/development/).
 
