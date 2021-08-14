@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-The `o3de` Python script lets you configure your project using the command line interface (CLI). The script aggregates all of the functions from lower-level scripts in Open 3D Engine (O3DE), so you can access them from a single point. Find the script in the engine folder at `/scripts/o3de.py`. 
+The `o3de` Python script lets you configure your project using the command line interface (CLI). The script aggregates all of the functions from lower-level scripts in Open 3D Engine (O3DE), so you can access them from a single point. Find the script in your engine directory at `/scripts/o3de.py`.
 
 You can use the `o3de` Python script for the following tasks:
 
@@ -111,7 +111,7 @@ The `o3de` Python script contains the following commands, with further details i
 
 ## `get-global-project`
 
-Gets the global project that is registered to the engine. By default, reads the global project from `<USER_PATH>/.o3de/Registry/bootstrap.setreg`. You can also specify a file path using `-i`.
+Gets the global project that is registered to the engine. By default, reads the global project from `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`. You can also specify a file path using `-i`.
 
 ### Format
 
@@ -121,7 +121,7 @@ get-global-project [-h] [-i INPUT_PATH]
 
 ### Usage
 
-Reads the global project from `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
+Reads the global project from `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`.
 
 ```cmd
 o3de.bat get-global-project
@@ -129,7 +129,7 @@ o3de.bat get-global-project
 
 Reads the global project from a specified file.
 ```cmd
-o3de.bat get-global-project -i <USER_PATH>\.o3de\Registry\my-custom.setreg
+o3de.bat get-global-project -i <USER_DIRECTORY>\.o3de\Registry\my-custom.setreg
 ```
 
 ### Optional parameters
@@ -140,16 +140,16 @@ o3de.bat get-global-project -i <USER_PATH>\.o3de\Registry\my-custom.setreg
 
 - **`-i INPUT_PATH, --input-path INPUT_PATH`**
 
-  A path to the input file that you want to read the  `/Amazon/AzCore/Bootstrap/project_path` key from. If not supplied, then this command uses the input file `</USER_PATH>/.o3de/Registry/bootstrap.setreg` instead.
+  A path to the input file that you want to read the  `/Amazon/AzCore/Bootstrap/project_path` key from. If not supplied, then this command uses the input file `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg` instead.
 
 
 <!-------------------------------------------------------------->
 
 ## `set-global-project`
 
-Sets the specified project as the engine's global project. By default sets this in `C:\Users\USER_PATH\.o3de\Registry\bootstrap.setreg`. You can also specify a file path using `-o`.
+Sets the specified project as the engine's global project. By default, sets this in `<USER_DIRECTORY>\.o3de\Registry\bootstrap.setreg`. You can also specify a file path using `-o`.
 
-If you set a global project, then O3DE tools (such as **Asset Processor** and **O3DE Editor**) use the global project when they are launched from an installed engine. To override the global project, specify a project with the `project-path` parameter when you launch the O3DE tools from the command line.
+If you set a global project, then O3DE tools (such as **Asset Processor** and **O3DE Editor**) use the global project when you launch them from an installed engine. To override the global project, specify a project with the `project-path` parameter when you launch the O3DE tools from the command line.
 
 ### Format 
 
@@ -160,7 +160,7 @@ set-global-project [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
 
 ### Usage
 
-Sets the specified project as the global project in `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
+Sets the specified project as the global project in `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`.
 
 ```cmd
 o3de.bat set-global-project -pp PROJECT_PATH
@@ -169,7 +169,7 @@ o3de.bat set-global-project -pp PROJECT_PATH
 Sets the specified project as the global project in the specified path.
 
 ```cmd
-o3de.bat set-global-project -pp PROJECT_PATH -o <USER_PATH>\.o3de\Registry\my-custom.setreg
+o3de.bat set-global-project -pp PROJECT_PATH -o <USER_DIRECTORY>\.o3de\Registry\my-custom.setreg
 ```
 
 ### Optional parameters
@@ -188,7 +188,7 @@ o3de.bat set-global-project -pp PROJECT_PATH -o <USER_PATH>\.o3de\Registry\my-cu
 
 - **`-o OUTPUT_PATH, --output-path OUTPUT_PATH`**
 
-  The path and filename where the `project_path` key is written. The file should be located in `<USER_PATH>/.o3de/Registry/` and have the file extension `.setreg`. If you don't use this parameter, the key is written to `<USER_PATH>/.o3de/Registry/bootstrap.setreg`.
+  The path and filename where the `project_path` key is written. The file should be located in `<USER_DIRECTORY>/.o3de/Registry/` and have the file extension `.setreg`. If you don't use this parameter, `o3de` writes the key to `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`.
 
 - **`-f, --force`**
 
@@ -243,7 +243,7 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-srn SOURCE_RESTRICTED_NAME, --source-restricted-name SOURCE_RESTRICTED_NAME`**
 
-  The name of the source's restricted folder. If supplied, you do not need to use the `--source-restricted-path` parameter. 
+  The name of the source's restricted folder. If supplied, you don't need to use the `--source-restricted-path` parameter.
 
 - **`-trp TEMPLATE_RESTRICTED_PATH, --template-restricted-path TEMPLATE_RESTRICTED_PATH`**
 
@@ -251,15 +251,15 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-trn TEMPLATE_RESTRICTED_NAME, --template-restricted-name TEMPLATE_RESTRICTED_NAME`**
 
-  The name of the template's restricted folder. If supplied, you do not need to use the `--template-restricted-path` parameter.
+  The name of the template's restricted folder. If supplied, you don't need to use the `--template-restricted-path` parameter.
 
 - **`-sn SOURCE_NAME, --source-name SOURCE_NAME`**
 
-  Substitutes any file and path entries that match the source name -- ${Name} and ${SanitizedCppName} -- in the source-path directory. An example of path substitution: `--source-name Foo<source-path>/Code/Include/FooBus.h` -> `<source-path>/Code/Include/${Name}Bus.h`. An example of file content substitution: `class FooRequests` -> `class ${SanitizedCppName}Requests`.
+  Substitutes any file and path entries that match the source name--`${Name}` and `${SanitizedCppName}`--in the source-path directory. An example of path substitution: `--source-name Foo<source-path>/Code/Include/FooBus.h` -> `<source-path>/Code/Include/${Name}Bus.h`. An example of file content substitution: `class FooRequests` -> `class ${SanitizedCppName}Requests`.
 
 - **`-srprp SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH, --source-restricted-platform-relative-path SOURCE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
-  A path to append to `SOURCE_RESTRICTED_PATH/<platform>/`, which contains the restricted source. For example: `--source-restricted-path C:/restricted --source-restricted-platform-relative-path some/folder` => `C:/restricted/<platform>/some/folder/<source_name>`
+  A path to append to `SOURCE_RESTRICTED_PATH/<platform>/`, which contains the restricted source. For example: `--source-restricted-path C:/restricted --source-restricted-platform-relative-path some/folder` => `C:/restricted/<platform>/some/folder/<source_name>`.
 
 - **`-trprp TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH, --template-restricted-platform-relative-path TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
@@ -267,15 +267,15 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-kr, --keep-restricted-in-template`**
 
-  If true, creates the restricted platforms in the template folder. If false, creates the restricted files in the restricted folder, located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If true, creates the restricted platforms in the template folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
 
 - **`-kl, --keep-license-text`**
 
-  If true, keeps the license text (located in the `template.json` file) in the new template's `template.json` file. If false, the license text will not be included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. 
+  If true, keeps the license text (located in the `template.json` file) in the new template's `template.json` file. If false, the license text isn't included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}.
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces ${User}with "MyUsername", and ${id} with "1723905". Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: \<TemplateName\> -> ${Name}, \<templatename\> -> ${NameLower}, \<TEMPLATENAME\> -> ${NameUpper}. 
+  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: \<TemplateName\> -> ${Name}, \<templatename\> -> ${NameLower}, \<TEMPLATENAME\> -> ${NameUpper}.
 
 - **`-f, --force`**
          
@@ -318,35 +318,35 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
 - **`-dp DESTINATION_PATH, --destination-path DESTINATION_PATH`**
 
-  The path to instantiate the new template in. The path can be absolute or relative to the O3DE development source folder. For example: Set DESTINATION_PATH = `C:/o3de/NewTemplate`. 
+  The path to instantiate the new template in. The path can be absolute or relative to the O3DE development source folder. For example: DESTINATION_PATH = `C:/o3de/NewTemplate`.
 
 - **`-tp TEMPLATE_PATH, --template-path TEMPLATE_PATH`**
 
-  The path to the template you want to instantiate. The path can be absolute or relative to the O3DE development source folder. For example: Set TEMPLATE_PATH to `C:/o3de/Template/SomeTemplate`.
+  The path to the template that you want to instantiate. The path can be absolute or relative to the O3DE development source folder. For example: TEMPLATE_PATH = `C:/o3de/Template/SomeTemplate`.
 
 - **`-tn TEMPLATE_NAME, --template-name TEMPLATE_NAME`**
 
-  The name of the registered template to instantiate. If supplied, you do not need to use the `--template-path` parameter. 
+  The name of the registered template to instantiate. If supplied, you don't need to use the `--template-path` parameter.
 
 - **`-dn DESTINATION_NAME, --destination-name DESTINATION_NAME`**
 
-  The name to replace ${Name} with in the instantiated template. The name must be alphanumeric, and can contain _ and - characters. If the destination name is not provided, this command will use the last component of the destination path.
+  The name to replace `${Name}` with in the instantiated template. The name must be alphanumeric, though it can contain underscores (_) and hyphens (-). If you don't provide the destination name, this command uses the last component of the destination path.
 
 - **`-drp DESTINATION_RESTRICTED_PATH, --destination-restricted-path DESTINATION_RESTRICTED_PATH`**
 
-  The path where the restricted files will be written to.
+  The path where `o3de` writes the restricted files.
 
 - **`-drn DESTINATION_RESTRICTED_NAME, --destination-restricted-name DESTINATION_RESTRICTED_NAME`**
 
-  The name of the registered restricted path where the restricted files will be written to. If supplied, you do not need to use the `--destination-restricted-path` parameter. 
+  The name of the registered restricted path where `o3de` writes the restricted files. If supplied, you don't need to use the `--destination-restricted-path` parameter.
 
 - **`-trp TEMPLATE_RESTRICTED_PATH, --template-restricted-path TEMPLATE_RESTRICTED_PATH`**
 
-  The path to the template restricted directory to read from, if any.
+The path to the restricted directory that `o3de` adds restricted platform sources to, if any.
 
 - **`-trn TEMPLATE_RESTRICTED_NAME, --template-restricted-name TEMPLATE_RESTRICTED_NAME`**
-
-  The name of the registered restricted path to read from, if any. If supplied, you do not need to use the `--template-restricted-path` parameter.
+  
+The name of the restricted directory that `o3de` adds restricted platform sources to, if any. If supplied, you don't need to use the `--template-restricted-path` parameter.
 
 - **`-drprp DESTINATION_RESTRICTED_PLATFORM_RELATIVE_PATH, --destination-restricted-platform-relative-path DESTINATION_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
@@ -358,26 +358,26 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
 - **`-kr, --keep-restricted-in-instance`**
 
-  If true, creates the restricted platforms in the new template folder. If false, creates the restricted files in the restricted folder, located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If true, creates the restricted platforms in the new template folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
 
 - **`-kl, --keep-license-text`**
 
-  If true, keeps the license text (located in the template's `template.json` file) in the new template's `template.json` file. If false, the license text will not be included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. 
+  If true, keeps the license text (located in the template's `template.json` file) in the new template's `template.json` file. If false, the license text isn't included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}.
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces ${User}with "MyUsername", and ${id} with "1723905". Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: \<DestinationName\> -> ${Name}, \<destinationname\> -> ${NameLower}, \<DESTINATIONNAME\> -> ${NameUpper}.
+  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: \<DestinationName\> -> ${Name}, \<destinationname\> -> ${NameLower}, \<DESTINATIONNAME\> -> ${NameUpper}.
 
 - **`-f, --force`**
 
-  Copies over instantiated template directory even if it exist.
+  Overwrites the instantiated template directory, even if it already exists.
 
 
 <!-------------------------------------------------------------->
 
 ## `create-project`
 
-Create a new project at the specified path.
+Creates a new project at the specified path and registers it to the `o3de_manifest.json` file. However, if you create the project in the engine directory, this command registers the project to the engine's `engine.json` file instead.
 
 ### Format
 
@@ -417,19 +417,19 @@ o3de.bat create-project --project-path PROJECT_PATH --template-path TEMPLATE_PAT
 
 - **`-pp PROJECT_PATH, --project-path PROJECT_PATH`**
 
-  The path to create a new project at. The project's path can be absolute or relative to the O3DE development source folder. For example: PROJECT_PATH = `C:/o3de/TestProject`
+  The path to your newly created project. The project's path can be absolute or relative to the O3DE development source folder. For example: PROJECT_PATH = `C:/o3de/TestProject`.
 
 - **`-pn PROJECT_NAME, --project-name PROJECT_NAME`**
 
-  The name of your new project. Must be alphanumeric, and can contain _ and - characters. If the project name is not provided, this command will use the last component of the project path. Ex. New_Project-123
+  The name of your new project. The name must be alphanumeric, though it can contain underscores (_) and hyphens (-). If you don't provide the project name, this command uses the last component of the project path. For example: New_Project-123.
 
 - **`-tp TEMPLATE_PATH, --template-path TEMPLATE_PATH`**
 
-  The path to the template you want to create a new project from. The path can be absolute or relative to the default templates path.
+  The path to the template that you want to create a new project from. The path can be absolute or relative to the default template's path.
 
 - **`-tn TEMPLATE_NAME, --template-name TEMPLATE_NAME`**
 
-  The name of the template that you want to create a new project from. If supplied, you do not need to use the `--template-path` parameter. 
+  The name of the template that you want to create a new project from. If supplied, you don't need to use the `--template-path` parameter.
 
 - **`-prp PROJECT_RESTRICTED_PATH, --project-restricted-path PROJECT_RESTRICTED_PATH`**
 
@@ -445,7 +445,7 @@ o3de.bat create-project --project-path PROJECT_PATH --template-path TEMPLATE_PAT
 
 - **`-trn TEMPLATE_RESTRICTED_NAME, --template-restricted-name TEMPLATE_RESTRICTED_NAME`**
 
-  The name of the template's restricted path. If supplied, you do not need to use the `--template-restricted-path` parameter.
+  The name of the template's restricted path. If supplied, you don't need to use the `--template-restricted-path` parameter.
 
 - **`-prprp PROJECT_RESTRICTED_PLATFORM_RELATIVE_PATH, --project-restricted-platform-relative-path PROJECT_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
@@ -453,19 +453,19 @@ o3de.bat create-project --project-path PROJECT_PATH --template-path TEMPLATE_PAT
 
 - **`-trprp TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH, --template-restricted-platform-relative-path TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
-  A path to append to the `TEMPLATE_RESTRICTED_PATH/<platform>`, and that contains the restricted template source. For example: `--template-restricted-path C:/restricted --template-restricted-platform-relative-path some/folder` => `C:/restricted/<platform>/some/folder/<template_name>`.
+  A path to append to `TEMPLATE_RESTRICTED_PATH/<platform>`, and that contains the restricted template source. For example: `--template-restricted-path C:/restricted --template-restricted-platform-relative-path some/folder` => `C:/restricted/<platform>/some/folder/<template_name>`.
 
 - **`-kr, --keep-restricted-in-project`**
 
-  If true, creates the restricted platforms in the project folder. If false, creates the restricted files in the restricted folder, located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If true, creates the restricted platforms in the project folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
 
 - **`-kl, --keep-license-text`**
 
-  If true, keeps the license text (located in the `template.json` file) in the new project's `project.json` file. If false, the license text will not be included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. 
+  If true, keeps the license text (located in the `template.json` file) in the new project's `project.json` file. If false, the license text isn't included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}.
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. ${Name} and all of the other standard project replacements are automatically inferred from the project name. These replacements supersede all inferred replacements. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces all occurences of "MyUsername" with ${User}, and "1723905" with ${id}. Note: \<ProjectName\> is the last component of the template_path. The following replacement pairs already exist: \<ProjectName\> -> ${Name}, \<projectname\> -> ${NameLower}, \<PROJECTNAME\> -> ${NameUpper}.
+  Add A->B replacement pairs. `o3de` automatically infers `${Name}` and all of the other standard project replacements from the project name. These replacements supersede all inferred replacements. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `MyUsername` with `${User}`, and `1723905` with `${id}`. Note: \<ProjectName\> is the last component of the template_path. The following replacement pairs already exist: \<ProjectName\> -> ${Name}, \<projectname\> -> ${NameLower}, \<PROJECTNAME\> -> ${NameUpper}.
 
 - **`--system-component-class-id SYSTEM_COMPONENT_CLASS_ID`**
 
@@ -491,7 +491,7 @@ class component. The default is a random UUID. For example, {b60c92eb-3139-454b-
 
 ## `create-gem`
 
-Create a new Gem at the specified path.
+Creates a new Gem at the specified path.
 
 ### Format
 
@@ -516,7 +516,7 @@ Create a new Gem at the specified path using the "DefaultGem" template.
 o3de.bat create-gem -gp GEM_PATH
 ```
 
-Create a new Gem at the specified path using the specified Gem template. The template must have a valid gem.json file.
+Create a new Gem at the specified path using the specified Gem template. The template must have a valid `gem.json` file.
 
 ```cmd
 o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
@@ -534,15 +534,15 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 - **`-gn GEM_NAME, --gem-name GEM_NAME`**
 
-  The name of your new Gem. Must be alphanumeric, and can contain _ and - characters. If the Gem name is not provided, this command will use the last component of the Gem path. Ex. New_Gem
+  The name of your new Gem. The name must be alphanumeric, though it can contain underscores (_) and hyphens (-). If you don't provide the Gem name, this command uses the last component of the Gem path. For example: New_Gem.
 
 - **`-tp TEMPLATE_PATH, --template-path TEMPLATE_PATH`**
 
-  The path to the template you want to create a new Gem from. The path can be absolute or relative to the default templates path.
+  The path to the template that you want to create a new Gem from. The path can be absolute or relative to the default template's path.
 
 - **`-tn TEMPLATE_NAME, --template-name TEMPLATE_NAME`**
 
-  The name of the template that you want to create a new Gem from. If supplied, you do not need to use the `--template-path` parameter. 
+  The name of the template that you want to create a new Gem from. If supplied, you don't need to use the `--template-path` parameter.
 
 - **`-grp GEM_RESTRICTED_PATH, --gem-restricted-path GEM_RESTRICTED_PATH`**
 
@@ -550,7 +550,7 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 - **`-grn GEM_RESTRICTED_NAME, --gem-restricted-name GEM_RESTRICTED_NAME`**
 
-  The name of the Gem's restricted path, if any. If supplied, you do not need to use the `--gem-restricted-path` parameter.
+  The name of the Gem's restricted path, if any. If supplied, you don't need to use the `--gem-restricted-path` parameter.
 
 - **`-trp TEMPLATE_RESTRICTED_PATH, --template-restricted-path TEMPLATE_RESTRICTED_PATH`**
 
@@ -558,11 +558,11 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 - **`-trn TEMPLATE_RESTRICTED_NAME, --template-restricted-name TEMPLATE_RESTRICTED_NAME`**
 
-  The name of the template's restricted path. If supplied, you do not need to use the `--template-restricted-path` parameter.
+  The name of the template's restricted path. If supplied, you don't need to use the `--template-restricted-path` parameter.
 
 - **`-grprp GEM_RESTRICTED_PLATFORM_RELATIVE_PATH, --gem-restricted-platform-relative-path GEM_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
-  A path to append to the `GEM_RESTRICTED_PATH/<platform>`, which contains the restricted template. For example, `--gem-restricted-path C:/restricted --gem-restricted- platform-relative-path some/folder` => `C:/restricted/<platform>/some/folder/<gem_name>`.
+  A path to append to `GEM_RESTRICTED_PATH/<platform>`, which contains the restricted template. For example: `--gem-restricted-path C:/restricted --gem-restricted- platform-relative-path some/folder` => `C:/restricted/<platform>/some/folder/<gem_name>`.
 
 - **`-trprp TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH, --template-restricted-platform-relative-path TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
@@ -570,31 +570,27 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. ${Name} and all of the other standard Gem replacements are automatically inferred from the Gem name. These replacements supersede all inferred replacement pairs. For example: `--replace ${DATE} 1/1/2020 ${id} 1723905`. This replaces ${DATE} with `1/1/2020`, and  ${id} with `1723905`. Note:  \<GemName> is the last component of the GEM_PATH. The following replacement pairs already exist: \<GemName\> -> ${Name}, \<gemname\> -> ${NameLower}, \<GEMNAME\> -> ${NameUpper}.
+  Add A->B replacement pairs. `o3de` automatically infers `${Name}` and all of the other standard Gem replacements from the Gem name. These replacements supersede all inferred replacement pairs. For example: `--replace ${DATE} 1/1/2020 ${id} 1723905`. This replaces `${DATE}` with `1/1/2020`, and  `${id}` with `1723905`. Note:  \<GemName> is the last component of the GEM_PATH. The following replacement pairs already exist: \<GemName\> -> ${Name}, \<gemname\> -> ${NameLower}, \<GEMNAME\> -> ${NameUpper}.
 
 - **`-kr, --keep-restricted-in-gem`**
 
-  If true, creates the restricted platforms in the Gem folder. If false, creates the restricted files in the restricted folder, located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
+  If true, creates the restricted platforms in the Gem folder. If false, creates the restricted files in the restricted folder located at TEMPLATE_RESTRICTED_PATH. By default, this parameter is false.
 
 - **`-kl, --keep-license-text`**
 
-  If true, keeps the license text (located in the `template.json` file) in the new Gem's `Gem.json` file. If false, the license text will not be included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}. 
+  If true, keeps the license text (located in the `template.json` file) in the new Gem's `gem.json` file. If false, the license text isn't included. By default, this parameter is false. The license text is all of the lines of text, starting at {BEGIN_LICENSE} and ending at {END_LICENSE}.
 
 - **`--system-component-class-id SYSTEM_COMPONENT_CLASS_ID`**
 
-  A UUID that you want to associate the system class
-component with. The default is a random uuid. For example, 
-{b60c92eb-3139-454b-a917-a9d3c5819594}.
+  A UUID that you want to associate the system class component with. The default is a random UUID. For example: {b60c92eb-3139-454b-a917-a9d3c5819594}.
 
 - **`--editor-system-component-class-id EDITOR_SYSTEM_COMPONENT_CLASS_ID`**
 
-  A UUID that you want to associate with the editor system
-class component. The default is a random UUID. For example,
-{b60c92eb-3139-454b-a917-a9d3c5819594}.
+  A UUID that you want to associate with the editor system class component. The default is a random UUID. For example: {b60c92eb-3139-454b-a917-a9d3c5819594}.
 
 - **`--module-id MODULE_ID`**
 
-  A UUID that you want to associate with the module. The default is a random UUID. For example, {b60c92eb-3139-454b-a917-a9d3c5819594}. 
+  A UUID that you want to associate with the module. The default is a random UUID. For example: {b60c92eb-3139-454b-a917-a9d3c5819594}.
 
 - **`-f, --force`**
 
@@ -605,7 +601,7 @@ class component. The default is a random UUID. For example,
 
 ## `register`
 
-Register O3DE objects to the `o3de_manifest.json` file.
+Registers O3DE objects to the `o3de_manifest.json` file.
 
 ### Format
 
@@ -644,19 +640,19 @@ o3de.bat register --all-engines-path ALL_ENGINES_PATH
 
 **Registering projects**
 
-Registers the specified project to the engine. This command does two things: it adds the project's path to the `o3de_manifest.json` file; and it sets `engine` to the engine's name in each project's `project.json` file.
+Registers the specified project to the engine. This command does two things: it adds the project's path to the `o3de_manifest.json` file, and it sets `engine` to the engine's name in each project's `project.json` file.
 
 ```cmd
 o3de.bat register -pp PROJECT_PATH
 ```
 
-Registers the specified project to the specified engine. This command does two things: it adds the project's path to the `o3de_manifest.json` file; and it sets `engine` to the engine's name in each project's `project.json` file.
+Registers the specified project to the specified engine. This command does two things: it adds the project's path to the `o3de_manifest.json` file, and it sets `engine` to the engine's name in each project's `project.json` file.
 
 ```cmd
 o3de.bat register -pp PROJECT_PATH --engine-path ENGINE_PATH
 ```
 
-Registers all of the projects in the specified path. This command recursively scans the specified path and registers all of the paths that have a valid `project.json` file. For each project, this command does two things: it adds the each project's path to the `o3de_manifest.json` file; and it sets `engine` to the engine's name in each project's `project.json` file. 
+Registers all of the projects in the specified path. This command recursively scans the specified path and registers all of the paths that have a valid `project.json` file. This command does two things: it adds each project's path to the `o3de_manifest.json` file, and it sets `engine` to the engine's name in each project's `project.json` file.
 
 ```cmd
 o3de.bat register --all-projects-path ALL_PROJECTS_PATH
@@ -684,7 +680,7 @@ Registers the Gem to the engine's `engine.json` file. Before registering the Gem
 o3de.bat register -gp GEM_PATH -espp ENGINE_PATH
 ```
 
-Registers all of the Gems in the specified path. This command recursively scans the specified path and registers all of the paths that have a valid `gem.json` file. For each Gem, this command adds the Gem to the `o3de_manifest.json` file.
+Registers all of the Gems in the specified path. This command recursively scans the specified path and registers all of the paths that have a valid `gem.json` file. This command adds each Gem to the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register --all-gems-path ALL_GEMS_PATH
@@ -719,7 +715,7 @@ o3de.bat register --external-subdirectory EXTERNAL_SUBDIRECTORY --external-subdi
 Registers the specified template to the `templates` list in the `o3de_manifest.json` file.
 
 ```cmd
-o3de.bat register --template-path <template-path
+o3de.bat register --template-path <template-path>
 ```
 
 Registers the specified template to the `templates` list in the specified engine's `engine.json` file.
@@ -728,7 +724,7 @@ Registers the specified template to the `templates` list in the specified engine
 o3de.bat register --template-path TEMPLATE_PATH --engine-path ENGINE_PATH
 ```
 
-Registers all of the templates in the specified path. This command recursively scans the specified path and registers all of the paths that have a valid `template.json` file. For each template, this command adds the template to the `templates` list in the `o3de_manifest.json` file.
+Registers all of the templates in the specified path. This command recursively scans the specified path and registers all of the paths that have a valid `template.json` file. This command adds each template to the `templates` list in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register --all-templates-path ALL_TEMPLATES_PATH
@@ -738,7 +734,7 @@ o3de.bat register --all-templates-path ALL_TEMPLATES_PATH
 
 **Registering restricted paths**
 
-Registers the specified restricted directory to the `restricted` list in the `o3de_manifest.json` file. 
+Registers the specified restricted path to the `restricted` list in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register --restricted-path RESTRICTED_PATH
@@ -754,13 +750,13 @@ o3de.bat register --all-restricted-path ALL_RESTRICTED_PATH
 
 **Registering repositories**
 
-Registers the specified repository URI (uniform resource identifier) to the `repos` list in the `o3de_manifest.json` file.
+Registers the specified repository uniform resource identifier (URI) to the `repos` list in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register --repo-uri REPO_URI
 ```
 
-Registers all of the repositories in the specified URI. This command recursively scans the specified path and registers all of the repositoriesthat have a valid `repo.json` file. For each repository, this command adds the Gem to the `o3de_manifest.json` file.
+Registers all of the repositories in the specified URI. This command recursively scans the specified path and registers all of the repositories that have a valid `repo.json` file. This command adds each repository to the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat register --all-repo-uri ALL_REPO_URI
@@ -788,19 +784,19 @@ Registers the specified folder as the default Gems directory in the `o3de_manife
 o3de.bat register --default-gems-folder GEMS_FOLDER_PATH
 ```
 
-Register the specified folder as the default templates directory in the `o3de_manifest.json` file. When creating a template by using the `create-template` command, if you provide a relative path, the template saves in the default template folder.
+Registers the specified folder as the default templates directory in the `o3de_manifest.json` file. When creating a template by using the `create-template` command, if you provide a relative path, the template saves in the default template folder.
 
 ```cmd
 o3de.bat register --default-templates-folder TEMPLATES_FOLDER_PATH
 ```
 
-Register the specified folder as the default restricted directory in the `o3de_manifest.json` file. The commands - `create-from-template`, `create-project`, and `create-gem` - use the default restricted directory when instantiating a template. 
+Registers the specified folder as the default restricted directory in the `o3de_manifest.json` file. The commands--`create-from-template`, `create-project`, and `create-gem`--use the default restricted directory when instantiating a template.
 
 ```cmd
 o3de.bat register --default-restricted-folder RESTRICTED_FOLDER_PATH
 ```
 
-Register the specified folder as the default 3rd Party directory in the `o3de_manifest.json` file. The Project Manager uses the default 3rd Party directory to set the `LY_3RDPARTY_PATH` option when configuring the CMake build solution.
+Registers the specified folder as the default third-party directory in the `o3de_manifest.json` file. **Project Manager** uses the default third-party directory to set the `LY_3RDPARTY_PATH` option when configuring the CMake build solution.
 
 ```cmd
 o3de.bat register --default-third-party folder THIRD_PARTY_FOLDER_PATH
@@ -825,7 +821,7 @@ o3de.bat register --update
 
 - **`--this-engine`**
 
-  The engine that is running this o3de Python script.
+  The engine running this O3DE Python script.
 
 - **`-ep ENGINE_PATH, --engine-path ENGINE_PATH`**
 
@@ -841,7 +837,7 @@ o3de.bat register --update
 
 - **`-es EXTERNAL_SUBDIRECTORY, --external-subdirectory EXTERNAL_SUBDIRECTORY`**
 
-  The path to the the external subdirectory that you want to register or deregister.
+  The path to the external subdirectory that you want to register or deregister.
 
 - **`-tp TEMPLATE_PATH, --template-path TEMPLATE_PATH`**
 
@@ -857,27 +853,26 @@ o3de.bat register --update
 
 - **`-aep ALL_ENGINES_PATH, --all-engines-path ALL_ENGINES_PATH`**
 
-  All of the engines in the specified folder that you want to register or deregister.
-
+  All of the engines that you want to register or deregister in the specified folder.
 - **`-app ALL_PROJECTS_PATH, --all-projects-path ALL_PROJECTS_PATH`**
 
-  All of the projects in the specified folder that you want to register or deregister.
+  All of the projects that you want to register or deregister in the specified folder.
 
 - **`-agp ALL_GEMS_PATH, --all-gems-path ALL_GEMS_PATH`**
 
-  All of the Gems in the specified folder that you want to register or deregister.
+  All of the Gems that you want to register or deregister in the specified folder.
 
 - **`-atp ALL_TEMPLATES_PATH, --all-templates-path ALL_TEMPLATES_PATH`**
 
-  All of the templates in the specified folder that you want to register or deregister.
+  All of the templates that you want to register or deregister in the specified folder.
 
 - **`-arp ALL_RESTRICTED_PATH, --all-restricted-path ALL_RESTRICTED_PATH`**
-
-  All of the restricted folders in the specified folder that you want to register or deregister.
+  
+  All of the restricted folders that you want to register or deregister in the specified folder.
 
 - **`-aru ALL_REPO_URI, --all-repo-uri ALL_REPO_URI`**
-
-  All of the repositories in the specified folder that you want to register or deregister.
+  
+  All of the repositories that you want to register or deregister in the specified folder.
 
 - **`-def DEFAULT_ENGINES_FOLDER, --default-engines-folder DEFAULT_ENGINES_FOLDER`**
 
@@ -917,11 +912,11 @@ o3de.bat register --update
 
 - **`-f, --force`**
 
-  Forces the registration information to update, if any modifications were made.
+  Forces the registration information to update, if you made any modifications.
 
  
 **external-subdirectory:**  
-The following parameters are used with the `--external-subdirectory` option.
+Use the following parameters with the `--external-subdirectory` option.
 
 - **`-esep EXTERNAL_SUBDIRECTORY_ENGINE_PATH, --external-subdirectory-engine-path EXTERNAL_SUBDIRECTORY_ENGINE_PATH`**
 
@@ -1015,7 +1010,7 @@ Outputs the list of Gems that are registered in the specified project's `project
 o3de.bat register-show --project-gems --project-path PROJECT_PATH -v
 ```
 
-Outputs the list of Gems that are registered in both the `o3de_manifest.json` file and current engine's `engine.json` file. If you use `-v`, then this command outputs each Gem's `gem.json` file.
+Outputs the list of Gems that are registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. If you use `-v`, then this command outputs each Gem's `gem.json` file.
 
 ```cmd
 o3de.bat register-show --all-gems -v
@@ -1043,7 +1038,7 @@ Outputs the list of templates that are registered in the specified project's `pr
 o3de.bat register-show --project-templates --project-path PROJECT_PATH -v
 ```
 
-Outputs the list of templates that are registered in both the `o3de_manifest.json` file and current engine's `engine.json` file. If you use `-v`, then this command outputs each template's `template.json` file.
+Outputs the list of templates that are registered in both the `o3de_manifest.json` file and the current engine's `engine.json` file. If you use `-v`, then this command outputs each template's `template.json` file.
 
 ```cmd
 o3de.bat register-show --all-templates -v
@@ -1114,6 +1109,7 @@ Outputs the list of repositories that are registered in the `o3de_manifest.json`
 o3de.bat register-show --repos
 ```
 
+
 ### Optional parameters
 
 - **`-h, --help`**
@@ -1142,7 +1138,7 @@ o3de.bat register-show --repos
 
 - **`-r, --repos`**
 
-  Outputs a list of the repos that are registered in the `o3de_manifest.json` file. Ignores repos.
+  Outputs a list of the repos that are registered in the `o3de_manifest.json` file.
 
 - **`-rs, --restricted`**
 
@@ -1158,7 +1154,7 @@ o3de.bat register-show --repos
 
 - **`-et, --engine-templates`**
 
-  Outputs a list of the templates that are registered in the current engine's `engine.json` file. Ignores repos.
+  Outputs a list of the Gems that are registered in the current engine's `engine.json` file. Ignores repos.
 
 - **`-ers, --engine-restricted`**
 
@@ -1170,19 +1166,19 @@ o3de.bat register-show --repos
 
 - **`-pg, --project-gems`**
 
-  Outputs a list of the gems that are registered with the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options..
+  Outputs a list of the Gems that are registered in the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options.
 
 - **`-pt, --project-templates`**
 
-  Outputs a list of the templates that are registered with the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options..
+  Outputs a list of the templates that are registered in the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options.
 
 - **`-prs, --project-restricted`**
 
-  Outputs a list of the restricted directories that are registered with the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options..
+  Outputs a list of the restricted directories that are registered in the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options.
 
 - **`-pes, --project-external-subdirectories`**
 
-  Outputs a list of the external subdirectories register with the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options..
+  Outputs a list of the external subdirectories that are registered in the specified project's `project.json` file. You must specify the project using the `-pp` or `-pn` options.
 
 - **`-ap, --all-projects`**
 
@@ -1190,7 +1186,7 @@ o3de.bat register-show --repos
 
 - **`-ag, --all-gems`**
 
-  Outputs all of the gems that are registered in the `o3de_manifest.json` file and the current engine's `engine.json` file. Ignores repos
+  Outputs all of the Gems that are registered in the `o3de_manifest.json` file and the current engine's `engine.json` file.
 
 - **`-at, --all-templates`**
 
@@ -1274,19 +1270,19 @@ Returns the first URI for a repository that has the specified `repo_name` value.
 o3de.bat get-registered --repo-name REPO_NAME
 ```
 
-Returns the default engine folder that is registered to the `o3de_manifest.json` file.
+Returns the default engine folder that is registered in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat get-registered --default-folder engines
 ```
 
-Returns the default projects folder that is registered to the `o3de_manifest.json` file. 
+Returns the default projects folder that is registered in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat get-registered --default-folder projects
 ```
 
-Returns the default Gems folder that is registered to the `o3de_manifest.json` file. 
+Returns the default Gems folder that is registered in the `o3de_manifest.json` file.
 
 ```cmd
 o3de.bat get-registered --default-folder gems
@@ -1348,7 +1344,7 @@ o3de.bat get-registered --default-folder restricted
 
 ## `enable-gem`
 
-Enables the Gem in your project, so you can use the assets or code the Gem provides. When you enable a Gem, this command adds the Gem's name to your project's `Code/enabled_gems.cmake` file, which adds the Gem as a build and load dependency of your project's **Game Launcher**, the **Editor**, and the **Asset Processor**.
+Enables the specified Gem in your project, so that you can use the assets or code that the Gem provides. When you enable a Gem, this command adds its name to your project's `Code/enabled_gems.cmake` file, which adds the Gem as a build and load dependency of your project's **Game Launcher**, the Editor, and Asset Processor.
 
 ### Format
 
@@ -1380,15 +1376,15 @@ o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 
 - **`-gp GEM_PATH, --gem-path GEM_PATH`**
 
-  The path to the gem.
+  The path to the Gem.
 
 - **`-gn GEM_NAME, --gem-name GEM_NAME`**
 
-  The name of the gem.
+  The name of the Gem.
 
 - **`-egf ENABLED_GEM_FILE, --enabled-gem-file ENABLED_GEM_FILE`**
 
-  The CMake file that manages the list of Gems that are enabled. When disabling a Gem, this command removes the Gem from the specified file. If not specified, this command uses the `Code/enabled_gem.cmake` file.
+  The CMake file that manages the list of enabled Gems. When disabling a Gem, this command removes the Gem from the specified file. If not specified, this command uses the `Code/enabled_gem.cmake` file.
 
 - **`-ohf OVERRIDE_HOME_FOLDER, --override-home-folder OVERRIDE_HOME_FOLDER`**
 
@@ -1399,7 +1395,7 @@ o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 
 ## `disable-gem`
 
-Disables the Gem in your project. When you disable a Gem, this command removes the Gem from the project's `Code/enabled_gems.cmake` file, which removes the Gem as a build and load dependency of your project's **Game Launcher**, the **Editor**, and the **Asset Processor**.
+Disables the specified Gem in your project. When you disable a Gem, this command removes it from the project's `Code/enabled_gems.cmake` file, which removes the Gem as a build and load dependency of your project's Game Launcher, the Editor, and Asset Processor.
 
 ### Format
 
@@ -1439,7 +1435,7 @@ o3de.bat disable-gem -gp GEM_PATH -pp PROJECT_PATH
 
 - **`-egf ENABLED_GEM_FILE, --enabled-gem-file ENABLED_GEM_FILE`**
 
-  The CMake file that manages the list of Gems that are enabled. When disabling a Gem, this command removes the Gem from the specified file. If not specified, this command uses the `Code/enabled_gem.cmake` file.
+  The CMake file that manages the list of enabled Gems. When disabling a Gem, this command removes it from the specified file. If not specified, this command uses the `Code/enabled_gem.cmake` file.
 
 - **`-ohf OVERRIDE_HOME_FOLDER, --override-home-folder OVERRIDE_HOME_FOLDER`**
 
@@ -1462,7 +1458,7 @@ edit-engine-properties [-h] (-ep ENGINE_PATH | -en ENGINE_NAME)
 
 ### Usage
 
-Updates the `engine_name` field in the `engine.json` file located at the specified engine's folder. 
+Updates the `engine_name` field in the `engine.json` file located in the specified engine's folder.
 
 ```cmd
 o3de.bat edit-engine-properties --engine-path ENGINE_PATH --engine-new-name ENGINE_NEW_NAME
@@ -1525,7 +1521,7 @@ edit-project-properties [-h]
 
 ### Usage
 
-Updates the "project_name" field within the gem.json located at the supplied project path or at the path of the registered project with <project-name>
+Updates the `project_name` field in the `gem.json` file located in the supplied project path or at the path of the registered project.
 
 ```cmd
 o3de.bat edit-project-properties --project-path PROJECT_PATH --project-new-name PROJECT_NEW_NAME
@@ -1548,16 +1544,15 @@ o3de.bat edit-project-properties --project-name PROJECT_NAME --project-new-name 
 
 - **`-at [ADD_TAGS [ADD_TAGS ...]], --add-tags [ADD_TAGS [ADD_TAGS ...]]`**
 
-  Adds tag(s) to the `user_tags` property. To add multiple tags, use a space delimited
-list (for example, `-at A B C`).
+  Adds tags to the `user_tags` property. To add multiple tags, use a space-delimited list. For example: `-at A B C`.
 
 - **`-dt [DELETE_TAGS [DELETE_TAGS ...]], --delete-tags [DELETE_TAGS [DELETE_TAGS ...]]`**
 
-  Removes tag(s) from the `user_tags` property. To delete multiple tags, use a space delimited list (for example, `-dt A B C`).
+  Removes tags from the `user_tags` property. To delete multiple tags, use a space-delimited list. For example: `-dt A B C`.
 
 - **`-rt [REPLACE_TAGS [REPLACE_TAGS ...]], --replace-tags [REPLACE_TAGS [REPLACE_TAGS ...]]`**
 
-  Replace the `user_tags` property with the specified space delimited list of values.
+  Replaces the `user_tags` property with the specified space-delimited list of values.
 
 
 **Project properties:**
@@ -1570,7 +1565,7 @@ The following parameters modify the specified project's properties.
 
 - **`-po PROJECT_ORIGIN, --project-origin PROJECT_ORIGIN`**
 
-  Sets the description or URL for the project origin (such as the project host, repository, or owner).
+  Sets the description or URL for the project origin, such as the project host, repository, or owner.
 
 - **`-pd PROJECT_DISPLAY, --project-display PROJECT_DISPLAY`**
 
@@ -1605,7 +1600,7 @@ edit-gem-properties [-h] (-gp GEM_PATH | -gn GEM_NAME)
 
 ### Usage
 
-Updates the `gem_name` field in the `gem.json` file located at the specified Gem's folder.
+Updates the `gem_name` field in the `gem.json` file located in the specified Gem's folder.
 
 ```cmd
 o3de.bat edit-gem-properties --gem-path GEM_PATH --gem-new-name GEM_NEW_NAME
@@ -1617,9 +1612,8 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
 ### Optional parameters
 
-
 - **`-h, --help`**
-- 
+  
   Shows the help message.
 
 - **`-gp GEM_PATH, --gem-path GEM_PATH`**
@@ -1632,15 +1626,15 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
 - **`-at [ADD_TAGS [ADD_TAGS ...]], --add-tags [ADD_TAGS [ADD_TAGS ...]]`**
 
-  Adds tag(s) to the `user_tags` property. To add multiple tags, use a space delimited list (for example, `-at A B C`).
+  Adds tags to the `user_tags` property. To add multiple tags, use a space-delimited list. For example: `-at A B C`.
 
 - **`-dt [DELETE_TAGS [DELETE_TAGS ...]], --delete-tags [DELETE_TAGS [DELETE_TAGS ...]]`**
 
-  Removes tag(s) from the `user_tags` property. To delete multiple tags, use a space delimited list (for example, `-dt A B C`).
+  Removes tags from the `user_tags` property. To delete multiple tags, use a space-delimited list. For example: `-dt A B C`.
 
 - **`-rt [REPLACE_TAGS [REPLACE_TAGS ...]], --replace-tags [REPLACE_TAGS [REPLACE_TAGS ...]]`**
   
-  Replace the `user_tags` property with the specified space delimited list of values.
+  Replaces the `user_tags` property with the specified space-delimited list of values.
 
 
 **Gem properties:**
@@ -1657,7 +1651,7 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
 - **`-go GEM_ORIGIN, --gem-origin GEM_ORIGIN`**
 
-  Sets the description or URL for the Gem origin (such as the Gem host, repository, or owner).
+  Sets the description or URL for the Gem's origin, such as the Gem host, repository, or owner.
 
 - **`-gt {Code,Tool,Asset}, --gem-type {Code,Tool,Asset}`**
 
@@ -1679,7 +1673,7 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
 ## `sha256`
 
-Creates a hash value for an O3DE object using the SHA-256 secure hash algorithm. This command outputs the specified file path and writes the value to the `sha256` field in the specified JSON file. 
+Creates a hash value for an O3DE object using SHA-256 (Secure Hash Algorithm 256). This command outputs the specified file path and writes the value to the `sha256` field in the specified JSON file.
 
 ### Format
 
@@ -1701,4 +1695,4 @@ o3de.bat sha256 --file-path FILE_PATH --json-path JSON_PATH
 
 - **`-j JSON_PATH, --json-path JSON_PATH`**
 
-  The path to the O3DE object's JSON file that you want to add the "sha256" element to.
+  The path to the O3DE object's JSON file that you want to add the `sha256` hash value to.
