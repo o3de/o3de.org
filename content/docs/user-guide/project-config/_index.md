@@ -1,5 +1,7 @@
 ---
+linktitle: Project Configuration
 title: Project Configuration
+description: Learn how to configure your projects in Open 3D Engine (O3DE)
 weight: 100
 ---
 
