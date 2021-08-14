@@ -6,11 +6,9 @@ weight: 350
 
 {{< preview-migrated >}}
 
-The API for collision layers and groups is defined in the [PhysX Gem API](/docs/api/gems/physx)
-
 ## Retrieving Layers and Groups
 
-You can use the `layer(`*layer\_name*`)` and `group(`*group\_name*`)` methods to retrieve instances of collision layers and groups [that you created in O3DE Editor](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-collision-groups.md). These methods perform a lookup of the definitions defined in the **PhysX Configuration** tool. If no collision layer is found that matches the name, the default layer \(`0`\) is returned.
+You can use retrieve instances of collision layers and groups [that you created in O3DE Editor](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups.md) as shown below. These methods perform a lookup of the definitions defined in the **PhysX Configuration** tool. If no collision layer is found that matches the name, the default layer \(`0`\) is returned.
 
 ```
 CollisionLayer layer("MyLayer");

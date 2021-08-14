@@ -10,7 +10,7 @@ weight: 300
 
  With **NVIDIA Cloth** in Open 3D Engine you can create realistic cloth simulations for entities that contain **Actor** or **Mesh** components. The **NVIDIA Cloth** gem provides a component you can use to simulate cloth on any mesh that has been processed with a **Cloth** modifier applied in **FBX Settings**.
 
-To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/).
+To use **NVIDIA Cloth** you must enable the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-cloth/).
 
 ## NVIDIA Cloth features 
 

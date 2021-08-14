@@ -3,12 +3,12 @@ linkTitle: Local Testing
 title: AWS GameLift Gem Local Testing
 description: "Learn how to test locally with the AWS GameLift Gem in O3DE"
 toc: true
-weight: 300
+weight: 600
 ---
 
-In this topic, you will learn how to test and verify GameLift feature integrations on your local machine by using **GameLift Local**. 
+In this topic, you will learn how to test and verify AWS GameLift Gem feature integrations on your local machine by using **GameLift Local**. 
 
-GameLift Local is a command line tool that starts a self-contained version of the managed GameLift service. GameLift Local also provides a running event log of server process initialization, health checks, and API calls and responses. GameLift Local recognizes a subset of the AWS SDK actions for GameLift. You can make calls from the AWS CLI or from your game client. All API actions perform locally, just as they do in the GameLift web service. Read more in the AWS Amazon GameLift documentation, [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-start).
+GameLift Local is a command line tool that starts a self-contained version of the managed Amazon GameLift service. GameLift Local also provides a running event log of server process initialization, health checks, and API calls and responses. GameLift Local recognizes a subset of the AWS SDK actions for GameLift. You can make calls from the AWS CLI or from your game client. All API actions perform locally, just as they do in the GameLift web service. For more information, refer to [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-start) in the Amazon GameLift Developer Guide.
 
 ## 1. Start GameLift Local
 
@@ -49,7 +49,7 @@ You should be able to find application under build bin folder, and launch the ga
 
 // Override GameLift endpoint to local host
 
-$ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "[http://localhost:9080](http://localhost:9080)"
+$ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "http://localhost:9080"
 
 ```
 
@@ -57,12 +57,9 @@ $ bin\profile\YourProject.GameLauncher.exe --cl_gameliftLocalEndpoint "[http://l
 
 Testing steps and instructions really depend on your own project, but please make sure your testing can cover CreateSession, JoinSession, LeaveSession and DestorySession use case.
 
-You can also verify interactions and logs with GameLift Local tool. Read more in the AWS Amazon GameLift documentation, [Test a Game Server and Client](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-client).
+You can also verify interactions and logs with the GameLift Local tool. For more information, refer to [Test a Game Server and Client](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html#integration-testing-local-client) in the Amazon GameLift Developer Guide.
 
-  
+---
+Previous topic: [AWS GameLift Gem Advanced Topics](advanced-topics/)
 
-  
-
-Previous Topic: [AWS GameLift Gem Advanced Topics](usage/advanced-topics/)
-
-Next Topic: [AWS GameLift Build Packaging for Windows](build-build-packaging-for-windows/)
+Next topic: [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/)

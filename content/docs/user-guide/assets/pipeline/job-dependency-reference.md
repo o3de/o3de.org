@@ -1,13 +1,14 @@
 ---
 description: ' Use job dependencies using the Asset Builder SDK in Open 3D Engine. '
 title: Job Dependency for Asset Pipeline
+draft: true
 ---
 
 {{< preview-migrated >}}
 
 Manage dependencies for assets so that Asset Pipeline processes them in the correct order.
 
-In Asset Pipeline, you create asset builders using the Asset Builder SDK. The Asset Builder SDK processes your custom asset-type source files into game-ready files. The Asset Builder SDK is a separate executable from Asset Processor. For more information about the Asset Builder SDK, see [Creating a Custom Asset Builder](/docs/user-guide/tutorials/assets/custom-builder.md).
+In Asset Pipeline, you create asset builders using the Asset Builder SDK. The Asset Builder SDK processes your custom asset-type source files into game-ready files. The Asset Builder SDK is a separate executable from Asset Processor..
 
 For each asset builder that registered a particular source asset type:
 

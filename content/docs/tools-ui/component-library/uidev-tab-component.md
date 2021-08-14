@@ -5,8 +5,6 @@ description: Learn how to use the O3DE UI tab widget component to create tabs an
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use tabs to enable users to organize content at a high level, such as switching between views, data sets, or functional aspects of an application.
 
 Tabs are also used in the widget headers. When there is more than one widget docked together, the widget headers are shown as tabs. Users can drag the tab/widget header to move it around and dock it elsewhere.

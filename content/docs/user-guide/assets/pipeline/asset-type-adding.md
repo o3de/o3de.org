@@ -1,13 +1,14 @@
 ---
 description: ' Add a custom asset type to Open 3D Engine. '
 title: Adding an Asset Type to O3DE
+draft: true
 ---
 
 {{< preview-migrated >}}
 
 When you develop a game, you might need to add a new kind of asset to O3DE. The new asset could be a configuration file, a game-specific data asset, or structured data for which you created an editor. This topic guides you through the process of adding a custom asset type to O3DE.
 
-For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/asset-system-programming.md).
+For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/pipeline/asset-system-programming).
 
 **Topics**
 + [Overview](#asset-pipeline-asset-type-adding-overview-of-steps)
@@ -41,6 +42,7 @@ You can deploy your asset file by copying if the following are true:
 #### Registering by Creating a Builder 
 
 If your asset requires processing, compiling, or optimizing at run time, you can do one of the following:
+
 + Create a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder.md) to transform your source asset into its compiled form.
 + If your asset is extracted from a scene file like FBX and you want to integrate with its corresponding pipeline, create a scene pipeline plug-in.
 

@@ -52,7 +52,7 @@ Example registry settings file:
     {
         "AWSCore": {
             "ProfileName": "testprofile",
-            "ResourceMappingConfigFileName": "test_aws_resource_mappings.json"
+            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
         }
     }
 }

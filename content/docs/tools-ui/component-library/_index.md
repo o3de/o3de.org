@@ -5,8 +5,6 @@ description: An introduction to the Open 3D Engine UI component library.
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
 In the Open 3D Engine (O3DE) UI component library, you will find an explanation of each UI component (i.e. widget), along with guidelines for their usage. Typically, each page contains the following information:
 + Use cases
 + Screenshots and explanations of component features

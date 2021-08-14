@@ -4,11 +4,11 @@ description: "This section dives into the RPI samples demonstrated in the Atom S
 toc: true
 ---
 
+This section dives into the RPI samples demonstrated in the Atom Sample Viewer.   
+
 {{< placeholder >}}
 {{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
 {{< /todo >}}
-
-This section dives into the RPI samples demonstrated in the Atom Sample Viewer.   
 
 ## Asset Load
 

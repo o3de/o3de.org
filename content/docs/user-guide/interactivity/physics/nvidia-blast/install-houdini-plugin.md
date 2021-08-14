@@ -13,8 +13,8 @@ NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to c
 The precompiled Houdini plug-ins supplied with the **NVIDIA Blast** gem require Houdini 18.0.
 
 **Contents**
-+ [Install NVIDIA Blast plug-ins](#nvidia-blast-plugin-install)
-+ [Enable the Blast tool shelf](#nvidia-blast-tool-enable)
++ [Install NVIDIA Blast plug-ins](#install-nvidia-blast-plug-ins)
++ [Enable the Blast tool shelf](#enable-the-blast-tool-shelf)
 
 ## Install NVIDIA Blast plug-ins 
 

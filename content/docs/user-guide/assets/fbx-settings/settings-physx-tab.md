@@ -11,14 +11,14 @@ In the **PhysX** tab, you can create **PhysX Mesh groups** to process collider a
 There are many options for creating PhysX collider assets. The *best* options in a scenario depend on many factors including mesh complexity, how the collider asset is used, and whether the entity containing the collider is static (doesn't move), kinematic (animated), or dynamic (has a rigid body component). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match a visible render mesh are desirable.
 
 **Contents**
-+ [PhysX tab properties](#fbx-importer-physx-tab-base-properties)
-+ [Triangle mesh asset properties](#fbx-importer-physx-tab-triangle-properties)
-+ [Convex asset properties](#fbx-importer-physx-tab-convex-properties)
-+ [Primitive asset properties](#fbx-importer-physx-tab-primitive-properties)
-+ [Decomposition properties](#fbx-importer-physx-tab-decomposition-properties)
-+ [PhysX modifiers](#fbx-settings-physx-modifiers)
-    + [Comment modifier](#w31aac15b9c11c17c23)
-    + [Origin modifier](#w31aac15b9c11c17c25)
++ [PhysX tab properties](#physx-tab-properties)
++ [Triangle mesh asset properties](#triangle-mesh-asset-properties)
++ [Convex asset properties](#convex-asset-properties)
++ [Primitive asset properties](#primitive-asset-properties)
++ [Decomposition properties](#decomposition-properties)
++ [PhysX modifiers](#physx-modifiers)
+    + [Comment modifier](#comment-modifier)
+    + [Origin modifier](#origin-modifier)
 
 ## PhysX tab properties 
 
@@ -97,7 +97,7 @@ When enabled, 16-bit triangle or polygon indices are generated. Otherwise, 32-bi
 Checks and removes triangles that are have a smaller area than the area value specified in **Area Test Epsilon**.
 
 **Quantize Input**
-Quantizes the input vertices using [k-means clustering](/docs/user-guide/appendix/glossary#kmeansclustering).
+Quantizes the input vertices using [k-means clustering](/docs/user-guide/appendix/glossary#k-means-clustering).
 
 **Use Plane Shifting**
 Enables plane shifting vertex limit algorithm. For more information, see the [ NVIDIA PhysX Geometry documentation](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/Geometry.html).
