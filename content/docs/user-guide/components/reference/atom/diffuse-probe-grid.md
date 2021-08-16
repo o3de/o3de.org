@@ -32,9 +32,9 @@ Probe spacing is the distance between probes (in meters) along each axis within 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **X-Axis** | The amount of space between probes along the x-axis. The space must be within the Box Shape component's dimension along the x-axis. | `0.0` to the Box Shape component's `Dimensions`-`X` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
-| **Y-Axis** | The amount of space between probes along the y-axis. The space must be within the Box Shape component's dimension along the y-axis. | `0.0` to the Box Shape component's `Dimensions`-`Y` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
-| **Z-Axis** | The amount of space between probes along the z-axis. The space must be within the Box Shape component's dimension along the z-axis. | `0.0` to the Box Shape component's `Dimensions`-`Z` property. | The lowest value from the Box Shape component's `Dimensions`-`XYZ` property. |
+| **X-Axis** | The amount of space between probes along the x-axis. The space must be within the Box Shape component's dimension along the x-axis. | `0.0` to the Box Shape component's `Dimensions`-`X` property. | `2.0` |
+| **Y-Axis** | The amount of space between probes along the y-axis. The space must be within the Box Shape component's dimension along the y-axis. | `0.0` to the Box Shape component's `Dimensions`-`Y` property. | `2.0` |
+| **Z-Axis** | The amount of space between probes along the z-axis. The space must be within the Box Shape component's dimension along the z-axis. | `0.0` to the Box Shape component's `Dimensions`-`Z` property. | `2.0` |
 
 ### Grid Settings
 
