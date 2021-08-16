@@ -169,9 +169,9 @@ Now that you have a local copy of the O3DE source, you can build the engine, inc
 
 Choose one of the following build types based on the primary focus of your development work, then follow the instructions in the corresponding tab:
 
-1. **Source Engine** - Choose this build type if you plan to make frequent changes to the engine source code.
+1. **Source engine** - Choose this build type if you plan to make frequent changes to the engine source code.
 
-1. **Pre-built SDK Engine** - Choose this build type if you're primarily interested in project development and you plan to make only infrequent changes (or no changes) to the engine source.
+1. **Pre-built SDK engine** - Choose this build type if you're primarily interested in project development and you plan to make only infrequent changes (or no changes) to the engine source.
 
 {{< tabs name="Engine build instructions" >}}
 {{% tab name="Source engine" %}}
@@ -203,7 +203,7 @@ Choose one of the following build types based on the primary focus of your devel
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
     * `LY_UNITY_BUILD` : We recommend Unity builds in many cases for improved build performance. If you encounter a build error, disable Unity builds to help debug the problem.
 
-1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which our documentation on creating projects covers. The following command builds the engine without a project.
+1. (Optional) Use CMake to build the source engine. This step is optional because in the "source engine" build model, the engine is built inside of every project. If you plan on working with projects, to avoid building the engine twice, consider waiting until you learn how to create and build a project, which we cover in our documentation on creating projects. The following command builds the engine without a project.
 
     The following example shows the `profile` build configuration.
 
@@ -255,7 +255,7 @@ The engine takes a while to build. If you've used all the example commands in th
 
     The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-The engine will take a while to build. If you've used all the example commands in these steps, when the build is complete, the engine tools and other binaries can be found in `C:\o3de-install\bin\Windows\profile`.
+The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile`.
 
 {{% /tab %}}
 {{< /tabs >}}

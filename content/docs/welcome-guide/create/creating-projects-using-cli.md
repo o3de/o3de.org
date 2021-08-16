@@ -35,7 +35,7 @@ This tutorial uses the following project name and directories in the examples. (
 * O3DE engine source: `C:\o3de`
 * Installed O3DE engine (containing pre-built SDK engine binaries): `C:\o3de-install`
 * New project name and location: `C:\o3de-projects\MyProject`
-* Package directory (created during [set up from GitHub](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
+* Package directory (created during [setup from GitHub](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
 
 To start a project based on the standard template, complete the following steps.
 

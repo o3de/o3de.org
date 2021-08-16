@@ -75,7 +75,7 @@ If this is the first time you've used Project Manager to create a project, then 
 
 1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can also choose different Gems to enable for your project. This tutorial uses the default template and its pre-configured selection of common Gems.
 
-1. Choose **Create Project** to create the project files in the directory specified by the project location. This will also register your project in the O3DE manifest, located at `<USER_DIRECTORY>/.o3de/o3de_manifest.json`.
+1. Choose **Create Project** to create the project files in the root directory specified as the project location. This also registers your project in the O3DE manifest, located at `<USER_DIRECTORY>/.o3de/o3de_manifest.json`.
 
 ## Build the O3DE project
 
