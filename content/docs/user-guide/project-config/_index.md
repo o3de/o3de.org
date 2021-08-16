@@ -19,7 +19,7 @@ To create and manage projects, you can use either the GUI-based **Project Manage
 
 Each project contains a project manifest file named `project.json`. This file is located in the project root directory, and stores important configuration properties for each project. It is created for you at the time of project creation.
 
-To make changes to any of the properties in this file, you can either edit it manually using an editor, or specify individual properties to edit using the [O3DE CLI](./cli-reference) `edit-project-properties` command.
+To make changes to any of the properties in this file, you can either edit it manually using a text editor, or specify individual properties to edit using the [O3DE CLI](./cli-reference) `edit-project-properties` command.
 
 The following table describes each of the properties in `project.json`. The name given to the project when the project was created is used as part of the default value for many of the properties, and is indicated by "<PROJECT_NAME>".
 
