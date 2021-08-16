@@ -85,7 +85,7 @@ You are now ready to build the project from Project Manager.
 
     ![Choose Build Project](/images/welcome-guide/project-manager-build-project.png)
 
-1. The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/windows_vs2019/bin/profile`.
+    The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/windows_vs2019/bin/profile`.
 
 1. To open your built project in the Editor, choose **Open Editor** from inside your project's icon box.
 

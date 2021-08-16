@@ -213,7 +213,7 @@ Choose one of the following build types based on the primary focus of your devel
 
     The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows_vs2019\bin\profile`.
+    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows_vs2019\bin\profile`.
 
 {{% /tab %}}
 {{% tab name="Pre-built SDK engine" %}}
@@ -255,7 +255,7 @@ The engine takes a while to build. If you've used all the example commands in th
 
     The `/m` is a recommended build tool optimization, which tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
 
-The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile`.
+    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile`.
 
 {{% /tab %}}
 {{< /tabs >}}
