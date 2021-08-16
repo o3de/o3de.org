@@ -10,7 +10,7 @@ The `o3de` Python script lets you configure your project using the command line 
 
 You can use the `o3de` Python script for the following tasks:
 
-- Creating projects
+- [Creating projects](/docs/welcome-guide/create/creating-projects-using-cli/)
 - Creating Gems
 - Creating templates
 - [Enabling and disabling Gems for your project](add-remove-gems/#using-the-command-line-interface-cli)
@@ -86,6 +86,7 @@ For example, to register the engine, enter the following command:
 <!-------------------------------------------------------------->
 
 ## Commands
+
 The `o3de` Python script contains the following commands, with further details in the following sections. 
 
 | Command | Description | 
@@ -128,6 +129,7 @@ o3de.bat get-global-project
 ```
 
 Reads the global project from a specified file.
+
 ```cmd
 o3de.bat get-global-project -i <USER_DIRECTORY>\.o3de\Registry\my-custom.setreg
 ```
@@ -192,7 +194,7 @@ o3de.bat set-global-project -pp PROJECT_PATH -o <USER_DIRECTORY>\.o3de\Registry\
 
 - **`-f, --force`**
 
-  Forcibly sets the project path in the supplied .setreg file.
+  Forcibly sets the project path in the supplied `.setreg` file.
 
 
 <!-------------------------------------------------------------->
@@ -275,7 +277,7 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: \<TemplateName\> -> ${Name}, \<templatename\> -> ${NameLower}, \<TEMPLATENAME\> -> ${NameUpper}.
+  Add A to B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<TemplateName\> is the last component of the TEMPLATE_PATH. The following replacement pairs already exist: `${Name}` to \<TemplateName\>, `${NameLower}` to \<templatename\>, `${NameUpper}` to \<TEMPLATENAME\>.
 
 - **`-f, --force`**
          
@@ -342,15 +344,15 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
 - **`-trp TEMPLATE_RESTRICTED_PATH, --template-restricted-path TEMPLATE_RESTRICTED_PATH`**
 
-The path to the restricted directory that `o3de` adds restricted platform sources to, if any.
+  The path to the restricted directory that `o3de` adds restricted platform sources to, if any.
 
 - **`-trn TEMPLATE_RESTRICTED_NAME, --template-restricted-name TEMPLATE_RESTRICTED_NAME`**
   
-The name of the restricted directory that `o3de` adds restricted platform sources to, if any. If supplied, you don't need to use the `--template-restricted-path` parameter.
+  The name of the restricted directory that `o3de` adds restricted platform sources to, if any. If supplied, you don't need to use the `--template-restricted-path` parameter.
 
 - **`-drprp DESTINATION_RESTRICTED_PLATFORM_RELATIVE_PATH, --destination-restricted-platform-relative-path DESTINATION_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
-  A path to append to `DESTINATION_RESTRICTED_PATH/<platform>`, which contains the restricted destination. For example: `--destination-restricted-path C:/instance --destination-restricted-platform-relative-path some/folder` => `C:/instance/<platform>/some/folder/<destination_name>`
+  A path to append to `DESTINATION_RESTRICTED_PATH/<platform>`, which contains the restricted destination. For example: `--destination-restricted-path C:/instance --destination-restricted-platform-relative-path some/folder` => `C:/instance/<platform>/some/folder/<destination_name>`.
 
 - **`-trprp TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH, --template-restricted-platform-relative-path TEMPLATE_RESTRICTED_PLATFORM_RELATIVE_PATH`**
 
@@ -366,7 +368,7 @@ The name of the restricted directory that `o3de` adds restricted platform source
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: \<DestinationName\> -> ${Name}, \<destinationname\> -> ${NameLower}, \<DESTINATIONNAME\> -> ${NameUpper}.
+  Add A to B replacement pairs. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `${User}` with `MyUsername`, and `${id}` with `1723905`. Note: \<DestinationName\> is the last component of the DESTINATION_PATH. The following replacement pairs already exist: `${Name}` to \<DestinationName\>, `${NameLower}` to \<destinationname\>, `${NameUpper}` to \<DESTINATIONNAME\>.
 
 - **`-f, --force`**
 
@@ -465,7 +467,7 @@ o3de.bat create-project --project-path PROJECT_PATH --template-path TEMPLATE_PAT
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. `o3de` automatically infers `${Name}` and all of the other standard project replacements from the project name. These replacements supersede all inferred replacements. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `MyUsername` with `${User}`, and `1723905` with `${id}`. Note: \<ProjectName\> is the last component of the template_path. The following replacement pairs already exist: \<ProjectName\> -> ${Name}, \<projectname\> -> ${NameLower}, \<PROJECTNAME\> -> ${NameUpper}.
+  Add A to B replacement pairs. `o3de` automatically infers `${Name}` and all of the other standard project replacements from the project name. These replacements supersede all inferred replacements. For example: `--replace MyUsername ${User} 1723905 ${id}`. This replaces `MyUsername` with `${User}`, and `1723905` with `${id}`. Note: \<ProjectName\> is the last component of the template_path. The following replacement pairs already exist: `${Name}` to \<ProjectName\>, `${NameLower}` to \<projectname\>, `${NameUpper}` to \<PROJECTNAME\>.
 
 - **`--system-component-class-id SYSTEM_COMPONENT_CLASS_ID`**
 
@@ -570,7 +572,7 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 - **`-r [REPLACE [REPLACE ...]], --replace [REPLACE [REPLACE ...]]`**
 
-  Add A->B replacement pairs. `o3de` automatically infers `${Name}` and all of the other standard Gem replacements from the Gem name. These replacements supersede all inferred replacement pairs. For example: `--replace ${DATE} 1/1/2020 ${id} 1723905`. This replaces `${DATE}` with `1/1/2020`, and  `${id}` with `1723905`. Note:  \<GemName> is the last component of the GEM_PATH. The following replacement pairs already exist: \<GemName\> -> ${Name}, \<gemname\> -> ${NameLower}, \<GEMNAME\> -> ${NameUpper}.
+  Add A to B replacement pairs. `o3de` automatically infers `${Name}` and all of the other standard Gem replacements from the Gem name. These replacements supersede all inferred replacement pairs. For example: `--replace ${DATE} 1/1/2020 ${id} 1723905`. This replaces `${DATE}` with `1/1/2020`, and  `${id}` with `1723905`. Note:  \<GemName> is the last component of the GEM_PATH. The following replacement pairs already exist: `${Name}` to \<GemName\>, `${NameLower}` to \<gemname\>, `${NameUpper}` to \<GEMNAME\>.
 
 - **`-kr, --keep-restricted-in-gem`**
 
@@ -854,6 +856,7 @@ o3de.bat register --update
 - **`-aep ALL_ENGINES_PATH, --all-engines-path ALL_ENGINES_PATH`**
 
   All of the engines that you want to register or deregister in the specified folder.
+
 - **`-app ALL_PROJECTS_PATH, --all-projects-path ALL_PROJECTS_PATH`**
 
   All of the projects that you want to register or deregister in the specified folder.
@@ -896,7 +899,7 @@ o3de.bat register --update
 
 - **`-dtpf DEFAULT_THIRD_PARTY_FOLDER, --default-third-party-folder DEFAULT_THIRD_PARTY_FOLDER`**
 
-  The path to the default 3rd party folder that you want to register or deregister.
+  The path to the default third-party folder that you want to register or deregister.
 
 - **`-u, --update`**
 
@@ -1103,6 +1106,7 @@ o3de.bat register-show --all-external-subdirectories
 <br>
 
 **Showing registered repositories**
+
 Outputs the list of repositories that are registered in the `o3de_manifest.json` file.
 
 ```cmd
@@ -1146,15 +1150,15 @@ o3de.bat register-show --repos
 
 - **`-ep, --engine-projects`**
 
-  Outputs a list of the projects that are registered in the current engine's `engine.json` file. Ignores repos.
+  Outputs a list of the projects that are registered in the current engine's `engine.json` file. 
 
 - **`-eg, --engine-gems`**
 
-  Outputs a list of the gems that are registered in the current engine's `engine.json` file. Ignores repos.
+  Outputs a list of the Gems that are registered in the current engine's `engine.json` file. 
 
 - **`-et, --engine-templates`**
 
-  Outputs a list of the Gems that are registered in the current engine's `engine.json` file. Ignores repos.
+  Outputs a list of the templates that are registered in the current engine's `engine.json` file. 
 
 - **`-ers, --engine-restricted`**
 
@@ -1182,7 +1186,7 @@ o3de.bat register-show --repos
 
 - **`-ap, --all-projects`**
 
-  Outputs all of the projects that are registered in the `o3de_manifest.json` file and the current engine's `engine.json`. Ignores repos.
+  Outputs all of the projects that are registered in the `o3de_manifest.json` file and the current engine's `engine.json` file. 
 
 - **`-ag, --all-gems`**
 
@@ -1190,7 +1194,7 @@ o3de.bat register-show --repos
 
 - **`-at, --all-templates`**
 
-  Outputs all of the templates that are registered in the `o3de_manifest.json` file and the current engine's `engine.json` file. Ignores repos.
+  Outputs all of the templates that are registered in the `o3de_manifest.json` file and the current engine's `engine.json` file. 
 
 - **`-ares, --all-restricted`**
 
