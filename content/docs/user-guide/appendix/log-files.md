@@ -1,7 +1,7 @@
 ---
 linktitle: Log Files
 title: Open 3D Engine Log Files
-description: Learn where various log files are written in Open 3D Engine (O3DE).
+description: Learn where to find common Open 3D Engine (O3DE) log files.
 ---
 
 Find these common O3DE log files in the following locations:
