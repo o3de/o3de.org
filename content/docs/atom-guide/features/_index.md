@@ -3,14 +3,13 @@ title: "Features"
 description: "Learn about graphics features in the Atom renderer"
 toc: true
 weight: 400
----  
-
-{{< preview-new >}}
+---
 
 This section provides a high-level overview of graphics features that the Atom renderer supports. Some of these features are also implemented in Open 3D Engine (O3DE), so you can add rendering effects to your project. 
 
 
 ## Anti-aliasing
+
 A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
 
 Multisampling Anti-aliasing (MSAA)   
@@ -55,7 +54,7 @@ Reflection Probes
  Subsurface Scattering   
 : Describes how light that enters a translucent object scatters through a material. Subsurface scattering is implemented into material properties. 
 
-Related to: [Material System](docs/atom-guide/dev-guide/materials/_index.md)
+Related to: [Material System](/docs/atom-guide/dev-guide/materials)
 
 
 Exposure and Eye Adaptation 
@@ -93,7 +92,7 @@ Atom has a unified mesh format with support for several mesh types:
 + **Skinned** meshes that are bound to a skeleton with per vertex bone weights and animated through transforms applied to the bones of the skeleton. Skinned meshes can't be included in light maps or reflection maps.
 + **Cloth** meshes that dynamically simulate the physical properties of cloth-like objects. Cloth meshes can't be included in light maps or reflection maps.
 
-*Related to: [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [O3DE Mesh Component](/docs/user-guide/components/reference/atom/mesh.md), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html), [O3DE Skinned Mesh Component](/docs/user-guide/components/reference/atom/skinned-mesh.md)*  
+*Related to: [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [O3DE Mesh Component](/docs/user-guide/components/reference/atom/mesh), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
 
 
 ## Processing and Post FX
@@ -106,7 +105,7 @@ Tone Mapping and Color Grading
 Post-processing Volumes   
 : Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
 
-*Related to: [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html), [O3DE Post Process Components](/docs/user-guide/components/reference/atom/post-process/index.md)*
+*Related to: [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html), O3DE PostFX components ([Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/)).* 
 
 
 Bloom   

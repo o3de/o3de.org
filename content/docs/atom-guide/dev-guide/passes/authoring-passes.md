@@ -5,8 +5,6 @@ toc: true
 weight: 1200
 ---
 
-{{< preview-new >}}
-
 **Passes** determine how a frame is rendered. You can customize your rendering pipeline by integrating different passes, such as lighting or post process passes. Passes are instantiated from **PassTemplates**, which can be authored in JSON or in C++. If you want to customize the functionality of a pass template, you can define custom `Pass` classes in C++.
 
 For authoring PassTemplates, read the [Authoring PassTemplates](#authoring-a-passtemplate) section below. 

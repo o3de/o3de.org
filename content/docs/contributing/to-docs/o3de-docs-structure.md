@@ -5,10 +5,7 @@ description: A guide to the Open 3D Engine (O3DE) documentation repository struc
 weight: 400
 ---
 
-{{< preview-new >}}
-
 There are many folders and files in the O3DE docs directory structure. If you are a new contributor, it can be a puzzle to sort out where to find or place topics and images that you'd like to contribute. The structure is easier to navigate when you understand two key high-level directories.
-
 
 * `/content/docs/`: The root directory of the Markdown (`.md`) files that make up the documentation for the various O3DE guides.
 
@@ -18,7 +15,6 @@ The overwhelming majority of content contributions will reside somewhere in the 
 
 {{< note >}}
 The directory structure below `/static/images/` mirrors the directory structure below `/content/docs/`. When adding images to your topics, make sure to place them in the appropriate directory. In some instances, you might need to create new directories in `/static/images/` to replicate the structure of `/content/docs/`.
-
 {{< /note >}}
 
 In the structure below `/content/docs/` and `/static/images/`, directories map to the various O3DE documentation guides. You will most likely be interested in just a few specific areas. These areas of interest are highlighted in the diagram below:

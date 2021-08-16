@@ -5,8 +5,6 @@ toc: false
 weight: 500
 ---
 
-{{< preview-new >}}
-
 This section contains technical details about the shader system in the Atom Renderer.
 
 ## Contents

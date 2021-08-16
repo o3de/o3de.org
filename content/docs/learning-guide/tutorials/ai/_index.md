@@ -3,8 +3,8 @@ linkTitle: Kythera AI
 title: Using Kythera AI in Open 3D Engine
 description: The Kythera AI Gem provides support for Kythera AI features in Open 3D Engine (O3DE), and includes a demo project, levels, and assets that demonstrate the features of Kythera AI.
 weight: 100
-menu_uuid: Kythera AI
 ---
+
  ![Kythera AI Logo](/images/user-guide/gems/kythera-ai/kythera-ai-logo-white-800px.png)
  ![Kythera AI in Open 3D Engine](/images/user-guide/gems/kythera-ai/kythera-ai-level.jpg)
 

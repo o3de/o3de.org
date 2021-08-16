@@ -1,4 +1,5 @@
 ---
+linktitle: Project Configuration
 title: Project Configuration
 description: Learn the basics of project configuration in Open 3D Engine, and get the details on the Project Manager and O3DE CLI tools.
 weight: 100
@@ -12,8 +13,9 @@ To create and manage projects, you can use either the GUI-based **Project Manage
 | - | - |
 | [Understanding project.json](#understanding-project-json) | A detailed look at the fields in the project manifest file, `project.json`. |
 | [Adding and Removing Gems](add-remove-gems/) | Learn how to add and remove Gems in your project. | 
-| [Registering Gems](register-gems/) | Learn how to register Gems that are provided outside of the O3DE source. | 
-| [Troubleshooting](troubleshooting/) | A troubleshooting guide for project configuration. |
+| [Registering Gems](register-gems/) | Learn how to register external Gems from sources outside of O3DE. |
+| [O3DE CLI Reference](cli-reference/) | A command line interface (CLI) reference for the `o3de` Python script.
+| [Troubleshooting](troubleshooting/) | Troubleshoot common issues that you might encounter during project configuration. |
 
 ## Understanding `project.json` {#understanding-project-json}
 
