@@ -218,17 +218,17 @@ Choose one of the following build types based on the primary focus of your devel
 {{% /tab %}}
 {{% tab name="Pre-built SDK engine" %}}
 
-1. Create a package directory in a writeable location. The directory `C:\o3de-packages` is used in the examples that follow.
+1. Create a package directory in a writeable location. The following examples use the directory `C:\o3de-packages`.
 
     ```cmd
     mkdir C:\o3de-packages
     ```
 
-    This directory will be used by the O3DE package downloader to retrieve external libraries needed for the engine.
+    The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
 
-1. Get the Python runtime. The Python runtime is not included in the GitHub repo. It is required by the `o3de` script, which you will use to perform common command line functions. This script requires **CMake** to be installed and accessible on your device's path. If you have not installed CMake, or get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
+1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
 
-    Open a command prompt to the directory where you set up O3DE and run the `get_python` script.
+    Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
 
     ```cmd
     python\get_python.bat
@@ -240,14 +240,14 @@ Choose one of the following build types based on the primary focus of your devel
     cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
     ```
 
-    There are several noteworthy custom definitions (`-D`) specified in the preceding command. All are optional but recommended in this example.
+    The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
-    * `LY_UNITY_BUILD` : Unity builds are recommended in many cases for improved build performance. If you encounter a build error, disable unity builds to help debug the problem.
+    * `LY_UNITY_BUILD` : We recommend Unity builds in many cases for improved build performance. If you encounter a build error, disable Unity builds to help debug the problem.
     * `LY_VERSION_ENGINE_NAME` : The name you want to give the engine. Giving the install layout a different engine name ("o3de-install") than the source engine ("o3de") enables useful side-by-side options.
     * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Windows/profile`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Windows/profile`.
 
-1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The `profile` build configuration is shown in this example.
+1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
     ```cmd
     cmake --build build/windows_vs2019 --target INSTALL --config profile -- /m
