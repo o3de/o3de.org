@@ -19,6 +19,11 @@ The following workflow will describe the steps to build and deploy a specific pr
 8.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system (to D:\\github\\o3de)
 9.  [Atom Sample Viewer](https://github.com/o3de/o3de-atom-sampleviewer.git) has been cloned locally on the system (to D:\\github\\o3de-atom-sampleviewer)
 
+{{< note >}}
+This example workflow represents the 'Source Engine' workflow when setting up [O3DE from GitHub](docs/welcome-guide/setup/setup-from-github)
+{{< /note >}}
+
+
 ## **Sample Environment and Settings**
 
 To simplify the different paths and values that are fed through out the process, we will use environment variables to control the settings.
@@ -30,10 +35,6 @@ SET O3DE_ENGINE_PATH=D:\github\o3de
 SET O3DE_PROJECT_PATH=D:\github\o3de-atom-sampleviewer
 SET O3DE_BUILD_ROOT=D:\build_asv
 ```
-
-{{< note >}}
-Note that the `O3DE_PROJECT_PATH` can be changed to different projects
-{{< /note >}}
 
 **Key Store Settings**
 
@@ -65,43 +66,40 @@ The `O3DE_ANDROID_SDK_PATH` represents a specific location based on where you sp
 
 ## Steps
 
-**Step 1. Register the engine and project paths**
+{{< note >}}
+Steps 1-3 is only needed if the windows build of O3DE has not been completed yet. These steps describe the minimal build necessary in order to process assets for Android and the game project.
+{{< /note >}}
 
-```
 
-cd %O3DE_ENGINE_PATH%
-
-%O3DE_ENGINE_PATH%\scripts\o3de.bat register -ep %O3DE_ENGINE_PATH%
-
-%O3DE_ENGINE_PATH%\scripts\o3de.bat register -pp %O3DE_PROJECT_PATH%
-
-```
-
-**Step 2. Generate the cmake build directory for windows / vs2019 (for the android assets)**
+**Step 1. Generate the cmake build directory for windows / vs2019 (for the android assets)**
 
 ```
 cmake -B %O3DE_BUILD_ROOT%\windows -S %O3DE_ENGINE_PATH% -G"Visual Studio 16 2019" -DLY_PROJECTS=%O3DE_PROJECT_PATH% -DLY_UNITY_BUILD=ON
 ```
 
-**Step 3. Build the Asset Processor Batch project in profile mode to process the assets**
+**Step 2. Build the Asset Processor Batch project in profile mode to process the assets**
 
 ```
 cmake --build %O3DE_BUILD_ROOT%\windows --config profile --target AssetProcessorBatch -- /m /nologo
 ```
 
-**Step 4. Run Asset Processor Batch for android and Atom Sample Viewer**
+{{< note >}}
+This step will only build 'AssetProcessorBatch' and the necessary dependent modules. You can alternatively build the entire suite of tools, libraries, etc for windows by replacing `AssetProcessorBatch` with `ALL_BUILD`, or alternatively build from Visual Studio directly.
+{{< /note >}}
+
+**Step 3. Run Asset Processor Batch for android and Atom Sample Viewer**
 
 ```
 %O3DE_BUILD_ROOT%\windows\bin\profile\AssetProcessorBatch.exe  --platforms=android --project-path %O3DE_PROJECT_PATH%
 ```
 
-**Step 5. Generate a key store to be able to self-sign an APK**
+**Step 4. Generate a key store to be able to self-sign an APK**
 
 ```
 keytool -genkey -keystore %O3DE_ANDROID_SIGNCONFIG_FILE% -storepass %O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD% -alias %O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS% -keypass %O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD% -keyalg RSA -keysize %O3DE_ANDROID_SIGNCONFIG_KEY_SIZE% -validity %O3DE_ANDROID_SIGNCONFIG_VALIDITY_DAYS% -dname %O3DE_ANDROID_DN%
 ```
 
-**Step 6. Generate the android project**
+**Step 5. Generate the android project**
 
 ```
 %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION%  --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE% --signconfig-store-file %O3DE_ANDROID_SIGNCONFIG_FILE% --signconfig-store-password %O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD% --signconfig-key-alias %O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS% --signconfig-key-password %O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD% --overwrite-existing
@@ -111,7 +109,7 @@ keytool -genkey -keystore %O3DE_ANDROID_SIGNCONFIG_FILE% -storepass %O3DE_ANDROI
 At this point, you can alternatively open the folder %O3DE_BUILD_ROOT%\android directly in Android Studio and build the APK from there instead of using command line in the next step.
 {{< /note >}}
 
-**Step 7. Build the android project**
+**Step 6. Build the android project**
 
 ```
 cd %O3DE_BUILD_ROOT%\android
@@ -120,7 +118,7 @@ gradlew assembleProfile
 ```
 
 
-**Step 8. Deploy to the android device**
+**Step 7. Deploy to the android device**
 
 ```
 %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\deploy_android.py --build-dir %O3DE_BUILD_ROOT%\android --configuration profile --clean -t %O3DE_ANDROID_DEPLOY_TYPE%
