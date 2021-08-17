@@ -48,6 +48,10 @@ For complete reference on the `commit` command, refer to the [Git commit referen
 
 For more information on staging and committing files with Git, refer to [Git Basics - Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
 
+{{< important >}}
+If you used the web UI to make your commit vs the commandline and your PR fails the DCO check, you may need to use `username@users.noreply.github.com` as the email in the `Signed-off-by:` commit message line.
+{{< /important >}}
+
 ### Create a PR
 
 PRs are created in the GitHub web interface from your branch. Go to your fork on GitHub and perform the steps below.
