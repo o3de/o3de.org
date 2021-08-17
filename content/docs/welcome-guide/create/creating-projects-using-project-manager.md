@@ -40,7 +40,7 @@ This tutorial uses the following project name and directories in the examples:
     ![Launch o3de.exe from <INSTALL_DIRECTORY>/bin/profile](/images/welcome-guide/project-manager-location.png)
 
     {{< important >}}
-If you built the engine from source using the INSTALL target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile`.
+If you built the engine from source using the `INSTALL` target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile`.
     {{< /important >}}
 
 ## Configure the engine settings
@@ -51,7 +51,7 @@ If this is the first time you've used Project Manager to create a project, then 
 
 1. Review the default locations and update as desired, taking into consideration that the **3rd Party Software Folder** and a typical project located in the **Default Projects Folder** each require 10 - 20 GB of free space on a computer. O3DE uses your user directory in all the locations by default.
 
-    If you setup and built O3DE from GitHub, you can set the **3rd Party Software Folder** to the same packages directory you created when you built the engine (for example, `C:\o3de-packages`), to avoid downloading the same packages again when the project builds.
+    If you set up and built O3DE from GitHub, you can set the **3rd Party Software Folder** to the same packages directory you created when you built the engine (for example, `C:\o3de-packages`), to avoid downloading the same packages again when the project builds.
 
     ![Default Projects Folder and 3rd Party Software Folder updated in engine settings](/images/welcome-guide/project-manager-engine-settings-adjusted.png)
 

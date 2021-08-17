@@ -14,7 +14,7 @@ The instructions here and in the video guide you through the following steps:
 * Create Visual Studio project files in your O3DE project directory.
 * Build your O3DE project.
 
-At the end of the tutorial, you'll have a new O3DE project based on the **standard** template (the default project template).
+At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template.
 
 {{< youtube id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}
 
