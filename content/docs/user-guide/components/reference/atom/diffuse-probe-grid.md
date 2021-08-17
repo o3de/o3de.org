@@ -5,7 +5,7 @@ description: "Open 3D Engine (O3DE) Diffuse Probe Grid component reference."
 toc: true
 ---
 
-The **Diffuse Probe Grid** component creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. The probe stores lighting information at each point of intersection between the ray and the mesh. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
+The **Diffuse Probe Grid** component creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. At each point of intersection between the ray and the surrounding geometry, the probe stores lighting information. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
 
 ## Provider
 
