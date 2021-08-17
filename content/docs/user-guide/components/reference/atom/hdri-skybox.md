@@ -12,7 +12,7 @@ The **HDRi Skybox** component creates a skybox with an HDR image in your scene.
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

@@ -12,7 +12,7 @@ The **Global Skylight (IBL)** component creates an image-based global illuminati
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

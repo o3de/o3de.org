@@ -12,7 +12,7 @@ The **Deferred Fog** component creates a screen space fog effect that can be use
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

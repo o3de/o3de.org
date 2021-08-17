@@ -11,7 +11,7 @@ The **Mesh** component specifies a model to render in the scene. Model assets ar
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

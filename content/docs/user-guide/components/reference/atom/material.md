@@ -12,7 +12,7 @@ The **Material** component adds a material on the object's mesh. The material ca
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

@@ -12,7 +12,7 @@ The **Radius Weight Modifier** component modifies post-processing effects' (Post
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

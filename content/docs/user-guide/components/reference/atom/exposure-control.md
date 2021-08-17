@@ -12,7 +12,7 @@ The **Exposure Control** component adjusts the amount of light the camera expose
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

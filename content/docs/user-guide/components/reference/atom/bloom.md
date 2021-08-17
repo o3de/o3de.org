@@ -12,7 +12,7 @@ The **Bloom component** simulates real-world light bleeding, or glow.
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties
