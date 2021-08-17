@@ -5,8 +5,6 @@ description: 'Open 3D Engine (O3DE) Grid component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Grid** component adds a grid to the scene. You can customize the appearance of the grid, such as its colors, spacing, and size.
 
 

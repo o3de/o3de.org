@@ -5,8 +5,6 @@ description: 'Open 3D Engine (O3DE) Physical Sky component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Physical Sky** component adjusts the physical environment of the scene, such as the sky, sun, and fog.
 
 

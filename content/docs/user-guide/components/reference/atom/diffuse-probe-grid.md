@@ -5,8 +5,6 @@ description: "Open 3D Engine (O3DE) Diffuse Probe Grid component reference."
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Diffuse Probe Grid component** creates a volume of light probes that provide diffuse global illumination within the specified area.
 
 

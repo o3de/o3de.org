@@ -5,8 +5,6 @@ description: "Open 3D Engine (O3DE) Bloom component reference."
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Bloom component** simulates real-world light bleeding, or glow.
 
 

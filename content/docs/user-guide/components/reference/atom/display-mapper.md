@@ -5,8 +5,6 @@ description: 'Open 3D Engine (O3DE) Display Mapper component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Display Mapper** component provides settings to configure tone mapping and color grading.
 
 

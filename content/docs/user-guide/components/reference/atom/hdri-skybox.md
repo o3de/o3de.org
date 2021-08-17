@@ -5,8 +5,6 @@ description: 'Open 3D Engine (O3DE) HDRi Skybox component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **HDRi Skybox** component creates a skybox with an HDR image in your scene. 
 
 
