@@ -5,13 +5,11 @@ description: 'Open 3D Engine (O3DE) Entity Reference component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Entity Reference** component allows you to provide an entity with references to other entities
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties
