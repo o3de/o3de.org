@@ -1,6 +1,6 @@
 ---
 title: Glossary
-weight: 1000
+weight: 100
 toc: true
 ---
 
