@@ -28,7 +28,7 @@ The [ninja](https://ninja-build.org/) build system is used by CMake to build the
 ## **Optional Software**
 
 ### **Android Studio**
-Android Studio is the IDE commonly used in conjunction with Gradle to develop and build Android Apps. While Android Studio itself isn't absolutely necessary, it provides the mechanism to setup and download the required Android SDK for the build process. While its possible to just download the command line tools by itself, the current O3DE script that generates the Android Gradle project does not yet support this method. Download the latest version from [https://developer.android.com/studio](https://developer.android.com/studio) and run through the installation process.
+Android Studio is the IDE commonly used in conjunction with Gradle to develop and build Android Apps. Android Studio provides the mechanism to setup and download the required Android SDK for the build process. Download the latest version from [https://developer.android.com/studio](https://developer.android.com/studio) and run through the installation process.
 
 
 ## **Setup Requirements**
@@ -37,8 +37,6 @@ Android Studio is the IDE commonly used in conjunction with Gradle to develop an
 The Android SDK will be configured as part of the intial Android Studio experience. When you start Android Studio and have not setup the Android SDK yet, it will guide you through the steps to download and install it and at least one SDK platform.
 
 Keep track of the location where you installed the Android SDK, as you will need it later to generate an Android project for O3DE. 
-
-It is also possible to just download the Android SDK manager without Android Studio, but in order to do so will require that the command line tool package be placed in a subfolder called 'tools' under the root of a local android sdk folder.
 
 ### **Prerequisite Packages installation**
 

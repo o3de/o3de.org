@@ -48,6 +48,11 @@ set O3DE_ANDROID_SIGNCONFIG_VALIDITY_DAYS=10000
 set O3DE_ANDROID_DN="cn=atom-sample-viewer, ou=o3de, o=LF, c=US"
 ```
 
+{{< note >}}
+While have signing keys is required to deploy to an android device, this step is optional. If you already have an existing JKS file generated earlier, and know the values for the store password, key password, alias, etc, then they can be used in place of these values. 
+{{< /note >}}
+
+
 **Android Project Generation Settings**
 
 ```
@@ -99,6 +104,11 @@ This step will only build 'AssetProcessorBatch' and the necessary dependent modu
 keytool -genkey -keystore %O3DE_ANDROID_SIGNCONFIG_FILE% -storepass %O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD% -alias %O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS% -keypass %O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD% -keyalg RSA -keysize %O3DE_ANDROID_SIGNCONFIG_KEY_SIZE% -validity %O3DE_ANDROID_SIGNCONFIG_VALIDITY_DAYS% -dname %O3DE_ANDROID_DN%
 ```
 
+{{< note >}}
+Even though a signing key is required for the project in order to deploy, it does not necessary to provide this at project creation. This can also be achieved through Android Studio after project creation. If this is the case, then the generate android command in the following step can omit all of the --signconfig-* arguments, and the key store settings can be created through Android Studio after opening the generated android project.
+{{< /note >}}
+
+
 **Step 5. Generate the android project**
 
 ```
@@ -123,4 +133,7 @@ gradlew assembleProfile
 ```
 %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\deploy_android.py --build-dir %O3DE_BUILD_ROOT%\android --configuration profile --clean -t %O3DE_ANDROID_DEPLOY_TYPE%
 ```
+{{< note >}}
+The deployment tool will rely on android's adb tool to perform the deployment. The target device must be placed in development mode, and connected to USB. Follow the [Android instructions](https://developer.android.com/studio/debug/dev-options) on how to do this. You may be ask to trust the host machine when deploying, and the deployment process will be blocked until you enable the device to trust the host machine.
+{{< /note >}}
 
