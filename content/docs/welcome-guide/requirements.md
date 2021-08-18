@@ -12,19 +12,22 @@ Open 3D Engine (O3DE) has a minimum set of hardware and software requirements fo
 
 Minimum hardware requirements for development include the following:
 
++ Windows 10 64-bit version 1809 or Ubuntu 18.04 LTS
 + Quad-core Intel or AMD processor, 2.5 GHz or faster
 + 8 GB RAM
-+ DirectX 12 or Vulkan-compatible video card with 2 GB VRAM minimum
++ DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum
   + 4 GB VRAM recommended
   + NVIDIA GeForce GTX 1060 or better, driver version 465.89 or later recommended
   + AMD Radeon Pro 560 or better
   + Intel HD 630 or better
+  + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
 + 40 - 100 GB of free disk space
 + 1366 x 768 px screen resolution
 
 {{< note >}}
 RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.
 {{< /note >}}
+
 
 ## Software prerequisites
 
@@ -42,6 +45,11 @@ See the following sections for additional configuration instructions.
 {{< note >}}
 Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
 {{< /note >}}
+
+{{< note >}}
+Developing with O3DE on macOS is an experimental feature. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
+{{< /note >}}
+
 
 ## Software configuration
 
