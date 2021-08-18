@@ -4,8 +4,6 @@ description: ' Use the Color Correction node in O3DE''s <guilabel>Track View</gu
 title: Color Correction Node
 ---
 
-{{< preview-migrated >}}
-
 You use the **Color Correction** node to change the CMYK, brightness, contrast, saturation, and hue in a scene. Most color correction properties don't update smoothly. For this reason, you should hide stronger color correction changes should by cuts or fading between scenes.
 
 **To add a Color Correction node in the Track View**

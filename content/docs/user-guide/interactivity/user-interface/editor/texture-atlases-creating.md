@@ -3,8 +3,6 @@ description: null
 title: Creating a Texture Atlas
 ---
 
-{{< preview-migrated >}}
-
 To create a texture atlas, you create a texture atlas \(`.texatlas`\) file. A texture atlas file is a text file that specifies the image files to be added to the texture atlas. The Asset Processor automatically builds files that have the `.texatlas` extension.
 
 ## Texture Atlas File Format 

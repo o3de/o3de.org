@@ -3,8 +3,6 @@ description: ' Use Animation Editor components to animate your entities in Open 
 title: 'Animation Editor Components'
 ---
 
-{{< preview-migrated >}}
-
 You can add the following **Animation Editor** components to an entity. You can then specify the actor file, animation graph file, the motion file, or attachment.
 
 For more information, see the following components:

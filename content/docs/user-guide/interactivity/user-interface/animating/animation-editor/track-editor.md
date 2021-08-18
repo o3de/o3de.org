@@ -4,8 +4,6 @@ description: ' Use the Animation Editor''s Track Editor to preview an animation,
 title: Using the Track Editor
 ---
 
-{{< preview-migrated >}}
-
 The **Track Editor** displays all the tracks in your current animation sequence. The **Track Editor** enables you to do the following:
 + Move, delete, copy, and paste keys
 + Change the timeline of the animation

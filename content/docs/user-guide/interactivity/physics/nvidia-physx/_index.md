@@ -5,8 +5,6 @@ title: Simulating physics behavior with the PhysX system
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 O3DE's PhysX system acts upon entities to create realistic physical effects such as collision detection and rigid body dynamics simulation. 
 
 **Topics**

@@ -4,8 +4,6 @@ title: Debugging PhysX
 weight: 1000
 ---
 
-{{< preview-migrated >}}
-
 The PhysX system has the following features that you can use to debug issues.
 
 **Note**

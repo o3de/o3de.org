@@ -4,8 +4,6 @@ description: ' Use custom state machines to control motions in the Animation Edi
 title: Customizing State Machine Routing with Sparse Motion Sets
 ---
 
-{{< preview-migrated >}}
-
 You might run into a case where you have different characters that don't have the exact same motions as the character for which you created the animation graph. Instead of duplicating large parts or creating new animation graphs for different characters, you can share the same animation graph for all your characters.
 
 You can allow or deny transitions and routes to motion states in a state machine, based on the existence of the given motion entry.

@@ -4,8 +4,6 @@ description: ' Use a check box component to make an element behave like a check 
 title: Checkbox
 ---
 
-{{< preview-migrated >}}
-
 You can use the **Checkbox** component to make an element behave like a check box. This component is typically applied to an element with two visual child elements: One element appears when the check box is selected and another appears when the check box is cleared.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-checkbox-components.png)

@@ -4,8 +4,6 @@ description: ' Serialize objects from the O3DE engine to JSON for processing by 
 title: Object serialization to JSON format
 ---
 
-{{< preview-migrated >}}
-
  Objects can be serialized out to the [JSON format](http://json.org). JSON is a machine-readable format that's also designed to be easy for humans to read and edit, so that contributors can make small changes to data without requiring specialized tools or a detailed XML schema. Many programming languages also offer robust and easy to use support for JSON data, making the development of build and design tools for supporting your project outside of the O3DE editor easy.
 
  In O3DE, using the JSON serialization format also offers the following benefits:

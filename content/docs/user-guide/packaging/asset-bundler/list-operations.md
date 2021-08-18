@@ -5,8 +5,6 @@ title: 'Asset List Comparison Operations'
 weight: 500
 ---
 
-{{< preview-migrated >}}
-
 Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files. The following operations are available to use from the Asset Bundler tool:
 + [Delta Comparison Operation](#asset-bundler-list-operations-delta)
 + [Union Comparison Operation](#asset-bundler-list-operations-union)

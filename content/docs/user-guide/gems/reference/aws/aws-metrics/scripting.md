@@ -6,8 +6,6 @@ weight: 300
 toc: true
 ---
 
-{{< preview-new >}}
-
 With the AWS Metrics Gem set up, clients can generate and submit metrics events using Script Canvas, Lua, or C++. The following examples demonstrate using Script Canvas and Lua to script behavior. Refer to [Using the C++ API with the AWS Metrics Gem](./cpp-api.md) for C++ examples.
 
 ## Script Canvas

@@ -5,8 +5,6 @@ title: Using the UI Editor
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 You can use the **UI Editor** to create, customize, and animate various game user interface elements and components such as menus, buttons, and heads-up displays (HUDs).
 
 The **UI Editor** consists of the following:

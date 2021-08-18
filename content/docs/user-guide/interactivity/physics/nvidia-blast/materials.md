@@ -5,8 +5,6 @@ title: Specify destruction properties with Blast materials
 weight: 600
 ---
 
-{{< preview-migrated >}}
-
 
 The chunks of blast assets are held together by bonds. Blast materials determine what types of forces can damage the bonds, the minimum amount of force that can damage the bonds, and how much damage the bonds can sustain before breaking.
 

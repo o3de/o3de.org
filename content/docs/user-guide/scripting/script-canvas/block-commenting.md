@@ -3,8 +3,6 @@ description: ' Use the Open 3D Engine Script Canvas editor to add comments to yo
 title: Commenting Nodes
 ---
 
-{{< preview-migrated >}}
-
 You can add comments to your script to describe how it works.
 
 **Contents**

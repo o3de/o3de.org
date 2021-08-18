@@ -4,8 +4,6 @@ title: Script Canvas nodes for NVIDIA Blast
 weight: 800
 ---
 
-{{< preview-migrated >}}
-
 The NVIDIA Blast gem includes several **Script Canvas** nodes to script destructible assets. The nodes can be found in the **Blast** group in **Script Canvas**.
 
 **Contents**

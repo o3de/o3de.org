@@ -4,8 +4,6 @@ description: ' Learn about the relationship between Script Canvas and the behavi
 title: 'Script Canvas and the Behavior Context'
 ---
 
-{{< preview-migrated >}}
-
 **Topics**
 + [The Light Component and Script Canvas](#script-canvas-behavior-context-light-component)
 + [Objects: The PhysicsComponent Example](#script-canvas-behavior-context-physicscomponent)

@@ -5,8 +5,6 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 Once the AWS Metrics resources have been deployed, you can use features such as real-time analytics and batch analytics.
 
 ## Using real-time analytics

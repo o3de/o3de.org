@@ -4,8 +4,6 @@ description: ' Use a RadioButtonGroup component to manage radio button groups in
 title: RadioButtonGroup
 ---
 
-{{< preview-migrated >}}
-
 You can use the **RadioButtonGroup** component to manage radio buttons. This component handles selecting and clearing the radio buttons in the group when appropriate. It also ensures that only one radio button is selected at one time. You typically use this component on an element with children radio buttons, which are part of the radio button group.
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-radiobuttongroup.png)

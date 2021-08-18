@@ -4,8 +4,6 @@ description: ' Use material nodes in O3DE Editor''s <guilabel>Track View</guilab
 title: Material Node
 ---
 
-{{< preview-migrated >}}
-
 **Material** nodes help you animate commonly used material properties that you would normally set in the **Material Editor**. You can add **Material** nodes through a sequence or from the **Director** node.
 
 **Note**

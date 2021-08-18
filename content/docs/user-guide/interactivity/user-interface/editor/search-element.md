@@ -4,8 +4,6 @@ description: ' Search for UI elements or their components in Open 3D Engine''s U
 title: Searching for UI Elements
 ---
 
-{{< preview-migrated >}}
-
 You can find UI elements by filtering by their name or their attached components. The **Find Element** tool hierarchically displays UI elements for the active UI canvas.
 
 ![\[The UI Editor's Find Element tool.\]](/images/user-guide/game_ui_editor/ui-editor-search-element-tool.png)

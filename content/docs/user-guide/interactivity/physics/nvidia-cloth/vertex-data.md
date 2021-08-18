@@ -5,8 +5,6 @@ title: Per vertex properties for cloth
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
 Cloth properties can be set per cloth particle using the vertex color tools in your content creation application. In the **Cloth** modifier, in **FBX Settings**, you can choose which vertex color stream and which color channel in the stream represents each property. You can use a different stream for each property, or combine multiple properties into a single vertex color stream by storing the properties in different color channels.
 
 **Inverse Mass**

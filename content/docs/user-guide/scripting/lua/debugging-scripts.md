@@ -3,8 +3,6 @@ description: ' Learn about debugging Lua scripts in Open 3D Engine. '
 title: ' Debugging Lua scripts'
 ---
 
-{{< preview-migrated >}}
-
 O3DE provides Lua scripts with several functions to make debugging easier.
 
 ## Logging to the Console 

@@ -4,8 +4,6 @@ description: ' Use the CPU profiler in Open 3D Engine to examine CPU usage in yo
 title: Using the Profiler for CPU Usage
 ---
 
-{{< preview-migrated >}}
-
 The CPU profiler gathers usage statistics about how long a function or method executed, how many times it was executed, who called it, and how much of a frame was spent on it. You can combine this information to get a systemwide view of usage, or isolate particular systems by filtering for specific threads.
 
 **To use the CPU profiler**

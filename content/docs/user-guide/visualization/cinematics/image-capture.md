@@ -4,8 +4,6 @@ description: ' Capture image frames in Open 3D Engine with render output, a capt
 title: Capturing Image Frames
 ---
 
-{{< preview-migrated >}}
-
 You can capture image frames using render output, a capture track, or console variables.
 
 **Topics**

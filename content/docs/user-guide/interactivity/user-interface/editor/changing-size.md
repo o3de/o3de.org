@@ -3,8 +3,6 @@ description:  Change your game UI canvas size to visualize how your canvas might
 title: Changing the Canvas Size
 ---
 
-{{< preview-migrated >}}
-
 Change your game UI canvas size to visualize how your canvas might look on other displays and devices of varying resolutions. The size at which you save your canvas is the reference size that is used when you perform the **Scale to Device** action.
 
 **To change the canvas size**

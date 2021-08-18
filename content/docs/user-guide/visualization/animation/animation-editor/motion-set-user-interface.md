@@ -4,8 +4,6 @@ description: ' Learn more about the user interface for motion sets in the Animat
 title: Motion Sets Interface
 ---
 
-{{< preview-migrated >}}
-
 Use the **Motion Set** pane to create motion set files and add motion files to it.
 
 ![\[Create and manage motion sets in the Animation Editor.\]](/images/user-guide/actor-animation/animation-editor-motion-set-user-interface.png)

@@ -3,8 +3,6 @@ description: ' Debug HPHA allocator memory issues in Open 3D Engine. '
 title: HPHA Memory Debugging
 ---
 
-{{< preview-migrated >}}
-
 The HPHA memory allocator provides memory debugging features to detect and trace common memory issues.
 
 ## Enabling HPHA Memory Debugging 
