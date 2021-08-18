@@ -5,7 +5,7 @@ description: An overview of Open 3D Engine support for development for Android.
 weight: 200
 ---
 
-O3DE projects for Android relies on the gradle build system to build the final APK required to launch and run O3DE projects. The gradle build scripts themselves uses cmake as a subset of the build process to compile the native C++ code, while gradle will also handle the build of the android application (java) and construction and package creation of the final APK and assets. 
+**Open 3D Engine (O3DE)** projects for Android rely on the Gradle build system to build the final APK that launches and runs O3DE projects. O3DE provides the **Android Project Generation script**, which generates the Gradle build scripts that you need to build your O3DE projects for Android. The Gradle build scripts use CMake to compile the native C++ code, compile and build the Android application (Java), and construct and package the final APK and project assets. 
 
 Because of this android projects require a custom script to generate the project beyond what cmake does by itself.
 
