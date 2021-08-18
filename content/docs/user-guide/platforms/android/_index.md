@@ -10,7 +10,7 @@ weight: 200
 
 ## **Prerequisite Software and Packages**
 
-### **Java Development Kit (JDK)**
+### Java Development Kit (JDK)
 The latest version of the Java Development Kit is needed to both compile the android java source for the project as well as to create a Java Key Storage (JKS) files used by the Android SDK to sign the APK.
 
 ### **Gradle**
