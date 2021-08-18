@@ -5,14 +5,12 @@ description: 'Open 3D Engine (O3DE) Global Skylight (IBL) component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Global Skylight (IBL)** component creates an image-based global illumination effect that calculates light for a scene using an HDR skybox image. 
 
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

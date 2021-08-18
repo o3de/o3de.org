@@ -47,8 +47,9 @@ Microsoft offers **Visual Studio Community** free to individual developers. For 
 {{< /note >}}
 
 {{< note >}}
-Developing with O3DE on macOS is an experimental feature. At a minimum, you need macOS Catalina, XCode 11, and a Metal-compatible video card that meets the hardware requirements above. Apple M1 processor is not supported.
+Developing with O3DE on macOS is an experimental feature. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
 {{< /note >}}
+
 
 ## Software configuration
 

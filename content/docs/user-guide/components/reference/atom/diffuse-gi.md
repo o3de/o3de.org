@@ -11,13 +11,16 @@ The **Diffuse Global Illumination** component is a Level component that controls
 You must have a GPU with support for DirectX Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
 {{< /note >}}
 
+
 ## Provider
 
 [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
+
 ## Dependencies
 
 None
+
 
 ## Properties
 

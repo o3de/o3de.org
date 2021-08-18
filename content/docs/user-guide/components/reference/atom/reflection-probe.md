@@ -23,13 +23,13 @@ The **Reflection Probe** creates specular reflections in the environment around 
 ![Reflection Probe component properties](/images/user-guide/components/reference/atom/reflection-probe-component-ui.png)
  
 
-### Cubemap Bake
+### Cubemap Bake properties
 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Bake Reflection Probe** | Bakes the surrounding environment to a cubemap. | - | - |
 
-### Inner Extents
+### Inner Extents properties
 
 | Property | Description | Values | Default |
 |-|-|-|-|
@@ -37,14 +37,14 @@ The **Reflection Probe** creates specular reflections in the environment around 
 | **Length** | The length of the reflection probe's inner volume. The length is dependent on the Box Shape component's dimension along the y-axis. | `0` to the Box Shape component's `Dimensions`-`Y` property| The value of the Box Shape component's `Dimensions`-`Y` property. |
 | **Width** | The width of the reflection probe's inner volume. The width is dependent on the Box Shape component's dimension along the x-axis. | `0` to the Box Shape component's `Dimensions`-`X` property| The value of the Box Shape component's `Dimensions`-`X` property. |
 
-### Settings
+### Settings properties
 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Parallax Correction** | Corrects the reflection by adjusting an offset from the capture position. | Boolean | `Enabled` |
 | **Show Visualization** |  Shows a sphere to visualize the probe. |  Boolean | `Enabled` |
 
-### Cubemap
+### Cubemap properties
 
 | Property | Description | Values | Default |
 |-|-|-|-|

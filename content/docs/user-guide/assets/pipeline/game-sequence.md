@@ -5,8 +5,6 @@ title: Game Startup Sequence
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 Compiled O3DE games start up in the following sequence:
 
 1. The game reads the `bootstrap.cfg` file, which must contain the following information at a minimum:
