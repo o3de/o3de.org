@@ -4,8 +4,6 @@ description: Use a Text component in Open 3D Engine's UI Editor to add a text
 title: Text
 ---
 
-{{< preview-migrated >}}
-
 You can use a **Text** component to add a text string to an element.  Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Text** component.
 
 

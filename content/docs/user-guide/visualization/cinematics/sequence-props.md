@@ -3,8 +3,6 @@ description: ' Set track view sequence properties in the <guilabel>Track View</g
 title: Setting Sequence Properties
 ---
 
-{{< preview-migrated >}}
-
 You can set properties in the Track View to control how the track view sequence appears. For example, you can specify **Autostart** so that the track view sequence starts playing as soon as the game starts.
 
 **To set sequence properties**

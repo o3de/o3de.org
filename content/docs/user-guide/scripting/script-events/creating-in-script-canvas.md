@@ -4,8 +4,6 @@ title: Creating Script Events in Script Canvas
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 In O3DE Editor, you can create script events by using the Asset Editor.
 
 **To create a script event**

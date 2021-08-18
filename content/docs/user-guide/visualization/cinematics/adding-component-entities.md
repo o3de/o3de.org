@@ -3,8 +3,6 @@ description: ' Add component entities in the <guilabel>Track View</guilabel> edi
 title: Adding Component Entities
 ---
 
-{{< preview-migrated >}}
-
 In the Track View, sequences determine what to animate based on what you add to the sequence. For example, if you want to animate an entity with an **Actor** or **Light** component, you can add that component entity to a sequence and then modify its properties.
 
 **To add a component entity to a sequence**

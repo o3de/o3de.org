@@ -5,8 +5,6 @@ weight: 200
 toc: true
 ---
 
-{{< preview-new >}}
-
 The AWS Client Auth Gem supports several preconfigured third-party authentication providers. You can also add support for a custom provider.
 
 To configure an authentication provider, you must do the following.

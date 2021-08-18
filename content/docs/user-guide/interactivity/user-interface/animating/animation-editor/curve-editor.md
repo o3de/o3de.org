@@ -4,8 +4,6 @@ description: ' Use the Curve Editor in Open 3D Engine''s UI Animation editor to 
 title: Using the Curve Editor in the UI Animation Editor.
 ---
 
-{{< preview-migrated >}}
-
 The ****Curve Editor**** displays animations as function curves. Each track's curves represent an animation of a property value (such as anchor, offset, color, or any property of a UI element).
 
 **The elements of a curve**

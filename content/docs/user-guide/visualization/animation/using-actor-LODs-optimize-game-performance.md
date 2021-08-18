@@ -3,8 +3,6 @@ description: ' Use levels of detail (LODs) to optimize game performance in Open 
 title: Using Actor LODs to Optimize Game Performance
 ---
 
-{{< preview-migrated >}}
-
 You can use levels of detail ([LODs](/docs/user-guide/appendix/glossary#lod)) to optimize the rendering performance of games. This is especially true for large in-game worlds, which are constrained by hardware, frame rate, and the real-time rendering limits. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera. To further reduce draw calls, lower LODs have multiple textures combined into one texture.
 
 ## Using Actor LODs in O3DE

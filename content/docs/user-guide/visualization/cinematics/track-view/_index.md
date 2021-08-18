@@ -4,8 +4,6 @@ description: ' Use the Track View editor to create and manage cinematic sequence
 title: Using the Track View Editor
 ---
 
-{{< preview-migrated >}}
-
 The Track View is the primary tool to create and manage cinematic sequences. A *[sequence](/docs/user-guide/appendix/glossary#sequence)* is the content generated from the Track View for cutscenes or other canned animation triggers. When you create a sequence, this creates a component entity in the level. The component entity stores all of the animation key data that you specified in the Track View.
 
 If you want to generate cutscenes for games or create a script to trigger an animation, you can use the Track View to control cameras, component entities, global variables in a level, and so on.

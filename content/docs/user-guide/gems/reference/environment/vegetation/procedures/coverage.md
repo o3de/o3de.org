@@ -3,8 +3,6 @@ description: ' Expand your vegetation to cover your level in Open 3D Engine. '
 title: Expanding Vegetation Coverage
 ---
 
-{{< preview-migrated >}}
-
 After you create a vegetation patch, you can expand it so that your vegetation covers the entire level.
 
 **To expand vegetation coverage**

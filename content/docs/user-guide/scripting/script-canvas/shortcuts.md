@@ -4,8 +4,6 @@ description: ' Learn keyboard and mouse shortcuts for the Script Canvas editor i
 title: 'Script Canvas Editor Shortcuts'
 ---
 
-{{< preview-migrated >}}
-
 The following table shows the keyboard shortcuts that you can use in the Script Canvas editor.
 
 

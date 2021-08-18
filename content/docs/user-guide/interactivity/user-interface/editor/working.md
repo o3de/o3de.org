@@ -4,8 +4,6 @@ description: Learn how to add and delete components, reference UI elements as co
 title: Working with UI Components
 ---
 
-{{< preview-migrated >}}
-
 You can use the **UI Editor** to add and delete components, create references to UI elements for component properties, and manage components.
 
 **Topics**

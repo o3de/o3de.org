@@ -4,8 +4,6 @@ description: ' Use cinematic lighting for track view sequences in the <guilabel>
 title: Adding Lighting
 ---
 
-{{< preview-migrated >}}
-
 You can set up a different lighting scenario in a sequence using light components and/or a time of day settings that are only triggered during the sequence. You can add light components to the sequence and then add the tracks that you want to animate. You can then set the [Console Variable Node](/docs/user-guide/visualization/cinematics/track-view/nodes-cvar.md) to specify the time of day settings.
 
 ##  

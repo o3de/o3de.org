@@ -5,8 +5,6 @@ description: ' Use the Simple Jack Locomotion sample level to learn how the O3DE
 title: Simple_JackLocomotion Sample
 ---
 
-{{< preview-migrated >}}
-
 This sample level showcases Jack the robot in a basic environment and demonstrates how the **Animation Editor** uses actors, motion sets, and animation graphs to control character behavior. Playable animations include idle, walk, run, and navigate.
 
 The Simple\_JackLocomotion sample level is located in the `\dev\SamplesProject\AnimationSamples` directory. The assets are located in the `\dev\SamplesProject\AnimationSamples\Simple_JackLocomotion` directory.

@@ -5,8 +5,6 @@ title: Using the Asset Validation Gem to Verify Seeds
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 After you've built a seed list but before you bundle, you can use the Asset Validation gem to verify that asset loads map back to seeds. The Asset Validation gem adds a set of seed-related commands to the O3DE console command window. You can use these commands to ensure that you have seeds for all assets that you want to bundle.
 
 One of these commands, *seedmode*, makes a seed mode active. When seed mode is active and an asset file loads, O3DE traverses the dependency graph from the newly loaded asset until it finds a seed for the asset. If it doesn't find a seed for the asset, an error message displays. It warns you that the loaded file won't be bundled if you try to bundle using the seeds that you provided for the current validation session.

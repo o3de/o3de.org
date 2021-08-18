@@ -3,8 +3,6 @@ description: ' Add colliders to actors in Open 3D Engine for NVIDIA Cloth simula
 title: Add Cloth Colliders to actors
 ---
 
-{{< preview-migrated >}}
-
 
 Applying cloth simulation to actors adds realism and dynamism in their every movement. Adding cloth colliders greatly enhances the effect. Cloth colliders can prevent cloth from penetrating into the meshes of the actor. To add cloth colliders, you must enable the NVIDIA Cloth Gem.
 

@@ -4,8 +4,6 @@ description: ' Use the DropdownOption component to make an element an option in 
 title: DropdownOption
 ---
 
-{{< preview-migrated >}}
-
 You can use the **DropdownOption** component to make an element an option in a drop-down menu. When using the **DropdownOption** component, note the following:
 + The **DropdownOption** is used along with the **Dropdown** component on an element.
 + The **DropdownOption** requires an interactive component, typically a **RadioButton** component so that only one option can be selected at any time in the drop-down menu.

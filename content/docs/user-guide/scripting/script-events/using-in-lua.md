@@ -4,8 +4,6 @@ title: Using Script Events in Lua
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
 Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
 
 **ScriptEvents\_Addressable.lua**

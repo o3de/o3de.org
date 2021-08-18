@@ -3,8 +3,6 @@ description: ' Use debug mode to refine the simulated object''s movement in Open
 title: 'Using Debug Mode to Refine the Simulation '
 ---
 
-{{< preview-migrated >}}
-
 In the following procedure, use the debug mode to refine the simulated object's movement.
 
 **To use debug mode for the simulation**

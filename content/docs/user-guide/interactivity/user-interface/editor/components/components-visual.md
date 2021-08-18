@@ -4,8 +4,6 @@ description: ' Use visual components (image or text) to give an element color an
 title: Visual Components
 ---
 
-{{< preview-migrated >}}
-
 You can add one visual component to an element: **Image**, **Particle Emitter**, or **Text**.
 
 **Topics**

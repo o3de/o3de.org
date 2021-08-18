@@ -3,8 +3,6 @@ description: ' Open 3D Engine''s UI Editor . '
 title: Transform2D Component
 ---
 
-{{< preview-migrated >}}
-
 The **Transform2D** component is automatically added to every UI element you create. This component defines the element's position, rotation, size, and scale.
 
 **Topics**
