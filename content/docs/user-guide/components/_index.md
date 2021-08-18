@@ -3,8 +3,6 @@ title: "Components"
 weight: 500
 ---
 
-{{< preview-new >}}
-
 | Topic | Description |
 | - | - | 
 | [Development](development) | A developer's guide for creating custom O3DE components in C++. | 
