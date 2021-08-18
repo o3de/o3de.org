@@ -1,6 +1,6 @@
 ---
 description: ' Debug and fix performance issues for Open 3D Engine. '
-title: Debugging Issues
+title: Debug CVARs
 ---
 
 O3DE provides the following built-in debugging and profiling tools that you can use to locate and fix performance issues.
