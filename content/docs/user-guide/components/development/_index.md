@@ -5,9 +5,8 @@ title: Programmer's Guide to Entities and Components
 weight: 200
 ---
 
-{{< note >}}
 This guide provides engine and game programmers with examples and best practices for creating and reflecting custom O3DE components in C++. For information on using the component entity system in O3DE Editor, see [Entity Inspector](/docs/user-guide/editor/entity-inspector).
-{{< /note >}}
+
 ## Topics
 
 + [Overview](/docs/user-guide/components/development/overview)

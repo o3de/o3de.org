@@ -4,8 +4,6 @@ title: Using Group Selections and Reference Spaces
 weight: 250
 ---
 
-{{< preview-migrated >}}
-
 In the viewport, you can select multiple entities. This is called a group selection. You can use the following shortcuts for group selection.
 
 | Shortcut | Description |
