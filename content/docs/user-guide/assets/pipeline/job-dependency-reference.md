@@ -4,8 +4,6 @@ title: Job Dependency for Asset Pipeline
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 Manage dependencies for assets so that Asset Pipeline processes them in the correct order.
 
 In Asset Pipeline, you create asset builders using the Asset Builder SDK. The Asset Builder SDK processes your custom asset-type source files into game-ready files. The Asset Builder SDK is a separate executable from Asset Processor..

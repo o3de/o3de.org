@@ -49,8 +49,9 @@ For complete reference on the `commit` command, refer to the [Git commit referen
 For more information on staging and committing files with Git, refer to [Git Basics - Recording Changes to the Repository](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository).
 
 {{< important >}}
-If you used the web UI to make your commit vs the commandline, your PR may fail the DCO check and you will need to add a `Signed-off-by:` line to your commit message. For GitHub accounts made prior to July 18, 2017, you need to use `username@users.noreply.github.com` as the email address. For accounts created after that date, you will need to use your GitHub-provided no-reply email address is a seven-digit ID number and your username in the form of `ID+username@users.noreply.github.com`.
-For more information regarding setting your commit email address, refer to the [Setting your commit email address instructions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address).
+If you used the web UI to make your commit vs the commandline, your PR may fail the DCO check and you will need to add a `Signed-off-by:` line to your commit
+message. For GitHub accounts made prior to July 18, 2017, you need to use `username@users.noreply.github.com` as the email address. For accounts created after that date, you will need to use your GitHub-provided no-reply email address is a seven-digit ID number and your username in the form of `ID+username@users.noreply.github.com`. For more information regarding setting your commit email address, refer to the [Setting your commit email address
+instructions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address).
 {{< /important >}}
 
 ### Create a PR
