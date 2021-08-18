@@ -8,7 +8,7 @@ toc: true
 The **Diffuse Global Illumination** component is a Level component that controls the quality level of global illumination that **Diffuse Probe Grid** components provide. The diffuse global illumination technique calculates the effect of light bounce, reflection, scatter, and absorption throughout an environment. It simulates real-world lighting behavior, where objects are lit both from the light source and from the light reflected by other objects.
 
 {{< note >}}
-You must have Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
+You must have a GPU with support for DirectX Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
 {{< /note >}}
 
 ## Provider

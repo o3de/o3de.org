@@ -11,7 +11,7 @@ The **Diffuse Probe Grid component** creates a volume of light probes that provi
 
 
 {{< note >}}
-You must have Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
+You must have a GPU with support for DirectX Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
 {{< /note >}}
 
 ## Provider ##

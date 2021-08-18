@@ -20,17 +20,14 @@ Minimum hardware requirements for development include the following:
   + NVIDIA GeForce GTX 1060 or better, driver version 465.89 or later recommended
   + AMD Radeon Pro 560 or better
   + Intel HD 630 or better
+  + Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
 + 40 - 100 GB of free disk space
 + 1366 x 768 px screen resolution
-+ Shader Model 6.2 (or Shader Model 6.3 to use raytracing features)
 
 {{< note >}}
 RAM and free disk space requirements are dependent on the options that you select when configuring your project in O3DE.
 {{< /note >}}
 
-{{< note >}}
-Developing with O3DE on macOS is an experimental feature. At a minimum, you need macOS Catalina and XCode 11.
-{{< /note >}}
 
 ## Software prerequisites
 
@@ -47,6 +44,10 @@ See the following sections for additional configuration instructions.
 
 {{< note >}}
 Microsoft offers **Visual Studio Community** free to individual developers. For more information and to download and install Visual Studio Community, visit the [Visual Studio Community](https://visualstudio.microsoft.com/vs/community/) portal.
+{{< /note >}}
+
+{{< note >}}
+Developing with O3DE on macOS is an experimental feature. At a minimum, you need macOS Catalina, XCode 11, and a Metal-compatible video card that meets the hardware requirements above. Apple M1 processor is not supported.
 {{< /note >}}
 
 ## Software configuration
