@@ -5,14 +5,12 @@ description: "Open 3D Engine (O3DE) Decal component reference."
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Decal** component enables an entity to project a material onto a mesh. A large number of overlapping decals can be applied to a single mesh.
 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

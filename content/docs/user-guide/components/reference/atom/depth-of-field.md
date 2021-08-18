@@ -5,14 +5,12 @@ description: "Open 3D Engine (O3DE) Depth of Field component reference."
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Depth of Field component** simulates the lens effects of real world cameras that focus on a specific area.
 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

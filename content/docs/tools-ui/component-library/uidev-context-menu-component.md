@@ -5,8 +5,6 @@ description: Use the O3DE UI context menu component to display a popup menu with
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 A context menu (also called contextual or pop-up menu) appears upon user interaction, such as a right-click mouse operation. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs. Typically, the available choices are actions related to the selected object.
 
 ![\[component context menu style\]](/images/tools-ui/component-context-menu-style.png)

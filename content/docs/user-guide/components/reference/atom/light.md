@@ -5,11 +5,11 @@ description: ' Open 3D Engine (O3DE) Light component reference. '
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Light** component simulates soft studio light with various types of punctual and area lights. The Light component supports the punctual lights Point (simple punctual) and Spot (simple punctual), which are infinitesimally small. These are slightly more performant than their area light counterparts, but they produce simpler light effects. The Light component also supports the area lights Point (sphere), Spot (disk), Capsule, Quad, and Polygon. These most accurately simulate real-world light sources.
 
+
 ## Light types
+
 Point (sphere)
 : Emits light from the surface of a sphere in all directions, similar to a standard light bulb. The Point (sphere) light type supports shadow effects.
 
@@ -30,24 +30,25 @@ Polygon
 
 ## Provider
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Dependencies
 
-| Light Type | Dependency |
-| - | - |
-| Point (sphere) | [Sphere Shape](\docs\user-guide\components\reference\shape\sphere-shape/) | 
-| Point (simple punctual) | - | 
-| Spot (disk) | [Disk Shape](\docs\user-guide\components\reference\shape\disk-shape/) |
-| Spot (simple punctual) | - | 
-| Capsule | [Capsule Shape](\docs\user-guide\components\reference\shape\capsule-shape/) |
-| Quad | [Quad Shape](\docs\user-guide\components\reference\shape\quad-shape/) | 
-| Polygon | [Polygon Prism Shape](\docs\user-guide\components\reference\shape\polygon-prism-shape/) |
+Depending on the light type, the Light component has the following dependencies:
+
+- **Point (sphere)**: [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
+- **Point (simple punctual)**: None
+- **Spot (disk)**: [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/)
+- **Spot (simple punctual)**: None
+- **Capsule**: [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/)
+- **Quad**: [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)
+- **Polygon**: [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
 
 
 
 ## Properties
+
 {{< tabs name="light-component-ui" >}}
 {{% tab name="Default" %}}
 

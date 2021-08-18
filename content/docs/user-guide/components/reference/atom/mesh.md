@@ -5,13 +5,11 @@ description: 'Open 3D Engine (O3DE) Mesh component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Mesh** component specifies a model to render in the scene. Model assets are supported and processed using [AssImp](https://www.assimp.org/). 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

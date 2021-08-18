@@ -8,16 +8,20 @@ title: Programming the O3DE AZCore Runtime Asset System
 
 The O3DE Editor and O3DE runtime code use the AZCore runtime asset system to asynchronously stream and activate assets. This topic describes the workflow of the classes in the asset system and shows how to load already-built assets into a running instance of the engine.
 
-**Note**
-For information on compiling and building assets, see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/intro.md).
-
 ## Asset System Classes 
 
 The O3DE asset system includes the following classes and class families:
-+ [AZ::Data::AssetData Derived Classes](#asset-pipeline-asset-system-programming-azdataassetdata-derived-classes)
-+ [AZ::Data::AssetManager](#asset-pipeline-asset-system-programming-azdataassetmanager)
-+ [AzFramework::AssetCatalog](#asset-pipeline-asset-system-programming-azframeworkassetcatalog)
-+ [AZ::Data::AssetHandler Derived Classes](#asset-pipeline-asset-system-programming-azdataassethandler-derived-classes)
+- [Asset System Classes](#asset-system-classes)
+  - [AZ::Data::AssetData Derived Classes](#azdataassetdata-derived-classes)
+  - [AZ::Data::Asset<T> Templated Class](#azdataassett-templated-class)
+    - [Integration with UI Property Grids](#integration-with-ui-property-grids)
+  - [AZ::Data::AssetManager](#azdataassetmanager)
+    - [Example: Loading an Asset Using Asset Manager](#example-loading-an-asset-using-asset-manager)
+    - [More About Automatic Reloading](#more-about-automatic-reloading)
+  - [AzFramework::AssetCatalog](#azframeworkassetcatalog)
+  - [AZ::Data::AssetHandler Derived Classes](#azdataassethandler-derived-classes)
+- [Asset System Workflow](#asset-system-workflow)
+- [Conclusion](#conclusion)
 
 The following sections describe these classes in detail. For the source code, see the `Code\Framework\AzCore\AzCore\Asset` directory.
 
@@ -42,7 +46,6 @@ Adding your own asset type to O3DE includes the following high-level steps:
 Derive your type from `AssetData`.
 Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID.
 Add the member fields or structs that store your data in memory at run time.
-For more information, see [Adding an Asset Type to O3DE](/docs/user-guide/assets/asset-type-adding.md).
 
 ### AZ::Data::Asset<T> Templated Class 
 
@@ -158,7 +161,7 @@ To look up asset file information manually, you can pass an `AssetId` to the `As
 
 ### AZ::Data::AssetHandler Derived Classes 
 
-When you [create a new type of asset](/docs/user-guide/assets/asset-type-adding.md), you also create an `AssetHandler` for the new asset type. The role of the asset handler is to create, load, save, and destroy assets when the asset manager requests it. After your asset handler creates an empty instance of your asset type, it loads serialized data into the in-memory representation of `AssetData`.
+When you create a new type of asset you also create an `AssetHandler` for the new asset type. The role of the asset handler is to create, load, save, and destroy assets when the asset manager requests it. After your asset handler creates an empty instance of your asset type, it loads serialized data into the in-memory representation of `AssetData`.
 
 To create a handler for a specific asset type, derive from the `AssetHandler` class and register an instance of the handler with the asset manager. Because asset handling functions can be called from multiple threads, the handlers must be thread-safe. The handler can block the calling thread while the asset is loading.
 

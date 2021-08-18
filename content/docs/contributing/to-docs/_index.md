@@ -6,8 +6,6 @@ weight: 200
 toc: true
 ---
 
-{{< preview-new >}}
-
 Welcome to Open 3D Engine (O3DE) docs!
 
 O3DE documentation is driven by contributors like you. Whether you want to report an issue, document a feature, provide a tutorial, or join the O3DE Documentation and Community Special Interest Group (SIG-Docs), this guide will provide you the information you need. Your participation is critical. Large or small, your contributions chart the course of O3DE documentation.

@@ -19,7 +19,6 @@ The **Diffuse Probe Grid** component creates a volume of light probes that provi
 
 ![Diffuse Probe Grid component properties](/images/user-guide/components/reference/atom/diffuse-probe-grid-component-ui.png)
 
-
 ### Bake Textures
 
 | Property | Description | Values | Default |

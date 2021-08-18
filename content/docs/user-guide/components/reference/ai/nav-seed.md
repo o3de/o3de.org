@@ -12,21 +12,21 @@ The **[Navigation Area](/docs/user-guide/components/reference/ai/nav-area/)** co
 
 ![\[Example Navigation Seed component with red and blue chunks.\]](/images/user-guide/component/component-navigation-mesh-seed-enabled.png)
 
-For example, [static objects](/docs/user-guide/components/reference/nav-area/#component-nav-area-static-entities), [exclusion areas](/docs/user-guide/components/reference/nav-area/#component-nav-area-exclusion), or terrain features can divide a [navigation area](/docs/user-guide/components/reference/ai/nav-area/) into multiple chunks. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk (for example, if they spawned there). You might have multiple navigation areas in one location, such as for different [agent types](/docs/user-guide/components/reference/nav-area/#component-nav-area-properties). In this case, use the **Navigation Seed** component to calculate accessibility for all [agent types](/docs/user-guide/components/reference/navigation/#component-navigation-properties) or a specific agent type in the chunk where you placed the navigation seed.
+For example, [static objects](/docs/user-guide/components/reference/ai/nav-area#navigating-around-static-objects), [exclusion areas](/docs/user-guide/components/reference/ai/nav-area#creating-navigation-mesh-exclusion-areas), or terrain features can divide a navigation area into multiple chunks. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk (for example, if they spawned there). You might have multiple navigation areas in one location, such as for different agent types. 
 
 **To use the Navigation Seed component**
 
 1. [Create a navigation area](/docs/user-guide/components/reference/ai/nav-area/).
 
-1. Divide the navigation area into multiple chunks using [static objects](/docs/user-guide/components/reference/nav-area/#component-nav-area-static-entities), [exclusion areas](/docs/user-guide/components/reference/nav-area/#component-nav-area-exclusion), or terrain.
+1. Divide the navigation area into multiple chunks using static objects, exclusion areas, or terrain.
 
-1. [Add](/docs/userguide/components/working-adding.md) the **Navigation Seed** component to the navigation area entity or to a separate entity.
+1. Add the **Navigation Seed** component to the navigation area entity or to a separate entity.
 
-2. If you want to specify an [agent type](/docs/user-guide/components/reference/navigation/#component-navigation-properties), select it in the **Navigation Seed** component.
+2. If you want to specify an agent type, select it in the **Navigation Seed** component.
 
-3. [Move](/docs/userguide/editor/toolbars) the seed around.
+3. Move the seed around.
 
-   If you [turned on visualization](/docs/userguide/components/nav-area#render-navigation-mesh), all AI-accessible areas render blue in the chunk where you placed the navigation seed. Inaccessible areas render red.
+   If you turned on visualization, all AI-accessible areas render blue in the chunk where you placed the navigation seed. Inaccessible areas render red.
 
 **To calculate accessibility for agent types**
 + In the **Navigation Seed** component, do one of the following:

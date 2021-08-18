@@ -11,6 +11,7 @@ Follow these best practices for creating and using components and EBuses.
 ## EBus Names 
 
 The following EBus naming conventions remove ambiguity and provide consistency.
+
 + Use the name format `MyComponentRequestBus` for the bus that others use to invoke functions on `MyComponent`, as in the following example.
 
   ```
@@ -68,14 +69,16 @@ EBUS_EVENT_ID_RESULT(targetEntityTransform, targetEntityId, AZ::TransformBus, Ge
 ## EBus Timing 
 
 Following are some best practices for the timing of EBus actions.
-+ In the [Activate()](/docs/userguide/components/entity-system-create-component#component-entity-system-create-component-az-activate) function, make sure that connecting to buses is the last step.
-+ In the [Deactivate()](/docs/userguide/components/entity-system-create-component#component-entity-system-create-component-az-deactivate) function, make sure that disconnecting from buses is the first step.
+
++ In the [Activate()](/docs/api/frameworks/azcore/class_a_z_1_1_component.html#a3e3e21c0cb8c2a8cb6dc42c83c94a8fe) function, make sure that connecting to buses is the last step.
++ In the [Deactivate()](/docs/api/frameworks/azcore/class_a_z_1_1_component.html#a7b78b890df9b149722d8703da05c79ac) function, make sure that disconnecting from buses is the first step.
 + In a multithreaded environment, it's possible to receive bus events from the moment that you connect to the bus until the moment you disconnect. For this reason, make sure of the following:
   + Your component is fully activated before it starts reacting to events.
   + Your component stops receiving events before it starts deactivation.
 
 This practice prevents your component from being in a half-activated state when it starts reacting to events, or in a half-deactivated while still receiving events.
-+ When you send events on a notification-style bus, the last step in a function should ensure that the data is fully populated.
+
+* When you send events on a notification-style bus, the last step in a function should ensure that the data is fully populated.
 
 The following is an example to avoid.
 
@@ -89,12 +92,5 @@ If a component is monitoring the `OnTransformChanged` event and sets your transf
 ## Making Functions Public or Protected 
 
 Consider the following when deciding to make functions public or private.
-+ Make your bus functions `public` if they constitute the public interface for your class. While it's discouraged, O3DE does not prevent users from getting direct pointers to components and calling functions directly. To avoid this, make sure that your useful functions are public. For example, `MyComponent` should probably implement functions from `MyComponentRequestBus` publicly.
-+ Make your bus functions `protected` if they contain the private workings of your class. For example, your component's reaction to the `TransformNotificationBus::OnTransformChanged` event would likely be a private implementation detail.
-
-## Additional Resources 
-
-For more information on components and EBuses, consult the following resources.
-+ For examples of EBus usage, see [Usage and Examples](/docs/learning-guide/samples/ebus/direct-access/).
-+ For in-depth information about EBuses, including conceptual diagrams, see [Event Buses in Depth](/docs/user-guide/engine/ebus/design/).
-+ For questions and answers regarding best practices for components and EBuses, see [Components and EBuses: Questions and Answers](/docs/userguide/components/entity-system-pg-components-ebuses-questions-and-answers.md).
+* Make your bus functions `public` if they constitute the public interface for your class. While it's discouraged, O3DE does not prevent users from getting direct pointers to components and calling functions directly. To avoid this, make sure that your useful functions are public. For example, `MyComponent` should probably implement functions from `MyComponentRequestBus` publicly.
+* Make your bus functions `protected` if they contain the private workings of your class. For example, your component's reaction to the `TransformNotificationBus::OnTransformChanged` event would likely be a private implementation detail.

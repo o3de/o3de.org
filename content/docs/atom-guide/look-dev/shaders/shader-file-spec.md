@@ -5,8 +5,6 @@ toc: false
 weight: 1000
 ---
 
-{{< preview-new >}}
-
 Shader files (`*.shader`) are written in JSON format and contain the following elements.
 
 - **Source**: A file path to the AZSL source file (`*.azsl`). The path can be relative to this shader file or relative to the asset root.

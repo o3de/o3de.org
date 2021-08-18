@@ -5,14 +5,12 @@ description: 'Open 3D Engine (O3DE) Directional Light component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Directional Light** component casts light from an infinitely distant point towards a single direction, similar to sunlight. This component also supports shadow casting. 
 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

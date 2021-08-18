@@ -5,8 +5,6 @@ description: Learn how to apply the O3DE UI style for radio buttons in O3DE Gems
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 Use radio buttons to enable users to select from two or more options, when users must select exactly one choice. Choosing a radio button deselects the previously selected button.
 
 ![\[component radio button style\]](/images/tools-ui/component-radio-button-style.png)

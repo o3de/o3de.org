@@ -5,14 +5,12 @@ description: "Open 3D Engine (O3DE) Bloom component reference."
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Bloom component** simulates real-world light bleeding, or glow.
 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

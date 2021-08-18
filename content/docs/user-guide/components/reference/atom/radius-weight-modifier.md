@@ -5,14 +5,12 @@ description: 'Open 3D Engine (O3DE) Radius Weight Modifier component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Radius Weight Modifier** component modifies post-processing effects' (PostFX) weight based on the camera's distance to the center.
 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

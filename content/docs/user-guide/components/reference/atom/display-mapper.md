@@ -5,14 +5,12 @@ description: 'Open 3D Engine (O3DE) Display Mapper component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **Display Mapper** component provides settings to configure tone mapping and color grading.
 
 
 ## Provider ##
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties
