@@ -3,8 +3,6 @@ description: null
 title: FBX Settings Actors tab
 ---
 
-{{< preview-migrated >}}
-
 Actors are assets with at least one bone and can contain one or more skinned meshes. By default, all actors in the `.fbx` file are processed. However, you can manually exclude individual actors within your `.fbx` file. You can also process multiple actors from a single `.fbx` file. Each **Actor group** produces its own `.actor` file. The processed runtime assets appear in **Asset Browser** as children of the `.fbx` file.
 
 **Contents**

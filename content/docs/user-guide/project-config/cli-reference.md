@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-The `o3de` Python script lets you configure your project using the command line interface (CLI). The script aggregates all of the functions from lower-level scripts in Open 3D Engine (O3DE), so you can access them from a single point. Find the script in your engine directory at `/scripts/o3de.py`.
+**O3DE CLI** (`o3de`) is a Python script that lets you configure your project using the command line interface (CLI) in Open 3D Engine (O3DE). The script aggregates all of the functions from lower-level scripts in O3DE, so you can access them from a single point. Find the script in your engine directory at `/scripts/o3de.py`.
 
 You can use the `o3de` Python script for the following tasks:
 

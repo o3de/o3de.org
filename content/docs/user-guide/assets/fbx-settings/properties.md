@@ -4,8 +4,6 @@ description: ' Modify the export properties of your .fbx files with FBX Settings
 title: FBX Settings export properties
 ---
 
-{{< preview-migrated >}}
-
 **Topics**
 + [FBX Settings overview](#fbx-properties-overview)
 + [Modify FBX Settings](#fbx-properties-modify)

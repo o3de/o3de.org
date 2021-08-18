@@ -4,8 +4,6 @@ description: ' Learn the functions of each area of the Asset Processor interface
 title: 'Asset Processor Interface'
 ---
 
-{{< preview-migrated >}}
-
 The Asset Processor interface provides areas containing detailed information about the assets that it processes. These areas are shown in the following example.
 
 ![\[The main window of the O3DE Asset Processor. The window is annotated with markers that identify the visual components and features described below.\]](/images/user-guide/asset_processor/asset-processor-ui.png)
