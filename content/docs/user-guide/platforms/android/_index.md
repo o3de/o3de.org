@@ -36,7 +36,7 @@ Android Studio is the IDE commonly used in conjunction with Gradle to develop an
 ### **Setup the Android SDK**
 The Android SDK will be configured as part of the intial Android Studio experience. When you start Android Studio and have not setup the Android SDK yet, it will guide you through the steps to download and install it and at least one SDK platform.
 
-Keep track of the location of where the Android SDK is installed as it will be needed for the project generation command described below.
+Keep track of the location where you installed the Android SDK, as you will need it later to generate an Android project for O3DE. 
 
 It is also possible to just download the Android SDK manager without Android Studio, but in order to do so will require that the command line tool package be placed in a subfolder called 'tools' under the root of a local android sdk folder.
 
