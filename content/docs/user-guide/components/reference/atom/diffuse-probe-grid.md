@@ -61,4 +61,10 @@ There are a variety of configuration setups for Editor and runtime:
   
 - **Editor Real-Time and Runtime Auto Select**: The Editor uses real-time ray tracing for the best editing experience, while the runtime chooses between real-time ray tracing or baked, depending on the GPU's capability.
 
-- **Editor Baked and Runtime Baked**: Both the Editor and the runtime use baked diffuse GI for maximum performance. The textures can be explicitly baked at the appropriate time by temporarily switching the Editor Mode to `Real Time (Ray-Traced)` and baking the textures. 
+- **Editor Baked and Runtime Baked**: Both the Editor and the runtime use baked diffuse GI for maximum performance. The textures can be explicitly baked at the appropriate time by temporarily switching the Editor Mode to `Real Time (Ray-Traced)` and baking the textures.
+
+
+## Notes
+
+- The length of the rays that're casted from the probe is limited to 20 meters.
+  
