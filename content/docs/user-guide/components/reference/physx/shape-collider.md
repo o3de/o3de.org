@@ -1,6 +1,6 @@
 ---
 linkTitle: PhysX Shape Collider
-title: PhysX Shape Collider component
+title: PhysX Shape Collider Component
 description: The PhysX Shape Collider component adds a PhysX collider that utilizes a shape component to an entity so that the entity can be included in PhysX simulation.
 toc: true
 ---
@@ -48,8 +48,8 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 | - | - | - | - |
 | **Collision Layer** | The collision layer that's assigned to the collider. | Any collision layer | `Default` |
 | **Collides With** | The collision group containing the layers that this collider collides with. | Any collision group | `All` |
-| **Trigger** | Make this collider a trigger. A trigger performs a quick overlap test and does not apply forces or return contact point information. Use this to speed-up PhysX computations where a simple overlap between colliders is sufficient. Triangle meshes are not supported as triggers. | Boolean | `On` |
-| **Simulated** | Include this collider in the physics simulation. | Boolean | `On` |
+| **Trigger** | Make this collider a trigger. A trigger performs a quick overlap test and does not apply forces or return contact point information. Use this to speed up PhysX computations where a simple overlap between colliders is sufficient. Triangle meshes are not supported as triggers. | Boolean | `Off` |
+| **Simulated** | Include this collider in the PhysX simulation. | Boolean | `On` |
 | **In Scene Queries** | Allow this collider can be queried for raycasts, shapecasts, and overlap. | Boolean | `On` |
 | **Library (Physics Materials)** | The physics material library of the project. | `.physmaterial` | The global `.physmaterial` asset |
 | **Slots (Physics Materials)** | Choose a physics material for each material of this collider. Physics materials define physical properties for the surface such as dynamic and static friction, and density. A collider can have multiple physics materials assigned. | Physics material from the assigned `.physmaterial` | `<Default Physics Material>` |
@@ -64,7 +64,7 @@ The [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-pr
 
 ![A complex polygon prism can't be converted to convex geometry.](/images/user-guide/components/reference/physx/ui-shape-collider-b.png)
 
-If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. In the example image above, the polygon prism is self-intersecting. If the polygon prism can't be subdivided into convex pieces, nn error will display in the Editor Console, as shown in the following example.
+If the vertices are modified so that the polygon prism is no longer a simple polygon, it isn't possible to subdivide the polygon prism into convex pieces. In the example image above, the polygon prism is self-intersecting. If the polygon prism can't be subdivided into convex pieces, an error will display in the Editor Console, as shown in the following example.
 
 ![A complex polygon prism console error.](/images/user-guide/components/reference/physx/ui-shape-collider-c.png)
 

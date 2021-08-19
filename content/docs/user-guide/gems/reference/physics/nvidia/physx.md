@@ -11,13 +11,13 @@ The PhysX Gem provides physics simulation with NVIDIA PhysX. With PhysX, you can
 
 To use PhysX, enable the PhysX Gem in **Project Manager**. The PhysX Gem requires the NVIDIA PhysX SDK package, which is automatically downloaded as part of the configuration and build process. 
 
-## Gem Contents
+## Gem contents
 
 In addtion to providing phyiscs simulation with PhysX, the PhysX Gem provides several components, a configutation tool, scene processing features, and the phyiscs material asset template, so that you can create and tune physics simulations for your projects.
 
 ### PhysX components
 
-The components included in the PhysX Gem are used to create static, dynamic, and kinematic colliders, triggers, force reqions, dynamic joints, and physical actor behaviors.
+The components included in the PhysX Gem are used to create static, dynamic, and kinematic colliders, triggers, force regions, dynamic joints, and physical actor behaviors.
 
 | Component | Description |
 | - | - |
@@ -34,11 +34,11 @@ The components included in the PhysX Gem are used to create static, dynamic, and
 
 ### PhysX Configuration tool
 
-The PhysX Configuration tool is accessed through the **Tools** menu. You can set various global properties of PhysX simulation including the default physics material library, simulation time steps, buffer sizes for scene queries such as raycasts, default gravity, and much more. You can also define collision layers and groups, as well as set PhysX Visual Debugger settings in the PhysX configuration tool.
+You can access the PhysX Configuration tool through the **Tools** menu. You can set various global properties of PhysX simulation including the default physics material library, simulation time steps, buffer sizes for scene queries such as raycasts, default gravity, and much more. You can also define collision layers and groups, as well as set PhysX Visual Debugger settings in the PhysX configuration tool.
 
 ### PhysX scene processing
 
-The PhysX Gem provides PhysX scene processing features so you can export meshes you create, automatically generate covex hulls, or automatically fit shapes to decomposed complex meshes, to define colliders for entities in PhysX simulations.
+The PhysX Gem provides PhysX scene processing features so you can export meshes you create, automatically generate convex hulls, or automatically fit shapes to decomposed complex meshes, to define colliders for entities in PhysX simulations.
 
 ### Physics materials
 
