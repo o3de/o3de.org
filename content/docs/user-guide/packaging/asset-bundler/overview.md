@@ -9,6 +9,8 @@ weight: 100
 
 The Asset Bundler is a command-line tool, `AssetBundlerBatch.exe`, and a set of specific file formats generated and used by the tool.
 
+{{< preview-migrated >}}
+
 ## Prerequisites to use the Asset Bundler 
 
 To use the Asset Bundler, your game project must meet the following criteria:
@@ -90,7 +92,7 @@ You can use the Asset Builder APIs to develop your own Asset Builders, which can
 For more information, see the [the Asset Builder documentation](/docs/user-guide/assets/builder).
 
 ## Define dependencies in your Asset Builder 
-
+gg
 In addition to processing your asset, Asset Builders also define any product or source asset dependencies, and then store that information in a database for later use by the Asset Bundler. Specifically, defining an asset dependency means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game. Without defined dependencies, the Asset Bundler cannot identify which assets your game needs when it's time to prepare your asset bundles release. As a result, you could end up missing assets, including too many, or shipping undesirable ones. With Asset Dependencies defined in your Asset Builders, you are including the exact assets that you need for your game.
 
 ## Asset bundling and source control 
