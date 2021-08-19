@@ -4,16 +4,16 @@ description: "Learn about temporal anti-aliasing in the Atom Renderer"
 toc: true
 ---  
 
-*Temporal anti-aliasing* (TAA) is a type of supersampling that takes samples from different locations within a pixel each frame and combines them with samples from previous frames to create a supersampled image. The main challenge of TAA is knowing when samples from the previous frame are valid. TAA may cause some softness in your image, especially while in motion. To improve the quality of your image, you can enable contrast adaptive sharpening, which sharpens the details of your image. For more information, refer to [Contrast Adaptive Sharpening](cas/). 
+*Temporal anti-aliasing* (TAA) is a type of supersampling that takes samples from different locations within a pixel each frame and combines them with samples from previous frames to create a supersampled image. The main challenge of TAA is knowing when samples from the previous frame are valid. TAA may cause some softness in your image, especially while in motion. To improve the quality of your image, you can enable contrast adaptive sharpening, which sharpens the details of your image. For more information, refer to [Contrast Adaptive Sharpening](cas/).
 
 
 ## Parameters
 
-| Parameter | Description | Default |
-| - | - | - |
-| **m_currentFrameContribution** | Controls how much the current frame's samples contribute to the final image. Reducing this value can help prevent flickering in some circumstances. | `0.1` |
-| **m_clampGamma** | Controls the number of standard deviations from the mean of the 3x3 current neighborhood that the history is clipped to. Increasing this value may prevent flickering, but can also lead to ghosting. | `1.0` |
-| **m_maxDeviationBeforeDampening** | Controls the number of standard deviations from the mean, which defines a threshold for the pixel's brightness before it begins to reduce its contribution. This prevents flickering by lowering the weight of the current pixel, if its brightness is very different from the surrounding neighborhood and history. By default, any pixel with a brightness that is more than 0.5 standard deviations from the mean will begin to reduce its contribution. | `0.5` |
+| Parameter | Description | Values | Default |
+| - | - | - | - |
+| **m_currentFrameContribution** | Controls how much the current frame's samples contribute to the final image, when history isn't rejected. Reducing this value may help prevent flickering in some circumstances. | `0.1` to `1.0` | `0.1` |
+| **m_clampGamma** | Controls the number of standard deviations from the mean of the 3x3 current neighborhood that the history is clipped to. Increasing this value may prevent flickering, but can also lead to ghosting. | `0.0` to infinity | `1.0` |
+| **m_maxDeviationBeforeDampening** | Controls the number of standard deviations from the mean, which defines a threshold for the pixel's brightness before it begins to reduce its contribution. This prevents flickering by lowering the weight of the current pixel, if its brightness is very different from the surrounding neighborhood and history. By default, any pixel with a brightness that is more than 0.5 standard deviations from the mean will begin to contribute less. | `0.0` to infinity | `0.5` |
 
 
 ## Using TAA
@@ -37,4 +37,4 @@ The following are a list of known issues and improvements for TAA:
 
 - TAA can cause screen space ambient occlusion (SSAO) to produce flickering in the resulting image, especially when SSAO runs at half resolution. The reason is that TAA involves jittering the camera to collect samples in different parts of a pixel in each frame.
 
-- In the future, the O3DE Editor will support a TAA component, making it easier to configure TAA in your scene.
+- In the future, the **O3DE Editor** will support a TAA component, making it easier to configure TAA in your scene.
