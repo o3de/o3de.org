@@ -6,8 +6,6 @@ weight: 200
 
 After you build and package your O3DE game, you want to frequently verify that your packages contain every asset they require. For information about verifying your asset bundles, see [Verifying that Bundles Contain Required Assets](/docs/user-guide/packaging/asset-bundler/verifying-bundles/).
 
-
-
 When you identify a potential missing asset, you want to include it so that the asset is no longer missing in your next bundled game package.
 
 An asset that is missing from a bundle might be one of the following:
