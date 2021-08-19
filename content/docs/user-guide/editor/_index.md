@@ -20,5 +20,5 @@ To learn various aspects of Open 3D Engine's (O3DE) **Editor**, refer to the fol
 | [Custom entity icons](./entity-inspector-customize-icon) | Add custom icons for the entities in your project. |
 | [Pin the Entity Inspector](./entity-inspector-pin) | Pin the Entity Inspector to view and edit the components of multiple entities. |
 | [Entity status](./entity-inspector-status) | Set the active status on entities. |
-| [Entity Outliner](./entity-outliner) | Use Entity Outliner you can view, select, and organize the entities in your level. |
+| [Entity Outliner](./entity-outliner) | Use Entity Outliner to view, select, and organize the entities in your level. |
 | [Working with entities](./entity-outliner-entities) | Working with entities in Entity Outliner. |
