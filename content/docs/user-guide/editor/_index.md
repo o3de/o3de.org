@@ -14,7 +14,7 @@ To learn various aspects of Open 3D Engine's (O3DE) **Editor**, refer to the fol
 | [Camera space](./camera-space) | Learn to use the camera space manipulator. |
 | [Console](./console) | In the O3DE Console, you can see output from commands and processes and enter commands to set options and features for your project. |
 | [Console variables (CVARs)](./console-cvars-commands) | Learn to use console commands and CVARs. |
-| [Customizing O3DE Editor](./customizing) | Learn to customize the O3DE Editor workspace, layout, and preferences. |
+| [Customizing O3DE Editor](./customizing) | Learn to customize the O3DE Editor workspace layout and preferences. |
 | [Editor automation](./editor-automation) | Automate tasks in O3DE Editor with Python. |
 | [Entity Inspector](./entity-inspector) | Add and configure an entity's components in Entity Inspector. |
 | [Custom entity icons](./entity-inspector-customize-icon) | Add custom icons for the entities in your project. |
