@@ -80,9 +80,9 @@ python\get_python.bat
 
 ## More troubleshooting help
 
-There are additional troubleshooting pages in other sections of the O3DE documentation:
+For more troubleshooting help, refer to these other O3DE troubleshooting pages:
 
-* [Project Configuration Troubleshooting in Open 3D Engine](/docs/user-guide/project-config/troubleshooting)
+* [Troubleshooting O3DE Project Configuration](/docs/user-guide/project-config/troubleshooting)
 * [Build Troubleshooting in Open 3D Engine](/docs/user-guide/build/troubleshooting)
 
 As a reminder, you can also try searching for your issue or asking for help in these locations:
