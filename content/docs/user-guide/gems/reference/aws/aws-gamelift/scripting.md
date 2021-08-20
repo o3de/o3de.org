@@ -6,8 +6,6 @@ toc: true
 weight: 400
 ---
 
-{{< preview-new >}}
-
 
 The **AWS GameLift** provides Script Canvas nodes that make requests against Amazon GameLift to create, search, join, and leave game sessions.
 

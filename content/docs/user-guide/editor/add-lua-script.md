@@ -4,8 +4,6 @@ description: ' Use the Lua Script component to add script functionality to your 
 title: Adding Lua Scripts to Component Entities
 ---
 
-{{< preview-migrated >}}
-
 O3DE makes it easy for you to add script functionality to your game entities by using the **Lua Script** component. The following steps show you how to do this in O3DE Editor.
 
 **To add a Lua script to a component entity in O3DE Editor**

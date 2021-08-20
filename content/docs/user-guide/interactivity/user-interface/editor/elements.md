@@ -4,8 +4,6 @@ description: ' Use the UI Editor in Open 3D Engine to manage UI elements like
 title: UI Elements
 ---
 
-{{< preview-migrated >}}
-
 UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can [add an existing pre-fabricated (prefab) element](/docs/userguide/ui/editor/prefabs.md), such as a scroll box, which is an element with components already attached. You can also [create your own prefab elements](/docs/userguide/ui/editor/prefabs.md).
 
 ![\[UI element properties\]](/images/user-guide/game_ui_editor/ui-editor-elements.png)

@@ -4,8 +4,6 @@ description: ' Use the serialization context to provide persistence for C++ obje
 title: Serialization Context
 ---
 
-{{< preview-migrated >}}
-
 You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` (runtime type information), as in the following example:
 
 ```

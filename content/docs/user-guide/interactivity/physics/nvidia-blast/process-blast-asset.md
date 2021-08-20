@@ -4,8 +4,6 @@ title: Processing assets for NVIDIA Blast
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
 
 Blast assets that are exported from Houdini must be processed by **Asset Processor** to generate run-time assets. There are two methods for processing Blast assets for use in O3DE: an automated method using Python Asset Builder, and a manual method where you select the meshes to be processed.
 

@@ -4,8 +4,6 @@ description: ' Use the Comment node in O3DE''s <guilabel>Track View</guilabel> e
 title: Comment Node
 ---
 
-{{< preview-migrated >}}
-
 Use the **Comment** node to add comments to your track view sequence. This is mostly used for production purposes and is not rendered in the game.
 
 **To add a Comment node in the Track View**

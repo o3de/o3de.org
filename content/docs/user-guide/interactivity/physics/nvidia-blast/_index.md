@@ -5,8 +5,6 @@ title: Simulated destruction with NVIDIA Blast
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
  With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components.
 
 To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-blast/).

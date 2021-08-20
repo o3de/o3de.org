@@ -6,8 +6,6 @@ weight: 300
 toc: true
 ---
 
-{{< preview-new >}}
-
 This page demonstrates example usage of Script Canvas nodes and Lua scripting defined by the AWS Client Auth Gem.
 
 ## Script Canvas

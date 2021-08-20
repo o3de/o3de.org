@@ -2,9 +2,8 @@
 description: ' Use the Project Settings Tool to modify project settings for mobile device games in
   Open 3D Engine. '
 title: Modifying Project Settings for Mobile Device Games
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 Use the **Project Settings Tool** (PST) to make streamlined changes to project settings across all mobile platforms. The **Project Settings Tool** shows properties from all of the project settings files so that you can edit and save changes at once.
 

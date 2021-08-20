@@ -3,8 +3,6 @@ description:  Learn best practices for debug tracing in Open 3D Engine.
 title: Tracing
 ---
 
-{{< preview-migrated >}}
-
 **Recommended**: For code tracing needs, use `AZ_*` tracing macros.
 
 **Reason**: Error handling and tracing functions provide useful messages formatted for readability about errors that occur. To facilitate debugging, `AZ_*` tracing functions indicate where in code the errors occurred.

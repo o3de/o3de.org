@@ -4,8 +4,6 @@ description: ' Use the Sprite Editor to configure your images and textures in Op
 title: Sprite Editor
 ---
 
-{{< preview-migrated >}}
-
 The **Sprite Editor** configures the following sprite configurations:
 + Border values for [sliced image types](/docs/user-guide/interactivity/user-interface/editor/component-9-sliced.md)
 + [Sprite sheets](/docs/user-guide/interactivity/user-interface/editor/component-sprite-sheets.md)

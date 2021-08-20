@@ -5,8 +5,6 @@ weight: 200
 toc: true
 ---
 
-{{< preview-new >}}
-
 The [Cloud Development Kit](https://docs.aws.amazon.com/cdk/latest/guide/home.html) (CDK) is a software development framework from AWS for defining cloud infrastructure for your project and provisioning it through **AWS CloudFormation**.
 
 The AWS Core Gem includes an optional Python CDK application that provides two stacks:

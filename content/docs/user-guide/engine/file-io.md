@@ -3,8 +3,6 @@ description: ' Directly access files for special use cases like streaming in Ope
 title: Raw File Access in O3DE
 ---
 
-{{< preview-migrated >}}
-
 This topic describes how to directly access files in O3DE for special use cases. However, it's recommended that you use the O3DE Asset system to work with asset files. In most cases, raw file access is not required. For more information see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/intro.md).
 
 When you write an `AssetHandler`-derived class to load assets in O3DE, runtime file handling is automatic. However, some cases might require lower levels of file access at run time. Scenarios that might require low-level file access include:

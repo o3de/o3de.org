@@ -4,8 +4,6 @@ description: ' Use the sliced image type to intelligently resize parts of your g
 title: Sliced Image Type
 ---
 
-{{< preview-migrated >}}
-
 O3DE uses slice resizing to resize certain images intelligently. For example, using regular resizing to widen the following image results in distortion of the corners and edges.
 
 ![\[Image with corner detail.\]](/images/user-guide/game_ui_editor/ui-editor-component-9-sliced-1.png)

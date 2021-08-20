@@ -3,8 +3,6 @@ description: ' Learn how to select Script Canvas nodes in Open 3D Engine using h
 title: Selecting Nodes Using Hot Keys
 ---
 
-{{< preview-migrated >}}
-
 Use the following hot key combinations to select groups of nodes.
 + To select all nodes in a graph, press **Ctrl + A**.
 + To select all nodes that are connected to the input pins of the selected node, press **Ctrl+Left Arrow**.

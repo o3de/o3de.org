@@ -4,8 +4,6 @@ description: Use visual components in Open 3D Engine's UI Editor to add color
 title: Image
 ---
 
-{{< preview-migrated >}}
-
 You can use an **Image** component to add a color tint or texture to an element. Use the **Properties** pane of the [UI Editor](/docs/userguide/ui/editor/using) to configure the following settings for the **Image** component.
 
 **Image Settings**

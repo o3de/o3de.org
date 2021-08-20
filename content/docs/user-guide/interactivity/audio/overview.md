@@ -4,8 +4,6 @@ description: Learn about the Open 3D Engine audio system.
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 The O3DE audio system consists of Gems, components, and content.
 
 ## Gems 

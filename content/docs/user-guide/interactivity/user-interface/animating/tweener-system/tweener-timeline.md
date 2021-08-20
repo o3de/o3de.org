@@ -4,8 +4,6 @@ description: ' Use Scripted Entity Tweener''s timeline abilities to chain animat
 title: Tweener Timeline
 ---
 
-{{< preview-migrated >}}
-
 In the Scripted Entity Tweener system, you can create a timeline for granular control over your animations. You can chain and group animations. You can pause, resume, seek, play backward, label, and even dynamically control the playback speed of the animations.
 
 To create a timeline, you can customize the following Lua script.

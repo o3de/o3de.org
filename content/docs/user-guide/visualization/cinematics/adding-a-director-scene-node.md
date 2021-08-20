@@ -3,8 +3,6 @@ description: ' Add a Director (Scene) node in the <guilabel>Track View</guilabel
 title: Adding a Director (Scene) Node
 ---
 
-{{< preview-migrated >}}
-
 To determine what camera you want your sequence to use, you must add a [Director (Scene) Node](/docs/user-guide/visualization/cinematics/track-view/nodes-director.md).
 
 **To add a Director node in the Track View**

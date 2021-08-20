@@ -3,8 +3,6 @@ description: ' Learn how to create blend trees in the O3DE Animation Editor. '
 title: Creating Blend Trees
 ---
 
-{{< preview-migrated >}}
-
 
 In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes. The **Animation Editor** supports state machines and blend trees. For more information about state machines, see [About State Machines](/docs/userguide/animation/character-editor/concepts-and-terms#understanding-state-machines).
 

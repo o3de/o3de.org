@@ -4,8 +4,6 @@ description: ' Group Script Canvas nodes for improved manageability of your visu
 title: Grouping Nodes
 ---
 
-{{< preview-migrated >}}
-
 As your Script Canvas graphs grow in size, you can group nodes to logically organize parts of a script or reduce its visual complexity. Groups can be nested, named, and color-coded.
 
 ## Creating and Managing Node Groups 

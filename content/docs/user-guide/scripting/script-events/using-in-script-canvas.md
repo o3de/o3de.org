@@ -4,8 +4,6 @@ title: Using Script Events in Script Canvas
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 Script Canvas scans for and detects script event assets, so after you define a script event, you can use it in Script Canvas.
 
 ## Script Events in the Node Palette 

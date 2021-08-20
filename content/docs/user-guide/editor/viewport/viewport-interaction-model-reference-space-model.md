@@ -4,8 +4,6 @@ title: Reference Space Model
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 You can use the Viewport Interaction Model to create reference spaces for your selected entities. This enables you to customize your selected entities in relation to a reference space.
 
 When working with reference spaces, remember the following rules:

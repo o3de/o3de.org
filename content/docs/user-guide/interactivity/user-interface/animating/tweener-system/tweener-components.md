@@ -4,8 +4,6 @@ description: ' Learn which entity parameters that Open 3D Engine supports in the
 title: Tweener Supported Components
 ---
 
-{{< preview-migrated >}}
-
 You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system.
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/670" >}}

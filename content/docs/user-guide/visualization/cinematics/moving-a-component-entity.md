@@ -4,8 +4,6 @@ description: ' Move a component entity for a sequence in the <guilabel>Track Vie
 title: Moving a Component Entity in a Sequence
 ---
 
-{{< preview-migrated >}}
-
 Each component entity has a **Transform** component. By default, when you add a component entity to a sequence, the **Position** and **Rotation** tracks appear automatically. You can manipulate the **Position** and **Rotation** properties for the component entity in a sequence. You can also add the **Scale** track if you want to manipulate the overall size of the component entity.
 
  Each of the tracks has a subtrack for **XYZ** properties so that you can animate each axis.

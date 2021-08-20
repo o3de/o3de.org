@@ -4,8 +4,6 @@ description: ' Use a scroll box component to present content, such as images or 
 title: ScrollBox
 ---
 
-{{< preview-migrated >}}
-
 You can use a **ScrollBox** component to present content, such as images or text, within a scrollable area.
 
 This component is typically used with a mask component, which hides the content outside of the masked area.
