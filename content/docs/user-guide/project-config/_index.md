@@ -29,7 +29,7 @@ The following table describes each of the properties in `project.json`. The defa
 
 | Property | Description | Default |
 | --- | --- | --- |
-| **project_name** | The name of the project. The `--project-name` O3DE CLI  parameter uses this name to identify the project. | "<PROJECT_NAME>" |
+| **project_name** | The name of the project. The `--project-name` O3DE CLI parameter uses this name to identify the project. | "<PROJECT_NAME>" |
 | **origin** | A URL for the project, such as the repository URL or project website. This field is intended for Project Manager to use. | "The primary repo for <PROJECT_NAME> goes here: i.e. http://www.mydomain.com" |
 | **license** | The license that the project uses, and any copyright information that you want to include. Consider providing the URL for the license. This field is intended for Project Manager to use. | "What license <PROJECT_NAME> uses goes here: i.e. https://opensource.org/licenses/MIT" |
 | **display_name** | The display name of the project in Project Manager. | "<PROJECT_NAME>" |
