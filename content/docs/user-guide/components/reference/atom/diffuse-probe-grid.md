@@ -7,23 +7,32 @@ toc: true
 
 The **Diffuse Probe Grid** component creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. At each point of intersection between the ray and the surrounding geometry, the probe stores lighting information. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
 
+{{< note >}}
+You must have a GPU with support for DirectX Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
+{{< /note >}}
+
+
 ## Provider
 
 [Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
+
 
 ## Dependencies
 
 [Box Shape component](/docs/user-guide/components/reference/shape/box-shape/)
 
+
 ## Properties
 
 ![Diffuse Probe Grid component properties](/images/user-guide/components/reference/atom/diffuse-probe-grid-component-ui.png)
+
 
 ### Bake Textures
 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Bake Textures** | Bakes the surrounding diffuse light environment to a texture that'll be used when **Editor Mode** or **Runtime Mode** is set to `Baked`. You can only bake textures when Editor Mode or Runtime Mode is set to `Real Time (Ray-Traced)`. | - | - |
+
 
 ### Probe Spacing
 
@@ -35,6 +44,7 @@ Probe spacing is the distance between probes (in meters) along each axis within 
 | **Y-Axis** | The amount of space between probes along the y-axis. The space must be within the Box Shape component's dimension along the y-axis. | `0.0` to the Box Shape component's `Dimensions`-`Y` property. | `2.0` |
 | **Z-Axis** | The amount of space between probes along the z-axis. The space must be within the Box Shape component's dimension along the z-axis. | `0.0` to the Box Shape component's `Dimensions`-`Z` property. | `2.0` |
 
+
 ### Grid Settings
 
 | Property | Description | Values | Default |
@@ -44,6 +54,7 @@ Probe spacing is the distance between probes (in meters) along each axis within 
 | **Normal Bias** | Fine-tuned adjustment for the surface-to-light secondary raycast, which is used to determine if the surface point is affected by a direct light. Increasing the normal bias moves the start point of the raycast farther away from the surface, which makes it more likely to be affected by direct light. | `0.0` to `1.0` | `0.1` |
 | **Editor Mode** | Controls whether the **Editor** uses real-time or baked diffuse GI. `Real Time (Ray-Traced)` requires a GPU capable of ray tracing. `Auto Select` uses `Baked` as a fallback, if ray tracing is not available. Refer to [Global illumination modes](#global-illumination-modes). | `Real Time (Ray-Traced)`, `Baked`, `Auto Select` |`Real Time (Ray-Traced)` |
 | **Runtime Mode** | Controls whether the standalone runtime uses real-time or baked diffuse GI. `Real Time (Ray-Traced)` requires a GPU capable of ray tracing. `Auto Select` uses `Baked` as a fallback, if ray tracing is not available. Refer to [Global illumination modes](#global-illumination-modes). | `Real Time (Ray-Traced)`, `Baked`, `Auto Select` |`Real Time (Ray-Traced)` |
+
 
 ## Global illumination modes
 
