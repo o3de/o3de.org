@@ -73,7 +73,7 @@ AZStd::vector<MyClass, AZ::AZStdAlloc<CustomAllocator>>
 
 ### Child Allocator Example 
 
- The following code example adds a custom allocator for the [Script Canvas gem](/docs/user-guide/gems/script-canvas.md).
+ The following code example adds a custom allocator for the [Script Canvas Gem](/docs/user-guide/gems/reference/script/script-canvas/).
 
 **Example**
 
