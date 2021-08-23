@@ -6,13 +6,15 @@ weight: 100
 toc: true
 ---
 
-This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here will guide you through the following steps:
+This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here and in the video will guide you through the following steps:
 
 * Configure the **O3DE Project Manager** engine settings.
 * Create a new O3DE project.
 * Build the O3DE project.
 
 At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template, ready to open in **O3DE Editor**.
+
+{{< youtube id="5VtWprJJBaw" title="O3DE Project Creation Using Project Manager" >}}
 
 ## Prerequisites
 
