@@ -8,7 +8,7 @@ The **Vegetation Distribution Filter** component creates the look of random plac
 
 Before completing the following procedure, you must have the following:
 + At least one asset defined in your vegetation layer.
-+ An entity that contains a gradient component. For instructions, see [Creating a Gradient Entity](/docs/userguide/vegetation/random-distribution-selection#create-gradient-entity).
++ An entity that contains a gradient component. For instructions, see [Creating a Gradient Entity](./gradient-random).
 
 **To create random distribution**
 
