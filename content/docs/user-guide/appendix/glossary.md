@@ -1,10 +1,8 @@
 ---
 title: Glossary
-weight: 1000
+weight: 100
 toc: true
 ---
-
-{{< preview-new >}}
 
 ### actor
 A specialized [entity](#entity) that is the basis for characters in a game.

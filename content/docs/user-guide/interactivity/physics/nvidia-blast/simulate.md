@@ -4,8 +4,6 @@ title: Simulate destruction with NVIDIA Blast
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 
 To use NVIDIA Blast assets in O3DE, create an entity, add a **Blast Family** component, add a **Blast Family Mesh Data** component, and then assign the blast assets to the components.
 

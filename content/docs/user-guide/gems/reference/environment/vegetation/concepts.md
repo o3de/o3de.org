@@ -4,8 +4,6 @@ title: Dynamic vegetation concepts
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 The dynamic vegetation system operates around the following ideas:
 + **What** - To specify the type of vegetation that appears, you must have prebuilt vegetation assets, such as `.cgf` or `.fbx` files. If you don't have your own, you can use O3DE's vegetation assets, which are in the Starter Game project.
 + **Where** - You can create small patches of flowers or populate a massive area with convincing varieties of plants and objects. To do this, use local area clusters in the foreground layer or coverage areas in the background layers, respectively.

@@ -5,8 +5,6 @@ description: 'Open 3D Engine (O3DE) PostFX Gradient Weight Modifier component re
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **PostFX Gradient Weight Modifier** component modifies post-processing effects' (PostFX) weight based on another entity's gradient signal.
 
 

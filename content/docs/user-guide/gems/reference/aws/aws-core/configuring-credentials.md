@@ -5,8 +5,6 @@ weight: 150
 toc: true
 ---
 
-{{< preview-new >}}
-
 To work with AWS resources in O3DE, you first need an AWS account. See the [AWS home page](https://aws.amazon.com/) for instructions on creating an account.
 
 You will also need to provision AWS credentials for your users. You can choose between short-term and long-term credentials. Long-term credentials are convenient during the development process. They're easier to configure, but you need to be careful they are kept secure. Short-term credentials are generally recommended for release because they have a finite lifetime. For more information and best practices, refer to the AWS topic on [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#use-roles) using IAM roles.

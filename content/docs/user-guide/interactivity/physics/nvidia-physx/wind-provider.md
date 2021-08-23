@@ -4,8 +4,6 @@ title: Create global or localized wind forces with PhysX
 weight: 500
 ---
 
-{{< preview-migrated >}}
-
 You can create global wind forces or wind forces contained within a collider volume with the **PhysX Force Region** component. Wind forces act on PhysX entities, such as **Cloth**, that can be affected by wind.
 
 1. Create an entity for the wind provider.

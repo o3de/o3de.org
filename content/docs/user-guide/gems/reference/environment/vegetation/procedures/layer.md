@@ -3,8 +3,6 @@ description: ' Create a basic vegetation layer in Open 3D Engine. '
 title: Creating a Vegetation Layer
 ---
 
-{{< preview-migrated >}}
-
 Creating a vegetation layer is the first and most basic step in creating your dynamic vegetation. The following procedure uses a simple workflow and assets from the Starter Game project.
 
 **To create a vegetation layer**

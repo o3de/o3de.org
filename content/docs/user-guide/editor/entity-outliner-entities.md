@@ -4,8 +4,6 @@ title: Working with Entities
 toc: true
 ---
 
-{{< preview-migrated >}}
-
 ## Reordering Entities 
 
 When you create entities or instantiate slices, they appear at the bottom of the list in the **Entity Outliner**.

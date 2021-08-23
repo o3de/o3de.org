@@ -3,8 +3,6 @@ description: null
 title: Flipbook Animation
 ---
 
-{{< preview-migrated >}}
-
 You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets).
 
 **To view a canvas in the UI Editor**

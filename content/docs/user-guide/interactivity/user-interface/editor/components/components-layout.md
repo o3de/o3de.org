@@ -4,8 +4,6 @@ description: ' Use layout components in O3DE''s UI Editor to organize child
 title: Layout Components
 ---
 
-{{< preview-migrated >}}
-
 Like other UI components, layout components define the layout properties of your game's interface. The UI system features four layout components to organize your elements: **LayoutColumn**, **LayoutRow**, **LayoutGrid**, and **LayoutCell**. You can also nest layout components.
 
 **Topics**

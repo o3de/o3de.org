@@ -6,8 +6,6 @@ title: Using the File Tagging System to Include or Exclude Assets
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 O3DE uses a file tagging system to include or exclude files at various stages of processing. This system employs file tag rules to select files that match specified patterns. File tags are associated with each rule to use as keys in file tag queries. This is done by using the O3DE FileTag API. You can create your own custom file tag rules using the O3DE Asset Editor. This is useful whenever you need additional control over which files should be included or excluded during a processing step. For example, as part of asset bundling, it is useful to eliminate "false positives" found after using the **Missing Dependency Scanner**.
 
 **Topics**

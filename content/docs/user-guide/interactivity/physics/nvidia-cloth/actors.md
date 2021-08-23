@@ -5,8 +5,6 @@ title: Cloth for Actor components
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 To use **Cloth**, you must enable the **NVIDIA Cloth** gem. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-cloth/) documentation.
 
 You can create cloth assets for entities with **Actor** components in the content creation application of your choice and import them into O3DE from an `.fbx` file. The actor asset should have the following:

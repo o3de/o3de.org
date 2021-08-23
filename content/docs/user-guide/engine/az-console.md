@@ -3,8 +3,6 @@ description:  Use AZ::Console to set console variables and functors for your O3D
 title: AZ::Console
 ---
 
-{{< preview-migrated >}}
-
 The `AZ::Console` class provides a set of macros for defining variables and mapping functions that you can use to interact with in-game variables and processes. Use the macros defined in this class to set the console variables (cvars) and functors (cfuncs) for your game, and then access them through the O3DE console.
 
 `AZ::Console` is defined in the following header: `%INSTALL-ROOT%\dev\Code\Framework\AzCore\AzCore\Console\IConsole.h`

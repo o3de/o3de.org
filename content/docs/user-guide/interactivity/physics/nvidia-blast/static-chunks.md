@@ -5,8 +5,6 @@ title: Partial destruction with NVIDIA Blast
 weight: 500
 ---
 
-{{< preview-migrated >}}
-
 In some scenarios, you might want to partly destroy an entity. For example, you create a destructible wall, but want the bottom of the wall to remain in place as a static mesh with colliders after the top of the wall takes damage from a projectile and is destroyed. You can achieve this by adding **static** to the `name` primitive attribute of non-root mesh chunks in Houdini.
 
 ## Make non-root chunks static in NVIDIA Blast 

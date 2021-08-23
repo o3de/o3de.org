@@ -4,8 +4,6 @@ description: ' Save customized node comments and groups as presets for quick reu
 title: Creating Comment and Group Presets
 ---
 
-{{< preview-migrated >}}
-
 You can save custom node comment and node group settings as presets that you can conveniently reuse. In a team setting, these presets can help you create your own coloring and naming conventions to improve clarity and consistency among Script Canvas graphs.
 
 ## Customizing the Look of a Comment or Group 

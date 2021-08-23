@@ -3,8 +3,6 @@ description: ' Create motion events for your game project in Open 3D Engine. '
 title: Creating Motion Events
 ---
 
-{{< preview-migrated >}}
-
 The `EMotionFX::MotionEvent` class inherits `EMotionFX::Event` and describes an event that happens at a specified time or range of time during a motion.
 
 A motion event could be a footstep sound to play, a particle system to spawn, or a script to execute. Because motion events are completely generic, EMotion FX doesn't handle them for you. You must create and handle the events that your game requires.

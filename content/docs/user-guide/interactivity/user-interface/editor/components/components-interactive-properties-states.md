@@ -4,8 +4,6 @@ description: ' The States group of properties defines the appearance of the inte
 title: States
 ---
 
-{{< preview-migrated >}}
-
 The **States** group of properties defines the appearance of the interactive element and its child UI elements when the element is in the **Hover**, **Pressed**, and **Disabled** states.
 
 The normal appearance of a visual element (defined as an element with a visual component, such as image or text) is defined by the properties of that visual component. Some of the visual component's properties, however, can be overridden by an interactive component that is in the **Hover**, **Pressed**, and **Disabled** states.

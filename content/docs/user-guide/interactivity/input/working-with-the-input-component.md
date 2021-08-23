@@ -3,8 +3,6 @@ description: ' Work with the Input component in Open 3D Engine. '
 title: Working with the Input Component
 ---
 
-{{< preview-migrated >}}
-
 You can create an `.inputbindings` file for an **Input** component and specify the input values and events.
 
 ## Creating an Input to Event Binding Asset

@@ -5,8 +5,6 @@ title: Using the Resource Compiler Image Tool
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands.
 
 **Note**

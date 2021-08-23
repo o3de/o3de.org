@@ -5,8 +5,6 @@ title: Exposing Custom Components to Track View for Animation
 weight: 900
 ---
 
-{{< preview-migrated >}}
-
 To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to O3DE's Track View and **Entity Inspector**. To expose a custom component and its properties, you must perform three steps:
 
 1. Create getter and setter methods for the animated property on one of the component's request event buses.

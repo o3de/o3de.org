@@ -4,8 +4,6 @@ description: ' See the best practices for working with skinned meshes actors for
 title: Creating Skinned Meshes for Actors
 ---
 
-{{< preview-migrated >}}
-
 Use the following best practices when you create your character for the **Animation Editor**. In O3DE, a character is a skinned mesh.
 
 ## Setting up the World Coordinate System and Root Joint 

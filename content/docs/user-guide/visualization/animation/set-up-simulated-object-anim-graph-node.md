@@ -3,8 +3,6 @@ description: ' Set up an anim graph for the simulated object in Open 3D Engine. 
 title: Setting Up the Simulated Object Anim Graph Node
 ---
 
-{{< preview-migrated >}}
-
 After you set up the simulated object, create an anim graph to view the simulation. This lets you preview how the tassel moves in relation to the actor's primary motion.
 
 **To set up an anim graph node for the simulated object**

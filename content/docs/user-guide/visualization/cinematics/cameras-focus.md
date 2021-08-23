@@ -3,8 +3,6 @@ description: ' Set the camera focus for cinematic sequences in Open 3D Engine. '
 title: Animating Depth of Field
 ---
 
-{{< preview-migrated >}}
-
 Camera focus, or depth of field (DoF), is used to add realism to scenes, which simulates the way a real-world camera works. You can use a broad DoF to focus on the entire scene, or use a shallow DoF to have sharp focus only on objects that are a specific distance from the camera.
 
 See the following guidelines and best practices when setting up camera focus:

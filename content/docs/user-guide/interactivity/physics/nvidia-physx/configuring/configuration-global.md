@@ -4,8 +4,6 @@ title: Global Configuration
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 On the **Global Configuration** tab, you can configure world settings and editor settings.
 
 ![\[PhysX Global Configuration tab\]](/images/user-guide/physx/physx-configuration-1.png)

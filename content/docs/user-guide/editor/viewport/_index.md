@@ -5,8 +5,6 @@ linktitle: Viewport interaction model
 title: Working with the Viewport Interaction Model
 ---
 
-{{< preview-migrated >}}
-
 The new Viewport Interaction Model replaces the old interaction model in the viewport. This feature combines free and local selection so that you can more easily select, move, and modify entities in the viewport. With the Viewport Interaction Model, you can create custom reference spaces to move your entities. With custom reference spaces, you can move your selected entities in relation to the reference that you specified. The Viewport Interaction Model also unifies entity and component manipulators so that you can interact with entities and components in the same way.
 
 The Viewport Interaction Model provides the following benefits:

@@ -4,8 +4,6 @@ description: ' Use synchronized animation graphs to synchronize animation betwee
 title: 'Synchronizing Animation Graphs: Example'
 ---
 
-{{< preview-migrated >}}
-
 You can use synchronized animation graphs to synchronize animation between actors. For example, the animation of one actor might trigger an animation in another actor. An animation graph can be the primary graph and have multiple secondary graphs. Likewise, an animation graph can be both a secondary graph of one graph and a primary graph for another graph.
 
 This topic describes the following main steps for synchronizing two animation graphs:

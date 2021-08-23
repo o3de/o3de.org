@@ -3,8 +3,6 @@ description: ' Flag dynamic slices in Open 3D Engine''s UI Editor . '
 title: Flagging Dynamic Slices
 ---
 
-{{< preview-migrated >}}
-
 A slice flagged as a dynamic slice can be used like any other slice, but it can also be instantiated at runtime.
 
 You can flag a slice as dynamic in the **Asset Browser**.

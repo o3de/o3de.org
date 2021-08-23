@@ -4,8 +4,6 @@ description: ' Link gradient entities to vegetation entities to create random di
 title: Using Gradients to Create Random Distribution
 ---
 
-{{< preview-migrated >}}
-
 You can use gradients in different areas of O3DE, such as with audio and AI. Gradients are particularly helpful in dynamic vegetation, where they create a realistically random look in the distribution of your vegetation.
 
 You can achieve the appearance of random distribution by using gradients to create both random selection and random placement.

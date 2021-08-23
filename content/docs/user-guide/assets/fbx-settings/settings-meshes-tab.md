@@ -3,8 +3,6 @@ description: ' Open 3D Engine FBX Settings Meshes tab export properties and modi
 title: FBX Settings Meshes tab
 ---
 
-{{< preview-migrated >}}
-
 All meshes in the `.fbx` file are processed to a single runtime asset \(`.cgf`\) by default. In the **Meshes** tab, you can create mesh groups containing specific meshes from the `.fbx` file. Each **Mesh group** produces its own `.cgf` file. The processed runtime assets appear in **Asset Browser** as children of the `.fbx` file.
 
 **Contents**
