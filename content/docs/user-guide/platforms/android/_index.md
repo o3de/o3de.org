@@ -43,7 +43,7 @@ Keep track of the location where you installed the Android SDK, as you will need
 In order to simplify project generation steps, add the other prerequisites (Java, Gradle, CMake, and Ninja) to your PATH environment variable. Otherwise, you must configure the paths to each respective package by using the command line arguments for the Android Project Generation script.
 
 ### Android Keystore
-APKs that are created from the Android build process must be signed before they are deployed. It is possible to configure this for a generated project after project creation through Android Studio, but it is also possible to set this during the project generation step. Android uses the JKS format so we can use the 'keytool' command from java to accomplish this. 
+The Android build process creates APKs that you must sign before you can deploy them. You can configure a signed APK for your generated project after creating the project through Android Studio, or you can sign the APK during the project generation step. Android uses the JKS format so you can use the `keytool` Java command to sign your APK. 
 
 |Field Name|Keytool Argument|Description|
 | --- | --- | --- |
