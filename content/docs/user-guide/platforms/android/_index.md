@@ -34,7 +34,7 @@ Android Studio is the IDE commonly used in conjunction with Gradle to develop an
 ## Setup Requirements
 
 ### **Setup the Android SDK**
-The Android SDK will be configured as part of the intial Android Studio experience. When you start Android Studio and have not setup the Android SDK yet, it will guide you through the steps to download and install it and at least one SDK platform.
+You can set up and configure the Android SDK as part of the initial Android Studio experience. When you set up Android Studio for the first time, it will guide you through the steps to download and install at least one SDK platform. You can also set up and configure SDKs from within Android Studio, if it's already set up. 
 
 Keep track of the location where you installed the Android SDK, as you will need it later to generate an Android project for O3DE. 
 
