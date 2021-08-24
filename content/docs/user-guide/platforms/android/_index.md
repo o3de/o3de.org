@@ -13,7 +13,7 @@ weight: 200
 ### Java Development Kit (JDK)
 The latest version of the Java Development Kit is needed to both compile the android java source for the project as well as to create a Java Key Storage (JKS) files used by the Android SDK to sign the APK.
 
-### **Gradle**
+### Gradle
 [Gradle](https://gradle.org/install/) (version 6.7.1 or newer) is the build system designed to build and create Android applications.
 
 ### **Android SDK** 
