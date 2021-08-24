@@ -31,7 +31,7 @@ The [ninja](https://ninja-build.org/) build system is used by CMake to build the
 Android Studio is the IDE commonly used in conjunction with Gradle to develop and build Android Apps. Android Studio provides the mechanism to setup and download the required Android SDK for the build process. Download the latest version from [https://developer.android.com/studio](https://developer.android.com/studio) and run through the installation process.
 
 
-## **Setup Requirements**
+## Setup Requirements
 
 ### **Setup the Android SDK**
 The Android SDK will be configured as part of the intial Android Studio experience. When you start Android Studio and have not setup the Android SDK yet, it will guide you through the steps to download and install it and at least one SDK platform.
