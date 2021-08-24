@@ -38,7 +38,7 @@ You can set up and configure the Android SDK as part of the initial Android Stud
 
 Keep track of the location where you installed the Android SDK, as you will need it later to generate an Android project for O3DE. 
 
-### **Prerequisite Packages installation**
+### Prerequisite packages installation
 
 The other prerequisites described above (Java, Gradle, CMake, Ninja) should be on the command path in order to simplify project generation steps. If not, the path to their respective executables will need to be configured in the command line arguments for the Android project generator.
 
