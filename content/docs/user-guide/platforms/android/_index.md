@@ -19,7 +19,7 @@ The latest version of the Java Development Kit is needed to both compile the and
 ### **Android SDK** 
 The Android SDK will contain the android libraries, packages, ndk, tools, etc that are needed to build the Android App for an O3DE project. 
 
-### **CMake**
+### CMake
 [CMake](https://cmake.org/download/) project generator (version 3.21 or newer) is needed for O3DE for all native C++ builds, regardless of the platform. 
 
 ### **Ninja Build System**
