@@ -110,9 +110,9 @@ The list of arguments for this script is described below:
 
 
 ## Android Deployment Script
-The script to deploy the android project is located under `cmake/Tools/Platform/Android/deploy_android.py` 
+Find the script to deploy the Android project at `<engine-root>/cmake/Tools/Platform/Android/deploy_android.py`.
 
-The list of arguments for this script is described below:
+The `deploy_android.py` script contains the following arguments:
 | Argument&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Description | Default | Notes |
 | --- | --- | --- | --- |
 | \-h, --help | Show the help message and exit |     |     |
