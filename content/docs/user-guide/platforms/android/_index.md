@@ -47,11 +47,11 @@ The Android build process creates APKs that you must sign before you can deploy 
 
 |Field Name|Keytool Argument|Description|
 | --- | --- | --- |
-| Distinguished Name ([DN](https://datatracker.ietf.org/doc/html/rfc2253)) | dname | Descriptive name of an entity to identify the owner of the key. |
-| Alias Name | alias | Alias to identify the key and certificate in the keystore (a key store file may contain multiple keys and certificates).|
-| Key Password | keypass | The password to protect the individual signing key. |
-| Keystore Password | storepass | The password to protect the entire Keystore file. |
-| Validity Period | validity | The validity period (starting from the current time) that the certificate is valid for. This value is represented in days.|
+| Distinguished Name ([DN](https://datatracker.ietf.org/doc/html/rfc2253)) | `dname` | Descriptive name of an entity to identify the owner of the key. |
+| Alias Name | `alias` | The identifier for the key and certificate in the KeyStore file. A KeyStore file may contain multiple keys and certificates.|
+| Key Password | `keypass` | The password to protect the individual signing key. |
+| Keystore Password | `storepass` | The password to protect the entire KeyStore file. |
+| Validity Period | `validity` | The length of time in days that the certificate is valid for, starting from the day the KeyStore was created.|
 
 ### **Android Assets**
 Before you can generate an O3DE Android project, you must have assets for the Android project processed and available. This is done by the Editor and Tools project for the host platform (i.e. Windows), and running AssetProcessor (or AssetProcessorBatch) on the desired project.
