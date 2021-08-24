@@ -134,12 +134,12 @@ Alternatively, instead of using command line, you can open the folder `%O3DE_BUI
     {{< /note >}}
 
 
-**Step 7. Deploy to the android device**
+5. Deploy your project to an Android device.
 
-```
-%O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\deploy_android.py --build-dir %O3DE_BUILD_ROOT%\android --configuration profile --clean -t %O3DE_ANDROID_DEPLOY_TYPE%
-```
-{{< note >}}
-The deployment tool will rely on android's adb tool to perform the deployment. The target device must be placed in development mode, and connected to USB. Follow the [Android instructions](https://developer.android.com/studio/debug/dev-options) on how to do this. You may be ask to trust the host machine when deploying, and the deployment process will be blocked until you enable the device to trust the host machine.
-{{< /note >}}
+    ```
+    %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\deploy_android.py --build-dir %O3DE_BUILD_ROOT%\android --configuration profile --clean -t %O3DE_ANDROID_DEPLOY_TYPE%
+    ```
+    {{< note >}}
+The deployment tool relies on Android Debug Bridge (ADB), Android's command-line tool, to perform the deployment. You must set the target device to development mode and connect it to your machine using a USB. To set this up, follow the [Android instructions](https://developer.android.com/studio/debug/dev-options). Your target device may ask you to trust the host machine, which must enable to continue the deployment process.
+    {{< /note >}}
 
