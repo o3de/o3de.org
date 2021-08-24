@@ -5,7 +5,7 @@ description: "Open 3D Engine (O3DE) Diffuse Probe Grid component reference."
 toc: true
 ---
 
-The **Diffuse Probe Grid** component creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. At each point of intersection between the ray and the surrounding geometry, the probe stores lighting information. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
+The **Diffuse Probe Grid** component creates a volume of light probes that provide diffuse global illumination (GI) within the specified area. Each probe in the volume uses real-time ray tracing to capture the *irradiance*, or surrounding diffuse light environment. Real-time ray tracing casts several hundred rays in different directions around each probe. Each ray has a maximum length of 30 meters. At each point of intersection between the ray and the surrounding geometry, the probe stores lighting information. Then, it creates an irradiance texture out of the ray traced data and applies the texture to each mesh.
 
 {{< note >}}
 You must have a GPU with support for DirectX Shader Model 6.3 or later to use raytracing in the **Atom Renderer**.
@@ -72,4 +72,5 @@ There are a variety of configuration setups for Editor and runtime:
   
 - **Editor Real-Time and Runtime Auto Select**: The Editor uses real-time ray tracing for the best editing experience, while the runtime chooses between real-time ray tracing or baked, depending on the GPU's capability.
 
-- **Editor Baked and Runtime Baked**: Both the Editor and the runtime use baked diffuse GI for maximum performance. The textures can be explicitly baked at the appropriate time by temporarily switching the Editor Mode to `Real Time (Ray-Traced)` and baking the textures. 
+- **Editor Baked and Runtime Baked**: Both the Editor and the runtime use baked diffuse GI for maximum performance. The textures can be explicitly baked at the appropriate time by temporarily switching the Editor Mode to `Real Time (Ray-Traced)` and baking the textures.
+  
