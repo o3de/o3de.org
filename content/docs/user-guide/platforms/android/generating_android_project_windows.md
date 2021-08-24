@@ -129,6 +129,10 @@ Even though a signing key is required for the project in order to deploy, it doe
     gradlew assembleProfile
     ```
 
+    {{< note >}}
+Alternatively, instead of using command line, you can open the folder `%O3DE_BUILD_ROOT%\android` directly in Android Studio and build the APK from there.
+    {{< /note >}}
+
 
 **Step 7. Deploy to the android device**
 
