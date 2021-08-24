@@ -5,7 +5,6 @@ description: Step by step guide to generating and deploying an Android project
 weight: 200
 ---
 
-## **Example Workflow**
 
 The following workflow will describe the steps to build and deploy a specific project (Atom Sample Viewer) to an Android device running Android version 10. The steps will use the `D:\` drive on windows as a basis. The following prerequisites must also be satisfied in order for the steps to work:
 
