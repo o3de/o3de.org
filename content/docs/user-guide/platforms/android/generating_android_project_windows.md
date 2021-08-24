@@ -29,7 +29,7 @@ This example workflow represents the 'Source Engine' workflow when setting up [O
 {{< /note >}}
 
 
-## **Sample Environment and Settings**
+## (Optional) Set up environment variables
 
 To simplify the different paths and values that are fed through out the process, we will use environment variables to control the settings.
 
