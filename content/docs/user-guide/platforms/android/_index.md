@@ -53,7 +53,7 @@ The Android build process creates APKs that you must sign before you can deploy 
 | Keystore Password | `storepass` | The password to protect the entire KeyStore file. |
 | Validity Period | `validity` | The length of time in days that the certificate is valid for, starting from the day the KeyStore was created.|
 
-### **Android Assets**
+### Android assets
 Before you can generate an O3DE Android project, you must have assets for the Android project processed and available. This is done by the Editor and Tools project for the host platform (i.e. Windows), and running AssetProcessor (or AssetProcessorBatch) on the desired project.
 
 Specifically for android, you must configure the registry settings value for AssetProcessor to process 'android' platform assets. This is done by updating the 'AssetProcessorPlatformConfig.setreg' file located under the 'Registry' folder of the engine root.
