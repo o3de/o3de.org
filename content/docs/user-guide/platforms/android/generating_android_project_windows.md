@@ -1,7 +1,7 @@
 ---
-title: Generating an Android project on Windows
-linkTitle: Android Project Generation
-description: Step by step guide to generating and deploying an Android project
+title: Generating Android Projects on Windows
+linkTitle: Generating Android Project
+description: Step-by-step guide to generating and deploying an Android project for Open 3D Engine (O3DE).
 weight: 200
 ---
 
