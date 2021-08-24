@@ -121,13 +121,13 @@ Even though a signing key is required for the project in order to deploy, it doe
     ```
 
 
-**Step 6. Build the android project**
+4. Build the Android project.
 
-```
-cd %O3DE_BUILD_ROOT%\android
+    ```
+    cd %O3DE_BUILD_ROOT%\android
 
-gradlew assembleProfile
-```
+    gradlew assembleProfile
+    ```
 
 
 **Step 7. Deploy to the android device**
