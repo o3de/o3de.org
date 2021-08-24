@@ -114,11 +114,11 @@ Even though a signing key is required for the project in order to deploy, it doe
 {{< /note >}}
 
 
-**Step 5. Generate the android project**
+3. Use Python to run `generate_android_project.py` and generate the Android project for Atom Sample Viewer. The following command by itself assumes you skipped step 2 and that you plan to create KeyStore settings through Android Studio after generating the project. Otherwise, if you did generate a KeyStore in step 2, then include the `--signconfig-*` options listed below and specify their values.
 
-```
-%O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION%  --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE% --signconfig-store-file %O3DE_ANDROID_SIGNCONFIG_FILE% --signconfig-store-password %O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD% --signconfig-key-alias %O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS% --signconfig-key-password %O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD% --overwrite-existing
-```
+    ```
+    %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION% --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE%
+    ```
 
 {{< note >}}
 At this point, you can alternatively open the folder %O3DE_BUILD_ROOT%\android directly in Android Studio and build the APK from there instead of using command line in the next step.
