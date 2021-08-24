@@ -120,9 +120,6 @@ Even though a signing key is required for the project in order to deploy, it doe
     %O3DE_ENGINE_PATH%\python\python.cmd %O3DE_ENGINE_PATH%\cmake\Tools\Platform\Android\generate_android_project.py --engine-root %O3DE_ENGINE_PATH% --project-path %O3DE_PROJECT_PATH% --build-dir %O3DE_BUILD_ROOT%\android --third-party-path %USERPROFILE%\.o3de\3rdParty --android-sdk-path %O3DE_ANDROID_SDK_PATH% --android-ndk-version %O3DE_ANDROID_NDK_VERSION% --android-sdk-platform %O3DE_ANDROID_SDK_API_LEVEL% --include-apk-assets --asset-mode %O3DE_ANDROID_ASSET_MODE%
     ```
 
-{{< note >}}
-At this point, you can alternatively open the folder %O3DE_BUILD_ROOT%\android directly in Android Studio and build the APK from there instead of using command line in the next step.
-{{< /note >}}
 
 **Step 6. Build the android project**
 
