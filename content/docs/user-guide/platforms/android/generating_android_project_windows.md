@@ -10,6 +10,10 @@ In this tutorial, you will learn how to build and deploy an Android project in *
 
 The following workflow describes the steps to build and deploy the Atom Sample Viewer project to a device that runs Android 10. You can also follow these steps to build your own project on any supported Android version. 
 
+## Prerequisites
+
+The following instructions assume that you have:
+
 1.  Steps are performed in a Windows host machine.
 2.  Android Studio and Android SDK are installed
 3.  JDK development kit is installed and on the system path
