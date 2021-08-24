@@ -25,9 +25,9 @@ The Android SDK will contain the android libraries, packages, ndk, tools, etc th
 ### Ninja Build System
 The [ninja](https://ninja-build.org/) build system is used by CMake to build the underlying native C++ code for the O3DE project.
 
-## **Optional Software**
+## Optional Software
 
-### **Android Studio**
+### Android Studio
 Android Studio is the IDE commonly used in conjunction with Gradle to develop and build Android Apps. Android Studio provides the mechanism to setup and download the required Android SDK for the build process. Download the latest version from [https://developer.android.com/studio](https://developer.android.com/studio) and run through the installation process.
 
 
@@ -125,7 +125,7 @@ The `deploy_android.py` script contains the following arguments:
 
 
 
-## **Additional Topics**
+## Additional Topics
 
 + [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows)
 
