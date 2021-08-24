@@ -16,7 +16,7 @@ The latest version of the Java Development Kit is needed to both compile the and
 ### Gradle
 [Gradle](https://gradle.org/install/) (version 6.7.1 or newer) is the build system designed to build and create Android applications.
 
-### **Android SDK** 
+### Android SDK
 The Android SDK will contain the android libraries, packages, ndk, tools, etc that are needed to build the Android App for an O3DE project. 
 
 ### CMake
