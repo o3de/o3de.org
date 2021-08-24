@@ -109,7 +109,7 @@ The list of arguments for this script is described below:
 | `--overwrite-existing` | (Optional) Overwrites existing scripts in the target build folder if they already exist. | `False` |     |
 
 
-## **Android Deployment Script**
+## Android Deployment Script
 The script to deploy the android project is located under `cmake/Tools/Platform/Android/deploy_android.py` 
 
 The list of arguments for this script is described below:
