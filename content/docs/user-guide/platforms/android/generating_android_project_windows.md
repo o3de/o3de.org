@@ -35,6 +35,14 @@ The project generation steps involve passing in different paths and values to th
 
 **Source and build directories**
 
+Add the following source and build directories to your environment variables.
+
+- `O3DE_ENGINE_PATH`: The path to the O3DE source engine.
+
+- `O3DE_PROJECT_PATH`: The path to Atom Sample Viewer project.  
+
+- `O3DE_BUILD_ROOT`: The path to build the Atom Sample Viewer project at.
+  
 ```
 SET O3DE_ENGINE_PATH=D:\github\o3de
 SET O3DE_PROJECT_PATH=D:\github\o3de-atom-sampleviewer
