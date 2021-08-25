@@ -56,7 +56,7 @@ The Android build process creates APKs that you must sign before you can deploy 
 ### Android assets
 Before you can generate an O3DE Android project, you must process and prepare the assets for Android. You can do this by using the **O3DE Editor** and the **Asset Processor** (or **Asset Processor Batch**) on your project.
 
-Specifically for android, you must configure the registry settings value for AssetProcessor to process 'android' platform assets. This is done by updating the 'AssetProcessorPlatformConfig.setreg' file located under the 'Registry' folder of the engine root.
+Specifically for Android, you must configure the registry settings value so that the Asset Processor can process Android platform assets. To do this, update the `<engine-root>\Registry\AssetProcessorPlatformConfig.setreg` file.
 
 Under the `Amazon/AssetProcessor/Platforms` section of the file, enable the "android" flag. For example:
 
