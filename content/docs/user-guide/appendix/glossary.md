@@ -227,7 +227,7 @@ Used for creating logic and behaviors for your game project. You can create scri
 + Lua is a lightweight and embeddable scripting language. You can use Lua to facilitate quick iteration of your game project. Lua scripts have the file extension `.lua` or `.luac`, such as `myscriptexample.lua`. You can add script functionality to your game entities with the **Lua Script** component.
 
 ### SDK engine
-A redistributable build of O3DE where the core engine, Gem, and tool binaries are pre-built, ready to be used by any O3DE project. When building from source, either the `ALL_BUILD` or `INSTALL` target is used to create this layout. Synonyms include "install layout", "pre-built binaries", "pre-built engine SDK", and "pre-built SDK engine". Compare with [source engine](#source-engine).
+A redistributable build of O3DE where the core engine, Gem, and tool binaries are pre-built, ready to be used by any O3DE project. When building from source, use either the `ALL_BUILD` or `INSTALL` target to create this layout. Synonyms include "install layout", "pre-built binaries", "pre-built engine SDK", and "pre-built SDK engine". Compare with [source engine](#source-engine).
 
 ### sequence
 The content generated from the Track View for cutscenes or other canned animation triggers.
