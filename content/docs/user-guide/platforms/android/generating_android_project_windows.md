@@ -31,7 +31,7 @@ This example workflow represents the 'Source Engine' workflow when setting up [O
 
 ## (Optional) Set up environment variables
 
-To simplify the different paths and values that are fed through out the process, we will use environment variables to control the settings.
+The project generation steps involve passing in different paths and values to the Android Project Generation script. To simplify the paths and values, set up the following environment variables. If you skip this step, pass in the literal paths and values to the commands instead. 
 
 **Source and Build directories**
 
