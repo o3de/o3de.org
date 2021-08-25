@@ -108,6 +108,17 @@ These settings control how the package download system functions.
   *Type*: Integer
   *Default*: 3
 
+### Build/Debugging Tools
+
+* **`LY_BUILD_WITH_ADDRESS_SANITIZER`** - Enables [Address Sanitizer](https://en.wikipedia.org/wiki/AddressSanitizer) (ASan).
+
+  {{< note >}}
+  Currently only supported for Windows and "Visual Studio" generators. Documentation can be found [here](https://docs.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-160)
+  {{< /note >}}
+
+  *Type*: `BOOL`
+  *Default*: `OFF`
+
 <!-- 
   TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)
 -->
