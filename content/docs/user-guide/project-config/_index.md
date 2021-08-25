@@ -18,11 +18,11 @@ To create and manage projects, you can use either the GUI-based **Project Manage
 | [O3DE CLI Reference](cli-reference/) | Learn how to create and configure your O3DE environment and its objects, including engines, projects, and Gems, using the `o3de` Python script. |
 | [Troubleshooting](troubleshooting/) | Troubleshoot common issues that you might encounter during project configuration. |
 
-To build projects, you can use either Project Manager or **CMake**. For more information, refer to any of the following resources:
+To build projects, use either Project Manager or **CMake**. For more information, refer to any of the following resources:
 
 * [Introductory tutorials](/docs/welcome-guide/create/) in the Get Started Guide.
 * [Project Manager](project-manager/) and its **Build** command in the project drop-down menu.
-* [Configure and Build](/docs/user-guide/build/configure-and-build) topic in the Build section of this User Guide.
+* [Configure and build](/docs/user-guide/build/configure-and-build) topic in the Build section of this User Guide.
 
 ## Understanding `project.json` {#understanding-project-json}
 

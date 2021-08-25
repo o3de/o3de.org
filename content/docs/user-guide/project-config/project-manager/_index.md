@@ -1,7 +1,7 @@
 ---
 linktitle: Project Manager
 title: Project Manager
-description: A reference for the GUI-based Project Manager tool that helps create, build, and configure projects in Open 3D Engine (O3DE).
+description: A reference for the GUI-based Project Manager tool that enables you to create, build, and configure projects in Open 3D Engine (O3DE).
 weight: 100
 ---
 
