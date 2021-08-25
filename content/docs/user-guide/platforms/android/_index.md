@@ -79,7 +79,7 @@ Alternatively, you can use `--platforms=android` when launching the Asset Proces
 
 After you've processed the assets for Android, you can proceed to generate the Android project.
 
-## **Android Project Generation Script**
+## Android Project Generation Script
 
 The script to generate android projects is located in the engine root under `cmake/Tools/Platform/Android/generate_android_project.py`
 
