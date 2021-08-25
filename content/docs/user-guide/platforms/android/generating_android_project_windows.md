@@ -49,7 +49,9 @@ SET O3DE_PROJECT_PATH=C:\o3de-projects\o3de-atom-sampleviewer
 SET O3DE_BUILD_ROOT=C:\build_asv
 ```
 
-**Key Store Settings**
+**KeyStore settings**
+
+Add the following KeyStore settings to your environment variables.
 
 ```
 set O3DE_ANDROID_SIGNCONFIG_FILE=%O3DE_BUILD_ROOT%\o3de.keystore
