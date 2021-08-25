@@ -70,6 +70,8 @@ While signing keys are required to deploy to an Android device, you don't need t
 
 **Android Project Generation Settings**
 
+Add the following Android Project Generation settings to your environment variables.
+
 ```
 set O3DE_ANDROID_SDK_PATH=C:\Android\android-sdk
 set O3DE_ANDROID_NDK_VERSION=22.*
