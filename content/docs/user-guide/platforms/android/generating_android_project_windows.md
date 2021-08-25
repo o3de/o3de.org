@@ -64,7 +64,7 @@ SET O3DE_ANDROID_DN="cn=atom-sample-viewer, ou=o3de, o=LF, c=US"
 ```
 
 {{< note >}}
-While have signing keys is required to deploy to an android device, this step is optional. If you already have an existing JKS file generated earlier, and know the values for the store password, key password, alias, etc, then they can be used in place of these values. 
+While signing keys are required to deploy to an Android device, you don't need to configure KeyStore settings in your environment variables. Rather, you can use the values (such as store password, key password, alias, and so on) from your JKS file directly.
 {{< /note >}}
 
 
