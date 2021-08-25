@@ -84,7 +84,6 @@ set O3DE_ANDROID_DEPLOY_TYPE=BOTH
 Set `O3DE_ANDROID_SDK_PATH` to the location where you set up your Android SDK package.
 {{< /note >}}
 
-<br/>
 
 ## Steps
 
