@@ -77,7 +77,7 @@ In the `Amazon/AssetProcessor/Platforms` section of the file, set the `"android"
 
 Alternatively, you can use `--platforms=android` when launching the Asset Processor Batch. Refer to step 3 in [Generating Android Projects on Windows](/docs/user-guide/platforms/android/generating_android_project_windows/#steps).
 
-After the android assets are processed, you can proceed with the Android project generation.
+After you've processed the assets for Android, you can proceed to generate the Android project.
 
 ## **Android Project Generation Script**
 
