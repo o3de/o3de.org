@@ -81,7 +81,7 @@ set O3DE_ANDROID_DEPLOY_TYPE=BOTH
 ```
 
 {{< note >}}
-The `O3DE_ANDROID_SDK_PATH` represents a specific location based on where you specify it in Android Studio or where you download and unpack the Android SDK Tools package
+Set `O3DE_ANDROID_SDK_PATH` to the location where you set up your Android SDK package.
 {{< /note >}}
 
 <br/>
