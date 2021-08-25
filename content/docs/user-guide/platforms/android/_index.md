@@ -58,7 +58,7 @@ Before you can generate an O3DE Android project, you must process and prepare th
 
 Specifically for Android, you must configure the registry settings value so that the Asset Processor can process Android platform assets. To do this, update the `<engine-root>\Registry\AssetProcessorPlatformConfig.setreg` file.
 
-Under the `Amazon/AssetProcessor/Platforms` section of the file, enable the "android" flag. For example:
+In the `Amazon/AssetProcessor/Platforms` section of the file, set the `"android"` flag to `"enabled"`. For example:
 
 ```
 "Amazon": {
