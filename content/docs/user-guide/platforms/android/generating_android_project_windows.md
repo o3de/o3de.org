@@ -85,7 +85,10 @@ Set `O3DE_ANDROID_SDK_PATH` to the location where you set up your Android SDK pa
 {{< /note >}}
 
 
-## Steps
+## (Optional) Build O3DE and Asset Processor Batch
+
+This tutorial assumes you've built O3DE as a source engine by following the instructions in [Set up Open 3D Engine](/docs/welcome-guide/setup/setup-from-github/) for "Source engine". These instructions build the full suite of O3DE tools, including **Asset Processor Batch**. However, if you haven't built O3DE, the following describes the minimal steps you need to set up O3DE and Asset Processor Batch to process assets and build your project for Android.
+
 
 **(Optional) Build O3DE and Asset Processor Batch**
 
