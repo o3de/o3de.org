@@ -132,9 +132,9 @@ The following instructions assume that you've completed the optional steps to se
     gradlew assembleProfile
     ```
 
-{{< note >}}
+    {{< note >}}
 Alternatively, instead of using command line, you can open the folder `%O3DE_BUILD_ROOT%\android` directly in Android Studio and build the APK from there.
-{{< /note >}}
+    {{< /note >}}
 
 
 5. Deploy your project to an Android device.
