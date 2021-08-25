@@ -83,7 +83,7 @@ After you've processed the assets for Android, you can proceed to generate the A
 
 Find the script to generate an Android project at `<engine-root>/cmake/Tools/Platform/Android/generate_android_project.py`. 
 
-The list of arguments for this script is described below:
+The `generate_android_project.py` script contains the following arguments:
 | Argument&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Description | Default | Notes |
 | --- | --- | --- | --- |
 | \--engine-root | The path to the root of the engine folder. | <required> |     |
