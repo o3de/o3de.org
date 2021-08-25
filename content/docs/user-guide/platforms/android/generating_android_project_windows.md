@@ -112,9 +112,6 @@ cmake --build %O3DE_BUILD_ROOT%\windows --config profile --target AssetProcessor
 keytool -genkey -keystore %O3DE_ANDROID_SIGNCONFIG_FILE% -storepass %O3DE_ANDROID_SIGNCONFIG_STORE_PASSWORD% -alias %O3DE_ANDROID_SIGNCONFIG_KEY_ALIAS% -keypass %O3DE_ANDROID_SIGNCONFIG_KEY_PASSWORD% -keyalg RSA -keysize %O3DE_ANDROID_SIGNCONFIG_KEY_SIZE% -validity %O3DE_ANDROID_SIGNCONFIG_VALIDITY_DAYS% -dname %O3DE_ANDROID_DN%
 ```
 
-{{< note >}}
-Even though a signing key is required for the project in order to deploy, it does not necessary to provide this at project creation. This can also be achieved through Android Studio after project creation. If this is the case, then the generate android command in the following step can omit all of the --signconfig-* arguments, and the key store settings can be created through Android Studio after opening the generated android project.
-{{< /note >}}
 
 
 **Step 3. Generate the Android gradle project**
