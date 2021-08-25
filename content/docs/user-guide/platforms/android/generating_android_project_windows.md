@@ -46,7 +46,7 @@ Add the following source and build directories to your environment variables.
 ```
 SET O3DE_ENGINE_PATH=C:\o3de
 SET O3DE_PROJECT_PATH=C:\o3de-projects\o3de-atom-sampleviewer
-SET O3DE_BUILD_ROOT=C:\build_asv
+SET O3DE_BUILD_ROOT=C:\o3de-build
 ```
 
 **KeyStore settings**
@@ -89,13 +89,24 @@ Set `O3DE_ANDROID_SDK_PATH` to the location where you set up your Android SDK pa
 
 This tutorial assumes you've built O3DE as a source engine by following the instructions in [Set up Open 3D Engine](/docs/welcome-guide/setup/setup-from-github/) for "Source engine". These instructions build the full suite of O3DE tools, including **Asset Processor Batch**. However, if you haven't built O3DE, the following describes the minimal steps you need to set up O3DE and Asset Processor Batch to process assets and build your project for Android.
 
-1. Generate the Visual Studio project for the O3DE engine.
+1. Register the project path with the O3DE engine.
    
     ```
-    cmake -B %O3DE_BUILD_ROOT%\windows -S %O3DE_ENGINE_PATH% -G"Visual Studio 16 2019" -DLY_PROJECTS=%O3DE_PROJECT_PATH% -DLY_UNITY_BUILD=ON
+    cd %O3DE_ENGINE_PATH%
+
+    scripts\o3de.bat register --project-path %O3DE_PROJECT_PATH%
+
     ```
 
-2. Build the **Asset Processor Batch** project in profile mode to process the assets.
+2. Generate the Visual Studio project for the O3DE engine.
+   
+    ```
+    cd %O3DE_PROJECT_PATH%
+
+    cmake -B %O3DE_BUILD_ROOT%\windows
+    ```
+
+3. Build the **Asset Processor Batch** project in profile mode to process the assets.
     ```
     cmake --build %O3DE_BUILD_ROOT%\windows --config profile --target AssetProcessorBatch -- /m /nologo
     ```
