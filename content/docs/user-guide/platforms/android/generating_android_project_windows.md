@@ -33,7 +33,7 @@ This example workflow represents the 'Source Engine' workflow when setting up [O
 
 The project generation steps involve passing in different paths and values to the Android Project Generation script. To simplify the paths and values, set up the following environment variables. If you skip this step, pass in the literal paths and values to the commands instead. 
 
-**Source and Build directories**
+**Source and build directories**
 
 ```
 SET O3DE_ENGINE_PATH=D:\github\o3de
