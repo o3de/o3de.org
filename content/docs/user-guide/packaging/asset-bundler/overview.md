@@ -7,8 +7,6 @@ title: What is the Open 3D Engine Asset Bundler?
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 The Asset Bundler is a command-line tool, `AssetBundlerBatch.exe`, and a set of specific file formats generated and used by the tool.
 
 ## Prerequisites to use the Asset Bundler 
@@ -90,7 +88,7 @@ O3DE ships with Asset Builders for many common asset types. The Asset Bundler re
 
 For example, Asset Builders for images can convert any portable image asset into a set of performance image formats. When the Asset Builder for the images run, they create the dependency tree for the performance-oriented image formats generated from the more general-use portable image formats, and define them as dependent on the respective portable image format. If you create the performance-oriented images manually or through a separate process, the dependencies are not defined and not available to the Asset Bundler.
 
-In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an [Asset Catalog](/docs/user-guide/assets/pipeline/asset-type-adding/) for later use by the Asset Bundler. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones. With asset dependencies defined in your Asset Builder(s), you can be assured that you are including exactly the assets you need for your game and nothing more.
+In addition to processing your asset, Asset Builders also determine any product or source asset dependencies and store that information in an Asset Catalog for later use by the Asset Bundler. Specifically, "defining asset dependencies" means updating your custom Asset Builder to identify all of the other assets that the asset being processed depends on. It is important to define asset dependencies so that you can perform accurate Asset Bundling to ship your game. Without defined dependencies the Asset Bundler has no way to know which assets your game needs when it's time to prepare your asset bundles release-you could end up missing assets, or include too many, or ship undesirable ones. With asset dependencies defined in your Asset Builder(s), you can be assured that you are including exactly the assets you need for your game and nothing more.
 
 You can use the Asset Builder APIs to develop your own Asset Builders, which can then process your custom asset type's source files and generate files that you can use in O3DE. Source code for a sample Asset Builder implementation is provided in the `Games/CustomAssetExample/Code/Source/Builder` directory under your O3DE installation root.
 

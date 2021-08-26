@@ -2,9 +2,8 @@
 description: ' Learn the startup sequence for compiled Open 3D Engine games and how to
   create the bootstrap.cfg file. '
 title: Game Startup Sequence
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 Compiled O3DE games start up in the following sequence:
 

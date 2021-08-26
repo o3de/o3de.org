@@ -4,27 +4,24 @@ description: ' Create an animation graph and simulate your PhysX ragdoll in the 
 title: Creating and Simulating a PhysX Ragdoll
 ---
 
-{{< preview-migrated >}}
-
 A ragdoll is a physical representation of a character in the animation system that you can use to simulate behavior, such as hit reactions and character death. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints. The animation system and the PhysX system work together to simulate the realistic behaviors. While the ragdoll setup occurs in the animation system, the PhysX system is responsible for how a character moves based on environmental interactions and external forces. For example, you can set up your ragdoll so that the character will rotate as it collapses when you apply force to the character's outer shoulder area.
 
 To use the **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**, add it to an entity in O3DE Editor. You can then follow the procedures below to create and control the physical representation of the ragdoll.
 
 **Important**
-You can enable the ragdoll to interact physically with the terrain. To do so, add a **[PhysX Terrain](/docs/user-guide/components/reference/physx-terrain/)** component to an entity in the level.
-The **PhysX Character Controller** component currently doesn't support the **PhysX Ragdoll** component.
+There is currently no automatic way to prevent the physics geometry **PhysX Character Controller** component from colliding with the **PhysX Ragdoll** component, which can lead to unexpected behavior for the ragdoll. Collisions can be avoided by using [collision filtering](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/) or by disabling the physics on the **PhysX Character Controller** component when the ragdoll is activated.
 
 This topic will teach you how to do the following:
-+ [Set up a ragdoll.](#animation-editor-setting-up-a-ragdoll)
-+ [Add the ragdoll to an animation graph.](#setting-up-a-ragdoll-creating-an-animation-graph)
-+ [Simulate a ragdoll in O3DE Editor.](#setting-up-a-ragdoll-simulating-the-ragdoll-in-game-mode)
++ [Set up a ragdoll.](#setting-up-a-ragdoll)
++ [Add the ragdoll to an animation graph.](#adding-your-ragdoll-to-an-animation-graph)
++ [Simulate a ragdoll in O3DE Editor.](#simulating-your-ragdoll)
 
 ## Setting Up a Ragdoll 
 
 When you set up a ragdoll, you do the following:
-+ [Define joints for the ragdoll.](#setting-up-a-ragdoll-selecting-joints)
-+ [Add ragdoll colliders.](#setting-up-a-ragdoll-adding-a-collider)
-+ [Create joint limits.](#setting-up-a-ragdoll-creating-a-joint-limit)
++ [Define joints for the ragdoll.](#step-1-define-joints-for-the-ragdoll)
++ [Add ragdoll colliders.](#step-2-add-ragdoll-colliders)
++ [Create joint limits.](#step-3-create-a-joint-limit)
 
 In addition, your actor must have a motion extraction node that is a root node. Your ragdoll must have a root node that is a direct parent of the motion extraction node. For example, the Rin character uses `root` for its motion extraction node. For the ragdoll root node, the Rin character uses `'C_pelvis_JNT`, which is a child node of `root`.
 

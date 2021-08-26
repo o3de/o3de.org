@@ -4,8 +4,6 @@ description: ' Pin an entity''s inspector to have multiple entities available to
 title: Pinning an Entity's Inspector
 ---
 
-{{< preview-migrated >}}
-
 You can pin an entity's inspector to keep it open and visible even when you select another entity. You can pin inspectors for multiple entities, and also pin multiple inspector instances of the same entity. This helps you compare the entities and their components to each other.
 
 A pinned inspector has the following features:

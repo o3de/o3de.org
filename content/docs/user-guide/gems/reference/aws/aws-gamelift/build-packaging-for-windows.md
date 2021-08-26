@@ -1,9 +1,9 @@
 ---
 linkTitle: Build Packaging for Windows
-title: AWS GameLift Build Packaging for Windows
-description: "Learn how to package your dedicated server builds with the AWS GameLift Gem in O3DE"
+title: AWS GameLift Gem Build Packaging for Windows
+description: Learn how to package your dedicated server builds with the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
-weight: 400
+weight: 700
 ---
 
 This topic describes how to package your dedicated server builds, which is required to install and run them on Amazon GameLift. 
@@ -15,7 +15,7 @@ Creating a dedicated server package includes the following steps:
 
 ## Prerequisites
 The instructions that follow assume the following:
-- You have built your project with the AWS GameLift Gem enabled. For more information on building projects, read [Build the O3DE Project](/docs/welcome-guide/get-started/project-config/creating-projects-using-cli/#build-the-o3de-project). 
+- You have built your project with the AWS GameLift Gem enabled. For more information on building projects, refer to [Build the O3DE Project](/docs/welcome-guide/create/creating-projects-using-cli/#build-the-o3de-project). 
 - You have built the Profile version of your project's server launcher.
 - You have run the **Asset Processor** and compiled all of the project's assets.
 
@@ -57,10 +57,12 @@ To test the local server package:
 
 
 {{< caution >}}  
-Make sure you replace `<package base folder>` with the path to the installation folder you created previously.  
+Make sure to replace `<package base folder>` with the path to the installation folder that you created earlier. 
 {{< /caution >}}
 
 
-Previous Topic: [AWS GameLift Gem Local Testing](local-testing/)
+---
 
-Next Topic: [AWS GameLift Resource Management](resource-management/)
+Previous topic: [AWS GameLift Gem Local Testing](local-testing/)
+
+Next topic: [AWS GameLift Gem Resource Management](resource-management/)

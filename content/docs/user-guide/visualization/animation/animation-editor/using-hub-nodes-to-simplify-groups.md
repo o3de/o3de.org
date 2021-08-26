@@ -4,8 +4,6 @@ description: ' Use Hub nodes in Open 3D Engine''s Animation Editor to simplify t
 title: Simplify Node Groups with Hub Nodes
 ---
 
-{{< preview-migrated >}}
-
 The **Hub** node acts as a connection point between groups of nodes in an animation graph. This pass-through node outputs or forwards the pose of the node that entered it. Hub nodes reduce the complexity of transitions by acting as the central point in a state machine. By connecting multiple nodes to hubs, you can combine transition lines that share the same transition conditions and strategically organize nodes to create an easy-to-read state machine.
 
 **Example**

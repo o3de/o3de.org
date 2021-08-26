@@ -3,22 +3,20 @@ description: null
 title: FBX Settings PhysX tab
 ---
 
-{{< preview-migrated >}}
-
 In the **PhysX** tab, you can create **PhysX Mesh groups** to process collider assets for PhysX. Collider assets can be triangle meshes, or generated as primitives or convex meshes based on meshes contained in the `.fbx` file. Multiple **PhysX Mesh groups** can be processed from a single `.fbx` file. Each **PhysX Mesh group** produces its own `.pxmesh` file. The processed runtime assets appear in Asset Browser as children of the `.fbx` file.
 
 **Important**
 There are many options for creating PhysX collider assets. The *best* options in a scenario depend on many factors including mesh complexity, how the collider asset is used, and whether the entity containing the collider is static (doesn't move), kinematic (animated), or dynamic (has a rigid body component). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match a visible render mesh are desirable.
 
 **Contents**
-+ [PhysX tab properties](#fbx-importer-physx-tab-base-properties)
-+ [Triangle mesh asset properties](#fbx-importer-physx-tab-triangle-properties)
-+ [Convex asset properties](#fbx-importer-physx-tab-convex-properties)
-+ [Primitive asset properties](#fbx-importer-physx-tab-primitive-properties)
-+ [Decomposition properties](#fbx-importer-physx-tab-decomposition-properties)
-+ [PhysX modifiers](#fbx-settings-physx-modifiers)
-    + [Comment modifier](#w31aac15b9c11c17c23)
-    + [Origin modifier](#w31aac15b9c11c17c25)
++ [PhysX tab properties](#physx-tab-properties)
++ [Triangle mesh asset properties](#triangle-mesh-asset-properties)
++ [Convex asset properties](#convex-asset-properties)
++ [Primitive asset properties](#primitive-asset-properties)
++ [Decomposition properties](#decomposition-properties)
++ [PhysX modifiers](#physx-modifiers)
+    + [Comment modifier](#comment-modifier)
+    + [Origin modifier](#origin-modifier)
 
 ## PhysX tab properties 
 
@@ -97,7 +95,7 @@ When enabled, 16-bit triangle or polygon indices are generated. Otherwise, 32-bi
 Checks and removes triangles that are have a smaller area than the area value specified in **Area Test Epsilon**.
 
 **Quantize Input**
-Quantizes the input vertices using [k-means clustering](/docs/user-guide/appendix/glossary#kmeansclustering).
+Quantizes the input vertices using [k-means clustering](/docs/user-guide/appendix/glossary#k-means-clustering).
 
 **Use Plane Shifting**
 Enables plane shifting vertex limit algorithm. For more information, see the [ NVIDIA PhysX Geometry documentation](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/Geometry.html).
@@ -112,7 +110,7 @@ Specifies the vertex limit beyond which additional acceleration structures are c
 When enabled, additional information required for GPU accelerated rigid body simulation is generated. This can increase memory usage and cooking time for convex meshes and triangle meshes. Convex hulls are generated with respect to GPU simulation limitations. The vertex limit is set to 64 and the per face vertex limit is set to 32.
 
 **Decompose Meshes**
-When enabled, the V-HACD algorithm is applied to split each node into approximately convex parts. Each part is exported as a convex collider using the properties configured above. **Decompose Meshes** enables **Decomposition Properties** which determine how the selected meshes are decomposed into approximately convex parts.
+When enabled, the V-HACD algorithm is applied to split each node into convex parts which together approximate the original shape. Each part is exported as a convex collider using the properties configured above. **Decompose Meshes** enables **Decomposition Properties** which determine how the selected meshes are decomposed into convex parts.
 
 ## Primitive asset properties 
 
@@ -129,13 +127,13 @@ A value of **0** performs no volume minimization and is recommended for most mes
 For meshes that have low vertex counts, or vertices that are distributed mainly along the edges, the algorithm can sometimes produce sub-optimal results where the primitive touches the edges of the mesh, but not the faces. In these cases, the fitting can be improved by increasing the **Volume Term Coefficient** so that the fitting algorithm shrinks the volume of the primitive while minimizing its deviation from the mesh. A **Volume Term Coefficient** that is too high can shrink the primitive collider so that it's occluded by the mesh.
 
 **Decompose Meshes**
-When enabled, the V-HACD algorithm is applied to split each node into approximately convex parts. Each part is exported as a primitive collider using the properties configured above. **Decompose Meshes** enables **Decomposition Properties** which determine how the selected meshes are decomposed into approximately convex parts.
+When enabled, the V-HACD algorithm is applied to split each node into convex parts. Each part is exported as a primitive collider using the properties configured above. **Decompose Meshes** enables **Decomposition Properties** which determine how the selected meshes are decomposed into convex parts.
 
 ## Decomposition properties 
 
-Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a dynamic entity. For these scenarios, O3DE supports approximate convex decomposition. Arbitrary meshes are broken down into approximately convex parts before processing each part through the asset pipeline individually.
+Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a dynamic entity. For these scenarios, O3DE supports approximate convex decomposition. Arbitrary meshes are broken down into convex parts which approximate the original shape before processing each part through the asset pipeline individually.
 
-Decomposing meshes has the advantage that each individual, nearly convex part, can be more accurately exported as a convex or primitive. Since the resulting asset doesn't contain any triangle meshes, it can be used on dynamic entities.
+Decomposing meshes has the advantage that each individual convex part can be exported as a convex or primitive approximation. Since the resulting asset doesn't contain any triangle meshes, it can be used on dynamic entities.
 
 For more information and illustrated examples of results, see the [V-HACD library on GitHub](https://github.com/kmammou/v-hacd).
 
@@ -148,7 +146,7 @@ Specify the maximum number of hulls to generate. Valid values range from a minim
 Defines the maximum number of triangles per convex hull. Valid values range from a minimum of **4** to a maximum value of **1024**.
 
 **Concavity**
-Specify the maximum concavity of each approximate convex hull. Valid values range from a minimum of **0** to a maximum value of **1**.
+Specify the maximum concavity of each convex hull. Valid values range from a minimum of **0** to a maximum value of **1**.
 
 **Resolution**
 Maximum number of voxels generated during the voxelization stage. Valid values range from a minimum of **10000** to a maximum value of **64000000**.

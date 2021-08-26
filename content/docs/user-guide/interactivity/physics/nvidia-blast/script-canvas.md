@@ -4,14 +4,12 @@ title: Script Canvas nodes for NVIDIA Blast
 weight: 800
 ---
 
-{{< preview-migrated >}}
-
 The NVIDIA Blast gem includes several **Script Canvas** nodes to script destructible assets. The nodes can be found in the **Blast** group in **Script Canvas**.
 
 **Contents**
-+ [BlastFamilyComponentNotificationBus nodes](#blast-family-notification-bus-nodes)
-+ [BlastFamilyComponentNotificationBus nodes](#blast-family-request-bus-nodes)
-+ [BlastFamilyDamageRequestBus nodes](#blast-family-damage-request-bus-nodes)
++ [BlastFamilyComponentNotificationBus nodes](#blastfamilycomponentnotificationbus-nodes)
++ [BlastFamilyComponentNotificationBus nodes](#blastfamilycomponentnotificationbus-nodes-1)
++ [BlastFamilyDamageRequestBus nodes](#blastfamilydamagerequestbus-nodes)
 
 ## BlastFamilyComponentNotificationBus nodes 
 

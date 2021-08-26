@@ -3,8 +3,6 @@ description: ' Export motions from .fbx files with FBX Settings to Open 3D Engin
 title: FBX Settings motion export
 ---
 
-{{< preview-migrated >}}
-
 **Motions** contain keyframe animated sequences that can be sequenced and blended in **Animation Editor** and applied to actors to create behaviors. Motions must use identical skeleton hierarchies as their actor counterparts.
 
 ## Export a motion 
@@ -19,7 +17,7 @@ title: FBX Settings motion export
 
 1. In **FBX Settings**, in the **Motions** tab, ensure the desired root bone of the actor's skeleton is selected in the **Select root bone** property.
 
-   A **Motion** may contain only one skeleton hierarchy, and will only export bones that are part of the selected heirarchy.
+   A **Motion** may contain only one skeleton hierarchy, and will only export bones that are part of the selected hierarchy.
 
    A **Motion** exports a single animation sequence. If the `.fbx` contains multiple animation sequences, additional motions can be added by choosing **Add another motion**.
 

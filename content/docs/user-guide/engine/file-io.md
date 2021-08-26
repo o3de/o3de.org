@@ -3,8 +3,6 @@ description: ' Directly access files for special use cases like streaming in Ope
 title: Raw File Access in O3DE
 ---
 
-{{< preview-migrated >}}
-
 This topic describes how to directly access files in O3DE for special use cases. However, it's recommended that you use the O3DE Asset system to work with asset files. In most cases, raw file access is not required. For more information see [Working with the Asset Pipeline and asset files](/docs/user-guide/assets/intro.md).
 
 When you write an `AssetHandler`-derived class to load assets in O3DE, runtime file handling is automatic. However, some cases might require lower levels of file access at run time. Scenarios that might require low-level file access include:
@@ -159,7 +157,7 @@ To service the needs of the game client and tools, more than one `FileIO` instan
 
 ![\[File access in local and remote scenarios\]](/images/user-guide/file-access-direct-1.png)
 
-The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as [Android](/docs/userguide/mobile/android/configure-project#android-vfs) and [iOS](/docs/user-guide/platforms/ios/virtual-file-system.md). VFS is required for [live reloading of assets](/docs/user-guide/assets/live-reloading.md). Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
+The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as Android and iOS, allowing for the live reloading of assets. Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
 
 ```
 -- remote_filesystem - enable Virtual File System (VFS)

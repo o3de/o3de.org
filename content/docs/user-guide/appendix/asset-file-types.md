@@ -1,12 +1,11 @@
 ---
-description: ' Learn about the asset data file types that Open 3D Engine supports. '
-linktitle: Asset file types
-title: 'O3DE Asset File Types'
+linktitle: Asset File Types
+title: Open 3D Engine Asset File Types
+description: Learn about the asset data file types that Open 3D Engine (O3DE) supports.
+toc: true
 ---
 
-{{< preview-migrated >}}
-
-See the following tables for supported asset data file types in O3DE.
+Refer to the following tables for supported asset data file types in O3DE.
 
 O3DE supports the `.xml` file format and the following image file formats:
 + `.bmp`
@@ -18,9 +17,9 @@ O3DE supports the `.xml` file format and the following image file formats:
 + `.tga`
 + `.tif`
 
-**3D Art Asset File Types**
+## 3D art asset file types
 
-The following file formats are used for static geometry:
+The following file formats are used for static geometry.
 
 
 ****
@@ -37,9 +36,9 @@ The following file formats are used for static geometry:
 | \*.cax (CAD/CAE Exchange File) | O3DE | Contains compressed game assets read from the .abc file and streamed in-game on demand from disk.  |
 | \*.trb (Terrain Block File) | O3DE | Contains terrain data and associated level objects such as water and vegetation.  |
 
-**Material and Texture File Types**
+## Material and texture file types
 
-The following files are used for the **Material Editor**. For more information, see [Working with shaders and materials](/docs/atom-guide/look-dev/materials/).
+The following files are used for the **Material Editor**. For more information, refer to [Working with shaders and materials](/docs/atom-guide/look-dev/materials/).
 
 
 ****
@@ -50,9 +49,9 @@ The following files are used for the **Material Editor**. For more information, 
 | \*.dds (DirectDraw Surface) | DCC tool | Contains compressed source texture files. |
 | \*.sbsar (Substance Files) | Allegorithmic Substance Designer | Contains procedural materials. |
 
-**Animation File Types**
+## Animation file types
 
-The following file types are used for the **Animation Editor**. For more information, see [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types.md).
+The following file types are used for the **Animation Editor**. For more information, refer to [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types.md).
 
 
 ****
@@ -65,9 +64,9 @@ The following file types are used for the **Animation Editor**. For more informa
 | \*.animgraph (Animation Graph File) | O3DE | Contains the state machines, transitions, conditions, blend trees, and so on. |
 | \*.assetinfo (Asset Info File) | O3DE | Contains the configuration and settings for the .actor and .motion files. Animation Editor and the FBX Settings tool can create this file.  |
 
-**Audio Asset File Types**
+## Audio asset file types
 
-The following file types are used for the audio system. For more information, see [Adding Audio and Sound Effects](/docs/user-guide/interactivity/audio/).
+The following file types are used for the audio system. For more information, refer to [Adding Audio and Sound Effects](/docs/user-guide/interactivity/audio/).
 
 
 ****

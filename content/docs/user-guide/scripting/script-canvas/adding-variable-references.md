@@ -4,8 +4,6 @@ description: ' Create variable references on the data pins of Open 3D Engine Scr
 title: Adding Variable References in Script Canvas Nodes
 ---
 
-{{< preview-migrated >}}
-
 **Variable references** provide a shortcut for getting and setting variable values directly from the Script Canvas nodes that use them. Any data pin can be converted to a variable reference by dragging a variable from the **Variable Manager** directly onto the pin.
 
 **To create a variable reference**

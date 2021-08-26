@@ -3,8 +3,6 @@ description: ' Move a camera in the <guilabel>Track View</guilabel> editor in Op
 title: Positioning a Camera
 ---
 
-{{< preview-migrated >}}
-
 You can control a camera's position and rotation to manipulate the facing direction during a sequence. These can be animated over time to make the camera dynamic. If you have multiple cameras, you can also control if the cameras switch immediately or if they should blend over time.
 
 ## Animating the Camera 

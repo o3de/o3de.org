@@ -4,15 +4,13 @@ description: ' Use Asset Processor''s Faster Scanning Mode to improve startup ti
 title: Enabling Asset Processor's Faster Scanning Mode
 ---
 
-{{< preview-migrated >}}
-
 Asset Processor's **Faster Scanning Mode** speeds up O3DE's startup scan by disabling checking for cache changes that occurred while Asset Processor was not running. This can save you time when processing many assets in your project.
 
 By default, **Faster Scanning Mode** is enabled. You can enable or disable this mode any time without restarting the Asset Processor, including during the scan. Asset Processor saves your preference between sessions.
 
 **To disable Faster Scanning Mode**
 
-1. Open [Asset Processor](/docs/user-guide/assets/processor.md).
+1. Open [Asset Processor](/docs/user-guide/assets/pipeline/processor).
 
 1. Select **Tools** and clear **Faster Scanning Mode**.
 ![\[Disable Faster Scanning Mode in Asset Processor.\]](/images/user-guide/asset_processor/faster-scanning.png)
@@ -33,8 +31,6 @@ When you enable the feature you can also use console mode `stdout` as well as op
 ```
 ~~Debug~~5303 files reported from scanner.  2903 unchanged files skipped, 2400 files processed
 ```
-
-For more information, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md).
 
 ## Performing a Full Scan 
 

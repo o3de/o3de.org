@@ -5,9 +5,7 @@ title: Cloth for Mesh components
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
-To use **Cloth**, you must enable the **NVIDIA Cloth** gem. For more information, see the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/) documentation.
+To use **Cloth**, you must enable the **NVIDIA Cloth** gem. For more information, see the [NVIDIA Cloth Gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-cloth/) documentation.
 
 You can create cloth assets for entities with **Mesh** components in the content creation application of your choice and import them into O3DE from an `.fbx` file. The mesh asset should have the following:
 + A cloth mesh that will be simulated and rendered in O3DE.

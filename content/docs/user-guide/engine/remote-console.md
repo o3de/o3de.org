@@ -2,9 +2,8 @@
 description: ' Use console commands to modify and configure the Open 3D Engine runtime
   application. '
 title: 'Universal Remote Console'
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 You can use **Console** commands to modify and configure the O3DE runtime application. On a PC, the **Console** is available from O3DE Editor or the game. But for mobile platforms you must use a separate Windows-based application called the Universal Remote Console. With the Universal Remote Console you can use the IP address of the machine running the O3DE game to connect to a remote instance of O3DE.
 

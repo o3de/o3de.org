@@ -133,7 +133,6 @@ toc: true
 | - | - |
 | [NVIDIA Blast](./physics/nvidia/nvidia-blast) | The NVIDIA Blast Gem provides tools to author fractured mesh assets in Houdini, and functionality to create realistic destruction simulations in Open 3D Engine. |
 | [NVIDIA Cloth (NvCloth)](./physics/nvidia/nvidia-cloth) | The NVIDIA Cloth (NvCloth) Gem provides functionality to create realistic cloth and fabric simulation. |
-| [Physics Entities](./physics/physics-entities) | The Physics Entities Gem provides a collection of physics entities used to simulate physical events. |
 | [PhysX](./physics/nvidia/physx) | The PhysX Gem provides physics simulation with NVIDIA PhysX including static and dynamic rigid body simulation, force regions, ragdolls, and dynamic PhysX joints. |
 | [PhysX Debug](./physics/nvidia/physx-debug) | The PhysX Debug Gem provides debugging functionality and visualizations for PhysX in Open 3D Engine (O3DE) projects. |
 | [PhysX Samples](./physics/nvidia/physx-samples) | The PhysX Samples Gem provides sample assets and scripts to use with the PhysX Gem. |

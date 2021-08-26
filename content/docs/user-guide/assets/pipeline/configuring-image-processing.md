@@ -2,9 +2,8 @@
 description: ' Configure how Open 3D Engine processes your images or textures to make them
   game-ready. '
 title: Configuring Image Processing
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 Images or textures are automatically processed by Asset Processor, which makes them ready for O3DE game creation. When you place an image file anywhere within your O3DE directory, Asset Processor detects and converts the file to a game-ready asset. O3DE has several configuration files that specify settings for the conversion process, such as the colorspace to use, texture size, [whether to generate mip maps](/docs/userguide/assets/generating-mipmaps.md), and so on.
 

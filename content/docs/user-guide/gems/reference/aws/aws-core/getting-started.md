@@ -5,8 +5,6 @@ toc: true
 weight: 100
 ---
 
-{{< preview-new >}}
-
 To get started using AWS Gems with AWS services in your O3DE project, complete the following steps.
 
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html) if you don't have one.
@@ -52,7 +50,7 @@ Example registry settings file:
     {
         "AWSCore": {
             "ProfileName": "testprofile",
-            "ResourceMappingConfigFileName": "test_aws_resource_mappings.json"
+            "ResourceMappingConfigFileName": "default_aws_resource_mappings.json"
         }
     }
 }

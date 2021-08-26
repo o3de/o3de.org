@@ -3,8 +3,6 @@ description: ' Learn to animate characters in Open 3D Engine with EMotionFX Anim
 title: Create and animate characters
 ---
 
-{{< preview-migrated >}}
-
 Most game projects require an animated character to move around in the environment. This may be a character that the player controls, or an AI-driven entity that interacts with the level.
 
 Use the **EMotion FX Animation Editor** to animate characters in Open 3D Engine. To build a character, you associate one or more skinned models with an animation skeleton (built in a digital content creation tool like Maya). You then import the character into the **Animation Editor** and specify the animations that you want your character to have.
@@ -13,7 +11,7 @@ You can then blend animations, so that your character transitions from one anima
 
 In the **Animation Editor**, you can preview the animations and blends between the animations for your characters.
 
-O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md).
+O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons, skins, animations, and materials into O3DE assets. For more information, see [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/).
 
 **Topics**
 + [Animation Editor Concepts and Terms](/docs/user-guide/visualization/animation/character-editor/concepts-and-terms.md)

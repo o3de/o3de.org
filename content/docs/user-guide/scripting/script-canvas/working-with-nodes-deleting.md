@@ -3,8 +3,6 @@ description: ' Learn how to delete Script Canvas nodes in Open 3D Engine. '
 title: Deleting Nodes
 ---
 
-{{< preview-migrated >}}
-
 Script Canvas offers a variety of techniques for deleting nodes.
 
 **To delete one or more nodes and their connections**

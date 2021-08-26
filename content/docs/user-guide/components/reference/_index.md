@@ -1,24 +1,25 @@
 ---
 title: Component Reference
-linktitle: Component Reference
-description: ' Open 3D Engine (O3DE) component reference index. '
+linkTitle: Component Reference
+description: Open 3D Engine (O3DE) component reference index.
 weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
+Components add functionality to entities in Open 3D Engine (O3DE). An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
-Components add functionality to entities. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Components are provided by Gems. To make a component available in **O3DE Editor**, you must add the Gem that provides the component. Though components might belong to the same type, they might not be provided by the same Gem. You can find out which Gem provides a component in the reference topic for the component.
 
-Components are provided by Gems. To make a component available in the O3DE Editor, you must add the Gem that provides it. If you configure the Gems available to your project, you must rebuild your project. Though components might belong to the same type, they might not be provided by the same Gem. Each component lists the Gem that provides it on its reference page.
+## Add a component to an entity
 
-## Adding components to an entity
-In the O3DE Editor, you can add components to an entity. To add a component:
-1. In the **Entity Outliner** panel, select an entity. This will show the entity's details in the **Entity Inspector** panel. 
-2. In the Entiy Inspector panel, select **Add Component** and choose a component to add to this entity. 
+To add a component to an entity in O3DE Editor:
+
+1. In **Entity Outliner** or **Perspective**, click an entity to select it. This will show the entity's details in **Entity Inspector**. 
+1. In Entity Inspector, choose **Add Component**.
+1. Select a component from the component list to add to the entity. 
 
 {{< note >}}
-If a component you are looking for does not appear in the **Add Component** list, you may need to enable the Gem that provides that component.
+If you can't find a component in the **Add Component** list, you may need to enable the Gem that provides the component and rebuild your project.
 {{< /note >}}
 
 ## Components
@@ -46,29 +47,31 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Bloom | Simulates real-world light bleeding, or glow. |
-| Decal (Atom) | Projects a texture material in a single direction onto mesh surfaces. |
-| Deferred Fog | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
-| Depth of Field | Simulates the lens effects of real world cameras that focus on a specific area. |
-| Diffuse Probe Grid | Creates a volume of light probes that provides diffuse global illumination in a specified area. |
-| Directional Light | Casts light from an infinitely distant point in a single direction, similar to sunlight, and supports shadow casting. |
-| Display Mapper | Configures tone mapping and color grading for the scene. |
-| Entity Reference | Allows you to provide an entity with references to other entities. |
-| Exposure Control | Adjusts the amount of light the camera exposes in the scene. |
-| Global Skylight (IBL) | Creates an image-based global illumination effect that calculates lighting for a scene using an HDR skybox image. |
-| Grid | Adds a customizeable grid to the scene. |
-| HDRi Skybox | Creates a skybox in your scene using an HDR image. |
+| [Bloom](/docs/user-guide/components/reference/atom/bloom/) | Simulates real-world light bleeding, or glow. |
+| [Decal (Atom)](/docs/user-guide/components/reference/atom/decal/) | Projects a texture material in a single direction onto mesh surfaces. |
+| [Deferred Fog](/docs/user-guide/components/reference/atom/deferred-fog/) | Creates a screen space fog effect that can ben used as scene fog or layered / ground fog with an optional cloud noise turbulence. |
+| [Depth of Field](/docs/user-guide/components/reference/atom/depth-of-field/) | Simulates the lens effects of real world cameras that focus on a specific area. |
+| [Diffuse Global Illumination](/docs/user-guide/components/reference/atom/diffuse-gi/) | Controls the quality level of global illumination that **Diffuse Probe Grid** components provide.  | 
+| [Diffuse Probe Grid](/docs/user-guide/components/reference/atom/diffuse-probe-grid/) | Creates a volume of light probes that provide diffuse global illumination within the specified area. |
+| [Directional Light](/docs/user-guide/components/reference/atom/directional-light/) | Casts light from an infinitely distant point towards a single direction, similar to sunlight. |
+| [Display Mapper](/docs/user-guide/components/reference/atom/display-mapper/) | Configures tone mapping and color grading for the scene. |
+| [Entity Reference](/docs/user-guide/components/reference/atom/entity-reference/) | Allows you to provide an entity with references to other entities. |
+| [Exposure Control](/docs/user-guide/components/reference/atom/exposure-control/) | Adjusts the amount of light the camera exposes in the scene. |
+| [Global Skylight (IBL)](/docs/user-guide/components/reference/atom/global-skylight-ibl/) | Creates an image-based global illumination effect that calculates light for a scene using an HDR skybox image. |
+| [Grid](/docs/user-guide/components/reference/atom/grid/) | Adds a customizeable grid to the scene. |
+| [HDRi Skybox](/docs/user-guide/components/reference/atom/hdri-skybox/) | Creates a skybox in your scene using an HDR image. |
 | [Light](/docs/user-guide/components/reference/atom/light) | Simulates soft studio light by creating various types of punctual and area lights. |
-| Look Modification | Configures a color grading look-up table (LUT). |
-| Material | Adds a material on the object's mesh. |
-| Mesh | Specifies a model to render. |
-| Occlusion Culling Plane | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
-| Physical Sky | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
-| PostFX Gradient Weight Modifier | Modifies the Post FX's weight based on another entity's gradient signal. |
-| PostFX Shape Weight Modifier | Controls how Post FX components, such as Depth of Field and Exposure Control, are applied in a scene.|
-| Radius Weight Modifier | Modifies the weight of a Post FX component based on the camera's distance to the center. |
-| Reflection Probe | Provides specular reflections for the environment around a probe, or a capture point. |
-| SSAO | Uses the screen space ambient occlusion technique to approximate indirect lighting in a scene. |
+| [Look Modification](/docs/user-guide/components/reference/atom/look-modification/) | Configures a color grading look-up table (LUT). |
+| [Material](/docs/user-guide/components/reference/atom/material/) | Adds a material on the object's mesh. |
+| [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
+| [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
+| [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
+| [PostFX Gradient Weight Modifier](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/) | Modifies post-processing effects' (PostFX) weight based on another entity's gradient signal. |
+| [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/) | Controls how PostFX are applied in a scene. |
+| [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/) | Limits PostFX to a volume of space that's defined by a **Shape** component. The PostFX's weight remains constant within the volume, and it begins to fade outside of the volume.|
+| [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/) | Modifies PostFX's weight based on the camera's distance to the center. |
+| [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
+| [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
 
 ### Audio
 | Component | Description | 
@@ -142,12 +145,12 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Slope Gradient | Generates a gradient based on the surface angle. |
 | Surface Mask Gradient | Generates a gradient based on the underlying surface types. |
 
+<!-- 
 ### Networking
 
 | Component | Description | 
 | - | - |
-| [Anim Graph Net Sync](/docs/user-guide/components/reference/networking/animgraph-netsync/) | The **AnimGraph** component, which adds an animation graph and motion set to a character, does not automatically synchronize its parameters across the network. The **Anim Graph Net Sync** component provides an authoritative way of replicating these parameters. |
-| Network Binding |  |
+-->
 
 ### Non-uniform Scale
 
@@ -162,7 +165,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Cloth](/docs/user-guide/components/reference/physx/cloth/) | Simulates the behavior of cloth by treating the vertices of a mesh as cloth particles with physical properties. |
 | [PhysX Ball Joint](/docs/user-guide/components/reference/physx/ball-joint/) | Simulates a dynamic ball joint that constrains an entity to the joint with freedom to rotate around the y- and z-axes of the joint.|
 | [PhysX Character Controller](/docs/user-guide/components/reference/physx/character-controller/) | Implements basic character interactions with the physical world. |
-| PhysX Character Gameplay | Configures general character properties in the gameplay, such as the character's gravitational strength. |
+| [PhysX Character Gameplay](/docs/user-guide/components/reference/physx/character-gameplay/) | Configures general character properties in the gameplay, such as the character's gravitational strength. |
 | [PhysX Collider](./physx/collider/) | Allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities. |
 | [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |

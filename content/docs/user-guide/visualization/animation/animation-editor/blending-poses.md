@@ -4,8 +4,6 @@ description: ' Learn how to blend poses using blend nodes in the Open 3D Engine 
 title: Blending Poses with Blend Nodes
 ---
 
-{{< preview-migrated >}}
-
 You can use **Blend** nodes in animation graphs to create an animation that blends two input poses.
 
 **Animation Editor** has the following types of blend nodes, each of which blend poses in different manners:

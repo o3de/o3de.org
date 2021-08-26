@@ -2,9 +2,8 @@
 description: ' Use virtual file system on non-PC platforms in order to live reload
   assets in Open 3D Engine.s '
 title: Live Reloading and VFS
+draft: true
 ---
-
-{{< preview-migrated >}}
 
 On the PC platform, live reloading does not require virtual file system (VFS), since the PC that is running the game is presumably also running the Asset Processor.
 

@@ -5,8 +5,6 @@ title: Script events best practices
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 The following are some best practices for using script events.
 
 ## Ensure Entities are Activated Before Events are Sent 

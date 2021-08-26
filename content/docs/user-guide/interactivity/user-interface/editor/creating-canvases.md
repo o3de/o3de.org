@@ -4,8 +4,6 @@ description: ' Create a canvas in the UI Editor to use as an invisible backdrop
 title: Working with UI Canvases
 ---
 
-{{< preview-migrated >}}
-
 The **UI Editor** uses the concept of a canvas as an invisible backdrop for your game user interface elements. Once you create a canvas, you can add elements such as images, text, and buttons.
 
 **To create a UI canvas**

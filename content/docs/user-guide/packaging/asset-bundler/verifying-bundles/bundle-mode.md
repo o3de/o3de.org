@@ -5,8 +5,6 @@ title: Using Bundle Mode to Test Bundles
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
 Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build.
 
 Using bundle mode involves two key tasks:
@@ -43,7 +41,7 @@ If you use the `sys_report_files_not_found_in_paks` console variable with the la
 
 Enabling the console variable before running the editor or launcher ensures that all missing assets are reported. To ensure that the console variable is always active when you run the editor or launcher, modify `editor.cfg` and `autoexec.cfg` in your project directory.
 
-You can also enable the console variable at runtime by using the console (**\~**) or remote console. For information about the remote console, see [Universal Remote Console](/docs/user-guide/engine/remote-console.md).
+You can also enable the console variable at runtime by using the console (**\~**) or remote console.
 
 ## Bundle Mode Commands
 

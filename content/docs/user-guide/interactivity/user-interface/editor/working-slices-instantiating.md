@@ -3,8 +3,6 @@ description: null
 title: Instantiating a UI Slice
 ---
 
-{{< preview-migrated >}}
-
 You can create an instance of a slice in your UI canvas.
 
 **To instantiate a slice**

@@ -6,8 +6,6 @@ toc: true
 weight: 1000
 ---
 
-{{< preview-new >}}
-
 This page provides an overview of the Atom Renderer's **pass system**, which refers to the high-level system that defines how passes are structured and managed.
 
 The pass system is designed to be highly flexible across the different needs and workflows of developers. So that different types of developers and technical artists can work with passes, O3DE allows for authoring passes as data-driven (JSON), hard-coded (C++), or a combination of both. There are advantages and disadvantages for each that are important to consider when deciding how to author passes.

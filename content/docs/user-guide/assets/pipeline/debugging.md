@@ -3,17 +3,7 @@ description: ' Debug Asset Processor issues in Open 3D Engine '
 title: Debugging Asset Processor
 ---
 
-{{< preview-migrated >}}
-
 Use the following options to help debug Asset Processor issues.
-
-**Topics**
-+ [Viewing Asset Processor Log Files](#asset-processor-log-files)
-+ [Restarting Asset Processor](#restart-asset-processor)
-+ [Using Asset Builder](#using-asset-builder)
-+ [Using the Microsoft Child Process Debugging Power Tool](#debug-with-visual-studio-child-process-add-on)
-+ [Debug Asset Builders from Asset Processor](#debug-asset-builders-running-from-asset-processor)
-+ [Clearing the Cache](#clearing-asset-processor-cache)
 
 ## Viewing Asset Processor Log Files 
 

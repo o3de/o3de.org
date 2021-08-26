@@ -25,15 +25,14 @@ The PhysX Shape Collider component has some limitations compared to the PhysX Co
 +  Only one Shape component can be used per entity, and so only one PhysX Shape Collider component is supported per entity. Any number of PhysX Collider components can also be used on the same entity, however.
 +  The position and rotation of the PhysX Shape Collider component can't be offset relative to the entity position.
 
-To use the PhysX Shape Collider component you must enable [PhysX](/docs/user-guide/gems/reference/physx/) gem in your project.
+To use the PhysX Shape Collider component you must enable [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem in your project.
 
 For more information, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/).
 
 **Topics**
-- [PhysX Shape Collider {#component-physx-shape-collider}](#physx-shape-collider)
-  - [PhysX Shape Collider properties {#component-physx-shape-collider-properties}](#physx-shape-collider-properties)
-  - [Complex polygon prism shapes {#complex-polygon-prism-shapes}](#complex-polygon-prism-shapes)
-  - [Colliders as triggers {#colliders-as-triggers}](#colliders-as-triggers)
+- [PhysX Shape Collider properties](#physx-shape-collider-properties)
+- [Complex polygon prism shapes](#complex-polygon-prism-shapes)
+- [Colliders as triggers](#colliders-as-triggers)
 
 ## PhysX Shape Collider properties 
 

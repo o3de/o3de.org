@@ -3,8 +3,6 @@ description: ' Use Record mode for a sequence in the <guilabel>Track View</guila
 title: Using Record Mode
 ---
 
-{{< preview-migrated >}}
-
 The Track View's **Play** toolbar has the **Start Animation Recording** icon to enter record mode. In record mode, you can manipulate component entities for a sequence directly in the viewport. Animation keys are automatically placed on the appropriate node tracks in the timeline based on the current location of the timeline playhead.
 
 **To use record mode**

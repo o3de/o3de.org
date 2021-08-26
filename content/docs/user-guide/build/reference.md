@@ -47,8 +47,6 @@ These options control the types of assets that are built, and where projects loa
   * `ios` - iOS and iPad OS
   * `es3` - Android
   
-  You can change the types of assets built by the Asset Processor, or build for multiple platforms, by [configuring the asset pipeline](/docs/user-guide/assets/pipeline/configuring).
-  
   *Type*: `STRING`  
   *Default*: The asset type for the current host platform.
 
@@ -109,6 +107,17 @@ These settings control how the package download system functions.
 
   *Type*: Integer
   *Default*: 3
+
+### Build/Debugging Tools
+
+* **`LY_BUILD_WITH_ADDRESS_SANITIZER`** - Enables [Address Sanitizer](https://en.wikipedia.org/wiki/AddressSanitizer) (ASan).
+
+  {{< note >}}
+  Currently only supported for Windows and "Visual Studio" generators. Documentation can be found [here](https://docs.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-160)
+  {{< /note >}}
+
+  *Type*: `BOOL`
+  *Default*: `OFF`
 
 <!-- 
   TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)

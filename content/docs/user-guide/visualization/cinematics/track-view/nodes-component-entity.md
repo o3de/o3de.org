@@ -3,8 +3,6 @@ description: ' Create a component entity node to add to a track in Open 3D Engin
 title: Component Entities and Component Nodes
 ---
 
-{{< preview-migrated >}}
-
 **Topics**
 + [Naming and Identifying Component Entities](#cinematics-track-view-component-entity-name-components)
 + [Adding or Removing Components from a Component Entity](#cinematics-track-view-component-entity-add-remove-components)

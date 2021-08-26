@@ -4,8 +4,6 @@ description: "Material files (`*.material`) are written in JSON format and conta
 toc: true
 ---
 
-{{< preview-new >}}
-
 Material files (`*.material`) are written in JSON format and contain the following elements.
 
 ### **parentMaterial** (*optional*)  

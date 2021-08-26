@@ -3,8 +3,6 @@ description: ' Use console variables and commands to debug UI canvases in Open 3
 title: Debugging UI Canvases
 ---
 
-{{< preview-migrated >}}
-
 You can use the following console commands and console variables to display debug information for the UI when your game is running.
 
 [ui\_DisplayCanvasData](#ui-editor-debugging-ui-canvases-display-canvas-data)

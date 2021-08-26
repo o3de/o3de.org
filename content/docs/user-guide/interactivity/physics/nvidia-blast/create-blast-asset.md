@@ -4,16 +4,14 @@ title: Create assets for NVIDIA Blast
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 Assets for NVIDIA Blast are created in Houdini with the provided tools and plug-ins. Follow the steps below to create and export blast assets for O3DE.
 
 **Note**
 These steps can be applied to any mesh. For best results, the mesh should be fully enclosed. Custom normals, UV sets, and vertex color streams can be applied to the root mesh and the resulting chunks.
 
 **Contents**
-+ [Fracture a mesh for NVIDIA Blast](#nvidia-blast-fracture-mesh)
-+ [Export an asset for NVIDIA Blast](#nvidia-blast-export)
++ [Fracture a mesh for NVIDIA Blast](#fracture-a-mesh-for-nvidia-blast)
++ [Export an asset for NVIDIA Blast](#export-an-asset-for-nvidia-blast)
 
 ## Fracture a mesh for NVIDIA Blast 
 

@@ -3,8 +3,6 @@ description: null
 title: 'Animation Editor Concepts and Terms'
 ---
 
-{{< preview-migrated >}}
-
 The following concepts and terms are used in the **Animation Editor**:
 
 **Topics**

@@ -3,8 +3,6 @@ title: "Rendering"
 toc:
 ---
 
-{{< preview-new >}}
-
 Open 3D Engine's (O3DE) graphics features are integrated using the Atom renderer, a high performance, physically based rendering engine. Atom provides the following features:
 
 * Ray tracing to produce detailed, authentic environments.

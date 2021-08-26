@@ -10,11 +10,13 @@ This guide will help you identify and resolve some common issues that you might 
 
 If you believe your setup problem is due to a bug in O3DE, check [existing bug reports](https://github.com/o3de/o3de/issues) and [file an issue](https://github.com/o3de/o3de/issues/new/choose) if you can!
 
+Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/docs/user-guide/appendix/log-files) for locations.
+
 ## CMake not found on the PATH
 
 **Issue:** Running a tool from the command line in the O3DE engine directory (such as `get_python.bat`) reports that CMake was not found on the PATH and LY_CMAKE_PATH is not defined.
 
-**Remedy:** Install CMake, if it isn't installed. If it is already installed, the path to the CMake binaries might not be defined in your operating system. In both cases, refer to the software prerequisites section of the [O3DE System Requirements](/docs/welcome-guide/setup/requirements/#software-prerequisites) for instructions on how to install and configure CMake.
+**Remedy:** Install CMake, if it isn't installed. If it is already installed, the path to the CMake binaries might not be defined in your operating system. Refer to the [Software prerequisites](../requirements/#software-prerequisites) and [CMake configuration](../requirements/#cmake-configuration) sections of the O3DE System Requirements topic for instructions on how to install and configure CMake, respectively.
 
 After installing CMake or defining its path on your computer, open a new command line window before attempting to run the tool again.
 
@@ -80,9 +82,10 @@ python\get_python.bat
 
 ## More troubleshooting help
 
-There are additional troubleshooting pages in other sections of the O3DE documentation:
+For more troubleshooting help, refer to these other O3DE troubleshooting pages:
 
-* [Open 3D Engine Build Troubleshooting](/docs/user-guide/build/troubleshooting)
+* [Troubleshooting O3DE Project Configuration](/docs/user-guide/project-config/troubleshooting)
+* [Build Troubleshooting in Open 3D Engine](/docs/user-guide/build/troubleshooting)
 
 As a reminder, you can also try searching for your issue or asking for help in these locations:
 

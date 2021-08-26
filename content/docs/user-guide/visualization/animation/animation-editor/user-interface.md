@@ -3,8 +3,6 @@ description: ' View the Animation Editor interface in Open 3D Engine. '
 title: 'Animation Editor User Interface'
 ---
 
-{{< preview-migrated >}}
-
 **Topics**
 + [Opening Animation Editor](#opening-animation-editor-)
 + [Anim Graph Interface](/docs/user-guide/visualization/animation/animation-editor/animation-graph-user-interface.md)

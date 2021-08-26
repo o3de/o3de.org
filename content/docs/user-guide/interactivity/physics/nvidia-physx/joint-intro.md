@@ -5,8 +5,6 @@ title: Dynamic joints with PhysX
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 PhysX joint components constrain the position and orientation of one PhysX rigid body called the *follower*, relative to another PhysX rigid body, called the *leader*. The leader rigid body will have rotational freedom in zero, one, or two axes around the joint, depending on the type of PhysX joint.
 
 The example image below is a simple demonstration of the three joint types. In each example, the blue sphere is the follower rigid body. The joints are centered on their respective follower rigid bodies. The red sphere is the leader rigid body. For clarity, the ball joint and hinge joint follower rigid bodies are set to fixed positions, but they can be dynamic rigid bodies like the fixed joint example. Also note that the joints can be offset from the follower rigid body using the **Local Position** and **Local Rotation** properties of the joint component.
@@ -16,16 +14,16 @@ The example image below is a simple demonstration of the three joint types. In e
 **Contents**
 + [PhysX joint types](#physx-joint-types)
 + [PhysX joint setup](#physx-joint-setup)
-+ [PhysX Joint configuration](#physx-joint-config)
-  + [Position mode](#joint-position)
-  + [Rotation mode](#joint-rotation)
-  + [Snap position mode](#joint-snap-position)
-  + [Snap rotation mode](#joint-snap-rotation)
-  + [Maximum Force and Maximum Torque modes](#joint-breakable-properties)
-  + [Swing limits mode](#joint-swing-limit)
-  + [Twist limits mode](#joint-twist-limit)
-  + [Stiffness and Damping modes](#joint-soft-limit-properties)
-+ [Notes on stability](#joint-stability)
++ [PhysX Joint configuration](#physx-joint-configuration)
+  + [Position mode](#position-mode)
+  + [Rotation mode](#rotation-mode)
+  + [Snap position mode](#snap-position-mode)
+  + [Snap rotation mode](#snap-rotation-mode)
+  + [Maximum Force and Maximum Torque modes](#maximum-force-and-maximum-torque-modes)
+  + [Swing limits mode](#swing-limits-mode)
+  + [Twist limits mode](#twist-limits-mode)
+  + [Stiffness and Damping modes](#stiffness-and-damping-modes)
++ [Notes on stability](#notes-on-stability)
 
 ## PhysX joint types 
 
@@ -139,4 +137,4 @@ Stiffness and damping modes display a gray box that you can click and drag to ad
 
 ## Notes on stability 
 
-The iterative solver used by PhysX joints may not be able to maintain constraints in some configurations. For example, the solver might fail to converge. The result is unstable or unexpected motion during simulation. The PhysX documentation describes configurations that could help avoid such occurrences. Please see [Configuring Joints for Best Behavior](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/Joints.html) in NVIDIA's PhysX Joint documentation.
+The iterative solver used by PhysX joints may not be able to maintain constraints in some configurations. For example, the solver might fail to converge. The result is unstable or unexpected motion during simulation. The PhysX documentation describes configurations that could help avoid such occurrences. Please see [Configuring Joints for Best Behavior](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/Joints.html#configuring-joints-for-best-behavior) in NVIDIA's PhysX Joint documentation.

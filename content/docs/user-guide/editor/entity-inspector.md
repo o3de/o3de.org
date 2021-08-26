@@ -4,8 +4,6 @@ description: ' Use the Entity Inspector to add components to entities and modify
 title: Entity Inspector
 ---
 
-{{< preview-migrated >}}
-
 The **Entity Inspector** manages all the components for each entity. Select an entity in the **Entity Outliner** or the viewport to see the attached components in the **Entity Inspector**.
 
 **To open the Entity Inspector**

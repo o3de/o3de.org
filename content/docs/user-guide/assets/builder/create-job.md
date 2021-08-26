@@ -5,8 +5,6 @@ title: Create jobs with Python Asset Builder
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 When you create a job with the Python Asset Builder, the callback for `OnCreateJobsRequest` will be called with a `CreateJobsRequest` in a tuple. The callback will return a `CreateJobsResponse` as the response using the data inside the request.
 
 **Contents**

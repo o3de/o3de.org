@@ -4,8 +4,6 @@ description: ' Learn about the nodes in Script Canvas, Open 3D Engine''s visual 
 title: Understanding Script Canvas Nodes
 ---
 
-{{< preview-migrated >}}
-
 A node in Script Canvas consists of a title bar, inputs, and outputs.
 
 ![\[Anatomy of a node in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-nodes-understanding-1.png)

@@ -3,8 +3,6 @@ description: ' Export actors from .fbx files with FBX Settings to Open 3D Engine
 title: FBX Settings actor export
 ---
 
-{{< preview-migrated >}}
-
 **Actors** contain geometry that has a skeleton and skinning data. An **Actor** is not necessarily a character. Assets that use a skeleton and skinning data to drive animation such as weapons, machines, and foliage, are **Actors**. **Actors** can be animated through keyframe animation imported as **Motions** or through PhysX simulation and other dynamic solvers such as **Touch Bending**.
 
 ## Export an actor 
@@ -19,7 +17,7 @@ title: FBX Settings actor export
 
 1. In **FBX Settings**, in the **Actors** tab, ensure the desired root bone of the actor's skeleton is selected in the **Select root bone** property.
 
-   An **Actor group** may contain only one skeleton hierarchy, and will only export bones that are part of the selected heirarchy.
+   An **Actor group** may contain only one skeleton hierarchy, and will only export bones that are part of the selected hierarchy.
 
 1. In **FBX Settings**, in the **Actors** tab, choose the **Hierarchy** button to the right of **Select base meshes** and ensure only the meshes required for the **Actor group** are selected in the mesh list.
 

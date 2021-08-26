@@ -3,8 +3,6 @@ description: ' Allocate and track memory in Open 3D Engine. '
 title: Using Memory Allocators in O3DE
 ---
 
-{{< preview-migrated >}}
-
 O3DE's memory management system determines how memory is allocated. All memory allocations go through one pipeline, and memory allocation can be tracked. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance. This improvement is especially important for mobile platforms, where memory resources are usually more constrained than in PC environments.
 
 O3DE supports all the best known memory allocation schemes. You can use O3DE's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation.

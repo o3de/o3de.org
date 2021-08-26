@@ -5,8 +5,6 @@ title: Dynamic vegetation procedures
 weight: 200
 ---
 
-{{< preview-migrated >}}
-
 Creating realistic dynamic vegetation in O3DE starts with a few basic procedures that you can follow up with endless customizations.
 
 You can perform these procedures in the order that they appear, which presents a basic workflow. Or you can pick and choose the procedures that you need. The examples in these procedures use assets in the Starter Game project.

@@ -6,8 +6,6 @@ weight: 450
 toc: true
 ---
 
-{{< preview-new >}}
-
 When you make an edit or create a new topic in the Open 3D Engine (O3DE) docs, you need to submit a pull request (PR) for review before the changes can be merged into `o3de.org:main`. The current list of active PRs is here [O3DE repository pull requests (PRs)](https://github.com/o3de/o3de.org/pulls). PRs allow peer contributors to review contributions for several potential issues, including the following:
 
 * Technical accuracy
@@ -43,6 +41,10 @@ Despite only having five steps, the PR process can take some time depending on t
 ### Commit your changes
 
 The first step in the PR process is to commit your changes to a branch on your fork. You must add a DCO sign-off to all of your commits, otherwise your PRs will not be reviewed or merged. DCO stands for [*Developer Certificate of Origin (DCO)*](https://github.com/apps/dco). The DCO sign-off is your certification that your contribution is your own original work, or that you otherwise have the right to submit the work. DCO sign-off is easy to do, and just as easy to forget.
+
+{{< important >}}
+If you use the GitHub web UI to make your commit, you must add a `Signed-off-by:` line to your commit message or the DCO check will fail. For GitHub accounts created prior to July 18, 2017, use `username@users.noreply.github.com` as the email address. For accounts created after that date, use your GitHub-provided no-reply email address. The new no-reply email address is a seven-digit ID number and your username in the form of `ID+username@users.noreply.github.com` which can be found in the email tab of your GitHub account settings. For more information about setting your commit email address, refer to the [Setting your commit email address instructions](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/managing-email-preferences/setting-your-commit-email-address).
+{{< /important >}}
 
 For an introductory tutorial on Git, refer to [A tutorial introduction to Git](https://git-scm.com/docs/gittutorial).
 

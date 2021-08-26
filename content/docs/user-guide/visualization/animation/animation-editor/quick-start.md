@@ -3,8 +3,6 @@ description: ' Use the Animation Editor quick start to animate a character in Op
 title: Getting Started with the Animation Editor
 ---
 
-{{< preview-migrated >}}
-
 See the following procedures to get started with the **Animation Editor**.
 
 In this procedure, you do the following:

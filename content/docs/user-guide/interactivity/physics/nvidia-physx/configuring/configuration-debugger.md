@@ -4,8 +4,6 @@ title: Debugger Configuration
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger (PVD). The PVD is a third-party application that records your PhysX data from O3DE Editor. You can then review this data to see how your physics effects appear.
 
 For more information, see the NVIDIA [PhysX Visual Debugger (PVD)](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/VisualDebugger.html#physxvisualdebugger) documentation.
@@ -20,7 +18,7 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
 
 1. After you install the application, open the PVD. This application must be running if you want to record data from O3DE Editor.
 
-1. In O3DE Editor, open a level or create one that has entities with PhysX components. For example, you can create a dynamic entity that falls. For more information, see [Creating a Dynamic PhysX Entity](/docs/user-guide/components/reference/physx/rigid-body-physics#example-creating-dynamic-game-entity).
+1. In O3DE Editor, open a level or create one that has entities with PhysX components. For example, you can create a dynamic entity that falls. For more information, see [Creating a Dynamic PhysX Entity](/docs/user-guide/components/reference/physx/rigid-body-physics#creating-a-dynamic-physx-entity).
 
 1. In O3DE Editor, choose **Tools**, **PhysX Configuration**.
 

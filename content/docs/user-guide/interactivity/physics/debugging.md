@@ -4,17 +4,15 @@ title: Debugging PhysX
 weight: 1000
 ---
 
-{{< preview-migrated >}}
-
 The PhysX system has the following features that you can use to debug issues.
 
 **Note**
-You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/) gem.
+You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) gem.
 
 **Topics**
-+ [PhysX Debug Console Variables](#debugging-physx-console-variables)
-+ [Debugging with the ImGui Tool](#imgui-debugging-tool)
-+ [Debug Options in the PhysX Configuration](#physx-debugging-configuration)
++ [PhysX Debug Console Variables](#physx-debug-console-variables)
++ [Debugging with the ImGui Tool](#debugging-with-the-imgui-tool)
++ [Debug Options in the PhysX Configuration](#debug-options-in-the-physx-configuration)
 
 ## PhysX Debug Console Variables 
 
@@ -31,7 +29,7 @@ physx_Debug 1
 You can specify the following values:
 + `1` - Enable debug visualizations. By default, this value enables the collision shapes and edges for your PhysX entities.
 + `2` - Enables all configuration options. This enables all the available visualization options.
-+ `3` - Toggles the proximity based collider visualization. This value applies only to mesh colliders. See [Physics asset colliders](/docs/userguide/components/collider#physics-asset-colliders).
++ `3` - Toggles the proximity based collider visualization. This value applies only to mesh colliders. See [Physics asset colliders](/docs/user-guide/components/reference/physx/collider/#physics-asset-colliders).
 + `0` - Disables debug visualizations.
 
 Toggles a visual culling box frame.
@@ -48,13 +46,13 @@ Adjusts the culling box size to **100**. Enter **0** to disable culling.
 physx_CullingBoxSize 100
 ```
 
-Connects to the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md).
+Connects to the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
 
 ```
 physx_PvdConnect
 ```
 
-Disconnects from the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md).
+Disconnects from the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
 
 ```
 physx_PvdDisconnect
@@ -85,4 +83,4 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 
 ## Debug Options in the PhysX Configuration 
 
-You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuration-debugger.md).
+You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).

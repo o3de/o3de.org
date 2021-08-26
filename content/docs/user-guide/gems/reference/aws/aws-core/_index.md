@@ -6,8 +6,6 @@ weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **AWS Core** Gem lets you use AWS services from within O3DE. Other AWS Gems typically have a dependency on this Gem since it provides the common mechanisms to do the following:
 * Set up the required AWS SDK for C++.
 * Configure platform clients.

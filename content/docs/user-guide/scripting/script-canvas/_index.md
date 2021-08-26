@@ -5,8 +5,6 @@ linktitle: Script Canvas
 title: Creating Gameplay with Script Canvas
 ---
 
-{{< preview-migrated >}}
-
 Script Canvas is a visual scripting environment for Open 3D Engine that you can use to create game logic and behaviors. Integrated with O3DE's component entity system, Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. With its visual scripting options, you can use Script Canvas to create [scripts](/docs/user-guide/appendix/glossary#scripts) for game logic without needing to know how to code. Event-driven scripts let you produce small scripts that don't require complex logic to maintain states.
 
 Script Canvas is also an extensible system. You can build your own reusable Script Canvas functions and, since Script Canvas is based on AzCore, you can create custom Script Canvas nodes that use the serialization, reflection, modularization, and EBus messaging systems.

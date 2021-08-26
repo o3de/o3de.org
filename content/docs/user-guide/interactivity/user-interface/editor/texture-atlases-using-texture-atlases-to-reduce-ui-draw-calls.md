@@ -3,8 +3,6 @@ description: null
 title: Using Texture Atlases to Reduce UI Draw Calls
 ---
 
-{{< preview-migrated >}}
-
 The UI shader can combine draw calls that use up to a maximum of 16 textures. If this limit is exceeded, you can use texture atlases to reduce the number of draw calls.
 
 Deciding which textures to add to a texture atlas is a two-part process:

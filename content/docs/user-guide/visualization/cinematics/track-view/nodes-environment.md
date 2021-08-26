@@ -4,8 +4,6 @@ description: ' Use the Environment node in O3DE''s <guilabel>Track View</guilabe
 title: Environment Node
 ---
 
-{{< preview-migrated >}}
-
 You can use the **Environment** node to set the sun's longitude and latitude in a scene.
 
 **To add an Environment node in the Track View**

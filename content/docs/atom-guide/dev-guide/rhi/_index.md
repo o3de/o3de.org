@@ -5,9 +5,6 @@ toc: false
 weight: 600
 ---
 
-{{< preview-new >}}
-
-# Render Hardware Interface
 This section contains technical details about the Render Hardware Interface (RHI) in Atom. The RHI is a low-level layer in the rendering pipeline that communicates with the backend graphics API. The RHI Gems are part of Atom and you need at least one compatible backend for your platform to render something on screen. 
 
 The RHI layer supports three backends:

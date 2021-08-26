@@ -3,8 +3,6 @@ description: ' Learn how to use asserts in Open 3D Engine to debug your game cod
 title: Using the sys_asserts Console Variable (CVAR)
 ---
 
-{{< preview-migrated >}}
-
 Manage assert notifications in O3DE with the `sys_asserts` console variable. The following table shows the possible values and their meanings.
 
 
@@ -63,7 +61,7 @@ You can set the `sys_asserts` console variable at runtime in the console window.
 
 ## Setting the Assert Level for Mobile Devices 
 
-When debugging mobile platforms, you can use the Windows-based [Universal Remote Console](/docs/user-guide/engine/remote-console.md) to set the assert level in the command-line window of the application.
+When debugging mobile platforms, you can use the Windows-based Universal Remote Console to set the assert level in the command-line window of the application.
 
 ![\[Using the Universal Remote Console to set the assert level for mobile platforms.\]](/images/user-guide/debugging-using-asserts-3.png)
 

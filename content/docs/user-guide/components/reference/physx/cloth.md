@@ -7,24 +7,24 @@ title: Cloth component
 
 The **Cloth** component treats the vertices of any mesh that it references as cloth particles and applies physical properties, forces, and constraints to simulate the behavior of cloth. You can add this component to any entity that has **Mesh** or **Actor** components. You can add multiple cloth components to an entity.
 
-The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/nvidia-cloth/).
+The **Cloth** component is provided by the [NVIDIA Cloth gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-cloth/).
 
 For information on using the **Cloth** component see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/).
 
 **Contents**
-+ [Base properties](#component-cloth-base-properties)
-+ [Motion constraints properties](#component-cloth-motion-constraints-properties)
-+ [Backstop properties](#component-cloth-backstop-properties)
-+ [Damping properties](#component-cloth-damping-properties)
-+ [Inertia properties](#component-cloth-inertia-properties)
-+ [Wind properties](#component-cloth-wind-properties)
-+ [Collision properties](#component-cloth-collision-properties)
-+ [Self Collision properties](#component-cloth-self-collision-properties)
-+ [Fabric stiffness properties](#component-cloth-fabric-stiffness-properties)
-+ [Fabric compression properties](#component-cloth-fabric-compression-properties)
-+ [Fabric stretch properties](#component-cloth-fabric-stretch-properties)
-+ [Tether constraints properties](#component-cloth-tether-constraints-properties)
-+ [Quality properties](#component-cloth-quality-properties)
++ [Base properties](#base-properties)
++ [Motion constraints properties](#motion-constraints-properties)
++ [Backstop properties](#backstop-properties)
++ [Damping properties](#damping-properties)
++ [Inertia properties](#inertia-properties)
++ [Wind properties](#wind-properties)
++ [Collision properties](#collision-properties)
++ [Self Collision properties](#self-collision-properties)
++ [Fabric stiffness properties](#fabric-stiffness-properties)
++ [Fabric compression properties](#fabric-compression-properties)
++ [Fabric stretch properties](#fabric-stretch-properties)
++ [Tether constraints properties](#tether-constraints-properties)
++ [Quality properties](#quality-properties)
 
 ## Base properties 
 

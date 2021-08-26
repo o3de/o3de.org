@@ -4,8 +4,6 @@ title: Global Configuration
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 On the **Global Configuration** tab, you can configure world settings and editor settings.
 
 ![\[PhysX Global Configuration tab\]](/images/user-guide/physx/physx-configuration-1.png)
@@ -66,7 +64,7 @@ The following options relate to the **Debug Draw COM** (center of mass) option o
 | Joints Hierarchy Distance Threshold  |  Minimum distance required to draw from follower to joint. Distances shorter than this threshold will result in the line drawn from the joint to the lead. The default is `1.0`.  |
 
 **Note**
-These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/gems/reference/physx-debug/) gem.
+These options are part of the PhysX gem and are not related to the Debug Draw gem or the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) gem.
 
 ## Wind Configuration 
 
