@@ -8,4 +8,4 @@ menu_uuid: Multiplayer
 
 This section contains tutorials on setting up multiplayer components in C++ using Multiplayer gem. For additional information, refer to the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/) reference.
 
-* [Tutorial - Your First Network Component](first-multiplayer-component) - Your introductory step-by-step guide to creating multiplayer components in C++.
+* [Tutorial: Your First Network Component](first-multiplayer-component) - Your introductory step-by-step guide to creating multiplayer components in C++.
