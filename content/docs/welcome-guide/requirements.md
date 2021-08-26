@@ -34,15 +34,15 @@ RAM and free disk space requirements are dependent on the options that you selec
 
 ## Software prerequisites and configuration {#software-prerequisites}
 
-Creating new projects or using the advanced development features of O3DE requires several software components. You will need a development environment that includes the following software.
+Creating new projects or using the advanced development features of O3DE requires several software components. You will need a development environment that includes the following:
 
 ### Operating System
 
 At this time, Microsoft Windows is the primary platform for using the O3DE
-editor and building source. Specifically, **Windows 10 version 1809 (10.0.17763)**
+editor and for building source. Specifically, **Windows 10 version 1809 (10.0.17763)**
 or later is required.
 
-Developing with O3DE on macOS is an experimental feature. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
+Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
 
 Support for Linux is a work in progress.
 
@@ -54,9 +54,7 @@ Microsoft offers **Visual Studio Community** free to individual developers. For 
 
 #### Visual Studio configuration
 
-The default Visual Studio installation might not include all of the features
-that are required by O3DE. The following steps describe how to ensure that the
-necessary Visual Studio features are enabled:
+The default Visual Studio installation might not include all of the features that are required by O3DE. The following steps describe how to ensure that the necessary Visual Studio features are enabled:
 
 1. Launch the **Visual Studio Installer**.
 
