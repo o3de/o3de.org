@@ -18,7 +18,6 @@ For a quick introduction of the O3DE Multiplayer Gem and networking, watch the v
 | [Project configuration](./configuration) | How to enable the O3DE Multiplayer Gem in a project. |
 | [Multiplayer Autocomponents](./autocomponents) | Automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
 | [Test Multiplayer Projects in the Editor](./test-in-editor) | Automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the O3DE Editor. |
-| [Tutorial - Your First Network Component](./tutorial_multiplayer) | Your introductory step-by-step guide to creating multiplayer components in C++. |
 
 
 ## Related topics
