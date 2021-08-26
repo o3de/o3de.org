@@ -12,7 +12,7 @@ toc: true
 
 This tutorial will link all the relevant documentation to provide you with a detailed guide on getting started with creating multiplayer components. By the end of this tutorial you will learn how to create a new network component that has a network property and a remote procedure call.
 
-Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it here: https://github.com/o3de/o3de-multiplayersample/blob/development/README.md
+Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it in the [MultiplayerSample project readme](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
 
 
 
@@ -24,13 +24,13 @@ Our starting base will be the O3DE MultiplayerSample project. You can find the i
 
 We will start by creating a network component - MyFirstNetworkComponent. It will only do one thing, which is to replicate a monotonic counter.
 
-Since we already have MultiplayerSample setup for codegen, we can start by duplicating one of the existing codegen xml files.
+Since we already have MultiplayerSample setup for [automated code generation](/docs/user-guide/engine/autogen) (codegen), we can start by duplicating one of the existing codegen xml files.
 
-`\path\to\o3de-multiplayersample\Gem\Code\Source\AutoGen\SimplePlayerCameraComponent.AutoComponent.xml`
+`<o3de-multiplayersample>\Gem\Code\Source\AutoGen\SimplePlayerCameraComponent.AutoComponent.xml`
 
-into 
+into
 
-`\path\to\o3de-multiplayersample\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml`
+`<o3de-multiplayersample>\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml`
 
 ```xml
 <Component Name="MyFirstNetworkComponent"
@@ -42,7 +42,7 @@ into
 </Component>
 ```
 
-Go to `\path\to\o3de-multiplayersample\Gem\Code\multiplayersample_files.cmake` and add your new xml file:
+Go to `<o3de-multiplayersample>\Gem\Code\multiplayersample_files.cmake` and add your new xml file:
 
 ```
 set(FILES
@@ -50,7 +50,7 @@ set(FILES
     Source/AutoGen/MyFirstNetworkComponent.AutoComponent.xml
 ```
 
-Re-run cmake configure for your O3DE project, or build `MultiplayerSample.Static`. A failure is expected, since we have not written our code on top of the code-generated files.
+Re-run CMake configure for your O3DE project, or build `MultiplayerSample.Static`. A failure is expected, since we have not written our code on top of the code-generated files.
 
 ```
 3>------ Build started: Project: MultiplayerSample.Static, Configuration: profile x64 ------
@@ -78,10 +78,10 @@ First, notice what we did get so far:
 3>Generating D:\git\o3de\build\-86ba765d\Gem\Code\Azcg\Generated\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.cpp ...
 ```
 
-Taking a look into the header `MyFirstNetworkComponent.AutoComponent.h`, you can find the following large commented block:
+Open the header file `MyFirstNetworkComponent.AutoComponent.h` and look for the following, large comment block:
 
 ```c++
-/* 
+/*
 /// You may use the classes below as a basis for your new derived classes. Derived classes must be marked in MyFirstNetworkComponent.AutoComponent.xml
 /// Place in your .h
 #pragma once
@@ -102,11 +102,11 @@ namespace MultiplayerSample
         void OnActivate(Multiplayer::EntityIsMigrating entityIsMigrating) override;
         void OnDeactivate(Multiplayer::EntityIsMigrating entityIsMigrating) override;
 
-        
-        
-        
+
+
+
     protected:
-        
+
     };
 
 }
@@ -142,9 +142,9 @@ namespace MultiplayerSample
 */
 ```
 
-That is our starting base. We can copy paste that code into `\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.h` and `\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`.
+The code in the preceeding block is our starting base. Copy paste that code into `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.h` and `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`.
 
-Add these files to `\path\to\o3de-multiplayersample\Gem\Code\multiplayersample_files.cmake`:
+Add these files to `<o3de-multiplayersample>\Gem\Code\multiplayersample_files.cmake`:
 
 ```
 set(FILES
@@ -153,7 +153,7 @@ set(FILES
     Source/Components/MyFirstNetworkComponent.h
 ```
 
-Now, MultiplayerSample project should compile without any issues. You should be able to see the new component in the Editor.
+Now, MultiplayerSample project should compile without any issues. Open the Editor to see the new component in the Editor.
 
 
 ![My First Network Component in the Editor](/images/user-guide/multiplayer/my_first_network_component_in_editor.png)
@@ -165,7 +165,7 @@ Additionally, you can find the generated files and your XML file in Visual Studi
 
 ### Add a Network Property
 
-Let's add a network property that will replicate uptime from the server to clients. Here is an example of the xml file with a network property:
+Let's add a network property that will replicate uptime from the server to clients. Here is an example of a codegen xml file with a network property, `MyFirstNetworkComponent.AutoComponent.xml`:
 
 ```xml
 <?xml version="1.0"?>
@@ -201,7 +201,7 @@ Let's focus on the basic details of a `NetworkProperty`. These are:
                    ReplicateTo="Client"
 ```
 
-One can think of the above as if expressed in a C++ way:
+Expressed in C++, this would look like:
 
 ```c++
 double m_UpTime = 0.0; // replicate from Authority to Client
@@ -230,9 +230,9 @@ On the authority server we can set the value of `UpTime` by accessing the contro
     }
 ```
 
-A controller only exists on the authority server, thus this effectively splits the execution into server-only and client-only logic. 
+A controller only exists on the authority server, thus this effectively splits the execution into server-only and client-only logic.
 
-Our full code for the component so far is as follows. The header is `\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
+Our full code for the component so far is as follows. The header is `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
 
 ```c++
 #pragma once
@@ -260,7 +260,7 @@ namespace MultiplayerSample
 }
 ```
 
-And the source, `\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`:
+And the source, `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`:
 
 ```c++
 #include <Source/Components/MyFirstNetworkComponent.h>
@@ -324,7 +324,7 @@ This is what we have at the moment.
                     />
 ```
 
-If `GenerateEventBindings` is instead set to true, 
+Change `GenerateEventBindings` to true:
 
 ```xml
   <NetworkProperty Type="double"
@@ -335,13 +335,13 @@ If `GenerateEventBindings` is instead set to true,
                     />
 ```
 
-It will generate a new method: `UpTimeAddEvent`. Let's put it to use in our code.
+A project build will generate a new method: `UpTimeAddEvent`. Let's put it to use in our code.
 
-Here are the steps to listen for changes on a client in our component:
+To listen for changes on a client in our component, do the following:
 
-* create an event handler
-* create a callback method and assign it to the event handler
-* connect the event handler to `UpTimeAddEvent`
+* Create an event handler.
+* Create a callback method and assign it to the event handler.
+* Connect the event handler to `UpTimeAddEvent`.
 
 In C++, it looks like this:
 
@@ -374,7 +374,7 @@ void MyFirstNetworkComponent::OnUpTimeChanged( double uptime )
 }
 ```
 
-Our full source code for the header is now:
+After making these changes, `MyFirstNetworkComponent.h` should look like this:
 
 ```c++
 #pragma once
@@ -408,7 +408,7 @@ namespace MultiplayerSample
 }
 ```
 
-And source code is:
+And `MyFirstNetworkComponent.cpp` should look like this:
 
 ```c++
 #include <Source/Components/MyFirstNetworkComponent.h>
@@ -469,13 +469,13 @@ namespace MultiplayerSample
 
 ### Network Component Controllers
 
-Let's improve on the separation between server and client code. At the moment, `MyFirstNetworkComponent` performs both server and client duties. Let's break it up. In O3DE Multiplayer, the way to do that is by using `controllers`. A controller does not exist on `Client` roles but does exist on Authority role. We already saw a glipmse into that in our previous examples:
+Let's improve on the separation between server and client code. At the moment, `MyFirstNetworkComponent` performs both server and client duties. Let's break it up. In O3DE Multiplayer, the way to do that is by using `controllers`. A controller does not exist on `Client` roles but does exist on Authority role. We already saw a glipmse of that in our previous examples:
 
 ```c++
 auto* controller = static_cast<MyFirstNetworkComponentController*>( GetController() );
 ```
 
-Going back to XML, the controller were mentioned in the attribute `OverrideController`:
+Going back to XML, the controller was mentioned in the attribute `OverrideController`:
 
 ```xml
 <Component Name="MyFirstNetworkComponent"
@@ -484,7 +484,7 @@ Going back to XML, the controller were mentioned in the attribute `OverrideContr
            OverrideController="false"
 ```
 
-Now that we wish to do some custom work with the controller, we will flip `OverrideController` to true.
+To do some custom work with the controller, change `OverrideController` to true.
 
 ```xml
 <Component Name="MyFirstNetworkComponent"
@@ -523,11 +523,11 @@ When attempting to build the code, you will get compile errors but that is becau
 */
 ```
 
-Let's add this content to our existing `\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.h` and `\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`.
+Add this content to our existing `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.h` and `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`.
 
-Once you do, you can move all the server logic into `MyFirstNetworkComponentController` and keep client logic in `MyFirstNetworkComponent`. Here is the result.
+Move all the server logic into `MyFirstNetworkComponentController` and keep the client logic in `MyFirstNetworkComponent`, as shown in the following updated files:
 
-`\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
+`<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
 
 ```c++
 #pragma once
@@ -574,7 +574,7 @@ namespace MultiplayerSample
 Notice the key difference in the header:
 * AZ::TickBus::Handler was moved from `MyFirstNetworkComponent` to `MyFirstNetworkComponentController`
 
-`\path\to\o3de-multiplayersample\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`:
+`<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`:
 ```c++
 #include <Source/Components/MyFirstNetworkComponent.h>
 
@@ -640,7 +640,7 @@ namespace MultiplayerSample
 }
 ```
 
-Our code gen xml file `\path\to\o3de-multiplayersample\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml` is:
+Our code gen xml file `<o3de-multiplayersample>\Gem\Code\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.xml` is:
 
 ```xml
 <?xml version="1.0"?>
@@ -670,7 +670,9 @@ And now we have a clean separation between server and client logic for our compo
 
 ### Add a Remote Procedure Call
 
-Now that we have created a data flow from the server to clients, let's reverse the direction with a remote procedure call. Building from the previous example, whenever a client gets new `UpTime` it will call a new RPC - `SendConfirmUptime` and send the value it got back to the server. Just for fun.
+Now that we have created a data flow from the server to clients using network properties, we will add a remote procedure call (RPC). Whenever a client will get a new `UpTime` it will call a new RPC - `SendConfirmUptime` and send the value it got back to the server. Just for fun.
+
+Here is the codegensection that defines the RPC:
 
 ```xml
   <RemoteProcedure Name="SendConfirmUptime"
@@ -686,12 +688,16 @@ Now that we have created a data flow from the server to clients, let's reverse t
 ```
 
 {{<important>}}
-Notice that InvokeFrom is not `Client` but `Autonomous`. `Autonomous` is a special type of client behavior where a client initiates an action and may send data to the server. 'Autonomous' is commonly used for player character controllers; in this case a player has to be able to act on its own without waiting for the server to tell it what to do. Meanwhile, 'Client' only mirrors what the server tells them to do.
+Notice that InvokeFrom is `Autonomous` instead of `Client`. `Autonomous` is a special type of client behavior where a client initiates an action and may send data to the server. 'Autonomous' is commonly used for player character controllers; in this case a player has to be able to act on its own without waiting for the server to tell it what to do. Meanwhile, 'Client' only mirrors what the server tells them to do.
 
 By default, only the player prefab is marked as Autonomous, so we will move `MyFirstNetworkComponent` to the player prefab for this tutorial.
 {{</important>}}
 
-If you rebuild `MultiplayerSample.Static` project, you will notice that the generated header for our component, `\path\to\o3de\build\MultiplayerSample-6db9bd97\Gem\Code\Azcg\Generated\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.h`, has a new empty virtual method in the large comment block for `MyFirstNetworkComponentController`:
+Re-build `MultiplayerSample.Static` project. You will notice that the generated header for our component, `\path\to\o3de\build\MultiplayerSample-6db9bd97\Gem\Code\Azcg\Generated\Source\AutoGen\MyFirstNetworkComponent.AutoComponent.h`, has a new empty virtual method in the large comment block for `MyFirstNetworkComponentController`:
+
+{{<note>}}
+You might get thrown by this folder name `MultiplayerSample-6db9bd97`. This is a code-generated folder inside build folder. You might have a different name in your build folder.
+{{</note>}}
 
 ```c++
 class MyFirstNetworkComponentController
@@ -700,7 +706,7 @@ class MyFirstNetworkComponentController
     void HandleSendConfirmUptime(AzNetworking::IConnection* invokingConnection, const double& UpTime) override {}
 ```
 
-We can take note of this and provide our own implementation of it:
+Take note of this and provide your own implementation of `HandleSendConfirmUptime`:
 
 ```c++
 void MyFirstNetworkComponentController::HandleSendConfirmUptime([[maybe_unused]] AzNetworking::IConnection* invokingConnection,
@@ -724,16 +730,17 @@ void MyFirstNetworkComponent::OnUpTimeChanged(double uptime)
 Only entities that are autonomous will have controllers, otherwise `GetController()` will give a null on clients. If you are getting a null on your `GetController` calls then you have attached your component to an entity that is not autonomous. Attach them to player prefabs instead, as those are marked as autonomous by the server.
 {{</important>}}
 
-You can find the player prefab for MultiplayerSample project at `\path\to\o3de-multiplayersample\Prefabs\Player.prefab`. At this point you should:
+The player prefab for MultiplayerSample project can be found at `<o3de-multiplayersample>\Prefabs\Player.prefab`.
+Do the following steps to modify `Player.prefab`:
 
-- Instantiate a player prefab in the level temporarily.
-- Modify the player prefab instance by adding `MyFirstNetworkComponent` to `player` entity.
-- Save the player prefab.
-- Delete the player prefab from the level.
+    1. Instantiate a player prefab in the level temporarily. (You can find the player prefab for MultiplayerSample project at `<o3de-multiplayersample>\Prefabs\Player.prefab`.)
+    1. Modify the player prefab instance by adding `MyFirstNetworkComponent` to `player` entity.
+    1. Save the player prefab.
+    1. Delete the player prefab from the level.
 
 ![Attaching Network Component to an Autonomous Entity](/images/user-guide/multiplayer/add_myfirstnetworkcomponent_to_player_prefab.png)
 
-Here is our full source code for our component with RPC. For the header, `\path\to\MultiplayerSample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
+Here is our full source code for our component with an RPC. For the header, `\path\to\MultiplayerSample\Gem\Code\Source\Components\MyFirstNetworkComponent.h`:
 
 ```c++
 #pragma once
