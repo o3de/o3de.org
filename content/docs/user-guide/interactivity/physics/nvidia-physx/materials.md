@@ -104,7 +104,7 @@ When the **Physics Asset** shape is selected in **PhysX Collider** component, an
 
 Static entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material.
 
-For more information on creating PhysX mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md).
+For more information on creating PhysX mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
 
 In the example below, the PhysX mesh asset was authored with six materials in the content creation application: *Yellow*, *Red*, *Blue*, *Teal*, *Green* and *Orange*. In FBX Settings, under PhysX tab, a physics material can be assigned to each material.
 

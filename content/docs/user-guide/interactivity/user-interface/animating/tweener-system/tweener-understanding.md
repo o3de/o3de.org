@@ -16,4 +16,4 @@ Properties other than location can also use tweeners. The following animation sh
 
 Tweeners are highly customizable. You can specify parameters to change properties such as duration, delay before starting, number of times to play, whether to go from the specified value to the current value or vice versa, and so on.
 
-For available parameters and how to use them, see [Tweener Supported Components](/docs/user-guide/user-interface/animating/tweener-components.md). You can also [create a timeline](/docs/user-guide/user-interface/animating/tweener-timeline.md) to chain animations together with different tween types.
+For available parameters and how to use them, see [Tweener Supported Components](/docs/user-guide/user-interface/animating/tweener-components/). You can also [create a timeline](/docs/user-guide/user-interface/animating/tweener-timeline/) to chain animations together with different tween types.
