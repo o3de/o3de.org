@@ -27,15 +27,13 @@ The following instructions assume that you have:
 If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/appendix/glossary#source-engine) build type, we recommend that you create your project using the command line interface (CLI). For more information, refer to [Creating Projects Using the CLI](../creating-projects-using-cli).
 {{< /note >}}
 
-## Launch Project Manager
-
-You can find project directories either in the same directory as the O3DE root directory or outside of this directory. In this documentation, we refer to the latter as "external projects".
-
 This tutorial uses the following project name and directories in the examples:
 
 * O3DE engine install directory: `C:\o3de-install`
 * New project name and location: `C:\o3de-projects\MyProject`
 * Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
+
+## Launch Project Manager
 
 1. Open a file browser or command line window on your computer and navigate to your O3DE engine directory. Locate and launch the O3DE **Project Manager** application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/Windows/profile`.
 
