@@ -1,6 +1,6 @@
 ---
 title: Tutorial - Your First Network Component
-linktitle: Tutorial Multiplayer
+linktitle: Your First Network Component
 description: Use Multiplayer Gem to create multiplayer components.
 toc: true
 ---
@@ -140,7 +140,7 @@ Since we already have MultiplayerSample setup for [automated code generation](/d
     */
     ```
 
-1. The code in the preceeding block is our starting base. Copy paste that code into `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.h` and `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`.
+1. The code in the preceding block is our starting base. Copy paste that code into `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.h` and `<o3de-multiplayersample>\Gem\Code\Source\Components\MyFirstNetworkComponent.cpp`.
 
 1. Add these files to `<o3de-multiplayersample>\Gem\Code\multiplayersample_files.cmake`:
 
@@ -482,7 +482,7 @@ namespace MultiplayerSample
 
 ### Network Component Controllers
 
-Let's improve on the separation between server and client code. At the moment, `MyFirstNetworkComponent` performs both server and client duties. Let's break it up. In O3DE Multiplayer, the way to do that is by using `controllers`. A controller does not exist on `Client` role but does exist on Authority role. We already saw a glipmse of that in our previous examples:
+Let's improve on the separation between server and client code. At the moment, `MyFirstNetworkComponent` performs both server and client duties. Let's break it up. In O3DE Multiplayer, the way to do that is by using `controllers`. A controller does not exist on `Client` role but does exist on Authority role. We already saw a glimpse of that in our previous examples:
 
 ```c++
 auto* controller = static_cast<MyFirstNetworkComponentController*>( GetController() );
@@ -497,7 +497,7 @@ auto* controller = static_cast<MyFirstNetworkComponentController*>( GetControlle
             OverrideController="false"
     ```
 
-1. Change `OverrideController` to true, so that we can write custom logicinside a controller
+1. Change `OverrideController` to true, so that we can write custom logic inside a controller.
 
     ```xml
     <Component Name="MyFirstNetworkComponent"
