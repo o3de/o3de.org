@@ -192,5 +192,5 @@ For details on the **browse edit** API, see the following topic in the [O3DE UI 
 ## Related links
 
 For components related to the **browse edit** component, see the following topics:
-+  [Line edit](uidev-line-edit-component.md)
-+  [Number edit spinbox](uidev-spinbox-component.md)
++  [Line edit](uidev-line-edit-component)
++  [Number edit spinbox](uidev-spinbox-component)

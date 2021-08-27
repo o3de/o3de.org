@@ -18,7 +18,7 @@ If your retargeted actor has the same bone names and transforms as the original 
 
 **To retarget motions**
 
-1. In your DCC tool, add the actor's bind pose, which includes skinning and bones, to the first frame of your motion. Then export the file into O3DE. For more information, see [Importing Assets into O3DE](/docs/userguide/assets/importing.md).
+1. In your DCC tool, add the actor's bind pose, which includes skinning and bones, to the first frame of your motion. Then export the file into O3DE. 
 
 1. Open O3DE Editor.
 

@@ -32,4 +32,3 @@ O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons
 + [Retargeting Motions](/docs/user-guide/visualization/animation/animation-editor/retargeting-animations.md)
 + [Creating Simulated Objects](/docs/user-guide/visualization/animation/animation-editor/creating-simulated-objects.md)
 + [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders.md)
-+ [Best Practices for Working with Skinned Meshes for Animation](/docs/userguide/best-practices-for-working-with-meshes-for-animations.md)

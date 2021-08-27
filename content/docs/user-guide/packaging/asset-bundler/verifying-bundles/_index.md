@@ -29,8 +29,8 @@ After you've built a seed list, but before you bundle your assets, you can use t
 
 ## In Development Builds
 
-After you've generated bundles for your game, test your game in bundle mode with a development build of the editor or launcher. With bundle mode active, use the `sys_report_files_not_found_in_paks` console variable to find any asset files that are missing from your game `.pak` files. For more information, see [Using Bundle Mode to Test Bundles](/docs/user-guide/packaging/asset-bundler/verifying-bundles/bundle-mode/).
+After you've generated bundles for your game, test your game in bundle mode with a development build of the editor or launcher. With bundle mode active, use the `sys_report_files_not_found_in_paks` console variable to find any asset files that are missing from your game `.pak` files. For more information, see [Using Bundle Mode to Test Bundles](bundle-mode/).
 
 ## In Release Builds
 
-As with development builds, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to find missing asset files in release builds. For more information, see [Using Bundle Mode to Test Bundles](/docs/user-guide/packaging/asset-bundler/verifying-bundles/bundle-mode/).
+As with development builds, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to find missing asset files in release builds. For more information, see [Using Bundle Mode to Test Bundles](bundle-mode/).

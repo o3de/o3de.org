@@ -42,7 +42,7 @@ Math nodes enable math operations, such as arithmetic, geometry, algebra, calcul
 Debugging nodes verify whether a script is functioning as expected. You can use debugging nodes to print data to the console or viewport and check for errors. These nodes pass logic flow, but do not execute in release builds.
 
 *User defined*
-You can build your own nodes for your project's specific needs. For more information, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/engine/scripting/script-canvas/_index.md).
+You can build your own nodes for your project's specific needs. For more information, see [Creating Custom Nodes in Script Canvas](development/).
 
 **Node Palette**   {#script-canvas-introduction-node-palette-display}
 The **Node Palette** contains a searchable list of nodes. By default, the palette is docked to the left of the **Script Canvas** editor.

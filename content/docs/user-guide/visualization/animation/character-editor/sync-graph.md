@@ -20,10 +20,6 @@ This topic describes the following main steps for synchronizing two animation gr
 
 1. Synchronize the graphs by using O3DE's [Event Bus (EBus)](/docs/user-guide/engine/ebus/_index.md) system and Lua script.
 
-{{< note >}}
-For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md).
-{{< /note >}}
-
 This topic illustrates this graph synchronization with an example that has two actors, a robot actor ("Jack") and a gun actor. When the player activates the sync mode and uses the keyboard to fire, the robot makes a firing motion and the gun fires. When the player deactivates the sync mode, the robot makes a firing motion, but the gun does not fire.
 
 ![The example game scene.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-1.png)
@@ -246,9 +242,9 @@ In the example, the synchronization state of the primary and secondary graphs an
 
 To gather these inputs, the example adds [Input](/docs/user-guide/components/reference/gameplay/input/) components to the robot entity and to the gun entity.
 
-To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/gems/input.md) gem and the [Starting Point Input](/docs/userguide/gems/starting-point-input.md) gem for your project. The Input Management Framework converts input to user-defined gameplay events. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`.
+To use the Input component, you must enable the [Input Management Framework](/docs/user-guide/gems/reference/input) gem and the [Starting Point Input](/docs/user-guide/gems/reference/input/starting-point-input) gem for your project. The Input Management Framework converts input to user-defined gameplay events. The Starting Point Input gem interprets hardware input and converts it into input events such as `pressed`, `released`, and `held`.
 
-Each Input component references an `.inputbindings` file. An `.inputbindings` file binds a set of inputs to an event. These inputs can come from sources like a mouse, keyboard, or game controller. You can use the **Input Bindings Editor** in O3DE Editor to create an input bindings file. For more information, see [Working with the Input Component](/docs/user-guide/interactivity/input/working-with-the-input-component.md).
+Each Input component references an `.inputbindings` file. An `.inputbindings` file binds a set of inputs to an event. These inputs can come from sources like a mouse, keyboard, or game controller. You can use the **Input Bindings Editor** in O3DE Editor to create an input bindings file. For more information, see [Working with the Input Component](/docs/user-guide/interactivity/input/working-with-the-input-component).
 
 **Getting Keyboard Input to Control Graph Synchronization**
 In the example, the gun entity has an Input component. The Input component uses a `synctest.inputbindings` asset to bind keyboard inputs **1** and **2** to the `SyncControl` event. The `SyncControl` event controls the sync mode, which determines whether or not the gun fires when the robot fires.

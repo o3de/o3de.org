@@ -11,15 +11,16 @@ You can use the video memory profiler (VRAM profiler) to determine which resourc
  You can also use the memory usage information from VRAM profiler to determine your game's minimum memory and GPU.
 
 **Topics**
-+ [Notes](#profiler-vram-limitations)
-+ [Understanding the Captured Data](#profiler-vram-understanding-captured-data)
-+ [Inspecting the Data](#profiler-vram-inspecting-the-data)
+- [Notes](#notes)
+- [Understanding the Captured Data](#understanding-the-captured-data)
+- [Inspecting the Data](#inspecting-the-data)
+  - [Negative VRAM Allocation Sizes](#negative-vram-allocation-sizes)
+  - [Why Some Textures Are Not Reported in the .csv File](#why-some-textures-are-not-reported-in-the-csv-file)
 
 ## Notes 
 
 The VRAM profiler has the following attributes:
 + The VRAM profiler has no graph view or tree view.
-+ The only supported export format is `.csv`. For steps on saving Profiler data to a `.csv` file, see [Exporting Data](/docs/userguide/debugging/profiling/using#profiler-exporting-data).
 + O3DE uses a variety of memory pooling schemes, so the actual allocated amount of VRAM is slightly more than what is reported.
 
 ## Understanding the Captured Data 

@@ -4,13 +4,7 @@ description: ' Learn about the relationship between Script Canvas and the behavi
 title: 'Script Canvas and the Behavior Context'
 ---
 
-**Topics**
-+ [The Light Component and Script Canvas](#script-canvas-behavior-context-light-component)
-+ [Objects: The PhysicsComponent Example](#script-canvas-behavior-context-physicscomponent)
-+ [Displaying EBus Event Parameter Names in Script Canvas Nodes](#script-canvas-behavior-context-parameter-names)
-+ [Common Programming Problems](#script-canvas-behavior-context-common-programming-problems)
-
-You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/user-guide/engine/components/_index.md) and [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md).
+You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/user-guide/components/development/) and [Behavior Context](/docs/user-guide/components/development/behavior-context/).
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine.
 
