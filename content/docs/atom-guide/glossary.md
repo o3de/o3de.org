@@ -155,7 +155,7 @@ Scene
 Scope     
 : A scope is a logical grouping of uninterruptible render work with a defined input and output. Scopes live in the RHI and are similar to passes in the RPI.  
 
-*Related to: [Render Hardware Interface (RHI)](dev-guide/rhi/), [Frame Scheduler](dev-guide/rhi/frame-scheduler.md), [`Scope` API Reference](/docs/api/gems/Atom/class_a_z_1_1_r_p_i_1_1_scope.html)*
+*Related to: [Render Hardware Interface (RHI)](dev-guide/rhi/), [Frame Scheduler](dev-guide/rhi/frame-scheduler.md), [`Scope` API Reference](/docs/api/gems/Atom/class_a_z_1_1_r_h_i_1_1_scope.html)*
 
 Shader  
 : A shader is any program that's run on the GPU. The "shader" definition varies depending on the context. Here are some common ways "shader" is used in Atom:
@@ -174,7 +174,7 @@ Shader asset
 Shader Resource Group (SRG)  
 : A Shader Resource Group (SRG) is a collection of shader resources (textures, buffers, samplers, and loose constants) that are automatically packed into an implicit constant buffer. SRGs are bound at specific frequencies (such as per scene, per view, per pass, per material).
 
-*Related to: [Shader System](dev-guide/shaders/),<!-- [Shader Resource Groups](dev-guide/rhi/shader-resource-groups.md),DRAFT TOPIC--><!-- [AZSL Reference](dev-guide/shaders/azsl/reference/),DRAFT TOPIC--> [`Scene` API Reference](/docs/api/gems/Atom/class_a_z_1_1_r_p_i_1_1_shader-resource-group.html)*
+*Related to: [Shader System](dev-guide/shaders/),<!-- [Shader Resource Groups](dev-guide/rhi/shader-resource-groups.md),DRAFT TOPIC--><!-- [AZSL Reference](dev-guide/shaders/azsl/reference/),DRAFT TOPIC--> [`Scene` API Reference](/docs/api/gems/Atom/class_a_z_1_1_r_p_i_1_1_shader_resource_group.html)*
 
 Shader bytecode  
 : A compiled shader program ready to be passed to a GPU for execution.
