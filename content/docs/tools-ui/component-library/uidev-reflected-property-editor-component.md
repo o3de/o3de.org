@@ -34,3 +34,15 @@ auto cardPropertyEditor = aznew AzToolsFramework::ReflectedPropertyEditor(card);
 // Add the reflected property editor to the card as a content widget.
 card->setContentWidget(cardPropertyEditor);
 ```
+
+## C++ API reference<a name="card-api-ref"></a>
+
+For details on the **card** API, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
++  [AzQtComponents::Card](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card.html)
++  [AzQtComponents::CardHeader](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_header.html)
++  [AzQtComponents::CardNotification](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_notification.html)
+
+## Related links<a name="reflected-property-editor-related-links"></a>
+
+For additional information related to the **reflected property editor** component, see the following topics:
++  [Card Component](uidev-card-component.md)
