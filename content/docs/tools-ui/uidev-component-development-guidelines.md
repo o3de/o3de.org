@@ -41,7 +41,7 @@ For standalone tools with their own Qt Application, you must take some extra ste
   QApplication app(argc, argv);
   ```
 
-1. Instantiate a StyleManager, which loads the style sheets and custom settings for the new UI.
+2. Instantiate a StyleManager, which loads the style sheets and custom settings for the new UI.
 
    ```cpp
    #include <AzQtComponents/Components/StyleManager.h>

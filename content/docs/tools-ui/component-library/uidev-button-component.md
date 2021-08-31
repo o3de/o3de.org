@@ -21,25 +21,25 @@ Follow these guidelines as you design your UI with buttons:
 
    Choosing a button should always trigger an event. For example, the event might be submitting a form, opening a dialog, or showing a dropdown menu.
 
-1.  **Primary button vs secondary button**
+2.  **Primary button vs secondary button**
 
    Only one **primary button** per page should receive the primary button color. We recommend that you always set the affirmative button with the primary button color. All other actions on the page should be styled with the **secondary button** color, which will help users establish what the primary action on any given window or panel is.
 
-1.  **Button placement in a dialog**
+3.  **Button placement in a dialog**
 
    The buttons should be placed on the bottom right hand corner of the dialog, with the affirmative button on the left, and the dismissive button on the right on the Windows platform. This reduces cognitive load for users and clarifies the hierarchy of available actions on the page.
 
    When on the iOS platform, the button placement should follow the iOS platform guideline, which is the affirmative button on the right, and the dismissive button on the left.
 
-1.  **Button placement on a card**
+4.  **Button placement on a card**
 
    Because cards have flexible layouts, we recommend that you place the button in a location suited to the content and context, while maintaining consistency within the product. When the button isn't attached to any labels, it's suggested to place the button in the center of the area.
 
-1.  **Dropdown menus**
+5.  **Dropdown menus**
 
    Use dropdown menus where there is more than one value associated with the button. When users choose the button and select the desired value, buttons should immediately trigger an event.
 
-1.  **Icon buttons**
+6.  **Icon buttons**
 
    Use icon buttons when there isn't enough space to display the full text on the button. However, the context should be clear to users what action will be triggered after clicking on the icon button. The icon shown on the button should also clearly represent the meaning of the function. Use a mouseover tooltip to display the text version of the button.
 
