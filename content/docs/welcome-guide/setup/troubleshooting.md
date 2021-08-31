@@ -16,7 +16,7 @@ Looking for error logs or memory dumps? Refer to [Open 3D Engine Log Files](/doc
 
 **Issue:** Running a tool from the command line in the O3DE engine directory (such as `get_python.bat`) reports that CMake was not found on the PATH and LY_CMAKE_PATH is not defined.
 
-**Remedy:** Install CMake, if it isn't installed. If it is already installed, the path to the CMake binaries might not be defined in your operating system. Refer to the [Software prerequisites](../requirements/#software-prerequisites) and [CMake configuration](../requirements/#cmake-configuration) sections of the O3DE System Requirements topic for instructions on how to install and configure CMake, respectively.
+**Remedy:** Install CMake, if not installed. If it is already installed, the path to the CMake binaries might not be defined in your operating system. Refer to the [CMake](../requirements/#cmake) section of the O3DE System Requirements topic for instructions on how to install and configure CMake.
 
 After installing CMake or defining its path on your computer, open a new command line window before attempting to run the tool again.
 
