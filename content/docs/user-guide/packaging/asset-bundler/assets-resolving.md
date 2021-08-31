@@ -9,7 +9,7 @@ After you build and package your O3DE game, you want to frequently verify that y
 When you identify a potential missing asset, you want to include it so that the asset is no longer missing in your next bundled game package.
 
 An asset that is missing from a bundle might be one of the following:
-+ **A missing product dependency** - An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/user-guide/packaging/asset-bundler/list-operations.md).
++ **A missing product dependency** - An asset that references another asset, but did not declare it as a product dependency, or the referenced asset was removed during the [asset list comparison process](/docs/user-guide/packaging/asset-bundler/list-operations/).
 + **A hardcoded file load** - Assets loaded by path or by asset ID in C++.
 + **A false positive** - The asset appeared to be missing from a bundle, but is not actually used. For example, you might have an editor-only asset that appears to be missing that is never loaded or used in your game's launcher.
 
@@ -22,7 +22,10 @@ A missing asset might have been loaded as a reference from O3DE or from your gam
 ### Finding the Asset Reference
 
 To find the source of the asset reference, try the following approaches:
-+ Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/packaging/asset-bundler/verifying-bundles/missing-dependency-scanner/).
+<!-- 
+Missing topic. 
+
++ Use the Asset Processor Batch's [missing dependency scanner](/docs/user-guide/packaging/asset-bundler/verifying-bundles/missing-dependency-scanner/). -->
 + Debug the file load using the following methods:
   + Set breakpoints, if possible
   + Add extra `print` commands

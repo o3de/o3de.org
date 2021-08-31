@@ -72,4 +72,3 @@ If seed mode reports that an asset is missing, the asset might be one of the fol
 + An asset that must be added as a dependency of another asset already found in the level.
 + An asset that must be a seed itself.
 
-For more information, see [Find and Fix Missing Asset References](https://wiki.agscollab.com/pages/viewpage.action?pageId=81284546).
