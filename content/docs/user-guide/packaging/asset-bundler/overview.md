@@ -9,7 +9,7 @@ weight: 100
 
 The Asset Bundler is a command-line tool, `AssetBundlerBatch.exe`, and a set of specific file formats generated and used by the tool.
 
-{{< preview-migrated >}}
+
 
 ## Prerequisites to use the Asset Bundler 
 
