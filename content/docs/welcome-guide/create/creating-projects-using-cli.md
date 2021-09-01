@@ -113,9 +113,14 @@ If your project build directory is outside the project path, you must include th
         ```
 
         {{< important >}}
-If you built the engine from source using the `INSTALL` target, make sure that you launch the Editor and other tools from the install directory, _not_ the engine's build directory. The Windows install directory typically ends in `/bin/Windows/profile`.
+If you built the engine from source using the `INSTALL` target, make sure that you launch the Editor _and_ other tools from the installed engine's build directory, _not_ the engine's build directory. The Windows install directory typically ends in `/bin/Windows/profile`.
         {{< /important >}}
 
 You can also run Project Manager (`o3de.exe`) from the same directory to edit your project's settings, add or remove Gems from the project, rebuild your project, and launch the Editor.
+
+
+{{< caution >}}
+If you launch the Editor from the wrong directory, the **Asset Processor** processor from that directory will also launch.  You must close all **Asset Processor** tasks before you attempt to launch the Editor from a different directory.
+{{< /caution >}}
 
 For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.
