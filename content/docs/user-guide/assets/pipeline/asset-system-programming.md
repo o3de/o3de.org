@@ -182,7 +182,7 @@ The following steps summarize the workflow of the asset system.
 
    - AssetManager inserts the asset into the empty instance.
 
-   - AssetManager queues a job with the file system streamer to load the file
+   - AssetManager queues a job with the file system streamer to load the file.
 
    - When the streamer finishes the load, AssetManager creates a loading job in a job worker thread pool. To load the asset data, the job calls the LoadAssetData function on the asset handler.
 
