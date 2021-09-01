@@ -172,6 +172,12 @@ toc: true
 | - | - |
 | [In App Purchases](./sdk/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
 
+## Terrain
+
+| Gem | Description |
+| - | - |
+| [Terrain](./terrain) | The Terrain Gem provides tools to create terrain in Open 3D Engine. |
+
 ## UI
 
 | Gem | Description |
