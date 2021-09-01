@@ -24,3 +24,9 @@ To enable the Terrain Gem, do the following:
 
 1. Use **O3DE Project Manager** or the command line to add the Terrain Gem to your project.
 2. Build your project using Project Manager, Visual Studio, or CMake.
+
+## Components
+
+| Component | Description | 
+| - | - |
+| [Layer Spawner](/docs/user-guide/gems/reference/terrain/layer_spawner.md) | Controls the bounds of a terrain layer, and allows prioritization of multiple layers. |
