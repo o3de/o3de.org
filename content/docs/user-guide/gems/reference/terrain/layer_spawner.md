@@ -1,5 +1,5 @@
 ---
-title: Layer Spawner component
+title: Terrain Layer Spawner component
 linktitle: LayerSpawner
 description: ' Open 3D Engine (O3DE) Terrain Layer Spawner reference. '
 weight: 100
@@ -7,8 +7,8 @@ weight: 100
 
 {{< preview-migrated >}}
 
-The **Layer Spawner** component defines the bounds of a terrain layer, and enables the ordering of multiple layers.  
-The priority is controlled firstly by assigning a layer, either **Foregound** or **Background**, then by using the **Priority** setting.  
+The **Terrain Layer Spawner** component spawns a terrain layer within given bounds, and enables the ordering of multiple layers.  
+The priority is controlled firstly by assigning a layer, either **Foregound**(Highest priority) or **Background**, then by using the **Priority** setting, with a higher number being a higher priority.  
 The dimensions of the layer can be configured by modifying the [Box component](/docs/user-guide/components/reference/shape/box-shape) on the same entity.
 The **Box component** is required for the **Layer Spawner** to operate.
 
@@ -31,7 +31,7 @@ Use the following request functions with the `TerrainSpawnerRequestBus` EBus int
 
 ### GetPriority 
 
-Retrieves the entity's local and world transforms.
+Retrieves the terrain layer priority.
 
 **Parameters**  
 Layer \[out\] - Index of the Layer Priority setting (Foreground is 0).

@@ -29,4 +29,4 @@ To enable the Terrain Gem, do the following:
 
 | Component | Description | 
 | - | - |
-| [Layer Spawner](/docs/user-guide/gems/reference/terrain/layer_spawner.md) | Controls the bounds of a terrain layer, and allows prioritization of multiple layers. |
+| [Terrain Layer Spawner](/docs/user-guide/gems/reference/terrain/layer_spawner.md) | Spawns a terrain region contained within configurable bounds, and allows prioritization of multiple overlapping terrain layers. |
