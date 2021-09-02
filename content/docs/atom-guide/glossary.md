@@ -174,7 +174,7 @@ Shader asset
 Shader Resource Group (SRG)  
 : A Shader Resource Group (SRG) is a collection of shader resources (textures, buffers, samplers, and loose constants) that are automatically packed into an implicit constant buffer. SRGs are bound at specific frequencies (such as per scene, per view, per pass, per material).
 
-*Related to: [Shader System](dev-guide/shaders/),<!-- [Shader Resource Groups](dev-guide/rhi/shader-resource-groups.md),DRAFT TOPIC--><!-- [AZSL Reference](dev-guide/shaders/azsl/reference/),DRAFT TOPIC--> [`Scene` API Reference](/docs/api/gems/Atom/class_a_z_1_1_r_p_i_1_1_shader_resource_group.html)*
+*Related to: [Shader System](dev-guide/shaders/),<!-- [Shader Resource Groups](dev-guide/rhi/shader-resource-groups.md),DRAFT TOPIC--><!-- [AZSL Reference](dev-guide/shaders/azsl/reference/),DRAFT TOPIC--> [`Scene` API Reference](/docs/api/gems/Atom/class_a_z_1_1_r_p_i_1_1_scene.html)*
 
 Shader bytecode  
 : A compiled shader program ready to be passed to a GPU for execution.
