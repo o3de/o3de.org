@@ -11,7 +11,7 @@ This section provides a high-level overview of graphics features that the Atom r
 ## Anti-aliasing
 
 A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
-
+f
 Multisampling Anti-aliasing (MSAA)   
 : MSAA is an anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
 
@@ -26,7 +26,7 @@ Punctual Lights
 + **Point Light** - Casts light from an infinitely small point in all directions within a radius, similar to a light bulb.
 + **Directional Light** - Casts light from an infinitely distant point in a single direction. Directional lights are often used to simulate large distant light sources link the sun, and to cast shadows.
 
-*Related to: [O3DE Light component](/docs/user-guide/components/reference/atom/light/), [O3DE Directional Light component](docs/user-guide/components/reference/atom/directional-light/), [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html)*
+*Related to: [O3DE Light component](/docs/user-guide/components/reference/atom/light/), [O3DE Directional Light component](/docs/user-guide/components/reference/atom/directional-light/), [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html)*
 
 
 Area Lights
@@ -48,7 +48,7 @@ Diffuse Probe Grid
 Reflection Probes  
 : A system that provides specular reflections for the environment around capture points, known as probes.  A probe stores its environment as a cubemap and applies the cubemap to meshes that are located inside the probe's volume. With the reflection probes system, the mesh can display environment reflections that match the surroundings at its location.
 
-*Related to: [Reflection Probe Component](/docs/user-guide/components/reference/atom/reflection-probe/), [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html)*
+*Related to: [Reflection Probe component](/docs/user-guide/components/reference/atom/reflection-probe/), [Reflection Probe Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_reflection_probe_feature_processor.html)*
 
 
  Subsurface Scattering   
