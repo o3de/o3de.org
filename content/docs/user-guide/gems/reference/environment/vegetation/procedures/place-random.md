@@ -1,7 +1,9 @@
 ---
-description: ' Create random distribution by using a noise gradient as a placement
-  mask for Open 3D Engine dynamic vegetation. '
+linkTitle: Noise-Based Random Selection
 title: Random Placement Using the Vegetation Distribution Filter
+description: Create random distribution by using a noise gradient as a placement mask for Open 3D Engine dynamic vegetation.
+weight: 650
+toc: true
 ---
 
 The **Vegetation Distribution Filter** component creates the look of random placement by limiting the amount of vegetation that the **Vegetation Layer Spawner** component produces.

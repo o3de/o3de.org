@@ -1,7 +1,7 @@
 ---
-description: ' Learn about dynamic vegetation concepts and ideas in Open 3D Engine. '
+linkTitle: Concepts
 title: Dynamic vegetation concepts
-weight: 100
+description: Learn about dynamic vegetation concepts and ideas in Open 3D Engine.
 ---
 
 The dynamic vegetation system operates around the following ideas:
@@ -24,7 +24,7 @@ You can customize your vegetation in the following ways:
 + Use customizable gradients such as the **Perlin Noise Gradient** to mimic the types of vegetation groupings often found in nature.
 + Save your customized vegetation areas as slices so that you can easily reuse them in other levels or share them with collaborators. Use slice overrides to make small or large changes to individual instances of the slice.
 
-## Dynamic Vegetation Components 
+## Dynamic Vegetation Components
 
 The common workflow for creating a new vegetation area starts with creating an entity and adding a **Vegetation Layer Spawner** component to it. Then you add to that entity the two required components, which define the area's shape and the assets to display. From there, you can add optional components such as vegetation filters and modifiers.
 
