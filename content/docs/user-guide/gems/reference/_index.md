@@ -82,6 +82,7 @@ toc: true
 | [Surface Data](./environment/surface-data) | The Surface Data Gem provides functionality to emit signals or tags from surfaces such as meshes and terrain. |
 | [Vegetation](./environment/vegetation) | The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine. |
 | [Vegetation Gem Assets](./environment/vegetation-gem-assets) | The Vegetation Assets Gem provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and Landscape Canvas. |
+| [Terrain](./terrain) | The Terrain Gem is an experimental terrain system. The terrain system maps height, color, and surface data to regions of the world, provides gradient-based and shape-based authoring tools and workflows, includes specialized rendering for efficient display, and integrates with physics for physical simulation. |
 
 ## Framework
 
@@ -171,12 +172,6 @@ toc: true
 | Gem | Description |
 | - | - |
 | [In App Purchases](./sdk/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
-
-## Terrain
-
-| Gem | Description |
-| - | - |
-| [Terrain](./terrain) | The Terrain Gem provides tools to create terrain in Open 3D Engine. |
 
 ## UI
 
