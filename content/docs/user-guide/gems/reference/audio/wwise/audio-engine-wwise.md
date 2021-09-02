@@ -23,12 +23,16 @@ To enable the Wwise Audio Engine Gem, do the following:
 In general you can use more recent versions of Wwise than specified above, but some SDK updates will require code changes.
     {{< /note >}}
 
+1. (Recommended) Set the CMake cache variable `LY_WWISE_INSTALL_PATH` to the path where you installed Wwise. You can use `cmake-gui` to set this variable, or you can set it when you run the `cmake` build configuration command. By using this cache variable, CMake project regeneration will automatically be triggered if the variable is updated in the future.
+
 1. Build your project using Project Manager, Visual Studio, or CMake.
 
-When you build your project, CMake looks for your Wwise installation by checking for the existence of variables in the following order:
+    {{< important >}}
+Whenever updating the Wwise audio SDK to a newer version, if you have any existing O3DE projects that use the Wwise Audio Engine Gem, make sure to update `LY_WWISE_INSTALL_PATH` with the new path. Or, if you are relying on the `WWISEROOT` environment variable that is set during Wwise installation, be sure to regenerate the Visual Studio project files using `cmake` if you want them to use the newer SDK.
+    {{< /important >}}
+
+When you build your project, CMake looks for your Wwise installation by checking for the existence of specific variables, in the following order:
 
 1. The `LY_WWISE_INSTALL_PATH` CMake cache variable.
 
 1. The `WWISEROOT` environment variable, which is set when installing Wwise.
-
-Therefore, defining the `LY_WWISE_INSTALL_PATH` variable is typically optional, but you can use it to override `WWISEROOT`.

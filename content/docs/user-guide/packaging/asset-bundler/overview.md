@@ -45,10 +45,6 @@ With those product dependency relationships in place, the Asset Bundler examines
 
 The Asset Bundler runs whenever the Asset Processor starts, which includes any time you launch O3DE. You can also run it from the command line with the `AssetBundlerBatch` command. For more information on the latter, read the [Asset Bundler Command Line Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference).
 
-To get started using the Asset Bundler, read the following tutorials:
-+ [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/). This tutorial uses the Starter Game packaged with O3DE and walks you through the general asset bundling process.
-+ [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles). This tutorial covers bundling assets for games that download additional content after launch.. 
-+ [Create Content Patches with O3DE](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/). This tutorial covers bundling to simulate a patch update to existing content..
 
 ## Why define product dependencies? 
 
@@ -132,6 +128,3 @@ The following table provides some examples of the artifacts generated and used i
 
 ## Additional Resources 
 + [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts)
-+ [Build and Bundle Assets for Release in O3DE](/docs/learning-guide/tutorials/packaging/tutorial-release/)
-+ [Creating Multiple Asset Bundles](/docs/learning-guide/tutorials/packaging/tutorial-multiple-bundles/)
-+ [Creating Content Patch Bundles](/docs/learning-guide/tutorials/packaging/tutorial-content-patches/)
