@@ -16,13 +16,12 @@ For a quick introduction of the O3DE Multiplayer Gem and networking, watch the v
 |---|---|
 | [Overview](./multiplayer-gem/overview) | An overview of the O3DE Multiplayer Gem, how it works, and how to use it in your project. |
 | [Project configuration](./multiplayer-gem/configuration) | How to enable the O3DE Multiplayer Gem in a project. |
-| [Multiplayer AutoComponents](./multiplayer-gem/autocomponents) | Automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
-| [Multiplayer AutoPackets](./multiplayer-gem/autopackets) | Define and automatically create packets for use with the Multiplayer Gem using the AzAutoGen system. |
+| [Multiplayer Auto-components](./multiplayer-gem/autocomponents) | Automatically create components for use with the Multiplayer Gem using the AzAutoGen system. |
 | [Test Multiplayer Projects in the Editor](./multiplayer-gem/test-in-editor) | Automatically launch local servers or connect to a remote persistent server when working on a multiplayer project in the O3DE Editor. |
 
 ## Related topics
 
 | Topic | Description |
 |---|---|
-| [Multiplayer Gem API reference](/docs/api/gems/multiplayer/) | The complete C++ API reference for the Multiplayer Gem. |
+| [Multiplayer Gem API reference](/docs/api/gems/multiplayer/) | The complete C++ API reference for the O3DE Multiplayer Gem. |
 | [The O3DE AzNetworking Framework](/docs/user-guide/networking/) | Documentation for the core networking library of O3DE. |
