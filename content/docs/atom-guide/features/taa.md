@@ -1,6 +1,6 @@
 ---
 title: Temporal Anti-Aliasing
-description: "Learn about temporal anti-aliasing in the Atom Renderer"
+description: "Learn about temporal anti-aliasing (TAA) in Atom Renderer, the graphics engine integrated into Open 3D Engine (O3DE)."
 toc: true
 ---  
 
@@ -25,7 +25,7 @@ You can also add `Taa.pass` to a custom pipeline.
 
 ## Issues and improvements
 
-The following are a list of known issues and improvements for TAA:
+The following is a list of known issues and improvements for TAA:
 
 - TAA can cause Bloom to produce flickering in the resulting image.
 
@@ -37,4 +37,4 @@ The following are a list of known issues and improvements for TAA:
 
 - TAA can cause screen space ambient occlusion (SSAO) to produce flickering in the resulting image, especially when SSAO runs at half resolution. The reason is that TAA involves jittering the camera to collect samples in different parts of a pixel in each frame.
 
-- In the future, the **O3DE Editor** will support a TAA component, making it easier to configure TAA in your scene.
+- In the future, **O3DE Editor** will support a TAA component, making it easier to configure TAA in your scene.
