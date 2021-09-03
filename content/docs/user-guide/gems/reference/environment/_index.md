@@ -10,4 +10,4 @@ The [Landscape Canvas Gem](./landscape-canvas) provides the **Landscape Canvas**
 
 The [Vegetation Assets Gem](./vegetation-gem-assets) provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and **Landscape Canvas**.
 
-The [Surface Data Gem](./surface-data.md) enables surfaces such as terrain or meshes to emit signals or tags, that communicate its surface type. These signals and tags have various uses, such as creating inclusion and exclusion areas for vegetation growth.
+The [Surface Data Gem](./surface-data) enables surfaces such as terrain or meshes to emit signals or tags, that communicate its surface type. These signals and tags have various uses, such as creating inclusion and exclusion areas for vegetation growth.
