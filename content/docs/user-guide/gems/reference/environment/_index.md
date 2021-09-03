@@ -8,6 +8,6 @@ The dynamic vegetation system uses vegetation components to customize dynamic ve
 
 The [Landscape Canvas Gem](./landscape-canvas) provides the **Landscape Canvas** editor, a node-based graph tool for authoring workflows to populate landscape with dynamic vegetation.
 
-The [Vegetation Assets Gem](./vegetation-gem-assets.md) provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and **Landscape Canvas**.
+The [Vegetation Assets Gem](./vegetation-gem-assets) provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and **Landscape Canvas**.
 
 The [Surface Data Gem](./surface-data.md) enables surfaces such as terrain or meshes to emit signals or tags, that communicate its surface type. These signals and tags have various uses, such as creating inclusion and exclusion areas for vegetation growth.
