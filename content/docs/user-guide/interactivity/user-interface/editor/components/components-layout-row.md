@@ -4,7 +4,7 @@ description: ' Use a layout row component in the Open 3D Engine UI Editor to org
 title: LayoutRow
 ---
 
-You can use a **LayoutRow** component to organize child elements into a row. To use this feature, you add the **LayoutRow** component to an element and then add child elements. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. To control the sizes of specific, or all, children, add the [layout cell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to those children.
+ You can use a **LayoutRow** component to organize child elements into a row. To use this feature, you add the **LayoutRow** component to an element and then add child elements. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. To control the sizes of specific, or all, children, add the [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to those children.
 
 Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column).
 
