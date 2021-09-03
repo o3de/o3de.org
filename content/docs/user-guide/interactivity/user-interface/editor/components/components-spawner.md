@@ -40,7 +40,7 @@ If selected, spawns the selected slice upon activation.
 
 Use the following request functions with the **UiSpawnerBus** EBus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index).
+ For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### Spawn 
 
