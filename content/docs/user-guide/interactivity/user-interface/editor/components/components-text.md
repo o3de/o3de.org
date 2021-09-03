@@ -29,7 +29,7 @@ You can customize the appearance of the text in your game UI with bold and itali
 
 To do this, enter specific tags directly into the **Text** box, along with your string. The simple markup language is loosely based on HTML.
 
-To use the text styling markup feature, you must use a font family `*.fontfamily` asset file in the **Font path** setting \(rather than an individual `.font` asset file\). For more information about adding font families to your projects, see [Implementing New Fonts](/docs/user-guide/interactivity/user-interface/fonts/_index).
+ To use the text styling markup feature, you must use a font family `*.fontfamily` asset file in the **Font path** setting \(rather than an individual `.font` asset file\). For more information about adding font families to your projects, see [Implementing New Fonts](/docs/user-guide/interactivity/user-interface/fonts/).
 
 **To use text styling markup**
 
