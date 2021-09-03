@@ -15,7 +15,7 @@ You can add a prebuilt **Layout Column** element from the slice library. When yo
 **To add a Layout Column element from the slice library**
 + In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **LayoutColumn**.
 
-By default, the layout column gives every child the same amount of space, regardless of its content. You can, however, manipulate the sizes of each child by adding the [layout cell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to each or specific children.
+ By default, the layout column gives every child the same amount of space, regardless of its content. You can, however, manipulate the sizes of each child by adding the [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to each or specific children.
 
 The layout column can also give varying space to each child depending on its content. To enable the layout column to do this, clear the **Ignore Default Cell** option in the **LayoutColumn** component's properties.
 
