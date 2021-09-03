@@ -22,11 +22,11 @@ The Terrain Gem has the following key features:
 
 To enable the Terrain Gem, do the following:
 
-1. Use **O3DE Project Manager** or the command line to add the Terrain Gem to your project.
+1. Use **Project Manager** or the command line to add the Terrain Gem to your project.
 2. Build your project using Project Manager, Visual Studio, or CMake.
 
 ## Components
 
 | Component | Description | 
 | - | - |
-| [Terrain Layer Spawner](/docs/user-guide/gems/reference/terrain/layer_spawner.md) | Spawns a terrain region contained within configurable bounds, and allows prioritization of multiple overlapping terrain layers. |
+| [Terrain Layer Spawner](/docs/user-guide/gems/reference/terrain/layer_spawner.md) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
