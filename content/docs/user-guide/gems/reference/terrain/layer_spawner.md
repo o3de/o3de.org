@@ -20,7 +20,7 @@ The **Box component** is required for the **Layer Spawner** to operate.
 |-|-|-|-|
 | **Layer Priority** | The priority of the spawner, Foreground has a higher priority than Background. | Foreground or Background | `Foreground` |
 | **Sub Priority** | Sets the priority of this spawner within the layer. Higher numbers will override lower. | 0 - 10000 | 0 |
-| **Use Ground Plane** | Enable this to provide a default ground plane where no terrain is defined. | Boolean | `Disabled` |
+| **Use Ground Plane** | Enable this to provide a default ground plane where no terrain is defined. | Boolean | `True` |
 
 
 ## TerrainSpawnerRequestBus ##
