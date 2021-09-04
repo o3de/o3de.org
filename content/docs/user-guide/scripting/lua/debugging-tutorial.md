@@ -41,13 +41,17 @@ This tutorial shows you how to use O3DE Editor to create a sample level in the *
 ![\[Launch Lua Editor from Lua Script component in O3DE Editor\]](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
 
    Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
-**Note**
+
+    {{< note >}}
 Connection is facilitated by GridHub, which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.
+{{< /note >}}
 
 1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor(*ID*)** to connect to O3DE Editor.
 ![\[Target selector\]](/images/user-guide/lua-editor-debugger-target-editor.png)
-**Note**
+
+    {{< note >}}
 You may need to expand the Lua Editor window to see the buttons on the Lua Editor toolbar for the next few steps.
+{{< /note >}}
 
 1. In the Lua Editor toolbar, leave **Context** setting at **Default** for the debugging context. The default setting is good for debugging component entity scripts such as the one in this tutorial.
 ![\[Context selector\]](/images/user-guide/lua-editor-debugger-context-choose.png)
@@ -58,8 +62,10 @@ You may need to expand the Lua Editor window to see the buttons on the Lua Edito
    Click **Classes** in the **Class Reference** to show the available Lua libraries. You can do the same for **EBuses** and **Globals**.
 ![\[Classes Reference\]](/images/user-guide/lua-editor-debugger-class-reference-pane.png)
 ![\[Classes\]](/images/user-guide/lua-editor-debugger-class-reference-pane-open.png)
-**Note**
+
+    {{< note >}}
 The class reference feature is active only for the default context and component entity scripts.
+{{< /note >}}
 
    After you connect, you can pause the execution of a given script by setting breakpoints.
 
@@ -79,6 +85,7 @@ The class reference feature is active only for the default context and component
 1. Click **Watched Variables** icon ![\[Image NOT FOUND\]](/images/user-guide/lua-editor-debugger-watched-variables-icon.png) to open the **Watched Variables** window, where you can specify variables to watch.
 
 1. Press **F11** a few times to step through the code. Note how the contents of the **Stack**, **Lua Locals**, and **Watched Variables** windows change.
+
 **Tip**
 For greater convenience, you can float or dock these windows.
 
@@ -117,8 +124,11 @@ In addition to the usual search capabilities, the **Find** feature can display t
 ![\[Find Results\]](/images/user-guide/lua-editor-debugger-find-results-window.png)
 
 1. To go directly to the line in the code which a search result was found, double-click the line in the search results.
-**Note**
+
+    {{< note >}}
 In Lua Editor Preview, the line number shown in the **Find Results** window and the line number in the script pane differ by one.
+{{< /note >}}
+
 **Tip**
 For convenience, you can also dock or float the **Find Results** window.
 

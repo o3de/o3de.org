@@ -10,8 +10,9 @@ The movement of objects in the natural world is rarely uniform. A rocket ship bl
 
 O3DE supports the following [tweener ease methods](/docs/userguide/ui/animating/tweener-parameters#ui-animating-tweener-easemethod) as [easing in, easing out, and easing in-out](/docs/userguide/ui/animating/tweener-parameters#ui-animating-tweener-easetype) functions (ease type).
 
-**Note**
+{{< note >}}
 The following images are referenced from [http://easings.net](http://easings.net).
+{{< /note >}}
 
 **Linear**
 Does not ease in or out. No acceleration or deceleration. Constant movement, such as a conveyor belt in motion.

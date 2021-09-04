@@ -26,6 +26,7 @@ The **Director (Scene)** node includes a camera track that specifies the active 
 **Director Node Tracks and Key Properties**
 
 
-**Note**
+{{< note >}}
 You can add multiple **Director** nodes to a scene, but only one **Director** node can be active.
 To change the active **Director** node, right-click the node and choose **Set as Active Director**. When you deactivate a **Director** node, all child node animations are deactivated. This is useful when you want to enable and disable animation for specific objects within the same track view sequence.
+{{< /note >}}

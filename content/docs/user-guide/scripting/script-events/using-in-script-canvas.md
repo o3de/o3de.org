@@ -12,8 +12,9 @@ Script event assets appear by default in the **Script Events** category in the S
 
 ![\[The Script Events category in the Script Canvas Node Palette.\]](/images/user-guide/script-canvas-script-events-4.png)
 
-**Note**
+{{< note >}}
 To change the name of the category, open the script event's asset definition in the Asset Editor and edit the `Category` property.
+{{< /note >}}
 
 ## Sending Events 
 

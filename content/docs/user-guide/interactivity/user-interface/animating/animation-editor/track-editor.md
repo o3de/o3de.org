@@ -89,6 +89,8 @@ The **Track Editor** features a timeline along its top edge. To preview your ent
 
 1. Click the **Play** button to preview your animation in the time frame specified.
 
-**Note**
+{{< note >}}
 When you preview an animation or move the playback position on the timeline, it moves the UI elements in the **UI Editor**. This means that, if you then save the canvas, these UI elements will be saved in this position.
+
 Reposition the timeline or preview a different sequence to position the UI elements at the positions in which you want them to load before you save the canvas.
+{{< /note >}}

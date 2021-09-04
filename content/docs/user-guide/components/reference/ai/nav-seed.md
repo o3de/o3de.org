@@ -45,5 +45,6 @@ By default, the navigation seed visualization system is not enabled. You must us
 
   For more information, see [Using the Console Window](/docs/user-guide/editor/console/).
 
-**Note**
+{{< note >}}
 The **Navigation Seed** component exists only in O3DE Editor.
+{{< /note >}}

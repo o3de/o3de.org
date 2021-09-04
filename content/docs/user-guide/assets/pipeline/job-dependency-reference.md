@@ -85,5 +85,6 @@ for (const AssetBuilderSDK::PlatformInfo& platformInfo : request.m_enabledPlatfo
  }
 ```
 
-**Note**
+{{< note >}}
 If Asset Processor detects a cyclic job dependency, it displays a warning message and then processes the first job to unblock the remaining jobs.
+{{< /note >}}

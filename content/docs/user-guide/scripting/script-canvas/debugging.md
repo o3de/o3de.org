@@ -22,8 +22,10 @@ After you choose a debug target, you can choose the entities and graphs that you
 
 1. To see entities with Script Canvas graphs that are available for debugging, expand the items on the **Entities** tab. The **Entities** tab displays the entities known to the debugger at edit time that have Script Canvas graphs.
 ![\[Entities with Script Canvas graphs.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-3.png)
-**Note**
+
+    {{< note >}}
 Running the same graph multiple times on a single entity is not supported.
+{{< /note >}}
 
 1. To get a complete listing of all available Script Canvas graphs in the project, click the **Graphs** tab. Each graph in the table shows all entities that are using that graph. The **Graphs** tab is useful for debugging dynamically spawned scripts. For more information, see [Debugging a Dynamically Spawned Graph](#script-canvas-debugging-debugging-a-dynamically-spawned-graph) later in this topic.
 ![\[Graphs that are attached to entities.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-4.png)
@@ -50,8 +52,9 @@ Enable this option if you want the output from a specified target to be captured
 
 Enable this option to display the data as it is captured. When disabled, the data is captured silently and displays only after the capture completes.
 
-**Note**
+{{< note >}}
 When live updates are enabled and you capture a large amount of data, editor performance decreases noticeably. For better performance, you should disable live updates, especially for longer captures.
+{{< /note >}}
 
 ## Running the Debugger 
 
@@ -61,8 +64,10 @@ After you have chosen the entities or graphs to debug, you are ready to run the 
 
 1. Click **Capture**. The **Capture** button puts O3DE into gameplay mode automatically.
 ![\[The Script Canvas debugger Capture button.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-9.png)
-**Note**
+
+    {{< note >}}
 If **Editor** is selected as the capture target, the game must be running for the debugger to return results.
+{{< /note >}}
 
    The Script Canvas debugger begins capturing data when the graph runs. If live updates are enabled, the data appears in the debugger panel when the graph being debugged becomes active during gameplay. Otherwise, the data appears after the capture completes.
 ![\[Data being captured in the Script Canvas debugger.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-10.png)
@@ -75,8 +80,9 @@ The captured data is presented in a log that is sorted in order of processing. E
 
 ![\[Captured data in the Script Canvas debugger.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-11.png)
 
-**Note**
+{{< note >}}
 Currently, only a single instance of captured data can be stored. Previous data is lost when a new set of data is captured.
+{{< /note >}}
 
 **To examine the captured data**
 
@@ -89,8 +95,10 @@ Currently, only a single instance of captured data can be stored. Previous data 
 
 1. To examine the data that the node was using, expand the log message.
 ![\[Expanding a log message to reveal its data.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-13.png)
-**Note**
+
+    {{< note >}}
 Some nodes send additional information that appears in the form of annotations. For example, the **Print** node sends the full string that it displayed.
+{{< /note >}}
 
 1. To expand all lines, click the ![\[Expand log messages.\]](/images/user-guide/scripting/script-canvas/script-canvas-debugging-14.png) expand icon.
 
@@ -116,8 +124,10 @@ For in-game debugging, you use the Script Canvas debugger to connect to a runnin
 **To debug a running game**
 
 1. Run `GridHub.exe` from from your build directory \(for example, `build/bin/profile/GridHub.exe`\). GridHub is the network environment that provides connectivity between O3DE and its tools. For more information, see [Using GridHub](/docs/userguide/gridhub-intro.md).
-**Note**
+
+    {{< note >}}
 GridHub must be active for non-editor targets to appear in the **Live** tab.
+{{< /note >}}
 
 1. Run the launcher for your game.
 

@@ -8,8 +8,9 @@ A ragdoll is a physical representation of a character in the animation system th
 
 To use the **[PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/)**, add it to an entity in O3DE Editor. You can then follow the procedures below to create and control the physical representation of the ragdoll.
 
-**Important**
+{{< important >}}
 There is currently no automatic way to prevent the physics geometry **PhysX Character Controller** component from colliding with the **PhysX Ragdoll** component, which can lead to unexpected behavior for the ragdoll. Collisions can be avoided by using [collision filtering](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/) or by disabling the physics on the **PhysX Character Controller** component when the ragdoll is activated.
+{{< /important >}}
 
 This topic will teach you how to do the following:
 + [Set up a ragdoll.](#setting-up-a-ragdoll)
@@ -40,8 +41,11 @@ Do the following to select the joints for your ragdoll.
 1. In the **Skeleton Outliner**, multi-select the joints that you want to include in your ragdoll.
 
 1. Right-click one of the selected joints and then choose **Ragdoll**, **Add to ragdoll**.
-**Note**
+
+    {{< note >}}
 You can add joints to the ragdoll at any time.
+{{< /note >}}
+
 ![\[Add a selected joint to the ragdoll in the Skeleton Outliner in the Animation Editor\]](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-add-to-ragdoll.png)
 
 1. Click the filter icon next to the search text box, and select **Ragdoll joints and colliders**. This shows only the joints in the ragdoll and not the full animation skeleton.
@@ -54,8 +58,11 @@ You can add joints to the ragdoll at any time.
 ![\[Icons in the Skeleton Outliner show how joints are related to the ragdoll, ragdoll colliders, and hit detection colliders\]](/images/user-guide/actor-animation/ragdoll-skeleton-outliner-joint-icons.png)
 
 1. In the **OpenGL Render window**, use the render options to show or hide the ragdoll colliders (rendered in orange), ragdoll joint limits, and the hit detection colliders (rendered in blue).
-**Note**
+
+    {{< note >}}
 If your ragdoll colliders and hit detection colliders are the same size, you may need to hide the colliders that you are not working on.
+{{< /note >}}
+
 ![\[Use the render options in the OpenGL Render window to show or hide ragdoll colliders and joint limits and hit detection colliders\]](/images/user-guide/actor-animation/ragdoll-skeleton-opengl-render-window-render-options.png)
 
 1. On the **Ragdoll** tab, you can view and modify the ragdoll properties for the selected joint. For example, the rigid body mass, sleeping threshold, and colliders.

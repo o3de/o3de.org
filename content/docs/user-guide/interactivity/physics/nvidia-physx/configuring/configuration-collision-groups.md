@@ -46,5 +46,6 @@ A bullet fired by the enemy has the following layer and group:
 + Layer: **Bullet**
 + Group: **EnemyBullet**
 
-**Note**
+{{< note >}}
 You don't have to define an "enemy bullet" or a "player bullet" layer. Instead, you have a single **Bullet** layer and create separate collision groups to specify the objects that it collides with.
+{{< /note >}}

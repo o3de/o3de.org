@@ -5,8 +5,9 @@ title: Overrun Detection
 
 Overrun detection is an experimental feature. It helps you detect corrupted memory at the time that the corruption occurs. If you think memory corruption might be caused by read or write operations outside of allocated memory, overrun detection can help you detect the problem.
 
-**Note**
+{{< note >}}
 Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [GFlags with full page heap verification](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/gflags-and-pageheap). However, it can be used with the O3DE memory allocators and does not require recompiling.
+{{< /note >}}
 
 ## Prerequisites and Limitations 
 
@@ -40,5 +41,6 @@ When overrun detection is enabled, debug your game as usual. Keep the following 
 + If a system reads or writes outside allocated memory, the game crashes with a call stack at the point of the invalid read or write. An invalid read or write includes the usual `Exception thrown: invalid read/write` message near the end of the output. If this message does not appear, the exception is not a memory read or write bug.
 + If the game doesn't crash, but locks up instead, you can pause the debugger to see where the game stopped.
 
-**Note**
+{{< note >}}
 The detector doesn't always release memory after the memory is acquired from the operating system. Depending on the game, the detector can increase memory consumption as gameplay continues. If you run out of memory when you use the detector, a crash occurs in either `WindowsPlatformAllocator::ReserveBytes` or `WindowsPlatformAllocator::CommitBytes`.
+{{< /note >}}

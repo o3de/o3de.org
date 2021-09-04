@@ -84,8 +84,9 @@ end
 return TestScript
 ```
 
-**Note**
+{{< note >}}
 Instead of calling `CreateHandler` and then calling `Connect` on the handler, you can use the Lua shortcut function `TickBus.Connect`. The `Connect` function uses the following syntax to create a handler and automatically connect the handler to the bus.
+{{< /note >}}
 
 ```
 handler = TickBus.Connect(handlerTable[, connectionId])
@@ -146,8 +147,9 @@ end
 return ParentScriptSample
 ```
 
-**Important**
+{{< important >}}
 If you have a Lua script that is attached to an entity that needs to get information from another entity, your script must subscribe to the target entity's `OnEntityActivated` event. Your script should wait for the target entity to be activated before requesting the relevant information. Otherwise, your script might return nil.
+{{< /important >}}
 
 ## Using AZStd::vector and AZStd::array 
 

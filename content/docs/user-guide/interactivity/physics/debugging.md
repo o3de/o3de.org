@@ -6,8 +6,9 @@ weight: 1000
 
 The PhysX system has the following features that you can use to debug issues.
 
-**Note**
+{{< note >}}
 You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) gem.
+{{< /note >}}
 
 **Topics**
 + [PhysX Debug Console Variables](#physx-debug-console-variables)
@@ -64,8 +65,9 @@ For more information, see [Using the Console Window](/docs/user-guide/editor/con
 
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface (**ImGui**) tool.
 
-**Note**
+{{< note >}}
 You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to access this tool.
+{{< /note >}}
 
 **To debug with the ImGui tool**
 

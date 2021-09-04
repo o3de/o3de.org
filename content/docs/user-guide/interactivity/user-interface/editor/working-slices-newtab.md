@@ -15,7 +15,9 @@ When you edit an instance of a UI slice in a UI canvas, you can use the context 
    The selected slice appears in a new tab labeled **Slice: **slice name****.
 
 1. Edit the slice in the new tab.
-**Note**
+
+    {{< note >}}
 If you add elements to the slice, the elements must be children of the slice instance. Any elements outside of the slice instance will not be saved, as this is a temporary canvas for editing the slice.
+{{< /note >}}
 
 1. When finished, choose **File**, **Save Slice** to save your changes to the slice.

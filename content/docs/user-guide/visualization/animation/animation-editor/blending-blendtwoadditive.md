@@ -8,8 +8,9 @@ The **Blend Two Additive** node blends a pose 2 input additively on top of a pos
 
 ![\[Blend Two Additive node.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-blendtwoadditive.png)
 
-**Note**
+{{< note >}}
 This node functions similarly to the **Blend Two (Legacy)** node with **Additive** enabled. The key difference is that the **Blend Two (Legacy)** node subtracts the bind pose when applying an additive blend. Furthermore, **Blend Two Additive** expects pose 2 to be an additive pose. This means that if you wanted **Blend Two Additive** to function like the **Blend Two (Legacy)** node, you must first subtract the bind pose from pose 2.
+{{< /note >}}
 
 **To use the **Blend Two Additive** node**
 

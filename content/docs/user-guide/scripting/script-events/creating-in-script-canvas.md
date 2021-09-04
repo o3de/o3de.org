@@ -26,5 +26,7 @@ In O3DE Editor, you can create script events by using the Asset Editor.
 1. Choose **File**, **Save**, or press **Ctrl+S**.
 
 1. In the **Save As** dialog box, enter a file name for your `.scriptevents` file, and click **Save**.
-**Note**
+
+    {{< note >}}
 To ensure that the script event asset saved correctly, check the bottom of the Asset Editor for the message "`file_name.scriptevents` - Asset loaded\!" message . If you see the error message Failed to save asset due to validation error, check the O3DE Editor **Console** window or the `Editor.log` file for more information.
+{{< /note >}}

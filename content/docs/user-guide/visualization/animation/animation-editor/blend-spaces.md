@@ -47,8 +47,11 @@ The **Blend Space 2D** node has the following ports:
 ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/blend-space-2d-node-view.png)
 
 1. In the **Attributes** pane, specify values for the attributes of the blend space node. These values are used to set up your blend space.
-**Note**
+
+    {{< note >}}
 You can undock the **Attributes** pane in order to see the attributes and values without scrolling.
+{{< /note >}}
+
 ![\[Image NOT FOUND\]](/images/user-guide/actor-animation/animation-editor-attributes-pane.png)
    + To use provided values for the xy-axes, do the following:
 

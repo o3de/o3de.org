@@ -6,8 +6,9 @@ title: Pose Subtract Node
 
 The **Pose Subtract** node subtracts **Pose 2** from **Pose 1**. The output of a **Pose Subtract** node is the delta between them (**Pose 1** - **Pose 2**).
 
-**Note**
+{{< note >}}
 With the **Pose Subtract** node, you can generate an additive pose. You can then supply it to the **Blend Two Additive** node at runtime without manually generating it from a [DCC](/docs/user-guide/appendix/glossary#dcc). The output of the **Pose Subtract** node cannot be used as an input to the **Blend Two (Legacy)** node. This is because **Blend Two (Legacy)** does not expect a pose that is already a delta or additive pose, but expects a bind pose.
+{{< /note >}}
 
 **To use the **Pose Subtract** node**
 

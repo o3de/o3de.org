@@ -53,8 +53,9 @@ You can restart O3DE Editor and Asset Processor. Verify that only one instance o
 
 You can also debug Asset Processor using Asset Builder. This is a standalone AzToolsFramework application that lets you run BuilderSDK modules in isolation. You can run AssetBuilder in debug mode to develop new features for a builder. In debug mode, Asset Builder creates a test job or processes jobs for specified files.
 
-**Note**
+{{< note >}}
 You must start Asset Processor before you can enter a `-debug` command.
+{{< /note >}}
 
 **To debug Asset Processor using Asset Builder**
 
@@ -126,5 +127,6 @@ You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual
 
 If you're a game artist and you're having issues running Asset Processor, this might be the result of a corrupt cache. In this case, you can delete your `Cache` directory. When you delete your cache, you can restart Asset Processor to rebuild all of your assets.
 
-**Note**
+{{< note >}}
 If you're an engineer making new BuilderSDK-based builders, we recommend that you don't delete your cache.
+{{< /note >}}

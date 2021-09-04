@@ -73,7 +73,9 @@ Add an action to a transition to achieve a parameter value change that triggers 
 ![\[Choose Select parameter and select a parameter. The parameter name replaces the text in the Select parameter box.\]](/images/user-guide/actor-animation/char-animation-editor-actions-selectaction.png)
 
 1. To turn the action on, set the **Trigger Value** to `1`.
-**Note**
+
+    {{< note >}}
 When you set a trigger on a transition, a square appears on the transition line, which represents the action.
+{{< /note >}}
 
 ![\[Visual representation of an action set on a transition.\]](/images/user-guide/actor-animation/char-animation-editor-actions-square.png)

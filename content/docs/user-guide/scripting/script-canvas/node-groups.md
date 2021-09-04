@@ -50,8 +50,10 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
 
 **To delete a group**
 + Right-click the group, and choose **Delete**.
-**Note**
+
+{{< note >}}
 Deleting a group removes all of the nodes in the group and their connections to other nodes outside of the group. If you want to remove the group container but keep its nodes and connections, choose **Ungroup**.
+{{< /note >}}
 
 ### Enabling Groups as Bookmarks 
 
@@ -88,4 +90,3 @@ You can use the **Node Inspector** to customize the color of a group and to chan
 1. Enter or choose the values that you want to use for the group title font. The changes that you make are immediately visible.
 ![\[Expand a node group's Font Settings section in the Script Canvas Node Inspector.\]](/images/user-guide/scripting/script-canvas/script-canvas-node-groups-4.png)
 ****
-

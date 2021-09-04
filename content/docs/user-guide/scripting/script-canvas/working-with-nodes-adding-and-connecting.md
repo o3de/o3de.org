@@ -20,8 +20,11 @@ You can add nodes quickly in succession to a graph by using the daisy chaining f
    The new node appears on the graph with a line extended from the output pin. The context menu opens automatically, ready for you to add another node and link it to the previous one.
 
 1. Continue to add as many connected nodes as you want. Previously created nodes automatically scroll off to the left.
-**Note**
+
+     {{< note >}}
 If you start by adding nodes on the left side of the graph, the nodes that you create quickly scroll out of view. To see the previous nodes that you created, start by pressing **Shift+Right-click** on the right side of the graph.
+{{< /note >}}
+
 ![\[Quickly adding nodes in succession in the Script Canvas editor.\]](/images/shared/shared-script-canvas-working-with-nodes-1.gif)
 
 1. To exit the daisy-chaining mode, press **ESC**.

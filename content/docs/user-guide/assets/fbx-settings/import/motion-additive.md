@@ -23,6 +23,8 @@ You can create additive animations in two ways:
 
 1. In the **Motion additive** section, for **Base frame**, specify the number of the frame that contains the reference pose that you want to subtract.
 
-   For example, if you're creating an additive animation for the idle state, the base frame can be the first frame of your idle motion. If you're creating an additive aim blendspace, the base frame can be the frame that contains the center aim.
-**Note**
+    For example, if you're creating an additive animation for the idle state, the base frame can be the first frame of your idle motion. If you're creating an additive aim blendspace, the base frame can be the frame that contains the center aim.
+
+    {{< note >}}
 The reference pose that you want to subtract must be in the FBX file that you selected.
+{{< /note >}}

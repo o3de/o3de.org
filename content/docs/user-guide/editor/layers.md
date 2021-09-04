@@ -55,8 +55,9 @@ You can nest layers within other layers. This is useful if you want to organize 
 
 ![\[A layer nested within another layer.\]](/images/user-guide/component/entity_system/layer-hierarchies.png)
 
-**Note**
+{{< note >}}
 You can't make a layer a child of a non-layer entity and you can't save a layer in a slice.
+{{< /note >}}
 
 You can nest layers to break up your level into smaller, more workable sections. If you are creating a large level, for example, you might have a single vegetation layer. If you have just one vegetation layer, then only one environment artist could edit this layer at a time. To allow multiple artists to work on the vegetation layer at once, you can nest other layers within the vegetation layer and assign each nested layer to different artists. This helps build a well-organized hierarchy to keep the game's structure efficient.
 

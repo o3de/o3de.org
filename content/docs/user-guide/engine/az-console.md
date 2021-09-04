@@ -37,14 +37,20 @@ Parameters:
 + **\_TYPE**: The base type of the cvar.
 + **\_NAME**: The name of the cvar.
 + **\_INIT**: The initial value to assign to the cvar.
-+ **\_CALLBACK**: An optional callback function invoked when a cvar changes value. **Note:** These macros do not guarantee that this callback will be run on a specific thread. The implementor of the callback handler is responsible for ensuring thread safety.
++ **\_CALLBACK**: An optional callback function invoked when a cvar changes value. 
+
+    {{< note >}}
+These macros do not guarantee that this callback will be run on a specific thread. The implementor of the callback handler is responsible for ensuring thread safety.
+{{< /note >}}
+
 + **\_FLAGS**: One or more `AZ::Console::FunctorFlags` that are used to mutate behavior. Use the logical AND \(`&&`\) and OR \(`||`\) operators to combine flags. If you do not have any flags to set, use `FunctorFlags::None`.
 + **\_DESC**: String that provides a short description of the cvar for display.
 
 To declare a new cvar in your code, include the `IConsole.h` header. Then use one of the cvar macros \(such as `AZ_CVAR`\) to declare your new console variable in your own code (.cpp) files.
 
-**Note**
+{{< note >}}
 AZ\_CVAR and AZ\_CVAR\_EXTERNABLE variables can be declared only in C++ code (.cpp) files. AZ\_CVAR\_EXTERNED variables, however, can be declared in either C++ code (.cpp) or header (.h) files.
+{{< /note >}}
 
 Here are some examples.
 
@@ -95,7 +101,12 @@ AZ_CONSOLEFUNC(_CLASS, _FUNCTION, _INSTANCE, _FLAGS, _DESC)
 
 Parameters:
 + **\_CLASS**: The class that contains the method (function) for invocation.
-+ **\_FUNCTION**: The method to invoke as a callback. **Note:** These macros do not guarantee that this callback will be run on a specific thread. The implementor of the callback handler is responsible for ensuring thread safety.
++ **\_FUNCTION**: The method to invoke as a callback. 
+
+    {{< note >}}
+These macros do not guarantee that this callback will be run on a specific thread. The implementor of the callback handler is responsible for ensuring thread safety.
+{{< /note >}}
+
 + **\_INSTANCE**: The instance of the class on which this method gets invoked \(usually set to `this` for the current instance\).
 + **\_FLAGS**: One or more `AZ::Console::FunctorFlags` that are used to mutate behavior. Use the logical AND \(`&&`\) and OR \(`||`\) operators to combine flags. If you do not have any flags to set, use `FunctorFlags::None`.
 + **\_DESC**: String that provides a short description of the cfunc for display.
@@ -118,7 +129,12 @@ AZ_CONSOLEFREEFUNC(_FUNCTION, _FLAGS, _DESC)
 ```
 
 Parameters:
-+ **\_FUNCTION**: The static method to invoke as a callback. **Note:** These macros do not guarantee that this callback will be run on a specific thread. The implementor of the callback handler is responsible for ensuring thread safety.
++ **\_FUNCTION**: The static method to invoke as a callback. 
+
+    {{< note >}}
+These macros do not guarantee that this callback will be run on a specific thread. The implementor of the callback handler is responsible for ensuring thread safety.
+{{< /note >}}
+
 + **\_FLAGS**: One or more `AZ::Console::FunctorFlags` that are used to mutate behavior. Use the logical AND \(`&&`\) and OR \(`||`\) operators to combine flags. If you do not have any flags to set, use `FunctorFlags::None`.
 + **\_DESC**: String that provides a short description of the cfunc for display.
 

@@ -53,8 +53,11 @@ You can also change how morph targets are imported.
 1. In the **Asset Browser**, right-click your `.fbx` file and choose **Edit Settings**.
 
 1. In the **FBX Settings** window, click the **Motions** tab.
-**Note**
+
+    {{< note >}}
 If you have morph target animations in your `.fbx` file, a modifier appears to indicate that morph target motions will be imported. You can remove the modifier if you do not want the morph target motions in your `.motion` file.
+{{< /note >}}
+
 ![\[Motions tab in the FBX Settings window.\]](/images/user-guide/actor-animation/fbx-settings-motions-tab.png)
 
 1. Click **Update** to save your changes.

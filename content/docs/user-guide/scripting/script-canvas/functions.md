@@ -30,8 +30,9 @@ Functions require entry and exit points. To create these points, right-click a n
 
 ![\[Create an entry or exit point for a Script Canvas function by right-clicking an execution slot.\]](/images/user-guide/scripting/script-canvas/script-canvas-function-expose-input.gif)
 
-**Note**
+{{< note >}}
 To change the names of the execution slots on the function's node, edit the name field on the entry point or exit point node.
+{{< /note >}}
 
 Optionally, if you're not certain how you want to connect an entry or exit point to the rest of your function, you can create an entry or exit point node using the toolbar buttons: ![\[Image NOT FOUND\]](/images/user-guide/scripting/script-canvas/script-canvas-function-toolbar-buttons.png). Connect its execution slot later, when you're ready.
 

@@ -23,8 +23,9 @@ Use the O3DE Asset Editor to add custom file tag rules to either `exclude.fileta
 
 You can use the **Comment** field to add more information about a file tag rule, for example to document its usage.
 
-**Note**
+{{< note >}}
 Some file tags have designated uses within O3DE. Various tools may require that you use specific tags, such as `editoronly` and `shader`. You can find the full list of commonly used tags in the `FileTagsIndex` enum in `dev\Code\Framework\AzFramework\AzFramework\FileTag\FileTag.h`.
+{{< /note >}}
 
 **How to Create a File Tag Rule**
 
@@ -62,7 +63,8 @@ You can use the C++ FileTag API to write your own logic for determining whether 
    }
 ```
 
-**Note**
+{{< note >}}
 In the previous example, it shows querying the `QueryFileTagsEventBus` on the ID `FileTagType::exclude`. This implies that this query is using the file tagging rules specified in the `exclude.filetag` file.
+{{< /note >}}
 
 You can find the FileTag API in the `dev\Code\Framework\AzFramework\AzFramework\FileTag` directory. In that directory, `FileTag.h` declares the `Match` method that was used in the previous example. There are other methods there, such as `GetTags`, which you can use to write more complex logic. You may find it useful to work with the `excludeFileComponent` helper class, found in `FileTagComponent.h`. This component class automatically loads the default exclusion file for you, sets the file tag type to `FileTagType::exclude`, and connects to the `QueryFileTagsEventBus` upon activation.

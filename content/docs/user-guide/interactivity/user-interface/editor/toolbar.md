@@ -37,8 +37,9 @@ The alignment tool is a set of buttons on the **UI Editor**'s toolbar.
 
 The alignment tools are enabled when your interaction mode is **Move** or **Anchor** and you have selected two or more movable elements.
 
-**Note**
+{{< note >}}
 One type of element that you can't moved is one that a parent layout element controls.
+{{< /note >}}
 
 With these tools, you can align elements by lining up their:
 + Top edges

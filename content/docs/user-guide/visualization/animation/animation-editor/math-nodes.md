@@ -49,8 +49,10 @@ With the **Rotation Limit** node, you can limit an input rotation. To do this, t
 1. Select the **RotationLimit** node.
 
 1. IIn the right pane, on the **Attributes** tab for **Rotation limits**, enter **Min angle** and **Max angle** values for **X**, **Y**, and **Z**.
-**Note**
+
+    {{< note >}}
 The **Min angle** can't exceed the **Max angle**. If it does, the error is displayed in red and the value doesn't commit to the graph.
+{{< /note >}}
 
 1. For **Twist axis**, select the **X**, **Y**, or **Z Axis**.
 

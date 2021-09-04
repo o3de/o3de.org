@@ -17,8 +17,9 @@ Dynamic is the default.
 Kinematic rigid bodies are not fully simulated. Kinematic rigid bodies are moved by script and not effected by forces or gravity. Movement is created with the `SetKinematicTarget` method that you specify in the script.
 Use this feature for objects such as moving platforms, doors, or anything that doesn't need to be fully simulated by physics.
 
-**Note**
+{{< note >}}
 You should always add the **PhysX Rigid Body** component to the top level of an entity hierarchy. If you add the component to a child entity, this can cause conflicts with the entity's world transform and result in undefined behavior.
+{{< /note >}}
 
 The **PhysX Rigid Body** components requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem.
 
@@ -128,5 +129,6 @@ A PhysX entity that is dynamic can move and collide with other entities.
    The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the static rigid body.
 ![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
 
-**Note**
+    {{< note >}}
 For the **[Transform](/docs/user-guide/components/reference/transform/)** component, clear the **Static** property. This ensures that the mesh moves with the physics simulation.
+{{< /note >}}

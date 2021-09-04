@@ -53,8 +53,10 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 1. To delete the node, do one of the following:
    + Select the **Block Comment** node header and press **Delete**.
    + Right-click the header for the **Block Comment** node and choose **Delete Node**.
-**Note**
+   
+    {{< note >}}
 Nodes inside the **Block Comment** node are not deleted.
+{{< /note >}}
 
 ## Changing Comment Node Font Settings 
 

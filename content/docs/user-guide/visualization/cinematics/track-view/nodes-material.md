@@ -6,10 +6,9 @@ title: Material Node
 
 **Material** nodes help you animate commonly used material properties that you would normally set in the **Material Editor**. You can add **Material** nodes through a sequence or from the **Director** node.
 
-**Note**
+{{< note >}}
 The name of the **Material** node must be the full path of the material that you want to animate, as shown in the **Material Editor**.
-
-
+{{< /note >}}
 
 A recommended workflow is to select the material inside the **Material Editor** that you want to animate.
 

@@ -7,9 +7,11 @@ weight: 300
 
 Blast assets that are exported from Houdini must be processed by **Asset Processor** to generate run-time assets. There are two methods for processing Blast assets for use in O3DE: an automated method using Python Asset Builder, and a manual method where you select the meshes to be processed.
 
-**Important**
+{{< important >}}
 Processing meshes automatically is less time consuming than manually setting up blast meshes to process. It is important to understand both processes, however. You might use the automatic process for the initial export and then manually edit the mesh assets to add modifiers for custom normals or vertex color streams.
+
 Once you have manually edited the `.fbx` asset in **FBX Settings**, a `.assetinfo` file is created for the `.fbx` asset. The `.assetinfo` file prevents the mesh assets from being processed automatically by **Python Asset Builder**. Any further changes made to the source `.fbx` file, such as adding or removing fracture levels or chunks, must be manually edited in **FBX Settings**.
+{{< /important >}}
 
 **Contents**
 + [Process Blast assets automatically](#process-blast-assets-automatically)
@@ -19,8 +21,9 @@ Once you have manually edited the `.fbx` asset in **FBX Settings**, a `.assetinf
 
 When blast assets are processed automatically, a blast slice asset is created that adds the blast mesh chunks to the **Blast Family Mesh Data** component. If you have a blast asset with dozens of chunks, automatic processing with the Python asset builder for NVIDIA Blast can save some time.
 
-**Note**
+{{< note >}}
 Automatically processing assets for NVIDIA Blast requires that your project has been built with the **Python Asset Builder** and **EditorPythonBindings** gems enabled. For more information, see [Python Asset Builder gem](/docs/user-guide/assets/builder/_index.md).
+{{< /note >}}
 
 **To process Blast assets automatically**
 

@@ -5,8 +5,9 @@ title: FBX Settings PhysX tab
 
 In the **PhysX** tab, you can create **PhysX Mesh groups** to process collider assets for PhysX. Collider assets can be triangle meshes, or generated as primitives or convex meshes based on meshes contained in the `.fbx` file. Multiple **PhysX Mesh groups** can be processed from a single `.fbx` file. Each **PhysX Mesh group** produces its own `.pxmesh` file. The processed runtime assets appear in Asset Browser as children of the `.fbx` file.
 
-**Important**
+{{< important >}}
 There are many options for creating PhysX collider assets. The *best* options in a scenario depend on many factors including mesh complexity, how the collider asset is used, and whether the entity containing the collider is static (doesn't move), kinematic (animated), or dynamic (has a rigid body component). In general, primitive colliders offer the best simulation performance, but you might consider trading performance for precision in situations where collider assets that closely match a visible render mesh are desirable.
+{{< /important >}}
 
 **Contents**
 + [PhysX tab properties](#physx-tab-properties)
@@ -18,7 +19,7 @@ There are many options for creating PhysX collider assets. The *best* options in
     + [Comment modifier](#comment-modifier)
     + [Origin modifier](#origin-modifier)
 
-## PhysX tab properties 
+## PhysX tab properties
 
 ![\[The FBX Settings PhysX tab.\]](/images/user-guide/fbx/ui-fbx-settings-physx-tab.png)
 
@@ -42,7 +43,7 @@ Triangle mesh colliders can only be used with static and kinematic entities. To 
 ****Physics Materials****
 Associate a physics material to each material from the selected meshes.
 
-## Triangle mesh asset properties 
+## Triangle mesh asset properties
 
 Triangle mesh colliders accurately reproduce the shape of the selected meshes, but cannot be used on dynamic entities. Triangle mesh colliders are most suitable for static environment entities that have complex shapes and require colliders that accurately resemble the visible render mesh shape.
 
@@ -74,7 +75,7 @@ The mesh validation approach uses the same snap-to-grid approach to identify nea
 **Number of Triangles Per Leaf**
 Set the mesh cooking hint for max triangles per leaf. Fewer triangles per leaf results in slower cooking speed and produces larger mesh sizes with better runtime performance. More triangles per leaf results in faster cooking speed and produces smaller mesh sizes with decreased runtime performance.
 
-## Convex asset properties 
+## Convex asset properties
 
 Convex hulls are generated colliders that can approximate the shape of the selected meshes. Convex hulls can be used with static, kinematic, and dynamic entities, and are often used on interactive entities such as weapons that require rigid body physics and a collider mesh that resembles the shape of the visible render mesh.
 
@@ -112,7 +113,7 @@ When enabled, additional information required for GPU accelerated rigid body sim
 **Decompose Meshes**
 When enabled, the V-HACD algorithm is applied to split each node into convex parts which together approximate the original shape. Each part is exported as a convex collider using the properties configured above. **Decompose Meshes** enables **Decomposition Properties** which determine how the selected meshes are decomposed into convex parts.
 
-## Primitive asset properties 
+## Primitive asset properties
 
 Primitive colliders are simple parametric primitives (box, capsule, sphere) fit to the selected meshes and can be used with static, kinematic, and dynamic entities. Primitive colliders generally provide the best simulation performance, but might not closely match the shape of the visible render mesh. They are best suited for dynamic entities with simple meshes such as crates and barrels, as well as projectiles, triggers, and entities where colliders that accurately represent shape of the visible render mesh are not necessary.
 
@@ -129,7 +130,7 @@ For meshes that have low vertex counts, or vertices that are distributed mainly 
 **Decompose Meshes**
 When enabled, the V-HACD algorithm is applied to split each node into convex parts. Each part is exported as a primitive collider using the properties configured above. **Decompose Meshes** enables **Decomposition Properties** which determine how the selected meshes are decomposed into convex parts.
 
-## Decomposition properties 
+## Decomposition properties
 
 Exporting a PhysX mesh as a convex or a primitive collider might not produce good results if the mesh's shape is concave or doesn't closely fit one of the primitive shapes. Exporting a PhysX mesh as a triangle mesh collider creates a collider that accurately resembles the original mesh, but won't work with a dynamic entity. For these scenarios, O3DE supports approximate convex decomposition. Arbitrary meshes are broken down into convex parts which approximate the original shape before processing each part through the asset pipeline individually.
 
@@ -175,17 +176,17 @@ When enabled, the mesh is normalized before applying the convex decomposition.
 **Project Hull Vertices**
 When enabled, the output convex hull vertices are projected onto the original source mesh to increase the floating point accuracy of the results.
 
-## PhysX modifiers 
+## PhysX modifiers
 
 Modifiers can be added to a **PhysX mesh group** by choosing the **Add Modifier** button, and selecting a modifier from the list.
 
-### Comment modifier 
+### Comment modifier
 
 ![\[The FBX Settings PhysX tab Comment modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-comment.png)
 
 Add a comment to the file. You can add a comment about changes made to the `.fbx` file for tracking purposes or notes on export options, for example. Comments don't affect how files are processed and multiple comment modifiers can be added to a mesh group.
 
-### Origin modifier 
+### Origin modifier
 
 ![\[The FBX Settings Meshes tab Origin modifier.\]](/images/user-guide/fbx/ui-fbx-settings-mesh-modifier-origin.png)
 

@@ -13,9 +13,9 @@ Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to
 + [Complement Comparison Operation](#asset-bundler-list-operations-complement)
 + [File Pattern Comparison Operation](#asset-bundler-list-operations-filepattern)
 
-**Note:**
-
+{{< note >}}
 While the comparison operations use terms from set theory, they are not exactly the same as the actual set operations. This is particularly true of the [delta comparison operation](#asset-bundler-list-operations-delta), which includes a file entry in both sets if one of those files has been modified in the second set. Additionally, file pattern matching is not a set operation.
+{{< /note >}}
 
 ## Asset List Delta Comparison Operation 
 
@@ -122,9 +122,9 @@ AssetBundlerBatch.exe compare ^
 --output filePatternAssetList.assetlist
 ```
 
-**Note:**
-
+{{< note >}}
 The previous command looks for files that have the `.xml` suffix for inclusion. You can replace it with any wildcard- or regex-based file pattern that you want to use for comparison.
+{{< /note >}}
 
 The following diagram shows the file pattern comparison operation.
 
@@ -226,9 +226,9 @@ Total number of assets for Platform ( pc ): 6.
 
 You have now created the `.seed` and `.assetlist` files that you need to start the comparison operations and assemble a final bundle asset list.
 
-**Note**
-
+{{< note >}}
 At this point, you can choose either one of the next two steps to complete the tutorial. To run each comparison command individually, see the steps in section 1.6.4. To run all of the comparison operations in one command, see the steps in section 1.6.5.
+{{< /note >}}
 
 ### Run the individual step comparison commands 
 

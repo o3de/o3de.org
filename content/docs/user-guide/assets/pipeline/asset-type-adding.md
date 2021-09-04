@@ -162,8 +162,9 @@ An `AssetData`-derived class contains the asset data that is shared among instan
 
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type. Only one such handler generally exists for each type of asset. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`-derived class. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads.
 
-**Note**
+{{< note >}}
 You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code.md).
+{{< /note >}}
 
 #### Using the Generic Asset Handler for Structured Data 
 
@@ -206,8 +207,10 @@ After you create your handler, install the class that you derived from `AssetHan
 1. Create an instance of the handler class in your component.
 
 1. Call `RegisterHandler` on the asset manager instance. For an example, see the `Code\Framework\AzCore\AzCore\Script\ScriptSystemComponent.*` files.
-**Note**
+
+    {{< note >}}
 Your component does not have to be a system component, but the component must exist to handle load request calls.
+{{< /note >}}
 
 #### Example Asset Handlers 
 
@@ -296,8 +299,9 @@ To customize how your asset type interacts with the **Asset Browser** and viewpo
 
 1. Default file open behavior.
 
-**Note**
+    {{< note >}}
 Because a double-click is a request to open a file, when you override file open behavior, you also override double-click behavior.
+{{< /note >}}
 
 ### 2. Customizing Drag-and-Drop Behavior 
 

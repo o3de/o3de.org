@@ -8,8 +8,9 @@ title: PhysX Collider
 
 Performance demands in games and real-time applications require physics simulations to be solved in fractions of a second. The PhysX Collider component allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities, ensuring fast physics simulation. A simple entity such as a crate might have a single PhysX Collider component, while more complex entities, such as vehicles, might require multiple PhysX Collider components.
 
-**Note**
+{{< note >}}
 The PhysX Collider component attached to an entity by itself creates a static (non-moving) entity, such as a wall or a mountain. To create a dynamic (moving) entity, you also need to add a **[PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/)** component. The **PhysX Rigid Body** component requires either a primitive collider or convex mesh collider. Triangle mesh physics assets work only with static entities. See [Static and dynamic PhysX entities](#static-and-dynamic-physx-entities) for more details.
+{{< /note >}}
 
 The PhysX Collider component requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem enabled in your project.
 
@@ -108,9 +109,10 @@ Enable collider component mode to edit properties of the collider in the viewpor
 
 Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't have forces applied when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap.
 
-**Note**
+{{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
 Triangle meshes are not supported as triggers.
+{{< /note >}}
 
 ## Collider geometry
 
@@ -164,8 +166,10 @@ Because your entity does not have a **PhysX Rigid Body** component, it is static
 1. In the **Mesh** component, choose a mesh asset for the **Mesh asset** property.
 
 1. In the **Entity Inspector**, choose **Add Component** and then select **PhysX Collider**.
-**Note**
+
+    {{< note >}}
 If the asset specified for the **Mesh** component contains a PhysX collider mesh asset, the **PhysX Collider** automatically sets its **Shape** property to **Physics Asset**, and its **PhysX Mesh** property to the PhysX collider mesh asset. If the asset specified for the **Mesh** component contains more than one PhysX collider mesh asset, the first PhysX collider mesh asset found is assigned to the **PhysX Mesh** property.
+{{< /note >}}
 
 1. In the **PhysX Collider** properties, ensure that the **Shape** property has **Physics Asset** selected.
 
@@ -173,8 +177,9 @@ If the asset specified for the **Mesh** component contains a PhysX collider mesh
 
 ![\[PhysX Collider component properties for asset and PhysX collision mesh.\]](/images/user-guide/component/physx/physx/ui-physx-collider-C.png)
 
-**Note**
+{{< note >}}
 To generate PhysX collider mesh assets for your project, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
+{{< /note >}}
 
 ![\[PhysX Collider component with a custom PhysX collider mesh asset to create a custom collider shape.\]](/images/user-guide/component/physx/physx/ui-physx-collider-D.png)
 
@@ -251,4 +256,3 @@ These navigation hotkeys are available in collider component mode.
 + **Control + Mouse Wheel Down** - Previous mode.
 + **R** - Reset current mode. This is effectively an undo operation. You can step through the Resize, Offset, and Rotation modes and press R to reset changes to the current mode.
 + **Escape** - Exit component mode.
-

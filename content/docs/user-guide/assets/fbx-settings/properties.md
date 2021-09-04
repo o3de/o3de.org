@@ -32,20 +32,26 @@ Enter **fbx** into **Asset Browser**'s search bar to find `.fbx` files.
 ![\[Right click to open FBX Settings.\]](/images/user-guide/fbx/ui-fbx-settings-open.png)
 
 1. There are four possible tabs in **FBX Settings**. The available tabs depend on the contents of the `.fbx` file:
-   + **Meshes** - In the **Meshes** tab, you can create groups and modify export settings for meshes. Exported mesh data is stored in a `.cgf` file.
 
-     The **Meshes** tab is available if the `.fbx` file contains meshes.
-   + **Actors** - In the **Actors** tab, you can create groups and modify export settings for actors. An actor has a skeleton and a skinned mesh, but is not necessarily a character. Any asset containing at least one bone is an actor. Actor data is stored in a `.actor` file.
+    + **Meshes** - In the **Meshes** tab, you can create groups and modify export settings for meshes. Exported mesh data is stored in a `.cgf` file.
 
-     The **Actors** tab is available if the `.fbx` file contains at least one bone.
-   + **Motions** - In the **Motions** tab, you can modify export settings for animation. Animation data is stored in a `.motion` file.
+        The **Meshes** tab is available if the `.fbx` file contains meshes.
+    
+    + **Actors** - In the **Actors** tab, you can create groups and modify export settings for actors. An actor has a skeleton and a skinned mesh, but is not necessarily a character. Any asset containing at least one bone is an actor. Actor data is stored in a `.actor` file.
 
-     The **Motions** tab is available if the `.fbx` file contains at least one bone with animated channels.
-   + **PhysX** - In the **PhysX** tab, you can create groups and modify export settings for PhysX collider assets. You set properties to automatically fit primitive or generate convex collider assets based on meshes contained in the `.fbx` file. PhysX collider data is stored in a `.pxmesh` file.
+        The **Actors** tab is available if the `.fbx` file contains at least one bone.
+    
+    + **Motions** - In the **Motions** tab, you can modify export settings for animation. Animation data is stored in a `.motion` file.
 
-     The **PhysX** tab is available if the `.fbx` file contains meshes.
-**Note**
+        The **Motions** tab is available if the `.fbx` file contains at least one bone with animated channels.
+    
+    + **PhysX** - In the **PhysX** tab, you can create groups and modify export settings for PhysX collider assets. You set properties to automatically fit primitive or generate convex collider assets based on meshes contained in the `.fbx` file. PhysX collider data is stored in a `.pxmesh` file.
+
+        The **PhysX** tab is available if the `.fbx` file contains meshes.
+    
+        {{< note >}}
 To use PhysX collider assets, you must have the PhysX Gem enabled in your project.
+{{< /note >}}
 
 1. The **Meshes**, **Actors**, and **PhysX** tabs can have multiple groups, each with their own modifiers. Each group creates separate runtime asset files. To add groups, choose the **Add another...** button at the top of the tab. To add a modifier to a group, choose the **Add Modifier** button in the **Modifiers** section of the group and select a modifier from the list.
 

@@ -18,7 +18,8 @@ See the following main sections of the Track View:
 
    For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md).
 
-**Note**
+    {{< note >}}
 You can pause over buttons in the Track View to view their descriptions.
+{{< /note >}}
 
 ![\[Track View toolbar.\]](/images/user-guide/cinematics/cinematics-trackview-editor.png)
