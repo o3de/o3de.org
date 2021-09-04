@@ -43,16 +43,16 @@ Currently, O3DE supports skeletons created with LOD groups only.
 **To use the soft naming convention to create LODs**
 
 1. Create an actor with multiple LOD meshes by adding a suffix at the end of the name of each LOD mesh. See the following table for examples.
-****
 
-
-   For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming.md).
+    For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming.md).
 
 1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md) to export the meshes to FBX format so that you can use them in O3DE.
 
-**To use LOD groups to create actor LODs**
-+ To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes. The following example shows a skeleton created with an LOD group and imported into O3DE.
-![\[Skeleton created as an LOD group\]](/images/user-guide/character-fbx-settings-lod-optimize-0.png)
+    **To use LOD groups to create actor LODs**
+
+    To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes. The following example shows a skeleton created with an LOD group and imported into O3DE.
+
+    ![Skeleton created as an LOD group](/images/user-guide/character-fbx-settings-lod-optimize-0.png)
 
 ## Using the FBX Settings Tool to Check LODs
 
@@ -64,7 +64,7 @@ After you export your `.fbx` file to O3DE, do the following:
 
 1. Right click the `.fbx` file and choose **Edit Settings**. The **FBX Settings** tool shows a **Level of Detail** modifier that lists the additional LOD meshes.
 
-![\[LOD entries in the FBX Settings tool\]](/images/user-guide/character-fbx-settings-lod-optimize-1.png)
+    ![LOD entries in the FBX Settings tool](/images/user-guide/character-fbx-settings-lod-optimize-1.png)
 
 You can use the **FBX Settings** tool to verify that your LODs were imported correctly. Currently, you can also unselect a mesh or skeleton for each LOD, but you can't move a mesh or skeleton across a level or add a new mesh or skeleton to a level.
 
@@ -80,11 +80,10 @@ After you import your LODs into O3DE Editor, you can add an actor LOD to a level
 
 1. To preview the LODs, change the number for **LOD Level** in the **Actor** component.
 
-**Example**
-
-![\[LOD material file in the Actor component in the Entity Inspector.\]](/images/user-guide/character-fbx-settings-lod-optimize-2.png)
+    ![LOD material file in the Actor component in the Entity Inspector.](/images/user-guide/character-fbx-settings-lod-optimize-2.png)
 
 ### Notes
+
 + O3DE supports only one material group for each actor.
 + Author the material definition \(`.mtl`\) file with all the actor LOD submaterials inside the same `.mtl` file.
 + If you author in Maya, you can assign a different shader for each LOD mesh or use the same shader for all the meshes.
