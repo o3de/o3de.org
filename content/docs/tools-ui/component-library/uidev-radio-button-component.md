@@ -7,7 +7,7 @@ toc: true
 
 Use radio buttons to enable users to select from two or more options, when users must select exactly one choice. Choosing a radio button deselects the previously selected button.
 
-![\[component radio button style\]](/images/tools-ui/component-radio-button-style.png)
+![component radio button style](/images/tools-ui/component-radio-button-style.png)
 
 ## Usage guidelines<a name="radio-button-usage"></a>
 
@@ -27,7 +27,7 @@ Avoid these design choices when using radio buttons:
 
 ## Basic radio button<a name="radio-button-basic"></a>
 
-![\[component radio button basic\]](/images/tools-ui/component-radio-button-basic.png)
+![component radio button basic](/images/tools-ui/component-radio-button-basic.png)
 
 Set up and control radio buttons in Qt Designer or in code.
 

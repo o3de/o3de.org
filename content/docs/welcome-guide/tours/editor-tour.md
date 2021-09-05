@@ -22,7 +22,7 @@ The default layout of O3DE Editor contains the most commonly used tools in a con
 
 You can customize the layout through drag and drop, and save to a custom layout through the **Layouts** option in the **View** menu of the main menu bar. Drag the separator bars between panes to resize the panes. Drag the title bar of a pane to tear off the pane. The pane can be dropped anywhere in the layout or dropped outside of O3DE Editor as its own window. To restore the default layout, in the main menu bar choose **View > Layouts > Default Layout**.
 
-![[The default O3DE Editor layout.]](/images/welcome-guide/ui-editor-labeled.png)
+![The default O3DE Editor layout.](/images/welcome-guide/ui-editor-labeled.png)
 
 * **A:** Near the top of O3DE Editor are the **Menu Bar** and the **Tool Bar**.
 

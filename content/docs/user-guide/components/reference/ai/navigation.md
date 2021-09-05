@@ -8,13 +8,13 @@ title: Navigation
 
 The **Navigation** component provides path-finding and path-following functionality for AI movement, typically on a navigation mesh.
 
-![\[AI can use navigation to move along a path, typically on a navigation mesh.\]](/images/user-guide/component/component-navigation-path.png)
+![AI can use navigation to move along a path, typically on a navigation mesh.](/images/user-guide/component/component-navigation-path.png)
 
 ## Navigation Component Properties 
 
 The **Navigation** component has the following properties:
 
-![\[Navigation component properties\]](/images/user-guide/component/component-navigation-properties.png)
+![Navigation component properties](/images/user-guide/component/component-navigation-properties.png)
 
 **Agent Type**
 Specifies this AI's entity type for navigation purposes. Defining the agent type determines which [navigation area](/docs/user-guide/components/reference/ai/nav-area/) the entity follows in a scenario where there are different navigation meshes for larger vehicles and smaller humanoid bots. These agent types are defined in the `Scripts\AI\Navigation.xml` file of your project.

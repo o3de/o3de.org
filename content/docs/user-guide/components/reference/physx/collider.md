@@ -17,7 +17,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 
 ## PhysX Collider properties
 
-![\[PhysX Collider component interface.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A.png)
+![PhysX Collider component interface.](/images/user-guide/component/physx/physx/ui-physx-collider-A.png)
 
 **Collision Layer**
 The collision layer that's assigned to the collider. For more information, see [Collision Layers](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-layers/).
@@ -63,7 +63,7 @@ To use a physics asset, choose **Physics Asset**. For more information, see [Phy
 
 **Physics Asset shape**
 
-![\[PhysX Collider component interface, Physics Asset.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-0.png)
+![PhysX Collider component interface, Physics Asset.](/images/user-guide/component/physx/physx/ui-physx-collider-A-0.png)
 
 **PhysX Mesh**
 Assign a physics asset to the collider. For more information, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
@@ -76,21 +76,21 @@ When the **Physics Asset** shape is selected, and **Physics Materials from Asset
 
 **Sphere shape**
 
-![\[PhysX Collider component interface, Sphere.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-1.png)
+![PhysX Collider component interface, Sphere.](/images/user-guide/component/physx/physx/ui-physx-collider-A-1.png)
 
 **Radius**
 Radius multiplier of the sphere collider. The size of the sphere primitive is the **Radius** multiplied by the largest value in the **Scale** property in the **[Transform](/docs/user-guide/components/reference/transform/)** component.
 
 **Box shape**
 
-![\[PhysX Collider component interface, Box.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-2.png)
+![PhysX Collider component interface, Box.](/images/user-guide/component/physx/physx/ui-physx-collider-A-2.png)
 
 **Dimensions**
 Width, depth, and height of the box collider.
 
 **Capsule shape**
 
-![\[PhysX Collider component interface, Capsule.\]](/images/user-guide/component/physx/physx/ui-physx-collider-A-3.png)
+![PhysX Collider component interface, Capsule.](/images/user-guide/component/physx/physx/ui-physx-collider-A-3.png)
 
 **Height**
 Height of the capsule primitive shape. The height property of the capsule must be at least twice the radius property. For example, if the radius of the capsule is **5.0**, the minimum height is **10.0**.
@@ -151,7 +151,7 @@ If a **PhysX Collider** component is used in conjunction with a **[PhysX Rigid B
 
 1. Press **Control+G** to enter play mode.
 
-![\[PhysX Collider component example entity that is static.\]](/images/user-guide/component/physx/physx/ui-physx-collider-B.png)
+![PhysX Collider component example entity that is static.](/images/user-guide/component/physx/physx/ui-physx-collider-B.png)
 
 Because your entity does not have a **PhysX Rigid Body** component, it is static and does not move. The box collider is cheap to simulate, but does not align accurately with this visual mesh, so for example objects will collide with the physical body before they appear to be in contact visually.
 
@@ -171,12 +171,12 @@ If the asset specified for the **Mesh** component contains a PhysX collider mesh
 
 1. For **PhysX Mesh**, ensure that the desired PhysX collider mesh asset is selected. Click the **...** button to the right of **PhysX Mesh** to change the mesh asset.
 
-![\[PhysX Collider component properties for asset and PhysX collision mesh.\]](/images/user-guide/component/physx/physx/ui-physx-collider-C.png)
+![PhysX Collider component properties for asset and PhysX collision mesh.](/images/user-guide/component/physx/physx/ui-physx-collider-C.png)
 
 **Note**
 To generate PhysX collider mesh assets for your project, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
 
-![\[PhysX Collider component with a custom PhysX collider mesh asset to create a custom collider shape.\]](/images/user-guide/component/physx/physx/ui-physx-collider-D.png)
+![PhysX Collider component with a custom PhysX collider mesh asset to create a custom collider shape.](/images/user-guide/component/physx/physx/ui-physx-collider-D.png)
 
 Instead of a primitive shape, the entity has a PhysX collider mesh asset specified for the **PhysX Collider** component. This will provide much more accurate collision detection, but will be more expensive to simulate. Furthermore, this type of geometry cannot be used for dynamic bodies. The next two examples illustrate options which will work with dynamic bodies.
 
@@ -188,17 +188,17 @@ The setup for this example is the same as the previous example, except for two c
 
 The convex mesh provides quite a tight fit to the shape of the object, but it does not do well at capturing the concave parts of the shape. In particular, the interior of the mug is closed off. This means that other objects may have implausible interactions with the opening, such as the sphere shown below colliding with an invisible boundary.
 
-![\[PhysX Collider component with a mesh exported as convex.\]](/images/user-guide/component/physx/physx/physx-collider-convex-A.png)
+![PhysX Collider component with a mesh exported as convex.](/images/user-guide/component/physx/physx/physx-collider-convex-A.png)
 
-![\[PhysX Collider component with a mesh exported as convex interacting with other physics bodies.\]](/images/user-guide/component/physx/physx/physx-collider-convex-B.png)
+![PhysX Collider component with a mesh exported as convex interacting with other physics bodies.](/images/user-guide/component/physx/physx/physx-collider-convex-B.png)
 
 #### Dynamic body with collider using convex decomposition
 
 The setup for this example is identical to the previous example, with the exception that the **Decompose Meshes** option has been used when exporting the mesh for PhysX (see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/)). This splits the shape into multiple separate convex pieces, which can be seen most clearly in the handle of the mug. This allows the mug to be dynamic in the simulation, and also captures the fine detail of its shape, including the concave interior. However, since many shapes are used, the cost of computing the simulation will increase, so fidelity of collisions should be balanced with performance considerations.
 
-![\[PhysX Collider component with a mesh exported using convex decomposition.\]](/images/user-guide/component/physx/physx/physx-collider-decomposed-A.png)
+![PhysX Collider component with a mesh exported using convex decomposition.](/images/user-guide/component/physx/physx/physx-collider-decomposed-A.png)
 
-![\[PhysX Collider component with a mesh exported using convex decomposition interacting with other physics bodies.\]](/images/user-guide/component/physx/physx/physx-collider-decomposed-B.png)
+![PhysX Collider component with a mesh exported using convex decomposition interacting with other physics bodies.](/images/user-guide/component/physx/physx/physx-collider-decomposed-B.png)
 
 ## Collider component mode 
 
@@ -215,32 +215,32 @@ There are three editing modes available in collider component mode.
 **Resize (Sphere Shape)**
 **Sphere** resize mode has one linear manipulator that controls the **Radius** property.
 
-![\[PhysX Collider component mode sphere resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-E.png)
+![PhysX Collider component mode sphere resize manipulator](/images/user-guide/component/physx/physx/ui-physx-collider-E.png)
 
 **Resize (Box Shape)**
 **Box** resize mode has six linear manipulators, one on each side of the box. The manipulators control the width, depth, and height **Dimensions** property.
 
-![\[PhysX Collider component mode box resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-G.png)
+![PhysX Collider component mode box resize manipulator](/images/user-guide/component/physx/physx/ui-physx-collider-G.png)
 
 **Resize (Capsule Shape)**
 **Capsule** resize mode has two linear manipulators. The manipulator at the top of the capsule controls the **Height** property. The manipulator on the side controls the **Radius** property.
 
-![\[PhysX Collider component mode capsule resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-F.png)
+![PhysX Collider component mode capsule resize manipulator](/images/user-guide/component/physx/physx/ui-physx-collider-F.png)
 
 **Resize (Physics Asset Shape)**
 **Physics Asset** resize mode has a three axis scale manipulator.
 
-![\[PhysX Collider component mode Physics Asset resize manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-H.png)
+![PhysX Collider component mode Physics Asset resize manipulator](/images/user-guide/component/physx/physx/ui-physx-collider-H.png)
 
 **Offset**
 Offset mode has a three axis translate manipulator.
 
-![\[PhysX Collider component mode offset manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-I.png)
+![PhysX Collider component mode offset manipulator](/images/user-guide/component/physx/physx/ui-physx-collider-I.png)
 
 **Rotation**
 Rotation mode has a three axis rotate manipulator.
 
-![\[PhysX Collider component mode rotate manipulator\]](/images/user-guide/component/physx/physx/ui-physx-collider-J.png)
+![PhysX Collider component mode rotate manipulator](/images/user-guide/component/physx/physx/ui-physx-collider-J.png)
 
 **Collider component mode hotkeys**
 These navigation hotkeys are available in collider component mode.

@@ -14,15 +14,15 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 This is a horizontal scroll bar:
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/horizontal-scrollbar.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/horizontal-scrollbar.gif)
 
 This is an image within a scroll box with both a horizontal and a vertical scroll bar:
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/scrollbar-scrollbox.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/scrollbar-scrollbox.gif)
 
 The scroll bar can also fade automatically when not in use:
 
-![\[Example of auto fade scroll bar.\]](/images/user-guide/game_ui_editor/ui-scrollbar-autofade.gif)
+![Example of auto fade scroll bar.](/images/user-guide/game_ui_editor/ui-scrollbar-autofade.gif)
 
 You can add a prefabricated horizontal or vertical scroll bar element. When you do this, a handle is automatically created and nested in your **Hierarchy** pane.
 

@@ -8,7 +8,7 @@ You can use a **LayoutRow** component to organize child elements into a row. To 
 
 Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md).
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-row.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-row.png)
 
 To see an in-game example of a completed canvas with the **Layout Row** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Row**. You can view examples of different child sizes within a row. Press **Esc** to exit the game.
 

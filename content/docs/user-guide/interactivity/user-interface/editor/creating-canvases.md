@@ -33,4 +33,4 @@ From the **UI Editor**'s **File** menu, in addition to the basic open, close, an
 + Close all open canvases
 + Close all but the active canvas
 
-![\[UI Editor File menu\]](/images/user-guide/game_ui_editor/ui-editor-creating-canvases-1.png)
+![UI Editor File menu](/images/user-guide/game_ui_editor/ui-editor-creating-canvases-1.png)

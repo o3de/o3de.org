@@ -37,7 +37,7 @@ Generating a platform-specific asset bundle using the Asset Bundler follows thes
 
    The following diagram illustrates the relationships and process for bundling assets with the Asset Bundler.
 
-![\[The steps used in the general process for bundling assets with O3DE.\]](/images/user-guide/assetbundler/asset-bundler-overview.png)
+![The steps used in the general process for bundling assets with O3DE.](/images/user-guide/assetbundler/asset-bundler-overview.png)
 
 In this example, the seeds are the assets Level1.pak and Level2.pak. These `.pak` files reference O3DE slice files, which reference the entity meshes they contain, which in turn reference the material and texture files for those entities.
 
@@ -64,15 +64,15 @@ Product dependencies generate asset lists from seed lists. This simplifies the m
 
 For example, you have a game that has one level for your release build. Your game contains a single tree. You also have a separate test level that you don't need to ship, which contains a single rock.
 
-![\[Screenshot of a set of dependent assets represented as a folder and file structure on a disk.\]](/images/user-guide/assetbundler/asset-bundler-simple-game-files.png)
+![Screenshot of a set of dependent assets represented as a folder and file structure on a disk.](/images/user-guide/assetbundler/asset-bundler-simple-game-files.png)
 
 The following example shows a basic workflow for a simple game with assets that emits dependencies correctly.
 
-![\[New Asset Bundler dependency workflow.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart-simple.png)
+![New Asset Bundler dependency workflow.](/images/user-guide/assetbundler/new-asset-bundler-flowchart-simple.png)
 
 For more complex game projects, with file loads implemented in C++ and custom asset builders, the asset bundling workflow can look more like this:
 
-![\[New Asset Bundler workflow for complex projects.\]](/images/user-guide/assetbundler/new-asset-bundler-flowchart.png)
+![New Asset Bundler workflow for complex projects.](/images/user-guide/assetbundler/new-asset-bundler-flowchart.png)
 
 With the O3DE asset bundling workflow, you need only dig into the individual asset systems when a problem occurs using [the missing asset scanning tools](/docs/user-guide/packaging/asset-bundler/assets-resolving/). You also have opportunities early in development to verify that you're bundling the correct assets.
 

@@ -21,11 +21,11 @@ The layout column can also give varying space to each child depending on its con
 
 In the first image, **Ignore Default Cells** is selected. The layout column gives each child the same amount of space regardless of their contents.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-ignore.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-ignore.png)
 
 In the second image, **Ignore Default Cells** is cleared. The layout column calculates its children's space based on their contents.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-clear.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-clear.png)
 
 To see an example of a completed canvas with the layout column component, open `SimpleColumn.uicanvas` in the LyShineExamples Gem \(`\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\`\).
 

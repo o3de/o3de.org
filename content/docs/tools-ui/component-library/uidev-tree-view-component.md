@@ -13,7 +13,7 @@ The **tree view** component is often used in the following scenarios:
 
 Example from O3DE **Asset Browser**:
 
-![\[component tree view example\]](/images/tools-ui/component-tree-view-example.png)
+![component tree view example](/images/tools-ui/component-tree-view-example.png)
 
 ## Usage guidelines<a name="tree-view-usage"></a>
 
@@ -23,7 +23,7 @@ Follow these guidelines as you design your UI with tree views:
 
 ## Basic tree view<a name="tree-view-basic"></a>
 
-![\[component tree view basic\]](/images/tools-ui/component-tree-view-basic.png)
+![component tree view basic](/images/tools-ui/component-tree-view-basic.png)
 
 Create a simple tree view, with support for showing branch lines.
 

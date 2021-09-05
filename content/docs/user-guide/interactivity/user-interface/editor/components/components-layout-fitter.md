@@ -10,7 +10,7 @@ To see an in-game example of a completed canvas with the **LayoutFitter** compon
 
 To view that same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\Layout` directory and open the `\fitter.uicanvas` file.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-component-layout-fitter-canvas.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-component-layout-fitter-canvas.png)
 
 **To edit a layout fitter component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **LayoutFitter** and do the following, as appropriate:

@@ -27,4 +27,4 @@ Follow all the steps in the following procedure if you need to create a canvas t
 
 1. Add a **UI Canvas on Mesh** component. Type a canvas name in the **Render target override** property if you want to load several instances of the UI canvas on different meshes and have them display different states. Otherwise, leave this property blank.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-placing-canvases-3d.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-placing-canvases-3d.png)

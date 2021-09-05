@@ -10,7 +10,7 @@ The **Navigation Seed** component marks chunks of the [**Navigation Area**](/doc
 
 The **[Navigation Area](/docs/user-guide/components/reference/ai/nav-area/)** component can generate a complex-looking mesh with disconnected islands. If this happens, it can be difficult to determine the precise places that your AI can reach. In this case, use the **Navigation Seed** component to render a color-coded map. The blue chunks are accessible to AI and the red chunks are inaccessible.
 
-![\[Example Navigation Seed component with red and blue chunks.\]](/images/user-guide/component/component-navigation-mesh-seed-enabled.png)
+![Example Navigation Seed component with red and blue chunks.](/images/user-guide/component/component-navigation-mesh-seed-enabled.png)
 
 For example, [static objects](/docs/user-guide/components/reference/ai/nav-area#navigating-around-static-objects), [exclusion areas](/docs/user-guide/components/reference/ai/nav-area#creating-navigation-mesh-exclusion-areas), or terrain features can divide a navigation area into multiple chunks. The **Navigation Seed** component marks in blue where AI can reach if they are already in that chunk (for example, if they spawned there). You might have multiple navigation areas in one location, such as for different agent types. 
 

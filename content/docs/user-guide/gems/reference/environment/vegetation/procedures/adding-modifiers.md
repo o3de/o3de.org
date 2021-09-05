@@ -8,7 +8,7 @@ Before you can complete this procedure, you must first [create a vegetation laye
 
 If you have [added a gradient for random selection](/docs/user-guide/gems/vegetation/gradient-random.md), the vegetable selection appears random, but still produces a grid-like pattern. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid.
 
-![\[Vegetation area before adding any modifiers.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-before.png)
+![Vegetation area before adding any modifiers.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-before.png)
 
 To remedy this, do the following:
 + **Add a scale modifier** - Varies the size of the vegetation. You can specify a range of scale, which sizes vegetation up or down while maintaining original proportions.
@@ -17,7 +17,7 @@ To remedy this, do the following:
 
 Applying modifiers to your vegetation gives it a realistic, natural look.
 
-![\[Vegetation area after adding the scale, rotation, and position modifiers.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-after.png)
+![Vegetation area after adding the scale, rotation, and position modifiers.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-after.png)
 
 ## Adding a Scale Modifier 
 
@@ -32,7 +32,7 @@ A scale modifier varies the size of the vegetation.
    By itself, this component has no effect because there is not yet any information that tells it how to distribute the values.
 
 1. In the **Vegetation Scale Modifier** component's properties, under **Gradient**, next to **Gradient Entity Id**, click the target.
-![\[In the Vegetation Scale Modifier component's properties, under Gradient, next to Gradient Entity Id, click the target.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-adding-scale-modifier-target.png)
+![In the Vegetation Scale Modifier component's properties, under Gradient, next to Gradient Entity Id, click the target.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-adding-scale-modifier-target.png)
 
 1. In the **Entity Outliner**, select **Gradient**.
 
@@ -57,7 +57,7 @@ A rotation modifier varies the rotation of the vegetation.
    By itself, this component has no effect because there is not yet any information that tells it how to distribute the values.
 
 1. In the **Vegetation Rotation Modifier** component's properties, under **Rotation Z**, **Gradient**, next to **Gradient Entity Id**, click the target.
-![\[In the Vegetation Rotation Modifier component's properties, under Rotation Z, Gradient, next to Gradient Entity Id, click the target.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-adding-rotation-modifier-target.png)
+![In the Vegetation Rotation Modifier component's properties, under Rotation Z, Gradient, next to Gradient Entity Id, click the target.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-adding-rotation-modifier-target.png)
 
 1. In the **Entity Outliner**, select **Gradient**.
 
@@ -76,7 +76,7 @@ A position modifier shifts each instance of vegetation by an amount that the gra
    By itself, this component has no effect because there is not yet any information that tells it how to distribute the values.
 
 1. In the **Vegetation Position Modifier** component's properties, under **Position X**, **Gradient**, next to **Gradient Entity Id**, click the target.
-![\[In the Vegetation Position Modifier component's properties, under Position X, Gradient, next to Gradient Entity Id, click the target.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target.png)
+![In the Vegetation Position Modifier component's properties, under Position X, Gradient, next to Gradient Entity Id, click the target.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target.png)
 
 1. In the **Entity Outliner**, select **Gradient**.
 
@@ -85,7 +85,7 @@ A position modifier shifts each instance of vegetation by an amount that the gra
    The result is a slight x-axis variation in the ranges specified (the default is -0.3 to 0.3). For greater variation, modify the **Range Min** and **Range Max** values.
 
 1. In the **Vegetation Position Modifier** component's properties, under **Position Y**, **Gradient**, next to **Gradient Entity Id**, click the target.
-![\[In the Vegetation Position Modifier component's properties, under Position Y, Gradient, next to Gradient Entity Id, click the target.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target-y.png)
+![In the Vegetation Position Modifier component's properties, under Position Y, Gradient, next to Gradient Entity Id, click the target.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-target-y.png)
 
 1. In the **Entity Outliner**, select **Gradient**.
 
@@ -98,7 +98,7 @@ A position modifier shifts each instance of vegetation by an amount that the gra
 You can also overcome this issue by using a gradient modifier on your existing gradient or by creating a separate gradient and linking to it.
 
 1. Under **Position Y**, expand the **Advanced** header and check **Enable Transform**.
-![\[Under Position Y, expand the Advanced header and check Enable Transform.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-transform.png)
+![Under Position Y, expand the Advanced header and check Enable Transform.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-transform.png)
 
 1. To produce a swizzling effect on the y-axis, use the following values or a variation on them.
 ****
