@@ -114,13 +114,13 @@ The `o3de` Python script contains the following commands, with further details i
 
 Gets the global project that is registered to the engine. By default, reads the global project from `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`. You can also specify a file path using `-i`.
 
-### Format
+#### Format
 
 ```cmd
 get-global-project [-h] [-i INPUT_PATH]
 ```
 
-### Usage
+#### Usage
 
 Reads the global project from `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`.
 
@@ -134,7 +134,7 @@ Reads the global project from a specified file.
 o3de.bat get-global-project -i <USER_DIRECTORY>\.o3de\Registry\my-custom.setreg
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -153,14 +153,14 @@ Sets the specified project as the engine's global project. By default, sets this
 
 If you set a global project, then O3DE tools (such as **Asset Processor** and **O3DE Editor**) use the global project when you launch them from an installed engine. To override the global project, specify a project with the `project-path` parameter when you launch the O3DE tools from the command line.
 
-### Format 
+#### Format 
 
 ```cmd
 set-global-project [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
                                   [-o OUTPUT_PATH] [-f]
 ```
 
-### Usage
+#### Usage
 
 Sets the specified project as the global project in `<USER_DIRECTORY>/.o3de/Registry/bootstrap.setreg`.
 
@@ -174,7 +174,7 @@ Sets the specified project as the global project in the specified path.
 o3de.bat set-global-project -pp PROJECT_PATH -o <USER_DIRECTORY>\.o3de\Registry\my-custom.setreg
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -203,7 +203,7 @@ o3de.bat set-global-project -pp PROJECT_PATH -o <USER_DIRECTORY>\.o3de\Registry\
 
 Creates a template out of the specified source path.
 
-### Format
+#### Format
 
 ``` cmd
 create-template [-h] -sp SOURCE_PATH [-tp TEMPLATE_PATH]
@@ -215,7 +215,7 @@ create-template [-h] -sp SOURCE_PATH [-tp TEMPLATE_PATH]
                 [-kr] [-kl] [-r [REPLACE [REPLACE ...]]] [-f]
 ```
 
-### Usage
+#### Usage
 
 Creates a template from the source folder and saves the template in the specified path.
 
@@ -225,7 +225,7 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/806">}} Add more usage examples. {{< /todo >}}
 
-### Optional parameters
+#### Optional parameters
   
 - **`-h, --help`**
 
@@ -290,7 +290,7 @@ o3de.bat create-template --source-path SOURCE_PATH --template-path TEMPLATE_PATH
 
 Creates an instance of a generic template based on the specified template.
 
-### Format
+#### Format
 
 ```cmd
 create-from-template [-h] -dp DESTINATION_PATH
@@ -304,7 +304,7 @@ create-from-template [-h] -dp DESTINATION_PATH
                                     [-f]
 ```
 
-### Usage
+#### Usage
 
 Instantiates a template based on the specified template and saves it in the specified path.
 
@@ -312,7 +312,7 @@ Instantiates a template based on the specified template and saves it in the spec
 o3de.bat create-from-template --destination-path DESTINATION_PATH --template-path TEMPLATE_PATH
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -381,7 +381,7 @@ o3de.bat create-from-template --destination-path DESTINATION_PATH --template-pat
 
 Creates a new project at the specified path and registers it to the `o3de_manifest.json` file. However, if you create the project in the engine directory, this command registers the project to the engine's `engine.json` file instead.
 
-### Format
+#### Format
 
 ``` cmd
 create-project [-h] -pp PROJECT_PATH [-pn PROJECT_NAME]
@@ -396,7 +396,7 @@ create-project [-h] -pp PROJECT_PATH [-pn PROJECT_NAME]
                     [--module-id MODULE_ID] [-f]
 ```
 
-### Usage
+#### Usage
 
 Creates a new project at the specified path using the "DefaultProject" template. 
 
@@ -410,7 +410,7 @@ Creates a new project at the specified path using the specified project template
 o3de.bat create-project --project-path PROJECT_PATH --template-path TEMPLATE_PATH
 ```
 
-### Optional parameters
+#### Optional parameters
 
   
 - **`-h, --help`**
@@ -495,7 +495,7 @@ class component. The default is a random UUID. For example, {b60c92eb-3139-454b-
 
 Creates a new Gem at the specified path.
 
-### Format
+#### Format
 
 ```cmd
 create-gem [-h] -gp GEM_PATH [-gn GEM_NAME]
@@ -510,7 +510,7 @@ create-gem [-h] -gp GEM_PATH [-gn GEM_NAME]
                     [--module-id MODULE_ID] [-f]
 ```
 
-### Usage
+#### Usage
 
 Create a new Gem at the specified path using the "DefaultGem" template.
 
@@ -524,7 +524,7 @@ Create a new Gem at the specified path using the specified Gem template. The tem
 o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -605,7 +605,7 @@ o3de.bat create-gem -gp GEM_PATH --template-path TEMPLATE_PATH
 
 Registers O3DE objects to the `o3de_manifest.json` file.
 
-### Format
+#### Format
 
 ```cmd
 register [-h]
@@ -615,7 +615,7 @@ register [-h]
 ```
 
 
-### Usage
+#### Usage
 <br>
 
 **Registering engines**
@@ -815,7 +815,7 @@ o3de.bat register --update
 ```
 
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -936,7 +936,7 @@ Use the following parameters with the `--external-subdirectory` option.
 
 Shows the O3DE objects that are registered in the `o3de_manifest.json` file. 
 
-### Format
+#### Format
 
 ```cmd
 register-show [-h]
@@ -945,7 +945,7 @@ register-show [-h]
                              [-ohf OVERRIDE_HOME_FOLDER]
 ```
 
-### Usage
+#### Usage
 
 Outputs the `o3de_manifest.json` file.
 
@@ -1114,7 +1114,7 @@ o3de.bat register-show --repos
 ```
 
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -1228,7 +1228,7 @@ o3de.bat register-show --repos
 
 Shows the path to the registered O3DE object with the specified name.
 
-### Format
+#### Format
 
 ```cmd
 get-registered [-h]
@@ -1236,7 +1236,7 @@ get-registered [-h]
                     [-ohf OVERRIDE_HOME_FOLDER]
 ```
 
-### Usage
+#### Usage
 
 Returns the first path of an engine that has the specified `engine_name` value. 
 
@@ -1305,7 +1305,7 @@ o3de.bat get-registered --default-folder restricted
 ```
 
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -1350,7 +1350,7 @@ o3de.bat get-registered --default-folder restricted
 
 Enables the specified Gem in your project, so that you can use the assets or code that the Gem provides. When you enable a Gem, this command adds its name to your project's `Code/enabled_gems.cmake` file, which adds the Gem as a build and load dependency of your project's **Game Launcher**, the Editor, and Asset Processor.
 
-### Format
+#### Format
 
 ```cmd
 enable-gem [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
@@ -1358,13 +1358,13 @@ enable-gem [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
                           [-egf ENABLED_GEM_FILE] [-ohf OVERRIDE_HOME_FOLDER]
 ```
 
-### Usage
+#### Usage
 
 ```cmd
 o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -1401,7 +1401,7 @@ o3de.bat enable-gem -gp GEM_PATH -pp PROJECT_PATH
 
 Disables the specified Gem in your project. When you disable a Gem, this command removes it from the project's `Code/enabled_gems.cmake` file, which removes the Gem as a build and load dependency of your project's Game Launcher, the Editor, and Asset Processor.
 
-### Format
+#### Format
 
 ```cmd
 disable-gem [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
@@ -1409,13 +1409,13 @@ disable-gem [-h] (-pp PROJECT_PATH | -pn PROJECT_NAME)
                 [-egf ENABLED_GEM_FILE] [-ohf OVERRIDE_HOME_FOLDER]
 ```
 
-### Usage
+#### Usage
 
 ```cmd
 o3de.bat disable-gem -gp GEM_PATH -pp PROJECT_PATH
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -1452,7 +1452,7 @@ o3de.bat disable-gem -gp GEM_PATH -pp PROJECT_PATH
 
 Edits the specified engine's properties by modifying the `engine.json` file. 
 
-### Format
+#### Format
 
 ```cmd
 edit-engine-properties [-h] (-ep ENGINE_PATH | -en ENGINE_NAME)
@@ -1460,7 +1460,7 @@ edit-engine-properties [-h] (-ep ENGINE_PATH | -en ENGINE_NAME)
                         [-ev ENGINE_VERSION]
 ```
 
-### Usage
+#### Usage
 
 Updates the `engine_name` field in the `engine.json` file located in the specified engine's folder.
 
@@ -1473,7 +1473,7 @@ o3de.bat edit-engine-properties --engine-name ENGINE_NAME --engine-new-name ENGI
 ```
 
 
-### Optional parameters
+#### Optional parameters
 
   
 - **`-h, --help`**
@@ -1508,7 +1508,7 @@ The following parameters modify the specified engine's properties.
 
 Edits the specified project's properties by modifying the `project.json` file. 
 
-### Format 
+#### Format 
 
 ```cmd
 edit-project-properties [-h]
@@ -1523,7 +1523,7 @@ edit-project-properties [-h]
                         [REPLACE_TAGS [REPLACE_TAGS ...]]]
 ```
 
-### Usage
+#### Usage
 
 Updates the `project_name` field in the `gem.json` file located in the supplied project path or at the path of the registered project.
 
@@ -1532,7 +1532,7 @@ o3de.bat edit-project-properties --project-path PROJECT_PATH --project-new-name 
 o3de.bat edit-project-properties --project-name PROJECT_NAME --project-new-name PROJECT_NEW_NAME
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
 
@@ -1589,7 +1589,7 @@ The following parameters modify the specified project's properties.
 
 Edits the specified Gem's properties by modifying the `gem.json` file. 
 
-### Format
+#### Format
 
 ```cmd
 edit-gem-properties [-h] (-gp GEM_PATH | -gn GEM_NAME)
@@ -1602,7 +1602,7 @@ edit-gem-properties [-h] (-gp GEM_PATH | -gn GEM_NAME)
                         [REPLACE_TAGS [REPLACE_TAGS ...]]]
 ```
 
-### Usage
+#### Usage
 
 Updates the `gem_name` field in the `gem.json` file located in the specified Gem's folder.
 
@@ -1614,7 +1614,7 @@ o3de.bat edit-gem-properties --gem-path GEM_PATH --gem-new-name GEM_NEW_NAME
 o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-h, --help`**
   
@@ -1679,19 +1679,19 @@ o3de.bat edit-gem-properties --gem-name GEM_NAME --gem-new-name GEM_NEW_NAME
 
 Creates a hash value for an O3DE object using SHA-256 (Secure Hash Algorithm 256). This command outputs the specified file path and writes the value to the `sha256` field in the specified JSON file.
 
-### Format
+#### Format
 
 ```cmd
 sha256 [-h] -f FILE_PATH [-j JSON_PATH]
 ```
 
-### Usage
+#### Usage
 
 ```cmd
 o3de.bat sha256 --file-path FILE_PATH --json-path JSON_PATH
 ```
 
-### Optional parameters
+#### Optional parameters
 
 - **`-f FILE_PATH, --file-path FILE_PATH`**
 
