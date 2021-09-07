@@ -2,6 +2,7 @@
 linkTitle: Surface Data
 title: Surface Data Gem
 description: The Surface Data Gem provides functionality to emit signals or tags from surfaces such as meshes and terrain in Open 3D Engine (O3DE) projects.
+weight: 400
 toc: true
 ---
 

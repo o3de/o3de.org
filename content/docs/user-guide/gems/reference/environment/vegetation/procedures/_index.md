@@ -1,8 +1,7 @@
 ---
-description: ' Learn the basic procedures to create realistic-looking dynamic vegetation
-  in Open 3D Engine. '
+linkTitle: Procedures
 title: Dynamic vegetation procedures
-weight: 200
+description: Learn the basic procedures to create realistic-looking dynamic vegetation in Open 3D Engine.
 ---
 
 Creating realistic dynamic vegetation in O3DE starts with a few basic procedures that you can follow up with endless customizations.
