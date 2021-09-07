@@ -40,7 +40,7 @@ When specifying your first asset, you don't need to click + because there is an 
 
    In the next step, [Creating a Gradient Entity](#create-gradient-entity), you link this component to the gradient, which supplies values between 0.0 to 1.0 at a given position. Assets are then mapped based on those values and each asset's weight and order values.
 
-## Creating a Gradient Entity {#create-gradient-entity}
+## Creating a Gradient Entity
 
 The gradient entity provides the noise signal to reference from the vegetation entity.
 
