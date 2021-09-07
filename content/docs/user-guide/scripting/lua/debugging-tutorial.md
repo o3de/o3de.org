@@ -114,7 +114,6 @@ In addition to the usual search capabilities, the **Find** feature can display t
 ![\[Lua Editor Find dialog\]](/images/user-guide/lua-editor-debugger-find-dialog.png)
 
 1. Before starting a search, choose **Find 1**, **Find 2**, **Find 3**, or **Find 4** to choose the window in which you want to see the results. You can maintain the results of four searches separately in the tabbed windows. The search results in the other windows remain unchanged.
-![\[Find Results\]](/images/user-guide/lua-editor-debugger-find-results-window.png)
 
 1. To go directly to the line in the code which a search result was found, double-click the line in the search results.
 **Note**

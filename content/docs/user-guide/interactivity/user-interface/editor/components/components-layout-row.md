@@ -4,9 +4,9 @@ description: ' Use a layout row component in the Open 3D Engine UI Editor to org
 title: LayoutRow
 ---
 
-You can use a **LayoutRow** component to organize child elements into a row. To use this feature, you add the **LayoutRow** component to an element and then add child elements. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. To control the sizes of specific, or all, children, add the [layout cell](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md) component to those children.
+ You can use a **LayoutRow** component to organize child elements into a row. To use this feature, you add the **LayoutRow** component to an element and then add child elements. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. To control the sizes of specific, or all, children, add the [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to those children.
 
-Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md).
+Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column).
 
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-row.png)
 
@@ -17,10 +17,10 @@ To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExa
 You can add a prebuilt **Layout Row** element from the slice library. When you do this, a simple layout row is automatically created and nested in your **Hierarchy** pane.
 
 **To add a Layout Row element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **LayoutRow**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **LayoutRow**.
 
 **To edit a layout row component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **LayoutRow** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutRow** and do the following, as appropriate:
 ****Padding****
 Type values in pixels, relative to the element's borders.
 ****Spacing****
@@ -32,5 +32,5 @@ If the layout's children don't occupy all the available layout space, use this s
 For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally.
 For **Vertical**, select **Top**, **Center**, or **Bottom** to determine how the children are aligned vertically.
 ****Ignore Default Cell****
-Selected by default, this property causes the layout row to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md) component). The layout row ignores the layout cell's content-based default calculations.
-When you clear this option, the layout row uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md).
+Selected by default, this property causes the layout row to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component). The layout row ignores the layout cell's content-based default calculations.
+When you clear this option, the layout row uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell).

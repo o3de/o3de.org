@@ -1,7 +1,9 @@
 ---
-description: ' Create random distribution by using weight-based random selection in
-  Open 3D Engine dynamic vegetation. '
+linkTitle: Weight-Based Random Selection
 title: Creating Weight-Based Random Selection
+description: Create random distribution by using weight-based random selection in Open 3D Engine.
+weight: 700
+toc: true
 ---
 
 When you create distribution using random selection, the vegetation asset that is selected for a particular point on the grid varies. The assigned weight of each asset determines its chance of selection. In this procedure, you specify weights and link to the gradient using the **Vegetation Asset Weight Selector** component.
@@ -80,7 +82,7 @@ If you don't have the **Gradient** category in your list of components, you must
 
 Before the gradient that you created can have any effect on the vegetation, you must reference the gradient from within the vegetation area. This means the component that you reference the gradient (in this example, the **Vegetation Asset Weight Selector**) in uses the gradient's information for its selection of values.
 
-You can reference the gradient that you created in any number of components. In the procedure [Adding Scale, Rotation, and Position Modifiers](/docs/user-guide/gems/vegetation/adding-modifiers.md), you use the same gradient for the vegetation modifiers.
+You can reference the gradient that you created in any number of components. In the procedure [Adding Scale, Rotation, and Position Modifiers](./adding-modifiers/), you use the same gradient for the vegetation modifiers.
 
 **To link the gradient entity to the vegetation entity**
 

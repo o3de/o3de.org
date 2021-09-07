@@ -3,7 +3,7 @@ title: Blast Family Component
 description: ' Learn about the Open 3D Engine Blast Family component. '
 ---
 
-{{< preview-migrated >}}
+
 
 
 With the **Blast Family** component, you can enable destruction simulation using the NVIDIA Blast library, and set properties for the simulation. The **Blast Family** component is used with the **Blast Family Mesh Data** component. This topic describes the properties of the **Blast Family** component.

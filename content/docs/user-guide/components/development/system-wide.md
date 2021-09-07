@@ -1,5 +1,5 @@
 ---
-description: Learn how to create system components in Open 3D Engine. 
+description: Learn how to create system components in Open 3D Engine.
 title: System-wide Components in Open 3D Engine
 linktitle: System Components
 weight: 600
@@ -115,8 +115,8 @@ After you create the code for your component, add it to your project's system en
    }
    ```
 
-   The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list. The `Category` field specifies the group in which the component appears. In this case, no category is specified, so the group is **Miscellaneous** by default.
+    The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list. The `Category` field specifies the group in which the component appears. In this case, no category is specified, so the group is **Miscellaneous** by default.
 
-The following image shows the result in the System Entity Editor.
+    The following image shows the result in the System Entity Editor.
 
-![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
+    ![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
