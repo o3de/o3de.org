@@ -78,7 +78,7 @@ This section shows you how to create reference nodes in the **Animation Editor**
 
     ![Right-clicking a reference node to edit the anim graph that is assigned to it.](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-13.png)
 
-## Best Practices for Using Referenced Anim Graphs {#character-animation-editor-anim-graph-reference-best-practices}
+## Best Practices for Using Referenced Anim Graphs
 
 See the following best practices for using referenced anim graphs:
 + **Keep track of your referencing hierarchy** - One way to keep track of your referencing hierarchy is by maintaining a chart of your anim graphs and their references. Such a chart can help developers and testers know which anim graphs are affected by changes that are made. A chart can also help you know if an anim graph that you are working on is referenced by another anim graph.
