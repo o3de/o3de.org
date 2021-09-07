@@ -27,8 +27,9 @@ In the following procedure, add motion to a tassel attached to the character.
 
 1. In the **Simulated Objects** panel, select an object or joint. The properties that you can customize appear in the **Simulated Object Inspector** panel.
 
-    **Note**
-    After you create an anim graph, you can preview the simulation. For now, keep the default values.
+    {{< note >}}
+After you create an anim graph, you can preview the simulation. For now, keep the default values.
+{{< /note >}}
 
     The first joint in the simulated object chain \(`L_tassle_01_JNT`\) is **Pinned**. Pinned joints follow the original joint. If you have multiple joints, you can pin them if you don't want them to move as a simulated object. The root joint is always pinned.
 
