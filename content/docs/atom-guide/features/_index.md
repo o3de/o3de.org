@@ -17,11 +17,11 @@ Multisampling Anti-aliasing (MSAA)
 =======
 ---  
 
-This section provides a high-level overview of graphics features that Atom renderer supports. Some of these features are implemented in Open 3D Engine (O3DE), so you can add rendering effects to your project.
+This section provides a high-level overview of graphics features that **Atom Renderer** supports. Some of these features are implemented in **Open 3D Engine (O3DE)**, so you can add rendering effects to your project.
 
 
 ## Anti-aliasing
-*Aliasing*, the appearance of jagged edges, is a common problem in rendered images. Aliasing is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this problem. Atom implements three anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA) and Temporal Anti-aliasing (TAA).
+*Aliasing*, the appearance of jagged edges, is a common problem in rendered images. Aliasing is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this problem. Atom implements three anti-aliasing techniques: Multisampling Anti-aliasing (MSAA), Subpixel Morphological Anti-aliasing (SMAA), and Temporal Anti-aliasing (TAA).
 
 Multisampling Anti-aliasing (MSAA)
 : An anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default.
@@ -81,7 +81,7 @@ Exposure and Eye Adaptation
 *Related to: [Exposure Control component](/docs/user-guide/components/reference/atom/exposure-control/)*
 
 
-Global Skydome (IBL)   
+Global Skylight (IBL)   
 : An image-based global illumination effect that calculates lighting for a scene using an HDR skybox image.
 
 *Related to: [Global Skylight (IBL) component](/docs/user-guide/components/reference/atom/global-skylight-ibl)*
