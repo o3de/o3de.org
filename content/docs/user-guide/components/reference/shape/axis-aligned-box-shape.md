@@ -1,6 +1,6 @@
 ---
 title: Axis Aligned Box Shape component
-linktitle: Box
+linktitle: Axis Aligned Box
 description: ' Open 3D Engine (O3DE) Box Shape component reference. '
 weight: 100
 ---
