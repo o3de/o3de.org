@@ -5,7 +5,7 @@ description: ' Open 3D Engine (O3DE) Compound Shape component reference. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
+
 
 The **Compound Shape** component is a container for complex shapes. An entity can contain only one Shape component. To build complex shapes, the Compound Shape component can reference any number of entities, each with their own Shape component. The Compound Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
 

@@ -4,7 +4,7 @@ description: ' Use the Navigation Area component with the Polygon Prism Shape co
 title: Navigation Area
 ---
 
-{{< preview-migrated >}}
+
 
 The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System. You use this component with the **[Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)** component, which defines the volume of the navigation area.
 

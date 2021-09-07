@@ -24,7 +24,7 @@ Slice resizing is useful for images with borders and corner details, such as but
 
 ![\[Scaled with slice scaling.\]](/images/user-guide/game_ui_editor/ui-editor-component-9-sliced-4.gif)
 
-Using the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor.md), you can manipulate where the sections are by dragging the dotted lines on the preview image.
+Using the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor), you can manipulate where the sections are by dragging the dotted lines on the preview image.
 
 **Tip**
 You can see your changes in real time. To do this, before you open the **Sprite Editor**, change the **Image** component's **ImageType** property to **Sliced**.

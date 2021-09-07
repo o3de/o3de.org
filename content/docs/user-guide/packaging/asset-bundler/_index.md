@@ -8,8 +8,8 @@ Open 3D Engine provides a set of tools for intelligently bundling assets and man
 
 | Topic | Description |
 | --- | --- |
-| [What is the Open 3D Engine Asset Bundler?](/docs/user-guide/packaging/asset-bundler/overview) | Learn how the O3DE Asset Bundler tools work and how you can use them in your game project. |
 | [Resolving Missing Assets](/docs/user-guide/packaging/asset-bundler/assets-resolving) | Learn how to resolve missing assets and their dependencies. |
+| [Verifying Asset Bundles](/docs/user-guide/packaging/asset-bundler/verifying-bundles) | Learn about the tools and processes for managing and verifying your game project's assets. |
 | [Tagging Asset Files](/docs/user-guide/packaging/asset-bundler/file-tagging) | Learn how to add and support tags for your asset files. |
 | [Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations) | Learn about the features of AssetBundlerBatch used to create and compare asset lists for delivery of your game project. |
 | [Default dependencies](/docs/user-guide/packaging/asset-bundler/default-dependencies) | Learn about default dependency files and how to edit them. |
