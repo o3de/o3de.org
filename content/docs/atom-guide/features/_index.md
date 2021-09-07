@@ -3,18 +3,6 @@ title: "Features"
 description: "Learn about graphics features in Atom Renderer, the graphics engine integrated into Open 3D Engine (O3DE)."
 toc: true
 weight: 400
-<<<<<<< HEAD
----
-
-This section provides a high-level overview of graphics features that the Atom renderer supports. Some of these features are also implemented in Open 3D Engine (O3DE), so you can add rendering effects to your project. 
-
-
-## Anti-aliasing
-
-A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
-Multisampling Anti-aliasing (MSAA)   
-: An anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
-=======
 ---  
 
 This section provides a high-level overview of graphics features that **Atom Renderer** supports. Some of these features are implemented in **Open 3D Engine (O3DE)**, so you can add rendering effects to your project.
@@ -25,7 +13,6 @@ This section provides a high-level overview of graphics features that **Atom Ren
 
 Multisampling Anti-aliasing (MSAA)
 : An anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default.
->>>>>>> f87e39073 (Resolved PR suggestions. Updated Anti-aliasing in _index.md to include TAA.)
 
 Subpixel Morphological Anti-aliasing (SMAA)  
 : An image-based, post-processing anti-aliasing technique that implements a combination of morphological anti-aliasing and multisampling/supersampling anti-aliasing strategies. It is more efficient than MSAA, but provides lower quality. You can enable and configure SMAA in the file `SMAAConfiguration.azasset`.
