@@ -13,7 +13,7 @@ To view that same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExa
 ![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-component-layout-fitter-canvas.png)
 
 **To edit a layout fitter component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **LayoutFitter** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutFitter** and do the following, as appropriate:
 ****Horizontal Fit****
 Select the check box to resize an element's width to fit its content.
 ****Vertical Fit****

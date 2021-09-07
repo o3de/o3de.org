@@ -4,7 +4,7 @@ description: ' Use the Navigation Seed component to generate a color-coded marku
 title: Navigation Seed
 ---
 
-{{< preview-migrated >}}
+
 
 The **Navigation Seed** component marks chunks of the [**Navigation Area**](/docs/user-guide/components/reference/ai/nav-area/) that are accessible to AI agents. Game developers can use this component as a visual aid to determine where AI agents can go.
 

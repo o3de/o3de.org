@@ -3,7 +3,7 @@ description: ' Use the Input component to bind raw input to events in Open 3D En
 title: Input
 ---
 
-{{< preview-migrated >}}
+
 
 You can use the **Input** component to bind raw input to events in your game. The **Input** component references an `.inputbindings` file, which binds a set of inputs (such as from a mouse, keyboard, game controller, and so on) to an event.
 

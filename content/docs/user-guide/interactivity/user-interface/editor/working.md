@@ -13,7 +13,7 @@ You can use the **UI Editor** to add and delete components, create references to
 
 ## Adding or Deleting Components 
 
-You can add or delete components in the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/using.md).
+You can add or delete components in the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working).
 
 **To add a component to an element**
 

@@ -5,16 +5,11 @@ title: 'Asset List Comparison Operations'
 weight: 500
 ---
 
-Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files. The following operations are available to use from the Asset Bundler tool:
-+ [Delta Comparison Operation](#asset-bundler-list-operations-delta)
-+ [Union Comparison Operation](#asset-bundler-list-operations-union)
-+ [Intersection Comparison Operation](#asset-bundler-list-operations-intersection)
-+ [Intersection Count Comparison Operation](#asset-bundler-list-operations-intersectioncount)
-+ [Complement Comparison Operation](#asset-bundler-list-operations-complement)
-+ [File Pattern Comparison Operation](#asset-bundler-list-operations-filepattern)
+Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files. 
 
 {{< note >}}
-While the comparison operations use terms from set theory, they are not exactly the same as the actual set operations. This is particularly true of the [delta comparison operation](#asset-bundler-list-operations-delta), which includes a file entry in both sets if one of those files has been modified in the second set. Additionally, file pattern matching is not a set operation.
+While the comparison operations use terms from set theory, they are not exactly the same as the actual set operations. This is particularly true of the [
+comparison operation](#asset-bundler-list-operations-delta), which includes a file entry in both sets if one of those files has been modified in the second set. Additionally, file pattern matching is not a set operation.
 {{< /note >}}
 
 ## Asset List Delta Comparison Operation 
@@ -157,7 +152,7 @@ Create the files that you will use in this tutorial.
    + `FileF.cfg`
    + `do-not-add-me.txt`
 
-1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/assets/processor.md).
+1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/assets/pipeline/processor).
 
 ### Create asset list files for the comparison operation 
 

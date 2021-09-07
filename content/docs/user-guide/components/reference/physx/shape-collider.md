@@ -4,7 +4,7 @@ description: ' Use the PhysX Shape Collider component to define where collision
 title: 'PhysX Shape Collider'
 ---
 
-{{< preview-migrated >}}
+
 
 The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider geometry based on the shape definition supplied by a **Shape** component. The PhysX Shape Collider supports the following Shape components:
 +  [Box Shape](/docs/user-guide/components/reference/shape/box-shape/)

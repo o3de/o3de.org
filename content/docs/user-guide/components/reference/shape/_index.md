@@ -4,7 +4,7 @@ linktitle: Shape
 description: ' Using shape components in Open 3D Engine (O3DE). '
 ---
 
-{{< preview-migrated >}}
+
 
 Shape components generate helper geometries that can be used to define shapes for area lights and shape gradients, as well as volumes and areas for AI, audio, fog, spawners, vegetation, PhysX and triggers. Components such as Area Light that require a shape to function will prompt you to select a shape component when they are added to an entity.
 

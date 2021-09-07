@@ -10,13 +10,10 @@ When your team generates a release build that has bundled game assets, you want 
 
 As a best practice, verify that your bundles contain their required assets during all game development phases:
 
-1. When you start
-
-1. While you develop
-
-1. In development builds
-
-1. In release builds
+* When you start
+* While you develop
+* In development builds
+* In release builds
 
 ## When You Start
 
@@ -28,7 +25,7 @@ Errors can occur when assets are bundled later in the development process. To av
 
 ### After You Have a Seed List
 
-After you've built a seed list, but before you bundle your assets, you can use the Asset Validation Gem to verify that asset loads map back to seeds. For more information, see [Using the Asset Validation Gem to Verify Seeds](/docs/user-guide/packaging/asset-bundler/asset-validation-gem.md).
+After you've built a seed list, but before you bundle your assets, you can use the Asset Validation Gem to verify that asset loads map back to seeds. For more information, see [Using the Asset Validation Gem to Verify Seeds](/docs/user-guide/gems/reference/assets/asset-validation).
 
 ## In Development Builds
 

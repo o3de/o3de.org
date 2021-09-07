@@ -15,7 +15,7 @@ A system is an instance of a class that inherits the `Registrar` method from `AZ
 `AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
 For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
 
-Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](/docs/userguide/az-console.md).
+Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](./az-console/).
 {{< /note >}}
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
