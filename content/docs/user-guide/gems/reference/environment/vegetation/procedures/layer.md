@@ -7,7 +7,7 @@ Creating a vegetation layer is the first and most basic step in creating your dy
 
 **To create a vegetation layer**
 
-1. Create an entity(/docs/userguide/creating-entity.md) and name it.
+1. Create an entity and name it.
 
     In this example, the entity is named *BasicCoverage*.
 
