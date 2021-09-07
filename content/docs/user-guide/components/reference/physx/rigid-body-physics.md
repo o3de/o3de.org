@@ -124,7 +124,7 @@ A PhysX entity that is dynamic can move and collide with other entities.
 
 1. Press **Ctrl+G** to enter gameplay mode.
 
-    ![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
+    ![Animated example of a dynamic entity falling to the terrain and bouncing around.](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
 
     The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the static rigid body.
 
