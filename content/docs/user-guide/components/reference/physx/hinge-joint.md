@@ -3,7 +3,7 @@ description: ' Lean to use the Open 3D Engine PhysX Hinge Joint component. '
 title: PhysX Hinge Joint component
 ---
 
-{{< preview-migrated >}}
+
 
 With the **PhysX Hinge Joint** component, you can create a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.
 

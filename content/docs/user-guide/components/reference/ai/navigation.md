@@ -4,7 +4,7 @@ description: ' Use the Navigation component to enable an entity to find and foll
 title: Navigation
 ---
 
-{{< preview-migrated >}}
+
 
 The **Navigation** component provides path-finding and path-following functionality for AI movement, typically on a navigation mesh.
 

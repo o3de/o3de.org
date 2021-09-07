@@ -13,21 +13,19 @@ To include custom components in cinematic cut scenes and movies rendered to disk
 
 1. Reflect your component to the edit context and the behavior context. Edit context reflection exposes your component in **Entity Inspector**, and behavior context reflection exposes it in the Track View.
 
-## Exposing a Custom Component: Example 
+## Exposing a Custom Component: Example
 
 The following example assumes that a custom component called `ImaginaryTargetComponent` has been created. The component has a `Vector3` property called `ImaginaryPosition` that you want to animate in **Track View**. A request bus called `ImaginaryTargetComponentBus` has also been created for the component. This example assumes that you are familiar with programming event buses and component handlers for them. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/) and [Creating a Component](/docs/user-guide/components/development/create-component/).
 
 **To expose a custom component to Track View**
 
-1.
+1. **Create getter and setter methods**
 
-**Create getter and setter methods**
+    Each property must provide a method to set its value and get its current value. To implement this, create setter and getter methods on one of the component's request buses. Then reflect those methods to the behavior context as part of the class reflection for the component.
 
-   Each property must provide a method to set its value and get its current value. To implement this, create setter and getter methods on one of the component's request buses. Then reflect those methods to the behavior context as part of the class reflection for the component.
+    The following example creates setter and getter requests on the `ImaginaryTargetComponentRequestBus`.
 
-   The following example creates setter and getter requests on the `ImaginaryTargetComponentRequestBus`.
-
-   ```
+    ```
    /*!
    * ImaginaryTargetComponentRequests EBus Interface
    * Messages serviced by ImaginaryTargetComponents.
@@ -48,9 +46,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    using ImaginaryTargetComponentRequestBus = AZ::EBus<ImaginaryTargetComponentRequests>;
    ```
 
-1.
-
-**Implement handlers in your component**
+1. **Implement handlers in your component**
 
    Implement handlers in your component for the setter and getter requests that you declared in the first step, as in the following example.
 
@@ -82,9 +78,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    };
    ```
 
-1.
-
-**Reflect your component**
+1. **Reflect your component**
 
    Using the edit context and behavior contexts, reflect the component's class, request event bus, and setter and getter methods. **Track View** uses the setter and getter methods that you reflect in this step to set and get values for your animated property. You must also reflect a `VirtualProperty` declaration that tells **Track View** that your component is capable of being animated.
 
@@ -126,9 +120,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    }
    ```
 
-1.
-
-**(Optional) Place Unit Attributes on Getters**
+1. **(Optional) Place Unit Attributes on Getters**
 
    The **Track View** user interface depends on the data type that the getter and setter use. The foregoing example uses a type of `AZ::Vector3`, so **Track View** creates a compound `x,y,z` track from the property. By contrast, if the getter and setters use a `bool`, **Track View** creates a Boolean track. For the majority of animatable properties, the type is sufficient. However, in some cases you might have to set units for a reflected property. For example, if your property's `AZ::Vector3` represents a color, you must add an attribute to the reflection of the getter event. The attribute instructs **Track View** to use a color picker for that property. If you have a property called `ImaginaryTargetColor` that calls a getter event called `GetImaginaryTargetColor`, use reflection code like the following:
 
@@ -149,7 +141,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
    If you have an angular parameter in radians that you want to **Track View** to convert to degrees in its user interface, use `AZ::Crc32 PropertyUnitsRadian`.
 
-## Viewing the Result 
+## Viewing the Result
 
 Now you can view how the example component and property appear in the **Entity Inspector** and the Track View.
 

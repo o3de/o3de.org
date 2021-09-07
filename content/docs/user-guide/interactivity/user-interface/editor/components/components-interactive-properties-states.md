@@ -16,7 +16,7 @@ The **Hover**, **Pressed**, and **Disabled** states have a list of **state actio
 
 The **state actions**-**Color**, **Alpha**, **Sprite**, and **Font**-each have a **Target** property that specifies which visual element is to be affected. The elements from which you can choose include the current element-listed as **<This element>**, its child elements, and the descendants of its child elements. Using the **Target** property, you can pick exactly which visual element to override.
 
-For example, the button [prefab](/docs/userguide/ui/editor/prefabs.md) has a top element named **Button** that has a visual component to define its color. It also has a child element with a text component to define the text (and its color) of the button. The top element (**Button**) also has the **Interactable** component. The **Target** for the **color** state action can override either the **Button** element's color or the **Text** element's color, depending on what you select from the list.
+For example, the button UI component has a top element named **Button** that has a visual component to define its color. It also has a child element with a text component to define the text (and its color) of the button. The top element (**Button**) also has the **Interactable** component. The **Target** for the **color** state action can override either the **Button** element's color or the **Text** element's color, depending on what you select from the list.
 
 ![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-interactive-states.png)
 
@@ -24,7 +24,7 @@ When you first add an interactive component to an element, no **state actions** 
 
 **To add a state action to a state**
 
-In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), in the **Properties** pane, under the interactive component's name (for example, **Button**), do the following:
+In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), in the **Properties** pane, under the interactive component's name (for example, **Button**), do the following:
 
 1. Under **Interactable**, **States**, click **Add new element** (green **+**).
 

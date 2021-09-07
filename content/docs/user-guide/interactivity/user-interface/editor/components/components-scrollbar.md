@@ -29,12 +29,12 @@ You can add a prefabricated horizontal or vertical scroll bar element. When you 
 You can add a prebuilt **ScrollBarHorizontal** or **ScrollBarVertical** element from the slice library. When you do this, the scroll bar and its handle is automatically created in your **Hierarchy** pane.
 
 **To add a ScrollBar element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **ScrollBarHorizontal** or **ScrollBarVertical**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **ScrollBarHorizontal** or **ScrollBarVertical**.
 
 **To edit a scroll bar component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **ScrollBar** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **ScrollBar** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
 **Elements**, **Handle**
 Select an element from the list to provide the movable handle of the scroll bar.
 **Values**, **Orientation**

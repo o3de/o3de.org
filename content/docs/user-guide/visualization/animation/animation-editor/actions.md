@@ -56,6 +56,7 @@ Add an action to a transition to achieve a parameter value change that triggers 
 ![Select a transition.](/images/user-guide/actor-animation/char-animation-editor-actions-transition.png)
 
 1. In the **Attributes** panel, click **Add action** and then **Parameter Action**.
+
 ![To add a Parameter Action, click Add action and then Parameter Action.](/images/user-guide/actor-animation/char-animation-editor-actions-addaction-transition.png)
 
    The following options trigger the change on a follower graph but with different inputs to the follower graph's parameter:

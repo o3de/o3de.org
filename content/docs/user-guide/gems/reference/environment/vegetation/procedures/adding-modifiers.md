@@ -1,12 +1,14 @@
 ---
-description: ' Add scale, rotation, and position modifiers to change the look of your
-  dynamic vegetation in Open 3D Engine. '
+linkTitle: Adding Modifiers
 title: Adding Scale, Rotation, and Position Modifiers
+description: Add scale, rotation, and position modifiers to change the look of your dynamic vegetation in Open 3D Engine.
+weight: 150
+toc: true
 ---
 
-Before you can complete this procedure, you must first [create a vegetation layer](/docs/user-guide/gems/vegetation/layer.md).
+Before you can complete this procedure, you must first [create a vegetation layer](./layer/).
 
-If you have [added a gradient for random selection](/docs/user-guide/gems/vegetation/gradient-random.md), the vegetable selection appears random, but still produces a grid-like pattern. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid.
+If you have [added a gradient for random selection](./gradient-random/), the vegetable selection appears random, but still produces a grid-like pattern. This is because each type of vegetation is all the same size, faces the same direction, and is indeed planted on points on a grid.
 
 ![Vegetation area before adding any modifiers.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-before.png)
 
@@ -19,7 +21,7 @@ Applying modifiers to your vegetation gives it a realistic, natural look.
 
 ![Vegetation area after adding the scale, rotation, and position modifiers.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-after.png)
 
-## Adding a Scale Modifier 
+## Adding a Scale Modifier
 
 A scale modifier varies the size of the vegetation.
 
@@ -44,7 +46,7 @@ A scale modifier varies the size of the vegetation.
 
    **Range Min** sets the scale size for the gradient signal's lowest values. **Range Max** sets the scale size for the gradient signal's highest values. Because the gradient signal varies in range from black to white, a scale value between the minimum and the maximum is applied to that vegetation instance.
 
-## Adding a Rotation Modifier 
+## Adding a Rotation Modifier
 
 A rotation modifier varies the rotation of the vegetation.
 
@@ -63,7 +65,7 @@ A rotation modifier varies the rotation of the vegetation.
 
    The **Gradient Entity Id** field populates with the entity name.
 
-## Adding a Position Modifier 
+## Adding a Position Modifier
 
 A position modifier shifts each instance of vegetation by an amount that the gradient determines, which removes the grid-like appearance of the vegetation.
 
@@ -102,4 +104,3 @@ You can also overcome this issue by using a gradient modifier on your existing g
 
 1. To produce a swizzling effect on the y-axis, use the following values or a variation on them.
 ****
-

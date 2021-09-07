@@ -50,4 +50,4 @@ To gather data to make these determinations, you can use the O3DE Editor console
 
      Because this limits the number of textures in a texture atlas, having the UI load multiple separate texture atlases is a good practice.
 
-For more information on the `ui_DisplayDrawCallData` and `ui_ReportDrawCalls` commands, see [Debugging UI Canvases](/docs/user-guide/interactivity/user-interface/editor/debugging-ui-canvases.md).
+For more information on the `ui_DisplayDrawCallData` and `ui_ReportDrawCalls` commands, see [Debugging UI Canvases](/docs/user-guide/interactivity/user-interface/editor/debugging-ui-canvases).

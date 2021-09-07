@@ -1,6 +1,9 @@
 ---
-description: ' Create areas where you don''t want vegetation to appear in Open 3D Engine. '
+linkTitle: Blockers
 title: Blocking Vegetation in Select Areas
+description: Create areas where you don''t want vegetation to appear in Open 3D Engine.
+weight: 800
+toc: true
 ---
 
 You can create areas in your level to block vegetation from appearing. For example, you can use this feature to create areas around buildings or homes where vegetation shouldn't appear.

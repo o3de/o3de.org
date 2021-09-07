@@ -3,7 +3,7 @@ description: ' The Open 3D Engine Cloth component. '
 title: Cloth component
 ---
 
-{{< preview-migrated >}}
+
 
 The **Cloth** component treats the vertices of any mesh that it references as cloth particles and applies physical properties, forces, and constraints to simulate the behavior of cloth. You can add this component to any entity that has **Mesh** or **Actor** components. You can add multiple cloth components to an entity.
 

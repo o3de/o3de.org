@@ -16,10 +16,10 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 ![Image NOT FOUND](/images/userguide/az/az-console-1.png)
 
 **Topics**
-+ [Console variables (cvars)](#az-console-cvars)
-+ [Console functors (cfuncs)](#az-console-cfuncs)
-+ [Optional flags](#az-console-flags)
-+ [Adding support for new console variable types](#az-console-new-types)
+- [Console variables (cvars)](#console-variables-cvars)
+- [Console functors (cfuncs)](#console-functors-cfuncs)
+- [Optional flags](#optional-flags)
+- [Adding support for new console variable types](#adding-support-for-new-console-variable-types)
 
 ## Console variables (cvars) 
 

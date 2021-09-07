@@ -21,7 +21,7 @@ In the following procedure, you can divide the image into 12 columns when config
 
 **To configure an image as a sprite sheet**
 
-1. In the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor.md), click **Configure Spritesheet** in the lower-left corner.
+1. In the [Sprite Editor](/docs/user-guide/interactivity/user-interface/editor/sprite-editor), click **Configure Spritesheet** in the lower-left corner.
 
    The **Configure Spritesheet** view displays two new sections, **Configure Spritesheet** and **Select cell**.
 ![Configure Spritesheet and Select cell.](/images/user-guide/game_ui_editor/ui-editor-component-sprite-sheets-1.png)
@@ -31,8 +31,6 @@ In the following procedure, you can divide the image into 12 columns when config
 1. In the **Select cell** section, click a cell to select it and display its properties.
 
 1. To configure individual cells with slices scaling, drag the dotted lines to the preferred positions. The **Top**, **Bottom**, **Left**, and **Right** properties are updated automatically to reflect the current positions.
-
-   For more information about slice scaling, see [Sliced Image Type](/docs/user-guide/interactivity/user-interface/editor/component-9-sliced.md).
 
 1. Click **Save** to save your changes and close the **Sprite Editor**. Or click **Cancel** to revert your changes and close the **Sprite Editor**.
 

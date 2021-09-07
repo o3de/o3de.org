@@ -4,7 +4,7 @@ description: ' Use the Camera Rig component to add and remove behaviors to drive
 title: Camera Rig
 ---
 
-{{< preview-migrated >}}
+
 
 Use the **Camera Rig** component to add and remove behaviors to drive your camera entity. To use the camera component, you must first add the [Camera Framework Gem](/docs/user-guide/gems/reference/rendering/camera/) to your project.
 

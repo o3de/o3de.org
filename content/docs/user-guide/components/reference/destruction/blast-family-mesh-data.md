@@ -3,7 +3,7 @@ description: ' Learn about the Open 3D Engine Blast Family Mesh Data component. 
 title: Blast Family Mesh Data component
 ---
 
-{{< preview-migrated >}}
+
 
 
 With the **Blast Family Mesh Data** component, you can set the mesh and material assets for NVIDIA Blast entities. The **Blast Family Mesh Data** component is used with the **Blast Family** component. This topic describes the properties of the **Blast Family Mesh Data** component.

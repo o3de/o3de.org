@@ -194,11 +194,13 @@ Now you are ready to add secondary ("servant") parameter actions to the primary 
 ![Click Add action, Servant Parameter Action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-23.png)
 
 1. For **Servant Parameter Action**, in the **Trigger Mode** box, keep the default **On Enter**. **On Enter** specifies that the action is triggered when the state or transition is entered.
+
 ![Use On Enter for Trigger Mode.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-24.png)
 
 1. In the **Servant anim graph** box, click **Browse** (**...**) and choose the secondary animation graph that has the parameter that you want to use. This example chooses a secondary animation graph called **syncFeature\_Gun**.
 
 1. Click **Select parameter** to choose a parameter from the secondary animation graph that you just chose. This example chooses the **gunTrigger** parameter.
+
 ![Click Select parameter.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-25.png)
 ![Choose a parameter for the servant parameter action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-12.png)
 
@@ -206,6 +208,7 @@ Now you are ready to add secondary ("servant") parameter actions to the primary 
 ![Small square node indicating a parameter action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-26.png)
 
 1. For **Trigger value**, specify the value to emit when the action is triggered. Because **Trigger value** is treated as a single float, you can use it for float, Boolean, and integer parameters. This example specifies `1.0`, which is the value when the gun fires.
+
 ![Specify a trigger value.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-27.png)
 
 1. Click the line from **Motion0** to **Motion1** and repeat the steps to add a servant parameter action to the remaining transition line.
