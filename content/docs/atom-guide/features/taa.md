@@ -33,7 +33,7 @@ The following is a list of known issues and improvements for TAA:
 
 - TAA involves motion vectors, which when used on parallel occlusion mapping (POM) can cause blur in the resulting image. The reason is that motion vectors become more inaccurate the greater the depth offset is from POM. To reduce the blur, you can enable pixel depth offset, but it can impact performance.
 
-  - Additionally, transparencies don't write to motion vectors so transparent objects, such as particles, may have increased blur.
+  - Additionally, transparencies don't write to motion vectors, so transparent objects, such as particles, may have increased blur.
 
 - TAA can cause screen space ambient occlusion (SSAO) to produce flickering in the resulting image, especially when SSAO runs at half resolution. The reason is that TAA involves jittering the camera to collect samples in different parts of a pixel in each frame.
 
