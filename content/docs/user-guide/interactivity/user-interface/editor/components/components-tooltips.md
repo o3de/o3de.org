@@ -20,16 +20,16 @@ You can use a **Tooltip** component to provide the text of the tooltip. Add a to
 
 **To edit a tooltip component**
 
-1. In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Tooltip**.
+1. In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Tooltip**.
 
 1. Enter a text string.
 
 ## TooltipDisplay 
 
-The **TooltipDisplay** component defines the tooltip's display behavior. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip. You must also set the [**Tooltip display element**](/docs/userguide/ui/editor/canvas-properties#editor-properties-tooltips) property of the canvas to this element. For more information, see [Configuring Canvas Properties](/docs/user-guide/interactivity/user-interface/editor/canvas-properties.md).
+The **TooltipDisplay** component defines the tooltip's display behavior. Add a **TooltipDisplay** component to the element that is to visually represent the tooltip. You must also set the **Tooltip display element** property of the canvas to this element. For more information, see [Configuring Canvas Properties](/docs/user-guide/interactivity/user-interface/editor/canvas-properties).
 
 **To edit a TooltipDisplay component**
-+ In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **TooltipDisplay** and use the following settings, as appropriate:
++ In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **TooltipDisplay** and use the following settings, as appropriate:
 **Trigger Mode**
 Select a tooltip trigger condition:
   + **On Hover** - The tooltip appears when the pointer hovers over the interactive element, and disappears when the pointer moves off of the interactive element.

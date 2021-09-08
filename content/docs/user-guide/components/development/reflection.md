@@ -66,7 +66,7 @@ void MyComponent::Reflect(AZ::ReflectContext* context)
 
 The preceding example adds five data members to `MyComponent`. The first four data members will be serialized. The last data member will not be serialized because it contains only the runtime state. This is typical; components commonly contain some members that are serialized and others that are not.
 
-It is common for fields to be reflected for serialization, but not for editing, when using advanced reflection features such as [change callbacks](#component-entity-system-reflect-component-callbacks). In these cases, components may conduct complex internal calculations based on user property changes. The result of these calculations must be serialized but not exposed for editing. In such a case, you reflect the field to `SerializeContext` but do not add an entry in `EditContext`. An example follows:
+It is common for fields to be reflected for serialization, but not for editing, when using advanced reflection features such as [change notification callbacks](#change-notification-callbacks). In these cases, components may conduct complex internal calculations based on user property changes. The result of these calculations must be serialized but not exposed for editing. In such a case, you reflect the field to `SerializeContext` but do not add an entry in `EditContext`. An example follows:
 
 ```
 serialize->Class<MyComponent>()
@@ -111,7 +111,7 @@ The following code dynamically casts the anonymous context provided to a seriali
 AZ::SerializeContext* serialize = azrtti_cast<AZ::SerializeContext*>(context);
 ```
 
-## Serialization 
+## Serialization
 
  Reflecting a class for serialization involves a [builder pattern](https://en.wikipedia.org/wiki/Builder_pattern) style markup in C++, as follows:
 
@@ -140,7 +140,7 @@ The preceding example reflects two primitive types-a float, and a string-as well
 **Note**
 The example omits the reflection code for `SomeClassThatSomeoneHasReflected`. However, you need only reflect the class. After that, you can freely reflect members or containers of that class in other classes.
 
-## Editing 
+## Editing
 
 When you run O3DE tools such as O3DE Editor, an `EditContext` and a `SerializeContext` are provided. You can use the robust facilities in these contexts to expose your fields to content creators.
 
@@ -179,7 +179,7 @@ The `AZ::Edit::UIHandlers::Slider` UI handler expects `AZ::Edit::Attributes::Min
 **Note**
 The property system supports external UI handlers, so you can implement your own UI handlers in your own modules. You can customize the behavior of the field, the `Qt` control that it uses, and the attributes that it observes.
 
-## Attributes 
+## Attributes
 
 The example also demonstrates the use of attributes. Attributes are a generic construct on the edit context that allows the binding of literals, or functions that return values, to a named attribute. UI handlers can retrieve this data and use it to drive their functionality.
 
@@ -200,7 +200,7 @@ Static or global functions
 Member functions
 `Attribute(AZ::Edit::Attributes::ChangeNotify, &MyComponent::SomeMemberFunction)`
 
-## Change Notification Callbacks 
+## Change Notification Callbacks {#change-notification-callbacks}
 
 Another commonly used feature of the edit context is its ability to bind a change notification callback:
 

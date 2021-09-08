@@ -328,10 +328,6 @@ The reader should proceed with caution.
 Important information the reader must heed.
 {{< /important >}}
 
-{{< preview-new >}}
-
-{{< preview-migrated >}}
-
 {{< todo issue="https://github.com/o3de/o3de.org/issues/432" >}}
 Indicates a section needs work, followed by a description of the task and a link to the issue in GitHub.
 {{< /todo >}}
