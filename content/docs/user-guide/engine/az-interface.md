@@ -13,7 +13,7 @@ A system is an instance of a class that inherits the `Registrar` method from `AZ
 *Systems*, in this usage, are key parts of O3DE. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system. With `AZ::Interface`, you access these systems with this simplified syntax:
  `AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
 For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
-Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](/docs/userguide/az-console.md).
+Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](./az-console/).
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
 + Improved performance. Calls to the singleton are a virtual function call that can often even be de-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call.

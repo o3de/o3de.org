@@ -3,7 +3,7 @@ description: ' Use the Actor component to add an actor file to your entity in Op
 title: Actor
 ---
 
-{{< preview-migrated >}}
+
 
 You can use the **Actor** component to create characters for your game. After you import your character files from your DCC tool into O3DE, you can create an entity and add the **Actor** component to it. For example, you must use an **Actor** component to create a controllable character for your game.
 

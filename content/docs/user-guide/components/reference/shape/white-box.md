@@ -4,7 +4,7 @@ description: ' Use the White Box component to quickly sketch geometry for entiti
 title: 'White Box component'
 ---
 
-{{< preview-migrated >}}
+
 
 
 The **White Box** component is a tool you can use to sketch 3D proxy meshes in O3DE Editor. Add the **White Box** component to an entity, select a primitive shape to use as a basis for your proxy mesh, then enter edit mode to access the tools to quickly rough out a mesh for your entity.

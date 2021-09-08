@@ -17,10 +17,10 @@ To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExa
 You can add a prebuilt **Layout Grid** element from the slice library. When you do this, a simple layout grid is automatically created and nested in your **Hierarchy** pane.
 
 **To add a Layout Grid element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **LayoutGrid**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **LayoutGrid**.
 
 **To edit a layout grid component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **LayoutGrid** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutGrid** and do the following, as appropriate:
 ****Padding****
 Type values in pixels, relative to the element's borders.
 ****Spacing****

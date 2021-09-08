@@ -13,17 +13,17 @@ Follow all the steps in the following procedure if you need to create a canvas t
 
 **To place a UI canvas on an object in the 3D world**
 
-1. [Create your UI canvas file](/docs/user-guide/interactivity/user-interface/editor/creating-canvases.md). In the [canvas properties](/docs/user-guide/interactivity/user-interface/editor/canvas-properties.md), select **Render to texture** and enter a name in the **Render target** text box. You can enter any name, but the convention is to prefix the name with the `$` character to distinguish it from other texture assets.
+1. [Create your UI canvas file](/docs/user-guide/interactivity/user-interface/editor/creating-canvases). In the [canvas properties](/docs/user-guide/interactivity/user-interface/editor/canvas-properties), select **Render to texture** and enter a name in the **Render target** text box. You can enter any name, but the convention is to prefix the name with the `$` character to distinguish it from other texture assets.
 
-1. In the level, create a [component entity](/docs/userguide/creating-entity.md).
+1. In the level, create a component entity.
 
-1. In the **Entity Inspector**, [add to this component entity](/docs/userguide/creating-adding-components.md) a **UI Canvas Asset Ref** to specify the UI canvas and optionally to load it automatically when the level loads.
+1. In the **Entity Inspector**, add to this component entity a **UI Canvas Asset Ref** to specify the UI canvas and optionally to load it automatically when the level loads.
 
-1. In the [**Material Editor**](/docs/userguide/materials/surface-types.md), create a material that uses the render target texture that is rendered by your canvas. Under **Texture Maps**, for **Diffuse**, specify the texture file name.
+1. In the [**Material Editor**](/docs/atom-guide/look-dev/materials/material-editor/), create a material that uses the render target texture that is rendered by your canvas. Under **Texture Maps**, for **Diffuse**, specify the texture file name.
 
-1. Add a [Mesh](/docs/userguide/components/static-mesh.md) component to the component entity and choose the mesh asset onto which you want to map your canvas. Use the **Material override property** to select the material that you created.
+1. Add a Mesh component to the component entity and choose the mesh asset onto which you want to map your canvas. Use the **Material override property** to select the material that you created.
 
-1. Add a **[Mesh Collider](/docs/userguide/components/physics-mesh-collider)** and a **Static Physics** component. Physics is required on this entity because a ray cast is used to translate a mouse or touch input into a position on the UI canvas that is at that point in the world.
+1. Add a **Mesh Collider** and a **Static Physics** component. Physics is required on this entity because a ray cast is used to translate a mouse or touch input into a position on the UI canvas that is at that point in the world.
 
 1. Add a **UI Canvas on Mesh** component. Type a canvas name in the **Render target override** property if you want to load several instances of the UI canvas on different meshes and have them display different states. Otherwise, leave this property blank.
 
