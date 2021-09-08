@@ -9,7 +9,7 @@ guide_img: "/images/welcome-guide/guide_img.png"
 primary: true
 ---
 
-**Welcome to Open 3D Engine (O3DE)!**
+**Welcome to Open 3D Engine (O3DE)!!**
 
 O3DE is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. Check out the video below for a quick overview of some of O3DE's biggest features. Then, read on to get set up and start creating with O3DE!
 
