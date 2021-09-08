@@ -23,7 +23,3 @@ You can enable `ContrastAdaptiveSharpening.pass` in the main render pipeline thr
 You can also add `ContrastAdaptiveSharpening.pass` to a custom pipeline. 
 
 To use CAS with TAA to improve the quality of your image, run the `ContrastAdaptiveSharpening.pass` after the `Taa.pass`.
-
-## Issues and improvements
-
-In the future, **O3DE Editor** will support a CAS component, making it easier to configure CAS in your scene.

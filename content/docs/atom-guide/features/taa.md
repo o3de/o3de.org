@@ -21,20 +21,3 @@ toc: true
 You can enable `Taa.pass` in the main render pipeline through the parent pass, `PostProcessParent.pass`. By default, TAA is disabled. To enable it, set `Enabled` to `true` in the parent pass.
 
 You can also add `Taa.pass` to a custom pipeline.
-
-
-## Issues and improvements
-
-The following is a list of known issues and improvements for TAA:
-
-- TAA can cause Bloom to produce flickering in the resulting image.
-
-- TAA can cause Aux-Geom to produce jittering in the resulting image. The reason is that Aux-Geom uses the jittered view but applies it after TAA runs. Therefore, we recommend running TAA in Game mode rather than in Edit mode.
-
-- TAA involves motion vectors, which when used on parallel occlusion mapping (POM) can cause blur in the resulting image. The reason is that motion vectors become more inaccurate the greater the depth offset is from POM. To reduce the blur, you can enable pixel depth offset, but it can impact performance.
-
-  - Additionally, transparencies don't write to motion vectors, so transparent objects, such as particles, may have increased blur.
-
-- TAA can cause screen space ambient occlusion (SSAO) to produce flickering in the resulting image, especially when SSAO runs at half resolution. The reason is that TAA involves jittering the camera to collect samples in different parts of a pixel in each frame.
-
-- In the future, **O3DE Editor** will support a TAA component, making it easier to configure TAA in your scene.
