@@ -16,7 +16,7 @@ You can open the **Animation Editor** from O3DE Editor.
 **To open the Animation Editor**
 + From O3DE Editor, choose **Tools**, **Animation Editor**.
 
-![\[View the user interface for the Animation Editor in O3DE Editor.\]](/images/user-guide/actor-animation/animation-editor-jack-user-interface.png)
+![View the user interface for the Animation Editor in O3DE Editor.](/images/user-guide/actor-animation/animation-editor-jack-user-interface.png)
 
 On the **Animation Editor**, you can do the following:
 

@@ -21,4 +21,4 @@ See the following main sections of the Track View:
 **Note**
 You can pause over buttons in the Track View to view their descriptions.
 
-![\[Track View toolbar.\]](/images/user-guide/cinematics/cinematics-trackview-editor.png)
+![Track View toolbar.](/images/user-guide/cinematics/cinematics-trackview-editor.png)

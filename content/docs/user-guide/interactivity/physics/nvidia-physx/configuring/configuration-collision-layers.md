@@ -22,7 +22,7 @@ The layers that you define are specific to your game. When a collider is created
 1. Click the **Layers** tab.
 
 1. Type the name of the layer into an available text field. Layer names must be 32 characters or less.
-![\[Creating Layers in the PhysX Configuration tool.\]](/images/user-guide/physx/physx-configuration-2.png)
+![Creating Layers in the PhysX Configuration tool.](/images/user-guide/physx/physx-configuration-2.png)
 
 **To assign a collision layer to a collider**
 
@@ -31,7 +31,7 @@ The layers that you define are specific to your game. When a collider is created
 1. In the **Entity Inspector**, add a **PhysX Collider** component to the entity.
 
 1. In the **PhysX Collider** component, for **Collision Layer**, choose one of the colliders that you created from the drop-down list.
-![\[The PhysX Collider component in the Entity Inspector.\]](/images/user-guide/physx/physx-configuration-3.png)
+![The PhysX Collider component in the Entity Inspector.](/images/user-guide/physx/physx-configuration-3.png)
 
 ## Notes 
 + If you rename a layer, its references are updated automatically, but you can't reorder layers.

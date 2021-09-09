@@ -11,7 +11,7 @@ The following examples demonstrate how to apply these styles.
 
 ## Scrollbar display modes<a name="scrollbar-display-modes"></a>
 
-![\[component scrollbar display modes\]](/images/tools-ui/component-scrollbar-display-modes.gif)
+![component scrollbar display modes](/images/tools-ui/component-scrollbar-display-modes.gif)
 
 Use `AzQtComponents::ScrollBar::setDisplayMode` to set the scrollbar display mode. The default mode is `AlwaysShow`.
 

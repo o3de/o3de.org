@@ -12,4 +12,4 @@ All of the interactive components share a common set of properties. These proper
 + [**Auto Activate**](/docs/user-guide/interactivity/user-interface/editor/components/components-autoactivate) - Check box or flag that determines whether the element is automatically activated when the player pauses on the element.
 + [**Actions**](/docs/user-guide/interactivity/user-interface/editor/components/components-actions) - Events that are caused by the listed action.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-interactive-properties.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-interactive-properties.png)
