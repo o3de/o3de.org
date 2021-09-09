@@ -34,7 +34,7 @@ For example, you can ensure an element remains full screen regardless of the scr
        
 
    1. Anchor all of the element's edges to the parent. The horizontal and vertical size adjusts to parent. You can use this anchor preset to place an element that remains full screen, regardless of a change in resolution. This applies if the canvas is its parent.
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-presets-1.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-presets-1.png)
 
 **To further edit (fine tune) an element's anchors**
 In the **Properties** pane, under **Transform2D**, do the following for **Anchors**, as appropriate:
@@ -47,7 +47,7 @@ The anchors' positions can be visualized as points on a grid, plotted in percent
 
 But if, for example, you want the element's left and right edges to each remain at a fixed percentage relative to its parent and to change size as its parent changes size, then make the numbers different. In this case, the anchors are called split.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-percent.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-percent.png)
 
 **To edit an element's position and size**
 In the **Properties** pane, under **Transform2D**, modify the **Offsets**, as appropriate:
@@ -93,4 +93,4 @@ The layout column of buttons has the following settings.
 | Pivot | Default settings: X = 0.5, Y = 0.5 |
 | Scale to device | None (not selected) |
 
-![\[Using anchors to resize buttons to stay on the screen.\]](/images/user-guide/game_ui_editor/ui-editor-transform-scale-3.gif)
+![Using anchors to resize buttons to stay on the screen.](/images/user-guide/game_ui_editor/ui-editor-transform-scale-3.gif)

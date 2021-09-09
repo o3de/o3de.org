@@ -8,13 +8,13 @@ You can use the **Draggable** component to make a UI element movable from one lo
 
 Because drag-and-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C++ to define actions that result from the drag and the drop.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-draggable.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-draggable.gif)
 
 To add the draggable component to a UI element, use the **Add Component** menu in the **Properties** pane.
 
 The following picture shows an example of a **Draggable** component, where color has been added to the state actions for **Drag States**.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
 
 The **Draggable** component is an interactive component. It has the standard [interactive properties](components-interactive-properties).
 

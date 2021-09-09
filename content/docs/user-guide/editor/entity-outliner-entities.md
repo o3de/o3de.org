@@ -12,15 +12,15 @@ When you create entities or instantiate slices, they appear at the bottom of the
 
 1. To move an entity, right-click an entity and choose **Move up** or **Move down**.
 
-   ![\[Move an entity up and down the Entity Outliner.\]](/images/user-guide/component/entity_system/component-entity-outliner-reorder.png)
+   ![Move an entity up and down the Entity Outliner.](/images/user-guide/component/entity_system/component-entity-outliner-reorder.png)
 
 1. You can also drag and drop one or more entities into the preferred order. Select and drag the entity until a white line appears in your preferred location.
 
-   ![\[Drag and drop to reorder an entity.\]](/images/user-guide/component/entity_system/component-entity-outliner-reorder-drag-drop.png)
+   ![Drag and drop to reorder an entity.](/images/user-guide/component/entity_system/component-entity-outliner-reorder-drag-drop.png)
 
 1. To make an entity the child of another entity, select and drag the entity to its intended parent. A white box appears around the parent entity.
 
-   ![\[Drag and drop to parent an entity.\]](/images/user-guide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
+   ![Drag and drop to parent an entity.](/images/user-guide/component/entity_system/component-entity-outliner-parenting-drag-drop.png)
 
 ## Hiding and Showing Entities 
 
@@ -32,7 +32,7 @@ You can hide entities so that they don't appear in the viewport, so that the vie
 
 1. To show the entity, click the icon again.
 
-   ![\[Hide and show entities in the viewport.\]](/images/user-guide/component/entity_system/component-entity-outliner-hiding.png)
+   ![Hide and show entities in the viewport.](/images/user-guide/component/entity_system/component-entity-outliner-hiding.png)
 
 ## Locking Entities 
 
@@ -42,7 +42,7 @@ You can lock entities so that they can't be selected in the viewport, so that yo
 
 1. In the **Entity Outliner**, click the lock icon next to the entity. The icon appears white when the entity is locked.
 
-   ![\[Lock entities in the Entity Outliner so that that can't be selected in the viewport.\]](/images/user-guide/component/entity_system/component-entity-outliner-locking.png)
+   ![Lock entities in the Entity Outliner so that that can't be selected in the viewport.](/images/user-guide/component/entity_system/component-entity-outliner-locking.png)
 
 1. To unlock the entity, click the lock icon again.
 
@@ -61,7 +61,7 @@ For levels that have many entities, you can search and filter for the entities t
 
    The entities that appear have either the **Camera** or the **Trigger Area** components attached.
 
-   ![\[Search for entities in the Entity Outliner.\]](/images/shared/shared-entity-outliner-search-filter.png)
+   ![Search for entities in the Entity Outliner.](/images/shared/shared-entity-outliner-search-filter.png)
 
 1. To clear search results, click **Clear**.
 
@@ -74,7 +74,7 @@ You can also sort entities so that they appear in the order that you want in the
 
 1. In the **Entity Outliner**, click the sort icon.
 
-   ![\[Sort entities in the Entity Outliner.\]](/images/shared/shared-entity-outliner-sort-filter.png)
+   ![Sort entities in the Entity Outliner.](/images/shared/shared-entity-outliner-sort-filter.png)
 
 1. Choose the following options:
 
@@ -90,12 +90,12 @@ You can also select an entity in the **Entity Outliner** to find it in the viewp
 
 1. In the **Entity Outliner**, right-click an entity and choose **Find in viewport**. The viewport navigates to the corresponding entity.
 
-   ![\[Find slices or entities in the viewport from the Entity Outliner.\]](/images/shared/shared-search-find-in-outliner.png)
+   ![Find slices or entities in the viewport from the Entity Outliner.](/images/shared/shared-search-find-in-outliner.png)
 
 1. In the **Entity Outliner**, right-click the slice or slice entity and choose **Find slice in Asset Browser**. The **Asset Browser** navigates to the corresponding slice.
 
-   ![\[Find entities or slices in the Asset Browser from the Entity Outliner.\]](/images/shared/shared-component-entity-outliner-search-find-in-asset-browser.png)
+   ![Find entities or slices in the Asset Browser from the Entity Outliner.](/images/shared/shared-component-entity-outliner-search-find-in-asset-browser.png)
 
 1. In the viewport, right-click a slice or entity and choose **Find in Entity Outliner**. The **Entity Outliner** navigates to the corresponding item.
 
-   ![\[Find entities in the Entity Outliner from the viewport.\]](/images/shared/shared-viewport-search-find-in-outliner.png)
+   ![Find entities in the Entity Outliner from the viewport.](/images/shared/shared-viewport-search-find-in-outliner.png)

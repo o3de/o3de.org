@@ -19,7 +19,7 @@ You can configure the virtual gamepad's behavior in UI Editor. To configure virt
 
 1. For each component, select an **Input Channel**.
 
-![\[Input Channel selection for the VirtualGamepadButton\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
+![Input Channel selection for the VirtualGamepadButton](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
 
 For more information about input in O3DE, see Input in Open 3D Engine.
 

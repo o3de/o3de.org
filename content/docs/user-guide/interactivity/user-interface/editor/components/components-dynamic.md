@@ -14,7 +14,7 @@ To use the **DynamicLayout** component, you place it on an element that also has
 
 The layout element (1) dynamically resizes to fit its child elements. The first child (2) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-child.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-child.png)
 
 The automatic resizing of the layout element depends on the layout type.
 
@@ -22,7 +22,7 @@ For [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/comp
 
 For a [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-grid) element, the cell size of the **LayoutGrid** component determines the size of the child elements. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row. If set to **vertical**, the initial height is used to determine how many children fit in each column.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
 
 **To use a dynamic layout component**
 

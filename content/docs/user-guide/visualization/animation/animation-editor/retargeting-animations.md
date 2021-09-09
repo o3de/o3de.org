@@ -47,7 +47,7 @@ If you receive an error, check the number of keyframes in your motion, and updat
 {{< /note >}}
 
    The frame settings are shown in the following example:
-![\[Specify the motion range keyframe for your actor's motion in the O3DE Animation Editor\]](/images/user-guide/actor-animation/retarget-animations-fbx-settings-motion-range-modifier.png)
+![Specify the motion range keyframe for your actor's motion in the O3DE Animation Editor](/images/user-guide/actor-animation/retarget-animations-fbx-settings-motion-range-modifier.png)
 
 1. Repeat steps 1 to 5 for all of the motions that you want to retarget.
 
@@ -56,7 +56,8 @@ If you receive an error, check the number of keyframes in your motion, and updat
 1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](/docs/user-guide/visualization/animation/animation-editor/animation-graph-user-interface.md).
 
 1. In the right pane, on the **Attributes** tab, select the **Retarget** check box.
-![\[Select the Retarget check box for your animation graph in the O3DE Animation Editor\]](/images/user-guide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)
+
+    ![Select the Retarget check box for your animation graph in the O3DE Animation Editor](/images/user-guide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)
 
     {{< note >}}
 You can also toggle the retarget feature on the **Motion**, **Blend Space 1D**, and **Blend Space 2D** nodes.

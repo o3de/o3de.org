@@ -12,12 +12,12 @@ When you enable mip maps in O3DE, Resource Compiler automatically generates six 
 **Example**
 If your original image is 1024x1024, then you will have mip maps that are 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32.
 
-![\[For an image with a resolution of 1024x1024, the generated mip maps will be 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-1.png)
+![For an image with a resolution of 1024x1024, the generated mip maps will be 1024x1024, 512x512, 256x256, 128x128, 64x64, and 32x32.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-1.png)
 
 **Example**
 If your original image is 4096x4096, then you will have mip maps that are 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128.
 
-![\[For an image with a resolution of 4096x4096, the generated mip maps will be 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-2.png)
+![For an image with a resolution of 4096x4096, the generated mip maps will be 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-2.png)
 
 {{< note >}}
 For most of the existing presets, mip maps are enabled by default. If you create your own presets, you must enable mip maps.
@@ -25,7 +25,7 @@ For most of the existing presets, mip maps are enabled by default. If you create
 
 If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**, **none (0)** appears.
 
-![\[If mip maps are not enabled for a particular image processing preset, then under Mip Control, Mip maps, none (0) appears.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-3.png)
+![If mip maps are not enabled for a particular image processing preset, then under Mip Control, Mip maps, none (0) appears.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-3.png)
 
 **To enable mip maps for an image processing preset**
 
@@ -64,4 +64,4 @@ You can adjust the Alpha Test value for each mip map in the **MIP Control** tab 
 1. For each mip map, adjust the sliders or enter a number in the box.
 
 1. Select **Maintain alphatest coverage** to maintain shape and opacity from a distance when working with certain types of objects, such as leaves on a tree. If you don't select this option, the tree leaves may lose their silhouette in the lower resolution mip maps.
-![\[Select the MIP Control tab and adjust the sliders or enter a number to define the AlphaTest value for each mip map.\]](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-alphatest.png)
+![Select the MIP Control tab and adjust the sliders or enter a number to define the AlphaTest value for each mip map.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-alphatest.png)

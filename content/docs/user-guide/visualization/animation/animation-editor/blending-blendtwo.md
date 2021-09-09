@@ -19,10 +19,10 @@ The **Blend Two** is similar to the **Blend Two Additive** node, except that it 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 
 1. Drag the **Blend Two** node into the animation graph.
-![\[On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two into the animation graph.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-animgraphpalette-blendtwo.png)
+![On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two into the animation graph.](/images/user-guide/actor-animation/char-animation-editor-blendposes-animgraphpalette-blendtwo.png)
 
 1.
-![\[Blend Two node on the animation graph with inputs and outputs exposed.\]](/images/user-guide/actor-animation/char-animation-editor-blendposes-inoutputs-blendtwo.png)
+![Blend Two node on the animation graph with inputs and outputs exposed.](/images/user-guide/actor-animation/char-animation-editor-blendposes-inoutputs-blendtwo.png)
 
    Connect nodes to the following inputs and output:
    + **Pose 1** - The first pose.

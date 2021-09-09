@@ -42,10 +42,10 @@ If the source of the generated asset is not obvious, you can use the asset datab
 **To look up a job that generates an asset**
 
 1. In the **Products** table, search for the asset that you want to update to emit a dependency. The following example search for a material uses [DB Browser for SQLite](https://sqlitebrowser.org/) to explore the asset database:
-![\[Searching for an asset in the Products table.\]](/images/user-guide/assetbundler/asset-bundler-assets-resolving-1.png)
+![Searching for an asset in the Products table.](/images/user-guide/assetbundler/asset-bundler-assets-resolving-1.png)
 
 1. Look up the `JobPK` value in the **Jobs** table, as in the following example:
-![\[Looking up a value in the asset database Jobs table.\]](/images/user-guide/assetbundler/asset-bundler-assets-resolving-2.png)
+![Looking up a value in the asset database Jobs table.](/images/user-guide/assetbundler/asset-bundler-assets-resolving-2.png)
 
 1. Look up the `JobKey` or `BuilderGuid` in your code base.
 

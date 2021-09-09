@@ -7,7 +7,7 @@ toc: true
 
 A **reflected property editor** automatically lays out controls for user-editable properties that are reflected using the edit context. It is frequently used as a content widget to populate [card](uidev-card-component.md) components.
 
-![\[component reflected property editor in card\]](/images/tools-ui/component-reflected-property-editor-in-card.png)
+![component reflected property editor in card](/images/tools-ui/component-reflected-property-editor-in-card.png)
 
 For more information about reflecting and the edit context, see the **O3DE User Guide** topic on [Reflecting a Component for Serialization and Editing](/docs/user-guide/components/development/reflection/).
 

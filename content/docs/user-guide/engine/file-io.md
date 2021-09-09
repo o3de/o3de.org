@@ -160,7 +160,7 @@ Specifies the location of your game project's assets directory in the source tre
 
 To service the needs of the game client and tools, more than one `FileIO` instance is created. These instances form a stack through which file requests flow, as the following diagram illustrates.
 
-![\[File access in local and remote scenarios\]](/images/user-guide/file-access-direct-1.png)
+![File access in local and remote scenarios](/images/user-guide/file-access-direct-1.png)
 
 The behavior of the **Either/Or** branch depends on whether the virtual file system (VFS) feature \(`RemoteFileIO` in the diagram\) is enabled. VFS reads assets remotely from non-PC devices such as Android and iOS, allowing for the live reloading of assets. Otherwise, assets would need to be deployed directly onto game devices. VFS is disabled by default. To enable VFS, edit the `remote_filesystem` entry of the `\dev\bootstrap.cfg` configuration file, as in the following example.
 

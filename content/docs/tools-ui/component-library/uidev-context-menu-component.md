@@ -7,7 +7,7 @@ toc: true
 
 A context menu (also called contextual or pop-up menu) appears upon user interaction, such as a right-click mouse operation. Use a context menu to offer users a limited set of choices that are related to the current state, or context, of the component to which the menu belongs. Typically, the available choices are actions related to the selected object.
 
-![\[component context menu style\]](/images/tools-ui/component-context-menu-style.png)
+![component context menu style](/images/tools-ui/component-context-menu-style.png)
 
 ## Usage guidelines<a name="context-menu-usage"></a>
 
@@ -28,7 +28,7 @@ Avoid these design choices when using context menus:
 
 ## Basic context menu<a name="context-menu-basic"></a>
 
-![\[component context menu basic\]](/images/tools-ui/component-context-menu-basic.png)
+![component context menu basic](/images/tools-ui/component-context-menu-basic.png)
 
 Context menus are based on the `QMenu` Qt widget. You can create one in Qt Designer or in your code. You can also modify them in code at runtime.
 

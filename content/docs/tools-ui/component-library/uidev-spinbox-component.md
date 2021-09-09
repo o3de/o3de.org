@@ -17,7 +17,7 @@ In scenarios where you would use the spinbox, also consider using the [slider co
 
 Spinboxes provide the user with a variety of controls for entering or changing their numerical value.
 
-![\[component spinbox anatomy\]](/images/tools-ui/component-spinbox-anatomy.png)
+![component spinbox anatomy](/images/tools-ui/component-spinbox-anatomy.png)
 
 1.  **Input box value**
 
@@ -37,7 +37,7 @@ Spinboxes provide the user with a variety of controls for entering or changing t
 
 ## Basic spinbox<a name="spinbox-basic"></a>
 
-![\[component spinbox basic\]](/images/tools-ui/component-spinbox-basic.png)
+![component spinbox basic](/images/tools-ui/component-spinbox-basic.png)
 
 The following example demonstrates the creation of a simple, double spinbox.
 

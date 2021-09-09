@@ -36,7 +36,7 @@ Raycast queries are the most common scene query, based on firing a ray from a st
 **Example**
 The raycast query intersects the pentagon only.
 
-![\[Raycast query example in PhysX world.\]](/images/user-guide/physx/physx-raycast-shape-cast-queries-2.png)
+![Raycast query example in PhysX world.](/images/user-guide/physx/physx-raycast-shape-cast-queries-2.png)
 
 A raycast query is specified using an `AzPhysics::RayCastRequest`.
 
@@ -99,7 +99,7 @@ A shapecast query is similar to a raycast query except that a shapecast query ta
 **Example**
 The shapecast query is in the shape of a sphere and intersects with the rectangle and pentagon entities.
 
-![\[Shapecast query example in PhysX.\]](/images/user-guide/physx/physx-raycast-shape-cast-queries-3.png)
+![Shapecast query example in PhysX.](/images/user-guide/physx/physx-raycast-shape-cast-queries-3.png)
 
 A raycast query is specified using an `AzPhysics::ShapeCastRequest`.
 

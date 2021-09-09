@@ -16,7 +16,7 @@ Physics materials define how a PhysX collider reacts to collisions through prope
 
 ## Physics material properties 
 
-![\[Physics material interface.\]](/images/user-guide/physx/physx/ui-physx-material-A.png)
+![Physics material interface.](/images/user-guide/physx/physx/ui-physx-material-A.png)
 
 ****Name****
 Name of the physics material.
@@ -72,10 +72,10 @@ Physics materials define the physical properties of PhysX colliders. To create p
 1. Choose Asset Editor from the **Tools** menu.
 
 1. In the Asset Editor, choose **New**, **Physics Material** from the **File** menu to create a new physics material library.
-![\[Create a physics material library in the Asset Editor.\]](/images/user-guide/physx/physx/ui-physx-material-B.png)
+![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-B.png)
 
 1. Create a physics material in the library by clicking the **+** on the right.
-![\[Create a physics material library in the Asset Editor.\]](/images/user-guide/physx/physx/ui-physx-material-C.png)
+![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-C.png)
 
 1. Name the physics material by editing the **Name** property. Set the material properties as desired.
 
@@ -88,13 +88,13 @@ You can add additional physics materials to the library by repeating the precedi
 ## Assign a physics material library 
 
 Your project has the physics material library set in **PhysX Configuration**. To change the physics material library, choose **PhysX Configuration** from the **Tools** menu. In the **Global Configuration** tab, click the button to the right of **Physics Material Library** to change the library.
-![\[PhysX Configuration, physics material library.\]](/images/user-guide/physx/physx/ui-physx-material-D.png)
+![PhysX Configuration, physics material library.](/images/user-guide/physx/physx/ui-physx-material-D.png)
 
 PhysX collider components use the physics material library that is assigned to PhysX Configuration.
 
 You can specify the paremeter of the **Default Physics Material** in **PhysX Configuration**, which is the default option used before physics materials are assigned in PhysX collider components.
 
-![\[PhysX Configuration, default physics material.\]](/images/user-guide/physx/physx/ui-physx-material-E.png)
+![PhysX Configuration, default physics material.](/images/user-guide/physx/physx/ui-physx-material-E.png)
 
 ## Assign a physics material 
 
@@ -102,7 +102,7 @@ Physics materials can be assigned to entire PhysX colliders, or on a per-face ba
 
 When the **Physics Asset** shape is selected in **PhysX Collider** component, and the **Physics Materials from Asset** property is enabled, the physics materials for this collider are automatically set based on the Physics Materials from the mesh's PhysX asset (see [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)). To manually set the physics materials, uncheck the **Physics Materials from Asset** property and select the physics materials from the **Physics Materials** property list to assign it.
 
-![\[PhysX Collider, setting the physics materials.\]](/images/user-guide/physx/physx/ui-physx-material-F.png)
+![PhysX Collider, setting the physics materials.](/images/user-guide/physx/physx/ui-physx-material-F.png)
 
 ### Assign physics materials per face 
 
@@ -112,8 +112,8 @@ For more information on creating PhysX mesh assets, see [FBX Settings PhysX expo
 
 In the example below, the PhysX mesh asset was authored with six materials in the content creation application: *Yellow*, *Red*, *Blue*, *Teal*, *Green* and *Orange*. In FBX Settings, under PhysX tab, a physics material can be assigned to each material.
 
-![\[PhysX Collider, per face physics materials.\]](/images/user-guide/physx/physx/ui-physx-material-G.png)
+![PhysX Collider, per face physics materials.](/images/user-guide/physx/physx/ui-physx-material-G.png)
 
 In PhysX Component, when **Physics Materials from Asset** property is disabled, a physics material can be manually assigned to each material. When **Physics Materials from Asset** property is enabled the physics materials assigned in FBX Settings will be used automatically.
 
-![\[PhysX Collider, per face physics materials.\]](/images/user-guide/physx/physx/ui-physx-material-H.png)
+![PhysX Collider, per face physics materials.](/images/user-guide/physx/physx/ui-physx-material-H.png)

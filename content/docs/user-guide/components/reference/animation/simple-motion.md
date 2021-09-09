@@ -12,7 +12,7 @@ For creating cinematics with the **Simple Motion** component, see [Creating Char
 
 ## Simple Motion Component Properties 
 
-![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/user-guide/component/component-simple-motion-properties.png)
+![Add the Simple Motion component to an entity to assign a motion for the actor.](/images/user-guide/component/component-simple-motion-properties.png)
 
 
 ****
