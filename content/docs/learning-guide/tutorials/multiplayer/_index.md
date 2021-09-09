@@ -1,11 +1,13 @@
 ---
 linkTitle: Multiplayer
-title: Building Multiplayer Experiences in Open 3D Engine
-description: Open 3D Engine comes with Multiplayer supports via Multiplayer Gem and AzNetwork interfaces.
+title: Multiplayer Tutorials
+description: Learn to add Multiplayer support to your Open 3D Engine (O3DE) projects.
 weight: 100
 menu_uuid: Multiplayer
 ---
 
-This section contains tutorials on setting up multiplayer components in C++ using the Multiplayer Gem. For additional information, refer to the [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer/) reference.
+This section contains step-by-step tutorials related to multiplayer in Open 3D Engine (O3DE).
 
-* [Tutorial: Your First Network Component](first-multiplayer-component) - Your introductory step-by-step guide to creating multiplayer components in C++.
+| Tutorial | Description |
+| - | - |
+| [Your First Network Component](first-multiplayer-component) | Create multiplayer components with C++ in this introduction to network components. |
