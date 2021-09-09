@@ -60,7 +60,7 @@ You must include the AWS GameLift Gem static library in your project's CMake bui
     )
     ```
    
-2. **(Required)** In order to make sure Amazon GameLift Server SDK get initiated correctly before your project server starts, you must mark `AWSGameLiftServerService` as required for your project server system component.
+2. **(Required)** To ensure that the Amazon GameLift Server SDK gets initialized correctly, you must mark `AWSGameLiftServerService` as required for your project server system component.
 
    ```cpp
     void YourProjectServerSystemComponent::GetRequiredServices(AZ::ComponentDescriptor::DependencyArrayType& required)

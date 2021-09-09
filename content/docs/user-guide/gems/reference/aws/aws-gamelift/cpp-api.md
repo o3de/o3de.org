@@ -61,13 +61,13 @@ Searches and retrieves all active sessions that match the provided search criter
 To search for sessions, call `AWSGameLiftClientManager::SearchSessions()` or `AWSGameLiftClientManager::SearchSessionsAsync()` and pass in a reference to the search request, which contains the search criteria. When the search is completed, you can iterate through `SessionConfigs` from `SearchSessionsResponse`.
 
 ```cpp
-// For example, make synchronous call to search active game sessions on specific fleet
+// For example, make synchronous call to search active game sessions on a specific fleet
 AWSGameLift::AWSGameLiftSearchSessionsRequest request;
 request.m_fleetId = "YourGameLiftFleetId";
 AzFramework::SearchSessionsResponse result;
 AWSGameLift::AWSGameLiftSessionRequestBus::BroadcastResult(result, &AWSGameLift::AWSGameLiftSessionRequestBus::Events::SearchSessions, request);
 
-// For example, make asynchronous call to search active game sessions on specific fleet and get response from notification
+// For example, make asynchronous call to search active game sessions on a specific fleet and get response from notification
 AWSGameLift::AWSGameLiftSearchSessionsRequest request;
 request.m_fleetId = "YourGameLiftFleetId";
 AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Events::SearchSessionsAsync, request);
@@ -85,14 +85,14 @@ Reserves an open player slot in the game session, and initializes a connection f
 To begin the process that allows a player to join the game, call `AWSGameLiftClientManager::JoinSession()` or `AWSGameLiftClientManager::JoinSessionAsync()`, and pass in the game session id and the player id that will join. The process returns `true` if both steps, reserving player slot and initializing connection, succeed. If either step fails, the process returns `false`.
 
 ```cpp
-// For example, make synchronous call to join specific session
+// For example, make synchronous call to join a specific session
 AWSGameLift::AWSGameLiftJoinSessionRequest request;
 request.m_sessionId = "YourGameSessionId";
 request.m_playerId= "YourPlayerId";
 bool result = false;
 AWSGameLift::AWSGameLiftSessionRequestBus::BroadcastResult(result, &AWSGameLift::AWSGameLiftSessionRequestBus::Events::JoinSession, request);
 
-// For example, make asynchronous call to join specific session and get response from notification
+// For example, make asynchronous call to join a specific session and get response from notification
 AWSGameLift::AWSGameLiftJoinSessionRequest request;
 request.m_sessionId = "YourGameSessionId";
 request.m_playerId= "YourPlayerId";
@@ -111,10 +111,10 @@ Disconnects the player from the game session.
 To leave the game session, call `AWSGameLiftClientManager::LeaveSession()` or `AWSGameLiftClientManager::LeaveSessionAsync()`.
 
 ```cpp
-// For example, make synchronous call to leave current session
+// For example, make synchronous call to leave the current session
 AWSGameLift::AWSGameLiftSessionRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSessionRequestBus::Events::LeaveSession);
 
-// For example, make asynchronous call to leave current session and get notification after process is complete
+// For example, make asynchronous call to leave the current session and get notification once the leaving session is completed
 AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSessionAsyncRequestBus::Events::LeaveSessionAsync);
 
 void OnLeaveSessionAsyncComplete()
@@ -132,13 +132,13 @@ As the default behavior, when the last player leaves the game session, GameLift 
 You must notify Amazon GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
 
 To send a notification that your server process is ready, use `AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady()`.
-Put this call in a proper place on your server side, like server system component activate step, and call it after you connect your project to `AzFramework::SessionNotificationBus`.
+Call process ready once your have completed any relevant initialization. One recommended place is in `YourProjectServerSystemComponent` activate step, after connecting to `AzFramework::SessionNotificationBus`.
 
 ```cpp
 AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady);
 ```
 
-Once your session is created, it broadcasts the following notifications through `AzFramework::SessionNotificationBus` on server side. You can program how your session responds to these notifications.  
+Once the game session is created, following notifications are broadcast through `AzFramework::SessionNotificationBus`. You can program how your session responds to these notifications.
 
 
 ### `OnCreateSessionBegin`
