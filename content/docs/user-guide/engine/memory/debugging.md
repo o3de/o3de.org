@@ -3,8 +3,6 @@ description: ' Debug HPHA allocator memory issues in Open 3D Engine. '
 title: HPHA Memory Debugging
 ---
 
-{{< preview-migrated >}}
-
 The HPHA memory allocator provides memory debugging features to detect and trace common memory issues.
 
 ## Enabling HPHA Memory Debugging 
@@ -21,7 +19,7 @@ To avoid performance issues, debugging features are disabled by default.
 
 1. Save the file.
 
-1. Perform a build in debug mode. For more information, see [Building O3DE projects](/docs/userguide/game-build-intro.md).
+1. Perform a build in debug mode. For more information, see [Building O3DE projects](/docs/user-guide/build/).
 
 ## Characteristics and Limitations 
 

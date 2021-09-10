@@ -3,8 +3,6 @@ description: ' See the layout of the Script Canvas editor in O3DE Editor. '
 title: 'Script Canvas Editor Interface'
 ---
 
-{{< preview-migrated >}}
-
 You can open the **Script Canvas** editor from O3DE Editor.
 
 **To open the Script Canvas editor**
@@ -13,7 +11,7 @@ You can open the **Script Canvas** editor from O3DE Editor.
 
 1. Choose **File**, **New Script** or drag a node from the **Node Palette** and drop it on the canvas.
 
-![\[Use the Script Canvas editor in O3DE to create connections for nodes.\]](/images/user-guide/scripting/script-canvas/script-canvas-user-interface.png)
+![Use the Script Canvas editor in O3DE to create connections for nodes.](/images/user-guide/scripting/script-canvas/script-canvas-user-interface.png)
 
 In the **Script Canvas** editor, you can do the following:
 

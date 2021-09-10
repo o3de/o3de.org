@@ -4,15 +4,13 @@ description: ' Use the Curve Editor in <guilabel>Track View</guilabel> editor to
 title: Using Animation Curves
 ---
 
-{{< preview-migrated >}}
-
 The **Curve Editor** displays animations as function curves. Each track's curves represent an animation of a property value, such as anchor, offset, color, or any property of a UI element.
 
 **To open the **Curve Editor****
 
 1. Do one of the following:
    + In the Track View, choose **View**, **Curve Editor**.
-   + In the **View** toolbar, choose the **Curve Editor** icon ![\[Curve editor button\]](/images/user-guide/cinematics/cinematics-curve-icon-track-view-editor.png).
+   + In the **View** toolbar, choose the **Curve Editor** icon ![Curve editor button](/images/user-guide/cinematics/cinematics-curve-icon-track-view-editor.png).
 
 1. Select a keyframe in the timeline to view it in the **Curve Editor**.
 
@@ -27,7 +25,7 @@ A curve has the following three parts:
 
 1. Tangent handles for the keys.
 
-![\[Elements of a curve in Track View for the Curve Editor\]](/images/user-guide/cinematics/cinematics-track-view-editor-curves.png)
+![Elements of a curve in Track View for the Curve Editor](/images/user-guide/cinematics/cinematics-track-view-editor-curves.png)
 
 **To edit elements in a curve**
 

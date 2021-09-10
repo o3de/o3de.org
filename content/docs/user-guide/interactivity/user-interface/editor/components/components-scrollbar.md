@@ -3,8 +3,6 @@ description: ' Use a scroll bar component to add a scroll bar in the Open 3D Eng
 title: ScrollBar
 ---
 
-{{< preview-migrated >}}
-
 You can use a **ScrollBar** component to add a scrollable bar, or handle, for manipulating settings or scrolling within a scroll box.
 
 To see in-game examples of completed canvases with the **ScrollBar** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBar**. You can view examples of different types of scroll bar positioning and handles, scroll bars paired with scroll boxes, and visibility options. Press **Esc** to exit the game.
@@ -16,27 +14,27 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 This is a horizontal scroll bar:
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/horizontal-scrollbar.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/horizontal-scrollbar.gif)
 
 This is an image within a scroll box with both a horizontal and a vertical scroll bar:
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/scrollbar-scrollbox.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/scrollbar-scrollbox.gif)
 
 The scroll bar can also fade automatically when not in use:
 
-![\[Example of auto fade scroll bar.\]](/images/user-guide/game_ui_editor/ui-scrollbar-autofade.gif)
+![Example of auto fade scroll bar.](/images/user-guide/game_ui_editor/ui-scrollbar-autofade.gif)
 
 You can add a prefabricated horizontal or vertical scroll bar element. When you do this, a handle is automatically created and nested in your **Hierarchy** pane.
 
 You can add a prebuilt **ScrollBarHorizontal** or **ScrollBarVertical** element from the slice library. When you do this, the scroll bar and its handle is automatically created in your **Hierarchy** pane.
 
 **To add a ScrollBar element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **ScrollBarHorizontal** or **ScrollBarVertical**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **ScrollBarHorizontal** or **ScrollBarVertical**.
 
 **To edit a scroll bar component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **ScrollBar** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **ScrollBar** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
 **Elements**, **Handle**
 Select an element from the list to provide the movable handle of the scroll bar.
 **Values**, **Orientation**

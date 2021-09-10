@@ -4,8 +4,6 @@ title: Configuring the Asset Pipeline
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 **Important**
 The Asset Builder SDK is now preferred over the legacy `rc.exe` program for adding asset types to the pipeline. Instead of using the `rc.exe` program, make a builder module that you derive from the `BuilderSDK`. These modules are self configuring. 
 

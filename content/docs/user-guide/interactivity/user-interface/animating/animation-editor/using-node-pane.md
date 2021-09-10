@@ -4,8 +4,6 @@ description: ' Use O3DE''s UI Animation editor''s Node Pane to add or remove UI 
 title: Using the Node Pane
 ---
 
-{{< preview-migrated >}}
-
 The **Node Pane** in the [Animation Editor](/docs/user-guide/user-interface/animation/_index.md) displays all the nodes in the selected animation sequence. Each item listed in the **Node Pane** is considered a node, though they represent different parts of the sequence. You can use the **Node Pane** to add or delete UI element nodes. Track nodes appear beneath its UI element when you record a track.
 
 The animation sequence node, at the top level, contains a list of its UI elements nodes. Each UI element node contains a list of its track nodes.
@@ -16,7 +14,7 @@ The animation sequence node, at the top level, contains a list of its UI element
 
 1. **Track** nodes
 
-![\[Image NOT FOUND\]](/images/user-guide/ui-animation-node-pane.png)
+![Image NOT FOUND](/images/user-guide/ui-animation-node-pane.png)
 
 **To add a new UI element node**
 
@@ -42,4 +40,4 @@ You can also use the **Edit Sequence** tool to edit the properties of the sequen
 **To open the Edit Sequence tool**
 + In the **Animation Editor**, click the **Edit Sequence** icon.
 
-![\[Image NOT FOUND\]](/images/user-guide/ui-animation-edit-sequence.png)
+![Image NOT FOUND](/images/user-guide/ui-animation-edit-sequence.png)

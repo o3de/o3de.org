@@ -5,8 +5,6 @@ title: Working with the Asset Pipeline and asset files
 weight: 100
 ---
 
-{{< preview-migrated >}}
-
 The Asset Pipeline converts source art and other assets into OS-specific, game ready data. To prepare your game to ship, build all your game assets with the Asset Pipeline and package them with your game for your supported operating systems.
 
 The Asset Processor (AP) is a service that runs in the background and monitors a configurable set of input directories for changes in files. When it detects changes, it uses configurable rules to determine its next action. The objective is to end up with game-ready versions of all assets for each OS and each game directory in a location called the asset cache. The asset cache is kept separate from your input directory and can be automatically rebuilt entirely from your source assets by the Asset Processor.

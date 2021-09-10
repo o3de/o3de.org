@@ -4,8 +4,6 @@ description: ' Use texture atlases on UI canvases for quicker rendering of textu
 title: Using Texture Atlases
 ---
 
-{{< preview-migrated >}}
-
 To reduce draw calls, you can add individual textures to a texture atlas and then add one or more texture atlases to a UI canvas.
 
 ## Characteristics 
@@ -29,6 +27,6 @@ To see examples of texture atlases, open the **UITextureAtlasSample** level in t
 **Topics**
 + [Characteristics](#ui-editor-texture-atlases-characteristics)
 + [Advantages](#ui-editor-texture-atlases-advantages)
-+ [Creating a Texture Atlas](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-creating.md)
-+ [Adding Texture Atlases to a UI Canvas](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-adding-texture-atlases-to-a-ui-canvas.md)
-+ [Using Texture Atlases to Reduce UI Draw Calls](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls.md)
++ [Creating a Texture Atlas](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-creating)
++ [Adding Texture Atlases to a UI Canvas](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-adding-texture-atlases-to-a-ui-canvas)
++ [Using Texture Atlases to Reduce UI Draw Calls](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls)

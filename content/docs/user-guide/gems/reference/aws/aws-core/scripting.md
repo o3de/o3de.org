@@ -6,8 +6,6 @@ weight: 400
 toc: true
 ---
 
-{{< preview-new >}}
-
 This topic demonstrates the Script Canvas nodes that the AWS Core Gem defines.
 
 ## Amazon S3

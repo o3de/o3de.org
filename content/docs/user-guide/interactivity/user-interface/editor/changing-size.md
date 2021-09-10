@@ -3,14 +3,12 @@ description:  Change your game UI canvas size to visualize how your canvas might
 title: Changing the Canvas Size
 ---
 
-{{< preview-migrated >}}
-
 Change your game UI canvas size to visualize how your canvas might look on other displays and devices of varying resolutions. The size at which you save your canvas is the reference size that is used when you perform the **Scale to Device** action.
 
 **To change the canvas size**
 
 1. On the toolbar, click the arrow beside the resolution to see a list of commonly used canvas sizes for various platforms.
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-canvas-change-size.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-canvas-change-size.png)
 
 1. Select the size you want or click **Other** to enter a custom canvas size.
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-canvas-select-size.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-canvas-select-size.png)

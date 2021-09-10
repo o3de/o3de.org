@@ -3,8 +3,6 @@ description: ' Create a component entity node to add to a track in Open 3D Engin
 title: Component Entities and Component Nodes
 ---
 
-{{< preview-migrated >}}
-
 **Topics**
 + [Naming and Identifying Component Entities](#cinematics-track-view-component-entity-name-components)
 + [Adding or Removing Components from a Component Entity](#cinematics-track-view-component-entity-add-remove-components)
@@ -17,7 +15,7 @@ When you add an animation using the Track View, the animation track is applied t
 **Example**
 The component entity **GameObject** contains **Transform**, **Mesh**, and **Point Light** components. When you add the **GameObject** component entity to a sequence in the Track View, you can see all the components in the node browser. The component entity node is a reference to which components are animated in the sequence.
 
-![\[Track View and the Entity Inspector with the same component entities.\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
+![Track View and the Entity Inspector with the same component entities.](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-1.png)
 
 Component nodes that can be animated are nested as children under the associated entity node. You can add animation tracks to any of these component nodes.
 
@@ -29,7 +27,7 @@ Component nodes that can be animated are nested as children under the associated
 
 Not all components can be animated in the Track View. For example, you can add the **Visibility** track only for the **Mesh** component. The **Point Light** component has multiple tracks that you can add to the sequence. In the following example, the **Color**, **DiffuseMultiplier**, and **Visible** tracks are added to the sequence.
 
-![\[Add tracks from component entity nodes\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
+![Add tracks from component entity nodes](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
 
 For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md).
 
@@ -39,7 +37,7 @@ O3DE uses entity IDs to identify component entities, which means that you can na
 
 **Example**
 
-![\[Duplicate entities in the node browser have numbers appended to the name.\]](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
+![Duplicate entities in the node browser have numbers appended to the name.](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
 
 If you have component entities with the same name (for example, if they're multiple instances of a slice), you can determine which entity that you're editing. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md).
 

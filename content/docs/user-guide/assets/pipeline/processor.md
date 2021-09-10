@@ -4,8 +4,6 @@ description: ' Use Asset Processor in Open 3D Engine to detect and process new o
 title: Using Asset Processor
 ---
 
-{{< preview-migrated >}}
-
 Asset Processor is a utility that runs in the background to detect changes to your asset files. When Asset Processor detects new or updated asset files, it launches the Resource Compiler, processes the assets, and then places them in the cache. Asset Processor then notifies all running game or tool instances that the assets are updated. The game can then reload the updated assets.
 
 As part of Asset Processing, the Asset Processor generates and stores product and source dependencies . In this context, a dependency defines how a one product or source asset depends on another asset. A given asset may have 0 or more dependencies, and these dependencies are used by features such as the [Asset Bundler](/docs/user-guide/packaging/asset-bundler) in order to determine which assets must be included when you bundle your game for release.
@@ -24,7 +22,7 @@ Use a unique cache directory. Do not share the cache directory with a Windows sy
 
  You can open the Asset Processor options from the notification area on the taskbar.
 
-![\[Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.\]](/images/user-guide/assets/pipeline/asset-pipeline-processor-options.png)
+![Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.](/images/user-guide/assets/pipeline/asset-pipeline-processor-options.png)
 
 You don't need to close Asset Processor when you get the latest updates from source control. You can start O3DE Editor while Asset Processor is still processing your assets.
 

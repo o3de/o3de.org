@@ -1,10 +1,8 @@
 ---
-description: ' Learn about dynamic vegetation concepts and ideas in Open 3D Engine. '
+linkTitle: Concepts
 title: Dynamic vegetation concepts
-weight: 100
+description: Learn about dynamic vegetation concepts and ideas in Open 3D Engine.
 ---
-
-{{< preview-migrated >}}
 
 The dynamic vegetation system operates around the following ideas:
 + **What** - To specify the type of vegetation that appears, you must have prebuilt vegetation assets, such as `.cgf` or `.fbx` files. If you don't have your own, you can use O3DE's vegetation assets, which are in the Starter Game project.
@@ -19,14 +17,14 @@ The dynamic vegetation system operates around the following ideas:
 **Example**
 The following image shows grass excluded from the river and road surfaces, and pebble clusters included only on road surfaces.
 
-![\[Grass is excluded from the river and road surfaces, and pebble clusters appear only on road surfaces.\]](/images/user-guide/vegetation/dynamic/dynamic-vegetation-concepts-lilies.png)
+![Grass is excluded from the river and road surfaces, and pebble clusters appear only on road surfaces.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-concepts-lilies.png)
 
 You can customize your vegetation in the following ways:
 + Assign priorities to your vegetation areas. Priorities determine the order in which the vegetation system fills the areas.
 + Use customizable gradients such as the **Perlin Noise Gradient** to mimic the types of vegetation groupings often found in nature.
 + Save your customized vegetation areas as slices so that you can easily reuse them in other levels or share them with collaborators. Use slice overrides to make small or large changes to individual instances of the slice.
 
-## Dynamic Vegetation Components 
+## Dynamic Vegetation Components
 
 The common workflow for creating a new vegetation area starts with creating an entity and adding a **Vegetation Layer Spawner** component to it. Then you add to that entity the two required components, which define the area's shape and the assets to display. From there, you can add optional components such as vegetation filters and modifiers.
 
@@ -39,6 +37,7 @@ The following table summarizes the functions of dynamic vegetation components an
 
 | Primary Component Attached to an Entity | Description | Required Components | Optional Components | Incompatible Components |
 | --- | --- | --- | --- | --- |
-| Vegetation Layer Spawner | Primary component for creating a vegetation area. Determines layer priority and filter stage. |  | [\[See the AWS documentation website for more details\]](/docs/userguide/vegetation/concepts) | [\[See the AWS documentation website for more details\]](/docs/userguide/vegetation/concepts) |
+| Vegetation Layer Spawner | Primary component for creating a vegetation area. Determines layer priority and filter stage. |  | | |
 | Gradients category (only one per entity) | Creates a gradient that other components such as the **Vegetation Distribution Filter** and the **Vegetation Asset Weight Selector** can reference. Provides a gradient that the referencing components use to distribute vegetation or other environmental ornaments. Gradient types include Perlin noise, white noise, image, and so on. | Some components in this category require another component. For example:  | You can add certain Gradient Modifier components alongside the Gradient component. | Certain Gradient Modifier components are incompatible. For a better workflow, add Gradient Modifier components to a separate entity and then reference the Gradient entity ID. |
-| Gradient Modifiers category (only one per entity) | Modifies a gradient. Reference the Gradient entity ID in the Gradient Modifiers component's properties. | Some components in this category require another component. For example:  | None | [\[See the AWS documentation website for more details\]](/docs/userguide/vegetation/concepts) |
+| Gradient Modifiers category (only one per entity) | Modifies a gradient. Reference the Gradient entity ID in the Gradient Modifiers component's properties. | Some components in this category require another component. For example:  | None | |
+

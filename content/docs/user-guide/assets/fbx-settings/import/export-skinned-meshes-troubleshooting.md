@@ -3,8 +3,6 @@ description: ' You can troubleshoot your skinned meshes for Open 3D Engine. '
 title: Troubleshooting Skinned Meshes
 ---
 
-{{< preview-migrated >}}
-
 If your character's skinning appears visually broken in the **Animation Editor**, the following issues could be why:
 + The **Coordinate system change** modifier isn't identical for the `.actor` and `.motion` files
 + You might need to reset the bind pose
@@ -29,7 +27,7 @@ If your character's skinning appears visually broken in the **Animation Editor**
 
 1. For the **Input** box, choose **Select by name**.
 
-1. Search for all bind poses by entering **bindPose\*** in the search box.
+1. Search for all bind poses by entering **bindPose** in the search box.
 
 1. Press **Enter** to select all of the bind poses and then press **Delete**.
 

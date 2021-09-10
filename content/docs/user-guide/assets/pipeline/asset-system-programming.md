@@ -1,10 +1,7 @@
 ---
-description: ' Understand the workflow of Open 3D Engine''s runtime asset system and learn
-  how to load prebuilt assets into a running instance of the engine. '
+description: Understand the workflow of Open 3D Engine's runtime asset system and learn how to load prebuilt assets into a running instance of the engine.
 title: Programming the O3DE AZCore Runtime Asset System
 ---
-
-{{< preview-migrated >}}
 
 The O3DE Editor and O3DE runtime code use the AZCore runtime asset system to asynchronously stream and activate assets. This topic describes the workflow of the classes in the asset system and shows how to load already-built assets into a running instance of the engine.
 
@@ -92,7 +89,7 @@ Note the following points:
 The following code example uses `AssetManager` to load a script asset.
 
 ```
-m_scriptAsset = AZ::Data::AssetManager::Instance().GetAsset<AZ::ScriptAsset>(assetIdToLoad);
+m_scriptAsset = AZ::Data::AssetManager::Instance().GetAsset<AZ::ScriptAsset>(m_scriptAsset.GetId(), m_scriptAsset.GetAutoLoadBehavior());
 AZ::Data::AssetBus::Handler::BusConnect(m_scriptAsset.GetId());
 ```
 
@@ -173,23 +170,25 @@ O3DE loads assets in the following two ways:
 
 The following steps summarize the workflow of the asset system.
 
-1. `GetAsset(assetId)` calls `AssetManager` implicitly (through the serialization system) or explicitly.
+1. AssetManager GetAsset(assetId) is called implicitly (through the serialization system) or explicitly.
 
 1. `AssetManager` calls `GetAssetInfoById` to retrieve the information about the asset file.
 
 1. If the asset is already loaded in the `m_assets` asset map, `AssetManager` returns a new `Asset<T>` instance of the existing asset and increments the reference count.
 
-1. If the asset is not already loaded, `AssetManager` uses the information returned by `GetAssetInfoById` to look up the `AssetHandler` for the asset type.
+1. If the asset is not already loaded, AssetManager uses the information returned by GetAssetInfoById to look up the AssetHandler for the asset type.
 
-   1. `AssetManager` calls the asset handler's `CreateAsset` function to create a new empty instance for the data.
+   - AssetManager calls the asset handler's CreateAsset function to create a new empty instance for the data.
 
-   1. `AssetManager` inserts the asset into the empty instance.
+   - AssetManager inserts the asset into the empty instance.
 
-   1. `AssetManager` creates a loading job in a job worker thread pool. To load the asset data, the thread pool calls the `loadAssetdata` function on the handler in the worker pool.
+   - AssetManager queues a job with the file system streamer to load the file.
 
-   1. If the `AssetManager` was told to block while the asset loads, it stops processing until the asset is loaded.
+   - When the streamer finishes the load, AssetManager creates a loading job in a job worker thread pool. To load the asset data, the job calls the LoadAssetData function on the asset handler.
 
-   1. `AssetManager` returns the `Asset<T>` member.
+   - AssetManager returns the Asset<T> member.
+
+   - If the asset data is needed right away, the calling thread can block until completion using Asset<T>.BlockUntilLoadComplete
 
 ## Conclusion 
 

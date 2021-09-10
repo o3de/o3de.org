@@ -4,8 +4,6 @@ description: ' Use the DropTarget component with the Draggable component to impl
 title: DropTarget
 ---
 
-{{< preview-migrated >}}
-
 You can use the **DropTarget** component to implement drag-and-drop behavior with the **Draggable** component.
 
 Because drag-and-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C++ to define actions that result from the drag and the drop.
@@ -14,12 +12,12 @@ To add the **DropTarget** component to a UI element, use the **Add Component** m
 
 The following picture shows an example of a **DropTarget** component, where color has been added to the state actions for **Drop States**.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-droptarget.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-droptarget.png)
 
 The **DropTarget** component shares properties with interactive components, such as state actions and navigation settings.
 
 **To edit a DropTarget component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **DropTarget** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **DropTarget** and do the following, as appropriate:
 **Drop States**
 Define the color, alpha, sprite, or font of this element and its child elements in a valid or invalid drop state. By default, the drop state of a drop target is normal, which means that there are no visual overrides.
 During a drop, the drop target component can be **Valid** or **Invalid**. Because the drop target component has no knowledge of what is a valid drag-and-drop operation, you use a script or C++ to switch the drop target into the **Normal**, **Valid**, and **Invalid** states. This is usually accomplished by connecting to the `UiDropTargetNotifications` bus and listening for the `OnDropHoverStart` and `OnDropHoverEnd` notifications.

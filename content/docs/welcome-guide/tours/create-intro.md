@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Previously in this guide, we covered [key concepts](../key-concepts) and [setting up Open 3D Engine (O3DE)](../setup). This topic provides an overview of creating with O3DE, beginning with some concepts all creators should keep in mind, then highlighting areas of interest for different creative roles.
+Previously in this guide, we covered [key concepts](../key-concepts) and how to [set up Open 3D Engine (O3DE)](../setup). This topic provides an overview of creating with O3DE, beginning with some concepts all creators should keep in mind, then highlighting areas of interest for different creative roles.
 
 ## Modular tools and features
 

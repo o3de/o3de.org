@@ -4,8 +4,6 @@ linktitle: Lua
 title: Writing Lua Scripts
 ---
 
-{{< preview-migrated >}}
-
 **Topics**
 + [Learning Lua](#lua-scripting-resources-general)
 + [Learning Lua in O3DE](#lua-scripting-resources-ly)

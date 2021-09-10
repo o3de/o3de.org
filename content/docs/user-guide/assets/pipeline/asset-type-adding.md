@@ -4,8 +4,6 @@ title: Adding an Asset Type to O3DE
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 When you develop a game, you might need to add a new kind of asset to O3DE. The new asset could be a configuration file, a game-specific data asset, or structured data for which you created an editor. This topic guides you through the process of adding a custom asset type to O3DE.
 
 For an overview of the O3DE asset system, see [Programming the O3DE AZCore Runtime Asset System](/docs/user-guide/assets/pipeline/asset-system-programming).

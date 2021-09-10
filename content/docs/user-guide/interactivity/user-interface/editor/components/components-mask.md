@@ -4,8 +4,6 @@ description: ' Add the Mask component to an element to reveal parts of the child
 title: Mask
 ---
 
-{{< preview-migrated >}}
-
 You can add a **Mask** component to an element to reveal only those parts of the child elements (for example, image or text) that are within the mask visual. In other words, the opaque region of the mask visual defines a shape that acts like a window through which you view the descendant elements.
 
 
@@ -13,11 +11,11 @@ When you add a **Mask** component, the default mask is the visual component on t
 
 You can make the mask movable to use in an animation. To do so without moving all of its children, you can use a special child element as a mask visual in addition to the visual component on the mask element. This child mask element can have as many children as you need to draw your mask visual.
 
-Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/interactivity/user-interface/editor/components-scrollbox.md).
+Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/interactivity/user-interface/editor/components/components-scrollbox).
 
 **To add simple mask with an Image component as the visual**
 
-1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md) toolbar, choose **New**, **Empty Element**. This is the parent element.
+1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working) toolbar, choose **New**, **Empty Element**. This is the parent element.
 
 1. In the **Properties** pane, choose **Add Component**, **Image** to add an **Image** component.
 
@@ -38,6 +36,6 @@ Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/inter
 1. In the **Properties** pane, under **Mask**, select **Use alpha test**.
 
 **To edit a Mask component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Mask** and specify the following parameters, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Mask** and specify the following parameters, as appropriate:
 ****
 

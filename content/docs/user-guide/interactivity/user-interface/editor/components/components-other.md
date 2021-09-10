@@ -4,8 +4,6 @@ description: ' Use the fader and mask components in Open 3D Engine''s UI Editor
 title: Other Components
 ---
 
-{{< preview-migrated >}}
-
 You can add either or both of the fader and mask components to an element.
 
 **Topics**

@@ -4,8 +4,6 @@ title: 'Components and EBuses: Best Practices'
 weight: 1000
 ---
 
-{{< preview-migrated >}}
-
 Follow these best practices for creating and using components and EBuses.
 
 ## EBus Names 

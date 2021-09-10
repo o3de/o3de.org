@@ -6,8 +6,6 @@ toc: true
 weight: 100
 ---
 
-{{< preview-new >}}
-
 ## Prerequisites
 
 The AWS Metrics Gem requires the following to be installed and configured:

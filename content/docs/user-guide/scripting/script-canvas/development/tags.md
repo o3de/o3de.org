@@ -3,8 +3,6 @@ description: ' Add tags for Script Canvas nodes in Open 3D Engine. '
 title: 'Script Canvas Tags for AZ Code Generator'
 ---
 
-{{< preview-migrated >}}
-
 Script Canvas provides a variety of tags that AZ Code Generator uses. These tags can be found in the source code location `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`. Because the tags are well documented in the code, this guide focuses on showing how to use them rather than on covering each one in detail.
 
 The following example shows the **Delay** node, which uses a variety of different code generation features. The source code files are located in the directory `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\Libraries\Time`.
@@ -85,4 +83,4 @@ ScriptCanvas_Property(float,
 
 In the **Script Canvas** editor, the node shows the **Time**, **Loop**, **Hold**, and **Elapsed** properties that were defined:
 
-![\[Properties on the Delay node\]](/images/user-guide/scripting/script-canvas/script-canvas-custom-nodes-2.png)
+![Properties on the Delay node](/images/user-guide/scripting/script-canvas/script-canvas-custom-nodes-2.png)

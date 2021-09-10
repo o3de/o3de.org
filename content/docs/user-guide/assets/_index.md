@@ -6,10 +6,6 @@ title: Working with assets in O3DE
 weight: 700
 ---
 
-{{< preview-migrated >}}
-
-## Working with assets in O3DE 
-
 Learn how to manage, process, and package the assets for your O3DE game. This documentation covers the O3DE Asset Browser tool, the asset pipeline, managing and organizing game assets, and packaging (bundling) game assets for delivery.
 
 

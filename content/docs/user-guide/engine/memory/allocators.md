@@ -3,8 +3,6 @@ description: ' Allocate and track memory in Open 3D Engine. '
 title: Using Memory Allocators in O3DE
 ---
 
-{{< preview-migrated >}}
-
 O3DE's memory management system determines how memory is allocated. All memory allocations go through one pipeline, and memory allocation can be tracked. This makes it easier and quicker to pinpoint memory leaks or optimize memory usage to improve game performance. This improvement is especially important for mobile platforms, where memory resources are usually more constrained than in PC environments.
 
 O3DE supports all the best known memory allocation schemes. You can use O3DE's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation.
@@ -16,7 +14,9 @@ For best C++ practices for managing memory in O3DE, see [Memory Management](/doc
 
 The following diagram illustrates the hierarchy of AZ memory allocators.
 
-![\[AZ memory allocator hierarchy\]](/images/user-guide/memory-allocators-1.png)
+
+![AZ memory allocator hierarchy](/images/user-guide/memory-allocators-1.png)
+
 + **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap. `OSAllocator` is booted as early as possible in `main()`, and removed last, right before returning. If you don't create `OSAllocator`, the `SystemAllocator` creates it when needed.
 
   `OSAllocator` uses system calls to allocate memory. The calls are not recorded or tracked. Other allocators use `OSAllocator` to obtain memory from the operating system. Drillers and memory tracking tools can use `OSAllocator` for data debugging.
@@ -76,7 +76,7 @@ AZStd::vector<MyClass, AZ::AZStdAlloc<CustomAllocator>>
 
 ### Child Allocator Example 
 
- The following code example adds a custom allocator for the [Script Canvas gem](/docs/user-guide/gems/script-canvas.md).
+ The following code example adds a custom allocator for the [Script Canvas Gem](/docs/user-guide/gems/reference/script/script-canvas/).
 
 **Example**
 

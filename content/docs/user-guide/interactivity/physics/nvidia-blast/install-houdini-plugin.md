@@ -5,8 +5,6 @@ title: Install SideFX Houdini plug-ins for NVIDIA Blast
 weight: 100
 ---
 
-{{< preview-migrated >}}
- To create NVIDIA Blast assets, you must install a set of plug-ins and Houdini Digital Assets for SideFX Houdini.
 
 **Note**
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets. The apprentice license is not sufficient. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/).
@@ -69,4 +67,4 @@ The NVIDIA Blast installation for Houdini includes a tool shelf that you can ena
 
 1. From the **Shelf list** choose **Fracture tools for Blast** to add the shelf to the **Toolbar**.
 
-![\[Enable the NVIDIA Blast tool shelf in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-shelf-enable.png)
+![Enable the NVIDIA Blast tool shelf in Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-shelf-enable.png)

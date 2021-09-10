@@ -5,8 +5,6 @@ weight: 350
 toc: true
 ---
 
-{{< preview-new >}}
-
 The resource mapping tool helps manage and configure your resource mappings files.
 
 ## Prerequisites

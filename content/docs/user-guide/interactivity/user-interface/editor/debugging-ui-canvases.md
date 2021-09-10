@@ -3,8 +3,6 @@ description: ' Use console variables and commands to debug UI canvases in Open 3
 title: Debugging UI Canvases
 ---
 
-{{< preview-migrated >}}
-
 You can use the following console commands and console variables to display debug information for the UI when your game is running.
 
 [ui\_DisplayCanvasData](#ui-editor-debugging-ui-canvases-display-canvas-data)
@@ -32,7 +30,7 @@ Displays canvas data for enabled or loaded canvases.
 
 The following example displays data for five loaded UI canvases.
 
-![\[Canvas data for five loaded UI canvases.\]](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-1.png)
+![Canvas data for five loaded UI canvases.](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-1.png)
 
 The following table describes each column.
 
@@ -74,7 +72,7 @@ Displays the number of draw calls used to render UI canvases. This variable is u
 
 The following example data shows draw call information for four UI canvases.
 
-![\[Draw call information for four UI canvases.\]](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-2.png)
+![Draw call information for four UI canvases.](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-2.png)
 
 The following table describes each column.
 
@@ -96,7 +94,7 @@ The following table describes each column.
 | XBlnd | The number of draw calls caused by a change in blend mode. |
 | XSrgb | The number of draw calls caused by a change in Srgb write. This data point appears only for render targets (for example, playing video). |
 | XMaxV | The number of draw calls caused by a render node that requires more than 65536 vertices or 16384 quads. This case is uncommon. For example, more than 16000 characters of text would be required for a value to appear. |
-| XTex | The number of draw calls that occur when the shader supported maximum of 16 textures is reached. To reduce the number of these calls, you can use a texture atlas. For more information, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/editor/texture-atlases.md). |
+| XTex | The number of draw calls that occur when the shader supported maximum of 16 textures is reached. To reduce the number of these calls, you can use a texture atlas. For more information, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/editor/texture-atlases). |
 
 ## ui\_DisplayElemBounds 
 
@@ -106,7 +104,7 @@ If you have several enabled UI canvases and want to see the rectangular bounds f
 
 The following example shows the rectangular bounds of nested scrollboxes.
 
-![\[Rectangular bounds displayed for nested scrollboxes.\]](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-3.png)
+![Rectangular bounds displayed for nested scrollboxes.](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-3.png)
 
 ## ui\_DisplayTextureData 
 
@@ -116,7 +114,7 @@ The display shows the dimensions, data size, texture format, and pathname of eac
 
 The following example shows data for 13 unique textures in the current frame.
 
-![\[Data for 13 unique textures in the current frame.\]](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-4.png)
+![Data for 13 unique textures in the current frame.](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-4.png)
 
 ## ui\_ReportDrawCalls 
 
@@ -124,10 +122,10 @@ Writes a report of draw calls to a log file.
 
 The command output displays the location of the log file, as in the following example.
 
-![\[Entering the ui_ReportDrawCalls command.\]](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-5.png)
+![Entering the ui_ReportDrawCalls command.](/images/user-guide/game_ui_editor/ui-editor-debugging-ui-canvases-5.png)
 
 The log file is written to `drawcallreport.txt` in the log directory.
 
 The log file lists all of the draw calls for each enabled canvas. The report can be useful for determining how to reduce the number of draw calls.
 
-For more information, see [Using Texture Atlases to Reduce UI Draw Calls](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls.md).
+For more information, see [Using Texture Atlases to Reduce UI Draw Calls](/docs/user-guide/interactivity/user-interface/editor/texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls).

@@ -4,11 +4,9 @@ description: ' Use a RadioButtonGroup component to manage radio button groups in
 title: RadioButtonGroup
 ---
 
-{{< preview-migrated >}}
-
 You can use the **RadioButtonGroup** component to manage radio buttons. This component handles selecting and clearing the radio buttons in the group when appropriate. It also ensures that only one radio button is selected at one time. You typically use this component on an element with children radio buttons, which are part of the radio button group.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-radiobuttongroup.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-radiobuttongroup.png)
 
 To see in-game examples of completed canvases with the **RadioButtonGroup** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **RadioButton**. You can view examples of different behaviors, default settings, and groups for radio buttons Press **Esc** to exit the game.
 
@@ -19,10 +17,10 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 You can add a prebuilt **RadioButtonGroup** element from the slice library. When you do this, a group of three radio buttons is automatically created in your **Hierarchy** pane.
 
 **To add a RadioButtonGroup element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **RadioButtonGroup**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **RadioButtonGroup**.
 
 **To edit a RadioButtonGroup component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **RadioButtonGroup** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **RadioButtonGroup** and do the following, as appropriate:
 **Settings**, **Allow uncheck**
 Select to enable the clearing or unchecking of selected radio buttons.
 **Actions**, **Change**

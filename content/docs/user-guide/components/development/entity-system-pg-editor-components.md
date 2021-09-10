@@ -4,8 +4,6 @@ title: Editor Components
 weight: 500
 ---
 
-{{< preview-migrated >}}
-
 Some components in O3DE have separate `editor` and `runtime` versions. The editor version is active in the editor. The runtime version is used for running the level in game or in the editor by pressing **Ctrl+G** or clicking **AI/Physics** below the viewport. O3DE uses editor components to maintain a clean separation between tools-specific code and data on one hand, and leaner runtime component data on the other. In general, runtime game components do not require editor counterparts. Components rarely need to be fully active at edit time. The light and mesh components are exceptions because they must behave the same at edit time as at run time.
 
 `EditContext` reflection is fully supported in runtime components. Edit time is the only time when editor components are active. At run time, when O3DE processes a level or dynamic slice, it uses the runtime equivalents of editor components. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience.
@@ -16,7 +14,7 @@ Your component must be fully active at edit time. Edit time refers to standard e
 You must add special tools functionality to your component that requires that you compile only into your editor binaries.
 Your component provides functionality only in the editor and does not export a runtime component (for example, if your component manages selection logic).
 
-## Sample Editor Component 
+## Sample Editor Component
 
 The following code shows a sample editor component.
 
@@ -65,11 +63,11 @@ public:
 };
 ```
 
-## Editor Component and Runtime Component Differences 
+## Editor Component and Runtime Component Differences
 
 The code for editor components is similar to the code for runtime components. The following sections list the key differences. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed. For more information, see [Creating a Component](/docs/user-guide/components/development/create-component/).
 
-### Base Classes 
+### Base Classes
 
 All editor components include the `AzToolsFramework::Components::EditorComponentBase` class somewhere in their inheritance ancestry. If a component must display edit-time visualization, it must be a handler on the `AzFramework::EntityDebugDisplayEventBus::Handler` bus, as in the following example.
 
@@ -82,7 +80,7 @@ class MyComponent
       , private AzFramework::EntityDebugDisplayEventBus::Handler
 ```
 
-### Macro 
+### Macro
 
 Every editor component must specify the `AZ_EDITOR_COMPONENT` macro within its class definition. The macro takes two arguments:
 
@@ -103,7 +101,7 @@ Some O3DE editor components specify `AzToolsFramework::Components::EditorCompone
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);
 ```
 
-### The DisplayEntityViewport Method 
+### The DisplayEntityViewport Method
 
 To draw debug visuals in the viewport for a specific entity, implement the `DisplayEntityViewport` method of the `AzFramework::EntityDebugDisplayEventBus` interface. Use this location for custom primitive edit-time visualization code.
 
@@ -113,17 +111,12 @@ To draw debug visuals in the viewport for a specific entity, implement the `Disp
 void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFramework::DebugDisplayRequests& debugDisplay) override;
 ```
 
-
-****
-
 | Parameter | Description |
 | --- | --- |
 | viewportInfo | Determines information such as camera position. |
 | debugDisplay | Contains the interface for debug draw or display commands. |
 
-lala
-
-### The BuildGameEntity Method 
+### The BuildGameEntity Method
 
 The `BuildGameEntity` method from `EditorComponentBase.h` facilitates the translation of an editor component into a runtime component. Override this method as follows.
 

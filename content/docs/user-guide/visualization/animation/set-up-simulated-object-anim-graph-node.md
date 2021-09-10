@@ -3,8 +3,6 @@ description: ' Set up an anim graph for the simulated object in Open 3D Engine. 
 title: Setting Up the Simulated Object Anim Graph Node
 ---
 
-{{< preview-migrated >}}
-
 After you set up the simulated object, create an anim graph to view the simulation. This lets you preview how the tassel moves in relation to the actor's primary motion.
 
 **To set up an anim graph node for the simulated object**
@@ -13,11 +11,11 @@ After you set up the simulated object, create an anim graph to view the simulati
 
 1. Right-click the graph and choose **Create Node**, **Sources**, **Blend Tree**.
 **Example**
-![\[Create a blend tree node for your anim graph for the simulated object.\]](/images/user-guide/actor-animation/simulated-objects-7.png)
+![Create a blend tree node for your anim graph for the simulated object.](/images/user-guide/actor-animation/simulated-objects-7.png)
 
 1. Double-click the **BlendTree0** node, right-click the anim graph grid, and choose **Create Node**, **Physics**, **Simulated Object**.
 **Example**
-![\[Create a simulated object node in the BlendTree0 node.\]](/images/user-guide/actor-animation/simulated-objects-8.png)
+![Create a simulated object node in the BlendTree0 node.](/images/user-guide/actor-animation/simulated-objects-8.png)
 
 1. Connect the **Pose** output of the **SimulatedObject0** node to the **Input Pose** of the **FinalNode0** node.
 
@@ -27,7 +25,7 @@ After you set up the simulated object, create an anim graph to view the simulati
 **Example**
 
    Your graph should look like the following.
-![\[Create an anim graph for the simulated object.\]](/images/user-guide/actor-animation/simulated-objects-10.png)
+![Create an anim graph for the simulated object.](/images/user-guide/actor-animation/simulated-objects-10.png)
 
 1. Select the **Motion0** node and in the **Attributes** panel, click the **+** icon to add a motion to the node.
 
@@ -37,11 +35,11 @@ After you set up the simulated object, create an anim graph to view the simulati
 
 1. Select the **SimulatedObject0** node and in the **Attributes** panel, click **Select simulated objects**.
 **Example**
-![\[Select a simulated object for the anim graph.\]](/images/user-guide/actor-animation/simulated-objects-11.png)
+![Select a simulated object for the anim graph.](/images/user-guide/actor-animation/simulated-objects-11.png)
 
 1. In the dialog box, select the simulated object.
 **Example**
-![\[Select the simulated object that you created.\]](/images/user-guide/actor-animation/simulated-objects-12.png)
+![Select the simulated object that you created.](/images/user-guide/actor-animation/simulated-objects-12.png)
 
 1. Save the anim graph.
 **Example**
@@ -49,4 +47,4 @@ After you set up the simulated object, create an anim graph to view the simulati
    In the **Anim Graph** panel, click the play icon to run the anim graph. The colliders that you set up for each joint don't collide with other colliders and the tassel goes through the arm and chest of the actor.
 
    In the next procedure, you create another collider attached to the actor's skeleton. This prevents the tassel from moving into the actor's body.
-![\[Animate the actor and the simulated object.\]](/images/user-guide/actor-animation/simulated-objects-13.gif)
+![Animate the actor and the simulated object.](/images/user-guide/actor-animation/simulated-objects-13.gif)

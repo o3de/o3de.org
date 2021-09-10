@@ -3,8 +3,6 @@ title: Interactivity and simulation
 weight: 800
 ---
 
-{{< preview-new >}}
-
 | Topic | Description |
 | - | - | 
 | [Entities](entities) | Learn about how to interact with entities in the Editor. |

@@ -5,14 +5,12 @@ description: 'Open 3D Engine (O3DE) SSAO component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **SSAO** component approximates indirect lighting in a scene by using the *screen space ambient occlusion* technique.
 
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

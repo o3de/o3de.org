@@ -4,8 +4,6 @@ description: Configure font properties such as asset path and effects for your g
 title: Configuring Font Properties
 ---
 
-{{< preview-migrated >}}
-
 You can define the appearance of your UI font by configuring various properties that affect the font's appearance and usage.
 
 You define your font's properties in the `.font` file, which is an XML file. The following example shows the default UI font XML file, located in `Engine/Fonts/default-ui.font`.
@@ -46,7 +44,7 @@ Use the following tags, attributes, and values to define key features of your fo
 | pass |  A child tag of an `effect` tag. You can add multiple `pass` tags as the children of a single `effect` tag. Defines a render pass of the text with various parameters that affect the text's rendering. The `pass` tags can be layered on top of each other, giving the effect a unique look.   | Doesn't have attributes. Parents the following child tags that define text effects.  |
 | color | A text effect that is a child tag of the pass tag. Defines the text color.  |  Uses the following attributes to define the effect's intensity with float point values. Minimum: `0.0` Maximum: `1.0f`  |
 | pos or offset | A text effect that is a child tag of the pass tag. Sets the position of the text. |  Uses the following attributes to set text position with integer values:   |
-| blend or blending | A text effect that is a child tag of the pass tag. Defines alpha blending behavior of the text. | Uses the following attributes to define the text's alpha blending behavior:  Uses the following values for the `src` and `dst` attributes: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/fonts/properties) Uses the following values for the `type` attribute: [\[See the AWS documentation website for more details\]](/docs/userguide/ui/fonts/properties)  |
+| blend or blending | A text effect that is a child tag of the pass tag. Defines alpha blending behavior of the text. | Uses the following attributes to define the text's alpha blending behavior:  Uses the following values for the `src` and `dst` attributes: [See the AWS documentation website for more details](/docs/userguide/ui/fonts/properties) Uses the following values for the `type` attribute: [See the AWS documentation website for more details](/docs/userguide/ui/fonts/properties)  |
 
 ## Font Tag Attributes 
 

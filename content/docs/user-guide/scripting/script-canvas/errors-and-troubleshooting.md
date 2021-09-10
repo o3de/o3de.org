@@ -3,8 +3,6 @@ description: ' Use C++ macros for error management and troubleshooting in Open 3
 title: 'Script Canvas Errors and Troubleshooting'
 ---
 
-{{< preview-migrated >}}
-
 Script Canvas provides a mechanism to detect and report errors. Errors in Script Canvas are generally caused by invalid conditions.
 
 In C++ Script Canvas provides the following macros for error management:
@@ -25,4 +23,4 @@ Runtime execution errors are reported to the **Event Handler** node. You can use
 
 You can also raise and handle errors within a graph's execution. The following simple example shows how you could use **Error** and **Error Handler** nodes to provide notification of an error in data validation. This helps to rectify the solution to ensure that the graph remains stable.
 
-![\[Example that notifies users of errors in data validation\]](/images/user-guide/scripting/script-canvas/script-canvas-errors-and-troubleshooting-1.png)
+![Example that notifies users of errors in data validation](/images/user-guide/scripting/script-canvas/script-canvas-errors-and-troubleshooting-1.png)

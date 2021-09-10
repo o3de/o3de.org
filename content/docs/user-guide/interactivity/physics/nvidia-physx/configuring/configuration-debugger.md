@@ -4,8 +4,6 @@ title: Debugger Configuration
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 In the **PhysX Configuration** tool, you can specify how to interact with the PhysX Visual Debugger (PVD). The PVD is a third-party application that records your PhysX data from O3DE Editor. You can then review this data to see how your physics effects appear.
 
 For more information, see the NVIDIA [PhysX Visual Debugger (PVD)](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/VisualDebugger.html#physxvisualdebugger) documentation.
@@ -27,7 +25,7 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
 1. Click the **Debugger** tab.
 
 1. You can specify the following settings.
-![\[PhysX Visual Debugger settings.\]](/images/user-guide/physx/physx-configuration-debugger-1.png)
+![PhysX Visual Debugger settings.](/images/user-guide/physx/physx-configuration-debugger-1.png)
 ****
 
 
@@ -39,7 +37,7 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
 
 1. Open the PhysX Visual Debugger to view the recorded information.
 **Example**
-![\[Review the recorded data from O3DE Editor in the PhysX Visual Debugger.\]](/images/user-guide/physx/physx-configuration-debugger-2.png)
+![Review the recorded data from O3DE Editor in the PhysX Visual Debugger.](/images/user-guide/physx/physx-configuration-debugger-2.png)
 
 1. You can also manually connect or disconnect from the PVD using the following console variable commands.
 

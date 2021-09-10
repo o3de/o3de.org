@@ -6,8 +6,6 @@ toc: true
 weight: 500
 ---
 
-{{< preview-new >}}
-
 ## Console command
 
 The AWS Metrics Gem provides two `AWSMetricsSystemComponent` console commands to dump statistics and enable/disable offline recording.

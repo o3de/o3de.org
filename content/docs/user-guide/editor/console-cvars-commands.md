@@ -4,8 +4,6 @@ description: ' Use the Open 3D Engine console to customize and create your own c
 title: Console in Depth
 ---
 
-{{< preview-migrated >}}
-
 The console is a user interface system which handles console commands and console variables. It also outputs log messages and stores the input and output history.
 
 ## Color coding 

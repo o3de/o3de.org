@@ -4,8 +4,6 @@ description: ' Use EventData types to create custom parameters for motion events
 title: Creating EventData Types
 ---
 
-{{< preview-migrated >}}
-
 You create objects deriving from the [`EMotionFX::EventData`](/docs/api/gems/emotionfx/) interface to attach an arbitrary number of data objects to a single event.
 
 **To create an EventData type**

@@ -3,8 +3,6 @@ description: Create a custom node that you can use in O3DE's Script Canvas.
 title: Creating Custom Nodes in Script Canvas
 ---
 
-{{< preview-migrated >}}
-
 Script Canvas uses the [behavior context](/docs/userguide/components/entity-system-reflection-behavior-context.md). The preferred way to expose functionality in Script Canvas is through behavior context bindings. Behavior context bindings make functionality available to any scripting solution (such as Lua) that also uses the behavior context. However, if you want to create Script Canvas-specific functionality or customized visual scripting experiences, you can use the Script Canvas custom node API.
 
 If your gem provides custom Script Canvas nodes, you must specify a dependency on the Script Canvas Gem. Functionality that you reflect through the behavior context requires no dependency on the Script Canvas Gem.
@@ -13,7 +11,7 @@ Custom nodes in Script Canvas take advantage of [Automating boilerplate with AZ 
 
 The following diagram shows the AZ Code Generator process for Script Canvas.
 
-![\[AZ Code Generator and Script Canvas\]](/images/user-guide/scripting/script-canvas/script-canvas-custom-nodes-1.png)
+![AZ Code Generator and Script Canvas](/images/user-guide/scripting/script-canvas/script-canvas-custom-nodes-1.png)
 
 In **Step 1**, AZ Code Generator processes `MyNode.h` and looks for code generation tags \(source code location: `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`\). After processing, AZ Code Generator creates a file called `MyNode.generated.h`.
 

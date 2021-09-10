@@ -6,8 +6,6 @@ title: Using the File Tagging System to Include or Exclude Assets
 weight: 400
 ---
 
-{{< preview-migrated >}}
-
 O3DE uses a file tagging system to include or exclude files at various stages of processing. This system employs file tag rules to select files that match specified patterns. File tags are associated with each rule to use as keys in file tag queries. This is done by using the O3DE FileTag API. You can create your own custom file tag rules using the O3DE Asset Editor. This is useful whenever you need additional control over which files should be included or excluded during a processing step. For example, as part of asset bundling, it is useful to eliminate "false positives" found after using the **Missing Dependency Scanner**.
 
 **Topics**
@@ -35,15 +33,15 @@ Some file tags have designated uses within O3DE. Various tools may require that 
 1. Choose **File**, **Open**, and select either `exclude.filetag` or `include.filetag` from the `Engine` directory.
 
 1. Open **Definition**, find the line labeled **File Tag Map**, and click on the '**+**' button to add a new child element.
-![\[Start a new file tag rule by adding a new element to the File Tag Map.\]](/images/user-guide/assetbundler/asset-bundler-filetag-new-element.png)
+![Start a new file tag rule by adding a new element to the File Tag Map.](/images/user-guide/assetbundler/asset-bundler-filetag-new-element.png)
 
 1. Enter the desired file matching pattern in the **New Key** field.
-![\[Specify the desired file matching pattern.\]](/images/user-guide/assetbundler/asset-bundler-filetag-new-key.png)
+![Specify the desired file matching pattern.](/images/user-guide/assetbundler/asset-bundler-filetag-new-key.png)
 
 1. Open your new file pattern key from the list and select the appropriate **File Pattern** type.
 
 1. Add one or more **File Tags** to associate with your new file pattern.
-![\[Complete the new file tag rule by selecting a File Pattern type and entering one or more File Tags.\]](/images/user-guide/assetbundler/asset-bundler-filetag-example.png)
+![Complete the new file tag rule by selecting a File Pattern type and entering one or more File Tags.](/images/user-guide/assetbundler/asset-bundler-filetag-example.png)
 
 1. Select **File**, **Save** to save your new file tag rule.
 

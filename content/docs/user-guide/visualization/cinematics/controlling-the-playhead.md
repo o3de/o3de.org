@@ -3,11 +3,9 @@ description: ' Control the playhead in the <guilabel>Track View</guilabel> edito
 title: Controlling the Playhead
 ---
 
-{{< preview-migrated >}}
-
 The Track View's **Play** toolbar contains the main controls for controlling the playhead for the sequence timeline.
 
-![\[Control the playhead in the Track View.\]](/images/user-guide/cinematics/cinematics-track-view-editor-play-toolbar.png)
+![Control the playhead in the Track View.](/images/user-guide/cinematics/cinematics-track-view-editor-play-toolbar.png)
 
 The **Play** toolbar has the following controls.
 
@@ -39,7 +37,7 @@ The **In** and **Out** markers are small red triangles at the top of the sequenc
 
 For example, if a sequence is 300 frames long, and you right-click at the 50 frame tick, the **In** marker will move to that spot. If you right-click at the 200 frame tick, the **Out** marker will move to that spot.
 
-![\[Set the in and out markers in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-timeline.png)
+![Set the in and out markers in the timeline for a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-timeline.png)
 
 **Note**
 When you move the **In** and **Out** markers, this will apply the updated range to the **Go to start of sequence**, **Play**, **Go to end of Sequence**, and **Loop** settings. For example, if you change the **In** marker to the two second mark, the **Go to start of sequence** icon will now move the playhead to the two second mark.

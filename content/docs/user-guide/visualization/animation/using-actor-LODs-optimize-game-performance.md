@@ -3,8 +3,6 @@ description: ' Use levels of detail (LODs) to optimize game performance in Open 
 title: Using Actor LODs to Optimize Game Performance
 ---
 
-{{< preview-migrated >}}
-
 You can use levels of detail ([LODs](/docs/user-guide/appendix/glossary#lod)) to optimize the rendering performance of games. This is especially true for large in-game worlds, which are constrained by hardware, frame rate, and the real-time rendering limits. LODs increase performance and reduce draw calls by displaying progressively less detail in objects that are farther from the camera. To further reduce draw calls, lower LODs have multiple textures combined into one texture.
 
 ## Using Actor LODs in O3DE
@@ -54,7 +52,7 @@ Currently, O3DE supports skeletons created with LOD groups only.
 
 **To use LOD groups to create actor LODs**
 + To create an actor with multiple LOD meshes, use an empty LOD group as the parent of the skeleton and the LOD meshes. The following example shows a skeleton created with an LOD group and imported into O3DE.
-![\[Skeleton created as an LOD group\]](/images/user-guide/character-fbx-settings-lod-optimize-0.png)
+![Skeleton created as an LOD group](/images/user-guide/character-fbx-settings-lod-optimize-0.png)
 
 ## Using the FBX Settings Tool to Check LODs
 
@@ -66,7 +64,7 @@ After you export your `.fbx` file to O3DE, do the following:
 
 1. Right click the `.fbx` file and choose **Edit Settings**. The **FBX Settings** tool shows a **Level of Detail** modifier that lists the additional LOD meshes.
 
-![\[LOD entries in the FBX Settings tool\]](/images/user-guide/character-fbx-settings-lod-optimize-1.png)
+![LOD entries in the FBX Settings tool](/images/user-guide/character-fbx-settings-lod-optimize-1.png)
 
 You can use the **FBX Settings** tool to verify that your LODs were imported correctly. Currently, you can also unselect a mesh or skeleton for each LOD, but you can't move a mesh or skeleton across a level or add a new mesh or skeleton to a level.
 
@@ -84,7 +82,7 @@ After you import your LODs into O3DE Editor, you can add an actor LOD to a level
 
 **Example**
 
-![\[LOD material file in the Actor component in the Entity Inspector.\]](/images/user-guide/character-fbx-settings-lod-optimize-2.png)
+![LOD material file in the Actor component in the Entity Inspector.](/images/user-guide/character-fbx-settings-lod-optimize-2.png)
 
 ### Notes
 + O3DE supports only one material group for each actor.

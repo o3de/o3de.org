@@ -4,8 +4,6 @@ title: Debugging PhysX
 weight: 1000
 ---
 
-{{< preview-migrated >}}
-
 The PhysX system has the following features that you can use to debug issues.
 
 **Note**
@@ -77,7 +75,7 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 
 1. Click **PhysX Debug**.
 **Example**
-![\[PhysX Debug menu in gameplay mode.\]](/images/user-guide/physx/physx-debugger-imgui-tool.png)
+![PhysX Debug menu in gameplay mode.](/images/user-guide/physx/physx-debugger-imgui-tool.png)
 
 1. You can make the following changes.
 ****

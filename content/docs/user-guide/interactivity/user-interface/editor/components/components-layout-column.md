@@ -4,8 +4,6 @@ description: ' Use a layout column component in the Open 3D Engine UI Editor to
 title: LayoutColumn
 ---
 
-{{< preview-migrated >}}
-
 You can use a **LayoutColumn** component to organize child elements into a column. To use this feature, add the **LayoutColumn** component to an element and then add child elements. The UI system positions the child elements within the column, from top to bottom or bottom to top, depending on the order you choose in the component properties. The child elements can contain a texture or image, a button, a check box, text, columns, rows, grids, and so on.
 
 To see an in-game example of a completed canvas with the **Layout Column** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Column**. You can view examples of different child sizes within a column. Press **Esc** to exit the game.
@@ -15,24 +13,24 @@ To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExa
 You can add a prebuilt **Layout Column** element from the slice library. When you do this, a simple layout column is automatically created and nested in your **Hierarchy** pane.
 
 **To add a Layout Column element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **LayoutColumn**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **LayoutColumn**.
 
-By default, the layout column gives every child the same amount of space, regardless of its content. You can, however, manipulate the sizes of each child by adding the [layout cell](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md) component to each or specific children.
+ By default, the layout column gives every child the same amount of space, regardless of its content. You can, however, manipulate the sizes of each child by adding the [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to each or specific children.
 
 The layout column can also give varying space to each child depending on its content. To enable the layout column to do this, clear the **Ignore Default Cell** option in the **LayoutColumn** component's properties.
 
 In the first image, **Ignore Default Cells** is selected. The layout column gives each child the same amount of space regardless of their contents.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-ignore.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-ignore.png)
 
 In the second image, **Ignore Default Cells** is cleared. The layout column calculates its children's space based on their contents.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-clear.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-clear.png)
 
 To see an example of a completed canvas with the layout column component, open `SimpleColumn.uicanvas` in the LyShineExamples Gem \(`\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\`\).
 
 **To edit a layout column component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **LayoutColumn** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutColumn** and do the following, as appropriate:
 ****Padding****
 Type values in pixels, relative to the element's borders.
 ****Spacing****
@@ -44,5 +42,5 @@ If the layout's children don't occupy all the available layout space, use this s
 For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally.
 For **Vertical**, select **Top**, **Center**, or **Bottom** to determine how the children are aligned vertically.
 ****Ignore Default Cell****
-Selected by default, this property causes the layout column to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md) component). The layout column ignores the layout cell's content-based default calculations.
-When you clear this option, the layout column uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components-layout-cell.md).
+Selected by default, this property causes the layout column to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component). The layout column ignores the layout cell's content-based default calculations.
+When you clear this option, the layout column uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell).

@@ -4,8 +4,6 @@ description: ' Use the Dropdown component to make an element behave like a drop-
 title: Dropdown
 ---
 
-{{< preview-migrated >}}
-
 You can use the **Dropdown** component to make an element behave like a drop-down menu. Use this component with child elements that contain content. The child elements provide the contents of the drop-down menu.
 
 You can use the **Dropdown** component with the **DropdownOption** component. With the **DropdownOption** component, you can configure options to change the menu text and its icon after it is selected.
@@ -20,15 +18,15 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 You can add a prebuilt **Dropdown** element from the slice library. When you do this, a drop-down menu, three options, and their image elements are automatically created in your **Hierarchy** pane.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-interactive-dropdown-slice.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-interactive-dropdown-slice.png)
 
 **To add a Dropdown element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Dropdown**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **Dropdown**.
 
 **To edit a Dropdown component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Dropdown** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Dropdown** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
 **Elements, Content**
 Select an element from the list. This specifies the entity that appears when the drop-down menu is expanded.
 **Elements, Expanded Parent**

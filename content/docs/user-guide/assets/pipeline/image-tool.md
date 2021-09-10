@@ -5,8 +5,6 @@ title: Using the Resource Compiler Image Tool
 draft: true
 ---
 
-{{< preview-migrated >}}
-
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands.
 
 **Note**
@@ -15,7 +13,7 @@ You can also use the Texture Settings Editor to manage your texture settings for
 **To open the Resource Compiler image tool**
 + Right-click an image file from within a file explorer and choose **RC Open Image**.
 
-![\[Open image files with the Resource Compiler image tool\]](/images/user-guide/assets/pipeline/asset-pipeline-images-resourcecompiler-2.png)
+![Open image files with the Resource Compiler image tool](/images/user-guide/assets/pipeline/asset-pipeline-images-resourcecompiler-2.png)
 
 The Resource Compiler image tool lists image processing presets defined in the `rc.ini` file.
 
@@ -30,4 +28,4 @@ The Resource Compiler image tool lists image processing presets defined in the `
 1. Click **Generate Output**.
 
    Your `imagefilename.exportsettings` file and the resulting `imagefilename.dds` output is saved in the same directory as your source image.
-![\[In the Resource Compiler image tool, select a preset and then click Generate Output to generate the .exportsettings file to check in.\]](/images/user-guide/assets/pipeline/asset-pipeline-images-resourcecompiler.jpg)
+![In the Resource Compiler image tool, select a preset and then click Generate Output to generate the .exportsettings file to check in.](/images/user-guide/assets/pipeline/asset-pipeline-images-resourcecompiler.jpg)

@@ -5,13 +5,11 @@ description: 'Open 3D Engine (O3DE) PostFX Layer component reference.'
 toc: true
 ---
 
-{{< preview-new >}}
-
 The **PostFx Layer** component controls how post-processing effects' (PostFX) are applied in a scene.
 
 ## Provider ##
 
-[Atom Gem](/docs/atom-guide)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Properties

@@ -4,8 +4,6 @@ description: ' Use the features of the Python Editor Bindings gem to automate ac
 title: Automating the O3DE Editor with the Python Editor Bindings gem
 ---
 
-{{< preview-migrated >}}
-
  Some tasks in the O3DE Editor are tedious or could easily be automated, and to support that, O3DE has support for scripting the editor through Python bindings to the underlying editor implementation. These bindings are enabled with the **PythonEditorBindings** gem, and interacted with through a Python 3 library embedded within the editor. You can access a Python REPL through an in-editor console, or launch the editor with an argument that loads and runs a Python script on boot.
 
 ## Enable editor automation 

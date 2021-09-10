@@ -4,8 +4,6 @@ description: ' Use the VRAM profiler in Open 3D Engine to determine which resour
 title: Using Profiler for VRAM
 ---
 
-{{< preview-migrated >}}
-
 You can use the video memory profiler (VRAM profiler) to determine which resources are contributing most to runtime VRAM usage in your game.
 
  The VRAM profiler records the amount of video memory used by a game, including how many memory deallocations and allocations occurred during the capture. This latter information is useful in tracking down rendering performance bottlenecks.
@@ -28,7 +26,7 @@ The VRAM profiler has the following attributes:
 
 The following image shows how your saved `.csv` file appears in a spreadsheet application:
 
-![\[Captured data\]](/images/user-guide/profiler-vram-captured-data.png)
+![Captured data](/images/user-guide/profiler-vram-captured-data.png)
 
 The captured data contains essentially two tables of information: an overview of memory allocation and usage (divided between texture and buffer assets), and a list of resources with the amount of VRAM that was allocated for each during the capture.
 
@@ -57,17 +55,17 @@ The size, in bytes, of the allocation.
 
 When you first open the spreadsheet, the data is unordered. To sort the data, you can use a spreadsheet application:
 
-![\[Custom sort\]](/images/user-guide/profiler-vram-sort-custom.png)
+![Custom sort](/images/user-guide/profiler-vram-sort-custom.png)
 
 To quickly and easily identify the largest offending assets or runtime resources, sort by **VRAM Allocation Size** in descending order, or by **Resource Name** from A to Z:
 
-![\[VRAM sort descending\]](/images/user-guide/profiler-vram-sort-descending.png)
+![VRAM sort descending](/images/user-guide/profiler-vram-sort-descending.png)
 
 ### Negative VRAM Allocation Sizes 
 
  Some fields may have a negative number for **VRAM Allocation Size**, as in the following image:
 
-![\[Negative VRAM allocation size\]](/images/user-guide/profiler-vram-negative-allocation.png)
+![Negative VRAM allocation size](/images/user-guide/profiler-vram-negative-allocation.png)
 
 These important occurrences show that a VRAM deallocation event occurred during the capture. If you observe a large number of deallocation entries over a short time period, your game might be experiencing a significance decrease in performance. To improve your game's performance across all operating systems, you should aim to have as few idle per-frame VRAM allocations and deallocations as possible.
 

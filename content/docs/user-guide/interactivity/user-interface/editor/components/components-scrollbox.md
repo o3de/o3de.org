@@ -4,13 +4,11 @@ description: ' Use a scroll box component to present content, such as images or 
 title: ScrollBox
 ---
 
-{{< preview-migrated >}}
-
 You can use a **ScrollBox** component to present content, such as images or text, within a scrollable area.
 
 This component is typically used with a mask component, which hides the content outside of the masked area.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.gif)
 
 To see in-game examples of completed canvases with the **ScrollBox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBox**. You can view examples of different scrolling options, snapping options, interactions between scroll boxes and other components, and nested scroll boxes. Press **Esc** to exit the game.
 
@@ -23,18 +21,18 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 You can add a prebuilt **ScrollBox** element from the slice library. When you do this, a mask, content, and image elements are automatically created and nested in your **Hierarchy** pane.
 
 **To add a ScrollBox element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **Scrollbox**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **Scrollbox**.
 
-The element named **ScrollBox** (1) has the **ScrollBox** component (2) applied to it. You can add an image to the **ScrollBox** element's **Image** component (3), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox **component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/editor/anchors.md) component.
+The element named **ScrollBox** (1) has the **ScrollBox** component (2) applied to it. You can add an image to the **ScrollBox** element's **Image** component (3), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox **component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/editor/anchors) component.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.jpg)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.jpg)
 
-The element named **Mask** has a [**Mask**](/docs/user-guide/interactivity/user-interface/editor/components-mask.md) component applied to it, which acts as the viewport through which you can see the content. To specify a custom mask, you can add an image to the **Mask** element's **Image** component. The contents are drawn to the visible area of the mask; the transparent area of the mask hides content.
+The element named **Mask** has a [**Mask**](/docs/user-guide/interactivity/user-interface/editor/components/components-mask) component applied to it, which acts as the viewport through which you can see the content. To specify a custom mask, you can add an image to the **Mask** element's **Image** component. The contents are drawn to the visible area of the mask; the transparent area of the mask hides content.
 
 **To edit a scroll box component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **ScrollBox** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **ScrollBox** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
 **Content**, **Content element**
 Select an element from the list to provide the content to be displayed within the scroll box.
 **Content**, **Initial scroll offset**

@@ -4,8 +4,6 @@ description: ' Pin an entity''s inspector to have multiple entities available to
 title: Pinning an Entity's Inspector
 ---
 
-{{< preview-migrated >}}
-
 You can pin an entity's inspector to keep it open and visible even when you select another entity. You can pin inspectors for multiple entities, and also pin multiple inspector instances of the same entity. This helps you compare the entities and their components to each other.
 
 A pinned inspector has the following features:
@@ -25,11 +23,11 @@ You can pin an inspector from the **Entity Outliner** or the **Entity Inspector*
 1. Do one of the following:
 
    1. In the **Entity Outliner**, right-click the entity and then choose **Open pinned Inspector**.
-![\[In the Entity Outliner, choose Open pinned Inspector to pin an inspector for that entity.\]](/images/user-guide/component/entity_system/component-entity-inspector-pin-1.png)
+![In the Entity Outliner, choose Open pinned Inspector to pin an inspector for that entity.](/images/user-guide/component/entity_system/component-entity-inspector-pin-1.png)
 
    1. In the **Entity Inspector**, click the pin icon.
-![\[In the Entity Inspector, click the pin icon to pin an inspector for the entity.\]](/images/user-guide/component/entity_system/component-entity-inspector-pin-2.png)
+![In the Entity Inspector, click the pin icon to pin an inspector for the entity.](/images/user-guide/component/entity_system/component-entity-inspector-pin-2.png)
 
 1. In O3DE Editor, you can view the pinned entity inspectors.
 **Example**
-![\[Multiple pinned inspectors open in a level.\]](/images/user-guide/component/entity_system/component-entity-inspector-pin.png)
+![Multiple pinned inspectors open in a level.](/images/user-guide/component/entity_system/component-entity-inspector-pin.png)

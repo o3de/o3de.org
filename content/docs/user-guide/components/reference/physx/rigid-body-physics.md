@@ -3,7 +3,7 @@ description: ' Learn more about the PhysX Rigid Body component in Open 3D Engine
 title: PhysX Rigid Body
 ---
 
-{{< preview-migrated >}}
+
 
 The **PhysX Rigid Body** component defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. For example, you can add the **PhysX Rigid Body** component to the entity to create a projectile.
 
@@ -30,7 +30,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 
 ## PhysX Rigid Body component properties 
 
-![\[PhysX Rigid Body component properties.\]](/images/user-guide/component/physx/component-physx-rigid-body.png)
+![PhysX Rigid Body component properties.](/images/user-guide/component/physx/component-physx-rigid-body.png)
 
 The **PhysX Rigid Body** component has the following properties.
 
@@ -126,7 +126,7 @@ A PhysX entity that is dynamic can move and collide with other entities.
 **Example**
 
    The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the static rigid body.
-![\[Animated example of a dynamic entity falling to the terrain and bouncing around.\]](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
+![Animated example of a dynamic entity falling to the terrain and bouncing around.](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
 
 **Note**
 For the **[Transform](/docs/user-guide/components/reference/transform/)** component, clear the **Static** property. This ensures that the mesh moves with the physics simulation.

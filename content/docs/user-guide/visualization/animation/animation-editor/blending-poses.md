@@ -4,8 +4,6 @@ description: ' Learn how to blend poses using blend nodes in the Open 3D Engine 
 title: Blending Poses with Blend Nodes
 ---
 
-{{< preview-migrated >}}
-
 You can use **Blend** nodes in animation graphs to create an animation that blends two input poses.
 
 **Animation Editor** has the following types of blend nodes, each of which blend poses in different manners:
@@ -23,7 +21,7 @@ The blend nodes feature a set of attributes that control different aspects of ho
 
 The **Sync Mode** attribute determines the method of synchronizing motion clips to keep the feet synchronized.
 
-![\[Blend node attributes: Sync Mode.\]](/images/user-guide/actor-animation/animation-editor-blending-attributes-1.png)
+![Blend node attributes: Sync Mode.](/images/user-guide/actor-animation/animation-editor-blending-attributes-1.png)
 
 
 ****
@@ -52,7 +50,7 @@ The **Event Filter Mode** attribute determines which node's events are emitted.
 
 The **Extraction Mode** attribute controls how the motion extraction behaves when blending. For example, for transitions inside state machines, you can use this node to ensure that a 180 degree turn completes.
 
-![\[Blend node attributes: Extraction Mode.\]](/images/user-guide/actor-animation/animation-editor-blending-attributes-3.png)
+![Blend node attributes: Extraction Mode.](/images/user-guide/actor-animation/animation-editor-blending-attributes-3.png)
 
 
 ****

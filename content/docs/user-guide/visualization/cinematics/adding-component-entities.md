@@ -3,8 +3,6 @@ description: ' Add component entities in the <guilabel>Track View</guilabel> edi
 title: Adding Component Entities
 ---
 
-{{< preview-migrated >}}
-
 In the Track View, sequences determine what to animate based on what you add to the sequence. For example, if you want to animate an entity with an **Actor** or **Light** component, you can add that component entity to a sequence and then modify its properties.
 
 **To add a component entity to a sequence**
@@ -16,7 +14,7 @@ In the Track View, sequences determine what to animate based on what you add to 
 1. Do one of the following:
    + In the node browser, right-click and choose **Add Selected Entity**.
    + On the **Sequence/Node** toolbar, click the **Add Selected Entity** icon.
-![\[Add a component entity to a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-adding-a-component-entity.png)
+![Add a component entity to a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-adding-a-component-entity.png)
 
 All component entities have the **Transform** component. This means you can animate the **Position** and **Rotation** properties for each component entity that is part of the sequence as needed.
 

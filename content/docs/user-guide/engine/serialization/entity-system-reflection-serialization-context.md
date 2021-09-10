@@ -4,8 +4,6 @@ description: ' Use the serialization context to provide persistence for C++ obje
 title: Serialization Context
 ---
 
-{{< preview-migrated >}}
-
 You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` (runtime type information), as in the following example:
 
 ```
@@ -49,7 +47,7 @@ Serializers are a useful way to provide custom data formats. If you want to do c
 
 To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface. Use the interface to override how data is handled as it is streamed into its persistent format. You can also use the interface to determine the actions that occur when the reflected object is serialized (read or written).
 
-The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp`\) provides a good example of a custom serializer. To save a UUID value, the code writes it directly into the stream. This part of the code is straightforward.
+The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp)` provides a good example of a custom serializer. To save a UUID value, the code writes it directly into the stream. This part of the code is straightforward.
 
 ```
 /// Store the class data into a binary buffer

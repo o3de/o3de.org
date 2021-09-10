@@ -3,8 +3,6 @@ description: null
 title: Creating a UI Slice
 ---
 
-{{< preview-migrated >}}
-
 A slice can contain any number of UI elements. However, all UI elements in a slice must be contained within one parent element.
 
 You don't need to select all of the elements to go into the new slice. If you just select one element, all of its child elements are included in the slice.
