@@ -6,9 +6,9 @@ weight: 200
 toc: true
 ---
 
-In Open 3D Engine (O3DE), a *level* is a playable section of a project. Within a level, you create entities, instantiate prefabs, arrange lights and cameras, and implement scripted behaviors and interactivity. A level can be interpreted literally as a level of a game, however, levels are the basis for all O3DE projects. Non-gaming applications such as a simulations require at least one level. A project can have a single level or many levels.
+In Open 3D Engine (O3DE), a *level* is a playable section of a project. Within a level, you create entities, instantiate prefabs, arrange lights and cameras, and implement scripted behaviors and interactivity. A level can be interpreted literally as a level of a game, however, levels are the basis for all O3DE projects. Non-gaming applications such as simulations require at least one level. A project can have a single level or many levels.
 
-In O3DE, levels are stored in `.prefab` files within subdirectories of the `Levels` directory of your project. The level `.prefab` file is in JSON format and contains a list of the entities placed in the level, including the components, values, and asset references that define the entities. All assets including the meshes, scripts, materials, audio files, and other prefabs that compose the level are referenced within the level `.prefab` file.
+In O3DE, levels are stored in `.prefab` files within subdirectories of the `Levels` directory of your project. The level `.prefab` file is in JSON format and contains a list of the entities placed in the level, including the components, values, and asset references that define the entities. All assets, including the meshes, scripts, materials, audio files, and other prefabs that compose the level, are referenced within the level `.prefab` file.
 
 {{< note >}}
 By default, all levels must be placed in the `Levels` subdirectory of the project.
