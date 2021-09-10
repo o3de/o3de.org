@@ -7,7 +7,7 @@ toc: true
 
 Use comboboxes to offer users a list of options from a dropdown menu. You define whether or not the input box is editable. An editable input box allows the user to type in a value *or* select a value from the dropdown menu.
 
-![\[component combobox style\]](/images/tools-ui/component-combobox-style.png)
+![component combobox style](/images/tools-ui/component-combobox-style.png)
 
 ## Usage guidelines<a name="combobox-usage"></a>
 
@@ -28,7 +28,7 @@ Avoid these design choices when using comboboxes:
 
 ## Basic combobox<a name="combobox-basic"></a>
 
-![\[component combobox basic\]](/images/tools-ui/component-combobox-basic.png)
+![component combobox basic](/images/tools-ui/component-combobox-basic.png)
 
 Set up and control comboboxes in Qt Designer or in code.
 
@@ -59,7 +59,7 @@ comboBox->setDisabled(true);
 
 ## Combobox with validator<a name="combobox-validator"></a>
 
-![\[component combobox validator\]](/images/tools-ui/component-combobox-validator.png)
+![component combobox validator](/images/tools-ui/component-combobox-validator.png)
 
 In the following example, a simple validator has been defined. When validation fails, an error icon appears in the combobox's input box.
 

@@ -134,7 +134,6 @@ We can also edit the direction of the tangent through the Control Point. Usually
 ## Vehicle Orientation
 
 In Vehicle Rotation mode, you are not editing the shape of the spline itself, but the facing of the vehicle as it flies the spline.
-[Kythera AI Gem](index.md)
 
 ## 3D Navigation Splines Tool
 

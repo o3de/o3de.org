@@ -8,20 +8,20 @@ You can use the **Draggable** component to make a UI element movable from one lo
 
 Because drag-and-drop behavior is game specific, the **Draggable** and **DropTarget** components are designed to be used with scripting or C++ to define actions that result from the drag and the drop.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-draggable.gif)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-draggable.gif)
 
 To add the draggable component to a UI element, use the **Add Component** menu in the **Properties** pane.
 
 The following picture shows an example of a **Draggable** component, where color has been added to the state actions for **Drag States**.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-draggable.png)
 
-The **Draggable** component is an interactive component. It has the standard [interactive properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md).
+The **Draggable** component is an interactive component. It has the standard [interactive properties](components-interactive-properties).
 
 **To edit a Draggable component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **Draggable** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Draggable** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
+See [Properties](components-interactive-properties) to edit the common interactive component settings.
 **Drag States**
 Define the color, alpha, sprite, or font of this element and its child elements for a particular drag state.
 When it is not being dragged, an element with a draggable component uses the interactable states (pause on, pressed, and disabled).

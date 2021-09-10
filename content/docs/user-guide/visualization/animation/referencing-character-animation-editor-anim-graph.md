@@ -24,6 +24,7 @@ This section shows you how to create reference nodes in the **Animation Editor**
 **To create a reference to an external anim graph**
 
 1. In the **Animation Editor**, do one of the following:
+
     + Right-click the **Anim Graph** grid and choose **Create Node**, **Sources**, **Reference**.
 
         ![Create a reference node from the Anim Graph grid.](/images/user-guide/actor-animation/char-animation-editor-anim-graph-ref-1.png)

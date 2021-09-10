@@ -5,7 +5,7 @@ toc: true
 layout: docs_landing
 ---
 
-{{< preview-new >}}
+
 
 Open 3D Engine (O3DE) is an open-source 3D development engine for game, simulation, and multimedia creators.
 

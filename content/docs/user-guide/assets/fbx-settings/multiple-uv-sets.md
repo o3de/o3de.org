@@ -5,7 +5,7 @@ title: Multiple UV sets for meshes and actors
 
 You can use **FBX Settings** to import multiple UV sets. With multiple UV sets, you can apply a detail or blend layer map to your geometry using UV sets that are independent of the diffuse, normal, and spec UV sets. With multiple UV sets, you can also apply an animated glow that is independent of other texture maps on a mesh.
 
-![\[Image NOT FOUND\]](/images/user-guide/fbx/anim-multi-uv-support.gif)
+![Image NOT FOUND](/images/user-guide/fbx/anim-multi-uv-support.gif)
 
 **Topics**
 + [Processing multiple UV sets](#fbx-export-multiple-uv-sets)

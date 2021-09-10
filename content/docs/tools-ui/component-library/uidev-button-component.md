@@ -11,7 +11,7 @@ Use buttons to enable users to make selections that cause the UI to take action.
 + Dropdown button
 + Icon button
 
-![\[component button types\]](/images/tools-ui/component-button-types.png)
+![component button types](/images/tools-ui/component-button-types.png)
 
 ## Usage guidelines<a name="button-usage"></a>
 

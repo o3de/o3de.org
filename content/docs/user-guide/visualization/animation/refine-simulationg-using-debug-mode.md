@@ -64,3 +64,4 @@ In the following procedure, use the debug mode to refine the simulated object's 
     The following animation is the finished debugged version of the actor running. Note that the tassel no longer passes through the actor's body.
 
     ![View the final animation of the actor and the simulated object.](/images/shared/simulated-objects-23.gif)
+    

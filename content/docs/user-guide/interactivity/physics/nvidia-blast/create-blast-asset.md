@@ -22,7 +22,7 @@ These steps can be applied to any mesh. For best results, the mesh should be ful
 1. At the **SOP** level, append a **Name** SOP to the geometry to be fractured.
 
 1. In the **Name** SOP, enter **root** for the **Name** parameter. This applies a `name` primitive attribute to the geometry with the value **root** so that the root mesh can be identified.
-![\[Add a Name SOP in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-name-node.png)
+![Add a Name SOP in Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-name-node.png)
 
 1. You can use the **Fracture Selection** tool to automatically set up a fracture network. Before you continue, it's important to understand the two Houdini Digital Assets provided by the NVIDIA Blast gem to fracture geometry, **Fracture Single** and **Fracture Hierarchy**:
    + **Fracture Single** fractures the provided geometry into a specified number of chunks. Multiple levels of fracture can be created by appending a **Fracture Single** SOP to already fractured geometry.
@@ -35,7 +35,7 @@ Both **Fracture Single** and **Fracture Hierarchy** Houdini Digital Assets (HDAs
    The provided **Fracture Selection** tool adds a **Fracture Single** SOP and feeds the root mesh and the resulting chunks from the fracture operation into a **Merge** SOP.
 
    With the **Name** SOP selected, choose **Fracture Selection** from the **Fracture tools for Blast** shelf. A **Fracture Single** SOP is appended to the network and input into a **Merge** SOP along with the root mesh. Note that the **Fracture Single** SOP specifies **root** as the **Group to fracture** and **chunk** as the **Chunk name prefix**.
-![\[Fracture Selection in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-fracture-selection.png)
+![Fracture Selection in Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-fracture-selection.png)
 
 1. To visualize the fracture:
 
@@ -48,7 +48,7 @@ Both **Fracture Single** and **Fracture Hierarchy** Houdini Digital Assets (HDAs
    1. In the list options, choose **Attributes** and select **name** to visualize the geometry by its name attribute. You can see the hierarchy of geometry in the list, and the mesh chunks are colored by their name primitive attribute in the perspective viewport.
 **Note**
 With Houdini's geometry select mode set to primitive, you can press the **S** key to enter select mode and click on any chunk, at any level, in the groups and attributes overlay, to select that chunk and its descendants.
-![\[Fracture Selection in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-fracture-visualize.png)
+![Fracture Selection in Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-fracture-visualize.png)
 
 1. It might be difficult to see where the mesh is fractured if the root geometry is complex. You can use **Exploded View** to better inspect the fracture result. To see an exploded view of the fractured mesh:
 
@@ -57,7 +57,7 @@ With Houdini's geometry select mode set to primitive, you can press the **S** ke
    1. Append an **Exploded View** SOP to the **Partition** SOP.
 
    1. Enable the **Display** flag on the **Exploded View** SOP.
-![\[Fracture Selection in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-exploded-view.png)
+![Fracture Selection in Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-exploded-view.png)
 
 1. Fractures can be hierarchical, that is, a fracture chunk can be further fractured. To add an additional fracture level:
 
@@ -68,7 +68,7 @@ With Houdini's geometry select mode set to primitive, you can press the **S** ke
    1. Connect the output of the newly added **Fracture Single** SOP to the input of the **Merge** SOP.
 
    1. In the **Fracture Single** SOP, specify a chunk to fracture. In the example below, **chunk1** (the rabbit's face) is specified in the **Group to fracture** parameter using the path **root/chunk1**.
-![\[Fracture layer in Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-fracture-layer.png)
+![Fracture layer in Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-fracture-layer.png)
 
 ## Export an asset for NVIDIA Blast 
 
@@ -97,4 +97,4 @@ For more information, see [Partial destruction with NVIDIA Blast](/docs/user-gui
 
 1. Choose **Export FBX** to generate a `.fbx` asset.
 
-![\[Export blast assets from Houdini.\]](/images/user-guide/physx/blast/ui-blast-houdini-export.png)
+![Export blast assets from Houdini.](/images/user-guide/physx/blast/ui-blast-houdini-export.png)

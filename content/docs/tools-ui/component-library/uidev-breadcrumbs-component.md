@@ -9,7 +9,7 @@ Use the breadcrumbs component to enable users to track their position along a hi
 
 For an example of the "breadcrumb" concept, see the **Anim Graph** navigation in the O3DE **Animation Editor**.
 
-![\[component breadcrumbs navigation example\]](/images/tools-ui/component-breadcrumbs-navigation-example.gif)
+![component breadcrumbs navigation example](/images/tools-ui/component-breadcrumbs-navigation-example.gif)
 
 In an **Anim Graph** breadcrumb, the graph's name is displayed as the top level of navigation. Each node that you open appears as a clickable hyperlink.
 
@@ -17,7 +17,7 @@ In an **Anim Graph** breadcrumb, the graph's name is displayed as the top level 
 
 Breadcrumbs have several customization options. The standard, horizontal layout includes the following features:
 
-![\[component breadcrumbs anatomy\]](/images/tools-ui/component-breadcrumbs-anatomy.png)
+![component breadcrumbs anatomy](/images/tools-ui/component-breadcrumbs-anatomy.png)
 
 1.  **Path history navigation**
 
@@ -37,7 +37,7 @@ Breadcrumbs have several customization options. The standard, horizontal layout 
 
 ## Basic breadcrumb<a name="breadcrumbs-basic"></a>
 
-![\[component breadcrumbs basic\]](/images/tools-ui/component-breadcrumbs-basic.png)
+![component breadcrumbs basic](/images/tools-ui/component-breadcrumbs-basic.png)
 
 The simplest breadcrumb example includes the **breadcrumbs** widget and an optional, initial path. Your code can react to path changes by connecting to the `pathChanged` signal. Alternatively, you can call `pushPath` to set the breadcrumb state to match the current state of your project.
 
@@ -68,7 +68,7 @@ connect(breadCrumbs, &AzQtComponents::BreadCrumbs::pathChanged, this, [](const Q
 
 ## Breadcrumb with path navigation and browse<a name="breadcrumbs-navigation-and-browse"></a>
 
-![\[component breadcrumbs navigation and browse\]](/images/tools-ui/component-breadcrumbs-navigation-and-browse.png)
+![component breadcrumbs navigation and browse](/images/tools-ui/component-breadcrumbs-navigation-and-browse.png)
 
 In some scenarios, it's useful for users to be able to navigate back and forth in their navigation history. In addition, you might want to offer a browse button to select a new path.
 

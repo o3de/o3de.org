@@ -3,13 +3,13 @@ description: ' The Open 3D Engine PhysX Fixed Joint component. '
 title: PhysX Fixed Joint component
 ---
 
-{{< preview-migrated >}}
+
 
 With the **PhysX Fixed Joint** component, you can create a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis.
 
 ## PhysX Fixed Joint component properties 
 
-![\[Properties of the PhysX Fixed Joint component\]](/images/user-guide/physx/physx/ui-physx-fixed-joint-component.png)
+![Properties of the PhysX Fixed Joint component](/images/user-guide/physx/physx/ui-physx-fixed-joint-component.png)
 
 **Local Position**
 Specify the position of the joint relative to the entity transform.
