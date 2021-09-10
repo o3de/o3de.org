@@ -1,17 +1,20 @@
 ---
-description: ' Learn about debugging Lua scripts in Open 3D Engine. '
-title: ' Debugging Lua scripts'
+linkTitle: Debugging Lua Scripts
+title: Debugging Lua scripts
+description: Learn about debugging Lua scripts in Open 3D Engine.
+toc: true
+weight: 850
 ---
 
 O3DE provides Lua scripts with several functions to make debugging easier.
 
 ## Logging to the Console 
 
-To print text to O3DE Editor and the console, use the `Debug.Log()` function.
+To print text to **O3DE Editor** and the console, use the `Debug.Log()` function.
 
 The following example shows the use of the `Debug.Log()` function.
 
-```
+```lua
 local LoggingTest = { }
 function LoggingTest:OnActivate()
     componentName = "MyComponent"
@@ -27,7 +30,7 @@ You can use the `assert` function to display an error message in the console whe
 
 The following example shows the use of the `assert` function.
 
-```
+```lua
 function SampleScript:DoStuff()
     -- This value should never be negative
     assert( self.positiveValue >= 0, "Expected a positive value! Got: " .. self.positiveValue )
@@ -43,7 +46,7 @@ You can use the `Debug.Error()` function to display an error in the console and 
 
 The following example shows the use of the `Debug.Error()` function.
 
-```
+```lua
 function SampleScript:CheckAndError()
     -- This value should never be negative
     Debug.Error( self.positiveValue >= 0, "Detected a negative value: " .. self.positiveValue )
@@ -59,7 +62,7 @@ A script condition can occur that does not adversely affect the execution of the
 
 The following example shows the use of the `Debug.Warning()` function.
 
-```
+```lua
 function SampleScript:CheckValue()
     -- This value should probably never be negative
     Debug.Warning( self.positiveValue >= 0, "Detected a negative value: " .. self.positiveValue )
