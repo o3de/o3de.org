@@ -11,7 +11,7 @@ prerequisites and configuration](#software-prerequisites)
 section, each prerequisite is listed along with any specific configuration steps
 required.
 
-## Hardware requirements
+# Hardware requirements
 
 Minimum hardware requirements for development include the following:
 
@@ -32,19 +32,15 @@ RAM and free disk space requirements are dependent on the options that you selec
 {{< /note >}}
 
 
-## Software prerequisites and configuration {#software-prerequisites}
+# Software prerequisites and configuration {#software-prerequisites}
 
-Creating new projects or using the advanced development features of O3DE requires several software components. You will need a development environment that includes the following:
+Creating new projects or using the advanced development features of O3DE requires several software components depending on the operating system you are using. 
 
-### Operating System
+## Microsoft Windows
 
 At this time, Microsoft Windows is the primary platform for using the O3DE
 editor and for building source. Specifically, **Windows 10 version 1809 (10.0.17763)**
 or later is required.
-
-Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
-
-Support for Linux is a work in progress.
 
 ### Microsoft Visual Studio
 
@@ -119,3 +115,95 @@ If the current CMake version was not returned because CMake cannot be found, loc
 1. Choose **OK** to save your changes and close the windows that were opened.
 
 1. Verify that `cmake` is on the system path by opening a new command line window and running `cmake --version` again.
+
+## macOS
+
+Support for developing on macOS is in an experimental stage. At a minimum, you need macOS Catalina, Intel x86_64, XCode 11, and a Metal-compatible video card that meets the hardware requirements above.
+
+## Linux 
+
+The primary Linux distribution for using the O3DE editor is Ubuntu 20.04.3 LTS. The following instructions will described how to retrieve and install the required software packages through Ubuntu's **apt-get** command-line utility.
+
+
+### CMake
+
+As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** from the CMake rather than the default one provided by your current Linux distribution. If there is already a cmake installed, but does not match the minimum version, you will need to remove it with the following command.
+
+```shell
+sudo apt-get remove cmake
+```
+
+In order to get the latest version of cmake for Ubuntu, you can add the Kitware APT repository to your ubuntu package list and run apt-get to install (See [Kitware APT Page](https://apt.kitware.com/) for details)
+
+```shell
+wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
+
+echo 'deb [signed-by=/usr/share/keyrings/kitware-archive-keyring.gpg] https://apt.kitware.com/ubuntu/ focal main' | sudo tee /etc/apt/sources.list.d/kitware.list >/dev/null
+
+sudo apt-get update
+
+sudo apt-get install cmake
+```
+
+Once installed, verify that the version meets the minimum version criteria.
+
+```shell
+cmake --version
+```
+
+### Clang
+
+O3DE requires Clang to compile all of the native C++ code. Although Clang-6 is supported, it is recommended to use Clang-12 for the build process.
+
+```shell
+sudo apt-get install clang-12 
+```
+
+### Python 3.7 dependency on libffi
+
+Ubuntu 20.04.3 LTS does not support Python 3.7, however O3DE's local python package is Python 3.7 and has a library dependency on an earlier version of libffi that does not come with Ubunutu 20.04.3 LTS. You will need to manually install the older version of libffi onto Ubunutu 20.04.3 LTS in order for O3DE's Python to execute properly. The steps below describe create a temp folder under /tmp to download and manually install the specific debian package.
+
+{{< note >}}
+Curl is required to perform the download step described in the instructions below.
+{{< /note >}}
+
+
+```shell
+pushd /tmp
+
+LIBFFI_PACKAGE_NAME=libffi6_3.2.1-8_amd64.deb
+LIBFFI_PACKAGE_URL=http://mirrors.kernel.org/ubuntu/pool/main/libf/libffi/
+
+curl --location $LIBFFI_PACKAGE_URL/$LIBFFI_PACKAGE_NAME -o $LIBFFI_PACKAGE_NAME
+
+sudo apt install ./$LIBFFI_PACKAGE_NAME
+
+popd
+```
+
+### Additional Library Dependencies
+
+O3DE requires some additional library packages to be installed as well. 
+
+* libglu1-mesa-dev
+* libxcb-xinerama0
+* libxcb-xinput0
+* libfontconfig1-dev
+* libcurl4-openssl-dev                    
+* libsdl2-dev                             
+* zlib1g-dev
+* mesa-common-dev
+
+These packages can be downloaded and installed through **apt-get**.
+
+```shell
+sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev zlib1g-dev mesa-common-dev
+```
+
+### Ninja Build System (Optional)
+
+CMake supports Linux's default 'Unix Makefiles'. However, this does not support multiple configurations, so when a cmake project is generated, you must supply which configuration you want the build for (debug, profile, or release). The Ninja build system, specifically the [Ninja Multi-Confg](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html) does support multiple configurations within the same generated build folder, so it is recommended to use this generator for O3DE development. This can be installed through **apt-get**
+
+```shell
+sudo apt-get install ninja-build
+```
