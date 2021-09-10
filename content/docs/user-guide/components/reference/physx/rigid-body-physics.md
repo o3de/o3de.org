@@ -28,7 +28,7 @@ For more information, see [Simulating physics behavior with the PhysX system](/d
 + [PhysX Rigid Body component properties](#physx-rigid-body-component-properties)
 + [Creating a Dynamic PhysX Entity](#creating-a-dynamic-physx-entity)
 
-## PhysX Rigid Body component properties 
+## PhysX Rigid Body component properties
 
 ![PhysX Rigid Body component properties.](/images/user-guide/component/physx/component-physx-rigid-body.png)
 
@@ -104,11 +104,11 @@ When enabled, non-simulated shapes will be included in the mass, center of mass,
 **Debug draw COM**
 When enabled, the center of mass is displayed for this PhysX rigid body.
 
-## Creating a Dynamic PhysX Entity 
+## Creating a Dynamic PhysX Entity
 
 A PhysX entity that is dynamic can move and collide with other entities.
 
-**To create a dynamic PhysX entity**
+**To create a dynamic PhysX entity:**
 
 1. Create an entity.
 
@@ -123,10 +123,11 @@ A PhysX entity that is dynamic can move and collide with other entities.
 1. Create another entity underneath the first, with a **PhysX Collider** component and a **Mesh** component but without a **PhysX Rigid Body** component. This will create a static rigid body.
 
 1. Press **Ctrl+G** to enter gameplay mode.
-**Example**
 
-   The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the static rigid body.
-![Animated example of a dynamic entity falling to the terrain and bouncing around.](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
+    ![Animated example of a dynamic entity falling to the terrain and bouncing around.](/images/user-guide/shared/physx-creating-dynamic-object-1.gif)
 
-**Note**
+    The entity has a **PhysX Collider** component and a **PhysX Rigid Body** component attached. Because the object is dynamic, it falls and then collides with the static rigid body.
+
+{{< note >}}
 For the **[Transform](/docs/user-guide/components/reference/transform/)** component, clear the **Static** property. This ensures that the mesh moves with the physics simulation.
+{{< /note >}}
