@@ -20,7 +20,7 @@ Once you have manually edited the `.fbx` asset in **FBX Settings**, a `.assetinf
 When blast assets are processed automatically, a blast slice asset is created that adds the blast mesh chunks to the **Blast Family Mesh Data** component. If you have a blast asset with dozens of chunks, automatic processing with the Python asset builder for NVIDIA Blast can save some time.
 
 **Note**
-Automatically processing assets for NVIDIA Blast requires that your project has been built with the **Python Asset Builder** and **EditorPythonBindings** gems enabled. For more information, see [Python Asset Builder gem](/docs/user-guide/assets/builder/_index/).
+Automatically processing assets for NVIDIA Blast requires that your project has been built with the **Python Asset Builder** and **EditorPythonBindings** gems enabled. For more information, see [Python Asset Builder gem](/docs/user-guide/assets/builder).
 
 **To process Blast assets automatically**
 

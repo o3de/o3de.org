@@ -17,7 +17,7 @@ Adding a UI element also adds a node to the sequence. After that any time that y
 You can create an animation sequence from the **Animation Editor** menu or toolbar.
 
 **To create a new animation sequence**
-In the [**Animation Editor**](_index/), do one of the following:
+In the [**Animation Editor**](./), do one of the following:
 + From the **Sequence** menu, choose **New Sequence**.
 + Click the **Add Sequence** icon on the toolbar.
 
