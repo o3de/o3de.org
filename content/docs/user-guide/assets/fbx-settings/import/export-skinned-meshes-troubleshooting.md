@@ -27,7 +27,7 @@ If your character's skinning appears visually broken in the **Animation Editor**
 
 1. For the **Input** box, choose **Select by name**.
 
-1. Search for all bind poses by entering **bindPose\*** in the search box.
+1. Search for all bind poses by entering **bindPose** in the search box.
 
 1. Press **Enter** to select all of the bind poses and then press **Delete**.
 

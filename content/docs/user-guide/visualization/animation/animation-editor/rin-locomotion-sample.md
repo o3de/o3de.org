@@ -25,8 +25,8 @@ You can also use a controller connected to your computer:
 + To zoom out the camera, press the left trigger.
 + To snap the camera to the back of the character, press the right joystick.
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-01.png)
+![Image NOT FOUND](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-01.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-02.png)
+![Image NOT FOUND](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-02.png)
 
-![\[Image NOT FOUND\]](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-03.png)
+![Image NOT FOUND](/images/user-guide/actor-animation/advanced-rin-locomotion-sample-03.png)

@@ -18,16 +18,16 @@ Annotations in the O3DE Profiler tool flag frames in your captured data that hav
 **To use annotations**
 
 1. To turn on annotations in the O3DE Profiler tool, click **Configure Annotations**:
-![\[Configure Annotations\]](/images/user-guide/profiler-annotations-using-configure.png)
-![\[Configure Annotations dialog box\]](/images/user-guide/profiler-annotations-using-configure-dialog.png)
+![Configure Annotations](/images/user-guide/profiler-annotations-using-configure.png)
+![Configure Annotations dialog box](/images/user-guide/profiler-annotations-using-configure-dialog.png)
 
    The **Configure Annotations** dialog box contains a list of available annotations and their display colors. For information on creating annotations for your application, see [ Creating Annotations](#profiler-annotations-creating).
 
 1. When you select an annotation in the dialog box, a marker and line of the same color appears in the channel display. Note that you might have to scroll horizontally to find the marker.
-![\[Annotation marker\]](/images/user-guide/profiler-annotations-using-marker.png)
+![Annotation marker](/images/user-guide/profiler-annotations-using-marker.png)
 
 1. To display details for the annotations that occurred on a frame, pause your pointer on an annotation marker. In the example image, IP addresses have been redacted out.
-![\[Annotation content\]](/images/user-guide/profiler-annotations-using-select.png)
+![Annotation content](/images/user-guide/profiler-annotations-using-select.png)
 
 ## Creating Annotations 
 
@@ -47,7 +47,7 @@ The example results in the following annotation text:
 
 The text displays in Profiler like this:
 
-![\[Annotation display in Profiler\]](/images/user-guide/profiler-annotations-creating-display.png)
+![Annotation display in Profiler](/images/user-guide/profiler-annotations-creating-display.png)
 
 ### Alternatives to AZ\_TracePrintf 
 
@@ -78,14 +78,14 @@ Another way to confirm that your annotations are in place is by using the Trace 
 
 In the Profiler **Logging** channel, click the **Trace messages** profiler details icon to see the logging systems currently in place:
 
-![\[Trace messages details icon\]](/images/user-guide/profiler-annotations-creating-trace-messages-detail-icon.png)
+![Trace messages details icon](/images/user-guide/profiler-annotations-creating-trace-messages-detail-icon.png)
 
 The **Trace messages** profiler instance shows all the trace messages that were generated from the start of the capture to the currently analyzed frame. Messages are shown with the oldest message at the top and the newest message at the bottom:
 
-![\[Trace messages details view\]](/images/user-guide/profiler-annotations-creating-trace-messages-unfiltered-view.jpg)
+![Trace messages details view](/images/user-guide/profiler-annotations-creating-trace-messages-unfiltered-view.jpg)
 
 You can use the **Window Filter** to show the system and/or **Message Filter** to show the message text that you are interested in.
 
 The following example, filtered by "GridMate", shows the message specified by the line of code that was added to the application:
 
-![\[Trace messages filtered details view\]](/images/user-guide/profiler-annotations-creating-trace-messages-detail-view.png)
+![Trace messages filtered details view](/images/user-guide/profiler-annotations-creating-trace-messages-detail-view.png)

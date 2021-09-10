@@ -6,7 +6,7 @@ title: UI Elements
 
 UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can add an pre-fabricated (prefab) UI element, such as a scroll box, which is an element with components already attached.
 
-![\[UI element properties\]](/images/user-guide/game_ui_editor/ui-editor-elements.png)
+![UI element properties](/images/user-guide/game_ui_editor/ui-editor-elements.png)
 
 Every UI element has the following two required components that are added automatically:
 + The **Element** component identifies the element **Id** and presents the option to start in a disabled state.

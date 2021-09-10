@@ -10,7 +10,7 @@ The **Attachment** component lets an entity attach to a bone on the skeleton of 
 
 ## Attachment Component Properties 
 
-![\[Attachment component properties.\]](/images/user-guide/component/attachment-component-properties.png)
+![Attachment component properties.](/images/user-guide/component/attachment-component-properties.png)
 
 The **Attachment** component has the following properties.
 

@@ -18,7 +18,7 @@ For the **Actor** component to work properly, you must also add one of the follo
 
 ## Actor Component Properties 
 
-![\[Actor component properties.\]](/images/user-guide/component/actor_component_properties.png)
+![Actor component properties.](/images/user-guide/component/actor_component_properties.png)
 
 The **Actor** component has the following properties.
 

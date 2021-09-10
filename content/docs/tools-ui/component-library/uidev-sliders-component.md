@@ -11,7 +11,7 @@ Use a slider to enable users to control a variable by moving a knob or lever hor
 
 The basic slider is a styled version of the `QSlider` widget from the Qt library.
 
-![\[component slider style\]](/images/tools-ui/component-slider-style.png)
+![component slider style](/images/tools-ui/component-slider-style.png)
 
 Use the `SliderInt` class for signed integer values, and the `SliderDouble` class for double values.
 
@@ -19,7 +19,7 @@ Use the `SliderInt` class for signed integer values, and the `SliderDouble` clas
 
 A slider combo is a combination of the slider and spinbox widgets. In practice, sliders can be difficult for the user to manipulate with precision. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine-tuning capability of the spinbox.
 
-![\[component slider combo style\]](/images/tools-ui/component-slider-combo-style.png)
+![component slider combo style](/images/tools-ui/component-slider-combo-style.png)
 
 Use the `SliderCombo` class for signed integer values, and the `SliderDoubleCombo` class for double values.
 
@@ -37,7 +37,7 @@ Avoid these design choices when using sliders:
 
 ## Basic slider with midpoint<a name="slider-basic"></a>
 
-![\[component slider basic\]](/images/tools-ui/component-slider-basic.png)
+![component slider basic](/images/tools-ui/component-slider-basic.png)
 
 The following example demonstrates the creation of a simple, integer slider using the optional midpoint style.
 
@@ -62,7 +62,7 @@ sliderInt->setEnabled(false);
 
 ## Slider with tooltip<a name="slider-tooltip"></a>
 
-![\[component slider tooltip\]](/images/tools-ui/component-slider-tooltip.png)
+![component slider tooltip](/images/tools-ui/component-slider-tooltip.png)
 
 Add a tooltip to provide context for the value in the slider.
 
@@ -76,7 +76,7 @@ sliderInt->setToolTipFormatting("Opacity", "%");
 
 ## Basic slider combo<a name="slider-combo-basic"></a>
 
-![\[component slider combo basic\]](/images/tools-ui/component-slider-combo-basic.png)
+![component slider combo basic](/images/tools-ui/component-slider-combo-basic.png)
 
 The following example demonstrates the creation of a double slider combo.
 
