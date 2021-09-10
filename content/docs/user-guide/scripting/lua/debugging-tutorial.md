@@ -10,7 +10,7 @@ O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environ
 
 ## Tutorial: Using Lua Editor for Debugging with O3DE Editor 
 
-This tutorial shows you how to use O3DE Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script.
+This tutorial shows you how to use O3DE Lua Editor to perform debugging operations on a sample script.
 
 1. Open the **Lua Editor** from the **Tools** menu.  
 
