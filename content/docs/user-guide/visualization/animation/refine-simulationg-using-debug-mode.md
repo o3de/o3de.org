@@ -19,9 +19,9 @@ In the following procedure, use the debug mode to refine the simulated object's 
 
 1. In debug mode, you can do the following.
 
-    1. To turn off the simulated object colliders, click the ![Image NOT FOUND](/images/user-guide/actor-animation/simulated-objects-20.png) icon.
+    1. To turn off the simulated object colliders, click the ![Simulated Objects Icon](/images/user-guide/actor-animation/simulated-objects-20.png) icon.
 
-    1. To turn off joint collision radius, click the ![Image NOT FOUND](/images/user-guide/actor-animation/simulated-objects-5.png) icon.
+    1. To turn off joint collision radius, click the ![Joint Collision Radius Icon](/images/user-guide/actor-animation/simulated-objects-5.png) icon.
 
     In debug mode, the following appear in the render window:
 

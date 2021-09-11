@@ -63,7 +63,7 @@ The class reference feature is active only for the default context and component
 
    After you connect, you can pause the execution of a given script by setting breakpoints.
 
-1. In the Lua Editor toolbar, click the **Breakpoints** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-breakpoints-icon.png) to show the **Breakpoints** window.
+1. In the Lua Editor toolbar, click the **Breakpoints** icon ![Breakpoints Icon](/images/user-guide/lua-editor-debugger-breakpoints-icon.png) to show the **Breakpoints** window.
 
 1. In Lua Editor, click one or more line numbers in the `constantrotation.lua` script to set one or more breakpoints. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window.
 
@@ -72,11 +72,11 @@ The class reference feature is active only for the default context and component
 
    When execution is halted at a breakpoint, more information becomes available in the **Lua Locals**, **Stack**, and **Watched Variables** panes.
 
-1. Click the **Stack** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-stack-icon.png) to show the **Stack** window.
+1. Click the **Stack** icon ![Stack Icon](/images/user-guide/lua-editor-debugger-stack-icon.png) to show the **Stack** window.
 
-1. Click the **Lua Locals** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-lua-locals-icon.png) to show local Lua variables.
+1. Click the **Lua Locals** icon ![Lua Locals Icon](/images/user-guide/lua-editor-debugger-lua-locals-icon.png) to show local Lua variables.
 
-1. Click **Watched Variables** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-watched-variables-icon.png) to open the **Watched Variables** window, where you can specify variables to watch.
+1. Click **Watched Variables** icon ![Watched Variables Icon](/images/user-guide/lua-editor-debugger-watched-variables-icon.png) to open the **Watched Variables** window, where you can specify variables to watch.
 
 1. Press **F11** a few times to step through the code. Note how the contents of the **Stack**, **Lua Locals**, and **Watched Variables** windows change.
 **Tip**
@@ -96,13 +96,13 @@ The following table summarizes common options available while debugging.
 
 | **Icon** | **Action** | **Keyboard Shortcut** | **Description** |
 | --- | --- | --- | --- |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt+F5 | Run in O3DE Editor. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl+F5 | Send script to the connected target and run it. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-run-continue.png) | Run/Continue | F5 | Run or continue running the current script. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-step-into.png) | Step Into | F11 | Step into the function called on the current line. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-step-out.png) | Step Out | Shift+F11 | Step out of the called function. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-step-over.png) | Step Over | F10 | Step over the function called on the current line. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | F9 | Enable or disable a breakpoint on the current line. |
+| ![Run in Editor Icon](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt+F5 | Run in O3DE Editor. |
+| ![Run on Target Icon](/images/user-guide/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl+F5 | Send script to the connected target and run it. |
+| ![Run/Continue Icon](/images/user-guide/lua-editor-debugger-run-continue.png) | Run/Continue | F5 | Run or continue running the current script. |
+| ![Step Into Icon](/images/user-guide/lua-editor-debugger-step-into.png) | Step Into | F11 | Step into the function called on the current line. |
+| ![Step Out Icon](/images/user-guide/lua-editor-debugger-step-out.png) | Step Out | Shift+F11 | Step out of the called function. |
+| ![Step Over Icon](/images/user-guide/lua-editor-debugger-step-over.png) | Step Over | F10 | Step over the function called on the current line. |
+| ![Toggle Breakpoint Icon](/images/user-guide/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | F9 | Enable or disable a breakpoint on the current line. |
 
 ## Maintaining Separate Search Results 
 
@@ -110,7 +110,7 @@ In addition to the usual search capabilities, the **Find** feature can display t
 
 **To maintain separate search results**
 
-1. Click the **Find** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-find-results-icon.png) or press **Ctrl+F** to perform searches in the currently open file, or in all open files.
+1. Click the **Find** icon ![Find Icon](/images/user-guide/lua-editor-debugger-find-results-icon.png) or press **Ctrl+F** to perform searches in the currently open file, or in all open files.
 ![Lua Editor Find dialog](/images/user-guide/lua-editor-debugger-find-dialog.png)
 
 1. Before starting a search, choose **Find 1**, **Find 2**, **Find 3**, or **Find 4** to choose the window in which you want to see the results. You can maintain the results of four searches separately in the tabbed windows. The search results in the other windows remain unchanged.

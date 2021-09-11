@@ -27,7 +27,7 @@ You can tear away and redock the **Hierarchy** pane, the **Properties** pane, th
 **To open the UI Editor**
 + In O3DE Editor, choose **Tools** and then **UI Editor**.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-using1.png)
+![The UI Editor](/images/user-guide/game_ui_editor/ui-editor-using1.png)
 
 **Topics**
 + [Toolbar](/docs/user-guide/interactivity/user-interface/editor/toolbar)

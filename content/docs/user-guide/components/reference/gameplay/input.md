@@ -15,7 +15,7 @@ To work with inputs, you must enable the [Starting Point Input](/docs/user-guide
 
 ## Input Properties 
 
-![](/images/user-guide/component/input-component-properties.png)
+![Input Component Properties](/images/user-guide/component/input-component-properties.png)
 
 The **Input** component has the following properties.
 
