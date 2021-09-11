@@ -1,7 +1,7 @@
 ---
 description: ' Learn how to use the tick bus in Open 3D Engine. '
 title: Tick Bus and Components
-weight: 800
+weight: 775
 ---
 
 The tick bus is the primary mechanism by which components subscribe to events that occur per simulation frame. Instead of connecting components to the tick bus, strive to make your components entirely driven by events. If your component requires tick-based functionality, it can implement the tick bus interface's `OnTick` method and connect to the tick bus for the required period of time. To avoid poor scalability of polling-based update structures, components should limit the time that they are connected to the tick bus.

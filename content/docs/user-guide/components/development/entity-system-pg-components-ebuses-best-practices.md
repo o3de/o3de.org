@@ -1,7 +1,9 @@
 ---
-description: ' Learn about best practices for components and EBuses in Open 3D Engine. '
+linkTitle: 'Components and EBuses: Best Practices'
 title: 'Components and EBuses: Best Practices'
-weight: 1000
+description: Learn about best practices for components and EBuses in Open 3D Engine.
+toc: true
+weight: 825
 ---
 
 Follow these best practices for creating and using components and EBuses.
