@@ -32,7 +32,8 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 **Example**
 
    Your entity should look like the following.
-![Components for the entity to add to the track view sequence.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-1.png)
+
+   ![Components for the entity to add to the track view sequence.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-1.png)
 
 1. In O3DE Editor, choose **Tools**, **Track View**.
 
@@ -41,7 +42,8 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 1. Select the entity in the viewport, right-click the sequence, and then choose **Add Selected Entity**.
 
    This adds the entity and its components to the track view sequence.
-![Entity and components added to the track view sequence.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-3.png)
+
+   ![Entity and components added to the track view sequence.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-3.png)
 
 1. Right-click** Simple Motion**, choose **Add Track**, and then choose the **Motion** option.
 
@@ -55,13 +57,15 @@ The following procedure uses [Starter Game](/docs/userguide/samples/levels/start
 **Note**
 You can set the **Loop** parameter so that motion continues to play as long as the track view sequence is set.
 **Example**
+
 ![Key properties for the first motion.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-4.png)
 
 1. Click the play icon ![Play the track view sequence](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-5.png) to view the animation in the track view sequence. You can also drag the Track View needle across the timeline.
 **Example**
 
    The following shows the actor animating the idle to walk motion.
-![Example animation of a single motion in the track view sequence.](/images/shared/shared-cinematics-track-view-simple-motion-component-6-example.gif)
+
+   ![Example animation of a single motion in the track view sequence.](/images/shared/shared-cinematics-track-view-simple-motion-component-6-example.gif)
 
 **Note**
 When you update properties in the Track View, the original values for the entity properties are overwritten and are not restored. For example, if you set the **Start time** to `3.0` in the Track View, this updates the **Simple Motion** component properties in the **Entity Inspector**. If you want to reuse an entity with a **Simple Motion** component after a track view sequence is completed, update the **Play speed** parameter; the **Play speed** parameter always resets to zero in the Track View. You can also avoid this issue by not reusing entities in this way.
@@ -84,6 +88,7 @@ The **Blend In Time** and **Blend Out Time** parameters affect the bone weight t
 
 1. Double-click the first key and for **Blend Out Time**, enter `0.33`. This allows the first motion, `jack_idle_to_walk.motion`, to blend into the next motion.
 **Example**
+
 ![Key properties for the first motion for blending.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-7.png)
 
 1. For the **Simple Motion** track, double-click the timeline to create a second key.
@@ -104,8 +109,10 @@ The **Blend In Time** and **Blend Out Time** parameters affect the bone weight t
 **Example**
 
    The following is a timeline with four motions blended together.
-![Timeline in a track view sequence with four motions.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-9.png)
+
+   ![Timeline in a track view sequence with four motions.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-9.png)
 
 1. Click the play icon to view the track view sequence. You can also drag the Track View needle across the timeline. The motions blend together in the track view sequence.
 **Example**
+
 ![Example of blending motions together in the track view sequence.](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-10.gif)

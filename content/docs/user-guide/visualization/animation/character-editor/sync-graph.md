@@ -68,18 +68,22 @@ After you set up your entities and components, create a motion set and two anima
 **To create a motion set and two animation graphs**
 
 1. Create a motion set. For information about creating a motion set, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md). This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`.
+
 ![Example motion set.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-2.png)
 
 1. Create a secondary animation graph. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md). The secondary graph controls one or more entities whose actions are determined by the primary graph.
 
    This example's `syncFeature_Gun` secondary graph has a **BindPose0** node and a **Motion0** node. The **Motion0** node contains the `gunshootanimation` motion.
-![Motion node with associated animation.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-3.png)
+
+   ![Motion node with associated animation.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-3.png)
 
 1. Create a primary graph. The primary graph sends control events to the secondary graph.
 
    This example's `syncFeature_Jack` primary animation graph has a **Motion1** node and a **Motion0** node. The **Motion1** node contains the `jack_idle` motion and the **Motion0** node contains the `jack_shoot` motion.
-![Motion node with associated idle motion.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-4.png)
-![Motion node with associated animation.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-5.png)
+
+   ![Motion node with associated idle motion.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-4.png)
+
+   ![Motion node with associated animation.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-5.png)
 
 ## 3. Add a Parameter to the Secondary Graph 
 
@@ -88,15 +92,19 @@ You are now ready to add a parameter to the secondary graph that receives the pa
 **To add a parameter to the secondary graph to receive the change event from the primary graph**
 
 1. On the **Parameters** tab for the secondary animation graph, click the plus (**+**) icon, and choose **Add parameter**.
+
 ![Choose Add parameter in Animation Editor.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-6.png)
 
 1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean (checkbox)** value type because the gun trigger is either on or off.
+
 ![Choose a value type for the parameter.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-7.png)
 
 1. For **Name**, enter a name for the parameter. This example uses `gunTrigger`.
+
 ![Enter a parameter name.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-8.png)
 
 1. Click **Create**. The **Parameters** list shows the parameter that you created.
+
 ![Parameter added to the animation graph.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-9.png)
 
 ### Add Parameter Conditions to the Secondary Graph 
@@ -106,23 +114,29 @@ In this section, add parameter conditions on the transition lines that specify w
 **To add parameter conditions to the secondary graph**
 
 1. Click the transition line from the **BindPose0** node to the **Motion0** node. Then, in the **Attributes** pane, click **Add condition**, and choose **Parameter Condition**.
+
 ![Select the transition line to add a parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-10.png)
 
 1. Click **Select parameter**.
+
 ![Click Select parameter.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-11.png)
 
 1. In the **Parameter Selection Window**, choose the parameter that you just created, and click **OK**.
+
 ![Choose a parameter for the parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-12.png)
 
    In the **Attributes** pane, a **Parameter Condition** section shows the parameter that you added. On the transition line, a small round node indicates that the line has a parameter condition.
-![Small round node indicating a parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-13.png)
+
+   ![Small round node indicating a parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-13.png)
 
 1. For **Test Function**, use the default value of **param > testValue**. In this example, this means that if the trigger receives a value greater than 0, the gun fires.
+
 ![Specifying a test function for the parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-14.png)
 
 1. For **Test Value**, keep the default value of 0.0.
 
 1. Click the transition line from the **Motion0** node to the **BindPose0** node. Then, in the **Attributes** pane, click **Add condition**, and choose **Parameter Condition**.
+
 ![Select the opposite transition line to add another parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-15.png)
 
 1. Click **Select parameter**.
@@ -142,12 +156,15 @@ You add a parameter and parameter conditions to the primary graph just as you di
 **To add a parameter to the primary graph**
 
 1. On the **Parameters** tab, click the plus (**+**) icon, and choose **Add parameter**.
+
 ![Adding a parameter to the primary graph.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-16.png)
 
 1. In the **Create Parameter** dialog box, for **Value type**, choose the data type that you want to use for the parameter. This example uses the **Boolean (checkbox)** value type because the gun trigger is either on or off.
+
 ![Choosing a value type for the parameter.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-17.png)
 
 1. For **Name**, enter a name for the parameter. This example uses `shoot`.
+
 ![Enter a name for the parameter for the primary graph.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-18.png)
 
 1. Click **Create**.
@@ -159,11 +176,13 @@ Now you add parameter conditions on the transition lines in the primary graph as
 **To add parameter conditions to the primary graph**
 
 1. Click the transition line from the **Motion1** node to the **Motion0** node. Then, in the **Attributes** pane, click **Add condition**, and choose **Parameter Condition**.
+
 ![Click the transition line to add a parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-19.png)
 
 1. Click **Select parameter**.
 
 1. In the **Parameter Selection Window**, choose the parameter that you just created. This example uses `shoot`.
+
 ![Choose a parameter for the parameter condition.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-20.png)
 
 1. For **Test Function**, use the default value of **param > testValue**.
@@ -171,6 +190,7 @@ Now you add parameter conditions on the transition lines in the primary graph as
 1. For **Test Value**, use the default value of **0.0**.
 
 1. Click the transition line from the **Motion0** node to the **Motion1** node. Then, in the **Attributes** pane, click **Add condition**, and choose **Parameter Condition**.
+
 ![Add a parameter condition to the other transition line.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-21.png)
 
 1. Click **Select parameter**.
@@ -188,9 +208,11 @@ Now you are ready to add secondary ("servant") parameter actions to the primary 
 **To add a servant parameter action to the primary graph**
 
 1. In Animation Editor, click to select the first transition line again. This example selects the line from the `jack_idle` node **Motion1** to the `jack_shoot` node **Motion0**.
+
 ![Click the transition line to add a servant parameter action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-22.png)
 
 1. In the **Attributes** pane for the primary graph, click **Add action**, **Servant Parameter Action**.
+
 ![Click Add action, Servant Parameter Action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-23.png)
 
 1. For **Servant Parameter Action**, in the **Trigger Mode** box, keep the default **On Enter**. **On Enter** specifies that the action is triggered when the state or transition is entered.
@@ -202,10 +224,12 @@ Now you are ready to add secondary ("servant") parameter actions to the primary 
 1. Click **Select parameter** to choose a parameter from the secondary animation graph that you just chose. This example chooses the **gunTrigger** parameter.
 
 ![Click Select parameter.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-25.png)
+
 ![Choose a parameter for the servant parameter action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-12.png)
 
    On the transition line, a small square node indicates that the transition line has a parameter action. The small round node next to it represents the parameter condition that you added earlier.
-![Small square node indicating a parameter action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-26.png)
+
+   ![Small square node indicating a parameter action.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-26.png)
 
 1. For **Trigger value**, specify the value to emit when the action is triggered. Because **Trigger value** is treated as a single float, you can use it for float, Boolean, and integer parameters. This example specifies `1.0`, which is the value when the gun fires.
 

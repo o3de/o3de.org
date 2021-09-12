@@ -15,6 +15,7 @@ Two colliders interact if their collision layers are in each other's collision g
 1. Click the **Collision Groups** tab. The layers that are configured on the **Layers** tab appear here as columns.
 
 1. Click **Add**, and then enter the name of the group into the text box.
+
 ![Adding Collision Groups in the PhysX Configuration tool.](/images/user-guide/physx/physx-configuration-4.png)
 
 1. Select or clear the check boxes to specify the layers to include in each collision group.
@@ -26,6 +27,7 @@ Two colliders interact if their collision layers are in each other's collision g
 1. In the O3DE Editor viewport, select the entity that has the collider.
 
 1. In the **Entity Inspector**, in the **PhysX Collider** component, for **Collides With**, choose one of the collision groups that you created from the drop-down list.
+
 ![Choosing a collision group for the PhysX Collider component in the Entity Inspector.](/images/user-guide/physx/physx-configuration-5.png)
 
 ## Example Collision Group Configuration 

@@ -22,9 +22,11 @@ This node functions similarly to the **Blend Two (Legacy)** node with **Additive
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 
 1. Drag the **Blend Two Additive** node into the animation graph.
+
 ![On the Anim Graph Palette tab, select the Blending tab, and then drag Blend Two Additive into the animation graph.](/images/user-guide/actor-animation/char-animation-editor-blendposes-animgraphpalette.png)
 
 1.
+
 ![Blend Two Additive node on the animation graph with inputs and outputs exposed.](/images/user-guide/actor-animation/char-animation-editor-blendposes-inoutputs.png)
 
    Connect nodes to the following inputs and output:

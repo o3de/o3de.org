@@ -49,6 +49,7 @@ You can specify elements as properties either by dragging the element into the p
 **To use the pick object button to reference a UI element**
 
 1. In the **Properties** panel, next to the property to specify an element for, click the pick object button.
+
 ![Properties in a Lua Script component.](/images/user-guide/game_ui_editor/ui-editor-referencing-ui-elements-2.png)
 
 1. Select the element that you want from either the viewport or the **Hierarchy** panel.

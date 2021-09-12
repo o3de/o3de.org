@@ -25,6 +25,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 
 **Export settings for .actor files**
 + Use the **Model** tab to export your `.fbx` files.
+
 ![Models tab in the Maya Game Exporter.](/images/user-guide/actor-animation/fbx-settings-actors-model-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop-down list.
@@ -38,6 +39,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 
 **Export settings for .motion files (Animation Clips tab)**
 + Use the **Animation Clips** tab to export your `.fbx` files.
+
 ![Animation Clips tab in the Maya Game Exporter.](/images/user-guide/actor-animation/fbx-settings-motions-animation-clips-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop-down list.
@@ -53,6 +55,7 @@ The following are typical settings for the Maya Game Exporter when you export yo
 
 **Export Settings for .motion files (Time Editor tab)**
 + Use the **Time Editor** tab to export your `.fbx` files.
+
 ![Time Editor tab in the Maya Game Exporter.](/images/user-guide/actor-animation/fbx-settings-motions-time-editor-tab.png)
 + Use the following settings:
   + Select **Export Selection** from the drop-down list.

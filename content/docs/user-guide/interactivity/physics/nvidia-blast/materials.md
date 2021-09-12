@@ -44,6 +44,7 @@ The blast material library for the project is set in **Blast Configuration**.
 **To use Blast Configuration**
 
 1. From the **Tools** menu, choose **Blast Configuration**.
+
 ![Blast configuration.](/images/user-guide/physx/blast/ui-blast-configuration.png)
 
 1. Set the **Blast material library** for your project. Choose the **Folder** button to the right of **Blast material library** and select the blast material library that you created.

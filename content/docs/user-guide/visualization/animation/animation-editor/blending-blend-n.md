@@ -19,13 +19,15 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 1. Select the **Anim Graph Palette** tab and then select the **Blending** tab.
 
 1. Drag the **Blend N** node into the animation graph.
+
 ![On the Anim Graph Palette tab, select the Blending tab, and then drag Blend N into the animation graph.](/images/user-guide/actor-animation/animation-editor-blending-blendn-select.png)
 
 1. Connect nodes to the following inputs and output:
    + **Pose 0 to 9** - Pose inputs. Connect one or more inputs.
    + **Weight** - Input that determines which pose inputs to use and their weights.
    + **Output Pose** - Result of the blended poses.
-![Blend N node on the animation graph with inputs and outputs exposed.](/images/user-guide/actor-animation/animation-editor-blending-blendn-inoutputs.png)
+
+   ![Blend N node on the animation graph with inputs and outputs exposed.](/images/user-guide/actor-animation/animation-editor-blending-blendn-inoutputs.png)
 
 1. Select the **Blend N** node.
 
@@ -33,7 +35,8 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 **Example**
 
    If you have three poses, You must specify values in ascending order. The first pose should have the lowest value and the last pose must have the highest.
-![Example of ascending order for Max weight trigger values.](/images/user-guide/actor-animation/animation-editor-blending-blendn-example.png)
+
+   ![Example of ascending order for Max weight trigger values.](/images/user-guide/actor-animation/animation-editor-blending-blendn-example.png)
 
 If you enter a series of values in an invalid order, the value box turns red and displays a warning.
 

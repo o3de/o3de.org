@@ -32,9 +32,11 @@ After you create your `.inputbindings` file, you can add input event groups for 
 **To add an input event group**
 
 1. In the **Asset Editor**, for your `.inputbindings` file, click the **+** icon.
+
 ![](/images/user-guide/component/input-component-properties-2.png)
 
 1. For **Event Name**, enter a name for your event, such as *Action*.
+
 ![](/images/user-guide/component/input-component-properties-3.png)
 
 ## Creating Event Generators 
@@ -53,7 +55,8 @@ After you create your input event group, you can add event generators to the gro
 **Example**
 
    The following `.inputbindings` file specifies a keyboard for the device type and the spacebar for the input name.
-![Input bindings configuration example in the Asset Editor.](/images/user-guide/component/input-configuration-properties-2.png)
+
+   ![Input bindings configuration example in the Asset Editor.](/images/user-guide/component/input-configuration-properties-2.png)
 
 1. Save your `.inputbindings` file.
 
@@ -149,6 +152,7 @@ After you specify the Script Canvas graph or Lua script, you can test your input
 
 1. Press the keyboard spacebar so that your entity rotates on the local z-axis.
 **Example**
+
 ![Input bindings configuration example in the Asset Editor.](/images/user-guide/component/input-configuration-example-gamemode.gif)
 
 1.  To exit gameplay mode, press **Esc**

@@ -63,4 +63,5 @@ You can adjust the Alpha Test value for each mip map in the **MIP Control** tab 
 1. For each mip map, adjust the sliders or enter a number in the box.
 
 1. Select **Maintain alphatest coverage** to maintain shape and opacity from a distance when working with certain types of objects, such as leaves on a tree. If you don't select this option, the tree leaves may lose their silhouette in the lower resolution mip maps.
+
 ![Select the MIP Control tab and adjust the sliders or enter a number to define the AlphaTest value for each mip map.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-alphatest.png)

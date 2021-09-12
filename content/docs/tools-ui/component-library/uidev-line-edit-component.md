@@ -28,12 +28,14 @@ The **line edit** component is one of several types of input boxes offered by th
 1.  **Tooltip**
 
    (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
-![component line edit anatomy clear](/images/tools-ui/component-line-edit-anatomy-clear.png)
+
+   ![component line edit anatomy clear](/images/tools-ui/component-line-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
    (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
-![component line edit anatomy error state](/images/tools-ui/component-line-edit-anatomy-error-state.png)
+
+   ![component line edit anatomy error state](/images/tools-ui/component-line-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 
