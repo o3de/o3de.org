@@ -22,7 +22,7 @@ Once the O3DE source code is downloaded onto your local file system, it needs to
 ```shell
 cd $O3DE_ENGINE/python
 
-./get_python
+./get_python.sh
 ```
 ## Projects
 
