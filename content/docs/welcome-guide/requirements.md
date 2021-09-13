@@ -188,6 +188,9 @@ O3DE requires some additional library packages to be installed as well.
 * libglu1-mesa-dev
 * libxcb-xinerama0
 * libxcb-xinput0
+* libxcb-xkb-dev
+* libxkbcommon-dev
+* libxkbcommon-x11-dev
 * libfontconfig1-dev
 * libcurl4-openssl-dev                    
 * libsdl2-dev                             
