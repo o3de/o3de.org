@@ -1,7 +1,7 @@
 ---
 linkTitle: Exposing Custom Components to Track View for Animation
 title: Exposing Custom Components to Track View for Animation
-description: Learn how to expose custom components and their properties to the <guilabel>Track View</guilabel> editor for animation in Open 3D Engine. 
+description: Learn how to expose custom components and their properties to the Track View editor for animation in Open 3D Engine. 
 toc: true
 weight: 800
 ---
