@@ -6,7 +6,7 @@ weight: 100
 menu_uuid: Multiplayer
 ---
 
-This section contains step-by-step tutorials related to multiplayer in Open 3D Engine (O3DE).
+This section contains step-by-step tutorials related to multiplayer in **Open 3D Engine (O3DE)**.
 
 | Tutorial | Description |
 | - | - |
