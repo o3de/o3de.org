@@ -9,7 +9,7 @@ guide_img: "/images/learning-guide/guide_img.png"
 primary: true
 ---
 
-This guide contains video tutorials, written step-by-step tutorials, and sample documentation that teach you the concepts, features, and tools of Open 3D Engine (O3DE).
+This guide contains video tutorials, written step-by-step tutorials, and sample documentation that teach you the concepts, features, and tools of **Open 3D Engine (O3DE)**.
 
 | Section | Description |
 | - | - |
@@ -31,7 +31,7 @@ This guide contains video tutorials, written step-by-step tutorials, and sample 
 
 {{< youtube id="SZC13S0YZZs" title="Creating Projects Using the Command Line" >}}
 
-### O3DE Developer Preview
+### O3DE Developer Overview
 
 {{< youtube id="lWhPwDYeuhc" title="O3DE Developer Overview" >}}
 

@@ -5,7 +5,7 @@ description: Learn Open 3D Engine (O3DE) with the help of step-by-step, guided t
 weight: 200
 ---
 
-Learn the features, tools, and processes of Open 3D Engine (O3DE) with the help of step-by-step, guided tutorials.
+Learn the features, tools, and processes of **Open 3D Engine (O3DE)** with the help of step-by-step, guided tutorials.
 
 ## Artificial Intelligence
 
