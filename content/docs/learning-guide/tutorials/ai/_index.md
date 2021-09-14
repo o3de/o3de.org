@@ -2,7 +2,6 @@
 linkTitle: AI
 title: Artificial Intelligence (AI) Tutorials
 description: Learn to create artificial intelligence (AI) for your Open 3D Engine (O3DE) projects.
-weight: 100
 ---
 
 This section contains step-by-step tutorials related to artificial intelligence (AI) in **Open 3D Engine (O3DE)**.
