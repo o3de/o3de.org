@@ -34,4 +34,4 @@ In the **Behavior Trees** subtab, you can view the active behavior tree of any 
 
 ## BT Editor
 
-The other major tool that is part of the Inspector is the [Behavior Tree editor](Behavior-Tree-Editor.md). Using this tool you can create new BTs and quickly and easily edit existing ones.
+The other major tool that is part of the Inspector is the [Behavior Tree editor](./behavior-tree-editor). Using this tool you can create new BTs and quickly and easily edit existing ones.

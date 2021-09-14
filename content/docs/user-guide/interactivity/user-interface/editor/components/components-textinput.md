@@ -6,7 +6,7 @@ title: TextInput
 
 You can use a **TextInput** component to make an element offer player input. This component is typically applied to an element with an image component and two child elements with text components (one for placeholder text and one for input text).
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-textinput.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-textinput.png)
 
 To see in-game examples of completed canvases with the **TextInput** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **TextInput**. You can view examples of different types of text input behavior on single lines and on multiple lines. Press **Esc** to exit the game.
 
@@ -17,12 +17,12 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 You can add a prebuilt **TextInput** element from the slice library. When you do this, a text input box, pause-on state, and placeholder text "Type here..." are automatically created in your **Hierarchy** pane.
 
 **To add a TextInput element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), choose **New**, **Element from Slice Library**, **TextInput**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **TextInput**.
 
 **To edit a text input component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), expand **TextInput** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **TextInput** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components-interactive-properties.md) to edit the common interactive component settings.
+See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
 **Elements**, **Text**
 Select an element from the list to provide the text component for the input text. The list shows child elements that have text components.
 **Elements**, **Placeholder text element**

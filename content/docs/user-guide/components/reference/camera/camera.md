@@ -4,13 +4,13 @@ description: ' Use the Camera component to allow an entity to be used as a camer
 title: Camera
 ---
 
-{{< preview-migrated >}}
+
 
 The **Camera** component allows an entity to be used as a camera. To use the **Camera** component, you must first add a Camera Framework gem to your project. For information, see [Camera Framework Gem](/docs/user-guide/gems/reference/rendering/camera).
 
 ## Camera Component Properties 
 
-![\[Camera component properties in the Entity Inspector.\]](/images/user-guide/component/component-camera-properties.png)
+![Camera component properties in the Entity Inspector.](/images/user-guide/component/component-camera-properties.png)
 
 The **Camera** component has the following properties:
 

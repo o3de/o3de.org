@@ -4,29 +4,29 @@ description: ' Use dynamic components together with the layout components and sc
 title: Dynamic Components
 ---
 
-Dynamic components work together with [ Layout](/docs/user-guide/interactivity/user-interface/editor/components-layout.md) components and the [Scroll Box](/docs/user-guide/interactivity/user-interface/editor/components-scrollbox.md) component to display dynamic content in the user interface.
+Dynamic components work together with [ Layout](/docs/user-guide/interactivity/user-interface/editor/components/components-layout) components and the [Scroll Box](/docs/user-guide/interactivity/user-interface/editor/components/components-scrollbox) component to display dynamic content in the user interface.
 
 To see in-game examples of completed canvases with dynamic components, open the level **UiFeatures** in the project **SamplesProject**. Press **Ctrl+G** to play the game, and then choose **Components**, **Dynamic Components**. You can view examples of different types of dynamic layouts and scroll boxes. Press **Esc** to exit the game.
 
 ## DynamicLayout 
 
-To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md), [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components-layout-row.md), or [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components-layout-grid.md) component. With the **DynamicLayout** component, you can change the number of children of the layout element at run time.
+To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column), [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-row), or [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-grid) component. With the **DynamicLayout** component, you can change the number of children of the layout element at run time.
 
 The layout element (1) dynamically resizes to fit its child elements. The first child (2) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-child.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-child.png)
 
 The automatic resizing of the layout element depends on the layout type.
 
-For [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components-layout-column.md) and [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components-layout-row.md) elements, the layout element resizes in order to keep all of the child elements the same size as the prototype element.
+For [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column) and [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-row) elements, the layout element resizes in order to keep all of the child elements the same size as the prototype element.
 
-For a [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components-layout-grid.md) element, the cell size of the **LayoutGrid** component determines the size of the child elements. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row. If set to **vertical**, the initial height is used to determine how many children fit in each column.
+For a [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-grid) element, the cell size of the **LayoutGrid** component determines the size of the child elements. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row. If set to **vertical**, the initial height is used to determine how many children fit in each column.
 
-![\[Image NOT FOUND\]](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
+![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
 
 **To use a dynamic layout component**
 
-1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), add a **LayoutRow**, **LayoutColumn**, or **LayoutGrid** prefab. To do this, choose **New**, **Element from Prefab**. Then select one of the layout elements.
+1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), add a **LayoutRow**, **LayoutColumn**, or **LayoutGrid** prefab. To do this, choose **New**, **Element from Prefab**. Then select one of the layout elements.
 
    This serves as the structure or framework to hold your dynamic content.
 
@@ -50,7 +50,7 @@ The **DynamicScrollBox** component automatically positions its children and resi
 
 **To use a dynamic scroll box component**
 
-1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md), add a **Scrollbox** prefab. To do this, click **New**, **Element from Prefab**, **ScrollBox**.
+1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), add a **Scrollbox** prefab. To do this, click **New**, **Element from Prefab**, **ScrollBox**.
 
    This serves as the structure or framework to hold your dynamic content.
 
@@ -68,7 +68,7 @@ The **DynamicScrollBox** component uses a bus called `UiDynamicScrollBoxDataBus`
 
 Use the following notification functions with the EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+ For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus).
 
 ### UiDynamicScrollBoxDataBus:GetNumElements 
 

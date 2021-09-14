@@ -4,7 +4,7 @@ description: ' Use the Simple Motion component to add motion effects to your act
 title: Simple Motion
 ---
 
-{{< preview-migrated >}}
+
 
 You can use the **Simple Motion** component to play a motion without an animation graph. Add this component to the **[Actor](/docs/user-guide/components/reference/animation/actor/)** component to use a single motion for your actor. For complex motions, see the **[AnimGraph](/docs/user-guide/components/reference/animation/animgraph/)** component.
 
@@ -12,7 +12,7 @@ For creating cinematics with the **Simple Motion** component, see [Creating Char
 
 ## Simple Motion Component Properties 
 
-![\[Add the Simple Motion component to an entity to assign a motion for the actor.\]](/images/user-guide/component/component-simple-motion-properties.png)
+![Add the Simple Motion component to an entity to assign a motion for the actor.](/images/user-guide/component/component-simple-motion-properties.png)
 
 
 ****

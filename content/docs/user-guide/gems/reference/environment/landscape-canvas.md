@@ -2,6 +2,7 @@
 linkTitle: Landscape Canvas
 title: Landscape Canvas Gem
 description: The Landscape Canvas Gem provides the Landscape Canvas editor to author dynamic vegetation for Open 3D Engine (O3DE) projects.
+weight: 200
 toc: true
 ---
 

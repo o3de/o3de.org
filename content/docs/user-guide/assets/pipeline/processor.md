@@ -22,7 +22,7 @@ Use a unique cache directory. Do not share the cache directory with a Windows sy
 
  You can open the Asset Processor options from the notification area on the taskbar.
 
-![\[Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.\]](/images/user-guide/assets/pipeline/asset-pipeline-processor-options.png)
+![Right-click the Asset Processor icon in your notification area on the taskbar, and then choose Show.](/images/user-guide/assets/pipeline/asset-pipeline-processor-options.png)
 
 You don't need to close Asset Processor when you get the latest updates from source control. You can start O3DE Editor while Asset Processor is still processing your assets.
 

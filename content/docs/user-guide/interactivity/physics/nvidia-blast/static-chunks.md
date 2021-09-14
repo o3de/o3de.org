@@ -32,10 +32,10 @@ If the specified chunk has been fractured, its descendants are also static when 
 1. You can add additional chunks to the **Attribute String Edit** SOP. Choose the **+** icon next to the **Number of filters** parameter to add a filter. Repeat steps **4** and **5** to make another chunk static.
 
    In the image below, the chunks that comprise the back half of the rabbit have been made static. Note that 12 filters have been added to the filter list in the **Attribute String Edit** SOP. You can see the renamed chunks in the groups and attributes overlay in the perspective viewport.
-![\[Create static chunks in Houdini for NVIDIA Blast.\]](/images/user-guide/physx/blast/ui-blast-houdini-static-chunks.png)
+![Create static chunks in Houdini for NVIDIA Blast.](/images/user-guide/physx/blast/ui-blast-houdini-static-chunks.png)
 
 1. Enable the **Static root** parameter in the **Blast Export** SOP before exporting the asset.
 
 See the result simulation in O3DE below. A large, invisible PhysX rigid body collider is dropped on the rabbit. The front half of the rabbit is destroyed. The chunks are simulated as dynamic rigid bodies while the back of the rabbit remains in place.
 
-![\[Create static chunks in Houdini for NVIDIA Blast.\]](/images/user-guide/physx/blast/anim-nvidia-blast-static-simulation.gif)
+![Create static chunks in Houdini for NVIDIA Blast.](/images/user-guide/physx/blast/anim-nvidia-blast-static-simulation.gif)

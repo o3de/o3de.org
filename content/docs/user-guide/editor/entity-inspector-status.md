@@ -13,14 +13,14 @@ By default, an entity starts as active in a level. When you create a game, you c
    + **Start active** - Entity is active when the level starts.
    + **Start inactive** - Entity is inactive when the level starts.
    + **Editor only** - Entity is only active in editor mode.
-![\[Specify whether component is active, inactive, or active in editor mode only.\]](/images/shared/shared-component-entity-inspector-startactive.png)
+![Specify whether component is active, inactive, or active in editor mode only.](/images/shared/shared-component-entity-inspector-startactive.png)
 
 1. When you set an entity as **Start Inactive** or **Editor only**, select the entity to view its status in the **Entity Outliner** and the viewport.
 **Example Start Inactive**
 
    Inactive entities have a strikethrough icon and inactive text appears in the viewport.
-![\[Specify whether component is active, inactive, or active in editor mode only.\]](/images/shared/shared-component-entity-inspector-inactive-example.png)
+![Specify whether component is active, inactive, or active in editor mode only.](/images/shared/shared-component-entity-inspector-inactive-example.png)
 **Example Editor only**
 
    Editor only entities have an icon that is not shaded and editor only text appears in the viewport.
-![\[Specify whether component is active, inactive, or active in editor mode only.\]](/images/shared/shared-component-entity-inspector-editor-only-example.png)
+![Specify whether component is active, inactive, or active in editor mode only.](/images/shared/shared-component-entity-inspector-editor-only-example.png)
