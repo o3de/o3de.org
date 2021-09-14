@@ -127,7 +127,7 @@ The primary Linux distribution for using the O3DE editor is Ubuntu 20.04.3 LTS. 
 
 ### CMake
 
-As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** from the CMake rather than the default one provided by your current Linux distribution. If there is already a cmake installed, but does not match the minimum version, you will need to remove it with the following command.
+As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
 
 ```shell
 sudo apt-get remove cmake
