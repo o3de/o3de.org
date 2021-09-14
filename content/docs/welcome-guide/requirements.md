@@ -11,7 +11,7 @@ prerequisites and configuration](#software-prerequisites)
 section, each prerequisite is listed along with any specific configuration steps
 required.
 
-# Hardware requirements
+## Hardware requirements
 
 Minimum hardware requirements for development include the following:
 
