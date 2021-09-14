@@ -348,12 +348,17 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | Name | Image |
 | - | - |
 | add.svg | {{< icon "add.svg" >}} |
+| align-bottom.svg | {{< icon "align-bottom.svg" >}} |
+| align-left.svg | {{< icon "align-left.svg" >}} |
+| align-right.svg | {{< icon "align-right.svg" >}} |
+| align-top.svg | {{< icon "align-top.svg" >}} |
 | animation-editor.svg | {{< icon "animation-editor.svg" >}} |
 | asset-editor.svg | {{< icon "asset-editor.svg" >}} |
 | audio-editor.svg | {{< icon "audio-editor.svg" >}} |
 | camera.svg | {{< icon "camera.svg" >}} |
 | caret-closed.svg | {{< icon "caret-closed.svg" >}} |
 | caret-open.svg | {{< icon "caret-open.svg" >}} |
+| comment.svg | {{< icon "comment.svg" >}} |
 | debug.svg | {{< icon "debug.svg" >}} |
 | default-document.svg | {{< icon "default-document.svg" >}} |
 | delete.svg | {{< icon "delete.svg" >}} |
@@ -364,6 +369,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | file-folder.svg | {{< icon "file-folder.svg" >}} |
 | filter.svg | {{< icon "filter.svg" >}} |
 | grid.svg | {{< icon "grid.svg" >}} |
+| group.svg | {{< icon "group.svg" >}} |
 | help.svg | {{< icon "help.svg" >}} |
 | helpers.svg | {{< icon "helpers.svg" >}} |
 | landscape-canvas-editor.svg | {{< icon "landscape-canvas-editor.svg" >}} |
@@ -385,13 +391,6 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | prefab-edit.svg | {{< icon "prefab-edit.svg" >}} |
 | resolution.svg | {{< icon "resolution.svg" >}} |
 | rotate.svg | {{< icon "rotate.svg" >}} |
-| sc-bottom-align.svg | {{< icon "sc-bottom-align.svg" >}} |
-| sc-comment.svg | {{< icon "sc-comment.svg" >}} |
-| sc-group.svg | {{< icon "sc-group.svg" >}} |
-| sc-left-align.svg | {{< icon "sc-left-align.svg" >}} |
-| sc-right-align.svg | {{< icon "sc-right-align.svg" >}} |
-| sc-top-align.svg | {{< icon "sc-top-align.svg" >}} |
-| sc-ungroup.svg | {{< icon "sc-ungroup.svg" >}} |
 | scale.svg | {{< icon "scale.svg" >}} |
 | script-canvas-editor.svg | {{< icon "script-canvas-editor.svg" >}} |
 | select-object.svg | {{< icon "select-object.svg" >}} |
@@ -404,6 +403,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | tone-mapping.svg | {{< icon "tone-mapping.svg" >}} |
 | trackview-editor.svg | {{< icon "trackview-editor.svg" >}} |
 | ui-editor.svg | {{< icon "ui-editor.svg" >}} |
+| ungroup.svg | {{< icon "ungroup.svg" >}} |
 | unlocked.svg | {{< icon "unlocked.svg" >}} |
 | visibility-off.svg | {{< icon "visibility-off.svg" >}} |
 | visibility-on.svg | {{< icon "visibility-on.svg" >}} |
