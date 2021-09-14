@@ -14,7 +14,7 @@ Auto-packets are defined in XML files, placed in the `Code\Source\Autogen` direc
 
 ### PacketGroup attributes
 
-The top-level element of an auto-packet definition is a `PacketGroup`. Packet groups associate different types of individual packet definitions together. Packets defined as part of a packet group are placed into a namespace.
+The top-level element of an auto-packet definition is a `PacketGroup`. Packet groups associate different types of individual packet definitions together. Packets defined as part of a packet group are placed into the same namespace.
 
 | Property | Description | Type |
 |---|---|---|---|
