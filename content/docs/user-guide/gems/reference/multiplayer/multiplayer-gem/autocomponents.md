@@ -1,16 +1,16 @@
 ---
-title: Multiplayer Autocomponents
+title: Multiplayer Auto-components
 description: A reference for defining Open 3D Engine multiplayer state through autocomponents.
-linktitle: Autocomponents
+linktitle: Auto-components
 ---
 
-*Autocomponents* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/engine/autogen) system, autocomponent files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Autocomponents also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
+*Auto-components* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/engine/autogen) system, auto-component files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
 
-In order to enable autocomponent builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
+In order to enable auto-component builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
 
-## Autocomponent file structure
+## Auto-component file structure
 
-Autocomponents are defined in XML files, placed in the `Code\Source\Autogen` directory of the Multiplayer Gem.
+Auto-components are defined in XML files, placed in the `Code\Source\Autogen` directory of the Multiplayer Gem.
 
 ### Component attributes
 
@@ -18,8 +18,8 @@ The `Component` tag defines the name, namespace, include path, and override beha
 
 | Property | Description | Type |
 |---|---|---|---|
-| Name | The class name of the generated autocomponent. | `string`: Must be a valid C++ class name. |
-| Namespace | The namespace the generated autocomponent will be placed within. For a given Gem, all defined autocomponents must be defined within the same namespace. Mixing namespaces inside a Gem will result in compiler errors. | `string`: Must be a valid C++ namespace name. |
+| Name | The class name of the generated auto-component. | `string`: Must be a valid C++ class name. |
+| Namespace | The namespace the generated auto-component will be placed within. For a given Gem, all defined auto-components must be defined within the same namespace. Mixing namespaces inside a Gem will result in compiler errors. | `string`: Must be a valid C++ namespace name. |
 | OverrideComponent | If `true`, the generated component will be a base class and the developer implementing the multiplayer component will be responsible for supplying the final derived component used in the editor and at runtime. | `bool` |
 | OverrideController | If `true`, the generated controller will be a base class, and the developer implementing the multiplayer component will be responsible for supplying the final derived controller used in the runtime. | `bool` |
 | OverrideInclude | If either `OverrideComponent` or `OverrideController` are `true`, this value is **required** and must be the path (relative to the Gem root) of the header containing the concrete implementations. | the developer implementing the final component or controller classes must provide the class header the final classes are declared within. | `string` |
@@ -35,11 +35,11 @@ A component relation (the `ComponentRelation` tag) describes how various compone
 | Include | The include path of the related component. | `string` |
 | Constraint | The type of relation this entry has with the component being described. The allowed values are: | `Required`, `Weak`, `Incompatible` |
 | | **Required**: The related component must be present on the entity. These components are displayed in the Editor as a hard requirement for adding this autocomponent. |
-| | **Weak**: The related component isn't required, but will be activated on the entity (if present) before this autocomponent. | |
-| | **Incompatible**: The related component isn't compatible with this autocomponent. Attempting to place both components on an entity will result in an error. | |
+| | **Weak**: The related component isn't required, but will be activated on the entity (if present) before this auto-component. | |
+| | **Incompatible**: The related component isn't compatible with this auto-component. Attempting to place both components on an entity will result in an error. | |
 | HasController | If `true`, the related component must have a multiplayer controller associated with it. Setting this value to true will cause controller accessors to be generated on the controller being described. | `bool` |
 
-For components which have a relation constraint of `Required` or `Weak`, accessors are generated on the autocomponent with the name `Get<ComponentName>()`. These accessors return a cached pointer to the related component, created on entity activation.
+For components which have a relation constraint of `Required` or `Weak`, accessors are generated on the auto-component with the name `Get<ComponentName>()`. These accessors return a cached pointer to the related component, created on entity activation.
 
 ### Include
 
@@ -49,7 +49,7 @@ The `Include` tag is used to generate the `#includes` of the C++ code. Use an `I
 | File | The path to a header to add as an `#include` of the generated source. | `string` |
 
 {{< todo issue="https://github.com/o3de/o3de.org/issues/678" >}}
-Document the following parts of autocomponents:
+Document the following parts of auto-components:
 * NetworkInput
 * NetworkProperty
 * ArchetypeProperty
@@ -58,7 +58,7 @@ Document the following parts of autocomponents:
 
 ### Example
 
-The following is an example of an autocomponent which synchronizes a component representing weapon state across a multiplayer session.
+The following is an example of an auto-component which synchronizes a component representing weapon state across a multiplayer session.
 
 ```xml
 <?xml version="1.0"?>

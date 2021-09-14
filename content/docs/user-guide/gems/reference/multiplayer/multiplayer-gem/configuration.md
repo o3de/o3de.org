@@ -1,13 +1,13 @@
 ---
 title: Add the Open 3D Engine Multiplayer Gem to a Project
-description: Add Multiplayer support to an Open 3D Engine project or Gem, including the creation of autocomponents.
+description: Add Multiplayer support to an Open 3D Engine project or Gem, including the creation of auto-components.
 linkTitle: Project configuration
 ---
 
 Adding the full functionality of the Open 3D Engine Multiplayer Gem to a project requires making edits to the CMake scripts and source code. These changes enable:
 
 * Linking against the correct core libraries and Gems
-* Building [autocomponents](./autocomponents)
+* Building [auto-components](./autocomponents)
 * Creating and registering component information with the Multiplayer Gem on project start
 
 {{< note >}}
