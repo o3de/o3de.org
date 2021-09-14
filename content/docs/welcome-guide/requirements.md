@@ -32,7 +32,7 @@ RAM and free disk space requirements are dependent on the options that you selec
 {{< /note >}}
 
 
-# Software prerequisites and configuration {#software-prerequisites}
+## Software prerequisites and configuration {#software-prerequisites}
 
 Creating new projects or using the advanced development features of O3DE requires several software components depending on the operating system you are using. 
 
