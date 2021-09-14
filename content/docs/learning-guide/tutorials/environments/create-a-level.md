@@ -29,7 +29,8 @@ Levels can be created from the **Welcome to O3DE** dialog box that appears when 
 
 1. Choose **Ok** to create the level.
 
-## Default Atom Environment contents
+## Atom Default Environment contents
+
 
 The new level is populated with some basic entities. In **Entity Outliner**, there is a root entity named **Atom Default Environment**. Click the arrow to the left of the default entity in Entity Outliner to expand the list of child entities.
 
@@ -43,7 +44,6 @@ The Atom Default Environment is a *prefab*. A prefab is a collection of preconfi
 | - | - |
 | Atom Default Environment | This is the root entity. It contains a **Transform** component and is the parent for the default environment entities. |
 | Global Sky | Contains a **Global Skylight (IBL)** component and a **HDRI Skybox** component. This entity provides image-based lighting using a high dynamic range image and displays the image as a skybox. |
-
 | Ground | Contains a **Mesh** component and a **Material** component to display a simple ground plane with a checkerboard material. |
 | Grid | Contains a **Grid** component aligned with the Ground entity that can be used as a construction plane for placing and aligning entities and prefabs. |
 | Shader Ball | Contains a **Mesh** component with a `shaderball_default_1m` mesh asset. This mesh asset provides a good basis for developing materials. |
