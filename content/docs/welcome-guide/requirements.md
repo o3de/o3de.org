@@ -205,7 +205,7 @@ sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libfontcon
 
 ### Ninja Build System (Optional)
 
-CMake supports Linux's default 'Unix Makefiles'. However, this does not support multiple configurations, so when a cmake project is generated, you must supply which configuration you want the build for (debug, profile, or release). The Ninja build system, specifically the [Ninja Multi-Confg](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html) does support multiple configurations within the same generated build folder, so it is recommended to use this generator for O3DE development. This can be installed through **apt-get**
+CMake supports Linux's default 'Unix Makefiles'. However, this does not support multiple configurations, so when a CMake project is generated, you must supply the configuration you want to build (debug, profile, or release). The Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), supports multiple configurations within the same generated build folder, so we recommend that you use this generator for O3DE development. Ninja Multi-Config can be installed through **apt-get**:
 
 ```shell
 sudo apt-get install ninja-build
