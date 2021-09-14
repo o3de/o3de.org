@@ -1,3 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="81" viewBox="0 0 81 81">
-  <image x="3" y="3" width="75" height="75" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAYAAAA4TnrqAAABCklEQVR4nO3bwQmDQBBG4X+DhViKpaSTJJ2kFEuxkwmChxx9q4QI77svOz7wsIdpVVXRLjcz7WcswFiAsQBjAcYCjAUMSV6XmVaSJOk6Gp20qqYk08EvfLfWlt7DVTUmuR+cYW6tzeTA0HHJGurRce7bOmR3rCTjCTNkm2M3nzuAsQBjAcYCjAUYCzAWYCzAWICxAGMBxgKMBRgLMBZgLMBYgLEAYwHGAowFGAswFmAswFiAsQBjAcYCjAUYCzAWYCzAWICxAGMBxgKMBRgLMBZgLKBnaeAfLCds4KKFgVw11rbK8vz1vf6GgLEAYwHGAowFGAswFmAswFiAsQBjAcYCjAUYCzDWXkk+6PoWTjIGkqEAAAAASUVORK5CYII="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Icons-_x2F_-Alignment-_x2F_-Top" transform="translate(-3.000000, -3.000000)">
+		<rect id="Icon-Background" x="1" y="1" class="st0" width="24" height="24"/>
+		<path id="Combined-Shape" class="st1" d="M11,8v14H7V8H11z M19,8v10h-4V8H19z M22,4v2H4V4H22z"/>
+	</g>
+</g>
 </svg>

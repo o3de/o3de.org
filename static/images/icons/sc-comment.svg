@@ -1,3 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="73" viewBox="0 0 89 73">
-  <image x="3" y="3" width="83" height="67" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFMAAABDCAYAAADgZDmbAAABTElEQVR4nO3bwU3DQBQG4T+IHvZIKVBK6CR0QAfQCaScPaaCoFyJBIkY75LnmaMlP3k/eWVfdtN7P8aQ7mTkEhNMTDAxwcQEExNMTLD7C0Z9JtnfzIqW6zHJ00/TL8Hct9Z2/3yhi9d73/2G6TYHExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwcQEExNMTDAxwYae6m2tbb5f671vk7yNeoYlm/pmVoLMTMxqkJmFWREyMzCrQmY0ZmXIjP6aV8//TLDTQdQXeOZDku2V97wmOeCrG9zZT/Rf672fTr5+XDHmubX2foN2Z83e5mUgMxmzFGQmYpaDzCTMkpCZgFkWMoMxS0NmIGZ5yAzCXAVkBmCuBjILY64KMgtirg4ySb4AXuY+3UQxaskAAAAASUVORK5CYII="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 22 22" style="enable-background:new 0 0 22 22;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#E9E9E9;}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Icons-_x2F_-System-_x2F_-Comment" transform="translate(-2.000000, -4.000000)">
+		<rect id="Icon-Background" x="1" y="3" class="st0" width="24" height="24"/>
+		<path id="Combined-Shape" class="st1" d="M23,7v13H11l-3,3v-3H3V7H23z M5,9v9h4.5v1.5L11,18h10V9H5z"/>
+	</g>
+</g>
 </svg>
