@@ -1,10 +1,11 @@
 ---
-title: "Debug Menu Samples"
-description: "This section dives into the debug menu samples demonstrated in the Atom Sample Viewer."
+linkTitle: Debug Menu Samples
+title: Debug Menu Samples
+description: Learn to use the profiling and debugging tools available for Atom Renderer with Atom Sample Viewer's debug menu samples.
 toc: true
----  
+--- 
 
-This section dives into the debug menu samples demonstrated in the Atom Sample Viewer. 
+The Atom Sample Viewer debug menu samples demonstrate the various profiling and debugging tools you can use with Atom Renderer. From the debug menu, you can capture frame data, analyze threads, view stats, and visualize CPU and GPU profile data.
 
 {{< placeholder >}}
 {{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
@@ -14,7 +15,7 @@ This section dives into the debug menu samples demonstrated in the Atom Sample V
 
 **Atom Renderer**'s built-in CPU Profiler widget collects and visualizes runtime statistics and data from rendering threads on the CPU. 
 
-To open the CPU Profiler widget, click on `Profile` &rarr; `CPU Profiler` from the ImGui debug menu.
+To open the CPU Profiler widget, click on `Profile` &rarr; `CPU Profiler` from the ImGui debug menu. You can access the ImGui debug menu in the Editor by pressing the `Home` key.
 
 ### High-level Toolbar
 
@@ -77,10 +78,8 @@ You can navigate the CPU profiling data in the visualizer with the following act
 | Adjust the **Saved Frames** slider. | Adjusts the number of frames that you want to save within the profiler. |
 | Enter a region name in the **Find Region** text field. | Filters the regions that're drawn in the histogram. |
 
-## Culling Debug Window
-
-## GPU Profiler
-
-## Pass Tree
-
-## Transient Attachment Profiler
+[//]: # (Commenting out empty sections for now)
+[//]: # (## Culling Debug Window)
+[//]: # (## GPU Profiler)
+[//]: # (## Pass Tree)
+[//]: # (## Transient Attachment Profiler)
