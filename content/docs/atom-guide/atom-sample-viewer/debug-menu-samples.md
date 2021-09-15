@@ -49,9 +49,12 @@ To load captures of CPU profiling data:
 ![CPU Profiler Statistics](/images/atom-guide/atom-sample-viewer/cpu-profiler-statistics.png)
 
 The _statistics view_ processes and displays the quantitative data that Atom's CPU Profiler collects. Each row in the table represents a specific profiling region. You can sort the rows according to column values by clicking on the column headers:
+
+| Column | Description |
+| - | - |
 | **Group** | The overall renderer area (RPI, RHI, or DX12, for example) of the profile region. |
-} **Region** | The lower-level name of the profile region, which is often the name of a function call. |
-* **MTPC** | The mean time per call in milliseconds of the profile region aggregated across all of the data collected. |
+| **Region** | The lower-level name of the profile region, which is often the name of a function call. |
+| **MTPC** | The mean time per call in milliseconds of the profile region aggregated across all of the data collected. |
 | **Max** | The maximum runtime of the region in milliseconds during the last frame's execution. For regions that only appear once in the last frame, this will be equal to the total time.
 | **Invocations** | The number of times that the profile region ran in the last frame. |
 | **Total** | The overall time in milliseconds this profile region required on the last frame, summing up each invocation of the region. |
@@ -63,8 +66,6 @@ You can also filter rows by entering a specific group or region name in the text
 ![CPU Profiler Statistics](/images/atom-guide/atom-sample-viewer/cpu-profiler-visualizer.png)
 
 The _visualizer_ presents CPU profiling data in a timeline format, similar to other profilers like RAD Telemetry and Tracy. Each active render thread is laid out horizontally, with every profiling event corresponding to a block in the visualizer. Time increases going to the right.
-
-To scroll throughout the data, hold **RMB+Drag**. To zoom in and out, use **Control+Mouse Wheel**.
 
 The histogram at the top of the widget can be used to easily find frames with poor performance. The height of each individual block corresponds to the amount of time it took for the frame to execute. The orange line corresponds to a frame time of 16.6 ms, or 60 FPS, and the red line corresponds to a frame time of 33.3 ms (30 FPS).
 
