@@ -131,14 +131,14 @@ As the default behavior, when the last player leaves the game session, GameLift 
 
 You must notify Amazon GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
 
-To send a notification that your server process is ready, use `AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady()`.
-Call process ready once your have completed any relevant initialization. One recommended place is in `YourProjectServerSystemComponent` activate step, after connecting to `AzFramework::SessionNotificationBus`.
+To send a notification that your server process is ready, complete any relevant initialization and then use `AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady()`.
+We recommended placing the call after connecting to `AzFramework::SessionNotificationBus` in the `YourProjectServerSystemComponent` activate step.
 
 ```cpp
 AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftServerRequestBus::Events::NotifyGameLiftProcessReady);
 ```
 
-Once the game session is created, following notifications are broadcast through `AzFramework::SessionNotificationBus`. You can program how your session responds to these notifications.
+After the game session has been created, notifications are broadcast through `AzFramework::SessionNotificationBus`. You can program how your session responds to these notifications.
 
 
 ### `OnCreateSessionBegin`
