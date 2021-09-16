@@ -5,7 +5,7 @@ description: An overview of Open 3D Engine support for development on Linux.
 weight: 200
 ---
 
-Read the [system requirements](/docs/welcome-guide/requirements) for information on setting up your Linux environment for development with Open 3D Engine.
+**Open 3D Engine (O3DE)** includes support for the Linux platform. Learn how to build O3DE tools and projects for the supported versions of Linux using the instructions included here.
 
 {{< note >}}
 The instructions provide here are based on building O3DE from source and not from pre-built O3DE SDK files. It assumes that the O3DE source code has been pulled from its github repository (or from a fork).
