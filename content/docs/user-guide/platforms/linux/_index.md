@@ -16,7 +16,7 @@ The following instructions assume that you have:
 * Met all Linux hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
-The instructions below will assume that $O3DE_ENGINE refers to the absolute path of where the O3DE source code exists on the local file system. For target project(s), refer to Refer to [Projects](docs/user-guide/project-config) on how to create new O3DE projects. 
+These instructions use $O3DE_ENGINE to refer to the absolute path where the O3DE source code is located on your local file system. 
 {{< /note >}}
 
 ## First Time Setup
