@@ -40,7 +40,7 @@ The basic steps to configure Gems for your project are as follows:
 
 1. In the **Configure Gems** screen, you can filter or search for available Gems. Scroll through the resulting list to find the Gem you want to enable or disable for your project.
 
-    ![Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/quick-start-3.png)
+    ![Configure Gems screen.](/images/user-guide/project-config/add-remove-gems/configure-gems-screen.png)
 
 ### Locating Gems
 
