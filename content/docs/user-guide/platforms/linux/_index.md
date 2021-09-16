@@ -7,9 +7,13 @@ weight: 200
 
 **Open 3D Engine (O3DE)** includes support for the Linux platform. Learn how to build O3DE tools and projects for the supported versions of Linux using the instructions included here.
 
-{{< note >}}
-The instructions provide here are based on building O3DE from source and not from pre-built O3DE SDK files. It assumes that the O3DE source code has been pulled from its github repository (or from a fork).
-{{< /note >}}
+## Prerequisites
+
+The following instructions assume that you have:
+
+* Set up O3DE in a project-centric [source engine](/docs/user-guide/appendix/glossary#source-engine) configuration from GitHub. For help, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github).
+* Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
+* Met all Linux hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
 The instructions below will assume that $O3DE_ENGINE refers to the absolute path of where the O3DE source code exists on the local file system. For target project(s), refer to Refer to [Projects](docs/user-guide/project-config) on how to create new O3DE projects. 
