@@ -6,19 +6,6 @@ toc: true
 weight: 100
 ---
 
-## Topics
-
-+ [Learning Lua](#learning-lua)
-+ [Learning Lua in O3DE](#learning-lua-in-o3de)
-+ [Adding Lua Scripts to Component Entities](./add-lua-script)
-+ [Basic Structure of a Lua Script](./basic-lua-script)
-+ [Lua Editor](./lua-editor)
-+ [Properties Table](./properties)
-+ [Using EBuses in Lua](./ebus)
-+ [The Lua Environment (Advanced)](./environment)
-+ [Debugging Lua Scripts](./debugging-scripts)
-+ [Debugging with the Lua Editor](./debugging-tutorial)
-
 You can use Lua in O3DE to facilitate quick iteration of your game project. Lua is a powerful, fast, lightweight, embeddable scripting language. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code.
 
 O3DE uses Lua version {{< versions/lua >}}.
