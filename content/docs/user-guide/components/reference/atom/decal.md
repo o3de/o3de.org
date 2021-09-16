@@ -25,15 +25,17 @@ The **Decal** component enables an entity to project a material onto a mesh. A l
 | **Sort Key** |  This determines how decals sort with each other. Decals with higher values will be layered overtop of decals with lower values.  | `0` to `255` | `16` |
 | **Material** | The material that the decal will use. |  |  |
 
-## Example of a decal with attenuation angle set to 0. Less attenuation means more wrapping around objects.
+## Examples
 
-![decal-component-attenuation-angle-0](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-0)
+Example of a decal with attenuation angle set to 0. Less attenuation means more wrapping around objects.
 
-## Example of a decal with attenuation angle set to 1. More attenuation means less wrapping around objects.
+![decal-component-attenuation-angle-0](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-0.png)
 
-![decal-component-attenuation-angle-1](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-1)
+Example of a decal with attenuation angle set to 1. More attenuation means less wrapping around objects.
 
-## The black scorch mark decal has a larger sort key than the orange dirt decal and thus is on top.
+![decal-component-attenuation-angle-1](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-1.png)
 
-![decal-component-sorting-order](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-sorting-example)
+The black scorch mark decal has a larger sort key than the orange dirt decal and thus is on top.
+
+![decal-component-sorting-order](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-sorting-example.png)
 
