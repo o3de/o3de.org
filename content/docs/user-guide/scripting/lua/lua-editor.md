@@ -31,7 +31,7 @@ The following table summarizes the options available while editing and debugging
 | Replace | **Ctrl+R** |
 | Replace in open files | **Ctrl+Shift+R** |
 | Select all | **Ctrl+A** |
-| Select to brace¹ | **Ctrl+Shift+\]** |
+| Select to brace¹ | **Ctrl+Shift+]** |
 | Transpose lines down | **Ctrl+Shift+Down Arrow** |
 | Transpose lines up | **Ctrl+Shift+Up Arrow** |
 | Uncomment selected block | **Ctrl+Shift+K** |
