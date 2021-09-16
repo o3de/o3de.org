@@ -19,22 +19,13 @@ The following instructions assume that you have:
 These instructions use $O3DE_ENGINE to refer to the absolute path where the O3DE source code is located on your local file system. 
 {{< /note >}}
 
-## First Time Setup
-
-Once the O3DE source code is downloaded onto your local file system, it needs to have Python 3.7 packages downloaded and initialized in order to proceed.
-
-```shell
-cd $O3DE_ENGINE/python
-
-./get_python.sh
-```
 ## Create an O3DE project
 
 If you haven't yet created an O3DE project, do so now using the `o3de` script. $O3DE_PROJECT refers to the absolute path of the project.
 
-/```shell
+```shell
 $O3DE_ENGINE/scripts/o3de.sh create-project --project-path $O3DE_PROJECT
-/```
+```
 
 Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guide/create/creating-projects-using-cli) for more information on creating new O3DE projects.
 
