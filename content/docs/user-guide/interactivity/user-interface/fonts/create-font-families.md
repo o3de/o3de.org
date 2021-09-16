@@ -1,7 +1,8 @@
 ---
-description: Combine multiple font assets to create a font family group to use in
-  your game UI in Open 3D Engine.
+linkTitle: Creating font families
+description: Combine multiple font assets to create a font family group to use in your game UI in Open 3D Engine.
 title: Creating Font Families
+weight: 300
 ---
 
 You can combine multiple font assets into a single font family group.
@@ -52,7 +53,7 @@ To create a new font family file, you can create a new, empty plain text file an
    </fontfamily>
    ```
 
-After the Asset Processor has processed your font assets, you can select your font family by selecting the `*.fontfamily` file in the **UI Editor** as the font for any text component. To apply custom styling to text using the font family, see [Text Styling Markup](/docs/userguide/ui/editor/components-text#ui-editor-component-text-styling-markup).
+After the Asset Processor has processed your font assets, you can select your font family by selecting the `*.fontfamily` file in the **UI Editor** as the font for any text component. To apply custom styling to text using the font family, see [Text Markup](/docs/user-guide/interactivity/user-interface/editor/components/components-text#text-markup).
 
 The `.fontfamily` file uses XML. The UI system supports the following tags and attributes for the `.fontfamily` file:
 

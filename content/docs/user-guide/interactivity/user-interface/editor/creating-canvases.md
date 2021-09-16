@@ -1,7 +1,8 @@
 ---
-description: ' Create a canvas in the UI Editor to use as an invisible backdrop
-  for your game user interface elements in Open 3D Engine. '
-title: Working with UI Canvases
+linkTitle: Creating UI canvases
+description: ' Create a canvas in the UI Editor to use as an invisible backdrop for your game user interface elements in Open 3D Engine. '
+title: Creating UI Canvases
+weight: 200
 ---
 
 The **UI Editor** uses the concept of a canvas as an invisible backdrop for your game user interface elements. Once you create a canvas, you can add elements such as images, text, and buttons.
@@ -12,7 +13,7 @@ The **UI Editor** uses the concept of a canvas as an invisible backdrop for your
 
    The **UI Editor** automatically creates an empty canvas.
 
-1. In the **UI Editor**, add [elements](/docs/user-guide/interactivity/user-interface/editor/elements), [components](/docs/user-guide/interactivity/user-interface/editor/components), and [slices](/docs/user-guide/interactivity/user-interface/editor/working-slices).
+1. In the **UI Editor**, add [elements](/docs/user-guide/interactivity/user-interface/editor/elements), [components](/docs/user-guide/interactivity/user-interface/editor/components), and [slices](/docs/user-guide/interactivity/user-interface/editor/ui-slices).
 
 1. Click **File**, **Save As**. Name the canvas with a `.uicanvas` file extension, and then click **Save**.
 
@@ -23,4 +24,4 @@ From the **UI Editor**'s **File** menu, in addition to the basic open, close, an
 + Close all open canvases
 + Close all but the active canvas
 
-![UI Editor File menu](/images/user-guide/game_ui_editor/ui-editor-creating-canvases-1.png)
+![UI Editor File menu](/images/user-guide/interactivity/user-interface/editor/ui-editor-creating-canvases-1.png)

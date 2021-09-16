@@ -1,7 +1,8 @@
 ---
-description: ' Use the Scale to Device setting in the UI Editor to scale
-  game UIs to different resolutions in Open 3D Engine. '
+linkTitle: Scale to device
+description: ' Use the Scale to Device setting in the UI Editor to scale game UIs to different resolutions in Open 3D Engine. '
 title: Scale to Device
+weight: 330
 ---
 
 The **Scale to Device** property helps build game UIs that can display on multiple screen resolutions. You can preview your canvas at different resolutions in the UI Editor in **Preview Mode**.
@@ -55,7 +56,7 @@ In each example, the background image covers the whole screen and uses the follo
 
 In this uniform scaling example, the UI parent element has a fixed aspect ratio and is centered and fitted to the screen that it's displayed on.
 
-The background image is a texture with simple [settings](#ui-editor-transform-scale-uniform).
+The background image is a texture with simple [settings](#uniform-scaling).
 
 The elements that make up the UI are all contained in a parent element and has the following settings.
 
@@ -71,13 +72,13 @@ The elements that make up the UI are all contained in a parent element and has t
 | Width and Height | Matches the authored canvas size (for example, 1280x720) |
 | Scale to device | Scale to fit (uniformly) |
 
-![Scale to fit uniformly example.](/images/user-guide/game_ui_editor/ui-editor-transform-scale-1.gif)
+![Scale to fit uniformly example.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-1.gif)
 
 ### Scale to Fit Y 
 
 In this uniform scale to fit Y example, the layout column and its buttons are uniformly scaled so that they fit vertically on the screen regardless of its resolution.
 
-The background image is a texture with simple [settings](#ui-editor-transform-scale-uniform).
+The background image is a texture with simple [settings](#uniform-scaling).
 
 The elements that make up the buttons are contained in a layout column element. The layout column element contains the UI buttons and has the following settings.
 
@@ -92,13 +93,13 @@ The elements that make up the buttons are contained in a layout column element. 
 | Pivot | Default settings: X = 0.5, Y = 0.5 |
 | Scale to device | Scale to fit Y (uniformly) |
 
-![Scale to fit Y uniformly example.](/images/user-guide/game_ui_editor/ui-editor-transform-scale-2.gif)
+![Scale to fit Y uniformly example.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-2.gif)
 
 ## Uniform Scaling While Maintaining Relative Position 
 
 In this example, the **Scale to Device** setting scales the health bar and speed indicator depending on the screen resolution. Anchor settings maintain their positions so that the health bar always appears in the right corner and the speed indicator always appears in the center.
 
-The background image is a texture with simple [settings](#ui-editor-transform-scale-uniform).
+The background image is a texture with simple [settings](#uniform-scaling).
 
 The health bar element has the following settings. The anchor values keep it on the upper right corner of the screen.
 
@@ -127,4 +128,4 @@ The following images show how the health bar and speed indicator scales based on
 **Note**
 The indicated resolutions are not shown to scale.
 
-![Example of scaling elements while maintaining relative positions.](/images/user-guide/game_ui_editor/ui-editor-transform-scale-uniform-position.png)
+![Example of scaling elements while maintaining relative positions.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-uniform-position.png)

@@ -1,7 +1,8 @@
 ---
-description: ' The Input Enabled setting determines whether the component can be interacted
-  with in O3DE. '
+linkTitle: Input Enabled
+description: ' The Input Enabled setting determines whether the component can be interacted with in O3DE. '
 title: Input Enabled
+weight: 302
 ---
 
 The **Input Enabled** setting, selected by default, determines whether the component can be interacted with.

@@ -1,7 +1,8 @@
 ---
-description: ' Use tooltip components to give an element a tool tip when hovering
-  over it, and configure its display properties in O3DE''s UI Editor. '
-title: Tooltip Components
+linkTitle: UI Tooltip and Tooltip Display
+description: ' Use tooltip components to give an element a tool tip when hovering over it, and configure its display properties in O3DE''s UI Editor. '
+title: UI Tooltip components
+weight: 525
 ---
 
 You can add either a **Tooltip** component or a **TooltipDisplay** component to an element. With these components, you can display a tooltip when hovering over an interactive element.

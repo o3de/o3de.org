@@ -1,8 +1,8 @@
 ---
-description: ' Drag and drop assets from the O3DE Editor''s Asset Browser into the
-  UI Editor as a convenient way to create new entities and assets in the UI Editor
-  . '
+linkTitle: Asset drag and drop
+description: ' Drag and drop assets from the O3DE Editor''s Asset Browser into the UI Editor as a convenient way to create new entities and assets in the UI Editor. '
 title: Asset Drag and Drop
+weight: 890
 ---
 
 You can drag and drop existing assets from the **Asset Browser** into the **UI Editor's** viewport, hierarchy pane, properties pane, or a specific property field. This can be a convenient way to create new entities and assets to work with in the **UI Editor**.

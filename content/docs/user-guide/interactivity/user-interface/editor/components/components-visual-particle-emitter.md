@@ -1,7 +1,8 @@
 ---
-description: Use the Particle Emitter component in Open 3D Engine to emit two-dimensional
-  particles from a UI element.
-title: Particle Emitter
+linkTitle: UI Particle Emitter
+description: Use the Particle Emitter component in Open 3D Engine to emit two-dimensional particles from a UI element.
+title: UI Particle Emitter component
+weight: 220
 ---
 
 You can use a **Particle Emitter** component to emit two-dimensional particles from an element. Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working) to configure the following settings for the **Particle Emitter** component.

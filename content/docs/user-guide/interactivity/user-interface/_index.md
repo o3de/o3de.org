@@ -10,9 +10,9 @@ You can use the **UI Editor** to create and customize various parts of the game 
 
 * [Using the UI Editor](./editor)
 * [Working with UI Canvases](./editor/creating-canvases)
-* [Defining Game and Level Load Screens](./editor/load-screens)
-* [Working with UI Slices](./editor/working-slices)
-* [UI Elements](./editor/elements.md)
+* [Defining Game and Level Load Screens](./load-screens)
+* [Working with UI Slices](./editor/ui-slices)
+* [UI Elements](./editor/elements)
 * [UI Components](./editor/components)
 * [Implementing New Fonts](./fonts)
 * [Animating the UI](./animating)

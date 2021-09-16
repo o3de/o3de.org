@@ -1,28 +1,29 @@
 ---
-description: ' Use dynamic components together with the layout components and scroll
-  box components to display dynamic content in a game UI in O3DE. '
-title: Dynamic Components
+linkTitle: Dynamic components
+description: ' Use dynamic components together with the layout components and scroll box components to display dynamic content in a game UI in O3DE. '
+title: Dynamic components
+weight: 600
 ---
 
-Dynamic components work together with [ Layout](/docs/user-guide/interactivity/user-interface/editor/components/components-layout) components and the [Scroll Box](/docs/user-guide/interactivity/user-interface/editor/components/components-scrollbox) component to display dynamic content in the user interface.
+Dynamic components work together with [ Layout](./components-layout) components and the [Scroll Box](./components-scrollbox) component to display dynamic content in the user interface.
 
 To see in-game examples of completed canvases with dynamic components, open the level **UiFeatures** in the project **SamplesProject**. Press **Ctrl+G** to play the game, and then choose **Components**, **Dynamic Components**. You can view examples of different types of dynamic layouts and scroll boxes. Press **Esc** to exit the game.
 
 ## DynamicLayout 
 
-To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column), [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-row), or [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-grid) component. With the **DynamicLayout** component, you can change the number of children of the layout element at run time.
+To use the **DynamicLayout** component, you place it on an element that also has a [**LayoutColumn**](./components-layout-column), [**LayoutRow**](./components-layout-row), or [**LayoutGrid**](./components-layout-grid) component. With the **DynamicLayout** component, you can change the number of children of the layout element at run time.
 
 The layout element (1) dynamically resizes to fit its child elements. The first child (2) of the layout element acts as the prototype element. At run time, the UI system clones the prototype element to achieve the specified number of children in the layout.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-child.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-dynamic-child.png)
 
 The automatic resizing of the layout element depends on the layout type.
 
-For [**LayoutColumn**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column) and [**LayoutRow**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-row) elements, the layout element resizes in order to keep all of the child elements the same size as the prototype element.
+For [**LayoutColumn**](./components-layout-column) and [**LayoutRow**](./components-layout-row) elements, the layout element resizes in order to keep all of the child elements the same size as the prototype element.
 
-For a [**LayoutGrid**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-grid) element, the cell size of the **LayoutGrid** component determines the size of the child elements. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row. If set to **vertical**, the initial height is used to determine how many children fit in each column.
+For a [**LayoutGrid**](.components-layout-grid) element, the cell size of the **LayoutGrid** component determines the size of the child elements. The **LayoutGrid** element's initial size determines the number of children that can fit in each row or each column, depending on fill direction or **Order** settings. If the **Starting with** fill direction is **horizontal**, the UI system uses the **LayoutGrid** element's initial width to determine how many children fit in each row. If set to **vertical**, the initial height is used to determine how many children fit in each column.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-dynamic-fillorder.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-dynamic-fillorder.png)
 
 **To use a dynamic layout component**
 

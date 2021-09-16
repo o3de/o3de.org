@@ -1,7 +1,8 @@
 ---
-description: ' Use the Animation Editor''s Track Editor to preview an animation, change
-  the timeline, and work with keys in Open 3D Engine. '
+linkTitle: Track Editor
+description: ' Use the Animation Editor''s Track Editor to preview an animation, change the timeline, and work with keys in Open 3D Engine. '
 title: Using the Track Editor
+weight: 320
 ---
 
 The **Track Editor** displays all the tracks in your current animation sequence. The **Track Editor** enables you to do the following:
@@ -12,7 +13,7 @@ The **Track Editor** displays all the tracks in your current animation sequence.
 
 
 **To display the Track Editor**
-+ In the [**Animation Editor**](/docs/user-guide/user-interface/animation/_index.md), choose **View**, **Track Editor** or **View**, **Both**.
++ In the [**Animation Editor**](./), choose **View**, **Track Editor** or **View**, **Both**.
 
 **To zoom in or out**
 + Scroll the mouse wheel
@@ -21,9 +22,9 @@ The **Track Editor** displays all the tracks in your current animation sequence.
 + With the mouse in the **Track Editor**, drag using the middle mouse button
 
 **Topics**
-+ [Working with Keys in the Track Editor](#ui-animation-track-editor-keys)
-+ [Moving the Play or Record Point in the Track Editor](#ui-animation-track-editor-play-record)
-+ [Previewing in the Track Editor](#ui-animation-track-editor-preview)
++ [Working with Keys in the Track Editor](#working-with-keys-in-the-track-editor)
++ [Moving the Play or Record Point in the Track Editor](#moving-the-play-or-record-point-in-the-track-editor)
++ [Previewing in the Track Editor](#previewing-in-the-track-editor)
 
 ## Working with Keys in the Track Editor 
 
@@ -72,7 +73,7 @@ You can also use the Track Editor toolbar to select, move, and snap keys. When m
 
 ## Moving the Play or Record Point in the Track Editor 
 
-The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](/docs/user-guide/user-interface/animation/_index.md) change to the values specified by the animation tracks.
+The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](./) change to the values specified by the animation tracks.
 
 **To move the play or record point in the Track Editor**
 + Click or drag the vertical magenta slider in the timeline.

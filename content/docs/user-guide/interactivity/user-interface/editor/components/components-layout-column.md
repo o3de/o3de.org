@@ -1,7 +1,8 @@
 ---
-description: ' Use a layout column component in the Open 3D Engine UI Editor to
-  organize child elements into a column. '
-title: LayoutColumn
+linkTitle: UI Layout Column
+description: ' Use a layout column component in the Open 3D Engine UI Editor to organize child elements into a column. '
+title: UI Layout Column component
+weight: 401
 ---
 
 You can use a **LayoutColumn** component to organize child elements into a column. To use this feature, add the **LayoutColumn** component to an element and then add child elements. The UI system positions the child elements within the column, from top to bottom or bottom to top, depending on the order you choose in the component properties. The child elements can contain a texture or image, a button, a check box, text, columns, rows, grids, and so on.
@@ -15,17 +16,17 @@ You can add a prebuilt **Layout Column** element from the slice library. When yo
 **To add a Layout Column element from the slice library**
 + In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **LayoutColumn**.
 
- By default, the layout column gives every child the same amount of space, regardless of its content. You can, however, manipulate the sizes of each child by adding the [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to each or specific children.
+ By default, the layout column gives every child the same amount of space, regardless of its content. You can, however, manipulate the sizes of each child by adding the [LayoutCell](./components/components-layout-cell) component to each or specific children.
 
 The layout column can also give varying space to each child depending on its content. To enable the layout column to do this, clear the **Ignore Default Cell** option in the **LayoutColumn** component's properties.
 
 In the first image, **Ignore Default Cells** is selected. The layout column gives each child the same amount of space regardless of their contents.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-ignore.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-column-ignore.png)
 
 In the second image, **Ignore Default Cells** is cleared. The layout column calculates its children's space based on their contents.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-column-clear.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-column-clear.png)
 
 To see an example of a completed canvas with the layout column component, open `SimpleColumn.uicanvas` in the LyShineExamples Gem \(`\dev\Gems\LyShineExamples\Assets\UI\Canvases\LyShineExamples\Comp\`\).
 
@@ -42,5 +43,5 @@ If the layout's children don't occupy all the available layout space, use this s
 For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally.
 For **Vertical**, select **Top**, **Center**, or **Bottom** to determine how the children are aligned vertically.
 ****Ignore Default Cell****
-Selected by default, this property causes the layout column to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component). The layout column ignores the layout cell's content-based default calculations.
-When you clear this option, the layout column uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell).
+Selected by default, this property causes the layout column to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](./components-layout-cell) component). The layout column ignores the layout cell's content-based default calculations.
+When you clear this option, the layout column uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](./components-layout-cell).

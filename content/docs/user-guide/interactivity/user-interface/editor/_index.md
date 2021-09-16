@@ -1,6 +1,6 @@
 ---
-description: ' Use Open 3D Engine''s UI Editor to create and customize various
-  user interface elements and components such as menus, buttons, and heads-up displays. '
+linkTitle: Using the UI Editor
+description: ' Use Open 3D Engine''s UI Editor to create and customize various user interface elements and components such as menus, buttons, and heads-up displays. '
 title: Using the UI Editor
 weight: 100
 ---
@@ -27,7 +27,7 @@ You can tear away and redock the **Hierarchy** pane, the **Properties** pane, th
 **To open the UI Editor**
 + In O3DE Editor, choose **Tools** and then **UI Editor**.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-using1.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-using1.png)
 
 **Topics**
 + [Toolbar](/docs/user-guide/interactivity/user-interface/editor/toolbar)

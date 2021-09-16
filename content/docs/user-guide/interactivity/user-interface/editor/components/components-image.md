@@ -1,7 +1,8 @@
 ---
-description: Use visual components in Open 3D Engine's UI Editor to add color
-  tints or textures to UI elements.
-title: Image
+linkTitle: UI Image
+description: Use visual components in Open 3D Engine's UI Editor to add color tints or textures to UI elements.
+title: UI Image component
+weight: 210
 ---
 
 You can use an **Image** component to add a color tint or texture to an element. Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working) to configure the following settings for the **Image** component.

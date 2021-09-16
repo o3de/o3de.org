@@ -1,12 +1,13 @@
 ---
-description: ' Use a text input component to make an element offer player input in
-  O3DE''s UI Editor. '
-title: TextInput
+linkTitle: UI Text Input
+description: ' Use a text input component to make an element offer player input in O3DE''s UI Editor. '
+title: UI Text Input component
+weight: 335
 ---
 
 You can use a **TextInput** component to make an element offer player input. This component is typically applied to an element with an image component and two child elements with text components (one for placeholder text and one for input text).
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-textinput.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-textinput.png)
 
 To see in-game examples of completed canvases with the **TextInput** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **TextInput**. You can view examples of different types of text input behavior on single lines and on multiple lines. Press **Esc** to exit the game.
 
@@ -22,7 +23,7 @@ You can add a prebuilt **TextInput** element from the slice library. When you do
 **To edit a text input component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **TextInput** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
+See [Properties](./components-interactive-properties) to edit the common interactive component settings.
 **Elements**, **Text**
 Select an element from the list to provide the text component for the input text. The list shows child elements that have text components.
 **Elements**, **Placeholder text element**

@@ -1,7 +1,8 @@
 ---
-description: ' Enable Auto Activate for interactive elements in O3DE UI Editor
-  to set an element to activate automatically. '
+linkTitle: Auto Activate
+description: ' Enable Auto Activate for interactive elements in O3DE UI Editor to set an element to activate automatically. '
 title: Auto Activate
+weight: 308
 ---
 
 The **Auto Activate** setting applies to interactive elements that remain active after they are pressed. These include the slider, scroll bar, scroll box, and text input.

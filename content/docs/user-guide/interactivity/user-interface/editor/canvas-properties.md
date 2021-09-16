@@ -1,11 +1,13 @@
 ---
+linkTitle: Configuring canvas properties
 description: ' Set canvas properties for UI canvases in UI Editor in Open 3D Engine. '
 title: Configuring Canvas Properties
+weight: 220
 ---
 
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-canvas-properties.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-canvas-properties.png)
 
 ## Rendering Properties 
 
@@ -50,4 +52,4 @@ The following properties define UI Editor behavior:
 + **Snap distance** - The distance between positions on the grid when **Snap to grid** is selected in the toolbar.
 + **Snap rotation** - The number of degrees between each step of rotation when you use the rotation gizmo to rotate an element in the viewport when **Snap to grid** is selected in the toolbar.
 + **Guide color** - The color of the guide lines on this canvas. For more information about using guides in **UI Editor**, see [Rulers and Guides](/docs/user-guide/interactivity/user-interface/editor/rulers-guides).
-+ **Texture atlases** - The texture atlas that this canvas loads. Using a texture atlas can reduce the number of draw calls in certain situations, resulting in better performance for your UI. For more information about *texture atlases*, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/editor/texture-atlases).
++ **Texture atlases** - The texture atlas that this canvas loads. Using a texture atlas can reduce the number of draw calls in certain situations, resulting in better performance for your UI. For more information about *texture atlases*, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/texture-atlases/).

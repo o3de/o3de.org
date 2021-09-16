@@ -1,14 +1,15 @@
 ---
-description: ' Use a layout row component in the Open 3D Engine UI Editor to organize
-  child elements into a row. '
-title: LayoutRow
+linkTitle: UI Layout Row
+description: ' Use a layout row component in the Open 3D Engine UI Editor to organize child elements into a row. '
+title: UI Layout Row component
+weight: 402
 ---
 
- You can use a **LayoutRow** component to organize child elements into a row. To use this feature, you add the **LayoutRow** component to an element and then add child elements. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. To control the sizes of specific, or all, children, add the [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component to those children.
+ You can use a **LayoutRow** component to organize child elements into a row. To use this feature, you add the **LayoutRow** component to an element and then add child elements. The UI system positions the child elements within the row, from left to right or right to left, depending on the order you choose. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. To control the sizes of specific, or all, children, add the [LayoutCell](./components-layout-cell) component to those children.
 
-Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column).
+Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](./components-layout-column).
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-row.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-row.png)
 
 To see an in-game example of a completed canvas with the **Layout Row** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Row**. You can view examples of different child sizes within a row. Press **Esc** to exit the game.
 
@@ -32,5 +33,5 @@ If the layout's children don't occupy all the available layout space, use this s
 For **Horizontal**, select **Left**, **Center**, or **Right** to determine how the children are aligned horizontally.
 For **Vertical**, select **Top**, **Center**, or **Bottom** to determine how the children are aligned vertically.
 ****Ignore Default Cell****
-Selected by default, this property causes the layout row to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell) component). The layout row ignores the layout cell's content-based default calculations.
-When you clear this option, the layout row uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-cell).
+Selected by default, this property causes the layout row to give each child an equal amount of space regardless of their contents (unless the child has a [**LayoutCell**](./components-layout-cell) component). The layout row ignores the layout cell's content-based default calculations.
+When you clear this option, the layout row uses the children's layout cell calculated values to determine how much space to give each child based on its contents. For more information, see [LayoutCell](./components-layout-cell).

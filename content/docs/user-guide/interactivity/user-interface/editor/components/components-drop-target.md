@@ -1,7 +1,8 @@
 ---
-description: ' Use the DropTarget component with the Draggable component to implement
-  drag-and-drop behavior in the Open 3D Engine UI Editor. '
-title: DropTarget
+linkTitle: UI Drop Target
+description: ' Use the Drop Target component with the Draggable component to implement drag-and-drop behavior in the Open 3D Engine UI Editor. '
+title: UI Drop Target component
+weight: 355
 ---
 
 You can use the **DropTarget** component to implement drag-and-drop behavior with the **Draggable** component.
@@ -12,7 +13,7 @@ To add the **DropTarget** component to a UI element, use the **Add Component** m
 
 The following picture shows an example of a **DropTarget** component, where color has been added to the state actions for **Drop States**.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-drag-drop-droptarget.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-drag-drop-droptarget.png)
 
 The **DropTarget** component shares properties with interactive components, such as state actions and navigation settings.
 

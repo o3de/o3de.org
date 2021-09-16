@@ -1,7 +1,8 @@
 ---
-description: Use a Text component in Open 3D Engine's UI Editor to add a text
-  string to a UI element.
-title: Text
+linkTitle: UI Text
+description: Use a Text component in Open 3D Engine's UI Editor to add a text string to a UI element.
+title: UI Text component
+weight: 220
 ---
 
 You can use a **Text** component to add a text string to an element.  Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working) to configure the following settings for the **Text** component.
@@ -11,8 +12,8 @@ You can use a **Text** component to add a text string to an element.  Use the **
 
 | Name | Description |
 | --- | --- |
-| Text |  Enter the preferred text string and press **Enter**. You can also apply [text styling markup](#ui-editor-component-text-styling-markup).  |
-| Enable markup |  If selected, the text string is parsed for markup tags. For more information, see [Text Markup](#ui-editor-component-text-styling-markup).  |
+| Text |  Enter the preferred text string and press **Enter**. You can also apply [text styling markup](#text-markup).  |
+| Enable markup |  If selected, the text string is parsed for markup tags. For more information, see [Text Markup](#text-markup).  |
 | Color |  Click the color swatch to select a different color.  |
 | Alpha |  Use the slider to choose an alpha value between **0** and **1**.  |
 | Font path |  Click the button and select a font `.font` file. For more information, see [Adding New Fonts](/docs/user-guide/interactivity/user-interface/fonts/adding-fonts).  |
@@ -45,16 +46,16 @@ To do this, enter specific tags directly into the **Text** box, along with your 
 You can use the following tags and attributes when styling text with markup:
 **Bold** tag: <b>
 
-![Example that uses a Text component to add bold in the UI Editor.](/images/user-guide/game_ui_editor/this-text-bold.png)
+![Example that uses a Text component to add bold in the UI Editor.](/images/user-guide/interactivity/user-interface/editor/components/this-text-bold.png)
 **Italic** tag: <i>
 
-![Example that uses a Text component to add italics in the UI Editor.](/images/user-guide/game_ui_editor/this-text-italic.png)
+![Example that uses a Text component to add italics in the UI Editor.](/images/user-guideinteractivity/user-interface/editor/components/this-text-italic.png)
 **Font color** tag: <font color>
 
-![Example that uses a Text component to add font color in the UI Editor.](/images/user-guide/game_ui_editor/this-text-red.png)
+![Example that uses a Text component to add font color in the UI Editor.](/images/user-guide/interactivity/user-interface/editor/components/this-text-red.png)
 **Font face** tag: <font face>
 
-![Example that uses a Text component to add different fonts in the UI Editor.](/images/user-guide/game_ui_editor/this-text-font.png)
+![Example that uses a Text component to add different fonts in the UI Editor.](/images/user-guide/interactivity/user-interface/editor/components/this-text-font.png)
 
 ### Image Tag and Attributes 
 

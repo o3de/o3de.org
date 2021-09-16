@@ -1,18 +1,19 @@
 ---
-description: ' Use the UI Editor in Open 3D Engine to manage UI elements like
-  strings, text input fields, images, buttons or containers. '
+linkTitle: UI elements
+description: ' Use the UI Editor in Open 3D Engine to manage UI elements like strings, text input fields, images, buttons or containers. '
 title: UI Elements
+weight: 300
 ---
 
 UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can add an pre-fabricated (prefab) UI element, such as a scroll box, which is an element with components already attached.
 
-![UI element properties](/images/user-guide/game_ui_editor/ui-editor-elements.png)
+![UI element properties](/images/user-guide/interactivity/user-interface/editor/ui-editor-elements.png)
 
 Every UI element has the following two required components that are added automatically:
 + The **Element** component identifies the element **Id** and presents the option to start in a disabled state.
 
   The **Start enabled** option is selected by default. To start the element as disabled in the game, clear this option. When starting the element as disabled in the game, the player can't see or interact with that element or its children. This setting has no effect on how the element appears in the **UI Editor**'s viewport.
-+ The **Transform2D** component defines the positioning, spacing, and size of the element relative to its parent (whether its parent is the canvas or another element). For more information, see [Transform2D Component](/docs/user-guide/interactivity/user-interface/editor/components/components-transform).
++ The **Transform2D** component defines the positioning, spacing, and size of the element relative to its parent (whether its parent is the canvas or another element). For more information, see [Transform2D Component](/docs/user-guide/interactivity/user-interface/editor/components/components-transform2d).
 
 When you select the **Editor Only** option, that element and its children exist only in the context of the **UI Editor**. For example, when the launcher, the game, or **Preview** mode in the **UI Editor** displays a UI canvas, elements marked **Editor Only** and its children don't appear.
 

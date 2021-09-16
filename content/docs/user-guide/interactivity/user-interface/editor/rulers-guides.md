@@ -1,7 +1,8 @@
 ---
-description: ' Use Rulers and Guides in Open 3D Engine''s UI Editor to visually
-  guide the placement of game UI elements on your UI canvas. '
+linkTitle: Rulers and guides
+description: ' Use Rulers and Guides in Open 3D Engine''s UI Editor to visually guide the placement of game UI elements on your UI canvas. '
 title: Rulers and Guides
+weight: 130
 ---
 
 Use **Rulers** and **Guides** to visually guide the placement of your UI elements on your UI canvas.
@@ -13,7 +14,7 @@ Use **Rulers** and **Guides** to visually guide the placement of your UI element
 
 The ruler's units are measured in pixels in the canvas space. Magenta lines on the rulers mark the current location of your cursor.
 
-![Magenta lines on the Rulers mark the current location of the cursor.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-magenta.png)
+![Magenta lines on the Rulers mark the current location of the cursor.](/images/user-guide/interactivity/user-interface/editor/ui-editor-rulers-guides-magenta.png)
 
 **Guides** appear as green lines and act as a visual aid for positioning UI elements.
 
@@ -33,10 +34,10 @@ You place the guides at a specific pixel offset on a canvas. The **UI Editor** d
    If you start in the top ruler, you create a horizontal line. Starting in the side ruler creates a vertical line.
 
 1. Release at the position that you want to place the guide.
-![To create guides, ensure the Ruler is displayed and then drag down or across from the side or top ruler.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-creating-gif.gif)
+![To create guides, ensure the Ruler is displayed and then drag down or across from the side or top ruler.](/images/user-guide/interactivity/user-interface/editor/ui-editor-rulers-guides-creating-gif.gif)
 
 1. To adjust the position of the guide, click the guide and drag it to a new position.
-![Adjust the guide position by placing the cursor on the guide and dragging it.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-adjust.png)
+![Adjust the guide position by placing the cursor on the guide and dragging it.](/images/user-guide/interactivity/user-interface/editor/ui-editor-rulers-guides-adjust.png)
 **Note**
 You must be in **Move** or **Anchor** mode to adjust a guide's position.
 

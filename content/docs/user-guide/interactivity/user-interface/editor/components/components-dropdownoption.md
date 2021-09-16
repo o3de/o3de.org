@@ -1,7 +1,8 @@
 ---
-description: ' Use the DropdownOption component to make an element an option in a
-  drop-down menu in the Open 3D Engine UI Editor. '
-title: DropdownOption
+linkTitle: UI Dropdown Option
+description: ' Use the Dropdown Option component to make an element an option in a drop-down menu in the Open 3D Engine UI Editor. '
+title: UI Dropdown Option component
+weight: 365
 ---
 
 You can use the **DropdownOption** component to make an element an option in a drop-down menu. When using the **DropdownOption** component, note the following:
@@ -16,7 +17,7 @@ To view this same canvas in the **UI Editor**, navigate to the `\Gems\LyShineExa
 **To edit a DropdownOption component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **DropdownOption** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
+See [Properties](./components-interactive-properties) to edit the common interactive component settings.
 **Elements, Owning Dropdown**
 Select an element from the list that has the **DropdWown** component. This is the element to be modified when this option is selected.
 **Elements, Text Element**

@@ -1,7 +1,8 @@
 ---
-description: Configure font properties such as asset path and effects for your game
-  UI in Open 3D Engine.
+linkTitle: Configuring font properties
+description: Configure font properties such as asset path and effects for your game UI in Open 3D Engine.
 title: Configuring Font Properties
+weight: 200
 ---
 
 You can define the appearance of your UI font by configuring various properties that affect the font's appearance and usage.
@@ -29,18 +30,15 @@ You define your font's properties in the `.font` file, which is an XML file. The
 The default UI font XML uses the Vera font. It defines a font texture that can hold 128 unique character or glyphs that are 32x32 pixels. The font includes two representations that are defined with the effect tags `default` and `drop_shadow`. For the `default` effect, the font is rendered as is. For the `drop_shadow` effect, the font is first rendered as is. A second render pass produces the font in black with a 1-pixel offset from the first pass. This creates a basic shadowing effect of the characters.
 
 **Note**
-Fonts can be part of a font family \(with a `.fontfamily` extension\), though you can use a standalone font that isn't in a font family. For more information on font families, see [Creating Font Families](/docs/user-guide/interactivity/user-interface/fonts/create-font-families.md).
+Fonts can be part of a font family \(with a `.fontfamily` extension\), though you can use a standalone font that isn't in a font family. For more information on font families, see [Creating Font Families](./create-font-families).
 
 Use the following tags, attributes, and values to define key features of your font.
 
-
-****
-
 | Tag | Description | Attributes |
 | --- | --- | --- |
-| font | Contains critical attributes that define the path to the asset, size, and other font qualities. | See [Font Tag Attributes](#tag-font-attributes). |
-| effect | Acts as a parent tag to pass children tags. Groups the pass tags that comprises the effect. | name ' Name of the effect. |
-| effectfile | Specifies the path to an XML file that contains effect tags. | path ' String that specifies the path to an XML file containing effect tags. |
+| font | Contains critical attributes that define the path to the asset, size, and other font qualities. | See [Font Tag Attributes](#font-tag-attributes). |
+| effect | Acts as a parent tag to pass children tags. Groups the pass tags that comprises the effect. | 'name' Name of the effect. |
+| effectfile | Specifies the path to an XML file that contains effect tags. | 'path' String that specifies the path to an XML file containing effect tags. |
 | pass |  A child tag of an `effect` tag. You can add multiple `pass` tags as the children of a single `effect` tag. Defines a render pass of the text with various parameters that affect the text's rendering. The `pass` tags can be layered on top of each other, giving the effect a unique look.   | Doesn't have attributes. Parents the following child tags that define text effects.  |
 | color | A text effect that is a child tag of the pass tag. Defines the text color.  |  Uses the following attributes to define the effect's intensity with float point values. Minimum: `0.0` Maximum: `1.0f`  |
 | pos or offset | A text effect that is a child tag of the pass tag. Sets the position of the text. |  Uses the following attributes to set text position with integer values:   |
@@ -51,10 +49,7 @@ Use the following tags, attributes, and values to define key features of your fo
 `Font` tag attributes define critical attributes for a font, such as the path to the TTF/OTF asset used to display the font, and other attributes affecting font render quality.
 
 **Note**
-Most of these attributes have a direct impact on font rendering quality. For more information, see [Configuring Font Rendering Quality](/docs/user-guide/interactivity/user-interface/fonts/rendering.md).
-
-
-****
+Most of these attributes have a direct impact on font rendering quality. For more information, see [Configuring Font Rendering Quality](./rendering).
 
 | Attribute | Example | Description |
 | --- | --- | --- |

@@ -1,7 +1,8 @@
 ---
-description: Learn how to add and delete components, reference UI elements as component
-  properties, and manage components in Open 3D Engine's UI Editor .
+linkTitle: Working with UI components
+description: Learn how to add and delete components, reference UI elements as component properties, and manage components in Open 3D Engine's UI Editor .
 title: Working with UI Components
+weight: 400
 ---
 
 You can use the **UI Editor** to add and delete components, create references to UI elements for component properties, and manage components.
@@ -39,7 +40,7 @@ You can add or delete components in the [UI Editor](/docs/user-guide/interactivi
 
 You can specify a UI element for some properties on components. For example, you can specify UI elements for **Lua Script** properties.
 
-![Properties in a Lua Script component.](/images/user-guide/game_ui_editor/ui-editor-referencing-ui-elements-1.png)
+![Properties in a Lua Script component.](/images/user-guide/interactivity/user-interface/editor/ui-editor-referencing-ui-elements-1.png)
 
 You can specify elements as properties either by dragging the element into the property field or by using the pick object button.
 
@@ -49,7 +50,7 @@ You can specify elements as properties either by dragging the element into the p
 **To use the pick object button to reference a UI element**
 
 1. In the **Properties** panel, next to the property to specify an element for, click the pick object button.
-![Properties in a Lua Script component.](/images/user-guide/game_ui_editor/ui-editor-referencing-ui-elements-2.png)
+![Properties in a Lua Script component.](/images/user-guide/interactivity/user-interface/editor/ui-editor-referencing-ui-elements-2.png)
 
 1. Select the element that you want from either the viewport or the **Hierarchy** panel.
 

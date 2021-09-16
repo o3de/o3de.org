@@ -1,17 +1,18 @@
 ---
-description: ' Add the Mask component to an element to reveal parts of the child element
-  in Open 3D Engine. '
-title: Mask
+linkTitle: UI Mask
+description: ' Add the Mask component to an element to reveal parts of the child element in Open 3D Engine. '
+title: UI Mask component
+weight: 510
 ---
 
 You can add a **Mask** component to an element to reveal only those parts of the child elements (for example, image or text) that are within the mask visual. In other words, the opaque region of the mask visual defines a shape that acts like a window through which you view the descendant elements.
 
 
-When you add a **Mask** component, the default mask is the visual component on that element, usually an **Image** component. If you want to use a nonrectangular mask, you must set this **Image** component to use a texture that contains an [alpha channel](/docs/user-guide/appendix/glossary#alpha_channel), which specifies transparent and opaque areas. The child elements are masked by the mask visual. This means that the only parts of the child elements that are visible are the parts that are in the mask visual. In other words, the visible areas of the mask show the child elements, and the transparent areas of the mask visual hide the child elements. You can use other visual components, such as a **Text** component or **Particle Emitter** component to specify the mask visual.
+When you add a **Mask** component, the default mask is the visual component on that element, usually an **Image** component. If you want to use a nonrectangular mask, you must set this **Image** component to use a texture that contains an [alpha channel](/docs/user-guide/appendix/glossary#alpha-channel), which specifies transparent and opaque areas. The child elements are masked by the mask visual. This means that the only parts of the child elements that are visible are the parts that are in the mask visual. In other words, the visible areas of the mask show the child elements, and the transparent areas of the mask visual hide the child elements. You can use other visual components, such as a **Text** component or **Particle Emitter** component to specify the mask visual.
 
 You can make the mask movable to use in an animation. To do so without moving all of its children, you can use a special child element as a mask visual in addition to the visual component on the mask element. This child mask element can have as many children as you need to draw your mask visual.
 
-Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/interactivity/user-interface/editor/components/components-scrollbox).
+Masks are commonly used with a [ScrollBox prefab element](./components-scrollbox).
 
 **To add simple mask with an Image component as the visual**
 
@@ -38,4 +39,3 @@ Masks are commonly used with a [ScrollBox prefab element](/docs/user-guide/inter
 **To edit a Mask component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Mask** and specify the following parameters, as appropriate:
 ****
-

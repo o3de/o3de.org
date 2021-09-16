@@ -1,6 +1,8 @@
 ---
+linkTitle: UI Scrollbar
 description: ' Use a scroll bar component to add a scroll bar in the Open 3D Engine UI Editor. '
-title: ScrollBar
+title: UI Scrollbar component
+weight: 340
 ---
 
 You can use a **ScrollBar** component to add a scrollable bar, or handle, for manipulating settings or scrolling within a scroll box.
@@ -14,15 +16,15 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 This is a horizontal scroll bar:
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/horizontal-scrollbar.gif)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/horizontal-scrollbar.gif)
 
 This is an image within a scroll box with both a horizontal and a vertical scroll bar:
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/scrollbar-scrollbox.gif)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/scrollbar-scrollbox.gif)
 
 The scroll bar can also fade automatically when not in use:
 
-![Example of auto fade scroll bar.](/images/user-guide/game_ui_editor/ui-scrollbar-autofade.gif)
+![Example of auto fade scroll bar.](/images/user-guide/interactivity/user-interface/editor/components/ui-scrollbar-autofade.gif)
 
 You can add a prefabricated horizontal or vertical scroll bar element. When you do this, a handle is automatically created and nested in your **Hierarchy** pane.
 
@@ -34,7 +36,7 @@ You can add a prebuilt **ScrollBarHorizontal** or **ScrollBarVertical** element 
 **To edit a scroll bar component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **ScrollBar** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
+See [Properties](./components-interactive-properties) to edit the common interactive component settings.
 **Elements**, **Handle**
 Select an element from the list to provide the movable handle of the scroll bar.
 **Values**, **Orientation**

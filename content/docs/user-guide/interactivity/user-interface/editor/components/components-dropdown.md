@@ -1,7 +1,8 @@
 ---
-description: ' Use the Dropdown component to make an element behave like a drop-down
-  menu in the Open 3D Engine UI Editor. '
-title: Dropdown
+linkTitle: UI Dropdown
+description: ' Use the Dropdown component to make an element behave like a drop-down menu in the Open 3D Engine UI Editor. '
+title: UI Dropdown component
+weight: 360
 ---
 
 You can use the **Dropdown** component to make an element behave like a drop-down menu. Use this component with child elements that contain content. The child elements provide the contents of the drop-down menu.
@@ -18,7 +19,7 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 You can add a prebuilt **Dropdown** element from the slice library. When you do this, a drop-down menu, three options, and their image elements are automatically created in your **Hierarchy** pane.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-interactive-dropdown-slice.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-interactive-dropdown-slice.png)
 
 **To add a Dropdown element from the slice library**
 + In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **Dropdown**.
@@ -26,7 +27,7 @@ You can add a prebuilt **Dropdown** element from the slice library. When you do 
 **To edit a Dropdown component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Dropdown** and do the following, as appropriate:
 **Interactable**
-See [Properties](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive-properties) to edit the common interactive component settings.
+See [Properties](./components-interactive-properties) to edit the common interactive component settings.
 **Elements, Content**
 Select an element from the list. This specifies the entity that appears when the drop-down menu is expanded.
 **Elements, Expanded Parent**
