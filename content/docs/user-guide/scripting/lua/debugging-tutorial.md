@@ -12,7 +12,7 @@ O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environ
 
 This tutorial shows you how to use O3DE Lua Editor to perform debugging operations on a sample script.
 
-1. Open the **Lua Editor** from the **Tools** menu.  
+1. Open Lua Editor from the **Tools** menu.  
 
 1. Select **New** from the **File** menu to create a new Lua script.
 
@@ -52,13 +52,13 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
     
 1. **Save** the script as `ConstantRotation.lua` in your project's directory.
 
-1. **Close** the Lua Editor.
+1. **Close** Lua Editor.
 
-1. In the **Entity Outliner**, **left-click** an entity to add a **Lua Script** component to.
+1. In **Entity Outliner**, **left-click** an entity to add a **Lua Script** component to.
 
 1. In **Entity Inspector**, click **Add Component**, and then choose **Scripting**, **Lua Script**.
 
-1. In the **Entity Inspector** window, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field.
+1. In **Entity Inspector**, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field.
 
     ![Open the Pick Lua Script window from the Lua Script component](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
     
@@ -120,8 +120,9 @@ The class reference feature is active only for the default context and component
 
 1. Press **F11** a few times to step through the code. Note how the contents of the **Stack**, **Lua Locals**, and **Watched Variables** windows change.
 
-**Tip**
+{{< note >}}
 For greater convenience, you can float or dock these windows.
+{{< /note >}}
 
 1. To detach from debugging, click **Debugging**.
 
@@ -135,10 +136,10 @@ The following table summarizes common options available while debugging.
 
 | **Icon** | **Action** | **Keyboard Shortcut** | **Description** |
 | --- | --- | --- | --- |
-| ![Run in Editor Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt+F5 | Run in O3DE Editor. |
-| ![Run on Target Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl+F5 | Send script to the connected target and run it. |
-| ![Run/Continue Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-continue.png) | Run/Continue | F5 | Run or continue running the current script. |
-| ![Step Into Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-into.png) | Step Into | F11 | Step into the function called on the current line. |
-| ![Step Out Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-out.png) | Step Out | Shift+F11 | Step out of the called function. |
-| ![Step Over Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-over.png) | Step Over | F10 | Step over the function called on the current line. |
-| ![Toggle Breakpoint Icon](/images/user-guide/scripting/lua/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | F9 | Enable or disable a breakpoint on the current line. |
+| ![Run in Editor Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-in-editor.png) | Run in Editor | **Alt+F5** | Run in O3DE Editor. |
+| ![Run on Target Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-on-target.png) | Run on Target | **Ctrl+F5** | Send script to the connected target and run it. |
+| ![Run/Continue Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-continue.png) | Run/Continue | **F5** | Run or continue running the current script. |
+| ![Step Into Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-into.png) | Step Into | **F11** | Step into the function called on the current line. |
+| ![Step Out Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-out.png) | Step Out | **Shift+F11** | Step out of the called function. |
+| ![Step Over Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-over.png) | Step Over | **F10** | Step over the function called on the current line. |
+| ![Toggle Breakpoint Icon](/images/user-guide/scripting/lua/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | **F9** | Enable or disable a breakpoint on the current line. |
