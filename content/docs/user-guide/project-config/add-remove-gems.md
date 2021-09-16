@@ -61,7 +61,13 @@ You can filter by the following groups:
 
 **Searching the catalog**
 
-Search the Gem catalog by entering the Gem name in the search field.  
+Search the Gem catalog by entering text in the search field. You can search for Gems using any of the following search terms:
+
+* Gem name
+* Gem display name
+* Origin
+* Summary
+* Features
 
 ![Search field](/images/user-guide/project-config/add-remove-gems/ui-search.png)
 

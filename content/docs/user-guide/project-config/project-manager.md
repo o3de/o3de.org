@@ -89,6 +89,10 @@ When one or more projects are registered on your computer, the **New Project...*
 
 Each project is represented by its project icon **(2)** and a project display name **(3)**. Messages and buttons relevant to the current state of the project appear inside the project icon rectangle. Underneath each project's icon is the project context drop-down menu **(4)** containing actions that can be performed on that project.
 
+{{< note >}}
+Hover over the project name below the project icon to show the absolute path to the project as a tooltip.
+{{< /note >}}
+
 The project context menu contains the following actions:
 
 | Action | Description |
