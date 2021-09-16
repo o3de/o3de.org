@@ -28,10 +28,15 @@ cd $O3DE_ENGINE/python
 
 ./get_python.sh
 ```
-## Projects
+## Create an O3DE project
 
-Refer to [Projects](docs/user-guide/project-config) on how to create new O3DE projects. 
+If you haven't yet created an O3DE project, do so now using the `o3de` script. $O3DE_PROJECT refers to the absolute path of the project.
 
+/```shell
+$O3DE_ENGINE/scripts/o3de.sh create-project --project-path $O3DE_PROJECT
+/```
+
+Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guide/create/creating-projects-using-cli) for more information on creating new O3DE projects.
 
 ## Project Build Generation
 
