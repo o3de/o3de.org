@@ -1,7 +1,7 @@
 ---
 linktitle: Lua
 title: Writing Lua Scripts in Open 3D Engine
-description: Use Lua scripting in Open 3D Engine to automate your game project.
+description: Use Lua in Open 3D Engine to automate your game project.
 toc: true
 weight: 100
 ---
@@ -34,5 +34,5 @@ For learning the Lua language itself, the [lua.org](http://www.lua.org) website 
 
 After you read through this tutorial on writing Lua scripts for the component entity system, learn more about using Lua in O3DE by consulting the following resources.
 
-  + For information on O3DE's built-in Lua editor, see [Lua Editor](./lua-editor).
-  + For information about the O3DE EBus, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus).
+  + For information on O3DE's built-in Lua editor, refer to [Lua Editor](./lua-editor).
+  + For information about the O3DE EBus, refer to [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus).

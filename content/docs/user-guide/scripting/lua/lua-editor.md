@@ -16,27 +16,27 @@ The following table summarizes the options available while editing and debugging
 
 | **Action** | **Keyboard Shortcut** |
 | --- | --- |
-| Comment selected block | Ctrl+K |
-| Copy | Ctrl+C |
-| Cut | Ctrl+X |
-| Find | Ctrl+F |
-| Find in open files | Ctrl+Shift+F |
-| Find next | F3 |
-| Fold source functions | Alt+0 |
-| Go to line | Ctrl+G |
-| Paste | Ctrl+V |
-| Quick find local | Ctrl+F3 |
-| Quick find local reverse | Ctrl+Shift+F3 |
-| Redo | Ctrl+Y |
-| Replace | Ctrl+R |
-| Replace in open files | Ctrl+Shift+R |
-| Select all | Ctrl+A |
-|  Select to brace¹  | Ctrl+Shift+\] |
-| Transpose lines down | Ctrl+Shift+Down Arrow |
-| Transpose lines up | Ctrl+Shift+Up Arrow |
-| Uncomment selected block | Ctrl+Shift+K |
-| Undo | Ctrl+Z |
-| Unfold source functions | Alt+Shift+0 |
+| Comment selected block | **Ctrl+K** |
+| Copy | **Ctrl+C** |
+| Cut | **Ctrl+X** |
+| Find | **Ctrl+F** |
+| Find in open files | **Ctrl+Shift+F** |
+| Find next | **F3** |
+| Fold source functions | **Alt+0** |
+| Go to line | **Ctrl+G** |
+| Paste | **Ctrl+V** |
+| Quick find local | **Ctrl+F3** |
+| Quick find local reverse | **Ctrl+Shift+F3** |
+| Redo | **Ctrl+Y** |
+| Replace | **Ctrl+R** |
+| Replace in open files | **Ctrl+Shift+R** |
+| Select all | **Ctrl+A** |
+| Select to brace¹ | **Ctrl+Shift+\]** |
+| Transpose lines down | **Ctrl+Shift+Down Arrow** |
+| Transpose lines up | **Ctrl+Shift+Up Arrow** |
+| Uncomment selected block | **Ctrl+Shift+K** |
+| Undo | **Ctrl+Z** |
+| Unfold source functions | **Alt+Shift+0** |
 
 ¹ Select to brace selects a block bounded by braces. Before using this option, the cursor must be immediately next to the beginning or ending brace of the block.
 
@@ -54,8 +54,9 @@ In addition to the usual search capabilities, the **Find** feature can display t
 
 1. To go directly to the line in the code which a search result was found, double-click the line in the search results.
 
-**Tip**
-For convenience, you can also dock or float the **Find Results** window.
+{{< note >}}
+ For convenience, you can also dock or float the **Find Results** window.
+{{< /note >}}
 
 ## Perforce Integration 
 

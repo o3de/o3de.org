@@ -1,5 +1,5 @@
 ---
-linkTitle: Basic Structure of a Lua Script
+linkTitle: Lua Script Structure
 description: Basic Structure of a Lua Script in Open 3D Engine.
 title: Basic Structure of a Lua Script
 toc: true
@@ -8,9 +8,9 @@ weight: 200
 
 ## Script Table
 
-Scripts to be used as components contain a table (referred to as the **Script Table**), which provides the functionality for the script. In Lua, this table is treated like a class. The script table generally consists of the following:
+Scripts used as components contain a **Script Table**. The Script table provides the functionality for the script and is treated like a class. The Script Table generally consists of the following:
 
-+ An optional **Properties** table within the script table. The **Properties** table provides an interface that you can use to customize the script behavior from the editor.
++ An optional **Properties Table** within the Script Table. The Properties Table provides an interface that you can use to customize the script behavior from the editor.
 
 + An `OnActivate()` function that the engine calls when the entity that has the script is activated.
 
