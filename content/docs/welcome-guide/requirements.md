@@ -181,7 +181,7 @@ sudo apt install ./$LIBFFI_PACKAGE_NAME
 popd
 ```
 
-### Additional Library Dependencies
+### Additional library dependencies
 
 O3DE also requires some additional library packages to be installed.
 
