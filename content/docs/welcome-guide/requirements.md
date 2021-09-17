@@ -183,7 +183,7 @@ popd
 
 ### Additional library dependencies
 
-O3DE also requires some additional library packages to be installed.
+O3DE also requires some additional library packages to be installed:
 
 * libglu1-mesa-dev
 * libxcb-xinerama0
