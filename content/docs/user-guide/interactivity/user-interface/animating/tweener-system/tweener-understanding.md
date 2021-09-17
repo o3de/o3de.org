@@ -8,11 +8,11 @@ A *tweener* generates the transition between two images, giving the appearance o
 
 Bounce and elastic tweeners offer flexibility when you want to simulate bounce or elasticity. The following animation shows a bouncing tweener. The ball starts offscreen and ends at the bottom of the screen. Between the start and end frames, the ball appears to bounce.
 
-![\[Ball with bouncing tweener from off-screen to the bottom of the UI screen\]](/images/user-guide/ui-animating-tweener.gif)
+![Ball with bouncing tweener from off-screen to the bottom of the UI screen](/images/user-guide/ui-animating-tweener.gif)
 
 Properties other than location can also use tweeners. The following animation shows a linear tweener for opacity, and a bouncing tweener for scale.
 
-![\[Linear tweener for opacity (transparent to opaque) and bouncing tweener for scale (small to large)\]](/images/user-guide/ui-animating-tweener-1.gif)
+![Linear tweener for opacity (transparent to opaque) and bouncing tweener for scale (small to large)](/images/user-guide/ui-animating-tweener-1.gif)
 
 Tweeners are highly customizable. You can specify parameters to change properties such as duration, delay before starting, number of times to play, whether to go from the specified value to the current value or vice versa, and so on.
 

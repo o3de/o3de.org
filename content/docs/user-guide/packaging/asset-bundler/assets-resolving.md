@@ -42,10 +42,10 @@ If the source of the generated asset is not obvious, you can use the asset datab
 **To look up a job that generates an asset**
 
 1. In the **Products** table, search for the asset that you want to update to emit a dependency. The following example search for a material uses [DB Browser for SQLite](https://sqlitebrowser.org/) to explore the asset database:
-![\[Searching for an asset in the Products table.\]](/images/user-guide/assetbundler/asset-bundler-assets-resolving-1.png)
+![Searching for an asset in the Products table.](/images/user-guide/assetbundler/asset-bundler-assets-resolving-1.png)
 
 1. Look up the `JobPK` value in the **Jobs** table, as in the following example:
-![\[Looking up a value in the asset database Jobs table.\]](/images/user-guide/assetbundler/asset-bundler-assets-resolving-2.png)
+![Looking up a value in the asset database Jobs table.](/images/user-guide/assetbundler/asset-bundler-assets-resolving-2.png)
 
 1. Look up the `JobKey` or `BuilderGuid` in your code base.
 
@@ -75,22 +75,6 @@ To resolve the missing asset from a hardcoded file load, try the following optio
 + **Remove the hardcoded load** - By emitting assets as product dependencies from relevant builders, you can use seed lists with fewer files that are easier to maintain.
 + **Add as seed** - If you can't or don't want to replace the hard-coded asset load, you can add the referenced file as a seed to your game's seed list. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes. For information about adding the referenced file as a seed to your game's seed list, see the [O3DE Asset Bundler Command-Line Tool Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference.md).
 + **Use the Wildcard Dependency System** - If your project uses relative path loads or wildcard path loads, you can declare the dependencies in a dependencies file. This technique is explained in the following section.
-
-#### Using the Wildcard Dependency System to Resolve Path Loads
-
-When you [migrate](/docs/userguide/assets/bundle/migrating.md) a O3DE project to use seeds or emit dependencies for all referenced assets, two cases cannot be resolved as seeds: Optional relative path loads and wildcard path loads. If your bundle is missing an asset that is loaded in either style, try to resolve the missing asset by using wildcard dependencies.
-
-To handle dependency tracking for runtime systems that use path manipulation or directory scanning to load product files, declare dependencies in a `*_Dependencies.xml` file. For example, dependencies in the core engine are included in the `Assets\Engine\Engine_Dependencies.xml` file of your project. A dependencies file uses the following format.
-
-```
-<EngineDependencies versionnumber="1.0.0">
-    <Dependency path="*.ent" />
-</EngineDependencies>
-```
-
-The `path` value is a relative path to a product file that uses simple glob searching. Asterisk (\*) characters match any number of characters. Glob searches do not support single character wildcards. The files listed are recorded as dependencies.
-
-After you add a new `*_Dependencies.xml` file, add an entry for the referenced file to a seed list to ensure full dependency tracking. The core `Engine_Dependencies.xml` file is already included in the default seed list.
 
 ## False Positives
 

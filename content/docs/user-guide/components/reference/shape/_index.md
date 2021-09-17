@@ -4,12 +4,13 @@ linktitle: Shape
 description: ' Using shape components in Open 3D Engine (O3DE). '
 ---
 
-{{< preview-migrated >}}
+
 
 Shape components generate helper geometries that can be used to define shapes for area lights and shape gradients, as well as volumes and areas for AI, audio, fog, spawners, vegetation, PhysX and triggers. Components such as Area Light that require a shape to function will prompt you to select a shape component when they are added to an entity.
 
 ## Shape components available in O3DE ##
 
+* [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape/) - Generates axis aligned box geometry for terrains, volumes and triggers.
 * [Box Shape](/docs/user-guide/components/reference/shape/box-shape/) - Generates box geometry for volumes and triggers.
 * [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/) - Generates capsule geometry for volumes and triggers.
 * [Compound Shape](/docs/user-guide/components/reference/shape/compound-shape/) - Builds complex geometry from simple shapes for volumes and triggers.

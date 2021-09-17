@@ -4,7 +4,7 @@ description: ' Use the PhysX Ragdoll component to create a physical representati
 title: PhysX Ragdoll
 ---
 
-{{< preview-migrated >}}
+
 
 You can use the **PhysX Ragdoll** component to create a physical representation of a character in the animation system and to simulate certain behaviors, such as hit reactions and character death. The physical representation consists of a hierarchy of rigid bodies with simple shapes that are connected by joints. You can adjust the ragdoll settings as needed for physical plausibility and performance.
 
@@ -26,7 +26,7 @@ You use the PhysX system and the **Animation Editor** to create a ragdoll.
 
 ## PhysX Ragdoll Component Properties 
 
-![\[PhysX Ragdoll component properties.\]](/images/user-guide/component/physx/ui-physx-ragdoll-component-properties.png)
+![PhysX Ragdoll component properties.](/images/user-guide/component/physx/ui-physx-ragdoll-component-properties.png)
 
 
 ****

@@ -4,13 +4,13 @@ description: ' Use the PhysX Character Controller component to implement basic c
 title: PhysX Character Controller
 ---
 
-{{< preview-migrated >}}
+
 
 You can use the **PhysX Character Controller** component to implement basic character interactions with the physical world. For example, you can prevent characters from walking through walls or passing through terrain. You can also control interactions with slopes and steps and manage interactions with other characters.
 
 The following diagram shows some of the features of the **PhysX Character Controller** component. Because it is usually more convenient to work with a character's foot position, the entity position coincides with the base of the controller. For details about the contact offset, see [Contact Offset](#contact-offset).
 
-![\[Contact offset of a PhysX Character Controller component in the O3DE Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-1.png)
+![Contact offset of a PhysX Character Controller component in the O3DE Editor viewport.](/images/user-guide/component/physx/component-physx-character-controller-1.png)
 
 The **PhysX Character Controller** component requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem.
 
@@ -29,7 +29,7 @@ You can control the character's movement by using Script Canvas, the C++ API, or
 
 You can configure the properties for the **PhysX Character Controller** component in the **[Entity Inspector](/docs/user-guide/editor/entity-inspector/)**.
 
-![\[PhysX Character Controller component properties in the Entity Inspector.\]](/images/user-guide/component/physx/ui-physx-character-controller-properties.png)
+![PhysX Character Controller component properties in the Entity Inspector.](/images/user-guide/component/physx/ui-physx-character-controller-properties.png)
 
 The **PhysX Character Controller** has the following component properties.
 
@@ -65,7 +65,7 @@ The maximum slope angle determines the step height that the controller can climb
 **Example**
 Capsule controllers might be able to climb steps slightly higher than the step height because the curved bottom can slide upwards on steps. Refer to the following image:
 
-![\[Step height determines the height of steps that the controller can climb.\]](/images/user-guide/component/physx/component-physx-character-controller-6.png)
+![Step height determines the height of steps that the controller can climb.](/images/user-guide/component/physx/component-physx-character-controller-6.png)
 
 ### Contact Offset 
 
@@ -77,7 +77,7 @@ The contact offset is included in the calculation for the foot position.
 **Example**
 In the editor debug draw for the **PhysX Character Controller** component, the effect of the contact offset is represented by the wireframe that surrounds the solid shape of the collider, as in the following image.
 
-![\[Wireframe showing the contact offset for a PhysX Character Controller in the O3DE Editor viewport.\]](/images/user-guide/component/physx/component-physx-character-controller-7.png)
+![Wireframe showing the contact offset for a PhysX Character Controller in the O3DE Editor viewport.](/images/user-guide/component/physx/component-physx-character-controller-7.png)
 
 ### Shape 
 

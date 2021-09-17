@@ -23,7 +23,7 @@ O3DE supports the following image file types:
 
 The following diagram represents the general workflow for converting images.
 
-![\[General workflow for converting images in O3DE\]](/images/user-guide/assets/pipeline/asset-pipeline-images.png)
+![General workflow for converting images in O3DE](/images/user-guide/assets/pipeline/asset-pipeline-images.png)
 
 **Topics**
 + [Creating Image Processing Presets](/docs/user-guide/assets/creating-image-processing-presets.md)

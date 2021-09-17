@@ -4,15 +4,15 @@ description: ' Use the UI Editor in Open 3D Engine to manage UI elements like
 title: UI Elements
 ---
 
-UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can [add an existing pre-fabricated (prefab) element](/docs/userguide/ui/editor/prefabs.md), such as a scroll box, which is an element with components already attached. You can also [create your own prefab elements](/docs/userguide/ui/editor/prefabs.md).
+UI elements are entities that you can attach multiple components to. You can start with an empty element and add components to it, such as a button, image, slider, text, and so on. Or you can add an pre-fabricated (prefab) UI element, such as a scroll box, which is an element with components already attached.
 
-![\[UI element properties\]](/images/user-guide/game_ui_editor/ui-editor-elements.png)
+![UI element properties](/images/user-guide/game_ui_editor/ui-editor-elements.png)
 
 Every UI element has the following two required components that are added automatically:
 + The **Element** component identifies the element **Id** and presents the option to start in a disabled state.
 
   The **Start enabled** option is selected by default. To start the element as disabled in the game, clear this option. When starting the element as disabled in the game, the player can't see or interact with that element or its children. This setting has no effect on how the element appears in the **UI Editor**'s viewport.
-+ The **Transform2D** component defines the positioning, spacing, and size of the element relative to its parent (whether its parent is the canvas or another element). For more information, see [Transform2D Component](/docs/user-guide/interactivity/user-interface/editor/components-transform.md).
++ The **Transform2D** component defines the positioning, spacing, and size of the element relative to its parent (whether its parent is the canvas or another element). For more information, see [Transform2D Component](/docs/user-guide/interactivity/user-interface/editor/components/components-transform).
 
 When you select the **Editor Only** option, that element and its children exist only in the context of the **UI Editor**. For example, when the launcher, the game, or **Preview** mode in the **UI Editor** displays a UI canvas, elements marked **Editor Only** and its children don't appear.
 
@@ -21,7 +21,7 @@ You can use **Editor Only** elements when you author a UI canvas and you want to
 **Note**
 Runtime references to the **Editor Only** element, such as from script or code, are invalid. You can reference **Editor Only** elements from other **Editor Only** elements. References to **Editor Only** elements from elements that aren't **Editor Only** cause an error and possibly undefined behavior.
 
-Each UI element can also have one [visual component](/docs/user-guide/interactivity/user-interface/editor/components-visual.md) (image or text), one [interactive component](/docs/user-guide/interactivity/user-interface/editor/components-interactive.md) (button, check box, scroll box, slider, or text input), and one [layout component](/docs/user-guide/interactivity/user-interface/editor/components-layout.md) (layout column, layout row, or layout grid). The [remaining components](/docs/user-guide/interactivity/user-interface/editor/components-other.md) are the mask and fader, either or both of which UI elements can attach.
+Each UI element can also have one [visual component](/docs/user-guide/interactivity/user-interface/editor/components/components-visual) (image or text), one [interactive component](/docs/user-guide/interactivity/user-interface/editor/components/components-interactive) (button, check box, scroll box, slider, or text input), and one [layout component](/docs/user-guide/interactivity/user-interface/editor/components/components-layout) (layout column, layout row, or layout grid). The [remaining components](/docs/user-guide/interactivity/user-interface/editor/components/components-other) are the mask and fader, either or both of which UI elements can attach.
 
 For each of the following procedures, use the **UI Editor** to manage UI elements.
 
@@ -30,7 +30,7 @@ For each of the following procedures, use the **UI Editor** to manage UI element
 
 | Task | Steps |
 | --- | --- |
-| To find an element | In the UI Editor menu, choose Edit and then Find Elements or press Ctrl+F. For more information, see [Searching for UI Elements](/docs/user-guide/interactivity/user-interface/editor/search-element.md). |
+| To find an element | In the UI Editor menu, choose Edit and then Find Elements or press Ctrl+F. For more information, see [Searching for UI Elements](/docs/user-guide/interactivity/user-interface/editor/search-element). |
 | To create an element | In the UI Editor toolbar, click New and then Empty element. The element appears in the Hierarchy pane and viewport.  |
 | To move, rotate, or resize an element |  Select the element and then click the **Move**, **Rotate**, or **Resize** tool in the toolbar. Select **Snap to grid** to modify elements in increments.  |
 | To copy an element | Right-click the element in the Hierarchy pane or viewport and choose Copy.  |
@@ -44,9 +44,3 @@ For each of the following procedures, use the **UI Editor** to manage UI element
 | To rename an element | Double-click the element in the Hierarchy pane, enter the new name, and press Enter.  |
 | To nest an element | Select the element in the Hierarchy pane and drag it on top of the parent element.  |
 | To change the element draw order | Select and drag elements up or down in the Hierarchy pane. Elements are drawn in order starting from the top of the hierarchy list, so elements at the bottom of the list appear in front of elements at the top of the list.  |
-
-**Topics**
-+ [Configuring UI Anchors and Offsets](/docs/user-guide/interactivity/user-interface/editor/transform2d.md)
-+ [Scaling to Device Resolutions](/docs/user-guide/interactivity/user-interface/editor/scaling-device-resolution.md)
-+ [Using and Creating UI Prefabs](/docs/userguide/ui/editor/prefabs.md)
-+ [Searching for UI Elements](/docs/user-guide/interactivity/user-interface/editor/search-element.md)

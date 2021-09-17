@@ -9,11 +9,11 @@ Use tabs to enable users to organize content at a high level, such as switching 
 
 Tabs are also used in the widget headers. When there is more than one widget docked together, the widget headers are shown as tabs. Users can drag the tab/widget header to move it around and dock it elsewhere.
 
-![\[component tab style\]](/images/tools-ui/component-tab-style.png)
+![component tab style](/images/tools-ui/component-tab-style.png)
 
 A tab can also display an action toolbar, where action buttons can be added and removed as needed.
 
-![\[component tab action bar\]](/images/tools-ui/component-tab-action-bar.png)
+![component tab action bar](/images/tools-ui/component-tab-action-bar.png)
 
 ## Usage guidelines<a name="tab-usage"></a>
 
@@ -25,7 +25,7 @@ Follow these guidelines as you design your UI with tabs:
 
 ## Basic tab<a name="tab-basic"></a>
 
-![\[component tab basic\]](/images/tools-ui/component-tab-basic.png)
+![component tab basic](/images/tools-ui/component-tab-basic.png)
 
 Create a simple tab widget with movable, closeable tabs and an action in the action toolbar.
 
