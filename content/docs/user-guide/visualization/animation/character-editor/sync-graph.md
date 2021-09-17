@@ -22,7 +22,7 @@ This topic describes the following main steps for synchronizing two animation gr
 
 {{< note >}}
 For more information about synchronizing animation in separate clients across the network, see [Synchronizing Animations Across a Network](/docs/userguide/networking/synchronizing-animation.md).
-{{ /note }}
+{{< /note >}}
 
 This topic illustrates this graph synchronization with an example that has two actors, a robot actor ("Jack") and a gun actor. When the player activates the sync mode and uses the keyboard to fire, the robot makes a firing motion and the gun fires. When the player deactivates the sync mode, the robot makes a firing motion, but the gun does not fire.
 
