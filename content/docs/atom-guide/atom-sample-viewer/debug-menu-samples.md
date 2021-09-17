@@ -7,7 +7,6 @@ toc: true
 
 The Atom Sample Viewer debug menu samples demonstrate the various profiling and debugging tools you can use with Atom Renderer. From the debug menu, you can capture frame data, analyze threads, view stats, and visualize CPU and GPU profile data.
 
-{{< placeholder >}}
 {{< todo issue="https://github.com/o3de/o3de.org/issues/687" >}}
 {{< /todo >}}
 
@@ -35,14 +34,12 @@ The CPU Profiler widget has two views: a statistics view and a visualizer. These
 
 ![CPU Profiler File Picker](/images/atom-guide/atom-sample-viewer/cpu-profiler-file-picker.png)
 
-
 CPU Profiler allows you to capture CPU profiling data at a specific time-frame, which you can load and view in the statistics or visualizer views. 
 
 To load captures of CPU profiling data:
 1. Click **Load file** in the CPU Profiler's Toolbar to open the File Picker window. 
 2. Select the capture that you want to load. Captures are stored as `.json` files in `/<project>/user/CpuProfiler/`.
 3. Click **Load selected** to load the selected capture into memory. This displays the captured CPU profiling data in the main CPU Profiling window. 
-
 
 ### Statistics
 
