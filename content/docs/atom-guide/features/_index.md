@@ -96,7 +96,7 @@ Atom has a unified mesh format with support for several mesh types:
 *Related to: [Mesh component](/docs/user-guide/components/reference/atom/mesh), [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
 
 
-## Processing and Post FX
+## Post-processing effects
 
 Tone Mapping and Color Grading   
 : Techniques that adjust the overall lighting and color in a scene. Tone mapping simulates high dynamic range (HDR) by mapping one set of colors to another set that has a higher range. Color grading adjusts the color output of the render. There are two color grading modes: HDR Color Grading and LDR Color Grading. Tone mapping and color grading can be configured in O3DE using the **Display Mapper**. You can also view a demo of tone mapping and color grading in the Atom Sample Viewer. 
@@ -104,7 +104,7 @@ Tone Mapping and Color Grading
 *Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
 
 Post-processing Volumes   
-: Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
+: Volumes that allow post-processing effects (PostFX) to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a Shape component and one of the PostFX components.
 
 *Related to: PostFX components ([Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)* 
 
@@ -128,7 +128,7 @@ Depth of Field
 
 
 Screen Space Ambient Occlusion (SSAO)   
-: Real-time estimation of ambient occlusion (a shading method based on both light sources and surrounding objects) as a screen space post effect.  Atom implements SSAO through a series of compute shader passes.  
+: Real-time estimation of ambient occlusion (a shading method based on both light sources and surrounding objects) as a screen space post-proccessing effect.  Atom implements SSAO through a series of compute shader passes.  
 
 *Related to: [SSAO component](/docs/user-guide/components/reference/atom/ssao/)* 
 
