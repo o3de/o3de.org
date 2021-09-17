@@ -24,3 +24,9 @@ To enable the Terrain Gem, do the following:
 
 1. Use **O3DE Project Manager** or the command line to add the Terrain Gem to your project.
 2. Build your project using Project Manager, Visual Studio, or CMake.
+
+## Components
+
+| Component | Description | 
+| - | - |
+| [Terrain Physics Collider](/docs/user-guide/gems/reference/terrain/terrain_physics_collider.md) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
