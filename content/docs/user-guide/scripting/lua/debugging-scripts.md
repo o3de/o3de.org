@@ -1,6 +1,6 @@
 ---
 linkTitle: Debugging Lua Scripts
-title: Debugging Lua scripts
+title: Debugging Lua Scripts
 description: Learn about debugging Lua scripts in Open 3D Engine.
 toc: true
 weight: 850
