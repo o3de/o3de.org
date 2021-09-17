@@ -75,12 +75,18 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="separator:a184c376975509aa593c621ba7992a17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18aa9d29333d927013ef060ada42311b"><td class="memItemLeft" align="right" valign="top">virtual AZ::TimeMs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#a18aa9d29333d927013ef060ada42311b">GetHostTimeMs</a> () const =0</td></tr>
 <tr class="separator:a18aa9d29333d927013ef060ada42311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6ec813f8d0ddb12f70cb067d651ff0"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#a5a6ec813f8d0ddb12f70cb067d651ff0">GetHostBlendFactor</a> () const =0</td></tr>
+<tr class="separator:a5a6ec813f8d0ddb12f70cb067d651ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99193a3c4063a30b545e782792048c27"><td class="memItemLeft" align="right" valign="top">virtual AzNetworking::ConnectionId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#a99193a3c4063a30b545e782792048c27">GetRewindingConnectionId</a> () const =0</td></tr>
 <tr class="separator:a99193a3c4063a30b545e782792048c27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9480bbd9112ade21670f38fe9c1ba10"><td class="memItemLeft" align="right" valign="top">virtual HostFrameId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#aa9480bbd9112ade21670f38fe9c1ba10">GetHostFrameIdForRewindingConnection</a> (AzNetworking::ConnectionId rewindConnectionId) const =0</td></tr>
 <tr class="separator:aa9480bbd9112ade21670f38fe9c1ba10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58526962d7fda24328dafbc92da848d9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#a58526962d7fda24328dafbc92da848d9">ForceSetTime</a> (HostFrameId frameId, AZ::TimeMs timeMs)=0</td></tr>
+<tr class="separator:a58526962d7fda24328dafbc92da848d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab382d2eb3c1f6577f6ba758d7671e0de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#ab382d2eb3c1f6577f6ba758d7671e0de">AlterTime</a> (HostFrameId frameId, AZ::TimeMs timeMs, AzNetworking::ConnectionId rewindConnectionId)=0</td></tr>
 <tr class="separator:ab382d2eb3c1f6577f6ba758d7671e0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88fab5b49fd2e09866b061b076c6338"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#ae88fab5b49fd2e09866b061b076c6338">AlterBlendFactor</a> (float blendFactor)=0</td></tr>
+<tr class="separator:ae88fab5b49fd2e09866b061b076c6338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df0d91a3660fd7791a5149b55b8a66f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_time.html#a5df0d91a3660fd7791a5149b55b8a66f">SyncEntitiesToRewindState</a> (const AZ::Aabb &amp;rewindVolume)=0</td></tr>
 <tr class="separator:a5df0d91a3660fd7791a5149b55b8a66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88b14f0462962a2a466f6b8a0ca912cf"><td class="memItemLeft" align="right" valign="top"><a id="a88b14f0462962a2a466f6b8a0ca912cf"></a>
@@ -94,6 +100,38 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is an AZ::Interface&lt;&gt; for managing multiplayer specific time related operations. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae88fab5b49fd2e09866b061b076c6338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae88fab5b49fd2e09866b061b076c6338">&#9670;&nbsp;</a></span>AlterBlendFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::INetworkTime::AlterBlendFactor </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>blendFactor</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alters the current Host blend factor. Used to drive interpolation in rewound states. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blendFactor</td><td>the blend factor to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab382d2eb3c1f6577f6ba758d7671e0de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab382d2eb3c1f6577f6ba758d7671e0de">&#9670;&nbsp;</a></span>AlterTime()</h2>
 
@@ -142,6 +180,75 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a58526962d7fda24328dafbc92da848d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58526962d7fda24328dafbc92da848d9">&#9670;&nbsp;</a></span>ForceSetTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Multiplayer::INetworkTime::ForceSetTime </td>
+          <td>(</td>
+          <td class="paramtype">HostFrameId&#160;</td>
+          <td class="paramname"><em>frameId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::TimeMs&#160;</td>
+          <td class="paramname"><em>timeMs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Forcibly sets the current network time to the provided frameId and game time in milliseconds. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frameId</td><td>the new HostFrameId to use </td></tr>
+    <tr><td class="paramname">timeMs</td><td>the new HostTimeMs to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a6ec813f8d0ddb12f70cb067d651ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6ec813f8d0ddb12f70cb067d651ff0">&#9670;&nbsp;</a></span>GetHostBlendFactor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float Multiplayer::INetworkTime::GetHostBlendFactor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Retrieves the hosts current blend factor (may be rewound on the server during backward reconciliation). </p><dl class="section return"><dt>Returns</dt><dd>the hosts current blend factor </dd></dl>
 
 </div>
 </div>
@@ -346,7 +453,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:43 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

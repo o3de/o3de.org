@@ -94,12 +94,16 @@ virtual ScenePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 virtual RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#af5bb54ab4b1b22ada3354e7910fc33d4">GetRenderPipelineForWindow</a> (AzFramework::NativeWindowHandle windowHandle)=0</td></tr>
 <tr class="memdesc:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the render pipeline created for a window. <br /></td></tr>
 <tr class="separator:af5bb54ab4b1b22ada3354e7910fc33d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7266dc1e941588beada56221d23dd15c"><td class="memItemLeft" align="right" valign="top"><a id="a7266dc1e941588beada56221d23dd15c"></a>
-virtual Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSceneSrgAsset</b> () const =0</td></tr>
-<tr class="separator:a7266dc1e941588beada56221d23dd15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac829f0c83c1be432b4e4d34c16720723"><td class="memItemLeft" align="right" valign="top"><a id="ac829f0c83c1be432b4e4d34c16720723"></a>
-virtual Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewSrgAsset</b> () const =0</td></tr>
-<tr class="separator:ac829f0c83c1be432b4e4d34c16720723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada26b20cb0ade3a250d738131bf5b7f8"><td class="memItemLeft" align="right" valign="top"><a id="ada26b20cb0ade3a250d738131bf5b7f8"></a>
+virtual Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#ada26b20cb0ade3a250d738131bf5b7f8">GetCommonShaderAssetForSrgs</a> () const =0</td></tr>
+<tr class="memdesc:ada26b20cb0ade3a250d738131bf5b7f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the shader asset that is being used as the source for the SceneSrg and ViewSrg layouts. <br /></td></tr>
+<tr class="separator:ada26b20cb0ade3a250d738131bf5b7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98b2588aec56784e5b1da59c3423147"><td class="memItemLeft" align="right" valign="top"><a id="ab98b2588aec56784e5b1da59c3423147"></a>
+virtual RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSceneSrgLayout</b> () const =0</td></tr>
+<tr class="separator:ab98b2588aec56784e5b1da59c3423147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a540f02d0137c4beea6e5f754f7935dc7"><td class="memItemLeft" align="right" valign="top"><a id="a540f02d0137c4beea6e5f754f7935dc7"></a>
+virtual RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewSrgLayout</b> () const =0</td></tr>
+<tr class="separator:a540f02d0137c4beea6e5f754f7935dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43af898a7c510a56edb547766f273a0f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a43af898a7c510a56edb547766f273a0f">SimulationTick</a> ()=0</td></tr>
 <tr class="separator:a43af898a7c510a56edb547766f273a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30745437c4472c0d659d6993191c8171"><td class="memItemLeft" align="right" valign="top"><a id="a30745437c4472c0d659d6993191c8171"></a>
@@ -258,7 +262,7 @@ static <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html">
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -63,7 +63,6 @@ $(function() {
 <li>Rebuild()
 : <a class="el" href="class_atom_tools_framework_1_1_inspector_group_widget.html#a92c3482bcb2fdb26883893aa06c276dc">AtomToolsFramework::InspectorGroupWidget</a>
 , <a class="el" href="class_atom_tools_framework_1_1_inspector_property_group_widget.html#a43122247466ff64be9f33ee93566130a">AtomToolsFramework::InspectorPropertyGroupWidget</a>
-, <a class="el" href="class_material_editor_1_1_material_document_requests.html#ae2544a4ec66e239c011b8ff1eba1db83">MaterialEditor::MaterialDocumentRequests</a>
 </li>
 <li>RebuildAll()
 : <a class="el" href="class_atom_tools_framework_1_1_inspector_requests.html#ab794d197dd5f6d020e4b0e8b70847c50">AtomToolsFramework::InspectorRequests</a>
@@ -80,8 +79,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html#ae3e440392388329ba1dfb21c1703eaee">AZ::RPI::SwapChainPass</a>
 </li>
 <li>Redo()
-: <a class="el" href="class_material_editor_1_1_material_document_requests.html#a609ce5044fdad756ea597054e214a232">MaterialEditor::MaterialDocumentRequests</a>
-, <a class="el" href="class_shader_management_console_1_1_shader_management_console_document_requests.html#af0989b0d58279e63a05f6c97a5a07383">ShaderManagementConsole::ShaderManagementConsoleDocumentRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#aedcfd5b7312ba0f124fc261fe7990582">AtomToolsFramework::AtomToolsDocumentRequests</a>
 </li>
 <li>Refresh()
 : <a class="el" href="class_atom_tools_framework_1_1_inspector_group_widget.html#a285ac3986b0eda070109548a3a086548">AtomToolsFramework::InspectorGroupWidget</a>
@@ -98,6 +96,9 @@ $(function() {
 </li>
 <li>RegisterAssociatedViewportContext()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_window_context.html#a2f7e905395c31a2b74ea8be73c8ddb9f">AZ::RPI::WindowContext</a>
+</li>
+<li>RegisterDocumentType()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_system_requests.html#a9986664bc0237e0cc9dde1f45483d29b">AtomToolsFramework::AtomToolsDocumentSystemRequests</a>
 </li>
 <li>RegisterFactory()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_factory_manager_request.html#a69121c31b434be4fc8df4ecd4a75ca10">AZ::RHI::FactoryManagerRequest</a>
@@ -172,7 +173,7 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#a441b364d65fb037214dbe4b9e3c6a318">AZ::Render::ImGuiSystemRequests</a>
 </li>
 <li>RemoveDockWidget()
-: <a class="el" href="class_material_editor_1_1_material_editor_window_requests.html#a589f05cb69eed134249a2f59101709ea">MaterialEditor::MaterialEditorWindowRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a62597a6c9654f8ce270be10dd605065f">AtomToolsFramework::AtomToolsMainWindowRequests</a>
 </li>
 <li>RemoveFromRenderTick()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a713ae084403d4162e7845cacf347a57b">AZ::RPI::RenderPipeline</a>
@@ -190,8 +191,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context_requests_interface.html#a65cf117e709c48f37f4e45207c5aaf6a">AZ::RPI::ViewportContextRequestsInterface</a>
 </li>
 <li>Render()
-: <a class="el" href="class_a_z_1_1_render_1_1_transform_service_feature_processor.html#a992715c476e39113d2c8a3248cac0175">AZ::Render::TransformServiceFeatureProcessor</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#abce954571fd7c4b49c35a4c355c8597d">AZ::RPI::FeatureProcessor</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_feature_processor.html#abce954571fd7c4b49c35a4c355c8597d">AZ::RPI::FeatureProcessor</a>
 </li>
 <li>RenderImGuiBuffersToCurrentViewport()
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_system_requests.html#aa8ab9b8acb2147293dfe6ba86cd67741">AZ::Render::ImGuiSystemRequests</a>
@@ -205,10 +205,12 @@ $(function() {
 <li>RenderTick()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system.html#aa64029a96340dc2021804338e594cc01">AZ::RPI::RPISystem</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_r_p_i_system_interface.html#a30745437c4472c0d659d6993191c8171">AZ::RPI::RPISystemInterface</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a2eccba83b4b8aaabe04f61efed8d5795">AZ::RPI::ViewportContext</a>
 </li>
 <li>RenderViewportWidget()
 : <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html#aa2a85c245ac8ed1100d3bdf9474c06a3">AtomToolsFramework::RenderViewportWidget</a>
+</li>
+<li>Reopen()
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a4ac6b2450367597e8e9fd21c32e3247e">AtomToolsFramework::AtomToolsDocumentRequests</a>
 </li>
 <li>ReportError()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a8e9b542ff427b8e606fc2414188607b2">AZ::RPI::AssetCreator&lt; AssetDataT &gt;</a>
@@ -267,7 +269,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer.html#a7a9917a540d9ccbabef758d40fd20343">AZ::RPI::Buffer</a>
 </li>
 <li>ResizeViewportRenderTarget()
-: <a class="el" href="class_material_editor_1_1_material_editor_window_requests.html#ab5e6d2c12c496c456a7193d4c7ac8602">MaterialEditor::MaterialEditorWindowRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_main_window_requests.html#a45521954bd28eeb0de06d6fa42535c6b">AtomToolsFramework::AtomToolsMainWindowRequests</a>
 </li>
 <li>Resolve()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value_source_data.html#ad06776347b59c366f124f3e88839f827">AZ::RPI::MaterialPropertyValueSourceData</a>
@@ -289,7 +291,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:59 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

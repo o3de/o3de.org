@@ -69,10 +69,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterPrefabPublicH
 <tr class="memitem:adcd8d809855927b9aef5649d4976534a"><td class="memItemLeft" align="right" valign="top"><a id="adcd8d809855927b9aef5649d4976534a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPublicHandlerInterface</b> ()</td></tr>
 <tr class="separator:adcd8d809855927b9aef5649d4976534a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae418434225215b35fba185b336e73945"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#ae418434225215b35fba185b336e73945">CreatePrefab</a> (const AZStd::vector&lt; AZ::EntityId &gt; &amp;entityIds, AZ::IO::PathView absolutePath) override</td></tr>
-<tr class="separator:ae418434225215b35fba185b336e73945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f64d94a9ead5ea2818cf06e943baff8"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a2f64d94a9ead5ea2818cf06e943baff8">InstantiatePrefab</a> (AZStd::string_view filePath, AZ::EntityId parent, const AZ::Vector3 &amp;position) override</td></tr>
-<tr class="separator:a2f64d94a9ead5ea2818cf06e943baff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2357fa7e9bd487e132d465996bb0b12"><td class="memItemLeft" align="right" valign="top">CreatePrefabResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#ab2357fa7e9bd487e132d465996bb0b12">CreatePrefabInDisk</a> (const EntityIdList &amp;entityIds, AZ::IO::PathView filePath) override</td></tr>
+<tr class="separator:ab2357fa7e9bd487e132d465996bb0b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7497ab4537597d9e5d4bf36030df2f9c"><td class="memItemLeft" align="right" valign="top">CreatePrefabResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a7497ab4537597d9e5d4bf36030df2f9c">CreatePrefabInMemory</a> (const EntityIdList &amp;entityIds, AZ::IO::PathView filePath) override</td></tr>
+<tr class="separator:a7497ab4537597d9e5d4bf36030df2f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7f794ffe8b3fe54b1262a96f08ad06"><td class="memItemLeft" align="right" valign="top">InstantiatePrefabResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a4e7f794ffe8b3fe54b1262a96f08ad06">InstantiatePrefab</a> (AZStd::string_view filePath, AZ::EntityId parent, const AZ::Vector3 &amp;position) override</td></tr>
+<tr class="separator:a4e7f794ffe8b3fe54b1262a96f08ad06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa62eafa9d157e2013f22fc895398651d"><td class="memItemLeft" align="right" valign="top">PrefabOperationResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#aa62eafa9d157e2013f22fc895398651d">SavePrefab</a> (AZ::IO::Path filePath) override</td></tr>
 <tr class="separator:aa62eafa9d157e2013f22fc895398651d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a742cfb08b34bce17cd2518d345259232"><td class="memItemLeft" align="right" valign="top">PrefabEntityResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_handler.html#a742cfb08b34bce17cd2518d345259232">CreateEntity</a> (AZ::EntityId parentId, const AZ::Vector3 &amp;position) override</td></tr>
@@ -152,8 +154,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 
 </div>
 </div>
-<a id="ae418434225215b35fba185b336e73945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae418434225215b35fba185b336e73945">&#9670;&nbsp;</a></span>CreatePrefab()</h2>
+<a id="ab2357fa7e9bd487e132d465996bb0b12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2357fa7e9bd487e132d465996bb0b12">&#9670;&nbsp;</a></span>CreatePrefabInDisk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,16 +164,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PrefabOperationResult AzToolsFramework::Prefab::PrefabPublicHandler::CreatePrefab </td>
+          <td class="memname">CreatePrefabResult AzToolsFramework::Prefab::PrefabPublicHandler::CreatePrefabInDisk </td>
           <td>(</td>
-          <td class="paramtype">const AZStd::vector&lt; AZ::EntityId &gt; &amp;&#160;</td>
+          <td class="paramtype">const EntityIdList &amp;&#160;</td>
           <td class="paramname"><em>entityIds</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AZ::IO::PathView&#160;</td>
-          <td class="paramname"><em>absolutePath</em>&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -185,16 +187,62 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Create a prefab out of the entities provided, at the path provided. Automatically detects descendants of entities, and discerns between entities and child instances. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Create a prefab out of the entities provided, at the path provided, and save it in disk immediately. Automatically detects descendants of entities, and discerns between entities and child instances. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">entityIds</td><td>The entities that should form the new prefab (along with their descendants). </td></tr>
     <tr><td class="paramname">filePath</td><td>The absolute path for the new prefab file. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An outcome object; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An outcome object with an entityId of the new prefab's container entity; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#af15fce7fa26fac3575a6ed94103158c9">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a6cca2d6a8cbaad2c33a9f8134fe43856">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+
+</div>
+</div>
+<a id="a7497ab4537597d9e5d4bf36030df2f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7497ab4537597d9e5d4bf36030df2f9c">&#9670;&nbsp;</a></span>CreatePrefabInMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CreatePrefabResult AzToolsFramework::Prefab::PrefabPublicHandler::CreatePrefabInMemory </td>
+          <td>(</td>
+          <td class="paramtype">const EntityIdList &amp;&#160;</td>
+          <td class="paramname"><em>entityIds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AZ::IO::PathView&#160;</td>
+          <td class="paramname"><em>filePath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Create a prefab out of the entities provided, at the path provided, and keep it in memory. Automatically detects descendants of entities, and discerns between entities and child instances. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityIds</td><td>The entities that should form the new prefab (along with their descendants). </td></tr>
+    <tr><td class="paramname">filePath</td><td>The absolute path for the new prefab file. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An outcome object with an entityId of the new prefab's container entity; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
+
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a2e7ed9e0113c0f66b3a3a21c464ea34e">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
 
 </div>
 </div>
@@ -518,8 +566,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 
 </div>
 </div>
-<a id="a2f64d94a9ead5ea2818cf06e943baff8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f64d94a9ead5ea2818cf06e943baff8">&#9670;&nbsp;</a></span>InstantiatePrefab()</h2>
+<a id="a4e7f794ffe8b3fe54b1262a96f08ad06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7f794ffe8b3fe54b1262a96f08ad06">&#9670;&nbsp;</a></span>InstantiatePrefab()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -528,7 +576,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">PrefabOperationResult AzToolsFramework::Prefab::PrefabPublicHandler::InstantiatePrefab </td>
+          <td class="memname">InstantiatePrefabResult AzToolsFramework::Prefab::PrefabPublicHandler::InstantiatePrefab </td>
           <td>(</td>
           <td class="paramtype">AZStd::string_view&#160;</td>
           <td class="paramname"><em>filePath</em>, </td>
@@ -565,9 +613,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>An outcome object; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An outcome object with an entityId of the new prefab's container entity; on failure, it comes with an error message detailing the cause of the error. </dd></dl>
 
-<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a6aec9f85c3290358fc51b84e0b19993e">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
+<p>Implements <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_public_interface.html#a47345d5004368bfd6e0d49ac439e094a">AzToolsFramework::Prefab::PrefabPublicInterface</a>.</p>
 
 </div>
 </div>
@@ -682,7 +730,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterPrefabPubli
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:07 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

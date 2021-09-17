@@ -58,12 +58,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acc9b4bbb1cc54c0635e073b755e715d6"><td class="memItemLeft" align="right" valign="top"><a id="acc9b4bbb1cc54c0635e073b755e715d6"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#acc9b4bbb1cc54c0635e073b755e715d6">ShaderResourceGroupAssets</a> = AZStd::vector&lt; AZ::Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &gt;</td></tr>
-<tr class="memdesc:acc9b4bbb1cc54c0635e073b755e715d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones an existing <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> and replaces the referenced Srg and Variant assets. <br /></td></tr>
-<tr class="separator:acc9b4bbb1cc54c0635e073b755e715d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76d073987187f831b93dab88122708da"><td class="memItemLeft" align="right" valign="top"><a id="a76d073987187f831b93dab88122708da"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderRootVariantAssets</b> = AZStd::vector&lt; AZStd::pair&lt; AZ::Crc32, Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html">RPI::ShaderVariantAsset</a> &gt; &gt;&gt;</td></tr>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a76d073987187f831b93dab88122708da">ShaderRootVariantAssets</a> = AZStd::vector&lt; AZStd::pair&lt; AZ::Crc32, Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html">RPI::ShaderVariantAsset</a> &gt; &gt;&gt;</td></tr>
+<tr class="memdesc:a76d073987187f831b93dab88122708da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clones an existing <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> nd replaces the referenced Srg and Variant assets. <br /></td></tr>
 <tr class="separator:a76d073987187f831b93dab88122708da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -82,31 +79,49 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a288cbced0346a779e1e172335a1bed81">SetDrawListName</a> (const Name &amp;name)</td></tr>
 <tr class="memdesc:a288cbced0346a779e1e172335a1bed81"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] Sets the DrawListTag name associated with this shader. <br /></td></tr>
 <tr class="separator:a288cbced0346a779e1e172335a1bed81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb9e199811e38dfdee55d8030cac030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#aabb9e199811e38dfdee55d8030cac030">AddShaderResourceGroupAsset</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;shaderResourceGroupAsset)</td></tr>
-<tr class="separator:aabb9e199811e38dfdee55d8030cac030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34bed50be0b1a5f0d844f7773c6cb900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a34bed50be0b1a5f0d844f7773c6cb900">SetShaderOptionGroupLayout</a> (const Ptr&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_option_group_layout.html">ShaderOptionGroupLayout</a> &gt; &amp;shaderOptionGroupLayout)</td></tr>
 <tr class="separator:a34bed50be0b1a5f0d844f7773c6cb900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21fb9bec6dd851535f3ce09ca020cbc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a21fb9bec6dd851535f3ce09ca020cbc2">BeginAPI</a> (RHI::APIType type)</td></tr>
 <tr class="separator:a21fb9bec6dd851535f3ce09ca020cbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a972657402a46cfc47cfa0af34e340e4a"><td class="memItemLeft" align="right" valign="top"><a id="a972657402a46cfc47cfa0af34e340e4a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a972657402a46cfc47cfa0af34e340e4a">SetRootShaderVariantAsset</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html">ShaderVariantAsset</a> &gt; shaderVariantAsset)</td></tr>
-<tr class="memdesc:a972657402a46cfc47cfa0af34e340e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Required] There's always a root variant for each RHI::APIType. <br /></td></tr>
-<tr class="separator:a972657402a46cfc47cfa0af34e340e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b0ecb5404a6f839a8cf3eeeda79085"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a24b0ecb5404a6f839a8cf3eeeda79085">BeginSupervariant</a> (const Name &amp;name)</td></tr>
+<tr class="separator:a24b0ecb5404a6f839a8cf3eeeda79085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad217a8309ec76e8035b881bcd78a479c"><td class="memItemLeft" align="right" valign="top"><a id="ad217a8309ec76e8035b881bcd78a479c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetSrgLayoutList</b> (const ShaderResourceGroupLayoutList &amp;srgLayoutList)</td></tr>
+<tr class="separator:ad217a8309ec76e8035b881bcd78a479c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16742af7925dc24938784ebad765077f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a16742af7925dc24938784ebad765077f">SetPipelineLayout</a> (RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; m_pipelineLayoutDescriptor)</td></tr>
+<tr class="separator:a16742af7925dc24938784ebad765077f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465138ef70f173c10bb1d8a1cc174e63"><td class="memItemLeft" align="right" valign="top"><a id="a465138ef70f173c10bb1d8a1cc174e63"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a465138ef70f173c10bb1d8a1cc174e63">SetInputContract</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_input_contract.html">ShaderInputContract</a> &amp;contract)</td></tr>
+<tr class="memdesc:a465138ef70f173c10bb1d8a1cc174e63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the contract for inputs required by the shader. <br /></td></tr>
+<tr class="separator:a465138ef70f173c10bb1d8a1cc174e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab497b279a19ef2c387757708ba6fd4b0"><td class="memItemLeft" align="right" valign="top"><a id="ab497b279a19ef2c387757708ba6fd4b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#ab497b279a19ef2c387757708ba6fd4b0">SetOutputContract</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_output_contract.html">ShaderOutputContract</a> &amp;contract)</td></tr>
+<tr class="memdesc:ab497b279a19ef2c387757708ba6fd4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the contract for outputs required by the shader. <br /></td></tr>
+<tr class="separator:ab497b279a19ef2c387757708ba6fd4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9c3f91bfa04a4dd036953f5c9a2f99"><td class="memItemLeft" align="right" valign="top"><a id="a7f9c3f91bfa04a4dd036953f5c9a2f99"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a7f9c3f91bfa04a4dd036953f5c9a2f99">SetRenderStates</a> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_render_states.html">RHI::RenderStates</a> &amp;renderStates)</td></tr>
+<tr class="memdesc:a7f9c3f91bfa04a4dd036953f5c9a2f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the render states for the draw pipeline. Ignored for non-draw pipelines. <br /></td></tr>
+<tr class="separator:a7f9c3f91bfa04a4dd036953f5c9a2f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5c61dea89ea25250f0661c472dabe61"><td class="memItemLeft" align="right" valign="top"><a id="ac5c61dea89ea25250f0661c472dabe61"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#ac5c61dea89ea25250f0661c472dabe61">SetShaderStageAttributeMapList</a> (const RHI::ShaderStageAttributeMapList &amp;shaderStageAttributeMapList)</td></tr>
 <tr class="memdesc:ac5c61dea89ea25250f0661c472dabe61"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Optional] Not all shaders have attributes before functions. Some attributes do not exist for all RHI::APIType either. <br /></td></tr>
 <tr class="separator:ac5c61dea89ea25250f0661c472dabe61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7cdd1945f4ec8eb0139e7a4aef71b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#af7cdd1945f4ec8eb0139e7a4aef71b91">SetPipelineLayout</a> (const Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; &amp;pipelineLayoutDescriptor)</td></tr>
-<tr class="separator:af7cdd1945f4ec8eb0139e7a4aef71b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972657402a46cfc47cfa0af34e340e4a"><td class="memItemLeft" align="right" valign="top"><a id="a972657402a46cfc47cfa0af34e340e4a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a972657402a46cfc47cfa0af34e340e4a">SetRootShaderVariantAsset</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset.html">ShaderVariantAsset</a> &gt; shaderVariantAsset)</td></tr>
+<tr class="memdesc:a972657402a46cfc47cfa0af34e340e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Required] There's always a root variant for each supervariant. <br /></td></tr>
+<tr class="separator:a972657402a46cfc47cfa0af34e340e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21790af77ee7311e51de79048e79824c"><td class="memItemLeft" align="right" valign="top"><a id="a21790af77ee7311e51de79048e79824c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>EndSupervariant</b> ()</td></tr>
+<tr class="separator:a21790af77ee7311e51de79048e79824c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03bf631229587db98b4f322e2770d18a"><td class="memItemLeft" align="right" valign="top"><a id="a03bf631229587db98b4f322e2770d18a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>EndAPI</b> ()</td></tr>
 <tr class="separator:a03bf631229587db98b4f322e2770d18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82f4d4c8728915b9947c4e85c957c784"><td class="memItemLeft" align="right" valign="top"><a id="a82f4d4c8728915b9947c4e85c957c784"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset)</td></tr>
 <tr class="separator:a82f4d4c8728915b9947c4e85c957c784"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bc5e649b014d45627fffa2800b08e67"><td class="memItemLeft" align="right" valign="top"><a id="a5bc5e649b014d45627fffa2800b08e67"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> (const Data::AssetId &amp;assetId, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> *sourceShaderAsset, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#acc9b4bbb1cc54c0635e073b755e715d6">ShaderResourceGroupAssets</a> &amp;srgAssets, const ShaderRootVariantAssets &amp;rootVariantAssets)</td></tr>
-<tr class="separator:a5bc5e649b014d45627fffa2800b08e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51324759970f6751990348e36b5c2165"><td class="memItemLeft" align="right" valign="top"><a id="a51324759970f6751990348e36b5c2165"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Clone</b> (const Data::AssetId &amp;assetId, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &amp;sourceShaderAsset, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a76d073987187f831b93dab88122708da">ShaderRootVariantAssets</a> &amp;rootVariantAssets)</td></tr>
+<tr class="separator:a51324759970f6751990348e36b5c2165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html">AZ::RPI::AssetCreator&lt; ShaderAsset &gt;</a></td></tr>
 <tr class="memitem:a26787bf58b938d387c329e6d12208d5b inherit pub_methods_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memItemLeft" align="right" valign="top"><a id="a26787bf58b938d387c329e6d12208d5b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_asset_creator.html#a26787bf58b938d387c329e6d12208d5b">SetElevateWarnings</a> (bool elevated)</td></tr>
@@ -158,25 +173,6 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">S
 <tr class="separator:a0f56e7b03cd164900a47c72e1f874c0a inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_asset_creator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aabb9e199811e38dfdee55d8030cac030"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aabb9e199811e38dfdee55d8030cac030">&#9670;&nbsp;</a></span>AddShaderResourceGroupAsset()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::RPI::ShaderAssetCreator::AddShaderResourceGroupAsset </td>
-          <td>(</td>
-          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>shaderResourceGroupAsset</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Optional] Adds a shader resource group asset. The order of shader resource group assets must match the same order supplied to the pipeline layout descriptor. A mismatch will cause End() to fail. This method requires that the asset be loaded in order to validate contents properly. </p>
-
-</div>
-</div>
 <a id="a21fb9bec6dd851535f3ce09ca020cbc2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a21fb9bec6dd851535f3ce09ca020cbc2">&#9670;&nbsp;</a></span>BeginAPI()</h2>
 
@@ -201,8 +197,27 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">S
 
 </div>
 </div>
-<a id="af7cdd1945f4ec8eb0139e7a4aef71b91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7cdd1945f4ec8eb0139e7a4aef71b91">&#9670;&nbsp;</a></span>SetPipelineLayout()</h2>
+<a id="a24b0ecb5404a6f839a8cf3eeeda79085"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b0ecb5404a6f839a8cf3eeeda79085">&#9670;&nbsp;</a></span>BeginSupervariant()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::ShaderAssetCreator::BeginSupervariant </td>
+          <td>(</td>
+          <td class="paramtype">const Name &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Begins the creation of a Supervariant for the current RHI::APIType. If this is the first supervariant its name must be empty. The first supervariant is always the default, nameless, supervariant. </p>
+
+</div>
+</div>
+<a id="a16742af7925dc24938784ebad765077f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16742af7925dc24938784ebad765077f">&#9670;&nbsp;</a></span>SetPipelineLayout()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,8 +225,8 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">S
         <tr>
           <td class="memname">void AZ::RPI::ShaderAssetCreator::SetPipelineLayout </td>
           <td>(</td>
-          <td class="paramtype">const Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>pipelineLayoutDescriptor</em></td><td>)</td>
+          <td class="paramtype">RHI::Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_pipeline_layout_descriptor.html">RHI::PipelineLayoutDescriptor</a> &gt;&#160;</td>
+          <td class="paramname"><em>m_pipelineLayoutDescriptor</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -264,7 +279,7 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">S
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

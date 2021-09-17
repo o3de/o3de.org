@@ -119,7 +119,7 @@ AZStd::aligned_storage_t&lt; PageSize, alignof(T)&gt;&#160;</td><td class="memIt
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a02ffa39bc7dfb9c99574f3aa7ac87baa"><td class="memItemLeft" align="right" valign="top"><a id="a02ffa39bc7dfb9c99574f3aa7ac87baa"></a>
-static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidPage</b> = -1</td></tr>
+static constexpr size_t&#160;</td><td class="memItemRight" valign="bottom"><b>InvalidPage</b> = std::numeric_limits&lt;size_t&gt;::max()</td></tr>
 <tr class="separator:a02ffa39bc7dfb9c99574f3aa7ac87baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae60d26a53c290a1f44bbd3ba84a076c"><td class="memItemLeft" align="right" valign="top"><a id="aae60d26a53c290a1f44bbd3ba84a076c"></a>
 static constexpr uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>FullBits</b> = 0xFFFFFFFFFFFFFFFFull</td></tr>
@@ -162,7 +162,7 @@ template&lt;typename T , size_t ElementsPerPage, class Allocator &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:51 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

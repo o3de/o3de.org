@@ -54,16 +54,19 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;ImGuiCpuProfiler.h&gt;</code></p>
+
+<p>Inherits Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a984dea8f2d9c428a9610eb7f540da888"><td class="memItemLeft" align="right" valign="top"><a id="a984dea8f2d9c428a9610eb7f540da888"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_im_gui_cpu_profiler.html#a984dea8f2d9c428a9610eb7f540da888">Draw</a> (bool &amp;keepDrawing, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cpu_timing_statistics.html">AZ::RHI::CpuTimingStatistics</a> &amp;cpuTimingStatistics)</td></tr>
-<tr class="memdesc:a984dea8f2d9c428a9610eb7f540da888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the provided Cpu statistics. <br /></td></tr>
+<tr class="memdesc:a984dea8f2d9c428a9610eb7f540da888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the overall CPU profiling window, defaults to the statistical view. <br /></td></tr>
 <tr class="separator:a984dea8f2d9c428a9610eb7f540da888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Visual profiler for Cpu statistics. It uses ImGui as the library for displaying the Attachments and Heaps. It shows all heaps that are being used by the RHI and how the resources are allocated in each heap. </p>
+<div class="textblock"><p>ImGui widget for examining Atom CPU Profiling instrumentation. Offers both a statistical view (with sorting and searching capability) and a visualizer similar to RAD and other profiling tools. <br  />
+ </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>Gems/Atom/Utils/Code/Include/Atom/Utils/ImGuiCpuProfiler.h</li>
 <li>Gems/Atom/Utils/Code/Include/Atom/Utils/ImGuiCpuProfiler.inl</li>
@@ -71,7 +74,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:51 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

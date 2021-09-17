@@ -66,21 +66,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ce75d9a7ae403fb4ce641c70a97a9cd"><td class="memItemLeft" align="right" valign="top"><a id="a2ce75d9a7ae403fb4ce641c70a97a9cd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ScriptEventVersionMismatch</b> (AZ::u32 nodeVersion, const ScriptEvents::ScriptEvent &amp;definition, AZ::EntityId nodeId)</td></tr>
 <tr class="separator:a2ce75d9a7ae403fb4ce641c70a97a9cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aa6f5f284c29d28f68b4044eb8dd0c1"><td class="memItemLeft" align="right" valign="top"><a id="a2aa6f5f284c29d28f68b4044eb8dd0c1"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanAutoFix</b> () const</td></tr>
-<tr class="separator:a2aa6f5f284c29d28f68b4044eb8dd0c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69d94b55b48b88cd6b3aa3a2b7079d0d"><td class="memItemLeft" align="right" valign="top"><a id="a69d94b55b48b88cd6b3aa3a2b7079d0d"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () const</td></tr>
-<tr class="separator:a69d94b55b48b88cd6b3aa3a2b7079d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ced96025bb49b86f3899e492d91ac8c"><td class="memItemLeft" align="right" valign="top"><a id="a1ced96025bb49b86f3899e492d91ac8c"></a>
-AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdCrc</b> () const</td></tr>
-<tr class="separator:a1ced96025bb49b86f3899e492d91ac8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48d1207b30f2873c72c12c57739e389"><td class="memItemLeft" align="right" valign="top"><a id="ad48d1207b30f2873c72c12c57739e389"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>CanAutoFix</b> () const override</td></tr>
+<tr class="separator:ad48d1207b30f2873c72c12c57739e389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a6cb0c5c291934562c0e90511be7b8f"><td class="memItemLeft" align="right" valign="top"><a id="a9a6cb0c5c291934562c0e90511be7b8f"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdentifier</b> () const override</td></tr>
+<tr class="separator:a9a6cb0c5c291934562c0e90511be7b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a017857836ab365dcfca30093c7206b7b"><td class="memItemLeft" align="right" valign="top"><a id="a017857836ab365dcfca30093c7206b7b"></a>
+AZ::Crc32&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdCrc</b> () const override</td></tr>
+<tr class="separator:a017857836ab365dcfca30093c7206b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dafc5a569559a4e9382b4f23162a063"><td class="memItemLeft" align="right" valign="top"><a id="a3dafc5a569559a4e9382b4f23162a063"></a>
 const ScriptEvents::ScriptEvent &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableId</b> () const</td></tr>
 <tr class="separator:a3dafc5a569559a4e9382b4f23162a063"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe8fe2b4b25be5cc69187f4802b24cca"><td class="memItemLeft" align="right" valign="top"><a id="afe8fe2b4b25be5cc69187f4802b24cca"></a>
-AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetTooltip</b> () const</td></tr>
-<tr class="separator:afe8fe2b4b25be5cc69187f4802b24cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f302279063a10ff7cedd737d2c5d9a1"><td class="memItemLeft" align="right" valign="top"><a id="a0f302279063a10ff7cedd737d2c5d9a1"></a>
+AZStd::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>GetTooltip</b> () const override</td></tr>
+<tr class="separator:a0f302279063a10ff7cedd737d2c5d9a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9d9b1e6023eec5443ec8b9aabdffa5e"><td class="memItemLeft" align="right" valign="top"><a id="ab9d9b1e6023eec5443ec8b9aabdffa5e"></a>
 AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><b>GetNodeId</b> () const</td></tr>
 <tr class="separator:ab9d9b1e6023eec5443ec8b9aabdffa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,7 +137,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetValidationType</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:55 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:32 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

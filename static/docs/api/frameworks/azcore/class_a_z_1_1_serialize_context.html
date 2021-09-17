@@ -205,9 +205,9 @@ template&lt;class T , class... TBaseClasses&gt; </td></tr>
 template&lt;typename EnumType &gt; </td></tr>
 <tr class="memitem:a75eb622abc9e1f9e1984100cb94eea15"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_enum_builder.html">EnumBuilder</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Enum</b> (<a class="el" href="class_a_z_1_1_serialize_context_1_1_i_object_factory.html">IObjectFactory</a> *factory)</td></tr>
 <tr class="separator:a75eb622abc9e1f9e1984100cb94eea15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7dda5cd60689645dd12643a78fe97a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context.html#ad7dda5cd60689645dd12643a78fe97a5">RegisterType</a> (const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">AZ::TypeId</a> &amp;typeId, <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">AZ::SerializeContext::ClassData</a> &amp;&amp;classData, <a class="el" href="class_a_z_1_1_serialize_context.html#a25e885376614e704e675a0f370c75c53">CreateAnyFunc</a> createAnyFunc=[](<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *) -&gt; <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> { return {};})</td></tr>
+<tr class="memitem:ad7dda5cd60689645dd12643a78fe97a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context.html#ad7dda5cd60689645dd12643a78fe97a5">RegisterType</a> (const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> &amp;typeId, <a class="el" href="class_a_z_1_1_serialize_context_1_1_class_data.html">AZ::SerializeContext::ClassData</a> &amp;&amp;classData, <a class="el" href="class_a_z_1_1_serialize_context.html#a25e885376614e704e675a0f370c75c53">CreateAnyFunc</a> createAnyFunc=[](<a class="el" href="class_a_z_1_1_serialize_context.html">SerializeContext</a> *) -&gt; <a class="el" href="class_a_z_std_1_1any.html">AZStd::any</a> { return {};})</td></tr>
 <tr class="separator:ad7dda5cd60689645dd12643a78fe97a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85ada1d7665a6fb240e3eb9065dd6e61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context.html#a85ada1d7665a6fb240e3eb9065dd6e61">UnregisterType</a> (const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">AZ::TypeId</a> &amp;typeId)</td></tr>
+<tr class="memitem:a85ada1d7665a6fb240e3eb9065dd6e61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_serialize_context.html#a85ada1d7665a6fb240e3eb9065dd6e61">UnregisterType</a> (const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> &amp;typeId)</td></tr>
 <tr class="separator:a85ada1d7665a6fb240e3eb9065dd6e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6316b42932376b7ec5b3d93a4555afa1"><td class="memTemplParams" colspan="2"><a id="a6316b42932376b7ec5b3d93a4555afa1"></a>
 template&lt;class ValueType &gt; </td></tr>
@@ -348,7 +348,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterDataContainer</b> (<a class="el" href="namespace_a_z_std.html#aeb4832383c83113340791a3ab3fe87f0">AZStd::unique_ptr</a>&lt; <a class="el" href="class_a_z_1_1_serialize_context_1_1_i_data_container.html">IDataContainer</a> &gt; dataContainer)</td></tr>
 <tr class="separator:a8fc0037fc10edefe642edfc3ed59fd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a038ccd391d94c7f582e268495b9d32a9"><td class="memItemLeft" align="right" valign="top"><a id="a038ccd391d94c7f582e268495b9d32a9"></a>
-const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">TypeId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnderlyingTypeId</b> (const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">TypeId</a> &amp;enumTypeId) const</td></tr>
+const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetUnderlyingTypeId</b> (const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">TypeId</a> &amp;enumTypeId) const</td></tr>
 <tr class="separator:a038ccd391d94c7f582e268495b9d32a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcca8e22bbfb0c4140e7f9ce2012ebe5"><td class="memItemLeft" align="right" valign="top"><a id="adcca8e22bbfb0c4140e7f9ce2012ebe5"></a>
 <a class="el" href="class_a_z_1_1_serialize_context_1_1_per_module_generic_class_info.html">PerModuleGenericClassInfo</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentSerializeContextModule</b> ()</td></tr>
@@ -623,7 +623,7 @@ template&lt;typename EnumType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="class_a_z_1_1_serialize_context_1_1_class_builder.html">ClassBuilder</a> AZ::SerializeContext::RegisterType </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">AZ::TypeId</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> &amp;&#160;</td>
           <td class="paramname"><em>typeId</em>, </td>
         </tr>
         <tr>
@@ -658,7 +658,7 @@ template&lt;typename EnumType &gt; </div>
         <tr>
           <td class="memname">bool AZ::SerializeContext::UnregisterType </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a6ce25a76e8886c88778e95866aa51150">AZ::TypeId</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespace_a_z.html#a5c1a2bfc05f03fd482d2fb55fbe82051">AZ::TypeId</a> &amp;&#160;</td>
           <td class="paramname"><em>typeId</em></td><td>)</td>
           <td></td>
         </tr>
@@ -675,7 +675,7 @@ template&lt;typename EnumType &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:48 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:08 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -57,24 +57,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a08b5999a421b5440733cc45939f3c2a8"><td class="memItemLeft" align="right" valign="top"><a id="a08b5999a421b5440733cc45939f3c2a8"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>SubdirMap</b> = AZStd::map&lt; AZStd::string_view, AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> &gt; &gt;</td></tr>
-<tr class="separator:a08b5999a421b5440733cc45939f3c2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce5552146d2159ba524b49d8a92d833"><td class="memItemLeft" align="right" valign="top"><a id="a8ce5552146d2159ba524b49d8a92d833"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FileMap</b> = AZStd::map&lt; AZStd::string_view, AZStd::unique_ptr&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry.html">FileEntry</a> &gt; &gt;</td></tr>
-<tr class="separator:a8ce5552146d2159ba524b49d8a92d833"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a465f50702a3a207143e59a4f94fd0a"><td class="memItemLeft" align="right" valign="top"><a id="a0a465f50702a3a207143e59a4f94fd0a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>SubdirMap</b> = AZStd::map&lt; AZ::IO::PathView, AZStd::unique_ptr&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> &gt; &gt;</td></tr>
+<tr class="separator:a0a465f50702a3a207143e59a4f94fd0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52686e79f2549127e2e196ddb02bc8ad"><td class="memItemLeft" align="right" valign="top"><a id="a52686e79f2549127e2e196ddb02bc8ad"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FileMap</b> = AZStd::map&lt; AZ::IO::PathView, AZStd::unique_ptr&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry.html">FileEntry</a> &gt; &gt;</td></tr>
+<tr class="separator:a52686e79f2549127e2e196ddb02bc8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa03681f408ee4ac658311afb468dcac0"><td class="memItemLeft" align="right" valign="top"><a id="aa03681f408ee4ac658311afb468dcac0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:aa03681f408ee4ac658311afb468dcac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4369725d71087e464240c527e6a12aee"><td class="memItemLeft" align="right" valign="top"><a id="a4369725d71087e464240c527e6a12aee"></a>
-ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (AZStd::string_view szPath, const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base.html">FileEntryBase</a> &amp;file)</td></tr>
-<tr class="separator:a4369725d71087e464240c527e6a12aee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f04ded2af9133d56a2302e9b4f33ee"><td class="memItemLeft" align="right" valign="top"><a id="ad9f04ded2af9133d56a2302e9b4f33ee"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry.html">FileEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (AZStd::string_view szPath)</td></tr>
-<tr class="separator:ad9f04ded2af9133d56a2302e9b4f33ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c5524f93b061f81a6071bfe99c32e4"><td class="memItemLeft" align="right" valign="top"><a id="a71c5524f93b061f81a6071bfe99c32e4"></a>
+ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (AZ::IO::PathView szPath, const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base.html">FileEntryBase</a> &amp;file)</td></tr>
+<tr class="separator:a71c5524f93b061f81a6071bfe99c32e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c7ec0c6cf96a0cf0c106b1168a29f37"><td class="memItemLeft" align="right" valign="top"><a id="a4c7ec0c6cf96a0cf0c106b1168a29f37"></a>
+<a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry.html">FileEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (AZ::IO::PathView szPath)</td></tr>
+<tr class="separator:a4c7ec0c6cf96a0cf0c106b1168a29f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8f98db3e518094c6e8813b7616f91d9"><td class="memItemLeft" align="right" valign="top"><a id="aa8f98db3e518094c6e8813b7616f91d9"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>NumFilesTotal</b> () const</td></tr>
 <tr class="separator:aa8f98db3e518094c6e8813b7616f91d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -87,27 +87,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr
 <tr class="memitem:a824934dbb1fad183a37fe7f44373d671"><td class="memItemLeft" align="right" valign="top"><a id="a824934dbb1fad183a37fe7f44373d671"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Swap</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> &amp;rThat)</td></tr>
 <tr class="separator:a824934dbb1fad183a37fe7f44373d671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ab161216065f730a26dc4599cc2a37"><td class="memItemLeft" align="right" valign="top"><a id="aa6ab161216065f730a26dc4599cc2a37"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () const</td></tr>
-<tr class="separator:aa6ab161216065f730a26dc4599cc2a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa063b9e3f27c3c3da06f015c38f06d82"><td class="memItemLeft" align="right" valign="top"><a id="aa063b9e3f27c3c3da06f015c38f06d82"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOwnerOf</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry.html">FileEntry</a> *pFileEntry) const</td></tr>
 <tr class="separator:aa063b9e3f27c3c3da06f015c38f06d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fb29d01c6fcf85c1d6af852c6f94b09"><td class="memItemLeft" align="right" valign="top"><a id="a8fb29d01c6fcf85c1d6af852c6f94b09"></a>
-<a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindDir</b> (AZStd::string_view szDirName)</td></tr>
-<tr class="separator:a8fb29d01c6fcf85c1d6af852c6f94b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa566331d5a3eb6aeb572a82a71c442ab"><td class="memItemLeft" align="right" valign="top"><a id="aa566331d5a3eb6aeb572a82a71c442ab"></a>
-ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDir</b> (AZStd::string_view szDirName)</td></tr>
-<tr class="separator:aa566331d5a3eb6aeb572a82a71c442ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389cd6f37d7216e58b7efe830e955400"><td class="memItemLeft" align="right" valign="top"><a id="a389cd6f37d7216e58b7efe830e955400"></a>
+<a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>FindDir</b> (AZ::IO::PathView szDirName)</td></tr>
+<tr class="separator:a389cd6f37d7216e58b7efe830e955400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941e523edb74268e3546c8838c9dd23f"><td class="memItemLeft" align="right" valign="top"><a id="a941e523edb74268e3546c8838c9dd23f"></a>
+ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDir</b> (AZ::IO::PathView szDirName)</td></tr>
+<tr class="separator:a941e523edb74268e3546c8838c9dd23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a728365e5ec3eef132dca66b2d83a576c"><td class="memItemLeft" align="right" valign="top"><a id="a728365e5ec3eef132dca66b2d83a576c"></a>
 ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAll</b> ()</td></tr>
 <tr class="separator:a728365e5ec3eef132dca66b2d83a576c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20bb9eea64b15b1862b65873118831e8"><td class="memItemLeft" align="right" valign="top"><a id="a20bb9eea64b15b1862b65873118831e8"></a>
-FileMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>FindFile</b> (AZStd::string_view szFileName)</td></tr>
-<tr class="separator:a20bb9eea64b15b1862b65873118831e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add72f4c9d89ce3a18e26f1392f634f77"><td class="memItemLeft" align="right" valign="top"><a id="add72f4c9d89ce3a18e26f1392f634f77"></a>
-ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFile</b> (AZStd::string_view szFileName)</td></tr>
-<tr class="separator:add72f4c9d89ce3a18e26f1392f634f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26331af7c3c6c0b87b6a7c531d9e87c8"><td class="memItemLeft" align="right" valign="top"><a id="a26331af7c3c6c0b87b6a7c531d9e87c8"></a>
+FileMap::iterator&#160;</td><td class="memItemRight" valign="bottom"><b>FindFile</b> (AZ::IO::PathView szFileName)</td></tr>
+<tr class="separator:a26331af7c3c6c0b87b6a7c531d9e87c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70761357e3eb2cb07b397ce7298e050"><td class="memItemLeft" align="right" valign="top"><a id="af70761357e3eb2cb07b397ce7298e050"></a>
+ErrorEnum&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveFile</b> (AZ::IO::PathView szFileName)</td></tr>
+<tr class="separator:af70761357e3eb2cb07b397ce7298e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a266e4efed35e99f8281ea429625305b3"><td class="memItemLeft" align="right" valign="top"><a id="a266e4efed35e99f8281ea429625305b3"></a>
 <a class="el" href="class_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_tree.html">FileEntryTree</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDirectory</b> ()</td></tr>
 <tr class="separator:a266e4efed35e99f8281ea429625305b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,7 +154,7 @@ FileMap&#160;</td><td class="memItemRight" valign="bottom"><b>m_mapFiles</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

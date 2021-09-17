@@ -116,6 +116,19 @@ const AZ::Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTa
 <tr class="memitem:a6f271c8c14e6cca7d116011340385aa6"><td class="memItemLeft" align="right" valign="top"><a id="a6f271c8c14e6cca7d116011340385aa6"></a>
 PassSystemState&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> () const override</td></tr>
 <tr class="separator:a6f271c8c14e6cca7d116011340385aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a05ef40c34a17daec128010b9fa7625"><td class="memItemLeft" align="right" valign="top"><a id="a5a05ef40c34a17daec128010b9fa7625"></a>
+<a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5a05ef40c34a17daec128010b9fa7625">FindSwapChainPass</a> (AzFramework::NativeWindowHandle windowHandle) const override</td></tr>
+<tr class="memdesc:a5a05ef40c34a17daec128010b9fa7625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> associated with window Handle. <br /></td></tr>
+<tr class="separator:a5a05ef40c34a17daec128010b9fa7625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70be9b24d1e8c2e977ef97b02aefc587"><td class="memItemLeft" align="right" valign="top"><a id="a70be9b24d1e8c2e977ef97b02aefc587"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementFrameDrawItemCount</b> (u32 numDrawItems) override</td></tr>
+<tr class="separator:a70be9b24d1e8c2e977ef97b02aefc587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7ab6e637f94d9742e9b36a8c93e085e"><td class="memItemLeft" align="right" valign="top"><a id="ab7ab6e637f94d9742e9b36a8c93e085e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementFrameRenderPassCount</b> () override</td></tr>
+<tr class="separator:ab7ab6e637f94d9742e9b36a8c93e085e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5967f53c7b1d7e6cb56d36f8da83e1"><td class="memItemLeft" align="right" valign="top"><a id="aea5967f53c7b1d7e6cb56d36f8da83e1"></a>
+<a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_system_frame_statistics.html">PassSystemFrameStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameStatistics</b> () override</td></tr>
+<tr class="separator:aea5967f53c7b1d7e6cb56d36f8da83e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31988cf498f19c9198152d6daa937a55"><td class="memItemLeft" align="right" valign="top"><a id="a31988cf498f19c9198152d6daa937a55"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a31988cf498f19c9198152d6daa937a55">AddPassCreator</a> (Name className, PassCreator createFunction) override</td></tr>
 <tr class="memdesc:a31988cf498f19c9198152d6daa937a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a PassCreator with the <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_factory.html">PassFactory</a>. <br /></td></tr>
@@ -172,10 +185,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a4572b682546a8aff366f2b4bba69c07f">FindPasses</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;passFilter) const override</td></tr>
 <tr class="memdesc:a4572b682546a8aff366f2b4bba69c07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find matching passes from registered passes with specified filter. <br /></td></tr>
 <tr class="separator:a4572b682546a8aff366f2b4bba69c07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a05ef40c34a17daec128010b9fa7625"><td class="memItemLeft" align="right" valign="top"><a id="a5a05ef40c34a17daec128010b9fa7625"></a>
-<a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#a5a05ef40c34a17daec128010b9fa7625">FindSwapChainPass</a> (AzFramework::NativeWindowHandle windowHandle) const override</td></tr>
-<tr class="memdesc:a5a05ef40c34a17daec128010b9fa7625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> associated with window Handle. <br /></td></tr>
-<tr class="separator:a5a05ef40c34a17daec128010b9fa7625"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_pass_system_interface"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_pass_system_interface')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html">AZ::RPI::PassSystemInterface</a></td></tr>
 <tr class="memitem:a814bdf9ac09ecdd4b6207aea77199d15 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_pass_system_interface"><td class="memItemLeft" align="right" valign="top"><a id="a814bdf9ac09ecdd4b6207aea77199d15"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html">PassSystemInterface</a>, &quot;{19DE806F-F1B2-4B1E-A0F2-F8BA85B4552E}&quot;)</td></tr>
@@ -401,7 +410,7 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>OnReadyLoadTemplates
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

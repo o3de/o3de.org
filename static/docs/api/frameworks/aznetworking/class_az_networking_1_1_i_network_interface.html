@@ -89,8 +89,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8a410b6b21c70bdbf8ec5f8e4ef846f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad524ad91df8420737afcc483c6d29625"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#ad524ad91df8420737afcc483c6d29625">WasPacketAcked</a> (ConnectionId connectionId, PacketId packetId)=0</td></tr>
 <tr class="separator:ad524ad91df8420737afcc483c6d29625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9d4e7c08b5a2ceada8a165691a76d25"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#ad9d4e7c08b5a2ceada8a165691a76d25">StopListening</a> ()=0</td></tr>
+<tr class="separator:ad9d4e7c08b5a2ceada8a165691a76d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ca83e218f4d4189b0d4ba198bfdfa44"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#a9ca83e218f4d4189b0d4ba198bfdfa44">Disconnect</a> (ConnectionId connectionId, DisconnectReason reason)=0</td></tr>
 <tr class="separator:a9ca83e218f4d4189b0d4ba198bfdfa44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255272df2dda26b007942f22cd29fb4a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#a255272df2dda26b007942f22cd29fb4a">SetTimeoutEnabled</a> (bool timeoutEnabled)=0</td></tr>
+<tr class="separator:a255272df2dda26b007942f22cd29fb4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50863372dd18abbd9c2547ea355574d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#ad50863372dd18abbd9c2547ea355574d">IsTimeoutEnabled</a> () const =0</td></tr>
+<tr class="separator:ad50863372dd18abbd9c2547ea355574d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1abadc886fc7ddc7434b5f013794904c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_az_networking_1_1_network_interface_metrics.html">NetworkInterfaceMetrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#a1abadc886fc7ddc7434b5f013794904c">GetMetrics</a> () const</td></tr>
 <tr class="separator:a1abadc886fc7ddc7434b5f013794904c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc812b9d417c4beb84f1bd8c489f7778"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_networking_1_1_network_interface_metrics.html">NetworkInterfaceMetrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_network_interface.html#abc812b9d417c4beb84f1bd8c489f7778">GetMetrics</a> ()</td></tr>
@@ -393,6 +399,34 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad50863372dd18abbd9c2547ea355574d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad50863372dd18abbd9c2547ea355574d">&#9670;&nbsp;</a></span>IsTimeoutEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzNetworking::INetworkInterface::IsTimeoutEnabled </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Whether this connection interface will disconnect by virtue of a time out (does not account for cvars affecting all connections) </p><dl class="section return"><dt>Returns</dt><dd>boolean true if this connection will not disconnect on timeout (does not account for cvars affecting all connections) </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a96015a5abd6d37950f3ddde4018727c6">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a649950ef9505286e24fe0aa42d6def4c">AzNetworking::TcpNetworkInterface</a>.</p>
+
+</div>
+</div>
 <a id="ad7f204197493c4bd7c1d11263523a19a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad7f204197493c4bd7c1d11263523a19a">&#9670;&nbsp;</a></span>Listen()</h2>
 
@@ -520,6 +554,68 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a255272df2dda26b007942f22cd29fb4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255272df2dda26b007942f22cd29fb4a">&#9670;&nbsp;</a></span>SetTimeoutEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzNetworking::INetworkInterface::SetTimeoutEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>timeoutEnabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets whether this connection interface can disconnect by virtue of a timeout </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeoutEnabled</td><td>If this connection interface will automatically disconnect due to a timeout </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#a94f4e069f28807916a20a7c835735710">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#ad987b8fa001f03e0891555089ae09d19">AzNetworking::TcpNetworkInterface</a>.</p>
+
+</div>
+</div>
+<a id="ad9d4e7c08b5a2ceada8a165691a76d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9d4e7c08b5a2ceada8a165691a76d25">&#9670;&nbsp;</a></span>StopListening()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool AzNetworking::INetworkInterface::StopListening </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Closes the network interface to stop accepting new incoming connections. </p><dl class="section return"><dt>Returns</dt><dd>boolean true if the operation was successful, false if it failed </dd></dl>
+
+<p>Implemented in <a class="el" href="class_az_networking_1_1_udp_network_interface.html#ad05602455af67d30adca7f8f7defbb70">AzNetworking::UdpNetworkInterface</a>, and <a class="el" href="class_az_networking_1_1_tcp_network_interface.html#a45f3e49d5f61f90b0a43e4a9fccf91df">AzNetworking::TcpNetworkInterface</a>.</p>
+
+</div>
+</div>
 <a id="a6fa639cf42fc9686bbf3017de81b57fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6fa639cf42fc9686bbf3017de81b57fb">&#9670;&nbsp;</a></span>Update()</h2>
 
@@ -606,7 +702,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:28 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:53 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
