@@ -6,7 +6,7 @@ weight: 100
 ---
 
 The **Terrain Physics Collider** component provides terrain data to the physics system in the form of a heightfield.  
-The dimensions of the collider can be configured by modifying the [Box component](/docs/user-guide/components/reference/shape/box-shape) on the same entity.
+The dimensions of the collider can be configured by modifying the [Axis Aligned Box Shape Component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) on the same entity.
 The **Box component** is required for the **Terrain Physics Collider** to operate.
 
 ## Provider ##
