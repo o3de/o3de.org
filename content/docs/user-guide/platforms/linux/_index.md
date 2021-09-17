@@ -77,7 +77,7 @@ cmake --build build/linux --target=Editor
 
 ## Building from command line
 
-Once the build folder is generated, building from command line at this point is the same as the other platforms. 
+Once the build folder is generated, building from command line is the same process as for other platforms.
 
 ### Single Config Builds
 
