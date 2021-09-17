@@ -180,9 +180,9 @@ const <a class="el" href="struct_grid_mate_1_1_grid_session_param.html">GridSess
 <tr class="memitem:a9f8619cedbd38675be0e17ea669b240b"><td class="memItemLeft" align="right" valign="top"><a id="a9f8619cedbd38675be0e17ea669b240b"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetParam</b> (const <a class="el" href="struct_grid_mate_1_1_grid_session_param.html">GridSessionParam</a> &amp;param)</td></tr>
 <tr class="separator:a9f8619cedbd38675be0e17ea669b240b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd845b36187b0874842fabdedcf6f89"><td class="memItemLeft" align="right" valign="top"><a id="abdd845b36187b0874842fabdedcf6f89"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveParam</b> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;paramId)</td></tr>
-<tr class="separator:abdd845b36187b0874842fabdedcf6f89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a522787e3257a5445658944da909cbec0"><td class="memItemLeft" align="right" valign="top"><a id="a522787e3257a5445658944da909cbec0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveParam</b> (const AZStd::string &amp;paramId)</td></tr>
+<tr class="separator:a522787e3257a5445658944da909cbec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c80597f484a0677628e2a2ac59109b0"><td class="memItemLeft" align="right" valign="top"><a id="a7c80597f484a0677628e2a2ac59109b0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveParam</b> (unsigned int index)</td></tr>
 <tr class="separator:a7c80597f484a0677628e2a2ac59109b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,14 +313,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#a37addb03e88b7f6193dae9563955c62d">FreeSlot</a> (int slotType)</td></tr>
 <tr class="memdesc:a37addb03e88b7f6193dae9563955c62d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees a slot based on a slot type. <br /></td></tr>
 <tr class="separator:a37addb03e88b7f6193dae9563955c62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6d7c7e56f53955b084de002bd2452c0"><td class="memItemLeft" align="right" valign="top"><a id="ad6d7c7e56f53955b084de002bd2452c0"></a>
-virtual <a class="el" href="class_grid_mate_1_1_grid_member.html">GridMember</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#ad6d7c7e56f53955b084de002bd2452c0">CreateRemoteMember</a> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;address, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;data, RemotePeerMode peerMode, <a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> connId=InvalidConnectionID)=0</td></tr>
-<tr class="memdesc:ad6d7c7e56f53955b084de002bd2452c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates remote player, when he wants to join. <br /></td></tr>
-<tr class="separator:ad6d7c7e56f53955b084de002bd2452c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a3e7dc56201e456c9314cd3dc1b6d92"><td class="memItemLeft" align="right" valign="top"><a id="a7a3e7dc56201e456c9314cd3dc1b6d92"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#a7a3e7dc56201e456c9314cd3dc1b6d92">IsAddressInMemberList</a> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;address)</td></tr>
-<tr class="memdesc:a7a3e7dc56201e456c9314cd3dc1b6d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this address belongs to a member in the list, otherwise false. <br /></td></tr>
-<tr class="separator:a7a3e7dc56201e456c9314cd3dc1b6d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692aafeda3e26781b2a583c87d00e700"><td class="memItemLeft" align="right" valign="top"><a id="a692aafeda3e26781b2a583c87d00e700"></a>
+virtual <a class="el" href="class_grid_mate_1_1_grid_member.html">GridMember</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#a692aafeda3e26781b2a583c87d00e700">CreateRemoteMember</a> (const AZStd::string &amp;address, <a class="el" href="class_grid_mate_1_1_read_buffer.html">ReadBuffer</a> &amp;data, RemotePeerMode peerMode, <a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> connId=InvalidConnectionID)=0</td></tr>
+<tr class="memdesc:a692aafeda3e26781b2a583c87d00e700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates remote player, when he wants to join. <br /></td></tr>
+<tr class="separator:a692aafeda3e26781b2a583c87d00e700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47292e3c8fe50aa4b36ba0b1ca3b10cb"><td class="memItemLeft" align="right" valign="top"><a id="a47292e3c8fe50aa4b36ba0b1ca3b10cb"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#a47292e3c8fe50aa4b36ba0b1ca3b10cb">IsAddressInMemberList</a> (const AZStd::string &amp;address)</td></tr>
+<tr class="memdesc:a47292e3c8fe50aa4b36ba0b1ca3b10cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this address belongs to a member in the list, otherwise false. <br /></td></tr>
+<tr class="separator:a47292e3c8fe50aa4b36ba0b1ca3b10cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bbefa330760ea06097a06310d174cf2"><td class="memItemLeft" align="right" valign="top"><a id="a1bbefa330760ea06097a06310d174cf2"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnectionIdInMemberList</b> (const <a class="el" href="namespace_grid_mate.html#a811ad7d33fa16c56cd17d59581055ac0">ConnectionID</a> &amp;connId)</td></tr>
 <tr class="separator:a1bbefa330760ea06097a06310d174cf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,10 +344,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#aec8a7f95756497cc5cda426868a37bd0">OnSessionParamChanged</a> (const <a class="el" href="struct_grid_mate_1_1_grid_session_param.html">GridSessionParam</a> &amp;param)=0</td></tr>
 <tr class="memdesc:aec8a7f95756497cc5cda426868a37bd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a session parameter is added/changed. <br /></td></tr>
 <tr class="separator:aec8a7f95756497cc5cda426868a37bd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b388f931926fd7d488646d5aa11878e"><td class="memItemLeft" align="right" valign="top"><a id="a8b388f931926fd7d488646d5aa11878e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#a8b388f931926fd7d488646d5aa11878e">OnSessionParamRemoved</a> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;paramId)=0</td></tr>
-<tr class="memdesc:a8b388f931926fd7d488646d5aa11878e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a session parameter is deleted. <br /></td></tr>
-<tr class="separator:a8b388f931926fd7d488646d5aa11878e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af12aaf52b398c04bed39e305872d2df2"><td class="memItemLeft" align="right" valign="top"><a id="af12aaf52b398c04bed39e305872d2df2"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_grid_session.html#af12aaf52b398c04bed39e305872d2df2">OnSessionParamRemoved</a> (const AZStd::string &amp;paramId)=0</td></tr>
+<tr class="memdesc:af12aaf52b398c04bed39e305872d2df2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when a session parameter is deleted. <br /></td></tr>
+<tr class="separator:af12aaf52b398c04bed39e305872d2df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf500ba41648182ba03d4f64f12c5cd"><td class="memItemLeft" align="right" valign="top"><a id="a0bf500ba41648182ba03d4f64f12c5cd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpStateMachine</b> ()</td></tr>
 <tr class="separator:a0bf500ba41648182ba03d4f64f12c5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -443,9 +443,9 @@ Internal::GridSessionHandshake *&#160;</td><td class="memItemRight" valign="bott
 <tr class="memitem:a766cc47e73114dd4b4d39ecdc4cd08bc"><td class="memItemLeft" align="right" valign="top"><a id="a766cc47e73114dd4b4d39ecdc4cd08bc"></a>
 ConnectionIDSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_connections</b></td></tr>
 <tr class="separator:a766cc47e73114dd4b4d39ecdc4cd08bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72a47b7783d0eb89a8e56e816431bb66"><td class="memItemLeft" align="right" valign="top"><a id="a72a47b7783d0eb89a8e56e816431bb66"></a>
-<a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hostAddress</b></td></tr>
-<tr class="separator:a72a47b7783d0eb89a8e56e816431bb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78668e097ff835f266bba54d0334f524"><td class="memItemLeft" align="right" valign="top"><a id="a78668e097ff835f266bba54d0334f524"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_hostAddress</b></td></tr>
+<tr class="separator:a78668e097ff835f266bba54d0334f524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec842535d659daa0b103d997ce868ac7"><td class="memItemLeft" align="right" valign="top"><a id="aec842535d659daa0b103d997ce868ac7"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_isShutdown</b></td></tr>
 <tr class="separator:aec842535d659daa0b103d997ce868ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -716,7 +716,7 @@ Important function function is to be used with POD data by default, provide Data
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:43 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:11 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -93,6 +93,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fbc8b39d8679b93a71e4c03d8a190ea"><td class="memItemLeft" align="right" valign="top"><a id="a8fbc8b39d8679b93a71e4c03d8a190ea"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimulationOfBody</b> (SceneHandle sceneHandle, SimulatedBodyHandle bodyHandle)=0</td></tr>
 <tr class="separator:a8fbc8b39d8679b93a71e4c03d8a190ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3442f9f6a482d8fe34df386421a607d"><td class="memItemLeft" align="right" valign="top">virtual JointHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#aa3442f9f6a482d8fe34df386421a607d">AddJoint</a> (SceneHandle sceneHandle, const <a class="el" href="struct_az_physics_1_1_joint_configuration.html">JointConfiguration</a> *jointConfig, SimulatedBodyHandle parentBody, SimulatedBodyHandle childBody)=0</td></tr>
+<tr class="separator:aa3442f9f6a482d8fe34df386421a607d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53693638f5142682e653e2cc615b9631"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_az_physics_1_1_joint.html">Joint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a53693638f5142682e653e2cc615b9631">GetJointFromHandle</a> (SceneHandle sceneHandle, JointHandle jointHandle)=0</td></tr>
+<tr class="separator:a53693638f5142682e653e2cc615b9631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc964642d5034f48ed03e27a5ce0f3ad"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#afc964642d5034f48ed03e27a5ce0f3ad">RemoveJoint</a> (SceneHandle sceneHandle, JointHandle jointHandle)=0</td></tr>
+<tr class="separator:afc964642d5034f48ed03e27a5ce0f3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd4a6dc012526db7d11339c91489c12"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="struct_az_physics_1_1_scene_query_hits.html">SceneQueryHits</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#abdd4a6dc012526db7d11339c91489c12">QueryScene</a> (SceneHandle sceneHandle, const <a class="el" href="struct_az_physics_1_1_scene_query_request.html">SceneQueryRequest</a> *request)=0</td></tr>
 <tr class="separator:abdd4a6dc012526db7d11339c91489c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a474fd6f316769e0e731454a8d1448e80"><td class="memItemLeft" align="right" valign="top">virtual SceneQueryHitsList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_physics_1_1_scene_interface.html#a474fd6f316769e0e731454a8d1448e80">QuerySceneBatch</a> (SceneHandle sceneHandle, const SceneQueryRequests &amp;requests)=0</td></tr>
@@ -135,6 +141,64 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to access a Physics <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a> with a SceneHandle. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa3442f9f6a482d8fe34df386421a607d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3442f9f6a482d8fe34df386421a607d">&#9670;&nbsp;</a></span>AddJoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual JointHandle AzPhysics::SceneInterface::AddJoint </td>
+          <td>(</td>
+          <td class="paramtype">SceneHandle&#160;</td>
+          <td class="paramname"><em>sceneHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_az_physics_1_1_joint_configuration.html">JointConfiguration</a> *&#160;</td>
+          <td class="paramname"><em>jointConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SimulatedBodyHandle&#160;</td>
+          <td class="paramname"><em>parentBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SimulatedBodyHandle&#160;</td>
+          <td class="paramname"><em>childBody</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a joint to the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sceneHandle</td><td>A handle to the scene to add / remove the joint. </td></tr>
+    <tr><td class="paramname">jointConfig</td><td>The config of the joint. </td></tr>
+    <tr><td class="paramname">parentBody</td><td>The parent body of the joint. </td></tr>
+    <tr><td class="paramname">childBody</td><td>The child body of the joint </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a handle to the created joint. Will return AzPhyiscs::InvalidJointHandle if it fails. </dd></dl>
+
+</div>
+</div>
 <a id="a6f10e9165b3a9707f980031ece777921"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6f10e9165b3a9707f980031ece777921">&#9670;&nbsp;</a></span>AddSimulatedBodies()</h2>
 
@@ -328,6 +392,50 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A Vector3 of the gravity used in the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a>, will return a Zero Vector if sceneHandle is invalid or not found. </dd></dl>
+
+</div>
+</div>
+<a id="a53693638f5142682e653e2cc615b9631"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53693638f5142682e653e2cc615b9631">&#9670;&nbsp;</a></span>GetJointFromHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="struct_az_physics_1_1_joint.html">Joint</a>* AzPhysics::SceneInterface::GetJointFromHandle </td>
+          <td>(</td>
+          <td class="paramtype">SceneHandle&#160;</td>
+          <td class="paramname"><em>sceneHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JointHandle&#160;</td>
+          <td class="paramname"><em>jointHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the Raw pointer to the requested joint. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sceneHandle</td><td>A handle to the scene to get the simulated bodies from. </td></tr>
+    <tr><td class="paramname">jointHandle</td><td>A handle to the joint to retrieve the raw pointer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A raw pointer to the <a class="el" href="struct_az_physics_1_1_joint.html" title="Base class for all Joints in Physics.">Joint</a> body. If the either handle is invalid this will return null. </dd></dl>
 
 </div>
 </div>
@@ -1165,6 +1273,49 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 
 </div>
 </div>
+<a id="afc964642d5034f48ed03e27a5ce0f3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc964642d5034f48ed03e27a5ce0f3ad">&#9670;&nbsp;</a></span>RemoveJoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzPhysics::SceneInterface::RemoveJoint </td>
+          <td>(</td>
+          <td class="paramtype">SceneHandle&#160;</td>
+          <td class="paramname"><em>sceneHandle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">JointHandle&#160;</td>
+          <td class="paramname"><em>jointHandle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Remove a joint from the <a class="el" href="class_az_physics_1_1_scene.html" title="Interface of a Physics Scene.">Scene</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sceneHandle</td><td>A handle to the scene to add / remove the joint. </td></tr>
+    <tr><td class="paramname">jointHandle</td><td>A handle to the joint being removed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4525fd31e8439b5f44a93ea411eb211d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4525fd31e8439b5f44a93ea411eb211d">&#9670;&nbsp;</a></span>RemoveSimulatedBodies()</h2>
 
@@ -1485,7 +1636,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSimula
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:49 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -57,21 +57,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3295a996a421c8adee4d9f9319ac4151"><td class="memItemLeft" align="right" valign="top"><a id="a3295a996a421c8adee4d9f9319ac4151"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteGUIValuesIntoProperty</b> (size_t index, WidgetType *GUI, PropertyType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node)=0</td></tr>
-<tr class="separator:a3295a996a421c8adee4d9f9319ac4151"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b9a929de427eaf8be5455bdd20fac62"><td class="memItemLeft" align="right" valign="top"><a id="a9b9a929de427eaf8be5455bdd20fac62"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValuesIntoGUI</b> (size_t index, WidgetType *GUI, const PropertyType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node)=0</td></tr>
-<tr class="separator:a9b9a929de427eaf8be5455bdd20fac62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57734c8156d61a9305372ea4a6647b50"><td class="memItemLeft" align="right" valign="top"><a id="a57734c8156d61a9305372ea4a6647b50"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstInTabOrder</b> (WidgetType *widget)</td></tr>
-<tr class="separator:a57734c8156d61a9305372ea4a6647b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc6dc7dba57c6f21cdc15ac26a6859e8"><td class="memItemLeft" align="right" valign="top"><a id="abc6dc7dba57c6f21cdc15ac26a6859e8"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastInTabOrder</b> (WidgetType *widget)</td></tr>
-<tr class="separator:abc6dc7dba57c6f21cdc15ac26a6859e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec056c86cc33530337fc2e12abe51452"><td class="memItemLeft" align="right" valign="top"><a id="aec056c86cc33530337fc2e12abe51452"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGUI</b> (QWidget *pParent) override=0</td></tr>
-<tr class="separator:aec056c86cc33530337fc2e12abe51452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187af168ea6afa2e73b054bc94e39ecb"><td class="memItemLeft" align="right" valign="top"><a id="a187af168ea6afa2e73b054bc94e39ecb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteGUIValuesIntoProperty</b> (size_t index, WidgetType *GUI, PropertyType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node) override=0</td></tr>
+<tr class="separator:a187af168ea6afa2e73b054bc94e39ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d22d5d95d760f58540bda3b55835d0"><td class="memItemLeft" align="right" valign="top"><a id="a14d22d5d95d760f58540bda3b55835d0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValuesIntoGUI</b> (size_t index, WidgetType *GUI, const PropertyType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node) override=0</td></tr>
+<tr class="separator:a14d22d5d95d760f58540bda3b55835d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abd1f526f998d39dfe83d12e2558288"><td class="memItemLeft" align="right" valign="top"><a id="a2abd1f526f998d39dfe83d12e2558288"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstInTabOrder</b> (WidgetType *widget) override</td></tr>
+<tr class="separator:a2abd1f526f998d39dfe83d12e2558288"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab890f5ce11e54201293c83dab660e8e8"><td class="memItemLeft" align="right" valign="top"><a id="ab890f5ce11e54201293c83dab660e8e8"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastInTabOrder</b> (WidgetType *widget) override</td></tr>
+<tr class="separator:ab890f5ce11e54201293c83dab660e8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6608d0859a05a099791ef151632c04c8"><td class="memItemLeft" align="right" valign="top"><a id="a6608d0859a05a099791ef151632c04c8"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGUI</b> (QWidget *pParent) override=0</td></tr>
+<tr class="separator:a6608d0859a05a099791ef151632c04c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/PropertyEditor/PropertyEditorAPI.h</li>
@@ -79,7 +79,7 @@ virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGU
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:05 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

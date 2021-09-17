@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -58,23 +59,30 @@ $(function() {
 
 <p>Inherits intrusive_base.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_find_data_1_1_archive_file.html">ArchiveFile</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_i_o_1_1_find_data_1_1_archive_file_hash.html">ArchiveFileHash</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab98570bd2409cfe55cd13d601f8224aa"><td class="memItemLeft" align="right" valign="top"><a id="ab98570bd2409cfe55cd13d601f8224aa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_i_o_1_1_find_data.html">FindData</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:ab98570bd2409cfe55cd13d601f8224aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16c4252682bd57cf5ba29e3a32dfcfeb"><td class="memItemLeft" align="right" valign="top"><a id="a16c4252682bd57cf5ba29e3a32dfcfeb"></a>
-<a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">AZ::IO::ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Fetch</b> ()</td></tr>
-<tr class="separator:a16c4252682bd57cf5ba29e3a32dfcfeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7f06d937d8baf57d39b6c8f7593969"><td class="memItemLeft" align="right" valign="top"><a id="aff7f06d937d8baf57d39b6c8f7593969"></a>
+<a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">ArchiveFileIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Fetch</b> ()</td></tr>
+<tr class="separator:aff7f06d937d8baf57d39b6c8f7593969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94b545aadd14d9c7081839a4d7b013e7"><td class="memItemLeft" align="right" valign="top"><a id="a94b545aadd14d9c7081839a4d7b013e7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Scan</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_i_archive.html">IArchive</a> *archive, AZStd::string_view path, bool bAllowUseFS=false, bool bScanZips=true)</td></tr>
 <tr class="separator:a94b545aadd14d9c7081839a4d7b013e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:ac97ec033207da6bed3b5db0a2b2776f1"><td class="memItemLeft" align="right" valign="top"><a id="ac97ec033207da6bed3b5db0a2b2776f1"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FileStack</b> = AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_i_o_1_1_archive_file_iterator.html">ArchiveFileIterator</a> &gt;</td></tr>
-<tr class="separator:ac97ec033207da6bed3b5db0a2b2776f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3788ceed1d16aca8ee04f91e2e869d32"><td class="memItemLeft" align="right" valign="top"><a id="a3788ceed1d16aca8ee04f91e2e869d32"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>FileSet</b> = AZStd::unordered_set&lt; <a class="el" href="class_a_z_1_1_i_o_1_1_find_data_1_1_archive_file.html">ArchiveFile</a>, <a class="el" href="struct_a_z_1_1_i_o_1_1_find_data_1_1_archive_file_hash.html">ArchiveFileHash</a> &gt;</td></tr>
+<tr class="separator:a3788ceed1d16aca8ee04f91e2e869d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -87,9 +95,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ScanZips</b> (<a clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a1200d384aece4a7922e569c8fcc129e9"><td class="memItemLeft" align="right" valign="top"><a id="a1200d384aece4a7922e569c8fcc129e9"></a>
-FileStack&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileStack</b></td></tr>
-<tr class="separator:a1200d384aece4a7922e569c8fcc129e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3d2766af0a8ad07bc870a075a268702"><td class="memItemLeft" align="right" valign="top"><a id="af3d2766af0a8ad07bc870a075a268702"></a>
+FileSet&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileSet</b></td></tr>
+<tr class="separator:af3d2766af0a8ad07bc870a075a268702"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Archive/ArchiveFindData.h</li>
@@ -97,7 +105,7 @@ FileStack&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileStack</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
