@@ -7,11 +7,6 @@ weight: 400
 
 You can use the **UI Editor** to add and delete components, create references to UI elements for component properties, and manage components.
 
-**Topics**
-+ [Adding or Deleting Components](#ui-editor-add-delete)
-+ [Referencing UI Elements](#ui-editor-referencing-ui-elements)
-+ [Managing UI Components](#ui-editor-managing)
-
 ## Adding or Deleting Components 
 
 You can add or delete components in the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working).

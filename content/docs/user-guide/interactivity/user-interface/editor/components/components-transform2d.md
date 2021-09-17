@@ -6,8 +6,3 @@ weight: 100
 ---
 
 The **Transform2D** component is automatically added to every UI element you create. This component defines the element's position, rotation, size, and scale relative to its parent's edges. The parent may be another element (if the elements are nested), or the canvas.
-
-
-**Topics**
-+ [Managing UI Anchors and Offsets](/docs/user-guide/interactivity/user-interface/editor/anchors)
-+ [Scale to Device](/docs/user-guide/interactivity/user-interface/editor/transform-scale)

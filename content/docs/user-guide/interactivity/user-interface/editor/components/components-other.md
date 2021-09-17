@@ -6,8 +6,3 @@ weight: 500
 ---
 
 You can add either or both of the fader and mask components to an element.
-
-**Topics**
-+ [Fader](./components-fader)
-+ [Mask](./components-mask)
-+ [Flipbook Animation](./components-other-flipbook)

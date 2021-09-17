@@ -10,8 +10,6 @@ The **Track Editor** displays all the tracks in your current animation sequence.
 + Change the timeline of the animation
 + Control the animation preview range
 
-
-
 **To display the Track Editor**
 + In the [**Animation Editor**](./), choose **View**, **Track Editor** or **View**, **Both**.
 
@@ -20,11 +18,6 @@ The **Track Editor** displays all the tracks in your current animation sequence.
 
 **To pan the view**
 + With the mouse in the **Track Editor**, drag using the middle mouse button
-
-**Topics**
-+ [Working with Keys in the Track Editor](#working-with-keys-in-the-track-editor)
-+ [Moving the Play or Record Point in the Track Editor](#moving-the-play-or-record-point-in-the-track-editor)
-+ [Previewing in the Track Editor](#previewing-in-the-track-editor)
 
 ## Working with Keys in the Track Editor 
 
@@ -58,7 +51,7 @@ Some of the toolbar functions require you to select multiple keys.
 You can also use the Track Editor toolbar to select, move, and snap keys. When moving keys, you can choose to snap them to other keys, to frames, or to second ticks.
 
 
-**Working with Keys in the Track Editor Toolbar**
+## Working with Keys in the Track Editor Toolbar
 
 | Toolbar icon | Function |
 | --- | --- |

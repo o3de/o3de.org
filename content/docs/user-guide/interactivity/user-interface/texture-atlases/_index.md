@@ -25,8 +25,3 @@ The principle advantages of texture atlases are the following:
 + Forced preloading of texture groups. When the canvas loads, it also loads its texture atlases.
 
 To see examples of texture atlases, open the **UITextureAtlasSample** level in the O3DE SamplesProject.
-
-**Topics**
-+ [Creating a Texture Atlas](./texture-atlases-creating)
-+ [Adding Texture Atlases to a UI Canvas](./texture-atlases-adding-texture-atlases-to-a-ui-canvas)
-+ [Using Texture Atlases to Reduce UI Draw Calls](./texture-atlases-using-texture-atlases-to-reduce-ui-draw-calls)

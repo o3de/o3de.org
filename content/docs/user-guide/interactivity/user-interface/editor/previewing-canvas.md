@@ -7,10 +7,6 @@ weight: 230
 
 You can preview your game UI canvas to visualize how it might look at different screen resolutions and to see how the interactive elements change states.
 
-**Topics**
-+ [Setting Canvas Size in Preview](/docs/user-guide/interactivity/user-interface/editor/previewing-setting-size)
-+ [Previewing Canvas Behavior](/docs/user-guide/interactivity/user-interface/editor/previewing-behavior)
-
 The **UI Editor** **Preview** consists of the following:
 
 1. **Toolbar** - Tools to view the current **Viewport size**, **Preview canvas size** (selectable), and **Canvas scale**.
