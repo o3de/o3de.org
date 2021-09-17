@@ -65,7 +65,7 @@ cmake -B build/linux -S . -G"Unix Makefiles" -DCMAKE_C_COMPILER=clang-12 -DCMAKE
 
 ```
 
-To build the project, you can specify a specific target (like Editor for the example below)
+To build the project, you can specify a specific target (like Editor, for the example below).
 
 ```shell
 
