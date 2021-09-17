@@ -39,7 +39,7 @@ When generating projects, a project path is required. This can be an existing O3
 
 
 ### Multiple Config Builds
-The following command will generate a build folder under the root of the project folder $O3DE_PROJECT called build/linux, using Ninja as the build generator and clang-12 as the compiler.
+The following command generates a build folder, `build/linux`, under the root of the project folder, $O3DE_PROJECT, by using Ninja as the build generator and clang-12 as the compiler.
 
 ```shell
 
