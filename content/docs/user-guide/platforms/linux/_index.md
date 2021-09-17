@@ -109,7 +109,7 @@ cmake --build build/linux --config profile
 In conjuction with using the Ninja or the Unix Makefile generators, cmake has the option to generate a [compile-command.json](https://clang.llvm.org/docs/JSONCompilationDatabase.html) file that can be used by IDEs like Visual Studio Code to aid in its intellisense. 
 
 {{< note >}}
-The `compile-command.json` file is only usable by IDEs when Unity builds are turned off. Since Unity builds are enabled by default in O3DE, you will need to explicitly turn it off with the `-DLY_UNITY_BUILD=OFF` argument.
+IDEs can use the `compile-command.json` only when Unity builds are turned off. Since Unity builds are enabled by default in O3DE, you will need to explicitly turn it off with the `-DLY_UNITY_BUILD=OFF` argument.
 {{< /note >}}
 
 To support IntelliSense features, include the following arguments in the project generation command:
