@@ -25,10 +25,10 @@ The **PostFX Gradient Weight Modifier** component modifies the weight of post-pr
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Gradient Entity Id** | A reference to a separate entity that acts as a gradient signal provider. | Entity reference | Empty |
-| **Opacity** | Controls the opacity of the gradient signal that's retreieved from the gradient signal provider. | `0.0` | `0.0` to `1.0` |
+| **Opacity** | Controls the opacity of the gradient signal that's retreieved from the gradient signal provider. | `0.0` to `1.0` | `0.0` |
 
 
-## Using the PostFX Gradient Weight Modifier
+## Using the PostFX Gradient Weight Modifier component
 
 This component depends on another entity that has a Gradient component to act as the gradient signal provider. 
 

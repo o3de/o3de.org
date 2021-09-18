@@ -66,7 +66,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
 | [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
 | [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
-| [Post Processing Volumes](/docs/user-guide/components/reference/atom/post-processing-volumes/) | A collection of components that bound post-processing effects (PostFX) to certain shapes and areas in the game and control the .|
+| [Post-processing Volumes](/docs/user-guide/components/reference/atom/post-processing-volumes/) | A collection of components that bound post-processing effects (PostFX) to certain shapes and areas in the game and control the .|
 | [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
 | [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
 
