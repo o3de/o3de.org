@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---
 
-## Script table
+## Script Table
 
 Scripts used as components contain a **Script Table**. The Script Table provides the functionality for the script and is treated like a class. The Script Table generally consists of the following:
 
