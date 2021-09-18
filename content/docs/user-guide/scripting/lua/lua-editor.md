@@ -6,7 +6,7 @@ toc: true
 weight: 300
 ---
 
-The O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but can be opened directly from the **O3DE Editor** using the Edit Mode Toolbar.
+The O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but can be opened directly from the **O3DE Editor** using the Edit Mode toolbar.
 
 ## Editing 
 
@@ -40,7 +40,7 @@ The following table summarizes the options available while editing and debugging
 
 ¹ Select to brace selects a block bounded by braces. Before using this option, the cursor must be immediately next to the beginning or ending brace of the block.
 
-## Maintaining Separate Search Results 
+## Maintaining separate search results 
 
 In addition to the usual search capabilities, the **Find** feature can display the results of four different searches separately.
 
@@ -58,7 +58,7 @@ In addition to the usual search capabilities, the **Find** feature can display t
  For convenience, you can also dock or float the **Find Results** window.
 {{< /note >}}
 
-## Perforce Integration 
+## Perforce integration 
 
 Lua Editor includes Perforce integration features. When you open a file from your Perforce environment, Lua Editor displays the file's status in the top right of the text editing window.
 
