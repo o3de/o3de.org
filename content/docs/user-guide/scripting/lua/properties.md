@@ -1,16 +1,16 @@
 ---
 linkTitle: Properties Table
-title: The Lua script properties table
+title: The Lua Script Properties Table
 description: Specify the properties of a Lua script component that appear in O3DE Editor in Open 3D Engine.
 toc: True
 weight: 400
 ---
 
-The `Properties` table configures the **Lua Script** component's user interface in the **Entity Inspector** for customizing the behavior of a Lua script. With the properties table, you can modify numeric values, select states, and turn flags on and off. The table can even provide a reference to entities that your script can interact with.
+The Properties Table configures the **Lua Script** component's user interface in **Entity Inspector** for customizing the behavior of a Lua script. With the Properties Table, you can modify numeric values, select states, and turn flags on and off. The table can even provide a reference to entities that your script can interact with.
 
-The properties inside the `Properties` table are exposed to the **O3DE Editor**. Properties outside the `Properties` table are private and not displayed in the editor.
+The properties inside the Properties Table are exposed to **O3DE Editor**. Properties outside the Properties Table are private and not displayed in the editor.
 
-The following example is a properties table for a character controller.
+The following example is a Properties table for a character controller.
 
 ```lua
 -- Example Properties Table
@@ -34,24 +34,24 @@ The result is the following **Properties** user interface in the Lua Script comp
 
 ![Properties in O3DE Editor defined by the Properties table](/images/user-guide/scripting/lua/character-controller.png)
 
-The type that you provide as the default value determines how the property appears in the **Properties** user interface. You can further customize the representation of the property in the Editor by specifying additional attributes in a table format. All property types support a description field that appears when you hover the mouse over the property name in the Editor.
+The type that you provide as the default value determines how the property appears in the **Properties** user interface. You can further customize the representation of the property in O3DE Editor by specifying additional attributes in a table format. All property types support a description field that appears when you hover the mouse over the property name in O3DE Editor.
 
-## Supported Types 
+## Supported types 
 
 Properties can have the types described in this section.
 
-### Boolean Values (True, False) 
+### Boolean values (True, False) 
 
-The following examples are Boolean values.
+The following examples are boolean values.
 
 ```lua
 DebugMovement = false,
 AllowMovement = { default = true, description = "Allow or restrict movement of the object." },
 ```
 
-In O3DE Editor, Boolean values are represented by a check box.
+In O3DE Editor, boolean values are represented by a check box.
 
-### Numeric Values (Integer or Floating Point Numbers) 
+### Numeric values (integer or floating point numbers) 
 
 The following examples are numeric values.
 
@@ -78,7 +78,7 @@ StartingState = { "Idle", description = "Specify the starting state. Valid start
 
 In O3DE Editor, string values are represented by a text edit box.
 
-### Reflected Classes 
+### Reflected classes 
 
 You can use any class that is reflected to both the `BehaviorContext` and the `EditContext` as a property. A good example of this is the `EntityId` type, which references other entities.
 
@@ -119,11 +119,11 @@ return ArrayExample
 
 ![Property array](/images/user-guide/scripting/lua/array-example.png)
 
-In the Entity Inspector, you can use the green **+** and red **X** icons to add and remove entries in real time. You can also use `EntityId()` to make the array elements entity references.
+In Entity Inspector, you can use the green **+** and red **X** icons to add and remove entries in real time. You can also use `EntityId()` to make the array elements entity references.
 
-## Grouping Properties 
+## Grouping properties 
 
-The following code example shows how you can use variables within the `Properties` table to expose named groupings of properties.
+The following code example shows how you can use variables within the Properties Table to expose named groupings of properties.
 
 ```lua
 local PropertyGroups = {
@@ -150,9 +150,9 @@ When rendered in the user interface, the property groupings and properties are s
 
 ## Attributes 
 
-You can add attributes to a property by placing them alongside the default value in a property table. Attribute keys are not case sensitive. The following common attributes can be added to any property.
+You can add attributes to a property by placing them alongside the default value in a Properties Table. Attribute keys are not case sensitive. The following common attributes can be added to any property.
 
-**Common Attributes**
+### Common attributes
 
 | Attribute | Description |
 | --- | --- |
@@ -161,7 +161,7 @@ You can add attributes to a property by placing them alongside the default value
 
 The following attributes can be added to properties with numeric representations.
 
-**Numeric Attributes**
+### Numeric attributes
 
 | Attribute | Description |
 | --- | --- |
