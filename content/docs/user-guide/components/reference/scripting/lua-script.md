@@ -1,6 +1,6 @@
 ---
 linkTitle: Lua Script
-title: Lua Script component
+title: Lua Script Component
 description: Open 3D Engine (O3DE) Lua Script component reference.
 ---
 
