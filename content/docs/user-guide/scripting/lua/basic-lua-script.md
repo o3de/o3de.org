@@ -8,7 +8,7 @@ weight: 200
 
 ## Script table
 
-Scripts used as components contain a **Script Table**. The Script table provides the functionality for the script and is treated like a class. The Script Table generally consists of the following:
+Scripts used as components contain a **Script Table**. The Script Table provides the functionality for the script and is treated like a class. The Script Table generally consists of the following:
 
 + An optional **Properties Table** within the Script Table. The Properties Table provides an interface that you can use to customize the script behavior from the editor.
 
@@ -48,6 +48,6 @@ For each **Lua Script** component, O3DE creates a table called the **Entity Tabl
 
 The Entity Table then has the following properties and methods available to it:
 
-+ A **Properties** table, copied from the Script Table's Properties table. Default values are provided where appropriate.
++ A **Properties** table, copied from the Script Table's Properties Table. Default values are provided where appropriate.
 
 + An `entityId` property, which contains an object of type **EntityId** that refers to the current entity.
