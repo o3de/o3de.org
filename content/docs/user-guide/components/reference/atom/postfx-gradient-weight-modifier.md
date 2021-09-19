@@ -27,6 +27,8 @@ The **PostFX Gradient Weight Modifier** component modifies the weight of post-pr
 | **Gradient Entity Id** | A reference to a separate entity that acts as a gradient signal provider. | Entity reference | Empty |
 | **Opacity** | Controls the opacity of the gradient signal that's retreieved from the gradient signal provider. | `0.0` to `1.0` | `0.0` |
 
+{{< todo issue="https://github.com/o3de/o3de.org/issues/925">}}  {{< /todo >}}
+
 
 ## Using the PostFX Gradient Weight Modifier component
 
