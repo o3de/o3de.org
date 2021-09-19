@@ -19,7 +19,7 @@ The **PostFX Shape Weight Modifier** component limits post-processing effects (P
 
 [Shape component](/docs/user-guide/components/reference/#shape)
 
-## Base Properties
+## Base properties
 
 ![PostFX Shape Weight Modifier base properties](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-shape-weight-modifier.png)
 

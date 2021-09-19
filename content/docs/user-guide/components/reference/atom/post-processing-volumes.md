@@ -17,7 +17,7 @@ Post-processing volumes allow post-processing effects (PostFX) to be bounded in 
 | [**PostFX Radius Weight Modifier**](/docs/user-guide/components/reference/atom/radius-weight-modifier/) | Modifies the weight of PostFX based on the camera's distance to the center. |
 
 
-## Using post-processing volumes
+## Usage
 
 This section demonstrates how to set up a post-processing volume to control the weight of PostFX in other entities. In this example, the main camera's exposure is controlled by a post-processing volume. When it moves in and out of the volume, the camera's exposure changes.
 

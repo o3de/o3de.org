@@ -18,7 +18,7 @@ The **PostFX Gradient Weight Modifier** component modifies the weight of post-pr
 [PostFX Layer component](/docs/user-guide/components/reference/atom/postfx-layer/)
 
 
-## Gradient Sampler Properties
+## Gradient Sampler properties
 
 ![PostFX Gradient Weight Modifier base properties](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-gradient-weight-modifier.png)
 
@@ -30,7 +30,7 @@ The **PostFX Gradient Weight Modifier** component modifies the weight of post-pr
 {{< todo issue="https://github.com/o3de/o3de.org/issues/925">}}  {{< /todo >}}
 
 
-## Using the PostFX Gradient Weight Modifier component
+## Usage
 
 This component depends on another entity that has a Gradient component to act as the gradient signal provider. 
 

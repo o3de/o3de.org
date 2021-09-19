@@ -17,7 +17,7 @@ The **PostFx Layer** component controls how post-processing effects (PostFX), su
 None
 
 
-## Base Properties
+## Base properties
 
 ![PostFX Layer base properties](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-layer.png)
 

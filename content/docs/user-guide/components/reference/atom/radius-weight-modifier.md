@@ -18,7 +18,7 @@ The **PostFx Radius Weight Modifier** component is a sphere of area that modifie
 [PostFX Layer component](/docs/user-guide/components/reference/atom/postfx-layer/)
 
 
-## Base Properties
+## Base properties
 
 ![PostFX Radius Weight Modifier base properties](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-radius-weight-modifier.png)
 
