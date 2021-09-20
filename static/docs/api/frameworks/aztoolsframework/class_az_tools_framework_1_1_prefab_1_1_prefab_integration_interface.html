@@ -62,6 +62,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a04eddd8473cf534ef282f271278c94bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e9abb72e219eb0a1e24fffcc47271b4"><td class="memItemLeft" align="right" valign="top">virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#a3e9abb72e219eb0a1e24fffcc47271b4">CreateNewEntityAtPosition</a> (const AZ::Vector3 &amp;position, AZ::EntityId parentId)=0</td></tr>
 <tr class="separator:a3e9abb72e219eb0a1e24fffcc47271b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8108932ca68f2f9a0eac53c24d6a1066"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#a8108932ca68f2f9a0eac53c24d6a1066">ExecuteClosePrefabDialog</a> (TemplateId templateId)=0</td></tr>
+<tr class="separator:a8108932ca68f2f9a0eac53c24d6a1066"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab84cdfd9b27f9a6906dfe0eb25214363"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_interface.html#ab84cdfd9b27f9a6906dfe0eb25214363">ExecuteSavePrefabDialog</a> (TemplateId templateId, bool useSaveAllPrefabsPreference=false)=0</td></tr>
+<tr class="separator:ab84cdfd9b27f9a6906dfe0eb25214363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3e9abb72e219eb0a1e24fffcc47271b4"></a>
@@ -110,13 +114,93 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8108932ca68f2f9a0eac53c24d6a1066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8108932ca68f2f9a0eac53c24d6a1066">&#9670;&nbsp;</a></span>ExecuteClosePrefabDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int AzToolsFramework::Prefab::PrefabIntegrationInterface::ExecuteClosePrefabDialog </td>
+          <td>(</td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>templateId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs and executes the close dialog on a prefab template corresponding to templateId. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">templateId</td><td>The id of the template the user chose to close. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager.html#abef291d4922ee4d206808247fc2063d7">AzToolsFramework::Prefab::PrefabIntegrationManager</a>.</p>
+
+</div>
+</div>
+<a id="ab84cdfd9b27f9a6906dfe0eb25214363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84cdfd9b27f9a6906dfe0eb25214363">&#9670;&nbsp;</a></span>ExecuteSavePrefabDialog()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzToolsFramework::Prefab::PrefabIntegrationInterface::ExecuteSavePrefabDialog </td>
+          <td>(</td>
+          <td class="paramtype">TemplateId&#160;</td>
+          <td class="paramname"><em>templateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>useSaveAllPrefabsPreference</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs and executes the save dialog on a prefab template corresponding to templateId. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">templateId</td><td>The id of the template the user chose to save. </td></tr>
+    <tr><td class="paramname">useSaveAllPrefabsPreference</td><td>A flag indicating whether SaveAllPrefabsPreference should be used for saving templates. <br  />
+ </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_integration_manager.html#a206c49269b1f888584ec17dc17e2a06c">AzToolsFramework::Prefab::PrefabIntegrationManager</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Prefab/PrefabIntegrationInterface.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:07 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

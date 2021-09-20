@@ -81,8 +81,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a07892c9c36dde2f81d2d4253c5ac6e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a780a312ae6b683f622436e82e56f9f4c"><td class="memItemLeft" align="right" valign="top">virtual HostId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a780a312ae6b683f622436e82e56f9f4c">GetHostId</a> () const =0</td></tr>
 <tr class="separator:a780a312ae6b683f622436e82e56f9f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0de948ecacc32db3eab197ea558a1f7"><td class="memItemLeft" align="right" valign="top">virtual EntityList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ac0de948ecacc32db3eab197ea558a1f7">CreateEntitiesImmediate</a> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntryId, NetEntityRole netEntityRole, const AZ::Transform &amp;transform)=0</td></tr>
-<tr class="separator:ac0de948ecacc32db3eab197ea558a1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8265baaa91743e208150fdda98a28c"><td class="memItemLeft" align="right" valign="top">virtual EntityList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#afc8265baaa91743e208150fdda98a28c">CreateEntitiesImmediate</a> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntryId, NetEntityRole netEntityRole, const AZ::Transform &amp;transform, AutoActivate autoActivate=AutoActivate::Activate)=0</td></tr>
+<tr class="separator:afc8265baaa91743e208150fdda98a28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7d4cca0388db7bb538d551b4a74f04e"><td class="memItemLeft" align="right" valign="top">virtual EntityList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ac7d4cca0388db7bb538d551b4a74f04e">CreateEntitiesImmediate</a> (const <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> &amp;prefabEntryId, NetEntityId netEntityId, NetEntityRole netEntityRole, AutoActivate autoActivate, const AZ::Transform &amp;transform)=0</td></tr>
 <tr class="separator:ac7d4cca0388db7bb538d551b4a74f04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1eea949f3bac155bd09502cf8f0c7a2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ab1eea949f3bac155bd09502cf8f0c7a2">SetupNetEntity</a> (AZ::Entity *netEntity, <a class="el" href="struct_multiplayer_1_1_prefab_entity_id.html">PrefabEntityId</a> prefabEntityId, NetEntityRole netEntityRole)=0</td></tr>
@@ -91,6 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1de6f5509975d51c8ab838e806f99dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e755aba4915bb29ca122fff075e1f5d"><td class="memItemLeft" align="right" valign="top">virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a2e755aba4915bb29ca122fff075e1f5d">GetEntityCount</a> () const =0</td></tr>
 <tr class="separator:a2e755aba4915bb29ca122fff075e1f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482823c247421502ce88d484a07e6c09"><td class="memItemLeft" align="right" valign="top">virtual NetEntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a482823c247421502ce88d484a07e6c09">GetNetEntityIdById</a> (const AZ::EntityId &amp;entityId) const =0</td></tr>
+<tr class="separator:a482823c247421502ce88d484a07e6c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e3a9a7a553c9755fd53693f656ce171"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_multiplayer_1_1_network_entity_handle.html">NetworkEntityHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a9e3a9a7a553c9755fd53693f656ce171">AddEntityToEntityMap</a> (NetEntityId netEntityId, AZ::Entity *entity)=0</td></tr>
 <tr class="separator:a9e3a9a7a553c9755fd53693f656ce171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ffdc0d5f361ab8ded2c10ac90057ab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ad8ffdc0d5f361ab8ded2c10ac90057ab">MarkForRemoval</a> (const <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html">ConstNetworkEntityHandle</a> &amp;entityHandle)=0</td></tr>
@@ -427,8 +429,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 </div>
 </div>
-<a id="ac0de948ecacc32db3eab197ea558a1f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0de948ecacc32db3eab197ea558a1f7">&#9670;&nbsp;</a></span>CreateEntitiesImmediate() <span class="overload">[2/2]</span></h2>
+<a id="afc8265baaa91743e208150fdda98a28c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc8265baaa91743e208150fdda98a28c">&#9670;&nbsp;</a></span>CreateEntitiesImmediate() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -452,7 +454,13 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const AZ::Transform &amp;&#160;</td>
-          <td class="paramname"><em>transform</em>&#160;</td>
+          <td class="paramname"><em>transform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AutoActivate&#160;</td>
+          <td class="paramname"><em>autoActivate</em> = <code>AutoActivate::Activate</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -583,6 +591,39 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Returns the <a class="el" href="class_multiplayer_1_1_multiplayer_component_registry.html">MultiplayerComponentRegistry</a> for this <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html" title="The interface for managing all networked entities.">INetworkEntityManager</a> instance. </p><dl class="section return"><dt>Returns</dt><dd>the <a class="el" href="class_multiplayer_1_1_multiplayer_component_registry.html">MultiplayerComponentRegistry</a> for this <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html" title="The interface for managing all networked entities.">INetworkEntityManager</a> instance </dd></dl>
+
+</div>
+</div>
+<a id="a482823c247421502ce88d484a07e6c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482823c247421502ce88d484a07e6c09">&#9670;&nbsp;</a></span>GetNetEntityIdById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual NetEntityId Multiplayer::INetworkEntityManager::GetNetEntityIdById </td>
+          <td>(</td>
+          <td class="paramtype">const AZ::EntityId &amp;&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the Net Entity ID for a given AZ Entity ID. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entityId</td><td>the AZ Entity ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the Net Entity ID </dd></dl>
 
 </div>
 </div>
@@ -877,7 +918,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:43 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

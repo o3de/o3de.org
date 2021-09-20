@@ -66,17 +66,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActivate</b> ([[may
 <tr class="memitem:a2564593e2fa569e5ff3169c480f2789e"><td class="memItemLeft" align="right" valign="top"><a id="a2564593e2fa569e5ff3169c480f2789e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDeactivate</b> ([[maybe_unused]] Multiplayer::EntityIsMigrating entityIsMigrating) override</td></tr>
 <tr class="separator:a2564593e2fa569e5ff3169c480f2789e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52eb010272f7a015463fdc97dc8a930c"><td class="memItemLeft" align="right" valign="top"><a id="a52eb010272f7a015463fdc97dc8a930c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendClientInput</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::NetworkInputArray &amp;inputArray, const AZ::HashValue32 &amp;stateHash, const AzNetworking::PacketEncodingBuffer &amp;clientState) override</td></tr>
-<tr class="separator:a52eb010272f7a015463fdc97dc8a930c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c74858fc271a78ceac59999480a463"><td class="memItemLeft" align="right" valign="top"><a id="af7c74858fc271a78ceac59999480a463"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendClientInput</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::NetworkInputArray &amp;inputArray, const AZ::HashValue32 &amp;stateHash) override</td></tr>
+<tr class="separator:af7c74858fc271a78ceac59999480a463"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcc795bff18881d5b1a27215041a35ad"><td class="memItemLeft" align="right" valign="top"><a id="afcc795bff18881d5b1a27215041a35ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendMigrateClientInput</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::NetworkInputMigrationVector &amp;inputArray) override</td></tr>
 <tr class="separator:afcc795bff18881d5b1a27215041a35ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59d32f2a82e38c596ae923d058f52e5d"><td class="memItemLeft" align="right" valign="top"><a id="a59d32f2a82e38c596ae923d058f52e5d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSendClientInputCorrection</b> (AzNetworking::IConnection *invokingConnection, const Multiplayer::ClientInputId &amp;inputId, const AzNetworking::PacketEncodingBuffer &amp;correction) override</td></tr>
 <tr class="separator:a59d32f2a82e38c596ae923d058f52e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ac30dee7c53eed28910e58d683f3d33"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#a3ac30dee7c53eed28910e58d683f3d33">IsReplayingInput</a> () const</td></tr>
-<tr class="separator:a3ac30dee7c53eed28910e58d683f3d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a3ff9c94aa14ec6a6a19c85318d8265"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#a4a3ff9c94aa14ec6a6a19c85318d8265">IsMigrating</a> () const</td></tr>
 <tr class="separator:a4a3ff9c94aa14ec6a6a19c85318d8265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38c4751b559ad7c2065d5879879cafa6"><td class="memItemLeft" align="right" valign="top"><a id="a38c4751b559ad7c2065d5879879cafa6"></a>
@@ -85,9 +83,6 @@ ClientInputId&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastInput
 <tr class="memitem:ab3fc4af093b10d6138df30ac3b393f54"><td class="memItemLeft" align="right" valign="top"><a id="ab3fc4af093b10d6138df30ac3b393f54"></a>
 HostFrameId&#160;</td><td class="memItemRight" valign="bottom"><b>GetInputFrameId</b> (const <a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;input) const</td></tr>
 <tr class="separator:ab3fc4af093b10d6138df30ac3b393f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae572540eb2a9ec59613bf8296ed4e21e"><td class="memItemLeft" align="right" valign="top"><a id="ae572540eb2a9ec59613bf8296ed4e21e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>CorrectionEventAddHandle</b> (CorrectionEvent::Handler &amp;handler)</td></tr>
-<tr class="separator:ae572540eb2a9ec59613bf8296ed4e21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4a3ff9c94aa14ec6a6a19c85318d8265"></a>
@@ -108,31 +103,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>CorrectionEventAddHan
 
 </div>
 </div>
-<a id="a3ac30dee7c53eed28910e58d683f3d33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ac30dee7c53eed28910e58d683f3d33">&#9670;&nbsp;</a></span>IsReplayingInput()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Multiplayer::LocalPredictionPlayerInputComponentController::IsReplayingInput </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return true if we're currently replaying inputs after a correction. If this value returns true, effects, audio, and other cosmetic triggers should be suppressed </p><dl class="section return"><dt>Returns</dt><dd>true if we're within correction scope and replaying inputs </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/Components/LocalPredictionPlayerInputComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

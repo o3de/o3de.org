@@ -77,12 +77,18 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b> = AZSt
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac9974616c55c0054b3635f7d7a6d4b10"><td class="memItemLeft" align="right" valign="top"><a id="ac9974616c55c0054b3635f7d7a6d4b10"></a>
-virtual AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainGridResolution</b> () const =0</td></tr>
-<tr class="separator:ac9974616c55c0054b3635f7d7a6d4b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f26b122d7130dd9bda3222e68c86ca"><td class="memItemLeft" align="right" valign="top"><a id="a40f26b122d7130dd9bda3222e68c86ca"></a>
+virtual AZ::Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainHeightQueryResolution</b> () const =0</td></tr>
+<tr class="separator:a40f26b122d7130dd9bda3222e68c86ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48aed2d937be68c4f0e4d83f31431251"><td class="memItemLeft" align="right" valign="top"><a id="a48aed2d937be68c4f0e4d83f31431251"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTerrainHeightQueryResolution</b> (AZ::Vector2 queryResolution)=0</td></tr>
+<tr class="separator:a48aed2d937be68c4f0e4d83f31431251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8066aa2ae36f003142b9e2eb002a09e"><td class="memItemLeft" align="right" valign="top"><a id="ad8066aa2ae36f003142b9e2eb002a09e"></a>
 virtual AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><b>GetTerrainAabb</b> () const =0</td></tr>
 <tr class="separator:ad8066aa2ae36f003142b9e2eb002a09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50253107d137d4bfdaf5f36554c76f8c"><td class="memItemLeft" align="right" valign="top"><a id="a50253107d137d4bfdaf5f36554c76f8c"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetTerrainAabb</b> (const AZ::Aabb &amp;worldBounds)=0</td></tr>
+<tr class="separator:a50253107d137d4bfdaf5f36554c76f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad437b916c24bc24781dbd090183ab6fe"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#ad437b916c24bc24781dbd090183ab6fe">GetHeight</a> (AZ::Vector3 position, <a class="el" href="class_az_framework_1_1_terrain_1_1_terrain_data_requests.html#a407f7ef9a7a21f522b9d9cf215fdd6a8">Sampler</a> sampler=Sampler::BILINEAR, bool *terrainExistsPtr=nullptr) const =0</td></tr>
 <tr class="separator:ad437b916c24bc24781dbd090183ab6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642fbd7f6f9833a334fd3a29816d3e6d"><td class="memItemLeft" align="right" valign="top"><a id="a642fbd7f6f9833a334fd3a29816d3e6d"></a>
@@ -379,7 +385,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:49 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

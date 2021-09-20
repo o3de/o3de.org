@@ -99,6 +99,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a94bcec3444ed8ac78e0c56d2e5eca3eb"><td class="memItemLeft" align="right" valign="top"><a id="a94bcec3444ed8ac78e0c56d2e5eca3eb"></a>
 virtual const AZ::Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTargetedPassDebuggingName</b> () const =0</td></tr>
 <tr class="separator:a94bcec3444ed8ac78e0c56d2e5eca3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6b527cd3f114f748ea9e37cee0be77"><td class="memItemLeft" align="right" valign="top"><a id="afb6b527cd3f114f748ea9e37cee0be77"></a>
+virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#afb6b527cd3f114f748ea9e37cee0be77">FindSwapChainPass</a> (AzFramework::NativeWindowHandle windowHandle) const =0</td></tr>
+<tr class="memdesc:afb6b527cd3f114f748ea9e37cee0be77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> associated with window Handle. <br /></td></tr>
+<tr class="separator:afb6b527cd3f114f748ea9e37cee0be77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a443eef1b24f046f265473872e13be587"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a443eef1b24f046f265473872e13be587">ConnectEvent</a> (OnReadyLoadTemplatesEvent::Handler &amp;handler)=0</td></tr>
+<tr class="separator:a443eef1b24f046f265473872e13be587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a390f6ad621bfee95b72e6616c259fc47"><td class="memItemLeft" align="right" valign="top"><a id="a390f6ad621bfee95b72e6616c259fc47"></a>
+virtual PassSystemState&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> () const =0</td></tr>
+<tr class="separator:a390f6ad621bfee95b72e6616c259fc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7be9993db93564c4c42ceea2369af435"><td class="memItemLeft" align="right" valign="top"><a id="a7be9993db93564c4c42ceea2369af435"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementFrameDrawItemCount</b> (u32 numDrawItems)=0</td></tr>
+<tr class="separator:a7be9993db93564c4c42ceea2369af435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148d86615e5e8682ad74fcde09377ee0"><td class="memItemLeft" align="right" valign="top"><a id="a148d86615e5e8682ad74fcde09377ee0"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>IncrementFrameRenderPassCount</b> ()=0</td></tr>
+<tr class="separator:a148d86615e5e8682ad74fcde09377ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248ff0f839896d91aaaca40b8a540703"><td class="memItemLeft" align="right" valign="top"><a id="a248ff0f839896d91aaaca40b8a540703"></a>
+virtual <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_system_frame_statistics.html">PassSystemFrameStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameStatistics</b> ()=0</td></tr>
+<tr class="separator:a248ff0f839896d91aaaca40b8a540703"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3392a53b8c0e6b3fae94371fd0ecf50b"><td class="memTemplParams" colspan="2"><a id="a3392a53b8c0e6b3fae94371fd0ecf50b"></a>
 template&lt;typename PassType &gt; </td></tr>
 <tr class="memitem:a3392a53b8c0e6b3fae94371fd0ecf50b"><td class="memTemplItemLeft" align="right" valign="top">Ptr&lt; PassType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a3392a53b8c0e6b3fae94371fd0ecf50b">CreatePass</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html">PassDescriptor</a> &amp;descriptor)</td></tr>
@@ -157,15 +175,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual AZStd::vector&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass.html">Pass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a510ede393a2ed708994daed045a990a0">FindPasses</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_filter.html">PassFilter</a> &amp;passFilter) const =0</td></tr>
 <tr class="memdesc:a510ede393a2ed708994daed045a990a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find matching passes from registered passes with specified filter. <br /></td></tr>
 <tr class="separator:a510ede393a2ed708994daed045a990a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb6b527cd3f114f748ea9e37cee0be77"><td class="memItemLeft" align="right" valign="top"><a id="afb6b527cd3f114f748ea9e37cee0be77"></a>
-virtual <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#afb6b527cd3f114f748ea9e37cee0be77">FindSwapChainPass</a> (AzFramework::NativeWindowHandle windowHandle) const =0</td></tr>
-<tr class="memdesc:afb6b527cd3f114f748ea9e37cee0be77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the <a class="el" href="class_a_z_1_1_r_p_i_1_1_swap_chain_pass.html">SwapChainPass</a> associated with window Handle. <br /></td></tr>
-<tr class="separator:afb6b527cd3f114f748ea9e37cee0be77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a443eef1b24f046f265473872e13be587"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system_interface.html#a443eef1b24f046f265473872e13be587">ConnectEvent</a> (OnReadyLoadTemplatesEvent::Handler &amp;handler)=0</td></tr>
-<tr class="separator:a443eef1b24f046f265473872e13be587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a390f6ad621bfee95b72e6616c259fc47"><td class="memItemLeft" align="right" valign="top"><a id="a390f6ad621bfee95b72e6616c259fc47"></a>
-virtual PassSystemState&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> () const =0</td></tr>
-<tr class="separator:a390f6ad621bfee95b72e6616c259fc47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -346,7 +355,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>PassTests</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
