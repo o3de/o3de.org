@@ -153,7 +153,7 @@ cmake --version
 
 ### Clang
 
-O3DE requires Clang to compile all of the native C++ code. Although Clang-6 is supported, it is recommended to use Clang-12 for the build process.
+O3DE requires Clang to compile all of the native C++ code. Although Clang-6 is supported, we recommend that you use Clang-12 for the build process.
 
 ```shell
 sudo apt-get install clang-12 
