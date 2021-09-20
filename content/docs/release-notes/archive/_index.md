@@ -12,5 +12,3 @@ Looking for older versions of release notes for Open 3D Engine (O3DE)? Look no f
 | Version     |  Link                                           | Date of Release    |
 |-------------|-------------------------------------------------|--------------------|
 | 2107.1      | [2107.1 Release Notes](2107-1-release-notes.md) | 5/10/2021           |
-
-* [Back to Release Notes Home](../_index.md)

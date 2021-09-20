@@ -257,7 +257,7 @@ After you perform these steps, your component appears in the component editor. T
 
 ## C. Customizing UI Interaction 
 
-(Optional) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/engine/ebus/_index.md) to customize your asset's interaction with the **Asset Browser**.
+(Optional) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/engine/ebus/) to customize your asset's interaction with the **Asset Browser**.
 
 ### 1. Describing Your Asset Type to the UI 
 

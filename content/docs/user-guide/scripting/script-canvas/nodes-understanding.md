@@ -54,7 +54,7 @@ For more information about creating variable references, see [Adding Variable Re
 
 ## Event Nodes 
 
-In O3DE's [Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md), events can be sent or received, so Script Canvas has sender nodes and receiver nodes.
+In O3DE's [Event Bus (EBus) system](/docs/user-guide/engine/ebus/), events can be sent or received, so Script Canvas has sender nodes and receiver nodes.
 
 ### Sender Nodes 
 

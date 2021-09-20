@@ -7,7 +7,7 @@ weight: 100
 
  With Python Asset Builder, you can create Python scripts that process custom assets produced from content creation tools such as Maya and Houdini, or any content tool with a known file format.
 
-To use Python Asset Builder you must enable the [Python Asset Builder gem](/docs/user-guide/assets/builder/_index.md).
+To use Python Asset Builder you must enable the [Python Asset Builder gem](/docs/user-guide/assets/builder/).
 
 ## Python Asset Builder terms 
 

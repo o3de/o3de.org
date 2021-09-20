@@ -29,7 +29,7 @@ Complete the following set up steps to use the AWS Client Auth Gem in your proje
 
 ### 1. Enable the AWS Client Auth Gem
 
-If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./_index.md#enabling-the-aws-client-auth-gem).
+If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./).
 
 ### 2. Configure authentication providers
 

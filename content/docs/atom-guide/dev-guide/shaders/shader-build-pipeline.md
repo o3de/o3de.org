@@ -17,7 +17,7 @@ Shaders are made up of several files:
   
 ## AZSL Files
 
-**AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/_index.md) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  
+**AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  
 
 There are a few key extensions of AZSL, which affect the shader build pipeline:
 - **Shader Resource Groups (SRGs)**: A container for application visible variables, which are defined in code with the class `ShaderResourceGroup`. SRGs can be defined in `.azsl` files as *partial SRGs*, which define only a portion of an SRG. You can combine the partial SRGs in a single `.srgi` file.<!-- Learn more about SRGs in the [AZSL Reference](azsl/reference.md).DRAFT TOPIC-->

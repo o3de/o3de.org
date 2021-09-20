@@ -56,7 +56,7 @@ The following components are currently **incompatible** because they are not yet
 ## EBus Request Bus Interface
 **NonUniformScaleRequestBus** is the request bus for the **Non-uniform Scale** component.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 Use the following request functions with the EBus interface to communicate with other components.
 
