@@ -73,7 +73,7 @@ For more information, see [Finding the Asset Reference](#asset-bundler-assets-re
 
 To resolve the missing asset from a hardcoded file load, try the following options:
 + **Remove the hardcoded load** - By emitting assets as product dependencies from relevant builders, you can use seed lists with fewer files that are easier to maintain.
-+ **Add as seed** - If you can't or don't want to replace the hard-coded asset load, you can add the referenced file as a seed to your game's seed list. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes. For information about adding the referenced file as a seed to your game's seed list, see the [O3DE Asset Bundler Command-Line Tool Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference.md).
++ **Add as seed** - If you can't or don't want to replace the hard-coded asset load, you can add the referenced file as a seed to your game's seed list. Because adding the seed changes only data and doesn't require recompiling your game, this approach can be useful later in development and minimizes code changes. For information about adding the referenced file as a seed to your game's seed list, see the [O3DE Asset Bundler Command-Line Tool Reference](/docs/user-guide/packaging/asset-bundler/command-line-reference/).
 + **Use the Wildcard Dependency System** - If your project uses relative path loads or wildcard path loads, you can declare the dependencies in a dependencies file. This technique is explained in the following section.
 
 ## False Positives
@@ -82,4 +82,4 @@ Some assets and asset references are used only in the editor or in launchers dur
 
 ### Removing False Positives From Missing Asset Scanning Results
 
-After you've verified that an asset is not used in your release builds, you can use the file tagging system to tag it so that it doesn't appear in future scans. For more information, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/packaging/asset-bundler/file-tagging.md).
+After you've verified that an asset is not used in your release builds, you can use the file tagging system to tag it so that it doesn't appear in future scans. For more information, see [Using the File Tagging System to Include or Exclude Assets](/docs/user-guide/packaging/asset-bundler/file-tagging/).

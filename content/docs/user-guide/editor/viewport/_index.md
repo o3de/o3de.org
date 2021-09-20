@@ -30,10 +30,10 @@ This feature has the following limitations:
 
 **Topics**
 
-+ [Modifying the Transform](/docs/user-guide/editor/viewport/viewport-interaction-model-transform.md)
-+ [Reference Space Model](/docs/user-guide/editor/viewport/viewport-interaction-model-reference-space-model.md)
-+ [Using Group Selections and Reference Spaces](/docs/user-guide/editor/viewport/group-selections-reference-spaces.md)
-+ [Resetting the Transform](/docs/user-guide/editor/viewport/reset-transform.md)
-+ [Matching the Transform](/docs/user-guide/editor/viewport/transform-matching.md)
-+ [Using Pivot Mode](/docs/user-guide/editor/viewport/pivot-mode.md)
-+ [Using the Camera Space](/docs/user-guide/editor/camera-space.md)
++ [Modifying the Transform](/docs/user-guide/editor/viewport/viewport-interaction-model-transform/)
++ [Reference Space Model](/docs/user-guide/editor/viewport/viewport-interaction-model-reference-space-model/)
++ [Using Group Selections and Reference Spaces](/docs/user-guide/editor/viewport/group-selections-reference-spaces/)
++ [Resetting the Transform](/docs/user-guide/editor/viewport/reset-transform/)
++ [Matching the Transform](/docs/user-guide/editor/viewport/transform-matching/)
++ [Using Pivot Mode](/docs/user-guide/editor/viewport/pivot-mode/)
++ [Using the Camera Space](/docs/user-guide/editor/camera-space/)

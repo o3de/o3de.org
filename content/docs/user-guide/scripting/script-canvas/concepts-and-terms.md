@@ -62,7 +62,7 @@ The **Node Inspector** shows the properties of the node. You can edit each prope
 
 **To display the Node Inspector**
 
-1. Open [**Script Canvas**](/docs/user-guide/scripting/script-canvas/editor-interface.md).
+1. Open [**Script Canvas**](/docs/user-guide/scripting/script-canvas/editor-interface).
 
 1. Do one of the following:
    + Click **Tools**, **Node Inspector**.

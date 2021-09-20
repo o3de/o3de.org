@@ -7,10 +7,10 @@ title: FBX Settings export properties
 **Topics**
 + [FBX Settings overview](#fbx-properties-overview)
 + [Modify FBX Settings](#fbx-properties-modify)
-+ [FBX Settings Meshes tab](/docs/user-guide/assets/fbx-settings/settings-meshes-tab.md)
-+ [FBX Settings Actors tab](/docs/user-guide/assets/fbx-settings/settings-actor-tab.md)
-+ [FBX Settings Motions tab](/docs/user-guide/assets/fbx-settings/settings-motions-tab.md)
-+ [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab.md)
++ [FBX Settings Meshes tab](/docs/user-guide/assets/fbx-settings/settings-meshes-tab/)
++ [FBX Settings Actors tab](/docs/user-guide/assets/fbx-settings/settings-actor-tab/)
++ [FBX Settings Motions tab](/docs/user-guide/assets/fbx-settings/settings-motions-tab/)
++ [FBX Settings PhysX tab](/docs/user-guide/assets/fbx-settings/settings-physx-tab/)
 
 ## FBX Settings overview 
 

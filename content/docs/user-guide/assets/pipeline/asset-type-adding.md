@@ -41,7 +41,7 @@ You can deploy your asset file by copying if the following are true:
 
 If your asset requires processing, compiling, or optimizing at run time, you can do one of the following:
 
-+ Create a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder.md) to transform your source asset into its compiled form.
++ Create a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder) to transform your source asset into its compiled form.
 + If your asset is extracted from a scene file like FBX and you want to integrate with its corresponding pipeline, create a scene pipeline plug-in.
 
 #### Copying Versus Creating a Builder 
@@ -51,7 +51,7 @@ It might be inefficient to use your source assets in your game under the followi
 + You want to do verify or error check your files.
 + You want to optimize your data.
 
-In these cases, consider writing a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder.md) instead of just copying your raw assets, even if it only compresses or converts the assets into binary format.
+In these cases, consider writing a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder) instead of just copying your raw assets, even if it only compresses or converts the assets into binary format.
 
 ### B. Enable the Engine to Load and Stream the Asset 
 
@@ -83,7 +83,7 @@ In addition, you can use the thumbnail API to generate thumbnails for your asset
 
 ## A. Registering Your Asset with the Asset Pipeline 
 
-When you register your asset with the asset pipeline, you define your asset to the asset system and asset processor. Depending on your asset file type, you can register it by creating a copy rule or by writing a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder.md).
+When you register your asset with the asset pipeline, you define your asset to the asset system and asset processor. Depending on your asset file type, you can register it by creating a copy rule or by writing a [BuilderSDK builder](/docs/user-guide/tutorials/assets/custom-builder).
 
 ### Copying Assets 
 
@@ -102,7 +102,7 @@ productAssetType={511562BE-65A5-4538-A5F1-AC685366243E}
 version=1
 ```
 
-For more information, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring.md).
+For more information, see [Configuring the Asset Pipeline](/docs/user-guide/assets/configuring).
 
 ### Custom-Built Assets 
 
@@ -122,7 +122,7 @@ When you write a BuilderSDK builder to create the asset, it should fill in the p
 | SubID | Any u32 integer that disambiguates different outputs from the same source. If your source files produce only one product, you can use 0. |
 | Legacy SubIDs | SubIDs for backward compatibility. |
 
-For more information and examples, see the [Asset Builder API](/docs/user-guide/tutorials/assets/custom-builder.md).
+For more information and examples, see the [Asset Builder API](/docs/user-guide/tutorials/assets/custom-builder).
 
 #### Writing a Scene API Plug-in 
 
@@ -130,7 +130,7 @@ The Scene API provides boilerplate code so that you only have to write a few cod
 
 ### Registration Versus Integration 
 
-After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes. The result of the lookup gives you the asset's path, size, and other information. You can use [standard file handling](/docs/user-guide/engine/file-io.md) to load the asset.
+After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes. The result of the lookup gives you the asset's path, size, and other information. You can use [standard file handling](/docs/user-guide/engine/file-io) to load the asset.
 
 While simple registration of an asset can be useful in some circumstances, full integration with the O3DE asset system offers many advantages, including the following:
 + Automatic live reloading
@@ -163,7 +163,7 @@ An `AssetData`-derived class contains the asset data that is shared among instan
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type. Only one such handler generally exists for each type of asset. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`-derived class. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads.
 
 **Note**
-You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code.md).
+You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/userguide/components/entity-system-pg-gems-code).
 
 #### Using the Generic Asset Handler for Structured Data 
 
@@ -249,7 +249,7 @@ At this point, you can use your custom assets in your structures and components.
    Az::Data::Asset<MyAsset> m_myAsset;
    ```
 
-1. Reflect the fields that you added by using editor reflection. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection.md).
+1. Reflect the fields that you added by using editor reflection. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection).
 
 1. (Optional) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior. For more information, see `m_script` in the `Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file.
 

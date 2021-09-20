@@ -64,10 +64,10 @@ After you set up your entities and components, create a motion set and two anima
 
 **To create a motion set and two animation graphs**
 
-1. Create a motion set. For information about creating a motion set, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md). This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`.
+1. Create a motion set. For information about creating a motion set, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start/). This example's **MotionSet0** contains the motions `gunshootanimation`, `jack_shoot`, and `jack_idle`.
 ![Example motion set.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-2.png)
 
-1. Create a secondary animation graph. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start.md). The secondary graph controls one or more entities whose actions are determined by the primary graph.
+1. Create a secondary animation graph. For information about creating a secondary animation graph, see [Getting Started with the Animation Editor](/docs/user-guide/visualization/animation/animation-editor/quick-start/). The secondary graph controls one or more entities whose actions are determined by the primary graph.
 
    This example's `syncFeature_Gun` secondary graph has a **BindPose0** node and a **Motion0** node. The **Motion0** node contains the `gunshootanimation` motion.
 ![Motion node with associated animation.](/images/user-guide/actor-animation/char-animation-editor-sync-graph-3.png)

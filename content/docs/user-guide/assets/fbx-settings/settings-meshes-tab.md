@@ -55,7 +55,7 @@ For more information, see [Simulate cloth with NVIDIA Cloth](/docs/user-guide/in
 Select the mesh to have cloth data applied and simulate as a cloth object.
 
 **Note**
-For information on the **Inverse Masses**, **Motion Conrstraints**, and **Backstop** properties below, see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data.md).
+For information on the **Inverse Masses**, **Motion Conrstraints**, and **Backstop** properties below, see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data/).
 
 ****Inverse Masses****
 Select a vertex color stream to apply per vertex inverse mass data for cloth simulation. If no vertex color stream is selected, an inverse mass value of **1.0** is assigned to all vertices in the cloth mesh.
