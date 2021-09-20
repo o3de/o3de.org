@@ -133,7 +133,7 @@ As with the other operating systems, [CMake {{< versions/cmake >}} or later](htt
 sudo apt-get remove cmake
 ```
 
-In order to get the latest version of CMake for Ubuntu, you can add the Kitware APT repository to your Ubuntu package list and run **apt-get** to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
+In order to get the latest version of CMake for Ubuntu, you can add the Kitware APT repository to your Ubuntu package list and run `apt-get` to install it. Refer to [Kitware APT Page](https://apt.kitware.com/) for more information.
 
 ```shell
 wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | sudo tee /usr/share/keyrings/kitware-archive-keyring.gpg >/dev/null
