@@ -161,7 +161,7 @@ sudo apt-get install clang-12
 
 ### Python 3.7 dependency on libffi
 
-Ubuntu 20.04.3 LTS does not support Python 3.7, however O3DE's local python package is Python 3.7 and has a library dependency on an earlier version of libffi that does not come with Ubunutu 20.04.3 LTS. You will need to manually install the older version of libffi onto Ubunutu 20.04.3 LTS in order for O3DE's Python to execute properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package.
+O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu 20.04.3 LTS does not support. You will need to manually install an older version of libffi onto Ubuntu 20.04.3 LTS in order for O3DE's Python to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi. 
 
 {{< note >}}
 In order to perform the download step shown below, you must install [Curl](https://curl.se):
