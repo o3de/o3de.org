@@ -164,9 +164,11 @@ sudo apt-get install clang-12
 Ubuntu 20.04.3 LTS does not support Python 3.7, however O3DE's local python package is Python 3.7 and has a library dependency on an earlier version of libffi that does not come with Ubunutu 20.04.3 LTS. You will need to manually install the older version of libffi onto Ubunutu 20.04.3 LTS in order for O3DE's Python to execute properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package.
 
 {{< note >}}
-Curl is required to perform the download step shown in the following instructions.
+In order to perform the download step shown below, you must install [Curl](https://curl.se):
+```shell
+sudo apt-get install curl
+```
 {{< /note >}}
-
 
 ```shell
 pushd /tmp
@@ -200,12 +202,14 @@ O3DE also requires some additional library packages to be installed:
 These packages can be downloaded and installed through `apt-get`.
 
 ```shell
-sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev zlib1g-dev mesa-common-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev
+sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev zlib1g-dev mesa-common-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev curl
 ```
 
 ### Ninja Build System (Optional)
 
-CMake supports Linux's default 'Unix Makefiles'. However, this does not support multiple configurations, so when a CMake project is generated, you must supply the configuration you want to build (debug, profile, or release). The Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), supports multiple configurations within the same generated build folder, so we recommend that you use this generator for O3DE development. Ninja build tool can be installed through **apt-get**:
+O3DE supports multiple build configurations (debug, profile, and release), and you will need to specify which configuration you want to use when building O3DE. By default, CMake supports Linux's default Unix Makefiles; however, Unix Makefiles only supports single-configuration builds and not multi-configuration builds. That means you must determine which configuration you want to use for the build when you generate the project. All builds for the project will be based on that configuration. In order to change the build configuration, you will need to regenerate the project with the different configuration.
+
+With the Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), you will be able to generate the project once but can determine which configuration to build during build time (see the [Linux setup guide](/docs/user-guide/platforms/linux) for more details). We recommend that you use this generator for O3DE development. You can install Ninja built tool through `apt-get`. 
 
 ```shell
 sudo apt-get install ninja-build

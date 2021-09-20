@@ -21,10 +21,10 @@ These instructions use $O3DE_ENGINE to refer to the absolute path where the O3DE
 
 ## Create an O3DE project
 
-If you haven't yet created an O3DE project, do so now using the `o3de` script. $O3DE_PROJECT refers to the absolute path of the project.
+If you haven't yet created an O3DE project, do so now using the `o3de` script. $O3DE_PROJECT_PATH refers to the absolute path of the project and $O3DE_PROJECT_NAME refers to the name of the project.
 
 ```shell
-$O3DE_ENGINE/scripts/o3de.sh create-project --project-path $O3DE_PROJECT
+$O3DE_ENGINE/scripts/o3de.sh create-project --project-path $O3DE_PROJECT_PATH
 ```
 
 Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guide/create/creating-projects-using-cli) for more information on creating new O3DE projects.
@@ -43,7 +43,7 @@ The following command generates a build folder, `build/linux`, under the root of
 
 ```shell
 
-cd $O3DE_PROJECT
+cd $O3DE_PROJECT_PATH
 
 $O3DE_ENGINE/scripts/o3de.sh register --project-path .
 
@@ -57,23 +57,13 @@ If you do not need to generate multi-config build folders, you can instead speci
 
 ```shell
 
-cd $O3DE_PROJECT
+cd $O3DE_PROJECT_PATH
 
 $O3DE_ENGINE/scripts/o3de.sh register --project-path .
 
 cmake -B build/linux -S . -G"Unix Makefiles" -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 -DCMAKE_BUILD_TYPE=$BUILD_CONFIG
 
 ```
-
-To build the project, you can specify a specific target (like Editor, for the example below).
-
-```shell
-
-cd $O3DE_PROJECT
-
-cmake --build build/linux --target=Editor
-```
-
 
 ## Building from command line
 
@@ -85,9 +75,9 @@ For projects that were generated using the Unix Makefile generator, the configur
 
 ```shell
 
-cd $O3DE_PROJECT
+cd $O3DE_PROJECT_PATH
 
-cmake --build build/linux 
+cmake --build build/linux --target=$O3DE_PROJECT_NAME.GameLauncher Editor
 ```
 
 
@@ -97,22 +87,28 @@ For projects that were generated using the Ninja Multi-Config generator will req
 
 ```shell
 
-cd $O3DE_PROJECT
+cd $O3DE_PROJECT_PATH
 
-cmake --build build/linux --config profile
+cmake --build build/linux --config profile --target=$O3DE_PROJECT_NAME.GameLauncher Editor
 ```
+
+{{< note >}}
+If you need to build the O3DE Project Manager, the above --target arguments will not build it by default. In order to build the O3DE Project Manager, you will need to set the target to **Project Manager**.  `--target ProjectManager` instead.
+{{< /note >}}
+
 
 ## Advanced Topics
 
-### Generating a compile_commands.json 
+### Generating a Compilation Database
 
-In conjuction with using the Ninja or the Unix Makefile generators, cmake has the option to generate a [compile-command.json](https://clang.llvm.org/docs/JSONCompilationDatabase.html) file that can be used by IDEs like Visual Studio Code to aid in its intellisense. 
+In conjuction with using the Ninja or the Unix Makefile generators, cmake has the option to generate a Compilation Database [compile-command.json](https://clang.llvm.org/docs/JSONCompilationDatabase.html). This file is used by IDEs such as Visual Studio Code or CLion to extract the compilation information from the build to support useful features such as Intellisense, compilation flags, etc. 
+
 
 {{< note >}}
 IDEs can use the `compile-command.json` only when Unity builds are turned off. Since Unity builds are enabled by default in O3DE, you will need to explicitly turn it off with the `-DLY_UNITY_BUILD=OFF` argument.
 {{< /note >}}
 
-To support IntelliSense features, include the following arguments in the project generation command:
+To enable the generation of the compilation database file, include the following arguments in the project generation command:
 
 ```shell
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_UNITY_BUILD=OFF
