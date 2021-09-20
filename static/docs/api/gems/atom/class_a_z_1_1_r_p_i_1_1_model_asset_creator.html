@@ -69,6 +69,8 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset_creator.html#ab08a745ad12a38df58447e6cdab373aa">SetName</a> (AZStd::string_view name)</td></tr>
 <tr class="memdesc:ab08a745ad12a38df58447e6cdab373aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a name to the model. <br /></td></tr>
 <tr class="separator:ab08a745ad12a38df58447e6cdab373aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a628c9ffe86ce8a5e9825d5f109380074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset_creator.html#a628c9ffe86ce8a5e9825d5f109380074">AddMaterialSlot</a> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html">ModelMaterialSlot</a> &amp;materialSlot)</td></tr>
+<tr class="separator:a628c9ffe86ce8a5e9825d5f109380074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff088295d8b71b38bdd6800965a7b304"><td class="memItemLeft" align="right" valign="top"><a id="aff088295d8b71b38bdd6800965a7b304"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset_creator.html#aff088295d8b71b38bdd6800965a7b304">AddLodAsset</a> (Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html">ModelLodAsset</a> &gt; &amp;&amp;lodAsset)</td></tr>
 <tr class="memdesc:aff088295d8b71b38bdd6800965a7b304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a Lod to the model. <br /></td></tr>
@@ -133,6 +135,25 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">Mo
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Constructs an instance of a <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a628c9ffe86ce8a5e9825d5f109380074"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628c9ffe86ce8a5e9825d5f109380074">&#9670;&nbsp;</a></span>AddMaterialSlot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::ModelAssetCreator::AddMaterialSlot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_model_material_slot.html">ModelMaterialSlot</a> &amp;&#160;</td>
+          <td class="paramname"><em>materialSlot</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a new material slot to the asset. If a slot with the same stable ID already exists, it will be replaced. </p>
+
+</div>
+</div>
 <a id="a9378068feed006b01ac82d23ad60542f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9378068feed006b01ac82d23ad60542f">&#9670;&nbsp;</a></span>Begin()</h2>
 
@@ -233,7 +254,7 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">Mo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

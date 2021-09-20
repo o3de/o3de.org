@@ -58,6 +58,8 @@ $(function() {
 <div class="contents">
 
 <p><code>#include &lt;Datum.h&gt;</code></p>
+
+<p>Inherits <a class="el" href="class_script_canvas_1_1_serialization_listener.html">ScriptCanvas::SerializationListener</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -68,9 +70,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5797224387afee5f4c633f7b4d8634e4"><td class="memItemLeft" align="right" valign="top"><a id="a5797224387afee5f4c633f7b4d8634e4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_script_canvas_1_1_datum.html">Datum</a>, &quot;{8B836FC0-98A8-4A81-8651-35C7CA125451}&quot;)</td></tr>
-<tr class="separator:a5797224387afee5f4c633f7b4d8634e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae244272c49bcb9cbfb465fbcbc2d5057"><td class="memItemLeft" align="right" valign="top"><a id="ae244272c49bcb9cbfb465fbcbc2d5057"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_script_canvas_1_1_datum.html">Datum</a>, &quot;{8B836FC0-98A8-4A81-8651-35C7CA125451}&quot;, SerializationListener)</td></tr>
+<tr class="separator:ae244272c49bcb9cbfb465fbcbc2d5057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa35cf6f8d3c50435281fcd5d91e4fb23"><td class="memItemLeft" align="right" valign="top"><a id="aa35cf6f8d3c50435281fcd5d91e4fb23"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_script_canvas_1_1_datum.html">Datum</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:aa35cf6f8d3c50435281fcd5d91e4fb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -240,6 +242,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ConvertBehaviorContex
 template&lt;typename t_Value &gt; </td></tr>
 <tr class="memitem:a7818d97e3fa11c52156cc440d21d4365"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>Set</b> (const t_Value &amp;value)</td></tr>
 <tr class="separator:a7818d97e3fa11c52156cc440d21d4365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_script_canvas_1_1_serialization_listener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_script_canvas_1_1_serialization_listener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_script_canvas_1_1_serialization_listener.html">ScriptCanvas::SerializationListener</a></td></tr>
+<tr class="memitem:afe3b69b2032ebea47d27b0cb7661bf9b inherit pub_methods_class_script_canvas_1_1_serialization_listener"><td class="memItemLeft" align="right" valign="top"><a id="afe3b69b2032ebea47d27b0cb7661bf9b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_script_canvas_1_1_serialization_listener.html">SerializationListener</a>, &quot;{CA4EE281-30B3-4928-BCD8-9305CE75E463}&quot;)</td></tr>
+<tr class="separator:afe3b69b2032ebea47d27b0cb7661bf9b inherit pub_methods_class_script_canvas_1_1_serialization_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bd3957a642a32b46b9634e4a94a8c7 inherit pub_methods_class_script_canvas_1_1_serialization_listener"><td class="memItemLeft" align="right" valign="top"><a id="aa3bd3957a642a32b46b9634e4a94a8c7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSerialize</b> ()</td></tr>
+<tr class="separator:aa3bd3957a642a32b46b9634e4a94a8c7 inherit pub_methods_class_script_canvas_1_1_serialization_listener"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -258,6 +267,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a0302e091899aa289a77d7e8cd463ee46"><td class="memItemLeft" align="right" valign="top"><a id="a0302e091899aa289a77d7e8cd463ee46"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>AZ::DatumSerializer</b></td></tr>
+<tr class="separator:a0302e091899aa289a77d7e8cd463ee46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf210af47798d6c28e0ed5a9309fcf0f"><td class="memItemLeft" align="right" valign="top"><a id="acf210af47798d6c28e0ed5a9309fcf0f"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeContextEventHandler</b></td></tr>
 <tr class="separator:acf210af47798d6c28e0ed5a9309fcf0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -319,7 +331,7 @@ template&lt;typename t_Value , typename &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:54 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:31 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

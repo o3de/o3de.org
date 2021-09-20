@@ -78,13 +78,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad15d3dadff6cb0b5e51b9c6998f487c7"><td class="memItemLeft" align="right" valign="top"><a id="ad15d3dadff6cb0b5e51b9c6998f487c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawListTag</b> (Name drawListName)</td></tr>
 <tr class="separator:ad15d3dadff6cb0b5e51b9c6998f487c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e4acdb72cbccf6c6b60394641312c2f"><td class="memItemLeft" align="right" valign="top"><a id="a3e4acdb72cbccf6c6b60394641312c2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPipelineStateDataIndex</b> (u32 index)</td></tr>
-<tr class="separator:a3e4acdb72cbccf6c6b60394641312c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77e5a8aba121ad3fd2036350e54b69e1"><td class="memItemLeft" align="right" valign="top"><a id="a77e5a8aba121ad3fd2036350e54b69e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPipelineStateDataIndex</b> (uint32_t index)</td></tr>
+<tr class="separator:a77e5a8aba121ad3fd2036350e54b69e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c7109afe3e93793bcf24d020e4af6d"><td class="memItemLeft" align="right" valign="top"><a id="a25c7109afe3e93793bcf24d020e4af6d"></a>
 <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_raster_pass.html#a25c7109afe3e93793bcf24d020e4af6d">GetShaderResourceGroup</a> ()</td></tr>
 <tr class="memdesc:a25c7109afe3e93793bcf24d020e4af6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expose shader resource group. <br /></td></tr>
 <tr class="separator:a25c7109afe3e93793bcf24d020e4af6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94a3d3e6d02500a55b406bb178101279"><td class="memItemLeft" align="right" valign="top"><a id="a94a3d3e6d02500a55b406bb178101279"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawItemCount</b> ()</td></tr>
+<tr class="separator:a94a3d3e6d02500a55b406bb178101279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_p_i_1_1_render_pass')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html">AZ::RPI::RenderPass</a></td></tr>
 <tr class="memitem:a6d7b929c0c487c42b6cacf1663c37ba7 inherit pub_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a id="a6d7b929c0c487c42b6cacf1663c37ba7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html">RenderPass</a>, &quot;{9441D114-60FD-487B-B2B7-0FBBC8A96FC2}&quot;, Pass)</td></tr>
@@ -321,6 +324,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:ad37711b349b4b3dd860607adae5e0a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8332430669dd475770ca5257ac29fa70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_raster_pass.html#a8332430669dd475770ca5257ac29fa70">CompileResources</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_compile_context.html">RHI::FrameGraphCompileContext</a> &amp;context) override</td></tr>
 <tr class="separator:a8332430669dd475770ca5257ac29fa70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f3693ca2a62182d8234d09387cf8ea"><td class="memItemLeft" align="right" valign="top"><a id="a81f3693ca2a62182d8234d09387cf8ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateDrawList</b> ()</td></tr>
+<tr class="separator:a81f3693ca2a62182d8234d09387cf8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html">AZ::RPI::RenderPass</a></td></tr>
 <tr class="memitem:af317483861749b130b806182b05fe78c inherit pro_methods_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a id="af317483861749b130b806182b05fe78c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RenderPass</b> (const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pass_descriptor.html">PassDescriptor</a> &amp;descriptor)</td></tr>
@@ -434,6 +440,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a5383ad774af184337405b1deec60b024"><td class="memItemLeft" align="right" valign="top"><a id="a5383ad774af184337405b1deec60b024"></a>
 RHI::DrawListView&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawListView</b></td></tr>
 <tr class="separator:a5383ad774af184337405b1deec60b024"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ccde048b10914e3518ee8c695931ceb"><td class="memItemLeft" align="right" valign="top"><a id="a1ccde048b10914e3518ee8c695931ceb"></a>
+RHI::DrawList&#160;</td><td class="memItemRight" valign="bottom"><b>m_combinedDrawList</b></td></tr>
+<tr class="separator:a1ccde048b10914e3518ee8c695931ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83adb812e970c3dfc3ff9106dc50c5d3"><td class="memItemLeft" align="right" valign="top"><a id="a83adb812e970c3dfc3ff9106dc50c5d3"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_scissor.html">RHI::Scissor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_scissorState</b></td></tr>
 <tr class="separator:a83adb812e970c3dfc3ff9106dc50c5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -446,6 +455,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_overrideScissorSate
 <tr class="memitem:aca82480b797d23700d0d74d47f23c055"><td class="memItemLeft" align="right" valign="top"><a id="aca82480b797d23700d0d74d47f23c055"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_overrideViewportState</b> = false</td></tr>
 <tr class="separator:aca82480b797d23700d0d74d47f23c055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae62628112dfff7fb03e5f9158f11340"><td class="memItemLeft" align="right" valign="top"><a id="aae62628112dfff7fb03e5f9158f11340"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_drawItemCount</b> = 0</td></tr>
+<tr class="separator:aae62628112dfff7fb03e5f9158f11340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pass.html">AZ::RPI::RenderPass</a></td></tr>
 <tr class="memitem:ae980eded54bc6d86874469ee0d082e1d inherit pro_attribs_class_a_z_1_1_r_p_i_1_1_render_pass"><td class="memItemLeft" align="right" valign="top"><a id="ae980eded54bc6d86874469ee0d082e1d"></a>
 Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_shaderResourceGroup</b> = nullptr</td></tr>
@@ -663,7 +675,7 @@ static const size_t&#160;</td><td class="memItemRight" valign="bottom"><b>Messag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
