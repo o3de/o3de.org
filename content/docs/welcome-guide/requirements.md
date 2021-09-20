@@ -122,7 +122,7 @@ Support for developing on macOS is in an experimental stage. At a minimum, you n
 
 ## Linux 
 
-The primary Linux distribution for using the O3DE editor is Ubuntu 20.04.3 LTS. The following instructions describe how to retrieve and install the required software packages through Ubuntu's **apt-get** command-line utility.
+The primary Linux distribution for using the O3DE Editor is Ubuntu 20.04.3 LTS. The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
 
 
 ### CMake
