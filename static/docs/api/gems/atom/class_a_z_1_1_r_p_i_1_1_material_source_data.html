@@ -82,8 +82,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adc7f8695bbabe17774562a187f06c662"><td class="memItemLeft" align="right" valign="top"><a id="adc7f8695bbabe17774562a187f06c662"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_TYPE_INFO</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html">AZ::RPI::MaterialSourceData</a>, &quot;{B8881D92-DF9F-4552-9F22-FF4421C45D9A}&quot;)</td></tr>
 <tr class="separator:adc7f8695bbabe17774562a187f06c662"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d878a2a31a1d86d06037690e2fb6744"><td class="memItemLeft" align="right" valign="top">Outcome&lt; Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#a5d878a2a31a1d86d06037690e2fb6744">CreateMaterialAsset</a> (Data::AssetId assetId, AZStd::string_view materialSourceFilePath=&quot;&quot;, bool elevateWarnings=true) const</td></tr>
-<tr class="separator:a5d878a2a31a1d86d06037690e2fb6744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c034b1d98daf6f8f3534606a0410a0"><td class="memItemLeft" align="right" valign="top">Outcome&lt; Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html#ac6c034b1d98daf6f8f3534606a0410a0">CreateMaterialAsset</a> (Data::AssetId assetId, AZStd::string_view materialSourceFilePath=&quot;&quot;, bool elevateWarnings=true, bool includeMaterialPropertyNames=true) const</td></tr>
+<tr class="separator:ac6c034b1d98daf6f8f3534606a0410a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -121,8 +121,8 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This is a simple data structure for serializing in/out material source files. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5d878a2a31a1d86d06037690e2fb6744"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d878a2a31a1d86d06037690e2fb6744">&#9670;&nbsp;</a></span>CreateMaterialAsset()</h2>
+<a id="ac6c034b1d98daf6f8f3534606a0410a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c034b1d98daf6f8f3534606a0410a0">&#9670;&nbsp;</a></span>CreateMaterialAsset()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,7 +143,13 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>elevateWarnings</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>elevateWarnings</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>includeMaterialPropertyNames</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -157,7 +163,7 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
     <tr><td class="paramname">assetId</td><td>ID for the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> </td></tr>
     <tr><td class="paramname">materialSourceFilePath</td><td>Indicates the path of the .material file that the <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_source_data.html" title="This is a simple data structure for serializing in/out material source files.">MaterialSourceData</a> represents. Used for resolving file-relative paths. </td></tr>
     <tr><td class="paramname">elevateWarnings</td><td>Indicates whether to treat warnings as errors </td></tr>
-    <tr><td class="paramname">materialTypeSourceData</td><td>The function sometimes needs metadata from the .materialtype file. It will either load the .materialtype file from disk, or use this <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_type_source_data.html" title="This is a simple data structure for serializing in/out material type source files.">MaterialTypeSourceData</a> if it's provided. </td></tr>
+    <tr><td class="paramname">includeMaterialPropertyNames</td><td>Indicates whether to save material property names into the material asset file </td></tr>
   </table>
   </dd>
 </dl>
@@ -170,7 +176,7 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

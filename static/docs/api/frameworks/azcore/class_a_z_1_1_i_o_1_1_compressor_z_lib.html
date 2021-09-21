@@ -68,38 +68,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee82f1d451aef29e973a12be8df4d1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46490294df551c9ddf7d6950c9502780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a46490294df551c9ddf7d6950c9502780">CompressorZLib</a> (unsigned int decompressionCachePerStream=64 *1024, unsigned int dataBufferSize=128 *1024)</td></tr>
 <tr class="separator:a46490294df551c9ddf7d6950c9502780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e0676ed466096857286c595b87d67d3"><td class="memItemLeft" align="right" valign="top"><a id="a6e0676ed466096857286c595b87d67d3"></a>
-virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a6e0676ed466096857286c595b87d67d3">GetTypeId</a> () const</td></tr>
-<tr class="memdesc:a6e0676ed466096857286c595b87d67d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return compressor type id. <br /></td></tr>
-<tr class="separator:a6e0676ed466096857286c595b87d67d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3cff444613bc83a5ec5d44bbf2151ee"><td class="memItemLeft" align="right" valign="top"><a id="af3cff444613bc83a5ec5d44bbf2151ee"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#af3cff444613bc83a5ec5d44bbf2151ee">ReadHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, AZ::u8 *data, unsigned int dataSize)</td></tr>
-<tr class="memdesc:af3cff444613bc83a5ec5d44bbf2151ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we open a stream to Read for the first time. Data contains the first. dataSize &lt;= m_maxHeaderSize. <br /></td></tr>
-<tr class="separator:af3cff444613bc83a5ec5d44bbf2151ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0662ebc184c272161f5bef45dbe4b48a"><td class="memItemLeft" align="right" valign="top"><a id="a0662ebc184c272161f5bef45dbe4b48a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a0662ebc184c272161f5bef45dbe4b48a">WriteHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
-<tr class="memdesc:a0662ebc184c272161f5bef45dbe4b48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we are about to start writing to a compressed stream. <br /></td></tr>
-<tr class="separator:a0662ebc184c272161f5bef45dbe4b48a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab790396f86e360a53a6d1ea393065675"><td class="memItemLeft" align="right" valign="top"><a id="ab790396f86e360a53a6d1ea393065675"></a>
-virtual SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ab790396f86e360a53a6d1ea393065675">Read</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, SizeType byteSize, SizeType offset, void *buffer)</td></tr>
-<tr class="memdesc:ab790396f86e360a53a6d1ea393065675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarded function from the Device when we from a compressed stream. <br /></td></tr>
-<tr class="separator:ab790396f86e360a53a6d1ea393065675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9fa1ea046f7876c3a7e4d0a3b2272e9"><td class="memItemLeft" align="right" valign="top"><a id="ad9fa1ea046f7876c3a7e4d0a3b2272e9"></a>
-virtual SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ad9fa1ea046f7876c3a7e4d0a3b2272e9">Write</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, SizeType byteSize, const void *data, SizeType offset=SizeType(-1))</td></tr>
-<tr class="memdesc:ad9fa1ea046f7876c3a7e4d0a3b2272e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarded function from the Device when we write to a compressed stream. <br /></td></tr>
-<tr class="separator:ad9fa1ea046f7876c3a7e4d0a3b2272e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af33a8c2be9973763b004e20eae5e0ccc"><td class="memItemLeft" align="right" valign="top"><a id="af33a8c2be9973763b004e20eae5e0ccc"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#af33a8c2be9973763b004e20eae5e0ccc">WriteSeekPoint</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
-<tr class="memdesc:af33a8c2be9973763b004e20eae5e0ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a seek point. <br /></td></tr>
-<tr class="separator:af33a8c2be9973763b004e20eae5e0ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c1ab7e4607fc3545b096b2fe3358e19"><td class="memItemLeft" align="right" valign="top"><a id="a2c1ab7e4607fc3545b096b2fe3358e19"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a2c1ab7e4607fc3545b096b2fe3358e19">StartCompressor</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, int compressionLevel, SizeType autoSeekDataSize)</td></tr>
-<tr class="memdesc:a2c1ab7e4607fc3545b096b2fe3358e19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set auto seek point even dataSize bytes. <br /></td></tr>
-<tr class="separator:a2c1ab7e4607fc3545b096b2fe3358e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa5177f37253104f52bd59344641b9f"><td class="memItemLeft" align="right" valign="top"><a id="a0fa5177f37253104f52bd59344641b9f"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a0fa5177f37253104f52bd59344641b9f">Close</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream)</td></tr>
-<tr class="memdesc:a0fa5177f37253104f52bd59344641b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called just before we close the stream. All compression data will be flushed and finalized. (You can't add data afterwards). <br /></td></tr>
-<tr class="separator:a0fa5177f37253104f52bd59344641b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fedc4b85b00fb0c13a778d7f3ad3c87"><td class="memItemLeft" align="right" valign="top"><a id="a7fedc4b85b00fb0c13a778d7f3ad3c87"></a>
+AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a7fedc4b85b00fb0c13a778d7f3ad3c87">GetTypeId</a> () const override</td></tr>
+<tr class="memdesc:a7fedc4b85b00fb0c13a778d7f3ad3c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return compressor type id. <br /></td></tr>
+<tr class="separator:a7fedc4b85b00fb0c13a778d7f3ad3c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad84c373801ec4acf42d6da66042b5e10"><td class="memItemLeft" align="right" valign="top"><a id="ad84c373801ec4acf42d6da66042b5e10"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#ad84c373801ec4acf42d6da66042b5e10">ReadHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, AZ::u8 *data, unsigned int dataSize) override</td></tr>
+<tr class="memdesc:ad84c373801ec4acf42d6da66042b5e10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we open a stream to Read for the first time. Data contains the first. dataSize &lt;= m_maxHeaderSize. <br /></td></tr>
+<tr class="separator:ad84c373801ec4acf42d6da66042b5e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c18af108e4ff39cd961c2cd5ebf0c8c"><td class="memItemLeft" align="right" valign="top"><a id="a9c18af108e4ff39cd961c2cd5ebf0c8c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a9c18af108e4ff39cd961c2cd5ebf0c8c">WriteHeaderAndData</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream) override</td></tr>
+<tr class="memdesc:a9c18af108e4ff39cd961c2cd5ebf0c8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when we are about to start writing to a compressed stream. <br /></td></tr>
+<tr class="separator:a9c18af108e4ff39cd961c2cd5ebf0c8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefd8085a3076158896d9eae9917b4be2"><td class="memItemLeft" align="right" valign="top"><a id="aefd8085a3076158896d9eae9917b4be2"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#aefd8085a3076158896d9eae9917b4be2">Read</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, SizeType byteSize, SizeType offset, void *buffer) override</td></tr>
+<tr class="memdesc:aefd8085a3076158896d9eae9917b4be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarded function from the Device when we from a compressed stream. <br /></td></tr>
+<tr class="separator:aefd8085a3076158896d9eae9917b4be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c1e2b59f09ffc28bed9253f9e2bf0c"><td class="memItemLeft" align="right" valign="top"><a id="af1c1e2b59f09ffc28bed9253f9e2bf0c"></a>
+SizeType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#af1c1e2b59f09ffc28bed9253f9e2bf0c">Write</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, SizeType byteSize, const void *data, SizeType offset=SizeType(-1)) override</td></tr>
+<tr class="memdesc:af1c1e2b59f09ffc28bed9253f9e2bf0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwarded function from the Device when we write to a compressed stream. <br /></td></tr>
+<tr class="separator:af1c1e2b59f09ffc28bed9253f9e2bf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5611c9f76bf029311dac2d22b5574efc"><td class="memItemLeft" align="right" valign="top"><a id="a5611c9f76bf029311dac2d22b5574efc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a5611c9f76bf029311dac2d22b5574efc">WriteSeekPoint</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream) override</td></tr>
+<tr class="memdesc:a5611c9f76bf029311dac2d22b5574efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a seek point. <br /></td></tr>
+<tr class="separator:a5611c9f76bf029311dac2d22b5574efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41121b4477435a9548bdfb40d5ec0df9"><td class="memItemLeft" align="right" valign="top"><a id="a41121b4477435a9548bdfb40d5ec0df9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a41121b4477435a9548bdfb40d5ec0df9">StartCompressor</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream, int compressionLevel, SizeType autoSeekDataSize) override</td></tr>
+<tr class="memdesc:a41121b4477435a9548bdfb40d5ec0df9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set auto seek point even dataSize bytes. <br /></td></tr>
+<tr class="separator:a41121b4477435a9548bdfb40d5ec0df9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73412e79dfa314998095e8f8f65c575e"><td class="memItemLeft" align="right" valign="top"><a id="a73412e79dfa314998095e8f8f65c575e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor_z_lib.html#a73412e79dfa314998095e8f8f65c575e">Close</a> (<a class="el" href="class_a_z_1_1_i_o_1_1_compressor_stream.html">CompressorStream</a> *stream) override</td></tr>
+<tr class="memdesc:a73412e79dfa314998095e8f8f65c575e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called just before we close the stream. All compression data will be flushed and finalized. (You can't add data afterwards). <br /></td></tr>
+<tr class="separator:a73412e79dfa314998095e8f8f65c575e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_i_o_1_1_compressor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_i_o_1_1_compressor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html">AZ::IO::Compressor</a></td></tr>
 <tr class="memitem:a366a7e3ac38d0e42de73ef1c27f93e0b inherit pub_methods_class_a_z_1_1_i_o_1_1_compressor"><td class="memItemLeft" align="right" valign="top"><a id="a366a7e3ac38d0e42de73ef1c27f93e0b"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_i_o_1_1_compressor.html#a366a7e3ac38d0e42de73ef1c27f93e0b">~Compressor</a> ()</td></tr>
@@ -224,7 +224,7 @@ static const int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxHead
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:50 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:12 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

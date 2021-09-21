@@ -266,7 +266,7 @@ The following image shows the corresponding input bindings in the **Input Bindin
 
 ### Using a Script on the Secondary Graph to Toggle Synchronization 
 
-The example uses Lua Script components on both the primary (robot) and secondary (gun) entities. The script on the primary entity controls the firing of the gun. The script on the secondary entity controls the sync mode. To add a Lua script to an entity, add a [Lua Script component](/docs/user-guide/editor/add-lua-script.md) to the entity and then attach the script to the component.
+The example uses Lua Script components on both the primary (robot) and secondary (gun) entities. The script on the primary entity controls the firing of the gun. The script on the secondary entity controls the sync mode. To add a Lua script to an entity, add a [Lua Script component](/docs/user-guide/components/reference/scripting/lua-script/) to the entity and then attach the script to the component.
 
 The Lua script on the gun entity receives the input from the keyboard to toggle the sync mode. To synchronize the secondary graph to the primary graph, the script uses the `SyncAnimGraph` EBus event. In the following example, the `self.entityId` parameter refers to the secondary entity (the gun). The `self.Properties.PrimaryEntity` parameter refers to the robot.
 

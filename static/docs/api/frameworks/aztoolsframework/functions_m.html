@@ -93,8 +93,15 @@ $(function() {
 <li>m_cameraId
 : <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_interaction_id.html#ab6002a77c0debd9ce507d7204daf8811">AzToolsFramework::ViewportInteraction::InteractionId</a>
 </li>
+<li>m_captured
+: <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction_event.html#ac12dba704b1266793f3f8d40aacbcb57">AzToolsFramework::ViewportInteraction::MouseInteractionEvent</a>
+</li>
 <li>m_clusterButtonGroups
 : <a class="el" href="class_az_tools_framework_1_1_viewport_ui_1_1_viewport_ui_manager.html#a27b1545c3de91fd7271822d2b40d1d67">AzToolsFramework::ViewportUi::ViewportUiManager</a>
+</li>
+<li>m_clusterId
+: <a class="el" href="struct_az_tools_framework_1_1_snapping_cluster.html#aae295086061aae6dc05539c738b33295">AzToolsFramework::SnappingCluster</a>
+, <a class="el" href="struct_az_tools_framework_1_1_space_cluster.html#ae68ee60dcecc66877fdd205317dc2031">AzToolsFramework::SpaceCluster</a>
 </li>
 <li>m_color
 : <a class="el" href="struct_az_tools_framework_1_1_editor_viewport_icon_display_interface_1_1_draw_parameters.html#aef549aa7b4a728dd84022da47159ba6b">AzToolsFramework::EditorViewportIconDisplayInterface::DrawParameters</a>
@@ -384,6 +391,12 @@ $(function() {
 <li>m_snapOffset
 : <a class="el" href="struct_az_tools_framework_1_1_surface_manipulator_1_1_start.html#a55c5eab546ced8980e944f35d1371799">AzToolsFramework::SurfaceManipulator::Start</a>
 </li>
+<li>m_snappingHandler
+: <a class="el" href="struct_az_tools_framework_1_1_snapping_cluster.html#a3874b020509b1ec07b2c577d7a6710ee">AzToolsFramework::SnappingCluster</a>
+</li>
+<li>m_snapToWorldButtonId
+: <a class="el" href="struct_az_tools_framework_1_1_snapping_cluster.html#a1d9025e54db17ff8d4432c5ffdc6f8ee">AzToolsFramework::SnappingCluster</a>
+</li>
 <li>m_sourceFile
 : <a class="el" href="struct_az_tools_framework_1_1_asset_system_1_1_job_info.html#a6d911cf9c9ec0f67f71893b5bf0f849b">AzToolsFramework::AssetSystem::JobInfo</a>
 </li>
@@ -393,14 +406,11 @@ $(function() {
 <li>m_space
 : <a class="el" href="struct_az_tools_framework_1_1_angular_manipulator_1_1_start.html#a7ff2970ac91482805d60f12f6676416a">AzToolsFramework::AngularManipulator::Start</a>
 </li>
-<li>m_spaceClusterId
-: <a class="el" href="struct_az_tools_framework_1_1_space_cluster.html#ab26d67ea3b613150d9d22485ac2237b7">AzToolsFramework::SpaceCluster</a>
+<li>m_spaceHandler
+: <a class="el" href="struct_az_tools_framework_1_1_space_cluster.html#ad26101edb81dae55f03d7f9b00b67824">AzToolsFramework::SpaceCluster</a>
 </li>
 <li>m_spaceLock
 : <a class="el" href="struct_az_tools_framework_1_1_space_cluster.html#a6b8f7f0905326aa770753a188371079b">AzToolsFramework::SpaceCluster</a>
-</li>
-<li>m_spaceSelectionHandler
-: <a class="el" href="struct_az_tools_framework_1_1_space_cluster.html#a4fa967025dd989c3256d0478b2572e4f">AzToolsFramework::SpaceCluster</a>
 </li>
 <li>m_statusTip
 : <a class="el" href="struct_az_tools_framework_1_1_action_override.html#ae4beb43584f2b27245db2bb22eae730f">AzToolsFramework::ActionOverride</a>
@@ -477,6 +487,12 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_spline_selection_manipulator.html#a32bd2dc7b8296a0a26a7f921be46bcbc">AzToolsFramework::SplineSelectionManipulator</a>
 , <a class="el" href="class_az_tools_framework_1_1_surface_manipulator.html#acc77b3fbf292bf171eafa62f20ef4fa1">AzToolsFramework::SurfaceManipulator</a>
 </li>
+<li>ManipulatorCircleBoundWidth()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings_requests.html#a27a0e6c83fe27971013b6935575c353b">AzToolsFramework::ViewportInteraction::ViewportSettingsRequests</a>
+</li>
+<li>ManipulatorLineBoundWidth()
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings_requests.html#aa8553869ebe0020ea30ea8c157877a21">AzToolsFramework::ViewportInteraction::ViewportSettingsRequests</a>
+</li>
 <li>ManipulatorViewScaleMultiplier()
 : <a class="el" href="class_az_tools_framework_1_1_manipulator_view.html#a548c7e8923b2a417d369876f9f3f6e3b">AzToolsFramework::ManipulatorView</a>
 </li>
@@ -542,7 +558,7 @@ $(function() {
 : <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_buttons.html#ade86d3329d4009e9ab8b9fd830a7abc0">AzToolsFramework::ViewportInteraction::MouseButtons</a>
 </li>
 <li>MouseInteractionEvent()
-: <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction_event.html#a38c25e27eab3b3f774169daf9d3d84bb">AzToolsFramework::ViewportInteraction::MouseInteractionEvent</a>
+: <a class="el" href="struct_az_tools_framework_1_1_viewport_interaction_1_1_mouse_interaction_event.html#a51ba469367372bbe499241351c8732de">AzToolsFramework::ViewportInteraction::MouseInteractionEvent</a>
 </li>
 <li>MouseOver()
 : <a class="el" href="class_az_tools_framework_1_1_base_manipulator.html#af5dbc38e45b6f4efd4f3ac976bb5e8cf">AzToolsFramework::BaseManipulator</a>
@@ -554,7 +570,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

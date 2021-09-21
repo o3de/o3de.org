@@ -79,10 +79,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_1_1_mesh.html#a3dfae11ba7f63121246c5e5801ad2480">GetIndexCount</a> () const</td></tr>
 <tr class="memdesc:a3dfae11ba7f63121246c5e5801ad2480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of indices in this mesh. <br /></td></tr>
 <tr class="separator:a3dfae11ba7f63121246c5e5801ad2480"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f720dd62bc0111b89682ee270d2c754"><td class="memItemLeft" align="right" valign="top"><a id="a2f720dd62bc0111b89682ee270d2c754"></a>
-const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_1_1_mesh.html#a2f720dd62bc0111b89682ee270d2c754">GetMaterialAsset</a> () const</td></tr>
-<tr class="memdesc:a2f720dd62bc0111b89682ee270d2c754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the reference to material asset used by this mesh. <br /></td></tr>
-<tr class="separator:a2f720dd62bc0111b89682ee270d2c754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c8a3f43210e208aff926211bff95554"><td class="memItemLeft" align="right" valign="top">ModelMaterialSlot::StableId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_1_1_mesh.html#a3c8a3f43210e208aff926211bff95554">GetMaterialSlotId</a> () const</td></tr>
+<tr class="separator:a3c8a3f43210e208aff926211bff95554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a50040a3b70754f14b359728169124b"><td class="memItemLeft" align="right" valign="top"><a id="a4a50040a3b70754f14b359728169124b"></a>
 const AZ::Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_1_1_mesh.html#a4a50040a3b70754f14b359728169124b">GetName</a> () const</td></tr>
 <tr class="memdesc:a4a50040a3b70754f14b359728169124b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this mesh. <br /></td></tr>
@@ -143,6 +141,24 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
+<a id="a3c8a3f43210e208aff926211bff95554"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c8a3f43210e208aff926211bff95554">&#9670;&nbsp;</a></span>GetMaterialSlotId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModelMaterialSlot::StableId AZ::RPI::ModelLodAsset::Mesh::GetMaterialSlotId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the ID of the material slot used by this mesh. This maps into the <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_asset.html">ModelAsset</a>'s material slot list. </p>
+
+</div>
+</div>
 <a id="ab7a79f605ccf298f95c8adc975b1d2b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7a79f605ccf298f95c8adc975b1d2b2">&#9670;&nbsp;</a></span>GetSemanticBufferAssetView()</h2>
 
@@ -189,7 +205,7 @@ template&lt;class T &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

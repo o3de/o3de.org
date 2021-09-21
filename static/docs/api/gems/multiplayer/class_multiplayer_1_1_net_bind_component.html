@@ -105,15 +105,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAllowAutonomy</b> 
 <tr class="memitem:a8b4fe1870390e2f12e542a6dca92e7fc"><td class="memItemLeft" align="right" valign="top"><a id="a8b4fe1870390e2f12e542a6dca92e7fc"></a>
 MultiplayerComponentInputVector&#160;</td><td class="memItemRight" valign="bottom"><b>AllocateComponentInputs</b> ()</td></tr>
 <tr class="separator:a8b4fe1870390e2f12e542a6dca92e7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a927f7aee2e17d23cdf9061eda26cf69f"><td class="memItemLeft" align="right" valign="top"><a id="a927f7aee2e17d23cdf9061eda26cf69f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProcessingInput</b> () const</td></tr>
+<tr class="memitem:a927f7aee2e17d23cdf9061eda26cf69f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#a927f7aee2e17d23cdf9061eda26cf69f">IsProcessingInput</a> () const</td></tr>
 <tr class="separator:a927f7aee2e17d23cdf9061eda26cf69f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd019bd6b430922dae4203ef7b1362a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_net_bind_component.html#adfd019bd6b430922dae4203ef7b1362a">IsReprocessingInput</a> () const</td></tr>
+<tr class="separator:adfd019bd6b430922dae4203ef7b1362a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9bd09a66db791a4bf7118b9a2a4c1e1"><td class="memItemLeft" align="right" valign="top"><a id="aa9bd09a66db791a4bf7118b9a2a4c1e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateInput</b> (<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, float deltaTime)</td></tr>
 <tr class="separator:aa9bd09a66db791a4bf7118b9a2a4c1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc384e2156495d34c1bb4ffacbfb4d84"><td class="memItemLeft" align="right" valign="top"><a id="adc384e2156495d34c1bb4ffacbfb4d84"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessInput</b> (<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, float deltaTime)</td></tr>
 <tr class="separator:adc384e2156495d34c1bb4ffacbfb4d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b41d8cc3c7026e1362f08589ed44f7"><td class="memItemLeft" align="right" valign="top"><a id="a65b41d8cc3c7026e1362f08589ed44f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReprocessInput</b> (<a class="el" href="class_multiplayer_1_1_network_input.html">NetworkInput</a> &amp;networkInput, float deltaTime)</td></tr>
+<tr class="separator:a65b41d8cc3c7026e1362f08589ed44f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86902c195cfbc05d65dd7565038c08fa"><td class="memItemLeft" align="right" valign="top"><a id="a86902c195cfbc05d65dd7565038c08fa"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandleRpcMessage</b> (AzNetworking::IConnection *invokingConnection, NetEntityRole remoteRole, <a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html">NetworkEntityRpcMessage</a> &amp;message)</td></tr>
 <tr class="separator:a86902c195cfbc05d65dd7565038c08fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +160,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyServerMigration
 <tr class="memitem:a73ca347d8ab6c69940559e302b064059"><td class="memItemLeft" align="right" valign="top"><a id="a73ca347d8ab6c69940559e302b064059"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyPreRender</b> (float deltaTime, float blendFactor)</td></tr>
 <tr class="separator:a73ca347d8ab6c69940559e302b064059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52e0612464fbbe03089925114ce357c8"><td class="memItemLeft" align="right" valign="top"><a id="a52e0612464fbbe03089925114ce357c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>NotifyCorrection</b> ()</td></tr>
+<tr class="separator:a52e0612464fbbe03089925114ce357c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a188b879e53e14dc7f06a2e441d0734c0"><td class="memItemLeft" align="right" valign="top"><a id="a188b879e53e14dc7f06a2e441d0734c0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityStopEventHandler</b> (EntityStopEvent::Handler &amp;eventHandler)</td></tr>
 <tr class="separator:a188b879e53e14dc7f06a2e441d0734c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +184,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityServerMigrat
 <tr class="memitem:a474b1116d5f422e7c341736eb24d00b9"><td class="memItemLeft" align="right" valign="top"><a id="a474b1116d5f422e7c341736eb24d00b9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityPreRenderEventHandler</b> (EntityPreRenderEvent::Handler &amp;eventHandler)</td></tr>
 <tr class="separator:a474b1116d5f422e7c341736eb24d00b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70aed24591f906d3dfe31acf29799cfb"><td class="memItemLeft" align="right" valign="top"><a id="a70aed24591f906d3dfe31acf29799cfb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntityCorrectionEventHandler</b> (EntityCorrectionEvent::Handler &amp;handler)</td></tr>
+<tr class="separator:a70aed24591f906d3dfe31acf29799cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa67d336bd7d49deae9c075378fb5c35"><td class="memItemLeft" align="right" valign="top"><a id="afa67d336bd7d49deae9c075378fb5c35"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SerializeEntityCorrection</b> (AzNetworking::ISerializer &amp;serializer)</td></tr>
 <tr class="separator:afa67d336bd7d49deae9c075378fb5c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,13 +335,49 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>EntityReplicationMan
 
 </div>
 </div>
+<a id="a927f7aee2e17d23cdf9061eda26cf69f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a927f7aee2e17d23cdf9061eda26cf69f">&#9670;&nbsp;</a></span>IsProcessingInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Multiplayer::NetBindComponent::IsProcessingInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if we're currently processing inputs. </p><dl class="section return"><dt>Returns</dt><dd>true if we're within ProcessInput scope and writing to predictive state </dd></dl>
+
+</div>
+</div>
+<a id="adfd019bd6b430922dae4203ef7b1362a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd019bd6b430922dae4203ef7b1362a">&#9670;&nbsp;</a></span>IsReprocessingInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Multiplayer::NetBindComponent::IsReprocessingInput </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Return true if we're currently replaying inputs after a correction. If this value returns true, effects, audio, and other cosmetic triggers should be suppressed </p><dl class="section return"><dt>Returns</dt><dd>true if we're within correction scope and replaying inputs </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Multiplayer/Code/Include/Multiplayer/Components/NetBindComponent.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:19 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -74,7 +74,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3bd92a1265571fc803e4c35faa91ec75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95ae0d8807d4f06278dc25ea245e8b6e"><td class="memItemLeft" align="right" valign="top">virtual const AzFramework::CommandLine *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#a95ae0d8807d4f06278dc25ea245e8b6e">GetCommandLineParser</a> ()=0</td></tr>
 <tr class="separator:a95ae0d8807d4f06278dc25ea245e8b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76dd40bf13f5ff795c5efcfd8395ece"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#ab76dd40bf13f5ff795c5efcfd8395ece">GetApplicationName</a> ()=0</td></tr>
+<tr class="memitem:ac5790f25079e410492b5120c4638187a"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#ac5790f25079e410492b5120c4638187a">GetMainModule</a> ()=0</td></tr>
+<tr class="separator:ac5790f25079e410492b5120c4638187a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab76dd40bf13f5ff795c5efcfd8395ece"><td class="memItemLeft" align="right" valign="top"><a id="ab76dd40bf13f5ff795c5efcfd8395ece"></a>
+virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationName</b> ()=0</td></tr>
 <tr class="separator:ab76dd40bf13f5ff795c5efcfd8395ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e485801c94073975235b99bc9afe90c"><td class="memItemLeft" align="right" valign="top"><a id="a2e485801c94073975235b99bc9afe90c"></a>
 virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetApplicationModule</b> ()=0</td></tr>
@@ -155,32 +158,6 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 
 </div>
 </div>
-<a id="ab76dd40bf13f5ff795c5efcfd8395ece"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab76dd40bf13f5ff795c5efcfd8395ece">&#9670;&nbsp;</a></span>GetApplicationName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* LegacyFramework::FrameworkApplicationMessages::GetApplicationName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>(Windows) retrieves the main module of the executable. This is always going to be the main executable except in the situation where the framework may be running as a DLL belonging to another process or program. </p>
-
-</div>
-</div>
 <a id="a95ae0d8807d4f06278dc25ea245e8b6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a95ae0d8807d4f06278dc25ea245e8b6e">&#9670;&nbsp;</a></span>GetCommandLineParser()</h2>
 
@@ -230,6 +207,32 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 <p>Reads the return code set by /ref SetDesiredExitCode. Since the application itself is in control, your void main() can use this function to know what to return in case you're making tools that are used in batches. </p>
+
+</div>
+</div>
+<a id="ac5790f25079e410492b5120c4638187a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5790f25079e410492b5120c4638187a">&#9670;&nbsp;</a></span>GetMainModule()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void* LegacyFramework::FrameworkApplicationMessages::GetMainModule </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>(Windows) retrieves the main module of the executable. This is always going to be the main executable except in the situation where the framework may be running as a DLL belonging to another process or program. </p>
 
 </div>
 </div>
@@ -372,7 +375,7 @@ static const AZ::EBusAddressPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:08 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
