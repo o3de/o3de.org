@@ -47,3 +47,7 @@ Watch these tutorials to get up to speed on Open 3D Engine (O3DE)!
 ## O3DE Script Canvas Overview
 
 {{< youtube id="fTNcUV4zAgE" title="O3DE Script Canvas Overview" >}}
+
+## Contributing to O3DE Documentation
+
+{{< youtube id="DGz9Clo6EKw" title="Contributing to O3DE Documentation" >}}

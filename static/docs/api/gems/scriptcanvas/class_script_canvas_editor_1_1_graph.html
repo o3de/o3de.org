@@ -47,6 +47,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -66,6 +67,13 @@ $(function() {
 
 <p>Inherits <a class="el" href="class_script_canvas_1_1_graph.html">ScriptCanvas::Graph</a>, Handler, Handler, Handler, Handler, Handler, Handler, MultiHandler, Handler, and Handler.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ad775979c50adcbe64d9923c7f1508517"><td class="memItemLeft" align="right" valign="top"><a id="ad775979c50adcbe64d9923c7f1508517"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeRequest</b> { <b>IfOutOfDate</b>, 
+<b>Forced</b>
+ }</td></tr>
+<tr class="separator:ad775979c50adcbe64d9923c7f1508517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaabd168068708d88f3cd4e72b5dc20d4"><td class="memItemLeft" align="right" valign="top"><a id="aaabd168068708d88f3cd4e72b5dc20d4"></a>
@@ -252,9 +260,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearGraphCanvasScene
 <tr class="memitem:a155323726d324dac9ab801b74f64a577"><td class="memItemLeft" align="right" valign="top"><a id="a155323726d324dac9ab801b74f64a577"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DisplayGraphCanvasScene</b> () override</td></tr>
 <tr class="separator:a155323726d324dac9ab801b74f64a577"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a332e702c246abc32d750e44b7a0d6310"><td class="memItemLeft" align="right" valign="top"><a id="a332e702c246abc32d750e44b7a0d6310"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeGraph</b> (const AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &amp;asset)</td></tr>
-<tr class="separator:a332e702c246abc32d750e44b7a0d6310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca59b50d7210e9f3e7bd8a4762a7cef"><td class="memItemLeft" align="right" valign="top"><a id="a6ca59b50d7210e9f3e7bd8a4762a7cef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>UpgradeGraph</b> (const AZ::Data::Asset&lt; AZ::Data::AssetData &gt; &amp;asset, UpgradeRequest request, bool isVerbose=true)</td></tr>
+<tr class="separator:a6ca59b50d7210e9f3e7bd8a4762a7cef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a009fc26b47466305ec2aeb48fee01bcf"><td class="memItemLeft" align="right" valign="top"><a id="a009fc26b47466305ec2aeb48fee01bcf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ConnectGraphCanvasBuses</b> ()</td></tr>
 <tr class="separator:a009fc26b47466305ec2aeb48fee01bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,12 +278,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnGraphCanvasSceneVis
 <tr class="memitem:a95e075674ae22ddc5d3ac8070b0d8144"><td class="memItemLeft" align="right" valign="top"><a id="a95e075674ae22ddc5d3ac8070b0d8144"></a>
 GraphCanvas::GraphId&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphCanvasGraphId</b> () const override</td></tr>
 <tr class="separator:a95e075674ae22ddc5d3ac8070b0d8144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b9105d7221c8fe0f4e64cbb64e48d1c"><td class="memItemLeft" align="right" valign="top"><a id="a8b9105d7221c8fe0f4e64cbb64e48d1c"></a>
-AZStd::unordered_map&lt; AZ::EntityId, GraphCanvas::EntitySaveDataContainer * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphCanvasSaveData</b> ()</td></tr>
-<tr class="separator:a8b9105d7221c8fe0f4e64cbb64e48d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad764a0b92a3e3c74b111fc16aa61687b"><td class="memItemLeft" align="right" valign="top"><a id="ad764a0b92a3e3c74b111fc16aa61687b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateGraphCanvasSaveData</b> (const AZStd::unordered_map&lt; AZ::EntityId, GraphCanvas::EntitySaveDataContainer * &gt; &amp;saveData)</td></tr>
-<tr class="separator:ad764a0b92a3e3c74b111fc16aa61687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6776ced2fd8be6d1afdc0a299441aebf"><td class="memItemLeft" align="right" valign="top"><a id="a6776ced2fd8be6d1afdc0a299441aebf"></a>
+AZStd::unordered_map&lt; AZ::EntityId, GraphCanvas::EntitySaveDataContainer * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphCanvasSaveData</b> () override</td></tr>
+<tr class="separator:a6776ced2fd8be6d1afdc0a299441aebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b14df23683da49f4a2260adc148d22"><td class="memItemLeft" align="right" valign="top"><a id="ad3b14df23683da49f4a2260adc148d22"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateGraphCanvasSaveData</b> (const AZStd::unordered_map&lt; AZ::EntityId, GraphCanvas::EntitySaveDataContainer * &gt; &amp;saveData) override</td></tr>
+<tr class="separator:ad3b14df23683da49f4a2260adc148d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72d200baf893b1e4b090be8522d0950c"><td class="memItemLeft" align="right" valign="top"><a id="a72d200baf893b1e4b090be8522d0950c"></a>
 <a class="el" href="struct_script_canvas_editor_1_1_node_id_pair.html">NodeIdPair</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateCustomNode</b> (const AZ::Uuid &amp;typeId, const AZ::Vector2 &amp;position) override</td></tr>
 <tr class="separator:a72d200baf893b1e4b090be8522d0950c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -475,18 +483,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveDependentAsset<
 <tr class="separator:a65072a249a5bf18eddabe95e974d5d99 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a132dbcd9fbb592cc3ca71326846aa3ee inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top">AZ::Entity *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_script_canvas_1_1_graph.html#a132dbcd9fbb592cc3ca71326846aa3ee">GetGraphEntity</a> () const override</td></tr>
 <tr class="separator:a132dbcd9fbb592cc3ca71326846aa3ee inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa32eae3ec0690a42cfc59582e8095ba8 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="aa32eae3ec0690a42cfc59582e8095ba8"></a>
-<a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraph</b> ()</td></tr>
-<tr class="separator:aa32eae3ec0690a42cfc59582e8095ba8 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3995b0e48e9944eac6e907c0211514 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a4b3995b0e48e9944eac6e907c0211514"></a>
+<a class="el" href="class_script_canvas_1_1_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraph</b> () override</td></tr>
+<tr class="separator:a4b3995b0e48e9944eac6e907c0211514 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a271e39577b19034d1d055f44970431dd inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a271e39577b19034d1d055f44970431dd"></a>
 <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphData</b> () override</td></tr>
 <tr class="separator:a271e39577b19034d1d055f44970431dd inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaebd7e37a9ebd090ea6841613fb1cd0 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="aeaebd7e37a9ebd090ea6841613fb1cd0"></a>
 const <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphDataConst</b> () const override</td></tr>
 <tr class="separator:aeaebd7e37a9ebd090ea6841613fb1cd0 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3b849a6b702db6790d644e990f35f2 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a8d3b849a6b702db6790d644e990f35f2"></a>
-const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableDataConst</b> () const</td></tr>
-<tr class="separator:a8d3b849a6b702db6790d644e990f35f2 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb225a6c51906b630c00f077464d9a48 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="acb225a6c51906b630c00f077464d9a48"></a>
+const <a class="el" href="class_script_canvas_1_1_variable_data.html">VariableData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetVariableDataConst</b> () const override</td></tr>
+<tr class="separator:acb225a6c51906b630c00f077464d9a48 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0a69bcc3053325a758b5c9bc9844805 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="af0a69bcc3053325a758b5c9bc9844805"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddGraphData</b> (const <a class="el" href="struct_script_canvas_1_1_graph_data.html">GraphData</a> &amp;) override</td></tr>
 <tr class="separator:af0a69bcc3053325a758b5c9bc9844805 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,9 +525,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddItem</b> (AZ::Enti
 <tr class="memitem:abdc6fef4ee52a2b375eae601fbc35619 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="abdc6fef4ee52a2b375eae601fbc35619"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveItem</b> (AZ::Entity *itemRef) override</td></tr>
 <tr class="separator:abdc6fef4ee52a2b375eae601fbc35619 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f2ff665aae8fb71e5ed7bf64e51d023 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="a3f2ff665aae8fb71e5ed7bf64e51d023"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateGraph</b> (<a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &amp;validationEvents)</td></tr>
-<tr class="separator:a3f2ff665aae8fb71e5ed7bf64e51d023 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41d7c00dff86a7f73732dfbd2d53421 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="af41d7c00dff86a7f73732dfbd2d53421"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ValidateGraph</b> (<a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &amp;validationEvents) override</td></tr>
+<tr class="separator:af41d7c00dff86a7f73732dfbd2d53421 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd61fb3639a709f8ad6f4580a7e35aa0 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memItemLeft" align="right" valign="top"><a id="abd61fb3639a709f8ad6f4580a7e35aa0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReportValidationResults</b> (<a class="el" href="class_script_canvas_1_1_validation_results.html">ValidationResults</a> &amp;) override</td></tr>
 <tr class="separator:abd61fb3639a709f8ad6f4580a7e35aa0 inherit pub_methods_class_script_canvas_1_1_graph"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -558,9 +566,9 @@ friend&#160;</td><td class="memItemRight" valign="bottom"><b>Node</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa2fb1d44ff2415db3d20502bed222359"><td class="memItemLeft" align="right" valign="top"><a id="aa2fb1d44ff2415db3d20502bed222359"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PostRestore</b> (const <a class="el" href="struct_script_canvas_editor_1_1_undo_data.html">UndoData</a> &amp;restoredData)</td></tr>
-<tr class="separator:aa2fb1d44ff2415db3d20502bed222359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5668e81a44438c4165ae5113fc92ed38"><td class="memItemLeft" align="right" valign="top"><a id="a5668e81a44438c4165ae5113fc92ed38"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PostRestore</b> (const <a class="el" href="struct_script_canvas_editor_1_1_undo_data.html">UndoData</a> &amp;restoredData) override</td></tr>
+<tr class="separator:a5668e81a44438c4165ae5113fc92ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24e4ba7eff9994f964e24363d561d232"><td class="memItemLeft" align="right" valign="top"><a id="a24e4ba7eff9994f964e24363d561d232"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterToast</b> (const GraphCanvas::ToastId &amp;toastId)</td></tr>
 <tr class="separator:a24e4ba7eff9994f964e24363d561d232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -835,7 +843,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetProvidedSer
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:59 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:37 for Open 3D Engine ScriptCanvas Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -64,17 +64,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afcfa83cd4f3ebbe6d5a52d2b163cde9a"><td class="memItemLeft" align="right" valign="top"><a id="afcfa83cd4f3ebbe6d5a52d2b163cde9a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_az_physics_1_1_static_rigid_body.html">StaticRigidBody</a>, &quot;{13A677BB-7085-4EDB-BCC8-306548238692}&quot;, SimulatedBody)</td></tr>
-<tr class="separator:afcfa83cd4f3ebbe6d5a52d2b163cde9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59f0a10a49c979fce987399fffd39620"><td class="memItemLeft" align="right" valign="top"><a id="a59f0a10a49c979fce987399fffd39620"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddShape</b> (const AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt; &amp;shape)=0</td></tr>
+<tr class="memitem:a2f835ae1c27a0ee9a0ba196d246e1269"><td class="memItemLeft" align="right" valign="top"><a id="a2f835ae1c27a0ee9a0ba196d246e1269"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="struct_az_physics_1_1_static_rigid_body.html">AzPhysics::StaticRigidBody</a>, &quot;{13A677BB-7085-4EDB-BCC8-306548238692}&quot;, AzPhysics::SimulatedBody)</td></tr>
+<tr class="separator:a2f835ae1c27a0ee9a0ba196d246e1269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f0a10a49c979fce987399fffd39620"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_static_rigid_body.html#a59f0a10a49c979fce987399fffd39620">AddShape</a> (const AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt; &amp;shape)=0</td></tr>
 <tr class="separator:a59f0a10a49c979fce987399fffd39620"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad206869dc9bca7c6fc4b5292839f5b14"><td class="memItemLeft" align="right" valign="top"><a id="ad206869dc9bca7c6fc4b5292839f5b14"></a>
-virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><b>GetShapeCount</b> ()</td></tr>
+<tr class="memitem:ad206869dc9bca7c6fc4b5292839f5b14"><td class="memItemLeft" align="right" valign="top">virtual AZ::u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_static_rigid_body.html#ad206869dc9bca7c6fc4b5292839f5b14">GetShapeCount</a> ()</td></tr>
 <tr class="separator:ad206869dc9bca7c6fc4b5292839f5b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8dbe92135ec44e66fe7047fd1672f07"><td class="memItemLeft" align="right" valign="top"><a id="aa8dbe92135ec44e66fe7047fd1672f07"></a>
-virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetShape</b> ([[maybe_unused]]AZ::u32 index)</td></tr>
+<tr class="memitem:aa8dbe92135ec44e66fe7047fd1672f07"><td class="memItemLeft" align="right" valign="top">virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_static_rigid_body.html#aa8dbe92135ec44e66fe7047fd1672f07">GetShape</a> ([[maybe_unused]]AZ::u32 index)</td></tr>
 <tr class="separator:aa8dbe92135ec44e66fe7047fd1672f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_struct_az_physics_1_1_simulated_body"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_struct_az_physics_1_1_simulated_body')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="struct_az_physics_1_1_simulated_body.html">AzPhysics::SimulatedBody</a></td></tr>
 <tr class="memitem:a90c289263bbbc9d0386fbe9dbaaf78d5 inherit pub_methods_struct_az_physics_1_1_simulated_body"><td class="memItemLeft" align="right" valign="top"><a id="a90c289263bbbc9d0386fbe9dbaaf78d5"></a>
@@ -177,13 +174,105 @@ static constexpr uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Static rigid body. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a59f0a10a49c979fce987399fffd39620"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59f0a10a49c979fce987399fffd39620">&#9670;&nbsp;</a></span>AddShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzPhysics::StaticRigidBody::AddShape </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shape</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Add a shape to the static rigid body. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shape</td><td>A shared pointer of the shape to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa8dbe92135ec44e66fe7047fd1672f07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8dbe92135ec44e66fe7047fd1672f07">&#9670;&nbsp;</a></span>GetShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZStd::shared_ptr&lt;<a class="el" href="class_physics_1_1_shape.html">Physics::Shape</a>&gt; AzPhysics::StaticRigidBody::GetShape </td>
+          <td>(</td>
+          <td class="paramtype">[[maybe_unused] ]AZ::u32&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns a shared pointer to the requested shape index. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>The index of the shapes to return. Expected to be between 0 and <a class="el" href="struct_az_physics_1_1_static_rigid_body.html#ad206869dc9bca7c6fc4b5292839f5b14">GetShapeCount()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns a shared pointer of the shape requested or nullptr if index is out of bounds. </dd></dl>
+
+</div>
+</div>
+<a id="ad206869dc9bca7c6fc4b5292839f5b14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad206869dc9bca7c6fc4b5292839f5b14">&#9670;&nbsp;</a></span>GetShapeCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual AZ::u32 AzPhysics::StaticRigidBody::GetShapeCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the number of shapes that make up this static rigid body. </p><dl class="section return"><dt>Returns</dt><dd>Returns the number of shapes as a AZ::u32. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Physics/SimulatedBodies/StaticRigidBody.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:49 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

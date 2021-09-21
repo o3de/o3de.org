@@ -123,6 +123,12 @@ AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bo
 const <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_layout.html">ConstantsLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a975d58384ae7cd9ccc878d0bb8daa528">GetLayout</a> () const</td></tr>
 <tr class="memdesc:a975d58384ae7cd9ccc878d0bb8daa528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the constants layout. <br /></td></tr>
 <tr class="separator:a975d58384ae7cd9ccc878d0bb8daa528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d31c3370ec56f18c5023338e213e004"><td class="memItemLeft" align="right" valign="top"><a id="a1d31c3370ec56f18c5023338e213e004"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#a1d31c3370ec56f18c5023338e213e004">ConstantIsEqual</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html">ConstantsData</a> &amp;other, <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex) const</td></tr>
+<tr class="memdesc:a1d31c3370ec56f18c5023338e213e004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether other constant data and this have the same value at the specified shader input index. <br /></td></tr>
+<tr class="separator:a1d31c3370ec56f18c5023338e213e004"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30f84485550348243c2611c4f94ebe3"><td class="memItemLeft" align="right" valign="top">AZStd::vector&lt; <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html#af30f84485550348243c2611c4f94ebe3">GetIndicesOfDifferingConstants</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html">ConstantsData</a> &amp;other) const</td></tr>
+<tr class="separator:af30f84485550348243c2611c4f94ebe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5be591507c8de1f5d0a2550fdcd9f5cb"><td class="memItemLeft" align="right" valign="top"><a id="a5be591507c8de1f5d0a2550fdcd9f5cb"></a>
 template&lt;&gt; </td></tr>
 <tr class="memitem:a5be591507c8de1f5d0a2550fdcd9f5cb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>SetConstant</b> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a> inputIndex, const bool &amp;value)</td></tr>
@@ -260,13 +266,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="af30f84485550348243c2611c4f94ebe3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30f84485550348243c2611c4f94ebe3">&#9670;&nbsp;</a></span>GetIndicesOfDifferingConstants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::vector&lt;<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShaderInputConstantIndex</a>&gt; AZ::RHI::ConstantsData::GetIndicesOfDifferingConstants </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_constants_data.html">ConstantsData</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Performs a diff between this and input constant data and returns a list of all the shader input indices for which the constants are not the same between the two. If one of the two has more constants than the other, these additional constants will be added to the end of the returned list. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/ConstantsData.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:19 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:52 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -58,24 +58,33 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a405eb57bc49cce0ec6e329126a90612a"><td class="memItemLeft" align="right" valign="top"><a id="a405eb57bc49cce0ec6e329126a90612a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreResourceMappingToolAction</b> (const QString &amp;text)</td></tr>
-<tr class="separator:a405eb57bc49cce0ec6e329126a90612a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17360160d996e2ae0fab5fe588f5fb02"><td class="memItemLeft" align="right" valign="top"><a id="a17360160d996e2ae0fab5fe588f5fb02"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreResourceMappingToolAction</b> (const QString &amp;text, QObject *parent=nullptr)</td></tr>
+<tr class="separator:a17360160d996e2ae0fab5fe588f5fb02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542c605305515dd6469f4d622c4335fc"><td class="memItemLeft" align="right" valign="top"><a id="a542c605305515dd6469f4d622c4335fc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitAWSCoreResourceMappingToolAction</b> ()</td></tr>
+<tr class="separator:a542c605305515dd6469f4d622c4335fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbd756d2e4707e1c8b6b5022b17f7e19"><td class="memItemLeft" align="right" valign="top"><a id="afbd756d2e4707e1c8b6b5022b17f7e19"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetToolLaunchCommand</b> () const</td></tr>
 <tr class="separator:afbd756d2e4707e1c8b6b5022b17f7e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9eebc6fe099f0fb0660dd1e09cdc705"><td class="memItemLeft" align="right" valign="top"><a id="ac9eebc6fe099f0fb0660dd1e09cdc705"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetToolLogPath</b> () const</td></tr>
-<tr class="separator:ac9eebc6fe099f0fb0660dd1e09cdc705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9f1e3cac07542ebbcc6e1e78c0dad88"><td class="memItemLeft" align="right" valign="top"><a id="af9f1e3cac07542ebbcc6e1e78c0dad88"></a>
+AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetToolLogFilePath</b> () const</td></tr>
+<tr class="separator:af9f1e3cac07542ebbcc6e1e78c0dad88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4a2f4f5c8be60e9fd793fb7bcd015cc"><td class="memItemLeft" align="right" valign="top"><a id="af4a2f4f5c8be60e9fd793fb7bcd015cc"></a>
 AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>GetToolReadMePath</b> () const</td></tr>
 <tr class="separator:af4a2f4f5c8be60e9fd793fb7bcd015cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
+<tr class="memitem:a43487b9282829e4f45a8a9f5b3979ca5"><td class="memItemLeft" align="right" valign="top"><a id="a43487b9282829e4f45a8a9f5b3979ca5"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>AWSCoreResourceMappingToolActionName</b> [] = &quot;AWSCoreResourceMappingToolAction&quot;</td></tr>
+<tr class="separator:a43487b9282829e4f45a8a9f5b3979ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdbcd090d25261e8773ed26b80f49ae3"><td class="memItemLeft" align="right" valign="top"><a id="acdbcd090d25261e8773ed26b80f49ae3"></a>
 static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceMappingToolDirectoryPath</b> [] = &quot;Gems/AWSCore/Code/Tools/ResourceMappingTool&quot;</td></tr>
 <tr class="separator:acdbcd090d25261e8773ed26b80f49ae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722941ae5ad6d60b4330530d9de5d616"><td class="memItemLeft" align="right" valign="top"><a id="a722941ae5ad6d60b4330530d9de5d616"></a>
+static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>ResourceMappingToolLogDirectoryPath</b> [] = &quot;user/log/&quot;</td></tr>
+<tr class="separator:a722941ae5ad6d60b4330530d9de5d616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5c70f0c19e6f8aa3e849a9b30bb579"><td class="memItemLeft" align="right" valign="top"><a id="a9f5c70f0c19e6f8aa3e849a9b30bb579"></a>
 static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><b>EngineWindowsPythonEntryScriptPath</b> [] = &quot;python/python.cmd&quot;</td></tr>
 <tr class="separator:a9f5c70f0c19e6f8aa3e849a9b30bb579"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,7 +95,7 @@ static constexpr const char&#160;</td><td class="memItemRight" valign="bottom"><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:10 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:41 for Open 3D Engine AWSCore Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

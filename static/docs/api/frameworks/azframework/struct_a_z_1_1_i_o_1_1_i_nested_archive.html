@@ -85,16 +85,7 @@ Public Types</h2></td></tr>
 <br />
 &#160;&#160;<b>FLAGS_CREATE_NEW</b> = 1 &lt;&lt; 4, 
 <b>FLAGS_DONT_COMPACT</b> = 1 &lt;&lt; 5, 
-<b>FLAGS_IN_MEMORY</b> = 1 &lt;&lt; 6, 
-<b>FLAGS_IN_MEMORY_CPU</b> = 1 &lt;&lt; 7, 
-<br />
-&#160;&#160;<b>FLAGS_IN_MEMORY_MASK</b> = FLAGS_IN_MEMORY | FLAGS_IN_MEMORY_CPU, 
-<b>FLAGS_FILENAMES_AS_CRC32</b> = 1 &lt;&lt; 8, 
-<b>FLAGS_ON_HDD</b> = 1 &lt;&lt; 9, 
-<b>FLAGS_OVERRIDE_PAK</b> = 1 &lt;&lt; 10, 
-<br />
-&#160;&#160;<b>FLAGS_DISABLE_PAK</b> = 1 &lt;&lt; 11, 
-<b>FLAGS_INSIDE_PAK</b> = 1 &lt;&lt; 12
+<b>FLAGS_DISABLE_PAK</b> = 1 &lt;&lt; 11
 <br />
  }</td></tr>
 <tr class="separator:a55ad2822f17fbee54b9a72dcc51721f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,9 +128,9 @@ virtual uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileSi
 <tr class="memitem:a51c47b304f13583caa8d4367ea7340f1"><td class="memItemLeft" align="right" valign="top"><a id="a51c47b304f13583caa8d4367ea7340f1"></a>
 virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadFile</b> (Handle, void *pBuffer)=0</td></tr>
 <tr class="separator:a51c47b304f13583caa8d4367ea7340f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd6a1fd4df8b83b243099e561971851"><td class="memItemLeft" align="right" valign="top"><a id="a4cd6a1fd4df8b83b243099e561971851"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullPath</b> () const =0</td></tr>
-<tr class="separator:a4cd6a1fd4df8b83b243099e561971851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6bd9124bba2f22981a0acaca9fdd8e"><td class="memItemLeft" align="right" valign="top"><a id="aca6bd9124bba2f22981a0acaca9fdd8e"></a>
+virtual AZ::IO::PathView&#160;</td><td class="memItemRight" valign="bottom"><b>GetFullPath</b> () const =0</td></tr>
+<tr class="separator:aca6bd9124bba2f22981a0acaca9fdd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc7d6971b4e269d8720b81a4eddbe18f"><td class="memItemLeft" align="right" valign="top"><a id="adc7d6971b4e269d8720b81a4eddbe18f"></a>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetFlags</b> () const =0</td></tr>
 <tr class="separator:adc7d6971b4e269d8720b81a4eddbe18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +153,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadOnly</b> () con
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:21 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -100,8 +100,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a66d208bc3e3d91b14312dc13be7da131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade1138199f46276ff9e2094c116f9298"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#ade1138199f46276ff9e2094c116f9298">GetConnectionMtu</a> () const override</td></tr>
 <tr class="separator:ade1138199f46276ff9e2094c116f9298"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa59053d5f44393c6f7b2d2d8809d0c32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#aa59053d5f44393c6f7b2d2d8809d0c32">SetConnectionQuality</a> (const <a class="el" href="struct_az_networking_1_1_connection_quality.html">ConnectionQuality</a> &amp;connectionQuality) override</td></tr>
-<tr class="separator:aa59053d5f44393c6f7b2d2d8809d0c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5769fe8490f76e62e359f3bd84bebcde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#a5769fe8490f76e62e359f3bd84bebcde">SetRegisteredSocketFd</a> (SocketFd registeredSocketFd)</td></tr>
 <tr class="separator:a5769fe8490f76e62e359f3bd84bebcde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382eef1d4855e44aaa89ff3169e70d04"><td class="memItemLeft" align="right" valign="top">SocketFd&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_tcp_connection.html#a382eef1d4855e44aaa89ff3169e70d04">GetRegisteredSocketFd</a> () const</td></tr>
@@ -123,6 +121,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a9a85aabcc2f3988cb600883a942d0313 inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18ad2536194f218190147705a04fe8f inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_networking_1_1_connection_metrics.html">ConnectionMetrics</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection.html#ab18ad2536194f218190147705a04fe8f">GetMetrics</a> ()</td></tr>
 <tr class="separator:ab18ad2536194f218190147705a04fe8f inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b95a6e7a46a3514101d46b07b2171e7 inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_az_networking_1_1_connection_quality.html">ConnectionQuality</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection.html#a5b95a6e7a46a3514101d46b07b2171e7">GetConnectionQuality</a> () const</td></tr>
+<tr class="separator:a5b95a6e7a46a3514101d46b07b2171e7 inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a29d4f3e4137b14568ae3063b8bc82d inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_az_networking_1_1_connection_quality.html">ConnectionQuality</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection.html#a0a29d4f3e4137b14568ae3063b8bc82d">GetConnectionQuality</a> ()</td></tr>
+<tr class="separator:a0a29d4f3e4137b14568ae3063b8bc82d inherit pub_methods_class_az_networking_1_1_i_connection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>connection layer for TCP connection management. </p>
@@ -561,40 +563,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="aa59053d5f44393c6f7b2d2d8809d0c32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa59053d5f44393c6f7b2d2d8809d0c32">&#9670;&nbsp;</a></span>SetConnectionQuality()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AzNetworking::TcpConnection::SetConnectionQuality </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_az_networking_1_1_connection_quality.html">ConnectionQuality</a> &amp;&#160;</td>
-          <td class="paramname"><em>connectionQuality</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Sets connection quality values for testing poor connection conditions. Currently unsupported on TcpConnections </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">connectionQuality</td><td>simulated connection quality values to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="class_az_networking_1_1_i_connection.html#ac9e4f50cf2f7f41bd2715edee7bb798a">AzNetworking::IConnection</a>.</p>
-
-</div>
-</div>
 <a id="a5769fe8490f76e62e359f3bd84bebcde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5769fe8490f76e62e359f3bd84bebcde">&#9670;&nbsp;</a></span>SetRegisteredSocketFd()</h2>
 
@@ -719,7 +687,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:28 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:53 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

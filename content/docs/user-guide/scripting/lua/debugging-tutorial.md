@@ -1,181 +1,145 @@
 ---
-description: ' Use the Lua Editor to author, debug, and edit Lua scripts in Open 3D Engine. '
-title: Debugging tutorial with Lua Editor
+linkTitle: Debugging with the Lua Editor
+title: Debugging with the Lua Editor
+description: Use the Lua Editor to debug Lua scripts in Open 3D Engine.
+toc: true
+weight: 900
 ---
 
-O3DE Lua Editor (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but can be opened directly from O3DE Editor using the Tools menu.
+O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but can be opened directly from **O3DE Editor** using the Tools menu.
 
-## Tutorial: Using Lua Editor for Debugging with O3DE Editor 
+## Tutorial: Using Lua Editor for debugging with O3DE Editor 
 
-{{< todo issue="https://github.com/o3de/o3de.org/issues/671" >}}
-Update this Lua debugging tutorial with newer instructions that do not require the Samples Project.
-{{< /todo >}}
+This tutorial shows you how to use O3DE Lua Editor to perform debugging operations on a sample script.
 
-This tutorial shows you how to use O3DE Editor to create a sample level in the **SamplesProject** project with a component entity that contains a Lua script component. You will learn how to open the script in Lua Editor and perform some sample debugging steps on the script.
+1. Open Lua Editor from the **Tools** menu.  
 
-**Debugging Lua scripts using Lua Editor**
+1. Select **New** from the **File** menu to create a new Lua script.
 
-1. Set the **SamplesProject** as the default project using **Project Manager**.
+1. **Copy** and **Paste** the following code into the new script.
 
-1. In O3DE Editor, create a new level by performing *one* of the following steps:
-   + In the **Welcome to O3DE Editor** window, click **New level**
-   + Click **File**, **New**
-   + Press **Ctrl+N**
+    ```lua
+    -- ConstantRotation.lua
+    
+    local ConstantRotation =
+    {
+        Properties =
+            {
+            Rotation = { default = Vector3(0, 0, 90), description = "Constant rotation (in degrees) to apply over time." },
+            },
+    }
 
-1. In the **New Level** dialog box, give the level a name, and then click **OK**.
+    function ConstantRotation:OnActivate()
+        self.rotationRadians = self.Properties.Rotation;
+        self.rotationRadians.x = Math.DegToRad(self.rotationRadians.x);
+        self.rotationRadians.y = Math.DegToRad(self.rotationRadians.y);
+        self.rotationRadians.z = Math.DegToRad(self.rotationRadians.z);
+        self.tickBusHandler = TickBus.Connect(self)
+    end
 
-1. In **Asset Browser**, expand **SamplesProject**, **Objects**, and **SamplesAssets**.
+    function ConstantRotation:OnTick(deltaTime, timePoint)
+        TransformBus.Event.RotateAroundLocalX(self.entityId, self.rotationRadians.x * deltaTime);
+        TransformBus.Event.RotateAroundLocalY(self.entityId, self.rotationRadians.y * deltaTime);
+        TransformBus.Event.RotateAroundLocalZ(self.entityId, self.rotationRadians.z * deltaTime);
+    end
 
-1. Drag **mover\_display\_smooth.cgf** to the perspective viewport.
+    function ConstantRotation:OnDeactivate()
+        self.tickBusHandler:Disconnect()
+    end
+
+    return ConstantRotation
+    ```
+    
+1. **Save** the script as `ConstantRotation.lua` in your project's directory.
+
+1. **Close** Lua Editor.
+
+1. In **Entity Outliner**, **left-click** an entity to add a **Lua Script** component to.
 
 1. In **Entity Inspector**, click **Add Component**, and then choose **Scripting**, **Lua Script**.
 
-1. In the **Entity Inspector** window, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field.
+1. In **Entity Inspector**, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field.
 
-![Open the Pick Lua Script window from the Lua Script component](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
-
-1. In the **Pick Lua Script** window, expand **SamplesProject**, **Scripts**, and **Components**.
-
-1. Click **ConstantRotation.lua**, and then click **OK**.
+    ![Open the Pick Lua Script window from the Lua Script component](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
+    
+1. In the **Pick Lua Script** window, select `ConstantRotation.lua` and click **OK**.
 
 1. In the **Lua Script** component, click the **Open in Lua Editor** button to launch Lua Editor.
 
-![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
+    ![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
 
-   Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
-**Note**
-Connection is facilitated by GridHub, which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.
+    Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
+    
+    {{< note >}}
+Connection is facilitated by **GridHub**, which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.
+{{< /note >}}
 
 1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor(*ID*)** to connect to O3DE Editor.
 
-![Target selector](/images/user-guide/lua-editor-debugger-target-editor.png)
-**Note**
+    ![Target selector](/images/user-guide/scripting/lua/lua-editor-debugger-target-editor.png)
+    
+    {{< note >}}
 You may need to expand the Lua Editor window to see the buttons on the Lua Editor toolbar for the next few steps.
+{{< /note >}}
 
 1. In the Lua Editor toolbar, leave **Context** setting at **Default** for the debugging context. The default setting is good for debugging component entity scripts such as the one in this tutorial.
 
-![Context selector](/images/user-guide/lua-editor-debugger-context-choose.png)
+    ![Context selector](/images/user-guide/scripting/lua/lua-editor-debugger-context-choose.png)
 
 1. The **Debugging** icon turns green to show that Lua Editor and O3DE Editor are connected:
 
-![Lua Editor connected to O3DE Editor](/images/user-guide/lua-editor-debugger-connected-icon.png)
+    ![Lua Editor connected to O3DE Editor](/images/user-guide/scripting/lua/lua-editor-debugger-connected-icon.png)
 
-   Click **Classes** in the **Class Reference** to show the available Lua libraries. You can do the same for **EBuses** and **Globals**.
-
-   ![Classes Reference](/images/user-guide/lua-editor-debugger-class-reference-pane.png)
-
-   ![Classes](/images/user-guide/lua-editor-debugger-class-reference-pane-open.png)
-**Note**
+    Click **Classes** in the **Class Reference** to show the available Lua libraries. You can do the same for **EBuses** and **Globals**.
+    
+    ![Classes Reference](/images/user-guide/scripting/lua/lua-editor-debugger-class-reference-pane.png)
+    
+    ![Classes](/images/user-guide/scripting/lua/lua-editor-debugger-class-reference-pane-open.png)
+    
+    {{< note >}}
 The class reference feature is active only for the default context and component entity scripts.
+{{< /note >}}
 
-   After you connect, you can pause the execution of a given script by setting breakpoints.
+    After you connect, you can pause the execution of a given script by setting breakpoints.
 
-1. In the Lua Editor toolbar, click the **Breakpoints** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-breakpoints-icon.png) to show the **Breakpoints** window.
+1. In the Lua Editor toolbar, click the **Breakpoints** icon ![Breakpoints Icon](/images/user-guide/scripting/lua/lua-editor-debugger-breakpoints-icon.png) to show the **Breakpoints** window.
 
 1. In Lua Editor, click one or more line numbers in the `constantrotation.lua` script to set one or more breakpoints. As you add breakpoints, the line number and script path for each are added to the **Breakpoints** window.
 
 1. In O3DE Editor, press **Ctrl+G** to run the game, or click the **Simulate** icon at the bottom of the viewport to enable game simulation and run scripts. Lua Editor opens with a yellow marker stopped on the first breakpoint that it encounters.
 
-![Debugger stopped on breakpoint](/images/user-guide/lua-editor-debugger-stopped-on-breakpoint.png)
+    ![Debugger stopped on breakpoint](/images/user-guide/scripting/lua/lua-editor-debugger-stopped-on-breakpoint.png)
 
-   When execution is halted at a breakpoint, more information becomes available in the **Lua Locals**, **Stack**, and **Watched Variables** panes.
+    When execution is halted at a breakpoint, more information becomes available in the **Lua Locals**, **Stack**, and **Watched Variables** panes.
 
-1. Click the **Stack** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-stack-icon.png) to show the **Stack** window.
+1. Click the **Stack** icon ![Stack Icon](/images/user-guide/scripting/lua/lua-editor-debugger-stack-icon.png) to show the **Stack** window.
 
-1. Click the **Lua Locals** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-lua-locals-icon.png) to show local Lua variables.
+1. Click the **Lua Locals** icon ![Lua Locals Icon](/images/user-guide/scripting/lua/lua-editor-debugger-lua-locals-icon.png) to show local Lua variables.
 
-1. Click **Watched Variables** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-watched-variables-icon.png) to open the **Watched Variables** window, where you can specify variables to watch.
+1. Click **Watched Variables** icon ![Watched Variables Icon](/images/user-guide/scripting/lua/lua-editor-debugger-watched-variables-icon.png) to open the **Watched Variables** window, where you can specify variables to watch.
 
 1. Press **F11** a few times to step through the code. Note how the contents of the **Stack**, **Lua Locals**, and **Watched Variables** windows change.
-**Tip**
+
+{{< note >}}
 For greater convenience, you can float or dock these windows.
+{{< /note >}}
 
 1. To detach from debugging, click **Debugging**.
 
-![Click to detach from debugging](/images/user-guide/lua-editor-debugger-detach-icon.png)
+    ![Click to detach from debugging](/images/user-guide/scripting/lua/lua-editor-debugger-detach-icon.png)
 
 1. In O3DE Editor, Press **Esc** to stop the game.
 
-### Options Available While Debugging 
+### Options available while debugging 
 
 The following table summarizes common options available while debugging.
 
-
-****
-
 | **Icon** | **Action** | **Keyboard Shortcut** | **Description** |
 | --- | --- | --- | --- |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-run-in-editor.png) | Run in Editor | Alt+F5 | Run in O3DE Editor. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-run-on-target.png) | Run on Target | Ctrl+F5 | Send script to the connected target and run it. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-run-continue.png) | Run/Continue | F5 | Run or continue running the current script. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-step-into.png) | Step Into | F11 | Step into the function called on the current line. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-step-out.png) | Step Out | Shift+F11 | Step out of the called function. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-step-over.png) | Step Over | F10 | Step over the function called on the current line. |
-| ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | F9 | Enable or disable a breakpoint on the current line. |
-
-## Maintaining Separate Search Results 
-
-In addition to the usual search capabilities, the **Find** feature can display the results of four different searches separately.
-
-**To maintain separate search results**
-
-1. Click the **Find** icon ![Image NOT FOUND](/images/user-guide/lua-editor-debugger-find-results-icon.png) or press **Ctrl+F** to perform searches in the currently open file, or in all open files.
-
-![Lua Editor Find dialog](/images/user-guide/lua-editor-debugger-find-dialog.png)
-
-1. Before starting a search, choose **Find 1**, **Find 2**, **Find 3**, or **Find 4** to choose the window in which you want to see the results. You can maintain the results of four searches separately in the tabbed windows. The search results in the other windows remain unchanged.
-
-![Find Results](/images/user-guide/lua-editor-debugger-find-results-window.png)
-
-1. To go directly to the line in the code which a search result was found, double-click the line in the search results.
-**Note**
-In Lua Editor Preview, the line number shown in the **Find Results** window and the line number in the script pane differ by one.
-**Tip**
-For convenience, you can also dock or float the **Find Results** window.
-
-## Editing 
-
-Lua Editor can open multiple scripts at the same time. Each script has its own tab in the editor. The editor provides a standard set of capabilities for text editing but also includes useful features for editing source code.
-
-The following table summarizes the options available while editing and debugging.
-
-
-****
-
-| **Action** | **Keyboard Shortcut** |
-| --- | --- |
-| Comment selected block | Ctrl+K |
-| Copy | Ctrl+C |
-| Cut | Ctrl+X |
-| Find | Ctrl+F |
-| Find in open files | Ctrl+Shift+F |
-| Find next | F3 |
-| Fold source functions | Alt+0 |
-| Go to line | Ctrl+G |
-| Paste | Ctrl+V |
-| Quick find local | Ctrl+F3 |
-| Quick find local reverse | Ctrl+Shift+F3 |
-| Redo | Ctrl+Y |
-| Replace | Ctrl+R |
-| Replace in open files | Ctrl+Shift+R |
-| Select all | Ctrl+A |
-|  Select to brace¹  | Ctrl+Shift+\] |
-| Transpose lines down | Ctrl+Shift+Down Arrow |
-| Transpose lines up | Ctrl+Shift+Up Arrow |
-| Uncomment selected block | Ctrl+Shift+K |
-| Undo | Ctrl+Z |
-| Unfold source functions | Alt+Shift+0 |
-
-¹ Select to brace selects a block bounded by braces. Before using this option, the cursor must be immediately next to the beginning or ending brace of the block.
-
-## Perforce Integration 
-
-Lua Editor includes Perforce integration features. When you open a file from your Perforce environment, Lua Editor displays the file's status in the top right of the text editing window.
-
-![Not Checked Out](/images/user-guide/lua-editor-debugger-p4-not-checked-out.png)
-
-![Checked Out By You](/images/user-guide/lua-editor-debugger-p4-checked-out-by-you.png)
-
-The **Source Control** menu offers **Check Out/Check In** functionality.
-
-![Source Control Menu](/images/user-guide/lua-editor-debugger-check-out-icon.png)
+| ![Run in Editor Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-in-editor.png) | Run in Editor | **Alt+F5** | Run in O3DE Editor. |
+| ![Run on Target Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-on-target.png) | Run on Target | **Ctrl+F5** | Send script to the connected target and run it. |
+| ![Run/Continue Icon](/images/user-guide/scripting/lua/lua-editor-debugger-run-continue.png) | Run/Continue | **F5** | Run or continue running the current script. |
+| ![Step Into Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-into.png) | Step Into | **F11** | Step into the function called on the current line. |
+| ![Step Out Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-out.png) | Step Out | **Shift+F11** | Step out of the called function. |
+| ![Step Over Icon](/images/user-guide/scripting/lua/lua-editor-debugger-step-over.png) | Step Over | **F10** | Step over the function called on the current line. |
+| ![Toggle Breakpoint Icon](/images/user-guide/scripting/lua/lua-editor-debugger-toggle-breakpoint.png) | Toggle Breakpoint | **F9** | Enable or disable a breakpoint on the current line. |

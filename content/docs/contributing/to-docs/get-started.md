@@ -27,6 +27,10 @@ Some documentation, such as **API Reference**, is generated automatically. Some 
 Participation as a contributor requires a [GitHub account](https://github.com/signup).
 {{< /note >}}
 
+Don't want to read tiresome words, and prefer a snappy video to help you get started? Watch this video, instead!
+
+{{< youtube id="DGz9Clo6EKw" title="Contributing to O3DE Documentation" >}}
+
 ## Technical information
 
 The o3de.org site uses the [Hugo static site generator](https://gohugo.io/). Documentation for O3DE uses [Goldmark](https://www.markdownguide.org/tools/hugo/), a CommonMark compliant Markdown processor. Contributing to O3DE documentation is easy, quick, and requires no prior experience with web development. The documentation source files are easy to read and require very few markdown elements. For information on setting up an environment so that you can contribute to O3DE documentation, see [O3DE documentation repository](./o3de-docs-repo-setup).
