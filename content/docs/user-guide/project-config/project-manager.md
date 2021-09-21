@@ -58,7 +58,7 @@ bin\Windows\profile\o3de.exe
 ```
 
 {{< important >}}
-If you built the engine from source using the `INSTALL` target, make sure that you launch Project Manager from the installed engine's build directory, _not_ the engine's build directory. This is important because the engine that Project Manager uses for various operations (creating new projects, for example) is determined based on the location of the `o3de.exe` application.
+If you built the engine from source using the `INSTALL` target, make sure that you launch Project Manager from the installed engine's build directory, _not_ the engine's build directory. This is important, because the engine that Project Manager uses for various operations, such as creating new projects, is determined based on the location of the `o3de.exe` application.
 {{< /important >}}
 
 {{% /tab %}}
@@ -85,7 +85,7 @@ When one or more projects are registered on your computer, the **New Project...*
 | Action | Description |
 | - | - |
 | **Create New Project** | Starts the new project workflow. |
-| **Add Existing Project** | Opens a "Select Project Directory" browse dialog box, from which you can add an existing O3DE project to Project Manager. This will also register the project in your O3DE manifest. |
+| **Add Existing Project** | Opens a **Select Project Directory** browse dialog box, from which you can add an existing O3DE project to Project Manager. This will also register the project in your O3DE manifest. |
 
 Each project is represented by its project icon **(2)** and a project display name **(3)**. Messages and buttons relevant to the current state of the project appear inside the project icon rectangle. Underneath each project's icon is the project context drop-down menu **(4)** containing actions that can be performed on that project.
 
@@ -99,7 +99,7 @@ The project context menu contains the following actions:
 | - | - |
 | **Edit Project Settings** | Opens the project settings screen, from which you can change selected project settings and configure which Gems are enabled for your project. |
 | **Build** | Builds the project. |
-| **Open Project folder** | Opens the project folder in a file explorer window on your computer. |
+| **Open Project folder** | Opens the project folder in a File Explorer window on your computer. |
 | **Duplicate** | Creates a duplicate of the project (without the build folder) in a directory of your choosing. It also registers the new project in the O3DE manifest in your user folder. Note that the project display name of the duplicate project will be the same as the original. You can update the display name in Project Settings. |
 | **Remove from O3DE** | Removes the project from Project Manager and the O3DE manifest, but does not delete the project from disk. |
 | **Delete this Project** | Removes the project from Project Manager and the O3DE manifest _and deletes the project from disk_. |
@@ -109,7 +109,7 @@ The project context menu contains the following actions:
 The **Engine** tab contains settings from the engine manifest and the O3DE manifest. The default folder locations are editable on this screen.
 
 {{< note >}}
-The `.o3de` directory in your user folder is the default location for all of the default folders. If you have limited drive space in your user folder, consider changing some of these default folder locations–particularly the "3rd Party Software Folder", which will contain several GB of downloaded packages after creating your first project.
+The `.o3de` directory in your user folder is the default location for all of the default folders. If you have limited drive space in your user folder, consider changing some of these default folder locations–particularly the "3rd Party Software Folder," which will contain several GB of downloaded packages after creating your first project.
 {{< /note >}}
 
 ![Engine tab with default values](/images/user-guide/project-config/project-manager/engine-tab.png)
@@ -126,13 +126,13 @@ The Engine tab contains the following O3DE settings:
 
 ### Project details
 
-The **Enter Project Details** screen is part of the new project workflow. On this screen you can set the project's name and location on your computer. You can also choose the project template, which defines the initial set of Gems that are enabled in your new project. You can further refine the initial set of Gems using the **Configure Gems** button.
+The **Enter Project Details** screen is part of the new project workflow. On this screen, you can set the project's name and location on your computer. You can also choose the project template, which defines the initial set of Gems that are enabled in your new project. You can further refine the initial set of Gems using the **Configure Gems** button.
 
 ![Create a New Project - Project Details screen](/images/welcome-guide/project-manager-create-project.png)
 
 ### Project settings
 
-The **Edit Project Settings** menu action in the project context menu opens the **Edit Project Settings** screen. On this screen you can change the project's display name and update the project's icon. These settings and more are stored in the `project.json` file located at the root of your project directory. You can also change the set of Gems that are enabled for your project using the **Configure Gems** button.
+The **Edit Project Settings** menu action in the project context menu opens the **Edit Project Settings** screen. On this screen, you can change the project's display name and update the project's icon. These settings and other information are stored in the `project.json` file located at the root of your project directory. You can also change the set of Gems that are enabled for your project using the **Configure Gems** button.
 
 ![Edit Project Settings screen](/images/user-guide/project-config/project-manager/project-settings.png)
 
@@ -146,6 +146,6 @@ The Edit Project Settings screen contains the following project settings:
 
 ### Configure gems
 
-The **Configure Gems** screen enables you to change the collection of Gems that are enabled in your project. This screen can be opened during the new project workflow (from the Enter Project Details screen) or from the Edit Project Settings screen of an existing project. You can use the Gem Catalog in the Configure Gems screen to find and enable new Gems for your project. Refer to [Adding and Removing Gems in a Project](./add-remove-gems) for instructions on using Configure Gems.
+The **Configure Gems** screen enables you to change the collection of Gems that are enabled in your project. You can open this screen during the new project workflow, from the **Enter Project Details** screen, or from the **Edit Project Settings** screen of an existing project. You can use the Gem Catalog in the **Configure Gems** screen to find and enable new Gems for your project. Refer to [Adding and Removing Gems in a Project](./add-remove-gems) for instructions on using Configure Gems.
 
 ![Configure Gems screen](/images/user-guide/project-config/add-remove-gems/configure-gems-screen.png)
