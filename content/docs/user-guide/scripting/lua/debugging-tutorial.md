@@ -48,7 +48,7 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
     end
 
     return ConstantRotation
-    ```F
+    ```
     
 1. **Save** the script as `ConstantRotation.lua` in your project's directory.
 
