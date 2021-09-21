@@ -1,10 +1,11 @@
 ---
-title: "Packaging and release"
+title: "Building a Windows Release (Manual Process)"
+linktitle: "Windows Release"
 description: Learn how to package and build your project for release with Open 3D Engine (O3DE) on Windows. 
 toc: true
 ---
 
-The tutorial on this page guides you through the manual process of packaging and building an **Open 3D Engine (O3DE)** project for release on Windows platforms. A *release build* of your project is a standalone application that you can distribute. It uses packaged assets to load all of the contents that make up a project, such as its code, shaders, levels, and other assets.
+This tutorial guides you through the manual process of packaging and building an **Open 3D Engine (O3DE)** project for release on Windows. A *release build* of your project is a standalone application that you can distribute. It uses packaged assets to load all of the contents that make up a project, such as its code, shaders, levels, and other assets.
 
 The instructions here guide you through the following steps:
 - Create a release build for your O3DE project.
