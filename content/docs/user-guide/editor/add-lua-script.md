@@ -1,27 +1,27 @@
 ---
-description: ' Use the Lua Script component to add script functionality to your game
-  entities in Open 3D Engine. '
+linkTitle: Adding Lua Scripts
+description: Use the Lua Script component to add script functionality to your game entities in Open 3D Engine.
 title: Adding Lua Scripts to Component Entities
+toc: true
+weight: 150
 ---
 
-O3DE makes it easy for you to add script functionality to your game entities by using the **Lua Script** component. The following steps show you how to do this in O3DE Editor.
+O3DE makes it easy for you to add script functionality to your game entities by using the **Lua Script** component. The following steps show you how to do this in **O3DE Editor**.
 
 **To add a Lua script to a component entity in O3DE Editor**
 
-1. With the **Entity Inspector** view pane visible, select the entity in the viewport.
+1. With the **Entity Outliner** view pane visible, **left-click** the entity that you want to add a Lua script to.
 
-1. Click **Add Component**, and then open **Scripting**, **Lua Script**.
+1. Click **Add Component**, in the `Scripting` category of the drop-down menu, select **Lua Script**.
 
-![Click Add Component](/images/user-guide/scripting/lua/lua-scripting-ces-1.png)
+    ![Lua Script component](/images/user-guide/scripting/lua/add-lua-component.png)
 
-1. Scroll down to the **Scripting** section, and then click **Lua Script**.
+1. A **Lua Script** component appears in **Entity Inspector**. Use the **Browse Directory** button to select the Lua script from the file hierarchy that you want to use.
 
-![Click Lua Script](/images/user-guide/scripting/lua/lua-scripting-ces-2.png)
+    ![Browse directory for Lua script](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
 
-1. A **Lua Script** component appears in the inspector. Use the file selection button (**...**) to select the Lua script from the file hierarchy that you want to use.
+    {{< note >}}
+You can select either a `.lua` file (a text copy of the original), or a `.luac` file (a precompiled version of the script). The functionality should be the same. The precompiled version is preferable because it loads faster and is usually smaller. However, you can use`.lua` files if you experience any issues.
+{{< /note >}}
 
-![Lua Script component](/images/user-guide/scripting/lua/lua-scripting-ces-3.png)
-
-   You can select either a `.lua` file (a text copy of the original), or a `.luac` file (a precompiled version of the script). The functionality should be the same. The precompiled version is preferable because it loads faster and is usually smaller. However, you can use`.lua` files if you experience any issues.
-
-1. After the script is loaded, click **Edit Script** (**\{\}**) to launch the Lua IDE and make changes to your script.
+1. After the script is loaded, click **Open in Lua Editor** to launch the **Lua Editor** and make changes to your script.
