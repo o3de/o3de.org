@@ -35,7 +35,7 @@ Although CMake supports Unix Make Files on Linux, we recommend that you use Ninj
 
 
 ### Multiple Config Builds
-The following command generates a build folder, `build/linux`, under the root of the project folder, $O3DE_PROJECT, by using Ninja as the build generator and clang-12 as the compiler.
+The following command generates a build folder, `build/linux`, under the root of the project folder, $O3DE_PROJECT_PATH, by using Ninja as the build generator and clang-12 as the compiler.
 
 ```shell
 
