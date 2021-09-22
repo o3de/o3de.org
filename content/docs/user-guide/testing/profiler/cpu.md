@@ -9,16 +9,20 @@ The CPU profiler gathers usage statistics about how long a function or method ex
 **To use the CPU profiler**
 
 1. To open the detail view for the CPU profiler, click the **Detailed Profiling Information** icon for the **CPU** profiler instance.
-![\[CPU details icon\]](/images/user-guide/profiler-cpu-details-icon.png)
+
+![CPU details icon](/images/user-guide/profiler-cpu-details-icon.png)
 
    The CPU details view has a graph of CPU usage, a toolbar, and a tree view of calls made in a frame. Each call in the tree view has the same color as its corresponding line in the graph:
-![\[CPU details view\]](/images/user-guide/profiler-cpu-details-view.png)
+
+   ![CPU details view](/images/user-guide/profiler-cpu-details-view.png)
 
 1. Pause your mouse on a line in the graph to see the call that the line represents and to display the specific value for the graph at the area near the cursor.
-![\[Using the CPU graph\]](/images/user-guide/profiler-cpu-graph-pause.png)
+
+![Using the CPU graph](/images/user-guide/profiler-cpu-graph-pause.png)
 
 1. To show or hide the line graph of a row in the tree, double-click the row.
-![\[Double-click a row to show or hide its graph\]](/images/user-guide/profiler-cpu-row-double-click.png)
+
+![Double-click a row to show or hide its graph](/images/user-guide/profiler-cpu-row-double-click.png)
 
 ## Understanding the Tree View 
 
@@ -64,7 +68,7 @@ The thread on which this function was executed
 
 You can use the toolbar to control how the captured CPU data is displayed:
 
-![\[CPU graph toolbar\]](/images/user-guide/profiler-cpu-graph-toolbar-left.png)
+![CPU graph toolbar](/images/user-guide/profiler-cpu-graph-toolbar-left.png)
 
 **Hide Selected**
 Hide the graph of the rows selected in tree view.
@@ -86,17 +90,17 @@ Expands all rows in the tree view hierarchy.
 
 The right side of the toolbar offers more options:
 
-![\[CPU graph toolbar, right\]](/images/user-guide/profiler-cpu-graph-toolbar-right.png)
+![CPU graph toolbar, right](/images/user-guide/profiler-cpu-graph-toolbar-right.png)
 
 **All Threads**
 Use the thread selector to control which threads are shown in the tree view and in the graph:
 
-![\[Thread selector\]](/images/user-guide/profiler-cpu-thread-selector.png)
+![Thread selector](/images/user-guide/profiler-cpu-thread-selector.png)
 
 **Incl. Time**
 Use this selector to choose the meaning of the time displayed.
 
-![\[Time selector\]](/images/user-guide/profiler-cpu-thread-incl-time.png)
+![Time selector](/images/user-guide/profiler-cpu-thread-incl-time.png)
 + **Incl. Time** - (Inclusive time) The time spent in this function inclusively.
 + **Excl. Time** - (Exclusive time) The time spent in this function exclusively.
 + **Calls** - The number of times this function was called in the frame.
@@ -106,7 +110,7 @@ Use this selector to choose the meaning of the time displayed.
 ***<number>* Frames**
 Use this selector to choose how frames of history are displayed in the graph:
 
-![\[Frame count selector\]](/images/user-guide/profiler-cpu-number-of-frames-to-display.png)
+![Frame count selector](/images/user-guide/profiler-cpu-number-of-frames-to-display.png)
 
 **Delta**
 Unused option.
@@ -117,4 +121,4 @@ When selected, maintains the approximate zoom level (number of frames displayed)
 **Flat View**
 Flattens the tree of function calls (removes the hierarchical indentation), as in the following image:
 
-![\[Flat View\]](/images/user-guide/profiler-cpu-flat-view.png)
+![Flat View](/images/user-guide/profiler-cpu-flat-view.png)

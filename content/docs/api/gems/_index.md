@@ -3,10 +3,10 @@ title: O3DE Gem API reference
 description: Reference index for Gems shipped with Open 3D Engine.
 ---
 
-{{< preview-new >}}
 
 * [AWSClientAuth](/docs/api/gems/AWSClientAuth)
 * [AWSCore](/docs/api/gems/AWSCore)
+* [AWSGameLift](/docs/api/gems/AWSGameLift)
 * [AWSMetrics](/docs/api/gems/AWSMetrics)
 * [Achievements](/docs/api/gems/Achievements)
 * [AssetMemoryAnalyzer](/docs/api/gems/AssetMemoryAnalyzer)
@@ -17,7 +17,7 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [AtomTressFX](/docs/api/gems/AtomTressFX)
 * [AudioEngineWwise](/docs/api/gems/AudioEngineWwise)
 * [AudioSystem](/docs/api/gems/AudioSystem)
-* [AutomatedLauncherTesting](/docs/api/gems/AutomatedLauncherTesting)
+* [BarrierInput](/docs/api/gems/BarrierInput)
 * [Blast](/docs/api/gems/Blast)
 * [Camera](/docs/api/gems/Camera)
 * [CameraFramework](/docs/api/gems/CameraFramework)
@@ -60,7 +60,6 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [PrimitiveAssets](/docs/api/gems/PrimitiveAssets)
 * [PythonAssetBuilder](/docs/api/gems/PythonAssetBuilder)
 * [QtForPython](/docs/api/gems/QtForPython)
-* [RADTelemetry](/docs/api/gems/RADTelemetry)
 * [SaveData](/docs/api/gems/SaveData)
 * [SceneLoggingExample](/docs/api/gems/SceneLoggingExample)
 * [SceneProcessing](/docs/api/gems/SceneProcessing)
@@ -75,6 +74,7 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [StartingPointInput](/docs/api/gems/StartingPointInput)
 * [StartingPointMovement](/docs/api/gems/StartingPointMovement)
 * [SurfaceData](/docs/api/gems/SurfaceData)
+* [Terrain](/docs/api/gems/Terrain)
 * [TestAssetBuilder](/docs/api/gems/TestAssetBuilder)
 * [TextureAtlas](/docs/api/gems/TextureAtlas)
 * [TickBusOrderViewer](/docs/api/gems/TickBusOrderViewer)

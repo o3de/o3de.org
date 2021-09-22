@@ -47,7 +47,7 @@ Serializers are a useful way to provide custom data formats. If you want to do c
 
 To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface. Use the interface to override how data is handled as it is streamed into its persistent format. You can also use the interface to determine the actions that occur when the reflected object is serialized (read or written).
 
-The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp`\) provides a good example of a custom serializer. To save a UUID value, the code writes it directly into the stream. This part of the code is straightforward.
+The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp)` provides a good example of a custom serializer. To save a UUID value, the code writes it directly into the stream. This part of the code is straightforward.
 
 ```
 /// Store the class data into a binary buffer
@@ -471,7 +471,7 @@ if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(
 
 You can use the serialization context to provide data from an external source during serialization. These external sources of data are called *data overlays*.
 
-To create a data overlay, you implement an [EBus](/docs/user-guide/engine/ebus/_index.md) through which the data is serialized. The following example is the code that implements unit testing for the data overlay feature \(`\dev\Code\Framework\AzCore\Tests\Serialization.cpp`\):
+To create a data overlay, you implement an [EBus](/docs/user-guide/engine/ebus/) through which the data is serialized. The following example is the code that implements unit testing for the data overlay feature \(`\dev\Code\Framework\AzCore\Tests\Serialization.cpp`\):
 
 ```
 struct DataOverlayTestStruct

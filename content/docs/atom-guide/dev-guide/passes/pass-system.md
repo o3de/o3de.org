@@ -94,7 +94,7 @@ Atom provides the following render passes that implement the most common use cas
 
 ## Code Side: Creating Passes
 
-In the pass creation process, there are three components involved: `Pass`, `Pass System`, `Pass Template`, and `Pass Request`. When creating passes, the pass system uses the information defined in a pass template to create an instance of a pass. A pass request can be used to tell the pass system to create a pass. This section goes into detail about each component's role.
+In the pass creation process, there are four components involved: `Pass`, `Pass System`, `Pass Template`, and `Pass Request`. When creating passes, the pass system uses the information defined in a pass template to create an instance of a pass. A pass request can be used to tell the pass system to create a pass. This section goes into detail about each component's role.
 
 ### Pass
 To create a pass, there are two properties involved: Name and Pass Descriptor. (Pass is defined earlier [here](#pass).)
@@ -117,7 +117,7 @@ To use a pass in the render pipeline, the associated pass template must first be
 
 ### Pass Template
 
-*Related to: [PassTemplate API](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_template.html), [Pass Template File Specification](pass-template-file-spec.md)*
+*Related to: [PassTemplate API](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_template.html), [Pass Template File Specification](pass-template-file-spec/)*
 
 **Pass templates** provide data that allows the pass system to create an instance of a pass. 
 Pass templates can be authored in C++ or through a JSON file. 

@@ -7,7 +7,7 @@ toc: true
 
 Use a toggle switch to enable users to quickly switch between two states with a minimum of effort. The state will be clearly reflected back to them and persisted across sessions.
 
-![\[component toggle switch style\]](/images/tools-ui/component-toggle-switch-style.png)
+![component toggle switch style](/images/tools-ui/component-toggle-switch-style.png)
 
 ## Usage guidelines<a name="toggle-switch-usage"></a>
 
@@ -25,7 +25,7 @@ Avoid these design choices when using toggle switches:
 
 ## Basic toggle switch<a name="toggle-switch-basic"></a>
 
-![\[component toggle switch basic\]](/images/tools-ui/component-toggle-switch-basic.png)
+![component toggle switch basic](/images/tools-ui/component-toggle-switch-basic.png)
 
 Toggle switches are implemented using the **QCheckBox** Qt class. The toggle switch style is then applied using the static function, `AzQtComponents::CheckBox::applyToggleSwitchStyle()`.
 
@@ -60,4 +60,4 @@ Relevant Qt documentation includes the following topics:
 ## Related links<a name="checkbox-related-links"></a>
 
 For additional information related to the **toggle switch** component, see the following topics:
-+  [Checkbox](uidev-checkbox-component.md)
++  [Checkbox](uidev-checkbox-component/)

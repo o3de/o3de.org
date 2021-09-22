@@ -5,7 +5,7 @@ description: ' Open 3D Engine (O3DE) Spline component reference. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
+
 
 The **Spline** component creates a line that is 4 meters long, with 4 points. The point positions are defined in the local space of the entity. The spline's length, segments, and shape can be defined using the component's **Spline Type** property and **Edit** functionality. Splines are curves that connect two or more points and can be used as paths for animated entities or as a backbone for components such as the [Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/) component.
 
@@ -66,7 +66,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## SplineComponentRequestBus ##
 
-Use the following request functions with the `BoxShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Spline component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/components/reference/shape/vertex-container.md) for more information.
+Use the following request functions with the `BoxShapeComponentRequestBus` EBus interface to communicate with other components of your game. The Spline component also uses `VertexContainer` functions. See [Vertex Container](/docs/user-guide/components/reference/shape/vertex-container/) for more information.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|

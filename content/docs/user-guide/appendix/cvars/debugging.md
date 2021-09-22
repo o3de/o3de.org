@@ -25,7 +25,8 @@ The viewport window displays debugging information by default when you are in ga
 + `e_Camerafreeze 1` - Freezes the camera to see what is rendered from the camera's point of view and what is occluded. Also useful for debugging object culling and LOD.
 + `e_DefaultMaterial 1` - Applies a uniform, flat, gray material to every surface in the level.
 + `e_memoryProfiling 1` - Prints onscreen statistics for the amount of GPU memory that textures and buffers use.
-![\[Using the e_memoryProfiling console variable to display VRAM usage.\]](/images/user-guide/debugging-debug-views-vram-usage.png)
+
+![Using the e_memoryProfiling console variable to display VRAM usage.](/images/user-guide/debugging-debug-views-vram-usage.png)
 + `e_TerrainBBoxes` - Displays terrain bounding boxes.
 + `p_debug_joints 1` - Shows the mass of objects in kilograms and the joint that is linked to the object. To display joints, you must first enable `p_draw_helpers 1`.
 + `p_draw_helpers 1` - Shows physics proxy meshes in addition to the render geometry.

@@ -1,22 +1,24 @@
 ---
 title: "Features"
-description: "Learn about graphics features in the Atom renderer"
+description: "Learn about graphics features in Atom Renderer, the graphics engine integrated into Open 3D Engine (O3DE)."
 toc: true
 weight: 400
----
+---  
 
-This section provides a high-level overview of graphics features that the Atom renderer supports. Some of these features are also implemented in Open 3D Engine (O3DE), so you can add rendering effects to your project. 
+This section provides a high-level overview of graphics features that **Atom Renderer** supports. Some of these features are implemented in **Open 3D Engine (O3DE)**, so you can add rendering effects to your project.
 
 
 ## Anti-aliasing
+*Aliasing*, the appearance of jagged edges, is a common problem in rendered images. Aliasing is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this problem. Atom implements three anti-aliasing techniques: Multisampling Anti-aliasing (MSAA), Subpixel Morphological Anti-aliasing (SMAA), and Temporal Anti-aliasing (TAA).
 
-A common problem in rendered images is aliasing, or the appearance of jagged edges, which is a result of rasterizing smooth curves into pixels. There are a number of anti-aliasing techniques that help mitigate this issue. Atom implements two anti-aliasing techniques: Multisampling Anti-aliasing (MSAA) and Subpixel Morphological Anti-aliasing (SMAA). 
-Multisampling Anti-aliasing (MSAA)   
-: MSAA is an anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default. 
+Multisampling Anti-aliasing (MSAA)
+: An anti-aliasing technique that is based off of Supersampling Anti-aliasing (SSAA), another technique where samples are rendered at high-resolution and then down-sampled to low-resolution. MSAA is an optimized version of SSAA. Whereas SSAA samples each individual pixel, MSAA samples from groups of pixels, effectively decreasing the number of calculations. MSAA provides the best results, but still has a high performance cost. In Atom, MSAA is enabled by default.
 
 Subpixel Morphological Anti-aliasing (SMAA)  
-: An image-based, post-processing anti-aliasing technique that implements a combination of morphological anti-aliasing and multi-/super- sampling anti-aliasing strategies. It is more efficient than MSAA, but provides less quality. SMAA can be enabled and configured in the file `SMAAConfiguration.azasset`. 
+: An image-based, post-processing anti-aliasing technique that implements a combination of morphological anti-aliasing and multisampling/supersampling anti-aliasing strategies. It is more efficient than MSAA, but provides lower quality. You can enable and configure SMAA in the file `SMAAConfiguration.azasset`.
 
+Temporal Anti-aliasing (TAA)
+: A type of supersampling that takes samples from different locations within a pixel each frame and combines them with samples from previous frames to create a supersampled image. You can also use contrast adaptive sharpening to reduce blurs that TAA may introduce. For more information, refer to [Temporal Anti-Aliasing](taa/) and [Contrast Adaptive Sharpening](cas/).
 
 ## Lighting
 
@@ -66,7 +68,7 @@ Exposure and Eye Adaptation
 *Related to: [Exposure Control component](/docs/user-guide/components/reference/atom/exposure-control/)*
 
 
-Global Skydome (IBL)   
+Global Skylight (IBL)   
 : An image-based global illumination effect that calculates lighting for a scene using an HDR skybox image.
 
 *Related to: [Global Skylight (IBL) component](/docs/user-guide/components/reference/atom/global-skylight-ibl)*
@@ -81,7 +83,7 @@ Global Skydome (IBL)
  Decal   
 : Non-repeating materials that are projected onto the surface of an object. Decals can be used to apply all manner of unique surface details including painted insignias, chipping, dirt, rust, and more.
 
-*Related to: [Decal component](/docs/user-guide/components/reference/atom/decal.md), [Decal Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_decal_feature_processor_interface.html)*
+*Related to: [Decal component](/docs/user-guide/components/reference/atom/decal/), [Decal Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_decal_feature_processor_interface.html)*
 
 
 ## Meshes
@@ -99,7 +101,7 @@ Atom has a unified mesh format with support for several mesh types:
 Tone Mapping and Color Grading   
 : Techniques that adjust the overall lighting and color in a scene. Tone mapping simulates high dynamic range (HDR) by mapping one set of colors to another set that has a higher range. Color grading adjusts the color output of the render. There are two color grading modes: HDR Color Grading and LDR Color Grading. Tone mapping and color grading can be configured in O3DE using the **Display Mapper**. You can also view a demo of tone mapping and color grading in the Atom Sample Viewer. 
 
-*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
+*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping)*
 
 Post-processing Volumes   
 : Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
@@ -122,7 +124,7 @@ Deferred Fog
 Depth of Field   
 : A post-processing effect that uses a point-of-focus and distance to simulate lens effects of real world cameras that focus on a specific area. Atom handles depth of field effects using shader passes.
 
-*Related to: [Depth of Field component](/docs/user-guide/components/reference/atom/depth-of-field.md)* 
+*Related to: [Depth of Field component](/docs/user-guide/components/reference/atom/depth-of-field/)* 
 
 
 Screen Space Ambient Occlusion (SSAO)   

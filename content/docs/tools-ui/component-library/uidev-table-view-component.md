@@ -7,7 +7,7 @@ toc: true
 
 Use the **table view** component to present multiple columns of structured data in a table format. By default, this component employs sortable columns and "zebra striping" - where the background color of rows alternate - to help you create an easily readable, scannable, and sortable presentation of data.
 
-![\[component table view example\]](/images/tools-ui/component-table-view-example.png)
+![component table view example](/images/tools-ui/component-table-view-example.png)
 
 {{< note >}}
 `AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows.
@@ -15,12 +15,12 @@ Use the **table view** component to present multiple columns of structured data 
 
 ## Basic table view<a name="table-view-basic"></a>
 
-![\[component table view basic\]](/images/tools-ui/component-table-view-basic.png)
+![component table view basic](/images/tools-ui/component-table-view-basic.png)
 
 Create a simple logging table view.
 
 {{< note >}}
-If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
+If a table view is combined with a [tree view](uidev-tree-view-component), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
 {{< /note >}}
 
  **Example**

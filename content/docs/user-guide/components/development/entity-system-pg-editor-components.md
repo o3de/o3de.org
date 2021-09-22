@@ -114,15 +114,10 @@ To draw debug visuals in the viewport for a specific entity, implement the `Disp
 void DisplayEntityViewport(const AzFramework::ViewportInfo& viewportInfo, AzFramework::DebugDisplayRequests& debugDisplay) override;
 ```
 
-
-****
-
 | Parameter | Description |
 | --- | --- |
 | viewportInfo | Determines information such as camera position. |
 | debugDisplay | Contains the interface for debug draw or display commands. |
-
-lala
 
 ### The BuildGameEntity Method
 

@@ -7,7 +7,7 @@ toc: true
 
 Use comboboxes to offer users a list of options from a dropdown menu. You define whether or not the input box is editable. An editable input box allows the user to type in a value *or* select a value from the dropdown menu.
 
-![\[component combobox style\]](/images/tools-ui/component-combobox-style.png)
+![component combobox style](/images/tools-ui/component-combobox-style.png)
 
 ## Usage guidelines<a name="combobox-usage"></a>
 
@@ -17,7 +17,7 @@ Follow these guidelines as you design your UI with comboboxes:
 
 1.  Use a dropdown list to give the user an option to make a single choice from a set of mutually exclusive options.
 
-1.  Use a dropdown list when the number of options is greater than 2 and less than "a lot". When you have only one or two options, use a [radio button](uidev-radio-button-component.md) group instead. It's difficult to prescribe an upper limit on the number of options, because it depends on context. However, it is acceptable to have a long list of choices when users are likely to be familiar with them and the options are well-ordered and easily scannable to the eye.
+1.  Use a dropdown list when the number of options is greater than 2 and less than "a lot". When you have only one or two options, use a [radio button](uidev-radio-button-component/) group instead. It's difficult to prescribe an upper limit on the number of options, because it depends on context. However, it is acceptable to have a long list of choices when users are likely to be familiar with them and the options are well-ordered and easily scannable to the eye.
 
 1.  Set a default value that most users would likely select. If you choose not to use a default value, include strong and clear placeholder text instead, such as "select size".
 
@@ -28,7 +28,7 @@ Avoid these design choices when using comboboxes:
 
 ## Basic combobox<a name="combobox-basic"></a>
 
-![\[component combobox basic\]](/images/tools-ui/component-combobox-basic.png)
+![component combobox basic](/images/tools-ui/component-combobox-basic.png)
 
 Set up and control comboboxes in Qt Designer or in code.
 
@@ -59,7 +59,7 @@ comboBox->setDisabled(true);
 
 ## Combobox with validator<a name="combobox-validator"></a>
 
-![\[component combobox validator\]](/images/tools-ui/component-combobox-validator.png)
+![component combobox validator](/images/tools-ui/component-combobox-validator.png)
 
 In the following example, a simple validator has been defined. When validation fails, an error icon appears in the combobox's input box.
 

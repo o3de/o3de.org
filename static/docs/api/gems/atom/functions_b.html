@@ -64,8 +64,7 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_morph_target_meta_asset_creator.html#a159521b29f46ad5a18fb0a4d4cdf5f1c">AZ::RPI::MorphTargetMetaAssetCreator</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_resource_pool_asset_creator.html#a9fb211013dac2e20dbd1aac0551f573f">AZ::RPI::ResourcePoolAssetCreator</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a2059e8f6c0e237f79b01298ea05e400f">AZ::RPI::ShaderAssetCreator</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset_creator.html#a90f99f939984212a7ff6a21c63002c31">AZ::RPI::ShaderResourceGroupAssetCreator</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html#a92f50c104781450a54ccafdfdb03d2e5">AZ::RPI::ShaderVariantAssetCreator</a>
+, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_asset_creator.html#a0d763cbfd6f19cb0801a2d62d0567e22">AZ::RPI::ShaderVariantAssetCreator</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_variant_tree_asset_creator.html#aabb6db3072aa5125d8f656f0dfba79d7">AZ::RPI::ShaderVariantTreeAssetCreator</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_skin_meta_asset_creator.html#aa2ed93d131f2788eec282bd3a76a3334">AZ::RPI::SkinMetaAssetCreator</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_streaming_image_asset_creator.html#a370b8a70066be9dc6b388407b146ee7b">AZ::RPI::StreamingImageAssetCreator</a>
@@ -76,7 +75,6 @@ $(function() {
 </li>
 <li>BeginAPI()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a21fb9bec6dd851535f3ce09ca020cbc2">AZ::RPI::ShaderAssetCreator</a>
-, <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset_creator.html#acd8e65a80f8e154fa6e7d155f20c2bf9">AZ::RPI::ShaderResourceGroupAssetCreator</a>
 </li>
 <li>BeginCollect()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_object_factory_base.html#a9e05b610b5087e5793daa62cf0a124d0">AZ::RHI::ObjectFactoryBase&lt; ObjectType &gt;</a>
@@ -87,13 +85,19 @@ $(function() {
 <li>BeginContext()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_frame_graph_execute_group.html#ac37707dba282043c44e2eb6e160b11b8">AZ::RHI::FrameGraphExecuteGroup</a>
 </li>
+<li>BeginContinuousCapture()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html#aa3c684f0e50b45ac22b5e0b14d003fc4">AZ::RHI::CpuProfiler</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#aeaa6199c77cb66145bd3a4a6381da25c">AZ::RHI::CpuProfilerImpl</a>
+</li>
+<li>BeginContinuousCpuProfilingCapture()
+: <a class="el" href="class_a_z_1_1_render_1_1_profiling_capture_requests.html#a703867c3df5ae1af54b61cfc4c20d63b">AZ::Render::ProfilingCaptureRequests</a>
+</li>
 <li>BeginCulling()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_culling_scene.html#a8de95a9da4fb69d1b5f581b9edc1ccde">AZ::RPI::CullingScene</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html#a409abf79778331ef71bfe40bae1ad1bd">AZ::RPI::View</a>
 </li>
 <li>BeginEdit()
-: <a class="el" href="class_material_editor_1_1_material_document_requests.html#ae7f685a363af571374bc2b6e8aedbbf7">MaterialEditor::MaterialDocumentRequests</a>
-, <a class="el" href="class_shader_management_console_1_1_shader_management_console_document_requests.html#a8eba2d31047a265e02a0381f972b80cf">ShaderManagementConsole::ShaderManagementConsoleDocumentRequests</a>
+: <a class="el" href="class_atom_tools_framework_1_1_atom_tools_document_requests.html#a17b76f0ce69a61e90bd82423ae0a3369">AtomToolsFramework::AtomToolsDocumentRequests</a>
 </li>
 <li>BeginFrame()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a76fa236e181a4ed8ff593308ed32f221">AZ::RHI::Device</a>
@@ -128,12 +132,15 @@ $(function() {
 <li>BeginSection()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_reload_debug_tracker.html#a7b8cceddce4c1229853810ca76e6cbef">AZ::RPI::ShaderReloadDebugTracker</a>
 </li>
+<li>BeginSupervariant()
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset_creator.html#a24b0ecb5404a6f839a8cf3eeeda79085">AZ::RPI::ShaderAssetCreator</a>
+</li>
 <li>BeginTimeRegion()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html#a2144fed75f2b2d30f2a0905ebf8aeff6">AZ::RHI::CpuProfiler</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#a6b9cd08e1d079d4ea42b9786c7511737">AZ::RHI::CpuProfilerImpl</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#a3b73c242d0c08de26db4428d14d2c891">AZ::RHI::CpuProfilerImpl</a>
 </li>
 <li>BufferFrameAttachment()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_frame_attachment.html#a8aaeb1657f23cf0f9f060577c3bd734d">AZ::RHI::BufferFrameAttachment</a>
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_frame_attachment.html#a0a4e5934fd79e763afeb48b9615d5c56">AZ::RHI::BufferFrameAttachment</a>
 </li>
 <li>Build()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_ray_tracing_shader_table.html#a3b996f87fb6962d9ce4306606c1ceafb">AZ::RHI::RayTracingShaderTable</a>
@@ -161,7 +168,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:24 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:58 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

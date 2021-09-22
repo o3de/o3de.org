@@ -3,9 +3,9 @@ description: ' How JSON types convert to internal O3DE data types. '
 title: Data types in serialized JSON
 ---
 
- In addition to primitive C++ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C++ type. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](/docs/userguide/programming/serialization/json-serialize-deserialize#serialization-json-serialize).
+In addition to primitive C++ types that map directly to JSON types, O3DE supports serializing many `AZStd` library objects. JSON output and deserialized objects are entirely deterministic based on the appropriate C++ type. For some more information on how members are registered and how their types are determined through the reflection system, see [JSON serialization](json-serialize-deserialize/#serialization).
 
- This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C++ types.
+This topic is a reference of the types supported by O3DE serialization and deserialization, how the serializer maps them by default, and information on how JSON types are coerced back to C++ types.
 
 ## Primitives 
 
@@ -31,7 +31,7 @@ Deserialization can be conducted from any primitive JSON type to these C++ types
 
 ## Enums 
 
- In order to serialize enums, they need to be [registered](/docs/userguide/programming/serialization/register-objects#serialization-register-objects-enums) with the same serialization context as the class being serialized. How values from an enum are serialized and deserialized depend on the details of the enum registration.
+ In order to serialize enums, they need to be [registered](register-objects/#register-enums) with the same serialization context as the class being serialized. How values from an enum are serialized and deserialized depend on the details of the enum registration.
 + **Enum value matches the value of a registered field** - The value is serialized as a string containing the field name.
 + **Enum value can't be represented as ORed registered values** - The value is serialized as an integer.
 +  **Enum value can be represented as ORed registered values** - The value is serialized to an array containing strings of the field names that were ORed together.

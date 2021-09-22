@@ -10,9 +10,9 @@ You can save custom node comment and node group settings as presets that you can
 
 Before you create a preset based on an existing node comment or node group, customize its color and font by using the **Background Color** and **Font Settings** options in **Node Inspector**.
 
-![\[Using Script Canvas Node Inspector to customize node comments and node groups.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-1.png)
+![Using Script Canvas Node Inspector to customize node comments and node groups.](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-1.png)
 
-For more information, see [Customizing Groups](/docs/userguide/scripting/scriptcanvas/node-groups#script-canvas-node-groups-customizing).
+For more information, see [Customizing Groups](node-groups/#customizing-groups).
 
 ## Creating and Using Presets 
 
@@ -21,18 +21,21 @@ You can create a preset in the Script Canvas editor by using an existing node gr
 **To create a preset from a group or comment**
 
 1. Right-click the group or comment and choose **Create Preset From**. The preset that you create saves the font settings and color of the original group or comment. It does not save the display text.
-![\[Creating a preset from an existing comment in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-2.png)
+
+![Creating a preset from an existing comment in Script Canvas.](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-2.png)
 
 1. In the **Set Preset Name** dialog box, enter a name for the preset, and then click **OK**.
-![\[Naming a comment or group preset in Script Canvas.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-3.png)
+
+![Naming a comment or group preset in Script Canvas.](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-3.png)
 
 1. To use the preset that you created, right-click the canvas, choose **Add Comment** or **Group**, and then choose the preset comment or group that you created.
-![\[Choosing a preset comment\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-4.png)
+
+![Choosing a preset comment](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-4.png)
 
 ## Configuring a Default Preset 
 
 You can define a preset as the default for either a node group or a comment. The default group or comment is created when you perform one of the following actions:
-+ On the Script Canvas editor toolbar, click the new comment ![\[New comment icon\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-5.png) or new group ![\[New group icon\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-6.png) icon.
++ On the Script Canvas editor toolbar, click the new comment ![New comment icon](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-5.png) or new group ![New group icon](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-6.png) icon.
 + Press **Ctrl+Alt+M** to create a comment.
 + Press **Ctrl+Shift+G** to create a group.
 
@@ -43,7 +46,8 @@ You can define a preset as the default for either a node group or a comment. The
 1. For **Construct Type,** choose **Comment** or **Node Group**.
 
 1. For **Is Default**, select the preset that you want to make the default, and then click **OK**.
-![\[Setting a preset as the default in the Script Canvas Presets Editor.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-7.png)
+
+![Setting a preset as the default in the Script Canvas Presets Editor.](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-7.png)
 
 ## Removing a Preset 
 
@@ -56,7 +60,8 @@ To remove presets, use the Script Canvas Presets Editor.
 1. For **Construct Type,** choose **Comment** or **Node Group**.
 
 1. Select the preset that you want to delete.
-![\[Using the Presets Editor in Script Canvas to remove a comment preset.\]](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-8.png)
+
+![Using the Presets Editor in Script Canvas to remove a comment preset.](/images/user-guide/scripting/script-canvas/script-canvas-comment-and-group-presets-8.png)
 
 1. Click **Remove**, and then click **OK**.
 

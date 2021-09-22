@@ -67,7 +67,7 @@ Use CMake to generate a Visual Studio solution, which is used in the next step t
 Atom Test
 : 
     ```cmd
-    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
+    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
 Atom Sample Viewer

@@ -10,8 +10,8 @@ In O3DE Editor, the console window shows a running list of all editor commands, 
 + [Viewing the Console Window](#viewing-the-console-window)
 + [Exporting All Console Commands and Variables](#exporting-console-variables-cvars)
 + [Configuring Console Variables](#configuring-console-variables-cvars)
-+ [Console in Depth](/docs/user-guide/editor/console-cvars-commands.md)
-+ [Console Variable Tutorial](/docs/user-guide/engine/cvars.md)
++ [Console in Depth](/docs/user-guide/editor/console-cvars-commands/)
++ [Console Variable Tutorial](/docs/user-guide/engine/cvars/)
 
 ## Viewing the Console Window 
 
@@ -22,10 +22,12 @@ You can enter commands directly in the console window or search and edit console
 1. In O3DE Editor, choose **Tools**, **Console**.
 
 1. Click the **X** icon in the left corner to open the **Console Variables** window. The **Console Variables** window lists all available console variables.
-![\[View all available console variables in the console window.\]](/images/shared/console-x-window.png)
+
+![View all available console variables in the console window.](/images/shared/console-x-window.png)
 
 1. Enter a name to search for a specific console variable. To learn more about the console variable, pause on the name.
-![\[View console variables in the console window.\]](/images/user-guide/console-variables.png)
+
+![View console variables in the console window.](/images/user-guide/console-variables.png)
 
 ## Exporting All Console Commands and Variables 
 
@@ -39,7 +41,8 @@ You can retrieve a complete list of console commands and variables, including th
 **Example**
 
     You can see the available commands and variables in the file.
-![\[Open the consolecommandandvars.txt file to see all console commands and variables.\]](/images/user-guide/console-variables-test-file.png)
+
+    ![Open the consolecommandandvars.txt file to see all console commands and variables.](/images/user-guide/console-variables-test-file.png)
 
 1. You can specify a sub-string parameter to restrict the results that you want. For example, the DumpCommandsVars i\_ command exports all commands and variables that begin with the prefix `i_`, such as `i_giveallitems` and `i_debug_projectiles`.
 

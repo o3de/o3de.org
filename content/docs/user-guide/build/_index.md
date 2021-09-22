@@ -1,8 +1,6 @@
 ---
-title: "Build"
-description: >-
-    Learn the basics of Open 3D Engine's support for the CMake build system, and get started with
-    your first full build of the Open 3D Engine Source and Atom test project.
+title: Build
+description: Learn the basics of Open 3D Engine's support for the CMake build system, and get started with your first full build of the Open 3D Engine Source and Atom test project.
 weight: 200
 ---
 
@@ -13,17 +11,13 @@ To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMa
 {{< tabs >}}
 {{< tab name="Windows" codelang="cmd">}}cd <project-directory>
 mkdir build\windows
-cmake -B build/windows -S . -G "Visual Studio 16 2019" ^
-    -DLY_3RDPARTY_PATH=<absolute-path-to-packages> ^
-    -DLY_UNITY_BUILD=ON 
-cmake --build build/windows --config profile --target <ProjectName>.GameLauncher -- /m
+cmake -B build/windows -S . -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/windows --config profile --target <ProjectName>.GameLauncher Editor -- /m
 {{< /tab >}}
 {{< tab name="Linux" codelang="bash">}}cd <project-directory>
-mkdir -p build/linux-dedicated
-cmake -B build/linux-dedicated -S . \
-    -DLY_3RDPARTY_PATH=<absolute-path-to-packages> \
-    -DLY_UNITY_BUILD=ON
-cmake --build build/linux-dedicated --config profile --target <ProjectName>.ServerLauncher
+mkdir -p build/linux
+cmake -B build/linux -S . -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/linux --config profile --target <ProjectName>.ServerLauncher Editor
 {{< /tab >}}
 {{< /tabs >}}
 

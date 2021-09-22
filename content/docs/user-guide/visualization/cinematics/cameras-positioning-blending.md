@@ -7,7 +7,7 @@ You can control a camera's position and rotation to manipulate the facing direct
 
 ## Animating the Camera 
 
-As a recommended workflow, enter record mode and then animate the camera while viewing from the specific camera's perspective. For more information, see [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode.md).
+As a recommended workflow, enter record mode and then animate the camera while viewing from the specific camera's perspective. For more information, see [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode/).
 
 {{< note >}}
 You can still manipulate the component entity camera within the level from the default editor camera. However, this method makes it more difficult to determine where the camera is facing.
@@ -18,10 +18,12 @@ You can still manipulate the component entity camera within the level from the d
 1. In a level, you have a component entity with a **Camera** component attached. This component entity is part of your sequence.
 
 1. By default, the **Transform** component attached to the entity has the **Position** and **Rotation** tracks in the sequence.
-![\[Create animation keys in the timeline for a sequence for a camera entity.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-4.png)
+
+![Create animation keys in the timeline for a sequence for a camera entity.](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-4.png)
 
 1. To maintain the current position and rotation of the game object, add animation keys on both tracks at `0` on the timeline.
-![\[Create animation keys in the timeline for a sequence for a camera entity.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-5.png)
+
+![Create animation keys in the timeline for a sequence for a camera entity.](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-5.png)
 
 1. Select and drag the playhead to a different location on the timeline.
 
@@ -32,7 +34,8 @@ You can still manipulate the component entity camera within the level from the d
 1. In the left-corner of the viewport window, right-click **Perspective** and choose **Camera** and then specify the camera that is part of your sequence. The text will change from **Perspective** to **Camera entity: *NameOfYourCamera***.
 
 1. While you are viewing from the perspective of the camera, as you move in the level, the camera moves as well. This includes any rotations. In record mode, this adds animation keys at the current playhead location.
-![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-6.png)
+
+![Create animation tracks for a Camera component in the timeline for a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-using-record-mode-6.png)
 
 1. Move the playhead when you need to add another animation key in the timeline and then move the camera view around in the level.
 
@@ -76,4 +79,5 @@ Blended camera keys will blend the position, rotation, and field of view of the 
       If you add the first camera as a track view node, then you must add at least one animation key for the **Position**, **Rotation**, and **Field of View** tracks when using blended sequence cameras.
 
       In this sequence, the **Camera** track starts at `0` seconds for **CinematicsCamera** and will blend into **Camera5** at `2` seconds.
-![\[Create animation tracks for a Camera component in the timeline for a sequence.\]](/images/user-guide/cinematics/cinematics-track-view-editor-blending-cameras-in-sequences.png)
+
+      ![Create animation tracks for a Camera component in the timeline for a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-blending-cameras-in-sequences.png)

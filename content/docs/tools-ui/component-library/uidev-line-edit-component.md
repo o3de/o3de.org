@@ -11,7 +11,7 @@ The **line edit** component is one of several types of input boxes offered by th
 
  **Line edit** widgets have several customization options. Standard features including the following elements:
 
-![\[component line edit anatomy\]](/images/tools-ui/component-line-edit-anatomy.png)
+![component line edit anatomy](/images/tools-ui/component-line-edit-anatomy.png)
 
 1.  **Label**
 
@@ -28,12 +28,14 @@ The **line edit** component is one of several types of input boxes offered by th
 1.  **Tooltip**
 
    (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
-![\[component line edit anatomy clear\]](/images/tools-ui/component-line-edit-anatomy-clear.png)
+
+   ![component line edit anatomy clear](/images/tools-ui/component-line-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
    (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
-![\[component line edit anatomy error state\]](/images/tools-ui/component-line-edit-anatomy-error-state.png)
+
+   ![component line edit anatomy error state](/images/tools-ui/component-line-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 
@@ -45,7 +47,7 @@ The **line edit** component is one of several types of input boxes offered by th
 
 ## Basic line edit<a name="line-edit-basic"></a>
 
-![\[component line edit basic\]](/images/tools-ui/component-line-edit-basic.png)
+![component line edit basic](/images/tools-ui/component-line-edit-basic.png)
 
 A simple **line edit** component starts with the `QLineEdit` Qt widget. You can set additional options by changing widget settings in the Qt Designer or in code.
 
@@ -68,7 +70,7 @@ lineEdit->setClearButtonEnabled(true);
 
 ## Line edit with search<a name="line-edit-search-style"></a>
 
-![\[component line edit search style\]](/images/tools-ui/component-line-edit-search-style.png)
+![component line edit search style](/images/tools-ui/component-line-edit-search-style.png)
 
 The `AzQtComponents::LineEdit` class provides several static style functions that apply a style to a `QLineEdit` widget. One example is the search style, which adds a search icon. Additional styles are documented in the API reference for [AzQtComponents::LineEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_line_edit.html).
 
@@ -114,7 +116,7 @@ connect(lineEdit, &QLineEdit::editingFinished, this, [lineEdit]() {
 
 ## Line edit as a drop target<a name="line-edit-drop-target"></a>
 
-![\[component line edit drop target style\]](/images/tools-ui/component-line-edit-drop-target-style.png)
+![component line edit drop target style](/images/tools-ui/component-line-edit-drop-target-style.png)
 
 The following examples demonstrate how to apply or remove the drop target style to a `QLineEdit` widget.
 
@@ -136,7 +138,7 @@ AzQtComponents::LineEdit::removeDropTargetStyle(lineEdit);
 
 ## Line edit with validator<a name="line-edit-validator"></a>
 
-![\[component line edit error state\]](/images/tools-ui/component-line-edit-error-state.png)
+![component line edit error state](/images/tools-ui/component-line-edit-error-state.png)
 
 In the following example, both a validator and an error message for the error tooltip have been defined. The standard tooltip appears when a mouse hovers over the widget. The error tooltip appears when a mouse hovers over the widget while an error state exists.
 
@@ -162,7 +164,7 @@ AzQtComponents::LineEdit::setErrorMessage(lineEdit, QStringLiteral("Value must b
 
 ## Disabled line edit<a name="line-edit-disabled"></a>
 
-![\[component line edit disabled\]](/images/tools-ui/component-line-edit-disabled.png)
+![component line edit disabled](/images/tools-ui/component-line-edit-disabled.png)
 
 In the following example, the widget and its features have been disabled in code.
 
@@ -186,5 +188,5 @@ Relevant Qt documentation includes the following topics:
 ## Related links<a name="line-edit-related-links"></a>
 
 For components related to the **line edit** component, see the following topics:
-+  [Browse edit](uidev-browse-edit-component.md)
-+  [Number edit spinbox](uidev-spinbox-component.md)
++  [Browse edit](uidev-browse-edit-component/)
++  [Number edit spinbox](uidev-spinbox-component/)

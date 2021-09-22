@@ -108,10 +108,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#abc55a13b17f6ed3660cae431faef3042">SetShadowmapMaxResolution</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, ShadowmapSize size)=0</td></tr>
 <tr class="memdesc:abc55a13b17f6ed3660cae431faef3042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the maximum resolution of the shadow map. <br /></td></tr>
 <tr class="separator:abc55a13b17f6ed3660cae431faef3042"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea6b05238c6dcc5da47bb3e265fe63f7"><td class="memItemLeft" align="right" valign="top"><a id="aea6b05238c6dcc5da47bb3e265fe63f7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#aea6b05238c6dcc5da47bb3e265fe63f7">SetPcfMethod</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, PcfMethod method)=0</td></tr>
-<tr class="memdesc:aea6b05238c6dcc5da47bb3e265fe63f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the shadowmap Pcf method. <br /></td></tr>
-<tr class="separator:aea6b05238c6dcc5da47bb3e265fe63f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b7d162c366c7b944a020c9a9ba6ab85"><td class="memItemLeft" align="right" valign="top"><a id="a9b7d162c366c7b944a020c9a9ba6ab85"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#a9b7d162c366c7b944a020c9a9ba6ab85">SetShadowBias</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, float bias)=0</td></tr>
+<tr class="memdesc:a9b7d162c366c7b944a020c9a9ba6ab85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the shadow bias. <br /></td></tr>
+<tr class="separator:a9b7d162c366c7b944a020c9a9ba6ab85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af984972edb4a1af11c5ce61f0a84ff94"><td class="memItemLeft" align="right" valign="top"><a id="af984972edb4a1af11c5ce61f0a84ff94"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#af984972edb4a1af11c5ce61f0a84ff94">SetShadowFilterMethod</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, ShadowFilterMethod method)=0</td></tr>
 <tr class="memdesc:af984972edb4a1af11c5ce61f0a84ff94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the shadow filter method. <br /></td></tr>
@@ -120,10 +120,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#a1f56a89fa05727c2c8a57315080ca251">SetSofteningBoundaryWidthAngle</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, float boundaryWidthRadians)=0</td></tr>
 <tr class="memdesc:a1f56a89fa05727c2c8a57315080ca251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the width of boundary between shadowed area and lit area. <br /></td></tr>
 <tr class="separator:a1f56a89fa05727c2c8a57315080ca251"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa877785889307d3ec570ff6fbd48115"><td class="memItemLeft" align="right" valign="top"><a id="aaa877785889307d3ec570ff6fbd48115"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#aaa877785889307d3ec570ff6fbd48115">SetPredictionSampleCount</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, uint16_t count)=0</td></tr>
-<tr class="memdesc:aaa877785889307d3ec570ff6fbd48115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sample count to predict the boundary of the shadow. Max 16, should be less than filtering sample count. <br /></td></tr>
-<tr class="separator:aaa877785889307d3ec570ff6fbd48115"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeef76e9175d1f3aa213a18e5c3d89fc4"><td class="memItemLeft" align="right" valign="top"><a id="aeef76e9175d1f3aa213a18e5c3d89fc4"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_projected_shadow_feature_processor_interface.html#aeef76e9175d1f3aa213a18e5c3d89fc4">SetFilteringSampleCount</a> (<a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">ShadowId</a> id, uint16_t count)=0</td></tr>
 <tr class="memdesc:aeef76e9175d1f3aa213a18e5c3d89fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sample count for filtering of the shadow boundary, max 64. <br /></td></tr>
@@ -187,7 +183,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:52 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

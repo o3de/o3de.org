@@ -12,7 +12,7 @@ The current version of Open 3D Engine is 2107.1 (Developer Preview). Check out t
 
 ## Highlights
 
-The [Open 3D Foundation](https://o3de.foundation) is very excited to bring you this initial Developer Preview release, kicking off what we hope is a long and illustrious community effort to develop a 3D rendering platform that can evolve as fast as modern gaming and simulation has. If it looks a bit familiar to AWS Lumberyard developers, well, they're right: O3DE builds off the effort Amazon Web Services poured into that engine.
+The [Open 3D Foundation](https://o3d.foundation) is very excited to bring you this initial Developer Preview release, kicking off what we hope is a long and illustrious community effort to develop a 3D rendering platform that can evolve as fast as modern gaming and simulation has. If it looks a bit familiar to AWS Lumberyard developers, well, they're right: O3DE builds off the effort Amazon Web Services poured into that engine.
 
 Note that this release is a Developer Preview and is incomplete for many major development workflows. Initially, this release primarily supports engine and tools developers, and as the O3DE community builds it out, more features will be added.
 
@@ -132,4 +132,4 @@ There's a lot of additional updates we're bringing to you with this initial rele
 
 ## Known Issues
 
-* [The current list of Known Issues in release 2107.1](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;--or a few! Or just comment on them and provide us with your thoughts.
+* [The current list of Known Issues in release 2107.1](https://github.com/o3de/o3de/issues/1736). Help the community out and grab one&mdash;or a few! Or just comment on them and provide us with your thoughts.

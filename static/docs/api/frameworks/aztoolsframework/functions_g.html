@@ -62,10 +62,10 @@ $(function() {
 , <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a241d1a19242dc56ad5e32dc13917dffe">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>
 </li>
 <li>GenerateItemIcon()
-: <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a60e7551ecabfe195eeb7aa563bc4c68d">AzToolsFramework::EditorEntityUiHandlerBase</a>
-, <a class="el" href="class_az_tools_framework_1_1_layer_ui_handler.html#a6cff0fe43dfe1cf290cebe1e03efac1e">AzToolsFramework::LayerUiHandler</a>
-, <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a1243763512d9549b04fca9292766cbe8">AzToolsFramework::LevelRootUiHandler</a>
-, <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a438daac1d2fcdafdf6ee84b7b8cc1828">AzToolsFramework::PrefabUiHandler</a>
+: <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ab9da13f3ac57578b1ee05505c68b83c0">AzToolsFramework::EditorEntityUiHandlerBase</a>
+, <a class="el" href="class_az_tools_framework_1_1_layer_ui_handler.html#a6f3b46371921d57a67062563a145a448">AzToolsFramework::LayerUiHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_level_root_ui_handler.html#a32efac66a341c01bdeaec69df1d74982">AzToolsFramework::LevelRootUiHandler</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a576f6aa155df6cb1d0df57d645f4fc1e">AzToolsFramework::PrefabUiHandler</a>
 </li>
 <li>GenerateItemInfoString()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ae4baa7ba572ae73243d1413cd7fcb800">AzToolsFramework::EditorEntityUiHandlerBase</a>
@@ -119,9 +119,6 @@ $(function() {
 </li>
 <li>GetApplicationGlobalStoragePath()
 : <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#a6475c82db4f8a65e7e157c73fc697288">LegacyFramework::FrameworkApplicationMessages</a>
-</li>
-<li>GetApplicationName()
-: <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#ab76dd40bf13f5ff795c5efcfd8395ece">LegacyFramework::FrameworkApplicationMessages</a>
 </li>
 <li>GetAppMainWindow()
 : <a class="el" href="class_az_tools_framework_1_1_editor_window_requests.html#affac09927382a4463b575b1c2908bc85">AzToolsFramework::EditorWindowRequests</a>
@@ -179,6 +176,7 @@ $(function() {
 </li>
 <li>GetCameraState()
 : <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_interaction_requests.html#ab7b435a90f0c8e85112d155cdae7597f">AzToolsFramework::ViewportInteraction::ViewportInteractionRequests</a>
+, <a class="el" href="class_camera_1_1_editor_camera_view_requests.html#aa05f33d38a2e9d6bc42667887e8e33cf">Camera::EditorCameraViewRequests</a>
 </li>
 <li>GetCatalogRegistryPathForPlatform()
 : <a class="el" href="class_az_tools_framework_1_1_platform_addressed_asset_catalog.html#a0d911ddea4dad9532ace4483be11db87">AzToolsFramework::PlatformAddressedAssetCatalog</a>
@@ -283,6 +281,10 @@ $(function() {
 </li>
 <li>GetDimensions()
 : <a class="el" href="class_az_tools_framework_1_1_box_manipulator_requests.html#a9cb08a37c1a84a673288c8cc18d0058f">AzToolsFramework::BoxManipulatorRequests</a>
+</li>
+<li>GetDirtyTemplatePaths()
+: <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a4acf1b03e9b4d54d94b8cafaaa31054c">AzToolsFramework::Prefab::PrefabSystemComponent</a>
+, <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component_interface.html#a0f71e90faf11220a613e81219489c430">AzToolsFramework::Prefab::PrefabSystemComponentInterface</a>
 </li>
 <li>GetDisplayName()
 : <a class="el" href="class_az_tools_framework_1_1_asset_browser_1_1_asset_browser_entry.html#a14c6309d4559ceeacfd85699f08af344">AzToolsFramework::AssetBrowser::AssetBrowserEntry</a>
@@ -394,6 +396,9 @@ $(function() {
 </li>
 <li>GetLooseEditorEntities()
 : <a class="el" href="class_az_tools_framework_1_1_editor_entity_context_requests.html#aa123cdb9ed02da47e34279a70e5471f7">AzToolsFramework::EditorEntityContextRequests</a>
+</li>
+<li>GetMainModule()
+: <a class="el" href="class_legacy_framework_1_1_framework_application_messages.html#ac5790f25079e410492b5120c4638187a">LegacyFramework::FrameworkApplicationMessages</a>
 </li>
 <li>GetMainWindow()
 : <a class="el" href="class_az_tools_framework_1_1_editor_requests.html#a0d2bd7846bfa245e68ba4d58639a14b0">AzToolsFramework::EditorRequests</a>
@@ -617,18 +622,16 @@ $(function() {
 : <a class="el" href="class_az_tools_framework_1_1_tools_application_events.html#a5702691bdefee9274dfb92fe75c62fa2">AzToolsFramework::ToolsApplicationEvents</a>
 </li>
 <li>GridSize()
-: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_interaction_requests.html#ae3e7e8a2c18de2a45b7314b68c6b0fc4">AzToolsFramework::ViewportInteraction::ViewportInteractionRequests</a>
-, <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings.html#ac1dffe758d62eff8298b31669496fc7f">AzToolsFramework::ViewportInteraction::ViewportSettings</a>
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings_requests.html#a2d11eb300f00b8ebbb3e55bf4a5c0861">AzToolsFramework::ViewportInteraction::ViewportSettingsRequests</a>
 </li>
 <li>GridSnappingEnabled()
-: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_interaction_requests.html#a7258fa04ce2b9faa4b249d3a6160d290">AzToolsFramework::ViewportInteraction::ViewportInteractionRequests</a>
-, <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings.html#abf85d19c6077ecf08b20cc473c6bd187">AzToolsFramework::ViewportInteraction::ViewportSettings</a>
+: <a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_settings_requests.html#a08ed1db96a1d9fea2b9e71fb82c93ae5">AzToolsFramework::ViewportInteraction::ViewportSettingsRequests</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:41 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:09 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

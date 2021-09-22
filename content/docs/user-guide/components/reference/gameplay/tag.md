@@ -3,7 +3,7 @@ description: ' Use the Tag component to apply labels to entities in Open 3D Engi
 title: Tag
 ---
 
-{{< preview-migrated >}}
+
 
 Use the **Tag** component to apply one or more labels, or tags, to an entity such as **burning** or **player**. You can use these tags to find or filter entities with particular traits. For example, you can set a weapon to inflict double damage to entities tagged as **burning**.
 
@@ -11,7 +11,7 @@ Use the **Tag** component to apply one or more labels, or tags, to an entity suc
 
 Use the following request function with the **TagGlobalRequestBus** EBus interface to communicate with other components of your game.
 
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### RequestTaggedEntities 
 
@@ -30,7 +30,7 @@ Yes
 
 Use the following request functions with the **TagRequestBus** EBus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### HasTag 
 
@@ -122,7 +122,7 @@ local burning = TagComponentRequestBus.Event.HasTag(self.entityId, Crc32("Burnin
 
 Use the following request functions with the **TagComponentNotificationsBus** notification bus interface to communicate with other components of your game.
 
-For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+For more information about using the event bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 ### OnTagAdded 
 

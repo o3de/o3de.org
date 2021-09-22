@@ -81,6 +81,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetName</b> (const Na
 <tr class="memitem:ac8bb4d9aa6c638ec933e76d83fb44da2"><td class="memItemLeft" align="right" valign="top"><a id="ac8bb4d9aa6c638ec933e76d83fb44da2"></a>
 const Name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetName</b> () const</td></tr>
 <tr class="separator:ac8bb4d9aa6c638ec933e76d83fb44da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35c146bfab8ace548ed0bac919d7f2b"><td class="memItemLeft" align="right" valign="top">const AZStd::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#ac35c146bfab8ace548ed0bac919d7f2b">GetUniqueId</a> () const</td></tr>
+<tr class="separator:ac35c146bfab8ace548ed0bac919d7f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd28c7477a2153db8068aecc5f8e1fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a2cd28c7477a2153db8068aecc5f8e1fe">SetUniqueId</a> (const AZStd::string &amp;uniqueId)</td></tr>
+<tr class="separator:a2cd28c7477a2153db8068aecc5f8e1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9133572ecc92370f39ebbfde63fda4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a9133572ecc92370f39ebbfde63fda4ed">SetShaderVariantKeyFallback</a> (const Name &amp;shaderConstantName, uint32_t bitSize)</td></tr>
 <tr class="separator:a9133572ecc92370f39ebbfde63fda4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a840bd9fce5b6f4a88910c4ed0f7e6027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html#a840bd9fce5b6f4a88910c4ed0f7e6027">AddStaticSampler</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_input_static_sampler_descriptor.html">ShaderInputStaticSamplerDescriptor</a> &amp;sampler)</td></tr>
@@ -424,6 +428,32 @@ static Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group
 
 </div>
 </div>
+<a id="ac35c146bfab8ace548ed0bac919d7f2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35c146bfab8ace548ed0bac919d7f2b">&#9670;&nbsp;</a></span>GetUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const AZStd::string&amp; AZ::RHI::ShaderResourceGroupLayout::GetUniqueId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This string will be used at runtime for both <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> and <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_pool.html">ShaderResourceGroupPool</a> to create a unique InstanceId to avoid redundant copies in memory. </p>
+
+</div>
+</div>
 <a id="add1e90bd0eebfe9391c50898d5b627bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#add1e90bd0eebfe9391c50898d5b627bc">&#9670;&nbsp;</a></span>SetBindingSlot()</h2>
 
@@ -469,6 +499,33 @@ static Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group
       </table>
 </div><div class="memdoc">
 <p>Designates this SRG as ShaderVariantKey fallback by providing the generated shader constant name and its length in bits. </p>
+
+</div>
+</div>
+<a id="a2cd28c7477a2153db8068aecc5f8e1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cd28c7477a2153db8068aecc5f8e1fe">&#9670;&nbsp;</a></span>SetUniqueId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RHI::ShaderResourceGroupLayout::SetUniqueId </td>
+          <td>(</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
+          <td class="paramname"><em>uniqueId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The Set function as described above. It is usually the Source azsl/azsli/srgi file where this SRG comes from. </p>
 
 </div>
 </div>
@@ -545,7 +602,7 @@ static Ptr&lt; <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:54 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -5,13 +5,7 @@ title: 'Asset List Comparison Operations'
 weight: 500
 ---
 
-Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files. The following operations are available to use from the Asset Bundler tool:
-+ [Delta Comparison Operation](#asset-bundler-list-operations-delta)
-+ [Union Comparison Operation](#asset-bundler-list-operations-union)
-+ [Intersection Comparison Operation](#asset-bundler-list-operations-intersection)
-+ [Intersection Count Comparison Operation](#asset-bundler-list-operations-intersectioncount)
-+ [Complement Comparison Operation](#asset-bundler-list-operations-complement)
-+ [File Pattern Comparison Operation](#asset-bundler-list-operations-filepattern)
+Asset list comparisons are rules provided to the `AssetBundlerBatch.exe` tool to determine which files should be included or excluded from the final bundle asset list. The asset list files have the suffix `.assetlist` and contain a flat list of paths and names of asset files. 
 
 {{< note >}}
 While the comparison operations use terms from set theory, they are not exactly the same as the actual set operations. This is particularly true of the [delta comparison operation](#asset-bundler-list-operations-delta), which includes a file entry in both sets if one of those files has been modified in the second set. Additionally, file pattern matching is not a set operation.
@@ -33,7 +27,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the delta comparison operation.
 
-![\[Diagram showing the inputs and results of a delta comparison operation.\]](/images/user-guide/assetbundler/delta-comparison-operator.png)
+![Diagram showing the inputs and results of a delta comparison operation.](/images/user-guide/assetbundler/delta-comparison-operator.png)
 
 ## Asset List Union Comparison Operation 
 
@@ -51,7 +45,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the union comparison operation.
 
-![\[Diagram showing the inputs and results of a union comparison operation.\]](/images/user-guide/assetbundler/union-comparison-operator.png)
+![Diagram showing the inputs and results of a union comparison operation.](/images/user-guide/assetbundler/union-comparison-operator.png)
 
 ## Asset List Intersection Comparison Operation 
 
@@ -69,7 +63,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the intersection comparison operation.
 
-![\[Diagram showing the inputs and results of a intersection comparison operation.\]](/images/user-guide/assetbundler/intersection-comparison-operator.png)
+![Diagram showing the inputs and results of a intersection comparison operation.](/images/user-guide/assetbundler/intersection-comparison-operator.png)
 
 ## Asset List Intersection Count Comparison Operation 
 
@@ -87,7 +81,7 @@ AssetBundlerBatch.exe intersectionCount ^
 
 The following diagram shows the intersection comparison operation.
 
-![\[Diagram showing the inputs and results of a intersection count comparison operation.\]](/images/user-guide/assetbundler/intersection-comparison-count-operator.png)
+![Diagram showing the inputs and results of a intersection count comparison operation.](/images/user-guide/assetbundler/intersection-comparison-count-operator.png)
 
 ## Asset List Complement Comparison Operation 
 
@@ -105,7 +99,7 @@ AssetBundlerBatch.exe compare ^
 
 The following diagram shows the intersection comparison operation.
 
-![\[Diagram showing the inputs and results of a intersection comparison operation.\]](/images/user-guide/assetbundler/complement-comparison-operator.png)
+![Diagram showing the inputs and results of a intersection comparison operation.](/images/user-guide/assetbundler/complement-comparison-operator.png)
 
 ## Asset List File Pattern Operation 
 
@@ -128,7 +122,7 @@ The previous command looks for files that have the `.xml` suffix for inclusion. 
 
 The following diagram shows the file pattern comparison operation.
 
-![\[Diagram showing the inputs and results of a file pattern comparison operation.\]](/images/user-guide/assetbundler/file-pattern-operation.png)
+![Diagram showing the inputs and results of a file pattern comparison operation.](/images/user-guide/assetbundler/file-pattern-operation.png)
 
 ## How to Perform Multiple Asset List Comparison Operations 
 
@@ -136,7 +130,7 @@ The following guidance shows the process of creating an asset list for a game pa
 
 The following diagram shows the comparison process and the outputs for this example.
 
-![\[Diagram that shows the use of multiple comparison rules to include only specific assets in your release bundle.\]](/images/user-guide/assetbundler/patch-bundle-example.png)
+![Diagram that shows the use of multiple comparison rules to include only specific assets in your release bundle.](/images/user-guide/assetbundler/patch-bundle-example.png)
 
 ### Prerequisites 
 
@@ -157,7 +151,7 @@ Create the files that you will use in this tutorial.
    + `FileF.cfg`
    + `do-not-add-me.txt`
 
-1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/assets/processor.md).
+1. Process the assets on your project by running the [Asset Processor](/docs/user-guide/assets/pipeline/processor).
 
 ### Create asset list files for the comparison operation 
 

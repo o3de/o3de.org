@@ -33,7 +33,7 @@ In **Anchor** mode, you can interact with UI elements in the same ways as in the
 
 The alignment tool is a set of buttons on the **UI Editor**'s toolbar.
 
-![\[The alignment tools are on the UI Editor's toolbar.\]](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-buttons.png)
+![The alignment tools are on the UI Editor's toolbar.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-buttons.png)
 
 The alignment tools are enabled when your interaction mode is **Move** or **Anchor** and you have selected two or more movable elements.
 
@@ -67,12 +67,12 @@ A bounding rectangle is a useful graphic for understanding how the alignment too
 
 Imagine a gray bounding rectangle that encompasses the elements in it.
 
-![\[The selected elements are contained by an imaginary bounding rectangle, which determines how the elements are moved.\]](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding1.png)
+![The selected elements are contained by an imaginary bounding rectangle, which determines how the elements are moved.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding1.png)
 
 If you align vertically by the elements' centers, the elements are centered at the bounding rectangle's center, which remains in its original position.
 
-![\[Align elements vertically by their center.\]](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding2.png)
+![Align elements vertically by their center.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding2.png)
 
 If you align vertically by the elements' right edges, the elements' right edges are aligned to the bounding rectangle's right edge.
 
-![\[Align elements vertically by their right edges.\]](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding3.png)
+![Align elements vertically by their right edges.](/images/user-guide/game_ui_editor/ui-editor-toolbar-alignment-tool-bounding3.png)

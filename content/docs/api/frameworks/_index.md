@@ -3,11 +3,9 @@ title: O3DE Framework API reference
 description: Reference index for Open 3D Engine frameworks.
 ---
 
-{{< preview-new >}}
 
 * [AtomCore](/docs/api/frameworks/AtomCore)
 * [AzAndroid](/docs/api/frameworks/AzAndroid)
-* [AzAutoGen](/docs/api/frameworks/AzAutoGen)
 * [AzCore](/docs/api/frameworks/AzCore)
 * [AzFramework](/docs/api/frameworks/AzFramework)
 * [AzGameFramework](/docs/api/frameworks/AzGameFramework)
@@ -16,6 +14,5 @@ description: Reference index for Open 3D Engine frameworks.
 * [AzQtComponents](/docs/api/frameworks/AzQtComponents)
 * [AzTest](/docs/api/frameworks/AzTest)
 * [AzToolsFramework](/docs/api/frameworks/AzToolsFramework)
-* [Crcfix](/docs/api/frameworks/Crcfix)
 * [GFxFramework](/docs/api/frameworks/GFxFramework)
 * [GridMate](/docs/api/frameworks/GridMate)

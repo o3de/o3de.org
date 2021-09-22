@@ -57,14 +57,16 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
    ```
 
 1. Enter game mode. In the console, seed mode reports multiple Asset not found in seed graph errors.
-![\[Asset not found in seed graph errors in the O3DE console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-1.png)
+
+![Asset not found in seed graph errors in the O3DE console window.](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-1.png)
 
 1. Exit game mode.
 
 1. Enter the `addseedpath` command to add the missing asset file. This example uses the command `addseedpath levels\milestone2\level.pak`.
 
 1. Enter game mode. The Asset not found errors no longer appear.
-![\[Using the addseedpath command in the O3DE console window.\]](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-2.png)
+
+![Using the addseedpath command in the O3DE console window.](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-2.png)
 
 ### Handling Missing Asset Errors
 

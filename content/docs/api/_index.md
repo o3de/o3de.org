@@ -9,7 +9,7 @@ guide_img: "/images/api-reference/guide_img.png"
 primary: true
 ---
 
-{{< preview-new >}}
+
 
 * [Framework APIs](/docs/api/frameworks)
 * [Gem APIs](/docs/api/gems)
