@@ -5,7 +5,7 @@ description: ' Open 3D Engine (O3DE) Box Shape component reference. '
 weight: 100
 ---
 
-The **Axis Aligned Box Shape** component creates a transparent box that is always axis aligned. The dimensions of the box can be edited with the **Dimensions** property or by entering **Edit** mode. The Axis Aligned Box Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for terrain, fog, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
+The **Axis Aligned Box Shape** component creates a transparent box that is always axis aligned. The dimensions of the box can be edited with the **Dimensions** property or by entering **Edit** mode. The Axis Aligned Box Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for terrain, fog, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
 ## Provider ##
 

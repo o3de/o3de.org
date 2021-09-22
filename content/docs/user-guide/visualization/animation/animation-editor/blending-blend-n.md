@@ -12,7 +12,7 @@ The **Blend N** node accepts up to ten inputs and uses the **Weight** parameter 
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md).
+1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees/).
 
 1. Double-click the blend tree node that you created.
 

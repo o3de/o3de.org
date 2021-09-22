@@ -31,12 +31,12 @@ After you create a sequence, you can add properties to it. Any part of the seque
 
 1. Select the node to update its properties.
 
-   For more information, see [Track View Editor Nodes](/docs/user-guide/visualization/cinematics/trackview-nodes.md).
+   For more information, see [Track View Editor Nodes](/docs/user-guide/visualization/cinematics/trackview-nodes/).
 
 **Topics**
-+ [Track View Editor Toolbars](/docs/user-guide/visualization/cinematics/track-view/editor-toolbars.md)
-+ [Track View Editor Nodes](/docs/user-guide/visualization/cinematics/trackview-nodes.md)
-+ [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks.md)
-+ [Controlling the Playhead](/docs/user-guide/visualization/cinematics/controlling-the-playhead.md)
-+ [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode.md)
-+ [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md)
++ [Track View Editor Toolbars](/docs/user-guide/visualization/cinematics/track-view/editor-toolbars/)
++ [Track View Editor Nodes](/docs/user-guide/visualization/cinematics/trackview-nodes/)
++ [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks/)
++ [Controlling the Playhead](/docs/user-guide/visualization/cinematics/controlling-the-playhead/)
++ [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode/)
++ [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves/)

@@ -87,7 +87,7 @@ The following procedure shows how bundle mode works. In the example, game mode i
 
 1. Add the missing assets to the seed list for the level.
 
-1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference.md) for the level.
+1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference/) for the level.
 
 1. Drop the bundles into the `Bundles` directory.
 

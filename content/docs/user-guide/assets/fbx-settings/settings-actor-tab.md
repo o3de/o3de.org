@@ -77,7 +77,7 @@ When you author the actor in your 3D application, you must add `_lod0`, `_lod1`,
 **Important**
 The meshes for the highest level of detail, \[`0`\], and the corresponding skeleton are assigned in the **Select base meshes** and **Select root bone** properties of the **Actor group** automatically. Meshes labeled `_lod1` through `_lod5` and their skeleton hierarchies are assigned to corresponding LoDs in the **Level of Detail** modifier.
 
-For more information, see [Using Actor LODs to Optimize Game Performance](/docs/user-guide/visualization/animation/using-actor-LODs-optimize-game-performance.md).
+For more information, see [Using Actor LODs to Optimize Game Performance](/docs/user-guide/visualization/animation/using-actor-LODs-optimize-game-performance/).
 
 ## Material modifier 
 

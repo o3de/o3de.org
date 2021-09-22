@@ -46,7 +46,7 @@ Configurable settings include the following.
 
 ## Metrics event schema
 
-The AWS Metrics Gem uses an [Event JSON Schema](./event-schema.md) for validating the metrics events submitted from the client or sent to the Service API. Any metrics event that fails the validation will be dropped. Any custom metrics attributes that are not defined in the schema will be added to the `event_data` field of the metrics event as a flat JSON dictionary.
+The AWS Metrics Gem uses an [Event JSON Schema](./event-schema/) for validating the metrics events submitted from the client or sent to the Service API. Any metrics event that fails the validation will be dropped. Any custom metrics attributes that are not defined in the schema will be added to the `event_data` field of the metrics event as a flat JSON dictionary.
 
 If you want to customize the schema, update it in both `Gems\AWSMetrics\Code\Include\Public\AWSMetricsConstant.h` and `api_spec.json` inside your CDK application. You will need to rebuild your project and redeploy your CDK application after this change.
 

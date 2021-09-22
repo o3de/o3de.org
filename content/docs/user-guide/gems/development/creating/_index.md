@@ -29,7 +29,7 @@ use `Code` for the directory name.
 
 ## Manifest file
 
-Each Gem is required to have a `gem.json` manifest file, describing the Gem. See the [Gem manifest documentation](./manifest.md) for information on writing a
+Each Gem is required to have a `gem.json` manifest file, describing the Gem. See the [Gem manifest documentation](./manifest/) for information on writing a
 manifest.
 
 ## Icon file (Optional)
@@ -39,7 +39,7 @@ Each Gem can also contain an optional image to use as an icon in GUI project con
 ## CMakeLists.txt file
 
 Gems also require a `CMakeLists.txt` CMake build file, so that they can be picked up by the O3DE build system. This should be a standard CMake file for building your
-Gem's source code. For Gems that use binary libraries or executables that aren't distributed as source, O3DE has a [third-party package system](/docs/user-guide/build/packages.md).
+Gem's source code. For Gems that use binary libraries or executables that aren't distributed as source, O3DE has a [third-party package system](/docs/user-guide/build/packages/).
 
 Your `CMakeLists.txt` file is like any other CMake file. When you create it, keep the following important points in mind:
 

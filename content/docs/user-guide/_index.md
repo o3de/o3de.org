@@ -12,7 +12,7 @@ primary: true
 
 Welcome to the O3DE User Guide! This documentation contains information and guidance for users working on an O3DE project.
 
-Read about [the features provided by Open 3D Engine](/docs/welcome-guide/features-intro.md).
+Read about [the features provided by Open 3D Engine](/docs/welcome-guide/features-intro).
 
 | Documentation                        | Details |
 |--------------------------------------|---------|
@@ -34,8 +34,6 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 
 | Documentation                        | Details |
 |--------------------------------------|---------|
-| [Asset file types](appendix/asset-file-types.md) | Reference for the asset file types supported in O3DE by default. |
+| [Asset file types](appendix/asset-file-types/) | Reference for the asset file types supported in O3DE by default. |
 | [Console variable reference](appendix/cvars/) | Reference for the O3DE console variables. |
-| [Glossary](appendix/glossary.md) | Common terms and concepts used in O3DE development. |
-<!--| [File format support](appendix/file-formats.md) | Reference for file formats supported in O3DE by default. | DRAFT TOPIC -->
-<!--| [Command-line tools](appendix/command-line-tools.md) | Reference for the O3DE tools available from the command line. | DRAFT TOPIC -->
+| [Glossary](appendix/glossary) | Common terms and concepts used in O3DE development. |

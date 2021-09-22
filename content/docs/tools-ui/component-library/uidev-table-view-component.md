@@ -19,7 +19,7 @@ Use the **table view** component to present multiple columns of structured data 
 Create a simple logging table view.
 
 **Note**
-If a table view is combined with a [tree view](uidev-tree-view-component.md), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
+If a table view is combined with a [tree view](uidev-tree-view-component/), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
 
  **Example**
 

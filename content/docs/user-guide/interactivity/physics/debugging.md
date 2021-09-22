@@ -46,19 +46,19 @@ Adjusts the culling box size to **100**. Enter **0** to disable culling.
 physx_CullingBoxSize 100
 ```
 
-Connects to the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
+Connects to the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).
 
 ```
 physx_PvdConnect
 ```
 
-Disconnects from the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
+Disconnects from the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).
 
 ```
 physx_PvdDisconnect
 ```
 
-For more information, see [Using the Console Window](/docs/user-guide/editor/console.md).
+For more information, see [Using the Console Window](/docs/user-guide/editor/console/).
 
 ## Debugging with the ImGui Tool 
 
@@ -83,4 +83,4 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 
 ## Debug Options in the PhysX Configuration 
 
-You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
+You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).

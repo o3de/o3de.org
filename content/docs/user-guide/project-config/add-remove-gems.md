@@ -101,7 +101,7 @@ You can enable or disable multiple Gems at once. The changes that will be made t
 
 ## Using the Command Line Interface (CLI)
 
-You can also configure Gems using the CLI. Refer to [CLI Reference](docs/user-guide/project-config/cli-reference/) for additional supported CLI commands.
+You can also configure Gems using the CLI. Refer to [CLI Reference](/docs/user-guide/project-config/cli-reference/) for additional supported CLI commands.
 
 1. Open a command prompt to the folder where your engine is located.
 

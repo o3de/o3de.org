@@ -8,9 +8,9 @@ toc: true
 The **browse edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries. Use the browse edit component to enable users to choose one or more values from a selection window. Typical uses include selecting a file from a directory, or one or more items from a list - for example: choosing motions from a collection of animation assets. The selection window is opened using either a button along the right edge, or a double-click in the input box. Chosen values can be cleared using the clear button, if this button has been enabled.
 
 **Note**
-Use a dropdown [combo box](uidev-combobox-component.md) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
+Use a dropdown [combo box](uidev-combobox-component/) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
 
-## Anatomy of the browse edit widget<a name="browse-edit-anatomy"></a>
+## Anatomy of the browse edit widget
 
  **Browse edit** widgets have several customization options. Standard features including the following elements:
 
@@ -28,7 +28,7 @@ Use a dropdown [combo box](uidev-combobox-component.md) instead if there is a pr
 
    Text that you set using `setText()` appears here. Users can double-click here to open the selection window that you have connected to the `BrowseEdit::attachedButtonTriggered` signal. Single click actions do nothing here, unless the read-only attribute has not been set to `true`.
 **Note**
-Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](uidev-line-edit-component.md) component instead, with a detached button next to it.
+Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](uidev-line-edit-component/) component instead, with a detached button next to it.
 
 1.  **Attached button**
 
@@ -54,7 +54,7 @@ When using a custom icon not provided by O3DE, the icon should be a multiple of 
 
    (Optional) When an error state exists, if an error tooltip has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you set a validator for the input box, it is highly recommended that you also set an error tooltip.
 
-## Basic browse edit<a name="browse-edit-basic"></a>
+## Basic browse edit
 
 ![component browse edit basic](/images/tools-ui/component-browse-edit-basic.png)
 
@@ -88,7 +88,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 // Then add browseEdit to a UI layout as needed.
 ```
 
-## Browse edit with custom icon and placeholder text<a name="browse-edit-icon-and-placeholder"></a>
+## Browse edit with custom icon and placeholder text
 
 ![component browse edit icon and placeholder](/images/tools-ui/component-browse-edit-icon-and-placeholder.png)
 
@@ -123,7 +123,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 });
 ```
 
-## Browse edit with tooltips and validator<a name="browse-edit-tooltips-and-validator"></a>
+## Browse edit with tooltips and validator
 
 ![component browse edit error state](/images/tools-ui/component-browse-edit-error-state.png)
 
@@ -169,7 +169,7 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 });
 ```
 
-## Disabled browse edit<a name="browse-edit-disabled"></a>
+## Disabled browse edit
 
 ![component browse edit disabled](/images/tools-ui/component-browse-edit-disabled.png)
 
@@ -184,13 +184,13 @@ In the following example, the widget and its features have been disabled in code
 browseEdit->setEnabled(false);
 ```
 
-## C++ API reference<a name="browse-edit-api-ref"></a>
+## C++ API reference
 
 For details on the **browse edit** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::BrowseEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_browse_edit.html)
 
-## Related links<a name="browse-edit-related-links"></a>
+## Related links
 
 For components related to the **browse edit** component, see the following topics:
-+  [Line edit](uidev-line-edit-component.md)
-+  [Number edit spinbox](uidev-spinbox-component.md)
++  [Line edit](uidev-line-edit-component)
++  [Number edit spinbox](uidev-spinbox-component)

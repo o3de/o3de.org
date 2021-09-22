@@ -12,7 +12,7 @@ toc: true
 
 This tutorial will link all the relevant documentation to provide you with a detailed guide on getting started with creating multiplayer components. By the end of this tutorial you will learn how to create a new network component that has a network property and a remote procedure call.
 
-Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it in the [MultiplayerSample project readme](https://github.com/o3de/o3de-multiplayersample/blob/development/README.md).
+Our starting base will be the O3DE MultiplayerSample project. You can find the instructions on how to build and run it in the [MultiplayerSample project readme](https://github.com/o3de/o3de-multiplayersample/blob/development/README/).
 
 
 

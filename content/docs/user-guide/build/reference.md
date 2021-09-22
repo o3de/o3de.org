@@ -18,7 +18,7 @@ CMake options like `CMAKE_CXX_STANDARD` are set during configuration automatical
 
 These options are the user-supplied settings that are required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
 
-* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
+* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages/)] for more information.
   
   *Type*: `PATH`
 

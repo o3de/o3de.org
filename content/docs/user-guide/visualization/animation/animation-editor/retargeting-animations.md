@@ -18,7 +18,7 @@ If your retargeted actor has the same bone names and transforms as the original 
 
 **To retarget motions**
 
-1. In your DCC tool, add the actor's bind pose, which includes skinning and bones, to the first frame of your motion. Then export the file into O3DE. For more information, see [Importing Assets into O3DE](/docs/userguide/assets/importing.md).
+1. In your DCC tool, add the actor's bind pose, which includes skinning and bones, to the first frame of your motion. Then export the file into O3DE. 
 
 1. Open O3DE Editor.
 
@@ -45,7 +45,7 @@ If you receive an error, check the number of keyframes in your motion, and updat
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](/docs/user-guide/visualization/animation/animation-editor/animation-graph-user-interface.md).
+1. In the **Animation Editor**, in the center pane, on the **Anim Graph** tab, open your [animation graph](/docs/user-guide/visualization/animation/animation-editor/animation-graph-user-interface/).
 
 1. In the right pane, on the **Attributes** tab, select the **Retarget** check box.
 ![Select the Retarget check box for your animation graph in the O3DE Animation Editor](/images/user-guide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)

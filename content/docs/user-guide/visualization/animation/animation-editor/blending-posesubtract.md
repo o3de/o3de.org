@@ -13,7 +13,7 @@ With the **Pose Subtract** node, you can generate an additive pose. You can then
 
 1. In O3DE Editor, choose **Tools**, **Animation Editor**.
 
-1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees.md).
+1. Create a [blend tree](/docs/user-guide/visualization/animation/animation-editor/creating-blend-trees/).
 
 1. Double-click the blend tree node that you created.
 
@@ -32,6 +32,4 @@ With the **Pose Subtract** node, you can generate an additive pose. You can then
 
 ## Pose Subtract Node Attributes 
 
-For attribute settings that are shared among the blend node types, see [Blend Node Attributes](/docs/userguide/animation/editor/blending-poses#animation-editor-blending-attributes).
-
-![Pose Subtract node attributes.](/images/user-guide/actor-animation/animation-editor-blending-posesubtract-attributes.png)
+For attribute settings that are shared among the blend node types, see [Blend Node Attributes](blending-poses/#blend-node-attributes).

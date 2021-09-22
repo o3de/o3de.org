@@ -1,6 +1,7 @@
 ---
 description: null
 title: Creating Character Animations with the Simple Motion Component
+draft: true
 ---
 
 To create character animations with the Track View, you can add the **Simple Motion** component and the **Actor** component to an entity. You then add the entity to a track view sequence and specify the motions that you want your character to animate. When you add a motion track to a track view sequence, the Track View drives animation on the **Simple Motion** component and its properties:
@@ -16,7 +17,7 @@ For more information, see the **[Simple Motion](/docs/user-guide/components/refe
 The **Play speed** property is always set to `0.0`. This is because the Track View will set the **Play time** value every frame to drive the playback of the motion. This allows scrubbing and playback in the Track View as well as playback in the game.
 When you add the **Simple Motion** component to a track view sequence, the **Preview in Editor** property is automatically enabled.
 
-The following procedure uses [Starter Game](/docs/userguide/samples/levels/starter-game.md).
+The following procedure uses [Starter Game](/docs/userguide/samples/levels/starter-game/).
 
 **To add the Simple Motion component in the Track View editor**
 
@@ -77,7 +78,7 @@ You can set the **Blend In Time** and **Blend Out Time** properties for simple a
 To blend two motions, overlap two animations and set the **Blend Out Time** of the last motion to `0.33` seconds, and the **Blend In Time** of the next motion by `0.33` seconds. This allows the two motions to smoothly chain together in the track view sequence.
 
 **Note**
-If you want your animation to start when the game starts, click the **Edit Sequence** icon ![Edit track view sequence icon](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-6.png) and in the **Edit Sequence** dialog box, select **Autostart**, and then click **OK**. For more information, see [Setting Sequence Properties](/docs/user-guide/visualization/cinematics/sequence-props.md).
+If you want your animation to start when the game starts, click the **Edit Sequence** icon ![Edit track view sequence icon](/images/user-guide/cinematics/cinematics-track-view-simple-motion-component-6.png) and in the **Edit Sequence** dialog box, select **Autostart**, and then click **OK**. For more information, see [Setting Sequence Properties](/docs/user-guide/visualization/cinematics/sequence-props/).
 The **Blend In Time** and **Blend Out Time** parameters affect the bone weight that are set in your DCC.
 
 **To blend motions in the Track View Editor**

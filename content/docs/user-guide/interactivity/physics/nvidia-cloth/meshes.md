@@ -9,13 +9,13 @@ To use **Cloth**, you must enable the **NVIDIA Cloth** gem. For more information
 
 You can create cloth assets for entities with **Mesh** components in the content creation application of your choice and import them into O3DE from an `.fbx` file. The mesh asset should have the following:
 + A cloth mesh that will be simulated and rendered in O3DE.
-  + Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application. For more information see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data.md).
+  + Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application. For more information see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data/).
 + **Optional** - Any other static mesh. For example, if you create a flag to be simulated as cloth, then you can include a mesh for the flag pole.
 
 **Note**
 Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Environment/`.
 
-For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/assets/fbx-settings/mesh-export.md)
+For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/assets/fbx-settings/mesh-export/)
 
 ## Add Cloth to Mesh components 
 
