@@ -206,7 +206,7 @@ O3DE also requires some additional library packages to be installed:
 You can download and install these packages through `apt-get`. 
 
 ```shell
-sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev zlib1g-dev mesa-common-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev curl
+sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev
 ```
 
 ### Ninja Build System (Optional)
