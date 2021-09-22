@@ -159,6 +159,10 @@ O3DE requires Clang to compile all of the native C++ code. Although Clang-6 is s
 sudo apt-get install clang-12 
 ```
 
+### Vulkan supported video drivers
+
+In addition to the minimum hardware requirements for video cards for O3DE, Linux requires that the latest drivers for the video card is installed and enabled. Refer to the video card manufacturers support page on instructions to do this.
+
 ### Python 3.7 dependency on libffi
 
 O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu 20.04.3 LTS does not support. You will need to manually install an older version of libffi onto Ubuntu 20.04.3 LTS in order for O3DE's Python to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi. 
