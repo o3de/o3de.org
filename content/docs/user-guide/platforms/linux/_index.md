@@ -79,7 +79,7 @@ cmake --build build/linux --target=$O3DE_PROJECT_NAME.GameLauncher Editor
 
 ### Multiple Config Builds
 
-For projects that were generated using the Ninja Multi-Config generator will require that the build configuration be part of the build command.
+When building a project that was generated using the Ninja Multi-Config generator, include the build configuration in the build command.
 
 ```shell
 
