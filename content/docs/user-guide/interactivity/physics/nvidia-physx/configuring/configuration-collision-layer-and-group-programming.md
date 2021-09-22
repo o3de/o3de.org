@@ -6,7 +6,7 @@ weight: 350
 
 ## Retrieving Layers and Groups
 
-You can use retrieve instances of collision layers and groups [that you created in O3DE Editor](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups.md) as shown below. These methods perform a lookup of the definitions defined in the **PhysX Configuration** tool. If no collision layer is found that matches the name, the default layer \(`0`\) is returned.
+You can use retrieve instances of collision layers and groups [that you created in O3DE Editor](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-collision-groups/) as shown below. These methods perform a lookup of the definitions defined in the **PhysX Configuration** tool. If no collision layer is found that matches the name, the default layer \(`0`\) is returned.
 
 ```
 CollisionLayer layer("MyLayer");

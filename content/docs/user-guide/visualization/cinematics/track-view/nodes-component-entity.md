@@ -4,9 +4,9 @@ title: Component Entities and Component Nodes
 ---
 
 **Topics**
-+ [Naming and Identifying Component Entities](#cinematics-track-view-component-entity-name-components)
-+ [Adding or Removing Components from a Component Entity](#cinematics-track-view-component-entity-add-remove-components)
-+ [Animating Components on a Component Entity](#cinematics-track-view-animating-components-on-component-entities)
+- [Naming and Identifying Component Entities](#naming-and-identifying-component-entities)
+- [Adding or Removing Components from a Component Entity](#adding-or-removing-components-from-a-component-entity)
+- [Animating Components on a Component Entity](#animating-components-on-a-component-entity)
 
 In the Track View, *component entity nodes* function as containers for *component nodes*.
 
@@ -29,7 +29,7 @@ Not all components can be animated in the Track View. For example, you can add t
 
 ![Add tracks from component entity nodes](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-2.png)
 
-For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md).
+For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/components/development/expose-animation).
 
 ## Naming and Identifying Component Entities 
 
@@ -38,8 +38,6 @@ O3DE uses entity IDs to identify component entities, which means that you can na
 **Example**
 
 ![Duplicate entities in the node browser have numbers appended to the name.](/images/user-guide/cinematics/cinematics-component-entities-nodes-track-view-editor-3.png)
-
-If you have component entities with the same name (for example, if they're multiple instances of a slice), you can determine which entity that you're editing. For more information, see [Working with Slices and Sequences](/docs/userguide/working-with-slices-cinematic-sequences.md).
 
 ## Adding or Removing Components from a Component Entity 
 
@@ -59,9 +57,9 @@ Component nodes that can be animated are nested as children under the associated
 1. In the node browser, right-click the component node and choose **Add Track**, then choose the track that you want.
 
 **Note**
-Some components support only a limited number of tracks that can be animated in a sequence. For more information for component-specific properties, see the [Component Reference](/docs/userguide/components/components.md).
-Not all components can be animated in the Track View. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/engine/components/expose-animation.md).
+Some components support only a limited number of tracks that can be animated in a sequence. For more information for component-specific properties, see the [Component Reference](/docs/user-guide/components/reference/).
+Not all components can be animated in the Track View. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/components/development/expose-animation).
 
 After you add the component entity nodes to the sequence and specify the tracks to animate, you can then add keyframes to the timeline. In keyframes, you specify where in the timeline you want to animate the property and edit its properties.
 
-For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks.md).
+For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks).

@@ -19,7 +19,8 @@ The same graph with **Hub** nodes simplifies transitions between the groups, whi
 1. Add a **Hub** node in an animation graph by doing one of the following:
    + In the **Anim Graph Palette**, choose the **Sources** tab and drag **Hub** to the graph.
    + In the graph, right-click and choose **Create Node**, **Sources**, **Hub**.
-![Animation graph without hub nodes.](/images/user-guide/actor-animation/animation-editor-using-hub-nodes-palette.png)
+
+   ![Animation graph without hub nodes.](/images/user-guide/actor-animation/animation-editor-using-hub-nodes-palette.png)
 
 1. Repeat to add as many **Hub** nodes as you need.
 
@@ -27,9 +28,11 @@ The same graph with **Hub** nodes simplifies transitions between the groups, whi
 **Example**
 
    Transitions between motions are simplified by placing them between two **Hub** nodes.
-![Animation graph without hub nodes.](/images/user-guide/actor-animation/animation-editor-using-hub-nodes-example.png)
+
+   ![Animation graph without hub nodes.](/images/user-guide/actor-animation/animation-editor-using-hub-nodes-example.png)
 
    In the example, the transition between **attack01** and **Hub0** is a shared transition. If you remove the **Hub0** node, you would then individually add those two conditions from **attack01** to each of the four transitions going into the **attack01**\* nodes.
 
 1. For all transitions entering a **Hub** node, set its **Transition Time** to `0.0` seconds. This ensures that an extra delay is not added to the transition.
+
 ![Animation graph without hub nodes.](/images/user-guide/actor-animation/animation-editor-using-hub-nodes-transitiontime.png)

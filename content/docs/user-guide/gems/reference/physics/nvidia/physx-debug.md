@@ -22,4 +22,4 @@ This Gem includes the following features:
 To enable the PhysX Debug Gem, you must first enable the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx) and [ImGui](/docs/user-guide/gems/reference/debug/imgui/) Gems.
 {{< /note >}}
 
-For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md).
+For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/).

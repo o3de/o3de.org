@@ -33,9 +33,11 @@ You place the guides at a specific pixel offset on a canvas. The **UI Editor** d
    If you start in the top ruler, you create a horizontal line. Starting in the side ruler creates a vertical line.
 
 1. Release at the position that you want to place the guide.
+
 ![To create guides, ensure the Ruler is displayed and then drag down or across from the side or top ruler.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-creating-gif.gif)
 
 1. To adjust the position of the guide, click the guide and drag it to a new position.
+
 ![Adjust the guide position by placing the cursor on the guide and dragging it.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-adjust.png)
 **Note**
 You must be in **Move** or **Anchor** mode to adjust a guide's position.

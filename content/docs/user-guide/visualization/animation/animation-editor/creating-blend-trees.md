@@ -4,7 +4,7 @@ title: Creating Blend Trees
 ---
 
 
-In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes. The **Animation Editor** supports state machines and blend trees. For more information about state machines, see [About State Machines](/docs/userguide/animation/character-editor/concepts-and-terms#understanding-state-machines).
+In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes. The **Animation Editor** supports state machines and blend trees. 
 
 A blend tree is a collection of nodes with input and output ports that are color coded by data type and read from left to right. Input ports appear on the left side of the nodes and output ports appear on the right. The blend tree outputs the pose that is connected to the **Final Node**, which is included in every blend tree and cannot be deleted. If you choose not to connect a node to **Input Pose**, the **Final Node** outputs a bind pose.
 
@@ -17,12 +17,15 @@ A blend tree is a collection of nodes with input and output ports that are color
 1. Click the **Save** icon. Navigate to the directory where you want to save your animation graph. Type a name for your file and then click **Save**.
 
 1. In the center pane, on the **Anim Graph** tab, right-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**.
+
 ![BlendTree node added to Anim Graph](/images/user-guide/actor-animation/anim-graph-blend-tree-node.png)
 
    Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Blend Tree** into the animation graph.
-![BlendTree icon in Anim Graph Palette](/images/user-guide/actor-animation/anim-graph-palette-blend-tree-node.png)
+   
+   ![BlendTree icon in Anim Graph Palette](/images/user-guide/actor-animation/anim-graph-palette-blend-tree-node.png)
 
 1. Double-click the blend tree node that you created. When you double-click the node, a new link appears above the animation graph with the node name. The **Final Node** also appears.
+
 ![FinalNode visible after double-clicking Blend Tree](/images/user-guide/actor-animation/anim-graph-node-path.png)
 
 1. Do the following to add nodes and connections:
@@ -44,5 +47,5 @@ A blend tree is a collection of nodes with input and output ports that are color
       + Yellow - The connection curve turns yellow in transition states, such as when you drag a connection between ports.
 
 **Topics**
-+ [Creating and Visualizing Blend Spaces](/docs/user-guide/visualization/animation/animation-editor/blend-spaces.md)
-+ [Blending Poses with Blend Nodes](/docs/user-guide/visualization/animation/animation-editor/blending-poses.md)
++ [Creating and Visualizing Blend Spaces](/docs/user-guide/visualization/animation/animation-editor/blend-spaces/)
++ [Blending Poses with Blend Nodes](/docs/user-guide/visualization/animation/animation-editor/blending-poses/)

@@ -18,7 +18,7 @@ To create the virtual environment, you must have a `python3` executable (or `pyt
 
 ## Prerequisites
 
-* AWS credentials configured. Refer to the steps shown in [Configuring AWS Credentials](./configuring-credentials.md).
+* AWS credentials configured. Refer to the steps shown in [Configuring AWS Credentials](./configuring-credentials/).
 * [AWS Cloud Development Kit](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_install) (CDK) installed.
 * O3DE project built.
 

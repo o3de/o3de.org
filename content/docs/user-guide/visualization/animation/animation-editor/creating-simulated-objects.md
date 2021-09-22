@@ -27,8 +27,8 @@ Before you begin, you must do the following:
   + Import your motions, such as the `rin_Run.fbx`
 
 **Topics**
-+ [Setting Up a Simulated Object](/docs/user-guide/visualization/animation/set-up-a-simulated-object.md)
-+ [Setting Up the Simulated Object Anim Graph Node](/docs/user-guide/visualization/animation/set-up-simulated-object-anim-graph-node.md)
-+ [Setting Up Simulated Object Colliders](/docs/user-guide/visualization/animation/set-up-simulated-object-collider.md)
-+ [Using Debug Mode to Refine the Simulation](/docs/user-guide/visualization/animation/refine-simulationg-using-debug-mode.md)
-+ [Using Parameters to Adjust the Animation During Runtime](/docs/user-guide/visualization/animation/use-parameters-to-adjust-animation-during-runtime.md)
++ [Setting Up a Simulated Object](/docs/user-guide/visualization/animation/set-up-a-simulated-object/)
++ [Setting Up the Simulated Object Anim Graph Node](/docs/user-guide/visualization/animation/set-up-simulated-object-anim-graph-node/)
++ [Setting Up Simulated Object Colliders](/docs/user-guide/visualization/animation/set-up-simulated-object-collider/)
++ [Using Debug Mode to Refine the Simulation](/docs/user-guide/visualization/animation/refine-simulationg-using-debug-mode/)
++ [Using Parameters to Adjust the Animation During Runtime](/docs/user-guide/visualization/animation/use-parameters-to-adjust-animation-during-runtime/)

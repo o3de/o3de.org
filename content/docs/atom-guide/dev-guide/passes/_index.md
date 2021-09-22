@@ -23,6 +23,6 @@ Passes are a means to produce a desired visual effect. To demonstrate, consider 
 This section covers the following topics.
 | Topics                        | Description |
 |--------------------------------------|---------|
-| [Pass System](pass-system.md) | An overview of the pass system in Atom. |
-| [Pass Template File Specification](pass-template-file-spec.md) | JSON reference for pass template data (`*.pass` files). |
-| [Authoring Passes](authoring-passes.md) | Learn how to author passes in the pass system.  |
+| [Pass System](pass-system/) | An overview of the pass system in Atom. |
+| [Pass Template File Specification](pass-template-file-spec/) | JSON reference for pass template data (`*.pass` files). |
+| [Authoring Passes](authoring-passes/) | Learn how to author passes in the pass system.  |

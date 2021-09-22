@@ -22,8 +22,10 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
   + Right-click the graph, and choose **Align**, **Align top**.
 
   The following animated images show the first two methods.
-![Aligning nodes to the top in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-14.gif)
-![Aligning nodes to the top in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-15.gif)
+
+  ![Aligning nodes to the top in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-14.gif)
+
+  ![Aligning nodes to the top in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-15.gif)
 
 **To align all nodes in a selection to the bottommost node**
 + Use one of the following methods:
@@ -32,8 +34,10 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
   + Right-click the graph, and choose **Align**, **Align bottom**.
 
   The following animated images show the first two methods.
-![Aligning nodes to the bottom in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-16.gif)
-![Aligning nodes to the bottom in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-17.gif)
+
+  ![Aligning nodes to the bottom in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-16.gif)
+
+  ![Aligning nodes to the bottom in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-17.gif)
 
 **To align all nodes in a selection to the leftmost node**
 + Use one of the following methods:
@@ -42,8 +46,10 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
   + Right-click the graph, and choose **Align**, **Align left**.
 
   The following animated images show the first two methods.
-![Aligning nodes to the left in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-18.gif)
-![Aligning nodes to the left in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-19.gif)
+
+  ![Aligning nodes to the left in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-18.gif)
+
+  ![Aligning nodes to the left in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-19.gif)
 
 **To align all nodes in a selection to the rightmost node**
 + Use one of the following methods:
@@ -52,5 +58,7 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
   + Right-click the graph, and choose **Align**, **Align right**.
 
   The following animated images show the first two methods.
-![Aligning nodes to the right in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-20.gif)
-![Aligning nodes to the right in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-21.gif)
+
+  ![Aligning nodes to the right in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-20.gif)
+
+  ![Aligning nodes to the right in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-21.gif)

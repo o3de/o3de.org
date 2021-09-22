@@ -12,6 +12,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 **To start the Universal Remote Console**
 
 1. Run `Tools\RemoteConsole\RemoteConsole.exe`
+
 ![The Remote Console](/images/user-guide/remote-console.png)
 
 1. To see output from the O3DE logging system, click the **Full Log** tab.
@@ -28,7 +29,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 
 1. After you update the `.cfg` file, deploy the game to mobile devices.
 
-   For more information, see [Deploy with O3DE Editor](/docs/userguide/mobile/android/build-deploy#run-the-deployment-tool) and [Creating a Release App](/docs/user-guide/platforms/ios/creating-release-app.md).
+   For more information, see [Deploy with O3DE Editor](/docs/userguide/mobile/android/build-deploy#run-the-deployment-tool) and [Creating a Release App](/docs/user-guide/platforms/ios/creating-release-app/).
 
 1. If the game is already running, restart it.
 

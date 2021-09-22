@@ -8,7 +8,7 @@ You can process animation sequences from a single `.fbx` file as **Motions**. Ea
 **Important**
 Animation in your `.fbx` should be *baked*, that is, each animated channel should be keyed at every frame. Third-party animation applications might use functions and simulations to interpolate between keyframes and the results are not exported from your `.fbx` file unless the animation is baked into the animation channels.
 
-For more information, see [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types.md).
+For more information, see [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types/).
 
 **Contents**
 + [Motions tab properties](#fbx-settings-motions-tab-properties)

@@ -87,7 +87,7 @@ Knowing these calculations helps you determine the right font texture size for t
 
 **To determine the right font texture size for your game UI**
 
-1. [Create the font `.font` file](/docs/userguide/ui/fonts/adding-fonts#create-font-xml-file) for the font to use.
+1. [Create the font `.font` file](adding-fonts/) for the font to use.
 
 1. Choose an arbitrary font texture size to start with, such as 512x256 as used in the previous example.
 

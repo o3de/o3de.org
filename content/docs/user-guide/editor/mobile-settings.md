@@ -69,10 +69,12 @@ You can link similar properties to each other. When you link properties to one a
 1. You can enable or disable any link. To enable a link, click the icon. All properties that it links to are updated with the current value.
 
    When a property's link is enabled and linked to a valid property, the link icon appears intact and has an orange outline.
-![The Bundle Identifier property is linked to the Android Package Name.](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-1.png)
+
+   ![The Bundle Identifier property is linked to the Android Package Name.](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-1.png)
 
    When a property's link is broken or disabled, the link icon appears broken and without an orange outline.
-![The Package Name property is linked to the iOS Bundle Identifier.](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-2.png)
+
+   ![The Package Name property is linked to the iOS Bundle Identifier.](/images/user-guide/mobile/mobile-project-settings-tool-using-linked-properties-2.png)
 
 1. To disable a link, click the icon again.
 
