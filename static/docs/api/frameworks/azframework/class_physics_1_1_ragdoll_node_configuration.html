@@ -138,9 +138,9 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:abb115de2ed1c5806c6632c7f92fc4131"><td class="memItemLeft" align="right" valign="top"><a id="abb115de2ed1c5806c6632c7f92fc4131"></a>
-AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_joint_limit_configuration.html">JointLimitConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_jointLimit</b></td></tr>
-<tr class="separator:abb115de2ed1c5806c6632c7f92fc4131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733ff18fb06358df3be4092d14686ab4"><td class="memItemLeft" align="right" valign="top"><a id="a733ff18fb06358df3be4092d14686ab4"></a>
+AZStd::shared_ptr&lt; <a class="el" href="struct_az_physics_1_1_joint_configuration.html">AzPhysics::JointConfiguration</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_jointConfig</b></td></tr>
+<tr class="separator:a733ff18fb06358df3be4092d14686ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_struct_az_physics_1_1_rigid_body_configuration')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="struct_az_physics_1_1_rigid_body_configuration.html">AzPhysics::RigidBodyConfiguration</a></td></tr>
 <tr class="memitem:a5009de1ec471bb38bd85a26bff8bfcc4 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="a5009de1ec471bb38bd85a26bff8bfcc4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR_DECL</b></td></tr>
@@ -205,6 +205,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_computeInertiaTenso
 <tr class="memitem:a1acc9960d956372099a9c105f8fb35cc inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="a1acc9960d956372099a9c105f8fb35cc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_computeMass</b> = true</td></tr>
 <tr class="separator:a1acc9960d956372099a9c105f8fb35cc inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa385045b343162f339974f7ad3064242 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="aa385045b343162f339974f7ad3064242"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockLinearX</b> = false</td></tr>
+<tr class="separator:aa385045b343162f339974f7ad3064242 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81c3be0e970318259e48e8e119734c68 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="a81c3be0e970318259e48e8e119734c68"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockLinearY</b> = false</td></tr>
+<tr class="separator:a81c3be0e970318259e48e8e119734c68 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97fd08b121c2e4590893ff104f572da0 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="a97fd08b121c2e4590893ff104f572da0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockLinearZ</b> = false</td></tr>
+<tr class="separator:a97fd08b121c2e4590893ff104f572da0 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc31cd8d8e9f0b03f967a06e8fc5d395 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="acc31cd8d8e9f0b03f967a06e8fc5d395"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockAngularX</b> = false</td></tr>
+<tr class="separator:acc31cd8d8e9f0b03f967a06e8fc5d395 inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f92e7d23a150310aea8051dbcc391a inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="a54f92e7d23a150310aea8051dbcc391a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockAngularY</b> = false</td></tr>
+<tr class="separator:a54f92e7d23a150310aea8051dbcc391a inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720b691f7236ddd3bb2d0ecce86df08f inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="a720b691f7236ddd3bb2d0ecce86df08f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_lockAngularZ</b> = false</td></tr>
+<tr class="separator:a720b691f7236ddd3bb2d0ecce86df08f inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac902e2bc348d169dd88d3d30baff464a inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="memItemLeft" align="right" valign="top"><a id="ac902e2bc348d169dd88d3d30baff464a"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_physics_1_1_rigid_body_configuration.html#ac902e2bc348d169dd88d3d30baff464a">m_includeAllShapesInMassCalculation</a> = false</td></tr>
 <tr class="memdesc:ac902e2bc348d169dd88d3d30baff464a inherit pub_attribs_struct_az_physics_1_1_rigid_body_configuration"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, non-simulated shapes will also be included in the mass properties calculation. <br /></td></tr>
@@ -262,7 +280,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:25 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:50 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

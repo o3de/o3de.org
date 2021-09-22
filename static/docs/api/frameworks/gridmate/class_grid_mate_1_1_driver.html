@@ -142,16 +142,16 @@ virtual ResultCode&#160;</td><td class="memItemRight" valign="bottom"><a class="
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_driver.html#a43b358d3dda32d1c12c14d13e950e8f5">WasStopeedWaitingForData</a> ()=0</td></tr>
 <tr class="memdesc:a43b358d3dda32d1c12c14d13e950e8f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if WaitForData was interrupted before the timeOut expired, otherwise false. <br /></td></tr>
 <tr class="separator:a43b358d3dda32d1c12c14d13e950e8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e3b0eaf149228728f87cf4d1a942174"><td class="memItemLeft" align="right" valign="top">virtual AZStd::intrusive_ptr&lt; <a class="el" href="class_grid_mate_1_1_driver_address.html">DriverAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_driver.html#a1e3b0eaf149228728f87cf4d1a942174">CreateDriverAddress</a> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;address)=0</td></tr>
-<tr class="separator:a1e3b0eaf149228728f87cf4d1a942174"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b42c7ea6e07e0f7b416ee821a92092"><td class="memItemLeft" align="right" valign="top">virtual AZStd::intrusive_ptr&lt; <a class="el" href="class_grid_mate_1_1_driver_address.html">DriverAddress</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_driver.html#a20b42c7ea6e07e0f7b416ee821a92092">CreateDriverAddress</a> (const AZStd::string &amp;address)=0</td></tr>
+<tr class="separator:a20b42c7ea6e07e0f7b416ee821a92092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2a7d1125cef23fc0cd1701aa5c2da2"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_driver.html#a1f2a7d1125cef23fc0cd1701aa5c2da2">CanSend</a> () const</td></tr>
 <tr class="separator:a1f2a7d1125cef23fc0cd1701aa5c2da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a6c35d663d22677402658c528de50cdec"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_driver.html#a6c35d663d22677402658c528de50cdec">IPPortToAddress</a> (const char *ip, unsigned int port) const =0</td></tr>
-<tr class="separator:a6c35d663d22677402658c528de50cdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8875df0b95e8f8fd09350607ccf4abf0"><td class="memItemLeft" align="right" valign="top"><a id="a8875df0b95e8f8fd09350607ccf4abf0"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddressToIPPort</b> (const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;address, <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;ip, unsigned int &amp;port) const =0</td></tr>
-<tr class="separator:a8875df0b95e8f8fd09350607ccf4abf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb8ee83801ec6a44035174ab8d2ca31"><td class="memItemLeft" align="right" valign="top">virtual AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_grid_mate_1_1_driver.html#adcb8ee83801ec6a44035174ab8d2ca31">IPPortToAddress</a> (const char *ip, unsigned int port) const =0</td></tr>
+<tr class="separator:adcb8ee83801ec6a44035174ab8d2ca31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6394ea081f0f865ca0e524e0a3aa6571"><td class="memItemLeft" align="right" valign="top"><a id="a6394ea081f0f865ca0e524e0a3aa6571"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>AddressToIPPort</b> (const AZStd::string &amp;address, AZStd::string &amp;ip, unsigned int &amp;port) const =0</td></tr>
+<tr class="separator:a6394ea081f0f865ca0e524e0a3aa6571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -237,8 +237,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 
 </div>
 </div>
-<a id="a1e3b0eaf149228728f87cf4d1a942174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e3b0eaf149228728f87cf4d1a942174">&#9670;&nbsp;</a></span>CreateDriverAddress()</h2>
+<a id="a20b42c7ea6e07e0f7b416ee821a92092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20b42c7ea6e07e0f7b416ee821a92092">&#9670;&nbsp;</a></span>CreateDriverAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,7 +249,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
         <tr>
           <td class="memname">virtual AZStd::intrusive_ptr&lt;<a class="el" href="class_grid_mate_1_1_driver_address.html">DriverAddress</a>&gt; GridMate::Driver::CreateDriverAddress </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> &amp;&#160;</td>
+          <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>address</em></td><td>)</td>
           <td></td>
         </tr>
@@ -264,7 +264,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 <dd>
 <a class="el" href="class_grid_mate_1_1_driver.html">Driver</a> address allocates internal resources, use it only when you intend to communicate. Otherwise operate with the string address. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a5d3476e50530e0bfc9ca925628c527ce">GridMate::SocketDriverCommon</a>, and <a class="el" href="class_grid_mate_1_1_socket_driver.html#a92743380961accfe8b4746e08f90f541">GridMate::SocketDriver</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a650b15a8aa60284822b342c728a9e1b4">GridMate::SocketDriverCommon</a>, and <a class="el" href="class_grid_mate_1_1_socket_driver.html#a4963d7850dfda5f1630cd971457dc80a">GridMate::SocketDriver</a>.</p>
 
 </div>
 </div>
@@ -294,7 +294,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 <p>Return maximum number of active connections at the same time. </p>
 <p>Platform specific functionality. </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_stream_socket_driver.html#a1ac4fcbb062fd5e8f875af9258079570">GridMate::StreamSocketDriver</a>, and <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#accc2f377ae7431fc1a304114e42b8662">GridMate::SocketDriverCommon</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#adc4f0ea82220cf8ec3c8d5c11bd3cc70">GridMate::SocketDriverCommon</a>, and <a class="el" href="class_grid_mate_1_1_stream_socket_driver.html#a1ac4fcbb062fd5e8f875af9258079570">GridMate::StreamSocketDriver</a>.</p>
 
 </div>
 </div>
@@ -368,12 +368,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a5f67e8ac99fcb24f2ae47c1d341f7d35">GridMate::SocketDriverCommon</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a7ec0cf696a869100bc5743e031c39eb8">GridMate::SocketDriverCommon</a>.</p>
 
 </div>
 </div>
-<a id="a6c35d663d22677402658c528de50cdec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c35d663d22677402658c528de50cdec">&#9670;&nbsp;</a></span>IPPortToAddress()</h2>
+<a id="adcb8ee83801ec6a44035174ab8d2ca31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcb8ee83801ec6a44035174ab8d2ca31">&#9670;&nbsp;</a></span>IPPortToAddress()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -382,7 +382,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="namespace_grid_mate.html#a5ea6ed0f635b270ab1a96cf6c5deef51">string</a> GridMate::Driver::IPPortToAddress </td>
+          <td class="memname">virtual AZStd::string GridMate::Driver::IPPortToAddress </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
@@ -407,7 +407,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 </div><div class="memdoc">
 <p>Address conversion functionality. They MUST implemented thread safe. Generally this is not a problem since they just part local data. Create address from ip and port. If ip == NULL we will assign a broadcast address. </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a265f9adbe4bca08cd7f1b6abb583fef1">GridMate::SocketDriverCommon</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a063f155171d4cd0a0833cf62742b687d">GridMate::SocketDriverCommon</a>.</p>
 
 </div>
 </div>
@@ -458,7 +458,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 </div><div class="memdoc">
 <p>Receives a datagram and stores the source address. maxDataSize must be &gt;= than <a class="el" href="class_grid_mate_1_1_driver.html#a895218e87b2ac7f34be60e429c4e39a5" title="Return maximum data size we can send/receive at once in bytes, supported by the platform.">GetMaxSendSize()</a>. Returns the num of of received bytes. </p><dl class="section note"><dt>Note</dt><dd>If a datagram from a new connection is received, NewConnectionCB will be called. If it rejects the connection the returned from pointer will be NULL while the actual data will be returned. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a8b56ed75614aa4558982a48bd65bf4ad">GridMate::SocketDriverCommon</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a6da1e62d7d3a0ba06fa952cd90ec6235">GridMate::SocketDriverCommon</a>.</p>
 
 </div>
 </div>
@@ -486,7 +486,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 </div><div class="memdoc">
 <p>When you enter wait for data mode, for many reasons you might want to stop wait for data. If you implement this function you need to make sure it's a thread safe function. </p>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#af8fd900397193788ff5dca852c5bc564">GridMate::SocketDriverCommon</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a78c7c6833f61f8075ebe5d4aae52a523">GridMate::SocketDriverCommon</a>.</p>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 </div><div class="memdoc">
 <p>Wait for data to be to the ready for receive. Time out is the maximum time to wait before this function returns. If left to default value it will be in blocking mode (wait until data is ready to be received). </p><dl class="section return"><dt>Returns</dt><dd>true if there is data to be received (always true if timeOut == 0), otherwise false. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#a78d7b205770de2214ee1f84a4d14d953">GridMate::SocketDriverCommon</a>.</p>
+<p>Implemented in <a class="el" href="class_grid_mate_1_1_socket_driver_common.html#ad40aab6eace5ad56fe0f163de005e6d3">GridMate::SocketDriverCommon</a>.</p>
 
 </div>
 </div>
@@ -525,7 +525,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DriverAddress</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:43 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:11 for Open 3D Engine GridMate API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

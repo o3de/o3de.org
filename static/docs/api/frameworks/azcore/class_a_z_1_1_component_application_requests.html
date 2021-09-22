@@ -117,8 +117,6 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a13128de7f3fbf3d18345486f236f6b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a836c4e687ce70245adfd15664894c7ca"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a836c4e687ce70245adfd15664894c7ca">GetExecutableFolder</a> () const =0</td></tr>
 <tr class="separator:a836c4e687ce70245adfd15664894c7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fbf22d5ce55c32b9fb3f3de9e9483d4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">Debug::DrillerManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a6fbf22d5ce55c32b9fb3f3de9e9483d4">GetDrillerManager</a> ()=0</td></tr>
-<tr class="separator:a6fbf22d5ce55c32b9fb3f3de9e9483d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639bd4f531de5d5636544e490f2e1ab0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#a639bd4f531de5d5636544e490f2e1ab0">ResolveModulePath</a> ([[maybe_unused]] <a class="el" href="class_a_z_std_1_1basic__string.html">AZ::OSString</a> &amp;modulePath)</td></tr>
 <tr class="separator:a639bd4f531de5d5636544e490f2e1ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1084301380fb15163c0f5464e52bdc4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_a_z_1_1_command_line.html">AZ::CommandLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_component_application_requests.html#ab1084301380fb15163c0f5464e52bdc4">GetAzCommandLine</a> ()</td></tr>
@@ -380,32 +378,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 <p>Returns the behavior context that was registered with the app. </p><dl class="section return"><dt>Returns</dt><dd>The behavior context, if there is one. <a class="el" href="class_a_z_1_1_behavior_context.html">BehaviorContext</a> is a class that reflects classes, methods, and EBuses for runtime interaction. </dd></dl>
-
-</div>
-</div>
-<a id="a6fbf22d5ce55c32b9fb3f3de9e9483d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fbf22d5ce55c32b9fb3f3de9e9483d4">&#9670;&nbsp;</a></span>GetDrillerManager()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="class_a_z_1_1_debug_1_1_driller_manager.html">Debug::DrillerManager</a>* AZ::ComponentApplicationRequests::GetDrillerManager </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns a pointer to the driller manager, if driller is enabled. The driller manager manages all active driller sessions and driller factories. </p><dl class="section return"><dt>Returns</dt><dd>A pointer to the driller manager. If driller is not enabled, this function returns null. </dd></dl>
 
 </div>
 </div>
@@ -912,7 +884,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:45 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:05 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -46,6 +46,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#friends">Friends</a> &#124;
@@ -94,13 +95,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a240c63e101e8d4ec586936fa15974e20"><td class="memItemLeft" align="right" valign="top"><a id="a240c63e101e8d4ec586936fa15974e20"></a>
 <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">RHI::ShaderInputImageUnboundedArrayIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindShaderInputImageUnboundedArrayIndex</b> (const Name &amp;name) const</td></tr>
 <tr class="separator:a240c63e101e8d4ec586936fa15974e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c008c9fc8731d56ecc34da2fc8066b6"><td class="memItemLeft" align="right" valign="top"><a id="a2c008c9fc8731d56ecc34da2fc8066b6"></a>
-const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a2c008c9fc8731d56ecc34da2fc8066b6">GetAsset</a> () const</td></tr>
-<tr class="memdesc:a2c008c9fc8731d56ecc34da2fc8066b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent shader resource group asset. <br /></td></tr>
-<tr class="separator:a2c008c9fc8731d56ecc34da2fc8066b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a059e023f45b07ea8cab2f61990c5663a"><td class="memItemLeft" align="right" valign="top"><a id="a059e023f45b07ea8cab2f61990c5663a"></a>
-const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a059e023f45b07ea8cab2f61990c5663a">GetLayout</a> () const</td></tr>
-<tr class="memdesc:a059e023f45b07ea8cab2f61990c5663a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RHI shader resource group layout. <br /></td></tr>
+<tr class="memitem:a059e023f45b07ea8cab2f61990c5663a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a059e023f45b07ea8cab2f61990c5663a">GetLayout</a> () const</td></tr>
+<tr class="memdesc:a059e023f45b07ea8cab2f61990c5663a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the RHI shader resource group layout.  <a href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a059e023f45b07ea8cab2f61990c5663a">More...</a><br /></td></tr>
 <tr class="separator:a059e023f45b07ea8cab2f61990c5663a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4539b03c37cefc0e62c3adf59d3e86b0"><td class="memItemLeft" align="right" valign="top"><a id="a4539b03c37cefc0e62c3adf59d3e86b0"></a>
 <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group.html">RHI::ShaderResourceGroup</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a4539b03c37cefc0e62c3adf59d3e86b0">GetRHIShaderResourceGroup</a> ()</td></tr>
@@ -360,26 +356,105 @@ AZStd::array_view&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bo
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f224e74b43cbe7ec908dba23790bcd2"><td class="memItemLeft" align="right" valign="top"><a id="a1f224e74b43cbe7ec908dba23790bcd2"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a1f224e74b43cbe7ec908dba23790bcd2">FindOrCreate</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;srgAsset)</td></tr>
-<tr class="memdesc:a1f224e74b43cbe7ec908dba23790bcd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates or returns an existing streaming image instance using its paired asset. <br /></td></tr>
-<tr class="separator:a1f224e74b43cbe7ec908dba23790bcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42a58d7221ba33a8964d04de294ec6ba"><td class="memItemLeft" align="right" valign="top"><a id="a42a58d7221ba33a8964d04de294ec6ba"></a>
-static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a42a58d7221ba33a8964d04de294ec6ba">Create</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group_asset.html">ShaderResourceGroupAsset</a> &gt; &amp;srgAsset)</td></tr>
-<tr class="memdesc:a42a58d7221ba33a8964d04de294ec6ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a unique shader resource group instance using its paired asset. <br /></td></tr>
-<tr class="separator:a42a58d7221ba33a8964d04de294ec6ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba6c995d8a7158a902324954232572e3"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#aba6c995d8a7158a902324954232572e3">Create</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const AZ::Name &amp;srgName)</td></tr>
+<tr class="separator:aba6c995d8a7158a902324954232572e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ac76dc6663eb5cea44fa4be30dbf760"><td class="memItemLeft" align="right" valign="top">static Data::Instance&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html#a8ac76dc6663eb5cea44fa4be30dbf760">Create</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;shaderAsset, const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;supervariantIndex, const AZ::Name &amp;srgName)</td></tr>
+<tr class="separator:a8ac76dc6663eb5cea44fa4be30dbf760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a70b04e69b416446a007ccf02ad66e61a"><td class="memItemLeft" align="right" valign="top"><a id="a70b04e69b416446a007ccf02ad66e61a"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderSystem</b></td></tr>
 <tr class="separator:a70b04e69b416446a007ccf02ad66e61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dbc61c131fa9779f46c78e0141a101b"><td class="memItemLeft" align="right" valign="top"><a id="a8dbc61c131fa9779f46c78e0141a101b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>ShaderResourceGroupPool</b></td></tr>
+<tr class="separator:a8dbc61c131fa9779f46c78e0141a101b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is an RPI extension to the RHI shader resource group class. It provides support for instantiation from an asset, as well as assignment of RPI resource types.</p>
 <p>This class supports assignment of both RPI and RHI types. If an RPI resource is bound at a specific location, the class will hold <em>both</em> the RPI and RHI references. On the other hand, if an RHI resource is bound, any previously held RPI resource is <em>cleared</em>. Therefore, it's possible that querying for an RPI resource will return null while querying the same location for an RHI resource will return a valid entry.</p>
 <p>If RHI validation is enabled, the class will perform error checking. If a setter method fails an error is emitted and the call returns false without performing the requested operation. Likewise, if a getter method fails, an error is emitted and an empty value or empty array is returned. If validation is disabled, the operation is always performed. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aba6c995d8a7158a902324954232572e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba6c995d8a7158a902324954232572e3">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>&gt; AZ::RPI::ShaderResourceGroup::Create </td>
+          <td>(</td>
+          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shaderAsset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>srgName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Instantiates a unique shader resource group instance using its paired asset but with a random InstanceId. This version uses the system-wide supervariant (if available) specified by the <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_system.html">ShaderSystem</a> or the Default supervariant. </p>
+
+</div>
+</div>
+<a id="a8ac76dc6663eb5cea44fa4be30dbf760"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ac76dc6663eb5cea44fa4be30dbf760">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Data::Instance&lt;<a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_resource_group.html">ShaderResourceGroup</a>&gt; AZ::RPI::ShaderResourceGroup::Create </td>
+          <td>(</td>
+          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_asset.html">ShaderAsset</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>shaderAsset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_handle.html">SupervariantIndex</a> &amp;&#160;</td>
+          <td class="paramname"><em>supervariantIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZ::Name &amp;&#160;</td>
+          <td class="paramname"><em>srgName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Instantiates a unique shader resource group instance using its paired asset but with a random InstanceId. This version uses the supervariant specified by the caller. </p>
+
+</div>
+</div>
 <a id="a5912232cafac2a927fa93002e3778e98"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5912232cafac2a927fa93002e3778e98">&#9670;&nbsp;</a></span>GetConstant() <span class="overload">[1/2]</span></h2>
 
@@ -453,13 +528,33 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a059e023f45b07ea8cab2f61990c5663a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a059e023f45b07ea8cab2f61990c5663a">&#9670;&nbsp;</a></span>GetLayout()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_layout.html">RHI::ShaderResourceGroupLayout</a>* AZ::RPI::ShaderResourceGroup::GetLayout </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the RHI shader resource group layout. </p>
+<p>Returns the parent shader shader asset where the SRG layout data came from. const Data::Asset&lt;ShaderAsset&gt;&amp; GetAsset() const; </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Public/Shader/ShaderResourceGroup.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

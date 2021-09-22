@@ -51,6 +51,9 @@ $(function() {
 <li>ActivateTracking()
 : <a class="el" href="class_multiplayer_1_1_i_entity_domain.html#a05456197e8c74b559d3f1507ad4be861">Multiplayer::IEntityDomain</a>
 </li>
+<li>AddClientDisconnectedHandler()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a2253c36fac532ea74758248217f51dc7">Multiplayer::IMultiplayer</a>
+</li>
 <li>AddConnectionAcquiredHandler()
 : <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a2a5cf5ec4a68f412e289de2236184486">Multiplayer::IMultiplayer</a>
 </li>
@@ -80,6 +83,9 @@ $(function() {
 </li>
 <li>AllocateComponentInput()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_component_registry.html#a78df6d20ab60992b95dd72f8bdbb12cb">Multiplayer::MultiplayerComponentRegistry</a>
+</li>
+<li>AlterBlendFactor()
+: <a class="el" href="class_multiplayer_1_1_i_network_time.html#ae88fab5b49fd2e09866b061b076c6338">Multiplayer::INetworkTime</a>
 </li>
 <li>AlterTime()
 : <a class="el" href="class_multiplayer_1_1_i_network_time.html#ab382d2eb3c1f6577f6ba758d7671e0de">Multiplayer::INetworkTime</a>
@@ -113,17 +119,23 @@ $(function() {
 <li>Compare()
 : <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#a7c29a0aa2962e9d37a7ebcb64647a6a0">Multiplayer::ConstNetworkEntityHandle</a>
 </li>
+<li>Connect()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a15e2c1049799e1c9c7ff6d036e7de92c">Multiplayer::IMultiplayer</a>
+</li>
 <li>ConstNetworkEntityHandle()
-: <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#aff13f8812e4cabef095872ee2c272625">Multiplayer::ConstNetworkEntityHandle</a>
+: <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#a5059ff22dbdb8ee9d29470f7c30ea97a">Multiplayer::ConstNetworkEntityHandle</a>
 </li>
 <li>copy_values()
 : <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a4d7f24fd86149358dae998df49ef64c4">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
 </li>
 <li>CreateEntitiesImmediate()
-: <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ac0de948ecacc32db3eab197ea558a1f7">Multiplayer::INetworkEntityManager</a>
+: <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#afc8265baaa91743e208150fdda98a28c">Multiplayer::INetworkEntityManager</a>
 </li>
 <li>CreateInput()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a3555c7eb2f7d27940d0e8196b5c19dce">Multiplayer::MultiplayerController</a>
+</li>
+<li>CreateInputFromScript()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a732770691746a222ac1c60bb2cf43062">Multiplayer::MultiplayerController</a>
 </li>
 </ul>
 
@@ -160,6 +172,9 @@ $(function() {
 <li>FindController()
 : <a class="el" href="class_multiplayer_1_1_network_entity_handle.html#a7989901067c89064c0f7e13837e918ea">Multiplayer::NetworkEntityHandle</a>
 </li>
+<li>ForceSetTime()
+: <a class="el" href="class_multiplayer_1_1_i_network_time.html#a58526962d7fda24328dafbc92da848d9">Multiplayer::INetworkTime</a>
+</li>
 </ul>
 
 
@@ -191,6 +206,9 @@ $(function() {
 <li>GetConnectionDataType()
 : <a class="el" href="class_multiplayer_1_1_i_connection_data.html#ae02983d08199a18ef82984dd95989f37">Multiplayer::IConnectionData</a>
 </li>
+<li>GetCurrentBlendFactor()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a6fcdc298e5de47ff9ff5eeeeef92b4f7">Multiplayer::IMultiplayer</a>
+</li>
 <li>GetCurrentHostTimeMs()
 : <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a220460c811310f8bd548d021e43f26f2">Multiplayer::IMultiplayer</a>
 </li>
@@ -205,7 +223,7 @@ $(function() {
 : <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a2e755aba4915bb29ca122fff075e1f5d">Multiplayer::INetworkEntityManager</a>
 </li>
 <li>GetEntityHandle()
-: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a7df7a4d4a9481f00edc8ed41a6036f60">Multiplayer::MultiplayerController</a>
+: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a238b42f1c0b45ecc5cb401097f5228ea">Multiplayer::MultiplayerController</a>
 </li>
 <li>GetEntityId()
 : <a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html#adb51eb7fbe47005365e1273513fb4cef">Multiplayer::NetworkEntityRpcMessage</a>
@@ -215,8 +233,14 @@ $(function() {
 : <a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html#af3754fcf51e24660550a771da161c615">Multiplayer::NetworkEntityRpcMessage</a>
 , <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a49b6b54978ce68dc18f9041159754940">Multiplayer::NetworkEntityUpdateMessage</a>
 </li>
+<li>GetFilterEntityManager()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aaa314d3205cd760ac85e0b4b435ecb36">Multiplayer::IMultiplayer</a>
+</li>
 <li>GetHasValidPrefabId()
 : <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a532e23118a23a65ed2664175f7b0b98f">Multiplayer::NetworkEntityUpdateMessage</a>
+</li>
+<li>GetHostBlendFactor()
+: <a class="el" href="class_multiplayer_1_1_i_network_time.html#a5a6ec813f8d0ddb12f70cb067d651ff0">Multiplayer::INetworkTime</a>
 </li>
 <li>GetHostFrameId()
 : <a class="el" href="class_multiplayer_1_1_i_network_time.html#afdf6175f6271bd63019a21850a6139af">Multiplayer::INetworkTime</a>
@@ -236,8 +260,8 @@ $(function() {
 <li>GetIsDelete()
 : <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a6ec7d9f553516290b5e4476b5620e678">Multiplayer::NetworkEntityUpdateMessage</a>
 </li>
-<li>GetMaxEntityReplicatorSendCount()
-: <a class="el" href="class_multiplayer_1_1_i_replication_window.html#a1ddecc0df99c38d339a22e6dcf876ab1">Multiplayer::IReplicationWindow</a>
+<li>GetMaxProxyEntityReplicatorSendCount()
+: <a class="el" href="class_multiplayer_1_1_i_replication_window.html#a4829ec07e8843aefb37cd64ec8d5bca5">Multiplayer::IReplicationWindow</a>
 </li>
 <li>GetMultiplayerComponentData()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_component_registry.html#ad075aa0d508226a0097f0aff1cdd26ee">Multiplayer::MultiplayerComponentRegistry</a>
@@ -253,6 +277,9 @@ $(function() {
 <li>GetNetEntityId()
 : <a class="el" href="class_multiplayer_1_1_const_network_entity_handle.html#a39198477d9f365af5c21aab25bf3c560">Multiplayer::ConstNetworkEntityHandle</a>
 , <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#ac43208ab443c80d8959ed9675c48c4be">Multiplayer::MultiplayerController</a>
+</li>
+<li>GetNetEntityIdById()
+: <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a482823c247421502ce88d484a07e6c09">Multiplayer::INetworkEntityManager</a>
 </li>
 <li>GetNetworkEntityAuthorityTracker()
 : <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a60658c3afc7ce1af8c7eaedeb4da9713">Multiplayer::INetworkEntityManager</a>
@@ -274,6 +301,9 @@ $(function() {
 </li>
 <li>GetPrefabEntityId()
 : <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a5fb9f3ba12f57bdb7b8da835bdf02bbe">Multiplayer::NetworkEntityUpdateMessage</a>
+</li>
+<li>GetPrevious()
+: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#ad1473810352e563386530f8335f4827d">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 </li>
 <li>GetReliability()
 : <a class="el" href="class_multiplayer_1_1_network_entity_rpc_message.html#aadd8ae72cdb0f855273729fce3ddbb62">Multiplayer::NetworkEntityRpcMessage</a>
@@ -312,6 +342,9 @@ $(function() {
 <li>HandleLocalRpcMessage()
 : <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#a0b9d2bb30895a67bc6538d7438b4deb3">Multiplayer::INetworkEntityManager</a>
 </li>
+<li>HideEntityBandwidthDebugOverlay()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer_debug.html#a038905c0b7db11a43a617e5b65c76595">Multiplayer::IMultiplayerDebug</a>
+</li>
 </ul>
 
 
@@ -331,6 +364,9 @@ $(function() {
 </li>
 <li>IsAutonomous()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#acad358ca001a6f50b9e1969b7bc2e693">Multiplayer::MultiplayerController</a>
+</li>
+<li>IsEntityFiltered()
+: <a class="el" href="class_multiplayer_1_1_i_filter_entity_manager.html#a961e3b9e2fd0e3d2d471228d0904bfce">Multiplayer::IFilterEntityManager</a>
 </li>
 <li>IsInDomain()
 : <a class="el" href="class_multiplayer_1_1_i_entity_domain.html#ae0ab12dbf1cd461675f7e4ddd9326e59">Multiplayer::IEntityDomain</a>
@@ -355,9 +391,10 @@ $(function() {
 </li>
 <li>IsProcessingInput()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a76bed642bc1c23263b20ccfdccba81b0">Multiplayer::MultiplayerController</a>
+, <a class="el" href="class_multiplayer_1_1_net_bind_component.html#a927f7aee2e17d23cdf9061eda26cf69f">Multiplayer::NetBindComponent</a>
 </li>
-<li>IsReplayingInput()
-: <a class="el" href="class_multiplayer_1_1_local_prediction_player_input_component_controller.html#a3ac30dee7c53eed28910e58d683f3d33">Multiplayer::LocalPredictionPlayerInputComponentController</a>
+<li>IsReprocessingInput()
+: <a class="el" href="class_multiplayer_1_1_net_bind_component.html#adfd019bd6b430922dae4203ef7b1362a">Multiplayer::NetBindComponent</a>
 </li>
 <li>IsTimeRewound()
 : <a class="el" href="class_multiplayer_1_1_i_network_time.html#a742814bd439c40e7b1067786cd3da900">Multiplayer::INetworkTime</a>
@@ -433,6 +470,9 @@ $(function() {
 <li>ProcessInput()
 : <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a70e2dcaaf5c71c763d3f7f864de5df83">Multiplayer::MultiplayerController</a>
 </li>
+<li>ProcessInputFromScript()
+: <a class="el" href="class_multiplayer_1_1_multiplayer_controller.html#a00028ee04445882e4bfbdf5bec751e82">Multiplayer::MultiplayerController</a>
+</li>
 <li>push_back()
 : <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a165b25c2644a11e21e5675eb77cd01a7">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
 </li>
@@ -456,10 +496,10 @@ $(function() {
 : <a class="el" href="class_multiplayer_1_1_i_entity_domain.html#ac9742d9d7b4c7da477efb80cac733ad6">Multiplayer::IEntityDomain</a>
 </li>
 <li>RewindableFixedVector()
-: <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a397cc5608d7fcf093aed1cd4a4768917">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
+: <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a1a17fcbdb9e2ec3ae3cb1f5fa80eeada">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
 </li>
 <li>RewindableObject()
-: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#abf14231ffa19f6d0d1f41274ac9144ea">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
+: <a class="el" href="class_multiplayer_1_1_rewindable_object.html#af3ae28b3c3b506863d2679ef30dbe8ce">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 </li>
 </ul>
 
@@ -481,6 +521,9 @@ $(function() {
 <li>SetData()
 : <a class="el" href="class_multiplayer_1_1_network_entity_update_message.html#a16762abcd7de5189b8bab394b28e2326">Multiplayer::NetworkEntityUpdateMessage</a>
 </li>
+<li>SetFilterEntityManager()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a8c6a35a25510858bab117d19f0c85e01">Multiplayer::IMultiplayer</a>
+</li>
 <li>SetOwningConnectionId()
 : <a class="el" href="class_multiplayer_1_1_rewindable_object.html#acc51d8c9159e21ddffb74ce94020c6ec">Multiplayer::RewindableObject&lt; BASE_TYPE, REWIND_SIZE &gt;</a>
 </li>
@@ -499,11 +542,24 @@ $(function() {
 <li>SetupNetEntity()
 : <a class="el" href="class_multiplayer_1_1_i_network_entity_manager.html#ab1eea949f3bac155bd09502cf8f0c7a2">Multiplayer::INetworkEntityManager</a>
 </li>
+<li>ShowEntityBandwidthDebugOverlay()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer_debug.html#a9e71a20204c5df1a5d6453f4c9060a83">Multiplayer::IMultiplayerDebug</a>
+</li>
 <li>size()
 : <a class="el" href="class_multiplayer_1_1_rewindable_fixed_vector.html#a89561eea4915edd1b3dce5645ce282e2">Multiplayer::RewindableFixedVector&lt; TYPE, SIZE &gt;</a>
 </li>
+<li>StartHosting()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#a7605ff65e96885170d4428ae09c293e3">Multiplayer::IMultiplayer</a>
+</li>
 <li>SyncEntitiesToRewindState()
 : <a class="el" href="class_multiplayer_1_1_i_network_time.html#a5df0d91a3660fd7791a5149b55b8a66f">Multiplayer::INetworkTime</a>
+</li>
+</ul>
+
+
+<h3><a id="index_t"></a>- t -</h3><ul>
+<li>Terminate()
+: <a class="el" href="class_multiplayer_1_1_i_multiplayer.html#aaf350f3ed0b827582bcb253e32654ceb">Multiplayer::IMultiplayer</a>
 </li>
 </ul>
 
@@ -523,7 +579,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

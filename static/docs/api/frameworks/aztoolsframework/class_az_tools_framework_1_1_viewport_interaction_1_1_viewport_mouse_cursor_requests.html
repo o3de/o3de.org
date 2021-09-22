@@ -53,7 +53,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Viewport requests for managing the viewport's cursor state.  
+<p>Viewport requests for managing the viewport cursor state.  
  <a href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#details">More...</a></p>
 
 <p><code>#include &lt;ViewportMessages.h&gt;</code></p>
@@ -68,53 +68,20 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#a578cec51a536718c9dece9522ff2dccb">EndCursorCapture</a> ()=0</td></tr>
 <tr class="memdesc:a578cec51a536718c9dece9522ff2dccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the cursor and ends locking it in place, allowing it to be moved freely. <br /></td></tr>
 <tr class="separator:a578cec51a536718c9dece9522ff2dccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83bb6240c48cd8dba0b1fd47548b7b43"><td class="memItemLeft" align="right" valign="top"><a id="a83bb6240c48cd8dba0b1fd47548b7b43"></a>
-virtual AzFramework::ScreenPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#a83bb6240c48cd8dba0b1fd47548b7b43">ViewportCursorScreenPosition</a> ()=0</td></tr>
-<tr class="memdesc:a83bb6240c48cd8dba0b1fd47548b7b43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the most recent recorded cursor position in the viewport in screen space coordinates. <br /></td></tr>
-<tr class="separator:a83bb6240c48cd8dba0b1fd47548b7b43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eb8ef1c73e781ad50db50a9c1209a12"><td class="memItemLeft" align="right" valign="top">virtual AZStd::optional&lt; AzFramework::ScreenPoint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#a2eb8ef1c73e781ad50db50a9c1209a12">PreviousViewportCursorScreenPosition</a> ()=0</td></tr>
-<tr class="separator:a2eb8ef1c73e781ad50db50a9c1209a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bf5496fc8d81e94d9a6892ae8e4c9d1"><td class="memItemLeft" align="right" valign="top"><a id="a0bf5496fc8d81e94d9a6892ae8e4c9d1"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_viewport_interaction_1_1_viewport_mouse_cursor_requests.html#a0bf5496fc8d81e94d9a6892ae8e4c9d1">IsMouseOver</a> () const =0</td></tr>
-<tr class="memdesc:a0bf5496fc8d81e94d9a6892ae8e4c9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is mouse over viewport. <br /></td></tr>
+<tr class="memdesc:a0bf5496fc8d81e94d9a6892ae8e4c9d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the mouse over the viewport. <br /></td></tr>
 <tr class="separator:a0bf5496fc8d81e94d9a6892ae8e4c9d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Viewport requests for managing the viewport's cursor state. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2eb8ef1c73e781ad50db50a9c1209a12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eb8ef1c73e781ad50db50a9c1209a12">&#9670;&nbsp;</a></span>PreviousViewportCursorScreenPosition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual AZStd::optional&lt;AzFramework::ScreenPoint&gt; AzToolsFramework::ViewportInteraction::ViewportMouseCursorRequests::PreviousViewportCursorScreenPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Gets the cursor position recorded prior to the most recent cursor position. Note: The cursor may be captured by the viewport, in which case this may not correspond to the last result from ViewportCursorScreenPosition. This method will always return the correct position to generate a mouse position delta. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Viewport requests for managing the viewport cursor state. </p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/Viewport/ViewportMessages.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:40 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:08 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
