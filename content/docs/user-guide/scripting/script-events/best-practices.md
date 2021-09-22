@@ -1,11 +1,11 @@
 ---
-description: ' Learn best practices for using script events in Open 3D Engine. '
-linktitle: Best practices
-title: Script events best practices
+linktitle: Best Practices
+title: Best Practices with Script Events
+description: Learn best practices when using script events in Open 3D Engine.
 weight: 400
 ---
 
-The following are some best practices for using script events.
+The following are some best practices for using script events in Open 3D Engine (O3DE).
 
 ## Ensure Entities are Activated Before Events are Sent 
 

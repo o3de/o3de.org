@@ -1,6 +1,6 @@
 ---
-description: null
 title: Using Script Events in Script Canvas
+description: Learn how to use script events with Script Canvas in Open 3D Engine.
 weight: 200
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Networking
-weight: 999
+weight: 950
 description: The user guide for Open 3D Engine's networking stack.
 ---
 
