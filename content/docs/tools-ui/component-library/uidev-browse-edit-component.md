@@ -39,12 +39,14 @@ When using a custom icon not provided by O3DE, the icon should be a multiple of 
 1.  **Tooltip**
 
    (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
-![component browse edit anatomy clear](/images/tools-ui/component-browse-edit-anatomy-clear.png)
+
+   ![component browse edit anatomy clear](/images/tools-ui/component-browse-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
    (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
-![component browse edit anatomy error state](/images/tools-ui/component-browse-edit-anatomy-error-state.png)
+
+   ![component browse edit anatomy error state](/images/tools-ui/component-browse-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 

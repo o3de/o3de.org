@@ -104,4 +104,5 @@ The final function graph should look like this:
    1. (Optional) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots.
 
 1. Finally, use **File**, **Save** to save the function and name it **Interpolate**. The function is now ready to use in a Script Canvas graph:
+
 ![When a function is used in a Script Canvas graph, it appears as a node, using the function's filename as the node name.](/images/user-guide/scripting/script-canvas/script-canvas-function-linear-interpolation-node.png)

@@ -31,6 +31,7 @@ When you create an entity, you add the NVIDIA Blast functionality and define how
 1. Add a **Blast Family** component to the entity. In **Entity Inspector**, choose **Add Component** and select **Blast Family** from the component list. The **Blast Family** component adds NVIDIA Blast functionality to the entity. For more information, see [Blast Family component](/docs/user-guide/components/reference/destruction/blast-family/).
 
 1. Set the **Blast asset** for the **Blast Family** component. Click the **Folder** button to the right of the **Blast asset** property and choose the `.blast` asset in the Blast Asset selection window.
+
 ![Add the .blast asset to the Blast Family component.](/images/user-guide/physx/blast/ui-blast-add-blast-asset.png)
 
 1. Set the **Blast Material** for the **Blast Family** component. Blast materials define how much damage various forces cause to the bonds holding the fractured asset together, and how much damage is required to cause destruction. For more information see [Specify destruction properties with Blast materials](/docs/user-guide/interactivity/physics/nvidia-blast/materials/).
@@ -52,7 +53,8 @@ If you have manually edited your mesh assets with **FBX Settings**, follow the s
 1. In the **Blast Family Mesh Data** component, set the **Blast Slice** property. Click the **Folder** button to the right of the **Blast Slice** property and select the asset from the Blast Slice selection window.
 
    Enable the **Show mesh assets** property if you would like to view the mesh list.
-![Add the blast slice asset to the Blast Family Mesh Data component.](/images/user-guide/physx/blast/ui-blast-add-blast-mesh-data.png)
+
+   ![Add the blast slice asset to the Blast Family Mesh Data component.](/images/user-guide/physx/blast/ui-blast-add-blast-mesh-data.png)
 
 1. The entity is now set up to simulate destruction. Continue to the section: [Test NVIDIA Blast destruction simulation](#nvidia-blast-simulate-destruction).
 
@@ -71,6 +73,7 @@ If your NVIDIA Blast mesh assets have been manually edited in **FBX Settings**, 
 1. Add a mesh to the list. Click the **Folder** button to the right of the numbered mesh slot property and select a mesh asset from the **Static Mesh** selection window.
 
 1. Repeat steps **3** and **4** until all of the meshes for the blast asset have been added to the **Blast family mesh data** component.
+
 ![Add mesh assets manually to the Blast Family Mesh Data component.](/images/user-guide/physx/blast/ui-blast-family-mesh-data-add-mesh.png)
 
 1. The entity is now set up to simulate destruction. Continue to the section: [Test NVIDIA Blast destruction simulation](#nvidia-blast-simulate-destruction).

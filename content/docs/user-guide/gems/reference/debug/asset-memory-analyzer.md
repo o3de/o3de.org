@@ -47,6 +47,7 @@ Snapshots of asset memory allocation can be exported to `JSON` or `CSV` files th
 
 * Click Asset Memory Analyzer in the ImGUI overlay window and choose **Export JSON** or **Export CSV**.
 * 
+
 ![Snapshot output options for the Asset Memory Analyzer.](/images/user-guide/gems/assetmemoryanalyzer/ui-asset-memory-analyzer-C.png)
 
 * Use the console commands `assetmem_export_json` or `assetmem_export_csv` in  Editor Console to generate the file.

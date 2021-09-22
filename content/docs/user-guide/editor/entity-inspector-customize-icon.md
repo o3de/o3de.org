@@ -12,6 +12,7 @@ You can also specify your own icon.
 1. In the **Entity Inspector**, click the icon image at the top.
 
 1. Choose **Set custom icon**.
+
 ![Image NOT FOUND](/images/user-guide/component/entity_system/component-working-customize.png)
 
 1. Select an icon from your game project directory.

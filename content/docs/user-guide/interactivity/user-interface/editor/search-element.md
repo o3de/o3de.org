@@ -47,4 +47,5 @@ After you select one or more UI elements, you can choose to select them in your 
 1. Choose **Select in Hiearchy**.
 
    The **Hierarchy** panel appears, with the same UI elements selected.
-![Choose Select in Hierarchy to transfer your selections to the Hierarchy panel.](/images/user-guide/game_ui_editor/ui-editor-search-element-hierarchy.png)
+
+   ![Choose Select in Hierarchy to transfer your selections to the Hierarchy panel.](/images/user-guide/game_ui_editor/ui-editor-search-element-hierarchy.png)

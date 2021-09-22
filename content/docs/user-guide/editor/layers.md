@@ -25,9 +25,11 @@ When you create a layer, you can add entities to that layer. This helps you orga
 1. In O3DE Editor, choose **Tools**, **Entity Outliner**.
 
 1. In the **Entity Outliner**, right-click and choose **Create layer**.
+
 ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/creating-layers.png)
 
 1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**.
+
 ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers-inspector.png)
 ****
 
@@ -43,7 +45,8 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 1. You can do the following in the context menu.
 
    Actions highlighted in yellow affect the selected layer. The other options are standard context menu actions that don't affect the selected layer.
-![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers.png)
+
+   ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers.png)
 
    The following options in the context menu perform actions on the selected layer.
 ****
