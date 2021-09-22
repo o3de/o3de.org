@@ -51,7 +51,7 @@ cmake -B build/linux -S . -G"Ninja Multi-Config" -DCMAKE_C_COMPILER=clang-12 -DC
 
 ### Single Config Builds
 
-If you do not need to generate multi-config build folders, you can instead specify "Unix Makefiles" instead, but will need to specify a configuration the configuration at the time of project generation. ($BUILD_CONFIG below can be either debug, profile, or release)
+If you do not need to generate multi-config build folders, you can specify "Unix Makefiles" as the generator for CMake. You will need to specify a configuration at the time of project generation. Valid values for $BUILD_CONFIG include: `debug`, `profile`, and `release`.
 
 ```shell
 
