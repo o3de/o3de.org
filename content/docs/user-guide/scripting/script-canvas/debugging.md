@@ -23,7 +23,8 @@ After you choose a debug target, you can choose the entities and graphs that you
 **To choose entities and graphs to debug**
 
 1. To see entities with Script Canvas graphs that are available for debugging, expand the items on the **Entities** tab. The **Entities** tab displays the entities known to the debugger at edit time that have Script Canvas graphs.
-![Entities with Script Canvas graphs.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-3.png)
+
+    ![Entities with Script Canvas graphs.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-3.png)
 
     {{< note >}}
 Running the same graph multiple times on a single entity is not supported.
@@ -68,7 +69,8 @@ After you have chosen the entities or graphs to debug, you are ready to run the 
 **To run the Script Canvas debugger**
 
 1. Click **Capture**. The **Capture** button puts O3DE into gameplay mode automatically.
-![The Script Canvas debugger Capture button.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-9.png)
+
+    ![The Script Canvas debugger Capture button.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-9.png)
 
     {{< note >}}
 If **Editor** is selected as the capture target, the game must be running for the debugger to return results.
@@ -101,7 +103,8 @@ Currently, only a single instance of captured data can be stored. Previous data 
 1. Use the up or down arrow keys to move through the log messages in the debugger panel. As you do so, the corresponding node to in Script Canvas graph is highlighted.
 
 1. To examine the data that the node was using, expand the log message.
-![Expanding a log message to reveal its data.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-13.png)
+
+    ![Expanding a log message to reveal its data.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-13.png)
 
     {{< note >}}
 Some nodes send additional information that appears in the form of annotations. For example, the **Print** node sends the full string that it displayed.

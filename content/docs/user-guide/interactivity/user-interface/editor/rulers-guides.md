@@ -38,9 +38,9 @@ You place the guides at a specific pixel offset on a canvas. The **UI Editor** d
 
 1. To adjust the position of the guide, click the guide and drag it to a new position.
 
-![Adjust the guide position by placing the cursor on the guide and dragging it.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-adjust.png)
+    ![Adjust the guide position by placing the cursor on the guide and dragging it.](/images/user-guide/game_ui_editor/ui-editor-rulers-guides-adjust.png)
 
-     {{< note >}}
+    {{< note >}}
 You must be in **Move** or **Anchor** mode to adjust a guide's position.
 {{< /note >}}
 

@@ -58,7 +58,7 @@ If you receive an error, check the number of keyframes in your motion, and updat
 
 1. In the right pane, on the **Attributes** tab, select the **Retarget** check box.
 
-![Select the Retarget check box for your animation graph in the O3DE Animation Editor](/images/user-guide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)
+    ![Select the Retarget check box for your animation graph in the O3DE Animation Editor](/images/user-guide/actor-animation/retarget-animations-attributes-retarget-checkbox.png)
 
     {{< note >}}
 You can also toggle the retarget feature on the **Motion**, **Blend Space 1D**, and **Blend Space 2D** nodes.

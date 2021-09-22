@@ -29,7 +29,7 @@ You can add variables to your Script Canvas graph to declare and initialize them
 Common variable types are pinned to the top of the list by default. You can customize the pinned list to show the variable types that you use most often. To do so, click the box to the left of a variable type to pin or unpin it.
 {{< /note >}}
 
-![Choose from variable types in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-create-variable-types.png)
+    ![Choose from variable types in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-create-variable-types.png)
 
 1. In the **Node Inspector**, configure the properties for your variable.
 

@@ -19,9 +19,9 @@ After you set up your skinned meshes as actors, you can create your actor entiti
 
 1. In the **Entity Outliner**, click and drag the attachment entities to the main entity; this parents the attachment actor entities to the main actor entity.
 
-![Parent the attachment entities by selecting and dragging them onto the main actor entity in the Entity Outliner.](/images/user-guide/component/component-actor-component-entity-setup-2-parented.png)
+    ![Parent the attachment entities by selecting and dragging them onto the main actor entity in the Entity Outliner.](/images/user-guide/component/component-actor-component-entity-setup-2-parented.png)
 
-{{< note >}}
+    {{< note >}}
 The attachments entities may not line up with the main entity. You'll fix this in the next step.
 {{< /note >}}
 

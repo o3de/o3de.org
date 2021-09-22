@@ -10,9 +10,9 @@ When working with cell contents, it's important to understand the difference bet
 A layout cell's properties consist of a minimum size, a target size, and an extra size ratio. These properties are not directly modifiable in the UI Editor, but are determined in several ways:
 
 + Components - The following components can affect the layout cell size:
-+ Image or text - The image's default size is the layout cell's target size. The length and size of a string in a text component is the layout cell's target size.
-+ Layout row or layout column (added or nested as children) - The default values of a layout row or layout column, added as a child, determines the layout cell's minimum and target size. The default value is calculated by the sum of its own children plus padding and spacing.
-  
+
+  + Image or text - The image's default size is the layout cell's target size. The length and size of a string in a text component is the layout cell's target size.
+  + Layout row or layout column (added or nested as children) - The default values of a layout row or layout column, added as a child, determines the layout cell's minimum and target size. The default value is calculated by the sum of its own children plus padding and spacing.
 
     {{< note >}}
 The **LayoutColumn** and **LayoutRow** components contain a property called **Ignore Default Cells**. Selecting this property causes the above calculations to be ignored and simply allocate equal space to all children regardless of content. Clear this property to calculate layout cell values by components. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/editor/components/components-layout-column).

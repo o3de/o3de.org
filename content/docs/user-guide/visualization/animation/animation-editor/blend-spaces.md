@@ -53,7 +53,8 @@ The **Blend Space 2D** node has the following ports:
 You can undock the **Attributes** pane in order to see the attributes and values without scrolling.
 {{< /note >}}
 
-![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-attributes-pane.png)
+    ![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-attributes-pane.png)
+
    + To use provided values for the xy-axes, do the following:
 
      1. For **Calculation method (X-Axis)**, select **Automatically calculate motion coordinates**.
