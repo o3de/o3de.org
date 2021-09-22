@@ -31,7 +31,7 @@ Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guid
 
 ## Project Build Generation
 
-Although Unix Make Files are supported on Linux with cmake, it is recommended to use Ninja as a build system in order to support multiple configurations for generated builds. The instructions described for the different development flows will be based on "Ninja Multi-Config" as the cmake generator.
+Although CMake supports Unix Make Files on Linux, we recommend that you use Ninja as a build system to support multiple configurations in your generated builds. These instructions use "Ninja Multi-Config" as the CMake generator.
 
 {{< note >}}
 When generating projects, a project path is required. This can be an existing O3DE project, or a new one generated with the instructions provided through the [Projects](docs/user-guide/project-config) page. The instructions below will assume that $O3DE_PROJECT will refer to the absolute path of the project to base the build on. 
