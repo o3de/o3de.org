@@ -42,7 +42,7 @@ The **Depth of Field** component simulates the lens effects of real world camera
 | **Enable Auto Focus** | Enables the camera to automatically focus on a specified region. | Boolean | Enabled |
 | **Focus Screen Position** | Specifies the screen-space position of focus in XY coordinates. (`0`,`0`) corresponds to the top-left corner of the screen; (`1`,`1`) corresponds to the bottom-right corner of the screen. | XY: `0.00` to `1.00` | (`0.5`,`0.5`) |
 | **Auto Focus Sensitivity** | Simulates a hysteresis in focus, such that when the focus changes, there is a lag before the depth of field changes. A higher value leads to more responsiveness. A lower value requires a greater difference in depth before it can refocus. When the value is `1.0`, there is no lag. | `0.00` to `1.00` | `1.00` |
-| **Auto Focus Speed** | Specifies the distance that focus moves per second. It normalizes the distance from the view near to view far as 1.0.  | `0.00` tto `2.00` | `2.00` |
+| **Auto Focus Speed** | Specifies the distance that focus moves per second. It normalizes the distance from the view near to view far as 1.0.  | `0.00` to `2.00` | `2.00` |
 | **Auto Focus Delay** | Specifies time in seconds to delay the focus when it starts to shift from one target to another. | `0.00` to `1.00` | `1.00` |
 
 
@@ -50,7 +50,7 @@ The **Depth of Field** component simulates the lens effects of real world camera
 
 1. Create an entity and add a **Camera** component. This will be referred to as *camera entity* in the following steps. If you already have a camera entity, use that instead.
 
-2. Add a Depth of Field component to the camera entity. Depth of field depends on the properties of the Camera component.
+2. Add a Depth of Field component to the camera entity. Depth of field depends on the properties of the Camera component. This will also prompt you to add the PostFX Layer component, as the Depth of Field component depends on it. 
 
 3. In the Depth of Field component:
 
