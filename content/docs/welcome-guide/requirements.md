@@ -153,7 +153,7 @@ cmake --version
 
 ### Clang
 
-O3DE requires [Clang](https://clang.llvm.org/get_started.html) to compile all of the native C++ code. Although Clang-6 is supported, we recommend that you use Clang-12 for the build process.
+O3DE requires [Clang](https://clang.llvm.org/get_started.html) to compile all of the native C++ code. 
 
 ```shell
 sudo apt-get install clang-12 
@@ -181,7 +181,7 @@ popd
 \```
 
 {{< note >}}
-In order to perform download the debian package for libffi, you must install [Curl](https://curl.se):
+To download the debian package for libffi, you must install [Curl](https://curl.se):
 \```shell
 sudo apt-get install curl
 \```
