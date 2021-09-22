@@ -33,10 +33,6 @@ Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guid
 
 Although CMake supports Unix Make Files on Linux, we recommend that you use Ninja as a build system to support multiple configurations in your generated builds. These instructions use "Ninja Multi-Config" as the CMake generator.
 
-{{< note >}}
-When generating projects, a project path is required. This can be an existing O3DE project, or a new one generated with the instructions provided through the [Projects](docs/user-guide/project-config) page. The instructions below will assume that $O3DE_PROJECT will refer to the absolute path of the project to base the build on. 
-{{< /note >}}
-
 
 ### Multiple Config Builds
 The following command generates a build folder, `build/linux`, under the root of the project folder, $O3DE_PROJECT, by using Ninja as the build generator and clang-12 as the compiler.
@@ -65,18 +61,6 @@ cmake -B build/linux -S . -G "Unix Makefiles" -DCMAKE_C_COMPILER=clang-12 -DCMAK
 
 Once the build folder is generated, building from command line is the same process as for other platforms.
 
-### Single Config Builds
-
-When building a project that was generated using the Unix Makefile generator, CMake will use the configuration that you specified during project generation.
-
-```shell
-
-cd $O3DE_PROJECT_PATH
-
-cmake --build build/linux --target=$O3DE_PROJECT_NAME.GameLauncher Editor
-```
-
-
 ### Multiple Config Builds
 
 When building a project that was generated using the Ninja Multi-Config generator, include the build configuration in the build command.
@@ -88,16 +72,22 @@ cd $O3DE_PROJECT_PATH
 cmake --build build/linux --config profile --target=$O3DE_PROJECT_NAME.GameLauncher Editor
 ```
 
-{{< note >}}
-If you need to build the O3DE Project Manager, the above --target arguments will not build it by default. In order to build the O3DE Project Manager, you will need to set the target to **Project Manager**.  `--target ProjectManager` instead.
-{{< /note >}}
+### Single Config Builds
 
+When building a project that was generated using the Unix Makefile generator, CMake will use the configuration that you specified during project generation.
+
+```shell
+
+cd $O3DE_PROJECT_PATH
+
+cmake --build build/linux --target=$O3DE_PROJECT_NAME.GameLauncher Editor
+```
 
 ## Advanced Topics
 
 ### Generating a Compilation Database
 
-In conjuction with using the Ninja or the Unix Makefile generators, cmake has the option to generate a Compilation Database [compile-command.json](https://clang.llvm.org/docs/JSONCompilationDatabase.html). This file is used by IDEs such as Visual Studio Code or CLion to extract the compilation information from the build to support useful features such as Intellisense, compilation flags, etc. 
+To support code completion and other IntelliSense features found in IDEs such as Visual Studio, instruct CMake to generate a compilation database ([compile-command.json](https://clang.llvm.org/docs/JSONCompilationDatabase.html)) file as part of the project generation command. 
 
 
 {{< note >}}
