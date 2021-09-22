@@ -57,7 +57,7 @@ If you do not need to generate multi-config build folders, you can specify "Unix
 
 cd $O3DE_PROJECT_PATH
 
-cmake -B build/linux -S . -G"Unix Makefiles" -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 -DCMAKE_BUILD_TYPE=$BUILD_CONFIG
+cmake -B build/linux -S . -G "Unix Makefiles" -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 -DCMAKE_BUILD_TYPE=$BUILD_CONFIG
 
 ```
 
