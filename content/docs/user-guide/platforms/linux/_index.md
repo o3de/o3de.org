@@ -29,7 +29,7 @@ $O3DE_ENGINE/scripts/o3de.sh create-project --project-path $O3DE_PROJECT_PATH
 
 Refer to [Creating Projects Using the Command Line Interface](/docs/welcome-guide/create/creating-projects-using-cli) for more information on creating new O3DE projects.
 
-## Project Build Generation
+## Generate the build folder
 
 Although CMake supports Unix Make Files on Linux, we recommend that you use Ninja as a build system to support multiple configurations in your generated builds. These instructions use "Ninja Multi-Config" as the CMake generator.
 
