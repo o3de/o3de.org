@@ -6,10 +6,12 @@ weight: 200
 toc: true
 ---
 
-In **Open 3D Engine (O3DE)**, a *level* is a playable section of a project. Within a level, you create entities, instantiate prefabs, arrange lights and cameras, and implement scripted behaviors and interactivity. A level can be interpreted literally as a level of a game, however, levels are the basis for all O3DE projects. Non-gaming applications such as simulations require at least one level. A project can have a single level or many levels.
+In **Open 3D Engine (O3DE)**, a *level* is a playable section of a project. Within a level, you create entities, instantiate prefabs, arrange lights and cameras, and implement scripted behaviors and interactivity. A level can be interpreted literally as a level of a game; however, levels are the basis for all O3DE projects. Non-gaming applications, such as simulations, require at least one level. A project can have a single level or many levels.
 
 
-In O3DE, levels are stored in `.prefab` files within subdirectories of the `Levels` directory of your project. The level `.prefab` file is in JSON format and contains a list of the entities placed in the level, including the components, values, and asset references that define the entities. All assets, including the meshes, scripts, materials, audio files, and other prefabs that compose the level, are referenced within the level `.prefab` file.
+
+In O3DE, levels are stored in `.prefab` files within subdirectories of the `Levels` directory of your project. The level `.prefab` file is in JSON format. It contains a list of the entities placed in the level, including the components, values, and asset references that define the entities. All assets, including the meshes, scripts, materials, audio files, and other prefabs that compose the level, are referenced within the level `.prefab` file.
+
 
 {{< note >}}
 By default, all levels must be placed in the `Levels` subdirectory of the project.
@@ -17,22 +19,27 @@ By default, all levels must be placed in the `Levels` subdirectory of the projec
 
 ## Create a level
 
-Levels can be created from the **Welcome to O3DE** dialog box that appears when **O3DE Editor** is launched, or from the **File** menu within O3DE Editor.
+You can create levels in the **Welcome to O3DE** dialog box that appears when **O3DE Editor** is launched, or from the **File** menu within O3DE Editor.
 
-1. In the Welcome to O3DE dialog, choose the **Create new...** button to open the **New Level** dialog. Alternatively, from the **File** menu in O3DE Editor, choose **New Level** (hotkey **Ctrl + N**) to open the New Level dialog.
+
+1. In the Welcome to O3DE dialog box, choose the **Create new...** button to open the **New Level** dialog box. Alternatively, from the **File** menu in O3DE Editor, choose **New Level** (hotkey **Ctrl + N**) to open the New Level dialog box.
+
 
     ![Welcome to O3DE dialog](/images/learning-guide/tutorials/environments/create-a-level-A.png)
 
-1. In the **New Level** dialog, enter a name for the level.
+1. In the **New Level** dialog box, enter a name for the level.
+
 
     ![New Level dialog](/images/learning-guide/tutorials/environments/create-a-level-B.png)
 
-1. Choose **Ok** to create the level.
+1. Choose **OK** to create the level.
+
 
 ## Atom Default Environment contents
 
 
-The new level is populated with some basic entities. In **Entity Outliner**, there is a root entity named **Atom Default Environment**. Click the arrow to the left of the default entity in Entity Outliner to expand the list of child entities.
+The new level is populated with some basic entities. In **Entity Outliner**, there is a root entity named **Atom Default Environment**. Choose the arrow to the left of the default entity in **Entity Outliner** to expand the list of child entities.
+
 
 {{< note >}}
 The Atom Default Environment is a *prefab*. A prefab is a collection of preconfigured entities that is stored on disk as a reusable `.prefab` asset file. Prefabs can be instanced in a level. You can modify the contents of the default level environment by saving your own prefab to `/o3de/Assets/Editor/Prefabs/Default_Level.prefab`.
