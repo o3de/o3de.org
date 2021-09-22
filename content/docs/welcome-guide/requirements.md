@@ -167,14 +167,7 @@ In addition to the minimum hardware requirements for video cards for O3DE, Linux
 
 O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu 20.04.3 LTS does not support. You will need to manually install an older version of libffi onto Ubuntu 20.04.3 LTS in order for O3DE's Python to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi. 
 
-{{< note >}}
-In order to perform the download step shown below, you must install [Curl](https://curl.se):
-```shell
-sudo apt-get install curl
-```
-{{< /note >}}
-
-```shell
+\```shell
 pushd /tmp
 
 LIBFFI_PACKAGE_NAME=libffi6_3.2.1-8_amd64.deb
@@ -185,7 +178,14 @@ curl --location $LIBFFI_PACKAGE_URL/$LIBFFI_PACKAGE_NAME -o $LIBFFI_PACKAGE_NAME
 sudo apt install ./$LIBFFI_PACKAGE_NAME
 
 popd
-```
+\```
+
+{{< note >}}
+In order to perform download the debian package for libffi, you must install [Curl](https://curl.se):
+\```shell
+sudo apt-get install curl
+\```
+{{< /note >}}
 
 ### Additional library dependencies
 
