@@ -71,7 +71,7 @@ Once the build folder is generated, building from command line is the same proce
 
 ### Single Config Builds
 
-For projects that were generated using the Unix Makefile generator, the configuration will already be specified during the project generation and you can only build for that configuration.
+When building a project that was generated using the Unix Makefile generator, CMake will use the configuration that you specified during project generation.
 
 ```shell
 
