@@ -13,7 +13,7 @@ Overrun detection mode is similar to the Microsoft Debugging Tools for Windows [
 The following are the prerequisites and limitations for using the O3DE overrun detection feature:
 + You must build and run your project for Windows PC in a Debug or Profile build.
 + Overrun detection is available only on platforms that use the Windows API.
-+ Only allocations that go through the [O3DE allocators](/docs/user-guide/engine/memory/allocators.md) benefit from overrun detection. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the O3DE allocators.
++ Only allocations that go through the [O3DE allocators](/docs/user-guide/engine/memory/allocators/) benefit from overrun detection. Allocations that go through `new` or `malloc` do not use overrun detection unless you overload those functions to use the O3DE allocators.
 
 ## When to Enable Overrun Detection 
 

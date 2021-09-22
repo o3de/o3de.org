@@ -47,7 +47,7 @@ An SVG for everywhere else in the editor, without a background box.
 
 1.  **Card content widget**
 
-   This area contains the content widget for the card. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component.md) component, but cards can hold any widget.
+   This area contains the content widget for the card. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component/) component, but cards can hold any widget.
 
 1.  **Advanced options**
 
@@ -242,4 +242,4 @@ For details on the **card** API, see the following topics in the [O3DE UI Extens
 ## Related links<a name="card-related-links"></a>
 
 For additional information related to the **card** component, see the following topics:
-+  [Reflected Property Editor](uidev-reflected-property-editor-component.md)
++  [Reflected Property Editor](uidev-reflected-property-editor-component/)

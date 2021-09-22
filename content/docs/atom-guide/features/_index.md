@@ -83,7 +83,7 @@ Global Skylight (IBL)
  Decal   
 : Non-repeating materials that are projected onto the surface of an object. Decals can be used to apply all manner of unique surface details including painted insignias, chipping, dirt, rust, and more.
 
-*Related to: [Decal component](/docs/user-guide/components/reference/atom/decal.md), [Decal Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_decal_feature_processor_interface.html)*
+*Related to: [Decal component](/docs/user-guide/components/reference/atom/decal/), [Decal Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_decal_feature_processor_interface.html)*
 
 
 ## Meshes
@@ -101,7 +101,7 @@ Atom has a unified mesh format with support for several mesh types:
 Tone Mapping and Color Grading   
 : Techniques that adjust the overall lighting and color in a scene. Tone mapping simulates high dynamic range (HDR) by mapping one set of colors to another set that has a higher range. Color grading adjusts the color output of the render. There are two color grading modes: HDR Color Grading and LDR Color Grading. Tone mapping and color grading can be configured in O3DE using the **Display Mapper**. You can also view a demo of tone mapping and color grading in the Atom Sample Viewer. 
 
-*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
+*Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples/#tonemapping)*
 
 Post-processing Volumes   
 : Volumes that allow PostFX to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a shape component and one of the PostFX components.
@@ -124,7 +124,7 @@ Deferred Fog
 Depth of Field   
 : A post-processing effect that uses a point-of-focus and distance to simulate lens effects of real world cameras that focus on a specific area. Atom handles depth of field effects using shader passes.
 
-*Related to: [Depth of Field component](/docs/user-guide/components/reference/atom/depth-of-field.md)* 
+*Related to: [Depth of Field component](/docs/user-guide/components/reference/atom/depth-of-field/)* 
 
 
 Screen Space Ambient Occlusion (SSAO)   

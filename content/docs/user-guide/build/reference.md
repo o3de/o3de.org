@@ -18,20 +18,20 @@ CMake options like `CMAKE_CXX_STANDARD` are set during configuration automatical
 
 These options are the user-supplied settings that are required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
 
-* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
+* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages/)] for more information.
   
   *Type*: `PATH`
 
 ### Build configuration
 
-* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/v3.20/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
+* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
 
   {{< note >}}  
   Make sure that this option is turned `ON` if you experience slow build times for your projects, the O3DE engine, or O3DE tools. The impact is most dramatic for systems with lots of available RAM but fewer available cores or low disk throughput.
   {{< /note >}}  
 
   *Type*: `BOOL`  
-  *Default*: `OFF`
+  *Default*: `ON`
 * **`LY_MONOLITHIC_GAME`** - Controls project library linking. When this value is set to `ON`, it provides a compiler hint to use static libraries where possible. Some libraries, such as PhysX, are only available as shared libraries and can't be statically linked. Some platforms may disable static linking entirely.
 
   *Type*: `BOOL`  

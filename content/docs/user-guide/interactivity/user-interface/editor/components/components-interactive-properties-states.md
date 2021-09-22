@@ -30,7 +30,8 @@ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/work
 1. Under **Interactable**, **States**, click **Add new element** (green **+**).
 
 1. From the list, choose one of the following: **Color**, **Font**, **Sprite**, **Alpha**.
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-interactive-stateactions.png)
+
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-components-interactive-stateactions.png)
 
 **To delete a state action**
 + Click **Remove element** (red x) next to the state action that you want to delete.

@@ -35,7 +35,8 @@ For example, you can ensure an element remains full screen regardless of the scr
        
 
    1. Anchor all of the element's edges to the parent. The horizontal and vertical size adjusts to parent. You can use this anchor preset to place an element that remains full screen, regardless of a change in resolution. This applies if the canvas is its parent.
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-presets-1.png)
+
+   ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-presets-1.png)
 
 **To further edit (fine tune) an element's anchors**
 In the **Properties** pane, under **Transform2D**, do the following for **Anchors**, as appropriate:

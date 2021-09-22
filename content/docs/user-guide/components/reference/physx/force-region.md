@@ -170,7 +170,8 @@ You can create a force region so that force applies to another entity that enter
 **Example**
 
    The sphere falls and collides with the force region. The force region applies force and pushes the sphere in the opposite direction.
-![PhysX Force Region component animation.](/images/user-guide/component/physx/animation-force-region-component.gif)
+
+   ![PhysX Force Region component animation.](/images/user-guide/component/physx/animation-force-region-component.gif)
 
 1. To leave gameplay mode, press **Esc**.
 **Note**

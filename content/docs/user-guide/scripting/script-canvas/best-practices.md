@@ -7,7 +7,7 @@ Best practices for Script Canvas include using an event-driven approach and usin
 
 ## Use an Event-Driven Approach 
 
-Script Canvas nodes are by default stateless. However, by connecting to the [TickBus](/docs/user-guide/engine/ebus/tick.md), they can be configured to have a state. Engineers must manage the lifetime and performance of nodes that have a state.
+Script Canvas nodes are by default stateless. However, by connecting to the TickBus, they can be configured to have a state. Engineers must manage the lifetime and performance of nodes that have a state.
 
 In the core Script Canvas libraries, state is used primarily to drive the execution of the graph (as with the **Delay** node). However, an event-driven paradigm is recommended because it helps reduce the complexity of authoring and executing graphs.
 

@@ -9,15 +9,19 @@ The CPU profiler gathers usage statistics about how long a function or method ex
 **To use the CPU profiler**
 
 1. To open the detail view for the CPU profiler, click the **Detailed Profiling Information** icon for the **CPU** profiler instance.
+
 ![CPU details icon](/images/user-guide/profiler-cpu-details-icon.png)
 
    The CPU details view has a graph of CPU usage, a toolbar, and a tree view of calls made in a frame. Each call in the tree view has the same color as its corresponding line in the graph:
-![CPU details view](/images/user-guide/profiler-cpu-details-view.png)
+
+   ![CPU details view](/images/user-guide/profiler-cpu-details-view.png)
 
 1. Pause your mouse on a line in the graph to see the call that the line represents and to display the specific value for the graph at the area near the cursor.
+
 ![Using the CPU graph](/images/user-guide/profiler-cpu-graph-pause.png)
 
 1. To show or hide the line graph of a row in the tree, double-click the row.
+
 ![Double-click a row to show or hide its graph](/images/user-guide/profiler-cpu-row-double-click.png)
 
 ## Understanding the Tree View 

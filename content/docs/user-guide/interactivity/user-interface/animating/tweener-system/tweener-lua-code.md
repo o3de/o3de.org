@@ -5,7 +5,7 @@ title: Tweeners in Lua
 weight: 400
 ---
 
-You must have a minimum set of code to play an animation in the Scripted Entity Tweener system. You can copy and paste the code into a text file, and then change the file name extension to `.lua`. You use this script as part of a **Lua script** component. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/user-guide/scripting/lua/add-lua-script).
+You must have a minimum set of code to play an animation in the Scripted Entity Tweener system. You use this script as part of a **Lua script** component. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/user-guide/scripting/lua/add-lua-script/).
 
 In the following example, the entity's opacity is linearly tweened to `0.5` over `5` seconds.
 

@@ -19,6 +19,7 @@ The **ATL Control** pane has the following control types. The associated icon de
 1. In the **Audio Controls Editor**, click **Filters**.
 
 1. Select or clear control types.
+
 ![Select or clear the control types](/images/user-guide/audio/audio-atl-editor-filter.png)
 
 **To add a new control**
@@ -26,4 +27,5 @@ The **ATL Control** pane has the following control types. The associated icon de
 1. Click **Add**.
 
 1. Select the type of control that you want to add.
+
 ![Select the type of control you want to add](/images/user-guide/audio/audio-atl-editor-add.png)
