@@ -13,7 +13,7 @@ The **Variable Manager** shows the variables that are used in your Script Canvas
 + [Creating Get or Set Variable Nodes](#script-canvas-create-get-or-set-nodes)
 + [Creating Value-Changed Nodes](#script-canvas-create-on-value-changed-nodes)
 + [Deleting Variables](#script-canvas-delete-variable-nodes)
-+ [Using Container Types (Arrays and Maps)](/docs/user-guide/scripting/script-canvas/containers.md)
++ [Using Container Types (Arrays and Maps)](/docs/user-guide/scripting/script-canvas/containers/)
 
 ## Adding and Configuring Variables 
 
@@ -86,7 +86,8 @@ You can use **OnVariableValueChanged** (value-changed) event nodes to react to a
   + Drag the variable from the **Variable Manager** to the canvas, and then choose **On *variable name* Changed**.
 
   ![Drag a variable from the Script Canvas Variable Manager to the canvas to create an on-value-changed node.](/images/user-guide/scripting/script-canvas/variable-manager-create-on-value-changed.gif)
-  + Create a new **OnVariableValueChanged** event node in your graph and set the **Source** field to a variable using the field's gear button. For help adding a node to a graph, see [Adding and Connecting Nodes](/docs/user-guide/scripting/script-canvas/working-with-nodes-adding-and-connecting.md).
+  
+  + Create a new **OnVariableValueChanged** event node in your graph and set the **Source** field to a variable using the field's gear button. For help adding a node to a graph, see [Adding and Connecting Nodes](/docs/user-guide/scripting/script-canvas/working-with-nodes-adding-and-connecting/).
 
   ![Set the Source field of an OnVariableValueChanged event node using the field's gear button.](/images/user-guide/scripting/script-canvas/variable-manager-create-on-value-changed-node.png)
 

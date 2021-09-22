@@ -1,5 +1,5 @@
 ---
-description: ' Use Record mode for a sequence in the <guilabel>Track View</guilabel> editor in Open 3D Engine. '
+description: ' Use Record mode for a sequence in the Track View editor in Open 3D Engine. '
 title: Using Record Mode
 ---
 

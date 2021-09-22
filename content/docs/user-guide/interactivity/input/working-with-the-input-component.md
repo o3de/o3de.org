@@ -17,7 +17,7 @@ Follow these steps to create an `.inputbindings` file.
 
 1. In the **Entity Inspector**, click **Add Component**, and add the **Input** component.
 
-1. In the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector.md), under **Input**, click the Input Bindings Editor icon ![Input Bindings Editor icon](/images/user-guide/component/component-input-edit-icon.png) to open the **Asset Editor**.
+1. In the [**Entity Inspector**](/docs/user-guide/editor/entity-inspector/), under **Input**, click the Input Bindings Editor icon ![Input Bindings Editor icon](/images/user-guide/component/component-input-edit-icon.png) to open the **Asset Editor**.
 
 	![Input component](/images/user-guide/component/input-component-properties-1.png)
 

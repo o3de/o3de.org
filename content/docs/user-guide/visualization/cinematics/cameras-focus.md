@@ -34,4 +34,4 @@ DoF is rendered only for a single view pane layout (the default) in the viewport
 
 You can add as many keys as you want, and use the ****Curve Editor**** to further adjust DoF settings to change over time.
 
-For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md).
+For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves/).

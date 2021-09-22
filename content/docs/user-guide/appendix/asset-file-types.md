@@ -51,7 +51,7 @@ The following files are used for the **Material Editor**. For more information, 
 
 ## Animation file types
 
-The following file types are used for the **Animation Editor**. For more information, refer to [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types.md).
+The following file types are used for the **Animation Editor**. For more information, refer to [Animation Editor File Types](/docs/user-guide/visualization/animation/character-editor/file-types).
 
 
 ****

@@ -15,5 +15,5 @@ title: Object serialization to JSON format
  This section of the documentation covers serialization and deserialization of data in the JSON format, and how O3DE data types are mapped to JSON data types.
 
 **Topics**
-+ [Serialize and deserialize JSON objects](/docs/user-guide/engine/serialization/json-serialize-deserialize.md)
-+ [Data types in serialized JSON](/docs/user-guide/engine/serialization/json-data-types.md)
++ [Serialize and deserialize JSON objects](/docs/user-guide/engine/serialization/json-serialize-deserialize/)
++ [Data types in serialized JSON](/docs/user-guide/engine/serialization/json-data-types/)

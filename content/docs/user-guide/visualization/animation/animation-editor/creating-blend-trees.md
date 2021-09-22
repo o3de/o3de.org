@@ -4,7 +4,7 @@ title: Creating Blend Trees
 ---
 
 
-In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes. The **Animation Editor** supports state machines and blend trees. For more information about state machines, see [About State Machines](/docs/userguide/animation/character-editor/concepts-and-terms#understanding-state-machines).
+In the **Animation Editor**, an animation graph consists of nodes and connections that define transitions and the way that data is passed between nodes. The **Animation Editor** supports state machines and blend trees. 
 
 A blend tree is a collection of nodes with input and output ports that are color coded by data type and read from left to right. Input ports appear on the left side of the nodes and output ports appear on the right. The blend tree outputs the pose that is connected to the **Final Node**, which is included in every blend tree and cannot be deleted. If you choose not to connect a node to **Input Pose**, the **Final Node** outputs a bind pose.
 
@@ -47,5 +47,5 @@ A blend tree is a collection of nodes with input and output ports that are color
       + Yellow - The connection curve turns yellow in transition states, such as when you drag a connection between ports.
 
 **Topics**
-+ [Creating and Visualizing Blend Spaces](/docs/user-guide/visualization/animation/animation-editor/blend-spaces.md)
-+ [Blending Poses with Blend Nodes](/docs/user-guide/visualization/animation/animation-editor/blending-poses.md)
++ [Creating and Visualizing Blend Spaces](/docs/user-guide/visualization/animation/animation-editor/blend-spaces/)
++ [Blending Poses with Blend Nodes](/docs/user-guide/visualization/animation/animation-editor/blending-poses/)

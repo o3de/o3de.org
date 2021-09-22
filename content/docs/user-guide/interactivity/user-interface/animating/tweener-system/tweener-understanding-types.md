@@ -8,7 +8,7 @@ The easiest way to visualize the concept of Scripted Entity Tweener easing types
 
 The movement of objects in the natural world is rarely uniform. A rocket ship blasting off from the ground accelerates slowly as it first gains momentum, and then rapidly accelerates as it shoots toward the sky. If you viewed this motion on a position and time graph, it might look like a quartic or quintic easing in function. A bouncy ball dropped from a height accelerates toward the ground and hits it at a certain velocity. The ball bounces back up at that velocity and decelerates as it nears the top of its arc, and gravity pulls it back down for another bounce. Viewed on a position and time graph, looks like the bounce easing out function.
 
-O3DE supports the following [tweener ease methods](/docs/userguide/ui/animating/tweener-parameters#ui-animating-tweener-easemethod) as [easing in, easing out, and easing in-out](/docs/userguide/ui/animating/tweener-parameters#ui-animating-tweener-easetype) functions (ease type).
+O3DE supports the following [tweener ease methods](tweener-parameters/) as [easing in, easing out, and easing in-out](tweener-parameters/) functions (ease type).
 
 **Note**
 The following images are referenced from [http://easings.net](http://easings.net).

@@ -51,4 +51,4 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
    physx_PvdDisconnect
    ```
 
-   For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md).
+   For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/).

@@ -12,17 +12,17 @@ Each component entity has a **Transform** component. By default, when you add a 
 
 You can add any number of keys for each track as needed, and adjust the transitions with the ****Curve Editor****.
 
-For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves.md).
+For more information, see [Using Animation Curves](/docs/user-guide/visualization/cinematics/track-view/editor-animation-curves/).
 
 When moving component entities, we recommend the following workflows:
 + Manipulate the component entity in the level and then manually add your animation keys.
 
-  For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks.md)
-+ Use record mode to set your keys. For more information, see [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode.md).
+  For more information, see [Adding and Removing Animation Keys on Tracks](/docs/user-guide/visualization/cinematics/adding-removing-animation-keys-on-tracks/)
++ Use record mode to set your keys. For more information, see [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode/).
 
 **To set transform keys with record mode**
 
-1. In the Track View, create or select sequence and add a component entity. See [Adding Component Entities](/docs/user-guide/visualization/cinematics/adding-component-entities.md).
+1. In the Track View, create or select sequence and add a component entity. See [Adding Component Entities](/docs/user-guide/visualization/cinematics/adding-component-entities/).
 
 1. By default, the **Transform** component attached to the entity automatically adds the **Position** and **Rotation** tracks to the sequence.
 

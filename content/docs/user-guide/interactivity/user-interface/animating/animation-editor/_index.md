@@ -13,7 +13,8 @@ The UI **Animation Editor** has the following features:
 + **Editor pane** - Area for either the **Track Editor**, the **Curve Editor**, or both.
 
 **To show the **Animation Editor** if it is not already visible**
-+ From the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/using.md) menu, choose **View**, **Animation Editor**.
+
++ From the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) menu, choose **View**, **Animation Editor**.
 
 ![Image NOT FOUND](/images/user-guide/ui-animation-window.png)
 

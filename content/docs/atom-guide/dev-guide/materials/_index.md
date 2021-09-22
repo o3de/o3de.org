@@ -9,4 +9,4 @@ This section contains technical details about the material system in the Atom Re
 
 | Contents                        | Details |
 |--------------------------------------|---------|
-| [Material System](materials.md) | An overview of Atom's material system. |
+| [Material System](materials/) | An overview of Atom's material system. |

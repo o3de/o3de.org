@@ -15,7 +15,7 @@ One or more meshes that visually represent the actor, skinned to a skeleton, tha
 **Cloth mesh**
 One or more meshes that will be simulated and rendered as cloth.
 + The cloth mesh must be skinned to bones. The bones do not have to be exclusive to the cloth mesh. The bones must be part of the actor's skeletal hierarchy. Because simulation will drive the cloth mesh, we recommend you use few additional bones for the cloth mesh.
-+ Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application. For more information see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data.md).
++ Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application. For more information see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data/).
 
 **Skeleton**
 A skeleton to drive the actor and cloth meshes. Cloth meshes may be skinned to their own bones or any bones in the hierarchy. Bones that drive the cloth meshes must be part of the skeleton's hierarchy.
@@ -26,7 +26,7 @@ A **Motion set** and **Anim graph** based on the actor's skeleton. Keyframe anim
 **Note**
 Sample **Actor** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Chicken/`.
 
-For imformation on exporting actor assets, see [FBX Settings actor export](/docs/user-guide/assets/fbx-settings/actor-export.md)
+For imformation on exporting actor assets, see [FBX Settings actor export](/docs/user-guide/assets/fbx-settings/actor-export/)
 
 ## Add Cloth to Actor components 
 
@@ -74,7 +74,7 @@ Create cloth by adding the **Cloth** component to an entity that has an **Actor*
 
 ## Add cloth colliders to an actor 
 
- You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation. Cloth colliders are added to actors in **Animation Editor**. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders.md).
+ You can add cloth colliders to an actor to prevent the cloth form penetrating the actor's mesh during simulation. Cloth colliders are added to actors in **Animation Editor**. For information on adding cloth colliders to an actor, see [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders/).
 
 ## View the Cloth Simulation 
 

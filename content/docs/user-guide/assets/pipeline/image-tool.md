@@ -8,7 +8,7 @@ draft: true
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands.
 
 **Note**
-You can also use the Texture Settings Editor to manage your texture settings for image files. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor.md).
+You can also use the Texture Settings Editor to manage your texture settings for image files. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor/).
 
 **To open the Resource Compiler image tool**
 + Right-click an image file from within a file explorer and choose **RC Open Image**.
@@ -23,7 +23,7 @@ The Resource Compiler image tool lists image processing presets defined in the `
 
 1. (Optional) To see more information about the preset settings, click **Show preset info**.
 
-1. Select other options you want to change, such as [MIP Control](/docs/userguide/assets/generating-mipmaps.md).
+1. Select other options you want to change, such as [MIP Control](/docs/userguide/assets/generating-mipmaps/).
 
 1. Click **Generate Output**.
 

@@ -11,7 +11,7 @@ As part of keeping builds fast, CMake maintains a cache of both its internal val
 An important element of CMake in O3DE is that the same commands are used to configure and build **both** the engine itself and any O3DE projects.
 
 {{< note >}}
-These instructions are for Windows 10, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference.md) or the relevant [platform overview](/docs/user-guide/platforms/).
+These instructions are for Windows 10, but will get you started building on any platform as long as you generate the correct files and know if your platform needs additional arguments. For more information, see the [CMake configuration reference](./reference/) or the relevant [platform overview](/docs/user-guide/platforms/).
 {{< /note >}}
 
 ## Supported compiler toolchains

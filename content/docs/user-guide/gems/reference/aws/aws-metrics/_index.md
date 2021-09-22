@@ -23,4 +23,4 @@ To enable the AWS Metrics Gem, do the following:
 
 1. Build your project using Project Manager, Visual Studio, or CMake.
 
-1. To configure AWS Metrics for your project, follow the instructions in [Setting Up the AWS Metrics Gem](./setup.md).
+1. To configure AWS Metrics for your project, follow the instructions in [Setting Up the AWS Metrics Gem](./setup/).

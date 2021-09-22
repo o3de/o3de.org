@@ -14,8 +14,8 @@ Sequences consist of the following elements (listed in hierarchical order), whic
 + **Key** - A key is a setting for a property at a specific time. As the sequence plays, keys are interpolated based on their in and out tangent values set in the Track View.
 
 **Topics**
-+ [Using the Track View Editor](/docs/user-guide/visualization/cinematics/track-view/editor.md)
-+ [Populating a Scene](/docs/user-guide/visualization/cinematics/populating-a-scene.md)
-+ [Animating Characters in Scenes](/docs/user-guide/visualization/cinematics/animation-intro.md)
-+ [Capturing Image Frames](/docs/user-guide/visualization/cinematics/image-capture.md)
-+ [Debugging Cinematic Scenes with Console Variables](/docs/user-guide/visualization/cinematics/debugging.md)
++ [Using the Track View Editor](/docs/user-guide/visualization/cinematics/track-view/)
++ [Populating a Scene](/docs/user-guide/visualization/cinematics/populating-a-scene/)
++ [Animating Characters in Scenes](/docs/user-guide/visualization/cinematics/animation-intro/)
++ [Capturing Image Frames](/docs/user-guide/visualization/cinematics/image-capture/)
++ [Debugging Cinematic Scenes with Console Variables](/docs/user-guide/visualization/cinematics/debugging/)

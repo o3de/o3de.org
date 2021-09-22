@@ -9,7 +9,7 @@ To use NVIDIA Blast assets in O3DE, create an entity, add a **Blast Family** com
 
 **Note**
 To quickly test NIVIDIA Blast simulation, the following steps assume that the assets have been exported from Houdini with **Static root** disabled in the **Blast Export** SOP. With **Static root** disabled, the NVIDIA Blast asset is dynamic, and destruction can be triggered by dropping the entity on a PhysX collision surface such as **PhysX Terrain**. If **Static root** is enabled, the root asset is static, and destruction must be triggered by an external force, such as a projectile impact.
-For more information, see [Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset.md).
+For more information, see [Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset/).
 
 **Contents**
 - [Create an entity for NVIDIA Blast](#create-an-entity-for-nvidia-blast)
@@ -33,7 +33,7 @@ When you create an entity, you add the NVIDIA Blast functionality and define how
 
 ![Add the .blast asset to the Blast Family component.](/images/user-guide/physx/blast/ui-blast-add-blast-asset.png)
 
-1. Set the **Blast Material** for the **Blast Family** component. Blast materials define how much damage various forces cause to the bonds holding the fractured asset together, and how much damage is required to cause destruction. For more information see [Specify destruction properties with Blast materials](/docs/user-guide/interactivity/physics/nvidia-blast/materials.md).
+1. Set the **Blast Material** for the **Blast Family** component. Blast materials define how much damage various forces cause to the bonds holding the fractured asset together, and how much damage is required to cause destruction. For more information see [Specify destruction properties with Blast materials](/docs/user-guide/interactivity/physics/nvidia-blast/materials/).
 
 1. Add a **Blast Family Mesh Data** component to the entity. In **Entity Inspector**, Choose **Add Component** and select **Blast Family Mesh Data** from the component list. The **Blast Family Mesh Data** component adds NVIDIA Blast meshes to the entity. For more information, see [Blast Family Mesh Data component](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/).
 

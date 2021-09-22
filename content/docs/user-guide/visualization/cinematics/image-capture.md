@@ -54,7 +54,7 @@ You can capture image frames when a sequence is played in game mode.
 
 ## Capturing Image Frames with Console Variables 
 
-Capture image frames with the following console variables. For more information, see [Using the Console Window](/docs/user-guide/editor/console.md).
+Capture image frames with the following console variables. For more information, see [Using the Console Window](/docs/user-guide/editor/console/).
 
 
 **Capture Image Frames Console Variables**
