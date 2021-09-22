@@ -45,8 +45,6 @@ The following command generates a build folder, `build/linux`, under the root of
 
 cd $O3DE_PROJECT_PATH
 
-$O3DE_ENGINE/scripts/o3de.sh register --project-path .
-
 cmake -B build/linux -S . -G"Ninja Multi-Config" -DCMAKE_C_COMPILER=clang-12 -DCMAKE_CXX_COMPILER=clang++-12 
 
 ```
