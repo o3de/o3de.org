@@ -4,7 +4,7 @@ description: "You can use pre-built render pipelines or create custom ones in At
 toc: false
 ---
 
-A *render pipeline* describes a sequence of steps to render a 3D scene to a 2D screen. In **Atom Renderer**, the render pipeline is completely modular and driven by a series of passes. This allows you to customize the render pipeline at a feature level (such as shadows, lighting, and post effects) or by changing the rendering technique completely (such as to Deferred, Checkerboard, or Forward+). By default, Atom implements *Forward+* rendering in its pre-built render pipelines.
+A *render pipeline* describes a sequence of steps to render a 3D scene to a 2D screen. In **Atom Renderer**, the render pipeline is completely modular and driven by a series of passes. This allows you to customize the render pipeline for features, such as shadows, lighting, and post effects. You can also completely change the rendering technique; for example, to Deferred, Checkerboard, or Forward+. By default, Atom implements *Forward+* rendering in its pre-built render pipelines.
 
 Atom's pre-built render pipelines are ready to use and encompass common use cases for **Open 3D Engine (O3DE)**:
 - **Main Rendering Pipeline**: The default render pipeline for Windows, Linux, and macOS platforms. 
@@ -26,10 +26,10 @@ This table lists the features that are supported by the Main Rendering Pipeline 
 | Light culling | Tile-based or cluster-based light culling for efficient light iteration in the Forward+ pass. | Yes | Yes |
 | RTX global illumination | Real-time global illumination that uses NVIDIA RTXGI (RTX Global Illumination). | Yes | No |
 | Reflection probe | Generates and uses reflection probes for specular image-based lighting (IBL). | Yes | Yes |
-| Physically-based sky | Basic sky rendering that uses physically-based atmospheric modeling. | Yes | No |
-| HDR Skybox | Uses an HDR image as a skybox. | Yes | Yes |
-| Screen-space ambient occlusion (SSAO) | Applies SSAO to the scene to create contact shadows where objects meet.  | Yes | No |
-| Subsurface scattering | Calculates subsurface scattering for materials (such as skin) by using a screen space technique. | Yes | No |
+| Physically based sky | Basic sky rendering that uses physically-based atmospheric modeling. | Yes | No |
+| HDR skybox | Uses an HDR image as a skybox. | Yes | Yes |
+| Screen space ambient occlusion (SSAO) | Applies SSAO to the scene to create contact shadows where objects meet.  | Yes | No |
+| Subsurface scattering | Calculates subsurface scattering for materials, such as skin, by using a screen space technique. | Yes | No |
 | Deferred fog | Applies a height-based fog to the scene. | Yes | No |
 | Screen space reflections (SSR) | Implements SSR by using renderered lighting buffer to approximate real-time reflections. | Yes | No |
 | Depth of field | Applies a bokeh-shaped depth of field effect to the scene that's based on the scene's depth and camera focus paramters. | Yes | No |
@@ -76,10 +76,36 @@ You can find the following render pipeline files in your O3DE engine source:
 
 ## Modifying the render pipeline
 
-Since the render pipeline is driven by modular passes, it's easy to add or remove passes and update connections. You can modify the main render pipeline, or create a custom render pipeline for your team. You may want to use a custom render pipeline for a number of reasons, such as:
-- to develop new features that impact the render pipeline
-- to implement and use alternative rendering techniques
-- to improve rendering performance
+Because modular passes drive the render pipeline, it's more accessible to add or remove passes and update connections. You can modify the main render pipeline or create a custom render pipeline for your team. You might want to use a custom render pipeline for a number of reasons, such as to:
 
-Modifying the render pipeline involves inserting or removing a pass and updating the connections. You can do this directly by manually editing the `MainPipeline.pass` with a text editor.
+- Develop new features that impact the render pipeline.
+- Implement and use alternative rendering techniques.
+- Improve rendering performance.
 
+Modifying the render pipeline involves enabling or disabling a pass and updating the connections. You can do this directly by manually editing the `MainPipeline.pass` with a text editor.
+
+To enable or disable a pass in the render pipeline: 
+1. In the render pipeline's `.pass` file, find the pass that you want to enable or disable in the `PassRequests` list. 
+2. Set the `Enabled` property to true or false.
+   
+When you enable or disable a pass, the pass system automatically updates the connections in the pass hierarchy. This requires that you've set up fallback connections. For more information, refer to [PassTemplate File Specification](content/docs/atom-guide/dev-guide/passes/pass-template-file-spec/)
+
+For example, in the `PassRequests` section of the `MainPipeline.pass`, disable `DeferredFogPass` in the render pipeline by setting `Enabled` to false.
+```JSON
+    "PassRequests": [
+
+        ...
+        
+        {
+            "Name": "DeferredFogPass",
+            "TemplateName": "DeferredFogPassTemplate",
+            "Enabled": false,
+            "Connections": [
+                ...
+            ],
+            "PassData": { ... }
+        },
+        
+        ...
+    ]
+```
