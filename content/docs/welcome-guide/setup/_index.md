@@ -9,5 +9,6 @@ The topics in this section guide you through the process of setting up your Open
 
 | Topic | Description |
 | --- | --- |
+| [Setting up O3DE from the Installer](./setup-from-installer) | Learn how to install and set up O3DE using the installer tool. |
 | [Setting up O3DE from GitHub](./setup-from-github) | Learn how to set up O3DE by downloading and building the engine from its GitHub source. |
-| [Troubleshooting the setup](./troubleshooting) | Find tips to help troubleshoot your O3DE setup when things go wrong. |
+| [Troubleshooting the Setup](./troubleshooting) | Find tips to help troubleshoot your O3DE setup when things go wrong. |
