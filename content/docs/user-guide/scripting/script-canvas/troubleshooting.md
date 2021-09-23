@@ -24,4 +24,4 @@ Runtime execution errors are reported to the **Event Handler** node. You can use
 
 You can also raise and handle errors within a graph's execution. The following simple example shows how you could use **Error** and **Error Handler** nodes to provide notification of an error in data validation. This helps to rectify the solution to ensure that the graph remains stable.
 
-![Example that notifies users of errors in data validation](/images/user-guide/scripting/script-canvas/script-canvas-errors-and-troubleshooting-1.png)
+![Example that notifies users of errors in data validation](/images/user-guide/scripting/script-canvas/troubleshooting.png)
