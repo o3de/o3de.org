@@ -16,4 +16,4 @@ You can use the toolbar to select a sequence to display and edit.
 
 + In **Animation Editor**, click the arrow next to the name of the current sequence in the toolbar to display a list of active sequences available to edit.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/ui-animation-selecting.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-selecting.png)

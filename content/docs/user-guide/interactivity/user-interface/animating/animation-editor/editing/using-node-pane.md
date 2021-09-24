@@ -5,7 +5,7 @@ title: Using the Node Pane
 weight: 100
 ---
 
-The **Node Pane** in the [Animation Editor](./) displays all the nodes in the selected animation sequence. Each item listed in the **Node Pane** is considered a node, though they represent different parts of the sequence. You can use the **Node Pane** to add or delete UI element nodes. Track nodes appear beneath its UI element when you record a track.
+The **Node Pane** in the [Animation Editor](../) displays all the nodes in the selected animation sequence. Each item listed in the **Node Pane** is considered a node, though they represent different parts of the sequence. You can use the **Node Pane** to add or delete UI element nodes. Track nodes appear beneath its UI element when you record a track.
 
 The animation sequence node, at the top level, contains a list of its UI elements nodes. Each UI element node contains a list of its track nodes.
 
@@ -15,7 +15,7 @@ The animation sequence node, at the top level, contains a list of its UI element
 
 1. **Track** nodes
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/ui-animation-node-pane.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-node-pane.png)
 
 **To add a new UI element node**
 
@@ -41,4 +41,4 @@ You can also use the **Edit Sequence** tool to edit the properties of the sequen
 **To open the Edit Sequence tool**
 + In the **Animation Editor**, click the **Edit Sequence** icon.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/ui-animation-edit-sequence.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-edit-sequence.png)

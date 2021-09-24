@@ -16,7 +16,7 @@ A sprite sheet is a collection of separate images-such as icons, buttons, and ot
 **Example**
 The following image contains 12 walking images in a single row.
 
-![Walking images.](/images/user-guide/interactivity/user-interface/editor/ui-editor-component-sprite-sheets-walking.png)
+![Walking images.](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-component-sprite-sheets-walking.png)
 
 In the following procedure, you can divide the image into 12 columns when configuring the sprite sheet. You can then select the piece of the image that you want to display for your **Image** component.
 
@@ -26,7 +26,7 @@ In the following procedure, you can divide the image into 12 columns when config
 
    The **Configure Spritesheet** view displays two new sections, **Configure Spritesheet** and **Select cell**.
 
-   ![Configure Spritesheet and Select cell.](/images/user-guide/interactivity/user-interface/editor/ui-editor-component-sprite-sheets-1.png)
+   ![Configure Spritesheet and Select cell.](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-component-sprite-sheets-1.png)
 
 1. Enter the number of rows and columns. The walking images example has 12 columns and 1 row. These values divide the sprite into a uniform grid and assume that each cell of the sprite sheet is of the same (uniform) size.
 
@@ -42,6 +42,6 @@ In the following procedure, you can divide the image into 12 columns when config
 
    If you defined an **Alias** in the **Sprite Editor** properties, that also appears next to the index numbers.
 
-   ![Select Index number of sprite sheet.](/images/user-guide/interactivity/user-interface/editor/ui-editor-component-sprite-sheets-2.png)
+   ![Select Index number of sprite sheet.](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-component-sprite-sheets-2.png)
 
    The cell that you selected appears in the **UI Editor** viewport.

@@ -5,9 +5,9 @@ title: UI Spawner Component
 weight: 800
 ---
 
-Use the **UISpawner** component to spawn a runtime dynamic [slice](/docs/user-guide/interactivity/user-interface/editor/ui-slices) \(\*.`dynamicslice`\) at an entity's location with an optional offset. In combination with scripting, you can use the **UISpawner** component to spawn any dynamic slice at any time and to spawn multiple instances of the same dynamic slice.
+Use the **UISpawner** component to spawn a runtime dynamic [slice](/docs/user-guide/interactivity/user-interface/slices) \(\*.`dynamicslice`\) at an entity's location with an optional offset. In combination with scripting, you can use the **UISpawner** component to spawn any dynamic slice at any time and to spawn multiple instances of the same dynamic slice.
 
-![UISpawner component with an example slice file.](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-uispawner.png)
+![UISpawner component with an example slice file.](/images/user-guide/interactivity/user-interface/components/ui-editor-components-uispawner.png)
 
 ## UISpawner Component Properties 
 

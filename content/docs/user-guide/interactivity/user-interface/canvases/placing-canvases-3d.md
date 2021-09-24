@@ -15,7 +15,7 @@ Follow all the steps in the following procedure if you need to create a canvas t
 
 **To place a UI canvas on an object in the 3D world**
 
-1. [Create your UI canvas file](/docs/user-guide/interactivity/user-interface/editor/creating-canvases). In the [canvas properties](/docs/user-guide/interactivity/user-interface/editor/canvas-properties), select **Render to texture** and enter a name in the **Render target** text box. You can enter any name, but the convention is to prefix the name with the `$` character to distinguish it from other texture assets.
+1. [Create your UI canvas file](/docs/user-guide/interactivity/user-interface/canvases). In the [canvas properties](/docs/user-guide/interactivity/user-interface/canvases/canvas-properties), select **Render to texture** and enter a name in the **Render target** text box. You can enter any name, but the convention is to prefix the name with the `$` character to distinguish it from other texture assets.
 
 1. In the level, create a component entity.
 
@@ -29,4 +29,4 @@ Follow all the steps in the following procedure if you need to create a canvas t
 
 1. Add a **UI Canvas on Mesh** component. Type a canvas name in the **Render target override** property if you want to load several instances of the UI canvas on different meshes and have them display different states. Otherwise, leave this property blank.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/ui-editor-placing-canvases-3d.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/canvases/ui-editor-placing-canvases-3d.png)

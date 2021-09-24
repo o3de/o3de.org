@@ -19,7 +19,7 @@ In the **Hierarchy** pane, elements that are part of a slice appear in blue. Ele
 + The element **Background** is not in a slice.
 + **FontRenderingButton** is a root element and its child element, **Text**, is an element within `submenubutton.slice`.
 
-![The UI Editor's Hierarchy pane displays in blue any elements that are part of a slice.](/images/user-guide/interactivity/user-interface/editor/ui-editor-modifying-slices-submenubutton.png)
+![The UI Editor's Hierarchy pane displays in blue any elements that are part of a slice.](/images/user-guide/interactivity/user-interface/slices/ui-editor-modifying-slices-submenubutton.png)
 
 You can locally change an instantiated slice's name, which obscures the name of the slice from which it instantiated.
 

@@ -7,7 +7,7 @@ weight: 400
 
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-canvas-properties.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/canvases/ui-editor-canvas-properties.png)
 
 ## Rendering Properties 
 
@@ -22,7 +22,7 @@ The following properties define how a canvas is rendered:
 The following properties define how a canvas handles inputs:
 + **Handle positional** - Selected by default. This property causes an automatic response to positional input such as mouse movement, mouse button clicks, and touch screen input. Keyboard inputs also cause an automatic response when an interactive UI element is active (such as an elemental with a **Text Input** component on it).
 
-  Common reasons to de-select this property are if the canvas doesn't resuire input, or if you configure your game to handle all inputs and pass selected inputs to the UI system.
+  Common reasons to de-select this property are if the canvas doesn't require input, or if you configure your game to handle all inputs and pass selected inputs to the UI system.
 + **Consume all input** - Cleared by default. When this property is selected, this canvas consumes *all* input events while it's enabled, regardless of whether the canvas handles a specific input event. For example, if you have canvas A covering canvas B, you probably don't want canvas B handling any input while canvas A is obstructing it, so you would select this property on canvas A. Modal dialog boxes are another example of a canvas that should have this property selected.
 
   Note that anytime a canvas is loaded, if it's set to consume all input, then it steals the inputs from any other loaded canvas. This includes canvases that are set to consume all inputs themselves.
@@ -39,12 +39,12 @@ The following properties define how a canvas handles inputs:
   1. Continue holding for an amount of time equal to the *navigation repeat delay* to navigate a second time.
 
   1. Continue holding for an amount of time equal to the *navigation repeat period* to navigate a third time. Thereafter, as you continue holding the button, you will navigate again, every time an amount of time equal to the navigation period elapses.
-+ **First focus element** - Displayed when **Handle navigation** is selected. **First focus element** specifies which element gains focus when a canvas is first loaded and a mouse is not detected. For more information about element navigation, see [First Focus Element](/docs/user-guide/interactivity/user-interface/editor/components/components-firstfocus).
++ **First focus element** - Displayed when **Handle navigation** is selected. **First focus element** specifies which element gains focus when a canvas is first loaded and a mouse is not detected. For more information about element navigation, see [First Focus Element](/docs/user-guide/interactivity/user-interface/components/interactive/properties/navigation/components-firstfocus).
 
 ## Tooltips Properties 
 
 The following property defines how a canvas displays tooltips:
-+ **Tooltip display element** - Controls which element the game displays when your users hover over an interactive element. Select an element from the drop-down list. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component. For more information about the **Tooltips** components, see [Tooltip Components](/docs/user-guide/interactivity/user-interface/editor/components/components-tooltips).
++ **Tooltip display element** - Controls which element the game displays when your users hover over an interactive element. Select an element from the drop-down list. This list is composed of the elements on your current canvas that contain the **TooltipDisplay** component. For more information about the **Tooltips** components, see [Tooltip Components](/docs/user-guide/interactivity/user-interface/components/components-tooltips).
 
 ## Editor Settings Properties 
 
@@ -52,4 +52,4 @@ The following properties define UI Editor behavior:
 + **Snap distance** - The distance between positions on the grid when **Snap to grid** is selected in the toolbar.
 + **Snap rotation** - The number of degrees between each step of rotation when you use the rotation gizmo to rotate an element in the viewport when **Snap to grid** is selected in the toolbar.
 + **Guide color** - The color of the guide lines on this canvas. For more information about using guides in **UI Editor**, see [Rulers and Guides](/docs/user-guide/interactivity/user-interface/editor/rulers-guides).
-+ **Texture atlases** - The texture atlas that this canvas loads. Using a texture atlas can reduce the number of draw calls in certain situations, resulting in better performance for your UI. For more information about *texture atlases*, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/texture-atlases/).
++ **Texture atlases** - The texture atlas that this canvas loads. Using a texture atlas can reduce the number of draw calls in certain situations, resulting in better performance for your UI. For more information about *texture atlases*, see [Using Texture Atlases](/docs/user-guide/interactivity/user-interface/canvases/texture-atlases).

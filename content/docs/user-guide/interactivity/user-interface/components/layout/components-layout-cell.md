@@ -30,32 +30,45 @@ You can apply the **LayoutCell** component to the children of a layout row or co
 
 In the following example, the layout column has three images as its children. The images each occupy equal space in the column.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-cell.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-layout-cell.png)
 
 If you add a **LayoutCell** component to the first image, and then select **Min Height** and assign a value of 100, then the UI system overrides that child's default calculated value, and gives the top image more height than its siblings, whose values are recalculated to adjust to the remaining column space.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-cell-2.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-layout-cell-2.png)
 
 In the next example, a layout grid was added as a child. Its calculated size is the same as its two siblings above it.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-cell-3.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-layout-cell-3.png)
 
 However, when you add a **LayoutCell** component to the grid, and then specify a **Min Height** of 100, then the grid, as a whole is granted that amount of space. If you add the **LayoutCell** component to the children of a layout grid, however, it has no effect. That's because individual grid spaces are always uniform and are controlled by the grid parent.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-layout-cell-4.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-layout-cell-4.png)
 
 **To edit a LayoutCell component**
+
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutCell** and do the following, as appropriate:
-****Min Width****
+
+**Min Width**
+
 Select to define the layout cell's minimum width. Type a value in the box that appears.
-****Min Height****
+
+**Min Height**
+
 Select to define the layout cell's minimum height. Type a value in the box that appears.
-****Target Width****
+
+**Target Width**
+
 Select to define the layout cell's target width. Type a value in the box that appears. If space is available, this target width is allocated to the layout cell.
-****Target Height****
+
+**Target Height**
+
 Select to define the target height. Type a value in the box that appears. If space is available, this target height is allocated to the layout cell.
-****Extra Width Ratio****
+
+**Extra Width Ratio**
+
 Select to define the layout cell's extra width ratio. Type a value in the box that appears. This value is a ratio that is relative to the other elements. If space remains after the layout cell reaches its target size, the **Extra Size Ratio** value is used to allocate the rest of the space.
+
 Because this **Extra Size Ratio** value is relative to the other children, if one child's extra size ratio is 1, and another child's is 2, then the second child gains twice as much extra space as the first child. An extra size ratio of 0 means that no more space is allocated once the target size is reached.
-****Extra Height Ratio****
+
+**Extra Height Ratio**
 Select to define the layout cell's extra height ratio. Type a value in the box that appears.

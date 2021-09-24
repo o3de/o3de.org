@@ -10,4 +10,4 @@ O3DE's Scripted Tweener Entity system is a script-driven animation system that c
 
 The Scripted Tweener Entity system primarily animates entities in the **UI Editor**, and supports selected O3DE component entities, such as the [Transform](/docs/user-guide/components/reference/transform).
 
-For a complete list, see [Tweener Supported Components](./tweener-components).
+For a complete list, see [Tweener Supported Components](tweener-components).

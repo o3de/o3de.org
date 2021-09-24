@@ -11,7 +11,7 @@ The **Track Editor** displays all the tracks in your current animation sequence.
 + Control the animation preview range
 
 **To display the Track Editor**
-+ In the [**Animation Editor**](./), choose **View**, **Track Editor** or **View**, **Both**.
++ In the [**Animation Editor**](../), choose **View**, **Track Editor** or **View**, **Both**.
 
 **To zoom in or out**
 + Scroll the mouse wheel
@@ -66,7 +66,7 @@ You can also use the Track Editor toolbar to select, move, and snap keys. When m
 
 ## Moving the Play or Record Point in the Track Editor 
 
-The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](./) change to the values specified by the animation tracks.
+The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](../) change to the values specified by the animation tracks.
 
 **To move the play or record point in the Track Editor**
 + Click or drag the vertical magenta slider in the timeline.

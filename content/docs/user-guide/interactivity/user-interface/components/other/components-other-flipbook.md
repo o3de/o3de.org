@@ -5,7 +5,7 @@ title: UI Flipbook Animation Component
 weight: 300
 ---
 
-You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets).
+You can use the **FlipbookAnimation** component to create simple image-based animations by animating the frames or cells of a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-editor/sprite-sheets).
 
 **To view a canvas in the UI Editor**
 
@@ -13,15 +13,15 @@ You can use the **FlipbookAnimation** component to create simple image-based ani
 
 1. Open `Flipbook.uicanvas`.
 
-You can add the **FlipbookAnimation** component to elements that also have an [**Image**](./components-image) component. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets).
+You can add the **FlipbookAnimation** component to elements that also have an [**Image**](../visual/components-image) component. You must also set that **Image** component to use a sprite file that has been configured as a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-editor/sprite-sheets).
 
-![FlipbookAnimation component and Image component set as sprite/texture asset](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-other-flipbook-1.png)
+![FlipbookAnimation component and Image component set as sprite/texture asset](/images/user-guide/interactivity/user-interface/components/other/ui-editor-components-other-flipbook-1.png)
 
 **To add and configure a FlipbookAnimation component**
 
-1. If you have not already done so, create a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-sheets) for your animation image.
+1. If you have not already done so, create a [sprite sheet](/docs/user-guide/interactivity/user-interface/editor/sprite-editor/sprite-sheets) for your animation image.
 
-1. Add an [**Image**](./components-image) component.
+1. Add an [**Image**](../visual/components-image) component.
 
    For the **SpriteType**, choose **Sprite/Texture asset**.
 

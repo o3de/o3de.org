@@ -7,7 +7,7 @@ weight: 100
 
 The **UI Editor** features a rectangle with a checkerboard pattern on a dark gray background.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-checkerboard.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/canvases/ui-checkerboard.png)
 
 The checkerboard pattern represents empty space within the UI canvas, and the dark gray represents the space outside of the canvas. Anything within the UI canvas space is visible when the canvas is loaded.
 

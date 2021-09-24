@@ -53,7 +53,7 @@ To create a new font family file, you can create a new, empty plain text file an
    </fontfamily>
    ```
 
-After the Asset Processor has processed your font assets, you can select your font family by selecting the `*.fontfamily` file in the **UI Editor** as the font for any text component. To apply custom styling to text using the font family, see [Text Styling Markup](/docs/user-guide/interactivity/user-interface/editor/components/components-text/#text-markup).
+After the Asset Processor has processed your font assets, you can select your font family by selecting the `*.fontfamily` file in the **UI Editor** as the font for any text component. To apply custom styling to text using the font family, see [Text Styling Markup](../components/visual/components-text#text-markup).
 
 The `.fontfamily` file uses XML. The UI system supports the following tags and attributes for the `.fontfamily` file:
 

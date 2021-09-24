@@ -5,7 +5,7 @@ title: UI Image Component
 weight: 100
 ---
 
-You can use an **Image** component to add a color tint or texture to an element. Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working) to configure the following settings for the **Image** component.
+You can use an **Image** component to add a color tint or texture to an element. Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor) to configure the following settings for the **Image** component.
 
 **Image Settings**
 

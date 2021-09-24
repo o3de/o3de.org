@@ -12,11 +12,11 @@ When you add a **Mask** component, the default mask is the visual component on t
 
 You can make the mask movable to use in an animation. To do so without moving all of its children, you can use a special child element as a mask visual in addition to the visual component on the mask element. This child mask element can have as many children as you need to draw your mask visual.
 
-Masks are commonly used with a [ScrollBox prefab element](./components-scrollbox).
+Masks are commonly used with a [ScrollBox prefab element](../interactive/components-scrollbox).
 
 **To add simple mask with an Image component as the visual**
 
-1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working) toolbar, choose **New**, **Empty Element**. This is the parent element.
+1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) toolbar, choose **New**, **Empty Element**. This is the parent element.
 
 1. In the **Properties** pane, choose **Add Component**, **Image** to add an **Image** component.
 
@@ -37,5 +37,14 @@ Masks are commonly used with a [ScrollBox prefab element](./components-scrollbox
 1. In the **Properties** pane, under **Mask**, select **Use alpha test**.
 
 **To edit a Mask component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **Mask** and specify the following parameters, as appropriate:
-****
+
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), expand **Mask** and specify the following parameters, as appropriate:
+
+| Name | Description |
+| --- | --- |
+| **Enable Masking** | If set, only the parts of the child elements that are revealed by the mask are visible. This parameter is enabled by default. |
+| **Draw behind** | Draws the mask visual behind the child elements.  This is useful for debugging. |
+| **Draw in front** | Draws the mask visual in front of the child elements.  This is useful for debugging. |
+| **Use alpha test** | Uses the alpha channel in the masks visual's texture to define the mask.  You must enable this parameter for masks that are anything other than a rectangle. |
+| **Mask interaction** | Prevents input events from being set to the elements that are outside of the mask. |
+| **Child Mask Element** | Specifies one of the child elements as a special element that is drawn as part of the mask visual.  This parameter helps mask the remaining children. |

@@ -5,7 +5,7 @@ title: UI Text Component
 weight: 300
 ---
 
-You can use a **Text** component to add a text string to an element.  Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working) to configure the following settings for the **Text** component.
+You can use a **Text** component to add a text string to an element.  Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor) to configure the following settings for the **Text** component.
 
 
 **Text Settings**
@@ -34,7 +34,7 @@ To do this, enter specific tags directly into the **Text** box, along with your 
 
 **To use text styling markup**
 
-1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), add a **Text** component to an element on your canvas (or modify an existing component).
+1. In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), add a **Text** component to an element on your canvas (or modify an existing component).
 
 1. With the element selected, in the **Properties** pane, set the **Font path** property to a `*.fontfamily` file.
 
@@ -44,18 +44,22 @@ To do this, enter specific tags directly into the **Text** box, along with your 
 
 **Example**
 You can use the following tags and attributes when styling text with markup:
-**Bold** tag: <b>
 
-![Example that uses a Text component to add bold in the UI Editor.](/images/user-guide/interactivity/user-interface/editor/components/this-text-bold.png)
-**Italic** tag: <i>
+**Bold** tag: 
 
-![Example that uses a Text component to add italics in the UI Editor.](/images/user-guideinteractivity/user-interface/editor/components/this-text-italic.png)
-**Font color** tag: <font color>
+![Example that uses a Text component to add bold in the UI Editor.](/images/user-guide/interactivity/user-interface/components/visual/this-text-bold.png)
 
-![Example that uses a Text component to add font color in the UI Editor.](/images/user-guide/interactivity/user-interface/editor/components/this-text-red.png)
-**Font face** tag: <font face>
+**Italic** tag: 
 
-![Example that uses a Text component to add different fonts in the UI Editor.](/images/user-guide/interactivity/user-interface/editor/components/this-text-font.png)
+![Example that uses a Text component to add italics in the UI Editor.](/images/user-guide/interactivity/user-interface/components/visual/this-text-italic.png)
+
+**Font color** tag:
+
+![Example that uses a Text component to add font color in the UI Editor.](/images/user-guide/interactivity/user-interface/components/visual/this-text-red.png)
+
+**Font face** tag:
+
+![Example that uses a Text component to add different fonts in the UI Editor.](/images/user-guide/interactivity/user-interface/components/visual/this-text-font.png)
 
 ### Image Tag and Attributes 
 

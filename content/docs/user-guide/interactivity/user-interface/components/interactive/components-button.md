@@ -7,7 +7,7 @@ weight: 100
 
 You can use a **Button** component to make an element behave like a button.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-button.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/ui-editor-components-button.png)
 
 To see an in-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**. You can view the different types of buttons you can create. Press **Esc** to exit the game.
 
@@ -18,16 +18,21 @@ Note the following:
 
 + If you want to add a text label to a button, add a child element with a text component.
  
-+ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open-in) ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-components-button-1.png) next to **Sprite path**.
++ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open-in) ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-components-button-1.png) next to **Sprite path**.
 
 You can add a prebuilt **Button** element from the slice library. When you do this, a basic button with the text string "Button" is automatically created in your **Hierarchy** pane.
 
 **To add a Button element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **Button**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), choose **New**, **Element from Slice Library**, **Button**.
 
 **To edit a button component**
-In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working) **Properties** pane, expand **Button** and do the following, as appropriate:
+
+In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor) **Properties** pane, expand **Button** and do the following, as appropriate:
+
 ****Interactable****
-See [Properties](./components-interactive-properties) to edit the common interactive component settings.
+
+See [Properties](properties) to edit the common interactive component settings.
+
 ****Actions**, **Click****
+
 Enter a text string. This string is sent as an action on the UI canvas when the button is clicked.

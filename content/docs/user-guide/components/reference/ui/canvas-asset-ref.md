@@ -14,7 +14,7 @@ When you set up a UI canvas asset ref component, you can:
 
 Use this component in conjunction with the [**UI Canvas on Mesh**](/docs/user-guide/components/reference/ui/canvas-on-mesh/) component if you want to place a UI canvas on a 3D mesh that a player can interact with.
 
-For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/placing-canvases-3d/).
+For more information about how to use the **UI Canvas Asset Ref** component, see [Placing UI Canvases in the 3D World](/docs/user-guide/interactivity/user-interface/canvases/placing-canvases-3d/).
 
 ## UI Canvas Asset Ref Component Properties 
 

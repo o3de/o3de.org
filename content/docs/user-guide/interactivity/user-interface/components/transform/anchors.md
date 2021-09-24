@@ -18,7 +18,7 @@ For example, you can ensure an element remains full screen regardless of the scr
 
 **To configure an element's anchors**
 
-1. In the **Hierarchy** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), select the element whose anchors you want to modify.
+1. In the **Hierarchy** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), select the element whose anchors you want to modify.
 
 1. In the **Properties** pane, under **Transform2D**, choose from the selection of commonly used anchor placements.
 
@@ -36,7 +36,7 @@ For example, you can ensure an element remains full screen regardless of the scr
 
    1. Anchor all of the element's edges to the parent. The horizontal and vertical size adjusts to parent. You can use this anchor preset to place an element that remains full screen, regardless of a change in resolution. This applies if the canvas is its parent.
 
-   ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-presets-1.png)
+   ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-presets-1.png)
 
 **To further edit (fine tune) an element's anchors**
 In the **Properties** pane, under **Transform2D**, do the following for **Anchors**, as appropriate:
@@ -49,7 +49,7 @@ The anchors' positions can be visualized as points on a grid, plotted in percent
 
 But if, for example, you want the element's left and right edges to each remain at a fixed percentage relative to its parent and to change size as its parent changes size, then make the numbers different. In this case, the anchors are called split.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/ui-editor-percent.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-percent.png)
 
 **To edit an element's position and size**
 In the **Properties** pane, under **Transform2D**, modify the **Offsets**, as appropriate:
@@ -80,7 +80,7 @@ The element rotates around, resizes from, and calculates position from its pivot
 In the following example, anchors are used to resize the element relative to its parent. The layout column of buttons is resized as needed to stay on the screen. Because the layout column of buttons does not use the **Scale to Device** setting, the button text does not change size along with its parent button.
 
 **Note**
-You can [configure the text element](/docs/user-guide/interactivity/user-interface/editor/components/components-text) separately.
+You can [configure the text element](../visual/components-text) separately.
 
 The layout column of buttons has the following settings.
 
@@ -93,4 +93,4 @@ The layout column of buttons has the following settings.
 | Pivot | Default settings: X = 0.5, Y = 0.5 |
 | Scale to device | None (not selected) |
 
-![Using anchors to resize buttons to stay on the screen.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-3.gif)
+![Using anchors to resize buttons to stay on the screen.](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-transform-scale-3.gif)

@@ -13,4 +13,4 @@ You can enter strings for the following actions:
 + **Pressed**
 + **Release**
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/ui-editor-components-actions.png)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/properties/ui-editor-components-actions.png)

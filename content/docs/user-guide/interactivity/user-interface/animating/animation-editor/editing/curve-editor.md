@@ -15,7 +15,7 @@ The **Curve Editor** displays animations as function curves. Each track's curves
 
 1. Tangent handles
 
-![Example elements of a curve in the Curve Editor.](/images/user-guide/interactivity/user-interface/animating/animation-editor/ui-animation-curve-editor.png)
+![Example elements of a curve in the Curve Editor.](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-curve-editor.png)
 
 The path of the curve represents the transition of the value between the keyframes. If the value changes in a straight line between each keyframe (linear), transitions between keyframes will not be smooth. The default curve causes the value to smoothly ease in and ease out. Each key has an in tangent and an out tangent. Depending on the preferred effect, you can use the toolbar icons to switch the tangents to auto, zero, step, or linear. You can also manually drag the tangent handles.
 

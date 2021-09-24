@@ -1,5 +1,5 @@
 ---
-linkTitle: UI Scrollbar
+linkTitle: UI Scroll Bar
 description: ' Use a scroll bar component to add a scroll bar in the Open 3D Engine UI Editor. '
 title: UI Scrollbar Component
 weight: 170
@@ -16,50 +16,69 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 This is a horizontal scroll bar:
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/horizontal-scrollbar.gif)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/horizontal-scrollbar.gif)
 
 This is an image within a scroll box with both a horizontal and a vertical scroll bar:
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/components/scrollbar-scrollbox.gif)
+![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/scrollbar-scrollbox.gif)
 
 The scroll bar can also fade automatically when not in use:
 
-![Example of auto fade scroll bar.](/images/user-guide/interactivity/user-interface/editor/components/ui-scrollbar-autofade.gif)
+![Example of auto fade scroll bar.](/images/user-guide/interactivity/user-interface/components/interactive/ui-scrollbar-autofade.gif)
 
 You can add a prefabricated horizontal or vertical scroll bar element. When you do this, a handle is automatically created and nested in your **Hierarchy** pane.
 
 You can add a prebuilt **ScrollBarHorizontal** or **ScrollBarVertical** element from the slice library. When you do this, the scroll bar and its handle is automatically created in your **Hierarchy** pane.
 
 **To add a ScrollBar element from the slice library**
-+ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), choose **New**, **Element from Slice Library**, **ScrollBarHorizontal** or **ScrollBarVertical**.
++ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), choose **New**, **Element from Slice Library**, **ScrollBarHorizontal** or **ScrollBarVertical**.
 
 **To edit a scroll bar component**
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **ScrollBar** and do the following, as appropriate:
+
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), expand **ScrollBar** and do the following, as appropriate:
+
 **Interactable**
-See [Properties](./components-interactive-properties) to edit the common interactive component settings.
+
+See [Properties](properties) to edit the common interactive component settings.
+
 **Elements**, **Handle**
+
 Select an element from the list to provide the movable handle of the scroll bar.
+
 **Values**, **Orientation**
+
 Select the scroll bar's orientation:
-+ **Horizontal** - Scrollbar's handle moves left and right.
-
-   
-+ **Vertical** - Scrollbar's handle moves up and down.
-
+    + **Horizontal** - Scrollbar's handle moves left and right.
+    + **Vertical** - Scrollbar's handle moves up and down.
    
 **Values**, **Value**
+
 Enter the initial value of the scroll bar (**0.0** to **1.0**).
+
 **Values**, **Handle size**
+
 Enter the size of the handle relative to the scroll bar (**0.0** to **1.0**).
+
 **Values**, **Min handle size**
+
 Enter the minimum size of the handle in pixels.
+
 **Actions**, **Change**
+
 Enter a text string. This string is sent as an action on the UI canvas when the scroll bar changes values.
+
 **Actions**, **End Change**
+
 Enter a text string. This string is sent as an action on the UI canvas when the scroll bar has finished changing values.
+
 **Fade**, **Auto Fade When Not In Use**
+
 Select the check box to enable the scrollbar to fade to transparency after it is not used for a set amount of time. Specify the delay time in **Fade Delay**.
+
 **Fade**, **Fade Delay**
+
 Enter the delay in seconds before the scrollbar begins fading to transparency. Requires **Auto Fade When Not In Use** to be checked.
+
 **Fade**, **Fade Speed**
+
 Enter the time in seconds that it will take for the scrollbar to completely fade to transparency. Requires **Auto Fade When Not In Use** to be checked.

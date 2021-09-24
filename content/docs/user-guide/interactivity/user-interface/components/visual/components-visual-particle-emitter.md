@@ -5,7 +5,7 @@ title: UI Particle Emitter Component
 weight: 200
 ---
 
-You can use a **Particle Emitter** component to emit two-dimensional particles from an element. Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor/working) to configure the following settings for the **Particle Emitter** component.
+You can use a **Particle Emitter** component to emit two-dimensional particles from an element. Use the **Properties** pane of the [UI Editor](/docs/user-guide/interactivity/user-interface/editor) to configure the following settings for the **Particle Emitter** component.
 
 
 **Emitter Settings**

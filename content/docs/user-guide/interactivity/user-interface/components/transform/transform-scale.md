@@ -72,7 +72,7 @@ The elements that make up the UI are all contained in a parent element and has t
 | Width and Height | Matches the authored canvas size (for example, 1280x720) |
 | Scale to device | Scale to fit (uniformly) |
 
-![Scale to fit uniformly example.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-1.gif)
+![Scale to fit uniformly example.](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-transform-scale-1.gif)
 
 ### Scale to Fit Y 
 
@@ -93,7 +93,7 @@ The elements that make up the buttons are contained in a layout column element. 
 | Pivot | Default settings: X = 0.5, Y = 0.5 |
 | Scale to device | Scale to fit Y (uniformly) |
 
-![Scale to fit Y uniformly example.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-2.gif)
+![Scale to fit Y uniformly example.](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-transform-scale-2.gif)
 
 ## Uniform Scaling While Maintaining Relative Position 
 
@@ -128,4 +128,4 @@ The following images show how the health bar and speed indicator scales based on
 **Note**
 The indicated resolutions are not shown to scale.
 
-![Example of scaling elements while maintaining relative positions.](/images/user-guide/interactivity/user-interface/editor/ui-editor-transform-scale-uniform-position.png)
+![Example of scaling elements while maintaining relative positions.](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-transform-scale-uniform-position.png)

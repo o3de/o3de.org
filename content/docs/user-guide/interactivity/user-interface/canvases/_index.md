@@ -13,7 +13,7 @@ The **UI Editor** uses the concept of a canvas as an invisible backdrop for your
 
    The **UI Editor** automatically creates an empty canvas.
 
-1. In the **UI Editor**, add [elements](/docs/user-guide/interactivity/user-interface/editor/elements), [components](/docs/user-guide/interactivity/user-interface/editor/components), and [slices](/docs/user-guide/interactivity/user-interface/editor/ui-slices).
+1. In the **UI Editor**, add [elements](/docs/user-guide/interactivity/user-interface/elements), [components](/docs/user-guide/interactivity/user-interface/components), and [slices](/docs/user-guide/interactivity/user-interface/slices).
 
 1. Click **File**, **Save As**. Name the canvas with a `.uicanvas` file extension, and then click **Save**.
 
@@ -24,4 +24,4 @@ From the **UI Editor**'s **File** menu, in addition to the basic open, close, an
 + Close all open canvases
 + Close all but the active canvas
 
-![UI Editor File menu](/images/user-guide/interactivity/user-interface/editor/ui-editor-creating-canvases-1.png)
+![UI Editor File menu](/images/user-guide/interactivity/user-interface/canvases/ui-editor-creating-canvases-1.png)

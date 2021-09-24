@@ -13,7 +13,7 @@ Recording animation typically involves three steps:
 
 1. Turn on animation recording to capture changes in the element properties.
 
-Adding a UI element also adds a node to the sequence. After that any time that you enter record mode, a track is automatically added to your animation for any change you make to this UI element. You do not need to manually add tracks. For more information, see [Using the Node Pane](./using-node-pane.).
+Adding a UI element also adds a node to the sequence. After that any time that you enter record mode, a track is automatically added to your animation for any change you make to this UI element. You do not need to manually add tracks. For more information, see [Using the Node Pane](editing/using-node-pane).
 
 You can create an animation sequence from the **Animation Editor** menu or toolbar.
 
@@ -39,4 +39,4 @@ In the [**Animation Editor**](./), do one of the following:
 **Note**
 In the current release, not all component properties can be recorded. For example, enumerated values, such as the image type of an image component, cannot be animated.
 
-After you record a track, it appears beneath its UI element. The node pane lists your current animation sequences. For more information on the **Node Pane**, see [Using the Node Pane](./using-node-pane)
+After you record a track, it appears beneath its UI element. The node pane lists your current animation sequences. For more information on the **Node Pane**, see [Using the Node Pane](editing/using-node-pane)
