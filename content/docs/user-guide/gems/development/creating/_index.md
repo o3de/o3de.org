@@ -10,9 +10,22 @@ tools. This is all that's needed to ship a Gem.
 
 Although you can create a Gem manually by creating all of the files yourself, it's recommended to use the `o3de` tool located in the `<engine>/scripts` directory:
 
+{{< tabs name="Create a Gem" >}}
+{{% tab name="Windows" %}}
+
 ```cmd
-o3de.bat create-gem -gp <path to create gem at>
+<engine>/scripts/o3de.bat create-gem -gp <path to create gem at>
 ```
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```cmd
+<engine>/scripts/o3de.sh create-gem -gp <path to create gem at>
+```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 This will create your Gem with a standard file structure and CMake files created from [templates](https://github.com/o3de/o3de/tree/development/Templates).
 
@@ -50,13 +63,28 @@ Your `CMakeLists.txt` file is like any other CMake file. When you create it, kee
 
 ## Creating an Asset-Only Gem
 
-When you create a Gem without a specified template by using the command `o3de.bat create-gem -gp <path to create a gem at>`, it's created from the "DefaultGem" template. This creates a Gem for packaging both code and assets. You can also create a Gem that provides only assets by specifying the "AssetGem" template through the `create-gem` command:
+When you create a Gem without a specified template, it's created from the "DefaultGem" template. This creates a Gem for packaging both code and assets. You can also create a Gem that provides only assets by specifying the "AssetGem" template through the `create-gem` command:
+
+{{< tabs name="Create an asset Gem" >}}
+{{% tab name="Windows" %}}
 
 ```cmd
-o3de.bat create-gem --gem-path <path to create gem at> --template-name AssetGem
+<engine>/scripts/o3de.bat create-gem --gem-path <path to create gem at> --template-name AssetGem
 # or
-o3de.bat create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
+<engine>/scripts/o3de.bat create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
 ```
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+```cmd
+<engine>/scripts/o3de.sh create-gem --gem-path <path to create gem at> --template-name AssetGem
+# or
+<engine>/scripts/o3de.sh create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
+```
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Gem Templates
 
