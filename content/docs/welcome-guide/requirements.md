@@ -161,13 +161,13 @@ sudo apt-get install clang-12
 
 ### Vulkan supported video drivers
 
-In addition to the minimum hardware requirements for video cards for O3DE, Linux requires that the latest drivers for the video card is installed and enabled. Refer to the video card manufacturers support page on instructions to do this.
+In addition to the minimum hardware requirements for video cards for O3DE, Linux requires that the latest drivers for the video card are installed and enabled. Refer to the video card manufacturer's support page for instructions on how to do this.
 
 ### Python 3.7 dependency on libffi
 
 O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu 20.04.3 LTS does not support. You will need to manually install an older version of libffi onto Ubuntu 20.04.3 LTS in order for O3DE's Python to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi. 
 
-\```shell
+```shell
 pushd /tmp
 
 LIBFFI_PACKAGE_NAME=libffi6_3.2.1-8_amd64.deb
@@ -178,13 +178,15 @@ curl --location $LIBFFI_PACKAGE_URL/$LIBFFI_PACKAGE_NAME -o $LIBFFI_PACKAGE_NAME
 sudo apt install ./$LIBFFI_PACKAGE_NAME
 
 popd
-\```
+```
 
 {{< note >}}
 To download the debian package for libffi, you must install [Curl](https://curl.se):
-\```shell
+
+```shell
 sudo apt-get install curl
-\```
+```
+
 {{< /note >}}
 
 ### Additional library dependencies
@@ -198,8 +200,8 @@ O3DE also requires some additional library packages to be installed:
 * libxkbcommon-dev
 * libxkbcommon-x11-dev
 * libfontconfig1-dev
-* libcurl4-openssl-dev                    
-* libsdl2-dev                             
+* libcurl4-openssl-dev
+* libsdl2-dev
 * zlib1g-dev
 * mesa-common-dev
 
