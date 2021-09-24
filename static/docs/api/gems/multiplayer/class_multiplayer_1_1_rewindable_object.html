@@ -76,6 +76,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aaea771f91019a843095d2a8f11373a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab61f2077af5d7f7083ce708092956199"><td class="memItemLeft" align="right" valign="top">const BASE_TYPE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_rewindable_object.html#ab61f2077af5d7f7083ce708092956199">Get</a> () const</td></tr>
 <tr class="separator:ab61f2077af5d7f7083ce708092956199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1473810352e563386530f8335f4827d"><td class="memItemLeft" align="right" valign="top">const BASE_TYPE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_rewindable_object.html#ad1473810352e563386530f8335f4827d">GetPrevious</a> () const</td></tr>
+<tr class="separator:ad1473810352e563386530f8335f4827d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a706d96ad907abe5bc36c02ffb5ba60ec"><td class="memItemLeft" align="right" valign="top">BASE_TYPE &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_rewindable_object.html#a706d96ad907abe5bc36c02ffb5ba60ec">Modify</a> ()</td></tr>
 <tr class="separator:a706d96ad907abe5bc36c02ffb5ba60ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96051652f81d0c6fbc9417b87864f8b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_multiplayer_1_1_rewindable_object.html#a96051652f81d0c6fbc9417b87864f8b2">operator==</a> (const BASE_TYPE &amp;rhs) const</td></tr>
@@ -227,6 +229,31 @@ template&lt;typename BASE_TYPE , AZStd::size_t REWIND_SIZE&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Const base type retriever. </p><dl class="section return"><dt>Returns</dt><dd>value in const base type form </dd></dl>
+
+</div>
+</div>
+<a id="ad1473810352e563386530f8335f4827d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1473810352e563386530f8335f4827d">&#9670;&nbsp;</a></span>GetPrevious()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename BASE_TYPE , AZStd::size_t REWIND_SIZE&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const BASE_TYPE &amp; <a class="el" href="class_multiplayer_1_1_rewindable_object.html">Multiplayer::RewindableObject</a>&lt; BASE_TYPE, REWIND_SIZE &gt;::GetPrevious</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Const base type retriever for one host frame behind <a class="el" href="class_multiplayer_1_1_rewindable_object.html#ab61f2077af5d7f7083ce708092956199">Get()</a>. Only intended for use in SyncRewind contexts. </p><dl class="section return"><dt>Returns</dt><dd>value in const base type form </dd></dl>
 
 </div>
 </div>
@@ -494,7 +521,7 @@ template&lt;typename BASE_TYPE , AZStd::size_t REWIND_SIZE&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:44 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:20 for Open 3D Engine Multiplayer Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

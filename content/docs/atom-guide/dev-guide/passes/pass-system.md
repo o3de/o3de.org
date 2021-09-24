@@ -117,7 +117,7 @@ To use a pass in the render pipeline, the associated pass template must first be
 
 ### Pass Template
 
-*Related to: [PassTemplate API](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_template.html), [Pass Template File Specification](pass-template-file-spec.md)*
+*Related to: [PassTemplate API](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_template.html), [Pass Template File Specification](pass-template-file-spec/)*
 
 **Pass templates** provide data that allows the pass system to create an instance of a pass. 
 Pass templates can be authored in C++ or through a JSON file. 

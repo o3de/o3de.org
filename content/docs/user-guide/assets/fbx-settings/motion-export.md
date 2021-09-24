@@ -21,7 +21,7 @@ title: FBX Settings motion export
 
    A **Motion** exports a single animation sequence. If the `.fbx` contains multiple animation sequences, additional motions can be added by choosing **Add another motion**.
 
-1. Set the properties for each motion. Add modifiers to each motion as required. For information on **Motion** properties and modifiers, see [FBX Settings Motions tab](/docs/user-guide/assets/fbx-settings/settings-motions-tab.md).
+1. Set the properties for each motion. Add modifiers to each motion as required. For information on **Motion** properties and modifiers, see [FBX Settings Motions tab](/docs/user-guide/assets/fbx-settings/settings-motions-tab/).
 
 1. Choose the **Update** button at the bottom right of the **FBX Settings** window. A **File progress** window opens to display information about asset processing. Choose **OK** to close the **File progress** window. This step creates or updates the `.assetinfo` file. **Asset Processor** automatically processes the `.fbx` file and generates the runtime `.motion` files.
 

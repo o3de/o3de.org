@@ -29,6 +29,7 @@ In the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/work
 1. Under **Interactable**, **States**, click **Add new element** (green **+**).
 
 1. From the list, choose one of the following: **Color**, **Font**, **Sprite**, **Alpha**.
+
 ![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-interactive-stateactions.png)
 
 **To delete a state action**

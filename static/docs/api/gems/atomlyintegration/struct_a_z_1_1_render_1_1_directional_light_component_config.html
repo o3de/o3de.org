@@ -97,9 +97,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShadowFilteringDisa
 <tr class="memitem:ad05644c7e660185567cd58ec574c4eda"><td class="memItemLeft" align="right" valign="top"><a id="ad05644c7e660185567cd58ec574c4eda"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsShadowPcfDisabled</b> () const</td></tr>
 <tr class="separator:ad05644c7e660185567cd58ec574c4eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20f4bf079b64dba3073f9c4b96564915"><td class="memItemLeft" align="right" valign="top"><a id="a20f4bf079b64dba3073f9c4b96564915"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsPcfBoundarySearchDisabled</b> () const</td></tr>
-<tr class="separator:a20f4bf079b64dba3073f9c4b96564915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a300e1649dd3f2aa16ddecf27a2451"><td class="memItemLeft" align="right" valign="top"><a id="a78a300e1649dd3f2aa16ddecf27a2451"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEsmDisabled</b> () const</td></tr>
+<tr class="separator:a78a300e1649dd3f2aa16ddecf27a2451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -160,13 +160,10 @@ ShadowFilterMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="
 <tr class="separator:a20b85a6ff3bba8ca8429d6934394ab25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab31f1ef185609f065a2681a03af89a05"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#ab31f1ef185609f065a2681a03af89a05">m_boundaryWidth</a> = 0.03f</td></tr>
 <tr class="separator:ab31f1ef185609f065a2681a03af89a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a181a7e9a5623b3858815e926e6ea9256"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a181a7e9a5623b3858815e926e6ea9256">m_predictionSampleCount</a> = 4</td></tr>
-<tr class="separator:a181a7e9a5623b3858815e926e6ea9256"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f8a3e7617d431b3376ea55d58593cc0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a5f8a3e7617d431b3376ea55d58593cc0">m_filteringSampleCount</a> = 32</td></tr>
 <tr class="separator:a5f8a3e7617d431b3376ea55d58593cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15795f6ac3a1206b2010a9b8ef30812f"><td class="memItemLeft" align="right" valign="top"><a id="a15795f6ac3a1206b2010a9b8ef30812f"></a>
-PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_pcfMethod</b> = PcfMethod::Bicubic</td></tr>
-<tr class="separator:a15795f6ac3a1206b2010a9b8ef30812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3818e0d584fa48c2a5e4999ccc765869"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a3818e0d584fa48c2a5e4999ccc765869">m_receiverPlaneBiasEnabled</a> = true</td></tr>
+<tr class="separator:a3818e0d584fa48c2a5e4999ccc765869"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="ab31f1ef185609f065a2681a03af89a05"></a>
@@ -265,18 +262,18 @@ PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_pcfMethod</b> 
 
 </div>
 </div>
-<a id="a181a7e9a5623b3858815e926e6ea9256"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a181a7e9a5623b3858815e926e6ea9256">&#9670;&nbsp;</a></span>m_predictionSampleCount</h2>
+<a id="a3818e0d584fa48c2a5e4999ccc765869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3818e0d584fa48c2a5e4999ccc765869">&#9670;&nbsp;</a></span>m_receiverPlaneBiasEnabled</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint16_t AZ::Render::DirectionalLightComponentConfig::m_predictionSampleCount = 4</td>
+          <td class="memname">bool AZ::Render::DirectionalLightComponentConfig::m_receiverPlaneBiasEnabled = true</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sample Count for prediction of whether the pixel is on the boundary (from 4 to 16) The value should be less than or equal to m_filteringSampleCount. </p>
+<p>Whether not to enable the receiver plane bias. This uses partial derivatives to reduce shadow acne when using large pcf kernels. </p>
 
 </div>
 </div>
@@ -299,10 +296,10 @@ PcfMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_pcfMethod</b> 
 <li>Gems/AtomLyIntegration/CommonFeatures/Code/Include/AtomLyIntegration/CommonFeatures/CoreLights/DirectionalLightComponentConfig.h</li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="astruct_a_z_1_1_render_1_1_directional_light_component_config_html_a2a676d4ec50a1a17483eb7704d762c1b"><div class="ttname"><a href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a2a676d4ec50a1a17483eb7704d762c1b">AZ::Render::DirectionalLightComponentConfig::m_shadowFarClipDistance</a></div><div class="ttdeci">float m_shadowFarClipDistance</div><div class="ttdoc">Far depth clips for shadows.</div><div class="ttdef"><b>Definition:</b> DirectionalLightComponentConfig.h:56</div></div>
+<div class="ttc" id="astruct_a_z_1_1_render_1_1_directional_light_component_config_html_a2a676d4ec50a1a17483eb7704d762c1b"><div class="ttname"><a href="struct_a_z_1_1_render_1_1_directional_light_component_config.html#a2a676d4ec50a1a17483eb7704d762c1b">AZ::Render::DirectionalLightComponentConfig::m_shadowFarClipDistance</a></div><div class="ttdeci">float m_shadowFarClipDistance</div><div class="ttdoc">Far depth clips for shadows.</div><div class="ttdef"><b>Definition:</b> DirectionalLightComponentConfig.h:57</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:26 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:57:00 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -141,6 +141,9 @@ template&lt;typename T , typename  = AZStd::enable_if_t&lt;is_convertible_v&lt;c
 template&lt;typename T , typename  = AZStd::enable_if_t&lt;is_convertible_v&lt;const T&amp;, basic_string_view&lt;Element, Traits&gt;&gt;            &amp;&amp; !is_convertible_v&lt;const T&amp;, const Element*&gt;&gt;&gt; </td></tr>
 <tr class="memitem:a0ba712e57c35df2a59cb1cbb1fe73ebf"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><b>basic_fixed_string</b> (const T &amp;convertibleToView, size_type rhsOffset, size_type count)</td></tr>
 <tr class="separator:a0ba712e57c35df2a59cb1cbb1fe73ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574b81548563fd716a0745cc0c163e52"><td class="memItemLeft" align="right" valign="top"><a id="a574b81548563fd716a0745cc0c163e52"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_fixed_string</b> (AZStd::nullptr_t)=delete</td></tr>
+<tr class="separator:a574b81548563fd716a0745cc0c163e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6c0f6c7d88b2c67e4f4097184102821"><td class="memItemLeft" align="right" valign="top"><a id="ae6c0f6c7d88b2c67e4f4097184102821"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>operator AZStd::basic_string_view&lt; Element, Traits &gt;</b> () const</td></tr>
 <tr class="separator:ae6c0f6c7d88b2c67e4f4097184102821"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,6 +202,9 @@ constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:ac5c6bb43c6429a1d9450bbb7899e65d0"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>operator=</b> (const T &amp;convertible_to_view) -&gt; AZStd::enable_if_t&lt; is_convertible_v&lt; const T &amp;, <a class="el" href="class_a_z_std_1_1basic__string__view.html">basic_string_view</a>&lt; Element, Traits &gt;&gt; &amp;&amp;!is_convertible_v&lt; const T &amp;, const Element * &gt;, <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">basic_fixed_string</a> &amp; &gt;</td></tr>
 <tr class="separator:ac5c6bb43c6429a1d9450bbb7899e65d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f86091dc5b19ba551916011b2f5400"><td class="memItemLeft" align="right" valign="top"><a id="ac4f86091dc5b19ba551916011b2f5400"></a>
+constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (AZStd::nullptr_t) -&gt; <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">basic_fixed_string</a> &amp;=delete</td></tr>
+<tr class="separator:ac4f86091dc5b19ba551916011b2f5400"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfa88e0bc1bdc1a844216b3f541fc300"><td class="memItemLeft" align="right" valign="top"><a id="acfa88e0bc1bdc1a844216b3f541fc300"></a>
 constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">basic_fixed_string</a> &amp;rhs) -&gt; <a class="el" href="class_a_z_std_1_1basic__fixed__string.html">basic_fixed_string</a> &amp;</td></tr>
 <tr class="separator:acfa88e0bc1bdc1a844216b3f541fc300"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -685,7 +691,7 @@ template&lt;class Element , size_t MaxElementCount, class Traits &gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:52 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:14 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

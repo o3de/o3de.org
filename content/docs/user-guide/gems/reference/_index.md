@@ -113,7 +113,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Multiplayer](./multiplayer/multiplayer) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
+| [Multiplayer](./multiplayer) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
 | [Multiplayer Compression](./multiplayer/multiplayer-compression) | The Multiplayer Compression Gem provides an open source compressor for use with the Multiplayer Gem. |
 
 ## Network
@@ -123,7 +123,6 @@ toc: true
 | [Certificate Manager](./network/certificate-manager) | The Certificate Manager Gem provides access to authentication files for secure game connections from Amazon S3, files on disk, and other 3rd party sources. |
 | [Http Requestor](./network/http-requestor) | The HTTP Requestor Gem provides functionality to make asynchronous HTTP/HTTPS requests and return data through a user-provided call back function. |
 | [Metastream](./network/twitch/metastream) | The Metastream Gem provides functionality for an HTTP server that allows broadcasters to customize game streams with overlays of statistics and event data from a game session. |
-| [Multiplayer](./network/multiplayer/multiplayer/) | The Multiplayer Gem provides support for synchronizing O3DE components across a network in a fault-tolerant way, allowing for the development of multiplayer games. |
 | [Presence](./network/presence) | The Presence Gem provides a target platform agnostic interface for Presence services. |
 | [Twitch](./network/twitch/twitch) | The Twitch Gem provides access to the Twitch API v5 SDK including social functions, channels, and other APIs. |
 

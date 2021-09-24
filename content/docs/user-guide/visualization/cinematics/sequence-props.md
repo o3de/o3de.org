@@ -10,6 +10,7 @@ You can set properties in the Track View to control how the track view sequence 
 1. In the Track View, select the applicable sequence and click the **Edit Sequence** ![Image NOT FOUND](/images/user-guide/cinematics/cinematics-sequence-props-edit-icon.png) icon.
 
 1. In the **Sequence Properties** dialog box, you can specify the following properties.
+
 ![Specify track view sequence properties.](/images/user-guide/cinematics/cinematics-sequence-props.png)
 **Scene Properties**
 

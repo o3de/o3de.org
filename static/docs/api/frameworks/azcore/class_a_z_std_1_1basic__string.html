@@ -146,6 +146,9 @@ template&lt;class InputIterator &gt; </td></tr>
 <tr class="memitem:a2502639c63eb387f42a096d1bbc74310"><td class="memItemLeft" align="right" valign="top"><a id="a2502639c63eb387f42a096d1bbc74310"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>basic_string</b> (<a class="el" href="class_a_z_std_1_1basic__string__view.html">AZStd::basic_string_view</a>&lt; Element, Traits &gt; view, const Allocator &amp;alloc=Allocator())</td></tr>
 <tr class="separator:a2502639c63eb387f42a096d1bbc74310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a211e45920109c9c32df6454c235b103c"><td class="memItemLeft" align="right" valign="top"><a id="a211e45920109c9c32df6454c235b103c"></a>
+constexpr&#160;</td><td class="memItemRight" valign="bottom"><b>basic_string</b> (AZStd::nullptr_t)=delete</td></tr>
+<tr class="separator:a211e45920109c9c32df6454c235b103c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a858e682f07f479061f3db243acfa61be"><td class="memItemLeft" align="right" valign="top"><a id="a858e682f07f479061f3db243acfa61be"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>operator AZStd::basic_string_view&lt; Element, Traits &gt;</b> () const</td></tr>
 <tr class="separator:a858e682f07f479061f3db243acfa61be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +203,9 @@ const_reverse_iterator&#160;</td><td class="memItemRight" valign="bottom"><b>cre
 <tr class="memitem:a34c6a1be4e91f3e04f3a900b81ea4697"><td class="memItemLeft" align="right" valign="top"><a id="a34c6a1be4e91f3e04f3a900b81ea4697"></a>
 <a class="el" href="class_a_z_std_1_1basic__string.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (Element ch)</td></tr>
 <tr class="separator:a34c6a1be4e91f3e04f3a900b81ea4697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac003b2910b282c02d70f182f5f7e6a4c"><td class="memItemLeft" align="right" valign="top"><a id="ac003b2910b282c02d70f182f5f7e6a4c"></a>
+<a class="el" href="class_a_z_std_1_1basic__string.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (AZStd::nullptr_t)=delete</td></tr>
+<tr class="separator:ac003b2910b282c02d70f182f5f7e6a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb6abc3025422902e11cb3bf96ea795c"><td class="memItemLeft" align="right" valign="top"><a id="afb6abc3025422902e11cb3bf96ea795c"></a>
 <a class="el" href="class_a_z_std_1_1basic__string.html">this_type</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+=</b> (const <a class="el" href="class_a_z_std_1_1basic__string.html">this_type</a> &amp;rhs)</td></tr>
 <tr class="separator:afb6abc3025422902e11cb3bf96ea795c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -548,20 +554,20 @@ static const size_type&#160;</td><td class="memItemRight" valign="bottom"><b>npo
 Extensions</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp5e2f5f3c24ae8c6ab3eca618826b0e23"></a><a class="anchor" id="StringExtensions"></a></p>
 </td></tr>
-<tr class="memitem:ae63c6ed6bb7dc3873a31ee51a58de9f2"><td class="memItemLeft" align="right" valign="top"><a id="ae63c6ed6bb7dc3873a31ee51a58de9f2"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ae63c6ed6bb7dc3873a31ee51a58de9f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab773080891cc04f58b6e8b796b2adebd"><td class="memItemLeft" align="right" valign="top"><a id="ab773080891cc04f58b6e8b796b2adebd"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:ab773080891cc04f58b6e8b796b2adebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227e369d8e1ed39d93163b424bea87ed"><td class="memItemLeft" ><a id="a227e369d8e1ed39d93163b424bea87ed"></a>
+<tr class="memitem:a31e6dbcb3573593d5f65fdf5009e351b"><td class="memItemLeft" align="right" valign="top"><a id="a31e6dbcb3573593d5f65fdf5009e351b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a31e6dbcb3573593d5f65fdf5009e351b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd30ac3e30e42f10592d18c77881abc3"><td class="memItemLeft" align="right" valign="top"><a id="acd30ac3e30e42f10592d18c77881abc3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:acd30ac3e30e42f10592d18c77881abc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3616604563cccefd667eb83d290b9ba0"><td class="memItemLeft" ><a id="a3616604563cccefd667eb83d290b9ba0"></a>
 union {</td></tr>
-<tr class="memitem:abf1a0a050fd74ba631d9ef5d9b8b8db5"><td class="memItemLeft" >
+<tr class="memitem:a3e8a0618a51aab045e9250fcc8178738"><td class="memItemLeft" >
 &#160;&#160;&#160;Element&#160;&#160;&#160;<b>m_buffer</b> [SSO_BUF_SIZE]</td></tr>
-<tr class="separator:abf1a0a050fd74ba631d9ef5d9b8b8db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49adbe4e4358c3538295887fb472697d"><td class="memItemLeft" >
+<tr class="separator:a3e8a0618a51aab045e9250fcc8178738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dcf5850a550dad4849a4588f9b296f"><td class="memItemLeft" >
 &#160;&#160;&#160;pointer&#160;&#160;&#160;<b>m_data</b></td></tr>
-<tr class="separator:a49adbe4e4358c3538295887fb472697d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a227e369d8e1ed39d93163b424bea87ed"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a227e369d8e1ed39d93163b424bea87ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a71dcf5850a550dad4849a4588f9b296f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3616604563cccefd667eb83d290b9ba0"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a3616604563cccefd667eb83d290b9ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a411c7ffc33071922aa56ddc75b7a2d01"><td class="memItemLeft" align="right" valign="top"><a id="a411c7ffc33071922aa56ddc75b7a2d01"></a>
 size_type&#160;</td><td class="memItemRight" valign="bottom"><b>m_size</b></td></tr>
 <tr class="separator:a411c7ffc33071922aa56ddc75b7a2d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -770,7 +776,7 @@ template&lt;class Element , class Traits  = char_traits&lt;Element&gt;, class Al
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:52 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:14 for Open 3D Engine AzCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

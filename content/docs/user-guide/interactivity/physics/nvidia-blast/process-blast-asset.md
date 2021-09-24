@@ -20,7 +20,7 @@ Once you have manually edited the `.fbx` asset in **FBX Settings**, a `.assetinf
 When blast assets are processed automatically, a blast slice asset is created that adds the blast mesh chunks to the **Blast Family Mesh Data** component. If you have a blast asset with dozens of chunks, automatic processing with the Python asset builder for NVIDIA Blast can save some time.
 
 **Note**
-Automatically processing assets for NVIDIA Blast requires that your project has been built with the **Python Asset Builder** and **EditorPythonBindings** gems enabled. For more information, see [Python Asset Builder gem](/docs/user-guide/assets/builder/_index.md).
+Automatically processing assets for NVIDIA Blast requires that your project has been built with the **Python Asset Builder** and **EditorPythonBindings** gems enabled. For more information, see [Python Asset Builder gem](/docs/user-guide/assets/builder).
 
 **To process Blast assets automatically**
 
@@ -35,7 +35,8 @@ Automatically processing assets for NVIDIA Blast requires that your project has 
    1. Right-click the asset in the asset list to open the context menu.
 
    1. Choose **Reprocess File** from the context menu.
-![Automatic process of Blast assets.](/images/user-guide/physx/blast/ui-blast-process-automatic.png)
+
+   ![Automatic process of Blast assets.](/images/user-guide/physx/blast/ui-blast-process-automatic.png)
 
 ## Process Blast mesh assets manually 
 
@@ -60,7 +61,8 @@ Manually processing blast assets requires you to add a mesh group for each chunk
    1. Add the next mesh to the new **Mesh group** by choosing the **Hierarchy** button to the right of **Select meshes** and selecting the next mesh from the list.
 
    1. Repeat steps **b** and **c** until each mesh in the mesh list is assigned to its own **Mesh group**.
-![Create mesh groups for Blast assets.](/images/user-guide/physx/blast/ui-blast-asset-mesh-groups.png)
+
+   ![Create mesh groups for Blast assets.](/images/user-guide/physx/blast/ui-blast-asset-mesh-groups.png)
 
 1. **Optional:** If the meshes require special processing, such as a vertex color stream provided by the **Mesh (Advanced)** modifier, add modifiers to each mesh group as required.
 

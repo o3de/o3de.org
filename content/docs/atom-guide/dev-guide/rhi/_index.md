@@ -15,8 +15,8 @@ The RHI layer supports three backends:
 
 | Contents                        | Details |
 |--------------------------------------|---------|
-| [RHI Overview](rhi.md) | What the RHI does and why we need it. |
-| [Frame Scheduler](frame-scheduler.md) | The Frame Scheduler is a core component of the RHI, responsible for efficient GPU submission across each backend. | 
+| [RHI Overview](rhi/) | What the RHI does and why we need it. |
+| [Frame Scheduler](frame-scheduler/) | The Frame Scheduler is a core component of the RHI, responsible for efficient GPU submission across each backend. | 
 <!-- | Work Submission | Describes the API used to submit work to the GPU. This includes draw, dispatch, blit or ray tracing work |
 | Resources and Pools | Describes all the resources and their associated pools supported by the RHI layer. |
 | Shader Resource Groups | Describes Shader Resource Groups. How they are created, updated and used within RHI. |

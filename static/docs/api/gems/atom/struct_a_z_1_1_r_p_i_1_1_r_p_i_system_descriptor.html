@@ -69,17 +69,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>Reflect</b> (A
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aac8db13f5bb583ddef727c7577545068"><td class="memItemLeft" align="right" valign="top"><a id="aac8db13f5bb583ddef727c7577545068"></a>
-<a class="el" href="struct_a_z_1_1_r_h_i_1_1_r_h_i_system_descriptor.html">RHI::RHISystemDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_rhiSystemDescriptor</b></td></tr>
-<tr class="separator:aac8db13f5bb583ddef727c7577545068"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4d59c98442ca26b71f3d912672cbb7e"><td class="memItemLeft" align="right" valign="top"><a id="ae4d59c98442ca26b71f3d912672cbb7e"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_r_p_i_system_descriptor.html#ae4d59c98442ca26b71f3d912672cbb7e">m_sceneSrgAssetPath</a> = &quot;shaderlib/scenesrg_scenesrg.azsrg&quot;</td></tr>
-<tr class="memdesc:ae4d59c98442ca26b71f3d912672cbb7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path of the only one scene srg asset for the RPI system. This is used to create any <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">RPI::Scene</a>. <br /></td></tr>
-<tr class="separator:ae4d59c98442ca26b71f3d912672cbb7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a508bd2aabfce7d65c645b9cd819b9ab3"><td class="memItemLeft" align="right" valign="top"><a id="a508bd2aabfce7d65c645b9cd819b9ab3"></a>
-AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_r_p_i_system_descriptor.html#a508bd2aabfce7d65c645b9cd819b9ab3">m_viewSrgAssetPath</a> = &quot;shaderlib/viewsrg_viewsrg.azsrg&quot;</td></tr>
-<tr class="memdesc:a508bd2aabfce7d65c645b9cd819b9ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The path of the only one view srg asset for the RPI system. This is used to create any <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">RPI::View</a>. <br /></td></tr>
-<tr class="separator:a508bd2aabfce7d65c645b9cd819b9ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4688a3544864a6d49fd5d60bd72e9c08"><td class="memItemLeft" align="right" valign="top">AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_p_i_1_1_r_p_i_system_descriptor.html#a4688a3544864a6d49fd5d60bd72e9c08">m_commonSrgsShaderAssetPath</a> = &quot;shader/sceneandviewsrgs.azshader&quot;</td></tr>
+<tr class="separator:a4688a3544864a6d49fd5d60bd72e9c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18e5df516a340bb5e2320ad4bcf197d9"><td class="memItemLeft" align="right" valign="top"><a id="a18e5df516a340bb5e2320ad4bcf197d9"></a>
 <a class="el" href="struct_a_z_1_1_r_p_i_1_1_image_system_descriptor.html">ImageSystemDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_imageSystemDescriptor</b></td></tr>
 <tr class="separator:a18e5df516a340bb5e2320ad4bcf197d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,13 +81,29 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 <a class="el" href="struct_a_z_1_1_r_p_i_1_1_dynamic_draw_system_descriptor.html">DynamicDrawSystemDescriptor</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_dynamicDrawSystemDescriptor</b></td></tr>
 <tr class="separator:a4471f5969e3591db5ce11a219fb7db4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4688a3544864a6d49fd5d60bd72e9c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4688a3544864a6d49fd5d60bd72e9c08">&#9670;&nbsp;</a></span>m_commonSrgsShaderAssetPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AZStd::string AZ::RPI::RPISystemDescriptor::m_commonSrgsShaderAssetPath = &quot;shader/sceneandviewsrgs.azshader&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The asset cache relative path of the only common shader asset for the RPI system that is used as means to load the layout for scene srg and view srg. This is used to create any <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">RPI::Scene</a>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/RPI/Code/Include/Atom/RPI.Reflect/RPISystemDescriptor.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

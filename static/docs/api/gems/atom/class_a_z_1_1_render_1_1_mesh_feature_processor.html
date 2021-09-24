@@ -137,22 +137,30 @@ Transform&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a7ae980c77dbfbeac6d0799aabc46a01c">GetNonUniformScale</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
 <tr class="memdesc:a7ae980c77dbfbeac6d0799aabc46a01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the non-uniform scale for a given mesh handle. <br /></td></tr>
 <tr class="separator:a7ae980c77dbfbeac6d0799aabc46a01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1b899d7d9e50b9796a41ba298577ee"><td class="memItemLeft" align="right" valign="top"><a id="a7d1b899d7d9e50b9796a41ba298577ee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a7d1b899d7d9e50b9796a41ba298577ee">SetLocalAabb</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const AZ::Aabb &amp;localAabb) override</td></tr>
+<tr class="memdesc:a7d1b899d7d9e50b9796a41ba298577ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the local space bbox for a given mesh handle. You don't need to call this for static models, only skinned/animated models. <br /></td></tr>
+<tr class="separator:a7d1b899d7d9e50b9796a41ba298577ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae395e6329585b02f6b75ab3afce44c24"><td class="memItemLeft" align="right" valign="top"><a id="ae395e6329585b02f6b75ab3afce44c24"></a>
+AZ::Aabb&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ae395e6329585b02f6b75ab3afce44c24">GetLocalAabb</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
+<tr class="memdesc:ae395e6329585b02f6b75ab3afce44c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the local space bbox for a given mesh handle. Unless SetLocalAabb has been called before, this will be the bbox of the model asset. <br /></td></tr>
+<tr class="separator:ae395e6329585b02f6b75ab3afce44c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5e19cbf39da972330bf6f2ce38ddfe"><td class="memItemLeft" align="right" valign="top"><a id="a6e5e19cbf39da972330bf6f2ce38ddfe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a6e5e19cbf39da972330bf6f2ce38ddfe">SetSortKey</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, RHI::DrawItemSortKey sortKey) override</td></tr>
 <tr class="memdesc:a6e5e19cbf39da972330bf6f2ce38ddfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the sort key for a given mesh handle. <br /></td></tr>
 <tr class="separator:a6e5e19cbf39da972330bf6f2ce38ddfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8f10df1d335fbbae369e7bc9ca92eb"><td class="memItemLeft" align="right" valign="top"><a id="a9d8f10df1d335fbbae369e7bc9ca92eb"></a>
-RHI::DrawItemSortKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a9d8f10df1d335fbbae369e7bc9ca92eb">GetSortKey</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
-<tr class="memdesc:a9d8f10df1d335fbbae369e7bc9ca92eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the sort key for a given mesh handle. <br /></td></tr>
-<tr class="separator:a9d8f10df1d335fbbae369e7bc9ca92eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adef18e376d91c1bb833a6b430b9fecf9"><td class="memItemLeft" align="right" valign="top"><a id="adef18e376d91c1bb833a6b430b9fecf9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#adef18e376d91c1bb833a6b430b9fecf9">SetLodOverride</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, RPI::Cullable::LodOverride lodOverride) override</td></tr>
-<tr class="memdesc:adef18e376d91c1bb833a6b430b9fecf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an LOD override for a given mesh handle. This LOD will always be rendered instead being automatically determined. <br /></td></tr>
-<tr class="separator:adef18e376d91c1bb833a6b430b9fecf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08e9ab7cf96b70bd5542ba53c41e682a"><td class="memItemLeft" align="right" valign="top"><a id="a08e9ab7cf96b70bd5542ba53c41e682a"></a>
-RPI::Cullable::LodOverride&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a08e9ab7cf96b70bd5542ba53c41e682a">GetLodOverride</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) override</td></tr>
-<tr class="memdesc:a08e9ab7cf96b70bd5542ba53c41e682a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD override for a given mesh handle. <br /></td></tr>
-<tr class="separator:a08e9ab7cf96b70bd5542ba53c41e682a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f06e681fd3337917c820e03addbc133"><td class="memItemLeft" align="right" valign="top"><a id="a4f06e681fd3337917c820e03addbc133"></a>
+RHI::DrawItemSortKey&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a4f06e681fd3337917c820e03addbc133">GetSortKey</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
+<tr class="memdesc:a4f06e681fd3337917c820e03addbc133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the sort key for a given mesh handle. <br /></td></tr>
+<tr class="separator:a4f06e681fd3337917c820e03addbc133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b420332d3a1aea1566c8b0daf2b2206"><td class="memItemLeft" align="right" valign="top"><a id="a9b420332d3a1aea1566c8b0daf2b2206"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a9b420332d3a1aea1566c8b0daf2b2206">SetMeshLodConfiguration</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, const <a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_lod_configuration.html">RPI::Cullable::LodConfiguration</a> &amp;meshLodConfig) override</td></tr>
+<tr class="memdesc:a9b420332d3a1aea1566c8b0daf2b2206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LOD mesh configurations to be used in the Mesh Feature Processor. <br /></td></tr>
+<tr class="separator:a9b420332d3a1aea1566c8b0daf2b2206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae77c81f34e1b0e2b1e3807a59192c96e"><td class="memItemLeft" align="right" valign="top"><a id="ae77c81f34e1b0e2b1e3807a59192c96e"></a>
+<a class="el" href="struct_a_z_1_1_r_p_i_1_1_cullable_1_1_lod_configuration.html">RPI::Cullable::LodConfiguration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#ae77c81f34e1b0e2b1e3807a59192c96e">GetMeshLodConfiguration</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle) const override</td></tr>
+<tr class="memdesc:ae77c81f34e1b0e2b1e3807a59192c96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the LOD mesh configurations being used in the Mesh Feature Processor. <br /></td></tr>
+<tr class="separator:ae77c81f34e1b0e2b1e3807a59192c96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4075cd3b3ec9a5dcbc9645b8cf7fba"><td class="memItemLeft" align="right" valign="top"><a id="a6a4075cd3b3ec9a5dcbc9645b8cf7fba"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_mesh_feature_processor.html#a6a4075cd3b3ec9a5dcbc9645b8cf7fba">SetExcludeFromReflectionCubeMaps</a> (const <a class="el" href="class_a_z_1_1_stable_dynamic_array_handle.html">MeshHandle</a> &amp;meshHandle, bool excludeFromReflectionCubeMaps) override</td></tr>
 <tr class="memdesc:a6a4075cd3b3ec9a5dcbc9645b8cf7fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the option to exclude this mesh from baked reflection probe cubemaps. <br /></td></tr>
@@ -343,7 +351,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableSceneNotificat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:18 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:51 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

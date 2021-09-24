@@ -67,6 +67,9 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SizeChangedEvent</b>
 <tr class="memitem:ac431abc2f359d5564c9bc018c95c82b8"><td class="memItemLeft" align="right" valign="top"><a id="ac431abc2f359d5564c9bc018c95c82b8"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ScalarChangedEvent</b> = AZ::Event&lt; float &gt;</td></tr>
 <tr class="separator:ac431abc2f359d5564c9bc018c95c82b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdcf363d6d46fa91b531d892f493fc07"><td class="memItemLeft" align="right" valign="top"><a id="acdcf363d6d46fa91b531d892f493fc07"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>UintChangedEvent</b> = AZ::Event&lt; uint32_t &gt;</td></tr>
+<tr class="separator:acdcf363d6d46fa91b531d892f493fc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5e76e8c155e88a49cb7bf406097238"><td class="memItemLeft" align="right" valign="top"><a id="a3d5e76e8c155e88a49cb7bf406097238"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>MatrixChangedEvent</b> = AZ::Event&lt; const AZ::Matrix4x4 &amp; &gt;</td></tr>
 <tr class="separator:a3d5e76e8c155e88a49cb7bf406097238"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -112,8 +115,12 @@ RenderPipelinePtr&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 <tr class="separator:ad04b2e5e6ac0ef6e7557257a58a37f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a573276d6d296f38051eb3b61627cb2bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a573276d6d296f38051eb3b61627cb2bb">SetRenderScene</a> (ScenePtr scene)</td></tr>
 <tr class="separator:a573276d6d296f38051eb3b61627cb2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eccba83b4b8aaabe04f61efed8d5795"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a2eccba83b4b8aaabe04f61efed8d5795">RenderTick</a> ()</td></tr>
-<tr class="separator:a2eccba83b4b8aaabe04f61efed8d5795"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae855c1ba256fba56391bb3d0f522324"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#aae855c1ba256fba56391bb3d0f522324">GetFpsLimit</a> () const</td></tr>
+<tr class="separator:aae855c1ba256fba56391bb3d0f522324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91dd5dfa2108e9915e8cbf1fbe21c0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#af91dd5dfa2108e9915e8cbf1fbe21c0e">SetFpsLimit</a> (float fpsLimit)</td></tr>
+<tr class="separator:af91dd5dfa2108e9915e8cbf1fbe21c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b92c4ffb3e55e820a57bf1cad5a159"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ab1b92c4ffb3e55e820a57bf1cad5a159">GetTargetFrameRate</a> () const</td></tr>
+<tr class="separator:ab1b92c4ffb3e55e820a57bf1cad5a159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4082dd661044fdd6365077cea4b6df2b"><td class="memItemLeft" align="right" valign="top">AZ::Name&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a4082dd661044fdd6365077cea4b6df2b">GetName</a> () const</td></tr>
 <tr class="separator:a4082dd661044fdd6365077cea4b6df2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d10eeb743c06067adacf97a8d36025"><td class="memItemLeft" align="right" valign="top">ViewPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a77d10eeb743c06067adacf97a8d36025">GetDefaultView</a> ()</td></tr>
@@ -125,6 +132,12 @@ ConstViewPtr&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultVie
 <tr class="separator:a9e00f0206742e1430a3c17d057044d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82458ad7cdb124fdff3adb01af589202"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a82458ad7cdb124fdff3adb01af589202">GetDpiScalingFactor</a> () const</td></tr>
 <tr class="separator:a82458ad7cdb124fdff3adb01af589202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfecbcacb584f98d618bdf9c80a3671"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a1bfecbcacb584f98d618bdf9c80a3671">GetVsyncInterval</a> () const</td></tr>
+<tr class="separator:a1bfecbcacb584f98d618bdf9c80a3671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff8d9123b5b11d8e69549cced0a798b"><td class="memItemLeft" align="right" valign="top"><a id="adff8d9123b5b11d8e69549cced0a798b"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#adff8d9123b5b11d8e69549cced0a798b">GetRefreshRate</a> () const</td></tr>
+<tr class="memdesc:adff8d9123b5b11d8e69549cced0a798b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current display refresh rate, in frames per second. <br /></td></tr>
+<tr class="separator:adff8d9123b5b11d8e69549cced0a798b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1175998abe896d7667ed3bbfb19a4253"><td class="memItemLeft" align="right" valign="top"><a id="a1175998abe896d7667ed3bbfb19a4253"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a1175998abe896d7667ed3bbfb19a4253">OnRenderPipelineAdded</a> (RenderPipelinePtr pipeline) override</td></tr>
 <tr class="memdesc:a1175998abe896d7667ed3bbfb19a4253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures our default view remains set when our scene's render pipelines are modified. <br /></td></tr>
@@ -133,10 +146,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#af9ca01c0961f2e13095ac04fc2defb64">OnRenderPipelineRemoved</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline) override</td></tr>
 <tr class="memdesc:af9ca01c0961f2e13095ac04fc2defb64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures our default view remains set when our scene's render pipelines are modified. <br /></td></tr>
 <tr class="separator:af9ca01c0961f2e13095ac04fc2defb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18e599cec76f328388d4b6d982e819c9"><td class="memItemLeft" align="right" valign="top"><a id="a18e599cec76f328388d4b6d982e819c9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a18e599cec76f328388d4b6d982e819c9">OnBeginPrepareRender</a> () override</td></tr>
-<tr class="memdesc:a18e599cec76f328388d4b6d982e819c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">OnBeginPrepareRender is forwarded to our RenderTick notification to allow subscribers to do rendering. <br /></td></tr>
-<tr class="separator:a18e599cec76f328388d4b6d982e819c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae017c60630bd4eb2f05f707b3569a48a"><td class="memItemLeft" align="right" valign="top"><a id="ae017c60630bd4eb2f05f707b3569a48a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ae017c60630bd4eb2f05f707b3569a48a">OnWindowResized</a> (uint32_t width, uint32_t height) override</td></tr>
 <tr class="memdesc:ae017c60630bd4eb2f05f707b3569a48a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to fire a notification when our window resizes. <br /></td></tr>
@@ -145,10 +154,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#acc764a81ecedc95965359d87204cdd20">OnDpiScaleFactorChanged</a> (float dpiScaleFactor) override</td></tr>
 <tr class="memdesc:acc764a81ecedc95965359d87204cdd20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to fire a notification when our window DPI changes. <br /></td></tr>
 <tr class="separator:acc764a81ecedc95965359d87204cdd20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69aa84971281bf61aad62fa2fa907c3"><td class="memItemLeft" align="right" valign="top"><a id="ae69aa84971281bf61aad62fa2fa907c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#ae69aa84971281bf61aad62fa2fa907c3">OnVsyncIntervalChanged</a> (uint32_t interval) override</td></tr>
+<tr class="memdesc:ae69aa84971281bf61aad62fa2fa907c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to fire a notification when our vsync interval changes. <br /></td></tr>
+<tr class="separator:ae69aa84971281bf61aad62fa2fa907c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbad7c0143a6e08403e3d4d7cb3c9c7"><td class="memItemLeft" align="right" valign="top"><a id="a8fbad7c0143a6e08403e3d4d7cb3c9c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a8fbad7c0143a6e08403e3d4d7cb3c9c7">OnRefreshRateChanged</a> (uint32_t refreshRate) override</td></tr>
+<tr class="memdesc:a8fbad7c0143a6e08403e3d4d7cb3c9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to fire a notification when our refresh rate changes. <br /></td></tr>
+<tr class="separator:a8fbad7c0143a6e08403e3d4d7cb3c9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff3c78f3e793b6e8fa37079c5b655b18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#aff3c78f3e793b6e8fa37079c5b655b18">ConnectSizeChangedHandler</a> (SizeChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:aff3c78f3e793b6e8fa37079c5b655b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbf2a8a5860fafd9b37fc965eaf928c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#adbf2a8a5860fafd9b37fc965eaf928c2">ConnectDpiScalingFactorChangedHandler</a> (ScalarChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="separator:adbf2a8a5860fafd9b37fc965eaf928c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56c79fc4f326ec31f8785e61a8c81a13"><td class="memItemLeft" align="right" valign="top"><a id="a56c79fc4f326ec31f8785e61a8c81a13"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a56c79fc4f326ec31f8785e61a8c81a13">ConnectVsyncIntervalChangedHandler</a> (UintChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a56c79fc4f326ec31f8785e61a8c81a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the vsync interval has changed. <br /></td></tr>
+<tr class="separator:a56c79fc4f326ec31f8785e61a8c81a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dc8e3e69b844a3116bb8c835d406047"><td class="memItemLeft" align="right" valign="top"><a id="a8dc8e3e69b844a3116bb8c835d406047"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#a8dc8e3e69b844a3116bb8c835d406047">ConnectRefreshRateChangedHandler</a> (UintChangedEvent::Handler &amp;handler)</td></tr>
+<tr class="memdesc:a8dc8e3e69b844a3116bb8c835d406047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the refresh rate has changed. <br /></td></tr>
+<tr class="separator:a8dc8e3e69b844a3116bb8c835d406047"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae2e8e016e9c4e817eb62e47a1eda39"><td class="memItemLeft" align="right" valign="top"><a id="aeae2e8e016e9c4e817eb62e47a1eda39"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html#aeae2e8e016e9c4e817eb62e47a1eda39">ConnectViewMatrixChangedHandler</a> (MatrixChangedEvent::Handler &amp;handler)</td></tr>
 <tr class="memdesc:aeae2e8e016e9c4e817eb62e47a1eda39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies consumers when the view matrix has changed. <br /></td></tr>
@@ -335,6 +360,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 
 </div>
 </div>
+<a id="aae855c1ba256fba56391bb3d0f522324"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae855c1ba256fba56391bb3d0f522324">&#9670;&nbsp;</a></span>GetFpsLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AZ::RPI::ViewportContext::GetFpsLimit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the maximum frame rate this viewport context's pipeline can render at, 0 for unlimited. The target framerate for the pipeline will be determined by this frame limit and the vsync settings for the current window. </p>
+
+</div>
+</div>
 <a id="a4082dd661044fdd6365077cea4b6df2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4082dd661044fdd6365077cea4b6df2b">&#9670;&nbsp;</a></span>GetName()</h2>
 
@@ -350,6 +393,24 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
       </table>
 </div><div class="memdoc">
 <p>Gets the current name of this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a>. This name is used to tie this <a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">ViewportContext</a> to its <a class="el" href="class_a_z_1_1_r_p_i_1_1_view.html">View</a> stack, and ViewportContexts may be renamed via AZ::RPI::ViewportContextRequests::Get()-&gt;RenameViewportContext(...). </p>
+
+</div>
+</div>
+<a id="ab1b92c4ffb3e55e820a57bf1cad5a159"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1b92c4ffb3e55e820a57bf1cad5a159">&#9670;&nbsp;</a></span>GetTargetFrameRate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float AZ::RPI::ViewportContext::GetTargetFrameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the target frame rate for this viewport context. This returns the lowest of either the current VSync refresh rate or 0 for an unlimited frame rate (if there's no FPS limit and vsync is off). </p>
 
 </div>
 </div>
@@ -371,21 +432,40 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 
 </div>
 </div>
-<a id="a2eccba83b4b8aaabe04f61efed8d5795"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eccba83b4b8aaabe04f61efed8d5795">&#9670;&nbsp;</a></span>RenderTick()</h2>
+<a id="a1bfecbcacb584f98d618bdf9c80a3671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bfecbcacb584f98d618bdf9c80a3671">&#9670;&nbsp;</a></span>GetVsyncInterval()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AZ::RPI::ViewportContext::RenderTick </td>
+          <td class="memname">uint32_t AZ::RPI::ViewportContext::GetVsyncInterval </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Gets the current vsync interval, as a divisor of the current refresh rate. A value of 0 indicates that vsync is disabled. </p>
+
+</div>
+</div>
+<a id="af91dd5dfa2108e9915e8cbf1fbe21c0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af91dd5dfa2108e9915e8cbf1fbe21c0e">&#9670;&nbsp;</a></span>SetFpsLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AZ::RPI::ViewportContext::SetFpsLimit </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fpsLimit</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Runs one simulation and render tick and renders a frame to this viewport's window. </p><dl class="section note"><dt>Note</dt><dd>This is likely to be replaced by a tick management system in the RPI. </dd></dl>
+<p>Sets the maximum frame rate this viewport context's pipeline can render at, 0 for unlimited. The target framerate for the pipeline will be determined by this frame limit and the vsync settings for the current window. </p>
 
 </div>
 </div>
@@ -414,7 +494,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>ViewportContextManag
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:23 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

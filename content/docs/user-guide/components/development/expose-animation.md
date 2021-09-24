@@ -1,8 +1,9 @@
 ---
-description: ' Learn how to expose custom components and their properties to the <guilabel>Track View</guilabel> editor
-  for animation in Open 3D Engine. '
+linkTitle: Exposing Custom Components to Track View for Animation
 title: Exposing Custom Components to Track View for Animation
-weight: 900
+description: Learn how to expose custom components and their properties to the Track View editor for animation in Open 3D Engine. 
+toc: true
+weight: 800
 ---
 
 To include custom components in cinematic cut scenes and movies rendered to disk, you must expose animatable component properties to O3DE's Track View and **Entity Inspector**. To expose a custom component and its properties, you must perform three steps:
@@ -130,7 +131,8 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    ```
 
    **Track View** then uses a color track for the property, as the following image shows.
-![Color picker in Track View](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
+
+   ![Color picker in Track View](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
 
    Other units can be found in the file `Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`. These units are the following.
 

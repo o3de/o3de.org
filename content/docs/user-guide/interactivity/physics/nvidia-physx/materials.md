@@ -70,9 +70,11 @@ Physics materials define the physical properties of PhysX colliders. To create p
 1. Choose Asset Editor from the **Tools** menu.
 
 1. In the Asset Editor, choose **New**, **Physics Material** from the **File** menu to create a new physics material library.
+
 ![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-B.png)
 
 1. Create a physics material in the library by clicking the **+** on the right.
+
 ![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-C.png)
 
 1. Name the physics material by editing the **Name** property. Set the material properties as desired.
@@ -84,6 +86,7 @@ You can add additional physics materials to the library by repeating the precedi
 ## Assign a physics material library 
 
 Your project has the physics material library set in **PhysX Configuration**. To change the physics material library, choose **PhysX Configuration** from the **Tools** menu. In the **Global Configuration** tab, click the button to the right of **Physics Material Library** to change the library.
+
 ![PhysX Configuration, physics material library.](/images/user-guide/physx/physx/ui-physx-material-D.png)
 
 PhysX collider components use the physics material library that is assigned to PhysX Configuration.
@@ -104,7 +107,7 @@ When the **Physics Asset** shape is selected in **PhysX Collider** component, an
 
 Static entities that have PhysX triangle mesh assets can have physics materials assigned per face. You define material placement by assigning materials to the faces of the triangle collision mesh in a content creation application. These materials are listed in both FBX Settings PhysX group and PhysX Collider component, where each material is assigned a physics material.
 
-For more information on creating PhysX mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export.md).
+For more information on creating PhysX mesh assets, see [FBX Settings PhysX export](/docs/user-guide/assets/fbx-settings/physx-export/).
 
 In the example below, the PhysX mesh asset was authored with six materials in the content creation application: *Yellow*, *Red*, *Blue*, *Teal*, *Green* and *Orange*. In FBX Settings, under PhysX tab, a physics material can be assigned to each material.
 

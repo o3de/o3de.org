@@ -69,8 +69,12 @@ Use **CMake** to create the Visual Studio project for your O3DE project.
 
     ```cmd
     cd C:\o3de-projects\MyProject
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
+    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
+
+    {{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the previous `cmake` command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
+    {{< /note >}}
 
     {{< caution >}}
 Do not use trailing slashes when specifying the path to the packages directory.
