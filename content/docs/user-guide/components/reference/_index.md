@@ -207,6 +207,11 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | PhysX Collider Surface Tag Emitter | Enables a physics collider to emit surface tags. |
 | Shape Surface Tag Emitter | Enables a shape to emit surface tags. |
 
+### Terrain  
+
+| Component | Description | 
+| - | - |
+| [Terrain Physics Collider](/docs/user-guide/components/reference/terrain/terrain_physics_collider.md) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
 
 ### Test  
 

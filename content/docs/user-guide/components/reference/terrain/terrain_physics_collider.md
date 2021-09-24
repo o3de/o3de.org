@@ -11,7 +11,7 @@ The **Box component** is required for the **Terrain Physics Collider** to operat
 
 ## Provider ##
 
-[Terrain Gem](/docs/user-guide/gems/reference/terrain)
+[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
 ## HeightfieldProviderRequestsBus ##
 
