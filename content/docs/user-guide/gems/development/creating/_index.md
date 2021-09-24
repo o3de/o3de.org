@@ -14,7 +14,7 @@ Although you can create a Gem manually by creating all of the files yourself, it
 {{% tab name="Windows" %}}
 
 ```cmd
-<engine>/scripts/o3de.bat create-gem -gp <path to create gem at>
+<engine>\scripts\o3de.bat create-gem -gp <path to create gem at>
 ```
 
 {{% /tab %}}
@@ -69,9 +69,9 @@ When you create a Gem without a specified template, it's created from the "Defau
 {{% tab name="Windows" %}}
 
 ```cmd
-<engine>/scripts/o3de.bat create-gem --gem-path <path to create gem at> --template-name AssetGem
+<engine>\scripts\o3de.bat create-gem --gem-path <path to create gem at> --template-name AssetGem
 # or
-<engine>/scripts/o3de.bat create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
+<engine>\scripts\o3de.bat create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
 ```
 
 {{% /tab %}}
@@ -80,7 +80,7 @@ When you create a Gem without a specified template, it's created from the "Defau
 ```cmd
 <engine>/scripts/o3de.sh create-gem --gem-path <path to create gem at> --template-name AssetGem
 # or
-<engine>/scripts/o3de.sh create-gem --gem-path <path to create gem at> --template-path <engine-root>\Templates\AssetGem
+<engine>/scripts/o3de.sh create-gem --gem-path <path to create gem at> --template-path <engine-root>/Templates/AssetGem
 ```
 
 {{% /tab %}}
