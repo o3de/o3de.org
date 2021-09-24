@@ -1,5 +1,5 @@
 ---
-linkTitle: Adding new fonts
+linkTitle: Adding New Fonts
 description: Add new font assets to your Open 3D Engine game UI.
 title: Adding New Fonts
 weight: 100

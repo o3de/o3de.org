@@ -2,7 +2,7 @@
 linkTitle: Animating the UI
 description: ' Use O3DE''s Scripted Entity Tweener gem or the UI System''s Animation Editor to animate game UI elements. '
 title: Animating the UI
-weight: 300
+weight: 800
 ---
 
 You can animate your game's UI using one of the following tools:

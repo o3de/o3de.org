@@ -1,8 +1,8 @@
 ---
-linkTitle: Configuring font properties
+linkTitle: Configuring Font Properties
 description: Configure font properties such as asset path and effects for your game UI in Open 3D Engine.
 title: Configuring Font Properties
-weight: 200
+weight: 400
 ---
 
 You can define the appearance of your UI font by configuring various properties that affect the font's appearance and usage.

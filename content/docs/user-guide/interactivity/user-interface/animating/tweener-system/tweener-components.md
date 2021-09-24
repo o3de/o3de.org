@@ -1,8 +1,8 @@
 ---
-linkTitle: Tweener supported components
+linkTitle: Tweener-supported Components
 description: ' Learn which entity parameters that Open 3D Engine supports in the Scripted Entity Tweener system. '
-title: Tweener Supported Components
-weight: 300
+title: Tweener-supported Components
+weight: 200
 ---
 
 You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system.

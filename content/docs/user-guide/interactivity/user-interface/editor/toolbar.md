@@ -1,8 +1,8 @@
 ---
-linkTitle: UI Editor toolbar
+linkTitle: UI Editor Toolbar
 description: ' Use the toolbar in Open 3D Engine''s UI Editor to manipulate your game UI elements. '
 title: UI Editor Toolbar
-weight: 120
+weight: 100
 ---
 
 ## Interaction Modes 

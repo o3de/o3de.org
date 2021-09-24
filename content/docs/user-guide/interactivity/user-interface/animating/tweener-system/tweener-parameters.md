@@ -1,8 +1,8 @@
 ---
-linkTitle: Tweener parameters
+linkTitle: Tweener Parameters
 description: ' Learn how to modify Lua script parameters in the Scripted Entity Tweener system for Open 3D Engine. '
 title: Tweener Parameters
-weight: 150
+weight: 400
 ---
 
 Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations. Use the parameters with a [timeline](./tweener-timeline) for a variety of possibilities.

@@ -2,7 +2,7 @@
 linkTitle: Tweeners in Lua
 description: ' Learn how to use Lua scripting to animate your entities with the Scripted Entity Tweener system in Open 3D Engine. '
 title: Tweeners in Lua
-weight: 400
+weight: 300
 ---
 
 You must have a minimum set of code to play an animation in the Scripted Entity Tweener system. You use this script as part of a **Lua script** component. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/user-guide/scripting/lua/add-lua-script/).

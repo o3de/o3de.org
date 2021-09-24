@@ -3,7 +3,7 @@ linkTitle: UI Animation Editor
 description: ' Use O3DE''s UI Animation Editor to animate elements in your game''s UI. '
 title: UI Animation Editor
 toc: true
-weight: 100
+weight: 200
 ---
 
 You can use animation sequences to animate UI elements in your game's UI. A UI canvas can contain many named animation sequences.

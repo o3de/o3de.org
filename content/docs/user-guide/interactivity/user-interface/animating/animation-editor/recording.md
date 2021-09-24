@@ -1,8 +1,8 @@
 ---
-linkTitle: Recording animation data
+linkTitle: Recording Animation Data
 description: ' Use O3DE''s Animation Editor to record a new animation after you have created a new sequence. '
 title: Recording Animation Data
-weight: 100
+weight: 200
 ---
 
 Recording animation typically involves three steps:
