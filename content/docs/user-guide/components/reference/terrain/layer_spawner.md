@@ -6,21 +6,21 @@ weight: 100
 ---
 
 The **Terrain Layer Spawner** component spawns a terrain layer within given bounds, and enables the ordering of multiple layers.  
-The priority is controlled firstly by assigning a layer, either **Foregound**(Highest priority) or **Background**, then by using the **Priority** setting, with a higher number being a higher priority.  
-The dimensions of the layer can be configured by modifying the [Box component](/docs/user-guide/components/reference/shape/box-shape) on the same entity.
+The priority is controlled by first assigning a layer, either **Foregound**(Highest priority) or **Background**, and then by using the **Priority** setting, with a higher number being a higher priority.  
+You can configure the dimensions of the layer by modifying the [Box component](/docs/user-guide/components/reference/shape/box-shape) on the same entity.
 The **Box component** is required for the **Layer Spawner** to operate.
 
 ## Provider ##
 
-[Terrain Gem](/docs/user-guide/gems/reference/terrain)
+[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
 
 ## Properties ##
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Layer Priority** | The priority of the spawner, Foreground has a higher priority than Background. | Foreground or Background | `Foreground` |
+| **Layer Priority** | The priority of the spawner. Foreground has a higher priority than Background. | Foreground or Background | `Foreground` |
 | **Sub Priority** | Sets the priority of this spawner within the layer. Higher numbers will override lower. | 0 - 10000 | 0 |
-| **Use Ground Plane** | Enable this to provide a default ground plane where no terrain is defined. | Boolean | `True` |
+| **Use Ground Plane** | Enable this setting to provide a default ground plane where no terrain is defined. | Boolean | `True` |
 
 
 ## TerrainSpawnerRequestBus ##
@@ -34,7 +34,7 @@ Retrieves the terrain layer priority.
 **Parameters**  
 Layer \[out\] - Index of the Layer Priority setting (Foreground is 0).
 Type: Unsigned Int  
-Priority \[out\] - Value of the sub priority setting. 
+Priority \[out\] - Value of the Sub Priority setting. 
 Type: Unsigned Int
 
 **Return**
