@@ -207,6 +207,11 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | PhysX Collider Surface Tag Emitter | Enables a physics collider to emit surface tags. |
 | Shape Surface Tag Emitter | Enables a shape to emit surface tags. |
 
+### Terrain  
+
+| Component | Description | 
+| - | - |
+| [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner/) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
 
 ### Test  
 
