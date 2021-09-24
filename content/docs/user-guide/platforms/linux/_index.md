@@ -69,7 +69,7 @@ When building a project that was generated using the Ninja Multi-Config generato
 
 cd $O3DE_PROJECT_PATH
 
-cmake --build build/linux --config profile --target=$O3DE_PROJECT_NAME.GameLauncher Editor
+cmake --build build/linux --config profile --target $O3DE_PROJECT_NAME.GameLauncher Editor
 ```
 
 ### Single Config Builds
@@ -80,7 +80,7 @@ When building a project that was generated using the Unix Makefile generator, CM
 
 cd $O3DE_PROJECT_PATH
 
-cmake --build build/linux --target=$O3DE_PROJECT_NAME.GameLauncher Editor
+cmake --build build/linux --target $O3DE_PROJECT_NAME.GameLauncher Editor
 ```
 
 ## Advanced Topics
