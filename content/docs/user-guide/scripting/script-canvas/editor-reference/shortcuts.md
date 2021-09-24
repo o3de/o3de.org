@@ -24,24 +24,25 @@ The Script Canvas editor includes the following keyboard and mouse shortcuts:
 | Shift+Right Arrow | Align right | Aligns all the selected nodes along a right edge. |
 | Shift+Up Arrow | Align top | Aligns all the selected nodes along a top edge. |
 | Shift+Down Arrow | Align bottom | Aligns all the selected nodes along a bottom edge. |
-| Ctrl+Alt+M | Add comment | Adds a new comment using the properties from the default comment preset. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/comment-and-group-presets.md). Note: NVIDIA's GeForce Experience overlay uses a default setting for turning on/off the microphone that interferes with this hotkey. |
-| Ctrl+Shift+G | Group selection | Groups the selected nodes on the graph using the properties from the default node group preset. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/comment-and-group-presets.md). |
+| Ctrl+Alt+M | Add comment | Adds a new comment using the properties from the default comment preset. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/creating-comment-and-group-presets). Note that NVIDIA's GeForce Experience overlay uses a default setting for turning on/off the microphone that interferes with this hotkey. |
+| Ctrl+Shift+G | Group selection | Groups the selected nodes on the graph using the properties from the default node group preset. For information about presets, see [Creating Comment and Group Presets](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/creating-comment-and-group-presets). |
 | Ctrl+Shift+H | Ungroup | Ungroups the currently selected group. |
-| Ctrl+Number\_Key | Create bookmark | Creates a bookmark out of the current view and assigns it to the specified number key. If you choose a number that is already assigned to a bookmark or a bookmark-enabled group, you are prompted to reassign the existing bookmark. For more information about bookmarks, see [Adding Bookmarks for Script Canvas](/docs/user-guide/scripting/script-canvas/bookmarks.md). For information about enabling groups as bookmarks, see [Grouping Nodes](/docs/user-guide/scripting/script-canvas/node-groups.md). |
+| Ctrl+Number\_Key | Create bookmark | Creates a bookmark out of the current view and assigns it to the specified number key. If you choose a number that is already assigned to a bookmark or a bookmark-enabled group, you are prompted to reassign the existing bookmark. For more information about bookmarks, see [Adding Bookmarks in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/adding-bookmarks). For information about enabling groups as bookmarks, see [Grouping Nodes](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/grouping-nodes). |
 | Number\_Key | Jump to bookmark | Jumps to the bookmark location associated with the key that is pressed. |
 | Ctrl+Plus Sign (+) | Zoom in | Zooms the graph in. |
 | Ctrl+Minus Sign (-) | Zoom out | Zooms the graph out. |
 | Ctrl+Shift+Up Arrow | Zoom to selection | Centers the view on the nodes that are currently selected. |
-| Ctrl+Shift+Down Arrow | Show entire graph | Centers the entire graph into the current display. Zooms out as much as possible to display all nodes. |
+| Ctrl+Shift+Down Arrow | Show entire graph | Centers the entire graph into the current display. Zooms out as much as possible to display all nodes. |
 | Ctrl+Shift+Left Arrow | Show start of chain | Centers the view on the nodes that do not have any input connections, and are connected to the selected node through their output connections. |
 | Ctrl+Shift+Right Arrow | Show end of chain | Centers the view on the nodes that do not have any output connections, and are connected to the selected node through their input connections. |
 | Ctrl+K, Ctrl+C | Comment out selected nodes | Comments out the current selection of nodes and turns them gray. Commented out nodes are not run at runtime, but still exist at edit time. |
 | Ctrl+K, Ctrl+U | Uncomment selected nodes | Uncomments the selected nodes. |
 
-**Note**
-If a keyboard shortcut doesn't appear to work for you, another process running in the background might have bound that key combination. Consider searching the [forums](https://forums.awsgametech.com/) to see if others have encountered this issue.
+{{< note >}}
+If a keyboard shortcut doesn't appear to work for you, another process running in the background might have bound that key combination.
+{{< /note >}}
 
-## Mouse shortcuts 
+## Mouse shortcuts
 
 The following shortcuts use the mouse or keyboard and mouse.
 
