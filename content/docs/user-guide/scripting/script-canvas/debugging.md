@@ -62,7 +62,7 @@ Enable this option to display the data as it is captured. When disabled, the dat
 When live updates are enabled and you capture a large amount of data, editor performance decreases noticeably. For better performance, you should disable live updates, especially for longer captures.
 {{< /note >}}
 
-## Running the debugger 
+## Running the debugger
 
 After you have chosen the entities or graphs to debug, you are ready to run the Script Canvas debugger.
 
@@ -82,7 +82,7 @@ If **Editor** is selected as the capture target, the game must be running for th
 
 1. After you have enough data, choose **Capture** again to stop the data capture.
 
-## Examining captured data 
+## Examining captured data
 
 The captured data is presented in a log that is sorted in order of processing. Each line represents the processing of a single node.
 
@@ -146,7 +146,7 @@ GridHub must be active for non-editor targets to appear in the **Live** tab.
 
    ![Choosing a launcher debug target.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-2.png)
 
-## Notes
+## Notes on debugging
 
 When using the Script Canvas debugger, keep the following points in mind.
 

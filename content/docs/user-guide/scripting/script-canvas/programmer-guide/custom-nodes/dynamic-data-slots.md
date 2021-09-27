@@ -9,7 +9,7 @@ There are cases where a single node can function on multiple different input typ
 
 You can use the `ScriptCanvas_DynamicDataSlot` tag to add a `DynamicDataSlot` to any node, as shown in the following example.
 
-```
+```cpp
 ScriptCanvas_DynamicDataSlot(ScriptCanvas::DynamicDataType::Value,
                              ScriptCanvas::ConnectionType::Output,
                              ScriptCanvas_DynamicDataSlot::Name("Step", "The value of the current step of the lerp.")
@@ -20,20 +20,17 @@ ScriptCanvas_DynamicDataSlot(ScriptCanvas::DynamicDataType::Value,
 
 The `ScriptCanvas_DynamicDataSlot` tag includes the following code gen attributes:
 
-
-****
-
 | Attribute | Description |
 | --- | --- |
-| DynamicDataType |  Allows the user to specify a macro category of dynamic typing information. DynamicDataType has the following supported values:   |
+| DynamicDataType |  Allows the user to specify a macro category of dynamic typing information. DynamicDataType has the following supported values: <br><ul><li>**Container &ndash;** Maps or arrays of any data type.</li><li>**Value &ndash;** Any non-map or non-array value.</li><li>**Any &ndash;** Any Container or Value type.</li></ul> |
 | DynamicGroup | Unifies a group of dynamically typed slots. When one slot has a type, all slots in the group share the same type. This attribute is useful for ensuring that passthrough values or operands all share a common type. |
 | RestrictedTypeContractTag | Restricts the data types that the dynamically typed slot accepts. Takes an argument that is a list of supported data types. |
 
-## Important Notes about Groups 
+## Important notes about groups
 
 For the purposes of contract restrictions, the grouped slots act as a single unit. If one slot doesn't allow a particular type, no slots in that group allow that type. This behavior is because connection types are propagated through every member of a group and every group connected to that group. This also applies to dynamic data slots that are connected to each other and any dynamic data slots that are connected but ungrouped.
 
-### Chained Dynamic Types 
+### Chained dynamic types
 
 When dynamic types are connected, the receiving slot takes on the data type and restrictions of the connecting slot.
 
@@ -43,11 +40,11 @@ When dynamic types are connected, the receiving slot takes on the data type and 
 
 Like dynamic groups, any pair of dynamically typed nodes that are linked share the same restrictions. This includes any restrictions from the node group. Additionally, the slots are usually in the most unrestricted state as possible. Unless a display type gives a set of dynamically typed slots a type, the slots remain untyped.
 
-## Adding Dynamic Data Slots Programmatically 
+## Adding dynamic data slots programmatically
 
 You can also add dynamic slots programmatically. Use `DynamicDataSlotConfiguration` to define the slot, and then the generic `AddSlot` method to add it, as shown in the following example.
 
-```
+```cpp
 SlotId MyNode::AddDynamicSlot(AZStd::string_view name, AZStd::string_view toolTip, ConnectionType connectionType)
 {
     DynamicDataSlotConfiguration slotConfiguration;
@@ -70,4 +67,4 @@ SlotId MyNode::AddDynamicSlot(AZStd::string_view name, AZStd::string_view toolTi
 }
 ```
 
-For information about `DynamicGroup` and `DynamicDataType`, see the `ScriptCanvas_DynamicDataSlot` attributes table earlier in this topic.
+For information about `DynamicGroup` and `DynamicDataType`, refer to the `ScriptCanvas_DynamicDataSlot` attributes table earlier in this topic.

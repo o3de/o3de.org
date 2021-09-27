@@ -13,7 +13,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
 
 1. Declare your library. The following example \(`Debug.h`\) shows a library declaration from the Script Canvas Diagnostic Library Gem.
 
-   ```
+   ```cpp
    struct Debug : public Library::LibraryDefinition
    {
        AZ_RTTI(Debug, "{3E28E41D-F4C9-4542-A08F-2B1F5DAA9509}", Library::LibraryDefinition);
@@ -25,7 +25,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
 
 1. After you declare the library, reflect it. The following example is from `Debug.cpp`.
 
-   ```
+   ```cpp
    void Debug::Reflect(AZ::ReflectContext* reflection)
    {
        AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(reflection);
@@ -48,7 +48,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
 
 1. Use the `InitNodeRegistry` and `AddNodeToRegistry` functions to register the library's nodes \(`Debug.cpp`\).
 
-   ```
+   ```cpp
    void Debug::InitNodeRegistry(NodeRegistry& nodeRegistry)
    {
        Library::AddNodeToRegistry<Debug, Nodes::Debug::Log>(nodeRegistry);
@@ -63,13 +63,13 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
 
 1. Ensure that your library and its nodes are reflected in your gem's `Reflect` function.
 
-   ```
+   ```cpp
    ScriptCanvas::Libraries::Debug::Reflect(context);
    ```
 
 1. Add the following code your gem's `Init` function. The following example is from `ScriptCanvasDiagnosticSystemComponent.cpp`. This code is important because it inserts your gem's nodes into the Script Canvas Gem's environment.
 
-   ```
+   ```cpp
    AZ::EnvironmentVariable<ScriptCanvas::NodeRegistry> nodeRegistryVariable = AZ::Environment::FindVariable<ScriptCanvas::NodeRegistry>(ScriptCanvas::s_nodeRegistryName);
    if (nodeRegistryVariable)
    {
@@ -80,7 +80,7 @@ The following procedure uses the Script Canvas Diagnostic Library Gem, which is 
 
 1. Make sure the library's descriptor is registered in your gem's module. The following code is from `ScriptCanvasDiagnosticLibraryGem.cpp`.
 
-   ```
+   ```cpp
    Module::Module()
        : AZ::Module()
    {

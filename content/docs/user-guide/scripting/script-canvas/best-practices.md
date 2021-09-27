@@ -6,7 +6,7 @@ description: Learn about best practices when using Script Canvas in Open 3D Engi
 
 Best practices for Script Canvas include using an event-driven approach and using custom nodes to simplify your graphs.
 
-## Use an Event-Driven Approach 
+## Use an event-driven approach
 
 Script Canvas nodes are by default stateless. However, by connecting to the [tick bus](/docs/user-guide/components/development/tick), they can be configured to have a state. Engineers must manage the lifetime and performance of nodes that have a state.
 
@@ -14,11 +14,11 @@ In the core Script Canvas libraries, state is used primarily to drive the execut
 
 We recommend that you reflect functionality to Script Canvas through the behavior context. This is true even for Script Canvas-specific functionality. Using the behavior context encourages event-driven paradigms through EBuses. This approach yields modular, decoupled behaviors that can reduce graph complexity and takes advantage of execution optimizations.
 
-## Use Custom Nodes to Simplify Your Graphs 
+## Use custom nodes to simplify your graphs
 
 Identify frequently used but complicated user patterns and simplify them through custom nodes and/or improved behavior context methods. Using custom nodes with EBuses can reduce the overall complexity of graphs and make graph authoring more intuitive. For information on creating custom nodes, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes).
 
-## Be Careful with Entity Activation Order 
+## Be careful with entity activation order
 
 Sending events during entity activation can have undesired results. Because the order of activation of entities is not guaranteed, when an event is sent during activation, some entities that need to handle the event might not receive it. In particular, the **On Graph Start** and **On Entity Activated** nodes are subject to activation order issues. Be careful when sending events from them.
 
