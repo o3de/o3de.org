@@ -71,8 +71,9 @@ Capsule controllers might be able to climb steps slightly higher than the step h
 
 The contact offset is the distance padding between the collider shape and the contact surface. The contact offset allows the simulation to provide smoother collision behavior.
 
-**Note**
+{{< note >}}
 The contact offset is included in the calculation for the foot position.
+{{< /note >}}
 
 **Example**
 In the editor debug draw for the **PhysX Character Controller** component, the effect of the contact offset is represented by the wireframe that surrounds the solid shape of the collider, as in the following image.

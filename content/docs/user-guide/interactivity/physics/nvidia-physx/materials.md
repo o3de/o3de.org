@@ -54,12 +54,14 @@ Define the degree of compactness of a material.
 ****Debug Color****
 The display color of the physics material in debug view.
 
-**Note**
-When materials collide, the **Friction combine** and **Restitution combine** define the value of applied friction and restitution using the following order.
-**Average**
-**Minimum**
-**Multiply**
-**Maximum**
+{{< note >}}
+When materials collide, the **Friction combine** and **Restitution combine** define the value of applied friction and restitution using the following order:
+
+1. **Average**
+2. **Minimum**
+3. **Multiply**
+4. **Maximum**
+{{< /note >}}
 
 ## Create a physics material 
 
@@ -78,8 +80,10 @@ Physics materials define the physical properties of PhysX colliders. To create p
 ![Create a physics material library in the Asset Editor.](/images/user-guide/physx/physx/ui-physx-material-C.png)
 
 1. Name the physics material by editing the **Name** property. Set the material properties as desired.
-**Note**
+
+    {{< note >}}
 You can add additional physics materials to the library by repeating the preceding two steps.
+{{< /note >}}
 
 1. Choose **Save As** from the **File** menu in the Asset Editor to save the library and physics material.
 

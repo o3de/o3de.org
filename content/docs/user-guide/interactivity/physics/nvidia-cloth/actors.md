@@ -23,8 +23,9 @@ A skeleton to drive the actor and cloth meshes. Cloth meshes may be skinned to t
 **Animation**
 A **Motion set** and **Anim graph** based on the actor's skeleton. Keyframe animated cloth can be blended with simulated cloth using **Motion constraints**.
 
-**Note**
+{{< note >}}
 Sample **Actor** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Chicken/`.
+{{< /note >}}
 
 For imformation on exporting actor assets, see [FBX Settings actor export](/docs/user-guide/assets/fbx-settings/actor-export/)
 

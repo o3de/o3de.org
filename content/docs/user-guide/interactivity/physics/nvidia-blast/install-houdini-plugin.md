@@ -6,9 +6,11 @@ weight: 100
 ---
 
 
-**Note**
+{{< note >}}
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets. The apprentice license is not sufficient. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/).
+
 The precompiled Houdini plug-ins supplied with the **NVIDIA Blast** gem require Houdini 18.0.
+{{< /note >}}
 
 **Contents**
 + [Install NVIDIA Blast plug-ins](#install-nvidia-blast-plug-ins)
@@ -49,11 +51,13 @@ The precompiled Houdini plug-ins supplied with the **NVIDIA Blast** gem require 
 
    `C:\Users\user_name\Documents\houdini18.0\`
 
-**Note**
+{{< note >}}
 If Houdini is running prior to installation of the NVIDIA Blast tools for Houdini, restart Houdini for the changes to take effect.
+{{< /note >}}
 
-**Important**
+{{< important >}}
 Some Houdini installations create the Houdini user directory at `C:\Users\user_name\houdini18.0\` rather than in the `Documents` directory. If Houdini does not load the NVIDIA Blast tools, check to see if Houdini has created a user directory at `C:\Users\user_name\houdini18.0\`. If the directory exists and contains Houdini files such as `dso.cache`, move the above files to `C:\Users\user_name\houdini18.0\` and add `C:\Users\user_name\houdini18.0\` to the **PATH** environment variable.
+{{< /important >}}
 
 ## Enable the Blast tool shelf 
 

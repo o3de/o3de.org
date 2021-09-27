@@ -14,11 +14,13 @@ By proxying requests through itself, Asset Processor communicates with an iOS or
 
 In Windows, Asset Processor starts automatically if you run O3DE Editor with automatically maintained connections. Asset Processor also restarts automatically if you modify any of the data files that it needs to operate or if you retrieve a new version.
 
-**Note**
+{{< note >}}
 Symbolic links are not supported when using Asset Processor in macOS. To ensure that Asset Processor works properly in macOS, follow these guidelines:
-Do not use a symbolic link for your cache directory when you store compiled assets in a central location.
-Do not store your source project assets in a symbolic link directory.
-Use a unique cache directory. Do not share the cache directory with a Windows system that is also running Asset Processor.
+
++ Do not use a symbolic link for your cache directory when you store compiled assets in a central location.
++ Do not store your source project assets in a symbolic link directory.
++ Use a unique cache directory. Do not share the cache directory with a Windows system that is also running Asset Processor.
+{{< /note >}}
 
  You can open the Asset Processor options from the notification area on the taskbar.
 

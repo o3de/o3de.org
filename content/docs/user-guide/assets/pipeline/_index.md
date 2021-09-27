@@ -9,8 +9,9 @@ The Asset Pipeline converts source art and other assets into OS-specific, game r
 
 The Asset Processor (AP) is a service that runs in the background and monitors a configurable set of input directories for changes in files. When it detects changes, it uses configurable rules to determine its next action. The objective is to end up with game-ready versions of all assets for each OS and each game directory in a location called the asset cache. The asset cache is kept separate from your input directory and can be automatically rebuilt entirely from your source assets by the Asset Processor.
 
-**Note**
+{{< note >}}
 The asset cache should not be added to your source control.
+{{< /note >}}
 
 The Asset Processor detects changes in the directories that contain input assets, with the game directory being the highest priority. Therefore, if you put assets in the game directory, those assets override assets with the same path in O3DE or other directories with lower priority.
 

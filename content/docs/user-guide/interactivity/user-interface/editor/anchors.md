@@ -72,14 +72,16 @@ In the **Properties** pane, under **Transform2D**, do the following for **Pivot*
 + For **Y Scale**, enter a value to use as a multiplier for the element's height.
 + Select **Scale to Device** if you want the UI element and its child elements to scale with the device resolution.
 
-**Note**
+{{< note >}}
 The element rotates around, resizes from, and calculates position from its pivot point. The pivot point is not limited by the element's borders. You can place the pivot outside of the element.
+{{< /note >}}
 
 **Example: Using Anchors to Resize an Element Relative to its Parent**
 In the following example, anchors are used to resize the element relative to its parent. The layout column of buttons is resized as needed to stay on the screen. Because the layout column of buttons does not use the **Scale to Device** setting, the button text does not change size along with its parent button.
 
-**Note**
+{{< note >}}
 You can [configure the text element](/docs/user-guide/interactivity/user-interface/editor/components/components-text) separately.
+{{< /note >}}
 
 The layout column of buttons has the following settings.
 

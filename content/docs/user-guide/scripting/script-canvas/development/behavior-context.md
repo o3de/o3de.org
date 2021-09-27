@@ -117,8 +117,9 @@ behaviorContext->Class<Collision>()
      ;
 ```
 
-**Note**
+{{< note >}}
 During the preview release of Script Canvas, properties must provide both getters and setters to be accessible on a Script Canvas node. Containers such as vectors are currently not supported. For this reason, velocities, masses, and surfaces do not provide a setter.
+{{< /note >}}
 
 Most object variables are set as a result of an event. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event.
 

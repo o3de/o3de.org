@@ -15,10 +15,11 @@ The Track View's **Play** toolbar has the **Start Animation Recording** icon to 
 
 1. To stop recording, click the **Start Animation Recording** icon again.
 
-**Note**
+    {{< note >}}
 You must move the playhead to different locations on the timeline in order to have an animation play over time. Otherwise, you will override the keys at the same timeline location as you manipulate the component entities in the level.
 
 You can also use the **Start Auto Recording** option. When you choose this option, the playhead automatically moves along the timeline at the specified time. The default is one second. This means that the playhead skips ahead every one second. You can specify a lower value, which means the playhead sets keys more frequently. However, this can result in many keys that you must modify after you are finished recording.
+{{< /note >}}
 
 **To start auto recording**
 

@@ -7,9 +7,11 @@ weight: 400
 
 To use NVIDIA Blast assets in O3DE, create an entity, add a **Blast Family** component, add a **Blast Family Mesh Data** component, and then assign the blast assets to the components.
 
-**Note**
+{{< note >}}
 To quickly test NIVIDIA Blast simulation, the following steps assume that the assets have been exported from Houdini with **Static root** disabled in the **Blast Export** SOP. With **Static root** disabled, the NVIDIA Blast asset is dynamic, and destruction can be triggered by dropping the entity on a PhysX collision surface such as **PhysX Terrain**. If **Static root** is enabled, the root asset is static, and destruction must be triggered by an external force, such as a projectile impact.
-For more information, see [Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset/).
+
+For more information, see [Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset).
+{{< /note >}}
 
 **Contents**
 - [Create an entity for NVIDIA Blast](#create-an-entity-for-nvidia-blast)

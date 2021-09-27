@@ -9,8 +9,9 @@ Use the **table view** component to present multiple columns of structured data 
 
 ![component table view example](/images/tools-ui/component-table-view-example.png)
 
-**Note**
- `AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows.
+{{< note >}}
+`AzQtComponents::TableView` actually derives from `QTreeView`, not `QTableView`, to provide more customization over the size of rows.
+{{< /note >}}
 
 ## Basic table view<a name="table-view-basic"></a>
 
@@ -18,8 +19,9 @@ Use the **table view** component to present multiple columns of structured data 
 
 Create a simple logging table view.
 
-**Note**
-If a table view is combined with a [tree view](uidev-tree-view-component/), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
+{{< note >}}
+If a table view is combined with a [tree view](uidev-tree-view-component), you might need to turn off zebra striping in one of the widgets using the setAlternatingRowColors(false) function.
+{{< /note >}}
 
  **Example**
 
