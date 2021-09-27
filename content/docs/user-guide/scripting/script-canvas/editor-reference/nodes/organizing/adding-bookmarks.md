@@ -7,7 +7,7 @@ weight: 500
 
 A bookmark is a shortcut that you can add to a specific location on your Script Canvas graph. You can then use keyboard shortcuts to move quickly to that location. For example, you may have a complex script for a massive character controller that includes sections for movement, camera, and each attack. You can add a bookmark to each section and then press the keyboard shortcut to move the graph view to the specified section.
 
-![Simple Script Canvas script with bookmarks added to various nodes.](/images/user-guide/scripting/script-canvas/script-canvas-bookmarks-example.png)
+![Simple Script Canvas script with bookmarks added to various nodes.](/images/user-guide/scripting/script-canvas/bookmarks-example.png)
 
 **To add a bookmark**
 
@@ -29,5 +29,7 @@ A bookmark is a shortcut that you can add to a specific location on your Script 
    + Select a bookmark and then click **Delete** to remove it.
    + Assign up to nine keyboard shortcuts for your bookmarks. To move to a bookmark that does not have an assigned keyboard shortcut, click the bookmark in the **Bookmarks** pane.
    + Double-click a shortcut and then select a new number.
-**Note**
+
+    {{< note >}}
 If you specify a number for a shortcut that a previous shortcut already uses (for example, 5), a dialog box appears. If you want to replace the previous shortcut, click **Yes**.
+    {{< /note >}}

@@ -7,7 +7,7 @@ weight: 300
 
 As your Script Canvas graphs grow in size, you can group nodes to logically organize parts of a script or reduce its visual complexity. Groups can be nested, named, and color-coded.
 
-## Creating and Managing Node Groups 
+## Creating and managing node groups
 
 **To create a node group from existing nodes and/or node groups**
 
@@ -33,7 +33,8 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
   + Double-click the group.
   + Right-click the group, and choose **Expand**.
   + In **Node Inspector**, clear the **Collapse Group** option.
-![Creating a node group in the Script Canvas editor.](/images/shared/shared-script-canvas-node-groups-1.gif)
+
+    ![Creating a node group in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-grouping-expand.gif)
 
 **To edit the name of a group**
 + Do one of the following:
@@ -51,10 +52,12 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
 
 **To delete a group**
 + Right-click the group, and choose **Delete**.
-**Note**
-Deleting a group removes all of the nodes in the group and their connections to other nodes outside of the group. If you want to remove the group container but keep its nodes and connections, choose **Ungroup**.
 
-### Enabling Groups as Bookmarks 
+    {{< note >}}
+Deleting a group removes all of the nodes in the group and their connections to other nodes outside of the group. If you want to remove the group container but keep its nodes and connections, choose **Ungroup**.
+    {{< /note >}}
+
+### Enabling groups as bookmarks
 
 To quickly navigate through the groups in your graphs, you can enable groups as bookmarks.
 
@@ -64,7 +67,7 @@ To quickly navigate through the groups in your graphs, you can enable groups as 
 
 1. In **Node Inspector**, select **Enable as Bookmark**.
 
-## Customizing Groups 
+## Customizing groups
 
 You can use the **Node Inspector** to customize the color of a group and to change the font settings of the group title.
 
@@ -75,10 +78,12 @@ You can use the **Node Inspector** to customize the color of a group and to chan
 1. In **Node Inspector**, do one of the following:
    + If you know the RGB values that you want to use, enter them in the **Group Color** text box.
    + Click the **Group Color** icon to use the **Select Color** dialog box.
-![Click the Group Color icon in the Script Canvas Node Inspector to customize the color of a node group.](/images/user-guide/scripting/script-canvas/script-canvas-node-groups-2.png)
+
+    ![Click the Group Color icon in the Script Canvas Node Inspector to customize the color of a node group.](/images/user-guide/scripting/script-canvas/nodes-grouping-color.png)
 
 1. In the **Select Color** dialog box, specify the color that you want to use. You can choose from basic colors, create a custom color, or click **Pick Screen Color** to choose a color on your screen with your pointer.
-![Choose or create a color for a group node in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-node-groups-3.png)
+
+    ![Choose or create a color for a group node in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-grouping-color-select.png)
 
 1. Click **OK**.
 
@@ -87,6 +92,5 @@ You can use the **Node Inspector** to customize the color of a group and to chan
 1. In Node Inspector, expand **Font Settings**.
 
 1. Enter or choose the values that you want to use for the group title font. The changes that you make are immediately visible.
-![Expand a node group's Font Settings section in the Script Canvas Node Inspector.](/images/user-guide/scripting/script-canvas/script-canvas-node-groups-4.png)
-****
 
+    ![Expand a node group's Font Settings section in the Script Canvas Node Inspector.](/images/user-guide/scripting/script-canvas/nodes-grouping-font-settings.png)
