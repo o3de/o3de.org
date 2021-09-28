@@ -16,26 +16,26 @@ The **Decal** component enables an entity to project a material onto a mesh. A l
 ## Properties
 
 
-![decal-component-ui](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-ui-01)
-
+![Decal component UI](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-ui-01.png)
+ 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Attenuation Angle** |  This determines how much the decal wraps around an object. Higher attenuation values means less wrapping around the objects it is projected onto.  | `0.0` to `1.0` | `1.0` |
+| **Attenuation Angle** | Controls how much the angle between surface and the decal projection affects the decal opacity. Higher values make the decal more transparent as the angle increases so that the decal doesn't appear to wrap around the surface.  | `0.0` to `1.0` | `1.0` |
 | **Opacity** | Determines how transparent the decal is. | `0.0` to `1.0` | `1.0` |
-| **Sort Key** |  This determines how decals sort with each other. Decals with higher values will be layered overtop of decals with lower values.  | `0` to `255` | `16` |
+| **Sort Key** | Sets the sort order for the decal. When multiple decals are projected onto a surface, decals with higher values display on top. | `0` to `255` | `16` |
 | **Material** | The material that the decal will use. |  |  |
 
 ## Examples
 
 Example of a decal with attenuation angle set to 0. Less attenuation means more wrapping around objects.
 
-![decal-component-attenuation-angle-0](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-0.png)
+![Decal component attenuation angle 0 example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-0.png)
 
 Example of a decal with attenuation angle set to 1. More attenuation means less wrapping around objects.
 
-![decal-component-attenuation-angle-1](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-1.png)
+![Decal component attenuation angle 1 example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-attenuation-angle-1.png)
 
 The black scorch mark decal has a larger sort key than the orange dirt decal and thus is on top.
 
-![decal-component-sorting-order](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-sorting-example.png)
+![Decal component sorting order example](/images/user-guide/components/reference/atom/decal-component-ui/decal-component-sorting-example.png)
 
