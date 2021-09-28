@@ -134,7 +134,7 @@ For in-game debugging, you use the Script Canvas debugger to connect to a runnin
 
 **To debug a running game**
 
-1. Run `GridHub.exe` from from your build directory (for example, `build/bin/profile/GridHub.exe`). GridHub is the network environment that provides connectivity between O3DE and its tools.
+1. Run `GridHub.exe` from your O3DE build directory. GridHub is the network environment that provides connectivity between O3DE and its tools.
 
    {{< note >}}
 GridHub must be active for non-editor targets to appear in the **Live** tab.
