@@ -81,7 +81,7 @@ The element rotates around, resizes from, and calculates position from its pivot
 In the following example, anchors are used to resize the element relative to its parent. The layout column of buttons is resized as needed to stay on the screen. Because the layout column of buttons does not use the **Scale to Device** setting, the button text does not change size along with its parent button.
 
 {{< note >}}
-You can [configure the text element](../visual/components-text) separately.
+You can [configure the text element](/docs/user-guide/interactivity/user-interface/components/visual/components-text) separately.
 {{< /note >}}
 
 The layout column of buttons has the following settings.

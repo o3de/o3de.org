@@ -15,7 +15,7 @@ A layout cell's properties consist of a minimum size, a target size, and an extr
   + Layout row or layout column (added or nested as children) - The default values of a layout row or layout column, added as a child, determines the layout cell's minimum and target size. The default value is calculated by the sum of its own children plus padding and spacing.
 
     {{< note >}}
-The **LayoutColumn** and **LayoutRow** components contain a property called **Ignore Default Cells**. Selecting this property causes the above calculations to be ignored and simply allocate equal space to all children regardless of content. Clear this property to calculate layout cell values by components. For more information, see [LayoutColumn](./components-layout-column).
+The **LayoutColumn** and **LayoutRow** components contain a property called **Ignore Default Cells**. Selecting this property causes the above calculations to be ignored and simply allocate equal space to all children regardless of content. Clear this property to calculate layout cell values by components. For more information, see [LayoutColumn](/docs/user-guide/interactivity/user-interface/components/layout/components-layout-column).
 {{< /note >}}
 
 + Fixed default layout cell values - If the child doesn't have any components that calculate their own layout cell values, then the layout cell is assigned a minimum and target size of 0 and an extra size ratio of 1. This typically means equal spacing for the children that do not have a component affecting the layout cell's size. Each layout cell grows at the same rate to fill the available space (hence the extra size ratio of 1).
@@ -51,7 +51,7 @@ However, when you add a **LayoutCell** component to the grid, and then specify a
 
 **To edit a LayoutCell component**
 
-In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutCell** and do the following, as appropriate:
+In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor), expand **LayoutCell** and do the following, as appropriate:
 
 **Min Width**
 

@@ -72,6 +72,6 @@ The path to the font XML, a TTF or OTF file. The path is relative to the font fa
 **Attribute**: `tags`
 This tag is optional. If omitted, this font file is used when no styling is applied.
 Values:
-+ **b** - indicates <b> bold tag
-+ **i** - indicates <i> italic tag
-+ **b,i** - indicates when both <b> bold and <i> italic tags are applied
++ **b** - indicates `<b>` bold tag
++ **i** - indicates `<i>` italic tag
++ **b,i** - indicates when both `<b>` bold and `<i>` italic tags are applied
