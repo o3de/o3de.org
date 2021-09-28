@@ -5,7 +5,7 @@ description: 'Open 3D Engine (O3DE) PostFx Radius Weight Modifier component refe
 toc: true
 ---
 
-The **PostFx Radius Weight Modifier** component is a sphere of area that modifies the weight of post-processing effects (PostFX) within the sphere based on the camera's distance to the center. The PostFX is least effective at the perimeter of the sphere, and lerps as the camera approaches the center, where the effect is most effective.
+The **PostFx Radius Weight Modifier** component weights post-processing effects (PostFX) along the radius of a sphere. The sphere is defined by the **Radius** property from the origin of the entity. The PostFX weight is `0.0` at the perimeter of the sphere and linearly interpolates (lerps) as the camera approaches the center, where the PostFX weight is `1.0`.
 
 
 ## Provider
@@ -24,4 +24,4 @@ The **PostFx Radius Weight Modifier** component is a sphere of area that modifie
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Radius** | Controls the radius of PostFX's volume's spherical bounds. | `0.0` to `1.0` |`0.0` |
+| **Radius** | Controls the radius of PostFX's volume's spherical bounds. | `0.0` to infinity |`0.0` |

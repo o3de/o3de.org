@@ -106,10 +106,10 @@ Tone Mapping and Color Grading
 Post-processing Volumes   
 : PostFX can be weighted within a volume or area by a shape, gradient, or radius. In O3DE, this is done with a shape that is referenced by a **PostFX Shape Weight Modifier** component, with a gradient that is referenced through a **PostFX Gradient Weight Modifier** component, or by distance through a **PostFX Radius Weight Modifier** component.
  
-*Related to: PostFX components ([Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)* 
+*Related to: PostFX components [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [PostFX Radius Weight Modifier](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)*
 
 
-Bloom   
+Bloom  
 : A post-processing effect that simulates real-world glow or light bleed that is caused by an overwhelming amount of light.
 
 *Related to: [Bloom component](/docs/user-guide/components/reference/atom/bloom/)* 
@@ -128,7 +128,7 @@ Depth of Field
 
 
 Screen Space Ambient Occlusion (SSAO)   
-: Real-time estimation of ambient occlusion (a shading method based on both light sources and surrounding objects) as a screen space post-proccessing effect.  Atom implements SSAO through a series of compute shader passes.  
+: Real-time estimation of ambient occlusion as a screen space post-proccessing effect. SSAO shades areas that are blocked from receiving ambient light by nearby surfaces. The effect is most evident in the shadows created in the cracks, crevices, and creases of a surface.
 
 *Related to: [SSAO component](/docs/user-guide/components/reference/atom/ssao/)* 
 
