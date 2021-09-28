@@ -25,8 +25,10 @@ The results of scene queries are described using containers of `AzPhysics::Scene
 + [Overlap](#overlap)
 + [SceSceneQueryHit](#scenequeryhit)
 
-**Note**
+{{< note >}}
 Scene queries can have a performance cost.
+{{< /note >}}
+
 ## Raycast
 
 Raycast queries are the most common scene query, based on firing a ray from a start position a specified distance along a ray direction.

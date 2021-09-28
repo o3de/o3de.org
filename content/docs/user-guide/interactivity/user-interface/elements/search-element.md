@@ -31,9 +31,11 @@ You can find UI elements by filtering by their name or their attached components
 
 1. In the menu that appears, select one or more components.
 
-   UI elements that contain the selected components are visible. All other UI elements are hidden.
-**Note**
+    UI elements that contain the selected components are visible. All other UI elements are hidden.
+    
+    {{< note >}}
 The **Find Element** tool displays for selection only the components used by the UI elements in the active UI canvas.
+{{< /note >}}
 
 UI elements that don't match the search criteria are typically hidden. However, a parent element that doesn't match the search criteria remains visible if one of its children meets the search criteria. This maintains the tree structure used to display the UI elements. Displayed UI elements that meet search criteria appear as white text. Displayed UI elements that don't meet the criteria but are visible to maintain tree structure appear in gray text.
 

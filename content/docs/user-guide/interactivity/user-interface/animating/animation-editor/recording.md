@@ -36,7 +36,8 @@ In the [**Animation Editor**](./), do one of the following:
 
 1. After making all changes, click the **Stop** icon in the **Animation Editor** toolbar.
 
-**Note**
+{{< note >}}
 In the current release, not all component properties can be recorded. For example, enumerated values, such as the image type of an image component, cannot be animated.
+{{< /note >}}
 
 After you record a track, it appears beneath its UI element. The node pane lists your current animation sequences. For more information on the **Node Pane**, see [Using the Node Pane](editing/using-node-pane)

@@ -235,10 +235,11 @@ bool    IsSmartPointer() const override             { return false; }
 bool    CanAccessElementsByIndex() const override   { return false; }
 ```
 
-**Notes**
+{{< note >}}
 + When `IsFixedSize` and `IsFixedCapacity` are false, the plus (+) and minus (-) buttons in the property editor can be used to add and remove elements from the data container.
 + When `IsSmartPointer` is false, the data container does not create an instance of the `SmartPointer` type when an element is added to the container.
 + When `CanAccessElementsByIndex` is false, the serialization system checks whether to allocate memory for new elements. `CanAccessElementsByIndex` is true for fixed-size containers like `AZStd::array`, `AZStd::pair`, and `AZStd::tuple` because those containers already have memory storage allocated for their elements.
+{{< /note >}}
 
 To load an element into the template class instance, override the `ReserveElement`, `StoreElement` and `RemoveElements` functions, as in the following example.
 

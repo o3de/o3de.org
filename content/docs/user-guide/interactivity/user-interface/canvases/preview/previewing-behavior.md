@@ -14,8 +14,9 @@ Try these examples:
 + Input and edit text.
 + Use keyboard, mouse, or gamepad to interact with the UI.
 
-**Note**
+{{< note >}}
 If the interactive component's **Input enabled** setting is deselected (unchecked), that element is drawn in its disabled state and does not respond to hover or click actions.
+{{< /note >}}
 
 ## Animation List 
 

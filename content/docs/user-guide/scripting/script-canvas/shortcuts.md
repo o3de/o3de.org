@@ -38,8 +38,9 @@ The following table shows the keyboard shortcuts that you can use in the Script 
 | Ctrl+K, Ctrl+C | Comment out selected nodes | Comments out the current selection of nodes and turns them gray. Commented out nodes are not run at runtime, but still exist at edit time. |
 | Ctrl+K, Ctrl+U | Uncomment selected nodes | Uncomments the selected nodes. |
 
-**Note**
+{{< note >}}
 If a keyboard shortcut doesn't appear to work for you, another process running in the background might have bound that key combination. Consider searching the [forums](https://forums.awsgametech.com/) to see if others have encountered this issue.
+{{< /note >}}
 
 ## Mouse Shortcuts 
 

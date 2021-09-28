@@ -82,8 +82,9 @@ if (rootElement.GetVersion() <= 1)
 }
 ```
 
-**Note**
+{{< note >}}
 If you need to emit a warning or error when a conversion fails (for example, for asset builds), use the `AZ_Warning` or `AZ_Error` macros.
+{{< /note >}}
 
 ## Upgrade Class Builders 
 

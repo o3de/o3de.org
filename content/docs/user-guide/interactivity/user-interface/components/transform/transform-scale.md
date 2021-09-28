@@ -125,7 +125,8 @@ The speed indicator element has the following settings. The anchor values keep i
 
 The following images show how the health bar and speed indicator scales based on the screen resolution while maintaining their position on the screen.
 
-**Note**
+{{< note >}}
 The indicated resolutions are not shown to scale.
+{{< /note >}}
 
 ![Example of scaling elements while maintaining relative positions.](/images/user-guide/interactivity/user-interface/components/transform/ui-editor-transform-scale-uniform-position.png)

@@ -9,9 +9,11 @@ weight: 200
 
 To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-blast/).
 
-**Note**
+{{< note >}}
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets. The apprentice license is not sufficient. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/).
+
 The precompiled Houdini plug-ins supplied with the **NVIDIA Blast** gem require Houdini 18.0.
+{{< /note >}}
 
 ## NVIDIA Blast features 
 

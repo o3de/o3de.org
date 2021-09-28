@@ -38,11 +38,13 @@ The following O3DE classes derive from `AssetData`:
 | MeshAsset | Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\MeshAsset.h |
 | ParticleAsset | Gems\\LmbrCentral\\Code\\include\\LmbrCentral\\Rendering\\ParticleAsset.h |
 
-**Note**
+{{< note >}}
 Adding your own asset type to O3DE includes the following high-level steps:
-Derive your type from `AssetData`.
-Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID.
-Add the member fields or structs that store your data in memory at run time.
+
++ Derive your type from `AssetData`.
++ Declare an `AZ_RTTI` type for the asset to ensure that it has a UUID.
++ Add the member fields or structs that store your data in memory at run time.
+{{< /note >}}
 
 ### AZ::Data::Asset<T> Templated Class 
 
@@ -61,8 +63,9 @@ The following options are possible:
 + The class queues the load of your asset data.
 + The class waits for you to load the data explicitly.
 
-**Note**
+{{< note >}}
 A loaded asset remains loaded as long as an active `Asset<T>` points to it. The asset manager does not reference count the asset. The asset is unloaded when the last system with a reference to the `Asset<T>` drops its reference and the reference count on the asset goes to `0`.
+{{< /note >}}
 
 #### Integration with UI Property Grids 
 
@@ -151,10 +154,11 @@ To receive notifications about assets that change on disk, connect to the `Asset
 
 The `AssetCatalogRequestBus` contains other functions that look up asset dependencies, enumerate assets, and perform other low-level tasks. In most cases you do not have to use these functions directly.
 
-**Note**
+{{< note >}}
 You do not have to use the asset catalog directly unless you write low-level code that performs custom file processing. If you use the higher level systems like `Asset<T>`, `AssetData`, and `AssetManager`, these classes communicate with the catalog for you.
 
 To look up asset file information manually, you can pass an `AssetId` to the `AssetCatalog`. `AssetCatalog` returns a struct that contains the file's type, size, canonical name, and location.
+{{< /note >}}
 
 ### AZ::Data::AssetHandler Derived Classes 
 

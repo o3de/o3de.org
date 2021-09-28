@@ -83,6 +83,7 @@ You can also use the context menu to act on multiple components at once.
 
 1. Choose an action.
 
-**Note**
+    {{< note >}}
 The **Element** and **Transform2D** components are automatically added to a UI element and can't be removed from the component list.
 Some actions are disabled, depending on the context. For example, you can't paste a component if you haven't copied one.
+{{< /note >}}

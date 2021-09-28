@@ -15,13 +15,15 @@ The following diagram shows the AZ Code Generator process for Script Canvas.
 
 In **Step 1**, AZ Code Generator processes `MyNode.h` and looks for code generation tags \(source code location: `dev\Gems\ScriptCanvas\Code\Include\ScriptCanvas\CodeGen\CodeGen.h`\). After processing, AZ Code Generator creates a file called `MyNode.generated.h`.
 
-**Note**
+{{< note >}}
 You must include `MyNode.generated.h` in the `MyNode.h` file so that the preprocessor macro that AZ Code Generator produces is resolved by C++ during Step 3.
+{{< /note >}}
 
 In **Step 2**, AZ Code Generator processes `MyNode.h` again, but this time produces a `.cpp` file.
 
-**Note**
+{{< note >}}
 You must include `MyNode.generated.cpp` the in `MyNode.cpp` file. This ensures that the generated code can be compiled and has access to all the same `#include` declarations as those found in `MyNode.cpp`.
+{{< /note >}}
 
 In **Step 3**, AZ Code Generator is finished and the build process continues as normal. `MyNode.cpp` is compiled and succeeds provided all the generated files are correct.
 

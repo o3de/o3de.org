@@ -7,8 +7,9 @@ toc: true
 
 The **browse edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries. Use the browse edit component to enable users to choose one or more values from a selection window. Typical uses include selecting a file from a directory, or one or more items from a list - for example: choosing motions from a collection of animation assets. The selection window is opened using either a button along the right edge, or a double-click in the input box. Chosen values can be cleared using the clear button, if this button has been enabled.
 
-**Note**
-Use a dropdown [combo box](uidev-combobox-component/) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
+{{< note >}}
+Use a dropdown [combo box](uidev-combobox-component) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
+{{< /note >}}
 
 ## Anatomy of the browse edit widget
 
@@ -26,15 +27,19 @@ Use a dropdown [combo box](uidev-combobox-component/) instead if there is a pred
 
 1.  **Input box**
 
-   Text that you set using `setText()` appears here. Users can double-click here to open the selection window that you have connected to the `BrowseEdit::attachedButtonTriggered` signal. Single click actions do nothing here, unless the read-only attribute has not been set to `true`.
-**Note**
-Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](uidev-line-edit-component/) component instead, with a detached button next to it.
+    Text that you set using `setText()` appears here. Users can double-click here to open the selection window that you have connected to the `BrowseEdit::attachedButtonTriggered` signal. Single click actions do nothing here, unless the read-only attribute has not been set to `true`.
+
+    {{< note >}}
+Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](uidev-line-edit-component) component instead, with a detached button next to it.
+{{< /note >}}
 
 1.  **Attached button**
 
-   (Optional) The **browse edit** input box has an attached button. The default button uses a folder icon, but you can specify a different icon. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal.
-**Note**
+    (Optional) The **browse edit** input box has an attached button. The default button uses a folder icon, but you can specify a different icon. To specify what happens when users press the button, connect to the `BrowseEdit::attachedButtonTriggered` signal.
+    
+    {{< note >}}
 When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format.
+{{< /note >}}
 
 1.  **Tooltip**
 
@@ -96,8 +101,9 @@ connect(browseEdit, &AzQtComponents::BrowseEdit::attachedButtonTriggered, this, 
 
 The following example shows how to replace the default button icon with your own, and how to add placeholder text that appears when the value is empty.
 
-**Note**
+{{< note >}}
 When using a custom icon not provided by O3DE, the icon should be a multiple of 16 x 16 and should only be in SVG format.
+{{< /note >}}
 
  **Example**
 

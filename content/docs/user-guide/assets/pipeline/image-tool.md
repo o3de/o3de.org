@@ -7,8 +7,9 @@ draft: true
 
 Before you can use the Resource Compiler image tool, you must install RC Shell Commands.
 
-**Note**
-You can also use the Texture Settings Editor to manage your texture settings for image files. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor/).
+{{< note >}}
+You can also use the Texture Settings Editor to manage your texture settings for image files. For more information, see [Texture Settings Editor](/docs/userguide/texture-settings-editor).
+{{< /note >}}
 
 **To open the Resource Compiler image tool**
 + Right-click an image file from within a file explorer and choose **RC Open Image**.

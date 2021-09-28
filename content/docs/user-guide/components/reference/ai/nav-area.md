@@ -8,8 +8,9 @@ title: Navigation Area
 
 The **Navigation Area** component defines the features of a navigable area or volume for use by the AI System. You use this component with the **[Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)** component, which defines the volume of the navigation area.
 
-**Note**
+{{< note >}}
 When you add a **Navigation Area** component, you must also add the **[Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)** component.
+{{< /note >}}
 
 For instructions on how to adjust the **Polygon Prism Shape** component, see [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/).
 
@@ -127,5 +128,6 @@ None
 **Scriptable**
 No
 
-**Note**
+{{< note >}}
 The Navigation Area component depends on the Polygon Prism component, which also uses `VertexContainer` functions. For more information, see [Vertex Containers](/docs/user-guide/components/reference/shape/vertex-container/).
+{{< /note >}}

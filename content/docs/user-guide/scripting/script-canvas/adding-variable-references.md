@@ -14,8 +14,10 @@ title: Adding Variable References in Script Canvas Nodes
   An input reference performs the same as a **Get** variable node and retrieves the value of the variable at the time of node execution.
 
   An output reference performs the same as a **Set** variable node and assigns the output of that slot to the specified variable at the time of node execution.
-**Note**
+  
+{{< note >}}
 Changing the name of the variable is still supported when you have variable references to that variable. However, you might notice that the display of the new variable name is not immediately reflected in nodes containing the reference. To refresh the display of the node's variable name references, move over the node with your pointer or close and re-open Script Canvas.
+{{< /note >}}
 
 **To select a different variable reference**
 
@@ -48,10 +50,15 @@ A quicker alternative for creating a variable reference is to drag a variable fr
 **To convert a variable node into a variable reference**
 + Do one of the following:
   + Right-click on a **Get** variable node and choose **Convert to References**. This converts the node into a variable reference on the node following it.
-**Note**
+  
+    {{< note >}}
 If the data output from the **Get** variable node is not connected to another node, the variable node is deleted.
+{{< /note >}}
+
   + Right-click on a **Set** variable node and choose **Convert to References**. This converts the node into a variable reference on the node preceding it.
-**Note**
+  
+    {{< note >}}
 If the data input to the **Set** variable node is not connected to another node, the variable node is deleted.
+{{< /note >}}
 
 ![Convert a variable node into a variable reference on a data pin by right-clicking on the variable node and choosing Convert to References.](/images/user-guide/scripting/script-canvas/script-canvas-variable-reference-convert-variable-node.gif)

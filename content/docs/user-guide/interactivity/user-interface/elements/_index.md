@@ -19,8 +19,9 @@ When you select the **Editor Only** option, that element and its children exist 
 
 You can use **Editor Only** elements when you author a UI canvas and you want to display additional info or visuals that appear only when editing. For example, you can add a UI mockup image of the intended final canvas and mark it as **Editor Only** so that it's visible only when editing the canvas. Those authoring the canvas can use the image as a guide to placing and configuring elements.
 
-**Note**
+{{< note >}}
 Runtime references to the **Editor Only** element, such as from script or code, are invalid. You can reference **Editor Only** elements from other **Editor Only** elements. References to **Editor Only** elements from elements that aren't **Editor Only** cause an error and possibly undefined behavior.
+{{< /note >}}
 
 Each UI element can also have one [visual component](../components/visual) (image or text), one [interactive component](../components/interactive) (button, check box, scroll box, slider, or text input), and one [layout component](../components/layout) (layout column, layout row, or layout grid). The [remaining components](../components/other) are the mask and fader, either or both of which UI elements can attach.
 

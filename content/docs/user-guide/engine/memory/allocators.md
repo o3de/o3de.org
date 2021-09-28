@@ -7,8 +7,9 @@ O3DE's memory management system determines how memory is allocated. All memory a
 
 O3DE supports all the best known memory allocation schemes. You can use O3DE's allocators to categorize allocations or keep similar allocations together to improve locality or reduce fragmentation.
 
-**Note**
-For best C++ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/engine/memory-management/).
+{{< note >}}
+For best C++ practices for managing memory in O3DE, see [Memory Management](/docs/user-guide/engine/memory-management).
+{{< /note >}}
 
 ## AZ Memory Allocators 
 
@@ -24,8 +25,11 @@ The following diagram illustrates the hierarchy of AZ memory allocators.
 + **`SystemAllocator`** - The system allocator is the general purpose allocator for the AZ memory library. Like all other allocators, `SystemAllocator` is a singleton, but it must be initialized first and destroyed last. All other allocators use `SystemAllocator` for internal allocations.
 + **`LegacyAllocator`** - Handles legacy memory allocations. For more information, see [Legacy Memory Management](#memory-allocators-legacy-memory-management).
 + **`PoolAllocator`** - Performs extremely fast small object memory allocations. `PoolAllocator` can allocate sizes in a range specified by `m_minAllocationSize` to `m_maxPoolSize`.
-**Note**
+
+    {{< note >}}
 `PoolAllocator` is not thread safe. If you need a thread-safe version, use `ThreadPoolAllocator,` or inherit from `ThreadPoolBase` and then write custom code to handle the synchronization.
+{{< /note >}}
+
 + **`ThreadPoolAllocator`** - Thread safe pool allocator. If you want to create your own thread pool heap, inherit from `ThreadPoolBase`, as O3DE requires a unique static variable for the allocator type.
 
 ## Applying Allocators to Your Classes 

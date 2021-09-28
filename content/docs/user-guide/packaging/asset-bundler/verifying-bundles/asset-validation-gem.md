@@ -11,8 +11,9 @@ One of these commands, *seedmode*, makes a seed mode active. When seed mode is a
 
 During development, use seed mode to ensure that as assets get added they're properly bundled and included in the shipping version of the game.
 
-**Note**
+{{< note >}}
 If you already have bundles to test, you can use *bundle mode* instead of seed mode. For more information, see [Using Bundle Mode to Test Bundles](/docs/user-guide/packaging/asset-bundler/verifying-bundles/bundle-mode).
+{{< /note >}}
 
 ## Prerequisites
 
@@ -73,4 +74,3 @@ If seed mode reports that an asset is missing, the asset might be one of the fol
 + Part of a list that you haven't added to the graph yet.
 + An asset that must be added as a dependency of another asset already found in the level.
 + An asset that must be a seed itself.
-

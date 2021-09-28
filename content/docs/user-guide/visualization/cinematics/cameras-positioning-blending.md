@@ -9,8 +9,9 @@ You can control a camera's position and rotation to manipulate the facing direct
 
 As a recommended workflow, enter record mode and then animate the camera while viewing from the specific camera's perspective. For more information, see [Using Record Mode](/docs/user-guide/visualization/cinematics/using-record-mode/).
 
-**Note**
+{{< note >}}
 You can still manipulate the component entity camera within the level from the default editor camera. However, this method makes it more difficult to determine where the camera is facing.
+{{< /note >}}
 
 **Example**
 
@@ -55,8 +56,10 @@ By default, when you switch between cameras, the change is immediate. However, i
 1. Add another key on the timeline for the **Camera** track. You can add the key at the beginning or end of the sequence, or both.
 
 1. Double-click the animation key before a camera change, and for **Blend time**, specify a value in seconds. This value determines how the current camera will blend into the next.
-**Note**
+
+    {{< note >}}
 This creates a blend between the game camera to the sequence camera, or from the sequence camera back to the game camera, depending on where you place the key and adjust the **Blend time**.
+{{< /note >}}
 
 ### Blending Cameras within a Sequence 
 
