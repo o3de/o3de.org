@@ -13,7 +13,7 @@ When you create a job with the Python Asset Builder, the callback for `OnCreateJ
   - [CreateJobsResponse {#python-asset-builder-create-jobs-response}](#createjobsresponse-python-asset-builder-create-jobs-response)
   - [Example: Create jobs {#python-asset-builder-create-jobs-example}](#example-create-jobs-python-asset-builder-create-jobs-example)
 
-## CreateJobsRequest 
+## CreateJobsRequest
 
 `CreateJobsRequest` provides data for operations related to the enabled platforms. This data is used to build the output `JobDescriptor` for a specific enabled platform. The `CreateJobsRequest` data contains input job data that is sent by **Asset Processor** to the builder for creating jobs.
 
@@ -40,7 +40,7 @@ class azlmbr.asset.builder.PlatformInfo
 - tags (set of strings) The tags available for the platform
 ```
 
-## CreateJobsResponse 
+## CreateJobsResponse
 
 The response from the callback determines what work to process for the source asset file. In most cases, the builder creates a job descriptor for each source asset and for each enabled platform.
 
@@ -78,8 +78,9 @@ The `sourceFileDependencyPath` field can be either be a relative path from the a
 
 The `sourceFileDependencyUUID` field is the source asset file UUID part of the asset ID, without the sub-id.
 
-**Important**
-The builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Procesor**. Either one will be sufficient.
+{{< important >}}
+The builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Processor**. Either one will be sufficient.
+{{< /important >}}
 
 **azlmbr.asset.builder.SourceFileDependency**
 
@@ -108,8 +109,9 @@ azlmbr.asset.builder.SourceFileDependency_Wildcards
 
 The `priority` field is the value for the jobs within the job queue. A priority value less than **0** means the job's priority is not considered. A priority value of **0** or greater prioritizes the job by value. The higher the value, the higher priority.
 
-**Note**
+{{< note >}}
 Priorities for critical and non-critical jobs are set separately.
+{{< /note >}}
 
 The `checkExclusiveLock` field is a flag to determine whether **Asset Processor** needs to check the source asset file for exclusive lock before processing the job. **Asset Processor** will lock and unlock the source asset file to ensure it is not opened by another process. This prevents premature processing of some source asset files that are opened for writing, but have zero bytes for longer than the modification threshold. This will time out if the **Asset Processor** cannot get an exclusive lock.
 
@@ -176,7 +178,7 @@ azlmbr.asset.builder.JobDependency_Order
 azlmbr.asset.builder.JobDependency_OrderOnce
 ```
 
-## Example: Create jobs 
+## Example: Create jobs
 
 This is a simple example of how the asset builder might create jobs when **Asset Processor** detects a new or changed source asset file in the watch folders of the registered pattern.
 

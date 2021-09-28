@@ -37,8 +37,10 @@ Note the following requirements:
 To author actor LODs in a DCC tool like Autodesk Maya or Autodesk 3ds Max, you can use one of the following two methods:
 + Soft naming conventions
 + LOD groups
-**Important**
+
+{{< important >}}
 Currently, O3DE supports skeletons created with LOD groups only.
+{{< /important >}}
 
 **To use the soft naming convention to create LODs**
 

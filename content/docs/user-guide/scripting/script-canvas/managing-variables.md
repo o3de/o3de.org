@@ -24,10 +24,12 @@ You can add variables to your Script Canvas graph to declare and initialize them
 1. In the **Script Canvas** editor, open your Script Canvas graph or create one.
 
 1. In the **Variable Manager**, click **Create Variable** and then choose your variable type. You can search to filter the list of variable types.
-**Note**
-Common variable types are pinned to the top of the list by default. You can customize the pinned list to show the variable types that you use most often. To do so, click the box to the left of a variable type to pin or unpin it.
 
-![Choose from variable types in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-create-variable-types.png)
+    {{< note >}}
+Common variable types are pinned to the top of the list by default. You can customize the pinned list to show the variable types that you use most often. To do so, click the box to the left of a variable type to pin or unpin it.
+{{< /note >}}
+
+    ![Choose from variable types in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-create-variable-types.png)
 
 1. In the **Node Inspector**, configure the properties for your variable.
 
@@ -38,8 +40,10 @@ Common variable types are pinned to the top of the list by default. You can cust
    + For **Color**, enter an RGB value or use the color picker.
    + For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas editor, or leave the default at -1.
    + For **Scope**, select **In** to show the variable property and value under the assigned **[Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/)** component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph.
-**Note**
+   
+    {{< note >}}
 This setting allows you to use the same Script Canvas graph for more than one entity, but customize part of the graph for a specific entity. When you change the variable value on a component, that value takes precedence over the default value that is specified in the graph.
+{{< /note >}}
 
 ![Example of Color variable properties in the Script Canvas Node Inspector.](/images/user-guide/scripting/script-canvas/node-inspector-scope-in-example.png)
 

@@ -43,8 +43,9 @@ O3DE uses entity IDs to identify component entities, which means that you can na
 
 When you add a component to a component entity in O3DE Editor, the component is automatically added to any component entity nodes in the Track View. When you remove a component, the component and any animation data are also removed from the Track View.
 
-**Important**
+{{< important >}}
 Be careful when removing components from component entities because it might affect your existing sequence. For example, if you remove a **Simple Motion** component from an entity that is part of a sequence, the animation no longer references the specified animation.
+{{< /important >}}
 
 ## Animating Components on a Component Entity 
 
@@ -56,9 +57,11 @@ Component nodes that can be animated are nested as children under the associated
 
 1. In the node browser, right-click the component node and choose **Add Track**, then choose the track that you want.
 
-**Note**
+    {{< note >}}
 Some components support only a limited number of tracks that can be animated in a sequence. For more information for component-specific properties, see the [Component Reference](/docs/user-guide/components/reference/).
+
 Not all components can be animated in the Track View. For more information about adding node support to the Track View, see [Exposing Custom Components to Track View for Animation](/docs/user-guide/components/development/expose-animation).
+{{< /note >}}
 
 After you add the component entity nodes to the sequence and specify the tracks to animate, you can then add keyframes to the timeline. In keyframes, you specify where in the timeline you want to animate the property and edit its properties.
 

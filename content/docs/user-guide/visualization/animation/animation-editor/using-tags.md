@@ -60,5 +60,6 @@ To add a tag to a condition, select the transition line between your nodes. In t
 
 ![Attribute pane of transition](/images/user-guide/actor-animation/anim-graph-tag-conditions-values.png)
 
-**Note**
+{{< note >}}
 You can only choose from tags that are available in the **Parameters** pane. For more information, see [Adding Tags](#animation-editor-adding-tags).
+{{< /note >}}

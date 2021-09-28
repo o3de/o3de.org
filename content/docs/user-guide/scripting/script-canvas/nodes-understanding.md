@@ -140,8 +140,11 @@ The following example uses the Light component **Turned On** event node.
    + **Connect** and **Disconnect** - Use the **Disconnect** pin to prevent the receiver node from connecting. When the event should be connected and available to receive events, use the **Connect** pin.
 
      The **Connect** and **Disconnect** pins are especially useful when working with the **On Tick** event. For example, if you have a complex operation that you do not want processed for every tick of the game, you can disconnect the **On Tick event** until it is required.
-**Note**
+     
+     {{< note >}}
 When you enable a receiver node's **Display Connection Controls** property, the node no longer connects automatically. In this case, Script Canvas assumes that you want to specify when the connection occurs.
+{{< /note >}}
+
    + **OnConnected** - Triggered when the event connects successfully. This pin is useful if you want to continue execution along the connection path when the connection occurs.
    + **OnDisconnected** - Triggered when the event disconnects successfully. This pin is useful if you want to continue execution along the disconnection path when the connection occurs.
    + **OnFailure** - An event fails to connect if it requires a source and no source is provided, or an invalid source is provided. The **OnFailure** pin displays diagnostic information that you can use to verify whether address data was correctly specified to the **Source** pin of the receiver node.

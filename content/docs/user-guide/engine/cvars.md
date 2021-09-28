@@ -6,8 +6,9 @@ title: Console Variable Tutorial
 
 This tutorial shows you how to modify existing and create console variables (CVARs). CVARs can be used to control many configurable behaviors in O3DE. You can also use them in your game.
 
-**Note**
- This brief tutorial is intended for programmers. Most of the content uses code.
+{{< note >}}
+This brief tutorial is intended for programmers. Most of the content uses code.
+{{< /note >}}
 
 ## Creating CVars 
 

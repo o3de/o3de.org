@@ -46,18 +46,20 @@ When building using the CMake CLI, you'll need to have a build output directory 
   
     ```cmd
     cmake -B build/windows_vs2019 -S . -G "Visual Studio 16 2019" ^
-        -DLY_3RDPARTY_PATH=<o3de-packages-absolute-path> ^
-        -DLY_UNITY_BUILD=ON
+        -DLY_3RDPARTY_PATH=<o3de-packages-absolute-path>
     ```
 
     * `-B` : Location of build directory, where to put the generated files.
     * `-S` : Source directory, where the root CMake file is.
     * `-G` : The generator to use to create the native project files.
   
-    The other arguments are custom definitions (`-D`) for the build script, used by O3DE:  
+    The other argument is a custom definition (`-D`) for the build script, used by O3DE:  
 
     * `LY_3RDPARTY_PATH` : The *absolute* path to your [O3DE packages](./packages). If packages are missing during configuration, they'll be downloaded to this location.
-    * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+
+    {{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds, run the previous `cmake` command with the `-DLY_UNITY_BUILD=OFF` argument to regenerate your project files.
+    {{< /note >}}
 
 ## Configure with the CMake GUI
 
@@ -75,7 +77,10 @@ Set the following values in the GUI after launching it:
 * Use `Visual Studio 16 2019` as your generator.
 * Your configure may fail at various points due to unset values. Make sure that you set the following parameters:
   * `LY_3RDPARTY_PATH` : The path to your 3rd party libraries. If any new 3rd party libraries are downloaded during configure, they'll be unpacked in this directory.
-  * `LY_UNITY_BUILD` : Unity builds are a CMake feature that can greatly improve build times.
+
+{{< note >}}
+CMake [unity builds](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) are on by default. This is a CMake feature that can greatly improve build times by merging source files into single compilation units. If you encounter a build error, disabling unity builds might help debug the problem. To disable unity builds in the CMake GUI, find the `LY_UNITY_BUILD` variable and uncheck it, then regenerate your project files.
+{{< /note >}}
 
 ## Build O3DE targets with CMake
 

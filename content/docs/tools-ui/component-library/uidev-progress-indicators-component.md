@@ -19,8 +19,9 @@ Follow these guidelines as you design your UI with progress indicators:
 
 1.  Progress indicators are animated to reinforce that an activity is occurring.
 
-**Note**
+{{< note >}}
 See additional usage guidelines in the following sections, which apply to specific types of progress indicators.
+{{< /note >}}
 
 Avoid these design choices when using progress indicators:
 + Don't use more than one progress indicator at a time.

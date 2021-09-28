@@ -7,9 +7,11 @@ draft: true
 
 Use the **Project Settings Tool** (PST) to make streamlined changes to project settings across all mobile platforms. The **Project Settings Tool** shows properties from all of the project settings files so that you can edit and save changes at once.
 
-**Note**
+{{< note >}}
 Before you can use the **Project Settings Tool**, you must have O3DE Editor installed, and an active project created and set as the default project.
+
 Currently, only Android and iOS are supported for platform-specific configuration.
+{{< /note >}}
 
 **Topics**
 + [Settings Files](#mobile-project-settings-tool-settings-files)
@@ -78,8 +80,9 @@ You can link similar properties to each other. When you link properties to one a
 
 1. To disable a link, click the icon again.
 
-**Note**
+{{< note >}}
 Some properties are always linked and can't be disabled, such as **Base Settings - Project Name** and **iOS - Bundle Name**. This ensures accuracy for properties that are required to have the same values across platforms. If the **Project Settings Tool** finds discrepancies between settings files for the always-linked properties, the `project.json` values take precedence.
+{{< /note >}}
 
 ### Reconfiguring the Project 
 
@@ -89,8 +92,9 @@ After you make changes and save, the **Project Settings Tool** prompts you to re
 
 If you choose to run the `configure` command, the output appears at the bottom of the window. When the results display "Reconfiguration Finished," you can use the **Deployment Tool** to deploy to your device with the new changes.
 
-**Note**
+{{< note >}}
 If you want to deploy your changes immediately, choose **Yes**. O3DE Editor doesn't automatically run the `configure` command and will not prompt you to do so later.
+{{< /note >}}
 
 ![The Project Settings Tool displays a successful configure and shows "Reconfiguration Finished."](/images/user-guide/mobile/mobile-project-settings-tool-using-reconfigure-result.png)
 

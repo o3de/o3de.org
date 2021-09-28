@@ -53,8 +53,10 @@ Do the following to reskin your mesh:
 1. Click **Skin**, **Bind Skin**.
 
 1. In the **Bind Skin Options** dialog box, for **Bind to** choose **Selected joints**. For **Bind method**, choose your preferred bind method. For the **Skinning method**, choose **Dual quaternion** or **Linear**. Click **Bind Skin** and then click **Close**.
-**Note**
+
+{{< note >}}
 You must export and save your deformer weights in order to import the weight maps after reskinning.
+{{< /note >}}
 
 **To reskin your mesh in 3ds Max**
 
@@ -79,8 +81,10 @@ You must export and save your deformer weights in order to import the weight map
 1. For **Modifier List**, choose **Skin**.
 
 1. Under **Advanced Parameters**, click **Load** and choose the mesh envelope (skin) that you saved earlier.
-**Note**
+
+    {{< note >}}
 You must save your weights in order to load the weights after adding a new skin modifier.
+{{< /note >}}
 
 1. In the **Load Envelopes** dialog box, click **Match by Name** to preserve the weights that you saved earlier. Close the dialog box.
 

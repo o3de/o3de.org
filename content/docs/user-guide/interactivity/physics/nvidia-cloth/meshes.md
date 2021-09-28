@@ -12,8 +12,9 @@ You can create cloth assets for entities with **Mesh** components in the content
   + Cloth data can be added to define per vertex mass and constraint properties using the vertex color tool in your content creation application. For more information see [Per vertex properties for cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/vertex-data/).
 + **Optional** - Any other static mesh. For example, if you create a flag to be simulated as cloth, then you can include a mesh for the flag pole.
 
-**Note**
+{{< note >}}
 Sample **Mesh** component cloth assets are located in the **NVIDIA Cloth** gem directory, which is located at `/dev/Gems/NvCloth/Assets/Objects/cloth/Environment/`.
+{{< /note >}}
 
 For imformation on exporting mesh assets, see [FBX Settings mesh export](/docs/user-guide/assets/fbx-settings/mesh-export/)
 

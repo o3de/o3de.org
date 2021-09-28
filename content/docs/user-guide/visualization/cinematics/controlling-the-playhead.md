@@ -28,8 +28,9 @@ The **Play** toolbar has the following controls.
 |  **Undo**  |  Reverts the previous action.  |
 |  **Redo**  |  Applies the previous action.  |
 
-**Note**
+{{< note >}}
 You can also manually adjust the playhead along the timeline. At the top of the sequence timeline, select and drag the playhead to your preferred location.
+{{< /note >}}
 
 ## Setting the In and Out Markers 
 
@@ -39,5 +40,6 @@ For example, if a sequence is 300 frames long, and you right-click at the 50 fra
 
 ![Set the in and out markers in the timeline for a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-timeline.png)
 
-**Note**
+{{< note >}}
 When you move the **In** and **Out** markers, this will apply the updated range to the **Go to start of sequence**, **Play**, **Go to end of Sequence**, and **Loop** settings. For example, if you change the **In** marker to the two second mark, the **Go to start of sequence** icon will now move the playhead to the two second mark.
+{{< /note >}}

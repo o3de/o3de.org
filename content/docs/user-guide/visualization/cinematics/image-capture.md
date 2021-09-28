@@ -25,8 +25,9 @@ You can use the **Render Output** tool in the Track View to capture image frames
 
 1. Click **Start** to start the capture.
 
-**Note**
+    {{< note >}}
 You may need to adjust the aspect ratio for captured image frames.
+{{< /note >}}
 
 **To change the aspect ratio for image frame captures**
 

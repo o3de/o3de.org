@@ -17,8 +17,10 @@ You can create global wind forces or wind forces contained within a collider vol
    **Wind Configuration** has properties for a **Global wind tag** and a **Local wind tag**. You many use the default values or set them as desired. These tags are used by the PhysX wind system to detect entities that provide wind data.
 
    For this example use the **Global wind tag** property value. In the **Tag** component of the entity, add a tag element and give it the value **global\_wind**.
-**Note**
+   
+    {{< note >}}
 If you choose to use the **Local wind tag**, the wind will only affect entities that are inside the volume of the **PhysX Collider** you create in the next step.
+{{< /note >}}
 
 1. Add a **PhysX Collider** component. If you are using the **Local wind tag**, this collider will define the volume of the wind force. With the **Global wind tag**, the size and position of this collider does not matter because the wind will be global, however, the collider will provide a useful visualization for the global wind force.
 

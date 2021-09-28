@@ -9,11 +9,14 @@ Commonly, `AZ::Interface` should be used when you want to invoke methods on a co
 
 A system is an instance of a class that inherits the `Registrar` method from `AZ::Interface`. Systems that are registered with `AZ::Interface` are designed to replace global or application lifetime request buses that are currently implemented using EBus. There are a number of benefits to this new system, including vastly improved performance and compatibility with IDE standard code autocomplete functionality.
 
-**Note**
+{{< note >}}
 *Systems*, in this usage, are key parts of O3DE. Some examples include the renderer, the console, the audio system, the input system, and the AI pathfinding system. With `AZ::Interface`, you access these systems with this simplified syntax:
- `AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
+
+`AZ::Interface<{system-interface-here}>->Get()->PerformCommand`
 For example, `AZ::Interface<IAudio>->Get()->PlaySound();`
-Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](./az-console/).
+
+Likewise, you can use this syntax to invoke behaviors across systems for console functors (cfuncs) declared with [AZ::Console](./az-console).
+{{< /note >}}
 
 `AZ::Interface<T>` provides a number of significant improvements over using a single handler EBus, such as:
 + Improved performance. Calls to the singleton are a virtual function call that can often even be de-virtualized by the compiler, rather than a lock / list iterate / function dispatch to a virtual call.
@@ -86,12 +89,15 @@ if (ISystem* system = AZ::Interface<ISystem>::Get())
 }
 ```
 
-**Important**
+{{< important >}}
 The restrictions for `AZ::Interface` are similar to that of a single-handler EBus:
 Use `AZ::Interface` on long-lived instances only, such as instances with global variables that live across the lifetime of a module or application.
+
 Because `AZ::Interface` uses `AZ::Environment` variables across DLL boundaries, you can only register/unregister after the `AZ::Environment` instance is attached after successful registration.
 `AZ::Interface` works with EBus, and you can soft-migrate EBus code by providing an `AZ::Interface<T>` handler for the same set of requests.
+
 ***Thread safety is your responsibility***. Using `AZ::Interface<T>`does not make threads safe.
+{{< /important >}}
 
 **Vs. AZ::Event**
 `AZ::Event` is a publish/subscribe (pub/sub) event handler that can be used when you want to subscribe to notifications from another component on the same thread. `AZ::Interface`, on the other hand, is a replacement for singletons, when you want to invoke methods on a core system like the renderer or the console.

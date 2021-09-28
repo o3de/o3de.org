@@ -135,8 +135,9 @@ The **Source** column indicates the subsystem that generated the message (such a
 
 The **Message** column displays information related to the processing details of the selected asset.
 
-**Note**
+{{< note >}}
 The **Message** column occasionally prefixes **Errors** with **E:** and warnings with **W:**.
+{{< /note >}}
 
 ![Event log details table.](/images/user-guide/asset_processor/event-log-details-table.png)
 

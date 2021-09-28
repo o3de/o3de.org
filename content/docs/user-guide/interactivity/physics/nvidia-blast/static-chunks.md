@@ -26,8 +26,10 @@ Use Houdini to make non-root chunks static, which results in partial destruction
 1. In the **Attribute String Edit** SOP, in the **Filter** tab, set the **From** parameter to the path name of a chunk you would like to make static, such as **root/chunk5**.
 
 1. In the **Attribute String Edit** SOP, in the **Filter** tab, set the **To** parameter to the same path as above. Append **static** to the path; for example, **root/chunk5static**.
-**Important**
+
+{{< important >}}
 If the specified chunk has been fractured, its descendants are also static when exported to O3DE.
+{{< /important >}}
 
 1. You can add additional chunks to the **Attribute String Edit** SOP. Choose the **+** icon next to the **Number of filters** parameter to add a filter. Repeat steps **4** and **5** to make another chunk static.
 
