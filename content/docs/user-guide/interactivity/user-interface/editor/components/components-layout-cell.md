@@ -35,19 +35,19 @@ You can apply the **LayoutCell** component to the children of a layout row or co
 
 In the following example, the layout column has three images as its children. The images each occupy equal space in the column.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell.png)
+![Hierarchy pane and canvas](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell.png)
 
 If you add a **LayoutCell** component to the first image, and then select **Min Height** and assign a value of 100, then the UI system overrides that child's default calculated value, and gives the top image more height than its siblings, whose values are recalculated to adjust to the remaining column space.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-2.png)
+![Setting Min Height in LayoutCell](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-2.png)
 
 In the next example, a layout grid was added as a child. Its calculated size is the same as its two siblings above it.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-3.png)
+![LayoutGrid added to canvas](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-3.png)
 
 However, when you add a **LayoutCell** component to the grid, and then specify a **Min Height** of 100, then the grid, as a whole is granted that amount of space. If you add the **LayoutCell** component to the children of a layout grid, however, it has no effect. That's because individual grid spaces are always uniform and are controlled by the grid parent.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-4.png)
+![LayoutCell added to LayoutGrid](/images/user-guide/game_ui_editor/ui-editor-components-layout-cell-4.png)
 
 **To edit a LayoutCell component**
 In the **Properties** pane of the [**UI Editor**](/docs/user-guide/interactivity/user-interface/editor/working), expand **LayoutCell** and do the following, as appropriate:

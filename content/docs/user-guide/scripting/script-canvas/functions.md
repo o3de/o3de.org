@@ -34,7 +34,7 @@ Functions require entry and exit points. To create these points, right-click a n
 To change the names of the execution slots on the function's node, edit the name field on the entry point or exit point node.
 {{< /note >}}
 
-Optionally, if you're not certain how you want to connect an entry or exit point to the rest of your function, you can create an entry or exit point node using the toolbar buttons: ![Image NOT FOUND](/images/user-guide/scripting/script-canvas/script-canvas-function-toolbar-buttons.png). Connect its execution slot later, when you're ready.
+Optionally, if you're not certain how you want to connect an entry or exit point to the rest of your function, you can create an entry or exit point node using the toolbar buttons: ![Animation of adding an output data parameter in the Variable Manager](/images/user-guide/scripting/script-canvas/script-canvas-function-toolbar-buttons.png). Connect its execution slot later, when you're ready.
 
 **Function Data Parameters**
 Functions can also have input and output data parameters. Input parameters are the values that are passed in to the function. Output parameters are the values that are returned by the function. These are both defined as variables in the **Variable Manager**. A function can also have local variables, which are not exposed on the function's node.

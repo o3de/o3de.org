@@ -5,7 +5,7 @@ title: Configuring Canvas Properties
 
 The canvas properties are displayed in the **UI Editor** **Properties** pane when no elements are selected.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-canvas-properties.png)
+![Canvas properties in the Properties pane of the UI Editor](/images/user-guide/game_ui_editor/ui-editor-canvas-properties.png)
 
 ## Rendering Properties 
 
