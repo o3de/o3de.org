@@ -5,7 +5,7 @@ title: Tweener Parameters
 weight: 400
 ---
 
-Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations. Use the parameters with a [timeline](tweener-timeline) for a variety of possibilities.
+Scripted Entity Tweener parameters provide flexibility and allow you to customize your tweener animations. Use the parameters with a [timeline](./tweener-timeline) for a variety of possibilities.
 
 Use the following tweener parameters to customize your animation.
 

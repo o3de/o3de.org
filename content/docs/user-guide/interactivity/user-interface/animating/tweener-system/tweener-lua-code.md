@@ -59,4 +59,4 @@ self.ScriptedEntityTweener:StartAnimation
 	}
 ```
 
-For the parameter descriptions, see [Tweener Supported Components](tweener-components).
+For the parameter descriptions, see [Tweener Supported Components](./tweener-components).
