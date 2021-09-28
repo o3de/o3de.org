@@ -13,8 +13,9 @@ The **PhysX Shape Collider** component creates NVIDIA PhysX simulation collider 
 +  [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
 +  [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
 
-**Note**
+{{< note >}}
 The **PhysX Shape Collider** component attached to an entity with a supported Shape component creates a static (non-moving) entity. To create a dynamic (moving) entity, you also must add a [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) component.
+{{< /note >}}
 
 Although the PhysX Shape Collider is similar to the [PhysX Collider](/docs/user-guide/components/reference/physx/collider/) component, you might want to use the PhysX Shape Collider instead in these scenarios:
 +  The shape information defined by the Shape component is used elsewhere in code or script. For example, the shape defines another volume, such as an audio volume or fog volume, and you want to keep the collider geometry and volume synchronized.
@@ -86,6 +87,7 @@ If the vertices are modified so that the polygon prism is no longer a simple pol
 
 Triggers allow colliders to perform efficient overlap tests. Colliders marked as triggers won't have forces applied when they intersect with another collider. This is useful for detecting when something enters a certain area or when two objects overlap. Use Lua or Script Canvas to detect overlap.
 
-**Note**
+{{< note >}}
 Because triggers don't perform contact resolution, the contact points between a trigger and another collider aren't available.
 Trigger Area components are legacy components and cannot be used with PhysX Shape Collider.
+{{< /note >}}

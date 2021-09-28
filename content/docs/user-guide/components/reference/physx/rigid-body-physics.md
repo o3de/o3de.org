@@ -17,8 +17,9 @@ Dynamic is the default.
 Kinematic rigid bodies are not fully simulated. Kinematic rigid bodies are moved by script and not effected by forces or gravity. Movement is created with the `SetKinematicTarget` method that you specify in the script.
 Use this feature for objects such as moving platforms, doors, or anything that doesn't need to be fully simulated by physics.
 
-**Note**
+{{< note >}}
 You should always add the **PhysX Rigid Body** component to the top level of an entity hierarchy. If you add the component to a child entity, this can cause conflicts with the entity's world transform and result in undefined behavior.
+{{< /note >}}
 
 The **PhysX Rigid Body** components requires the [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/) gem.
 

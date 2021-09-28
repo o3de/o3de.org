@@ -16,7 +16,7 @@ Keep in mind the following points regarding the order of activation of Lua compo
 
 ## Communicating with components 
 
-When a Lua script creates a handler object, it notifies a component attached to an entity that it should call the script handler functions when certain events occur. For example, in the first sample below, the script creates a spawner notification bus handler when `OnActivate()` is called. This tells the **Spawner** component attached to the entity that has the script to call the `OnSpawnBegin()`, `OnSpawnEnd()`, and `OnEntitySpawned()` functions when the spawner instantiates a new spawnable. Subsequently, the handler is explicitly disconnected and set back to nil in the `OnDeactivate` function. This ensures that processing time is not wasted when the entity attached to the script isn't active. As long as the entity is active, these functions are called by the Spawner component at the appropriate time.
+When a Lua script creates a handler object, it notifies a component attached to an entity that it should call the script handler functions when certain events occur. For example, in the first sample below, the script creates a [Spawner](/docs/user-guide/interactivity/user-interface/editor/components/components-spawner) notification bus handler when `OnActivate()` is called. This tells the spawner component attached to the entity that has the script to call the `OnSpawnBegin()`, `OnSpawnEnd()`, and `OnEntitySpawned()` functions when the spawner instantiates a new dynamic slice. Subsequently, the handler is explicitly disconnected and set back to nil in the `OnDeactivate` function. This ensures that processing time is not wasted when the entity attached to the script isn't active. As long as the entity is active, these functions are called by the spawner component at the appropriate time.
 
 The following code example shows a spawner component handler.
 
@@ -61,7 +61,7 @@ return SpawnerScriptSample
 
 ## Noncomponent notifications 
 
-Some event buses that are available to Lua are not associated with components. For example, the system's [tick bus](/docs/user-guide/engine/ebus/tick) is not a component bus and does not require an entity ID. It provides both the amount of time that has passed since the last engine tick and the current time point. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler. The handler receives notifications from the system whenever the engine ticks.
+Some event buses that are available to Lua are not associated with components. For example, the system's tick bus is not a component bus and does not require an entity ID. It provides both the amount of time that has passed since the last engine tick and the current time point. To gain access to this information, write a script that implements the `OnTick()` function and creates the handler. The handler receives notifications from the system whenever the engine ticks.
 
 The following example shows how to register with the tick bus.
 
@@ -96,7 +96,7 @@ handler = TickBus.Connect(handlerTable[, connectionId])
 
 ## Sending events to a component 
 
-In addition to receiving notifications from components, a script must sometimes exercise control over components. Control is accomplished by sending events to components using the `Event` table and calling the functions implemented on it. In the example script that follows, the Spawner component is sent an event that tells the component to spawn a spawnable by calling the `Spawn()` function. The first argument to an `Event` function is always the ID of the listener that you send the event to; the remaining arguments follow.
+In addition to receiving notifications from components, a script must sometimes exercise control over components. Control is accomplished by sending events to components using the `Event` table and calling the functions implemented on it. In the example script that follows, the **[Spawner](/docs/user-guide/interactivity/user-interface/editor/components/components-spawner)** component is sent an event that tells the component to spawn a dynamic slice by calling the `Spawn()` function. The first argument to an `Event` function is always the ID of the listener that you send the event to; the remaining arguments follow.
 
 The following example shows how to send EBus events.
 
@@ -149,8 +149,9 @@ end
 return ParentScriptSample
 ```
 
-**Important**
+{{< important >}}
 If you have a Lua script that is attached to an entity that needs to get information from another entity, your script must subscribe to the target entity's `OnEntityActivated` event. Your script should wait for the target entity to be activated before requesting the relevant information. Otherwise, your script might return nil.
+{{< /important >}}
 
 ## Using AZStd::vector and AZStd::array 
 

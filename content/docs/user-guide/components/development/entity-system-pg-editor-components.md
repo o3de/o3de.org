@@ -8,11 +8,13 @@ Some components in O3DE have separate `editor` and `runtime` versions. The edito
 
 `EditContext` reflection is fully supported in runtime components. Edit time is the only time when editor components are active. At run time, when O3DE processes a level or dynamic slice, it uses the runtime equivalents of editor components. Using the `EditContext` from a runtime component is usually sufficient to provide a rich editing experience.
 
-**Important**
+{{< important >}}
 Editor components are not required. An editor component is necessary only if one of the following is true:
 Your component must be fully active at edit time. Edit time refers to standard editing mode; runtime components are used for the **AI/Physics** mode and gameplay (**Ctrl+G**).
+
 You must add special tools functionality to your component that requires that you compile only into your editor binaries.
 Your component provides functionality only in the editor and does not export a runtime component (for example, if your component manages selection logic).
+{{< /important >}}
 
 ## Sample Editor Component
 
@@ -94,8 +96,9 @@ A sample `AZ_EDITOR_COMPONENT` macro follows.
 AZ_EDITOR_COMPONENT(MyEditorComponent, "{5034A7F3-63DB-4298-83AA-915AB23EFEA0}");
 ```
 
-**Note**
+{{< note >}}
 Some O3DE editor components specify `AzToolsFramework::Components::EditorComponentBase` as the base class but use the `AZ_COMPONENT` instead of the `AZ_EDITOR_COMPONENT` macro, as in the following example.
+{{< /note >}}
 
 ```
 AZ_COMPONENT(EditorMannequinComponent, "{C5E08FE6-E1FC-4080-A053-2C65A667FE82}", AzToolsFramework::Components::EditorComponentBase);

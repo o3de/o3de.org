@@ -19,8 +19,9 @@ If your original image is 4096x4096, then you will have mip maps that are 4096x4
 
 ![For an image with a resolution of 4096x4096, the generated mip maps will be 4096x4096, 2048x2048, 1024x1024, 512x512, 256x256, and 128x128.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-2.png)
 
-**Note**
+{{< note >}}
 For most of the existing presets, mip maps are enabled by default. If you create your own presets, you must enable mip maps.
+{{< /note >}}
 
 If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**, **none (0)** appears.
 
@@ -30,7 +31,7 @@ If mip maps are not enabled, then on the **MIP Control** tab, under **Mip maps**
 
 1. In a text editor, open the `rc.ini` file.
 
-   For more information, see [Creating Image Processing Presets](/docs/userguide/assets/creating-image-processing-presets.md).
+   For more information, see [Creating Image Processing Presets](/docs/userguide/assets/creating-image-processing-presets/).
 
 1. Add `mipmaps=1` to the definition.
 **Example**
@@ -63,4 +64,5 @@ You can adjust the Alpha Test value for each mip map in the **MIP Control** tab 
 1. For each mip map, adjust the sliders or enter a number in the box.
 
 1. Select **Maintain alphatest coverage** to maintain shape and opacity from a distance when working with certain types of objects, such as leaves on a tree. If you don't select this option, the tree leaves may lose their silhouette in the lower resolution mip maps.
+
 ![Select the MIP Control tab and adjust the sliders or enter a number to define the AlphaTest value for each mip map.](/images/userguide/assets/pipeline/asset-pipeline-images-mipmaps-alphatest.png)

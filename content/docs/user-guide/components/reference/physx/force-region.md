@@ -15,8 +15,9 @@ To create a force region, you must do the following:
 
 The **PhysX Collider** component's shape, size, and orientation represent the region that applies force to incoming entities.
 
-**Note**
+{{< note >}}
 For the **Shape** property, if you select **PhysicsAsset**, you must select a **PxMesh** asset file. If the asset isn't a convex mesh (for example, it's a triangle mesh), the collider won't work as a trigger for collisions.
+{{< /note >}}
 
 **Topics**
 - [PhysX Force Region Component Properties](#physx-force-region-component-properties)
@@ -96,10 +97,10 @@ Applies a force that simulates air resistance. **Simple Drag** always applies fo
 
 Applies a force to make entities follow a spline. The force uses a proportional-derivative (PD) controller that simulates a spring moving along a spline. For example, you can create a force that simulates a water slide.
 
-**Note**
+{{< note >}}
 For the force region entity, if you change the **Scale** property of the **Transform** component, the scaling must be uniform so that the x, y, and z scale values match. If scaling isn't uniform, the spline doesn't correctly reflect the path of the force.
 The end of the spline must be outside the force region so that entities can exit after following the spline.
-
+{{< /note >}}
 
 | Property | Description |
 | --- | --- |
@@ -112,8 +113,9 @@ The end of the spline must be outside the force region so that entities can exit
 
 Applies a force in world space. World space force doesn't take into account an entity's orientation. For example, you can create a force that simulates gravity.
 
-**Note**
+{{< note >}}
 You can define the direction for world space so that it always applies force in the direction that you want, regardless of the colliding entity.
+{{< /note >}}
 
 
 | Property | Description |
@@ -121,10 +123,13 @@ You can define the direction for world space so that it always applies force in 
 |  **Direction** |  The direction of the force in world space.  |
 |  **Magnitude**  |  The amount of force to apply.  Specify a negative value to apply the force in the opposite direction.  |
 
-**Note**
+{{< note >}}
 When you select a force type, remember the following:
+
 For **Simple Drag**, you can't define the direction of force. **Simple Drag** always works in the opposite direction of the entity's movement. In contrast, you can define a direction of force using **World Space**, which always acts in the direction that you specify, regardless of the direction of the moving entity.
+
 To determine how much force to apply, **Linear Damping** takes into account the colliding entity's velocity and mass but not its shape. In contrast, **Simple Drag** takes into account the colliding entity's velocity, cross-section area, and the **Region Density** of the force region.
+{{< /note >}}
 
 ## Creating a Force Region 
 
@@ -170,9 +175,12 @@ You can create a force region so that force applies to another entity that enter
 **Example**
 
    The sphere falls and collides with the force region. The force region applies force and pushes the sphere in the opposite direction.
-![PhysX Force Region component animation.](/images/user-guide/component/physx/animation-force-region-component.gif)
+
+   ![PhysX Force Region component animation.](/images/user-guide/component/physx/animation-force-region-component.gif)
 
 1. To leave gameplay mode, press **Esc**.
-**Note**
+
+{{< note >}}
 To display PhysX debug visualizations, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/).
 For more information about using PhysX components, see [Simulating physics behavior with the PhysX system](/docs/user-guide/interactivity/physics/nvidia-physx/).
+{{< /note >}}

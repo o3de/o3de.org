@@ -106,6 +106,7 @@ You can also overcome this issue by using a gradient modifier on your existing g
 {{< /note >}}
 
 1. Under **Position Y**, expand the **Advanced** header and check **Enable Transform**.
+
 ![Under Position Y, expand the Advanced header and check Enable Transform.](/images/user-guide/vegetation/dynamic/dynamic-vegetation-procedures-adding-modifiers-transform.png)
 
 1. To produce a swizzling effect on the y-axis, use the following values or a variation on them.

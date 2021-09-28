@@ -25,9 +25,11 @@ When you create a layer, you can add entities to that layer. This helps you orga
 1. In O3DE Editor, choose **Tools**, **Entity Outliner**.
 
 1. In the **Entity Outliner**, right-click and choose **Create layer**.
+
 ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/creating-layers.png)
 
 1. With the layer selected in the **Entity Outliner**, you can modify its properties in the **Entity Inspector**.
+
 ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers-inspector.png)
 ****
 
@@ -43,7 +45,8 @@ After you create a layer, you can modify it by adding entities, reorganizing its
 1. You can do the following in the context menu.
 
    Actions highlighted in yellow affect the selected layer. The other options are standard context menu actions that don't affect the selected layer.
-![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers.png)
+
+   ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/modifying-layers.png)
 
    The following options in the context menu perform actions on the selected layer.
 ****
@@ -55,8 +58,9 @@ You can nest layers within other layers. This is useful if you want to organize 
 
 ![Right-click in the Entity Outliner and choose Create layer.](/images/user-guide/component/entity_system/layer-hierarchies.png)
 
-**Note**
+{{< note >}}
 You can't make a layer a child of a non-layer entity and you can't save a layer in a slice.
+{{< /note >}}
 
 You can nest layers to break up your level into smaller, more workable sections. If you are creating a large level, for example, you might have a single vegetation layer. If you have just one vegetation layer, then only one environment artist could edit this layer at a time. To allow multiple artists to work on the vegetation layer at once, you can nest other layers within the vegetation layer and assign each nested layer to different artists. This helps build a well-organized hierarchy to keep the game's structure efficient.
 

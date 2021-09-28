@@ -4,7 +4,7 @@ description: Learn how to use script events with Lua in Open 3D Engine.
 weight: 300
 ---
 
-Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+Lua scripts can use script events to communicate with each other. There are two example scripts that show this communication, both available in the `Gems\ScriptEvents\Assets\Scripts\Example` directory. They are called `ScriptEvents_Addressable.lua` and `ScriptEvents_Broadcast.lua`. If an EBus is addressed, events are sent to a specific address ID. Events that are broadcast globally are received at all addresses. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
 
 **ScriptEvents\_Addressable.lua**
 The `ScriptEvents_Addressable.lua` example script implements a handler for a script event that requires an address for a handler to be invoked. It broadcasts a method, but only handlers connected to the address that match the one specified in the event can invoke it.

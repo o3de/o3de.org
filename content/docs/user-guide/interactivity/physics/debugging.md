@@ -6,8 +6,9 @@ weight: 1000
 
 The PhysX system has the following features that you can use to debug issues.
 
-**Note**
+{{< note >}}
 You must first enable the [PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/) gem.
+{{< /note >}}
 
 **Topics**
 + [PhysX Debug Console Variables](#physx-debug-console-variables)
@@ -46,26 +47,27 @@ Adjusts the culling box size to **100**. Enter **0** to disable culling.
 physx_CullingBoxSize 100
 ```
 
-Connects to the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
+Connects to the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).
 
 ```
 physx_PvdConnect
 ```
 
-Disconnects from the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
+Disconnects from the PhysX Visual Debugger. You must have the PhysX Visual Debugger open to run this command. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).
 
 ```
 physx_PvdDisconnect
 ```
 
-For more information, see [Using the Console Window](/docs/user-guide/editor/console.md).
+For more information, see [Using the Console Window](/docs/user-guide/editor/console/).
 
 ## Debugging with the ImGui Tool 
 
 In game mode, you can configure the PhysX debug settings using the immediate mode graphical user interface (**ImGui**) tool.
 
-**Note**
+{{< note >}}
 You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to access this tool.
+{{< /note >}}
 
 **To debug with the ImGui tool**
 
@@ -75,6 +77,7 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 
 1. Click **PhysX Debug**.
 **Example**
+
 ![PhysX Debug menu in gameplay mode.](/images/user-guide/physx/physx-debugger-imgui-tool.png)
 
 1. You can make the following changes.
@@ -83,4 +86,4 @@ You must enable the [ImGui Gem](/docs/user-guide/gems/reference/debug/imgui) to 
 
 ## Debug Options in the PhysX Configuration 
 
-You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger.md).
+You can also specify debug settings in the **PhysX Configuration** tool. See [Debugger Configuration](/docs/user-guide/interactivity/physics/nvidia-physx/configuring/configuration-debugger/).

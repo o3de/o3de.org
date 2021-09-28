@@ -6,4 +6,4 @@ title: AzTest
 AzTest is a C++ unit test framework wrapper tool for Open 3D Engine.
 
 **Topics**
-+ [Using AzTest](/docs/user-guide/testing/aztest/AzTest.md)
++ [Using AzTest](/docs/user-guide/testing/aztest/AzTest/)

@@ -20,7 +20,7 @@ The following sections in the Atom guide provide more detail about the graphics 
 
 | Feature | Description |
 | - | - |
-| [Materials](/docs/atom-guide/materials/_index.md) | Create PBR materials with global illumination support using Atom's Material Editor. |
-| [Shaders](/docs/atom-guide/core-systems/shaders) | Create shaders using Atom's shading language, AZSL. |
-| [Atom Gem Components](/docs/user-guide/components/reference/atom/index.md) | Add mesh, lighting, and a variety of post-processing effects using components provided by the Atom Gem. |
+| [Materials](/docs/atom-guide/dev-guide/materials/) | Create PBR materials with global illumination support using Atom's Material Editor. |
+| [Shaders](/docs/atom-guide/dev-guide/shaders/) | Create shaders using Atom's shading language, AZSL. |
+| [Atom Gem Components](/docs/user-guide/components/reference/atom/) | Add mesh, lighting, and a variety of post-processing effects using components provided by the Atom Gem. |
 | Particles | Produce particle effects using [PopcornFX](https://www.popcornfx.com/) integrated into Atom. |

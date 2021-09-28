@@ -12,8 +12,9 @@ AZ::SerializeContext* serializeContext = nullptr;
 AZ::ComponentApplicationBus::BroadcastResult(serializeContext, &AZ::ComponentApplicationBus::Events::GetSerializeContext);
 ```
 
-**Warning**
- When using the global serialization context, only register an object for serialization in a `Reflect` function call. Registering outside of this function can cause race conditions. If you need to register for serialization at any other time, use a custom serialization context.
+{{< caution >}}
+When using the global serialization context, only register an object for serialization in a `Reflect` function call. Registering outside of this function can cause race conditions. If you need to register for serialization at any other time, use a custom serialization context.
+{{< /caution >}}
 
 ## Register classes 
 
@@ -70,8 +71,9 @@ Tags an enum value for serialization as part of the enum's information.
 + `name` - The name to store the value as. Field names for the same enum must be unique. Matching the internal value name isn't required.
 + `value` - The associated value to store for the enum. If this is a value associated with the enum, all type information is inferred.
 
-**Important**
- If you're serializing a member from a class with an enum type, that enum **must** be registered with the serializer.
+{{< important >}}
+If you're serializing a member from a class with an enum type, that enum **must** be registered with the serializer.
+{{< /important >}}
 
 **Example Registering an enum for serialization**
 The following is an example showing a sample declaration of an enum, and a short function that can be called to register it with the serialization system.
