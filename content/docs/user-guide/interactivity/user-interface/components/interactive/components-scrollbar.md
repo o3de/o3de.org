@@ -16,11 +16,11 @@ To view these same canvases in the **UI Editor**, navigate to the `\Gems\LyShine
 
 This is a horizontal scroll bar:
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/horizontal-scrollbar.gif)
+![Animation of horizontal scroll bar](/images/user-guide/interactivity/user-interface/components/interactive/horizontal-scrollbar.gif)
 
 This is an image within a scroll box with both a horizontal and a vertical scroll bar:
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/scrollbar-scrollbox.gif)
+![Animation of image scrolling with scroll bars](/images/user-guide/interactivity/user-interface/components/interactive/scrollbar-scrollbox.gif)
 
 The scroll bar can also fade automatically when not in use:
 

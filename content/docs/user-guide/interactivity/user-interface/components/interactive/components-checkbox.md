@@ -7,7 +7,7 @@ weight: 120
 
 You can use the **Checkbox** component to make an element behave like a check box. This component is typically applied to an element with two visual child elements: One element appears when the check box is selected and another appears when the check box is cleared.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/ui-editor-checkbox-components.png)
+![UI Editor Checkbox component](/images/user-guide/interactivity/user-interface/components/interactive/ui-editor-checkbox-components.png)
 
 To see in-game examples of completed canvases with the **Checkbox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **CheckBox**. You can view examples of color targets, check box interaction areas, and on and off elements. Press **Esc** to exit the game.
 

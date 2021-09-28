@@ -45,7 +45,7 @@ The **Blend Space 2D** node has the following ports:
 
 1. Double-click the blend space node to go to the blend space view. If you are using the **Blend Space 2D** node, your view should look as follows:
 
-![Image NOT FOUND](/images/user-guide/actor-animation/blend-space-2d-node-view.png)
+![Blend Space 2D node view](/images/user-guide/actor-animation/blend-space-2d-node-view.png)
 
 1. In the **Attributes** pane, specify values for the attributes of the blend space node. These values are used to set up your blend space.
 
@@ -53,7 +53,7 @@ The **Blend Space 2D** node has the following ports:
 You can undock the **Attributes** pane in order to see the attributes and values without scrolling.
 {{< /note >}}
 
-    ![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-attributes-pane.png)
+    ![Blend Space 2D Attributes pane](/images/user-guide/actor-animation/animation-editor-attributes-pane.png)
 
    + To use provided values for the xy-axes, do the following:
 
@@ -80,7 +80,7 @@ You can undock the **Attributes** pane in order to see the attributes and values
 
 1. After your motions are added to the blend space and the coordinate values are calculated, verify that your blend space view looks similar to the following:
 
-![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-blend-space-example.png)
+![Example blend space view](/images/user-guide/actor-animation/animation-editor-blend-space-example.png)
 
 1. In the blend space view, do the following:
 

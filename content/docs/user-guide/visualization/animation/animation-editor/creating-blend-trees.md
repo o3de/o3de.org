@@ -18,15 +18,15 @@ A blend tree is a collection of nodes with input and output ports that are color
 
 1. In the center pane, on the **Anim Graph** tab, right-click the grid and then choose **Create Node**, **Sources**, **Blend Tree**.
 
-![Image NOT FOUND](/images/user-guide/actor-animation/anim-graph-blend-tree-node.png)
+![BlendTree node added to Anim Graph](/images/user-guide/actor-animation/anim-graph-blend-tree-node.png)
 
    Alternatively, in the **Anim Graph Palette**, on the **Sources** tab, drag **Blend Tree** into the animation graph.
-
-   ![Image NOT FOUND](/images/user-guide/actor-animation/anim-graph-palette-blend-tree-node.png)
+   
+   ![BlendTree icon in Anim Graph Palette](/images/user-guide/actor-animation/anim-graph-palette-blend-tree-node.png)
 
 1. Double-click the blend tree node that you created. When you double-click the node, a new link appears above the animation graph with the node name. The **Final Node** also appears.
 
-![Image NOT FOUND](/images/user-guide/actor-animation/anim-graph-node-path.png)
+![FinalNode visible after double-clicking Blend Tree](/images/user-guide/actor-animation/anim-graph-node-path.png)
 
 1. Do the following to add nodes and connections:
 

@@ -9,4 +9,4 @@ The **Multi-Touch Input Enabled** check box is selected by default. This setting
 
 O3DE ignores this setting if **Handle multi-touch** is not enabled in the parent UI Canvas component.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/properties/ui-editor-canvas-properties-multitouch.png)
+![UI Canvas 'Handle multi-touch' setting](/images/user-guide/interactivity/user-interface/components/interactive/properties/ui-editor-canvas-properties-multitouch.png)

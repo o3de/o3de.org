@@ -38,7 +38,7 @@ After you create an anim graph, you can preview the simulation. For now, keep th
 1. In the render window, view the collider radius of each joint in the simulated object. Select the simulated object to view all colliders or select a joint to see an individual collider.
 
     **Tip**
-    In the render window, click the ![Image NOT FOUND](/images/user-guide/actor-animation/simulated-objects-5.png) icon to toggle the collider.
+    In the render window, click the ![Joint Collision Radius Icon](/images/user-guide/actor-animation/simulated-objects-5.png) icon to toggle the collider.
 
     The **Collision radius** is the distance in which the simulated object joint avoids a collider specified in the simulated object. If the value is `0`, the joint remains on the surface of the collider.
 

@@ -17,7 +17,7 @@ You open the **Sprite Editor** from the **Image** component's properties.
 
 1. Choose the ellipsis button next **Sprite path** and select the sprite file.
 
-1. To the right of **Sprite path**, click the arrow ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-components-button-1.png) icon.
+1. To the right of **Sprite path**, click the arrow ![Open in Editor Icon](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-components-button-1.png) icon.
 
 ![To open the Sprite Editor, click the arrow button next to Sprite path.](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-sprite-editor-1.png)
 

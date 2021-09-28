@@ -9,7 +9,7 @@ weight: 200
 
 Similar to the **LayoutColumn** component, the **LayoutRow** component has an **Ignore Default Cell** property. For more information, see [LayoutColumn](./components-layout-column).
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-layout-row.png)
+![LayoutRow with children](/images/user-guide/interactivity/user-interface/components/layout/ui-editor-components-layout-row.png)
 
 To see an in-game example of a completed canvas with the **Layout Row** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Layout Components**, **Layout Row**. You can view examples of different child sizes within a row. Press **Esc** to exit the game.
 

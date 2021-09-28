@@ -23,8 +23,8 @@ You can also use a controller connected to your computer:
 + To toggle the character aim on and off, press the right trigger.
 + To toggle the **LookAt** node on and off during the idle animation, press the left trigger.
 
-![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-jack-sample-01.png)
+![Screenshot of Jack running](/images/user-guide/actor-animation/animation-editor-jack-sample-01.png)
 
-![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-jack-sample-02.png)
+![Screenshot of Jack running](/images/user-guide/actor-animation/animation-editor-jack-sample-02.png)
 
-![Image NOT FOUND](/images/user-guide/actor-animation/animation-editor-jack-sample-03.png)
+![Screenshot of Jack running](/images/user-guide/actor-animation/animation-editor-jack-sample-03.png)

@@ -15,7 +15,7 @@ The animation sequence node, at the top level, contains a list of its UI element
 
 1. **Track** nodes
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-node-pane.png)
+![Node Pane with nodes](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-node-pane.png)
 
 **To add a new UI element node**
 
@@ -41,4 +41,4 @@ You can also use the **Edit Sequence** tool to edit the properties of the sequen
 **To open the Edit Sequence tool**
 + In the **Animation Editor**, click the **Edit Sequence** icon.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-edit-sequence.png)
+![Edit Sequence Icon](/images/user-guide/interactivity/user-interface/animating/animation-editor/editing/ui-animation-edit-sequence.png)

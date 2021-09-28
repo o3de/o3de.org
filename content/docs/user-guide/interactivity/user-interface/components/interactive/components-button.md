@@ -7,7 +7,7 @@ weight: 100
 
 You can use a **Button** component to make an element behave like a button.
 
-![Image NOT FOUND](/images/user-guide/interactivity/user-interface/components/interactive/ui-editor-components-button.png)
+![UI Editor Button component](/images/user-guide/interactivity/user-interface/components/interactive/ui-editor-components-button.png)
 
 To see an in-game example of a completed canvas with the **Button** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **Button**. You can view the different types of buttons you can create. Press **Esc** to exit the game.
 
@@ -18,7 +18,7 @@ Note the following:
 
 + If you want to add a text label to a button, add a child element with a text component.
  
-+ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open-in) ![Image NOT FOUND](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-components-button-1.png) next to **Sprite path**.
++ To define borders for a sliced image type, open the **Sprite Editor**. To do this, click the arrow (open-in) ![Open In Icon](/images/user-guide/interactivity/user-interface/editor/sprite-editor/ui-editor-components-button-1.png) next to **Sprite path**.
 
 You can add a prebuilt **Button** element from the slice library. When you do this, a basic button with the text string "Button" is automatically created in your **Hierarchy** pane.
 
