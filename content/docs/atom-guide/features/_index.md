@@ -104,8 +104,8 @@ Tone Mapping and Color Grading
 *Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
 
 Post-processing Volumes   
-: Volumes that allow post-processing effects (PostFX) to be bounded in certain shapes and areas in the game. Post-processing volumes are integrated into O3DE via a Shape component and one of the PostFX components.
-
+: PostFX can be weighted within a volume or area by a shape, gradient, or radius. In O3DE, this is done with a shape that is referenced by a **PostFX Shape Weight Modifier** component, with a gradient that is referenced through a **PostFX Gradient Weight Modifier** component, or by distance through a **PostFX Radius Weight Modifier** component.
+ 
 *Related to: PostFX components ([Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)* 
 
 
