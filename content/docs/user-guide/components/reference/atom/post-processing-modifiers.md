@@ -13,7 +13,7 @@ Post-processing effects (PostFX) such as **Bloom** and **Depth of Field** are co
 | Component | Description | 
 | - | - |
 | [**PostFX Layer**](/docs/user-guide/components/reference/atom/postfx-layer/) | Controls how PostFX modifiers are applied in a scene. The PostFX modifier components below require a PostFX Layer.|
-| [**PostFX Gradient Weight Modifier**](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/) | Modifies the weight of PostFX based on a [Gradient Signal Provider](/docs/user-guide/gems/reference/utility/gradient-signal/). |
+| [**PostFX Gradient Weight Modifier**](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/) | Modifies the weight of PostFX based on a gradient provided by another entity. |
 | [**PostFX Shape Weight Modifier**](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/) | Defines a volume by using a **Shape** component and modifies the weight of PostFX within the volume. The PostFX's weight remains constant within the volume and begins to fall off outside of the volume.|
 | [**PostFX Radius Weight Modifier**](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/) |  Defines a sphere based on a radius from the origin of the entity and modifies the weight of PostFX based on the camera's position within the radius. |
 
