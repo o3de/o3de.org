@@ -9,7 +9,7 @@ The **Director (Scene)** node includes a camera track that specifies the active 
 
 1. In O3DE Editor, choose **Tools**, **Track View**.
 
-1. In the Track View, click the **Add Sequence** ![Image NOT FOUND](/images/user-guide/cinematics/cinematics_add_sequence_icon.png) icon.
+1. In the Track View, click the **Add Sequence** ![Add Sequence Icon](/images/user-guide/cinematics/cinematics_add_sequence_icon.png) icon.
 
 1. In the **Add New Sequence** dialog box, enter a name for your sequence and click **OK**.
 

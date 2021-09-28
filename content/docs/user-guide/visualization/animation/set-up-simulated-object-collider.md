@@ -16,7 +16,7 @@ title: Setting Up Simulated Object Colliders
 
     ![Add a capsule shape to create a collider area for your skeleton.](/images/user-guide/actor-animation/simulated-objects-14.png)
 
-    In the **Skeleton Outliner**, a simulated object collider ![Image NOT FOUND](/images/user-guide/actor-animation/simulated-objects-20.png) icon appears next to the joint.
+    In the **Skeleton Outliner**, a simulated object collider ![Simulated Object Collider Icon](/images/user-guide/actor-animation/simulated-objects-20.png) icon appears next to the joint.
 
 1. In the **Simulated Object Inspector**, adjust the capsule so that it's larger than the actor's geometry.
 

@@ -41,6 +41,6 @@ The attachments entities may not line up with the main entity. You'll fix this i
 
    1. In the **Actor** component, for **Attachment type**, choose **Skin attachment**.
 
-   1. For **Target entity**, click the picker icon ![Image NOT FOUND](/images/shared/picker.png) and then select the primary actor to attach the skinned mesh (for example, the **cowboyactor**).
+   1. For **Target entity**, click the picker icon ![Picker Icon](/images/shared/picker.png) and then select the primary actor to attach the skinned mesh (for example, the **cowboyactor**).
 
 Your component entity setup is complete. When your primary actor animates, the additional skinned mesh attachments animate with the primary actor skeleton.

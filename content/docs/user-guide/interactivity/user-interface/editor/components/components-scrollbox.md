@@ -8,7 +8,7 @@ You can use a **ScrollBox** component to present content, such as images or text
 
 This component is typically used with a mask component, which hides the content outside of the masked area.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.gif)
+![Animation of Scrollboxes used with a mask](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.gif)
 
 To see in-game examples of completed canvases with the **ScrollBox** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **ScrollBox**. You can view examples of different scrolling options, snapping options, interactions between scroll boxes and other components, and nested scroll boxes. Press **Esc** to exit the game.
 
@@ -25,7 +25,7 @@ You can add a prebuilt **ScrollBox** element from the slice library. When you do
 
 The element named **ScrollBox** (1) has the **ScrollBox** component (2) applied to it. You can add an image to the **ScrollBox** element's **Image** component (3), which acts as the visual frame for the scroll box. Because the mask element and its child elements are drawn in front of the scroll box element, you see only the edges of the image on the **ScrollBox **component. To increase or decrease the viewable area of this image, adjust the offsets in the mask element's [**Transform2D**](/docs/user-guide/interactivity/user-interface/editor/anchors) component.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.jpg)
+![ScrollBox component properties](/images/user-guide/game_ui_editor/ui-editor-components-scrollbox.jpg)
 
 The element named **Mask** has a [**Mask**](/docs/user-guide/interactivity/user-interface/editor/components/components-mask) component applied to it, which acts as the viewport through which you can see the content. To specify a custom mask, you can add an image to the **Mask** element's **Image** component. The contents are drawn to the visible area of the mask; the transparent area of the mask hides content.
 

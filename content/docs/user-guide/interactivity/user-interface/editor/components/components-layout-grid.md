@@ -6,7 +6,7 @@ title: LayoutGrid
 
 You can use a layout grid component to organize child elements into a uniform grid. To use this feature, you add the layout grid component to an element and then add child elements. The UI system positions the child elements in a grid pattern. You can choose whether the child elements are positioned left to right or right to left, and bottom to top or top to bottom. The child elements can contain a texture or image, a piece of text, a button, a check box, more columns, rows, grids, and so on. The size of each child is determined by the **Cell Size** property and is independent of each child's content.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-layout-grid.png)
+![Example canvas with LayoutGrid](/images/user-guide/game_ui_editor/ui-editor-components-layout-grid.png)
 
 
 

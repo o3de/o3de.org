@@ -13,7 +13,7 @@ Universal Remote Console requires the use of a PC and works with both Android an
 
 1. Run `Tools\RemoteConsole\RemoteConsole.exe`
 
-![Image NOT FOUND](/images/user-guide/remote-console.png)
+![The Remote Console](/images/user-guide/remote-console.png)
 
 1. To see output from the O3DE logging system, click the **Full Log** tab.
 

@@ -6,7 +6,7 @@ title: TextInput
 
 You can use a **TextInput** component to make an element offer player input. This component is typically applied to an element with an image component and two child elements with text components (one for placeholder text and one for input text).
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-textinput.png)
+![Canvas with TextInput element](/images/user-guide/game_ui_editor/ui-editor-components-textinput.png)
 
 To see in-game examples of completed canvases with the **TextInput** component, open the level UiFeatures in the project SamplesProject. Press **Ctrl+G** to play the game, and then choose **Components**, **Interactable Components**, **TextInput**. You can view examples of different types of text input behavior on single lines and on multiple lines. Press **Esc** to exit the game.
 

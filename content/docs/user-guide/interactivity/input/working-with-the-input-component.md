@@ -33,11 +33,11 @@ After you create your `.inputbindings` file, you can add input event groups for 
 
 1. In the **Asset Editor**, for your `.inputbindings` file, click the **+** icon.
 
-![](/images/user-guide/component/input-component-properties-2.png)
+![Add Input Event Group Icon](/images/user-guide/component/input-component-properties-2.png)
 
 1. For **Event Name**, enter a name for your event, such as *Action*.
 
-![](/images/user-guide/component/input-component-properties-3.png)
+![Event Name set as 'Action'](/images/user-guide/component/input-component-properties-3.png)
 
 ## Creating Event Generators 
 
