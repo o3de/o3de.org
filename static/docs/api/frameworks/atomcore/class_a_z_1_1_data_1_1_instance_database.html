@@ -63,33 +63,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a73572639a53bfa7e5b5934df60f16b"><td class="memItemLeft" align="right" valign="top"><a id="a5a73572639a53bfa7e5b5934df60f16b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_CLASS_ALLOCATOR</b> (<a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">InstanceDatabase</a>, AZ::SystemAllocator, 0)</td></tr>
 <tr class="separator:a5a73572639a53bfa7e5b5934df60f16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4eac3e4355956a6c2f54907dd68531da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a4eac3e4355956a6c2f54907dd68531da">AddHandler</a> (const AssetType &amp;assetType, const <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt; &amp;handler)</td></tr>
-<tr class="separator:a4eac3e4355956a6c2f54907dd68531da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1d287a6ebdc81c243687856ea48eafd"><td class="memItemLeft" align="right" valign="top"><a id="ae1d287a6ebdc81c243687856ea48eafd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddHandler</b> (const AssetType &amp;assetType, typename <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt;::CreateFunction createFunction)</td></tr>
-<tr class="separator:ae1d287a6ebdc81c243687856ea48eafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee4fc9c9493bbe19dbb861af32bc6ea"><td class="memItemLeft" align="right" valign="top"><a id="a7ee4fc9c9493bbe19dbb861af32bc6ea"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveHandler</b> (const AssetType &amp;assetType)</td></tr>
-<tr class="separator:a7ee4fc9c9493bbe19dbb861af32bc6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebaf1d17dacbd31229060878b69fa4e2"><td class="memItemLeft" align="right" valign="top">Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#aebaf1d17dacbd31229060878b69fa4e2">Find</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;id) const</td></tr>
 <tr class="separator:aebaf1d17dacbd31229060878b69fa4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9efab2a2920ed0305799b4dd941d9c85"><td class="memItemLeft" align="right" valign="top">Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a9efab2a2920ed0305799b4dd941d9c85">FindOrCreate</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;id, const Asset&lt; AssetData &gt; &amp;asset)</td></tr>
-<tr class="separator:a9efab2a2920ed0305799b4dd941d9c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace08f0f3aef0cd3f2db187f9968c407b"><td class="memItemLeft" align="right" valign="top"><a id="ace08f0f3aef0cd3f2db187f9968c407b"></a>
-Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#ace08f0f3aef0cd3f2db187f9968c407b">FindOrCreate</a> (const Asset&lt; AssetData &gt; &amp;asset)</td></tr>
-<tr class="memdesc:ace08f0f3aef0cd3f2db187f9968c407b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the above FindOrCreate using an <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> created from the asset. <br /></td></tr>
-<tr class="separator:ace08f0f3aef0cd3f2db187f9968c407b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a628bd0e669c4b0a10bd1ca31801da148"><td class="memItemLeft" align="right" valign="top"><a id="a628bd0e669c4b0a10bd1ca31801da148"></a>
-Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a628bd0e669c4b0a10bd1ca31801da148">Create</a> (const Asset&lt; AssetData &gt; &amp;asset)</td></tr>
-<tr class="memdesc:a628bd0e669c4b0a10bd1ca31801da148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls FindOrCreate using a random <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>. <br /></td></tr>
-<tr class="separator:a628bd0e669c4b0a10bd1ca31801da148"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2ae05e1b59abf370bb758c79fd59774"><td class="memItemLeft" align="right" valign="top">Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#ae2ae05e1b59abf370bb758c79fd59774">FindOrCreate</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;id, const Asset&lt; AssetData &gt; &amp;asset, const AZStd::any *param=nullptr)</td></tr>
+<tr class="separator:ae2ae05e1b59abf370bb758c79fd59774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2b3facb807bedac71b1ce5f278d2eac"><td class="memItemLeft" align="right" valign="top"><a id="ad2b3facb807bedac71b1ce5f278d2eac"></a>
+Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#ad2b3facb807bedac71b1ce5f278d2eac">FindOrCreate</a> (const Asset&lt; AssetData &gt; &amp;asset, const AZStd::any *param=nullptr)</td></tr>
+<tr class="memdesc:ad2b3facb807bedac71b1ce5f278d2eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the above FindOrCreate using an <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> created from the asset. <br /></td></tr>
+<tr class="separator:ad2b3facb807bedac71b1ce5f278d2eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1849145959339fd1a3c8886f64a78ba"><td class="memItemLeft" align="right" valign="top"><a id="ae1849145959339fd1a3c8886f64a78ba"></a>
+Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#ae1849145959339fd1a3c8886f64a78ba">Create</a> (const Asset&lt; AssetData &gt; &amp;asset, const AZStd::any *param=nullptr)</td></tr>
+<tr class="memdesc:ae1849145959339fd1a3c8886f64a78ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls FindOrCreate using a random <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>. <br /></td></tr>
+<tr class="separator:ae1849145959339fd1a3c8886f64a78ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a149e5786466aead014eb40f12b7de8e1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a149e5786466aead014eb40f12b7de8e1">Create</a> (const AssetType &amp;assetType, const <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt; &amp;handler)</td></tr>
-<tr class="separator:a149e5786466aead014eb40f12b7de8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ccfa8ad6b64224a0df32169cd60a82"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a62ccfa8ad6b64224a0df32169cd60a82">Create</a> (const AssetType &amp;assetType)</td></tr>
-<tr class="separator:a62ccfa8ad6b64224a0df32169cd60a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d1f2af5680ee799b55bb70ac6c5068a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a7d1f2af5680ee799b55bb70ac6c5068a">Create</a> (const AssetType &amp;assetType, const <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt; &amp;handler, bool checkAssetIds=true)</td></tr>
+<tr class="separator:a7d1f2af5680ee799b55bb70ac6c5068a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a209eda5d573cd502184540a2dec1f71a"><td class="memItemLeft" align="right" valign="top"><a id="a209eda5d573cd502184540a2dec1f71a"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> ()</td></tr>
 <tr class="separator:a209eda5d573cd502184540a2dec1f71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,7 +108,7 @@ class AZ::Data::InstanceDatabase&lt; Type &gt;</h3>
 <div class="line"><span class="comment">// Provide your own creator (and optional deleter) to control allocation / initialization of your object.</span></div>
 <div class="line">handler.m_createFunction = [] (Data::AssetData* assetData) { <span class="keywordflow">return</span> aznew MyInstanceType(assetData); };</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="class_a_z_1_1_data_1_1_instance_database.html#a149e5786466aead014eb40f12b7de8e1">Data::InstanceDatabase&lt;MyInstanceType&gt;::Create</a>(azrtti_typeid&lt;MyAssetType&gt;(), handler);</div>
+<div class="line"><a class="code" href="class_a_z_1_1_data_1_1_instance_database.html#a7d1f2af5680ee799b55bb70ac6c5068a">Data::InstanceDatabase&lt;MyInstanceType&gt;::Create</a>(azrtti_typeid&lt;MyAssetType&gt;(), handler);</div>
 <div class="line"> </div>
 <div class="line">Data::Asset&lt;MyAssetType&gt; myAsset{ASSETID_1};</div>
 <div class="line"> </div>
@@ -154,73 +144,8 @@ class AZ::Data::InstanceDatabase&lt; Type &gt;</h3>
 <div class="line"><span class="comment">// After all objects are out of scope! The system will report an error if objects are still active on destruction.</span></div>
 <div class="line">Data::InstanceDatabase&lt;MyInstanceType&gt;::Destroy();</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4eac3e4355956a6c2f54907dd68531da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4eac3e4355956a6c2f54907dd68531da">&#9670;&nbsp;</a></span>AddHandler()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">AZ::Data::InstanceDatabase</a>&lt; Type &gt;::AddHandler </td>
-          <td>(</td>
-          <td class="paramtype">const AssetType &amp;&#160;</td>
-          <td class="paramname"><em>assetType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>handler</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Add an <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a> that will create instances for assets of type assetType. </p>
-
-</div>
-</div>
-<a id="a62ccfa8ad6b64224a0df32169cd60a82"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ccfa8ad6b64224a0df32169cd60a82">&#9670;&nbsp;</a></span>Create() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">AZ::Data::InstanceDatabase</a>&lt; Type &gt;::Create </td>
-          <td>(</td>
-          <td class="paramtype">const AssetType &amp;&#160;</td>
-          <td class="paramname"><em>assetType</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Create the <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">InstanceDatabase</a> with no handlers. Individual handlers must be added using <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#a4eac3e4355956a6c2f54907dd68531da">AddHandler()</a>. Use this function when creating an <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">InstanceDatabase</a> that will handle subclasses of Type. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">assetType</td><td>- All instances will be based on subclasses of this asset type. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a149e5786466aead014eb40f12b7de8e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a149e5786466aead014eb40f12b7de8e1">&#9670;&nbsp;</a></span>Create() <span class="overload">[2/2]</span></h2>
+<a id="a7d1f2af5680ee799b55bb70ac6c5068a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d1f2af5680ee799b55bb70ac6c5068a">&#9670;&nbsp;</a></span>Create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +165,13 @@ template&lt;typename Type &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a>&lt; Type &gt; &amp;&#160;</td>
-          <td class="paramname"><em>handler</em>&#160;</td>
+          <td class="paramname"><em>handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>checkAssetIds</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -258,6 +189,7 @@ template&lt;typename Type &gt; </div>
   <table class="params">
     <tr><td class="paramname">assetType</td><td>- All instances will be based on subclasses of this asset type. </td></tr>
     <tr><td class="paramname">handler</td><td>- An <a class="el" href="struct_a_z_1_1_data_1_1_instance_handler.html">InstanceHandler</a> that creates instances of assetType assets. </td></tr>
+    <tr><td class="paramname">checkAssetIds</td><td>- If true, it will be validated that "instance-&gt;m_assetId == asset.GetId()" </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,8 +223,8 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a9efab2a2920ed0305799b4dd941d9c85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9efab2a2920ed0305799b4dd941d9c85">&#9670;&nbsp;</a></span>FindOrCreate()</h2>
+<a id="ae2ae05e1b59abf370bb758c79fd59774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ae05e1b59abf370bb758c79fd59774">&#9670;&nbsp;</a></span>FindOrCreate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,7 +241,13 @@ template&lt;typename Type &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const Asset&lt; AssetData &gt; &amp;&#160;</td>
-          <td class="paramname"><em>asset</em>&#160;</td>
+          <td class="paramname"><em>asset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const AZStd::any *&#160;</td>
+          <td class="paramname"><em>param</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -336,11 +274,11 @@ template&lt;typename Type &gt; </div>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="astruct_a_z_1_1_data_1_1_instance_id_html_a94759ab102cfc38216009d9c98fe3250"><div class="ttname"><a href="struct_a_z_1_1_data_1_1_instance_id.html#a94759ab102cfc38216009d9c98fe3250">AZ::Data::InstanceId::CreateName</a></div><div class="ttdeci">static InstanceId CreateName(const char *name)</div></div>
-<div class="ttc" id="aclass_a_z_1_1_data_1_1_instance_database_html_a149e5786466aead014eb40f12b7de8e1"><div class="ttname"><a href="class_a_z_1_1_data_1_1_instance_database.html#a149e5786466aead014eb40f12b7de8e1">AZ::Data::InstanceDatabase::Create</a></div><div class="ttdeci">static void Create(const AssetType &amp;assetType, const InstanceHandler&lt; Type &gt; &amp;handler)</div><div class="ttdef"><b>Definition:</b> InstanceDatabase.h:507</div></div>
 <div class="ttc" id="astruct_a_z_1_1_data_1_1_instance_id_html_adff5b2c1f4e118dc8be9493a24adcbc2"><div class="ttname"><a href="struct_a_z_1_1_data_1_1_instance_id.html#adff5b2c1f4e118dc8be9493a24adcbc2">AZ::Data::InstanceId::CreateFromAssetId</a></div><div class="ttdeci">static InstanceId CreateFromAssetId(const AssetId &amp;assetId)</div></div>
+<div class="ttc" id="aclass_a_z_1_1_data_1_1_instance_database_html_a7d1f2af5680ee799b55bb70ac6c5068a"><div class="ttname"><a href="class_a_z_1_1_data_1_1_instance_database.html#a7d1f2af5680ee799b55bb70ac6c5068a">AZ::Data::InstanceDatabase::Create</a></div><div class="ttdeci">static void Create(const AssetType &amp;assetType, const InstanceHandler&lt; Type &gt; &amp;handler, bool checkAssetIds=true)</div><div class="ttdef"><b>Definition:</b> InstanceDatabase.h:416</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:27:37 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:54:56 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -14,7 +14,8 @@ In the Track View, sequences determine what to animate based on what you add to 
 1. Do one of the following:
    + In the node browser, right-click and choose **Add Selected Entity**.
    + On the **Sequence/Node** toolbar, click the **Add Selected Entity** icon.
-![Add a component entity to a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-adding-a-component-entity.png)
+
+   ![Add a component entity to a sequence.](/images/user-guide/cinematics/cinematics-track-view-editor-adding-a-component-entity.png)
 
 All component entities have the **Transform** component. This means you can animate the **Position** and **Rotation** properties for each component entity that is part of the sequence as needed.
 
@@ -22,10 +23,10 @@ If there are other components attached to the entity, those may also appear in t
 
 For components that are available, you can right-click them to see what additional tracks can be added to the sequence. Some component properties can't be added as a track in a sequence and can't be animated.
 
-For more information, see [Component Entities and Component Nodes](/docs/user-guide/visualization/cinematics/track-view/nodes-component-entity.md).
+For more information, see [Component Entities and Component Nodes](/docs/user-guide/visualization/cinematics/track-view/nodes-component-entity/).
 
 See the following topics for working with common component entities in a sequence.
 
 **Topics**
-+ [Adding Lighting](/docs/user-guide/visualization/cinematics/adding-lighting-to-scenes.md)
-+ [Adding a Camera](/docs/user-guide/visualization/cinematics/cameras-intro.md)
++ [Adding Lighting](/docs/user-guide/visualization/cinematics/adding-lighting-to-scenes/)
++ [Adding a Camera](/docs/user-guide/visualization/cinematics/cameras-intro/)

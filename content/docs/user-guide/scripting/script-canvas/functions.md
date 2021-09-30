@@ -30,10 +30,11 @@ Functions require entry and exit points. To create these points, right-click a n
 
 ![Create an entry or exit point for a Script Canvas function by right-clicking an execution slot.](/images/user-guide/scripting/script-canvas/script-canvas-function-expose-input.gif)
 
-**Note**
+{{< note >}}
 To change the names of the execution slots on the function's node, edit the name field on the entry point or exit point node.
+{{< /note >}}
 
-Optionally, if you're not certain how you want to connect an entry or exit point to the rest of your function, you can create an entry or exit point node using the toolbar buttons: ![Image NOT FOUND](/images/user-guide/scripting/script-canvas/script-canvas-function-toolbar-buttons.png). Connect its execution slot later, when you're ready.
+Optionally, if you're not certain how you want to connect an entry or exit point to the rest of your function, you can create an entry or exit point node using the toolbar buttons: ![Animation of adding an output data parameter in the Variable Manager](/images/user-guide/scripting/script-canvas/script-canvas-function-toolbar-buttons.png). Connect its execution slot later, when you're ready.
 
 **Function Data Parameters**
 Functions can also have input and output data parameters. Input parameters are the values that are passed in to the function. Output parameters are the values that are returned by the function. These are both defined as variables in the **Variable Manager**. A function can also have local variables, which are not exposed on the function's node.
@@ -85,7 +86,7 @@ The final function graph should look like this:
 
 1. Place the **Subtract**, **Multiply**, and **Add** nodes onto your graph and connect them as shown in the previous image.
 
-1. Using [variable references](/docs/user-guide/scripting/script-canvas/adding-variable-references.md), do the following:
+1. Using [variable references](/docs/user-guide/scripting/script-canvas/adding-variable-references/), do the following:
 
    1. In the **Subtract** node, reference the *End* and *Start* variables, so that *Start* is subtracted from *End*.
 
@@ -104,4 +105,5 @@ The final function graph should look like this:
    1. (Optional) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots.
 
 1. Finally, use **File**, **Save** to save the function and name it **Interpolate**. The function is now ready to use in a Script Canvas graph:
+
 ![When a function is used in a Script Canvas graph, it appears as a node, using the function's filename as the node name.](/images/user-guide/scripting/script-canvas/script-canvas-function-linear-interpolation-node.png)

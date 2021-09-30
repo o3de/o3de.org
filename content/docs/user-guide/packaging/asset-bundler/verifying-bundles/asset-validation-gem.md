@@ -11,8 +11,9 @@ One of these commands, *seedmode*, makes a seed mode active. When seed mode is a
 
 During development, use seed mode to ensure that as assets get added they're properly bundled and included in the shipping version of the game.
 
-**Note**
+{{< note >}}
 If you already have bundles to test, you can use *bundle mode* instead of seed mode. For more information, see [Using Bundle Mode to Test Bundles](/docs/user-guide/packaging/asset-bundler/verifying-bundles/bundle-mode).
+{{< /note >}}
 
 ## Prerequisites
 
@@ -56,6 +57,7 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
    ```
 
 1. Enter game mode. In the console, seed mode reports multiple Asset not found in seed graph errors.
+
 ![Asset not found in seed graph errors in the O3DE console window.](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-1.png)
 
 1. Exit game mode.
@@ -63,6 +65,7 @@ The following procedure shows how to use seed mode to troubleshoot a level that 
 1. Enter the `addseedpath` command to add the missing asset file. This example uses the command `addseedpath levels\milestone2\level.pak`.
 
 1. Enter game mode. The Asset not found errors no longer appear.
+
 ![Using the addseedpath command in the O3DE console window.](/images/user-guide/assetbundler/asset-bundler-asset-validation-gem-2.png)
 
 ### Handling Missing Asset Errors
@@ -71,4 +74,3 @@ If seed mode reports that an asset is missing, the asset might be one of the fol
 + Part of a list that you haven't added to the graph yet.
 + An asset that must be added as a dependency of another asset already found in the level.
 + An asset that must be a seed itself.
-

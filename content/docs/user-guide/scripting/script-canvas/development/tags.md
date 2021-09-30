@@ -51,8 +51,8 @@ After you have declared the node, the next step is to generate the node's topolo
 | ScriptCanvas\_Out | Provides a named Output execution slot to the node. |
 | ScriptCanvas\_Property | This tag must precede a member variable in the class that you want to expose to Script Canvas for editing and scripting. By default, the property is exposed with an Input and Output slot. However, you can use the Input or Output attributes to expose only one or the other. |
 | ScriptCanvas\_PropertyWithDefaults | Like ScriptCanvas\_Property, but specifies default values. |
-| Property | Reflects a property to the serialization context that does not need to be an editable property or an input property. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior#script-canvas-custom-nodes-serializing-hidden-properties). |
-| EditProperty | Reflects a property to the serialization context and to the EditContext with EditContext attribute support. For more information, see [Serializing "Hidden" Node Properties](/docs/userguide/scripting/scriptcanvas/custom-nodes-implementing-behavior#script-canvas-custom-nodes-serializing-hidden-properties). |
+| Property | Reflects a property to the serialization context that does not need to be an editable property or an input property. |
+| EditProperty | Reflects a property to the serialization context and to the EditContext with EditContext attribute support. |
 
 Each of these tags has attributes that can be configured. For example, the `Countdown.h` (**Delay**) node has the following topology:
 

@@ -11,8 +11,8 @@ The resource mapping tool helps manage and configure your resource mappings file
 
 Resource mapping tool uses boto3 to interact with backend AWS services. Before using the tool you will need to do the following:
 
-1. Set up your AWS credentials. For help, see [Configuring AWS Credentials](./configuring-credentials.md).
-1. Set AWS Core [Project Settings](./getting-started.md#project-settings) to configure the AWS profile name (if using profiles).
+1. Set up your AWS credentials. For help, see [Configuring AWS Credentials](./configuring-credentials/).
+1. Set AWS Core [Project Settings](./getting-started/#project-settings) to configure the AWS profile name (if using profiles).
 
 ## Launching the tool from the Editor
 
@@ -137,7 +137,7 @@ python resource_mapping_tool.py
 
 ### Option 2: Use the Python distribution from O3DE
 
-This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README.md` located in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
+This option requires a build of your project and the O3DE Editor. Refer to the instructions in `README/` located in `<ENGINE_ROOT>\Gems\AWSCore\Code\Tools\ResourceMappingTool` for details.
 
 Open a command prompt and change the directory to the engine root.
 
@@ -165,7 +165,7 @@ Check the resource mapping tool logs `resource_mapping_tool.log` that are genera
 If launching tool from Editor, log file is generated in `<project-directory>/user/logs/resource_mapping_tool.log`
 
 ### Unable to call a resource
-Check the [resource mapping file](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-files.md) is configured correctly. Ensure the lookup name is defined as expected and it maps to the expected attributes. 
+Check the [resource mapping file](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-files/) is configured correctly. Ensure the lookup name is defined as expected and it maps to the expected attributes. 
 
 Errors of the form ```Cannot determine region from the url``` in the logs indicate the wrong region or account has been set for the resource.
 * Double check that the resource's mapping entry has the correct region and account information, if overriding the global region and account attributes.

@@ -4,13 +4,7 @@ description: ' Learn about the relationship between Script Canvas and the behavi
 title: 'Script Canvas and the Behavior Context'
 ---
 
-**Topics**
-+ [The Light Component and Script Canvas](#script-canvas-behavior-context-light-component)
-+ [Objects: The PhysicsComponent Example](#script-canvas-behavior-context-physicscomponent)
-+ [Displaying EBus Event Parameter Names in Script Canvas Nodes](#script-canvas-behavior-context-parameter-names)
-+ [Common Programming Problems](#script-canvas-behavior-context-common-programming-problems)
-
-You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/user-guide/engine/components/_index.md) and [Behavior Context](/docs/userguide/components/entity-system-reflection-behavior-context.md).
+You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Entities and Components](/docs/user-guide/components/development/) and [Behavior Context](/docs/user-guide/components/development/behavior-context/).
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine.
 
@@ -18,7 +12,7 @@ The following code architecture diagram shows the relationship between Script Ca
 
 The core Script Canvas code is built as a static library that is linked into the dependent gem and editor gem. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs.
 
-Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/user-guide/engine/ebus/_index.md) that are available in Lua. When you use the behavior context, you do not need to write any Script Canvas-specific code. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment.
+Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/user-guide/engine/ebus/) that are available in Lua. When you use the behavior context, you do not need to write any Script Canvas-specific code. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment.
 
 The behavior context for Script Canvas includes the following benefits:
 + Functionality exposed through the behavior context is also available in Lua (and any other scripting solution bound to the behavior context).
@@ -123,8 +117,9 @@ behaviorContext->Class<Collision>()
      ;
 ```
 
-**Note**
+{{< note >}}
 During the preview release of Script Canvas, properties must provide both getters and setters to be accessible on a Script Canvas node. Containers such as vectors are currently not supported. For this reason, velocities, masses, and surfaces do not provide a setter.
+{{< /note >}}
 
 Most object variables are set as a result of an event. In the case of the preceding `Collision` example, the `Collision` variable is returned by the `OnCollision` event.
 
@@ -253,4 +248,4 @@ This is caused by an oversight that is easy to make: newly implemented EBus hand
 MyBus::BusConnect()
 ```
 
-Depending on the type of bus, you might have to specify an ID to connect to. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/_index.md).
+Depending on the type of bus, you might have to specify an ID to connect to. For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).

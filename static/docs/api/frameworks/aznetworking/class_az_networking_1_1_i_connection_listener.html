@@ -64,8 +64,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acd1a0264305cabfb916bb80346968816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a216b15ad9a2a3e22a7842f972872f33e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection_listener.html#a216b15ad9a2a3e22a7842f972872f33e">OnConnect</a> (<a class="el" href="class_az_networking_1_1_i_connection.html">IConnection</a> *connection)=0</td></tr>
 <tr class="separator:a216b15ad9a2a3e22a7842f972872f33e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a189dbcb93a662abaf5560d4c77eb8123"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection_listener.html#a189dbcb93a662abaf5560d4c77eb8123">OnPacketReceived</a> (<a class="el" href="class_az_networking_1_1_i_connection.html">IConnection</a> *connection, const <a class="el" href="class_az_networking_1_1_i_packet_header.html">IPacketHeader</a> &amp;packetHeader, <a class="el" href="class_az_networking_1_1_i_serializer.html">ISerializer</a> &amp;serializer)=0</td></tr>
-<tr class="separator:a189dbcb93a662abaf5560d4c77eb8123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f08745ffaea9cac7cb3e1a052beb70e"><td class="memItemLeft" align="right" valign="top">virtual PacketDispatchResult&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection_listener.html#a5f08745ffaea9cac7cb3e1a052beb70e">OnPacketReceived</a> (<a class="el" href="class_az_networking_1_1_i_connection.html">IConnection</a> *connection, const <a class="el" href="class_az_networking_1_1_i_packet_header.html">IPacketHeader</a> &amp;packetHeader, <a class="el" href="class_az_networking_1_1_i_serializer.html">ISerializer</a> &amp;serializer)=0</td></tr>
+<tr class="separator:a5f08745ffaea9cac7cb3e1a052beb70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33835ce87351c8ef6b120f33e436a865"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection_listener.html#a33835ce87351c8ef6b120f33e436a865">OnPacketLost</a> (<a class="el" href="class_az_networking_1_1_i_connection.html">IConnection</a> *connection, PacketId packetId)=0</td></tr>
 <tr class="separator:a33835ce87351c8ef6b120f33e436a865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a580e61d2917f38f3b2dc3636ff003aa6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_networking_1_1_i_connection_listener.html#a580e61d2917f38f3b2dc3636ff003aa6">OnDisconnect</a> (<a class="el" href="class_az_networking_1_1_i_connection.html">IConnection</a> *connection, DisconnectReason reason, TerminationEndpoint endpoint)=0</td></tr>
@@ -200,8 +200,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a189dbcb93a662abaf5560d4c77eb8123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a189dbcb93a662abaf5560d4c77eb8123">&#9670;&nbsp;</a></span>OnPacketReceived()</h2>
+<a id="a5f08745ffaea9cac7cb3e1a052beb70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f08745ffaea9cac7cb3e1a052beb70e">&#9670;&nbsp;</a></span>OnPacketReceived()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool AzNetworking::IConnectionListener::OnPacketReceived </td>
+          <td class="memname">virtual PacketDispatchResult AzNetworking::IConnectionListener::OnPacketReceived </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_az_networking_1_1_i_connection.html">IConnection</a> *&#160;</td>
           <td class="paramname"><em>connection</em>, </td>
@@ -247,7 +247,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean true to signal success, false to disconnect with a transport error </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>PacketDispatchResult result of the packet handling attempt </dd></dl>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:28 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:55:53 for Open 3D Engine AzNetworking API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

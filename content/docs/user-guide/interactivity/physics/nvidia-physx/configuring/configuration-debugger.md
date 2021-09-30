@@ -11,8 +11,10 @@ For more information, see the NVIDIA [PhysX Visual Debugger (PVD)](https://docs.
 **To configure the PhysX Visual Debugger**
 
 1. To get started, [download](https://developer.nvidia.com/physx-visual-debugger) the PVD.
-**Note**
+
+    {{< note >}}
 You must have a NVIDIA account to download the PVD. If you don't already have an account, follow the steps to create and then sign in your account.
+{{< /note >}}
 
 1. Follow the installation steps.
 
@@ -25,6 +27,7 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
 1. Click the **Debugger** tab.
 
 1. You can specify the following settings.
+
 ![PhysX Visual Debugger settings.](/images/user-guide/physx/physx-configuration-debugger-1.png)
 ****
 
@@ -37,6 +40,7 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
 
 1. Open the PhysX Visual Debugger to view the recorded information.
 **Example**
+
 ![Review the recorded data from O3DE Editor in the PhysX Visual Debugger.](/images/user-guide/physx/physx-configuration-debugger-2.png)
 
 1. You can also manually connect or disconnect from the PVD using the following console variable commands.
@@ -49,4 +53,4 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
    physx_PvdDisconnect
    ```
 
-   For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging.md).
+   For more information, see [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/).

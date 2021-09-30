@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-With the AWS Metrics Gem set up, clients can generate and submit metrics events using Script Canvas, Lua, or C++. The following examples demonstrate using Script Canvas and Lua to script behavior. Refer to [Using the C++ API with the AWS Metrics Gem](./cpp-api.md) for C++ examples.
+With the AWS Metrics Gem set up, clients can generate and submit metrics events using Script Canvas, Lua, or C++. The following examples demonstrate using Script Canvas and Lua to script behavior. Refer to [Using the C++ API with the AWS Metrics Gem](./cpp-api/) for C++ examples.
 
 ## Script Canvas
 
@@ -47,7 +47,7 @@ AWSMetricsRequestBus.Broadcast.SubmitMetrics(attributeList.attributes, "event_so
 AWSMetricsRequestBus.Broadcast.FlushMetrics()
 ```
 
-You can also add multiple metrics attributes to an event. Custom metrics attributes not included in the [event JSON schema](./event-schema.md) are added to the `event_data` field as a flat JSON dictionary.
+You can also add multiple metrics attributes to an event. Custom metrics attributes not included in the [event JSON schema](./event-schema/) are added to the `event_data` field as a flat JSON dictionary.
 
 {{< note >}}
 The metrics event is validated against a JSON schema before submission. The event is dropped if any of the required attributes are missing, or if the attribute value doesn't match the expected pattern.

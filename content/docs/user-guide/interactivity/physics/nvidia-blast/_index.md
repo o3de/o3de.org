@@ -9,9 +9,11 @@ weight: 200
 
 To use **NVIDIA Blast**, you must enable the [NVIDIA Blast gem](/docs/user-guide/gems/reference/physics/nvidia/nvidia-blast/).
 
-**Note**
+{{< note >}}
 NVIDIA Blast for O3DE requires a SideFX Houdini commercial or indie license to create assets. The apprentice license is not sufficient. For more information on Houdini, see [SideFX's home page](https://www.sidefx.com/).
+
 The precompiled Houdini plug-ins supplied with the **NVIDIA Blast** gem require Houdini 18.0.
+{{< /note >}}
 
 ## NVIDIA Blast features 
 
@@ -34,19 +36,19 @@ See the following topics for detailed information about NVIDIA Blast.
 
 [Install NVIDIA Blast plug-ins](/docs/user-guide/interactivity/physics/nvidia-blast/install-houdini-plugin/#install-nvidia-blast-plug-ins) - Install the NVIDIA Blast plug-ins and Houdini Digital Assets.
 
-[Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset.md) - Fracture meshes in Houdini and export assets for NVIDIA Blast.
+[Create assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/create-blast-asset/) - Fracture meshes in Houdini and export assets for NVIDIA Blast.
 
-[Processing assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/process-blast-asset.md) - Process NVIDIA Blast assets for O3DE.
+[Processing assets for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/process-blast-asset/) - Process NVIDIA Blast assets for O3DE.
 
 [Simulate destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/) - Create entities with NVIDIA Blast assets and simulate destruction.
 
-[Partial destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/static-chunks.md) - Use attributes to create partial destruction.
+[Partial destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/static-chunks/) - Use attributes to create partial destruction.
 
-[Specify destruction properties with Blast materials](/docs/user-guide/interactivity/physics/nvidia-blast/materials.md) - Use a blast material to define the force required to trigger destruction.
+[Specify destruction properties with Blast materials](/docs/user-guide/interactivity/physics/nvidia-blast/materials/) - Use a blast material to define the force required to trigger destruction.
 
-[NVIDIA Blast visual debugger](/docs/user-guide/interactivity/physics/nvidia-blast/debug.md) - Use the visual debugger for NVIDIA Blast.
+[NVIDIA Blast visual debugger](/docs/user-guide/interactivity/physics/nvidia-blast/debug/) - Use the visual debugger for NVIDIA Blast.
 
-[Script Canvas nodes for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/script-canvas.md) - Script destruction simulation in Script Canvas.
+[Script Canvas nodes for NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/script-canvas/) - Script destruction simulation in Script Canvas.
 
 ## NVIDIA Blast references 
 

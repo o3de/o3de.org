@@ -123,7 +123,7 @@ Expand `debug options`, here you can disable/enable various specific debug draw 
 To view the behavior trees, click on BT Editor at the top of the page and select a behavior tree name to edit.
 Make sure that the game or **O3DE Editor** isn't playing or simulating while editing the behavior trees.
 
-![](/images/learning-guide/tutorials/ai/kythera-city-inspector-bteditor.png)
+![The BT Editor in the Kythera AI Inspector](/images/learning-guide/tutorials/ai/kythera-city-inspector-bteditor.png)
 
 Alternatively, you can view the behavior in live mode, go to:
 

@@ -12,4 +12,4 @@ You can enter strings for the following actions:
 + **Pressed**
 + **Release**
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-actions.png)
+![Actions Properties Event fields](/images/user-guide/game_ui_editor/ui-editor-components-actions.png)

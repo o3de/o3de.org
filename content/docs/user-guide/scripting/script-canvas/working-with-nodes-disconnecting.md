@@ -20,8 +20,10 @@ Script Canvas offers a variety of ways to delete connections between nodes.
 1. Left-click the blue dashed line.
 
 1. Press **Delete**.
-**Note**
+
+    {{< note >}}
 You must left-click the blue dashed line before you press **Delete**.
+{{< /note >}}
 
 **To delete connections by using the **Alt** key**
 
@@ -32,6 +34,7 @@ You must left-click the blue dashed line before you press **Delete**.
 **To delete a node's connections by "shaking" the node**
 
 1. Using your pointer, select a connected node and move it with a shaking gesture to separate it from the other nodes. If the deleted node was connected to two other nodes, the remaining nodes connect to each other.
+
 ![Shaking nodes to disconnect them in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/script-canvas-working-with-nodes-23.gif)
 
 1. You can make changes to this option in **Edit**, **Settings**, **Global Preferences**, **Shake to Desplice**.

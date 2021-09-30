@@ -79,8 +79,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ae3cade2df7d1d25833a0cd5a1b7f3a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d217c65050ba0b77e78907e77438e97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html#a8d217c65050ba0b77e78907e77438e97">SetMeshAabb</a> (AZ::Aabb &amp;&amp;aabb)</td></tr>
 <tr class="separator:a8d217c65050ba0b77e78907e77438e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b0f8bdd162bcbafb6bae965a7ef3562"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html#a7b0f8bdd162bcbafb6bae965a7ef3562">SetMeshMaterialAsset</a> (const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;materialAsset)</td></tr>
-<tr class="separator:a7b0f8bdd162bcbafb6bae965a7ef3562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f734db12be2ddbd21993566ac2b4cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html#a77f734db12be2ddbd21993566ac2b4cd">SetMeshMaterialSlot</a> (ModelMaterialSlot::StableId id)</td></tr>
+<tr class="separator:a77f734db12be2ddbd21993566ac2b4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8110e0836740f3228c629c9e71bb0477"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html#a8110e0836740f3228c629c9e71bb0477">SetMeshIndexBuffer</a> (const <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_view.html">BufferAssetView</a> &amp;bufferAssetView)</td></tr>
 <tr class="separator:a8110e0836740f3228c629c9e71bb0477"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a827db54141549e29e92dc3d77e52fb8b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset_creator.html#a827db54141549e29e92dc3d77e52fb8b">AddMeshStreamBuffer</a> (const <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_semantic.html">RHI::ShaderSemantic</a> &amp;streamSemantic, const AZ::Name &amp;customName, const <a class="el" href="class_a_z_1_1_r_p_i_1_1_buffer_asset_view.html">BufferAssetView</a> &amp;bufferAssetView)</td></tr>
@@ -368,22 +368,22 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html
 
 </div>
 </div>
-<a id="a7b0f8bdd162bcbafb6bae965a7ef3562"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b0f8bdd162bcbafb6bae965a7ef3562">&#9670;&nbsp;</a></span>SetMeshMaterialAsset()</h2>
+<a id="a77f734db12be2ddbd21993566ac2b4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f734db12be2ddbd21993566ac2b4cd">&#9670;&nbsp;</a></span>SetMeshMaterialSlot()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AZ::RPI::ModelLodAssetCreator::SetMeshMaterialAsset </td>
+          <td class="memname">void AZ::RPI::ModelLodAssetCreator::SetMeshMaterialSlot </td>
           <td>(</td>
-          <td class="paramtype">const Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_asset.html">MaterialAsset</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>materialAsset</em></td><td>)</td>
+          <td class="paramtype">ModelMaterialSlot::StableId&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the material asset for the current SubMesh. Begin and BeginMesh must be called first </p>
+<p>Sets the ID of the model's material slot that this mesh uses. Begin and BeginMesh must be called first </p>
 
 </div>
 </div>
@@ -393,7 +393,7 @@ Data::Asset&lt; <a class="el" href="class_a_z_1_1_r_p_i_1_1_model_lod_asset.html
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:56 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

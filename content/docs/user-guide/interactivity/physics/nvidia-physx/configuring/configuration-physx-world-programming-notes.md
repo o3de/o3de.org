@@ -29,8 +29,9 @@ RayCastHit choose;
 WorldRequestBus::EventResult(choose, AZ_CRC("AZPhysicalWorld"), &WorldRequests::RayCast, request);
 ```
 
-**Note**
+{{< note >}}
 If your game creates multiple worlds, it must manage the objects that are added into those worlds.
+{{< /note >}}
 
 ## Step Constants
 

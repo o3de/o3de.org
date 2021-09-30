@@ -98,8 +98,9 @@ O3DE has reflection contexts for different purposes, including the following:
 + [Behavior Context](/docs/user-guide/components/development/behavior-context/) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/scripting/script-canvas/), or other external sources.
 + `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation.
 
-**Note**
- This topic covers only `SerializeContext` and `EditContext`.
+{{< note >}}
+This topic covers only `SerializeContext` and `EditContext`.
+{{< /note >}}
 
 All of O3DE's reflection API operations are designed to be simple, human readable, and human writable, with no forced dependency on code generation.
 
@@ -137,8 +138,9 @@ The preceding example reflects two primitive types-a float, and a string-as well
 + Pointers, including `AZStd::smart_ptr`, `AZStd::intrusive_ptr`, and raw native pointers.
 + Any class or structure that has also been reflected.
 
-**Note**
+{{< note >}}
 The example omits the reflection code for `SomeClassThatSomeoneHasReflected`. However, you need only reflect the class. After that, you can freely reflect members or containers of that class in other classes.
+{{< /note >}}
 
 ## Editing
 
@@ -176,8 +178,9 @@ An example of binding a float to a slider follows:
 
 The `AZ::Edit::UIHandlers::Slider` UI handler expects `AZ::Edit::Attributes::Min` and `AZ::Edit::Attributes::Max` attributes. Optionally, you can provide a value for `AZ::Edit::Attributes::Step`. The example provides incremental increases of `0.1`. If you do not provide a value for `AZ::Edit::Attributes::Step`, a default stepping of `1.0` is used.
 
-**Note**
+{{< note >}}
 The property system supports external UI handlers, so you can implement your own UI handlers in your own modules. You can customize the behavior of the field, the `Qt` control that it uses, and the attributes that it observes.
+{{< /note >}}
 
 ## Attributes
 

@@ -11,4 +11,4 @@ For each interactive element, you can set navigation to one of the following:
 + **Custom** - You manually specify the interactive elements that become focused when up, down, left, or right is pressed.
 + **None** - This option removes navigation capability; using the keyboard or gamepad, the player cannot focus on this element.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-components-interactive-navigation.png)
+![Setting custom Navigation Modes](/images/user-guide/game_ui_editor/ui-editor-components-interactive-navigation.png)

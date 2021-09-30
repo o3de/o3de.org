@@ -13,8 +13,9 @@ Try these examples:
 + Input and edit text.
 + Use keyboard, mouse, or gamepad to interact with the UI.
 
-**Note**
+{{< note >}}
 If the interactive component's **Input enabled** setting is deselected (unchecked), that element is drawn in its disabled state and does not respond to hover or click actions.
+{{< /note >}}
 
 ## Animation List 
 
@@ -36,6 +37,6 @@ To use this feature, you must type text strings in the **Actions** section of th
 
 For example, in the picture below, **EnablerChanged** is displayed whenever the **Enable Input** check box changes state (from off to on, or on to off). **EnablerOn** is displayed when the check box is selected, and **EnablerOff** is displayed when it is deselected.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-previewing-action-log.png)
+![Action Log pane and canvas with check box](/images/user-guide/game_ui_editor/ui-editor-previewing-action-log.png)
 
 During **Preview**, Script Canvas and Lua scripts aren't active. Actions taken in UI canvas **Preview** have no effect on anything outside of the canvas.

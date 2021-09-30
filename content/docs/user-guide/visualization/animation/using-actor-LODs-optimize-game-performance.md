@@ -37,16 +37,18 @@ Note the following requirements:
 To author actor LODs in a DCC tool like Autodesk Maya or Autodesk 3ds Max, you can use one of the following two methods:
 + Soft naming conventions
 + LOD groups
-**Important**
+
+{{< important >}}
 Currently, O3DE supports skeletons created with LOD groups only.
+{{< /important >}}
 
 **To use the soft naming convention to create LODs**
 
 1. Create an actor with multiple LOD meshes by adding a suffix at the end of the name of each LOD mesh. See the following table for examples.
 
-    For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming.md).
+   For more information, see [FBX soft naming conventions](/docs/user-guide/assets/fbx-settings/settings-soft-naming).
 
-1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings/intro.md) to export the meshes to FBX format so that you can use them in O3DE.
+1. Follow the instructions in [Customize FBX asset export with FBX Settings](/docs/user-guide/assets/fbx-settings) to export the meshes to FBX format so that you can use them in O3DE.
 
     **To use LOD groups to create actor LODs**
 
@@ -76,7 +78,7 @@ After you import your LODs into O3DE Editor, you can add an actor LOD to a level
 
 1. In O3DE Editor, choose **Tools**, **Asset Browser**.
 
-1. Select and drag the exported `.fbx` file to the viewport. In the **[Actor](/docs/user-guide/components/animation/actor/)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset.
+1. Select and drag the exported `.fbx` file to the viewport. In the **[Actor](/docs/user-guide/components/reference/animation/actor/)** component that appears in the **Entity Inspector**, a shared material file with multiple materials contains the LOD asset.
 
 1. To preview the LODs, change the number for **LOD Level** in the **Actor** component.
 

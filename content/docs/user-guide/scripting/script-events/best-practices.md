@@ -11,7 +11,7 @@ The following are some best practices for using script events.
 
 Sending events during entity activation can have undesired results. Because the order of activation of entities is not guaranteed, when an event is sent during activation, some entities that need to handle the event might not receive it. In particular, the **On Graph Start** and **On Entity Activated** events are subject to activation order issues.
 
-To ensure that all entities that need to listen for and handle a given script event are ready to receive the event, queue the message on the [tick bus](/docs/user-guide/engine/ebus/tick.md). One way to implement this strategy in Script Canvas is to connect the **On Graph Start** node to a **Tick Delay** node. The delay helps to ensure that when a script event message is sent, all entities that could possibly be connected to that script event receive the event.
+To ensure that all entities that need to listen for and handle a given script event are ready to receive the event, queue the message on the tick bus. One way to implement this strategy in Script Canvas is to connect the **On Graph Start** node to a **Tick Delay** node. The delay helps to ensure that when a script event message is sent, all entities that could possibly be connected to that script event receive the event.
 
 ![Using the Tick Delay node in Script Canvas to ensure that entities are activated before events are sent.](/images/user-guide/script-canvas-script-events-9.png)
 
@@ -19,12 +19,13 @@ To ensure that all entities that need to listen for and handle a given script ev
 
 Because Script Events are user-created assets, problems can occur when an asset that is referenced in existing scripts or Script Canvas graphs changes.
 
-**Note**
+{{< note >}}
 Script Canvas provides Script Event version validation. When a Script Event asset is modified, Script Canvas updates the Script Event nodes that reference it. If you open a graph that has a Script Event that has been modified, the graph is marked as modified. To update the Script Event nodes to their latest versions, save the graph.
+{{< /note >}}
 
 ## Use Script Events Instead of the Gameplay Notification Bus System 
 
-Script events offer the following advantages over the [gameplay bus](/docs/userguide/components/entity-system-gameplay-bus.md) system. Script events:
+Script events offer the following advantages over the gameplay bus system. Script events:
 + Are data driven.
 + Support more data types.
 + Require less maintenance.

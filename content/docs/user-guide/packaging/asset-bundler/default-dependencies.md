@@ -22,9 +22,11 @@ weight: 600
 | Gems | Gems\\gem\_name\\Assets\\gem\_name\_Dependencies.xml | The required dependencies for the named gem. When creating a new gem, include any resources that are required regardless of whether they're used explicitly within a project here. Never edit the default dependency file for a gem which you aren't writing or customizing. |
 | Project | project\_name\\project\_name\_Dependencies.xml | Project-wide dependencies. This is the default dependency file that you'll be editing most frequently, and should include things like game-wide audio, configuration information for pre-loading resources at launch time, or other assets that must always be included with your project. When you create a new project, the dependency file is created from the ProjectTemplates\\DefaultTemplate\\$\{ProjectName\}\\$\{ProjectName\}\_Dependencies.xml template. |
 
-**Important**
- These files are **not** seed lists, and can't be manipulated with commands that modify seed lists. Default dependencies are built by the Asset Processor to create seed lists in the cache. These seed lists are then picked up by the Asset Bundler when you use the `--addDefaultSeedListFiles` flag.
+{{< important >}}
+These files are **not** seed lists, and can't be manipulated with commands that modify seed lists. Default dependencies are built by the Asset Processor to create seed lists in the cache. These seed lists are then picked up by the Asset Bundler when you use the `--addDefaultSeedListFiles` flag.
+ 
 Another important consequence of this is that every time you change a default dependencies file, it must be built by the Asset Processor to generate an updated seed list for the Asset Bundler.
+{{< /important >}}
 
 ## Default dependencies file format 
 

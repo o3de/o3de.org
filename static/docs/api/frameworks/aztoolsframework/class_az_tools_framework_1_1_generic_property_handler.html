@@ -65,24 +65,24 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteGUIValue
 <tr class="memitem:a2a74d8aa876dbae8d8960910fdf23858"><td class="memItemLeft" align="right" valign="top"><a id="a2a74d8aa876dbae8d8960910fdf23858"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValueIntoGUI</b> (size_t index, WidgetType *GUI, void *value, const AZ::Uuid &amp;propertyType)</td></tr>
 <tr class="separator:a2a74d8aa876dbae8d8960910fdf23858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c88beacf0380cec5cee61fdd471ce6a"><td class="memItemLeft" align="right" valign="top"><a id="a9c88beacf0380cec5cee61fdd471ce6a"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstInTabOrder</b> (WidgetType *widget)</td></tr>
-<tr class="separator:a9c88beacf0380cec5cee61fdd471ce6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b09d4cc82680fb63ad91ae740bf7f6b"><td class="memItemLeft" align="right" valign="top"><a id="a0b09d4cc82680fb63ad91ae740bf7f6b"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastInTabOrder</b> (WidgetType *widget)</td></tr>
-<tr class="separator:a0b09d4cc82680fb63ad91ae740bf7f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad196e9992da41c03a7d74422638d785a"><td class="memItemLeft" align="right" valign="top"><a id="ad196e9992da41c03a7d74422638d785a"></a>
-virtual QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGUI</b> (QWidget *pParent) override=0</td></tr>
-<tr class="separator:ad196e9992da41c03a7d74422638d785a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d868543606e54f8a2c50a42f946dac5"><td class="memItemLeft" align="right" valign="top"><a id="a7d868543606e54f8a2c50a42f946dac5"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstInTabOrder</b> (WidgetType *widget) override</td></tr>
+<tr class="separator:a7d868543606e54f8a2c50a42f946dac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88cb76cb0704f2dca38bb8a81c578b5"><td class="memItemLeft" align="right" valign="top"><a id="af88cb76cb0704f2dca38bb8a81c578b5"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastInTabOrder</b> (WidgetType *widget) override</td></tr>
+<tr class="separator:af88cb76cb0704f2dca38bb8a81c578b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bfca1f7fd29f5f1c5f1be3c4ead3a2"><td class="memItemLeft" align="right" valign="top"><a id="a05bfca1f7fd29f5f1c5f1be3c4ead3a2"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGUI</b> (QWidget *pParent) override=0</td></tr>
+<tr class="separator:a05bfca1f7fd29f5f1c5f1be3c4ead3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a50f91c96ce04a51c23a7cbecefafd58d"><td class="memItemLeft" align="right" valign="top"><a id="a50f91c96ce04a51c23a7cbecefafd58d"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandlesType</b> (const AZ::Uuid &amp;id) const override</td></tr>
-<tr class="separator:a50f91c96ce04a51c23a7cbecefafd58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5565ab11e498187fc46a086411098412"><td class="memItemLeft" align="right" valign="top"><a id="a5565ab11e498187fc46a086411098412"></a>
-virtual const AZ::Uuid &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandledType</b> () const override</td></tr>
-<tr class="separator:a5565ab11e498187fc46a086411098412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8a5786dd91e05594c763ada6bcac6f"><td class="memItemLeft" align="right" valign="top"><a id="aff8a5786dd91e05594c763ada6bcac6f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HandlesType</b> (const AZ::Uuid &amp;id) const override</td></tr>
+<tr class="separator:aff8a5786dd91e05594c763ada6bcac6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c8db625f2ddeec83f183dddd0633e8d"><td class="memItemLeft" align="right" valign="top"><a id="a4c8db625f2ddeec83f183dddd0633e8d"></a>
+const AZ::Uuid &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandledType</b> () const override</td></tr>
+<tr class="separator:a4c8db625f2ddeec83f183dddd0633e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -96,7 +96,7 @@ AZ::Uuid&#160;</td><td class="memItemRight" valign="bottom"><b>nullUuid</b> = AZ
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -154,6 +154,10 @@ virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class
 virtual AZ::EntityId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#abd37a3b2c8b487a74edc82be99b21faa">GetExistingEntity</a> (AZ::u64 id)=0</td></tr>
 <tr class="memdesc:abd37a3b2c8b487a74edc82be99b21faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an existing entity id from a known id. <br /></td></tr>
 <tr class="separator:abd37a3b2c8b487a74edc82be99b21faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a108c8298e0b4c8cba8dfa214e963e09e"><td class="memItemLeft" align="right" valign="top"><a id="a108c8298e0b4c8cba8dfa214e963e09e"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#a108c8298e0b4c8cba8dfa214e963e09e">EntityExists</a> (AZ::EntityId id)=0</td></tr>
+<tr class="memdesc:a108c8298e0b4c8cba8dfa214e963e09e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an entity with the given id exists. <br /></td></tr>
+<tr class="separator:a108c8298e0b4c8cba8dfa214e963e09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f4f815d06c19f868e241e89dddc011"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ab2f4f815d06c19f868e241e89dddc011">DeleteSelected</a> ()=0</td></tr>
 <tr class="separator:ab2f4f815d06c19f868e241e89dddc011"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3ee87354eb62855c20ea73019e38cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_tools_application_requests.html#ace3ee87354eb62855c20ea73019e38cb">DeleteEntityById</a> (AZ::EntityId entityId)=0</td></tr>
@@ -1821,7 +1825,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </table>
 </div><div class="memdoc">
 <p>Open 3D Engine Internal use only.</p>
-<p>Run a specific redo command separate from the undo/redo system. In many cases before a modifcation on an entity takes place, it is first packaged into undo/redo commands. Running the modification's redo command separete from the undo/redo system simulates its execution, and avoids some code duplication. </p>
+<p>Run a specific redo command separate from the undo/redo system. In many cases before a modification on an entity takes place, it is first packaged into undo/redo commands. Running the modification's redo command separate from the undo/redo system simulates its execution, and avoids some code duplication. </p>
 
 </div>
 </div>
@@ -1926,7 +1930,7 @@ static const AZ::EBusHandlerPolicy&#160;</td><td class="memItemRight" valign="bo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:38 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:05 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

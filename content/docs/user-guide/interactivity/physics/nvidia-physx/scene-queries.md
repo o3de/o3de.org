@@ -4,7 +4,7 @@ title: PhysX Scene Queries
 weight: 300
 ---
 
-You can use physics raycast queries to determine whether a specific line segment intersects physics geometry. Similarly a shapecast query (also known as a sweep) tests whether a shape extruded along a line segment intersects with physics geometry. Example uses for these queries might include determining whether an object is in front of another object, or testing a line of sight. Overlap queries are a third type of scene query, which determine whether a stationary shape intersects with other physics geometry. All these scene queries are performed on an `AzPhysics::SceneInterface` object and they all test against the entire scene. Note that as well as queries against entire scenes, it is also possible to perform a raycast against a single [**PhysX Simulated Body**](/docs/user-guide/interactivity/physics/nvidia-physx/simulated-bodies.md#raycast).
+You can use physics raycast queries to determine whether a specific line segment intersects physics geometry. Similarly a shapecast query (also known as a sweep) tests whether a shape extruded along a line segment intersects with physics geometry. Example uses for these queries might include determining whether an object is in front of another object, or testing a line of sight. Overlap queries are a third type of scene query, which determine whether a stationary shape intersects with other physics geometry. All these scene queries are performed on an `AzPhysics::SceneInterface` object and they all test against the entire scene. Note that as well as queries against entire scenes, it is also possible to perform a raycast against a single [**PhysX Simulated Body**](/docs/user-guide/interactivity/physics/nvidia-physx/simulated-bodies/#raycast).
 
 Each type of scene query can be performed using an `AzPhysics::SceneQueryRequest` object (there are specializations of the request object for each of the three scene query types). As well as performing a single query, it is possible to collect a batch of queries into a single call using an `AzPhysics::SceneQueryRequests` object, which is a container for many queries. It is also possible to call the request either synchronously or asynchronously.
 
@@ -25,8 +25,10 @@ The results of scene queries are described using containers of `AzPhysics::Scene
 + [Overlap](#overlap)
 + [SceSceneQueryHit](#scenequeryhit)
 
-**Note**
+{{< note >}}
 Scene queries can have a performance cost.
+{{< /note >}}
+
 ## Raycast
 
 Raycast queries are the most common scene query, based on firing a ray from a start position a specified distance along a ray direction.

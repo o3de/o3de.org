@@ -12,7 +12,7 @@ The **Track Editor** displays all the tracks in your current animation sequence.
 
 
 **To display the Track Editor**
-+ In the [**Animation Editor**](/docs/user-guide/user-interface/animation/_index.md), choose **View**, **Track Editor** or **View**, **Both**.
++ In the [**Animation Editor**](./), choose **View**, **Track Editor** or **View**, **Both**.
 
 **To zoom in or out**
 + Scroll the mouse wheel
@@ -72,7 +72,8 @@ You can also use the Track Editor toolbar to select, move, and snap keys. When m
 
 ## Moving the Play or Record Point in the Track Editor 
 
-The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](/docs/user-guide/user-interface/animation/_index.md) change to the values specified by the animation tracks.
+The play or record point of the animation sequence is shown as a vertical magenta slider on the timeline. Move the play or record point, and the properties of the UI elements in the [**Animation Editor**](/docs/user-guide/interactivity/user-interface/animating/animation-editor/) change to the values specified by the animation tracks.
+```
 
 **To move the play or record point in the Track Editor**
 + Click or drag the vertical magenta slider in the timeline.
@@ -89,6 +90,8 @@ The **Track Editor** features a timeline along its top edge. To preview your ent
 
 1. Click the **Play** button to preview your animation in the time frame specified.
 
-**Note**
+{{< note >}}
 When you preview an animation or move the playback position on the timeline, it moves the UI elements in the **UI Editor**. This means that, if you then save the canvas, these UI elements will be saved in this position.
+
 Reposition the timeline or preview a different sequence to position the UI elements at the positions in which you want them to load before you save the canvas.
+{{< /note >}}

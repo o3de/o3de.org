@@ -34,7 +34,8 @@ For example, you can ensure an element remains full screen regardless of the scr
        
 
    1. Anchor all of the element's edges to the parent. The horizontal and vertical size adjusts to parent. You can use this anchor preset to place an element that remains full screen, regardless of a change in resolution. This applies if the canvas is its parent.
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-presets-1.png)
+
+   ![Transform 2D Anchor Settings](/images/user-guide/game_ui_editor/ui-editor-presets-1.png)
 
 **To further edit (fine tune) an element's anchors**
 In the **Properties** pane, under **Transform2D**, do the following for **Anchors**, as appropriate:
@@ -47,7 +48,7 @@ The anchors' positions can be visualized as points on a grid, plotted in percent
 
 But if, for example, you want the element's left and right edges to each remain at a fixed percentage relative to its parent and to change size as its parent changes size, then make the numbers different. In this case, the anchors are called split.
 
-![Image NOT FOUND](/images/user-guide/game_ui_editor/ui-editor-percent.png)
+![Visual aid for setting Anchor values](/images/user-guide/game_ui_editor/ui-editor-percent.png)
 
 **To edit an element's position and size**
 In the **Properties** pane, under **Transform2D**, modify the **Offsets**, as appropriate:
@@ -71,14 +72,16 @@ In the **Properties** pane, under **Transform2D**, do the following for **Pivot*
 + For **Y Scale**, enter a value to use as a multiplier for the element's height.
 + Select **Scale to Device** if you want the UI element and its child elements to scale with the device resolution.
 
-**Note**
+{{< note >}}
 The element rotates around, resizes from, and calculates position from its pivot point. The pivot point is not limited by the element's borders. You can place the pivot outside of the element.
+{{< /note >}}
 
 **Example: Using Anchors to Resize an Element Relative to its Parent**
 In the following example, anchors are used to resize the element relative to its parent. The layout column of buttons is resized as needed to stay on the screen. Because the layout column of buttons does not use the **Scale to Device** setting, the button text does not change size along with its parent button.
 
-**Note**
+{{< note >}}
 You can [configure the text element](/docs/user-guide/interactivity/user-interface/editor/components/components-text) separately.
+{{< /note >}}
 
 The layout column of buttons has the following settings.
 

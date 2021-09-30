@@ -26,10 +26,12 @@ Shape components generate helper geometries that can be used to define shapes fo
 
 An entity can have only one Shape component.
 
-  > **Important:** Always use the Shape's component properties to scale the shape, such as the **Dimensions**, **Height**, and **Radius** properties. Do not use the entity's Transform component to scale a Shape component.
-  >
-  >An entity containing a shape component should have a uniform and normalized scale; that is, the **Scale** property of the Transform component should be **X:** `1.0`, **Y:** `1.0`, **Z:** `1.0`. If a shape component is scaled non-uniformly, rendering and intersection tests use the largest vector of the Transform component's **Scale** property, yielding undesirable results.
-  >
+{{< important >}}
+Always use the Shape's component properties to scale the shape, such as the **Dimensions**, **Height**, and **Radius** properties. Do not use the entity's Transform component to scale a Shape component.
+{{< /important >}}
+
+An entity containing a shape component should have a uniform and normalized scale; that is, the **Scale** property of the Transform component should be **X:** `1.0`, **Y:** `1.0`, **Z:** `1.0`. If a shape component is scaled non-uniformly, rendering and intersection tests use the largest vector of the Transform component's **Scale** property, yielding undesirable results.
+
 
 By default, shapes are always visible in the Open 3D Engine (O3DE) editor. You can hide shapes on non-selected entities by disabling the **Visible** property in the shape component.
 

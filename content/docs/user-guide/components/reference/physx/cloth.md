@@ -86,8 +86,9 @@ Stiffness for motion constraints.
 
 ![Backstop properties of the Cloth component](/images/user-guide/physx/cloth/ui-cloth-component-C.png)
 
-**Note**
+{{< note >}}
 Backstop properties are only available when a **Backstop** vertex color stream is specified in the **Cloth** modifier for the selected **Mesh node** in **FBX Settings**.
+{{< /note >}}
 
 **Radius**
 The radius in meters of the backstop sphere.
@@ -138,13 +139,15 @@ Portion of angular velocity applied to turning cloth particles.
 
 ## Wind properties 
 
-**Note**
-The component wind properties create wind that effects only the cloth referenced by the component. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider.md).
+{{< note >}}
+The component wind properties create wind that effects only the cloth referenced by the component. To create wind that can effect multiple components across multiple entities, see [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider).
+{{< /note >}}
 
 ![Wind properties of the Cloth component](/images/user-guide/physx/cloth/ui-cloth-component-F.png)
 
-**Note**
+{{< note >}}
 Wind is disabled when both the below **Air drag** and **Air lift** coefficients are **0.0**.
+{{< /note >}}
 
 **Enable local wind velocity**
 Enable to set a wind **Local velocity** for this cloth. When disabled, the velocity from Physics::WindBus will be used.
@@ -255,8 +258,9 @@ Compression limit for shearing constraints. This property is affected by **Shear
 
 ## Fabric stretch properties 
 
-**Note**
+{{< note >}}
 For **Fabric stretch** properties, reduce **Stiffness** of **Tether constraints** or increase its **Scale** to allow cloth to stretch.
+{{< /note >}}
 
 ![Fabric stretch properties of the Cloth component](/images/user-guide/physx/cloth/ui-cloth-component-K.png)
 

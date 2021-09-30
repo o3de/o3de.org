@@ -70,12 +70,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValuesIntoGUI</b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteGUIValuesIntoProperty</b> ([[maybe_unused]] size_t index, PropertyControl *GUI, ValueType &amp;instance, [[maybe_unused]] <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node) override</td></tr>
 <tr class="separator:a3037d0eb1c3c682dfed4bbe8f9f9fcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_tools_framework_1_1_property_handler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_property_handler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_property_handler.html">AzToolsFramework::PropertyHandler&lt; ValueType, PropertyControl &gt;</a></td></tr>
-<tr class="memitem:a3295a996a421c8adee4d9f9319ac4151 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memItemLeft" align="right" valign="top"><a id="a3295a996a421c8adee4d9f9319ac4151"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteGUIValuesIntoProperty</b> (size_t index, PropertyControl *GUI, ValueType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node)=0</td></tr>
-<tr class="separator:a3295a996a421c8adee4d9f9319ac4151 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b9a929de427eaf8be5455bdd20fac62 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memItemLeft" align="right" valign="top"><a id="a9b9a929de427eaf8be5455bdd20fac62"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValuesIntoGUI</b> (size_t index, PropertyControl *GUI, const ValueType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node)=0</td></tr>
-<tr class="separator:a9b9a929de427eaf8be5455bdd20fac62 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187af168ea6afa2e73b054bc94e39ecb inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memItemLeft" align="right" valign="top"><a id="a187af168ea6afa2e73b054bc94e39ecb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteGUIValuesIntoProperty</b> (size_t index, PropertyControl *GUI, ValueType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node) override=0</td></tr>
+<tr class="separator:a187af168ea6afa2e73b054bc94e39ecb inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d22d5d95d760f58540bda3b55835d0 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memItemLeft" align="right" valign="top"><a id="a14d22d5d95d760f58540bda3b55835d0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ReadValuesIntoGUI</b> (size_t index, PropertyControl *GUI, const ValueType &amp;instance, <a class="el" href="class_az_tools_framework_1_1_instance_data_node.html">InstanceDataNode</a> *node) override=0</td></tr>
+<tr class="separator:a14d22d5d95d760f58540bda3b55835d0 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2abd1f526f998d39dfe83d12e2558288 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memItemLeft" align="right" valign="top"><a id="a2abd1f526f998d39dfe83d12e2558288"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFirstInTabOrder</b> (PropertyControl *widget) override</td></tr>
+<tr class="separator:a2abd1f526f998d39dfe83d12e2558288 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab890f5ce11e54201293c83dab660e8e8 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memItemLeft" align="right" valign="top"><a id="ab890f5ce11e54201293c83dab660e8e8"></a>
+QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastInTabOrder</b> (PropertyControl *widget) override</td></tr>
+<tr class="separator:ab890f5ce11e54201293c83dab660e8e8 inherit pub_methods_class_az_tools_framework_1_1_property_handler"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -113,7 +119,7 @@ class AzToolsFramework::IntWidgetHandler&lt; ValueType, PropertyControl, Handler
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:28:37 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:04 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -8,7 +8,7 @@ toc: true
 
 This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here and in the video will guide you through the following steps:
 
-* Configure the **O3DE Project Manager** engine settings.
+* Configure the **Project Manager** engine settings.
 * Create a new O3DE project.
 * Build the O3DE project.
 
@@ -20,16 +20,12 @@ At the end of the tutorial, you'll have a new O3DE project based on the default 
 
 The following instructions assume that you have:
 
-* O3DE installed or built as a pre-installed SDK engine on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
+* O3DE installed or built as an [SDK engine](/docs/user-guide/appendix/glossary#sdk-engine) on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
 * Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
-If you set up O3DE from GitHub and chose the [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) build type, we recommend that you create your project using the command line interface (CLI). For more information, refer to [Creating Projects Using the CLI](../creating-projects-using-cli).
+If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/appendix/glossary#source-engine) build type, we recommend that you create your project using the command line interface (CLI). For more information, refer to [Creating Projects Using the CLI](../creating-projects-using-cli).
 {{< /note >}}
-
-## Launch Project Manager
-
-You can find project directories either in the same directory as the O3DE root directory or outside of this directory. In this documentation, we refer to the latter as "external projects".
 
 This tutorial uses the following project name and directories in the examples:
 
@@ -37,12 +33,14 @@ This tutorial uses the following project name and directories in the examples:
 * New project name and location: `C:\o3de-projects\MyProject`
 * Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
 
+## Launch Project Manager
+
 1. Open a file browser or command line window on your computer and navigate to your O3DE engine directory. Locate and launch the O3DE **Project Manager** application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/Windows/profile`.
 
     ![Launch o3de.exe from <INSTALL_DIRECTORY>/bin/profile](/images/welcome-guide/project-manager-location.png)
 
     {{< important >}}
-If you built the engine from source using the `INSTALL` target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile`.
+If you built an SDK engine from source using the `INSTALL` target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile`.
     {{< /important >}}
 
 ## Configure the engine settings

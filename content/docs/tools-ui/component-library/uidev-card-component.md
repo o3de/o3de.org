@@ -27,11 +27,14 @@ Cards allow for a certain amount of customization. The basic layout of a card in
 
 1.  **Card icon**
 
-   (Optional) Cards can have their own unique icon related to their purpose. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/).
-**Note**
+    (Optional) Cards can have their own unique icon related to their purpose. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/).
+   
+    {{< note >}}
 Two icons are required for new components:
-A 16 x 16 SVG with a background box for the perspective window.
-An SVG for everywhere else in the editor, without a background box.
+
++ A 16 x 16 SVG with a background box for the perspective window.
++ An SVG for everywhere else in the editor, without a background box.
+{{< /note >}}
 
 1.  **Card name**
 
@@ -47,7 +50,7 @@ An SVG for everywhere else in the editor, without a background box.
 
 1.  **Card content widget**
 
-   This area contains the content widget for the card. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component.md) component, but cards can hold any widget.
+   This area contains the content widget for the card. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component/) component, but cards can hold any widget.
 
 1.  **Advanced options**
 
@@ -160,8 +163,9 @@ card->header()->setContentModified(true);
 
 Fully disable the card, including header bar icons and child widgets.
 
-**Note**
+{{< note >}}
 If you want the card content to be disabled, but allow users to still use the help button and context menu in the header bar, use the [Mock Disabled](#card-mock-disabled) state.
+{{< /note >}}
 
  **Example**
 
@@ -192,8 +196,9 @@ card->mockDisabledState(true);
 
 Set a warning state on the card header.
 
-**Note**
+{{< note >}}
 You can independently set the disabled state and warning state.
+{{< /note >}}
 
  **Example**
 
@@ -213,8 +218,9 @@ Customize the notification with the following:
 + (Optional) Action button
 + (Optional) Custom widget
 
-**Note**
+{{< note >}}
 In addition to buttons, you can use `addFeature(QWidget*)` to add a custom widget to the warning notification.
+{{< /note >}}
 
  **Example**
 
@@ -242,4 +248,4 @@ For details on the **card** API, see the following topics in the [O3DE UI Extens
 ## Related links<a name="card-related-links"></a>
 
 For additional information related to the **card** component, see the following topics:
-+  [Reflected Property Editor](uidev-reflected-property-editor-component.md)
++  [Reflected Property Editor](uidev-reflected-property-editor-component/)

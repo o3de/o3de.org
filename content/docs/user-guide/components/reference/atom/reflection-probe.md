@@ -15,7 +15,7 @@ The **Reflection Probe** creates specular reflections in the environment around 
 
 ## Dependencies
 
-[Box Shape component](/docs/user-guide/components/reference/shape/box-shape.md)
+[Box Shape component](/docs/user-guide/components/reference/shape/box-shape/)
 
 
 ## Properties

@@ -19,7 +19,7 @@ The interface for `AzPhysics::SimulatedBody` includes various common operations 
 This functionality is also exposed via the **SimulatedBodyComponentRequestsBus**.
 
 ## Raycast
-A **Simulated Body** raycast query tests whether a line segment directed from a specified point along a specified direction intersects with the **Simulated Body** (and only that body). Only the closest hit (if any) will be returned. It is also possible to perform [PhysX Scene Queries](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries.md) which query against all the physics geometry in a scene.
+A **Simulated Body** raycast query tests whether a line segment directed from a specified point along a specified direction intersects with the **Simulated Body** (and only that body). Only the closest hit (if any) will be returned. It is also possible to perform [PhysX Scene Queries](/docs/user-guide/interactivity/physics/nvidia-physx/scene-queries/) which query against all the physics geometry in a scene.
 
 A raycast query is specified using an `AzPhysics::RayCastRequest`.
 

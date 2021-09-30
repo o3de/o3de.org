@@ -102,14 +102,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a3db957566dd61f23609da18f5d3c37b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80f1456b021308870235864bc2d503b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a80f1456b021308870235864bc2d503b7">AddDrawStateOptions</a> (DrawStateOptions options)</td></tr>
 <tr class="separator:a80f1456b021308870235864bc2d503b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af83242830e809afbe1d88eb5bf52b973"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#af83242830e809afbe1d88eb5bf52b973">SetOutputScope</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene)</td></tr>
+<tr class="separator:af83242830e809afbe1d88eb5bf52b973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6255f17bed5cd91e8fac208e6c8f7a11"><td class="memItemLeft" align="right" valign="top"><a id="a6255f17bed5cd91e8fac208e6c8f7a11"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOutputScope</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline)</td></tr>
+<tr class="separator:a6255f17bed5cd91e8fac208e6c8f7a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5890daeb6f99da1dd6a911c3e03dfe1a"><td class="memItemLeft" align="right" valign="top"><a id="a5890daeb6f99da1dd6a911c3e03dfe1a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOutputScope</b> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_raster_pass.html">RasterPass</a> *pass)</td></tr>
+<tr class="separator:a5890daeb6f99da1dd6a911c3e03dfe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa908fcd5f7301534d6416bd5b87dec55"><td class="memItemLeft" align="right" valign="top"><a id="aa908fcd5f7301534d6416bd5b87dec55"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#aa908fcd5f7301534d6416bd5b87dec55">EndInit</a> ()</td></tr>
 <tr class="memdesc:aa908fcd5f7301534d6416bd5b87dec55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize and validate initialization. Any initialization functions should be called before EndInit is called. <br /></td></tr>
 <tr class="separator:aa908fcd5f7301534d6416bd5b87dec55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a66a130a7d87b5675a12c6e8bbc7ad1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a0a66a130a7d87b5675a12c6e8bbc7ad1">SetScene</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *scene)</td></tr>
-<tr class="separator:a0a66a130a7d87b5675a12c6e8bbc7ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa079c9ab5b18eee5e99af0a914e6ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#afa079c9ab5b18eee5e99af0a914e6ce7">SetRenderPipeline</a> (<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *pipeline)</td></tr>
-<tr class="separator:afa079c9ab5b18eee5e99af0a914e6ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd1406dc7074b5201f6bbd118bbed23"><td class="memItemLeft" align="right" valign="top"><a id="a3bd1406dc7074b5201f6bbd118bbed23"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a3bd1406dc7074b5201f6bbd118bbed23">IsReady</a> ()</td></tr>
 <tr class="memdesc:a3bd1406dc7074b5201f6bbd118bbed23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> is ready to add draw calls. <br /></td></tr>
@@ -381,33 +385,14 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
 
 </div>
 </div>
-<a id="afa079c9ab5b18eee5e99af0a914e6ce7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa079c9ab5b18eee5e99af0a914e6ce7">&#9670;&nbsp;</a></span>SetRenderPipeline()</h2>
+<a id="af83242830e809afbe1d88eb5bf52b973"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af83242830e809afbe1d88eb5bf52b973">&#9670;&nbsp;</a></span>SetOutputScope()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void AZ::RPI::DynamicDrawContext::SetRenderPipeline </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> *&#160;</td>
-          <td class="paramname"><em>pipeline</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Set up the <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> for the input <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a>. This should be called after the last frame is done and before any draw calls. </p>
-
-</div>
-</div>
-<a id="a0a66a130a7d87b5675a12c6e8bbc7ad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a66a130a7d87b5675a12c6e8bbc7ad1">&#9670;&nbsp;</a></span>SetScene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::RPI::DynamicDrawContext::SetScene </td>
+          <td class="memname">void AZ::RPI::DynamicDrawContext::SetOutputScope </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a> *&#160;</td>
           <td class="paramname"><em>scene</em></td><td>)</td>
@@ -415,7 +400,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set up the <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> for the input <a class="el" href="class_a_z_1_1_r_p_i_1_1_scene.html">Scene</a>. This should be called after the last frame is done and before any draw calls. </p>
+<p>Call any one of these functions to decide which scope this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> may draw to. One of the function has to be called once before <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#aa908fcd5f7301534d6416bd5b87dec55" title="Finalize and validate initialization. Any initialization functions should be called before EndInit is...">EndInit()</a> is called. After <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> is initialized, the output scope can be changed. But it has to be called after existing draw calls are submitted. @Param scene Draw calls made with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> will be submit to this scene @Param pipeline Draw calls made with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> will be submit to this render pipeline @Param pass Draw calls made with this <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html">DynamicDrawContext</a> will only be submit to this pass </p>
 
 </div>
 </div>
@@ -558,7 +543,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicDrawSystem</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 13 2021 13:29:21 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 17 2021 13:56:55 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

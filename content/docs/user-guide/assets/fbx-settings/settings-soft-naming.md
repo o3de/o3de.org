@@ -16,11 +16,11 @@ O3DE provides soft naming conventions as a convenience for content creators to a
 + [Configuring soft naming conventions](#configuring-soft-naming-conventions)
 + [Moving FBX files between projects](#moving-fbx-files-between-project)
 
-**Note**
+{{< note >}}
 The Scene Processing gem is required to use **FBX Settings**. This gem is enabled by default.
+{{< /note >}}
 
 The following table lists current soft naming conventions and the actions that are applied.
-
 
 **Default soft naming conventions**
 

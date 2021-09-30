@@ -18,11 +18,11 @@ The AWS GameLift Gem provides a sample CDK application that can be used to model
 To deploy the CDK application, you must have the following:
 
 - [AWS CLI](https://aws.amazon.com/cli/) and [AWS Cloud Development Kit](https://aws.amazon.com/cdk/) (CDK) installed on your local machine. 
-- Your AWS credentials set up. For instructions on setting up AWS credentials, refer to [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials.md).
+- Your AWS credentials set up. For instructions on setting up AWS credentials, refer to [Configuring AWS Credentials for O3DE](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
 ## Setup
 
-To learn how to set up a virtual environment and available environment variables, refer to the AWS GameLift Gem's README located at `/Gems/AWSGameLift/cdk/README.md`.
+To learn how to set up a virtual environment and available environment variables, refer to the AWS GameLift Gem's README located at `/Gems/AWSGameLift/cdk/README/`.
 
 ## Prepare a server package
 

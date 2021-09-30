@@ -55,13 +55,13 @@ This mapping file has a single mapping: **MyKey**, which is a Lambda function ca
 
 ## Generating a resource mappings file
 
-The mapping files have a well-defined [JSON format](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-schema.md). They can be generated using custom tools or by hand. However, the easiest way to generate or edit these files is by using the visual [resource mapping tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) provided with O3DE.
+The mapping files have a well-defined [JSON format](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-schema/). They can be generated using custom tools or by hand. However, the easiest way to generate or edit these files is by using the visual [resource mapping tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool/) provided with O3DE.
 
 All mapping files should be saved into the project's `Config` directory.
 
 ## Using resource mappings
 
-Define the resource mapping file to use on load in the `ResourceMappingConfigFileName` setting in the `awscoreconfiguration.setreg` file, located in the project's `Registry` directory. See [Project Settings](./getting-started.md#project-settings) for more information about this file. The AWS Core Gem loads the defined mapping file on initialization and supports access to the mappings.
+Define the resource mapping file to use on load in the `ResourceMappingConfigFileName` setting in the `awscoreconfiguration.setreg` file, located in the project's `Registry` directory. See [Project Settings](./getting-started/#project-settings) for more information about this file. The AWS Core Gem loads the defined mapping file on initialization and supports access to the mappings.
 
 Use the request bus (`AWSResourceMappingRequestBus`) to interact with a configured resource mapping file. See [AWSResourceMappingRequests](https://o3de.org/docs/api/gems/awscore/class_a_w_s_core_1_1_a_w_s_resource_mapping_requests.html) for the class API reference for the bus.
 

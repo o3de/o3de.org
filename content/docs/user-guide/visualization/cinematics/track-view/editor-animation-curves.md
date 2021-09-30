@@ -14,8 +14,9 @@ The **Curve Editor** displays animations as function curves. Each track's curves
 
 1. Select a keyframe in the timeline to view it in the **Curve Editor**.
 
-**Note**
+    {{< note >}}
 You can have the Track View and **Curve Editor** open simultaneously if you prefer to access both tools.
+{{< /note >}}
 
 A curve has the following three parts:
 

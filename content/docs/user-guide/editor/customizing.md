@@ -6,8 +6,9 @@ title: Customizing O3DE Editor
 
 You can customize your workspace by adjusting how the windows and tools are docked, customizing which toolbars and menus display, and updating the global editor settings.
 
-**Note**
+{{< note >}}
 To change the size setting for the toolbar icon, open the `Editor.cfg` file and enter a value for the `ed_toolbarIconSize` parameter. By default, the toolbar icon size is set to `0` (32 pixels).
+{{< /note >}}
 
 ## Docking Windows and Toolbars 
 
@@ -48,9 +49,11 @@ You can also give toolbars and menus your own personal touch.
 1.  Right-click the top toolbar and choose **Customize**.
 
 1. In the **Customize** window, for **Toolbars**, create, rename, and delete any custom toolbars and menus, or reset them to the default settings.
+
 ![Toolbars tab in the Customize window](/images/user-guide/editor-customizing-toolbars.png)
 
 1. In the **Commands** tab, drag and drop menu commands to any menu category.
+
 ![Commands tab in the Customize window](/images/user-guide/editor-customizing-commands.png)
 
 ## Changing Preferences 
@@ -59,6 +62,7 @@ You can change the default settings to customize the look and functionality of t
 
 **To customize the look and features of O3DE Editor**
 + In O3DE Editor, choose **Edit**, **Editor Settings**, **Global Preferences**.
+
 ![General Settings tab in the Preferences window](/images/user-guide/editor-preferences.png)
 
 ### General Settings 

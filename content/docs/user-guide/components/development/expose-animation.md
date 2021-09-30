@@ -131,7 +131,8 @@ The following example assumes that a custom component called `ImaginaryTargetCom
    ```
 
    **Track View** then uses a color track for the property, as the following image shows.
-![Color picker in Track View](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
+
+   ![Color picker in Track View](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
 
    Other units can be found in the file `Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`. These units are the following.
 
