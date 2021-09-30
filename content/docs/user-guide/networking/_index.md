@@ -22,6 +22,6 @@ For a quick introduction to the O3DE network layer and Multiplayer Gem, watch th
 
 | Topic | Description |
 |---|---|
-| [Az::Networking framework API reference](/docs/api/frameworks/aznetworking/) | The complete C++ API reference for the AzNetworking framework. |
-| [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer) | The O3DE Multiplayer Gem offers code extensions and components to synchronize O3DE components and entities across a network, giving you tools to make a multiplayer game. |
+| [Az::Networking framework API reference](/docs/api/frameworks/aznetworking/annotated.html) | The complete C++ API reference for the AzNetworking framework. |
+| [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/) | The O3DE Multiplayer Gem offers code extensions and components to synchronize O3DE components and entities across a network, giving you tools to make a multiplayer game. |
 | [Multiplayer Compression Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer-compression) | An example Gem showing how to implement network compression. |
