@@ -24,3 +24,9 @@ To enable the Terrain Gem, do the following:
 
 1. Use **O3DE Project Manager** or the command line to add the Terrain Gem to your project.
 2. Build your project using Project Manager, Visual Studio, or CMake.
+
+## Components
+
+| Component | Description | 
+| - | - |
+| [Terrain Surface Gradient List](/docs/user-guide/components/reference/terrain/terrain_surface_gradient_list.md) | Allows you to define mappings between gradients and a surface types on a terrain layer. |
