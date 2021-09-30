@@ -16,7 +16,7 @@ Minimum hardware requirements for development include the following:
 + 8 GB RAM
 + DirectX 12 or Vulkan-compatible video card with 2 GB VRAM minimum
   + 4 GB VRAM recommended
-  + NVIDIA GeForce GTX 1060 or better, driver version 465.89 or later recommended
+  + NVIDIA GeForce GTX 1060 or better, driver version 471.11 or later recommended
   + AMD Radeon Pro 560 or better
   + Intel HD 630 or better
 + 40 - 100 GB of free disk space
