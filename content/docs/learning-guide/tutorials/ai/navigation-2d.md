@@ -100,7 +100,7 @@ Navmeshes can be global, meaning they are available in all levels in the project
 
 1. Activate `Basic Debug Draw` in the drop-down of the Kythera Toolbar. This is the first drop-down in the toolbar, showing  `NavMesh Dbg off` by default.
 
-1. Choose the **Generate navmesh** button (![Generate navemsh icon](/images/user-guide/gems/kythera-ai/toolbar-generate-navmesh.png)) in the Kythera AI Toolbar.
+1. Choose the **Generate navmesh** button (![Generate navmesh icon](/images/user-guide/gems/kythera-ai/toolbar-generate-navmesh.png)) in the Kythera AI Toolbar.
 
 1. Create a new entity called `Agent`. This will be the AI character.
 
