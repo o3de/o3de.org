@@ -25,10 +25,10 @@ In general you can use more recent versions of Wwise than specified above, but s
 
 1. (Recommended) Set the CMake cache variable `LY_WWISE_INSTALL_PATH` to the path where you installed Wwise. You can use `cmake-gui` to set this variable, or you can set it when you run the `cmake` build configuration command. By using this cache variable, CMake project regeneration will automatically be triggered if the variable is updated in the future.
 
-    You can use the following CMake build configuration command to set `LY_WWISE_INSTALL_PATH` from your source engine or project directory.
+    You can use the following CMake build configuration command to set `LY_WWISE_INSTALL_PATH` from your project directory.
 
     ```cmd
-    cmake configure -S . -B /build/<platform> -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<o3de-packages> -DLY_WWISE_INSTALL_PATH=<wwise-installation>
+    cmake configure -B build/<platform> -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<o3de-packages> -DLY_WWISE_INSTALL_PATH=<wwise-installation>
     ```
 
 1. Build your project using Project Manager, Visual Studio, or CMake.
