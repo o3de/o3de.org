@@ -1,7 +1,7 @@
 ---
 linktitle: Best Practices
 title: Script Events Best Practices
-description: Learn best practices when using script events in Open 3D Engine.
+description: Learn best practices when using script events in Open 3D Engine (O3DE).
 weight: 400
 ---
 
@@ -17,10 +17,10 @@ To ensure that all entities that need to listen for and handle a given script ev
 
 ## Be aware of script event asset versioning
 
-Because script events are user-created assets, problems can occur when an asset that is referenced in existing scripts or Script Canvas graphs changes.
+Because script events are user-created assets, problems can occur when there are changes to an asset that is referenced in existing scripts or Script Canvas graphs.
 
 {{< note >}}
-Script Canvas provides script event version validation. When a script event asset is modified, Script Canvas updates the script event nodes that reference it. If you open a graph that has a script event that has been modified, the graph is marked as modified. To update the script event nodes to their latest versions, save the graph.
+Script Canvas provides script event version validation. When a script event asset is modified, Script Canvas updates the script event nodes that reference it. If you open a graph that has a modified script event, the graph is marked as modified. To update the script event nodes to their latest versions, save the graph.
 {{< /note >}}
 
 ## Use script events instead of the Gameplay Notification Bus system

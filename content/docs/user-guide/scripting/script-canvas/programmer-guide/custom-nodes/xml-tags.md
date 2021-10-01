@@ -1,7 +1,7 @@
 ---
 linktitle: XML Tags Reference
 title: Script Canvas XML Tags Reference
-description: A reference for the XML tags used by AZ Code Generator in Script Canvas nodes in Open 3D Engine.
+description: A reference for the XML tags used by AZ Code Generator in Script Canvas nodes in Open 3D Engine (O3DE).
 weight: 100
 ---
 
@@ -49,7 +49,7 @@ After you have declared the node, the next step is to generate the node's topolo
 | ScriptCanvas_In | Provides a named Input execution slot to the node. |
 | ScriptCanvas_Out | Provides a named Output execution slot to the node. |
 | ScriptCanvas_Property | This tag must precede a member variable in the class that you want to expose to Script Canvas for editing and scripting. By default, the property is exposed with an Input and Output slot. However, you can use the Input or Output attributes to expose only one or the other. |
-| ScriptCanvas_PropertyWithDefaults | Like ScriptCanvas\_Property, but specifies default values. |
+| ScriptCanvas_PropertyWithDefaults | Like ScriptCanvas_Property, but specifies default values. |
 | Property | Reflects a property to the serialization context that does not need to be an editable property or an input property. |
 | EditProperty | Reflects a property to the serialization context and to the EditContext with EditContext attribute support. |
 

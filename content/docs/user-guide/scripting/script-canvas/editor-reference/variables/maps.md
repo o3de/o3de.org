@@ -1,6 +1,6 @@
 ---
 title: Maps
-description: Learn how to use key-value pair maps in Open 3D Engine's Script Canvas.
+description: Learn how to use key-value pair maps in the Open 3D Engine (O3DE) Script Canvas.
 weight: 200
 ---
 
@@ -11,11 +11,11 @@ Maps in Script Canvas are containers of key-value pairs. In **Variable Manager**
 **To create a map variable**
 
 1. In the **Variable Manager**, do one of the following:
-    * Choose **Create Variable**, and then click **Map**.
+    * Choose **Create Variable**, and then choose **Map**.
 
     or
 
-    * In the **Variable Type** search box, type **Map**, and then click **Map**.
+    * In the **Variable Type** search box, type **Map**, and then choose **Map**.
 
     ![Creating a map variable in Script Canvas.](/images/user-guide/scripting/script-canvas/variable-map-containers-2.png)
 
@@ -27,7 +27,7 @@ Maps in Script Canvas are containers of key-value pairs. In **Variable Manager**
     * For **Container Type**, use **Map**.
     * For **Key**, choose a data type for the key.
     * For **Value**, choose a data type for the value.
-    * (Optional) To pin the map to the list of variables in the **Variable Manager**, select **Pin To Variable List**. Then, when you click **Create Variable**, the map appears in the list as **Map<_`key_data_type`_,_`value_data_type`_>**. This is useful when you reuse the same key pair combination frequently.
+    * (Optional) To pin the map to the list of variables in the **Variable Manager**, select **Pin To Variable List**. Then, when you choose **Create Variable**, the map appears in the list as **Map<_`key_data_type`_,_`value_data_type`_>**. This is useful when you reuse the same key pair combination frequently.
 
     ![A map variable pinned to the variable list in the Variable Manager.](/images/user-guide/scripting/script-canvas/variable-map-containers-4.png)
 

@@ -5,7 +5,7 @@ description: Learn about each Script Canvas menu option and tool in the Editor r
 weight: 200
 ---
 
-The Script Canvas editor provides a visual scripting environment for creating graphs and reusable script functions. In the following topics, learn more about each menu option and editor tool, as well as valuable keyboard and mouse shortcuts to increase your productivity.
+The Script Canvas editor provides a visual scripting environment for creating graphs and reusable script functions. In the following topics, learn more about each menu option and editor tool, and also valuable keyboard and mouse shortcuts to increase your productivity.
 
 | Topics | Description |
 | --- | --- |

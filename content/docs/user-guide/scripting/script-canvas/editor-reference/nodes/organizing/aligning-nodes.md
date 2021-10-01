@@ -16,9 +16,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
 **To align all nodes in a selection to the topmost node**
 + Use one of the following methods:
-  + Click **Top Align** (![Top align](/images/user-guide/scripting/script-canvas/nodes-aligning-top.png)).
+  + Choose **Top Align** (![Top align](/images/user-guide/scripting/script-canvas/nodes-aligning-top.png)).
   + Press **Shift + Up Arrow**.
-  + Right-click the graph, and choose **Align**, **Align top**.
+  + **Right-click** the graph, and choose **Align**, **Align top**.
 
     The following animated images show the first two methods.
 
@@ -28,9 +28,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
 **To align all nodes in a selection to the bottommost node**
 + Use one of the following methods:
-  + Click **Bottom Align** ( ![Bottom align](/images/user-guide/scripting/script-canvas/nodes-aligning-bottom.png)).
+  + Choose **Bottom Align** ( ![Bottom align](/images/user-guide/scripting/script-canvas/nodes-aligning-bottom.png)).
   + Press **Shift + Down Arrow**.
-  + Right-click the graph, and choose **Align**, **Align bottom**.
+  + **Right-click** the graph, and choose **Align**, **Align bottom**.
 
     The following animated images show the first two methods.
 
@@ -40,9 +40,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
 **To align all nodes in a selection to the leftmost node**
 + Use one of the following methods:
-  + Click **Left Align** ( ![Left align](/images/user-guide/scripting/script-canvas/nodes-aligning-left.png)).
+  + Choose **Left Align** ( ![Left align](/images/user-guide/scripting/script-canvas/nodes-aligning-left.png)).
   + Press **Shift + Left Arrow**.
-  + Right-click the graph, and choose **Align**, **Align left**.
+  + **Right-click** the graph, and choose **Align**, **Align left**.
 
     The following animated images show the first two methods.
 
@@ -52,9 +52,9 @@ To align selected nodes in a Script Canvas graph, you can use the context menu, 
 
 **To align all nodes in a selection to the rightmost node**
 + Use one of the following methods:
-  + Click **Right Align** ( ![Right align](/images/user-guide/scripting/script-canvas/nodes-aligning-right.png)).
+  + Choose **Right Align** ( ![Right align](/images/user-guide/scripting/script-canvas/nodes-aligning-right.png)).
   + Press **Shift + Right Arrow**.
-  + Right-click the graph, and choose **Align**, **Align right**.
+  + **Right-click** the graph, and choose **Align**, **Align right**.
 
     The following animated images show the first two methods.
 

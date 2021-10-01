@@ -1,6 +1,6 @@
 ---
 title: Script Events
-description: Use script events to enable entities to communicate with each other in Open 3D Engine.
+description: Use script events to enable entities to communicate with each other in Open 3D Engine (O3DE).
 weight: 200
 ---
 

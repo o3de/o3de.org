@@ -1,7 +1,7 @@
 ---
 linktitle: Variable References
 title: Creating Variable References in Script Canvas Nodes
-description: Create variable references on Open 3D Engine Script Canvas nodes as a shortcut to getting or setting a variable's value.
+description: Create variable references on Open 3D Engine (O3DE) Script Canvas nodes as a shortcut to getting or setting a variable's value.
 weight: 300
 ---
 
@@ -18,7 +18,7 @@ weight: 300
     An output reference performs the same as a **Set** variable node and assigns the output of that slot to the specified variable at the time of node execution.
 
     {{< note >}}
-Changing the name of the variable is still supported when you have variable references to that variable. However, you might notice that the display of the new variable name is not immediately reflected in nodes containing the reference. To refresh the display of the node's variable name references, move over the node with your pointer or close and re-open Script Canvas.
+You can change the name of the variable when you have variable references to that variable. However, you might notice that the display of the new variable name is not immediately reflected in nodes containing the reference. To refresh the display of the node's variable name references, move over the node with your pointer, or close and reopen Script Canvas.
     {{< /note >}}
 
 **To select a different variable reference**
@@ -34,8 +34,8 @@ Changing the name of the variable is still supported when you have variable refe
 Do one of the following:
 
 * Double-click on the data pin name to toggle between a reference and a value.
-* Right-click on the data pin and choose **Convert to Value** to restore that data pin as a value.
-* Right-click on the data pin and choose **Convert to Variable Node** to create a **Get** variable node from a data input pin, or a **Set** variable node from a data output pin.
+* **Right-click** the data pin and choose **Convert to Value** to restore that data pin as a value.
+* **Right-click** the data pin and choose **Convert to Variable Node** to create a **Get** variable node from a data input pin, or a **Set** variable node from a data output pin.
 
     ![Convert a variable reference back to a value or to a variable node by right-clicking on the data pin and choosing from the Convert options.](/images/user-guide/scripting/script-canvas/variable-reference-convert-back.gif)
 
@@ -43,27 +43,27 @@ Do one of the following:
 
 1. Do one of the following:
    * Double-click on the data pin name to toggle between a value and a reference.
-   * Right-click on the data pin and choose **Convert to Reference**.
+   * **Right-click** the data pin and choose **Convert to Reference**.
 
     ![Convert a data pin to use a variable reference by right-clicking on the pin and choosing Convert to Reference.](/images/user-guide/scripting/script-canvas/variable-reference-convert-pin.png)
 
 1. Use the gear button next to the variable name field that appears and select a variable to reference.
 
     {{< note >}}
-A quicker alternative for creating a variable reference is to drag a variable from the **Variable Manager** onto the data pin.
+Another way to create a variable reference is to drag a variable from the **Variable Manager** onto the data pin.
     {{< /note >}}
 
 **To convert a variable node into a variable reference**
 
 Do one of the following:
 
-* Right-click on a **Get** variable node and choose **Convert to References**. This converts the node into a variable reference on the node following it.
+* **Right-click** a **Get** variable node and choose **Convert to References**. This converts the node into a variable reference on the node following it.
 
     {{< note >}}
 If the data output from the **Get** variable node is not connected to another node, the variable node is deleted.
     {{< /note >}}
 
-* Right-click on a **Set** variable node and choose **Convert to References**. This converts the node into a variable reference on the node preceding it.
+* **Right-click** a **Set** variable node and choose **Convert to References**. This converts the node into a variable reference on the node preceding it.
 
     {{< note >}}
 If the data input to the **Set** variable node is not connected to another node, the variable node is deleted.

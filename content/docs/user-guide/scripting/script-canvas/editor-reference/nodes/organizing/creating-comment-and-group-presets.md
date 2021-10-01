@@ -1,7 +1,7 @@
 ---
 linktitle: Creating Comment and Group Presets
 title: Creating Comment and Group Presets in Script Canvas
-description: Save customized node comments and groups as presets for quick reuse in Open 3D Engine's Script Canvas visual scripting editor.
+description: Save customized node comments and groups as presets for quick reuse in the Open 3D Engine (O3DE) Script Canvas visual scripting editor.
 weight: 400
 ---
 
@@ -37,7 +37,7 @@ You can create a preset in the Script Canvas editor by using an existing node gr
 
 You can define a preset as the default for either a node group or a comment. The default group or comment is created when you perform one of the following actions:
 
-+ On the Script Canvas editor toolbar, click the new comment ![New comment icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-5.png) or new group ![New group icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-6.png) icon.
++ On the Script Canvas editor toolbar, choose the new comment ![New comment icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-5.png) or new group ![New group icon](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-6.png) icon.
 + Press **Ctrl+Alt+M** to create a comment.
 + Press **Ctrl+Shift+G** to create a group.
 
@@ -65,7 +65,7 @@ To remove presets, use the Script Canvas Presets Editor.
 
     ![Using the Presets Editor in Script Canvas to remove a comment preset.](/images/user-guide/scripting/script-canvas/nodes-comment-and-group-presets-8.png)
 
-1. Click **Remove**, and then click **OK**.
+1. Choose **Remove**, and then choose **OK**.
 
 ## Notes on presets
 

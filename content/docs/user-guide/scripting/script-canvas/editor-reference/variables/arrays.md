@@ -1,6 +1,6 @@
 ---
 title: Arrays
-description: Learn how to use array variable types in Open 3D Engine's Script Canvas.
+description: Learn how to use array variable types in the Open 3D Engine (O3DE) Script Canvas.
 weight: 100
 ---
 
@@ -9,11 +9,11 @@ Arrays provide a dynamic continuous area of memory that can hold storage of a gi
 **To create an array variable**
 
 1. In the **Variable Manager**, do one of the following:
-    * Choose **Create Variable**, and then click **Array**.
+    * Choose **Create Variable**, and then choose **Array**.
 
     or
 
-    * In the **Variable Type** search box, type **Array**, and then click **Array**.
+    * In the **Variable Type** search box, type **Array**, and then choose **Array**.
 
     ![Creating an array variable in Script Canvas.](/images/user-guide/scripting/script-canvas/variable-array-containers-1.png)
 
@@ -24,7 +24,7 @@ Arrays provide a dynamic continuous area of memory that can hold storage of a gi
     * For **Variable Name**, enter the name for your array variable.
     * For **Container Type**, use **Array**.
     * For **Type**, choose the data type for the array.
-    * (Optional) To pin the array to the list of variables in the **Variable Manager**, select **Pin To Variable List**. Then, when you click **Create Variable**, the array appears in the list as **Array<_`data_type`_>**. This is useful when you reuse the same type frequently.
+    * (Optional) To pin the array to the list of variables in the **Variable Manager**, select **Pin To Variable List**. Then, when you choose **Create Variable**, the array appears in the list as **Array<_`data_type`_>**. This is useful when you reuse the same type frequently.
 
     ![Array variable pinned to the variable list in Variable Manager.](/images/user-guide/scripting/script-canvas/variable-array-containers-3.png)
 
@@ -71,7 +71,7 @@ When you connect the **Array\<String\>** pin to the **Source** pin on the **Add 
 
 * The **Source** pin changes to the `string` type.
 * The **Add Element at End** node box expands to include a **String** text box where you can enter a string value.
-* The pin icon and line colors change to the color of the data type that you are using (in the case of this example, blue).
+* The pin icon and line colors change to the color of the data type that you are using. In the case of this example, the color is blue.
 * A **Container** pin for chaining output appears on the target node.
 
 ![Example of automatic data pin typing.](/images/user-guide/scripting/script-canvas/variable-array-containers-8.png)

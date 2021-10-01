@@ -1,7 +1,7 @@
 ---
 linktitle: Grouping Nodes
 title: Grouping Nodes in Script Canvas
-description: Group Script Canvas nodes for improved manageability of your graphs in Open 3D Engine.
+description: Group Script Canvas nodes for improved manageability of your graphs in Open 3D Engine (O3DE).
 weight: 300
 ---
 

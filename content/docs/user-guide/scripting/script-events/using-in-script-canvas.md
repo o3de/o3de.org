@@ -1,6 +1,6 @@
 ---
 title: Using Script Events in Script Canvas
-description: Learn how to use script events with Script Canvas in Open 3D Engine.
+description: Learn how to use script events with Script Canvas in Open 3D Engine (O3DE).
 weight: 200
 ---
 

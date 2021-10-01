@@ -1,6 +1,6 @@
 ---
 title: Using Script Events in Lua
-description: Learn how to use script events with Lua in Open 3D Engine.
+description: Learn how to use script events with Lua in Open 3D Engine (O3DE).
 weight: 300
 ---
 

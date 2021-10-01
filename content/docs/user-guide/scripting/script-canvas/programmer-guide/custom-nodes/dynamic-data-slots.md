@@ -1,7 +1,7 @@
 ---
 linktitle: Dynamic Data Slots
 title: Dynamic Data Slots in Script Canvas
-description: Use dynamic data slots to enable a single node to process a variety of data types in Script Canvas, Open 3D Engine's visual scripting system.
+description: Use dynamic data slots to enable a single node to process a variety of data types in Script Canvas, which is the visual scripting system in Open 3D Engine (O3DE).
 weight: 200
 ---
 

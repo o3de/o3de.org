@@ -1,7 +1,7 @@
 ---
 linktitle: Editor Shortcuts
 title: Script Canvas Editor Shortcuts
-description: Learn keyboard and mouse shortcuts for the Script Canvas editor in Open 3D Engine.
+description: Learn keyboard and mouse shortcuts for the Script Canvas editor in Open 3D Engine (O3DE).
 weight: 100
 ---
 

@@ -74,7 +74,7 @@ The **Node Palette** contains a searchable list of nodes. By default, the palett
    + Press **Ctrl+Shift+L**.
 
    {{< note >}}
-If you have an existing script open, you can right-click the canvas to open a context menu.
+If you have an existing script open, you can **right-click** the canvas to open a context menu.
    {{< /note >}}
 
 ## Node Inspector
@@ -83,7 +83,7 @@ The **Node Inspector** shows the properties of the node. You can edit each prope
 
 **To display the Node Inspector**
 
-1. From O3DE Editor, choose **Tools**, **Script Canvas**.
+1. In **O3DE Editor**, choose **Tools**, **Script Canvas**.
 
 1. Do one of the following:
    + Choose **Tools**, **Node Inspector**.

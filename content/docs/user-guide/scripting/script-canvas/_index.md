@@ -1,7 +1,7 @@
 ---
 linktitle: Script Canvas
 title: Creating Gameplay and Other Behaviors with Script Canvas
-description: Get started with Open 3D Engine's Script Canvas, a visual scripting environment to implement game logic and other behaviors without needing to write code.
+description: Get started with the Open 3D Engine (O3DE) Script Canvas, a visual scripting environment to implement game logic and other behaviors without needing to write code.
 weight: 50
 ---
 
@@ -14,8 +14,8 @@ To enable Script Canvas for O3DE, you must enable the [Script Canvas](/docs/user
 | Topics | Description |
 | --- | --- |
 | [Get Started Guide](get-started/) | Learn the basic concepts of Script Canvas and the layout of the Script Canvas Editor. |
-| [Editor Reference](editor-reference/) | A reference of Script Canvas Editor features, menu options, and tools. |
+| [Editor Reference](editor-reference/) | Get a reference of Script Canvas Editor features, menu options, and tools. |
 | [Programmer Guide](programmer-guide/) | Learn how to expose runtime code in Script Canvas using the behavior context, and how to create custom nodes. |
 | [Best Practices](best-practices) | Get tips on best practices for Script Canvas. |
 | [Debugging](debugging) | Learn how to use the Script Canvas Debugger. |
-| [Troubleshooting](troubleshooting) | Learn tips and techniques on troubleshooting in Script Canvas. |
+| [Troubleshooting](troubleshooting) | Get tips and techniques for troubleshooting in Script Canvas. |

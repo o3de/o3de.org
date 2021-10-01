@@ -94,11 +94,11 @@ The final function graph should look like this:
 
 1. Create entry and exit points for your function.
 
-   a. Right-click on the **Subtract** node's **In** slot and choose **Expose** from the context menu.
+   a. **Right-click** the **Subtract** node's **In** slot, and on the context menu, choose **Expose**.
 
    b. (Optional) Rename the entry point node to **In**, if you want to follow the naming convention for node input execution slots.
 
-   c. Right-click on the **Add** node's **Out** slot and choose **Expose** from the context menu.
+   c. **Right-click** the **Add** node's **Out** slot, and on the context menu, choose **Expose**. 
 
    d. (Optional) Rename the exit point node to **Out**, if you want to follow the naming convention for node output execution slots.
 

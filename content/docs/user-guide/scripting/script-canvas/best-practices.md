@@ -1,14 +1,14 @@
 ---
 linktitle: Best Practices
 title: Script Canvas Best Practices
-description: Learn about best practices when using Script Canvas in Open 3D Engine.
+description: Learn about best practices when using Script Canvas in Open 3D Engine (O3DE).
 ---
 
 Best practices for Script Canvas include using an event-driven approach and using custom nodes to simplify your graphs.
 
 ## Use an event-driven approach
 
-Script Canvas nodes are by default stateless. However, by connecting to the [tick bus](/docs/user-guide/components/development/tick), they can be configured to have a state. Engineers must manage the lifetime and performance of nodes that have a state.
+Script Canvas nodes are stateless by default. However, by connecting to the [tick bus](/docs/user-guide/components/development/tick), they can be configured to have a state. Engineers must manage the lifetime and performance of nodes that have a state.
 
 In the core Script Canvas libraries, state is used primarily to drive the execution of the graph (as with the **Delay** node). However, an event-driven paradigm is recommended because it helps reduce the complexity of authoring and executing graphs.
 
@@ -16,7 +16,7 @@ We recommend that you reflect functionality to Script Canvas through the behavio
 
 ## Use custom nodes to simplify your graphs
 
-Identify frequently used but complicated user patterns and simplify them through custom nodes and/or improved behavior context methods. Using custom nodes with EBuses can reduce the overall complexity of graphs and make graph authoring more intuitive. For information on creating custom nodes, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes).
+Identify user patterns that are frequently used, but complicated, and help simplify them through custom nodes and improved behavior context methods. Using custom nodes with EBuses can reduce the overall complexity of graphs and make graph authoring more intuitive. For information about creating custom nodes, see [Creating Custom Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/programmer-guide/custom-nodes).
 
 ## Be careful with entity activation order
 

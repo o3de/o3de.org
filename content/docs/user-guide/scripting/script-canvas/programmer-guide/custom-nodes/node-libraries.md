@@ -1,7 +1,7 @@
 ---
 linktitle: Node Libraries
 title: Script Canvas Node Libraries
-description: Learn how to create custom Script Canvas node libraries in Open 3D Engine.
+description: Learn how to create custom Script Canvas node libraries in Open 3D Engine (O3DE).
 weight: 300
 ---
 

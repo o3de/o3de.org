@@ -1,10 +1,10 @@
 ---
 title: Script Canvas and the Behavior Context
-description: Learn about the important relationship between Script Canvas and the behavior context in Open 3D Engine.
+description: Learn about the important relationship between Script Canvas and the behavior context in Open 3D Engine (O3DE).
 weight: 100
 ---
 
-You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. In addition to this topic, it is recommended that you also read the [Programmer's Guide to Component Development](/docs/user-guide/components/development/) and [Behavior Context](/docs/user-guide/components/development/behavior-context).
+You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. In addition to reading this topic, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/components/development/) and [Behavior Context](/docs/user-guide/components/development/behavior-context).
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine.
 

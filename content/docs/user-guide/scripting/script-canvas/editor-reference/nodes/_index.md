@@ -32,7 +32,7 @@ Data connections enable scripts to read and write data between nodes. Data is re
 
 ## Making connections
 
-Connections can be made only between pins of the same type. For example, logic connections can be made only between logic pins, and data connections can be made only between data pins of the same type. You can't create connections between incompatible pins, such as logic and data.
+You can make connections only between pins of the same type. For example, you make logic connections only between logic pins, and data connections only between data pins of the same type. You can't create connections between incompatible pins, such as logic and data.
 
 **To make a connection**
 
@@ -40,7 +40,7 @@ Connections can be made only between pins of the same type. For example, logic c
 
 1. To move a connection from one pin to another, drag the end of a line from one pin and drop it onto another pin.
 
-    To delete a connection, right-click and choose **Delete**. You can also press and hold **Alt**, and click the connection to delete it.
+    To delete a connection, **right-click** and choose **Delete**. You can also press and hold **Alt**, and choose the connection to delete it.
 
 ## Variable nodes
 
@@ -50,7 +50,7 @@ Variable nodes enable Script Canvas to read from or write to specific variables.
 
 ![Variable node in Script Canvas.](/images/user-guide/scripting/script-canvas/nodes-variable-2.png)
 
-Another, simpler way to read or write a variable&mdash;without the need for a separate variable node&mdash;is to use [variable references](/docs/user-guide/scripting/script-canvas/editor-reference/variables/variable-references) on a node data pin.
+Another way to read or write a variable&mdash;without the need for a separate variable node&mdash;is to use [variable references](/docs/user-guide/scripting/script-canvas/editor-reference/variables/variable-references) on a node data pin.
 
 For more information about using variables in Script Canvas, refer to [Script Canvas Variables and the Variable Manager](/docs/user-guide/scripting/script-canvas/editor-reference/variables/).
 
@@ -105,7 +105,7 @@ The following example creates a receiver node for a Light event.
 
 1. Click **Add/Remove Events**.
 
-    Because receiver nodes are usually containers for multiple events, you can click **Add/Remove Events** to view and add any of the available event receivers for a given component. In this case, the Light component exposes two events: **Turned Off** and **Turned On**.
+    Because receiver nodes are usually containers for multiple events, you can choose **Add/Remove Events** to view and add any of the available event receivers for a given component. In this case, the Light component exposes two events: **Turned Off** and **Turned On**.
 
     ![Adding an event to a receiver node in Script Canvas.](/images/user-guide/scripting/script-canvas/nodes-event-receiver-3.png)
 
@@ -119,7 +119,7 @@ The following example creates a receiver node for a Light event.
 
 #### Displaying and using connection controls
 
-All receiver nodes have connection-related pins, or controls, that are hidden by default. You can use these controls to manage when an event is connected or disconnected (connected means that the event is ready to receive events, and disconnected means that the event is not receiving events). The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error.
+All receiver nodes have connection-related pins, or controls, that are hidden by default. You can use these controls to manage when an event is connected or disconnected. Connected means that the event is ready to receive events, and disconnected means that the event is not receiving events. The connection controls can also notify you when a node successfully connects, disconnects, or experiences an error.
 
 The following example uses the Light component **Turned On** event node.
 
@@ -127,7 +127,7 @@ The following example uses the Light component **Turned On** event node.
 
 1. Ensure that **Node Inspector** is visible. In Script Canvas editor, choose **View**, **Node Inspector**, or press **Ctrl+Shift+I**.
 
-1. Click the Light **Turned On** node to select it.
+1. Choose the Light **Turned On** node to select it.
 
     ![Click to select a node in Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-event-connection-controls-1.png)
 

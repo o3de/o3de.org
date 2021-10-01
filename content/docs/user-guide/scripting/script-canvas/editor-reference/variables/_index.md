@@ -15,10 +15,10 @@ You can add variables to your Script Canvas graph to declare and initialize them
 
 1. In the **Script Canvas** editor, open your Script Canvas graph or create one.
 
-1. In the **Variable Manager**, click **Create Variable** and then choose your variable type. You can search to filter the list of variable types.
+1. In the **Variable Manager**, choose **Create Variable** and then choose your variable type. You can search to filter the list of variable types.
 
     {{< note >}}
-Common variable types are pinned to the top of the list by default. You can customize the pinned list to show the variable types that you use most often. To do so, click the box to the left of a variable type to pin or unpin it.
+Common variable types are pinned to the top of the list by default. You can customize the pinned list to show the variable types that you use most often. To do so, choose the box to the left of a variable type to pin or unpin it.
     {{< /note >}}
 
     ![Choose from variable types in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-create-variable-types.png)
@@ -56,7 +56,7 @@ You can set the default value for variables in the **Node Inspector** or the **V
 
         ![Set the variable default values in the Node Inspector.](/images/user-guide/scripting/script-canvas/node-inspector-modify-variable-values.png)
 
-    * In the **Variable Manager**, update certain variable values. These values appear in a third column and can be selected or double-clicked.
+    * In the **Variable Manager**, update certain variable values. These values appear in a third column. You can select or double-click them.
 
         ![Set the variable default values in the Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-modify-variable-values.png)
 
@@ -72,7 +72,7 @@ Do one of the following:
 
 * Drag the variable from the **Variable Manager** to the canvas, and then choose **Get `<variable name>`** or **Set `<variable name>`**.
 
-* Right-click the variable in the **Variable Manager** and choose **Get `<variable name>`** or **Set `<variable name>`**.
+* **Right-click** the variable in the **Variable Manager** and choose **Get `<variable name>`** or **Set `<variable name>`**.
 
     ![Right-click to create a get or set variable in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-create-get-set-variable.png)
 
@@ -106,6 +106,6 @@ Do one of the following:
 
 * Select the variable node in the canvas and press **Delete**.
 * Select the variable in the **Variable Manager** and press **Delete**.
-* Right-click the variable in the **Variable Manager** and choose **Delete `<variable name>`**.
+* **Right-click** the variable in the **Variable Manager** and choose **Delete `<variable name>`**.
 
     ![Delete a variable in the Script Canvas Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-delete-variable-node.png)
