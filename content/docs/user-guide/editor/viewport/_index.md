@@ -1,26 +1,27 @@
 ---
 description: ' Use the Viewport Interaction Model to interact with entities in the Open 3D Engine viewport.
   Learn about the differences between the new Viewport Interaction Model and the old interaction model. '
-linktitle: Viewport interaction model
+linktitle: Viewport Interaction Model
 title: Working with the Viewport Interaction Model
 ---
 
-The Viewport Interaction Model (VIM) allows users to interact with entities in the Open 3D Engine viewport. This feature combines free and local selection so that you can easily select, move, and modify entities in the viewport. With the Viewport Interaction Model, you can create custom reference spaces to move your entities. With custom reference spaces, you can move your selected entities in relation to the reference that you specified. The Viewport Interaction Model also unifies entity and component manipulators so that you can interact with entities and components in the same way.
+The Viewport Interaction Model (VIM) allows users to interact with entities in the Open 3D Engine viewport. The feature provides selection, translation, rotation and scale. With the Viewport Interaction Model, you can create custom reference spaces to transform your entities. With custom reference spaces, you can move your selected entities in relation to the reference that you specify. The Viewport Interaction Model also unifies entity and component manipulators so that you can interact with entities and components in the same way.
 
 The Viewport Interaction Model provides the following benefits:
+
 + Improves the ability to select your preferred entity, especially for nested hierarchies or levels that have many entities.
 + Adds keyboard and mouse actions that you can apply to your selected entities. You can freely switch between local, parent, and world space to make changes to your selected entities.
-+ Establishes an editing pattern that matches the Component Mode feature.
++ Establishes an editing pattern that matches that of Component Mode.
 
 See the following concepts for the Viewport Interaction Model:
 
 **Manipulator**
 
-With manipulators, you can edit component properties directly in the viewport instead of the **Entity Inspector**.
+With manipulators, you can edit component properties directly in the viewport instead of relying on the **Entity Inspector**.
 
 **Custom Reference Target**
 
-When you select an entity, you can specify whether to move that entity in relation to another entity.
+When you select an entity, you can specify whether to move the entity in its own reference frame, or in relation to another custom reference frame.
 
 ## Viewport Interaction Model Limitations 
 

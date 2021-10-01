@@ -9,7 +9,7 @@ To learn various aspects of Open 3D Engine's (O3DE) **Editor**, refer to the fol
 
 | Topic | Explanation |
 | - | - |
-| [Viewport interaction model](./viewport) | Learn how to work in **Perspective** in O3DE Editor with the viewport interaction model. |
+| [Viewport Interaction Model](./viewport) | Learn how to work in **Perspective** in O3DE Editor with the viewport interaction model. |
 | [Camera space](./camera-space) | Learn to use the camera space manipulator. |
 | [Console](./console) | In the O3DE Console, you can see output from commands and processes and enter commands to set options and features for your project. |
 | [Console variables (CVARs)](./console-cvars-commands) | Learn to use console commands and CVARs. |
