@@ -23,6 +23,10 @@ The behavior context for Script Canvas includes the following benefits:
 
 ## The Light component and Script Canvas
 
+{{< todo issue="https://github.com/o3de/o3de.org/issues/992" >}}
+This example is outdated. It refers to a legacy component that no longer exists.
+{{< /todo >}}
+
 So that you can better understand the relationship between the behavior context and Script Canvas, this section discusses the fairly simple Light component. The example shows how its behavior context reflection translates into Script Canvas nodes.
 
 You can use the Light component to give an entity a light. You can configure the light by setting parameters such as color, intensity, and radius. The Light component can also be turned on or off, and you can respond to these events when they occur.
@@ -98,6 +102,10 @@ Script Canvas has a node that gives you access to all the events for EBus. You c
 ![Light notification bus](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-3.png)
 
 ## Objects: The PhysicsComponent example
+
+{{< todo issue="https://github.com/o3de/o3de.org/issues/992" >}}
+This example is outdated. It refers to a legacy component that no longer exists.
+{{< /todo >}}
 
 Objects that are reflected to the behavior context are also available in Script Canvas. Objects become available in the form of variables.
 

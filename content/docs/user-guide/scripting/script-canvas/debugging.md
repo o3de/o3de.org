@@ -94,9 +94,9 @@ Currently, only a single instance of captured data can be stored. Previous data 
 
 **To examine the captured data**
 
-1. To see the Script Canvas node that corresponds to a line in the log, select the line.
+1. To see the Script Canvas node that corresponds to a line in the log, choose the line.
 
-   Each line typically shows the node's **In** signal and **Out** signal. If the **In** or **Out** signal is not present, the node is either the first or final node of a given execution line. As shown in the following image, the **Set Location Rotation** node is the final node in the execution line, so an **Out** signal is not present.
+   Each line typically shows the node's **In** signal and **Out** signal. If the **In** or **Out** signal is not present, the node is either the first or final node of a given line of logic. As shown in the following image, the **Set Location Rotation** node is the final node, so an **Out** signal is not present.
 
    ![Choosing a debugger line to show the corresponding node on a Script Canvas graph.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-12.png)
 
