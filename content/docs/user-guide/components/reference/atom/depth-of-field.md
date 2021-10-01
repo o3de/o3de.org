@@ -25,11 +25,11 @@ The **Depth of Field** component simulates the lens effects of real world camera
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Camera Entity** | A reference to an entity that contains a **Camera** component. It's required to enable depth of field and configure the properties below. | An entity reference | Empty |
+| **Camera Entity** | A reference to an entity that contains a **Camera** component. It's required to enable depth of field and configure the following properties. | An entity reference | Empty |
 | **Overrides** | A collection of properties that you can override to compute the depth of field effect. |  |  |
 | **Enable Depth of Field** | If enabled, depth of field is in effect. | Boolean | Enabled |
 | **Quality Level** | Controls the quality of blur in the out-of-focus regions. A greater value leads to a higher quality Bokeh, but more performance load. | `0` to `1` | `1` |
-| **Aperture F** | Controls the shallowness of the depth of field effect, which corresponds to the range of depth in the scene that's in-focus. Aperture F is measured by 1/F-Number. When this property is `0`, the F-Number is `256`. When it's `1`, the F-Number is `0.12`. | `0.00` to `1.00` | `0.50` |
+| **Aperture F** | Controls the shallowness of the depth of field effect, which corresponds to the range of depth in the scene that's in focus. Aperture F is measured by 1/F-Number. When this property is `0`, the F-Number is `256`. When it's `1`, the F-Number is `0.12`. | `0.00` to `1.00` | `0.50` |
 | **F Number** | (Read-only) The value that corresponds to Aperture F. | `256.00` to `0.12` |  |
 | **Focus Distance** | The distance in meters from the camera to the focused subject. This requires that Enable Auto Focus property is disabled. | -Infinite to Infinite  | `100.0` |
 | **Auto Focus** | Refer to [Auto Focus properties](#auto-focus-properties). |  |  |
