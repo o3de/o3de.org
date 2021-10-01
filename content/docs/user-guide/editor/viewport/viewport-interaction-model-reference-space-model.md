@@ -7,12 +7,12 @@ weight: 200
 You can use the Viewport Interaction Model to create reference spaces for your selected entities. This enables you to customize your selected entities in relation to a reference space.
 
 When working with reference spaces, remember the following rules:
-+ New selections always default to their parent space. This will be the world coordinate space if the entity does not have a parent.
++ New selections always default to local space.
 + Holding **Shift** aligns the manipulator to the world coordinate space.
-+ Holding **Alt** aligns the manipulator to an entity's local coordinate space.
-+ You can easily access custom spaces by moving the manipulator (press **Ctrl** and click and drag) or picking a target entity as a reference space (press **Ctrl** and **Alt** and click a target entity).
++ Holding **Alt** changes the manipulator to have _individual_ influence as opposed to _group_ influnce (the default).
++ You can easily access custom reference spaces by moving the manipulator (press and hold **Ctrl** and click and drag the manipulaotr) or picking a target entity as a reference space (press hold **Ctrl** and **Alt** and click a target entity).
 
-The Viewport Interaction Model simplifies the mental mode for you and doesn't require you to keep track manually of the last space (local or world) that you were using. You can specify a target and define that target as custom reference spaces. This new reference space model covers any arbitrary transformation.
+The Viewport Interaction Model simplifies the mental model for you and doesn't require you to keep track manually of the last space (local or world) that you were using. You can specify a target and define that target as custom reference spaces. This new reference space model covers any arbitrary transformation.
 
 ## Switching Between Local and World Space 
 
@@ -20,18 +20,13 @@ You can use the manipulator to switch between local and world space without losi
 
 **To switch between local and world space**
 
-1. In the viewport, select a child entity that has a parent. Your selection always defaults to parent space.
+1. In the viewport, select a child entity that has a parent.
 
 1. Use the manipulator to modify the entity.
 
-1. To switch to world space, press and hold **Shift**. To switch to local space, press and hold **Alt**. Use the manipulator to modify the entity.
+1. To switch to world space, press and hold **Shift**. Use the manipulator to modify the entity.
 
-{{< note >}}
-If you selected an entity that doesn't have a parent, your selection defaults to world space.
-Parent space is the transform that the parent entity has in the hierarchy. If an entity doesn't have a parent, the entity uses world space instead.
-{{< /note >}}
-
-In the following example, the entity moves in world space because the car does not have a parent. When you select the child entity (the tire), the manipulator switches to the parent space of that entity (the car).
+1. Viewport UI (W/P/L _World, Parent, Local_ in the top right of the viewport) allow you to pin a reference space.
 
 ![Switch between local and parent space in the viewport in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
 
@@ -46,6 +41,7 @@ You can adjust the manipulator independent of the entity to create a custom refe
 1. Select a manipulator mode, such as translation.
 
 1. Press and hold **Ctrl** and **Alt** and click a target entity in the viewport. This matches the manipulator to the translation or orientation of the target entity.
+
 **Example**
 
 In the following example, the excavator entity becomes a reference space for the car. When the manipulator moves the car, the car moves in relation to the reference space.
