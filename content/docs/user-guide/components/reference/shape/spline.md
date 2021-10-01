@@ -11,7 +11,7 @@ The **Spline** component creates a line that is 4 meters long, with 4 points. Th
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Base properties ##
 

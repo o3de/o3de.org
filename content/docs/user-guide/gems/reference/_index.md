@@ -55,7 +55,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Lmbr Central](./core/lmbr-central) | The Lmbr Central Gem provides required code and assets for running Open 3D Engine Editor. |
+| [O3DE Core (LmbrCentral)](./o3de-core) | The O3DE Core (LmbrCentral) Gem provides required code and assets for running Open 3D Engine Editor. |
 
 ## Debug
 

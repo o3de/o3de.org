@@ -11,7 +11,7 @@ The **Capsule Shape** component creates a transparent capsule that's oriented on
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Properties ##
 

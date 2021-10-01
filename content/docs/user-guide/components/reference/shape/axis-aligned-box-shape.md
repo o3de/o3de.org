@@ -9,7 +9,7 @@ The **Axis Aligned Box Shape** component creates a transparent box that is alway
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Properties ##
 
