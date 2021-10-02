@@ -19,12 +19,6 @@ virtual SceneQueryHitsList QuerySceneBatch(SceneHandle sceneHandle, const SceneQ
 
 The results of scene queries are described using containers of `AzPhysics::SceneQueryHit` objects.
 
-**Topics**
-+ [Raycast](#raycast)
-+ [Shapecast](#shapecast)
-+ [Overlap](#overlap)
-+ [SceSceneQueryHit](#scenequeryhit)
-
 {{< note >}}
 Scene queries can have a performance cost.
 {{< /note >}}
@@ -46,7 +40,7 @@ A raycast query is specified using an `AzPhysics::RayCastRequest`.
 | --- | --- |
 |  `m_distance`  |  Maximum distance along the ray to test for intersections.  |
 |  `m_start`  |  World space point where the ray starts.  |
-|  `m_direction`  |  Direction to cast the ray. This vector must be normalised.  |
+|  `m_direction`  |  Direction to cast the ray. This vector must be normalized.  |
 |  `m_hitFlags`  |  Flags used to request particular hit fields to be returned, or indicate which hit fields are valid in a return value.  |
 |  `m_filterCallback`  |  Custom callback function provided by the game to filter out specific objects.  |
 |  `m_reportMultipleHits`  |  Whether to return all hits along the query (up to `m_maxResults`) or only return the first hit.  |

@@ -44,7 +44,7 @@ RPI::RPISystemInterface::Get()->RegisterScene(m_scene2);
 ```
 
 {{< note >}}
- Atom's built-in feature processors are included in the Atom Gem. Their spource files (.cpp) can be found in the folder Gems/Atom/Feature/Common/Code/Source/\<feature-processor>/.
+ Atom's built-in feature processors are included in the Atom Gem. Their source files (.cpp) can be found in the folder Gems/Atom/Feature/Common/Code/Source/\<feature-processor>/.
 {{< /note >}}
 
 {{< note >}}
