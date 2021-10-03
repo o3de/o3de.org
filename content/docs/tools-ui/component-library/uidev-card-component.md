@@ -248,4 +248,4 @@ For details on the **card** API, see the following topics in the [O3DE UI Extens
 ## Related links
 
 For additional information related to the **card** component, see the following topics:
-+  [Reflected Property Editor](./uidev-reflected-property-editor-component/)
++  [Reflected Property Editor](./uidev-reflected-property-editor-component)

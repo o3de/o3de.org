@@ -8,7 +8,7 @@ toc: true
 The **browse edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries. Use the browse edit component to enable users to choose one or more values from a selection window. Typical uses include selecting a file from a directory, or one or more items from a list - for example: choosing motions from a collection of animation assets. The selection window is opened using either a button along the right edge, or a double-click in the input box. Chosen values can be cleared using the clear button, if this button has been enabled.
 
 {{< note >}}
-Use a dropdown [combo box](./uidev-combobox-component) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
+Use a dropdown [combo box](/docs/tools-ui/component-library/uidev-combobox-component) instead if there is a predefined list of items to select, and a user only needs to select one value from the list.
 {{< /note >}}
 
 ## Anatomy of the browse edit widget
@@ -30,7 +30,7 @@ Use a dropdown [combo box](./uidev-combobox-component) instead if there is a pre
     Text that you set using `setText()` appears here. Users can double-click here to open the selection window that you have connected to the `BrowseEdit::attachedButtonTriggered` signal. Single click actions do nothing here, unless the read-only attribute has not been set to `true`.
 
     {{< note >}}
-Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](./uidev-line-edit-component) component instead, with a detached button next to it.
+Generally when using the **browse edit** component, you set the input box to be read only. If you want to allow users to edit the value directly from the input box, use the [line edit](/docs/tools-ui/component-library/uidev-line-edit-component) component instead, with a detached button next to it.
 {{< /note >}}
 
 1.  **Attached button**

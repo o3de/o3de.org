@@ -60,4 +60,4 @@ Relevant Qt documentation includes the following topics:
 ## Related links
 
 For additional information related to the **toggle switch** component, see the following topics:
-+  [Checkbox](./uidev-checkbox-component/)
++  [Checkbox](./uidev-checkbox-component)

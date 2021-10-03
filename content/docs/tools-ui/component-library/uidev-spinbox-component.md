@@ -10,7 +10,7 @@ Use a spinbox as a number edit component to enable users to use a variety of con
 Use the `SpinBox` class for signed integer values, and the `DoubleSpinBox` class to hold double values.
 
 {{< note >}}
-In scenarios where you would use the spinbox, also consider using the [slider combo](./uidev-sliders-component) widget, which combines the extra visual cues of a slider with the ease of adjustment of a spinbox.
+In scenarios where you would use the spinbox, also consider using the [slider combo](/docs/tools-ui/component-library/uidev-sliders-component) widget, which combines the extra visual cues of a slider with the ease of adjustment of a spinbox.
 {{< /note >}}
 
 ## Anatomy of the spinbox widget

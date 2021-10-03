@@ -188,5 +188,5 @@ Relevant Qt documentation includes the following topics:
 ## Related links
 
 For components related to the **line edit** component, see the following topics:
-+  [Browse edit](./uidev-browse-edit-component/)
-+  [Number edit spinbox](./uidev-spinbox-component/)
++  [Browse edit](./uidev-browse-edit-component)
++  [Spinbox](./uidev-spinbox-component)
