@@ -30,28 +30,28 @@ For standalone tools with their own Qt Application, you must take some extra ste
 
 1. Set the attributes to correctly handle high DPI screens before creating the QApplication.
 
-  ```cpp
-  #include <QApplication>
+    ```cpp
+    #include <QApplication>
 
-  QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-  QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
-  QGuiApplication::setHighDpiScaleFactorRoundingPolicy(Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);
-  AzQtComponents::Utilities::HandleDpiAwareness(AzQtComponents::Utilities::PerScreenDpiAware);
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QCoreApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
+    QGuiApplication::setHighDpiScaleFactorRoundingPolicy(Qt::HighDpiScaleFactorRoundingPolicy::PassThrough);
+    AzQtComponents::Utilities::HandleDpiAwareness(AzQtComponents::Utilities::PerScreenDpiAware);
 
-  QApplication app(argc, argv);
-  ```
+    QApplication app(argc, argv);
+    ```
 
 1. Instantiate a StyleManager, which loads the style sheets and custom settings for the new UI.
 
-   ```cpp
-   #include <AzQtComponents/Components/StyleManager.h>
+    ```cpp
+    #include <AzQtComponents/Components/StyleManager.h>
 
-   AzQtComponents::StyleManager* styleManager = new AzQtComponents::StyleManager(this);
-   const bool useLegacyStyle = false;
-   styleManager->initialize(app, useLegacyStyle);
-   ```
+    AzQtComponents::StyleManager* styleManager = new AzQtComponents::StyleManager(this);
+    const bool useLegacyStyle = false;
+    styleManager->initialize(app, useLegacyStyle);
+    ```
 
-   The StyleManager automatically loads the base style sheets, but you can add other resources as well.
+    The StyleManager automatically loads the base style sheets, but you can add other resources as well.
 
 ## UI development best practices
 
