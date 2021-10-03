@@ -1,6 +1,7 @@
 ---
-description: ' Configure debugging for the PhysX system in Open 3D Engine. '
+linkTitle: Debugger Configuration
 title: Debugger Configuration
+description: ' Configure debugging for the PhysX system in Open 3D Engine. '
 weight: 400
 ---
 
@@ -8,7 +9,7 @@ In the **PhysX Configuration** tool, you can specify how to interact with the Ph
 
 For more information, see the NVIDIA [PhysX Visual Debugger (PVD)](https://docs.nvidia.com/gameworks/content/gameworkslibrary/physx/guide/Manual/VisualDebugger.html#physxvisualdebugger) documentation.
 
-**To configure the PhysX Visual Debugger**
+## Install PhysX Visual Debugger
 
 1. To get started, [download](https://developer.nvidia.com/physx-visual-debugger) the PVD.
 
@@ -22,26 +23,27 @@ You must have a NVIDIA account to download the PVD. If you don't already have an
 
 1. In O3DE Editor, open a level or create one that has entities with PhysX components. For example, you can create a dynamic entity that falls. For more information, see [Creating a Dynamic PhysX Entity](/docs/user-guide/components/reference/physx/rigid-body-physics#creating-a-dynamic-physx-entity).
 
+## Configure PhysX Debugger in O3DE
+
 1. In O3DE Editor, choose **Tools**, **PhysX Configuration**.
 
 1. Click the **Debugger** tab.
 
 1. You can specify the following settings.
 
-![PhysX Visual Debugger settings.](/images/user-guide/physx/physx-configuration-debugger-1.png)
-****
-
+    ![PhysX Visual Debugger settings.](/images/user-guide/interactivity/physics/nvidia-physx/configuring/physx-configuration-debugger-1.png)
 
 1. To verify that the PVD is connected to O3DE, for **PVD Auto Connect**, choose **Game** or **Editor** and then enter gameplay or editor mode. Depending on what you choose, the following message appears in the console.
 
-   ```
-   (PhysX) - Successfully connected to the PhysX Visual Debugger (PVD).
-   ```
+    ```
+    (PhysX) - Successfully connected to the PhysX Visual Debugger (PVD).
+    ```
 
 1. Open the PhysX Visual Debugger to view the recorded information.
-**Example**
 
-![Review the recorded data from O3DE Editor in the PhysX Visual Debugger.](/images/user-guide/physx/physx-configuration-debugger-2.png)
+    **Example:**
+    
+    ![Review the recorded data from O3DE Editor in the PhysX Visual Debugger.](/images/user-guide/interactivity/physics/nvidia-physx/configuring/physx-configuration-debugger-2.png)
 
 1. You can also manually connect or disconnect from the PVD using the following console variable commands.
 
