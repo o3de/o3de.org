@@ -17,7 +17,7 @@ See the following concepts for the Viewport Interaction Model:
 
 **Manipulator**
 
-With manipulators, you can edit component properties directly in the viewport instead of relying on the **Entity Inspector**.
+ With manipulators, you can edit component properties directly in the viewport instead of relying on **Entity Inspector**.
 
 **Custom Reference Target**
 
