@@ -48,7 +48,7 @@ In the following example, three entities are selected. Because there is no commo
 
    ![Manipulate child entities from a parent entity in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-9.gif)
 
-1. Press and hold **Alt** while modifying a group of selected entities. This enables you to control changes to the entities in local space (the manipulator influence is _individual_ as opposed to _group_). You can quickly iterate and modify your entities and view the changes in the viewport.
+1. Press and hold **Alt** while modifying a group of selected entities. This modifies the entities in local space (the manipulator influence is _individual_ as opposed to _group_). You can quickly iterate and modify your entities and view the changes in the viewport.
 
    In the following example, you can press and hold **Alt** during translation. This moves each entity in their own local space (_individual_ manipulator influence).
 
