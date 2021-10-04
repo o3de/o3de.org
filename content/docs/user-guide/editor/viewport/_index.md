@@ -27,7 +27,7 @@ When you select an entity, you can specify whether to move the entity in its own
 
 This feature has the following limitations:
 
-+ You can't yet change or customize shortcuts for the Viewport Interaction Model.
++ Custom shortcuts for the Viewport Interaction Model are not supported.
 
 **Topics**
 
