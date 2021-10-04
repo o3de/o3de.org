@@ -61,7 +61,7 @@ $(() => {
       // Perform the search
       const results = idx.search(data)
       // Update the search title
-      $('#search-title').append('"' + data + '"')
+      $('#search-title').text('Search Results for ' + '"' + data + '"')
       // Update the list with results
       displayResults(results, window.store)
     }
