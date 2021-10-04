@@ -26,7 +26,7 @@ You can use the manipulator to switch between local and world space without losi
 
 1. To switch to world space, press and hold **Shift**. Use the manipulator to modify the entity.
 
-1. Viewport UI (W/P/L _World, Parent, Local_ in the top right of the viewport) allow you to pin a reference space.
+1. Viewport UI icons ({{< icon "world.svg" >}} World, {{< icon "parent.svg" >}} Parent, and {{< icon "local.svg" >}} Local) in the top right of the viewport allow you to pin a reference space.
 
 ![Switch between local and parent space in the viewport in O3DE.](/images/user-guide/viewportinteractionmodel/viewport-selection-model-1.gif)
 
