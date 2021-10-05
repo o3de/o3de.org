@@ -7,7 +7,7 @@ weight: 200
 You can use the Viewport Interaction Model to create reference spaces for your selected entities. This enables you to customize your selected entities in relation to a reference space.
 
 When working with reference spaces, remember the following rules:
-+ New selections always default to local space.
++ New selections always default to the local space.
 + Holding **Shift** aligns the manipulator to the world coordinate space.
 + Holding **Alt** changes the manipulator to have _individual_ influence as opposed to _group_ influnce (the default).
 + You can easily access custom reference spaces by moving the manipulator (press and hold **Ctrl** and click and drag the manipulaotr) or picking a target entity as a reference space (press hold **Ctrl** and **Alt** and click a target entity).
