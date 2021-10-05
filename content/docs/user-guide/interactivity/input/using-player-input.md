@@ -4,7 +4,7 @@ description: ' Using player input in Open 3D Engine. '
 title: Using Player Input in Open 3D Engine.
 ---
 
-You can create an input bindings asset for an **Input** component and specify Input Events with **Open 3D Engine (O3DE) Asset Editor**.  You can use Script Canvas or Lua to map the Input Events to gameplay logic.
+You can create an input bindings asset for an **Input** component and specify Input Events with **Open 3D Engine (O3DE) Asset Editor**.  Use Script Canvas or Lua to map the Input Events to gameplay logic.
 
 ## Creating an input bindings asset
 
@@ -12,7 +12,7 @@ Follow these steps to create an `.inputbindings` file with Asset Editor.
 
 1. Create an entity.
 
-1.  Select the entity in **Perspective** or **Entity Outliner**.
+1. Select the entity in the viewport or **Entity Outliner**.
 
 1. In **Entity Inspector**, click **Add Component**, and add an Input component.
 
@@ -43,15 +43,19 @@ After you create an Input Event Group, you can add Event Generators to the group
 
 1. Specify changes for the Event Generator. Each Event Generator has a set of properties that you can customize.
 
-### Event Generator properties
+### Setting Event Generator properties
 
 The following `.inputbindings` file specifies a keyboard for the device type and the **Spacebar** for the input **Event Name**.
 
    ![Input bindings configuration example in Asset Editor.](/images/user-guide/interactivity/input/inputbindings-example.png)
 
-1. Save your `.inputbindings` file. 
+### Saving your input bindings asset
 
-1. In Entity Inspector, in the Input component, for **Input to event binding**, click the **Browse Directory** icon and select your `.inputbindings` file.
+1. In the **Asset Editor**, choose **File, Save**.
+
+1. Enter a name for the `.inputbindings` file and choose **Save**.
+
+1. In Entity Inspector, in the Input component, for **Input to event bindings**, click the **Browse Directory** icon and select your `.inputbindings` file.
 
 ## Mapping Input Events to gameplay logic
 
@@ -61,11 +65,11 @@ After you create an `.inputbindings` file and specify Input Events, you can use 
 
 You can create a Script Canvas graph that connects to Input Events. For more information about scripting with Script Canvas, refer to [Creating Gameplay with Script Canvas](/docs/user-guide/scripting/script-canvas).
 
-1. In Perspective, select the entity.
+1. In the viewport or **Entity Outliner**, select the entity.
 
 1. In Entity Inspector, click **Add Component** and add the **Script Canvas** component.
 
-1. In the Script Canvas component, for **Script Canvas Asset**, specify a Script Canvas graph like the following.
+1. In the Script Canvas component, for **Script Canvas Asset**, click the **Open in Script Canvas Editor** icon and create a new Script Canvas graph like the following.
 
 ### Example Script Canvas graph
 
@@ -77,13 +81,15 @@ In the following graph, the **Input Handler** node connects `Action` events to v
 
 You can also create a Lua script that connects to Input Events. For more information about scripting with Lua, refer to [Writing Lua Scripts](/docs/user-guide/scripting/lua).
 
-1. In Perspective, select the entity.
+1. In the viewport or **Entity Outliner**, select the entity.
 
 1. In Entity Inspector, click **Add Component**, and add the **Lua Script** component.
 
-1. In the Lua Script component, create a table of the functions `OnPressed`, `OnHeld`, and `OnReleased` for an Input Event you would like to connect the script to.
+1. In the Lua Script component, click the **Open in Lua Editor** icon.
 
-1. Create a bus handler by connecting to the `InputEventNotificationBus` with the first parameter set to the table of functions for the Input Event, and the second parameter set to create an InputEventNotificationId for the **Event Name**.
+1. In the Lua Editor, create a table of the functions `OnPressed`, `OnHeld`, and `OnReleased` for an Input Event you would like to connect the script to.
+
+1. Create a bus handler by connecting to the `InputEventNotificationBus` with the first parameter set to the table of functions for the Input Event, and the second parameter set to create an `InputEventNotificationId` for the **Event Name**.
 
 ### Example Lua script
 
@@ -122,7 +128,7 @@ return tutorial_input
 
 After you use either Script Canvas or Lua to connect to an Input Handler for the Input Event in your `.inputbindings` file, you can test player input in **O3DE Editor**.
 
-1. In Perspective, select your entity.
+1. In the viewport or **Entity Outliner**, select your entity.
 
     {{< note >}}
 In this example, the entity must have a component that enables visibility in the game, such as the [Mesh component](/docs/user-guide/components/reference/atom/mesh), the [White Box component](/docs/user-guide/components/reference/shape/white-box), or one of the [Shape components](/docs/user-guide/components/reference/shape).
