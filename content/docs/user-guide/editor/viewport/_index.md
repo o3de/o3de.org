@@ -5,7 +5,7 @@ linktitle: Viewport Interaction Model
 title: Working with the Viewport Interaction Model
 ---
 
-The Viewport Interaction Model (VIM) allows users to interact with entities in the Open 3D Engine (O3DE) viewport. The feature provides selection, translation, rotation, and scale. With the Viewport Interaction Model, you can create custom reference spaces to transform your entities. With custom reference spaces, you can move your selected entities in relation to the reference that you specify. The Viewport Interaction Model also unifies entity and component manipulators so that you can interact with entities and components in the same way.
+The Viewport Interaction Model (VIM) allows users to interact with entities in the Open 3D Engine (O3DE) viewport. This feature provides selection, translation, rotation, and scale. With the Viewport Interaction Model, you can create custom reference spaces to transform your entities. With custom reference spaces, you can move your selected entities in relation to the reference that you specify. The Viewport Interaction Model also unifies entity and component manipulators so that you can interact with entities and components in the same way.
 
 The Viewport Interaction Model provides the following benefits:
 
