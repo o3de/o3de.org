@@ -12,7 +12,7 @@ When working with reference spaces, remember the following rules:
 + Holding **Alt** changes the manipulator to have _individual_ influence, as opposed to the default _group_ influence.
 + You can access custom reference spaces by moving the manipulator (press and hold **Ctrl** and then choose and drag the manipulator) or picking a target entity as a reference space (press hold **Ctrl** and **Alt** and click a target entity).
 
-The Viewport Interaction Model simplifies the mental model for you and doesn't require you to keep track manually of the last space (local or world) that you were using. You can specify a target and define that target as custom reference spaces. This new reference space model covers any arbitrary transformation.
+The Viewport Interaction Model simplifies the mental model for you by not requiring you to manually track the last local or world space that you were using. You can specify a target and define that target as custom reference spaces. This new reference space model covers any arbitrary transformation.
 
 ## Switching Between Local and World Space 
 
