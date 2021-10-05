@@ -2,7 +2,7 @@
 description:  Use the Open 3D Engine Asset Pipeline to convert your source art and other assets into game ready data. 
 linktitle: Asset pipeline
 title: Working with the Asset Pipeline and asset files
-weight: 100
+weight: 200
 ---
 
 The Asset Pipeline converts source art and other assets into OS-specific, game ready data. To prepare your game to ship, build all your game assets with the Asset Pipeline and package them with your game for your supported operating systems.
