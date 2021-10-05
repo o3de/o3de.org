@@ -10,7 +10,7 @@ The Viewport Interaction Model (VIM) allows users to interact with entities in t
 The Viewport Interaction Model provides the following benefits:
 
 + Improves the ability to select your preferred entity, especially for nested hierarchies or levels that have many entities.
-+ Adds keyboard and mouse actions that you can apply to your selected entities. You can freely switch between local, parent, and world space to make changes to your selected entities.
++ Adds keyboard and mouse actions that you can apply to your selected entities. You can freely switch between local, parent, and world space to change your selected entities.
 + Establishes an editing pattern that matches that of Component Mode.
 
 See the following concepts for the Viewport Interaction Model:
