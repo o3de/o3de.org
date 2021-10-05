@@ -1,6 +1,6 @@
 ---
 linkTitle: Instantiating a UI Slice
-description: Instantiating a UI Slice
+description: Instantiate a UI Slice in Open 3D Engine (O3DE)
 title: Instantiating a UI Slice
 weight: 200
 ---
