@@ -54,17 +54,17 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
 
 1. **Close** Lua Editor.
 
-1. In **Entity Outliner**, **left-click** an entity to add a **Lua Script** component to.
+1. In **Entity Outliner**, choose an entity to add a **Lua Script** component to.
 
-1. In **Entity Inspector**, click **Add Component**, and then choose **Scripting**, **Lua Script**.
+1. In **Entity Inspector**, choose **Add Component**, and then choose **Scripting**, **Lua Script**.
 
-1. In **Entity Inspector**, locate the **Lua Script** component, and then click the **Pick Lua Script** button next to the empty **Script** field.
+1. In **Entity Inspector**, locate the **Lua Script** component, and then choose the **Pick Lua Script** button next to the empty **Script** field.
 
     ![Open the Pick Lua Script window from the Lua Script component](/images/user-guide/scripting/lua/lua-component-pick-lua-script.png)
     
-1. In the **Pick Lua Script** window, select `ConstantRotation.lua` and click **OK**.
+1. In the **Pick Lua Script** window, select `ConstantRotation.lua` and choose **OK**.
 
-1. In the **Lua Script** component, click the **Open in Lua Editor** button to launch Lua Editor.
+1. In the **Lua Script** component, choose the **Open in Lua Editor** button to launch Lua Editor.
 
     ![Launch Lua Editor from Lua Script component in O3DE Editor](/images/user-guide/scripting/lua/lua-component-open-in-lua-editor.png)
     
@@ -72,7 +72,7 @@ This tutorial shows you how to use O3DE Lua Editor to perform debugging operatio
 
 Connection is facilitated by **GridHub**, which is O3DE's central connection hub for debugging. GridHub starts automatically when Lua Editor is started and must be running in the background for Lua Editor to find targets it can connect to.  Because the debugging functionality is enabled through network sockets, you must connect Lua Editor to the target that is running the script before you can debug. In this tutorial, you connect to O3DE Editor.
 
-1. In the Lua Editor toolbar, click **Target: None**, and then click **Editor(*ID*)** to connect to O3DE Editor.
+1. In the Lua Editor toolbar, choose **Target: None**, and then choose **Editor(*ID*)** to connect to O3DE Editor.
 
     ![Target selector](/images/user-guide/scripting/lua/lua-editor-debugger-target-editor.png)
     
@@ -104,7 +104,7 @@ The class reference feature is active only for the default context and component
 
 ## Setting Breakpoints
 
-After you connect, you can pause the execution of a given script by setting breakpoints.
+After you connect, you can pause a script by setting breakpoints.
 
 1. In the Lua Editor toolbar, click the **Breakpoints** icon ![Breakpoints Icon](/images/user-guide/scripting/lua/lua-editor-debugger-breakpoints-icon.png) to show the **Breakpoints** window.
 
