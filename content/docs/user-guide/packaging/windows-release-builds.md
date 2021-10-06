@@ -12,13 +12,14 @@ The instructions here guide you through the following steps:
 - Create a release build for your project.
 - Run your project's Game Launcher.
 
+
 ## Prerequisites
 
 The following instructions assume that you have:
 
 - Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](\docs\welcome-guide\setup\_index.md).
 
-- An O3DE project that's ready to release. You may need to resolve any errors in your project in order to create a release build.
+- An O3DE project that contains at least one level. You may need to resolve any errors in your project in order to create a release build.
 
 - A Visual Studio project for your O3DE project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
 
@@ -26,6 +27,16 @@ This tutorial uses the following project name and directory in the examples.
 
 - Project name and location: `C:\MyProject`
 
+
+## Set the starting level
+
+The starting level is the level that the Game Launcher loads first. It references your project's level assets from the `Cache/pc/` directory.
+
+1. Open the `<project>/autoexec.cfg` file and set the starting level's path relative to the `Cache/pc/` directory by adding the following line. In this example, the level asset is `mainmenu.spawnable`
+
+    ```
+    Loadlevel levels/mainmenu/mainmenu.spawnable
+    ```
 
 ## Process project assets
 
@@ -53,19 +64,19 @@ You will use CMake to build either a monolithic or a non-monolithic project and 
 
 Create a project release install layout for a monolithic project, which contains the Game Launcher, third-party `.dll` files, and `engine.pak`.
 
-1. Set up a new CMake build directory, `windows_mono`, for your monolithic build in your project folder. We recommend keeping this build directory separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
+1. Set up a new CMake build directory, `windows_mono`, for your monolithic build in your project directory. We recommend keeping this build directory separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
 
     ```cmd
     cmake -B build/windows_mono -S. -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_MONOLITHIC_GAME=1
     ```
 
-2. Run the CMake build configuration on your monolithic build. This generates a Game Launcher and packages your project's assets in the `Cache` folder into `engine.pak`.
+2. Run the CMake build configuration on your monolithic build. This generates a Game Launcher and packages your project's assets in the `Cache` directory into `engine.pak`.
 
     ```cmd
     cmake --build build/windows_mono --target INSTALL --config release
     ```
 
-The result is an installation folder that contains the Game Launcher, `.dll` files, `engine.json`, `project.json`, `and engine.pak`. The release build install folder's location and layout looks like the following:
+The result is an installation directory that contains the Game Launcher, `.dll` files, `engine.json`, `project.json`, `and engine.pak`. The release build install directory's location and layout looks like the following:
 
     <project>/install/bin/windows/release/monolithic
     ├───Cache
@@ -87,10 +98,10 @@ The result is an installation folder that contains the Game Launcher, `.dll` fil
 
 Create a project release install layout with the Game Launcher, engine-built `.dll` files, third-party `.dll` files, and `engine.pak`.
 
-1. Run the CMake build configuration in your build directory, `build/windows_vs2019`. This generates a Game Launcher, copies `.dll` files, and packages your project's assets in the `Cache` folder into `engine.pak`.
+1. Run the CMake build configuration in your build directory, `build/windows_vs2019`. This generates a Game Launcher, copies `.dll` files, and packages your project's assets in the `Cache` directory into `engine.pak`.
 
     ```cmd
-    cmake --build build/windows_mono --target INSTALL --config release
+    cmake --build build/windows_vs2019 --target INSTALL --config release
     ```
 
 ## Test the game launcher
@@ -100,9 +111,10 @@ Now that you've packaged your assets and built your project for release, you are
 1. Open a command line window and change to your project's release build install directory.
 
 2. Run the standalone project's game launcher. Supply the path to the level that the project starts with.
-
-    ```cmd
-    ./MyProject.GameLauncher.exe +loadlevel levels/level/MainLevel.spawnable
-    ```
+    
+    - **For a monolithic project**:
+        ```cmd
+        ./MyProject.GameLauncher.exe --project-path="<project>\install\bin\Windows\release\Monolithic"
+        ```
 
 Now you are able to run a build release of your O3DE project and distribute it!
