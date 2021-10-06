@@ -5,21 +5,26 @@ description: ' Open 3D Engine (O3DE) Terrain Surface Gradient List reference. '
 weight: 100
 ---
 
-The **Terrain Surface Gradient List** component allows you to define mappings between a gradient and a surface on a terrain layer.
+The **Terrain Surface Gradient List** component defines mappings between a gradient and a surface type on a terrain layer.   
+When you assign a gradient to a surface, the gradient defines the strength of that surface in the displayed terrain: 
+for example, you could define an area where rock shows through a grassy region.
+
+## Usage ##
+
 You select a gradient either by dragging a entity containing a gradient component to the **GradientEntity** field, or by using the select button.
-Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** option.
+Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** option. 
 You can configure the dimensions and priority of the layer using the required [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner)
 
 ## Provider ##
 
-[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
+[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain/)
 
 ## Properties ##
 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **GradientEntity** | The gradient entity to assign to this layer. | Gradient Entity | None |
-| **Surface Tag** | Sets the surface type that this gradient repersents. | Surface Tag | Mone |
+| **Surface Tag** | Sets the surface type that this gradient represents. | Surface Tag | None |
 
 
 ## TerrainAreaSurfaceRequestBus  ##
@@ -28,13 +33,11 @@ Use the following request functions with the `TerrainAreaSurfaceRequestBus ` EBu
 
 ### GetSurfaceWeights 
 
-Retrieves all the surfaces assigned to this component, along with the weight values which come from the gradient as the given position.
+Retrieves all the surfaces assigned to this component, along with the weight values which come from the gradient at the given position.
 
 **Parameters**  
-InPosition - Position to retrieve information for.
-Type: Vector3  
-SurfaceWeights \[out\] - A list of all the retrieved surfaces and weight values. 
-Type: SurfaceTagWeightMap
+| Parameter | Description | Type | Return |
+| - | - | - | - |
+| InPosition | Position to retrieve information for. | Vector3 | None |
+| SurfaceWeights \[out\] | A list of all the retrieved surfaces and weight values. | SurfaceTagWeightMap | None |
 
-**Return**
-None
