@@ -5,7 +5,7 @@ description: Learn about assets and how to process them for your Open 3D Engine 
 weight: 700
 ---
 
-Assets that are created in third-party digital content creation (DCC) tools or in Open 3D Engine (O3DE) must be processed to a runtime format for your project. The topics in this section introduce O3DE's asset pipeline, explain the tools used to export assets such as meshes and animation, and provide information so you can extend the asset pipeline to support you own workflows and asset types.
+Assets that are created in third-party digital content creation (DCC) tools or in Open 3D Engine (O3DE) must be processed to a runtime format for your project. The topics in this section introduce O3DE's asset pipeline, explain the tools used to export assets such as meshes and animation, and provide information so you can extend the asset pipeline to support your own workflows and asset types.
 
 **In this section:**
 

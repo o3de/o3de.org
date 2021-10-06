@@ -1,7 +1,7 @@
 ---
 description:  Use the Open 3D Engine Asset Pipeline to convert your source art and other assets into game ready data. 
-linktitle: Asset pipeline
-title: Working with the Asset Pipeline and asset files
+linktitle: Asset Pipeline
+title: Working with the Asset Pipeline and Asset Files
 weight: 200
 ---
 
