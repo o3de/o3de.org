@@ -95,7 +95,7 @@ The following samples demonstrate rendering features in the RPI.
 | [MSAA](rpi-samples/#msaa) | Demonstrates how to load a new pipeline with MSAA enabled, and a simple scene with a single mesh. |
 | [Multi-Render Pipeline](rpi-samples/#multi-render-pipeline) | Demonstrates how to create two render pipelines. |
 | [Multi-Scene](rpi-samples/#multi-scene) | Demonstrates how to create two RPI scenes with different content in each. |
-| [Multi-View Single Scene Aux Geom](rpi-samples/#multi-view) | Tests the ability to send draw calls to any selection of windows in a scene. |
+| [Multi-View Single Scene Aux Geom](rpi-samples/#multi-view-single-scene-aux-geom) | Tests the ability to send draw calls to any selection of windows in a scene. |
 | [Root Constants](rpi-samples/#root-constants) | Demonstrates the use of root constants to pass information quickly from the CPU to the shader. |
 | [Scene Reload Soak](rpi-samples/#scene-reload-soak) | Tests Atom's stability by repeatedly performing many different commands across various times. This sample is used to discover timing-sensitive issues.  |
 | [Shading](rpi-samples/#shading) | Demonstrates rendering a shaderball with default StandardPBR material, with the LuxCore feature. |
