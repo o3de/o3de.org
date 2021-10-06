@@ -12,9 +12,9 @@ O3DE uses Lua version {{< versions/lua >}}.
 
 ## Building Lua Editor and GridHub
 
-**Lua Editor** (Lua IDE) and GridHub (O3DE's central connection hub for debugging) must be built for every project that requires them. Include `LuaIDE` and `GridHub` as build targets when you build your project: `--target <project>.GameLauncher Editor LuaIDE GridHub`.  
+**Lua Editor** (Lua IDE) and GridHub, which is O3DE's central connection hub for debugging, must be built for every project that requires them. Include `LuaIDE` and `GridHub` as build targets when you build your project: `--target <project>.GameLauncher Editor LuaIDE GridHub`.  
 
-For information on accessing class references in Lua Editor, refer to [Debugging with Lua Editor](debugging-tutorial).
+For information about accessing class references in Lua Editor, refer to [Debugging with Lua Editor](debugging-tutorial).
 
 ### Example
 
@@ -43,7 +43,7 @@ After you read through this tutorial on writing Lua scripts for the component en
 | Topic | Description |
 | --- | --- |
 | [Adding Lua Scripts to Component Entities](add-lua-script) | Use the Lua Script component to add script functionality to your game entities. |
-| [Lua Script Structure](basic-lua-script) | Basic Structure of a Lua Script. |
+| [Lua Script Structure](basic-lua-script) | Basic structure of a Lua script. |
 | [Lua Editor](lua-editor) | Learn about the Lua Editor. |
 | [Properties Table](properties) | Specify the properties of a Lua script component that appear in O3DE Editor. |
 | [Using EBuses in Lua](ebus) | Write Lua scripts that use the EBus to communicate between components. |
