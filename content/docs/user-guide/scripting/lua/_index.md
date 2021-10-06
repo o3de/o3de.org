@@ -6,7 +6,7 @@ toc: true
 weight: 100
 ---
 
-You can use Lua in **Open 3D Engine** (O3DE) to facilitate quick iteration of your game project. Lua is a powerful, fast, lightweight, embeddable scripting language. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code.
+You can use Lua in **Open 3D Engine (O3DE)** to facilitate quick iteration of your game project. Lua is a powerful, fast, lightweight, embeddable scripting language. When you construct new gameplay and game systems, you can run your changes immediately, without compiling your source code.
 
 O3DE uses Lua version {{< versions/lua >}}.
 
