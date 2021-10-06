@@ -15,7 +15,7 @@ In the **Open 3D Engine (O3DE)** UI component library, you will find an explanat
 
 ## Components
 
-+ [Breadcrumbs Navigation](uidev-breadcrumbs-component)
++ [Breadcrumb Navigation](uidev-breadcrumbs-component)
 + [Browse edit](uidev-browse-edit-component)
 + [Button](uidev-button-component)
 + [Card](uidev-card-component)
