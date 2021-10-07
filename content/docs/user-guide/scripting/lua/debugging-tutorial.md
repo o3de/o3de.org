@@ -10,7 +10,7 @@ O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environ
 
 This tutorial shows you how to use O3DE Lua Editor to perform debugging operations on a sample script.
 
-## Create an entity with a Lua Script component
+## Add sample Lua Script to an entity
 
 1. Open Lua Editor from the **Tools** menu.  
 
@@ -102,7 +102,7 @@ You may need to switch focus to O3DE Editor before Class Reference will populate
 The class reference feature is active only for the default context and component entity scripts.
 {{< /note >}}
 
-## Setting Breakpoints
+## Setting breakpoints
 
 After you connect, you can pause a script by setting breakpoints.
 
