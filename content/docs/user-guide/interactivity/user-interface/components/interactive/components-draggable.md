@@ -34,11 +34,12 @@ When it is not being dragged, an element with a draggable component uses the int
 
 When being dragged, however, the draggable component has an additional three states:
 
-+ **Normal** - Automatic state when a drag state begins.
+    + **Normal** - Automatic state when a drag state begins.
    
-+ **Valid** - Typically the state used when the draggable component pauses on a valid drop target. This state is determined by a script that you write or C++ code that connects to the `UiDropTargetNotificationBus` and listens for the `OnDropHoverStart` method.
+    + **Valid** - Typically the state used when the draggable component pauses on a valid drop target. This state is determined by a script that you write or C++ code that connects to the `UiDropTargetNotificationBus` and listens for the `OnDropHoverStart` method.
    
-+ **Invalid** - Typically the state used when a draggable component pauses over an invalid drop target. This state is determined by a script that you write or C++ code. When a valid drag state is triggered, a notification is automatically sent using the `UiDropTargetNotificationBus`.
+    + **Invalid** - Typically the state used when a draggable component pauses over an invalid drop target. This state is determined by a script that you write or C++ code. When a valid drag state is triggered, a notification is automatically sent using the `UiDropTargetNotificationBus`.
    
 The script or C++ can use the `UiDraggableBus` to set the drag state of the **Draggable** component. It can also set the drop state of the **DropTarget** to indicate valid drop targets to the user.
+
 To see an example of simple drag Lua script, open `DraggableElement.lua` in `Gems\LyShineExamples\Assets\UI\Scripts\LyShineExamples\DragAndDrop`.
