@@ -55,15 +55,15 @@ After you read through this tutorial on writing Lua scripts for the component en
 
 | Topic | Description |
 | --- | --- |
-| [Camera Component](\docs\user-guide\components\reference\camera\camera) | Use the Camera component to allow an entity to be used as a camera. |
-| [Using Player Input](\docs\user-guide\interactivity\input\working-with-the-input-component) |  Work with the Input component in O3DE. |
-| [Input Component Event Bus Interface](\docs\user-guide\components\reference\gameplay\input-event-bus-interface) | Work with the Input component EBus (event bus). |
-| [Simple State Component](\docs\user-guide\components\reference\gameplay\simple-state) | Use the Simple State component to provide a simple state machine. |
-| [Tag Component](\docs\user-guide\components\reference\gameplay\tag) | Use the Tag component to apply labels to entities. |
-| [AWS Client Auth Scripting](\docs\user-guide\gems\reference\aws\aws-client-auth\scripting) | Examples of using the AWS Client Auth Gem with Script Canvas and Lua. |
-| [AWS Metrics Scripting](\docs\user-guide\gems\reference\aws\aws-metrics\scripting) | Examples of using Script Canvas or Lua with the AWS Metrics Gem to generate and submit metrics. |
-| [Gestures Gem](\docs\user-guide\gems\reference\input\gestures) | The Gestures Gem provides detection for common gesture-based input actions. |
-| [Virtual Gamepad Gem](\docs\user-guide\gems\reference\input\virtual-gamepad) | The Virtual Gamepad Gem provides controls that emulate a gamepad on touch screen devices for O3DE projects. |
-| [Tweener Lua Script](\docs\user-guide\interactivity\user-interface\animating\tweener-system\tweener-lua-code) | Learn how to use Lua scripting to animate your entities with the Scripted Entity Tweener system. |
-| [Tweener Timeline](\docs\user-guide\interactivity\user-interface\animating\tweener-system\tweener-timeline) | Use Scripted Entity Tweener's timeline abilities to chain animations together and exert fine control over them. |
-| [Synchronizing Animation Graphs](\docs\user-guide\visualization\animation\character-editor\sync-graph) | Use synchronized animation graphs to synchronize animation between actors. |
+| [Camera Component](/docs/user-guide/components/reference/camera/camera) | Use the Camera component to allow an entity to be used as a camera. |
+| [Using Player Input](/docs/user-guide/interactivity/input/working-with-the-input-component) |  Work with the Input component in O3DE. |
+| [Input Component Event Bus Interface](/docs/user-guide/components/reference/gameplay/input-event-bus-interface) | Work with the Input component EBus (event bus). |
+| [Simple State Component](/docs/user-guide/components/reference/gameplay/simple-state) | Use the Simple State component to provide a simple state machine. |
+| [Tag Component](/docs/user-guide/components/reference/gameplay/tag) | Use the Tag component to apply labels to entities. |
+| [AWS Client Auth Scripting](/docs/user-guide/gems/reference/aws/aws-client-auth/scripting) | Examples of using the AWS Client Auth Gem with Script Canvas and Lua. |
+| [AWS Metrics Scripting](/docs/user-guide/gems/reference/aws/aws-metrics/scripting) | Examples of using Script Canvas or Lua with the AWS Metrics Gem to generate and submit metrics. |
+| [Gestures Gem](/docs/user-guide/gems/reference/input/gestures) | The Gestures Gem provides detection for common gesture-based input actions. |
+| [Virtual Gamepad Gem](/docs/user-guide/gems/reference/input/virtual-gamepad) | The Virtual Gamepad Gem provides controls that emulate a gamepad on touch screen devices for O3DE projects. |
+| [Tweener Lua Script](/docs/user-guide/interactivity/user-interface/animating/tweener-system/tweener-lua-code) | Learn how to use Lua scripting to animate your entities with the Scripted Entity Tweener system. |
+| [Tweener Timeline](/docs/user-guide/interactivity/user-interface/animating/tweener-system/tweener-timeline) | Use Scripted Entity Tweener's timeline abilities to chain animations together and exert fine control over them. |
+| [Synchronizing Animation Graphs](/docs/user-guide/visualization/animation/character-editor/sync-graph) | Use synchronized animation graphs to synchronize animation between actors. |
