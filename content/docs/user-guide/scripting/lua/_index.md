@@ -12,7 +12,7 @@ O3DE uses Lua version {{< versions/lua >}}.
 
 ## Building Lua Editor and GridHub
 
-**Lua Editor** (Lua IDE) and GridHub, which is O3DE's central connection hub for debugging, must be built for every project that requires them. Include `LuaIDE` and `GridHub` as build targets when you build your project: `--target <project>.GameLauncher Editor LuaIDE GridHub`.  
+If you built O3DE from source, you must explicitly include **Lua Editor** (Lua IDE) and GridHub as build targets when you build your project. GridHub is O3DE's central connection hub for debugging, and is required to debug Lua scripts from the Lua IDE. To include these targets, add `LuaIDE` and `GridHub` to your build target list: `--target <project>.GameLauncher Editor LuaIDE GridHub`. 
 
 For information about accessing class references in Lua Editor, refer to [Debugging with Lua Editor](debugging-tutorial).
 
@@ -21,7 +21,7 @@ For information about accessing class references in Lua Editor, refer to [Debugg
 If you need to build Lua Editor and GridHub after your project is built, navigate to your O3DE source directory, for example `c:\o3de`, and run the following command, inserting the path to your project's build directory.
 
 ```
-cmake --build c:\<o3de-projects>\<project>\build --target LuaIDE GridHub --config profile -- /m
+cmake --build c:\<o3de-projects>\<project>\<build> --target LuaIDE GridHub --config profile -- /m
 ```
 
 ## Learning Lua 
