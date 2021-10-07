@@ -13,9 +13,9 @@ When you edit an instance of a UI slice in a UI canvas, you can use the context 
 
 1. Choose **Edit slice in new tab** and then choose the slice you want to edit. Multiple choices appear only if the selected element is an instance of a cascaded slice.
 
-![Right-click the slice element to display the context menu.](/images/user-guide/interactivity/user-interface/slices/ui-editor-working-slices-newtab.png)
+    ![Right-click the slice element to display the context menu.](/images/user-guide/interactivity/user-interface/slices/ui-editor-working-slices-newtab.png)
 
-   The selected slice appears in a new tab labeled **Slice: **slice name****.
+    The selected slice appears in a new tab labeled **Slice: **slice name****.
 
 1. Edit the slice in the new tab.
 
