@@ -75,6 +75,8 @@ Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom">
 Data::Instance&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#ae1849145959339fd1a3c8886f64a78ba">Create</a> (const Asset&lt; AssetData &gt; &amp;asset, const AZStd::any *param=nullptr)</td></tr>
 <tr class="memdesc:ae1849145959339fd1a3c8886f64a78ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls FindOrCreate using a random <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a>. <br /></td></tr>
 <tr class="separator:ae1849145959339fd1a3c8886f64a78ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdb0d920f2cc33b9902c319ecd483cb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_data_1_1_instance_database.html#acdb0d920f2cc33b9902c319ecd483cb5">TEMPOrphan</a> (const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;id)</td></tr>
+<tr class="separator:acdb0d920f2cc33b9902c319ecd483cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -269,16 +271,43 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="acdb0d920f2cc33b9902c319ecd483cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdb0d920f2cc33b9902c319ecd483cb5">&#9670;&nbsp;</a></span>TEMPOrphan()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_a_z_1_1_data_1_1_instance_database.html">AZ::Data::InstanceDatabase</a>&lt; Type &gt;::TEMPOrphan </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_a_z_1_1_data_1_1_instance_id.html">InstanceId</a> &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes the instance data from the database. Does not release it. References to existing instances will remain valid, but new calls to Create/FindOrCreate will create a new instance This function is temporary, to provide functionality needed for Model hot-reloading, but will be removed once the Model class does not need it anymore.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The id of the instance to remove </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AtomCore/AtomCore/Instance/InstanceDatabase.h</li>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="astruct_a_z_1_1_data_1_1_instance_id_html_a94759ab102cfc38216009d9c98fe3250"><div class="ttname"><a href="struct_a_z_1_1_data_1_1_instance_id.html#a94759ab102cfc38216009d9c98fe3250">AZ::Data::InstanceId::CreateName</a></div><div class="ttdeci">static InstanceId CreateName(const char *name)</div></div>
 <div class="ttc" id="astruct_a_z_1_1_data_1_1_instance_id_html_adff5b2c1f4e118dc8be9493a24adcbc2"><div class="ttname"><a href="struct_a_z_1_1_data_1_1_instance_id.html#adff5b2c1f4e118dc8be9493a24adcbc2">AZ::Data::InstanceId::CreateFromAssetId</a></div><div class="ttdeci">static InstanceId CreateFromAssetId(const AssetId &amp;assetId)</div></div>
-<div class="ttc" id="aclass_a_z_1_1_data_1_1_instance_database_html_a7d1f2af5680ee799b55bb70ac6c5068a"><div class="ttname"><a href="class_a_z_1_1_data_1_1_instance_database.html#a7d1f2af5680ee799b55bb70ac6c5068a">AZ::Data::InstanceDatabase::Create</a></div><div class="ttdeci">static void Create(const AssetType &amp;assetType, const InstanceHandler&lt; Type &gt; &amp;handler, bool checkAssetIds=true)</div><div class="ttdef"><b>Definition:</b> InstanceDatabase.h:416</div></div>
+<div class="ttc" id="aclass_a_z_1_1_data_1_1_instance_database_html_a7d1f2af5680ee799b55bb70ac6c5068a"><div class="ttname"><a href="class_a_z_1_1_data_1_1_instance_database.html#a7d1f2af5680ee799b55bb70ac6c5068a">AZ::Data::InstanceDatabase::Create</a></div><div class="ttdeci">static void Create(const AssetType &amp;assetType, const InstanceHandler&lt; Type &gt; &amp;handler, bool checkAssetIds=true)</div><div class="ttdef"><b>Definition:</b> InstanceDatabase.h:446</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:54:56 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:30:23 for Open 3D Engine AtomCore API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

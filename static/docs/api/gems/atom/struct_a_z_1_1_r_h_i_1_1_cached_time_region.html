@@ -59,8 +59,6 @@ $(function() {
  <a href="struct_a_z_1_1_r_h_i_1_1_cached_time_region.html#details">More...</a></p>
 
 <p><code>#include &lt;CpuProfiler.h&gt;</code></p>
-
-<p>Inherited by <a class="el" href="class_a_z_1_1_r_h_i_1_1_time_region.html">AZ::RHI::TimeRegion</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -69,17 +67,18 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a00aa5b15be88cfdbff7f060f1470f1bc"><td class="memItemLeft" align="right" valign="top"><a id="a00aa5b15be88cfdbff7f060f1470f1bc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CachedTimeRegion</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a> *groupRegionName)</td></tr>
-<tr class="separator:a00aa5b15be88cfdbff7f060f1470f1bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a983b48f308aa1203ac0a76f2265398c8"><td class="memItemLeft" align="right" valign="top"><a id="a983b48f308aa1203ac0a76f2265398c8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CachedTimeRegion</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a> *groupRegionName, uint16_t stackDepth, uint64_t startTick, uint64_t endTick)</td></tr>
-<tr class="separator:a983b48f308aa1203ac0a76f2265398c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ffd85d87880a2b45446ea1d4c55528"><td class="memItemLeft" align="right" valign="top"><a id="a45ffd85d87880a2b45446ea1d4c55528"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CachedTimeRegion</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a> &amp;groupRegionName)</td></tr>
+<tr class="separator:a45ffd85d87880a2b45446ea1d4c55528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d906e7a150ba9f7c6fe0c00d02fa177"><td class="memItemLeft" align="right" valign="top"><a id="a2d906e7a150ba9f7c6fe0c00d02fa177"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CachedTimeRegion</b> (const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a> &amp;groupRegionName, uint16_t stackDepth, uint64_t startTick, uint64_t endTick)</td></tr>
+<tr class="separator:a2d906e7a150ba9f7c6fe0c00d02fa177"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aca735f78a9706904b9062ce0021cb04e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region.html#aca735f78a9706904b9062ce0021cb04e">m_groupRegionName</a> = nullptr</td></tr>
-<tr class="separator:aca735f78a9706904b9062ce0021cb04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7c52d44cfb65265f702f71968ccedb"><td class="memItemLeft" align="right" valign="top"><a id="a0a7c52d44cfb65265f702f71968ccedb"></a>
+<a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_groupRegionName</b> {nullptr, nullptr}</td></tr>
+<tr class="separator:a0a7c52d44cfb65265f702f71968ccedb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30951d150039f34444cbb0f9ea6441b8"><td class="memItemLeft" align="right" valign="top"><a id="a30951d150039f34444cbb0f9ea6441b8"></a>
 uint16_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_stackDepth</b> = 0u</td></tr>
 <tr class="separator:a30951d150039f34444cbb0f9ea6441b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,29 +91,13 @@ AZStd::sys_time_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_endTic
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure that is used to cache a timed region into the thread's local storage. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="aca735f78a9706904b9062ce0021cb04e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca735f78a9706904b9062ce0021cb04e">&#9670;&nbsp;</a></span>m_groupRegionName</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a>* AZ::RHI::CachedTimeRegion::m_groupRegionName = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Pointer to the <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">GroupRegionName</a> static instance. NOTE: When used in a separate shared library, the library mustn't be unloaded before the <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html" title="Interface class of the CpuProfiler.">CpuProfiler</a> is shutdown. </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Gems/Atom/RHI/Code/Include/Atom/RHI/CpuProfiler.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:52 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:32:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

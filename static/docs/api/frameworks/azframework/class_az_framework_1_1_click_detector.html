@@ -83,6 +83,8 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#a5fd47c0d5259e747599d64d0269a5bfd">SetDeadZone</a> (float deadZone)</td></tr>
 <tr class="memdesc:a5fd47c0d5259e747599d64d0269a5bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the dead zone before a 'move' outcome will be triggered. <br /></td></tr>
 <tr class="separator:a5fd47c0d5259e747599d64d0269a5bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8687a1983d4bc0db0ece775c07443e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_click_detector.html#aba8687a1983d4bc0db0ece775c07443e">OverrideTimeNowFn</a> (AZStd::function&lt; AZStd::chrono::milliseconds()&gt; timeNowFn)</td></tr>
+<tr class="separator:aba8687a1983d4bc0db0ece775c07443e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility class to help detect different types of mouse click (mouse down and up with no movement), mouse move (down and initial move after some threshold) and mouse release (mouse down with movement and then mouse up). </p>
@@ -145,6 +147,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aba8687a1983d4bc0db0ece775c07443e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8687a1983d4bc0db0ece775c07443e">&#9670;&nbsp;</a></span>OverrideTimeNowFn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AzFramework::ClickDetector::OverrideTimeNowFn </td>
+          <td>(</td>
+          <td class="paramtype">AZStd::function&lt; AZStd::chrono::milliseconds()&gt;&#160;</td>
+          <td class="paramname"><em>timeNowFn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Override how the current time is retrieved. This is helpful to override when it comes to simulating different passages of time to avoid double click issues in tests for example. </p>
+
+</div>
+</div>
 <a id="a9f51d613f1265f6bf2b4f9feb6bba983"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9f51d613f1265f6bf2b4f9feb6bba983">&#9670;&nbsp;</a></span>SetDoubleClickInterval()</h2>
 
@@ -178,7 +199,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
