@@ -1,6 +1,8 @@
 ---
+linkTitle: Configuring Font Rendering Quality
 description: ' Specify how fonts render in Open 3D Engine''s UI system. '
 title: Configuring Font Rendering Quality
+weight: 300
 ---
 
 O3DE's built-in UI system, `LyShine`, renders text using font textures. The quality of the on-screen text is affected by the font texture size, the number of character slots in the font texture, and the size of the text itself when rendered on the screen.
@@ -87,7 +89,7 @@ Knowing these calculations helps you determine the right font texture size for t
 
 **To determine the right font texture size for your game UI**
 
-1. [Create the font `.font` file](adding-fonts/) for the font to use.
+1. [Create the font `.font` file](./adding-fonts) for the font to use.
 
 1. Choose an arbitrary font texture size to start with, such as 512x256 as used in the previous example.
 
