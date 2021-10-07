@@ -18,7 +18,7 @@ Shortcuts for the `x` and `y` values of a `UiTransform2dComponent`, which is aut
 **timeIntoTween**
 Specifies a tween to begin at a specified point (in seconds). For example, if the `duration` is set to `6`, and `timeIntoTween` is set to `3`, then the tween begins immediately at its halfway point and finishes in three more seconds.
 
-**easeMethod **
+**easeMethod**
 Specifies the [easing type](concepts/tweener-understanding-types) to apply to the tween.
 + `ScriptedEntityTweenerEasingMethod_Linear`
 + `ScriptedEntityTweenerEasingMethod_Quad`
