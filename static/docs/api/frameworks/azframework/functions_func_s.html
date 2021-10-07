@@ -192,9 +192,6 @@ $(function() {
 <li>SetLocalUserId()
 : <a class="el" href="class_az_framework_1_1_input_context_component_requests.html#afb97e4a74c6b4737b4ffe8f0d1cbca07">AzFramework::InputContextComponentRequests</a>
 </li>
-<li>SetLookAtFn()
-: <a class="el" href="class_az_framework_1_1_orbit_camera_input.html#ae3e8204f6d79700ec52f9e08f1d2be5a">AzFramework::OrbitCameraInput</a>
-</li>
 <li>SetMachineReadable()
 : <a class="el" href="class_az_framework_1_1_log_file.html#a358980823e4724f7b3109c675e50baf1">AzFramework::LogFile</a>
 </li>
@@ -231,6 +228,9 @@ $(function() {
 </li>
 <li>SetParentRelative()
 : <a class="el" href="class_az_framework_1_1_transform_component.html#a105ee8355ab93f6b98b3cad82f9e9a73">AzFramework::TransformComponent</a>
+</li>
+<li>SetPivotFn()
+: <a class="el" href="class_az_framework_1_1_pivot_camera_input.html#a84feb940084b841365694459c6352324">AzFramework::PivotCameraInput</a>
 </li>
 <li>SetPrefabSystemEnabled()
 : <a class="el" href="class_az_framework_1_1_application_requests.html#a7706814be2e722adbeb7227c1cae6229">AzFramework::ApplicationRequests</a>
@@ -357,10 +357,10 @@ $(function() {
 </li>
 <li>StepCamera()
 : <a class="el" href="class_az_framework_1_1_camera_input.html#afcdc7269182367a30c38820b2bd6f4ac">AzFramework::CameraInput</a>
-, <a class="el" href="class_az_framework_1_1_orbit_camera_input.html#a2a1a735862a0be87cebaef87ff215e02">AzFramework::OrbitCameraInput</a>
-, <a class="el" href="class_az_framework_1_1_orbit_dolly_cursor_move_camera_input.html#a6478c25975260750ad60187b018ad03d">AzFramework::OrbitDollyCursorMoveCameraInput</a>
-, <a class="el" href="class_az_framework_1_1_orbit_dolly_scroll_camera_input.html#a0545b5c5bafca49e45e800623dcf186d">AzFramework::OrbitDollyScrollCameraInput</a>
 , <a class="el" href="class_az_framework_1_1_pan_camera_input.html#a94c11903bd02c5025319c7487296525c">AzFramework::PanCameraInput</a>
+, <a class="el" href="class_az_framework_1_1_pivot_camera_input.html#a3f76c5071b14d15d370e3cc72d7c7ef6">AzFramework::PivotCameraInput</a>
+, <a class="el" href="class_az_framework_1_1_pivot_dolly_motion_camera_input.html#a8785db8a7652a044c2752e800fd34e1c">AzFramework::PivotDollyMotionCameraInput</a>
+, <a class="el" href="class_az_framework_1_1_pivot_dolly_scroll_camera_input.html#a02314e83f116d39d5f3d89418bd60a3e">AzFramework::PivotDollyScrollCameraInput</a>
 , <a class="el" href="class_az_framework_1_1_rotate_camera_input.html#a47d1d25725cc09f0610b7029a4867c63">AzFramework::RotateCameraInput</a>
 , <a class="el" href="class_az_framework_1_1_scroll_translation_camera_input.html#ab6861cd7d049af5f34c2b94be8ff1a62">AzFramework::ScrollTranslationCameraInput</a>
 , <a class="el" href="class_az_framework_1_1_translate_camera_input.html#a15b9882b1ad6d846a3ee6ba8a8428722">AzFramework::TranslateCameraInput</a>
@@ -376,7 +376,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:51 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:16 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

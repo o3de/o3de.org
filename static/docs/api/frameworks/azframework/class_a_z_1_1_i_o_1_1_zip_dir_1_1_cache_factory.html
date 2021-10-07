@@ -72,9 +72,9 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a21a59f35da68b06e24805f39f75851"><td class="memItemLeft" align="right" valign="top"><a id="a9a21a59f35da68b06e24805f39f75851"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>CacheFactory</b> (InitMethodEnum nInitMethod, uint32_t nFlags=0)</td></tr>
-<tr class="separator:a9a21a59f35da68b06e24805f39f75851"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40950d102cc68704478306a0ab1ade03"><td class="memItemLeft" align="right" valign="top"><a id="a40950d102cc68704478306a0ab1ade03"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CacheFactory</b> (InitMethod nInitMethod, uint32_t nFlags=0)</td></tr>
+<tr class="separator:a40950d102cc68704478306a0ab1ade03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b2b5e09a5573035c16294b9be66685c"><td class="memItemLeft" align="right" valign="top"><a id="a5b2b5e09a5573035c16294b9be66685c"></a>
 CachePtr&#160;</td><td class="memItemRight" valign="bottom"><b>New</b> (const char *szFileName)</td></tr>
 <tr class="separator:a5b2b5e09a5573035c16294b9be66685c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,18 +105,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>BuildFileEntryMap</b>
 <tr class="memitem:a19d591f313366d03ee4a9b4fde45ea58"><td class="memItemLeft" align="right" valign="top"><a id="a19d591f313366d03ee4a9b4fde45ea58"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AddFileEntry</b> (char *strFilePath, const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_file_1_1_c_d_r_file_header.html">ZipFile::CDRFileHeader</a> *pFileHeader, const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_s_extra_zip_file_data.html">SExtraZipFileData</a> &amp;extra)</td></tr>
 <tr class="separator:a19d591f313366d03ee4a9b4fde45ea58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc617212ed906005dbf98a76c401e791"><td class="memItemLeft" align="right" valign="top"><a id="abc617212ed906005dbf98a76c401e791"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePath</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_file_1_1_c_d_r_file_header.html">ZipFile::CDRFileHeader</a> *pFileHeader)</td></tr>
-<tr class="separator:abc617212ed906005dbf98a76c401e791"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d3a24379fe638d0fa835fe6a4e6a52"><td class="memItemLeft" align="right" valign="top"><a id="ae5d3a24379fe638d0fa835fe6a4e6a52"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePath</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_file_1_1_local_file_header.html">ZipFile::LocalFileHeader</a> *pFileHeader)</td></tr>
-<tr class="separator:ae5d3a24379fe638d0fa835fe6a4e6a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cb0b18d446221110e737a82a277a7e2"><td class="memItemLeft" align="right" valign="top"><a id="a4cb0b18d446221110e737a82a277a7e2"></a>
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetFilePath</b> (const char *pFileName, uint16_t nFileNameLength)</td></tr>
-<tr class="separator:a4cb0b18d446221110e737a82a277a7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a899cd60ee622e424d80e4ce747eff3b7"><td class="memItemLeft" align="right" valign="top"><a id="a899cd60ee622e424d80e4ce747eff3b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Validate</b> (const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base.html">FileEntryBase</a> &amp;fileEntry)</td></tr>
-<tr class="separator:a899cd60ee622e424d80e4ce747eff3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c2ea154b2f4e5e829b0f557077a4544"><td class="memItemLeft" align="right" valign="top"><a id="a2c2ea154b2f4e5e829b0f557077a4544"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InitDataOffset</b> (<a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_file_entry_base.html">FileEntryBase</a> &amp;fileEntry, const <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_file_1_1_c_d_r_file_header.html">ZipFile::CDRFileHeader</a> *pFileHeader)</td></tr>
 <tr class="separator:a2c2ea154b2f4e5e829b0f557077a4544"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,9 +129,9 @@ AZStd::string&#160;</td><td class="memItemRight" valign="bottom"><b>m_szFilename
 <tr class="memitem:abd258c9eccfcf157edd925a3368e09a0"><td class="memItemLeft" align="right" valign="top"><a id="abd258c9eccfcf157edd925a3368e09a0"></a>
 <a class="el" href="struct_a_z_1_1_i_o_1_1_zip_dir_1_1_c_zip_file.html">CZipFile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_fileExt</b></td></tr>
 <tr class="separator:abd258c9eccfcf157edd925a3368e09a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa41295aedf6964d76c713ffea10724a"><td class="memItemLeft" align="right" valign="top"><a id="aaa41295aedf6964d76c713ffea10724a"></a>
-InitMethodEnum&#160;</td><td class="memItemRight" valign="bottom"><b>m_nInitMethod</b></td></tr>
-<tr class="separator:aaa41295aedf6964d76c713ffea10724a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bd303680a1316fbc6d37934c5d5f2d5"><td class="memItemLeft" align="right" valign="top"><a id="a2bd303680a1316fbc6d37934c5d5f2d5"></a>
+InitMethod&#160;</td><td class="memItemRight" valign="bottom"><b>m_nInitMethod</b></td></tr>
+<tr class="separator:a2bd303680a1316fbc6d37934c5d5f2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade81b09a7cc3d836b35fd5365836bdba"><td class="memItemLeft" align="right" valign="top"><a id="ade81b09a7cc3d836b35fd5365836bdba"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_nFlags</b></td></tr>
 <tr class="separator:ade81b09a7cc3d836b35fd5365836bdba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +184,7 @@ ZipFile::EHeaderSignatureType&#160;</td><td class="memItemRight" valign="bottom"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
