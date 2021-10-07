@@ -5,9 +5,7 @@ description: ' Open 3D Engine (O3DE) Terrain Surface Gradient List reference. '
 weight: 100
 ---
 
-The **Terrain Surface Gradient List** component defines mappings between a gradient and a surface type on a terrain layer.   
-When you assign a gradient to a surface, the gradient defines the strength of that surface in the displayed terrain: 
-for example, you could define an area where rock shows through a grassy region.
+The **Terrain Surface Gradient List** component defines mappings between a gradient and a surface type on a terrain layer.  When you assign a gradient to a surface, the gradient defines the strength of that surface in the displayed terrain. For example, you can assign a gradient to a rocky surface to make parts of it appear through a grassy region.
 
 ## Usage ##
 
@@ -33,11 +31,21 @@ Use the following request functions with the `TerrainAreaSurfaceRequestBus ` EBu
 
 ### GetSurfaceWeights 
 
-Retrieves all the surfaces assigned to this component, along with the weight values which come from the gradient at the given position.
+Retrieves all of the surfaces that are assigned to this component, along with the gradient's weight value at the given position.
 
-**Parameters**  
-| Parameter | Description | Type | Return |
-| - | - | - | - |
-| InPosition | Position to retrieve information for. | Vector3 | None |
-| SurfaceWeights \[out\] | A list of all the retrieved surfaces and weight values. | SurfaceTagWeightMap | None |
+#### Parameters
+
+##### `InPosition`
+
+Type: Vector3  
+Position to retrieve information for.
+
+##### `SurfaceWeights [out]`
+
+Type: SurfaceTagWeightMap  
+A list of all the retrieved surfaces and weight values. 
+
+#### Returns
+
+None
 
