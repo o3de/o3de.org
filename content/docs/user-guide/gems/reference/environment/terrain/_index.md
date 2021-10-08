@@ -30,5 +30,5 @@ To enable the Terrain Gem, do the following:
 | Component | Description | 
 | - | - |
 | [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner.md) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
-| [Terrain Height Gradient List](/docs/user-guide/components/reference/terrain/terrain_height_gradient_list.md) | Provides terrain height data from a list of gradients. |
-| [Terrain Surface Material List](/docs/user-guide/components/reference/terrain/terrain_surface_material_list.md) | Defines mappings between a surface type and a render material. |
+| [Terrain Height Gradient List](/docs/user-guide/components/reference/terrain/height_gradient_list/) | Provides terrain height data from a list of gradients. |
+| [Terrain Surface Material List](/docs/user-guide/components/reference/terrain/surface_material_list/) | Defines mappings between a surface type and a render material. |

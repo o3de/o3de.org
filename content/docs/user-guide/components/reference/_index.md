@@ -212,8 +212,8 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | Component | Description | 
 | - | - |
 | [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner/) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
-| [Terrain Height Gradient List](/docs/user-guide/components/reference/terrain/terrain_height_gradient_list.md) | Provides terrain height data from a list of gradients. |
-| [Terrain Surface Material List](/docs/user-guide/components/reference/terrain/terrain_surface_material_list.md) | Defines mappings between a surface type and a render material. |
+| [Terrain Height Gradient List](./terrain/height_gradient_list/) | Provides terrain height data from a list of gradients. |
+| [Terrain Surface Material List](./terrain/surface_material_list/) | Defines mappings between a surface type and a render material. |
 
 ### Test  
 
