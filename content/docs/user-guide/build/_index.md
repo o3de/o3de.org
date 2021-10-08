@@ -11,8 +11,8 @@ To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMa
 {{< tabs >}}
 {{< tab name="Windows" codelang="cmd">}}cd <project-directory>
 mkdir build\windows
-cmake -B build/windows -S . -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
-cmake --build build/windows --config profile --target <ProjectName>.GameLauncher Editor -- /m
+cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/windows_vs2019 --config profile --target <ProjectName>.GameLauncher Editor -- /m
 {{< /tab >}}
 {{< tab name="Linux" codelang="bash">}}cd <project-directory>
 mkdir -p build/linux
@@ -21,7 +21,7 @@ cmake --build build/linux --config profile --target <ProjectName>.ServerLauncher
 {{< /tab >}}
 {{< /tabs >}}
 
-Builds created with these commands are located in the `<project-directory>/<build-dir>/bin/<platform>/profile` directory.
+Builds created with these commands are located in the `<project-directory>/<build-dir>/bin/profile` directory.
 
 O3DE requires CMake {{< versions/cmake >}} or higher.
 

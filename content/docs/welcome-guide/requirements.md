@@ -64,9 +64,6 @@ The default Visual Studio installation might not include all of the features tha
       + In the **Installation details** panel on the right, select at least one **Windows 10 SDK**.
    + Select **Desktop development with C++**.
 
-1. On the **Individual components** tab, in **Compilers, build tools, and runtime**:
-   + Select at least one version of the **MSVC v142 - VS 2019 C++ x64/x86 build tools**. If you don't know which to choose, just use **Latest**.
-
 1. Once you've completed your changes, choose the **Install** button in the lower right hand corner, selecting your preferred download option.
   {{< note >}}
   If you've made changes to an existing installation, you might see a **Modify** button in the lower right corner of the options window instead.
