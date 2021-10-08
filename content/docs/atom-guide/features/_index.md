@@ -96,15 +96,30 @@ Atom has a unified mesh format with support for several mesh types:
 *Related to: [Mesh component](/docs/user-guide/components/reference/atom/mesh), [Mesh Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_mesh_feature_processor.html), [Skinned Mesh Feature Processer API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_skinned_mesh_feature_processor_interface.html)*  
 
 
-## Post-processing effects
+## Post-processing effects (PostFX)
 
-Tone Mapping and Color Grading   
-: Techniques that adjust the overall lighting and color in a scene. Tone mapping simulates high dynamic range (HDR) by mapping one set of colors to another set that has a higher range. Color grading adjusts the color output of the render. There are two color grading modes: HDR Color Grading and LDR Color Grading. Tone mapping and color grading can be configured in O3DE using the **Display Mapper**. You can also view a demo of tone mapping and color grading in the Atom Sample Viewer. 
+
+Tonemapping  
+: The process of converting the tonal values of an image from a high dynamic range (HDR) to a lower one. Atom renders in a 16-bit HDR framebuffer and applies tonemapping to make the rendered image suitable for view on a wide variety of digital screen technologies, from standard 48-nit LDR displays (sRGB/rec.709) to various HDR display types that may be 1000-nit or brighter. In O3DE, the **Display Mapper** component configures how the renderer performs tonemapping.
+
+Atom's default tonemapping is [ACES](https://acescentral.com/), which simplifies and standardizes color management by maintaining artistic integrity and fidelity. It allows the best reproduction of color from the renderer to the display and across many modern DCC applications that support ACES. 
 
 *Related to: [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/), [Tonemapping (Atom Sample Viewer)](/docs/atom-guide/atom-sample-viewer/graphics-feature-samples.md#tonemapping)*
 
+
+Color Grading  
+: The process of altering the visual appearance of an image. This technique can present images in different environments on different devices or enhance artistic style. Color grading can enhance various attributes of an image such as contrast, color, saturation, detail, black level, and white point. Color grading and tonemapping often work together to control the color and tone of the resulting image displayed on different devices. In O3DE, you can perform HDR color grading in the render pipeline via the PostFX system, by using a color look-up table (LUT) through the **Look Modification** component, or by applying a single global LDR color grading on the final display output through the Display Mapper component.
+
+*Related to: [Look Modification component](docs/user-guide/components/reference/atom/look-modification.md), [Display Mapper component](/docs/user-guide/components/reference/atom/display-mapper/)*
+
 Post-processing Volumes   
-: PostFX can be weighted within a volume or area by a shape, gradient, or radius. In O3DE, this is done with a shape that is referenced by a **PostFX Shape Weight Modifier** component, with a gradient that is referenced through a **PostFX Gradient Weight Modifier** component, or by distance through a **PostFX Radius Weight Modifier** component.
+: Various mechanisms in O3DE control the blending of PostFX layers by weighting each layer within a volume or area through a shape, gradient signal, or radius.
+
+- A **PostFX Radius Weight Modifier** component sets up a simple blend that's based on distance.
+  
+- A **PostFX Shape Weight Modifier** component and a Shape component sets up a blend that's based on volume and falloff.
+
+- A **PostFX Gradient Weight Modifier** component sets up a more complex blend by using a gradient signal as a masking operation.
  
 *Related to: PostFX components [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/), [PostFX Gradient Weight](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/), [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/), [PostFX Radius Weight Modifier](/docs/user-guide/components/reference/atom/postfx-radius-weight-modifier/)), [Post Process Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_post_process_feature_processor_interface.html)*
 
