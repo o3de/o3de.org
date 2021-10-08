@@ -420,6 +420,79 @@ code
 
 // layouts/partials/hero.html
 
+// banner
+
+a.top-banner
+  color: $o3de-white
+  background-color: $o3de-blue
+  display: block
+  padding: 10px 0
+  transition: .2s ease
+  box-shadow: 0 0 10px rgba(0,0,0,.3)
+  position: relative
+  z-index: 1
+  
+  
+  &:hover 
+    background-color: darken(#1E71EB, 10%)
+
+  .container
+    position: relative
+    
+    @include media-breakpoint-down(lg)
+      max-width: 100%
+
+    .banner-logo
+      background-image: url('/img/logos/O3DECon_Logo-White.svg')
+      background-size: 100% auto
+      float: left
+      width: 182px
+      height: 42px
+      margin-right: 12px
+
+      @include media-breakpoint-down(sm)
+        display: none
+    
+    .mobile-only
+      display: none
+
+      @include media-breakpoint-down(sm)
+        display: inline
+    
+    .desktop-only
+      display: inline
+
+      @include media-breakpoint-down(sm)
+        display: none
+
+    .banner-title
+      font-weight: bold
+
+    .banner-subtitle
+      font-size: .8rem
+
+    .banner-call-to-action
+      position: absolute
+      right: 15px
+      top: 50%
+      transform: translate(0, -50%)
+      background: #fff
+      color: $o3de-blue
+      font-weight: 600
+      padding: 3px 8px
+      font-size: .9rem
+      border-radius: 4px
+      transition: .2s ease
+      border: 2px solid $o3de-white
+      
+      @include media-breakpoint-down(sm)
+        
+      
+      &:hover
+        border-color: $o3de-blue-highlight
+
+
+
 //scales the header proportionally
 $width: '59vw';
 
