@@ -22,8 +22,8 @@ The **Quad Shape** component creates a transparent square plane that's oriented 
 | **Visible** | Enable to always display the shape in the viewport, even when the entity is not selected. Disable to hide the shape when the entity is not selected. | Boolean | `Enabled` |
 | **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Width** | The width of the shape in meters on the local X axis. | 0 - Infinity | `1.0` |
-| **Height** | The height of the shape in meters on the local Y axis. | 0 - Infinity | `1.0` |
+| **Width** | The width of the shape in meters on the local X axis. | 0.0 to Infinity | `1.0` |
+| **Height** | The height of the shape in meters on the local Y axis. | 0.0 to Infinity | `1.0` |
 
 ## QuadShapeComponentRequestsBus
 
@@ -35,7 +35,7 @@ Use the following request functions with the `QuadShapeComponentRequestsBus` EBu
 |`GetQuadHeight`| Returns the **Height** of the quad shape. | None | Height: Float | Yes |
 |`GetQuadOrientation`| Returns the orientation of the quad shape. | None | Orientation: Quaternion | Yes |
 |`GetQuadWidth`| Returns the **Width** of the quad shape. | None | Width: Float | Yes |
-|`SetQuadHeight`| Sets the **Height** of the quad shape. | Height: Float | Returned: Boolean | Yes |
-|`SetQuadWidth`| Sets the **Width** of the quad shape. | Width: Float | Returned: Boolean | Yes |
+|`SetQuadHeight`| Sets the **Height** of the quad shape. | Height: Float | None | Yes |
+|`SetQuadWidth`| Sets the **Width** of the quad shape. | Width: Float | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

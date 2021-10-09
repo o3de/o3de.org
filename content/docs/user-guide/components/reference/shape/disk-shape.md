@@ -23,7 +23,7 @@ The **Disk Shape** component creates a transparent circular surface that's orien
 | **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Radius** | The radius of the shape in meters. | 0 - Infinity | `0.5` |
+| **Radius** | The radius of the shape in meters. | 0.0 to Infinity | `0.5` |
 
 ## DiskShapeComponentRequestsBus
 
@@ -33,6 +33,6 @@ Use the following request functions with the `DiskShapeComponentRequestsBus` EBu
 |-|-|-|-|-|
 | `GetDiskConfiguration` | Returns the configuration of the disk shape. | None | `DiskShapeConfig` object that contains the property `Radius`. | Yes |
 |`GetRadius`| Returns the **Radius** of the disk shape. | None | Radius: Float | Yes |
-|`SetRadius`| Sets the **Radius** of the disk shape. | Radius: Float | Returned: Boolean | Yes |
+|`SetRadius`| Sets the **Radius** of the disk shape. | Radius: Float | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

@@ -27,13 +27,13 @@ The **Tube Shape** component creates a transparent, enclosed cylindrical volume 
 | **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Tube Shape - Radius** | The uniform radius that defines the Tube Shape's width. | 0.1 - Infinity | `1.0` |
-| **Tube Shape - Variable Radius** | The Variable Radius property contains a list with one item for each point of the spline backbone. The list values are added to the uniform Radius values for the corresponding points on the spline to create a tube with a variable radius at each point.  | 0.0 - Infinity | `0.0` |
+| **Tube Shape - Radius** | The uniform radius that defines the Tube Shape's width. | 0.1 to Infinity | `1.0` |
+| **Tube Shape - Variable Radius** | The Variable Radius property contains a list with one item for each point of the spline backbone. The list values are added to the uniform Radius values for the corresponding points on the spline to create a tube with a variable radius at each point.  | 0.0 to Infinity | `0.0` |
 | **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the dimensions of the shape in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
 
 ## Edit mode actions
 
-* Click and drag the black handles at each spline point in the Perspective view to modify the Variable Radius for each section of the Tube Shape.
+* **Left-click** and drag the black handles at each spline point in the viewport to modify the **Variable Radius** for each section of the Tube Shape.
 
 ## TubeShapeComponentRequestsBus
 
@@ -44,7 +44,7 @@ Use the following request functions with the `TubeShapeComponentRequestsBus` EBu
 | `GetRadius` | Returns the **Radius** of the tube. | None | Radius: Float | Yes |
 | `GetTotalRadius` | Returns the total interpolated radius of the tube. This is the sum of the radius and the variable radius. | Index: Integer | Total Radius: Float | Yes |
 | `GetVariableRadius` | Returns the **Variable Radius** along the spline. | Index: Integer | Variable Radius: Float | Yes |
-| `SetRadius` | Sets the **Radius** of the tube. | Radius: Float | Returned: Boolean | Yes |
-| `SetVariableRadius` | Sets the **Variable Radius** of the tube at a spline point. | Index: Integer, Radius: Float | Returned: Boolean | Yes |
+| `SetRadius` | Sets the **Radius** of the tube. | Radius: Float | None | Yes |
+| `SetVariableRadius` | Sets the **Variable Radius** of the tube at a spline point. | Index: Integer, Radius: Float | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

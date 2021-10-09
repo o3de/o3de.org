@@ -23,8 +23,8 @@ The **Capsule Shape** component creates a transparent capsule that's oriented on
 | **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Height** | The height of the shape in meters. The height value must be at least twice the value of **Radius**. | 0 - Infinity | `1.0` |
-| **Radius** | The radius of the shape in meters. The radius value must be no more than half the value of **Height**. | 0 - Infinity | `0.25` |
+| **Height** | The height of the shape in meters. The height value must be at least twice the value of **Radius**. | 0.0 to Infinity | `1.0` |
+| **Radius** | The radius of the shape in meters. The radius value must be no more than half the value of **Height**. | 0.0 to Infinity | `0.25` |
 
 ## CapsuleShapeComponentRequestsBus
 
@@ -33,7 +33,7 @@ Use the following request functions with the `CapsuleShapeComponentRequestsBus` 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetCapsuleConfiguration` | Returns the configuration of the capsule shape. | None | `CapsuleShapeConfig` object that contains the properties `Height` and `Radius`. | Yes |
-| `SetHeight` | Sets the **Height** of the capsule shape. | Height: Float | Returned: Boolean | Yes |
-| `SetRadius` | Sets the **Radius** of the capsule shape. | Radius: Float | Returned: Boolean | Yes |
+| `SetHeight` | Sets the **Height** of the capsule shape. | Height: Float | None | Yes |
+| `SetRadius` | Sets the **Radius** of the capsule shape. | Radius: Float | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

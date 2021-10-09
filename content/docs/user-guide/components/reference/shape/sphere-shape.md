@@ -23,7 +23,7 @@ The **Sphere Shape** component creates a transparent sphere. The dimensions of t
 | **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Radius** | The radius of the shape in meters. | 0 - Infinity | `0.5` |
+| **Radius** | The radius of the shape in meters. | 0.0 to Infinity | `0.5` |
 
 ## SphereShapeComponentRequestsBus
 
@@ -32,6 +32,6 @@ Use the following request functions with the `SphereShapeComponentRequestsBus` E
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetSphereConfiguration` | Returns the configuration of the sphere shape. | None | `SphereShapeConfig` object that contains the property `Radius`. | Yes |
-| `SetRadius` | Sets the **Radius** of the sphere shape. | Radius: Float | Returned: Boolean | Yes |
+| `SetRadius` | Sets the **Radius** of the sphere shape. | Radius: Float | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

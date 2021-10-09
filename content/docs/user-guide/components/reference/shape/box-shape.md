@@ -28,7 +28,7 @@ The **Box Shape** component creates transparent box. The dimensions of the box c
 
 ## Edit mode actions
 
-* Click and drag the black handles on the sides of the Box Shape to resize the box in its local X, Y, and Z dimensions.
+* **Left-click** and drag the black handles on the sides of the Box Shape to resize the box in its local X, Y, and Z dimensions.
 
 ## BoxShapeComponentRequestsBus
 
@@ -38,6 +38,6 @@ Use the following request functions with the `BoxShapeComponentRequestsBus` EBus
 |-|-|-|-|-|
 | `GetBoxConfiguration` | Returns the configuration of the box shape. | None | `BoxShapeConfig` object that contains the property `Dimensions`. | Yes |
 |`GetBoxDimensions`| Returns the **Dimensions** of the box shape. | None | Dimensions: Vector3 | Yes |
-|`SetBoxDimensions`| Sets the **Dimensions** of the box shape. | Dimensions: Vector3 | Returned: Boolean | Yes |
+|`SetBoxDimensions`| Sets the **Dimensions** of the box shape. | Dimensions: Vector3 | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

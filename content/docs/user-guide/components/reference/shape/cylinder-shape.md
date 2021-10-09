@@ -23,8 +23,8 @@ The **Cylinder Shape** component creates a transparent cylinder that's oriented 
 | **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Height** | The height of the shape in meters. | 0 - Infinity | `1.0` |
-| **Radius** | The radius of the shape in meters. | 0 - Infinity | `0.5` |
+| **Height** | The height of the shape in meters. | 0.0 to Infinity | `1.0` |
+| **Radius** | The radius of the shape in meters. | 0.0 to Infinity | `0.5` |
 
 ## CylinderShapeComponentRequestsBus
 
@@ -33,7 +33,7 @@ Use the following request functions with the `CylinderShapeComponentRequestsBus`
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetCylinderConfiguration` | Returns the configuration of the cylinder shape. | None | `CylinderShapeConfig` object that contains the properties `Height` and `Radius`. | Yes |
-| `SetHeight` | Sets the **Height** of the cylinder shape. | Height: Float | Returned: Boolean | Yes |
-| `SetRadius` | Sets the **Radius** of the cylinder shape. | Radius: Float | Returned: Boolean | Yes |
+| `SetHeight` | Sets the **Height** of the cylinder shape. | Height: Float | None | Yes |
+| `SetRadius` | Sets the **Radius** of the cylinder shape. | Radius: Float | None | Yes |
 
 Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

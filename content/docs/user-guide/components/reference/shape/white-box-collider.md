@@ -11,7 +11,7 @@ You can enable collision on white box meshes in **Open 3D Engine (O3DE)** by add
 
 ![White Box static collider.](/images/user-guide/components/reference/shape/white-box-collider-A.gif)
 
-In the image above, the White Box Collider component is applied to a static White Box component. The White Box component can be edited and the changes tested for collision immediately.
+In the image above, the White Box Collider component is added to an entity with a static White Box component. You can test for changes in collision immediately after editing the white box mesh.
 
 ## Provider
 
@@ -32,6 +32,6 @@ In the image above, the White Box Collider component is applied to a static Whit
 | **Physics Materials - Library** | Set the physics material library for this collider. || `surfacetypemateriallibrary (default)` |
 | **Physics Materials - Entire object** | Choose a material from the physics material library for this collider. The material is applied to the entire white box entity. || `<Default Physics Material>` |
 | **Tag** | Set a tag for this collider. Tags can be used to quickly identify components in script or code. | Crc32 | None |
-| **Rest offset** | Bodies will come to rest separated by the sum of their **Rest offset** values. | -Infinity - 50.0 (Must be less than **Contact offset**) | `0.0` |
-| **Contact offset** | Bodies will begin to generate contacts when within the sum of their **Contact offset** values. | 0.0 - 50.0 (Must be greater than **Rest offset**) | `0.02` |
+| **Rest offset** | Bodies will come to rest separated by the sum of their **Rest offset** values. Must be less than **Contact offset**. | -Infinity to 50.0 | `0.0` |
+| **Contact offset** | Bodies will begin to generate contacts when within the sum of their **Contact offset** values.  Must be greater than **Rest offset** | 0.0 - 50.0 | `0.02` |
 | **Body Type** | Select `Static` for non-moving entities. Select `Kinematic` for animated entities. The White Box collider must be set to `Static` to interact with the **PhysX Character Controller**. | Static, Kinematic | `Static` |

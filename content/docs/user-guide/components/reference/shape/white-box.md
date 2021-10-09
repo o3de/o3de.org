@@ -47,7 +47,7 @@ Because White Box is implemented as a component, you can create well-defined ent
 |-|-|-|-|
 | **Mesh Asset** | A pre-existing white box mesh \(`.wbm`\) asset to use for the default white box primitive shape. | The path to the mesh asset.  | None |
 
-![White Box .wbm mesh instancing animation.](/images/user-guide/components/reference/shape/white-box-mesh-instancing.gif)
+![White Box .wbm mesh instancing.](/images/user-guide/components/reference/shape/white-box-mesh-instancing.gif)
 
 ## White Box edit mode 
 
@@ -57,138 +57,138 @@ In edit mode, you can quickly sketch meshes for your entities in O3DE Editor by 
 
 1. Hover over a polygon.
 
-1. Hold the left mouse button.
+1. Hold the **Left Mouse Button**.
 
 1. Drag the polygon along its normal.
 
-    ![White Box move face animation.](/images/user-guide/components/reference/shape/white-box-move-face.gif)
+    ![White Box move face.](/images/user-guide/components/reference/shape/white-box-move-face.gif)
 
 ### Move edge
 
 1. Hover over an edge.
 
-1. Hold the left mouse button.
+1. Hold the **Left Mouse Button**.
 
 1. Drag the edge.
 
-    ![White Box move edge animation.](/images/user-guide/components/reference/shape/white-box-move-edge.gif)
+    ![White Box move edge.](/images/user-guide/components/reference/shape/white-box-move-edge.gif)
 
 ### Move vertex
 
 1. Hover over a vertex. The vertex will highlight.
 
-1. Hold the left mouse button.
+1. Hold the **Left Mouse Button**.
 
 1. Drag the vertex along the edge guides.
 
-    ![White Box move vertex animation.](/images/user-guide/components/reference/shape/white-box-move-vertex.gif)
+    ![White Box move vertex.](/images/user-guide/components/reference/shape/white-box-move-vertex.gif)
 
 ### Scale polygon
 
-1. Select (left click) a polygon.
+1. Select a polygon.
 
 1. Hover over one of the polygon's vertices.
 
-1. Hold the left mouse button.
+1. Hold the **Left Mouse Button**.
 
 1. Drag the vertex toward or away from the center of the selected polygon.
 
-    ![White Box scale face animation.](/images/user-guide/components/reference/shape/white-box-scale-face.gif)
+    ![White Box scale face.](/images/user-guide/components/reference/shape/white-box-scale-face.gif)
 
 ### Scale edge
 
-1. Select (left click) an edge.
+1. Select an edge.
 
 1. Hover over one of the edge's vertices.
 
-1. Hold the left mouse button.
+1. Hold the **Left Mouse Button**.
 
 1. Drag the vertex along the length of the selected edge.
 
-    ![White Box scale edge animation.](/images/user-guide/components/reference/shape/white-box-scale-edge.gif)
+    ![White Box scale edge.](/images/user-guide/components/reference/shape/white-box-scale-edge.gif)
 
 ### Non-uniform scale edge
 
-1. Select (left click) an edge.
+1. Select an edge.
 
 1. Hover over one of the edge's vertices.
 
 1. Hold **Alt** and drag the vertex along the length of the selected edge.
 
-    ![White Box scale edge animation.](/images/user-guide/components/reference/shape/white-box-non-uniform-scale-edge.gif)
+    ![White Box scale edge.](/images/user-guide/components/reference/shape/white-box-non-uniform-scale-edge.gif)
 
 ### Extrude polygon
 
 1. Hover over a polygon.
 
-1. Hold **Ctrl** and left mouse button.
+1. Hold **Ctrl** + **Left Mouse Button**.
 
 1. Drag the polygon along its normal.
 
-    ![White Box extrude face animation.](/images/user-guide/components/reference/shape/white-box-extrude-face.gif)
+    ![White Box extrude face.](/images/user-guide/components/reference/shape/white-box-extrude-face.gif)
 
 ### Extrude edge
 
 1. Hover over an edge.
 
-1. Hold **Ctrl** and left mouse button.
+1. Hold **Ctrl** + **Left Mouse Button**.
 
 1. Drag the edge.
 
-    ![White Box extrude edge animation.](/images/user-guide/components/reference/shape/white-box-extrude-edge.gif)
+    ![White Box extrude edge.](/images/user-guide/components/reference/shape/white-box-extrude-edge.gif)
 
 ### Extrude scale
 
-1. Select (left click) a polygon.
+1. Select a polygon.
 
 1. Hover over one of the polygon's vertices.
 
-1. Hold **Ctrl** and left mouse button.
+1. Hold **Ctrl** + **Left Mouse Button**.
 
 1. Drag the vertex toward or away from the center of the selected polygon to scale.
 
 1. Hover over the selected polygon.
 
-1. Hold the left mouse button.
+1. Hold the **Left Mouse Button**.
 
 1. Drag the polygon along its normal.
 
-    ![White Box extrude scale animation.](/images/user-guide/components/reference/shape/white-box-extrude-scale.gif)
+    ![White Box extrude scale.](/images/user-guide/components/reference/shape/white-box-extrude-scale.gif)
 
 ### Flip edge 
 
 1. Hold **Ctrl + Shift** to show hidden edges.
 
-1. Right click on a hidden edge to flip its orientation.
+1. **Right-click** on a hidden edge to flip its orientation.
 
-    ![White Box flip edge animation.](/images/user-guide/components/reference/shape/white-box-flip-edge.gif)
+    ![White Box flip edge.](/images/user-guide/components/reference/shape/white-box-flip-edge.gif)
 
 ### Hide edge
 
-1. Select (left click) an edge.
+1. Select an edge.
 
 1. Press **H**.
 
-    ![White Box hide edge animation.](/images/user-guide/components/reference/shape/white-box-hide-edge.gif)
+    ![White Box hide edge.](/images/user-guide/components/reference/shape/white-box-hide-edge.gif)
 
 ### Show edge
 
-1. Hold **Ctrl** and **Shift** to show edges.
+1. Hold **Ctrl** + **Shift** to show edges.
 
-1. Select (left click) an edge to unhide it.
+1. Select an edge to unhide it.
 
-    ![White Box extrude edge animation.](/images/user-guide/components/reference/shape/white-box-show-edge.gif)
+    ![White Box extrude edge.](/images/user-guide/components/reference/shape/white-box-show-edge.gif)
 
 ### Hide vertex
 
-1. Select (left click) a vertex.
+1. Select a vertex.
 
 1. Press **H**.
 
-    ![White Box hide edge animation.](/images/user-guide/components/reference/shape/white-box-hide-vertex.gif)
+    ![White Box hide edge.](/images/user-guide/components/reference/shape/white-box-hide-vertex.gif)
 
 ### Show vertex
 
-1. Hold **Ctrl** and **Shift** to show hidden vertices.
+1. Hold **Ctrl** + **Shift** to show hidden vertices.
 
-1. Select (left click) a vertex to unhide it.
+1. Select a vertex to unhide it.

@@ -63,16 +63,16 @@ The **Spline** component creates a line that is 8 meters long, with 4 points. Th
 
 ## Edit mode actions
 
-* **Select a point** - Click any point.
-* **Add to selection** - While holding **Control**, click an unselected point.
-* **Remove from selection** - While holding **Control**, click a selected point.
-* **Select multiple** - Click and drag over multiple points.
-* **Move point(s)** - With point(s) selected, click and drag the transform manipulator.
-* **Add a point** - While holding **Control**, click on a segment between existing points.
-* **Delete a point** - While holding **Alt**, click on a point.
+* **Select a point** - **Left-click** any point.
+* **Add to selection** - Hold **Ctrl** and **Left-click** an unselected point.
+* **Remove from selection** - Hold **Ctrl** and **Left-click** a selected point.
+* **Select multiple** - **Left-click** and drag over multiple points.
+* **Move point(s)** - With point(s) selected, **Left-click** and drag the transform manipulator.
+* **Add a point** - Hold **Ctrl** and **Left-click** on a segment between existing points.
+* **Delete a point** - Hold **Alt** and **Left-click** on a point.
 * **Delete selected points** - Press **Delete** to delete all selected points.
-* **Snap points to position** - While holding **Control + Shift**, click in the Perspective view to snap the selected points to the position.
-* **Snap points to grid** - If the **Snap to grid** tool is enabled in Edit mode, points will snap to positions on the construction plane.
+* **Snap points to position** - Hold **Ctrl + Shift** and **Left-click** in the viewport to snap the selected points to the position.
+* **Snap points to grid** - If the **Enable Grid Snapping** is set to true in viewport options, points will snap to positions on the construction plane.
 
 ## SplineComponentRequestBus
 
@@ -81,8 +81,8 @@ Use the following request functions with the `SplineComponentRequestBus` EBus in
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
 | `GetSpline` | Returns a constant pointer to the underlying spline type. You can use this function to query the spline against raycasts and positions. You can also request information, such as the length of the spline, its position, normal, and tangent at various points along the spline. | None | Spline: `AZ::ConstSplinePtr` | No |
-| `ChangeSplineType` | Changes the type of the spline to Linear, Bezier, or Catmull-Rom. | Spline Type: `AZ::u64` containing RTTI hash of the **Spline Type**. | Returned: Boolean | No |
-| `SetClosed` | Specify `True` to connect the end points of the spline and create a closed loop. Specify `False` to disconnect the end points of the spline and create an open curve.  | SetClosed: Boolean | Returned: Boolean | No |
+| `ChangeSplineType` | Changes the type of the spline to Linear, Bezier, or Catmull-Rom. | Spline Type: `AZ::u64` containing RTTI hash of the **Spline Type**. | None | No |
+| `SetClosed` | Specify `True` to connect the end points of the spline and create a closed loop. Specify `False` to disconnect the end points of the spline and create an open curve.  | SetClosed: Boolean | None | No |
 
 ## SplineComponentNotificationBus
 
