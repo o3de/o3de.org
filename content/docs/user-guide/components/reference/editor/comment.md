@@ -12,9 +12,13 @@ The **Comment** component allows you to add long-form text comments to component
 + Describe how everything in a level ties together.
 + Send descriptions, instructions, or notes to team members.
 
-![The Comment Component](/images/user-guide/components/reference/editor/comment-component.png)
+## Provider ##
+
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Comment properties 
+
+![The Comment Component](/images/user-guide/components/reference/editor/comment-component.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
