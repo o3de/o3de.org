@@ -125,8 +125,8 @@ Use **SlideAlongAxisBasedOnAngle** to modify the position of the look-at target 
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Follow Distance** | The distance (in meters) from which the camera follows the target. Must be greater than **Minimum Follow Distance** and less than **Maximum Follow Distance**. | 0 to Infinity | `0.0` |
-| **Minimum Follow Distance** | Minimum distance (in meters) from which the camera follows the target. Must be less than **Maximum Follow Distance**. | 0 to Infinity | `0.0` |
+| **Follow Distance** | The distance (in meters) from which the camera follows the target. Must be greater than or equal to **Minimum Follow Distance** and less than or equal to **Maximum Follow Distance**. | 0 to Infinity | `0.0` |
+| **Minimum Follow Distance** | Minimum distance (in meters) from which the camera follows the target. Must be less than or equal to **Maximum Follow Distance**. | 0 to Infinity | `0.0` |
 | **Maximum Follow Distance** | Maximum distance (in meters) from which the camera follows the target. | 0 to Infinity | `0.0` |
 | **Zoom In Event Name** | Input Event name that reduces the current follow distance, in effect, zooming in. | String | None |
 | **Zoom Out Event Name** | Input Event name that increases the current follow distance, in effect, zooming out. | String | None |
