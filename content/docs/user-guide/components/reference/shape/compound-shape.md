@@ -11,7 +11,7 @@ The **Compound Shape** component is a container for complex shapes. An entity ca
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Dependencies ##
 

@@ -55,7 +55,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Lmbr Central](./core/lmbr-central) | The Lmbr Central Gem provides required code and assets for running Open 3D Engine Editor. |
+| [O3DE Core (LmbrCentral)](./o3de-core) | The O3DE Core (LmbrCentral) Gem provides required code and assets for running Open 3D Engine Editor. |
 
 ## Debug
 
@@ -82,6 +82,7 @@ toc: true
 | [Surface Data](./environment/surface-data) | The Surface Data Gem provides functionality to emit signals or tags from surfaces such as meshes and terrain. |
 | [Vegetation](./environment/vegetation) | The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine. |
 | [Vegetation Gem Assets](./environment/vegetation-gem-assets) | The Vegetation Assets Gem provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and Landscape Canvas. |
+| [Terrain](./environment/terrain) | The Terrain Gem provides a terrain system that maps height, color, and surface data to regions of the world. It also provides gradient-based and shape-based authoring tools and workflows, integrates with physics for physical simulation and efficiently renders terrain. |
 
 ## Framework
 

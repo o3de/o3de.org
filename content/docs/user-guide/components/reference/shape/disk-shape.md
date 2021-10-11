@@ -11,7 +11,7 @@ The **Disk Shape** component creates a transparent circular surface that's orien
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Properties ##
 

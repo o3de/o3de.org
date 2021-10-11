@@ -11,7 +11,7 @@ The **Cylinder Shape** component creates a transparent cylinder that's oriented 
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/core/lmbr-central)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Properties ##
 
