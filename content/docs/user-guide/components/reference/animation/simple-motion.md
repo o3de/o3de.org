@@ -1,16 +1,14 @@
 ---
-description: ' Use the Simple Motion component to add motion effects to your actor
-  in Open 3D Engine. '
-title: Simple Motion
+linkTitle: Simple Motion
+title: Simple Motion Component
+description: ' Use the Simple Motion component to add motion effects to your actor in Open 3D Engine (O3DE). '
 ---
-
-
 
 You can use the **Simple Motion** component to play a motion without an animation graph. Add this component to an entity with the **[Actor](/docs/user-guide/components/reference/animation/actor/)** component to use a single motion for your actor. For complex motions, refer to the **[AnimGraph](/docs/user-guide/components/reference/animation/animgraph/)** component.
 
 ## Provider
 
-[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
+[EMotionFX](/docs/user-guide/gems/reference/animation/emotionfx)
 
 ## Dependencies
 
