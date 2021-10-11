@@ -211,7 +211,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| [Terrain Physics Collider](/docs/user-guide/components/reference/terrain/terrain_physics_collider.md) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
+| [Terrain Physics Collider](./terrain/terrain_physics_collider/) | Provides terrain data to a physics collider in the form of a heightfield and surface to material mapping. |
 | [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner/) | Spawns a terrain region contained within configurable bounds, and allows prioritization of overlapping terrain layers. |
 | [Terrain Height Gradient List](/docs/user-guide/components/reference/terrain/terrain_height_gradient_list.md) | Provides terrain height data from a list of gradients. |
 
