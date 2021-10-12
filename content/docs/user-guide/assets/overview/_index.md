@@ -12,9 +12,7 @@ This topic provides a broad overview of assets and how they are processed for O3
 
 ## Asset Pipeline overview
 
-
-At a high level, O3DE's Asset Pipeline is easy to understand. Asset Processor runs as a background service while you work with O3DE. You can find Asset Processor in your system tray and right-click its icon {{< icon asset-processor.svg >}} to view its interface. Asset Processor monitors a pre-configured set of input directories for changes. When Asset Processor detects a new or changed file, it determines what type of asset the file contains and then it uses a configurable set of rules to process the file. Once processed, the runtime version of the asset is stored in a separate runtime asset cache for your project. The result is that your project's assets are constantly kept up to date. New and updated assets are ready to use as quickly as possible. The assets you see in **O3DE Editor** are the same assets used by your project runtime.
-
+At a high level, O3DE's Asset Pipeline is easy to understand. Asset Processor runs as a background service while you work with O3DE. You can find Asset Processor in your system tray and right-click its icon {{< icon asset-processor.svg >}} to view its interface. Asset Processor monitors a pre-configured set of directories known as *scan directories* for changes. When Asset Processor detects a new or changed file, it determines what type of asset the file contains and then it uses a configurable set of rules to process the file. Once processed, the runtime version of the asset is stored in a separate runtime asset cache for your project. The result is that your project's assets are constantly kept up to date. New and updated assets are ready to use as quickly as possible. The assets you see in **O3DE Editor** are the same assets used by your project runtime.
 
 Below is a simple flowchart showing the process for a mesh file.
 
@@ -22,15 +20,13 @@ Below is a simple flowchart showing the process for a mesh file.
 
 For more detail on the Asset Pipeline and Asset Processor, and to learn how to use and configure Asset Processor, refer to the topics in the [Asset pipeline](../pipeline) section.
 
-
 ## Asset types
 
-In O3DE, assets can be divided into two categories; input assets, and output assets. Input assets are those that are created by you; inputs for Asset Processor to create runtime assets. Output assets are the product of Asset Processor; the runtime asset stored in the project's asset cache.
+In O3DE, assets can be divided into two categories; source assets, and product assets. Source assets are those that are created by you; inputs for Asset Processor to create runtime assets. Product assets are the product of Asset Processor; the runtime asset stored in the project's asset cache.
 
-In the mesh processing diagram above, the `.fbx` file containing the mesh (input asset) produces an `.azmodel` and several `.azbuffer` files (output assets) in the asset cache. The input assets and the rules that process those assets are the primary concern when creating projects in O3DE.
+In the mesh processing diagram above, the `.fbx` file containing the mesh (source asset) produces an `.azmodel` and several `.azbuffer` files (product assets) in the asset cache. The input assets and the rules that process those assets are the primary concern when creating projects in O3DE.
 
-
-The table below describes some of the most common asset types in O3DE.
+The table below describes some of the most common source asset types in O3DE.
 
 | Asset file | Description  |
 | - | - |
@@ -48,12 +44,10 @@ The table below describes some of the most common asset types in O3DE.
 
 ## Asset Processing
 
-Each input asset type has a default set of rules for processing that can be customized. For graphics and animation assets, O3DE provides tools such as **Scene Settings** and **Texture Settings** that you can use to create custom processing rules on an individual asset basis. With Texture Settings, for example, you can specify how a texture is used, and how it's sampled and filtered. With Scene Settings, you can specify what meshes, skeletons, and motions to process from an `.fbx` file, and how physics colliders are generated.
+Each source asset type has a default set of rules for processing that can be customized. For graphics and animation assets, O3DE provides tools such as **Scene Settings** and **Texture Settings** that you can use to create custom processing rules on an individual source asset basis. With Texture Settings, for example, you can specify how a texture source asset is used, and how it's sampled and filtered. With Scene Settings, you can specify what meshes, skeletons, and motions to process from an `.fbx` source asset, and how physics colliders are generated.
 
-When the asset processing rules are customized, the options are stored in an `.assetinfo` sidecar file. If Asset Processor finds an `.assetinfo` associated with an asset, the asset is processed according to the options in the `.assetinfo` file. Otherwise, Asset Processor uses default rules to process the asset.
+When the asset processing rules are customized, the options are stored in an `.assetinfo` sidecar file. If Asset Processor finds an `.assetinfo` associated with a source asset, the source asset is processed according to the options in the `.assetinfo` file. Otherwise, Asset Processor uses default rules to process the source asset.
 
 If you have many assets to process, you might find using the Texture Settings and Scene Settings tools time consuming. The `.assetinfo` sidecar file is in JSON format and you can automate the generation and modification of `.assetinfo` files with Python. It is possible, for example, to script the export process from a DCC application, so that an `.assetinfo` file is automatically generated for the `.fbx` file. Many assets in O3DE are JSON formatted: `.material`, `.prefab`, and `.physicsmaterial` files, for example, can all be automatically generated and modified with Python.
 
-
 Python can also be used to customize asset processing. Python scripts can be run during asset processing to modify how asset data is generated and output, and Python Asset Builder provides a way to create custom asset processing jobs. For more information, refer to [Process custom assets with Python Asset Builder](../builder/intro).
-
