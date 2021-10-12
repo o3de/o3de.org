@@ -51,7 +51,7 @@ You may, however, want to use a C++ spatial query for one of the following reaso
 
 In our examples below, we will first show C++ queries, as the examples are applicable cross-engine, and the principles for structuring your query are the same for data-driven queries.
 
-### Query Structure
+### Query structure
 
 A query can be constructed and registered in C++ code as follows. It uses the `SimpleGenerator`, which is explained in the Generators section.
 
@@ -103,7 +103,7 @@ The query contains a name and four blocks - `Generators`, `Conditions`, `Scores`
 *   If no position passed all of the conditions, the query will use the Fallbacks in the order they are provided.
     
 
-### Query Syntax Definition
+### Query syntax definition
 
 Spatial query syntax has been designed to be intuitive and legible. The syntax of the query definition itself is given below in Backus–Naur Form.
 
@@ -136,7 +136,7 @@ Unspecified symbols:
   <float>           A C++ floating point number
 ```
 
-### General Concepts
+### General concepts
 
 *   `SpatialQueryConstruction` namespace
     
@@ -258,7 +258,7 @@ Firstly, it may be the case that if the agent cannot find an appropriate positio
 
 Second, you may be able to save significant processing overhead by querying for a cheaper common case and using fallbacks for edge cases. Typically the primary query might generate positions up to a smaller range where - given your level design rules - you would expect to find a suitable position. The fallback would expand that range significantly and may also relax some of the constraints. This gives you robust, graceful degradation in any areas that don't quite meet expectations, without making all of your requests more expensive.
 
-### Data Driven Spatial Queries
+### Data driven spatial queries
 
 _This page documents engine-agnostic details of data driven spatial queries. See_ [Spatial Query System (Lumberyard)](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/1664745521) _or_ [Spatial Query System (UE4)](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/1349910533) _for engine-specific workflows_
 
@@ -332,7 +332,7 @@ The following is a listing of all Spatial Query functions available.
 
 ### Generators  
 
-#### **TagGenerator**
+#### `TagGenerator`
 
 *   Generates a list of entities around the object, containing the specific tags, up to the given range. 
     
@@ -345,7 +345,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Tag: (StringHash)`
             
 
-#### **CoverPointGenerator**
+#### `CoverPointGenerator`
 
 *   Generates a list of cover points around the object, within the given range.
     
@@ -356,7 +356,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Object(SpatialQueryObject)`
             
 
-#### **FreeSpaceGenerator**
+#### `FreeSpaceGenerator`
 
 *   Generate a grid of points within a given range, spaced out with the given density.
     
@@ -369,7 +369,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Density(float)`
             
 
-#### **FreeSpaceGenerator3D**
+#### `FreeSpaceGenerator3D`
 
 *   Generates a grid of points in a sphere around the object.
     
@@ -382,7 +382,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Density(float)`
             
 
-#### **RandomPointGenerator**
+#### `RandomPointGenerator`
 
 *   Generates a number of 'randomly-positioned' points on the navigation mesh around the object, up to the given radius.
     
@@ -395,7 +395,7 @@ The following is a listing of all Spatial Query functions available.
         *   `NumPoints(int)`
             
 
-#### **GridPointGenerator**
+#### `GridPointGenerator`
 
 *   Generates a set of points on the navigation mesh in a grid pattern around the object, up to the given radius and at a given density.
     
@@ -408,7 +408,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Density(float)`
             
 
-#### **RadialPointGenerator**
+#### `RadialPointGenerator`
 
 *   Generates a set of points on the navigation mesh in a radial pattern around the query's origin entity, up to the given radius and at a given density.  
     The Spokes parameter determines the radial pattern layout and by default is 1
@@ -424,7 +424,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Spokes(int)`
             
 
-#### **CoverRailGenerator**
+#### `CoverRailGenerator`
 
 *   Generates cover rails around the object, up to the given radius and at a given density. Only cover points that match one of the provided coves types are included.
     
@@ -439,7 +439,7 @@ The following is a listing of all Spatial Query functions available.
         *   `Density(float)`
             
 
-#### **SameCoverRailGenerator**
+#### `SameCoverRailGenerator`
 
 *   Generates cover points along the rail that the given object is occupying, limited by a given radius and using the given density.  
     Only cover points that match one of the provided are included.
@@ -455,12 +455,12 @@ The following is a listing of all Spatial Query functions available.
         *   `Density(float)`
             
 
-#### **CurrentCoverPointGenerator**
+#### `CurrentCoverPointGenerator`
 
 *   Returns the querier's current cover point.
     
 
-#### **OctreeRandomNavigableGenerator**
+#### `OctreeRandomNavigableGenerator`
 
 *   Generates random points within a sphere, spherical shell, or cone which are navigable according to the octree
     
@@ -489,7 +489,7 @@ The following is a listing of all Spatial Query functions available.
         *   PointRadius: float (default 0.0) Causes points too close to each other to be removed
             
 
-#### **OctreeGridNavigableGenerator**
+#### `OctreeGridNavigableGenerator`
 
 *   Generates points in a grid within a sphere, spherical shell, or a cone which are navigable according to the octree
     
@@ -522,7 +522,7 @@ The following is a listing of all Spatial Query functions available.
 
 ### Logical functions  
 
-#### **Direct logical operations**
+#### Direct logical operations
 
 *   `LessThan(lhs, rhs)`
     
@@ -539,7 +539,7 @@ The following is a listing of all Spatial Query functions available.
 *   `Not(boolean)`
     
 
-#### **Grouped logical operations**
+#### Grouped logical operations
 
 *   `AllOf(expressions...)`
     
@@ -563,19 +563,19 @@ The following is a listing of all Spatial Query functions available.
 *    The weight multiplier parameter must be either a float or a boolean. 
     
 
-#### **Chance(probability)**
+#### `Chance(probability)`
 
 *   0 <= `probability` <= 1
     
     *   Returns true if a generated random number in the range of 0-1 is below the given probability value.
         
 
-#### **HasTag(tag)**
+#### `HasTag(tag)`
 
 *   Returns true if the current point has the given tag.
     
 
-#### **Distance3D(object)**
+#### `Distance3D(object)`
 
 *   Returns the 3D distance from a point to an object. 
     
@@ -585,12 +585,12 @@ The following is a listing of all Spatial Query functions available.
 *   Returns the 3D distance from a point to the closest entity with a specified relationship with Querier. 
     
 
-#### **DistanceClosestFriendly(maxDistance)**
+#### `DistanceClosestFriendly(maxDistance)`
 
 *   Returns the 3D distance from a point to the closest entity with a Friendly relationship with Querier. 
     
 
-#### **DistanceClosestHostile(maxDistance)**
+#### `DistanceClosestHostile(maxDistance)`
 
 *   Returns the 3D distance from a point to the closest entity with a Hostile relationship with Querier. 
     
@@ -600,12 +600,12 @@ The following is a listing of all Spatial Query functions available.
 *   Returns true if there is any entity within range with the given relationship.
     
 
-#### **IsFriendlyWithinRange(range)**
+#### `IsFriendlyWithinRange(range)`
 
 *   Returns true if there is any friendly entity within range.
     
 
-#### **IsHostileWithinRange(range)**
+#### `IsHostileWithinRange(range)`
 
 *   Returns true if there is any hostile entity within range.
     
@@ -615,17 +615,17 @@ The following is a listing of all Spatial Query functions available.
 *   Performs physics raycast from point to object, with configurable offsets for both the start and endpoint.
     
 
-#### **CanShootTargetHead**
+#### `CanShootTargetHead`
 
 *   Specialization of raycast. Performs raycast from point with offset at Querier eye level, to Target's eye level. Returns true if no hits.
     
 
-#### **CanShootTargetTorso**
+#### `CanShootTargetTorso`
 
 *   Specialization of raycast. Performs raycast from point with offset at Querier eye level, to Target's torso level. Returns true if no hits.
     
 
-#### **EnemyLineOfSightBlocked**
+#### `EnemyLineOfSightBlocked`
 
 *   Specialization of raycast. Performs raycast from point with offset at Querier's torso level, to Target's eye level. Returns true if any hits.
     
@@ -635,17 +635,17 @@ The following is a listing of all Spatial Query functions available.
 *   Returns true if the current cover point is owned by the given object.
     
 
-#### **CanReachBeforeTarget**
+#### `CanReachBeforeTarget`
 
 *   Returns true if the distance from a point to Querier is less than the distance from the point to Target.
     
 
-#### **EyeOffset(object)**
+#### `EyeOffset(object)`
 
 *   Returns the offset of the object's eye as a KytVec3.
     
 
-#### **TorsoOffset(object)**
+#### `TorsoOffset(object)`
 
 *   Returns the offset of the object's torso as a KytVec3.
     
@@ -655,12 +655,12 @@ The following is a listing of all Spatial Query functions available.
 *   Returns the relative direction (forward, backward, left, right, up, or down) of the object as a KytVec3.
     
 
-#### **DirectionTo(object)**
+#### `DirectionTo(object)`
 
 *   Get a direction vector from the object to the candidate position.
     
 
-#### **DirectionFrom(object)**
+#### `DirectionFrom(object)`
 
 *   Get a direction vector from the candidate position to the object.
     
@@ -670,7 +670,7 @@ The following is a listing of all Spatial Query functions available.
 *   Returns the dot product of the two vectors.
     
 
-#### **Directness**
+#### `Directness`
 
 *   Returns the directness of a given point: (`distanceFromQuerierToTarget` - `distanceFromPointToTarget`) / `distanceFromQuerierToPoint`)
     
@@ -688,17 +688,17 @@ The following is a listing of all Spatial Query functions available.
         *   max: float
             
 
-#### **Absolute(function)**
+#### `Absolute(function)`
 
 *   Returns the absolute value of the result from the input function. 
     
 
-#### **Heading**
+#### `Heading`
 
 *   Returns the cosine of the angle between the querier's forward direction and the direction to the current point.
     
 
-#### **IsCoverOfType(coverType)**
+#### `IsCoverOfType(coverType)`
 
 *   Returns true if the current point has the given cover type.
     
@@ -718,7 +718,7 @@ The following is a listing of all Spatial Query functions available.
 *   Calculates the pathing distance between the current point and the given object. 
     
 
-#### **OctreeSurfaceDistance(Object)**
+#### `OctreeSurfaceDistance(Object)`
 
 *   Calculates the approximate distance between the current point and the nearest octree surface
     
@@ -751,7 +751,7 @@ The following is a listing of all Spatial Query functions available.
 
 ## Debugging spatial queries
 
-### Debugging Parser Errors
+### Debugging parser errors
 
 When working with parsed Spatial Queries (either from a .sqs file in Lumberyard, or an SQS Asset in Unreal Engine), you may sometimes make errors when writing your queries. This can lead to errors that cause your spatial query to be unparseable, meaning that Kythera will not be able to use it.
 
@@ -761,7 +761,7 @@ In these situations, we output error logging to the Console:
 
 If you have modified your spatial query and it no longer runs, be sure to check here first.
 
-### Visual Debugging
+### Visual debugging
 
 Visual debugging of the spatial query system is available in Kythera. This is enabled on a per-entity basis from within the Kythera Inspector, by setting **Debugging**→**DebugDraw**→**SpatialQuery**→**Enable** to true for that entity:
 
@@ -980,7 +980,7 @@ REGISTER_SQS_FUNCTION(IsIt3Function);
 CREATE_SQS_FUNCTION(IsIt3Function);
 ```
 
-### SQS Function Aliases
+### SQS function aliases
 
 ![SQS function aliases shown in debug draw](/images/user-guide/gems/kythera-ai/sqs-function-aliases.png)
 
