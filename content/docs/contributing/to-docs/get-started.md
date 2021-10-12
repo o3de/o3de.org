@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---
 
-Anyone can be a contributor to Open 3D Engine (O3DE) docs and determine their own level of participation. Here, we'll help you navigate the documentation process so you can decide how you'd like to contribute.
+Anyone can be a contributor to **Open 3D Engine (O3DE)** docs and determine their own level of participation. Here, we'll help you navigate the documentation process so you can decide how you'd like to contribute.
 
 ## Before you do anything
 

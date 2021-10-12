@@ -5,7 +5,7 @@ description: Learn about the asset data file types that Open 3D Engine (O3DE) su
 toc: true
 ---
 
-Refer to the following tables for supported asset data file types in O3DE.
+Refer to the following tables for supported asset data file types in **Open 3D Engine (O3DE)**.
 
 O3DE supports the `.xml` file format and the following image file formats:
 + `.bmp`

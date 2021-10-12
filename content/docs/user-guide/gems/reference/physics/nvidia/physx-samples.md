@@ -5,4 +5,4 @@ description: The PhysX Samples Gem provides sample assets and scripts to use wit
 toc: true
 ---
 
-The PhysX Samples Gem provides sample assets and scripts to use with the PhysX Gem in Open 3D Engine (O3DE).
+The PhysX Samples Gem provides sample assets and scripts to use with the PhysX Gem in **Open 3D Engine (O3DE)**.

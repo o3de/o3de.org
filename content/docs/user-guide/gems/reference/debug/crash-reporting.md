@@ -5,4 +5,4 @@ description: The Crash Reporting Gem provides support for external crash reporti
 toc: true
 ---
 
-The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine (O3DE) projects.
+The Crash Reporting Gem provides support for external crash reporting for **Open 3D Engine (O3DE)** projects.

@@ -5,7 +5,7 @@ description: Get a closer look at the Open 3D Engine, including the common workf
 weight: 600
 ---
 
-Now that you've [set up Open 3D Engine (O3DE)](../setup) and [created your first project](../create), learn a bit about the common workflows in O3DE, and take a tour of O3DE's primary content creation tool, **O3DE Editor**.
+Now that you've [set up](../setup) **Open 3D Engine (O3DE)** and [created your first project](../create), learn a bit about the common workflows in O3DE, and take a tour of O3DE's primary content creation tool, **O3DE Editor**.
 
 | Topic | Description |
 | - | - |

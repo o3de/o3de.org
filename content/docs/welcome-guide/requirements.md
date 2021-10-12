@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
+**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
 prerequisites and configuration](#software-prerequisites)
 section, each prerequisite is listed along with any specific configuration steps
 required.
