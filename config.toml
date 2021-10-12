@@ -4,6 +4,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
 
 enableGitInfo = true
+enableRobotsTXT = true 
 
 [markup.highlight]
 style = "paraiso-dark"
