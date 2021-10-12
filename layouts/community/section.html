@@ -1,20 +1,13 @@
 {{ define "main" }}
+{{ partial "top-banner.html" . }}
 {{ partial "community/hero.html" . }}
-<section class="container-xl">
-  <div class="row">
-    <!-- <div class="col-12">
-      <h1>
-        {{ .Title }}
-      </h1>
-    {{ with .Content }}
-      {{ . }}
-    {{ end }}  
-    </div> -->
-  </div>
+{{ partial "community/join.html" . }}
+<div class="community-blog d-flex align-items-center text-light">
+  <div class="container">
     <div class="col-12">
       {{ partial "blog-display.html" . }}
     </div>
-    </div> 
-</section> 
+  </div> 
+</div> 
 {{ partial "footer.html" . }}  
 {{ end }}

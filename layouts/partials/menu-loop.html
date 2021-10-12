@@ -13,7 +13,6 @@
       {{ if .HasChildren }} dropdown {{ end }}">
       <a href="{{ .URL }}" {{ if eq .Post "external" }} target="_blank"  {{ end }}
       class="
-        text-light
         nav-link 
         navbar-item
         {{ if $isHere }} is-active{{ end }} 
@@ -27,6 +26,7 @@
         {{ end }}>
         {{ .Name }}
       </a>
+      <div></div>
 
       {{ if .HasChildren }}
         <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">

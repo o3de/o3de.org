@@ -1,13 +1,18 @@
 {{ define "main" }}
+{{ partial "top-banner.html" . }}
 {{ partial "download/hero.html" . }}
 {{ with .Content }}
-<section class="container-xl mt-5 pt-5">
+<section class="container pt-lg-5">
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 col-lg-5 pr-lg-5">
+      {{ partial "download/download.html" . }}
+    </div>
+    <div class="col-12 col-lg-7">
       {{ . }}
     </div>
   </div>
 </section>
 {{ end }}   
+{{ partial "download/getting-started.html" . }}  
 {{ partial "footer.html" . }}  
 {{ end }}

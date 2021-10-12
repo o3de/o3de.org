@@ -1,57 +1,19 @@
 {{ $allSections  := site.Sections }} <!-- "blog" and "docs" -->
-{{ $docsSections := where $allSections "Section" "docs" }} <!-- "getting-started" and "deployment" -->
-{{ $thisUrl      := .RelPermalink }}
-{{ $thisSection := .CurrentSection.RelPermalink }}
-<!-- thisUrl = {{- $thisUrl -}} -->
+{{ $docsSections := where $allSections "Section" "docs" }}
 
-{{ range $docsSections }}
-  <nav class="section-nav" id="section-nav">
-    {{ range .Site.Sections }}
-      <div class="accordion" id="accordionExample">
-        <div class="card border-left-0 border-right-0 rounded-0"> <!-- root -->
-          <div class="card-header">
-             <a id="docs-nav-title" href="{{ .Permalink }}"><h1>{{ .LinkTitle | markdownify }}</h1></a>
-          </div>
-        </div>
-        {{ range .Sections }}
-        <div class="card border-left-0 border-right-0 rounded-0">
-          <div class="card-header" id="{{ .CurrentSection.Params.menu_uuid }}">
-              <button class="btn btn-link btn-block text-left collapsed" 
-              type="button" data-toggle="collapse" 
-              data-target="#{{ .CurrentSection.Params.menu_uuid }}collapse" 
-              aria-expanded="true" aria-controls="{{ .CurrentSection.Params.menu_uuid }}collapse">
-                  {{ .LinkTitle | markdownify }}
-              </button>
-          </div>
-          <div id="{{ .CurrentSection.Params.menu_uuid }}collapse" 
-          class="menu-body collapse" 
-            aria-labelledby="{{ .CurrentSection.Params.menu_uuid }}" data-parent="#accordionExample">
-            <div class="card-body">
-                <ul>
-                  <li>
-                  <a class="section-nav-link" href="{{ .Permalink }}"> 
-                    {{ .Page.LinkTitle | markdownify }}
-                  </a>
-                  </li>
-                </ul>
-                {{ range .CurrentSection.Pages }}
-                <ul class="section-nav-subsection">
-                  <li>
-                    {{ if .IsSection }}<i id="docs-chevron" class="fas fa-chevron-right"></i> {{ end }}<a class="section-nav-link" href="{{ .Permalink }}"> 
-                    {{ .Page.LinkTitle | markdownify }}
-                    </a>
-                      {{ if .IsSection }}
-                          {{ partial "section-nav-recurse.html" . }}
-                      {{ end }}
-                    </li>
-                  </ul>
-                {{ end }}
-            </div>
-          </div>
-        </div>
-        {{ end }}
-      </div>
+<form id="search"
+    action='{{ with .GetPage "/search" }}{{.Permalink}}{{end}}' method="get" class="align-items-center justify-content-center">
+    <div class="search-input-view">
+        <label hidden for="search-input">Search site</label>
+        <img src="/img/home/Search_dark.svg" class="search-icon"/>
+        <input type="text" id="search-input" class="form-control form-control-sm" name="query" placeholder="Search site"/>
+    </div>
+</form>
+
+<nav class="docs-nav" id="docs-nav">
+  <ul>
+    {{ range $docsSections }}
+      {{ partial "section-nav-walk.html" . }}
     {{ end }}
-  </nav>
-{{ end }}
+  </ul>
 </nav>

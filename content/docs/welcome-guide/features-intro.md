@@ -1,14 +1,12 @@
 ---
 linktitle: Features
 title: Open 3D Engine Features
-description: ' Read about the high-level features provided with Open 3D Engine (O3DE). '
+description: Read about the high-level features provided with Open 3D Engine (O3DE).
 weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
-
-Open 3D Engine (O3DE) is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. O3DE has a physically based renderer and a suite of tools to build and process assets, simulate physics, and create animation and cinematics. The renderer and tools are all wrapped in a modular framework that you can modify and extend with your preferred development tools.  
+Open 3D Engine (O3DE) is an open-source, cross-platform, real time 3D engine that you can use to create high performance interactive experiences, including games and simulations. O3DE has a physically-based renderer and a suite of tools to build and process assets, simulate physics, and create animation and cinematics. The renderer and tools are all wrapped in a modular framework that you can modify and extend with your preferred development tools.
 
 ## Open source
 
@@ -107,9 +105,7 @@ O3DE comes with a high-performance networking Gem that gives you the features yo
 
 * Local prediction latency compensation with backward reconciliation for server authority.
 
-* Detachable player behaviors supporting automated desync detection and correction.
-
-* RPC and future elastic fault tolerant multi-server support with prediction and reconciliation.
+* Customizable player behaviors supporting automated desync detection and correction.
 
 <!-- For more information, read [O3DE Networking](/docs/user-guide/networking). -->
 
@@ -151,9 +147,9 @@ The O3DE Editor and tools offer extension support through [Python 3](https://www
 
 All of Open 3D Engine is backed with a high performance math library, designed to take advantage of modern CPU capabilities for fast and precise calculations.
 
-* Libraries use optimal SIMD code for x64 SSE and ARM platforms, and fallback scalar code where optimizations aren't available.
+* Libraries use optimal SIMD code for x64 SSE and ARM Neon platforms, and fallback scalar code where optimizations aren't available.
 
-* Transforms hold separate position, quaternion, and scale fields to reduce the number of necessary conversions.
+* SIMD-accelerated trigonometric functions that operate faster than equivalent scaler operations and are capable of performing multiple trigonometric calculations in a single call.
 
 ## Simplified project management
 

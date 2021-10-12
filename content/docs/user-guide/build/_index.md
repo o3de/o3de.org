@@ -1,31 +1,27 @@
 ---
-title: "Build"
-description: >-
-    Learn the basics of Open 3D Engine's support for the CMake build system, and get started with
-    your first full build of the Open 3D Engine Source and Atom test project.
+title: Build
+description: Learn the basics of Open 3D Engine's support for the CMake build system, and get started with your first full build of the Open 3D Engine Source and Atom test project.
 weight: 200
 ---
 
-{{< preview-new >}}
+To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMake build tools](https://cmake.org/). While most configurable build systems make it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project files, and then perform native builds.
 
-To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMake build system](https://cmake.org/). While most configurable build systems make
-it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project and build files.
-This is an alternative to other build systems where compiler toolchains are explicitly called.
-
-Here's an example showing how to build the editor while also adding support for the `AtomTest` project, packaged as a Gem:
-
-<!-- TODO: Add other host platforms/toolchains here, max 1/platform -->
+ Once you've [registered O3DE](/docs/welcome-guide/setup) and [created a project](/docs/welcome-guide/create), you can build your project with these commands:
 
 {{< tabs >}}
-{{< tab name="Windows" codelang="cmd">}}cd <O3DE dir>
-mkdir windows_vs2019
-cmake -B windows_vs2019 -S . -G "Visual Studio 16 2019" ^
-    -DLY_3RDPARTY_PATH=<3rdParty_fullpath> ^
-    -DLY_UNITY_BUILD=ON ^
-    -DLY_PROJECTS=AtomTest
-cmake --build windows_vs2019 --config profile --target Editor -- /m
+{{< tab name="Windows" codelang="cmd">}}cd <project-directory>
+mkdir build\windows
+cmake -B build/windows -S . -G "Visual Studio 16 2019" -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/windows --config profile --target <ProjectName>.GameLauncher Editor -- /m
+{{< /tab >}}
+{{< tab name="Linux" codelang="bash">}}cd <project-directory>
+mkdir -p build/linux
+cmake -B build/linux -S . -DLY_3RDPARTY_PATH=<absolute-path-to-packages>
+cmake --build build/linux --config profile --target <ProjectName>.ServerLauncher Editor
 {{< /tab >}}
 {{< /tabs >}}
+
+Builds created with these commands are located in the `<project-directory>/<build-dir>/bin/<platform>/profile` directory.
 
 O3DE requires CMake {{< versions/cmake >}} or higher.
 
@@ -37,3 +33,10 @@ O3DE requires CMake {{< versions/cmake >}} or higher.
 | [Packages](packages/) | Learn about the Open 3D Engine package system, used to ship binaries along with your Gem or project. |
 | [CMake settings reference](reference/) | Reference for user-configurable CMake settings specific to O3DE. |
 | [Troubleshooting](troubleshooting/) | How to debug and troubleshoot CMake and build problems. |
+
+## Related topics
+
+| Topic | Description |
+|---|---|
+| [Windows suppport](/docs/user-guide/platforms/windows) | Prerequisites for building on Windows 10. |
+| [Linux support](/docs/user-guide/platforms/linux) | Prerequisites for building on Linux. |

@@ -2,14 +2,14 @@
 title: Light Component
 linktitle: Light
 description: ' Open 3D Engine (O3DE) Light component reference. '
-weight: 100
 toc: true
 ---
 
-{{< preview-new >}}
 The **Light** component simulates soft studio light with various types of punctual and area lights. The Light component supports the punctual lights Point (simple punctual) and Spot (simple punctual), which are infinitesimally small. These are slightly more performant than their area light counterparts, but they produce simpler light effects. The Light component also supports the area lights Point (sphere), Spot (disk), Capsule, Quad, and Polygon. These most accurately simulate real-world light sources.
 
+
 ## Light types
+
 Point (sphere)
 : Emits light from the surface of a sphere in all directions, similar to a standard light bulb. The Point (sphere) light type supports shadow effects.
 
@@ -26,28 +26,29 @@ Quad
 : Emits light from the surface of a rectangle in 3D space. The Quad light type is most useful for illuminating a larger area with diffuse light. By default, the Quad light type uses linearly transformed cosines to calculate accurate lighting. It also supports a fast approximation calculation that's more performant but produces lower-quality light. The Quad light type can emit light from one or both directions.
 
 Polygon   
-: Emits light from an arbitrarily shaped polygon in 3D space. This polygon can have up to 64 points, but the Polygon light type becomes more expensive as the number of points in the polygon increases. The Polygon light type is the most expensive light type, but it produces very realistic area lighting. The Polygon light type can emit light from one or both directions.
+: Emits light from an arbitrarily shaped polygon in 3D space that are approximated by linearly transformed cosines. This polygon can have up to 64 points, but the Polygon light type becomes more expensive as the number of points in the polygon increases. The Polygon light type is the most expensive light type, but it produces very realistic area lighting. The Polygon light type can emit light from one or both directions.
 
 ## Provider
 
-[Atom Gem](/docs/user-guide/gems/reference/atom)
+[Atom Gem](/docs/user-guide/gems/reference/rendering/atom/atom/)
 
 
 ## Dependencies
 
-| Light Type | Dependency |
-| - | - |
-| Point (sphere) | [Sphere Shape](\docs\user-guide\components\reference\shape\sphere-shape.md) | 
-| Point (simple punctual) | - | 
-| Spot (disk) | [Disk Shape](\docs\user-guide\components\reference\shape\disk-shape.md) |
-| Spot (simple punctual) | - | 
-| Capsule | [Capsule Shape](\docs\user-guide\components\reference\shape\capsule-shape.md) |
-| Quad | [Quad Shape](\docs\user-guide\components\reference\shape\quad-shape.md) | 
-| Polygon | [Polygon Prism Shape](\docs\user-guide\components\reference\shape\polygon-prism-shape.md) |
+Depending on the light type, the Light component has the following dependencies:
+
+- **Point (sphere)**: [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/)
+- **Point (simple punctual)**: None
+- **Spot (disk)**: [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/)
+- **Spot (simple punctual)**: None
+- **Capsule**: [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/)
+- **Quad**: [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/)
+- **Polygon**: [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/)
 
 
 
 ## Properties
+
 {{< tabs name="light-component-ui" >}}
 {{% tab name="Default" %}}
 

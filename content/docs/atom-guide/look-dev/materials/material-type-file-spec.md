@@ -4,8 +4,6 @@ description: "Material type files (`*.materialtype`) are in written JSON format.
 toc: true
 ---
 
-{{< preview-new >}}
-
 Material type files (`*.materialtype`) are in written JSON format and contain the following elements.
 
 ### **propertyLayout**  
@@ -16,7 +14,7 @@ Material type files (`*.materialtype`) are in written JSON format and contain th
 
 {{< note >}}
   The `general` group is built-in and always available, even if there is no `general` group defined in the `groups` section. This group is typically used to contain any basic properties of this material type.
-{{< note >}}
+{{< /note >}}
 
 * **properties**: Defines the groups of properties that can be configured in a material file. Each group is defined as a key/value pair, where *key* is the `group id`, and *value* is an array of property definitions. 
 
@@ -55,15 +53,18 @@ In this example, we reference the ShadowMap and DepthPass shaders.
 
 ### **functor**
 An array of material functors. Each one reads material property values, performs some logic or calculations, and sets shader inputs accordingly. These can be defined in Lua or C++. Each functor data contains the following:
+
 * **type**: The name of the functor type. This will be "Lua" for custom Lua script functors, or the name of specialized functor type (defined in C++).
-<!-- [Future work] See [TBD link] for a list of available functor types. -->
+
 * **args**: An object containing key/value pairs of all the arguments to send to this functor. The attributes vary depending on functor type. For 'Lua' functors, there is a single 'file' argument that references the Lua file. 
-<!-- [Future work] See [TBD link] for a list of available functor types and their expected arguments. -->
+
+{{< todo >}}
+Need a list of available functor types and their expected arguments. 
+{{< /todo >}}
 
 ### **uvNameMap** *(optional)*
 This array lists default identifiers for mesh UV streams. 
-<!-- [Future work] For more information on UV streams, see ___. 
-- If the artists uses these names for their UV streams in DCC (e.g. Maya), the engine will automatically connect those buffers to the appropriate UV stream in the shaders. 
 
-- In O3DE, artists can connect the streams in the Material Component. This is necessary if the UV stream names do not match. 
--->
+{{< todo >}}
+Need a document about UV streams. 
+{{< /todo >}}

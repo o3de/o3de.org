@@ -2,6 +2,7 @@
 linkTitle: Vegetation
 title: Vegetation Gem
 description: The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine.
+weight: 100
 toc: true
 ---
 
@@ -31,7 +32,7 @@ Dynamic vegetation differs from static vegetation in the following ways.
 | World size | Limited only by O3DE maximum world size | Maximum of 2K-4K |
 | Templates | Slices | Not templatable |
 | Saved as | Procedural mechanisms | Static placement data |
-| Generated | In\-game just\-in\-time placement | As level data |
+| Generated | In-game just-in-time placement | As level data |
 -->
 
 You can further modify dynamic vegetation with components from other categories. To use the full capabilities of the dynamic vegetation system, enable the following Gems:

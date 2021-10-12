@@ -19,7 +19,7 @@ You can configure the virtual gamepad's behavior in UI Editor. To configure virt
 
 1. For each component, select an **Input Channel**.
 
-![\[Input Channel selection for the VirtualGamepadButton\]](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
+![Input Channel selection for the VirtualGamepadButton](/images/user-guide/gems/gems-system-gem-virtualgamepad-2.png)
 
 For more information about input in O3DE, see Input in Open 3D Engine.
 
@@ -39,7 +39,7 @@ The Virtual Gamepad Gem features two components that you can use to customize in
 
 You can enable the virtual gamepad for runtime by creating instructions that loads the virtual gamepad UI canvas. You can do this with C++, Lua, or Script Canvas. For more information, see UICanvasManager and UICanvasComponent.
 
-The following example Lua script displays a virtual gamepad UI canvas if touch screen support is detected\.
+The following example Lua script displays a virtual gamepad UI canvas if touch screen support is detected.
 
 ```lua
 local touchDevice =

@@ -6,6 +6,10 @@ description: Use AWS Gems to access AWS cloud-connected services in Open 3D Engi
 
 Amazon Web Services (AWS) is a cloud platform that offers an extensive and powerful collection of services. You can use these cloud services to upload or download files, access databases, execute code in the cloud, and perform many other operations. Using a cloud service saves you the trouble of maintaining the infrastructure that it relies on.
 
+For an overview of AWS Gems in Open 3D Engine (O3DE), check out the video below. Then, read on to learn more about using AWS in your O3DE projects!
+
+{{< youtube id="EG0C9enezzo" title="AWS Gems in O3DE" >}}
+
 ## Cloud-based resources
 
 When you use an AWS cloud service, you do so through a *resource*: a cloud-based entity that's available for your use, help, or support. For example, resources include databases, file storage locations, the code that a service runs, and more.

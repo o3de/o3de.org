@@ -1,54 +1,55 @@
 ---
-description: ' Use the O3DE UI 2.0 line edit component to capture free-form
-  text from the user. '
-title: O3DE UI line edit component
+linktitle: Line Edit
+title: O3DE UI Line Edit Component
+description: Use the O3DE UI line edit component to capture free-form text from the user.
+toc: true
 ---
 
-{{< preview-migrated >}}
-
-The **line edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries\. Use the line edit component to enable users to enter free\-form text\. Be mindful of the length of text intended for a field, and always pair with a useful, clear label\.
+The **line edit** component is one of several types of input boxes offered by the Qt and O3DE UI libraries. Use the line edit component to enable users to enter free-form text. Be mindful of the length of text intended for a field, and always pair with a useful, clear label.
 
 ## Anatomy of the line edit widget<a name="line-edit-anatomy"></a>
 
- **Line edit** widgets have several customization options\. Standard features including the following elements:
+ **Line edit** widgets have several customization options. Standard features including the following elements:
 
-![\[component line edit anatomy\]](/images/tools-ui/component-line-edit-anatomy.png)
+![component line edit anatomy](/images/tools-ui/component-line-edit-anatomy.png)
 
 1.  **Label**
 
-   While not technically part of the widget, you should give input boxes a label in the UI layout\.
+   While not technically part of the widget, you should give input boxes a label in the UI layout.
 
 1.  **Placeholder text**
 
-   \(Optional\) Hint text set in the UI, or using `setPlaceholderText()`, appears here when the widget text is empty\.
+   (Optional) Hint text set in the UI, or using `setPlaceholderText()`, appears here when the widget text is empty.
 
 1.  **Input box**
 
-   Text entered by the user, or that you set using `setText()`, appears here\.
+   Text entered by the user, or that you set using `setText()`, appears here.
 
 1.  **Tooltip**
 
-   \(Optional\) If you set tooltip text for the widget, it will appear near where the user hovers\.
-![\[component line edit anatomy clear\]](/images/tools-ui/component-line-edit-anatomy-clear.png)
+   (Optional) If you set tooltip text for the widget, it will appear near where the user hovers.
+
+   ![component line edit anatomy clear](/images/tools-ui/component-line-edit-anatomy-clear.png)
 
 1.  **Clear button**
 
-   \(Optional\) If you enable the clear button for the widget, it will appear when the input box is not empty\. When users choose the clear button, the input box returns to an empty value\.
-![\[component line edit anatomy error state\]](/images/tools-ui/component-line-edit-anatomy-error-state.png)
+   (Optional) If you enable the clear button for the widget, it will appear when the input box is not empty. When users choose the clear button, the input box returns to an empty value.
+
+   ![component line edit anatomy error state](/images/tools-ui/component-line-edit-anatomy-error-state.png)
 
 1.  **Error state indicator**
 
-   \(Optional\) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button\.
+   (Optional) If you set a validator for the input box, and validation fails, an error state indicator icon appears at the end of the input box, before the clear button.
 
 1.  **Error tooltip**
 
-   \(Optional\) When an error state exists, if an error message has been set for the widget, it will appear near where the user hovers\. This tooltip appears in place of the normal tooltip text while an error state exists\. If you don't set the error message, the default error tooltip text is "Invalid input"\.
+   (Optional) When an error state exists, if an error message has been set for the widget, it will appear near where the user hovers. This tooltip appears in place of the normal tooltip text while an error state exists. If you don't set the error message, the default error tooltip text is "Invalid input".
 
 ## Basic line edit<a name="line-edit-basic"></a>
 
-![\[component line edit basic\]](/images/tools-ui/component-line-edit-basic.png)
+![component line edit basic](/images/tools-ui/component-line-edit-basic.png)
 
-A simple **line edit** component starts with the `QLineEdit` Qt widget\. You can set additional options by changing widget settings in the Qt Designer or in code\.
+A simple **line edit** component starts with the `QLineEdit` Qt widget. You can set additional options by changing widget settings in the Qt Designer or in code.
 
  **Example**
 
@@ -69,9 +70,9 @@ lineEdit->setClearButtonEnabled(true);
 
 ## Line edit with search<a name="line-edit-search-style"></a>
 
-![\[component line edit search style\]](/images/tools-ui/component-line-edit-search-style.png)
+![component line edit search style](/images/tools-ui/component-line-edit-search-style.png)
 
-The `AzQtComponents::LineEdit` class provides several static style functions that apply a style to a `QLineEdit` widget\. One example is the search style, which adds a search icon\. Additional styles are documented in the API reference for [AzQtComponents::LineEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_line_edit.html)\.
+The `AzQtComponents::LineEdit` class provides several static style functions that apply a style to a `QLineEdit` widget. One example is the search style, which adds a search icon. Additional styles are documented in the API reference for [AzQtComponents::LineEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_line_edit.html).
 
  **Example**
 
@@ -90,7 +91,7 @@ connect(lineEdit, &QLineEdit::textEdited, this, [](const QString& newText) {
 
 ## Listening for line edit changes<a name="line-edit-listening-for-changes"></a>
 
-The following examples demonstrate how to listen for various types of text changes in a `QLineEdit` widget\.
+The following examples demonstrate how to listen for various types of text changes in a `QLineEdit` widget.
 
  **Example**
 
@@ -115,9 +116,9 @@ connect(lineEdit, &QLineEdit::editingFinished, this, [lineEdit]() {
 
 ## Line edit as a drop target<a name="line-edit-drop-target"></a>
 
-![\[component line edit drop target style\]](/images/tools-ui/component-line-edit-drop-target-style.png)
+![component line edit drop target style](/images/tools-ui/component-line-edit-drop-target-style.png)
 
-The following examples demonstrate how to apply or remove the drop target style to a `QLineEdit` widget\.
+The following examples demonstrate how to apply or remove the drop target style to a `QLineEdit` widget.
 
  **Example**
 
@@ -137,11 +138,11 @@ AzQtComponents::LineEdit::removeDropTargetStyle(lineEdit);
 
 ## Line edit with validator<a name="line-edit-validator"></a>
 
-![\[component line edit error state\]](/images/tools-ui/component-line-edit-error-state.png)
+![component line edit error state](/images/tools-ui/component-line-edit-error-state.png)
 
-In the following example, both a validator and an error message for the error tooltip have been defined\. The standard tooltip appears when a mouse hovers over the widget\. The error tooltip appears when a mouse hovers over the widget while an error state exists\.
+In the following example, both a validator and an error message for the error tooltip have been defined. The standard tooltip appears when a mouse hovers over the widget. The error tooltip appears when a mouse hovers over the widget while an error state exists.
 
-Error states occur when a validator has been set and its validation has failed\.
+Error states occur when a validator has been set and its validation has failed.
 
  **Example**
 
@@ -163,9 +164,9 @@ AzQtComponents::LineEdit::setErrorMessage(lineEdit, QStringLiteral("Value must b
 
 ## Disabled line edit<a name="line-edit-disabled"></a>
 
-![\[component line edit disabled\]](/images/tools-ui/component-line-edit-disabled.png)
+![component line edit disabled](/images/tools-ui/component-line-edit-disabled.png)
 
-In the following example, the widget and its features have been disabled in code\.
+In the following example, the widget and its features have been disabled in code.
 
  **Example**
 
@@ -176,9 +177,9 @@ In the following example, the widget and its features have been disabled in code
 lineEdit->setEnabled(false);
 ```
 
-## C\+\+ API reference<a name="line-edit-api-ref"></a>
+## C++ API reference<a name="line-edit-api-ref"></a>
 
-For details on the **line edit** API, see the following topic in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **line edit** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::LineEdit](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_line_edit.html)
 
 Relevant Qt documentation includes the following topics:
@@ -187,5 +188,5 @@ Relevant Qt documentation includes the following topics:
 ## Related links<a name="line-edit-related-links"></a>
 
 For components related to the **line edit** component, see the following topics:
-+  [Browse edit](uidev-browse-edit-component.md)
-+  [Number edit spinbox](uidev-spinbox-component.md)
++  [Browse edit](uidev-browse-edit-component/)
++  [Number edit spinbox](uidev-spinbox-component/)

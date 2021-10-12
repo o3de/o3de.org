@@ -1,25 +1,28 @@
 {{ $title := site.Title }}
 {{ $desc  := site.Params.description | markdownify }}
 {{ $source := site.Params.sourceRepo }}
-<div class="scalable home-hero d-flex align-items-center">
-  <div class="container-fluid hero-inner">
+<div class="scalable home-hero d-flex flex-column align-items-center justify-content-around">
+  <div class="container hero-inner">
     <div class="row">
-      <div class="col col-12 col-xl-5 pl-5">
+      <div class="col col-12 col-md-7 pb-4 pt-4">
           <h1 class="title">
             {{ $title }}
           </h1>
+          <h4 class="title mt-0">
+            An open-source, real-time 3D development engine
+          </h4>
 
           {{ with $desc }}
-          <p class="desc">
+          <p class="desc mt-5">
             {{ . }}
           </p>
           {{ end }}
 
           <p class="buttons">
-            <a href={{ $source }} class="my-3 mr-3 btn btn-lg text-white download-cta">Clone on GitHub</a>
-            <a href="/docs" class="my-3 mr-3 btn btn-lg text-white learnmore-cta">Learn more</a>
+            <a href="/download" class="mt-4 btn btn-lg text-white download-cta">Download O3DE</a>
           </p>
         </div>
       </div>
     </div>
+    <p class="home-hero-copyright">COPYRIGHT &copy APOCALYPSE STUDIOS INC. USED BY O3DE WITH PERMISSION</p>
 </div>

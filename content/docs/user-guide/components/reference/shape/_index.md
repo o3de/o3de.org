@@ -1,34 +1,37 @@
 ---
-title: Shape components
+title: Shape Components
 linktitle: Shape
 description: ' Using shape components in Open 3D Engine (O3DE). '
 ---
 
-{{< preview-migrated >}}
+
 
 Shape components generate helper geometries that can be used to define shapes for area lights and shape gradients, as well as volumes and areas for AI, audio, fog, spawners, vegetation, PhysX and triggers. Components such as Area Light that require a shape to function will prompt you to select a shape component when they are added to an entity.
 
 ## Shape components available in O3DE ##
 
-* [Box Shape](/docs/user-guide/components/reference/shape/box-shape.md) - Generates box geometry for volumes and triggers.
-* [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape.md) - Generates capsule geometry for volumes and triggers.
-* [Compound Shape](/docs/user-guide/components/reference/shape/compound-shape.md) - Builds complex geometry from simple shapes for volumes and triggers.
-* [Cylinder Shape](/docs/user-guide/components/reference/shape/cylinder-shape.md) - Generates cylinder geometry for volumes and triggers.
-* [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape.md) - Generates disk geometry for areas and triggers.
-* [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape.md) - Generates n-sided prism geometry for volumes and triggers.
-* [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape.md) - Generates quad-plane geometry for areas and triggers.
-* [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape.md) - Generates sphere geometry for volumes and triggers.
-* [Spline](/docs/user-guide/components/reference/shape/spline.md) - Generates lines and curves for paths.
-* [Tube Shape](/docs/user-guide/components/reference/shape/tube-shape.md) - Generates tube geometry for volumes and triggers.
+* [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape/) - Generates axis aligned box geometry for terrains, volumes and triggers.
+* [Box Shape](/docs/user-guide/components/reference/shape/box-shape/) - Generates box geometry for volumes and triggers.
+* [Capsule Shape](/docs/user-guide/components/reference/shape/capsule-shape/) - Generates capsule geometry for volumes and triggers.
+* [Compound Shape](/docs/user-guide/components/reference/shape/compound-shape/) - Builds complex geometry from simple shapes for volumes and triggers.
+* [Cylinder Shape](/docs/user-guide/components/reference/shape/cylinder-shape/) - Generates cylinder geometry for volumes and triggers.
+* [Disk Shape](/docs/user-guide/components/reference/shape/disk-shape/) - Generates disk geometry for areas and triggers.
+* [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) - Generates n-sided prism geometry for volumes and triggers.
+* [Quad Shape](/docs/user-guide/components/reference/shape/quad-shape/) - Generates quad-plane geometry for areas and triggers.
+* [Sphere Shape](/docs/user-guide/components/reference/shape/sphere-shape/) - Generates sphere geometry for volumes and triggers.
+* [Spline](/docs/user-guide/components/reference/shape/spline/) - Generates lines and curves for paths.
+* [Tube Shape](/docs/user-guide/components/reference/shape/tube-shape/) - Generates tube geometry for volumes and triggers.
 
 ## Using shape components ##
 
 An entity can have only one Shape component.
 
-  > **Important:** Always use the Shape's component properties to scale the shape, such as the **Dimensions**, **Height**, and **Radius** properties. Do not use the entity's Transform component to scale a Shape component.
-  >
-  >An entity containing a shape component should have a uniform and normalized scale; that is, the **Scale** property of the Transform component should be **X:** `1.0`, **Y:** `1.0`, **Z:** `1.0`. If a shape component is scaled non-uniformly, rendering and intersection tests use the largest vector of the Transform component's **Scale** property, yielding undesirable results.
-  >
+{{< important >}}
+Always use the Shape's component properties to scale the shape, such as the **Dimensions**, **Height**, and **Radius** properties. Do not use the entity's Transform component to scale a Shape component.
+{{< /important >}}
+
+An entity containing a shape component should have a uniform and normalized scale; that is, the **Scale** property of the Transform component should be **X:** `1.0`, **Y:** `1.0`, **Z:** `1.0`. If a shape component is scaled non-uniformly, rendering and intersection tests use the largest vector of the Transform component's **Scale** property, yielding undesirable results.
+
 
 By default, shapes are always visible in the Open 3D Engine (O3DE) editor. You can hide shapes on non-selected entities by disabling the **Visible** property in the shape component.
 

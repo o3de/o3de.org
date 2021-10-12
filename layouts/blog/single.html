@@ -4,6 +4,8 @@
 
 {{ define "main" }}
 {{ partial "blog/hero.html" . }}
-{{ partial "blog/content.html" . }}
+<div class="blog-single-content">
+    {{ partial "blog/content.html" . }}
+</div>
 {{ partial "footer.html" . }}
 {{ end }}

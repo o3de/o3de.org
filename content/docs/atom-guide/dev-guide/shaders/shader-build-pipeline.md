@@ -5,8 +5,6 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 Shaders in Atom are written in the **Amazon Shading Language (AZSL)**, coupled with specialized configuration files that add various metadata.
 
 Shaders are made up of several files:  
@@ -17,14 +15,13 @@ Shaders are made up of several files:
 - **`*.srgi`**: (Optional) Contains AZSL code, which combines partial SRGs.
 - **`.shadervariantlist`**: (Optional) Describes what shader variants must be compiled for a given .shader file. 
   
-
 ## AZSL Files
 
-**AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/_index.md) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  
+**AZSL** is a variation of HLSL, with a few extensions that make it easier to author and maintain shaders. Most programming rules that apply to AZSL are the same for HLSL. You can refer to the [AZSL and Compiler](azsl/) section and the [Microsoft DirectX HLSL](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-reference) documentation for more details.  
 
 There are a few key extensions of AZSL, which affect the shader build pipeline:
-- **Shader Resource Groups (SRGs)**: A container for application visible variables, which are defined in code with the class `ShaderResourceGroup`. SRGs can be defined in `.azsl` files as *partial SRGs*, which define only a portion of an SRG. You can combine the partial SRGs in a single `.srgi` file. Learn more about SRGs in the [AZSL Reference](azsl/reference.md).
-- **Shader Variant Options**: Application visible variables, which the developer can choose to compile as static constants or as regular global variables. The compiled shader code results in **shader variants**, or variations of the shader code, which minimize branching in runtime. You can specify the variants you want to pre-build in a `.shadervariantlist` file. Learn more about shader variant options in the [AZSL Reference](azsl/reference.md).
+- **Shader Resource Groups (SRGs)**: A container for application visible variables, which are defined in code with the class `ShaderResourceGroup`. SRGs can be defined in `.azsl` files as *partial SRGs*, which define only a portion of an SRG. You can combine the partial SRGs in a single `.srgi` file.<!-- Learn more about SRGs in the [AZSL Reference](azsl/reference/).DRAFT TOPIC-->
+- **Shader Variant Options**: Application visible variables, which the developer can choose to compile as static constants or as regular global variables. The compiled shader code results in **shader variants**, or variations of the shader code, which minimize branching in runtime. You can specify the variants you want to pre-build in a `.shadervariantlist` file.<!-- Learn more about shader variant options in the [AZSL Reference](azsl/reference/).DRAFT TOPIC-->
 
 ### AZSL file (`.azsl`)
 

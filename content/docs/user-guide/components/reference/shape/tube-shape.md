@@ -5,17 +5,17 @@ description: ' Open 3D Engine (O3DE) Tube Shape component reference. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
 
-The **Tube Shape** component creates a transparent, enclosed cylindrical volume that's fit to a [Spline component](/docs/user-guide/components/reference/shape/spline.md). The dimensions of the tube can be edited with the **Radius** and **Variable Radius** properties, and by editing the [Spline component](/docs/user-guide/components/reference/shape/spline.md). The Tube Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
+
+The **Tube Shape** component creates a transparent, enclosed cylindrical volume that's fit to a [Spline component](/docs/user-guide/components/reference/shape/spline/). The dimensions of the tube can be edited with the **Radius** and **Variable Radius** properties, and by editing the [Spline component](/docs/user-guide/components/reference/shape/spline/). The Tube Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Dependencies ##
 
-[Spline component](/docs/user-guide/components/reference/shape/spline.md)
+[Spline component](/docs/user-guide/components/reference/shape/spline/)
 
 ## Properties ##
 

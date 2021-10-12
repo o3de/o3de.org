@@ -1,7 +1,7 @@
 {{ $hastoc := .Params.toc }}
 {{ $toc := .TableOfContents }}
 
-<p> On this page:</p>
-{{ if ($hastoc) }}
+<div class="docs-right-toc">
+  <p>IN THIS ARTICLE</p>
   {{ $toc }}
-{{ end }}
+</div>

@@ -8,11 +8,11 @@ The game uses Audio Translation Layer (ATL) controls to communicate with the aud
 
 To see the list of audio control types, see [ATL Controls Pane](/docs/user-guide/interactivity/audio/audio-controls-editor/atl-controls-pane).
 
-## ATL Default Controls {#audio-controls-default}
+## ATL Default Controls 
 
 The **Audio Controls Editor** automatically creates the following ATL controls by default. You can find the controls in the `default_controls` folder.
 
-![[ATL controls that the Audio Controls Editor automatically creates by default.]](/images/user-guide/audio/audio-atl-editor-default.png)
+![ATL controls that the Audio Controls Editor automatically creates by default.](/images/user-guide/audio/audio-atl-editor-default.png)
 
 | Name | Description |
 | --- | --- |

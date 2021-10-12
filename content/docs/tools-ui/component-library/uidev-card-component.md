@@ -1,77 +1,79 @@
 ---
-description: ' Use the O3DE UI 2.0 card component as a container to organize
-  component property settings and actions together. '
-title: O3DE UI card component
+linktitle: Card
+title: O3DE UI Card Component
+description: Use the O3DE UI card component as a container to organize component property settings and actions together.
+toc: true
 ---
 
-{{< preview-migrated >}}
-
-Use cards to display information in highly interactive, flexible containers\. Users can easily stack, reorder, and collapse these containers\. All content within a card should relate to only one idea\. Cards should be easy to scan for relevant and actionable information, and are predominantly used to display editable details for a component or a class\.
+Use cards to display information in highly interactive, flexible containers. Users can easily stack, reorder, and collapse these containers. All content within a card should relate to only one idea. Cards should be easy to scan for relevant and actionable information, and are predominantly used to display editable details for a component or a class.
 
 For example, a card might include common properties, action buttons, advanced settings, and a context menu for additional actions:
 
-![\[component card concept\]](/images/tools-ui/component-card-concept.png)
+![component card concept](/images/tools-ui/component-card-concept.png)
 
-To make it easier for users to scan a card, make the content layout consistent\. This includes using the same font size, style, and spacing for headings and content\. Be consistent with your use of images and icons, and primary and secondary actions \(if required\)\. Card titles are key to allowing users to easily scan the content, so make sure the titles are highly visible\.
+To make it easier for users to scan a card, make the content layout consistent. This includes using the same font size, style, and spacing for headings and content. Be consistent with your use of images and icons, and primary and secondary actions (if required). Card titles are key to allowing users to easily scan the content, so make sure the titles are highly visible.
 
 ## Anatomy of the card widget<a name="card-anatomy"></a>
 
-Cards allow for a certain amount of customization\. The basic layout of a card includes the following features:
+Cards allow for a certain amount of customization. The basic layout of a card includes the following features:
 
-![\[component card anatomy\]](/images/tools-ui/component-card-anatomy.png)
+![component card anatomy](/images/tools-ui/component-card-anatomy.png)
 
 1.  **Expander** and **header bar**
 
-   Cards expand or collapse when users click the arrow on the top left\.
+   Cards expand or collapse when users click the arrow on the top left.
 
-   If the card can be moved, users press and drag the header bar to reposition the card\.
+   If the card can be moved, users press and drag the header bar to reposition the card.
 
 1.  **Card icon**
 
-   \(Optional\) Cards can have their own unique icon related to their purpose\. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/)\.
-**Note**
+    (Optional) Cards can have their own unique icon related to their purpose. For the full list of icons, see [O3DE component icons](/docs/tools-ui/icon-assets/uidev-component-icons/).
+   
+    {{< note >}}
 Two icons are required for new components:
-A 16 x 16 SVG with a background box for the perspective window\.
-An SVG for everywhere else in the editor, without a background box\.
+
++ A 16 x 16 SVG with a background box for the perspective window.
++ An SVG for everywhere else in the editor, without a background box.
+{{< /note >}}
 
 1.  **Card name**
 
-   Each card has their own name related to their purpose\. You can configure the name to change from white to orange to signify that content in the widget has been modified\.
+   Each card has their own name related to their purpose. You can configure the name to change from white to orange to signify that content in the widget has been modified.
 
 1.  **Help icon**
 
-   \(Optional\) Cards can display a link to documentation that describes the card's functionality\.
+   (Optional) Cards can display a link to documentation that describes the card's functionality.
 
 1.  **Context menu icon**
 
-   \(Optional\) The card's context menu opens when users choose this icon\. The context menu can also be opened by right\-clicking the card header with a mouse\.
+   (Optional) The card's context menu opens when users choose this icon. The context menu can also be opened by right-clicking the card header with a mouse.
 
 1.  **Card content widget**
 
-   This area contains the content widget for the card\. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component.md) component, but cards can hold any widget\.
+   This area contains the content widget for the card. Most cards contain a [reflected property editor](uidev-reflected-property-editor-component/) component, but cards can hold any widget.
 
 1.  **Advanced options**
 
-   \(Optional\) When a secondary content widget is set, a label for it is displayed here\. The Advanced options menu expands or collapses when users choose the arrow on the left of the label\. You can customize the label's text\.
+   (Optional) When a secondary content widget is set, a label for it is displayed here. The Advanced options menu expands or collapses when users choose the arrow on the left of the label. You can customize the label's text.
 
 1.  **Notifications**
 
-   \(Optional\) [Notifications](#card-notification) that you added to the card are displayed here\. Buttons or other widgets can be added to notifications as a means of resolving them\.
+   (Optional) [Notifications](#card-notification) that you added to the card are displayed here. Buttons or other widgets can be added to notifications as a means of resolving them.
 
 1.  **Call to action region**
 
-   \(Optional\) Supplemental actions should be placed at the bottom of the card\. We refer to this as the Call to Action region\. Typically, a call to action is represented by a button added to the bottom of a content widget, or in a card notification\. Avoid using primary buttons here because they should be reserved for the overall action on a page\. Instead, use secondary or tertiary buttons, link buttons, and icon buttons here\.
+   (Optional) Supplemental actions should be placed at the bottom of the card. We refer to this as the Call to Action region. Typically, a call to action is represented by a button added to the bottom of a content widget, or in a card notification. Avoid using primary buttons here because they should be reserved for the overall action on a page. Instead, use secondary or tertiary buttons, link buttons, and icon buttons here.
 
 ## Basic card<a name="card-basic"></a>
 
-![\[component card basic\]](/images/tools-ui/component-card-basic.png)
+![component card basic](/images/tools-ui/component-card-basic.png)
 
 The simplest card consists of these components:
 + Card header
   + Expand/collapse icon
-  + \(Optional\) Card icon
+  + (Optional) Card icon
   + Card name
-  + \(Optional\) Context menu \(enabled by default\)
+  + (Optional) Context menu (enabled by default)
 + Card content
 
  **Example**
@@ -100,11 +102,11 @@ card->setContentWidget(new QWidget());
 
 ## Card with context menu and help icon<a name="card-context-and-help"></a>
 
-![\[component card context and help\]](/images/tools-ui/component-card-context-and-help.png)
+![component card context and help](/images/tools-ui/component-card-context-and-help.png)
 
-Display a help icon on the card to redirect users to a webpage for documentation\.
+Display a help icon on the card to redirect users to a webpage for documentation.
 
-The following code demonstrates how to set up a help link and start a context menu\.
+The following code demonstrates how to set up a help link and start a context menu.
 
  **Example**
 
@@ -128,9 +130,9 @@ connect(ui->basicCard, &AzQtComponents::Card::contextMenuRequested, this, [](con
 
 ## Card with secondary content<a name="card-secondary-content"></a>
 
-![\[component card secondary content\]](/images/tools-ui/component-card-secondary-content.png)
+![component card secondary content](/images/tools-ui/component-card-secondary-content.png)
 
-Display a secondary content widget\. Its title is customizable\.
+Display a secondary content widget. Its title is customizable.
 
  **Example**
 
@@ -144,9 +146,9 @@ card->setSecondaryContentWidget(new QWidget());
 
 ## Card with modified content<a name="card-content-modified"></a>
 
-![\[component card content modified\]](/images/tools-ui/component-card-content-modified.png)
+![component card content modified](/images/tools-ui/component-card-content-modified.png)
 
-Configure the care title to change color when the content is edited, different from the parent slice, or has not been saved yet\. We recommend enabling this functionality on all cards\.
+Configure the care title to change color when the content is edited, different from the parent slice, or has not been saved yet. We recommend enabling this functionality on all cards.
 
  **Example**
 
@@ -157,12 +159,13 @@ card->header()->setContentModified(true);
 
 ## Disabled card<a name="card-disabled"></a>
 
-![\[component card disabled\]](/images/tools-ui/component-card-disabled.png)
+![component card disabled](/images/tools-ui/component-card-disabled.png)
 
-Fully disable the card, including header bar icons and child widgets\.
+Fully disable the card, including header bar icons and child widgets.
 
-**Note**
-If you want the card content to be disabled, but allow users to still use the help button and context menu in the header bar, use the [Mock Disabled](#card-mock-disabled) state\.
+{{< note >}}
+If you want the card content to be disabled, but allow users to still use the help button and context menu in the header bar, use the [Mock Disabled](#card-mock-disabled) state.
+{{< /note >}}
 
  **Example**
 
@@ -173,9 +176,9 @@ card->setEnabled(false);
 
 ## Mock disabled card<a name="card-mock-disabled"></a>
 
-![\[component card mock disabled\]](/images/tools-ui/component-card-mock-disabled.png)
+![component card mock disabled](/images/tools-ui/component-card-mock-disabled.png)
 
-Disable primary and secondary widgets on the card, but keep the header bar enabled\. The following card features remain functional:
+Disable primary and secondary widgets on the card, but keep the header bar enabled. The following card features remain functional:
 + Expand/collapse
 + Help
 + Context menu
@@ -189,12 +192,13 @@ card->mockDisabledState(true);
 
 ## Card with warning state<a name="card-warning-state"></a>
 
-![\[component card warning state\]](/images/tools-ui/component-card-warning-state.png)
+![component card warning state](/images/tools-ui/component-card-warning-state.png)
 
-Set a warning state on the card header\.
+Set a warning state on the card header.
 
-**Note**
-You can independently set the disabled state and warning state\.
+{{< note >}}
+You can independently set the disabled state and warning state.
+{{< /note >}}
 
  **Example**
 
@@ -205,17 +209,18 @@ card->header()->setWarning(true);
 
 ## Card with notification<a name="card-notification"></a>
 
-![\[component card notification\]](/images/tools-ui/component-card-notification.png)
+![component card notification](/images/tools-ui/component-card-notification.png)
 
-Add notifications to indicate misconfigurations and other errors\. Remove the notification when the issue is resolved\.
+Add notifications to indicate misconfigurations and other errors. Remove the notification when the issue is resolved.
 
 Customize the notification with the following:
 + Message
-+ \(Optional\) Action button
-+ \(Optional\) Custom widget
++ (Optional) Action button
++ (Optional) Custom widget
 
-**Note**
-In addition to buttons, you can use `addFeature(QWidget*)` to add a custom widget to the warning notification\.
+{{< note >}}
+In addition to buttons, you can use `addFeature(QWidget*)` to add a custom widget to the warning notification.
+{{< /note >}}
 
  **Example**
 
@@ -233,9 +238,9 @@ QPushButton* button = notification->addButtonFeature("Clear Warnings");
 connect(button, &QPushButton::clicked, ui->functionalCard, &AzQtComponents::Card::clearNotifications);
 ```
 
-## C\+\+ API reference<a name="card-api-ref"></a>
+## C++ API reference<a name="card-api-ref"></a>
 
-For details on the **card** API, see the following topics in the [O3DE UI Extensions C\+\+ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
+For details on the **card** API, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::Card](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card.html)
 +  [AzQtComponents::CardHeader](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_header.html)
 +  [AzQtComponents::CardNotification](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_card_notification.html)
@@ -243,4 +248,4 @@ For details on the **card** API, see the following topics in the [O3DE UI Extens
 ## Related links<a name="card-related-links"></a>
 
 For additional information related to the **card** component, see the following topics:
-+  [Reflected Property Editor](uidev-reflected-property-editor-component.md)
++  [Reflected Property Editor](uidev-reflected-property-editor-component/)

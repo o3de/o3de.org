@@ -4,9 +4,7 @@ description: ' Use the serialization context to provide persistence for C++ obje
 title: Serialization Context
 ---
 
-{{< preview-migrated >}}
-
-You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C\+\+ objects or any O3DE type\. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` \(runtime type information\), as in the following example:
+You can use the serialization context \(`\dev\Code\Framework\AzCore\AzCore\Serialization\SerializeContext.*`\) to provide persistence for C++ objects or any O3DE type. To implement this, make an `AzTypeInfo` declaration or use `AZ_RTTI` (runtime type information), as in the following example:
 
 ```
 class SerializedObject
@@ -32,9 +30,9 @@ AZ_TYPE_INFO_SPECIALIZE(AZStd::chrono::system_clock::time_point, "{5C48FD59-7267
 AZ_TYPE_INFO_SPECIALIZE(float, "{EA2C3E90-AFBE-44d4-A90D-FAAF79BAF93D}");
 ```
 
-## Fields {#component-entity-system-reflection-serialization-context-fields}
+## Fields 
 
-To associate a text string with the address to a field of a serialized object, use the `Field` function, as in the following example\. You can use the builder pattern to serialize multiple fields\.
+To associate a text string with the address to a field of a serialized object, use the `Field` function, as in the following example. You can use the builder pattern to serialize multiple fields.
 
 ```
 serializedContext->Class<SerializedObject>()
@@ -43,13 +41,13 @@ serializedContext->Class<SerializedObject>()
 ;
 ```
 
-## Serializers {#component-entity-system-reflection-serialization-context-serializers}
+## Serializers 
 
-Serializers are a useful way to provide custom data formats\. If you want to do custom processing on an object before writing or reading it, you can override O3DE's default serializer\.
+Serializers are a useful way to provide custom data formats. If you want to do custom processing on an object before writing or reading it, you can override O3DE's default serializer.
 
-To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface\. Use the interface to override how data is handled as it is streamed into its persistent format\. You can also use the interface to determine the actions that occur when the reflected object is serialized \(read or written\)\.
+To override the default serializer, implement the `AZ::SerializeContext::IDataSerializer` interface. Use the interface to override how data is handled as it is streamed into its persistent format. You can also use the interface to determine the actions that occur when the reflected object is serialized (read or written).
 
-The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp`\) provides a good example of a custom serializer\. To save a UUID value, the code writes it directly into the stream\. This part of the code is straightforward\.
+The `AZ::Uuid` class `(\dev\Code\Framework\AzCore\AzCore\Math\MathReflection.cpp)` provides a good example of a custom serializer. To save a UUID value, the code writes it directly into the stream. This part of the code is straightforward.
 
 ```
 /// Store the class data into a binary buffer
@@ -79,9 +77,9 @@ bool Uuid::Load(void* classPtr, IO::GenericStream& stream, unsigned int /*versio
 }
 ```
 
-The custom serializer has functions that convert the data between binary and text formats\. By converting the data into text format, you can store it in `.xml` or `.json` files\.
+The custom serializer has functions that convert the data between binary and text formats. By converting the data into text format, you can store it in `.xml` or `.json` files.
 
-The following `DataToText` function reads the binary value for the UUID from the incoming stream\. The function converts the binary value into an `AZStd::string` and then writes it to the outgoing stream\.
+The following `DataToText` function reads the binary value for the UUID from the incoming stream. The function converts the binary value into an `AZStd::string` and then writes it to the outgoing stream.
 
 ```
 size_t Uuid::DataToText(IO::GenericStream& in, IO::GenericStream& out, bool)
@@ -100,7 +98,7 @@ size_t Uuid::DataToText(IO::GenericStream& in, IO::GenericStream& out, bool)
 }
 ```
 
-The following `TextToData` function converts the text input string into binary UUID format and then writes the binary data out to the stream\.
+The following `TextToData` function converts the text input string into binary UUID format and then writes the binary data out to the stream.
 
 ```
 /// Convert text data to binary to support the loading of legacy formats.
@@ -113,15 +111,15 @@ size_t Uuid::TextToData(const char* text, unsigned int, IO::GenericStream& strea
 }
 ```
 
-## Data Containers {#component-entity-system-reflection-serialization-context-data-containers}
+## Data Containers 
 
-To create custom serialization for templates and types that are not directly reflected through the `SerializeContext::Reflect` function, you can use data containers\.
+To create custom serialization for templates and types that are not directly reflected through the `SerializeContext::Reflect` function, you can use data containers.
 
-To create a data container, implement the `AZ::SerializeContext::IDataContainer` interface\. You can use this interface to provide serialization for a class or template of classes and let the user choose the elements to be serialized\. This is possible because `IDataContainer` allows the user to override an `EnumElements` function\. The `EnumElements` function determines which elements of the serialized class are enumerated and are therefore capable of being serialized\.
+To create a data container, implement the `AZ::SerializeContext::IDataContainer` interface. You can use this interface to provide serialization for a class or template of classes and let the user choose the elements to be serialized. This is possible because `IDataContainer` allows the user to override an `EnumElements` function. The `EnumElements` function determines which elements of the serialized class are enumerated and are therefore capable of being serialized.
 
-### Templates {#component-entity-system-reflection-serialization-context-data-containers-templates}
+### Templates 
 
-Data containers provide the best way to add support for templates to the serialization context\. The following templates have a [metaclass](https://en.wikipedia.org/wiki/Metaclass) that implements the `IDataContainer` interface and serializes the templates\.
+Data containers provide the best way to add support for templates to the serialization context. The following templates have a [metaclass](https://en.wikipedia.org/wiki/Metaclass) that implements the `IDataContainer` interface and serializes the templates.
 
 ```
 AZStd::vector<T>
@@ -129,14 +127,14 @@ AZStd::basic_string<T>
 AZStd::unique_ptr<T>
 ```
 
-### Nontemplate Types {#component-entity-system-reflection-serialization-context-data-containers-nontemplate-types}
+### Nontemplate Types 
 
-You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`\. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object\.
+You can use the `IDataContainer` interface to serialize nontemplate types like `AZStd::any`. This is because the type of element that is serialized is dependent on the type that is stored in the `AZStd::any` object.
 
 **Stable Elements**
-Elements are considered stable if their pointers do not change when other elements are added to or removed from a container\. O3DE's implementation of stable elements corresponds to the [C\+\+17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017\(E\)](https://www.iso.org/standard/68564.html) standard\. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence\. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous\. Stable elements can be removed from a container without affecting other elements in the container\. You can use the `IsStableElements` function to determine the status of a container's elements\. If a container's elements are not stable, you must enumerate them in order for them to be serialized\.
+Elements are considered stable if their pointers do not change when other elements are added to or removed from a container. O3DE's implementation of stable elements corresponds to the [C++17](https://en.wikipedia.org/wiki/C++17) rules for iterator invalidation as documented in section 26 of the [ISO/IEC 14882:2017(E)](https://www.iso.org/standard/68564.html) standard. The elements in types like `AZStd::vector` are not stable because they are stored in a contiguous sequence. When an element that is not at the end of the vector is removed, all elements after it in memory must shift to the left to keep the sequence contiguous. Stable elements can be removed from a container without affecting other elements in the container. You can use the `IsStableElements` function to determine the status of a container's elements. If a container's elements are not stable, you must enumerate them in order for them to be serialized.
 
-The following code example shows how to set up serialization for a container that stores a dynamic sequence of homogenous elements\.
+The following code example shows how to set up serialization for a container that stores a dynamic sequence of homogenous elements.
 
 ```
 template<class T, bool IsStableIterators>
@@ -150,12 +148,12 @@ public:
 };
 ```
 
-A `SerializeContext::ClassElement` is a struct that uniquely identifies a serialized element of a class\. It includes fields like the following:
+A `SerializeContext::ClassElement` is a struct that uniquely identifies a serialized element of a class. It includes fields like the following:
 + `TypeId` - an ID for looking up data in `ClassData` within the `SerializeContext.`
-+ `Name`, `NameCrc` - The name and CRC with which the element is serialized\.
-+ Element\-specific serialization attributes
++ `Name`, `NameCrc` - The name and CRC with which the element is serialized.
++ Element-specific serialization attributes
 
-To look up the name of the `SerializeContext::ClassElement` that the data container supports, override the `GetElement` function, as in the following example\.
+To look up the name of the `SerializeContext::ClassElement` that the data container supports, override the `GetElement` function, as in the following example.
 
 ```
 // Returns the class element by looking up the CRC value of the element.
@@ -180,7 +178,7 @@ bool GetElement(SerializeContext::ClassElement& classElement, const SerializeCon
 }
 ```
 
-The following example shows how to override the `EnumElement` method to specify the elements that are enumerated\. Enumerating them enables them to be saved\.
+The following example shows how to override the `EnumElement` method to specify the elements that are enumerated. Enumerating them enables them to be saved.
 
 ```
 /// Enumerate elements in the array.
@@ -237,12 +235,13 @@ bool    IsSmartPointer() const override             { return false; }
 bool    CanAccessElementsByIndex() const override   { return false; }
 ```
 
-**Notes**
-+ When `IsFixedSize` and `IsFixedCapacity` are false, the plus \(\+\) and minus \(-\) buttons in the property editor can be used to add and remove elements from the data container\.
-+ When `IsSmartPointer` is false, the data container does not create an instance of the `SmartPointer` type when an element is added to the container\.
-+ When `CanAccessElementsByIndex` is false, the serialization system checks whether to allocate memory for new elements\. `CanAccessElementsByIndex` is true for fixed\-size containers like `AZStd::array`, `AZStd::pair`, and `AZStd::tuple` because those containers already have memory storage allocated for their elements\.
+{{< note >}}
++ When `IsFixedSize` and `IsFixedCapacity` are false, the plus (+) and minus (-) buttons in the property editor can be used to add and remove elements from the data container.
++ When `IsSmartPointer` is false, the data container does not create an instance of the `SmartPointer` type when an element is added to the container.
++ When `CanAccessElementsByIndex` is false, the serialization system checks whether to allocate memory for new elements. `CanAccessElementsByIndex` is true for fixed-size containers like `AZStd::array`, `AZStd::pair`, and `AZStd::tuple` because those containers already have memory storage allocated for their elements.
+{{< /note >}}
 
-To load an element into the template class instance, override the `ReserveElement`, `StoreElement` and `RemoveElements` functions, as in the following example\.
+To load an element into the template class instance, override the `ReserveElement`, `StoreElement` and `RemoveElements` functions, as in the following example.
 
 ```
 /// Use the reserve element function.
@@ -350,26 +349,26 @@ void    ClearElements(void* instance, SerializeContext* deletePointerDataContext
 }
 ```
 
-## Using the DataContainer to Serialize a Template Class {#component-entity-system-reflection-serialization-context-data-containers-serialize-a-template-class}
+## Using the DataContainer to Serialize a Template Class 
 
-After you have defined a data container, you can use it to serialize a specific type\. For example, to set up serialization for the templated `AZStd::vector<T>,` you must serialize `SerializeGenericTypeInfo<T>` for `AZStd::vector`\. To create the class data structure, you use the following `Create<ContainerType>` function:
+After you have defined a data container, you can use it to serialize a specific type. For example, to set up serialization for the templated `AZStd::vector<T>,` you must serialize `SerializeGenericTypeInfo<T>` for `AZStd::vector`. To create the class data structure, you use the following `Create<ContainerType>` function:
 
 ```
 SerializeContext::ClassData::Create<ContainerType>("AZStd::vector", GetSpecializedTypeId(), Internal::NullFactory::GetInstance(), nullptr, &m_containerStorage);
 ```
 
-The `Create<ContainerType>` function parameters are explained in the following table\.
+The `Create<ContainerType>` function parameters are explained in the following table.
 
 
 | Parameter | Description |
 | --- | --- |
-| "AZStd::vector" | Specifies the user friendly name of the class in a JSON or XML stream\. |
-| GetSpecializedTypeId\(\) | Creates an ID that enables serialization of different types\. For example, an AZStd::vector of integers can be serialized as a type that is different from an AZStd::vector of floats\. The unique ID is made by aggregating the template type AZStd::vector with the contained type T\.  |
-| Internal::NullFactory::GetInstance\(\) | NullFactory is used to prevent heap memory from being used to create an AZStd::vector\. To load an AZStd::vector element of a pointer type, change this to Serialize::InstanceFactory<AZStd::vector<T,A>>\. |
-| nullptr  | This is the Serializer parameter\. Because the serialization occurs through a data container, this parameter is nullptr\. |
-| &m\_containerStorage | The m\_containerStorage structure is an AZStdBasicContainer that ClassData uses to serialize the AZStd::vector element array\. |
+| "AZStd::vector" | Specifies the user friendly name of the class in a JSON or XML stream. |
+| GetSpecializedTypeId() | Creates an ID that enables serialization of different types. For example, an AZStd::vector of integers can be serialized as a type that is different from an AZStd::vector of floats. The unique ID is made by aggregating the template type AZStd::vector with the contained type T.  |
+| Internal::NullFactory::GetInstance() | NullFactory is used to prevent heap memory from being used to create an AZStd::vector. To load an AZStd::vector element of a pointer type, change this to Serialize::InstanceFactory<AZStd::vector<T,A>>. |
+| nullptr  | This is the Serializer parameter. Because the serialization occurs through a data container, this parameter is nullptr. |
+| &m\_containerStorage | The m\_containerStorage structure is an AZStdBasicContainer that ClassData uses to serialize the AZStd::vector element array. |
 
-The following code example uses the `Create<ContainerType>` function to set up serialization for the templated `AZStd::vector<T>`\.
+The following code example uses the `Create<ContainerType>` function to set up serialization for the templated `AZStd::vector<T>`.
 
 ```
 /// Generic serialization example for AZStd::vector.
@@ -438,13 +437,13 @@ struct SerializeGenericTypeInfo< AZStd::vector<T, A> >
 };
 ```
 
-## Events {#component-entity-system-reflection-serialization-context-events}
+## Events 
 
-To process data before or after you read or write serialized data, you can write serialization event handlers\. For example, by handling serialization events,you can perform runtime initializations specific to the data that is serialized\.
+To process data before or after you read or write serialized data, you can write serialization event handlers. For example, by handling serialization events,you can perform runtime initializations specific to the data that is serialized.
 
-To create a serialization event handler, implement the `AZ::SerializeContext::IEventHandler` interface as in the following example\.
+To create a serialization event handler, implement the `AZ::SerializeContext::IEventHandler` interface as in the following example.
 
-The example uses an event handler to update a map container within the `SceneData` class after a `SceneData` instance has been serialized\.
+The example uses an event handler to update a map container within the `SceneData` class after a `SceneData` instance has been serialized.
 
 ```
 class SceneDataEventHandler : public AZ::SerializeContext::IEventHandler
@@ -468,11 +467,11 @@ if (AZ::SerializeContext* serializeContext = azrtti_cast<AZ::SerializeContext*>(
 }
 ```
 
-## Data Overlays {#component-entity-system-reflection-serialization-context-versioning-data-overlays}
+## Data Overlays 
 
-You can use the serialization context to provide data from an external source during serialization\. These external sources of data are called *data overlays*\.
+You can use the serialization context to provide data from an external source during serialization. These external sources of data are called *data overlays*.
 
-To create a data overlay, you implement an [EBus](/docs/user-guide/engine/ebus/_index.md) through which the data is serialized\. The following example is the code that implements unit testing for the data overlay feature \(`\dev\Code\Framework\AzCore\Tests\Serialization.cpp`\):
+To create a data overlay, you implement an [EBus](/docs/user-guide/engine/ebus/) through which the data is serialized. The following example is the code that implements unit testing for the data overlay feature \(`\dev\Code\Framework\AzCore\Tests\Serialization.cpp`\):
 
 ```
 struct DataOverlayTestStruct
@@ -497,7 +496,7 @@ serializeContext.Class<DataOverlayTestStruct>()
                   ->Field("pointer", &DataOverlayTestStruct::m_ptr);
 ```
 
-Next, implement the data overlay provider\. The provider represents the data source that is overlaid into the serialized data\.
+Next, implement the data overlay provider. The provider represents the data source that is overlaid into the serialized data.
 
 The following code shows an example of a data overlay provider:
 
@@ -541,4 +540,4 @@ public:
 };
 ```
 
-`DataOverlayProviderExample` uses the `Crc32` ID for the reflected `DataOverlayTestStruct` source data fields\. Then the example implements the `DataOverlayProviderBus::Handler` `FillOverlayData` function\. The `FillOverlayData` function is where the actual data overlay occurs\. The `DataOverlayToken` holds the ID of the field that is serialized\. If the ID matches one of the fields that you want to overlay, you can use `DataOverlayTarget` to set the data\.
+`DataOverlayProviderExample` uses the `Crc32` ID for the reflected `DataOverlayTestStruct` source data fields. Then the example implements the `DataOverlayProviderBus::Handler` `FillOverlayData` function. The `FillOverlayData` function is where the actual data overlay occurs. The `DataOverlayToken` holds the ID of the field that is serialized. If the ID matches one of the fields that you want to overlay, you can use `DataOverlayTarget` to set the data.

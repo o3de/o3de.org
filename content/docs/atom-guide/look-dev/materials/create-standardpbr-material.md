@@ -1,11 +1,8 @@
 ---
 title: "Creating a StandardPBR Material"
 description: "This tutorial walks you through how to create a StandardPBR material in Atom."
-date: 2021-03-04
 toc: false
 ---
-
-{{< preview-new >}}
 
 This tutorial walks you through how to create a StandardPBR material in Atom. The StandardPBR material type allows you to create an artist-friendly, full-featured physically based rendering (PBR) material.
 
@@ -31,7 +28,7 @@ We use the following files as our input textures:
 -  castle_brick_02_red_rough_1k (roughness)
 
 ### Apply a filemask to the texture files
-To make sure that these texture files work correctly, you must indicate which texture preset should be used by the Asset Processor to process these files. The easiest way to do this is rename the files to use a texture file mask. A **texture file mask** is the suffix at the end of a file's name that indicates which texture preset to use. This allows the Asset Processor to correctly convert this image type into its runtime format. <!-- [Future work] For more information on texture presets, see -->
+To make sure that these texture files work correctly, you must indicate which texture preset should be used by the Asset Processor to process these files. The easiest way to do this is rename the files to use a texture file mask. A **texture file mask** is the suffix at the end of a file's name that indicates which texture preset to use. This allows the Asset Processor to correctly convert this image type into its runtime format.
 
 There are different variations of texture file masks that can work for a single texture. For example, "_ao" or "_ambientocclusion" are both valid and the Asset Processor knows to process the texture as an ambient occlusion texture. These texture file masks are defined in the preset (`*.preset`) files that configure Atom's Image Processor. The preset files can be found in the folder  `/Gems/Atom/Asset/ImageProcessingAtom/Config/`. 
 
@@ -67,18 +64,6 @@ The file browser looks for materials in the project folder, any Gem's *Assets* f
 The downloaded normal map is flipped. To flip it back, enable the `Flip Y Channel` property.*
     {{< /note >}}
 
-<!--     [Future work] Add a link here to a page that includes:  more detail about all the settings. Provide tips on determining whether they need to flip X/Y channels of a normal map. For one thing, it's easier to tell if you use a light preset with a strong directional light like the "Goegap" presets -->
-
 You've successfully created a new StandardPBR material! The following figure shows the property settings and the expected material.
 
-<!-- [TODO] @HogJonny-AMZN Will need to update this image with up-to-date Material Editor GUI.  -->
-
 ![Creating a StandardPBR material using the Material Editor](/images/atom-guide/architecture/materials/create-standardpbr-material.png)
-
-
-<!--
-## Extra Credit 
-Create a high pass texture!  
-
-[WRITER NOTE: TODO. Won't do until after March 9. See wiki: Create a standardpbr material]
--->

@@ -10,37 +10,67 @@ const navbarBurger = () => {
 }
 
 $(() => {
-  // console.log("Welcome to the CNCF's Hugo + Netlify starter");
-
   navbarBurger();
 });
 
 
-//active links on docs 
+// active nav bar link
 
-$(function() {
-  const url = window.location.href;
-  $("#accordionExample .card a").each(function(){
-       if($(this).attr("href") == url || $(this).attr("href") == '' ) {
-        $(this).addClass("currentPage");
-        $(this).parents().addClass("currentLi");
-        $(this).closest(".card-body").parent().addClass("show");
-       }
+$(() => {
+  const url = window.location.pathname;
+  $("ul.mr-auto.navbar-nav li a").each(function(){
+    if( $(this).attr("href")+"/" == url ) {
+      $("ul.navbar-nav li a").removeClass("active");
+      $("ul.navbar-nav li").removeClass("active");
+      $(this).addClass("active");
+      $(this).parents().addClass("active");
+    }
   })
-  $('.currentLi').children().addClass("show");
-  $('.currentLi').children('i').removeClass("fa-chevron-right");
-  $('.currentLi').children('i').addClass("fa-chevron-down");
-
-  $('.docs-sidebar').animate({
-    //scrollTop: ($('.currentPage').first().offset().top - 75)
-  },500);
 });
 
+
+// nav bar search
+
+$(() => {
+  $("#search").submit(function(event){
+    event.preventDefault();
+    $(".search-input-view").show();
+
+    let data =  $('#search-input').val()
+    if (data.length > 0) {
+      const idx = lunr(function () {
+        this.ref('id')
+        this.field('title', {
+          boost: 15
+        })
+        this.field('tags')
+        this.field('content', {
+          boost: 10
+        })
+    
+        for (const key in window.store) {
+          this.add({
+            id: key,
+            title: window.store[key].title,
+            tags: window.store[key].category,
+            content: window.store[key].content
+          })
+        }
+      })
+    
+      // Perform the search
+      const results = idx.search(data)
+      // Update the search title
+      $('#search-title').text('Search Results for ' + '"' + data + '"')
+      // Update the list with results
+      displayResults(results, window.store)
+    }
+  })
+});
 
 // parse user agent on downloads page
 
 $(function() {
-  console.log($.ua.os.name); 
   const ua = $.ua.os.name;
   $("#download-page-buttons a").each(function(){
     if($(this).data('os') == ua) {
@@ -53,11 +83,11 @@ $(function() {
 
 // Search 
 
-
 function displayResults (results, store) {
   const resultsContainer = document.getElementById('search-results')
   const mainContainer = document.getElementById('primary')
   const searchResults = document.getElementById('results')
+  
   if (results.length) {
     let resultList = ''
     // Iterate and build result list elements
@@ -75,37 +105,58 @@ function displayResults (results, store) {
   mainContainer.style.display = "none"
 }
 
-// Get the query parameter(s)
-const params = new URLSearchParams(window.location.search)
-const query = params.get('query')
+// Docs navigation
 
-// Perform a search if there is a query
-if (query) {
-  // Retain the search input in the form when displaying results
-  document.getElementById('search-input').setAttribute('value', query)
+$(function() {
+  $("#docs-nav a.has-children").click(function(e){
+    e.preventDefault();
+    $(this).toggleClass("open");
+    $(this).siblings('ul').each(function()
+    {
+      $(this).slideToggle(300);
+    });
+  })
+});
 
-  const idx = lunr(function () {
-    this.ref('id')
-    this.field('title', {
-      boost: 15
-    })
-    this.field('tags')
-    this.field('content', {
-      boost: 10
-    })
-
-    for (const key in window.store) {
-      this.add({
-        id: key,
-        title: window.store[key].title,
-        tags: window.store[key].category,
-        content: window.store[key].content
+$(function() {
+  const url = window.location.pathname;
+  $("#docs-nav a").each(function(){
+    if($(this).attr("href") == url) {
+      $(this).addClass("currentPage");
+      $(this).parentsUntil("#docs-nav", "ul").each(function(){
+        $(this).addClass("currentAncestor");
+        $(this).siblings('a').each(function()
+        {
+          $(this).addClass("currentAncestor").addClass("open");
+        });
+        $(this).parent('li').addClass("currentAncestorCategory");
       })
     }
   })
+});
 
-  // Perform the search
-  const results = idx.search(query)
-  // Update the list with results
-  displayResults(results, window.store)
-}
+$(function() {
+  $("body").append("<div id=\"docs-mobile-menu-overlay\" class=\"docs-mobile-menu-overlay\"></div>");
+
+  $("#docs-mobile-menu-overlay").click(function(){
+    $("body").removeClass("docs-mobile-menu-open");
+    $(this).removeClass("show");
+    setTimeout(function(){ $(this).hide(); }, 300);
+  });
+
+  $("#mobile-docs-toggler").click(function(){
+    var overlay = $("#docs-mobile-menu-overlay");
+    if(overlay.hasClass("show"))
+    {
+      $("body").removeClass("docs-mobile-menu-open");
+      overlay.removeClass("show");
+      setTimeout(function(){ overlay.hide(); }, 300);
+    }
+    else
+    {
+      $("body").addClass("docs-mobile-menu-open");
+      overlay.show();
+      setTimeout(function(){ overlay.addClass("show"); }, 10);
+    }
+  });
+});

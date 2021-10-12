@@ -15,6 +15,6 @@ In Open 3D Engine (O3DE), you create entities with the White Box component, usin
 
 ## White Box component information
 
-For information on the White Box component, see [White Box component](/docs/user-guide/components/reference/white-box.md).
+For information on the White Box component, see [White Box component](/docs/user-guide/components/reference/shape/white-box).
 
-For information on the White Box Collision component, see [White Box Collision component](/docs/user-guide/components/reference/white-box-collider.md).
+For information on the White Box Collision component, see [White Box Collision component](/docs/user-guide/components/reference/shape/white-box-collider).

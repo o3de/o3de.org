@@ -5,10 +5,8 @@ toc: true
 weight: 400
 ---
 
-{{< preview-new >}}
-
 This section contains technical details about the material system in the Atom Renderer.
 
 | Contents                        | Details |
 |--------------------------------------|---------|
-| [Material System](materials.md) | An overview of Atom's material system. |
+| [Material System](materials/) | An overview of Atom's material system. |

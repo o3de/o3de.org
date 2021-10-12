@@ -1,14 +1,13 @@
 ---
-description: ' Learn how to use Lua scripting to animate your entities with the Scripted
-  Entity Tweener system in Open 3D Engine. '
-title: Tweener Lua Script
+linkTitle: Tweeners in Lua
+description: ' Learn how to use Lua scripting to animate your entities with the Scripted Entity Tweener system in Open 3D Engine. '
+title: Tweeners in Lua
+weight: 300
 ---
 
-{{< preview-migrated >}}
+You must have a minimum set of code to play an animation in the Scripted Entity Tweener system. You use this script as part of a **Lua script** component. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/user-guide/scripting/lua/add-lua-script).
 
-You must have a minimum set of code to play an animation in the Scripted Entity Tweener system\. As described in [Tweener Sample Level](/docs/user-guide/user-interface/animating/tweener-sample.md), you add this code to a Lua script\. You can copy and paste the code into a text file, and then change the file name extension to `.lua`\. You use this script as part of a **Lua script** component\. For more information about Lua script components, see [Adding Lua Scripts to Component Entities](/docs/user-guide/editor/add-lua-script.md)\.
-
-In the following example, the entity's opacity is linearly tweened to `0.5` over `5` seconds\.
+In the following example, the entity's opacity is linearly tweened to `0.5` over `5` seconds.
 
 ```
 local AnimateUiEntity =
@@ -38,7 +37,7 @@ end
 return AnimateUiEntity
 ```
 
-The following example shows a full call with all the default parameters\. In this example, the entity moves to the `["x"]` and `["y"]` positions indicated in the code over the `duration` of `5` seconds\.
+The following example shows a full call with all the default parameters. In this example, the entity moves to the `["x"]` and `["y"]` positions indicated in the code over the `duration` of `5` seconds.
 
 ```
 self.ScriptedEntityTweener:StartAnimation
@@ -60,4 +59,4 @@ self.ScriptedEntityTweener:StartAnimation
 	}
 ```
 
-For the parameter descriptions, see [Tweener Supported Components](/docs/user-guide/user-interface/animating/tweener-components.md)\.
+For the parameter descriptions, see [Tweener Supported Components](./tweener-components).

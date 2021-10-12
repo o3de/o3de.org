@@ -5,21 +5,19 @@ title: Using Bundle Mode to Test Bundles
 weight: 300
 ---
 
-{{< preview-migrated >}}
-
-Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets\. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules\. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build\.
+Bundle mode is a process that lets you enable asset loading to prioritize bundles over loose cache assets. After you build the seed lists for packaging your game, you can use bundle mode and the `sys_report_files_not_found_in_paks` console variable to test your packaging rules. Bundle mode makes it easy for you to load and report on issues in all the bundles \(game `.pak` files\) from a location that you specify without creating a release build.
 
 Using bundle mode involves two key tasks:
-+ Turning on missing asset reporting for assets not in bundles\. This enables "bundle mode"\.
-+ Mounting and loading bundles for your game\.
++ Turning on missing asset reporting for assets not in bundles. This enables "bundle mode".
++ Mounting and loading bundles for your game.
 
-When reporting is enabled, the `sys_report_files_not_found_in_paks` console variable reports when an asset loads that isn't in any of your bundles\. By selectively loading bundles and using the `sys_report_files_not_found_in_paks` command, you can find assets that need to be included in your bundles\.
+When reporting is enabled, the `sys_report_files_not_found_in_paks` console variable reports when an asset loads that isn't in any of your bundles. By selectively loading bundles and using the `sys_report_files_not_found_in_paks` command, you can find assets that need to be included in your bundles.
 
 ## Enabling Bundle Mode
 
-To enable bundle mode, use the `sys_report_files_not_found_in_paks` console variable and specify a value of `1`,`2`, or `3`\. A value of `1` writes missing files as log entries without issuing warning messages\.
+To enable bundle mode, use the `sys_report_files_not_found_in_paks` console variable and specify a value of `1`,`2`, or `3`. A value of `1` writes missing files as log entries without issuing warning messages.
 
-The following list shows valid arguments for the `sys_report_files_not_found_in_paks` console variable\.
+The following list shows valid arguments for the `sys_report_files_not_found_in_paks` console variable.
 
 ```
 0 = Disabled
@@ -41,19 +39,19 @@ If you use the `sys_report_files_not_found_in_paks` console variable with the la
 
 ### Setting the Console Variable
 
-Enabling the console variable before running the editor or launcher ensures that all missing assets are reported\. To ensure that the console variable is always active when you run the editor or launcher, modify `editor.cfg` and `autoexec.cfg` in your project directory.
+Enabling the console variable before running the editor or launcher ensures that all missing assets are reported. To ensure that the console variable is always active when you run the editor or launcher, modify `editor.cfg` and `autoexec.cfg` in your project directory.
 
-You can also enable the console variable at runtime by using the console \(**\~**\) or remote console\. For information about the remote console, see [Universal Remote Console](/docs/user-guide/engine/remote-console.md)\.
+You can also enable the console variable at runtime by using the console (**\~**) or remote console.
 
 ## Bundle Mode Commands
 
 Bundle mode has two commands:
-+ **loadbundles** *<bundle\_directory>* *<extension>* - Loads all the bundles from the specified directory into the game\. If no arguments are supplied, the directory defaults to `Bundles` and the extension to `.pak`\.
-+ **unloadbundles** - Unload any bundle that was loaded through the `loadbundles` command\.
++ **loadbundles** *<bundle\_directory>* *<extension>* - Loads all the bundles from the specified directory into the game. If no arguments are supplied, the directory defaults to `Bundles` and the extension to `.pak`.
++ **unloadbundles** - Unload any bundle that was loaded through the `loadbundles` command.
 
 ## Using Bundle Mode Example
 
-The following procedure shows how bundle mode works\. In the example, game mode is entered when a bundle is missing\.
+The following procedure shows how bundle mode works. In the example, game mode is entered when a bundle is missing.
 
 **To test bundle mode**
 
@@ -63,37 +61,41 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    sys_report_files_not_found_in_paks 1
    ```
 
-   The `1` argument specifies that missing files are reported as log entries rather than warnings or errors\.
+   The `1` argument specifies that missing files are reported as log entries rather than warnings or errors.
 
-1. Enter game mode\. A list of Missing from bundle errors displays\.
-![\[Missing from bundle errors in the console window.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-1.png)
+1. Enter game mode. A list of Missing from bundle errors displays.
 
-1. Enter the command `loadbundles` to load bundles for the level\.
-![\[Using the loadbundles command.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
+![Missing from bundle errors in the console window.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-1.png)
 
-   There are fewer errors, but some assets are still missing\. The [Asset Validation Gem](/docs/user-guide/packaging/asset-bundler/asset-validation-gem.md) seed\-related commands can help find the missing assets\.
+1. Enter the command `loadbundles` to load bundles for the level.
 
-1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle\.
+![Using the loadbundles command.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-2.png)
+
+   There are fewer errors, but some assets are still missing. The [Asset Validation Gem](/docs/user-guide/gems/reference/assets/asset-validation) seed-related commands can help find the missing assets.
+
+1. Use the Asset Validation gem `addseedpath` command to add a likely missing bundle.
 
    ```
    addseedpath levels\milestone2\level.pak
    ```
 
-1. Enter the `listknownassets` command\.
-![\[Listing known assets in the console.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-3.png)
+1. Enter the `listknownassets` command.
 
-1. Examine the output\. In the following example, the output shows missing button assets\.
-![\[Identifying missing assets in the output.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-4.png)
+![Listing known assets in the console.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-3.png)
 
-   In the case of the button assets, the bundle was packaged a while ago and must be repackaged\. However, other assets are also still missing\.
+1. Examine the output. In the following example, the output shows missing button assets.
 
-1. Add the missing assets to the seed list for the level\.
+![Identifying missing assets in the output.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-4.png)
 
-1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference.md) for the level\.
+   In the case of the button assets, the bundle was packaged a while ago and must be repackaged. However, other assets are also still missing.
 
-1. Drop the bundles into the `Bundles` directory\.
+1. Add the missing assets to the seed list for the level.
 
-1. Enter an `assetbundlerbatch assetlists` command, as shown in the following example\. Use the `--print` argument to check the output\. In the example, the single\-line command has been formatted for readability\.
+1. Run the [bundling commands](/docs/user-guide/packaging/asset-bundler/command-line-reference/) for the level.
+
+1. Drop the bundles into the `Bundles` directory.
+
+1. Enter an `assetbundlerbatch assetlists` command, as shown in the following example. Use the `--print` argument to check the output. In the example, the single-line command has been formatted for readability.
 
    ```
    assetbundlerbatch assetlists
@@ -103,9 +105,9 @@ The following procedure shows how bundle mode works\. In the example, game mode 
          --print
    ```
 
-1. Verify that the output displays as expected\.
+1. Verify that the output displays as expected.
 
-1. Enter the `assetbundlerbatch assetlists` command again to bundle the assets, but this time without the `--print` argument\. The example command is single\-line, but has been formatted for readability\.
+1. Enter the `assetbundlerbatch assetlists` command again to bundle the assets, but this time without the `--print` argument. The example command is single-line, but has been formatted for readability.
 
    ```
    assetbundlerbatch assetlists
@@ -123,7 +125,7 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    Save successful! ( G:\P4\dev\DemoLevelList_pc.assetlist )
    ```
 
-1. Enter an `assetbundlerbatch bundles` command, as shown in the following example\.
+1. Enter an `assetbundlerbatch bundles` command, as shown in the following example.
 
    ```
    assetbundlerbatch bundles
@@ -139,7 +141,8 @@ The following procedure shows how bundle mode works\. In the example, game mode 
    Bundle ( G:\P4\dev\DemoProject\Bundles\milestone2_pc.pak ) created successfully!
    ```
 
-1. Enter the `loadbundles` command to reload the bundles, and then enter game mode\.
-![\[All loaded assets are now in bundles.\]](/images/user-guide/assetbundler/asset-bundler-bundle-mode-5.png)
+1. Enter the `loadbundles` command to reload the bundles, and then enter game mode.
 
-   All the assets loaded when game mode was entered are now in bundles\.
+![All loaded assets are now in bundles.](/images/user-guide/assetbundler/asset-bundler-bundle-mode-5.png)
+
+   All the assets loaded when game mode was entered are now in bundles.

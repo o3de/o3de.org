@@ -1,6 +1,6 @@
 ---
 title: Settings Reference
-description: The reference guide to Open 3D Engine-specific CMake settings.
+description: The reference for Open 3D Engine-specific CMake settings.
 weight: 500
 ---
 
@@ -9,7 +9,7 @@ Open 3D Engine uses custom CMake configuration values in order to detect setting
 Keep in mind that every time you change a configuration value, you need to regenerate the project files so that the changes are picked up and apply to your next build.
 
 {{< caution >}}
-CMake options like `CMAKE_CXX_STANDARD` are set during configuration by the O3DE build infrastructure. Changing these values can break your ability to compile the engine or Gems, so edit them with care. Change any values beginning with `CMAKE_` that appear in your CMake cache after the initial configuration at your own risk.
+CMake options like `CMAKE_CXX_STANDARD` are set during configuration automatically by O3DE. Changing these values can break your ability to compile O3DE code, so edit them with care.
 {{< /caution >}}
 
 ## Cache values
@@ -18,23 +18,20 @@ CMake options like `CMAKE_CXX_STANDARD` are set during configuration by the O3DE
 
 These options are the user-supplied settings that are required to configure O3DE builds. Make sure that these values are set before running your first configure, and only change them later if necessary.
 
-* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages.md)] for more information.
+* **`LY_3RDPARTY_PATH`** - The filesystem path to your package directory. Changing this value requires reconfiguration, and will prompt another install of packages. See [packages](./packages/)] for more information.
   
   *Type*: `PATH`
-* **`LY_PROJECTS`** - The O3DE projects to include as build targets and scan for dependencies, as a semi-colon (`;`) separated string. For example, `Project1;Project2;Project3` generates targets for `Project1Launcher`, `Project2Launcher`, and `Project3Launcher`, and correctly identifies the dependencies for each. Each dependency also produces a target in the generated project.
-  
-  *Type*: `STRING`
 
 ### Build configuration
 
-* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/v3.20/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
+* **`LY_UNITY_BUILD`** - Controls the generation of [unity build](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) files. Unity builds speed up build times by taking multiple `.cpp` files and merging them together into a single compilation unit.
 
   {{< note >}}  
   Make sure that this option is turned `ON` if you experience slow build times for your projects, the O3DE engine, or O3DE tools. The impact is most dramatic for systems with lots of available RAM but fewer available cores or low disk throughput.
   {{< /note >}}  
 
   *Type*: `BOOL`  
-  *Default*: `OFF`
+  *Default*: `ON`
 * **`LY_MONOLITHIC_GAME`** - Controls project library linking. When this value is set to `ON`, it provides a compiler hint to use static libraries where possible. Some libraries, such as PhysX, are only available as shared libraries and can't be statically linked. Some platforms may disable static linking entirely.
 
   *Type*: `BOOL`  
@@ -50,15 +47,13 @@ These options control the types of assets that are built, and where projects loa
   * `ios` - iOS and iPad OS
   * `es3` - Android
   
-  You can change the types of assets built by the Asset Processor, or build for multiple platforms, by [configuring the asset pipeline](/docs/user-guide/assets/pipeline/configuring).
-  
   *Type*: `STRING`  
   *Default*: The asset type for the current host platform.
 
 * **`LY_ASSET_DEPLOY_MODE`** - Controls how projects load assets at runtime. Allowed values are:  
   * `LOOSE` - Load assets on demand from the asset cache, after sources are processed by the Asset Processor. This setting is appropriate for development.
   * `PAK` - Only load assets from `.pak` asset bundles created by the Asset Bundler. Which directories to load asset bundles from is controlled with the `LY_OVERRIDE_PAK_FOLDER_ROOT` setting.
-  * `VFS` - Load data from the virtual filesystem (VFS). See the documentation on using the VFS with [iOS](/docs/user-guide/platforms/ios/virtual-file-system) for more details.
+  * `VFS` - Load data from the virtual filesystem server (VFS).
   
   *Type*: `STRING`  
   *Default*: `LOOSE`
@@ -73,8 +68,7 @@ Controls where asset `.pak` files are loaded from. An empty string uses the pred
 
 These settings control how the package download system functions.
 
-* **`LY_PACKAGE_DEBUG`** - Produces verbose information about the package download and installation process when `ON`. Set this cache value before filing any bug
-  report against the O3DE package system to make sure that all the necessary information is there to resolve the issue.
+* **`LY_PACKAGE_DEBUG`** - Produces verbose information about the package download and installation process when `ON`. Set this cache value before filing any bug report against the O3DE package system to make sure that all the necessary information is there to resolve the issue.
 
   *Type*: `BOOL`  
   *Default*: `OFF`
@@ -99,15 +93,12 @@ These settings control how the package download system functions.
   *Type*: `PATH`  
   *Default*: `${LY_3RDPARTY_PATH}/packages`
 
-* **`LY_PACKAGE_VALIDATE_PACKAGE`** - Validate packages against checksums in the requesting CMake file, redownloading the package from sources
-  as necessary.
+* **`LY_PACKAGE_VALIDATE_PACKAGE`** - Validate packages against checksums in the requesting CMake file, redownloading the package from sources as necessary.
 
   *Type*: `BOOL`
   *Default*: `OFF`
 
-* **`LY_PACKAGE_VALIDATE_CONTENTS`** - Check each file against the hashes contained in the `SHA256SUMS` of the package. When this value is
-  `OFF`, the checksums are validated only on the first package download. Turning this setting on allows for checking for local modifications
-  to the package, but will slow down configuration.
+* **`LY_PACKAGE_VALIDATE_CONTENTS`** - Check each file against the hashes contained in the `SHA256SUMS` of the package. When this value is `OFF`, the checksums are validated only on the first package download. Turning this setting on allows for checking for local modifications to the package, but will slow down configuration.
 
   *Type*: `BOOL`
   *Default*: `OFF`
@@ -117,10 +108,21 @@ These settings control how the package download system functions.
   *Type*: Integer
   *Default*: 3
 
+### Build/Debugging Tools
+
+* **`LY_BUILD_WITH_ADDRESS_SANITIZER`** - Enables [Address Sanitizer](https://en.wikipedia.org/wiki/AddressSanitizer) (ASan).
+
+  {{< note >}}
+  Currently only supported for Windows and "Visual Studio" generators. Documentation can be found [here](https://docs.microsoft.com/en-us/cpp/sanitizers/asan?view=msvc-160)
+  {{< /note >}}
+
+  *Type*: `BOOL`
+  *Default*: `OFF`
+
 <!-- 
   TODO: Platform-specific settings - should they go here, on the platform pages, or somewhere else entirely (like in the reference appendix?)
 -->
 
 ## CMake functions reference
 
-Intellisense support for Visual Studio and Visual Studio Code is available in the O3DE CMake files, located in `cmake`.
+Intellisense support for Visual Studio and Visual Studio Code is available in the O3DE CMake files, located in the `cmake` directory of O3DE source.

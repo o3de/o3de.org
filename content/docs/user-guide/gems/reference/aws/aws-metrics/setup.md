@@ -6,8 +6,6 @@ toc: true
 weight: 100
 ---
 
-{{< preview-new >}}
-
 ## Prerequisites
 
 The AWS Metrics Gem requires the following to be installed and configured:
@@ -18,7 +16,7 @@ The AWS Metrics Gem requires the following to be installed and configured:
 
 The [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) (CLI) (version 2) is optional but also strongly recommended.
 
-See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core/getting-started.md) for help with installing and configuring these prerequisites.
+See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core/getting-started/) for help with installing and configuring these prerequisites.
 
 ## Setting up AWS Metrics
 
@@ -30,11 +28,11 @@ Complete the following set up steps to use the AWS Metrics Gem in your project:
 
 ### 1. Enable the AWS Metrics Gem
 
-If you haven't already added and built the **AWS Metrics Gem** in your project, do so now using the instructions in [Enabling the AWS Metrics Gem](./_index.md#enabling-the-aws-metrics-gem).
+If you haven't already added and built the **AWS Metrics Gem** in your project, do so now using the instructions in [Enabling the AWS Metrics Gem](./#enabling-the-aws-metrics-gem).
 
 ### 2. Deploy the CDK application
 
-Use the CDK synth and deploy commands from the AWS Metrics Gem directory to deploy the sample CDK application and build the AWS-backed analytics pipeline shown in the following diagram. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
+Use the CDK synth and deploy commands from the AWS Metrics Gem directory to deploy the sample CDK application and build the AWS-backed analytics pipeline shown in the following diagram. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application/) in the AWS Core documentation.
 
 ![Analytics pipeline provided by the sample CDK application](/images/user-guide/gems/reference/aws/aws-metrics/sample-analytics-pipeline.png)
 
@@ -44,7 +42,7 @@ The pipeline focuses on two use cases: hot/near-real-time for operations and col
 
 After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information so that you can use the deployed AWS resources.
 
-Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the `RESTApiStage` and `RESTApiId` mappings to your project's resource mapping file. The new sections will be similar to the following example.
+Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool/) to add the `RESTApiStage` and `RESTApiId` mappings to your project's resource mapping file. The new sections will be similar to the following example.
 
 **project_aws_resource_mappings.json**
 

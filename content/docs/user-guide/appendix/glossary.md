@@ -1,10 +1,8 @@
 ---
 title: Glossary
-weight: 1000
+weight: 100
 toc: true
 ---
-
-{{< preview-new >}}
 
 ### actor
 A specialized [entity](#entity) that is the basis for characters in a game.
@@ -32,6 +30,9 @@ A hierarchical object that is attached to characters, respond to real-world phys
 
 ### baked
 Performs and stores all calculations for a scene element so that the element does not need to be processed or rendered in real time in the game. Often used for lighting or physics. Also referred to as *prebaked*.
+
+### behavior context
+The behavior context reflects runtime code and makes it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's [EBus](#ebus) so you can dispatch and handle events through Script Canvas and Lua.
 
 ### bind pose
 The pose that a character has when you bind the mesh (skin) to the skeleton. The skeleton determines the pose.
@@ -102,10 +103,7 @@ A game object with one or more components that provide some behavior or function
 ### environment probe
 A technique that uses cube maps to provide a game level or location with realistic ambient lighting.
 
-### experimental
-A designation for a O3DE tool that we recommend that you not use in production yet, as it is still in the early stages of development and we have no current plans to support it. However, it also means that feature is stable enough and functional for specific use cases. You may find the experimental feature helpful as a guideline for implementing your own game-specific features. API operations are subject to change.
-
-### gem
+### Gem
 A package that contains code and assets to provide a single feature or multiple tightly scoped functions.
 
 ### gloss map
@@ -128,6 +126,9 @@ Image-based lighting. A rendering technique that involves capturing lighting inf
 
 ### imposter
 Procedurally created 2D sprites that are rendered to look like 3D objects. In essence, imposters are 2.5D objects.
+
+### install layout
+Refer to [SDK engine](#sdk-engine).
 
 ### k-means clustering
 Method for partitioning a set of data points into k separate groups. Each group has a mean calculated from the average of the points it contains and each point is assigned to a group based on which group mean the point is closest to. The method usually works iteratively, alternating between updating point assignments and updating mean values until a stable partition is reached.
@@ -192,6 +193,9 @@ Parallax occlusion mapping. POM uses a displacement map to encode surface detail
 ### prebaked
 Refer to [baked](#baked).
 
+### pre-built SDK engine
+Or "pre-built engine SDK". Refer to [SDK engine](#sdk-engine).
+
 ### prefab
 A game object template that stores an asset or a group of assets and all associated properties.
 
@@ -221,8 +225,12 @@ Applying animations that were created for one model to another.
 
 ### scripts
 Used for creating logic and behaviors for your game project. You can create scripts with one of the following:
-+ Script Canvas is a visual scripting tool that doesn't require you to know how to code. You can use the **Script Canvas** editor to create Script Canvas graphs. Script Canvas graphs have the file extension, `.scriptcanvas`, such as `myscriptexample.scriptcanvas`. You can add your Script Canvas graph to your game entities with the **Script Canvas** component.
-+ Lua is a lightweight and embeddable scripting language. You can use Lua to facilitate quick iteration of your game project. Lua scripts have the file extension `.lua` or `.luac`, such as `myscriptexample.lua`. You can add script functionality to your game entities with the **Lua Script** component.
+
+* Script Canvas is a visual scripting tool that doesn't require you to know how to code. You can use the **Script Canvas** editor to create Script Canvas graphs. Script Canvas graphs have the file extension, `.scriptcanvas`, such as `myscriptexample.scriptcanvas`. You can add your Script Canvas graph to your game entities with the **Script Canvas** component.
+* Lua is a lightweight and embeddable scripting language. You can use Lua to facilitate quick iteration of your game project. Lua scripts have the file extension `.lua` or `.luac`, such as `myscriptexample.lua`. You can add script functionality to your game entities with the **Lua Script** component.
+
+### SDK engine
+A redistributable build of O3DE where the core engine, Gem, and tool binaries are pre-built, ready to be used by any O3DE project. When building from source, use either the `ALL_BUILD` or `INSTALL` target to create this layout. Synonyms include "install layout," "pre-built binaries," "pre-built engine SDK," and "pre-built SDK engine." Compare with [source engine](#source-engine).
 
 ### sequence
 The content generated from the Track View for cutscenes or other canned animation triggers.
@@ -241,6 +249,9 @@ Cascaded data management system for entities. Similar to the capability of prefa
 
 ### socket
 A pivot point on a character where attachments are connected. Attachments dangle or move according to the properties of the socket.
+
+### source engine
+The default method of building O3DE from source, where the core engine, Gem, and tool binaries are built with the project, in the same build directory as the project binaries. Compare with [SDK engine](#sdk-engine).
 
 ### specular map
 An image that determines the shininess of each area of a surface.

@@ -1,67 +1,27 @@
 ---
 linkTitle: Tools UI Developer's Guide
+menuTitle: Tools UI
 title: Tools UI Developer's Guide for Open 3D Engine
 description: Looking to build your own O3DE component? Read up on the UI style and implementation.
 weight: 500
 toc: true
 menu_uuid: tools
 guide_img: "/images/tools-ui/guide_img.png"
+primary: true
 ---
 
-## Contents
+Welcome to the Open 3D Engine (O3DE) Tools UI Developer's Guide! In this guide you will find guidelines around using the O3DE brand and UI style. Included is an introduction to component development and the custom Qt widget library for developers.
 
-+ [Introduction to O3DE UI development](ui-dev-intro/)
+If you are a looking to incorporate the O3DE logo into your project, please read the [Open 3D Branding Guidelines](/files/Open-3D-Branding-Guidelines-June-2021.pdf) PDF style guide to help stay aligned with our brand.
 
-+ [O3DE Qt control gallery tool](uidev-control-gallery.md)
+You can also download a ZIP of our brand guidelines and logos: [O3DE Logo Pack.zip](/files/O3DE-Logo-Pack.zip)
 
-+ [O3DE UI component development guidelines](uidev-component-development-guidelines/)
+## Tools UI Developer's Guide Contents
 
-+ [O3DE UI component library](component-library/)
-
-  + [O3DE UI breadcrumb navigation component](component-library/uidev-breadcrumbs-component.md)
-  
-  + [O3DE UI browse edit component](component-library/uidev-browse-edit-component.md)
-
-  + [O3DE UI button styles](component-library/uidev-button-component.md)
-
-  + [O3DE UI card component](component-library/uidev-card-component.md)
-
-  + [O3DE UI checkbox component](component-library/uidev-checkbox-component.md)
-
-  + [O3DE UI combobox component](component-library/uidev-combobox-component.md)
-  
-  + [O3DE UI menu component](component-library/uidev-context-menu-component.md)
-
-  + [O3DE UI filtered search widget](component-library/uidev-filtered-search-component.md)
-
-  + [O3DE UI line edit component](component-library/uidev-line-edit-component.md)
-
-  + [O3DE UI spinbox component](component-library/uidev-spinbox-component.md)
-
-  + [O3DE UI progress indicators](component-library/uidev-progress-indicators-component.md)
-
-  + [O3DE UI radio button style](component-library/uidev-radio-button-component.md)
-
-  + [O3DE UI reflected property editor](component-library/uidev-reflected-property-editor-component.md)
-
-  + [O3DE UI scrollbar styles](component-library/uidev-scrollbar-component.md)
-
-  + [O3DE UI sliders](component-library/uidev-sliders-component.md)
-
-  + [O3DE UI styled dock widget](component-library/uidev-styled-dock-component.md)
-
-  + [O3DE UI tab component](component-library/uidev-tab-component.md)
-
-  + [O3DE UI table view component](component-library/uidev-table-view-component.md)
-
-  + [O3DE UI toggle switch component](component-library/uidev-toggle-switch-component.md)
-
-  + [O3DE UI tree view component](component-library/uidev-tree-view-component.md)
-
-+ [O3DE UI assets](icon-assets/)
-
-  + [O3DE component icons](icon-assets/uidev-component-icons.md)
-
-  + [O3DE entity outliner icons](icon-assets/uidev-entity-outliner-icons.md)
-
-+ [O3DE UI Extensions C++ API Reference index](/docs/api/frameworks/AzQtComponents/)
+| Topic | Description |
+| --- | --- |
+| [Introduction to O3DE UI development](ui-dev-intro/) | An introduction to the contents and purpose of this guide. |
+| [O3DE Qt Control Gallery tool](uidev-control-gallery/) | A tool included with O3DE that demonstrates the custom Qt widget library in action. Also includes sample code related to each component. |
+| [O3DE UI component development guidelines](uidev-component-development-guidelines/) | An overview of O3DE UI component development and the custom Qt widget library. |
+| [O3DE UI component library](component-library/) | An introduction to each UI component (i.e. widget) in O3DE and guidelines for their usage. |
+| [O3DE UI icon assets](icon-assets/) | A library of icon assets used in the O3DE development environment. |

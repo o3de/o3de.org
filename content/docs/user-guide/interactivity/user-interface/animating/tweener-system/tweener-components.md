@@ -1,12 +1,14 @@
 ---
-description: ' Learn which entity parameters that Open 3D Engine supports in the Scripted
-  Entity Tweener system. '
-title: Tweener Supported Components
+linkTitle: Tweener-supported Components
+description: ' Learn which entity parameters that Open 3D Engine supports in the Scripted Entity Tweener system. '
+title: Tweener-supported Components
+weight: 200
 ---
 
-{{< preview-migrated >}}
+You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system.
 
-You can use the Scripted Entity Tweener system for any entity parameter currently recognized by the tweener system\.
+{{< todo issue="https://github.com/o3de/o3de.org/issues/670" >}}
+Determine complete list of supported components.
+{{< /todo >}}
 
-You can see the list of supported entity parameters in the `Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua` file in the table `self.animationParameterShortcuts`\.
-
+You can see the list of supported entity parameters in the `Gems\ScriptedEntityTweener\Assets\Scripts\ScriptedEntityTweener\ScriptedEntityTweener.lua` file in the table `self.animationParameterShortcuts`.

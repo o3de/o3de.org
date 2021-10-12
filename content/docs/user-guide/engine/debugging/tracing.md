@@ -3,8 +3,6 @@ description:  Learn best practices for debug tracing in Open 3D Engine.
 title: Tracing
 ---
 
-{{< preview-migrated >}}
-
 **Recommended**: For code tracing needs, use `AZ_*` tracing macros.
 
 **Reason**: Error handling and tracing functions provide useful messages formatted for readability about errors that occur. To facilitate debugging, `AZ_*` tracing functions indicate where in code the errors occurred.
@@ -25,7 +23,7 @@ The following table describes the `AZ_Tracing` macros and their uses.
 
 ## Suppressing AZ Trace Messages in Unit Tests
 
-You can use macros to suppress AZ trace messages\.
+You can use macros to suppress AZ trace messages.
 
 * `AZ_TEST_START_ASSERTTEST` - Enable `AZ_Error` and `AZ_Assert` trace messages
 * `AZ_TEST_STOP_ASSERTTEST` - Disable `AZ_Error` and `AZ_Assert` trace messages

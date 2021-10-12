@@ -1,5 +1,5 @@
 ---
-description: Learn how to create system components in Open 3D Engine. 
+description: Learn how to create system components in Open 3D Engine.
 title: System-wide Components in Open 3D Engine
 linktitle: System Components
 weight: 600
@@ -23,7 +23,7 @@ For an example of a Gem which provides system components, the `HttpRequestor` Ge
 
 ## Creating a System Component in a Gem
 
-O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [Gems and AZ Modules](/docs/user-guide/engine/gems/structure.md). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine as well as components for use on game entities.
+O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [the O3DE Gem and Module System](/docs/user-guide/gems/development/overview). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine as well as components for use on game entities.
 
 When you create a system component as part of a Gem, follow these requirements:
 
@@ -76,7 +76,7 @@ After you create the code for your component, add it to your project's system en
    ...
    ```
 
-1. (Optional) Expose the system component to the [System Entity Editor](/docs/user-guide/editor/add-system-entity). This enables game developers to configure the component's properties on a per-project basis. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`.
+1. (Optional) Expose the system component to the System Entity Editor. This enables game developers to configure the component's properties on a per-project basis. To do so, reflect the system component to the `EditContext` and set the `AppearsInAddComponentMenu` field to `System`.
 
    The following example is from `HttpRequestorSystemComponent.cpp`.
 
@@ -115,10 +115,8 @@ After you create the code for your component, add it to your project's system en
    }
    ```
 
-   The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list. The `Category` field specifies the group in which the component appears. In this case, no category is specified, so the group is **Miscellaneous** by default.
+    The `"HttpRequestor"` and `"Will make HTTP Rest calls"` string parameters specify the UI name and tooltip information for the component in the **Add Component** list. The `Category` field specifies the group in which the component appears. In this case, no category is specified, so the group is **Miscellaneous** by default.
 
-The following image shows the result in the System Entity Editor.
+    The following image shows the result in the System Entity Editor.
 
-![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
-
-For detailed steps on using the System Entity Editor to add a system component to a project, see [Configuring System Entities](/docs/user-guide/editor/add-system-entity.md).
+    ![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)

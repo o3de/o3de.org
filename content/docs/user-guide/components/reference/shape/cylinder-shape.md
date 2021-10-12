@@ -5,13 +5,13 @@ description: ' Open 3D Engine (O3DE) Cylinder Shape component reference. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
 
-The **Cylinder Shape** component creates a transparent cylinder that's oriented on the local Z axis. The dimensions of the cylinder can be edited with the **Height** and **Radius** properties. The Cylinder Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
+
+The **Cylinder Shape** component creates a transparent cylinder that's oriented on the local Z axis. The dimensions of the cylinder can be edited with the **Height** and **Radius** properties. The Cylinder Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Properties ##
 

@@ -5,12 +5,16 @@ weight: 300
 toc: true
 ---
 
-A **resource mapping file** is a JSON file that provides a map of a **lookup name** to a collection of **properties** about an AWS resource. Each mapping has the following format:
+A **resource mapping file** is a JSON file that provides a map of **lookup names** to a collection of **attributes** about AWS resources. O3DE runtimes can query the mapping file to easily find and utilize AWS resources. Typically, a project under development will use a different deployment, and therefore a different mapping file, than the released version of the project.
+
+A mapping file contains one or more resource entries and a set of global attributes.
 
 **Resource entry format**
 
+Each entry defines a lookup name - a logical name for the resource - and a collection of attributes in the following format:
+
 ```json
-string  {
+"<lookup name>":  {
     "Type": string, (required)
     "Name/ID": string, (required)
     "Region": string, (optional)
@@ -18,17 +22,17 @@ string  {
 }
 ```
 
-Each entry has a lookup string - a logical name for the resource - that is used to find entries in the mapping file during usage.
+***Supported attributes***
+* Type - AWS resource type, e.g. AWS::Lambda::Function, AWS::S3::Bucket etc. Should map to a [CloudFormation resource type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html).
+* Name/ID - AWS resource name or id.
+* Region - Used to override the global region attribute, if this resource is deployed to a different AWS region.
+* AccountId - Used to override the global account id attribute, if this resource is deployed in a different AWS account.
 
-* Type - AWS resource type, e.g. AWS::Lambda::Function, AWS::S3::Bucket, etc.
-* Name/ID - AWS resource name or id
-* Region - Used to override global region attribute if this resource is deployed to a different AWS region.
-* AccountId - Used to override global account id attribute if we want to support cross account use case (arguable)
+**Global attributes**
+The mapping file also supports three **required** global attributes:
 
-The mapping file also supports three global attributes:
-
-* AccountId - The AWS account has resources in this mapping file
-* Region - The region in which resources are located in this mapping file (should match with partition)
+* AccountId - The default AWS account containing resources in this mapping file.
+* Region - The default region to use with this mapping file.
 * Version - The json schema version of this document.
 
 **Example of a complete mapping file**
@@ -47,19 +51,19 @@ The mapping file also supports three global attributes:
 }
 ```
 
-This mappings file has a single mapping: **MyKey**, which is a Lambda function called "ExampleLambda". It is deployed in us-west-2 in the AWS account with account ID "123456789123".
+This mapping file has a single mapping: **MyKey**, which is a Lambda function called "ExampleLambda". It is deployed in us-west-2 in the AWS account with account ID "123456789123".
 
 ## Generating a resource mappings file
 
-The mapping files have a well-defined JSON format. They can be generated using custom tools or by hand. However, the easiest way to generated these files is by using the visual [resource mapping tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) provided with O3DE to generate and edit the files.
+The mapping files have a well-defined [JSON format](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-schema/). They can be generated using custom tools or by hand. However, the easiest way to generate or edit these files is by using the visual [resource mapping tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool/) provided with O3DE.
 
 All mapping files should be saved into the project's `Config` directory.
 
 ## Using resource mappings
 
-The resource mapping file to use on load is controlled by the `ResourceMappingConfigFileName` in the `awscoreconfiguration.setreg` file, located in the project's `Registry` directory. See [Project Settings](./getting-started.md#project-settings) for more information about this file. The AWS Core Gem will read this mapping file and support access to the mappings.
+Define the resource mapping file to use on load in the `ResourceMappingConfigFileName` setting in the `awscoreconfiguration.setreg` file, located in the project's `Registry` directory. See [Project Settings](./getting-started/#project-settings) for more information about this file. The AWS Core Gem loads the defined mapping file on initialization and supports access to the mappings.
 
-The AWS Core Gem provides a request bus (`AWSResourceMappingRequestBus`) to support interaction with a configured resource mapping file. Supported functions are described in the [AWSResourceMappingRequests](https://docs.o3de.org/docs/api/gems/awscore/class_a_w_s_core_1_1_a_w_s_resource_mapping_requests.html) class API reference.
+Use the request bus (`AWSResourceMappingRequestBus`) to interact with a configured resource mapping file. See [AWSResourceMappingRequests](https://o3de.org/docs/api/gems/awscore/class_a_w_s_core_1_1_a_w_s_resource_mapping_requests.html) for the class API reference for the bus.
 
 **Example: Reading an entry**
 

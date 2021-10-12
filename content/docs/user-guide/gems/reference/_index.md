@@ -6,8 +6,7 @@ weight: 100
 toc: true
 ---
 
-Gems are redistributable packages that contain source code and assets that you can include in your Open 3D Engine (O3DE) projects to add new functionality. O3DE provides the following Gems:
-
+*Gems* are redistributable packages that contain source code and assets that you can include in your Open 3D Engine (O3DE) projects to add new functionality. O3DE provides the following Gems:
 
 ## Animation
 
@@ -50,12 +49,13 @@ Gems are redistributable packages that contain source code and assets that you c
 | [AWS Client Auth](./aws/aws-client-auth) | The AWS Client Auth Gem provides solutions for client authentication and AWS authorization. |
 | [AWS Core](./aws/aws-core) | The AWS Core Gem provides basic shared AWS functionality such as AWS SDK initialization and client configuration. |
 | [AWS Metrics](./aws/aws-metrics) | The AWS Metrics Gem provides a solution for AWS metrics submission and analytics. |
+| [AWS GameLift](./aws/aws-gamelift) | The AWS GameLift Gem provides a framework to extend the O3DE networking layer and Multiplayer Gem to work with Amazon GameLift. |
 
 ## Core
 
 | Gem | Description |
 | - | - |
-| [Lmbr Central](./core/lmbr-central) | The Lmbr Central Gem provides required code and assets for running Open 3D Engine Editor. |
+| [O3DE Core (LmbrCentral)](./o3de-core) | The O3DE Core (LmbrCentral) Gem provides required code and assets for running Open 3D Engine Editor. |
 
 ## Debug
 
@@ -82,6 +82,7 @@ Gems are redistributable packages that contain source code and assets that you c
 | [Surface Data](./environment/surface-data) | The Surface Data Gem provides functionality to emit signals or tags from surfaces such as meshes and terrain. |
 | [Vegetation](./environment/vegetation) | The Vegetation Gem provides tools to place natural-looking vegetation in Open 3D Engine. |
 | [Vegetation Gem Assets](./environment/vegetation-gem-assets) | The Vegetation Assets Gem provides vegetation models, textures, and other assets and samples for use with the Vegetation Gem and Landscape Canvas. |
+| [Terrain](./environment/terrain) | The Terrain Gem provides a terrain system that maps height, color, and surface data to regions of the world. It also provides gradient-based and shape-based authoring tools and workflows, integrates with physics for physical simulation and efficiently renders terrain. |
 
 ## Framework
 
@@ -113,7 +114,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 | Gem | Description |
 | - | - |
-| [Multiplayer](./multiplayer/multiplayer) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
+| [Multiplayer](./multiplayer) | The Multiplayer Gem provides high-level, advanced multiplayer gameplay functionality such as entity replication, local prediction, and server side backward reconciliation. |
 | [Multiplayer Compression](./multiplayer/multiplayer-compression) | The Multiplayer Compression Gem provides an open source compressor for use with the Multiplayer Gem. |
 
 ## Network
@@ -132,7 +133,6 @@ Gems are redistributable packages that contain source code and assets that you c
 | - | - |
 | [NVIDIA Blast](./physics/nvidia/nvidia-blast) | The NVIDIA Blast Gem provides tools to author fractured mesh assets in Houdini, and functionality to create realistic destruction simulations in Open 3D Engine. |
 | [NVIDIA Cloth (NvCloth)](./physics/nvidia/nvidia-cloth) | The NVIDIA Cloth (NvCloth) Gem provides functionality to create realistic cloth and fabric simulation. |
-| [Physics Entities](./physics/physics-entities) | The Physics Entities Gem provides a collection of physics entities used to simulate physical events. |
 | [PhysX](./physics/nvidia/physx) | The PhysX Gem provides physics simulation with NVIDIA PhysX including static and dynamic rigid body simulation, force regions, ragdolls, and dynamic PhysX joints. |
 | [PhysX Debug](./physics/nvidia/physx-debug) | The PhysX Debug Gem provides debugging functionality and visualizations for PhysX in Open 3D Engine (O3DE) projects. |
 | [PhysX Samples](./physics/nvidia/physx-samples) | The PhysX Samples Gem provides sample assets and scripts to use with the PhysX Gem. |
@@ -170,7 +170,7 @@ Gems are redistributable packages that contain source code and assets that you c
 
 | Gem | Description |
 | - | - |
-| [In App Purchases](./monetization/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
+| [In App Purchases](./sdk/in-app-purchases) | The In App Purchases Gem provides functionality for in app purchases in Open 3D Engine projects. |
 
 ## UI
 

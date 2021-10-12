@@ -26,9 +26,9 @@ You can download this repository or clone it onto your local machine. Cloning th
    
     *Note: You must install the **extended version** of Hugo.*
 
-1. To install **npm**, following the instructions in the [npm](https://www.npmjs.com/get-npm) documentation. Installing npm also installs **nodejs**. 
+1. To install **npm**, following the instructions in the [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) documentation. Installing npm also installs **nodejs**. 
 
-2. To install **bootstrap**, run the following command in a terminal or shell: `npm install bootstrap`.
+2. To install **bootstrap**, run the following command in a terminal or shell in the root of your o3de.org clone: `npm install bootstrap`.
 
     *Note: `npm` is only one way to install bootstrap. You can use other package managers to install bootstrap, such as [yarn](https://yarnpkg.com/package/bootstrap).*
 

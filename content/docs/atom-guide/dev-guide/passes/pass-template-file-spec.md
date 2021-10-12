@@ -6,18 +6,11 @@ toc: true
 weight: 1100
 ---
 
-{{< preview-new >}}
+This section goes over the elements of a PassTemplate (`*.pass`) file. Note that each element has an equivalent in the C++ [PassTemplate API](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_template.html).
 
-This section goes over the elements of a PassTemplate (`*.pass`) file. Note that each element has an equivalent in C++ (refer to the API reference). 
+At the top of the `.pass` file is the JSON serialization header. It contains the elements `Type`, `Version`, `ClassName` and `ClassData`. `ClassName` is set to "PassAsset", meaning that the serialized class is a [`PassAsset`](/docs/api/gems/atom/class_a_z_1_1_r_p_i_1_1_pass_asset.html), and `ClassData` contains the PassTemplate itself. 
 
-<!-- [TODO] Link to API reference -->
-At the top of the `.pass` file is the JSON serialization header. It contains the elements `Type`, `Version`, `ClassName` and `ClassData`. `ClassName` is set to "PassAsset", meaning that the serialized class is a `PassAsset` (see PassAsset.h), and `ClassData` contains the PassTemplate itself. 
-
-The PassTemplate will be broken down in the **PassTemplate** section below. The elements in the PassTemplate varies depending on the `PassClass` property. You can find all the supported elements for a specific `Pass` Class in the folder ___ .
-<!-- 
-@antonmic What is a more a suitable name for "elements"? In general what are common terms used for JSON files (e.g. properties, arrays, objects, etc.).
-@antonmic How do we know which elements can we include in the pass template? Should we have create a passtemplate file spec for each pass class?  
--->
+The PassTemplate will be broken down in the **PassTemplate** section below. The elements in the PassTemplate varies depending on the `PassClass` property.  
 
 The template below shows the high-level structure of the `.pass` file. In this example, the PassTemplate is for a ComputePass. 
 ```json
@@ -46,12 +39,12 @@ You can define the PassTemplate in the `PassTemplate` container. The PassTemplat
 
 The `PassTemplate` container has the following elements:
 - **Name**: The name of the PassTemplate. This name will be used to query and instantiate the PassTemplate from the PassTemplateLibrary.
-    <!-- @antonmic Is the PassTemplateLibrary equivalent to the pass registry? What is this.  -->
 
 - **PassClass**: The `Pass` class to create when this template gets instantiated (such as `ParentPass`, `RenderPass`, `ComputePass`, or `FullScreenTrianglePass`). Pass classes are defined in the file __. 
 
-    *Note: Pass classes must be registered for creation. This is done by calling `PassSystemInterface::AddPassCreator(...)`*
-    <!-- @antonmic Out-of-the-box, does Atom already register these passes? Which file?  -->
+    {{< note >}}
+Pass classes must be registered for creation. This is done by calling `PassSystemInterface::AddPassCreator(...)`
+    {{< /note >}}
 
 - **[Slots:](#slots)** A list of PassSlots that this PassTemplate can use for attachments. 
 
@@ -64,34 +57,20 @@ The `PassTemplate` container has the following elements:
 - **[FallbackConnections:](#fallbackconnections)** A list of FallbackConnections. Each FallbackConnection specifies an input attachment to output, in case the pass is disabled. 
 
 - **[PassData:](#passdata)** Specifies the pass type or method to use with the specified *Draw List*, *Pipeline*, and *Pass SRG*. 
-    <!-- @antonmic PassData -- this doesn't make much sense to me. In a general sense, what does PassData used for? -->
 
 
 
 #### Slots
 The `Slots` block defines the **PassSlots** that this PassTemplate can use to attach PassAttachments to. In the code side, the list of slots defines a `vector<PassSlot>` (see *PassAttachment.h*).  Each element in the `Slots` block is a PassSlot that represents a slot mapping in the SRG_PerPass `slots` array or structure. 
 
-<!-- 
-PassAttachments include __, __, and __, and are defined <else where>.  
-[NOTE FOR DEVS: More info on pass attachments?]
--->
-
-<!-- @antonmic Can we elaborate on what a PassSlot is? -->
-<!-- @antonmic When do i use "slot", "PassSlot", "attachment slot"? What terminology is correct and is the most clear to the customers?  -->
-
 Each PassSlot contains the following properties:
 - **Name**: The name for the attachment slot. 
-    <!-- [@carrcain I want to imply that the user defines the name of the attachment slot here (vs. referencing an attachment slot by specifying its name here)] -->
 
 - **ShaderInputName** *(optional)*: The name of the shader variable (defined in SRG_PerPass) that is using this PassSlot. If omitted, the attachments will be bound in the order it is declared in the SRG_PerPass. This is prone to user error, so it is recommended to specify the shader variables explicitly. 
-    <!-- @antonmic How are SRG_PerPass's linked to this pass? How do we know which SRG_PerPass we are talking about? -->
 
-- **SlotType**: Specifies whether the slot is `Input`, `Output`, or `InputOutput`. In C++, this property serializes to the enum `PassSlotType` (see *PassAttachment.h*). <!-- @carrcain What is the best way to note which file the class belongs in? -->
+- **SlotType**: Specifies whether the slot is `Input`, `Output`, or `InputOutput`. In C++, this property serializes to the enum `PassSlotType` (see *PassAttachment.h*). 
 
-- **ScopeAttachmentUsage**: Specifies a `ScopeAttachmentUsage` value, which describes how the attachment is used. ScopeAttachmentUsage values are defined in the enum class `ScopeAttachmentUsage` (see *AttachmentEnums.h*). <!-- Possible values are `RenderTarget`, `DepthStencil`, `Shader`, `Copy`, `Resolve`, `Predication`, `Indirect`, `SubpassInput`, or `InputAssembly`. -->
-    <!-- [WRITER NOTE: Should I list out all of the possible values here? Or just reference the API reference. That way there is less upkeep and the info will stay up-to-date] -->
-
-    <!-- @antonmic Are there some ScopeAttachmentUsages that are more common than others? -->
+- **ScopeAttachmentUsage**: Specifies a `ScopeAttachmentUsage` value, which describes how the attachment is used. ScopeAttachmentUsage values are defined in the enum class `ScopeAttachmentUsage` (see *AttachmentEnums.h*). 
 
 - **LoadStoreAction** *(optional)*: Defines the action taken when the attachment in the PassSlot is loaded or stored. If omitted, this property defaults to `Load` and `Store`. Values are defined in `AttachmentLoadStoreAction` (see *AttachmentLoadStoreAction.h*). This property can define the following actions: 
   
@@ -99,22 +78,18 @@ Each PassSlot contains the following properties:
     - **Type**: Specifies a `ClearType` enum value, which defines the type of value to represent. The `ClearValueType` enum contains the values `Vector4Float`, `Vector4Uint`, and `DepthStencil` (see *ClearValue.h*). 
     - **Value**: The value to use. Depending on the `Type` property, the value can either be a "Value" (`float4`), "UintValue" (`uint4`), or "DepthStencilValue".  
   
-      <!-- [WRITER NOTE] We should add an example of the JSON structure for each type. Not sure if I should squeeze that in here or somewhere else. -->
-      <!-- @antonmic What is the default value if ClearValue is not defined? --> 
 
   - **LoadAction** *(optional)*: Describes what to do when the PassSlot's attachment is loaded by specifying an `AttachmentLoadAction` enum value. The `AttachmentLoadAction` enum contains the values `Load` (default), `Clear`, and `DontCare` (see *AttachmentEnums.h*). 
  
   - **StoreAction** *(optional)*: Describes what to do when the PassSlot's attachment is stored by specifying an `AttachmentStoreAction` enum value. The `AttachmentStoreAction` enum contains the values `Store` (default), and `DontCare`. (see *AttachmentEnums.h*). 
  
   - **LoadActionStencil** *(optional)*: Describes what to do with the stencil when the PassSlot's attachment is loaded by specifying an `AttachmentLoadAction` enum value. The `AttachmentLoadAction` enum contains the values `Load` (default), `Clear`, and `DontCare` (see *AttachmentEnums.h*). 
-    <!-- @antonmic What is the stencil and where is it specified? -->
   
   - **StoreActionStencil** *(optional)*: Describes what to do with the stencil when the PassSlot's attachment is stored by specifying an `AttachmentStoreAction` enum value. The `AttachmentStoreAction` enum contains the values `Store` (default) and `DontCare` (see *AttachmentEnums.h*). 
 
 - **FormatFilter**: A list of formats that are allowed to connect to this PassSlot. Values are defined in the `Format` enum (see *Format.h*). If the list is empty, then the slot accepts attachments of any format. An error is thrown if an attachment tries to connect to this PassSlot and the attachment's format is not in this list. 
 
 - **DimensionFilter**: A list of dimensions (1D, 2D, or 3D) that are allowed to connect to this slot. Values are defined in `ImageDimension` (see *ImageDescriptor.h*). If the list is empty, then the slot accepts attachments of any dimension. An error is thrown if an attachment tries to connect to the PassSlot and the attachment's dimension is not in this list. 
-<!-- - @antonmic What exact values are accepted in this JSON? (e.g. Image2D, or 2D) -->
 
 The example below demonstrates the structure of the `Slots` block in a `.pass` file. 
 ```json
@@ -159,10 +134,8 @@ Each PassRequest contains the following properties:
 
 - **PassData**: PassRequests can hold a packet of custom data. This data is serialized as any `AZStd` component and will be cast to the appropriate type by the instantiated Pass during creation. 
 
-<!-- [TODO] Add code sample here demonstrating a PassRequest block -->
 
 #### Image Attachments
-<!-- [TODO] This section needs more work -->
 A list of image attachments owned by the Pass. In the code side, the list of image attachments defines a `vector<PassImageAttachmentDesc>` (see PassAttachment.h). Each element in the list is a `PassImageAttachmentDesc`. 
 
 Each image attachment contains the following elements: 
@@ -235,8 +208,6 @@ Each fallback in the `FallbackConnections` block contains the following properti
 - **Input**: Specifies what input to use as the fallback.
 - **Output**: Specifies which output we are specifying the fallback for. 
 
-<!-- [@antonmic: Need some more detail for "input" and "ouput". What values can we put in here and where can we find those values in the pass template? Is it the name of an attachment or the slot? Also does this refer to "Input" and "Output" attachments. What happens if the value is not an existing attachment?] -->
-
 The example below demonstrates the structure of the `FallbackConnections` block in a `.pass` file. 
 ```json
             "FallbackConnections": [
@@ -256,7 +227,7 @@ The PassData can also be specified in a PassRequest. In this case, any PassData 
 
 The `PassData` block contains the following elements:  
 - **$type**: Specifies the pass functionality as implemented by the C++ class. New passes functionality can be introduced into the C++ class. Atom implements functionalities such as RasterPassData, FullscreenTrianglePassData, and ComputePassData. You must match the PassClass in the PassTemplate file to its PassData definition. For eaxmple, RasterPassData must match RasterPass. 
-  <!-- @antonmic Is there a name for this "pass functionality" -->
+  
 - **DrawListTag**: The name of the draw list to apply this pass to. 
 - **PipelineViewTag**: The name of the pipeline to apply this pass to. 
 - **PassSrgAsset**: `FilePath` contains a path to the pass SRG file. 

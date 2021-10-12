@@ -6,9 +6,10 @@ toc: true
 weight: 200
 ---  
 
-{{< preview-new >}}
-
 Physically based rendering (PBR) is rendering in a photorealistic way by simulating the physics of real-world lighting models. The following sections describe the basic concepts underlying PBR and how they relate to PBR material types in Atom.
+
+{{< todo issue="https://github.com/o3de/o3de.org/issues/688" >}}
+{{< /todo >}}
 
 ## PBR Shading Model
 
@@ -36,7 +37,7 @@ The following list of properties are used to define PBR materials in Atom. An ov
 
 The **base color** defines the diffuse albedo for non-metals, and the specular color for metals. 
 
-When configuring the **Base Color** property group in a PBR material type, you can set a linear sRGB color in the `Color` property. This color can be combined with a texture by assigning an image to the `Texture Map` property. The `Texture Blend Mode` dictates how the `Color` and `Texture Map` are combined. And the `Factor` value can be used to adjust the strength of the blend. Colors are stored as linear sRGB on disk and later converted to ACEScg before passing to the shaders and the GPU (for more information, see [Color Management](docs/atom-guide/look-dev/color-management/index.md)). 
+When configuring the **Base Color** property group in a PBR material type, you can set a linear sRGB color in the `Color` property. This color can be combined with a texture by assigning an image to the `Texture Map` property. The `Texture Blend Mode` dictates how the `Color` and `Texture Map` are combined. And the `Factor` value can be used to adjust the strength of the blend. Colors are stored as linear sRGB on disk and later converted to ACEScg before passing to the shaders and the GPU<!-- (for more information, see [Color Management](/docs/atom-guide/look-dev/color-management))DRAFT TOPIC-->. 
 
 ### Metallic 
 
@@ -61,28 +62,6 @@ When configuring the **Specular Reflectivity f0** property group in a PBR materi
 By default, Atom uses a lighting model that assumes light only bounces once (single-scattering); but in reality, light may bounce multiple times (multi-scattering). With **multi-scattering compensation**, you can configure the lighting model to perform additional calculations to produce more accurate surface lighting. 
 
 You can take multi-scattering into account in your materials by toggling `Multiscattering Compensation`. For a bit extra performance cost, this simulates the fact that light may bounce off a rough surface multiple times at the microscopic level. This feature makes the lighting on certain materials appear more realistic (brighter). The impact is most noticeable on rough metallic surfaces. For smooth surfaces and non-metal surfaces, the impact likely won't be noticed and should be disabled.
-
-<!-- 
-### Emissive
-
-... Occlusion, and more will be filled in later. [todo]
-
-### Subsurface Scattering
-
-Subsurface scattering is part of our shading model, however it does not follow the traditional PBR shading model due to its complexity. Instead, subsurface scattering is handled by a separate shading pass.
-[todo]
-
-### Irradiance
-
-The irradiance color that is used for this material when calculating global illumination (indirect bounce lighting in the scene). Does not affect the appearance of the material itself.
-[todo]
--->
-
-<!-- 
-## Lighting
-
-This section describes lighting interactions in PBR. There are properties in a material that allow you to apply lighting interactions: enableIBL, enableDirectional lights. You can also edit the lighting environment of a scene.
--->
 
 ## Properties in Material Types
 

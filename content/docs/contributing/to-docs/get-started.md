@@ -6,13 +6,11 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 Anyone can be a contributor to Open 3D Engine (O3DE) docs and determine their own level of participation. Here, we'll help you navigate the documentation process so you can decide how you'd like to contribute.
 
 ## Before you do anything
 
-It's important to be familiar with the O3DE documentation and get a feel for its style. Take some time to browse the [O3DE documentation](https://www.o3de.org/docs). The documentation consists of several guides:
+It's important to be familiar with the O3DE documentation and get a feel for its style. Take some time to browse the [O3DE documentation](/docs). The documentation consists of several guides:
 
 * [Welcome](/docs/welcome-guide): A friendly introduction and overview of O3DE. The purpose of this guide is to get new users, particularly those without much prior experience, comfortable with O3DE. If you have a gift for simplifying technical concepts, this is a great area to investigate for contributions.
 * [Tutorials and Examples](/docs/learning-guide): Guided tutorials, samples, and cookbooks to help users learn O3DE. If you are an O3DE user, submitting recipes for the cookbooks is a great way to contribute new documentation without investing much time.
@@ -21,13 +19,17 @@ It's important to be familiar with the O3DE documentation and get a feel for its
 * [Tools UI Developer Guide](/docs/tools-ui): The style and implementation guide for the UI used throughout the tools of O3DE and Atom Renderer.
 * [API Reference](/docs/api): Automatically generated API reference for O3DE.
 * [Contribute](/docs/contributing): You are here. Guidelines for contributing to O3DE and its documentation.
-* [Release Notes](/release-notes): Release notes for O3DE including new features, fixes, and known issues.
+* [Release Notes](/docs/release-notes): Release notes for O3DE including new features, fixes, and known issues.
 
 Some documentation, such as **API Reference**, is generated automatically. Some documentation, such as **Release Notes**, is maintained and provided by O3DE SIGs and governance.
 
 {{< note >}}
 Participation as a contributor requires a [GitHub account](https://github.com/signup).
 {{< /note >}}
+
+Don't want to read tiresome words, and prefer a snappy video to help you get started? Watch this video, instead!
+
+{{< youtube id="DGz9Clo6EKw" title="Contributing to O3DE Documentation" >}}
 
 ## Technical information
 
@@ -61,7 +63,7 @@ Here are some important guidelines you should keep in mind about PRs in O3DE:
 
 Now that you are familiar with the O3DE docs, and have had some exposure to issues and PRs, let's have a look at the high-level process for making a contribution to documentation.
 
-1. **Agree the the O3DE Contributor License Agreement (CLA):** Refer to [Contributing to Open 3D Engine Documentation](https://github.com/o3de/o3de.org/CONTRIBUTING.md).
+1. **Agree the the O3DE Contributor License Agreement (CLA):** Refer to the project's [CONTRIBUTING.md](https://github.com/o3de/o3de.org/blob/main/CONTRIBUTING.md) for details.
 
 1. **Create a new issue or claim an existing issue:** All contributions begin with a GitHub issue. You can file an issue and then assign it to yourself, or you can claim an existing issue. When creating a new issue, search the current issue list to ensure the issue hasn't already been submitted.
 

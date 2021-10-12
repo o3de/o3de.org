@@ -2,14 +2,13 @@
 description: ' Learn how to rename your image files to make use of existing or customized
   image processing presets in Open 3D Engine. '
 title: Using Image Naming Conventions
+draft: true
 ---
 
-{{< preview-migrated >}}
-
-You can use any existing or created [image processing presets](/docs/user-guide/assets/creating-image-processing-presets.md)\. To do this, append the suffix to the end of the file name before you add it to your O3DE directory\.
+You can use any existing or created image processing presets. To do this, append the suffix to the end of the file name before you add it to your O3DE directory.
 
 **Example**
-If you create an image that you want to use as a decal, add the `_decal` suffix to the file name before the extension\. For example, to convert `scorchmark.tif` as a decal, rename it to `scorchmark_decal.tif`\. You then add it to your O3DE directory, so that Asset Processor automatically processes the file\.
+If you create an image that you want to use as a decal, add the `_decal` suffix to the file name before the extension. For example, to convert `scorchmark.tif` as a decal, rename it to `scorchmark_decal.tif`. You then add it to your O3DE directory, so that Asset Processor automatically processes the file.
 
 Some of the existing presets used by the Asset Processor include the following:
 + `_diff` - Albedo

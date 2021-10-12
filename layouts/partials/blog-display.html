@@ -2,34 +2,28 @@
 
 {{ $posts := where site.RegularPages "Section" "blog" | first 3 }}
   <div class="row">
-      <div class="col mx-auto">
+      <div class="col mx-auto mt-4 mb-3">
           <h2>Blog</h2>
+          <p>What’s going on in the O3DE community? Read the blog posts and catch up on the latest news, insights, and feature development.</p>
       </div>
   </div>
-  <div class="row">
+  <div class="row card-stack pb-5">
     {{ range (.Paginate $posts).Pages }}
     {{ $date := dateFormat "January 2, 2006" .Date }}
-    <div class="col col-lg-4 col-md-12 col-12">
-      <div class="card">
-          <div class="card-body">
-            <a href="{{ .RelPermalink }}">
-            <h2>
-              {{ .Title }}
-            </h2>
-            <p>
-              {{ $date }}
-            </p>
-            </a>
-            {{ .Summary }}...
+    <div class="col col-12">
+      <a class="card mb-3" href="{{ .RelPermalink }}">
+        <div class="row">
+          <div class="col-md-4 card-image" style="background-image: url('{{ .Param "blog_img" }}')">
+          </div>
+          <div class="col col-md-8">
+            <div class="card-body">
+              <h5 class="card-title mt-0"> {{ .Title }}</h5>
+              <p class="card-text">{{ .Summary }}</p>
+              <div class="learn-more pb-4">Read blog post</div>
+            </div>
           </div>
         </div>
+      </a>
     </div>
     {{ end }}
   </div>
-  <div class="row mt-3">
-    <div class="col mx-auto">
-        <a href="/blog" class="btn btn-light border float-right" target="_blank">
-            Read more »
-          </a>
-    </div>
-    </div>

@@ -5,9 +5,9 @@ description: ' Use vertex containers in Open 3D Engine (O3DE) to access, update,
 weight: 500
 ---
 
-{{< preview-migrated >}}
 
-`VertexContainer` is a concrete type and an interface that is used by several O3DE component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape.md) component and the [Spline](/docs/user-guide/components/reference/shape/spline.md) component, and used indirectly by the [Navigation Area](/docs/user-guide/components/reference/nav-area.md) component.
+
+`VertexContainer` is a concrete type and an interface that is used by several O3DE component buses. It is implemented directly by the [Polygon Prism Shape](/docs/user-guide/components/reference/shape/polygon-prism-shape/) component and the [Spline](/docs/user-guide/components/reference/shape/spline/) component, and used indirectly by the [Navigation Area](/docs/user-guide/components/reference/ai/nav-area) component.
 
 ## Vertex Container Interface ##
 
@@ -29,10 +29,14 @@ To implement the `VariableVertices` interface, you can use either an `AZStd::vec
 
 The `VertexContainerInterface` provides an interface to all functionality provided by the previous two interfaces and the `VertexContainer` type. For convenience, the `VertexContainerInterface` also provides `SetVertices` and `ClearVertices` functions that can update all vertices or remove all vertices in one operation. The `SetVertices` function takes a `vertices` parameter that contains a list of all vertices to be stored.
 
-> **Note:** A `VertexContainer` owns the vertices to which it has access; they are not stored elsewhere (a `VertexContainer` is not a view).
+{{< note >}}
+A `VertexContainer` owns the vertices to which it has access; they are not stored elsewhere (a `VertexContainer` is not a view).
+{{< /note >}}
 
 For more information about the interfaces in the `VertexContainerInterface`, see the code and code comments in the `o3de\Code\Framework\AzCore\AzCore\Math\VertexContainerInterface.h` file.
 
 For more information about the `VertexContainer` type, see the code and code comments in the `o3de\Code\Framework\AzCore\AzCore\Math\VertexContainer.h` file.
 
-> **Note:** The `VertexContainer` can store `Vector2` or `Vector3` types. The vector type is determined at compile time when the type is created. This is useful for certain components that do not allow points to be modified on the Z (vertical) axis and treat points just in two dimensions. The Polygon Prism Shape component requires the `Vector2` type.
+{{< note >}}
+The `VertexContainer` can store `Vector2` or `Vector3` types. The vector type is determined at compile time when the type is created. This is useful for certain components that do not allow points to be modified on the Z (vertical) axis and treat points just in two dimensions. The Polygon Prism Shape component requires the `Vector2` type.
+{{< /note >}}

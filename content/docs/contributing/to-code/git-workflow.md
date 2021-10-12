@@ -1,21 +1,16 @@
 ---
-linktitle: "Git Workflow"
-title: "O3DE Code Contribution GitHub Workflow"
-description: ' Overview and instructions for contributing code to Open 3D Engine (O3DE) through GitHub. '
-date: 2021-03-02T00:23:51-05:00
+linktitle: GitHub Workflow
+title: O3DE Code Contribution GitHub Workflow
+description: Overview and instructions for contributing code to Open 3D Engine (O3DE) through GitHub.
 toc: true
 weight: 200
 ---
-
-{{< preview-new >}}
-
-## Open 3D Engine Code Contribution: Git Workflow
 
 Looking to submit new or changed code to O3DE? Exciting! Follow the guidance below to submit your first PR.
 
 ### GitHub Code Contribution Workflow
 
-The O3DE base repository is on GitHub at [https://github.com/o3de/o3de](https://github.com/o3de/o3de).
+The O3DE base repository is on GitHub at [{{< links/o3de-source >}}]({{< links/o3de-source >}}).
 
 ![GitHub code contribution workflow diagram](/images/contributing/to-code/code-git-workflow.png)
 
@@ -31,14 +26,14 @@ At a high level, the workflow is:
 
 ### Initial Git contribution workflow steps
 
-1. Create a fork of `https://github.com/o3de/o3de.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [https://github.com/o3de/o3de](https://github.com/o3de/o3de.git) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
+1. Create a fork of `{{< links/o3de-source >}}.git` into your own GitHub account. To do this, go to the O3DE public GitHub repo at [{{< links/o3de-source >}}]({{< links/o3de-source >}}) and create a fork by selecting the "Fork" button in the upper-right. This will clone the O3DE public repo into your repo, and may take a few minutes. The URL for your fork will be something like `https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`.
 
-2. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
+1. Now, clone your fork locally by opening GitBash (or a Git-enabled shell or utility). Change directories to the folder you want to clone the repo in and run: `git clone https://github.com/<YOUR GITHUB NAME HERE>/o3de.git`. You will now have the clone of your fork on your local desktop and can work with the files directly.
 
-3. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo. Run the following Git commands from **your locally cloned fork's path**:
+1. However, to simplify this workflow, you must make some changes to your local Git configuration. In this case, you will be setting your fork's URL as the `origin` repo, and the O3DE public repo as your `upstream` repo, and updating the LFS URL. Run the following Git commands from **your locally cloned fork's path**:
 
     ```bash
-    git remote add upstream https://github.com/o3de/o3de.git
+    git remote add upstream {{< links/o3de-source >}}.git
     ```
 
     Confirm that `upstream` points to the O3DE public repo and that `origin` points to your fork:
@@ -50,23 +45,37 @@ At a high level, the workflow is:
     Minimally, you should see output that looks like this:
 
     ```bash
-    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (fetch)
-    origin  https://github.com/o3de-super-contributor-name/o3de/o3de.org.git (push)
-    upstream        https://github.com/o3de/o3de.git (fetch)
-    upstream        https://github.com/o3de/o3de.git (push)
+    origin  https://github.com/<FORK>/o3de.git (fetch)
+    origin  https://github.com/<FORK>/o3de.git (push)
+    upstream  {{< links/o3de-source >}}.git (fetch)
+    upstream  {{< links/o3de-source >}}.git (push)
     ```
 
     You can also configure upstream to target specific branches, as well.
 
-4. Now, update your local repo by `git fetch`ing the branches currently active on the O3DE repo. You can get all working branches with `git fetch upstream --all`, or fetch a specific branch with `git fetch upstream <name-of-branch>`.
+    Update the LFS URL to include your fork.  This will enable you to push changes to large files.  Open the .lfsconfig file at the root of the repository for complete instructions and the **DISTRIBUTION** to use.
 
-5. Rebase the commit history to the last commit from the upstream `main` branch:
+    ```cmd
+    git config lfs.url https://<DISTRIBUTION>.cloudfront.net/api/v1/fork/<FORK> 
+    ```
+
+    You may be prompted to re-authenticate the next time you pull or push. Remember to use your GitHub personal access token not your GitHub password.
+
+    If you need to revert this change later you can run the following command:
+
+    ```cmd
+    git config --unset lfs.url 
+    ```
+
+1. Now, update your local repo by `git fetch`ing the branches currently active on the O3DE repo. You can get all working branches with `git fetch upstream --all`, or fetch a specific branch with `git fetch upstream <name-of-branch>`.
+
+1. Rebase the commit history to the last commit from the upstream `main` branch:
 
     ```bash
     git rebase upstream/main
     ```
 
-6. Check out the branch you will be working on and **take your own branch from it** to perform your work.
+1. Check out the branch you will be working on and **take your own branch from it** to perform your work.
 
     ```bash
     git checkout <name-of-fetched-branch>
@@ -93,7 +102,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
     This will push the update to your fork, and NOT the O3DE code repo.
 
     {{< note >}}
-    We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio 2019 or Visual Studio Code, turn on commit signing in the preferences.
+We require DCO signing on all code commits. This requires that you have both your contributor name and email address in your `.gitconfig` file, or have previously run the following Git commands from a Git-enabled shell: `git config user.name "YOUR CONTRIBUTOR NAME HERE"` `git config user.email "YOUR CONTRIBUTOR CONTACT MAIL HERE"`. (This command updates your `.gitconfig.`) You must use the `-s` option on every commit. If you are using a Git-enabled IDE, such as Visual Studio 2019 or Visual Studio Code, turn on commit signing in the preferences.
     {{< /note >}}
 
 2. (Optional): Test your branch with Jenkins.
@@ -123,7 +132,7 @@ Now, you're ready to do some work! After you've made some changes and saved your
 4. The SIG owner (or a delegate) for the affected component reviews the pull request. At the same time, the automated review (AR) is triggered.
 
     {{< note >}}
-    The SIG owner will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
+The SIG owner will review the pull request and must approve the AR run before it can start. This is to required to prevent the pipeline from running malicious code. The AR build that is triggered on pull requests runs on the infrastructure owned by O3DE.
     {{< /note >}}
 
 5. Once all review comments have been addressed, a SIG member will approve the pull request.
@@ -141,9 +150,3 @@ The SIG owner can request changes by providing feedback. You should engage with 
 ![An example of a failed AR check in a pull request.](/images/contributing/to-code/code-ar-failed.png)
 
 If you do not make the changes to pass the AR, or ignore the code review feedback, the SIG owner may reject the changes in the pull request by marking it closed.
-
-### Frequently Asked Questions
-
-**Q:** _QUESTION HERE._
-
-**A:** ANSWER HERE.

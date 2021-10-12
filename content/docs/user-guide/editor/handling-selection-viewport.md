@@ -2,19 +2,18 @@
 description: ' Update your component so that it knows how to handle selection in the
   Open 3D Engine viewport. '
 title: 'Step 5: Handle Selection in the Viewport'
+draft: true
 ---
 
-{{< preview-migrated >}}
+In the following procedure, make changes to your code so that you can enter Component Mode by double-clicking the component in the viewport.
 
-In the following procedure, make changes to your code so that you can enter Component Mode by double\-clicking the component in the viewport\.
-
- In Component Mode, you can modify the dimensions of the **Point Light** component directly in the viewport\.
+ In Component Mode, you can modify the dimensions of the **Point Light** component directly in the viewport.
 
 **To handle selection in the viewport**
 
-1. In a text editor, open the `EditorPointLightComponent.h` file\.
+1. In a text editor, open the `EditorPointLightComponent.h` file.
 
-1. For the last parameter, add the `EditorComponentSelectionRequestsBus::Handler`\.
+1. For the last parameter, add the `EditorComponentSelectionRequestsBus::Handler`.
 
    ```
    class EditorPointLightComponent
@@ -30,7 +29,7 @@ In the following procedure, make changes to your code so that you can enter Comp
 
    1. `SupportsEditorRayIntersect` - Override this function and return `true` if you implemented `EditorSelectionIntersectRayViewport`
 
-   1. `GetBoundingBoxDisplayType` - Used for debugging to ensure that the AABB is the correct fit\. This example sets the function to `NoBoundingBox`
+   1. `GetBoundingBoxDisplayType` - Used for debugging to ensure that the AABB is the correct fit. This example sets the function to `NoBoundingBox`
 
    ```
    // EditorComponentSelectionRequests
@@ -43,11 +42,11 @@ In the following procedure, make changes to your code so that you can enter Comp
    AZ::u32 GetBoundingBoxDisplayType() override;
    ```
 
-1. Save the file\.
+1. Save the file.
 
-1. In a text editor, open the `EditorPointLightComponent.cpp` file\.
+1. In a text editor, open the `EditorPointLightComponent.cpp` file.
 
-1. Connect and disconnect from the `EditorComponentSelectionRequestsBus` in the `Activate` and `Deactivate` functions of the component\.
+1. Connect and disconnect from the `EditorComponentSelectionRequestsBus` in the `Activate` and `Deactivate` functions of the component.
 
    ```
    void EditorPointLightComponent::Activate()
@@ -66,30 +65,31 @@ In the following procedure, make changes to your code so that you can enter Comp
    ```
 
 1. Add the following changes to your code:
-   + Add an implementation of `SupportsEditorRayIntersect` to return `true`\. By default, this function returns `false`\.
-   + Add an implementation of `GetBoundingBoxDisplayType` to return `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox`\.
+    + Add an implementation of `SupportsEditorRayIntersect` to return `true`. By default, this function returns `false`.
+    + Add an implementation of `GetBoundingBoxDisplayType` to return `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox`.
 
-   ```
-   bool EditorPointLightComponent::SupportsEditorRayIntersect()
-   {
+    ```
+    bool EditorPointLightComponent::SupportsEditorRayIntersect()
+    {
        return true;
-   }
+    }
 
        AZ::u32 EditorPointLightComponent::GetBoundingBoxDisplayType()
-   {
+    {
            return AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay::NoBoundingBox;}
-   ```
-**Note**
-It's possible to instead return the `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay:BoundingBox` for debugging, but you shouldn't leave it enabled\.
+    ```
+    {{< note >}}
+It's possible to instead return the `AzToolsFramework::EditorComponentSelectionRequests::BoundingBoxDisplay:BoundingBox` for debugging, but you shouldn't leave it enabled.
+{{< /note >}}
 
-   The next two functions show how to implement the picking and selection support\.
+   The next two functions show how to implement the picking and selection support.
 
-1. Add the implementation for the `GetEditorSelectionBoundsViewport` function\.
+1. Add the implementation for the `GetEditorSelectionBoundsViewport` function.
 
-1. Create an AABB centered around the component covering its extents\. In this case, get the position in world space of the entity and create an AABB with the radius of the point light\. Because the point light is represented as a sphere, use the `GetPointMaxDistance` function\.
+1. Create an AABB centered around the component covering its extents. In this case, get the position in world space of the entity and create an AABB with the radius of the point light. Because the point light is represented as a sphere, use the `GetPointMaxDistance` function.
 **Example**
 
-   Your code should look like the following\.
+   Your code should look like the following.
 
    ```
    AZ::Aabb EditorPointLightComponent::GetEditorSelectionBoundsViewport(
@@ -103,7 +103,7 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
    }
    ```
 
-   In the next step, make changes to the `EditorSelectionIntersectRayViewport` function\.
+   In the next step, make changes to the `EditorSelectionIntersectRayViewport` function.
 **Example**
 
    ```
@@ -145,16 +145,16 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
    }
    ```
 
-1. Get the position of the entity in world space and approximate a torus or flat hollow cylinder to represent the rings of the **Point Light** component\. The minor radius corresponds to the tube part of the torus, which is its thickness\.
+1. Get the position of the entity in world space and approximate a torus or flat hollow cylinder to represent the rings of the **Point Light** component. The minor radius corresponds to the tube part of the torus, which is its thickness.
 
    ```
    const float minorRadius = 0.1f;
    const float majorRadius = GetPointMaxDistance();
    ```
 
-1. You want a radius that is a reasonable size so that you can easily select it in the viewport\. The major radius is the distance from the center of the torus to the middle of the tube\. Because you have a ring for each axis, check that each one is using the `IntersectHollowCylinder` function, which basically approximates a torus\.
+1. You want a radius that is a reasonable size so that you can easily select it in the viewport. The major radius is the distance from the center of the torus to the middle of the tube. Because you have a ring for each axis, check that each one is using the `IntersectHollowCylinder` function, which basically approximates a torus.
 
-1. Test a ring for each axis and store the intersection distances to find the closest intersection\.
+1. Test a ring for each axis and store the intersection distances to find the closest intersection.
 
    ```
    {
@@ -165,6 +165,6 @@ It's possible to instead return the `AzToolsFramework::EditorComponentSelectionR
    }
    ```
 
-   If a successful intersection occurred, the shortest distance is returned\.
+   If a successful intersection occurred, the shortest distance is returned.
 
-1. Save the file\.
+1. Save the file.

@@ -1,0 +1,10 @@
+## LICENSE
+
+The Open 3D Engine documentation and website are licensed under the following conditions:
+
+* Documentation content excluding code, and including images, is licensed under CC-BY-4.0.
+* Code samples, including inline code, are dual-licensed under Apache 2.0 and the MIT licenses.
+
+For information on the licensing terms of Open 3D Engine source code, read the O3DE License:
+    https://github.com/o3de/o3de/blob/development/LICENSE.txt
+    

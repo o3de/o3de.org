@@ -10,6 +10,6 @@ The **Audio Controls Editor** (ACE) is an O3DE Editor plugin that manages the ma
 
 The ATL controls support a flexible workflow for a project, such as the following cases:
 
-* You are ready to integrate sounds into your game, but audio middleware content is not yet created. You can first create the ATL controls and integrate them into the game\. When audio content is complete, you can then connect the existing ATL controls to the new middleware controls.
+* You are ready to integrate sounds into your game, but audio middleware content is not yet created. You can first create the ATL controls and integrate them into the game. When audio content is complete, you can then connect the existing ATL controls to the new middleware controls.
 
 * You make changes later in your project to the middleware controls, which breaks the connections to their ATL controls. Instead of finding every instance where you used a sound, you can fix the connection between the ATL and the middleware. This automatically fixes the broken connections.

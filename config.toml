@@ -1,7 +1,7 @@
-baseURL = "https://docs.o3de.org"
+baseURL = "https://o3de.org"
 title = "Open 3D Engine"
 disableKinds = ["taxonomy", "taxonomyTerm"]
-copyright = "O3DE Authors | Documentation Distributed under CC-BY 4.0"
+copyright = "O3DE Open 3D Engine Contributors | Documentation Distributed under CC-BY 4.0"
 
 enableGitInfo = true
 enableRobotsTXT = true 
@@ -19,33 +19,34 @@ unsafe = true
 [params]
 font_awesome_version = "5.12.0"
 description = "Open 3D Engine (O3DE) is an Apache 2.0-licensed multi-platform 3D engine that enables developers and content creators to build AAA games, cinema-quality 3D worlds, and high-fidelity simulations <b>without any fees or commercial obligations</b>.<br><br><b>Try the Developer Preview today!</b>"
-favicon = "favicon.png"
+favicon = "favicon.ico"
 repositoryUrl = "https://github.com/o3de/o3de.org"
 contentDir = "/content/"
 sourceRepo = "https://github.com/o3de/o3de"
 
 [params.logos]
 navbar = "O3DE-Logo-REV-Mono.svg"
+og_image = "O3DE-Circle-Icon.png"
 
 [[params.social]]
-name = "Twitter"
-url = "#"
-icon = "fab fa-twitter"
-
-[[params.social]]
-name = "GitHub"
-url = "https://github.com/o3de"
+name = "O3DE GitHub Forums"
+url = "https://github.com/o3de/o3de/discussions"
 icon = "fab fa-github"
 
 [[params.social]]
-name = "Discord"
-url = "#"
+name = "O3DE Discord Chat"
+url = "https://discord.gg/xNb2q4SJKJ"
 icon = "fab fa-discord"
 
 [[params.social]]
-name = "Slack"
-url = "#"
-icon = "fab fa-slack"
+name = "O3DE Public Calendar"
+url = "https://lists.o3de.org/g/o3de-calendar/calendar"
+icon = "fas fa-calendar-day"
+
+[[params.social]]
+name = "O3DE Twitter"
+url = "https://twitter.com/o3dengine"
+icon = "fab fa-twitter"
 
 [[params.fonts]]
 name = "Open Sans"
@@ -97,5 +98,5 @@ identifier = "docs"
 
 [[menu.main]]
 name = "CONTRIBUTE"
-url = "/docs/contributing"
+url = "/contribute"
 weight = 7

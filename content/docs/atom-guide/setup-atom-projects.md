@@ -5,8 +5,6 @@ toc: true
 weight: 200
 ---
 
-{{< preview-new >}}
-
 Get to know the Atom Renderer and its features by setting up an Atom project with the Open 3D Engine. This tutorial covers how to set up two Atom projects: **Atom Test** and **Atom Sample Viewer**.
 
 - **Atom Test**: This project contains a collection of levels that demonstrates Atom's features in the O3DE Editor.
@@ -69,7 +67,7 @@ Use CMake to generate a Visual Studio solution, which is used in the next step t
 Atom Test
 : 
     ```cmd
-    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_UNITY_BUILD=ON
+    cmake -B "C:\AtomTest\build" -S "C:\AtomTest" -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
 Atom Sample Viewer
@@ -110,4 +108,4 @@ You are all set up to explore Atom with the Atom Sample Viewer project! Check ou
 
 2. When the project is done building, you can find the build files in the directory `C:\AtomTest\build\bin\profile`. From there, you can launch `Editor.exe`, `AssetProcessor.exe`, and other tools. 
 
-You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](docs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 
+You are all set up to explore Atom with the Atom Test project! Check out the [Atom Gem's component reference](/docs/user-guide/components/reference/atom/) in the O3DE User Guide to learn how to use the components in the Atom Test project. 

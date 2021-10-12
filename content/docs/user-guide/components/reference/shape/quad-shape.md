@@ -5,13 +5,13 @@ description: ' Open 3D Engine (O3DE) Quad Shape component reference. '
 weight: 100
 ---
 
-{{< preview-migrated >}}
 
-The **Quad Shape** component creates a transparent square plane that's oriented on the local Z axis. The dimensions of the quad can be edited with the **Width** and **Height** properties. The Quad Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/_index.md).
+
+The **Quad Shape** component creates a transparent square plane that's oriented on the local Z axis. The dimensions of the quad can be edited with the **Width** and **Height** properties. The Quad Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
 ## Provider ##
 
-[LmbrCentral Gem](/docs/user-guide/gems/reference/lmbr-central.md)
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
 ## Properties ##
 

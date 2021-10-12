@@ -6,8 +6,6 @@ toc: true
 weight: 100
 ---
 
-{{< preview-new >}}
-
 ## Prerequisites
 
 The AWS Client Auth Gem requires the following to be installed and configured:
@@ -18,7 +16,7 @@ The AWS Client Auth Gem requires the following to be installed and configured:
 
 The [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) (CLI) (version 2) is optional but also strongly recommended.
 
-See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core/getting-started.md) for help with installing and configuring these prerequisites.
+See [Getting Started with AWS Gems](/docs/user-guide/gems/reference/aws/aws-core/getting-started/) for help with installing and configuring these prerequisites.
 
 ## Setting up AWS Client Auth
 
@@ -31,15 +29,15 @@ Complete the following set up steps to use the AWS Client Auth Gem in your proje
 
 ### 1. Enable the AWS Client Auth Gem
 
-If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./_index.md#enabling-the-aws-client-auth-gem).
+If you haven't already added and built the **AWS Client Auth Gem** in your project, do so now using the instructions in [Enabling the AWS Client Auth Gem](./).
 
 ### 2. Configure authentication providers
 
-For this step, decide which authentication provider you will use and configure your project to use that provider by following the steps in [Using Authentication Providers](./authentication-providers.md). You can use one of the supported providers, or extend the Gem to support your own.
+For this step, decide which authentication provider you will use and configure your project to use that provider by following the steps in [Using Authentication Providers](./authentication-providers/). You can use one of the supported providers, or extend the Gem to support your own.
 
 ### 3. Deploy the CDK application
 
-Use the CDK synth and deploy commands from the AWS Client Auth Gem directory to deploy AWS resources for authentication and authorization support. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application.md) in the AWS Core documentation.
+Use the CDK synth and deploy commands from the AWS Client Auth Gem directory to deploy AWS resources for authentication and authorization support. For help with these deployment operations, refer to the synth and deploy steps in [Deploying the CDK Application](/docs/user-guide/gems/reference/aws/aws-core/cdk-application/) in the AWS Core documentation.
 
 When setting constants for deploy, the AWS Client Auth Gem supports the following additional, optional values. If set, the CDK application will try to enable the authenticated provider authorization using the Amazon Cognito identity pool.
 
@@ -81,7 +79,7 @@ Create identity pool to support authenticated and anonymous identities.
 
 After deploying the CDK application, your project's resource mapping file must be updated to export the deployed REST API information so that you can use the deployed AWS resources.
 
-Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool.md) to add the following mappings to your project's resource mapping file:
+Use the [Resource Mapping Tool](/docs/user-guide/gems/reference/aws/aws-core/resource-mapping-tool/) to add the following mappings to your project's resource mapping file:
 
 * `AWSClientAuth.CognitoUserPoolId`
 * `AWSClientAuth.CognitoUserPoolAppClientId`
