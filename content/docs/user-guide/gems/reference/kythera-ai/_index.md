@@ -25,6 +25,11 @@ The Gem is available from our website at [https://www.kythera.ai/kythera-for-o3d
 * [Octree generation](octree-generation) - How to create an octree for 3D navigation
 * [3D Navigation splines](navigation-splines-tool) - Highly configurable splines for describing 3D movement of AI agents
 
+## General
+
+* [Perception and alertness](perception-and-alertness) - How AI agents perceive and respond to other entities
+* [Spatial Query System (SQS)](spatial-query-system) - Query language for finding physical positions in the game world
+
 ## Debugging and behavior authoring with the Kythera AI Inspector
 
 The Inspector is Kythera AI's browser-based debugger and behavior tree editor.
