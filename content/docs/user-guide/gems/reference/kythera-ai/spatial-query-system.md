@@ -23,74 +23,20 @@ When an agent needs to choose a position to move to, it can do so by executing a
 
 A query is constructed once, then executed any number of times by the Spatial Query System. The system handles queuing, time-slicing and asynchronous processing of multiple queries over a number of frames. When a query is completed, it uses the Kythera signal mechanism to communicate the result back to the original caller.
 
-There are two ways to create a Spatial Query:
-
-*   Directly in C++ using a Domain Specific Language
-    
-    *   This benefits from C++ type and syntax checking at compile time
-        
-*   Specified in text files
-    
-    *   The files are parsed and interpreted at run-time
-        
-    *   This allows rapid iteration, in particular for high-level agent-based queries, as the files can be reloaded while the game is running
+Spatial queries are specified in text files, which are parsed and interpreted at run-time. This allows rapid iteration, in particular for high-level agent-based queries, as the files can be reloaded while the game is running.
         
 
 ## Writing spatial queries
 
-### C++ or data-driven?
+Each level in a game can include a file called `SpatialQueries.sqs` which defines a collection of Spatial Queries. Queries common to multiple levels can be placed in the global Scripts folder. Whenever a level is loaded, all queries are first unloaded and then the global queries are loaded in. The level-specific queries come next and will overwrite any global queries with the same name.
 
-Spatial queries can be written in either C++ or a parsed, data-driven format. The two styles use the same underlying systems, use the same syntax, and should have the same functionality and runtime performance. In general, we recommend that users work with **data-driven** spatial queries- these allow for rapid in-editor iteration, as users can modify their query, reload it, and rerun a test scenario to see how it behaves, all without exiting the game and needing to recompile.
+There is a console command, `kyt_ReloadSpatialQueries`, which will reload the queries in the file on-demand, allowing rapid iteration during development.
+In addition to the queries written in C++ as shown above, queries can also be provided in a file. These files will be parsed by the Spatial Query System, and used to construct spatial queries. The syntax for these queries is the same as for C++ queries.
 
-You may, however, want to use a C++ spatial query for one of the following reasons:
-
-*   You might be working on a Kythera integration with your custom engine, and do not yet support data-driven queries.
-    
-*   You might want to use a Spatial Query as part of a C++ system, and do not want to have a dependency on a data asset, and do not want to add this specific query to the global registry. Working in C++ makes this use case easier.
-    
-
-In our examples below, we will first show C++ queries, as the examples are applicable cross-engine, and the principles for structuring your query are the same for data-driven queries.
 
 ### Query structure
 
-A query can be constructed and registered in C++ code as follows. It uses the `SimpleGenerator`, which is explained in the Generators section.
-
-```
-SpatialQueryPtr SampleQuery() 
-{
-	return SpatialQueryPtr(new SpatialQuery {
-		Name("SampleQuery"),
-
-		Generators {
-			SimpleGenerator(
-				Origin(Querier),
-				MyNumber(1.0f)
-			)
-		},
-
-		Conditions {
-			LessThan(Distance3D(Target), 5.0f)
-		},
-
-		Scores {
-			Weight(1.0f, Distance3D(Target))
-		},
-
-		Fallbacks {
-			new SpatialQuery {
-				Name("SampleFallback"),
-				Generators {},
-				Conditions {},
-				Scores {}
-			}
-		}
-	});
-}
-
-REGISTER_QUERY(SampleQuery);
-```
-
-The query contains a name and four blocks - `Generators`, `Conditions`, `Scores` and `Fallbacks`. When the query is executed:
+A spatial query consists of four blocks - `Generators`, `Conditions`, `Scores` and `Fallbacks`. When the query is executed:
 
 *   The Generators are run in parallel (via time-slicing) and each returns one or more candidate positions or entities (such as cover points) as output
     
@@ -197,7 +143,7 @@ Unspecified symbols:
 
 A generator produces a list of positions (`KytPos`) or entities (`KytEntityId`), based on a set of parameters provided. If the generator produces entities (such as cover points) then each entity will implicitly provide a position via its `position` aspect. 
 
-Here is a contrived example of a custom generator using the built-in Origin parameter and a custom function called MyNumber. (To learn about how to write your own custom Spatial Query Functions, see [https://kythera.atlassian.net/wiki/pages/resumedraft.action?draftId=1664679944](https://kythera.atlassian.net/wiki/pages/resumedraft.action?draftId=1664679944) .)
+Here is a contrived example of a custom generator using the built-in Origin parameter and a custom function called MyNumber.
 
 ```
 Generators {
@@ -246,8 +192,6 @@ Scores {
 
 ```
 
-See the [https://kythera.atlassian.net/wiki/pages/resumedraft.action?draftId=1664679944](https://kythera.atlassian.net/wiki/pages/resumedraft.action?draftId=1664679944) for examples of functions that do and don't defer.
-
 ### Fallbacks
 
 Fallback blocks offer alternative queries to try if the first does not find any result that meets all conditions. They will be tried one after the other until one succeeds. Each is a full, self-contained query in its own right - the syntax is just the same as the primary query and each is formed without reference to those before it.
@@ -258,11 +202,7 @@ Firstly, it may be the case that if the agent cannot find an appropriate positio
 
 Second, you may be able to save significant processing overhead by querying for a cheaper common case and using fallbacks for edge cases. Typically the primary query might generate positions up to a smaller range where - given your level design rules - you would expect to find a suitable position. The fallback would expand that range significantly and may also relax some of the constraints. This gives you robust, graceful degradation in any areas that don't quite meet expectations, without making all of your requests more expensive.
 
-### Data driven spatial queries
-
-_This page documents engine-agnostic details of data driven spatial queries. See_ [Spatial Query System (Lumberyard)](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/1664745521) _or_ [Spatial Query System (UE4)](https://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/1349910533) _for engine-specific workflows_
-
-In addition to the queries written in C++ as shown above, queries can also be provided in a file. These files will be parsed by the Spatial Query System, and used to construct spatial queries. The syntax for these queries is the same as for C++ queries.
+### Spatial query file syntax
 
 The simplest valid non-empty SQS file is as follows. It creates one named SpatialQuery but does nothing useful, so it will produce a Warning.
 
@@ -278,7 +218,7 @@ SpatialQuery {
 }
 ```
 
-The syntax of a Spatial Query File is as follows:
+The syntax of a Spatial Query file is as follows:
 
 ```
 // Use C++-style comments (not C-style comments)
@@ -312,19 +252,19 @@ SpatialQuery
 
 There are a few points to take note of here:
 
-*   C++-style `//` comments can be used in the file, including at the end of a line
+*   C++-style (`//`) comments can be used in the file, including at the end of a line of code
     
-    *   C-style /\* \*/ comments are NOT supported
+    *   C-style `/* */` comments are NOT supported
         
 *   Each query is contained in a `SpatialQuery {}` block, and no semi-colons are used
     
-*   The only enum that is accepted is `SpatialQueryObject`, which must be used in its fully qualified form
+*   The only `enum` that is accepted is `SpatialQueryObject`, which must be used in its fully qualified form
     
-    *   Other enums will need to be provided as integers (for now)
+    *   Other enums will need to be provided as integers
         
-*   In particular, the "Objects" Querier, Reference, Target, Point are enums and must be qualified, for example, SpatialQueryObject::Querier
+*   In particular, the "Objects" Querier, Reference, Target, Point are enums and must be qualified, for example, `SpatialQueryObject::Querier`
     
-*   General-purpose functions like `abs`, `floor,` etc cannot be used (for now)
+*   General-purpose functions (`abs`, `floor,` etc) cannot be used at present
 
 ## Spatial query function listing
 
@@ -780,223 +720,4 @@ Once this is enabled, debug visualization will be drawn into your scene. 
 *   Points which pass all Conditions but do not have the highest calculated Score are drawn as red cylinders, with their height proportional to their Score. They are labelled with their Score.
     
 *   The point which has the highest calculated Score is drawn as a green cylinder, and labelled with its Score
-
-## Extending the spatial query system
-
-Kythera provides a fairly comprehensive set of out-of-the-box generators and functions that you can use to construct your queries, but we cannot foresee the requirements of every game. The Spatial Query System has been designed to be user extensible, so that game-specific functionality can be added to the system by creating new Spatial Query Functions in [Userspace](http://kythera.atlassian.net/wiki/spaces/KYTDOC/pages/180387900/High+Level+Structure). These custom functions can have access into your game’s systems, while also being treated as first-class citizens of the Spatial Query System- by [registering your function](#RegisteringSpatialQueryFunctions), you make it available for use in all spatial queries.
-
-**Note:** all function objects that will participate in Spatial Queries must have a name terminating in "Function", as demonstrated in the examples below. This convention is required for the registration macros to function correctly.
-
-### Example custom generator
-
-Here is the implementation of a simple generator, producing a single point based on the value of MyNumber and returning immediately. The implementation of the custom named parameter is also shown.
-
-```
-CREATE_NAMED_PARAMETER("MyNumber", float);
-
-struct SimpleGeneratorFunction : public ISpatialQueryGenerator {
-
-	PARAMETERS("Origin", "MyNumber");
-
-    EvaluationResult Evaluate(ISpatialQueryContext* pContext, ISpatialQueryPointContext* pPointContext, EvaluationResult&& result) override
-    {
-		// Parameters are accessed via a set of helper methods
-		SpatialQueryObject origin = result.GetSpatialQueryObject("Origin");
-		// All result.GetXXX() functions allow you to specify a default value as the second argument
-        float number = result.GetFloat("NyNumber", 0.0f);
-
-		// Generate a point
-        KytDynArray<KytPos> points;
-        points.Add(KytPos(number, number, number, WorldCoordsAssumed));
-
-		// Store the generated points into the query context
-        pContext->AddGeneratedPoints(points);
-
-		// Indicate that we are done with generation
-        return EvaluationResult::Completed();
-    }
-};
-```
-
-The parameters to the function are specified via the PARAMETERS macro which takes a sequence of strings representing the parameter names. The order of the parameters in this macro determines the expected order of arguments when calling the function. There are two ways to call a function in a Spatial Query:
-
-1.  Provide values directly
-    
-    1.  Values are mapped directly to the parameter names in the order they are provided. If too few values are provided, the remaining parameters will assume default values. Providing too many will issue a warning to the console but cause no harm.
-        
-    2.  This approach is good for functions that have a simple signature and whose purpose and meaning are self-explanatory. For this reason, this is the preferred approach for condition and score functions but not for generators.
-        
-2.  Use the "named parameters" approach
-    
-    1.  Each parameter is provided by name, providing high legibility and the ability to specify them in any order. Any omitted parameters will assume default values. Attempting to set a parameter that was not listed in the PARAMETERS macro will result in a warning to the console but cause no harm.
-        
-    2.  Named parameters are themselves classes and must be created using the CREATE\_NAMED\_PARAMETER macro, as shown above for MyNumber.
-        
-    3.  This approach is more verbose and self-documenting than using direct values, so consider using it in cases where a function has a complex signature and/or many options to pass in.
-        
-
-Here are some examples of calling the above-defined generator, `SimpleGenerator`, using the direct values approach:
-
-```
-SimpleGenerator(Querier, 5.0f)		// Good
-SimpleGenerator(5.0f, Querier)		// Bad - will compile but the query will issue warnings about type mismatches
-SimpleGenerator()					// Good - both parameters will take default values, named Origin=Querier and MyNumber=0.0f
-```
-
-And some examples using the named parameters approach:
-
-```
-SimpleGenerator(Origin(Querier), MyNumber(3.0f))	// Good
-SimpleGenerator(MyNumber(3.0f), Origin(Querier))	// Good
-SimpleGenerator(Origin(Querier))					// Good - MyNumber will have the default float value of 0.0f
-SimpleGenerator(Invalid(5))							// Bad - unknown parameter supplied
-```
-
-Parameter values can accessed via a set of helper methods on the passed-in `EvaluationResult` object, each of which takes a name and (optionally) a default value.
-
-```
-bool EvaluationResult::GetBool(name, default = false);
-int32 EvaluationResult::GetInt(name, default = 0);
-uint32 EvaluationResult::GetUint(name, default = 0);
-size_t EvaluationResult::GetSizeT(name, default = 0);
-float EvaluationResult::GetFloat(name, default = 0.0f);
-SpatialQueryObject EvaluationResult::GetSpatialQueryObject(name, default = SpatialQueryObject::Querier);
-StringHash EvaluationResult::GetStringHash(name, default = "");
-SpatialQueryStruct::SQSPoint EvaluationResult::GetPoint(name, default = default(SpatialQueryStruct::SQSPoint));
-KytPos EvaluationResult::GetPos(name, default = (0, 0, 0));
-KytRelVec3 EvaluationResult::GetVec3(name, default = (0, 0, 0));
-```
-
-Here `pContext` is a pointer to the query context, providing information that the generator may need and a function for the generator to supply its points. A generator is allowed to defer its processing if it is unable to produce the entire list of positions immediately. It indicates this by returning the following result, optionally providing a value to refer to in the next update cycle. It is important to return the incoming `result` parameter in this way as this will preserve the function parameter values for the iteration.
-
-```
-return result.Defer(optionalValue);
-```
-
-If the generator failed to produce any points, return like this:
-
-```
-return EvaluationResult::Failed();
-```
-
-The `SimpleGeneratorFunction` generator would be registered inside the CPP file like this:
-
-```
-REGISTER_SQS_FUNCTION(SimpleGenerator);
-```
-
-In the header file, you need to use the following macro to enable the generator to be used within queries:
-
-```
-CREATE_SQS_FUNCTION(SimpleGenerator);
-```
-
-### Example function without deferral
-
-A custom function that returns a float without deferral can be created as follows. The example used here is the `Distance3D` function supplied by Kythera.
-
-```
-struct Distance3DFunction : public FloatFunction
-{
-	PARAMETERS("Object");
-
-protected:
-	EvaluationResult DoEvaluate(ISpatialQueryContext* pContext, ISpatialQueryPointContext* pPointContext, EvaluationResult&& result) override
-	{
-		// This function is only valid when run for a candidate point, not in a generator, so assert that we have a PointContext
-		KYT_assert(pPointContext && "A point context is required by this function");
-
-		// Get the position to calculate the distance to - this depends on the value of the "Object" parameter
-		KytPos position;
-		if (!GetObjectPosition(position, "Object", pContext, result))
-			return EvaluationResult::Error();
-		
-		// Calculate the distance using the candidate point position
-		float distance = pPointContext->GetPos().Distance(position);
-
-		// Return the result and indicate completion
-		return EvaluationResult::Completed(distance);	
-	}
-};
-```
-
-### Example function with deferral
-
-A custom function that returns a boolean value after deferring and passing some data to its future execution can be created as follows. This is a contrived example to demonstrate deferral with a value being passed to the future execution.
-
-```
-struct IsIt3Function : public BooleanFunction
-{
-	PARAMETERS("Number");
-
-protected:
-	EvaluationResult DoEvaluate(ISpatialQueryContext* pContext, ISpatialQueryPointContext* pPointContext, EvaluationResult&& result) override
-	{
-		if (result.IsDeferred())
-		{
-			bool isIt3 = (result.GetInt("Number") == result.intResult);
-			return EvaluationResult::Completed(isIt3);
-		}
-		else
-		{
-			return EvaluationResult::Deferred(3);
-		}
-	}
-};
-```
-
-In addition to the `EvaluationResult::intResult` shown above, other result types can be obtained as follows:
-
-*   `EvaluationResult::boolResult`
-    
-*   `EvaluationResult::intResult`
-    
-*   `EvaluationResult::uintResult`
-    
-*   `EvaluationResult::sizeTResult`
-    
-*   `EvaluationResult::floatResult`
-    
-*   `EvaluationResult::spatialQueryObjectResult`
-    
-*   `EvaluationResult::stringHashResult`
-    
-*   `EvaluationResult:: pointResult`
-    
-*   `EvaluationResult::vec3Result`
-    
-*   `If a Kythera ID type was stored (e.g. EntityId), it can be retrieved using the function EvaluationResult::GetId()`
-    
-
-### Registering custom functions
-
-In all cases, custom generators and functions must be registered with the Spatial Query System and made available for use in queries by using the two macros shown below, respectively:
-
-```
-// Register function, typically done in the CPP file.
-REGISTER_SQS_FUNCTION(IsIt3Function);
-
-// Expose the function to queries, typically done in the header file.
-CREATE_SQS_FUNCTION(IsIt3Function);
-```
-
-### SQS function aliases
-
-![SQS function aliases shown in debug draw](/images/user-guide/gems/kythera-ai/sqs-function-aliases.png)
-
-An SQS Function Alias is a custom SQS function that is defined from an aggregation of other existing SQS functions.
-
-Turning a common chunk of SQS logic into an SQS function alias has a couple of advantages:
-
-*   It can simplify and clarify queries, by replacing a large block of nested functions with a single readable statement 
-    
-*   The name of an alias function will be used by the SQS debug draw, which can make it easier to debug which condition is causing a point to be rejected
-    
-
-SQS Function Aliases can currently only be created from C++, but they can be used from either C++ or data-defined queries- they behave like any other Spatial Query Function. They are created by using the `CREATE_SQS_FUNCTION_ALIAS` macro. This example defines a simple function that checks whether a cover point is oriented towards the querier’s target:
-
-```
-	CREATE_SQS_FUNCTION_ALIAS(CoverConeOriented, GreaterThan(DotProduct(RelativeDirection(Point, eForward), DirectionTo(Target)), cosf(0.785f)));
-	REGISTER_SQS_FUNCTION(CoverConeOriented);
-```
 
