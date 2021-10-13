@@ -17,7 +17,6 @@ preview-build:
 		--buildDrafts \
 		--buildFuture \
 		--minify
-	echo 'User-agent: *\nDisallow: /' > robots.txt
 
 open:
 	open https://o3de.netlify.com
