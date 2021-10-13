@@ -6,7 +6,7 @@ command = "make production-build"
 HUGO_VERSION = "0.75.1"
 
 [context.deploy-preview]
-command = "make preview-build && echo 'User-agent: *\nDisallow: /' > layouts/robots.txt"
+command = "echo 'User-agent: *\nDisallow: /' > layouts/robots.txt && make preview-build"
 
 [context.branch-deploy]
-command = "make preview-build && echo 'User-agent: *\nDisallow: /' > layouts/robots.txt"
+command = "echo 'User-agent: *\nDisallow: /' > layouts/robots.txt && make preview-build"
