@@ -82,7 +82,7 @@ When enabled, friction is applied when CCD collisions are resolved.
 When enabled, mass is computed for the rigid body.
 
 **Mass**
-When **Compute Mass** is disabled, a **Mass** value can be specified for the PhysX rigid body. Valid **Mass** values range for **0** to **Infinity**.
+When **Compute Mass** is disabled, a **Mass** value can be specified for the PhysX rigid body. Valid **Mass** values range for **0** to **Infinity**. A value of **0** is treated as infinite. The trajectory of infinite mass bodies cannot be affected by any collisions or forces other than gravity.
 
 **Compute COM**
 When enabled, the center of mass is computed for the rigid body.
