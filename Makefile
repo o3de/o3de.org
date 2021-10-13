@@ -16,7 +16,8 @@ preview-build:
 		--baseURL $(DEPLOY_PRIME_URL) \
 		--buildDrafts \
 		--buildFuture \
-		--minify
+		--minify \
+		--disableKinds="robotsTXT"
 
 open:
 	open https://o3de.netlify.com
@@ -24,4 +25,3 @@ open:
 clean:
 	rm -rf resources
 	rm -rf public
-
