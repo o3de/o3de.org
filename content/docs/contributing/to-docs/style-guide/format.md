@@ -59,6 +59,62 @@ Write links without the file extentension *.md*.
 | `[...](../)` | Returns to the index of the previous directory. |
 | `[...](../link-to-page-in-previous-directory)` | Links from any page to a page in the previous directory. |
 
+## Tables
+
+Table example:
+
+```markdown
+| Default column| Right-aligned column | Center-aligned column | Left-aligned column |
+| - | -: | :-: | :- |
+| Row | entry | entry | entry |
+| Row | entry | entry | entry |
+| Row with missing entry | entry | | entry |
+```
+
+Table result:
+
+| Default column| Right-aligned column | Center-aligned column | Left-aligned column |
+| - | -: | :-: | :- |
+| Row | entry | entry | entry |
+| Row | entry | entry | entry |
+| Row with missing entry | entry | | entry |
+
+## Tabs
+
+Tabs example:
+
+
+```
+{{</* tabs name="name-for-this-group-of-tabs" */>}}
+{{%/* tab name="First tab" */%}}
+
+Tab content.
+
+{{%/* /tab */%}}
+{{%/* tab name="Second tab" */%}}
+
+Tab content.
+
+{{%/* /tab */%}}
+{{</* /tabs */>}}
+```
+
+
+Tabs result:
+
+{{< tabs name="tabs-example" >}}
+{{% tab name="First tab" %}}
+
+Tab content.
+
+{{% /tab %}}
+{{% tab name="Second tab" %}}
+
+Tab content.
+
+{{% /tab %}}
+{{< /tabs >}}
+
 ## Text format
 
 There can be multiple methods to achieve the same result in Markdown. Adhere to the following standards to make both the Markdown source files and the on-page documentation much easier for readers to parse at a glance. Consistency in the Markdown source format also aids automation efforts for documentation.
