@@ -48,9 +48,9 @@ The Asset Processor or Asset Processor Batch are responsible for processing sour
     
     - Use **CMake** to build the Asset Processor Batch and its dependencies by specifying the `MyProject.Assets` target. After building, this command runs Asset Processor Batch and processes the assets.
 
-    ```cmd
-    cmake --build build/windows_vs2019 --target MyProject.Assets --config profile -- /m
-    ```
+        ```cmd
+        cmake --build build/windows_vs2019 --target MyProject.Assets --config profile -- /m
+        ```
 
     - Run your project's Asset Processor to begin processing the assets.
 
@@ -106,7 +106,7 @@ Now that you've packaged your assets and built your project game release layout,
 
 1. Open a command line window and change to your project's release build install directory.
 
-2. Run the Game Launcher. Supply the path to the level that the project starts with.
+2. Run the Game Launcher. Supply the path to the level that the project starts with. This opens the Game Launcher and loads the starting level.
     
     - **For a monolithic project**:
  
