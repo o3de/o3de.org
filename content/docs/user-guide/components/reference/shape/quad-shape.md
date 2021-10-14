@@ -20,7 +20,7 @@ The **Quad Shape** component creates a transparent square plane that's oriented 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Visible** | Enable to always display the shape in the viewport, even when the entity is not selected. Disable to hide the shape when the entity is not selected. | Boolean | `Enabled` |
-| **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
+| **Game View** | Enable to display the shape while in game mode. | Boolean | `Disabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
 | **Width** | The width of the shape in meters on the local X axis. | 0.0 to Infinity | `1.0` |
 | **Height** | The height of the shape in meters on the local Y axis. | 0.0 to Infinity | `1.0` |

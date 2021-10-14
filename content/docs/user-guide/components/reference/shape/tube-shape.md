@@ -24,7 +24,7 @@ The **Tube Shape** component creates a transparent, enclosed cylindrical volume 
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Visible** | Enable to always display the shape in the viewport, even when the entity is not selected. Disable to hide the shape when the entity is not selected. | Boolean | `Enabled` |
-| **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
+| **Game View** | Enable to display the shape while in game mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
 | **Tube Shape - Radius** | The uniform radius that defines the Tube Shape's width. | 0.1 to Infinity | `1.0` |

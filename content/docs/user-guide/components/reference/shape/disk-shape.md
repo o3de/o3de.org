@@ -20,7 +20,7 @@ The **Disk Shape** component creates a transparent circular surface that's orien
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Visible** | Enable to always display the shape in the viewport, even when the entity is not selected. Disable to hide the shape when the entity is not selected. | Boolean | `Enabled` |
-| **Game View** | Enable to display the shape while in **Game** mode. | Boolean | `Disabled` |
+| **Game View** | Enable to display the shape while in game mode. | Boolean | `Disabled` |
 | **Filled** | Enable to display the shape as filled.  Disable to display the shape as a wireframe. | Boolean | `Enabled` |
 | **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
 | **Radius** | The radius of the shape in meters. | 0.0 to Infinity | `0.5` |
