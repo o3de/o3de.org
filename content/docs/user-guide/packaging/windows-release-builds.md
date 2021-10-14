@@ -1,15 +1,17 @@
 ---
-title: "Building a Windows Release"
-linktitle: "Windows Release"
-description: Learn how to package and build your project for release with Open 3D Engine (O3DE) on Windows. 
+title: "Creating a Project Game Release Layout for Windows"
+linktitle: "Project Game Release Layout (Windows)"
+description: Learn how to create a proejct game release layout for Windows with Open 3D Engine (O3DE). 
 toc: true
 ---
 
-This tutorial guides you through the process of packaging and building an **Open 3D Engine (O3DE)** project for release on Windows. A *release build* of your project is a standalone application that you can distribute. It uses packaged assets to load all of the contents that make up a project, such as its code, shaders, levels, and other assets.
+This tutorial guides you through the process of creating a project game release layout for windows in **Open 3D Engine (O3DE)**. A *project game release layout* is a directory structure that contains the Game Launcher and the packaged assets needed to run the Game Launcher outside of the developer environment.
+
+Packaged assets are `.pak` files that contain product assets from the project's `Cache/pc` directory. The Game Launcher loads the content in the packaged assets that make up a project, such as its levels, code, shaders, and other assets.
 
 The instructions here guide you through the following steps:
 - Process your project's assets.
-- Create a release build for your project.
+- Create a project game release layout.
 - Run your project's Game Launcher.
 
 
@@ -19,9 +21,9 @@ The following instructions assume that you have:
 
 - Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](\docs\welcome-guide\setup\_index.md).
 
-- An O3DE project that contains at least one level. You may need to resolve any errors in your project in order to create a release build.
+- Created an O3DE project that contains at least one level. You may need to resolve any errors in your project in order to create a release build.
 
-- A Visual Studio project for your O3DE project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
+- Generated a Visual Studio project for your O3DE project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
 
 This tutorial uses the following project name and directory in the examples.
 
@@ -30,39 +32,47 @@ This tutorial uses the following project name and directory in the examples.
 
 ## Set the starting level
 
-The starting level is the level that the Game Launcher loads first. It references your project's level assets from the `Cache/pc/` directory.
+Before you create a project game release layout, specify the starting level, which is what the Game Launcher loads first. 
 
-1. Open the `<project>/autoexec.cfg` file and set the starting level's path relative to the `Cache/pc/` directory by adding the following line. In this example, the level asset is `mainmenu.spawnable`
+1. Open the `<project>/autoexec.cfg` file and add the following line. This sets the starting level by using `Loadlevel` and providing a path to the level. The path must be relative to the `Cache/pc/` directory. In this example, the level asset is `mainmenu.spawnable`
 
     ```
     Loadlevel levels/mainmenu/mainmenu.spawnable
     ```
 
-## Process project assets
+## Process assets
 
-The **Asset Processor** or **Asset Processor Batch** (CLI) processes your project's asset files and stores them in the cache. A build release requires all of the assets in the cache to be packaged in `.pak` files. You must process all of your project's assets before you build a release.
+Before you create the project game release layout, you must process the assets that your project uses such as levels, objects, environment, and gameplay logic. The Asset Processor or Asset Processor Batch are responsible for processing source assets into product assets, which the Game Launcher consumes at runtime. 
 
-1. Process assets. Depending on if you already have the Asset Processor or not, follow either of the following steps:
-   - **If you have the Asset Processor**: You may already have the Asset Processor if you built your project for development by using the Editor target. Run the Asset Processer and wait for it to process all of your assets.
+1. Process your projecet's assets by following either one of the following instructions.
+    
+    - Use CMake to build the Asset Processor Batch and its dependencies by specifying the `MyProject.Assets` target. After building, this command runs **Asset Processor Batch** and processes the assets.
 
-   - **If you don't have the Asset Processor**: You can build the Asset Processor and its dependencies by specifying the `MyProject.Assets` target. After building, this command runs **Asset Processor Batch** and processes the assets. 
+    ```cmd
+    cmake --build build/windows_vs2019 --target MyProject.Assets --config profile -- /m
+    ```
+
+    - Run your project's Asset Processor to begin processing the assets.
+
+<!-- [Question] Is it accurate to say that both methods can complete this task? Is one method recommended? If so, why? -->
+
+{{< caution >}} Ensure that the Asset Processor or Asset Processor Batch processes all of your assets without failure. {{< /caution >}}
 
 
-        ```cmd
-        cmake --build build/windows_vs2019 --target MyProject.Assets --config profile -- /m
-        ```
+## Create a project game release layout
 
-{{< caution >}} Ensure that the Asset Processor processes all of your assets without failure. {{< /caution >}}
+You can create a project game release layout by using a non-monolithic or monolithic build. A monolithic release layout only contains files that're needed to run the project, such as the Game Launcher, the packaged assets, and dependent `.dll` files. A non-monolithic release layout contains the same files needed to run the project, as well as the objects used for development such as tools, shader compilers, and all `.dll` files. 
 
-## Build a release
+In this step, you will use CMake to build either a monolithic or a non-monolithic project and specify the `INSTALL` target and `release` configuration. This handles several tasks:
 
-You can build a release for a non-monolithic or monolithic project. A non-monolithic project contains supporting files used for development. A monolithic project only includes files needed to run the project.
+- Creates an `install` directory that will contain your release layout.
 
-You will use CMake to build either a monolithic or a non-monolithic project and specify the `INSTALL` target and `release` configuration.
+- Packages an `engine.pak` file out of the product assets in your `Cache/pc` directory. 
 
-### Monolithic projects
+- Builds the Game Launcher and other supporting files.
 
-Create a project release install layout for a monolithic project, which contains the Game Launcher, third-party `.dll` files, and `engine.pak`.
+
+### Monolithic project
 
 1. Set up a new CMake build directory, `windows_mono`, for your monolithic build in your project directory. We recommend keeping this build directory separate from your non-monolithic build directory. Specify a monolithic build by enabling the `-D` option, `LY_MONOLITHIC_GAME`.
 
@@ -76,7 +86,7 @@ Create a project release install layout for a monolithic project, which contains
     cmake --build build/windows_mono --target INSTALL --config release
     ```
 
-The result is an installation directory that contains the Game Launcher, `.dll` files, `engine.json`, `project.json`, `and engine.pak`. The release build install directory's location and layout looks like the following:
+The result is a project release install directory that contains the Game Launcher, `.dll` files, `engine.json`, `project.json`, `and engine.pak`. It's location and layout looks like the following:
 
     <project>/install/bin/windows/release/monolithic
     ├───Cache
@@ -96,25 +106,30 @@ The result is an installation directory that contains the Game Launcher, `.dll` 
 
 ### Non-monolithic projects
 
-Create a project release install layout with the Game Launcher, engine-built `.dll` files, third-party `.dll` files, and `engine.pak`.
-
-1. Run the CMake build configuration in your build directory, `build/windows_vs2019`. This generates a Game Launcher, copies `.dll` files, and packages your project's assets in the `Cache` directory into `engine.pak`.
+1. Run the CMake build configuration in your build directory, `build/windows_vs2019`.
 
     ```cmd
     cmake --build build/windows_vs2019 --target INSTALL --config release
     ```
 
-## Test the game launcher
 
-Now that you've packaged your assets and built your project for release, you are ready to test your project's Game Launcher by using the command line interface.
+## Run the game launcher
+
+Now that you've packaged your assets and built your project game release layout, you are ready to run your project's Game Launcher.
 
 1. Open a command line window and change to your project's release build install directory.
 
-2. Run the standalone project's game launcher. Supply the path to the level that the project starts with.
+2. Run the Game Launcher. Supply the path to the level that the project starts with.
     
     - **For a monolithic project**:
         ```cmd
-        ./MyProject.GameLauncher.exe --project-path="<project>\install\bin\Windows\release\Monolithic"
+        ./MyProject.GameLauncher.exe --project-path="MyProject\install\bin\Windows\release\Monolithic"
         ```
 
-Now you are able to run a build release of your O3DE project and distribute it!
+    - **For a non-monolithic project**:
+        ```cmd
+        ./MyProject.GameLauncher.exe --project-path="MyProject\install\bin\Windows\release\Default"
+        ```  
+
+Now you can distribute your project and run it on other Windows devices!
+
