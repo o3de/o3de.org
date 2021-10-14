@@ -13,7 +13,7 @@ For example, you can add the **Input** component to an entity and specify in the
 To work with inputs, you must enable the [Starting Point Input](/docs/user-guide/gems/reference/input/starting-point-input) Gem.
 {{< /note >}}
 
-## Input Properties 
+## Input properties
 
 ![Input Component Properties](/images/user-guide/interactivity/input/input-component.png)
 
