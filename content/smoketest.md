@@ -355,6 +355,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | animation-editor.svg | {{< icon "animation-editor.svg" >}} |
 | asset-editor.svg | {{< icon "asset-editor.svg" >}} |
 | audio-editor.svg | {{< icon "audio-editor.svg" >}} |
+| browse-edit-select-files.svg | {{< icon "browse-edit-select-files.svg" >}} |
 | camera.svg | {{< icon "camera.svg" >}} |
 | caret-closed.svg | {{< icon "caret-closed.svg" >}} |
 | caret-open.svg | {{< icon "caret-open.svg" >}} |
@@ -383,6 +384,7 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | menu.svg | {{< icon "menu.svg" >}} |
 | more.svg | {{< icon "more.svg" >}} |
 | move.svg | {{< icon "move.svg" >}} |
+| open-in-internal-app.svg | {{< icon "open-in-internal-app.svg" >}}
 | parent.svg | {{< icon "parent.svg" >}} |
 | picker.svg | {{< icon "picker.svg" >}} |
 | pin-button.svg | {{< icon "pin-button.svg" >}} |
