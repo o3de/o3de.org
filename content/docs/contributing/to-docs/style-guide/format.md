@@ -88,12 +88,12 @@ Tabs example:
 {{</* tabs name="name-for-this-group-of-tabs" */>}}
 {{%/* tab name="First tab" */%}}
 
-Tab content.
+First tab's content.
 
 {{%/* /tab */%}}
 {{%/* tab name="Second tab" */%}}
 
-Tab content.
+Second tab's content.
 
 {{%/* /tab */%}}
 {{</* /tabs */>}}
@@ -105,12 +105,12 @@ Tabs result:
 {{< tabs name="tabs-example" >}}
 {{% tab name="First tab" %}}
 
-Tab content.
+First tab's content.
 
 {{% /tab %}}
 {{% tab name="Second tab" %}}
 
-Tab content.
+Second tab's content.
 
 {{% /tab %}}
 {{< /tabs >}}
