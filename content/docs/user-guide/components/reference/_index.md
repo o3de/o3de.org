@@ -169,6 +169,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [PhysX Collider](./physx/collider/) | Allows you to specify primitive shapes or PhysX mesh assets to calculate collisions between entities. |
 | [PhysX Fixed Joint](/docs/user-guide/components/reference/physx/fixed-joint/) | Creates a dynamic fixed joint that constrains an entity to the joint with no degree of freedom in any axis. |
 | [PhysX Force Region](/docs/user-guide/components/reference/physx/force-region/) | Applies a physical force on objects that are within the specified region. |
+  [PhysX Heightfield Collider](/docs/user-guide/components/reference/physx/heightfield-collider/) | Creates a geometric collider based on the Axis-Aligned Box component. |
 | [PhysX Hinge Joint](/docs/user-guide/components/reference/physx/hinge-joint/) | Creates a dynamic hinge joint that constrains an entity to the joint with freedom to rotate around the x-axis of the joint.|
 | [PhysX Ragdoll](/docs/user-guide/components/reference/physx/ragdoll/) | Simulates ragdoll physics by creating a hierarchy of rigid bodies connected by joints. |
 | [PhysX Rigid Body](/docs/user-guide/components/reference/physx/rigid-body-physics/) | Defines the entity as a rigid object that is solid and can move and collide with other PhysX entities. |
