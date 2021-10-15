@@ -14,7 +14,7 @@ You can learn the basics of navigating and customizing O3DE Editor from the quic
 
 ## Launch O3DE Editor
 
-O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
+O3DE Editor can be launched by running `Editor.exe` from your O3DE installation's `/bin/<platform>/<config>/Default` directory. You will be greeted by **Project Manager** which will allow you to choose or create a project. When you choose a project, O3DE Editor launches, and you're given the option to create a new level or load an existing level. Levels aren't just environments. Levels are complex assets with many files that represent a section of your project. In general, levels are stored in named subdirectories of the project's `Levels` directory.
 
 ## The O3DE Editor default layout
 

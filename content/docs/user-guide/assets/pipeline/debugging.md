@@ -61,11 +61,14 @@ You must start Asset Processor before you can enter a `-debug` command.
 
 **To debug Asset Processor using Asset Builder**
 
-1. Navigate to `<build>/bin/<config>/` in a termainal.
+1. Navigate to one of the following directories in a terminal:
+
+    * Installed engine: `<install>/bin/<platform>/profile/Default`
+    * Engine built from source: `<project>/<build>/bin/<config>`
 
 1. In a command line prompt, enter the following command to get a list of possible options.
 
-   ```
+   ```cmd
    AssetBuilder.exe -help
    ```
 
@@ -83,14 +86,14 @@ AssetBuilder.exe -debug Objects\Tutorials\Fbx\shapes.fbx
 **Example**
 To create a job without processing a specified file, run the following command.
 
-```
+```cmd
 AssetBuilder.exe -debug_create "Objects\Tutorials\Fbx\shapes.fbx" -module "C:\lumbeyard_version\dev\Bin64vc141.Debug\Builders\ExampleBuilder.dll" -output "C:\lumbeyard_version\dev\Logs\Shapes\"
 ```
 
 **Example**
 To process without creating a job for a specified file, run the following command.
 
-```
+```cmd
 AssetBuilder.exe -debug_process "Objects\Tutorials\Fbx\shapes.fbx"
 ```
 

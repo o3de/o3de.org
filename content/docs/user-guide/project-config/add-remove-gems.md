@@ -28,7 +28,7 @@ The basic steps to configure Gems for your project are as follows:
 
 ### Opening the Configure Gems screen
 
-1. Launch **Project Manager**, which can be found on your desktop or in `bin/Windows/profile/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
+1. Launch **Project Manager**, which can be found on your desktop or in `bin/Windows/profile/Default/o3de.exe` if you installed O3DE, or in your engine build directory if you built O3DE from source.
 
 1. Open the menu for a project and select the **Edit Project Settings...** button.
 
