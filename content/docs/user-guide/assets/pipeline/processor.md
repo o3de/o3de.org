@@ -32,16 +32,16 @@ However, if you aren't using the game or O3DE Editor, you can exit Asset Process
 
 Asset Processor can also serve files directly to devices, avoiding copying assets aren't required to be present on the game device. This is called virtual file system (VFS) and is required for live reloading to work on those platforms.
 
-## Modifying the Asset Processor Configuration File 
+## Modifying the Asset Processor Configuration Using a Settings Registry File
 
-Use the `AssetProcessorPlatformConfig.ini` configuration file to perform the following tasks:
+Modify the engine settings registry file for the Asset Processor in `Registry/AssetProcessorPlatformConfig.setreg` to perform the following tasks:
 + Add new file types for Asset Processor to feed to the Resource Compiler, copy into the cache, or update existing file type rules.
 + Update the ignore list.
-+ Specify which platforms are currently enabled. The default value is the host platform that Asset Processor runs on. Asset Processor automatically builds assets for the host platform. For example, if Asset Processor is running on Windows, Asset Processor builds Windows assets even if **pc** is not enabled in the `.ini` file. If Asset Processor is running on macOS, Asset Processor builds macOS assets even if **osx\_gl** is not enabled in the `.ini` file. To build assets for other platforms, update the `.ini` file and specify the platforms that you want.
++ Specify which platforms are currently enabled. The default value is the host platform that Asset Processor runs on. Asset Processor automatically builds assets for the host platform. For example, if Asset Processor is running on Windows, Asset Processor builds Windows assets even if **pc** is not enabled in the `.setreg` file. If Asset Processor is running on macOS, Asset Processor builds macOS assets even if **osx\_gl** is not enabled in the `.setreg` file. To build assets for other platforms, update the `.setreg` file and specify the platforms that you want.
 + Add additional folders for Asset Processor to watch. For example, you can specify folders such as shared particle libraries and associated textures between projects.
 + Specify which files trigger related files to be rebuilt. This is called metafile fingerprinting.
 
-To add game-specific overrides, you can add a file named `AssetProcessorGamePlatformConfig.ini` to your game assets directory. This file is read after the root configuration file and can have additional game-specific settings for the ignore list, platforms, and file types.
+To add game-specific overrides, you can add a file named `AssetProcessorGamePlatformConfig.setreg` to your game's `Registry` directory. This file is read after the root configuration file and can have additional game-specific settings for the ignore list, platforms, and file types.
 
 ## Using the Asset Processor Batch Program 
 
