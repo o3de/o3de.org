@@ -23,15 +23,3 @@ The **Comment** component allows you to add long-form text comments to component
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Comment text box** | Stores the user comment for the component entity. | Text | None |
-
-## Using the Comment component 
-
-You can use this feature by adding the component to an entity in your level.
-
-1. In **Open 3D Engine (O3DE) Editor**, **right-click** the viewport in your level, and choose **Create entity**.
-
-1. In **Entity Inspector**, choose **Add Component**.
-
-1. Under **Editor**, choose **Comment**.
-
-1. In Entity Inspector, under **Comment**, add comments for the component entity in the text box.
