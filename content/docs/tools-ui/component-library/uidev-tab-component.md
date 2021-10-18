@@ -15,7 +15,7 @@ A tab can also display an action toolbar, where action buttons can be added and 
 
 ![component tab action bar](/images/tools-ui/component-tab-action-bar.png)
 
-## Usage guidelines<a name="tab-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with tabs:
 
@@ -23,7 +23,7 @@ Follow these guidelines as you design your UI with tabs:
 
 1.  Tab labels should succinctly describe the content within.
 
-## Basic tab<a name="tab-basic"></a>
+## Basic tab
 
 ![component tab basic](/images/tools-ui/component-tab-basic.png)
 
@@ -31,9 +31,9 @@ Create a simple tab widget with movable, closeable tabs and an action in the act
 
 Note that you can also customize the tab action toolbar using the `AzQtComponents::TabWidgetActionToolBar` class. To do this, you will need to include `AzQtComponents/Components/Widgets/TabWidgetActionToolBar.h`. You can add your customized toolbar using the tab widget's `setActionToolBar()` function.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/TabWidget.h>
 #include <QAction>
 
@@ -66,7 +66,7 @@ tabWidget->addAction(action1);
 // NOTE: To perform an action when the action button is pressed, you will also need to connect the QAction::triggered signal.
 ```
 
-## C++ API reference<a name="tab-api-ref"></a>
+## C++ API reference
 
 For details on the **tab** API's, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::TabWidget](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_tab_widget.html)
