@@ -16,7 +16,7 @@ To create an `.inputbindings` file with Asset Editor, follow these steps.
 
 1. In **Entity Inspector**, click **Add Component**, and then add an Input component.
 
-1. In Entity Inspector, find the Input component, and then click **Open in Asset Editor** to create a new `.inputbindings` file in Asset Editor.
+1. In Entity Inspector, find the Input component, and then click {{< icon "open-in-internal-app.svg" >}} to create a new `.inputbindings` file in Asset Editor.
 
 	![The default Input component](/images/user-guide/interactivity/input/input-component.png)
 
@@ -55,7 +55,7 @@ The following `.inputbindings` file specifies a keyboard for the **Input Device 
 
 1. Enter a name for the `.inputbindings` file, and then choose **Save**.
 
-1. In Entity Inspector, in the Input component, for **Input to event bindings**, click the **Browse Directory** icon and select your `.inputbindings` file.
+1. In Entity Inspector, in the Input component, for **Input to event bindings**, click {{< icon "browse-edit-select-files.svg" >}} and select your `.inputbindings` file.
 
 ## Mapping input events to gameplay logic
 
@@ -69,7 +69,7 @@ You can create a Script Canvas graph that connects to input events. For more inf
 
 1. In Entity Inspector, click **Add Component** and add the **Script Canvas** component.
 
-1. In the Script Canvas component, for **Script Canvas Asset**, click **Open in Script Canvas Editor**, and then create a new Script Canvas graph like the following example.
+1. In the Script Canvas component, for **Script Canvas Asset**, click {{< icon "open-in-internal-app.svg" >}}, and then create a new Script Canvas graph like the following example.
 
 ### Example Script Canvas graph
 
@@ -85,7 +85,7 @@ You can also create a Lua script that connects to input events. For more informa
 
 1. In Entity Inspector, click **Add Component**, and then add the **Lua Script** component.
 
-1. In the Lua Script component, click **Open in Lua Editor**.
+1. In the Lua Script component, click {{< icon "open-in-internal-app.svg" >}}.
 
 1. In Lua Editor, create a table of the functions `OnPressed`, `OnHeld`, and `OnReleased` for an input event that you want to connect the script to.
 
