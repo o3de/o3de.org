@@ -15,7 +15,7 @@ Open 3D Engine (O3DE) has many unique and specialized terms. This topic explains
 * Use regular text for subsequent references to a tool, Gem, or component proper name.
 * Introduce acronyms in their expanded form followed by the acronym in parentheses. For example, "console variable (cvar)".
 * Use the acronym for subsequent on-page references.
-* Be consistent in the use of O3DE terms. For example, use "level" rather than "scene", and use "Perspective" rather than "viewport".
+* Be consistent in the use of O3DE terms. For example, use "level" rather than "scene".
 
 ## O3DE specific terms
 
