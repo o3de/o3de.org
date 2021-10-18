@@ -4,7 +4,7 @@ title: Using Player Input in Open 3D Engine
 description: Instructions for configuring player input using Open 3D Engine (O3DE) Asset Editor, along with Script Canvas or Lua.
 ---
 
-You can create an input bindings asset for an **Input** component and specify Input Events with **Open 3D Engine (O3DE) Asset Editor**.  Use Script Canvas or Lua to map the Input Events to gameplay logic.
+You can create an input bindings asset for an **Input** component and specify input events with **Open 3D Engine (O3DE) Asset Editor**. Use Script Canvas or Lua to map the input events to gameplay logic.
 
 ## Creating an input bindings asset
 
@@ -140,6 +140,6 @@ In this example, the entity must have a component that enables visibility in the
 
 1. To enter game mode, press **Ctrl+G**.
 
-1. Press the keyboard **Spacebar** so that your entity rotates on the local z-axis. The entity's scale doubles when the event `OnPressed` is received from the Input Handler that is connected to `Action`.  The entity's scale returns to normal when the `OnReleased` event is received.
+1. Press **Space bar** so that your entity rotates on the local z-axis. The entity's scale doubles when the event `OnPressed` is received from the input handler that is connected to `Action`. The entity's scale returns to normal when the `OnReleased` event is received.
 
 1.  To exit game mode, press **Esc**.
