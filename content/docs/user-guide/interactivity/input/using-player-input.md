@@ -10,7 +10,7 @@ You can create an input bindings asset for an **Input** component and specify in
 
 To create an `.inputbindings` file with Asset Editor, follow these steps.
 
-1. Create an entity.
+1. In **O3DE Editor**, create an entity.
 
 1. Select the entity in the viewport or **Entity Outliner**.
 
@@ -65,7 +65,7 @@ After you create an `.inputbindings` file and specify input events, you can use 
 
 You can create a Script Canvas graph that connects to input events. For more information about scripting with Script Canvas, refer to [Creating Gameplay and Other Behaviors with Script Canvas](/docs/user-guide/scripting/script-canvas).
 
-1. In the viewport or **Entity Outliner**, select the entity.
+1. In O3DE Editor, select the entity with the Input component in the viewport or **Entity Outliner**.
 
 1. In Entity Inspector, click **Add Component** and add the **Script Canvas** component.
 
@@ -73,7 +73,7 @@ You can create a Script Canvas graph that connects to input events. For more inf
 
 ### Example Script Canvas graph
 
-In the following graph, the **Input Handler** node connects `Action` events to various **Transform** nodes.  The **Pressed**, **Held**, and **Released** outputs are triggered when the state of an Event Generator changes.
+In the following graph, the **InputHandler** node connects `Action` events to various **Transform** nodes. The Input component sends **Pressed**, **Held**, and **Released** events to the **InputHandler** node When the state of an event generator changes.
 
 ![Example Script Canvas graph for the Input component](/images/user-guide/interactivity/input/sc-input-example.png)
 
@@ -81,7 +81,7 @@ In the following graph, the **Input Handler** node connects `Action` events to v
 
 You can also create a Lua script that connects to input events. For more information about scripting with Lua, refer to [Writing Lua Scripts](/docs/user-guide/scripting/lua).
 
-1. In the viewport or **Entity Outliner**, select the entity.
+1. In O3DE Editor, select the entity with the Input component in the viewport or **Entity Outliner**.
 
 1. In Entity Inspector, click **Add Component**, and then add the **Lua Script** component.
 
@@ -89,7 +89,7 @@ You can also create a Lua script that connects to input events. For more informa
 
 1. In Lua Editor, create a table of the functions `OnPressed`, `OnHeld`, and `OnReleased` for an input event that you want to connect the script to.
 
-1. Create a bus handler by connecting to the `InputEventNotificationBus` with the first parameter set to the table of functions for the Input Event, and the second parameter set to create an `InputEventNotificationId` for the **Event Name**.
+1. Create a bus handler by connecting to the `InputEventNotificationBus` with the first parameter set to the table of functions for the input event. The second parameter is an `InputEventNotificationId` for the **Event Name**.
 
 ### Example Lua script
 
@@ -126,9 +126,9 @@ return tutorial_input
 
 ## Testing player input
 
-After you use either Script Canvas or Lua to connect to an Input Handler for the Input Event in your `.inputbindings` file, you can test player input in **O3DE Editor**.
+After you use either Script Canvas or Lua to connect the input event in your `.inputbindings` file to an input handler, you can test player input in **O3DE Editor**.
 
-1. In the viewport or **Entity Outliner**, select your entity.
+1. In O3DE Editor, select the entity with the Input and scripting components in the viewport or **Entity Outliner**.
 
     {{< note >}}
 In this example, the entity must have a component that enables visibility in the game, such as the [Mesh component](/docs/user-guide/components/reference/atom/mesh), the [White Box component](/docs/user-guide/components/reference/shape/white-box), or one of the [Shape components](/docs/user-guide/components/reference/shape).
