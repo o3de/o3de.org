@@ -9,7 +9,7 @@ Use progress and status indicators to communicate to users that the O3DE applica
 
 ![component progress indicators style](/images/tools-ui/component-progress-indicators-style.png)
 
-## Usage guidelines<a name="progress-indicators-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with progress indicators:
 
@@ -26,7 +26,7 @@ See additional usage guidelines in the following sections, which apply to specif
 Avoid these design choices when using progress indicators:
 + Don't use more than one progress indicator at a time.
 
-## Basic progress bar<a name="progress-bar-basic"></a>
+## Basic progress bar
 
 ![component progress bar determinate](/images/tools-ui/component-progress-bar-determinate.png)
 
@@ -44,9 +44,9 @@ Additional usage guidelines for progress bars include the following:
 
 The following example demonstrates the initialization of a simple progress bar. Refer to the Qt documentation on [QProgressBar](https://doc.qt.io/qt-5/qprogressbar.html) to learn additional features.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <QProgressBar>
 
 // Create the progress bar.
@@ -63,7 +63,7 @@ progressBar->setTextVisible(false);
 // Note that it can also be set from the .ui file, or from Qt Designer or Creator.
 ```
 
-## Basic progress spinner<a name="progress-spinner-basic"></a>
+## Basic progress spinner
 
 ![component progress spinner basic](/images/tools-ui/component-progress-spinner-basic.gif)
 
@@ -73,9 +73,9 @@ Additional usage guidelines for spinners include the following:
 
 1.  Display spinners in the context of windows, panels, lists, or inline with other elements.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/StyledBusyLabel.h>
 
 // Create the spinner.
@@ -88,7 +88,7 @@ spinner->SetBusyIconSize(18);
 spinner->SetIsBusy(true);
 ```
 
-## C++ API reference<a name="progress-indicators-api-ref"></a>
+## C++ API reference
 
 For details on the **progress indicator** API's, see the following topics in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::ProgressBar](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_progress_bar.html)
