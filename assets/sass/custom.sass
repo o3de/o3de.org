@@ -443,12 +443,21 @@ a.top-banner
       max-width: 100%
 
     .banner-logo
-      background-image: url('/img/logos/O3DECon_Logo-White.svg')
       background-size: 100% auto
+      background-repeat: no-repeat
+      background-position: 50% 50%
       float: left
-      width: 182px
-      height: 42px
       margin-right: 12px
+
+      &.o3decon
+        background-image: url('/img/logos/O3DECon_Logo-White.svg')
+        width: 182px
+        height: 42px
+      
+      &.o3dejam
+        background-image: url('/img/logos/O3DEJam_Logo-REV-COLOR.svg')
+        width: 220px
+        height: 40px
 
       @include media-breakpoint-down(sm)
         display: none
