@@ -19,7 +19,7 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [Kythera AI](./kythera-ai/) | The Kythera AI Gem provides support for Kythera AI features in O3DE, and includes a demo project, levels, and assets that demonstrate the features of Kythera AI. |
+| [Kythera AI](./kythera-ai/) | The Kythera AI Gem provides support for Kythera AI features in Open 3D Engine (O3DE), and includes a demo project, levels, and assets that demonstrate the features of Kythera AI. |
 
 
 ## Assets
@@ -62,7 +62,7 @@ toc: true
 | Gem | Description |
 | - | - |
 | [Asset Memory Analyzer](./debug/asset-memory-analyzer) | The Asset Memory Analyzer Gem provides tools to profile asset memory usage in Open 3D Engine through ImGUI (Immediate Mode Graphical User Interface). |
-| [Automated Launcher Testing](./debug/automated-launcher-testing) | The Automated Launcher Testing Gem manages automated O3DE launcher tests. |
+| [Automated Launcher Testing](./debug/automated-launcher-testing) | The Automated Launcher Testing Gem manages automated Open 3D Engine (O3DE) launcher tests. |
 | [Crash Reporting](./debug/crash-reporting) | The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine projects. |
 | [Debug Draw](./debug/debug-draw) | The Debug Draw Gem provides Editor and runtime debug visualization features for Open 3D Engine. |
 | [Immediate Mode GUI (ImGui)](./debug/imgui) | The Immediate Mode GUI Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for debugging and profiling information in Open 3D Engine. |
@@ -134,8 +134,7 @@ toc: true
 | [NVIDIA Blast](./physics/nvidia/nvidia-blast) | The NVIDIA Blast Gem provides tools to author fractured mesh assets in Houdini, and functionality to create realistic destruction simulations in Open 3D Engine. |
 | [NVIDIA Cloth (NvCloth)](./physics/nvidia/nvidia-cloth) | The NVIDIA Cloth (NvCloth) Gem provides functionality to create realistic cloth and fabric simulation. |
 | [PhysX](./physics/nvidia/physx) | The PhysX Gem provides physics simulation with NVIDIA PhysX including static and dynamic rigid body simulation, force regions, ragdolls, and dynamic PhysX joints. |
-| [PhysX Debug](./physics/nvidia/physx-debug) | The PhysX Debug Gem provides debugging functionality and visualizations for PhysX in O3DE projects. |
-| [PhysX Samples](./physics/nvidia/physx-samples) | The PhysX Samples Gem provides sample assets and scripts to use with the PhysX Gem. |
+| [PhysX Debug](./physics/nvidia/physx-debug) | The PhysX Debug Gem provides debugging functionality and visualizations for PhysX in Open 3D Engine (O3DE) projects. |
 
 ## Rendering
 
@@ -147,7 +146,7 @@ toc: true
 | [Atom TressFX](./rendering/amd/atom-tressfx) | The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine. |
 | [Camera](./rendering/camera) | The Camera Gem provides a basic camera component that defines a frustum for runtime rendering. |
 | [Camera Framework](./rendering/camera-framework) | The Camera Framework Gem provides a base for implementing more complex camera systems. |
-| [PBS Reference Materials](./rendering/pbs-reference-materials) | The PBS Reference Materials Gem provides physically based reference materials for O3DE projects. |
+| [PBS Reference Materials](./rendering/pbs-reference-materials) | The PBS Reference Materials Gem provides physically based reference materials for Open 3D Engine (O3DE) projects. |
 | [Starting Point Camera](./rendering/starting-point-camera) | The Starting Point Camera Gem provides the behaviors used with the Camera Framework Gem to define a camera rig. |
 | [Video Playback Framework](./rendering/video-playback-framework) | The Video Playback Framework Gem provides the interface to play back video. |
 
