@@ -5,4 +5,4 @@ description: The Graph Canvas Gem provides a C++ framework for creating custom g
 toc: true
 ---
 
-The Graph Canvas Gem provides a C++ framework for creating custom graphical node based editors for Open 3D Engine (O3DE).
+The Graph Canvas Gem provides a C++ framework for creating custom graphical node based editors for **Open 3D Engine (O3DE)**.

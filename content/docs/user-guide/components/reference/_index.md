@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-Components add functionality to entities in Open 3D Engine (O3DE). An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Components add functionality to entities in **Open 3D Engine (O3DE)**. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
 Components are provided by Gems. To make a component available in **O3DE Editor**, you must add the Gem that provides the component. Though components might belong to the same type, they might not be provided by the same Gem. You can find out which Gem provides a component in the reference topic for the component.
 

@@ -2,7 +2,7 @@
 
 **First off, thanks for taking the time to contribute!**
 
-The following is a set of guidelines for contributing to Open 3D Engine (O3DE) documentation, hosted at [o3de.org](http://o3de.org/).
+The following is a set of guidelines for contributing to **Open 3D Engine (O3DE)** documentation, hosted at [o3de.org](http://o3de.org/).
 These are just guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Before you get started

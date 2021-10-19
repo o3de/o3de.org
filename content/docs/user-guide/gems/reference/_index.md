@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-*Gems* are redistributable packages that contain source code and assets that you can include in your Open 3D Engine (O3DE) projects to add new functionality. O3DE provides the following Gems:
+*Gems* are redistributable packages that contain source code and assets that you can include in your **Open 3D Engine (O3DE)** projects to add new functionality. O3DE provides the following Gems:
 
 ## Animation
 

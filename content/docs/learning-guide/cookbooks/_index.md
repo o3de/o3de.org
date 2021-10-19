@@ -8,4 +8,4 @@ draft: true
 
 {{< placeholder >}}
 
-Discover practical, tested solutions for common scenarios in Open 3D Engine.
+Discover practical, tested solutions for common scenarios in **Open 3D Engine (O3DE)**.

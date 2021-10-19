@@ -6,7 +6,7 @@ toc: true
 weight: 900
 ---
 
-O3DE **Lua Editor** (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but you can open it directly in **O3DE Editor** from the Tools menu.
+**Open 3D Engine (O3DE)** **Lua Editor** (Lua IDE) offers an intuitive integrated development environment (IDE) that makes it easy to author, debug, and edit Lua scripts when you create or extend your game. Lua Editor is a standalone application, but you can open it directly in **O3DE Editor** from the Tools menu.
 
 This tutorial shows you how to use O3DE Lua Editor to perform debugging operations on a sample script.
 

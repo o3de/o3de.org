@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-To enrich Open 3D Engine (O3DE) documentation pages with complex elements such as embedded video links and call-outs, use Hugo [shortcodes](https://gohugo.io/content-management/shortcodes). Markdown doesn't support these complex elements, but you can write shortcodes in other languages, such as HTML. You can review all currently available shortcodes in the `/layouts/shortcodes` directory of the O3DE docs repository.
+To enrich **Open 3D Engine (O3DE)** documentation pages with complex elements such as embedded video links and call-outs, use Hugo [shortcodes](https://gohugo.io/content-management/shortcodes). Markdown doesn't support these complex elements, but you can write shortcodes in other languages, such as HTML. You can review all currently available shortcodes in the `/layouts/shortcodes` directory of the O3DE docs repository.
 
 ## Callout Boxes
 
