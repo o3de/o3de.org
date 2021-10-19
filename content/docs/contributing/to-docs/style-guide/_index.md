@@ -14,10 +14,10 @@ Following the style guide is the best way to make sure that contributions to the
 
 What are the ideal traits for O3DE docs?
 
-* ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject (noun)* that performs the *action (verb)*?
-* ✅ **Answer the question at hand** - Does the documentation answer a *why*, *how*, or *where* type of question?
-* ✅ **Consistency** - Do the text formatting and writing style remain *relatively consistent*?
+* ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject* and *action verb*?
+* ✅ **Answer the question at hand** - Does the documentation answer a *what*, *why*, *how*, or *where* type of question?
 * ✅ **Help the user** - Does the documentation show the user something *meaningful*?
+* ✅ **Consistency** - Does the content consistently follow this style guide?
 
 ## What's in the guide?
 
