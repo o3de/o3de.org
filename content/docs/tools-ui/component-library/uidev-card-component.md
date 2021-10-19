@@ -23,7 +23,7 @@ Cards allow for a certain amount of customization. The basic layout of a card in
 
     Cards expand or collapse when users click the arrow on the top left.
 
-    +-If the card can be moved, users press and drag the header bar to reposition the card.
+    If the card can be moved, users press and drag the header bar to reposition the card.
 
 1.  **Card icon**
 
