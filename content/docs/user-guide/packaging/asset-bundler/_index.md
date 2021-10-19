@@ -1,10 +1,10 @@
 ---
 linktitle: Asset bundler
 title: Bundle game assets in Open 3D Engine
-description:  Open 3D Engine provides tools for bundling assets and managing product and source dependencies so you never need to ship assets you don't use. 
+description:  Learn how to manage your assets and package them into asset bundles in Open 3D Engine (O3DE). 
 ---
 
-Open 3D Engine provides a set of tools for intelligently bundling assets and managing your game's product and source dependencies. Use these tools to package only the assets currently used in your game project and reduce the deployment size and complexity of your product overall.
+**Open 3D Engine (O3DE)** provides a set of tools for intelligently bundling assets and managing your game's product and source dependencies. Use these tools to package only the assets currently used in your game project and reduce the deployment size and complexity of your product overall.
 
 | Topic | Description |
 | --- | --- |

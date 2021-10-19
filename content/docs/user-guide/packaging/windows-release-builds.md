@@ -25,20 +25,32 @@ The following instructions assume that you have:
 
 - Generated a Visual Studio project for your O3DE project. For help, refer to [Create a Visual Studio project](/docs/welcome-guide/create/creating-projects-using-cli/#create-a-visual-studio-project).
 
-This tutorial uses the following project name and directory in the examples.
+
+This tutorial uses the following project name and directories in the examples.
 
 - Project name and location: `C:\MyProject`
+- Third-party directory location: `C:\o3de-packages`
 
 
 ## Set the starting level
 
-Before you create a project game release layout, specify the starting level that the Game Launcher will load first.
+Before you create a project game release layout, specify the starting level that the Game Launcher will load first in your settings registry.
 
-1. Open the `autoexec.cfg` file in your project's directory and add the following line. This sets the starting level by using `Loadlevel` and providing a path to the level. The path must be relative to the `Cache/pc` directory. In this example, the level asset is `mainmenu.spawnable`.
+1. Create an `autoexec.game.setreg` file in `MyProject/Registry` directory and add the following lines. This sets the starting level by using `Loadlevel` and providing a path to the level. The path must be relative to the `Cache/pc` directory. In this example, the level asset is `mainmenu.spawnable`.
 
-    ```
-    Loadlevel levels/mainmenu/mainmenu.spawnable
-    ```
+
+```
+{
+    "O3DE": {
+        "Autoexec": {
+            "ConsoleCommands": {
+                "LoadLevel": "levels/mainmenu/mainmenu.spawnable"
+            }
+        }
+    }
+}
+```
+
 
 ## Process assets
 
@@ -61,16 +73,21 @@ The Asset Processor or Asset Processor Batch are responsible for processing sour
 
 ## Create a project game release layout
 
-You can create a project game release layout by using a non-monolithic or monolithic build. A monolithic release layout only contains files that're necessary to run the project, such as the Game Launcher, packaged assets, and dependent `.dll` files. A non-monolithic release layout contains the same files needed to run the project, as well as the objects that you use for development such as tools, shader compilers, and all `.dll` files.
+You can create a project game release layout by using a non-monolithic or monolithic build. A monolithic release layout only contains files that're necessary to run the project, such as the Game Launcher, bundled content, and dependent `.dll` files. A non-monolithic release layout contains the same files needed to run the project, as well as the objects that you use for development such as tools, shader compilers, and all `.dll` files.
 
 In this step, you will use CMake to build either a monolithic or a non-monolithic project and specify the `INSTALL` target and `release` configuration. This handles several tasks:
 
 - Creates an `install` directory that will contain your release layout.
 
-- Packages an `engine.pak` file out of the product assets in your `Cache/pc` directory. 
-
+- Bundles your game content into an `engine.pak` file by packaging all of the product assets in your `Cache/pc` directory.
+- 
 - Builds the Game Launcher and other supporting files.
 
+{{< note >}}
+- This method packages all of your assets regardless of their necessity. We suggest that you clean up and reprocess your assets to optimize your bundled content.
+
+- If your project depends on Wwise, Kythera AI, or PopcornFX, you must add those Gems to your project game release layout.
+{{< /note >}}
 
 ### Monolithic project
 
@@ -86,7 +103,7 @@ In this step, you will use CMake to build either a monolithic or a non-monolithi
     cmake --build build/windows_mono --target INSTALL --config release
     ```
 
-The result is a project release install directory that's located at `install/bin/windows/release/monolithic`.
+The result is a project release install directory that's located at `install/bin/Windows/release/Monolithic`.
 
 
 ### Non-monolithic projects
@@ -97,7 +114,7 @@ The result is a project release install directory that's located at `install/bin
     cmake --build build/windows_vs2019 --target INSTALL --config release
     ```
 
-The result is a project release install directory that's located at `install/bin/windows/release/Default`.
+The result is a project release install directory that's located at `install/bin/Windows/release/Default`.
 
 
 ## Run the game launcher
@@ -108,17 +125,8 @@ Now that you've packaged your assets and built your project game release layout,
 
 2. Run the Game Launcher. Supply the path to the level that the project starts with. This opens the Game Launcher and loads the starting level.
     
-    - **For a monolithic project**:
- 
-        ```cmd
-        ./MyProject.GameLauncher.exe --project-path="MyProject\install\bin\Windows\release\Monolithic"
-        ```
-
-    - **For a non-monolithic project**:
-    
-        ```cmd
-        ./MyProject.GameLauncher.exe --project-path="MyProject\install\bin\Windows\release\Default"
-        ```  
+    ```cmd
+    ./MyProject.GameLauncher.exe
+    ```  
 
 Now you can distribute your project and run it on other Windows devices!
-
