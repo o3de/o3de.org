@@ -74,9 +74,9 @@ You can use a call-out in a list:
 1. Use the note shortcode in a list.
 1. A second item with an embedded note.
 
-   {{</* note */>}}
-   Warning, Caution, and Note shortcodes, embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on. See [Common Shortcode Issues](#common-shortcode-issues).
-   {{</* /note */>}}
+    {{</* note */>}}
+Warning, Caution, and Note shortcodes, embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on. Lists that contain shortcodes should have newlines between each list item and before and after the shortcode. See [Common Shortcode Issues](#common-shortcode-issues).
+{{</* /note */>}}
 
 1. A third item in a list
 1. A fourth item in a list
@@ -88,8 +88,8 @@ The output is:
 1. A second item with an embedded note
 
     {{< note >}}
-    Warning, Caution, and Note shortcodes, embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on. Lists that contain shortcodes should have newlines between each list item and before and after the shortcode. See [Common Shortcode Issues](#common-shortcode-issues).
-    {{< /note >}}
+Warning, Caution, and Note shortcodes, embedded in lists, need to be indented to the level of the list item; four spaces for the first level, eight spaces for the second level, and so on. Lists that contain shortcodes should have newlines between each list item and before and after the shortcode. See [Common Shortcode Issues](#common-shortcode-issues).
+{{< /note >}}
 
 1. A third item in a list
 1. A fourth item in a list
