@@ -5,4 +5,4 @@ description: The Expression Evaluation Gem provides a method for parsing and exe
 toc: true
 ---
 
-The Expression Evaluation Gem provides a method for parsing and executing string expressions in Open 3D Engine (O3DE).
+The Expression Evaluation Gem provides a method for parsing and executing string expressions in **Open 3D Engine (O3DE)**.

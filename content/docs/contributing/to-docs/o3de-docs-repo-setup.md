@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-In this topic, you'll learn to create your own fork of the Open 3D Engine (O3DE) documentation and get a handful of tips on creating and maintaining branches to ensure your pull request (PR) submissions go smoothly.
+In this topic, you'll learn to create your own fork of the **Open 3D Engine (O3DE)** documentation and get a handful of tips on creating and maintaining branches to ensure your pull request (PR) submissions go smoothly.
 
 ## Prerequisites
 

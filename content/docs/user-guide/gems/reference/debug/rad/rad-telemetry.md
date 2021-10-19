@@ -5,7 +5,7 @@ description: The RAD Telemetry Gem provides support for RAD Telemetry in Open 3D
 toc: true
 ---
 
-RAD Telemetry is an instrumentation-based profiling and performance visualization middleware product created by [RAD Game Tools](http://www.radgametools.com/telemetry.htm). The RAD Telemetry Gem provides a RAD Telemetry integration for Open 3D Engine (O3DE) for those who have licensed RAD Telemetry.
+RAD Telemetry is an instrumentation-based profiling and performance visualization middleware product created by [RAD Game Tools](http://www.radgametools.com/telemetry.htm). The RAD Telemetry Gem provides a RAD Telemetry integration for **Open 3D Engine (O3DE)** for those who have licensed RAD Telemetry.
 
 The RAD Telemetry Gem provides one example of how to integrate instrumentation-based profiling middleware. You could write a gem for your own instrumentation-based profiler and leverage O3DE's existing performance markers. See the Profiler.h file in the /Code/Framework/AzCore/AzCore/Debug directory to see how the RAD Telemetry Gem ties into O3DE's existing performance markers.
 

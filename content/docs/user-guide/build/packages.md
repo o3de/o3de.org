@@ -4,7 +4,7 @@ description: Integrate dependencies as packages into Open 3D Engine (O3DE) Gems 
 weight: 300
 ---
 
-Open 3D Engine (O3DE) offers a packaging system to allow for shipping pre-compiled libraries or other external sources. With the
+**Open 3D Engine (O3DE)** offers a packaging system to allow for shipping pre-compiled libraries or other external sources. With the
 packaging system, you can more easily add external binaries as dependencies for your Gem or project without having to maintain them in source control. If you plan to add a static dependency that can't be shipped as source code, the packaging system offers consistency checks and target generation in addition to the fetching of resources.
 
 {{< note >}}

@@ -5,7 +5,7 @@ description: The Fast Noise Gradient Gem uses the third-party, open source FastN
 toc: true
 ---
 
-The Fast Noise Gradient Gem uses the third-party, open source [FastNoise library](https://github.com/Auburn/FastNoiseLite) to provide a variety of high-performance noise generation algorithms in Open 3D Engine (O3DE).
+The Fast Noise Gradient Gem uses the third-party, open source [FastNoise library](https://github.com/Auburn/FastNoiseLite) to provide a variety of high-performance noise generation algorithms in **Open 3D Engine (O3DE)**.
 
 The Fast Noise Gem provides the Fast Noise Gradient component which expresses noise generation algorithms as gradient signals. Any system that's compatible with the Gradient Signal Gem, such as Vegetation, can use noise generation.
 

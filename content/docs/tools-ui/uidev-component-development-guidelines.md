@@ -8,7 +8,7 @@ toc: true
 
 
 
-For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to Open 3D Engine (O3DE), are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `<engine>/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
+For many of the basic components (such as check boxes, push buttons, and line edits), you will use the base Qt widgets (such as `QCheckBox`, `QPushButton`, `QLineEdit`) to develop your UI. The custom styling and behavior of these widgets is applied automatically. Components that require extended functionality, or are unique to **Open 3D Engine (O3DE)**, are custom classes that can be subclassed and can include a combination of Qt widgets. In these cases, the class definitions live in this folder: `<engine>/Code/Framework/AzQtComponents/AzQtComponents/Components/.`
 
 ## Style sheets and StyleManager
 

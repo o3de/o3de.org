@@ -5,7 +5,7 @@ description: The EMotionFX Animation Gem provides Open 3D Engine's animation sys
 toc: true
 ---
 
-Add the EmotionFX Animation Gem to your Open 3D Engine (O3DE) project to enable **Animation Editor**. Animation Editor provides an intuitive node-based system for controlling actor behavior with animation graphs. You can visually build hierarchal state machines and blend trees driven by parameters and events to animate rigged actors.
+Add the EmotionFX Animation Gem to your **Open 3D Engine (O3DE)** project to enable **Animation Editor**. Animation Editor provides an intuitive node-based system for controlling actor behavior with animation graphs. You can visually build hierarchal state machines and blend trees driven by parameters and events to animate rigged actors.
 
 Animation Editor includes tools for building the following:
 

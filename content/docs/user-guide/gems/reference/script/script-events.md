@@ -5,4 +5,4 @@ description: The Script Events Gem provides a framework for creating event asset
 toc: true
 ---
 
-The Script Events Gem Provides a framework for creating event assets usable from any scripting solution in an Open 3D Engine (O3DE) project.
+The Script Events Gem Provides a framework for creating event assets usable from any scripting solution in an **Open 3D Engine (O3DE)** project.
