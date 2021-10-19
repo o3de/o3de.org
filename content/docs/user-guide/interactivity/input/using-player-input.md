@@ -51,11 +51,11 @@ The following `.inputbindings` file specifies a keyboard for the **Input Device 
 
 ### Saving your input bindings asset
 
-1. In the **Asset Editor**, choose **File, Save**.
+1. In the **Asset Editor**, choose **File**, **Save**.
 
 1. Enter a name for the `.inputbindings` file, and then choose **Save**.
 
-1. In Entity Inspector, in the Input component, for **Input to event bindings**, click {{< icon "browse-edit-select-files.svg" >}} and select your `.inputbindings` file.
+1. In Entity Inspector, in the Input component, for **Input to event bindings**, click {{< icon "browse-edit-select-files.svg" >}}, and then select your `.inputbindings` file.
 
 ## Mapping input events to gameplay logic
 
@@ -73,7 +73,7 @@ You can create a Script Canvas graph that connects to input events. For more inf
 
 ### Example Script Canvas graph
 
-In the following graph, the **InputHandler** node connects `Action` events to various **Transform** nodes. The Input component sends **Pressed**, **Held**, and **Released** events to the **InputHandler** node When the state of an event generator changes.
+In the following graph, the **InputHandler** node connects `Action` events to various **Transform** nodes. When the state of an event generator changes, the Input component sends **Pressed**, **Held**, and **Released** events to the **InputHandler** node.
 
 ![Example Script Canvas graph for the Input component](/images/user-guide/interactivity/input/sc-input-example.png)
 
@@ -126,7 +126,7 @@ return tutorial_input
 
 ## Testing player input
 
-After you use either Script Canvas or Lua to connect the input event in your `.inputbindings` file to an input handler, you can test player input in **O3DE Editor**.
+After you use either Script Canvas or Lua to connect the input event in your `.inputbindings` file to an input handler, you can test player input in O3DE Editor.
 
 1. In O3DE Editor, select the entity with the Input and scripting components in the viewport or **Entity Outliner**.
 
