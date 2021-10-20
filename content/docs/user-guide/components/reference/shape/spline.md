@@ -20,46 +20,45 @@ The **Spline** component creates a line that is 8 meters long, with 4 points. Th
 
 ![Linear Spline](/images/user-guide/components/reference/shape/linear-spline-component-ui-01.png)
 
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Visible** | Enable to always display the spline in the viewport, even when the entity is not selected. Disable to hide the spline when the entity is not selected. | Boolean | `Enabled` |
+| **Configuration - Spline Type** | The interpolation type that defines the spline's segments. Linear splines have straight segments. Bezier splines interpolate a curve with uniform steps through the spline's segments. Catmull-Rom splines are defined by control points. A Catmull-Rom spline needs four control points to define each segment, so the default spline with four points will only generate one segment.  | [Linear,](#linear-spline-type-properties) [Bezier,](#bezier-spline-type-properties) [Catmull-Rom](#catmull-rom-spline-type-properties) | `Linear` |
+| **Spline** | The Spline property group options for the selected Spline Type. | | |
+| **Closed** | Enable to close the spline and create a loop. | Boolean | `Disabled` |
+| **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the length, segments and shape of the spline in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
+
 {{% /tab %}}
 {{% tab name="Bezier Spline" %}}
 
 ![Bezier Spline](/images/user-guide/components/reference/shape/bezier-spline-component-ui-01.png)
+
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Visible** | Enable to always display the spline in the viewport, even when the entity is not selected. Disable to hide the spline when the entity is not selected. | Boolean | `Enabled` |
+| **Configuration - Spline Type** | The interpolation type that defines the spline's segments. Linear splines have straight segments. Bezier splines interpolate a curve with uniform steps through the spline's segments. Catmull-Rom splines are defined by control points. A Catmull-Rom spline needs four control points to define each segment, so the default spline with four points will only generate one segment.  | [Linear,](#linear-spline-type-properties) [Bezier,](#bezier-spline-type-properties) [Catmull-Rom](#catmull-rom-spline-type-properties) | `Linear` |
+| **Spline** | The Spline property group options for the selected Spline Type. | | |
+| **Closed** | Enable to close the spline and create a loop. | Boolean | `Disabled` |
+| **Granularity** | The number of interpolation steps in each spline segment. The higher the Granularity value, the smoother the curve segment. | 2 - 64 | `8` |
+| **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the length, segments and shape of the spline in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
 
 {{% /tab %}}
 {{% tab name="Catmull-Rom Spline" %}}
 
 ![Catmull-Rom Spline](/images/user-guide/components/reference/shape/catmull-rom-spline-component-ui-01.png)
 
-{{% /tab %}}
-{{< /tabs >}}
-
 | Property | Description | Values | Default |
 |-|-|-|-|
 | **Visible** | Enable to always display the spline in the viewport, even when the entity is not selected. Disable to hide the spline when the entity is not selected. | Boolean | `Enabled` |
 | **Configuration - Spline Type** | The interpolation type that defines the spline's segments. Linear splines have straight segments. Bezier splines interpolate a curve with uniform steps through the spline's segments. Catmull-Rom splines are defined by control points. A Catmull-Rom spline needs four control points to define each segment, so the default spline with four points will only generate one segment.  | [Linear,](#linear-spline-type-properties) [Bezier,](#bezier-spline-type-properties) [Catmull-Rom](#catmull-rom-spline-type-properties) | `Linear` |
-| **Spline** | The Spline property group options depend on the selected Spline Type. See the property group sections below for more information. | | |
-| **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the length, segments and shape of the spline in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
-
-## Linear Spline Type properties
-
-| Property | Description | Values | Default |
-|-|-|-|-|
-| **Closed** | Enable to close the spline and create a loop. | Boolean | `Disabled` |
-
-## Bezier Spline Type properties
-
-| Property | Description | Values | Default |
-|-|-|-|-|
-| **Closed** | Enable to close the spline and create a loop. | Boolean | `Disabled` |
-| **Granularity** | The number of interpolation steps in each spline segment. The higher the Granularity value, the smoother the curve segment. | 2 - 64 | `8` |
-
-## Catmull-Rom Spline Type properties
-
-| Property | Description | Values | Default |
-|-|-|-|-|
+| **Spline** | The Spline property group options for the selected Spline Type. | | |
 | **Closed** | Enable to close the spline and create a loop. | Boolean | `Disabled` |
 | **Knot Parameterization** | Specifies how the spline is interpolated between control points. Smaller values sharpen the interpolation around control points and higher values ease the interpolation around control points. | 0 - 1 | `0.0` |
 | **Granularity** | The number of interpolation steps in each spline segment. The higher the Granularity value, the smoother the curve segment. | 2 - 64 | `8` |
+| **Edit** | Choose the **Edit** button to enter Edit mode. In Edit mode, you can modify the length, segments and shape of the spline in the viewport using the methods outlined in [Edit mode actions](#edit-mode-actions) below. While in Edit mode, the Edit menu in the menu bar displays available actions and hotkeys. To exit Edit mode, choose **Done** in the component interface. |  |  |
+
+{{% /tab %}}
+{{< /tabs >}}
 
 ## Edit mode actions
 
