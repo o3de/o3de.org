@@ -8,19 +8,21 @@ description: ' Using Shape components in Open 3D Engine (O3DE). '
 
 **Shape** components generate helper geometries that can be used to define shapes for area lights and shape gradients, as well as volumes and areas for AI, audio, fog, spawners, vegetation, and PhysX.
 
-## Shape components available in O3DE
+## Available Shapes
 
-* [Axis Aligned Box Shape](axis-aligned-box-shape) - Generates axis aligned box geometry for terrains, volumes and triggers.
-* [Box Shape](box-shape) - Generates box geometry for volumes and triggers.
-* [Capsule Shape](capsule-shape) - Generates capsule geometry for volumes and triggers.
-* [Compound Shape](compound-shape) - Builds complex geometry from simple shapes for volumes and triggers.
-* [Cylinder Shape](cylinder-shape) - Generates cylinder geometry for volumes and triggers.
-* [Disk Shape](disk-shape) - Generates disk geometry for areas and triggers.
-* [Polygon Prism Shape](polygon-prism-shape) - Generates n-sided prism geometry for volumes and triggers.
-* [Quad Shape](quad-shape) - Generates quad-plane geometry for areas and triggers.
-* [Sphere Shape](sphere-shape) - Generates sphere geometry for volumes and triggers.
-* [Spline](spline) - Generates lines and curves for paths.
-* [Tube Shape](tube-shape) - Generates tube geometry for volumes and triggers.
+| Shape Component | Shape type | Used for |
+|-|-|-|
+| [Axis Aligned Box Shape](axis-aligned-box-shape) | Axis-aligned box geometry | Terrain, Volume, Triggers |
+| [Box Shape](box-shape) | Box geometry | Volumes, Triggers |
+| [Capsule Shape](capsule-shape) | Capsule (cylinder with half-sphere at ends) geometry | Volumes, Triggers |
+| [Compound Shape](compound-shape) | Aggregate geometry defined by other Shape components | Volumes, Triggers |
+| [Cylinder Shape](cylinder-shape) | Cylinder geometry | Volumes, Triggers |
+| [Disk Shape](disk-shape) | Disk geometry | Areas, Triggers |
+| [Polygon Prism Shape](polygon-prism-shape) | N-sided prism geometry | Volumes, Triggers |
+| [Quad Shape](quad-shape) | Quad-plane geometry | Areas, Triggers |
+| [Sphere Shape](sphere-shape) | Sphere geometry | Volumes, Triggers |
+| [Spline](spline) | Lines and curves | Paths |
+| [Tube Shape](tube-shape) | Tube geometry | Volumes, Triggers |
 
 {{< note >}}
 The **White Box** component does not share the same functionality as other Shape components.  The sections that follow do not apply to the White Box component.  For more information, refer to the [White Box](white-box) documentation.
