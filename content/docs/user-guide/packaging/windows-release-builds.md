@@ -1,13 +1,13 @@
 ---
 title: "Creating a Project Game Release Layout for Windows"
 linktitle: "Project Game Release Layout (Windows)"
-description: Learn how to create a proejct game release layout for Windows with Open 3D Engine (O3DE). 
+description: Learn how to create a project game release layout for Windows with Open 3D Engine (O3DE). 
 toc: true
 ---
 
 This tutorial guides you through the process of creating a project game release layout for Windows PCs in **Open 3D Engine (O3DE)**. A *project game release layout* is a directory structure that contains the **Game Launcher** and the packaged assets needed to run the Game Launcher outside of the developer environment. 
 
-*Bundled content* are product assets that're bundled from the project's `Cache/pc` directory into package files (`.pak`). The Game Launcher loads the bundled content that make up a project, such as its levels, objects, environment, and game play logic.
+*Bundled content* are product assets that're bundled from the project's `Cache/pc` directory into package files (`.pak`). The Game Launcher loads the bundled content that make up a project, such as its levels, objects, environment, and gameplay logic.
 
 The instructions here guide you through the following steps:
 - Set the starting level.
@@ -84,7 +84,7 @@ In this step, you will use CMake to build either a monolithic or a non-monolithi
 - Builds the Game Launcher and other supporting files.
 
 {{< note >}}
-The Game Launcher may fail to load your assets if the `engine.pak` file is over 4GB. We suggest that you clean up and reprocess your assets to reduce the file size of your bundled content.
+The Game Launcher may fail to load your assets if the `engine.pak` file is over 4 GB. We suggest that you clean up and reprocess your assets to reduce the file size of your bundled content.
 {{< /note >}}
 
 ### Monolithic project
@@ -121,11 +121,10 @@ Now that you've packaged your assets and built your project game release layout,
 
 1. Open a command line window and change to your project's release build install directory.
 
-2. Run the Game Launcher. Supply the path to the level that the project starts with. This opens the Game Launcher and loads the starting level.
+2. Run the Game Launcher. This opens the Game Launcher and loads the starting level.
     
     ```cmd
     ./MyProject.GameLauncher.exe
     ```  
-
-Now you can distribute your project to other Windows devices! They must install 
-[Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) to run the Game Launcher.
+    
+Now you can distribute your project to other Windows devices. To run the Game Launcher, [Microsoft Visual C++ (MSVC) Redistributable](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-160) must be installed.
