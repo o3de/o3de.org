@@ -60,18 +60,14 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2ed9f5a12eb38d066d7455c4b264d16e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16e">RenderMode</a> : uint8_t { <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16eaa1518fc2b3d8a46f91fe88b6d84c5510">RenderMode::RenderEveryTick</a>, 
-<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16ea2563a5930ee5c785d1262f5bde627e85">RenderMode::RenderAtTargetRate</a>, 
-<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16ead93c43be8a20bd71ce78627b24d58e35">RenderMode::RenderOnce</a>, 
-<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16ea760aa393074e2624e389023619f2f441">RenderMode::NoRender</a>
+<tr class="memitem:a2ed9f5a12eb38d066d7455c4b264d16e"><td class="memItemLeft" align="right" valign="top"><a id="a2ed9f5a12eb38d066d7455c4b264d16e"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RenderMode</b> : uint8_t { <b>RenderEveryTick</b>, 
+<b>RenderOnce</b>, 
+<b>NoRender</b>
  }</td></tr>
 <tr class="separator:a2ed9f5a12eb38d066d7455c4b264d16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac24a57606d88525803ed49ae14ec04b9"><td class="memItemLeft" align="right" valign="top"><a id="ac24a57606d88525803ed49ae14ec04b9"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>PipelineViewMap</b> = AZStd::map&lt; PipelineViewTag, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_pipeline_views.html">PipelineViews</a>, <a class="el" href="struct_a_z_1_1_r_p_i_1_1_a_z_name_sort_ascending.html">AZNameSortAscending</a> &gt;</td></tr>
 <tr class="separator:ac24a57606d88525803ed49ae14ec04b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a750873b91fd9baa31467e68a23880e55"><td class="memItemLeft" align="right" valign="top"><a id="a750873b91fd9baa31467e68a23880e55"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>FrameNotificationEvent</b> = AZ::Event&lt;&gt;</td></tr>
-<tr class="separator:a750873b91fd9baa31467e68a23880e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -159,14 +155,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:a5cde44add68771845fc43d594f222944"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dc83498f5615a3d1d2e79270a3a1828"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a0dc83498f5615a3d1d2e79270a3a1828">AddToRenderTick</a> ()</td></tr>
 <tr class="separator:a0dc83498f5615a3d1d2e79270a3a1828"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9419733df25a00745fe685a3bae698a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ac9419733df25a00745fe685a3bae698a">AddToRenderTickAtInterval</a> (AZStd::chrono::duration&lt; float &gt; renderInterval)</td></tr>
-<tr class="separator:ac9419733df25a00745fe685a3bae698a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a713ae084403d4162e7845cacf347a57b"><td class="memItemLeft" align="right" valign="top"><a id="a713ae084403d4162e7845cacf347a57b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a713ae084403d4162e7845cacf347a57b">RemoveFromRenderTick</a> ()</td></tr>
 <tr class="memdesc:a713ae084403d4162e7845cacf347a57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable render for this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a>. <br /></td></tr>
 <tr class="separator:a713ae084403d4162e7845cacf347a57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8502edd1c4fedc47b3a7bea1aaf103"><td class="memItemLeft" align="right" valign="top"><a id="a5a8502edd1c4fedc47b3a7bea1aaf103"></a>
-<a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16e">RenderMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a5a8502edd1c4fedc47b3a7bea1aaf103">GetRenderMode</a> () const</td></tr>
+RenderMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a5a8502edd1c4fedc47b3a7bea1aaf103">GetRenderMode</a> () const</td></tr>
 <tr class="memdesc:a5a8502edd1c4fedc47b3a7bea1aaf103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current render mode. <br /></td></tr>
 <tr class="separator:a5a8502edd1c4fedc47b3a7bea1aaf103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a195cc49e256a2e0648a56c479e423ee4"><td class="memItemLeft" align="right" valign="top"><a id="a195cc49e256a2e0648a56c479e423ee4"></a>
@@ -177,14 +171,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 RHI::DrawFilterMask&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a211c9ef58d6d0ce301737432ab92ec38">GetDrawFilterMask</a> () const</td></tr>
 <tr class="memdesc:a211c9ef58d6d0ce301737432ab92ec38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get draw filter mask. <br /></td></tr>
 <tr class="separator:a211c9ef58d6d0ce301737432ab92ec38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6576d822f0ce5cfb41c0b8384eaac03"><td class="memItemLeft" align="right" valign="top"><a id="ac6576d822f0ce5cfb41c0b8384eaac03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#ac6576d822f0ce5cfb41c0b8384eaac03">ConnectPrepareFrameHandler</a> (FrameNotificationEvent::Handler &amp;handler)</td></tr>
-<tr class="memdesc:ac6576d822f0ce5cfb41c0b8384eaac03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies a listener when a frame is about to be prepared for render, before SRGs are bound. <br /></td></tr>
-<tr class="separator:ac6576d822f0ce5cfb41c0b8384eaac03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85cf439e0624072deb7187490cd8e103"><td class="memItemLeft" align="right" valign="top"><a id="a85cf439e0624072deb7187490cd8e103"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a85cf439e0624072deb7187490cd8e103">ConnectEndFrameHandler</a> (FrameNotificationEvent::Handler &amp;handler)</td></tr>
-<tr class="memdesc:a85cf439e0624072deb7187490cd8e103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notifies a listener when the rendering of a frame has finished. <br /></td></tr>
-<tr class="separator:a85cf439e0624072deb7187490cd8e103"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -209,40 +195,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> describes how to render a scene. It has all the passes and views for rendering. A scene may have several pipelines. Each pipeline have its own render frequency. Pipeline can be disabled and it won't be rendered if it's disabled. </p>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a2ed9f5a12eb38d066d7455c4b264d16e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ed9f5a12eb38d066d7455c4b264d16e">&#9670;&nbsp;</a></span>RenderMode</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a2ed9f5a12eb38d066d7455c4b264d16e">AZ::RPI::RenderPipeline::RenderMode</a> : uint8_t</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a2ed9f5a12eb38d066d7455c4b264d16eaa1518fc2b3d8a46f91fe88b6d84c5510"></a>RenderEveryTick&#160;</td><td class="fielddoc"><p>Render at each RPI system render tick. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2ed9f5a12eb38d066d7455c4b264d16ea2563a5930ee5c785d1262f5bde627e85"></a>RenderAtTargetRate&#160;</td><td class="fielddoc"><p>Render on RPI system render tick after a target refresh rate interval has passed. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2ed9f5a12eb38d066d7455c4b264d16ead93c43be8a20bd71ce78627b24d58e35"></a>RenderOnce&#160;</td><td class="fielddoc"><p>Render once in next RPI system render tick. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="a2ed9f5a12eb38d066d7455c4b264d16ea760aa393074e2624e389023619f2f441"></a>NoRender&#160;</td><td class="fielddoc"><p>Render disabled. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0dc83498f5615a3d1d2e79270a3a1828"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0dc83498f5615a3d1d2e79270a3a1828">&#9670;&nbsp;</a></span>AddToRenderTick()</h2>
 
@@ -257,31 +210,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> to RPI system's RenderTick and it will be rendered whenever the RPI system's RenderTick is called. The <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> is rendered per RenderTick by default. </p>
-
-</div>
-</div>
-<a id="ac9419733df25a00745fe685a3bae698a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9419733df25a00745fe685a3bae698a">&#9670;&nbsp;</a></span>AddToRenderTickAtInterval()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AZ::RPI::RenderPipeline::AddToRenderTickAtInterval </td>
-          <td>(</td>
-          <td class="paramtype">AZStd::chrono::duration&lt; float &gt;&#160;</td>
-          <td class="paramname"><em>renderInterval</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Add this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> to RPI system's RenderTick and it will be rendered every RenderTick after the specified interval has elapsed since the last rendered frame. </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">renderInterval</td><td>The desired time between rendered frames, in seconds. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Add this <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> to RPI system's RenderTick and it will be rendered whenever the RPI system's RenderTick is called. The <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html">RenderPipeline</a> is rendered per RenderTick by default unless <a class="el" href="class_a_z_1_1_r_p_i_1_1_render_pipeline.html#a5cde44add68771845fc43d594f222944">AddToRenderTickOnce()</a> was called. </p>
 
 </div>
 </div>
@@ -422,7 +351,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>Scene</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:57 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:32:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

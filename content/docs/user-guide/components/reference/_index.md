@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-Components add functionality to entities in Open 3D Engine (O3DE). An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
+Components add functionality to entities in **Open 3D Engine (O3DE)**. An entity can contain any number or combination of components. Some components allow only one instance per entity, and some depend on other components to function.
 
 Components are provided by Gems. To make a component available in **O3DE Editor**, you must add the Gem that provides the component. Though components might belong to the same type, they might not be provided by the same Gem. You can find out which Gem provides a component in the reference topic for the component.
 
@@ -66,10 +66,7 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Mesh](/docs/user-guide/components/reference/atom/mesh/) | Specifies a model to render. |
 | [Occlusion Culling Plane](/docs/user-guide/components/reference/atom/occlusion-culling-plane/) | Creates an occluder that when put between the camera and a mesh, can block the mesh from being rendered. |
 | [Physical Sky](/docs/user-guide/components/reference/atom/physical-sky/) | Adjusts the physical environment of the scene, such as the sky, sun, and fog. |
-| [PostFX Gradient Weight Modifier](/docs/user-guide/components/reference/atom/postfx-gradient-weight-modifier/) | Modifies post-processing effects' (PostFX) weight based on another entity's gradient signal. |
-| [PostFX Layer](/docs/user-guide/components/reference/atom/postfx-layer/) | Controls how PostFX are applied in a scene. |
-| [PostFX Shape Weight Modifier](/docs/user-guide/components/reference/atom/postfx-shape-weight-modifier/) | Limits PostFX to a volume of space that's defined by a **Shape** component. The PostFX's weight remains constant within the volume, and it begins to fade outside of the volume.|
-| [Radius Weight Modifier](/docs/user-guide/components/reference/atom/radius-weight-modifier/) | Modifies PostFX's weight based on the camera's distance to the center. |
+| [Post-processing Modifiers](/docs/user-guide/components/reference/atom/post-processing-modifiers/) | A collection of components that define layers, volumes, areas, and weights for post-processing effects (PostFX). |
 | [Reflection Probe](/docs/user-guide/components/reference/atom/reflection-probe/) | Creates specular reflections in the environment around a probe (capture point). |
 | [SSAO](/docs/user-guide/components/reference/atom/ssao/) | Approximates indirect lighting in a scene by using the screen space ambient occlusion technique. |
 

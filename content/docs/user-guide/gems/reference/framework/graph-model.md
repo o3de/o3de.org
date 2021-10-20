@@ -5,4 +5,4 @@ description: The Graph Model Gem provides a generic node graph data model framew
 toc: true
 ---
 
-The Graph Model Gem provides a generic node graph data model framework for Open 3D Engine (O3DE).
+The Graph Model Gem provides a generic node graph data model framework for **Open 3D Engine (O3DE)**.

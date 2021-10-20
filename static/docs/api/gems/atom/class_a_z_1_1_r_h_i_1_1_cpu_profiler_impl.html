@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;CpuProfilerImpl.h&gt;</code></p>
 
-<p>Inherits <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html">AZ::RHI::CpuProfiler</a>, and Handler.</p>
+<p>Inherits Profiler, <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html">AZ::RHI::CpuProfiler</a>, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -77,17 +77,16 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a24ef57e06f99a7b7795caeded8eb5ebe"><td class="memItemLeft" align="right" valign="top"><a id="a24ef57e06f99a7b7795caeded8eb5ebe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSystemTick</b> () final override</td></tr>
 <tr class="separator:a24ef57e06f99a7b7795caeded8eb5ebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b73c242d0c08de26db4428d14d2c891"><td class="memItemLeft" align="right" valign="top"><a id="a3b73c242d0c08de26db4428d14d2c891"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#a3b73c242d0c08de26db4428d14d2c891">BeginTimeRegion</a> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_time_region.html">TimeRegion</a> &amp;timeRegion) final override</td></tr>
-<tr class="memdesc:a3b73c242d0c08de26db4428d14d2c891"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html" title="Interface class of the CpuProfiler.">CpuProfiler</a> overrides... <br /></td></tr>
-<tr class="separator:a3b73c242d0c08de26db4428d14d2c891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac955efeb4ea4cb7cbf67d98f532d909a"><td class="memItemLeft" align="right" valign="top"><a id="ac955efeb4ea4cb7cbf67d98f532d909a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#ac955efeb4ea4cb7cbf67d98f532d909a">EndTimeRegion</a> () final override</td></tr>
-<tr class="memdesc:ac955efeb4ea4cb7cbf67d98f532d909a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a time region. <br /></td></tr>
-<tr class="separator:ac955efeb4ea4cb7cbf67d98f532d909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239f668e1ae3ec3ac5199595eec112a1"><td class="memItemLeft" align="right" valign="top"><a id="a239f668e1ae3ec3ac5199595eec112a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#a239f668e1ae3ec3ac5199595eec112a1">BeginRegion</a> (const AZ::Debug::Budget *budget, const char *eventName) final override</td></tr>
+<tr class="memdesc:a239f668e1ae3ec3ac5199595eec112a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::Debug::Profiler overrides... <br /></td></tr>
+<tr class="separator:a239f668e1ae3ec3ac5199595eec112a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e802582bfed750fdcc0dfff1368397"><td class="memItemLeft" align="right" valign="top"><a id="a54e802582bfed750fdcc0dfff1368397"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndRegion</b> (const AZ::Debug::Budget *budget) final override</td></tr>
+<tr class="separator:a54e802582bfed750fdcc0dfff1368397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42ff49af6ee8a25fb9ec6b870517a20c"><td class="memItemLeft" align="right" valign="top"><a id="a42ff49af6ee8a25fb9ec6b870517a20c"></a>
 const TimeRegionMap &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#a42ff49af6ee8a25fb9ec6b870517a20c">GetTimeRegionMap</a> () const final override</td></tr>
-<tr class="memdesc:a42ff49af6ee8a25fb9ec6b870517a20c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last frame's TimeRegionMap. <br /></td></tr>
+<tr class="memdesc:a42ff49af6ee8a25fb9ec6b870517a20c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html" title="Interface class of the CpuProfiler.">CpuProfiler</a> overrides... <br /></td></tr>
 <tr class="separator:a42ff49af6ee8a25fb9ec6b870517a20c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaa6199c77cb66145bd3a4a6381da25c"><td class="memItemLeft" align="right" valign="top"><a id="aeaa6199c77cb66145bd3a4a6381da25c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#aeaa6199c77cb66145bd3a4a6381da25c">BeginContinuousCapture</a> () final override</td></tr>
@@ -107,10 +106,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:aa642b56eb492684563a5389a88268979"><td class="memItemLeft" align="right" valign="top"><a id="aa642b56eb492684563a5389a88268979"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProfilerEnabled</b> () const final override</td></tr>
 <tr class="separator:aa642b56eb492684563a5389a88268979"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeea032f3c55b3d588ed08000d78abcd"><td class="memItemLeft" align="right" valign="top"><a id="afeea032f3c55b3d588ed08000d78abcd"></a>
-const <a class="el" href="struct_a_z_1_1_r_h_i_1_1_cached_time_region_1_1_group_region_name.html">CachedTimeRegion::GroupRegionName</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#afeea032f3c55b3d588ed08000d78abcd">InsertDynamicName</a> (const char *groupName, const AZStd::string &amp;regionName) final override</td></tr>
-<tr class="memdesc:afeea032f3c55b3d588ed08000d78abcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by AZ_ATOM_PROFILE_DYNAMIC to create GroupRegionNames with known lifetimes. <br /></td></tr>
-<tr class="separator:afeea032f3c55b3d588ed08000d78abcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_a_z_1_1_r_h_i_1_1_cpu_profiler"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_a_z_1_1_r_h_i_1_1_cpu_profiler')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html">AZ::RHI::CpuProfiler</a></td></tr>
 <tr class="memitem:a9146a72870d129fc46878098451750b4 inherit pub_methods_class_a_z_1_1_r_h_i_1_1_cpu_profiler"><td class="memItemLeft" align="right" valign="top"><a id="a9146a72870d129fc46878098451750b4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html">CpuProfiler</a>, &quot;{127C1D0B-BE05-4E18-A8F6-24F3EED2ECA6}&quot;)</td></tr>
@@ -147,7 +142,7 @@ static <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler.html">CpuProfile
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:53 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:32:16 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

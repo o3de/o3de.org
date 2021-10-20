@@ -4,7 +4,7 @@ description: Learn how to use the CMake build tools with Open 3D Engine (O3DE).
 weight: 100
 ---
 
-Building Open 3D Engine or any of its projects with CMake is done in two steps: Creating *Native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
+Building **Open 3D Engine (O3DE)**or any of its projects with CMake is done in two steps: Creating *Native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
 
 As part of keeping builds fast, CMake maintains a cache of both its internal values used for generation and takes advantage of any incremental builds supported by the native build tools. After your first configuration, you won't need to make any changes to the CMake cache unless you're changing a value needed to re-create native build projects. In most workflows, you'll only need to regenerate your native build projects whenever adding source code.
 

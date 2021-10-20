@@ -6,7 +6,7 @@ toc: true
 weight: 550
 ---
 
-Open 3D Engine (O3DE) has many unique and specialized terms. This topic explains these terms and how documentation contributors should use them.
+**Open 3D Engine (O3DE)** has many unique and specialized terms. This topic explains these terms and how documentation contributors should use them.
 
 ## General terminology guidance
 
@@ -15,7 +15,7 @@ Open 3D Engine (O3DE) has many unique and specialized terms. This topic explains
 * Use regular text for subsequent references to a tool, Gem, or component proper name.
 * Introduce acronyms in their expanded form followed by the acronym in parentheses. For example, "console variable (cvar)".
 * Use the acronym for subsequent on-page references.
-* Be consistent in the use of O3DE terms. For example, use "level" rather than "scene", and use "Perspective" rather than "viewport".
+* Be consistent in the use of O3DE terms. For example, use "level" rather than "scene".
 
 ## O3DE specific terms
 
@@ -57,7 +57,6 @@ O3DE specific terms are defined in the table below, with guidance for documentat
 | **O3DE Editor** | Editor | O3DE's content creation environment. Always capitalize both "O3DE" and "Editor", as this is a tool name and a proper noun. Use "**O3DE Editor**" in bold for the first on-page reference. Use "Editor" in regular text for subsequent references. |
 | **Object Tree** | *\<none\>* | A viewer of active UI objects. Always capitalize both "Object" and "Tree", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
 | Open 3D Engine | O3DE | Always capitalize the "O", the "D", and the "E". Use "Open 3D Engine (O3DE)" in bold for the first on-page reference. Use "O3DE" in regular text for subsequent references.|
-| Perspective | *\<none\>* | The proper name of the main view in O3DE Editor. Always capitalize "Perspective" when referring to the named view. Use bold text for the first on-page reference. Use the term "perspective" in lower case only when speaking generally about the camera projection type. Use the term "Perspective" consistently when referring to the edit view rather than "viewport" or "pane". |
 | project | *\<none\>* | A named container and directory hierarchy for all the files, preferences, assets, levels, scripts, code, and so on, that will be compiled into a run-time executable for a target platform, or packaged as a Gem. Do not capitalize this term. Use the term "project" rather than "game". |
 | **Python Console** | *\<none\>* | A tool for running Python scripts in O3DE Editor. Always capitalize both "Python" and "Console", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
 | **Python Scripts** | *\<none\>* | A browser application for Python script files. Always capitalize both "Python" and "Scripts" when referring to the tool, as this is the tool name, and a proper noun. Use bold text for the first on-page reference. When referring to Python script files in general, use "Python scripts" - do not bold "Python" and neither capitalize nor bold "scripts". |
@@ -65,6 +64,7 @@ O3DE specific terms are defined in the table below, with guidance for documentat
 | spawnable | *\<none\>* | The run-time representation of a prefab, which contains only run-time components. Spawnables use the ".spawnable" file extension. Do not capitalize this term.  |
 | target platform | *\<none\>* | The platform on which compiled project executables are run. Prefer this term over specific platforms such as Windows PCs or mobile devices. For example, if your O3DE project is being built for Linux - even in a cross-compiler environment - it will use the Clang compiler tools to generate elf_x64 binaries. |
 | **Track View** | *\<none\>* | O3DE's cinematics editor. Always capitalize both "Track" and "View", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
+| viewport | *\<none\>* | The level view in O3DE Editor. |
 | **UI Editor** | *\<none\>* | A tool for constructing run-time user interfaces. Always capitalize both "UI" and "Editor", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
 | **Viewport Camera Selector** | *\<none\>* | A tool for selecting the active Perspective camera. Always capitalize "Viewport", "Camera", and "Selector", as this is a tool name, and a proper noun. Use bold text for the first on-page reference. |
 

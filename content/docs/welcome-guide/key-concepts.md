@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-Open 3D Engine (O3DE) provides a complete, end-to-end environment for developing and packaging graphically intensive games, simulations, and applications on a wide variety of platforms. Because it's a large development environment with so many different features and tools, O3DE can be intimidating at first. This topic covers the various parts of O3DE at a high level, and the common ways you can work with it depending on your role as a developer, designer, or artist.
+**Open 3D Engine (O3DE)** provides a complete, end-to-end environment for developing and packaging graphically intensive games, simulations, and applications on a wide variety of platforms. Because it's a large development environment with so many different features and tools, O3DE can be intimidating at first. This topic covers the various parts of O3DE at a high level, and the common ways you can work with it depending on your role as a developer, designer, or artist.
 
 O3DE consists of tools, editors, and systems that help you build your project. At its core, it provides the following:
 

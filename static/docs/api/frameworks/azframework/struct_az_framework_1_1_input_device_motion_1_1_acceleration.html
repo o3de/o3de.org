@@ -57,32 +57,60 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:aaa6b7bb16ccc5a9e61bfd2f6f33e1a73"><td class="memItemLeft" align="right" valign="top"><a id="aaa6b7bb16ccc5a9e61bfd2f6f33e1a73"></a>
-static const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Gravity</b></td></tr>
-<tr class="separator:aaa6b7bb16ccc5a9e61bfd2f6f33e1a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb818e87d25861e1b36a01184d89899"><td class="memItemLeft" align="right" valign="top"><a id="a3fb818e87d25861e1b36a01184d89899"></a>
-static const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Raw</b></td></tr>
-<tr class="separator:a3fb818e87d25861e1b36a01184d89899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4db8bb426e7165ee19186dda54ad76d"><td class="memItemLeft" align="right" valign="top"><a id="ad4db8bb426e7165ee19186dda54ad76d"></a>
-static const <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_device_motion_1_1_acceleration.html#ad4db8bb426e7165ee19186dda54ad76d">User</a></td></tr>
-<tr class="memdesc:ad4db8bb426e7165ee19186dda54ad76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">All acceleration input channel ids. <br /></td></tr>
-<tr class="separator:ad4db8bb426e7165ee19186dda54ad76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d9939d028d47491d3bcb40b3185c21"><td class="memItemLeft" align="right" valign="top"><a id="a38d9939d028d47491d3bcb40b3185c21"></a>
-static const AZStd::array&lt; <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>, 3 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>All</b></td></tr>
-<tr class="separator:a38d9939d028d47491d3bcb40b3185c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900cda0fc910d56e5250cfe954224844"><td class="memItemLeft" align="right" valign="top"><a id="a900cda0fc910d56e5250cfe954224844"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Gravity</b> {&quot;motion_acceleration_gravity&quot;}</td></tr>
+<tr class="separator:a900cda0fc910d56e5250cfe954224844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ad8b01c43b93a36af183e529e5c41d"><td class="memItemLeft" align="right" valign="top"><a id="ad1ad8b01c43b93a36af183e529e5c41d"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Raw</b> {&quot;motion_acceleration_raw&quot;}</td></tr>
+<tr class="separator:ad1ad8b01c43b93a36af183e529e5c41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a10e0cdf77fbdedb4b7add6d5fa6f75"><td class="memItemLeft" align="right" valign="top"><a id="a1a10e0cdf77fbdedb4b7add6d5fa6f75"></a>
+static constexpr <a class="el" href="class_az_framework_1_1_input_channel_id.html">InputChannelId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_input_device_motion_1_1_acceleration.html#a1a10e0cdf77fbdedb4b7add6d5fa6f75">User</a> {&quot;motion_acceleration_user&quot;}</td></tr>
+<tr class="memdesc:a1a10e0cdf77fbdedb4b7add6d5fa6f75"><td class="mdescLeft">&#160;</td><td class="mdescRight">All acceleration input channel ids. <br /></td></tr>
+<tr class="separator:a1a10e0cdf77fbdedb4b7add6d5fa6f75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4166f1a08ab1db69e1e314fa1555b2d2"><td class="memItemLeft" align="right" valign="top">static constexpr AZStd::array&#160;</td><td class="memItemRight" valign="bottom"><b>All</b></td></tr>
+<tr class="separator:a4166f1a08ab1db69e1e314fa1555b2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>All the input channel ids that identify different types of acceleration data. Note that not all motion devices will necessarily be able to emit all types of motion sensor data, and unlike most other input channels these ones must be explicitly enabled using either:</p><ul>
 <li>InputSystemComponent::m_initiallyActiveMotionChannels</li>
 <li><a class="el" href="class_az_framework_1_1_input_motion_sensor_requests.html#ab5aa9125bdcd4056111d7a5891cc5f16">InputMotionSensorRequests::SetInputChannelEnabled</a> </li>
 </ul>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4166f1a08ab1db69e1e314fa1555b2d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4166f1a08ab1db69e1e314fa1555b2d2">&#9670;&nbsp;</a></span>All</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr AZStd::array AzFramework::InputDeviceMotion::Acceleration::All</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">                Gravity,</div>
+<div class="line">                Raw,</div>
+<div class="line">                <a class="code" href="struct_az_framework_1_1_input_device_motion_1_1_acceleration.html#a1a10e0cdf77fbdedb4b7add6d5fa6f75">User</a></div>
+<div class="line">            }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Input/Devices/Motion/InputDeviceMotion.h</li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="astruct_az_framework_1_1_input_device_motion_1_1_acceleration_html_a1a10e0cdf77fbdedb4b7add6d5fa6f75"><div class="ttname"><a href="struct_az_framework_1_1_input_device_motion_1_1_acceleration.html#a1a10e0cdf77fbdedb4b7add6d5fa6f75">AzFramework::InputDeviceMotion::Acceleration::User</a></div><div class="ttdeci">static constexpr InputChannelId User</div><div class="ttdoc">All acceleration input channel ids.</div><div class="ttdef"><b>Definition:</b> InputDeviceMotion.h:49</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:46 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

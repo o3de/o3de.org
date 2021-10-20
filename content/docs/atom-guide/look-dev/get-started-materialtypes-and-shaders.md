@@ -101,7 +101,7 @@ Vertex Shader
 
 The vertex shader inputs and outputs are defined inside the structs `VertexInput` and `VertexShaderOutput`. The type of input and output is indicated by HLSL semantics (see Microsoft DirectX HLSL - Semantics](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-semantics) documentation). 
 
-In this vertex shader program, you need the geometry’s position. You can set up vertex input and output using the following code:
+In this vertex shader program, you need the geometry's position. You can set up vertex input and output using the following code:
 
 ```hlsl
 struct VertexInput
@@ -392,7 +392,7 @@ Here is the complete `MyUnlitColor.materialtype` file:
 ## 5. Compile and debug with the Asset Processor
 At this point, we've finished writing the files `MyUnlitColor.materialtype`, `MyUnlitColor.shader`, and `MyUnlitColor.azsl`. Now, we are going to make sure they compile successfully. 
 
-**Asset Processor** is responsible for compiling and debugging `.material`, `.materialtype,` `.shader`, and `.azsl` files (among many other assets). **Asset Processor** automatically launches when **Material Editor** is open and runs in the background in the system tray. You can also launch **Asset Processor** from the directory for your build config such as `<build>/bin/profile/`.  
+**Asset Processor** is responsible for compiling and debugging `.material`, `.materialtype,` `.shader`, and `.azsl` files (among many other assets). **Asset Processor** automatically launches when **Material Editor** is open and runs in the background in the system tray. You can also launch **Asset Processor** from the directory for your build config such as `<build>/bin/profile/` or `<install>/bin/<platform>/profile/Default`.  
 
 **Asset Processor** monitors your project's subdirectories and automatically compiles and debugs assets when it detects new or updated files.
 
@@ -404,7 +404,7 @@ If a job displays an error or warning, select the job in the **Asset Status** li
 At this point, all of our files should compile successfully. Now, you are going to create a material based on the MyUnlitColor material type. 
 
 To create a new material using **Material Editor**: 
-1. Launch **Material Editor** from the directory for your build config such as `<build>/bin/profile/`.  
+1. Launch **Material Editor** from the directory for your build config such as `<build>/bin/profile/` or `<install>/bin/<platform>/profile/Default`.  
 2. From the **File** menu in **Material Editor**, select **New**, or press **Control + N** to create a new material.
 3. In the **Create New Material** dialog, select **MyUnlitColor** in the **Material Type** list.
 4. Choose the folder icon below **Select Material Filename**. Ensure the file browser has your project's `Materials` directory selected and name the material `MyUnlitColor.material`. Choose **OK** to close both the file browser and the **Create New Material** dialog.

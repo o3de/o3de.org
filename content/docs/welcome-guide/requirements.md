@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
+**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
 prerequisites and configuration](#software-prerequisites)
 section, each prerequisite is listed along with any specific configuration steps
 required.
@@ -63,9 +63,6 @@ The default Visual Studio installation might not include all of the features tha
    + Select **Game development with C++**.
       + In the **Installation details** panel on the right, select at least one **Windows 10 SDK**.
    + Select **Desktop development with C++**.
-
-1. On the **Individual components** tab, in **Compilers, build tools, and runtime**:
-   + Select at least one version of the **MSVC v142 - VS 2019 C++ x64/x86 build tools**. If you don't know which to choose, just use **Latest**.
 
 1. Once you've completed your changes, choose the **Install** button in the lower right hand corner, selecting your preferred download option.
   {{< note >}}
@@ -196,6 +193,8 @@ O3DE also requires some additional library packages to be installed:
 * libglu1-mesa-dev
 * libxcb-xinerama0
 * libxcb-xinput0
+* libxcb-xinput-dev
+* libxcb-xfixes0-dev
 * libxcb-xkb-dev
 * libxkbcommon-dev
 * libxkbcommon-x11-dev
@@ -208,7 +207,7 @@ O3DE also requires some additional library packages to be installed:
 You can download and install these packages through `apt-get`. 
 
 ```shell
-sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev
+sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev
 ```
 
 ### Ninja Build System (Optional)

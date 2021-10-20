@@ -57,7 +57,7 @@ $(function() {
 
 <p><code>#include &lt;CameraInput.h&gt;</code></p>
 
-<p>Inherited by <a class="el" href="class_az_framework_1_1_orbit_camera_input.html">AzFramework::OrbitCameraInput</a>, <a class="el" href="class_az_framework_1_1_orbit_dolly_cursor_move_camera_input.html">AzFramework::OrbitDollyCursorMoveCameraInput</a>, <a class="el" href="class_az_framework_1_1_orbit_dolly_scroll_camera_input.html">AzFramework::OrbitDollyScrollCameraInput</a>, <a class="el" href="class_az_framework_1_1_pan_camera_input.html">AzFramework::PanCameraInput</a>, <a class="el" href="class_az_framework_1_1_rotate_camera_input.html">AzFramework::RotateCameraInput</a>, <a class="el" href="class_az_framework_1_1_scroll_translation_camera_input.html">AzFramework::ScrollTranslationCameraInput</a>, and <a class="el" href="class_az_framework_1_1_translate_camera_input.html">AzFramework::TranslateCameraInput</a>.</p>
+<p>Inherited by <a class="el" href="class_az_framework_1_1_pan_camera_input.html">AzFramework::PanCameraInput</a>, <a class="el" href="class_az_framework_1_1_pivot_camera_input.html">AzFramework::PivotCameraInput</a>, <a class="el" href="class_az_framework_1_1_pivot_dolly_motion_camera_input.html">AzFramework::PivotDollyMotionCameraInput</a>, <a class="el" href="class_az_framework_1_1_pivot_dolly_scroll_camera_input.html">AzFramework::PivotDollyScrollCameraInput</a>, <a class="el" href="class_az_framework_1_1_rotate_camera_input.html">AzFramework::RotateCameraInput</a>, <a class="el" href="class_az_framework_1_1_scroll_translation_camera_input.html">AzFramework::ScrollTranslationCameraInput</a>, and <a class="el" href="class_az_framework_1_1_translate_camera_input.html">AzFramework::TranslateCameraInput</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -183,7 +183,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>It is usually possible for one to many camera inputs to be running at the same time (the default), it is however possible to to make a camera input 'exclusive', so only it can run at a time. This implies that all other behaviors must have stopped before it can begin, and no other camera input can run while it is active. </p>
 
-<p>Reimplemented in <a class="el" href="class_az_framework_1_1_orbit_camera_input.html#ab20c199819beffa8147426ba67519a21">AzFramework::OrbitCameraInput</a>.</p>
+<p>Reimplemented in <a class="el" href="class_az_framework_1_1_pivot_camera_input.html#ad391127ec0d685c61e589f9f0efcd9f7">AzFramework::PivotCameraInput</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><div class="memdoc">
 <p>Use processed input events to update the state of the camera. </p><dl class="section note"><dt>Note</dt><dd>targetCamera is the current target camera at the beginning of an update. The returned camera is the targetCamera + some delta to get to the next camera position and/or orientation. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_framework_1_1_orbit_camera_input.html#a2a1a735862a0be87cebaef87ff215e02">AzFramework::OrbitCameraInput</a>, <a class="el" href="class_az_framework_1_1_scroll_translation_camera_input.html#ab6861cd7d049af5f34c2b94be8ff1a62">AzFramework::ScrollTranslationCameraInput</a>, <a class="el" href="class_az_framework_1_1_orbit_dolly_cursor_move_camera_input.html#a6478c25975260750ad60187b018ad03d">AzFramework::OrbitDollyCursorMoveCameraInput</a>, <a class="el" href="class_az_framework_1_1_orbit_dolly_scroll_camera_input.html#a0545b5c5bafca49e45e800623dcf186d">AzFramework::OrbitDollyScrollCameraInput</a>, <a class="el" href="class_az_framework_1_1_translate_camera_input.html#a15b9882b1ad6d846a3ee6ba8a8428722">AzFramework::TranslateCameraInput</a>, <a class="el" href="class_az_framework_1_1_pan_camera_input.html#a94c11903bd02c5025319c7487296525c">AzFramework::PanCameraInput</a>, and <a class="el" href="class_az_framework_1_1_rotate_camera_input.html#a47d1d25725cc09f0610b7029a4867c63">AzFramework::RotateCameraInput</a>.</p>
+<p>Implemented in <a class="el" href="class_az_framework_1_1_pivot_camera_input.html#a3f76c5071b14d15d370e3cc72d7c7ef6">AzFramework::PivotCameraInput</a>, <a class="el" href="class_az_framework_1_1_scroll_translation_camera_input.html#ab6861cd7d049af5f34c2b94be8ff1a62">AzFramework::ScrollTranslationCameraInput</a>, <a class="el" href="class_az_framework_1_1_pivot_dolly_motion_camera_input.html#a8785db8a7652a044c2752e800fd34e1c">AzFramework::PivotDollyMotionCameraInput</a>, <a class="el" href="class_az_framework_1_1_pivot_dolly_scroll_camera_input.html#a02314e83f116d39d5f3d89418bd60a3e">AzFramework::PivotDollyScrollCameraInput</a>, <a class="el" href="class_az_framework_1_1_translate_camera_input.html#a15b9882b1ad6d846a3ee6ba8a8428722">AzFramework::TranslateCameraInput</a>, <a class="el" href="class_az_framework_1_1_pan_camera_input.html#a94c11903bd02c5025319c7487296525c">AzFramework::PanCameraInput</a>, and <a class="el" href="class_az_framework_1_1_rotate_camera_input.html#a47d1d25725cc09f0610b7029a4867c63">AzFramework::RotateCameraInput</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:45 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

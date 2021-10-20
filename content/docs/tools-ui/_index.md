@@ -10,7 +10,7 @@ guide_img: "/images/tools-ui/guide_img.png"
 primary: true
 ---
 
-Welcome to the Open 3D Engine (O3DE) Tools UI Developer's Guide! In this guide you will find guidelines around using the O3DE brand and UI style. Included is an introduction to component development and the custom Qt widget library for developers.
+Welcome to the **Open 3D Engine (O3DE)** Tools UI Developer's Guide! In this guide you will find guidelines around using the O3DE brand and UI style. Included is an introduction to component development and the custom Qt widget library for developers.
 
 If you are a looking to incorporate the O3DE logo into your project, please read the [Open 3D Branding Guidelines](/files/Open-3D-Branding-Guidelines-June-2021.pdf) PDF style guide to help stay aligned with our brand.
 

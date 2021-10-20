@@ -28,7 +28,6 @@ O3DE has the **FBX Settings** tool that converts static `.fbx` meshes, skeletons
 + [Customizing EMotion FX Objects](/docs/user-guide/visualization/animation/animation-editor/customizing-emotionfx-objects/)
 + [Creating Custom Motion Events and Parameters Using C++](/docs/user-guide/visualization/animation/character-editor/custom-events-parameters/)
 + [Creating and Simulating a PhysX Ragdoll](/docs/user-guide/visualization/animation/animation-editor/creating-and-simulating-physx-ragdoll/)
-+ [Creating Additive Animations](/docs/user-guide/assets/fbx-settings/import/motion-additive/)
 + [Retargeting Motions](/docs/user-guide/visualization/animation/animation-editor/retargeting-animations/)
 + [Creating Simulated Objects](/docs/user-guide/visualization/animation/animation-editor/creating-simulated-objects/)
 + [Add Cloth Colliders to actors](/docs/user-guide/visualization/animation/character-editor/cloth-colliders/)

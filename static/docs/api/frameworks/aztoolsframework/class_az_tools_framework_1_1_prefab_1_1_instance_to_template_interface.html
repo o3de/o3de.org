@@ -83,8 +83,8 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:a5efc55cf9a9d8afb11d7ef31970882cd"><td class="memItemLeft" align="right" valign="top"><a id="a5efc55cf9a9d8afb11d7ef31970882cd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendEntityAliasToPatchPaths</b> (PrefabDom &amp;providedPatch, const AZ::EntityId &amp;entityId)=0</td></tr>
 <tr class="separator:a5efc55cf9a9d8afb11d7ef31970882cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf37ff2371e17aaacc096aef7e2048fc"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#abf37ff2371e17aaacc096aef7e2048fc">PatchTemplate</a> (PrefabDomValue &amp;providedPatch, TemplateId templateId, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
-<tr class="separator:abf37ff2371e17aaacc096aef7e2048fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc25e626cf70b5e9ede22f0d7f3898a6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_interface.html#adc25e626cf70b5e9ede22f0d7f3898a6">PatchTemplate</a> (PrefabDomValue &amp;providedPatch, TemplateId templateId, bool immediate=false, InstanceOptionalReference instanceToExclude=AZStd::nullopt)=0</td></tr>
+<tr class="separator:adc25e626cf70b5e9ede22f0d7f3898a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a039408efd31c0e18ae44e9cd293eed09"><td class="memItemLeft" align="right" valign="top"><a id="a039408efd31c0e18ae44e9cd293eed09"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ApplyPatchesToInstance</b> (const AZ::EntityId &amp;entityId, PrefabDom &amp;patches, const <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance.html">Instance</a> &amp;instanceToAddPatches)=0</td></tr>
 <tr class="separator:a039408efd31c0e18ae44e9cd293eed09"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -93,8 +93,8 @@ virtual InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bot
 <tr class="separator:ac94cbe249c395df48954f59915eaad80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="abf37ff2371e17aaacc096aef7e2048fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf37ff2371e17aaacc096aef7e2048fc">&#9670;&nbsp;</a></span>PatchTemplate()</h2>
+<a id="adc25e626cf70b5e9ede22f0d7f3898a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc25e626cf70b5e9ede22f0d7f3898a6">&#9670;&nbsp;</a></span>PatchTemplate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,6 +113,12 @@ virtual InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bot
           <td></td>
           <td class="paramtype">TemplateId&#160;</td>
           <td class="paramname"><em>templateId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>immediate</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -136,13 +142,14 @@ virtual InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bot
   <table class="params">
     <tr><td class="paramname">providedPatch</td><td>The patch to apply to the template. </td></tr>
     <tr><td class="paramname">templateId</td><td>The id of the template to update. </td></tr>
+    <tr><td class="paramname">immediate</td><td>An optional flag whether to apply the patch immediately (needed for Undo/Redos) or wait until next system tick. </td></tr>
     <tr><td class="paramname">instanceToExclude</td><td>An optional reference to an instance of the template being updated that should not be refreshes as part of propagation. Defaults to nullopt, which means that all instances will be refreshed. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the template was patched correctly, false if the operation failed. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a3ff5ba0e04fcead354bfc0e92482415b">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>.</p>
+<p>Implemented in <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_instance_to_template_propagator.html#a20feeb9b4732471ea8482bb5f4684733">AzToolsFramework::Prefab::InstanceToTemplatePropagator</a>.</p>
 
 </div>
 </div>
@@ -152,7 +159,7 @@ virtual InstanceOptionalReference&#160;</td><td class="memItemRight" valign="bot
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:07 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
