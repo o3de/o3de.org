@@ -1,34 +1,46 @@
 ---
-description: Learn about Open 3D Engine's core systems and how you can extend the systems by programming.
+description: Learn about the core systems of Open 3D Engine (O3DE) and how you can extend those systems by programming.
 title: Open 3D Engine Core Programming
 linktitle: Engine Core
 weight: 600
 ---
 
-The *engine core* encompasses the source code, systems, and modules that underly **Open 3D Engine (O3DE)** and its tools. All of these tools -- Editor, Asset Processor, Script Canvas, and so on -- work together to build an interactive 3D experience that uses modern rendering techniques and game play logic, and move your design from an empty scene to a fully polished project that you can deploy and share. In this section, you'll gain a deeper understanding in each part of the engine core and learn how you can expand O3DE's toolkit.
+The *engine core* encompasses the source code, systems, and modules that underlie **Open 3D Engine (O3DE)** and its tools. All of these tools---**O3DE Editor**, **Asset Processor**, **Script Canvas**, and so on---work together to build an interactive 3D experience that uses modern rendering techniques and gameplay logic. Using these tools, you can take your design from an empty scene to a fully polished project that you can deploy and share. In this section, you'll gain a deeper understanding of each part of the engine core and learn how you can expand O3DE's toolkit.
 
-Start by learning how to navigate the O3DE directory structure and familiarize yourself with the core modules in the O3DE SDK (refer to [Overview of O3DE SDK](/docs/welcome-guide/key-concepts.md) in the Key Concepts). These modules are the entry points to all of the functionality in O3DE. As you proceed throughout this section, use an IDE of your choice to view the source code and refer to the [API Reference](/docs/api/) in the O3DE Documentation.
+## Start here
 
-Depending on the part of the engine that you want to develop, there are different learning tracks that you can follow. While each learning track may be unique to your case, the following will get you started on some common developments:
+Start by learning about the shared systems in the engine core and the skills to develop O3DE's toolkit:
 
-- Developing a component
-  
-  - Component/Entity System
-  
-  - Event System
-  
-  - Introduction to C++ Programming
-  
-  - Programming for Component Development
+- [Overview of the O3DE SDK](/docs/welcome-guide/key-concepts/#overview-of-the-o3de-sdk)
 
-- Developing a Gem
-  
-  - Gem Modules
-  
-  - Introduction to C++ Programming
-  
-  - Programming for Gem Development
+   In this topic, you'll learn how to navigate the O3DE directory structure and become familiar with the core modules in the O3DE SDK. The core modules are the entry points to all of the functionality in O3DE. 
 
-- Developing an Atom Renderer feature
+- The fundamentals of C++ Programming or Python.
   
-  - Atom Renderer Developer Guide
+  O3DE's source code is programmed in C++ and supports several tools in Python.
+
+
+As you proceed through this section, use an IDE of your choice to view the source code, and refer to the [API Reference](/docs/api/) in the O3DE Documentation.
+
+## Learning paths
+
+Depending on the part of the engine that you want to develop, there are different learning tracks that you can follow. While each learning path may be unique to your case, the following topics will get you started on some common developments:
+
+**For developing a component**
+  
+  - [Component/Entity System](/docs/welcome-guide/key-concepts/#the-component-entity-system)
+  
+  - [Event Bus System](/docs/user-guide/engine/ebus/)
+  
+  - [Programmer's Guide to Component Development](/docs/user-guide/components/development/)
+
+**For developing a Gem**
+  
+  - [Gem Module System](/docs/user-guide/gems/development/overview/)
+
+  - [Create an O3DE Gem](/docs/user-guide/gems/development/creating/)
+
+
+**For developing agraphics feature with the Atom Renderer**
+  
+  - [Atom Renderer Developer Guide](/docs/atom-guide/dev-guide/)
