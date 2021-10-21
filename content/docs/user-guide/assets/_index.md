@@ -6,7 +6,7 @@ weight: 700
 toc: true
 ---
 
-This section has topics covering the **Asset Pipeline** and asset processing, including what source assets are, how they are discovered and tracked, and how they are processed into runtime optimized product assets. There are also guides for **Asset Processor**, which manages the Asset Pipeline, as well as the **Scene Settings** and **Texture Settings** tools, that customize source asset processing. The final guide explains how to create custom **Asset Builders** with **Python Asset Builder**.
+Topics in this section cover the **Asset Pipeline** and asset processing, including what source assets are, how they are discovered and tracked, and how they are processed into runtime optimized product assets. There are also guides for **Asset Processor**, which manages the Asset Pipeline, as well as the **Scene Settings** and **Texture Settings** tools, that customize source asset processing. The final guide explains how to create custom **Asset Builders** with **Python Asset Builder**.
 
 | Topic Area | Description |
 | --- | --- |
