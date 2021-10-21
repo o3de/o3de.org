@@ -1,0 +1,21 @@
+---
+linkTitle: Scan Directories 
+title: Scan Directories 
+description: Scan directories are monitored by Asset Processor for new an updated assets.
+weight: 300
+toc: true
+---
+
+The entry point into the **Asset Pipeline** is to place a source asset into a scan directory. Scan directories are monitored by **Asset Processor** for new and updated source assets and asset dependencies. Asset processor monitors the following scan directories:
+
+1. **Project** - The Project root directory and subdirectories. Source assets in this location are specific to the project.
+
+1. **Gems** - The directories of Gems that have been added to your project. Some Gems might contain source assets including example assets and critical assets.
+
+1. **Engine & Editor** - The root directory and subdirectories of the engine and editor. Source assets in this location are generally critical assets required to run **O3DE Editor** and **Launcher**.
+
+The system paths to these directories are dependent on your project and O3DE configuration and installation. The list of directories above is in descending order of precedence. Source assets in your project directory override source assets in the Gems and Engine directories with the same relative path.
+
+{{< note >}}
+Files in scan directories that Asset Processor doesn't recognize, such as license files, are ignored by Asset Processor. Ignored files are not be copied to the **Asset Cache**, and won't appear in **Asset Browser** in O3DE Editor. 
+{{< /note >}}
