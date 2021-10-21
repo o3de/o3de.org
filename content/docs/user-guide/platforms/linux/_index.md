@@ -100,5 +100,27 @@ To enable the generation of the compilation database file, include the following
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_UNITY_BUILD=OFF
 ```
 
+### Default Open File Limit
+
+On Linux systems like Ubuntu, the operating system limits how many open file handles any one process can have open at a time. The default number is typically 1024 files. 
+You can see the actual limit from the command line tool `ulimit` with the `-n` (open files) argument
+
+```shell
+ulimit -n
+1024
+```
+
+The O3DE Editor may use more than **1024** open file handles, so if this value is not updated, the Editor or one of its tools will crash or not work properly. To prevent this, you can set the value to a larger number (i.e. 65536) before launching the Editor or any of its tools.
+
+This can be done at the command line (temporary)
+
+```shell
+ulimit -n 65536
+```
+
+For a permanent change, you will need to update the system file (as a sudoer) [/etc/security/limits.conf](https://man7.org/linux/man-pages/man5/limits.conf.5.html) file and modify the `nofile` item.
+
+
+
 
 
