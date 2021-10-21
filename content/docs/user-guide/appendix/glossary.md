@@ -28,6 +28,9 @@ Any art, texture, 3D model, sound effect, or other digital data that is presente
 ### attachment
 A hierarchical object that is attached to characters, respond to real-world physics, and can be attached, detached, or replaced at runtime in the game. Character attachments include clothing, weapons, tools, or entire body parts such as heads or hands.
 
+### AzAutoGen
+The tool used to create generated source files from input templates and XML or JSON data files. AzAutoGen is meant for use as a simple transpiler when creating large numbers of boilerplate classes or assets.
+
 ### baked
 Performs and stores all calculations for a scene element so that the element does not need to be processed or rendered in real time in the game. Often used for lighting or physics. Also referred to as *prebaked*.
 

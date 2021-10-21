@@ -4,9 +4,7 @@ description: A reference for defining Open 3D Engine multiplayer state through a
 linktitle: Auto-components
 ---
 
-*Auto-components* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using the [AzAutoGen](/docs/user-guide/programming/autogen) system, auto-component files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
-
-In order to enable auto-component builds for your project, follow the instructions in [Multiplayer Project Configuration](./configuration).
+*Auto-components* provide a convenient way to define states of a multiplayer component relevant to network synchronization. Using [AzAutoGen](/docs/user-guide/programming/autogen), auto-component files found inside of your project are processed during builds to create C++ classes for components and controllers that provide network replication and remote function calls. Auto-components also take care of Editor and behavior context bindings so that the bound component shows in the Editor and works with O3DE scripting.
 
 ## Auto-component file structure
 
@@ -17,7 +15,7 @@ Auto-components are defined in XML files, placed in the `Code\Source\Autogen` di
 The `Component` tag defines the name, namespace, include path, and override behavior for the multiplayer component being described.
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The class name of the generated auto-component. | `string`: Must be a valid C++ class name. |
 | Namespace | The namespace the generated auto-component will be placed within. For a given Gem, all defined auto-components must be defined within the same namespace. Mixing namespaces inside a Gem will result in compiler errors. | `string`: Must be a valid C++ namespace name. |
 | OverrideComponent | If `true`, the generated component will be a base class and the developer implementing the multiplayer component will be responsible for supplying the final derived component used in the editor and at runtime. | `bool` |
@@ -26,10 +24,10 @@ The `Component` tag defines the name, namespace, include path, and override beha
 
 ### ComponentRelation
 
-A component relation (the `ComponentRelation` tag) describes how various components may be related to the component being described. 
+A component relation (the `ComponentRelation` tag) describes how various components may be related to the component being described. 
 
 | Property | Description | Type |
-|---|---|---|---|
+|---|---|---|
 | Name | The name of the related component. | `string`: Must be a valid C++ class name. |
 | Namespace | The namespace the related component is declared within. | `string`: Must be a valid C++ namespace. |
 | Include | The include path of the related component. | `string` |
