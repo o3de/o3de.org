@@ -83,9 +83,9 @@ In this step, you will use CMake to build either a monolithic or a non-monolithi
 
 - Builds the Game Launcher and other supporting files.
 
-{{< note >}}
-The Game Launcher may fail to load your assets if the `engine.pak` file is over 4 GB. We suggest that you clean up and reprocess your assets to reduce the file size of your bundled content.
-{{< /note >}}
+{{< todo >}}
+The Game Launcher may fail to load your assets if the `engine.pak` file is over 4 GB. This issue will be resolved when development on the Asset Bundler is stable.
+{{< /todo >}}
 
 ### Monolithic project
 
