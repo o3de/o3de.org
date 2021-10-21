@@ -1,5 +1,5 @@
 ---
-linktitle: Creating Projects on Windows
+title: Creating Projects on Windows
 description: Learn how to use the command line interface (CLI) on Windows to create and build new Open 3D Engine (O3DE) projects from the default project template.
 weight: 100
 toc: true
