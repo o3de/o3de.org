@@ -1,22 +1,18 @@
 ---
-linktitle: Creating Projects Using the CLI
-title: Creating Projects Using the Command Line Interface
-description: Learn how to use the command line interface (CLI) to create and build new Open 3D Engine (O3DE) projects from the default project template.
-weight: 200
+linktitle: Creating Projects on Windows
+description: Learn how to use the command line interface (CLI) on Windows to create and build new Open 3D Engine (O3DE) projects from the default project template.
+weight: 100
 toc: true
 ---
 
-The tutorial on this page and the video below provide an introduction to project configuration and building in **Open 3D Engine (O3DE)** using the `o3de` command line interface (CLI) tool. The **O3DE CLI** is a Python script used for project configuration. Invoke it from the `scripts` directory in your O3DE install. For a complete guide to O3DE CLI commands, refer to the [Project Configuration CLI Reference](/docs/user-guide/project-config/cli-reference).
+You can create project directories either in the same directory as the O3DE root directory or outside of this directory. This documentation refers to the latter as "external projects".
 
-The instructions here and in the video guide you through the following steps:
+This tutorial uses the following project name and directories in the examples. (Depending on how you set up O3DE, you might not have all of these directories.)
 
-* Create a new O3DE project using the O3DE CLI.
-* Create Visual Studio project files in your O3DE project directory.
-* Build your O3DE project.
-
-At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template.
-
-{{< youtube id="SZC13S0YZZs" title="Creating O3DE Projects Using Command Line" >}}
+* O3DE engine source: `C:\o3de`
+* Installed O3DE engine (containing pre-built SDK engine binaries): `C:\o3de-install`
+* New project name and location: `C:\o3de-projects\MyProject`
+* Package directory (created during [setup from GitHub](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
 
 ## Prerequisites
 
@@ -27,15 +23,6 @@ The following instructions assume that you have:
 * Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 ## Create a new O3DE project
-
-You can create project directories either in the same directory as the O3DE root directory or outside of this directory. This documentation refers to the latter as "external projects".
-
-This tutorial uses the following project name and directories in the examples. (Depending on how you set up O3DE, you might not have all of these directories.)
-
-* O3DE engine source: `C:\o3de`
-* Installed O3DE engine (containing pre-built SDK engine binaries): `C:\o3de-install`
-* New project name and location: `C:\o3de-projects\MyProject`
-* Package directory (created during [setup from GitHub](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
 
 To start a project based on the standard template, complete the following steps.
 
