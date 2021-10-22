@@ -7,14 +7,15 @@ toc: true
 
 The HTTPRequestor Gem provides functionality to make asynchronous HTTP/HTTPS requests and return data through a user-provided call back function.
 
-**Note**  
-This feature is supported only on Windows but could be expanded to other platforms.
+{{< note >}}
+This feature is currently supported only on Windows, it could be expanded to other platforms.
+{{< /note >}}
 
 ## Getting Started
 
-To use the HttpRequestor gem, you must enable it in your project. For more information refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
+To use the HttpRequestor Gem, it must be enabled in the project. For more information refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems/).
 
-As HttpRequestor uses pieces of the AWS C++ SDK, you will need to include these pieces in your CMake file:
+The `HttpRequestor` Gem uses the AWS C++ SDK. To pick up these dependencies, add the following to the project's CMake file:
 
 ```
 BUILD_DEPENDENCIES
@@ -26,11 +27,15 @@ BUILD_DEPENDENCIES
 
 ## C\+\+ API
 
-The HttpRequestor gem has separate sets of APIs for adding requests and adding text requests.
+{{< note >}}
+This content is in the process of being moved to https://o3de.org/docs/api/gems/httprequestor/class_http_requestor_1_1_http_requestor_requests.html
+{{< /note >}}
+
+The HttpRequestor Gem has two sets of APIs: one set for making requests that return json responses and one set for return string (text) responses.
 
 ### AddRequest, AddRequestWithHeaders, AddRequestWithHeadersAndBody
 
-You can use the `AddRequest`, `AddRequestWithHeaders`, and `AddRequestWithHeadersAndBody` APIs to send generic HTTP requests to any website and receive the returned data in JSON format. The methods return the data received in the `callback` parameter.
+Use the `AddRequest`, `AddRequestWithHeaders`, and `AddRequestWithHeadersAndBody` APIs to send generic HTTP requests to any website and receive the returned data in JSON format. The methods return the data received in the `callback` parameter.
 
 #### Syntax
 
@@ -50,16 +55,13 @@ Each add request method requires the URI, a method and a callback.
 
 #### Parameters
 
-
-****  
-
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| URI | AZStd::String | The fully qualified web address, in the following format: scheme:\[//\[user:password@\]host\[:port\]\]\[/\]path\[?query\]\[\#fragment\] | 
-| method | Aws::Http::HttpMethod | The method type. The following values are supported: HTTP\_GET, HTTP\_POST, HTTP\_DELETE, HTTP\_PUT, HTTP\_HEAD, and HTTP\_PATCH. | 
-| callback |  | This function is called when the HTTP request is completed. The response body and code are present in the callback. | 
-| headers | HttpRequestor::Headers | The list of header fields for the HTTP request. | 
-| body | AZStd::String | Optional body to send with the request. | 
+| URI | `AZStd::String` | The fully qualified web address, in the following format: `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]`  | 
+| method | `Aws::Http::HttpMethod` | The method type. The following values are supported: `HTTP_GET`, `HTTP_POST`, `HTTP_DELETE`, `HTTP_PUT`, `HTTP_HEAD`, and `HTTP_PATCH`. | 
+| callback | [see below](#json-request-callback) | This function is called when the HTTP request is completed. The response body and code are present in the callback. | 
+| headers | `HttpRequestor::Headers` | The list of header fields for the HTTP request. | 
+| body | `AZStd::String` | Optional body to send with the request. | 
 
 Return: No return value.
 
@@ -73,19 +75,17 @@ void Callback(const Aws::Utils::Json::JsonValue& json, Aws::Http::HttpResponseCo
 
 #### Parameters
 
-
-****  
-
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| json | Aws::Utils::Json::JsonValue | The JSON object. The life span of this object is valid only during the scope of the callback. | 
-| responseCode | Aws::Http::HttpResponseCode | The HTTP response code. | 
+| json | `Aws::Utils::Json::JsonValue` | The JSON object. The life span of this object is valid only during the scope of the callback. | 
+| responseCode | `Aws::Http::HttpResponseCode` | The HTTP response code. | 
 
-Return: No return value.
+#### Returns
+`void`
 
 ### AddTextRequest, AddTextRequestWithHeaders, AddTextRequestWithHeadersAndBody
 
-You can use the `AddTextRequest`, `AddTextRequestWithHeaders`, and `AddTextRequestWithHeadersAndBody` APIs to send a generic HTTP request to any website and receive the returned data in a text string. The methods return the data received in the `callback` parameter.
+Use the `AddTextRequest`, `AddTextRequestWithHeaders`, and `AddTextRequestWithHeadersAndBody` APIs to send a generic HTTP request to any website and receive the returned data in a text string. The methods return the data received in the `callback` parameter.
 
 #### Syntax
 
@@ -105,22 +105,20 @@ Each add text request method requires the URI, a method and a callback.
 
 #### Parameters
 
-
-****  
-
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| URI | AZStd::String | The fully qualified web address, in the following format: scheme:\[//\[user:password@\]host\[:port\]\]\[/\]path\[?query\]\[\#fragment\] | 
-| method | Aws::Http::HttpMethod | The method type. The following values are supported: HTTP\_GET, HTTP\_POST, HTTP\_DELETE, HTTP\_PUT, HTTP\_HEAD, and HTTP\_PATCH. | 
-| callback |  | This function is called when the HTTP request is completed. The response body and code are present in the callback. | 
-| headers | HttpRequestor::Headers | The list of header fields for the HTTP request. | 
-| body | AZStd::String | Optional body to send with the request. | 
+| URI | `AZStd::String` | The fully qualified web address, in the following format: `scheme:[//[user:password@]host[:port]][/]path[?query][#fragment]` | 
+| method | `Aws::Http::HttpMethod` | The method type. The following values are supported: `HTTP_GET`, `HTTP_POST`, `HTTP_DELETE`, `HTTP_PUT`, `HTTP_HEAD`, and `HTTP_PATCH`. | 
+| callback | [see below](#text-request-callback) | This function is called when the HTTP request is completed. The response body and code are present in the callback. | 
+| headers | `HttpRequestor::Headers` | The list of header fields for the HTTP request. | 
+| body | `AZStd::String` | Optional body to send with the request. | 
 
-Return: No return value.
+#### Returns
+`void`
 
 ### Text Request Callback
 
-This callback is returned for the `AddTextRequest`, `AddTextRequestWithHeaders`, `AddTextRequestWithHeadersAndBody` methods.
+This callback is returned for the `AddTextRequest`, `AddTextRequestWithHeaders` and `AddTextRequestWithHeadersAndBody` methods.
 
 ```
 void Callback(const AZStd::string& response, Aws::Http::HttpResponseCode responseCode);
@@ -128,15 +126,13 @@ void Callback(const AZStd::string& response, Aws::Http::HttpResponseCode respons
 
 #### Parameters
 
-
-****  
-
 | Parameter | Type | Description | 
 | --- | --- | --- | 
 | response | AZStd::string& | The text returned from the server. The life span of this object is valid only during the scope of the callback. | 
 | responseCode | Aws::Http::HttpResponseCode | The HTTP response code. | 
 
-Return: No return value.
+#### Returns
+`void`
 
 ## Example
 
