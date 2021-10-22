@@ -29,15 +29,15 @@ If you set up O3DE from GitHub and chose the [source engine](/docs/user-guide/ap
 
 This tutorial uses the following project name and directories in the examples:
 
-* O3DE engine install directory: `C:\o3de-install`
-* New project name and location: `C:\o3de-projects\MyProject`
-* Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
+| Directory | Description |
+| --- | --- |
+| `o3de-install` | O3DE engine install directory. |
+| `o3de-projects/MyProject` | New project name and location. |
+| `o3de-packages` | Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)). |
 
 ## Launch Project Manager
 
-1. Open a file browser or command line window on your computer and navigate to your O3DE engine directory. Locate and launch the O3DE **Project Manager** application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/Windows/profile/Default`.
-
-    ![Launch o3de.exe from its build directory](/images/welcome-guide/project-manager-location.png)
+1. Either launch Project Manager from an icon on your desktop, or open a file browser or command line window on your computer and navigate to your O3DE engine directory. Locate and launch the O3DE **Project Manager** application, `o3de.exe`, from `<install-directory>/bin/<platform>/profile/Default`.
 
     {{< important >}}
 If you built an SDK engine from source using the `INSTALL` target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile/Default`.
@@ -75,7 +75,7 @@ If this is the first time you've used Project Manager to create a project, then 
 
 1. Under **Select a Project Template**, you can choose a project template with a pre-configured selection of Gems. You can also choose different Gems to enable for your project. This tutorial uses the default template and its pre-configured selection of common Gems.
 
-1. Choose **Create Project** to create the project files in the root directory specified as the project location. This also registers your project in the O3DE manifest, located at `<USER_DIRECTORY>/.o3de/o3de_manifest.json`.
+1. Choose **Create Project** to create the project files in the root directory specified as the project location. This also registers your project in the O3DE manifest, located at `<user-folder>/.o3de/o3de_manifest.json`.
 
 ## Build the O3DE project
 
@@ -85,7 +85,7 @@ You are now ready to build the project from Project Manager.
 
     ![Choose Build Project](/images/welcome-guide/project-manager-build-project.png)
 
-    The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/windows_vs2019/bin/profile`.
+    The project shouldn't take long to build. When the build completes, you can find the project binaries in your project directory under `build/<platform>/bin/profile`.
 
 1. To open your built project in the Editor, choose **Open Editor** from inside your project's icon box.
 
