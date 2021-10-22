@@ -11,7 +11,7 @@ The tutorials in this section and the video below provide an introduction to pro
 The instructions guide you through the following steps:
 
 * Create a new O3DE project using the O3DE CLI.
-* Create Visual Studio project files in your O3DE project directory.
+* Generate project files for your IDE in your O3DE project directory.
 * Build your O3DE project.
 
 At the end of the tutorial, you'll have a new O3DE project based on the default "standard" project template.

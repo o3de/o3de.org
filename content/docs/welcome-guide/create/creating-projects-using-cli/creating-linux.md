@@ -5,22 +5,24 @@ weight: 200
 toc: true
 ---
 
-You can create project directories either in the same directory as the O3DE root directory or outside of this directory. This documentation refers to the latter as "external projects".
-
-This tutorial uses the following project name and directories in the examples. (Depending on how you set up O3DE, you might not have all of these directories.)
-
-* O3DE engine source: `C:\o3de`
-* Installed O3DE engine (containing pre-built SDK engine binaries): `C:\o3de-install`
-* New project name and location: `C:\o3de-projects\MyProject`
-* Package directory (created during [setup from GitHub](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)): `C:\o3de-packages`
+Use the instructions in this tutorial to create an O3DE project for the Linux host platform. You can create project directories either in the same directory as the O3DE root directory or outside of this directory. This documentation refers to the latter as "external projects".
 
 ## Prerequisites
 
 The following instructions assume that you have:
 
-* Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
-* Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
 * Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
+* Set up O3DE on your computer. For help, refer to [Set up Open 3D Engine](/docs/welcome-guide/setup).
+* Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#register-the-engine).
+
+This tutorial uses the following project name and directories in the examples. (Depending on how you set up O3DE, you might not have all of these directories.)
+
+| Directory | Description |
+| --- | --- |
+| `o3de` | O3DE engine source. |
+| `o3de-install` | Installed O3DE engine, containing pre-built SDK engine binaries. |
+| `o3de-projects/MyProject` | New project name and location. |
+| `o3de-packages` | Package directory, created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine). |
 
 ## Create a new O3DE project
 
@@ -108,7 +110,6 @@ If you built the engine from source using the `INSTALL` target, make sure that y
         {{< /important >}}
 
 You can also run Project Manager (`o3de.exe`) from the same directory to edit your project's settings, add or remove Gems from the project, rebuild your project, and launch the Editor.
-
 
 {{< caution >}}
 When you launch the Editor, the **Asset Processor** from the same directory will also launch.  To launch the Editor from a different directory, you must close any **Asset Processor** tasks that are running.

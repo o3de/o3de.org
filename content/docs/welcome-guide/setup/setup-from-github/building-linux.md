@@ -5,9 +5,18 @@ weight: 200
 toc: true
 ---
 
-Now that you have a local copy of the O3DE source, you can build the engine, including key tools such as **Asset Processor**, **O3DE Editor**, and **Project Manager**.
+Once you have a local copy of the O3DE source, you can build the engine, including key tools such as **Asset Processor**, **O3DE Editor**, and **Project Manager**. If you have not yet cloned the source from GitHub, refer to [Setting up O3DE from GitHub](../setup-from-github).
 
-Choose one of the following build types based on the primary focus of your development work, then follow the instructions in the corresponding tab:
+## Prerequisites
+
+The following instructions assume that you have:
+
+* Met all hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
+* Configured the required Linux software as described in the [Linux software configuration](/docs/welcome-guide/requirements/#linux) section of the system requirements topic.
+
+## Build the engine
+
+To prepare to build the engine and projects, choose one of the following build types based on the primary focus of your development work, then follow the instructions in the corresponding tab:
 
 1. **Source engine** - Choose this build type if you plan to make frequent changes to the engine source code.
 
@@ -24,7 +33,7 @@ Choose one of the following build types based on the primary focus of your devel
 
     The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
 
-1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
+1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](/docs/welcome-guide/requirements) page for installation instructions.
 
     Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
 
@@ -65,7 +74,7 @@ Choose one of the following build types based on the primary focus of your devel
 
     The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
 
-1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](../requirements) page for installation instructions.
+1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](/docs/welcome-guide/requirements) page for installation instructions.
 
     Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
 
