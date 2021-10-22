@@ -17,7 +17,7 @@ What are the ideal traits for O3DE docs?
 * ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject* and *action verb*?
 * ✅ **Answer the question at hand** - Does the documentation answer a *what*, *why*, *how*, or *where* type of question?
 * ✅ **Help the user** - Does the documentation show the user something *meaningful*?
-* ✅ **Consistency** - Does the content consistently follow this style guide?
+* ✅ **Consistency** - Does the content consistently follow the style guide?
 
 ## What's in the guide?
 
