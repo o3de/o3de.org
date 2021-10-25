@@ -9,16 +9,16 @@ toc: true
 Source assets are files that contain unprocessed data that you want to load in **Open 3D Engine (O3DE) Editor** or **Launcher**. You can create source assets such as models, textures, animations, and audio files in digital content creation (DCC) applications. Source assets such as `.material`, `.inputbindings`, and `.scriptcanvas` files are created with O3DE's tools. These source assets must be processed through the **Asset Pipeline** and their product assets must be stored in your project's **Asset Cache** to be used by O3DE.
 
 {{< note >}}
-Some source assets, such as  `.xml` files, might not need to be processed as a product asset. **Asset Processor** uses a simple copy operation to copy these assets to the Asset Cache.
+Some source assets, such as `.xml` files, might not need to be processed as a product asset. **Asset Processor** uses a simple copy operation to copy these assets to the Asset Cache.
 {{< /note >}}
 
 ## Processing source assets
 
 Each source asset type has a customizable set of rules used by their **Asset Builder** to generate product assets. For graphics and animation source assets, O3DE provides tools such as **Scene Settings** and **Texture Settings** that you can use to create custom processing rules for each source asset. With Texture Settings, you can specify how a texture source asset is used, a mipmap chain, and how it's sampled and filtered. With Scene Settings, you can specify what meshes, skeletons, and motions to process from a `.fbx` source asset, and how physics colliders are generated.
 
-When the asset processing rules are customized, the options are stored in an `.assetinfo` sidecar file in the same directory as the source asset. If **Asset Processor** finds an `.assetinfo` file, the associated source asset is processed according to the options in the `.assetinfo` file. Otherwise, Asset Processor uses default rules to process the source asset based on its type.
+When the asset processing rules are customized, the options are stored in a `.assetinfo` sidecar file in the same directory as the source asset. If **Asset Processor** finds a `.assetinfo` file, the associated source asset is processed according to the options in the `.assetinfo` file. Otherwise, Asset Processor uses default rules to process the source asset based on its type.
 
-If you have many source assets to process, you might find using the Texture Settings and Scene Settings tools time consuming. The `.assetinfo` sidecar file is in JSON format and can be generated and modified with Python. It is possible, for example, to script the export process from a DCC application to automatically generate an `.assetinfo` file, or run a batch Python script over a source asset repository to add or modify options in the `.assetinfo` files. Many assets in O3DE are JSON formatted: `.material`, `.prefab`, and `.physicsmaterial` files, for example, are all in JSON format and can be automatically generated and modified with Python.
+If you have many source assets to process, you might find using the Texture Settings and Scene Settings tools time consuming. The `.assetinfo` sidecar file is in JSON format and can be generated and modified with Python. It is possible, for example, to script the export process from a DCC application to automatically generate a `.assetinfo` file, or run a batch Python script over a source asset repository to add or modify options in the `.assetinfo` files. Many assets in O3DE are JSON formatted: `.material`, `.prefab`, and `.physicsmaterial` files, for example, are all in JSON format and can be automatically generated and modified with Python.
 
 Python can also be used to customize asset processing. Python scripts can be run during asset processing to modify how product assets are produced. **Python Asset Builder** provides a way to create custom asset processing jobs. For more information, refer to [Process custom assets with Python Asset Builder](./builder).
 

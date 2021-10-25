@@ -1,7 +1,7 @@
 ---
 linkTitle: Asset Cache 
 title: Asset Cache
-description: In Open 3D Engine (O3DE), the Asset Cache stores the runtime optimized product assets for your project, as well as source asset process job information.
+description: In Open 3D Engine (O3DE), the Asset Cache stores the runtime optimized product assets for your project, as well as process job and dependency information.
 weight: 600
 toc: true
 ---
