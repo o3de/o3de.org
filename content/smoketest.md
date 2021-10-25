@@ -337,6 +337,14 @@ Indicates a section needs work, followed by a description of the task and a link
 Indicates a section needs work, followed by a description of the task and a prompt for someone to create a GitHub issue for this task.
 {{< /todo >}}   
 
+{{< known-issue >}}
+Indicates a known issue with the process described in the docs. 
+{{< /known-issue >}}
+
+{{< known-issue link="https://github.com/o3de/o3de/pull/4856">}}
+Indicates a known issue with the process described in the docs and provides a link to an issue, PR, or discussion that provides information about this issue.
+{{< /known-issue >}}
+
 ## Includes
 
 To add shortcodes to includes.

@@ -47,7 +47,7 @@ To create a package for consumption by O3DE, you need to provide the following:
 * A manifest describing the package (`PackageInfo.json`).
 * A `LICENSE` file contained the software license for the package.
 * Checksums for each file in the package (`SHA256SUMS`).
-* A CMake file run when then package is used in a another CMake file (`Find<Package>.cmake`).
+* A CMake file run when then package is used in another CMake file (`Find<Package>.cmake`).
 
 Packages must be distributed as tarfiles compressed with XZ or LZMA (`.tar.xz`).
 
