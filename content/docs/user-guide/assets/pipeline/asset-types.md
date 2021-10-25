@@ -10,14 +10,14 @@ The table below describes some of the most common source asset types supported b
 
 | Asset file | Description  |
 | - | - |
-| `.bmp`, `.gif`, `.jpg`, `.jpeg`, `.png`, `.tga`, `.tif`, `.tiff` | Image file formats most often used as textures for materials. |
-| `.dds` | A specialized compressed image format most often used for normal maps and texture atlases in real-time applications. |
-| `.exr` | High dynamic range images used for Image Based Lighting (IBL) and skyboxes. |
-| `.fbx` | A 3D scene file format that stores complex meshes with texture and color information, material assignments, skin weights, skeletons, animation, levels of detail, and physics colliders. |
-| `.inputbindings` | Binds input from keyboards, gamepads, touchscreens, and other devices to runtime events. |
-| `.prefab` | A reusable asset that contains entities or other prefabs. |
-| `.stl` | A simple mesh format used in computer aided design and 3D printing. |
-| `.material` | Contains properties and values that define the look of a surface for rendering. |
-| `.physicsmaterial` | Contains properties and values that define the physical properties of a surface for simulation. |
-| `.scriptcanvas` | A Script Canvas graph created with Script Canvas Editor&mdash;O3DE's visual scripting tool. |
-| `.shader` | A program written in AZSL (O3DE's shader language) that calculates the shading of a surface. |
+| `.bmp`, `.gif`, `.jpg`, `.jpeg`, `.png`, `.tga`, `.tif`, `.tiff` | image file formats most often used as textures for materials |
+| `.dds` | a specialized compressed image format most often used for normal maps and texture atlases in real-time applications |
+| `.exr` | high dynamic range images used for Image Based Lighting (IBL) and skyboxes |
+| `.fbx` | a scene file format that stores complex meshes with texture and color information, material assignments, skin weights, skeletons, animation, levels of detail, and physics colliders |
+| `.inputbindings` | binds input from keyboards, gamepads, touchscreens, and other devices to runtime events |
+| `.prefab` | a reusable, spawnable asset that contains entities or other prefabs |
+| `.stl` | a simple mesh format used in computer aided design (CAD) and 3D printing |
+| `.material` | contains properties and values that define the look of a surface for rendering |
+| `.physicsmaterial` | contains properties and values that define the physical properties of a surface for simulation |
+| `.scriptcanvas` | a Script Canvas graph created with Script Canvas Editor&mdash;O3DE's visual scripting tool |
+| `.shader` | a program written in AZSL (O3DE's shader language) that calculates the shading of a surface |
