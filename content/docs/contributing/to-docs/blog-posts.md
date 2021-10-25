@@ -6,7 +6,7 @@ toc: true
 weight: 600
 ---
 
-Blog posts are an important and semi-formal way to deliver announcements, insights, learnings, and professional opinions for the O3DE org and the greater public. Part of growing as a community is establishing a strong blog presence, and we'd love for you to contribute! Here's how.
+Blog posts are an important and semi-formal way to deliver announcements, insights, learnings, and professional opinions for the **Open 3D Engine (O3DE)** organization and the greater public. Part of growing as a community is establishing a strong blog presence, and we'd love for you to contribute! Here's how.
 
 ## Before you start
 
@@ -14,7 +14,7 @@ Blog posts are "ephemeral"&mdash;specifically, they represent a moment in time a
 
 In contrast, technical documentation is "durable" (although much of it requires active update and maintenance). When you have a content idea, ask yourself: Is this ephemeral or opinionated content? If so, it's a blog post. If it's durable and focuses on understanding and using the product, it may be a better fit in the technical docs. If you're unsure, ask **sig-docs-community** on Discord or the sig mailing list.
 
-To draft and submit a blog post, you will need:
+To draft and submit a blog post, you need:
 
 * A GitHub account known to O3DE and a basic understanding of simple Git workflows
 * A working knowledge of Markdown syntax
@@ -29,9 +29,9 @@ It's just like the [docs contribution workflow](get-started.md).
 
 2. Clone your fork to your local machine. Set `upstream` to o3de.org and `origin` to your fork.
 
-3. Create a branch (preferably one specific to JUST your blog post) for submission.
+3. Create a branch for submission. Preferably a branch that is specific to only your blog post.
 
-4. Open your editor of choice and create a draft post using Markdown under thr `/content/blog/posts` folder. Give it a clear, unique filename in all lower-case, with no spaces. (Please use a hyphen `-` as a replacement for spaces. Avoid all other non-alphanumeric characters.)
+4. Open your editor of choice and create a draft post using Markdown under thr `/content/blog/posts` folder. Give it a clear, unique filename in all lowercase, with no spaces. (Use a hyphen `-` as a replacement for spaces. Please do not use any other non-alphanumeric characters.)
 
 5. Make sure that your blog post has the following metadata at the top:
 
@@ -66,7 +66,7 @@ It's just like the [docs contribution workflow](get-started.md).
 
 8. Go to your pull request at https://github.com/o3de/o3de.org/pulls and ensure that all checks have passed. If they haven't, fix up your pull request and resubmit it.
 
-9. Go into the O3DE Discord server and share your pull request for review. (Alternatively, mail the sig-docs-community mailing list with a link.) Someone will review it and provide feedback or an okay. A maintainer will merge it when at least one reviewer approves it.
+9. Go into the O3DE Discord server and share your pull request for review. (Alternatively, mail the sig-docs-community mailing list with a link.) Someone will review it and provide feedback or an okay. A maintainer will merge it when at least one reviewer approves it. We aim to get these posted quick, but since we rely on the community for feedback and review, you may need to drive reviews in the Discord server.
 
 {{< note >}}
 The O3DE Community reserves the right to not publish any blog post that does not meet our standards. We also reserve the right to remove any currently published blog post that might conflict with the agreed-upon O3DE strategy or delivery.
@@ -80,27 +80,27 @@ Here's some basic Do's and Don'ts to help you scope your effort and avoid an obv
 
 **Do:**
 
-* Discuss O3DE! (Duh.) Go deep! Highly technical blog posts, in particular, establish community credibility and provide a resource for people looking for deeper knowledge beyond the tech docs.
+* Discuss O3DE! Go deep! Highly technical blog posts, in particular, establish community credibility and provide a resource for people looking for deeper knowledge beyond the tech docs.
 
 * Discuss algorithms, techniques, technologies, and tools that apply directly to O3DE work. Again, not only is your knowledge and experience useful to capture as a published topic, but it helps the larger industry assess the caliber of the people building O3DE.
 
 * O3DE strategy, **if** you are actively participating in a SIG around feature or product strategy, **and** have the approval of a SIG.
 
-* Interviews with, or profiles of, important and established community members. People put a human face on a technical product, and the world reliably likes to hear humans say they have to say. In this case, it should be professional observations, knowledge, and commentary&mdash;and shuld be specifically related to O3DE. Personal opinions, as ever, should be largely technical.
+* Interviews with, or profiles of, important and established community members. People put a human face on a technical product, and the world reliably likes to hear humans say what they have to say. In this case, it should be professional observations, knowledge, and commentary&mdash;and shuld be specifically related to O3DE. Personal opinions, as ever, should be largely technical.
 
 * Write with strong grammar and an eye for easy readability. Rambling monologues may get a gentle request for editorial review and a number of suggestions to "tighten it up". The reader's time is precious, so compressing your thoughts into short, information-dense sentences with regular paragraph breaks is just respectful.
 
 * Include images and diagrams wherever appropriate.
 
-* Consider your audience, which is diverse across many sociocultural and industry axes. Choose your words with respect and care, and be prepared to take feedback sincerely and make changes. No-one knows everything about the folks in the community and the industry, so don't let some initially careless wording caught in review bring you down; just make the changes, internalize the feedback, and keep delivering great content!
+* Consider your audience, which is diverse across many sociocultural and industry axes. Choose your words with respect and care, and be prepared to take feedback sincerely and make changes. No one knows everything about the folks in the community and the industry, so don't let some initially careless wording caught in review bring you down. Make the changes (as appropriate) and keep delivering great content!
 
 **Don't:**
 
-* Get personal. We have no tolerance for using the O3DE blog to call out community individuals&mdash;or any individuals, really&mdash;in any negative way, no matter how concerned you are.
+* Get personal. Do not use the O3DE blog to call out any individuals in a negative way.
 
 * Get political. Politics pervade every part of life, and we all have different backgrounds, ideologies, and reactions to the way in which culture and society shapes itself. The O3DE blog isn't the place for it, unless you are running a community-approved political initiative and have the blessings of the Linux Foundation.
 
-* Attack or criticize other products, platforms, or companies directly. Showing perf data between O3DE and a similar product/feature pairing is one thing; slagging on a similar product or another company is another. The latter will not be tolerated, regardless of how strongly you feel on the subject.
+* Attack or criticize other products, platforms, or companies directly. Showing perf data between O3DE and a similar product/feature pairing is one thing; however, slagging on a similar product or another company is another. The latter will not be tolerated, regardless of how strongly you feel on the subject.
 
-* Get too egotistical or too hyped. Choose your modifiers and adverbs with care to not oversell (or undersell) anything. Also, while a blog series can really help your resume (if done thoughtfully), the O3DE blog is ultimately about, well, O3DE. Not you.
+* Exaggerate or overstate your points. Choose your modifiers and adverbs with care to not oversell (or undersell) anything. Favor humble and insightful phrasing and messages over performative or provocative ones. For example, "We've seen a recent increase in users looking for a Physics solution and we're working on a solution" is a little gentler than "The world demands a Physics solution from O3DE and we're here to deliver!" Not sure how to frame your message? Talk to the community in Discord!
 
