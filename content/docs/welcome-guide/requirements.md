@@ -156,6 +156,15 @@ O3DE requires [Clang](https://clang.llvm.org/get_started.html) to compile all of
 sudo apt-get install clang-12 
 ```
 
+After clang-12 is installed, it needs to be added to `/etc/environment` as two new environment variables.
+
+```
+CC="/usr/bin/clang-12"
+CXX="/usr/bin/clang++-12"
+```
+
+
+
 ### Vulkan supported video drivers
 
 In addition to the minimum hardware requirements for video cards for O3DE, Linux requires that the latest drivers for the video card are installed and enabled. Refer to the video card manufacturer's support page for instructions on how to do this.

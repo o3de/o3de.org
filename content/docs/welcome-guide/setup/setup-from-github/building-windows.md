@@ -44,7 +44,7 @@ To prepare to build the engine and projects, choose one of the following build t
 1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B build/windows_vs2019 -S . -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
     ```
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
