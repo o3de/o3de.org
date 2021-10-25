@@ -6,10 +6,10 @@ toc: true
 weight: 700
 ---
 
-This topic describes how to package your dedicated server builds, which is required to install and run them on Amazon GameLift. 
+This topic describes how to package your dedicated server builds for Windows, which is required to install and run them on Amazon GameLift. 
 
 Creating a dedicated server package includes the following steps:
-1.  Prepare an installation folder, and copy the loose assets, runtime binaries, levels, settings file(s) and redistributables.
+1.  Prepare an installation folder, and copy the assets, runtime binaries, levels, settings file(s) and redistributables.
 2.  Create an install script to handle tasks that are required to fully install the game build onto GameLift hosting servers.
 3.  Test the dedicated server package on your local machine.
 
@@ -32,12 +32,15 @@ You must create a separate installation folder to copy over the required assets,
 2. Copy the following files to the `/bin` folder:
 
     -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/profile`.
-    -   The `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/`.
-    -   The `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019`.
+    -   (Dedicated servers built with the Profile configuration) The `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/`.
   
-3. Copy all of the files in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
+3. (Dedicated servers built with the Profile configuration) Copy all of the files in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
 
-4. Create `install.bat` in the `<package base folder>/bin` folder and add the following content to the file:
+   (Dedicated servers built with the Release configuration) Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
+
+4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
+
+5. Create `install.bat` in the package base folder and add the following content to the file:
 
     ```bash
     VC_redist.x64.exe /q
@@ -50,7 +53,7 @@ To test the local server package:
 1.  Start GameLift Local by following the Amazon GameLift documentation, [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html). 
 2.  Run the CLI command to start your server:
     ```
-    <package base folder>\bin\<server-launcher-executable> --engine-path=<package base folder> --project-path=<package base tallation-folder> --project-cache-path=<package base folder>\assets -bg_ConnectToAssetProcessor=0
+    <package base folder>\bin\<server-launcher-executable> --engine-path=<package base folder> --project-path=<package base folder> --project-cache-path=<package base folder>\assets -bg_ConnectToAssetProcessor=0
     ```
 
 3.  Start a client and test the server behavior locally by following the Amazon GameLift [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html) documentation. The server log can be found at `<package base folder>/<unique server process id>/user/log/Server.log`.
@@ -65,4 +68,4 @@ Make sure to replace `<package base folder>` with the path to the installation f
 
 Previous topic: [AWS GameLift Gem Local Testing](local-testing/)
 
-Next topic: [AWS GameLift Gem Resource Management](resource-management/)
+Next topic: [AWS GameLift Gem Build Packaging for Linux](build-packaging-for-linux/)
