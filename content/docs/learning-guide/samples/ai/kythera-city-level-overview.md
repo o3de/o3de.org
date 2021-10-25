@@ -93,7 +93,7 @@ Like the `Navmesh Bounds` component, the `Octree` component comes with a `Polygo
 
 ![Octree component configuration](/images/learning-guide/tutorials/ai/kythera-city-octree-dialog.png)
 
-The `3DOctree` entity's `Octree component` is an configured for accuracy at the cost of some performance, using a small cell size to represent the complex geometry of the level.
+The `3DOctree` entity's `Octree component` is configured for accuracy at the cost of some performance, using a small cell size to represent the complex geometry of the level.
 
 ![Octree debug draw](/images/learning-guide/tutorials/ai/kythera-city-octree.png)
 

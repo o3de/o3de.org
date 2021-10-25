@@ -18,7 +18,7 @@ The following instructions assume that you have:
 2.  Android Studio and Android SDK are installed
 3.  JDK development kit is installed and on the system path
 4.  Gradle is installed and on the system path
-5.  CMake 3.21 or newer is installed and on the system path
+5.  CMake {{< versions/cmake >}} or newer is installed and on the system path
 6.  Ninja build system is installed and on the system path
 7.  Git is installed
 8.  [O3DE](https://github.com/o3de/o3de.git) has been cloned locally on the system (to D:\\github\\o3de)
