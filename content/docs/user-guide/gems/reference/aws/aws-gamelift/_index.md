@@ -42,7 +42,8 @@ For a better understanding of the AWS GameLift Gem topics in this guide, we reco
 | <ul><li> [AWS GameLift Gem Scripting](scripting/) </li></ul>| Learn how to prepare your game using Script Canvas nodes that the AWS GameLift Gem provides. |
 | <ul><li> [AWS GameLift Gem Advanced Topics](advanced-topics/) | Learn some advanced ways to prepare your game with the AWS GameLift Gem. |
 | [AWS GameLift Gem Local Testing](local-testing/) | Verify AWS GameLift Gem feature integrations locally using GameLift Local, a command line tool that starts a self-contained version of the managed GameLift service. |
-| [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/) | Learn how to package your dedicated server builds so that you can install and run them on GameLift. |
+| [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/) | Learn how to package your Windows dedicated server builds so that you can install and run them on GameLift. |
+| [AWS GameLift Gem Build Packaging for Linux](build-packaging-for-linux/) | Learn how to package your Linux dedicated server builds so that you can install and run them on GameLift. |
 | [AWS GameLift Gem Resource Management](resource-management/) | Learn about the sample AWS CDK application that you can use to model and deploy GameLift resources. |
 | AWS GameLift Gem Multiplayer Sample | Coming soon! |
 
