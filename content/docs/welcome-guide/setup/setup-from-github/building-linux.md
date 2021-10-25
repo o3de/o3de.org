@@ -25,26 +25,26 @@ To prepare to build the engine and projects, choose one of the following build t
 {{< tabs name="Engine build instructions" >}}
 {{% tab name="Source engine" %}}
 
-1. Create a package directory in a writeable location. The following examples use the directory `C:\o3de-packages`.
+1. Create a package directory in a writeable location. The following examples use the directory `$HOME/o3de-packages`.
 
     ```cmd
-    mkdir C:\o3de-packages
+    mkdir $HOME/o3de-packages
     ```
 
     The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
 
 1. Get the Python runtime, which isn't included in the GitHub repo. The `o3de` script (part of the **O3DE CLI**) requires this runtime. You'll use this script to run common command line functions. This script also requires **CMake** to be installed and accessible on your device's path. If you haven't installed CMake, or you get an error that CMake cannot be found when running the script, refer to the [O3DE System Requirements](/docs/welcome-guide/requirements) page for installation instructions.
 
-    Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
+    Open a terminal window and change to the directory where you set up O3DE, then run the `get_python` script.
 
     ```cmd
-    python\get_python.bat
+    python/get_python.sh
     ```
 
-1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
+1. Use CMake to create the Linux build project for the engine. Supply the build directory, the Ninja Multi-Config generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages
+    cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-packages
     ```
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
@@ -56,20 +56,20 @@ To prepare to build the engine and projects, choose one of the following build t
     The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target Editor --config profile -- /m
+    cmake --build build/linux --target Editor --config profile -j <number of parallel build tasks>
     ```
 
-    The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
 
-    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de\build\windows_vs2019\bin\profile`.
+    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `$HOME/o3de/build/linux/bin/profile`.
 
 {{% /tab %}}
 {{% tab name="Pre-built SDK engine" %}}
 
-1. Create a package directory in a writeable location. The following examples use the directory `C:\o3de-packages`.
+1. Create a package directory in a writeable location. The following examples use the directory `$HOME/o3de-packages`.
 
     ```cmd
-    mkdir C:\o3de-packages
+    mkdir $HOME/o3de-packages
     ```
 
     The O3DE package downloader uses this directory to retrieve external libraries needed for the engine.
@@ -79,28 +79,28 @@ To prepare to build the engine and projects, choose one of the following build t
     Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
 
     ```cmd
-    python\get_python.bat
+    python/get_python.sh
     ```
 
-1. Use CMake to create the Visual Studio project for the engine. Supply the build directory, the Visual Studio generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
+1. Use CMake to create the Linux build project for the engine. Supply the build directory, the Ninja Multi-Config generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
     ```cmd
-    cmake -B build/windows_vs2019 -G "Visual Studio 16" -DLY_3RDPARTY_PATH=C:\o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=C:\o3de-install
+    cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=$HOME/o3de-install
     ```
 
     The preceding command specifies several noteworthy custom definitions (`-D`). All are optional but recommended in this example.
 
     * `LY_3RDPARTY_PATH` : The path to the downloadable package directory, also known as the "third-party path". Do not use trailing slashes when specifying the path to the packages directory.
     * `LY_VERSION_ENGINE_NAME` : The name you want to give the engine. Giving the install layout a different engine name ("o3de-install") than the source engine ("o3de") enables useful side-by-side options.
-    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Windows/profile/Default`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Windows/profile/Default`.
+    * `CMAKE_INSTALL_PREFIX`: The path to the installed build of the engine source. The directory you specify here is your engine install directory. You will find the Project Manager, Editor, and other tools in the subdirectory `bin/Linux/profile/Default`. If you don't specify this option, the engine SDK binaries will be built to `<ENGINE_SOURCE>/install/bin/Linux/profile/Default`.
 
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
     ```cmd
-    cmake --build build/windows_vs2019 --target INSTALL --config profile -- /m
+    cmake --build build/linux --target INSTALL --config profile -j <number of parallel build tasks>
     ```
 
-    The `/m` is a recommended build tool optimization. It tells the Microsoft compiler (MSVC) to use multiple threads during compilation to speed up build times.
+    The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile\Default`.
 
@@ -123,16 +123,16 @@ Choose the tab that corresponds to the engine build type you chose in the preced
 1. Open a command window if you don't already have one open. Change your current directory to the source engine directory.
 
     ```cmd
-    cd C:\o3de
+    cd $HOME/o3de
     ```
 
 1. Use the `o3de` script to register the engine.
 
     ```cmd
-    scripts\o3de.bat register --this-engine
+    scripts/o3de.sh register --this-engine
     ```
 
-    The O3DE manifest file is `<USER_DIRECTORY>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
+    The O3DE manifest file is `$HOME/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
 
 {{% /tab %}}
 {{% tab name="Pre-built SDK engine" %}}
@@ -140,22 +140,22 @@ Choose the tab that corresponds to the engine build type you chose in the preced
 1. Open a command window if you don't already have one open. Change your current directory to the pre-built engine directory.
 
     ```cmd
-    cd C:\o3de-install
+    cd $HOME/o3de-install
     ```
 
 1. Get the Python runtime for the pre-built engine.
 
     ```cmd
-    python\get_python.bat
+    python/get_python.sh
     ```
 
 1. Use the `o3de` script to register the engine.
 
     ```cmd
-    scripts\o3de.bat register --this-engine
+    scripts/o3de.sh register --this-engine
     ```
 
-    The O3DE manifest file is `<USER_DIRECTORY>/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
+    The O3DE manifest file is `$HOME/.o3de/o3de_manifest.json`. The paths to all the registered engines, projects, and more are recorded in this file.
 
 {{% /tab %}}
 {{< /tabs >}}
