@@ -9,17 +9,15 @@ The *engine core* encompasses the source code, systems, and modules that underli
 
 ## Prerequisites
 
-* C++
-* Python
+* C++17
+* Python 3
 
-O3DE's source code is programmed in C++ and supports several tools in Python. We recommend that you have fundamental knowledge of either C++ or Python programming.
+The O3DE source code is written in C++, with several supporting tools written in Python. We recommend that you have fundamental knowledge of either C++ or Python programming to extend O3DE.
 
 
 ## Start here
 
-Start by learning about the shared systems in the engine core:
-
-- [Overview of the O3DE SDK](/docs/welcome-guide/key-concepts/#overview-of-the-o3de-sdk)
+Start by learning about the shared systems in the engine core by reading [Overview of the O3DE SDK](/docs/welcome-guide/key-concepts/#overview-of-the-o3de-sdk). 
 In this topic, you'll learn how to navigate the O3DE directory structure and become familiar with the core modules in the O3DE SDK. The core modules are the entry points to all of the functionality in O3DE.
 
 
@@ -27,7 +25,8 @@ In this topic, you'll learn how to navigate the O3DE directory structure and bec
 
 Depending on the part of the engine that you want to develop, there are different learning tracks that you can follow. While each learning path may be unique to your case, the following topics can help get you started on some common development tasks:
 
-**For developing a component**
+
+### Develop a component
   
   - [Component Entity System (CES)](/docs/welcome-guide/key-concepts/#the-component-entity-system)
   
@@ -35,13 +34,14 @@ Depending on the part of the engine that you want to develop, there are differen
   
   - [Programmer's Guide to Component Development](/docs/user-guide/components/development/)
 
-**For developing a Gem**
+
+### Develop a Gem
   
   - [Gem Module system](/docs/user-guide/gems/development/overview/)
 
   - [Create an O3DE Gem](/docs/user-guide/gems/development/creating/)
 
 
-**For developing a graphics feature with Atom Renderer**
+### Develop Atom Renderer features
   
   - [Atom Renderer Developer Guide](/docs/atom-guide/dev-guide/)
