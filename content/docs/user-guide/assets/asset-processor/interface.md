@@ -36,7 +36,7 @@ The buttons on the left of the Asset Processor Interface (labeled **E** in the A
 
 ## Jobs
 
-In the Jobs tab, the top **Asset Status** pane displays the complete list of asset process jobs, the status of the jobs, and job details such as the deployment platform. The bottom **Event Log Details** pane displays the event log details for the asset selected in the Asset Status pane.
+In the Jobs tab, the **Asset Status** pane displays the complete list of asset process jobs, the status of the jobs, and job details such as the deployment platform. The **Event Log Details** pane displays the event log details for the asset selected in the Asset Status pane.
 
 Jobs for critical assets are processed before non-critical assets. Critical assets are required so that the engine can function and are marked as critical by their **Asset Builders**.
 
@@ -59,7 +59,7 @@ Jobs in the Asset Status list display the statuses below:
 
 It's possible for a job to emit a combination of warnings and errors.
 
-Completed with warnings produces a valid product asset, but might have some data substituted. Suppose a job is processing an `.fbx` file that produces several mesh product assets, and that an `.assetinfo` sidecar file specifies to process the meshes with custom normals. If the meshes in the `.fbx` file do not have custom normals, the Asset Builder generates normals instead. Valid product assets are produced, but several warnings are emitted because custom normals could not be found for the mesh assets.
+Completed with warnings produces a valid product asset, but might have some data substituted. Suppose a job is processing a `.fbx` file that produces several mesh product assets, and that a `.assetinfo` sidecar file specifies to process the meshes with custom normals. If the meshes in the `.fbx` file do not have custom normals, the Asset Builder generates normals instead. Valid product assets are produced, but several warnings are emitted because custom normals could not be found for the mesh assets.
 
 Completed with errors produces a valid product asset, but has incomplete data. Errors happen when data required for the product asset is missing or cannot be produced. Using the example above, suppose the `.assetinfo` specifies tangents should be generated for the mesh product assets, but the Asset Builder fails to produce the tangents. The end result is a valid product asset that does not contain all the requested data.
 
@@ -75,23 +75,19 @@ The circumstances that cause an Asset Builder to complete a job with warnings or
 
 The Asset Status list can be filtered by entering keywords and regular expressions in the filter box. The regular expressions (regex) are standard `std::regex` in extended format. The `std::regex` rules apply.
 
-The following is an example to search for all files ending with .png:
+The example below searches for all files ending with .png. The asterisk (`*`) indicates any character 0 or more times.
 
 ```
 *.png
 ```
 
-The asterisk (`*`) indicates any character 0 or more times.
-
-The following is an example regex to search for any files under an `Actors` subdirectory:
+The example below uses regex to search for any files under an `Actors` subdirectory. The dot plus (`.+`) indicates any character 1 or more times.
 
 ```
 /Actors/.+
 ```
 
-The dot plus (`.+`) indicates any character 1 or more times.
-
-You can view all assets with a particular status with either of the following methods:
+You can view all assets with a particular status with either of the methods below.
 
 * Type the status keyword (for example, `failed`) in the filter box.
 
@@ -105,11 +101,11 @@ You can perform actions on each row in the Asset Status table. **Right-click** o
 
 | Menu Item | Description |
 | - | - |
-| **Show in Asset Browser** | Highlights the asset in O3DE Editor’s Asset Browser. O3DE Editor must be open. |
-| **Open in Explorer** | Opens the asset in the system file browser. |
-| **Copy**  | Copies the asset name. |
-| **Open log file** | Opens the most recent log file for the asset, if one has been made. File copies and other simple asset processing steps don’t generate logs. |
-| **Open folder with log file** | Open the directory with the log file for the asset. |
+| **Show in Asset Browser** | highlights the asset in O3DE Editor’s Asset Browser, if O3DE Editor is open |
+| **Open in Explorer** | opens the asset in the system file browser |
+| **Copy**  | copies the asset name |
+| **Open log file** | opens the most recent log file for the asset, if one exists |
+| **Open folder with log file** | opens the directory containing the log file for the asset |
 
 ### Event Log Details
 
@@ -135,19 +131,19 @@ The Event Log Details table also features a context menu to copy details to the 
 
 | Menu Item | Description |
 | - | - |
-| **Copy Line** | Copy the selected line of the log |
-| **Copy Line With Details** | Copy the selected line and any related details that appear in the Event log line details table |
-| **Copy All** | Copy all log lines and any hidden details for each item |
+| **Copy Line** | copy the selected line of the log |
+| **Copy Line With Details** | copy the selected line and any related details that appear in the **Event Log Line Details** table |
+| **Copy All** | copy all log lines and any hidden details for each item |
 
-The Event Log Line Details table displays when the Context Details option in the lower right is active. This table displays any additional information about the selected line in the Event Log Details table. The details and additional information are generally useful only when debugging issues with a particular asset.
+The Context Details option in the lower right enables the Event Log Line Details table. It displays any additional information about the selected line in the Event Log Details table. The details and additional information are generally useful only when debugging issues with a particular asset.
 
 The Event Log Line Details table also features a context menu to copy details to the clipboard. **Right-click** on the row to expose a context menu with the following actions:
 
 | Menu Item | Description |
 | - | - |
-| **Copy Selected Key** | Copy the text in the **Key** column of the selected row |
-| **Copy Selected Value** | Copy the text in the **Value** column of the selected row |
-| **Copy All Values** | Copy all keys and values in the table |
+| **Copy Selected Key** | copy the text in the **Key** column of the selected row |
+| **Copy Selected Value** | copy the text in the **Value** column of the selected row |
+| **Copy All Values** | copy all keys and values in the table |
 
 ## Assets
 
@@ -171,10 +167,14 @@ When an asset is selected in the Source Assets list, information about the asset
 
 | Pane | Description |
 | - | - |
-| **Asset Information** | Detailed information about the selected asset including the name of the asset, the scan directory path, and the Universally Unique Identifier (UUID) associated with the asset. |
-| **Products** | The product assets that are produced from the source asset. Choose the {{< icon "open-in-internal-app.svg" >}} **Open** icon next to a product name to open that asset in the Product Assets tab. |
-| **Outgoing Source Dependencies** | The list of source assets that require an output from this source asset. |
-| **Incoming Source Dependencies** | The list of source assets that must have completed their process jobs before this source asset can be processed. |
+| **Asset Information** | detailed information about the selected asset including the name of the asset, the scan directory path, and the Universally Unique Identifier (UUID) associated with the asset |
+| **Products** | the product assets that are produced from the source asset |
+| **Outgoing Source Dependencies** | the list of source assets that require an output from this source asset |
+| **Incoming Source Dependencies** | the list of source assets that must have completed their process jobs before this source asset can be processed |
+
+{{< note >}}
+Choose the {{< icon "open-in-internal-app.svg" >}} **Open** icon next to a product asset name to open that asset in the Product Assets tab.
+{{< /note >}}
 
 ### Product Assets
 
@@ -184,12 +184,15 @@ When an asset is selected in the Product Assets list, information about the asse
 
 | Pane | Description |
 | - | - |
-| **Asset Information** | The information for the product asset including the asset UUID, the last time the product was generated, the type of job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product. |
-| **Outgoing Product Dependencies** | The list of product assets which depend on this product asset. |
-| **Outgoing Unmet Path Product Dependencies** | The list of product assets which are hardcoded paths to be loaded by the O3DE runtime. Because these products aren’t necessarily generated by Asset Processor, they’re placed into a separate category of dependencies. |
-| **Incoming Product Dependencies** | The list of product assets which this product asset depends on. |
-| **Missing Product Dependencies** | Run this scanner to detect missing product dependencies. |
+| **Asset Information** | information for the product asset including the asset UUID, the last time the product was generated, the type of job that generated the asset, which platform the asset was produced for, and which source asset is the primary input for the product |
+| **Outgoing Product Dependencies** | the list of product assets which depend on this product asset |
+| **Outgoing Unmet Path Product Dependencies**<sup>1</sup> | the list of product assets which are hardcoded paths to be loaded by the O3DE runtime |
+| **Incoming Product Dependencies** | the list of product assets which this product asset depends on |
+| **Missing Product Dependencies** | detect missing product dependencies |
 
+{{< note >}}
+<sup>1</sup>Because these products aren’t necessarily generated by Asset Processor, they’re placed into a separate category of dependencies.
+{{< /note >}}
 
 ## Logs
 
@@ -213,7 +216,7 @@ In the **Active Connections** table’s **Enabled** column, automatic connection
 
 ### Editing connections
 
-To edit a connection do the following:
+You can edit a connection with the steps below.
 
 1. **Left-click** the desired connection in the connection list to select it.
 1. Choose **Edit Connection** in the upper-right to open the **Edit Connection** dialog.

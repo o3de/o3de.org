@@ -8,23 +8,15 @@ toc: true
 
 **Asset Processor** starts automatically with **Open 3D Engine (O3DE) Editor**, and runs as a background process. Asset Processor provides many asset related functions including the following:
 
-* Detect new or updated assets
-
-* Send **Create Jobs** requests to appropriate [**Asset Builders**](../pipeline/asset-builders)
-
-* Schedule process jobs provided by Asset Builders
-
-* Manage the process job queue
-
-* Provide status, logs, and messages about asset process jobs
-
-* Place generated product assets and related data in the [**Asset Cache**](../pipeline/asset-cache)
-
-* Send notifications when product assets have been updated so they can be hot reloaded by **O3DE Editor**, tools, and project runtimes
-
-* Provide tools to retrieve information about source assets and product assets
-
-Asset Processor also generates and stores source dependencies, job dependencies, and product dependencies. Assets may have zero or more dependencies and those dependencies can be required or optional. For more information on dependencies, refer to [Asset Dependencies and Identifiers](../pipeline/asset-dependencies-and-identifiers).
+* detect new or updated assets
+* send **Create Jobs** requests to appropriate **Asset Builders**
+* schedule process jobs provided by Asset Builders
+* manage the process job queue
+* provide status, logs, and messages about asset process jobs
+* place generated product assets and related data in the **Asset Cache**
+* send notifications when product assets have been updated so they can be hot reloaded by **O3DE Editor**, tools, and project runtimes
+* provide tools to retrieve information about source assets and product assets
+* track source dependencies, job dependencies, and product dependencies
 
 With Asset Processor, a **Launcher** can be run on a target platform without deploying assets to that platform. Instead, the assets are accessed from the Asset Cache on a connected host platform. Asset Processor communicates through a USB connection with mobile target platforms using proxy requests.
 
@@ -43,8 +35,9 @@ Symbolic links are not supported when using Asset Processor. To ensure that Asse
 
 | Topic | Description |
 | - | - |
-| [Interface](interface) | An overview of Asset Processor's Interface, and information about process job statuses. |
+| [Interface](interface) | Learn to navigate Asset Processor's interface, and how to read the status of process jobs. |
 | [Asset Processor Batch](asset-processor-batch) | With Asset Processor batch, you can batch process the source assets for a project in an automated build system. |
-| [Configuration](configuration) | You can set many configuration options for Asset Processor in the `AssetProcessorPlatformConfig.setreg` configuration file. |
+| [Configuration](configuration) | Asset Processor can be configured by setting options in the `AssetProcessorPlatformConfig.setreg` configuration file. |
 | [Faster Scanning](faster-scannning) | Asset Processor's faster scanning mode uses source asset timestamps and quick source asset checks to determine if assets need to be processed. |
-| [Debugging](debugging) | Methods that can help you debug Asset Processor issues. |
+| [Debugging](debugging) | Learn several methods you can use to debug Asset Processor issues. |
+| [Move Assets](move-assets) | Learn how to move assets to new directory locations in O3DE while maintaining internal references. |
