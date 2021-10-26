@@ -95,6 +95,13 @@ For a client application, your game must implement the following use cases to ma
 - `JoinSession`
 - `LeaveSession`
 
+To support the optional FlexMatch feature including backfill, your client application need to implement the following use cases:
+- `StartMatchmaking`
+- `StopMatchmaking`
+- `StartPolling`
+- `StopPolling`
+- `AcceptMatch`
+
 The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scripting/). You can implement these use cases using either method.
 
 
@@ -103,6 +110,11 @@ The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scriptin
 To establish communication between your server and GameLift, you must notify GameLift that your server is ready, and then have your server respond to GameLift notifications.
 
 For more details on GameLift server notifications, refer to the [Server notifications](cpp-api/#server-notifications) section of the AWS GameLift Gem C++ API page.
+
+To support the optional manual backfill, your dedicated server need to implement the following use cases:
+- `StartMatchBackfill`
+- `StopMatchBackfill`
+
 
 ## 5. Set up AWS credentials
 

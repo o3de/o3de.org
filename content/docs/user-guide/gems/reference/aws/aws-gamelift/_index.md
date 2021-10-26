@@ -20,7 +20,8 @@ The **AWS GameLift** Gem provides the following features:
 **Preview features**  
 
 - Support for CreateSession (on fleet/on queue), SearchSessions, JoinSession, and LeaveSession through GameLift.
-- Support for Windows dedicated servers and Windows client launchers. 
+- Support for FlexMatch including backfill through GameLift.
+- Support for Windows/Linux dedicated servers and Windows client launchers.
 - Support for AWS CDK applications to manage GameLift resources.
 
 
@@ -28,6 +29,7 @@ The **AWS GameLift** Gem provides the following features:
 
 For a better understanding of the AWS GameLift Gem topics in this guide, we recommend reviewing the following: 
 - [What Is Amazon GameLift? (Amazon GameLift Developer Guide)](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-intro.html)
+- [FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-intro.html)
 - [Multiplayer Gem](/docs/user-guide/gems/reference/multiplayer/multiplayer/)
 - [Networking](/docs/user-guide/networking/)
 
