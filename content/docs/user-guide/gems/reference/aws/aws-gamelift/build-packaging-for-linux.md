@@ -1,17 +1,21 @@
 ---
 linkTitle: Build Packaging for Linux
 title: AWS GameLift Gem Build Packaging for Linux
-description: Learn how to package your dedicated server builds with the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn how to package your Linux dedicated server builds with the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 800
 ---
 
-This topic describes how to package your dedicated server builds for Linux, which is required to install and run them on Amazon GameLift. 
+This topic describes how to package your Linux dedicated server builds, which is required to install and run them on Amazon GameLift. 
 
 Creating a dedicated server package includes the following steps:
-1.  Prepare an installation folder, and copy the loose assets, runtime binaries, levels, settings file(s) and additional 3rd party libraries.
+1.  Prepare an installation folder, and copy the assets, runtime binaries, levels, settings file(s) and additional 3rd party libraries.
 2.  Create an install script to handle tasks that are required to fully install the game build onto GameLift hosting servers.
 3.  Test the dedicated server package on your local machine.
+
+{{< note >}}  
+Linux dedicated server build with the Release configuration is not supported currently. Please make sure to build your dedicated server with the Profile configuration.
+{{< /note >}}
 
 ## Prerequisites
 The instructions that follow assume the following:
@@ -34,7 +38,7 @@ You must create a separate installation folder to copy over the required assets,
     -   All the executables and `*.so` files from `o3de/build/linux/bin/profile`.
     -   The `Registry` folder from `o3de/build/linux/bin/profile/Registry`.
   
-3. Copy all of the files in your project's cache folder, `<project folder>/Cache/linux`, to the `<package base folder>/assets/linux` folder.
+3. Copy all of the files (loose assets) in your project's cache folder, `<project folder>/Cache/linux`, to the `<package base folder>/assets/linux` folder.
 
 4. Copy the following 3rd party libraries from `/usr/lib/x86_64-linux-gnu`/ to `<package base folder>/lib64/`:
 
@@ -98,7 +102,7 @@ To test the local server package:
 1.  Start GameLift Local by following the Amazon GameLift documentation, [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html). 
 2.  Run the CLI command to start your server:
     ```
-    <package base folder>\bin\<server-launcher-executable> --engine-path=<package base folder> --project-path=<package base tallation-folder> --project-cache-path=<package base folder>\assets -bg_ConnectToAssetProcessor=0 -rhi=null
+    <package base folder>/<server-launcher-executable> --engine-path=<package base folder> --project-path=<package base folder> --project-cache-path=<package base folder>/assets -bg_ConnectToAssetProcessor=0 -rhi=null
     ```
 
 3.  Start a client and test the server behavior locally by following the Amazon GameLift [Testing Your Integration](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-testing-local.html) documentation. The server log can be found at `<package base folder>/<unique server process id>/user/log/Server.log`.

@@ -1,12 +1,12 @@
 ---
 linkTitle: Build Packaging for Windows
 title: AWS GameLift Gem Build Packaging for Windows
-description: Learn how to package your dedicated server builds with the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn how to package your Windows dedicated server builds with the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 700
 ---
 
-This topic describes how to package your dedicated server builds for Windows, which is required to install and run them on Amazon GameLift. 
+This topic describes how to package your Windows dedicated server builds, which is required to install and run them on Amazon GameLift. 
 
 Creating a dedicated server package includes the following steps:
 1.  Prepare an installation folder, and copy the assets, runtime binaries, levels, settings file(s) and redistributables.
@@ -23,6 +23,8 @@ The instructions that follow assume the following:
 
 You must create a separate installation folder to copy over the required assets, profile runtime binaries, registry settings files, and redistributables. In this example, the installation folder is denoted as `<package base folder>`.
 
+### Profile Build
+
 1. Create the required subfolders in your installation folder. The launcher looks for fixed subfolder locations to find assets and registry files, so the installation folder must have the following structure:
 
    - `<package base folder>/bin`
@@ -32,11 +34,31 @@ You must create a separate installation folder to copy over the required assets,
 2. Copy the following files to the `/bin` folder:
 
     -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/profile`.
-    -   (Dedicated servers built with the Profile configuration) The `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/`.
+    -   The `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/`.
   
-3. (Dedicated servers built with the Profile configuration) Copy all of the files in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
+3. Copy all of the files (loose assets) in your project's cache folder, `<project folder>/Cache/pc`, to the `<package base folder>/assets/pc` folder.
 
-   (Dedicated servers built with the Release configuration) Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
+4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
+
+5. Create `install.bat` in the package base folder and add the following content to the file:
+
+    ```bash
+    VC_redist.x64.exe /q
+    ```
+
+### Release build
+
+1. Create the required subfolders in your installation folder. The launcher looks for fixed subfolder locations to find assets and registry files, so the installation folder must have the following structure:
+
+   - `<package base folder>/bin`
+   - `<package base folder>/assets`
+   - `<package base folder>/assets/pc`
+
+2. Copy the following files to the `/bin` folder:
+
+    -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/profile`.
+  
+3. Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
 
 4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
 
