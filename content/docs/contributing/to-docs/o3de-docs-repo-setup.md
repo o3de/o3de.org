@@ -176,11 +176,14 @@ Now you can test your setup by running a local Hugo server and viewing the O3DE 
     hugo server --port 44541 --bind=0.0.0.0
     ```
 
-    **NOTE**: If you are using a **macOS** platform for docs development, you must run Hugo Netlify with the `--watch=false` switch enabled. For example:
+    {{ note }}
+    If you use the **macOS** platform for docs development, you must run Hugo with the `--watch=false` switch enabled. For example:
 
-    ```macos
+    ```bash
     hugo server --port 44541 --bind=0.0.0.0 --watch=false
     ```
+
+    {{ /note }}
 
 ## Create a branch
 
