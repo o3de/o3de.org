@@ -54,7 +54,7 @@ You must create a separate installation folder to copy over the required assets,
     cp -a /usr/lib/x86_64-linux-gnu/<library name>* <package base folder>/lib64/.
     ```
 
-5. Create `install.sh` in the package base folder and add the following content to the file:
+5. Create a build install script called `install.sh` in the package base folder and add the following content to the file. For more information about the build install script, please check [Upload a custom server build to GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-cli-uploading.html)
 
     ```bash
     #!/bin/sh

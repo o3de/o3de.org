@@ -13,6 +13,10 @@ Creating a dedicated server package includes the following steps:
 2.  Create an install script to handle tasks that are required to fully install the game build onto GameLift hosting servers.
 3.  Test the dedicated server package on your local machine.
 
+{{< note >}}  
+Debug dedicated servers are not supported as they require the debug visual studio redistributables which cannot be resdistributed. See [Distributable Code for Visual Studio 2019](https://docs.microsoft.com/en-us/visualstudio/releases/2019/redistribution) for more details.
+{{< /note >}}
+
 ## Prerequisites
 The instructions that follow assume the following:
 - You have built your project with the AWS GameLift Gem enabled. For more information on building projects, refer to [Build the O3DE Project](/docs/welcome-guide/create/creating-projects-using-cli/#build-the-o3de-project). 
@@ -40,7 +44,7 @@ You must create a separate installation folder to copy over the required assets,
 
 4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
 
-5. Create `install.bat` in the package base folder and add the following content to the file:
+5. Create a build install script called `install.bat` in the package base folder and add the following content to the file. For more information about the build install script, please check [Upload a custom server build to GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-cli-uploading.html)
 
     ```bash
     VC_redist.x64.exe /q
@@ -62,7 +66,7 @@ You must create a separate installation folder to copy over the required assets,
 
 4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
 
-5. Create `install.bat` in the package base folder and add the following content to the file:
+5. Create a build install script called `install.bat` in the package base folder and add the following content to the file. For more information about the build install script, please check [Upload a custom server build to GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-build-cli-uploading.html)
 
     ```bash
     VC_redist.x64.exe /q
