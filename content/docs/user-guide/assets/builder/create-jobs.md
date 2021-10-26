@@ -14,11 +14,11 @@ Create Jobs generates asset processing jobs for **Asset Processor**. When Asset 
 
 | Field | Type | Description |
 | - | - | - |
-| `builderId` | `azlmbr.math.Uuid` | Identifies the Asset Builder |
-| `watchFolder` | String | Contains the subdirectory of the source asset |
-| `sourceFile` | String | The source asset path that is relative to the scan directory |
-| `sourceFileUUID` | `azlmbr.math.Uuid` | The source asset's UUID, which is used as part of its product asset ID |
-| `enabledPlatforms` | List[`azlmbr.asset.builder.PlatformInfo`] | Information about the host and target platforms |
+| `builderId` | `azlmbr.math.Uuid` | identifies the Asset Builder |
+| `watchFolder` | String | contains the subdirectory of the source asset |
+| `sourceFile` | String | the source asset path that is relative to the scan directory |
+| `sourceFileUUID` | `azlmbr.math.Uuid` | the source asset's UUID, which is used as part of its product asset ID |
+| `enabledPlatforms` | List[`azlmbr.asset.builder.PlatformInfo`] | information about the host and target platforms |
 
 ### PlatformInfo
 
@@ -26,8 +26,8 @@ Create Jobs generates asset processing jobs for **Asset Processor**. When Asset 
 
 | Field | Type | Description |
 | - | - | - |
-| `identifier` | String | The ID of the platform such as 'pc' or 'ios' |
-| `tags` | List[String] | The tags available for the platform |
+| `identifier` | String | the ID of the platform such as 'pc' or 'ios' |
+| `tags` | List[String] | the tags available for the platform |
 
 ## CreateJobsResponse
 
@@ -35,9 +35,9 @@ Create Jobs generates asset processing jobs for **Asset Processor**. When Asset 
 
 | Field | Type | Description |
 | - | - | - |
-| `result` | `azlmbr.asset.builder.CreateJobsResponse Return Code` | The result code from the `CreateJobsRequest` |
-| `sourceFileDependencyList` | List[`SourceFileDependency`] | Dependencies required to run the process job for the source asset |
-| `createJobOutputs` | List[`JobDescriptor`] | A list of `JobDescriptor` structures for each source asset, and each host and target platform |
+| `result` | `azlmbr.asset.builder.CreateJobsResponse Return Code` | the result code from the `CreateJobsRequest` |
+| `sourceFileDependencyList` | List[`SourceFileDependency`] | dependencies required to run the process job for the source asset |
+| `createJobOutputs` | List[`JobDescriptor`] | a list of `JobDescriptor` structures for each source asset, and each host and target platform |
 
 ### CreateJobsResponse Return Code
 
@@ -45,9 +45,9 @@ Create Jobs generates asset processing jobs for **Asset Processor**. When Asset 
 
 | Return Code | Description |
 | - | - |
-| `azlmbr.asset.builder.CreateJobsResponse_ResultFailed` | Job creation failed |
-| `azlmbr.asset.builder.CreateJobsResponse_ResultShuttingDown` | The Asset Builder is shutting down |
-| `azlmbr.asset.builder.CreateJobsResponse_ResultSuccess` | Job creation succeeded |
+| `azlmbr.asset.builder.CreateJobsResponse_ResultFailed` | job creation failed |
+| `azlmbr.asset.builder.CreateJobsResponse_ResultShuttingDown` | the Asset Builder is shutting down |
+| `azlmbr.asset.builder.CreateJobsResponse_ResultSuccess` | job creation succeeded |
 
 ### SourceFileDependency
 
@@ -55,12 +55,12 @@ Create Jobs generates asset processing jobs for **Asset Processor**. When Asset 
 
 | Field | Type | Description |
 | - | - | - |
-| `sourceFileDependencyPath` | String | Path (relative to the assets directory or absolute) to the dependency |
+| `sourceFileDependencyPath` | String | path (relative to the assets directory or absolute) to the dependency |
 | `sourceFileDependencyUUID` | `azlmbr.math.Uuid` | UUID (without the sub ID) of the dependency |
-| `sourceDependencyType` | `azlmbr.asset.builder.SourceFileDependency Type` | Absolute dependency or wildcard match (`azlmbr.asset.builder.SourceFileDependency_Absolute` is the default) |
+| `sourceDependencyType` | `azlmbr.asset.builder.SourceFileDependency Type` | absolute dependency or wildcard match (`azlmbr.asset.builder.SourceFileDependency_Absolute` is the default) |
 
 {{< note >}}
-The builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Processor**. Either one is sufficient.
+The Asset Builder does not need to provide both the `sourceFileDependencyUUID` and the `sourceFileDependencyPath` info to **Asset Processor**. Either one is sufficient.
 {{< /note >}}
 
 ### SourceFileDependency Type
@@ -69,8 +69,8 @@ The builder does not need to provide both the `sourceFileDependencyUUID` and the
 
 | Type | Description |
 | - | - |
-| `azlmbr.asset.builder.SourceFileDependency_Absolute` | An absolute source file dependency |
-| `azlmbr.asset.builder.SourceFileDependency_Wildcards` | Allow wildcard matches |
+| `azlmbr.asset.builder.SourceFileDependency_Absolute` | an absolute source file dependency |
+| `azlmbr.asset.builder.SourceFileDependency_Wildcards` | allow wildcard matches |
 
 ## JobDescriptor
 
@@ -79,15 +79,15 @@ The builder does not need to provide both the `sourceFileDependencyUUID` and the
 | Field | Type | Description |
 | - | - | - |
 | `jobParameters` | `JobParameterMap` | Asset Builder specific parameters to pass to the `ProcessJobRequest` |
-| `additionalFingerprintInfo` | String | Additional info that should be taken into account when fingerprinting this job |
-| `jobKey` | String | Job specific key, for example, TIFF Job |
-| `priority` | Integer | Priority value for the jobs within the job queue |
-| `checkExclusiveLock` | Boolean | Attempt to get an exclusive lock file for before processing the job |
-| `checkServer` | Boolean | Check the server for the outputs of this job before processing the job |
-| `jobDependencyList` | List[`azlmbr.asset.builder.JobDependency`] | Required for jobs that want to declare job dependencies on other jobs |
-| `failOnError` | Boolean | Reported errors, asserts, and exceptions will automatically cause the job to fail |
-| `set_platform_identifier(platformIdentifier:string)` | Method | Sets the identifier for the build platform |
-| `get_platform_identifier()` | Method | Returns the identifier for the build platform |
+| `additionalFingerprintInfo` | String | additional info that should be taken into account when fingerprinting this job |
+| `jobKey` | String | job specific key, for example, TIFF Job |
+| `priority` | Integer | priority value for the jobs within the job queue |
+| `checkExclusiveLock` | Boolean | attempt to get an exclusive lock file for before processing the job |
+| `checkServer` | Boolean | check the server for the outputs of this job before processing the job |
+| `jobDependencyList` | List[`azlmbr.asset.builder.JobDependency`] | required for jobs that want to declare job dependencies on other jobs |
+| `failOnError` | Boolean | errors, asserts, and exceptions automatically cause the job to fail when true |
+| `set_platform_identifier(platformIdentifier:string)` | Method | sets the identifier for the build platform |
+| `get_platform_identifier()` | Method | returns the identifier for the build platform |
 
 The `priority` field is the value for the jobs within the job queue. A priority value less than `0` means the job's priority is not considered. A priority value of `0` or greater prioritizes the job by value. The higher the value, the higher priority.
 
@@ -119,10 +119,10 @@ jobParameterMap = {1 : "MyValue", 2 : "Another Value"}
 
 | Field | Type | Description |
 | - | - | - |
-| sourceFile | `azlmbr.asset.builder.SourceFileDependency` | Source file dependency information that the Asset Builder sends to Asset Processor |
-| jobKey | String | Job key of the dependent job |
-| platformIdentifier | String | Platform identifier of the dependent job |
-| type | `azlmbr.asset.builder.JobDependency Type` | Type of `JobDependency` (order or fingerprint) |
+| sourceFile | `azlmbr.asset.builder.SourceFileDependency` | source file dependency information that the Asset Builder sends to Asset Processor |
+| jobKey | String | job key of the dependent job |
+| platformIdentifier | String | platform identifier of the dependent job |
+| type | `azlmbr.asset.builder.JobDependency Type` | type of `JobDependency` (order or fingerprint) |
 
 
 #### JobDependency Type
@@ -131,9 +131,9 @@ jobParameterMap = {1 : "MyValue", 2 : "Another Value"}
 
 | Type | Description |
 | - | - |
-| `azlmbr.asset.builder.JobDependency_Fingerprint` | The dependent job should get processed by Asset Processor when the fingerprint of job it depends on changes |
-| `azlmbr.asset.builder.JobDependency_Order` | The dependent job should only run after the job it depends on is processed by Asset Processor |
-| `azlmbr.asset.builder.JobDependency_OrderOnce` | The dependent job should only run after the job it depends on is processed by Asset Processor and only if the dependencies have never been processed by Asset Processor |
+| `azlmbr.asset.builder.JobDependency_Fingerprint` | The dependent job should get processed by Asset Processor when the fingerprint of job it depends on changes. |
+| `azlmbr.asset.builder.JobDependency_Order` | The dependent job should only run after the job it depends on is processed by Asset Processor. |
+| `azlmbr.asset.builder.JobDependency_OrderOnce` | The dependent job should only run after the job it depends on is processed by Asset Processor and only if the dependencies have never been processed by Asset Processor. |
 
 ## Example: Create Jobs
 

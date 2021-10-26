@@ -6,7 +6,7 @@ weight: 600
 toc: true
 ---
 
-With **Python Asset Builder**, you can customize asset processing for assets produced in content creation tools such as Maya and Houdini, or any source asset type with a known file format.
+With **Python Asset Builder**, you can create custom process jobs for assets produced in content creation tools such as Maya and Houdini, or any source asset type with a known file format.
 
 To use Python Asset Builder you must enable the [Python Asset Builder Gem](/docs/user-guide/gems/reference/script/python/python-asset-builder).
 
@@ -14,9 +14,9 @@ To use Python Asset Builder you must enable the [Python Asset Builder Gem](/docs
 
 Python Asset Builders follow the same design pattern and function of [Asset Builders](../asset-builders). A Python Asset Builder takes a source asset and produces runtime optimized product assets that are stored in the **Asset Cache**. Python Asset Builders have three parts:
 
-* **Descriptor** - Provides **Asset Processor** with the builder's ID and file patterns for asset types it can process.
-* **Create Jobs** - Provides a `CreateJobsRequest` handler that produces a `CreateJobsResponse`. The response contains information that Asset Processor uses to queue job processes for the Python Asset Builder. 
-* **Process Job** - Provides a `ProcessJobRequest` handler that produces product assets and a `ProcessJobResponse`. The response contains information that Asset Processor needs to place the product assets in the Asset Cache, and to track the product assets and their product dependencies.
+* **Descritptor** is a class that provides **Asset Processor** with the builder's ID and file patterns for asset types it can process.
+* **Create Jobs** provides a `CreateJobsRequest` handler that produces a `CreateJobsResponse`. The response contains information that Asset Processor uses to queue job processes for the Python Asset Builder. 
+* **Process Job** provides a `ProcessJobRequest` handler that produces product assets and a `ProcessJobResponse`. The response contains information that Asset Processor needs to place the product assets in the Asset Cache, and to track the product assets and their product dependencies.
 
 ## Writing a Python Asset Builder 
 

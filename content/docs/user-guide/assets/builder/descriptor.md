@@ -14,10 +14,10 @@ The Descriptor provides **Asset Processor** the information required to identify
 
 | Field | Type | Description |
 | - | - | - |
-| `busId` | `azlmbr.math.Uuid` | The unique ID for the Asset Builder |
-| `name` | String | The name of the Asset Builder |
-| `patterns` | List[`azlmbr.asset.builder.AssetBuilderPattern`] | The collection of file patterns that the Asset Builder can process |
-| `version` | Number | The version number of the Asset Builder |
+| `busId` | `azlmbr.math.Uuid` | the unique ID for the Asset Builder |
+| `name` | String | the name of the Asset Builder |
+| `patterns` | List[`azlmbr.asset.builder.AssetBuilderPattern`] | the collection of file patterns that the Asset Builder can process |
+| `version` | Number | the version number of the Asset Builder |
 
 {{< note >}}
 Asset Processor uses the UUID and version of the Asset Builder to track product assets and jobs produced by the Asset Builder. If the UUID or version number are modified, all jobs that were previously processed by the Asset Builder are reprocessed. Increment the `version` value when the Asset Builder is modified to ensure all assets are reprocessed with the latest Asset Builder.
@@ -42,8 +42,8 @@ The `patterns` field is an `AssetBuilderPattern` list that specifies what asset 
 
 | Field | Type | Description |
 | - | - | - |
-| `type` | `azlmbr.asset.builder.AssetBuilderPattern Type` | The type of the asset pattern: `azlmbr.asset.builder.AssetBuilderPattern_Wildcard` or `azlmbr.asset.builder.AssetBuilderPattern_Regex` |
-| `pattern` | String | The file path pattern to use |
+| `type` | `azlmbr.asset.builder.AssetBuilderPattern Type` | the type of the asset pattern: `azlmbr.asset.builder.AssetBuilderPattern_Wildcard` or `azlmbr.asset.builder.AssetBuilderPattern_Regex` |
+| `pattern` | String | the file path pattern to use |
 
 ## Register the Python Asset Builder
 
@@ -55,8 +55,8 @@ To register the Asset Builder, bind the script to the asset building process wit
 
 | Type | Description | Input | Output |
 | - | - | - | - |
-| `RegisterAssetBuilder` | Registers an Asset Builder using a builder Descriptor | `azlmbr.asset.builder.AssetBuilderDesc` | `Outcome_bool` |
-| `GetExecutableFolder` | Returns the current executable folder |  | `Outcome_string` |
+| `RegisterAssetBuilder` | registers an Asset Builder using a builder Descriptor | `azlmbr.asset.builder.AssetBuilderDesc` | `Outcome_bool` |
+| `GetExecutableFolder` | returns the current executable folder |  | `Outcome_string` |
 
 ## Add notification bus handlers 
 
@@ -66,8 +66,8 @@ Create an `azlmbr.asset.builder.PythonBuilderNotificationBusHandler`. Connect th
 
 | Handler | Description | Input | Output |
 | - | - | - | - |
-| `OnCreateJobsRequest` | Callback function type for creating jobs from job requests | Tuple(`azlmbr.asset.builder.CreateJobsRequest`) | `azlmbr.asset.builder.CreateJobsResponse` |
-| `OnProcessJobRequest` | Callback function type for processing jobs from process job requests | `azlmbr.asset.builder.ProcessJobRequest` | `azlmbr.asset.builder.ProcessJobResponse` |
+| `OnCreateJobsRequest` | callback function type for creating jobs from job requests | Tuple(`azlmbr.asset.builder.CreateJobsRequest`) | `azlmbr.asset.builder.CreateJobsResponse` |
+| `OnProcessJobRequest` | callback function type for processing jobs from process job requests | `azlmbr.asset.builder.ProcessJobRequest` | `azlmbr.asset.builder.ProcessJobResponse` |
 
 ## Example: Registering the Python Asset Builder
 
