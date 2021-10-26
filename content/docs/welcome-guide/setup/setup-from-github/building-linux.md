@@ -27,7 +27,7 @@ To prepare to build the engine and projects, choose one of the following build t
 
 1. Create a package directory in a writeable location. The following examples use the directory `$HOME/o3de-packages`.
 
-    ```cmd
+    ```shell
     mkdir $HOME/o3de-packages
     ```
 
@@ -37,13 +37,13 @@ To prepare to build the engine and projects, choose one of the following build t
 
     Open a terminal window and change to the directory where you set up O3DE, then run the `get_python` script.
 
-    ```cmd
+    ```shell
     python/get_python.sh
     ```
 
 1. Use CMake to create the Linux build project for the engine. Supply the build directory, the Ninja Multi-Config generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
-    ```cmd
+    ```shell
     cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-packages
     ```
 
@@ -55,11 +55,17 @@ To prepare to build the engine and projects, choose one of the following build t
 
     The following example shows the `profile` build configuration.
 
-    ```cmd
+    ```shell
     cmake --build build/linux --target Editor --config profile -j <number of parallel build tasks>
     ```
 
     The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
+
+    Example:
+
+    ```shell
+    cmake --build build/linux --target Editor --config profile -j 8
+    ```
 
     The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `$HOME/o3de/build/linux/bin/profile`.
 
@@ -68,7 +74,7 @@ To prepare to build the engine and projects, choose one of the following build t
 
 1. Create a package directory in a writeable location. The following examples use the directory `$HOME/o3de-packages`.
 
-    ```cmd
+    ```shell
     mkdir $HOME/o3de-packages
     ```
 
@@ -78,13 +84,13 @@ To prepare to build the engine and projects, choose one of the following build t
 
     Open a command prompt and change to the directory where you set up O3DE, then run the `get_python` script.
 
-    ```cmd
+    ```shell
     python/get_python.sh
     ```
 
 1. Use CMake to create the Linux build project for the engine. Supply the build directory, the Ninja Multi-Config generator, the path to the packages directory that you created, and any other project options. Paths can be absolute or relative. Alternatively, you can use the CMake GUI to complete this step.
 
-    ```cmd
+    ```shell
     cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-packages -DLY_VERSION_ENGINE_NAME=o3de-install -DCMAKE_INSTALL_PREFIX=$HOME/o3de-install
     ```
 
@@ -96,13 +102,19 @@ To prepare to build the engine and projects, choose one of the following build t
 
 1. Use CMake to build the engine as an SDK, the same as if you installed the engine from an installer tool. The following example shows the `profile` build configuration.
 
-    ```cmd
+    ```shell
     cmake --build build/linux --target INSTALL --config profile -j <number of parallel build tasks>
     ```
 
     The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
 
-    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `C:\o3de-install\bin\Windows\profile\Default`.
+    Example:
+
+    ```shell
+    cmake --build build/linux --target INSTALL --config profile -j 8
+    ```
+
+    The engine takes a while to build. If you've used all the example commands in these steps, when the build is complete, you can find the engine tools and other binaries in `$HOME/o3de-install/bin/Linux/profile/Default`.
 
 {{% /tab %}}
 {{< /tabs >}}
@@ -122,13 +134,13 @@ Choose the tab that corresponds to the engine build type you chose in the preced
 
 1. Open a command window if you don't already have one open. Change your current directory to the source engine directory.
 
-    ```cmd
+    ```shell
     cd $HOME/o3de
     ```
 
 1. Use the `o3de` script to register the engine.
 
-    ```cmd
+    ```shell
     scripts/o3de.sh register --this-engine
     ```
 
@@ -139,19 +151,19 @@ Choose the tab that corresponds to the engine build type you chose in the preced
 
 1. Open a command window if you don't already have one open. Change your current directory to the pre-built engine directory.
 
-    ```cmd
+    ```shell
     cd $HOME/o3de-install
     ```
 
 1. Get the Python runtime for the pre-built engine.
 
-    ```cmd
+    ```shell
     python/get_python.sh
     ```
 
 1. Use the `o3de` script to register the engine.
 
-    ```cmd
+    ```shell
     scripts/o3de.sh register --this-engine
     ```
 

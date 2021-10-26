@@ -32,19 +32,19 @@ To start a project based on the standard template, complete the following steps.
 
     * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), use the engine source directory.
 
-        ```cmd
+        ```shell
         cd $HOME/o3de
         ```
 
     * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, use the installed engine directory.
 
-        ```cmd
+        ```shell
         cd $HOME/o3de-install
         ```
 
 1. To create a new external project, use the `o3de` script in the `scripts` subdirectory. The `create-project` command, used with the `project-path` and no other options, creates a new project using the **standard** template (the default project template). This command also registers the engine to the project in the project's `project.json` manifest.
 
-    ```cmd
+    ```shell
     scripts/o3de.sh create-project --project-path $HOME/o3de-projects/MyProject
     ```
 
@@ -56,7 +56,7 @@ Use **CMake** to create the Linux build project for your O3DE project.
 
 1. Create the Linux build project in your new project directory. Supply the build directory, the Ninja Multi-Config generator, the path to the packages directory, and any other project options. Paths can be absolute or relative.
 
-    ```cmd
+    ```shell
     cd $HOME/o3de-projects/MyProject
     cmake -B build/linux -S . -G "Ninja Multi-Config" -DLY_3RDPARTY_PATH=$HOME/o3de-packages
     ```
@@ -75,7 +75,7 @@ Use CMake to build the Linux build project in the build directory of your O3DE p
 
 1. Build the project launcher using the solution that you created in the project's `build/linux` directory. The following example shows the `profile` build configuration.
 
-    ```cmd
+    ```shell
     cmake --build build/linux --target MyProject.GameLauncher Editor --config profile -j <number of parallel build tasks>
     ```
 
@@ -87,11 +87,17 @@ When building the project for a pre-built SDK engine, even though you aren't bui
 
     The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
 
+    Example:
+
+    ```shell
+    cmake --build build/linux --target MyProject.GameLauncher Editor --config profile -j 8
+    ```
+
 1. When the build is complete, you can find the project binaries in the project directory under `build/linux/bin/profile`. To verify that the project is ready to use, run O3DE Editor by doing one of the following:
 
     * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), run the Editor from the project build directory.
 
-        ```cmd
+        ```shell
         build/linux/bin/profile/Editor
         ```
 
@@ -101,7 +107,7 @@ If your project build directory is outside the project path, you must include th
 
     * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, run the Editor from the installed engine's build directory. (If you don't supply the project path, **Project Manager** launches instead.) The project path can be absolute or relative to the engine directory.
 
-        ```cmd
+        ```shell
         $HOME/o3de-install/bin/Linux/profile/Default/Editor --project-path $HOME/o3de-projects/MyProject
         ```
 
