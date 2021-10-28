@@ -39,7 +39,7 @@ For a better understanding of the AWS GameLift Gem topics in this guide, we reco
 | [AWS GameLift Gem Setup](gem-setup/) | Set up the AWS GameLift Gem in O3DE. |
 | Game Preparation with the AWS GameLift Gem |  |
 | <ul><li> [Game Session Management](session-management/)</li></ul>| Learn how to prepare your game for the session management. |
-| <ul><li> [FlexMatch Support](flexmatch/) </li></ul>| Learn how to prepare your game for making matches and backfill. |
+| <ul><li> [FlexMatch Support](flexmatch/) </li></ul>| Learn how to prepare your game for making matches and backfilling existing matches. |
 | <ul><li> [AWS GameLift Gem Advanced Topics](advanced-topics/) </li></ul>| Learn some advanced ways to prepare your game with the AWS GameLift Gem. |
 | [AWS GameLift Gem Local Testing](local-testing/) | Verify AWS GameLift Gem feature integrations locally using GameLift Local, a command line tool that starts a self-contained version of the managed GameLift service. |
 | [AWS GameLift Gem Build Packaging for Windows](build-packaging-for-windows/) | Learn how to package your Windows dedicated server builds so that you can install and run them on GameLift. |

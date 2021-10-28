@@ -15,7 +15,7 @@ The session interface performs all of the session handling. The Gem acts as a ga
 There must be only one implementation of the session interface per dedicated server solution. To add support for another dedicated server solution, you must create another implementation of the session interface.
 
 
-### Session APIs
+### Client Initialization
 
 To make requests against GameLift, you must configure a proper GameLift client by using `AWSGameLiftClientManager::ConfigureGameLiftClient()`. 
 
@@ -24,6 +24,9 @@ Note that you must specify the AWS Region in the correct format. For example, fo
 ```cpp
 AWSGameLift::AWSGameLiftRequestBus::Broadcast(& AWSGameLift::AWSGameLiftRequestBus::Events::ConfigureGameLiftClient, "us-east-1");
 ```
+
+
+### Session APIs
 
 #### `CreateSession`
 
