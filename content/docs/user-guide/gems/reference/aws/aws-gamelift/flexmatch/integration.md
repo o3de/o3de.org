@@ -6,6 +6,10 @@ toc: true
 weight: 200
 ---
 
+## Prerequisites
+
+- Finish the session management integration for the game client and dedicated server.
+
 ## Integrate game client
 
 To support the optional FlexMatch feature including backfill, your client application need to implement the following use cases:
@@ -23,7 +27,8 @@ The AWS GameLift Gem provides both [C++ APIs](cpp-api/) and [scripting](scriptin
 To support the optional manual backfill, you server should implement the following the use cases:
 - `StartMatchBackfill`
 - `StopMatchBackfill`
-
+- `OnUpdateSessionBegin`
+- `OnUpdateSessionEnd`
 
 ## Related Information
 

@@ -190,11 +190,11 @@ bool OnMatchAcceptance()
 
 ### Matchmaking APIs
 
-You can have automatic backfill enabled in your matchmaking configuration and only one backfill ticket can be in flight per match. 
+The following APIs are for manual backfill only. You can set the backfill mode (automatic or manual) in your matchmaking configuration.
 Check [Backfill existing games with FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-backfill.html) for more details.
 
 #### `StartMatchBackfill`
-This API is for manual backfill only. Sends a request to find new players for open slots in a game session created with FlexMatch. Check [GameLift Server API reference for C++: Actions](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-actions.html#integration-server-sdk-cpp-ref-startmatchbackfill) for more details.
+Sends a request to find new players for open slots in a game session created with FlexMatch. Check [GameLift Server API reference for C++: Actions](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-actions.html#integration-server-sdk-cpp-ref-startmatchbackfill) for more details.
 
 To begin the process for manual backfill, call `AWSGameLiftServerManager::StartMatchBackfill()`, and pass in references to the ticket Id and a list of players. 
 
@@ -202,15 +202,24 @@ When an existing session begins to be updated, the `OnUpdateSessionBegin` notifi
 At the end of the update, the `OnUpdateSessionEnd` notification is broadcasted on the server side to perform any follow-up operations.
 
 ```cpp
-m_matchmakingTicketId = "YourMatchmakingTicketId";
+AZStd::string matchmakingTicketId = "YourMatchmakingTicketId";
+// This list should contain the current players in the match, and each player should have expected attributes. Otherwise gamelift gem will use lazy loaded data which is not guaranteed to be accurate.
 AZStd::vector<AWSGameLift::AWSGameLiftPlayer> players;
-AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftServerRequestBus::Events::StartMatchBackfill, m_matchmakingTicketId, players);
+bool result;
+AWSGameLift::AWSGameLiftServerRequestBus::BroadcastResult(result, &AWSGameLift::AWSGameLiftServerRequestBus::Events::StartMatchBackfill, matchmakingTicketId, players);
 ```
 
 #### `StopMatchBackfill`
-This API is for manual backfill only. Cancels an active match backfill request that was created with StartMatchBackfill. Check [GameLift Server API reference for C++: Actions](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-actions.html#integration-server-sdk-cpp-ref-stopmatchbackfill) for more details.
+Cancels an active match backfill request that was created with StartMatchBackfill. Check [GameLift Server API reference for C++: Actions](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-actions.html#integration-server-sdk-cpp-ref-stopmatchbackfill) for more details.
 
 To stop the process for manual backfill, call `AWSGameLiftServerManager::StopMatchBackfill()`, and pass in a reference to the ticket Id.
+
+```cpp
+AZStd::string matchmakingTicketId = "YourMatchmakingTicketId";
+bool result;
+AWSGameLift::AWSGameLiftServerRequestBus::BroadcastResult(result, &AWSGameLift::AWSGameLiftServerRequestBus::Events::StopMatchBackfill, matchmakingTicketId);
+```
+
 
 ### Session Notification
 
