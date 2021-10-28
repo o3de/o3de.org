@@ -132,7 +132,7 @@ void OnLeaveSessionAsyncComplete()
 As the default behavior, when the last player leaves the game session, GameLift destroys the game session. 
 
 
-#Server Side
+## Server Side
 
 ### Server Initialization
 
