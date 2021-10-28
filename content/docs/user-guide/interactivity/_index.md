@@ -7,7 +7,7 @@ weight: 800
 | - | - | 
 | [Entities](entities) | Learn about how to interact with entities in the Editor. |
 | Navigation and pathfinding | - |
-| [Physics](physics) | Simulate physics interactions in O3DE using NVIDIA PhysX for collisions and rigid bodies, NVIDIA Blast to simulate destruction, and NVIDIA Cloth to simulate cloth. |
+| [Physics](physics) | Simulate physics interactions in O3DE using NVIDIA PhysX for collisions and rigid bodies, <!--NVIDIA Blast to simulate destruction, -->and NVIDIA Cloth to simulate cloth. |
 | [Prefabs](prefabs) | Learn about O3DE's prefab system. |
 | [Audio](audio) | Control audio and sound effects in your game. |
 | [Input](input) | Allow player input such as key presses and mouse clicks, to create an interactive experience in O3DE. |
