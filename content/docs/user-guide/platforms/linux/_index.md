@@ -12,11 +12,11 @@ weight: 200
 The following instructions assume that you have:
 
 * Set up O3DE in a project-centric [source engine](/docs/user-guide/appendix/glossary#source-engine) configuration from GitHub. For help, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github).
-* Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/#register-the-engine).
+* Registered the O3DE engine in the O3DE manifest. If you set up O3DE from GitHub, you must manually register the engine. For help, refer to [Register the engine](/docs/welcome-guide/setup/setup-from-github/building-linux/#register-the-engine).
 * Met all Linux hardware and software requirements listed in [O3DE System Requirements](/docs/welcome-guide/requirements).
 
 {{< note >}}
-These instructions use $O3DE_ENGINE to refer to the absolute path where the O3DE source code is located on your local file system. 
+These instructions use `$O3DE_ENGINE` to refer to the absolute path where the O3DE source code is located on your local file system.
 {{< /note >}}
 
 ## Create an O3DE project
@@ -35,7 +35,7 @@ Although CMake supports Unix Make Files on Linux, we recommend that you use Ninj
 
 
 ### Multiple Config Builds
-The following command generates a build folder, `build/linux`, under the root of the project folder, $O3DE_PROJECT_PATH, by using Ninja as the build generator and clang-12 as the compiler.
+The following command generates a build folder, `build/linux`, under the root of the project folder, `$O3DE_PROJECT_PATH`, by using Ninja as the build generator and clang-12 as the compiler.
 
 ```shell
 
@@ -89,7 +89,6 @@ cmake --build build/linux --target $O3DE_PROJECT_NAME.GameLauncher Editor
 
 To support code completion and other IntelliSense features found in IDEs such as Visual Studio, instruct CMake to generate a compilation database ([compile-command.json](https://clang.llvm.org/docs/JSONCompilationDatabase.html)) file as part of the project generation command. 
 
-
 {{< note >}}
 IDEs can use the `compile-command.json` only when Unity builds are turned off. Since Unity builds are enabled by default in O3DE, you will need to explicitly turn it off with the `-DLY_UNITY_BUILD=OFF` argument.
 {{< /note >}}
@@ -99,6 +98,3 @@ To enable the generation of the compilation database file, include the following
 ```shell
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DLY_UNITY_BUILD=OFF
 ```
-
-
-

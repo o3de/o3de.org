@@ -30,13 +30,13 @@ To start a project based on the standard template, complete the following steps.
 
 1. Open a command line window and change to your O3DE engine directory by doing one of the following:
 
-    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), use the engine source directory.
+    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), use the engine source directory.
 
         ```cmd
         cd C:\o3de
         ```
 
-    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, use the installed engine directory.
+    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine) using the `INSTALL` target, use the installed engine directory.
 
         ```cmd
         cd C:\o3de-install
@@ -89,7 +89,7 @@ When building the project for a pre-built SDK engine, even though you aren't bui
 
 1. When the build is complete, you can find the project binaries in the project directory under `build/windows_vs2019/bin/profile`. To verify that the project is ready to use, run O3DE Editor by doing one of the following:
 
-    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine), run the Editor from the project build directory.
+    * If you set up your engine as a [source engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine), run the Editor from the project build directory.
 
         ```cmd
         build\windows_vs2019\bin\profile\Editor.exe
@@ -99,7 +99,7 @@ When building the project for a pre-built SDK engine, even though you aren't bui
 If your project build directory is outside the project path, you must include the project path (using the `--project-path` parameter) when launching O3DE Editor.
         {{< /note >}}
 
-    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, run the Editor from the installed engine's build directory. (If you don't supply the project path, **Project Manager** launches instead.) The project path can be absolute or relative to the engine directory.
+    * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine) using the `INSTALL` target, run the Editor from the installed engine's build directory. (If you don't supply the project path, **Project Manager** launches instead.) The project path can be absolute or relative to the engine directory.
 
         ```cmd
         C:\o3de-install\bin\Windows\profile\Default\Editor.exe --project-path C:\o3de-projects\MyProject
