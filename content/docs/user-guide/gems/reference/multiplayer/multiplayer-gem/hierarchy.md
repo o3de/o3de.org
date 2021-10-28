@@ -14,28 +14,28 @@ By default the limit is set to 16 entities. You can modify this limit with CVar:
 
 ## Hierarchical Components
 
-In order to declare a network hierarchy, you have to use a combination hierarchical components: `NetworkHierarchyRootComponent` and `NetworkHierarchyChildComponent`. `NetworkHierarchyRootComponent` marks an entity as the root of a hierarchy. It should be placed on the highest parent of your entity prefab or an group of entities. `NetworkHierarchyRootComponent` marks an entity as a child of a hierarchy. It should be added on child entities under the entity with `NetworkHierarchyRootComponent`.
+In order to declare a network hierarchy, you have to use a combination of hierarchical components: `NetworkHierarchyRootComponent` and `NetworkHierarchyChildComponent`. `NetworkHierarchyRootComponent` marks an entity as the root of a hierarchy and it should be placed on the highest parent of your entity prefab or a group of entities. `NetworkHierarchyRootComponent` marks an entity as a child of a hierarchy. It should be added on child entities under the entity with `NetworkHierarchyRootComponent`.
 
-Network hierarchies can be created either in the Editor as as well as by parenting entities at runtime.
+Network hierarchies can be created either in the Editor or by parenting entities at runtime.
 
 ### Creating Network Hierarchies in the Editor
 
-1. First, start by creating a network entity with all its network common components:
+1. Creating a network entity with all its network common components:
     - Network Binding Component
     - Network Transform Component
 
 
-1. We will also add a Mesh component for visual information in the Editor.
+1. Add a Mesh component for visual information in the Editor.
 
 1. Here is an example of a simple network entity:
 
     ![Starting Network Entity](/images/user-guide/gems/reference/multiplayer/starting_network_entity.png)
 
-1. In order to make it a hierarchical root entity, we need to add `Network Hierarchy Root Component`:
+1. In order to make it a hierarchical root entity, add `Network Hierarchy Root Component`:
 
     ![Starting Hierarchy Root Entity](/images/user-guide/gems/reference/multiplayer/starting_hierarchy_root_entity.png)
 
-1. This entity will be parent entity for hierarchical child entities.
+1. This entity will be a parent entity for hierarchical child entities.
 
 1. A hierarchical child entity is formed by adding `Network Hierarchy Child Component`.
 
@@ -49,12 +49,12 @@ Network hierarchies can be created either in the Editor as as well as by parenti
 
     ![Simple Hierarchy Prefab](/images/user-guide/gems/reference/multiplayer/simple_hierarchy_prefab.png)
 
-1. It is important that the entity with `Network Hierarchy Root Component` as at the top parent entity within the prefab. All other entities should have `Network Hierarchy Child Component` on them.
+1. It is important that the entity with `Network Hierarchy Root Component` is at the top parent entity within the prefab. All other entities should have `Network Hierarchy Child Component` on them.
 
 
 ### ImGui Hierarchy Debugger
 
-O3DE Multiplayer Gem comes with a debugger to help you trouble shoot and analyze hierarchy structure in your level. It can be enabled by bringing up ImGui menu.('HOME' key by default.) And then selecting `Multiplayer` -> `Multiplayer Hierarchy Debugger`.
+O3DE Multiplayer Gem comes with a debugger to help you trouble shoot and analyze hierarchy structure in your level. It can be enabled by bringing up ImGui menu ('HOME' key by default), and then selecting `Multiplayer` -> `Multiplayer Hierarchy Debugger`.
 
 ![Turning On Hierarchy ImGui](/images/user-guide/gems/reference/multiplayer/turning_on_imgui_hierarchy_debugger.png)
 
@@ -95,7 +95,7 @@ For example, here is an example component that has a `NetworkInput` field in its
 </Component>
 ```
 
-This will cause this component to require a component that provides multiplayer input processing during entity activation and during its assembly in the Editor, as can be seen in the following screenshot from the Editor.
+Add a component to provide multiplayer input processing:
 
 ![Hierarchy Debug Overlay](/images/user-guide/gems/reference/multiplayer/hierarchy_child_entity_with_input_processing_component.png)
 
