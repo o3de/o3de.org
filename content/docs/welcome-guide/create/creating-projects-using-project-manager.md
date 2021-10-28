@@ -33,7 +33,7 @@ This tutorial uses the following project name and directories in the examples:
 | --- | --- |
 | `o3de-install` | O3DE engine install directory. |
 | `o3de-projects/MyProject` | New project name and location. |
-| `o3de-packages` | Package directory (created earlier during [setup](/docs/welcome-guide/setup/setup-from-github/#build-the-engine)). |
+| `o3de-packages` | Package directory created earlier during setup on [Windows](/docs/welcome-guide/setup/setup-from-github/building-windows/#build-the-engine) or [Linux](/docs/welcome-guide/setup/setup-from-github/building-linux/#build-the-engine). |
 
 ## Launch Project Manager
 
