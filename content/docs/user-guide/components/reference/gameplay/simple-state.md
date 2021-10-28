@@ -1,103 +1,46 @@
 ---
-description: ' Use the Simple State component in Open 3D Engine to provide a simple state
-  machine. '
-title: Simple State
+linkTitle: Simple State
+title: Simple State Component
+description: Use the Simple State component in Open 3D Engine (O3DE) to provide a simple state
+  machine.
 ---
 
+The **Simple State** component provides a simple state machine. Each state is represented by a name and an array of zero or more entities. The entities are activated upon entering the state and deactivated upon exiting it. A simple state component may be in `NullState`, which means no state is active.
+
+## Provider
+
+[O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
+
+## Simple State properties 
+
+![Simple State component properties](/images/user-guide/components/reference/gameplay/simple-state-component.png)
+
+| Property | Description | Values | Default |
+|-|-|-|-|
+| **Initial state** | The active state when the Simple State component is first activated. | `<None>` or state **Name** | `<None>` |
+| **Reset on activate** | If enabled, Simple State component returns to the **Initial state** when activated, and not the state held before deactivating. | Boolean | `Enabled` |
+| **States** | An array of states. |  |  |
+| **States** - **Name** | Defines the name of the state. | String | `New State` |
+| **States** - **Entities** | An array of entities that are associated with a state. | EntityId | None |
+
+## SimpleStateComponentRequestBus
+
+| Request Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `GetCurrentState` | Returns the **Name** of the current state. | None | State: String | Yes |
+| `GetNumStates` | Returns the total number of states. | None | Count: Integer | Yes |
+| `SetState` | Sets the component to a specific state by **Name**. | State: String | None | Yes |
+| `SetStateByIndex` | Sets the component to a specific state by its index in the **States** array. | State Index: Integer | None | Yes |
+| `SetToFirstState` | Sets the component to State[0], the first state in the **States** array. | None | None | Yes |
+| `SetToLastState` | Sets the component to the last state in the **States** array. | None | None | Yes |
+| `SetToNextState` | Sets the component to the next state in the **States** array. | None | None | Yes |
+| `SetToPreviousState` | Sets the component to the previous state in the **States** array. | None | None | Yes |
 
 
-The **Simple State** component provides a simple state machine. Each state is represented by a name and zero or more entities. The entities are activated upon entering the state and deactivated upon exiting it. A simple state component may be in NullState, which means no state is active.
+## SimpleStateComponentNotificationBus
 
-![The Simple State Component](/images/user-guide/component/component-simple-state.png)
+| Notification Name | Description | Parameter | Return | Scriptable |
+|-|-|-|-|-|
+| `OnStateChanged` | Notifies listeners that the state has changed. | None | Old State: String, New State: String | Yes |
 
-## Simple State Component Properties 
-
-The **Simple State** component has the following properties:
-
-**Initial state**
-The active state when the simple state component is first activated.
-
-**Reset on activate**
-If selected, simple state returns to the configured initial state when activated, and not the state held before deactivating.
-
-**States**
-The list of states on this simple state component.
-
-**State (\[0\], \[1\], \[2\], etc)**
-Includes a name for the state and a set of entities that are activated when the state is entered and deactivated when the state is exited.
-
-**Name**
-The name of this state. Indicates the state to which to transition on the SetState API.
-
-**Entities**
-List of the entities referenced by this state.
-
-## EBus Request Bus Interface 
-
-Use the following request functions with the EBus interface to communicate with other components of your game.
-
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
-
-### SetState 
-
-Sets the active state to the named state.
-
-**Parameters**
-`stateName`
-
-## EBus Notification Bus Interface 
-
-Use the following notification functions with the EBus interface to communicate with other components of your game.
-
-For more information about using the Event Bus (EBus) interface, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).
-
-### OnStateChanged 
-
-Notifies that the state has changed from state `oldName` to state `newName`.
-
-**Parameters**
-`oldName`
-`newName`
-
-The following is an example of script using the **Request Bus Interface**.
-
-```
-local simplestateexample =
-{
-    Properties =
-    {
-        TransitionInterval = 1.0,
-        States = {"Houses", "Nope", "Lamps", "Tree", "HouseAndTree", "NoState"},
-    }
-}
-
-function simplestateexample:OnActivate()
-
-    self.TransitionCountDown = self.Properties.TransitionInterval
-    self.StateIdx = 0
-    self.tickBusHandler = TickBus.Connect(self)
-    self.stateChangedHandler = SimpleStateComponentNotificationBus.Connect(self, self.entityId)
-
-    Debug.Log("SimpleStateComponent activated for entity: " .. tostring(self.entityId.id))
-end
-
-function simplestateexample:OnDeactivate()
-    self.tickBusHandler:Disconnect()
-    self.stateChangedHandler:Disconnect()
-end
-
-function simplestateexample:OnTick(deltaTime, timePoint)
-    self.TransitionCountDown = self.TransitionCountDown - deltaTime
-    if (self.TransitionCountDown < 0.0) then
-        SimpleStateComponentRequestBus.Event.SetState(self.entityId, self.Properties.States[self.StateIdx + 1])
-        self.StateIdx = (self.StateIdx + 1) % table.getn(self.Properties.States)
-        self.TransitionCountDown = self.Properties.TransitionInterval
-    end
-end
-
-function simplestateexample:OnStateChanged(oldState, newState)
-    Debug.Log("Old State: " .. (oldState or "NullState")  .. " => New State: " .. (newState or "NullState"))
-end
-
-return simplestateexample
-```
+For more information, see [Working with the Event Bus (EBus) system](/docs/user-guide/engine/ebus/).

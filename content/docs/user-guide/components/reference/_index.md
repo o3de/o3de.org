@@ -106,11 +106,9 @@ The components below are grouped by type as they appear in the O3DE Editor.
 
 | Component | Description | 
 | - | - |
-| Fly Camera Input | Allows you to control the camera using mouse and key inputs. |
-| Look At | Forces an entity to always look at a given target. |
-| Random Timed Spawner) | Deprecated. |
+| [Fly Camera Input](./gameplay/tag/) | Allows you to control the camera using mouse and key inputs. |
+| [Look At](./gameplay/tag/) | Forces an entity to always look at a given target. |
 | [Simple State](/docs/user-guide/components/reference/gameplay/simple-state/) | Provides a simple state machine that allows you to activate and deactivate associated entities.|
-| Spawner | Deprecated. |
 | [Tag](./gameplay/tag/) | Allows you to apply one or more labels to an entity. |
 | [Input](./gameplay/input/) | Binds raw input to events in your game. |
 
