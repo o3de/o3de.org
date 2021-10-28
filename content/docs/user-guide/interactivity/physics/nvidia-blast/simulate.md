@@ -2,6 +2,7 @@
 description: ' Create realistic destruction simulations in Open 3D Engine with NVIDIA Blast. '
 title: Simulate destruction with NVIDIA Blast
 weight: 400
+draft: true
 ---
 
 
