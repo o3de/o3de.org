@@ -31,7 +31,7 @@ weight: 800
 + [Bundle from seed - `bundleSeed`](#asset-bundler-command-line-reference-bundleseed)
   + [Options](#asset-bundler-command-line-reference-bundleseed-options)
   + [Examples](#asset-bundler-command-line-reference-bundleseed-examples)
-  
+
 The Open 3D Engine Asset Bundler is driven by a command-line tool called `AssetBundlerBatch`. This tool manages seed lists, asset lists, comparisons, and asset bundles. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor. Before running the Asset Bundler, make sure that you:
 +  Enable each platform assets should be bundled for. Enabled platforms are managed by editing the `dev\AssetProcessorPlatformConfig.ini` file in your project.
 + Run the Asset Processor to ensure that assets and their metadata are up to date.
@@ -61,7 +61,7 @@ The elements in this example invocation break down to:
 
  An example command is:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-General Use" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedFileList MyProject\AssetBundling\SeedLists\AllDependencies.seed ^
@@ -155,7 +155,7 @@ This command requires an existing cache of assets for each provided platform. To
 **Example Add seed**
  Create the seed list `testFile.seed` if it doesn't exist, and adds the `asset1.pak` and `asset2.pak` assets as seeds for the `PC` platform:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Add seed" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed ^
@@ -173,7 +173,7 @@ build/linux/bin/profile/AssetBundlerBatch seeds --seedListFile testFile.seed ^
 **Example Add platforms**
  Add the `ios` and `android` platforms for all seeds in the `testFile.seed` seed list:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Add platforms" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --addPlatformToSeeds --platform ios,android
@@ -189,7 +189,7 @@ build/linux/bin/profile/AssetBundlerBatch seeds --seedListFile testFile.seed --a
 **Example Display seed list contents**
  Show the contents of the `testFile.seed` file, including the absolute and relative paths of all assets used as seeds:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Display seed list contents" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile testFile.seed --print
@@ -282,7 +282,7 @@ Generate a file that contains additional information about asset inclusion for d
 **Example Display default assets**
  Display which asset lists would be generated from the seed lists for the O3DE Engine and enabled Gems for a project's default platforms:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Display default assets" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --addDefaultSeedListFiles --print
@@ -298,7 +298,7 @@ build/linux/bin/profile/AssetBundlerBatch assetLists --addDefaultSeedListFiles -
 **Example Display asset lists for default platforms**
  Use an input asset list and the project's default platforms to display that asset list's contents:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Display asset lists for default platforms" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile assetListFile.assetlist --print
@@ -314,7 +314,7 @@ build/linux/bin/profile/AssetBundlerBatch assetLists --assetListFile assetListFi
 **Example Create an asset list and debug file from a seed list**
  Generate an asset list `testList_pc.assetlist` and debug information `testList_pc.assetlistdebug` from the `testFile.seed` seed list:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Create an asset list and debug file from a seed list" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist ^
@@ -336,7 +336,7 @@ build/linux/bin/profile/AssetBundlerBatch assetLists --assetListFile testList.as
 **Example Display asset list contents for a platform**
  Display the contents of the `testList_pc.assetlist` file:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Display asset list contents for a platform" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --platform pc --print
@@ -353,7 +353,7 @@ build/linux/bin/profile/AssetBundlerBatch assetLists --assetListFile testList.as
 **Example Regenerate asset lists from a seed list**
 Regenerate all asset lists from the `testFile.seed` seed list, overwriting the `testList_pc.assetlist` file if it exists:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Regenerate asset lists from a seed list" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFile testList.assetlist --seedListFile testFile.seed --allowOverwrites
@@ -413,7 +413,7 @@ The `comparisonRules` command is used to generate comparison rules files. Compar
 **Example Generate a delta and filter for XML files**
  Generate a comparison rules file which produces a delta comparison, and then filters the results to include only XML files:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Generate a delta and filter for XML files" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe comparisonRules --comparisonRulesFile deltaFilterXML.rules ^
@@ -501,7 +501,7 @@ The comparison types to apply to the input files. The first `--comparisonType` p
 **Example Compare to generate a delta**
  Generate a new asset list `deltaAssetList.assetlist` by taking the files which appear in either `firstAssetList_pc.assetlist` and `secondAssetList_pc.assetlist`, but not both:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Compare to generate a delta" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType delta ^
@@ -523,7 +523,7 @@ build/linux/bin/profile/AssetBundlerBatch compare --comparisonType delta ^
 **Example Compare based on file path matching**
  Generate a new asset list `filePatternAssetList.assetlist` that contains only XML files from the `assetList_pc.assetlist` file:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Compare based on file path matching" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType filePattern ^
@@ -547,7 +547,7 @@ build/linux/bin/profile/AssetBundlerBatch compare --comparisonType filePattern ^
 **Example Count intersection across multiple asset lists**
 Use `intersectionCount` on `engine_pc.assetlist`, `game_pc.assetlist`, and `patch_pc.assetlist` to print out assets which appear 2 times or more between any of these asset lists:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Count intersection across multiple asset lists" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType intersectionCount ^
@@ -612,7 +612,7 @@ build/linux/bin/profile/AssetBundlerBatch compare --comparisonType intersectionC
 **Example Set default max bundle size and asset list for PC**
  Create a bundler settings file `defaults_pc.bundlesettings` for PC with the maximum bundle size set to 1024MB and the `allAssets_pc.assetlist` asset list as its input:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Set default max bundle size and asset list for PC" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundleSettings --bundleSettingsFile defaults.bundlesettings ^
@@ -680,7 +680,7 @@ The bundle format version to use in generation. The only allowed value is `1`.
 **Example Create a bundle for PC using a settings file**
  Create a `assets_pc.pak` bundle for PC, using the `defaults_pc.bundlesettings` file:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Create a bundle for PC" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --bundleSettingsFile defaults.bundlesettings --platform pc
@@ -696,7 +696,7 @@ build/linux/bin/profile/AssetBundlerBatch bundles --outputBundlePath assets.pak 
 **Example Create bundles for all platforms**
 Create bundles for all of a project's enabled platforms, using the `allAssets_pc.assetlist`, `allAssets_ios.assetlist`, and `allAssets_android.assetlist` files:
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Create bundles for all platforms" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundles --outputBundlePath assets.pak --maxSize 512 --assetListFile allAssets.assetlist
@@ -755,7 +755,7 @@ The bundle format version to use in generation. The only allowed value is `1`.
 **Example Regenerate bundle for a seed**
  Regenerate the bundle `processed.pak` for the `example.cgf` asset and all of its dependencies, with a maximum size of 512MB.
 
-{{< tabs name="Command line example" >}}
+{{< tabs name="Command line example-Regenerate bundle for a seed" >}}
 {{% tab name="Windows" %}}
 ```
 build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundleSeed --addSeed example.cgf --outputBundlePath processed.pak --maxSize 512 --allowOverwrites
@@ -767,19 +767,4 @@ build/linux/bin/profile/AssetBundlerBatch bundleSeed --addSeed example.cgf --out
 ```
 {{% /tab %}}
 {{< /tabs >}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
