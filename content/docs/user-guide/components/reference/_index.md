@@ -91,11 +91,11 @@ The components below are grouped by type as they appear in the O3DE Editor.
 | [Camera](/docs/user-guide/components/reference/camera/camera/) | Allows an entity to be used as a camera. |
 | [Camera Rig](/docs/user-guide/components/reference/camera/camera-rig/) | Manages the behaviors that drive a camera entity. |
 
-### Destruction
+<!--### Destruction
 | Component | Description | 
 | - | - |
 | [Blast Family](/docs/user-guide/components/reference/destruction/blast-family/) | Enables destruction simulation using the [NVIDIA Blast library](https://developer.nvidia.com/blast). |
-| [Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) | Sets the mesh and material assets for NVIDIA Blast entities. |
+| [Blast Family Mesh Data](/docs/user-guide/components/reference/destruction/blast-family-mesh-data/) | Sets the mesh and material assets for NVIDIA Blast entities. | Hiding until blast tools are fixed, and blast docs are updated.-->
 
 ### Editor
 | Component | Description | 
