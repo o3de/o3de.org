@@ -20,12 +20,12 @@ Debug dedicated servers are not supported as they require the debug visual studi
 ## Prerequisites
 The instructions that follow assume the following:
 - You have built your project with the AWS GameLift Gem enabled. For more information on building projects, refer to [Build the O3DE Project](/docs/welcome-guide/create/creating-projects-using-cli/#build-the-o3de-project). 
-- You have built the Profile version of your project's server launcher.
+- You have built the profile or release version of your project's server launcher.
 - You have run the **Asset Processor** and compiled all of the project's assets.
 
 ## Prepare installation folder
 
-You must create a separate installation folder to copy over the required assets, profile runtime binaries, registry settings files, and redistributables. In this example, the installation folder is denoted as `<package base folder>`.
+You must create a separate installation folder to copy over the required assets, runtime binaries, registry settings files, and redistributables. In this example, the installation folder is denoted as `<package base folder>`.
 
 ### Profile Build
 
@@ -60,9 +60,9 @@ You must create a separate installation folder to copy over the required assets,
 
 2. Copy the following files to the `/bin` folder:
 
-    -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/profile`.
+    -   All the `*.exe` and `*.dll` files from `o3de/build/windows_vs2019/bin/release`.
   
-3. Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows_vs2019/bin/profile/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
+3. Zip all the assets under `<project folder>/Cache/pc` as well as the `Registry` folder from `o3de/build/windows_vs2019/bin/release/Registry/` into a package called `engine.pak`. Then add `engine.pak` to the `<package base folder>/assets/pc` folder.
 
 4. Copy the `VC_redist.x64.exe` file from `o3de/Tools/Redistributables/Visual Studio 2015-2019` to the package base folder.
 
