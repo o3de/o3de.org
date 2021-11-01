@@ -30,6 +30,7 @@ Product dependencies can also be marked as required or optional. If a required p
 
 ## Asset identifiers
 
-Source assets are identified by a Universally Unique Identifier (UUID also known as a Globally Unique Identifier or GUID). The source asset UUID is generated based on the file name and scan directory relative path. This ensures the source asset UUID is identical on any host platform machine for the project.
+Source assets are identified by a Universally Unique Identifier (UUID). The source asset UUID is generated based on the file name and scan directory relative path. This ensures the source asset UUID is identical on any host platform machine for the project.
+
 
 Product assets are identified by a combination of the UUID for the source asset and a sub ID based on the fingerprint of the **Asset Builder** that produced the product asset. This ensures each product asset ID is deterministic and unique, and that references to these product assets can be maintained when assets are updated. In the rare event of a product asset ID collision, Asset Processor notifies you that an asset already exists with the product ID so you can resolve the issue.
