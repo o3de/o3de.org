@@ -3,6 +3,7 @@ description: ' Use Blast materials to set destruction properties in Open 3D Engi
   NVIDIA Blast. '
 title: Specify destruction properties with Blast materials
 weight: 600
+draft: true
 ---
 
 

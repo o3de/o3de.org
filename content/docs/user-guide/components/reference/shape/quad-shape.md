@@ -1,6 +1,6 @@
 ---
-title: Quad Shape component
-linktitle: Quad
+title: Quad Shape Component
+linktitle: Quad Shape
 description: ' Open 3D Engine (O3DE) Quad Shape component reference. '
 weight: 100
 ---
@@ -9,26 +9,33 @@ weight: 100
 
 The **Quad Shape** component creates a transparent square plane that's oriented on the local Z axis. The dimensions of the quad can be edited with the **Width** and **Height** properties. The Quad Shape component is not a mesh, but rather a helper geometry that can be used to define areas for area lights, spawners, shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
-## Provider ##
+## Provider
 
 [O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
-## Properties ##
+## Quad Shape properties
 
 ![Quad Shape component properties](/images/user-guide/components/reference/shape/quad-shape-component-ui-01.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
-| **Visible** | Enable to always display the Shape component in the Perspective view, even when the entity is not selected. Disable to hide the Shape component when the entity is not selected. | Boolean | `Enabled` |
-| **Game View** | Enable to display the Shape component while in game mode in the editor. | Boolean | `Disabled` |
-| **Shape Color** | The color of the Shape component. | Eight bits per channel color: 0-255 | `255,255,199` |
-| **Width** | The width of the Quad Shape in meters on the local X axis. | 0 - Infinity | `1.0` |
-| **Height** | The height of the Quad Shape in meters on the local Y axis. | 0 - Infinity | `1.0` |
+| **Visible** | Enable to always display the shape in the viewport, even when the entity is not selected. Disable to hide the shape when the entity is not selected. | Boolean | `Enabled` |
+| **Game View** | Enable to display the shape while in game mode. | Boolean | `Disabled` |
+| **Shape Color** | The color of the shape. | Eight bits per channel color: 0-255 | `255,255,199` |
+| **Width** | The width of the shape in meters on the local X axis. | 0.0 to Infinity | `1.0` |
+| **Height** | The height of the shape in meters on the local Y axis. | 0.0 to Infinity | `1.0` |
 
-## Component request bus ##
+## QuadShapeComponentRequestsBus
 
-Use the following request functions with the `QuadShapeComponentRequestBus` EBus interface to communicate with other components of your game.
+Use the following request functions with the `QuadShapeComponentRequestsBus` EBus interface to communicate with Quad Shape components in your game.
 
 | Request Name | Description | Parameter | Return | Scriptable |
 |-|-|-|-|-|
-| `GetQuadConfiguration` | Returns the configuration of the quad shape. | None | `QuadShapeConfiguration` object that contains the configuration for the quad shape. | Yes |
+| `GetQuadConfiguration` | Returns the configuration of the quad shape. | None | `LmbrCentral_QuadShapeConfig` object that contains the properties `Height` and `Width`. | Yes |
+|`GetQuadHeight`| Returns the **Height** of the quad shape. | None | Height: Float | Yes |
+|`GetQuadOrientation`| Returns the orientation of the quad shape. | None | Orientation: Quaternion | Yes |
+|`GetQuadWidth`| Returns the **Width** of the quad shape. | None | Width: Float | Yes |
+|`SetQuadHeight`| Sets the **Height** of the quad shape. | Height: Float | None | Yes |
+|`SetQuadWidth`| Sets the **Width** of the quad shape. | Width: Float | None | Yes |
+
+Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.
