@@ -6,7 +6,11 @@ weight: 600
 toc: true
 ---
 
-To add an image, use syntax similar to a link, preceded by an exclamation mark. The text in the brackets is displayed when the image does not load. Inside the parentheses is the link to the image asset, and an optional image title in double quotes.
+There are two available methods to add images to documentation topics. You can use markdown syntax, or the `image-width` shortcode. If you are adding multiple images, very large images, or `.svg` diagrams, consider using the `image-width` shortcode to limit the width of images as the image scales to the width of the browser window.
+
+## Adding images with markdown syntax
+
+To add an image with markdown syntax, use syntax similar to a link, preceded by an exclamation mark. The text in the brackets is displayed when the image does not load. Inside the parentheses is the link to the image asset, and an optional image title in double quotes.
 
 Image example:
 
@@ -17,6 +21,31 @@ Image example:
 Image output:
 
 ![O3DE Logo](/img/logos/O3DE-Logo-with-WordMark-Black-Mono.svg "The O3DE logo")
+
+## Adding images with the `image-width` shortcode
+
+The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images don't scale overly large in wide browser windows. Use this method when adding `.svg` diagrams, very large images, and in topics with multiple images where consistent image widths are desirable.
+
+`image-width` takes three parameters in order:
+
+1. image name
+1. width
+1. alternate text
+
+`image-width` example:
+
+```markdown
+{{</* image-width "/images/welcome-guide/wg-welcome-page-color.png" "700" "The O3DE Welcome Guide splash image." */>}}
+```
+
+`image-width` example output:
+
+{{< image-width "/images/welcome-guide/wg-welcome-page-color.png" "700" "The O3DE Welcome Guide splash image." >}}
+
+
+## Alternate text
+
+Alternate text for images is very important. It provides a description of the image if the image is not loaded. The alternate text is also used in accessibility scenarios and in search engine optimization (SEO). Ensure that the alternate text provided for images clearly explains the contents of the image. 
 
 ## Image file location
 
@@ -80,7 +109,7 @@ Artful images are used for artistic or marketing purposes, such as images that d
 * Use solid color fills, not gradient fills.
 * Avoid colors affected by colorblindness. We recommend using white text and Rhodamine Red C (RGB: 225,0,152 HEX: E10098) for image annotations. See the following annotated image example:
 
-![Example of an image annotation](/images/welcome-guide/ui-editor-labeled.png)
+{{< image-width "/images/welcome-guide/ui-editor-labeled.png" "1000" "An annotated image of O3DE Editor's user interface." >}}
 
 ## Diagrams
 
@@ -96,7 +125,7 @@ Artful images are used for artistic or marketing purposes, such as images that d
 
 Animated images are not currently accepted for contribution due to limitations on repository size. If you must demonstrate steps, use a horizontal two to four panel annotated image strip that demonstrates the start, action, and result of the process. See the example below:
 
-![Example of an image strip](/images/contributing/to-docs/image-strip-example.png)
+{{< image-width "/images/contributing/to-docs/image-strip-example.png" "700" "An image strip example with two panels." >}}
 
 1. **Left-click** on the entity in **Perspective** to select it.
 1. **LMB+Drag** on the transform gizmo's **Z** axis to move the entity on the world **Z** axis.
