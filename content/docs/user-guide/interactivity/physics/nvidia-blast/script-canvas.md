@@ -2,6 +2,7 @@
 description: ' Create realistic destruction simulations in Open 3D Engine with NVIDIA Blast. '
 title: Script Canvas nodes for NVIDIA Blast
 weight: 800
+draft: true
 ---
 
 The NVIDIA Blast gem includes several **Script Canvas** nodes to script destructible assets. The nodes can be found in the **Blast** group in **Script Canvas**.
