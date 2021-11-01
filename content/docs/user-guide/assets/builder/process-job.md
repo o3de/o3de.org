@@ -6,7 +6,12 @@ weight: 300
 toc: true
 ---
 
-**Asset Processor** calls the registered callback when it has a job for the **Asset Builder** to process. The callback processes the source asset, generates at least one product asset in a temporary directory, registers the product assets via a `JobProduct` entry inside a `ProcessJobResponse` instance, and returns a success value inside the `ProcessJobResponse`.
+**Asset Processor** calls the registered callback when it has a job for the **Asset Builder** to process. The callback does the following:
+
+* Processes the source asset.
+* Generates at least one product asset in a temporary directory.
+* Registers the product assets via a `JobProduct` entry inside a `ProcessJobResponse` instance.
+* Returns a success value inside the `ProcessJobResponse`.
 
 ## ProcessJobRequest
 
@@ -14,16 +19,16 @@ toc: true
 
 | Field | Type | Description |
 | - | - | - |
-| `sourceFile` | String | source asset name |
-| `watchFolder` | String | scan directory for the source asset |
-| `fullPath` | String | source asset path |
-| `builderGuid` | `azlmbr.math.Uuid` | Asset Builder ID |
-| `jobDescription` | `azlmbr.asset.builder.JobDescriptor` | job descriptor for this job created in `OnCreateJobs` |
-| `tempDirPath` | String | temp directory that the Asset Builder uses to create job outputs for this job request |
-| `platformInfo` | `azlmbr.asset.builder.PlatformInfo` | information about the platform for this job |
-| `sourceFileDependencyList` | List[`azlmbr.asset.builder.SourceFileDependency`] | source asset dependency information |
-| `sourceFileUUID` | `azlmbr.math.Uuid` | the UUID of the source asset |
-| `jobId` | Number | job ID for this job that also serves as the address for the `JobCancelListener` |
+| `sourceFile` | String | Source asset name. |
+| `watchFolder` | String | Scan directory for the source asset. |
+| `fullPath` | String | Source asset path. |
+| `builderGuid` | `azlmbr.math.Uuid` | Asset Builder ID. |
+| `jobDescription` | `azlmbr.asset.builder.JobDescriptor` | Job descriptor for this job created in `OnCreateJobs`. |
+| `tempDirPath` | String | Temp directory that the Asset Builder uses to create job outputs for this job request. |
+| `platformInfo` | `azlmbr.asset.builder.PlatformInfo` | Information about the platform for this job. |
+| `sourceFileDependencyList` | List[`azlmbr.asset.builder.SourceFileDependency`] | Source asset dependency information. |
+| `sourceFileUUID` | `azlmbr.math.Uuid` | The universal unique identifier (UUID) of the source asset. |
+| `jobId` | Number | Job ID for this job that also serves as the address for the `JobCancelListener`. |
 
 The `jobDescription` field contains the job parameters that the `OnCreateJobs` step created for this job.
 
@@ -37,10 +42,10 @@ The `sourceFileUUID` field is both the unique ID of the source asset, and the fi
 
 | Field | Type | Description |
 | - | - | - |
-| `resultCode` | `azlmbr.asset.builder.ProcessJobResponse Result Code` | the result of the process job |
-| `outputProducts` | List[`azlmbr.asset.builder.JobProduct`] | list of job product assets |
-| `requiresSubIdGeneration` | Boolean | determines if legacy product assets need sub ids generated |
-| `sourcesToReprocess` | List[String] | absolute source asset paths to trigger rebuilds |
+| `resultCode` | `azlmbr.asset.builder.ProcessJobResponse Result Code` | The result of the process job. |
+| `outputProducts` | List[`azlmbr.asset.builder.JobProduct`] | List of job product assets. |
+| `requiresSubIdGeneration` | Boolean | Determines if legacy product assets need sub ids generated. |
+| `sourcesToReprocess` | List[String] | Absolute source asset paths to trigger rebuilds. |
 
 The `resultCode` field defaults to `azlmbr.asset.builder.ProcessJobResponse_Failed`. An empty `ProcessJobResponse` indicates that the job failed.
 
@@ -81,12 +86,12 @@ The `JobProduct` constructor takes in a product asset name (relative to the sour
 
 | Field | Type | Description |
 | - | - | - |
-| productFileName | String | a relative or absolute product asset path |
-| productAssetType | `azlmbr.math.Uuid` | the asset type ID this product asset adds to the **Asset Catalog** |
-| productSubID | Number | a stable and unique product identifier |
-| productDependencies | List[`ProductDependency`] | product asset dependencies for this source asset |
-| pathDependencies | Set{`ProductPathDependency`} | specifies product dependencies by relative path to source assets |
-| dependenciesHandled | Boolean | indicates whether the Asset Builder has output all possible dependencies |
+| productFileName | String | A relative or absolute product asset path. |
+| productAssetType | `azlmbr.math.Uuid` | The asset type ID this product asset adds to the **Asset Catalog**. |
+| productSubID | Number | A stable and unique product identifier. |
+| productDependencies | List[`ProductDependency`] | Product asset dependencies for this source asset. |
+| pathDependencies | Set{`ProductPathDependency`} | Specifies product dependencies by relative path to source assets. |
+| dependenciesHandled | Boolean | Indicates whether the Asset Builder has output all possible dependencies. |
 | JobProduct | Constructor | Inputs: `productFileName:str`, `productAssetType:azlmbr.math.Uuid`, `productSubID:number` |
 
 ### ProductDependency 
@@ -95,7 +100,7 @@ The `JobProduct` constructor takes in a product asset name (relative to the sour
 
 | Field | Type | Description |
 | - | - | - |
-| `dependencyId` | `azlmbr.math.Uuid` | the asset ID of this product asset dependency |
+| `dependencyId` | `azlmbr.math.Uuid` | The asset ID of this product asset dependency. |
 
 ### ProductPathDependency 
 
@@ -106,7 +111,7 @@ The `dependencyType` field indicates if the path points to a source asset or a p
 | Field | Type | Description |
 | - | - | - |
 | `dependencyPath` | String | relative path to the asset dependency |
-| `dependencyType` | `azlmbr.asset.builder.ProductPathDependency Type` | indicates if the dependency path points to a source asset or a product asset |
+| `dependencyType` | `azlmbr.asset.builder.ProductPathDependency Type` | Indicates if the dependency path points to a source asset or a product asset. |
 
 ### ProductPathDependency Type 
 
