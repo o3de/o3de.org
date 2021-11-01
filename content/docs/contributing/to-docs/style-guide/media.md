@@ -45,7 +45,7 @@ The `image-width` shortcode adds an image with alternate text and restricts the 
 
 ## Alternate text
 
-Alternate text for images is very important. It provides a description of the image if the image is not loaded. The alternate text is also used in accessibility scenarios and in search engine optimization (SEO). Ensure that the alternate text provided for images clearly explains the contents of the image. 
+Alternate text for images is very important. It provides a description of the image if the image is not loaded. The alternate text is also used in accessibility scenarios and in search engine optimization (SEO). Ensure that the alternate text provided for images clearly describes the contents of the image. 
 
 ## Image file location
 
