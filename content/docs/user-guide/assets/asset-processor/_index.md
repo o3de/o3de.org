@@ -8,15 +8,15 @@ toc: true
 
 **Asset Processor** starts automatically with **Open 3D Engine (O3DE) Editor**, and runs as a background process. Asset Processor provides many asset related functions including the following:
 
-* detect new or updated assets
-* send **Create Jobs** requests to appropriate **Asset Builders**
-* schedule process jobs provided by Asset Builders
-* manage the process job queue
-* provide status, logs, and messages about asset process jobs
-* place generated product assets and related data in the **Asset Cache**
-* send notifications when product assets have been updated so they can be hot reloaded by **O3DE Editor**, tools, and project runtimes
-* provide tools to retrieve information about source assets and product assets
-* track source dependencies, job dependencies, and product dependencies
+* Detect new or updated source assets.
+* Send **Create Jobs** requests to appropriate **Asset Builders**.
+* Schedule process jobs provided by Asset Builders.
+* Manage the process job queue.
+* Provide status, logs, and messages about asset process jobs.
+* Place generated product assets and related data in the **Asset Cache**.
+* Send notifications when product assets have been updated so they can be hot reloaded by **O3DE Editor**, tools, and runtimes.
+* Provide tools to retrieve information about source assets and product assets.
+* Track source dependencies, job dependencies, and product dependencies.
 
 With Asset Processor, a **Launcher** can be run on a target platform without deploying assets to that platform. Instead, the assets are accessed from the Asset Cache on a connected host platform. Asset Processor communicates through a USB connection with mobile target platforms using proxy requests.
 

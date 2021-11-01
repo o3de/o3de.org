@@ -16,27 +16,22 @@ If Asset Processor isn't working as expected, use the information in the **Logs*
 
 1. In the **Logs** section, you can view the following:
 
-* **Status** - the date and time stamp of the log
-* **Source** - what produced the log (for example, Asset Processor)
-* **Message** - the description of the log
+    * **Status** - The date and time stamp of the log.
+    * **Source** - What produced the log (for example, Asset Processor).
+    * **Message** - The description of the log.
 
-![Asset Processor UI logs tab](/images/user-guide/assets/asset-processor/interface-logs.png)
+    ![Asset Processor UI logs tab](/images/user-guide/assets/asset-processor/interface-logs.png)
 
 1. To create another log report, choose **Add**.
 
-1. In the **Create New Logging Tab**, you can specify the settings below.
+1. In the **Create New Logging Tab**, you can specify the settings below:
 
-    * **Filter name** - the name of your filter (for example, `All logs`)
-    
-    * **Text filter (optional)** - text to filter the log results
-    
-    * **Show messages** - display messages about each log
-    
-    * **Show warnings** - display logs that have warnings
-    
-    * **Show errors** - display logs that have errors
-    
-    * **Show debug** - display logs that have debug issues
+    * **Filter name** - The name of your filter (for example, `All logs`).
+    * **Text filter (optional)** - Text to filter the log results.
+    * **Show messages** - Display messages about each log.
+    * **Show warnings** - Display logs that have warnings.
+    * **Show errors** - Display logs that have errors.
+    * **Show debug** - Display logs that have debug issues.
 
     ![Create a log tab in Asset Processor.](/images/user-guide/asset_processor/create-logging-tab.png)
 
@@ -70,7 +65,7 @@ You must start Asset Processor before you can enter a `-debug` command.
    AssetBuilder.exe -help
    ```
 
-1. You can use the debug options below.
+1. You can use the debug options below:
 
     * To debug a specified file, run the command below.
 
@@ -104,8 +99,8 @@ Use this tool to automatically attach the debugger to spawned child processes.
 
 Use the procedure below to debug in either of the following scenarios:
 
-* intermittent failures that are difficult to reproduce in a single run of Asset Builder using the `-debug` option
-* failures that only occur in multiple process job requests
+* Intermittent failures that are difficult to reproduce in a single run of Asset Builder using the `-debug` option.
+* Failures that only occur in multiple process job requests.
 
 1. In a text editor, open the `Registry/AssetProcessorPlatformConfig.setreg` file and set `maxjobs=1`. This limits Asset Processor to run one job at a time.
 
@@ -113,7 +108,7 @@ Use the procedure below to debug in either of the following scenarios:
 
 1. To debug, attach the `AssetBuilder.exe` in Visual Studio. There is only one Asset Builder.
 
-   The next time that you modify your source file, `AssetBuilder.exe` builds that asset.
+The next time that you modify your source file, `AssetBuilder.exe` builds that asset.
 
 {{< note >}}
 You can spawn multiple instances of `AssetBuilder.exe` and attach them to Visual Studio.

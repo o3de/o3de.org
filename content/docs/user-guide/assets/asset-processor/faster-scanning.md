@@ -41,11 +41,11 @@ When analyzing source assets, Asset Processor performs a series of low cost chec
 
 | Cost | Check |
 | - | - |
-| Very Low | collect timestamp information for every file scanned as part of Asset Processor startup |
-| Very Low | check whether any **Asset Builders** had version or fingerprint changes by comparing Asset Builder fingerprints to the previous process jobs |
-| Very Low | compare the source asset timestamps with the timestamps in the **Asset Database** |
-| Low | query the Asset Database files table to get a list of every asset and its timestamp from previous process jobs |
-| Low | query the Asset Database sources table to get a list of the Asset Builder fingerprint for every source asset |
+| Very Low | Collect timestamp information for every file scanned as part of Asset Processor startup. |
+| Very Low | Check whether any **Asset Builders** had version or fingerprint changes by comparing Asset Builder fingerprints to the previous process jobs. |
+| Very Low | Compare the source asset timestamps with the timestamps in the **Asset Database**. |
+| Low | Query the Asset Database files table to get a list of every asset and its timestamp from previous process jobs. |
+| Low | Query the Asset Database sources table to get a list of the Asset Builder fingerprint for every source asset. |
 
 ## Full Scan
 
@@ -53,14 +53,14 @@ You can perform a **Full Scan**, even when Faster Scanning Mode is active. A Ful
 
 | Cost | Analysis |
 | - | - |
-| Low | determine which Asset Builders are responsible for building an asset |
-| Low | check source assets against the Asset Database to get information about previous process jobs |
-| Low | compare the new job fingerprints against the previous jobs |
-| Moderate | generate a job fingerprint that includes timestamps of source assets and dependencies and the versions of the Asset Builders |
-| High | check the **Asset Cache** and ensure that every product asset previously generated for the source asset is still present |
-| Very High | send a **Create Jobs** request to the registered Asset Builders so that they can spawn jobs for the job queue |
+| Low | Determine which Asset Builders are responsible for building an asset. |
+| Low | Check source assets against the Asset Database to get information about previous process jobs. |
+| Low | Compare the new job fingerprints against the previous jobs. |
+| Moderate | Generate a job fingerprint that includes timestamps of source assets and dependencies and the versions of the Asset Builders. |
+| High | Check the **Asset Cache** and ensure that every product asset previously generated for the source asset is still present. |
+| Very High | Send a **Create Jobs** request to the registered Asset Builders so that they can spawn jobs for the job queue. |
 
-If a given source asset found during the scan meets all of the criteria below, then that source asset can be excluded from reanalysis.
+A source asset found during the scan can be excluded from reanalysis if it meets all of the criteria below: 
 
 * The source asset hasn’t changed on disk (its timestamp matches the timestamp in the Asset Database).
 * The source assets's dependencies haven’t changed on disk (the source dependency timestamps match the timestamps in the Asset Database).
@@ -72,10 +72,10 @@ If a given source asset found during the scan meets all of the criteria below, t
 
 ## Perform a full scan
 
+A full scan checks the Asset Cache for product assets and rebuilds the appropriate source assets. To start a full scan, follow the steps below: 
+
 1. Choose the Tools tab in Asset Processor.
 1. Choose Start Scan.
-
-This starts a full scan immediately. A full scan checks the Asset Cache for product assets and rebuilds the appropriate source assets.
 
 {{< note >}}
 If you are having issues with the Asset Cache, performing a full scan might resolve the issues. If a full scan does not repair the Asset Cache, you can rebuild the entire Asset Cache by deleting the `Cache` directory in your project. If you’re an engineer making BuilderSDK-based Asset Builders, deleting the cache is not recommended.
