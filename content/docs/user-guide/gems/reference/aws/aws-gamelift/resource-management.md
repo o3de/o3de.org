@@ -3,7 +3,7 @@ linkTitle: Resource Management
 title: AWS GameLift Gem Resource Management
 description: "Learn about the sample CDK application with the AWS GameLift Gem in O3DE"
 toc: true
-weight: 800
+weight: 900
 ---
 
 The AWS GameLift Gem provides a sample CDK application that can be used to model and deploy the following Amazon GameLift resources:
