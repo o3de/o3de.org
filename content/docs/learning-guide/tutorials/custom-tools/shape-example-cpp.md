@@ -56,7 +56,7 @@ For more information on Gem modules and system components, refer to the [C++ Pro
 Most of the code for your tool's functionality and UI elements will be in the `ShapeExampleWidget.h` and `ShapeExampleWidget.cpp` file. O3DE builds off the Qt framework, so you will use [Qt Widgets Module](https://doc.qt.io/qt-5/qtwidgets-index.html) to create a graphical user interface (GUI). You will also use EBusses to communicate with other O3DE interfaces, such as entities and components, to program the tool's functionality.
 
 
-### Qt and Qt Resources
+### Qt Resources
 
 The [Qt Resource System](https://doc.qt.io/qt-5/resources.html), which allows Gems to store and load image files via a `.qrc` file. This eliminates the need to load image files from absolute paths, making it simpler for you to distribute your Gem. Later, you will store an image file to create an icon for your tool.
 
