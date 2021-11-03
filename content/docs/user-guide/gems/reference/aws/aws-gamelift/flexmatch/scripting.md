@@ -1,7 +1,7 @@
 ---
 linkTitle: FlexMatch Scripting
 title: FlexMatch Scripting
-description: Learn about Script Canvas nodes for the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn about Script Canvas nodes for player matchmaking in the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 400
 ---

@@ -1,7 +1,7 @@
 ---
 linkTitle: Session Management C++ API
 title: Session Management C++ API 
-description: Learn how to use the C++ API for the session management.
+description: Learn how to use the multiplayer session management C++ API with the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 300
 ---
@@ -15,7 +15,7 @@ The session interface performs all of the session handling. The Gem acts as a ga
 There must be only one implementation of the session interface per dedicated server solution. To add support for another dedicated server solution, you must create another implementation of the session interface.
 
 
-### Client Initialization
+### Client initialization
 
 To make requests against GameLift, you must configure a proper GameLift client by using `AWSGameLiftClientManager::ConfigureGameLiftClient()`. 
 
@@ -30,14 +30,11 @@ AWSGameLift::AWSGameLiftRequestBus::Broadcast(& AWSGameLift::AWSGameLiftRequestB
 
 #### `CreateSession`
 
-Creates a multiplayer session for players to find and join. This API is for development/experiementation only. 
-Prefer to use queues and async game session placement, ideally from a FlexMatch or a game service component in production.
-Please check [Get Started with Custom Servers](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-integration.html) for more details.
+Creates a multiplayer session for players to find and join. This API should only be used for experimentation during development. Prefer to use queues and async game session placement, ideally from a FlexMatch or game service component in production. Refer to [Get Started with Custom Servers](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-integration.html) for more details.
 
 To create a session, call `AWSGameLiftClientManager::CreateSession()` or `AWSGameLiftClientManager::CreateSessionAsync()`. This makes a request call that configures the new session. 
 
-When a session begins to create, the `OnCreateSessionBegin` notification is broadcasted on the server side to perform setup operations, such as loading the level.
-At the end of the creation, the `OnCreateSessionEnd` notification is broadcasted on the server side to perform any follow-up operation after session is created and active.
+When session creation begins, the `OnCreateSessionBegin` notification is broadcast on the server side to perform setup operations, such as loading the level. When session creation completes and the session is active, the `OnCreateSessionEnd` notification is broadcast on the server side to perform any follow-up operations.
 
 ```cpp
 // For example, make synchronous call to create a game session with max 2 players
@@ -137,7 +134,7 @@ As the default behavior, when the last player leaves the game session, GameLift 
 
 ## Server Side
 
-### Server Initialization
+### Server initialization
 
 You must notify Amazon GameLift service that your server process is ready to host game sessions, handle requests, and take connections.
 
@@ -149,7 +146,7 @@ AWSGameLift::AWSGameLiftServerRequestBus::Broadcast(&AWSGameLift::AWSGameLiftSer
 ```
 
 
-### Server notifications
+### Server notification APIs
 
 After the game session has been created, notifications are broadcast through `AzFramework::SessionNotificationBus`. You can program how your session responds to these notifications.
 

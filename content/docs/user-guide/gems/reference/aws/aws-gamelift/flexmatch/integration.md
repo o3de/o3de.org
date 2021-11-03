@@ -1,14 +1,14 @@
 ---
 linkTitle: FlexMatch Integration
 title: FlexMatch Integration
-description: Learn how to set up the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn how to integrate FlexMatch into your game and dedicated server using the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 200
 ---
 
 ## Prerequisites
 
-- Finish the session management integration for the game client and dedicated server.
+- Finish the [session management integration](../session-management/integration) for the game client and dedicated server.
 
 ## Integrate game client
 
