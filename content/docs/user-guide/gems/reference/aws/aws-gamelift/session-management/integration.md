@@ -1,7 +1,7 @@
 ---
 linkTitle: Session Management Integration
 title: Session Management Integration
-description: Learn how to set up the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn how to integrate multiplayer session management into your game and dedicated server using the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 200
 ---
@@ -26,7 +26,7 @@ For more details on GameLift server initialization, refer to the [Server initial
 For more details on GameLift server notifications, refer to the [Server notifications](cpp-api/#server-notifications) section of the AWS GameLift Gem C++ API page.
 
 
-## Related Information
+## Related information
 
 - [Integrating Games with Custom Game Servers](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-custom-intro.html)
 
