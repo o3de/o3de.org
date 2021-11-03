@@ -1,7 +1,7 @@
 ---
 linkTitle: FlexMatch C++ API
 title: FlexMatch C++ API 
-description: Learn how to use the C++ API for the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn how to use the FlexMatch C++ API with the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 300
 ---
@@ -22,7 +22,7 @@ There must be only one implementation of the matchmaking interface per matchmaki
 
 Create a game match for a group of players. Check [StartMatchmaking](https://docs.aws.amazon.com/gamelift/latest/apireference/API_StartMatchmaking.html) for more details.
 
-To start matchmaking, call `AWSGameLiftClientManager::StartMatchmaking()` or `AWSGameLiftClientManager::StartMatchmakingAsync()` and pass in a reference to the StartMatchmaking request, which contains the matchmaking criteria. After the request is snet, you may want to keep polling the matchmaking ticket status to check whether the match is complete.
+To start matchmaking, call `AWSGameLiftClientManager::StartMatchmaking()` or `AWSGameLiftClientManager::StartMatchmakingAsync()` and pass in a reference to the StartMatchmaking request, which contains the matchmaking criteria. After the request is sent, you may want to keep polling the matchmaking ticket status to check whether the match is complete.
 
 ```cpp
 // For example, make synchronous call to start a game match for the current player

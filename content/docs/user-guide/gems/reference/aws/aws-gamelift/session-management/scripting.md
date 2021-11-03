@@ -1,7 +1,7 @@
 ---
 linkTitle: Session Manangement Scripting
 title: Session Manangement Scripting
-description: Learn about Script Canvas nodes for the AWS GameLift Gem in Open 3D Engine (O3DE).
+description: Learn about Script Canvas nodes for multiplayer session management in the AWS GameLift Gem in Open 3D Engine (O3DE).
 toc: true
 weight: 400
 ---
