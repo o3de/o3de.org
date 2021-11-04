@@ -9,7 +9,7 @@ Script Canvas is a general purpose, visual scripting environment for **Open 3D E
 
 Script Canvas is an extensible system. You can build your own reusable Script Canvas functions from within the Script Canvas Editor, and use Script Canvas nodes that are created automatically from functionality exposed through the [behavior context](/docs/user-guide/appendix/glossary#behavior-context). The behavior context reflects runtime code, making it accessible to scripts by providing bindings to C++ classes, methods, properties, constants, and enums. The behavior context also provides bindings for O3DE's [AZ::Event](/docs/user-guide/engine/az-event) and [EBus](/docs/user-guide/appendix/glossary#ebus) messaging systems, giving you the ability to use Script Canvas nodes to dispatch and handle messages and events.
 
-To extend Script Canvas even further, you can create your own custom nodes ("nodeables") using the powerful autogen capabilities of the [AzAutoGen](/docs/user-guide/engine/autogen) system.
+To extend Script Canvas even further, you can create your own custom nodes ("nodeables") using the powerful automatic generation capabilities of the [AzAutoGen](/docs/user-guide/engine/autogen) system.
 
 The ease of use of this visual scripting environment does not come at the cost of performance compared to the more traditional Lua model. To improve performance, Script Canvas graphs are translated by the Asset Processor to optimized Lua script.
 

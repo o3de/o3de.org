@@ -73,9 +73,9 @@ Read the [Atom Documentation](/docs/atom-guide) to find out more!
 
 In O3DE, you have *two* scripting environments available for creating runtime logic: a visual scripting tool called Script Canvas, and a more traditional scripting model, Lua.
 
-With Script Canvas, scripts are created as flow graphs by placing and connecting functional nodes in a visual editor, no programming required. Script Canvas allows you to experiment and iterate quickly, and provides an easy yet powerful entry point to new developers.
+With Script Canvas, you can create scripts as flow graphs by placing and connecting functional nodes in a visual editor, no programming required. Script Canvas allows you to experiment and iterate quickly, and provides an easy yet powerful entry point to new developers.
 
-With Lua, O3DE supports a well-established scripting language, and the ability to use the editor of your choice.
+With Lua, O3DE supports a well-established scripting language and the ability to use the editor of your choice.
 
 You don't have to choose one or the other. You can use both Script Canvas and Lua in your projects and even within the same entity.
 
