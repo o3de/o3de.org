@@ -26,9 +26,9 @@ Image output:
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images don't scale overly large in wide browser windows. Use this method when adding `.svg` diagrams, very large images, and in topics with multiple images where consistent image widths are desirable.
 
-`image-width` takes three parameters in order:
+`image-width` takes three double-quoted parameters in order:
 
-1. image name
+1. image link
 1. width
 1. alternate text
 
@@ -45,7 +45,7 @@ The `image-width` shortcode adds an image with alternate text and restricts the 
 
 ## Alternate text
 
-Alternate text for images is very important. It provides a description of the image if the image is not loaded. The alternate text is also used in accessibility scenarios and in search engine optimization (SEO). Ensure that the alternate text provided for images clearly describes the contents of the image. 
+Alternate text for images is very important. It provides a description of the image if the image is not loaded. The alternate text is also used for accessibility and in search engine optimization (SEO). Ensure that the alternate text provided for images clearly describes the contents of the image. 
 
 ## Image file location
 
