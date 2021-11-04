@@ -11,7 +11,7 @@ Script Canvas is an extensible system. You can build your own reusable Script Ca
 
 To extend Script Canvas even further, you can create your own custom nodes ("nodeables") using the powerful automatic generation capabilities of the [AzAutoGen](/docs/user-guide/engine/autogen) system.
 
-The ease of use of this visual scripting environment does not come at the cost of performance compared to the more traditional Lua model. To improve performance, Script Canvas graphs are translated by the Asset Processor to optimized Lua script.
+The ease of use of this visual scripting environment does _not_ come at the cost of performance when compared to the more traditional Lua model. To maintain similar performance, Script Canvas graphs are translated by the Asset Processor to optimized Lua script.
 
 To use Script Canvas in your O3DE project, you must enable the [Script Canvas](/docs/user-guide/gems/reference/script/script-canvas) Gem and its dependencies.
 
