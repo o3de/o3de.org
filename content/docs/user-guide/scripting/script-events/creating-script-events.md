@@ -33,8 +33,8 @@ To ensure that the script event asset saved correctly, check the bottom of the A
 
 | Script Event Field | Description |
 | --- | --- |
-| Name | Enter a name that identifies the script event in Lua and in the Script Canvas editor **Node Palette**. Event names must have only alphanumeric characters and cannot start with a number or contain white space. |
-| Category | Enter a name for the category in the Script Canvas editor **Node Palette** in which the script events appear. The default category is **Script Events**. To nest categories, use the syntax _category/sub_category/sub_category_. |
+| Name | Enter a name that identifies the script event in Lua and in the Script Canvas Editor **Node Palette**. Event names must have only alphanumeric characters and cannot start with a number or contain white space. |
+| Category | Enter a name for the category in the **Script Canvas Editor** **Node Palette** in which the script events appear. The default category is **Script Events**. To nest categories, use the syntax _category/sub_category/sub_category_. |
 | Tooltip | Enter a description for the script event. The description appears when the user pauses a pointer on the script event in the **Node Palette** or on the event node in a graph. |
 | Address Type | (Optional) Choose a data type for the value that addresses this script event. Possible types are **String**, **Entity Id**, or **Tag**. |
 | Events | Specify a list of events that are sent and received by the scripting system. Define the events in the same way that you define functions in a programming language. The events that you create are available for dragging and dropping from the Script Canvas **Node Palette**. |

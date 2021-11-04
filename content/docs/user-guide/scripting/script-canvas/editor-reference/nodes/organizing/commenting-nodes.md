@@ -1,7 +1,7 @@
 ---
 linktitle: Commenting Nodes
 title: Commenting Nodes in Script Canvas
-description: Use the Open 3D Engine Script Canvas editor to add comments to your script.
+description: Use the Open 3D Engine Script Canvas Editor to add comments to your script.
 weight: 200
 ---
 
@@ -9,11 +9,11 @@ You can add comments to your script to describe how it works.
 
 ## Adding comment nodes
 
-A **Comment** node is a floating block of text that you can move in the Script Canvas editor canvas.
+A **Comment** node is a floating block of text that you can move in the **Script Canvas Editor** canvas.
 
 **To add a Comment node to your script**
 
-1. In the Script Canvas editor, do one of the following:
+1. In the Script Canvas Editor, do one of the following:
     + In the **Node Palette**, choose **Utilities** and then choose and drag the **Comment** node to your script.
     + **Right-click** your script and choose **Add Comment**.
 
@@ -31,7 +31,7 @@ The **Block Comment** node is similar to the **Comment** node, except that you c
 
 **To add a Block Comment node to your script**
 
-1. In the Script Canvas editor, do one of the following:
+1. In the Script Canvas Editor, do one of the following:
     + In the **Node Palette**, click **Utilities** and then drag the **Block Comment** node to your script.
     + **Right-click** the canvas and choose **Create Block Comment**.
     + If you have a group of nodes together, **right-click** the canvas and choose **Create Block Comment for Selection**.
@@ -63,7 +63,7 @@ You can change the font settings in comment nodes to label and organize your scr
 
 **To change the font settings for comment nodes**
 
-1. In the Script Canvas editor, choose **View**, **Node Inspector**.
+1. In the Script Canvas Editor, choose **View**, **Node Inspector**.
 
 1. Do one of the following:
     + For a **Comment** node, select the node.

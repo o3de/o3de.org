@@ -1,7 +1,7 @@
 ---
 linktitle: Variables
 title: Script Canvas Variables and the Variable Manager
-description: Use the Variable Manager in the Open 3D Engine (O3DE) Script Canvas editor to add or manage variables and create get, set, or value-changed event nodes in your  Script Canvas graph.
+description: Use the Variable Manager in the Open 3D Engine (O3DE) Script Canvas Editor to add or manage variables and create get, set, or value-changed event nodes in your  Script Canvas graph.
 weight: 300
 ---
 
@@ -13,7 +13,7 @@ You can add variables to your Script Canvas graph to declare and initialize them
 
 **To add and configure a variable**
 
-1. In the **Script Canvas** editor, open your Script Canvas graph or create one.
+1. In the **Script Canvas Editor**, open your Script Canvas graph or create one.
 
 1. In the **Variable Manager**, choose **Create Variable** and then choose your variable type. You can search to filter the list of variable types.
 
@@ -31,7 +31,7 @@ Common variable types are pinned to the top of the list by default. You can cust
 
     * For **Name**, enter a name to identify that color variable. You can also double-click the name in the **Variable Manager** to rename the variable.
     * For **Color**, enter an RGB value or use the color picker.
-    * For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas editor, or leave the default at -1.
+    * For **Display Order**, enter the relative order in which you want the variable to appear in the Script Canvas Editor, or leave the default at -1.
     * For **Scope**, select **In** to show the variable property and value under the assigned [Script Canvas](/docs/user-guide/components/reference/scripting/script-canvas/) component in the **Entity Inspector**, or leave the default at **Local** to keep the variable private to the graph.
 
         {{< note >}}
@@ -40,7 +40,7 @@ This setting allows you to use the same Script Canvas graph for more than one en
 
         ![Example of Color variable properties in the Script Canvas Node Inspector.](/images/user-guide/scripting/script-canvas/node-inspector-scope-in-example.png)
 
-1. In the Script Canvas editor, choose **File**, **Save** to save your changes.
+1. In the Script Canvas Editor, choose **File**, **Save** to save your changes.
 
 ## Setting Default Values for Variables
 
@@ -60,7 +60,7 @@ You can set the default value for variables in the **Node Inspector** or the **V
 
         ![Set the variable default values in the Variable Manager.](/images/user-guide/scripting/script-canvas/variable-manager-modify-variable-values.png)
 
-1. In the Script Canvas editor, choose **File**, **Save** to save your changes to the graph.
+1. In the Script Canvas Editor, choose **File**, **Save** to save your changes to the graph.
 
 ## Creating Get or Set Variable Nodes
 
