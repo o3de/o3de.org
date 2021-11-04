@@ -28,7 +28,7 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 
 The PhysX system uses the following Gems, which you can enable in **Project Manager**.
 
-+ **[PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/)** - Provides integration for the [NVIDIA PhysX 4 SDK](https://developer.nvidia.com/physx-sdk) into O3DE. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games.
++ **[PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/)** - Provides integration for the [NVIDIA PhysX 4 SDK](https://developer.nvidia.com/physx-sdk) into O3DE. The integration provided includes a suite of components, configuration via the **O3DE Editor**, Script Canvas integration, **PhysX Visual Debugger** integration, and a simplified API abstraction layer for games.
 
   For more information, see [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/).
 + **[PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools.
