@@ -1,5 +1,7 @@
 ---
+linkTitle: Physics
 title: Physics
+description: Simulate physics, cloth, and destructible assets in Open 3D Engine (O3DE).
 ---
 
 O3DE's support for physics simulation is built around:
