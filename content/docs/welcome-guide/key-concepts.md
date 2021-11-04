@@ -176,7 +176,7 @@ Asset Bundler makes shipping the specific assets that are used for the release o
 
 O3DE includes two scripting technologies for creating logic and behaviors: *Script Canvas* and *Lua*.
 
-**Script Canvas** is a visual scripting environment. In the Script Canvas editor, you create, connect, and rearrange graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
+**Script Canvas** is a general purpose, visual scripting environment. In the **Script Canvas Editor**, you lay out and connect graphical nodes that provide a visual representation of the logic flow. Script Canvas offers an approachable and easy-to-read environment to author behaviors using the same framework as Lua and C++. You can use Script Canvas to create scripts without needing to know how to code.
 
 To enable Script Canvas for O3DE, you must enable the **Script Canvas Gem**.
 
