@@ -28,8 +28,8 @@ O3DE has build support for the following platforms and toolchains:
 | --- | --- |
 | Windows 64-bit | Visual Studio 2019 |
 | macOS, iOS | XCode 11 or later |
-| Android | Android Studio |
-| Linux | Automake |
+| Android | Android Clang/LLVM |
+| Linux | Clang/LLVM |
 
 {{< note >}}
 For additional platform-specific information, refer to the [Settings Reference](./reference/) and the relevant [platform overviews](/docs/user-guide/platforms/).
