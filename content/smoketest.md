@@ -423,9 +423,9 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 
 The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images and `.svg` diagrams don't scale overly large in wide browser windows.
 
-`image-width` takes three parameters in order:
+`image-width` takes three double-quoted parameters in order:
 
-1. image name
+1. image link
 1. width
 1. alt text
 
