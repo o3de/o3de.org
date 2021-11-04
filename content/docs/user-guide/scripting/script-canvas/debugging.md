@@ -4,11 +4,11 @@ title: Script Canvas Debugging
 description: Debug your Script Canvas graphs in Open 3D Engine (O3DE).
 ---
 
-Script Canvas supports live debugging of a Script Canvas graph running in-game. You can use O3DE Editor or non-editor tools like game launchers as debug targets.
+Script Canvas supports live debugging of a Script Canvas graph running in-game. You can use **O3DE Editor** or non-editor tools like game launchers as debug targets.
 
 **To open the Script Canvas debugger and choose a target**
 
-1. From the Script Canvas editor, choose **Tools**, **Debugging**. The debugger panel opens at the bottom of the Script Canvas editor.
+1. From the **Script Canvas Editor**, choose **Tools**, **Debugging**. The debugger panel opens at the bottom of the Script Canvas Editor.
 
    ![Choose Tools, Debugging.](/images/user-guide/scripting/script-canvas/script-canvas-debugging-1.png)
 
