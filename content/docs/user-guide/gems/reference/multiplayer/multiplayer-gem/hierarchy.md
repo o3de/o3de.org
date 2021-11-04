@@ -35,21 +35,21 @@ Network hierarchies can be created either in the Editor or by parenting entities
 
     ![Starting Hierarchy Root Entity](/images/user-guide/gems/reference/multiplayer/starting_hierarchy_root_entity.png)
 
-This entity will be a parent entity for hierarchical child entities.
+    This entity will be a parent entity for hierarchical child entities.
 
-5. A hierarchical child entity is formed by adding a **Network Hierarchy Child** component.
+1. A hierarchical child entity is formed by adding a **Network Hierarchy Child** component.
 
     ![Starting Hierarchy Child Entity](/images/user-guide/gems/reference/multiplayer/starting_hierarchy_child_entity.png)
 
-Notice that this entity is a child entity to the root entity.
+    Notice that this entity is a child entity to the root entity.
 
-![Simple Hierarchy Example](/images/user-guide/gems/reference/multiplayer/simple_hierarchy.png)
+    ![Simple Hierarchy Example](/images/user-guide/gems/reference/multiplayer/simple_hierarchy.png)
 
-Often a hierarchy is a group of entities that you want to spawn at runtime. In such cases you want to create a prefab out of the entities.
+    Often a hierarchy is a group of entities that you want to spawn at runtime. In such cases you want to create a prefab out of the entities.
 
-![Simple Hierarchy Prefab](/images/user-guide/gems/reference/multiplayer/simple_hierarchy_prefab.png)
+    ![Simple Hierarchy Prefab](/images/user-guide/gems/reference/multiplayer/simple_hierarchy_prefab.png)
 
-It is important that the entity with a **Network Hierarchy Root** component is at the top parent entity within the prefab. All other entities should have a **Network Hierarchy Child** component on them.
+    It is important that the entity with a **Network Hierarchy Root** component is at the top parent entity within the prefab. All other entities should have a **Network Hierarchy Child** component on them.
 
 
 ### ImGui Hierarchy Debugger
