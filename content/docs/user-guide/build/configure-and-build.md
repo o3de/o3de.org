@@ -144,10 +144,6 @@ For the full set of flags used by the compiler for each build configuration, see
 * `cmake/Common/<compiler>/Configurations_<compiler>.cmake`
 * `cmake/Platform/<platform ID>/Configurations_<platform ID>.cmake`
 
-{{< note >}}
-On the Linux platform when generating configurations and makefiles for GNU Automake, the build configuration is selected at the time of toolchain file generation and can't be configured on a per-build basis. To change build types on Linux, you'll need to regenerate the build files. For more information, read [Linux support](/docs/user-guide/platforms/linux).
-{{< /note >}}
-
 The following table is a high-level overview of what each build configuration does.
 
 | Configuration | Effects |
@@ -216,6 +212,69 @@ cmake --build build/linux --target <ProjectName>.GameLauncher Editor --config pr
 Refer to the previous section for an explanation of each parameter.
 
 In this example, build products are placed in the `build/linux/bin/profile` directory.
+
+{{% /tab %}}
+{{< /tabs >}}
+
+## Simulate an automated review run
+
+To test a build in your branch, you can simulate the automated review (AR) run that is executed on the Jenkins build nodes using a build script that is included with O3DE. Any contributions you make to the O3DE repo will need to pass this test run before your GitHub pull request can be merged.
+
+Use the following instructions to run the `ci_build.py` script that is located in the `<O3DE_engine>/scripts/build/` directory to simulate an AR run. The script requires the environment variable `LY_3RDPARTY_PATH` to be set to your downloadable packages ("third-party") folder.
+
+{{< tabs name="Simulate AR run example" >}}
+{{% tab name="Windows" %}}
+
+1. Set the `LY_3RDPARTY_PATH` environment variable if it has not been set.
+
+    ```cmd
+    set LY_3RDPARTY_PATH=<path to your downloadable packages folder>
+    ```
+
+    For example, to use the default downloadable packages folder, set the following path:
+
+    ```cmd
+    set LY_3RDPARTY_PATH=%USERPROFILE%\.o3de\3rdParty
+    ```
+
+1. Run the following command from the engine root folder.
+
+    ```cmd
+    python\python.cmd -u scripts\build\ci_build.py --platform Windows --type <test_type>
+    ```
+
+    For the `<test_type>`, use any test type that is defined in the file `scripts\build\Platform\Windows\build_config.json`. For example, to run a test suite for the profile configuration, you can use `profile_vs2019`.
+
+    ```cmd
+    python\python.cmd -u scripts\build\ci_build.py --platform Windows --type profile_vs2019
+    ```
+
+{{% /tab %}}
+{{% tab name="Linux" %}}
+
+1. Set the `LY_3RDPARTY_PATH` environment variable if it has not been set.
+
+    ```shell
+    export LY_3RDPARTY_PATH=<path to your downloadable packages folder>
+    ```
+
+    For example, to use the default downloadable packages folder, set the following path:
+
+    ```shell
+    export LY_3RDPARTY_PATH=~/.o3de/3rdParty
+    ```
+
+1. Run the following command from the engine root folder.
+
+    ```shell
+    python/python.sh -u scripts/build/ci_build.py --platform Linux --type <test_type>
+    ```
+
+    For `<test_type>`, use any test type that is defined in the file `scripts/build/Platform/Linux/build_config.json`. For example, to run a test suite for the profile configuration, you can use `test_profile`.
+
+    ```shell
+    python/python.sh -u scripts/build/ci_build.py --platform Linux --type test_profile
+    ```
 
 {{% /tab %}}
 {{< /tabs >}}
