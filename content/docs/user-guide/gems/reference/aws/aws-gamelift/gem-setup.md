@@ -99,7 +99,7 @@ To work with AWS resources in O3DE you must set up AWS credentials for your user
 
 For more details on configuring your AWS credentials in O3DE, refer to [Configuring AWS Credentials](/docs/user-guide/gems/reference/aws/aws-core/configuring-credentials/).
 
-Please check [IAM policy examples for GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html) for adding proper permissions to use the Amazon GameLift service.
+Please check [IAM policy examples for GameLift](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-iam-policy-examples.html) to configure appropriate permissions required to use the GameLift service.
 
 To use the FlexMatch feature for matchmaking and backfill, please check [Setting up FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-setting-up.html) for the required permissions.
 
