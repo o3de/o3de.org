@@ -8,11 +8,11 @@ weight: 200
 
 ## Prerequisites
 
-- Finish the [session management integration](../session-management/integration) for the game client and dedicated server.
+- Complete the [integration for game session management](../session-management/integration) for the game client and dedicated server.
 
 ## Integrate game client
 
-To support the optional FlexMatch feature including backfill, your client application need to implement the following use cases:
+To support the optional FlexMatch features including backfill, your client application needs to implement the following use cases:
 - `StartMatchmaking`
 - `StopMatchmaking`
 - `StartPolling`
