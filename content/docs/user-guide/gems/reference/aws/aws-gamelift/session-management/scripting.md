@@ -26,27 +26,21 @@ Note that you must specify the AWS Region in the correct format. For example, fo
 ## CreateSession
 
 Create a session by using the **CreateSession** node. Configure the session by using either the **AWSGameLiftCreateSessionRequest** node or the **AWSGameLiftCreateSessionOnQueueRequest** node.
+It is recommended to create a session behind a queue asynchronously. See [Best practices for GameLift game session queues](https://docs.aws.amazon.com/gamelift/latest/developerguide/queues-best-practices.html).
 After successfully creating a session, other instances of your game can discover it using the **SearchSessions** node, and then join it using the **JoinSession** node.
 
-
-### CreateSession node
+### CreateSession sample graph
 
 ![CreateSession node](/images/user-guide/gems/reference/aws/aws-gamelift/createsession.PNG)
 
 
-### CreateSessionAsync node and Async Handler node
+### CreateSessionAsync sample graph
 
 ![CreateSessionAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/createsessionasync.PNG)
 
 
-### AWSGameLiftCreateSessionRequest Get and Set variable nodes
-
-![AWSGameLiftCreateSessionRequest Get and Set Variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/createsessionrequest.PNG)
-
-
-### AWSGameLiftCreateSessionOnQueueRequest Get and Set variable nodes
-
-![AWSGameLiftCreateSessionOnQueueRequest Get and Set nodes](/images/user-guide/gems/reference/aws/aws-gamelift/createsessiononqueuerequest.PNG)
+### AWSGameLiftCreateSessionOnQueue sample graph
+![AWSGameLiftCreateSessionOnQueueRequest Get and Set nodes](/images/user-guide/gems/reference/aws/aws-gamelift/createsessiononqueue.PNG)
 
 
 ## SearchSessions
@@ -55,24 +49,14 @@ Get a list of game sessions that are currently active and joinable by using the 
 
 On success, the SearchSessions node returns a list of **SearchSessionsResponse** objects, which provide details of the sessions found that meet your search criteria.
 
-### SearchSessions node
+### SearchSessions sample graph
 
 ![SearchSessions node](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessions.PNG)
   
 
-### SearchSessionsAsync node and Async Handler node
+### SearchSessionsAsync sample graph
 
 ![SearchSessionsAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessionasync.PNG)
-
-
-### AWSGameLiftSearchSessionsRequest Get and Set variable nodes
-
-![AWSGameLiftSearchSessionsRequest Get and Set variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessionsrequest.PNG)
-
-
-### SearchSessionsResponse Get and Set variable nodes
-
-![SearchSessionsResponse Get and Set variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessionsresponse.PNG)
 
 
 ## JoinSession
@@ -82,19 +66,14 @@ After searching for a session, you can join a session using the `JoinSession` no
 With this node, you can pass in the properties `game session id` and `player id` through `AWSGameLiftJoinSessionRequest`.
 
   
-### JoinSession node
+### JoinSession sample graph
 
 ![JoinSession node](/images/user-guide/gems/reference/aws/aws-gamelift/joinsession.PNG)
 
 
-### JoinSessionAsync node and Async Handler node
+### JoinSessionAsync sample graph
 
 ![JoinSessionAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/joinsessionasync.PNG)
-
-
-### AWSGameLiftJoinSessionRequest Get and Set variable nodes
-
-![AWSGameLiftJoinSessionRequest Get and Set variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/joinsessionrequest.PNG)
 
 
 ## LeaveSession
@@ -102,12 +81,12 @@ With this node, you can pass in the properties `game session id` and `player id`
 To disconnect from a joined session, use the **LeaveSession** node.
 
 
-### LeaveSession node
+### LeaveSession sample graph
 
 ![LeaveSession node](/images/user-guide/gems/reference/aws/aws-gamelift/leavesession.PNG)  
 
 
-### LeaveSessionAsync node and Async Handler node
+### LeaveSessionAsync sample graph
 
 ![LeaveSessionAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/leavesessionasync.PNG)  
 

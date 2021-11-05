@@ -13,23 +13,18 @@ There are synchronous and asynchronous versions for each action. Asynchronous no
 
 
 ## StartMatchmaking
-To create a game match for a group of players based on custom matchmaking rules, use the `StartMatchmaking` node.
+To find a match for a group of players and create a session to host match, use the `StartMatchmaking` node.
 With this node, you can pass in the properties `configuration name`, `players` and `ticket id` through `AWSGameLiftStartMatchmakingRequest`.
 
 
-### StartMatchmaking node
+### StartMatchmaking sample graph
 
 ![StartMatchmaking node](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmaking.PNG)
 
 
-### StartMatchmakingAsync node and Async Handler node
+### StartMatchmakingAsync sample graph
 
 ![StartMatchmakingAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmakingasync.PNG)
-
-
-### AWSGameLiftStartMatchmakingRequest Get and Set variable nodes
-
-![AWSGameLiftStartMatchmakingRequest Get and Set variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmakingrequest.PNG)
 
 
 ## StopMatchmaking
@@ -37,19 +32,14 @@ To cancel a matchmaking ticket that is currently being processed, use the `StopM
 With this node, you can pass in the property `ticket id` through `AWSGameLiftStopMatchmakingRequest`.
 
 
-### StopMatchmaking node
+### StopMatchmaking sample graph
 
 ![StopMatchmaking node](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmaking.PNG)
 
 
-### StopMatchmakingAsync node and Async Handler node
+### StopMatchmakingAsync sample graph
 
 ![StopMatchmakingAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmakingasync.PNG)
-
-
-### AWSGameLiftStopMatchmakingRequest Get and Set variable nodes
-
-![AWSGameLiftStopMatchmakingRequest Get and Set variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmakingrequest.PNG)
 
 
 ## AcceptMatch
@@ -57,35 +47,30 @@ To register a player's acceptance or rejection of a proposed matchmaking, use th
 With this node, you can pass in the properties `accept match`, `player ids` and `ticket id` through `AWSGameLiftAcceptMatchRequest`.
 
 
-### AcceptMatch node
+### AcceptMatch sample graph
 
 ![AcceptMatch node](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatch.PNG)
 
 
-### AcceptMatchAsync node and Async Handler node
+### AcceptMatchAsync sample graph
 
 ![AcceptMatchAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatchasync.PNG)
 
 
-### AWSGameLiftAcceptMatchRequest Get and Set variable nodes
-
-![AWSGameLiftAcceptMatchRequest Get and Set variable nodes](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatchrequest.PNG)
-
-
 ## StartPolling
-Request to start process for polling matchmaking ticket based on given ticket id and player Id.
+Request to start the local process for polling matchmaking ticket based on given ticket id and player Id.
 
 
-### StartPolling node
+### StartPolling sample graph
 
 ![StartPolling node](/images/user-guide/gems/reference/aws/aws-gamelift/startpolling.PNG)
 
 
 ## StopPolling
-Request to stop process for polling matchmaking ticket.
+Request to stop the local process for polling matchmaking ticket.
 
 
-### StopPolling node
+### StopPolling sample graph
 
 ![StopPolling node](/images/user-guide/gems/reference/aws/aws-gamelift/stoppolling.PNG)
 

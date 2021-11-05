@@ -218,7 +218,7 @@ When this optional feature is enabled, an additional CloudFormation stack will b
 
 #### Create game session queue
 
-Optionally, you can create a game session queue resource using this CDK application by providing the `create_game_session_queue` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
+It is recommended you create the optional game session queue using this CDK application by providing the `create_game_session_queue` context variable when synthesizing stack(s). The following example command synthesizes the application with this optional features enabled:
 
 ```cmd
 $ cdk synth -c create_game_session_queue=true
