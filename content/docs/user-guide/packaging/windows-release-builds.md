@@ -12,6 +12,7 @@ A release build requires *Bundled content*, product assets pulled from the proje
 The instructions here guide you through the following steps:
 - Set the starting level.
 - Process your project's assets.
+- Bundle your project's assets.
 - Create a project game release layout.
 - Run your project's Game Launcher from the release.
 
@@ -180,6 +181,95 @@ The result is a project release install directory that's located in your project
 3. Use CMake to invoke Visual Studio to build your non-monolothic project using the pre-built SDK engine. 
 
 The result is a project release install directory that's located in your project's directory at `install/bin/Windows/release/Monolithic`. Your packaged assets are located in `Cache/pc` in your project release install directory. 
+
+
+## Bundle content 
+
+The Asset Bundler is a tool that allows you to create and optimize your bundled content. When you created a project game release layout, it also bundled all of your assets into a `engine.pak` file. You can optimize your package file by using the Asset Bundler and configuring how you want your assets to be bundled. 
+
+In this example, you will create two bundles - for game assets and engine assets. The game assets contains your project's levels and all of the assets within them, such as objects, environment, materials, and so on. The engine assets contain essential files needed to load and run the Game Launcher. 
+
+### Build the Asset Bundler
+
+1. Use CMake to build the Asset Bundler in your engine. 
+
+```cmd
+cmake --build build/windows_vs2019 --target AssetBundler --config profile -- /m
+```
+
+### Create a bundle for game assets
+
+When bundling your game assets, it's only important to bundle assets that your game actually uses in its levels. There's no need to include assets in your project directory that are never loaded in your project. You can use the Asset Bundler to generate a list of assets that your levels depend on. This ensures that your resulting package file is at an optimal size. 
+
+
+#### Create a new seed asset list
+Create a new see asset list that contains only your level assets. 
+
+2. Create a new seed list file by clicking **Create a new Seed List file** in the **Seed List file** panel under the **Seeds** tab
+3. Select your new seed list file from the list. 
+4. Click **+ Add Asset** in the **Product Assets** panel. This opens the **Add Seed Asset** dialog. 
+5. In the list of platforms, enable **pc**.
+6. Click **Browse...** and navigate to the `levels` folder and choose **Add Seed**. 
+7. Verify that your seed list has the level assets in the **Product Assets** panel. 
+
+#### Generate an asset list 
+
+1. Select your new seed list file by enabling the check box. 
+2. Click **Generate Asset Lists**. This will open the **Generate Asset List files** dialog. 
+3. In the list of platforms, select **pc** by enabling the check box.  
+4. Click **Browse...** to open the File Explorer. 
+5. Enter a name for your asset list and save. In this example, we'll use the name `game.assetlist`. 
+5. Navigate to the **Asset Lists** tab to verify the assets in `game.assetlist`. The assets are listed under the **Asset List** panel. 
+
+#### Bundle your assets
+
+1. Select your `game.assetlist` in the** Asset List Files** panel under the **Asset Lists** tab.
+
+2. Click **Generate Bundle**. This opens the **Generate Bundles** dialog. 
+
+3. Click **Browse...** to open the File Explorer. 
+
+4. Enter a name for your package file and save. In this example, we'll use the name `game_bundle.pak`.
+
+
+### Create a bundle for engine assets
+
+Now, you'll create a bundle for your project's engine assets. 
+
+#### Generate an asset list from default seed lists
+
+1. Navigate to the Seeds tab. 
+
+2. Select **Default Seed Lists** at the bottom of the **Seed List files** panel. Make sure to deselect other seed list files. 
+
+2. Click **Generate Asset Lists**. This will open the **Generate Asset List files** dialog. 
+
+3. In the list of platforms, select **pc** by enabling the check box.  
+
+4. Click **Browse...** to open the File Explorer. 
+
+5. Enter a name for your asset list and save. In this example, we'll use the name `engine.assetlist`. 
+
+5. Navigate to the **Asset Lists** tab to verify the assets in `engine.assetlist`. The assets are listed under the **Asset List** panel. 
+
+#### Bundle your assets
+
+1. Select your `engine.assetlist` in the** Asset List Files** panel under the **Asset Lists** tab.
+
+2. Click **Generate Bundle**. This opens the **Generate Bundles** dialog. 
+
+3. Click **Browse...** to open the File Explorer. 
+
+4. Enter a name for your package file and save. In this example, we'll use the name `engine_bundle.pak`.
+
+
+You now have two bundled content: `game_bundle.pak` and `engine_bundle.pak`. 
+
+
+### Add your bundles to install layout
+
+Next, add `game_bundle.pak` and `engine_bundle.pak` to `install/bin/Windows/release/Default`. You can remove the `engine.pak` file that was created earlier. 
+
 
 ## Run the game launcher
 
