@@ -21,8 +21,8 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 + [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider/)
 + [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/)
 + [PhysX Best Practices](/docs/user-guide/interactivity/physics/nvidia-physx/best-practices/)
-+ [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)
 + [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/)
+<!-- + [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/) -->
 
 ## PhysX Gems 
 
