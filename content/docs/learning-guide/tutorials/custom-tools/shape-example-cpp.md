@@ -170,6 +170,58 @@ void ShapeExampleWidget::OnNameInputTextChanged(const QString& text)
 }
 ```
 
+## Combo boxes
+
+In this step, you will create a combo box that contains a list of values that the generated entity can scale by. 
+
+Again, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+
+1. To start, instantiate a `QGroupBox` called `comboBoxGroup ` and a `QVBoxLayout` called `comboBoxLayout `.
+   
+2. Later, you will create a combo box and define a list of scale values.
+
+3. Finally, set the layout of `shapeButtons` to `gridLayout`, and add `shapeButtons` to `mainLayout`. 
+
+```cpp
+        // 1
+        QGroupBox* comboBoxGroup = new QGroupBox("Choose your scale (Combo Box)", this);
+        QVBoxLayout* comboBoxLayout = new QVBoxLayout();
+
+        // 2
+        
+        // 3
+        comboBoxGroup->setLayout(comboBoxLayout);
+        mainLayout->addWidget(comboBoxGroup);
+```
+### Create a combo box
+
+A combo box allows users to select an item from a pop up list of items. With Qt, you can create an input field by using the `QComboBox` object. 
+
+1. Define a list of values that the generated entity can scale by instantiating `QStringList` and adding numerical values. 
+
+2. Create a combo box by instantiating `QComboBox`. In this example, we'll name it `m_scaleInput`. 
+
+3. Allow users to enter a custom option in the combo box by calling `setEditable(true)`. 
+
+4. If a user enters a custom option, validate that the value they entered is a numerical value within a specific range and decimal place by calling `setValidator(...)`. In this example, set the lower bound to `0.0`, the upper bound to `100.0`, and the decimal places to `3`. 
+
+5. Add the list of values to the combo box by calling `addItems(...)`.
+
+```cpp
+        QStringList scaleValues = {
+            "1.0",
+            "1.5",
+            "2.0",
+            "5.0",
+            "10.0"
+        };
+        m_scaleInput = new QComboBox(this);
+        m_scaleInput->setEditable(true);
+        m_scaleInput->setValidator(new QDoubleValidator(0.0, 100.0, 3, this));
+        m_scaleInput->addItems(scaleValues);
+        comboBoxLayout->addWidget(m_scaleInput);
+```
+
 
 ## Buttons
 
@@ -296,11 +348,9 @@ In this example, the signal listener uses a lambda handler, so you can define th
 
 Now, you will define `CreateEntityWithShapeComponent(...)`, which uses communicates with O3DE EBusses to create a new entity with a component specified by the `typeId` parameter.
 
-1. Use the namespace `AzToolsFramework`. This namespace provides APIs to the necessary Editor EBusses. 
+1. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::CreateNewEntity` event, which instantiates an `AZ::EntityId` and stores it in `newEntityId`. 
 
-2. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::CreateNewEntity` event, which instantiates an `AZ::EntityId` and stores it in `newEntityId`. 
-
-3. If the user entered a name in the input field, update the entity's name. 
+2. If the user entered a name in the input field, update the entity's name. 
 
    - Get the name of the entity by calling `m_nameInput->text()` and store it in `entityName`.
 
@@ -309,6 +359,13 @@ Now, you will define `CreateEntityWithShapeComponent(...)`, which uses communica
    - Format the name and suffix, if any.
 
     - Call `EditorEntityAPIBus::Event(...)` and dispatch `EditorEntityAPIRequests::SetName` to set the name of `newEntityId` to `entityName`. 
+
+3. Set the entity's scale.
+   
+   - Get the value in the combo box by calling `currentText()`, and store it in `scale`.
+   
+   - Set the entity's scale by calling `AZ::TransformBus::Event()`. Dispatch `SetLocalUniformScale` to set the scale of `newEntityId`.
+   
 
 4. Add a Shape component to the entity. Call `EditorComponentAPIBus::Broadcast(...)` and dispatch `EditorComponentAPIRequests::AddComponentsOfType`, which adds the components from the provided list to `newEntityId`.
 
@@ -397,4 +454,4 @@ This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gem
     git clone https://github.com/o3de/sample-code-gems.git
     ```
 
-2. Register your Gem, enable it in your project, rebuild your project, and open the tool from the O3DE Editor. These steps are explained earlier in this tutorial (refer to [Create a tool with the `CppToolGem` template](#create-a-tool-with-the-cpptoolgem-template)). 
+2. Register your Gem, enable it in your project, rebuild your project, and open the tool from the O3DE Editor. These steps are explained earlier in this tutorial (refer to [Create a tool with the `CppToolGem` template](#create-a-tool-with-the-cpptoolgem-template)).
