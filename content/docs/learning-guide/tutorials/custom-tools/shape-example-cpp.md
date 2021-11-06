@@ -15,15 +15,21 @@ By the end of this tutorial, you'll be able to create your own tools that extend
 
 ## Create a tool with the `CppToolGem` template
 
-The `CppToolGem` template contains a basic framework to create a dockable widget in O3DE Editor.
+The `CppToolGem` template contains a basic framework to create a dockable widget in O3DE Editor. 
 
-1. Create a Gem using the **O3DE CLI (`o3de`)** script in `<engine>/scripts`. Specify the name `ShapeExample` by using the `--gem-name` option and the template `CppToolGem` by using the `--template-name` option. By default, this creates the Gem directory in `<user>/.o3de/Gems` -- or you can specify a location by using the `--gem-path` option. Depending on the location, this automatically registers the Gem to either the `.o3de` registry, engine, or project.
+1. Create a Gem by using the **O3DE CLI (`o3de`)** script that's in your engine source directory. Specify the name `ShapeExample` by using the `--gem-name` option and the template `CppToolGem` by using the `--template-name` option. By default, this creates the Gem directory in `<user>/.o3de/Gems` -- or you can specify a location by using the `--gem-path` option. Depending on the location, this automatically registers the Gem to either the `.o3de` registry, engine, or project.
 
     ```cmd
     scripts/o3de create-gem --gem-name ShapeExample --template-name CppToolGem
     ```
 
-2. Add the Gem in your project by using the `o3de` script.
+2. Register the Gem to your project.
+
+    ```cmd
+    <engine>/scripts/o3de register -gp <gem-path> -espp <project-path>
+    ```
+
+3. Add the Gem in your project.
 
     ```cmd
     scripts/o3de enable-gem -gn CppToolGem -pp <project-path>
@@ -31,11 +37,11 @@ The `CppToolGem` template contains a basic framework to create a dockable widget
 
     Or, enable the Gem using the Project Manager (refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems.md)).
 
-3. Build the project by using the `o3de` script (refer to [Build a project](https://o3de.org/docs/user-guide/build/configure-and-build/#build-a-project)). Or, use the Project Manager (refer to the **Build** action in the [Project Manager](https://o3de.org/docs/user-guide/project-config/project-manager/)) page.
+4. Build the project by using the O3DE CLI (refer to [Build a project](https://o3de.org/docs/user-guide/build/configure-and-build/#build-a-project)). Or, use the Project Manager (refer to the **Build** action in the [Project Manager](https://o3de.org/docs/user-guide/project-config/project-manager/)) page.
 
-4. Open O3DE Editor for your project.
+5. Open O3DE Editor for your project.
 
-5. Open the tool by selecting **Tools > Examples**.
+6. Open the tool by selecting **Tools > Examples**.
 
 Now you can access your new tool from O3DE Editor. By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality.
 
@@ -370,9 +376,6 @@ An icon is an image file that's used to represent your tool in the O3DE Editor. 
 
     - Call `InitShapeExampleResource()` in the class constructor.
 
-Your `ShapeExampleEditorModule.cpp` file should be similar to the one in the [ShapeExample sample](https://github.com/o3de/sample-code-gems/blob/main/cpp_gems/ShapeExample/Code/Source/ShapeExampleEditorModule.cpp) in the `sample-code-gems` repo.
-
-
 ## Build and debug your tool
 
 Build and debug your custom shape tool using **Visual Studio 2019**.
@@ -381,3 +384,17 @@ Build and debug your custom shape tool using **Visual Studio 2019**.
 2. Find your Gem in the Solution Explorer. Right-click and select **Build** or **Debug**.
 
 After, you can launch O3DE Editor and load the Gem.
+
+Congratualations! You've created a custom Shape tool, built it, and loaded it in the O3DE Editor.
+
+## Download the ShapeExample Gem sample
+
+This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can download this sample and load it in the O3DE Editor.
+
+1. Download or clone the repository. The ShapeExample Gem is located in `sample-code-gems/cpp_gems/ShapeExample`. 
+
+    ```cmd
+    git clone https://github.com/o3de/sample-code-gems.git
+    ```
+
+2. Register your Gem, enable it in your project, rebuild your project, and open the tool from the O3DE Editor. These steps are explained earlier in this tutorial (refer to [Create a tool with the `CppToolGem` template](#create-a-tool-with-the-cpptoolgem-template)). 
