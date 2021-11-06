@@ -30,16 +30,16 @@ Depending on the part of the engine that you want to develop, there are differen
   
   - [Component Entity System (CES)](/docs/welcome-guide/key-concepts/#the-component-entity-system)
   
-  - [Event Bus (EBus) system](/docs/user-guide/engine/ebus/)
+  - [Event Bus (EBus) system](/docs/user-guide/programming/ebus/)
   
-  - [Programmer's Guide to Component Development](/docs/user-guide/components/development/)
+  - [Programmer's Guide to Component Development](/docs/user-guide/programming/components/)
 
 
 ### Develop a Gem
   
-  - [Gem Module system](/docs/user-guide/gems/development/overview/)
+  - [Gem Module system](/docs/user-guide/programming/gems/overview/)
 
-  - [Create an O3DE Gem](/docs/user-guide/gems/development/creating/)
+  - [Create an O3DE Gem](/docs/user-guide/programming/gems/creating/)
 
 
 ### Develop Atom Renderer features

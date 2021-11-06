@@ -93,9 +93,9 @@ if (edit)
 ```
 
 O3DE has reflection contexts for different purposes, including the following:
-+ [Serialization Context](/docs/user-guide/engine/serialization/entity-system-reflection-serialization-context/) - Contains reflection data for serialization and construction of objects.
-+ [Edit Context](/docs/user-guide/components/development/edit-context/) - Contains reflection data for visual editing of objects, as in O3DE Editor.
-+ [Behavior Context](/docs/user-guide/components/development/behavior-context/) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/scripting/script-canvas/), or other external sources.
++ [Serialization Context](/docs/user-guide/programming/serialization/entity-system-reflection-serialization-context/) - Contains reflection data for serialization and construction of objects.
++ [Edit Context](/docs/user-guide/programming/components/edit-context/) - Contains reflection data for visual editing of objects, as in O3DE Editor.
++ [Behavior Context](/docs/user-guide/programming/components/behavior-context/) - Contains reflection for runtime manipulation of objects from Lua, [Script Canvas](/docs/user-guide/scripting/script-canvas/), or other external sources.
 + `NetworkContext` - Contains reflection for networking purposes, including marshaling, quantization, and extrapolation.
 
 {{< note >}}

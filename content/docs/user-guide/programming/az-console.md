@@ -13,7 +13,7 @@ The `AZ::Console` class provides a set of macros for defining variables and mapp
 + Default support for several C++ types, including bool (Boolean), stdint (all types), floats, doubles, vectors and quaternions, and enums (enumerations).
 + Flexible and expandable type support. You can add support for new cvar types without altering the console code directly.
 
-![The AZ::Console](/images/user-guide/engine/az-console-1.png)
+![The AZ::Console](/images/user-guide/programming/az-console-1.png)
 
 **Topics**
 - [Console variables (cvars)](#console-variables-cvars)

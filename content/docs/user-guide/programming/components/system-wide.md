@@ -7,12 +7,12 @@ weight: 600
 
 System components are similar to other components in Open 3D Engine's component entity framework. However, instead of creating game entity behavior, they control the behavior of the engine itself. System components are first-class elements of the game engine and are included at a deep level early in the initialization process. System components are registered onto the main [`Az::Module`](/docs/api/frameworks/azcore/class_a_z_1_1_module.html) class of a Gem, and are activated when the Gem is loaded, and deactivated when the Gem is unloaded.
 
-Like any O3DE [component](/docs/user-guide/components/development/create-component/), a system component can provide services and can depend on or require other system component services. O3DE provides precise control over the order of engine initialization and system dependencies.
+Like any O3DE [component](/docs/user-guide/programming/components/create-component/), a system component can provide services and can depend on or require other system component services. O3DE provides precise control over the order of engine initialization and system dependencies.
 
 When you author system components, follow the best practices for component authoring. For example, your system components should use the following:
 
-* [The EBus system](/docs/user-guide/engine/ebus) to expose their interfaces.
-* [Reflection](/docs/user-guide/components/development/reflection/) to serialize and edit settings.
+* [The EBus system](/docs/user-guide/programming/ebus) to expose their interfaces.
+* [Reflection](/docs/user-guide/programming/components/reflection/) to serialize and edit settings.
 * The [AZ::Component](/docs/api/frameworks/azcore/class_a_z_1_1_component.html) class to activate or deactivate the system component..
 
 {{< important >}}
@@ -23,7 +23,7 @@ For an example of a Gem which provides system components, the `HttpRequestor` Ge
 
 ## Creating a System Component in a Gem
 
-O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [the O3DE Gem and Module System](/docs/user-guide/gems/development/overview). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine as well as components for use on game entities.
+O3DE enables the creation of custom system components through Gems and AZ modules. Gems are a specialization of AZ modules. For more information, see [the O3DE Gem and Module System](/docs/user-guide/programming/gems/overview). Most O3DE games organize their game code in one or more Gems. These Gems can contain system components that integrate with the game engine as well as components for use on game entities.
 
 When you create a system component as part of a Gem, follow these requirements:
 

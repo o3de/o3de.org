@@ -91,4 +91,4 @@ In O3DE, a more event-driven approach is to use the `TransformBus` to monitor th
 
 When authoring a component, try to anticipate the requirements of components that might depend on yours. Use a notification bus to expose the appropriate notifications for your component. This approach enables others to write code that consumes the services of your components in a faster and more scalable way.
 
-For more best practices, see [Components and EBuses: Best Practices](/docs/user-guide/components/development/entity-system-pg-components-ebuses-best-practices/).
+For more best practices, see [Components and EBuses: Best Practices](/docs/user-guide/programming/components/entity-system-pg-components-ebuses-best-practices/).

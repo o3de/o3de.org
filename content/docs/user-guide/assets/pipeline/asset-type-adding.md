@@ -130,7 +130,7 @@ The Scene API provides boilerplate code so that you only have to write a few cod
 
 ### Registration Versus Integration 
 
-After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes. The result of the lookup gives you the asset's path, size, and other information. You can use [standard file handling](/docs/user-guide/engine/file-io) to load the asset.
+After you register the asset with the asset system, you can use the `AssetCatalogRequestBus` to find the asset in the catalog by its ID or other attributes. The result of the lookup gives you the asset's path, size, and other information. You can use [standard file handling](/docs/user-guide/programming/file-io) to load the asset.
 
 While simple registration of an asset can be useful in some circumstances, full integration with the O3DE asset system offers many advantages, including the following:
 + Automatic live reloading
@@ -163,7 +163,7 @@ An `AssetData`-derived class contains the asset data that is shared among instan
 You write an asset handler to read assets from buffer and convert them into your `AssetData` type. Only one such handler generally exists for each type of asset. The asset handler class is your asset factory for that type of asset because it can create and destroy your `AssetData`-derived class. The `AssetHandler` is a singleton instance whose functions are called in asynchronous job threads.
 
 {{< note >}}
-You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/user-guide/gems/development/creating).
+You can place asset handlers in gems. For information on adding code to gems, see [Using Gems to Add C++ Code to a O3DE Game](/docs/user-guide/programming/gems/creating).
 {{< /note >}}
 
 #### Using the Generic Asset Handler for Structured Data 
@@ -252,7 +252,7 @@ At this point, you can use your custom assets in your structures and components.
    Az::Data::Asset<MyAsset> m_myAsset;
    ```
 
-1. Reflect the fields that you added by using editor reflection. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/engine/components/reflection).
+1. Reflect the fields that you added by using editor reflection. For more information, see [Reflecting a Component for Serialization and Editing](/docs/user-guide/programming/components/reflection).
 
 1. (Optional) In the constructor of your class, override the `m_myAsset` constructor to implement the serializer's behavior. For more information, see `m_script` in the `Code\Framework\AzFramework\AzFramework\Script\scriptcomponent.cpp` file.
 
@@ -260,7 +260,7 @@ After you perform these steps, your component appears in the component editor. T
 
 ## C. Customizing UI Interaction 
 
-(Optional) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/engine/ebus/) to customize your asset's interaction with the **Asset Browser**.
+(Optional) You can describe your asset type to the UI and then use [EBus listeners](/docs/user-guide/programming/ebus/) to customize your asset's interaction with the **Asset Browser**.
 
 ### 1. Describing Your Asset Type to the UI 
 

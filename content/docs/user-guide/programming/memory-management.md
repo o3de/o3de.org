@@ -10,11 +10,11 @@ When managing memory in O3DE, use AZ memory management calls and avoid static va
 When allocating memory, use the following recommended practices:
 + Do not use `new`, `malloc`, and similar allocators directly. Instead, use AZ memory manager calls to `aznew`, `azmalloc`, `azfree`, `azcreate`, and `azdestroy`.
 + Specify the allocator in each class.
-+ Use child allocators. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator. For an example of creating a child allocator, see [Creating an Allocator](/docs/user-guide/engine/memory/allocators/).
++ Use child allocators. To tag and track resource usage, new gems and subsystems should create their own allocator or create a `ChildAllocator` that references an existing allocator. For an example of creating a child allocator, see [Creating an Allocator](/docs/user-guide/programming/memory/allocators/).
 
 **Reason**: O3DE's core AZ systems provide a memory managed environment, not a raw system allocator like the managed memory in C\# or Java. In O3DE, the core AZ systems provide speed, safety, and facilities for tracking memory usage.
 
-For information about O3DE's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/user-guide/engine/memory/allocators/).
+For information about O3DE's scheme for allocators and new allocators, see [Manually Allocating Memory](/docs/user-guide/programming/memory/allocators/).
 
 ## Memory Issues Caused by Static Variables
 

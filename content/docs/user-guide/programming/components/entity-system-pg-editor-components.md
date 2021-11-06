@@ -67,7 +67,7 @@ public:
 
 ## Editor Component and Runtime Component Differences
 
-The code for editor components is similar to the code for runtime components. The following sections list the key differences. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed. For more information, see [Creating a Component](/docs/user-guide/components/development/create-component/).
+The code for editor components is similar to the code for runtime components. The following sections list the key differences. It is safe to assume that editor component code is the same as it is for runtime component code other than the differences listed. For more information, see [Creating a Component](/docs/user-guide/programming/components/create-component/).
 
 ### Base Classes
 

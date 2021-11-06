@@ -18,10 +18,10 @@ Read about [the features provided by Open 3D Engine](/docs/welcome-guide/feature
 |--------------------------------------|---------|
 | [Assets](assets/) | Learn about O3DE's asset management tools and pipeline. |
 | [Build](build/) | Learn how to use the CMake generator with O3DE projects to generate IDE projects and build them. |
-| [Components](components/) | Learn about the components that add functionality to your entities in O3DE, and how to create new components. |
+| [Components](components/) | Learn about the components that add functionality to your entities in O3DE. |
 | [Editor](editor/) |  Learn how to use the O3DE Editor. |
-| [Engine](engine/) |  Learn about core engine programming concepts in O3DE. |
-| [Gems](gems/) | Learn about the Gems that extend O3DE, and how to create new Gems.|
+| [Programming](programming/) |  Learn about core engine programming concepts in O3DE. |
+| [Gems](gems/) | Learn about the Gems that extend O3DE.|
 | [Interactivity](interactivity/) | Learn how to implement player navigation controls and other world interaction methods. |
 | [Networking](networking/) | Learn about the networking features in O3DE, offering both peer-to-peer connections and dedicated servers.  |
 | [Packaging](packaging/) | Learn how to package your O3DE-based product for release. |
