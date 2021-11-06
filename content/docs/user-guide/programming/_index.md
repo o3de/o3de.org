@@ -1,7 +1,7 @@
 ---
 description: Learn about the core systems of Open 3D Engine (O3DE) and how you can extend those systems by programming.
-title: Open 3D Engine Core Programming
-linktitle: Engine Core
+title: Open 3D Engine Programming Guide
+linktitle: Programming
 weight: 600
 ---
 

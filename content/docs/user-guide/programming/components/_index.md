@@ -1,7 +1,7 @@
 ---
-description: Learn how to create and reflect components in C++ using the O3DE Component Entity System.
-linktitle: Component Development
+linkTitle: Component Development
 title: Programmer's Guide to Component Development
+description: Learn how to create and reflect components in C++ using the O3DE Component Entity System.
 weight: 200
 ---
 

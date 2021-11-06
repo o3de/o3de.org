@@ -119,4 +119,4 @@ After you create the code for your component, add it to your project's system en
 
     The following image shows the result in the System Entity Editor.
 
-    ![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/component/entity_system/component-entity-system-pg-creating-system-components-system-editor.png)
+    ![The HttpRequestor system component appears in the System Entity Editor Add Component menu](/images/user-guide/programming/components/component-entity-system-pg-creating-system-components-system-editor.png)

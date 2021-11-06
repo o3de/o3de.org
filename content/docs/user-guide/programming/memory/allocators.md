@@ -16,7 +16,7 @@ For best C++ practices for managing memory in O3DE, see [Memory Management](/doc
 The following diagram illustrates the hierarchy of AZ memory allocators.
 
 
-![AZ memory allocator hierarchy](/images/user-guide/memory-allocators-1.png)
+![AZ memory allocator hierarchy](/images/user-guide/programming/memory/memory-allocators-1.png)
 
 + **`OSAllocator`** - Acts as the interface to operating system memory and should be used for direct operating system allocations on the C heap. `OSAllocator` is booted as early as possible in `main()`, and removed last, right before returning. If you don't create `OSAllocator`, the `SystemAllocator` creates it when needed.
 

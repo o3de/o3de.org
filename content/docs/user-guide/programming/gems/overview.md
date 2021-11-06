@@ -11,7 +11,7 @@ When an [`AzFramework::Application`](/docs/api/frameworks/azframework/class_az_f
 
 ## How O3DE Loads and Initializes Gems
 
-![An image describing the relationships between classes and the load/initialization/cleanup/unload process for Gems in the Open 3D Engine.](/images/user-guide/gems/gem-load-flow.svg)
+![An image describing the relationships between classes and the load/initialization/cleanup/unload process for Gems in the Open 3D Engine.](/images/user-guide/programming/gems/gem-load-flow.svg)
 
 ### Module entry point functions
 

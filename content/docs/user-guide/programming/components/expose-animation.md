@@ -132,7 +132,7 @@ The following example assumes that a custom component called `ImaginaryTargetCom
 
    **Track View** then uses a color track for the property, as the following image shows.
 
-   ![Color picker in Track View](/images/user-guide/component/entity_system/component-entity-system-pg-track-view-unit-attributes.png)
+   ![Color picker in Track View](/images/user-guide/programming/components/component-entity-system-pg-track-view-unit-attributes.png)
 
    Other units can be found in the file `Code\Framework\AZCore\AZCore\Serialization\EditContextConstants.inl`. These units are the following.
 
@@ -149,8 +149,8 @@ Now you can view how the example component and property appear in the **Entity I
 
 In the following **Entity Inspector** image, `EditContext` reflection has exposed the **ImaginaryTarget** component and its **Imaginary Target Pos** property.
 
-![ImaginaryTarget component in Entity Inspector](/images/user-guide/component/entity_system/exposing-custom-components-to-track-view-for-animation-entity-inspector.jpg)
+![ImaginaryTarget component in Entity Inspector](/images/user-guide/programming/components/exposing-custom-components-to-track-view-for-animation-entity-inspector.jpg)
 
 In the following **Track View** image, `BehaviorContext` reflection has exposed the **ImaginaryTarget** component and the **ImaginaryPosition** track from the corresponding virtual property.
 
-![ImaginaryTarget component in the Track View](/images/user-guide/component/entity_system/exposing-custom-components-to-track-view-for-animation-track-view.jpg)
+![ImaginaryTarget component in the Track View](/images/user-guide/programming/components/exposing-custom-components-to-track-view-for-animation-track-view.jpg)
