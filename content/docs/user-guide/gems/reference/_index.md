@@ -142,7 +142,7 @@ toc: true
 | - | - |
 | [Atom](./rendering/atom/atom) | The Atom Gem provides Atom Renderer and its associated tools (such as Material Editor), utilites, libraries, and interfaces. |
 | [Atom Content](./rendering/atom/atom-content) | The Atom Content Gem provides assets including models, textures, and materials, that  can be used to test Atom Renderer in  Open 3D Engine. |
-| [Atom Ly Integration](./rendering/atom/atom-ly-integration) | The Atom Ly Integration Gem provides components, libraries, and functionality to support and integrate Atom Renderer in Open 3D Engine. |
+| [Atom O3DE Integration](./rendering/atom/atom-o3de-integration) | The Atom O3DE Integration Gem provides components, libraries, and functionality to support and integrate Atom Renderer in Open 3D Engine. |
 | [Atom TressFX](./rendering/amd/atom-tressfx) | The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine. |
 | [Camera](./rendering/camera) | The Camera Gem provides a basic camera component that defines a frustum for runtime rendering. |
 | [Camera Framework](./rendering/camera-framework) | The Camera Framework Gem provides a base for implementing more complex camera systems. |
