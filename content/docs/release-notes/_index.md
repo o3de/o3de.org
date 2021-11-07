@@ -16,7 +16,7 @@ primary: true
 
 | Version        | Binary download link          |  Date of Release   |
 |----------------|-------------------------------|--------------------|
-| 2107.1 (Developer Preview) | _COMING SOON!_         |  July 6, 2021      |
+| 2107.1 (Developer Preview) | [2107.1 Development Branch](https://o3debinaries.org/development/Latest/Windows/o3de_installer.exe)         |  July 6, 2021      |
 
 ### Get the latest source code
 
