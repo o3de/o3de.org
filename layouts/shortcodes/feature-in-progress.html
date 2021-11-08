@@ -9,7 +9,7 @@ This shortcode takes three quote enclosed parameters in order:
 
 <blockquote class="important callout card border-info">
     <div class="row no-gutters">
-        <div class="col-md-2 bg-info text-white p-2 w-700"><strong>Feature in Progess: </strong></div> 
+        <div class="col-md-2 bg-info text-white p-2"><strong>Feature in Progess: </strong></div> 
         <div class="col p-2">
             <p> <strong>{{.Get 0}}</strong> {{" is a feature that is currently in development and has known issues. You can help improve "}} {{ .Get 0 }} {{" by filing new issues based on your experience using the feature and by submitting pull requests with improvements." | markdownify }}</p>
             <p>{{"Refer to " | markdownify}} <a href={{ .Get 1 }}>{{ .Get 0 }} {{" issues"}}</a> {{" to view known issues and to file new issues for this feature." | markdownify}}</p>
