@@ -131,7 +131,7 @@ void OnLeaveSessionAsyncComplete()
 
 ### Destroy Session (Passively)
 
-As the default behavior, when the last player leaves the game session, GameLift destroys the game session. 
+As the default behavior, when the last player leaves the game session, the Multiplayer Gem starts terminating the game session automatically. 
 
 
 ## Server Side
