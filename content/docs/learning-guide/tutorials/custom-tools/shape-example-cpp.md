@@ -6,7 +6,7 @@ weight: 200
 toc: true
 ---
 
-In this tutorial, you'll create a custom tool, **Shape Example**, in C++ that extends **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `CppToolGem` template and practice C++ development with O3DE's Tools UI API and other O3DE APIs.
+In this tutorial, you'll create a custom tool, **Shape Example**, written in C++ that extends **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `CppToolGem` template and practice C++ development with O3DE's Tools UI API and other O3DE APIs.
 
 This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can reference the ShapeExample Gem sample as you follow along this tutorial.
 
@@ -23,7 +23,7 @@ The `CppToolGem` template contains a basic C++ framework to create a dockable wi
     scripts/o3de create-gem --gem-name ShapeExample --template-name CppToolGem
     ```
 
-2. Register the Gem to your project.
+2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem.
 
     ```cmd
     <engine>/scripts/o3de register -gp <gem-path> -espp <project-path>
@@ -41,9 +41,11 @@ The `CppToolGem` template contains a basic C++ framework to create a dockable wi
 
 5. Open O3DE Editor for your project.
 
-6. Open the tool by selecting **Tools > Examples** from the file menu.
+6. Open the tool by selecting **Tools > Examples** from the file menu (see A in the following image). Or, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar** (see B in the following image).
 
-Now you can access your new tool from O3DE Editor. By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality.
+Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C in the following image.)
+
+![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tool/shape-example/python-shape-example-in-editor.png)
 
 
 ## Code directory
@@ -52,7 +54,7 @@ In the ShapeExample Gem's `Code/Source` directory, you'll find the following fil
 
 ### Modules and system components
 
-All Gems have modules and system components that connect the tool to O3DE and allow it to communicate with other systems. The `CppToolGem` template already contains all of the code needed to run the tool in the O3DE Editor.
+All Gems have modules and system component classes written in C++ that connect the tool to O3DE and allow it to communicate with other systems. The `CppToolGem` template already contains all of the code needed to run the tool in the O3DE Editor. You can find these C++ files in `Code/Source`.
 
 For more information on Gem modules and system components, refer to the [C++ Programming for Gem Development](docs/user-guide/gems/development/programming-for-gems.md) page.
 
@@ -100,7 +102,10 @@ ShapeExampleWidget::ShapeExampleWidget(QWidget* parent)
 
 ## Input fields and check boxes
 
-In this step, you will create an input field for the entity's name and a check box to append a suffix that contains the component's name. For example, suppose you set the entity's name to "MyEntity" and enable the suffix check box. When you create Shape components of type Box and Sphere, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
+In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
+
+By the end of this step, your input field and check box should look like this: 
+![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tool/shape-example/input-field-check-box.png)
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -111,21 +116,22 @@ First, wrap these UI elements in their own sub-widget, set the layout, and add i
 3. Finally, set the layout of `entityNameWidget` to `formLayout`, and add `entityNameWidget` to `mainLayout`. 
 
 ```cpp
-QWidget* entityNameWidget = new QWidget(this);
+QWidget* entityNameWidget = new QWidget(this);  // 1
 QFormLayout* formLayout = new QFormLayout();
 
-// Create an input field and check box
+// ...                                          // 2
 
-entityNameWidget->setLayout(formLayout);
+entityNameWidget->setLayout(formLayout);        // 3
 mainLayout->addWidget(entityNameWidget);
 ```
 
 ### Create an input field
 
-An input field is a UI element that takes text input from the user. With Qt, you can create an input field by using the `QLineEdit` object. 
-1. Create an input field by instantiating `QLineEdit`. In this example, we'll name it `m_nameInput`. 
+An input field is a UI element that takes text input from the user. With Qt, you can create an input field by using the `QLineEdit` object.
 
-2. Set the placeholder text in `m_nameInput` by calling `setPlaceholderText(...)`. 
+1. Create an input field by instantiating `QLineEdit`. In this example, we'll name it `m_nameInput`.
+
+2. Set the placeholder text in `m_nameInput` by calling `setPlaceholderText(...)`.
 
 3. Enable a button to clear the text using `setClearButtonEnabled(true)`.
 
@@ -164,21 +170,23 @@ In this example, the signal listener uses a slot handler, which is essentially a
 2. Call `QObject::connect(...)` to create a connection between the input field (`m_nameInput`) to the signal (`QLineEdit::TextChanged`) and slot (ShapeExampleWidget::OnNameINputTextChanged`). Refer to the following line of `ShapeExampleWidget.cpp`.
 
 
-```cpp
-QObject::connect(m_nameInput, &QLineEdit::textChanged, this, &ShapeExampleWidget::OnNameInputTextChanged);
-```
+    ```cpp
+    QObject::connect(m_nameInput, &QLineEdit::textChanged, this, &ShapeExampleWidget::OnNameInputTextChanged);
+    ```
 
 3. Define `OnNameInputTextChanged(...)` in `ShapeExampleWidget.cpp`. This function checks if `m_nameInput` contains text, and if so, enables `m_addShapeNameSuffix`. 
 
-```cpp
-void ShapeExampleWidget::OnNameInputTextChanged(const QString& text)
-{   
-    m_addShapeNameSuffix->setEnabled(!text.isEmpty());
-}
+    ```cpp
+    void ShapeExampleWidget::OnNameInputTextChanged(const QString& text)
+    {   
+        m_addShapeNameSuffix->setEnabled(!text.isEmpty());
+    }
 ```
 
 ### Add UI elements to layout
-After creating the UI elements -- an input field and a check box -- and connecting a signal listener to them, add them to the layout. To ensure they belong to the sub-widget `entityNameWidget`, add them to the corresponding layout, `formLayout`, by using `addRow(...)`. 
+
+After creating the UI elements -- an input field and a check box -- and connecting a signal listener to them, add them to the layout. To ensure they belong to the sub-widget `entityNameWidget`, add them to the corresponding layout, `formLayout`, by using `addRow(...)`.
+
 ```cpp
 formLayout->addRow(QObject::tr("Entity name"), m_nameInput);
 formLayout->addRow(QObject::tr("Add shape name suffix"), m_addShapeNameSuffix);
@@ -186,11 +194,14 @@ formLayout->addRow(QObject::tr("Add shape name suffix"), m_addShapeNameSuffix);
 
 ## Combo boxes
 
-In this step, you will create a combo box that contains a list of values that the generated entity can scale by. 
+In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
 
-Again, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+By the end of this step, your combo box should look like this: 
+![Shows UI for combo box](/images/learning-guide/tutorials/custom-tool/shape-example/combo-box.png)
 
-1. To start, instantiate a `QGroupBox` called `comboBoxGroup ` and a `QVBoxLayout` called `comboBoxLayout `.
+First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+
+1. To start, instantiate a `QGroupBox` called `comboBoxGroup` and a `QVBoxLayout` called `comboBoxLayout`.
    
 2. Later, you will create a combo box and define a list of scale values.
 
@@ -200,47 +211,53 @@ Again, wrap these UI elements in their own sub-widget, set the layout, and add i
         QGroupBox* comboBoxGroup = new QGroupBox("Choose your scale (Combo Box)", this); // 1
         QVBoxLayout* comboBoxLayout = new QVBoxLayout();
 
-        // 2
+    // ...                                                                              // 2
         
         
-        comboBoxGroup->setLayout(comboBoxLayout);           // 3
+        comboBoxGroup->setLayout(comboBoxLayout);                                       // 3
         mainLayout->addWidget(comboBoxGroup);
 ```
+
 ### Create a combo box
 
-A combo box allows users to select an item from a pop up list of items. With Qt, you can create an input field by using the `QComboBox` object. 
+A combo box allows users to select an item from a pop up list of items. With Qt, you can create an input field by using the `QComboBox` object.
 
-1. Define a list of values that the generated entity can scale by instantiating `QStringList` and adding numerical values. 
+1. Define a list of scale values. In this example, we'll name it `scaleValues`.
 
 2. Create a combo box by instantiating `QComboBox`. In this example, we'll name it `m_scaleInput`. 
 
 3. Allow users to enter a custom option in the combo box by calling `setEditable(true)`. 
 
-4. If a user enters a custom option, validate that the value they entered is a numerical value within a specific range and decimal place by calling `setValidator(...)`. In this example, set the lower bound to `0.0`, the upper bound to `100.0`, and the decimal places to `3`. 
+4. If a user enters a custom option, validate that the value they entered is a numerical value within a specific range and decimal place by calling `setValidator(...)`. In this example, set the lower bound to `0.0`, the upper bound to `100.0`, and the decimal places to `3`.
 
 5. Add the list of values to the combo box by calling `addItems(...)`.
 
+6. Add the combo box to `comboBoxLayout` by calling `addWidget(...)`.
+
 ```cpp
-        QStringList scaleValues = {
+        QStringList scaleValues = {                                             // 1
             "1.0",
             "1.5",
             "2.0",
             "5.0",
             "10.0"
         };
-        m_scaleInput = new QComboBox(this);
-        m_scaleInput->setEditable(true);
-        m_scaleInput->setValidator(new QDoubleValidator(0.0, 100.0, 3, this));
-        m_scaleInput->addItems(scaleValues);
-        comboBoxLayout->addWidget(m_scaleInput);
+        m_scaleInput = new QComboBox(this);                                     // 2
+        m_scaleInput->setEditable(true);                                        // 3
+        m_scaleInput->setValidator(new QDoubleValidator(0.0, 100.0, 3, this));  // 4
+        m_scaleInput->addItems(scaleValues);                                    // 5
+        comboBoxLayout->addWidget(m_scaleInput);                                // 6
 ```
 
 
 ## Buttons
 
-In this step, you will create a collection of buttons that create an entity of different shape types, such as a box, sphere, cone, and so on. 
+In this step, you will create a collection of buttons that create an entity with different Shape components, such as with a Box Shape, Sphere Shape, Cone Shape, and so on.
 
-Again, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+By the end of this step, your buttons should look like this: 
+![Shows UI for buttons](/images/learning-guide/tutorials/custom-tool/shape-example/buttons.png)
+
+First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
 1. To start, instantiate a `QGroupBox` called `shapeButtons` and a `QGridLayout` called `gridLayout`.
    
@@ -252,7 +269,7 @@ Again, wrap these UI elements in their own sub-widget, set the layout, and add i
 QWidget* shapeButtons = new QWidget(this);          // 1
 QGridLayout* gridLayout = new QGridLayout();
 
-                                                    // 2
+// ...                                              // 2
 
 shapeButtons->setLayout(gridLayout);                // 3
 mainLayout->addWidget(shapeButtons);
@@ -293,18 +310,18 @@ mainLayout->addWidget(shapeButtons);
     );
     ```
 
-{{ note }}
+{{< note >}}
 You can query a list of services that components provide by calling the component's `GetProvidedServices()` method.
-{{ /note }}
+{{< /note >}}
 
 
 ### Add buttons
 
-Next, loop through the list of component names, create buttons, and add them to the `gridLayout`.
+A button is a UI element that the user can click to trigger a user-defined behavior. With Qt, you can create an input field by using the `QPushButton` object. In this example, when the user clicks on the button, it will create an entity with a Shape component. You will define this behavior later.
 
-For each component:
+Loop through the list of component names, create buttons, and add them to the `gridLayout`. For each component:
 
-1. Store the component's name and type from the list of component names and types that you queried earlier.
+1. Store the component's name and type from the list of component names and types that you queried earlier. In this example, we'll name them `name` and `typeId`. 
 
 2. Create a button using the QButton object. In this example, name it `shapeButton`. Pass in `name` to add the component's name onto the button. 
 
@@ -316,18 +333,17 @@ For each component:
 const int maxColumnCount = 3;
 for (int i = 0; i < componentNames.size(); ++i)
 {
-    AZStd::string name = componentNames[i];
+AZStd::string name = componentNames[i];                                                 // 1 
     AZ::TypeId typeId = typeIds[i];
 
-    QPushButton* shapeButton = new QPushButton(QString::fromUtf8(name.c_str()), this);
+    QPushButton* shapeButton = new QPushButton(QString::fromUtf8(name.c_str()), this);  // 2
 
-    // Connect 
+    // ...                                                                              // 3
 
-    int row = i / maxColumnCount;
+    int row = i / maxColumnCount;                                                       // 4
     int column = i % maxColumnCount;
     gridLayout->addWidget(shapeButton, row, column);
 }
-
 ```
 
 ### Add a signal listener with a lambda handler
@@ -356,7 +372,7 @@ In this example, the signal listener uses a lambda handler, so you can define th
 
 Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuses to create a new entity with a component specified by the `typeId` parameter.
 
-2. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::CreateNewEntity` event, which creates a new entity and returns its `AZ::EntityId`. The new entity's `AZ::EntityId` is stored in.
+1. Send a request to create a new entity by calling `EditorRequestBus::BroadcastResult(...)`. Dispatch the `EditorRequests::CreateNewEntity` event, which creates a new entity and returns its `AZ::EntityId`. The new entity's `AZ::EntityId` is stored in.
 
 2. If the user entered a name in the input field, update the entity's name. 
 
@@ -366,14 +382,13 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
    - Format the name and suffix, if any.
 
-    - Call `EditorEntityAPIBus::Event(...)` and dispatch `EditorEntityAPIRequests::SetName` to set the name of `newEntityId` to `entityName`. 
+   - Call `EditorEntityAPIBus::Event(...)` and dispatch `EditorEntityAPIRequests::SetName` to set the name of `newEntityId` to `entityName`.
 
 3. Set the entity's scale.
-   
+
    - Get the value in the combo box by calling `currentText()`, and store it in `scale`.
-   
+
    - Set the entity's scale by calling `AZ::TransformBus::Event()`. Dispatch `SetLocalUniformScale` to set the scale of `newEntityId`.
-   
 
 4. Add a Shape component to the entity. Call `EditorComponentAPIBus::Broadcast(...)` and dispatch `EditorComponentAPIRequests::AddComponentsOfType`, which adds the components from the provided list to `newEntityId`.
 
@@ -425,13 +440,15 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
 ## Icon
 
-An icon is an image file that's used to represent your tool in the O3DE Editor. The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `CppToolGem` template.
+An icon is an image file that's used to represent your tool in the O3DE Editor. The icon appears in the Edit Mode Toolbar in the O3DE Editor (see the following image).
 
-We recommend that your icon adheres to the guidelines in [UI development best practices](https://o3de.org/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices). 
+![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tool/shape-example/icon.png)
 
 ### Add an icon
 
-1. Add an image file to the `Code/Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`.
+The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `PythonToolGem` template.
+
+1. Add an image file to the `Code/Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`. We recommend that your icon adheres to the guidelines in [UI development best practices](https://o3de.org/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
 
 2. Add your icon to PyShapeExample Gem's resources by updating `Code/Source/ShapeExample.qrc` with your new icon's file name.
     
@@ -461,20 +478,33 @@ We recommend that your icon adheres to the guidelines in [UI development best pr
 Build and debug your custom shape tool using **Visual Studio 2019**.
 
 1. Launch Visual Studio 2019 and open the O3DE solution.
+
 2. Find your Gem in the Solution Explorer. Right-click and select **Build** or **Debug**.
 
 After, you can launch O3DE Editor and load the Gem.
 
-Congratualations! You've created a custom Shape tool, built it, and loaded it in the O3DE Editor.
+Congratulations! You've created a custom shape tool written in C++, built it, and loaded it in the O3DE Editor. Your tool should look something like this:
+
+![An image of the Shape Example tool.](/images/learning-guide/tutorials/custom-tool/shape-example/python-shape-example-ui.png)
 
 ## Download the ShapeExample Gem sample
 
 This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can download this sample and load it in the O3DE Editor.
 
-1. Download or clone the repository. The ShapeExample Gem is located in `sample-code-gems/cpp_gems/ShapeExample`. 
+1. Download or clone the repository. The ShapeExample Gem is located in `sample-code-gems/cpp_gems/ShapeExample`.
 
     ```cmd
     git clone https://github.com/o3de/sample-code-gems.git
     ```
 
-2. Register your Gem, enable it in your project, rebuild your project, and open the tool from the O3DE Editor. These steps are explained earlier in this tutorial (refer to [Create a tool with the `CppToolGem` template](#create-a-tool-with-the-cpptoolgem-template)).
+2. Before you can open the Shape Example tool, do the following:
+
+   - Register your Gem.
+
+   - Enable it in your project.
+
+   - Rebuild your project.
+
+   - Open the tool in the O3DE Editor.
+
+    These steps are explained earlier in this tutorial (refer to [Create a tool with the `CppToolGem` template](#create-a-tool-with-the-cpptoolgem-template)).
