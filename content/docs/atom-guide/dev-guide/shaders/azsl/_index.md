@@ -5,16 +5,9 @@ description: Learn about the Amazon Shader Language in the Atom Renderer.
 weight: 100
 ---
 
-This section contains technical details about programming in the Amazon Shader Language (AZSL) and compiling with the Amazon Shader Language Compiler (AZSLc). In the Atom Renderer, shaders are written in AZSL and are compiled by AZSLc. 
-
-<!-- Zero length topics have been set to draft
+This section contains technical details about programming in the Amazon Shader Language (AZSL) and compiling with the Amazon Shader Language Compiler (AZSLc). In the Atom Renderer, shaders are written in AZSL and are compiled by AZSLc.
 ## Contents
 | Topic                        | Description |
-|------------------------------|-------------|
-| [Amazon Shader Language Reference (AZSL)](reference/) | Learn about the AZSL language. |
-| [Binding Rules for Unbounded Arrays](binding-rules/) | Understand the rules and limitations when declaring unbounded arrays in AZSL. |
-| [Design of Shader Variant Options](shader-variant-options/) | Define shader variant options to optimize shader code compilation in AZSL. |
-| [Shader Variant Options and the Fallback Key](fallback-key/) | Learn about how Shader Variant Options are encoded when compiled, and how developers can set up a Fallback Key in AZSL. |
-| [Shader Resource Group Semantics](srg-semantics/) | Define Shader Resource Group Semantics to describe the order in which descriptor bindings and descriptor sets are emitted for each Shader Resource Group in AZSL. |
-| [Amazon Shader Language Compiler (AZSLc)](azsl-compiler/) | Understand how AZSLc transpiles AZSL shaders into HLSL, which is the first part of the compilation process in the shader build pipeline. |
--->
+|--------------------------------------|---------|
+| [AZSL: The Amazon Shader Language](azsl.md) | AZSL (Amazon Shader Language) is an open source extension of HLSL, which enables developers to write shaders in one language and run the shaders across different platforms.| 
+| [AZSLc: The Amazon Shader Language Compiler](azslc/) |The AZSLc (Amazon Shader Language Compiler) transpiles AZSL code into HLSL code. The Shader Build Pipeline, which is part of the AssetProcessor, uses other tools like DXC (DirectX Shader Compiler) and SPIRV-Cross, to compile the HLSL code for a target.|
