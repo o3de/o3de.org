@@ -15,7 +15,7 @@ required.
 
 Minimum hardware requirements for development include the following:
 
-+ Windows 10 64-bit version 1809 or Ubuntu 18.04 LTS
++ Windows 10 64-bit version 1809 or Ubuntu {{< versions/ubuntu >}}
 + Quad-core Intel or AMD processor, 2.5 GHz or faster
 + 8 GB RAM
 + DirectX 12, Vulkan-compatible, or Metal-compatible video card with 2 GB VRAM minimum
@@ -118,7 +118,7 @@ Support for developing on macOS is in an experimental stage. At a minimum, you n
 
 ## Linux
 
-The primary Linux distribution for using the O3DE Editor is Ubuntu 20.04.3 LTS. The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
+The primary Linux distribution for using the O3DE Editor is Ubuntu {{< versions/ubuntu >}}. The following instructions describe how to retrieve and install the required software packages through Ubuntu's `apt-get` command-line utility.
 
 ### CMake {#linux-cmake}
 
@@ -167,7 +167,7 @@ In addition to the minimum hardware requirements for video cards for O3DE, Linux
 
 ### Python 3.7 dependency on libffi
 
-O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu 20.04.3 LTS does not support. You will need to manually install an older version of libffi onto Ubuntu 20.04.3 LTS in order for O3DE's Python to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi.
+O3DE's local python package, Python 3.7, depends on an earlier version of [libffi](https://sourceware.org/libffi/), which Ubuntu {{< versions/ubuntu >}} does not support. You will need to manually install an older version of libffi onto Ubuntu {{< versions/ubuntu >}} in order for O3DE's Python to run properly. The steps below demonstrate how to create a temp folder under `/tmp` to download and manually install the specific debian package for libffi.
 
 ```shell
 pushd /tmp
