@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-In this tutorial, you'll create a custom tool, **Shape Example**, in Python that extends **Open 3D Engine (O3DE) Editor** . The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `PythonToolGem` template and practice Python development with O3DE's Tools UI API and other O3DE APIs.
+In this tutorial, you'll create a custom tool, **Shape Example**, written in Python that extends **Open 3D Engine (O3DE) Editor** . The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `PythonToolGem` template and practice Python development with O3DE's Tools UI API and other O3DE APIs.
 
 This tutorial is based off of the **PyShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample). You can reference the PyShapeExample Gem sample as you follow along this tutorial.
 
@@ -33,9 +33,15 @@ The `PythonToolGem` template contains a basic Python framework to create a docka
 
 4. Open O3DE Editor for your project.
 
-5. Open the tool by selecting **Tools > Examples** from the file menu.
+5. Open the **Python Scripts** panel by selecting **Tools > Other > Python Scripts** from the file menu. (See A in the following image.)
+   
+6. Open `pyshapeexample_dialog` in the Python Scripts panel. (See B in the following image.)
 
-Now you can access your new tool from O3DE Editor. By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality.
+7. Alternatively, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar**. (See C in the following image.)
+
+Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See D in the following image.) 
+
+![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-in-editor.png)
 
 ## Code directory
 
@@ -95,25 +101,28 @@ class PyShapeExampleDialog(QDialog):
 
 ## Input fields and check boxes
 
-In this step, create an input field for the entity's name and a check box to append a suffix that contains the component's name. For example, suppose you set the entity's name to "MyEntity" and enable the suffix check box. When you create Shape components of type Box and Sphere, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
+In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
+
+By the end of this step, your input field and check box should look like this: 
+![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png)
+
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
-1. To start, instantiate a `QGroupBox` called `entityNameWidget` and a `QFormLayout` called `formLayout`.
+1. To start, instantiate a `QGroupBox` called `entity_name_widget` and a `QFormLayout` called `form_layout`.
    
 2. Later, you will create the input field and check box and add them to this widget. 
 
-3. Finally, set the layout of `entityNameWidget` to `formLayout`, and add `entityNameWidget` to `main_layout`. 
+3. Finally, set the layout of `entity_name_widget` to `form_layout`, and add `entity_name_widget` to `main_layout`. 
 
 
 ```py
-        entity_name_widget = QGroupBox("Name your entity (Line Edit)", self)
-
+        entity_name_widget = QGroupBox("Name your entity (Line Edit)", self)    # 1
         form_layout = QFormLayout()
 
-        #
+        # 2
 
-        entity_name_widget.setLayout(form_layout)
+        entity_name_widget.setLayout(form_layout)   # 3
         main_layout.addWidget(entity_name_widget)
 ```
 
@@ -123,12 +132,11 @@ An input field takes text input from the user. With Qt, you can create an input 
 
 1. Create an input field by instantiating `QLineEdit`. In this example, name it `name_input`.
 
-2. (Optional) Set the placeholder text in `name_input` by calling `setPlaceholderText(...)`.
+2. Set the placeholder text in `name_input` by calling `setPlaceholderText(...)`.
 
-3. (Optional) Enable a button to clear the text using `setClearButtonEnabled(True)`.
+3. Enable a button to clear the text using `setClearButtonEnabled(True)`.
 
-```py
-        # Line edit to (optionally) rename the entity that gets created
+```py        
         self.name_input = QLineEdit(self)
         self.name_input.setPlaceholderText("Optional")
         self.name_input.setClearButtonEnabled(True)
@@ -172,19 +180,81 @@ In this example, the signal listener uses a slot handler, which is essentially a
 
 
 ### Add UI elements to layout
-After creating the UI elements -- an input field and a check box -- and connecting a signal listener to them, add them to the layout. To ensure they belong to the sub-widget `entityNameWidget`, add them to the corresponding layout, `formLayout`, by using `addRow(...)`. 
 
+After creating the UI elements -- an input field and a check box -- and connecting a signal listener to them, add them to the UI. To ensure they belong to the sub-widget `entity_name_widget`, add them to `form_layout` by calling `addRow(...)`.
 
 ```py
         form_layout.addRow("Entity name", self.name_input)
         form_layout.addRow("Add shape name suffix", self.add_shape_name_suffix)
 ```
 
+## Combo boxes
+
+In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
+
+By the end of this step, your combo box should look like this: 
+![Shows UI for combo box](/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png)
+
+First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+
+1. To start, instantiate a `QGroupBox` called `comboBoxGroup` and a `QVBoxLayout` called `comboBoxLayout`.
+
+2. Later, you will create a combo box and define a list of scale values.
+
+3. Finally, set the layout of `comboBoxGroup` to `comboBoxLayout`, and add `comboBoxGroup` to `mainLayout`.
+
+```py
+        combobox_group = QGroupBox("Choose your scale (Combo Box)", self)   # 1
+        combobox_layout = QVBoxLayout()
+
+        # 2
+
+        combobox_group.setLayout(combobox_layout)   # 3
+        main_layout.addWidget(combobox_group)
+```
+
+### Create a combo box
+
+A combo box allows users to select an item from a pop up list of items. With Qt, you can create an input field by using the `QComboBox` object. 
+
+1. Define a list of scale values. In this example, we'll name it `scale_values`.
+   
+2. Create a combo box by instantiating `QComboBox`. In this example, we'll name it `scale_combobox`. 
+
+3. Allow users to enter a custom option in the combo box by calling `setEditable(True)`. 
+
+4. If a user enters a custom option, validate that the value they entered is a numerical value within a specific range and decimal place by calling `setValidator(...)`. In this example, set the lower bound to `0.0`, the upper bound to `100.0`, and the decimal places to `3`. 
+
+5. Add the list of values to the combo box by calling `addItems(...)`.
+
+6. Add them to `form_layout` by calling `addWidget(...)`.
+
+```py
+        scale_values = [
+            "1.0",
+            "1.5",
+            "2.0",
+            "5.0",
+            "10.0"
+        ]
+        self.scale_combobox = QComboBox(self)
+        self.scale_combobox.setEditable(True)
+        self.scale_combobox.setValidator(QDoubleValidator(0.0, 100.0, 3, self))
+        self.scale_combobox.addItems(scale_values)
+
+        combobox_layout.addWidget(self.scale_combobox)
+```
+
+
 ## Buttons
 
-In this step, you will create a collection of buttons that create an entity of different shape types, such as a box, sphere, cone, and so on. 
+In this step, you will create a collection of buttons that create an entity with different Shape components, such as with a Box Shape, Sphere Shape, Cone Shape, and so on.
 
-Again, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
+By the end of this step, your buttons should look like this: 
+![Shows UI for buttons](/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png)
+
+
+First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
 1. To start, instantiate a `QGroupBox` called `shape_buttons` and a `QGridLayout` called `grid_layout`.
 
@@ -193,28 +263,24 @@ Again, wrap these UI elements in their own sub-widget, set the layout, and add i
 3. Finally, set the layout of `shape_buttons` to `grid_layout`, and add `shape_buttons` to `main_layout`.
 
 ```py
-        # 1
-        shape_buttons = QGroupBox("Choose your shape (Button)", self)
+        shape_buttons = QGroupBox("Choose your shape (Button)", self)   # 1
         grid_layout = QGridLayout()
 
-        # 2
+        # ...                                                           # 2
 
-        # 3
-        shape_buttons.setLayout(grid_layout)
+        shape_buttons.setLayout(grid_layout)                            # 3
         main_layout.addWidget(shape_buttons)
-
 ```
 
 ### Query Shape components
 
 1. Query the types of Shape components that're registered with the engine. In O3DE, all components have a list of provided services that you can query from. In this example, you are looking for Shape components, which all provide "ShapeService".
 
-   - Create a component service list called `providedServices` and add "ShapeService". 
+   - Create a component service list called `provided_services` and add "ShapeService". 
 
    - Get a list of component types that provide "ShapeService". Use `editor.EditorComponentAPIBus(...)` to call `bus.Broadcast` and dispatch `FindComponentTypeIdsByService`, which takes a list of services to include (`provided_services`) and services to exclude (an empty list) and stores the component types to `typeIds`.
 
    ```py   
-
            shape_service = math.Crc32_CreateCrc32("ShapeService")
            provided_services = [shape_service.value]
            type_ids = editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTypeIdsByService', provided_services, [])
@@ -228,15 +294,12 @@ Again, wrap these UI elements in their own sub-widget, set the layout, and add i
             component_names = editor.EditorComponentAPIBus(bus.Broadcast, 'FindComponentTypeNames', type_ids)
     ```
 
-    {{ note }}
-    You can query a list of services that components provide by calling the component's `GetProvidedServices()` method.
-    {{ /note }}
+{{< note >}}
+You can query a list of services that components provide by calling the component's `GetProvidedServices()` method.
+{{< /note >}}
+
 
 ### Add buttons
-
-An input field is a UI element that takes text input from the user. With Qt, you can create an input field by using the `QLineEdit` object.
-
-1. Create an input field by instantiating `QLineEdit`. In this example, name it `name_input`.
 
 A button is a UI element that the user can click to trigger a user-defined behavior. With Qt, you can create an input field by using the `QPushButton` object. In this example, when the user clicks on the button, it will create an entity with a Shape component. You will define this behavior later.
 
@@ -248,18 +311,18 @@ For each component:
 
 2. Later, you will connect `shape_button` to a signal listener.
 
-4. Split `grid_layout` into three columns, and add the button.
+3. Split `grid_layout` into three columns, and add the button.
 
 ```py
-        max_column_count = 3
+        max_column_count = 3                                    
         for i, name in enumerate(component_names):
             type_id = type_ids[i]
 
-            shape_button = QPushButton(name, self)
+            shape_button = QPushButton(name, self)              # 1
 
-            # Connect
+            # ...                                               # 2
 
-            row = i / max_column_count
+            row = i / max_column_count                          # 3
             column = i % max_column_count
             grid_layout.addWidget(shape_button, row, column)
 ```
@@ -282,7 +345,7 @@ In this example, the signal listener uses a lambda handler, so you can define th
             shape_button.clicked.connect(lambda checked=False, type_id=type_id: self.create_entity_with_shape_component(type_id))
     ```
 
- ### Communicate with EBusses
+ ### Communicate with EBuses
 
 Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuses to create a new entity with a component specified by the `typeId` parameter.
 
@@ -339,13 +402,16 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
 ## Icon
 
-An icon is an image file that's used to represent your tool in the O3DE Editor. The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `PythonToolGem` template.
+An icon is an image file that's used to represent your tool in the O3DE Editor. The icon appears in the Edit Mode Toolbar in the O3DE Editor (see the following image).
+
+![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tools/shape-example/icon.png)
  
-We recommend that your icon adheres to the guidelines in [UI development best practices](https://o3de.org/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
 
 ### Add an icon
 
-1. Add an image file to the `Code/Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`.
+The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `PythonToolGem` template.
+
+1. Add an image file to the `Code/Source` directory to use as your icon. In this example, the icon is named `toolbar.svg`. We recommend that your icon adheres to the guidelines in [UI development best practices](https://o3de.org/docs/tools-ui/uidev-component-development-guidelines/#ui-development-best-practices).
 
 2. Add your icon to PyShapeExample Gem's resources by updating `Code/Source/ShapeExample.qrc` with your new icon's file name.
 
@@ -374,7 +440,7 @@ We recommend that your icon adheres to the guidelines in [UI development best pr
 
 [todo]
 
-## Download the ShapeExample Gem sample
+## Download the PyShapeExample Gem sample
 
 This tutorial is based off of the PyShapeExample Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample). You can download this sample and load it in the O3DE Editor.
 
@@ -384,4 +450,14 @@ This tutorial is based off of the PyShapeExample Gem in [`o3de/sample-code-gems`
     git clone https://github.com/o3de/sample-code-gems.git
     ```
 
-2. Register your Gem, enable it in your project, rebuild your project, and open the tool from the O3DE Editor. These steps are explained earlier in this tutorial (refer to [Create a tool with the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template)).
+2. Before you can open the Shape Example tool, do the following:
+
+   - Register your Gem.
+   
+   - Enable it in your project.
+   
+   - Rebuild your project.
+   
+   - Open the tool in the O3DE Editor.
+      
+    These steps are explained earlier in this tutorial (refer to [Create a tool with the `PythonToolGem` template](#create-a-tool-with-the-pythontoolgem-template)).
