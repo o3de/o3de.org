@@ -41,7 +41,7 @@ The `PythonToolGem` template contains a basic Python framework to create a docka
 
 Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See D in the following image.) 
 
-![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-in-editor.png)
+![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tool/shape-example/python-shape-example-in-editor.png)
 
 ## Code directory
 
@@ -104,7 +104,7 @@ class PyShapeExampleDialog(QDialog):
 In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
 
 By the end of this step, your input field and check box should look like this: 
-![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png)
+![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tool/shape-example/input-field-check-box.png)
 
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
@@ -193,7 +193,7 @@ After creating the UI elements -- an input field and a check box -- and connecti
 In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
 
 By the end of this step, your combo box should look like this: 
-![Shows UI for combo box](/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png)
+![Shows UI for combo box](/images/learning-guide/tutorials/custom-tool/shape-example/combo-box.png)
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -251,7 +251,7 @@ A combo box allows users to select an item from a pop up list of items. With Qt,
 In this step, you will create a collection of buttons that create an entity with different Shape components, such as with a Box Shape, Sphere Shape, Cone Shape, and so on.
 
 By the end of this step, your buttons should look like this: 
-![Shows UI for buttons](/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png)
+![Shows UI for buttons](/images/learning-guide/tutorials/custom-tool/shape-example/buttons.png)
 
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
@@ -404,7 +404,7 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
 An icon is an image file that's used to represent your tool in the O3DE Editor. The icon appears in the Edit Mode Toolbar in the O3DE Editor (see the following image).
 
-![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tools/shape-example/icon.png)
+![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tool/shape-example/icon.png)
  
 
 ### Add an icon
