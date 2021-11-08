@@ -129,7 +129,7 @@ void OnLeaveSessionAsyncComplete()
 }
 ```
 
-### Destroy Session (Passively)
+### Destroy session (passively)
 
 As the default behavior, when the last player leaves the game session, the Multiplayer Gem starts terminating the game session automatically. 
 
