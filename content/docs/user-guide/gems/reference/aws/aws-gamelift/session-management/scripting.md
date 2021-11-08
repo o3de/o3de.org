@@ -9,7 +9,7 @@ weight: 400
 
 The **AWS GameLift** provides Script Canvas nodes that make requests against Amazon GameLift to create, search, join, and leave game sessions.
 
-There are synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate through AWS HTTPS requests or over the network. Each asynchronous node has a corresponding notification handler node.
+There are synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate over the network through either AWS HTTPS requests or TCP/UDP packets. Each asynchronous node has a corresponding notification handler node.
 
 ## ConfigureGameLiftClient
 
@@ -18,9 +18,9 @@ To make requests against GameLift, you must create a proper GameLift client usin
 Note that you must specify the AWS Region in the correct format. For example, for the US East (N. Virginia) Region, specify **us-east-1**. For a list of supported Regions, refer to [Amazon GameLift endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/gamelift.html) in the AWS General Reference.
 
 
-### ConfigureGameLiftClient node
+### ConfigureGameLiftClient sample graph
 
-![ConfigureGameLiftClient node](/images/user-guide/gems/reference/aws/aws-gamelift/configureclient.PNG)
+![ConfigureGameLiftClient sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/configureclient.PNG)
 
 
 ## CreateSession
@@ -31,16 +31,20 @@ After successfully creating a session, other instances of your game can discover
 
 ### CreateSession sample graph
 
-![CreateSession node](/images/user-guide/gems/reference/aws/aws-gamelift/createsession.PNG)
+![CreateSession sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/createsession.PNG)
 
 
 ### CreateSessionAsync sample graph
 
-![CreateSessionAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/createsessionasync.PNG)
+![CreateSessionAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/createsessionasync.PNG)
 
 
 ### AWSGameLiftCreateSessionOnQueue sample graph
-![AWSGameLiftCreateSessionOnQueueRequest Get and Set nodes](/images/user-guide/gems/reference/aws/aws-gamelift/createsessiononqueue.PNG)
+![AWSGameLiftCreateSessionOnQueue sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/createsessiononqueue.PNG)
+
+
+### AWSGameLiftCreateSessionOnQueueAsync sample graph
+![AWSGameLiftCreateSessionOnQueueAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/createsessiononqueueasync.PNG)
 
 
 ## SearchSessions
@@ -51,12 +55,12 @@ On success, the SearchSessions node returns a list of **SearchSessionsResponse**
 
 ### SearchSessions sample graph
 
-![SearchSessions node](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessions.PNG)
+![SearchSessions sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessions.PNG)
   
 
 ### SearchSessionsAsync sample graph
 
-![SearchSessionsAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessionasync.PNG)
+![SearchSessionsAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/searchsessionasync.PNG)
 
 
 ## JoinSession
@@ -68,12 +72,12 @@ With this node, you can pass in the properties `game session id` and `player id`
   
 ### JoinSession sample graph
 
-![JoinSession node](/images/user-guide/gems/reference/aws/aws-gamelift/joinsession.PNG)
+![JoinSession sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/joinsession.PNG)
 
 
 ### JoinSessionAsync sample graph
 
-![JoinSessionAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/joinsessionasync.PNG)
+![JoinSessionAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/joinsessionasync.PNG)
 
 
 ## LeaveSession
@@ -83,12 +87,12 @@ To disconnect from a joined session, use the **LeaveSession** node.
 
 ### LeaveSession sample graph
 
-![LeaveSession node](/images/user-guide/gems/reference/aws/aws-gamelift/leavesession.PNG)  
+![LeaveSession sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/leavesession.PNG)  
 
 
 ### LeaveSessionAsync sample graph
 
-![LeaveSessionAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/leavesessionasync.PNG)  
+![LeaveSessionAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/leavesessionasync.PNG)  
 
 
 ---

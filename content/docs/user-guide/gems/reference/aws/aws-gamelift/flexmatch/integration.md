@@ -30,7 +30,7 @@ To support the optional manual backfill, you server should implement the followi
 - `OnUpdateSessionBegin`
 - `OnUpdateSessionEnd`
 
-## Related Information
+## Related information
 
 - [Preparing games for FlexMatch](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-integration-intro.html)
 

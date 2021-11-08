@@ -9,7 +9,7 @@ weight: 400
 
 The **AWS GameLift** provides Script Canvas nodes that make requests against Amazon GameLift to start, stop and accept matchmaking requests.
 
-There are synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate through AWS HTTPS requests or over the network. Each asynchronous node has a corresponding notification handler node.
+There are synchronous and asynchronous versions for each action. Asynchronous nodes perform their operation in the AZ JobFunction and finish at some point in the future. These operations communicate over the network through either AWS HTTPS requests or TCP/UDP packets. Each asynchronous node has a corresponding notification handler node.
 
 
 ## StartMatchmaking
@@ -19,12 +19,12 @@ With this node, you can pass in the properties `configuration name`, `players` a
 
 ### StartMatchmaking sample graph
 
-![StartMatchmaking node](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmaking.PNG)
+![StartMatchmaking sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmaking.PNG)
 
 
 ### StartMatchmakingAsync sample graph
 
-![StartMatchmakingAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmakingasync.PNG)
+![StartMatchmakingAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/startmatchmakingasync.PNG)
 
 
 ## StopMatchmaking
@@ -34,12 +34,12 @@ With this node, you can pass in the property `ticket id` through `AWSGameLiftSto
 
 ### StopMatchmaking sample graph
 
-![StopMatchmaking node](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmaking.PNG)
+![StopMatchmaking sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmaking.PNG)
 
 
 ### StopMatchmakingAsync sample graph
 
-![StopMatchmakingAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmakingasync.PNG)
+![StopMatchmakingAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/stopmatchmakingasync.PNG)
 
 
 ## AcceptMatch
@@ -49,12 +49,12 @@ With this node, you can pass in the properties `accept match`, `player ids` and 
 
 ### AcceptMatch sample graph
 
-![AcceptMatch node](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatch.PNG)
+![AcceptMatch sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatch.PNG)
 
 
 ### AcceptMatchAsync sample graph
 
-![AcceptMatchAsync node and Async Handler node](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatchasync.PNG)
+![AcceptMatchAsync sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/acceptmatchasync.PNG)
 
 
 ## StartPolling
@@ -63,7 +63,7 @@ Request to start the local process for polling matchmaking ticket based on given
 
 ### StartPolling sample graph
 
-![StartPolling node](/images/user-guide/gems/reference/aws/aws-gamelift/startpolling.PNG)
+![StartPolling sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/startpolling.PNG)
 
 
 ## StopPolling
@@ -72,7 +72,7 @@ Request to stop the local process for polling matchmaking ticket.
 
 ### StopPolling sample graph
 
-![StopPolling node](/images/user-guide/gems/reference/aws/aws-gamelift/stoppolling.PNG)
+![StopPolling sample graph](/images/user-guide/gems/reference/aws/aws-gamelift/stoppolling.PNG)
 
 
 ## Matchmaking notifications
@@ -91,7 +91,7 @@ OnMatchAcceptance is fired when match is found and pending on acceptance. Use th
 
 OnMatchComplete is fired when match is complete.
 
-![OnMatchComplete](/images/user-guide/gems/reference/aws/aws-gamelift/onmatchcomplete.PNG)
+![OnMatchComplete node](/images/user-guide/gems/reference/aws/aws-gamelift/onmatchcomplete.PNG)
 
 
 ### OnMatchError node

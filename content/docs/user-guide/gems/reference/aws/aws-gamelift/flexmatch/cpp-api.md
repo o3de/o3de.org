@@ -221,7 +221,7 @@ AWSGameLift::AWSGameLiftServerRequestBus::BroadcastResult(result, &AWSGameLift::
 ```
 
 
-### Session Notification
+### Session notification
 
 ### `OnUpdateSessionBegin`
 
