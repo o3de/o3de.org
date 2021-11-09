@@ -5,7 +5,7 @@ description: Learn how to install and set up Open 3D Engine (O3DE) for the first
 weight: 400
 ---
 
-The topics in this section guide you through the process of setting up your Open 3D Engine (O3DE) development environment.
+The topics in this section guide you through the process of setting up your **Open 3D Engine (O3DE)** development environment.
 
 | Topic | Description |
 | --- | --- |

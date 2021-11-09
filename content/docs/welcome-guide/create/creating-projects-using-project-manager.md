@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-This tutorial provides an introduction to project configuration and building in Open 3D Engine (O3DE). The instructions here and in the video will guide you through the following steps:
+This tutorial provides an introduction to project configuration and building in **Open 3D Engine (O3DE)**. The instructions here and in the video will guide you through the following steps:
 
 * Configure the **Project Manager** engine settings.
 * Create a new O3DE project.
@@ -35,12 +35,12 @@ This tutorial uses the following project name and directories in the examples:
 
 ## Launch Project Manager
 
-1. Open a file browser or command line window on your computer and navigate to your O3DE engine directory. Locate and launch the O3DE **Project Manager** application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/Windows/profile`.
+1. Open a file browser or command line window on your computer and navigate to your O3DE engine directory. Locate and launch the O3DE **Project Manager** application, `o3de.exe`, from `<INSTALL_DIRECTORY>/bin/Windows/profile/Default`.
 
-    ![Launch o3de.exe from <INSTALL_DIRECTORY>/bin/profile](/images/welcome-guide/project-manager-location.png)
+    ![Launch o3de.exe from its build directory](/images/welcome-guide/project-manager-location.png)
 
     {{< important >}}
-If you built an SDK engine from source using the `INSTALL` target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile`.
+If you built an SDK engine from source using the `INSTALL` target, make sure you launch the Project Manager and other tools from the **install** directory, _not_ the build directory in the engine root. For example, the Windows install directory will typically end in `/bin/Windows/profile/Default`.
     {{< /important >}}
 
 ## Configure the engine settings

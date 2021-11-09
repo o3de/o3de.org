@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-The Open 3D Engine (O3DE) documentation project serves a global audience. These guidelines help make your writing accessible to everyone.
+The **Open 3D Engine (O3DE)** documentation project serves a global audience. These guidelines help make your writing accessible to everyone.
 
 * Use U.S. English for accessibility.
 * Whenever possible, use precise words with only one definition, or the primary definition of words from . For example, use "once" only when referring to the number of times that an action is performed. Don't use "once" to mark a point in time, like in "Once the download completes."

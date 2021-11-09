@@ -5,7 +5,7 @@ description: The Editor Python Bindings Gem provides Python commands for Open 3D
 toc: true
 ---
 
-Some tasks in Open 3D Engine (O3DE) **Editor** are tedious or could easily be automated. To automate Editor tasks, O3DE Editor has support for scripting through Python bindings. These bindings are enabled with the Python Editor Bindings Gem, and used through a Python 3 library embedded within O3DE Editor. You can access a Python read, evaluate, print loop (REPL) through O3DE's Python Console, or launch Editor with an argument that loads and runs a Python script on boot.
+Some tasks in **Open 3D Engine (O3DE)** **Editor** are tedious or could easily be automated. To automate Editor tasks, O3DE Editor has support for scripting through Python bindings. These bindings are enabled with the Python Editor Bindings Gem, and used through a Python 3 library embedded within O3DE Editor. You can access a Python read, evaluate, print loop (REPL) through O3DE's Python Console, or launch Editor with an argument that loads and runs a Python script on boot.
 
 ## Enable Editor automation
 

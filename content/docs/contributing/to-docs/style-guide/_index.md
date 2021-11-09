@@ -6,7 +6,7 @@ weight: 500
 toc: true
 ---
 
-Ready to contribute to the Open 3D Engine (O3DE) documentation? This style guide prepares you with recommendations and guidelines for [submitting a docs pull request](/docs/contributing/to-docs/submit-a-pr). We've tried to provide contributors with all the information that they need about writing style, formatting, and the conventions used across our docs site. If you need guidance that isn't included, [file an issue with the D&C SIG](https://github.com/o3de/sig-docs-community) to suggest an improvement.
+Ready to contribute to the **Open 3D Engine (O3DE)** documentation? This style guide prepares you with recommendations and guidelines for [submitting a docs pull request](/docs/contributing/to-docs/submit-a-pr). We've tried to provide contributors with all the information that they need about writing style, formatting, and the conventions used across our docs site. If you need guidance that isn't included, [file an issue with the D&C SIG](https://github.com/o3de/sig-docs-community) to suggest an improvement.
 
 Following the style guide is the best way to make sure that contributions to the O3DE docs get reviewed and merged quickly. We don't expect every contributor to know every detail. All we ask is that contributors be familiar with the guide and follow it to the best of their ability. Pull request reviews are there to catch any of the most serious style errors in contributions.
 
@@ -14,10 +14,10 @@ Following the style guide is the best way to make sure that contributions to the
 
 What are the ideal traits for O3DE docs?
 
-* ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject (noun)* that performs the *action (verb)*?
-* ✅ **Answer the question at hand** - Does the documentation answer a *why*, *how*, or *where* type of question?
-* ✅ **Consistency** - Do the text formatting and writing style remain *relatively consistent*?
+* ✅ **Descriptive active voice** - Do descriptive sentences have a clear *subject* and *action verb*?
+* ✅ **Answer the question at hand** - Does the documentation answer a *what*, *why*, *how*, or *where* type of question?
 * ✅ **Help the user** - Does the documentation show the user something *meaningful*?
+* ✅ **Consistency** - Does the content consistently follow the style guide?
 
 ## What's in the guide?
 

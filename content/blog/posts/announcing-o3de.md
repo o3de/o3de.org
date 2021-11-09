@@ -9,7 +9,7 @@ full_img: "/images/blog/atom_showcase.png"
 
 ## Announcing Open 3D Engine
 
-On July 6th, 2021, the Linux Foundation announced the public availability of the Open 3D Engine (O3DE) open-source project and the formation of the Open 3D Foundation.
+On July 6th, 2021, the Linux Foundation announced the public availability of the **Open 3D Engine (O3DE)** open-source project and the formation of the Open 3D Foundation.
 
 As a founding partner in O3DE, Amazon Web Services and the AWS Lumberyard team has been working on this effort for awhile, preparing the code and tools for a developer-centric initial release. Curious about the work? Read these AWS Game Tech blog posts that they published earlier in 2021, describing the new features they are building out for O3DE.
 
