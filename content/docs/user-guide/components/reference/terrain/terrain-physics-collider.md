@@ -1,13 +1,12 @@
 ---
-title: Terrain Physics Collider component
-linktitle: TerrainPhysicsCollider
-description: ' Open 3D Engine (O3DE) Terrain Physics Collider reference. '
+title: Terrain Physics Collider Component
+linktitle: Terrain Physics Collider
+description: 'Open 3D Engine (O3DE) Terrain Physics Collider component reference.'
 weight: 100
 ---
 
 The **Terrain Physics Collider** component provides terrain data to the physics system in the form of a heightfield and material assignments.  
 You can configure the dimensions of the collider by modifying the [Axis Aligned Box Shape Component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape) on the same entity.
-The **Box component** is required for the **Terrain Physics Collider** to operate.
 
 ## Usage ##
 
@@ -16,6 +15,10 @@ You can assign which materials are assigned to surfaces, by selecting a surface 
 ## Provider ##
 
 [Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
+
+## Dependencies ##
+
+[Axis Aligned Box Shape Component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
 
 ## HeightfieldProviderRequestsBus ##
 
