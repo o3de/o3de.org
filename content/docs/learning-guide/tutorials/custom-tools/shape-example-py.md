@@ -6,35 +6,37 @@ weight: 300
 toc: true
 ---
 
-In this tutorial, you'll create a custom tool, **Shape Example**, written in Python that extends **Open 3D Engine (O3DE) Editor** . The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `PythonToolGem` template and practice Python development with O3DE's Tools UI API and other O3DE APIs.
+In this tutorial, you'll create a custom tool, **Shape Example**, written in Python that extends the **Open 3D Engine (O3DE) Editor** . The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `PythonToolGem` template and practice Python development with O3DE's Tools UI API and other O3DE APIs.
 
 ![An image of the Shape Example tool and some entities created by it.](/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-demo.png)
 
 This tutorial is based off of the **PyShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/py_gems/PyShapeExample). You can reference the PyShapeExample Gem sample as you follow along this tutorial.
 
-By the end of this tutorial, you'll be able to create your own tools that extends O3DE Editor.
+By the end of this tutorial, you'll be able to create your own tools that extend the O3DE Editor.
 
 
 ## Create a tool with the `PythonToolGem` template
 
 The `PythonToolGem` template contains a basic Python framework to create a dialog window that extends the O3DE Editor.
 
-1. Create a Gem by using the **O3DE CLI (`o3de`)** script that's in your engine source directory. Specify the name `PyShapeExample` by using the `--gem-name` option and the template `PythonToolGem` by using the `--template-name` option. By default, this creates the Gem directory in `<user>/.o3de/Gems` -- or you can specify a location by using the `--gem-path` option. Depending on the location, this automatically registers the Gem to either the `.o3de` registry, engine, or project.
+1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `PythonToolGem` template. In this example, we'll name the Gem `MyPyShapeExample` and create it in `C:/o3de-gems/MyPyShapeExample`.
 
     ```cmd
-    scripts/o3de create-gem --gem-name ShapeExample --template-name PyToolGem
+    scripts/o3de create-gem --gem-name MyPyShapeExample --gem-path C:/o3de-gems/MyPyShapeExample --template-name PythonToolGem
     ```
+
+   Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de/o3de_manifest.json`, `<engine>/engine.json`, and `<project>/project.json`.
 
 2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem.
 
     ```cmd
-    scripts/o3de register -gp <gem-path> -espp <project-path>
+    scripts/o3de register -gp C:/o3de-gems/MyPyShapeExample -espp <project-path>
     ```
 
 3. Add the Gem in your project by using the `o3de` script.
 
     ```cmd
-    scripts/o3de enable-gem -gn PythonToolGem -pp <project-path>
+    scripts/o3de enable-gem -gn MyPyShapeExample -pp <project-path>
     ```
 
     Or, enable the Gem using the Project Manager (refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems.md)).
@@ -43,15 +45,13 @@ The `PythonToolGem` template contains a basic Python framework to create a dialo
 
 5. Open O3DE Editor for your project.
 
-6. Open the **Python Scripts** panel by selecting **Tools > Other > Python Scripts** from the file menu. (See A in the following image.)
+6. Open the tool by selecting **Tools > Examples > MyPythonShapeExample** from the file menu. (See A in the following image.)
 
-7. Open `pyshapeexample_dialog` in the Python Scripts panel. (See B in the following image.)
+    Or, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar**. (See B.)
 
-8. Alternatively, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar**. (See C in the following image.)
+Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C.)
 
-Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See D in the following image.) 
-
-![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tool/shape-example/python-shape-example-in-editor.png)
+![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tools/shape-example/python-tool-gem-template-in-editor.png)
 
 ## Code directory
 
@@ -65,7 +65,7 @@ For more information on Gem modules and system components, refer to the [C++ Pro
 
 ### O3DE and Qt frameworks
 
-O3DE extends the **Qt** framework, so you will use [PySide2](https://pypi.org/project/PySide2/)---a Python module based on [Qt for Python](https://doc.qt.io/qtforpython/)---to create a graphical user interface (GUI). You will also use O3DE's EBuses to communicate with other O3DE interfaces, such as entities and components, and connect them to Qt elements.
+O3DE extends the **Qt** framework, so you will use [PySide2](https://pypi.org/project/PySide2/)---the Python bindings for Qt, [Qt for Python](https://doc.qt.io/qtforpython/)---to create a graphical user interface (GUI). You will also use O3DE's EBuses to communicate with other O3DE interfaces, such as entities and components, and connect them to Qt elements.
 
 You will write most of your tool's functionality and UI elements in the`PyShapeExampleDialog` class that's located in `Editor/Scripts/pyshapeexample_dialog.py`.
 
@@ -112,7 +112,7 @@ class PyShapeExampleDialog(QDialog):
 In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
 
 By the end of this step, your input field and check box should look like this: 
-![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tool/shape-example/input-field-check-box.png)
+![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png)
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -164,7 +164,7 @@ A check box is an option button that users can enable or disable to trigger a us
 
 ### Add a signal listener with a slot handler
 
-Qt uses signals and slots to communicate between objects. Set up a signal listener such that when the user enters text into the input field at runtime, the check box automatically enables. 
+Qt uses signals and slots to communicate between objects (refer to [Signals & Slots](https://doc.qt.io/qt-5/signalsandslots.html) in the Qt Documentation). Set up a signal listener such that when the user enters text into the input field at runtime, the check box automatically enables.
 
 In this example, the signal listener uses a slot handler, which is essentially a Python function that a signal can connect to.
 
@@ -198,7 +198,7 @@ After creating the UI elements---an input field and a check box---and connecting
 In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
 
 By the end of this step, your combo box should look like this: 
-![Shows UI for combo box](/images/learning-guide/tutorials/custom-tool/shape-example/combo-box.png)
+![Shows UI for combo box](/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png)
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -256,7 +256,7 @@ A combo box allows users to select an item from a pop up list of items. With Qt,
 In this step, you will create a collection of buttons that create an entity with different Shape components, such as with a Box Shape, Sphere Shape, Cone Shape, and so on.
 
 By the end of this step, your buttons should look like this: 
-![Shows UI for buttons](/images/learning-guide/tutorials/custom-tool/shape-example/buttons.png)
+![Shows UI for buttons](/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png)
 
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
@@ -407,7 +407,7 @@ Define `CreateEntityWithShapeComponent(...)`, which communicates with O3DE EBuse
 
 An icon is an image file that's used to represent your tool in the O3DE Editor. The icon appears in the Edit Mode Toolbar in the O3DE Editor (see the following image).
 
-![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tool/shape-example/icon.png)
+![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tools/shape-example/icon.png)
 
 ### Add an icon
 
@@ -441,7 +441,13 @@ The following instructions walk you through how to store the icon using the Qt R
 
 ## Build and debug your tool
 
-[todo]
+You can debug your tool by running it from the **Python Scripts** panel in the O3DE Editor.
+
+1. Open O3DE Editor for your project.
+
+2. Open the Python Scripts panel by selecting **Tools > Other > Python Scripts** from the file menu. (See A in the following image.)
+
+3. Open `pyshapeexample_dialog` in the Python Scripts panel. (See B in the following image.)
 
 Congratulations! You've created a custom Shape tool, built it, and loaded it in the O3DE Editor. Your tool should look something like this:
 

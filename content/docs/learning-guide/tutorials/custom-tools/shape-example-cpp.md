@@ -6,35 +6,37 @@ weight: 200
 toc: true
 ---
 
-In this tutorial, you'll create a custom tool, **Shape Example**, written in C++ that extends **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `CppToolGem` template and practice C++ development with O3DE's Tools UI API and other O3DE APIs.
+In this tutorial, you'll create a custom tool, **Shape Example**, written in C++ that extends the **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `CppToolGem` template and practice C++ development with O3DE's Tools UI API and other O3DE APIs.
 
-![An image of the Shape Example tool and some entities created by it.](/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-demo.png)
+![An image of the Shape Example tool and some entities created by it.](/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-demo.png)
 
 This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can reference the ShapeExample Gem sample as you follow along this tutorial.
 
-By the end of this tutorial, you'll be able to create your own tools that extends O3DE Editor.
+By the end of this tutorial, you'll be able to create your own tools that extend the O3DE Editor.
 
 
 ## Create a tool with the `CppToolGem` template
 
-The `CppToolGem` template contains a basic C++ framework to create a dockable widget in O3DE Editor.
+The `CppToolGem` template contains a basic C++ framework to create a dockable tool (widget) in the O3DE Editor.
 
-1. Create a Gem by using the **O3DE CLI (`o3de`)** script that's in your engine source directory. Specify the name `ShapeExample` by using the `--gem-name` option and the template `CppToolGem` by using the `--template-name` option. By default, this creates the Gem directory in `<user>/.o3de/Gems` -- or you can specify a location by using the `--gem-path` option. Depending on the location, this automatically registers the Gem to either the `.o3de` registry, engine, or project.
+1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `CppToolGem` template. In this example, we'll name the Gem `MyCppShapeExample` and create it in `C:/o3de-gems/MyCppShapeExample`.
 
     ```cmd
-    scripts/o3de create-gem --gem-name ShapeExample --template-name CppToolGem
+    scripts/o3de create-gem --gem-name MyCppShapeExample --template-name CppToolGem --gem-path C:/o3de-gems/MyCppShapeExample
     ```
+
+   Depending on the Gem path, this command automatically registers the Gem to one of the manifest files: `.o3de/o3de_manifest.json`, `<engine>/engine.json`, and `<project>/project.json`.
 
 2. (Optional) Register the Gem to your project. This step is optional because when you create a Gem using the O3DE CLI in the previous step, it automatically registers the Gem.
 
     ```cmd
-    scripts/o3de register -gp <gem-path> -espp <project-path>
+    scripts/o3de register -gp C:/o3de-gems/MyCppShapeExample -espp <project-path>
     ```
 
 3. Add the Gem in your project.
 
     ```cmd
-    scripts/o3de enable-gem -gn CppToolGem -pp <project-path>
+    scripts/o3de enable-gem -gn MyCppShapeExample -pp <project-path>
     ```
 
     Or, enable the Gem using the Project Manager (refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems.md)).
@@ -43,11 +45,13 @@ The `CppToolGem` template contains a basic C++ framework to create a dockable wi
 
 5. Open O3DE Editor for your project.
 
-6. Open the tool by selecting **Tools > Examples** from the file menu (see A in the following image). Or, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar** (see B in the following image).
+6. Open the tool by selecting **Tools > Examples > MyCppShapeExample** from the file menu. (See A in the following image.) 
 
-Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C in the following image.)
+    Or, open the tool directly by clicking on the tool's icon in the **Edit Mode Toolbar**. (See B.)
 
-![O3DE Editor with a tool created using the PythonToolGem template](/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-in-editor.png)
+Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C.)
+
+![O3DE Editor with a tool created using the CppToolGem template](/images/learning-guide/tutorials/custom-tools/shape-example/cpp-tool-gem-template-in-editor.png)
 
 
 ## Code directory
@@ -158,7 +162,7 @@ A check box is an option button that users can enable or disable to trigger a us
 
 ### Add a signal listener with a slot handler
 
-Qt uses signals and slots to communicate between objects. Set up a signal listener such that when the user enters text into the input field at runtime, the check box automatically enables. 
+Qt uses signals and slots to communicate between objects (refer to [Signals & Slots](https://doc.qt.io/qt-5/signalsandslots.html) in the Qt Documentation). Set up a signal listener such that when the user enters text into the input field at runtime, the check box automatically enables. 
 
 In this example, the signal listener uses a slot handler, which is essentially a C++ function that a signal can connect to. 
 
@@ -169,7 +173,7 @@ In this example, the signal listener uses a slot handler, which is essentially a
         void OnNameInputTextChanged(const QString& text);
     ```
 
-2. Call `QObject::connect(...)` to create a connection between the input field (`m_nameInput`) to the signal (`QLineEdit::TextChanged`) and slot (ShapeExampleWidget::OnNameINputTextChanged`). Refer to the following line of `ShapeExampleWidget.cpp`.
+2. Call `QObject::connect(...)` to create a connection between the input field (`m_nameInput`) to the signal (`QLineEdit::textChanged`) and slot (ShapeExampleWidget::OnNameInputTextChanged`). Refer to the following line of `ShapeExampleWidget.cpp`.
 
 
     ```cpp
@@ -446,6 +450,7 @@ An icon is an image file that's used to represent your tool in the O3DE Editor. 
 
 ![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tools/shape-example/icon.png)
 
+
 ### Add an icon
 
 The following instructions walk you through how to store the icon using the Qt Resource System and load it from your Gem module. Be aware that some of the instructions may already be done by the `PythonToolGem` template.
@@ -487,7 +492,7 @@ After, you can launch O3DE Editor and load the Gem.
 
 Congratulations! You've created a custom shape tool written in C++, built it, and loaded it in the O3DE Editor. Your tool should look something like this:
 
-![An image of the Shape Example tool.](/images/learning-guide/tutorials/custom-tools/shape-example/python-shape-example-ui.png)
+![An image of the Shape Example tool.](/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-ui.png)
 
 ## Download the ShapeExample Gem sample
 
