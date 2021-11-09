@@ -1,7 +1,7 @@
 ---
-title: Terrain Height Gradient List component
-linktitle: TerrainHeightGradientList
-description: ' Open 3D Engine (O3DE) Terrain Height Gradient List reference. '
+title: Terrain Height Gradient List Component
+linktitle: Terrain Height Gradient List
+description: 'Open 3D Engine (O3DE) Terrain Height Gradient List component reference.'
 weight: 100
 ---
 
@@ -12,6 +12,10 @@ The range of heights is adjusted by scaling the height of the [Axis Aligned Box 
 ## Provider ##
 
 [Terrain Gem](/docs/user-guide/gems/reference/terrain)
+
+## Dependencies ##
+
+[Axis Aligned Box Shape Component](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
 
 ## TerrainAreaHeightRequestBus ##
 
