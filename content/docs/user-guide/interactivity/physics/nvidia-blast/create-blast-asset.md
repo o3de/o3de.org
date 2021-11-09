@@ -2,6 +2,7 @@
 description: ' Create NVIDIA Blast assets in Houdini for Open 3D Engine. '
 title: Create assets for NVIDIA Blast
 weight: 200
+draft: true
 ---
 
 Assets for NVIDIA Blast are created in Houdini with the provided tools and plug-ins. Follow the steps below to create and export blast assets for O3DE.

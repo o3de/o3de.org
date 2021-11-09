@@ -7,7 +7,7 @@ toc: true
 
 Use a slider to enable users to control a variable by moving a knob or lever horizontally or vertically. The visual feedback shows users where the current value is within the range of valid values.
 
- **Slider**
+**Slider**
 
 The basic slider is a styled version of the `QSlider` widget from the Qt library.
 
@@ -15,7 +15,7 @@ The basic slider is a styled version of the `QSlider` widget from the Qt library
 
 Use the `SliderInt` class for signed integer values, and the `SliderDouble` class for double values.
 
- **Slider combo**
+**Slider combo**
 
 A slider combo is a combination of the slider and spinbox widgets. In practice, sliders can be difficult for the user to manipulate with precision. Therefore, it is recommended that for fine control, you use a slider combo, which combines the visual feedback of the slider with the precise fine-tuning capability of the spinbox.
 
@@ -23,7 +23,7 @@ A slider combo is a combination of the slider and spinbox widgets. In practice, 
 
 Use the `SliderCombo` class for signed integer values, and the `SliderDoubleCombo` class for double values.
 
-## Usage guidelines<a name="sliders-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with sliders:
 
@@ -35,15 +35,15 @@ Avoid these design choices when using sliders:
 + Don't use the slider when picking an exact value is important to the goal of the interface.
 + Don't use the slider if you don't have the start and end value for your use case. Use the number edit input box instead.
 
-## Basic slider with midpoint<a name="slider-basic"></a>
+## Basic slider with midpoint
 
 ![component slider basic](/images/tools-ui/component-slider-basic.png)
 
 The following example demonstrates the creation of a simple, integer slider using the optional midpoint style.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/Slider.h>
 
 // Create a new integer slider widget.
@@ -60,29 +60,29 @@ AzQtComponents::Slider::applyMidPointStyle(sliderInt);
 sliderInt->setEnabled(false);
 ```
 
-## Slider with tooltip<a name="slider-tooltip"></a>
+## Slider with tooltip
 
 ![component slider tooltip](/images/tools-ui/component-slider-tooltip.png)
 
 Add a tooltip to provide context for the value in the slider.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/Slider.h>
 
 sliderInt->setToolTipFormatting("Opacity", "%");
 ```
 
-## Basic slider combo<a name="slider-combo-basic"></a>
+## Basic slider combo
 
 ![component slider combo basic](/images/tools-ui/component-slider-combo-basic.png)
 
 The following example demonstrates the creation of a double slider combo.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <AzQtComponents/Components/Widgets/SliderCombo.h>
 
 // Create a new integer slider widget.
@@ -100,7 +100,7 @@ sliderDoubleCombo->setValue(75.0);
 sliderDoubleCombo->setRange(-1.0, 100.0);
 ```
 
-## C++ API reference<a name="sliders-api-ref"></a>
+## C++ API reference
 
 For details on the **slider** API's, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 

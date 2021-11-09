@@ -68,6 +68,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a></td></tr>
@@ -116,6 +118,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SpawnEntities</b> (<a
 <tr class="memitem:af181f83b33ad8347d0188e332c57d579"><td class="memItemLeft" align="right" valign="top"><a id="af181f83b33ad8347d0188e332c57d579"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DespawnAllEntities</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_despawn_all_entities_optional_args.html">DespawnAllEntitiesOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:af181f83b33ad8347d0188e332c57d579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d11fb15e7ff183a8e323e2096655a37"><td class="memItemLeft" align="right" valign="top"><a id="a7d11fb15e7ff183a8e323e2096655a37"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DespawnEntity</b> (AZ::EntityId entityId, <a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, <a class="el" href="struct_az_framework_1_1_despawn_entity_optional_args.html">DespawnEntityOptionalArgs</a> optionalArgs={}) override</td></tr>
+<tr class="separator:a7d11fb15e7ff183a8e323e2096655a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e7039862ccf99e082c7c800f88e740f"><td class="memItemLeft" align="right" valign="top"><a id="a1e7039862ccf99e082c7c800f88e740f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RetrieveEntitySpawnTicket</b> (EntitySpawnTicket::Id entitySpawnTicketId, RetrieveEntitySpawnTicketCallback callback) override</td></tr>
+<tr class="separator:a1e7039862ccf99e082c7c800f88e740f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaaf05be7e6ff2924d88db3d21a0b2b6"><td class="memItemLeft" align="right" valign="top"><a id="afaaf05be7e6ff2924d88db3d21a0b2b6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadSpawnable</b> (<a class="el" href="class_az_framework_1_1_entity_spawn_ticket.html">EntitySpawnTicket</a> &amp;ticket, AZ::Data::Asset&lt; <a class="el" href="class_az_framework_1_1_spawnable.html">Spawnable</a> &gt; spawnable, <a class="el" href="struct_az_framework_1_1_reload_spawnable_optional_args.html">ReloadSpawnableOptionalArgs</a> optionalArgs={}) override</td></tr>
 <tr class="separator:afaaf05be7e6ff2924d88db3d21a0b2b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,9 +145,9 @@ CommandQueueStatus&#160;</td><td class="memItemRight" valign="bottom"><b>Process
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a6b8e5a9978cc4dcd898441a957305f8b"><td class="memItemLeft" align="right" valign="top"><a id="a6b8e5a9978cc4dcd898441a957305f8b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Requests</b> = AZStd::variant&lt; <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_claim_entities_command.html">ClaimEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_barrier_command.html">BarrierCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &gt;</td></tr>
-<tr class="separator:a6b8e5a9978cc4dcd898441a957305f8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3a1130018b64ae7d2164752b0c4cfa3"><td class="memItemLeft" align="right" valign="top"><a id="ae3a1130018b64ae7d2164752b0c4cfa3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Requests</b> = AZStd::variant&lt; <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_all_entities_command.html">SpawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_spawn_entities_command.html">SpawnEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_entities_command.html">ListEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_list_indices_entities_command.html">ListIndicesEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_claim_entities_command.html">ClaimEntitiesCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_barrier_command.html">BarrierCommand</a>, <a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_destroy_ticket_command.html">DestroyTicketCommand</a> &gt;</td></tr>
+<tr class="separator:ae3a1130018b64ae7d2164752b0c4cfa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -168,6 +176,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<
 <tr class="memitem:a6254afc8cd925262c9709da2272ec47d"><td class="memItemLeft" align="right" valign="top"><a id="a6254afc8cd925262c9709da2272ec47d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_all_entities_command.html">DespawnAllEntitiesCommand</a> &amp;request)</td></tr>
 <tr class="separator:a6254afc8cd925262c9709da2272ec47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2660626fef36bb5e1c5507a109278421"><td class="memItemLeft" align="right" valign="top"><a id="a2660626fef36bb5e1c5507a109278421"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_despawn_entity_command.html">DespawnEntityCommand</a> &amp;request)</td></tr>
+<tr class="separator:a2660626fef36bb5e1c5507a109278421"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c635c9cd009f1d83a0e9e61992ea025"><td class="memItemLeft" align="right" valign="top"><a id="a4c635c9cd009f1d83a0e9e61992ea025"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessRequest</b> (<a class="el" href="struct_az_framework_1_1_spawnable_entities_manager_1_1_reload_spawnable_command.html">ReloadSpawnableCommand</a> &amp;request)</td></tr>
 <tr class="separator:a4c635c9cd009f1d83a0e9e61992ea025"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -280,7 +291,7 @@ AZ::SerializeContext *&#160;</td><td class="memItemRight" valign="bottom"><b>m_d
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:55:47 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

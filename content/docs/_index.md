@@ -7,7 +7,7 @@ layout: docs_landing
 
 
 
-Open 3D Engine (O3DE) is an open-source 3D development engine for game, simulation, and multimedia creators.
+**Open 3D Engine (O3DE)** is an open-source 3D development engine for game, simulation, and multimedia creators.
 
 O3DE is developed by a community of volunteers. If you cannot find what you are looking for in the docs, notice an error, or think a topic could use additional clarification, help us make the documentation better by letting us know!
 

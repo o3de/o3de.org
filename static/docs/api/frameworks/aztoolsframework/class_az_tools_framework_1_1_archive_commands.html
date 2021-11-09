@@ -61,53 +61,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a208c440377a3d39bdff00a5cff0dd417"><td class="memItemLeft" align="right" valign="top"><a id="a208c440377a3d39bdff00a5cff0dd417"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Bus</b> = AZ::EBus&lt; <a class="el" href="class_az_tools_framework_1_1_archive_commands.html">ArchiveCommands</a> &gt;</td></tr>
-<tr class="separator:a208c440377a3d39bdff00a5cff0dd417"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18b5fbddbc138bfa0f459f010dddb8ca"><td class="memItemLeft" align="right" valign="top"><a id="a18b5fbddbc138bfa0f459f010dddb8ca"></a>
 typedef AZStd::recursive_mutex&#160;</td><td class="memItemRight" valign="bottom"><b>MutexType</b></td></tr>
 <tr class="separator:a18b5fbddbc138bfa0f459f010dddb8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad63c5877db5813d4080c23da9a2be2d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ad63c5877db5813d4080c23da9a2be2d4">ExtractArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;destinationPath, AZ::Uuid taskHandle, const ArchiveResponseCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:ad63c5877db5813d4080c23da9a2be2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a502177b58b0d435f4c7b36881d8eb900"><td class="memItemLeft" align="right" valign="top"><a id="a502177b58b0d435f4c7b36881d8eb900"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractArchiveOutput</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;destinationPath, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:a502177b58b0d435f4c7b36881d8eb900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fad2956b573a0b7001c101ac636bee5"><td class="memItemLeft" align="right" valign="top"><a id="a1fad2956b573a0b7001c101ac636bee5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>ExtractArchiveWithoutRoot</b> (const AZStd::string &amp;archivePath, const AZStd::string &amp;destinationPath, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:a1fad2956b573a0b7001c101ac636bee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82e49d7f0082d6e154c634f59d23579"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ab82e49d7f0082d6e154c634f59d23579">ExtractArchiveBlocking</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;destinationPath, bool extractWithRootDirectory)=0</td></tr>
-<tr class="separator:ab82e49d7f0082d6e154c634f59d23579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5620b0e8eb8002d02f6b8b71606fc54"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ad5620b0e8eb8002d02f6b8b71606fc54">ExtractFile</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;fileInArchive, const AZStd::string &amp;destinationPath, bool overWrite, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:ad5620b0e8eb8002d02f6b8b71606fc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa30c4fba383cfb7ed8e9986593b2d401"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#aa30c4fba383cfb7ed8e9986593b2d401">ExtractFileBlocking</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;fileInArchive, const AZStd::string &amp;destinationPath, bool overWrite)=0</td></tr>
-<tr class="separator:aa30c4fba383cfb7ed8e9986593b2d401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2b9c2e8119affc9df935cf537d9f97f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ab2b9c2e8119affc9df935cf537d9f97f">CreateArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;dirToArchive, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:ab2b9c2e8119affc9df935cf537d9f97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6083920fb32f62161a992c7d316420a"><td class="memItemLeft" align="right" valign="top"><a id="aa6083920fb32f62161a992c7d316420a"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#aa6083920fb32f62161a992c7d316420a">CreateArchiveBlocking</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;dirToArchive)=0</td></tr>
-<tr class="memdesc:aa6083920fb32f62161a992c7d316420a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a sync task to create an archive of the target directory (recursively) <br /></td></tr>
-<tr class="separator:aa6083920fb32f62161a992c7d316420a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bb390dd1f1a8f3c8f454c9ec710a83c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a5bb390dd1f1a8f3c8f454c9ec710a83c">ListFilesInArchive</a> (const AZStd::string &amp;archivePath, AZStd::vector&lt; AZStd::string &gt; &amp;fileEntries, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:a5bb390dd1f1a8f3c8f454c9ec710a83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88210164f7c524ec4b4a0507c8630936"><td class="memItemLeft" align="right" valign="top"><a id="a88210164f7c524ec4b4a0507c8630936"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a88210164f7c524ec4b4a0507c8630936">ListFilesInArchiveBlocking</a> (const AZStd::string &amp;archivePath, AZStd::vector&lt; AZStd::string &gt; &amp;fileEntries)=0</td></tr>
-<tr class="memdesc:a88210164f7c524ec4b4a0507c8630936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a sync task to retrieve the list of files and their relative paths within an archive (recursively) <br /></td></tr>
-<tr class="separator:a88210164f7c524ec4b4a0507c8630936"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13f0e74b9eae6da0a88d53f38b1da76a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a13f0e74b9eae6da0a88d53f38b1da76a">AddFileToArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;fileToAdd, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:a13f0e74b9eae6da0a88d53f38b1da76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8181b0efed0aac1141189b1134ae3e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ae8181b0efed0aac1141189b1134ae3e9">AddFileToArchiveBlocking</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;fileToAdd)=0</td></tr>
-<tr class="separator:ae8181b0efed0aac1141189b1134ae3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f9219876f8aa45ff40f4d5825c7eed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#ad9f9219876f8aa45ff40f4d5825c7eed">AddFilesToArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;listFilePath, AZ::Uuid taskHandle, const ArchiveResponseOutputCallback &amp;respCallback)=0</td></tr>
-<tr class="separator:ad9f9219876f8aa45ff40f4d5825c7eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23cd84e965f471864f258c51715c500e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a23cd84e965f471864f258c51715c500e">AddFilesToArchiveBlocking</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;listFilePath)=0</td></tr>
-<tr class="separator:a23cd84e965f471864f258c51715c500e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0641043f5970679d43ff1b2897aac36f"><td class="memItemLeft" align="right" valign="top"><a id="a0641043f5970679d43ff1b2897aac36f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a0641043f5970679d43ff1b2897aac36f">CancelTasks</a> (AZ::Uuid taskHandle)=0</td></tr>
-<tr class="memdesc:a0641043f5970679d43ff1b2897aac36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels tasks associtated with the given handle. Blocks until all tasks are cancelled. <br /></td></tr>
-<tr class="separator:a0641043f5970679d43ff1b2897aac36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0b22960f2c3ed548a5b3b61e326ac8"><td class="memItemLeft" align="right" valign="top">virtual std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#adb0b22960f2c3ed548a5b3b61e326ac8">CreateArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;dirToArchive)=0</td></tr>
+<tr class="separator:adb0b22960f2c3ed548a5b3b61e326ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3e6621581ae1e0c0ee395ac864f213"><td class="memItemLeft" align="right" valign="top">virtual std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a6c3e6621581ae1e0c0ee395ac864f213">ExtractArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;destinationPath)=0</td></tr>
+<tr class="separator:a6c3e6621581ae1e0c0ee395ac864f213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10e46056c29d75912f3978950cb2781"><td class="memItemLeft" align="right" valign="top">virtual std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#af10e46056c29d75912f3978950cb2781">ExtractFile</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;fileInArchive, const AZStd::string &amp;destinationPath)=0</td></tr>
+<tr class="separator:af10e46056c29d75912f3978950cb2781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b3e1dc909ee57a9e02652aae5e4de6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a86b3e1dc909ee57a9e02652aae5e4de6">ListFilesInArchive</a> (const AZStd::string &amp;archivePath, AZStd::vector&lt; AZStd::string &gt; &amp;outFileEntries)=0</td></tr>
+<tr class="separator:a86b3e1dc909ee57a9e02652aae5e4de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc5d241ea695c8f8a4502fb2b6cc6cf"><td class="memItemLeft" align="right" valign="top">virtual std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a7fc5d241ea695c8f8a4502fb2b6cc6cf">AddFileToArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;fileToAdd)=0</td></tr>
+<tr class="separator:a7fc5d241ea695c8f8a4502fb2b6cc6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18bca644d23344843763754b9d8f6cc3"><td class="memItemLeft" align="right" valign="top">virtual std::future&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_archive_commands.html#a18bca644d23344843763754b9d8f6cc3">AddFilesToArchive</a> (const AZStd::string &amp;archivePath, const AZStd::string &amp;workingDirectory, const AZStd::string &amp;listFilePath)=0</td></tr>
+<tr class="separator:a18bca644d23344843763754b9d8f6cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -122,10 +93,10 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
 <tr class="separator:a862e9b2cf86f0fe7277836f993ade0b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_archive_commands.html">ArchiveCommands</a> This bus handles messages relating to archive commands archive commands are ASYNCHRONOUS archive formats officially supported are .zip do not block the main thread waiting for a response, it is not okay you will not get a message delivered unless you tick the tickbus anyway! </p>
+<div class="textblock"><p><a class="el" href="class_az_tools_framework_1_1_archive_commands.html">ArchiveCommands</a> This bus handles messages relating to archive commands archive commands are ASYNCHRONOUS archive formats officially supported are .zip </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad9f9219876f8aa45ff40f4d5825c7eed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9f9219876f8aa45ff40f4d5825c7eed">&#9670;&nbsp;</a></span>AddFilesToArchive()</h2>
+<a id="a18bca644d23344843763754b9d8f6cc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18bca644d23344843763754b9d8f6cc3">&#9670;&nbsp;</a></span>AddFilesToArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,63 +105,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzToolsFramework::ArchiveCommands::AddFilesToArchive </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>archivePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>workingDirectory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>listFilePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
-          <td class="paramname"><em>taskHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ArchiveResponseOutputCallback &amp;&#160;</td>
-          <td class="paramname"><em>respCallback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start an async task to add files to a archive. File paths inside the list file must either be a relative path from the working directory or an absolute path. <br  />
- </p>
-
-</div>
-</div>
-<a id="a23cd84e965f471864f258c51715c500e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23cd84e965f471864f258c51715c500e">&#9670;&nbsp;</a></span>AddFilesToArchiveBlocking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzToolsFramework::ArchiveCommands::AddFilesToArchiveBlocking </td>
+          <td class="memname">virtual std::future&lt;bool&gt; AzToolsFramework::ArchiveCommands::AddFilesToArchive </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>archivePath</em>, </td>
@@ -219,67 +134,20 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start a sync task to add files to an archive. File paths inside the list file must either be a relative path from the working directory or an absolute path. </p>
+<p>Add files to an archive provided from a file listing The archive might not exist yet File paths in the file list should be relative to root of the archive </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archivePath</td><td>The path of the archive to add to </td></tr>
+    <tr><td class="paramname">workingDirectory</td><td>A directory that will be the starting path of the list of files to add </td></tr>
+    <tr><td class="paramname">listFilePath</td><td>Full path to a text file that contains the list of files to add </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Future (bool) which can obtain the success value of the operation </dd></dl>
 
 </div>
 </div>
-<a id="a13f0e74b9eae6da0a88d53f38b1da76a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13f0e74b9eae6da0a88d53f38b1da76a">&#9670;&nbsp;</a></span>AddFileToArchive()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void AzToolsFramework::ArchiveCommands::AddFileToArchive </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>archivePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>workingDirectory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>fileToAdd</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
-          <td class="paramname"><em>taskHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ArchiveResponseOutputCallback &amp;&#160;</td>
-          <td class="paramname"><em>respCallback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start an async task to add a file to a preexisting archive. fileToAdd must be a relative path to the file from the working directory. The path to the file from the root of the archive will be the same as the relative path to the file on disk. taskHandles are used to cancel a task at some point in the future and are provided by the caller per task. Multiple tasks can be associated with the same handle. </p>
-
-</div>
-</div>
-<a id="ae8181b0efed0aac1141189b1134ae3e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8181b0efed0aac1141189b1134ae3e9">&#9670;&nbsp;</a></span>AddFileToArchiveBlocking()</h2>
+<a id="a7fc5d241ea695c8f8a4502fb2b6cc6cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc5d241ea695c8f8a4502fb2b6cc6cf">&#9670;&nbsp;</a></span>AddFileToArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +156,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool AzToolsFramework::ArchiveCommands::AddFileToArchiveBlocking </td>
+          <td class="memname">virtual std::future&lt;bool&gt; AzToolsFramework::ArchiveCommands::AddFileToArchive </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>archivePath</em>, </td>
@@ -317,13 +185,20 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start a sync task to add a file to a preexisting archive. fileToAdd must be a relative path to the file from the working directory. The path to the file from the root of the archive will be the same as the relative path to the file on disk. <br  />
- </p>
+<p>Add a file to an archive The archive might not exist yet The file path relative to the working directory will be replicated in the archive </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archivePath</td><td>The path of the archive to add to </td></tr>
+    <tr><td class="paramname">workingDirectory</td><td>A directory that will be the starting path of the file to be added </td></tr>
+    <tr><td class="paramname">fileToAdd</td><td>A path to the file relative to the working directory </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Future (bool) which can obtain the success value of the operation </dd></dl>
 
 </div>
 </div>
-<a id="ab2b9c2e8119affc9df935cf537d9f97f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2b9c2e8119affc9df935cf537d9f97f">&#9670;&nbsp;</a></span>CreateArchive()</h2>
+<a id="adb0b22960f2c3ed548a5b3b61e326ac8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb0b22960f2c3ed548a5b3b61e326ac8">&#9670;&nbsp;</a></span>CreateArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +207,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzToolsFramework::ArchiveCommands::CreateArchive </td>
+          <td class="memname">virtual std::future&lt;bool&gt; AzToolsFramework::ArchiveCommands::CreateArchive </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>archivePath</em>, </td>
@@ -341,19 +216,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>dirToArchive</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
-          <td class="paramname"><em>taskHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ArchiveResponseOutputCallback &amp;&#160;</td>
-          <td class="paramname"><em>respCallback</em>&#160;</td>
+          <td class="paramname"><em>dirToArchive</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -367,12 +230,18 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start an async task to create an archive of the target directory (recursively) taskHandles are used to cancel a task at some point in the future and are provided by the caller per task. Multiple tasks can be associated with the same handle. </p>
+<p>Create an archive of the target directory (all files and subdirectories) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archivePath</td><td>The path of the archive to create @dirToArchive The directory to be added to the archive </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Future (bool) which can obtain the success value of the operation </dd></dl>
 
 </div>
 </div>
-<a id="ad63c5877db5813d4080c23da9a2be2d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad63c5877db5813d4080c23da9a2be2d4">&#9670;&nbsp;</a></span>ExtractArchive()</h2>
+<a id="a6c3e6621581ae1e0c0ee395ac864f213"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3e6621581ae1e0c0ee395ac864f213">&#9670;&nbsp;</a></span>ExtractArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +250,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzToolsFramework::ArchiveCommands::ExtractArchive </td>
+          <td class="memname">virtual std::future&lt;bool&gt; AzToolsFramework::ArchiveCommands::ExtractArchive </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>archivePath</em>, </td>
@@ -390,19 +259,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>destinationPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
-          <td class="paramname"><em>taskHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ArchiveResponseCallback &amp;&#160;</td>
-          <td class="paramname"><em>respCallback</em>&#160;</td>
+          <td class="paramname"><em>destinationPath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -416,56 +273,19 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start an async task to extract an archive to the target directory taskHandles are used to cancel a task at some point in the future and are provided by the caller per task. Multiple tasks can be associated with the same handle </p>
+<p>Extract an archive to the target directory </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archivePath</td><td>The path of the archive to extract </td></tr>
+    <tr><td class="paramname">destinationPath</td><td>The directory where files will be extracted to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Future (bool) which can obtain the success value of the operation </dd></dl>
 
 </div>
 </div>
-<a id="ab82e49d7f0082d6e154c634f59d23579"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab82e49d7f0082d6e154c634f59d23579">&#9670;&nbsp;</a></span>ExtractArchiveBlocking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzToolsFramework::ArchiveCommands::ExtractArchiveBlocking </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>archivePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>destinationPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>extractWithRootDirectory</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Start a sync task to extract an archive to the target directory If you do not want to extract the root folder then set extractWithRootDirectory to false. <br  />
- </p>
-
-</div>
-</div>
-<a id="ad5620b0e8eb8002d02f6b8b71606fc54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5620b0e8eb8002d02f6b8b71606fc54">&#9670;&nbsp;</a></span>ExtractFile()</h2>
+<a id="af10e46056c29d75912f3978950cb2781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10e46056c29d75912f3978950cb2781">&#9670;&nbsp;</a></span>ExtractFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,7 +294,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzToolsFramework::ArchiveCommands::ExtractFile </td>
+          <td class="memname">virtual std::future&lt;bool&gt; AzToolsFramework::ArchiveCommands::ExtractFile </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>archivePath</em>, </td>
@@ -489,25 +309,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>destinationPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>overWrite</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
-          <td class="paramname"><em>taskHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ArchiveResponseOutputCallback &amp;&#160;</td>
-          <td class="paramname"><em>respCallback</em>&#160;</td>
+          <td class="paramname"><em>destinationPath</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -521,63 +323,20 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Extract a single file asynchronously from the archive to the destination. <br  />
- Uses cwd if destinationPath empty. overWrite = true for overwrite existing files, false for skipExisting taskHandles are used to cancel a task at some point in the future and are provided by the caller per task. Multiple tasks can be associated with the same handle </p>
+<p>Extract a single file from the archive to the destination Destination path should not be empty </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archivePath</td><td>The path of the archive to extract from </td></tr>
+    <tr><td class="paramname">fileInArchive</td><td>A path to a file, relative to root of archive </td></tr>
+    <tr><td class="paramname">destinationPath</td><td>The directory where file will be extracted to </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Future (bool) which can obtain the success value of the operation </dd></dl>
 
 </div>
 </div>
-<a id="aa30c4fba383cfb7ed8e9986593b2d401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa30c4fba383cfb7ed8e9986593b2d401">&#9670;&nbsp;</a></span>ExtractFileBlocking()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool AzToolsFramework::ArchiveCommands::ExtractFileBlocking </td>
-          <td>(</td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>archivePath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>fileInArchive</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const AZStd::string &amp;&#160;</td>
-          <td class="paramname"><em>destinationPath</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>overWrite</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Extract a single file from the archive to the destination and block until finished. <br  />
- Uses cwd if destinationPath empty. overWrite = true for overwrite existing files, false for skipExisting </p>
-
-</div>
-</div>
-<a id="a5bb390dd1f1a8f3c8f454c9ec710a83c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bb390dd1f1a8f3c8f454c9ec710a83c">&#9670;&nbsp;</a></span>ListFilesInArchive()</h2>
+<a id="a86b3e1dc909ee57a9e02652aae5e4de6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b3e1dc909ee57a9e02652aae5e4de6">&#9670;&nbsp;</a></span>ListFilesInArchive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -586,7 +345,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void AzToolsFramework::ArchiveCommands::ListFilesInArchive </td>
+          <td class="memname">virtual bool AzToolsFramework::ArchiveCommands::ListFilesInArchive </td>
           <td>(</td>
           <td class="paramtype">const AZStd::string &amp;&#160;</td>
           <td class="paramname"><em>archivePath</em>, </td>
@@ -595,19 +354,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">AZStd::vector&lt; AZStd::string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>fileEntries</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">AZ::Uuid&#160;</td>
-          <td class="paramname"><em>taskHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const ArchiveResponseOutputCallback &amp;&#160;</td>
-          <td class="paramname"><em>respCallback</em>&#160;</td>
+          <td class="paramname"><em>outFileEntries</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -621,7 +368,14 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Start an async task to retrieve the list of files and their relative paths within an archive (recursively) taskHandles are used to cancel a task at some point in the future and are provided by the caller per task. Multiple tasks can be associated with the same handle. </p>
+<p>Retrieve the list of files contained in an archive (all files and subdirectories) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">archivePath</td><td>The path of the archive to list </td></tr>
+    <tr><td class="paramname">outFileEntries</td><td>An out parameter that will contain the file paths found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if successful, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -631,7 +385,7 @@ static const bool&#160;</td><td class="memItemRight" valign="bottom"><b>Lockless
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:03 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:31:28 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

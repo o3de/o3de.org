@@ -6,7 +6,7 @@ weight: 100
 toc: true
 ---
 
-*Gems* are redistributable packages that contain source code and assets that you can include in your Open 3D Engine (O3DE) projects to add new functionality. O3DE provides the following Gems:
+*Gems* are redistributable packages that contain source code and assets that you can include in your **Open 3D Engine (O3DE)** projects to add new functionality. O3DE provides the following Gems:
 
 ## Animation
 
@@ -131,11 +131,10 @@ toc: true
 
 | Gem | Description |
 | - | - |
-| [NVIDIA Blast](./physics/nvidia/nvidia-blast) | The NVIDIA Blast Gem provides tools to author fractured mesh assets in Houdini, and functionality to create realistic destruction simulations in Open 3D Engine. |
 | [NVIDIA Cloth (NvCloth)](./physics/nvidia/nvidia-cloth) | The NVIDIA Cloth (NvCloth) Gem provides functionality to create realistic cloth and fabric simulation. |
 | [PhysX](./physics/nvidia/physx) | The PhysX Gem provides physics simulation with NVIDIA PhysX including static and dynamic rigid body simulation, force regions, ragdolls, and dynamic PhysX joints. |
 | [PhysX Debug](./physics/nvidia/physx-debug) | The PhysX Debug Gem provides debugging functionality and visualizations for PhysX in Open 3D Engine (O3DE) projects. |
-| [PhysX Samples](./physics/nvidia/physx-samples) | The PhysX Samples Gem provides sample assets and scripts to use with the PhysX Gem. |
+<!--| [NVIDIA Blast](./physics/nvidia/nvidia-blast) | The NVIDIA Blast Gem provides tools to author fractured mesh assets in Houdini, and functionality to create realistic destruction simulations in Open 3D Engine. | Hiding until blast tools are fixed and blast docs are updated.-->
 
 ## Rendering
 

@@ -56,7 +56,7 @@ $(function() {
 
 <p><code>#include &lt;RenderViewportWidget.h&gt;</code></p>
 
-<p>Inherits QWidget, Handler, Handler, Handler, InputChannelEventListener, Handler, Handler, and Handler.</p>
+<p>Inherits QWidget, Handler, Handler, Handler, InputChannelEventListener, and Handler.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -164,9 +164,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>OnInputChannelEventFi
 <tr class="memitem:a12685f812578a4e84c9cd5c8a2e74f21"><td class="memItemLeft" align="right" valign="top"><a id="a12685f812578a4e84c9cd5c8a2e74f21"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTick</b> (float deltaTime, AZ::ScriptTimePoint time) override</td></tr>
 <tr class="separator:a12685f812578a4e84c9cd5c8a2e74f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d60add5bf5a13b582fde99302048773"><td class="memItemLeft" align="right" valign="top"><a id="a6d60add5bf5a13b582fde99302048773"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetTickOrder</b> () override</td></tr>
-<tr class="separator:a6d60add5bf5a13b582fde99302048773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15f9b52251444a06e2ab652e66ff5882"><td class="memItemLeft" align="right" valign="top"><a id="a15f9b52251444a06e2ab652e66ff5882"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>resizeEvent</b> (QResizeEvent *event) override</td></tr>
 <tr class="separator:a15f9b52251444a06e2ab652e66ff5882"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,15 +179,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>leaveEvent</b> (QEven
 <tr class="memitem:aa9baa35c7cf3519363892429d58a58dd"><td class="memItemLeft" align="right" valign="top"><a id="aa9baa35c7cf3519363892429d58a58dd"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *event) override</td></tr>
 <tr class="separator:aa9baa35c7cf3519363892429d58a58dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17e193a0ee272fd6e1bb66713805e66c"><td class="memItemLeft" align="right" valign="top"><a id="a17e193a0ee272fd6e1bb66713805e66c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>focusInEvent</b> (QFocusEvent *event) override</td></tr>
-<tr class="separator:a17e193a0ee272fd6e1bb66713805e66c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c90025dd070298c4920c71df60a5deb"><td class="memItemLeft" align="right" valign="top"><a id="a8c90025dd070298c4920c71df60a5deb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFrameRateLimitChanged</b> (float fpsLimit) override</td></tr>
-<tr class="separator:a8c90025dd070298c4920c71df60a5deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aced777132404f96e0cb6c21f3da971d7"><td class="memItemLeft" align="right" valign="top"><a id="aced777132404f96e0cb6c21f3da971d7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInactiveViewportFrameRateChanged</b> (float fpsLimit) override</td></tr>
-<tr class="separator:aced777132404f96e0cb6c21f3da971d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> class is a Qt wrapper around an Atom viewport. <a class="el" href="class_atom_tools_framework_1_1_render_viewport_widget.html">RenderViewportWidget</a> renders to an internal window using RPI::ViewportContext and delegates input via its internal ViewportControllerList. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="class_a_z_1_1_r_p_i_1_1_viewport_context.html">AZ::RPI::ViewportContext</a> for Atom's API for setting up <br  />
@@ -428,7 +416,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInactiveViewportFra
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:56:50 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:32:15 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

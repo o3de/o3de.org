@@ -90,6 +90,26 @@ virtual const MaterialAssignmentMap &amp;&#160;</td><td class="memItemRight" val
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0526bebff78a51502f12ee76ccb20b36">ClearAllMaterialOverrides</a> ()=0</td></tr>
 <tr class="memdesc:a0526bebff78a51502f12ee76ccb20b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all material overrides. <br /></td></tr>
 <tr class="separator:a0526bebff78a51502f12ee76ccb20b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58bfc87181140f066fb662ab2b99db7"><td class="memItemLeft" align="right" valign="top"><a id="aa58bfc87181140f066fb662ab2b99db7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa58bfc87181140f066fb662ab2b99db7">ClearModelMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:aa58bfc87181140f066fb662ab2b99db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear non-lod material overrides. <br /></td></tr>
+<tr class="separator:aa58bfc87181140f066fb662ab2b99db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eaeb243469cb51c2aa27baf612d3da1"><td class="memItemLeft" align="right" valign="top"><a id="a0eaeb243469cb51c2aa27baf612d3da1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a0eaeb243469cb51c2aa27baf612d3da1">ClearLodMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:a0eaeb243469cb51c2aa27baf612d3da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear lod material overrides. <br /></td></tr>
+<tr class="separator:a0eaeb243469cb51c2aa27baf612d3da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54ccf922717a1c3395af434604b7e56"><td class="memItemLeft" align="right" valign="top"><a id="af54ccf922717a1c3395af434604b7e56"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#af54ccf922717a1c3395af434604b7e56">ClearIncompatibleMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:af54ccf922717a1c3395af434604b7e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear residual materials that don't correspond to the associated model. <br /></td></tr>
+<tr class="separator:af54ccf922717a1c3395af434604b7e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad303958a6e943d2537d5f385671e8b8e"><td class="memItemLeft" align="right" valign="top"><a id="ad303958a6e943d2537d5f385671e8b8e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#ad303958a6e943d2537d5f385671e8b8e">ClearInvalidMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:ad303958a6e943d2537d5f385671e8b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear materials that reference missing assets. <br /></td></tr>
+<tr class="separator:ad303958a6e943d2537d5f385671e8b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4373c26f4677c954c328c25cb544029"><td class="memItemLeft" align="right" valign="top"><a id="aa4373c26f4677c954c328c25cb544029"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#aa4373c26f4677c954c328c25cb544029">RepairInvalidMaterialOverrides</a> ()=0</td></tr>
+<tr class="memdesc:aa4373c26f4677c954c328c25cb544029"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repair materials that reference missing assets by assigning the default asset. <br /></td></tr>
+<tr class="separator:aa4373c26f4677c954c328c25cb544029"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e9e78d836d95735c23add58bdee7fb8"><td class="memItemLeft" align="right" valign="top"><a id="a4e9e78d836d95735c23add58bdee7fb8"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_z_1_1_render_1_1_material_component_requests.html#a4e9e78d836d95735c23add58bdee7fb8">SetDefaultMaterialOverride</a> (const AZ::Data::AssetId &amp;materialAssetId)=0</td></tr>
 <tr class="memdesc:a4e9e78d836d95735c23add58bdee7fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set default material override. <br /></td></tr>
@@ -247,7 +267,7 @@ virtual AZ::RPI::MaterialModelUvOverrideMap&#160;</td><td class="memItemRight" v
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 17 2021 13:57:01 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Oct 7 2021 10:32:24 for Open 3D Engine AtomLyIntegration Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
