@@ -5,4 +5,4 @@ description: The Message Popup Gem provides an example implementation of popup m
 toc: true
 ---
 
-The Message Popup Gem provides an example for popup messages in an Open 3D Engine (O3DE) project.
+The Message Popup Gem provides an example for popup messages in an **Open 3D Engine (O3DE)** project.

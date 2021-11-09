@@ -53,7 +53,6 @@ description: Reference index for Gems shipped with Open 3D Engine.
 * [PBSreferenceMaterials](/docs/api/gems/PBSreferenceMaterials)
 * [PhysX](/docs/api/gems/PhysX)
 * [PhysXDebug](/docs/api/gems/PhysXDebug)
-* [PhysXSamples](/docs/api/gems/PhysXSamples)
 * [Prefab](/docs/api/gems/Prefab)
 * [Presence](/docs/api/gems/Presence)
 * [PrimitiveAssets](/docs/api/gems/PrimitiveAssets)

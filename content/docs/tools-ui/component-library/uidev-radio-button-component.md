@@ -1,6 +1,6 @@
 ---
-linktitle: Radio Button Style
-title: O3DE UI Radio Button Style
+linktitle: Radio Button
+title: O3DE UI Radio Button Styles
 description: Learn how to apply the O3DE UI style for radio buttons in O3DE Gems and tools.
 toc: true
 ---
@@ -9,7 +9,7 @@ Use radio buttons to enable users to select from two or more options, when users
 
 ![component radio button style](/images/tools-ui/component-radio-button-style.png)
 
-## Usage guidelines<a name="radio-button-usage"></a>
+## Usage guidelines
 
 Follow these guidelines as you design your UI with radio buttons:
 
@@ -25,7 +25,7 @@ Avoid these design choices when using radio buttons:
 + Don't order radio buttons horizontally.
 + Don't trigger an event upon selection of a radio button, such as spawning a popover, popup, new page, or new window.
 
-## Basic radio button<a name="radio-button-basic"></a>
+## Basic radio button
 
 ![component radio button basic](/images/tools-ui/component-radio-button-basic.png)
 
@@ -33,9 +33,9 @@ Set up and control radio buttons in Qt Designer or in code.
 
 Radio buttons that belong to the same parent will automatically be part of an exclusive group. You can create your own groups too, using a `QButtonGroup`.
 
- **Example**
+### Example
 
-```
+```cpp
 #include <QRadioButton>
 #include <QButtonGroup>
 
@@ -54,7 +54,7 @@ radioButton1->setChecked(true);
 radioButton1->setEnabled(false);
 ```
 
-## C++ API reference<a name="radio-button-api-ref"></a>
+## C++ API reference
 
 For details on the **radio button** API, see the following topic in the [O3DE UI Extensions C++ API Reference](/docs/api/frameworks/azqtcomponents/namespace_az_qt_components.html):
 +  [AzQtComponents::RadioButton](/docs/api/frameworks/azqtcomponents/class_az_qt_components_1_1_radio_button.html)

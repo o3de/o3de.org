@@ -3,6 +3,7 @@ description: ' Create realistic destruction simulations in Open 3D Engine with N
 linktitle: NVIDIA Blast
 title: Simulated destruction with NVIDIA Blast
 weight: 200
+draft: true
 ---
 
  With **NVIDIA Blast** in Open 3D Engine, you can simulate destruction by authoring blast assets in SideFX Houdini and creating entities with the **Blast Family** and **Blast Family Mesh Data** components.

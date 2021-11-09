@@ -21,14 +21,14 @@ O3DE's PhysX system acts upon entities to create realistic physical effects such
 + [Create global or localized wind forces with PhysX](/docs/user-guide/interactivity/physics/nvidia-physx/wind-provider/)
 + [Debugging PhysX](/docs/user-guide/interactivity/physics/debugging/)
 + [PhysX Best Practices](/docs/user-guide/interactivity/physics/nvidia-physx/best-practices/)
-+ [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/)
 + [Simulate cloth with NVIDIA Cloth](/docs/user-guide/interactivity/physics/nvidia-cloth/)
+<!-- + [Simulated destruction with NVIDIA Blast](/docs/user-guide/interactivity/physics/nvidia-blast/) -->
 
 ## PhysX Gems 
 
 The PhysX system uses the following Gems, which you can enable in **Project Manager**.
 
-+ **[PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/)** - Provides integration for the [NVIDIA PhysX SDK](https://developer.nvidia.com/physx-sdk) into O3DE. The integration provided includes a suite of components, configuration via the editor, Script Canvas integration, PhysX Visual Debugger integration, and a simplified API abstraction layer for games.
++ **[PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/)** - Provides integration for the [NVIDIA PhysX 4 SDK](https://developer.nvidia.com/physx-sdk) into O3DE. The integration provided includes a suite of components, configuration via the **O3DE Editor**, Script Canvas integration, **PhysX Visual Debugger** integration, and a simplified API abstraction layer for games.
 
   For more information, see [PhysX](/docs/user-guide/gems/reference/physics/nvidia/physx/).
 + **[PhysX Debug](/docs/user-guide/gems/reference/physics/nvidia/physx-debug/)** - Provides debug visualizations of PhysX scene geometry that you can enable with console commands and other tools.

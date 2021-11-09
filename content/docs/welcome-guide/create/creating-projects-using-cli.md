@@ -113,11 +113,11 @@ If your project build directory is outside the project path, you must include th
     * If you installed O3DE or built your engine as an [SDK engine](/docs/welcome-guide/setup/setup-from-github/#build-the-engine) using the `INSTALL` target, run the Editor from the installed engine's build directory. (If you don't supply the project path, **Project Manager** launches instead.) The project path can be absolute or relative to the engine directory.
 
         ```cmd
-        C:\o3de-install\bin\Windows\profile\Editor.exe --project-path C:\o3de-projects\MyProject
+        C:\o3de-install\bin\Windows\profile\Default\Editor.exe --project-path C:\o3de-projects\MyProject
         ```
 
         {{< important >}}
-If you built the engine from source using the `INSTALL` target, make sure that you launch the Editor _and_ other tools from the installed engine's build directory, _not_ the engine's build directory. The Windows install directory typically ends in `/bin/Windows/profile`.
+If you built the engine from source using the `INSTALL` target, make sure that you launch the Editor _and_ other tools from the installed engine's build directory, _not_ the engine's build directory. The Windows install directory typically ends in `/bin/Windows/profile/Default`.
         {{< /important >}}
 
 You can also run Project Manager (`o3de.exe`) from the same directory to edit your project's settings, add or remove Gems from the project, rebuild your project, and launch the Editor.

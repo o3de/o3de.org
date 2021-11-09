@@ -24,7 +24,7 @@ Packet Flags are an 8-bit value, stored at the start of the packet.
 | Compressed | `0` | Whether or not the data transmission portion of the packet is compressed via an [`ICompressor`](/docs/api/frameworks/aznetworking/class_az_networking_1_1_i_compressor.html) implementation. |
 | N/A | 1-7 | Reserved for future use. |
 
-The packet type is a 16-bit value which can be set to any numeric identifer, although the values in the range `CorePackets::PacketType::START..CorePackets::PacketType::MAX`
+The packet type is a 16-bit value which can be set to any numeric identifier, although the values in the range `CorePackets::PacketType::START..CorePackets::PacketType::MAX`
 are reserved for packet types used internally by O3DE. When deriving from [`IPacketHeader`](/docs/api/frameworks/aznetworking/class_az_networking_1_1_i_packet_header.html),
 this means that any packet types which you use should have their first **valid** value be `CorePackets::PacketType::MAX+1`. For this reason, it's recommended that you write
 any `enum` for your custom packet types as follows:
