@@ -55,5 +55,3 @@ Example registry settings file:
     }
 }
 ```
-
-
