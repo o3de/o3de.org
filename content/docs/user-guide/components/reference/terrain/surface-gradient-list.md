@@ -1,7 +1,7 @@
 ---
-title: Terrain Surface Gradient List component
-linktitle: TerrainSurfaceGradientList
-description: ' Open 3D Engine (O3DE) Terrain Surface Gradient List reference. '
+title: Terrain Surface Gradient List Component
+linktitle: Terrain Surface Gradient List
+description: 'Open 3D Engine (O3DE) Terrain Surface Gradient List component reference.'
 weight: 100
 ---
 
@@ -9,13 +9,17 @@ The **Terrain Surface Gradient List** component defines mappings between a gradi
 
 ## Usage ##
 
-You select a gradient either by dragging a entity containing a gradient component to the **GradientEntity** field, or by using the select button.
-Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** option. 
+You select a gradient either by dragging an entity containing a gradient component to the **GradientEntity** field, or by clicking {{< icon "picker.svg" >}}.
+Once a gradient is assigned, you can select the surface type that this gradient represents, by using the **Surface Tag** pull-down menu. 
 You can configure the dimensions and priority of the layer using the required [Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner)
 
 ## Provider ##
 
-[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain/)
+[Terrain Gem](/docs/user-guide/gems/reference/environment/terrain)
+
+## Dependencies ##
+
+[Terrain Layer Spawner](/docs/user-guide/components/reference/terrain/layer_spawner)
 
 ## Properties ##
 
