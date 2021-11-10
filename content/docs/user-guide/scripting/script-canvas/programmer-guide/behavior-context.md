@@ -4,28 +4,101 @@ description: Learn about the important relationship between Script Canvas and th
 weight: 100
 ---
 
-You can use Script Canvas to expose runtime code in a visual authoring environment using the behavior context. This topic focuses on the concept of behavior context as it relates to Script Canvas. For a broader introduction to this material, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/components/development/). And for additional details, refer to [Behavior Context](/docs/user-guide/components/development/behavior-context).
+The behavior context is a reflection system in **Open 3D Engine (O3DE)** that exposes C++ methods, data types, and the O3DE event mechanisms, providing the necessary bindings for scripting environments to invoke the exposed code at run time. Script Canvas uses the script bindings to automatically create new nodes in the Node Palette for use in your Script Canvas graphs. Using these nodes, you can call the C++ methods, send and receive the events, or pass the new data types through the node's data pins.
+
+In short, use the behavior context with Script Canvas to do the following:
+
++ Reflect C++ methods as Script Canvas nodes.
++ Expose C++ data types to Script Canvas.
++ Reflect AZ::Event and EBus events as Script Canvas nodes.
+
+In this topic, you will learn how Script Canvas works with the behavior context to create new nodes and expose new data types. We will review an example of this process and provide tips and best practices when using the behavior context with Script Canvas.
+
+## Architecture
 
 The following code architecture diagram shows the relationship between Script Canvas and the behavior context in Open 3D Engine.
 
-![Script Canvas code architecture](/images/user-guide/scripting/script-canvas/script-canvas-code-architecture-1.png)
+![Script Canvas code architecture](/images/user-guide/scripting/script-canvas/behavior-context-code-architecture.png)
 
-The core Script Canvas code is built as a static library that is linked into the dependent gem and editor gem. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs.
+The core Script Canvas code is built as a static library that is linked into the dependent Gem and the Script Canvas Editor Gem. This allows the code footprint at run time to be as small as the minimum required to run a Script Canvas graph. It also allows the Script Canvas Editor Gem to contain all the code required to author and develop Script Canvas graphs.
 
-Script Canvas is designed to use behavior context reflection and provide access to the same objects and [EBus](/docs/user-guide/engine/ebus/) that are available in Lua. When you use the behavior context, you do not need to write any Script Canvas-specific code. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment.
+When you use the behavior context, you do not need to write any code specific to Script Canvas. However, it is important that the way in which your code is reflected to the behavior context remains intuitive in a visual scripting environment.
 
 The behavior context for Script Canvas includes the following benefits:
 
-+ Functionality exposed through the behavior context is also available in Lua (and any other scripting solution bound to the behavior context).
-+ The EBus system makes it easier for you to use decoupled, event-driven programming paradigms.
-+ Script Canvas can use any functionality that is exposed to the behavior context, even if it comes from other gems. Therefore, when code is reflected to the behavior context, gems can enhance Script Canvas.
-+ Reflecting gems to the behavior context removes any need to add gem dependencies to Script Canvas.
++ Support for the AZ::Event and EBus event systems enable your scripts to use decoupled, event-driven programming paradigms.
++ Script Canvas can use functionality exposed through the behavior context from any Gem, enabling any Gem to enhance Script Canvas.
++ Support for Gems reflecting C++ code through the behavior context means there is no need to add Gem dependencies to Script Canvas.
 
-## The Light component and Script Canvas
+## Behavior context example - static functions
 
-{{< todo issue="https://github.com/o3de/o3de.org/issues/992" >}}
-This example is outdated. It refers to a legacy component that no longer exists.
-{{< /todo >}}
+To demonstrate how C++ code can become a Script Canvas node, this example uses the behavior context to reflect a few simple, static math library functions.
+
+We start with the static function declarations. The functions return the sine and cosine of an angle. The angle is in radians:
+
+```cpp
+float Sin(float angle);
+float Cos(float angle);
+```
+
+We also need a class that defines the namespace for these functions:
+
+```cpp
+class GlobalClass
+{
+public:
+    AZ_TYPE_INFO(GlobalClass, "{47A07917-103F-41F5-A586-8D7C1C40A625}");
+    AZ_CLASS_ALLOCATOR(GlobalClass, SystemAllocator, 0);
+
+    GlobalClass() = default;
+    ~GlobalClass() = default;
+        
+    static void Reflect(AZ::ReflectContext* context);
+};
+```
+
+In the class's static `Reflect` method, we use the behavior context to bind the static `Sin` and `Cos` functions as part of a class. In this example, the functions are configured to be part of a group called "Globals". The group is used as a subtitle on the new node and the category under which the nodes will appear in the Node Palette.
+
+```cpp
+static void GlobalClass::Reflect(AZ::ReflectContext* context)
+{
+    if (auto behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+    {
+        behaviorContext->Class<GlobalClass>("Globals")
+            ->Method("Sin", &Sin)
+            ->Method("Cos", &Cos)
+            ;
+    }
+}
+```
+
+To complete this example, `GlobalClass::Reflect` must be called from a system component's Reflect function.
+
+Once the code has been compiled, it is available as a new node in Script Canvas:
+
+![Sin function available as a Script Canvas node](/images/user-guide/scripting/script-canvas/behavior-context-sin-function.png)
+
+However, there are a few usability improvements that can be made to improve its appearance in Script Canvas:
+
++ Provide the class with a top-level category, "My Extensions", instead of the default "Other".
++ Provide a user-friendly parameter name, "Radians", for the input pin.
++ Provide a tooltip when a user hovers over the Radians parameter.
+
+This can all be accomplished through additional code in the `Reflect` function:
+
+```cpp
+        behaviorContext->Class<GlobalClass>("Globals")
+          ->Attribute(AZ::Script::Attributes::Category, "My Extensions")
+          ->Method("Sin", &Sin, {{{"Radians", "The value in radians"}}})
+          ->Method("Cos", &Cos, {{{"Radians", "The value in radians"}}})
+```
+
+The result contains some helpful categorization and information for the user:
+
+![](/images/user-guide/scripting/script-canvas/behavior-context-my-extensions-nodes.png)
+![](/images/user-guide/scripting/script-canvas/behavior-context-sin-node-with-tooltip.png)
+
+## Behavior context example - reflecting an EBus event
 
 So that you can better understand the relationship between the behavior context and Script Canvas, this section discusses the fairly simple Light component. The example shows how its behavior context reflection translates into Script Canvas nodes.
 
@@ -260,3 +333,9 @@ MyBus::BusConnect()
 ```
 
 Depending on the type of bus, you might have to specify an ID to connect to. For more information, refer to [The Open 3D Engine Event Bus (EBus) System](/docs/user-guide/engine/ebus/).
+
+## Additional material
+
+To get started creating new components in O3DE that integrate the behavior context, we recommend that you read the [Programmer's Guide to Component Development](/docs/user-guide/components/development/).
+
+For a closer look at the behavior context system itself, refer to [Behavior Context In-Depth](/docs/user-guide/components/development/behavior-context).
