@@ -43,12 +43,12 @@ Retrieves the size of the heightfield in the form of a row and column count.
 
 #### Parameters
 
-#### `NumColumns \[out\]`
+#### `NumColumns [out]`
 
 Type: `int32_t`  
 The number of columns in the heightfield.
 
-#### `NumRows \[out\]`
+#### `NumRows [out]`
 Type: `int32_t`  
 The number of rows in the heightfield. 
 
