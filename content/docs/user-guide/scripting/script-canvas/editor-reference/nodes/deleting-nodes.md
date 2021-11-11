@@ -19,7 +19,7 @@ Script Canvas offers several ways to delete nodes.
 
 * On the node that you want to delete, press **Alt+Left-click**. If the deleted node was connected to one other node, the connection is deleted. If the deleted node was connected to two other nodes, the remaining nodes connect to each other.
 
-    ![Using Alt+Left-click to delete a node in Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-deleting-1.gif)
+    ![Using Alt+Left-click to delete a node in Script Canvas Editor.](/images/user-guide/scripting/script-canvas/nodes-deleting-1.gif)
 
     {{< note >}}
 You cannot use **Alt+Left-click** to delete more than one node at a time.
@@ -27,6 +27,6 @@ You cannot use **Alt+Left-click** to delete more than one node at a time.
 
 **To remove all unused nodes in a graph**
 
-* In Script Canvas editor, choose **Edit**, **Remove Unused**, **Nodes**.
+* In **Script Canvas Editor**, choose **Edit**, **Remove Unused**, **Nodes**.
 
-    ![Removing all unused nodes from a graph in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-deleting-2.png)
+    ![Removing all unused nodes from a graph in the Script Canvas Editor.](/images/user-guide/scripting/script-canvas/nodes-deleting-2.png)
