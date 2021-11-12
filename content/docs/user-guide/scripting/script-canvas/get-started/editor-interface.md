@@ -1,26 +1,26 @@
 ---
 linktitle: Editor Interface
 title: Script Canvas Editor Interface
-description: Understand the layout of the Script Canvas editor.
+description: Understand the layout of the Script Canvas Editor.
 weight: 100
 ---
 
-You can open the **Script Canvas** editor from O3DE Editor.
+You can open the **Script Canvas Editor** from **O3DE Editor**.
 
-**To open the Script Canvas editor**
+**To open the Script Canvas Editor**
 
 1. In O3DE Editor, choose **Tools**, **Script Canvas**.
 
 1. Choose **File**, **New Script** or drag a node from the **Node Palette** and drop it on the canvas.
 
-![Use the Script Canvas editor in O3DE to create connections for nodes.](/images/user-guide/scripting/script-canvas/user-interface.png)
+![Use the Script Canvas Editor in O3DE to create connections for nodes.](/images/user-guide/scripting/script-canvas/user-interface.png)
 
-In the **Script Canvas** editor, you can do the following:
+In the Script Canvas Editor, you can do the following:
 
 1. Use the menu bar to do the following:
    + Create, save, and open your scripts.
    + Cut, copy, or undo actions.
-   + Change the **Script Canvas** editor view.
+   + Change the Script Canvas Editor view.
 
 1. Use the tabs to switch between scripts.
 
@@ -38,7 +38,7 @@ In the **Script Canvas** editor, you can do the following:
 
 ## Additional Tools
 
-**Script Canvas** editor has the following additional menus and tools.
+Script Canvas Editor has the following additional menus and tools.
 
 ### Bookmarks
 
@@ -46,4 +46,4 @@ View and modify your saved bookmarks. You can use bookmarks to save locations on
 
 ### Comments
 
-You can create floating blocks of text on the Script Canvas editor canvas. For more information, see [Commenting Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/commenting-nodes).
+You can create floating blocks of text on the Script Canvas Editor canvas. For more information, see [Commenting Nodes in Script Canvas](/docs/user-guide/scripting/script-canvas/editor-reference/nodes/organizing/commenting-nodes).

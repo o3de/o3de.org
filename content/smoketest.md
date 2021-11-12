@@ -337,6 +337,30 @@ Indicates a section needs work, followed by a description of the task and a link
 Indicates a section needs work, followed by a description of the task and a prompt for someone to create a GitHub issue for this task.
 {{< /todo >}}   
 
+{{< known-issue >}}
+Indicates a known issue with the process described in the docs. 
+{{< /known-issue >}}
+
+{{< known-issue link="https://github.com/o3de/o3de/pull/4856">}}
+Indicates a known issue with the process described in the docs and provides a link to an issue, PR, or discussion that provides information about this issue.
+{{< /known-issue >}}
+
+The `feature-in-progress` shortcode provides a note for a feature that is in active development with links to open Issues and PRs. It takes three double quote enclosed parameters in order:
+
+1. Feature name.
+1. Link to issues. Provide query filtered to open issues with titles that contain the feature name.
+1. Link to pull requests. Provide query filtered to open pull requests with titles that contain the feature name.
+
+Example usage:
+
+```markdown
+{{</* feature-in-progress "O3DE Editor" "https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+editor" "https://github.com/o3de/o3de/pulls?q=is%3Apr+is%3Aopen+in%3Atitle+editor" */>}}
+```
+
+Example output:
+
+{{< feature-in-progress "O3DE Editor" "https://github.com/o3de/o3de/issues?q=is%3Aissue+is%3Aopen+in%3Atitle+editor" "https://github.com/o3de/o3de/pulls?q=is%3Apr+is%3Aopen+in%3Atitle+editor" >}}
+
 ## Includes
 
 To add shortcodes to includes.
@@ -418,3 +442,24 @@ You can add inline O3DE GUI icons with the `icon` shortcode. Icon `.svg` files a
 | visibility-on.svg | {{< icon "visibility-on.svg" >}} |
 | warning-yellow.svg | {{< icon "warning-yellow.svg" >}} |
 | world.svg | {{< icon "world.svg" >}} |
+
+
+## Images and image width
+
+The `image-width` shortcode adds an image with alternate text and restricts the image's width. The `image-width` shortcode can ensure image sizes are consistent within a topic, and that large images and `.svg` diagrams don't scale overly large in wide browser windows.
+
+`image-width` takes three double-quoted parameters in order:
+
+1. image link
+1. width
+1. alt text
+
+`image-width` example:
+
+```markdown
+{{</* image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." */>}}
+```
+
+`image-width` example output:
+
+{{< image-width "/images/welcome-guide/ui-editor-labeled.png" "700" "An annotated image of O3DE editor's user interface." >}}
