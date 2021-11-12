@@ -1,23 +1,42 @@
 ---
 linkTitle: Create a Custom Shape Tool in C++
 title: Create a Custom Shape Tool in C++ for Open 3D Engine
-description: Learn to create a custom shape tool in C++ to extend Open 3D Engine (O3DE).
+description: Learn to create a custom shape tool in C++ to extend the Open 3D Engine (O3DE) Editor.
 weight: 200
 toc: true
 ---
 
 In this tutorial, you'll create a custom tool, **Shape Example**, written in C++ that extends the **Open 3D Engine (O3DE) Editor**. The Shape Example tool allows you to create entities with a Shape component and configure their component properties. You'll learn how to use the `CppToolGem` template and practice C++ development with O3DE's Tools UI API and other O3DE APIs.
 
-![An image of the Shape Example tool and some entities created by it.](/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-demo.png)
-
 This tutorial is based off of the **ShapeExample** Gem in [`o3de/sample-code-gems` repository](https://github.com/o3de/sample-code-gems/tree/main/cpp_gems/ShapeExample). You can reference the ShapeExample Gem sample as you follow along this tutorial.
 
 By the end of this tutorial, you'll be able to create your own tools that extend the O3DE Editor.
 
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-demo.png" "1080" "An image of the Shape Example tool and some entities created by it." >}}
 
-## Create a tool with the `CppToolGem` template
 
-The `CppToolGem` template contains a basic C++ framework to create a dockable tool (widget) in the O3DE Editor.
+## Prerequisites
+
+Before you start the tutorial, ensure that you have the following:
+
+- Set up an O3DE development environment. You can build O3DE as a source engine or a pre-built SDK engine. For more information, refer to [Setting up O3DE from GitHub](/docs/welcome-guide/setup/setup-from-github.md).
+
+## Create a Gem from the `CppToolGem` template
+
+To start, create a Gem from the `CppToolGem` template. The `CppToolGem` template contains a basic C++ framework to create a dockable tool (widget) in the O3DE Editor.
+
+This tutorial uses the following directory names and locations in the examples.
+
+- **O3DE engine directory**: `C:/o3de`  
+    The source directory that contains the engine.
+
+- **`CppToolGem` template**: `C:/o3de/Templates/CppToolGem`  
+    The Gem template that your custom Gem is based off of.
+
+- **MyCppShapeExample Gem**: `C:/o3de-gems/MyCppShapeExample`  
+    Your custom Gem. You may choose a different folder name and location in your disk.
+
+To create a Gem from the `CppToolGem` template, complete the following steps:
 
 1. Create a Gem by using the **O3DE CLI** (`o3de`) script that's in your engine source directory. Specify the Gem's name (`--gem-name`, `-gn`), the Gem directory path (`--gem-path`, `-gp`), and the Gem template to create from (`--template-name`, `-tn`). This Gem is based off of the `CppToolGem` template. In this example, we'll name the Gem `MyCppShapeExample` and create it in `C:/o3de-gems/MyCppShapeExample`.
 
@@ -41,7 +60,7 @@ The `CppToolGem` template contains a basic C++ framework to create a dockable to
 
     Or, enable the Gem using the Project Manager (refer to [Adding and Removing Gems in a Project](/docs/user-guide/project-config/add-remove-gems.md)).
 
-4. Build the project by using the O3DE CLI (refer to [Build a project](https://o3de.org/docs/user-guide/build/configure-and-build/#build-a-project)). Or, use the Project Manager (refer to the **Build** action in the [Project Manager](https://o3de.org/docs/user-guide/project-config/project-manager/)) page.
+4. Build the project by using the O3DE CLI (refer to [Build a project](/docs/user-guide/build/configure-and-build/#build-a-project)). Or, use the Project Manager (refer to the **Build** action in the [Project Manager](/docs/user-guide/project-config/project-manager/)) page.
 
 5. Open O3DE Editor for your project.
 
@@ -51,12 +70,17 @@ The `CppToolGem` template contains a basic C++ framework to create a dockable to
 
 Now you can access the Shape Example tool! By default, this tool contains a simple user interface (UI). In the next steps, we'll design the tool's UI and code its functionality. (See C.)
 
-![O3DE Editor with a tool created using the CppToolGem template](/images/learning-guide/tutorials/custom-tools/shape-example/cpp-tool-gem-template-in-editor.png)
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-tool-gem-template-in-editor.png" "1080" "O3DE Editor with a tool created using the CppToolGem template" >}}
 
 
 ## Code directory
 
-In the ShapeExample Gem's `Code/Source` directory, you'll find the following files that make up your custom tool.
+This sections describes your MyCppShapeExample Gem's code structure. It's important to become familiar with your Gem's code structure because this is the entry point where you will program your tool's custom functionality. In this example, your Gem's directory is located at: `C:/o3de-gems/MyCppShapeExample`. This is the path that you specified when you created the Gem. Your Gem's code is located in the subdirectory `Code/Source`, which contains the following classes and frameworks that make up your custom tool.
+
+Example of `Code/Source` directory:
+
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-tool-gem-template-directory.png" "720" "O3DE Editor with a tool created using the CppToolGem template." >}}
+
 
 ### Modules and system components
 
@@ -111,7 +135,7 @@ ShapeExampleWidget::ShapeExampleWidget(QWidget* parent)
 In this step, create an input field for the entity's name and a check box for an option to append a suffix---the component's name---to the entity's name. For example, suppose you set the entity's name to "MyEntity" and enable the check box. Then, when you create an entity with a **Box Shape** component and another with a **Sphere Shape** component, they will respectively be named "MyEntity_BoxShape" and "MyEntity_SphereShape".
 
 By the end of this step, your input field and check box should look like this: 
-![Shows UI for an input field and check box](/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png)
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/input-field-check-box.png" "500" "Shows UI for an input field and check box" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -203,7 +227,7 @@ After creating the UI elements---an input field and a check box---and connecting
 In this step, you will create a combo box that contains a list of values that you can use to scale the size of the entity.
 
 By the end of this step, your combo box should look like this: 
-![Shows UI for combo box](/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png)
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/combo-box.png" "500" "Shows UI for combo box" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -261,7 +285,7 @@ A combo box allows users to select an item from a pop up list of items. With Qt,
 In this step, you will create a collection of buttons that create an entity with different Shape components, such as with a Box Shape, Sphere Shape, Cone Shape, and so on.
 
 By the end of this step, your buttons should look like this: 
-![Shows UI for buttons](/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png)
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/buttons.png" "500" "Shows UI for buttons" >}}
 
 First, wrap these UI elements in their own sub-widget, set the layout, and add it to the main widget. 
 
@@ -448,7 +472,7 @@ void ShapeExampleWidget::CreateEntityWithShapeComponent(const AZ::TypeId& typeId
 
 An icon is an image file that's used to represent your tool in the O3DE Editor. The icon appears in the Edit Mode Toolbar in the O3DE Editor (see the following image).
 
-![Add an icon for your tool in the O3DE Editor](/images/learning-guide/tutorials/custom-tools/shape-example/icon.png)
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/icon.png" "500" "Add an icon for your tool in the O3DE Editor" >}}
 
 
 ### Add an icon
@@ -492,7 +516,7 @@ After, you can launch O3DE Editor and load the Gem.
 
 Congratulations! You've created a custom shape tool written in C++, built it, and loaded it in the O3DE Editor. Your tool should look something like this:
 
-![An image of the Shape Example tool.](/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-ui.png)
+{{< image-width "/images/learning-guide/tutorials/custom-tools/shape-example/cpp-shape-example-ui.png" "500" "An image of the Shape Example tool." >}}
 
 ## Download the ShapeExample Gem sample
 

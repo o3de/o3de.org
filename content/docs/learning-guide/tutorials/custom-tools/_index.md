@@ -4,7 +4,7 @@ title: Custom Tool Tutorials
 description: Learn to design and develop custom tools to expand the Open 3D Engine (O3DE).
 ---
 
-This section contains step-by-step tutorials related to the design and development of custom tools that extend the **Open 3D Engine (O3DE)**. Tools are dockable widgets or dialog windows that add functionality to O3DE. You can create custom tools in C++ or Python.
+This section contains tutorials related to the design and development of custom tools that extend the **Open 3D Engine (O3DE) Editor**. Tools are dockable widgets or dialog windows that add functionality to O3DE. You can create custom tools written in C++ or Python.
 
 | Tutorial | Description |
 | - | - |
