@@ -26,7 +26,7 @@ Automated tests are composed of:
 
 * **Test suite**:  A collection of tests, targeting a specific feature. Test classes must inherit from `EditorTestSuite`.
 
-    ```python
+```python
 # This file will be used by the external Python interpreter to launch O3DE Editor, specifying what test files will be run.
 
 import pytest
@@ -42,7 +42,7 @@ class TestAutomation(EditorTestSuite):
 
 * **Individual test**: This is an actual Python test that the editor will run.
 
-    ```python
+```python
 from editor_python_test_tools.utils import Report
 
 def MyFeature_CheckEnterGameMode():
@@ -63,7 +63,8 @@ if __name__ == "__main__":
 
 * **CMake configuration file**: To add a Python test suite into the CI pipeline, it must be registered with CTest via a `CMakeLists.txt` file.
 
-    ```
+```
+    # PAL_TRAIT_BUILD macros are used by platform detection.
     if(PAL_TRAIT_BUILD_TESTS_SUPPORTED AND PAL_TRAIT_BUILD_HOST_TOOLS)
         ly_add_pytest(
             NAME AutomatedTesting::MyFeature_Main
@@ -216,7 +217,6 @@ if __name__ == "__main__":
     from editor_python_test_tools.utils import Report
     Report.start_test(MyFeature_MyTest)
 ```
-
 
 A full example of how to structure a test that runs in O3DE Editor:
 
@@ -451,9 +451,11 @@ def has_fallen():
 helper.wait_for_condition(has_fallen, 5.0)
 if entity.position.y >= 0:
         assert False, "Entity didn't fall"
-    ```
+```
+
 * **Compare values within ranges.** Using ranges for values rather than equality, especially for float values, makes tests more likely to succeed. Vector and other math constructs have utility functions for detecting values within a specific range.
-    ```python
+
+```python
 ### BAD ###
 if entity.position != azlmbr.math.Vector3(50.0, 50.0, 50.0):
         assert False, "Entity is not in correct position"
@@ -461,7 +463,7 @@ if entity.position != azlmbr.math.Vector3(50.0, 50.0, 50.0):
 ### GOOD ###
 if not entity.position.IsClose(azlmbr.math.Vector3(50.0, 50.0, 50.0)):
         assert False, "Entity is not in correct position"
-    ```
+```
 
 ## Debugging tests
 
