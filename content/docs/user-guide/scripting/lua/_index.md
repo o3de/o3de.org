@@ -10,18 +10,18 @@ You can use Lua in **Open 3D Engine (O3DE)** to facilitate quick iteration of yo
 
 O3DE uses Lua version {{< versions/lua >}}.
 
-## Building Lua Editor and GridHub
+## Lua Editor and GridHub
 
-If you built O3DE from source, you must explicitly include **Lua Editor** (Lua IDE) and GridHub as build targets when you build your project. GridHub is O3DE's central connection hub for debugging, and is required to debug Lua scripts from the Lua IDE. To include these targets, add `LuaIDE` and `GridHub` to your build target list: `--target <project>.GameLauncher Editor LuaIDE GridHub`. 
+The Lua development environment in O3DE includes the **Lua Editor**. The debugger that is included with the Lua Editor uses a connection hub called **GridHub**. These two applications are built when the **O3DE Editor** is built.
 
-For information about accessing class references in Lua Editor, refer to [Debugging with Lua Editor](debugging-tutorial).
+### Building Lua Editor and GridHub
 
-### Example
+You can also build them separately by specifying them as build targets when using CMake.
 
 If you need to build Lua Editor and GridHub after your project is built, navigate to your O3DE source directory, for example `c:\o3de`, and run the following command, inserting the path to your project's build directory.
 
-```
-cmake --build c:\<o3de-projects>\<project>\<build> --target LuaIDE GridHub --config profile -- /m
+```cmd
+cmake --build <project-directory>/<build-directory> --target LuaIDE GridHub --config profile -- /m
 ```
 
 ## Learning Lua 
@@ -38,7 +38,7 @@ After you read through this tutorial on writing Lua scripts for the component en
   + For information on O3DE's built-in Lua editor, refer to [Lua Editor](./lua-editor).
   + For information about the O3DE EBus, refer to [Working with the Event Bus (EBus) system](/docs/user-guide/programming/ebus).
   
-## Section Topics
+## Section topics
 
 | Topic | Description |
 | --- | --- |
@@ -51,7 +51,7 @@ After you read through this tutorial on writing Lua scripts for the component en
 | [Debugging Lua Scripts](debugging-scripts) | Learn about debugging Lua scripts in O3DE. |
 | [Debugging with Lua Editor](debugging-tutorial) | Use Lua Editor to debug Lua scripts. |
 
-## Related Topics
+## Related topics
 
 | Topic | Description |
 | --- | --- |
