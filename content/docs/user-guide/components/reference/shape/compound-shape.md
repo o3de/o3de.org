@@ -1,6 +1,6 @@
 ---
-title: Compound Shape component
-linktitle: Compound
+title: Compound Shape Component
+linktitle: Compound Shape
 description: ' Open 3D Engine (O3DE) Compound Shape component reference. '
 weight: 100
 ---
@@ -9,24 +9,24 @@ weight: 100
 
 The **Compound Shape** component is a container for complex shapes. An entity can contain only one Shape component. To build complex shapes, the Compound Shape component can reference any number of entities, each with their own Shape component. The Compound Shape component is not a mesh, but rather a helper geometry that can be used to define volumes for shape gradients, audio, vegetation, PhysX, and any application that can utilize the Shape EBus. For more information on using Shape components, see [Shape components](/docs/user-guide/components/reference/shape/).
 
-## Provider ##
+## Provider
 
 [O3DE Core (LmbrCentral) Gem](/docs/user-guide/gems/reference/o3de-core)
 
-## Dependencies ##
+## Dependencies
 
-One or more entities containing Shape components.
+One or more entities containing [Shape components](./).
 
-## Properties ##
+## Compound Shape properties
 
 ![Compound Shape component properties](/images/user-guide/components/reference/shape/compound-shape-component-ui-01.png)
 
 The Compound Shape component contains a **Child Shape Entities** list of referenced entities containing Shape components.
 
-* To add an item to the **Child Shape Entities** list, choose the **+** button at the top of the list.
-* To remove an item from the list, choose the **Trashcan** button to the right of the item.
-* To clear the list, choose the **Trashcan** button at the top right of the component interface.
-* To assign an entity containing a shape component to a slot in the list, choose the **Target** button to enter pick mode, and then select an entity by clicking it in Perspective view or Entity Outliner.
+* To add an item to the **Child Shape Entities** list, choose the {{< icon "add.svg" >}} icon at the top of the list.
+* To remove an item from the list, choose the {{< icon "delete.svg" >}} icon to the right of the item.
+* To clear the list, choose the {{< icon "delete.svg" >}} icon button at the top right of the component interface.
+* To assign an entity containing a shape component to a slot in the list, choose the {{< icon "picker.svg" >}} to enter pick mode, and then select an entity by clicking it in Perspective view or Entity Outliner.
 
 The entities referenced by the Compound Shape component are not required to be children of the entity in the scene hierarchy that has the Compound Shape. However, if the shapes should move together, making the shape entities children of the Compound Shape entity in the scene hierarchy is recommended.
 
@@ -34,10 +34,4 @@ The dimensions of shapes that make up the Compound Shape should be set in the in
 
 For EBus (event bus) requests, Compound Shapes service the full shape component bus. However, each individual shape in the list increases the cost of requests such as testing for collision or overlap.
 
-## CompoundShapeComponentRequestBus ##
-
-Use the following request functions with the `CompoundShapeComponentRequestBus` EBus interface to communicate with other components of your game.
-
-| Request Name | Description | Parameter | Return | Scriptable |
-|-|-|-|-|-|
-| `GetCompoundShapeConfiguration` | Returns the configuration of the compound shape. | None | `CompoundShapeConfiguration` object that contains the configuration for the compound shape. | Yes |
+Refer to [Shape component Ebus interface](./#shape-component-ebus-interface) for a description of functions that are available to all Shape components.

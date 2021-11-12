@@ -63,7 +63,7 @@ You can build your own nodes for your project's specific needs. For more informa
 
 ## Node Palette
 
-The **Node Palette** contains a searchable list of nodes. By default, the palette is docked to the left of the Script Canvas editor.
+The **Node Palette** contains a searchable list of nodes. By default, the palette is docked to the left of the **Script Canvas Editor**.
 
 **To display the Node Palette**
 

@@ -25,7 +25,7 @@ Temporal Anti-aliasing (TAA)
 Punctual Lights  
 : Punctual lights are efficient, simple to compute, light sources. Atom integrates punctual lights into O3DE using feature processor interfaces. The following punctual lights are supported:
 + **Point Light** - Casts light from an infinitely small point in all directions within a radius, similar to a light bulb.
-+ **Directional Light** - Casts light from an infinitely distant point in a single direction. Directional lights are often used to simulate large distant light sources link the sun, and to cast shadows.
++ **Directional Light** - Casts light from an infinitely distant point in a single direction. Directional lights are often used to simulate large distant light sources like the sun, and to cast shadows.
 
 *Related to: [O3DE Light component](/docs/user-guide/components/reference/atom/light/), [O3DE Directional Light component](/docs/user-guide/components/reference/atom/directional-light/), [Point Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_point_light_feature_processor_interface.html), [Directional Light Feature Processor API](/docs/api/gems/Atom/class_a_z_1_1_render_1_1_directional_light_feature_processor_interface.html)*
 

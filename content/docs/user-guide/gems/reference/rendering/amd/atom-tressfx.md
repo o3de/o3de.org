@@ -5,4 +5,4 @@ description: The Atom TressFX Gem provides realistic hair and fur simulation and
 toc: true
 ---
 
-The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and Open 3D Engine (O3DE).
+The Atom TressFX Gem provides realistic hair and fur simulation and rendering in Atom and **Open 3D Engine (O3DE)**.

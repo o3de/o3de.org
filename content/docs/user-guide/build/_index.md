@@ -4,7 +4,7 @@ description: Learn the basics of Open 3D Engine's support for the CMake build sy
 weight: 200
 ---
 
-To support multiple native build toolchains, Open 3D Engine (O3DE) uses the [CMake build tools](https://cmake.org/). While most configurable build systems make it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project files, and then perform native builds.
+To support multiple native build toolchains, **Open 3D Engine** (O3DE) uses the [CMake build tools](https://cmake.org/). While most configurable build systems make it difficult to work cross-platform, CMake is intentionally designed to take generic configuration files and generate toolchain-specific project files, and then perform native builds.
 
  Once you've [registered O3DE](/docs/welcome-guide/setup) and [created a project](/docs/welcome-guide/create), you can build your project with these commands:
 

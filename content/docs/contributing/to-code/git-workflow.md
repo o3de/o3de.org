@@ -6,7 +6,7 @@ toc: true
 weight: 200
 ---
 
-Looking to submit new or changed code to O3DE? Exciting! Follow the guidance below to submit your first PR.
+Looking to submit new or changed code to **Open 3D Engine (O3DE)**? Exciting! Follow the guidance below to submit your first PR.
 
 ### GitHub Code Contribution Workflow
 

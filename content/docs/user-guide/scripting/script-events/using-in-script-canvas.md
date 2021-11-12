@@ -8,7 +8,7 @@ Script Canvas scans for and detects script event assets, so after you define a s
 
 ## Script events in the node palette
 
-Script event assets appear by default in the **Script Events** category in the Script Canvas editor **Node Palette**.
+Script event assets appear by default in the **Script Events** category in the **Script Canvas Editor** **Node Palette**.
 
 ![The Script Events category in the Script Canvas Node Palette.](/images/user-guide/scripting/script-events/using-in-script-canvas-1.png)
 

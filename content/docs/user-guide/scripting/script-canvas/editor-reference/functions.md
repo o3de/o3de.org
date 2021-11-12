@@ -5,7 +5,7 @@ description: Create reusable functions in Script Canvas that can be inserted int
 weight: 400
 ---
 
-The Script Canvas editor enables you to create reusable graphs, called functions. A function is available for use as a node in your Script Canvas graphs. Similar to functions in traditional programming languages, functions in the Script Canvas editor promote code reuse and abstraction. They help simplify your graphs by replacing a group of nodes that perform a specific task with one function node. For example, you could move a series of nodes that perform linear interpolation into a function called Interpolate, and move nodes that perform acceleration clamping into a function called ClampAcceleration. Additionally, if you're using this functionality in multiple graphs, functions make updates easier because you need to make changes only in one place.
+The **Script Canvas Editor** enables you to create reusable graphs, called functions. A function is available for use as a node in your Script Canvas graphs. Similar to functions in traditional programming languages, functions in the Script Canvas Editor promote code reuse and abstraction. They help simplify your graphs by replacing a group of nodes that perform a specific task with one function node. For example, you could move a series of nodes that perform linear interpolation into a function called Interpolate, and move nodes that perform acceleration clamping into a function called ClampAcceleration. Additionally, if you're using this functionality in multiple graphs, functions make updates easier because you need to make changes only in one place.
 
 Your function appears alongside all the other Script Canvas nodes in the **Node Palette**, categorized under **Global Functions**.
 
@@ -13,9 +13,9 @@ When you create a function, you define the input and output variables of that fu
 
 ## Creating a Script Canvas function
 
-Start creating a new function by choosing **File**, **New Function** in the Script Canvas editor.
+Start creating a new function by choosing **File**, **New Function** in the Script Canvas Editor.
 
-![Choose File, New Function in the Script Canvas editor to start a new Script Canvas function.](/images/user-guide/scripting/script-canvas/function-new.png)
+![Choose File, New Function in the Script Canvas Editor to start a new Script Canvas function.](/images/user-guide/scripting/script-canvas/function-new.png)
 
 Alternatively, you can create a new function using the function create button located in the upper right corner of the editor canvas.
 

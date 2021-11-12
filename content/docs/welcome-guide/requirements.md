@@ -6,7 +6,7 @@ weight: 300
 toc: true
 ---
 
-Open 3D Engine (O3DE) has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
+**Open 3D Engine (O3DE)** has a minimum set of hardware and software requirements for development, as outlined in the following sections. In the [Software
 prerequisites and configuration](#software-prerequisites)
 section, each prerequisite is listed along with any specific configuration steps
 required.
@@ -79,7 +79,7 @@ After installing the C++ redistributable, you might be prompted to restart your 
 
 ### CMake
 
-[CMake {{< versions/cmake >}} or later](https://cmake.org/download/) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** from the CMake download page instead of a Release Candidate. During installation, select one of the options that adds CMake to the system PATH. This will save you from having to do this later.
+[CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** from the CMake download page instead of a Release Candidate. During installation, select one of the options that adds CMake to the system PATH. This will save you from having to do this later.
 
    ![Add CMake to the system PATH during installation](/images/welcome-guide/requirements-cmake-install-add-to-path.png)
 
@@ -124,7 +124,7 @@ The primary Linux distribution for using the O3DE Editor is Ubuntu 20.04.3 LTS. 
 
 ### CMake
 
-As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
+As with the other operating systems, [CMake {{< versions/cmake >}} or later](https://cmake.org/download/#latest) is required to configure and build O3DE projects. We strongly recommend that you install the **Latest Release** of CMake rather than the default one provided by your current Linux distribution. If CMake is already installed, but does not match the minimum version, you will need to remove it with the following command.
 
 ```shell
 sudo apt-get remove cmake
@@ -193,6 +193,8 @@ O3DE also requires some additional library packages to be installed:
 * libglu1-mesa-dev
 * libxcb-xinerama0
 * libxcb-xinput0
+* libxcb-xinput-dev
+* libxcb-xfixes0-dev
 * libxcb-xkb-dev
 * libxkbcommon-dev
 * libxkbcommon-x11-dev
@@ -205,7 +207,7 @@ O3DE also requires some additional library packages to be installed:
 You can download and install these packages through `apt-get`. 
 
 ```shell
-sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev
+sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xinput-dev libxcb-xfixes0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libfontconfig1-dev libcurl4-openssl-dev libsdl2-dev zlib1g-dev mesa-common-dev
 ```
 
 ### Ninja Build System (Optional)

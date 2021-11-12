@@ -3,6 +3,7 @@ description: ' Install Houdini plug-ins to create destruction assets for simulat
   in Open 3D Engine with NVIDIA Blast. '
 title: Install SideFX Houdini plug-ins for NVIDIA Blast
 weight: 100
+draft: true
 ---
 
 

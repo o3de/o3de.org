@@ -34,7 +34,7 @@ As your Script Canvas graphs grow in size, you can group nodes to logically orga
   + Right-click the group, and choose **Expand**.
   + In **Node Inspector**, clear the **Collapse Group** option.
 
-    ![Creating a node group in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-grouping-expand.gif)
+    ![Creating a node group in the Script Canvas Editor.](/images/user-guide/scripting/script-canvas/nodes-grouping-expand.gif)
 
 **To edit the name of a group**
 + Do one of the following:
@@ -83,7 +83,7 @@ You can use the **Node Inspector** to customize the color of a group and to chan
 
 1. In the **Select Color** dialog box, specify the color that you want to use. You can choose from basic colors, create a custom color, or click **Pick Screen Color** to choose a color on your screen with your pointer.
 
-    ![Choose or create a color for a group node in the Script Canvas editor.](/images/user-guide/scripting/script-canvas/nodes-grouping-color-select.png)
+    ![Choose or create a color for a group node in the Script Canvas Editor.](/images/user-guide/scripting/script-canvas/nodes-grouping-color-select.png)
 
 1. Click **OK**.
 
