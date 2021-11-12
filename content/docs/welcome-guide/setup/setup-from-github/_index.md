@@ -34,7 +34,7 @@ The O3DE GitHub repo uses the Git Large File Storage (LFS) system for storing la
     git lfs install
     ```
 
-    If the output from this command is "Git LFS initialized", then you already have Git LFS installed.
+    If the output from this command is "Git LFS initialized", then you already have Git LFS installed. If you didn't have Git LFS installed, this command will install it for you.
 
 1. Verify that you have a **credential manager** set up for Git. Recent versions of Git install a credential manager to store your credentials so that you don't have to enter them for every request.
 
@@ -131,9 +131,9 @@ All contributions to the O3DE repo are expected to be staged in a fork before su
     git config lfs.url https://<DISTRIBUTION>.cloudfront.net/api/v1/fork/<FORK> 
     ```
 
-    You may be prompted to re-authenticate the next time you pull or push.  Remember to use your GitHub personal access token not your GitHub password.
+    You might be prompted to re-authenticate the next time that you pull or push.  Remember to use your GitHub personal access token, and not your GitHub password.
 
-    If you wish to revert this change you can run the following command:
+    If you wish to revert this change, you can run the following command:
 
     ```cmd
     git config --unset lfs.url 

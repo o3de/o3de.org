@@ -1,6 +1,6 @@
 ---
 title: Side-by-side Engines
-description: Learn how to setup multiple configurations of Open 3D Engine (O3DE) on your computer.
+description: Learn how to set up multiple configurations of Open 3D Engine (O3DE) on your computer.
 weight: 500
 toc: true
 ---
