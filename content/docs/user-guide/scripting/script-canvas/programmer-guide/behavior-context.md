@@ -72,7 +72,7 @@ static void GlobalClass::Reflect(AZ::ReflectContext* context)
 }
 ```
 
-To complete the reflection, `GlobalClass::Reflect` must be called from a system component's Reflect function.
+To complete the example, `GlobalClass::Reflect` must be called from a system component's Reflect function.
 
 Once the code has been compiled, it is available as a new node in Script Canvas:
 
@@ -110,9 +110,9 @@ In this Light component, the user can configure the light by setting parameters 
 
 ### Request bus
 
-A request bus is a bus through which it's possible to send events, or requests for a system or object to handle the event. A request bus contains methods that can be used through the EBus system in C++. These methods can be reflected to the behavior context. Once in the behavior context, the methods can be called from a scripting environment such as Script Canvas. When implemented in a component, such as our Light component example, the Light component implements the behavior of the requests that are made to it.
+A request bus is an EBus that can send _events_. Events can be thought of as requests that are intended for a system or object to handle. Components can reflect their event methods to the behavior context to make them available to scripting environments such as Script Canvas.
 
-Some of the requests that you can issue on a Light Component include:
+Here are a few of the C++ event methods in the Light component:
 
 ```cpp
 // Turn light on. Returns true if the light was successfully turned on.
@@ -125,52 +125,106 @@ bool TurnOffLight();
 void ToggleLight();
 ```
 
-These requests are part of the `LightComponentRequestBus`. Their behavior is implemented by `LightComponent`.
-
-To make these requests accessible for scripting, they must be reflected to the behavior context. This is done in `LightComponent::Reflect`.
+These events are part of the `LightComponentRequestBus`. Their behavior is implemented by `LightComponent`.
 
 ```cpp
-behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
-    ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-    ->Event("TurnOn", &LightComponentRequestBus::Events::TurnOnLight, "TurnOnLight")
-    ->Event("TurnOff", &LightComponentRequestBus::Events::TurnOffLight, "TurnOffLight")
-    ->Event("Toggle", &LightComponentRequestBus::Events::ToggleLight, "ToggleLight");
+bool LightComponent::TurnOnLight()
+{
+    bool success = m_light.TurnOn();
+    if (success)
+    {
+        EBUS_EVENT_ID(GetEntityId(), LightComponentNotificationBus, LightTurnedOn);
+    }
+    return success;
+}
+
+bool LightComponent::TurnOffLight()
+{
+    bool success = m_light.TurnOff();
+    if (success)
+    {
+        EBUS_EVENT_ID(GetEntityId(), LightComponentNotificationBus, LightTurnedOff);
+    }
+    return success;
+}
+
+void LightComponent::ToggleLight()
+{
+    if (m_light.IsOn())
+    {
+        TurnOffLight();
+    }
+    else
+    {
+        TurnOnLight();
+    }
+}
 ```
 
-When Script Canvas examines the behavior context, it finds these bindings and automatically generates the corresponding nodes for you.
+To make these events accessible for scripting, their methods must be reflected to the behavior context. This is done in `LightComponent::Reflect`.
+
+```cpp
+if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+{
+    behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
+        ->Event("TurnOn", &LightComponentRequestBus::Events::TurnOnLight, "TurnOnLight")
+        ->Event("TurnOff", &LightComponentRequestBus::Events::TurnOffLight, "TurnOffLight")
+        ->Event("Toggle", &LightComponentRequestBus::Events::ToggleLight, "ToggleLight");
+}
+```
+
+When Script Canvas examines the behavior context, it finds these events and automatically generates the corresponding nodes for you.
 
 ![Light component nodes in Script Canvas](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-light-nodes.png)
+
+#### EBus events and EntityID
 
 EBuses communicate with an entity's components. To do this, it needs an address. All component EBuses derive from `AZ::ComponentBus`, which is addressable by an ID of the type `AZ::EntityId`. For this reason, all nodes from a component EBus have a data pin for an `EntityID`. The presence of `Self` in the `EntityID` field refers to the `EntityID` of the entity that owns the Script Canvas graph. However, this ID can be assigned to another entity, or even changed to an invalid entity ID.
 
 ![Self EntityID](/images/user-guide/scripting/script-canvas/behavior-context-ebus-request-entityID.png)
 
-Additional events in this component might take a parameter:
+#### Tooltips
+
+Script Canvas nodes should include a helpful tooltip for every parameter. For example, the Light component might have a `SetLightState` event with a `state` parameter:
 
 ```cpp
 // Set the light state to on or off.
 void SetLightState(State state);
 ```
 
-To help the users of this node, you should add a tooltip to the script binding to describe the parameter. The tooltip will show when you hover over the `State` parameter on the node:
+You should add a tooltip in the behavior context reflection to describe the parameter. In this example, the tooltip will show "1=On, 0=Off" when a user hovers over the `State` parameter on the node.
 
 ```cpp
-    ->Event("SetState", &LightComponentRequestBus::Events::SetLightState, "SetLightState", {{{"State", "1=On, 0=Off"}}})
+    behaviorContext->EBus<LightComponentRequestBus>("Light", "LightComponentRequestBus")
+        ->Event("SetState", &LightComponentRequestBus::Events::SetLightState, "SetLightState", {{{"State", "1=On, 0=Off"}}});
 ```
 
 ### Notification bus
 
-The other bus that the Light component reflects to the behavior context is `LightComponentNotificationBus`. The following source code is also in the file `dev\Gems\LmbrCentral\Code\Source\Rendering\LightComponent.cpp`.
+A notification bus is an EBus that enables the use of *event handlers*. Event handlers in a component can respond to the events that are sent to the component. You can reflect event handlers to the behavior context to make them available to scripting environments such as Script Canvas.
+
+Our Light component example handles the TurnOn, TurnOff, and Toggle events using the following C++ event handler methods on the `LightComponentNotificationBus`:
 
 ```cpp
-behaviorContext->EBus<LightComponentNotificationBus>("LightNotification", "LightComponentNotificationBus", "Notifications for the Light Components")
-    ->Attribute(AZ::Script::Attributes::Category, "Rendering")
-    ->Handler<BehaviorLightComponentNotificationBusHandler>();
+class LightComponentNotifications
+      : public AZ::ComponentBus
+{
+public:
+
+    // Sent when the light is turned on.
+    virtual void LightTurnedOn() {}
+
+    // Sent when the light is turned off.
+    virtual void LightTurnedOff() {}
+};
+
+using LightComponentNotificationBus = AZ::EBus <LightComponentNotifications>;
 ```
 
-Notification buses are also known as *event handlers*. You can use these event handlers on a component to respond to the events that happen to the component. As part of reflection to the behavior context, the preceding code specifies that the `BehaviorLightComponentNotificationBusHandler` handles events for the Light component.
+To create the script binding between the C++ EBus and the scripting system, you must implement an EBus handler.
 
-The following code shows the binding for the `BehaviorLightComponentNotificationBusHandler` and defines two events: `LightTurnedOn` and `LightTurnedOff`.
+In the following code, the `BehaviorLightComponentNotificationBusHandler` handler establishes the script binding with two event handlers: `LightTurnedOn` and `LightTurnedOff`.
 
 ```cpp
 class BehaviorLightComponentNotificationBusHandler : public LightComponentNotificationBus::Handler, public AZ::BehaviorEBusHandler
@@ -178,11 +232,13 @@ class BehaviorLightComponentNotificationBusHandler : public LightComponentNotifi
 public:
     AZ_EBUS_BEHAVIOR_BINDER(BehaviorLightComponentNotificationBusHandler, "{969C5B17-10D1-41DB-8123-6664FA64B4E9}", AZ::SystemAllocator,
         LightTurnedOn, LightTurnedOff);
+
     // Sent when the light is turned on.
     void LightTurnedOn() override
     {
         Call(FN_LightTurnedOn);
     }
+
     // Sent when the light is turned off.
     void LightTurnedOff() override
     {
@@ -191,9 +247,22 @@ public:
 };
 ```
 
-Script Canvas has a node that gives you access to all the events for EBus. You can handle the events that you are interested in.
+Next, you need to reflect the notification bus to the behavior context in the Light component's `Reflect` method. As part of this reflection, you also specify that the `BehaviorLightComponentNotificationBusHandler` handles events for the Light component. The following code is added after the reflection of the request bus:
 
-![Light notification bus](/images/user-guide/scripting/script-canvas/script-canvas-behavior-context-3.png)
+```cpp
+if (AZ::BehaviorContext* behaviorContext = azrtti_cast<AZ::BehaviorContext*>(context))
+{
+    ...
+
+    behaviorContext->EBus<LightComponentNotificationBus>("LightNotification", "LightComponentNotificationBus", "Notifications for the Light components")
+        ->Attribute(AZ::Script::Attributes::Category, "Rendering")
+        ->Handler<BehaviorLightComponentNotificationBusHandler>();
+}
+```
+
+Once compiled, these event handlers are available to Script Canvas from the `LightNotification` node.
+
+![Light notification node](/images/user-guide/scripting/script-canvas/behavior-context-ebus-light-notification-node.png)
 
 ## Objects: The PhysicsComponent example
 
