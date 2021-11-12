@@ -106,7 +106,7 @@ To prepare to build the engine and projects, choose one of the following build t
     cmake --build build/linux --target INSTALL --config profile -j <number of parallel build tasks>
     ```
 
-    The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. The 'number of parallel build tasks' is recommended to match the number of cores available on the Linux host machine.
+    The `-j` is a recommended build tool optimization. It tells the Ninja build tool the number of parallel build tasks that will be executed simultaneously. We recommend that the 'number of parallel build tasks' matches the number of cores available on the Linux host machine.
 
     Example:
 

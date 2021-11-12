@@ -121,4 +121,4 @@ You can also run Project Manager (`o3de`) from the same directory to edit your p
 When you launch the Editor, the **Asset Processor** from the same directory will also launch.  To launch the Editor from a different directory, you must close any **Asset Processor** tasks that are running.
 {{< /caution >}}
 
-For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the User Guide.
+For more information about project configuration and building, refer to the [Project Configuration](/docs/user-guide/project-config) and [Build](/docs/user-guide/build) sections of the user guide.

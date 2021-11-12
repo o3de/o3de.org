@@ -6,7 +6,7 @@ weight: 800
 ---
 
 The Open 3D Engine Asset Bundler is driven by a command-line tool called `AssetBundlerBatch`. This tool manages seed lists, asset lists, comparisons, and asset bundles. The asset bundler is **not** used to compile assets into the format used by the bundler for distribution - that is the role of the Asset Processor. Before running the Asset Bundler, make sure that you:
-+  Enable each platform assets should be bundled for. Enabled platforms are managed by editing the `dev/AssetProcessorPlatformConfig.ini` file in your project.
++  Enable each platform for which assets should be bundled. Enabled platforms are managed by editing the `dev/AssetProcessorPlatformConfig.ini` file in your project.
 + Run the Asset Processor to ensure that assets and their metadata are up to date.
 
 See the [Asset Bundler Concepts and Terms](/docs/user-guide/packaging/asset-bundler/concepts/) or [Glossary](/docs/user-guide/appendix/glossary/) for definitions of terms used in this reference.
@@ -47,8 +47,8 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedFileList MyPr
 {{% tab name="Linux" %}}
 
 ```shell
-build/linux/bin/profile/AssetBundlerBatch seeds --seedFileList MyProject/AssetBundling/SeedLists/AllDependencies.seed ^
-    --addPlatformToSeeds ^
+build/linux/bin/profile/AssetBundlerBatch seeds --seedFileList MyProject/AssetBundling/SeedLists/AllDependencies.seed \
+    --addPlatformToSeeds \
     --platform ios,linux
 ```
 
@@ -101,7 +101,7 @@ Remove the `--platform` values for the provided seeds. If a seed is not availabl
 
 **`--addPlatformToSeeds`**
 
-Adds the `--platform` values to all seeds in the seed list. If a seed isn't valid for a provided platform, a warning is printed indicating the affected seed and the platform which caused the warning. The seed is updated for all other valid platforms.
+Adds the `--platform` values to all seeds in the seed list. If a seed isn't valid for a provided platform, a warning is printed indicating the affected seed and the platform that caused the warning. The seed is updated for all other valid platforms.
 
 * *Type:* Flag
 * *Required: No*
@@ -149,7 +149,7 @@ In the following examples, assume that the current project has enabled the platf
 
 **Example : Add seed**
 
-Create the seed list `testFile.seed` if it doesn't exist, and adds the `asset1.pak` and `asset2.pak` assets as seeds for the `PC` platform:
+Create the seed list `testFile.seed` if it doesn't exist, and add the `asset1.pak` and `asset2.pak` assets as seeds for the `PC` platform:
 
 {{< tabs name="Command line example-Add seed" >}}
 {{% tab name="Windows" %}}
@@ -164,8 +164,8 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe seeds --seedListFile test
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch seeds --seedListFile testFile.seed ^
-    --addSeed cache/asset_path/asset1.pak,cache/asset_path/asset2.pak ^
+build/linux/bin/profile/AssetBundlerBatch seeds --seedListFile testFile.seed \
+    --addSeed cache/asset_path/asset1.pak,cache/asset_path/asset2.pak \
     --platform linux
 ```
 
@@ -380,9 +380,9 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe assetLists --assetListFil
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch assetLists --assetListFile testList.assetlist ^
-    --seedListFile testFile.seed ^
-    --platform linux ^
+build/linux/bin/profile/AssetBundlerBatch assetLists --assetListFile testList.assetlist \
+    --seedListFile testFile.seed \
+    --platform linux \
     --generateDebugFile
 ```
 
@@ -454,7 +454,7 @@ The `comparisonRules` command is used to generate comparison rules files. Compar
 + *4* or *filePattern*: FilePattern
 + *5* or *intersectionCount*: IntersectionCount
 
-For more information about how each of these rules operate on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations/).
+For more information about how each of these rules operates on input files, see [Open 3D Engine Asset List Comparison Operations](/docs/user-guide/packaging/asset-bundler/list-operations/).
 
 The `intersectionCount` comparison type can't be combined with any other comparison type as part of a rule list.
 
@@ -504,9 +504,9 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe comparisonRules --compari
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch comparisonRules --comparisonRulesFile deltaFilterXML.rules ^
-     --comparisonType delta,filePattern ^
-     --filePatternType 0 ^
+build/linux/bin/profile/AssetBundlerBatch comparisonRules --comparisonRulesFile deltaFilterXML.rules \
+     --comparisonType delta,filePattern \
+     --filePatternType 0 \
      --filePattern "*xml"
 ```
 
@@ -570,7 +570,7 @@ The files to use as the first set of inputs for comparison.
 
 **`--secondAssetListFile`**
 
-The files to use as the second set of inputs for comparisons which require a second input file. This arugment isn't used for the `FilePattern` or `IntersectionCount` comparison types.
+The files to use as the second set of inputs for comparisons that require a second input file. This argument isn't used for the `FilePattern` or `IntersectionCount` comparison types.
 
 * *Type:* Multi-value argument. The number of parameters for the `--secondAssetListFile` argument must match the number of non-`FilePattern` arguments to the `--comparisonType` argument.
 * *Required:* No
@@ -602,7 +602,7 @@ Allow overwriting of existing output files. By default, existing files will not 
 
 **Example : Compare to generate a delta**
 
-Generate a new asset list `deltaAssetList.assetlist` by taking the files which appear in either `firstAssetList_pc.assetlist` and `secondAssetList_pc.assetlist`, but not both:
+Generate a new asset list `deltaAssetList.assetlist` by taking the files that appear in either `firstAssetList_pc.assetlist` or `secondAssetList_pc.assetlist`, but not both:
 
 {{< tabs name="Command line example-Compare to generate a delta" >}}
 {{% tab name="Windows" %}}
@@ -618,9 +618,9 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType 
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch compare --comparisonType delta ^
-     --firstAssetFile firstAssetList_pc.assetlist ^
-     --secondAssetFile secondAssetList_pc.assetlist ^
+build/linux/bin/profile/AssetBundlerBatch compare --comparisonType delta \
+     --firstAssetFile firstAssetList_pc.assetlist \
+     --secondAssetFile secondAssetList_pc.assetlist \
      --output deltaAssetList.assetlist
 ```
 
@@ -646,10 +646,10 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType 
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch compare --comparisonType filePattern ^
-    --filePatternType 0 ^
-    --filePattern "*.xml" ^
-    --firstAssetFile assetList_pc.assetlist ^
+build/linux/bin/profile/AssetBundlerBatch compare --comparisonType filePattern \
+    --filePatternType 0 \
+    --filePattern "*.xml" \
+    --firstAssetFile assetList_pc.assetlist \
     --output filePatternAssetList.assetlist
 ```
 
@@ -673,8 +673,8 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe compare --comparisonType 
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch compare --comparisonType intersectionCount ^
-    --firstAssetFile engine_pc.assetlist,game_pc.assetlist,patch_pc.assetlist ^
+build/linux/bin/profile/AssetBundlerBatch compare --comparisonType intersectionCount \
+    --firstAssetFile engine_pc.assetlist,game_pc.assetlist,patch_pc.assetlist \
     --print
 ```
 
@@ -683,13 +683,13 @@ build/linux/bin/profile/AssetBundlerBatch compare --comparisonType intersectionC
 
 ## Bundle settings - `bundleSettings` 
 
-The `bundleSettings` command is used to manage bundle settings file, configuration files that let you store commonly-used bundle configurations for easy reuse and automation.
+The `bundleSettings` command is used to manage bundle settings files, which are configuration files that let you store commonly used bundle configurations for easy reuse and automation.
 
 ### Options 
 
 **`--bundleSettingsFile`**
 
-The bundle settings file to be modified when running this command. If this file already exists, only those settings which are specified by the command invocation are changed.
+The bundle settings file to be modified when running this command. If this file already exists, only those settings that are specified by the command invocation are changed.
 
 * *Type:* Single-value argument
 * *Required:* Yes
@@ -758,9 +758,9 @@ build\windows_vs2019\bin\profile\AssetBundlerBatch.exe bundleSettings --bundleSe
 {{% tab name="Linux" %}}
 
 ```cmd
-build/linux/bin/profile/AssetBundlerBatch bundleSettings --bundleSettingsFile defaults.bundlesettings ^
-    --maxSize 1024 ^
-    --assetListFile allAssets.assetlist ^
+build/linux/bin/profile/AssetBundlerBatch bundleSettings --bundleSettingsFile defaults.bundlesettings \
+    --maxSize 1024 \
+    --assetListFile allAssets.assetlist \
     --platforms linux
 ```
 
@@ -775,7 +775,7 @@ The `bundles` command is used to generate the final bundle (`.pak`) files that c
 
 **`--bundleSettingsFile`**
 
-The bundle settings file to be loaded. If arguments are provided which would override the settings file, the arguments override the settings file.
+The bundle settings file to be loaded. If arguments are provided that would override the settings file, the arguments override the settings file.
 
 * *Type:* Single-value argument
 * *Required:* No
@@ -882,7 +882,7 @@ The seeds to be used in bundle file generation. All asset dependencies of these 
 
 **`--bundleSettingsFile`**
 
-The bundle settings file to be loaded. If arguments are provided which would override the settings file, the arguments override the settings file.
+The bundle settings file to be loaded. If arguments are provided that would override the settings file, the arguments override the settings file.
 
 * *Type:* Single-value argument
 * *Required:* No

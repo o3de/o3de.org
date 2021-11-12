@@ -6,7 +6,7 @@ weight: 100
 
 Building **Open 3D Engine (O3DE)** or any of its projects with CMake is done in two steps: Creating *native projects* for a build toolchain, and then invoking that toolchain to build the engine or a project.
 
-As part of keeping builds fast, CMake maintains a cache of its internal values used for generation and takes advantage of any incremental builds supported by the native build tools. After your first configuration, you won't need to make any changes to the CMake cache unless you're changing a value needed to re-create native build projects. In most workflows, you'll only need to regenerate your native build projects whenever adding source code.
+As part of keeping builds fast, CMake maintains a cache of its internal values used for generation of project files and takes advantage of any incremental builds supported by the native build tools. After your first configuration, you won't need to make any changes to the CMake cache unless you're changing a value needed to re-create native build projects. In most workflows, you'll only need to regenerate your native build projects whenever adding source code.
 
 An important element of CMake in O3DE is that the same commands are used to configure and build **both** the engine itself and any O3DE projects.
 
@@ -17,7 +17,7 @@ To create and build projects in O3DE, you must configure the required software f
 You'll need to identify the following:
 
 * A toolchain for your _host_ platform, to build the editor and tools.
-* A toolchain for your _target_ platform, to build your project. In many cases this will be the same as your host platform.
+* A toolchain for your _target_ platform, to build your project. In many cases, this will be the same as your host platform.
 
 ### Supported compiler toolchains
 
@@ -218,9 +218,9 @@ In this example, build products are placed in the `build/linux/bin/profile` dire
 
 ## Simulate an automated review run
 
-To test a build in your branch, you can simulate the automated review (AR) run that is executed on the Jenkins build nodes using a build script that is included with O3DE. Any contributions you make to the O3DE repo will need to pass this test run before your GitHub pull request can be merged.
+To test a build in your branch, you can use the `ci_build.py` Python script that's included with O3DE to simulate the automated review (AR) run that is executed on the Jenkins build nodes. Any contributions you make to the O3DE repo will need to pass this test run before your GitHub pull request can be merged.
 
-Use the following instructions to run the `ci_build.py` script that is located in the `<O3DE_engine>/scripts/build/` directory to simulate an AR run. The script requires the environment variable `LY_3RDPARTY_PATH` to be set to your downloadable packages ("third-party") folder.
+Use the following instructions to run `ci_build.py` to simulate an AR run. This build script is located in the `<O3DE_engine>/scripts/build/` directory. The script requires the environment variable `LY_3RDPARTY_PATH` to be set to your downloadable packages ("third-party") folder.
 
 {{< tabs name="Simulate AR run example" >}}
 {{% tab name="Windows" %}}
