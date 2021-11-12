@@ -16,9 +16,7 @@ The Lua development environment in O3DE includes the **Lua Editor**. The debugge
 
 ### Building Lua Editor and GridHub
 
-You can also build them separately by specifying them as build targets when using CMake.
-
-If you need to build Lua Editor and GridHub after your project is built, navigate to the directory where you build O3DE and run the following command, inserting the path to your build directory.
+To build Lua Editor and GridHub separately, navigate to the directory where you build your project (or where you build the O3DE engine, if you build the engine separately) and run the following command, inserting the path to your build directory.
 
 ```cmd
 cmake --build <build-directory> --target LuaIDE GridHub --config profile -- /m
