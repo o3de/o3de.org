@@ -9,7 +9,7 @@ The **Terrain Terrain Macro Material** component provides a method of defining a
 
 ## Usage ##
 
-You assign a color and a normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. Once the textures are assigned, you can adjust the appearance by using the **Normal Flip X** and **Normal Flip Y** toggles, and adjust the strength of the normals by using the **Normal Factor** slider. You can configure the dimensions of the region by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape)
+You assign a color and a normal texture by dragging texture assets to the **Color Texture** or **Normal Texture** fields, or by clicking {{< icon "file-folder.svg" >}}. Once the textures are assigned, you can adjust the appearance by using the **Normal Flip X** and **Normal Flip Y** toggles, and adjust the strength of the normals by using the **Normal Factor** slider. You can configure the dimensions of the region by adjusting the [Axis Aligned Box Shape](/docs/user-guide/components/reference/shape/axis-aligned-box-shape).
 
 ## Provider ##
 
@@ -25,9 +25,9 @@ You assign a color and a normal texture by dragging texture assets to the **Colo
 |-|-|-|-|
 | **Color Texture** | The image that will be rendered on the terrain. | Texture | None |
 | **Normal Texture** | The texture that will be used as the normal map. | Texture | None |
-| **Normal Flip X** | Set to true to flip the normals about X. | Boolean | false |
-| **Normal Flip Y** | Set to true to flip the normals about Y. | Boolean | false |
-| **Normal Factor** | Adjusts the strength of the normal values. | Float | 1.0 |
+| **Normal Flip X** | Set to true to flip the normals about X. | Boolean | `False` |
+| **Normal Flip Y** | Set to true to flip the normals about Y. | Boolean | `False` |
+| **Normal Factor** | Adjusts the strength of the normal values. | Float | `1.0` |
 
 
 ## MacroMaterialData
