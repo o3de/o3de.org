@@ -27,9 +27,11 @@ To [manage a team](#setting-up-credentials-for-a-team):
 ## General Advice for Working with AWS Credentials
 You will need to provide AWS credentials for users. You can choose between short-term and long-term credentials. Long-term credentials are convenient during the development process. They're easier to configure, but you need to be careful they are kept secure. Short-term credentials are generally recommended when you distribute your builds to external users because they have a finite lifetime. For more information and best practices, refer to the AWS topic on [Best Practices for Managing AWS Access Keys](https://docs.aws.amazon.com/general/latest/gr/aws-access-keys-best-practices.html#use-roles) using IAM roles.
 
-* To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and use one of the methods below. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information.
+* To provision long-term credentials, create an AWS Identity and Access Management (IAM) user with programmatic credentials and use one of the methods below. See [AWS Credentials - Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys) for more information. 
 
 * To provide short-term credentials, use [AWS Cognito](https://aws.amazon.com/cognito/) or [AWS Security Token Service](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) to generate [temporary security credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp.html). The [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth) provides configuration points for using Cognito in O3DE.
+
+* To support IAM roles, see the [IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) documentation for more information and follow [Using an IAM role in the AWS CL](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for setup information.
 
 It is strongly recommend against using your AWS account root user for day-to-day tasks. Instead, create user or roles in IAM to achieve this. Best practice is to change users' access keys regularly and follow the practice of least-privileges. For more information on managing access keys, see [Managing Access Keys for IAM Users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html) in the AWS IAM User Guide.
 
@@ -38,13 +40,13 @@ It is strongly recommend against using your AWS account root user for day-to-day
 
 This section assumes you have an [AWS IAM Administrator user](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) setup for your AWS account.
 
-For local development with AWS setup this guide covers how to use an IAM user with long term programmatic credentials. If you don't have access keys configured, use the AWS Console to generate and download new access key for an existing or new IAM user using the steps shown in the AWS Reference Guide for [Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
+For local development with AWS setup this guide covers how to use an IAM user with long term programmatic credentials. If you don't have access keys configured, use the AWS Console to generate and download new access keys for an existing or new IAM user using the steps shown in the AWS Reference Guide for [Programmatic Access](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html#access-keys-and-secret-access-keys).
 
 If you want to use short-term credentials for working with AWS, please see setup information in the [AWS Client Auth Gem](/docs/user-guide/gems/reference/aws/aws-client-auth).
 
 Chose from the following options to set up a user's AWS credentials for use in O3DE. If you are using [named profiles](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) remember to set the profile in the project settings.
 
-### Option 1: Configure via the AWS CLI
+### Option 1: Create a named profile via the AWS CLI
 
 O3DE recommends using the [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) (CLI) (version 2) to manage the import and configuration of AWS credentials. If you have not configured credentials or a region on your computer, the easiest way to satisfy this requirement is to use the AWS `configure` command:
 
@@ -60,7 +62,11 @@ Alternatively, when you create new access keys for a user, you are given the opt
 aws configure import --csv file://credentials.csv
 ```
 
-For more information on using AWS CLI configure commands, see [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide.
+This will create a named profile based on the name of the iam user in your .credentials file. You can control what profile is used by default in the AWS CLI, either by setting a ```[default]``` profile or through the use of the [AWS_DEFAULT_PROFILE](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html#using-profiles) environment variable.
+
+For more information on using AWS CLI configure commands, see [Configuration and Credential File Settings](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in the AWS CLI User Guide. 
+
+You can also utilize IAM roles via role based profiles, see [Using an IAM role in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html) for further information.
 
 ### Option 2: Configure local credentials via config files
 
@@ -135,7 +141,7 @@ Its recommended that you:
 * As you add and review AWS resources, you update managed policies to grant or revoke the appropriate permissions.
 
 ### Create an IAM User Groups
-To make managing permissions easier, its recommended that you create [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at time, which can make it easier to manage the permissions for those users.
+To make managing permissions easier, it's recommended that you create [user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html). User groups let you specify permissions for multiple users at time, which can make it easier to manage the permissions for those users.
 
 You can create user groups via the console, the cli or through the CloudFormation/CDK. We recommend you create at least two user groups to work with AWS in O3DE:
 * Admins - Administrator users required to own and manage AWS resources. Typically, performing updates and management of key resources.
@@ -175,11 +181,31 @@ aws iam add-user-to-group --group-name MyGroup --user-name MyNewUser
 ### Attach Permissions to the User Group
 You can attach IAM policies to a user group to control the permissions they have access to. This can be done via the Console, the AWS CLI or via CloudFormation/CDK. See [Attaching a policy to an IAM user group ](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups_manage_attach-policy.html) to attach permissions via the AWS Console or CLI.
 
-#### CDK Examples
+#### Working with O3DE CDK Examples
 If you deploy both the Core and example stack you can see examples of automatically generating user permissions via the ```generate_user_policy``` and ```generate_admin_policy``` functions, which are then automatically attached to the user groups via the call to ```__grant_access```.
 
 See the CDK [Permissions](https://docs.aws.amazon.com/cdk/latest/guide/permissions.html) documentation for more details.
 
+Many of the feature gems, such as [AWS Metrics]() create managed policies for users and admins that can then be attached manually to these groups. 
+
+##### Via the Console
+* Open the AWS console at https://console.aws.amazon.com/cloudformation.
+* Navigate to the desired stack in a region.
+* Click **Resources** tab.
+* Look for ```AWS::IAM::ManagedPolicy``` in the stack, record the policy name.
+* Then go to https://console.aws.amazon.com/iam
+* Select **user groups**
+* Click on the user group
+* Select **permissions**, then **add permissions** and select **attach polices**.
+* Filter for policy to attach and select it
+* Hit **Attach Policies**.
+
+##### Via the AWS CLI
+
+* List all stacks ```aws cloudformation describe-stacks --region <region>````
+* [List required stack resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-listing-stack-resources.html) ```aws cloudformation list-stack-resources --stack-name <feature stack> --region <region>```
+* Search for the ```WS::IAM::ManagedPolicy```resources and record the physical id of the resource, which should be in the form of the policy ARN.
+* [Attach the relevant policy](https://docs.aws.amazon.com/cli/latest/reference/iam/attach-group-policy.html) to the user groups as desired: ```aws iam  attach-group-policy --group-name <group name> --policy-arn <policy arn>```
 
 ## Setting up Credentials for a Team
 
@@ -200,3 +226,4 @@ Please read [General Advice for Working with AWS Credentials](#general-advice-fo
 * For general help with AWS CLI configuration commands, see [Configuring the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html).
 * For help with configuring credentials for the **AWS C++ SDK**, see [Providing AWS credentials](https://docs.aws.amazon.com/sdk-for-cpp/v1/developer-guide/credentials.html).
 * For help with manging permissions for AWS resources see [Policies and permissions in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html).
+* For help with using [IAM Roles]().
