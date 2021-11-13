@@ -1,18 +1,32 @@
 {{ define "main" }}
 {{ partial "top-banner.html" . }}
-{{ partial "download/hero.html" . }}
-{{ with .Content }}
-<section class="container pt-lg-5">
-  <div class="row">
-    <div class="col-12 col-lg-5 pr-lg-5">
-      {{ partial "download/download.html" . }}
-    </div>
-    <div class="col-12 col-lg-7">
-      {{ . }}
+<div class="scalable download-hero d-flex align-items-center">
+  <div class="container text-light">
+    <div class="row pt-5 pb-5">
+      <div class="col col-12 text-center">
+        <h1 class="title">
+          {{ .Title }}
+        </h1>
+        <h4 class="pb-1">
+          {{ .Content }}
+        </h5>
+      </div>
     </div>
   </div>
-</section>
-{{ end }}   
-{{ partial "download/getting-started.html" . }}  
+</div>
+<div id="os-selector" class="os-selector">
+  <div class="os-selector-row">
+    <div id="os-windows" class="os-selector-button active">Windows</div>
+    <div id="os-linux" class="os-selector-button">Linux</div>
+  </div>
+</div>
+<div id="content-windows">
+  {{ partial "download/content-windows.html" . }}
+  {{ partial "download/getting-started.html" . }}
+</div>
+<div id="content-linux">
+  {{ partial "download/content-linux.html" . }}
+  {{ partial "download/getting-started.html" . }}
+</div>
 {{ partial "footer.html" . }}  
 {{ end }}
