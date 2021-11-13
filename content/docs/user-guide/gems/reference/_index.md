@@ -66,7 +66,6 @@ toc: true
 | [Crash Reporting](./debug/crash-reporting) | The Crash Reporting Gem provides support for external crash reporting for Open 3D Engine projects. |
 | [Debug Draw](./debug/debug-draw) | The Debug Draw Gem provides Editor and runtime debug visualization features for Open 3D Engine. |
 | [Immediate Mode GUI (ImGui)](./debug/imgui) | The Immediate Mode GUI Gem provides the 3rdParty library IMGUI which can be used to create run time immediate mode overlays for debugging and profiling information in Open 3D Engine. |
-| [RAD Telemetry](./debug/rad/rad-telemetry) | The RAD Telemetry Gem provides support for RAD Telemetry, a performance profiling and visualization middleware, in Open 3D Engine. |
 
 ## Design
 
