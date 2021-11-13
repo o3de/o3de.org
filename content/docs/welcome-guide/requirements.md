@@ -219,7 +219,7 @@ sudo apt-get install libglu1-mesa-dev libxcb-xinerama0 libxcb-xinput0 libxcb-xin
 
 By default, CMake uses Unix Makefiles for building O3DE. O3DE supports multiple build configurations (debug, profile, and release), which you specify when building O3DE. Unix Makefiles only supports single-configuration builds, so you must determine which configuration you want to build when you generate the project. All project builds are based on that configuration. In order to change the build configuration, you need to regenerate the project with the different configuration. This process restricts O3DE's support for multiple-configuration builds and slows down building workflows.
 
-The Ninja build system is an alternative to Linux's default Unix Makefiles. The Ninja build system makes it easier to generate, configure, and build your project. With the Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), you can generate the project once and determine which configuration to build during build time. We recommend that you use this generator for O3DE development. You can install Ninja built tool through `apt-get`.
+The Ninja build system is an alternative to Linux's default Unix Makefiles. The Ninja build system makes it easier to generate, configure, and build your project. With the Ninja build system, specifically [Ninja Multi-Config](https://cmake.org/cmake/help/latest/generator/Ninja%20Multi-Config.html), you can generate the project once and determine which configuration to build during build time. We recommend that you use this generator for O3DE development. You can install the Ninja build tool through `apt-get`.
 
 ```shell
 sudo apt-get install ninja-build
