@@ -95,14 +95,14 @@ float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="str
 <tr class="separator:ad6e3f7619d586177c969bde67758d7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A simple camera representation using spherical coordinates as input (pitch, yaw, pivot and offset). The cameras transform and view can be obtained through accessor functions that use the internal spherical coordinates to calculate the position and orientation. </p>
+<div class="textblock"><p>A simple camera representation using spherical coordinates as input (pitch, yaw, pivot and offset). The camera's transform and view can be obtained through accessor functions that use the internal spherical coordinates to calculate the position and orientation. </p><dl class="section note"><dt>Note</dt><dd>Modifying m_pivot directly and leaving m_offset as zero will produce a free look camera effect, giving m_offset a value (e.g. in negative Y only) will produce an orbit camera effect, modifying X and Z of m_offset will further alter the camera translation in relation to m_pivot so it appears off center. </dd></dl>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>Code/Framework/AzFramework/AzFramework/Viewport/CameraInput.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:12 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

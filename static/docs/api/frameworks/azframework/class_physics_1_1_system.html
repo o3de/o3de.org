@@ -72,6 +72,8 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_shape.html">
 <tr class="memitem:a9de26d14b7570692734769678f7cfe1d"><td class="memItemLeft" align="right" valign="top"><a id="a9de26d14b7570692734769678f7cfe1d"></a>
 virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.html">Material</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateMaterial</b> (const <a class="el" href="class_physics_1_1_material_configuration.html">Physics::MaterialConfiguration</a> &amp;materialConfiguration)=0</td></tr>
 <tr class="separator:a9de26d14b7570692734769678f7cfe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff65e2685127211a138579f8e51287f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a3ff65e2685127211a138579f8e51287f">ReleaseNativeHeightfieldObject</a> (void *nativeHeightfieldObject)=0</td></tr>
+<tr class="separator:a3ff65e2685127211a138579f8e51287f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0741232a3c80a7fe21643436a4ad5718"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a0741232a3c80a7fe21643436a4ad5718">ReleaseNativeMeshObject</a> (void *nativeMeshObject)=0</td></tr>
 <tr class="separator:a0741232a3c80a7fe21643436a4ad5718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f6153869bea1adef788739f78306cd4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physics_1_1_system.html#a0f6153869bea1adef788739f78306cd4">CookConvexMeshToFile</a> (const AZStd::string &amp;filePath, const AZ::Vector3 *vertices, AZ::u32 vertexCount)=0</td></tr>
@@ -318,6 +320,38 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.htm
 
 </div>
 </div>
+<a id="a3ff65e2685127211a138579f8e51287f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff65e2685127211a138579f8e51287f">&#9670;&nbsp;</a></span>ReleaseNativeHeightfieldObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Physics::System::ReleaseNativeHeightfieldObject </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>nativeHeightfieldObject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Releases the height field object created by the physics backend. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nativeHeightfieldObject</td><td>Pointer to the height field object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0741232a3c80a7fe21643436a4ad5718"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0741232a3c80a7fe21643436a4ad5718">&#9670;&nbsp;</a></span>ReleaseNativeMeshObject()</h2>
 
@@ -356,7 +390,7 @@ virtual AZStd::shared_ptr&lt; <a class="el" href="class_physics_1_1_material.htm
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:15 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:08 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

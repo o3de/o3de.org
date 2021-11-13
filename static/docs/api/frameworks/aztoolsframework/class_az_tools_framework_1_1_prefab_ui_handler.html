@@ -79,10 +79,22 @@ QIcon&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a0f944252d29febde639ad427f33198ad">PaintItemBackground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
 <tr class="memdesc:a0f944252d29febde639ad427f33198ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the background of the item in the Outliner. <br /></td></tr>
 <tr class="separator:a0f944252d29febde639ad427f33198ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac07ddfe8ec288d7c2cc95d08322ed5fa"><td class="memItemLeft" align="right" valign="top"><a id="ac07ddfe8ec288d7c2cc95d08322ed5fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#ac07ddfe8ec288d7c2cc95d08322ed5fa">PaintDescendantBackground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index, const QModelIndex &amp;descendantIndex) const override</td></tr>
-<tr class="memdesc:ac07ddfe8ec288d7c2cc95d08322ed5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the background of the descendants of the item in the Outliner. <br /></td></tr>
-<tr class="separator:ac07ddfe8ec288d7c2cc95d08322ed5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a893d19efae51da63566ac6b9ed97a631"><td class="memItemLeft" align="right" valign="top"><a id="a893d19efae51da63566ac6b9ed97a631"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a893d19efae51da63566ac6b9ed97a631">PaintItemForeground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="memdesc:a893d19efae51da63566ac6b9ed97a631"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints visual elements on the foreground of the item in the Outliner. <br /></td></tr>
+<tr class="separator:a893d19efae51da63566ac6b9ed97a631"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29382ea5eaff792c6c40a9ec4278ba2c"><td class="memItemLeft" align="right" valign="top"><a id="a29382ea5eaff792c6c40a9ec4278ba2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a29382ea5eaff792c6c40a9ec4278ba2c">PaintDescendantForeground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index, const QModelIndex &amp;descendantIndex) const override</td></tr>
+<tr class="memdesc:a29382ea5eaff792c6c40a9ec4278ba2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints visual elements on the foreground of the descendants of the item in the Outliner. <br /></td></tr>
+<tr class="separator:a29382ea5eaff792c6c40a9ec4278ba2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbf94b03aec7ffd169dc2b6ad56a8c10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#adbf94b03aec7ffd169dc2b6ad56a8c10">OnOutlinerItemClick</a> (const QPoint &amp;position, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const override</td></tr>
+<tr class="separator:adbf94b03aec7ffd169dc2b6ad56a8c10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab712af4dabb16ffe226bcd66a97c3a64"><td class="memItemLeft" align="right" valign="top"><a id="ab712af4dabb16ffe226bcd66a97c3a64"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#ab712af4dabb16ffe226bcd66a97c3a64">OnOutlinerItemCollapse</a> (const QModelIndex &amp;index) const override</td></tr>
+<tr class="memdesc:ab712af4dabb16ffe226bcd66a97c3a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when an entity's children are collapsed in the Outliner. <br /></td></tr>
+<tr class="separator:ab712af4dabb16ffe226bcd66a97c3a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a1872dcdc0d5ed343a0c263dff387c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_ui_handler.html#a90a1872dcdc0d5ed343a0c263dff387c">OnEntityDoubleClick</a> (AZ::EntityId entityId) const override</td></tr>
+<tr class="separator:a90a1872dcdc0d5ed343a0c263dff387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html">AzToolsFramework::EditorEntityUiHandlerBase</a></td></tr>
 <tr class="memitem:aa08fdc40455fd8d2004629fb10eab9f6 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a id="aa08fdc40455fd8d2004629fb10eab9f6"></a>
 EditorEntityUiHandlerId&#160;</td><td class="memItemRight" valign="bottom"><b>GetHandlerId</b> ()</td></tr>
@@ -95,18 +107,18 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#af17f0dbd1a1fe0fd672f2c44c8c708c4">CanRename</a> (AZ::EntityId entityId) const</td></tr>
 <tr class="memdesc:af17f0dbd1a1fe0fd672f2c44c8c708c4 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the element's name should be editable. <br /></td></tr>
 <tr class="separator:af17f0dbd1a1fe0fd672f2c44c8c708c4 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c2545cf4a58f633e2c6d8cd4852466 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a id="a45c2545cf4a58f633e2c6d8cd4852466"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a45c2545cf4a58f633e2c6d8cd4852466">PaintDescendantBackground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index, const QModelIndex &amp;descendantIndex) const</td></tr>
+<tr class="memdesc:a45c2545cf4a58f633e2c6d8cd4852466 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the background of the descendants of the item in the Outliner. <br /></td></tr>
+<tr class="separator:a45c2545cf4a58f633e2c6d8cd4852466 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1aaa286afaac464bcbecdc4685f517ae inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a id="a1aaa286afaac464bcbecdc4685f517ae"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a1aaa286afaac464bcbecdc4685f517ae">PaintDescendantBranchBackground</a> (QPainter *painter, const QTreeView *view, const QRect &amp;rect, const QModelIndex &amp;index, const QModelIndex &amp;descendantIndex) const</td></tr>
 <tr class="memdesc:a1aaa286afaac464bcbecdc4685f517ae inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the background of the descendant branches of the item in the Outliner. <br /></td></tr>
 <tr class="separator:a1aaa286afaac464bcbecdc4685f517ae inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a696704f91c5e8fd86d7d4e5e9904dd inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a id="a8a696704f91c5e8fd86d7d4e5e9904dd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#a8a696704f91c5e8fd86d7d4e5e9904dd">PaintItemForeground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const</td></tr>
-<tr class="memdesc:a8a696704f91c5e8fd86d7d4e5e9904dd inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints visual elements on the foreground of the item in the Outliner. <br /></td></tr>
-<tr class="separator:a8a696704f91c5e8fd86d7d4e5e9904dd inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeac1b599bdc329b8ddaa169ae62623b6 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a id="aeac1b599bdc329b8ddaa169ae62623b6"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#aeac1b599bdc329b8ddaa169ae62623b6">PaintDescendantForeground</a> (QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index, const QModelIndex &amp;descendantIndex) const</td></tr>
-<tr class="memdesc:aeac1b599bdc329b8ddaa169ae62623b6 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints visual elements on the foreground of the descendants of the item in the Outliner. <br /></td></tr>
-<tr class="separator:aeac1b599bdc329b8ddaa169ae62623b6 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda9dfe029b84f78fb0bb71f120f3bc1 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memItemLeft" align="right" valign="top"><a id="aeda9dfe029b84f78fb0bb71f120f3bc1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#aeda9dfe029b84f78fb0bb71f120f3bc1">OnOutlinerItemExpand</a> (const QModelIndex &amp;index) const</td></tr>
+<tr class="memdesc:aeda9dfe029b84f78fb0bb71f120f3bc1 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Triggered when an entity's children are expanded in the Outliner. <br /></td></tr>
+<tr class="separator:aeda9dfe029b84f78fb0bb71f120f3bc1 inherit pub_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -115,13 +127,88 @@ Additional Inherited Members</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AZ_RTTI</b> (<a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html">EditorEntityUiHandlerBase</a>, &quot;{EFB6CBC0-3A0A-4302-92EB-62CAF1C47163}&quot;)</td></tr>
 <tr class="separator:a0b510ba81dc58908516977480b84b192 inherit pro_methods_class_az_tools_framework_1_1_editor_entity_ui_handler_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a90a1872dcdc0d5ed343a0c263dff387c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a1872dcdc0d5ed343a0c263dff387c">&#9670;&nbsp;</a></span>OnEntityDoubleClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::PrefabUiHandler::OnEntityDoubleClick </td>
+          <td>(</td>
+          <td class="paramtype">AZ::EntityId&#160;</td>
+          <td class="paramname"><em>entityId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Triggered when the entity is double clicked in the Outliner or in the Viewport. </p><dl class="section return"><dt>Returns</dt><dd>True if the double click has been handled and should not be propagated, false otherwise. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#ab02cefa9ad33a83d56cec1e8212ae6f7">AzToolsFramework::EditorEntityUiHandlerBase</a>.</p>
+
+</div>
+</div>
+<a id="adbf94b03aec7ffd169dc2b6ad56a8c10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbf94b03aec7ffd169dc2b6ad56a8c10">&#9670;&nbsp;</a></span>OnOutlinerItemClick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AzToolsFramework::PrefabUiHandler::OnOutlinerItemClick </td>
+          <td>(</td>
+          <td class="paramtype">const QPoint &amp;&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStyleOptionViewItem &amp;&#160;</td>
+          <td class="paramname"><em>option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QModelIndex &amp;&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Triggered when the entity is clicked in the Outliner. </p><dl class="section return"><dt>Returns</dt><dd>True if the click has been handled and should not be propagated, false otherwise. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_az_tools_framework_1_1_editor_entity_ui_handler_base.html#af06eaf1436c14377a1a402784bfd7585">AzToolsFramework::EditorEntityUiHandlerBase</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Code/Framework/AzToolsFramework/AzToolsFramework/UI/Prefab/PrefabUiHandler.h</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:29 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:22 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
