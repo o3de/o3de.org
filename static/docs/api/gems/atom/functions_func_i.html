@@ -79,7 +79,6 @@ $(function() {
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_pool.html#a8788e05e2532cf2a79bd41e97d03c457">AZ::RHI::BufferPool</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_property.html#a8b7c0f63f452e4509e9b96b447358f9b">AZ::RHI::BufferProperty&lt; T &gt;</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_buffer_view.html#a9623ecefc2d053497b1fb01c95f95137">AZ::RHI::BufferView</a>
-, <a class="el" href="class_a_z_1_1_r_h_i_1_1_cpu_profiler_impl.html#a1dbd5956706527c09e7f41ce2d60dbf0">AZ::RHI::CpuProfilerImpl</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_device.html#a0c1e628c78ef0dacb4e1a594a2052934">AZ::RHI::Device</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_device_object.html#a80ab91a69f8f962f519c29f6529cac51">AZ::RHI::DeviceObject</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_draw_list_context.html#a3cd10ea44ec296068fcef8752e352ebd">AZ::RHI::DrawListContext</a>
@@ -137,6 +136,9 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_image_pool.html#a65d901cd17b8fce60f69a5dce35abe6e">AZ::RHI::ImagePool</a>
 , <a class="el" href="class_a_z_1_1_r_h_i_1_1_streaming_image_pool.html#a0098bbdfbc2ef630034715a7385a022c">AZ::RHI::StreamingImagePool</a>
 </li>
+<li>InitImages()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#ab35d4b847bee72d8071f1df5b2cd9ac4">AZ::RHI::SwapChain</a>
+</li>
 <li>InitPassTemplates()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_pass_system.html#abfffe3a3e54d4abe3c5d14e8b9a932c0">AZ::RPI::PassSystem</a>
 </li>
@@ -177,6 +179,9 @@ $(function() {
 <li>IsActive()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_scope.html#a29364a8153dcf90ea4e7454ca6f71106">AZ::RHI::Scope</a>
 </li>
+<li>IsAnyResourceTypeUpdated()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a4aa279c95856882d4e38ff3b678f6b00">AZ::RHI::ShaderResourceGroupData</a>
+</li>
 <li>IsAttachment()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_resource.html#a4b60cc6d03bd5ebe07ac9eef62e80554">AZ::RHI::Resource</a>
 </li>
@@ -211,6 +216,9 @@ $(function() {
 <li>IsEnabled()
 : <a class="el" href="class_a_z_1_1_render_1_1_im_gui_active_context_scope.html#aced65b21e62709ec49f2f95220d00e8b">AZ::Render::ImGuiActiveContextScope</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_metrics_system_interface.html#a2f0212e53b847869da8b9ca501f22889">AZ::RPI::ShaderMetricsSystemInterface</a>
+</li>
+<li>IsError()
+: <a class="el" href="class_atom_tools_framework_1_1_preview_content.html#ab3c280b41912a7b0cc9edd1afa48cc9b">AtomToolsFramework::PreviewContent</a>
 </li>
 <li>IsExclusiveFullScreenPreferred()
 : <a class="el" href="class_a_z_1_1_r_h_i_1_1_swap_chain.html#a303b3f85ab7d4ba9b52f8b5be19c098a">AZ::RHI::SwapChain</a>
@@ -309,7 +317,8 @@ $(function() {
 : <a class="el" href="struct_atom_tools_framework_1_1_dynamic_property.html#ae0bd8a80ad5dc6da76e156c2c98cd083">AtomToolsFramework::DynamicProperty</a>
 </li>
 <li>IsReady()
-: <a class="el" href="class_a_z_1_1_r_h_i_1_1_factory.html#a8000e1264dd7a37bf46d2d532b7e28b4">AZ::RHI::Factory</a>
+: <a class="el" href="class_atom_tools_framework_1_1_preview_content.html#a7f72ca6bd47e43d18945d51f6decff41">AtomToolsFramework::PreviewContent</a>
+, <a class="el" href="class_a_z_1_1_r_h_i_1_1_factory.html#a8000e1264dd7a37bf46d2d532b7e28b4">AZ::RHI::Factory</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_attachment_readback.html#a04bd345ac5b7a3e644849f0b5ef25179">AZ::RPI::AttachmentReadback</a>
 , <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a3bd1406dc7074b5201f6bbd118bbed23">AZ::RPI::DynamicDrawContext</a>
 </li>
@@ -318,6 +327,9 @@ $(function() {
 </li>
 <li>IsResolved()
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_material_property_value_source_data.html#a813bfe2890cc00680a19fd0a9f5fe054">AZ::RPI::MaterialPropertyValueSourceData</a>
+</li>
+<li>IsResourceTypeEnabledForCompilation()
+: <a class="el" href="class_a_z_1_1_r_h_i_1_1_shader_resource_group_data.html#a5a90757ffa7b9f2280b03fa5291e5348">AZ::RHI::ShaderResourceGroupData</a>
 </li>
 <li>IsRhiBackendDisabled()
 : <a class="el" href="struct_a_z_1_1_r_p_i_1_1_shader_source_data.html#aad330ca353b6e4c57dd15fc02577a4b2">AZ::RPI::ShaderSourceData</a>
@@ -364,13 +376,13 @@ $(function() {
 : <a class="el" href="class_a_z_1_1_r_p_i_1_1_dynamic_draw_context.html#a720132e10987b6c9f17812d1a1fde6fe">AZ::RPI::DynamicDrawContext</a>
 </li>
 <li>Item()
-: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection_1_1_item.html#a63ebf86e602d7badc964d6f7a6b3fd0c">AZ::RPI::ShaderCollection::Item</a>
+: <a class="el" href="class_a_z_1_1_r_p_i_1_1_shader_collection_1_1_item.html#a195feeb38b62b3f15f8560a4aa5ffbbe">AZ::RPI::ShaderCollection::Item</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:32:22 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:20:20 for Open 3D Engine Atom Gem API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

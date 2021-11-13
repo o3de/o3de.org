@@ -49,7 +49,6 @@ $(function() {
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_az_framework_1_1_application-members.html">List of all members</a>  </div>
@@ -93,15 +92,9 @@ AZ::ComponentTypeList&#160;</td><td class="memItemRight" valign="bottom"><b>GetR
 <tr class="memitem:af69abce3e9ac0f3c736a8947e81e7fe6"><td class="memItemLeft" align="right" valign="top"><a id="af69abce3e9ac0f3c736a8947e81e7fe6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateStaticModules</b> (AZStd::vector&lt; AZ::Module * &gt; &amp;outModules) override</td></tr>
 <tr class="separator:af69abce3e9ac0f3c736a8947e81e7fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafbcd729c7b1380620acd024fb6c60e2"><td class="memItemLeft" align="right" valign="top"><a id="aafbcd729c7b1380620acd024fb6c60e2"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#aafbcd729c7b1380620acd024fb6c60e2">GetEngineRoot</a> () const override</td></tr>
-<tr class="memdesc:aafbcd729c7b1380620acd024fb6c60e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ApplicationRequests::Bus::Handler. <br /></td></tr>
-<tr class="separator:aafbcd729c7b1380620acd024fb6c60e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0b3121ef2e803dbaa732306f920c551"><td class="memItemLeft" align="right" valign="top"><a id="ab0b3121ef2e803dbaa732306f920c551"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAppRoot</b> () const override</td></tr>
-<tr class="separator:ab0b3121ef2e803dbaa732306f920c551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788cef8d051884a017ea889daad97240"><td class="memItemLeft" align="right" valign="top"><a id="a788cef8d051884a017ea889daad97240"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveEnginePath</b> (AZStd::string &amp;engineRelativePath) const override</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#a788cef8d051884a017ea889daad97240">ResolveEnginePath</a> (AZStd::string &amp;engineRelativePath) const override</td></tr>
+<tr class="memdesc:a788cef8d051884a017ea889daad97240"><td class="mdescLeft">&#160;</td><td class="mdescRight">ApplicationRequests::Bus::Handler. <br /></td></tr>
 <tr class="separator:a788cef8d051884a017ea889daad97240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b033cf46d0ec54b31c3d5ab3d1ad0c"><td class="memItemLeft" align="right" valign="top"><a id="a12b033cf46d0ec54b31c3d5ab3d1ad0c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateBranchTokenForEngineRoot</b> (AZStd::string &amp;token) const override</td></tr>
@@ -173,22 +166,12 @@ Static Public Member Functions</h2></td></tr>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Exit</b> (int errorCode)</td></tr>
 <tr class="separator:a00997bdb34ca9ab67c3c38dcc149a3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
-Protected Types</h2></td></tr>
-<tr class="memitem:aab3c99df6239ba29f749f73fd2043116"><td class="memItemLeft" align="right" valign="top"><a id="aab3c99df6239ba29f749f73fd2043116"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RootPathType</b> { <b>AppRoot</b>, 
-<b>EngineRoot</b>
- }</td></tr>
-<tr class="separator:aab3c99df6239ba29f749f73fd2043116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:afe3c34968e511b851c275fd0687a31f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#afe3c34968e511b851c275fd0687a31f3">StartCommon</a> (AZ::Entity *systemEntity)</td></tr>
 <tr class="separator:afe3c34968e511b851c275fd0687a31f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9a6d20ff9a8910268057cd7d13f60a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#ae9a6d20ff9a8910268057cd7d13f60a8">SetFileIOAliases</a> ()</td></tr>
 <tr class="separator:ae9a6d20ff9a8910268057cd7d13f60a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac44506b7249c142d4bc629dc6897ce9f"><td class="memItemLeft" align="right" valign="top"><a id="ac44506b7249c142d4bc629dc6897ce9f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PreModuleLoad</b> () override</td></tr>
-<tr class="separator:ac44506b7249c142d4bc629dc6897ce9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab92ce9db5ec6bde815a4f9c000c50029"><td class="memItemLeft" align="right" valign="top"><a id="ab92ce9db5ec6bde815a4f9c000c50029"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_application.html#ab92ce9db5ec6bde815a4f9c000c50029">RegisterCoreComponents</a> () override</td></tr>
 <tr class="memdesc:ab92ce9db5ec6bde815a4f9c000c50029"><td class="mdescLeft">&#160;</td><td class="mdescRight">AZ::ComponentApplication. <br /></td></tr>
@@ -213,9 +196,6 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><b>GetCu
 <tr class="memitem:a416e5c7d6b14014b2a2aba90a23ac21a"><td class="memItemLeft" align="right" valign="top"><a id="a416e5c7d6b14014b2a2aba90a23ac21a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateReflectionManager</b> () override</td></tr>
 <tr class="separator:a416e5c7d6b14014b2a2aba90a23ac21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee4d21f863489fe3052db2359732e248"><td class="memItemLeft" align="right" valign="top"><a id="aee4d21f863489fe3052db2359732e248"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRootPath</b> (RootPathType type, const char *source)</td></tr>
-<tr class="separator:aee4d21f863489fe3052db2359732e248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -411,7 +391,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_exitMainLoopRequest
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:11 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:03 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
