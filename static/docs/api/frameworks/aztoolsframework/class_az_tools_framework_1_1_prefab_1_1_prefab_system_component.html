@@ -123,11 +123,11 @@ PrefabDom &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>FindTempla
 <tr class="separator:ad68a1aa9db39684ab41e27f397906487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae45476048a21e773212bc3f13c4954af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#ae45476048a21e773212bc3f13c4954af">UpdatePrefabTemplate</a> (TemplateId templateId, const PrefabDom &amp;updatedDom) override</td></tr>
 <tr class="separator:ae45476048a21e773212bc3f13c4954af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c895e00b79d9ee0c08519db4d32a95"><td class="memItemLeft" align="right" valign="top"><a id="ac5c895e00b79d9ee0c08519db4d32a95"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId, bool immediate=false, InstanceOptionalReference instanceToExclude=AZStd::nullopt) override</td></tr>
-<tr class="separator:ac5c895e00b79d9ee0c08519db4d32a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a602b59c8dadd093ce00b4d27e4440c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#a602b59c8dadd093ce00b4d27e4440c7e">UpdatePrefabInstances</a> (TemplateId templateId, bool immediate=false, InstanceOptionalReference instanceToExclude=AZStd::nullopt)</td></tr>
-<tr class="separator:a602b59c8dadd093ce00b4d27e4440c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6590696071cd80604cb79f662e5266bf"><td class="memItemLeft" align="right" valign="top"><a id="a6590696071cd80604cb79f662e5266bf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PropagateTemplateChanges</b> (TemplateId templateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt) override</td></tr>
+<tr class="separator:a6590696071cd80604cb79f662e5266bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af71a4769c421d0384c49ee9d9a4c3b90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_tools_framework_1_1_prefab_1_1_prefab_system_component.html#af71a4769c421d0384c49ee9d9a4c3b90">UpdatePrefabInstances</a> (TemplateId templateId, InstanceOptionalConstReference instanceToExclude=AZStd::nullopt)</td></tr>
+<tr class="separator:af71a4769c421d0384c49ee9d9a4c3b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -869,8 +869,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 
 </div>
 </div>
-<a id="a602b59c8dadd093ce00b4d27e4440c7e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a602b59c8dadd093ce00b4d27e4440c7e">&#9670;&nbsp;</a></span>UpdatePrefabInstances()</h2>
+<a id="af71a4769c421d0384c49ee9d9a4c3b90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af71a4769c421d0384c49ee9d9a4c3b90">&#9670;&nbsp;</a></span>UpdatePrefabInstances()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -884,13 +884,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>immediate</em> = <code>false</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">InstanceOptionalReference&#160;</td>
+          <td class="paramtype">InstanceOptionalConstReference&#160;</td>
           <td class="paramname"><em>instanceToExclude</em> = <code>AZStd::nullopt</code>&#160;</td>
         </tr>
         <tr>
@@ -904,8 +898,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">templateId</td><td>The id of the <a class="el" href="class_az_tools_framework_1_1_prefab_1_1_template.html">Template</a> owning Instances to update. </td></tr>
-    <tr><td class="paramname">immediate</td><td>An optional flag whether to apply the patch immediately (needed for Undo/Redos) or wait until next system tick. </td></tr>
-    <tr><td class="paramname">instanceToExclude</td><td>An optional reference to an instance of the template being updated that should not be refreshes as part of propagation. Defaults to nullopt, which means that all instances will be refreshed. </td></tr>
+    <tr><td class="paramname">instanceToExclude</td><td>An optional reference to an instance of the template being updated that should not be refreshed as part of propagation.Defaults to nullopt, which means that all instances will be refreshed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1009,7 +1002,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetIncompatibl
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:32 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:24 for Open 3D Engine AzToolsFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>
