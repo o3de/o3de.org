@@ -166,8 +166,6 @@ $(function() {
   var scrollOffset = $(".main-navbar").height() + 32;
 
   $("a[href^=\\#]").click(function(e) {
-    e.preventDefault();
-    
     var dest = $(this).attr('href');
     if(dest != "" && $(dest).length > 0)
     {
