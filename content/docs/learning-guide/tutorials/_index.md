@@ -29,4 +29,4 @@ Learn the features, tools, and processes of **Open 3D Engine (O3DE)** with the h
 
 | Tutorial | Description |
 | - | - |
-| [PostFX Shape Weight Modifier](postfx/use-postfx-shape-weight-modifier) | Use PostFX Shape Weight Modifier to modify exposure control in O3DE. |
+| [PostFX Shape Weight Modifier](postfx/use-postfx-shape-weight-modifier) | Use a **PostFX Shape Weight Modifier** component to modify exposure control in O3DE. This example demonstrates how to modify post-processing effects (PostFX) at runtime. |
