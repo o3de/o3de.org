@@ -10,7 +10,7 @@ weight: 1200
 For authoring PassTemplates, read the [Authoring PassTemplates](#authoring-a-passtemplate) section below. 
 
 ## Root Pass and Pass Registry
-Before you begin authoring passes, it's important to understand the Pass System (read the [Pass System](pass-system/) section). The following key points are also important to understand when authoring passes: 
+Before you begin authoring passes, it's important to understand the Pass System (read the [Pass System](pass-system.md) section). The following key points are also important to understand when authoring passes: 
 - Passes are structured in a tree of nested passes, starting at the **root pass**. 
 - PassTemplates must be registered in the **Pass Registry** in order to use them. 
 
@@ -64,7 +64,7 @@ PassTemplates specifies inputs and outputs and defines its function through the 
 
 PassTemplates can also contain a `PassRequests` container, that lists child passes. When a PassTemplate gets instantiated as a Pass, each PassRequest creates a child pass. 
 
-A complete breakdown of the PassTemplate JSON file (`*.pass`) can be found in [PassTemplate File Spec](pass-template-file-spec/) section. 
+A complete breakdown of the PassTemplate JSON file (`*.pass`) can be found in [PassTemplate File Spec](pass-template-file-spec.md) section. 
 
 
 ### Registering a Pass Template
