@@ -68,18 +68,27 @@ $(() => {
   })
 });
 
-// parse user agent on downloads page
-
+// --- Downloads page
+// Handle click to switch between download pages
 $(function() {
-  const ua = $.ua.os.name;
-  $("#download-page-buttons a").each(function(){
-    if($(this).data('os') == ua) {
-      $(this).addClass("active-os-cta");
-      $(this).removeClass("btn-secondary");
-    }
-  })
-});
+  $(".os-selector-button").click(function(event){
+    event.preventDefault();
 
+    if($(this).hasClass("active"))
+    {
+      return;
+    }
+
+    // Switch enabled button
+    $(".os-selector-button.active").removeClass("active");
+    $(this).addClass("active");
+
+    // Switch content
+    $(".os-content.active").removeClass("active");
+    $("#content-" + $(this).data("os")).addClass("active");
+    console.log("#content-" + $(this).data("os"));
+  });
+});
 
 // Search 
 

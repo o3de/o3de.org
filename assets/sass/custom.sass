@@ -631,15 +631,25 @@ $width: '59vw';
     h5
       font-size: .8rem
 
+
+$os-selector-height: 72px
+$os-selector-mobile-height: 48px
+
 .os-selector
   overflow: visible
-  height: 36px
+  height: $os-selector-height / 2
+  
+  @include media-breakpoint-down(md)
+    height: $os-selector-mobile-height
 
 .os-selector-row
   text-align: center
-  height: 72px
+  height: $os-selector-height
   transform: translate(0, -50%)
   -webkit-transform: translate(0, -50%)
+  
+  @include media-breakpoint-down(md)
+    height: $os-selector-mobile-height
 
 .os-selector-button
   color: #000000
@@ -650,7 +660,7 @@ $width: '59vw';
   margin: 0 8px
   display: inline-block
   height: 100%
-  line-height: 72px
+  line-height: $os-selector-height
   font-size: 1.25rem
   box-shadow: 0px 2px 4px 0px #0000001A;
   box-shadow: 0px 1px 10px 0px #0000000F;
@@ -663,20 +673,17 @@ $width: '59vw';
   &.active
     background-color: #FFFFFF
     border-bottom: 3px solid #1E70EB
+    
+  @include media-breakpoint-down(md)
+    width: 128px
+    height: $os-selector-mobile-height
+    line-height: $os-selector-mobile-height
 
-.download-os.active a.download-os-button
-  color: #000000
-  background-color: #FFFFFF
-  &:hover
-    color: #000000
-    background-color: #F8F8F8
+.os-content
+  display: none
 
-.download-os.active div
-  background-color: #1E70EB
-  padding-bottom: 3px
-
-#download-page-buttons a.disabled
-  background-color: #007bff78
+.os-content.active
+  display: block
 
 .download_notes
   font-size: .85rem

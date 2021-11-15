@@ -16,17 +16,17 @@
 </div>
 <div id="os-selector" class="os-selector">
   <div class="os-selector-row">
-    <div id="os-windows" class="os-selector-button active">Windows</div>
-    <div id="os-linux" class="os-selector-button">Linux</div>
+    <div id="os-windows" class="os-selector-button active" data-os="windows">Windows</div>
+    <div id="os-linux" class="os-selector-button" data-os="linux">Linux</div>
   </div>
 </div>
-<div id="content-windows">
+<div id="content-windows" class="os-content active">
   {{ partial "download/content-windows.html" . }}
-  {{ partial "download/getting-started.html" . }}
+  {{ partial "download/getting-started-windows.html" . }}
 </div>
-<div id="content-linux">
+<div id="content-linux" class="os-content">
   {{ partial "download/content-linux.html" . }}
-  {{ partial "download/getting-started.html" . }}
+  {{ partial "download/getting-started-linux.html" . }}
 </div>
 {{ partial "footer.html" . }}  
 {{ end }}
