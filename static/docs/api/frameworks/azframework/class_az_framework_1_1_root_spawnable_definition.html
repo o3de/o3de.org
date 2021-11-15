@@ -71,6 +71,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5e4922bda14ca80120fa26d7d6d8c879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1af32e13b580c3c094c9d017507e2873"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_root_spawnable_definition.html#a1af32e13b580c3c094c9d017507e2873">ReleaseRootSpawnable</a> ()=0</td></tr>
 <tr class="separator:a1af32e13b580c3c094c9d017507e2873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afedadeb836969996a51340d2f09e7d00"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_az_framework_1_1_root_spawnable_definition.html#afedadeb836969996a51340d2f09e7d00">ProcessSpawnableQueue</a> ()=0</td></tr>
+<tr class="separator:afedadeb836969996a51340d2f09e7d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface to manage the root spawnable. All calls to this interface need to be made from the main thread and all events are called from the main thread. </p>
@@ -99,6 +101,32 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Sets the provided spawnable as the new root spawnable. If a root spawnable has already been assigned this will unload any entities spawned from it and replace it. The provided spawnable will become the new root and all entities in it will be instanced into the game entity context. </p><dl class="section return"><dt>Returns</dt><dd>the generation of the root spawnable that has been assigned. </dd></dl>
+
+</div>
+</div>
+<a id="afedadeb836969996a51340d2f09e7d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afedadeb836969996a51340d2f09e7d00">&#9670;&nbsp;</a></span>ProcessSpawnableQueue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void AzFramework::RootSpawnableDefinition::ProcessSpawnableQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Force processing all <a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html">SpawnableEntitiesManager</a> requests immediately This is useful when loading a different level while <a class="el" href="class_az_framework_1_1_spawnable_entities_manager.html">SpawnableEntitiesManager</a> still has pending requests </p>
 
 </div>
 </div>
@@ -134,7 +162,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Oct 7 2021 10:31:13 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Nov 13 2021 14:19:05 for Open 3D Engine AzFramework API Reference by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.17
 </small></address>

@@ -20,7 +20,7 @@ The **PostFx Radius Weight Modifier** component weights post-processing effects 
 
 ## Base properties
 
-![PostFX Radius Weight Modifier base properties](/images/user-guide/components/reference/atom/post-processing-volumes/postfx-radius-weight-modifier.png)
+![PostFX Radius Weight Modifier base properties](/images/user-guide/components/reference/atom/post-processing-modifiers/postfx-radius-weight-modifier.png)
 
 | Property | Description | Values | Default |
 |-|-|-|-|
